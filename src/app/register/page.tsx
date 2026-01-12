@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
+import { BookOpen, AlertCircle, Loader2, CheckCircle2 } from 'lucide-react';
 
 function RegisterContent() {
   const router = useRouter();
@@ -45,75 +46,96 @@ function RegisterContent() {
   };
 
   return (
-    <div className="flex min-h-[70vh] items-center justify-center py-12">
-      <Card className="w-full max-w-md">
-        <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold">Account aanmaken</CardTitle>
-          <CardDescription>
-            Maak een nieuw account aan voor de BijbelQuiz.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="grid gap-4">
-            <div className="grid gap-2">
-              <label htmlFor="name" className="text-sm font-medium">Naam</label>
-              <input
-                id="name"
-                type="text"
-                placeholder="Je naam"
-                className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </div>
-            <div className="grid gap-2">
-              <label htmlFor="email" className="text-sm font-medium">Email</label>
-              <input
-                id="email"
-                type="email"
-                placeholder="naam@voorbeeld.nl"
-                className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div className="grid gap-2">
-              <label htmlFor="password" title="Wachtwoord" className="text-sm font-medium">Wachtwoord</label>
-              <input
-                id="password"
-                type="password"
-                placeholder="Minimaal 6 tekens"
-                className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                minLength={6}
-                required
-              />
-            </div>
-            {error && <p className="text-sm text-red-500">{error}</p>}
-            <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? 'Account aanmaken...' : 'Registreren'}
-            </Button>
-          </form>
-        </CardContent>
-        <CardFooter className="flex flex-col gap-4 text-center text-sm text-slate-500">
-          <p>
-            Heb je al een account?{' '}
-            <Link href="/login" className="text-primary hover:underline font-semibold">
+    <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4 py-12 dark:bg-slate-950">
+      <div className="w-full max-w-md space-y-8">
+        <div className="flex flex-col items-center">
+           <Link href="/" className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg mb-4 hover:scale-105 transition-transform">
+             <BookOpen className="h-6 w-6" />
+          </Link>
+          <h2 className="mt-2 text-center text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+            Word lid
+          </h2>
+          <p className="mt-2 text-center text-sm text-slate-600 dark:text-slate-400">
+            Start vandaag nog met het verdiepen van je kennis
+          </p>
+        </div>
+
+        <Card className="border-border/50 shadow-xl overflow-hidden">
+          <CardHeader className="space-y-1 bg-slate-50/50 dark:bg-slate-900/50 border-b border-border/50 pb-6">
+            <CardTitle className="text-xl font-bold text-center">Account aanmaken</CardTitle>
+            <CardDescription className="text-center">
+              Vul je gegevens in om te registreren
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <form onSubmit={handleSubmit} className="grid gap-4">
+               {error && (
+                <div className="rounded-md bg-destructive/10 p-3 text-sm font-medium text-destructive flex items-center gap-2 border border-destructive/20">
+                   <AlertCircle className="h-4 w-4" />
+                   {error}
+                </div>
+              )}
+
+              <div className="grid gap-2">
+                <label htmlFor="name" className="text-sm font-medium leading-none">Naam</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Volledige naam"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="grid gap-2">
+                <label htmlFor="email" className="text-sm font-medium leading-none">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="naam@voorbeeld.nl"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="grid gap-2">
+                <label htmlFor="password" title="Wachtwoord" className="text-sm font-medium leading-none">Wachtwoord</label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Minimaal 6 tekens"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  minLength={6}
+                  required
+                />
+              </div>
+              
+              <Button type="submit" className="w-full mt-2 h-11 text-base shadow-lg shadow-primary/20" disabled={loading}>
+                {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Registreren'}
+              </Button>
+            </form>
+          </CardContent>
+          <CardFooter className="bg-slate-50/50 dark:bg-slate-900/50 py-4 border-t border-border/50 justify-center">
+            <div className="text-sm text-center w-full text-slate-500">
+             Heb je al een account?{' '}
+            <Link href="/login" className="text-primary hover:text-primary/80 hover:underline font-semibold ml-1">
               Inloggen
             </Link>
-          </p>
-        </CardFooter>
+            </div>
+         </CardFooter>
       </Card>
+      </div>
     </div>
   );
 }
 
 export default function RegisterPage() {
   return (
-    <Suspense fallback={<div className="flex min-h-[70vh] items-center justify-center">Laden...</div>}>
+    <Suspense fallback={<div className="flex min-h-screen items-center justify-center bg-slate-50"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>}>
       <RegisterContent />
     </Suspense>
   );

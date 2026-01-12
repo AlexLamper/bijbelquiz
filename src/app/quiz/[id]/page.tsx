@@ -37,9 +37,9 @@ export default async function QuizPage({ params }: PageProps) {
   const serializableQuiz = JSON.parse(JSON.stringify(quiz));
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold text-center mb-6">{quiz.title}</h1>
+        <h1 className="text-2xl font-bold text-center mb-6 font-serif">{quiz.title}</h1>
         <QuizPlayer quiz={serializableQuiz} />
       </div>
     </div>

@@ -9,11 +9,11 @@ export default async function PremiumPage() {
   const isPremium = session?.user?.isPremium;
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="min-h-screen">
       <main className="container mx-auto px-4 py-12 flex flex-col items-center">
-        <h1 className="mb-6 text-4xl font-extrabold text-center">Premium Toegang</h1>
+        <h1 className="mb-6 text-4xl font-extrabold text-center font-serif">Premium Toegang</h1>
         
-        <Card className="w-full max-w-md bg-white dark:bg-slate-900 shadow-xl">
+        <Card className="w-full max-w-md shadow-xl bg-card">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl text-amber-500">Volledige Toegang</CardTitle>
             <CardDescription>Ontgrendel alle quizzen en functies</CardDescription>

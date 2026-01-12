@@ -37,10 +37,10 @@ export default async function SuccessPage({ searchParams }: PageProps) {
   }
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center bg-slate-50 dark:bg-slate-950">
+    <div className="min-h-[80vh] flex items-center justify-center">
       <SessionRefresher />
       <main className="container mx-auto px-4 py-12 flex flex-col items-center">
-        <Card className="w-full max-w-md text-center shadow-lg border-green-100">
+        <Card className="w-full max-w-md text-center shadow-lg border-primary/20">
            <CardHeader>
              <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
                <svg className="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
