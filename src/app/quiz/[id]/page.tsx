@@ -36,8 +36,35 @@ export default async function QuizPage({ params }: PageProps) {
   // Serialize for Client Component
   const serializableQuiz = JSON.parse(JSON.stringify(quiz));
 
+  // JSON-LD for Quiz
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": quiz.title,
+    "description": quiz.description || `Test je kennis over ${quiz.title} in deze interactieve bijbelquiz.`,
+    "about": {
+      "@type": "Thing",
+      "name": quiz.category?.title || "Bijbel"
+    },
+    "educationalLevel": quiz.difficulty || "beginner",
+    "learningResourceType": "Assessment",
+    "hasPart": quiz.questions.map((q: any) => ({
+      "@type": "Question",
+      "name": q.text,
+      "suggestedAnswer": q.answers.map((a: any) => ({
+        "@type": "Answer",
+        "text": a.text,
+        "position": a.isCorrect ? 0 : 1 // Not perfect mapping but indicates distinction
+      }))
+    }))
+  };
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-2xl font-bold text-center mb-6 font-serif">{quiz.title}</h1>
         <QuizPlayer quiz={serializableQuiz} />

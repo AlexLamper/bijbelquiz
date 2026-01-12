@@ -60,8 +60,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BijbelQuiz",
+    "url": "https://www.bijbelquiz.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.bijbelquiz.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <html lang="nl">
+      <head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+      </head>
       <body
         className={`${inter.variable} ${merriweather.variable} font-sans antialiased bg-background text-foreground`}
       >
