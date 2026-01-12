@@ -3,6 +3,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import connectDB from '@/lib/db';
 import Quiz from '@/models/Quiz';
+import Category from '@/models/Category'; // Ensure model is registered
 import QuizPlayer from '@/components/QuizPlayer';
 
 interface PageProps {
@@ -14,9 +15,9 @@ export default async function QuizPage({ params }: PageProps) {
   await connectDB();
   
   // Try finding by slug first, then ID
-  let quiz = await Quiz.findOne({ slug: id }).lean();
+  let quiz = await Quiz.findOne({ slug: id }).populate('categoryId').lean();
   if (!quiz && id.match(/^[0-9a-fA-F]{24}$/)) {
-    quiz = await Quiz.findById(id).lean();
+    quiz = await Quiz.findById(id).populate('categoryId').lean();
   }
 
   if (!quiz) {
@@ -44,7 +45,7 @@ export default async function QuizPage({ params }: PageProps) {
     "description": quiz.description || `Test je kennis over ${quiz.title} in deze interactieve bijbelquiz.`,
     "about": {
       "@type": "Thing",
-      "name": quiz.category?.title || "Bijbel"
+      "name": (quiz.categoryId as any)?.title || "Bijbel"
     },
     "educationalLevel": quiz.difficulty || "beginner",
     "learningResourceType": "Assessment",
