@@ -4,7 +4,9 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useRouter } from 'next/navigation';
-import { ArrowRight, BookOpen, CheckCircle, XCircle, Share2, Award, RotateCcw } from 'lucide-react';
+import { ArrowRight, BookOpen, CheckCircle, XCircle, Share2, Award, RotateCcw, Lock } from 'lucide-react';
+import { useSession } from 'next-auth/react';
+import Link from 'next/link';
 
 // Interface matching the serialized Mongoose object
 interface Answer {
@@ -28,6 +30,7 @@ interface Quiz {
 }
 
 export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
+  const { data: session } = useSession();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
@@ -81,6 +84,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   };
 
   if (isFinished) {
+    const isPremium = session?.user?.isPremium;
+    const isLoggedIn = !!session;
+
     return (
       <Card className="w-full max-w-2xl mx-auto mt-8 border-2 border-primary/20 shadow-xl bg-[#fffcf5]">
         <CardHeader className="text-center pt-10">
@@ -90,24 +96,62 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
           <CardTitle className="text-4xl font-serif font-bold text-foreground">Quiz Afgerond!</CardTitle>
         </CardHeader>
         <CardContent className="text-center space-y-6">
+           {/* Score Section */}
           <div className="py-6">
             <p className="text-lg text-muted-foreground uppercase tracking-widest font-semibold mb-2">Jouw Resultaat</p>
             <p className="text-6xl font-bold text-primary font-serif">
                {score} <span className="text-2xl text-muted-foreground font-sans">/ {quiz.questions.length}</span>
             </p>
+             {isLoggedIn && (
+                <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">
+                    + {score * 10} XP verdiend
+                </div>
+            )}
           </div>
           
-          <p className="text-xl font-medium text-slate-700 italic font-serif">
+          <p className="text-xl font-medium text-slate-700 italic font-serif px-6">
             {score === quiz.questions.length ? "Uitmuntend! Een ware schriftgeleerde." : 
              score > quiz.questions.length / 2 ? "Goed gedaan! Blijf de schriften onderzoeken." : "Blijf oefenen, de volhouder wint."}
           </p>
+
+          {/* Premium/Auth Teaser Section */}
+          <div className="mt-8 space-y-4 max-w-sm mx-auto">
+             {!isLoggedIn ? (
+                 <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
+                     <p className="text-sm text-amber-800 font-medium mb-2">Log in om uw score op te slaan en XP te verzamelen!</p>
+                     <Button size="sm" asChild className="w-full bg-amber-600 hover:bg-amber-700">
+                         <Link href="/login">Inloggen</Link>
+                     </Button>
+                 </div>
+             ) : !isPremium ? (
+                 <div className="relative group">
+                    <div className="bg-slate-100/50 rounded-lg p-4 border border-slate-200 blur-[1px] select-none">
+                         <h4 className="font-bold text-slate-400 mb-2">Gedetailleerde Foutenanalyse</h4>
+                         <div className="h-2 w-full bg-slate-200 rounded mb-2"></div>
+                         <div className="h-2 w-2/3 bg-slate-200 rounded"></div>
+                    </div>
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60 backdrop-blur-[1px] rounded-lg">
+                        <Lock className="h-6 w-6 text-slate-400 mb-2" />
+                        <p className="text-xs font-semibold text-slate-600 mb-2">Premium Analyse</p>
+                        <Button size="sm" variant="secondary" asChild className="h-8">
+                             <Link href="/premium">Ontgrendel</Link>
+                        </Button>
+                    </div>
+                 </div>
+             ) : (
+                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-100">
+                    <p className="text-sm text-emerald-800 font-medium">Volledige analyse opgeslagen in uw dashboard.</p>
+                </div>
+             )}
+          </div>
+
         </CardContent>
         <CardFooter className="flex justify-center gap-4 pb-10">
           <Button onClick={() => window.location.reload()} variant="outline" className="border-primary/50 text-primary hover:bg-primary/5">
             <RotateCcw className="mr-2 h-4 w-4" /> Opnieuw
           </Button>
-          <Button onClick={() => router.push('/')} className="px-8" disabled={isSaving}>
-             {isSaving ? "Opslaan..." : "Terug naar Overzicht"}
+          <Button onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')} className="px-8" disabled={isSaving}>
+             {isSaving ? "Opslaan..." : isLoggedIn ? "Naar Dashboard" : "Terug naar Home"}
           </Button>
         </CardFooter>
       </Card>

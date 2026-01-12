@@ -1,8 +1,9 @@
 import mongoose, { Document, Model, Schema } from 'mongoose';
+import { IQuiz } from './Quiz';
 
 export interface IUserProgress extends Document {
   userId: mongoose.Types.ObjectId;
-  quizId: mongoose.Types.ObjectId;
+  quizId: mongoose.Types.ObjectId | IQuiz;
   score: number;
   totalQuestions: number;
   completedAt: Date;

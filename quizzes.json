@@ -1,0 +1,2347 @@
+[
+  {
+    "title": "Algemene Bijbelkennis Deel 1",
+    "slug": "algemene-bijbelkennis-deel-1",
+    "description": "Test je kennis over bekende personen en gebeurtenissen uit het Oude en Nieuwe Testament.",
+    "difficulty": "medium",
+    "isPremium": false,
+    "questions": [
+      {
+        "text": "Hoe heette de vrouw van Abraham, die op hoge leeftijd moeder werd van Izaäk?",
+        "answers": [
+          {
+            "text": "Sara (Sarai)",
+            "isCorrect": true
+          },
+          {
+            "text": "Rachel",
+            "isCorrect": false
+          },
+          {
+            "text": "Rebekka",
+            "isCorrect": false
+          },
+          {
+            "text": "Hagar",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Haar naam werd veranderd van Sarai (vorstelijk) naar Sara (vorstin).",
+        "bibleReference": "Gen. 17:15"
+      },
+      {
+        "text": "Welke discipel werd door de apostelen 'Zoon der vertroosting' genoemd?",
+        "answers": [
+          {
+            "text": "Silas",
+            "isCorrect": false
+          },
+          {
+            "text": "Paulus",
+            "isCorrect": false
+          },
+          {
+            "text": "Timotheüs",
+            "isCorrect": false
+          },
+          {
+            "text": "Barnabas",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Zijn oorspronkelijke naam was Joses (Jozef).",
+        "bibleReference": "Hand. 4:36"
+      },
+      {
+        "text": "Welke koning van Perzië verstootte zijn vrouw Vasti omdat ze weigerde te komen?",
+        "answers": [
+          {
+            "text": "Darius",
+            "isCorrect": false
+          },
+          {
+            "text": "Ahasveros",
+            "isCorrect": true
+          },
+          {
+            "text": "Cyrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Nebukadnezar",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij koos later Esther als koningin.",
+        "bibleReference": "Esther 1:12-19"
+      },
+      {
+        "text": "Wie was de schoonvader van Mozes, de priester van Midian?",
+        "answers": [
+          {
+            "text": "Aäron",
+            "isCorrect": false
+          },
+          {
+            "text": "Jethro",
+            "isCorrect": true
+          },
+          {
+            "text": "Laban",
+            "isCorrect": false
+          },
+          {
+            "text": "Korah",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Jethro (ook wel Reguël genoemd). Hij gaf Mozes raad over rechtspraak.",
+        "bibleReference": "Ex. 3:1; 18:1"
+      },
+      {
+        "text": "Welke profeet werd door een grote vis opgeslokt toen hij naar Tarsis vluchtte?",
+        "answers": [
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          },
+          {
+            "text": "Nahum",
+            "isCorrect": false
+          },
+          {
+            "text": "Elia",
+            "isCorrect": false
+          },
+          {
+            "text": "Jona",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij weigerde aanvankelijk naar Ninevé te gaan.",
+        "bibleReference": "Jona 1:17"
+      },
+      {
+        "text": "Wie verraadde Jezus voor dertig zilverlingen?",
+        "answers": [
+          {
+            "text": "Judas Iskariot",
+            "isCorrect": true
+          },
+          {
+            "text": "Pontius Pilatus",
+            "isCorrect": false
+          },
+          {
+            "text": "Kajafas",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij was een van de twaalf discipelen.",
+        "bibleReference": "Matt. 26:14-15"
+      },
+      {
+        "text": "Welke vrouw zei: \"Uw volk is mijn volk, en uw God mijn God\"?",
+        "answers": [
+          {
+            "text": "Orpa",
+            "isCorrect": false
+          },
+          {
+            "text": "Esther",
+            "isCorrect": false
+          },
+          {
+            "text": "Ruth",
+            "isCorrect": true
+          },
+          {
+            "text": "Naomi",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij sprak dit tot haar schoonmoeder Naomi.",
+        "bibleReference": "Ruth 1:16"
+      },
+      {
+        "text": "Wie was de eerste koning van Israël, gezalfd door Samuël?",
+        "answers": [
+          {
+            "text": "Salomo",
+            "isCorrect": false
+          },
+          {
+            "text": "Absalom",
+            "isCorrect": false
+          },
+          {
+            "text": "Saul",
+            "isCorrect": true
+          },
+          {
+            "text": "David",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij was een zoon van Kis, uit de stam Benjamin.",
+        "bibleReference": "1 Sam. 10:1"
+      },
+      {
+        "text": "Welke apostel werd genezen van blindheid nadat hij op de weg naar Damascus was?",
+        "answers": [
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Paulus (Saulus)",
+            "isCorrect": true
+          },
+          {
+            "text": "Stefanus",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Ananias legde hem de handen op.",
+        "bibleReference": "Hand. 9:17-18"
+      },
+      {
+        "text": "Wie bouwde de ark om gered te worden van de zondvloed?",
+        "answers": [
+          {
+            "text": "Mozes",
+            "isCorrect": false
+          },
+          {
+            "text": "Henoch",
+            "isCorrect": false
+          },
+          {
+            "text": "Abraham",
+            "isCorrect": false
+          },
+          {
+            "text": "Noach",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij wandelde met God te midden van een verdorven generatie.",
+        "bibleReference": "Gen. 6:13-14"
+      },
+      {
+        "text": "Welke Filistijnse reus werd door de herdersjongen David verslagen?",
+        "answers": [
+          {
+            "text": "Og",
+            "isCorrect": false
+          },
+          {
+            "text": "Simson",
+            "isCorrect": false
+          },
+          {
+            "text": "Goliath",
+            "isCorrect": true
+          },
+          {
+            "text": "Sichon",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "David versloeg hem met een slinger en een steen.",
+        "bibleReference": "1 Sam. 17:4"
+      },
+      {
+        "text": "Wie was de moeder van Johannes de Doper?",
+        "answers": [
+          {
+            "text": "Martha",
+            "isCorrect": false
+          },
+          {
+            "text": "Elisabeth",
+            "isCorrect": true
+          },
+          {
+            "text": "Anna",
+            "isCorrect": false
+          },
+          {
+            "text": "Maria",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij was een nicht van Maria en eveneens uit priesterlijk geslacht.",
+        "bibleReference": "Luk. 1:5, 57"
+      },
+      {
+        "text": "Welke profeet werd met een vurige wagen in de hemel opgenomen?",
+        "answers": [
+          {
+            "text": "Jesaja",
+            "isCorrect": false
+          },
+          {
+            "text": "Mozes",
+            "isCorrect": false
+          },
+          {
+            "text": "Elisa",
+            "isCorrect": false
+          },
+          {
+            "text": "Elia",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Elisa was getuige van deze gebeurtenis.",
+        "bibleReference": "2 Kon. 2:11"
+      },
+      {
+        "text": "Wie was de oudste broer van David?",
+        "answers": [
+          {
+            "text": "Eliab",
+            "isCorrect": true
+          },
+          {
+            "text": "Abinadab",
+            "isCorrect": false
+          },
+          {
+            "text": "Samma",
+            "isCorrect": false
+          },
+          {
+            "text": "Jesse",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Samuël dacht aanvankelijk dat hij de gezalfde des Heeren was.",
+        "bibleReference": "1 Sam. 16:6"
+      },
+      {
+        "text": "Welke vrouw in het Nieuwe Testament verkocht purper en kwam tot geloof in Filippi?",
+        "answers": [
+          {
+            "text": "Priscilla",
+            "isCorrect": false
+          },
+          {
+            "text": "Dorkas",
+            "isCorrect": false
+          },
+          {
+            "text": "Febe",
+            "isCorrect": false
+          },
+          {
+            "text": "Lydia",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Zij was de eerste bekeerlinge in Europa.",
+        "bibleReference": "Hand. 16:14"
+      },
+      {
+        "text": "Wie zag een ladder die tot aan de hemel reikte in een droom te Bethel?",
+        "answers": [
+          {
+            "text": "Jakob",
+            "isCorrect": true
+          },
+          {
+            "text": "Izaäk",
+            "isCorrect": false
+          },
+          {
+            "text": "Abraham",
+            "isCorrect": false
+          },
+          {
+            "text": "Jozef",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Engelen Gods klommen op en daalden neer.",
+        "bibleReference": "Gen. 28:12"
+      },
+      {
+        "text": "Welke richter versloeg de Midianieten met 300 man?",
+        "answers": [
+          {
+            "text": "Barak",
+            "isCorrect": false
+          },
+          {
+            "text": "Simson",
+            "isCorrect": false
+          },
+          {
+            "text": "Gideon",
+            "isCorrect": true
+          },
+          {
+            "text": "Jefta",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Gideon (Jerubbaäl). Hij gebruikte kruiken, fakkels en bazuinen.",
+        "bibleReference": "Richt. 7:7"
+      },
+      {
+        "text": "Wie was de hogepriester die Jezus veroordeelde?",
+        "answers": [
+          {
+            "text": "Pilatus",
+            "isCorrect": false
+          },
+          {
+            "text": "Kajafas",
+            "isCorrect": true
+          },
+          {
+            "text": "Nicodemus",
+            "isCorrect": false
+          },
+          {
+            "text": "Annas",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij profeteerde onbewust dat het nuttig was dat één mens voor het volk stierf.",
+        "bibleReference": "Joh. 11:49-50"
+      },
+      {
+        "text": "Welke man werd door Jezus uit de doden opgewekt nadat hij vier dagen in het graf had gelegen?",
+        "answers": [
+          {
+            "text": "De zoon van de weduwe",
+            "isCorrect": false
+          },
+          {
+            "text": "Lazarus",
+            "isCorrect": true
+          },
+          {
+            "text": "Stefanus",
+            "isCorrect": false
+          },
+          {
+            "text": "Jaïrus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij was de broer van Martha en Maria.",
+        "bibleReference": "Joh. 11:43-44"
+      },
+      {
+        "text": "Wie was de vrouw van Uria, met wie David overspel pleegde?",
+        "answers": [
+          {
+            "text": "Bathseba",
+            "isCorrect": true
+          },
+          {
+            "text": "Maächa",
+            "isCorrect": false
+          },
+          {
+            "text": "Michal",
+            "isCorrect": false
+          },
+          {
+            "text": "Abigaïl",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij werd later de moeder van Salomo.",
+        "bibleReference": "2 Sam. 11:3"
+      }
+    ]
+  },
+  {
+    "title": "Koningen, Profeten en Apostelen",
+    "slug": "koningen-profeten-en-apostelen",
+    "description": "Een uitdagende quiz over leiders, zieners en volgelingen in de Bijbel.",
+    "difficulty": "medium",
+    "isPremium": false,
+    "questions": [
+      {
+        "text": "Welke koningin van Juda liet haar eigen kleinkinderen doden om de troon te bemachtigen?",
+        "answers": [
+          {
+            "text": "Esther",
+            "isCorrect": false
+          },
+          {
+            "text": "Izebel",
+            "isCorrect": false
+          },
+          {
+            "text": "Maächa",
+            "isCorrect": false
+          },
+          {
+            "text": "Athalia",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Alleen Joas werd gered.",
+        "bibleReference": "2 Kon. 11:1"
+      },
+      {
+        "text": "Wie was de vader van koning Salomo?",
+        "answers": [
+          {
+            "text": "Rehabeam",
+            "isCorrect": false
+          },
+          {
+            "text": "Saul",
+            "isCorrect": false
+          },
+          {
+            "text": "David",
+            "isCorrect": true
+          },
+          {
+            "text": "Nathan",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zijn moeder was Bathseba.",
+        "bibleReference": "2 Sam. 12:24"
+      },
+      {
+        "text": "Welke profeet werd in een leeuwenkuil geworpen omdat hij bleef bidden tot God?",
+        "answers": [
+          {
+            "text": "Daniël",
+            "isCorrect": true
+          },
+          {
+            "text": "Hosea",
+            "isCorrect": false
+          },
+          {
+            "text": "Ezechiël",
+            "isCorrect": false
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij bad driemaal daags met open vensters.",
+        "bibleReference": "Dan. 6:11-17"
+      },
+      {
+        "text": "Wie was de eerste martelaar die gestenigd werd in Handelingen?",
+        "answers": [
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Stefanus",
+            "isCorrect": true
+          },
+          {
+            "text": "Paulus",
+            "isCorrect": false
+          },
+          {
+            "text": "Jakobus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij zag de hemel geopend.",
+        "bibleReference": "Hand. 7:59"
+      },
+      {
+        "text": "Welke vrouw was een richteres in Israël en profeteerde onder een palmboom?",
+        "answers": [
+          {
+            "text": "Debora",
+            "isCorrect": true
+          },
+          {
+            "text": "Jaël",
+            "isCorrect": false
+          },
+          {
+            "text": "Mirjam",
+            "isCorrect": false
+          },
+          {
+            "text": "Ruth",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij trok op met Barak tegen Sisera.",
+        "bibleReference": "Richt. 4:4-5"
+      },
+      {
+        "text": "Wie waste zijn handen in onschuld bij het proces van Jezus?",
+        "answers": [
+          {
+            "text": "Felix",
+            "isCorrect": false
+          },
+          {
+            "text": "Kajafas",
+            "isCorrect": false
+          },
+          {
+            "text": "Pontius Pilatus",
+            "isCorrect": true
+          },
+          {
+            "text": "Herodes",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij gaf toe aan de druk van de menigte.",
+        "bibleReference": "Matt. 27:24"
+      },
+      {
+        "text": "Welke man werd door een ezelin bestraft toen hij het volk Israël wilde vervloeken?",
+        "answers": [
+          {
+            "text": "Balak",
+            "isCorrect": false
+          },
+          {
+            "text": "Korach",
+            "isCorrect": false
+          },
+          {
+            "text": "Bileam",
+            "isCorrect": true
+          },
+          {
+            "text": "Achan",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij was op weg naar Balak, de koning van Moab.",
+        "bibleReference": "Num. 22:28"
+      },
+      {
+        "text": "Wie was de moeder van Samuël, die God om een zoon smeekte in Silo?",
+        "answers": [
+          {
+            "text": "Hanna",
+            "isCorrect": true
+          },
+          {
+            "text": "Sara",
+            "isCorrect": false
+          },
+          {
+            "text": "Peninna",
+            "isCorrect": false
+          },
+          {
+            "text": "Elisabeth",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Eli dacht aanvankelijk dat zij dronken was.",
+        "bibleReference": "1 Sam. 1:13"
+      },
+      {
+        "text": "Welke koning zag een hand die op de muur schreef tijdens een feestmaal?",
+        "answers": [
+          {
+            "text": "Nebukadnezar",
+            "isCorrect": false
+          },
+          {
+            "text": "Cyrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Darius",
+            "isCorrect": false
+          },
+          {
+            "text": "Belsazar",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "De woorden waren Mene, Mene, Tekel, Upharsin.",
+        "bibleReference": "Dan. 5:5"
+      },
+      {
+        "text": "Wie was de arts die Paulus vergezelde op zijn reizen?",
+        "answers": [
+          {
+            "text": "Marcus",
+            "isCorrect": false
+          },
+          {
+            "text": "Mattheüs",
+            "isCorrect": false
+          },
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Lukas",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij schreef het evangelie van Lukas en Handelingen.",
+        "bibleReference": "Kol. 4:14"
+      },
+      {
+        "text": "Welke zoon van David kwam in opstand en bleef met zijn haar in een eik hangen?",
+        "answers": [
+          {
+            "text": "Absalom",
+            "isCorrect": true
+          },
+          {
+            "text": "Adonia",
+            "isCorrect": false
+          },
+          {
+            "text": "Amnon",
+            "isCorrect": false
+          },
+          {
+            "text": "Salomo",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij werd gedood door Joab.",
+        "bibleReference": "2 Sam. 18:9"
+      },
+      {
+        "text": "Wie zei: \"Ik weet, dat mijn Verlosser leeft\"?",
+        "answers": [
+          {
+            "text": "Job",
+            "isCorrect": true
+          },
+          {
+            "text": "Mozes",
+            "isCorrect": false
+          },
+          {
+            "text": "Abraham",
+            "isCorrect": false
+          },
+          {
+            "text": "David",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Dit getuigt van zijn geloof te midden van lijden.",
+        "bibleReference": "Job 19:25"
+      },
+      {
+        "text": "Welke vrouw verraadde Simson aan de Filistijnen?",
+        "answers": [
+          {
+            "text": "Ruth",
+            "isCorrect": false
+          },
+          {
+            "text": "Delila",
+            "isCorrect": true
+          },
+          {
+            "text": "Esther",
+            "isCorrect": false
+          },
+          {
+            "text": "Naomi",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij ontfutselde hem het geheim van zijn kracht.",
+        "bibleReference": "Richt. 16:18"
+      },
+      {
+        "text": "Wie was de schenker van koning Arthasasta die de muren van Jeruzalem herbouwde?",
+        "answers": [
+          {
+            "text": "Nehemia",
+            "isCorrect": true
+          },
+          {
+            "text": "Mordechai",
+            "isCorrect": false
+          },
+          {
+            "text": "Ezra",
+            "isCorrect": false
+          },
+          {
+            "text": "Zerubbabel",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij keerde terug uit de ballingschap.",
+        "bibleReference": "Neh. 1:11; 2:17"
+      },
+      {
+        "text": "Welke discipel wordt ook wel 'Didymus' (Tweeling) genoemd?",
+        "answers": [
+          {
+            "text": "Filippus",
+            "isCorrect": false
+          },
+          {
+            "text": "Bartholomeüs",
+            "isCorrect": false
+          },
+          {
+            "text": "Andreas",
+            "isCorrect": false
+          },
+          {
+            "text": "Thomas",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij staat bekend om zijn twijfel na de opstanding.",
+        "bibleReference": "Joh. 20:24"
+      },
+      {
+        "text": "Wie was de vrouw van Achab, die de profeten des Heeren doodde?",
+        "answers": [
+          {
+            "text": "Athalia",
+            "isCorrect": false
+          },
+          {
+            "text": "Izebel",
+            "isCorrect": true
+          },
+          {
+            "text": "Vasti",
+            "isCorrect": false
+          },
+          {
+            "text": "Maächa",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij was een Fenicische prinses.",
+        "bibleReference": "1 Kon. 18:4"
+      },
+      {
+        "text": "Welke jonge man viel uit het venster tijdens een lange preek van Paulus?",
+        "answers": [
+          {
+            "text": "Tychikus",
+            "isCorrect": false
+          },
+          {
+            "text": "Eutychus",
+            "isCorrect": true
+          },
+          {
+            "text": "Titus",
+            "isCorrect": false
+          },
+          {
+            "text": "Timotheüs",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Paulus wekte hem weer op.",
+        "bibleReference": "Hand. 20:9"
+      },
+      {
+        "text": "Wie was de schoonvader van Jakob, die hem bedroog met Lea?",
+        "answers": [
+          {
+            "text": "Izaäk",
+            "isCorrect": false
+          },
+          {
+            "text": "Bethuël",
+            "isCorrect": false
+          },
+          {
+            "text": "Laban",
+            "isCorrect": true
+          },
+          {
+            "text": "Lot",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Jakob moest 14 jaar werken voor zijn dochters.",
+        "bibleReference": "Gen. 29:25"
+      },
+      {
+        "text": "Welke Romeinse hoofdman werd door Petrus bezocht in Caesarea?",
+        "answers": [
+          {
+            "text": "Lysias",
+            "isCorrect": false
+          },
+          {
+            "text": "Publius",
+            "isCorrect": false
+          },
+          {
+            "text": "Julius",
+            "isCorrect": false
+          },
+          {
+            "text": "Cornelius",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij was de eerste heidense bekeerling.",
+        "bibleReference": "Hand. 10:1"
+      },
+      {
+        "text": "Wie profeteerde dat de maagd zwanger zou worden en een zoon baren (Immanuël)?",
+        "answers": [
+          {
+            "text": "Maleachi",
+            "isCorrect": false
+          },
+          {
+            "text": "Micha",
+            "isCorrect": false
+          },
+          {
+            "text": "Jesaja",
+            "isCorrect": true
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Een duidelijke Messiaanse profetie.",
+        "bibleReference": "Jes. 7:14"
+      }
+    ]
+  },
+  {
+    "title": "Wonderen en Gebeurtenissen",
+    "slug": "wonderen-en-gebeurtenissen",
+    "description": "Van het Oude Testament tot de wonderen van Jezus en de apostelen.",
+    "difficulty": "medium",
+    "isPremium": true,
+    "questions": [
+      {
+        "text": "Welke priester en schriftgeleerde las de wet voor aan het volk na de ballingschap?",
+        "answers": [
+          {
+            "text": "Ezra",
+            "isCorrect": true
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          },
+          {
+            "text": "Jesaja",
+            "isCorrect": false
+          },
+          {
+            "text": "Nehemia",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij stond op een houten verhoging.",
+        "bibleReference": "Neh. 8:5"
+      },
+      {
+        "text": "Wie waren de twee goddeloze zonen van de hogepriester Eli?",
+        "answers": [
+          {
+            "text": "Jakob en Ezau",
+            "isCorrect": false
+          },
+          {
+            "text": "Nadab en Abihu",
+            "isCorrect": false
+          },
+          {
+            "text": "Kaïn en Abel",
+            "isCorrect": false
+          },
+          {
+            "text": "Hofni en Pinehas",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Zij stierven op één dag.",
+        "bibleReference": "1 Sam. 2:34"
+      },
+      {
+        "text": "Welke vrouw zalfde Jezus' voeten met kostbare nardusolie?",
+        "answers": [
+          {
+            "text": "Salomé",
+            "isCorrect": false
+          },
+          {
+            "text": "Martha",
+            "isCorrect": false
+          },
+          {
+            "text": "Maria Magdalena",
+            "isCorrect": false
+          },
+          {
+            "text": "Maria (zuster van Lazarus)",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Judas maakte bezwaar tegen de verkwisting.",
+        "bibleReference": "Joh. 12:3"
+      },
+      {
+        "text": "Wie was de eerste hogepriester van Israël?",
+        "answers": [
+          {
+            "text": "Mozes",
+            "isCorrect": false
+          },
+          {
+            "text": "Eleazar",
+            "isCorrect": false
+          },
+          {
+            "text": "Pinehas",
+            "isCorrect": false
+          },
+          {
+            "text": "Aäron",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij was de broer van Mozes.",
+        "bibleReference": "Ex. 28:1"
+      },
+      {
+        "text": "Welke man hielp Jezus het kruis te dragen?",
+        "answers": [
+          {
+            "text": "Jozef van Arimathea",
+            "isCorrect": false
+          },
+          {
+            "text": "Nikodemus",
+            "isCorrect": false
+          },
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Simon van Cyrene",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij kwam van het veld.",
+        "bibleReference": "Luk. 23:26"
+      },
+      {
+        "text": "Wie profeteerde over een dal vol dorre doodsbeenderen die levend werden?",
+        "answers": [
+          {
+            "text": "Hosea",
+            "isCorrect": false
+          },
+          {
+            "text": "Joël",
+            "isCorrect": false
+          },
+          {
+            "text": "Daniël",
+            "isCorrect": false
+          },
+          {
+            "text": "Ezechiël",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Dit beeldt het herstel van Israël uit.",
+        "bibleReference": "Ezech. 37:1-10"
+      },
+      {
+        "text": "Welke koningin kwam van ver om de wijsheid van Salomo te horen?",
+        "answers": [
+          {
+            "text": "Vasti",
+            "isCorrect": false
+          },
+          {
+            "text": "De koningin van Scheba",
+            "isCorrect": true
+          },
+          {
+            "text": "Esther",
+            "isCorrect": false
+          },
+          {
+            "text": "Athalia",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij bracht specerijen en goud.",
+        "bibleReference": "1 Kon. 10:1"
+      },
+      {
+        "text": "Wie was de schoonmoeder van Ruth?",
+        "answers": [
+          {
+            "text": "Naomi (Mara)",
+            "isCorrect": true
+          },
+          {
+            "text": "Rachel",
+            "isCorrect": false
+          },
+          {
+            "text": "Orpa",
+            "isCorrect": false
+          },
+          {
+            "text": "Hanna",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij keerde verbitterd terug uit Moab.",
+        "bibleReference": "Ruth 1:20"
+      },
+      {
+        "text": "Welke apostel werd door een adder gebeten op Malta maar bleef ongedeerd?",
+        "answers": [
+          {
+            "text": "Barnabas",
+            "isCorrect": false
+          },
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Paulus",
+            "isCorrect": true
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "De eilandbewoners dachten eerst dat hij een moordenaar was, daarna een god.",
+        "bibleReference": "Hand. 28:3-6"
+      },
+      {
+        "text": "Wie verborg de verspieders in Jericho onder vlasstengels?",
+        "answers": [
+          {
+            "text": "Rachab",
+            "isCorrect": true
+          },
+          {
+            "text": "Tamar",
+            "isCorrect": false
+          },
+          {
+            "text": "Sara",
+            "isCorrect": false
+          },
+          {
+            "text": "Lea",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij werd gered bij de val van de stad.",
+        "bibleReference": "Joz. 2:6"
+      },
+      {
+        "text": "Welke profeet zag de Heere op een hoge troon en de serafs die riepen: \"Heilig, heilig, heilig\"?",
+        "answers": [
+          {
+            "text": "Amos",
+            "isCorrect": false
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          },
+          {
+            "text": "Jesaja",
+            "isCorrect": true
+          },
+          {
+            "text": "Ezechiël",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij werd gereinigd met een gloeiende kool.",
+        "bibleReference": "Jes. 6:1-3"
+      },
+      {
+        "text": "Wie was de vader van de gelovige Timotheüs?",
+        "answers": [
+          {
+            "text": "Een Romein",
+            "isCorrect": false
+          },
+          {
+            "text": "Een Egyptenaar",
+            "isCorrect": false
+          },
+          {
+            "text": "Een Jood",
+            "isCorrect": false
+          },
+          {
+            "text": "Een Griek",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Zijn naam wordt niet genoemd, zijn moeder was Joods.",
+        "bibleReference": "Hand. 16:1"
+      },
+      {
+        "text": "Welke richter was linkshandig en doodde de dikke koning Eglon?",
+        "answers": [
+          {
+            "text": "Othniël",
+            "isCorrect": false
+          },
+          {
+            "text": "Samgar",
+            "isCorrect": false
+          },
+          {
+            "text": "Ehud",
+            "isCorrect": true
+          },
+          {
+            "text": "Barak",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij stak het zwaard in Eglons buik.",
+        "bibleReference": "Richt. 3:15-21"
+      },
+      {
+        "text": "Wie was de vrouw van Nabal die David van bloedschuld weerhield?",
+        "answers": [
+          {
+            "text": "Bathseba",
+            "isCorrect": false
+          },
+          {
+            "text": "Michal",
+            "isCorrect": false
+          },
+          {
+            "text": "Abigaïl",
+            "isCorrect": true
+          },
+          {
+            "text": "Ahinoam",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij werd later Davids vrouw.",
+        "bibleReference": "1 Sam. 25:32-33"
+      },
+      {
+        "text": "Welke profeet werd de 'wenende profeet' genoemd?",
+        "answers": [
+          {
+            "text": "Jesaja",
+            "isCorrect": false
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": true
+          },
+          {
+            "text": "Ezechiël",
+            "isCorrect": false
+          },
+          {
+            "text": "Hosea",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij schreef ook de Klaagliederen.",
+        "bibleReference": "Jer. 9:1"
+      },
+      {
+        "text": "Wie liep op het water naar Jezus toe, maar begon te zinken toen hij op de wind zag?",
+        "answers": [
+          {
+            "text": "Jakobus",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": true
+          },
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Andreas",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Jezus greep hem vast.",
+        "bibleReference": "Matt. 14:29-30"
+      },
+      {
+        "text": "Welke man verkocht zijn eerstgeboorterecht voor linzenmoes?",
+        "answers": [
+          {
+            "text": "Izaäk",
+            "isCorrect": false
+          },
+          {
+            "text": "Ismaël",
+            "isCorrect": false
+          },
+          {
+            "text": "Ezau",
+            "isCorrect": true
+          },
+          {
+            "text": "Jakob",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij verachtte zijn eerstgeboorterecht.",
+        "bibleReference": "Gen. 25:34"
+      },
+      {
+        "text": "Wie was de opvolger van de profeet Elia?",
+        "answers": [
+          {
+            "text": "Elisa",
+            "isCorrect": true
+          },
+          {
+            "text": "Gehazi",
+            "isCorrect": false
+          },
+          {
+            "text": "Jehu",
+            "isCorrect": false
+          },
+          {
+            "text": "Obadja",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij vroeg een dubbel deel van Elia's geest.",
+        "bibleReference": "2 Kon. 2:9"
+      },
+      {
+        "text": "Welke vrouw werd melaats omdat ze kwaadsprak over Mozes?",
+        "answers": [
+          {
+            "text": "Zippora",
+            "isCorrect": false
+          },
+          {
+            "text": "Elisabet",
+            "isCorrect": false
+          },
+          {
+            "text": "Jochebed",
+            "isCorrect": false
+          },
+          {
+            "text": "Mirjam",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Zij moest zeven dagen buiten de legerplaats verblijven.",
+        "bibleReference": "Num. 12:10"
+      },
+      {
+        "text": "Wie was de schenker van de koning die bedroefd was over de verwoesting van Jeruzalem?",
+        "answers": [
+          {
+            "text": "Daniel",
+            "isCorrect": false
+          },
+          {
+            "text": "Mordechai",
+            "isCorrect": false
+          },
+          {
+            "text": "Ezra",
+            "isCorrect": false
+          },
+          {
+            "text": "Nehemia",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij bad tot de God des hemels.",
+        "bibleReference": "Neh. 2:1-4"
+      }
+    ]
+  },
+  {
+    "title": "Helden en Martelaren",
+    "slug": "helden-en-martelaren",
+    "description": "Ontdek de verhalen van dappere mannen en vrouwen uit de Bijbel.",
+    "difficulty": "medium",
+    "isPremium": true,
+    "questions": [
+      {
+        "text": "Wie doodde de legeroverste Sisera met een tentpin?",
+        "answers": [
+          {
+            "text": "Esther",
+            "isCorrect": false
+          },
+          {
+            "text": "Jaël",
+            "isCorrect": true
+          },
+          {
+            "text": "Judith",
+            "isCorrect": false
+          },
+          {
+            "text": "Debora",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij was de vrouw van Heber, de Keniet.",
+        "bibleReference": "Richt. 4:21"
+      },
+      {
+        "text": "Welke evangelist doopte de kamerling uit Ethiopië?",
+        "answers": [
+          {
+            "text": "Filippus",
+            "isCorrect": true
+          },
+          {
+            "text": "Paulus",
+            "isCorrect": false
+          },
+          {
+            "text": "Stefanus",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij werd daarna weggenomen door de Geest.",
+        "bibleReference": "Hand. 8:38"
+      },
+      {
+        "text": "Wie was de sterkste man, die zijn kracht verloor door het scheren van zijn haar?",
+        "answers": [
+          {
+            "text": "Gideon",
+            "isCorrect": false
+          },
+          {
+            "text": "Goliath",
+            "isCorrect": false
+          },
+          {
+            "text": "David",
+            "isCorrect": false
+          },
+          {
+            "text": "Simson",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij was een Nazireeër.",
+        "bibleReference": "Richt. 16:19"
+      },
+      {
+        "text": "Welke vrouw van David kwam hem tegemoet om bloedschuld te voorkomen?",
+        "answers": [
+          {
+            "text": "Abigaïl",
+            "isCorrect": true
+          },
+          {
+            "text": "Bathseba",
+            "isCorrect": false
+          },
+          {
+            "text": "Michal",
+            "isCorrect": false
+          },
+          {
+            "text": "Maächa",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij was eerst de vrouw van de dwaze Nabal.",
+        "bibleReference": "1 Sam. 25:32-33"
+      },
+      {
+        "text": "Wie legde aan Apollos de weg Gods nauwkeuriger uit?",
+        "answers": [
+          {
+            "text": "Paulus en Barnabas",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus en Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Ananias en Saffira",
+            "isCorrect": false
+          },
+          {
+            "text": "Aquila en Priscilla",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Zij hoorden hem in de synagoge.",
+        "bibleReference": "Hand. 18:26"
+      },
+      {
+        "text": "Welke koning van Israël werd zwaar gewond omdat hij zich vermomd had in de strijd?",
+        "answers": [
+          {
+            "text": "Achab",
+            "isCorrect": true
+          },
+          {
+            "text": "Joram",
+            "isCorrect": false
+          },
+          {
+            "text": "Saul",
+            "isCorrect": false
+          },
+          {
+            "text": "Josia",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Een man spande de boog \"in zijn eenvoud\" en trof hem.",
+        "bibleReference": "1 Kon. 22:34"
+      },
+      {
+        "text": "Wie was de eerste martelaar van de christelijke kerk?",
+        "answers": [
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Antipas",
+            "isCorrect": false
+          },
+          {
+            "text": "Stefanus",
+            "isCorrect": true
+          },
+          {
+            "text": "Jakobus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij werd gestenigd buiten Jeruzalem.",
+        "bibleReference": "Hand. 7:59"
+      },
+      {
+        "text": "Welke profeet zag een visioen van vier dieren en de Oude van dagen?",
+        "answers": [
+          {
+            "text": "Ezechiël",
+            "isCorrect": false
+          },
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Zacharia",
+            "isCorrect": false
+          },
+          {
+            "text": "Daniël",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij ontving openbaringen over de eindtijd.",
+        "bibleReference": "Dan. 7:9"
+      },
+      {
+        "text": "Wie was de moeder van Salomo?",
+        "answers": [
+          {
+            "text": "Naamah",
+            "isCorrect": false
+          },
+          {
+            "text": "Haggith",
+            "isCorrect": false
+          },
+          {
+            "text": "Abigaïl",
+            "isCorrect": false
+          },
+          {
+            "text": "Bathseba",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Zij was de vrouw van Uria geweest.",
+        "bibleReference": "2 Sam. 12:24"
+      },
+      {
+        "text": "Welke discipel liep hard naar het graf, maar ging er eerst niet in?",
+        "answers": [
+          {
+            "text": "Johannes",
+            "isCorrect": true
+          },
+          {
+            "text": "Thomas",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Jakobus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij kwam eerder aan dan Petrus.",
+        "bibleReference": "Joh. 20:4-5"
+      },
+      {
+        "text": "Wie was de vader van Gideons vader (Joas)?",
+        "answers": [
+          {
+            "text": "Abiëzer",
+            "isCorrect": true
+          },
+          {
+            "text": "Hezi",
+            "isCorrect": false
+          },
+          {
+            "text": "Joas",
+            "isCorrect": false
+          },
+          {
+            "text": "Manasse",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Gideon behoorde tot het geslacht van Abiëzer.",
+        "bibleReference": "Richt. 6:11"
+      },
+      {
+        "text": "Welke vrouw werd uit de doden opgewekt door Petrus in Joppe?",
+        "answers": [
+          {
+            "text": "Lydia",
+            "isCorrect": false
+          },
+          {
+            "text": "Dorkas (Tabitha)",
+            "isCorrect": true
+          },
+          {
+            "text": "Maria",
+            "isCorrect": false
+          },
+          {
+            "text": "Priscilla",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij was vol van goede werken.",
+        "bibleReference": "Hand. 9:40"
+      },
+      {
+        "text": "Wie moest naakt en barrevoets lopen als teken tegen Egypte en Cusj?",
+        "answers": [
+          {
+            "text": "Jesaja",
+            "isCorrect": true
+          },
+          {
+            "text": "Hosea",
+            "isCorrect": false
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          },
+          {
+            "text": "Micha",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij deed dit drie jaar lang.",
+        "bibleReference": "Jes. 20:3"
+      },
+      {
+        "text": "Welke man hielp Paulus en Silas in de gevangenis te Filippi na de aardbeving?",
+        "answers": [
+          {
+            "text": "De magistraat",
+            "isCorrect": false
+          },
+          {
+            "text": "De centurio",
+            "isCorrect": false
+          },
+          {
+            "text": "Lydia",
+            "isCorrect": false
+          },
+          {
+            "text": "De stokbewaarder",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij vroeg: \"Wat moet ik doen om zalig te worden?\"",
+        "bibleReference": "Hand. 16:27-30"
+      },
+      {
+        "text": "Wie was de koning van Moab die Bileam inhuurde?",
+        "answers": [
+          {
+            "text": "Sihon",
+            "isCorrect": false
+          },
+          {
+            "text": "Balak",
+            "isCorrect": true
+          },
+          {
+            "text": "Eglon",
+            "isCorrect": false
+          },
+          {
+            "text": "Og",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij wilde Israël vervloeken.",
+        "bibleReference": "Num. 22:2"
+      },
+      {
+        "text": "Welke profeet werd gevoed door raven bij de beek Krith?",
+        "answers": [
+          {
+            "text": "Elisa",
+            "isCorrect": false
+          },
+          {
+            "text": "Johannes de Doper",
+            "isCorrect": false
+          },
+          {
+            "text": "Amos",
+            "isCorrect": false
+          },
+          {
+            "text": "Elia",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Dit gebeurde tijdens de droogte.",
+        "bibleReference": "1 Kon. 17:6"
+      },
+      {
+        "text": "Wie was de vrouw van Isaäk?",
+        "answers": [
+          {
+            "text": "Lea",
+            "isCorrect": false
+          },
+          {
+            "text": "Rebekka",
+            "isCorrect": true
+          },
+          {
+            "text": "Sara",
+            "isCorrect": false
+          },
+          {
+            "text": "Rachel",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij werd gehaald uit Mesopotamië.",
+        "bibleReference": "Gen. 24:67"
+      },
+      {
+        "text": "Welke apostel schreef de meeste brieven in het Nieuwe Testament?",
+        "answers": [
+          {
+            "text": "Paulus",
+            "isCorrect": true
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Lukas",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij schreef 13 (of 14 met Hebreeën) brieven.",
+        "bibleReference": "N.v.t. (Canon)"
+      },
+      {
+        "text": "Wie bouwde de muren van Jericho weder op ten koste van zijn zonen?",
+        "answers": [
+          {
+            "text": "Achan",
+            "isCorrect": false
+          },
+          {
+            "text": "Jerobeam",
+            "isCorrect": false
+          },
+          {
+            "text": "Hiël van Bethel",
+            "isCorrect": true
+          },
+          {
+            "text": "Korach",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Dit vervulde de vloek van Jozua.",
+        "bibleReference": "1 Kon. 16:34"
+      },
+      {
+        "text": "Welke discipel werd door Herodes met het zwaard gedood?",
+        "answers": [
+          {
+            "text": "Andreas",
+            "isCorrect": false
+          },
+          {
+            "text": "Stefanus",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Jakobus",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "De eerste apostel-martelaar (broer van Johannes).",
+        "bibleReference": "Hand. 12:2"
+      }
+    ]
+  },
+  {
+    "title": "Diepere Bijbelstudie",
+    "slug": "diepere-bijbelstudie",
+    "description": "Moeilijkere vragen voor de echte Bijbelkenners.",
+    "difficulty": "hard",
+    "isPremium": true,
+    "questions": [
+      {
+        "text": "Wie zei: \"Naakt ben ik uit mijner moeders buik gekomen, en naakt zal ik daarheen wederkeren\"?",
+        "answers": [
+          {
+            "text": "Job",
+            "isCorrect": true
+          },
+          {
+            "text": "David",
+            "isCorrect": false
+          },
+          {
+            "text": "Prediker",
+            "isCorrect": false
+          },
+          {
+            "text": "Salomo",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij zei dit na het verlies van zijn kinderen en bezit.",
+        "bibleReference": "Job 1:21"
+      },
+      {
+        "text": "Welke medewerker verliet Paulus omdat hij de tegenwoordige wereld liefhad?",
+        "answers": [
+          {
+            "text": "Crescens",
+            "isCorrect": false
+          },
+          {
+            "text": "Tychikus",
+            "isCorrect": false
+          },
+          {
+            "text": "Titus",
+            "isCorrect": false
+          },
+          {
+            "text": "Demas",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij vertrok naar Thessalonica.",
+        "bibleReference": "2 Tim. 4:10"
+      },
+      {
+        "text": "Wie was de raadsman van David die zich verhing nadat zijn raad verworpen was?",
+        "answers": [
+          {
+            "text": "Husai",
+            "isCorrect": false
+          },
+          {
+            "text": "Joab",
+            "isCorrect": false
+          },
+          {
+            "text": "Abisai",
+            "isCorrect": false
+          },
+          {
+            "text": "Achitofel",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Hij koos de kant van Absalom.",
+        "bibleReference": "2 Sam. 17:23"
+      },
+      {
+        "text": "Welke apostel werd verbannen naar het eiland Patmos?",
+        "answers": [
+          {
+            "text": "Johannes",
+            "isCorrect": true
+          },
+          {
+            "text": "Jakobus",
+            "isCorrect": false
+          },
+          {
+            "text": "Paulus",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Daar schreef hij de Openbaring.",
+        "bibleReference": "Openb. 1:9"
+      },
+      {
+        "text": "Wie was de vrouw van Nabal, die later met David trouwde?",
+        "answers": [
+          {
+            "text": "Michal",
+            "isCorrect": false
+          },
+          {
+            "text": "Hagith",
+            "isCorrect": false
+          },
+          {
+            "text": "Abigaïl",
+            "isCorrect": true
+          },
+          {
+            "text": "Ahinoam",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij wordt geprezen om haar verstand.",
+        "bibleReference": "1 Sam. 25:39"
+      },
+      {
+        "text": "Welke profeet werd met een zaag middendoor gezaagd (volgens de traditie/Hebreeën)?",
+        "answers": [
+          {
+            "text": "Micha",
+            "isCorrect": false
+          },
+          {
+            "text": "Jesaja",
+            "isCorrect": true
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          },
+          {
+            "text": "Zacharia",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Wordt vaak geassocieerd met Hebr. 11:37.",
+        "bibleReference": "(Hebr. 11:37)"
+      },
+      {
+        "text": "Wie was de eerste mens die stierf?",
+        "answers": [
+          {
+            "text": "Enos",
+            "isCorrect": false
+          },
+          {
+            "text": "Adam",
+            "isCorrect": false
+          },
+          {
+            "text": "Abel",
+            "isCorrect": true
+          },
+          {
+            "text": "Seth",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij werd gedood door zijn broer Kaïn.",
+        "bibleReference": "Gen. 4:8"
+      },
+      {
+        "text": "Welke vrouw van Abraham werd verstoten en de woestijn ingestuurd?",
+        "answers": [
+          {
+            "text": "Bilha",
+            "isCorrect": false
+          },
+          {
+            "text": "Hagar",
+            "isCorrect": true
+          },
+          {
+            "text": "Sara",
+            "isCorrect": false
+          },
+          {
+            "text": "Ketura",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij was de moeder van Ismaël.",
+        "bibleReference": "Gen. 21:14"
+      },
+      {
+        "text": "Wie was de metgezel van Paulus die met hem zong in de gevangenis van Filippi?",
+        "answers": [
+          {
+            "text": "Silas",
+            "isCorrect": true
+          },
+          {
+            "text": "Barnabas",
+            "isCorrect": false
+          },
+          {
+            "text": "Lukas",
+            "isCorrect": false
+          },
+          {
+            "text": "Timotheüs",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "De fundamenten van de gevangenis werden bewogen.",
+        "bibleReference": "Hand. 16:25"
+      },
+      {
+        "text": "Welke koning liet de apostel Jakobus met het zwaard doden?",
+        "answers": [
+          {
+            "text": "Pilatus",
+            "isCorrect": false
+          },
+          {
+            "text": "Felix",
+            "isCorrect": false
+          },
+          {
+            "text": "Herodes (Agrippa I)",
+            "isCorrect": true
+          },
+          {
+            "text": "Festus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij wilde ook Petrus doden.",
+        "bibleReference": "Hand. 12:1-2"
+      },
+      {
+        "text": "Wie was de vader van Methusalem?",
+        "answers": [
+          {
+            "text": "Henoch",
+            "isCorrect": true
+          },
+          {
+            "text": "Lamech",
+            "isCorrect": false
+          },
+          {
+            "text": "Mahalaleël",
+            "isCorrect": false
+          },
+          {
+            "text": "Jared",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij wandelde met God en was niet meer.",
+        "bibleReference": "Gen. 5:21-24"
+      },
+      {
+        "text": "Welke vrouw lachte achter het tentkleed toen de Heere verscheen?",
+        "answers": [
+          {
+            "text": "Sara",
+            "isCorrect": true
+          },
+          {
+            "text": "Lea",
+            "isCorrect": false
+          },
+          {
+            "text": "Rebekka",
+            "isCorrect": false
+          },
+          {
+            "text": "Hagar",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij geloofde niet dat ze nog een zoon zou krijgen.",
+        "bibleReference": "Gen. 18:12"
+      },
+      {
+        "text": "Wie was de hogepriester die Samuël opleidde in de tabernakel?",
+        "answers": [
+          {
+            "text": "Eli",
+            "isCorrect": true
+          },
+          {
+            "text": "Pinehas",
+            "isCorrect": false
+          },
+          {
+            "text": "Aäron",
+            "isCorrect": false
+          },
+          {
+            "text": "Zadok",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij was oud en zijn ogen waren verduisterd.",
+        "bibleReference": "1 Sam. 3:1"
+      },
+      {
+        "text": "Welke discipel werd door Jezus \"een Israëliet in welken geen bedrog is\" genoemd?",
+        "answers": [
+          {
+            "text": "Andreas",
+            "isCorrect": false
+          },
+          {
+            "text": "Thomas",
+            "isCorrect": false
+          },
+          {
+            "text": "Nathanaël (Bartholomeüs)",
+            "isCorrect": true
+          },
+          {
+            "text": "Filippus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Jezus zag hem onder de vijgenboom.",
+        "bibleReference": "Joh. 1:48"
+      },
+      {
+        "text": "Wie was de broer van Rebekka?",
+        "answers": [
+          {
+            "text": "Lot",
+            "isCorrect": false
+          },
+          {
+            "text": "Bethuël",
+            "isCorrect": false
+          },
+          {
+            "text": "Laban",
+            "isCorrect": true
+          },
+          {
+            "text": "Ezau",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij woonde in Haran.",
+        "bibleReference": "Gen. 24:29"
+      },
+      {
+        "text": "Welke profeet zag een visioen van een vallei met dorre beenderen?",
+        "answers": [
+          {
+            "text": "Daniël",
+            "isCorrect": false
+          },
+          {
+            "text": "Jeremia",
+            "isCorrect": false
+          },
+          {
+            "text": "Ezechiël",
+            "isCorrect": true
+          },
+          {
+            "text": "Jesaja",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij moest profeteren tot de Geest.",
+        "bibleReference": "Ezech. 37:1"
+      },
+      {
+        "text": "Wie was de vrouw van de priester Zacharias?",
+        "answers": [
+          {
+            "text": "Salome",
+            "isCorrect": false
+          },
+          {
+            "text": "Maria",
+            "isCorrect": false
+          },
+          {
+            "text": "Elisabeth",
+            "isCorrect": true
+          },
+          {
+            "text": "Anna",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Zij was uit de dochteren van Aäron.",
+        "bibleReference": "Luk. 1:5"
+      },
+      {
+        "text": "Welke koning bouwde de eerste tempel in Jeruzalem?",
+        "answers": [
+          {
+            "text": "David",
+            "isCorrect": false
+          },
+          {
+            "text": "Josia",
+            "isCorrect": false
+          },
+          {
+            "text": "Salomo",
+            "isCorrect": true
+          },
+          {
+            "text": "Hizkia",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij gebruikte ceders uit de Libanon.",
+        "bibleReference": "1 Kon. 6:1"
+      },
+      {
+        "text": "Wie nam het lichaam van Jezus van het kruis en legde het in zijn eigen nieuwe graf?",
+        "answers": [
+          {
+            "text": "Johannes",
+            "isCorrect": false
+          },
+          {
+            "text": "Petrus",
+            "isCorrect": false
+          },
+          {
+            "text": "Jozef van Arimathea",
+            "isCorrect": true
+          },
+          {
+            "text": "Nikodemus",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Hij was een rijk man en discipel.",
+        "bibleReference": "Matt. 27:57-60"
+      },
+      {
+        "text": "Welke jonge man vergezelde Paulus en Barnabas, maar verliet hen in Pamphyilië?",
+        "answers": [
+          {
+            "text": "Titus",
+            "isCorrect": false
+          },
+          {
+            "text": "Silas",
+            "isCorrect": false
+          },
+          {
+            "text": "Timotheüs",
+            "isCorrect": false
+          },
+          {
+            "text": "Johannes Markus",
+            "isCorrect": true
+          }
+        ],
+        "explanation": "Dit veroorzaakte later een scheuring.",
+        "bibleReference": "Hand. 13:13"
+      }
+    ]
+  }
+]

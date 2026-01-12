@@ -49,6 +49,38 @@ export async function GET() {
         icon: "book-open",
         isActive: true,
         sortOrder: 4
+      },
+      {
+        title: "Het leven van Jezus",
+        slug: "leven-van-jezus",
+        description: "Volg het leven van Jezus Christus, van Zijn geboorte tot Zijn wederopstanding.",
+        icon: "sparkles",
+        sortOrder: 10,
+        isActive: true
+      },
+      {
+        title: "Vrouwen in de Bijbel",
+        slug: "vrouwen-in-de-bijbel",
+        description: "Ontdek de inspirerende en krachtige verhalen van vrouwen uit de Bijbel.",
+        icon: "users",
+        sortOrder: 11,
+        isActive: true
+      },
+      {
+        title: "Wonderen en tekenen",
+        slug: "wonderen-en-tekenen",
+        description: "Lees over de wonderbaarlijke daden en tekenen van Gods macht.",
+        icon: "zap",
+        sortOrder: 12,
+        isActive: true
+      },
+      {
+        title: "Personen in de bijbel",
+        slug: "personen-in-de-bijbel",
+        description: "Maak kennis met de markante figuren, profeten en koningen uit de Bijbel.",
+        icon: "users",
+        sortOrder: 13,
+        isActive: true
       }
     ];
 

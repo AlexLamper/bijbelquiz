@@ -1,4 +1,5 @@
 import mongoose, { Document, Model, Schema } from 'mongoose';
+import { ICategory } from './Category';
 
 export interface IAnswer {
   text: string;
@@ -16,7 +17,7 @@ export interface IQuiz extends Document {
   title: string;
   slug: string;
   description?: string;
-  categoryId: mongoose.Types.ObjectId; // Reference to Category
+  categoryId: mongoose.Types.ObjectId | ICategory; // Reference to Category
   difficulty: 'easy' | 'medium' | 'hard';
   isPremium: boolean;
   questions: IQuestion[];

@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
-import { BookOpen, AlertCircle, Loader2, CheckCircle2 } from 'lucide-react';
+import { BookOpen, AlertCircle, Loader2 } from 'lucide-react';
 
 function RegisterContent() {
   const router = useRouter();
@@ -46,7 +46,7 @@ function RegisterContent() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#eae6db] px-4 py-12">
+    <div className="flex min-h-screen items-center justify-center bg-background px-4 py-12">
       <div className="w-full max-w-md space-y-8">
         <div className="flex flex-col items-center">
            <Link href="/" className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg mb-4 hover:scale-105 transition-transform">

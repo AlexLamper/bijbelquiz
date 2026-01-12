@@ -23,31 +23,33 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-              {(!session || !session.user.isPremium) && (
-                <Link href="/premium" className="hover:text-primary transition-colors">Premium</Link>
+              <Link href="/quizzes" className="hover:text-primary transition-colors">Alle Quizzen</Link>
+              {session && (
+                 <Link href="/dashboard" className="hover:text-primary transition-colors">Mijn Dashboard</Link>
               )}
            </nav>
 
           <div className="flex items-center gap-3">
             {status === 'authenticated' && session ? (
               <>
-                {session.user.isPremium ? (
-                  <div className="hidden sm:flex items-center gap-1.5 rounded-full bg-amber-100/50 px-3 py-1 text-xs font-semibold text-amber-600 border border-amber-200">
-                    <Star className="h-3 w-3 fill-current" />
-                    <span>PRO</span>
-                  </div>
-                ) : (
+                {!session.user.isPremium && (
                   <Link href="/premium" className="hidden sm:block">
-                    <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
+                    <Button variant="default" size="sm" className="bg-gradient-to-r from-amber-500 to-orange-500 text-white border-0 hover:opacity-90">
                       Word Premium
                     </Button>
                   </Link>
                 )}
                 
+                {session.user.isPremium && (
+                  <div className="hidden sm:flex items-center gap-1.5 rounded-full bg-amber-100/50 px-3 py-1 text-xs font-semibold text-amber-600 border border-amber-200">
+                    <Star className="h-3 w-3 fill-current" />
+                    <span>PRO</span>
+                  </div>
+                )}
+
                 <div className="flex items-center gap-3 pl-3 border-l border-border/40">
-                  <Link href="/profile" className="flex flex-col items-end hidden sm:flex hover:opacity-80 transition-opacity">
-                    <span className="text-sm font-medium leading-none text-foreground">{session.user.name || 'Gebruiker'}</span>
-                    <span className="text-xs text-muted-foreground">{session.user.email}</span>
+                  <Link href="/dashboard" className="flex items-center hidden sm:flex hover:opacity-80 transition-opacity">
+                    <span className="text-sm font-bold text-foreground">{session.user.name || 'Gebruiker'}</span>
                   </Link>
                   <Button 
                     onClick={() => signOut({ callbackUrl: '/' })}

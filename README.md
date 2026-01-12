@@ -1,6 +1,6 @@
 # Welkom bij BijbelQuiz
 
-![BijbelQuiz Hero](https://placeholder-image-url.com-if-exists)
+![BijbelQuiz Hero](public/images/dashboard.png)
 
 **BijbelQuiz** is hét moderne, interactieve platform voor iedereen die zijn of haar kennis van de Bijbel wil testen, verrijken en verdiepen. In een tijdloze, rustgevende omgeving bieden wij uitdagende quizzen aan die u meenemen op reis door het Oude en Nieuwe Testament, de theologie en de rijke Bijbelse geschiedenis.
 
