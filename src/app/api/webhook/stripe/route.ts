@@ -5,6 +5,8 @@ import connectDB from '@/lib/db';
 import User from '@/models/User';
 import Payment from '@/models/Payment';
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(req: NextRequest) {
   const body = await req.text();
   const sig = req.headers.get('stripe-signature') as string;
