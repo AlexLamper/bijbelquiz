@@ -1,5 +1,12 @@
 import mongoose from 'mongoose';
 
+// Import models here to ensure they are registered with Mongoose on connection
+import '@/models/User';
+import '@/models/Quiz';
+import '@/models/Category';
+import '@/models/Payment';
+import '@/models/UserProgress';
+
 interface MongooseCache {
   conn: typeof mongoose | null;
   promise: Promise<typeof mongoose> | null;
