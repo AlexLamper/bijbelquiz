@@ -1,84 +1,41 @@
-# BijbelQuiz - Online Bijbelkennis Platform
+# Welkom bij BijbelQuiz
 
 ![BijbelQuiz Hero](https://placeholder-image-url.com-if-exists)
 
-**BijbelQuiz** is een modern, interactief platform ontworpen om gelovigen en geïnteresseerden te helpen hun Bijbelkennis te testen en te verdiepen. Door middel van uitdagende quizzen in een klassieke, rustgevende omgeving kunnen gebruikers spelenderwijs leren over het Oude en Nieuwe Testament, theologie en Bijbelse geschiedenis.
+**BijbelQuiz** is hét moderne, interactieve platform voor iedereen die zijn of haar kennis van de Bijbel wil testen, verrijken en verdiepen. In een tijdloze, rustgevende omgeving bieden wij uitdagende quizzen aan die u meenemen op reis door het Oude en Nieuwe Testament, de theologie en de rijke Bijbelse geschiedenis.
 
-Het platform is live te bezoeken op: [https://www.bijbelquiz.com](https://www.bijbelquiz.com)
+Bezoek ons live op: [https://www.bijbelquiz.com](https://www.bijbelquiz.com)
 
-## 🌟 Belangrijkste Functies
+## 🌟 Waarom BijbelQuiz?
 
-- **Interactieve Quizzen**: Een breed scala aan quizzen over diverse bijbelse onderwerpen.
-- **Studie Modus (Premium)**: Directe feedback na elke vraag met diepgaande uitleg en bijschriften om direct van te leren.
-- **Voortgangsmonitor**: Houdt bij welke quizzen zijn voltooid en wat de scores waren.
-- **Premium Lidmaatschap**: Integratie met Stripe voor betalingen, waarmee exclusieve content wordt ontgrendeld.
-- **Authenticatie**: Veilig inloggen via Google of e-mail (NextAuth).
-- **Responsive Design**: Een prachtig 'papier/perkament' thema dat werkt op mobiel, tablet en desktop.
+Wij geloven dat leren over de Bijbel leuk, toegankelijk en diepgaand kan zijn. Ons platform is ontwikkeld met aandacht voor detail en gebruiksgemak.
 
-## 🛠️ Technologie Stack
+### Onze Unieke Functies
 
-Dit project is gebouwd met de nieuwste webtechnologieën voor snelheid, veiligheid en schaalbaarheid:
+*   **Diverse Collectie**: Van makkelijke instapvragen tot pittige theologische vraagstukken.
+*   **Interactieve Leerervaring**: Krijg direct feedback op uw antwoorden.
+*   **Studie Modus (Premium)**: Voor de serieuze student bieden wij uitgebreide uitleg en directe Bijbelverwijzingen bij elke vraag. Zo wordt elke quiz een mini-Bijbelstudie.
+*   **Voortgangsmonitor**: Houd uw persoonlijke groei bij en zie welke onderwerpen u al beheerst.
+*   **Prachtig Design**: Een klassiek 'studeerkamer'-gevoel dat rust uitstraalt, perfect werkend op uw telefoon, tablet en computer.
 
-- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router & Server Components)
-- **Taal**: [TypeScript](https://www.typescriptlang.org/) voor robuuste type-safety.
-- **Database**: [MongoDB](https://www.mongodb.com/) (via Mongoose) voor flexibele dataopslag.
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) met een custom design systeem.
-- **Authenticatie**: [NextAuth.js](https://next-auth.js.org/) (OAuth & Credentials).
-- **Betalingen**: [Stripe](https://stripe.com/) Checkout & Webhooks.
+## 🎯 Voor Wie?
 
-## 🚀 Installatie & Lokaal Draaien
+*   **Individuele Gelovigen**: Voor dagelijkse verdieping en ontspanning.
+*   **Bijbelkringen & Groepen**: Als leuke, leerzame start van de avond.
+*   **Zondagsscholen & Catechisatie**: Om spelenderwijs kennis te toetsen.
+*   **Zoekers & Geïnteresseerden**: Een laagdrempelige manier om kennis te maken met Bijbelse verhalen.
 
-Wil je bijdragen of het project lokaal draaien? Volg deze stappen:
+## 🔒 Premium Lidmaatschap
 
-1.  **Clone de repository**
-    ```bash
-    git clone https://github.com/jouw-gebruikersnaam/bijbelquiz.git
-    cd bijbelquiz
-    ```
+BijbelQuiz is gratis te gebruiken. Voor gebruikers die meer diepgang zoeken, bieden wij een **Premium Lidmaatschap**. Hiermee krijgt u:
+*   Onbeperkt toegang tot alle gespecialiseerde quizzen.
+*   Diepgaande achtergrondinformatie en theologische uitleg bij antwoorden.
+*   Een reclamevrije ervaring gericht puur op studie.
 
-2.  **Installeer dependencies**
-    ```bash
-    npm install
-    ```
+---
 
-3.  **Omgevingsvariabelen instellen**
-    Maak een `.env.local` bestand aan in de root en vul de volgende waarden in:
-    ```env
-    MONGODB_URI=jouw_mongodb_connection_string
-    NEXTAUTH_SECRET=jouw_geheime_key
-    NEXTAUTH_URL=http://localhost:3000
-    
-    # Google OAuth
-    GOOGLE_CLIENT_ID=...
-    GOOGLE_CLIENT_SECRET=...
+*Wilt u contact met ons opnemen of heeft u suggesties voor nieuwe quizvragen? Bezoek onze contactpagina op de website.*
 
-    # Stripe
-    STRIPE_SECRET_KEY=sk_test_...
-    STRIPE_WEBHOOK_SECRET=whsec_...
-    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-    ```
-
-4.  **Ontwikkelserver starten**
-    ```bash
-    npm run dev
-    ```
-    De app is nu bereikbaar op `http://localhost:3000`.
-
-## 💳 Stripe Webhook Testen (Lokaal)
-
-Om betalingen lokaal te testen is de Stripe CLI nodig om events door te sturen:
-
-1.  Login bij Stripe: `stripe login`
-2.  Start de listener: `stripe listen --forward-to localhost:3000/api/webhook/stripe`
-3.  Gebruik de "Signing Secret" die de CLI toont als `STRIPE_WEBHOOK_SECRET` in je `.env.local`.
-
-## 📂 Project Structuur
-
-- `src/app`: Next.js App Router pagina's en API routes.
-- `src/components`: Herbruikbare UI componenten (Navbar, QuizPlayer, Buttons).
-- `src/lib`: Helper functies (db connectie, auth opties, stripe instance).
-- `src/models`: Mongoose database schema's (User, Quiz, Payment).
-
-## 📄 Licentie
-
-Dit project is privé eigendom. Alle rechten voorbehouden.
+Status: **Live & Actief**
+Versie: **1.0.0**
+Copyright © 2026 BijbelQuiz. Alle rechten voorbehouden.

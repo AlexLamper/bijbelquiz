@@ -17,8 +17,42 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "BijbelQuiz",
-  description: "Test je kennis van de Bijbel",
+  title: {
+    default: "BijbelQuiz - Test & Verdiep je Bijbelkennis Gratis Online",
+    template: "%s | BijbelQuiz"
+  },
+  description: "De #1 plek voor gratis Bijbelquizzen online. Test je kennis van het Oude en Nieuwe Testament, leer spelenderwijs en ontdek diepgaande Bijbelstudies. Geschikt voor jong en oud.",
+  keywords: [
+    "bijbel quiz", "bijbel quiz online", "gratis bijbel quiz", "bijbel quizzen", "bijbelkennis", 
+    "bijbel trivia", "christelijke quiz", "bijbel vragen", "bijbelstudie", "online bijbelspel", 
+    "geloofsquiz", "oude testament quiz", "nieuwe testament quiz", "jezus quiz", "bijbelverhalen", 
+    "religieuze quiz", "zondagsschool spelletjes", "bijbelteksten leren", "christelijk onderwijs", 
+    "bijbel challenge", "dagelijkse bijbelvraag", "bijbelstudietools", "kennis van de schrift",
+    "bijbelvragen en antwoorden", "moeilijke bijbelvragen", "makkelijke bijbelquiz", "kinderbijbel quiz",
+    "bijbel kwis", "christelijke spellen", "bijbel onderwijs", "catechisatie vragen", "bijbelkring materiaal",
+    "kennis van god", "profeten quiz", "apostelen quiz", "psalmen quiz", "evangelie quiz",
+    "openbaring studie", "schepping quiz", "noach quiz", "mozes vragen", "david en goliath quiz",
+    "bijbelse feiten", "christelijk geloof test", "bijbel educatie", "spirtualiteit", "theologie quiz",
+    "gereformeerde quiz", "katholieke bijbelquiz", "protestantse bijbelquiz", "evangelische quiz",
+    "bijbel apps", "leer de bijbel", "bijbel cursus", "geloofsgroei", "bijbelverdieping"
+  ],
+  openGraph: {
+    type: "website",
+    locale: "nl_NL",
+    url: "https://www.bijbelquiz.com",
+    title: "BijbelQuiz - De Beste Online Bijbeltest",
+    description: "Doe mee met duizenden anderen en test je kennis van Gods Woord. Gratis quizzen, directe feedback en premium studies.",
+    siteName: "BijbelQuiz",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BijbelQuiz - Test je Bijbelkennis",
+    description: "Speel gratis bijbelquizzen en verrijk je geloofsleven.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
