@@ -43,10 +43,10 @@ export default function Navbar() {
                 )}
                 
                 <div className="flex items-center gap-3 pl-3 border-l border-border/40">
-                  <div className="flex flex-col items-end hidden sm:flex">
+                  <Link href="/profile" className="flex flex-col items-end hidden sm:flex hover:opacity-80 transition-opacity">
                     <span className="text-sm font-medium leading-none text-foreground">{session.user.name || 'Gebruiker'}</span>
                     <span className="text-xs text-muted-foreground">{session.user.email}</span>
-                  </div>
+                  </Link>
                   <Button 
                     onClick={() => signOut({ callbackUrl: '/' })}
                     variant="ghost" 
