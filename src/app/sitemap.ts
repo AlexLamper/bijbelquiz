@@ -2,6 +2,11 @@ import { MetadataRoute } from 'next'
 import connectDB from '@/lib/db'
 import Quiz from '@/models/Quiz'
 
+interface QuizDocument {
+  slug: string
+  updatedAt?: Date
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.bijbelquiz.com'
 
@@ -26,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     await connectDB();
     const quizzes = await Quiz.find({}).select('slug updatedAt').lean();
 
-    const quizPages = quizzes.map((quiz: any) => ({
+    const quizPages = quizzes.map((quiz: QuizDocument) => ({
       url: `${baseUrl}/quiz/${quiz.slug}`,
       lastModified: quiz.updatedAt || new Date(),
       changeFrequency: 'monthly' as const,
