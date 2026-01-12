@@ -47,11 +47,12 @@ async function connectDB() {
   try {
     cached.conn = await cached.promise;
     return cached.conn;
-  } catch (e: Error) {
+  } catch (e) {
     cached.promise = null;
     
     // Add helpful debugging info for common production errors
-    if (e.message?.includes('buffering timed out') || e.name === 'MongooseServerSelectionError') {
+    const err = e as any;
+    if (err.message?.includes('buffering timed out') || err.name === 'MongooseServerSelectionError') {
        console.error('\n\n❌ MONGODB CONNECTION ERROR:');
        console.error('It looks like the server cannot reach MongoDB Atlas.');
        console.error('POTENTIAL FIXES:');
