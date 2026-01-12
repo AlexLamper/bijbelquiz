@@ -23,7 +23,9 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-              <Link href="/premium" className="hover:text-primary transition-colors">Premium</Link>
+              {(!session || !session.user.isPremium) && (
+                <Link href="/premium" className="hover:text-primary transition-colors">Premium</Link>
+              )}
            </nav>
 
           <div className="flex items-center gap-3">

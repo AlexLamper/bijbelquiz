@@ -4,6 +4,8 @@ import Quiz from '@/models/Quiz';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, BookOpen, CheckCircle2, Lock, Sparkles, Star } from 'lucide-react';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 
 export const dynamic = 'force-dynamic';
 
@@ -40,7 +42,9 @@ async function getQuizzes() {
   }
 }
 
-function QuizCard({ quiz }: { quiz: QuizItem }) {
+function QuizCard({ quiz, isPremiumUser }: { quiz: QuizItem, isPremiumUser: boolean }) {
+  const isLocked = quiz.isPremium && !isPremiumUser;
+
   return (
     <Card className="group relative flex h-full flex-col overflow-hidden border-border/50 bg-card transition-all hover:shadow-lg hover:border-primary/20 hover:-translate-y-1">
       <div className="absolute inset-x-0 top-0 h-1 bg-primary/20 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -75,9 +79,9 @@ function QuizCard({ quiz }: { quiz: QuizItem }) {
         </div>
       </CardContent>
       <CardFooter className="pt-0">
-        <Button className="w-full gap-2 transition-transform active:scale-95" variant={quiz.isPremium ? "outline" : "default"} asChild>
+        <Button className="w-full gap-2 transition-transform active:scale-95" variant={isLocked ? "outline" : "default"} asChild>
           <Link href={`/quiz/${quiz.slug || quiz._id}`}>
-            {quiz.isPremium ? (
+            {isLocked ? (
               <>
                 <Lock className="h-4 w-4" /> Ontgrendel
               </>
@@ -94,6 +98,8 @@ function QuizCard({ quiz }: { quiz: QuizItem }) {
 }
 
 export default async function Home() {
+  const session = await getServerSession(authOptions);
+  const isPremiumUser = !!session?.user?.isPremium;
   const { free, premium } = await getQuizzes();
 
   return (
@@ -116,9 +122,15 @@ export default async function Home() {
               <Button size="lg" className="h-12 px-8 text-base shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-shadow" asChild>
                 <Link href="#free-quizzes">Begin nu gratis</Link>
               </Button>
-              <Button variant="outline" size="lg" className="h-12 px-8 text-base bg-background/50 backdrop-blur border-primary/20 hover:bg-background/80" asChild>
-                <Link href="/premium">Bekijk Premium</Link>
-              </Button>
+              {!isPremiumUser && (
+                <Button 
+                    size="lg" 
+                    className="h-12 px-8 text-base bg-white/20 backdrop-blur-md border border-white/30 text-foreground hover:bg-white/30 hover:text-primary transition-all shadow-xl" 
+                    asChild
+                >
+                  <Link href="/premium">Bekijk Premium</Link>
+                </Button>
+              )}
             </div>
             
             <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground font-medium">
@@ -153,7 +165,7 @@ export default async function Home() {
           
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {free.map((quiz: QuizItem) => (
-              <QuizCard key={quiz._id} quiz={quiz} />
+              <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={isPremiumUser} />
             ))}
             
             {/* Fallback layout if no quizzes */}
@@ -183,7 +195,7 @@ export default async function Home() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
              {premium.map((quiz: QuizItem) => (
-              <QuizCard key={quiz._id} quiz={quiz} />
+              <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={isPremiumUser} />
             ))}
              {premium.length === 0 && (
                 <div className="col-span-full flex flex-col items-center justify-center rounded-2xl border border-dashed border-primary/20 bg-white/40 p-12 text-center">
@@ -194,11 +206,13 @@ export default async function Home() {
             )}
           </div>
           
-          <div className="mt-12 text-center">
-             <Button size="lg" asChild>
-                <Link href="/premium">Word Premium Lid</Link>
-             </Button>
-          </div>
+          {!isPremiumUser && (
+            <div className="mt-12 text-center">
+               <Button size="lg" asChild>
+                  <Link href="/premium">Word Premium Lid</Link>
+               </Button>
+            </div>
+          )}
         </div>
       </section>
     </div>

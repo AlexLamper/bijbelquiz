@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
               name: 'BijbelQuiz Premium',
               description: 'Toegang tot alle premium quizzen en features',
             },
-            unit_amount: 499, // 4.99 EUR
+            unit_amount: 999, // 9.99 EUR
           },
           quantity: 1,
         },
