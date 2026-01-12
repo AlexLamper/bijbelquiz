@@ -8,6 +8,8 @@ export interface IAnswer {
 export interface IQuestion {
   text: string;
   answers: IAnswer[];
+  explanation?: string;
+  bibleReference?: string;
 }
 
 export interface IQuiz extends Document {
@@ -29,6 +31,8 @@ const AnswerSchema = new Schema({
 const QuestionSchema = new Schema({
   text: { type: String, required: true },
   answers: [AnswerSchema],
+  explanation: { type: String },
+  bibleReference: { type: String },
 });
 
 const QuizSchema: Schema = new Schema({

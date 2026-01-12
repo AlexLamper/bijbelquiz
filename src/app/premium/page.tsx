@@ -27,7 +27,7 @@ export default async function PremiumPage() {
             </ul>
             
             <div className="text-center py-4">
-              <span className="text-4xl font-bold">€4.99</span>
+              <span className="text-4xl font-bold">€9.99</span>
               <span className="text-slate-500 text-sm ml-2">/ eenmalig</span>
             </div>
 

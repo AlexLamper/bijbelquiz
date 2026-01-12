@@ -78,7 +78,9 @@ export async function GET() {
               { text: "Noach", isCorrect: true },
               { text: "Abraham", isCorrect: false },
               { text: "David", isCorrect: false },
-            ]
+            ],
+            explanation: "God gaf Noach de opdracht om een ark te bouwen om zijn gezin en de dieren te redden van de zondvloed.",
+            bibleReference: "Genesis 6:13-14"
           },
           {
             text: "Wat is het eerste boek van de Bijbel?",
@@ -87,7 +89,9 @@ export async function GET() {
               { text: "Exodus", isCorrect: false },
               { text: "Genesis", isCorrect: true },
               { text: "Psalmen", isCorrect: false },
-            ]
+            ],
+            explanation: "Genesis betekent 'oorsprong' of 'ontstaan' en beschrijft de schepping van de wereld.",
+            bibleReference: "Genesis 1:1"
           },
           {
               text: "Wie versloeg de reus Goliath?",
@@ -96,7 +100,9 @@ export async function GET() {
                 { text: "David", isCorrect: true },
                 { text: "Simson", isCorrect: false },
                 { text: "Salomo", isCorrect: false },
-              ]
+              ],
+              explanation: "David, toen nog een jonge herder, versloeg Goliath met een slinger en een steen.",
+              bibleReference: "1 Samuël 17:50"
           },
           {
               text: "Hoeveel discipelen had Jezus?",
