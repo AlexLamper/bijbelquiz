@@ -46,12 +46,22 @@ async function connectDB() {
 
   try {
     cached.conn = await cached.promise;
-  } catch (e) {
+    return cached.conn;
+  } catch (e: Error) {
     cached.promise = null;
+    
+    // Add helpful debugging info for common production errors
+    if (e.message?.includes('buffering timed out') || e.name === 'MongooseServerSelectionError') {
+       console.error('\n\n❌ MONGODB CONNECTION ERROR:');
+       console.error('It looks like the server cannot reach MongoDB Atlas.');
+       console.error('POTENTIAL FIXES:');
+       console.error('1. IP WHITELIST: Go to MongoDB Atlas > Network Access > Add IP Address > Allow Access from Anywhere (0.0.0.0/0). Vercel uses dynamic IPs, so this is required.');
+       console.error('2. ENV VARS: Ensure MONGODB_URI is set correctly in your Vercel Project Settings (not just local .env).');
+       console.error('3. PASSWORD: Check if your database password has special characters that need to be URL encoded.\n\n');
+    }
+
     throw e;
   }
-
-  return cached.conn;
 }
 
 export default connectDB;
