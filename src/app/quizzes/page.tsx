@@ -128,7 +128,7 @@ export default async function QuizzesPage({
                     {quizzes.map((quiz: IQuiz) => {
                         const isLocked = quiz.isPremium && !isPremiumUser;
                         return (
-                            <Card key={quiz._id} className="flex flex-col hover:shadow-lg transition-shadow border-slate-200 group relative overflow-hidden">
+                            <Card key={quiz._id.toString()} className="flex flex-col hover:shadow-lg transition-shadow border-slate-200 group relative overflow-hidden">
                                 {quiz.isPremium && (
                                      <div className="absolute top-0 right-0 bg-amber-400 text-amber-900 text-[10px] font-bold px-2 py-1 rounded-bl-lg z-10 flex items-center gap-1 shadow-sm">
                                          <Star className="h-3 w-3 fill-current" /> PREMIUM
