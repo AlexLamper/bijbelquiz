@@ -50,7 +50,6 @@ async function connectDB() {
   } catch (e) {
     cached.promise = null;
     
-    // Add helpful debugging info for common production errors
     const err = e as Error;
     if (err.message?.includes('buffering timed out') || err.name === 'MongooseServerSelectionError') {
        console.error('It looks like the server cannot reach MongoDB Atlas.');
