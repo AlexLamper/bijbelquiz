@@ -113,10 +113,10 @@ export default async function Home() {
                 <span>Nieuw: Premium Bijbelstudies</span>
               </div>
             <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-serif">
-              Verdiep je kennis van de <span className="text-primary italic">Bijbel</span>
+              Test je kennis van de <span className="text-primary italic">Bijbel</span>
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl leading-relaxed font-serif">
-              Een klassieke leeromgeving voor Bijbelstudie. Test je kennis, volg je voortgang en ontdek nieuwe inzichten.
+              De ultieme plek voor Bijbelquizzen. Daag jezelf uit, leer nieuwe feiten en verdiep je in de Schrift.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button size="lg" className="h-12 px-8 text-base shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-shadow" asChild>
