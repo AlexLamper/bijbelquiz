@@ -82,16 +82,30 @@ export const authOptions: NextAuthOptions = {
     },
     async jwt({ token, user, trigger, session }) {
       if (user) {
-        token.id = user.id;
-        token.isPremium = user.isPremium;
+        // Indien ingelogd, zorg ervoor dat we het MongoDB ID gebruiken, 
+        // niet het Google ID (wat standaard gebeurt bij OAuth).
+        if (user.email) {
+          await connectDB();
+          const dbUser = await User.findOne({ email: user.email });
+          if (dbUser) {
+            token.id = dbUser._id.toString();
+            token.isPremium = dbUser.isPremium;
+          }
+        } else {
+          token.id = user.id;
+          token.isPremium = user.isPremium;
+        }
       }
 
       // Bij een handmatige update (zoals na betaling) halen we de status opnieuw op uit de DB
-      if (trigger === 'update' || !token.id) {
-        await connectDB();
-        const dbUser = await User.findById(token.id);
-        if (dbUser) {
-          token.isPremium = dbUser.isPremium;
+      if (trigger === 'update' || token.id) {
+        // Alleen checken als het een geldig MongoDB ID lijkt (24 hex chars)
+        if (token.id && token.id.match(/^[0-9a-fA-F]{24}$/)) {
+          await connectDB();
+          const dbUser = await User.findById(token.id);
+          if (dbUser) {
+            token.isPremium = dbUser.isPremium;
+          }
         }
       }
 
