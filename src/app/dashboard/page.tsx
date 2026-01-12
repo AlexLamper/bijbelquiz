@@ -10,7 +10,7 @@ import "@/models/Category";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Lock, Trophy, Zap, Calendar, Star, TrendingUp, BookOpen, Clock } from "lucide-react";
+import { Lock, Trophy, Calendar, Star, TrendingUp, BookOpen } from "lucide-react";
 import Link from 'next/link';
 
 // Helper to calc streak
@@ -59,7 +59,7 @@ export default async function DashboardPage() {
   // Fetch full progress with populated fields
   // Note: We use Deep Populate: Quiz -> Category
   interface PopulatedProgress {
-    _id: string;
+    _id: string; 
     userId: string;
     quizId?: {
       _id: string;
@@ -75,7 +75,7 @@ export default async function DashboardPage() {
     completedAt: Date;
   }
 
-  const progressDocs: PopulatedProgress[] = await UserProgress.find({ userId })
+  const progressDocs = await UserProgress.find({ userId })
     .sort({ completedAt: -1 })
     .populate({
         path: 'quizId',
@@ -85,7 +85,7 @@ export default async function DashboardPage() {
             select: 'title icon'
         }
     })
-    .lean();
+    .lean() as unknown as PopulatedProgress[];
 
   // Basic Stats
   const totalQuizzes = progressDocs.length;
@@ -131,7 +131,7 @@ export default async function DashboardPage() {
   // Badges Logic (Simple)
   const hasStreakBadge = streak >= 3;
   const hasPerfectScore = progressDocs.some(p => p.score === p.totalQuestions && p.totalQuestions >= 5);
-  const hasSpeedBadge = false; // Need time data for this
+  // const hasSpeedBadge = false; // Need time data for this
 
   return (
     <div className="container px-4 py-8 md:py-12 mx-auto max-w-6xl animate-float-in">
