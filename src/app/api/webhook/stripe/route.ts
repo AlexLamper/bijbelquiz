@@ -1,12 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
+import stripe from '@/lib/stripe';
 import connectDB from '@/lib/db';
 import User from '@/models/User';
 import Payment from '@/models/Payment';
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-12-15.clover',
-});
 
 export async function POST(req: NextRequest) {
   const body = await req.text();

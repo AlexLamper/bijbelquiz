@@ -1,11 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import Stripe from 'stripe';
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-12-15.clover', // Use latest api version or what's compatible
-});
+import stripe from '@/lib/stripe';
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions);

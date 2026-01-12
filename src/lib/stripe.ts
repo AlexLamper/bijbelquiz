@@ -5,7 +5,7 @@ if (!process.env.STRIPE_SECRET_KEY) {
 }
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2025-01-27.acacia', // Use the latest stable version or match your Stripe dashboard
+  apiVersion: '2025-12-15.clover',
   typescript: true,
 });
 

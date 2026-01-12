@@ -2,16 +2,12 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import Stripe from 'stripe';
+import stripe from '@/lib/stripe';
 import connectDB from '@/lib/db';
 import User from '@/models/User';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import SessionRefresher from './SessionRefresher';
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-12-15.clover',
-});
 
 interface PageProps {
   searchParams: Promise<{ session_id?: string }>;
