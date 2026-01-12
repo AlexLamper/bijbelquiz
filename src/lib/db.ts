@@ -1,7 +1,5 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI;
-
 interface MongooseCache {
   conn: typeof mongoose | null;
   promise: Promise<typeof mongoose> | null;
@@ -24,8 +22,16 @@ async function connectDB() {
     return cached.conn;
   }
 
+  const MONGODB_URI = process.env.MONGODB_URI;
+
   if (!MONGODB_URI) {
-    throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
+    if (process.env.NODE_ENV === 'production') {
+       // In production runtime, we still want to throw
+       throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
+    }
+    // During build or dev, we just log to avoid crashing the build worker
+    console.warn('MONGODB_URI is missing. Database connection skipped.');
+    return;
   }
 
   if (!cached.promise) {

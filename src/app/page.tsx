@@ -4,6 +4,8 @@ import Quiz from '@/models/Quiz';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
+export const dynamic = 'force-dynamic';
+
 interface Question {
   _id: string;
   text: string;
