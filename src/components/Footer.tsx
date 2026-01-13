@@ -1,7 +1,17 @@
+'use client';
+
 import Link from 'next/link';
 import { BookOpen } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Hide footer on quiz pages (e.g. /quiz/123)
+  if (pathname?.startsWith('/quiz/') && pathname.split('/').length > 2) {
+    return null;
+  }
+
   return (
     <footer className="w-full bg-[#152c31] py-12 text-slate-300 mt-auto border-t border-[#0d1d20]">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">

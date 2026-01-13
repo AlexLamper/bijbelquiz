@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useRouter } from 'next/navigation';
-import { ArrowRight, BookOpen, CheckCircle, XCircle, Share2, Award, RotateCcw, Lock } from 'lucide-react';
+import { ArrowRight, BookOpen, CheckCircle, XCircle, Share2, Award, RotateCcw, Lock, ArrowLeft, Maximize, Settings } from 'lucide-react';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 
@@ -84,12 +84,22 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     }
   };
 
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+        document.exitFullscreen();
+        }
+    }
+  };
+
   if (isFinished) {
     const isPremium = session?.user?.isPremium;
     const isLoggedIn = !!session;
 
     return (
-      <Card className="w-full max-w-2xl mx-auto mt-8 border-2 border-primary/20 shadow-xl bg-[#fffcf5]">
+      <Card className="w-full max-w-2xl mx-auto mt-8 border-2 border-primary/20 shadow-xl bg-white">
         <CardHeader className="text-center pt-10">
           <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary">
             <Award className="h-10 w-10" />
@@ -164,20 +174,36 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
   return (
     <div className="w-full max-w-3xl mx-auto">
+        
+       {/* Top Controls */}
+       <div className="flex justify-between items-center mb-2">
+            <Button variant="ghost" size="sm" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 gap-2" onClick={() => router.push('/quizzes')}>
+               <ArrowLeft className="h-4 w-4" /> Overzicht
+            </Button>
+            <div className="flex gap-2">
+                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50" onClick={toggleFullscreen} title="Volledig scherm">
+                    <Maximize className="h-4 w-4" />
+                </Button>
+                {/* Placeholder for settings */}
+                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50" title="Instellingen">
+                    <Settings className="h-4 w-4" />
+                </Button>
+            </div>
+       </div>
+
         {/* Progress bar */}
-        <div className="w-full bg-slate-200/50 h-3 rounded-full mb-8 overflow-hidden shadow-inner">
+        <div className="w-full bg-slate-200/50 h-2 rounded-full mb-4 overflow-hidden shadow-inner">
             <div 
                 className="bg-[#152c31] h-full transition-all duration-700 ease-out flex items-center justify-end pr-1" 
                 style={{ width: `${Math.max(5, progress)}%` }}
             >
-                {progress > 10 && <div className="h-1.5 w-1.5 rounded-full bg-white/50 mr-1" />}
             </div>
         </div>
 
-        <Card className="w-full border-0 shadow-xl bg-[#f5f1e6] text-slate-800 overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#152c31] via-[#2a4a52] to-[#152c31]"></div>
-        <CardHeader className="pb-4 pt-8 px-6 md:px-10">
-            <div className="flex justify-between items-center mb-6">
+        <Card className="w-full border-0 shadow-lg bg-white text-slate-800 overflow-hidden relative">
+            
+        <CardHeader className="pb-2 pt-6 px-6 md:px-10">
+            <div className="flex justify-between items-center mb-4">
             <Badge variant="outline" className="text-xs font-bold uppercase tracking-wider text-[#152c31] border-[#152c31]/20 bg-[#152c31]/5 px-3 py-1">
                 Vraag {currentIndex + 1} / {quiz.questions.length}
             </Badge>
@@ -186,14 +212,14 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 <Badge className="bg-[#152c31] text-white hover:bg-[#152c31]">{score}</Badge>
             </div>
             </div>
-            <CardTitle className="text-2xl md:text-3xl font-serif leading-snug text-[#152d2f]">
+            <CardTitle className="text-xl md:text-2xl font-serif leading-snug text-[#152d2f]">
                 {currentQuestion.text}
             </CardTitle>
         </CardHeader>
         
-        <CardContent className="flex flex-col gap-3 pt-4 px-6 md:px-10 pb-8">
+        <CardContent className="flex flex-col gap-2 pt-2 px-6 md:px-10 pb-6">
             {currentQuestion.answers.map((answer, index) => {
-                let className = "justify-start text-left h-auto py-4 px-6 text-lg transition-all relative border-2 rounded-xl font-medium shadow-sm hover:shadow-md";
+                let className = "justify-start text-left h-auto py-3 px-5 text-base transition-all relative border rounded-lg font-medium shadow-sm hover:shadow-md";
                 const variant: "outline" | "default" | "secondary" = "outline";
 
                 if (hasAnswered) {
@@ -208,7 +234,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                         className += " opacity-50 border-transparent bg-slate-50";
                     }
                 } else {
-                    className += " border-[#152c31]/10 bg-white hover:bg-[#152c31]/5 hover:border-[#152c31]/30 hover:text-[#152c31]";
+                    className += " border-slate-200 bg-white hover:bg-[#152c31]/5 hover:border-[#152c31]/20 hover:text-[#152c31]";
                 }
 
                 return (
@@ -219,16 +245,16 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     onClick={() => handleAnswer(answer.isCorrect, index)}
                     disabled={hasAnswered}
                 >
-                    <span className={`mr-4 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-sm font-bold transition-colors ${hasAnswered && answer.isCorrect ? "bg-emerald-600 border-emerald-600 text-white" : hasAnswered && index === selectedAnswer ? "bg-red-600 border-red-600 text-white" : "border-[#152c31]/20 text-[#152c31]/50"}`}>
+                    <span className={`mr-4 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-xs font-bold transition-colors ${hasAnswered && answer.isCorrect ? "bg-emerald-600 border-emerald-600 text-white" : hasAnswered && index === selectedAnswer ? "bg-red-600 border-red-600 text-white" : "border-[#152c31]/20 text-[#152c31]/50"}`}>
                         {String.fromCharCode(65 + index)}
                     </span>
-                    <span className="flex-1">{answer.text}</span>
+                    <span className="flex-1 text-sm md:text-base">{answer.text}</span>
                     
                     {hasAnswered && answer.isCorrect && (
-                        <CheckCircle className="absolute right-4 h-6 w-6 text-emerald-600 animate-in zoom-in spin-in-90 duration-300" />
+                        <CheckCircle className="absolute right-4 h-5 w-5 text-emerald-600 animate-in zoom-in spin-in-90 duration-300" />
                     )}
                     {hasAnswered && !answer.isCorrect && index === selectedAnswer && (
-                        <XCircle className="absolute right-4 h-6 w-6 text-red-600 animate-in zoom-in duration-300" />
+                        <XCircle className="absolute right-4 h-5 w-5 text-red-600 animate-in zoom-in duration-300" />
                     )}
                 </Button>
                 );
