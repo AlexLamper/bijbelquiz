@@ -195,59 +195,82 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Features / Why Join */}
-      <section className="py-20 border-t border-slate-200/60">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                 <Badge className="mb-4 bg-amber-100 text-amber-800 border-amber-200 hover:bg-amber-100">Premium Functies</Badge>
-                <h2 className="text-3xl font-bold font-serif mb-4 text-slate-900">Nog meer plezier & uitdaging</h2>
-                <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                    BijbelQuiz is gratis voor iedereen. Maar wil je onbeperkt toegang tot alle quizzen, uitgebreide uitleg per vraag en je klassement bijhouden?
+      {/* Premium Features Section - Redesigned */}
+      <section className="py-24 relative overflow-hidden">
+        {/* Background Decorative Elements */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none opacity-40">
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-200/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
+        </div>
+
+        <div className="container mx-auto px-4 max-w-6xl text-center">
+          <Badge className="mb-4 bg-[#152c31] text-white hover:bg-[#152c31] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border-0">
+            Premium Ervaring
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-slate-900 tracking-tight">
+            Verdiep uw kennis met Premium
+          </h2>
+          <p className="text-lg md:text-xl text-slate-600 mb-16 max-w-2xl mx-auto leading-relaxed">
+              Geen maandelijkse kosten. Eén eenmalige investering voor levenslange toegang tot alle tools, diepgang en voortgang.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 text-left mb-16">
+            {/* Feature 1 */}
+            <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 group">
+                <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <BookOpen className="h-7 w-7 text-primary group-hover:text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-slate-900">Onbeperkt Toegang</h3>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                    Speel álle quizzen zonder restricties. Van beginners tot gevorderden, alle categorieën liggen voor u open.
                 </p>
-                <ul className="space-y-4 mb-8">
-                    <li className="flex items-center gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" />
-                        <span className="text-slate-700">Toegang tot <strong>Premium Quizzen</strong> (moeilijker niveau)</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" />
-                        <span className="text-slate-700">Gedetailleerde <strong>uitleg & Bijbelverwijzingen</strong></span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" />
-                        <span className="text-slate-700">Geen afleiding, puur focus</span>
-                    </li>
-                </ul>
-                <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
-                    <Link href="/premium">Ontdek Premium</Link>
-                </Button>
+                <div className="pt-4 border-t border-slate-50 flex items-center text-primary font-bold text-sm">
+                    Bekijk aanbod <ArrowRight className="ml-2 h-4 w-4" />
+                </div>
             </div>
-            
-            {/* Visual Representation */}
-            <div className="grid grid-cols-2 gap-4">
-                 <Card className="bg-white shadow-lg border-0 translate-y-4">
-                     <CardContent className="p-6 flex flex-col items-center text-center">
-                         <Layout className="h-8 w-8 text-primary mb-3" />
-                         <span className="font-bold text-slate-800">Alle Categorieën</span>
-                     </CardContent>
-                 </Card>
-                 <Card className="bg-amber-50 shadow-lg border-amber-100">
-                     <CardContent className="p-6 flex flex-col items-center text-center">
-                         <Star className="h-8 w-8 text-amber-500 mb-3 fill-amber-500" />
-                         <span className="font-bold text-amber-900">Premium Content</span>
-                     </CardContent>
-                 </Card>
-                 <Card className="bg-white shadow-lg border-0 col-span-2">
-                     <CardContent className="p-6 flex flex-col items-center text-center flex-row justify-center gap-4">
-                         <Trophy className="h-8 w-8 text-emerald-500" />
-                         <div>
-                            <span className="block font-bold text-slate-800 text-lg">XP & Badges</span>
-                            <span className="text-xs text-slate-500">Volg je voortgang</span>
-                         </div>
-                     </CardContent>
-                 </Card>
+
+            {/* Feature 2 */}
+            <div className="bg-[#152c31] p-8 rounded-3xl shadow-2xl shadow-primary/20 border border-primary text-white -translate-y-4 md:scale-105 transition-all">
+                <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 border border-white/20">
+                    <Star className="h-7 w-7 text-amber-300 fill-amber-300" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">Diepgaande Analyse</h3>
+                <p className="text-white/80 leading-relaxed mb-4">
+                    Na elke vraag ontvangt u uitgebreide uitleg, theologische context en directe Bijbelverwijzingen.
+                </p>
+                <Badge className="bg-amber-400 text-[#152c31] hover:bg-amber-300 border-0 font-bold">MEEST GEKOZEN</Badge>
             </div>
+
+            {/* Feature 3 */}
+            <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 group">
+                <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Trophy className="h-7 w-7 text-primary group-hover:text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">XP & Statistieken</h3>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                    Track uw groei op een persoonlijk dashboard. Verdien XP, verzamel badges en zie uw resultaten verbeteren.
+                </p>
+                <div className="pt-4 border-t border-slate-50 flex items-center text-primary font-bold text-sm">
+                    Naar Dashboard <ArrowRight className="ml-2 h-4 w-4" />
+                </div>
+            </div>
+          </div>
+
+          <div className="bg-amber-50 rounded-[40px] p-10 md:p-16 border border-amber-100 relative overflow-hidden">
+             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="text-left">
+                    <h3 className="text-3xl font-serif font-bold text-slate-900 mb-2 italic">Levenslang Premium</h3>
+                    <p className="text-slate-600 text-lg">Zeg vaarwel tegen abonnementen. Eén keer betalen, altijd toegang.</p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                    <Button asChild size="lg" className="bg-[#152c31] hover:bg-black text-white h-16 px-10 text-lg rounded-2xl shadow-xl transform transition hover:-translate-y-1">
+                        <Link href="/premium">Word Premium Lid</Link>
+                    </Button>
+                    <div className="flex items-center gap-2 text-slate-500 text-sm font-medium px-4">
+                        <CheckCircle2 className="h-5 w-5 text-emerald-600" /> Veilig via iDEAL/Stripe
+                    </div>
+                </div>
+             </div>
           </div>
         </div>
       </section>

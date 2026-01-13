@@ -224,7 +224,7 @@ export default async function DashboardPage() {
                         </div>
                     ) : (
                         <div className="space-y-3">
-                            {progressDocs.slice(0, 5).map((progress, i) => (
+                            {progressDocs.slice(0, 3).map((progress, i) => (
                                 <div key={i} className="flex items-center justify-between p-3 hover:bg-muted/50 rounded-lg transition-colors border border-transparent hover:border-border">
                                     <div className="flex items-center gap-4">
                                         <div className={`
