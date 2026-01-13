@@ -39,8 +39,19 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const [hasAnswered, setHasAnswered] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const router = useRouter();
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
+  const [highContrast, setHighContrast] = useState(false);
+  const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
 
   const currentQuestion = quiz.questions[currentIndex];
+
+  const toggleTextSize = () => {
+      setTextSize(prev => prev === 'normal' ? 'large' : 'normal');
+  };
+
+  const toggleHighContrast = () => setHighContrast(prev => !prev);
+  const toggleFontFamily = () => setFontFamily(prev => prev === 'serif' ? 'sans' : 'serif');
 
   const handleAnswer = (isCorrect: boolean, index: number) => {
     if (hasAnswered) return;
@@ -99,7 +110,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     const isLoggedIn = !!session;
 
     return (
-      <Card className="w-full max-w-2xl mx-auto mt-8 border-2 border-primary/20 shadow-xl bg-white">
+      <Card className="w-full max-w-2xl mx-auto mt-8 border-2 border-primary/20 shadow-xl bg-white overflow-y-auto max-h-[80vh]">
         <CardHeader className="text-center pt-10">
           <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary">
             <Award className="h-10 w-10" />
@@ -173,26 +184,87 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const progress = ((currentIndex) / quiz.questions.length) * 100;
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
-        
+    <div className={`w-full max-w-3xl mx-auto h-full flex flex-col relative justify-center ${highContrast ? 'grayscale contrast-125' : ''}`}>
+        {/* Settings Overlay */}
+        {isSettingsOpen && (
+            <div className="absolute top-12 right-0 z-50 w-72 bg-white rounded-lg shadow-xl border border-slate-200 p-4 animate-in fade-in zoom-in-95 duration-200">
+                <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wider">Instellingen</h4>
+                <div className="space-y-4">
+                    <div className="flex items-center justify-between">
+                        <span className="text-sm text-slate-600">Tekstgrootte</span>
+                        <div className="flex gap-1">
+                            <Button 
+                                variant="outline" 
+                                size="sm" 
+                                onClick={() => setTextSize('normal')}
+                                className={`h-8 px-2 ${textSize === 'normal' ? 'bg-primary/10 border-primary text-primary' : ''}`}
+                            >
+                                <span className="text-xs">Aa</span>
+                            </Button>
+                            <Button 
+                                variant="outline" 
+                                size="sm" 
+                                onClick={() => setTextSize('large')}
+                                className={`h-8 px-2 ${textSize === 'large' ? 'bg-primary/10 border-primary text-primary' : ''}`}
+                            >
+                                <span className="text-lg">Aa</span>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                        <span className="text-sm text-slate-600">Lettertype</span>
+                         <Button 
+                            variant="outline" 
+                            size="sm" 
+                            onClick={toggleFontFamily}
+                            className="w-24 h-8 text-xs"
+                        >
+                            {fontFamily === 'serif' ? 'Serif' : 'Sans Serif'}
+                        </Button>
+                    </div>
+
+                     <div className="flex items-center justify-between">
+                        <span className="text-sm text-slate-600">Hoog Contrast</span>
+                         <Button 
+                            variant={highContrast ? "default" : "outline"}
+                            size="sm" 
+                            onClick={toggleHighContrast}
+                            className={`h-8 w-12 ${highContrast ? 'bg-slate-900' : ''}`}
+                        >
+                            {highContrast ? "Aan" : "Uit"}
+                        </Button>
+                    </div>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-100 flex justify-end">
+                    <Button variant="ghost" size="sm" onClick={() => setIsSettingsOpen(false)} className="h-8 text-xs">Sluiten</Button>
+                </div>
+            </div>
+        )}
+
        {/* Top Controls */}
-       <div className="flex justify-between items-center mb-2">
-            <Button variant="ghost" size="sm" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 gap-2" onClick={() => router.push('/quizzes')}>
+       <div className="flex justify-between items-center mb-1 shrink-0 px-1">
+            <Button variant="ghost" size="sm" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 gap-2 -ml-2" onClick={() => router.push('/quizzes')}>
                <ArrowLeft className="h-4 w-4" /> Overzicht
             </Button>
-            <div className="flex gap-2">
-                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50" onClick={toggleFullscreen} title="Volledig scherm">
+            <div className="flex gap-1">
+                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 h-8 w-8" onClick={toggleFullscreen} title="Volledig scherm">
                     <Maximize className="h-4 w-4" />
                 </Button>
-                {/* Placeholder for settings */}
-                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50" title="Instellingen">
+                <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className={`text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 h-8 w-8 ${isSettingsOpen ? 'bg-slate-200/50 text-slate-900' : ''}`}
+                    onClick={() => setIsSettingsOpen(!isSettingsOpen)} 
+                    title="Instellingen"
+                >
                     <Settings className="h-4 w-4" />
                 </Button>
             </div>
        </div>
 
         {/* Progress bar */}
-        <div className="w-full bg-slate-200/50 h-2 rounded-full mb-4 overflow-hidden shadow-inner">
+        <div className="w-full bg-slate-200/50 h-1.5 rounded-full mb-2 overflow-hidden shadow-inner shrink-0">
             <div 
                 className="bg-[#152c31] h-full transition-all duration-700 ease-out flex items-center justify-end pr-1" 
                 style={{ width: `${Math.max(5, progress)}%` }}
@@ -200,9 +272,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
             </div>
         </div>
 
-        <Card className="w-full border-0 shadow-lg bg-white text-slate-800 overflow-hidden relative">
+        <Card className="w-full border-0 shadow-lg bg-white text-slate-800 overflow-hidden relative flex flex-col min-h-0">
             
-        <CardHeader className="pb-2 pt-6 px-6 md:px-10">
+        <CardHeader className="pb-2 pt-6 px-6 md:px-10 shrink-0">
             <div className="flex justify-between items-center mb-4">
             <Badge variant="outline" className="text-xs font-bold uppercase tracking-wider text-[#152c31] border-[#152c31]/20 bg-[#152c31]/5 px-3 py-1">
                 Vraag {currentIndex + 1} / {quiz.questions.length}
@@ -212,14 +284,14 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 <Badge className="bg-[#152c31] text-white hover:bg-[#152c31]">{score}</Badge>
             </div>
             </div>
-            <CardTitle className="text-xl md:text-2xl font-serif leading-snug text-[#152d2f]">
+            <CardTitle className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} leading-snug text-[#152d2f] transition-all ${textSize === 'large' ? 'text-2xl md:text-3xl' : 'text-xl md:text-2xl'}`}>
                 {currentQuestion.text}
             </CardTitle>
         </CardHeader>
         
-        <CardContent className="flex flex-col gap-2 pt-2 px-6 md:px-10 pb-6">
+        <CardContent className="flex flex-col gap-2 pt-2 px-6 md:px-10 pb-6 overflow-y-auto flex-1 custom-scrollbar">
             {currentQuestion.answers.map((answer, index) => {
-                let className = "justify-start text-left h-auto py-3 px-5 text-base transition-all relative border rounded-lg font-medium shadow-sm hover:shadow-md";
+                let className = `justify-start text-left h-auto px-5 text-base transition-all relative border rounded-lg font-medium shadow-sm hover:shadow-md ${textSize === 'large' ? 'py-5 text-lg' : 'py-3.5'}`;
                 const variant: "outline" | "default" | "secondary" = "outline";
 
                 if (hasAnswered) {
@@ -259,18 +331,17 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 </Button>
                 );
             })}
-        </CardContent>
-
+        
         {/* Explanation Section (Appears after answering) */}
         {hasAnswered && (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                <div className="mx-6 mb-6 rounded-xl bg-primary/5 p-6 border border-primary/10">
+            <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 mt-4">
+                <div className={`mx-0 mb-0 rounded-xl bg-primary/5 border border-primary/10 ${textSize === 'large' ? 'p-8' : 'p-6'}`}>
                     <h4 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-primary mb-3">
                         <BookOpen className="h-4 w-4" /> 
                         Uitleg & Verdieping
                     </h4>
                     
-                    <p className="text-lg text-foreground font-serif leading-relaxed mb-4">
+                    <p className={`text-foreground ${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} leading-relaxed mb-4 ${textSize === 'large' ? 'text-xl' : 'text-lg'}`}>
                         {currentQuestion.explanation || "Geen extra uitleg beschikbaar."}
                     </p>
                     
@@ -283,14 +354,17 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                         </div>
                     )}
                 </div>
-                
-                <CardFooter className="bg-stone-50 border-t border-stone-100 py-4 flex justify-end rounded-b-xl">
-                    <Button size="lg" onClick={handeNext} className="group px-8 font-semibold shadow-lg">
-                        {currentIndex < quiz.questions.length - 1 ? "Volgende Vraag" : "Afronden"}
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                </CardFooter>
             </div>
+        )}
+        </CardContent>
+
+        {hasAnswered && (
+            <CardFooter className="bg-white border-t border-slate-100 py-4 flex justify-end shrink-0 rounded-b-xl z-20 shadow-[0_-4px_6px_-2px_rgba(0,0,0,0.05)]">
+                <Button size="lg" onClick={handeNext} className="group px-8 font-semibold shadow-lg">
+                    {currentIndex < quiz.questions.length - 1 ? "Volgende Vraag" : "Afronden"}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+            </CardFooter>
         )}
         </Card>
     </div>
