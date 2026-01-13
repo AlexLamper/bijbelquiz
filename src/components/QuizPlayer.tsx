@@ -43,6 +43,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
   const [highContrast, setHighContrast] = useState(false);
   const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
+  const [showLeadForm, setShowLeadForm] = useState(true);
+  const [leadName, setLeadName] = useState('');
+  const [leadEmail, setLeadEmail] = useState('');
 
   const currentQuestion = quiz.questions[currentIndex];
 
@@ -108,6 +111,85 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   if (isFinished) {
     const isPremium = session?.user?.isPremium;
     const isLoggedIn = !!session;
+
+    if (showLeadForm) {
+        return (
+            <Card className="w-full max-w-lg mx-auto mt-8 border-0 shadow-xl bg-white overflow-hidden animate-in fade-in zoom-in-95 duration-500 py-0 gap-0">
+                <div className="bg-[#152c31]/5 p-8 text-center border-b border-[#152c31]/10 w-full">
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-sm text-[#152c31]">
+                        <BookOpen className="h-8 w-8" />
+                    </div>
+                    <h3 className="text-2xl font-serif font-bold text-[#152c31] mb-2">Quiz Voltooid!</h3>
+                    <p className="text-slate-600">Je hebt alle vragen beantwoord.</p>
+                </div>
+                
+                <CardContent className="p-8 space-y-6">
+                    <div className="space-y-4">
+                        <div className="text-center">
+                            <h4 className="font-semibold text-slate-800 mb-2">Ontgrendel alle mogelijkheden</h4>
+                            <p className="text-sm text-slate-500 mb-4">
+                                Krijg onbeperkt toegang tot alle quizzen, statistieken en diepgaande analyses met een <strong>eenmalige Premium upgrade</strong>.
+                            </p>
+                            <p className="text-xs text-slate-400">
+                                Laat je gegevens achter om op de hoogte te blijven van nieuwe tools en features (optioneel).
+                            </p>
+                        </div>
+
+                        <div className="space-y-3">
+                            <div className="space-y-1">
+                                <label htmlFor="name" className="text-xs font-medium text-slate-600 uppercase tracking-wider pl-1">Naam</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Jouw naam"
+                                    value={leadName}
+                                    onChange={(e) => setLeadName(e.target.value)}
+                                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#152c31] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                />
+                            </div>
+                            <div className="space-y-1">
+                                <label htmlFor="email" className="text-xs font-medium text-slate-600 uppercase tracking-wider pl-1">E-mailadres</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="jouw@email.nl"
+                                    value={leadEmail}
+                                    onChange={(e) => setLeadEmail(e.target.value)}
+                                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#152c31] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <Button 
+                        size="lg" 
+                        onClick={async () => {
+                            if (leadName || leadEmail) {
+                                try {
+                                    await fetch('/api/leads', {
+                                        method: 'POST',
+                                        headers: { 'Content-Type': 'application/json' },
+                                        body: JSON.stringify({ name: leadName, email: leadEmail }),
+                                    });
+                                } catch (error) {
+                                    console.error('Failed to save lead:', error);
+                                }
+                            }
+                            setShowLeadForm(false);
+                        }} 
+                        className="w-full font-semibold shadow-lg text-lg h-12"
+                    >
+                        Bekijk Antwoorden
+                        <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                    
+                    <p className="text-center text-xs text-slate-400">
+                        Je gegevens worden veilig verwerkt.
+                    </p>
+                </CardContent>
+            </Card>
+        );
+    }
 
     return (
       <Card className="w-full max-w-2xl mx-auto mt-8 border-2 border-primary/20 shadow-xl bg-white overflow-y-auto max-h-[80vh]">
