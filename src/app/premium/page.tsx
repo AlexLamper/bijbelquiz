@@ -1,8 +1,9 @@
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { Check, ShieldCheck, Sparkles } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Check, ShieldCheck, Sparkles, BookOpen, Star, Trophy, ArrowRight, Zap } from 'lucide-react';
 import Link from 'next/link';
 
 export default async function PremiumPage() {
@@ -11,79 +12,163 @@ export default async function PremiumPage() {
 
   return (
     <div className="min-h-screen">
-      <main className="container mx-auto px-4 py-16 flex flex-col items-center animate-float-in">
-        <div className="text-center mb-10 space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Upgrade naar Premium</h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">Ontgrendel de volledige ervaring en verdiep je kennis met onbeperkte toegang.</p>
+      <main className="container mx-auto px-4 py-20 flex flex-col items-center">
+        {/* Header Section */}
+        <div className="text-center mb-16 space-y-4 max-w-3xl animate-in font-serif">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#152c31] text-white rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+            <Sparkles className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+            Premium Toegang
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-[#152d2f]">
+            Verdiep uw Studie
+          </h1>
+          <p className="text-slate-600 text-xl font-sans max-w-xl mx-auto leading-relaxed">
+            Geen abonnement. Geen maandelijkse kosten. <br className="hidden md:block" />
+            Eén eenmalige investering voor levenslange toegang.
+          </p>
         </div>
         
-        <Card className="w-full max-w-lg shadow-lg border-primary/20 bg-background/50 backdrop-blur-sm relative overflow-hidden">
-          <div className="absolute top-0 w-full h-1 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
-          <CardHeader className="text-center pb-2">
-            <CardTitle className="text-2xl font-bold flex items-center justify-center gap-2">
-              <Sparkles className="h-5 w-5 text-primary" />
-              Volledige Toegang
-            </CardTitle>
-            <CardDescription>Alles wat je nodig hebt om te groeien</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-8 pt-6">
-            <div className="text-center">
-              <span className="text-5xl font-extrabold tracking-tight">€9.99</span>
-              <span className="text-muted-foreground ml-2 font-medium">eenmalig</span>
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl w-full items-start">
+            {/* Left side: Why Premium */}
+            <div className="space-y-8 py-4">
+                <h2 className="text-2xl font-bold font-serif text-[#152d2f]">Wat u krijgt</h2>
+                
+                <div className="space-y-6">
+                    <div className="flex gap-4 group">
+                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                            <BookOpen className="h-6 w-6" />
+                        </div>
+                        <div>
+                            <h3 className="font-bold text-slate-900">Diepere Uitleg</h3>
+                            <p className="text-slate-500 text-sm">Na elke vraag ontvangt u theologische context en Bijbelverwijzingen om direct verder te lezen.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex gap-4 group">
+                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                            <Star className="h-6 w-6" />
+                        </div>
+                        <div>
+                            <h3 className="font-bold text-slate-900">Premium Content</h3>
+                            <p className="text-slate-500 text-sm">Toegang tot gespecialiseerde quizzen en diepere onderwerpen die niet beschikbaar zijn in de gratis versie.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex gap-4 group">
+                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                            <Trophy className="h-6 w-6" />
+                        </div>
+                        <div>
+                            <h3 className="font-bold text-slate-900">Geavanceerde Statistieken</h3>
+                            <p className="text-slate-500 text-sm">Track uw groei per Bijbelboek en zie exact waar uw kennis ligt en waar u nog kunt groeien.</p>
+                        </div>
+                    </div>
+
+                    <div className="flex gap-4 group">
+                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                            <Zap className="h-6 w-6" />
+                        </div>
+                        <div>
+                            <h3 className="font-bold text-slate-900">Geen Afleiding</h3>
+                            <p className="text-slate-500 text-sm">Een volledig pure interface zonder advertenties of afleidingen, gericht op Gods woord.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <ul className="space-y-4">
-              {[
-                "Onbeperkte toegang tot alle quiz categorieën",
-                "Gedetailleerde uitleg bij elk antwoord",
-                "Geen advertenties, pure focus",
-                "Steun de doorontwikkeling van het platform",
-                "Exclusievebadges en profielopties"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <div className="mt-1 h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="h-3 w-3 text-primary" />
-                  </div>
-                  <span className="text-sm font-medium">{item}</span>
-                </li>
-              ))}
-            </ul>
+            {/* Right side: Pricing Card */}
+            <div className="relative">
+                {/* Visual Accent */}
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-amber-400 rounded-full blur-3xl opacity-20"></div>
+                <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-primary rounded-full blur-3xl opacity-20"></div>
 
-            {isPremium ? (
-              <div className="rounded-lg bg-primary/10 p-4 text-center border border-primary/20">
-                <p className="font-semibold text-primary flex items-center justify-center gap-2">
-                  <ShieldCheck className="h-5 w-5" />
-                  Je bent al Premium lid
-                </p>
-                <p className="text-xs text-muted-foreground mt-1">Bedankt voor je steun!</p>
-              </div>
-            ) : (
-              <div className="space-y-4 pt-4">
-                 {session ? (
-                   <form action="/api/stripe/checkout" method="POST">
-                      <Button className="w-full h-12 text-base font-semibold shadow-md active:scale-95 transition-all" size="lg">
-                        Word nu Premium
-                      </Button>
-                   </form>
-                 ) : (
-                   <div className="space-y-3">
-                      <Button asChild className="w-full h-12 font-semibold" size="lg">
-                        <Link href="/api/auth/signin?callbackUrl=/premium">Log in om te upgraden</Link>
-                      </Button>
-                      <p className="text-xs text-center text-muted-foreground">Je hebt een account nodig om Premium te koppelen.</p>
-                   </div>
-                 )}
-              </div>
-            )}
-          </CardContent>
-          <CardFooter className="bg-muted/50 p-4 justify-center">
-             <p className="text-xs text-muted-foreground flex items-center gap-1.5">
-               <ShieldCheck className="h-3 w-3" />
-               Veilig betalen. 14 dagen niet-goed-geld-terug garantie.
-             </p>
-          </CardFooter>
-        </Card>
+                <Card className="w-full shadow-2xl border-0 bg-white relative overflow-hidden rounded-[32px] flex flex-col">
+                    <div className="p-8 pt-12 text-center border-b border-slate-50 relative overflow-hidden">
+                        {/* Subtle Background Pattern or Accent */}
+                        <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+                            <Sparkles className="h-24 w-24" />
+                        </div>
+                        
+                        <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-100 border-amber-200 mb-6 font-bold uppercase tracking-widest text-[10px] px-4 py-1">
+                            Premium Toegang
+                        </Badge>
+                        
+                        <div className="flex items-baseline justify-center gap-1 mb-2">
+                            <span className="text-2xl font-bold text-slate-400">€</span>
+                            <span className="text-6xl font-bold tracking-tight text-[#152c31]">9,99</span>
+                        </div>
+                        <p className="text-slate-500 text-sm font-medium">Levenslang • Eénmalige betaling</p>
+                    </div>
+
+                    <CardContent className="p-8 md:p-10 space-y-8 flex-1">
+                        <ul className="space-y-5">
+                            {[
+                                { text: "Onbeperkte toegang tot alle quizzen", icon: Check },
+                                { text: "Gedetailleerde uitleg & context", icon: Check },
+                                { text: "Persoonlijk voortgangsdashboard", icon: Check },
+                                { text: "Geen advertenties of afleiding", icon: Check },
+                                { text: "Steun de BijbelQuiz missie", icon: Check }
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-start gap-4">
+                                    <div className="mt-0.5 h-5 w-5 rounded-full bg-[#152c31]/5 flex items-center justify-center shrink-0">
+                                        <item.icon className="h-3 w-3 text-[#152c31]" />
+                                    </div>
+                                    <span className="text-sm font-medium text-slate-600 leading-tight">{item.text}</span>
+                                </li>
+                            ))}
+                        </ul>
+
+                        {isPremium ? (
+                            <div className="rounded-2xl bg-[#152c31]/5 p-6 text-center border border-[#152c31]/10 animate-in fade-in duration-700">
+                                <div className="mx-auto h-12 w-12 rounded-full bg-white shadow-sm flex items-center justify-center mb-4">
+                                    <ShieldCheck className="h-6 w-6 text-amber-500" />
+                                </div>
+                                <h4 className="font-bold text-[#152c31] mb-1">Status: Premium</h4>
+                                <p className="text-xs text-slate-500 font-medium mb-6">Bedankt voor uw waardevolle steun!</p>
+                                <Button asChild className="w-full bg-[#152c31] hover:bg-black rounded-xl">
+                                    <Link href="/quizzes">Naar de Quizzen</Link>
+                                </Button>
+                            </div>
+                        ) : (
+                            <div className="space-y-4 pt-2">
+                                {session ? (
+                                    <form action="/api/stripe/checkout" method="POST">
+                                        <Button className="w-full h-14 text-lg font-bold shadow-lg shadow-[#152c31]/10 bg-[#152c31] hover:bg-black rounded-2xl transition-all duration-300 transform hover:-translate-y-0.5" size="lg">
+                                            Nu Activeren
+                                        </Button>
+                                    </form>
+                                ) : (
+                                    <div className="space-y-3">
+                                        <Button asChild className="w-full h-14 font-bold text-lg bg-[#152c31] hover:bg-black rounded-2xl" size="lg">
+                                            <Link href="/api/auth/signin?callbackUrl=/premium">Account Aanmaken</Link>
+                                        </Button>
+                                        <p className="text-[10px] text-center text-slate-400 font-bold uppercase tracking-widest">Vereist voor Premium</p>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                    </CardContent>
+                    
+                    <CardFooter className="bg-slate-50/80 p-6 flex flex-col items-center border-t border-slate-100">
+                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest flex items-center gap-2">
+                            <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
+                            Gegarandeerd veilige betaling
+                        </p>
+                    </CardFooter>
+                </Card>
+            </div>
+        </div>
+
+        {/* FAQ/Bottom Quote Section */}
+        <div className="mt-32 max-w-3xl text-center">
+            <h3 className="text-2xl font-serif font-bold text-[#152d2f] mb-6 italic">"Vors de Schriften..."</h3>
+            <p className="text-slate-500 leading-relaxed font-serif text-lg italic">
+                De volledige opbrengst van Premium wordt direct geïnvesteerd in het platform: <br />
+                Nieuwe vragen, betere techniek en meer tools voor Bijbelstudie.
+            </p>
+        </div>
       </main>
     </div>
   );
 }
+
