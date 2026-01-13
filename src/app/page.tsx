@@ -136,14 +136,22 @@ export default async function Home() {
               De leukste manier om samen of alleen de Bijbel te ontdekken. Speel diverse quizzen, houd je scores bij en verbeter je kennis op een ontspannen manier.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button size="lg" className="full w-full sm:w-auto h-12 px-8 text-base shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all hover:-translate-y-0.5" asChild>
-                <Link href="#popular">Direct Spelen</Link>
+              <Button 
+                size="lg" 
+                className="group relative w-full sm:w-auto h-14 px-10 text-lg rounded-full bg-[#152c31] hover:bg-[#1f3e44] border-t border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 active:scale-95 active:translate-y-0 overflow-hidden" 
+                asChild
+              >
+                <Link href="#popular">
+                    <span className="relative z-10 font-bold text-white tracking-wide drop-shadow-md">Direct Spelen</span>
+                     {/* Bubble shine effect */}
+                    <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+                </Link>
               </Button>
               {isLoggedIn ? (
                 <Button 
                     size="lg" 
                     variant="outline"
-                    className="full w-full sm:w-auto h-12 px-8 text-base bg-white/50 backdrop-blur-md border-primary/20 text-foreground hover:bg-white/80 hover:text-primary transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5" 
+                    className="w-full sm:w-auto h-14 px-8 text-base bg-white/40 backdrop-blur-md border-[#152c31]/20 text-[#152c31] rounded-full hover:bg-white/60 hover:text-black transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5" 
                     asChild
                 >
                     <Link href="/quizzes">Bekijk alle quizzen</Link>
@@ -152,7 +160,7 @@ export default async function Home() {
                 <Button 
                     size="lg" 
                     variant="outline"
-                    className="full w-full sm:w-auto h-12 px-8 text-base bg-white/50 backdrop-blur-md border-primary/20 text-foreground hover:bg-white/80 hover:text-primary transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5" 
+                    className="w-full sm:w-auto h-14 px-8 text-base bg-white/40 backdrop-blur-md border-[#152c31]/20 text-[#152c31] rounded-full hover:bg-white/60 hover:text-black transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5" 
                     asChild
                 >
                     <Link href="/login">Aanmelden</Link>
@@ -165,9 +173,9 @@ export default async function Home() {
 
       {/* Popular Quizzes Grid */}
       <section id="popular" className="py-20">
-        <div className="container mx-auto px-4 max-w-7xl bg-white rounded-3xl shadow-sm p-8 md:p-12 animate-float-in">
+        <div className="container mx-auto px-4 max-w-7xl rounded-3xl p-4 md:p-8 animate-float-in">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-serif">Populaire Quizzen</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-[#152d2f] sm:text-4xl font-serif">Populaire Quizzen</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               De meest gespeelde quizzen van dit moment. Waar begin jij mee?
             </p>
