@@ -1,33 +1,25 @@
-# Welkom bij BijbelQuiz
+# bijbelquiz.com
 
 ![BijbelQuiz Hero](public/images/dashboard.png)
 
-**BijbelQuiz** is hét moderne, interactieve platform voor iedereen die zijn of haar kennis van de Bijbel wil testen, verrijken en verdiepen. In een tijdloze, rustgevende omgeving bieden wij uitdagende quizzen aan die u meenemen op reis door het Oude en Nieuwe Testament, de theologie en de rijke Bijbelse geschiedenis.
+**BijbelQuiz** is een online platform waar je volledig gratis bijbelquizzen kunt spelen. Er is een breed aanbod aan quizzen in verschillende categorieën, leuk om te spelen met vrienden of familie, maar ook gewoon alleen. Door het spelen van deze quizzen vergroot je op een interactieve en toegankelijke manier je kennis van bijbelse personen, gebeurtenissen, plaatsen en thema’s.
 
 Bezoek ons live op: [https://www.bijbelquiz.com](https://www.bijbelquiz.com)
 
 ## 🌟 Waarom BijbelQuiz?
 
-Wij geloven dat leren over de Bijbel leuk, toegankelijk en diepgaand kan zijn. Ons platform is ontwikkeld met aandacht voor detail en gebruiksgemak.
+Wij geloven dat leren over de Bijbel leuk en toegankelijk kan zijn. BijbelQuiz daagt je uit met gevarieerde quizzen in verschillende categorieën en moeilijkheidsgraden, zodat je je bijbelkennis spelenderwijs kunt verdiepen en testen.
 
 ### Onze Unieke Functies
 
-*   **Diverse Collectie**: Van makkelijke instapvragen tot pittige theologische vraagstukken.
+*   **Diverse quizzen**: Van eenvoudige instapquizzen tot pittige theologische vraagstukken voor de gevorderde speler.
 *   **Interactieve Leerervaring**: Krijg direct feedback op uw antwoorden.
 *   **Studie Modus (Premium)**: Voor de serieuze student bieden wij uitgebreide uitleg en directe Bijbelverwijzingen bij elke vraag. Zo wordt elke quiz een mini-Bijbelstudie.
-*   **Voortgangsmonitor**: Houd uw persoonlijke groei bij en zie welke onderwerpen u al beheerst.
-*   **Prachtig Design**: Een klassiek 'studeerkamer'-gevoel dat rust uitstraalt, perfect werkend op uw telefoon, tablet en computer.
-
-## 🎯 Voor Wie?
-
-*   **Individuele Gelovigen**: Voor dagelijkse verdieping en ontspanning.
-*   **Bijbelkringen & Groepen**: Als leuke, leerzame start van de avond.
-*   **Zondagsscholen & Catechisatie**: Om spelenderwijs kennis te toetsen.
-*   **Zoekers & Geïnteresseerden**: Een laagdrempelige manier om kennis te maken met Bijbelse verhalen.
+*   **Voortgangsregistratie**: Wanneer u bent ingelogd, kunt u uw persoonlijke groei bijhouden en zien welke onderwerpen u al beheerst.
 
 ## 🔒 Premium Lidmaatschap
 
-BijbelQuiz is gratis te gebruiken. Voor gebruikers die meer diepgang zoeken, bieden wij een **Premium Lidmaatschap**. Hiermee krijgt u:
+BijbelQuiz is gratis te gebruiken. Voor gebruikers die meer diepgang zoeken, bieden wij **Premium** aan. Hiermee krijgt u:
 *   Onbeperkt toegang tot alle gespecialiseerde quizzen.
 *   Diepgaande achtergrondinformatie en theologische uitleg bij antwoorden.
 *   Een reclamevrije ervaring gericht puur op studie.
@@ -36,6 +28,6 @@ BijbelQuiz is gratis te gebruiken. Voor gebruikers die meer diepgang zoeken, bie
 
 *Wilt u contact met ons opnemen of heeft u suggesties voor nieuwe quizvragen? Bezoek onze contactpagina op de website.*
 
-Status: **Live & Actief**
+Status: **Live & Actief** - actief in ontwikkeling.
 Versie: **1.0.0**
 Copyright © 2026 BijbelQuiz. Alle rechten voorbehouden.
