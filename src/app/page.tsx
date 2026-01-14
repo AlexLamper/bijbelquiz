@@ -54,7 +54,6 @@ function QuizCard({ quiz, isPremiumUser }: { quiz: QuizItem, isPremiumUser: bool
 
   return (
     <Card className="group relative flex h-full flex-col overflow-hidden border-0 bg-white shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
-      <div className="absolute inset-x-0 top-0 h-1 bg-primary/20 opacity-0 transition-opacity group-hover:opacity-100" />
       <CardHeader>
         <div className="mb-2 flex items-center justify-between">
           <Badge variant="secondary" className="font-normal bg-slate-100 text-slate-700 hover:bg-slate-200">
@@ -130,10 +129,10 @@ export default async function Home() {
                 <span>Nieuw: Meer dan 20+ nieuwe quizzen beschikbaar!</span>
               </div>
             <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl font-serif">
-              Test je kennis van de <span className="text-primary italic">Bijbel</span>
+              Speel gratis <span className="text-primary italic">bijbelquizzen</span> online
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 md:text-xl leading-relaxed font-serif">
-              De leukste manier om samen of alleen de Bijbel te ontdekken. Speel diverse quizzen, houd je scores bij en verbeter je kennis op een ontspannen manier.
+              Vergroot je bijbelkennis door quizzen over bijbelse personen, belangrijke gebeurtenissen en verschillende thema&apos;s, van Genesis tot Openbaring.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button 
@@ -188,8 +187,8 @@ export default async function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button size="lg" variant="outline" className="px-8 border-2" asChild>
-                <Link href="/quizzes">Bekijk Alle Quizzen <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Button size="lg" variant="outline" className="px-8 border-2 bg-[#f2f0ea]" asChild>
+              <Link href="/quizzes">Bekijk Alle Quizzen <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
         </div>

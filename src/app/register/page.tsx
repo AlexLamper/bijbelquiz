@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BookOpen, AlertCircle, Loader2, Eye, EyeOff } from 'lucide-react';
 
 function RegisterContent() {
@@ -50,12 +51,27 @@ function RegisterContent() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4 py-12">
       <div className="w-full max-w-md space-y-8">
         <div className="flex flex-col items-center">
-           <Link href="/" className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg mb-4 hover:scale-105 transition-transform">
-             <BookOpen className="h-6 w-6" />
-          </Link>
-          <h2 className="mt-2 text-center text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            Word lid
-          </h2>
+          <div className="flex items-center gap-3 mb-2">
+            <div className="relative h-12 w-12">
+               <Image 
+                  src="/icon/Logo%20-%20dark.svg" 
+                  alt="BijbelQuiz Logo" 
+                  fill 
+                  className="object-contain dark:hidden"
+                  priority 
+               />
+               <Image 
+                  src="/icon/Logo%20-%20light.svg" 
+                  alt="BijbelQuiz Logo" 
+                  fill 
+                  className="object-contain hidden dark:block"
+                  priority 
+               />
+            </div>
+            <span className="text-3xl font-bold font-serif tracking-tight text-foreground">
+              Bijbel<span className="text-primary italic">Quiz</span>
+            </span>
+          </div>
           <p className="mt-2 text-center text-sm text-slate-600 dark:text-slate-400">
             Start vandaag nog met het verdiepen van je kennis
           </p>
