@@ -17,6 +17,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.bijbelquiz.com'),
   title: {
     default: "BijbelQuiz - Test & Verdiep je Bijbelkennis Gratis Online",
     template: "%s | BijbelQuiz"
