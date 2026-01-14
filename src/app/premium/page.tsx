@@ -24,7 +24,7 @@ export default async function PremiumPage() {
           </h1>
           <p className="text-slate-600 text-xl font-sans max-w-xl mx-auto leading-relaxed">
             Geen abonnement. Geen maandelijkse kosten. <br className="hidden md:block" />
-            Eén eenmalige investering voor levenslange toegang.
+            Eén eenmalige betaling voor levenslange toegang.
           </p>
         </div>
         
@@ -161,9 +161,9 @@ export default async function PremiumPage() {
 
         {/* FAQ/Bottom Quote Section */}
         <div className="mt-32 max-w-3xl text-center">
-            <h3 className="text-2xl font-serif font-bold text-[#152d2f] mb-6 italic">"Vors de Schriften..."</h3>
+            <h3 className="text-2xl font-serif font-bold text-[#152d2f] mb-6 italic">"Onderzoekt de Schriften; want gij meent in dezelve het eeuwige leven te hebben."</h3>
             <p className="text-slate-500 leading-relaxed font-serif text-lg italic">
-                De volledige opbrengst van Premium wordt direct geïnvesteerd in het platform: <br />
+                De volledige opbrengst van Premium wordt gebruikt voor het platform: <br />
                 Nieuwe vragen, betere techniek en meer tools voor Bijbelstudie.
             </p>
         </div>

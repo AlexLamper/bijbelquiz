@@ -149,9 +149,9 @@ export default async function DashboardPage() {
           </p>
         </div>
         {!isPremium && (
-           <Button asChild className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-lg border-0 transition-transform hover:scale-105">
+           <Button asChild className="bg-[#152c31] hover:bg-[#1f3e44] text-white shadow-lg border-0 transition-transform hover:scale-105">
              <Link href="/premium">
-                <Star className="mr-2 h-4 w-4 fill-white" /> Word Premium
+                <Star className="mr-2 h-4 w-4 fill-white text-amber-400" /> Word Premium
              </Link>
            </Button>
         )}
@@ -314,20 +314,28 @@ export default async function DashboardPage() {
                              </CardTitle>
                              <CardDescription>Uw prestaties per categorie (Top 3).</CardDescription>
                         </div>
-                        {!isPremium && <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-200">Premium</Badge>}
+                        {!isPremium && <Badge variant="secondary" className="bg-orange-100 text-orange-800 hover:bg-orange-200 border-orange-200">Premium</Badge>}
                     </div>
                 </CardHeader>
-                <CardContent className="relative">
+                <CardContent className="relative min-h-[160px]">
                     {!isPremium && (
-                        <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center p-6 text-center">
-                            <Lock className="h-8 w-8 text-muted-foreground mb-3" />
-                            <h3 className="font-bold text-foreground mb-1">Ontgrendel uw statistieken</h3>
-                            <p className="text-muted-foreground text-sm mb-4 max-w-xs">
-                                Zie precies welke onderwerpen u beheerst en waar u nog kunt groeien.
-                            </p>
-                            <Button size="sm" asChild className="bg-amber-600 hover:bg-amber-700 text-white">
-                                <Link href="/premium">Bekijk Premium</Link>
-                            </Button>
+                         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-6 text-center">
+                            {/* Blurred Background with gradient overlay */}
+                            <div className="absolute inset-0 bg-white/40 backdrop-blur-md"></div>
+                            <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white/90"></div>
+                            
+                            <div className="relative z-20 flex flex-col items-center">
+                                <div className="mb-3 p-3 bg-orange-100 rounded-full border border-orange-200 shadow-sm animate-pulse-slow">
+                                     <Lock className="h-5 w-5 text-orange-600" />
+                                </div>
+                                <h3 className="font-serif font-bold text-slate-800 mb-1 text-lg">Ontgrendel uw statistieken</h3>
+                                <p className="text-slate-600 text-sm mb-5 max-w-xs leading-relaxed">
+                                    Zie precies welke onderwerpen u beheerst en waar u nog kunt groeien.
+                                </p>
+                                <Button size="sm" asChild className="bg-[#152c31] hover:bg-[#152c31]/90 text-white shadow-md rounded-lg px-6">
+                                    <Link href="/premium">Bekijk Premium</Link>
+                                </Button>
+                            </div>
                         </div>
                     )}
 

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { IQuiz } from '@/models/Quiz';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { ArrowRight, CheckCircle2, Lock, Filter, Star, Search } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
@@ -68,51 +69,100 @@ export default async function QuizzesPage({
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Sidebar / Filter (Mobile Top) */}
-        <div className="lg:col-span-1 space-y-6">
-            <Card className="border-slate-200 shadow-sm sticky top-24">
-                <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                        <Filter className="h-4 w-4" /> Categorieën
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-1">
-                     <Button 
-                        variant={currentCategory === 'all' ? "secondary" : "ghost"} 
-                        className={`w-full justify-start ${currentCategory === 'all' ? 'bg-primary/10 text-primary hover:bg-primary/20' : ''}`}
-                        asChild
-                    >
-                        <Link href="/quizzes">Alle Categorieën</Link>
-                    </Button>
-                    {categories.map((cat: ICategory) => (
-                        <Button
-                            key={cat._id.toString()}
-                            variant={currentCategory === cat.slug ? "secondary" : "ghost"}
-                            className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-primary/10 text-primary hover:bg-primary/20' : ''}`}
+        <div className="lg:col-span-1">
+            {/* Desktop Sticky Sidebar */}
+            <div className="hidden lg:block sticky top-24 space-y-6">
+                <div>
+                    <h3 className="font-serif font-bold text-slate-900 mb-4 px-2">Categorieën</h3>
+                    <div className="space-y-1">
+                         <Button 
+                            variant={currentCategory === 'all' ? "secondary" : "ghost"} 
+                            className={`w-full justify-start ${currentCategory === 'all' ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'}`}
                             asChild
                         >
-                            <Link href={`/quizzes?category=${cat.slug}`}>
-                                {cat.title}
-                            </Link>
+                            <Link href="/quizzes">Alle Categorieën</Link>
                         </Button>
-                    ))}
-                </CardContent>
-            </Card>
+                        {categories.map((cat: ICategory) => (
+                            <Button
+                                key={cat._id.toString()}
+                                variant={currentCategory === cat.slug ? "secondary" : "ghost"}
+                                className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'}`}
+                                asChild
+                            >
+                                <Link href={`/quizzes?category=${cat.slug}`}>
+                                    {cat.title}
+                                </Link>
+                            </Button>
+                        ))}
+                    </div>
+                </div>
 
-            {!isPremiumUser && (
-                <Card className="bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200">
-                   <CardContent className="pt-6">
-                       <h3 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-                           <Star className="h-4 w-4 fill-amber-600 text-amber-600" /> Premium Toegang
+                {!isPremiumUser && (
+                    <div className="bg-amber-50 rounded-2xl p-6 border border-amber-100">
+                       <h3 className="font-bold text-[#152c31] mb-2 flex items-center gap-2">
+                           <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> Premium
                        </h3>
-                       <p className="text-sm text-amber-700/80 mb-4">
-                           Krijg onbeperkt toegang tot alle quizzen en diepgaande studie-uitleg.
+                       <p className="text-sm text-slate-600 mb-4">
+                           Ontgrendel alle quizzen en diepgaande studie-uitleg.
                        </p>
-                       <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white" asChild>
+                       <Button className="w-full bg-[#152c31] hover:bg-black text-white" asChild>
                            <Link href="/premium">Upgrade Nu</Link>
                        </Button>
-                   </CardContent>
-                </Card>
-            )}
+                    </div>
+                )}
+            </div>
+
+            {/* Mobile View: Accordion for Categories */}
+            <div className="lg:hidden space-y-4 mb-6">
+                <Accordion type="single" collapsible className="bg-white rounded-lg border shadow-sm px-4">
+                    <AccordionItem value="categories" className="border-b-0">
+                        <AccordionTrigger className="hover:no-underline py-3">
+                             <span className="flex items-center gap-2 text-slate-800 font-medium">
+                                <Filter className="h-4 w-4" /> Filter ({currentCategory === 'all' ? 'Alle' : categories.find((c:ICategory) => c.slug === currentCategory)?.title})
+                            </span>
+                        </AccordionTrigger>
+                        <AccordionContent>
+                             <div className="space-y-1 pt-2 pb-4">
+                                 <Button 
+                                    variant={currentCategory === 'all' ? "secondary" : "ghost"} 
+                                    className={`w-full justify-start ${currentCategory === 'all' ? 'bg-primary/10 text-primary hover:bg-primary/20' : ''}`}
+                                    asChild
+                                >
+                                    <Link href="/quizzes">Alle Categorieën</Link>
+                                </Button>
+                                {categories.map((cat: ICategory) => (
+                                    <Button
+                                        key={`mobile-${cat._id.toString()}`}
+                                        variant={currentCategory === cat.slug ? "secondary" : "ghost"}
+                                        className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-primary/10 text-primary hover:bg-primary/20' : ''}`}
+                                        asChild
+                                    >
+                                        <Link href={`/quizzes?category=${cat.slug}`}>
+                                            {cat.title}
+                                        </Link>
+                                    </Button>
+                                ))}
+                             </div>
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
+
+                {!isPremiumUser && (
+                    <Card className="bg-amber-50 border-amber-200">
+                       <CardContent className="pt-4 pb-4 flex items-center justify-between gap-3">
+                           <div>
+                               <h3 className="font-bold text-amber-800 text-sm flex items-center gap-1">
+                                   <Star className="h-3 w-3 fill-amber-600 text-amber-600" /> Premium
+                               </h3>
+                               <p className="text-xs text-amber-700/80">Upgrade voor alle quizzen</p>
+                           </div>
+                           <Button size="sm" className="bg-amber-600 hover:bg-amber-700 text-white h-8 text-xs" asChild>
+                               <Link href="/premium">Upgrade</Link>
+                           </Button>
+                       </CardContent>
+                    </Card>
+                )}
+            </div>
         </div>
 
         {/* Quizzes Grid */}

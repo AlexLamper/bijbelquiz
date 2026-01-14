@@ -84,7 +84,7 @@ export default async function ProfilePage() {
                 <p className="text-amber-800/80 mb-4 text-sm">
                   Krijg toegang tot alle exclusieve quizzen en diepgaande studies.
                 </p>
-                <Button asChild className="bg-amber-600 hover:bg-amber-700 text-white">
+                <Button asChild className="bg-[#152c31] hover:bg-[#1f3e44] text-white">
                   <Link href="/premium">Word Premium</Link>
                 </Button>
               </div>

@@ -269,9 +269,12 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     <div className={`w-full max-w-3xl mx-auto h-full flex flex-col relative justify-center ${highContrast ? 'grayscale contrast-125' : ''}`}>
         {/* Settings Overlay */}
         {isSettingsOpen && (
-            <div className="absolute top-12 right-0 z-50 w-72 bg-white rounded-lg shadow-xl border border-slate-200 p-4 animate-in fade-in zoom-in-95 duration-200">
-                <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wider">Instellingen</h4>
-                <div className="space-y-4">
+            <>
+                {/* Backdrop to close settings when clicking outside */}
+                <div className="fixed inset-0 z-40" onClick={() => setIsSettingsOpen(false)} />
+                <div className="absolute top-12 right-0 z-50 w-72 bg-white rounded-lg shadow-xl border border-slate-200 p-4 animate-in fade-in zoom-in-95 duration-200">
+                    <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wider">Instellingen</h4>
+                    <div className="space-y-4">
                     <div className="flex items-center justify-between">
                         <span className="text-sm text-slate-600">Tekstgrootte</span>
                         <div className="flex gap-1">
@@ -322,6 +325,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     <Button variant="ghost" size="sm" onClick={() => setIsSettingsOpen(false)} className="h-8 text-xs">Sluiten</Button>
                 </div>
             </div>
+            </>
         )}
 
        {/* Top Controls */}
@@ -330,7 +334,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                <ArrowLeft className="h-4 w-4" /> Overzicht
             </Button>
             <div className="flex gap-1">
-                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 h-8 w-8" onClick={toggleFullscreen} title="Volledig scherm">
+                <Button variant="ghost" size="icon" className="hidden md:inline-flex text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 h-8 w-8" onClick={toggleFullscreen} title="Volledig scherm">
                     <Maximize className="h-4 w-4" />
                 </Button>
                 <Button 
@@ -373,7 +377,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
         
         <CardContent className="flex flex-col gap-2 pt-2 px-6 md:px-10 pb-6 overflow-y-auto flex-1 custom-scrollbar">
             {currentQuestion.answers.map((answer, index) => {
-                let className = `justify-start text-left h-auto px-5 text-base transition-all relative border rounded-lg font-medium shadow-sm hover:shadow-md ${textSize === 'large' ? 'py-5 text-lg' : 'py-3.5'}`;
+                let className = `justify-start text-left h-auto px-5 text-base transition-all relative border rounded-lg font-medium shadow-sm active:scale-[0.98] ${textSize === 'large' ? 'py-5 text-lg' : 'py-3.5'}`;
                 const variant: "outline" | "default" | "secondary" = "outline";
 
                 if (hasAnswered) {

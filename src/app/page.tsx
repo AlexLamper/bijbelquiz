@@ -256,21 +256,40 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="bg-amber-50 rounded-[40px] p-10 md:p-16 border border-amber-100 relative overflow-hidden">
-             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                <div className="text-left">
-                    <h3 className="text-3xl font-serif font-bold text-slate-900 mb-2 italic">Levenslang Premium</h3>
-                    <p className="text-slate-600 text-lg">Zeg vaarwel tegen abonnementen. Eén keer betalen, altijd toegang.</p>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                    <Button asChild size="lg" className="bg-[#152c31] hover:bg-black text-white h-16 px-10 text-lg rounded-2xl shadow-xl transform transition hover:-translate-y-1">
-                        <Link href="/premium">Word Premium Lid</Link>
-                    </Button>
-                    <div className="flex items-center gap-2 text-slate-500 text-sm font-medium px-4">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-600" /> Veilig via iDEAL/Stripe
+          <div className="relative overflow-hidden rounded-3xl bg-[#152c31] p-10 md:p-16 shadow-2xl">
+            {/* Decorative background elements */}
+            <div className="absolute top-0 right-0 -m-16 h-64 w-64 rounded-full bg-white/5 blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 -m-16 h-64 w-64 rounded-full bg-orange-400/10 blur-3xl"></div>
+            <Star className="absolute right-10 top-10 h-32 w-32 text-white/5 rotate-12" />
+
+            <div className="relative z-10 flex flex-col items-center justify-between gap-8 md:flex-row">
+                <div className="max-w-xl text-left">
+                    <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-orange-400/10 px-4 py-1.5 text-sm font-bold text-orange-400 border border-orange-400/20 backdrop-blur-sm">
+                        <Star className="h-4 w-4 fill-current" /> BESTE KEUZE
+                    </div>
+                    <h3 className="mb-4 font-serif text-3xl font-bold text-white md:text-5xl">
+                        Levenslang <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 italic">Premium</span>
+                    </h3>
+                    <p className="text-lg text-slate-300">
+                        Zeg vaarwel tegen maandelijkse abonnementen. Investeer één keer in je geloofskennis en geniet <strong className="text-white">voor altijd</strong> van onbeperkte toegang.
+                    </p>
+                    <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-400">
+                         <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-400" /> Geen terugkerende kosten</span>
+                         <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-400" /> Alle toekomstige updates</span>
                     </div>
                 </div>
-             </div>
+
+                <div className="flex w-full flex-col items-center gap-4 md:w-auto">
+                    <Button asChild size="lg" className="h-16 w-full rounded-xl bg-gradient-to-r from-orange-400 to-orange-500 px-8 text-lg font-bold text-white shadow-[0_0_20px_rgba(251,146,60,0.4)] hover:shadow-[0_0_30px_rgba(251,146,60,0.6)] hover:scale-105 transition-all md:w-auto border border-orange-300/20">
+                        <Link href="/premium">
+                            Word Premium Lid <ArrowRight className="ml-2 h-5 w-5" />
+                        </Link>
+                    </Button>
+                    <div className="flex items-center gap-2 text-sm font-medium text-slate-400">
+                        <Lock className="h-4 w-4" /> Veilig via iDEAL of Card
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </section>
