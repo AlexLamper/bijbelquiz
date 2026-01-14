@@ -67,11 +67,14 @@ export default function Navbar() {
               <div className="h-8 w-8 animate-pulse rounded-full bg-muted" />
             ) : (
               <div className="flex items-center gap-2">
-                <Link href="/login">
+                <Link href="/login" className="hidden sm:block">
                   <Button variant="ghost" size="sm" className="font-medium">Inloggen</Button>
                 </Link>
-                <Link href="/register">
+                <Link href="/register" className="hidden sm:block">
                   <Button size="sm" className="font-semibold shadow-sm">Registreren</Button>
+                </Link>
+                <Link href="/login" className="sm:hidden">
+                  <Button size="sm" className="font-semibold shadow-sm">Aanmelden</Button>
                 </Link>
               </div>
             )}
@@ -91,13 +94,11 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-primary/10 bg-[#eae6db] px-4 py-6 shadow-lg animate-in slide-in-from-top-2 absolute top-16 left-0 w-full h-[calc(100vh-4rem)] overflow-y-auto z-[99]">
             <div className="flex flex-col space-y-2">
-                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-white border border-slate-200 shadow-sm rounded-xl font-medium text-slate-700 active:scale-[0.99] transition-all hover:border-primary/20 hover:shadow-md">
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors">
                     Home
-                    <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-primary transition-colors" />
                 </Link>
-                <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-white border border-slate-200 shadow-sm rounded-xl font-medium text-slate-700 active:scale-[0.99] transition-all hover:border-primary/20 hover:shadow-md">
+                <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors">
                     Alle Quizzen
-                    <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-primary transition-colors" />
                 </Link>
                 {session && (
                     <Link href="/dashboard" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-white border border-slate-200 shadow-sm rounded-xl font-medium text-slate-700 active:scale-[0.99] transition-all hover:border-primary/20 hover:shadow-md">
