@@ -1,4 +1,4 @@
-# bijbelquiz.com
+# BijbelQuiz
 
 ![BijbelQuiz Hero](public/images/dashboard.png)
 
