@@ -92,7 +92,7 @@ export default async function Home() {
                 <Button 
                     size="lg" 
                     variant="outline"
-                    className="w-full sm:w-auto h-14 px-8 text-base bg-white/40 backdrop-blur-md border-[#152c31]/20 text-[#152c31] rounded-full hover:bg-white/60 hover:text-black transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5" 
+                    className="w-full sm:w-auto h-14 px-8 text-base bg-white/40 backdrop-blur-md border-[#152c31]/20 text-[#152c31] dark:text-gray-200 rounded-full hover:bg-white/60 hover:text-black transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5" 
                     asChild
                 >
                     <Link href="/login">Aanmelden</Link>
@@ -108,7 +108,7 @@ export default async function Home() {
         <div className="container mx-auto px-4 max-w-7xl rounded-3xl p-4 md:p-8 animate-float-in">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[#152d2f] dark:text-foreground sm:text-4xl font-serif">Populaire Quizzen</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-lg text-slate-600 dark:text-gray-400">
               De meest gespeelde quizzen van dit moment. Waar begin jij mee?
             </p>
           </div>

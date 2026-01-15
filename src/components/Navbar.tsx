@@ -38,7 +38,7 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center gap-6">
-           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
+           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700 dark:text-gray-300">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <Link href="/quizzes" className="hover:text-primary transition-colors">Alle Quizzen</Link>
               {session && (

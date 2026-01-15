@@ -40,12 +40,12 @@ export default function QuizCard({ quiz, isPremiumUser }: QuizCardProps) {
              {categoryName}
           </Badge>
           {quiz.isPremium && (
-            <span className="inline-flex items-center gap-1.5 rounded-md bg-amber-600 px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider shadow-sm">
+            <span className="inline-flex items-center gap-1.5 rounded-md bg-amber-700 theme-hover:bg-amber-800 px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider shadow-sm">
               <Star className="h-3 w-3 fill-white/90 text-white/90" /> PRO
             </span>
           )}
         </div>
-        <CardTitle className="line-clamp-1 text-lg group-hover:text-primary dark:group-hover:text-emerald-400 transition-colors font-serif">
+        <CardTitle className="line-clamp-1 text-lg group-hover:text-primary dark:group-hover:text-gray-200 transition-colors font-serif">
           {quiz.title}
         </CardTitle>
         <CardDescription className="line-clamp-2 text-sm text-muted-foreground min-h-10">

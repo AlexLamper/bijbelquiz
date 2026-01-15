@@ -78,8 +78,8 @@ function RegisterContent() {
           </p>
         </div>
 
-        <Card className="border-border/50 shadow-xl overflow-hidden">
-          <CardHeader className="space-y-1 bg-slate-50/50 dark:bg-slate-900/50 border-b border-border/50 pb-6">
+        <Card className="bg-white dark:bg-card dark:border dark:border-border shadow-xl overflow-hidden">
+          <CardHeader className="space-y-1 border-b border-border/50 pb-6">
             <CardTitle className="text-xl font-bold text-center">Account aanmaken</CardTitle>
             <CardDescription className="text-center">
               Vul je gegevens in om te registreren
@@ -89,7 +89,7 @@ function RegisterContent() {
             <Button 
               variant="outline" 
               onClick={() => signIn('google', { callbackUrl })} 
-              className="w-full relative py-5 border-slate-200 bg-white hover:bg-slate-50 text-slate-700 font-medium group transition-all mb-4"
+              className="w-full relative py-5 border-slate-200 dark:border-slate-700 bg-white dark:bg-card hover:bg-slate-50 dark:hover:bg-accent text-slate-700 dark:text-gray-200 font-medium group transition-all mb-4"
             >
               <svg className="mr-3 h-5 w-5 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
                 <path
@@ -113,7 +113,7 @@ function RegisterContent() {
             </Button>
             <div className="relative my-2">
               <div className="absolute inset-0 flex items-center">
-                <span className="w-full border-t border-slate-200" />
+                <span className="w-full border-t border-slate-200 dark:border-slate-700" />
               </div>
               <div className="relative flex justify-center text-xs uppercase">
                 <span className="bg-card px-2 text-muted-foreground font-medium">Of met e-mail</span>
@@ -133,7 +133,7 @@ function RegisterContent() {
                   id="name"
                   type="text"
                   placeholder="Volledige naam"
-                  className="flex h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm placeholder:text-slate-400 focus:bg-white focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+                  className="flex h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-3 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -145,7 +145,7 @@ function RegisterContent() {
                   id="email"
                   type="email"
                   placeholder="naam@voorbeeld.nl"
-                  className="flex h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm placeholder:text-slate-400 focus:bg-white focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+                  className="flex h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-3 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -158,7 +158,7 @@ function RegisterContent() {
                     id="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="Minimaal 6 tekens"
-                    className="flex h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm placeholder:text-slate-400 focus:bg-white focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200 pr-10"
+                    className="flex h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-3 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200 pr-10"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     minLength={6}
@@ -183,7 +183,7 @@ function RegisterContent() {
               </Button>
             </form>
           </CardContent>
-          <CardFooter className="bg-slate-50/50 dark:bg-slate-900/50 py-4 border-t border-border/50 justify-center">
+          <CardFooter className="py-4 border-t border-border/50 justify-center">
             <div className="text-sm text-center w-full text-slate-500">
              Heb je al een account?{' '}
             <Link href="/login" className="text-primary hover:text-primary/80 hover:underline font-semibold ml-1">
@@ -199,7 +199,7 @@ function RegisterContent() {
 
 export default function RegisterForm() {
   return (
-    <Suspense fallback={<div className="flex min-h-screen items-center justify-center bg-slate-50"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>}>
+    <Suspense fallback={<div className="flex min-h-screen items-center justify-center bg-slate-50 dark:bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>}>
       <RegisterContent />
     </Suspense>
   );

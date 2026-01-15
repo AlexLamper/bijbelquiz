@@ -5,11 +5,11 @@ import Category, { ICategory } from '@/models/Category';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Filter, Star, Search } from 'lucide-react';
+import { Star, Search } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import QuizCard, { QuizItem } from '@/components/QuizCard';
+import MobileQuizFilter from '@/components/MobileQuizFilter';
 
 export const metadata = {
   title: 'Alle Quizzen | BijbelQuiz',
@@ -71,29 +71,27 @@ export default async function QuizzesPage({
         <div className="lg:col-span-1">
             {/* Desktop Sticky Sidebar */}
             <div className="hidden lg:block sticky top-24 space-y-6">
-                <div>
-                    <h3 className="font-serif font-bold text-slate-900 mb-4 px-2 dark:text-foreground">Categorieën</h3>
-                    <div className="space-y-1">
-                         <Button 
-                            variant={currentCategory === 'all' ? "secondary" : "ghost"} 
-                            className={`w-full justify-start ${currentCategory === 'all' ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
+                <h3 className="font-serif font-bold text-slate-900 mb-4 px-2 dark:text-foreground">Categorieën</h3>
+                <div className="space-y-1">
+                        <Button 
+                        variant={currentCategory === 'all' ? "secondary" : "ghost"} 
+                        className={`w-full justify-start ${currentCategory === 'all' ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
+                        asChild
+                    >
+                        <Link href="/quizzes">Alle Categorieën</Link>
+                    </Button>
+                    {categories.map((cat: ICategory) => (
+                        <Button
+                            key={cat._id.toString()}
+                            variant={currentCategory === cat.slug ? "secondary" : "ghost"}
+                            className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
                             asChild
                         >
-                            <Link href="/quizzes">Alle Categorieën</Link>
+                            <Link href={`/quizzes?category=${cat.slug}`}>
+                                {cat.title}
+                            </Link>
                         </Button>
-                        {categories.map((cat: ICategory) => (
-                            <Button
-                                key={cat._id.toString()}
-                                variant={currentCategory === cat.slug ? "secondary" : "ghost"}
-                                className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
-                                asChild
-                            >
-                                <Link href={`/quizzes?category=${cat.slug}`}>
-                                    {cat.title}
-                                </Link>
-                            </Button>
-                        ))}
-                    </div>
+                    ))}
                 </div>
 
                 {!isPremiumUser && (
@@ -113,38 +111,7 @@ export default async function QuizzesPage({
 
             {/* Mobile View: Accordion for Categories */}
             <div className="lg:hidden space-y-4 mb-6">
-                <Accordion type="single" collapsible className="bg-white rounded-lg border shadow-sm px-4">
-                    <AccordionItem value="categories" className="border-b-0">
-                        <AccordionTrigger className="hover:no-underline py-3">
-                             <span className="flex items-center gap-2 text-slate-800 font-medium">
-                                <Filter className="h-4 w-4" /> Filter ({currentCategory === 'all' ? 'Alle' : categories.find((c:ICategory) => c.slug === currentCategory)?.title})
-                            </span>
-                        </AccordionTrigger>
-                        <AccordionContent>
-                             <div className="space-y-1 pt-2 pb-4">
-                                 <Button 
-                                    variant={currentCategory === 'all' ? "secondary" : "ghost"} 
-                                    className={`w-full justify-start ${currentCategory === 'all' ? 'bg-primary/10 text-primary hover:bg-primary/20' : ''}`}
-                                    asChild
-                                >
-                                    <Link href="/quizzes">Alle Categorieën</Link>
-                                </Button>
-                                {categories.map((cat: ICategory) => (
-                                    <Button
-                                        key={`mobile-${cat._id.toString()}`}
-                                        variant={currentCategory === cat.slug ? "secondary" : "ghost"}
-                                        className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-primary/10 text-primary hover:bg-primary/20' : ''}`}
-                                        asChild
-                                    >
-                                        <Link href={`/quizzes?category=${cat.slug}`}>
-                                            {cat.title}
-                                        </Link>
-                                    </Button>
-                                ))}
-                             </div>
-                        </AccordionContent>
-                    </AccordionItem>
-                </Accordion>
+                <MobileQuizFilter categories={categories} currentCategory={currentCategory} />
 
                 {!isPremiumUser && (
                     <Card className="bg-amber-50 border-amber-200">

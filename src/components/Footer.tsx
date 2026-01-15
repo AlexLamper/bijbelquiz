@@ -35,7 +35,7 @@ export default function Footer() {
           <Link href="/contact" className="hover:text-white hover:opacity-100 transition-colors">Contact</Link>
         </div>
       </div>
-      <div className="container mx-auto px-4 mt-10 pt-8 border-t border-white/10 text-center text-xs opacity-50">
+      <div className="container mx-auto px-4 mt-10 pt-8 border-t border-white/10 text-center text-xs text-slate-400">
         &copy; {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.
       </div>
     </footer>
