@@ -73,6 +73,7 @@ export default function Navbar() {
                     onClick={() => signOut({ callbackUrl: '/' })}
                     variant="ghost" 
                     size="icon"
+                    aria-label="Uitloggen"
                     className="ml-2 text-muted-foreground hover:text-destructive transition-colors"
                   >
                     <LogOut className="h-4 w-4" />
@@ -98,6 +99,7 @@ export default function Navbar() {
             <Button 
                 variant="ghost" 
                 size="icon" 
+                aria-label="Menu openen"
                 className="md:hidden ml-1 text-muted-foreground"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >

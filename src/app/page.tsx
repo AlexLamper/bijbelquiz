@@ -7,27 +7,33 @@ import { ArrowRight, BookOpen, CheckCircle2, Lock, Sparkles, Star, Trophy } from
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import QuizCard, { QuizItem } from '@/components/QuizCard';
+import { unstable_cache } from 'next/cache';
 
-export const dynamic = 'force-dynamic';
+// Removed force-dynamic to allow potential partial caching where possible
+// export const dynamic = 'force-dynamic';
 
-async function getQuizzes() {
-  try {
-    await connectDB();
-    // Get a good mix of quizzes. "Popular" mocked by just taking the first 9 for now.
-    const popularQuizzes = await Quiz.find({})
-        .populate('categoryId')
-        .limit(9)
-        .sort({ isPremium: 1, sortOrder: 1 }) // Show free first or intentional mix
-        .lean();
-    
-    return {
-      popular: JSON.parse(JSON.stringify(popularQuizzes)),
-    };
-  } catch (e) {
-    console.error("Database connection failed", e);
-    return { popular: [] };
-  }
-}
+const getQuizzes = unstable_cache(
+  async () => {
+    try {
+      await connectDB();
+      // Get a good mix of quizzes. "Popular" mocked by just taking the first 9 for now.
+      const popularQuizzes = await Quiz.find({})
+          .populate('categoryId')
+          .limit(9)
+          .sort({ isPremium: 1, sortOrder: 1 }) // Show free first or intentional mix
+          .lean();
+      
+      return {
+        popular: JSON.parse(JSON.stringify(popularQuizzes)),
+      };
+    } catch (e) {
+      console.error("Database connection failed", e);
+      return { popular: [] };
+    }
+  },
+  ['popular-quizzes-home'],
+  { revalidate: 3600, tags: ['quizzes'] }
+);
 
 
 export default async function Home() {
@@ -39,7 +45,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 animate-float-in">
+      <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24">
         <div className="absolute inset-0 z-0 pointer-events-none" 
              style={{
                 backgroundImage: 'linear-gradient(to right, rgba(160, 150, 140, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(160, 150, 140, 0.08) 1px, transparent 1px)',
@@ -53,7 +59,7 @@ export default async function Home() {
           <div className="mx-auto max-w-4xl">
              <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-white dark:bg-card px-3 py-1 text-sm font-medium text-[#152c31] dark:text-primary-foreground shadow-sm hover:scale-105 transition-transform cursor-default">
                 <Sparkles className="mr-2 h-4 w-4 text-amber-500" />
-                <span className='dark:text-gray-400'>Nieuw: Meer dan 20+ nieuwe quizzen beschikbaar!</span>
+                <span className='dark:text-gray-200'>Nieuw: Meer dan 20+ nieuwe quizzen beschikbaar!</span>
               </div>
             <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-slate-900 dark:text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-serif">
               Speel gratis <span className="text-[#152c31] dark:text-[#254952] italic">bijbelquizzen</span> online

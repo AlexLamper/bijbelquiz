@@ -36,7 +36,7 @@ export default function QuizCard({ quiz, isPremiumUser }: QuizCardProps) {
     <Card className="group relative flex h-full flex-col overflow-hidden border-0 bg-white dark:bg-card dark:border dark:border-border shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
       <CardHeader>
         <div className="mb-2 flex items-center justify-between">
-          <Badge variant="secondary" className="font-normal bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted/80">
+          <Badge variant="secondary" className="font-normal bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-muted dark:text-gray-200 dark:hover:bg-muted/80">
              {categoryName}
           </Badge>
           {quiz.isPremium && (
