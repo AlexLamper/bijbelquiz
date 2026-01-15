@@ -108,25 +108,27 @@ export default async function QuizPage({ params }: PageProps) {
   };
 
   return (
-    <div className="h-[calc(100vh-64px)] flex flex-col overflow-hidden">
+    <div className="fixed inset-0 top-16 flex flex-col overflow-hidden bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="container mx-auto px-4 py-4 max-w-4xl h-full flex flex-col">
+      <div className="container mx-auto px-4 py-2 h-full flex flex-col overflow-hidden">
         {/* Server-side rendered content for SEO */}
-        <div className="max-w-3xl mx-auto text-center mb-6">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 font-serif text-slate-900">{quiz.title}</h1>
-          <p className="text-slate-600 mb-4 text-sm">{quiz.description}</p>
+        <div className="text-center mb-2 md:mb-4 mt-2 md:mt-6 shrink-0">
+          <h1 className="text-lg md:text-2xl font-bold mb-0.5 font-serif text-slate-900 truncate">{quiz.title}</h1>
+          <p className="text-slate-600 mb-1 text-[10px] md:text-xs line-clamp-1">{quiz.description}</p>
           
           {!session && (
-            <div className="inline-block bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 text-xs text-amber-800 mb-4">
-              💡<strong>Tip:</strong> <Link href="/api/auth/signin" className="underline hover:text-amber-900">Log in</Link> om je scores bij te houden en je voortgang te zien.
+            <div className="inline-block bg-amber-50 border border-amber-200 rounded-lg px-3 py-0.5 text-[10px] text-amber-800">
+              💡<strong>Tip:</strong> <Link href="/api/auth/signin" className="underline hover:text-amber-900">Log in</Link> voor scores.
             </div>
           )}
         </div>
         
-        <QuizPlayer quiz={serializableQuiz} />
+        <div className="flex-1 min-h-0 w-full flex flex-col pb-4 md:pb-8">
+          <QuizPlayer quiz={serializableQuiz} />
+        </div>
       </div>
     </div>
   );

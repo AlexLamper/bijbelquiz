@@ -5,11 +5,10 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useRouter } from 'next/navigation';
-import { ArrowRight, BookOpen, CheckCircle, XCircle, Share2, Award, RotateCcw, Lock, ArrowLeft, Maximize, Settings } from 'lucide-react';
+import { ArrowRight, BookOpen, CheckCircle, XCircle, Award, RotateCcw, Lock, ArrowLeft, Maximize, Settings } from 'lucide-react';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 
-// Interface matching the serialized Mongoose object
 interface Answer {
   text: string;
   isCorrect: boolean;
@@ -32,6 +31,7 @@ interface Quiz {
 
 export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const { data: session } = useSession();
+  const isPremium = session?.user?.isPremium;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
@@ -41,19 +41,22 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const router = useRouter();
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
-  const [highContrast, setHighContrast] = useState(false);
+  const [showExplanation, setShowExplanation] = useState(true);
   const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
   const [showLeadForm, setShowLeadForm] = useState(true);
   const [leadName, setLeadName] = useState('');
   const [leadEmail, setLeadEmail] = useState('');
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   const currentQuestion = quiz.questions[currentIndex];
 
-  const toggleTextSize = () => {
-      setTextSize(prev => prev === 'normal' ? 'large' : 'normal');
-  };
-
-  const toggleHighContrast = () => setHighContrast(prev => !prev);
+  const toggleShowExplanation = () => setShowExplanation(prev => !prev);
   const toggleFontFamily = () => setFontFamily(prev => prev === 'serif' ? 'sans' : 'serif');
 
   const handleAnswer = (isCorrect: boolean, index: number) => {
@@ -65,7 +68,6 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     if (isCorrect) {
       setScore(score + 1);
     }
-    // Wacht nu op de gebruiker om op "Volgende" te klikken (Studie modus)
   };
 
   const handeNext = async () => {
@@ -266,7 +268,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const progress = ((currentIndex) / quiz.questions.length) * 100;
 
   return (
-    <div className={`w-full max-w-3xl mx-auto h-full flex flex-col relative justify-center ${highContrast ? 'grayscale contrast-125' : ''}`}>
+    <div className={`w-full max-w-4xl mx-auto flex flex-col relative pt-1 overflow-hidden h-full transition-all duration-700 ease-in-out ${hasAnswered ? 'justify-center' : 'justify-start md:pt-4'}`}>
         {/* Settings Overlay */}
         {isSettingsOpen && (
             <>
@@ -309,15 +311,28 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                         </Button>
                     </div>
 
-                     <div className="flex items-center justify-between">
-                        <span className="text-sm text-slate-600">Hoog Contrast</span>
+                     <div className="flex items-center justify-between opacity-100">
+                        <div className="flex flex-col">
+                            <span className="text-sm text-slate-600">Toon Uitleg</span>
+                            {!isPremium && (
+                                <span className="text-[10px] text-primary font-bold uppercase tracking-tighter flex items-center gap-0.5">
+                                    <Lock className="h-2 w-2" /> PREMIUM
+                                </span>
+                            )}
+                        </div>
                          <Button 
-                            variant={highContrast ? "default" : "outline"}
+                            variant={showExplanation ? "default" : "outline"}
                             size="sm" 
-                            onClick={toggleHighContrast}
-                            className={`h-8 w-12 ${highContrast ? 'bg-slate-900' : ''}`}
+                            onClick={() => {
+                                if (isPremium) {
+                                    toggleShowExplanation();
+                                } else {
+                                    router.push('/premium');
+                                }
+                            }}
+                            className={`h-8 w-12 ${showExplanation ? 'bg-primary text-white' : ''} transition-all`}
                         >
-                            {highContrast ? "Aan" : "Uit"}
+                            {showExplanation ? "Aan" : "Uit"}
                         </Button>
                     </div>
                 </div>
@@ -350,7 +365,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
        </div>
 
         {/* Progress bar */}
-        <div className="w-full bg-slate-200/50 h-1.5 rounded-full mb-2 overflow-hidden shadow-inner shrink-0">
+        <div className="w-full bg-white border border-slate-200 h-2 md:h-3 rounded-full mb-2 md:mb-4 overflow-hidden shadow-sm shrink-0">
             <div 
                 className="bg-[#152c31] h-full transition-all duration-700 ease-out flex items-center justify-end pr-1" 
                 style={{ width: `${Math.max(5, progress)}%` }}
@@ -358,26 +373,26 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
             </div>
         </div>
 
-        <Card className="w-full border-0 shadow-lg bg-white text-slate-800 overflow-hidden relative flex flex-col min-h-0">
+        <Card className="w-full border-0 shadow-lg bg-white text-slate-800 overflow-hidden relative flex flex-col min-h-0 shrink-1 h-auto">
             
-        <CardHeader className="pb-2 pt-6 px-6 md:px-10 shrink-0">
-            <div className="flex justify-between items-center mb-4">
-            <Badge variant="outline" className="text-xs font-bold uppercase tracking-wider text-[#152c31] border-[#152c31]/20 bg-[#152c31]/5 px-3 py-1">
+        <CardHeader className="pb-1 pt-3 px-4 md:px-8 shrink-0">
+            <div className="flex justify-between items-center mb-1">
+            <Badge variant="outline" className="text-[10px] md:text-xs font-bold uppercase tracking-wider text-[#152c31] border-[#152c31]/20 bg-[#152c31]/5 px-2 py-0.5">
                 Vraag {currentIndex + 1} / {quiz.questions.length}
             </Badge>
             <div className="flex items-center gap-2">
-                <div className="text-xs font-bold uppercase tracking-wider text-slate-500">Score</div>
-                <Badge className="bg-[#152c31] text-white hover:bg-[#152c31]">{score}</Badge>
+                <div className="text-[10px] md:text-xs font-bold uppercase tracking-wider text-slate-500">Score</div>
+                <Badge className="bg-[#152c31] text-white hover:bg-[#152c31] text-[10px] md:text-xs h-5 px-1.5">{score}</Badge>
             </div>
             </div>
-            <CardTitle className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} leading-snug text-[#152d2f] transition-all ${textSize === 'large' ? 'text-2xl md:text-3xl' : 'text-xl md:text-2xl'}`}>
+            <CardTitle className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} leading-tight text-[#152d2f] transition-all ${textSize === 'large' ? 'text-lg md:text-xl lg:text-2xl' : 'text-base md:text-xl'}`}>
                 {currentQuestion.text}
             </CardTitle>
         </CardHeader>
         
-        <CardContent className="flex flex-col gap-2 pt-2 px-6 md:px-10 pb-6 overflow-y-auto flex-1 custom-scrollbar">
+        <CardContent className="flex flex-col gap-1.5 md:gap-2 pt-0 px-4 md:px-8 pb-2 overflow-y-auto shrink-1 custom-scrollbar">
             {currentQuestion.answers.map((answer, index) => {
-                let className = `justify-start text-left h-auto px-5 text-base transition-all relative border rounded-lg font-medium shadow-sm active:scale-[0.98] ${textSize === 'large' ? 'py-5 text-lg' : 'py-3.5'}`;
+                let className = `justify-start text-left h-auto px-4 text-sm md:text-base transition-all relative border rounded-lg font-medium shadow-sm active:scale-[0.98] ${textSize === 'large' ? 'py-3 md:py-4 text-base md:text-lg' : 'py-2 md:py-3'}`;
                 const variant: "outline" | "default" | "secondary" = "outline";
 
                 if (hasAnswered) {
@@ -419,24 +434,41 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
             })}
         
         {/* Explanation Section (Appears after answering) */}
-        {hasAnswered && (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 mt-4">
-                <div className={`mx-0 mb-0 rounded-xl bg-primary/5 border border-primary/10 ${textSize === 'large' ? 'p-8' : 'p-6'}`}>
-                    <h4 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-primary mb-3">
-                        <BookOpen className="h-4 w-4" /> 
-                        Uitleg & Verdieping
+        {hasAnswered && showExplanation && (
+            <div className="animate-in fade-in slide-in-from-bottom-2 duration-300 mt-2 shrink-0">
+                <div className={`mx-0 mb-0 rounded-xl bg-primary/5 border border-primary/10 ${textSize === 'large' ? 'p-3 md:p-5' : 'p-2 md:p-4'} relative overflow-hidden`}>
+                    <h4 className="flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-wider text-primary mb-1">
+                        <BookOpen className="h-3 w-3" /> 
+                        Uitleg
                     </h4>
                     
-                    <p className={`text-foreground ${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} leading-relaxed mb-4 ${textSize === 'large' ? 'text-xl' : 'text-lg'}`}>
-                        {currentQuestion.explanation || "Geen extra uitleg beschikbaar."}
-                    </p>
-                    
-                    {currentQuestion.bibleReference && (
-                        <div className="flex items-center gap-2 text-sm text-stone-600 font-medium italic border-t border-primary/10 pt-3">
-                            <span className="bg-white px-2 py-0.5 rounded border border-stone-200 shadow-sm not-italic text-xs">
-                                Lees
-                            </span> 
-                            {currentQuestion.bibleReference}
+                    {isPremium ? (
+                        <>
+                            <p className={`text-foreground ${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} leading-snug mb-1 ${textSize === 'large' ? 'text-sm md:text-lg' : 'text-xs md:text-sm'}`}>
+                                {currentQuestion.explanation || "Geen extra uitleg beschikbaar."}
+                            </p>
+                            
+                            {currentQuestion.bibleReference && (
+                                <div className="flex items-center gap-2 text-xs text-stone-600 font-medium italic border-t border-primary/10 pt-1.5 mt-1.5">
+                                    <span className="bg-white px-1.5 py-0.5 rounded border border-stone-200 shadow-sm not-italic text-[10px]">
+                                        Lees
+                                    </span> 
+                                    {currentQuestion.bibleReference}
+                                </div>
+                            )}
+                        </>
+                    ) : (
+                        <div className="py-2 flex flex-col items-center text-center">
+                            <div className="bg-white/50 backdrop-blur-sm rounded-lg p-2 border border-primary/10 w-full mb-2 select-none">
+                                <p className="text-[10px] md:text-xs text-slate-400 italic blur-[1px]">
+                                    {currentQuestion.explanation?.substring(0, 40)}...
+                                </p>
+                            </div>
+                            <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-white gap-2 h-7 md:h-9 text-xs w-full">
+                                <Link href="/premium">
+                                    <Lock className="h-3 w-3" /> Ontgrendel Uitleg
+                                </Link>
+                            </Button>
                         </div>
                     )}
                 </div>
@@ -445,9 +477,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
         </CardContent>
 
         {hasAnswered && (
-            <CardFooter className="bg-white border-t border-slate-100 py-4 flex justify-end shrink-0 rounded-b-xl z-20 shadow-[0_-4px_6px_-2px_rgba(0,0,0,0.05)]">
-                <Button size="lg" onClick={handeNext} className="group px-8 font-semibold shadow-lg">
-                    {currentIndex < quiz.questions.length - 1 ? "Volgende Vraag" : "Afronden"}
+            <CardFooter className="bg-white border-t border-slate-100 py-2 md:py-2.5 flex justify-end shrink-0 rounded-b-xl z-20 shadow-[0_-4px_6px_-2px_rgba(0,0,0,0.05)]">
+                <Button size="lg" onClick={handeNext} className="group px-6 md:px-8 font-semibold shadow-lg text-sm h-10">
+                    {currentIndex < quiz.questions.length - 1 ? "Volgende" : "Afronden"}
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
             </CardFooter>

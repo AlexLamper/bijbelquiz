@@ -57,7 +57,7 @@ export default function Navbar() {
             {status === 'authenticated' && session ? (
               <>
                 {session.user.isPremium && (
-                  <div className="hidden sm:flex items-center gap-1.5 rounded-full bg-amber-100/50 px-3 py-1 text-xs font-semibold text-amber-600 border border-amber-200">
+                  <div className="hidden sm:flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary border border-primary/20">
                     <Star className="h-3 w-3 fill-current" />
                     <span>PRO</span>
                   </div>
