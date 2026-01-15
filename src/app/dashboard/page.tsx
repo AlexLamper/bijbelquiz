@@ -267,33 +267,35 @@ export default async function DashboardPage() {
         <div className="md:col-span-4 flex flex-col gap-6">
             
             {/* Level Card - Attempting to match height with StatsRow + Recent Activity visually or just filling space */}
-             <Card className="bg-primary text-primary-foreground border-0 shadow-xl overflow-hidden relative flex-1 min-h-[300px] flex flex-col">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-12 translate-x-12 blur-3xl"></div>
+             <Card className="bg-primary text-primary-foreground border-0 shadow-xl overflow-hidden relative flex-1 min-h-[300px] flex flex-col dark:bg-card dark:border-border dark:border dark:text-foreground">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-12 translate-x-12 blur-3xl dark:opacity-10"></div>
                 
                 <CardHeader>
-                    <CardTitle className="text-primary-foreground/90 uppercase text-xs tracking-widest font-semibold flex items-center gap-2">
-                        <Trophy className="h-4 w-4 text-amber-300" /> Uw Niveau
+                    <CardTitle className="text-primary-foreground/90 uppercase text-xs tracking-widest font-semibold flex items-center gap-2 dark:text-muted-foreground">
+                        <Trophy className="h-4 w-4 text-amber-300 dark:text-amber-500" /> Uw Niveau
                     </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center pb-8 pt-2 flex-1 flex flex-col justify-center">
-                     <div className="mb-4 inline-flex items-center justify-center p-6 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 shadow-inner w-24 h-24 mx-auto">
-                        <BookOpen className="h-12 w-12 text-white" />
+                     <div className="mb-4 inline-flex items-center justify-center p-6 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 shadow-inner w-24 h-24 mx-auto dark:bg-muted/50 dark:border-border">
+                        <BookOpen className="h-12 w-12 text-white dark:text-foreground" />
                      </div>
-                     <h3 className="text-3xl font-serif font-bold mb-1">{levelTitle}</h3>
-                     <p className="text-primary-foreground/70 text-sm mb-6">Niveau {level} • {xp} XP</p>
+                     <h3 className="text-3xl font-serif font-bold mb-1">
+                        {levelTitle}
+                     </h3>
+                     <p className="text-primary-foreground/70 text-sm mb-6 dark:text-muted-foreground">Niveau {level} • {xp} XP</p>
 
                      <div className="relative pt-1 px-2">
-                        <div className="flex mb-2 items-center justify-between text-xs text-primary-foreground/80">
+                        <div className="flex mb-2 items-center justify-between text-xs text-primary-foreground/80 dark:text-muted-foreground">
                             <span>Huidig</span>
                             <span>Volgend</span>
                         </div>
-                        <div className="overflow-hidden h-2 mb-1 text-xs flex rounded bg-black/20">
+                        <div className="overflow-hidden h-2 mb-1 text-xs flex rounded bg-black/20 dark:bg-secondary">
                             <div 
                                 style={{ width: `${levelProgress}%` }} 
                                 className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-amber-400 transition-all duration-1000"
                             ></div>
                         </div>
-                        <p className="text-[10px] text-right text-primary-foreground/60">{nextLevelXp - xp} XP tot upgrade</p>
+                        <p className="text-[10px] text-right text-primary-foreground/60 dark:text-muted-foreground/60">{nextLevelXp - xp} XP tot upgrade</p>
                      </div>
                 </CardContent>
              </Card>
@@ -314,25 +316,25 @@ export default async function DashboardPage() {
                              </CardTitle>
                              <CardDescription>Uw prestaties per categorie (Top 3).</CardDescription>
                         </div>
-                        {!isPremium && <Badge variant="secondary" className="bg-orange-100 text-orange-800 hover:bg-orange-200 border-orange-200">Premium</Badge>}
+                        {!isPremium && <Badge variant="secondary" className="bg-orange-100 text-orange-800 hover:bg-orange-200 border-orange-200 dark:bg-orange-900/30 dark:text-orange-400 dark:border-orange-900/50">Premium</Badge>}
                     </div>
                 </CardHeader>
                 <CardContent className="relative min-h-[160px]">
                     {!isPremium && (
                          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-6 text-center">
                             {/* Blurred Background with gradient overlay */}
-                            <div className="absolute inset-0 bg-white/40 backdrop-blur-md"></div>
-                            <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white/90"></div>
+                            <div className="absolute inset-0 bg-white/40 backdrop-blur-md dark:bg-background/80"></div>
+                            <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white/90 dark:from-background/60 dark:to-background"></div>
                             
                             <div className="relative z-20 flex flex-col items-center">
-                                <div className="mb-3 p-3 bg-orange-100 rounded-full border border-orange-200 shadow-sm animate-pulse-slow">
-                                     <Lock className="h-5 w-5 text-orange-600" />
+                                <div className="mb-3 p-3 bg-orange-100 rounded-full border border-orange-200 shadow-sm animate-pulse-slow dark:bg-orange-900/30 dark:border-orange-800">
+                                     <Lock className="h-5 w-5 text-orange-600 dark:text-orange-400" />
                                 </div>
-                                <h3 className="font-serif font-bold text-slate-800 mb-1 text-lg">Ontgrendel uw statistieken</h3>
-                                <p className="text-slate-600 text-sm mb-5 max-w-xs leading-relaxed">
+                                <h3 className="font-serif font-bold text-slate-800 mb-1 text-lg dark:text-foreground">Ontgrendel uw statistieken</h3>
+                                <p className="text-slate-600 text-sm mb-5 max-w-xs leading-relaxed dark:text-muted-foreground">
                                     Zie precies welke onderwerpen u beheerst en waar u nog kunt groeien.
                                 </p>
-                                <Button size="sm" asChild className="bg-[#152c31] hover:bg-[#152c31]/90 text-white shadow-md rounded-lg px-6">
+                                <Button size="sm" asChild className="bg-[#152c31] hover:bg-[#152c31]/90 text-white shadow-md rounded-lg px-6 dark:bg-primary dark:text-primary-foreground">
                                     <Link href="/premium">Bekijk Premium</Link>
                                 </Button>
                             </div>

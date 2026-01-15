@@ -1,33 +1,14 @@
 import Link from 'next/link';
 import connectDB from '@/lib/db';
 import Quiz from '@/models/Quiz';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, BookOpen, CheckCircle2, Lock, Sparkles, Star, Layout, Trophy } from 'lucide-react';
+import { ArrowRight, BookOpen, CheckCircle2, Lock, Sparkles, Star, Trophy } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import QuizCard, { QuizItem } from '@/components/QuizCard';
 
 export const dynamic = 'force-dynamic';
-
-interface Question {
-  _id: string;
-  text: string;
-}
-
-interface Category {
-    title: string;
-}
-
-interface QuizItem {
-  _id: string;
-  title: string;
-  description?: string;
-  categoryId?: Category;
-  questions?: Question[];
-  slug?: string;
-  isPremium: boolean;
-}
 
 async function getQuizzes() {
   try {
@@ -48,60 +29,6 @@ async function getQuizzes() {
   }
 }
 
-function QuizCard({ quiz, isPremiumUser }: { quiz: QuizItem, isPremiumUser: boolean }) {
-  const isLocked = quiz.isPremium && !isPremiumUser;
-  const categoryName = quiz.categoryId?.title || 'Algemeen';
-
-  return (
-    <Card className="group relative flex h-full flex-col overflow-hidden border-0 bg-white shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
-      <CardHeader>
-        <div className="mb-2 flex items-center justify-between">
-          <Badge variant="secondary" className="font-normal bg-slate-100 text-slate-700 hover:bg-slate-200">
-             {categoryName}
-          </Badge>
-          {quiz.isPremium && (
-            <span className="inline-flex items-center gap-1.5 rounded-md bg-amber-600 px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider shadow-sm">
-              <Star className="h-3 w-3 fill-white/90 text-white/90" /> PRO
-            </span>
-          )}
-        </div>
-        <CardTitle className="line-clamp-1 text-lg group-hover:text-primary transition-colors font-serif">
-          {quiz.title}
-        </CardTitle>
-        <CardDescription className="line-clamp-2 text-sm text-muted-foreground min-h-[40px]">
-          {quiz.description || "Test je kennis en leer meer over dit onderwerp."}
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="flex-1">
-        <div className="flex items-center gap-4 text-xs text-muted-foreground">
-          <div className="flex items-center gap-1">
-            <CheckCircle2 className="h-3.5 w-3.5" />
-            <span>{quiz.questions?.length || 0} vragen</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <BookOpen className="h-3.5 w-3.5" />
-            <span>Leerzaam</span>
-          </div>
-        </div>
-      </CardContent>
-      <CardFooter className="pt-0">
-        <Button className="w-full gap-2 transition-transform active:scale-95 shadow-sm" variant={isLocked ? "outline" : "default"} asChild>
-          <Link href={`/quiz/${quiz.slug || quiz._id}`}>
-            {isLocked ? (
-              <>
-                <Lock className="h-4 w-4" /> Ontgrendel
-              </>
-            ) : (
-              <>
-                Start Quiz <ArrowRight className="h-4 w-4" />
-              </>
-            )}
-          </Link>
-        </Button>
-      </CardFooter>
-    </Card>
-  );
-}
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
@@ -124,14 +51,14 @@ export default async function Home() {
         
         <div className="text-center relative z-10 px-4">
           <div className="mx-auto max-w-4xl">
-             <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-white px-3 py-1 text-sm font-medium text-primary shadow-sm hover:scale-105 transition-transform cursor-default">
+             <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-white dark:bg-card px-3 py-1 text-sm font-medium text-[#152c31] dark:text-primary-foreground shadow-sm hover:scale-105 transition-transform cursor-default">
                 <Sparkles className="mr-2 h-4 w-4 text-amber-500" />
-                <span>Nieuw: Meer dan 20+ nieuwe quizzen beschikbaar!</span>
+                <span className='dark:text-gray-400'>Nieuw: Meer dan 20+ nieuwe quizzen beschikbaar!</span>
               </div>
-            <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl font-serif">
-              Speel gratis <span className="text-primary italic">bijbelquizzen</span> online
+            <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-slate-900 dark:text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-serif">
+              Speel gratis <span className="text-[#152c31] dark:text-[#254952] italic">bijbelquizzen</span> online
             </h1>
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 md:text-xl leading-relaxed font-serif">
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 dark:text-muted-foreground md:text-xl leading-relaxed font-serif">
               Vergroot je bijbelkennis door quizzen over bijbelse personen, belangrijke gebeurtenissen en verschillende thema&apos;s, van Genesis tot Openbaring.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -143,14 +70,14 @@ export default async function Home() {
                 <Link href="#popular">
                     <span className="relative z-10 font-bold text-white tracking-wide drop-shadow-md">Direct Spelen</span>
                      {/* Bubble shine effect */}
-                    <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+                    <div className="absolute top-0 left-0 w-full h-1/2 bg-linear-to-b from-white/10 to-transparent pointer-events-none" />
                 </Link>
               </Button>
               {isLoggedIn ? (
                 <Button 
                     size="lg" 
                     variant="outline"
-                    className="w-full sm:w-auto h-14 px-8 text-base bg-white/40 backdrop-blur-md border-[#152c31]/20 text-[#152c31] rounded-full hover:bg-white/60 hover:text-black transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5" 
+                    className="w-full sm:w-auto h-14 px-8 text-base bg-white/40 backdrop-blur-md border-[#152c31]/20 text-[#152c31] rounded-full hover:bg-white/60 hover:text-black transition-all shadow-lg shadow-black/5 hover:-translate-y-0.5 dark:text-gray-200" 
                     asChild
                 >
                     <Link href="/quizzes">Bekijk alle quizzen</Link>
@@ -174,7 +101,7 @@ export default async function Home() {
       <section id="popular" className="py-20">
         <div className="container mx-auto px-4 max-w-7xl rounded-3xl p-4 md:p-8 animate-float-in">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-[#152d2f] sm:text-4xl font-serif">Populaire Quizzen</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-[#152d2f] dark:text-foreground sm:text-4xl font-serif">Populaire Quizzen</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               De meest gespeelde quizzen van dit moment. Waar begin jij mee?
             </p>
@@ -187,7 +114,7 @@ export default async function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button size="lg" variant="outline" className="px-8 border-2 bg-[#f2f0ea]" asChild>
+            <Button size="lg" variant="outline" className="px-8 border-2 bg-[#f2f0ea] dark:bg-card dark:text-foreground dark:border-border" asChild>
               <Link href="/quizzes">Bekijk Alle Quizzen <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
@@ -198,32 +125,32 @@ export default async function Home() {
       <section className="py-24 relative overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none opacity-40">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-200/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
+            <div className="absolute top-0 right-0 w-125 h-125 bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
+            <div className="absolute bottom-0 left-0 w-125 h-125 bg-amber-200/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
         </div>
 
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <Badge className="mb-4 bg-[#152c31] text-white hover:bg-[#152c31] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border-0">
             Premium Ervaring
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-slate-900 dark:text-foreground tracking-tight">
             Verdiep uw kennis met Premium
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 mb-16 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-600 dark:text-muted-foreground mb-16 max-w-2xl mx-auto leading-relaxed">
               Geen maandelijkse kosten. Eén eenmalige investering voor levenslange toegang tot alle tools, diepgang en voortgang.
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 text-left mb-16">
             {/* Feature 1 */}
-            <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 group">
-                <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                    <BookOpen className="h-7 w-7 text-primary group-hover:text-white" />
+            <div className="bg-white dark:bg-card p-8 rounded-3xl shadow-xl shadow-slate-200/60 dark:shadow-none border border-slate-100 dark:border-border hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 group">
+                <div className="w-14 h-14 bg-primary/5 dark:bg-primary/20 rounded-2xl flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary dark:group-hover:bg-primary group-hover:text-white dark:group-hover:text-primary-foreground transition-colors duration-300">
+                    <BookOpen className="h-7 w-7 text-primary dark:text-primary-foreground group-hover:text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-900">Onbeperkt Toegang</h3>
-                <p className="text-slate-600 leading-relaxed mb-4">
+                <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-foreground">Onbeperkt Toegang</h3>
+                <p className="text-slate-600 dark:text-muted-foreground leading-relaxed mb-4">
                     Speel álle quizzen zonder restricties. Van beginners tot gevorderden, alle categorieën liggen voor u open.
                 </p>
-                <div className="pt-4 border-t border-slate-50 flex items-center text-primary font-bold text-sm">
+                <div className="pt-4 border-t border-slate-50 dark:border-border flex items-center text-primary dark:text-[#254952] font-bold text-sm">
                     Bekijk aanbod <ArrowRight className="ml-2 h-4 w-4" />
                 </div>
             </div>
@@ -241,15 +168,15 @@ export default async function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 group">
-                <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                    <Trophy className="h-7 w-7 text-primary group-hover:text-white" />
+            <div className="bg-white dark:bg-card p-8 rounded-3xl shadow-xl shadow-slate-200/60 dark:shadow-none border border-slate-100 dark:border-border hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 group">
+                <div className="w-14 h-14 bg-primary/5 dark:bg-primary/20 rounded-2xl flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary dark:group-hover:bg-primary group-hover:text-white dark:group-hover:text-primary-foreground transition-colors duration-300">
+                    <Trophy className="h-7 w-7 text-primary dark:text-primary-foreground group-hover:text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">XP & Statistieken</h3>
-                <p className="text-slate-600 leading-relaxed mb-4">
+                <h3 className="text-xl font-bold mb-3 text-foreground">XP & Statistieken</h3>
+                <p className="text-slate-600 dark:text-muted-foreground leading-relaxed mb-4">
                     Track uw groei op een persoonlijk dashboard. Verdien XP, verzamel badges en zie uw resultaten verbeteren.
                 </p>
-                <div className="pt-4 border-t border-slate-50 flex items-center text-primary font-bold text-sm">
+                <div className="pt-4 border-t border-slate-50 dark:border-border flex items-center text-primary dark:text-[#254952] font-bold text-sm">
                     Naar Dashboard <ArrowRight className="ml-2 h-4 w-4" />
                 </div>
             </div>
@@ -267,19 +194,19 @@ export default async function Home() {
                         <Star className="h-4 w-4 fill-current" /> BESTE KEUZE
                     </div>
                     <h3 className="mb-4 font-serif text-3xl font-bold text-white md:text-5xl">
-                        Levenslang <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 italic">Premium</span>
+                        Levenslang <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-200 to-orange-400 italic">Premium</span>
                     </h3>
                     <p className="text-lg text-slate-300">
                         Zeg vaarwel tegen maandelijkse abonnementen. Investeer één keer in je geloofskennis en geniet <strong className="text-white">voor altijd</strong> van onbeperkte toegang.
                     </p>
                     <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-400">
-                         <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-400" /> Geen terugkerende kosten</span>
-                         <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-400" /> Alle toekomstige updates</span>
+                         <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[#254952]" /> Geen terugkerende kosten</span>
+                         <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-[#254952]" /> Alle toekomstige updates</span>
                     </div>
                 </div>
 
                 <div className="flex w-full flex-col items-center gap-4 md:w-auto">
-                    <Button asChild size="lg" className="h-16 w-full rounded-xl bg-gradient-to-r from-orange-400 to-orange-500 px-8 text-lg font-bold text-white shadow-[0_0_20px_rgba(251,146,60,0.4)] hover:shadow-[0_0_30px_rgba(251,146,60,0.6)] hover:scale-105 transition-all md:w-auto border border-orange-300/20">
+                    <Button asChild size="lg" className="h-16 w-full rounded-xl bg-linear-to-r from-orange-400 to-orange-500 px-8 text-lg font-bold text-white shadow-[0_0_20px_rgba(251,146,60,0.4)] hover:shadow-[0_0_30px_rgba(251,146,60,0.6)] hover:scale-105 transition-all md:w-auto border border-orange-300/20">
                         <Link href="/premium">
                             Word Premium Lid <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>

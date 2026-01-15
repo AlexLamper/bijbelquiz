@@ -25,10 +25,10 @@ export default async function PremiumPage() {
             <Sparkles className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
             Premium Toegang
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-[#152d2f]">
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-[#254952] dark:text-gray-200">
             Verdiep uw Studie
           </h1>
-          <p className="text-slate-600 text-xl font-sans max-w-xl mx-auto leading-relaxed">
+          <p className="text-slate-600 dark:text-gray-400 text-xl font-sans max-w-xl mx-auto leading-relaxed">
             Geen abonnement. Geen maandelijkse kosten. <br className="hidden md:block" />
             Eén eenmalige betaling voor levenslange toegang.
           </p>
@@ -37,46 +37,46 @@ export default async function PremiumPage() {
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl w-full items-start">
             {/* Left side: Why Premium */}
             <div className="space-y-8 py-4">
-                <h2 className="text-2xl font-bold font-serif text-[#152d2f]">Wat u krijgt</h2>
+                <h2 className="text-2xl font-bold font-serif text-[#254952] dark:text-gray-200">Wat u krijgt</h2>
                 
                 <div className="space-y-6">
                     <div className="flex gap-4 group">
-                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                        <div className="h-12 w-12 rounded-2xl shadow-md flex items-center justify-center shrink-0 bg-[#152c31] text-white transition-all">
                             <BookOpen className="h-6 w-6" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-slate-900">Diepere Uitleg</h3>
-                            <p className="text-slate-500 text-sm">Na elke vraag ontvangt u theologische context en Bijbelverwijzingen om direct verder te lezen.</p>
+                            <h3 className="font-bold text-[#295058] dark:text-gray-200">Diepere Uitleg</h3>
+                            <p className="text-slate-500 dark:text-gray-300 text-sm">Na elke vraag ontvangt u theologische context en Bijbelverwijzingen om direct verder te lezen.</p>
                         </div>
                     </div>
 
                     <div className="flex gap-4 group">
-                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                        <div className="h-12 w-12 rounded-2xl shadow-md flex items-center justify-center shrink-0 bg-[#152c31] text-white transition-all">
                             <Star className="h-6 w-6" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-slate-900">Premium Content</h3>
-                            <p className="text-slate-500 text-sm">Toegang tot gespecialiseerde quizzen en diepere onderwerpen die niet beschikbaar zijn in de gratis versie.</p>
+                            <h3 className="font-bold text-[#295058] dark:text-gray-200">Premium Content</h3>
+                            <p className="text-slate-500 dark:text-gray-300 text-sm">Toegang tot gespecialiseerde quizzen en diepere onderwerpen die niet beschikbaar zijn in de gratis versie.</p>
                         </div>
                     </div>
 
                     <div className="flex gap-4 group">
-                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                        <div className="h-12 w-12 rounded-2xl shadow-md flex items-center justify-center shrink-0 bg-[#152c31] text-white transition-all">
                             <Trophy className="h-6 w-6" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-slate-900">Geavanceerde Statistieken</h3>
-                            <p className="text-slate-500 text-sm">Track uw groei per Bijbelboek en zie exact waar uw kennis ligt en waar u nog kunt groeien.</p>
+                            <h3 className="font-bold text-[#295058] dark:text-gray-200">Geavanceerde Statistieken</h3>
+                            <p className="text-slate-500 dark:text-gray-300 text-sm">Track uw groei per Bijbelboek en zie exact waar uw kennis ligt en waar u nog kunt groeien.</p>
                         </div>
                     </div>
 
                     <div className="flex gap-4 group">
-                        <div className="h-12 w-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#152c31] group-hover:text-white transition-all">
+                        <div className="h-12 w-12 rounded-2xl shadow-md flex items-center justify-center shrink-0 bg-[#152c31] text-white transition-all">
                             <Zap className="h-6 w-6" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-slate-900">Geen Afleiding</h3>
-                            <p className="text-slate-500 text-sm">Een volledig pure interface zonder advertenties of afleidingen, gericht op Gods woord.</p>
+                            <h3 className="font-bold text-[#295058] dark:text-gray-200">Geen Afleiding</h3>
+                            <p className="text-slate-500 dark:text-gray-300 text-sm">Een volledig pure interface zonder advertenties of afleidingen, gericht op Gods woord.</p>
                         </div>
                     </div>
                 </div>
@@ -88,22 +88,22 @@ export default async function PremiumPage() {
                 <div className="absolute -top-6 -right-6 w-24 h-24 bg-amber-400 rounded-full blur-3xl opacity-20"></div>
                 <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-primary rounded-full blur-3xl opacity-20"></div>
 
-                <Card className="w-full shadow-2xl border-0 bg-white relative overflow-hidden rounded-[32px] flex flex-col">
-                    <div className="p-8 pt-12 text-center border-b border-slate-50 relative overflow-hidden">
+                <Card className="w-full group relative flex flex-col overflow-hidden border-0 bg-white dark:bg-card dark:border dark:border-border shadow-sm transition-all hover:shadow-xl hover:-translate-y-1 rounded-[32px]">
+                    <div className="p-8 pt-12 text-center border-b border-slate-50 dark:border-border relative overflow-hidden">
                         {/* Subtle Background Pattern or Accent */}
                         <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
                             <Sparkles className="h-24 w-24" />
                         </div>
                         
-                        <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-100 border-amber-200 mb-6 font-bold uppercase tracking-widest text-[10px] px-4 py-1">
+                        <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-100 border-amber-200 mb-6 font-bold uppercase tracking-widest text-[10px] px-4 py-1 dark:bg-muted dark:text-muted-foreground dark:border-border">
                             Premium Toegang
                         </Badge>
                         
                         <div className="flex items-baseline justify-center gap-1 mb-2">
-                            <span className="text-2xl font-bold text-slate-400">€</span>
-                            <span className="text-6xl font-bold tracking-tight text-[#152c31]">9,99</span>
+                            <span className="text-2xl font-bold text-slate-400 dark:text-muted-foreground">€</span>
+                            <span className="text-6xl font-bold tracking-tight text-[#152c31] dark:text-gray-200">9,99</span>
                         </div>
-                        <p className="text-slate-500 text-sm font-medium">Levenslang • Eénmalige betaling</p>
+                        <p className="text-slate-500 text-sm font-medium dark:text-muted-foreground">Levenslang • Eénmalige betaling</p>
                     </div>
 
                     <CardContent className="p-8 md:p-10 space-y-8 flex-1">
@@ -116,10 +116,10 @@ export default async function PremiumPage() {
                                 { text: "Steun de BijbelQuiz missie", icon: Check }
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-4">
-                                    <div className="mt-0.5 h-5 w-5 rounded-full bg-[#152c31]/5 flex items-center justify-center shrink-0">
-                                        <item.icon className="h-3 w-3 text-[#152c31]" />
+                                    <div className="mt-0.5 h-5 w-5 rounded-full bg-[#152c31]/5 dark:bg-muted flex items-center justify-center shrink-0">
+                                        <item.icon className="h-3 w-3 text-[#152c31] dark:text-emerald-400" />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-600 leading-tight">{item.text}</span>
+                                    <span className="text-sm font-medium text-slate-600 leading-tight dark:text-muted-foreground">{item.text}</span>
                                 </li>
                             ))}
                         </ul>
@@ -139,8 +139,12 @@ export default async function PremiumPage() {
                             <div className="space-y-4 pt-2">
                                 {session ? (
                                     <form action="/api/stripe/checkout" method="POST">
-                                        <Button className="w-full h-14 text-lg font-bold shadow-lg shadow-[#152c31]/10 bg-[#152c31] hover:bg-black rounded-2xl transition-all duration-300 transform hover:-translate-y-0.5" size="lg">
-                                            Nu Activeren
+                                        <Button
+                                            variant="default"
+                                            size="lg"
+                                            className="w-full h-14 text-lg font-bold bg-[#152c31] hover:bg-[#1f3e44] text-white border-0 shadow-sm transition-all rounded-2xl"
+                                        >
+                                            Word Premium
                                         </Button>
                                     </form>
                                 ) : (
@@ -155,9 +159,9 @@ export default async function PremiumPage() {
                         )}
                     </CardContent>
                     
-                    <CardFooter className="bg-slate-50/80 p-6 flex flex-col items-center border-t border-slate-100">
-                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest flex items-center gap-2">
-                            <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
+                    <CardFooter className="bg-slate-50/80 dark:bg-muted/80 p-6 flex flex-col items-center border-t border-slate-100 dark:border-border">
+                        <p className="text-[10px] text-slate-400 dark:text-muted-foreground font-bold uppercase tracking-widest flex items-center gap-2">
+                            <ShieldCheck className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
                             Gegarandeerd veilige betaling
                         </p>
                     </CardFooter>
@@ -167,8 +171,8 @@ export default async function PremiumPage() {
 
         {/* FAQ/Bottom Quote Section */}
         <div className="mt-32 max-w-3xl text-center">
-            <h3 className="text-2xl font-serif font-bold text-[#152d2f] mb-6 italic">&quot;Onderzoekt de Schriften; want gij meent in dezelve het eeuwige leven te hebben.&quot;</h3>
-            <p className="text-slate-500 leading-relaxed font-serif text-lg italic">
+            <h3 className="text-2xl font-serif font-bold text-[#152d2f] dark:text-gray-200 mb-6 italic">&quot;Onderzoekt de Schriften; want gij meent in dezelve het eeuwige leven te hebben.&quot;</h3>
+            <p className="text-slate-500 dark:text-gray-400 leading-relaxed font-serif text-lg italic">
                 De volledige opbrengst van Premium wordt gebruikt voor het platform: <br />
                 Nieuwe vragen, betere techniek en meer tools voor Bijbelstudie.
             </p>

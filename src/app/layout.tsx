@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -74,7 +75,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="nl">
+    <html lang="nl" suppressHydrationWarning>
       <head>
           <script
             type="application/ld+json"
@@ -84,15 +85,22 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${merriweather.variable} font-sans antialiased bg-background text-foreground`}
       >
-        <Providers>
-          <div className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-1">
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </Providers>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+          <Providers>
+            <div className="flex flex-col min-h-screen">
+              <Navbar />
+              <main className="flex-1">
+                {children}
+              </main>
+              <Footer />
+            </div>
+          </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

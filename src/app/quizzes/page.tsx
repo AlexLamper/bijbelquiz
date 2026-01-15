@@ -3,14 +3,13 @@ import connectDB from '@/lib/db';
 import Quiz from '@/models/Quiz';
 import Category, { ICategory } from '@/models/Category';
 import Link from 'next/link';
-import { IQuiz } from '@/models/Quiz';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { ArrowRight, CheckCircle2, Lock, Filter, Star, Search } from 'lucide-react';
+import { Filter, Star, Search } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { Badge } from '@/components/ui/badge';
+import QuizCard, { QuizItem } from '@/components/QuizCard';
 
 export const metadata = {
   title: 'Alle Quizzen | BijbelQuiz',
@@ -60,8 +59,8 @@ export default async function QuizzesPage({
     <div className="container px-4 py-8 md:py-12 mx-auto max-w-7xl">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
-          <h1 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-2">Quiz Overzicht</h1>
-          <p className="text-slate-600">
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-2 dark:text-foreground">Quiz Overzicht</h1>
+          <p className="text-slate-600 dark:text-muted-foreground">
             Kies uit {quizzes.length} uitdagende quizzen om je kennis te testen.
           </p>
         </div>
@@ -73,11 +72,11 @@ export default async function QuizzesPage({
             {/* Desktop Sticky Sidebar */}
             <div className="hidden lg:block sticky top-24 space-y-6">
                 <div>
-                    <h3 className="font-serif font-bold text-slate-900 mb-4 px-2">Categorieën</h3>
+                    <h3 className="font-serif font-bold text-slate-900 mb-4 px-2 dark:text-foreground">Categorieën</h3>
                     <div className="space-y-1">
                          <Button 
                             variant={currentCategory === 'all' ? "secondary" : "ghost"} 
-                            className={`w-full justify-start ${currentCategory === 'all' ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'}`}
+                            className={`w-full justify-start ${currentCategory === 'all' ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
                             asChild
                         >
                             <Link href="/quizzes">Alle Categorieën</Link>
@@ -86,7 +85,7 @@ export default async function QuizzesPage({
                             <Button
                                 key={cat._id.toString()}
                                 variant={currentCategory === cat.slug ? "secondary" : "ghost"}
-                                className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'}`}
+                                className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
                                 asChild
                             >
                                 <Link href={`/quizzes?category=${cat.slug}`}>
@@ -175,54 +174,9 @@ export default async function QuizzesPage({
                  </div>
              ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-                    {quizzes.map((quiz: IQuiz) => {
-                        const isLocked = quiz.isPremium && !isPremiumUser;
-                        return (
-                            <Card key={quiz._id.toString()} className="flex flex-col hover:shadow-lg transition-shadow border-slate-200 group relative overflow-hidden">
-                                {quiz.isPremium && (
-                                     <div className="absolute top-0 right-0 bg-amber-400 text-amber-900 text-[10px] font-bold px-2 py-1 rounded-bl-lg z-10 flex items-center gap-1 shadow-sm">
-                                         <Star className="h-3 w-3 fill-current" /> PREMIUM
-                                     </div>
-                                )}
-                                <CardHeader className="pb-3">
-                                    <div className="flex justify-between items-start">
-                                        <Badge variant="outline" className="text-xs bg-slate-50 font-normal mb-2">
-                                            {(quiz.categoryId as ICategory)?.title || 'Algemeen'}
-                                        </Badge>
-                                    </div>
-                                    <CardTitle className="text-lg group-hover:text-primary transition-colors leading-tight">
-                                        {quiz.title}
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className="flex-1">
-                                    <p className="text-sm text-slate-500 line-clamp-3 mb-4">
-                                        {quiz.description}
-                                    </p>
-                                    <div className="flex items-center gap-4 text-xs text-muted-foreground mt-auto">
-                                        <div className="flex items-center gap-1">
-                                            <CheckCircle2 className="h-3.5 w-3.5" />
-                                            <span>{quiz.questions?.length || 5} vragen</span>
-                                        </div>
-                                    </div>
-                                </CardContent>
-                                <CardFooter className="pt-0">
-                                    <Button 
-                                        className={`w-full ${isLocked ? 'bg-slate-100 text-slate-500 hover:bg-slate-200' : ''}`} 
-                                        variant={isLocked ? "ghost" : "default"} 
-                                        asChild
-                                    >
-                                        <Link href={`/quiz/${quiz.slug}`}>
-                                            {isLocked ? (
-                                                <span className="flex items-center gap-2"><Lock className="h-4 w-4" /> Vergrendeld</span>
-                                            ) : (
-                                                <span className="flex items-center gap-2">Start Quiz <ArrowRight className="h-4 w-4" /></span>
-                                            )}
-                                        </Link>
-                                    </Button>
-                                </CardFooter>
-                            </Card>
-                        )
-                    })}
+                    {quizzes.map((quiz: QuizItem) => (
+                        <QuizCard key={quiz._id.toString()} quiz={quiz} isPremiumUser={isPremiumUser} />
+                    ))}
                 </div>
              )}
         </div>

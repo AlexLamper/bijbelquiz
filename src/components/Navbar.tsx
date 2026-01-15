@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import { Button } from '@/components/ui/button';
 import { LogOut, User as UserIcon, Star, Menu, X, ChevronRight } from 'lucide-react';
+import { ModeToggle } from '@/components/ModeToggle';
 
 export default function Navbar() {
   const { data: session, status } = useSession();
@@ -46,6 +47,7 @@ export default function Navbar() {
            </nav>
 
           <div className="flex items-center gap-3">
+            <ModeToggle />
             {(!session || !session.user?.isPremium) && (
               <Link href="/premium" className="hidden sm:block">
                 <Button variant="default" size="sm" className="bg-[#152c31] hover:bg-[#1f3e44] text-white border-0 shadow-sm transition-all">

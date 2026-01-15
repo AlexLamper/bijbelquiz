@@ -11,7 +11,7 @@ export default function ContactPage() {
   const faqItems = [
       {
           title: "Is BijbelQuiz gratis?",
-          content: "Ja, je kunt gratis quizzen spelen. Voor toegang tot gedetailleerde statistieken, onbeperkte historie en exclusieve badges bieden we een Premium lidmaatschap aan."
+          content: "Ja, je kunt gratis quizzen spelen. Voor toegang tot gedetailleerde statistieken, uitleg bij antwoorden en exclusieve badges bieden we een Premium lidmaatschap aan."
       },
       {
           title: "Hoe werkt het Premium lidmaatschap?",
