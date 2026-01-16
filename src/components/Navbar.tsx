@@ -41,6 +41,7 @@ export default function Navbar() {
            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700 dark:text-gray-300">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <Link href="/quizzes" className="hover:text-primary transition-colors">Alle Quizzen</Link>
+              <Link href="/leaderboard" className="hover:text-primary transition-colors">Ranglijst</Link>
               {session && (
                  <Link href="/dashboard" className="hover:text-primary transition-colors">Mijn Dashboard</Link>
               )}
@@ -117,6 +118,9 @@ export default function Navbar() {
                 </Link>
                 <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors">
                     Alle Quizzen
+                </Link>
+                <Link href="/leaderboard" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors">
+                    Ranglijst
                 </Link>
                 {session && (
                     <Link href="/dashboard" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-white border border-slate-200 shadow-sm rounded-xl font-medium text-slate-700 active:scale-[0.99] transition-all hover:border-primary/20 hover:shadow-md">
