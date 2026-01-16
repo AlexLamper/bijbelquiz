@@ -42,13 +42,21 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
-    title: quiz.title,
-    description: quiz.description || `Test je kennis over ${quiz.title}. Een interactieve ${categoryTitle} quiz op BijbelQuiz.com.`,
+    title: `${quiz.title} - ${categoryTitle} Quiz | BijbelQuiz`,
+    description: quiz.description || `Test je kennis over ${quiz.title}. Een interactieve ${categoryTitle} quiz met vragen over de Bijbel. Gratis spelen op BijbelQuiz.com.`,
+    keywords: [`${quiz.title} quiz`, `${categoryTitle} quiz`, 'bijbelquiz', 'online quiz', 'christelijke kennis', 'bijbelstudie'],
     openGraph: {
-      title: `${quiz.title} | BijbelQuiz`,
-      description: quiz.description || `Doe de ${quiz.title} quiz!`,
-      type: 'website', // or 'article' could fit
+      title: `${quiz.title} | De Ultieme Bijbelquiz`,
+      description: quiz.description || `Doe de ${quiz.title} quiz en zie direct je score!`,
+      type: 'website',
+      url: `https://www.bijbelquiz.com/quiz/${quiz.slug || quiz._id}`,
       images: previousImages,
+      siteName: 'BijbelQuiz',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: quiz.title,
+      description: quiz.description || `Speel de ${quiz.title} quiz nu op BijbelQuiz.com`,
     },
     alternates: {
       canonical: `/quiz/${quiz.slug || quiz._id}`,

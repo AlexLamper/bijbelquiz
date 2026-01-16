@@ -10,10 +10,20 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import QuizCard, { QuizItem } from '@/components/QuizCard';
 import MobileQuizFilter from '@/components/MobileQuizFilter';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Alle Quizzen | BijbelQuiz',
-  description: 'Ontdek onze uitgebreide collectie Bijbelquizzen voor alle niveaus.',
+export const metadata: Metadata = {
+  title: 'Alle Bijbelquizzen - Kies je Categorie & Niveau | BijbelQuiz',
+  description: 'Overzicht van alle beschikbare Bijbelquizzen. Filter op categorie, speel direct en test je kennis van het Oude en Nieuwe Testament.',
+  keywords: ['bijbelquizzen', 'quiz overzicht', 'bijbelvragen', 'geloofsquiz', 'online bijbelstudie'],
+  alternates: {
+    canonical: '/quizzes',
+  },
+  openGraph: {
+    title: 'Alle Bijbelquizzen Spelen - Gratis & Premium',
+    description: 'Zoek en speel de beste Bijbelquizzen online. Van beginners tot experts.',
+    url: 'https://www.bijbelquiz.com/quizzes',
+  }
 };
 
 export const dynamic = 'force-dynamic';
@@ -32,7 +42,7 @@ async function getData(categorySlug?: string) {
 
   const quizzes = await Quiz.find(categoryFilter)
     .populate('categoryId')
-    .sort({ isPremium: 1, title: 1 }) // Premium first slightly? Or mixing? Let's sort simply.
+    .sort({ isPremium: 1, title: 1 })
     .lean();
 
   const categories = await Category.find({ isActive: true }).sort({ sortOrder: 1 }).lean();

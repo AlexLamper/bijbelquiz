@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacybeleid - BijbelQuiz',
+  title: 'Privacybeleid | BijbelQuiz',
+  description: 'Hoe wij omgaan met jouw gegevens en privacy bij BijbelQuiz. Lees ons privacy statement.',
+  alternates: { canonical: '/privacy-policy' }
 }
 
 export default function PrivacyPage() {

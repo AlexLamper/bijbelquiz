@@ -8,8 +8,17 @@ import { Check, ShieldCheck, Sparkles, BookOpen, Star, Trophy, ArrowRight, Zap }
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Premium Lidmaatschap - Word een Bijbelexpert',
-  description: 'Download onbeperkt quizzen, bekijk gedetailleerde statistieken en steun BijbelQuiz.com met een eenmalige bijdrage.',
+  title: 'Premium Lidmaatschap | Ontgrendel Alles op BijbelQuiz',
+  description: 'Word Premium en krijg onbeperkt toegang tot alle Bijbelquizzen, diepgaande studie-uitleg en uitgebreide statistieken. Investeer in je geloofskennis.',
+  keywords: ['premium bijbelquiz', 'bijbelstudie abonnement', 'geloofsverdieping', 'onbeperkt quizzen', 'steun bijbelquiz'],
+  alternates: {
+    canonical: '/premium',
+  },
+  openGraph: {
+     title: 'Premium Lidmaatschap - BijbelQuiz',
+     description: 'Upgrade naar Premium voor de ultieme Bijbelquiz ervaring. Onbeperkt spelen en leren.',
+     url: 'https://www.bijbelquiz.com/premium',
+  }
 };
 
 export default async function PremiumPage() {

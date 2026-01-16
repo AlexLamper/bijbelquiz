@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Veelgestelde Vragen - BijbelQuiz',
+  title: 'Hulp & Support | BijbelQuiz Helpdesk',
+  description: 'Vind antwoorden voor BijbelQuiz problemen, betalingen en spelregels.',
+  alternates: { canonical: '/help' }
 }
 
 export default function HelpPage() {

@@ -8,6 +8,15 @@ import User from '@/models/User';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import SessionRefresher from './SessionRefresher';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Betaling Geslaagd - Welkom bij Premium',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 interface PageProps {
   searchParams: Promise<{ session_id?: string }>;

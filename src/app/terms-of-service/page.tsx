@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Algemene Voorwaarden - BijbelQuiz',
+  title: 'Algemene Voorwaarden | BijbelQuiz',
+  description: 'Lees onze algemene voorwaarden voor het gebruik van BijbelQuiz services en producten.',
+  alternates: { canonical: '/terms-of-service' }
 }
 
 export default function TermsPage() {

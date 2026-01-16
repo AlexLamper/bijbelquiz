@@ -8,6 +8,20 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import QuizCard, { QuizItem } from '@/components/QuizCard';
 import { unstable_cache } from 'next/cache';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'BijbelQuiz - Gratis Online Bijbelquizzen & Geloofsverdieping',
+  description: 'Test je kennis van de Bijbel met honderden gratis vragen. Van makkelijke quizzen voor beginners tot diepgaande studies voor gevorderden. Begin direct!',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'BijbelQuiz - Gratis Online Bijbelkennis Testen',
+    description: 'Hoe goed ken jij de Bijbel? Doe de gratis test en leer meer over het geloof via interactieve quizzen.',
+    url: 'https://www.bijbelquiz.com',
+  },
+};
 
 // Removed force-dynamic to allow potential partial caching where possible
 // export const dynamic = 'force-dynamic';

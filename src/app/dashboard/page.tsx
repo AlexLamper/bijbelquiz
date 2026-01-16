@@ -3,7 +3,6 @@ import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import connectDB from "@/lib/db";
 import UserProgress from "@/models/UserProgress";
-// Ensure models are registered (Next.js hot reload edge case)
 import "@/models/Quiz"; 
 import "@/models/Category"; 
 
@@ -12,6 +11,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Lock, Trophy, Calendar, Star, TrendingUp, BookOpen } from "lucide-react";
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Mijn Dashboard - BijbelQuiz',
+  description: 'Bekijk je voortgang, streaks en behaalde badges.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 // Helper to calc streak
 function calculateStreak(dates: Date[]): number {
@@ -39,11 +48,6 @@ function calculateStreak(dates: Date[]): number {
     }
     return streak;
 }
-
-export const metadata = {
-    title: 'Mijn Dashboard | BijbelQuiz',
-    description: 'Bekijk uw studievoortgang en statistieken.',
-};
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);

@@ -4,7 +4,14 @@ import { Mail, HelpCircle } from 'lucide-react'
 import { SimpleAccordion } from '@/components/ui/accordion'
 
 export const metadata: Metadata = {
-  title: 'Contact & FAQ - BijbelQuiz',
+  title: 'Contact & Veelgestelde Vragen | BijbelQuiz Support',
+  description: 'Heb je een vraag over BijbelQuiz? Bekijk onze FAQ of neem contact op. Wij helpen je graag verder.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+      title: 'Contact - BijbelQuiz',
+      description: 'Stel je vraag of bekijk antwoorden op de supportpagina.',
+      url: 'https://www.bijbelquiz.com/contact'
+  }
 }
 
 export default function ContactPage() {
