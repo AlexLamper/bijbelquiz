@@ -4,7 +4,7 @@
 
 **BijbelQuiz** is een online platform waar je volledig gratis bijbelquizzen kunt spelen. Er is een breed aanbod aan quizzen in verschillende categorieën, leuk om te spelen met vrienden of familie, maar ook gewoon alleen. Door het spelen van deze quizzen vergroot je op een interactieve en toegankelijke manier je kennis van bijbelse personen, gebeurtenissen, plaatsen en thema’s.
 
-Webite: [https://www.bijbelquiz.com](https://www.bijbelquiz.com)
+Website: [https://www.bijbelquiz.com](https://www.bijbelquiz.com)
 
 ## 🌟 Waarom BijbelQuiz?
 
