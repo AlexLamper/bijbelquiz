@@ -80,6 +80,14 @@ export default async function QuizPage({ params }: PageProps) {
 
   const session = await getServerSession(authOptions);
 
+  // Status check for non-admins
+  // Allow if status is approved OR if status is missing (legacy)
+  if (quiz.status && quiz.status !== 'approved') {
+    if (!session || session.user.role !== 'admin') {
+       notFound();
+    }
+  }
+
   if (quiz.isPremium) {
     if (!session) {
       redirect(`/api/auth/signin?callbackUrl=/quiz/${id}`);

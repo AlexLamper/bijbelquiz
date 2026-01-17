@@ -20,6 +20,8 @@ export interface IQuiz extends Document {
   categoryId: mongoose.Types.ObjectId | ICategory; // Reference to Category
   difficulty: 'easy' | 'medium' | 'hard';
   isPremium: boolean;
+  status: 'draft' | 'pending' | 'approved' | 'rejected';
+  createdBy?: mongoose.Types.ObjectId;
   questions: IQuestion[];
   createdAt: Date;
 }
@@ -43,6 +45,8 @@ const QuizSchema: Schema = new Schema({
   categoryId: { type: Schema.Types.ObjectId, ref: 'Category', required: true },
   difficulty: { type: String, enum: ['easy', 'medium', 'hard'], default: 'medium' },
   isPremium: { type: Boolean, default: false },
+  status: { type: String, enum: ['draft', 'pending', 'approved', 'rejected'], default: 'approved' },
+  createdBy: { type: Schema.Types.ObjectId, ref: 'User' },
   questions: { type: [QuestionSchema], default: [] },
 }, { timestamps: true });
 

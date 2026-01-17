@@ -45,6 +45,9 @@ export default function Navbar() {
               {session && (
                  <Link href="/dashboard" className="hover:text-primary transition-colors">Mijn Dashboard</Link>
               )}
+              {session?.user?.role === 'admin' && (
+                 <Link href="/admin/quizzes" className="text-primary font-bold hover:opacity-80 transition-colors">Admin</Link>
+              )}
            </nav>
 
           <div className="flex items-center gap-3">
@@ -126,6 +129,12 @@ export default function Navbar() {
                     <Link href="/dashboard" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-white border border-slate-200 shadow-sm rounded-xl font-medium text-slate-700 active:scale-[0.99] transition-all hover:border-primary/20 hover:shadow-md">
                          Mijn Dashboard
                          <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-primary transition-colors" />
+                    </Link>
+                )}
+                {session?.user?.role === 'admin' && (
+                    <Link href="/admin/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-primary/5 border border-primary/20 shadow-sm rounded-xl font-bold text-primary active:scale-[0.99] transition-all hover:bg-primary/10">
+                         Admin Dashboard
+                         <ChevronRight className="h-4 w-4 text-primary opacity-60" />
                     </Link>
                 )}
                  {(!session || !session.user?.isPremium) && (

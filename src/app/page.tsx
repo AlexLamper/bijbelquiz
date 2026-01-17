@@ -31,7 +31,8 @@ const getQuizzes = unstable_cache(
     try {
       await connectDB();
       // Get a good mix of quizzes. "Popular" mocked by just taking the first 9 for now.
-      const popularQuizzes = await Quiz.find({})
+      const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+      const popularQuizzes = await Quiz.find(statusFilter)
           .populate('categoryId')
           .limit(9)
           .sort({ isPremium: 1, sortOrder: 1 }) // Show free first or intentional mix

@@ -40,7 +40,10 @@ async function getData(categorySlug?: string) {
     }
   }
 
-  const quizzes = await Quiz.find(categoryFilter)
+  // Allow approved or legacy (undefined status)
+  const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+
+  const quizzes = await Quiz.find({ ...categoryFilter, ...statusFilter })
     .populate('categoryId')
     .sort({ isPremium: 1, title: 1 })
     .lean();

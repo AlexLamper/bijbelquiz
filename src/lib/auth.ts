@@ -48,6 +48,7 @@ export const authOptions: NextAuthOptions = {
           email: user.email,
           name: user.name,
           isPremium: user.isPremium,
+          role: user.role,
           image: user.image,
         };
       }
@@ -90,10 +91,12 @@ export const authOptions: NextAuthOptions = {
           if (dbUser) {
             token.id = dbUser._id.toString();
             token.isPremium = dbUser.isPremium;
+            token.role = dbUser.role;
           }
         } else {
           token.id = user.id;
           token.isPremium = user.isPremium;
+          token.role = user.role;
         }
       }
 
@@ -105,6 +108,7 @@ export const authOptions: NextAuthOptions = {
           const dbUser = await User.findById(token.id);
           if (dbUser) {
             token.isPremium = dbUser.isPremium;
+            token.role = dbUser.role;
           }
         }
       }
@@ -115,6 +119,7 @@ export const authOptions: NextAuthOptions = {
         if (token) {
             session.user.id = token.id;
             session.user.isPremium = token.isPremium;
+            session.user.role = token.role;
         }
         return session;
     },
