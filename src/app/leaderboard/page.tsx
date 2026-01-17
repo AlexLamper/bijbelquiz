@@ -91,18 +91,18 @@ export default async function LeaderboardPage() {
     <div className="container px-4 py-8 md:py-12 mx-auto max-w-4xl">
       <div className="text-center mb-10 space-y-4">
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#152c31] dark:text-foreground inline-flex items-center gap-3 justify-center">
-            <Trophy className="h-10 w-10 text-amber-500 fill-amber-500" />
+            <Medal className="h-10 w-10 text-amber-500" />
             Ranglijst
         </h1>
         <p className="text-lg text-slate-600 dark:text-muted-foreground max-w-2xl mx-auto">
-          De meest actieve en deskundige bijbelkenners op een rij. 
+          Bekijk wie de meeste punten heeft behaald. 
           Speel quizzen om punten te verdienen en klim naar de top!
         </p>
       </div>
 
       <Card className="border-border/50 shadow-lg bg-card/50 backdrop-blur-sm">
-        <CardHeader className="bg-slate-50/50 dark:bg-slate-900/50 border-b border-border/50 pb-4">
-            <div className="flex justify-between items-center">
+        <CardHeader className="pb-0">
+            <div className="flex justify-between items-center mb-4">
                 <div>
                    <CardTitle className="font-serif text-xl">Top 50 Spelers</CardTitle>
                    <CardDescription>Gerangschikt op totaal aantal punten</CardDescription>
@@ -120,7 +120,7 @@ export default async function LeaderboardPage() {
             ) : (
                 <div className="overflow-x-auto">
                     <table className="w-full text-left text-sm">
-                        <thead className="bg-slate-50 dark:bg-slate-800/50 text-slate-500 dark:text-slate-400 font-medium border-b border-border/50">
+                        <thead className="text-slate-500 dark:text-slate-400 font-medium border-b border-border/50">
                             <tr>
                                 <th className="px-6 py-4 w-16 text-center">#</th>
                                 <th className="px-6 py-4">Speler</th>

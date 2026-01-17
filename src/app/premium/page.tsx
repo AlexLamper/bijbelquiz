@@ -181,10 +181,6 @@ export default async function PremiumPage() {
         {/* FAQ/Bottom Quote Section */}
         <div className="mt-32 max-w-3xl text-center">
             <h3 className="text-2xl font-serif font-bold text-[#152d2f] dark:text-gray-200 mb-6 italic">&quot;Onderzoekt de Schriften; want gij meent in dezelve het eeuwige leven te hebben.&quot;</h3>
-            <p className="text-slate-500 dark:text-gray-400 leading-relaxed font-serif text-lg italic">
-                De volledige opbrengst van Premium wordt gebruikt voor het platform: <br />
-                Nieuwe vragen, betere techniek en meer tools voor Bijbelstudie.
-            </p>
         </div>
       </main>
     </div>

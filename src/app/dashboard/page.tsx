@@ -9,7 +9,7 @@ import "@/models/Category";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Lock, Trophy, Calendar, Star, TrendingUp, BookOpen, Plus } from "lucide-react";
+import { Lock, Trophy, Calendar, Star, TrendingUp, BookOpen, Plus, ShieldCheck } from "lucide-react";
 import Link from 'next/link';
 import { Metadata } from 'next';
 
@@ -159,11 +159,11 @@ export default async function DashboardPage() {
                     <Plus className="h-4 w-4" /> <span>Maak Quiz</span>
                 </Link>
              </Button>
-             <Button asChild className="bg-[#152c31] hover:bg-[#1f3e44] text-white shadow-lg border-0 transition-transform hover:scale-105">
-               <Link href="/premium">
-                  <Star className="mr-2 h-4 w-4 fill-white text-amber-400" /> Word Premium
-               </Link>
-             </Button>
+                         <Button asChild className="bg-[#152c31] hover:bg-[#1f3e44] text-white shadow-lg border-0 transition-transform hover:scale-105">
+                             <Link href="/premium">
+                                    <ShieldCheck className="mr-2 h-4 w-4 text-emerald-500" /> Word Premium
+                             </Link>
+                         </Button>
            </div>
         )}
         {isPremium && (
@@ -325,7 +325,7 @@ export default async function DashboardPage() {
         <div className="md:col-span-8">
              {/* Detailed Analytics (Locked for free users) */}
              <Card className={`overflow-hidden h-full ${!isPremium ? 'border-dashed' : ''}`}>
-                <CardHeader className={`${!isPremium ? 'bg-muted/30' : ''}`}>
+                <CardHeader>
                     <div className="flex justify-between items-center">
                         <div className="space-y-1">
                              <CardTitle className="font-serif flex items-center gap-2 text-xl">
