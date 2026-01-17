@@ -110,10 +110,15 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
 
         if (!res.ok) throw new Error("Er ging iets mis");
 
-        await res.json();
+        const data = await res.json();
         
-        toast.success("Quiz succesvol aangemaakt en gepubliceerd!");
-        router.push('/admin/quizzes');
+        if (data.status === 'approved') {
+            toast.success("Quiz succesvol aangemaakt en gepubliceerd!");
+        } else {
+            toast.success("Quiz ingediend! Hij wordt beoordeeld door een moderator.");
+        }
+
+        router.push('/dashboard');
         router.refresh();
 
     } catch (error) {
@@ -191,7 +196,7 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
         <div className="space-y-4">
              <div className="flex items-center justify-between">
                 <h2 className="text-2xl font-serif font-bold">Vragen ({questions.length})</h2>
-                <Button type="button" onClick={addQuestion} variant="outline" className="gap-2">
+                <Button type="button" onClick={addQuestion} variant="outline" className="gap-2 bg-white">
                     <Plus className="h-4 w-4" /> Vraag Toevoegen
                 </Button>
              </div>

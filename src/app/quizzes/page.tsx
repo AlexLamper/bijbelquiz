@@ -5,7 +5,7 @@ import Category, { ICategory } from '@/models/Category';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Star, Search } from 'lucide-react';
+import { Star, Search, Plus } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import QuizCard, { QuizItem } from '@/components/QuizCard';
@@ -77,6 +77,11 @@ export default async function QuizzesPage({
             Kies uit {quizzes.length} uitdagende quizzen om je kennis te testen.
           </p>
         </div>
+        <Button asChild className="bg-primary hover:bg-primary/90">
+             <Link href="/quizzes/create" className="flex items-center gap-2">
+                 <Plus className="h-4 w-4" /> Maak eigen quiz
+             </Link>
+        </Button>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">

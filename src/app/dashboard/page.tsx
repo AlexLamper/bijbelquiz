@@ -9,7 +9,7 @@ import "@/models/Category";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Lock, Trophy, Calendar, Star, TrendingUp, BookOpen } from "lucide-react";
+import { Lock, Trophy, Calendar, Star, TrendingUp, BookOpen, Plus } from "lucide-react";
 import Link from 'next/link';
 import { Metadata } from 'next';
 
@@ -153,11 +153,25 @@ export default async function DashboardPage() {
           </p>
         </div>
         {!isPremium && (
-           <Button asChild className="bg-[#152c31] hover:bg-[#1f3e44] text-white shadow-lg border-0 transition-transform hover:scale-105">
-             <Link href="/premium">
-                <Star className="mr-2 h-4 w-4 fill-white text-amber-400" /> Word Premium
-             </Link>
-           </Button>
+           <div className="flex gap-2">
+             <Button asChild className="space-x-2 bg-primary hover:bg-primary/90">
+                <Link href="/quizzes/create">
+                    <Plus className="h-4 w-4" /> <span>Maak Quiz</span>
+                </Link>
+             </Button>
+             <Button asChild className="bg-[#152c31] hover:bg-[#1f3e44] text-white shadow-lg border-0 transition-transform hover:scale-105">
+               <Link href="/premium">
+                  <Star className="mr-2 h-4 w-4 fill-white text-amber-400" /> Word Premium
+               </Link>
+             </Button>
+           </div>
+        )}
+        {isPremium && (
+             <Button asChild className="space-x-2 bg-primary hover:bg-primary/90">
+                <Link href="/quizzes/create">
+                    <Plus className="h-4 w-4" /> <span>Maak Quiz</span>
+                </Link>
+             </Button>
         )}
       </div>
 

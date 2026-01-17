@@ -11,10 +11,6 @@ export async function POST(req: NextRequest) {
     return new NextResponse("Unauthorized", { status: 401 });
   }
 
-  if (session.user.role !== 'admin') {
-    return new NextResponse("Forbidden", { status: 403 });
-  }
-
   try {
     const body = await req.json();
     const { title, description, categoryId, questions, difficulty } = body;
@@ -24,6 +20,9 @@ export async function POST(req: NextRequest) {
     }
 
     await connectDB();
+
+    const role = session.user.role;
+    const initialStatus = role === 'admin' ? 'approved' : 'pending';
 
     // Basic slug generation
     const baseSlug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
@@ -43,7 +42,7 @@ export async function POST(req: NextRequest) {
       categoryId,
       difficulty: difficulty || 'medium',
       isPremium: false, // Default to free
-      status: 'approved', // Admins created quizzes are approved by default
+      status: initialStatus,
       createdBy: session.user.id,
       questions
     });

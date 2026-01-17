@@ -18,19 +18,14 @@ export default async function CreateQuizPage() {
     redirect('/login?callbackUrl=/quizzes/create');
   }
 
-  // Check for admin role
-  if (session.user.role !== 'admin') {
-    redirect('/');
-  }
-
   await connectDB();
   const categories = await Category.find({ isActive: true }).lean();
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
         <div className="mb-8">
-            <h1 className="text-3xl font-serif font-bold text-foreground">Nieuwe Quiz Toevoegen</h1>
-            <p className="text-muted-foreground">Beheer de content van het platform. Nieuwe quizzen zijn direct zichtbaar.</p>
+            <h1 className="text-3xl font-serif font-bold text-foreground">Nieuwe Quiz Maken</h1>
+            <p className="text-muted-foreground">Deel jouw kennis. Je quiz wordt na indiening beoordeeld door een moderator.</p>
         </div>
         
         <QuizCreatorForm categories={JSON.parse(JSON.stringify(categories))} />
