@@ -13,6 +13,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
   const staticPages = [
     '',
+    '/quizzes',
+    '/leaderboard',
     '/premium',
     '/login',
     '/register',
@@ -24,12 +26,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1 : 0.8,
+    priority: route === '' ? 1 : (route === '/quizzes' ? 0.9 : 0.8),
   }))
 
   try {
     await connectDB();
-    const quizzes = await Quiz.find({}).select('slug updatedAt').lean();
+    // Only include approved quizzes in the sitemap to avoid 404s for Google
+    // when accessing draft or pending quizzes.
+    const quizzes = await Quiz.find({ 
+      status: 'approved' 
+    }).select('slug updatedAt').lean();
 
     const quizPages = quizzes.map((quiz: QuizDocument) => ({
       url: `${baseUrl}/quiz/${quiz.slug}`,
