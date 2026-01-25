@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius: 0.5rem;
+  
+  --background: hsl(44 26% 89%); /* #eae6db */
+  --foreground: hsl(20 14% 4%);
+
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(20 14% 4%);
+
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(20 14% 4%);
+
+  --primary: hsl(182 38% 13%); /* #152d2f */
+  --primary-foreground: hsl(0 0% 100%);
+
+  --secondary: hsl(35 84% 62%); /* #f5a623 */
+  --secondary-foreground: hsl(20 14% 4%);
+
+  --muted: hsl(44 15% 82%);
+  --muted-foreground: hsl(20 14% 35%);
+
+  --accent: hsl(35 84% 62% / 0.1);
+  --accent-foreground: hsl(20 14% 4%);
+
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+
+  --border: hsl(24 5.7% 82.9%);
+  --input: hsl(24 5.7% 82.9%);
+  --ring: hsl(24 5.7% 82.9%);
+  
+  --animate-float-in: fade-in 0.6s ease-out forwards, slide-in-bottom 0.6s ease-out forwards;
+}
+
+@theme dark {
+  --background: hsl(20 14.3% 4.1%);
+  --foreground: hsl(60 9.1% 97.8%);
+
+  --card: hsl(20 14.3% 4.1%);
+  --card-foreground: hsl(60 9.1% 97.8%);
+
+  --popover: hsl(20 14.3% 4.1%);
+  --popover-foreground: hsl(60 9.1% 97.8%);
+
+  --primary: hsl(60 9.1% 97.8%);
+  --primary-foreground: hsl(24 9.8% 10%);
+
+  --secondary: hsl(12 6.5% 15.1%);
+  --secondary-foreground: hsl(60 9.1% 97.8%);
+
+  --muted: hsl(12 6.5% 15.1%);
+  --muted-foreground: hsl(24 5.4% 63.9%);
+
+  --accent: hsl(12 6.5% 15.1%);
+  --accent-foreground: hsl(60 9.1% 97.8%);
+
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(60 9.1% 97.8%);
+
+  --border: hsl(12 6.5% 15.1%);
+  --input: hsl(12 6.5% 15.1%);
+  --ring: hsl(24 5.7% 82.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased min-h-screen relative;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+    @apply text-[#152d2f] dark:text-foreground;
+  }
+  button, [role="button"] {
+    @apply cursor-pointer transition-all duration-300;
+  }
+  button:hover {
+     @apply scale-[1.02];
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-bottom {
+  from { transform: translateY(20px); }
+  to { transform: translateY(0); }
+}
+
+@layer utilities {
+  .animate-float-in {
+    @apply animate-[fade-in_0.6s_ease-out_forwards,slide-in-bottom_0.6s_ease-out_forwards];
+  }
+}

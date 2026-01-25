@@ -1,0 +1,59 @@
+
+> @bijbelquiz/web@0.1.0 build
+> next build
+
+▲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.4s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/26) ...
+  Generating static pages using 15 workers (6/26) 
+  Generating static pages using 15 workers (12/26) 
+  Generating static pages using 15 workers (19/26) 
+Sitemap generation error: Error: Please define the MONGODB_URI environment variable inside .env.local
+    at g (C:\Projects\bijbelquiz\apps\web\.next\server\chunks\[root-of-the-server]__affcb6ed._.js:1:3586)
+    at b (C:\Projects\bijbelquiz\apps\web\.next\server\chunks\[root-of-the-server]__9e016b7b._.js:16:792)
+    at R (C:\Projects\bijbelquiz\apps\web\.next\server\chunks\[root-of-the-server]__9e016b7b._.js:16:1144)
+✓ Generating static pages using 15 workers (26/26) in 671.5ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /admin/quizzes
+├ ƒ /api/admin/quizzes
+├ ƒ /api/admin/quizzes/[id]
+├ ƒ /api/auth/[...nextauth]
+├ ƒ /api/auth/mobile-login
+├ ƒ /api/auth/register
+├ ƒ /api/debug/make-premium
+├ ƒ /api/leads
+├ ƒ /api/quiz/submit
+├ ƒ /api/quizzes
+├ ƒ /api/quizzes/[id]
+├ ƒ /api/seed
+├ ƒ /api/stripe/checkout
+├ ƒ /api/webhook/stripe
+├ ○ /contact
+├ ƒ /dashboard
+├ ○ /help
+├ ƒ /leaderboard
+├ ○ /login
+├ ƒ /premium
+├ ƒ /premium/success
+├ ○ /privacy-policy
+├ ƒ /profile
+├ ƒ /quiz/[id]
+├ ƒ /quizzes
+├ ƒ /quizzes/create
+├ ○ /register
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+└ ○ /terms-of-service
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
