@@ -26,6 +26,7 @@ export async function getSession(req?: NextRequest) {
               email: decoded.email as string,
               name: decoded.name as string,
               isPremium: decoded.isPremium as boolean,
+              xp: (decoded.xp as number) ?? 0,
               role: decoded.role as string,
             },
             expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),

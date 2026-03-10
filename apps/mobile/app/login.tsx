@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useAuth } from '../components/AuthProvider';
+import { API_BASE_URL } from '../constants/api';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
@@ -10,8 +11,7 @@ export default function LoginScreen() {
   const router = useRouter();
   const { signIn } = useAuth();
   
-  // Use localhost IP. 
-  const API_URL = 'http://192.168.68.107:3000/api/auth/mobile-login'; 
+  const API_URL = `${API_BASE_URL}/api/auth/mobile-login`;
 
   const handleLogin = async () => {
     if (!email || !password) {
@@ -50,22 +50,22 @@ export default function LoginScreen() {
   return (
     <KeyboardAvoidingView 
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      className="flex-1 bg-white dark:bg-slate-900"
+      className="flex-1 bg-[#f8fafd]"
     >
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
         <View className="px-8 py-8">
           <View className="items-center mb-10">
-            <Text className="text-4xl font-bold text-slate-900 dark:text-white font-serif">
-              Bijbel<Text className="text-primary italic">Quiz</Text>
+            <Text className="text-4xl font-bold text-[#1a2333] font-serif">
+              Bijbel<Text className="text-[#547ee9] italic">Quiz</Text>
             </Text>
-            <Text className="text-slate-500 mt-2">Log in op jouw account</Text>
+            <Text className="text-[#5c687e] mt-2">Log in op jouw account</Text>
           </View>
 
           <View className="space-y-4 gap-4">
             <View>
-              <Text className="text-slate-700 dark:text-slate-300 font-medium mb-1.5 ml-1">E-mailadres</Text>
+              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">E-mailadres</Text>
               <TextInput
-                className="border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3.5 bg-slate-50 dark:bg-slate-800 dark:text-white"
+                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
                 placeholder="naam@voorbeeld.nl"
                 placeholderTextColor="#94a3b8"
                 value={email}
@@ -76,9 +76,9 @@ export default function LoginScreen() {
             </View>
 
             <View>
-              <Text className="text-slate-700 dark:text-slate-300 font-medium mb-1.5 ml-1">Wachtwoord</Text>
+              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">Wachtwoord</Text>
               <TextInput
-                className="border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3.5 bg-slate-50 dark:bg-slate-800 dark:text-white"
+                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
                 placeholder="••••••••"
                 placeholderTextColor="#94a3b8"
                 value={password}
@@ -88,21 +88,21 @@ export default function LoginScreen() {
             </View>
 
             <TouchableOpacity 
-              className="bg-primary py-4 rounded-xl items-center mt-4 shadow-sm active:translate-y-0.5 transition-transform"
+              className="bg-[#232b38] py-4 rounded-[20px] items-center mt-6 shadow-lg shadow-black/10 active:opacity-80 transition-opacity"
               onPress={handleLogin}
               disabled={loading}
             >
               {loading ? (
                 <ActivityIndicator color="white" />
               ) : (
-                <Text className="text-white font-bold text-lg">Inloggen</Text>
+                <Text className="text-white font-bold text-[17px]">Inloggen</Text>
               )}
             </TouchableOpacity>
 
             <View className="flex-row justify-center mt-6">
-              <Text className="text-slate-500">Nog geen account? </Text>
+              <Text className="text-[#5c687e]">Heb je nog geen account? </Text>
               <TouchableOpacity onPress={() => router.push('/register')}>
-                <Text className="text-primary font-bold">Registreer hier</Text>
+                <Text className="text-[#1a2333] font-bold">Maak er een</Text>
               </TouchableOpacity>
             </View>
           </View>

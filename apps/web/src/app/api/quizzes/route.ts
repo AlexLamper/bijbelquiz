@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json();
-    const { title, description, categoryId, questions, difficulty } = body;
+    const { title, description, categoryId, questions, difficulty, rewardXp } = body;
 
     if (!title || !categoryId || !questions || questions.length === 0) {
       return new NextResponse("Missing required fields", { status: 400 });
@@ -49,6 +49,7 @@ export async function POST(req: NextRequest) {
       slug,
       description,
       categoryId,
+      rewardXp: typeof rewardXp === 'number' ? Math.max(0, rewardXp) : 50,
       difficulty: difficulty || 'medium',
       isPremium: false, // Default to free
       status: initialStatus,

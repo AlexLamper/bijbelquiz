@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity, Image, ActivityIndicator, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
@@ -69,30 +69,12 @@ export default function ProfileScreen() {
           )}
         </View>
 
-        <View className="bg-card rounded-2xl border border-border overflow-hidden mb-6 shadow-sm">
-          <TouchableOpacity className="flex-row items-center p-4 border-b border-border bg-white active:bg-slate-50">
-            <View className="w-10 h-10 rounded-full bg-blue-50 items-center justify-center mr-4">
-              <FontAwesome name="trophy" size={18} color="#3b82f6" />
-            </View>
-            <Text className="flex-1 font-bold text-primary text-base">Mijn Resultaten</Text>
-            <FontAwesome name="chevron-right" size={14} color="#d4cfc6" />
-          </TouchableOpacity>
-          
-          <TouchableOpacity className="flex-row items-center p-4 border-b border-border bg-white active:bg-slate-50">
-            <View className="w-10 h-10 rounded-full bg-slate-100 items-center justify-center mr-4">
-              <FontAwesome name="gear" size={18} color="#4b5563" />
-            </View>
-            <Text className="flex-1 font-bold text-primary text-base">Instellingen</Text>
-            <FontAwesome name="chevron-right" size={14} color="#d4cfc6" />
-          </TouchableOpacity>
-          
-          <TouchableOpacity className="flex-row items-center p-4 bg-white active:bg-slate-50" onPress={() => console.log('Help')}>
-            <View className="w-10 h-10 rounded-full bg-emerald-50 items-center justify-center mr-4">
-              <FontAwesome name="question" size={18} color="#10b981" />
-            </View>
-            <Text className="flex-1 font-bold text-primary text-base">Help & Ondersteuning</Text>
-            <FontAwesome name="chevron-right" size={14} color="#d4cfc6" />
-          </TouchableOpacity>
+        <View className="bg-card rounded-2xl border border-border p-6 mb-6 shadow-sm">
+          <Text className="text-muted-foreground uppercase text-xs tracking-wider mb-2">Totale XP</Text>
+          <View className="flex-row items-center gap-2">
+            <FontAwesome name="star" size={16} color="#d97706" />
+            <Text className="text-3xl font-black text-primary">{user.xp ?? 0}</Text>
+          </View>
         </View>
 
         <TouchableOpacity 

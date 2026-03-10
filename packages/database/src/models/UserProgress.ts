@@ -6,6 +6,7 @@ export interface IUserProgress extends Document {
   quizId: mongoose.Types.ObjectId | IQuiz;
   score: number;
   totalQuestions: number;
+  xpEarned: number;
   completedAt: Date;
 }
 
@@ -14,6 +15,7 @@ const UserProgressSchema: Schema = new Schema({
   quizId: { type: Schema.Types.ObjectId, ref: 'Quiz', required: true },
   score: { type: Number, required: true },
   totalQuestions: { type: Number, required: true },
+  xpEarned: { type: Number, default: 0 },
 }, { timestamps: { createdAt: 'completedAt', updatedAt: false } });
 
 // Compound index for getting all results for a user, sorted by date

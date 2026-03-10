@@ -13,7 +13,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="w-full bg-[#152c31] py-12 text-slate-300 mt-auto border-t border-[#0d1d20]">
+    <footer className="w-full bg-[#1a2333] py-12 text-slate-300 mt-auto border-t border-[#1a2333]">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start gap-2">
           <div className="flex items-center gap-2">
@@ -21,7 +21,7 @@ export default function Footer() {
               <BookOpen className="h-4 w-4" />
             </div>
             <span className="text-xl font-bold font-serif tracking-tight text-white">
-              Bijbel<span className="text-white/90 italic">Quiz</span>
+              Bijbel<span className="text-[#547ee9] italic">Quiz</span>
             </span>
           </div>
           <p className="text-sm opacity-80 max-w-xs leading-relaxed">

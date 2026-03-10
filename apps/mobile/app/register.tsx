@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useAuth } from '../components/AuthProvider';
+import { API_BASE_URL } from '../constants/api';
 
 export default function RegisterScreen() {
   const [name, setName] = useState('');
@@ -11,8 +12,8 @@ export default function RegisterScreen() {
   const router = useRouter();
   const { signIn } = useAuth(); // We might auto-login later if needed.
 
-  const REGISTER_API_URL = 'http://192.168.68.107:3000/api/auth/register';
-  const LOGIN_API_URL = 'http://192.168.68.107:3000/api/auth/mobile-login';
+  const REGISTER_API_URL = `${API_BASE_URL}/api/auth/register`;
+  const LOGIN_API_URL = `${API_BASE_URL}/api/auth/mobile-login`;
 
   const handleRegister = async () => {
     if (!name || !email || !password) {
@@ -83,22 +84,22 @@ export default function RegisterScreen() {
   return (
     <KeyboardAvoidingView 
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      className="flex-1 bg-white dark:bg-slate-900"
+      className="flex-1 bg-[#f8fafd]"
     >
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
         <View className="px-8 py-8">
           <View className="items-center mb-10">
-            <Text className="text-4xl font-bold text-primary dark:text-white font-serif">
+            <Text className="text-4xl font-bold text-[#1a2333] font-serif">
               Account Maken
             </Text>
-            <Text className="text-slate-500 mt-2">Begin vandaag met leren!</Text>
+            <Text className="text-[#5c687e] mt-2">Begin vandaag met leren!</Text>
           </View>
 
           <View className="space-y-4 gap-4">
              <View>
-              <Text className="text-slate-700 dark:text-slate-300 font-medium mb-1.5 ml-1">Naam</Text>
+              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">Naam</Text>
               <TextInput
-                className="border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3.5 bg-slate-50 dark:bg-slate-800 dark:text-white"
+                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
                 placeholder="Je naam"
                 placeholderTextColor="#94a3b8"
                 value={name}
@@ -107,9 +108,9 @@ export default function RegisterScreen() {
             </View>
 
             <View>
-              <Text className="text-slate-700 dark:text-slate-300 font-medium mb-1.5 ml-1">E-mailadres</Text>
+              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">E-mailadres</Text>
               <TextInput
-                className="border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3.5 bg-slate-50 dark:bg-slate-800 dark:text-white"
+                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
                 placeholder="naam@voorbeeld.nl"
                 placeholderTextColor="#94a3b8"
                 value={email}
@@ -120,9 +121,9 @@ export default function RegisterScreen() {
             </View>
 
             <View>
-              <Text className="text-slate-700 dark:text-slate-300 font-medium mb-1.5 ml-1">Wachtwoord</Text>
+              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">Wachtwoord</Text>
               <TextInput
-                className="border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3.5 bg-slate-50 dark:bg-slate-800 dark:text-white"
+                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
                 placeholder="Minimaal 6 tekens"
                 placeholderTextColor="#94a3b8"
                 value={password}
@@ -132,21 +133,21 @@ export default function RegisterScreen() {
             </View>
 
             <TouchableOpacity 
-              className="bg-primary py-4 rounded-xl items-center mt-4 shadow-sm active:translate-y-0.5 transition-transform"
+              className="bg-[#232b38] py-4 rounded-[20px] items-center mt-6 shadow-lg shadow-black/10 active:opacity-80 transition-opacity"
               onPress={handleRegister}
               disabled={loading}
             >
               {loading ? (
                 <ActivityIndicator color="white" />
               ) : (
-                <Text className="text-white font-bold text-lg">Registreren</Text>
+                <Text className="text-white font-bold text-[17px]">Registreren</Text>
               )}
             </TouchableOpacity>
 
             <View className="flex-row justify-center mt-6">
-              <Text className="text-slate-500">Al een account? </Text>
+              <Text className="text-[#5c687e]">Al een account? </Text>
               <TouchableOpacity onPress={() => router.push('/login')}>
-                <Text className="text-primary font-bold">Log hier in</Text>
+                <Text className="text-[#1a2333] font-bold">Log in</Text>
               </TouchableOpacity>
             </View>
           </View>

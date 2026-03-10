@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import dns from 'node:dns/promises';
 
 // Import models here to ensure they are registered with Mongoose on connection
 import './models/User';
@@ -46,9 +47,7 @@ export async function connectDB() {
       bufferCommands: false,
     };
 
-    cached.promise = mongoose.connect(MONGODB_URI!, opts).then((mongoose) => {
-      return mongoose;
-    });
+    cached.promise = connectWithSrvFallback(MONGODB_URI!, opts);
   }
 
   try {
@@ -63,6 +62,71 @@ export async function connectDB() {
     }
 
     throw e;
+  }
+}
+
+async function connectWithSrvFallback(uri: string, opts: mongoose.ConnectOptions) {
+  try {
+    return await mongoose.connect(uri, opts);
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error);
+    const isSrvFailure =
+      message.includes('querySrv') ||
+      message.includes('ENOTFOUND') ||
+      message.includes('ECONNREFUSED');
+
+    if (!uri.startsWith('mongodb+srv://') || !isSrvFailure) {
+      throw error;
+    }
+
+    const fallbackUri = await buildNonSrvMongoUri(uri);
+    if (!fallbackUri) {
+      throw error;
+    }
+
+    return mongoose.connect(fallbackUri, opts);
+  }
+}
+
+async function buildNonSrvMongoUri(srvUri: string) {
+  try {
+    const parsed = new URL(srvUri);
+    const hostname = parsed.hostname;
+    const databaseName = parsed.pathname?.replace(/^\//, '') || 'test';
+    const authPart = parsed.username
+      ? `${parsed.username}${parsed.password ? `:${parsed.password}` : ''}@`
+      : '';
+
+    const [srvRecords, txtRecords] = await Promise.all([
+      dns.resolveSrv(`_mongodb._tcp.${hostname}`),
+      dns.resolveTxt(hostname).catch(() => [] as string[][]),
+    ]);
+
+    if (!srvRecords.length) {
+      return null;
+    }
+
+    const hosts = srvRecords
+      .map((record) => `${record.name}:${record.port || 27017}`)
+      .join(',');
+
+    const params = new URLSearchParams(parsed.searchParams);
+    params.set('tls', 'true');
+
+    for (const entry of txtRecords) {
+      const txtValue = entry.join('');
+      if (!txtValue) continue;
+      const txtParams = new URLSearchParams(txtValue);
+      txtParams.forEach((value, key) => {
+        if (!params.has(key)) {
+          params.set(key, value);
+        }
+      });
+    }
+
+    return `mongodb://${authPart}${hosts}/${databaseName}?${params.toString()}`;
+  } catch {
+    return null;
   }
 }
 

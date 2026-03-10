@@ -5,6 +5,7 @@ declare module "next-auth" {
     user: {
       id: string;
       isPremium: boolean;
+      xp: number;
       role: 'user' | 'admin';
     } & DefaultSession["user"]
   }
@@ -12,6 +13,7 @@ declare module "next-auth" {
   interface User extends DefaultUser {
     id: string;
     isPremium: boolean;
+    xp: number;
     role: 'user' | 'admin';
   }
 }
@@ -20,6 +22,7 @@ declare module "next-auth/jwt" {
   interface JWT {
     id: string;
     isPremium: boolean;
+    xp: number;
     role: 'user' | 'admin';
   }
 }

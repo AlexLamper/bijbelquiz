@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
       email: user.email,
       name: user.name,
       isPremium: user.isPremium,
+      xp: user.xp,
       role: user.role,
       // Add expiration if needed, otherwise uses default
     };
@@ -46,6 +47,7 @@ export async function POST(req: NextRequest) {
         email: user.email,
         name: user.name,
         isPremium: user.isPremium,
+        xp: user.xp,
       },
       token,
     });

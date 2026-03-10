@@ -4,10 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 import { FontAwesome } from '@expo/vector-icons';
-import { useAuth } from '../../components/AuthProvider';
-
-// Replace with your local IP for physical device testing
-const API_BASE_URL = 'http://192.168.68.107:3000';
+import { API_BASE_URL } from '../../constants/api';
 
 interface Answer {
   text: string;
@@ -19,6 +16,7 @@ interface Question {
   text: string;
   answers: Answer[];
   explanation?: string;
+  bibleReference?: string;
   _id: string;
 }
 
@@ -37,8 +35,8 @@ export default function MobileQuizPlayer() {
   const [hasAnswered, setHasAnswered] = useState(false);
   const [loading, setLoading] = useState(true);
   const [isFinished, setIsFinished] = useState(false);
+  const [xpEarned, setXpEarned] = useState(0);
   const router = useRouter();
-  const { user } = useAuth();
 
   useEffect(() => {
     fetchQuiz();
@@ -96,7 +94,7 @@ export default function MobileQuizPlayer() {
     
     if (token) {
       try {
-        await fetch(`${API_BASE_URL}/api/quiz/submit`, {
+        const response = await fetch(`${API_BASE_URL}/api/quiz/submit`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -108,6 +106,11 @@ export default function MobileQuizPlayer() {
             totalQuestions: quiz?.questions.length
           })
         });
+
+        if (response.ok) {
+          const result = await response.json();
+          setXpEarned(result?.xpEarned ?? 0);
+        }
       } catch (e) {
         console.error("Failed to save progress", e);
       }
@@ -146,6 +149,7 @@ export default function MobileQuizPlayer() {
             <FontAwesome name="check" size={12} color="#15803d" />
             <Text className="text-green-700 font-bold text-sm">Goed gedaan!</Text>
           </View>
+          <Text className="text-primary font-bold mt-4">+{xpEarned} XP</Text>
         </View>
 
         <TouchableOpacity 
@@ -246,6 +250,9 @@ export default function MobileQuizPlayer() {
                     <Text className="font-bold text-blue-800">Uitleg</Text>
                 </View>
                 <Text className="text-blue-900 leading-5">{currentQuestion.explanation}</Text>
+                {currentQuestion.bibleReference ? (
+                  <Text className="text-blue-700 mt-2 font-semibold">{currentQuestion.bibleReference}</Text>
+                ) : null}
               </View>
             )}
             <TouchableOpacity 

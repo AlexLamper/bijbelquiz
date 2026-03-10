@@ -18,6 +18,7 @@ export interface IQuiz extends Document {
   slug: string;
   description?: string;
   categoryId: mongoose.Types.ObjectId | ICategory; // Reference to Category
+  rewardXp: number;
   difficulty: 'easy' | 'medium' | 'hard';
   isPremium: boolean;
   status: 'draft' | 'pending' | 'approved' | 'rejected';
@@ -43,6 +44,7 @@ const QuizSchema: Schema = new Schema({
   slug: { type: String, required: true, unique: true },
   description: { type: String },
   categoryId: { type: Schema.Types.ObjectId, ref: 'Category', required: true },
+  rewardXp: { type: Number, default: 50, min: 0 },
   difficulty: { type: String, enum: ['easy', 'medium', 'hard'], default: 'medium' },
   isPremium: { type: Boolean, default: false },
   status: { type: String, enum: ['draft', 'pending', 'approved', 'rejected'], default: 'approved' },

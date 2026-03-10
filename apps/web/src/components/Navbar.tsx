@@ -54,7 +54,7 @@ export default function Navbar() {
             <ModeToggle />
             {(!session || !session.user?.isPremium) && (
               <Link href="/premium" className="hidden sm:block">
-                <Button variant="default" size="sm" className="bg-[#152c31] hover:bg-[#1f3e44] text-white border-0 shadow-sm transition-all">
+                <Button variant="default" size="sm" className="bg-[#547ee9] hover:bg-[#476ecc] text-white border-0 shadow-md shadow-blue-500/20 transition-all font-semibold rounded-full px-5">
                   Word Premium
                 </Button>
               </Link>

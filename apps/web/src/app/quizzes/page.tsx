@@ -91,7 +91,7 @@ export default async function QuizzesPage({
                 <div className="space-y-1">
                         <Button 
                         variant={currentCategory === 'all' ? "secondary" : "ghost"} 
-                        className={`w-full justify-start ${currentCategory === 'all' ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
+                        className={`w-full justify-start rounded-xl ${currentCategory === 'all' ? 'bg-[#547ee9] text-white hover:bg-[#476ecc]' : 'text-[#5c687e] hover:text-[#1a2333] hover:bg-[#eaf0fc] dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
                         asChild
                     >
                         <Link href="/quizzes">Alle Categorieën</Link>
@@ -100,7 +100,7 @@ export default async function QuizzesPage({
                         <Button
                             key={cat._id.toString()}
                             variant={currentCategory === cat.slug ? "secondary" : "ghost"}
-                            className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-[#152c31] text-white hover:bg-[#152c31]/90' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
+                            className={`w-full justify-start rounded-xl ${currentCategory === cat.slug ? 'bg-[#547ee9] text-white hover:bg-[#476ecc]' : 'text-[#5c687e] hover:text-[#1a2333] hover:bg-[#eaf0fc] dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
                             asChild
                         >
                             <Link href={`/quizzes?category=${cat.slug}`}>
@@ -111,14 +111,14 @@ export default async function QuizzesPage({
                 </div>
 
                 {!isPremiumUser && (
-                    <div className="bg-amber-50 rounded-2xl p-6 border border-amber-100">
-                       <h3 className="font-bold text-[#152c31] mb-2 flex items-center gap-2">
+                    <div className="bg-[#eaf0fc] rounded-2xl p-6 border border-[#dfe8fa]">
+                       <h3 className="font-bold text-[#1a2333] mb-2 flex items-center gap-2">
                            <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> Premium
                        </h3>
-                       <p className="text-sm text-slate-600 mb-4">
+                       <p className="text-sm text-[#5c687e] mb-4">
                            Ontgrendel alle quizzen en diepgaande studie-uitleg.
                        </p>
-                       <Button className="w-full bg-[#152c31] hover:bg-black text-white" asChild>
+                       <Button className="w-full bg-[#1a2333] hover:bg-black text-white rounded-xl" asChild>
                            <Link href="/premium">Upgrade Nu</Link>
                        </Button>
                     </div>

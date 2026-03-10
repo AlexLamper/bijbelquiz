@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, Image, Alert } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, Image, Alert, TextInput, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
 import { useAuth } from '../../components/AuthProvider';
-
-// In a real app, this would come from an environment variable
-// When testing on device, replace localhost with your computer's IP
-const API_BASE_URL = 'http://192.168.68.107:3000';
+import { API_BASE_URL } from '../../constants/api';
 
 interface Quiz {
   _id: string;
@@ -27,7 +24,8 @@ export default function HomeScreen() {
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
-  const { isPremium } = useAuth();
+  const { isPremium, user } = useAuth();
+  const [searchQuery, setSearchQuery] = useState('');
 
   const fetchQuizzes = async () => {
     try {
@@ -69,73 +67,44 @@ export default function HomeScreen() {
 
   const renderQuizItem = ({ item }: { item: Quiz }) => {
     const isLocked = item.isPremium && !isPremium;
-    // Helper to safely get category title
     const categoryName = (typeof item.categoryId === 'object' && item.categoryId?.title) 
       ? item.categoryId.title 
       : 'Algemeen';
 
     return (
-      <View 
-        className="bg-white dark:bg-slate-800 rounded-2xl mb-5 shadow-sm border border-border dark:border-slate-700 overflow-hidden"
+      <TouchableOpacity 
+        className="w-[200px] mr-4 mb-2"
+        onPress={() => {
+          if (isLocked) {
+            alert("Dit is een Premium quiz.");
+          } else {
+            router.push(`/quiz/${item._id}`);
+          }
+        }}
+        activeOpacity={0.8}
       >
-        <View className="p-5">
-          <View className="flex-row justify-between items-start mb-3">
-            <View className="bg-secondary/10 dark:bg-slate-700 px-2.5 py-1 rounded-md self-start">
-              <Text className="text-secondary-foreground dark:text-slate-300 text-xs font-bold uppercase tracking-wider">{categoryName}</Text>
+        <View className="h-[200px] bg-[#dbe1ee] rounded-2xl mb-3 overflow-hidden border border-slate-200 shadow-sm relative">
+            {/* Fake Image Background */}
+            <View className="absolute inset-0 bg-[#3c4a63] opacity-10"></View>
+            <View className="absolute inset-0 justify-center items-center">
+                <FontAwesome name="image" size={40} color="#bac6da" />
             </View>
+
             {item.isPremium && (
-              <View className="bg-amber-600 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
+              <View className="absolute top-3 right-3 bg-amber-500 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
                 <FontAwesome name="star" size={10} color="white" />
                 <Text className="text-white text-[10px] font-bold uppercase tracking-wider">PRO</Text>
               </View>
             )}
-          </View>
-          
-          <Text className="text-xl font-serif font-bold text-primary dark:text-white mb-2 leading-tight">{item.title}</Text>
-          
-          <Text className="text-muted-foreground dark:text-slate-400 mb-5 leading-5 h-10" numberOfLines={2}>
-            {item.description || "Test je kennis en leer meer over dit onderwerp."}
-          </Text>
-
-          <View className="flex-row items-center gap-5 mb-5">
-            <View className="flex-row items-center gap-1.5 opacity-80">
-              <FontAwesome name="list-ul" size={14} color="#64748b" />
-              <Text className="text-xs font-medium text-slate-500">{item.questions?.length || 0} vragen</Text>
-            </View>
-            <View className="flex-row items-center gap-1.5 opacity-80">
-              <FontAwesome name="book" size={14} color="#64748b" />
-              <Text className="text-xs font-medium text-slate-500">Leerzaam</Text>
-            </View>
-          </View>
-
-          <TouchableOpacity 
-            className={`flex-row items-center justify-center p-3.5 rounded-xl ${
-              isLocked 
-                ? 'bg-transparent border border-muted' 
-                : 'bg-primary dark:bg-slate-700 shadow-md shadow-primary/20'
-            } active:opacity-90 transition-opacity`}
-            onPress={() => {
-              if (isLocked) {
-                alert("Dit is een Premium quiz. Upgrade je account om toegang te krijgen.");
-              } else {
-                router.push(`/quiz/${item._id}`);
-              }
-            }}
-          >
-            {isLocked ? (
-              <>
-                <FontAwesome name="lock" size={16} color="#94a3b8" style={{marginRight: 8}} />
-                <Text className="font-bold text-slate-500">Ontgrendel</Text>
-              </>
-            ) : (
-              <>
-                <Text className="font-bold text-white dark:text-white mr-2 text-base">Start Quiz</Text>
-                <FontAwesome name="arrow-right" size={14} color="white" />
-              </>
-            )}
-          </TouchableOpacity>
         </View>
-      </View>
+        
+        <Text className="text-[17px] font-bold text-[#1c223a] mb-1 leading-tight">{item.title}</Text>
+        
+        <View className="flex-col gap-0.5">
+            <Text className="text-[12px] text-[#5c687e]">Moeilijkheid: {item.difficulty === 'hard' ? 'Moeilijk' : item.difficulty === 'medium' ? 'Gemiddeld' : 'Makkelijk'}</Text>
+            <Text className="text-[12px] text-[#5c687e]">Status: Niet gestart</Text>
+        </View>
+      </TouchableOpacity>
     );
   };
 
@@ -148,21 +117,48 @@ export default function HomeScreen() {
   }
 
   return (
-    <SafeAreaView className="flex-1 bg-background" edges={['top']}>
-      <FlatList
-        data={quizzes}
-        renderItem={renderQuizItem}
-        keyExtractor={(item) => item._id}
-        contentContainerStyle={{ padding: 20, paddingTop: 10 }}
+    <SafeAreaView className="flex-1 bg-[#f8fafd]" edges={['top']}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#152d2f" />
         }
-        ListHeaderComponent={
-          <View className="mb-6 mt-2">
-            <Text className="text-3xl font-serif font-bold text-primary dark:text-white">Ontdek Quizzes</Text>
-            <Text className="text-muted-foreground mt-1">Kies een onderwerp en test je kennis.</Text>
+        contentContainerStyle={{ paddingBottom: 100 }}
+      >
+        <View className="px-5">
+            <View className="items-center mt-2 mb-6">
+              <Text className="text-3xl font-serif text-[#1c223a]">Bijbel Quiz</Text>
+            </View>
+
+            {/* Search Bar */}
+            <View className="bg-[#f0f2f5] rounded-xl flex-row items-center px-4 py-3 mb-6">
+              <FontAwesome name="search" size={16} color="#8e94a8" className="mr-3" />
+              <TextInput 
+                placeholder="Zoeken in quizzen of onderwerpen"
+                placeholderTextColor="#8e94a8"
+                className="flex-1 ml-3 text-[15px] font-medium text-[#1c223a]"
+                value={searchQuery}
+                onChangeText={setSearchQuery}
+              />
+            </View>
+
+            {/* Categories */}
+            <View className="-mx-5 mb-8">
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 20 }} className="flex-row">
+                {['Oude Testament', 'Nieuwe Testament', 'Theologie', 'Bijbelse Figuren'].map((cat, idx) => (
+                  <TouchableOpacity key={idx} className="bg-[#e4e7f1] rounded-full px-5 py-2 mr-3">
+                    <Text className="text-[#3c4257] font-medium text-[13px]">{cat}</Text>
+                  </TouchableOpacity>
+                ))}
+              </ScrollView>
+            </View>
+
+            <View className="flex-row items-center justify-between mb-4">
+              <Text className="text-[19px] font-semibold text-[#1c223a]">Aanbevolen voor jou</Text>
+            </View>
+
             {error && (
-              <View className="mt-4 p-4 bg-red-50 border border-red-100 rounded-xl flex-row items-center gap-3">
+              <View className="mt-4 p-4 bg-red-50 border border-red-100 rounded-xl flex-row items-center gap-3 mb-4">
                 <FontAwesome name="exclamation-triangle" size={16} color="#ef4444" />
                 <Text className="text-red-600 flex-1 font-medium">{error}</Text>
                 <TouchableOpacity onPress={onRefresh}>
@@ -170,17 +166,33 @@ export default function HomeScreen() {
                 </TouchableOpacity>
               </View>
             )}
+        </View>
+
+        <FlatList
+          data={quizzes}
+          renderItem={renderQuizItem}
+          keyExtractor={(item) => item._id}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 10 }}
+        />
+
+        <View className="px-5 mt-6 mb-4 flex-row items-center justify-between">
+          <Text className="text-[19px] font-semibold text-[#1c223a]">Thema's voor jou</Text>
+          <View className="flex-row gap-1">
+             <View className="w-1.5 h-1.5 bg-[#1c223a] rounded-full"></View>
+             <View className="w-1.5 h-1.5 bg-[#c8d1e0] rounded-full"></View>
+             <View className="w-1.5 h-1.5 bg-[#c8d1e0] rounded-full"></View>
           </View>
-        }
-        ListEmptyComponent={
-          !error && !loading ? (
-            <View className="items-center justify-center py-20">
-              <FontAwesome name="search" size={40} color="#cbd5e1" />
-              <Text className="text-slate-400 mt-4 text-center">Geen quizzes gevonden.</Text>
-            </View>
-          ) : null
-        }
-      />
+        </View>
+        
+        <View className="px-5">
+           <View className="h-[140px] bg-[#dbe1ee] rounded-2xl w-full border border-slate-200 overflow-hidden relative">
+               <View className="absolute inset-0 bg-[#3c4a63] opacity-20"></View>
+           </View>
+        </View>
+
+      </ScrollView>
     </SafeAreaView>
   );
 }

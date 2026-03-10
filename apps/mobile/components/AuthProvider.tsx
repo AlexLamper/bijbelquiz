@@ -1,10 +1,13 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import * as SecureStore from 'expo-secure-store';
+import { initRevenueCat, logoutRevenueCat } from '../services/revenuecat';
 
 interface User {
   id: string;
-  name: string;
+  name?: string;
   email: string;
+  image?: string;
+  xp?: number;
   isPremium?: boolean;
 }
 
@@ -48,7 +51,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
       const userData = await SecureStore.getItemAsync('userData');
       
       if (token && userData) {
-        setUser(JSON.parse(userData));
+        const parsedUser = JSON.parse(userData);
+        setUser(parsedUser);
+        await initRevenueCat(parsedUser.id);
       }
     } catch (e) {
       console.error('Failed to load user', e);
@@ -62,6 +67,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       await SecureStore.setItemAsync('userToken', token);
       await SecureStore.setItemAsync('userData', JSON.stringify(userData));
       setUser(userData);
+      await initRevenueCat(userData.id);
     } catch (e) {
       console.error('Failed to sign in', e);
     }
@@ -72,6 +78,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       await SecureStore.deleteItemAsync('userToken');
       await SecureStore.deleteItemAsync('userData');
       setUser(null);
+      await logoutRevenueCat();
     } catch (e) {
       console.error('Failed to sign out', e);
     }
