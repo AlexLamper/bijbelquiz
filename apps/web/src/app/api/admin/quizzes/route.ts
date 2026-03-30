@@ -32,3 +32,41 @@ export async function GET(req: NextRequest) {
     return new NextResponse("Internal Server Error", { status: 500 });
   }
 }
+
+function slugify(text: string) {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')       // Replace spaces with -
+    .replace(/[^\w\-]+/g, '')   // Remove all non-word chars
+    .replace(/\-\-+/g, '-')     // Replace multiple - with single -
+    .replace(/^-+/, '')         // Trim - from start of text
+    .replace(/-+$/, '');        // Trim - from end of text
+}
+
+export async function POST(req: NextRequest) {
+  const session = await getServerSession(authOptions);
+
+  if (!session || session.user.role !== 'admin') {
+    return new NextResponse("Forbidden", { status: 403 });
+  }
+
+  try {
+    await connectDB();
+    const body = await req.json();
+
+    if (!body.slug && body.title) {
+      body.slug = slugify(body.title);
+    }
+
+    if (!body.createdBy) {
+      body.createdBy = session.user.id;
+    }
+
+    const quiz = new Quiz(body);
+    await quiz.save();
+
+    return NextResponse.json(quiz, { status: 201 });
+  } catch (error) {
+    console.error("[ADMIN_QUIZZES_POST]", error);
+    return new NextResponse("Internal Server Error", { status: 500 });
+  }
+}

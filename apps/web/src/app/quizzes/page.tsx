@@ -8,6 +8,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import QuizCard, { QuizItem } from '@/components/QuizCard';
 import MobileQuizFilter from '@/components/MobileQuizFilter';
+import Breadcrumb from '@/components/Breadcrumb';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -67,7 +68,14 @@ export default async function QuizzesPage({
   const { quizzes, categories } = await getData(currentCategory);
 
   return (
-    <div className="container px-4 py-8 md:py-12 mx-auto max-w-7xl">
+    <div className="relative mx-auto max-w-395 px-4 py-8 md:py-12 sm:px-6 lg:px-10 xl:px-12">
+      <Breadcrumb
+        items={[
+          { label: 'Quizzen' },
+        ]}
+        className="mb-6"
+      />
+      
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
           <h1 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-2 dark:text-foreground">Quiz Overzicht</h1>

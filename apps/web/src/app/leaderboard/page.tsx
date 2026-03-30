@@ -4,6 +4,7 @@ import { Trophy, Medal, Star, User as UserIcon, Crown } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
+import Breadcrumb from '@/components/Breadcrumb';
 
 interface LeaderboardEntry {
   _id: string;
@@ -87,6 +88,13 @@ export default async function LeaderboardPage() {
 
   return (
     <div className="container px-4 py-8 md:py-12 mx-auto max-w-4xl">
+      <Breadcrumb
+        items={[
+          { label: 'Ranglijst' },
+        ]}
+        className="mb-6"
+      />
+      
       <div className="text-center mb-10 space-y-4">
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#152c31] dark:text-foreground inline-flex items-center gap-3 justify-center">
             <Medal className="h-10 w-10 text-amber-500" />

@@ -21,6 +21,7 @@ export async function GET() {
         slug: "oude-testament",
         description: "Vragen over de schepping, de aartsvaders en de profeten.",
         icon: "scroll",
+        imageUrl: "/images/quizzes/img1.png",
         isActive: true,
         sortOrder: 1
       },
@@ -29,6 +30,7 @@ export async function GET() {
         slug: "nieuwe-testament",
         description: "Leer meer over Jezus, de apostelen en de eerste gemeente.",
         icon: "cross",
+        imageUrl: "/images/quizzes/img2.png",
         isActive: true,
         sortOrder: 2
       },
@@ -37,6 +39,7 @@ export async function GET() {
         slug: "algemeen",
         description: "Gemengde kennisvragen uit de hele Bijbel.",
         icon: "globe",
+        imageUrl: "/images/quizzes/img8.png",
         isActive: true,
         sortOrder: 3
       },
@@ -45,6 +48,7 @@ export async function GET() {
         slug: "studie",
         description: "Diepgaande studievragen voor gevorderden.",
         icon: "book-open",
+        imageUrl: "/images/quizzes/img6.png",
         isActive: true,
         sortOrder: 4
       },
@@ -53,6 +57,7 @@ export async function GET() {
         slug: "leven-van-jezus",
         description: "Volg het leven van Jezus Christus, van Zijn geboorte tot Zijn wederopstanding.",
         icon: "sparkles",
+        imageUrl: "/images/quizzes/img5.png",
         sortOrder: 10,
         isActive: true
       },
@@ -61,6 +66,7 @@ export async function GET() {
         slug: "vrouwen-in-de-bijbel",
         description: "Ontdek de inspirerende en krachtige verhalen van vrouwen uit de Bijbel.",
         icon: "users",
+        imageUrl: "/images/quizzes/img7.png",
         sortOrder: 11,
         isActive: true
       },
@@ -69,6 +75,7 @@ export async function GET() {
         slug: "wonderen-en-tekenen",
         description: "Lees over de wonderbaarlijke daden en tekenen van Gods macht.",
         icon: "zap",
+        imageUrl: "/images/quizzes/img4.png",
         sortOrder: 12,
         isActive: true
       },
@@ -77,6 +84,7 @@ export async function GET() {
         slug: "personen-in-de-bijbel",
         description: "Maak kennis met de markante figuren, profeten en koningen uit de Bijbel.",
         icon: "users",
+        imageUrl: "/images/quizzes/img3.png",
         sortOrder: 13,
         isActive: true
       }
@@ -98,6 +106,7 @@ export async function GET() {
         slug: "algemene-bijbelkennis",
         description: "Test je basiskennis van de Bijbel met deze 5 vragen.",
         categoryId: getCatId("algemeen")!,
+        imageUrl: "/images/quizzes/img8.png",
         difficulty: 'easy',
         isPremium: false,
         questions: [
@@ -159,6 +168,7 @@ export async function GET() {
         slug: "leven-van-jezus",
         description: "Weet jij alles over de wonderen en het leven van Jezus?",
         categoryId: getCatId("nieuwe-testament")!,
+        imageUrl: "/images/quizzes/img5.png",
         difficulty: 'medium',
         isPremium: false,
         questions: [
@@ -196,6 +206,7 @@ export async function GET() {
         slug: "romeinen-studie",
         description: "Een uitdagende quiz voor de serieuze bijbelstudent over de Romeinenbrief.",
         categoryId: getCatId("studie")!,
+        imageUrl: "/images/quizzes/img6.png",
         difficulty: 'hard',
         isPremium: true,
         questions: [

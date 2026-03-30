@@ -4,17 +4,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
+import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { LogOut, User as UserIcon, Star, Menu, X, ChevronRight } from 'lucide-react';
+import { LogOut, Star, Menu, X, ChevronRight, User } from 'lucide-react';
 import { ModeToggle } from '@/components/ModeToggle';
 
 export default function Navbar() {
   const { data: session, status } = useSession();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    return pathname.startsWith(href);
+  };
+
+  const linkClasses = (href: string) => 
+    `hover:text-primary transition-colors ${isActive(href) ? 'text-[#5b7dd9] font-semibold' : ''}`;
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-primary/10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-8">
+    <nav className="sticky top-0 z-50 w-full bg-transparent px-3 pt-4 sm:px-4 sm:pt-5">
+      <div className="relative container mx-auto flex h-16 items-center justify-between rounded-3xl border border-[#d6e2fa]/80 bg-white/68 px-4 shadow-[0_14px_40px_rgba(84,126,233,0.10)] backdrop-blur-xl sm:px-8 dark:border-white/10 dark:bg-background/70">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="relative h-8 w-8 transition-transform group-hover:scale-110">
              <Image 
@@ -33,26 +43,23 @@ export default function Navbar() {
              />
           </div>
           <span className="text-xl font-bold font-serif tracking-tight text-foreground">
-            Bijbel<span className="text-primary italic">Quiz</span>
+            Bijbel<span className="text-[#192942] dark:text-white italic">Quiz</span>
           </span>
         </Link>
 
         <div className="flex items-center gap-6">
            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700 dark:text-gray-300">
-              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-              <Link href="/quizzes" className="hover:text-primary transition-colors">Alle Quizzen</Link>
-              <Link href="/leaderboard" className="hover:text-primary transition-colors">Ranglijst</Link>
-              {session && (
-                 <Link href="/dashboard" className="hover:text-primary transition-colors">Mijn Dashboard</Link>
-              )}
+              <Link href="/" className={linkClasses('/')}>Home</Link>
+              <Link href="/quizzes" className={linkClasses('/quizzes')}>Alle Quizzen</Link>
+              <Link href="/leaderboard" className={linkClasses('/leaderboard')}>Ranglijst</Link>
               {session?.user?.role === 'admin' && (
-                 <Link href="/admin/quizzes" className="text-primary font-bold hover:opacity-80 transition-colors">Admin</Link>
+                <Link href="/admin/quizzes" className={`font-bold text-[#192942] dark:text-[#5b7dd9] hover:opacity-80 transition-colors ${isActive('/admin') ? 'underline underline-offset-4' : ''}`}>Admin</Link>
               )}
            </nav>
 
           <div className="flex items-center gap-3">
             <ModeToggle />
-            {(!session || !session.user?.isPremium) && (
+            {(session && !session.user?.isPremium) && (
               <Link href="/premium" className="hidden sm:block">
                 <Button variant="default" size="sm" className="bg-[#547ee9] hover:bg-[#476ecc] text-white border-0 shadow-md shadow-blue-500/20 transition-all font-semibold rounded-full px-5">
                   Word Premium
@@ -63,22 +70,32 @@ export default function Navbar() {
             {status === 'authenticated' && session ? (
               <>
                 {session.user.isPremium && (
-                  <div className="hidden sm:flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary border border-primary/20">
-                    <Star className="h-3 w-3 fill-current" />
+                  <div className="hidden sm:flex items-center gap-1 rounded-md bg-[#1a2942] px-2 py-0.5 text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-sm">
+                    <Star className="h-3 w-3 fill-amber-400 text-amber-400" />
                     <span>PRO</span>
                   </div>
                 )}
 
-                <div className="flex items-center gap-3 pl-3 border-l border-border/40">
-                  <Link href="/dashboard" className="flex items-center hidden sm:flex hover:opacity-80 transition-opacity">
+                <div className="flex items-center gap-3 pl-3 border-l border-[#d6e2fa]/80 dark:border-border/40">
+                  <Link href="/dashboard" className="hidden items-center hover:opacity-80 transition-opacity sm:flex">
                     <span className="text-sm font-bold text-foreground">{session.user.name || 'Gebruiker'}</span>
+                  </Link>
+                  <Link href="/profile" className="hidden sm:flex">
+                    <Button 
+                      variant="ghost" 
+                      size="icon"
+                      aria-label="Profiel"
+                      className="text-muted-foreground hover:text-[#5b7dd9] transition-colors"
+                    >
+                      <User className="h-4 w-4" />
+                    </Button>
                   </Link>
                   <Button 
                     onClick={() => signOut({ callbackUrl: '/' })}
                     variant="ghost" 
                     size="icon"
                     aria-label="Uitloggen"
-                    className="ml-2 text-muted-foreground hover:text-destructive transition-colors"
+                    className="text-muted-foreground hover:text-destructive transition-colors"
                   >
                     <LogOut className="h-4 w-4" />
                   </Button>
@@ -114,31 +131,25 @@ export default function Navbar() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-primary/10 bg-[#eae6db] px-4 py-6 shadow-lg animate-in slide-in-from-top-2 absolute top-16 left-0 w-full h-[calc(100vh-4rem)] overflow-y-auto z-[99]">
+        <div className="absolute left-3 right-3 top-[4.6rem] z-99 overflow-y-auto rounded-[28px] border border-[#d6e2fa]/80 bg-[#f7faff]/92 px-4 py-6 shadow-[0_22px_60px_rgba(84,126,233,0.16)] backdrop-blur-xl animate-in slide-in-from-top-2 md:hidden">
             <div className="flex flex-col space-y-2">
-                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors">
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/') ? 'text-[#5b7dd9] font-semibold' : ''}`}>
                     Home
                 </Link>
-                <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors">
+                <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/quizzes') ? 'text-[#5b7dd9] font-semibold' : ''}`}>
                     Alle Quizzen
                 </Link>
-                <Link href="/leaderboard" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors">
+                <Link href="/leaderboard" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/leaderboard') ? 'text-[#5b7dd9] font-semibold' : ''}`}>
                     Ranglijst
                 </Link>
-                {session && (
-                    <Link href="/dashboard" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-white border border-slate-200 shadow-sm rounded-xl font-medium text-slate-700 active:scale-[0.99] transition-all hover:border-primary/20 hover:shadow-md">
-                         Mijn Dashboard
-                         <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-primary transition-colors" />
-                    </Link>
-                )}
                 {session?.user?.role === 'admin' && (
-                    <Link href="/admin/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between px-4 py-3 bg-primary/5 border border-primary/20 shadow-sm rounded-xl font-bold text-primary active:scale-[0.99] transition-all hover:bg-primary/10">
+                  <Link href="/admin/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between rounded-xl border border-[#192942]/15 bg-[#192942]/5 px-4 py-3 font-bold text-[#192942] shadow-sm transition-all hover:bg-[#192942]/10 active:scale-[0.99]">
                          Admin Dashboard
-                         <ChevronRight className="h-4 w-4 text-primary opacity-60" />
+                     <ChevronRight className="h-4 w-4 text-[#192942] opacity-60" />
                     </Link>
                 )}
-                 {(!session || !session.user?.isPremium) && (
-                    <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)} className="mt-2 px-4 py-4 bg-gradient-to-r from-[#152c31] to-[#1f3e44] border border-[#152c31] text-white shadow-lg rounded-xl font-bold active:scale-[0.99] transition-transform flex items-center justify-between">
+                 {(session && !session.user?.isPremium) && (
+                    <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)} className="mt-2 flex items-center justify-between rounded-xl border border-[#152c31] bg-linear-to-r from-[#152c31] to-[#1f3e44] px-4 py-4 font-bold text-white shadow-lg transition-transform active:scale-[0.99]">
                         <div>
                             <span className="block text-sm">Upgrade naar Premium</span>
                             <span className="text-[10px] font-normal opacity-80 uppercase tracking-wider block mt-0.5">Levenslang toegang</span>
@@ -149,7 +160,11 @@ export default function Navbar() {
                     </Link>
                 )}
                 {session && (
-                     <div className="pt-2 mt-2">
+                     <div className="pt-2 mt-2 space-y-2 border-t border-slate-200/60">
+                        <Link href="/profile" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 text-slate-700 hover:text-[#5b7dd9] hover:bg-slate-50 rounded-xl transition-colors">
+                            <User className="h-4 w-4" />
+                            <span className="font-medium">Mijn Profiel</span>
+                        </Link>
                         <Button 
                             variant="ghost" 
                             className="w-full justify-start text-red-600 hover:text-red-700 hover:bg-red-50 px-4 h-12 text-sm font-medium border border-transparent hover:border-red-100 rounded-xl"

@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuth } from '../components/AuthProvider';
 import { API_BASE_URL } from '../constants/api';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function RegisterScreen() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const { signIn } = useAuth(); // We might auto-login later if needed.
@@ -82,24 +85,26 @@ export default function RegisterScreen() {
   };
 
   return (
-    <KeyboardAvoidingView 
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
-      className="flex-1 bg-[#f8fafd]"
-    >
-      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
-        <View className="px-8 py-8">
-          <View className="items-center mb-10">
-            <Text className="text-4xl font-bold text-[#1a2333] font-serif">
-              Account Maken
-            </Text>
-            <Text className="text-[#5c687e] mt-2">Begin vandaag met leren!</Text>
+    <SafeAreaView className="flex-1 bg-[#f8fafd]" edges={['top', 'bottom']}>
+      <KeyboardAvoidingView 
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        className="flex-1"
+      >
+        <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-8 pt-8">
+          <TouchableOpacity onPress={() => router.back()} className="w-10 h-10 mb-6 justify-center">
+            <Ionicons name="arrow-back" size={24} color="#1a2333" />
+          </TouchableOpacity>
+
+          <View className="mb-10">
+            <Text className="text-4xl font-serif font-bold text-[#1a2333] mb-3">Account Maken</Text>
+            <Text className="text-[#5c687e] text-[16px]">Begin vandaag met leren en groeien!</Text>
           </View>
 
           <View className="space-y-4 gap-4">
              <View>
-              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">Naam</Text>
+              <Text className="text-[#1a2333] font-medium mb-2 ml-1 text-sm">Naam</Text>
               <TextInput
-                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
+                className="bg-white border border-[#e4e7f1] rounded-[18px] px-5 py-4 text-[#1a2333] text-[16px]"
                 placeholder="Je naam"
                 placeholderTextColor="#94a3b8"
                 value={name}
@@ -108,9 +113,9 @@ export default function RegisterScreen() {
             </View>
 
             <View>
-              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">E-mailadres</Text>
+              <Text className="text-[#1a2333] font-medium mb-2 ml-1 text-sm">E-mailadres</Text>
               <TextInput
-                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
+                className="bg-white border border-[#e4e7f1] rounded-[18px] px-5 py-4 text-[#1a2333] text-[16px]"
                 placeholder="naam@voorbeeld.nl"
                 placeholderTextColor="#94a3b8"
                 value={email}
@@ -121,19 +126,27 @@ export default function RegisterScreen() {
             </View>
 
             <View>
-              <Text className="text-[#5c687e] font-medium mb-1.5 ml-1">Wachtwoord</Text>
-              <TextInput
-                className="border border-[#e4e7f1] rounded-2xl px-4 py-4 bg-white text-[#1a2333]"
-                placeholder="Minimaal 6 tekens"
-                placeholderTextColor="#94a3b8"
-                value={password}
-                onChangeText={setPassword}
-                secureTextEntry
-              />
+              <Text className="text-[#1a2333] font-medium mb-2 ml-1 text-sm">Wachtwoord</Text>
+              <View className="relative">
+                <TextInput
+                  className="bg-white border border-[#e4e7f1] rounded-[18px] px-5 py-4 text-[#1a2333] text-[16px] pr-12"
+                  placeholder="Minimaal 6 tekens"
+                  placeholderTextColor="#94a3b8"
+                  value={password}
+                  onChangeText={setPassword}
+                  secureTextEntry={!showPassword}
+                />
+                <TouchableOpacity
+                  onPress={() => setShowPassword(!showPassword)}
+                  className="absolute right-4 top-1/2 -mt-3"
+                >
+                  <Ionicons name={showPassword ? "eye-off-outline" : "eye-outline"} size={24} color="#5c687e" />
+                </TouchableOpacity>
+              </View>
             </View>
 
             <TouchableOpacity 
-              className="bg-[#232b38] py-4 rounded-[20px] items-center mt-6 shadow-lg shadow-black/10 active:opacity-80 transition-opacity"
+              className="bg-[#232b38] py-[18px] rounded-[18px] items-center mt-6 shadow-sm"
               onPress={handleRegister}
               disabled={loading}
             >
@@ -144,15 +157,15 @@ export default function RegisterScreen() {
               )}
             </TouchableOpacity>
 
-            <View className="flex-row justify-center mt-6">
-              <Text className="text-[#5c687e]">Al een account? </Text>
+            <View className="flex-row justify-center mt-8">
+              <Text className="text-[#5c687e] text-[15px]">Al een account? </Text>
               <TouchableOpacity onPress={() => router.push('/login')}>
-                <Text className="text-[#1a2333] font-bold">Log in</Text>
+                <Text className="text-[#1a2333] font-bold text-[15px]">Log in</Text>
               </TouchableOpacity>
             </View>
           </View>
-        </View>
-      </ScrollView>
-    </KeyboardAvoidingView>
+        </ScrollView>
+      </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }

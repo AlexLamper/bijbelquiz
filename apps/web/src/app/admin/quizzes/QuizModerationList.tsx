@@ -121,6 +121,12 @@ export default function QuizModerationList() {
                 >
                     Afgewezen
                 </TabsTrigger>
+                <TabsTrigger 
+                    value="draft"
+                    className="rounded-none border-b-2 border-transparent data-[state=active]:border-slate-500 data-[state=active]:text-slate-700 px-4 py-3"
+                >
+                    Concepten
+                </TabsTrigger>
             </TabsList>
 
             <div className="mt-6 space-y-4">
@@ -153,6 +159,12 @@ export default function QuizModerationList() {
                                 <Button variant="ghost" size="sm" asChild>
                                     <Link href={`/quiz/${quiz._id}`} target="_blank">
                                         <Eye className="h-4 w-4 mr-2" /> Bekijken
+                                    </Link>
+                                </Button>
+                                
+                                <Button variant="ghost" size="sm" asChild className="text-blue-600 hover:text-blue-800 hover:bg-blue-50">
+                                    <Link href={`/admin/quizzes/${quiz._id}/edit`}>
+                                        Bewerken
                                     </Link>
                                 </Button>
                                 

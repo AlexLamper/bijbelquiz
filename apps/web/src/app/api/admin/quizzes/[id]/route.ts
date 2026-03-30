@@ -67,3 +67,60 @@ export async function DELETE(
       return new NextResponse("Internal Server Error", { status: 500 });
     }
   }
+
+export async function GET(
+  req: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  const session = await getServerSession(authOptions);
+
+  if (!session || session.user.role !== 'admin') {
+    return new NextResponse("Forbidden", { status: 403 });
+  }
+
+  try {
+    await connectDB();
+    const { id } = await params;
+    const quiz = await Quiz.findById(id).populate("categoryId");
+
+    if (!quiz) {
+      return new NextResponse("Not Found", { status: 404 });
+    }
+
+    return NextResponse.json(quiz);
+  } catch (error) {
+    console.error("[ADMIN_QUIZZES_ID_GET]", error);
+    return new NextResponse("Internal Server Error", { status: 500 });
+  }
+}
+
+export async function PUT(
+  req: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  const session = await getServerSession(authOptions);
+
+  if (!session || session.user.role !== 'admin') {
+    return new NextResponse("Forbidden", { status: 403 });
+  }
+
+  try {
+    await connectDB();
+    const { id } = await params;
+    const body = await req.json();
+
+    const quiz = await Quiz.findByIdAndUpdate(id, body, {
+      new: true,
+      runValidators: true,
+    });
+
+    if (!quiz) {
+      return new NextResponse("Not Found", { status: 404 });
+    }
+
+    return NextResponse.json(quiz);
+  } catch (error) {
+    console.error("[ADMIN_QUIZZES_ID_PUT]", error);
+    return new NextResponse("Internal Server Error", { status: 500 });
+  }
+}

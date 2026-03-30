@@ -27,7 +27,7 @@ export default async function AdminPage() {
           <p className="text-muted-foreground">Beheer quizzen en gebruikersinzendingen.</p>
         </div>
         <Button asChild className="bg-primary hover:bg-primary/90">
-          <Link href="/quizzes/create" className="flex items-center gap-2">
+          <Link href="/admin/quizzes/create" className="flex items-center gap-2">
             <Plus className="h-4 w-4" /> Nieuwe Quiz Maken
           </Link>
         </Button>

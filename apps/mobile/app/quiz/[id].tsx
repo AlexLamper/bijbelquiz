@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator, Alert } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator, Alert, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome, Ionicons } from '@expo/vector-icons';
 import { API_BASE_URL } from '../../constants/api';
+import { getQuizImage } from '../../constants/quizImages';
 
 interface Answer {
   text: string;
@@ -21,14 +22,17 @@ interface Question {
 }
 
 interface Quiz {
+  description: string;
   _id: string;
   title: string;
+  imageUrl?: string;
   questions: Question[];
 }
 
 export default function MobileQuizPlayer() {
   const { id } = useLocalSearchParams();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
+  const [hasStarted, setHasStarted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -44,27 +48,34 @@ export default function MobileQuizPlayer() {
 
   const fetchQuiz = async () => {
     try {
-      // Use the token if available to handle any auth-specific logic if needed,
-      // though typically public quizzes are available to all.
-      const token = await SecureStore.getItemAsync('userToken');
-      const headers: HeadersInit = {};
-      if (token) headers['Authorization'] = `Bearer ${token}`;
-
-      const response = await fetch(`${API_BASE_URL}/api/quizzes/${id}`, { headers });
+      // Find the quiz from local JSON instead of API
+      const allQuizzes = require('../../assets/data/quizzes.json');
+      const foundQuiz = allQuizzes.find((q: any) => 
+         q._id === id || (q._id && q._id.$oid === id)
+      );
       
-      if (!response.ok) {
-        if (response.status === 403 || response.status === 401) {
-             Alert.alert('Toegang geweigerd', 'Deze quiz is alleen voor Premium leden.');
-             router.back();
-             return;
-        }
-        throw new Error('Failed to fetch quiz');
+      if (!foundQuiz) {
+        throw new Error('Quiz niet gevonden');
       }
-      const data = await response.json();
-      setQuiz(data);
+
+      // Format if it has MongoDB specific $oid
+      const formattedQuiz = {
+         ...foundQuiz,
+         _id: foundQuiz._id?.$oid || foundQuiz._id,
+         questions: foundQuiz.questions.map((q: any) => ({
+             ...q,
+             _id: q._id?.$oid || q._id,
+             answers: q.answers?.map((a: any) => ({
+                 ...a,
+                 _id: a._id?.$oid || a._id
+             }))
+         }))
+      };
+
+      setQuiz(formattedQuiz);
     } catch (error) {
       console.error(error);
-      Alert.alert('Fout', 'Kon de quiz niet laden. Is de server gestart?');
+      Alert.alert('Fout', 'Kon de quiz niet laden.');
       router.back();
     } finally {
       setLoading(false);
@@ -127,64 +138,122 @@ export default function MobileQuizPlayer() {
   
   if (!quiz) return null;
 
+  if (!hasStarted) {
+    return (
+      <SafeAreaView className="flex-1 bg-[#f8fafd] px-8">
+        <TouchableOpacity onPress={() => router.back()} className="w-10 h-10 mt-6 mb-2 justify-center">
+            <Ionicons name="arrow-back" size={26} color="#1a2333" />
+        </TouchableOpacity>
+        
+        <View className="items-center mb-8 flex-1 justify-center -mt-16">
+          <View className="w-24 h-24 bg-[#dbe1ee] rounded-3xl mb-6 overflow-hidden border border-slate-200">
+            {getQuizImage(quiz.imageUrl) ? (
+              <>
+                <Image
+                  source={getQuizImage(quiz.imageUrl)}
+                  style={{ width: '100%', height: '100%' }}
+                  resizeMode="cover"
+                />
+                <View style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.12)' }} />
+              </>
+            ) : (
+              <View className="flex-1 items-center justify-center">
+                <FontAwesome name="book" size={40} color="#3c4a63" />
+              </View>
+            )}
+          </View>
+          <Text className="text-3xl font-serif font-bold text-center text-[#1c223a] mb-4">
+            {quiz.title}
+          </Text>
+          <Text className="text-[16px] text-center text-[#5c687e] leading-relaxed mb-8">
+            {quiz.description || "Start the quiz and test your knowledge!"}
+          </Text>
+          
+          <View className="flex-row items-center gap-6 mb-8">
+            <View className="items-center">
+              <Text className="text-xl font-bold text-[#1c223a]">{quiz.questions?.length || 0}</Text>
+              <Text className="text-[#8e94a8] text-sm">Vragen</Text>
+            </View>
+            <View className="h-6 w-[1] bg-slate-300"></View>
+            <View className="items-center">
+              <Text className="text-xl font-bold text-[#1c223a]">+{(quiz.questions?.length || 0) * 10}</Text>
+              <Text className="text-[#8e94a8] text-sm">XP beloning</Text>
+            </View>
+          </View>
+        </View>
+
+        <TouchableOpacity 
+          className="bg-[#1a2333] py-4 rounded-2xl items-center shadow-lg active:scale-95 transition-transform mb-8" 
+          onPress={() => setHasStarted(true)}
+        >
+          <Text className="text-white font-bold text-lg">Start Quiz</Text>
+        </TouchableOpacity>
+      </SafeAreaView>
+    );
+  }
+
   const currentQuestion = quiz.questions[currentIndex];
 
   if (isFinished) {
     return (
-      <SafeAreaView className="flex-1 bg-background justify-center px-8">
+      <SafeAreaView className="flex-1 bg-[#f8fafd] justify-center px-8">
         <View className="items-center mb-8">
-            <View className="bg-secondary/20 p-6 rounded-full mb-6">
-                <FontAwesome name="trophy" size={60} color="#f5a623" />
+            <View className="w-24 h-24 bg-[#dbe1ee] rounded-3xl mb-6 items-center justify-center border border-slate-200">
+                <FontAwesome name="trophy" size={40} color="#f5a623" />
             </View>
-            <Text className="text-3xl font-serif font-bold text-center text-primary mb-2">Quiz Voltooid!</Text>
-            <Text className="text-lg text-center text-muted-foreground">
-            Je resultaat voor "{quiz.title}"
+            <Text className="text-3xl font-serif font-bold text-center text-[#1a2333] mb-2">Quiz Voltooid!</Text>
+            <Text className="text-[16px] text-center text-[#5c687e]">
+              Je resultaat voor "{quiz.title}"
             </Text>
         </View>
 
-        <View className="bg-card border border-border rounded-2xl p-8 mb-10 shadow-sm items-center">
-          <Text className="text-muted-foreground mb-1 uppercase text-xs font-bold tracking-wider">Jouw Score</Text>
-          <Text className="text-primary text-6xl font-black mb-2">{score}/{quiz.questions.length}</Text>
-          <View className="flex-row items-center gap-2 bg-green-100 px-3 py-1 rounded-full">
+        <View className="bg-white border border-[#e4e7f1] rounded-3xl p-8 mb-10 shadow-sm items-center">
+          <Text className="text-[#8e94a8] mb-1 uppercase text-xs font-bold tracking-wider">Jouw Score</Text>
+          <Text className="text-[#1a2333] text-6xl font-black mb-2">{score}/{quiz.questions.length}</Text>
+          <View className="flex-row items-center gap-2 bg-green-50 px-3 py-1.5 rounded-full mb-4">
             <FontAwesome name="check" size={12} color="#15803d" />
             <Text className="text-green-700 font-bold text-sm">Goed gedaan!</Text>
           </View>
-          <Text className="text-primary font-bold mt-4">+{xpEarned} XP</Text>
+          <View className="flex-row items-center gap-2">
+            <FontAwesome name="star" size={16} color="#d97706" />
+            <Text className="text-[#1a2333] font-bold text-lg">+{xpEarned} XP</Text>
+          </View>
         </View>
 
         <TouchableOpacity 
-          className="bg-primary py-4 rounded-xl items-center shadow-md active:scale-95 transition-transform" 
+          className="bg-[#1a2333] py-4 rounded-2xl items-center shadow-lg active:scale-95 transition-transform" 
           onPress={() => router.replace('/(tabs)')}
         >
-          <Text className="text-primary-foreground font-bold text-lg">Terug naar overzicht</Text>
+          <Text className="text-white font-bold text-lg">Terug naar overzicht</Text>
         </TouchableOpacity>
       </SafeAreaView>
     );
   }
 
   return (
-    <SafeAreaView className="flex-1 bg-background">
+    <SafeAreaView className="flex-1 bg-white">
       <View className="px-6 py-4 flex-1">
-        <View className="flex-row justify-between items-center mb-6 pt-2">
-          <View className="flex-row items-center gap-2">
-             <Text className="text-muted-foreground font-medium">Vraag {currentIndex + 1} <Text className="text-slate-300">/</Text> {quiz.questions.length}</Text>
-          </View>
-          <View className="bg-secondary/20 px-3 py-1 rounded-full flex-row items-center gap-1.5">
-            <FontAwesome name="star" size={12} color="#d97706" />
-            <Text className="text-secondary-foreground font-bold">Score: {score}</Text>
-          </View>
+        
+        <View className="flex-row items-center justify-between mb-4 pt-2">
+          <TouchableOpacity onPress={() => router.back()} className="p-2 -ml-2">
+            <Ionicons name="close" size={26} color="#1a2333" />
+          </TouchableOpacity>
+          <Text className="text-[#1a2333] font-semibold text-[15px]">Vraag {currentIndex + 1}/{quiz.questions.length}</Text>
+          <View className="w-10"></View>
         </View>
 
-        <View className="mb-8">
-            <View className="h-2 bg-slate-200 rounded-full w-full overflow-hidden">
+        
+        <View className="mb-10 items-center w-full">
+            <View className="h-1 bg-[#e4e7f1] rounded-full w-full overflow-hidden">
                 <View 
                     style={{ width: `${((currentIndex + 1) / quiz.questions.length) * 100}%` }} 
-                    className="h-full bg-primary rounded-full"
+                    className="h-full bg-[#1a2333] rounded-full"
                 />
             </View>
         </View>
 
-        <Text className="text-2xl font-serif font-bold text-primary dark:text-white mb-8 leading-8 h-[20%]">
+        
+        <Text className="text-[22px] font-serif text-[#1a2333] mb-10 leading-[32px] text-center px-4">
           {currentQuestion.text}
         </Text>
 
@@ -193,81 +262,76 @@ export default function MobileQuizPlayer() {
             const isSelected = selectedAnswer === index;
             const isCorrect = answer.isCorrect;
             
-            let borderColor = 'border-border';
-            let bgColor = 'bg-card';
-            let textColor = 'text-foreground';
-            let iconName = 'circle-o';
-            let iconColor = '#dcd7ce';
-            
+            // Standard state styling: rounded gray boxes, black text, left aligned, no borders
+            let bgColor = 'bg-[#f0f2f5]';
+            let textColor = 'text-[#1a2333]';
+            let iconName: any = null;
+
             if (hasAnswered) {
               if (isCorrect) {
-                 borderColor = 'border-green-500';
-                 bgColor = 'bg-green-50';
-                 textColor = 'text-green-900';
-                 iconName = 'check-circle';
-                 iconColor = '#22c55e';
+                bgColor = 'bg-emerald-500';
+                textColor = 'text-white';
+                iconName = 'checkmark';
               } else if (isSelected) {
-                 borderColor = 'border-red-500';
-                 bgColor = 'bg-red-50';
-                 textColor = 'text-red-900';
-                 iconName = 'times-circle';
-                 iconColor = '#ef4444';
+                bgColor = 'bg-rose-500';
+                textColor = 'text-white';
+                iconName = 'close';
               } else {
-                 // Dim non-selected answers
-                 borderColor = 'border-slate-100';
-                 textColor = 'text-slate-400';
+                textColor = 'text-[#8e94a8]';
               }
             } else if (isSelected) {
-              borderColor = 'border-primary';
-              bgColor = 'bg-primary/5';
-              textColor = 'text-primary';
-              iconName = 'dot-circle-o';
-              iconColor = '#152d2f';
+               bgColor = 'bg-[#1a2333]';
+               textColor = 'text-white';
             }
 
             return (
               <TouchableOpacity
-                key={answer._id}
+                key={answer._id || index}
                 onPress={() => handleAnswer(answer.isCorrect, index)}
                 disabled={hasAnswered}
-                className={`border-2 rounded-xl p-5 mb-4 flex-row items-center gap-4 ${borderColor} ${bgColor} active:scale-[0.99] transition-transform shadow-sm`}
+                className={`${bgColor} rounded-[20px] p-5 mb-4 flex-row items-center justify-between active:scale-[0.99] transition-transform`}
               >
-                <FontAwesome name={iconName as any} size={24} color={iconColor} />
-                <Text className={`text-lg font-medium flex-1 ${textColor}`}>
+                <Text className={`text-[17px] ${textColor}`}>
                   {answer.text}
                 </Text>
+                {iconName ? (
+                   <Ionicons name={iconName} size={24} color="white" />
+                ) : null}
               </TouchableOpacity>
             );
           })}
         </ScrollView>
 
-        {hasAnswered && (
-          <View className="pt-4 border-t border-border mt-2">
-            {currentQuestion.explanation && (
-              <View className="bg-blue-50 p-4 rounded-xl mb-4 border border-blue-100">
-                <View className="flex-row items-center gap-2 mb-1">
-                    <FontAwesome name="info-circle" size={16} color="#3b82f6" />
-                    <Text className="font-bold text-blue-800">Uitleg</Text>
-                </View>
-                <Text className="text-blue-900 leading-5">{currentQuestion.explanation}</Text>
-                {currentQuestion.bibleReference ? (
-                  <Text className="text-blue-700 mt-2 font-semibold">{currentQuestion.bibleReference}</Text>
-                ) : null}
-              </View>
+        {hasAnswered ? (
+          <View className="pt-5 mt-2 border-t border-[#e4e7f1]">
+            <View className="flex-row justify-between items-start mb-2">
+               <Text className="text-[20px] font-bold text-[#1a2333]">
+                 {currentQuestion.answers[selectedAnswer!]?.isCorrect ? 'Correct!' : 'Helaas!'}
+               </Text>
+               <Ionicons name="leaf-outline" size={24} color="#1a2333" />
+            </View>
+
+            {!!currentQuestion.explanation && (
+               <Text className="text-[#5c687e] text-[15px] leading-[22px] mb-2">
+                 {currentQuestion.explanation}
+               </Text>
             )}
+            {!!currentQuestion.bibleReference && (
+               <Text className="text-[#5c687e] text-[14px]">
+                 {currentQuestion.bibleReference}
+               </Text>
+            )}
+
             <TouchableOpacity 
-              className="bg-primary py-4 rounded-xl items-center shadow-lg active:translate-y-1 transition-transform" 
+              className="bg-[#1a2333] py-4 rounded-[20px] items-center mt-6 active:scale-[0.98] transition-transform" 
               onPress={handleNext}
             >
-              <View className="flex-row items-center gap-2">
-                <Text className="text-primary-foreground font-bold text-lg">
-                    {currentIndex < quiz.questions.length - 1 ? 'Volgende vraag' : 'Bekijk resultaat'}
-                </Text>
-                <FontAwesome name="arrow-right" size={16} color="white" />
-              </View>
+              <Text className="text-white font-bold text-[17px]">
+                  {currentIndex < quiz.questions.length - 1 ? 'Volgende' : 'Bekijk resultaat'}
+              </Text>
             </TouchableOpacity>
           </View>
-        )}
+        ) : null}
       </View>
     </SafeAreaView>
   );

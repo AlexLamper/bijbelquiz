@@ -58,9 +58,9 @@ function RootLayoutNav() {
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-          <Stack.Screen name="quiz/[id]" options={{ presentation: 'card', headerTitle: 'Quiz' }} />
-          <Stack.Screen name="login" options={{ presentation: 'modal', headerShown: false }} />
-          <Stack.Screen name="register" options={{ presentation: 'card', headerShown: false }} />
+          <Stack.Screen name="quiz/[id]" options={{ headerShown: false }} />
+          <Stack.Screen name="login" options={{ headerShown: false }} />
+          <Stack.Screen name="register" options={{ headerShown: false }} />
         </Stack>
       </ThemeProvider>
     </AuthProvider>

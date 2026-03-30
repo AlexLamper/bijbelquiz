@@ -5,6 +5,7 @@ import { useRouter } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
 import { useAuth } from '../../components/AuthProvider';
 import { API_BASE_URL } from '../../constants/api';
+import { getQuizImage } from '../../constants/quizImages';
 
 interface Quiz {
   _id: string;
@@ -12,6 +13,7 @@ interface Quiz {
   description: string;
   difficulty: string;
   isPremium?: boolean;
+  imageUrl?: string;
   questions?: any[];
   category?: { title: string };
   categoryId?: { title: string; _id: string } | string;
@@ -30,26 +32,17 @@ export default function HomeScreen() {
   const fetchQuizzes = async () => {
     try {
       setError(null);
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 second timeout
-
-      const response = await fetch(`${API_BASE_URL}/api/quizzes`, { signal: controller.signal });
-      clearTimeout(timeoutId);
-
-      if (!response.ok) throw new Error(`Server returned ${response.status}`);
-      
-      const data = await response.json();
+      // Load directly from local JSON file
+      const rawData = require('../../assets/data/quizzes.json');
+      const data = rawData.map((q: any) => ({
+        ...q,
+        _id: q._id?.$oid || q._id,
+        categoryId: q.categoryId?.$oid || q.categoryId,
+      }));
       setQuizzes(Array.isArray(data) ? data : []);
     } catch (err: any) {
       console.error('Failed to fetch quizzes:', err);
-      const msg = err.name === 'AbortError' 
-        ? 'Verbindingstime-out. Is de server gestart?' 
-        : 'Kon geen verbinding maken met de server.';
-      setError(msg);
-      // Only alert on manual refresh or first load
-      if (refreshing || loading) {
-           // Silence Alert for better UX if we already show it in UI
-      }
+      setError('Kon data niet laden.');
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -84,11 +77,23 @@ export default function HomeScreen() {
         activeOpacity={0.8}
       >
         <View className="h-[200px] bg-[#dbe1ee] rounded-2xl mb-3 overflow-hidden border border-slate-200 shadow-sm relative">
-            {/* Fake Image Background */}
-            <View className="absolute inset-0 bg-[#3c4a63] opacity-10"></View>
-            <View className="absolute inset-0 justify-center items-center">
-                <FontAwesome name="image" size={40} color="#bac6da" />
-            </View>
+            {getQuizImage(item.imageUrl) ? (
+              <>
+                <Image
+                  source={getQuizImage(item.imageUrl)}
+                  style={{ width: '100%', height: '100%' }}
+                  resizeMode="cover"
+                />
+                <View style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.12)' }} />
+              </>
+            ) : (
+              <>
+                <View className="absolute inset-0 bg-[#3c4a63] opacity-10"></View>
+                <View className="absolute inset-0 justify-center items-center">
+                  <FontAwesome name="image" size={40} color="#bac6da" />
+                </View>
+              </>
+            )}
 
             {item.isPremium && (
               <View className="absolute top-3 right-3 bg-amber-500 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
@@ -157,7 +162,7 @@ export default function HomeScreen() {
               <Text className="text-[19px] font-semibold text-[#1c223a]">Aanbevolen voor jou</Text>
             </View>
 
-            {error && (
+            {error ? (
               <View className="mt-4 p-4 bg-red-50 border border-red-100 rounded-xl flex-row items-center gap-3 mb-4">
                 <FontAwesome name="exclamation-triangle" size={16} color="#ef4444" />
                 <Text className="text-red-600 flex-1 font-medium">{error}</Text>
@@ -165,11 +170,11 @@ export default function HomeScreen() {
                     <Text className="text-red-700 font-bold">Opnieuw</Text>
                 </TouchableOpacity>
               </View>
-            )}
+            ) : null}
         </View>
 
         <FlatList
-          data={quizzes}
+          data={quizzes.filter(q => q.title.toLowerCase().includes(searchQuery.toLowerCase()) || (q.description && q.description.toLowerCase().includes(searchQuery.toLowerCase())))}
           renderItem={renderQuizItem}
           keyExtractor={(item) => item._id}
           horizontal
@@ -187,9 +192,29 @@ export default function HomeScreen() {
         </View>
         
         <View className="px-5">
-           <View className="h-[140px] bg-[#dbe1ee] rounded-2xl w-full border border-slate-200 overflow-hidden relative">
-               <View className="absolute inset-0 bg-[#3c4a63] opacity-20"></View>
-           </View>
+        <View className="gap-4">
+          {[
+            { title: 'Profeten & Beloften', subtitle: 'Jesaja, Jeremia en de beloften', imageUrl: '/images/quizzes/img3.png' },
+            { title: 'Leven van Jezus', subtitle: 'Wonderen en het evangelie', imageUrl: '/images/quizzes/img5.png' },
+            { title: 'Psalmen voor elke dag', subtitle: 'Aanbidding, troost en gebed', imageUrl: '/images/quizzes/img8.png' },
+          ].map((theme) => (
+            <View key={theme.title} className="h-[140px] bg-[#dbe1ee] rounded-2xl w-full border border-slate-200 overflow-hidden relative">
+              {getQuizImage(theme.imageUrl) ? (
+                <Image
+                  source={getQuizImage(theme.imageUrl)}
+                  style={{ width: '100%', height: '100%' }}
+                  resizeMode="cover"
+                />
+              ) : (
+                <View className="absolute inset-0 bg-[#3c4a63] opacity-20"></View>
+              )}
+              <View className="absolute inset-0 bg-black/30 justify-end p-4">
+                <Text className="text-white font-bold text-[16px]">{theme.title}</Text>
+                <Text className="text-white/80 text-[12px]">{theme.subtitle}</Text>
+              </View>
+            </View>
+          ))}
+        </View>
         </View>
 
       </ScrollView>
