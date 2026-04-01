@@ -1,13 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, Image, ActivityIndicator, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { useAuth } from '../../components/AuthProvider';
 import { FontAwesome, Feather, Ionicons } from '@expo/vector-icons';
+import * as SecureStore from 'expo-secure-store';
+import { API_BASE_URL } from '../../constants/api';
+
+interface UserStats {
+  xp: number;
+  level: number;
+  levelTitle: string;
+  levelProgress: number;
+  nextLevelXp: number;
+  streak: number;
+  totalQuizzes: number;
+  avgScore: number;
+}
 
 export default function ProfileScreen() {
   const { user, loading, logout, isPremium } = useAuth();
   const router = useRouter();
+  const [stats, setStats] = useState<UserStats | null>(null);
+  const [loadingStats, setLoadingStats] = useState(true);
+
+  const fetchStats = async () => {
+    try {
+      const token = await SecureStore.getItemAsync('userToken');
+      if (!token) {
+        setLoadingStats(false);
+        return;
+      }
+
+      const response = await fetch(`${API_BASE_URL}/api/user/stats`, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setStats(data);
+      }
+    } catch (err) {
+      console.error('Failed to fetch stats:', err);
+    } finally {
+      setLoadingStats(false);
+    }
+  };
+
+  useEffect(() => {
+    if (user && !loading) {
+      fetchStats();
+    } else {
+      setLoadingStats(false);
+    }
+  }, [user, loading]);
 
   if (loading) {
     return (
@@ -29,7 +77,7 @@ export default function ProfileScreen() {
             Log in om je voortgang bij te houden, badges te verdienen en meer uit je Bijbelstudie te halen.
           </Text>
           <TouchableOpacity
-            className="bg-[#1a2333] w-full py-4 rounded-[20px] shadow-sm active:opacity-90 transition-opacity"
+            className="bg-[#547ee9] w-full py-4 rounded-[20px] shadow-sm active:opacity-90 transition-opacity"
             onPress={() => router.push('/login')}
           >
             <Text className="text-white font-bold text-center text-[17px]">Inloggen / Registreren</Text>
@@ -62,15 +110,75 @@ export default function ProfileScreen() {
           <Text className="text-[#8e94a8] text-[16px] mb-4">{user.email}</Text>
         </View>
 
-        <View className="bg-white rounded-[24px] border border-[#e4e7f1] p-6 mb-6 shadow-sm flex-row items-center justify-between">
-          <View>
-             <Text className="text-[#8e94a8] uppercase text-[11px] font-bold tracking-widest mb-1.5">Totale XP</Text>
-             <Text className="text-4xl font-black text-[#1a2333] font-serif">{user.xp ?? 0}</Text>
+        {/* Stats Grid */}
+        {stats && (
+          <>
+            <View className="flex-row gap-3 mb-6">
+              <View className="flex-1 bg-white rounded-[20px] border border-[#e4e7f1] p-5 shadow-sm">
+                <View className="flex-row items-start justify-between mb-3">
+                  <Text className="text-[#5b7dd9] uppercase text-[10px] font-bold tracking-widest">Totale XP</Text>
+                  <FontAwesome name="trophy" size={16} color="#5b7dd9" />
+                </View>
+                <Text className="text-3xl font-black text-[#1a2333] font-serif">{stats.xp}</Text>
+              </View>
+
+              <View className="flex-1 bg-white rounded-[20px] border border-[#e4e7f1] p-5 shadow-sm">
+                <View className="flex-row items-start justify-between mb-3">
+                  <Text className="text-[#5b7dd9] uppercase text-[10px] font-bold tracking-widest">Reeks</Text>
+                  <Ionicons name="flame" size={18} color="#f5a623" />
+                </View>
+                <Text className="text-3xl font-black text-[#1a2333] font-serif">{stats.streak}</Text>
+              </View>
+            </View>
+
+            <View className="bg-white rounded-[24px] border border-[#e4e7f1] p-6 mb-6 shadow-sm">
+              <View className="flex-row items-center justify-between mb-4">
+                <View>
+                  <Text className="text-[#5b7dd9] uppercase text-[10px] font-bold tracking-widest mb-1">Niveau {stats.level}</Text>
+                  <Text className="text-2xl font-bold text-[#1a2333] font-serif">{stats.levelTitle}</Text>
+                </View>
+                <Text className="text-[#8e94a8] text-[14px] font-medium">{stats.levelProgress}%</Text>
+              </View>
+              
+              <View className="h-2 bg-[#f0f2f5] rounded-full overflow-hidden">
+                <View 
+                  className="h-full bg-[#5b7dd9] rounded-full"
+                  style={{ width: `${stats.levelProgress}%` }}
+                />
+              </View>
+              
+              <Text className="text-[#8e94a8] text-[12px] mt-2">
+                {stats.xp} / {stats.nextLevelXp} XP naar volgend niveau
+              </Text>
+            </View>
+
+            <View className="flex-row gap-3 mb-6">
+              <View className="flex-1 bg-white rounded-[20px] border border-[#e4e7f1] p-5 shadow-sm">
+                <Text className="text-[#8e94a8] text-[11px] font-medium mb-1">Quizzen Gedaan</Text>
+                <Text className="text-2xl font-black text-[#1a2333] font-serif">{stats.totalQuizzes}</Text>
+              </View>
+
+              <View className="flex-1 bg-white rounded-[20px] border border-[#e4e7f1] p-5 shadow-sm">
+                <Text className="text-[#8e94a8] text-[11px] font-medium mb-1">Gem. Score</Text>
+                <Text className="text-2xl font-black text-[#1a2333] font-serif">{stats.avgScore}%</Text>
+              </View>
+            </View>
+          </>
+        )}
+
+        {!stats && !loadingStats && (
+          <View className="bg-white rounded-[24px] border border-[#e4e7f1] p-6 mb-6 shadow-sm">
+            <View className="flex-row items-center justify-between">
+              <View>
+                <Text className="text-[#8e94a8] uppercase text-[11px] font-bold tracking-widest mb-1.5">Totale XP</Text>
+                <Text className="text-4xl font-black text-[#1a2333] font-serif">{user.xp ?? 0}</Text>
+              </View>
+              <View className="bg-[#f0f2f5] p-4 rounded-[16px]">
+                <Ionicons name="flame" size={32} color="#f5a623" />
+              </View>
+            </View>
           </View>
-          <View className="bg-[#f0f2f5] p-4 rounded-[16px]">
-             <Ionicons name="flame" size={32} color="#f5a623" />
-          </View>
-        </View>
+        )}
 
         {/* Instellingen List */}
         <View className="bg-white rounded-[24px] border border-[#e4e7f1] overflow-hidden mb-8 shadow-sm">

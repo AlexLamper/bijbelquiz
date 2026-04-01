@@ -77,22 +77,16 @@ export default function Navbar() {
                 )}
 
                 <div className="flex items-center gap-3 pl-3 border-l border-[#d6e2fa]/80 dark:border-border/40">
-                  <Link href="/dashboard" className="hidden items-center hover:opacity-80 transition-opacity sm:flex">
-                    <span className="text-sm font-bold text-foreground">{session.user.name || 'Gebruiker'}</span>
+                  <Link href="/profile" className="hidden sm:flex items-center gap-2.5 rounded-full pl-1.5 pr-4 py-1.5 bg-slate-50 hover:bg-slate-100 transition-colors border border-slate-200 shadow-sm">
+                    <div className="bg-[#547ee9] text-white rounded-full p-1 shadow-inner">
+                      <User className="h-3.5 w-3.5" />
+                    </div>
+                    <span className="text-xs font-extrabold tracking-wide uppercase text-[#1a2942] truncate max-w-[120px]">{session.user.name || 'Gebruiker'}</span>
                   </Link>
-                  <Link href="/profile" className="hidden sm:flex">
-                    <Button 
-                      variant="ghost" 
-                      size="icon"
-                      aria-label="Profiel"
-                      className="text-muted-foreground hover:text-[#5b7dd9] transition-colors"
-                    >
-                      <User className="h-4 w-4" />
-                    </Button>
-                  </Link>
-                  <Button 
+                  
+                  <Button
                     onClick={() => signOut({ callbackUrl: '/' })}
-                    variant="ghost" 
+                    variant="ghost"
                     size="icon"
                     aria-label="Uitloggen"
                     className="text-muted-foreground hover:text-destructive transition-colors"

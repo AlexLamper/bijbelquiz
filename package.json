@@ -20,6 +20,7 @@
   "packageManager": "npm@10.2.4",
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
+    "expo-dev-client": "~6.0.20",
     "react-hook-form": "^7.72.0",
     "zod": "^4.3.6"
   }

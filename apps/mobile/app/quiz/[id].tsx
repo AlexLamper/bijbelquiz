@@ -48,35 +48,64 @@ export default function MobileQuizPlayer() {
 
   const fetchQuiz = async () => {
     try {
-      // Find the quiz from local JSON instead of API
-      const allQuizzes = require('../../assets/data/quizzes.json');
-      const foundQuiz = allQuizzes.find((q: any) => 
-         q._id === id || (q._id && q._id.$oid === id)
-      );
-      
-      if (!foundQuiz) {
-        throw new Error('Quiz niet gevonden');
+      // Fetch quiz from API
+      const response = await fetch(`${API_BASE_URL}/api/quizzes/${id}`);
+
+      if (!response.ok) {
+        throw new Error('Quiz not found');
       }
+
+      const foundQuiz = await response.json();
 
       // Format if it has MongoDB specific $oid
       const formattedQuiz = {
-         ...foundQuiz,
-         _id: foundQuiz._id?.$oid || foundQuiz._id,
-         questions: foundQuiz.questions.map((q: any) => ({
-             ...q,
-             _id: q._id?.$oid || q._id,
-             answers: q.answers?.map((a: any) => ({
-                 ...a,
-                 _id: a._id?.$oid || a._id
-             }))
-         }))
+        ...foundQuiz,
+        _id: foundQuiz._id?.$oid || foundQuiz._id,
+        questions: foundQuiz.questions.map((q: any) => ({
+          ...q,
+          _id: q._id?.$oid || q._id,
+          answers: q.answers?.map((a: any) => ({
+            ...a,
+            _id: a._id?.$oid || a._id,
+          })),
+        })),
       };
 
       setQuiz(formattedQuiz);
     } catch (error) {
-      console.error(error);
-      Alert.alert('Fout', 'Kon de quiz niet laden.');
-      router.back();
+      console.error('Failed to fetch quiz:', error);
+
+      // Fallback to local JSON if API fails
+      try {
+        const allQuizzes = require('../../assets/data/quizzes.json');
+        const foundQuiz = allQuizzes.find((q: any) =>
+          q._id === id || (q._id && q._id.$oid === id)
+        );
+
+        if (!foundQuiz) {
+          throw new Error('Quiz niet gevonden');
+        }
+
+        // Format if it has MongoDB specific $oid
+        const formattedQuiz = {
+          ...foundQuiz,
+          _id: foundQuiz._id?.$oid || foundQuiz._id,
+          questions: foundQuiz.questions.map((q: any) => ({
+            ...q,
+            _id: q._id?.$oid || q._id,
+            answers: q.answers?.map((a: any) => ({
+              ...a,
+              _id: a._id?.$oid || a._id,
+            })),
+          })),
+        };
+
+        setQuiz(formattedQuiz);
+      } catch (fallbackErr) {
+        console.error('Fallback also failed:', fallbackErr);
+        Alert.alert('Fout', 'Kon de quiz niet laden.');
+        router.back();
+      }
     } finally {
       setLoading(false);
     }

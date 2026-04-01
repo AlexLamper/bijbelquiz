@@ -1,20 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuth } from '../components/AuthProvider';
 import { API_BASE_URL } from '../constants/api';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome } from '@expo/vector-icons';
+import { useGoogleAuth, handleGoogleSignIn } from '../services/googleAuth';
+import * as AuthSession from 'expo-auth-session';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const router = useRouter();
   const { signIn } = useAuth();
+  const { request, response, promptAsync } = useGoogleAuth();
   
   const API_URL = `${API_BASE_URL}/api/auth/mobile-login`;
+
+  // Handle Google OAuth response
+  useEffect(() => {
+    if (response?.type === 'success') {
+      const { authentication } = response;
+      if (authentication?.accessToken) {
+        handleGoogleLogin(authentication.accessToken);
+      }
+    }
+  }, [response]);
+
+  const handleGoogleLogin = async (accessToken: string) => {
+    setGoogleLoading(true);
+    console.log('[DEBUG_AUTH] Starting handleGoogleLogin with token');
+    try {
+      const result = await handleGoogleSignIn(accessToken);
+      console.log('[DEBUG_AUTH] handleGoogleSignIn result:', result);
+      
+      if (result.success && result.token && result.user) {
+        await signIn(result.token, result.user);
+        router.replace('/(tabs)');
+      } else {
+        console.error('[DEBUG_AUTH] Google Sign-In failure from backend:', result.error);
+        Alert.alert('Inloggen mislukt', result.error || 'Er is iets misgegaan met Google Sign-In.');
+      }
+    } catch (error) {
+      console.error('[DEBUG_AUTH] Google Sign-In hard crash:', error);
+      Alert.alert('Fout', 'Kon niet inloggen met Google.');
+    } finally {
+      setGoogleLoading(false);
+    }
+  };
 
   const handleLogin = async () => {
     if (!email || !password) {
@@ -23,6 +59,7 @@ export default function LoginScreen() {
     }
 
     setLoading(true);
+    console.log(`[DEBUG_AUTH] Attempting standard login to API: ${API_URL}`);
     try {
       const response = await fetch(API_URL, {
         method: 'POST',
@@ -32,7 +69,9 @@ export default function LoginScreen() {
         body: JSON.stringify({ email, password }),
       });
 
+      console.log(`[DEBUG_AUTH] Standard login response status: ${response.status}`);
       const data = await response.json();
+      console.log(`[DEBUG_AUTH] Standard login response data:`, data);
 
       if (response.ok && data.token) {
         await signIn(data.token, data.user);
@@ -41,8 +80,8 @@ export default function LoginScreen() {
         Alert.alert('Inloggen mislukt', data.error || 'Controleer je gegevens.');
       }
     } catch (error) {
-      console.error(error);
-      Alert.alert('Fout', 'Kon geen verbinding maken met de server. Controleer of de server draait.');
+      console.error('[DEBUG_AUTH] Standard login network crash:', error);
+      Alert.alert('Fout', `Netwerkfout. URL was: ${API_URL}`);
     } finally {
       setLoading(false);
     }
@@ -99,14 +138,37 @@ export default function LoginScreen() {
             </View>
 
             <TouchableOpacity 
-              className="bg-[#232b38] py-[18px] rounded-[18px] items-center mt-6 shadow-sm"
+              className="bg-[#547ee9] py-[18px] rounded-[18px] items-center mt-6 shadow-sm"
               onPress={handleLogin}
-              disabled={loading}
+              disabled={loading || googleLoading}
             >
               {loading ? (
                 <ActivityIndicator color="white" />
               ) : (
                 <Text className="text-white font-bold text-[17px]">Inloggen</Text>
+              )}
+            </TouchableOpacity>
+
+            {/* Divider */}
+            <View className="flex-row items-center my-6">
+              <View className="flex-1 h-[1px] bg-[#e4e7f1]" />
+              <Text className="mx-4 text-[#8e94a8] text-[14px]">of</Text>
+              <View className="flex-1 h-[1px] bg-[#e4e7f1]" />
+            </View>
+
+            {/* Google Sign-In Button */}
+            <TouchableOpacity 
+              className="border-[1.5px] border-[#e4e7f1] bg-white py-[18px] rounded-[18px] items-center flex-row justify-center shadow-sm"
+              onPress={() => promptAsync()}
+              disabled={!request || loading || googleLoading}
+            >
+              {googleLoading ? (
+                <ActivityIndicator color="#1a2333" />
+              ) : (
+                <>
+                  <FontAwesome name="google" size={20} color="#DB4437" style={{ marginRight: 12 }} />
+                  <Text className="text-[#1a2333] font-bold text-[17px]">Inloggen met Google</Text>
+                </>
               )}
             </TouchableOpacity>
           </View>

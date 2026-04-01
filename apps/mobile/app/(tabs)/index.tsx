@@ -32,17 +32,36 @@ export default function HomeScreen() {
   const fetchQuizzes = async () => {
     try {
       setError(null);
-      // Load directly from local JSON file
-      const rawData = require('../../assets/data/quizzes.json');
-      const data = rawData.map((q: any) => ({
+      const response = await fetch(`${API_BASE_URL}/api/quizzes`);
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch quizzes');
+      }
+
+      const data = await response.json();
+      const quizzesArray = Array.isArray(data) ? data : data.data || [];
+      const normalizedQuizzes = quizzesArray.map((q: any) => ({
         ...q,
         _id: q._id?.$oid || q._id,
         categoryId: q.categoryId?.$oid || q.categoryId,
       }));
-      setQuizzes(Array.isArray(data) ? data : []);
+      setQuizzes(normalizedQuizzes);
     } catch (err: any) {
       console.error('Failed to fetch quizzes:', err);
-      setError('Kon data niet laden.');
+      setError('Kon data niet laden. Controleer je internetverbinding.');
+      // Fallback to local JSON if API fails
+      try {
+        const rawData = require('../../assets/data/quizzes.json');
+        const data = rawData.map((q: any) => ({
+          ...q,
+          _id: q._id?.$oid || q._id,
+          categoryId: q.categoryId?.$oid || q.categoryId,
+        }));
+        setQuizzes(Array.isArray(data) ? data : []);
+        setError(null);
+      } catch (fallbackErr) {
+        console.error('Fallback also failed:', fallbackErr);
+      }
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -131,8 +150,25 @@ export default function HomeScreen() {
         contentContainerStyle={{ paddingBottom: 100 }}
       >
         <View className="px-5">
-            <View className="items-center mt-2 mb-6">
-              <Text className="text-3xl font-serif text-[#1c223a]">Bijbel Quiz</Text>
+            {/* Logo and Welcome Header */}
+            <View className="items-center mt-2 mb-2">
+              <Image 
+                source={require('../../assets/images/icon.png')} 
+                style={{ width: 50, height: 50, marginBottom: 12 }}
+                resizeMode="contain"
+              />
+              {user ? (
+                <View className="items-center mb-4">
+                  <Text className="text-[13px] text-[#8e94a8] mb-1">
+                    {new Date().getHours() < 12 ? 'Goedemorgen' : new Date().getHours() < 18 ? 'Goedemiddag' : 'Goedenavond'}
+                  </Text>
+                  <Text className="text-2xl font-serif font-bold text-[#1a2333]">
+                    {user.name?.split(' ')[0] || 'Bijbelstudent'} 👋
+                  </Text>
+                </View>
+              ) : (
+                <Text className="text-3xl font-serif text-[#1c223a] mb-4">Bijbel Quiz</Text>
+              )}
             </View>
 
             {/* Search Bar */}

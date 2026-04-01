@@ -122,28 +122,12 @@ export default async function QuizPage({ params }: PageProps) {
   };
 
   return (
-    <div className="fixed inset-0 top-16 flex flex-col overflow-hidden bg-background">
+    <div className="flex-1 flex flex-col bg-background selection:bg-amber-100 p-2 md:p-6 lg:p-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="container mx-auto px-4 py-2 h-full flex flex-col overflow-hidden">
-        {/* Server-side rendered content for SEO */}
-        <div className="text-center mb-2 md:mb-4 mt-2 md:mt-6 shrink-0">
-          <h1 className="text-lg md:text-2xl font-bold mb-0.5 font-serif text-slate-900 truncate">{quiz.title}</h1>
-          <p className="text-slate-600 mb-1 text-[10px] md:text-xs line-clamp-1">{quiz.description}</p>
-          
-          {!session && (
-            <div className="inline-block bg-amber-50 border border-amber-200 rounded-lg px-3 py-0.5 text-[10px] text-amber-800">
-              💡<strong>Tip:</strong> <Link href="/api/auth/signin" className="underline hover:text-amber-900">Log in</Link> voor scores.
-            </div>
-          )}
-        </div>
-        
-        <div className="flex-1 min-h-0 w-full flex flex-col pb-4 md:pb-8">
-          <QuizPlayer quiz={serializableQuiz} />
-        </div>
-      </div>
+      <QuizPlayer quiz={serializableQuiz} />
     </div>
   );
 }

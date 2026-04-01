@@ -76,6 +76,7 @@ export async function POST(req: NextRequest) {
       success: true,
       xpEarned,
       farmPrevented: !!existingCompletion,
+      message: 'Quiz submitted successfully',
     });
   } catch (error) {
     console.error("[Quiz Submit] Error:", error);

@@ -101,7 +101,7 @@ export default async function ProfilePage() {
   return (
     <div className="min-h-screen bg-[#f0f4fa] dark:bg-background">
       {/* Header Section */}
-      <div className="bg-[#1a2942] pt-8 pb-24">
+      <div className="bg-[#1a2942] pt-24 md:pt-32 pb-24 -mt-[104px]">
         <div className="container mx-auto px-4 max-w-[1200px]">
           <Breadcrumb
             items={[

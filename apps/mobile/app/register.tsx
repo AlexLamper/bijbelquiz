@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuth } from '../components/AuthProvider';
 import { API_BASE_URL } from '../constants/api';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome } from '@expo/vector-icons';
+import { useGoogleAuth, handleGoogleSignIn } from '../services/googleAuth';
 
 export default function RegisterScreen() {
   const [name, setName] = useState('');
@@ -12,11 +13,42 @@ export default function RegisterScreen() {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const router = useRouter();
-  const { signIn } = useAuth(); // We might auto-login later if needed.
+  const { signIn } = useAuth();
+  const { request, response, promptAsync } = useGoogleAuth();
 
   const REGISTER_API_URL = `${API_BASE_URL}/api/auth/register`;
   const LOGIN_API_URL = `${API_BASE_URL}/api/auth/mobile-login`;
+
+  // Handle Google OAuth response
+  useEffect(() => {
+    if (response?.type === 'success') {
+      const { authentication } = response;
+      if (authentication?.accessToken) {
+        handleGoogleRegister(authentication.accessToken);
+      }
+    }
+  }, [response]);
+
+  const handleGoogleRegister = async (accessToken: string) => {
+    setGoogleLoading(true);
+    try {
+      const result = await handleGoogleSignIn(accessToken);
+      
+      if (result.success && result.token && result.user) {
+        await signIn(result.token, result.user);
+        router.replace('/(tabs)');
+      } else {
+        Alert.alert('Registreren mislukt', result.error || 'Er is iets misgegaan met Google Sign-In.');
+      }
+    } catch (error) {
+      console.error(error);
+      Alert.alert('Fout', 'Kon niet registreren met Google.');
+    } finally {
+      setGoogleLoading(false);
+    }
+  };
 
   const handleRegister = async () => {
     if (!name || !email || !password) {
@@ -146,14 +178,37 @@ export default function RegisterScreen() {
             </View>
 
             <TouchableOpacity 
-              className="bg-[#232b38] py-[18px] rounded-[18px] items-center mt-6 shadow-sm"
+              className="bg-[#547ee9] py-[18px] rounded-[18px] items-center mt-6 shadow-sm"
               onPress={handleRegister}
-              disabled={loading}
+              disabled={loading || googleLoading}
             >
               {loading ? (
                 <ActivityIndicator color="white" />
               ) : (
                 <Text className="text-white font-bold text-[17px]">Registreren</Text>
+              )}
+            </TouchableOpacity>
+
+            {/* Divider */}
+            <View className="flex-row items-center my-6">
+              <View className="flex-1 h-[1px] bg-[#e4e7f1]" />
+              <Text className="mx-4 text-[#8e94a8] text-[14px]">of</Text>
+              <View className="flex-1 h-[1px] bg-[#e4e7f1]" />
+            </View>
+
+            {/* Google Sign-In Button */}
+            <TouchableOpacity 
+              className="border-[1.5px] border-[#e4e7f1] bg-white py-[18px] rounded-[18px] items-center flex-row justify-center shadow-sm"
+              onPress={() => promptAsync()}
+              disabled={!request || loading || googleLoading}
+            >
+              {googleLoading ? (
+                <ActivityIndicator color="#1a2333" />
+              ) : (
+                <>
+                  <FontAwesome name="google" size={20} color="#DB4437" style={{ marginRight: 12 }} />
+                  <Text className="text-[#1a2333] font-bold text-[17px]">Registreren met Google</Text>
+                </>
               )}
             </TouchableOpacity>
 
