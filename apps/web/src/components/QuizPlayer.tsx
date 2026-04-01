@@ -267,17 +267,18 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     <div className="flex-1 w-full flex flex-col md:flex-row relative transition-all duration-700 ease-in-out bg-white rounded-2xl md:rounded-[2rem] overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-[#d6e2fa]/20">
         
         {/* Left Side: Progress, Title, Controls */}
-        <div className="w-full md:w-[45%] lg:w-[40%] bg-[#eef4ff] p-6 md:p-10 lg:p-12 flex flex-col justify-between border-r border-[#d6e2fa]/50 relative shrink-0">
+        <div className="w-full md:w-[45%] lg:w-[40%] bg-[#eef4ff] p-4 md:p-10 lg:p-12 flex flex-col justify-between border-r border-[#d6e2fa]/50 relative shrink-0">
             {/* Top Navigation */}
-            <div className="flex justify-between items-center w-full mb-6 md:mb-8 font-sans">
+            <div className="flex justify-between items-center w-full mb-4 md:mb-8 font-sans">
                 <Button variant="ghost" size="sm" className="text-[#547ee9] hover:bg-[#547ee9]/10 font-bold px-0 hover:text-[#3d62c2] transition-colors -ml-2" onClick={() => router.push('/quizzes')}>
                     <ArrowLeft className="mr-1.5 h-4 w-4" strokeWidth={2.5} /> Homepage
                 </Button>
-                <div className="flex gap-1 text-[#547ee9] relative">
-                    <Button variant="ghost" size="icon" className="hover:bg-[#547ee9]/10 rounded-xl" onClick={toggleFullscreen} title="Volledig scherm">
+                <div className="flex items-center gap-1 text-[#547ee9] relative">
+                    <Badge className="md:hidden bg-[#1a2942] text-amber-400 hover:bg-[#1a2942] text-xs h-7 px-2.5 rounded-full font-black border-2 border-amber-400/20 mr-1">{score} pt</Badge>
+                    <Button variant="ghost" size="icon" className="hover:bg-[#547ee9]/10 rounded-xl max-md:h-8 max-md:w-8" onClick={toggleFullscreen} title="Volledig scherm">
                         <Maximize className="h-4 w-4" />
                     </Button>
-                    <Button variant="ghost" size="icon" className={`hover:bg-[#547ee9]/10 rounded-xl ${isSettingsOpen ? 'bg-[#547ee9]/10' : ''}`} onClick={() => setIsSettingsOpen(!isSettingsOpen)} title="Instellingen">
+                    <Button variant="ghost" size="icon" className={`hover:bg-[#547ee9]/10 rounded-xl max-md:h-8 max-md:w-8 ${isSettingsOpen ? 'bg-[#547ee9]/10' : ''}`} onClick={() => setIsSettingsOpen(!isSettingsOpen)} title="Instellingen">
                         <Settings className="h-4 w-4" />
                     </Button>
 
@@ -357,20 +358,20 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
             </div>
 
             {/* Question Details */}
-            <div className="flex flex-col flex-grow justify-center py-4">
-                <p className="text-[#547ee9]/80 font-bold text-lg md:text-xl mb-4 md:mb-6 tracking-wide">
+            <div className="flex flex-col flex-grow justify-center py-2 md:py-4">
+                <p className="text-[#547ee9]/80 font-bold text-base md:text-xl mb-2 md:mb-6 tracking-wide">
                     vraag {currentIndex + 1}/{quiz.questions.length}
                 </p>
-                <h1 className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} text-[#1a2942] font-black ${textSize === 'large' ? 'text-3xl md:text-4xl lg:text-5xl' : 'text-3xl md:text-4xl lg:text-4xl'} leading-[1.1] tracking-tight mb-4`}>
+                <h1 className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} text-[#1a2942] font-black ${textSize === 'large' ? 'text-[26px] md:text-4xl lg:text-5xl' : 'text-2xl md:text-4xl lg:text-4xl'} leading-[1.15] md:leading-[1.1] tracking-tight mb-2 md:mb-4`}>
                     {currentQuestion.text}
                 </h1>
-                <p className="text-[#648be3] font-semibold text-lg md:text-xl mt-2">
+                <p className="text-[#648be3] font-semibold text-sm md:text-xl mt-1 md:mt-2">
                     Selecteer een antwoord
                 </p>
             </div>
 
             {/* Bottom Brand */}
-            <div className="flex justify-between items-end mt-8">
+            <div className="hidden md:flex justify-between items-end mt-8">
                  <h2 className="text-3xl font-black text-[#547ee9] tracking-tighter">
                     Bijbel<span className="text-[#1a2942]">quiz</span>
                  </h2>
@@ -382,17 +383,17 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
         </div>
 
         {/* Right Side: Options & Actions */}
-        <div className="w-full md:w-[55%] lg:w-[60%] bg-white px-6 py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 flex flex-col justify-center relative overflow-y-auto">
+        <div className="w-full md:w-[55%] lg:w-[60%] bg-white px-4 py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 flex flex-col justify-center relative overflow-y-auto">
             {/* Progress Bar (Top) */}
             <div className="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-slate-100">
                 <div className="bg-[#547ee9] h-full transition-all duration-700 ease-out" style={{ width: `${Math.max(2, progress)}%` }}></div>
             </div>
 
-            <div className="w-full max-w-2xl mx-auto flex-grow flex flex-col justify-center pt-8">
+            <div className="w-full max-w-2xl mx-auto flex-grow flex flex-col justify-center pt-4 md:pt-8">
                 {/* Answers List */}
-                <div className="flex flex-col gap-3 w-full">
+                <div className="flex flex-col gap-2.5 md:gap-3 w-full">
                     {currentQuestion.answers.map((answer, index) => {
-                        let className = `group justify-start text-left h-auto px-4 md:px-5 w-full text-sm md:text-base transition-all relative border-[2.5px] rounded-2xl font-bold active:scale-[0.99] ${textSize === 'large' ? 'py-3.5 md:py-5 text-base md:text-lg' : 'py-2.5 md:py-4'}`;
+                        let className = `group justify-start text-left h-auto px-4 md:px-5 w-full text-sm md:text-base transition-all relative border-[2px] md:border-[2.5px] rounded-xl md:rounded-2xl font-bold active:scale-[0.99] ${textSize === 'large' ? 'py-3 md:py-5 text-base md:text-lg' : 'py-2.5 md:py-4'}`;
                         const variant: "outline" | "default" | "secondary" = "outline";
 
                         if (hasAnswered) {
