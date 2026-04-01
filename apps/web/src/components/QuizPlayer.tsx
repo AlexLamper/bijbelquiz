@@ -264,7 +264,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const progress = ((currentIndex) / quiz.questions.length) * 100;
 
   return (
-    <div className="flex-1 w-full min-h-[500px] lg:max-h-[85vh] 2xl:max-h-[800px] flex flex-col md:flex-row relative transition-all duration-700 ease-in-out bg-white rounded-2xl md:rounded-[2rem] overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-[#d6e2fa]/20">
+    <div className="flex-1 w-full flex flex-col md:flex-row relative transition-all duration-700 ease-in-out bg-white rounded-2xl md:rounded-[2rem] overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-[#d6e2fa]/20">
         
         {/* Left Side: Progress, Title, Controls */}
         <div className="w-full md:w-[45%] lg:w-[40%] bg-[#eef4ff] p-6 md:p-10 lg:p-12 flex flex-col justify-between border-r border-[#d6e2fa]/50 relative shrink-0">
@@ -382,7 +382,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
         </div>
 
         {/* Right Side: Options & Actions */}
-        <div className="w-full md:w-[55%] lg:w-[60%] bg-white px-6 py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 flex flex-col justify-center relative md:min-h-[500px] overflow-y-auto">
+        <div className="w-full md:w-[55%] lg:w-[60%] bg-white px-6 py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 flex flex-col justify-center relative overflow-y-auto">
             {/* Progress Bar (Top) */}
             <div className="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-slate-100">
                 <div className="bg-[#547ee9] h-full transition-all duration-700 ease-out" style={{ width: `${Math.max(2, progress)}%` }}></div>

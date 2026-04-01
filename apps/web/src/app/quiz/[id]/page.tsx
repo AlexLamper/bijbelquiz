@@ -122,7 +122,7 @@ export default async function QuizPage({ params }: PageProps) {
   };
 
   return (
-    <div className="flex-1 flex flex-col bg-background selection:bg-amber-100 p-2 md:p-6 lg:p-8">
+    <div className="flex-1 flex flex-col bg-background selection:bg-amber-100 p-2 md:p-6 lg:p-8 md:h-[calc(100vh-90px)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
