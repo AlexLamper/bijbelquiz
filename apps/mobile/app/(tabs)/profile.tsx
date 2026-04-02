@@ -154,7 +154,7 @@ export default function ProfileScreen() {
 
             <View className="flex-row gap-3 mb-6">
               <View className="flex-1 bg-white rounded-[20px] border border-[#e4e7f1] p-5 shadow-sm">
-                <Text className="text-[#8e94a8] text-[11px] font-medium mb-1">Quizzen Gedaan</Text>
+                <Text className="text-[#8e94a8] text-[11px] font-medium mb-1">Quizzen Gespeeld</Text>
                 <Text className="text-2xl font-black text-[#1a2333] font-serif">{stats.totalQuizzes}</Text>
               </View>
 

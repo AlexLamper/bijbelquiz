@@ -201,10 +201,10 @@ export default function DashboardHomeClient({
               <div className="text-4xl font-bold text-[#1a2333] dark:text-foreground">{streak}</div>
             </div>
 
-            {/* Quizzen Gedaan Card */}
+            {/* Quizzen Gespeeld Card */}
             <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
               <div className="flex items-start justify-between mb-4">
-                <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Quizzen Gedaan</span>
+                <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Quizzen Gespeeld</span>
                 <CheckCircle2 className="w-5 h-5 text-[#5b7dd9]" />
               </div>
               <div className="text-4xl font-bold text-[#1a2333] dark:text-foreground">{totalQuizzesDone}</div>

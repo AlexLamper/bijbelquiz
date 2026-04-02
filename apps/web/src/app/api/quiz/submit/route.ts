@@ -19,9 +19,9 @@ export async function POST(req: NextRequest) {
 
     await connectDB();
 
-    const [quiz, existingCompletion, user] = await Promise.all([
+    const [quiz, previousBestProgress, user] = await Promise.all([
       Quiz.findById(quizId).select('_id rewardXp questions').lean(),
-      UserProgress.findOne({ userId: session.user.id, quizId }).select('_id').lean(),
+      UserProgress.findOne({ userId: session.user.id, quizId }).sort({ score: -1 }).select('score totalQuestions').lean(),
       User.findById(session.user.id).select('_id xp streak bestStreak badges lastPlayedAt').lean(),
     ]);
 
@@ -37,7 +37,15 @@ export async function POST(req: NextRequest) {
     const percentage = Math.max(0, Math.min(1, score / normalizedTotalQuestions));
     const baseRewardXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
     const calculatedXp = Math.round(baseRewardXp * percentage);
-    const xpEarned = existingCompletion ? 0 : calculatedXp;
+    
+    let xpEarned = calculatedXp;
+    if (previousBestProgress) {
+      const prevNormQuestions = previousBestProgress.totalQuestions || normalizedTotalQuestions;
+      const prevPercentage = Math.max(0, Math.min(1, previousBestProgress.score / prevNormQuestions));
+      const prevCalculatedXp = Math.round(baseRewardXp * prevPercentage);
+      
+      xpEarned = Math.max(0, calculatedXp - prevCalculatedXp);
+    }
 
     await UserProgress.create({
       userId: session.user.id,
@@ -115,7 +123,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       xpEarned,
-      farmPrevented: !!existingCompletion,
+      farmPrevented: !!previousBestProgress && xpEarned === 0,
       message: 'Quiz submitted successfully',
     });
   } catch (error) {

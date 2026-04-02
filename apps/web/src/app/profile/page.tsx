@@ -133,7 +133,7 @@ export default async function ProfilePage() {
 
           <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
             <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Quizzen Gedaan</span>
+              <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Quizzen Gespeeld</span>
               <CheckCircle2 className="w-5 h-5 text-[#5b7dd9]" />
             </div>
             <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{totalQuizzesDone}</div>
