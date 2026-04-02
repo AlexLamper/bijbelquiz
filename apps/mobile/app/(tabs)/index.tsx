@@ -7,6 +7,12 @@ import { useAuth } from '../../components/AuthProvider';
 import { API_BASE_URL } from '../../constants/api';
 import { getQuizImage } from '../../constants/quizImages';
 
+interface Category {
+  _id: string;
+  title: string;
+  slug: string;
+}
+
 interface Quiz {
   _id: string;
   title: string;
@@ -16,29 +22,34 @@ interface Quiz {
   imageUrl?: string;
   questions?: any[];
   category?: { title: string };
-  categoryId?: { title: string; _id: string } | string;
+  categoryId?: { title: string; slug: string; _id: string } | string;
   slug?: string;
 }
 
 export default function HomeScreen() {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const router = useRouter();
   const { isPremium, user } = useAuth();
-  const [searchQuery, setSearchQuery] = useState('');
 
   const fetchQuizzes = async () => {
     try {
       setError(null);
-      const response = await fetch(`${API_BASE_URL}/api/quizzes`);
+      const [quizResponse, catResponse] = await Promise.all([
+        fetch(`${API_BASE_URL}/api/quizzes`),
+        fetch(`${API_BASE_URL}/api/categories`)
+      ]);
 
-      if (!response.ok) {
+      if (!quizResponse.ok) {
         throw new Error('Failed to fetch quizzes');
       }
 
-      const data = await response.json();
+      const data = await quizResponse.json();
       const quizzesArray = Array.isArray(data) ? data : data.data || [];
       const normalizedQuizzes = quizzesArray.map((q: any) => ({
         ...q,
@@ -46,10 +57,15 @@ export default function HomeScreen() {
         categoryId: q.categoryId?.$oid || q.categoryId,
       }));
       setQuizzes(normalizedQuizzes);
+
+      if (catResponse.ok) {
+        const catData = await catResponse.json();
+        setCategories(Array.isArray(catData) ? catData : []);
+      }
     } catch (err: any) {
       console.error('Failed to fetch quizzes:', err);
       setError('Kon data niet laden. Controleer je internetverbinding.');
-      // Fallback to local JSON if API fails
+      // Fallback
       try {
         const rawData = require('../../assets/data/quizzes.json');
         const data = rawData.map((q: any) => ({
@@ -77,6 +93,22 @@ export default function HomeScreen() {
     fetchQuizzes();
   };
 
+  const filteredQuizzes = quizzes.filter(q => {
+    const matchesSearch = q.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          (q.description && q.description.toLowerCase().includes(searchQuery.toLowerCase()));
+    
+    let matchesCategory = true;
+    if (selectedCategory !== 'all') {
+      const catSlug = typeof q.categoryId === 'object' ? q.categoryId?.slug : '';
+      const catId = typeof q.categoryId === 'object' ? q.categoryId?._id : q.categoryId;
+      const selectedCatObj = categories.find(c => c.slug === selectedCategory);
+      
+      matchesCategory = Boolean(catSlug === selectedCategory || catId === selectedCategory || (selectedCatObj && catId === selectedCatObj._id));
+    }
+
+    return matchesSearch && matchesCategory;
+  });
+
   const renderQuizItem = ({ item }: { item: Quiz }) => {
     const isLocked = item.isPremium && !isPremium;
     const categoryName = (typeof item.categoryId === 'object' && item.categoryId?.title) 
@@ -95,7 +127,7 @@ export default function HomeScreen() {
         }}
         activeOpacity={0.8}
       >
-        <View className="h-[200px] bg-[#dbe1ee] rounded-2xl mb-3 overflow-hidden border border-slate-200 shadow-sm relative">
+        <View className="h-[140px] bg-[#dbe1ee] rounded-2xl mb-3 overflow-hidden border border-slate-200 shadow-sm relative">
             {getQuizImage(item.imageUrl) ? (
               <>
                 <Image
@@ -109,24 +141,25 @@ export default function HomeScreen() {
               <>
                 <View className="absolute inset-0 bg-[#3c4a63] opacity-10"></View>
                 <View className="absolute inset-0 justify-center items-center">
-                  <FontAwesome name="image" size={40} color="#bac6da" />
+                  <FontAwesome name="image" size={30} color="#bac6da" />
                 </View>
               </>
             )}
 
             {item.isPremium && (
-              <View className="absolute top-3 right-3 bg-amber-500 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
+              <View className="absolute top-2 right-2 bg-amber-500 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
                 <FontAwesome name="star" size={10} color="white" />
                 <Text className="text-white text-[10px] font-bold uppercase tracking-wider">PRO</Text>
               </View>
             )}
         </View>
         
-        <Text className="text-[17px] font-bold text-[#1c223a] mb-1 leading-tight">{item.title}</Text>
+        <Text className="text-[16px] font-bold text-[#1c223a] mb-1 leading-tight" numberOfLines={2}>{item.title}</Text>
         
-        <View className="flex-col gap-0.5">
-            <Text className="text-[12px] text-[#5c687e]">Moeilijkheid: {item.difficulty === 'hard' ? 'Moeilijk' : item.difficulty === 'medium' ? 'Gemiddeld' : 'Makkelijk'}</Text>
-            <Text className="text-[12px] text-[#5c687e]">Status: Niet gestart</Text>
+        <View className="flex-row items-center justify-between">
+            <Text className="text-[12px] text-[#5c687e] font-medium bg-[#f0f2f5] px-2 py-1 rounded-md">
+               {item.difficulty === 'hard' ? 'Moeilijk' : item.difficulty === 'medium' ? 'Gemiddeld' : 'Makkelijk'}
+            </Text>
         </View>
       </TouchableOpacity>
     );
@@ -134,11 +167,22 @@ export default function HomeScreen() {
 
   if (loading) {
     return (
-      <View className="flex-1 justify-center items-center bg-background">
+      <View className="flex-1 justify-center items-center bg-[#f8fafd]">
         <ActivityIndicator size="large" color="#152d2f" />
       </View>
     );
   }
+
+  const themeImages = [
+    '/images/quizzes/img1.png', 
+    '/images/quizzes/img2.png', 
+    '/images/quizzes/img3.png', 
+    '/images/quizzes/img4.png',
+    '/images/quizzes/img5.png',
+    '/images/quizzes/img6.png',
+    '/images/quizzes/img7.png',
+    '/images/quizzes/img8.png'
+  ];
 
   return (
     <SafeAreaView className="flex-1 bg-[#f8fafd]" edges={['top']}>
@@ -150,25 +194,14 @@ export default function HomeScreen() {
         contentContainerStyle={{ paddingBottom: 100 }}
       >
         <View className="px-5">
-            {/* Logo and Welcome Header */}
-            <View className="items-center mt-2 mb-2">
+            {/* Logo Header */}
+            <View className="flex-row items-center justify-center mt-2 mb-6">
               <Image 
-                source={require('../../assets/images/icon.png')} 
-                style={{ width: 50, height: 50, marginBottom: 12 }}
+                source={require('../../assets/images/logo-dark.png')} 
+                style={{ width: 40, height: 40 }}
                 resizeMode="contain"
               />
-              {user ? (
-                <View className="items-center mb-4">
-                  <Text className="text-[13px] text-[#8e94a8] mb-1">
-                    {new Date().getHours() < 12 ? 'Goedemorgen' : new Date().getHours() < 18 ? 'Goedemiddag' : 'Goedenavond'}
-                  </Text>
-                  <Text className="text-2xl font-serif font-bold text-[#1a2333]">
-                    {user.name?.split(' ')[0] || 'Bijbelstudent'} 👋
-                  </Text>
-                </View>
-              ) : (
-                <Text className="text-3xl font-serif text-[#1c223a] mb-4">Bijbel Quiz</Text>
-              )}
+              <Text className="ml-3 text-3xl font-serif font-bold text-[#1c223a] mt-1.5">Bijbelquiz</Text>
             </View>
 
             {/* Search Bar */}
@@ -177,25 +210,36 @@ export default function HomeScreen() {
               <TextInput 
                 placeholder="Zoeken in quizzen of onderwerpen"
                 placeholderTextColor="#8e94a8"
-                className="flex-1 ml-3 text-[15px] font-medium text-[#1c223a]"
+                className="flex-1 text-[15px] font-medium text-[#1c223a]"
                 value={searchQuery}
                 onChangeText={setSearchQuery}
               />
+              {searchQuery.length > 0 && (
+                <TouchableOpacity onPress={() => setSearchQuery('')} className="p-2 -mr-2 ml-1">
+                  <FontAwesome name="times-circle" size={16} color="#8e94a8" />
+                </TouchableOpacity>
+              )}
             </View>
 
-            {/* Categories */}
+            {/* Category Filters */}
             <View className="-mx-5 mb-8">
               <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 20 }} className="flex-row">
-                {['Oude Testament', 'Nieuwe Testament', 'Theologie', 'Bijbelse Figuren'].map((cat, idx) => (
-                  <TouchableOpacity key={idx} className="bg-[#e4e7f1] rounded-full px-5 py-2 mr-3">
-                    <Text className="text-[#3c4257] font-medium text-[13px]">{cat}</Text>
+                <TouchableOpacity 
+                  className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === 'all' ? 'bg-[#1a2333]' : 'bg-[#e4e7f1]'}`}
+                  onPress={() => setSelectedCategory('all')}
+                >
+                  <Text className={`font-medium text-[13px] ${selectedCategory === 'all' ? 'text-white' : 'text-[#3c4257]'}`}>Alles</Text>
+                </TouchableOpacity>
+                {categories.map((cat, idx) => (
+                  <TouchableOpacity 
+                    key={cat._id || idx} 
+                    className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === cat.slug ? 'bg-[#1a2333]' : 'bg-[#e4e7f1]'}`}
+                    onPress={() => setSelectedCategory(cat.slug)}
+                  >
+                    <Text className={`font-medium text-[13px] ${selectedCategory === cat.slug ? 'text-white' : 'text-[#3c4257]'}`}>{cat.title}</Text>
                   </TouchableOpacity>
                 ))}
               </ScrollView>
-            </View>
-
-            <View className="flex-row items-center justify-between mb-4">
-              <Text className="text-[19px] font-semibold text-[#1c223a]">Aanbevolen voor jou</Text>
             </View>
 
             {error ? (
@@ -207,19 +251,48 @@ export default function HomeScreen() {
                 </TouchableOpacity>
               </View>
             ) : null}
+
+            <View className="flex-row items-center justify-between mb-4">
+              <Text className="text-[19px] font-semibold text-[#1c223a]">Aanbevolen voor jou</Text>
+            </View>
         </View>
 
-        <FlatList
-          data={quizzes.filter(q => q.title.toLowerCase().includes(searchQuery.toLowerCase()) || (q.description && q.description.toLowerCase().includes(searchQuery.toLowerCase())))}
-          renderItem={renderQuizItem}
-          keyExtractor={(item) => item._id}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 10 }}
-        />
+        {filteredQuizzes.length > 0 ? (
+            <FlatList
+              data={filteredQuizzes.slice(0, 5)}
+              renderItem={renderQuizItem}
+              keyExtractor={(item) => item._id}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 10 }}
+            />
+        ) : (
+            <View className="px-5 items-center justify-center py-6">
+                <Text className="text-[#8e94a8]">Geen quizzen gevonden in deze categorie.</Text>
+            </View>
+        )}
+
+        <View className="px-5 mt-4 mb-4 flex-row items-center justify-between">
+            <Text className="text-[19px] font-semibold text-[#1c223a]">Populaire quizzen</Text>
+        </View>
+        
+        {filteredQuizzes.length > 0 ? (
+            <FlatList
+              data={[...filteredQuizzes].reverse().slice(0, 5)}
+              renderItem={renderQuizItem}
+              keyExtractor={(item) => item._id + '-pop'}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 10 }}
+            />
+        ) : (
+            <View className="px-5 items-center justify-center py-6">
+                <Text className="text-[#8e94a8]">Geen quizzen beschikbaar.</Text>
+            </View>
+        )}
 
         <View className="px-5 mt-6 mb-4 flex-row items-center justify-between">
-          <Text className="text-[19px] font-semibold text-[#1c223a]">Thema's voor jou</Text>
+          <Text className="text-[19px] font-semibold text-[#1c223a]">Thema's</Text>
           <View className="flex-row gap-1">
              <View className="w-1.5 h-1.5 bg-[#1c223a] rounded-full"></View>
              <View className="w-1.5 h-1.5 bg-[#c8d1e0] rounded-full"></View>
@@ -229,27 +302,29 @@ export default function HomeScreen() {
         
         <View className="px-5">
         <View className="gap-4">
-          {[
-            { title: 'Profeten & Beloften', subtitle: 'Jesaja, Jeremia en de beloften', imageUrl: '/images/quizzes/img3.png' },
-            { title: 'Leven van Jezus', subtitle: 'Wonderen en het evangelie', imageUrl: '/images/quizzes/img5.png' },
-            { title: 'Psalmen voor elke dag', subtitle: 'Aanbidding, troost en gebed', imageUrl: '/images/quizzes/img8.png' },
-          ].map((theme) => (
-            <View key={theme.title} className="h-[140px] bg-[#dbe1ee] rounded-2xl w-full border border-slate-200 overflow-hidden relative">
-              {getQuizImage(theme.imageUrl) ? (
-                <Image
-                  source={getQuizImage(theme.imageUrl)}
-                  style={{ width: '100%', height: '100%' }}
-                  resizeMode="cover"
-                />
-              ) : (
-                <View className="absolute inset-0 bg-[#3c4a63] opacity-20"></View>
-              )}
-              <View className="absolute inset-0 bg-black/30 justify-end p-4">
-                <Text className="text-white font-bold text-[16px]">{theme.title}</Text>
-                <Text className="text-white/80 text-[12px]">{theme.subtitle}</Text>
-              </View>
-            </View>
-          ))}
+          {categories.slice(0, 5).map((theme, index) => {
+            const staticImg = themeImages[index % themeImages.length];
+            return (
+              <TouchableOpacity 
+                key={theme._id || index}
+                onPress={() => router.push({ pathname: '/library', params: { category: theme.slug } })}
+                activeOpacity={0.8}
+              >
+                <View className="h-[100px] bg-[#dbe1ee] rounded-2xl w-full border border-slate-200 overflow-hidden relative justify-center">
+                  {getQuizImage(staticImg) ? (
+                    <Image
+                      source={getQuizImage(staticImg)}
+                      style={{ width: '100%', height: '100%', position: 'absolute' }}
+                      resizeMode="cover"
+                    />
+                  ) : null}
+                  <View className="absolute inset-0 bg-black/50 justify-center p-4">
+                    <Text className="text-white font-bold text-[18px] text-center">{theme.title}</Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            );
+          })}
         </View>
         </View>
 
@@ -257,4 +332,3 @@ export default function HomeScreen() {
     </SafeAreaView>
   );
 }
-

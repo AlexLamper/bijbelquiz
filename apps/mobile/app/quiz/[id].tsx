@@ -6,6 +6,7 @@ import * as SecureStore from 'expo-secure-store';
 import { FontAwesome, Ionicons } from '@expo/vector-icons';
 import { API_BASE_URL } from '../../constants/api';
 import { getQuizImage } from '../../constants/quizImages';
+import { useAuth } from '../../components/AuthProvider';
 
 interface Answer {
   text: string;
@@ -31,6 +32,7 @@ interface Quiz {
 
 export default function MobileQuizPlayer() {
   const { id } = useLocalSearchParams();
+  const { isPremium } = useAuth();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [hasStarted, setHasStarted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -341,11 +343,27 @@ export default function MobileQuizPlayer() {
             </View>
 
             {!!currentQuestion.explanation && (
-               <Text className="text-[#5c687e] text-[15px] leading-[22px] mb-2">
-                 {currentQuestion.explanation}
-               </Text>
+              isPremium ? (
+                 <Text className="text-[#5c687e] text-[15px] leading-[22px] mb-2">
+                   {currentQuestion.explanation}
+                 </Text>
+              ) : (
+                 <View className="bg-[#eaf0fc] p-4 rounded-xl border border-[#dfe8fa] mb-3 mt-1">
+                   <View className="flex-row items-center mb-2">
+                     <FontAwesome name="star" size={16} color="#f59e0b" className="mr-2" />
+                     <Text className="font-bold text-[#1a2333]">Premium Uitleg</Text>
+                   </View>
+                   <Text className="text-[#5c687e] text-[13px] mb-3">Ontgrendel theologische uitleg en Bijbelverwijzingen voor alle vragen.</Text>
+                   <TouchableOpacity 
+                      className="bg-[#1a2333] py-2.5 rounded-xl items-center active:scale-[0.98]"
+                      onPress={() => router.push('/modal')}
+                   >
+                      <Text className="text-white font-bold text-[14px]">Word Premium ✨</Text>
+                   </TouchableOpacity>
+                 </View>
+              )
             )}
-            {!!currentQuestion.bibleReference && (
+            {!!currentQuestion.bibleReference && isPremium && (
                <Text className="text-[#5c687e] text-[14px]">
                  {currentQuestion.bibleReference}
                </Text>

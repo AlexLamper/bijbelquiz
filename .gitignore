@@ -6,15 +6,32 @@ dist/
 build/
 /coverage
 .DS_Store
+Thumbs.db
 *.pem
 npm-debug.log*
 yarn-error.log*
+*.log
+*.bak
+*.tmp
 .env*
 .vercel
 *.tsbuildinfo
 next-env.d.ts
 todo.txt
-image-generation-prompt.txt
 
+# Environment variables
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# AI and Generation Outputs
+/docs/AI/
+image-generation-prompt.txt
+pastel-image-generation-prompt.txt
+scene-descriptions.txt
+
+# Editor / IDE
+.vscode/
+.idea/

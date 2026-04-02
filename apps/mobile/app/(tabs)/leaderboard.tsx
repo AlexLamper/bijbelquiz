@@ -70,7 +70,7 @@ export default function LeaderboardScreen() {
         bgColor: 'bg-slate-50',
         borderColor: 'border-slate-300',
         iconColor: '#94a3b8',
-        icon: 'medal',
+        icon: 'star',
       },
       3: {
         height: 85,
@@ -78,7 +78,7 @@ export default function LeaderboardScreen() {
         bgColor: 'bg-orange-50',
         borderColor: 'border-orange-300',
         iconColor: '#ea580c',
-        icon: 'medal',
+        icon: 'star',
       },
     }[rank];
 

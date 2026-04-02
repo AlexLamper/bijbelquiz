@@ -2,6 +2,8 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import * as SecureStore from 'expo-secure-store';
 import { initRevenueCat, logoutRevenueCat } from '../services/revenuecat';
 
+import { API_BASE_URL } from '../constants/api';
+
 interface User {
   id: string;
   name?: string;
@@ -53,15 +55,34 @@ export function AuthProvider({ children }: AuthProviderProps) {
       if (token && userData) {
         const parsedUser = JSON.parse(userData);
         setUser(parsedUser);
-        await initRevenueCat(parsedUser.id);
-      }
+        
+        try {
+          // Refresh user data from API
+          const response = await fetch(`${API_BASE_URL}/api/user/me`, {
+            headers: {
+              'Authorization': `Bearer ${token}`
+            }
+          });
+          
+          if (response.ok) {
+            const freshUser = await response.json();
+            setUser(freshUser);
+            await SecureStore.setItemAsync('userData', JSON.stringify(freshUser));
+            await initRevenueCat(freshUser.id);
+          } else {
+             // Fallback to local
+             await initRevenueCat(parsedUser.id);
+          }
+        } catch (apiError) {
+           console.error('Failed to fetch fresh user profile', apiError);
+           await initRevenueCat(parsedUser.id);
+        }      }
     } catch (e) {
       console.error('Failed to load user', e);
     } finally {
       setLoading(false);
     }
   };
-
   const signIn = async (token: string, userData: User) => {
     try {
       await SecureStore.setItemAsync('userToken', token);

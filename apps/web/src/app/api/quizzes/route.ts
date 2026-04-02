@@ -5,7 +5,9 @@ import { connectDB, Quiz } from '@bijbelquiz/database';
 export async function GET() {
   try {
     await connectDB();
-    const quizzes = await Quiz.find({ status: 'approved' }).sort({ createdAt: -1 });
+    // Support both new 'approved' status and legacy quizzes with missing status
+    const filter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+    const quizzes = await Quiz.find(filter).sort({ createdAt: -1 });
     return NextResponse.json(quizzes);
   } catch (error) {
     console.error("[QUIZZES_GET]", error);
