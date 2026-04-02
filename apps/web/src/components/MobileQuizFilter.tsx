@@ -4,7 +4,8 @@ import * as React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Filter } from 'lucide-react';
+import { Filter, ChevronRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 interface CategoryShape {
   _id: string; // serialized from server
@@ -38,28 +39,40 @@ export default function MobileQuizFilter({ categories, currentCategory }: Mobile
           </span>
         </AccordionTrigger>
         <AccordionContent>
-          <div className="space-y-1 pt-2 pb-4">
-            <Button 
-              variant={currentCategory === 'all' ? "secondary" : "ghost"} 
-              className={`w-full justify-start ${currentCategory === 'all' ? 'bg-primary/10 text-primary hover:bg-primary/20' : ''}`}
-              asChild
+          <div className="flex flex-col gap-1 pt-2 pb-4">
+            <Link 
+              href="/quizzes"
               onClick={handleLinkClick}
+              className={cn(
+                "flex items-center justify-between px-3 py-3 rounded-xl text-sm font-medium transition-all",
+                currentCategory === 'all'
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:bg-muted hover:text-foreground"
+              )}
             >
-              <Link href="/quizzes" className='dark:text-black'>Alle Categorieën</Link>
-            </Button>
-            {categories.map((cat) => (
-              <Button
-                key={`mobile-${cat._id}`}
-                variant={currentCategory === cat.slug ? "secondary" : "ghost"}
-                className={`w-full justify-start ${currentCategory === cat.slug ? 'bg-primary/10 text-primary hover:bg-primary/20 dark:text-slate-700' : ''}`}
-                asChild
-                onClick={handleLinkClick}
-              >
-                <Link href={`/quizzes?category=${cat.slug}`}>
-                  {cat.title}
+              <span>Alle Categorieën</span>
+              {currentCategory === 'all' && <ChevronRight className="w-4 h-4" />}
+            </Link>
+            
+            {categories.map((cat) => {
+              const isActive = currentCategory === cat.slug;
+              return (
+                <Link 
+                  key={`mobile-${cat._id}`}
+                  href={`/quizzes?category=${cat.slug}`}
+                  onClick={handleLinkClick}
+                  className={cn(
+                    "flex items-center justify-between px-3 py-3 rounded-xl text-sm font-medium transition-all",
+                    isActive
+                      ? "bg-primary text-primary-foreground shadow-sm"
+                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                  )}
+                >
+                  <span>{cat.title}</span>
+                  {isActive && <ChevronRight className="w-4 h-4" />}
                 </Link>
-              </Button>
-            ))}
+              );
+            })}
           </div>
         </AccordionContent>
       </AccordionItem>

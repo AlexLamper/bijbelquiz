@@ -3,12 +3,13 @@ import { connectDB, Quiz, Category, ICategory } from '@bijbelquiz/database';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Star, Search, Plus } from 'lucide-react';
+import { Star, Search, Plus, ChevronRight, Filter as FilterIcon } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import QuizCard, { QuizItem } from '@/components/QuizCard';
 import MobileQuizFilter from '@/components/MobileQuizFilter';
 import Breadcrumb from '@/components/Breadcrumb';
+import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -94,32 +95,53 @@ export default async function QuizzesPage({
         {/* Sidebar / Filter (Mobile Top) */}
         <div className="lg:col-span-1">
             {/* Desktop Sticky Sidebar */}
-            <div className="hidden lg:block sticky top-24 space-y-6">
-                <h3 className="font-serif font-bold text-slate-900 mb-4 px-2 dark:text-foreground">Categorieën</h3>
-                <div className="space-y-1">
-                        <Button 
-                        variant={currentCategory === 'all' ? "secondary" : "ghost"} 
-                        className={`w-full justify-start rounded-xl ${currentCategory === 'all' ? 'bg-[#547ee9] text-white hover:bg-[#476ecc]' : 'text-[#5c687e] hover:text-[#1a2333] hover:bg-[#eaf0fc] dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
-                        asChild
+            <div className="hidden lg:block sticky top-24 space-y-6 bg-card border rounded-2xl p-5 shadow-sm">
+                <div className="flex items-center gap-2 mb-4 px-1">
+                   <FilterIcon className="w-5 h-5 text-primary" />
+                   <h3 className="font-serif font-bold text-lg text-foreground">Categorieën</h3>
+                </div>
+                <div className="flex flex-col gap-1">
+                    <Link 
+                        href="/quizzes"
+                        className={cn(
+                            "flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-all group",
+                            currentCategory === 'all'
+                                ? "bg-primary text-primary-foreground shadow-sm"
+                                : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                        )}
                     >
-                        <Link href="/quizzes">Alle Categorieën</Link>
-                    </Button>
-                    {categories.map((cat: ICategory) => (
-                        <Button
-                            key={cat._id.toString()}
-                            variant={currentCategory === cat.slug ? "secondary" : "ghost"}
-                            className={`w-full justify-start rounded-xl ${currentCategory === cat.slug ? 'bg-[#547ee9] text-white hover:bg-[#476ecc]' : 'text-[#5c687e] hover:text-[#1a2333] hover:bg-[#eaf0fc] dark:text-muted-foreground dark:hover:text-foreground dark:hover:bg-muted'}`}
-                            asChild
-                        >
-                            <Link href={`/quizzes?category=${cat.slug}`}>
-                                {cat.title}
+                        <span>Alle Categorieën</span>
+                        <ChevronRight className={cn(
+                            "w-4 h-4 transition-transform",
+                            currentCategory === 'all' ? "text-primary-foreground" : "text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+                        )} />
+                    </Link>
+                    
+                    {categories.map((cat: ICategory) => {
+                        const isActive = currentCategory === cat.slug;
+                        return (
+                            <Link 
+                                key={cat._id.toString()}
+                                href={`/quizzes?category=${cat.slug}`}
+                                className={cn(
+                                    "flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-all group",
+                                    isActive
+                                        ? "bg-primary text-primary-foreground shadow-sm"
+                                        : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                                )}
+                            >
+                                <span>{cat.title}</span>
+                                <ChevronRight className={cn(
+                                    "w-4 h-4 transition-transform",
+                                    isActive ? "text-primary-foreground" : "text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+                                )} />
                             </Link>
-                        </Button>
-                    ))}
+                        );
+                    })}
                 </div>
 
                 {!isPremiumUser && (
-                    <div className="bg-[#eaf0fc] rounded-2xl p-6 border border-[#dfe8fa]">
+                    <div className="bg-[#eaf0fc] rounded-2xl p-6 border border-[#dfe8fa] mt-6">
                        <h3 className="font-bold text-[#1a2333] mb-2 flex items-center gap-2">
                            <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> Premium
                        </h3>

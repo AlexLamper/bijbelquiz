@@ -73,11 +73,13 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     }
   };
 
+  const [earnedXp, setEarnedXp] = useState<number | null>(null);
+
   const finishQuiz = async () => {
     setIsFinished(true);
     setIsSaving(true);
     try {
-        await fetch('/api/quiz/submit', {
+        const response = await fetch('/api/quiz/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -86,6 +88,13 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 totalQuestions: quiz.questions.length
             })
         });
+        
+        if (response.ok) {
+            const data = await response.json();
+            if (data.xpEarned !== undefined) {
+                setEarnedXp(data.xpEarned);
+            }
+        }
     } catch (e) {
         console.error("Failed to save progress", e);
     } finally {
@@ -186,32 +195,31 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     }
 
     return (
-      <Card className="w-full max-w-3xl mx-auto mt-12 md:mt-20 border-0 shadow-2xl bg-white overflow-hidden rounded-2xl animate-in fade-in zoom-in duration-500">
-        <CardHeader className="text-center pt-12 pb-8 bg-gradient-to-b from-slate-50 to-white relative">
-          <div className="absolute top-0 left-0 w-full h-1 bg-[#152c31]"></div>
-          <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 shadow-inner border border-emerald-100">
-            <Award className="h-12 w-12" />
+      <Card className="w-full max-w-2xl mx-auto mt-10 md:mt-16 border shadow-sm bg-card overflow-hidden rounded-3xl animate-in fade-in zoom-in duration-500">
+        <CardHeader className="text-center pt-8 pb-6 relative">
+          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 shadow-sm border border-emerald-100 dark:border-emerald-800/50">
+            <Award className="h-8 w-8" />
           </div>
-          <CardTitle className="text-4xl md:text-5xl font-serif font-bold text-slate-800 tracking-tight">Quiz Afgerond!</CardTitle>
+          <CardTitle className="text-3xl md:text-4xl font-serif font-bold text-foreground tracking-tight">Quiz Afgerond!</CardTitle>
         </CardHeader>
-        <CardContent className="text-center space-y-8 px-6 md:px-12">
+        <CardContent className="text-center space-y-6 px-6 md:px-10 pb-10">
            {/* Score Section */}
-          <div className="py-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center shadow-sm">
-            <p className="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">Jouw Resultaat</p>
-            <div className="flex items-baseline gap-2">
-                <p className="text-7xl md:text-8xl font-black text-[#152c31] tracking-tighter">
+          <div className="py-8 bg-muted rounded-3xl border flex flex-col items-center justify-center max-w-[400px] mx-auto">
+            <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-bold mb-3">JOUW RESULTAAT</p>
+            <div className="flex items-baseline gap-2 mb-4">
+                <p className="text-6xl md:text-7xl font-black text-foreground tracking-tighter">
                    {score}
                 </p>
-                <span className="text-3xl md:text-4xl text-slate-400 font-bold">/ {quiz.questions.length}</span>
+                <span className="text-2xl md:text-3xl text-muted-foreground font-bold">/ {quiz.questions.length}</span>
             </div>
              {isLoggedIn && (
-                <div className="mt-6 inline-flex items-center gap-2 px-5 py-2 bg-emerald-100/80 text-emerald-800 rounded-full text-base font-bold shadow-sm border border-emerald-200">
-                    <Award className="h-5 w-5" /> + {score * 10} XP verdiend
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 rounded-lg text-xs font-bold shadow-sm border border-emerald-200 dark:border-emerald-800/50">
+                    <Award className="h-3.5 w-3.5" /> + {earnedXp ?? Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length))} XP verdiend
                 </div>
             )}
           </div>
           
-          <p className="text-xl md:text-2xl font-medium text-slate-700 italic font-serif px-6 max-w-lg mx-auto leading-relaxed">
+          <p className="text-lg font-medium text-muted-foreground italic font-serif px-4 max-w-md mx-auto leading-relaxed">
             {score === quiz.questions.length ? "Uitmuntend! Een ware schriftgeleerde." : 
              score > quiz.questions.length / 2 ? "Goed gedaan! Blijf de schriften onderzoeken." : "Blijf oefenen, de volhouder wint."}
           </p>

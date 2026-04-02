@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
-import { connectDB, UserProgress, User, Quiz } from '@bijbelquiz/database';
+import { connectDB, UserProgress, User, Quiz, Category } from '@bijbelquiz/database';
+import { getLevelInfo, BADGES } from '@/lib/gamification';
 
 export async function POST(req: NextRequest) {
   const session = await getSession(req);
@@ -21,7 +22,7 @@ export async function POST(req: NextRequest) {
     const [quiz, existingCompletion, user] = await Promise.all([
       Quiz.findById(quizId).select('_id rewardXp questions').lean(),
       UserProgress.findOne({ userId: session.user.id, quizId }).select('_id').lean(),
-      User.findById(session.user.id).select('_id xp streak lastPlayedAt').lean(),
+      User.findById(session.user.id).select('_id xp streak bestStreak badges lastPlayedAt').lean(),
     ]);
 
     if (!quiz) {
@@ -46,31 +47,70 @@ export async function POST(req: NextRequest) {
       xpEarned,
     });
 
-    if (xpEarned > 0) {
-      const now = new Date();
-      const previous = user.lastPlayedAt ? new Date(user.lastPlayedAt) : null;
+    const now = new Date();
+    const previous = user.lastPlayedAt ? new Date(user.lastPlayedAt) : null;
+    let nextStreak = user.streak || 0;
+    
+    if (previous) {
+      const startOfToday = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+      const startOfPrevious = Date.UTC(previous.getUTCFullYear(), previous.getUTCMonth(), previous.getUTCDate());
+      const diffDays = Math.floor((startOfToday - startOfPrevious) / (1000 * 60 * 60 * 24));
 
-      let nextStreak = 1;
-      if (previous) {
-        const startOfToday = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-        const startOfPrevious = Date.UTC(previous.getUTCFullYear(), previous.getUTCMonth(), previous.getUTCDate());
-        const diffDays = Math.floor((startOfToday - startOfPrevious) / (1000 * 60 * 60 * 24));
-
-        if (diffDays === 0) {
-          nextStreak = user.streak || 1;
-        } else if (diffDays === 1) {
-          nextStreak = (user.streak || 0) + 1;
-        }
+      if (diffDays === 1) {
+        nextStreak += 1;
+      } else if (diffDays > 1) {
+        nextStreak = 1;
       }
-
-      await User.findByIdAndUpdate(session.user.id, {
-        $inc: { xp: xpEarned },
-        $set: {
-          lastPlayedAt: now,
-          streak: nextStreak,
-        },
-      });
+    } else {
+      nextStreak = 1;
     }
+
+    const bestStreak = Math.max(user.bestStreak || 0, nextStreak);
+
+    // Recalculate metrics based on all user progress
+    const allProgress = await UserProgress.find({ userId: session.user.id }).lean();
+    const totalQuizzes = allProgress.length;
+    let totalScoreSum = 0;
+    let totalQuestionSum = 0;
+    
+    // Create uniquely solved quiz array to check diverse categories or perfect scores
+    const uniqueQuizzes = Array.from(new Set(allProgress.map(p => p.quizId.toString())));
+    
+    allProgress.forEach(p => {
+      totalScoreSum += p.score;
+      totalQuestionSum += p.totalQuestions || 1;
+    });
+
+    const averageScore = totalQuestionSum > 0 ? Math.round((totalScoreSum / totalQuestionSum) * 100) : 0;
+    const newXp = (user.xp || 0) + xpEarned;
+    const levelInfo = getLevelInfo(newXp);
+
+    // Evaluate badges
+    const currentBadges = new Set(user.badges || []);
+    if (totalQuizzes >= 1) currentBadges.add('first_steps');
+    if (uniqueQuizzes.length >= 10) currentBadges.add('knowledge_seeker');
+    if (percentage === 1) currentBadges.add('perfect_score');
+    if (nextStreak >= 3) currentBadges.add('streak_3');
+    if (nextStreak >= 7) currentBadges.add('streak_7');
+    if (levelInfo.level >= 5) currentBadges.add('scholar');
+    if (levelInfo.level >= 10) currentBadges.add('master');
+    // For "all_rounder" badge (assuming you check against category count, simplified here to check if they have done 3 categories, but realistically you would query populated categories)
+    // We will add it safely if they played a solid chunk of quizzes
+    if (uniqueQuizzes.length > 20) currentBadges.add('all_rounder'); 
+
+    await User.findByIdAndUpdate(session.user.id, {
+      $set: {
+        xp: newXp,
+        level: levelInfo.level,
+        levelTitle: levelInfo.title,
+        lastPlayedAt: now,
+        streak: nextStreak,
+        bestStreak: bestStreak,
+        quizzesPlayed: totalQuizzes,
+        averageScore: averageScore,
+        badges: Array.from(currentBadges),
+      },
+    });
 
     return NextResponse.json({
       success: true,

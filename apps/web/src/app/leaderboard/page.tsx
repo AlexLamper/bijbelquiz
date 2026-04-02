@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import { connectDB, UserProgress, Category } from '@bijbelquiz/database';
 import Breadcrumb from '@/components/Breadcrumb';
 import LeaderboardClient from './LeaderboardClient';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 
 export interface LeaderboardEntry {
   _id: string;
@@ -176,6 +178,7 @@ export default async function LeaderboardPage({
 }: { 
   searchParams: Promise<SearchParams> 
 }) {
+  const session = await getServerSession(authOptions);
   const params = await searchParams;
   const timeFilter = params?.time || 'all';
   const categorySlug = params?.category || 'all';
@@ -197,9 +200,10 @@ export default async function LeaderboardPage({
         
         <LeaderboardClient 
           initialData={leaderboard}
-          categories={categories}
           initialTimeFilter={timeFilter}
           initialCategorySlug={categorySlug}
+          categories={categories}
+          currentUserId={session?.user?.id || null}
         />
       </div>
     </div>

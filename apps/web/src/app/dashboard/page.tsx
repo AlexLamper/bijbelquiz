@@ -1,9 +1,10 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import { connectDB, UserProgress, Quiz } from "@bijbelquiz/database";
+import { connectDB, UserProgress, Quiz, User } from "@bijbelquiz/database";
 import { Metadata } from 'next';
 import DashboardHomeClient from './DashboardHomeClient';
+import { getLevelInfo } from '@/lib/gamification';
 
 export const metadata: Metadata = {
   title: 'Dashboard - BijbelQuiz',
@@ -36,6 +37,9 @@ export default async function DashboardPage() {
   const userId = session.user.id;
   const isPremium = !!session.user.isPremium;
 
+  const user = await User.findById(userId).select('xp streak').lean();
+  const xp = user?.xp || 0;
+
   // Fetch quizzes
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
   const quizzesRaw = await Quiz.find(statusFilter)
@@ -63,20 +67,9 @@ export default async function DashboardPage() {
     })
     .lean() as unknown as PopulatedProgress[];
 
-  // XP & level
-  const totalScore = progressDocs.reduce((acc, p) => acc + p.score, 0);
-  const xp = totalScore * 10;
-  let level = 1, levelTitle = "Beginner", nextLevelXp = 100;
-  if (xp >= 1500) { level = 4; levelTitle = "Wijze"; nextLevelXp = 5000; }
-  else if (xp >= 500) { level = 3; levelTitle = "Schriftgeleerde"; nextLevelXp = 1500; }
-  else if (xp >= 100) { level = 2; levelTitle = "Onderzoeker"; nextLevelXp = 500; }
-  const currentLevelBaseXp = level === 1 ? 0 : level === 2 ? 100 : level === 3 ? 500 : 1500;
-  const levelProgress = Math.min(
-    100,
-    Math.round(((xp - currentLevelBaseXp) / (nextLevelXp - currentLevelBaseXp)) * 100)
-  );
+  const levelInfo = getLevelInfo(xp);
 
-  const streak = calculateStreak(progressDocs.map((p) => p.completedAt));
+  const streak = user?.streak || 0;
   const recentProgress = JSON.parse(JSON.stringify(progressDocs.slice(0, 5)));
 
   return (
@@ -85,10 +78,10 @@ export default async function DashboardPage() {
       recentProgress={recentProgress}
       streak={streak}
       xp={xp}
-      level={level}
-      levelTitle={levelTitle}
-      levelProgress={levelProgress}
-      totalQuizzesDone={progressDocs.length}
+      level={levelInfo.level}
+      levelTitle={levelInfo.title}
+      levelProgress={levelInfo.progressPercentage}
+      totalQuizzesDone={user?.quizzesPlayed || 0}
       userName={session.user.name?.split(' ')[0] || 'Bijbelstudent'}
       isPremium={isPremium}
     />

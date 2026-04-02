@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 import { connectDB, User, UserProgress } from '@bijbelquiz/database';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { getLevelInfo, BADGES, LEVELS } from '@/lib/gamification';
 import { 
   User as UserIcon, 
   Mail, 
@@ -29,44 +30,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Level calculation helper
-function getLevelInfo(xp: number) {
-  const levels = [
-    { level: 1, title: 'Beginner', minXp: 0 },
-    { level: 2, title: 'Leerling', minXp: 100 },
-    { level: 3, title: 'Ontdekker', minXp: 250 },
-    { level: 4, title: 'Kenner', minXp: 500 },
-    { level: 5, title: 'Geleerde', minXp: 1000 },
-    { level: 6, title: 'Expert', minXp: 2000 },
-    { level: 7, title: 'Meester', minXp: 4000 },
-    { level: 8, title: 'Schriftgeleerde', minXp: 7500 },
-    { level: 9, title: 'Wijze', minXp: 12000 },
-    { level: 10, title: 'Bijbelvorser', minXp: 20000 },
-  ];
-  
-  let currentLevel = levels[0];
-  let nextLevel = levels[1];
-  
-  for (let i = levels.length - 1; i >= 0; i--) {
-    if (xp >= levels[i].minXp) {
-      currentLevel = levels[i];
-      nextLevel = levels[i + 1] || levels[i];
-      break;
-    }
-  }
-  
-  const xpInCurrentLevel = xp - currentLevel.minXp;
-  const xpNeededForNextLevel = nextLevel.minXp - currentLevel.minXp;
-  const progress = xpNeededForNextLevel > 0 ? Math.round((xpInCurrentLevel / xpNeededForNextLevel) * 100) : 100;
-  
-  return {
-    level: currentLevel.level,
-    title: currentLevel.title,
-    progress,
-    xpToNext: nextLevel.minXp - xp,
-  };
-}
-
 export default async function ProfilePage() {
   const session = await getServerSession(authOptions);
 
@@ -81,21 +44,10 @@ export default async function ProfilePage() {
     return <div>Gebruiker niet gevonden</div>;
   }
 
-  // Get quiz statistics
-  const totalQuizzesDone = await UserProgress.countDocuments({ userId: user._id });
-  const recentProgress = await UserProgress.find({ userId: user._id })
-    .sort({ completedAt: -1 })
-    .limit(10)
-    .lean();
+  // Get quiz statistics directly from the saved User model
+  const totalQuizzesDone = user.quizzesPlayed || 0;
+  const avgScore = user.averageScore || 0;
   
-  const avgScore = recentProgress.length > 0
-    ? Math.round(
-        recentProgress.reduce((acc, p) =>
-          acc + (p.totalQuestions > 0 ? (p.score / p.totalQuestions) * 100 : 0), 0
-        ) / recentProgress.length
-      )
-    : 0;
-
   const levelInfo = getLevelInfo(user.xp || 0);
 
   return (
@@ -209,59 +161,120 @@ export default async function ProfilePage() {
               </div>
             </div>
             
-            <div className="flex items-center gap-6">
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#5b7dd9] to-[#4a6bc7] flex items-center justify-center">
-                <span className="text-3xl font-bold text-white">{levelInfo.level}</span>
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-6">
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#5b7dd9] to-[#4a6bc7] flex items-center justify-center shrink-0">
+                  <span className="text-3xl font-bold text-white">{levelInfo.level}</span>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-lg font-semibold text-[#1a2942] dark:text-foreground">{levelInfo.title}</span>
+                    <span className="text-sm text-muted-foreground">{levelInfo.progressPercentage}%</span>
+                  </div>
+                  <div className="h-3 w-full bg-gray-100 dark:bg-muted rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-[#5b7dd9] to-[#4a6bc7] rounded-full transition-all duration-1000"
+                      style={{ width: `${levelInfo.progressPercentage}%` }}
+                    />
+                  </div>
+                  {!levelInfo.isMaxLevel && (
+                    <p className="text-sm text-muted-foreground mt-2">
+                      Nog {levelInfo.nextLevelXp - levelInfo.currentXp} XP tot het volgende niveau
+                    </p>
+                  )}
+                </div>
               </div>
-              <div className="flex-1">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-lg font-semibold text-[#1a2942] dark:text-foreground">{levelInfo.title}</span>
-                  <span className="text-sm text-muted-foreground">{levelInfo.progress}%</span>
+
+              <div className="mt-4 pt-6 border-t border-border/50">
+                <h3 className="text-sm font-semibold text-[#1a2942] dark:text-foreground mb-4 uppercase tracking-wider">Alle Niveaus</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {LEVELS.map((level) => {
+                    const isReached = user.xp >= level.minXp;
+                    const isCurrent = level.level === levelInfo.level;
+                    
+                    return (
+                      <div 
+                        key={level.level} 
+                        className={`flex items-center gap-3 p-3 rounded-xl border transition-all ${
+                          isCurrent
+                            ? 'bg-[#5b7dd9]/10 border-[#5b7dd9]/30'
+                            : isReached 
+                              ? 'bg-gray-50 dark:bg-card/50 border-gray-200 dark:border-border' 
+                              : 'bg-gray-50/50 dark:bg-card/30 border-transparent opacity-50 grayscale'
+                        }`}
+                      >
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm ${
+                          isCurrent 
+                            ? 'bg-[#5b7dd9] text-white' 
+                            : isReached 
+                              ? 'bg-gray-200 dark:bg-muted text-gray-700 dark:text-foreground' 
+                              : 'bg-gray-100 dark:bg-muted/50 text-gray-400 dark:text-muted-foreground'
+                        }`}>
+                          {level.level}
+                        </div>
+                        <div className="flex-1">
+                          <div className="flex items-center justify-between">
+                            <h4 className={`text-sm font-semibold ${
+                              isCurrent 
+                                ? 'text-[#5b7dd9] dark:text-[#5b7dd9]' 
+                                : isReached 
+                                  ? 'text-[#1a2942] dark:text-foreground' 
+                                  : 'text-gray-500 dark:text-muted-foreground'
+                            }`}>
+                              {level.title}
+                            </h4>
+                            {isReached && !isCurrent && (
+                              <CheckCircle2 className="w-4 h-4 text-[#5b7dd9]/70" />
+                            )}
+                          </div>
+                          <p className="text-xs text-muted-foreground mt-0.5">{level.minXp} XP</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-                <div className="h-3 w-full bg-gray-100 dark:bg-muted rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-[#5b7dd9] to-[#4a6bc7] rounded-full transition-all duration-1000"
-                    style={{ width: `${levelInfo.progress}%` }}
-                  />
-                </div>
-                {levelInfo.xpToNext > 0 && (
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Nog {levelInfo.xpToNext} XP tot het volgende niveau
-                  </p>
-                )}
               </div>
             </div>
           </div>
 
           {/* Badges Card */}
-          <div className="bg-white dark:bg-card rounded-2xl p-6 shadow-lg">
+          <div className="bg-white dark:bg-card rounded-2xl p-6 shadow-lg lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/20 flex items-center justify-center">
                 <Star className="w-5 h-5 text-amber-500" />
               </div>
               <div>
                 <h2 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Badges</h2>
-                <p className="text-sm text-muted-foreground">{(user.badges || []).length} verdiend</p>
+                <p className="text-sm text-muted-foreground">{(user.badges || []).length} van de {BADGES.length} verdiend</p>
               </div>
             </div>
             
-            {(user.badges || []).length > 0 ? (
-              <div className="flex flex-wrap gap-2">
-                {user.badges.map((badge: string, index: number) => (
-                  <span key={index} className="px-3 py-1.5 rounded-full bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 text-sm font-medium">
-                    {badge}
-                  </span>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-6">
-                <div className="w-12 h-12 rounded-full bg-gray-100 dark:bg-muted flex items-center justify-center mx-auto mb-3">
-                  <Star className="w-6 h-6 text-gray-300 dark:text-muted-foreground" />
-                </div>
-                <p className="text-sm text-muted-foreground">Nog geen badges verdiend</p>
-                <p className="text-xs text-muted-foreground mt-1">Speel quizzen om badges te verdienen!</p>
-              </div>
-            )}
+            <div className="grid grid-cols-1 gap-3">
+              {BADGES.map((badge) => {
+                const earned = (user.badges || []).includes(badge.id);
+                return (
+                  <div 
+                    key={badge.id} 
+                    className={`flex items-center gap-3 p-3 rounded-xl border transition-all ${
+                      earned 
+                        ? 'bg-amber-50/50 dark:bg-amber-900/10 border-amber-100 dark:border-amber-900/30' 
+                        : 'bg-gray-50/50 dark:bg-card/50 border-gray-100 dark:border-border opacity-60 grayscale-[0.8]'
+                    }`}
+                  >
+                    <div className="text-2xl">{badge.icon}</div>
+                    <div>
+                      <h4 className={`text-sm font-semibold ${earned ? 'text-amber-900 dark:text-amber-400' : 'text-gray-600 dark:text-muted-foreground'}`}>
+                        {badge.name}
+                      </h4>
+                      <p className="text-xs text-muted-foreground mt-0.5">{badge.description}</p>
+                    </div>
+                    {earned && (
+                      <CheckCircle2 className="w-4 h-4 text-amber-500 ml-auto opacity-70" />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, User, UserProgress } from '@bijbelquiz/database';
+import { getLevelInfo } from '@/lib/gamification';
 
 export async function GET(req: NextRequest) {
   const session = await getSession(req);
@@ -21,39 +22,8 @@ export async function GET(req: NextRequest) {
       return new NextResponse('User not found', { status: 404 });
     }
 
-    // Calculate level based on XP (each level requires 500 more XP than the previous)
-    const xpThresholds = [0, 500, 1200, 2100, 3200, 4500, 6000, 7700, 9600, 11700];
-    let level = 1;
-    let nextLevelXp = 500;
-
-    for (let i = 1; i < xpThresholds.length; i++) {
-      if (user.xp >= xpThresholds[i]) {
-        level = i + 1;
-        nextLevelXp = xpThresholds[i + 1] || xpThresholds[i] + 2100;
-      } else {
-        nextLevelXp = xpThresholds[i];
-        break;
-      }
-    }
-
-    const currentLevelXp = xpThresholds[level - 1] || 0;
-    const levelProgress = Math.round(
-      ((user.xp - currentLevelXp) / (nextLevelXp - currentLevelXp)) * 100
-    );
-
-    // Level titles
-    const levelTitles: { [key: number]: string } = {
-      1: 'Nieuweling',
-      2: 'Scholier',
-      3: 'Student',
-      4: 'Meester',
-      5: 'Gids',
-      6: 'Leraar',
-      7: 'Professor',
-      8: 'Wijze',
-      9: 'Geleerde',
-      10: 'Deskundige',
-    };
+    // Gamification level helper
+    const levelInfo = getLevelInfo(user.xp || 0);
 
     // Calculate stats
     const totalQuizzes = progressData.length;
@@ -63,13 +33,14 @@ export async function GET(req: NextRequest) {
 
     return NextResponse.json({
       xp: user.xp,
-      level,
-      levelTitle: levelTitles[level] || 'Deskundige',
-      levelProgress: Math.max(0, Math.min(100, levelProgress)),
-      nextLevelXp,
+      level: levelInfo.level,
+      levelTitle: levelInfo.title,
+      levelProgress: levelInfo.progressPercentage,
+      nextLevelXp: levelInfo.nextLevelXp,
       streak: user.streak || 0,
       totalQuizzes,
       avgScore,
+      badges: user.badges || [],
     });
   } catch (error) {
     console.error('[USER_STATS_GET]', error);
