@@ -141,17 +141,36 @@ export default async function QuizzesPage({
                 </div>
 
                 {!isPremiumUser && (
-                    <div className="bg-[#eaf0fc] dark:bg-amber-900/10 rounded-2xl p-6 border border-[#dfe8fa] dark:border-amber-900/30 mt-6">
-                       <h3 className="font-bold text-[#1a2333] dark:text-amber-500 mb-2 flex items-center gap-2">
-                           <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> Premium
-                       </h3>
-                       <p className="text-sm text-[#5c687e] dark:text-muted-foreground mb-4">
-                           Ontgrendel alle quizzen en diepgaande studie-uitleg.
-                       </p>
-                       <Button className="w-full bg-[#1a2333] dark:bg-amber-600 hover:bg-black dark:hover:bg-amber-700 text-white rounded-xl" asChild>
-                           <Link href="/premium">Upgrade Nu</Link>
-                       </Button>
-                    </div>
+                    <>
+                        {/* Light Mode Premium Card */}
+                        <div className="bg-[#eaf0fc] rounded-2xl p-6 border border-[#dfe8fa] mt-6 dark:hidden">
+                            <h3 className="font-bold text-[#1a2333] mb-2 flex items-center gap-2">
+                                <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> Premium
+                            </h3>
+                            <p className="text-sm text-[#5c687e] mb-4">
+                                Ontgrendel alle quizzen en diepgaande studie-uitleg.
+                            </p>
+                            <Button className="w-full bg-[#1a2333] hover:bg-black text-white rounded-xl" asChild>
+                                <Link href="/premium">Upgrade Nu</Link>
+                            </Button>
+                        </div>
+                        {/* Dark Mode Premium Card */}
+                        <div className="hidden dark:block bg-gradient-to-r from-[#1a2942] to-[#2a3f5f] rounded-2xl p-6 shadow-lg mt-6 text-center lg:text-left">
+                           <div className="inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-3 py-1 mb-3">
+                               <Star className="h-4 w-4 fill-[#5b7dd9] text-[#5b7dd9]" />
+                               <span className="text-xs font-bold text-[#5b7dd9] uppercase tracking-wider">Premium</span>
+                           </div>
+                           <h3 className="font-serif font-medium text-white mb-2 text-lg">
+                               Krijg volledige toegang
+                           </h3>
+                           <p className="text-sm text-white/70 mb-4 bg-transparent border-0 p-0 m-0">
+                               Ontgrendel alle quizzen en diepgaande studie-uitleg.
+                           </p>
+                           <Button className="w-full bg-[#5b7dd9] hover:bg-[#4a6bc7] text-white rounded-xl" asChild>
+                               <Link href="/premium">Upgrade Nu</Link>
+                           </Button>
+                        </div>
+                    </>
                 )}
             </div>
 
@@ -160,19 +179,37 @@ export default async function QuizzesPage({
                 <MobileQuizFilter categories={categories} currentCategory={currentCategory} />
 
                 {!isPremiumUser && (
-                    <Card className="bg-amber-50 border-amber-200">
-                       <CardContent className="pt-4 pb-4 flex items-center justify-between gap-3">
-                           <div>
-                               <h3 className="font-bold text-amber-800 text-sm flex items-center gap-1">
-                                   <Star className="h-3 w-3 fill-amber-600 text-amber-600" /> Premium
-                               </h3>
-                               <p className="text-xs text-amber-700/80">Upgrade voor alle quizzen</p>
-                           </div>
-                           <Button size="sm" className="bg-amber-600 hover:bg-amber-700 text-white h-8 text-xs" asChild>
-                               <Link href="/premium">Upgrade</Link>
-                           </Button>
-                       </CardContent>
-                    </Card>
+                    <>
+                        {/* Light Mode Card */}
+                        <Card className="bg-amber-50 border-amber-200 dark:hidden">
+                            <CardContent className="pt-4 pb-4 flex items-center justify-between gap-3">
+                                <div>
+                                    <h3 className="font-bold text-amber-800 text-sm flex items-center gap-1">
+                                        <Star className="h-3 w-3 fill-amber-600 text-amber-600" /> Premium
+                                    </h3>
+                                    <p className="text-xs text-amber-700/80">Upgrade voor alle quizzen</p>
+                                </div>
+                                <Button size="sm" className="bg-amber-600 hover:bg-amber-700 text-white h-8 text-xs shrink-0 rounded-lg" asChild>
+                                    <Link href="/premium">Upgrade</Link>
+                                </Button>
+                            </CardContent>
+                        </Card>
+                        {/* Dark Mode Card */}
+                        <Card className="hidden dark:block bg-gradient-to-r from-[#1a2942] to-[#2a3f5f] border-0 shadow-md">
+                            <CardContent className="pt-4 pb-4 flex items-center justify-between gap-3">
+                                <div>
+                                    <div className="inline-flex items-center gap-1 rounded-full bg-[#5b7dd9]/20 px-2 py-0.5 mb-1">
+                                        <Star className="h-3 w-3 fill-[#5b7dd9] text-[#5b7dd9]" />
+                                        <span className="text-[10px] font-bold text-[#5b7dd9] uppercase tracking-wider">Premium</span>
+                                    </div>
+                                    <p className="text-xs text-white/80 font-medium">Ontgrendel alle quizzen en uitleg</p>
+                                </div>
+                                <Button size="sm" className="bg-[#5b7dd9] hover:bg-[#4a6bc7] text-white h-8 text-xs shrink-0 rounded-lg" asChild>
+                                    <Link href="/premium">Upgrade</Link>
+                                </Button>
+                            </CardContent>
+                        </Card>
+                    </>
                 )}
             </div>
         </div>
