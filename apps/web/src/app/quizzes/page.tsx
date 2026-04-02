@@ -141,14 +141,14 @@ export default async function QuizzesPage({
                 </div>
 
                 {!isPremiumUser && (
-                    <div className="bg-[#eaf0fc] rounded-2xl p-6 border border-[#dfe8fa] mt-6">
-                       <h3 className="font-bold text-[#1a2333] mb-2 flex items-center gap-2">
+                    <div className="bg-[#eaf0fc] dark:bg-amber-900/10 rounded-2xl p-6 border border-[#dfe8fa] dark:border-amber-900/30 mt-6">
+                       <h3 className="font-bold text-[#1a2333] dark:text-amber-500 mb-2 flex items-center gap-2">
                            <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> Premium
                        </h3>
-                       <p className="text-sm text-[#5c687e] mb-4">
+                       <p className="text-sm text-[#5c687e] dark:text-muted-foreground mb-4">
                            Ontgrendel alle quizzen en diepgaande studie-uitleg.
                        </p>
-                       <Button className="w-full bg-[#1a2333] hover:bg-black text-white rounded-xl" asChild>
+                       <Button className="w-full bg-[#1a2333] dark:bg-amber-600 hover:bg-black dark:hover:bg-amber-700 text-white rounded-xl" asChild>
                            <Link href="/premium">Upgrade Nu</Link>
                        </Button>
                     </div>
