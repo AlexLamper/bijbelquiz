@@ -26,11 +26,7 @@ todo.txt
 .env.test.local
 .env.production.local
 
-# AI and Generation Outputs
-/docs/AI/
-image-generation-prompt.txt
-pastel-image-generation-prompt.txt
-scene-descriptions.txt
+/docs
 
 # Editor / IDE
 .vscode/

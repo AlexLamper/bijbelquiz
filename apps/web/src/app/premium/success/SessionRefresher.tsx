@@ -1,7 +1,7 @@
 'use client';
 
 import { useSession } from 'next-auth/react';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 /**
  * Dit component zorgt ervoor dat de client-side sessie (JWT) wordt ververst
@@ -10,9 +10,15 @@ import { useEffect } from 'react';
  */
 export default function SessionRefresher() {
   const { update } = useSession();
+  const hasUpdated = useRef(false);
 
   useEffect(() => {
-    // Forceer een update van de sessie
+    if (hasUpdated.current) {
+      return;
+    }
+
+    hasUpdated.current = true;
+    // Forceer een eenmalige update van de sessie
     update();
   }, [update]);
 

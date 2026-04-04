@@ -8,16 +8,13 @@ import { Badge } from '@/components/ui/badge';
 import {
   ArrowRight,
   BookOpen,
-  BookText,
   CheckCircle2,
   Crown,
   Flame,
   Lock,
   Play,
-  Scroll,
   Star,
   Trophy,
-  Users,
   Zap,
 } from 'lucide-react';
 
@@ -55,44 +52,32 @@ interface DashboardHomeClientProps {
 
 const categories = [
   {
-    icon: Scroll,
     title: "Oude Testament",
-    description: "Van Genesis tot Maleachi",
-    color: "bg-[#5b7dd9]/10",
-    iconColor: "text-[#5b7dd9]",
+    imageUrl: '/images/quizzes/img1.png',
     href: "/quizzes?category=oude-testament",
   },
   {
-    icon: BookText,
     title: "Nieuwe Testament",
-    description: "Het evangelie en de brieven",
-    color: "bg-[#d9a55b]/10",
-    iconColor: "text-[#d9a55b]",
+    imageUrl: '/images/quizzes/img2.png',
     href: "/quizzes?category=nieuwe-testament",
   },
   {
-    icon: Users,
     title: "Bijbelse Figuren",
-    description: "Abraham, Mozes, David...",
-    color: "bg-[#5bd99a]/10",
-    iconColor: "text-[#5bd99a]",
+    imageUrl: '/images/quizzes/img3.png',
     href: "/quizzes?category=bijbelse-figuren",
   },
   {
-    icon: BookOpen,
     title: "Thema's & Verhalen",
-    description: "Bekende verhalen uit de Bijbel",
-    color: "bg-[#d95b7d]/10",
-    iconColor: "text-[#d95b7d]",
+    imageUrl: '/images/quizzes/img4.png',
     href: "/quizzes?category=verhalen",
   },
 ];
 
-// Consistent PRO badge component
+// Consistent premium badge component
 function ProBadge({ className = "" }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-1 rounded-md bg-[#1a2942] px-2 py-0.5 text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-sm ${className}`}>
-      <Star className="h-3 w-3 fill-amber-400 text-amber-400" /> PRO
+      <Star className="h-3 w-3 fill-amber-400 text-amber-400" /> PREMIUM
     </span>
   );
 }
@@ -335,18 +320,22 @@ export default function DashboardHomeClient({
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((category, index) => (
-              <Link key={index} href={category.href}>
-                <Card className="group cursor-pointer border-0 bg-white dark:bg-card shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 h-full rounded-2xl overflow-hidden">
-                  <CardContent className="flex flex-col items-center text-center p-6">
-                    <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${category.color} mb-4 transition-transform group-hover:scale-110`}>
-                      <category.icon className={`h-7 w-7 ${category.iconColor}`} />
-                    </div>
-                    <h3 className="font-serif text-lg font-medium text-[#1a2942] dark:text-foreground group-hover:text-[#5b7dd9] transition-colors mb-1">
+              <Link key={index} href={category.href} className="block">
+                <Card className="group relative h-32 overflow-hidden rounded-2xl border border-slate-200/70 dark:border-white/10 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <div className="absolute inset-0">
+                    <Image
+                      src={category.imageUrl}
+                      alt={category.title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-black/45" />
+                  <CardContent className="relative z-10 flex h-full items-center justify-center p-4">
+                    <h3 className="text-center font-serif text-lg font-semibold text-white drop-shadow-md">
                       {category.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {category.description}
-                    </p>
                   </CardContent>
                 </Card>
               </Link>

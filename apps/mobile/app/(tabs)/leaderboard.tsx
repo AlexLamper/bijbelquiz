@@ -171,7 +171,7 @@ export default function LeaderboardScreen() {
               {item.isPremium && (
                 <View className="bg-amber-400 px-1.5 py-0.5 rounded flex-row items-center gap-0.5">
                   <FontAwesome name="star" size={8} color="white" />
-                  <Text className="text-white text-[9px] font-bold">PRO</Text>
+                  <Text className="text-white text-[9px] font-bold">PREMIUM</Text>
                 </View>
               )}
             </View>

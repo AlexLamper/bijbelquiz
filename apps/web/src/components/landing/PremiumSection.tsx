@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Check, Crown, Sparkles, BookOpen, Trophy, Zap } from "lucide-react"
+import Link from "next/link"
 
 const features = [
   {
@@ -33,6 +34,9 @@ const benefits = [
 ]
 
 export function PremiumSection() {
+  const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
+  const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';
+
   return (
     <section className="bg-[#1a2942] py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
@@ -65,14 +69,19 @@ export function PremiumSection() {
               ))}
             </ul>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <Button className="rounded-full bg-[#5b7dd9] px-8 py-6 text-base font-medium text-white hover:bg-[#4a6bc7]">
-                Word nu Premium
-              </Button>
-              <div className="flex items-baseline gap-1 text-white">
-                <span className="text-2xl font-semibold">€4,99</span>
-                <span className="text-white/60">/maand</span>
+            <div className="mt-10 flex flex-col gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <Button asChild className="rounded-full bg-[#5b7dd9] px-8 py-6 text-base font-medium text-white hover:bg-[#4a6bc7]">
+                  <Link href="/premium">Word nu Premium</Link>
+                </Button>
+                <div className="flex items-baseline gap-1 text-white">
+                  <span className="text-2xl font-semibold">{monthlyPriceLabel}</span>
+                  <span className="text-white/60">/maand</span>
+                </div>
               </div>
+              <p className="text-sm text-white/70">
+                Of kies levenslang voor {lifetimePriceLabel} eenmalig.
+              </p>
             </div>
           </div>
 

@@ -7,6 +7,10 @@ export interface IUser extends Document {
   image?: string;
   googleId?: string;
   isPremium: boolean;
+  hasLifetimePremium: boolean;
+  stripeCustomerId?: string;
+  stripeSubscriptionId?: string;
+  stripeSubscriptionStatus?: string;
   xp: number;
   level: number;
   levelTitle: string;
@@ -27,6 +31,10 @@ const UserSchema: Schema = new Schema({
   image: { type: String },
   googleId: { type: String },
   isPremium: { type: Boolean, default: false },
+  hasLifetimePremium: { type: Boolean, default: false },
+  stripeCustomerId: { type: String, index: true },
+  stripeSubscriptionId: { type: String, index: true },
+  stripeSubscriptionStatus: { type: String },
   xp: { type: Number, default: 0, index: true },
   level: { type: Number, default: 1 },
   levelTitle: { type: String, default: 'Zoeker' },

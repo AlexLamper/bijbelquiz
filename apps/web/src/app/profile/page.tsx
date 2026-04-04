@@ -1,7 +1,8 @@
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { connectDB, User, UserProgress } from '@bijbelquiz/database';
+import { connectDB, User } from '@bijbelquiz/database';
+import stripe from '@/lib/stripe';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { getLevelInfo, BADGES, LEVELS } from '@/lib/gamification';
@@ -16,8 +17,8 @@ import {
   Crown, 
   ArrowLeft,
   Target,
-  BookOpen,
-  TrendingUp
+  TrendingUp,
+  CreditCard
 } from 'lucide-react';
 import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -47,6 +48,100 @@ export default async function ProfilePage() {
   // Get quiz statistics directly from the saved User model
   const totalQuizzesDone = user.quizzesPlayed || 0;
   const avgScore = user.averageScore || 0;
+
+  const isLifetimePremium = !!user.hasLifetimePremium;
+  const isMonthlyPremium = !!user.isPremium && !isLifetimePremium;
+
+  let resolvedStripeCustomerId = user.stripeCustomerId || '';
+  let resolvedStripeSubscriptionId = user.stripeSubscriptionId || '';
+  let resolvedSubscriptionStatus = (user.stripeSubscriptionStatus || '').toLowerCase();
+  let subscriptionCurrentPeriodEnd: Date | null = null;
+  let subscriptionCancelAtPeriodEnd = false;
+
+  if (isMonthlyPremium) {
+    try {
+      if (!resolvedStripeSubscriptionId && resolvedStripeCustomerId) {
+        const subscriptions = await stripe.subscriptions.list({
+          customer: resolvedStripeCustomerId,
+          status: 'all',
+          limit: 1,
+        });
+
+        if (subscriptions.data[0]) {
+          resolvedStripeSubscriptionId = subscriptions.data[0].id;
+          resolvedSubscriptionStatus = subscriptions.data[0].status;
+          subscriptionCancelAtPeriodEnd = !!subscriptions.data[0].cancel_at_period_end;
+          if (subscriptions.data[0].current_period_end) {
+            subscriptionCurrentPeriodEnd = new Date(subscriptions.data[0].current_period_end * 1000);
+          }
+        }
+      }
+
+      if (!resolvedStripeSubscriptionId && user.email) {
+        const customers = await stripe.customers.list({ email: user.email, limit: 10 });
+
+        for (const customer of customers.data) {
+          const subscriptions = await stripe.subscriptions.list({
+            customer: customer.id,
+            status: 'all',
+            limit: 1,
+          });
+
+          if (subscriptions.data[0]) {
+            resolvedStripeCustomerId = customer.id;
+            resolvedStripeSubscriptionId = subscriptions.data[0].id;
+            resolvedSubscriptionStatus = subscriptions.data[0].status;
+            subscriptionCancelAtPeriodEnd = !!subscriptions.data[0].cancel_at_period_end;
+            if (subscriptions.data[0].current_period_end) {
+              subscriptionCurrentPeriodEnd = new Date(subscriptions.data[0].current_period_end * 1000);
+            }
+            break;
+          }
+        }
+      }
+
+      if (resolvedStripeSubscriptionId && !subscriptionCurrentPeriodEnd) {
+        const subscription = await stripe.subscriptions.retrieve(resolvedStripeSubscriptionId);
+        resolvedSubscriptionStatus = subscription.status || resolvedSubscriptionStatus;
+        subscriptionCancelAtPeriodEnd = !!subscription.cancel_at_period_end;
+        if (subscription.current_period_end) {
+          subscriptionCurrentPeriodEnd = new Date(subscription.current_period_end * 1000);
+        }
+        if (!resolvedStripeCustomerId && typeof subscription.customer === 'string') {
+          resolvedStripeCustomerId = subscription.customer;
+        }
+      }
+    } catch (subscriptionError) {
+      console.warn('[PROFILE] Failed to resolve Stripe subscription details', subscriptionError);
+    }
+
+    if (
+      resolvedStripeCustomerId !== (user.stripeCustomerId || '') ||
+      resolvedStripeSubscriptionId !== (user.stripeSubscriptionId || '') ||
+      resolvedSubscriptionStatus !== (user.stripeSubscriptionStatus || '').toLowerCase()
+    ) {
+      await User.findByIdAndUpdate(user._id, {
+        stripeCustomerId: resolvedStripeCustomerId || undefined,
+        stripeSubscriptionId: resolvedStripeSubscriptionId || undefined,
+        stripeSubscriptionStatus: resolvedSubscriptionStatus || undefined,
+      });
+    }
+  }
+
+  const subscriptionStatusLabel: Record<string, string> = {
+    trialing: 'Proefperiode',
+    active: 'Actief',
+    past_due: 'Betaling achterstallig',
+    unpaid: 'Onbetaald',
+    canceled: 'Geannuleerd',
+    incomplete: 'Onvolledig',
+    incomplete_expired: 'Verlopen',
+  };
+
+  const subscriptionStatusText = subscriptionStatusLabel[resolvedSubscriptionStatus] || (isMonthlyPremium ? 'In verwerking' : 'Levenslang actief');
+  const subscriptionEndDateLabel = subscriptionCurrentPeriodEnd
+    ? subscriptionCurrentPeriodEnd.toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })
+    : null;
   
   const levelInfo = getLevelInfo(user.xp || 0);
 
@@ -90,7 +185,7 @@ export default async function ProfilePage() {
                 </h1>
                 {user.isPremium && (
                   <span className="inline-flex items-center gap-1 rounded-md bg-amber-400/20 px-2.5 py-1 text-xs font-bold text-amber-400 uppercase tracking-wider">
-                    <Star className="h-3 w-3 fill-amber-400" /> PRO
+                    <Star className="h-3 w-3 fill-amber-400" /> PREMIUM
                   </span>
                 )}
               </div>
@@ -112,7 +207,7 @@ export default async function ProfilePage() {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 max-w-[1200px] -mt-16">
+      <div className="container mx-auto px-4 max-w-[1200px] -mt-16 pb-14">
         {/* Stats Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
@@ -300,54 +395,59 @@ export default async function ProfilePage() {
           </div>
         )}
 
-        {/* Premium Thank You (for premium users) */}
+        {/* Unified Premium Billing Card */}
         {user.isPremium && (
-          <div className="mt-8 bg-gradient-to-r from-amber-50 to-amber-100/50 dark:from-amber-900/20 dark:to-amber-800/10 rounded-2xl p-6 text-center border border-amber-200/50 dark:border-amber-700/30">
-            <Star className="w-8 h-8 text-amber-500 mx-auto mb-3 fill-amber-500" />
-            <h3 className="text-lg font-medium text-amber-900 dark:text-amber-400 mb-1">
-              Bedankt voor je steun!
-            </h3>
-            <p className="text-sm text-amber-700/80 dark:text-amber-500/80">
-              Je hebt toegang tot alle premium content van BijbelQuiz.
-            </p>
+          <div className="mt-8 bg-white dark:bg-card rounded-2xl p-6 border border-border shadow-lg">
+            <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 flex items-center justify-center">
+                  <CreditCard className="w-5 h-5 text-[#5b7dd9]" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Premium lidmaatschap</h3>
+                  <p className="text-sm text-muted-foreground">Bedankt voor je steun. Je hebt toegang tot alle premium content van BijbelQuiz.</p>
+                </div>
+              </div>
+              <span className="inline-flex items-center rounded-full bg-slate-100 dark:bg-muted px-3 py-1 text-xs font-semibold text-slate-700 dark:text-muted-foreground">
+                {isLifetimePremium ? 'Levenslang' : subscriptionStatusText}
+              </span>
+            </div>
+
+            {isMonthlyPremium ? (
+              <>
+                <div className="space-y-2 mb-5 text-sm text-muted-foreground">
+                  {subscriptionCancelAtPeriodEnd ? (
+                    <p>
+                      Je abonnement is opgezegd en blijft actief tot <span className="font-semibold text-[#1a2942] dark:text-foreground">{subscriptionEndDateLabel || 'einde van de huidige periode'}</span>.
+                    </p>
+                  ) : (
+                    <p>
+                      {subscriptionEndDateLabel
+                        ? <>Je Premium loopt door en verlengt op <span className="font-semibold text-[#1a2942] dark:text-foreground">{subscriptionEndDateLabel}</span>.</>
+                        : 'Je maandabonnement is actief.'}
+                    </p>
+                  )}
+                  <p>Je kunt je betaalmethode aanpassen, facturen bekijken of je maandabonnement stopzetten via Stripe.</p>
+                </div>
+
+                <form action="/api/stripe/portal" method="POST">
+                  <Button type="submit" className="rounded-full bg-[#1a2942] hover:bg-[#101b2f] text-white px-6">
+                    Open abonnementsportaal (Stripe)
+                  </Button>
+                </form>
+              </>
+            ) : (
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p>
+                  Je hebt een levenslange Premium-toegang. Er is geen terugkerend abonnement om stop te zetten.
+                </p>
+                <p>
+                  Deze aankoop blijft permanent gekoppeld aan je account.
+                </p>
+              </div>
+            )}
           </div>
         )}
-
-        {/* Quick Actions */}
-        <div className="mt-8 pb-12">
-          <h2 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground mb-4">Snelle Acties</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/quizzes" className="flex items-center gap-4 p-4 bg-white dark:bg-card rounded-xl shadow-sm hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 flex items-center justify-center group-hover:bg-[#5b7dd9]/20 transition-colors">
-                <BookOpen className="w-5 h-5 text-[#5b7dd9]" />
-              </div>
-              <div>
-                <span className="font-medium text-[#1a2942] dark:text-foreground group-hover:text-[#5b7dd9] transition-colors">Speel een Quiz</span>
-                <p className="text-sm text-muted-foreground">Kies uit 100+ quizzen</p>
-              </div>
-            </Link>
-            
-            <Link href="/leaderboard" className="flex items-center gap-4 p-4 bg-white dark:bg-card rounded-xl shadow-sm hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/20 flex items-center justify-center group-hover:bg-amber-200/80 dark:group-hover:bg-amber-900/30 transition-colors">
-                <Trophy className="w-5 h-5 text-amber-500" />
-              </div>
-              <div>
-                <span className="font-medium text-[#1a2942] dark:text-foreground group-hover:text-[#5b7dd9] transition-colors">Ranglijst</span>
-                <p className="text-sm text-muted-foreground">Bekijk je positie</p>
-              </div>
-            </Link>
-            
-            <Link href="/dashboard" className="flex items-center gap-4 p-4 bg-white dark:bg-card rounded-xl shadow-sm hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/20 flex items-center justify-center group-hover:bg-emerald-200/80 dark:group-hover:bg-emerald-900/30 transition-colors">
-                <TrendingUp className="w-5 h-5 text-emerald-500" />
-              </div>
-              <div>
-                <span className="font-medium text-[#1a2942] dark:text-foreground group-hover:text-[#5b7dd9] transition-colors">Dashboard</span>
-                <p className="text-sm text-muted-foreground">Bekijk je voortgang</p>
-              </div>
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );

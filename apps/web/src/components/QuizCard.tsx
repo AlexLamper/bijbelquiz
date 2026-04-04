@@ -53,7 +53,7 @@ export default function QuizCard({ quiz, isPremiumUser }: QuizCardProps) {
           )}
           {quiz.isPremium && (
             <span className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-md bg-[#1a2942] px-2 py-0.5 text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-sm">
-              <Star className="h-3 w-3 fill-amber-400 text-amber-400" /> PRO
+              <Star className="h-3 w-3 fill-amber-400 text-amber-400" /> PREMIUM
             </span>
           )}
           {isLocked && (

@@ -1,30 +1,27 @@
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import { Scroll, BookText, Users, Bookmark, Award } from "lucide-react"
+import { Award } from "lucide-react"
 
 const categories = [
   {
-    icon: Scroll,
     title: "Oude Testament",
     questions: "500+ vragen",
-    color: "bg-[#5b7dd9]/10",
+    imageUrl: '/images/quizzes/img1.png',
   },
   {
-    icon: BookText,
     title: "Nieuwe Testament",
     questions: "450+ vragen",
-    color: "bg-[#d9a55b]/10",
+    imageUrl: '/images/quizzes/img2.png',
   },
   {
-    icon: Users,
     title: "Bijbelse Figuren",
     questions: "300+ vragen",
-    color: "bg-[#5bd99a]/10",
+    imageUrl: '/images/quizzes/img3.png',
   },
   {
-    icon: Bookmark,
     title: "Thema's & Verhalen",
     questions: "250+ vragen",
-    color: "bg-[#d95b7d]/10",
+    imageUrl: '/images/quizzes/img4.png',
   },
 ]
 
@@ -60,21 +57,25 @@ export function FeaturesSection() {
           {categories.map((category, index) => (
             <Card 
               key={index}
-              className="group cursor-pointer border border-[#1a2942]/5 dark:border-white/10 bg-card/80 dark:bg-white/5 backdrop-blur-sm transition-all duration-300 hover:border-[#5b7dd9]/20 hover:bg-card dark:hover:bg-white/10 hover:shadow-md min-w-[200px]"
+              className="group relative h-32 overflow-hidden rounded-2xl border border-slate-200/70 dark:border-white/10 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <CardContent className="flex items-center gap-4 p-5">
-                <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg ${category.color}`}>
-                  <category.icon className="h-5 w-5 text-[#1a2942] dark:text-white" />
-                </div>
-                
-                <div className="min-w-0">
-                  <h3 className="font-serif text-base font-medium text-[#1a2942] dark:text-white group-hover:text-[#5b7dd9]">
-                    {category.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground dark:text-white/60">
-                    {category.questions}
-                  </p>
-                </div>
+              <div className="absolute inset-0">
+                <Image
+                  src={category.imageUrl}
+                  alt={category.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black/45" />
+              <CardContent className="relative z-10 flex h-full flex-col items-center justify-center p-4 text-center">
+                <h3 className="font-serif text-lg font-semibold text-white drop-shadow-md">
+                  {category.title}
+                </h3>
+                <p className="mt-1 text-sm text-white/90">
+                  {category.questions}
+                </p>
               </CardContent>
             </Card>
           ))}

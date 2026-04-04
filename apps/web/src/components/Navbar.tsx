@@ -72,16 +72,16 @@ export default function Navbar() {
                 {session.user.isPremium && (
                   <div className="hidden sm:flex items-center gap-1 rounded-md bg-[#1a2942] px-2 py-0.5 text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-sm">
                     <Star className="h-3 w-3 fill-amber-400 text-amber-400" />
-                    <span>PRO</span>
+                    <span>PREMIUM</span>
                   </div>
                 )}
 
                 <div className="flex items-center gap-3 pl-3 border-l border-[#d6e2fa]/80 dark:border-border/40">
-                  <Link href="/profile" className="hidden sm:flex items-center gap-2.5 rounded-full pl-1.5 pr-4 py-1.5 bg-slate-50 hover:bg-slate-100 transition-colors border border-slate-200 shadow-sm">
-                    <div className="bg-[#547ee9] text-white rounded-full p-1 shadow-inner">
-                      <User className="h-3.5 w-3.5" />
+                  <Link href="/profile" className="hidden sm:flex items-center gap-2 rounded-full pl-2 pr-4 py-1.5 bg-linear-to-r from-slate-50 to-white hover:from-white hover:to-slate-50 transition-all border border-slate-200/80 shadow-sm hover:shadow-md">
+                    <div className="bg-[#547ee9] text-white rounded-full p-1.5 shadow-inner ring-2 ring-white">
+                      <User className="h-3 w-3" />
                     </div>
-                    <span className="text-xs font-extrabold tracking-wide uppercase text-[#1a2942] truncate max-w-[120px]">{session.user.name || 'Gebruiker'}</span>
+                    <span className="text-xs font-bold tracking-wide text-[#1a2942] truncate max-w-30">{session.user.name || 'Gebruiker'}</span>
                   </Link>
                   
                   <Button

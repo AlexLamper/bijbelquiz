@@ -147,7 +147,7 @@ export default function LibraryScreen() {
              {item.isPremium && (
               <View className="bg-amber-500 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
                 <FontAwesome name="star" size={10} color="white" />
-                <Text className="text-white text-[10px] font-bold uppercase tracking-wider">PRO</Text>
+                <Text className="text-white text-[10px] font-bold uppercase tracking-wider">PREMIUM</Text>
               </View>
              )}
           </View>
