@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, UserProgress, Category } from '@bijbelquiz/database';
+import type { PipelineStage } from 'mongoose';
 
 export async function GET(request: NextRequest) {
   try {
@@ -10,7 +11,7 @@ export async function GET(request: NextRequest) {
     const timeFilter = searchParams.get('time') || 'all';
 
     // Build date filter
-    let dateFilter = {};
+    let dateFilter: Record<string, unknown> = {};
     const now = new Date();
     if (timeFilter === 'week') {
       const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
@@ -23,10 +24,15 @@ export async function GET(request: NextRequest) {
     // Recent activity threshold (played in last 7 days)
     const recentThreshold = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
 
-    const leaderboard = await UserProgress.aggregate([
-      // Apply date filter first
-      ...(Object.keys(dateFilter).length > 0 ? [{ $match: dateFilter }] : []),
-      // Sort by score desc
+    const pipeline: PipelineStage[] = [];
+
+    // Apply date filter first
+    if (Object.keys(dateFilter).length > 0) {
+      pipeline.push({ $match: dateFilter });
+    }
+
+    // Sort by score desc
+    pipeline.push(
       { $sort: { score: -1 } },
       // Group by User and Quiz to get the best score for each unique quiz
       {
@@ -89,7 +95,9 @@ export async function GET(request: NextRequest) {
       { $sort: { totalPoints: -1 } },
       // Top 100
       { $limit: 100 }
-    ]);
+    );
+
+    const leaderboard = await UserProgress.aggregate(pipeline);
 
     // Convert MongoDB ObjectIds to strings for client
     const formattedLeaderboard = leaderboard.map(entry => ({

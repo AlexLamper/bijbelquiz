@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { connectDB, UserProgress, Category } from '@bijbelquiz/database';
+import type { PipelineStage } from 'mongoose';
 import Breadcrumb from '@/components/Breadcrumb';
 import LeaderboardClient from './LeaderboardClient';
 import { getServerSession } from 'next-auth';
@@ -43,7 +44,7 @@ async function getLeaderboardData(timeFilter: string = 'all', categorySlug: stri
   await connectDB();
   
   // Build date filter
-  let dateFilter = {};
+  let dateFilter: Record<string, unknown> = {};
   const now = new Date();
   if (timeFilter === 'week') {
     const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
@@ -54,7 +55,7 @@ async function getLeaderboardData(timeFilter: string = 'all', categorySlug: stri
   }
 
   // Build category filter pipeline
-  const categoryPipeline: Record<string, unknown>[] = [];
+  const categoryPipeline: PipelineStage[] = [];
   if (categorySlug !== 'all') {
     const category = await Category.findOne({ slug: categorySlug }).lean();
     if (category) {
@@ -76,12 +77,18 @@ async function getLeaderboardData(timeFilter: string = 'all', categorySlug: stri
   // Recent activity threshold (played in last 7 days)
   const recentThreshold = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
 
-  const leaderboard = await UserProgress.aggregate([
-    // Apply date filter first
-    ...(Object.keys(dateFilter).length > 0 ? [{ $match: dateFilter }] : []),
-    // Apply category filter
-    ...categoryPipeline,
-    // Sort by score desc
+  const pipeline: PipelineStage[] = [];
+
+  // Apply date filter first
+  if (Object.keys(dateFilter).length > 0) {
+    pipeline.push({ $match: dateFilter });
+  }
+
+  // Apply category filter
+  pipeline.push(...categoryPipeline);
+
+  // Sort by score desc
+  pipeline.push(
     { $sort: { score: -1 } },
     // Group by User and Quiz to get the best score for each unique quiz
     {
@@ -145,7 +152,9 @@ async function getLeaderboardData(timeFilter: string = 'all', categorySlug: stri
     { $sort: { totalPoints: -1 } },
     // Top 100
     { $limit: 100 }
-  ]);
+  );
+
+  const leaderboard = await UserProgress.aggregate(pipeline);
 
   // Convert MongoDB ObjectIds to strings for client component
   return leaderboard.map(entry => ({

@@ -3,6 +3,7 @@ import { authOptions } from '@/lib/auth';
 import { redirect } from 'next/navigation';
 import { connectDB, User } from '@bijbelquiz/database';
 import stripe from '@/lib/stripe';
+import type Stripe from 'stripe';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { getLevelInfo, BADGES, LEVELS } from '@/lib/gamification';
@@ -58,6 +59,13 @@ export default async function ProfilePage() {
   let subscriptionCurrentPeriodEnd: Date | null = null;
   let subscriptionCancelAtPeriodEnd = false;
 
+  const setSubscriptionPeriodEnd = (subscription: Stripe.Subscription) => {
+    const periodEndUnix = subscription.items?.data?.[0]?.current_period_end;
+    if (typeof periodEndUnix === 'number') {
+      subscriptionCurrentPeriodEnd = new Date(periodEndUnix * 1000);
+    }
+  };
+
   if (isMonthlyPremium) {
     try {
       if (!resolvedStripeSubscriptionId && resolvedStripeCustomerId) {
@@ -71,9 +79,7 @@ export default async function ProfilePage() {
           resolvedStripeSubscriptionId = subscriptions.data[0].id;
           resolvedSubscriptionStatus = subscriptions.data[0].status;
           subscriptionCancelAtPeriodEnd = !!subscriptions.data[0].cancel_at_period_end;
-          if (subscriptions.data[0].current_period_end) {
-            subscriptionCurrentPeriodEnd = new Date(subscriptions.data[0].current_period_end * 1000);
-          }
+          setSubscriptionPeriodEnd(subscriptions.data[0]);
         }
       }
 
@@ -92,9 +98,7 @@ export default async function ProfilePage() {
             resolvedStripeSubscriptionId = subscriptions.data[0].id;
             resolvedSubscriptionStatus = subscriptions.data[0].status;
             subscriptionCancelAtPeriodEnd = !!subscriptions.data[0].cancel_at_period_end;
-            if (subscriptions.data[0].current_period_end) {
-              subscriptionCurrentPeriodEnd = new Date(subscriptions.data[0].current_period_end * 1000);
-            }
+            setSubscriptionPeriodEnd(subscriptions.data[0]);
             break;
           }
         }
@@ -104,9 +108,7 @@ export default async function ProfilePage() {
         const subscription = await stripe.subscriptions.retrieve(resolvedStripeSubscriptionId);
         resolvedSubscriptionStatus = subscription.status || resolvedSubscriptionStatus;
         subscriptionCancelAtPeriodEnd = !!subscription.cancel_at_period_end;
-        if (subscription.current_period_end) {
-          subscriptionCurrentPeriodEnd = new Date(subscription.current_period_end * 1000);
-        }
+        setSubscriptionPeriodEnd(subscription);
         if (!resolvedStripeCustomerId && typeof subscription.customer === 'string') {
           resolvedStripeCustomerId = subscription.customer;
         }
@@ -139,8 +141,9 @@ export default async function ProfilePage() {
   };
 
   const subscriptionStatusText = subscriptionStatusLabel[resolvedSubscriptionStatus] || (isMonthlyPremium ? 'In verwerking' : 'Levenslang actief');
-  const subscriptionEndDateLabel = subscriptionCurrentPeriodEnd
-    ? subscriptionCurrentPeriodEnd.toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })
+  const resolvedPeriodEndDate = subscriptionCurrentPeriodEnd as Date | null;
+  const subscriptionEndDateLabel = resolvedPeriodEndDate
+    ? resolvedPeriodEndDate.toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })
     : null;
   
   const levelInfo = getLevelInfo(user.xp || 0);

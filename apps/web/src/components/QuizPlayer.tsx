@@ -27,6 +27,7 @@ interface Quiz {
   _id: string;
   title: string;
   questions: Question[];
+    rewardXp?: number;
 }
 
 export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
