@@ -1,0 +1,12 @@
+{
+  "name": "@bijbelquiz/database",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "mongoose": "^9.1.3"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

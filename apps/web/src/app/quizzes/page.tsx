@@ -1,0 +1,236 @@
+
+import { connectDB, Quiz, Category, ICategory } from '@bijbelquiz/database';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Star, Search, Plus, ChevronRight, Filter as FilterIcon } from 'lucide-react';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
+import QuizCard, { QuizItem } from '@/components/QuizCard';
+import MobileQuizFilter from '@/components/MobileQuizFilter';
+import Breadcrumb from '@/components/Breadcrumb';
+import { cn } from '@/lib/utils';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Alle Bijbelquizzen - Kies je Categorie & Niveau | BijbelQuiz',
+  description: 'Overzicht van alle beschikbare Bijbelquizzen. Filter op categorie, speel direct en test je kennis van het Oude en Nieuwe Testament.',
+  keywords: ['bijbelquizzen', 'quiz overzicht', 'bijbelvragen', 'geloofsquiz', 'online bijbelstudie'],
+  alternates: {
+    canonical: '/quizzes',
+  },
+  openGraph: {
+    title: 'Alle Bijbelquizzen Spelen - Gratis & Premium',
+    description: 'Zoek en speel de beste Bijbelquizzen online. Van beginners tot experts.',
+    url: 'https://www.bijbelquiz.com/quizzes',
+  }
+};
+
+export const dynamic = 'force-dynamic';
+
+async function getData(categorySlug?: string) {
+  await connectDB();
+  
+  // Find category ID if slug provided
+  let categoryFilter = {};
+  if (categorySlug && categorySlug !== 'all') {
+    const category = await Category.findOne({ slug: categorySlug });
+    if (category) {
+      categoryFilter = { categoryId: category._id };
+    }
+  }
+
+  // Allow approved or legacy (undefined status)
+  const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+
+  const quizzes = await Quiz.find({ ...categoryFilter, ...statusFilter })
+    .populate('categoryId')
+    .sort({ isPremium: 1, title: 1 })
+    .lean();
+
+  const categories = await Category.find({ isActive: true }).sort({ sortOrder: 1 }).lean();
+
+  return {
+    quizzes: JSON.parse(JSON.stringify(quizzes)),
+    categories: JSON.parse(JSON.stringify(categories))
+  };
+}
+
+export default async function QuizzesPage({ 
+  searchParams 
+}: { 
+  searchParams: Promise<{ category?: string }> 
+}) {
+  const params = await searchParams; // Await the promise for Next.js 15+
+  const session = await getServerSession(authOptions);
+  const isPremiumUser = !!session?.user?.isPremium;
+  const currentCategory = params.category || 'all';
+  
+  const { quizzes, categories } = await getData(currentCategory);
+
+  return (
+    <div className="relative mx-auto max-w-395 px-4 py-8 md:py-12 sm:px-6 lg:px-10 xl:px-12">
+      <Breadcrumb
+        items={[
+          { label: 'Quizzen' },
+        ]}
+        className="mb-6"
+      />
+      
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+        <div>
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-2 dark:text-foreground">Quiz Overzicht</h1>
+          <p className="text-slate-600 dark:text-muted-foreground">
+            Kies uit {quizzes.length} uitdagende quizzen om je kennis te testen.
+          </p>
+        </div>
+        <Button asChild className="bg-primary hover:bg-primary/90">
+             <Link href="/quizzes/create" className="flex items-center gap-2">
+                 <Plus className="h-4 w-4" /> Maak eigen quiz
+             </Link>
+        </Button>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        {/* Sidebar / Filter (Mobile Top) */}
+        <div className="lg:col-span-1">
+            {/* Desktop Sticky Sidebar */}
+            <div className="hidden lg:block sticky top-24 space-y-6 bg-card border rounded-2xl p-5 shadow-sm">
+                <div className="flex items-center gap-2 mb-4 px-1">
+                   <FilterIcon className="w-5 h-5 text-primary" />
+                   <h3 className="font-serif font-bold text-lg text-foreground">Categorieën</h3>
+                </div>
+                <div className="flex flex-col gap-1">
+                    <Link 
+                        href="/quizzes"
+                        className={cn(
+                            "flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-all group",
+                            currentCategory === 'all'
+                                ? "bg-primary text-primary-foreground shadow-sm"
+                                : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                        )}
+                    >
+                        <span>Alle Categorieën</span>
+                        <ChevronRight className={cn(
+                            "w-4 h-4 transition-transform",
+                            currentCategory === 'all' ? "text-primary-foreground" : "text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+                        )} />
+                    </Link>
+                    
+                    {categories.map((cat: ICategory) => {
+                        const isActive = currentCategory === cat.slug;
+                        return (
+                            <Link 
+                                key={cat._id.toString()}
+                                href={`/quizzes?category=${cat.slug}`}
+                                className={cn(
+                                    "flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-all group",
+                                    isActive
+                                        ? "bg-primary text-primary-foreground shadow-sm"
+                                        : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                                )}
+                            >
+                                <span>{cat.title}</span>
+                                <ChevronRight className={cn(
+                                    "w-4 h-4 transition-transform",
+                                    isActive ? "text-primary-foreground" : "text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+                                )} />
+                            </Link>
+                        );
+                    })}
+                </div>
+
+                {!isPremiumUser && (
+                    <>
+                        {/* Light Mode Premium Card */}
+                        <div className="bg-[#eaf0fc] rounded-2xl p-6 border border-[#dfe8fa] mt-6 dark:hidden">
+                            <h3 className="font-bold text-[#1a2333] mb-2 flex items-center gap-2">
+                                <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> Premium
+                            </h3>
+                            <p className="text-sm text-[#5c687e] mb-4">
+                                Ontgrendel alle quizzen en diepgaande studie-uitleg.
+                            </p>
+                            <Button className="w-full bg-[#1a2333] hover:bg-black text-white rounded-xl" asChild>
+                                <Link href="/premium">Upgrade Nu</Link>
+                            </Button>
+                        </div>
+                        {/* Dark Mode Premium Card */}
+                        <div className="hidden dark:block bg-gradient-to-r from-[#1a2942] to-[#2a3f5f] rounded-2xl p-6 shadow-lg mt-6 text-center lg:text-left">
+                           <div className="inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-3 py-1 mb-3">
+                               <Star className="h-4 w-4 fill-[#5b7dd9] text-[#5b7dd9]" />
+                               <span className="text-xs font-bold text-[#5b7dd9] uppercase tracking-wider">Premium</span>
+                           </div>
+                           <h3 className="font-serif font-medium text-white mb-2 text-lg">
+                               Krijg volledige toegang
+                           </h3>
+                           <p className="text-sm text-white/70 mb-4 bg-transparent border-0 p-0 m-0">
+                               Ontgrendel alle quizzen en diepgaande studie-uitleg.
+                           </p>
+                           <Button className="w-full bg-[#5b7dd9] hover:bg-[#4a6bc7] text-white rounded-xl" asChild>
+                               <Link href="/premium">Upgrade Nu</Link>
+                           </Button>
+                        </div>
+                    </>
+                )}
+            </div>
+
+            {/* Mobile View: Accordion for Categories */}
+            <div className="lg:hidden space-y-4 mb-6">
+                <MobileQuizFilter categories={categories} currentCategory={currentCategory} />
+
+                {!isPremiumUser && (
+                    <>
+                        {/* Light Mode Card */}
+                        <Card className="bg-amber-50 border-amber-200 dark:hidden">
+                            <CardContent className="pt-4 pb-4 flex items-center justify-between gap-3">
+                                <div>
+                                    <h3 className="font-bold text-amber-800 text-sm flex items-center gap-1">
+                                        <Star className="h-3 w-3 fill-amber-600 text-amber-600" /> Premium
+                                    </h3>
+                                    <p className="text-xs text-amber-700/80">Upgrade voor alle quizzen</p>
+                                </div>
+                                <Button size="sm" className="bg-amber-600 hover:bg-amber-700 text-white h-8 text-xs shrink-0 rounded-lg" asChild>
+                                    <Link href="/premium">Upgrade</Link>
+                                </Button>
+                            </CardContent>
+                        </Card>
+                        {/* Dark Mode Card */}
+                        <Card className="hidden dark:block bg-gradient-to-r from-[#1a2942] to-[#2a3f5f] border-0 shadow-md">
+                            <CardContent className="pt-4 pb-4 flex items-center justify-between gap-3">
+                                <div>
+                                    <div className="inline-flex items-center gap-1 rounded-full bg-[#5b7dd9]/20 px-2 py-0.5 mb-1">
+                                        <Star className="h-3 w-3 fill-[#5b7dd9] text-[#5b7dd9]" />
+                                        <span className="text-[10px] font-bold text-[#5b7dd9] uppercase tracking-wider">Premium</span>
+                                    </div>
+                                    <p className="text-xs text-white/80 font-medium">Ontgrendel alle quizzen en uitleg</p>
+                                </div>
+                                <Button size="sm" className="bg-[#5b7dd9] hover:bg-[#4a6bc7] text-white h-8 text-xs shrink-0 rounded-lg" asChild>
+                                    <Link href="/premium">Upgrade</Link>
+                                </Button>
+                            </CardContent>
+                        </Card>
+                    </>
+                )}
+            </div>
+        </div>
+
+        {/* Quizzes Grid */}
+        <div className="lg:col-span-3">
+             {quizzes.length === 0 ? (
+                 <div className="text-center py-12 bg-slate-50 rounded-xl border border-dashed border-slate-300">
+                     <Search className="h-12 w-12 text-slate-300 mx-auto mb-3" />
+                     <h3 className="text-lg font-medium text-slate-900">Geen quizzen gevonden</h3>
+                     <p className="text-slate-500">Probeer een andere categorie.</p>
+                 </div>
+             ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+                    {quizzes.map((quiz: QuizItem) => (
+                        <QuizCard key={quiz._id.toString()} quiz={quiz} isPremiumUser={isPremiumUser} />
+                    ))}
+                </div>
+             )}
+        </div>
+      </div>
+    </div>
+  );
+}
