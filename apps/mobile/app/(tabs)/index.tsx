@@ -123,7 +123,7 @@ export default function HomeScreen() {
         className="w-[200px] mr-4 mb-2"
         onPress={() => {
           if (isLocked) {
-            alert("Dit is een Premium quiz.");
+            router.push('/onboarding/paywall');
           } else {
             router.push(`/quiz/${item._id}`);
           }
