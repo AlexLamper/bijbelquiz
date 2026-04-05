@@ -4,7 +4,7 @@ import React from 'react';
 
 export function DownloadButtons() {
   return (
-    <div className="flex flex-row gap-4 w-full sm:w-auto mt-2">
+    <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2">
       <button 
         onClick={() => alert("De mobiele app komt binnen enkele weken!")}
         className="flex items-center justify-center gap-3 bg-[#1d1d1f] hover:bg-black text-white h-14 px-6 rounded-2xl transition-colors min-w-[160px]"
