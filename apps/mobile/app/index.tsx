@@ -15,6 +15,8 @@ export default function WelcomeScreen() {
   useEffect(() => {
     if (!loading && user) {
       router.replace('/(tabs)');
+    } else if (!loading && !user) {
+      router.replace('/onboarding/splash');
     }
   }, [loading, user, router]);
 

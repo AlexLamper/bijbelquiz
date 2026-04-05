@@ -6,7 +6,6 @@ const quizImages: Record<string, any> = {
   img5: require('../assets/images/quizzes/img5.png'),
   img6: require('../assets/images/quizzes/img6.png'),
   img7: require('../assets/images/quizzes/img7.png'),
-  img8: require('../assets/images/quizzes/img8.png'),
 };
 
 export function getQuizImage(imageUrl?: string): any {

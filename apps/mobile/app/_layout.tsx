@@ -56,11 +56,22 @@ function RootLayoutNav() {
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="(tabs)" options={{ headerShown: false, gestureEnabled: false }} />       
+          <Stack.Screen name="onboarding/splash" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/education" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/quiz_bible_usage" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/quiz_knowledge_level" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/quiz_topics_interest" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/quiz_reminder_time" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/educational_impact" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/complete" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding/paywall" options={{ headerShown: false, presentation: 'modal' }} />
+          <Stack.Screen name="onboarding/paywall_trial" options={{ headerShown: false, presentation: 'modal' }} />
           <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
           <Stack.Screen name="quiz/[id]" options={{ headerShown: false }} />
-          <Stack.Screen name="login" options={{ headerShown: false }} />
-          <Stack.Screen name="register" options={{ headerShown: false }} />
+          <Stack.Screen name="instellingen" options={{ headerShown: false }} />
+          <Stack.Screen name="login" options={{ headerShown: false, gestureEnabled: false }} />        
+          <Stack.Screen name="register" options={{ headerShown: false, gestureEnabled: false }} />     
         </Stack>
       </ThemeProvider>
     </AuthProvider>

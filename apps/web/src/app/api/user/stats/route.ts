@@ -14,7 +14,7 @@ export async function GET(req: NextRequest) {
     await connectDB();
 
     const [user, progressData] = await Promise.all([
-      User.findById(session.user.id).select('xp streak').lean(),
+      User.findById(session.user.id).select('xp streak badges').lean(),
       UserProgress.find({ userId: session.user.id }).select('score totalQuestions').lean(),
     ]);
 

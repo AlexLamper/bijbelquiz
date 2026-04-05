@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
+import { Tabs, useRouter } from 'expo-router';
+import { useAuth } from '../../components/AuthProvider';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
@@ -15,16 +16,25 @@ function TabBarIcon(props: {
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const { user, loading } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!loading && !user) {
+      // User lost auth (or logged out), send immediately to login instead of full onboarding
+      router.replace('/login'); 
+    }
+  }, [user, loading, router]);
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: '#1a2333',
-        tabBarInactiveTintColor: '#8e94a8',
+        tabBarActiveTintColor: '#121A2A',
+        tabBarInactiveTintColor: '#9CA3AF',
         tabBarStyle: {
           backgroundColor: '#ffffff',
           borderTopWidth: 1,
-          borderTopColor: '#e4e7f1',
+          borderTopColor: '#E5E7EB',
           paddingBottom: 10,
           paddingTop: 10,
           height: 85,

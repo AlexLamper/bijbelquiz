@@ -26,6 +26,7 @@ interface Quiz {
   description: string;
   _id: string;
   title: string;
+  difficulty?: string;
   imageUrl?: string;
   questions: Question[];
 }
@@ -162,7 +163,7 @@ export default function MobileQuizPlayer() {
   if (loading) {
     return (
         <View className="flex-1 justify-center items-center bg-background">
-          <ActivityIndicator size="large" color="#152d2f" />
+          <ActivityIndicator size="large" color="#121A2A" />
         </View>
     );
   }
@@ -171,13 +172,13 @@ export default function MobileQuizPlayer() {
 
   if (!hasStarted) {
     return (
-      <SafeAreaView className="flex-1 bg-[#f8fafd] px-8">
+      <SafeAreaView className="flex-1 bg-[#F8FAFC] px-8">
         <TouchableOpacity onPress={() => router.back()} className="w-10 h-10 mt-6 mb-2 justify-center">
-            <Ionicons name="arrow-back" size={26} color="#1a2333" />
+            <Ionicons name="arrow-back" size={26} color="#121A2A" />
         </TouchableOpacity>
         
         <View className="items-center mb-8 flex-1 justify-center -mt-16">
-          <View className="w-24 h-24 bg-[#dbe1ee] rounded-3xl mb-6 overflow-hidden border border-slate-200">
+          <View className="w-40 h-40 bg-[#F3F4F6] rounded-[32px] mb-6 overflow-hidden border border-slate-200">
             {getQuizImage(quiz.imageUrl) ? (
               <>
                 <Image
@@ -189,32 +190,43 @@ export default function MobileQuizPlayer() {
               </>
             ) : (
               <View className="flex-1 items-center justify-center">
-                <FontAwesome name="book" size={40} color="#3c4a63" />
+                <FontAwesome name="book" size={40} color="#9CA3AF" />
               </View>
             )}
           </View>
-          <Text className="text-3xl font-serif font-bold text-center text-[#1c223a] mb-4">
+          <Text className="text-3xl font-serif font-bold text-center text-[#121A2A] mb-4">
             {quiz.title}
           </Text>
-          <Text className="text-[16px] text-center text-[#5c687e] leading-relaxed mb-8">
+          <Text className="text-[16px] text-center text-[#6B7280] leading-relaxed mb-8">
             {quiz.description || "Start the quiz and test your knowledge!"}
           </Text>
           
           <View className="flex-row items-center gap-6 mb-8">
             <View className="items-center">
-              <Text className="text-xl font-bold text-[#1c223a]">{quiz.questions?.length || 0}</Text>
-              <Text className="text-[#8e94a8] text-sm">Vragen</Text>
+              <Text className="text-xl font-bold text-[#121A2A]">{quiz.questions?.length || 0}</Text>
+              <Text className="text-[#6B7280] text-sm">Vragen</Text>
             </View>
             <View className="h-6 w-[1] bg-slate-300"></View>
             <View className="items-center">
-              <Text className="text-xl font-bold text-[#1c223a]">+{(quiz.questions?.length || 0) * 10}</Text>
-              <Text className="text-[#8e94a8] text-sm">XP beloning</Text>
+              <Text className="text-xl font-bold text-[#121A2A]">+{(quiz.questions?.length || 0) * 10}</Text>
+              <Text className="text-[#6B7280] text-sm">XP beloning</Text>
             </View>
+            {quiz.difficulty && (
+              <>
+                <View className="h-6 w-[1] bg-slate-300"></View>
+                <View className="items-center">
+                  <Text className="text-xl font-bold text-[#121A2A] capitalize">
+                    {quiz.difficulty}
+                  </Text>
+                  <Text className="text-[#6B7280] text-sm">Niveau</Text>        
+                </View>
+              </>
+            )}
           </View>
         </View>
 
         <TouchableOpacity 
-          className="bg-[#1a2333] py-4 rounded-2xl items-center shadow-lg active:scale-95 transition-transform mb-8" 
+          className="bg-[#121A2A] py-4 rounded-2xl items-center shadow-lg active:scale-95 transition-transform mb-8" 
           onPress={() => setHasStarted(true)}
         >
           <Text className="text-white font-bold text-lg">Start Quiz</Text>
@@ -227,32 +239,32 @@ export default function MobileQuizPlayer() {
 
   if (isFinished) {
     return (
-      <SafeAreaView className="flex-1 bg-[#f8fafd] justify-center px-8">
+      <SafeAreaView className="flex-1 bg-[#F8FAFC] justify-center px-8">
         <View className="items-center mb-8">
-            <View className="w-24 h-24 bg-[#dbe1ee] rounded-3xl mb-6 items-center justify-center border border-slate-200">
-                <FontAwesome name="trophy" size={40} color="#f5a623" />
+            <View className="w-24 h-24 bg-[#F3F4F6] rounded-3xl mb-6 items-center justify-center border border-slate-200">
+                <FontAwesome name="trophy" size={40} color="#C5A059" />
             </View>
-            <Text className="text-3xl font-serif font-bold text-center text-[#1a2333] mb-2">Quiz Voltooid!</Text>
-            <Text className="text-[16px] text-center text-[#5c687e]">
+            <Text className="text-3xl font-serif font-bold text-center text-[#121A2A] mb-2">Quiz Voltooid!</Text>
+            <Text className="text-[16px] text-center text-[#6B7280]">
               Je resultaat voor "{quiz.title}"
             </Text>
         </View>
 
-        <View className="bg-white border border-[#e4e7f1] rounded-3xl p-8 mb-10 shadow-sm items-center">
-          <Text className="text-[#8e94a8] mb-1 uppercase text-xs font-bold tracking-wider">Jouw Score</Text>
-          <Text className="text-[#1a2333] text-6xl font-black mb-2">{score}/{quiz.questions.length}</Text>
+        <View className="bg-white border border-[#E5E7EB] rounded-3xl p-8 mb-10 shadow-sm items-center">
+          <Text className="text-[#6B7280] mb-1 uppercase text-xs font-bold tracking-wider">Jouw Score</Text>
+          <Text className="text-[#121A2A] text-6xl font-black mb-2">{score}/{quiz.questions.length}</Text>
           <View className="flex-row items-center gap-2 bg-green-50 px-3 py-1.5 rounded-full mb-4">
             <FontAwesome name="check" size={12} color="#15803d" />
             <Text className="text-green-700 font-bold text-sm">Goed gedaan!</Text>
           </View>
           <View className="flex-row items-center gap-2">
             <FontAwesome name="star" size={16} color="#d97706" />
-            <Text className="text-[#1a2333] font-bold text-lg">+{xpEarned} XP</Text>
+            <Text className="text-[#121A2A] font-bold text-lg">+{xpEarned} XP</Text>
           </View>
         </View>
 
         <TouchableOpacity 
-          className="bg-[#1a2333] py-4 rounded-2xl items-center shadow-lg active:scale-95 transition-transform" 
+          className="bg-[#121A2A] py-4 rounded-2xl items-center shadow-lg active:scale-95 transition-transform" 
           onPress={() => router.replace('/(tabs)')}
         >
           <Text className="text-white font-bold text-lg">Terug naar overzicht</Text>
@@ -267,24 +279,24 @@ export default function MobileQuizPlayer() {
         
         <View className="flex-row items-center justify-between mb-4 pt-2">
           <TouchableOpacity onPress={() => router.back()} className="p-2 -ml-2">
-            <Ionicons name="close" size={26} color="#1a2333" />
+            <Ionicons name="close" size={26} color="#121A2A" />
           </TouchableOpacity>
-          <Text className="text-[#1a2333] font-semibold text-[15px]">Vraag {currentIndex + 1}/{quiz.questions.length}</Text>
+          <Text className="text-[#121A2A] font-semibold text-[15px]">Vraag {currentIndex + 1}/{quiz.questions.length}</Text>
           <View className="w-10"></View>
         </View>
 
         
         <View className="mb-10 items-center w-full">
-            <View className="h-1 bg-[#e4e7f1] rounded-full w-full overflow-hidden">
+            <View className="h-1 bg-[#E5E7EB] rounded-full w-full overflow-hidden">
                 <View 
                     style={{ width: `${((currentIndex + 1) / quiz.questions.length) * 100}%` }} 
-                    className="h-full bg-[#1a2333] rounded-full"
+                    className="h-full bg-[#121A2A] rounded-full"
                 />
             </View>
         </View>
 
         
-        <Text className="text-[22px] font-serif text-[#1a2333] mb-10 leading-[32px] text-center px-4">
+        <Text className="text-[22px] font-serif text-[#121A2A] mb-10 leading-[32px] text-center px-4">
           {currentQuestion.text}
         </Text>
 
@@ -294,8 +306,8 @@ export default function MobileQuizPlayer() {
             const isCorrect = answer.isCorrect;
             
             // Standard state styling: rounded gray boxes, black text, left aligned, no borders
-            let bgColor = 'bg-[#f0f2f5]';
-            let textColor = 'text-[#1a2333]';
+            let bgColor = 'bg-[#F3F4F6]';
+            let textColor = 'text-[#121A2A]';
             let iconName: any = null;
 
             if (hasAnswered) {
@@ -308,10 +320,10 @@ export default function MobileQuizPlayer() {
                 textColor = 'text-white';
                 iconName = 'close';
               } else {
-                textColor = 'text-[#8e94a8]';
+                textColor = 'text-[#6B7280]';
               }
             } else if (isSelected) {
-               bgColor = 'bg-[#1a2333]';
+               bgColor = 'bg-[#121A2A]';
                textColor = 'text-white';
             }
 
@@ -334,28 +346,28 @@ export default function MobileQuizPlayer() {
         </ScrollView>
 
         {hasAnswered ? (
-          <View className="pt-5 mt-2 border-t border-[#e4e7f1]">
+          <View className="pt-5 mt-2 border-t border-[#E5E7EB]">
             <View className="flex-row justify-between items-start mb-2">
-               <Text className="text-[20px] font-bold text-[#1a2333]">
+               <Text className="text-[20px] font-bold text-[#121A2A]">
                  {currentQuestion.answers[selectedAnswer!]?.isCorrect ? 'Correct!' : 'Helaas!'}
                </Text>
-               <Ionicons name="leaf-outline" size={24} color="#1a2333" />
+               <Ionicons name="leaf-outline" size={24} color="#121A2A" />
             </View>
 
             {!!currentQuestion.explanation && (
               isPremium ? (
-                 <Text className="text-[#5c687e] text-[15px] leading-[22px] mb-2">
+                 <Text className="text-[#6B7280] text-[15px] leading-[22px] mb-2">
                    {currentQuestion.explanation}
                  </Text>
               ) : (
-                 <View className="bg-[#eaf0fc] p-4 rounded-xl border border-[#dfe8fa] mb-3 mt-1">
+                 <View className="bg-[#F3F4F6] p-4 rounded-xl border border-[#E5E7EB] mb-3 mt-1">
                    <View className="flex-row items-center mb-2">
-                     <FontAwesome name="star" size={16} color="#f59e0b" className="mr-2" />
-                     <Text className="font-bold text-[#1a2333]">Premium Uitleg</Text>
+                     <FontAwesome name="star" size={16} color="#C5A059" className="mr-2" />
+                     <Text className="font-bold text-[#121A2A]">Premium Uitleg</Text>
                    </View>
-                   <Text className="text-[#5c687e] text-[13px] mb-3">Ontgrendel theologische uitleg en Bijbelverwijzingen voor alle vragen.</Text>
+                   <Text className="text-[#6B7280] text-[13px] mb-3">Ontgrendel theologische uitleg en Bijbelverwijzingen voor alle vragen.</Text>
                    <TouchableOpacity 
-                      className="bg-[#1a2333] py-2.5 rounded-xl items-center active:scale-[0.98]"
+                      className="bg-[#121A2A] py-2.5 rounded-xl items-center active:scale-[0.98]"
                       onPress={() => router.push('/modal')}
                    >
                       <Text className="text-white font-bold text-[14px]">Word Premium ✨</Text>
@@ -364,13 +376,13 @@ export default function MobileQuizPlayer() {
               )
             )}
             {!!currentQuestion.bibleReference && isPremium && (
-               <Text className="text-[#5c687e] text-[14px]">
+               <Text className="text-[#6B7280] text-[14px]">
                  {currentQuestion.bibleReference}
                </Text>
             )}
 
             <TouchableOpacity 
-              className="bg-[#1a2333] py-4 rounded-[20px] items-center mt-6 active:scale-[0.98] transition-transform" 
+              className="bg-[#121A2A] py-4 rounded-[20px] items-center mt-6 active:scale-[0.98] transition-transform" 
               onPress={handleNext}
             >
               <Text className="text-white font-bold text-[17px]">

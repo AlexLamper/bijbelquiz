@@ -21,6 +21,7 @@ export interface IUser extends Document {
   quizzesPlayed: number;
   averageScore: number;
   role: 'user' | 'admin';
+  nameUpdatedAt?: Date;
   createdAt: Date;
 }
 
@@ -45,6 +46,7 @@ const UserSchema: Schema = new Schema({
   quizzesPlayed: { type: Number, default: 0 },
   averageScore: { type: Number, default: 0 },
   role: { type: String, enum: ['user', 'admin'], default: 'user' },
+  nameUpdatedAt: { type: Date },
 }, { timestamps: true });
 
 UserSchema.index({ xp: -1 });

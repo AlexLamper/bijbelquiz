@@ -7,6 +7,9 @@ import { useAuth } from '../../components/AuthProvider';
 import { API_BASE_URL } from '../../constants/api';
 import { getQuizImage } from '../../constants/quizImages';
 
+const PRIMARY_NAVY = '#121A2A';
+const GOLD_ACCENT = '#C5A059';
+
 interface Category {
   _id: string;
   title: string;
@@ -127,7 +130,7 @@ export default function HomeScreen() {
         }}
         activeOpacity={0.8}
       >
-        <View className="h-[140px] bg-[#dbe1ee] rounded-2xl mb-3 overflow-hidden border border-slate-200 shadow-sm relative">
+        <View className="h-[140px] bg-[#F3F4F6] rounded-2xl mb-3 overflow-hidden border border-slate-200 shadow-sm relative">
             {getQuizImage(item.imageUrl) ? (
               <>
                 <Image
@@ -139,25 +142,25 @@ export default function HomeScreen() {
               </>
             ) : (
               <>
-                <View className="absolute inset-0 bg-[#3c4a63] opacity-10"></View>
+                <View className="absolute inset-0 bg-[#121A2A] opacity-10"></View>
                 <View className="absolute inset-0 justify-center items-center">
-                  <FontAwesome name="image" size={30} color="#bac6da" />
+                  <FontAwesome name="image" size={30} color="#9CA3AF" />
                 </View>
               </>
             )}
 
             {item.isPremium && (
-              <View className="absolute top-2 right-2 bg-amber-500 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
+              <View className="absolute top-2 right-2 bg-[#C5A059] px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
                 <FontAwesome name="star" size={10} color="white" />
                 <Text className="text-white text-[10px] font-bold uppercase tracking-wider">PREMIUM</Text>
               </View>
             )}
         </View>
         
-        <Text className="text-[16px] font-bold text-[#1c223a] mb-1 leading-tight" numberOfLines={2}>{item.title}</Text>
+        <Text className="text-[16px] font-bold text-[#121A2A] mb-1 leading-tight" numberOfLines={2}>{item.title}</Text>
         
         <View className="flex-row items-center justify-between">
-            <Text className="text-[12px] text-[#5c687e] font-medium bg-[#f0f2f5] px-2 py-1 rounded-md">
+            <Text className="text-[12px] text-[#6B7280] font-medium bg-[#F3F4F6] px-2 py-1 rounded-md">
                {item.difficulty === 'hard' ? 'Moeilijk' : item.difficulty === 'medium' ? 'Gemiddeld' : 'Makkelijk'}
             </Text>
         </View>
@@ -167,8 +170,8 @@ export default function HomeScreen() {
 
   if (loading) {
     return (
-      <View className="flex-1 justify-center items-center bg-[#f8fafd]">
-        <ActivityIndicator size="large" color="#152d2f" />
+      <View className="flex-1 justify-center items-center bg-[#F8FAFC]">
+        <ActivityIndicator size="large" color="#121A2A" />
       </View>
     );
   }
@@ -185,11 +188,11 @@ export default function HomeScreen() {
   ];
 
   return (
-    <SafeAreaView className="flex-1 bg-[#f8fafd]" edges={['top']}>
+    <SafeAreaView className="flex-1 bg-[#F8FAFC]" edges={['top']}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         refreshControl={
-          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#152d2f" />
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#121A2A" />
         }
         contentContainerStyle={{ paddingBottom: 100 }}
       >
@@ -201,22 +204,22 @@ export default function HomeScreen() {
                 style={{ width: 40, height: 40 }}
                 resizeMode="contain"
               />
-              <Text className="ml-3 text-3xl font-serif font-bold text-[#1c223a] mt-1.5">Bijbelquiz</Text>
+              <Text className="ml-3 text-3xl font-serif font-bold text-[#121A2A] mt-1.5">Bijbelquiz</Text>
             </View>
 
             {/* Search Bar */}
-            <View className="bg-[#f0f2f5] rounded-xl flex-row items-center px-4 py-3 mb-6">
-              <FontAwesome name="search" size={16} color="#8e94a8" className="mr-3" />
+            <View className="bg-[#F3F4F6] rounded-xl flex-row items-center px-4 py-3 mb-6">
+              <FontAwesome name="search" size={16} color="#6B7280" className="mr-3" />
               <TextInput 
                 placeholder="Zoeken in quizzen of onderwerpen"
-                placeholderTextColor="#8e94a8"
-                className="flex-1 text-[15px] font-medium text-[#1c223a]"
+                placeholderTextColor="#6B7280"
+                className="flex-1 text-[15px] font-medium text-[#121A2A]"
                 value={searchQuery}
                 onChangeText={setSearchQuery}
               />
               {searchQuery.length > 0 && (
                 <TouchableOpacity onPress={() => setSearchQuery('')} className="p-2 -mr-2 ml-1">
-                  <FontAwesome name="times-circle" size={16} color="#8e94a8" />
+                  <FontAwesome name="times-circle" size={16} color="#6B7280" />
                 </TouchableOpacity>
               )}
             </View>
@@ -225,18 +228,18 @@ export default function HomeScreen() {
             <View className="-mx-5 mb-8">
               <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 20 }} className="flex-row">
                 <TouchableOpacity 
-                  className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === 'all' ? 'bg-[#1a2333]' : 'bg-[#e4e7f1]'}`}
+                  className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === 'all' ? 'bg-[#121A2A]' : 'bg-[#E5E7EB]'}`}
                   onPress={() => setSelectedCategory('all')}
                 >
-                  <Text className={`font-medium text-[13px] ${selectedCategory === 'all' ? 'text-white' : 'text-[#3c4257]'}`}>Alles</Text>
+                  <Text className={`font-medium text-[13px] ${selectedCategory === 'all' ? 'text-white' : 'text-[#6B7280]'}`}>Alles</Text>
                 </TouchableOpacity>
                 {categories.map((cat, idx) => (
                   <TouchableOpacity 
                     key={cat._id || idx} 
-                    className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === cat.slug ? 'bg-[#1a2333]' : 'bg-[#e4e7f1]'}`}
+                    className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === cat.slug ? 'bg-[#121A2A]' : 'bg-[#E5E7EB]'}`}
                     onPress={() => setSelectedCategory(cat.slug)}
                   >
-                    <Text className={`font-medium text-[13px] ${selectedCategory === cat.slug ? 'text-white' : 'text-[#3c4257]'}`}>{cat.title}</Text>
+                    <Text className={`font-medium text-[13px] ${selectedCategory === cat.slug ? 'text-white' : 'text-[#6B7280]'}`}>{cat.title}</Text>
                   </TouchableOpacity>
                 ))}
               </ScrollView>
@@ -253,7 +256,7 @@ export default function HomeScreen() {
             ) : null}
 
             <View className="flex-row items-center justify-between mb-4">
-              <Text className="text-[19px] font-semibold text-[#1c223a]">Aanbevolen voor jou</Text>
+              <Text className="text-[19px] font-semibold text-[#121A2A]">Aanbevolen voor jou</Text>
             </View>
         </View>
 
@@ -268,12 +271,12 @@ export default function HomeScreen() {
             />
         ) : (
             <View className="px-5 items-center justify-center py-6">
-                <Text className="text-[#8e94a8]">Geen quizzen gevonden in deze categorie.</Text>
+                <Text className="text-[#6B7280]">Geen quizzen gevonden in deze categorie.</Text>
             </View>
         )}
 
         <View className="px-5 mt-4 mb-4 flex-row items-center justify-between">
-            <Text className="text-[19px] font-semibold text-[#1c223a]">Populaire quizzen</Text>
+            <Text className="text-[19px] font-semibold text-[#121A2A]">Populaire quizzen</Text>
         </View>
         
         {filteredQuizzes.length > 0 ? (
@@ -287,16 +290,16 @@ export default function HomeScreen() {
             />
         ) : (
             <View className="px-5 items-center justify-center py-6">
-                <Text className="text-[#8e94a8]">Geen quizzen beschikbaar.</Text>
+                <Text className="text-[#6B7280]">Geen quizzen beschikbaar.</Text>
             </View>
         )}
 
         <View className="px-5 mt-6 mb-4 flex-row items-center justify-between">
-          <Text className="text-[19px] font-semibold text-[#1c223a]">Thema's</Text>
+          <Text className="text-[19px] font-semibold text-[#121A2A]">Thema's</Text>
           <View className="flex-row gap-1">
-             <View className="w-1.5 h-1.5 bg-[#1c223a] rounded-full"></View>
-             <View className="w-1.5 h-1.5 bg-[#c8d1e0] rounded-full"></View>
-             <View className="w-1.5 h-1.5 bg-[#c8d1e0] rounded-full"></View>
+             <View className="w-1.5 h-1.5 bg-[#121A2A] rounded-full"></View>
+             <View className="w-1.5 h-1.5 bg-[#D1D5DB] rounded-full"></View>
+             <View className="w-1.5 h-1.5 bg-[#D1D5DB] rounded-full"></View>
           </View>
         </View>
         
@@ -310,7 +313,7 @@ export default function HomeScreen() {
                 onPress={() => router.push({ pathname: '/library', params: { category: theme.slug } })}
                 activeOpacity={0.8}
               >
-                <View className="h-[100px] bg-[#dbe1ee] rounded-2xl w-full border border-slate-200 overflow-hidden relative justify-center">
+                <View className="h-[100px] bg-[#F3F4F6] rounded-2xl w-full border border-slate-200 overflow-hidden relative justify-center">
                   {getQuizImage(staticImg) ? (
                     <Image
                       source={getQuizImage(staticImg)}

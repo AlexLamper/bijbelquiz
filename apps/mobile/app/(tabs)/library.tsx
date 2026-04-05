@@ -106,7 +106,7 @@ export default function LibraryScreen() {
 
     return (
       <TouchableOpacity 
-        className="mb-4 bg-white rounded-2xl border border-[#e4e7f1] overflow-hidden shadow-sm flex-row h-[120px]"
+        className="mb-4 bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden shadow-sm flex-row h-[120px]"
         onPress={() => {
           if (isLocked) {
             alert("Dit is een Premium quiz.");
@@ -116,7 +116,7 @@ export default function LibraryScreen() {
         }}
         activeOpacity={0.8}
       >
-        <View className="w-[120px] bg-[#dbe1ee] relative h-full">
+        <View className="w-[120px] bg-[#F3F4F6] relative h-full">
             {getQuizImage(item.imageUrl) ? (
               <>
                 <Image
@@ -128,24 +128,24 @@ export default function LibraryScreen() {
               </>
             ) : (
               <View className="absolute inset-0 justify-center items-center">
-                <FontAwesome name="image" size={30} color="#bac6da" />
+                <FontAwesome name="image" size={30} color="#9CA3AF" />
               </View>
             )}
         </View>
         
         <View className="flex-1 p-3 justify-between">
           <View>
-            <Text className="text-[16px] font-bold text-[#1c223a] mb-1 leading-tight" numberOfLines={2}>{item.title}</Text>
-            <Text className="text-[12px] text-[#8e94a8]" numberOfLines={1}>{categoryName}</Text>
+            <Text className="text-[16px] font-bold text-[#121A2A] mb-1 leading-tight" numberOfLines={2}>{item.title}</Text>
+            <Text className="text-[12px] text-[#6B7280]" numberOfLines={1}>{categoryName}</Text>
           </View>
           
           <View className="flex-row items-center justify-between">
-             <Text className="text-[12px] text-[#5c687e] font-medium bg-[#f0f2f5] px-2 py-1 rounded-md">
+             <Text className="text-[12px] text-[#6B7280] font-medium bg-[#F3F4F6] px-2 py-1 rounded-md">
                {item.difficulty === 'hard' ? 'Moeilijk' : item.difficulty === 'medium' ? 'Gemiddeld' : 'Makkelijk'}
              </Text>
              
              {item.isPremium && (
-              <View className="bg-amber-500 px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
+              <View className="bg-[#C5A059] px-2 py-1 rounded-md flex-row items-center gap-1 shadow-sm">
                 <FontAwesome name="star" size={10} color="white" />
                 <Text className="text-white text-[10px] font-bold uppercase tracking-wider">PREMIUM</Text>
               </View>
@@ -157,27 +157,27 @@ export default function LibraryScreen() {
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-[#f8fafd]" edges={['top']}>
+    <SafeAreaView className="flex-1 bg-[#F8FAFC]" edges={['top']}>
       <View className="px-5 pt-6 pb-2">
-        <Text className="text-3xl font-serif font-bold text-[#1a2333] mb-2">Quizzen</Text>
-        <Text className="text-[#5c687e] text-[15px] mb-4">
+        <Text className="text-3xl font-serif font-bold text-[#121A2A] mb-2">Quizzen</Text>
+        <Text className="text-[#6B7280] text-[15px] mb-4">
           Ontdek alle beschikbare Bijbelquizzen en test je kennis.
         </Text>
       </View>
 
       <View className="px-5 mb-4">
-        <View className="bg-[#f0f2f5] rounded-xl flex-row items-center px-4 py-3">
-          <FontAwesome name="search" size={16} color="#8e94a8" className="mr-3" />
+        <View className="bg-[#F3F4F6] rounded-xl flex-row items-center px-4 py-3">
+          <FontAwesome name="search" size={16} color="#6B7280" className="mr-3" />
           <TextInput 
             placeholder="Zoeken in quizzen..."
-            placeholderTextColor="#8e94a8"
-            className="flex-1 text-[15px] font-medium text-[#1c223a]"
+            placeholderTextColor="#6B7280"
+            className="flex-1 text-[15px] font-medium text-[#121A2A]"
             value={searchQuery}
             onChangeText={setSearchQuery}
           />
           {searchQuery.length > 0 && (
             <TouchableOpacity onPress={() => setSearchQuery('')} className="p-2 -mr-2 ml-1">
-              <FontAwesome name="times-circle" size={16} color="#8e94a8" />
+              <FontAwesome name="times-circle" size={16} color="#6B7280" />
             </TouchableOpacity>
           )}
         </View>
@@ -187,32 +187,32 @@ export default function LibraryScreen() {
       <View className="mb-4">
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 20 }} className="flex-row">
           <TouchableOpacity 
-            className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === 'all' ? 'bg-[#1a2333]' : 'bg-[#e4e7f1]'}`}
+            className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === 'all' ? 'bg-[#121A2A]' : 'bg-[#E5E7EB]'}`}
             onPress={() => setSelectedCategory('all')}
           >
-            <Text className={`font-medium text-[13px] ${selectedCategory === 'all' ? 'text-white' : 'text-[#3c4257]'}`}>Alles</Text>
+            <Text className={`font-medium text-[13px] ${selectedCategory === 'all' ? 'text-white' : 'text-[#6B7280]'}`}>Alles</Text>
           </TouchableOpacity>
           {categories.map((cat, idx) => (
             <TouchableOpacity 
               key={cat._id || idx} 
-              className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === cat.slug ? 'bg-[#1a2333]' : 'bg-[#e4e7f1]'}`}
+              className={`rounded-full px-5 py-2 mr-3 ${selectedCategory === cat.slug ? 'bg-[#121A2A]' : 'bg-[#E5E7EB]'}`}
               onPress={() => setSelectedCategory(cat.slug)}
             >
-              <Text className={`font-medium text-[13px] ${selectedCategory === cat.slug ? 'text-white' : 'text-[#3c4257]'}`}>{cat.title}</Text>
+              <Text className={`font-medium text-[13px] ${selectedCategory === cat.slug ? 'text-white' : 'text-[#6B7280]'}`}>{cat.title}</Text>
             </TouchableOpacity>
           ))}
         </ScrollView>
       </View>
 
       {!isPremium && (
-        <View className="mx-5 mb-4 bg-[#eaf0fc] p-4 rounded-xl border border-[#dfe8fa]">
+        <View className="mx-5 mb-4 bg-[#F3F4F6] p-4 rounded-xl border border-[#E5E7EB]">
            <View className="flex-row items-center mb-2">
              <FontAwesome name="star" size={16} color="#f59e0b" className="mr-2" />
-             <Text className="font-bold text-[#1a2333]">Premium</Text>
+             <Text className="font-bold text-[#121A2A]">Premium</Text>
            </View>
-           <Text className="text-[#5c687e] text-[13px] mb-3">Ontgrendel alle quizzen inclusief diepere theologie en uitgebreide uitleg!</Text>
+           <Text className="text-[#6B7280] text-[13px] mb-3">Ontgrendel alle quizzen inclusief diepere theologie en uitgebreide uitleg!</Text>
            <TouchableOpacity 
-              className="bg-[#1a2333] py-2 rounded-lg items-center"
+              className="bg-[#121A2A] py-2 rounded-lg items-center"
               onPress={() => router.push('/modal')}
            >
               <Text className="text-white font-bold text-[13px]">Probeer Premium</Text>
@@ -222,7 +222,7 @@ export default function LibraryScreen() {
 
       {loading ? (
         <View className="flex-1 justify-center items-center">
-          <ActivityIndicator size="large" color="#1a2333" />
+          <ActivityIndicator size="large" color="#121A2A" />
         </View>
       ) : (
         <FlatList
@@ -231,11 +231,11 @@ export default function LibraryScreen() {
           keyExtractor={(item) => item._id}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 100 }}
-          refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#1a2333" />}
+          refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#121A2A" />}
           ListEmptyComponent={
             <View className="items-center justify-center py-10">
-              <FontAwesome name="search" size={40} color="#bac6da" className="mb-4" />
-              <Text className="text-[#8e94a8] text-[15px] font-medium text-center">Niks gevonden voor je zoekopdracht of filter.</Text>
+              <FontAwesome name="search" size={40} color="#9CA3AF" className="mb-4" />
+              <Text className="text-[#6B7280] text-[15px] font-medium text-center">Niks gevonden voor je zoekopdracht of filter.</Text>
             </View>
           }
         />
