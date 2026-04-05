@@ -38,91 +38,69 @@ export const metadata: Metadata = {
   }
 };
 
-export const dynamic = 'force-dynamic';
-
-async function getLeaderboardData(timeFilter: string = 'all', categorySlug: string = 'all') {
+async function getLeaderboardData(timeFilter: string, categorySlug: string): Promise<LeaderboardEntry[]> {
   await connectDB();
-  
-  // Build date filter
-  let dateFilter: Record<string, unknown> = {};
+
   const now = new Date();
+  let startDate = new Date(0); // default all time
+
   if (timeFilter === 'week') {
-    const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-    dateFilter = { completedAt: { $gte: weekAgo } };
+    // Get start of current week (Monday)
+    startDate = new Date(now);
+    const day = startDate.getDay() || 7;
+    if (day !== 1) startDate.setHours(-24 * (day - 1));
+    startDate.setHours(0, 0, 0, 0);
   } else if (timeFilter === 'month') {
-    const monthAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
-    dateFilter = { completedAt: { $gte: monthAgo } };
+    startDate = new Date(now.getFullYear(), now.getMonth(), 1);
   }
 
-  // Build category filter pipeline
-  const categoryPipeline: PipelineStage[] = [];
+  // Base match for UserProgress
+  const matchStage: any = {};
+  if (timeFilter !== 'all') {
+    matchStage.createdAt = { $gte: startDate };
+  }
+
+  // Add category filter if specified
   if (categorySlug !== 'all') {
-    const category = await Category.findOne({ slug: categorySlug }).lean();
+    const category = await Category.findOne({ slug: categorySlug }).select('_id').lean();
     if (category) {
-      categoryPipeline.push(
-        {
-          $lookup: {
-            from: "quizzes",
-            localField: "quizId",
-            foreignField: "_id",
-            as: "quizInfo"
-          }
-        },
-        { $unwind: "$quizInfo" },
-        { $match: { "quizInfo.categoryId": category._id } }
-      );
+      matchStage.categoryId = category._id;
     }
   }
 
-  // Recent activity threshold (played in last 7 days)
-  const recentThreshold = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-
   const pipeline: PipelineStage[] = [];
 
-  // Apply date filter first
-  if (Object.keys(dateFilter).length > 0) {
-    pipeline.push({ $match: dateFilter });
+  // If we have filters, we need to match progress records first, then group by user
+  if (Object.keys(matchStage).length > 0) {
+    pipeline.push(
+      { $match: matchStage },
+      {
+        $group: {
+          _id: "$userId",
+          totalPoints: { $sum: "$score" },
+          quizzesPlayed: { $sum: 1 },
+          avgScore: { $avg: "$score" },
+          recentActivity: { $max: "$createdAt" }
+        }
+      }
+    );
+  } else {
+    // For all-time, we can group directly but maybe simpler to just hit User.xp
+    // but User.xp is all-time points. Since we want stats per category too,
+    // let's stick to aggregating UserProgress for consistency unless performance requires otherwise.
+    pipeline.push({
+      $group: {
+        _id: "$userId",
+        totalPoints: { $sum: "$score" },
+        quizzesPlayed: { $sum: 1 },
+        avgScore: { $avg: "$score" },
+        recentActivity: { $max: "$createdAt" }
+      }
+    });
   }
 
-  // Apply category filter
-  pipeline.push(...categoryPipeline);
-
-  // Sort by score desc
+  // Join with User collection to get name, avatar, premium status
   pipeline.push(
-    { $sort: { score: -1 } },
-    // Group by User and Quiz to get the best score for each unique quiz
-    {
-      $group: {
-        _id: { userId: "$userId", quizId: "$quizId" },
-        bestScore: { $max: "$score" },
-        totalQuestions: { $first: "$totalQuestions" },
-        lastPlayed: { $max: "$completedAt" }
-      }
-    },
-    // Group by User to sum all their best scores
-    {
-      $group: {
-        _id: "$_id.userId",
-        totalPoints: { $sum: "$bestScore" },
-        quizzesPlayed: { $sum: 1 },
-        totalQuestions: { $sum: "$totalQuestions" },
-        lastActivity: { $max: "$lastPlayed" }
-      }
-    },
-    // Calculate average score percentage
-    {
-      $addFields: {
-        avgScore: {
-          $cond: {
-            if: { $gt: ["$totalQuestions", 0] },
-            then: { $round: [{ $multiply: [{ $divide: ["$totalPoints", "$totalQuestions"] }, 100] }, 0] },
-            else: 0
-          }
-        },
-        recentActivity: { $gte: ["$lastActivity", recentThreshold] }
-      }
-    },
-    // Join with Users collection to get profile info
     {
       $lookup: {
         from: "users",
@@ -131,9 +109,7 @@ async function getLeaderboardData(timeFilter: string = 'all', categorySlug: stri
         as: "userInfo"
       }
     },
-    // Remove entries where user doesn't exist
     { $unwind: "$userInfo" },
-    // Select only needed fields
     {
       $project: {
         _id: 1,
@@ -169,7 +145,7 @@ async function getCategories(): Promise<CategoryOption[]> {
     .select('title slug')
     .sort({ sortOrder: 1 })
     .lean();
-  
+
   return categories.map(cat => ({
     _id: cat._id.toString(),
     title: cat.title,
@@ -182,10 +158,10 @@ interface SearchParams {
   category?: string;
 }
 
-export default async function LeaderboardPage({ 
-  searchParams 
-}: { 
-  searchParams: Promise<SearchParams> 
+export default async function LeaderboardPage({
+  searchParams
+}: {
+  searchParams: Promise<SearchParams>
 }) {
   const session = await getServerSession(authOptions);
   const params = await searchParams;
@@ -199,15 +175,15 @@ export default async function LeaderboardPage({
 
   return (
     <div className="min-h-screen">
-      <div className="container px-4 py-8 md:py-12 mx-auto max-w-5xl">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] 2xl:max-w-[1700px] py-8 md:py-12 pb-8">
         <Breadcrumb
           items={[
             { label: 'Ranglijst' },
           ]}
-          className="mb-6"
+          className="mb-12"
         />
-        
-        <LeaderboardClient 
+
+        <LeaderboardClient
           initialData={leaderboard}
           initialTimeFilter={timeFilter}
           initialCategorySlug={categorySlug}

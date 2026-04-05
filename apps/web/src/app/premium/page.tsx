@@ -82,7 +82,7 @@ export default async function PremiumPage() {
                 <div className="flex items-baseline justify-center gap-1 mb-1">
                   <span className="text-5xl font-bold tracking-tight text-[#1a2942] dark:text-foreground">{monthlyPriceLabel}</span>
                 </div>
-                <p className="text-[#5c687e] dark:text-muted-foreground text-sm">per maand â€¢ Opzegbaar wanneer je wil</p>
+                <p className="text-[#5c687e] dark:text-muted-foreground text-sm">per maand • Opzegbaar wanneer je wil</p>
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div className="grid grid-cols-2 gap-3 mb-6">
@@ -122,7 +122,7 @@ export default async function PremiumPage() {
                 <div className="flex items-baseline justify-center gap-1 mb-1">
                   <span className="text-5xl font-bold tracking-tight text-[#1a2942] dark:text-foreground">{lifetimePriceLabel}</span>
                 </div>
-                <p className="text-[#5c687e] dark:text-muted-foreground text-sm">eenmalig â€¢ Voor altijd toegang</p>
+                <p className="text-[#5c687e] dark:text-muted-foreground text-sm">eenmalig • Voor altijd toegang</p>
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div className="space-y-2 mb-6">
