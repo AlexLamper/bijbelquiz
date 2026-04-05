@@ -66,27 +66,27 @@ export default async function Home() {
   const { popular } = await getQuizzes();
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative overflow-visible pt-16 pb-20 md:pt-28 md:pb-32">
+      <section className="relative overflow-visible pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
 
-        <div className="container relative z-10 mx-auto px-4 max-w-[1600px] flex flex-col lg:flex-row items-center justify-between">
-          <div className="w-full lg:w-[52%] pr-0 lg:pr-12 text-left p-6 rounded-2xl">
-            <h1 className="mb-6 text-5xl md:text-[64px] leading-[1.1] font-bold text-[#1a2333] dark:text-white tracking-tight">
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 max-w-[1400px] flex flex-col lg:flex-row items-center justify-between">
+          <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl">
+            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] leading-[1.1] font-bold text-[#1a2333] dark:text-white tracking-tight">
               Test je Bijbelkennis.<br />
               Groei in je geloof.
             </h1>
-            <p className="mb-10 max-w-xl text-[#5c687e] dark:text-white/70 text-[19px] leading-[1.6]">
+            <p className="mb-8 sm:mb-10 max-w-xl text-[#5c687e] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg leading-[1.6]">
               Speel de ultieme Bijbelquiz thuis en onderweg.<br />
               Kies uit tientallen categorieën in de Statenvertaling,<br />
               verdien XP en leer elke dag iets nieuws over<br />
               het Woord.
             </p>
             
-            <div className="flex flex-col items-start gap-6">
+            <div className="flex flex-col items-start gap-4 sm:gap-6 w-full sm:w-auto">
               <Button 
                 size="lg" 
-                className="h-16 px-12 text-xl font-semibold bg-[#547ee9] hover:bg-[#476ecc] text-white rounded-2xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all w-full sm:w-auto" 
+                className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold bg-[#547ee9] hover:bg-[#476ecc] text-white rounded-2xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all w-full sm:w-auto" 
                 asChild
               >
                 <Link href="/quizzes">
@@ -98,10 +98,10 @@ export default async function Home() {
             </div>
           </div>
           
-          <div className="w-full lg:w-[48%] mt-16 lg:mt-0 relative h-162.5 flex justify-center items-center overflow-visible hidden md:flex p-6 rounded-2xl">
-             {/* Hero mockup: smaller and nudged left so phones are not clipped */}
+          <div className="w-full lg:w-[48%] mt-12 lg:mt-0 relative h-[300px] sm:h-[400px] lg:h-[450px] xl:h-[550px] flex justify-center items-center overflow-visible hidden md:flex p-6 rounded-2xl">
+             {/* Hero mockup: scaled down contextually */}
              <div
-               className="absolute -right-2.5 top-0 w-195 h-195 scale-[1.02] transform-gpu pointer-events-none"
+               className="absolute -right-2.5 top-0 w-180 h-180 transform-gpu pointer-events-none scale-100 lg:scale-[0.8] xl:scale-90 transform-origin-right"
                style={{
                  backgroundImage: "url('/images/hero-image1.png')",
                  backgroundSize: 'contain',

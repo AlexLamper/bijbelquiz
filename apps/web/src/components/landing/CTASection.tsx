@@ -23,19 +23,19 @@ export function CTASection() {
             <DownloadButtons />
           </div>
 
-          <div className="mt-12 flex items-center justify-center gap-8 text-sm text-muted-foreground dark:text-white/60">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm text-muted-foreground dark:text-white/60">
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-semibold text-[#1a2942] dark:text-white">10K+</span>
+              <span className="text-xl sm:text-2xl font-semibold text-[#1a2942] dark:text-white">10K+</span>
               <span>Actieve spelers</span>
             </div>
-            <div className="h-6 w-px bg-border dark:bg-white/20" />
+            <div className="hidden sm:block h-6 w-px bg-border dark:bg-white/20" />
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-semibold text-[#1a2942] dark:text-white">100+</span>
+              <span className="text-xl sm:text-2xl font-semibold text-[#1a2942] dark:text-white">100+</span>
               <span>Quizzen</span>
             </div>
-            <div className="h-6 w-px bg-border dark:bg-white/20" />
+            <div className="hidden sm:block h-6 w-px bg-border dark:bg-white/20" />
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-semibold text-[#1a2942] dark:text-white">4.8</span>
+              <span className="text-xl sm:text-2xl font-semibold text-[#1a2942] dark:text-white">4.8</span>
               <span>App rating</span>
             </div>
           </div>

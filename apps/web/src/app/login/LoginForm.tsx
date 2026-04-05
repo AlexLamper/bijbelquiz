@@ -51,7 +51,7 @@ function LoginContent() {
       <div className="flex w-full lg:w-1/2 flex-col justify-center px-6 py-8 lg:px-16 xl:px-24 overflow-y-auto">
         <div className="mx-auto w-full max-w-md">
           {/* Logo */}
-          <div className="flex items-center gap-3 mb-8">
+          <div className="hidden lg:flex items-center gap-3 mb-8">
             <div className="relative h-10 w-10">
               <Image 
                 src="/icon/Logo%20-%20dark.svg" 

@@ -121,7 +121,7 @@ export default function DashboardHomeClient({
         {/* Blue background - fixed height that stops at middle of stats */}
         <div className="absolute inset-x-0 top-0 bg-[#1a2942]" style={{ height: 'calc(96px + 12rem + 4rem)' }}></div>
         
-        <div className="container relative z-10 mx-auto px-4 max-w-[1600px] pt-8 md:pt-12 pb-8">
+        <div className="container relative z-10 mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] pt-8 md:pt-12 pb-8">
           {/* Welcome Row */}
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-10">
             {/* Left: Welcome */}
@@ -138,10 +138,10 @@ export default function DashboardHomeClient({
             </div>
 
             {/* Right: Quick Actions */}
-            <div className="flex flex-col sm:flex-row items-start gap-3">
+            <div className="flex flex-row items-center gap-2 sm:gap-3 w-full lg:w-auto">
               <Button
                 size="lg"
-                className="h-12 px-6 text-base font-semibold bg-[#5b7dd9] hover:bg-[#4a6bc7] text-white rounded-xl shadow-lg hover:-translate-y-0.5 transition-all"
+                className="h-10 sm:h-12 px-4 sm:px-6 text-sm sm:text-base font-semibold bg-[#5b7dd9] hover:bg-[#4a6bc7] text-white rounded-xl shadow-lg hover:-translate-y-0.5 transition-all flex-1 lg:flex-none whitespace-nowrap"
                 asChild
               >
                 <Link href="/quizzes">
@@ -154,12 +154,12 @@ export default function DashboardHomeClient({
                 <Button
                   size="lg"
                   variant="ghost"
-                  className="h-12 px-6 text-base font-semibold rounded-xl bg-white/10 text-white hover:bg-white/20 transition-all"
+                  className="h-10 sm:h-12 px-4 sm:px-6 text-sm sm:text-base font-semibold rounded-xl bg-white/10 text-white hover:bg-white/20 transition-all flex-1 lg:flex-none whitespace-nowrap"
                   asChild
                 >
                   <Link href={`/quiz/${recentProgress[0].quizId.slug || recentProgress[0].quizId._id}`}>
                     Ga verder
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <ArrowRight className="w-4 h-4 ml-1 sm:ml-2" />
                   </Link>
                 </Button>
               )}
@@ -215,7 +215,7 @@ export default function DashboardHomeClient({
 
       {/* Recommended Quizzes Section */}
       <section className="py-10 md:py-12">
-        <div className="container mx-auto px-4 max-w-[1600px]">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px]">
           <div className="mb-6 flex items-end justify-between">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl font-medium tracking-tight text-[#1a2942] dark:text-foreground">
@@ -308,7 +308,7 @@ export default function DashboardHomeClient({
 
       {/* Categories Section */}
       <section className="py-10 md:py-14">
-        <div className="container mx-auto px-4 max-w-[1600px]">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px]">
           <div className="mb-8 text-center">
             <h2 className="font-serif text-2xl md:text-3xl font-medium tracking-tight text-[#1a2942] dark:text-foreground">
               Ontdek categorieën
@@ -347,7 +347,7 @@ export default function DashboardHomeClient({
       {/* Premium Upsell */}
       {!isPremium && (
         <section className="bg-[#1a2942] py-12 md:py-16">
-          <div className="container mx-auto px-4 max-w-[1600px]">
+          <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px]">
             <div className="flex flex-col items-center text-center gap-8">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-4 py-2">
