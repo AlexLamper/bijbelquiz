@@ -74,14 +74,12 @@ export default async function Home() {
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-[1800px] flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl">
             <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[64px] 3xl:text-[72px] leading-[1.1] font-bold text-[#1a2333] dark:text-white tracking-tight xl:max-w-none 2xl:max-w-none 3xl:max-w-none">
-              Test je Bijbelkennis.<br />
-              Groei in je geloof.
-            </h1>
+              Hoe goed ken jij de Bijbel? Ontdek het... 
+            </h1> 
             <p className="mb-8 sm:mb-10 max-w-xl text-[#5c687e] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl leading-[1.6]">
-              Speel de ultieme Bijbelquiz thuis en onderweg.<br />
-              Kies uit tientallen categorieÃ«n in de Statenvertaling,<br />
-              verdien XP en leer elke dag iets nieuws over<br />
-              het Woord.
+              BijbelQuiz heeft tientallen quizzen.
+              Kies uit verschillende categorieën,
+              concureer tegen anderen op de ranglijst en leer elke dag iets nieuws over de Bijbel!
             </p>
             
             <div className="flex flex-col items-start gap-4 sm:gap-6 w-full sm:w-auto">

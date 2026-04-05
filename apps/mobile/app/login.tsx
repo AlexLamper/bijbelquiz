@@ -122,7 +122,7 @@ export default function LoginScreen() {
               <View className="relative">
                 <TextInput
                   className="bg-white border border-[#e4e7f1] rounded-[18px] px-5 py-4 text-[#1a2333] text-[16px] pr-12"
-                  placeholder="••••••••"
+                  placeholder="Je wachtwoord"
                   placeholderTextColor="#94a3b8"
                   value={password}
                   onChangeText={setPassword}

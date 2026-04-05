@@ -121,7 +121,7 @@ export default function DashboardHomeClient({
         {/* Blue background - fixed height that stops at middle of stats */}
         <div className="absolute inset-x-0 top-0 bg-[#1a2942]" style={{ height: 'calc(96px + 12rem + 4rem)' }}></div>
         
-        <div className="container relative z-10 mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] pt-8 md:pt-12 pb-8">
+        <div className="container relative z-10 mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] 2xl:max-w-[1700px] pt-8 md:pt-12 pb-8">
           {/* Welcome Row */}
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-10">
             {/* Left: Welcome */}
@@ -130,10 +130,10 @@ export default function DashboardHomeClient({
                 Dashboard
               </p>
               <h1 className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-bold text-white tracking-tight mb-3 flex items-center gap-3">
-                {getGreeting()}, {userName}. <span className="text-3xl">ðŸ‘‹</span>
+                {getGreeting()}, {userName}. <span className="text-3xl">👋</span>
               </h1>
               <p className="max-w-lg text-white/60 text-base leading-relaxed">
-                Ontdek Gods Woord, Ã©Ã©n vraag tegelijk.
+                Ontdek Gods Woord, één vraag tegelijk.
               </p>
             </div>
 
@@ -215,7 +215,7 @@ export default function DashboardHomeClient({
 
       {/* Recommended Quizzes Section */}
       <section className="py-10 md:py-12">
-        <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px]">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] 2xl:max-w-[1700px]">
           <div className="mb-6 flex items-end justify-between">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl font-medium tracking-tight text-[#1a2942] dark:text-foreground">
@@ -308,10 +308,10 @@ export default function DashboardHomeClient({
 
       {/* Categories Section */}
       <section className="py-10 md:py-14">
-        <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px]">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] 2xl:max-w-[1700px]">
           <div className="mb-8 text-center">
             <h2 className="font-serif text-2xl md:text-3xl font-medium tracking-tight text-[#1a2942] dark:text-foreground">
-              Ontdek categorieÃ«n
+              Ontdek categorieën
             </h2>
             <p className="mt-2 text-muted-foreground max-w-md mx-auto">
               Kies een categorie en test je kennis van de Bijbel.
@@ -347,7 +347,7 @@ export default function DashboardHomeClient({
       {/* Premium Upsell */}
       {!isPremium && (
         <section className="bg-[#1a2942] py-12 md:py-16">
-          <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px]">
+          <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] 2xl:max-w-[1700px]">
             <div className="flex flex-col items-center text-center gap-8">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-4 py-2">
@@ -373,7 +373,7 @@ export default function DashboardHomeClient({
                     <Link href="/premium">Word nu Premium</Link>
                   </Button>
                   <div className="flex items-baseline gap-1 text-white">
-                    <span className="text-2xl font-semibold">â‚¬4,99</span>
+                    <span className="text-2xl font-semibold">€4,99</span>
                     <span className="text-white/60">/maand</span>
                   </div>
                 </div>

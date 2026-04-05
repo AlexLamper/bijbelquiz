@@ -26,16 +26,16 @@ const features = [
 ]
 
 const benefits = [
-  "Alle categorieÃ«n ontgrendeld",
+  "Alle categorieën ontgrendeld",
   "Gedetailleerde statistieken",
   "Offline modus beschikbaar",
-  "Prioriteit ondersteuning",
+  "Prioriteit ondersteuning", 
   "Maandelijkse nieuwe content",
 ]
 
 export function PremiumSection() {
-  const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || 'â‚¬5,99';
-  const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || 'â‚¬74,99';
+  const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
+  const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';
 
   return (
     <section className="bg-[#1a2942] py-16 md:py-24">

@@ -11,7 +11,7 @@ import { CheckCircle2, Loader2, Eye, EyeOff, BookOpen, Trophy, Flame } from 'luc
 function LoginContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const callbackUrl = searchParams.get('callbackUrl') || '/';
+  const callbackUrl = searchParams.get('callbackUrl') || '/dashboard';
   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -140,7 +140,7 @@ function LoginContent() {
                 <input
                   id="password"
                   type={showPassword ? "text" : "password"}
-                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+                  placeholder="••••••••"
                   className="flex h-12 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-[#5b7dd9] focus:outline-none focus:ring-4 focus:ring-[#5b7dd9]/10 transition-all duration-200 pr-12"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}

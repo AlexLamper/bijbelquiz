@@ -34,7 +34,7 @@ export function FeaturesSection() {
             Ontdek de rijkdom van Gods Woord
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground dark:text-white/70">
-            Met meer dan 1500 vragen verdeeld over 50+ categorieÃ«n is er altijd iets nieuws te ontdekken in de Statenvertaling.
+            Met meer dan 1500 vragen verdeeld over 50+ categorieën is er altijd iets nieuws te ontdekken in de Statenvertaling.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export function FeaturesSection() {
           </div>
           <div className="text-center">
             <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">50+</div>
-            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">CategorieÃ«n</div>
+            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Categorieë n</div>
           </div>
           <div className="text-center">
             <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">3</div>

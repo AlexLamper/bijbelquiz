@@ -12,14 +12,14 @@ export const LEVELS = [
 ];
 
 export const BADGES = [
-  { id: 'first_steps', name: 'Eerste Stappen', description: 'Voltooi je eerste quiz.', icon: 'ðŸ‘£' },
-  { id: 'knowledge_seeker', name: 'Kenniszoeker', description: 'Speel 10 verschillende quizzen.', icon: 'ðŸ”' },
-  { id: 'perfect_score', name: 'Foutloos', description: 'Haal een 100% score op een quiz.', icon: 'â­' },
-  { id: 'streak_3', name: 'Op Dreef', description: 'Bouw een streak van 3 dagen op.', icon: 'ðŸ”¥' },
-  { id: 'streak_7', name: 'Toegewijd', description: 'Speel 7 dagen op rij.', icon: 'ðŸ“…' },
-  { id: 'scholar', name: 'Geleerde', description: 'Behaal niveau 5.', icon: 'ðŸŽ“' },
-  { id: 'master', name: 'Meester', description: 'Behaal niveau 10.', icon: 'ðŸ‘‘' },
-  { id: 'all_rounder', name: 'Allrounder', description: 'Speel een quiz in elke categorie.', icon: 'ðŸŒ' },
+  { id: 'first_steps', name: 'Eerste Stappen', description: 'Voltooi je eerste quiz.', icon: '👣' },
+  { id: 'knowledge_seeker', name: 'Kenniszoeker', description: 'Speel 10 verschillende quizzen.', icon: '🔍' },
+  { id: 'perfect_score', name: 'Foutloos', description: 'Haal een 100% score op een quiz.', icon: '⭐' },
+  { id: 'streak_3', name: 'Op Dreef', description: 'Bouw een streak van 3 dagen op.', icon: '🔥' },
+  { id: 'streak_7', name: 'Toegewijd', description: 'Speel 7 dagen op rij.', icon: '📅' },
+  { id: 'scholar', name: 'Geleerde', description: 'Behaal niveau 5.', icon: '🎓' },
+  { id: 'master', name: 'Meester', description: 'Behaal niveau 10.', icon: '👑' },
+  { id: 'all_rounder', name: 'Allrounder', description: 'Speel een quiz in elke categorie.', icon: '🌍' },
 ];
 
 export function getLevelInfo(xp: number) {

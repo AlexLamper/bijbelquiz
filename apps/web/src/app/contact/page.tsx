@@ -22,9 +22,9 @@ export default function ContactPage() {
       },
       {
           title: "Hoe werkt het Premium lidmaatschap?",
-          content: "Het is een eenmalige betaling. Je betaalt Ã©Ã©n keer en behoudt voor altijd toegang tot alle Premium functionaliteiten. Geen abonnementen."
+          content: "Het is een eenmalige betaling. Je betaalt één keer en behoudt voor altijd toegang tot alle Premium functionaliteiten. Geen abonnementen."
       },
-      {
+      { 
           title: "Kan ik mijn account verwijderen?",
           content: "Ja, dat kan. Stuur een mailtje naar devlamper06@gmail.com en wij verwerken je verzoek binnen 5 werkdagen."
       }

@@ -50,7 +50,7 @@ export default function MobileQuizFilter({ categories, currentCategory }: Mobile
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              <span>Alle CategorieÃ«n</span>
+              <span>Alle Categorieën</span>
               {currentCategory === 'all' && <ChevronRight className="w-4 h-4" />}
             </Link>
             

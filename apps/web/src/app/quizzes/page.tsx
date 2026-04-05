@@ -98,7 +98,7 @@ export default async function QuizzesPage({
             <div className="hidden lg:block sticky top-24 space-y-6 bg-card border rounded-2xl p-5 shadow-sm">
                 <div className="flex items-center gap-2 mb-4 px-1">
                    <FilterIcon className="w-5 h-5 text-primary" />
-                   <h3 className="font-serif font-bold text-lg text-foreground">CategorieÃ«n</h3>
+                   <h3 className="font-serif font-bold text-lg text-foreground">Categorieën</h3>
                 </div>
                 <div className="flex flex-col gap-1">
                     <Link 
@@ -110,7 +110,7 @@ export default async function QuizzesPage({
                                 : "text-muted-foreground hover:bg-muted hover:text-foreground"
                         )}
                     >
-                        <span>Alle CategorieÃ«n</span>
+                        <span>Alle Categorieën</span>
                         <ChevronRight className={cn(
                             "w-4 h-4 transition-transform",
                             currentCategory === 'all' ? "text-primary-foreground" : "text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"

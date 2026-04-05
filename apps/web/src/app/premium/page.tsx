@@ -1,5 +1,6 @@
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { Check, ShieldCheck, Crown, BookOpen, Star, Trophy, Zap } from 'lucide-react';
@@ -29,9 +30,14 @@ const benefits = [
 
 export default async function PremiumPage() {
   const session = await getServerSession(authOptions);
+
+  if (!session) {
+    redirect('/login?callbackUrl=/premium');
+  }
+
   const isPremium = session?.user?.isPremium;
-  const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || 'â‚¬74,99';
-  const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || 'â‚¬5,99';
+  const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';
+  const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -53,7 +59,7 @@ export default async function PremiumPage() {
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a2942] dark:text-foreground tracking-tight mb-4">
-              Ontgrendel alles. âœ¨
+              Ontgrendel alles.
             </h1>
             
             <p className="max-w-md mx-auto text-[#5c687e] dark:text-muted-foreground text-base leading-relaxed">

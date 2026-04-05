@@ -16,7 +16,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-white/70">
-              Test je Bijbelkennis en groei in je geloof met onze interactieve quizzen.
+              Test je Bijbelkennis en leer meer over de schrift met onze interactieve quizzen.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row">
           <p className="text-sm text-white/70">
-            Â© {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.
+            © {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.
           </p>
           <div className="flex items-center gap-4 text-sm text-white/70">
             <span>Gemaakt door Alex Lamper</span>

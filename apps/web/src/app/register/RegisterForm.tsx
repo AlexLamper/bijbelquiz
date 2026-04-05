@@ -11,7 +11,7 @@ import { signIn } from 'next-auth/react';
 function RegisterContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get('callbackUrl') || '/login';
+  const callbackUrl = searchParams.get('callbackUrl') || '/dashboard';
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
