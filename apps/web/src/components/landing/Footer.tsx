@@ -21,7 +21,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-medium text-white">Quizzen</h4>
+            <h3 className="mb-4 font-medium text-white">Quizzen</h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li><Link href="/quizzes" className="hover:text-white transition-colors">Alle Quizzen</Link></li>
               <li><Link href="/leaderboard" className="hover:text-white transition-colors">Ranglijst</Link></li>
@@ -29,7 +29,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-medium text-white">Account</h4>
+            <h3 className="mb-4 font-medium text-white">Account</h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li><Link href="/login" className="hover:text-white transition-colors">Inloggen</Link></li>
               <li><Link href="/register" className="hover:text-white transition-colors">Registreren</Link></li>
@@ -39,7 +39,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-medium text-white">Informatie</h4>
+            <h3 className="mb-4 font-medium text-white">Informatie</h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacybeleid</Link></li>
@@ -50,7 +50,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row">
           <p className="text-sm text-white/70">
-            © {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.
+            Â© {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.
           </p>
           <div className="flex items-center gap-4 text-sm text-white/70">
             <span>Gemaakt door Alex Lamper</span>

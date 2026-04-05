@@ -22,7 +22,7 @@ export function DownloadButtons() {
         onClick={() => alert("De mobiele app komt binnen enkele weken!")}
         className="flex items-center justify-center gap-3 bg-[#1d1d1f] hover:bg-black text-white h-14 px-6 rounded-2xl transition-colors min-w-[160px]"
       >
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="Google Play" className="w-8 h-8" />
+        <img src="/icon/Google_Play_Arrow_logo.svg" alt="Google Play" className="w-8 h-8" />
         <div className="text-left flex flex-col leading-tight">
           <span className="text-[10px] text-gray-300">Ontdek het op</span>
           <span className="text-[17px] font-semibold tracking-wide">Google Play</span>

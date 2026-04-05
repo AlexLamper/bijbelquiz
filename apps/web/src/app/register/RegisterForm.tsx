@@ -71,7 +71,7 @@ function RegisterContent() {
               />
             </div>
             <span className="text-2xl font-bold font-serif tracking-tight text-foreground">
-              Bijbel<span className="text-[#1a2942] dark:text-[#5b7dd9] italic">Quiz</span>
+              Bijbel<span className="text-[#1a2942] dark:text-primary dark:text-[#5b7dd9] italic">Quiz</span>
             </span>
           </div>
 
@@ -186,7 +186,7 @@ function RegisterContent() {
           {/* Footer */}
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Heb je al een account?{' '}
-            <Link href="/login" className="text-[#5b7dd9] hover:text-[#4a6bc7] font-semibold hover:underline">
+            <Link href="/login" className="text-primary dark:text-[#5b7dd9] hover:text-[#4a6bc7] font-semibold hover:underline">
               Inloggen
             </Link>
           </p>
@@ -246,7 +246,7 @@ function RegisterContent() {
 
 export default function RegisterForm() {
   return (
-    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-[#5b7dd9]" /></div>}>
+    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary dark:text-[#5b7dd9]" /></div>}>
       <RegisterContent />
     </Suspense>
   );

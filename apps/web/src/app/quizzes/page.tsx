@@ -98,7 +98,7 @@ export default async function QuizzesPage({
             <div className="hidden lg:block sticky top-24 space-y-6 bg-card border rounded-2xl p-5 shadow-sm">
                 <div className="flex items-center gap-2 mb-4 px-1">
                    <FilterIcon className="w-5 h-5 text-primary" />
-                   <h3 className="font-serif font-bold text-lg text-foreground">Categorieën</h3>
+                   <h3 className="font-serif font-bold text-lg text-foreground">CategorieÃ«n</h3>
                 </div>
                 <div className="flex flex-col gap-1">
                     <Link 
@@ -110,7 +110,7 @@ export default async function QuizzesPage({
                                 : "text-muted-foreground hover:bg-muted hover:text-foreground"
                         )}
                     >
-                        <span>Alle Categorieën</span>
+                        <span>Alle CategorieÃ«n</span>
                         <ChevronRight className={cn(
                             "w-4 h-4 transition-transform",
                             currentCategory === 'all' ? "text-primary-foreground" : "text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
@@ -157,8 +157,8 @@ export default async function QuizzesPage({
                         {/* Dark Mode Premium Card */}
                         <div className="hidden dark:block bg-gradient-to-r from-[#1a2942] to-[#2a3f5f] rounded-2xl p-6 shadow-lg mt-6 text-center lg:text-left">
                            <div className="inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-3 py-1 mb-3">
-                               <Star className="h-4 w-4 fill-[#5b7dd9] text-[#5b7dd9]" />
-                               <span className="text-xs font-bold text-[#5b7dd9] uppercase tracking-wider">Premium</span>
+                               <Star className="h-4 w-4 fill-[#5b7dd9] text-primary dark:text-[#5b7dd9]" />
+                               <span className="text-xs font-bold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Premium</span>
                            </div>
                            <h3 className="font-serif font-medium text-white mb-2 text-lg">
                                Krijg volledige toegang
@@ -199,8 +199,8 @@ export default async function QuizzesPage({
                             <CardContent className="pt-4 pb-4 flex items-center justify-between gap-3">
                                 <div>
                                     <div className="inline-flex items-center gap-1 rounded-full bg-[#5b7dd9]/20 px-2 py-0.5 mb-1">
-                                        <Star className="h-3 w-3 fill-[#5b7dd9] text-[#5b7dd9]" />
-                                        <span className="text-[10px] font-bold text-[#5b7dd9] uppercase tracking-wider">Premium</span>
+                                        <Star className="h-3 w-3 fill-[#5b7dd9] text-primary dark:text-[#5b7dd9]" />
+                                        <span className="text-[10px] font-bold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Premium</span>
                                     </div>
                                     <p className="text-xs text-white/80 font-medium">Ontgrendel alle quizzen en uitleg</p>
                                 </div>

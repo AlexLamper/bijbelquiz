@@ -126,14 +126,14 @@ export default function DashboardHomeClient({
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-10">
             {/* Left: Welcome */}
             <div>
-              <p className="text-sm font-medium tracking-wider text-[#5b7dd9] uppercase mb-2">
+              <p className="text-sm font-medium tracking-wider text-primary dark:text-[#5b7dd9] uppercase mb-2">
                 Dashboard
               </p>
               <h1 className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-bold text-white tracking-tight mb-3 flex items-center gap-3">
-                {getGreeting()}, {userName}. <span className="text-3xl">👋</span>
+                {getGreeting()}, {userName}. <span className="text-3xl">ðŸ‘‹</span>
               </h1>
               <p className="max-w-lg text-white/60 text-base leading-relaxed">
-                Ontdek Gods Woord, één vraag tegelijk.
+                Ontdek Gods Woord, Ã©Ã©n vraag tegelijk.
               </p>
             </div>
 
@@ -171,8 +171,8 @@ export default function DashboardHomeClient({
             {/* Totaal XP Card */}
             <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
               <div className="flex items-start justify-between mb-4">
-                <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Totaal XP</span>
-                <Trophy className="w-5 h-5 text-[#5b7dd9]" />
+                <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Totaal XP</span>
+                <Trophy className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
               </div>
               <div className="text-4xl font-bold text-[#1a2333] dark:text-foreground">{xp}</div>
             </div>
@@ -180,8 +180,8 @@ export default function DashboardHomeClient({
             {/* Dagen Reeks Card */}
             <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
               <div className="flex items-start justify-between mb-4">
-                <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Dagen Reeks</span>
-                <Flame className="w-5 h-5 text-[#5b7dd9]" />
+                <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Dagen Reeks</span>
+                <Flame className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
               </div>
               <div className="text-4xl font-bold text-[#1a2333] dark:text-foreground">{streak}</div>
             </div>
@@ -189,8 +189,8 @@ export default function DashboardHomeClient({
             {/* Quizzen Gespeeld Card */}
             <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
               <div className="flex items-start justify-between mb-4">
-                <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Quizzen Gespeeld</span>
-                <CheckCircle2 className="w-5 h-5 text-[#5b7dd9]" />
+                <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Quizzen Gespeeld</span>
+                <CheckCircle2 className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
               </div>
               <div className="text-4xl font-bold text-[#1a2333] dark:text-foreground">{totalQuizzesDone}</div>
             </div>
@@ -198,7 +198,7 @@ export default function DashboardHomeClient({
             {/* Gem. Score Card with Progress */}
             <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
               <div className="flex items-start justify-between mb-4">
-                <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Niveau {level}</span>
+                <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Niveau {level}</span>
                 <span className="text-xs font-medium text-muted-foreground">{levelProgress}%</span>
               </div>
               <div className="text-2xl font-bold text-[#1a2333] dark:text-foreground mb-3">{levelTitle}</div>
@@ -227,7 +227,7 @@ export default function DashboardHomeClient({
             </div>
             <Link
               href="/quizzes"
-              className="hidden sm:inline-flex items-center gap-2 font-medium text-[#5b7dd9] transition-colors hover:text-[#4a6bc7]"
+              className="hidden sm:inline-flex items-center gap-2 font-medium text-primary dark:text-[#5b7dd9] transition-colors hover:text-[#4a6bc7]"
             >
               Alle quizzen
               <ArrowRight className="h-4 w-4" />
@@ -275,7 +275,7 @@ export default function DashboardHomeClient({
                       <Badge variant="secondary" className="w-fit mb-2 font-normal bg-slate-100 dark:bg-muted text-slate-700 dark:text-muted-foreground">
                         {categoryName}
                       </Badge>
-                      <h3 className="font-serif text-base font-medium text-[#1a2942] dark:text-foreground group-hover:text-[#5b7dd9] transition-colors line-clamp-1 mb-1">
+                      <h3 className="font-serif text-base font-medium text-[#1a2942] dark:text-foreground group-hover:text-primary dark:text-[#5b7dd9] transition-colors line-clamp-1 mb-1">
                         {quiz.title}
                       </h3>
                       <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
@@ -297,7 +297,7 @@ export default function DashboardHomeClient({
           <div className="mt-6 text-center sm:hidden">
             <Link
               href="/quizzes"
-              className="inline-flex items-center gap-2 font-medium text-[#5b7dd9] transition-colors hover:text-[#4a6bc7]"
+              className="inline-flex items-center gap-2 font-medium text-primary dark:text-[#5b7dd9] transition-colors hover:text-[#4a6bc7]"
             >
               Bekijk alle quizzen
               <ArrowRight className="h-4 w-4" />
@@ -311,7 +311,7 @@ export default function DashboardHomeClient({
         <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px]">
           <div className="mb-8 text-center">
             <h2 className="font-serif text-2xl md:text-3xl font-medium tracking-tight text-[#1a2942] dark:text-foreground">
-              Ontdek categorieën
+              Ontdek categorieÃ«n
             </h2>
             <p className="mt-2 text-muted-foreground max-w-md mx-auto">
               Kies een categorie en test je kennis van de Bijbel.
@@ -351,13 +351,13 @@ export default function DashboardHomeClient({
             <div className="flex flex-col items-center text-center gap-8">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-4 py-2">
-                  <Crown className="h-5 w-5 text-[#5b7dd9]" />
-                  <span className="text-sm font-medium text-[#5b7dd9]">Premium</span>
+                  <Crown className="h-5 w-5 text-primary dark:text-[#5b7dd9]" />
+                  <span className="text-sm font-medium text-primary dark:text-[#5b7dd9]">Premium</span>
                 </div>
 
                 <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium leading-tight tracking-tight text-white mb-4 max-w-2xl mx-auto">
                   Ontgrendel de volledige{' '}
-                  <span className="text-[#5b7dd9]">BijbelQuiz ervaring.</span>
+                  <span className="text-primary dark:text-[#5b7dd9]">BijbelQuiz ervaring.</span>
                 </h2>
 
                 <p className="max-w-lg mx-auto text-white/70 leading-relaxed mb-6">
@@ -373,7 +373,7 @@ export default function DashboardHomeClient({
                     <Link href="/premium">Word nu Premium</Link>
                   </Button>
                   <div className="flex items-baseline gap-1 text-white">
-                    <span className="text-2xl font-semibold">€4,99</span>
+                    <span className="text-2xl font-semibold">â‚¬4,99</span>
                     <span className="text-white/60">/maand</span>
                   </div>
                 </div>
@@ -391,7 +391,7 @@ export default function DashboardHomeClient({
                     className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm text-center"
                   >
                     <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[#5b7dd9]/20 mx-auto">
-                      <feature.icon className="h-5 w-5 text-[#5b7dd9]" />
+                      <feature.icon className="h-5 w-5 text-primary dark:text-[#5b7dd9]" />
                     </div>
                     <h3 className="font-medium text-white text-sm">{feature.title}</h3>
                     <p className="text-xs text-white/60">{feature.desc}</p>

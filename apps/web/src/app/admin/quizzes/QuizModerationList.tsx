@@ -150,8 +150,8 @@ export default function QuizModerationList() {
                                 </div>
                                 <p className="text-sm text-slate-500 flex items-center gap-2">
                                     Door: <span className="font-medium">{quiz.createdBy?.name || 'Onbekend'}</span>
-                                    • {quiz.questions?.length} vragen
-                                    • {new Date(quiz.createdAt).toLocaleDateString('nl-NL')}
+                                    â€¢ {quiz.questions?.length} vragen
+                                    â€¢ {new Date(quiz.createdAt).toLocaleDateString('nl-NL')}
                                 </p>
                             </div>
                             

@@ -12,7 +12,7 @@
   --popover: hsl(0 0% 100%);
   --popover-foreground: hsl(218 32% 15%);
 
-  --primary: hsl(223 77% 62%); /* #547ee9 */
+  --primary: hsl(223 60% 48%); /* slightly darker to pass WCAG contrast */
   --primary-foreground: hsl(0 0% 100%);
 
   --secondary: hsl(220 20% 90%);
@@ -44,7 +44,7 @@
   --popover: hsl(218 32% 13%);
   --popover-foreground: hsl(220 30% 95%);
 
-  --primary: hsl(223 77% 62%);
+  --primary: hsl(223 77% 62%); /* In dark mode, lighter blue has great contrast against dark background */
   --primary-foreground: hsl(0 0% 100%);
 
   --secondary: hsl(218 30% 20%);

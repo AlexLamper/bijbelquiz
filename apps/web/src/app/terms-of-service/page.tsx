@@ -21,7 +21,7 @@ export default function TermsPage() {
         <p>Premium lidmaatschap wordt aangegaan via een eenmalige betaling. Er is een herroepingsrecht van 14 dagen (&quot;niet-goed-geld-terug&quot;), mits de dienst nog niet volledig is geconsumeerd (substantial usage).</p>
         
         <h3>4. Intellectueel Eigendom</h3>
-        <p>Alle quizvragen, logo&apos;s en software zijn eigendom van BijbelQuiz. Kopiëren zonder toestemming is niet toegestaan.</p>
+        <p>Alle quizvragen, logo&apos;s en software zijn eigendom van BijbelQuiz. KopiÃ«ren zonder toestemming is niet toegestaan.</p>
         
         <h3>5. Aansprakelijkheid</h3>
         <p>Wij streven naar correctheid, maar kunnen fouten in vragen of antwoorden niet volledig uitsluiten. Wij zijn niet aansprakelijk voor schade voortvloeiend uit het gebruik van deze site.</p>

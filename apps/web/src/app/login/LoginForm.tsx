@@ -69,7 +69,7 @@ function LoginContent() {
               />
             </div>
             <span className="text-2xl font-bold font-serif tracking-tight text-foreground">
-              Bijbel<span className="text-[#1a2942] dark:text-[#5b7dd9] italic">Quiz</span>
+              Bijbel<span className="text-[#1a2942] dark:text-primary dark:text-[#5b7dd9] italic">Quiz</span>
             </span>
           </div>
 
@@ -140,7 +140,7 @@ function LoginContent() {
                 <input
                   id="password"
                   type={showPassword ? "text" : "password"}
-                  placeholder="••••••••"
+                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                   className="flex h-12 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-[#5b7dd9] focus:outline-none focus:ring-4 focus:ring-[#5b7dd9]/10 transition-all duration-200 pr-12"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -169,7 +169,7 @@ function LoginContent() {
           {/* Footer */}
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Nog geen account?{' '}
-            <Link href="/register" className="text-[#5b7dd9] hover:text-[#4a6bc7] font-semibold hover:underline">
+            <Link href="/register" className="text-primary dark:text-[#5b7dd9] hover:text-[#4a6bc7] font-semibold hover:underline">
               Registreer nu
             </Link>
           </p>
@@ -229,7 +229,7 @@ function LoginContent() {
 
 export default function LoginForm() {
   return (
-    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-[#5b7dd9]" /></div>}>
+    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary dark:text-[#5b7dd9]" /></div>}>
       <LoginContent />
     </Suspense>
   );

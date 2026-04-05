@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   const linkClasses = (href: string) => 
-    `hover:text-primary transition-colors ${isActive(href) ? 'text-[#5b7dd9] font-semibold' : ''}`;
+    `hover:text-primary transition-colors ${isActive(href) ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`;
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-transparent px-3 pt-4 sm:px-4 sm:pt-5">
@@ -127,13 +127,13 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="absolute left-3 right-3 top-[4.6rem] z-99 overflow-y-auto rounded-[28px] border border-[#d6e2fa]/80 bg-[#f7faff]/92 px-4 py-6 shadow-[0_22px_60px_rgba(84,126,233,0.16)] backdrop-blur-xl animate-in slide-in-from-top-2 md:hidden">
             <div className="flex flex-col space-y-2">
-                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/') ? 'text-[#5b7dd9] font-semibold' : ''}`}>
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
                     Home
                 </Link>
-                <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/quizzes') ? 'text-[#5b7dd9] font-semibold' : ''}`}>
+                <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/quizzes') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
                     Alle Quizzen
                 </Link>
-                <Link href="/leaderboard" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/leaderboard') ? 'text-[#5b7dd9] font-semibold' : ''}`}>
+                <Link href="/leaderboard" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/leaderboard') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
                     Ranglijst
                 </Link>
                 {session?.user?.role === 'admin' && (
@@ -155,7 +155,7 @@ export default function Navbar() {
                 )}
                 {session && (
                      <div className="pt-2 mt-2 space-y-2 border-t border-slate-200/60">
-                        <Link href="/profile" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 text-slate-700 hover:text-[#5b7dd9] hover:bg-slate-50 rounded-xl transition-colors">
+                        <Link href="/profile" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 text-slate-700 hover:text-primary dark:text-[#5b7dd9] hover:bg-slate-50 rounded-xl transition-colors">
                             <User className="h-4 w-4" />
                             <span className="font-medium">Mijn Profiel</span>
                         </Link>

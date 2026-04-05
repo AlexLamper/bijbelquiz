@@ -34,21 +34,21 @@ export function FeaturesSection() {
             Ontdek de rijkdom van Gods Woord
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground dark:text-white/70">
-            Met meer dan 1500 vragen verdeeld over 50+ categorieën is er altijd iets nieuws te ontdekken in de Statenvertaling.
+            Met meer dan 1500 vragen verdeeld over 50+ categorieÃ«n is er altijd iets nieuws te ontdekken in de Statenvertaling.
           </p>
         </div>
 
         <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-16">
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-[#5b7dd9] md:text-5xl">1500+</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">1500+</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Vragen</div>
           </div>
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-[#5b7dd9] md:text-5xl">50+</div>
-            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Categorieën</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">50+</div>
+            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">CategorieÃ«n</div>
           </div>
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-[#5b7dd9] md:text-5xl">3</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">3</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Moeilijkheidsgraden</div>
           </div>
         </div>
@@ -64,8 +64,9 @@ export function FeaturesSection() {
                   src={category.imageUrl}
                   alt={category.title}
                   fill
+                  quality={80}
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                 />
               </div>
               <div className="absolute inset-0 bg-black/45" />

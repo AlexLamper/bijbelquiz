@@ -16,7 +16,7 @@ export function CTASection() {
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button className="rounded-full bg-[#5b7dd9] px-8 py-6 text-base font-medium text-white hover:bg-[#4a6bc7]" asChild>
+            <Button className="rounded-full bg-primary hover:bg-primary/90 dark:bg-[#5b7dd9] dark:hover:bg-[#4a6bc7] px-8 py-6 text-base font-medium text-white" asChild>
               <Link href="/quizzes">Speel direct online</Link>
             </Button>
 

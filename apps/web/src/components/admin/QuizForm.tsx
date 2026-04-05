@@ -352,7 +352,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                         </SelectContent>
                       </Select>
                       <FormDescription>
-                          Of typ tijdelijk een ID of slug als categorieën leeg blijven.
+                          Of typ tijdelijk een ID of slug als categorieÃ«n leeg blijven.
                       </FormDescription>
                       <FormMessage />
                     </FormItem>

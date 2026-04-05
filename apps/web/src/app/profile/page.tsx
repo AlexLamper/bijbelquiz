@@ -216,32 +216,32 @@ export default async function ProfilePage() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
             <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Totaal XP</span>
-              <Trophy className="w-5 h-5 text-[#5b7dd9]" />
+              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Totaal XP</span>
+              <Trophy className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
             </div>
             <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{user.xp || 0}</div>
           </div>
 
           <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
             <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Dagen Reeks</span>
-              <Flame className="w-5 h-5 text-[#5b7dd9]" />
+              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Dagen Reeks</span>
+              <Flame className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
             </div>
             <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{user.streak || 0}</div>
           </div>
 
           <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
             <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Quizzen Gespeeld</span>
-              <CheckCircle2 className="w-5 h-5 text-[#5b7dd9]" />
+              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Quizzen Gespeeld</span>
+              <CheckCircle2 className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
             </div>
             <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{totalQuizzesDone}</div>
           </div>
 
           <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
             <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-[#5b7dd9] uppercase tracking-wider">Gem. Score</span>
-              <Target className="w-5 h-5 text-[#5b7dd9]" />
+              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Gem. Score</span>
+              <Target className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
             </div>
             <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{avgScore}%</div>
           </div>
@@ -252,7 +252,7 @@ export default async function ProfilePage() {
           <div className="lg:col-span-2 bg-white dark:bg-card rounded-2xl p-6 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 flex items-center justify-center">
-                <TrendingUp className="w-5 h-5 text-[#5b7dd9]" />
+                <TrendingUp className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
               </div>
               <div>
                 <h2 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Niveau Voortgang</h2>
@@ -315,7 +315,7 @@ export default async function ProfilePage() {
                           <div className="flex items-center justify-between">
                             <h4 className={`text-sm font-semibold ${
                               isCurrent 
-                                ? 'text-[#5b7dd9] dark:text-[#5b7dd9]' 
+                                ? 'text-primary dark:text-[#5b7dd9] dark:text-primary dark:text-[#5b7dd9]' 
                                 : isReached 
                                   ? 'text-[#1a2942] dark:text-foreground' 
                                   : 'text-gray-500 dark:text-muted-foreground'
@@ -323,7 +323,7 @@ export default async function ProfilePage() {
                               {level.title}
                             </h4>
                             {isReached && !isCurrent && (
-                              <CheckCircle2 className="w-4 h-4 text-[#5b7dd9]/70" />
+                              <CheckCircle2 className="w-4 h-4 text-primary dark:text-[#5b7dd9]/70" />
                             )}
                           </div>
                           <p className="text-xs text-muted-foreground mt-0.5">{level.minXp} XP</p>
@@ -381,8 +381,8 @@ export default async function ProfilePage() {
         {!user.isPremium && (
           <div className="mt-8 bg-gradient-to-r from-[#1a2942] to-[#2a3f5f] rounded-2xl p-8 text-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-4 py-2 mb-4">
-              <Crown className="h-5 w-5 text-[#5b7dd9]" />
-              <span className="text-sm font-medium text-[#5b7dd9]">Premium</span>
+              <Crown className="h-5 w-5 text-primary dark:text-[#5b7dd9]" />
+              <span className="text-sm font-medium text-primary dark:text-[#5b7dd9]">Premium</span>
             </div>
             <h3 className="text-2xl font-serif font-medium text-white mb-2">
               Upgrade naar Premium
@@ -405,7 +405,7 @@ export default async function ProfilePage() {
             <div className="flex items-start justify-between gap-4 mb-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 flex items-center justify-center">
-                  <CreditCard className="w-5 h-5 text-[#5b7dd9]" />
+                  <CreditCard className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
                 </div>
                 <div>
                   <h3 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Premium lidmaatschap</h3>

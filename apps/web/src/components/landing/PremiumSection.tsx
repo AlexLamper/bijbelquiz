@@ -26,7 +26,7 @@ const features = [
 ]
 
 const benefits = [
-  "Alle categorieën ontgrendeld",
+  "Alle categorieÃ«n ontgrendeld",
   "Gedetailleerde statistieken",
   "Offline modus beschikbaar",
   "Prioriteit ondersteuning",
@@ -34,8 +34,8 @@ const benefits = [
 ]
 
 export function PremiumSection() {
-  const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
-  const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';
+  const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || 'â‚¬5,99';
+  const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || 'â‚¬74,99';
 
   return (
     <section className="bg-[#1a2942] py-16 md:py-24">
@@ -43,14 +43,14 @@ export function PremiumSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-4 py-2">
-              <Crown className="h-5 w-5 text-[#5b7dd9]" />
-              <span className="text-sm font-medium text-[#5b7dd9]">Premium</span>
+              <Crown className="h-5 w-5 text-primary dark:text-[#5b7dd9]" />
+              <span className="text-sm font-medium text-primary dark:text-[#5b7dd9]">Premium</span>
             </div>
             
             <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
               <span className="text-balance">Ontgrendel de volledige</span>
               <br />
-              <span className="text-balance text-[#5b7dd9]">BijbelQuiz ervaring.</span>
+              <span className="text-balance text-primary dark:text-[#5b7dd9]">BijbelQuiz ervaring.</span>
             </h2>
             
             <p className="mt-6 max-w-lg leading-relaxed text-white/70">
@@ -92,7 +92,7 @@ export function PremiumSection() {
                 className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors hover:bg-white/10"
               >
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#5b7dd9]/20">
-                  <feature.icon className="h-6 w-6 text-[#5b7dd9]" />
+                  <feature.icon className="h-6 w-6 text-primary dark:text-[#5b7dd9]" />
                 </div>
                 <h3 className="mb-2 font-serif text-lg font-medium text-white">
                   {feature.title}

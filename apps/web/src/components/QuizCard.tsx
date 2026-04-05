@@ -44,7 +44,8 @@ export default function QuizCard({ quiz, isPremiumUser }: QuizCardProps) {
               alt={quiz.title}
               fill
               className="object-cover brightness-90 transition-transform duration-300 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+              quality={80}
             />
           ) : (
             <div className="absolute inset-0 flex items-center justify-center">
