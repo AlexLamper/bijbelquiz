@@ -175,12 +175,12 @@ export default async function LeaderboardPage({
 
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-350 2xl:max-w-425 py-8 md:py-12 pb-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-[1800px] py-8 md:py-12">
         <Breadcrumb
           items={[
             { label: 'Ranglijst' },
           ]}
-          className="mb-12"
+          className="mb-8"
         />
 
         <LeaderboardClient
