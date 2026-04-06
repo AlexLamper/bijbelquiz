@@ -19,8 +19,14 @@
   },
   "packageManager": "npm@10.2.4",
   "dependencies": {
+    "@bijbelquiz/database": "^0.0.0",
     "@hookform/resolvers": "^5.2.2",
     "expo-dev-client": "~6.0.20",
+    "lucide-react": "^1.7.0",
+    "mongoose": "^9.4.1",
+    "next": "^16.2.2",
+    "next-auth": "^4.24.13",
+    "react": "^19.2.4",
     "react-hook-form": "^7.72.0",
     "zod": "^4.3.6"
   }
