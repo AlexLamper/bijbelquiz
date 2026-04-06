@@ -109,7 +109,7 @@ export default function LibraryScreen() {
         className="mb-4 bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden shadow-sm flex-row h-[120px]"
         onPress={() => {
           if (isLocked) {
-            alert("Dit is een Premium quiz.");
+            router.push('/onboarding/paywall');
           } else {
             router.push(`/quiz/${item._id}`);
           }
@@ -213,7 +213,7 @@ export default function LibraryScreen() {
            <Text className="text-[#6B7280] text-[13px] mb-3">Ontgrendel alle quizzen inclusief diepere theologie en uitgebreide uitleg!</Text>
            <TouchableOpacity 
               className="bg-[#121A2A] py-2 rounded-lg items-center"
-              onPress={() => router.push('/modal')}
+              onPress={() => router.push('/onboarding/paywall')}
            >
               <Text className="text-white font-bold text-[13px]">Probeer Premium</Text>
            </TouchableOpacity>
@@ -243,3 +243,5 @@ export default function LibraryScreen() {
     </SafeAreaView>
   );
 }
+
+

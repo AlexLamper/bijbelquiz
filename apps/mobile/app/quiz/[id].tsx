@@ -368,7 +368,7 @@ export default function MobileQuizPlayer() {
                    <Text className="text-[#6B7280] text-[13px] mb-3">Ontgrendel theologische uitleg en Bijbelverwijzingen voor alle vragen.</Text>
                    <TouchableOpacity 
                       className="bg-[#121A2A] py-2.5 rounded-xl items-center active:scale-[0.98]"
-                      onPress={() => router.push('/modal')}
+                        onPress={() => router.push('/onboarding/paywall')}
                    >
                       <Text className="text-white font-bold text-[14px]">Word Premium ✨</Text>
                    </TouchableOpacity>

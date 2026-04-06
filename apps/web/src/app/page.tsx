@@ -121,18 +121,18 @@ export default async function Home() {
             </div>
           </div>
           
-          <div className="w-full lg:w-[48%] mt-12 lg:mt-0 relative h-[300px] sm:h-[400px] lg:h-[450px] xl:h-[550px] flex justify-center items-center overflow-visible hidden md:flex p-6 rounded-2xl">
+          <div className="w-full lg:w-[48%] mt-12 lg:mt-0 relative h-[350px] sm:h-[500px] lg:h-[600px] xl:h-[700px] flex justify-center items-center overflow-visible hidden md:flex p-6 rounded-2xl">
              {/* Hero mockup: scaled down contextually */}
              <div
-               className="absolute -right-2.5 top-0 w-180 h-180 transform-gpu pointer-events-none scale-100 lg:scale-[0.8] xl:scale-90 transform-origin-right"
+               className="absolute left-16 top-0 w-180 h-180 transform-gpu pointer-events-none scale-100 lg:scale-[0.92] xl:scale-100 transform-origin-left"
              >
                <Image 
-                 src="/images/hero-image1.png"
+                 src="/images/hero/hero1.png"
                  alt="Hero image"
                  fill
                  priority
                  sizes="(max-width: 1024px) 100vw, 50vw"
-                 className="object-contain object-right"
+                 className="object-contain object-left"
                />
              </div>
           </div>
