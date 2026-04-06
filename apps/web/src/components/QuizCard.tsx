@@ -13,6 +13,7 @@ export interface QuizItem {
   categoryId?: {
     _id?: string;
     title?: string;
+    slug?: string;
   } | string;
   questions?: {
     _id?: string;

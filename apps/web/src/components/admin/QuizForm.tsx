@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useForm, useFieldArray } from "react-hook-form";
+import { useForm, useFieldArray, Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useRouter } from "next/navigation";
@@ -63,7 +63,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
   }, []);
 
   const form = useForm<QuizFormValues>({
-    resolver: zodResolver(quizSchema),
+    resolver: zodResolver(quizSchema) as unknown as Resolver<QuizFormValues>,
     defaultValues: initialData ? {
       title: initialData.title || "",
       description: initialData.description || "",
@@ -151,7 +151,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
     } catch (error: any) {
       console.error("JSON upload error:", error);
       if (error instanceof z.ZodError) {
-        toast.error(`Validatiefout: ${error.errors[0].message}`);
+        toast.error(`Validatiefout: ${(error as any).errors[0]?.message}`);
       } else if (error instanceof SyntaxError) {
         toast.error("Ongeldig JSON-formaat");
       } else {
@@ -192,7 +192,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 pb-20">
+      <form onSubmit={form.handleSubmit(onSubmit as any)} className="space-y-8 pb-20">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Button variant="outline" size="icon" asChild>

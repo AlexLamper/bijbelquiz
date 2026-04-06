@@ -25,7 +25,8 @@ export default function QuizzesClient({ quizzes, categories, currentCategory, is
         quiz.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         quiz.description?.toLowerCase().includes(searchQuery.toLowerCase());
       
-      const matchesCategory = selectedCategory === 'all' || quiz.categoryId?.slug === selectedCategory;
+const matchesCategory = selectedCategory === 'all' || 
+          (typeof quiz.categoryId === 'object' && quiz.categoryId !== null ? quiz.categoryId.slug : null) === selectedCategory;
       
       return matchesSearch && matchesCategory;
     });
@@ -73,7 +74,7 @@ export default function QuizzesClient({ quizzes, categories, currentCategory, is
                   : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700"
               )}
             >
-              {cat.name}
+              {cat.title}
             </button>
           ))}
         </div>
