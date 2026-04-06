@@ -83,15 +83,39 @@ export default async function Home() {
             </p>
             
             <div className="flex flex-col items-start gap-4 sm:gap-6 w-full sm:w-auto">
-              <Button 
-                size="lg" 
-                className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-2xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all w-full sm:w-auto" 
-                asChild
-              >
-                <Link href="/quizzes">
-                    Speel direct online
-                </Link>
-              </Button>
+              {!session ? (
+                <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+                  <Button 
+                    size="lg" 
+                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-2xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all w-full sm:w-auto" 
+                    asChild
+                  >
+                    <Link href="/dashboard">
+                        Speel direct online
+                    </Link>
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold border-2 border-[#5b7dd9]/30 text-[#5b7dd9] hover:bg-[#5b7dd9]/5 hover:border-[#5b7dd9] rounded-2xl transition-all w-full sm:w-auto" 
+                    asChild
+                  >
+                    <Link href="/register">
+                        Account aanmaken
+                    </Link>
+                  </Button>
+                </div>
+              ) : (
+                <Button 
+                  size="lg" 
+                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-2xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all" 
+                  asChild
+                >
+                  <Link href="/dashboard">
+                      Ga naar Dashboard
+                  </Link>
+                </Button>
+              )}
               
               <DownloadButtons />
             </div>

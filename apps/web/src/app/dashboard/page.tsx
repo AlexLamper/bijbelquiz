@@ -31,17 +31,19 @@ function calculateStreak(dates: Date[]): number {
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
-  if (!session?.user) redirect("/api/auth/signin?callbackUrl=/dashboard");
+  // Allow non-logged users to access dashboard
+  const isGuest = !session?.user;
 
   await connectDB();
-  const userId = session.user.id;
-  const isPremium = !!session.user.isPremium;
+  const userId = session?.user?.id;
+  const isPremium = !!session?.user?.isPremium;
 
-  const user = await User.findById(userId).select('xp streak').lean();
+  const user = userId ? await User.findById(userId).select('xp streak').lean() : null;
   const xp = user?.xp || 0;
 
-  // Fetch quizzes
+  // Fetch quizzes - show all quizzes for both guests and logged users
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+
   const quizzesRaw = await Quiz.find(statusFilter)
     .populate('categoryId', 'title')
     .sort({ isPremium: 1, sortOrder: 1 })
@@ -49,7 +51,7 @@ export default async function DashboardPage() {
     .lean();
   const quizzes = JSON.parse(JSON.stringify(quizzesRaw));
 
-  // Fetch user progress
+  // Fetch user progress only if logged in
   interface PopulatedProgress {
     _id: string;
     quizId?: { _id: string; title: string; slug?: string; categoryId?: { title: string } };
@@ -58,14 +60,14 @@ export default async function DashboardPage() {
     completedAt: Date;
   }
 
-  const progressDocs = await UserProgress.find({ userId })
+  const progressDocs = userId ? await UserProgress.find({ userId })
     .sort({ completedAt: -1 })
     .populate({
       path: 'quizId',
       select: 'title slug categoryId',
       populate: { path: 'categoryId', select: 'title' },
     })
-    .lean() as unknown as PopulatedProgress[];
+    .lean() as unknown as PopulatedProgress[] : [];
 
   const levelInfo = getLevelInfo(xp);
 
@@ -82,7 +84,7 @@ export default async function DashboardPage() {
       levelTitle={levelInfo.title}
       levelProgress={levelInfo.progressPercentage}
       totalQuizzesDone={user?.quizzesPlayed || 0}
-      userName={session.user.name?.split(' ')[0] || 'Bijbelstudent'}
+      userName={session?.user?.name?.split(' ')[0] || 'Gast'}
       isPremium={isPremium}
     />
   );

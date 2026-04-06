@@ -197,7 +197,7 @@ function RegisterContent() {
       <div className="hidden lg:block w-1/2 relative">
         {/* Background Image - Full coverage */}
         <Image
-          src="/images/quizzes/img2.png"
+          src="/images/quizzes/img5.png"
           alt="BijbelQuiz"
           fill
           className="object-cover"

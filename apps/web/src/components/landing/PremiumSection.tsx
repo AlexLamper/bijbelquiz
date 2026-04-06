@@ -43,14 +43,14 @@ export function PremiumSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-4 py-2">
-              <Crown className="h-5 w-5 text-primary dark:text-[#5b7dd9]" />
-              <span className="text-sm font-medium text-primary dark:text-[#5b7dd9]">Premium</span>
+              <Crown className="h-5 w-5 text-white" />
+              <span className="text-sm font-medium text-white">Premium</span>
             </div>
             
             <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
               <span className="text-balance">Ontgrendel de volledige</span>
               <br />
-              <span className="text-balance text-primary dark:text-[#5b7dd9]">BijbelQuiz ervaring.</span>
+              <span className="text-balance text-white">BijbelQuiz ervaring.</span>
             </h2>
             
             <p className="mt-6 max-w-lg leading-relaxed text-white/70">

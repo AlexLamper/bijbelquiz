@@ -49,11 +49,18 @@ export default function Navbar() {
 
         <div className="flex items-center gap-6">
            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700 dark:text-gray-300">
-              <Link href="/" className={linkClasses('/')}>Home</Link>
-              <Link href="/quizzes" className={linkClasses('/quizzes')}>Alle Quizzen</Link>
+              {session && (
+                <>
+                  <Link href="/dashboard" className={linkClasses('/dashboard')}>Dashboard</Link>
+                  <Link href="/quizzes" className={linkClasses('/quizzes')}>Alle Quizzen</Link>
+                </>
+              )}
+              {!session && (
+                <Link href="/dashboard" className={linkClasses('/dashboard')}>Quizzen</Link>
+              )}
               <Link href="/leaderboard" className={linkClasses('/leaderboard')}>Ranglijst</Link>
               {session?.user?.role === 'admin' && (
-                <Link href="/admin/quizzes" className={`font-bold text-[#192942] dark:text-[#5b7dd9] hover:opacity-80 transition-colors ${isActive('/admin') ? 'underline underline-offset-4' : ''}`}>Admin</Link>
+                <Link href="/admin" className={`font-bold text-[#192942] dark:text-[#5b7dd9] hover:opacity-80 transition-colors ${isActive('/admin') ? 'underline underline-offset-4' : ''}`}>Admin</Link>
               )}
            </nav>
 
@@ -77,11 +84,10 @@ export default function Navbar() {
                 )}
 
                 <div className="flex items-center gap-3 pl-3 border-l border-[#d6e2fa]/80 dark:border-border/40">
-                  <Link href="/profile" className="hidden sm:flex items-center gap-2 rounded-full pl-2 pr-4 py-1.5 bg-linear-to-r from-slate-50 to-white hover:from-white hover:to-slate-50 transition-all border border-slate-200/80 shadow-sm hover:shadow-md">
-                    <div className="bg-[#547ee9] text-white rounded-full p-1.5 shadow-inner ring-2 ring-white">
-                      <User className="h-3 w-3" />
+                  <Link href="/profile" className="hidden sm:flex items-center gap-2 hover:opacity-80 transition-opacity">
+                    <div className="bg-[#547ee9] text-white rounded-full p-2 shadow-sm ring-2 ring-white dark:ring-background">
+                      <User className="h-4 w-4" />
                     </div>
-                    <span className="text-xs font-bold tracking-wide text-[#1a2942] truncate max-w-30">{session.user.name || 'Gebruiker'}</span>
                   </Link>
                   
                   <Button
@@ -127,17 +133,26 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="absolute left-3 right-3 top-[4.6rem] z-99 overflow-y-auto rounded-[28px] border border-[#d6e2fa]/80 bg-[#f7faff]/92 px-4 py-6 shadow-[0_22px_60px_rgba(84,126,233,0.16)] backdrop-blur-xl animate-in slide-in-from-top-2 md:hidden">
             <div className="flex flex-col space-y-2">
-                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
-                    Home
-                </Link>
-                <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/quizzes') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
-                    Alle Quizzen
-                </Link>
+                {session && (
+                  <>
+                    <Link href="/dashboard" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/dashboard') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
+                        Dashboard
+                    </Link>
+                    <Link href="/quizzes" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/quizzes') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
+                        Alle Quizzen
+                    </Link>
+                  </>
+                )}
+                {!session && (
+                  <Link href="/dashboard" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/dashboard') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
+                      Quizzen
+                  </Link>
+                )}
                 <Link href="/leaderboard" onClick={() => setIsMobileMenuOpen(false)} className={`group flex items-center px-2 py-2 font-medium text-lg text-slate-700 hover:text-primary transition-colors ${isActive('/leaderboard') ? 'text-primary dark:text-[#5b7dd9] font-semibold' : ''}`}>
                     Ranglijst
                 </Link>
                 {session?.user?.role === 'admin' && (
-                  <Link href="/admin/quizzes" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between rounded-xl border border-[#192942]/15 bg-[#192942]/5 px-4 py-3 font-bold text-[#192942] shadow-sm transition-all hover:bg-[#192942]/10 active:scale-[0.99]">
+                  <Link href="/admin" onClick={() => setIsMobileMenuOpen(false)} className="group flex items-center justify-between rounded-xl border border-[#192942]/15 bg-[#192942]/5 px-4 py-3 font-bold text-[#192942] shadow-sm transition-all hover:bg-[#192942]/10 active:scale-[0.99]">
                          Admin Dashboard
                      <ChevronRight className="h-4 w-4 text-[#192942] opacity-60" />
                     </Link>

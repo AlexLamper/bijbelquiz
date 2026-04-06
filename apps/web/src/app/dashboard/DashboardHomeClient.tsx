@@ -373,7 +373,7 @@ export default function DashboardHomeClient({
                     <Link href="/premium">Word nu Premium</Link>
                   </Button>
                   <div className="flex items-baseline gap-1 text-white">
-                    <span className="text-2xl font-semibold">€4,99</span>
+                    <span className="text-2xl font-semibold">€5,99</span>
                     <span className="text-white/60">/maand</span>
                   </div>
                 </div>

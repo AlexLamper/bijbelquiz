@@ -180,7 +180,7 @@ function LoginContent() {
       <div className="hidden lg:block w-1/2 relative">
         {/* Background Image - Full coverage */}
         <Image
-          src="/images/quizzes/img1.png"
+          src="/images/quizzes/img4.png"
           alt="BijbelQuiz"
           fill
           className="object-cover"

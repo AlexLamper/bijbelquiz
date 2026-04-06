@@ -188,8 +188,8 @@ export default async function ProfilePage() {
                   {user.name || 'Naamloos'}
                 </h1>
                 {user.isPremium && (
-                  <span className="inline-flex items-center gap-1 rounded-md bg-amber-400/20 px-2.5 py-1 text-xs font-bold text-amber-400 uppercase tracking-wider">
-                    <Star className="h-3 w-3 fill-amber-400" /> PREMIUM
+                  <span className="inline-flex items-center gap-1 rounded-md bg-[#5b7dd9]/20 px-2.5 py-1 text-xs font-bold text-[#5b7dd9] uppercase tracking-wider">
+                    <Star className="h-3 w-3 fill-[#5b7dd9]" /> PREMIUM
                   </span>
                 )}
               </div>
@@ -339,8 +339,8 @@ export default async function ProfilePage() {
           {/* Badges Card */}
           <div className="bg-white dark:bg-card rounded-2xl p-6 shadow-lg lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/20 flex items-center justify-center">
-                <Star className="w-5 h-5 text-amber-500" />
+              <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 dark:bg-[#5b7dd9]/20 flex items-center justify-center">
+                <Star className="w-5 h-5 text-[#5b7dd9]" />
               </div>
               <div>
                 <h2 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Badges</h2>
@@ -356,19 +356,19 @@ export default async function ProfilePage() {
                     key={badge.id} 
                     className={`flex items-center gap-3 p-3 rounded-xl border transition-all ${
                       earned 
-                        ? 'bg-amber-50/50 dark:bg-amber-900/10 border-amber-100 dark:border-amber-900/30' 
+                        ? 'bg-[#5b7dd9]/5 dark:bg-[#5b7dd9]/10 border-[#5b7dd9]/20 dark:border-[#5b7dd9]/30' 
                         : 'bg-gray-50/50 dark:bg-card/50 border-gray-100 dark:border-border opacity-60 grayscale-[0.8]'
                     }`}
                   >
                     <div className="text-2xl">{badge.icon}</div>
                     <div>
-                      <h4 className={`text-sm font-semibold ${earned ? 'text-amber-900 dark:text-amber-400' : 'text-gray-600 dark:text-muted-foreground'}`}>
+                      <h4 className={`text-sm font-semibold ${earned ? 'text-[#5b7dd9] dark:text-[#5b7dd9]' : 'text-gray-600 dark:text-muted-foreground'}`}>
                         {badge.name}
                       </h4>
                       <p className="text-xs text-muted-foreground mt-0.5">{badge.description}</p>
                     </div>
                     {earned && (
-                      <CheckCircle2 className="w-4 h-4 text-amber-500 ml-auto opacity-70" />
+                      <CheckCircle2 className="w-4 h-4 text-[#5b7dd9] ml-auto opacity-70" />
                     )}
                   </div>
                 );

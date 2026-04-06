@@ -5,9 +5,10 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useRouter } from 'next/navigation';
-import { ArrowRight, BookOpen, CheckCircle, XCircle, Award, RotateCcw, Lock, ArrowLeft, Maximize, Settings } from 'lucide-react';
+import { ArrowRight, BookOpen, CheckCircle2, X, Award, RotateCcw, Lock, ArrowLeft, Maximize, Settings } from 'lucide-react';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Answer {
   text: string;
@@ -48,6 +49,12 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const [leadName, setLeadName] = useState('');
   const [leadEmail, setLeadEmail] = useState('');
 
+  const playClickSound = () => {
+    const audio = new Audio('/sounds/click.wav');
+    audio.volume = 0.3;
+    audio.play().catch(err => console.log('Audio play failed:', err));
+  };
+
   const currentQuestion = quiz.questions[currentIndex];
 
   const toggleShowExplanation = () => setShowExplanation(prev => !prev);
@@ -65,6 +72,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   };
 
   const handeNext = async () => {
+    playClickSound();
     if (currentIndex < quiz.questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
@@ -130,44 +138,17 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 </div>
                 
                 <CardContent className="p-8 md:p-12 space-y-8 bg-slate-50/50">
-                    <div className="space-y-6">
-                        <div className="text-center max-w-lg mx-auto">
-                            <h4 className="text-xl font-bold text-slate-800 mb-3">Ontgrendel alle mogelijkheden</h4>
-                            <p className="text-base text-slate-600 mb-6 leading-relaxed">
-                                Krijg onbeperkt toegang tot alle quizzen, statistieken en diepgaande analyses met een <strong>eenmalige Premium upgrade</strong>.
-                            </p>
-                        </div>
-
-                        <div className="space-y-5 max-w-sm mx-auto bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                            <p className="text-sm font-semibold text-slate-400 text-center uppercase tracking-widest mb-4">
-                                Blijf op de hoogte (Optioneel)
-                            </p>
-                            <div className="space-y-2">
-                                <label htmlFor="name" className="text-xs font-bold text-slate-700 uppercase tracking-widest pl-1">Naam</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    placeholder="Jouw naam"
-                                    value={leadName}
-                                    onChange={(e) => setLeadName(e.target.value)}
-                                    className="flex h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#152c31] focus-visible:bg-white focus-visible:border-transparent"
-                                />
-                            </div>
-                            <div className="space-y-2">
-                                <label htmlFor="email" className="text-xs font-bold text-slate-700 uppercase tracking-widest pl-1">E-mailadres</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    placeholder="jouw@email.nl"
-                                    value={leadEmail}
-                                    onChange={(e) => setLeadEmail(e.target.value)}
-                                    className="flex h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#152c31] focus-visible:bg-white focus-visible:border-transparent"
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="max-w-sm mx-auto pt-4">
+                    <div className="max-w-sm mx-auto pt-4 space-y-3">
+                        <Button 
+                            asChild
+                            size="lg"
+                            variant="outline"
+                            className="w-full font-bold text-lg h-14 rounded-xl border-2 border-[#152c31] text-[#152c31] hover:bg-[#152c31] hover:text-white transition-colors"
+                        >
+                            <Link href="/login">
+                                Inloggen om resultaten te zien
+                            </Link>
+                        </Button>
                         <Button 
                             size="lg" 
                             onClick={async () => {
@@ -196,76 +177,81 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     }
 
     return (
-      <Card className="w-full max-w-2xl mx-auto mt-10 md:mt-16 border shadow-sm bg-card overflow-hidden rounded-3xl animate-in fade-in zoom-in duration-500">
-        <CardHeader className="text-center pt-8 pb-6 relative">
-          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 shadow-sm border border-emerald-100 dark:border-emerald-800/50">
-            <Award className="h-8 w-8" />
-          </div>
-          <CardTitle className="text-3xl md:text-4xl font-serif font-bold text-foreground tracking-tight">Quiz Afgerond!</CardTitle>
-        </CardHeader>
-        <CardContent className="text-center space-y-6 px-6 md:px-10 pb-10">
-           {/* Score Section */}
-          <div className="py-8 bg-muted rounded-3xl border flex flex-col items-center justify-center max-w-[400px] mx-auto">
-            <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-bold mb-3">JOUW RESULTAAT</p>
-            <div className="flex items-baseline gap-2 mb-4">
-                <p className="text-6xl md:text-7xl font-black text-foreground tracking-tighter">
-                   {score}
+      <div className="w-full max-w-6xl mx-auto mt-10 md:mt-16 animate-in fade-in zoom-in duration-500 px-4">
+        {/* Header Section */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground tracking-tight mb-4">Quiz Afgerond!</h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-foreground mx-auto rounded-full"></div>
+        </div>
+
+        {/* Score Section - Full Width */}
+        <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-2xl p-12 md:p-16 mb-8 border border-slate-200 dark:border-slate-700 shadow-lg">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-4xl mx-auto">
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-xs text-muted-foreground uppercase tracking-widest font-bold mb-4">JOUW RESULTAAT</p>
+              <div className="flex items-baseline gap-3 justify-center md:justify-start mb-6">
+                <p className="text-7xl md:text-8xl font-black text-foreground tracking-tighter">
+                  {score}
                 </p>
-                <span className="text-2xl md:text-3xl text-muted-foreground font-bold">/ {quiz.questions.length}</span>
+                <span className="text-3xl md:text-4xl text-muted-foreground font-bold">/ {quiz.questions.length}</span>
+              </div>
+              <p className="text-xl font-medium text-muted-foreground italic font-serif leading-relaxed max-w-md">
+                {score === quiz.questions.length ? "Uitmuntend! Een ware schriftgeleerde." : 
+                 score > quiz.questions.length / 2 ? "Goed gedaan! Blijf de schriften onderzoeken." : "Blijf oefenen, de volhouder wint."}
+              </p>
             </div>
-             {isLoggedIn && (
-                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 rounded-lg text-xs font-bold shadow-sm border border-emerald-200 dark:border-emerald-800/50">
-                    <Award className="h-3.5 w-3.5" /> + {earnedXp ?? Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length))} XP verdiend
+            
+            <div className="flex flex-col items-center gap-4">
+              {isLoggedIn && (
+                <div className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 rounded-xl text-sm font-bold shadow-md border border-emerald-200 dark:border-emerald-800/50">
+                  <Award className="h-5 w-5" /> + {earnedXp ?? Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length))} XP verdiend
                 </div>
-            )}
+              )}
+            </div>
           </div>
-          
-          <p className="text-lg font-medium text-muted-foreground italic font-serif px-4 max-w-md mx-auto leading-relaxed">
-            {score === quiz.questions.length ? "Uitmuntend! Een ware schriftgeleerde." : 
-             score > quiz.questions.length / 2 ? "Goed gedaan! Blijf de schriften onderzoeken." : "Blijf oefenen, de volhouder wint."}
-          </p>
+        </div>
 
-          {/* Premium/Auth Teaser Section */}
-          <div className="mt-12 space-y-4 max-w-md mx-auto">
-             {!isLoggedIn ? (
-                 <div className="bg-[#152c31]/5 rounded-lg p-4 border border-[#152c31]/20">
-                     <p className="text-sm text-[#152c31] font-medium mb-2">Log in om uw score op te slaan en XP te verzamelen!</p>
-                     <Button size="sm" asChild className="w-full bg-[#152c31] hover:bg-[#152c31]/90">
-                         <Link href="/login">Inloggen</Link>
-                     </Button>
-                 </div>
-             ) : !isPremium ? (
-                 <div className="relative group">
-                    <div className="bg-slate-100/50 rounded-lg p-4 border border-slate-200 blur-[1px] select-none">
-                         <h4 className="font-bold text-slate-400 mb-2">Gedetailleerde Foutenanalyse</h4>
-                         <div className="h-2 w-full bg-slate-200 rounded mb-2"></div>
-                         <div className="h-2 w-2/3 bg-slate-200 rounded"></div>
-                    </div>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60 backdrop-blur-[1px] rounded-lg">
-                        <Lock className="h-6 w-6 text-slate-400 mb-2" />
-                        <p className="text-xs font-semibold text-slate-600 mb-2">Premium Analyse</p>
-                        <Button size="sm" variant="secondary" asChild className="h-8">
-                             <Link href="/premium">Ontgrendel</Link>
-                        </Button>
-                    </div>
-                 </div>
-             ) : (
-                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-100">
-                    <p className="text-sm text-emerald-800 font-medium">Volledige analyse opgeslagen in uw dashboard.</p>
-                </div>
-             )}
-          </div>
+        {/* Auth/Premium Section */}
+        <div className="mb-8 max-w-2xl mx-auto">
+          {!isLoggedIn ? (
+            <div className="bg-[#152c31]/5 rounded-xl p-6 border border-[#152c31]/20">
+              <p className="text-base text-[#152c31] font-medium mb-4 text-center">Log in om uw score op te slaan en XP te verzamelen!</p>
+              <Button size="lg" asChild className="w-full h-14 text-lg font-bold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all">
+                <Link href="/login">Inloggen</Link>
+              </Button>
+            </div>
+          ) : !isPremium ? (
+            <div className="relative group">
+              <div className="bg-slate-100/50 rounded-xl p-6 border border-slate-200 blur-[1px] select-none">
+                <h4 className="font-bold text-slate-400 mb-2 text-lg">Gedetailleerde Foutenanalyse</h4>
+                <div className="h-3 w-full bg-slate-200 rounded mb-3"></div>
+                <div className="h-3 w-2/3 bg-slate-200 rounded"></div>
+              </div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60 backdrop-blur-[1px] rounded-xl">
+                <Lock className="h-8 w-8 text-slate-400 mb-3" />
+                <p className="text-sm font-semibold text-slate-600 mb-3">Premium Analyse</p>
+                <Button size="lg" variant="secondary" asChild className="h-12 px-8">
+                  <Link href="/premium">Ontgrendel</Link>
+                </Button>
+              </div>
+            </div>
+          ) : (
+            <div className="bg-emerald-50 rounded-xl p-6 border border-emerald-100">
+              <p className="text-base text-emerald-800 font-medium text-center">Volledige analyse opgeslagen in uw dashboard.</p>
+            </div>
+          )}
+        </div>
 
-        </CardContent>
-        <CardFooter className="flex flex-col sm:flex-row items-center justify-center gap-4 pb-12 pt-4">
-          <Button onClick={() => window.location.reload()} variant="outline" className="w-full sm:w-auto h-14 px-8 text-lg font-bold border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-slate-900 rounded-xl transition-colors">
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pb-12 max-w-2xl mx-auto">
+          <Button onClick={() => { playClickSound(); window.location.reload(); }} variant="outline" className="w-full sm:w-auto h-14 px-10 text-lg font-bold border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-400 rounded-xl transition-colors">
             <RotateCcw className="mr-2 h-5 w-5" /> Opnieuw Spelen
           </Button>
-          <Button onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')} className="w-full sm:w-auto h-14 px-10 text-lg font-bold bg-gradient-to-r from-[#152c31] to-[#1e3c42] hover:opacity-90 shadow-lg border-0 rounded-xl" disabled={isSaving}>
-             {isSaving ? "Opslaan..." : isLoggedIn ? "Naar Dashboard" : "Terug naar Home"}
+          <Button onClick={() => { playClickSound(); router.push(isLoggedIn ? '/dashboard' : '/'); }} className="w-full sm:w-auto h-14 px-12 text-lg font-bold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all border-0" disabled={isSaving}>
+            {isSaving ? "Opslaan..." : isLoggedIn ? "Naar Dashboard" : "Terug naar Home"}
           </Button>
-        </CardFooter>
-      </Card>
+        </div>
+      </div>
     );
   }
 
@@ -381,9 +367,27 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
             {/* Bottom Brand */}
             <div className="hidden md:flex justify-between items-end mt-8">
-                 <h2 className="text-3xl font-black text-[#547ee9] tracking-tighter">
-                    Bijbel<span className="text-[#1a2942]">quiz</span>
-                 </h2>
+                 <Link href="/" className="flex items-center gap-2 group">
+                   <div className="relative h-8 w-8 transition-transform group-hover:scale-110">
+                      <Image 
+                         src="/icon/Logo%20-%20dark.svg" 
+                         alt="BijbelQuiz Logo" 
+                         fill 
+                         className="object-contain dark:hidden"
+                         priority 
+                      />
+                      <Image 
+                         src="/icon/Logo%20-%20light.svg" 
+                         alt="BijbelQuiz Logo" 
+                         fill 
+                         className="object-contain hidden dark:block"
+                         priority 
+                      />
+                   </div>
+                   <span className="text-xl font-bold font-serif tracking-tight text-foreground">
+                     Bijbel<span className="text-[#192942] dark:text-white italic">Quiz</span>
+                   </span>
+                 </Link>
                  <div className="text-right">
                     <span className="text-xs font-bold text-[#648be3] uppercase tracking-widest block mb-1">Score</span>
                     <Badge className="bg-[#1a2942] text-amber-400 hover:bg-[#1a2942] text-sm md:text-base h-8 px-3 rounded-full font-black border-2 border-amber-400/20">{score}</Badge>
@@ -430,10 +434,10 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                                     hasAnswered && index === selectedAnswer ? "bg-red-500 border-red-500" : 
                                     "border-[#cbd5e1] group-hover:border-[#547ee9]"
                                 }`}>
-                                    {hasAnswered && answer.isCorrect && <CheckCircle className="h-3 w-3 md:h-3.5 md:w-3.5 text-white" strokeWidth={3.5} />}
-                                    {hasAnswered && !answer.isCorrect && index === selectedAnswer && <XCircle className="h-3 w-3 md:h-3.5 md:w-3.5 text-white" strokeWidth={3.5} />}
+                                    {hasAnswered && answer.isCorrect && <CheckCircle2 className="h-3 w-3 md:h-3.5 md:w-3.5 text-white" strokeWidth={3.5} />}
+                                    {hasAnswered && !answer.isCorrect && index === selectedAnswer && <X className="h-3 w-3 md:h-3.5 md:w-3.5 text-white" strokeWidth={3.5} />}
                                 </span>
-                                <span className="flex-1 leading-snug">{answer.text}</span>
+                                <span className="flex-1 leading-snug break-words">{answer.text}</span>
                             </Button>
                         );
                     })}

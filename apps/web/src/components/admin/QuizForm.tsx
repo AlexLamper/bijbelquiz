@@ -8,10 +8,10 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Plus, Trash2, Save, ArrowLeft } from "lucide-react";
+import { Plus, Trash2, Save, ArrowLeft, Upload, FileJson } from "lucide-react";
 import { toast } from "sonner";
 import Link from "next/link";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -52,6 +52,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState<any[]>([]);
+  const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
     // Fetch categories
@@ -62,18 +63,54 @@ export default function QuizForm({ initialData }: QuizFormProps) {
   }, []);
 
   const form = useForm<QuizFormValues>({
-    resolver: zodResolver(quizSchema) as any,
-    defaultValues: {
-      title: initialData?.title || "",
-      description: initialData?.description || "",
-      slug: initialData?.slug || "",
-      imageUrl: initialData?.imageUrl || "",
-      categoryId: initialData?.category?._id || initialData?.categoryId || "",
-      rewardXp: initialData?.rewardXp ?? 100,
-      difficulty: initialData?.difficulty || "easy",
-      isPremium: initialData?.isPremium || false,
-      status: initialData?.status || "draft",
-      questions: initialData?.questions?.length ? initialData.questions : [{ text: "", explanation: "", bibleReference: "", answers: [{ text: "", isCorrect: true }, { text: "", isCorrect: false }, { text: "", isCorrect: false }, { text: "", isCorrect: false }] }],
+    resolver: zodResolver(quizSchema),
+    defaultValues: initialData ? {
+      title: initialData.title || "",
+      description: initialData.description || "",
+      slug: initialData.slug || "",
+      imageUrl: initialData.imageUrl || "",
+      categoryId: initialData.categoryId?._id || initialData.categoryId || "",
+      rewardXp: initialData.rewardXp ?? 100,
+      difficulty: initialData.difficulty || "easy",
+      isPremium: initialData.isPremium || false,
+      status: initialData.status || "draft",
+      questions: initialData.questions?.map((q: any) => ({
+        text: q.text || "",
+        explanation: q.explanation || "",
+        bibleReference: q.bibleReference || "",
+        answers: q.answers?.map((a: any) => ({
+          text: a.text || "",
+          isCorrect: a.isCorrect || false,
+        })) || [
+          { text: "", isCorrect: true },
+          { text: "", isCorrect: false },
+          { text: "", isCorrect: false },
+          { text: "", isCorrect: false }
+        ],
+      })) || [],
+    } : {
+      title: "",
+      description: "",
+      slug: "",
+      imageUrl: "",
+      categoryId: "",
+      rewardXp: 100,
+      difficulty: "easy",
+      isPremium: false,
+      status: "draft",
+      questions: [
+        {
+          text: "",
+          explanation: "",
+          bibleReference: "",
+          answers: [
+            { text: "", isCorrect: true },
+            { text: "", isCorrect: false },
+            { text: "", isCorrect: false },
+            { text: "", isCorrect: false }
+          ],
+        },
+      ],
     },
   });
 
@@ -86,6 +123,44 @@ export default function QuizForm({ initialData }: QuizFormProps) {
     const title = form.getValues("title");
     if (title && !form.getValues("slug")) {
       form.setValue("slug", title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, ''));
+    }
+  };
+
+  const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    // Check if it's a JSON file
+    if (file.type !== "application/json" && !file.name.endsWith('.json')) {
+      toast.error("Alleen JSON-bestanden zijn toegestaan");
+      return;
+    }
+
+    setUploading(true);
+    try {
+      const text = await file.text();
+      const jsonData = JSON.parse(text);
+
+      // Validate the JSON structure against the schema
+      const validatedData = quizSchema.parse(jsonData);
+
+      // Populate form with validated data
+      form.reset(validatedData);
+      
+      toast.success("Quiz succesvol geladen uit JSON!");
+    } catch (error: any) {
+      console.error("JSON upload error:", error);
+      if (error instanceof z.ZodError) {
+        toast.error(`Validatiefout: ${error.errors[0].message}`);
+      } else if (error instanceof SyntaxError) {
+        toast.error("Ongeldig JSON-formaat");
+      } else {
+        toast.error("Fout bij het laden van het bestand");
+      }
+    } finally {
+      setUploading(false);
+      // Reset file input
+      event.target.value = "";
     }
   };
 
@@ -117,7 +192,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit as any)} className="space-y-8 pb-20">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 pb-20">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Button variant="outline" size="icon" asChild>
@@ -131,9 +206,78 @@ export default function QuizForm({ initialData }: QuizFormProps) {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Main Info */}
-          <div className="md:col-span-2 space-y-6">
+          <div className="lg:col-span-3 space-y-6">
+            {/* JSON Upload Section */}
+            {!initialData && (
+              <Card className="border-dashed border-2 border-primary/20 bg-primary/5">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <FileJson className="h-5 w-5" />
+                    Importeer Quiz vanuit JSON
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-sm text-muted-foreground">
+                    Upload een JSON-bestand om automatisch alle quiz-gegevens in te vullen. 
+                    Het bestand moet voldoen aan het quiz-schema.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <label
+                      htmlFor="json-upload"
+                      className="cursor-pointer"
+                    >
+                      <input
+                        id="json-upload"
+                        type="file"
+                        accept=".json,application/json"
+                        onChange={handleFileUpload}
+                        disabled={uploading}
+                        className="hidden"
+                      />
+                      <Button
+                        type="button"
+                        variant="outline"
+                        disabled={uploading}
+                        onClick={() => document.getElementById('json-upload')?.click()}
+                        className="gap-2"
+                      >
+                        <Upload className="h-4 w-4" />
+                        {uploading ? "Uploaden..." : "Kies JSON-bestand"}
+                      </Button>
+                    </label>
+                  </div>
+                  <div className="text-xs text-muted-foreground space-y-1">
+                    <p className="font-medium">Voorbeeld JSON-structuur:</p>
+                    <pre className="bg-muted p-2 rounded text-xs overflow-x-auto">
+{`{
+  "title": "Quiz titel",
+  "description": "Quiz beschrijving",
+  "slug": "quiz-slug",
+  "categoryId": "category-id-hier",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Vraag tekst?",
+      "explanation": "Uitleg",
+      "bibleReference": "Genesis 1:1",
+      "answers": [
+        { "text": "Antwoord 1", "isCorrect": true },
+        { "text": "Antwoord 2", "isCorrect": false }
+      ]
+    }
+  ]
+}`}
+                    </pre>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
             <Card>
               <CardHeader>
                 <CardTitle>Quiz Details</CardTitle>
@@ -142,7 +286,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="title"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Titel</FormLabel>
                       <FormControl>
@@ -156,7 +300,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="slug"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Slug</FormLabel>
                       <FormControl>
@@ -170,7 +314,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="description"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Beschrijving</FormLabel>
                       <FormControl>
@@ -184,7 +328,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="imageUrl"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Afbeelding URL (optioneel)</FormLabel>
                       <FormControl>
@@ -229,7 +373,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                     <FormField
                       control={form.control}
                       name={`questions.${qIndex}.text`}
-                      render={({ field }: { field: any }) => (
+                      render={({ field }) => (
                         <FormItem>
                           <FormLabel>De Vraag</FormLabel>
                           <FormControl>
@@ -244,7 +388,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                         <FormField
                         control={form.control}
                         name={`questions.${qIndex}.explanation`}
-                        render={({ field }: { field: any }) => (
+                        render={({ field }) => (
                             <FormItem>
                             <FormLabel>Verklaring (verschijnt na antwoord)</FormLabel>
                             <FormControl>
@@ -257,7 +401,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                         <FormField
                         control={form.control}
                         name={`questions.${qIndex}.bibleReference`}
-                        render={({ field }: { field: any }) => (
+                        render={({ field }) => (
                             <FormItem>
                             <FormLabel>Bijbeltekst</FormLabel>
                             <FormControl>
@@ -308,10 +452,10 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="status"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Status</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Kies een status" />
@@ -332,10 +476,10 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="categoryId"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Categorie</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Kies een categorie" />
@@ -362,10 +506,10 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="difficulty"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>Moeilijkheidsgraad</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Niveau" />
@@ -385,7 +529,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="rewardXp"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem>
                       <FormLabel>XP Beloning</FormLabel>
                       <FormControl>
@@ -399,7 +543,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
                 <FormField
                   control={form.control}
                   name="isPremium"
-                  render={({ field }: { field: any }) => (
+                  render={({ field }) => (
                     <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4">
                       <div className="space-y-0.5">
                         <FormLabel className="text-base">Premium Quiz</FormLabel>
@@ -439,7 +583,7 @@ function AnswersFieldArray({ control, qIndex }: { control: any, qIndex: number }
                     <FormField
                         control={control}
                         name={`questions.${qIndex}.answers.${aIndex}.isCorrect`}
-                        render={({ field }: { field: any }) => (
+                        render={({ field }) => (
                             <FormItem className="flex flex-row items-center space-x-3 space-y-0">
                                 <FormControl>
                                     <Checkbox
@@ -454,7 +598,7 @@ function AnswersFieldArray({ control, qIndex }: { control: any, qIndex: number }
                     <FormField
                         control={control}
                         name={`questions.${qIndex}.answers.${aIndex}.text`}
-                        render={({ field }: { field: any }) => (
+                        render={({ field }) => (
                             <FormItem className="flex-1">
                                 <FormControl>
                                     <Input placeholder={`Antwoord ${aIndex + 1}`} {...field} />

@@ -55,7 +55,7 @@ async function getLeaderboardData(timeFilter: string, categorySlug: string): Pro
   }
 
   // Base match for UserProgress
-  const matchStage: any = {};
+  const matchStage: Record<string, unknown> = {};
   if (timeFilter !== 'all') {
     matchStage.createdAt = { $gte: startDate };
   }
@@ -175,7 +175,7 @@ export default async function LeaderboardPage({
 
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-[1400px] 2xl:max-w-[1700px] py-8 md:py-12 pb-8">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 max-w-350 2xl:max-w-425 py-8 md:py-12 pb-8">
         <Breadcrumb
           items={[
             { label: 'Ranglijst' },
