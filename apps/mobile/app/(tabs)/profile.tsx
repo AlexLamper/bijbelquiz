@@ -222,13 +222,7 @@ export default function ProfileScreen() {
               </View>
               <Feather name="chevron-right" size={20} color="#6B7280" />
            </TouchableOpacity>
-           <TouchableOpacity className="flex-row items-center justify-between p-5 border-b border-[#F3F4F6] active:bg-[#F8FAFC]">
-              <View className="flex-row items-center gap-4">
-                 <Feather name="bell" size={20} color="#121A2A" />
-                 <Text className="text-[#121A2A] font-medium text-[16px]">Notificaties</Text>
-              </View>
-              <Feather name="chevron-right" size={20} color="#6B7280" />
-           </TouchableOpacity>
+           
            {/* RevenueCat Customer Center */}
            <TouchableOpacity 
               className="flex-row items-center justify-between p-5 border-b border-[#F3F4F6] active:bg-[#F8FAFC]"
@@ -263,3 +257,4 @@ export default function ProfileScreen() {
     </SafeAreaView>
   );
 }
+
