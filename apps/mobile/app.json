@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "mobile",
+    "name": "BijbelQuiz",
     "slug": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo-dark.png",
     "scheme": "bijbelquiz",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/images/logo-dark.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -23,7 +23,7 @@
     "android": {
       "package": "com.bijbelquiz.app",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo-dark.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
