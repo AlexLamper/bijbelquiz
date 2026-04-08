@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ChevronLeft, Mic, Crown, Wheat, Sparkles, Mountain, Users } from 'lucide-react-native';
+import { ChevronLeft, Scroll, Crown, Leaf, Cross, Mountain, Star } from 'lucide-react-native';
 
 const PRIMARY_NAVY = '#121A2A';
 const GOLD_ACCENT = '#C5A059';
@@ -11,12 +11,12 @@ export default function QuizTopicsInterestScreen() {
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
 
   const topics = [
-    { id: 'prophets', label: 'Profeten', Icon: Mic, iconBg: '#EFF6FF', iconColor: PRIMARY_NAVY },
+    { id: 'prophets', label: 'Profeten', Icon: Scroll, iconBg: '#EFF6FF', iconColor: PRIMARY_NAVY },
     { id: 'kings', label: 'Koningen', Icon: Crown, iconBg: '#FEF3C7', iconColor: GOLD_ACCENT },
-    { id: 'parables', label: 'Gelijkenissen', Icon: Wheat, iconBg: '#F0FDF4', iconColor: '#15803D' },
-    { id: 'miracles', label: 'Wonderen', Icon: Sparkles, iconBg: '#FAF5FF', iconColor: '#7E22CE' },
+    { id: 'parables', label: 'Gelijkenissen', Icon: Leaf, iconBg: '#F0FDF4', iconColor: '#15803D' },
+    { id: 'miracles', label: 'Wonderen', Icon: Star, iconBg: '#FAF5FF', iconColor: '#7E22CE' },
     { id: 'creation', label: 'Schepping', Icon: Mountain, iconBg: '#ECFEFF', iconColor: '#0E7490' },
-    { id: 'apostles', label: 'Apostelen', Icon: Users, iconBg: '#FEF2F2', iconColor: '#B91C1C' },
+    { id: 'apostles', label: 'Apostelen', Icon: Cross, iconBg: '#FEF2F2', iconColor: '#B91C1C' },
   ];
 
   const toggleTopic = (id: string) => {
@@ -46,7 +46,7 @@ export default function QuizTopicsInterestScreen() {
       {/* Quiz Content */}
       <ScrollView contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 32, paddingTop: 16 }}>
         <Text className="text-2xl font-bold mb-4" style={{ color: PRIMARY_NAVY }}>
-          Laten we uw Bijbelreis begrijpen
+          Wat zijn uw interesses?
         </Text>
         <Text className="text-gray-500 mb-8">
           Kies de thema's die u het meest boeien om uw leertraject aan te passen.
@@ -82,7 +82,7 @@ export default function QuizTopicsInterestScreen() {
       {/* Footer */}
       <View className="px-6 pb-8 pt-4 bg-transparent mt-auto">
         <TouchableOpacity
-          onPress={() => router.push('/onboarding/educational_impact')}
+          onPress={() => router.push('/onboarding/paywall')}
           style={{ backgroundColor: PRIMARY_NAVY }}
           className="w-full py-4 rounded-xl items-center"
         >

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ChevronLeft, Variable, Book, Scroll } from 'lucide-react-native';
+import { ChevronLeft, GraduationCap, BookOpen, Scroll } from 'lucide-react-native';
 
 const PRIMARY_NAVY = '#121A2A';
 const GOLD_ACCENT = '#C5A059';
@@ -15,7 +15,7 @@ export default function QuizKnowledgeLevelScreen() {
       id: 'beginner',
       title: 'Beginner',
       subtitle: 'Ik ken de basis verhalen',
-      Icon: Variable,
+      Icon: GraduationCap,
       iconColor: '#2563EB',
       iconBg: '#EFF6FF',
     },
@@ -23,7 +23,7 @@ export default function QuizKnowledgeLevelScreen() {
       id: 'intermediate',
       title: 'Gevorderd',
       subtitle: 'Ik lees regelmatig uit de Schriften',
-      Icon: Book,
+      Icon: BookOpen,
       iconColor: '#D97706',
       iconBg: '#FEF3C7',
     },
@@ -58,7 +58,7 @@ export default function QuizKnowledgeLevelScreen() {
       {/* Quiz Content */}
       <View className="flex-1 px-8 pt-4">
         <Text className="text-2xl font-bold mb-4" style={{ color: PRIMARY_NAVY }}>
-          Hoe schat u uw kennis van de Statenvertaling in?
+          Hoe schat u uw kennis van de Bijbel (Statenvertaling) in?
         </Text>
 
         <View className="space-y-4 mt-6 gap-y-4">

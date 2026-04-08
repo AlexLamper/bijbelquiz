@@ -22,9 +22,8 @@ export const useGoogleAuth = () => {
     webClientId: WEB_CLIENT_ID,
     iosClientId: IOS_CLIENT_ID,
     androidClientId: ANDROID_CLIENT_ID,
-    redirectUri: makeRedirectUri({
-      scheme: 'bijbelquiz' // Matches the scheme in app.json exactly
-    }),
+    // Provide no custom redirectUri to let `expo-auth-session` 
+    // automatically map it to com.bijbelquiz.app:/oauth2redirect/google on Android
   });
 
   return { request, response, promptAsync };

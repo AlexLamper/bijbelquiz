@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo-dark.png",
-    "scheme": "bijbelquiz",
+    "scheme": ["bijbelquiz", "com.bijbelquiz.app", "com.googleusercontent.apps.1036826851129-kqmervpgfkkjndr4egbrdm1l2gac94to"],
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -39,7 +39,7 @@
       "expo-secure-store"
     ],
     "extra": {
-      "apiBaseUrl": "http://localhost:3000",
+      "apiBaseUrl": "https://www.bijbelquiz.com",
       "router": {},
       "eas": {
         "projectId": "74a0971e-2a2a-4cba-9245-8c836538de76"

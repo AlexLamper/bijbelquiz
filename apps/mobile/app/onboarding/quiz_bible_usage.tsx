@@ -33,7 +33,7 @@ export default function QuizBibleUsageScreen() {
       {/* Quiz Content */}
       <View className="flex-1 px-8 pt-4">
         <Text className="text-2xl font-bold mb-4" style={{ color: PRIMARY_NAVY }}>
-          Hoe vaak leest u in de Heilige Schrift?
+          Hoe vaak leest u in de Bijbel?
         </Text>
         <Text className="text-gray-500 mb-10">
           Dit helpt ons de moeilijkheidsgraad van uw dagelijkse quiz aan te passen.

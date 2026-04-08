@@ -190,6 +190,17 @@ export default function PaywallScreen() {
               Aankopen Herstellen
             </Text>
           </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => router.replace('/login')}
+            className="w-full py-4 rounded-xl items-center border border-white mt-2"
+            style={{ backgroundColor: 'transparent' }}
+            disabled={loading}
+          >
+            <Text className="text-white font-bold text-lg">
+              Doorgaan zonder premium
+            </Text>
+          </TouchableOpacity>
         </View>
         
       </ScrollView>

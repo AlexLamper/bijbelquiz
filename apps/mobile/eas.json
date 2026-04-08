@@ -12,7 +12,15 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://www.bijbelquiz.com",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "1036826851129-29bsvr0f17j6bj4g9hsrhhbotsasp4tu.apps.googleusercontent.com",
+        "EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID": "1036826851129-kqmervpgfkkjndr4egbrdm1l2gac94to.apps.googleusercontent.com",
+        "EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID": "1036826851129-ptdjlk6vc9id1s4pkl7gks9k2bghb57i.apps.googleusercontent.com",
+        "EXPO_PUBLIC_REVENUECAT_API_KEY_IOS": "test_yqeGfhQguPvRYcvOyfCtpDKJrru",
+        "EXPO_PUBLIC_REVENUECAT_API_KEY_ANDROID": "test_yqeGfhQguPvRYcvOyfCtpDKJrru"
+      }
     }
   },
   "submit": {
