@@ -12,6 +12,12 @@ interface User {
   image?: string;
   xp?: number;
   isPremium?: boolean;
+  onboardingCompleted?: boolean;
+  onboarding?: {
+    bibleReadingFrequency?: string;
+    knowledgeLevel?: string;
+    interests?: string[];
+  };
 }
 
 interface AuthContextType {
@@ -21,6 +27,7 @@ interface AuthContextType {
   signIn: (token: string, userData: User) => Promise<void>;
   signOut: () => Promise<void>;
   logout: () => Promise<void>;
+  updateUser: (newData: Partial<User>) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType>({
@@ -30,6 +37,7 @@ const AuthContext = createContext<AuthContextType>({
   signIn: async () => {},
   signOut: async () => {},
   logout: async () => {},
+  updateUser: async () => {},
 });
 
 export const useAuth = () => useContext(AuthContext);
@@ -139,8 +147,15 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
   };
 
+  const updateUser = async (newData: Partial<User>) => {
+    if (!user) return;
+    const updatedUser = { ...user, ...newData };
+    setUser(updatedUser);
+    await SecureStore.setItemAsync('userData', JSON.stringify(updatedUser));
+  };
+
   return (
-    <AuthContext.Provider value={{ user, loading, isPremium, signIn, signOut, logout: signOut }}>
+    <AuthContext.Provider value={{ user, loading, isPremium, signIn, signOut, logout: signOut, updateUser }}>
       {children}
     </AuthContext.Provider>
   );

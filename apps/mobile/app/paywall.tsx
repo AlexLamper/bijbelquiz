@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, ImageBackground, Alert, ActivityIndicator } from 'react-native';
 import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
@@ -37,13 +37,13 @@ export default function PaywallScreen() {
          const { customerInfo } = await Purchases.purchasePackage(packageToBuy);
          if (customerInfo.entitlements.active['BijbelQuiz Premium'] !== undefined || customerInfo.entitlements.active['Premium'] !== undefined || customerInfo.entitlements.active['pro'] !== undefined) {
             Alert.alert("Succes!", "Welkom bij BijbelQuiz Premium!");
-            router.replace('/(tabs)');
+            router.back();
          } else {
             console.warn("Premium entitlement not active in RevenueCat after purchase");
          }
       } else {
          Alert.alert("Let op", "Geen producten gevonden (sandbox/config probleem). Demo mode ontgrendeld!");
-         router.replace('/(tabs)');
+         router.back();
       }
     } catch (e: any) {
       if (!e.userCancelled) {
@@ -60,7 +60,7 @@ export default function PaywallScreen() {
        const customerInfo = await Purchases.restorePurchases();
        if (customerInfo.entitlements.active['BijbelQuiz Premium'] !== undefined || customerInfo.entitlements.active['Premium'] !== undefined || customerInfo.entitlements.active['pro'] !== undefined) {
           Alert.alert("Aankopen hersteld", "Je Premium is succesvol hersteld.");
-          router.replace('/(tabs)');
+          router.back();
        } else {
           Alert.alert("Aankopen herstellen", "Geen actieve Premium-aankopen gevonden.");
        }
@@ -89,7 +89,7 @@ export default function PaywallScreen() {
           />
           
           <TouchableOpacity 
-            onPress={() => router.replace('/(tabs)')}
+            onPress={() => router.back()}
             className="absolute top-12 left-6 w-8 h-8 rounded-full items-center justify-center z-10"
             style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}
             disabled={loading}
@@ -134,11 +134,11 @@ export default function PaywallScreen() {
             >
               <View className="text-left">
                 <Text className="text-white font-bold">Lifetime toegang</Text>
-                <Text className="text-xs text-gray-400 uppercase tracking-widest mt-1">��nmalig</Text>
+                <Text className="text-xs text-gray-400 uppercase tracking-widest mt-1">Éénmalig</Text>
               </View>
               <View className="items-end">
                 <Text className="text-white font-bold">
-                  �74,99
+                  €74,99
                 </Text>
                 <Text className="text-[10px] mt-1" style={{ color: GOLD_ACCENT }}>Voor altijd premium</Text>
               </View>
@@ -158,7 +158,7 @@ export default function PaywallScreen() {
               </View>
               <View className="items-end">
                 <Text className="text-white font-bold">
-                  �5,99<Text className="text-xs font-normal text-gray-400"> / mnd</Text>
+                  €5,99<Text className="text-xs font-normal text-gray-400"> / mnd</Text>
                 </Text>
               </View>
             </TouchableOpacity>
@@ -190,17 +190,6 @@ export default function PaywallScreen() {
           >
             <Text className="text-gray-500 text-xs underline">
               Aankopen Herstellen
-            </Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => router.replace('/(tabs)')}
-            className="w-full py-4 rounded-xl items-center border border-white mt-2"
-            style={{ backgroundColor: 'transparent' }}
-            disabled={loading}
-          >
-            <Text className="text-white font-bold text-lg">
-              Doorgaan zonder premium
             </Text>
           </TouchableOpacity>
         </View>

@@ -96,16 +96,16 @@ export default function PaywallTrialScreen() {
         {/* Footer */}
         <View className="px-8 pb-12 pt-4">
           <TouchableOpacity
-            onPress={() => router.push('/(tabs)')}
+            onPress={() => router.replace('/(tabs)')}
             style={{ backgroundColor: PRIMARY_NAVY }}
             className="w-full py-4 rounded-xl items-center shadow-xl mb-3"
           >
             <Text className="text-white font-bold text-lg">
-              Start mijn gratis week
+              Start uw proefperiode
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => router.push('/(tabs)')}
+            onPress={() => router.replace('/(tabs)')}
             className="w-full py-4 items-center"
           >
             <Text className="text-gray-400 text-sm font-medium">

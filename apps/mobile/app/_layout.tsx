@@ -4,15 +4,15 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
-import 'react-native-reanimated';
+import { configureReanimatedLogger, ReanimatedLogLevel } from 'react-native-reanimated';
 import '../global.css';
-
 import { useColorScheme } from '@/components/useColorScheme';
+import { AuthProvider } from '../components/AuthProvider';
 
-export {
-  // Catch any errors thrown by the Layout component.
-  ErrorBoundary,
-} from 'expo-router';
+configureReanimatedLogger({
+  level: ReanimatedLogLevel.warn,
+  strict: false,
+});
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
@@ -46,8 +46,6 @@ export default function RootLayout() {
   return <RootLayoutNav />;
 }
 
-import { AuthProvider } from '../components/AuthProvider';
-
 function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
@@ -56,14 +54,12 @@ function RootLayoutNav() {
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
+          <Stack.Screen name="welcome" options={{ headerShown: false }} />
           <Stack.Screen name="(tabs)" options={{ headerShown: false, gestureEnabled: false }} />       
-          <Stack.Screen name="onboarding/splash" options={{ headerShown: false }} />
           <Stack.Screen name="onboarding/education" options={{ headerShown: false }} />
           <Stack.Screen name="onboarding/quiz_bible_usage" options={{ headerShown: false }} />
           <Stack.Screen name="onboarding/quiz_knowledge_level" options={{ headerShown: false }} />
           <Stack.Screen name="onboarding/quiz_topics_interest" options={{ headerShown: false }} />
-          <Stack.Screen name="onboarding/quiz_reminder_time" options={{ headerShown: false }} />
-          <Stack.Screen name="onboarding/educational_impact" options={{ headerShown: false }} />
           <Stack.Screen name="onboarding/complete" options={{ headerShown: false }} />
           <Stack.Screen name="onboarding/paywall" options={{ headerShown: false, presentation: 'modal' }} />
           <Stack.Screen name="onboarding/paywall_trial" options={{ headerShown: false, presentation: 'modal' }} />

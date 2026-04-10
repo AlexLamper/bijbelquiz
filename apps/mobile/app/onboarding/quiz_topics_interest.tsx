@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ChevronLeft, Scroll, Crown, Leaf, Cross, Mountain, Star } from 'lucide-react-native';
+import * as SecureStore from 'expo-secure-store';
 
 const PRIMARY_NAVY = '#121A2A';
 const GOLD_ACCENT = '#C5A059';
@@ -9,6 +10,13 @@ const GOLD_ACCENT = '#C5A059';
 export default function QuizTopicsInterestScreen() {
   const router = useRouter();
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
+
+  const handleNext = async () => {
+    if (selectedTopics.length > 0) {
+      await SecureStore.setItemAsync('onboarding_q3', JSON.stringify(selectedTopics));
+    }
+    router.push('/onboarding/complete');
+  };
 
   const topics = [
     { id: 'prophets', label: 'Profeten', Icon: Scroll, iconBg: '#EFF6FF', iconColor: PRIMARY_NAVY },
@@ -82,7 +90,7 @@ export default function QuizTopicsInterestScreen() {
       {/* Footer */}
       <View className="px-6 pb-8 pt-4 bg-transparent mt-auto">
         <TouchableOpacity
-          onPress={() => router.push('/onboarding/paywall')}
+          onPress={handleNext}
           style={{ backgroundColor: PRIMARY_NAVY }}
           className="w-full py-4 rounded-xl items-center"
         >

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ChevronLeft } from 'lucide-react-native';
+import * as SecureStore from 'expo-secure-store';
 
 const PRIMARY_NAVY = '#121A2A';
 const GOLD_ACCENT = '#C5A059';
@@ -11,6 +12,13 @@ export default function QuizBibleUsageScreen() {
   const [selected, setSelected] = useState<string | null>(null);
 
   const options = ['Dagelijks', 'Wekelijks', 'Af en toe', 'Ik begin net'];
+
+  const handleNext = async () => {
+    if (selected) {
+      await SecureStore.setItemAsync('onboarding_q1', selected);
+    }
+    router.push('/onboarding/quiz_knowledge_level');
+  };
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#F8FAFC' }}>
@@ -67,7 +75,7 @@ export default function QuizBibleUsageScreen() {
       {/* Footer */}
       <View className="px-6 pb-8 pt-4 bg-transparent mt-auto">
         <TouchableOpacity
-          onPress={() => router.push('/onboarding/quiz_knowledge_level')}
+          onPress={handleNext}
           style={{ backgroundColor: PRIMARY_NAVY }}
           className="w-full py-4 rounded-xl items-center"
         >

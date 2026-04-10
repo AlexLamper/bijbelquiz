@@ -1,131 +1,120 @@
 import React, { useEffect, useState } from 'react';
-import { ActivityIndicator, Text, TouchableOpacity, View, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuth } from '../components/AuthProvider';
-import { FontAwesome, Feather } from '@expo/vector-icons';
-import { useGoogleAuth, handleGoogleSignIn } from '../services/googleAuth';
 
-export default function WelcomeScreen() {
+const PRIMARY_NAVY = '#121A2A';
+const BG_LIGHT = '#F8FAFC';
+
+export default function SplashScreen() {
   const router = useRouter();
-  const { user, loading, signIn } = useAuth();
-  const { request, response, promptAsync } = useGoogleAuth();
-  const [googleLoading, setGoogleLoading] = useState(false);
+  const { user, loading } = useAuth();
+  const [minTimeElapsed, setMinTimeElapsed] = useState(false);
 
   useEffect(() => {
-    if (!loading && user) {
-      router.replace('/(tabs)');
-    } else if (!loading && !user) {
-      router.replace('/onboarding/splash');
-    }
-  }, [loading, user, router]);
+    // Wait for at least 2.5 seconds to show splash
+    const timer = setTimeout(() => {
+      setMinTimeElapsed(true);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
 
-  // Handle Google OAuth response
   useEffect(() => {
-    if (response?.type === 'success') {
-      const { authentication } = response;
-      if (authentication?.accessToken) {
-        handleGoogleWelcome(authentication.accessToken);
-      }
-    }
-  }, [response]);
-
-  const handleGoogleWelcome = async (accessToken: string) => {
-    setGoogleLoading(true);
-    try {
-      const result = await handleGoogleSignIn(accessToken);
-      
-      if (result.success && result.token && result.user) {
-        await signIn(result.token, result.user);
-        router.replace('/(tabs)');
+    // Only navigate once min time has elapsed AND auth state is resolved
+    if (minTimeElapsed && !loading) {
+      if (user) {
+        if (user.onboardingCompleted) {
+          router.replace('/(tabs)');
+        } else {
+          router.replace('/onboarding/education');
+        }
       } else {
-        alert(result.error || 'Er is iets misgegaan met Google Sign-In.');
+        router.replace('/welcome');
       }
-    } catch (error) {
-      console.error(error);
-      alert('Kon niet inloggen met Google.');
-    } finally {
-      setGoogleLoading(false);
     }
-  };
-
-  if (loading) {
-    return (
-      <View className="flex-1 justify-center items-center bg-[#f8fafd]">
-        <ActivityIndicator size="large" color="#1a2333" />
-      </View>
-    );
-  }
+  }, [minTimeElapsed, loading, user, router]);
 
   return (
-    <SafeAreaView className="flex-1 bg-[#f8fafd]" edges={['top', 'bottom']}>
-      <View className="flex-1 px-8 pt-12 pb-10 justify-between">
-        
-        {/* Decorative Circles */}
-        <View className="absolute top-[-50] right-[-50] w-64 h-64 border-[1px] border-[#d8e0f0] rounded-full opacity-60"></View>
-        <View className="absolute top-10 right-[-100] w-80 h-80 border-[1px] border-[#d8e0f0] rounded-full opacity-40"></View>
-
-        <View className="mt-8">
-          {/* Logo */}
-          <View className="mb-8">
-            <FontAwesome name="book" size={48} color="#1a2333" />
-          </View>
-          
-          <Text className="text-[44px] font-serif font-bold text-[#1a2333] mb-6 leading-[50px]">
-            Groeien in{'\n'}je geloof.
-          </Text>
-          <Text className="text-[#5c687e] text-[16px] leading-[24px] mb-10 w-[90%]">
-            Ontdek, leer en test je kennis van de Bijbel op een leuke en interactieve manier.
-          </Text>
-
-          <View className="gap-5">
-            <View className="flex-row items-center gap-4">
-              <Feather name="user" size={20} color="#1a2333" />
-              <Text className="text-[#1a2333] text-[16px] font-medium">Persoonlijke bijbelreis</Text>
-            </View>
-            <View className="flex-row items-center gap-4">
-              <Feather name="sliders" size={20} color="#1a2333" />
-              <Text className="text-[#1a2333] text-[16px] font-medium">Test je kennis</Text>
-            </View>
-            <View className="flex-row items-center gap-4">
-              <Feather name="check-square" size={20} color="#1a2333" />
-              <Text className="text-[#1a2333] text-[16px] font-medium">Dagelijkse streaks</Text>
-            </View>
-          </View>
+    <View style={styles.container}>
+      <View style={styles.content}>
+        <View style={styles.iconContainer}>
+            <Image 
+              source={require('../assets/images/logo-dark.png')} 
+              style={{ width: 48, height: 48 }}
+              contentFit="contain"
+            />
         </View>
-
-        <View className="gap-4">
-          {/* Google Sign-In Button */}
-          <TouchableOpacity
-            className="border-[1.5px] border-[#1a2333] flex-row justify-center py-4 rounded-[20px] items-center bg-white shadow-sm"
-            onPress={() => promptAsync()}
-            disabled={!request || googleLoading}
-          >
-            {googleLoading ? (
-              <ActivityIndicator color="#1a2333" />
-            ) : (
-              <>
-                <FontAwesome name="google" size={20} color="#DB4437" style={{ marginRight: 12 }} />
-                <Text className="text-[#1a2333] font-bold text-[17px]">Inloggen met Google</Text>
-              </>
-            )}
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            className="bg-[#547ee9] py-4 rounded-[20px] items-center shadow-lg"
-            onPress={() => router.push('/register')}
-          >
-            <Text className="text-white font-bold text-[17px]">Continue with email</Text>
-          </TouchableOpacity>
-          
-          <TouchableOpacity className="mt-2 items-center" onPress={() => router.push('/login')}>
-            <Text className="text-[#1a2333] text-[15px]">
-              Heb je al een account? <Text className="font-bold">Log in.</Text>
-            </Text>
-          </TouchableOpacity>
-        </View>
-
+        <Text style={styles.title}>BijbelQuiz</Text>
+        <Text style={styles.subtitle}>
+          Statenvertaling & Traditie
+        </Text>
       </View>
-    </SafeAreaView>
+
+      <View style={styles.loadingContainer}>
+        <View style={[styles.dot, styles.dot1]} />
+        <View style={[styles.dot, styles.dot2]} />
+        <View style={[styles.dot, styles.dot3]} />
+      </View>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: BG_LIGHT,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  content: {
+    alignItems: 'center',
+    zIndex: 10,
+  },
+  iconContainer: {
+    width: 96,
+    height: 96,
+    backgroundColor: 'transparent',
+    borderRadius: 24,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 24,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.1,
+    shadowRadius: 20,
+    elevation: 4,
+  },
+  title: {
+    color: PRIMARY_NAVY,
+    fontSize: 30,
+    textTransform: 'uppercase',
+    letterSpacing: 2,
+    fontWeight: 'bold',
+  },
+  subtitle: {
+    color: '#64748B',
+    marginTop: 8,
+    fontSize: 12,
+    fontWeight: '500',
+    letterSpacing: 2,
+    textTransform: 'uppercase',
+    textAlign: 'center',
+    paddingHorizontal: 48,
+  },
+  loadingContainer: {
+    position: 'absolute',
+    bottom: 80,
+    flexDirection: 'row',
+    gap: 8,
+  },
+  dot: {
+    width: 8,
+    height: 8,
+    backgroundColor: PRIMARY_NAVY,
+    borderRadius: 4,
+  },
+  dot1: { },
+  dot2: { },
+  dot3: { },
+});

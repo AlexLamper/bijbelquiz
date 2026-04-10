@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TouchableOpacity, Image, ActivityIndicator, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, ActivityIndicator, ScrollView } from 'react-native';
+import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { useAuth } from '../../components/AuthProvider';

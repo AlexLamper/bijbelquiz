@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuth } from '../components/AuthProvider';
@@ -36,20 +37,20 @@ export default function LoginScreen() {
 
   const handleGoogleLogin = async (accessToken: string) => {
     setGoogleLoading(true);
-    console.log('[DEBUG_AUTH] Starting handleGoogleLogin with token');
     try {
       const result = await handleGoogleSignIn(accessToken);
-      console.log('[DEBUG_AUTH] handleGoogleSignIn result:', result);
       
       if (result.success && result.token && result.user) {
         await signIn(result.token, result.user);
-        router.replace('/(tabs)');
+        if (result.user.onboardingCompleted) {
+          router.replace('/(tabs)');
+        } else {
+          router.replace('/onboarding/education');
+        }
       } else {
-        console.error('[DEBUG_AUTH] Google Sign-In failure from backend:', result.error);
         Alert.alert('Inloggen mislukt', result.error || 'Er is iets misgegaan met Google Sign-In.');
       }
     } catch (error) {
-      console.error('[DEBUG_AUTH] Google Sign-In hard crash:', error);
       Alert.alert('Fout', 'Kon niet inloggen met Google.');
     } finally {
       setGoogleLoading(false);
@@ -63,7 +64,6 @@ export default function LoginScreen() {
     }
 
     setLoading(true);
-    console.log(`[DEBUG_AUTH] Attempting standard login to API: ${API_URL}`);
     try {
       const response = await fetch(API_URL, {
         method: 'POST',
@@ -73,19 +73,20 @@ export default function LoginScreen() {
         body: JSON.stringify({ email, password }),
       });
 
-      console.log(`[DEBUG_AUTH] Standard login response status: ${response.status}`);
       const data = await response.json();
-      console.log(`[DEBUG_AUTH] Standard login response data:`, data);
 
       if (response.ok && data.token) {
         await signIn(data.token, data.user);
-        router.replace('/(tabs)');
+        if (data.user.onboardingCompleted) {
+          router.replace('/(tabs)');
+        } else {
+          router.replace('/onboarding/education');
+        }
       } else {
         Alert.alert('Inloggen mislukt', data.error || 'Controleer je gegevens.');
       }
     } catch (error) {
-      console.error('[DEBUG_AUTH] Standard login network crash:', error);
-      Alert.alert('Fout', `Netwerkfout. URL was: ${API_URL}`);
+      Alert.alert('Fout', 'Netwerkfout. Probeer opnieuw.');
     } finally {
       setLoading(false);
     }
@@ -98,7 +99,10 @@ export default function LoginScreen() {
         className="flex-1"
       >
         <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-8 pt-8">
-          <TouchableOpacity onPress={() => router.back()} className="w-10 h-10 mb-6 justify-center -ml-2">
+          <TouchableOpacity 
+            onPress={() => router.canGoBack() ? router.back() : router.replace('/welcome')} 
+            className="w-10 h-10 mb-6 justify-center -ml-2"
+          >
             <ChevronLeft color="#9CA3AF" size={28} />
           </TouchableOpacity>
 
@@ -183,7 +187,7 @@ export default function LoginScreen() {
           <View className="flex-row justify-center mt-8 pb-8">
             <Text className="text-gray-500 text-[15px]">Nog geen account? </Text>
             <TouchableOpacity onPress={() => router.push('/register')}>
-              <Text className="font-bold text-[15px]" style={{ color: GOLD_ACCENT }}>Maak er een</Text>
+              <Text className="font-bold text-[15px]" style={{ color: '#2563EB' }}>Maak er een</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>

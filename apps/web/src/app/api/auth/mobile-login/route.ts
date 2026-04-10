@@ -48,6 +48,7 @@ export async function POST(req: NextRequest) {
         name: user.name,
         isPremium: user.isPremium,
         xp: user.xp,
+        onboardingCompleted: !!(user.onboarding && user.onboarding.knowledgeLevel),
       },
       token,
     });

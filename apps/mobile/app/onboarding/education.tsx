@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native';
+import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
 import { CheckCircle } from 'lucide-react-native';
-import Image from 'react-native-image';
 
 const PRIMARY_NAVY = '#121A2A';
 const GOLD_ACCENT = '#C5A059';
@@ -17,7 +17,7 @@ export default function EducationStatenvertalingScreen() {
         
         {/* Progress header or top nav can be added here */}
         <View className="flex-row justify-between items-center mb-10 mt-4">
-          <Image source={require('../../assets/images/logo-dark.png')} style={{ width: 40, height: 40, resizeMode: 'contain' }} />
+          <Image source={require('../../assets/images/logo-dark.png')} style={{ width: 40, height: 40 }} contentFit="contain" />
           <Text className="text-gray-400 font-medium">1 / 4</Text>
         </View>
 

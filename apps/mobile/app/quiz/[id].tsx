@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator, Alert, Image } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator, Alert } from 'react-native';
+import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
@@ -368,7 +369,7 @@ export default function MobileQuizPlayer() {
                    <Text className="text-[#6B7280] text-[13px] mb-3">Ontgrendel theologische uitleg en Bijbelverwijzingen voor alle vragen.</Text>
                    <TouchableOpacity 
                       className="bg-[#121A2A] py-2.5 rounded-xl items-center active:scale-[0.98]"
-                        onPress={() => router.push('/onboarding/paywall')}
+                        onPress={() => router.push('/paywall')}
                    >
                       <Text className="text-white font-bold text-[14px]">Word Premium ✨</Text>
                    </TouchableOpacity>

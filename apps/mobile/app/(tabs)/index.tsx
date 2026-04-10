@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, Image, Alert, TextInput, ScrollView } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, Alert, TextInput, ScrollView } from 'react-native';
+import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
@@ -123,7 +124,7 @@ export default function HomeScreen() {
         className="w-[200px] mr-4 mb-2"
         onPress={() => {
           if (isLocked) {
-            router.push('/onboarding/paywall');
+            router.push('/paywall');
           } else {
             router.push(`/quiz/${item._id}`);
           }
@@ -136,7 +137,8 @@ export default function HomeScreen() {
                 <Image
                   source={getQuizImage(item.imageUrl)}
                   style={{ width: '100%', height: '100%' }}
-                  resizeMode="cover"
+                  contentFit="cover"
+                  transition={200}
                 />
                 <View style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.12)' }} />
               </>
@@ -202,7 +204,7 @@ export default function HomeScreen() {
               <Image 
                 source={require('../../assets/images/logo-dark.png')} 
                 style={{ width: 40, height: 40 }}
-                resizeMode="contain"
+                contentFit="contain"
               />
               <Text className="ml-3 text-3xl font-serif font-bold text-[#121A2A] mt-1.5">Bijbelquiz</Text>
             </View>

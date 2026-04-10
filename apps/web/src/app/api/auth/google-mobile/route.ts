@@ -60,6 +60,7 @@ export async function POST(req: NextRequest) {
         image: user.image,
         isPremium: user.isPremium,
         xp: user.xp,
+        onboardingCompleted: !!(user.onboarding && user.onboarding.knowledgeLevel),
       },
       token,
     });

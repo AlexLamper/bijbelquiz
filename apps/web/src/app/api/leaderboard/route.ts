@@ -81,7 +81,7 @@ export async function GET(request: NextRequest) {
       {
         $project: {
           _id: 1,
-          totalPoints: 1,
+          totalPoints: "$userInfo.xp",
           quizzesPlayed: 1,
           avgScore: 1,
           recentActivity: 1,

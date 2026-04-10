@@ -38,11 +38,12 @@ export async function POST(req: NextRequest) {
         id: user._id,
         email: user.email,
         name: user.name,
+        onboardingCompleted: false,
       }
-    }, { status: 201 });
+    });
 
-  } catch (error: any) {
-    console.error("Registratiefout:", error);
-    return new NextResponse("Er is een fout opgetreden bij de registratie", { status: 500 });
+  } catch (error) {
+    console.error("[REGISTER_ERROR]", error);
+    return new NextResponse("Interne serverfout", { status: 500 });
   }
 }

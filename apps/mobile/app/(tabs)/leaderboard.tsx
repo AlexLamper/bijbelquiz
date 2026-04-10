@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, Image, ScrollView, Dimensions } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, ScrollView, Dimensions } from 'react-native';
+import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontAwesome, Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../../components/AuthProvider';

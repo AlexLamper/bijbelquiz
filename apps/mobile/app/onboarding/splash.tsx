@@ -1,19 +1,13 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, ImageBackground, Animated } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
-// Note: You may want to install `@expo/vector-icons` if not already present or use an alternative icon.
-import { BookOpen } from 'lucide-react-native';
 
 const PRIMARY_NAVY = '#121A2A';
-const GOLD_ACCENT = '#C5A059';
+const BG_LIGHT = '#F8FAFC';
 
 export default function SplashScreen() {
   const router = useRouter();
-  
-  // Example animation values for bouncing dots
-  const dot1Y = new Animated.Value(0);
-  const dot2Y = new Animated.Value(0);
-  const dot3Y = new Animated.Value(0);
 
   useEffect(() => {
     // Navigate naturally after splash
@@ -25,27 +19,25 @@ export default function SplashScreen() {
 
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={{ uri: 'https://media.screensdesign.com/gasset/c1b20645-c1c9-486d-af7e-7b04665a8f6c.png' }}
-        style={styles.backgroundImage}
-        imageStyle={{ opacity: 0.2 }}
-      >
-        <View style={styles.content}>
-          <View style={styles.iconContainer}>
-             <BookOpen color="white" size={48} />
-          </View>
-          <Text style={styles.title}>Bijbelquiz</Text>
-          <Text style={styles.subtitle}>
-            Statenvertaling & Traditie
-          </Text>
+      <View style={styles.content}>
+        <View style={styles.iconContainer}>
+            <Image 
+              source={require('../../assets/images/logo-dark.png')} 
+              style={{ width: 48, height: 48 }}
+              contentFit="contain"
+            />
         </View>
+        <Text style={styles.title}>BijbelQuiz</Text>
+        <Text style={styles.subtitle}>
+          Statenvertaling & Traditie
+        </Text>
+      </View>
 
-        <View style={styles.loadingContainer}>
-          <View style={[styles.dot, styles.dot1]} />
-          <View style={[styles.dot, styles.dot2]} />
-          <View style={[styles.dot, styles.dot3]} />
-        </View>
-      </ImageBackground>
+      <View style={styles.loadingContainer}>
+        <View style={[styles.dot, styles.dot1]} />
+        <View style={[styles.dot, styles.dot2]} />
+        <View style={[styles.dot, styles.dot3]} />
+      </View>
     </View>
   );
 }
@@ -53,14 +45,9 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: PRIMARY_NAVY,
-  },
-  backgroundImage: {
-    flex: 1,
+    backgroundColor: BG_LIGHT,
     justifyContent: 'center',
     alignItems: 'center',
-    width: '100%',
-    height: '100%',
   },
   content: {
     alignItems: 'center',
@@ -69,27 +56,26 @@ const styles = StyleSheet.create({
   iconContainer: {
     width: 96,
     height: 96,
-    backgroundColor: GOLD_ACCENT,
+    backgroundColor: 'transparent',
     borderRadius: 24,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 24,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.3,
+    shadowOpacity: 0.1,
     shadowRadius: 20,
-    elevation: 10,
+    elevation: 4,
   },
   title: {
-    color: 'white',
+    color: PRIMARY_NAVY,
     fontSize: 30,
     textTransform: 'uppercase',
     letterSpacing: 2,
     fontWeight: 'bold',
-    // fontFamily: 'serif' - add custom font mapping here.
   },
   subtitle: {
-    color: GOLD_ACCENT,
+    color: '#64748B',
     marginTop: 8,
     fontSize: 12,
     fontWeight: '500',
@@ -107,10 +93,10 @@ const styles = StyleSheet.create({
   dot: {
     width: 8,
     height: 8,
-    backgroundColor: GOLD_ACCENT,
+    backgroundColor: PRIMARY_NAVY,
     borderRadius: 4,
   },
-  dot1: { /* Add animation keys if using standard React Native Animated */ },
+  dot1: { },
   dot2: { },
   dot3: { },
 });

@@ -22,6 +22,11 @@ export interface IUser extends Document {
   averageScore: number;
   role: 'user' | 'admin';
   nameUpdatedAt?: Date;
+  onboarding?: {
+    bibleReadingFrequency?: string;
+    knowledgeLevel?: string;
+    interests?: string[];
+  };
   createdAt: Date;
 }
 
@@ -47,6 +52,11 @@ const UserSchema: Schema = new Schema({
   averageScore: { type: Number, default: 0 },
   role: { type: String, enum: ['user', 'admin'], default: 'user' },
   nameUpdatedAt: { type: Date },
+  onboarding: {
+    bibleReadingFrequency: { type: String },
+    knowledgeLevel: { type: String },
+    interests: { type: [String], default: [] },
+  },
 }, { timestamps: true });
 
 UserSchema.index({ xp: -1 });

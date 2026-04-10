@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import { Image } from 'expo-image';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuth } from '../components/AuthProvider';
@@ -19,7 +20,6 @@ export default function RegisterScreen() {
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const router = useRouter();
-  const { onboarding } = useLocalSearchParams();
   const { signIn } = useAuth();
   const { request, response, promptAsync } = useGoogleAuth();
 
@@ -43,10 +43,10 @@ export default function RegisterScreen() {
       
       if (result.success && result.token && result.user) {
         await signIn(result.token, result.user);
-        if (onboarding) {
-           router.replace('/onboarding/complete');
-        } else {
+        if (result.user.onboardingCompleted) {
            router.replace('/(tabs)');
+        } else {
+           router.replace('/onboarding/education');
         }
       } else {
         Alert.alert('Registreren mislukt', result.error || 'Er is iets misgegaan met Google Sign-In.');
@@ -112,10 +112,10 @@ export default function RegisterScreen() {
             await signIn(data.token, data.user);
             Alert.alert('Welkom!', 'Je bent succesvol geregistreerd.');
             
-            if (onboarding) {
-               router.replace('/onboarding/complete');
-            } else {
+            if (data.user.onboardingCompleted) {
                router.replace('/(tabs)');
+            } else {
+               router.replace('/onboarding/education');
             }
         } else {
             router.replace('/login');
@@ -134,7 +134,10 @@ export default function RegisterScreen() {
         className="flex-1"
       >
         <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="px-8 pt-8">
-          <TouchableOpacity onPress={() => router.back()} className="w-10 h-10 mb-6 justify-center -ml-2">
+          <TouchableOpacity 
+            onPress={() => router.canGoBack() ? router.back() : router.replace('/welcome')} 
+            className="w-10 h-10 mb-6 justify-center -ml-2"
+          >
             <ChevronLeft color="#9CA3AF" size={28} />
           </TouchableOpacity>
 
@@ -230,7 +233,7 @@ export default function RegisterScreen() {
             <View className="flex-row justify-center mt-8 pb-8">
               <Text className="text-gray-500 text-[15px]">Al een account? </Text>
               <TouchableOpacity onPress={() => router.push('/login')}>
-                <Text className="font-bold text-[15px]" style={{ color: GOLD_ACCENT }}>Log in</Text>
+                <Text className="font-bold text-[15px]" style={{ color: '#2563EB' }}>Log in</Text>
               </TouchableOpacity>
             </View>
           </View>

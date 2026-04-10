@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ChevronLeft, GraduationCap, BookOpen, Scroll } from 'lucide-react-native';
+import * as SecureStore from 'expo-secure-store';
 
 const PRIMARY_NAVY = '#121A2A';
 const GOLD_ACCENT = '#C5A059';
@@ -9,6 +10,13 @@ const GOLD_ACCENT = '#C5A059';
 export default function QuizKnowledgeLevelScreen() {
   const router = useRouter();
   const [selected, setSelected] = useState<string | null>(null);
+
+  const handleNext = async () => {
+    if (selected) {
+      await SecureStore.setItemAsync('onboarding_q2', selected);
+    }
+    router.push('/onboarding/quiz_topics_interest');
+  };
 
   const levels = [
     {
@@ -96,7 +104,7 @@ export default function QuizKnowledgeLevelScreen() {
       {/* Footer */}
       <View className="px-6 pb-8 pt-4 bg-transparent mt-auto">
         <TouchableOpacity
-          onPress={() => router.push('/onboarding/quiz_topics_interest')}
+          onPress={handleNext}
           style={{ backgroundColor: PRIMARY_NAVY }}
           className="w-full py-4 rounded-xl items-center"
         >

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, Image, ScrollView, TextInput } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, RefreshControl, ScrollView, TextInput } from 'react-native';
+import { Image } from 'expo-image';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
@@ -109,7 +110,7 @@ export default function LibraryScreen() {
         className="mb-4 bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden shadow-sm flex-row h-[120px]"
         onPress={() => {
           if (isLocked) {
-            router.push('/onboarding/paywall');
+            router.push('/paywall');
           } else {
             router.push(`/quiz/${item._id}`);
           }
@@ -122,7 +123,8 @@ export default function LibraryScreen() {
                 <Image
                   source={getQuizImage(item.imageUrl)}
                   style={{ width: '100%', height: '100%' }}
-                  resizeMode="cover"
+                  contentFit="cover"
+                  transition={200}
                 />
                 <View style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.12)' }} />
               </>
@@ -213,7 +215,7 @@ export default function LibraryScreen() {
            <Text className="text-[#6B7280] text-[13px] mb-3">Ontgrendel alle quizzen inclusief diepere theologie en uitgebreide uitleg!</Text>
            <TouchableOpacity 
               className="bg-[#121A2A] py-2 rounded-lg items-center"
-              onPress={() => router.push('/onboarding/paywall')}
+              onPress={() => router.push('/paywall')}
            >
               <Text className="text-white font-bold text-[13px]">Probeer Premium</Text>
            </TouchableOpacity>

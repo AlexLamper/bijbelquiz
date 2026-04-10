@@ -27,6 +27,12 @@ export async function GET(req: NextRequest) {
       streak: user.streak || 0,
       level: user.level || 1,
       levelTitle: user.levelTitle || 'Manna Verzamelaar',
+      onboardingCompleted: !!(user.onboarding && user.onboarding.knowledgeLevel),
+      onboarding: {
+        bibleReadingFrequency: user.onboarding?.bibleReadingFrequency || '',
+        knowledgeLevel: user.onboarding?.knowledgeLevel || '',
+        interests: user.onboarding?.interests || []
+      }
     });
   } catch (error) {
     console.error('[USER_ME_GET]', error);
