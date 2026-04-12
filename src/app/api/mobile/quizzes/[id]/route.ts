@@ -1,0 +1,99 @@
+import { NextResponse } from 'next/server';
+import { connectDB, Quiz, Category } from '@/database';
+
+export async function GET(req: Request, context: any) {
+  try {
+    await connectDB();
+    
+    // In Next.js 15 app dir params is a promise, in 14 it is sync. This covers both securely.
+    const params = await context.params;
+    const { id } = params || {};
+
+    if (!id) {
+      return NextResponse.json({ error: 'Missing ID' }, {
+        status: 400,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+        },
+      });
+    }
+
+    const query = id.match(/^[0-9a-fA-F]{24}$/) ? { _id: id } : { slug: id };
+    
+    // Fetch quiz and category independently to dodge Mongoose population registration crashes in Next API
+    const quiz = await Quiz.findOne(query).lean();
+    if (!quiz) {
+      return NextResponse.json({ error: 'Quiz not found' }, {
+        status: 404,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+        },
+      });
+    }
+
+    let categoryObj = null;
+    if (quiz.categoryId || quiz.category) {
+      categoryObj = await Category.findById(quiz.categoryId || quiz.category).lean();
+    }
+
+    const formattedQuiz = {
+      id: quiz._id?.toString() || id,
+      title: quiz.title,
+      slug: quiz.slug,
+      description: quiz.description,
+      imageUrl: quiz.imageUrl || quiz.image || '',
+      xpReward: quiz.rewardXp || quiz.xpReward || 50,
+      difficulty: quiz.difficulty || 'medium',
+      categoryId: categoryObj?._id?.toString() || quiz.categoryId?.toString() || null,
+      category: categoryObj ? {
+        id: categoryObj._id?.toString() || null,
+        name: categoryObj.name || categoryObj.title || categoryObj.slug || null,
+        slug: categoryObj.slug || null,
+      } : null,
+      questionCount: quiz.questions?.length || 0,
+      questions: (quiz.questions || []).map((q: any) => ({
+        id: q._id?.toString(),
+        text: q.text,
+        explanation: q.explanation || '',
+        bibleReference: q.bibleReference || '-',
+        answers: (q.answers || []).map((a: any) => ({
+          text: a.text,
+          isCorrect: a.isCorrect || false
+        }))
+      }))
+    };
+
+    return NextResponse.json(formattedQuiz, {
+      status: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      },
+    });
+  } catch (error) {
+    console.error('Mobile API - Quiz Details Error:', error);
+    return NextResponse.json({ error: 'Internal server error' }, {
+      status: 500,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      },
+    });
+  }
+}
+
+export async function OPTIONS() {
+  return NextResponse.json({}, {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  });
+}
