@@ -52,7 +52,7 @@ export async function GET(req: Request, context: any) {
       categoryId: categoryObj?._id?.toString() || quiz.categoryId?.toString() || null,
       category: categoryObj ? {
         id: categoryObj._id?.toString() || null,
-        name: categoryObj.name || categoryObj.title || categoryObj.slug || null,
+        name: (categoryObj as any).name || (categoryObj as any).title || categoryObj.slug || null,
         slug: categoryObj.slug || null,
       } : null,
       questionCount: quiz.questions?.length || 0,
