@@ -36,8 +36,9 @@ export async function GET(req: Request, context: any) {
     }
 
     let categoryObj = null;
-    if (quiz.categoryId || quiz.category) {
-      categoryObj = await Category.findById(quiz.categoryId || quiz.category).lean();
+    const categoryRef = quiz.categoryId || (quiz as any).category;
+    if (categoryRef) {
+      categoryObj = await Category.findById(categoryRef).lean();
     }
 
     const formattedQuiz = {
