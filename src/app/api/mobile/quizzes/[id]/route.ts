@@ -46,8 +46,8 @@ export async function GET(req: Request, context: any) {
       title: quiz.title,
       slug: quiz.slug,
       description: quiz.description,
-      imageUrl: quiz.imageUrl || quiz.image || '',
-      xpReward: quiz.rewardXp || quiz.xpReward || 50,
+      imageUrl: quiz.imageUrl || (quiz as any).image || '',
+      xpReward: quiz.rewardXp || (quiz as any).xpReward || 50,
       difficulty: quiz.difficulty || 'medium',
       categoryId: categoryObj?._id?.toString() || quiz.categoryId?.toString() || null,
       category: categoryObj ? {
