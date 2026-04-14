@@ -27,29 +27,25 @@ export const metadata: Metadata = {
   },
 };
 
-const getQuizzes = unstable_cache(
-  async () => {
-    try {
-      await connectDB();
-      // Get a good mix of quizzes. "Popular" mocked by just taking the first 4 for now to fit the layout.
-      const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
-      const popularQuizzes = await Quiz.find(statusFilter)
-          .populate('categoryId')
-          .limit(4)
-          .sort({ isPremium: 1, sortOrder: 1 }) // Show free first or intentional mix
-          .lean();
-      
-      return {
-        popular: JSON.parse(JSON.stringify(popularQuizzes)),
-      };
-    } catch (e) {
-      console.error("Database connection failed", e);
-      return { popular: [] };
-    }
-  },
-  ['popular-quizzes-home'],
-  { revalidate: 3600, tags: ['quizzes'] }
-);
+// Removed unstable_cache as it may cause issues with Mongoose
+async function getQuizzes() {
+  try {
+    await connectDB();
+    const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+    const popularQuizzes = await Quiz.find(statusFilter)
+        .populate('categoryId')
+        .limit(4)
+        .sort({ isPremium: 1, sortOrder: 1 })
+        .lean();
+    
+    return {
+      popular: JSON.parse(JSON.stringify(popularQuizzes)),
+    };
+  } catch (e) {
+    console.error("Database connection failed", e);
+    return { popular: [] };
+  }
+}
 
 // Removed force-dynamic to allow potential partial caching where possible
 // export const dynamic = 'force-dynamic';
@@ -72,7 +68,7 @@ export default async function Home() {
       <section className="relative overflow-visible pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
 
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-[1800px] flex flex-col lg:flex-row items-center justify-between">
-          <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl">
+          <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl lg:-mt-32 xl:-mt-24">
             <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[64px] 3xl:text-[72px] leading-[1.1] font-bold text-[#1a2333] dark:text-white tracking-tight xl:max-w-none 2xl:max-w-none 3xl:max-w-none">
               Hoe goed ken jij de Bijbel? Ontdek het... 
             </h1> 
@@ -92,16 +88,6 @@ export default async function Home() {
                   >
                     <Link href="/dashboard">
                         Speel direct online
-                    </Link>
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    variant="outline"
-                    className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold border-2 border-[#5b7dd9]/30 text-[#5b7dd9] hover:bg-[#5b7dd9]/5 hover:border-[#5b7dd9] rounded-2xl transition-all w-full sm:w-auto" 
-                    asChild
-                  >
-                    <Link href="/register">
-                        Account aanmaken
                     </Link>
                   </Button>
                 </div>

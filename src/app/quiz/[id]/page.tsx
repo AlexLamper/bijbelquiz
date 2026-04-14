@@ -78,6 +78,10 @@ export default async function QuizPage({ params }: PageProps) {
 
   const session = await getServerSession(authOptions);
 
+  if (!session) {
+    redirect(`/login?callbackUrl=/quiz/${id}`);
+  }
+
   // Status check for non-admins
   // Allow if status is approved OR if status is missing (legacy)
   if (quiz.status && quiz.status !== 'approved') {
@@ -87,9 +91,6 @@ export default async function QuizPage({ params }: PageProps) {
   }
 
   if (quiz.isPremium) {
-    if (!session) {
-      redirect(`/api/auth/signin?callbackUrl=/quiz/${id}`);
-    }
     if (!session.user.isPremium) {
       redirect('/premium');
     }

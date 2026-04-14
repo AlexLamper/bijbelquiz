@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-[#1a2942]">
-                <BookOpen className="h-5 w-5" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white">
+                <img src="/icon/Logo%20-%20light.svg" alt="BijbelQuiz Logo" className="h-7 w-7 object-contain" />
               </div>
               <span className="font-serif text-xl font-medium text-white">
                 Bijbel<span className="italic">Quiz</span>

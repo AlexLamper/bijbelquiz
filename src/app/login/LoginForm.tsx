@@ -50,29 +50,6 @@ function LoginContent() {
       {/* Left Side - Login Form */}
       <div className="flex w-full lg:w-1/2 flex-col justify-center px-6 py-8 lg:px-16 xl:px-24 overflow-y-auto">
         <div className="mx-auto w-full max-w-md">
-          {/* Logo */}
-          <div className="hidden lg:flex items-center gap-3 mb-8">
-            <div className="relative h-10 w-10">
-              <Image 
-                src="/icon/Logo%20-%20dark.svg" 
-                alt="BijbelQuiz Logo" 
-                fill 
-                className="object-contain dark:hidden"
-                priority 
-              />
-              <Image 
-                src="/icon/Logo%20-%20light.svg" 
-                alt="BijbelQuiz Logo" 
-                fill 
-                className="object-contain hidden dark:block"
-                priority 
-              />
-            </div>
-            <span className="text-2xl font-bold font-serif tracking-tight text-foreground">
-              Bijbel<span className="text-[#1a2942] dark:text-primary dark:text-[#5b7dd9] italic">Quiz</span>
-            </span>
-          </div>
-
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-2xl lg:text-3xl font-bold text-[#1a2942] dark:text-foreground mb-2">
@@ -206,7 +183,7 @@ function LoginContent() {
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
                 <BookOpen className="h-5 w-5 text-white" />
               </div>
-              <span className="text-white/90 font-medium">100+ Quizzen beschikbaar</span>
+              <span className="text-white/90 font-medium">10+ Quizzen beschikbaar</span>
             </div>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
