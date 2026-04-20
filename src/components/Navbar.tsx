@@ -84,11 +84,17 @@ export default function Navbar() {
                 )}
 
                 <div className="flex items-center gap-3 pl-3 border-l border-[#d6e2fa]/80 dark:border-border/40">
-                  <Link href="/profile" className="hidden sm:flex items-center gap-2 hover:opacity-80 transition-opacity">
-                    <div className="bg-[#547ee9] text-white rounded-full p-2 shadow-sm ring-2 ring-white dark:ring-background">
-                      <User className="h-4 w-4" />
-                    </div>
-                  </Link>
+                  <Button
+                    asChild
+                    variant="ghost"
+                    size="icon"
+                    className="hidden sm:flex text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                    aria-label="Profiel"
+                  >
+                    <Link href="/profile">
+                      <User className="h-5 w-5" />
+                    </Link>
+                  </Button>
                   
                   <Button
                     onClick={() => signOut({ callbackUrl: '/' })}

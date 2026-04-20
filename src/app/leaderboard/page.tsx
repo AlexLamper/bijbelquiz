@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
-import { connectDB, UserProgress, Category } from '@/database';
-import type { PipelineStage } from 'mongoose';
+import { connectDB, User, Category } from '@/database';
 import Breadcrumb from '@/components/Breadcrumb';
 import LeaderboardClient from './LeaderboardClient';
 import { getServerSession } from 'next-auth';
@@ -38,104 +37,25 @@ export const metadata: Metadata = {
   }
 };
 
-async function getLeaderboardData(timeFilter: string, categorySlug: string): Promise<LeaderboardEntry[]> {
+async function getLeaderboardData(): Promise<LeaderboardEntry[]> {
   await connectDB();
+  const users = await User.find({ xp: { $gt: 0 } })
+    .sort({ xp: -1 })
+    .limit(100)
+    .select('name xp image isPremium streak quizzesPlayed averageScore createdAt bestStreak')
+    .lean();
 
-  const now = new Date();
-  let startDate = new Date(0); // default all time
-
-  if (timeFilter === 'week') {
-    // Get start of current week (Monday)
-    startDate = new Date(now);
-    const day = startDate.getDay() || 7;
-    if (day !== 1) startDate.setHours(-24 * (day - 1));
-    startDate.setHours(0, 0, 0, 0);
-  } else if (timeFilter === 'month') {
-    startDate = new Date(now.getFullYear(), now.getMonth(), 1);
-  }
-
-  // Base match for UserProgress
-  const matchStage: Record<string, unknown> = {};
-  if (timeFilter !== 'all') {
-    matchStage.createdAt = { $gte: startDate };
-  }
-
-  // Add category filter if specified
-  if (categorySlug !== 'all') {
-    const category = await Category.findOne({ slug: categorySlug }).select('_id').lean();
-    if (category) {
-      matchStage.categoryId = category._id;
-    }
-  }
-
-  const pipeline: PipelineStage[] = [];
-
-  // If we have filters, we need to match progress records first, then group by user
-  if (Object.keys(matchStage).length > 0) {
-    pipeline.push(
-      { $match: matchStage },
-      {
-        $group: {
-          _id: "$userId",
-          totalPoints: { $sum: "$score" },
-          quizzesPlayed: { $sum: 1 },
-          avgScore: { $avg: "$score" },
-          recentActivity: { $max: "$createdAt" }
-        }
-      }
-    );
-  } else {
-    // For all-time, we can group directly but maybe simpler to just hit User.xp
-    // but User.xp is all-time points. Since we want stats per category too,
-    // let's stick to aggregating UserProgress for consistency unless performance requires otherwise.
-    pipeline.push({
-      $group: {
-        _id: "$userId",
-        totalPoints: { $sum: "$score" },
-        quizzesPlayed: { $sum: 1 },
-        avgScore: { $avg: "$score" },
-        recentActivity: { $max: "$createdAt" }
-      }
-    });
-  }
-
-  // Join with User collection to get name, avatar, premium status
-  pipeline.push(
-    {
-      $lookup: {
-        from: "users",
-        localField: "_id",
-        foreignField: "_id",
-        as: "userInfo"
-      }
-    },
-    { $unwind: "$userInfo" },
-    {
-      $project: {
-        _id: 1,
-        totalPoints: 1,
-        quizzesPlayed: 1,
-        avgScore: 1,
-        recentActivity: 1,
-        name: "$userInfo.name",
-        image: "$userInfo.image",
-        isPremium: "$userInfo.isPremium",
-        streak: "$userInfo.streak",
-        bestStreak: "$userInfo.streak", // Could track historical max in future
-      }
-    },
-    // Sort by total points descending
-    { $sort: { totalPoints: -1 } },
-    // Top 100
-    { $limit: 100 }
-  );
-
-  const leaderboard = await UserProgress.aggregate(pipeline);
-
-  // Convert MongoDB ObjectIds to strings for client component
-  return leaderboard.map(entry => ({
-    ...entry,
-    _id: entry._id.toString()
+  return users.map(user => ({
+    _id: user._id.toString(),
+    totalPoints: user.xp || 0,
+    quizzesPlayed: user.quizzesPlayed || 0,
+    avgScore: user.averageScore || 0,
+    recentActivity: true,
+    name: user.name || 'Speler',
+    image: user.image || undefined,
+    isPremium: user.isPremium || false,
+    streak: user.streak || 0,
+    bestStreak: user.bestStreak || 0,
   }));
 }
 
@@ -169,7 +89,7 @@ export default async function LeaderboardPage({
   const categorySlug = params?.category || 'all';
 
   const [leaderboard, categories] = await Promise.all([
-    getLeaderboardData(timeFilter, categorySlug),
+    getLeaderboardData(),
     getCategories()
   ]);
 
