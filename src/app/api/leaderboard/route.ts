@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, User } from '@/database';
 
+export async function GET(request: NextRequest) {
   try {
     await connectDB();
 
