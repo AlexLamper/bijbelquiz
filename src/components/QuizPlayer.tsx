@@ -1,14 +1,25 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { useRouter } from 'next/navigation';
-import { ArrowRight, BookOpen, CheckCircle2, X, Award, RotateCcw, Lock, ArrowLeft, Maximize, Settings } from 'lucide-react';
-import { useSession } from 'next-auth/react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  Award,
+  BookOpen,
+  CheckCircle2,
+  Lock,
+  Maximize,
+  RotateCcw,
+  Settings,
+  X,
+} from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 
 interface Answer {
   text: string;
@@ -28,472 +39,497 @@ interface Quiz {
   _id: string;
   title: string;
   questions: Question[];
-    rewardXp?: number;
+  rewardXp?: number;
+  difficulty?: string;
+  categoryId?: { _id?: string; title?: string } | string;
+  isPremium?: boolean;
+}
+
+function getDifficultyLabel(difficulty?: string): string {
+  const key = difficulty?.toLowerCase();
+  if (key === 'easy' || key === 'beginner') return 'Makkelijk';
+  if (key === 'medium' || key === 'intermediate') return 'Gemiddeld';
+  if (key === 'hard' || key === 'advanced') return 'Moeilijk';
+  return 'Onbekend';
+}
+
+function getCategoryLabel(categoryId?: Quiz['categoryId']): string {
+  if (!categoryId) return 'Algemeen';
+
+  if (typeof categoryId === 'object' && categoryId.title) {
+    return categoryId.title;
+  }
+
+  return 'Algemeen';
 }
 
 export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const { data: session } = useSession();
-  const isPremium = session?.user?.isPremium;
+  const router = useRouter();
+
+  const isPremium = !!session?.user?.isPremium;
+  const isLoggedIn = !!session?.user;
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
-  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
-  const [hasAnswered, setHasAnswered] = useState(false);
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [isSaving, setIsSaving] = useState(false);
-  const router = useRouter();
+  const [earnedXp, setEarnedXp] = useState<number | null>(null);
+
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
-  const [showExplanation, setShowExplanation] = useState(true);
   const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
-  const [showLeadForm, setShowLeadForm] = useState(true);
-  const [leadName, setLeadName] = useState('');
-  const [leadEmail, setLeadEmail] = useState('');
-
-  const playClickSound = () => {
-    const audio = new Audio('/sounds/click.wav');
-    audio.volume = 0.3;
-    audio.play().catch(err => console.log('Audio play failed:', err));
-  };
+  const [showExplanation, setShowExplanation] = useState(true);
 
   const currentQuestion = quiz.questions[currentIndex];
+  const progressPercentage = (currentIndex / quiz.questions.length) * 100;
+  const selectedAnswer = selectedAnswers[currentIndex] ?? null;
+  const hasAnswered = selectedAnswer !== null;
+  const difficultyLabel = getDifficultyLabel(quiz.difficulty);
+  const categoryLabel = getCategoryLabel(quiz.categoryId);
 
-  const toggleShowExplanation = () => setShowExplanation(prev => !prev);
-  const toggleFontFamily = () => setFontFamily(prev => prev === 'serif' ? 'sans' : 'serif');
-
-  const handleAnswer = (isCorrect: boolean, index: number) => {
+  const handleAnswer = (answerIndex: number) => {
     if (hasAnswered) return;
-    
-    setSelectedAnswer(index);
-    setHasAnswered(true);
 
-    if (isCorrect) {
-      setScore(score + 1);
+    setSelectedAnswers((prev) => ({
+      ...prev,
+      [currentIndex]: answerIndex,
+    }));
+
+    if (currentQuestion.answers[answerIndex]?.isCorrect) {
+      setScore((prev) => prev + 1);
     }
   };
-
-  const handeNext = async () => {
-    playClickSound();
-    if (currentIndex < quiz.questions.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setSelectedAnswer(null);
-      setHasAnswered(false);
-    } else {
-      await finishQuiz();
-    }
-  };
-
-  const [earnedXp, setEarnedXp] = useState<number | null>(null);
 
   const finishQuiz = async () => {
     setIsFinished(true);
     setIsSaving(true);
+
     try {
-        const response = await fetch('/api/quiz/submit', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                quizId: quiz._id,
-                score: score,
-                totalQuestions: quiz.questions.length
-            })
-        });
-        
-        if (response.ok) {
-            const data = await response.json();
-            if (data.xpEarned !== undefined) {
-                setEarnedXp(data.xpEarned);
-            }
+      const response = await fetch('/api/quiz/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          quizId: quiz._id,
+          score,
+          totalQuestions: quiz.questions.length,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (typeof data.xpEarned === 'number') {
+          setEarnedXp(data.xpEarned);
         }
-    } catch (e) {
-        console.error("Failed to save progress", e);
+      }
+    } catch (error) {
+      console.error('Failed to save quiz progress', error);
     } finally {
-        setIsSaving(false);
+      setIsSaving(false);
     }
+  };
+
+  const handleNext = async () => {
+    if (currentIndex < quiz.questions.length - 1) {
+      setCurrentIndex((prev) => prev + 1);
+      return;
+    }
+
+    await finishQuiz();
+  };
+
+  const handlePrevious = () => {
+    if (currentIndex === 0) {
+      return;
+    }
+
+    setCurrentIndex((prev) => prev - 1);
   };
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-    } else {
-        if (document.exitFullscreen) {
-        document.exitFullscreen();
-        }
+      document.documentElement.requestFullscreen();
+      return;
+    }
+
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
     }
   };
 
-  if (isFinished) {
-    const isPremium = session?.user?.isPremium;
-    const isLoggedIn = !!session;
-
-    if (showLeadForm) {
-        return (
-            <Card className="w-full max-w-2xl mx-auto mt-12 md:mt-20 border-0 shadow-2xl bg-white overflow-hidden animate-in fade-in zoom-in-95 duration-500 py-0 gap-0 rounded-2xl">
-                <div className="bg-[#152c31]/5 p-10 md:p-14 text-center border-b border-[#152c31]/10 w-full relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-[#152c31]"></div>
-                    <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-xl text-[#152c31] border border-slate-100">
-                        <Award className="h-12 w-12" />
-                    </div>
-                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#152c31] mb-3">Quiz Voltooid!</h3>
-                    <p className="text-lg text-slate-600 font-medium">Je hebt alle vragen beantwoord.</p>
-                </div>
-                
-                <CardContent className="p-8 md:p-12 space-y-8 bg-slate-50/50">
-                    <div className="max-w-sm mx-auto pt-4 space-y-3">
-                        <Button 
-                            asChild
-                            size="lg"
-                            variant="outline"
-                            className="w-full font-bold text-lg h-14 rounded-xl border-2 border-[#152c31] text-[#152c31] hover:bg-[#152c31] hover:text-white transition-colors"
-                        >
-                            <Link href="/login">
-                                Inloggen om resultaten te zien
-                            </Link>
-                        </Button>
-                        <Button 
-                            size="lg" 
-                            onClick={async () => {
-                                if (leadName || leadEmail) {
-                                    try {
-                                        await fetch('/api/leads', {
-                                            method: 'POST',
-                                            headers: { 'Content-Type': 'application/json' },
-                                            body: JSON.stringify({ name: leadName, email: leadEmail }),
-                                        });
-                                    } catch (error) {
-                                        console.error('Failed to save lead:', error);
-                                    }
-                                }
-                                setShowLeadForm(false);
-                            }} 
-                            className="w-full font-bold shadow-xl text-lg h-14 rounded-xl bg-gradient-to-r from-[#152c31] to-[#1e3c42] hover:opacity-90 transition-opacity"
-                        >
-                            Bekijk Resultaat
-                            <ArrowRight className="ml-3 h-6 w-6" />
-                        </Button>
-                    </div>
-                </CardContent>
-            </Card>
-        );
+  useEffect(() => {
+    if (!isSettingsOpen) {
+      return;
     }
 
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsSettingsOpen(false);
+      }
+    };
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [isSettingsOpen]);
+
+  if (isFinished) {
+    const percentage = Math.round((score / quiz.questions.length) * 100);
+    const fallbackXp = Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length));
+
     return (
-      <div className="w-full max-w-6xl mx-auto mt-10 md:mt-16 animate-in fade-in zoom-in duration-500 px-4">
-        {/* Header Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground tracking-tight mb-4">Quiz Afgerond!</h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-foreground mx-auto rounded-full"></div>
-        </div>
+      <div className="mx-auto w-full max-w-340 px-4 pb-12 pt-6 sm:px-6 lg:px-8">
+        <Card className="border-[#d8e1ee] py-0 shadow-[0_14px_28px_-24px_rgba(22,42,74,0.55)] dark:border-slate-700 dark:bg-slate-900/80">
+          <CardContent className="p-6 lg:p-8">
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#607597]">Resultaat</p>
+            <h1 className="mt-2 text-3xl font-semibold text-[#1f2f4b] dark:text-slate-100 md:text-4xl">Quiz afgerond</h1>
 
-        {/* Score Section - Full Width */}
-        <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-2xl p-12 md:p-16 mb-8 border border-slate-200 dark:border-slate-700 shadow-lg">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-4xl mx-auto">
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-xs text-muted-foreground uppercase tracking-widest font-bold mb-4">JOUW RESULTAAT</p>
-              <div className="flex items-baseline gap-3 justify-center md:justify-start mb-6">
-                <p className="text-7xl md:text-8xl font-black text-foreground tracking-tighter">
-                  {score}
-                </p>
-                <span className="text-3xl md:text-4xl text-muted-foreground font-bold">/ {quiz.questions.length}</span>
-              </div>
-              <p className="text-xl font-medium text-muted-foreground italic font-serif leading-relaxed max-w-md">
-                {score === quiz.questions.length ? "Uitmuntend! Een ware schriftgeleerde." : 
-                 score > quiz.questions.length / 2 ? "Goed gedaan! Blijf de schriften onderzoeken." : "Blijf oefenen, de volhouder wint."}
-              </p>
-            </div>
-            
-            <div className="flex flex-col items-center gap-4">
-              {isLoggedIn && (
-                <div className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 rounded-xl text-sm font-bold shadow-md border border-emerald-200 dark:border-emerald-800/50">
-                  <Award className="h-5 w-5" /> + {earnedXp ?? Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length))} XP verdiend
+            <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
+              <div className="border border-[#dce5f1] bg-[#f8fafe] p-5 dark:border-slate-700 dark:bg-slate-800/60">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Jouw score</p>
+                <div className="mt-2 flex items-end gap-2">
+                  <p className="text-5xl font-bold text-[#1f2f4b] dark:text-slate-100">{score}</p>
+                  <p className="pb-1 text-2xl font-semibold text-[#5f7190] dark:text-slate-300">/ {quiz.questions.length}</p>
                 </div>
-              )}
-            </div>
-          </div>
-        </div>
+                <p className="mt-2 text-sm text-muted-foreground">{percentage}% correct</p>
 
-        {/* Auth/Premium Section */}
-        <div className="mb-8 max-w-2xl mx-auto">
-          {!isLoggedIn ? (
-            <div className="bg-[#152c31]/5 rounded-xl p-6 border border-[#152c31]/20">
-              <p className="text-base text-[#152c31] font-medium mb-4 text-center">Log in om uw score op te slaan en XP te verzamelen!</p>
-              <Button size="lg" asChild className="w-full h-14 text-lg font-bold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all">
-                <Link href="/login">Inloggen</Link>
+                <div className="mt-4 inline-flex items-center gap-2 bg-[#e9eff8] px-3 py-1 text-sm font-medium text-[#355384] dark:bg-slate-700 dark:text-blue-200">
+                  <Award className="h-4 w-4" />
+                  + {earnedXp ?? fallbackXp} XP verdiend
+                </div>
+              </div>
+
+              <div className="border border-[#dce5f1] bg-white p-5 dark:border-slate-700 dark:bg-slate-900/70">
+                <p className="text-sm font-semibold text-[#24395f] dark:text-slate-100">Volgende stap</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {percentage >= 90
+                    ? 'Sterk resultaat. Kies nu een moeilijkere quiz of een nieuwe categorie.'
+                    : percentage >= 60
+                      ? 'Goede basis. Herhaal deze quiz of werk verder in dezelfde categorie.'
+                      : 'Herhaling helpt. Speel opnieuw om je score te verbeteren.'}
+                </p>
+
+                {!isPremium && (
+                  <div className="mt-4 border border-[#d7e1ee] bg-[#f8fafe] p-3 dark:border-slate-700 dark:bg-slate-800/60">
+                    <p className="text-sm font-semibold text-[#24395f] dark:text-slate-100">Premium analyse</p>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Ontgrendel uitgebreide uitleg en meer voortgangsinzichten.
+                    </p>
+                    <Button asChild className="mt-3 h-9 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc]">
+                      <Link href="/premium">Bekijk Premium</Link>
+                    </Button>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => window.location.reload()}
+                className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+              >
+                <RotateCcw className="mr-2 h-4 w-4" />
+                Opnieuw spelen
+              </Button>
+
+              <Button
+                type="button"
+                onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')}
+                disabled={isSaving}
+                className="h-10 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc]"
+              >
+                {isSaving ? 'Opslaan...' : isLoggedIn ? 'Naar dashboard' : 'Naar home'}
               </Button>
             </div>
-          ) : !isPremium ? (
-            <div className="relative group">
-              <div className="bg-slate-100/50 rounded-xl p-6 border border-slate-200 blur-[1px] select-none">
-                <h4 className="font-bold text-slate-400 mb-2 text-lg">Gedetailleerde Foutenanalyse</h4>
-                <div className="h-3 w-full bg-slate-200 rounded mb-3"></div>
-                <div className="h-3 w-2/3 bg-slate-200 rounded"></div>
-              </div>
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60 backdrop-blur-[1px] rounded-xl">
-                <Lock className="h-8 w-8 text-slate-400 mb-3" />
-                <p className="text-sm font-semibold text-slate-600 mb-3">Premium Analyse</p>
-                <Button size="lg" variant="secondary" asChild className="h-12 px-8">
-                  <Link href="/premium">Ontgrendel</Link>
-                </Button>
-              </div>
-            </div>
-          ) : (
-            <div className="bg-emerald-50 rounded-xl p-6 border border-emerald-100">
-              <p className="text-base text-emerald-800 font-medium text-center">Volledige analyse opgeslagen in uw dashboard.</p>
-            </div>
-          )}
-        </div>
-
-        {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pb-12 max-w-2xl mx-auto">
-          <Button onClick={() => { playClickSound(); window.location.reload(); }} variant="outline" className="w-full sm:w-auto h-14 px-10 text-lg font-bold border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-400 rounded-xl transition-colors">
-            <RotateCcw className="mr-2 h-5 w-5" /> Opnieuw Spelen
-          </Button>
-          <Button onClick={() => { playClickSound(); router.push(isLoggedIn ? '/dashboard' : '/'); }} className="w-full sm:w-auto h-14 px-12 text-lg font-bold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all border-0" disabled={isSaving}>
-            {isSaving ? "Opslaan..." : isLoggedIn ? "Naar Dashboard" : "Terug naar Home"}
-          </Button>
-        </div>
+          </CardContent>
+        </Card>
       </div>
     );
   }
 
-  // Calculate progress
-  const progress = ((currentIndex) / quiz.questions.length) * 100;
-
   return (
-    <div className="flex-1 w-full flex flex-col md:flex-row relative transition-all duration-700 ease-in-out bg-white rounded-2xl md:rounded-[2rem] overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-[#d6e2fa]/20">
-        
-        {/* Left Side: Progress, Title, Controls */}
-        <div className="w-full md:w-[45%] lg:w-[40%] bg-[#eef4ff] p-4 md:p-10 lg:p-12 flex flex-col justify-between border-r border-[#d6e2fa]/50 relative shrink-0">
-            {/* Top Navigation */}
-            <div className="flex justify-between items-center w-full mb-4 md:mb-8 font-sans">
-                <Button variant="ghost" size="sm" className="text-[#547ee9] hover:bg-[#547ee9]/10 font-bold px-0 hover:text-[#3d62c2] transition-colors -ml-2" onClick={() => router.push('/quizzes')}>
-                    <ArrowLeft className="mr-1.5 h-4 w-4" strokeWidth={2.5} /> Homepage
+    <div className="w-full px-4 pb-4 pt-4 sm:px-6 lg:px-8">
+      <div className="grid min-h-[calc(100dvh-7rem)] gap-6 xl:grid-cols-[minmax(320px,0.38fr)_minmax(0,1fr)]">
+        <Card className="border-[#d8e1ee] bg-[#f8fafe] py-0 shadow-sm xl:sticky xl:top-24 xl:h-[calc(100dvh-7rem)] dark:border-slate-700 dark:bg-slate-900/70">
+          <CardContent className="h-full overflow-y-auto p-5 lg:p-6">
+            <div className="mb-4 flex items-center justify-between gap-3">
+              <Button
+                variant="ghost"
+                className="h-8 px-0 text-[#355384] hover:bg-transparent hover:text-[#243a5e] dark:text-blue-300 dark:hover:text-blue-200"
+                onClick={() => router.push('/quizzes')}
+              >
+                <ArrowLeft className="mr-1.5 h-4 w-4" />
+                Quizzen
+              </Button>
+
+              <div className="flex items-center gap-1.5">
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  onClick={toggleFullscreen}
+                  className="h-8 w-8 border-[#d7e1ee] bg-white text-[#355384] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                  aria-label="Volledig scherm"
+                >
+                  <Maximize className="h-4 w-4" />
                 </Button>
-                <div className="flex items-center gap-1 text-[#547ee9] relative">
-                    <Badge className="md:hidden bg-[#1a2942] text-amber-400 hover:bg-[#1a2942] text-xs h-7 px-2.5 rounded-full font-black border-2 border-amber-400/20 mr-1">{score} pt</Badge>
-                    <Button variant="ghost" size="icon" className="hover:bg-[#547ee9]/10 rounded-xl max-md:h-8 max-md:w-8" onClick={toggleFullscreen} title="Volledig scherm">
-                        <Maximize className="h-4 w-4" />
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  onClick={() => setIsSettingsOpen(true)}
+                  className="h-8 w-8 border-[#d7e1ee] bg-white text-[#355384] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                  aria-label="Instellingen"
+                >
+                  <Settings className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{quiz.title}</p>
+            <h1
+              className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 text-[#1f2f4b] dark:text-slate-100 ${
+                textSize === 'large'
+                  ? 'text-3xl md:text-[2.5rem] xl:text-[2.8rem]'
+                  : 'text-2xl md:text-[2.05rem] xl:text-[2.35rem]'
+              } font-semibold leading-[1.15]`}
+            >
+              {currentQuestion.text}
+            </h1>
+
+            <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
+              <div className="border border-[#d7e1ee] bg-white px-3 py-2 text-xs text-[#4e5f79] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                <span className="font-semibold text-[#24395f] dark:text-slate-100">Type:</span> Normale quiz
+              </div>
+              <div className="border border-[#d7e1ee] bg-white px-3 py-2 text-xs text-[#4e5f79] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                <span className="font-semibold text-[#24395f] dark:text-slate-100">Categorie:</span> {categoryLabel}
+              </div>
+              <div className="border border-[#d7e1ee] bg-white px-3 py-2 text-xs text-[#4e5f79] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 sm:col-span-2">
+                <span className="font-semibold text-[#24395f] dark:text-slate-100">Niveau:</span> {difficultyLabel}
+              </div>
+            </div>
+
+            <div className="mt-4 h-1.5 w-full overflow-hidden bg-[#e2eaf5] dark:bg-slate-700">
+              <div className="h-full bg-[#6f8ed4] transition-all dark:bg-blue-400" style={{ width: `${Math.max(2, progressPercentage)}%` }} />
+            </div>
+            <div className="mt-2 flex items-center justify-between text-xs text-muted-foreground">
+              <span>Vraag {currentIndex + 1} van {quiz.questions.length}</span>
+              <span>Score: {score}</span>
+            </div>
+
+            <div className="mt-5 border-t border-[#dce5f1] pt-4 text-xs text-muted-foreground dark:border-slate-700">
+              Gebruik instellingen om tekstgrootte en uitlegweergave aan te passen.
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="border-[#d8e1ee] py-0 shadow-[0_14px_28px_-24px_rgba(22,42,74,0.55)] xl:h-[calc(100dvh-7rem)] dark:border-slate-700 dark:bg-slate-900/80">
+          <CardContent className="flex h-full flex-col overflow-y-auto p-5 lg:p-6">
+            <div className="flex-1">
+              <div className="space-y-3">
+                {currentQuestion.answers.map((answer, index) => {
+                  const isSelected = selectedAnswer === index;
+                  const isCorrect = answer.isCorrect;
+
+                  let itemClass = 'border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800';
+                  if (hasAnswered) {
+                    if (isCorrect) {
+                      itemClass = 'border-[#22c55e] bg-[#22c55e]/12 text-[#166534] dark:border-emerald-500 dark:bg-emerald-500/20 dark:text-emerald-100';
+                    } else if (isSelected) {
+                      itemClass = 'border-[#ef4444] bg-[#ef4444]/12 text-[#991b1b] dark:border-rose-500 dark:bg-rose-500/20 dark:text-rose-100';
+                    } else {
+                      itemClass = 'border-[#e5ebf4] bg-[#fafcff] text-[#90a0b9] dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-400';
+                    }
+                  }
+
+                  return (
+                    <Button
+                      key={answer._id || index}
+                      type="button"
+                      variant="outline"
+                      disabled={hasAnswered}
+                      onClick={() => handleAnswer(index)}
+                      className={`h-auto w-full justify-start rounded-md border px-4 py-3 text-left text-sm ${itemClass}`}
+                    >
+                      <span className="mr-3 inline-flex h-5 w-5 items-center justify-center border border-current/35">
+                        {hasAnswered && isCorrect && <CheckCircle2 className="h-3.5 w-3.5" />}
+                        {hasAnswered && !isCorrect && isSelected && <X className="h-3.5 w-3.5" />}
+                      </span>
+                      <span className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} ${textSize === 'large' ? 'text-base' : 'text-sm'} leading-relaxed`}>
+                        {answer.text}
+                      </span>
                     </Button>
-                    <Button variant="ghost" size="icon" className={`hover:bg-[#547ee9]/10 rounded-xl max-md:h-8 max-md:w-8 ${isSettingsOpen ? 'bg-[#547ee9]/10' : ''}`} onClick={() => setIsSettingsOpen(!isSettingsOpen)} title="Instellingen">
-                        <Settings className="h-4 w-4" />
-                    </Button>
+                  );
+                })}
+              </div>
 
-                    {/* Settings Overlay */}
-                    {isSettingsOpen && (
-                        <>
-                            <div className="fixed inset-0 z-40" onClick={() => setIsSettingsOpen(false)} />
-                            <div className="absolute top-full mt-2 right-0 z-50 w-72 bg-white rounded-xl shadow-2xl border border-slate-100 p-4 animate-in fade-in zoom-in-95 duration-200 text-left font-sans">
-                                <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wider">Instellingen</h4>
-                                <div className="space-y-4">
-                                <div className="flex items-center justify-between">
-                                    <span className="text-sm text-slate-600">Tekstgrootte</span>
-                                    <div className="flex gap-1">
-                                        <Button 
-                                            variant="outline" 
-                                            size="sm" 
-                                            onClick={() => setTextSize('normal')}
-                                            className={`h-8 px-2 ${textSize === 'normal' ? 'bg-[#547ee9]/10 border-[#547ee9] text-[#547ee9]' : ''}`}
-                                        >
-                                            <span className="text-xs">Aa</span>
-                                        </Button>
-                                        <Button 
-                                            variant="outline" 
-                                            size="sm" 
-                                            onClick={() => setTextSize('large')}
-                                            className={`h-8 px-2 ${textSize === 'large' ? 'bg-[#547ee9]/10 border-[#547ee9] text-[#547ee9]' : ''}`}
-                                        >
-                                            <span className="text-lg">Aa</span>
-                                        </Button>
-                                    </div>
-                                </div>
+              {hasAnswered && showExplanation && (
+                <div className="mt-5 border border-[#d7e1ee] bg-[#f8fafe] p-4 dark:border-slate-700 dark:bg-slate-800/60">
+                  <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#355384]">
+                    <BookOpen className="h-4 w-4" />
+                    Uitleg
+                  </p>
 
-                                <div className="flex items-center justify-between">
-                                    <span className="text-sm text-slate-600">Lettertype</span>
-                                    <Button 
-                                        variant="outline" 
-                                        size="sm" 
-                                        onClick={toggleFontFamily}
-                                        className="w-24 h-8 text-xs"
-                                    >
-                                        {fontFamily === 'serif' ? 'Serif' : 'Sans Serif'}
-                                    </Button>
-                                </div>
-
-                                <div className="flex items-center justify-between opacity-100">
-                                    <div className="flex flex-col">
-                                        <span className="text-sm text-slate-600">Toon Uitleg</span>
-                                        {!isPremium && (
-                                            <span className="text-[10px] text-[#547ee9] font-bold uppercase tracking-tighter flex items-center gap-0.5">
-                                                <Lock className="h-2 w-2" /> PREMIUM
-                                            </span>
-                                        )}
-                                    </div>
-                                    <Button 
-                                        variant={showExplanation ? "default" : "outline"}
-                                        size="sm" 
-                                        onClick={() => {
-                                            if (isPremium) {
-                                                toggleShowExplanation();
-                                            } else {
-                                                router.push('/premium');
-                                            }
-                                        }}
-                                        className={`h-8 w-12 ${showExplanation ? 'bg-[#547ee9] text-white' : ''} transition-all`}
-                                    >
-                                        {showExplanation ? "Aan" : "Uit"}
-                                    </Button>
-                                </div>
-                            </div>
-                            <div className="mt-4 pt-3 border-t border-slate-100 flex justify-end">
-                                <Button variant="ghost" size="sm" onClick={() => setIsSettingsOpen(false)} className="h-8 text-xs">Sluiten</Button>
-                            </div>
-                        </div>
-                        </>
-                    )}
-                </div>
-            </div>
-
-            {/* Question Details */}
-            <div className="flex flex-col flex-grow justify-center py-2 md:py-4">
-                <p className="text-[#547ee9]/80 font-bold text-base md:text-xl mb-2 md:mb-6 tracking-wide">
-                    vraag {currentIndex + 1}/{quiz.questions.length}
-                </p>
-                <h1 className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} text-[#1a2942] font-black ${textSize === 'large' ? 'text-[26px] md:text-4xl lg:text-5xl' : 'text-2xl md:text-4xl lg:text-4xl'} leading-[1.15] md:leading-[1.1] tracking-tight mb-2 md:mb-4`}>
-                    {currentQuestion.text}
-                </h1>
-                <p className="text-[#648be3] font-semibold text-sm md:text-xl mt-1 md:mt-2">
-                    Selecteer een antwoord
-                </p>
-            </div>
-
-            {/* Bottom Brand */}
-            <div className="hidden md:flex justify-between items-end mt-8">
-                 <Link href="/" className="flex items-center gap-2 group">
-                   <div className="relative h-8 w-8 transition-transform group-hover:scale-110">
-                      <Image 
-                         src="/icon/Logo%20-%20dark.svg" 
-                         alt="BijbelQuiz Logo" 
-                         fill 
-                         className="object-contain dark:hidden"
-                         priority 
-                      />
-                      <Image 
-                         src="/icon/Logo%20-%20light.svg" 
-                         alt="BijbelQuiz Logo" 
-                         fill 
-                         className="object-contain hidden dark:block"
-                         priority 
-                      />
-                   </div>
-                   <span className="text-xl font-bold font-serif tracking-tight text-foreground">
-                     Bijbel<span className="text-[#192942] dark:text-white italic">Quiz</span>
-                   </span>
-                 </Link>
-                 <div className="text-right">
-                    <span className="text-xs font-bold text-[#648be3] uppercase tracking-widest block mb-1">Score</span>
-                    <Badge className="bg-[#1a2942] text-amber-400 hover:bg-[#1a2942] text-sm md:text-base h-8 px-3 rounded-full font-black border-2 border-amber-400/20">{score}</Badge>
-                 </div>
-            </div>
-        </div>
-
-        {/* Right Side: Options & Actions */}
-        <div className="w-full md:w-[55%] lg:w-[60%] bg-white px-4 py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 flex flex-col justify-center relative overflow-y-auto">
-            {/* Progress Bar (Top) */}
-            <div className="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-slate-100">
-                <div className="bg-[#547ee9] h-full transition-all duration-700 ease-out" style={{ width: `${Math.max(2, progress)}%` }}></div>
-            </div>
-
-            <div className="w-full max-w-2xl mx-auto flex-grow flex flex-col justify-center pt-4 md:pt-8">
-                {/* Answers List */}
-                <div className="flex flex-col gap-2.5 md:gap-3 w-full">
-                    {currentQuestion.answers.map((answer, index) => {
-                        let className = `group justify-start text-left h-auto px-4 md:px-5 w-full text-sm md:text-base transition-all relative border-[2px] md:border-[2.5px] rounded-xl md:rounded-2xl font-bold active:scale-[0.99] ${textSize === 'large' ? 'py-3 md:py-5 text-base md:text-lg' : 'py-2.5 md:py-4'}`;
-                        const variant: "outline" | "default" | "secondary" = "outline";
-
-                        if (hasAnswered) {
-                            if (answer.isCorrect) {
-                                className += " bg-emerald-50/50 border-emerald-500 text-emerald-950 shadow-none ring-2 ring-emerald-100 ring-offset-1";
-                            } else if (index === selectedAnswer) {
-                                className += " bg-red-50/50 border-red-500 text-red-950 shadow-none";
-                            } else {
-                                className += " opacity-50 border-slate-200 bg-slate-50 text-slate-500";
-                            }
-                        } else {
-                            className += " border-slate-200 bg-white hover:bg-slate-50/80 hover:border-[#547ee9]/40 hover:text-[#547ee9] text-slate-700 shadow-sm";
-                        }
-
-                        return (
-                            <Button
-                                key={index}
-                                variant={variant}
-                                className={className}
-                                onClick={() => handleAnswer(answer.isCorrect, index)}
-                                disabled={hasAnswered}
-                            >
-                                <span className={`mr-3 md:mr-4 inline-flex h-4 w-4 md:h-5 md:w-5 shrink-0 items-center justify-center rounded-full border-[2.5px] transition-colors ${
-                                    hasAnswered && answer.isCorrect ? "bg-emerald-500 border-emerald-500" : 
-                                    hasAnswered && index === selectedAnswer ? "bg-red-500 border-red-500" : 
-                                    "border-[#cbd5e1] group-hover:border-[#547ee9]"
-                                }`}>
-                                    {hasAnswered && answer.isCorrect && <CheckCircle2 className="h-3 w-3 md:h-3.5 md:w-3.5 text-white" strokeWidth={3.5} />}
-                                    {hasAnswered && !answer.isCorrect && index === selectedAnswer && <X className="h-3 w-3 md:h-3.5 md:w-3.5 text-white" strokeWidth={3.5} />}
-                                </span>
-                                <span className="flex-1 leading-snug break-words">{answer.text}</span>
-                            </Button>
-                        );
-                    })}
-                </div>
-                
-                {/* Explanation Section */}
-                {hasAnswered && showExplanation && (
-                    <div className="animate-in fade-in slide-in-from-bottom-5 duration-500 mt-6 md:mt-8">
-                        <div className={`rounded-2xl bg-white border-2 border-slate-100 ${textSize === 'large' ? 'p-6' : 'p-5 md:p-6'} relative overflow-hidden shadow-xl shadow-[#1a2942]/5`}>
-                            <div className="absolute top-0 left-0 w-full h-[4px] bg-[#1a2942]"></div>
-                            <h4 className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#1a2942] mb-3 md:mb-4">
-                                <BookOpen className="h-4 w-4 text-[#1a2942]" strokeWidth={2.5} /> 
-                                Uitleg
-                            </h4>
-                            
-                            {isPremium ? (
-                                <>
-                                    <div className={`text-slate-600 ${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} leading-relaxed mb-4 ${textSize === 'large' ? 'text-lg md:text-xl' : 'text-base md:text-[17px] font-medium'}`}>
-                                        {currentQuestion.explanation || "Geen extra uitleg beschikbaar."}
-                                    </div>
-                                </>
-                            ) : (
-                                <div className="flex flex-col items-center text-center mt-2 mb-4">
-                                    <div className="bg-slate-50/80 rounded-xl p-4 border border-slate-100 w-full mb-3 select-none relative overflow-hidden">
-                                        <p className="text-sm text-slate-400 italic blur-[2.5px] opacity-70 font-serif">
-                                            {currentQuestion.explanation?.substring(0, 80) || "Uitleg en verdieping beschikbaar voor Premium leden, ontdek nieuwe inzichten in de Bijbel."}...
-                                        </p>
-                                    </div>
-                                    <Button size="lg" asChild className="bg-[#1a2942] hover:bg-[#121c2d] text-amber-400 gap-2 shadow-[0_6px_15px_-4px_rgba(26,41,66,0.3)] font-bold rounded-xl h-12 px-8">
-                                        <Link href="/premium">
-                                            <Lock className="h-5 w-5 text-amber-400" /> Ontgrendel Uitleg
-                                        </Link>
-                                    </Button>
-                                </div>
-                            )}
-                            
-                            {currentQuestion.bibleReference && (
-                                <div className={`inline-flex items-center gap-2 text-xs font-bold bg-[#1a2942]/5 text-[#1a2942] border border-[#1a2942]/10 px-4 py-2 rounded-xl shadow-sm ${!isPremium ? 'mt-2' : ''}`}>
-                                    <BookOpen className="h-3.5 w-3.5" />
-                                    <span>Referentie: <strong>{currentQuestion.bibleReference}</strong></span>
-                                </div>
-                            )}
-                        </div>
+                  {isPremium ? (
+                    <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 text-sm leading-relaxed text-[#30466e] dark:text-slate-200`}>
+                      {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
+                    </p>
+                  ) : (
+                    <div className="mt-2 border border-[#d7e1ee] bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
+                      <p className="text-sm text-muted-foreground">Uitleg is beschikbaar voor Premium leden.</p>
+                      <Button asChild className="mt-3 h-9 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc]">
+                        <Link href="/premium">Ontgrendel uitleg</Link>
+                      </Button>
                     </div>
-                )}
+                  )}
+
+                  {currentQuestion.bibleReference && (
+                    <Badge variant="secondary" className="mt-3 bg-[#e9eff8] text-[#355384] dark:bg-slate-700 dark:text-blue-200">
+                      Referentie: {currentQuestion.bibleReference}
+                    </Badge>
+                  )}
+                </div>
+              )}
             </div>
 
-            {hasAnswered && (
-                <div className="mt-6 pt-5 pb-0 flex justify-end w-full max-w-2xl mx-auto border-t border-slate-100">
-                    <Button size="default" onClick={handeNext} className="group px-6 md:px-8 font-bold shadow-[0_8px_20px_-6px_rgba(84,126,233,0.4)] text-sm md:text-base h-12 md:h-14 w-full md:w-auto rounded-xl bg-[#547ee9] hover:bg-[#476ecc] text-white transition-all hover:shadow-[0_12px_24px_-8px_rgba(84,126,233,0.5)] active:scale-[0.98]">
-                        {currentIndex < quiz.questions.length - 1 ? "Volgende Vraag" : "Quiz Afronden"}
-                        <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-1" />
+            {(currentIndex > 0 || hasAnswered) && (
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  {currentIndex > 0 && (
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={handlePrevious}
+                      className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                    >
+                      <ArrowLeft className="mr-2 h-4 w-4" />
+                      Vorige vraag
                     </Button>
+                  )}
                 </div>
+
+                {hasAnswered && (
+                  <Button
+                    type="button"
+                    onClick={handleNext}
+                    className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc]"
+                  >
+                    {currentIndex < quiz.questions.length - 1 ? 'Volgende vraag' : 'Quiz afronden'}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                )}
+              </div>
             )}
+          </CardContent>
+        </Card>
+      </div>
+
+      {isSettingsOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4"
+          onClick={() => setIsSettingsOpen(false)}
+        >
+          <div
+            className="w-full max-w-md border border-[#d7e1ee] bg-white p-4 shadow-xl dark:border-slate-700 dark:bg-slate-900"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-base font-semibold text-[#1f2f4b] dark:text-slate-100">Instellingen</h2>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                className="h-8 w-8 text-[#30466e] dark:text-slate-200"
+                onClick={() => setIsSettingsOpen(false)}
+                aria-label="Instellingen sluiten"
+              >
+                <X className="h-4 w-4" />
+              </Button>
+            </div>
+
+            <div className="space-y-3">
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-sm text-[#30466e] dark:text-slate-200">Tekstgrootte</span>
+                <div className="flex items-center gap-1">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className={`h-8 rounded-md px-2 text-xs ${textSize === 'normal' ? 'bg-[#edf2fa] text-[#24395f] dark:bg-slate-800 dark:text-slate-100' : 'bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200'}`}
+                    onClick={() => setTextSize('normal')}
+                  >
+                    Normaal
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className={`h-8 rounded-md px-2 text-xs ${textSize === 'large' ? 'bg-[#edf2fa] text-[#24395f] dark:bg-slate-800 dark:text-slate-100' : 'bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200'}`}
+                    onClick={() => setTextSize('large')}
+                  >
+                    Groot
+                  </Button>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-sm text-[#30466e] dark:text-slate-200">Lettertype</span>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="h-8 rounded-md px-2 text-xs dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+                  onClick={() => setFontFamily((value) => (value === 'serif' ? 'sans' : 'serif'))}
+                >
+                  {fontFamily === 'serif' ? 'Serif' : 'Sans'}
+                </Button>
+              </div>
+
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-sm text-[#30466e] dark:text-slate-200">Toon uitleg</p>
+                  {!isPremium && (
+                    <p className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-[#6f8ed4]">
+                      <Lock className="h-3 w-3" />
+                      Premium
+                    </p>
+                  )}
+                </div>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className={`h-8 rounded-md px-2 text-xs ${showExplanation ? 'bg-[#edf2fa] text-[#24395f] dark:bg-slate-800 dark:text-slate-100' : 'bg-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200'}`}
+                  onClick={() => {
+                    if (isPremium) {
+                      setShowExplanation((value) => !value);
+                    } else {
+                      router.push('/premium');
+                    }
+                  }}
+                >
+                  {showExplanation ? 'Aan' : 'Uit'}
+                </Button>
+              </div>
+            </div>
+
+            <div className="mt-4 flex justify-end">
+              <Button
+                type="button"
+                variant="outline"
+                className="h-9 rounded-md border-[#d7e1ee] bg-white px-3 text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                onClick={() => setIsSettingsOpen(false)}
+              >
+                Sluiten
+              </Button>
+            </div>
+          </div>
         </div>
+      )}
     </div>
   );
 }

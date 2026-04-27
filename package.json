@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev:host": "next dev -H 0.0.0.0",
+    "dev": "tsx server.ts dev",
+    "dev:host": "tsx server.ts dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "tsx server.ts start",
+    "lint": "next lint",
+    "test": "node --import tsx --test tests/**/*.test.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -34,6 +35,8 @@
     "sonner": "^2.0.7",
     "stripe": "^20.1.2",
     "tailwind-merge": "^3.4.0",
+    "tsx": "^4.20.6",
+    "ws": "^8.18.3",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -43,6 +46,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/ws": "^8.18.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4.0.0",

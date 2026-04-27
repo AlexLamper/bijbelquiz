@@ -1,28 +1,30 @@
 import { getServerSession } from 'next-auth';
+import { Metadata } from 'next';
+import Link from 'next/link';
+import type Stripe from 'stripe';
+import {
+  ArrowLeft,
+  Calendar,
+  CheckCircle2,
+  CreditCard,
+  Crown,
+  Flame,
+  Mail,
+  Star,
+  Target,
+  Trophy,
+  TrendingUp,
+  User as UserIcon,
+} from 'lucide-react';
+
 import { authOptions } from '@/lib/auth';
-import { redirect } from 'next/navigation';
 import { connectDB, User } from '@/database';
 import stripe from '@/lib/stripe';
-import type Stripe from 'stripe';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { getLevelInfo, BADGES, LEVELS } from '@/lib/gamification';
-import { 
-  User as UserIcon, 
-  Mail, 
-  Star, 
-  Calendar, 
-  Trophy, 
-  Flame, 
-  CheckCircle2, 
-  Crown, 
-  ArrowLeft,
-  Target,
-  TrendingUp,
-  CreditCard
-} from 'lucide-react';
-import { Metadata } from 'next';
-import Breadcrumb from '@/components/Breadcrumb';
+import { redirect } from 'next/navigation';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   title: 'Mijn Profiel - BijbelQuiz',
@@ -46,7 +48,6 @@ export default async function ProfilePage() {
     return <div>Gebruiker niet gevonden</div>;
   }
 
-  // Get quiz statistics directly from the saved User model
   const totalQuizzesDone = user.quizzesPlayed || 0;
   const avgScore = user.averageScore || 0;
 
@@ -140,319 +141,310 @@ export default async function ProfilePage() {
     incomplete_expired: 'Verlopen',
   };
 
-  const subscriptionStatusText = subscriptionStatusLabel[resolvedSubscriptionStatus] || (isMonthlyPremium ? 'In verwerking' : 'Levenslang actief');
+  const subscriptionStatusText =
+    subscriptionStatusLabel[resolvedSubscriptionStatus] ||
+    (isMonthlyPremium ? 'In verwerking' : 'Levenslang actief');
+
   const resolvedPeriodEndDate = subscriptionCurrentPeriodEnd as Date | null;
   const subscriptionEndDateLabel = resolvedPeriodEndDate
-    ? resolvedPeriodEndDate.toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })
+    ? resolvedPeriodEndDate.toLocaleDateString('nl-NL', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
     : null;
-  
+
   const levelInfo = getLevelInfo(user.xp || 0);
 
   return (
-    <div className="min-h-screen bg-[#f0f4fa] dark:bg-background">
-      {/* Header Section */}
-      <div className="bg-[#1a2942] pt-24 md:pt-32 pb-24 -mt-[104px]">
-        <div className="container mx-auto px-4 max-w-[1200px]">
-          <div className="block md:hidden h-6" />
-          <Breadcrumb
-            items={[
-              { label: 'Dashboard', href: '/dashboard' },
-              { label: 'Mijn Profiel' },
-            ]}
-            className="mb-6 text-white/60 [&_a]:text-white/60 [&_a:hover]:text-white [&_span]:text-white"
-          />
-          
-          <Link 
-            href="/dashboard" 
-            className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-6"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            <span className="text-sm font-medium">Terug naar Dashboard</span>
-          </Link>
+    <div className="-mt-24 min-h-screen pt-24 pb-12">
+      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
+        <Card className="border-[#d8e1ee] shadow-[0_14px_28px_-24px_rgba(22,42,74,0.55)]">
+          <CardContent className="p-6 lg:p-7">
+            <Link
+              href="/dashboard"
+              className="mb-5 inline-flex items-center gap-2 text-sm font-medium text-[#4f6281] hover:text-[#2c4166]"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Terug naar dashboard
+            </Link>
 
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-            {/* Avatar */}
-            <div className="w-24 h-24 rounded-2xl bg-white/10 flex items-center justify-center overflow-hidden border-2 border-white/20">
-              {user.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={user.image} alt={user.name || 'User'} className="w-full h-full object-cover" />
-              ) : (
-                <UserIcon className="w-12 h-12 text-white/60" />
-              )}
-            </div>
-            
-            {/* User Info */}
-            <div className="flex-1">
-              <div className="flex items-center gap-3 mb-2">
-                <h1 className="text-2xl md:text-3xl font-bold text-white">
-                  {user.name || 'Naamloos'}
-                </h1>
-                {user.isPremium && (
-                  <span className="inline-flex items-center gap-1 rounded-md bg-[#5b7dd9]/20 px-2.5 py-1 text-xs font-bold text-[#5b7dd9] uppercase tracking-wider">
-                    <Star className="h-3 w-3 fill-[#5b7dd9]" /> PREMIUM
-                  </span>
+            <div className="grid gap-5 md:grid-cols-[auto_minmax(0,1fr)] md:items-center">
+              <div className="flex h-20 w-20 items-center justify-center border border-[#d8e1ee] bg-[#f5f8fd]">
+                {user.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={user.image} alt={user.name || 'Gebruiker'} className="h-full w-full object-cover" />
+                ) : (
+                  <UserIcon className="h-8 w-8 text-[#607597]" />
                 )}
               </div>
-              <p className="text-white/60 flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                {user.email}
-              </p>
-              <p className="text-white/40 text-sm mt-1 flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
-                Lid sinds {new Date(user.createdAt).toLocaleDateString('nl-NL', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Content Section */}
-      <div className="container mx-auto px-4 max-w-[1200px] -mt-16 pb-14">
-        {/* Stats Cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
-            <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Totaal XP</span>
-              <Trophy className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
-            </div>
-            <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{user.xp || 0}</div>
-          </div>
-
-          <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
-            <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Dagen Reeks</span>
-              <Flame className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
-            </div>
-            <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{user.streak || 0}</div>
-          </div>
-
-          <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
-            <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Quizzen Gespeeld</span>
-              <CheckCircle2 className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
-            </div>
-            <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{totalQuizzesDone}</div>
-          </div>
-
-          <div className="bg-white dark:bg-card rounded-2xl p-5 shadow-lg">
-            <div className="flex items-start justify-between mb-3">
-              <span className="text-xs font-semibold text-primary dark:text-[#5b7dd9] uppercase tracking-wider">Gem. Score</span>
-              <Target className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
-            </div>
-            <div className="text-3xl font-bold text-[#1a2333] dark:text-foreground">{avgScore}%</div>
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-6">
-          {/* Level Progress Card */}
-          <div className="lg:col-span-2 bg-white dark:bg-card rounded-2xl p-6 shadow-lg">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 flex items-center justify-center">
-                <TrendingUp className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
-              </div>
               <div>
-                <h2 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Niveau Voortgang</h2>
-                <p className="text-sm text-muted-foreground">Verdien XP om een hoger niveau te bereiken</p>
-              </div>
-            </div>
-            
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-6">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#5b7dd9] to-[#4a6bc7] flex items-center justify-center shrink-0">
-                  <span className="text-3xl font-bold text-white">{levelInfo.level}</span>
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-lg font-semibold text-[#1a2942] dark:text-foreground">{levelInfo.title}</span>
-                    <span className="text-sm text-muted-foreground">{levelInfo.progressPercentage}%</span>
-                  </div>
-                  <div className="h-3 w-full bg-gray-100 dark:bg-muted rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-gradient-to-r from-[#5b7dd9] to-[#4a6bc7] rounded-full transition-all duration-1000"
-                      style={{ width: `${levelInfo.progressPercentage}%` }}
-                    />
-                  </div>
-                  {!levelInfo.isMaxLevel && (
-                    <p className="text-sm text-muted-foreground mt-2">
-                      Nog {levelInfo.nextLevelXp - levelInfo.currentXp} XP tot het volgende niveau
-                    </p>
+                <div className="flex flex-wrap items-center gap-2">
+                  <h1 className="text-3xl font-semibold text-[#1f2f4b] md:text-4xl">{user.name || 'Naamloos'}</h1>
+                  {user.isPremium && (
+                    <Badge className="bg-[#e9eff8] text-[#355384]">
+                      <Star className="mr-1 h-3.5 w-3.5" />
+                      Premium
+                    </Badge>
                   )}
                 </div>
+
+                <p className="mt-2 inline-flex items-center gap-2 text-sm text-muted-foreground">
+                  <Mail className="h-4 w-4" />
+                  {user.email}
+                </p>
+                <p className="mt-1 inline-flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="h-4 w-4" />
+                  Lid sinds{' '}
+                  {new Date(user.createdAt).toLocaleDateString('nl-NL', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-6 lg:px-8">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <Card className="border-[#d8e1ee] shadow-sm">
+            <CardContent className="p-5">
+              <div className="mb-3 flex items-center justify-between">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Totaal XP</p>
+                <Trophy className="h-4 w-4 text-[#4f6faa]" />
+              </div>
+              <p className="text-3xl font-bold text-[#1f2f4b]">{user.xp || 0}</p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-[#d8e1ee] shadow-sm">
+            <CardContent className="p-5">
+              <div className="mb-3 flex items-center justify-between">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Dagen reeks</p>
+                <Flame className="h-4 w-4 text-[#4f6faa]" />
+              </div>
+              <p className="text-3xl font-bold text-[#1f2f4b]">{user.streak || 0}</p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-[#d8e1ee] shadow-sm">
+            <CardContent className="p-5">
+              <div className="mb-3 flex items-center justify-between">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Quizzen gespeeld</p>
+                <CheckCircle2 className="h-4 w-4 text-[#4f6faa]" />
+              </div>
+              <p className="text-3xl font-bold text-[#1f2f4b]">{totalQuizzesDone}</p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-[#d8e1ee] shadow-sm">
+            <CardContent className="p-5">
+              <div className="mb-3 flex items-center justify-between">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Gemiddelde score</p>
+                <Target className="h-4 w-4 text-[#4f6faa]" />
+              </div>
+              <p className="text-3xl font-bold text-[#1f2f4b]">{avgScore}%</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="mt-6 grid gap-6 xl:grid-cols-[minmax(0,2fr)_minmax(320px,1fr)]">
+          <Card className="border-[#d8e1ee] shadow-sm">
+            <CardContent className="p-6">
+              <div className="mb-5 flex items-center gap-3">
+                <div className="bg-[#edf2fa] p-2 text-[#4f6faa]">
+                  <TrendingUp className="h-5 w-5" />
+                </div>
+                <div>
+                  <h2 className="text-xl font-semibold text-[#1f2f4b]">Niveau voortgang</h2>
+                  <p className="text-sm text-muted-foreground">Verdien XP om nieuwe niveaus te ontgrendelen</p>
+                </div>
               </div>
 
-              <div className="mt-4 pt-6 border-t border-border/50">
-                <h3 className="text-sm font-semibold text-[#1a2942] dark:text-foreground mb-4 uppercase tracking-wider">Alle Niveaus</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {LEVELS.map((level) => {
-                    const isReached = user.xp >= level.minXp;
-                    const isCurrent = level.level === levelInfo.level;
-                    
+              <div className="border border-[#d9e3f1] bg-[#f8fafe] p-5">
+                <div className="flex items-center gap-5">
+                  <div className="flex h-16 w-16 items-center justify-center bg-[#6f8ed4] text-2xl font-bold text-white">
+                    {levelInfo.level}
+                  </div>
+
+                  <div className="flex-1">
+                    <div className="mb-2 flex items-center justify-between">
+                      <p className="text-lg font-semibold text-[#24395f]">{levelInfo.title}</p>
+                      <p className="text-sm text-muted-foreground">{levelInfo.progressPercentage}%</p>
+                    </div>
+
+                    <div className="h-2.5 w-full overflow-hidden bg-[#e2eaf5]">
+                      <div
+                        className="h-full bg-[#6f8ed4]"
+                        style={{ width: `${levelInfo.progressPercentage}%` }}
+                      />
+                    </div>
+
+                    {!levelInfo.isMaxLevel && (
+                      <p className="mt-2 text-sm text-muted-foreground">
+                        Nog {levelInfo.nextLevelXp - levelInfo.currentXp} XP tot het volgende niveau
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Alle niveaus</p>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {LEVELS.map((entry) => {
+                    const isReached = user.xp >= entry.minXp;
+                    const isCurrent = entry.level === levelInfo.level;
+
                     return (
-                      <div 
-                        key={level.level} 
-                        className={`flex items-center gap-3 p-3 rounded-xl border transition-all ${
+                      <div
+                        key={entry.level}
+                        className={
                           isCurrent
-                            ? 'bg-[#5b7dd9]/10 border-[#5b7dd9]/30'
-                            : isReached 
-                              ? 'bg-gray-50 dark:bg-card/50 border-gray-200 dark:border-border' 
-                              : 'bg-gray-50/50 dark:bg-card/30 border-transparent opacity-50 grayscale'
-                        }`}
+                            ? 'border border-[#bfd0ee] bg-[#edf2fa] p-3'
+                            : isReached
+                              ? 'border border-[#d7e1ee] bg-white p-3'
+                              : 'border border-[#edf2f9] bg-[#f8fafe] p-3 opacity-70'
+                        }
                       >
-                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm ${
-                          isCurrent 
-                            ? 'bg-[#5b7dd9] text-white' 
-                            : isReached 
-                              ? 'bg-gray-200 dark:bg-muted text-gray-700 dark:text-foreground' 
-                              : 'bg-gray-100 dark:bg-muted/50 text-gray-400 dark:text-muted-foreground'
-                        }`}>
-                          {level.level}
+                        <div className="flex items-center justify-between">
+                          <p className="text-sm font-semibold text-[#24395f]">Niveau {entry.level}</p>
+                          {isReached && <CheckCircle2 className="h-4 w-4 text-[#5f7fc7]" />}
                         </div>
-                        <div className="flex-1">
-                          <div className="flex items-center justify-between">
-                            <h4 className={`text-sm font-semibold ${
-                              isCurrent 
-                                ? 'text-primary dark:text-[#5b7dd9] dark:text-primary dark:text-[#5b7dd9]' 
-                                : isReached 
-                                  ? 'text-[#1a2942] dark:text-foreground' 
-                                  : 'text-gray-500 dark:text-muted-foreground'
-                            }`}>
-                              {level.title}
-                            </h4>
-                            {isReached && !isCurrent && (
-                              <CheckCircle2 className="w-4 h-4 text-primary dark:text-[#5b7dd9]/70" />
-                            )}
-                          </div>
-                          <p className="text-xs text-muted-foreground mt-0.5">{level.minXp} XP</p>
-                        </div>
+                        <p className="mt-0.5 text-sm text-[#30466e]">{entry.title}</p>
+                        <p className="mt-1 text-xs text-muted-foreground">Vanaf {entry.minXp} XP</p>
                       </div>
                     );
                   })}
                 </div>
               </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
 
-          {/* Badges Card */}
-          <div className="bg-white dark:bg-card rounded-2xl p-6 shadow-lg lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 dark:bg-[#5b7dd9]/20 flex items-center justify-center">
-                <Star className="w-5 h-5 text-[#5b7dd9]" />
-              </div>
-              <div>
-                <h2 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Badges</h2>
-                <p className="text-sm text-muted-foreground">{(user.badges || []).length} van de {BADGES.length} verdiend</p>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 gap-3">
-              {BADGES.map((badge) => {
-                const earned = (user.badges || []).includes(badge.id);
-                return (
-                  <div 
-                    key={badge.id} 
-                    className={`flex items-center gap-3 p-3 rounded-xl border transition-all ${
-                      earned 
-                        ? 'bg-[#5b7dd9]/5 dark:bg-[#5b7dd9]/10 border-[#5b7dd9]/20 dark:border-[#5b7dd9]/30' 
-                        : 'bg-gray-50/50 dark:bg-card/50 border-gray-100 dark:border-border opacity-60 grayscale-[0.8]'
-                    }`}
-                  >
-                    <div className="text-2xl">{badge.icon}</div>
-                    <div>
-                      <h4 className={`text-sm font-semibold ${earned ? 'text-[#5b7dd9] dark:text-[#5b7dd9]' : 'text-gray-600 dark:text-muted-foreground'}`}>
-                        {badge.name}
-                      </h4>
-                      <p className="text-xs text-muted-foreground mt-0.5">{badge.description}</p>
-                    </div>
-                    {earned && (
-                      <CheckCircle2 className="w-4 h-4 text-[#5b7dd9] ml-auto opacity-70" />
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        {/* Premium Upsell (for non-premium users) */}
-        {!user.isPremium && (
-          <div className="mt-8 bg-gradient-to-r from-[#1a2942] to-[#2a3f5f] rounded-2xl p-8 text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#5b7dd9]/20 px-4 py-2 mb-4">
-              <Crown className="h-5 w-5 text-primary dark:text-[#5b7dd9]" />
-              <span className="text-sm font-medium text-primary dark:text-[#5b7dd9]">Premium</span>
-            </div>
-            <h3 className="text-2xl font-serif font-medium text-white mb-2">
-              Upgrade naar Premium
-            </h3>
-            <p className="text-white/70 mb-6 max-w-md mx-auto">
-              Krijg toegang tot alle quizzen, speel zonder advertenties en ontdek exclusieve content.
-            </p>
-            <Button
-              className="rounded-full bg-[#5b7dd9] px-8 py-6 text-base font-medium text-white hover:bg-[#4a6bc7]"
-              asChild
-            >
-              <Link href="/premium">Word nu Premium</Link>
-            </Button>
-          </div>
-        )}
-
-        {/* Unified Premium Billing Card */}
-        {user.isPremium && (
-          <div className="mt-8 bg-white dark:bg-card rounded-2xl p-6 border border-border shadow-lg">
-            <div className="flex items-start justify-between gap-4 mb-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#5b7dd9]/10 flex items-center justify-center">
-                  <CreditCard className="w-5 h-5 text-primary dark:text-[#5b7dd9]" />
+          <Card className="border-[#d8e1ee] shadow-sm">
+            <CardContent className="p-6">
+              <div className="mb-5 flex items-center gap-3">
+                <div className="bg-[#edf2fa] p-2 text-[#4f6faa]">
+                  <Star className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl font-medium text-[#1a2942] dark:text-foreground">Premium lidmaatschap</h3>
-                  <p className="text-sm text-muted-foreground">Bedankt voor je steun. Je hebt toegang tot alle premium content van BijbelQuiz.</p>
+                  <h2 className="text-xl font-semibold text-[#1f2f4b]">Badges</h2>
+                  <p className="text-sm text-muted-foreground">{(user.badges || []).length} van {BADGES.length} verdiend</p>
                 </div>
               </div>
-              <span className="inline-flex items-center rounded-full bg-slate-100 dark:bg-muted px-3 py-1 text-xs font-semibold text-slate-700 dark:text-muted-foreground">
-                {isLifetimePremium ? 'Levenslang' : subscriptionStatusText}
-              </span>
-            </div>
 
-            {isMonthlyPremium ? (
-              <>
-                <div className="space-y-2 mb-5 text-sm text-muted-foreground">
-                  {subscriptionCancelAtPeriodEnd ? (
-                    <p>
-                      Je abonnement is opgezegd en blijft actief tot <span className="font-semibold text-[#1a2942] dark:text-foreground">{subscriptionEndDateLabel || 'einde van de huidige periode'}</span>.
-                    </p>
-                  ) : (
-                    <p>
-                      {subscriptionEndDateLabel
-                        ? <>Je Premium loopt door en verlengt op <span className="font-semibold text-[#1a2942] dark:text-foreground">{subscriptionEndDateLabel}</span>.</>
-                        : 'Je maandabonnement is actief.'}
-                    </p>
-                  )}
-                  <p>Je kunt je betaalmethode aanpassen, facturen bekijken of je maandabonnement stopzetten via Stripe.</p>
+              <div className="space-y-3">
+                {BADGES.map((badge) => {
+                  const earned = (user.badges || []).includes(badge.id);
+
+                  return (
+                    <div
+                      key={badge.id}
+                      className={
+                        earned
+                          ? 'flex items-start gap-3 border border-[#ccdaf1] bg-[#f3f7fd] p-3'
+                          : 'flex items-start gap-3 border border-[#e6edf7] bg-[#fafcff] p-3 opacity-70'
+                      }
+                    >
+                      <div className="text-2xl">{badge.icon}</div>
+                      <div className="min-w-0 flex-1">
+                        <p className="text-sm font-semibold text-[#24395f]">{badge.name}</p>
+                        <p className="text-xs text-muted-foreground">{badge.description}</p>
+                      </div>
+                      {earned && <CheckCircle2 className="h-4 w-4 shrink-0 text-[#5f7fc7]" />}
+                    </div>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {!user.isPremium && (
+          <Card className="mt-6 border-[#d7e1ee] bg-[#f8fafe] shadow-sm">
+            <CardContent className="p-6 lg:p-7">
+              <div className="grid gap-5 lg:grid-cols-[minmax(0,1.6fr)_auto] lg:items-center">
+                <div>
+                  <Badge className="mb-3 bg-[#e9eff8] text-[#355384]">
+                    <Crown className="mr-1 h-3.5 w-3.5" />
+                    Premium
+                  </Badge>
+                  <h3 className="text-2xl font-semibold text-[#1f2f4b]">Upgrade naar Premium</h3>
+                  <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+                    Speel alle quizzen, leer zonder advertenties en krijg toegang tot exclusieve content.
+                  </p>
                 </div>
 
-                <form action="/api/stripe/portal" method="POST">
-                  <Button type="submit" className="rounded-full bg-[#1a2942] hover:bg-[#101b2f] text-white px-6">
-                    Open abonnementsportaal (Stripe)
-                  </Button>
-                </form>
-              </>
-            ) : (
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <p>
-                  Je hebt een levenslange Premium-toegang. Er is geen terugkerend abonnement om stop te zetten.
-                </p>
-                <p>
-                  Deze aankoop blijft permanent gekoppeld aan je account.
-                </p>
+                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc]">
+                  <Link href="/premium">Word nu Premium</Link>
+                </Button>
               </div>
-            )}
-          </div>
+            </CardContent>
+          </Card>
         )}
-      </div>
+
+        {user.isPremium && (
+          <Card className="mt-6 border-[#d8e1ee] shadow-sm">
+            <CardContent className="p-6">
+              <div className="mb-4 flex items-start justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="bg-[#edf2fa] p-2 text-[#4f6faa]">
+                    <CreditCard className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#1f2f4b]">Premium lidmaatschap</h3>
+                    <p className="text-sm text-muted-foreground">Je account heeft toegang tot alle Premium content.</p>
+                  </div>
+                </div>
+
+                <Badge variant="secondary" className="bg-[#f3f6fb] text-[#5f7090]">
+                  {isLifetimePremium ? 'Levenslang' : subscriptionStatusText}
+                </Badge>
+              </div>
+
+              {isMonthlyPremium ? (
+                <>
+                  <div className="mb-5 space-y-2 text-sm text-muted-foreground">
+                    {subscriptionCancelAtPeriodEnd ? (
+                      <p>
+                        Je abonnement is opgezegd en blijft actief tot{' '}
+                        <span className="font-semibold text-[#24395f]">{subscriptionEndDateLabel || 'einde van de huidige periode'}</span>.
+                      </p>
+                    ) : (
+                      <p>
+                        {subscriptionEndDateLabel
+                          ? (
+                            <>
+                              Je Premium loopt door en verlengt op{' '}
+                              <span className="font-semibold text-[#24395f]">{subscriptionEndDateLabel}</span>.
+                            </>
+                          )
+                          : 'Je maandabonnement is actief.'}
+                      </p>
+                    )}
+                    <p>Je kunt betaalgegevens en facturen beheren via Stripe.</p>
+                  </div>
+
+                  <form action="/api/stripe/portal" method="POST">
+                    <Button type="submit" className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc]">
+                      Open abonnementsportaal (Stripe)
+                    </Button>
+                  </form>
+                </>
+              ) : (
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>Je hebt levenslange Premium toegang. Er is geen terugkerend abonnement om stop te zetten.</p>
+                  <p>Deze aankoop blijft permanent gekoppeld aan je account.</p>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        )}
+      </section>
     </div>
   );
 }

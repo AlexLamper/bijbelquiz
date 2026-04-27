@@ -50,10 +50,22 @@ export default async function QuizzesPage({
 }) {
   const params = await searchParams;
   const session = await getServerSession(authOptions);
-  const isPremiumUser = !!session?.user?.isPremium;
+  const userIsPremium = !!session?.user?.isPremium;
   const currentCategory = params.category || 'all';
   
   const { quizzes, categories } = await getData();
+
+  let initialCategoryId = 'all';
+  if (currentCategory !== 'all') {
+    const matchedCategory = categories.find(
+      (category: { _id: string; slug?: string }) =>
+        category.slug === currentCategory || category._id === currentCategory
+    );
+
+    if (matchedCategory?._id) {
+      initialCategoryId = matchedCategory._id;
+    }
+  }
 
   return (
     <div className="relative mx-auto max-w-7xl px-4 py-8 md:py-12 sm:px-6 lg:px-10 xl:px-12">
@@ -81,8 +93,8 @@ export default async function QuizzesPage({
       <QuizzesClient 
         quizzes={quizzes} 
         categories={categories} 
-        currentCategory={currentCategory}
-        isPremiumUser={isPremiumUser}
+        userIsPremium={userIsPremium}
+        initialCategoryId={initialCategoryId}
       />
     </div>
   );

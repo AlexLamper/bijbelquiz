@@ -1,5 +1,4 @@
 import { notFound, redirect } from 'next/navigation';
-import Link from 'next/link';
 import { getServerSession } from 'next-auth';
 import type { Metadata, ResolvingMetadata } from 'next'; // Added metadata types
 import { authOptions } from '@/lib/auth';
@@ -123,7 +122,7 @@ export default async function QuizPage({ params }: PageProps) {
   };
 
   return (
-    <div className="flex-1 flex flex-col bg-background selection:bg-amber-100 p-2 md:p-6 lg:p-8 md:h-[calc(100vh-90px)]">
+    <div className="-mt-24 min-h-screen bg-background pt-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

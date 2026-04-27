@@ -1,81 +1,105 @@
 'use client';
 
 import * as React from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { Filter } from 'lucide-react';
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Filter, ChevronRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 interface CategoryShape {
-  _id: string; // serialized from server
+  _id: string;
   title: string;
-  slug: string;
 }
 
 interface MobileQuizFilterProps {
   categories: CategoryShape[];
-  currentCategory: string;
+  selectedCategory: string;
+  onCategoryChange: (value: string) => void;
+  showPremiumOnly: boolean;
+  onPremiumToggle: (value: boolean) => void;
 }
 
-export default function MobileQuizFilter({ categories, currentCategory }: MobileQuizFilterProps) {
-  const [isOpen, setIsOpen] = React.useState<string>("");
+export function MobileQuizFilter({
+  categories,
+  selectedCategory,
+  onCategoryChange,
+  showPremiumOnly,
+  onPremiumToggle,
+}: MobileQuizFilterProps) {
+  const [openItem, setOpenItem] = React.useState<string>('');
 
-  const handleLinkClick = () => {
-    // Collapse the accordion
-    setIsOpen("");
+  const handleCategorySelect = (categoryId: string) => {
+    onCategoryChange(categoryId);
+    setOpenItem('');
   };
 
-  const activeCategoryTitle = currentCategory === 'all' 
-    ? 'Alle' 
-    : categories.find((c) => c.slug === currentCategory)?.title || 'Alle';
+  const activeCategoryLabel =
+    selectedCategory === 'all'
+      ? 'Alle categorieen'
+      : categories.find((category) => category._id === selectedCategory)?.title || 'Alle categorieen';
 
   return (
-    <Accordion type="single" collapsible value={isOpen} onValueChange={setIsOpen}>
-      <AccordionItem value="categories" className="border-b-0">
-        <AccordionTrigger className="hover:no-underline py-3">
-          <span className="flex items-center gap-2 text-slate-800 font-medium">
-            <Filter className="h-4 w-4" /> Filter ({activeCategoryTitle})
-          </span>
-        </AccordionTrigger>
-        <AccordionContent>
-          <div className="flex flex-col gap-1 pt-2 pb-4">
-            <Link 
-              href="/quizzes"
-              onClick={handleLinkClick}
-              className={cn(
-                "flex items-center justify-between px-3 py-3 rounded-xl text-sm font-medium transition-all",
-                currentCategory === 'all'
-                  ? "bg-primary text-primary-foreground shadow-sm"
-                  : "text-muted-foreground hover:bg-muted hover:text-foreground"
-              )}
-            >
-              <span>Alle Categorieën</span>
-              {currentCategory === 'all' && <ChevronRight className="w-4 h-4" />}
-            </Link>
-            
-            {categories.map((cat) => {
-              const isActive = currentCategory === cat.slug;
-              return (
-                <Link 
-                  key={`mobile-${cat._id}`}
-                  href={`/quizzes?category=${cat.slug}`}
-                  onClick={handleLinkClick}
+    <div className="md:hidden">
+      <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem}>
+        <AccordionItem value="filters" className="border border-[#d7e1ee] bg-white px-3 dark:border-slate-700 dark:bg-slate-900">
+          <AccordionTrigger className="py-2.5 text-sm hover:no-underline">
+            <span className="inline-flex items-center gap-2 font-medium text-[#30466e] dark:text-slate-100">
+              <Filter className="h-4 w-4" />
+              {activeCategoryLabel}
+            </span>
+          </AccordionTrigger>
+
+          <AccordionContent className="pb-3">
+            <div className="space-y-2">
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => handleCategorySelect('all')}
+                className={cn(
+                  'h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
+                  selectedCategory === 'all'
+                    ? 'border-[#9bb6e1] bg-[#dfe9fa] text-[#233a5f] shadow-sm ring-1 ring-[#bfd0ed] dark:border-blue-500/70 dark:bg-blue-500/20 dark:text-blue-100 dark:ring-blue-500/50'
+                    : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100'
+                )}
+              >
+                Alle categorieen
+              </Button>
+
+              {categories.map((category) => (
+                <Button
+                  key={category._id}
+                  type="button"
+                  variant="outline"
+                  onClick={() => handleCategorySelect(category._id)}
                   className={cn(
-                    "flex items-center justify-between px-3 py-3 rounded-xl text-sm font-medium transition-all",
-                    isActive
-                      ? "bg-primary text-primary-foreground shadow-sm"
-                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                    'h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
+                    selectedCategory === category._id
+                      ? 'border-[#9bb6e1] bg-[#dfe9fa] text-[#233a5f] shadow-sm ring-1 ring-[#bfd0ed] dark:border-blue-500/70 dark:bg-blue-500/20 dark:text-blue-100 dark:ring-blue-500/50'
+                      : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100'
                   )}
                 >
-                  <span>{cat.title}</span>
-                  {isActive && <ChevronRight className="w-4 h-4" />}
-                </Link>
-              );
-            })}
-          </div>
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+                  {category.title}
+                </Button>
+              ))}
+
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => onPremiumToggle(!showPremiumOnly)}
+                className={cn(
+                  'mt-1 h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
+                  showPremiumOnly
+                    ? 'border-[#9bb6e1] bg-[#dfe9fa] text-[#233a5f] shadow-sm ring-1 ring-[#bfd0ed] dark:border-blue-500/70 dark:bg-blue-500/20 dark:text-blue-100 dark:ring-blue-500/50'
+                    : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100'
+                )}
+              >
+                Alleen Premium
+              </Button>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
   );
 }

@@ -1,199 +1,175 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { cn } from '@/lib/utils';
-import type { LeaderboardEntry, CategoryOption } from './page';
-import { Trophy, Crown, User as UserIcon } from 'lucide-react';
+import Link from 'next/link';
+import { Medal, UserCircle2 } from 'lucide-react';
 
-interface LeaderboardClientProps {
-  initialData: LeaderboardEntry[];
-  categories: CategoryOption[];
-  initialTimeFilter: string;
-  initialCategorySlug: string;
-  currentUserId: string | null;
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+
+interface LeaderboardUser {
+  _id: string;
+  name: string;
+  email: string;
+  xp: number;
+  streak: number;
+  badges?: string[];
+  createdAt?: string;
 }
 
-export default function LeaderboardClient({
-  initialData,
-  initialTimeFilter,
-  currentUserId,
-}: LeaderboardClientProps) {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const [timeFilter, setTimeFilter] = useState(initialTimeFilter);
+interface LeaderboardClientProps {
+  users: LeaderboardUser[];
+  currentUserId?: string;
+}
 
-  const filteredData = initialData;
+function rankBadgeTone(index: number): string {
+  if (index === 0) return 'border-[#d6bf7a] bg-[#f5e7bf] text-[#6e4f13] dark:border-[#866726] dark:bg-[#4a3a1a] dark:text-[#f3d88f]';
+  if (index === 1) return 'border-[#c3cddd] bg-[#e8edf5] text-[#455a7d] dark:border-[#4b5f7e] dark:bg-[#223046] dark:text-[#c2d1e7]';
+  if (index === 2) return 'border-[#d8b49b] bg-[#f3e2d8] text-[#7b4c37] dark:border-[#7e5742] dark:bg-[#3f2b22] dark:text-[#deb9a5]';
+  return 'border-[#d7e1ee] bg-[#f8fafe] text-[#4e5f79] dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-300';
+}
 
-  // Find current user position
-  const currentUserIndex = currentUserId ? filteredData.findIndex(user => user._id === currentUserId) : -1;
-  const currentUserData = currentUserIndex >= 0 ? filteredData[currentUserIndex] : null;
-  const showCurrentUserCard = currentUserIndex >= 50;
+function getDisplayName(user: LeaderboardUser): string {
+  return user.name?.trim() || user.email?.split('@')[0] || 'Gebruiker';
+}
+
+function formatStreak(streak: number): string {
+  return streak === 1 ? '1 dag' : `${streak} dagen`;
+}
+
+export default function LeaderboardClient({ users, currentUserId }: LeaderboardClientProps) {
+  const currentUserRank = users.findIndex((user) => user._id === currentUserId) + 1;
+  const topXp = users[0]?.xp || 0;
 
   return (
-    <div className="max-w-3xl mx-auto">
-      {/* Page Header */}
-      <div className="text-center mb-12">
-        <h1 className="font-serif text-3xl sm:text-4xl font-bold text-[#1a2333] dark:text-white tracking-tight mb-3">
-          Ranglijst
-        </h1>
-        <p className="text-[#5c687e] dark:text-white/70 text-base max-w-md mx-auto">
-          Bekijk de beste spelers en vergelijk je score met anderen.
-        </p>
-      </div>
+    <div className="-mt-24 min-h-screen pt-24 pb-12">
+      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-slate-300">Ranglijst</p>
+            <h1 className="mt-1 text-3xl font-semibold text-[#1f2f4b] dark:text-slate-100 md:text-4xl">Top spelers</h1>
+            <p className="mt-2 text-sm text-muted-foreground">Eenvoudig overzicht op basis van XP.</p>
+          </div>
 
-      {/* Main Leaderboard Card */}
-      <div className="bg-card dark:bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
-        {/* Leaderboard Entries */}
-        <div className="divide-y divide-border">
-          {filteredData.slice(0, 50).map((user, index) => {
-            const rank = index + 1;
-            const isMe = currentUserId === user._id;
-            const isTopThree = rank <= 3;
+          <div className="flex flex-wrap gap-3">
+            <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc]">
+              <Link href="/quizzes">Speel quiz</Link>
+            </Button>
+            <Button asChild variant="outline" className="h-10 rounded-md border-[#d7e1ee] bg-white px-5 text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">
+              <Link href="/dashboard">Dashboard</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
-            return (
-              <div
-                key={user._id.toString()}
-                className={cn(
-                  "flex items-center px-5 sm:px-6 py-4 transition-colors",
-                  isMe && "bg-primary/5 dark:bg-[#5b7dd9]/10",
-                  !isMe && "hover:bg-muted/30 dark:hover:bg-muted/10"
-                )}
-              >
-                {/* Rank */}
-                <div className="w-12 shrink-0">
-                  {rank === 1 && (
-                    <div className="w-8 h-8 rounded-full bg-amber-400 flex items-center justify-center">
-                      <Crown className="w-4 h-4 text-white" />
-                    </div>
-                  )}
-                  {rank === 2 && (
-                    <div className="w-8 h-8 rounded-full bg-slate-400 flex items-center justify-center">
-                      <span className="text-sm font-bold text-white">2</span>
-                    </div>
-                  )}
-                  {rank === 3 && (
-                    <div className="w-8 h-8 rounded-full bg-amber-600 flex items-center justify-center">
-                      <span className="text-sm font-bold text-white">3</span>
-                    </div>
-                  )}
-                  {rank > 3 && (
-                    <span className={cn(
-                      "text-base font-medium",
-                      isMe ? "text-primary dark:text-[#5b7dd9]" : "text-muted-foreground"
-                    )}>
-                      {rank}
-                    </span>
-                  )}
-                </div>
-                
-                {/* Avatar & Name */}
-                <div className="flex-1 flex items-center gap-3 min-w-0">
-                  {user.image ? (
-                    <img 
-                      src={user.image} 
-                      alt={user.name} 
-                      className={cn(
-                        "rounded-full object-cover shrink-0",
-                        isTopThree ? "w-10 h-10" : "w-9 h-9"
-                      )}
-                    />
-                  ) : (
-                    <div className={cn(
-                      "rounded-full bg-muted flex items-center justify-center shrink-0",
-                      isTopThree ? "w-10 h-10" : "w-9 h-9"
-                    )}>
-                      <UserIcon className="text-muted-foreground w-4 h-4"/>
-                    </div>
-                  )}
-                  <div className="min-w-0 flex items-center gap-2">
-                    <span className={cn(
-                      "truncate",
-                      isTopThree ? "font-semibold" : "font-medium",
-                      isMe ? "text-[#1a2333] dark:text-white font-semibold" : "text-[#1a2333] dark:text-white"
-                    )}>
-                      {user.name || 'Speler'}
-                    </span>
-                    {isMe && (
-                      <span className="text-[10px] font-bold uppercase tracking-wider bg-primary dark:bg-[#5b7dd9] text-white px-1.5 py-0.5 rounded shrink-0">
-                        Jij
-                      </span>
-                    )}
-                  </div>
-                </div>
-
-                {/* Points */}
-                <div className="text-right shrink-0">
-                  <span className={cn(
-                    "font-semibold tabular-nums",
-                    isMe ? "text-primary dark:text-[#5b7dd9]" : "text-[#1a2333] dark:text-white"
-                  )}>
-                    {user.totalPoints.toLocaleString('nl-NL')}
-                  </span>
-                  <span className="text-muted-foreground text-sm ml-1">XP</span>
-                </div>
-              </div>
-            );
-          })}
+      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-6 lg:px-8">
+        <div className="mb-5 grid gap-3 sm:grid-cols-3">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+            <CardContent className="p-3.5">
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">Deelnemers</p>
+              <p className="mt-1 text-xl font-semibold text-[#24395f] dark:text-slate-100">{users.length}</p>
+            </CardContent>
+          </Card>
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+            <CardContent className="p-3.5">
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">Top XP</p>
+              <p className="mt-1 text-xl font-semibold text-[#24395f] dark:text-slate-100">{topXp.toLocaleString('nl-NL')}</p>
+            </CardContent>
+          </Card>
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+            <CardContent className="p-3.5">
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">Jouw positie</p>
+              <p className="mt-1 text-xl font-semibold text-[#24395f] dark:text-slate-100">{currentUserRank > 0 ? `#${currentUserRank}` : '-'}</p>
+            </CardContent>
+          </Card>
         </div>
 
-        {/* Empty State */}
-        {filteredData.length === 0 && (
-          <div className="py-16 text-center">
-            <Trophy className="w-12 h-12 mx-auto mb-3 text-muted-foreground/40" />
-            <p className="font-medium text-[#1a2333] dark:text-white mb-1">
-              Nog geen activiteit
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Speel een quiz om op de ranglijst te komen.
-            </p>
-          </div>
+        {currentUserRank > 0 && (
+          <Card className="mb-5 border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+            <CardContent className="flex flex-wrap items-center justify-between gap-3 p-4">
+              <p className="text-sm text-[#30466e] dark:text-slate-200">Je staat momenteel op plek <span className="font-semibold">#{currentUserRank}</span>.</p>
+              <Badge variant="secondary" className="bg-[#edf2fa] text-[#355384] dark:bg-slate-800 dark:text-blue-200">
+                Blijf spelen om te stijgen
+              </Badge>
+            </CardContent>
+          </Card>
         )}
-      </div>
 
-      {/* Current User Card if outside top 50 */}
-      {showCurrentUserCard && currentUserData && (
-        <div className="mt-6">
-          <div className="bg-primary/5 dark:bg-[#5b7dd9]/10 border border-primary/20 dark:border-[#5b7dd9]/20 rounded-xl px-5 sm:px-6 py-4">
-            <div className="flex items-center">
-              <div className="w-12 shrink-0">
-                <span className="text-base font-semibold text-primary dark:text-[#5b7dd9]">
-                  {currentUserIndex + 1}
-                </span>
-              </div>
-              
-              <div className="flex-1 flex items-center gap-3 min-w-0">
-                {currentUserData.image ? (
-                  <img 
-                    src={currentUserData.image} 
-                    alt={currentUserData.name} 
-                    className="w-9 h-9 rounded-full object-cover shrink-0" 
-                  />
-                ) : (
-                  <div className="w-9 h-9 rounded-full bg-muted flex items-center justify-center shrink-0">
-                    <UserIcon className="text-muted-foreground w-4 h-4"/>
-                  </div>
-                )}
-                <div className="min-w-0 flex items-center gap-2">
-                  <span className="font-semibold text-[#1a2333] dark:text-white truncate">
-                    {currentUserData.name || 'Speler'}
-                  </span>
-                  <span className="text-[10px] font-bold uppercase tracking-wider bg-primary dark:bg-[#5b7dd9] text-white px-1.5 py-0.5 rounded shrink-0">
-                    Jij
-                  </span>
-                </div>
+        {users.length === 0 ? (
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+            <CardContent className="p-8 text-center">
+              <h2 className="text-xl font-semibold text-[#1f2f4b] dark:text-slate-100">Nog geen ranglijstgegevens</h2>
+              <p className="mt-2 text-sm text-muted-foreground">Start met quizzen om een positie op te bouwen.</p>
+              <Button asChild className="mt-5 h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc]">
+                <Link href="/quizzes">Naar quizzen</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        ) : (
+          <Card className="overflow-hidden border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+            <CardContent className="p-0">
+              <div className="hidden w-full border-b border-[#dce5f1] bg-[#eef3f9] px-4 py-3 text-xs font-semibold uppercase tracking-wider text-[#607597] md:grid md:grid-cols-[90px_minmax(0,1fr)_130px_130px] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                <span>Positie</span>
+                <span>Speler</span>
+                <span>XP</span>
+                <span>Streak</span>
               </div>
 
-              <div className="text-right shrink-0">
-                <span className="font-semibold text-primary dark:text-[#5b7dd9] tabular-nums">
-                  {currentUserData.totalPoints.toLocaleString('nl-NL')}
-                </span>
-                <span className="text-muted-foreground text-sm ml-1">XP</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+              <ul>
+                {users.map((user, index) => {
+                  const isCurrentUser = user._id === currentUserId;
+                  const isTopThree = index < 3;
+
+                  return (
+                    <li
+                      key={user._id}
+                      className={`grid gap-2 border-b border-[#ecf1f8] p-4 text-sm md:grid-cols-[90px_minmax(0,1fr)_130px_130px] md:items-center ${
+                        isCurrentUser
+                          ? 'bg-[#f7faff] dark:bg-blue-950/20'
+                          : isTopThree
+                            ? 'bg-[#fbfdff] dark:bg-slate-900'
+                            : 'bg-white dark:bg-slate-900/80'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <span className={`inline-flex h-8 min-w-8 items-center justify-center border px-1 text-xs font-bold ${rankBadgeTone(index)}`}>
+                          #{index + 1}
+                        </span>
+                        {isTopThree && (
+                          <Medal className={`h-4 w-4 ${index === 0 ? 'text-[#9b7428] dark:text-amber-300' : index === 1 ? 'text-[#647da7] dark:text-slate-300' : 'text-[#95634d] dark:text-orange-200'}`} />
+                        )}
+                      </div>
+
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-2">
+                          <UserCircle2 className="h-4 w-4 text-[#607597] dark:text-slate-300" />
+                          <p className="truncate font-medium text-[#1f2f4b] dark:text-slate-100">{getDisplayName(user)}</p>
+                          {isCurrentUser && (
+                            <Badge variant="secondary" className="bg-[#edf2fa] text-[#355384] dark:bg-slate-800 dark:text-blue-200">
+                              Jij
+                            </Badge>
+                          )}
+                        </div>
+                        <p className="mt-1 truncate text-xs text-muted-foreground md:hidden">{user.email}</p>
+                      </div>
+
+                      <div className="flex items-center gap-2 md:block">
+                        <span className="text-xs text-muted-foreground md:hidden">XP:</span>
+                        <span className="font-medium text-[#24395f] dark:text-slate-100">{(user.xp || 0).toLocaleString('nl-NL')}</span>
+                      </div>
+
+                      <div className="flex items-center gap-2 md:block">
+                        <span className="text-xs text-muted-foreground md:hidden">Streak:</span>
+                        <span className="text-[#4e5f79] dark:text-slate-300">{formatStreak(user.streak || 0)}</span>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </CardContent>
+          </Card>
+        )}
+      </section>
     </div>
   );
 }

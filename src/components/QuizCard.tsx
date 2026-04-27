@@ -1,110 +1,148 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ArrowRight, Lock, Star } from 'lucide-react';
+
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, BookOpen, CheckCircle2, Lock, Star } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export interface QuizItem {
   _id: string;
   title: string;
   description?: string;
   imageUrl?: string;
-  categoryId?: {
-    _id?: string;
-    title?: string;
-    slug?: string;
-  } | string;
-  questions?: {
-    _id?: string;
-    text?: string;
-  }[];
-  slug?: string;
+  difficulty: string;
   isPremium: boolean;
+  isLocked?: boolean;
+  slug?: string;
+  categoryId?: { _id: string; title: string } | string;
+  questions?: { _id: string }[];
 }
 
 interface QuizCardProps {
   quiz: QuizItem;
-  isPremiumUser: boolean;
+  isPremiumUser?: boolean;
+  layout?: 'card' | 'stack';
 }
 
-export default function QuizCard({ quiz, isPremiumUser }: QuizCardProps) {
-  const isLocked = quiz.isPremium && !isPremiumUser;
-  // Handle populated categoryId or direct string/object fallback
-  const categoryName = (typeof quiz.categoryId === 'object' && quiz.categoryId?.title)
-    ? quiz.categoryId.title
-    : 'Algemeen';
+const difficultyLabels: Record<string, string> = {
+  easy: 'makkelijk',
+  medium: 'gemiddeld',
+  hard: 'moeilijk',
+  beginner: 'makkelijk',
+  intermediate: 'gemiddeld',
+  advanced: 'moeilijk',
+};
+
+const difficultyBadgeClassName =
+  'border border-[#d7e1ee] bg-white/90 text-[#4e5f79] dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-200';
+
+function getCategoryLabel(category: QuizItem['categoryId']): string {
+  if (typeof category === 'object' && category?.title) return category.title;
+  return 'Algemeen';
+}
+
+function getDifficultyLabel(difficulty: string) {
+  const key = difficulty?.toLowerCase();
+  return difficultyLabels[key] || difficulty || 'onbekend';
+}
+
+export function QuizCard({ quiz, isPremiumUser, layout = 'card' }: QuizCardProps) {
+  const difficultyLabel = getDifficultyLabel(quiz.difficulty);
+  const categoryLabel = getCategoryLabel(quiz.categoryId);
+  const questionCount = quiz.questions?.length || 0;
+  const isLocked = typeof quiz.isLocked === 'boolean' ? quiz.isLocked : quiz.isPremium && isPremiumUser === false;
+  const isStackLayout = layout === 'stack';
+
+  const href = `/quiz/${quiz.slug || quiz._id}`;
+
+  const imageBlock = (
+    <div className={cn('relative h-44 bg-[#dce5f3] dark:bg-slate-800', isStackLayout && 'rounded-lg overflow-hidden')}>
+      {quiz.imageUrl ? (
+        <Image
+          src={quiz.imageUrl}
+          alt={quiz.title}
+          fill
+          className="object-cover"
+          sizes="(max-width: 1280px) 100vw, 33vw"
+        />
+      ) : (
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,#d9e4f5,#eef3fb)] dark:bg-[linear-gradient(135deg,#243247,#1c2a3d)]" />
+      )}
+
+      <div className="absolute left-3 top-3 flex gap-2">
+        <Badge variant="secondary" className="bg-white/90 text-[#314869] dark:bg-slate-900/90 dark:text-slate-100">
+          {categoryLabel}
+        </Badge>
+        <Badge className={difficultyBadgeClassName}>{difficultyLabel}</Badge>
+      </div>
+
+      {quiz.isPremium && (
+        <div className="absolute right-3 top-3 inline-flex items-center gap-1 bg-[#1f2f4b] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-[#dce8ff] dark:bg-slate-900 dark:text-slate-100">
+          <Star className="h-3 w-3 fill-current" />
+          Premium
+        </div>
+      )}
+
+      {isLocked && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+          <div className="bg-white p-2 dark:bg-slate-900">
+            <Lock className="h-5 w-5 text-[#1f2f4b] dark:text-slate-100" />
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
+  if (isStackLayout) {
+    return (
+      <Link href={href} className="block">
+        <article className="group h-full">
+          {imageBlock}
+
+          <div className="pb-2 pt-3">
+            <h3 className="line-clamp-2 text-lg font-semibold text-[#1f2f4b] dark:text-slate-100">{quiz.title}</h3>
+            <p className="mt-2 line-clamp-2 text-sm text-muted-foreground dark:text-slate-300">
+              {quiz.description || 'Test je kennis met deze quiz.'}
+            </p>
+
+            <div className="mt-4 flex items-center justify-between text-xs text-muted-foreground dark:text-slate-300">
+              <span>{questionCount} vragen</span>
+              <span className="inline-flex items-center gap-1 font-medium text-[#355384] dark:text-blue-300">
+                Start
+                <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </div>
+          </div>
+        </article>
+      </Link>
+    );
+  }
 
   return (
-    <Link href={`/quiz/${quiz.slug || quiz._id}`} className="block h-full">
-      <Card className="group relative flex h-full flex-col overflow-hidden border-0 bg-white dark:bg-card dark:border dark:border-border shadow-sm transition-all hover:shadow-xl hover:-translate-y-1 p-0 pb-6 gap-0 cursor-pointer">
-        <div className="relative h-44 w-full overflow-hidden bg-[#dbe1ee] shrink-0">
-          {quiz.imageUrl ? (
-            <Image
-              src={quiz.imageUrl}
-              alt={quiz.title}
-              fill
-              className="object-cover brightness-90 transition-transform duration-300 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-              quality={80}
-            />
-          ) : (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <BookOpen className="w-10 h-10 text-[#bac6da]" />
-            </div>
-          )}
-          {quiz.isPremium && (
-            <span className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-md bg-[#1a2942] px-2 py-0.5 text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-sm">
-              <Star className="h-3 w-3 fill-amber-400 text-amber-400" /> PREMIUM
+    <Link href={href} className="block">
+      <Card className="group h-full gap-0 overflow-hidden border-[#d7e1ee] bg-white py-0 shadow-sm transition-colors hover:bg-[#f9fbff] dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-slate-800">
+        {imageBlock}
+
+        <CardContent className="p-4 pb-5">
+          <h3 className="line-clamp-2 text-lg font-semibold text-[#1f2f4b] dark:text-slate-100">{quiz.title}</h3>
+          <p className="mt-2 line-clamp-2 text-sm text-muted-foreground dark:text-slate-300">
+            {quiz.description || 'Test je kennis met deze quiz.'}
+          </p>
+
+          <div className="mt-4 flex items-center justify-between text-xs text-muted-foreground dark:text-slate-300">
+            <span>{questionCount} vragen</span>
+            <span className="inline-flex items-center gap-1 font-medium text-[#355384] dark:text-blue-300">
+              Start
+              <ArrowRight className="h-3.5 w-3.5" />
             </span>
-          )}
-          {isLocked && (
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="bg-white/90 rounded-full p-2">
-                <Lock className="w-5 h-5 text-[#1c223a]" />
-              </div>
-            </div>
-          )}
-        </div>
-        <CardHeader className="pt-6">
-          <div className="mb-2 flex items-center justify-between">
-            <Badge variant="secondary" className="font-normal bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-muted dark:text-gray-200 dark:hover:bg-muted/80">
-               {categoryName}
-            </Badge>
-          </div>
-          <CardTitle className="line-clamp-1 text-lg group-hover:text-primary dark:group-hover:text-gray-200 transition-colors font-serif">
-            {quiz.title}
-          </CardTitle>
-          <CardDescription className="line-clamp-2 text-sm text-muted-foreground min-h-10 mb-4">
-            {quiz.description || "Test je kennis en leer meer over dit onderwerp."}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="flex-1 pt-2">
-          <div className="flex items-center gap-4 text-xs text-muted-foreground">
-            <div className="flex items-center gap-1">
-              <CheckCircle2 className="h-3.5 w-3.5" />
-              <span>{quiz.questions?.length || 0} vragen</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <BookOpen className="h-3.5 w-3.5" />
-              <span>Leerzaam</span>
-            </div>
           </div>
         </CardContent>
-        <CardFooter className="pt-4 mt-auto">
-          <Button className="w-full gap-2 transition-transform active:scale-95 shadow-sm" variant={isLocked ? "outline" : "default"}>
-            {isLocked ? (
-              <>
-                <Lock className="h-4 w-4" /> Ontgrendel
-              </>
-            ) : (
-              <>
-                Start Quiz <ArrowRight className="h-4 w-4" />
-              </>
-            )}
-          </Button>
-        </CardFooter>
       </Card>
     </Link>
   );
 }
+
+export default QuizCard;

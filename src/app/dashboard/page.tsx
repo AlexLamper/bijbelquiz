@@ -1,9 +1,8 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
-import { redirect } from "next/navigation";
 import { connectDB, UserProgress, Quiz, User } from "@/database";
 import { Metadata } from 'next';
-import DashboardHomeClient from './DashboardHomeClient';
+import DashboardHomeClient from '@/app/dashboard/DashboardHomeClient';
 import { getLevelInfo } from '@/lib/gamification';
 
 export const metadata: Metadata = {
@@ -12,33 +11,14 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-function calculateStreak(dates: Date[]): number {
-  if (dates.length === 0) return 0;
-  const uniqueDates = Array.from(
-    new Set(dates.map((d) => new Date(d).setHours(0, 0, 0, 0)))
-  ).sort((a, b) => b - a);
-  const today = new Date().setHours(0, 0, 0, 0);
-  const yesterday = today - 86400000;
-  if (uniqueDates[0] !== today && uniqueDates[0] !== yesterday) return 0;
-  let streak = 0;
-  let expectedDate = uniqueDates[0];
-  for (const d of uniqueDates) {
-    if (d === expectedDate) { streak++; expectedDate -= 86400000; }
-    else break;
-  }
-  return streak;
-}
-
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
-  // Allow non-logged users to access dashboard
-  const isGuest = !session?.user;
 
   await connectDB();
   const userId = session?.user?.id;
   const isPremium = !!session?.user?.isPremium;
 
-  const user = userId ? await User.findById(userId).select('xp streak').lean() : null;
+  const user = userId ? await User.findById(userId).select('xp streak quizzesPlayed').lean() : null;
   const xp = user?.xp || 0;
 
   // Fetch quizzes - show all quizzes for both guests and logged users

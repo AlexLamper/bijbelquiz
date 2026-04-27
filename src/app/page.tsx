@@ -67,12 +67,12 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="relative overflow-visible pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
 
-        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-[1800px] flex flex-col lg:flex-row items-center justify-between">
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-450 flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl lg:-mt-32 xl:-mt-24">
-            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[64px] 3xl:text-[72px] leading-[1.1] font-bold text-[#1a2333] dark:text-white tracking-tight xl:max-w-none 2xl:max-w-none 3xl:max-w-none">
+            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[64px] 3xl:text-[72px] leading-[1.1] font-bold text-[#1f2f4b] dark:text-white tracking-tight xl:max-w-none 2xl:max-w-none 3xl:max-w-none">
               Hoe goed ken jij de Bijbel? Ontdek het... 
             </h1> 
-            <p className="mb-8 sm:mb-10 max-w-xl text-[#5c687e] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl leading-[1.6]">
+            <p className="mb-8 sm:mb-10 max-w-xl text-[#53647f] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl leading-[1.6]">
               BijbelQuiz heeft tientallen quizzen.
               Kies uit verschillende categorieën,
               concureer tegen anderen op de ranglijst en leer elke dag iets nieuws over de Bijbel!
@@ -83,7 +83,7 @@ export default async function Home() {
                 <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                   <Button 
                     size="lg" 
-                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-2xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all w-full sm:w-auto" 
+                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] hover:bg-[#5f81cc] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors w-full sm:w-auto" 
                     asChild
                   >
                     <Link href="/dashboard">
@@ -94,7 +94,7 @@ export default async function Home() {
               ) : (
                 <Button 
                   size="lg" 
-                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-primary dark:bg-[#547ee9] hover:bg-primary/90 dark:hover:bg-[#476ecc] text-white rounded-2xl shadow-[0_8px_30px_rgb(84,126,233,0.3)] hover:-translate-y-1 transition-all" 
+                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] hover:bg-[#5f81cc] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors" 
                   asChild
                 >
                   <Link href="/dashboard">
@@ -107,7 +107,7 @@ export default async function Home() {
             </div>
           </div>
           
-          <div className="w-full lg:w-[48%] mt-12 lg:mt-0 relative h-[350px] sm:h-[500px] lg:h-[600px] xl:h-[700px] flex justify-center items-center overflow-visible hidden md:flex p-6 rounded-2xl">
+          <div className="w-full lg:w-[48%] mt-12 lg:mt-0 relative h-87.5 sm:h-125 lg:h-150 xl:h-175 hidden md:flex justify-center items-center overflow-visible p-6 rounded-2xl">
              {/* Hero mockup: scaled down contextually */}
              <div
                className="absolute left-40 top-0 w-180 h-180 transform-gpu pointer-events-none scale-100 lg:scale-[0.92] xl:scale-100 transform-origin-left"
