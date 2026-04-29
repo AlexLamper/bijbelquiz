@@ -11,10 +11,11 @@ export async function GET(req: Request) {
     // Format for the mobile app
     const formattedCategories = categories.map((cat: any) => ({
       id: cat._id.toString(),
-      name: cat.name,
+      name: cat.name || cat.title,
       slug: cat.slug,
       description: cat.description,
-      image: cat.image
+      image: cat.imageUrl || cat.image || '',
+      imageUrl: cat.imageUrl || cat.image || ''
     }));
 
     return NextResponse.json(formattedCategories, { status: 200 });
