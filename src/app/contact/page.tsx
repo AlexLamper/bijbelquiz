@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
-import { Mail, HelpCircle } from 'lucide-react'
+import { AlertTriangle, HelpCircle, Mail } from 'lucide-react'
 import { SimpleAccordion } from '@/components/ui/accordion'
 
 export const metadata: Metadata = {
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
 }
 
 export default function ContactPage() {
+  const supportEmail = process.env.NEXT_PUBLIC_BUG_REPORT_EMAIL || 'devlamper06@gmail.com';
+
   const faqItems = [
       {
           title: "Is BijbelQuiz gratis?",
@@ -22,41 +25,73 @@ export default function ContactPage() {
       },
       {
           title: "Hoe werkt het Premium lidmaatschap?",
-          content: "Het is een eenmalige betaling. Je betaalt één keer en behoudt voor altijd toegang tot alle Premium functionaliteiten. Geen abonnementen."
+          content: "Je kunt kiezen tussen een maandabonnement en een eenmalige levenslange aankoop. Beide geven toegang tot Premium functies."
       },
       { 
           title: "Kan ik mijn account verwijderen?",
-          content: "Ja, dat kan. Stuur een mailtje naar devlamper06@gmail.com en wij verwerken je verzoek binnen 5 werkdagen."
+          content: `Ja, dat kan. Stuur een mailtje naar ${supportEmail} en wij verwerken je verzoek binnen 5 werkdagen.`
       }
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl animate-float-in">
-      <h1 className="text-4xl font-serif font-bold text-foreground mb-8 text-center">Contact & Veelgestelde Vragen</h1>
-      
-      <div className="flex justify-center mb-12">
-         <Card className="w-full max-w-md">
-            <CardContent className="pt-6 flex flex-col items-center text-center h-full justify-center">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <h2 className="text-xl font-bold mb-2">Email Ons</h2>
-                <p className="text-muted-foreground mb-4">Heeft u specifieke vragen of suggesties?</p>
-                <a href="mailto:devlamper06@gmail.com" className="text-primary font-semibold hover:underline bg-primary/5 px-4 py-2 rounded-full">
-                    devlamper06@gmail.com
-                </a>
-            </CardContent>
-         </Card>
-      </div>
+    <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
+      <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
+        <h1 className="text-4xl text-[#1f2f4b] dark:text-zinc-100">Contact & Support</h1>
+        <p className="mt-3 max-w-2xl text-sm text-[#5f7297] dark:text-zinc-300">
+          Heb je een vraag over je account, betaling of gebruik van de app? Neem contact met ons op en we helpen je verder.
+        </p>
+      </section>
 
-      <div className="max-w-2xl mx-auto space-y-8">
-        <h2 className="text-2xl font-bold font-serif text-center flex items-center justify-center gap-2">
-            <HelpCircle className="h-6 w-6 text-muted-foreground" />
-            Veelgestelde Vragen
-        </h2>
-        
-        <SimpleAccordion items={faqItems} />
-      </div>
+      <section className="mx-auto max-w-340 px-4 pt-7 sm:px-5 lg:px-4">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
+          <Card className="border-[#d8e1ee] bg-white/80 py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+            <CardContent className="p-6">
+              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#e9eff8] dark:bg-zinc-800">
+                <Mail className="h-5 w-5 text-[#355384] dark:text-zinc-200" />
+              </div>
+              <h2 className="text-2xl text-[#1f2f4b] dark:text-zinc-100">Mail ons</h2>
+              <p className="mt-2 text-sm text-muted-foreground">We reageren meestal binnen 1-2 werkdagen.</p>
+
+              <a
+                href={`mailto:${supportEmail}`}
+                className="mt-4 inline-flex rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-zinc-500 dark:hover:bg-zinc-400"
+              >
+                {supportEmail}
+              </a>
+            </CardContent>
+          </Card>
+
+          <Card className="border-[#d8e1ee] bg-white/80 py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+            <CardContent className="p-6">
+              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#eef4ff] dark:bg-zinc-800">
+                <AlertTriangle className="h-5 w-5 text-[#355384] dark:text-zinc-200" />
+              </div>
+              <h2 className="text-2xl text-[#1f2f4b] dark:text-zinc-100">Bug melden</h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Gevonden fout? Meld dit via de speciale bug report pagina.
+              </p>
+
+              <Link
+                href="/bug-report"
+                className="mt-4 inline-flex rounded-md border border-[#d2ddee] bg-white px-4 py-2 text-sm font-semibold text-[#2f466f] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+              >
+                Naar bug report
+              </Link>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+        <div className="max-w-3xl space-y-6">
+          <h2 className="text-2xl text-[#1f2f4b] dark:text-zinc-100 flex items-center gap-2">
+            <HelpCircle className="h-5 w-5 text-muted-foreground" />
+            Veelgestelde vragen
+          </h2>
+
+          <SimpleAccordion items={faqItems} />
+        </div>
+      </section>
     </div>
   )
 }

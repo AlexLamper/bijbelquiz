@@ -15,6 +15,19 @@ interface IQuestion {
     text: string;
     isCorrect: boolean;
   }>;
+  explanation?: string;
+}
+
+function getExplanationPreview(explanation?: string): string | undefined {
+  if (!explanation) return undefined;
+
+  const normalized = explanation.replace(/\s+/g, ' ').trim();
+  if (!normalized) return undefined;
+
+  const maxChars = 165;
+  if (normalized.length <= maxChars) return normalized;
+
+  return `${normalized.slice(0, maxChars).trimEnd()}...`;
 }
 
 export async function generateMetadata(
@@ -97,6 +110,20 @@ export default async function QuizPage({ params }: PageProps) {
 
   // Serialize for Client Component
   const serializableQuiz = JSON.parse(JSON.stringify(quiz));
+
+  if (!session.user.isPremium) {
+    serializableQuiz.questions = serializableQuiz.questions.map(
+      (question: { explanation?: string; [key: string]: unknown }) => {
+        const preview = getExplanationPreview(question.explanation);
+
+        return {
+          ...question,
+          explanationPreview: preview,
+          explanation: undefined,
+        };
+      }
+    );
+  }
 
   // JSON-LD for Quiz
   const jsonLd = {

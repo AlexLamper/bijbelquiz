@@ -7,25 +7,50 @@ export const metadata: Metadata = {
 }
 
 export default function TermsPage() {
+  const sections = [
+    {
+      title: '1. Algemeen',
+      content: 'Door gebruik te maken van BijbelQuiz gaat u akkoord met deze algemene voorwaarden. Deze voorwaarden zijn van toepassing op alle diensten die wij aanbieden.',
+    },
+    {
+      title: '2. Gebruik van de dienst',
+      content: 'Het is niet toegestaan accounts van anderen te gebruiken of de veiligheid van de dienst te compromitteren. Wij behouden ons het recht voor accounts te blokkeren bij misbruik.',
+    },
+    {
+      title: '3. Premium lidmaatschap',
+      content: 'Premium lidmaatschap wordt aangegaan via betaling. Eventuele opzegging en voorwaarden voor terugbetaling verlopen volgens het gekozen betaalmodel en geldende wetgeving.',
+    },
+    {
+      title: '4. Intellectueel eigendom',
+      content: 'Alle quizvragen, logo\'s en software zijn eigendom van BijbelQuiz. Kopiëren zonder toestemming is niet toegestaan.',
+    },
+    {
+      title: '5. Aansprakelijkheid',
+      content: 'Wij streven naar correctheid, maar kunnen fouten in vragen of antwoorden niet volledig uitsluiten. Wij zijn niet aansprakelijk voor schade voortvloeiend uit gebruik van de dienst.',
+    },
+  ]
+
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl animate-float-in">
-      <h1 className="text-4xl font-serif font-bold text-foreground mb-8 text-center">Algemene Voorwaarden</h1>
-      <div className="prose prose-slate max-w-none bg-white p-8 rounded-xl shadow-sm border border-border/60">
-        <h3>1. Algemeen</h3>
-        <p>Door gebruik te maken van BijbelQuiz gaat u akkoord met deze algemene voorwaarden. Deze voorwaarden zijn van toepassing op alle diensten die wij aanbieden.</p>
-        
-        <h3>2. Gebruik van de dienst</h3>
-        <p>Het is niet toegestaan om accounts van anderen te gebruiken of de veiligheid van de dienst te compromitteren. Wij behouden ons het recht voor om accounts te blokkeren bij misbruik.</p>
-        
-        <h3>3. Premium Lidmaatschap</h3>
-        <p>Premium lidmaatschap wordt aangegaan via een eenmalige betaling. Er is een herroepingsrecht van 14 dagen (&quot;niet-goed-geld-terug&quot;), mits de dienst nog niet volledig is geconsumeerd (substantial usage).</p>
-        
-        <h3>4. Intellectueel Eigendom</h3>
-        <p>Alle quizvragen, logo&apos;s en software zijn eigendom van BijbelQuiz. Kopiëren zonder toestemming is niet toegestaan.</p>
-        
-        <h3>5. Aansprakelijkheid</h3>
-        <p>Wij streven naar correctheid, maar kunnen fouten in vragen of antwoorden niet volledig uitsluiten. Wij zijn niet aansprakelijk voor schade voortvloeiend uit het gebruik van deze site.</p>
-      </div>
+    <div className="-mt-24 min-h-screen bg-transparent pb-14 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
+      <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
+        <h1 className="text-4xl text-[#1f2f4b] dark:text-zinc-100">Algemene voorwaarden</h1>
+        <p className="mt-3 text-sm text-[#5f7297] dark:text-zinc-300">
+          Deze voorwaarden zijn van toepassing op het gebruik van BijbelQuiz en bijbehorende diensten.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+        <article className="max-w-4xl rounded-2xl border border-[#d8e1ee] bg-white/80 p-6 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70 md:p-8">
+          <div className="space-y-8">
+            {sections.map((section) => (
+              <section key={section.title} className="space-y-3">
+                <h2 className="text-2xl text-[#1f2f4b] dark:text-zinc-100">{section.title}</h2>
+                <p className="text-sm leading-relaxed text-[#30466e] dark:text-zinc-300">{section.content}</p>
+              </section>
+            ))}
+          </div>
+        </article>
+      </section>
     </div>
   )
 }

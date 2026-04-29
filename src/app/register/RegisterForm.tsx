@@ -66,7 +66,7 @@ function RegisterContent() {
           <Button 
             variant="outline" 
             onClick={() => signIn('google', { callbackUrl })} 
-            className="w-full relative h-12 rounded-md border-[#d7e1ee] bg-white hover:bg-[#f5f8fd] text-[#30466e] font-medium group transition-colors mb-6"
+            className="w-full relative h-12 rounded-md border-[#d7e1ee] bg-white hover:bg-[#f5f8fd] text-[#30466e] dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800 font-medium group transition-colors mb-6"
           >
             <svg className="mr-3 h-5 w-5 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
@@ -80,7 +80,7 @@ function RegisterContent() {
           {/* Divider */}
           <div className="relative mb-6">
             <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-[#d7e1ee] dark:border-slate-700" />
+              <span className="w-full border-t border-[#d7e1ee] dark:border-zinc-700" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
               <span className="bg-background px-3 text-muted-foreground font-medium">Of</span>
@@ -104,7 +104,7 @@ function RegisterContent() {
                 id="name"
                 type="text"
                 placeholder="Volledige naam"
-                className="flex h-12 w-full rounded-md border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-[#6f8ed4] focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 transition-all duration-200"
+                className="flex h-12 w-full rounded-md border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-zinc-500 dark:text-white focus:bg-white dark:focus:bg-zinc-900 focus:border-[#6f8ed4] dark:focus:border-zinc-500 focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 dark:focus:ring-zinc-500/20 transition-all duration-200"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
@@ -119,7 +119,7 @@ function RegisterContent() {
                 id="email"
                 type="email"
                 placeholder="naam@voorbeeld.nl"
-                className="flex h-12 w-full rounded-md border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-[#6f8ed4] focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 transition-all duration-200"
+                className="flex h-12 w-full rounded-md border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-zinc-500 dark:text-white focus:bg-white dark:focus:bg-zinc-900 focus:border-[#6f8ed4] dark:focus:border-zinc-500 focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 dark:focus:ring-zinc-500/20 transition-all duration-200"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -135,7 +135,7 @@ function RegisterContent() {
                   id="password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Minimaal 6 tekens"
-                  className="flex h-12 w-full rounded-md border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:border-[#6f8ed4] focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 transition-all duration-200 pr-12"
+                  className="flex h-12 w-full rounded-md border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-zinc-500 dark:text-white focus:bg-white dark:focus:bg-zinc-900 focus:border-[#6f8ed4] dark:focus:border-zinc-500 focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 dark:focus:ring-zinc-500/20 transition-all duration-200 pr-12"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   minLength={6}
@@ -144,7 +144,7 @@ function RegisterContent() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 focus:outline-none transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-300 focus:outline-none transition-colors"
                 >
                   {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                 </button>
@@ -153,7 +153,7 @@ function RegisterContent() {
             
             <Button 
               type="submit" 
-              className="w-full h-12 text-base font-semibold bg-[#6f8ed4] hover:bg-[#5f81cc] text-white rounded-md shadow-lg shadow-[#6f8ed4]/20 transition-colors" 
+              className="w-full h-12 text-base font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-lg shadow-[#6f8ed4]/20 transition-colors" 
               disabled={loading}
             >
               {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Registreren'}
@@ -182,7 +182,7 @@ function RegisterContent() {
         />
         
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-[#1a2942]/60 dark:bg-[#1a2942]/75" />
+        <div className="absolute inset-0 bg-[#1a2942]/60 dark:bg-zinc-950/75" />
         
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col justify-center px-12 xl:px-16">
@@ -223,7 +223,7 @@ function RegisterContent() {
 
 export default function RegisterForm() {
   return (
-    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary dark:text-[#6f8ed4]" /></div>}>
+    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary dark:text-zinc-300" /></div>}>
       <RegisterContent />
     </Suspense>
   );

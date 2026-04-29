@@ -28,24 +28,24 @@ export default async function AdminDashboard() {
 
   return (
     <div className="-mt-24 min-h-screen pb-12 pt-24">
-      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
         <Card className="relative overflow-hidden border-0 bg-transparent py-0 shadow-none">
           <CardContent className="p-0">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_auto] xl:items-end">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-slate-300">Beheercentrum</p>
-                <h1 className="mt-1 text-3xl font-semibold text-[#1f2f4b] dark:text-slate-100 md:text-4xl">Admin dashboard</h1>
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Beheercentrum</p>
+                <h1 className="mt-1 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Admin dashboard</h1>
                 <p className="mt-2 text-sm text-muted-foreground">Beheer je BijbelQuiz platform.</p>
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <Button asChild variant="outline" className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">
+                <Button asChild variant="outline" className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
                   <Link href="/admin/quizzes">
                     <BookOpen className="mr-2 h-4 w-4" />
                     Alle quizzen
                   </Link>
                 </Button>
-                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc]">
+                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
                   <Link href="/admin/quizzes/create">
                     <Plus className="mr-2 h-4 w-4" />
                     Nieuwe quiz
@@ -57,61 +57,61 @@ export default async function AdminDashboard() {
         </Card>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-5 lg:px-4">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Totaal gebruikers</p>
                 <Users className="h-4 w-4 text-[#5f7fc7]" />
               </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-slate-100">{totalUsers}</p>
+              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{totalUsers}</p>
               <p className="mt-1 text-xs text-muted-foreground">Geregistreerde accounts</p>
             </CardContent>
           </Card>
 
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Premium gebruikers</p>
                 <Crown className="h-4 w-4 text-[#d29f45]" />
               </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-slate-100">{premiumUsers}</p>
+              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{premiumUsers}</p>
               <p className="mt-1 text-xs text-muted-foreground">
                 {totalUsers > 0 ? Math.round((premiumUsers / totalUsers) * 100) : 0}% van totaal
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Totaal quizzen</p>
                 <BookOpen className="h-4 w-4 text-[#4f6faa]" />
               </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-slate-100">{totalQuizzes}</p>
+              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{totalQuizzes}</p>
               <p className="mt-1 text-xs text-muted-foreground">Beschikbare quizzen</p>
             </CardContent>
           </Card>
 
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Wacht op goedkeuring</p>
                 <Activity className="h-4 w-4 text-[#cc8741]" />
               </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-slate-100">{pendingQuizzes}</p>
+              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{pendingQuizzes}</p>
               <p className="mt-1 text-xs text-muted-foreground">Pending quizzen</p>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-5 lg:px-4">
         <div className="grid gap-6 lg:grid-cols-2">
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardHeader className="pb-3 pt-5">
-              <CardTitle className="flex items-center gap-2 leading-tight text-[#1f2f4b] dark:text-slate-100">
+              <CardTitle className="flex items-center gap-2 leading-tight text-[#1f2f4b] dark:text-zinc-100">
                 <Users className="h-5 w-5 text-[#5f7fc7]" />
                 Recente gebruikers
               </CardTitle>
@@ -121,9 +121,9 @@ export default async function AdminDashboard() {
               <div className="space-y-4">
                 {recentUsers.length > 0 ? (
                   recentUsers.map((user: any) => (
-                    <div key={user._id.toString()} className="flex items-center justify-between border-b border-[#ecf1f8] pb-3 last:border-0 dark:border-slate-700/70">
+                    <div key={user._id.toString()} className="flex items-center justify-between border-b border-[#ecf1f8] pb-3 last:border-0 dark:border-zinc-700/70">
                       <div className="flex-1">
-                        <p className="text-sm font-medium text-[#1f2f4b] dark:text-slate-100">{user.name || 'Unnamed'}</p>
+                        <p className="text-sm font-medium text-[#1f2f4b] dark:text-zinc-100">{user.name || 'Unnamed'}</p>
                         <p className="text-xs text-muted-foreground">{user.email}</p>
                       </div>
                       <div className="flex items-center gap-2">
@@ -143,9 +143,9 @@ export default async function AdminDashboard() {
             </CardContent>
           </Card>
 
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardHeader className="pb-3 pt-5">
-              <CardTitle className="flex items-center gap-2 leading-tight text-[#1f2f4b] dark:text-slate-100">
+              <CardTitle className="flex items-center gap-2 leading-tight text-[#1f2f4b] dark:text-zinc-100">
                 <BookOpen className="h-5 w-5 text-[#4f6faa]" />
                 Recente quizzen
               </CardTitle>
@@ -155,9 +155,9 @@ export default async function AdminDashboard() {
               <div className="space-y-4">
                 {recentQuizzes.length > 0 ? (
                   recentQuizzes.map((quiz: any) => (
-                    <div key={quiz._id.toString()} className="flex items-center justify-between border-b border-[#ecf1f8] pb-3 last:border-0 dark:border-slate-700/70">
+                    <div key={quiz._id.toString()} className="flex items-center justify-between border-b border-[#ecf1f8] pb-3 last:border-0 dark:border-zinc-700/70">
                       <div className="flex-1">
-                        <p className="text-sm font-medium text-[#1f2f4b] dark:text-slate-100">{quiz.title}</p>
+                        <p className="text-sm font-medium text-[#1f2f4b] dark:text-zinc-100">{quiz.title}</p>
                         <p className="text-xs text-muted-foreground">
                           {quiz.categoryId?.title || 'Geen categorie'} • {quiz.questions?.length || 0} vragen
                         </p>
@@ -174,7 +174,7 @@ export default async function AdminDashboard() {
                            quiz.status === 'rejected' ? 'Afgewezen' : 'Concept'}
                         </span>
                         <Link href={`/admin/quizzes/${quiz._id}/edit`}>
-                          <Button variant="ghost" size="icon" className="h-8 w-8 text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100">
+                          <Button variant="ghost" size="icon" className="h-8 w-8 text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100">
                             <Edit className="h-4 w-4" />
                           </Button>
                         </Link>
@@ -190,17 +190,17 @@ export default async function AdminDashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-6 lg:px-8">
-        <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-5 lg:px-4">
+        <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
           <CardHeader className="pb-3 pt-5">
-            <CardTitle className="flex items-center gap-2 leading-tight text-[#1f2f4b] dark:text-slate-100">
+            <CardTitle className="flex items-center gap-2 leading-tight text-[#1f2f4b] dark:text-zinc-100">
               <Settings className="h-5 w-5 text-[#5f7fc7]" />
               Snelle acties
             </CardTitle>
           </CardHeader>
           <CardContent className="pb-6">
             <div className="grid gap-4 md:grid-cols-3">
-              <Button asChild variant="outline" className="h-auto min-h-24 flex-col items-start justify-center border-[#d7e1ee] bg-white py-4 text-left text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">
+              <Button asChild variant="outline" className="h-auto min-h-24 flex-col items-start justify-center border-[#d7e1ee] bg-white py-4 text-left text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
                 <Link href="/admin/quizzes?status=pending">
                   <Activity className="mb-2 h-5 w-5 text-[#cc8741]" />
                   <div className="text-left">
@@ -212,7 +212,7 @@ export default async function AdminDashboard() {
                 </Link>
               </Button>
 
-              <Button asChild variant="outline" className="h-auto min-h-24 flex-col items-start justify-center border-[#d7e1ee] bg-white py-4 text-left text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">
+              <Button asChild variant="outline" className="h-auto min-h-24 flex-col items-start justify-center border-[#d7e1ee] bg-white py-4 text-left text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
                 <Link href="/admin/quizzes/create">
                   <Plus className="mb-2 h-5 w-5 text-[#5f7fc7]" />
                   <div className="text-left">
@@ -224,7 +224,7 @@ export default async function AdminDashboard() {
                 </Link>
               </Button>
 
-              <Button asChild variant="outline" className="h-auto min-h-24 flex-col items-start justify-center border-[#d7e1ee] bg-white py-4 text-left text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">
+              <Button asChild variant="outline" className="h-auto min-h-24 flex-col items-start justify-center border-[#d7e1ee] bg-white py-4 text-left text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
                 <Link href="/admin/quizzes">
                   <BarChart3 className="mb-2 h-5 w-5 text-[#3d8f5e]" />
                   <div className="text-left">

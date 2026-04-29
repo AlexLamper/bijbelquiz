@@ -95,7 +95,7 @@ export default async function SuccessPage({ searchParams }: PageProps) {
              <CardTitle className="text-3xl font-bold">Betaling Geslaagd!</CardTitle>
            </CardHeader>
            <CardContent className="space-y-4">
-              <p className="text-slate-600 dark:text-slate-400">
+              <p className="text-slate-600 dark:text-zinc-400">
                 Bedankt voor je steun! Je account is nu opgewaardeerd naar <strong>Premium</strong>.
               </p>
               <div className="p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800 rounded-lg">

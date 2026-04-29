@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import AppShell from "@/components/AppShell";
 
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const merriweather = Merriweather({
+const poppins = Poppins({
   variable: "--font-serif",
-  weight: ["300", "400", "700", "900"],
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -82,7 +82,7 @@ export default function RootLayout({
           />
       </head>
       <body
-        className={`${inter.variable} ${merriweather.variable} font-sans antialiased bg-background text-foreground`}
+        className={`${inter.variable} ${poppins.variable} font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider
             attribute="class"
@@ -91,12 +91,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
           <Providers>
-            <div className="flex flex-col min-h-screen">
-              <Navbar />
-              <main className="flex-1">
-                {children}
-              </main>
-            </div>
+            <AppShell>{children}</AppShell>
           </Providers>
         </ThemeProvider>
       </body>

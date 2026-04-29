@@ -26,6 +26,36 @@ function asRecord(value: unknown): Record<string, unknown> | null {
   return value as Record<string, unknown>;
 }
 
+function shouldDebugLog(): boolean {
+  return process.env.NODE_ENV === 'development' || process.env.MULTIPLAYER_DEBUG === '1';
+}
+
+function debugLog(message: string, details?: Record<string, unknown>): void {
+  if (!shouldDebugLog()) {
+    return;
+  }
+
+  if (details) {
+    console.info(`[multiplayer-ws-hub] ${message}`, details);
+    return;
+  }
+
+  console.info(`[multiplayer-ws-hub] ${message}`);
+}
+
+function warnLog(message: string, details?: Record<string, unknown>): void {
+  if (!shouldDebugLog()) {
+    return;
+  }
+
+  if (details) {
+    console.warn(`[multiplayer-ws-hub] ${message}`, details);
+    return;
+  }
+
+  console.warn(`[multiplayer-ws-hub] ${message}`);
+}
+
 export class MultiplayerWsHub {
   private readonly service: MultiplayerService;
   private readonly roomSockets = new Map<string, Set<WebSocket>>();
@@ -35,11 +65,20 @@ export class MultiplayerWsHub {
     this.service = service;
 
     this.service.onBroadcast((event) => {
+      debugLog('Broadcast event from service', {
+        type: event.type,
+        roomCode: event.roomCode,
+      });
       this.broadcast(event.roomCode, event.type, event.payload);
     });
   }
 
   attachConnection(ws: WebSocket, userId: string, initialRoomCode: string | null): void {
+    debugLog('Attach websocket connection', {
+      userId,
+      initialRoomCode,
+    });
+
     this.socketContexts.set(ws, {
       userId,
       roomCode: null,
@@ -49,12 +88,15 @@ export class MultiplayerWsHub {
       void this.handleMessage(ws, data);
     });
 
-    ws.on('close', () => {
-      void this.handleClose(ws);
+    ws.on('close', (code, reason) => {
+      void this.handleClose(ws, code, reason.toString('utf8'));
     });
 
     ws.on('error', () => {
-      void this.handleClose(ws);
+      debugLog('Socket error event fired', {
+        userId,
+      });
+      void this.handleClose(ws, 1006, 'socket_error');
     });
 
     if (initialRoomCode) {
@@ -86,6 +128,12 @@ export class MultiplayerWsHub {
 
     const type = envelope.type;
     const payload = asRecord(envelope.payload);
+
+    debugLog('Received websocket command', {
+      userId: context.userId,
+      type: typeof type === 'string' ? type : 'unknown',
+      roomCode: context.roomCode,
+    });
 
     if (type === 'join_room') {
       const roomCode = typeof payload?.roomCode === 'string' ? payload.roomCode : '';
@@ -127,6 +175,11 @@ export class MultiplayerWsHub {
       });
 
       this.moveSocketToRoom(ws, roomCode);
+      debugLog('Socket joined room', {
+        userId,
+        roomCode,
+        playerCount: room.players.length,
+      });
       this.send(ws, 'room_joined', { room });
     } catch (error) {
       this.sendErrorFromException(ws, error);
@@ -146,16 +199,27 @@ export class MultiplayerWsHub {
         roomCode,
       });
       this.detachSocketFromRoom(ws, roomCode);
+      debugLog('Socket left room', {
+        userId,
+        roomCode,
+      });
     } catch (error) {
       this.sendErrorFromException(ws, error);
     }
   }
 
-  private async handleClose(ws: WebSocket): Promise<void> {
+  private async handleClose(ws: WebSocket, closeCode: number, closeReason: string): Promise<void> {
     const context = this.socketContexts.get(ws);
     if (!context) {
       return;
     }
+
+    debugLog('Socket closed', {
+      userId: context.userId,
+      roomCode: context.roomCode,
+      closeCode,
+      closeReason,
+    });
 
     this.socketContexts.delete(ws);
 
@@ -216,8 +280,18 @@ export class MultiplayerWsHub {
   private broadcast(roomCode: string, type: OutboundEventName, payload: Record<string, unknown>): void {
     const sockets = this.roomSockets.get(roomCode);
     if (!sockets || sockets.size === 0) {
+      debugLog('No sockets to broadcast to', {
+        roomCode,
+        type,
+      });
       return;
     }
+
+    debugLog('Broadcasting event to sockets', {
+      roomCode,
+      type,
+      socketCount: sockets.size,
+    });
 
     sockets.forEach((socket) => {
       this.send(socket, type, payload);
@@ -239,10 +313,15 @@ export class MultiplayerWsHub {
 
   private sendErrorFromException(socket: WebSocket, error: unknown): void {
     if (isMultiplayerError(error)) {
+      warnLog('Sending multiplayer error to websocket client', {
+        code: error.code,
+        message: error.message,
+      });
       this.sendError(socket, error.code, error.message);
       return;
     }
 
+    warnLog('Sending internal websocket error to client');
     this.sendError(socket, 'INTERNAL_ERROR', 'Unexpected socket error');
   }
 

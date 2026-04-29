@@ -6,7 +6,7 @@ import { attachMultiplayerWebSocketServer } from './src/lib/multiplayer/ws-serve
 async function bootstrap(): Promise<void> {
   const mode = process.argv[2] ?? 'dev';
   const dev = mode !== 'start';
-  const hostname = process.env.HOST || process.env.HOSTNAME || '0.0.0.0';
+  const hostname = process.env.HOST || 'localhost';
   const port = Number(process.env.PORT || 3000);
 
   const app = next({ dev, hostname, port });
@@ -24,6 +24,11 @@ async function bootstrap(): Promise<void> {
   server.listen(port, hostname, () => {
     const modeLabel = dev ? 'development' : 'production';
     console.log(`> Server listening on http://${hostname}:${port} (${modeLabel})`);
+    console.log(`> Multiplayer WebSocket upgrade ready at ws://${hostname}:${port}/api/mobile/multiplayer/ws`);
+
+    if (dev) {
+      console.log('> For plain Next.js dev without WebSocket upgrades, run: npm run dev:next');
+    }
   });
 }
 

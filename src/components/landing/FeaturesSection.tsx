@@ -40,15 +40,15 @@ export function FeaturesSection() {
 
         <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-16">
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">1500+</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">1500+</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Vragen</div>
           </div>
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">50+</div>
-            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Categorieë n</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">50+</div>
+            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Categorieën</div>
           </div>
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-[#5b7dd9] md:text-5xl">3</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">3</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Moeilijkheidsgraden</div>
           </div>
         </div>

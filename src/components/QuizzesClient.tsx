@@ -85,21 +85,21 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
           <CardContent className="relative p-0">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] xl:items-start">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-slate-300">Quizbibliotheek</p>
-                <h1 className="mt-2 text-3xl font-semibold text-[#1f2f4b] dark:text-slate-100 md:text-4xl">Ontdek en speel Bijbelquizzen</h1>
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Quizbibliotheek</p>
+                <h1 className="mt-2 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Ontdek en speel Bijbelquizzen</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                   Gebruik filters en zoekopdrachten om snel quizzen te vinden die passen bij je niveau en interesse.
                 </p>
               </div>
 
               <div className="flex flex-wrap gap-2 xl:justify-end xl:pt-1">
-                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-slate-900/70">
+                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-zinc-900/70">
                   {resultCount} zichtbaar
                 </Badge>
-                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-slate-900/70">
+                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-zinc-900/70">
                   {totalCount} totaal
                 </Badge>
-                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-slate-900/70">
+                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-zinc-900/70">
                   {selectedCategoryTitle}
                 </Badge>
               </div>
@@ -112,12 +112,12 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
         <div>
           <div className="grid gap-3 md:grid-cols-[minmax(0,1fr)_auto_auto] md:items-center">
             <div className="relative">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#7b8da8] dark:text-slate-400" />
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#7b8da8] dark:text-zinc-400" />
               <Input
                 value={searchQuery}
                 onChange={(event) => setSearchQuery(event.target.value)}
                 placeholder="Zoek op titel of beschrijving"
-                className="h-10 border-[#d7e1ee] bg-white pl-9 text-sm focus-visible:ring-[#aac0e8] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
+                className="h-10 border-[#d7e1ee] bg-white pl-9 text-sm focus-visible:ring-[#aac0e8] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
               />
             </div>
 
@@ -135,8 +135,8 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
               onClick={() => setShowPremiumOnly((value) => !value)}
               className={`hidden h-10 rounded-md px-4 md:inline-flex ${
                 showPremiumOnly
-                  ? 'border-[#9bb6e1] bg-[#dfe9fa] text-[#233a5f] shadow-sm ring-1 ring-[#bfd0ed] dark:border-blue-500/70 dark:bg-blue-500/20 dark:text-blue-100 dark:ring-blue-500/50'
-                  : 'border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800'
+                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                  : 'border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800'
               }`}
             >
               <SlidersHorizontal className="mr-2 h-4 w-4" />
@@ -150,8 +150,8 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
               onClick={() => setSelectedCategory('all')}
               className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
                 selectedCategory === 'all'
-                  ? 'border-[#9bb6e1] bg-[#dfe9fa] text-[#233a5f] shadow-sm ring-1 ring-[#bfd0ed] dark:border-blue-500/70 dark:bg-blue-500/20 dark:text-blue-100 dark:ring-blue-500/50'
-                  : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100'
+                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                  : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
               }`}
             >
               Alle categorieen
@@ -164,8 +164,8 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
                 onClick={() => setSelectedCategory(category._id)}
                 className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
                   selectedCategory === category._id
-                    ? 'border-[#9bb6e1] bg-[#dfe9fa] text-[#233a5f] shadow-sm ring-1 ring-[#bfd0ed] dark:border-blue-500/70 dark:bg-blue-500/20 dark:text-blue-100 dark:ring-blue-500/50'
-                    : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100'
+                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                    : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
                 }`}
               >
                 {category.title}
@@ -177,9 +177,9 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
 
       <section className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
         {resultCount === 0 ? (
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-10 text-center">
-              <h2 className="text-2xl font-semibold text-[#1f2f4b] dark:text-slate-100">Geen quizzen gevonden</h2>
+              <h2 className="text-2xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Geen quizzen gevonden</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Pas je filters aan of probeer een andere zoekterm.
               </p>
@@ -187,7 +187,7 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
                 <Button
                   type="button"
                   variant="outline"
-                  className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                  className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
                   onClick={() => {
                     setSearchQuery('');
                     setSelectedCategory('all');
@@ -196,7 +196,7 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
                 >
                   Filters wissen
                 </Button>
-                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc]">
+                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
                   <Link href="/dashboard">Naar dashboard</Link>
                 </Button>
               </div>

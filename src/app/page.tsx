@@ -83,7 +83,7 @@ export default async function Home() {
                 <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                   <Button 
                     size="lg" 
-                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] hover:bg-[#5f81cc] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors w-full sm:w-auto" 
+                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors w-full sm:w-auto" 
                     asChild
                   >
                     <Link href="/dashboard">
@@ -94,7 +94,7 @@ export default async function Home() {
               ) : (
                 <Button 
                   size="lg" 
-                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] hover:bg-[#5f81cc] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors" 
+                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors" 
                   asChild
                 >
                   <Link href="/dashboard">
@@ -110,7 +110,7 @@ export default async function Home() {
           <div className="w-full lg:w-[48%] mt-12 lg:mt-0 relative h-87.5 sm:h-125 lg:h-150 xl:h-175 hidden md:flex justify-center items-center overflow-visible p-6 rounded-2xl">
              {/* Hero mockup: scaled down contextually */}
              <div
-               className="absolute left-40 top-0 w-180 h-180 transform-gpu pointer-events-none scale-100 lg:scale-[0.92] xl:scale-100 transform-origin-left"
+               className="landing-hero-image absolute left-40 top-0 h-180 w-180 transform-gpu pointer-events-none scale-100 transform-origin-left lg:scale-[0.92] xl:scale-100"
              >
                <Image 
                  src="/images/hero/hero1.png"

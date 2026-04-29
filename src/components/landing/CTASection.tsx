@@ -4,7 +4,7 @@ import { DownloadButtons } from "@/components/landing/DownloadButtons"
 
 export function CTASection() {
   return (
-    <section className="bg-linear-to-b from-white to-[#e8eef9] dark:from-[#1a2942] dark:to-[#1a2942] py-16 md:py-24">
+    <section className="bg-linear-to-b from-white to-[#e8eef9] dark:from-zinc-950 dark:to-black py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-[#1a2942] dark:text-white md:text-4xl lg:text-5xl">
@@ -16,7 +16,7 @@ export function CTASection() {
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button className="rounded-full bg-primary hover:bg-primary/90 dark:bg-[#5b7dd9] dark:hover:bg-[#4a6bc7] px-8 py-6 text-base font-medium text-white" asChild>
+            <Button className="h-14 rounded-2xl bg-primary px-8 text-base font-medium text-white hover:bg-primary/90 dark:bg-[#5b7dd9] dark:hover:bg-[#4a6bc7]" asChild>
               <Link href="/quizzes">Speel direct online</Link>
             </Button>
 
