@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, User } from '@/database';
+import { normalizeUserSettings } from '@/lib/user-settings';
 
 export async function GET(req: NextRequest) {
   const session = await getSession(req);
@@ -32,7 +33,8 @@ export async function GET(req: NextRequest) {
         bibleReadingFrequency: user.onboarding?.bibleReadingFrequency || '',
         knowledgeLevel: user.onboarding?.knowledgeLevel || '',
         interests: user.onboarding?.interests || []
-      }
+      },
+      settings: normalizeUserSettings(user.settings)
     });
   } catch (error) {
     console.error('[USER_ME_GET]', error);

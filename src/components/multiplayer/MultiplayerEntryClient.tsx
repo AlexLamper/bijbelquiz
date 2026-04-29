@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -24,6 +25,8 @@ interface MultiplayerQuizOption {
 
 interface MultiplayerEntryClientProps {
   quizzes: MultiplayerQuizOption[];
+  isPremiumUser: boolean;
+  hasUsedFreeRoomCreation: boolean;
 }
 
 const PLAYER_OPTIONS = [2, 4, 6, 8, 10, 12];
@@ -32,9 +35,14 @@ function normalizeRoomCode(code: string): string {
   return code.trim().toUpperCase();
 }
 
-export default function MultiplayerEntryClient({ quizzes }: MultiplayerEntryClientProps) {
+export default function MultiplayerEntryClient({
+  quizzes,
+  isPremiumUser,
+  hasUsedFreeRoomCreation,
+}: MultiplayerEntryClientProps) {
   const router = useRouter();
   const tokenRef = useRef<string | null>(null);
+  const canCreateRoom = isPremiumUser || !hasUsedFreeRoomCreation;
 
   const [selectedQuizId, setSelectedQuizId] = useState(quizzes[0]?.id ?? '');
   const [maxPlayers, setMaxPlayers] = useState<string>('8');
@@ -55,6 +63,11 @@ export default function MultiplayerEntryClient({ quizzes }: MultiplayerEntryClie
   }
 
   async function handleCreateRoom() {
+    if (!canCreateRoom) {
+      setErrorMessage('Room aanmaken is Premium nadat je gratis room is gebruikt.');
+      return;
+    }
+
     if (!selectedQuizId) {
       setErrorMessage('Kies eerst een quiz.');
       return;
@@ -132,10 +145,26 @@ export default function MultiplayerEntryClient({ quizzes }: MultiplayerEntryClie
             <CardHeader>
               <CardTitle>Nieuwe room maken</CardTitle>
               <CardDescription>
-                Kies een quiz en stel het maximum aantal spelers in.
+                {isPremiumUser
+                  ? 'Kies een quiz en stel het maximum aantal spelers in.'
+                  : hasUsedFreeRoomCreation
+                    ? 'Je gratis room is gebruikt. Upgrade naar Premium om nieuwe rooms te maken.'
+                    : 'Je kunt als gratis gebruiker 1 room maken. Daarna is Premium nodig.'}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
+              {!isPremiumUser && hasUsedFreeRoomCreation && (
+                <div className="rounded-md border border-[#d7e1ee] bg-[#f8fbff] p-3 text-sm text-[#30466e] dark:border-zinc-700 dark:bg-zinc-900/70 dark:text-zinc-200">
+                  <p className="font-semibold">Premium vereist voor nieuwe rooms</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    Joinen met code blijft gratis, maar hosten is nu Premium.
+                  </p>
+                  <Button asChild className="mt-3 h-8 rounded-md bg-[#6f8ed4] px-3 text-xs text-white hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
+                    <Link href="/premium">Upgrade naar Premium</Link>
+                  </Button>
+                </div>
+              )}
+
               <div className="space-y-2">
                 <label className="text-sm font-medium">Quiz</label>
                 <Select value={selectedQuizId} onValueChange={setSelectedQuizId}>
@@ -168,8 +197,16 @@ export default function MultiplayerEntryClient({ quizzes }: MultiplayerEntryClie
                 </Select>
               </div>
 
-              <Button className="w-full" onClick={handleCreateRoom} disabled={isCreating || quizzes.length === 0}>
-                {isCreating ? 'Room wordt aangemaakt...' : 'Room aanmaken'}
+              <Button
+                className="w-full dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]"
+                onClick={handleCreateRoom}
+                disabled={isCreating || quizzes.length === 0 || !canCreateRoom}
+              >
+                {isCreating
+                  ? 'Room wordt aangemaakt...'
+                  : canCreateRoom
+                    ? 'Room aanmaken'
+                    : 'Premium vereist voor nieuwe room'}
               </Button>
             </CardContent>
           </Card>
@@ -196,7 +233,12 @@ export default function MultiplayerEntryClient({ quizzes }: MultiplayerEntryClie
                 />
               </div>
 
-              <Button className="w-full" variant="outline" onClick={handleJoinRoom} disabled={isJoining}>
+              <Button
+                className="w-full dark:border-[#5a79bf] dark:bg-[#5f81cc] dark:text-white dark:hover:bg-[#5275bd] dark:hover:text-white"
+                variant="outline"
+                onClick={handleJoinRoom}
+                disabled={isJoining}
+              >
                 {isJoining ? 'Verbinden met room...' : 'Join room'}
               </Button>
             </CardContent>

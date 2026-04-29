@@ -32,7 +32,7 @@ export default function DeleteAccountPage() {
           U kunt ook een verzoek tot gegevensverwijdering indienen via e-mail. Dit is handig als u de app al heeft verwijderd van uw telefoon.
         </p>
         <ul>
-          <li>Stuur een e-mail naar: <a href="mailto:info@bijbelquiz.com">info@bijbelquiz.com</a></li>
+          <li>Stuur een e-mail naar: <a href="mailto:devlamper06@gmail.com">devlamper06@gmail.com</a></li>
           <li>Gebruik als onderwerp: <strong>Verzoek tot accountverwijdering</strong>.</li>
           <li>Belangrijk: Stuur de e-mail vanaf het e-mailadres waarmee u bent ingelogd in de app, zodat wij kunnen verifiëren dat het account van u is.</li>
         </ul>

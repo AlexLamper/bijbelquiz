@@ -85,7 +85,7 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
           <CardContent className="relative p-0">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] xl:items-start">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Quizbibliotheek</p>
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-[#9db5dc]">Quizbibliotheek</p>
                 <h1 className="mt-2 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Ontdek en speel Bijbelquizzen</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                   Gebruik filters en zoekopdrachten om snel quizzen te vinden die passen bij je niveau en interesse.
@@ -135,7 +135,7 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
               onClick={() => setShowPremiumOnly((value) => !value)}
               className={`hidden h-10 rounded-md px-4 md:inline-flex ${
                 showPremiumOnly
-                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
                   : 'border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800'
               }`}
             >
@@ -150,7 +150,7 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
               onClick={() => setSelectedCategory('all')}
               className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
                 selectedCategory === 'all'
-                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
                   : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
               }`}
             >
@@ -164,7 +164,7 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
                 onClick={() => setSelectedCategory(category._id)}
                 className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
                   selectedCategory === category._id
-                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
                     : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
                 }`}
               >

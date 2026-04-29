@@ -30,7 +30,7 @@ export default function HelpPage() {
     <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
       <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
         <div className="rounded-2xl border border-[#d8e1ee] bg-[linear-gradient(140deg,#ffffff,#f3f8ff)] p-6 shadow-sm dark:border-zinc-700 dark:bg-[linear-gradient(140deg,rgba(24,24,27,0.9),rgba(39,39,42,0.85))]">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#e9eff8] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#355384] dark:bg-zinc-800 dark:text-zinc-200">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#e9eff8] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#355384] dark:bg-[#6f8ed4] dark:text-white">
             <LifeBuoy className="h-3.5 w-3.5" />
             Support
           </div>
@@ -40,7 +40,7 @@ export default function HelpPage() {
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2.5">
-            <Link href="/contact" className="inline-flex items-center gap-2 rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-zinc-500 dark:hover:bg-zinc-400">
+            <Link href="/contact" className="inline-flex items-center gap-2 rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
               Contact opnemen
               <ArrowRight className="h-4 w-4" />
             </Link>

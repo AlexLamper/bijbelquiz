@@ -24,10 +24,13 @@ function getExplanationPreview(explanation?: string): string | undefined {
   const normalized = explanation.replace(/\s+/g, ' ').trim();
   if (!normalized) return undefined;
 
-  const maxChars = 165;
-  if (normalized.length <= maxChars) return normalized;
+  const maxChars = 110;
+  if (normalized.length <= maxChars) {
+    return `${normalized.replace(/[.!?]+$/, '').trimEnd()}...`;
+  }
 
-  return `${normalized.slice(0, maxChars).trimEnd()}...`;
+  const trimmed = normalized.slice(0, maxChars).replace(/[.!?\s]+$/, '').trimEnd();
+  return `${trimmed}...`;
 }
 
 export async function generateMetadata(

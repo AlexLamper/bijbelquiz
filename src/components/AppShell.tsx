@@ -25,6 +25,7 @@ const SIDEBAR_ROUTE_PREFIXES = [
   '/privacy-policy',
   '/terms-of-service',
   '/instellingen',
+  '/settings',
 ];
 
 function shouldShowSidebar(pathname: string): boolean {

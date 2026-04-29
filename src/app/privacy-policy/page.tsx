@@ -53,7 +53,7 @@ export default function PrivacyPage() {
     },
     {
       title: '8. Contact',
-      body: ['Heeft u vragen over dit privacybeleid? Neem contact op via info@bijbelquiz.com.'],
+      body: ['Heeft u vragen over dit privacybeleid? Neem contact op via devlamper06@gmail.com.'],
     },
   ]
 

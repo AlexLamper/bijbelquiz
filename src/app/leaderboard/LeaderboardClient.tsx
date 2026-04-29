@@ -46,13 +46,13 @@ export default function LeaderboardClient({ users, currentUserId }: LeaderboardC
       <section className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Ranglijst</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-[#9db5dc]">Ranglijst</p>
             <h1 className="mt-1 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Top spelers</h1>
             <p className="mt-2 text-sm text-muted-foreground">Eenvoudig overzicht op basis van XP.</p>
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-5 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
+            <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:hover:bg-[#5f81cc]">
               <Link href="/quizzes">Speel quiz</Link>
             </Button>
             <Button asChild variant="outline" className="h-10 rounded-md border-[#d7e1ee] bg-white px-5 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">

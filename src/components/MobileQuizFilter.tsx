@@ -59,7 +59,7 @@ export function MobileQuizFilter({
                 className={cn(
                   'h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
                   selectedCategory === 'all'
-                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
                     : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
                 )}
               >
@@ -75,7 +75,7 @@ export function MobileQuizFilter({
                   className={cn(
                     'h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
                     selectedCategory === category._id
-                      ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                      ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
                       : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
                   )}
                 >
@@ -90,7 +90,7 @@ export function MobileQuizFilter({
                 className={cn(
                   'mt-1 h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
                   showPremiumOnly
-                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
                     : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
                 )}
               >

@@ -46,15 +46,15 @@ export default function ContactPage() {
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
           <Card className="border-[#d8e1ee] bg-white/80 py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-6">
-              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#e9eff8] dark:bg-zinc-800">
-                <Mail className="h-5 w-5 text-[#355384] dark:text-zinc-200" />
+              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#e9eff8] dark:bg-[#1f3356]">
+                <Mail className="h-5 w-5 text-[#355384] dark:text-[#9db5dc]" />
               </div>
               <h2 className="text-2xl text-[#1f2f4b] dark:text-zinc-100">Mail ons</h2>
               <p className="mt-2 text-sm text-muted-foreground">We reageren meestal binnen 1-2 werkdagen.</p>
 
               <a
                 href={`mailto:${supportEmail}`}
-                className="mt-4 inline-flex rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-zinc-500 dark:hover:bg-zinc-400"
+                className="mt-4 inline-flex rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
               >
                 {supportEmail}
               </a>
@@ -63,8 +63,8 @@ export default function ContactPage() {
 
           <Card className="border-[#d8e1ee] bg-white/80 py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-6">
-              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#eef4ff] dark:bg-zinc-800">
-                <AlertTriangle className="h-5 w-5 text-[#355384] dark:text-zinc-200" />
+              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#eef4ff] dark:bg-[#1f3356]">
+                <AlertTriangle className="h-5 w-5 text-[#355384] dark:text-[#9db5dc]" />
               </div>
               <h2 className="text-2xl text-[#1f2f4b] dark:text-zinc-100">Bug melden</h2>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -85,7 +85,7 @@ export default function ContactPage() {
       <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
         <div className="max-w-3xl space-y-6">
           <h2 className="text-2xl text-[#1f2f4b] dark:text-zinc-100 flex items-center gap-2">
-            <HelpCircle className="h-5 w-5 text-muted-foreground" />
+            <HelpCircle className="h-5 w-5 text-muted-foreground dark:text-[#9db5dc]" />
             Veelgestelde vragen
           </h2>
 

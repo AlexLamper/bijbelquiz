@@ -198,7 +198,7 @@ export default function Navbar({
                   Premium actief
                 </span>
               ) : (
-                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
+                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#5f81cc]">
                   <Link href="/premium">Premium</Link>
                 </Button>
               )}
@@ -357,7 +357,7 @@ export default function Navbar({
                     </Link>
 
                     {!session.user?.isPremium && (
-                      <Button asChild className="h-9 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
+                      <Button asChild className="h-9 rounded-md bg-[#6f8ed4] dark:bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#5f81cc]">
                         <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)}>
                           Premium
                         </Link>

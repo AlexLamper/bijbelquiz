@@ -2,13 +2,19 @@ import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 import MultiplayerEntryClient from '@/components/multiplayer/MultiplayerEntryClient';
 import { authOptions } from '@/lib/auth';
-import { connectDB, Quiz } from '@/database';
+import { connectDB, Quiz, User } from '@/database';
 
 interface QuizOption {
   id: string;
   title: string;
   questionCount: number;
   isPremium: boolean;
+}
+
+interface RawUserDocument {
+  isPremium?: unknown;
+  hasLifetimePremium?: unknown;
+  freeMultiplayerRoomCreated?: unknown;
 }
 
 interface RawQuizDocument {
@@ -27,6 +33,13 @@ export default async function MultiplayerPage() {
   }
 
   await connectDB();
+
+  const rawUser = await User.findById(session.user.id)
+    .select('isPremium hasLifetimePremium freeMultiplayerRoomCreated')
+    .lean() as RawUserDocument | null;
+
+  const isPremiumUser = Boolean(rawUser?.isPremium || rawUser?.hasLifetimePremium || session.user.isPremium);
+  const hasUsedFreeRoomCreation = Boolean(rawUser?.freeMultiplayerRoomCreated);
 
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
   const rawQuizzes = await Quiz.find(statusFilter)
@@ -50,5 +63,11 @@ export default async function MultiplayerPage() {
     };
   });
 
-  return <MultiplayerEntryClient quizzes={quizzes} />;
+  return (
+    <MultiplayerEntryClient
+      quizzes={quizzes}
+      isPremiumUser={isPremiumUser}
+      hasUsedFreeRoomCreation={hasUsedFreeRoomCreation}
+    />
+  );
 }

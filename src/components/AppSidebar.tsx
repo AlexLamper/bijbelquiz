@@ -65,7 +65,10 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
       ];
 
   const accountItems: SidebarItem[] = session
-    ? [{ href: '/profile', label: 'Profiel', icon: User }]
+    ? [
+        { href: '/profile', label: 'Profiel', icon: User },
+        { href: '/instellingen', label: 'Instellingen', icon: ShieldCheck, activePrefixes: ['/instellingen'] },
+      ]
     : [
         { href: '/login', label: 'Inloggen', icon: LogIn },
         { href: '/register', label: 'Registreren', icon: UserPlus },
@@ -153,6 +156,23 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
           </section>
         ))}
       </div>
+
+      {session && !session.user?.isPremium && !collapsed && (
+        <section className="mt-3 shrink-0 rounded-lg border border-[#d7e1ee] bg-[#f8fbff] p-3 dark:border-zinc-700 dark:bg-zinc-900/70">
+          <p className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-[#4f6faa] dark:text-zinc-300">
+            <Crown className="h-3.5 w-3.5" />
+            Premium
+          </p>
+          <p className="mt-2 text-sm font-semibold text-[#1f2f4b] dark:text-zinc-100">Meer uit je quizsessies halen</p>
+          <p className="mt-1 text-xs text-[#607597] dark:text-zinc-400">Ontgrendel alle quizzen, zonder advertenties en met extra uitleg.</p>
+          <Link
+            href="/premium"
+            className="mt-3 inline-flex w-full items-center justify-center rounded-md bg-[#6f8ed4] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+          >
+            Bekijk Premium
+          </Link>
+        </section>
+      )}
     </aside>
   );
 }

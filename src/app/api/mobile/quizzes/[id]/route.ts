@@ -1,6 +1,27 @@
 import { NextResponse } from 'next/server';
 import { connectDB, Quiz, Category } from '@/database';
 
+const VALID_IMAGE_NAMES = new Set(Array.from({ length: 10 }, (_, index) => `img${index + 1}.png`));
+
+function normalizeQuizImagePath(value?: string): string {
+  const image = value?.trim();
+  if (!image) {
+    return '/images/quizzes/img1.png';
+  }
+
+  const lower = image.toLowerCase();
+  if (!lower.startsWith('/images/quizzes/')) {
+    return image;
+  }
+
+  const fileName = lower.split('/').pop() || '';
+  if (!VALID_IMAGE_NAMES.has(fileName)) {
+    return '/images/quizzes/img1.png';
+  }
+
+  return `/images/quizzes/${fileName}`;
+}
+
 export async function GET(req: Request, context: any) {
   try {
     await connectDB();
@@ -46,7 +67,7 @@ export async function GET(req: Request, context: any) {
       title: quiz.title,
       slug: quiz.slug,
       description: quiz.description,
-      imageUrl: quiz.imageUrl || (quiz as any).image || '',
+      imageUrl: normalizeQuizImagePath(quiz.imageUrl || (quiz as any).image),
       xpReward: quiz.rewardXp || (quiz as any).xpReward || 50,
       difficulty: quiz.difficulty || 'medium',
       categoryId: categoryObj?._id?.toString() || quiz.categoryId?.toString() || null,

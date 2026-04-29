@@ -87,12 +87,14 @@ export default function DashboardHomeClient({
           <CardContent className="relative p-0">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] xl:items-start">
               <div>
-                <h1 className="text-4xl leading-tight text-[#1f2f4b] md:text-5xl dark:text-zinc-100">{greeting}, {userName}.</h1>
+                <h1 className="text-4xl leading-tight text-[#1f2f4b] md:text-5xl">
+                  <span className="dark:text-[#9db5dc]">{greeting}</span>, <span className="dark:text-zinc-100">{userName}.</span>
+                </h1>
 
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#5f7297] md:text-[15px] dark:text-zinc-300">Kies een quiz en speel direct verder.</p>
 
                 <div className="mt-5 flex flex-wrap gap-2.5">
-                  <Button asChild className="h-10 rounded-[8px] bg-[#5d82d4] px-5 text-sm font-semibold text-white hover:bg-[#4f74c7] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
+                  <Button asChild className="h-10 rounded-[8px] bg-[#5d82d4] px-5 text-sm font-semibold text-white hover:bg-[#4f74c7] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
                     <Link href="/quizzes" className="inline-flex items-center gap-2">
                       <Play className="h-4 w-4" />
                       Speel quiz

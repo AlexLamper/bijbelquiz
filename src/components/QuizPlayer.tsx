@@ -404,7 +404,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   )}
 
                   {currentQuestion.bibleReference && (
-                    <Badge variant="secondary" className="mt-3 bg-[#e9eff8] text-[#355384] dark:bg-zinc-700 dark:text-zinc-200">
+                    <Badge variant="secondary" className="mt-3 border border-[#d7e1ee] bg-white text-[#355384] dark:border-[#d7e1ee] dark:bg-white dark:text-[#355384]">
                       Referentie: {currentQuestion.bibleReference}
                     </Badge>
                   )}

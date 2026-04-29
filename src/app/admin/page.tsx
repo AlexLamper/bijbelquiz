@@ -33,7 +33,7 @@ export default async function AdminDashboard() {
           <CardContent className="p-0">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_auto] xl:items-end">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Beheercentrum</p>
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-[#9db5dc]">Beheercentrum</p>
                 <h1 className="mt-1 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Admin dashboard</h1>
                 <p className="mt-2 text-sm text-muted-foreground">Beheer je BijbelQuiz platform.</p>
               </div>
@@ -45,7 +45,7 @@ export default async function AdminDashboard() {
                     Alle quizzen
                   </Link>
                 </Button>
-                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
+                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#5f81cc]">
                   <Link href="/admin/quizzes/create">
                     <Plus className="mr-2 h-4 w-4" />
                     Nieuwe quiz

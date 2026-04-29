@@ -175,7 +175,7 @@ export default async function ProfilePage() {
             <div className="flex flex-wrap items-center gap-2">
               <h1 className="text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">{user.name || 'Naamloos'}</h1>
               {user.isPremium && (
-                <Badge className="bg-[#e9eff8] text-[#355384] dark:bg-zinc-800 dark:text-zinc-200">
+                <Badge className="bg-[#e9eff8] text-[#355384] dark:bg-[#6f8ed4] dark:text-white">
                   <Star className="mr-1 h-3.5 w-3.5" />
                   Premium
                 </Badge>
@@ -255,7 +255,7 @@ export default async function ProfilePage() {
               <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
                 <CardContent className="p-5">
                   <div className="flex items-center gap-5">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-[#6f8ed4] text-2xl font-bold text-white dark:bg-zinc-500">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-[#6f8ed4] text-2xl font-bold text-white dark:bg-[#6f8ed4]">
                       {levelInfo.level}
                     </div>
 
@@ -267,7 +267,7 @@ export default async function ProfilePage() {
 
                       <div className="h-2.5 w-full overflow-hidden rounded-full bg-[#e2eaf5] dark:bg-zinc-700">
                         <div
-                          className="h-full bg-[#6f8ed4] dark:bg-zinc-500"
+                          className="h-full bg-[#6f8ed4] dark:bg-[#6f8ed4]"
                           style={{ width: `${levelInfo.progressPercentage}%` }}
                         />
                       </div>
@@ -294,15 +294,15 @@ export default async function ProfilePage() {
                         key={entry.level}
                         className={`rounded-md border px-3 py-3 ${
                           isCurrent
-                            ? 'border-[#6f8ed4] bg-[#f8fbff] dark:border-zinc-400 dark:bg-zinc-900/60'
+                            ? 'border-[#6f8ed4] bg-[#f8fbff] dark:border-[#6f8ed4] dark:bg-[#162948]'
                             : 'border-[#d7e1ee] bg-white dark:border-zinc-700 dark:bg-zinc-900/40'
                         }`}
                       >
                         <div className="flex items-center gap-2">
-                          <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">Niveau {entry.level}</p>
+                          <p className={`text-sm font-semibold text-[#24395f] ${isCurrent ? 'dark:text-[#9db5dc]' : 'dark:text-zinc-100'}`}>Niveau {entry.level}</p>
                           {isReached && <CheckCircle2 className="h-4 w-4 text-[#5f7fc7] dark:text-zinc-300" />}
                         </div>
-                        <p className="mt-0.5 text-sm text-[#30466e] dark:text-zinc-300">{entry.title}</p>
+                        <p className={`mt-0.5 text-sm text-[#30466e] ${isCurrent ? 'dark:text-[#8fa5cb]' : 'dark:text-zinc-300'}`}>{entry.title}</p>
                         <p className="mt-1 text-xs text-muted-foreground">Vanaf {entry.minXp} XP</p>
                       </div>
                     );
@@ -320,26 +320,34 @@ export default async function ProfilePage() {
                 </div>
               </div>
 
-              <div className="space-y-3">
+              <div className="grid gap-3 sm:grid-cols-2">
                 {BADGES.map((badge) => {
                   const earned = (user.badges || []).includes(badge.id);
 
                   return (
-                    <div
+                    <Card
                       key={badge.id}
                       className={
                         earned
-                          ? 'flex items-start gap-3 border-l-2 border-[#5f7fc7] pl-3'
-                          : 'flex items-start gap-3 pl-3 opacity-70'
+                          ? 'border-[#6f8ed4]/40 bg-[#f8fbff] py-0 shadow-sm dark:border-zinc-600 dark:bg-zinc-900/70'
+                          : 'border-[#d7e1ee] bg-white py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/60'
                       }
                     >
-                      <div className="text-2xl">{badge.icon}</div>
-                      <div className="min-w-0 flex-1">
-                        <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">{badge.name}</p>
-                        <p className="text-xs text-muted-foreground">{badge.description}</p>
-                      </div>
-                      {earned && <CheckCircle2 className="h-4 w-4 shrink-0 text-[#5f7fc7] dark:text-zinc-300" />}
-                    </div>
+                      <CardContent className="p-4">
+                        <div className="flex items-start gap-3">
+                          <div className="text-2xl">{badge.icon}</div>
+                          <div className="min-w-0 flex-1">
+                            <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">{badge.name}</p>
+                            <p className="mt-1 text-xs text-muted-foreground">{badge.description}</p>
+                          </div>
+                          {earned ? (
+                            <CheckCircle2 className="h-4 w-4 shrink-0 text-[#5f7fc7] dark:text-zinc-300" />
+                          ) : (
+                            <span className="mt-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Nog niet</span>
+                          )}
+                        </div>
+                      </CardContent>
+                    </Card>
                   );
                 })}
               </div>
@@ -348,22 +356,24 @@ export default async function ProfilePage() {
 
         {!user.isPremium && (
           <section className="mt-8 border-t border-[#d9e3f1] pt-6 dark:border-zinc-700">
-            <div className="grid gap-5 lg:grid-cols-[minmax(0,1.6fr)_auto] lg:items-center">
-              <div>
-                <Badge className="mb-3 bg-[#e9eff8] text-[#355384] dark:bg-zinc-800 dark:text-zinc-200">
-                  <Crown className="mr-1 h-3.5 w-3.5" />
-                  Premium
-                </Badge>
-                <h3 className="text-2xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Upgrade naar Premium</h3>
-                <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-                  Speel alle quizzen, leer zonder advertenties en krijg toegang tot exclusieve content.
-                </p>
-              </div>
+            <Card className="border-[#d7e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+              <CardContent className="grid gap-5 p-5 lg:grid-cols-[minmax(0,1.6fr)_auto] lg:items-center">
+                <div>
+                  <Badge className="mb-3 bg-[#e9eff8] text-[#355384] dark:bg-[#6f8ed4] dark:text-white">
+                    <Crown className="mr-1 h-3.5 w-3.5" />
+                    Premium
+                  </Badge>
+                  <h3 className="text-2xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Upgrade naar Premium</h3>
+                  <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+                    Speel alle quizzen, leer zonder advertenties en krijg toegang tot exclusieve content.
+                  </p>
+                </div>
 
-              <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-zinc-500 dark:hover:bg-zinc-400">
-                <Link href="/premium">Word nu Premium</Link>
-              </Button>
-            </div>
+                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-zinc-500 dark:hover:bg-zinc-400">
+                  <Link href="/premium">Word nu Premium</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </section>
         )}
 
@@ -407,7 +417,7 @@ export default async function ProfilePage() {
                   </div>
 
                   <form action="/api/stripe/portal" method="POST">
-                    <Button type="submit" className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-zinc-500 dark:hover:bg-zinc-400">
+                    <Button type="submit" className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
                       Open abonnementsportaal (Stripe)
                     </Button>
                   </form>

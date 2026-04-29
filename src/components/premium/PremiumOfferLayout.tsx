@@ -103,7 +103,7 @@ export default function PremiumOfferLayout({
       cadence: '/maand',
       description: 'Voor wie flexibel wil blijven en maandelijks wil ondersteunen.',
       features: ['Alle quizzen beschikbaar', 'Geen advertenties', 'Op elk moment opzegbaar'],
-      ctaLabel: 'Maandelijks bijdragen',
+      ctaLabel: 'Ontgrendel Premium nu',
       footnote: 'Periodieke afschrijving. Eenvoudig opzegbaar.',
     },
     lifetime: {
@@ -120,7 +120,7 @@ export default function PremiumOfferLayout({
   const renderAction = (planType: PlanType, label: string) => {
     if (isPremium) {
       return (
-        <Button asChild size="lg" className="h-11 w-full">
+        <Button asChild size="lg" className="h-11 w-full dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
           <Link href="/quizzes">Je hebt Premium</Link>
         </Button>
       );
@@ -130,7 +130,7 @@ export default function PremiumOfferLayout({
       return (
         <form action="/api/stripe/checkout" method="POST" className="w-full">
           <input type="hidden" name="plan" value={planType} />
-          <Button type="submit" size="lg" className="h-11 w-full gap-2 font-semibold">
+          <Button type="submit" size="lg" className="h-11 w-full gap-2 font-semibold dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
             {label}
             <ChevronRight className="h-4 w-4" />
           </Button>
@@ -139,7 +139,7 @@ export default function PremiumOfferLayout({
     }
 
     return (
-      <Button asChild size="lg" className="h-11 w-full">
+      <Button asChild size="lg" className="h-11 w-full dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
         <Link href="/api/auth/signin?callbackUrl=/premium">Log in om te kopen</Link>
       </Button>
     );
@@ -148,7 +148,7 @@ export default function PremiumOfferLayout({
   return (
     <div className="mx-auto max-w-5xl">
       <header className="mx-auto max-w-3xl text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-primary">BijbelQuiz Premium</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-primary dark:text-[#9db5dc]">BijbelQuiz Premium</p>
         <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-5xl">
           Ontgrendel alle quizzen, uitleg en statistieken met Premium
         </h1>
@@ -164,7 +164,9 @@ export default function PremiumOfferLayout({
             onClick={() => setBillingMode('automatic')}
             className={cn(
               'rounded-full px-5 py-2 text-sm font-medium transition-colors',
-              billingMode === 'automatic' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground'
+              billingMode === 'automatic'
+                ? 'bg-primary text-primary-foreground shadow-sm dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
+                : 'text-muted-foreground'
             )}
           >
             Automatisch
@@ -174,7 +176,9 @@ export default function PremiumOfferLayout({
             onClick={() => setBillingMode('one-time')}
             className={cn(
               'rounded-full px-5 py-2 text-sm font-medium transition-colors',
-              billingMode === 'one-time' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground'
+              billingMode === 'one-time'
+                ? 'bg-primary text-primary-foreground shadow-sm dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
+                : 'text-muted-foreground'
             )}
           >
             Eenmalig
@@ -187,7 +191,7 @@ export default function PremiumOfferLayout({
       <div className="mx-auto mt-8 max-w-2xl">
         <Card className="relative flex h-full flex-col border-primary/40 shadow-md">
           {activePlan === 'monthly' && (
-            <span className="absolute right-5 top-5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+            <span className="absolute right-5 top-5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary dark:bg-[#6f8ed4] dark:text-white">
               Meest gekozen
             </span>
           )}

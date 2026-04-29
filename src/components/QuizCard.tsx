@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { useMemo, useState } from 'react';
 import { ArrowRight, Crown, Lock } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/card';
@@ -38,6 +39,49 @@ const difficultyLabels: Record<string, string> = {
 };
 
 const difficultyBadgeBaseClassName = 'border border-[#d7e1ee] bg-white/90 text-[#4e5f79]';
+const QUIZ_IMAGE_POOL = Array.from({ length: 10 }, (_, index) => `/images/quizzes/img${index + 1}.png`);
+const QUIZ_IMAGE_WHITELIST = new Set(QUIZ_IMAGE_POOL);
+
+function getDeterministicFallbackImage(seed: string): string {
+  if (!seed) {
+    return QUIZ_IMAGE_POOL[0];
+  }
+
+  let hash = 0;
+  for (let index = 0; index < seed.length; index += 1) {
+    hash = (hash << 5) - hash + seed.charCodeAt(index);
+    hash |= 0;
+  }
+
+  return QUIZ_IMAGE_POOL[Math.abs(hash) % QUIZ_IMAGE_POOL.length];
+}
+
+function resolveQuizImage(imageUrl: string | undefined, fallbackImage: string): string {
+  const normalized = imageUrl?.trim();
+  if (!normalized) {
+    return fallbackImage;
+  }
+
+  if (QUIZ_IMAGE_WHITELIST.has(normalized)) {
+    return normalized;
+  }
+
+  const lower = normalized.toLowerCase();
+  if (lower.startsWith('http://') || lower.startsWith('https://')) {
+    return normalized;
+  }
+
+  if (!lower.startsWith('/images/quizzes/')) {
+    return normalized;
+  }
+
+  const fileName = lower.split('/').pop() || '';
+  if (/^img([1-9]|10)\.png$/.test(fileName)) {
+    return `/images/quizzes/${fileName}`;
+  }
+
+  return fallbackImage;
+}
 
 function getCategoryLabel(category: QuizItem['categoryId']): string {
   if (typeof category === 'object' && category?.title) return category.title;
@@ -56,16 +100,23 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
   const isLocked = typeof quiz.isLocked === 'boolean' ? quiz.isLocked : quiz.isPremium && isPremiumUser === false;
   const isStackLayout = layout === 'stack';
   const useNeutralDarkPalette = darkPalette === 'neutral';
+  const fallbackImageUrl = useMemo(
+    () => getDeterministicFallbackImage(quiz.slug || quiz._id || quiz.title),
+    [quiz.slug, quiz._id, quiz.title]
+  );
+  const resolvedImageUrl = useMemo(
+    () => resolveQuizImage(quiz.imageUrl, fallbackImageUrl),
+    [quiz.imageUrl, fallbackImageUrl]
+  );
+  const [imageFailedFor, setImageFailedFor] = useState<string | null>(null);
+  const displayImageUrl = imageFailedFor === resolvedImageUrl ? fallbackImageUrl : resolvedImageUrl;
 
   const imageContainerDarkClass = useNeutralDarkPalette ? 'dark:bg-zinc-800' : 'dark:bg-zinc-800';
-  const imageFallbackDarkClass = useNeutralDarkPalette
-    ? 'dark:bg-[linear-gradient(135deg,#3f3f46,#18181b)]'
-    : 'dark:bg-[linear-gradient(135deg,#3f3f46,#18181b)]';
   const badgeDarkClass = useNeutralDarkPalette ? 'dark:bg-zinc-900/90 dark:text-zinc-100' : 'dark:bg-zinc-900/90 dark:text-zinc-100';
   const difficultyBadgeDarkClass = useNeutralDarkPalette
     ? 'dark:border-zinc-700 dark:bg-zinc-900/90 dark:text-zinc-200'
     : 'dark:border-zinc-700 dark:bg-zinc-900/90 dark:text-zinc-200';
-  const premiumTagDarkClass = useNeutralDarkPalette ? 'dark:bg-zinc-100 dark:text-zinc-900' : 'dark:bg-zinc-100 dark:text-zinc-900';
+  const premiumTagDarkClass = useNeutralDarkPalette ? 'dark:bg-[#6f8ed4] dark:text-white' : 'dark:bg-[#6f8ed4] dark:text-white';
   const headingDarkClass = useNeutralDarkPalette ? 'dark:text-zinc-100' : 'dark:text-zinc-100';
   const bodyDarkClass = useNeutralDarkPalette ? 'dark:text-zinc-300' : 'dark:text-zinc-300';
   const startDarkClass = useNeutralDarkPalette ? 'dark:text-zinc-300' : 'dark:text-zinc-300';
@@ -78,17 +129,14 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
 
   const imageBlock = (
     <div className={cn('relative h-44 bg-[#dce5f3]', imageContainerDarkClass, isStackLayout && 'rounded-lg overflow-hidden')}>
-      {quiz.imageUrl ? (
-        <Image
-          src={quiz.imageUrl}
-          alt={quiz.title}
-          fill
-          className="object-cover"
-          sizes="(max-width: 1280px) 100vw, 33vw"
-        />
-      ) : (
-        <div className={cn('absolute inset-0 bg-[linear-gradient(135deg,#d9e4f5,#eef3fb)]', imageFallbackDarkClass)} />
-      )}
+      <Image
+        src={displayImageUrl}
+        alt={quiz.title}
+        fill
+        className="object-cover"
+        sizes="(max-width: 1280px) 100vw, 33vw"
+        onError={() => setImageFailedFor(resolvedImageUrl)}
+      />
 
       <div className="absolute left-3 top-3 flex gap-2">
         <Badge variant="secondary" className={cn('bg-white/90 text-[#314869]', badgeDarkClass)}>
@@ -118,7 +166,7 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
   if (isStackLayout) {
     return (
       <Link href={href} className="block">
-        <article className="group h-full">
+        <article className="group h-full transition-transform duration-200 hover:-translate-y-1">
           {imageBlock}
 
           <div className="pb-2 pt-3">
@@ -142,7 +190,7 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
 
   return (
     <Link href={href} className="block">
-      <Card className={cn('group h-full gap-0 overflow-hidden border-[#d7e1ee] bg-white py-0 shadow-sm transition-colors hover:bg-[#f9fbff]', cardDarkClass, isLocked && 'bg-[#f2f5fb] dark:bg-zinc-900')}>
+      <Card className={cn('group h-full gap-0 overflow-hidden border-[#d7e1ee] bg-white py-0 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:bg-[#f9fbff] hover:shadow-md', cardDarkClass, isLocked && 'bg-[#f2f5fb] dark:bg-zinc-900')}>
         {imageBlock}
 
         <CardContent className="p-4 pb-5">

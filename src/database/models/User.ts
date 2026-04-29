@@ -20,12 +20,22 @@ export interface IUser extends Document {
   badges: string[];
   quizzesPlayed: number;
   averageScore: number;
+  freeMultiplayerRoomCreated: boolean;
   role: 'user' | 'admin';
   nameUpdatedAt?: Date;
   onboarding?: {
     bibleReadingFrequency?: string;
     knowledgeLevel?: string;
     interests?: string[];
+  };
+  settings?: {
+    themePreference?: 'light' | 'dark' | 'system';
+    emailNotifications?: boolean;
+    soundEffects?: boolean;
+    showBibleReferences?: boolean;
+    dailyReminder?: boolean;
+    preferredDifficulty?: 'all' | 'easy' | 'medium' | 'hard';
+    questionFontSize?: 'normal' | 'large';
   };
   createdAt: Date;
 }
@@ -50,12 +60,22 @@ const UserSchema: Schema = new Schema({
   badges: { type: [String], default: [] },
   quizzesPlayed: { type: Number, default: 0 },
   averageScore: { type: Number, default: 0 },
+  freeMultiplayerRoomCreated: { type: Boolean, default: false },
   role: { type: String, enum: ['user', 'admin'], default: 'user' },
   nameUpdatedAt: { type: Date },
   onboarding: {
     bibleReadingFrequency: { type: String },
     knowledgeLevel: { type: String },
     interests: { type: [String], default: [] },
+  },
+  settings: {
+    themePreference: { type: String, enum: ['light', 'dark', 'system'], default: 'light' },
+    emailNotifications: { type: Boolean, default: true },
+    soundEffects: { type: Boolean, default: true },
+    showBibleReferences: { type: Boolean, default: true },
+    dailyReminder: { type: Boolean, default: false },
+    preferredDifficulty: { type: String, enum: ['all', 'easy', 'medium', 'hard'], default: 'all' },
+    questionFontSize: { type: String, enum: ['normal', 'large'], default: 'normal' },
   },
 }, { timestamps: true });
 
