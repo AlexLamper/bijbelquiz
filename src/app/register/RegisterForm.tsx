@@ -163,7 +163,7 @@ function RegisterContent() {
           {/* Footer */}
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Heb je al een account?{' '}
-            <Link href="/login" className="text-[#355384] hover:text-[#243a5e] font-semibold hover:underline">
+            <Link href="/login" className="text-[#6f8ed4] hover:text-[#5f81cc] font-semibold hover:underline">
               Inloggen
             </Link>
           </p>

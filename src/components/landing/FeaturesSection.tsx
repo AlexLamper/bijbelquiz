@@ -27,7 +27,7 @@ const categories = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-16 md:py-24 dark:bg-background">
+    <section id="categorieen" className="py-16 md:py-24 dark:bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-[#1a2942] dark:text-white md:text-4xl lg:text-5xl">

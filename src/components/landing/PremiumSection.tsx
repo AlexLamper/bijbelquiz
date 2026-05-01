@@ -15,7 +15,7 @@ export function PremiumSection() {
   const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';
 
   return (
-    <section className="bg-[#1a2942] py-16 md:py-24 dark:border-t dark:border-zinc-800 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
+    <section id="premium" className="bg-[#1a2942] py-16 md:py-24 dark:border-t dark:border-zinc-800 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl py-2 md:py-4">
           <div className="grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
@@ -69,14 +69,14 @@ export function PremiumSection() {
                 <div className="relative aspect-16/10 overflow-hidden rounded-xl bg-black/25">
                   <Image
                     src="/images/multiplayer.png"
-                    alt="Preview van de premium multiplayer ervaring"
+                    alt="Preview van de premium samen spelen-ervaring"
                     fill
                     sizes="(max-width: 1024px) 100vw, 45vw"
                     className="object-contain object-center"
                   />
 
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-linear-to-t from-black/75 via-black/35 to-transparent p-4">
-                    <p className="text-sm font-semibold text-white">Live multiplayer ervaring</p>
+                    <p className="text-sm font-semibold text-white">Live samen spelen-ervaring</p>
                     <p className="mt-1 text-xs text-white/80">Zie direct hoe snel, strak en overzichtelijk je Premium sessies aanvoelen.</p>
                   </div>
                 </div>

@@ -146,7 +146,7 @@ function LoginContent() {
           {/* Footer */}
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Nog geen account?{' '}
-            <Link href="/register" className="text-[#355384] hover:text-[#243a5e] font-semibold hover:underline">
+            <Link href="/register" className="text-[#6f8ed4] hover:text-[#5f81cc] font-semibold hover:underline">
               Registreer nu
             </Link>
           </p>
@@ -157,7 +157,7 @@ function LoginContent() {
       <div className="hidden lg:block w-1/2 relative">
         {/* Background Image - Full coverage */}
         <Image
-          src="/images/quizzes/img4.png"
+          src="/images/quizzes/img1.png"
           alt="BijbelQuiz"
           fill
           className="object-cover"

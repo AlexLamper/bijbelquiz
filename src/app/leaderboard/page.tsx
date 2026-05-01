@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
 
 import { authOptions } from '@/lib/auth';
@@ -49,6 +50,11 @@ async function getLeaderboardData(): Promise<LeaderboardEntry[]> {
 
 export default async function LeaderboardPage() {
   const session = await getServerSession(authOptions);
+
+  if (!session?.user) {
+    redirect('/login?callbackUrl=/leaderboard');
+  }
+
   const leaderboard = await getLeaderboardData();
 
   return (

@@ -192,7 +192,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
           <Card>
             <CardHeader>
               <CardTitle>Inloggen vereist</CardTitle>
-              <CardDescription>Je moet ingelogd zijn om multiplayer te gebruiken.</CardDescription>
+              <CardDescription>Je moet ingelogd zijn om samen te spelen.</CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild>
@@ -223,7 +223,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 </p>
               )}
               <Button asChild>
-                <Link href="/multiplayer">Terug naar multiplayer</Link>
+                <Link href="/multiplayer">Terug naar samen spelen</Link>
               </Button>
             </CardContent>
           </Card>
@@ -239,7 +239,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
           <Card>
             <CardHeader>
               <CardTitle>Room laden mislukt</CardTitle>
-              <CardDescription>Probeer opnieuw of ga terug naar de multiplayer startpagina.</CardDescription>
+              <CardDescription>Probeer opnieuw of ga terug naar de startpagina van samen spelen.</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-3">
               <Button variant="outline" onClick={() => void refreshSnapshot()}>
@@ -456,7 +456,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
         {process.env.NODE_ENV !== 'production' && (
           <Card className="mt-6">
             <CardHeader>
-              <CardTitle>Multiplayer debug</CardTitle>
+              <CardTitle>Samen spelen debug</CardTitle>
               <CardDescription>
                 Live client debug voor websocket, reconnects en snapshot fallback.
               </CardDescription>

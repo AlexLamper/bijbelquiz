@@ -56,6 +56,29 @@ export default function Navbar({
   const pageTitle = getPageTitle(pathname);
   const userName = session?.user?.name?.trim() || 'Gebruiker';
   const userEmail = session?.user?.email || 'Geen e-mailadres';
+  const [activeSection, setActiveSection] = useState<string>('home');
+
+  useEffect(() => {
+    if (pathname !== '/') return;
+
+    const sectionIds = ['quizzen', 'premium', 'categorieen'];
+
+    const getActiveSection = () => {
+      if (window.scrollY === 0) return 'home';
+      for (const id of [...sectionIds].reverse()) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= 120) return id;
+      }
+      return 'home';
+    };
+
+    const handleScroll = () => setActiveSection(getActiveSection());
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [pathname]);
   const userInitials = useMemo(() => {
     const parts = userName
       .split(' ')
@@ -101,8 +124,14 @@ export default function Navbar({
   }, [isAccountMenuOpen]);
 
   const isActive = (href: string) => {
-    if (href === '/') return pathname === '/';
-    return pathname.startsWith(href);
+    if (pathname !== '/') {
+      if (href === '/') return pathname === '/';
+      return pathname.startsWith(href);
+    }
+    // On the landing page, match anchor links against the observed active section
+    if (href === '/') return activeSection === 'home';
+    const hash = href.replace('/#', '');
+    return activeSection === hash;
   };
 
   const navItems: NavItem[] = session
@@ -114,8 +143,9 @@ export default function Navbar({
       ]
     : [
         { href: '/', label: 'Home' },
-        { href: '/quizzes', label: 'Quizzen' },
-        { href: '/leaderboard', label: 'Ranglijst' },
+        { href: '/#quizzen', label: 'Quizzen' },
+        { href: '/#premium', label: 'Premium' },
+        { href: '/#categorieen', label: 'Categorieën' },
       ];
 
   return (

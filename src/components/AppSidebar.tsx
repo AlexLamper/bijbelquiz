@@ -54,13 +54,13 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
         { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
         { href: '/quizzes', label: 'Quizzen', icon: BookOpen },
         { href: '/leaderboard', label: 'Ranglijst', icon: Trophy },
-        { href: '/multiplayer', label: 'Multiplayer', icon: Users },
+        { href: '/multiplayer', label: 'Samen spelen', icon: Users },
         { href: '/premium', label: 'Premium', icon: Crown },
       ]
     : [
         { href: '/quizzes', label: 'Quizzen', icon: BookOpen },
         { href: '/leaderboard', label: 'Ranglijst', icon: Trophy },
-        { href: '/multiplayer', label: 'Multiplayer', icon: Users },
+        { href: '/multiplayer', label: 'Samen spelen', icon: Users },
         { href: '/premium', label: 'Premium', icon: Crown },
       ];
 

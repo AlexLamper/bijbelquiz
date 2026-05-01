@@ -128,7 +128,7 @@ export default function MultiplayerEntryClient({
     <div className="-mt-24 min-h-screen bg-background pt-24">
       <div className="container mx-auto max-w-5xl px-4 py-12">
         <div className="mb-8 space-y-2">
-          <h1 className="text-3xl font-semibold tracking-tight">Multiplayer</h1>
+          <h1 className="text-3xl font-semibold tracking-tight">Samen spelen</h1>
           <p className="text-muted-foreground">
             Start een room, nodig spelers uit en speel live dezelfde quiz.
           </p>

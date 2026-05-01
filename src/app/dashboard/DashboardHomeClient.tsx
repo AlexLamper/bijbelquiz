@@ -83,7 +83,7 @@ export default function DashboardHomeClient({
   return (
     <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
       <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
-        <Card className="relative overflow-hidden border-0 bg-transparent py-0 shadow-none">
+        <Card className="relative overflow-hidden rounded-none border-0 bg-transparent py-0 shadow-none">
           <CardContent className="relative p-0">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] xl:items-start">
               <div>
@@ -155,7 +155,7 @@ export default function DashboardHomeClient({
                   <Users className="h-3.5 w-3.5 text-white" />
                   Samen spelen
                 </p>
-                <h2 className="mt-3 text-2xl text-[#1f2f4b] dark:text-zinc-100">Speel live met vrienden</h2>
+                <h2 className="mt-3 text-2xl text-[#1f2f4b] dark:text-zinc-100">Speel samen met vrienden of familie</h2>
                 <p className="mt-1 text-sm text-[#5f7297] dark:text-zinc-300">
                   Start een kamer of sluit direct aan en beantwoord vragen samen in realtime.
                 </p>

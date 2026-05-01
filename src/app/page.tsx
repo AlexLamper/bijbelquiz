@@ -65,7 +65,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative overflow-visible pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
+      <section id="hero" className="relative overflow-visible pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
 
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-450 flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl lg:-mt-32 xl:-mt-24">
@@ -75,7 +75,7 @@ export default async function Home() {
             <p className="mb-8 sm:mb-10 max-w-xl text-[#53647f] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl leading-[1.6]">
               BijbelQuiz heeft tientallen quizzen.
               Kies uit verschillende categorieën,
-              concureer tegen anderen op de ranglijst en leer elke dag iets nieuws over de Bijbel!
+              concurreer met anderen op de ranglijst en leer elke dag iets nieuws over de Bijbel!
             </p>
             
             <div className="flex flex-col items-start gap-4 sm:gap-6 w-full sm:w-auto">

@@ -72,6 +72,9 @@ export const authOptions: NextAuthOptions = {
               image: image || undefined,
               isPremium: false,
             });
+          } else if (!userExists.image && image) {
+            userExists.image = image;
+            await userExists.save();
           }
           return true;
         } catch (error) {
@@ -93,12 +96,14 @@ export const authOptions: NextAuthOptions = {
             token.isPremium = dbUser.isPremium;
             token.xp = dbUser.xp;
             token.role = dbUser.role;
+            token.image = dbUser.image || image || token.image;
           }
         } else {
           token.id = user.id;
           token.isPremium = user.isPremium;
           token.xp = user.xp;
           token.role = user.role;
+          token.image = user.image || token.image;
         }
       }
 
@@ -112,6 +117,7 @@ export const authOptions: NextAuthOptions = {
             token.isPremium = dbUser.isPremium;
             token.xp = dbUser.xp;
             token.role = dbUser.role;
+            token.image = dbUser.image || token.image;
           }
         }
       }
@@ -124,6 +130,7 @@ export const authOptions: NextAuthOptions = {
             session.user.isPremium = token.isPremium;
           session.user.xp = token.xp ?? 0;
             session.user.role = token.role;
+            session.user.image = typeof token.image === 'string' ? token.image : session.user.image;
         }
         return session;
     },
