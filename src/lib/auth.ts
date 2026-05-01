@@ -96,7 +96,7 @@ export const authOptions: NextAuthOptions = {
             token.isPremium = dbUser.isPremium;
             token.xp = dbUser.xp;
             token.role = dbUser.role;
-            token.image = dbUser.image || image || token.image;
+            token.image = dbUser.image || user.image || token.image;
           }
         } else {
           token.id = user.id;
