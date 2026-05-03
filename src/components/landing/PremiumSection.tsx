@@ -4,10 +4,10 @@ import Image from "next/image"
 import Link from "next/link"
 
 const benefits = [
-  "Alle quizcategorieen ontgrendeld",
-  "Geen advertenties tijdens het spelen",
-  "Uitgebreide voortgang en inzichten",
-  "Nieuwe premium quizzen als eerste",
+  "Alle quizcategorieën en premium quizzen ontgrendeld",
+  "Onbeperkt rooms maken voor samen spelen",
+  "Uitgebreide voortgang en gedetailleerde statistieken",
+  "Toegang tot nieuwe quizzen en inhoud",
 ]
 
 export function PremiumSection() {
@@ -30,8 +30,7 @@ export function PremiumSection() {
               </h2>
 
               <p className="mt-5 max-w-lg leading-relaxed text-white/75">
-                Meer rust, meer diepgang en alles op een plek. Premium is gemaakt
-                voor spelers die consistent willen groeien in Bijbelkennis.
+                Premium geeft je volledige toegang tot alle quizzen, onbeperkte mogelijkheid om samen te spelen met vrienden en familie, en gedetailleerde voortgang om je groei in Bijbelkennis te volgen.
               </p>
 
               <ul className="mt-7 space-y-3">
@@ -62,29 +61,25 @@ export function PremiumSection() {
 
             <div className="space-y-4 text-white">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
-                Premium preview
+                Samen spelen
               </p>
 
               <div className="rounded-2xl border border-white/15 bg-white/5 p-3 shadow-[0_18px_50px_-34px_rgba(0,0,0,0.65)] dark:border-zinc-700 dark:bg-zinc-900/60">
                 <div className="relative aspect-16/10 overflow-hidden rounded-xl bg-black/25">
                   <Image
                     src="/images/multiplayer.png"
-                    alt="Preview van de premium samen spelen-ervaring"
+                    alt="Samen spelen in BijbelQuiz"
                     fill
                     sizes="(max-width: 1024px) 100vw, 45vw"
-                    className="object-contain object-center"
+                    className="object-cover object-center"
                   />
 
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-linear-to-t from-black/75 via-black/35 to-transparent p-4">
-                    <p className="text-sm font-semibold text-white">Live samen spelen-ervaring</p>
-                    <p className="mt-1 text-xs text-white/80">Zie direct hoe snel, strak en overzichtelijk je Premium sessies aanvoelen.</p>
+                    <p className="text-sm font-semibold text-white">Speel live samen met vrienden</p>
+                    <p className="mt-1 text-xs text-white/80">Zien wie het beste Bijbelkennis heeft in realtime quizzessies.</p>
                   </div>
                 </div>
               </div>
-
-              <p className="mt-4 text-xs leading-relaxed text-white/60">
-                Premium geeft je meer rust tijdens het spelen en extra waarde in elke quizsessie.
-              </p>
             </div>
           </div>
         </div>

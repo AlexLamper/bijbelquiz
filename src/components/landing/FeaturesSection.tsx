@@ -5,22 +5,22 @@ import { Award } from "lucide-react"
 const categories = [
   {
     title: "Oude Testament",
-    questions: "500+ vragen",
+    questions: "60+ vragen",
     imageUrl: '/images/quizzes/img1.png',
   },
   {
     title: "Nieuwe Testament",
-    questions: "450+ vragen",
+    questions: "50+ vragen",
     imageUrl: '/images/quizzes/img2.png',
   },
   {
     title: "Bijbelse Figuren",
-    questions: "300+ vragen",
+    questions: "40+ vragen",
     imageUrl: '/images/quizzes/img3.png',
   },
   {
     title: "Thema's & Verhalen",
-    questions: "250+ vragen",
+    questions: "30+ vragen",
     imageUrl: '/images/quizzes/img4.png',
   },
 ]
@@ -34,17 +34,17 @@ export function FeaturesSection() {
             Ontdek de rijkdom van Gods Woord
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground dark:text-white/70">
-            Met meer dan 1500 vragen verdeeld over 50+ categorieën is er altijd iets nieuws te ontdekken in de Statenvertaling.
+            Met meer dan 200 vragen verdeeld over 4 categorieën is er altijd iets nieuws te ontdekken in de Statenvertaling.
           </p>
         </div>
 
         <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-16">
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">1500+</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">200+</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Vragen</div>
           </div>
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">50+</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">4</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Categorieën</div>
           </div>
           <div className="text-center">

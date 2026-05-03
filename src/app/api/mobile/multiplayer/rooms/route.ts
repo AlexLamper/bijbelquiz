@@ -16,6 +16,33 @@ const createRoomSchema = z
   })
   .strict();
 
+export async function GET(req: NextRequest) {
+  try {
+    const auth = await authenticateMultiplayerRequest(req);
+    await connectDB();
+
+    const user = await User.findById(auth.userId)
+      .select('isPremium hasLifetimePremium freeMultiplayerRoomCreated')
+      .lean();
+
+    if (!user) {
+      throw new MultiplayerError('UNAUTHORIZED', 'Unauthorized', 401);
+    }
+
+    const isPremiumUser = Boolean(user.isPremium || user.hasLifetimePremium);
+    const hasUsedFreeRoom = Boolean(user.freeMultiplayerRoomCreated);
+
+    return NextResponse.json({
+      canCreateRoom: isPremiumUser || !hasUsedFreeRoom,
+      isPremium: isPremiumUser,
+      hasUsedFreeRoom: hasUsedFreeRoom,
+      freeRoomsRemaining: isPremiumUser ? Infinity : hasUsedFreeRoom ? 0 : 1,
+    });
+  } catch (error) {
+    return multiplayerErrorResponse(error);
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
     const auth = await authenticateMultiplayerRequest(req);

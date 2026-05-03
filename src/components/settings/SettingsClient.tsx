@@ -381,52 +381,6 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
                 </SelectContent>
               </Select>
             </div>
-
-            <div className="space-y-3 rounded-lg border border-[#d8e1ee] bg-[#f8fbff] p-4 dark:border-zinc-700 dark:bg-zinc-900/80">
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm font-semibold text-[#30466e] dark:text-zinc-100">E-mail updates</p>
-                  <p className="text-xs text-[#607597] dark:text-zinc-400">Ontvang nieuws en maandelijkse voortgang.</p>
-                </div>
-                <Switch
-                  checked={settings.emailNotifications}
-                  onCheckedChange={(checked) => updateSwitchSetting('emailNotifications', checked === true, 'E-mail voorkeur opgeslagen')}
-                />
-              </div>
-
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm font-semibold text-[#30466e] dark:text-zinc-100">Geluidseffecten</p>
-                  <p className="text-xs text-[#607597] dark:text-zinc-400">Speel klik- en feedbackgeluiden af in quizzen.</p>
-                </div>
-                <Switch
-                  checked={settings.soundEffects}
-                  onCheckedChange={(checked) => updateSwitchSetting('soundEffects', checked === true, 'Geluid voorkeur opgeslagen')}
-                />
-              </div>
-
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm font-semibold text-[#30466e] dark:text-zinc-100">Toon bijbelreferenties</p>
-                  <p className="text-xs text-[#607597] dark:text-zinc-400">Laat hoofdstuk- en versverwijzingen altijd zien.</p>
-                </div>
-                <Switch
-                  checked={settings.showBibleReferences}
-                  onCheckedChange={(checked) => updateSwitchSetting('showBibleReferences', checked === true, 'Referentie voorkeur opgeslagen')}
-                />
-              </div>
-
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm font-semibold text-[#30466e] dark:text-zinc-100">Dagelijkse herinnering</p>
-                  <p className="text-xs text-[#607597] dark:text-zinc-400">Krijg een seintje om je streak te behouden.</p>
-                </div>
-                <Switch
-                  checked={settings.dailyReminder}
-                  onCheckedChange={(checked) => updateSwitchSetting('dailyReminder', checked === true, 'Herinnering voorkeur opgeslagen')}
-                />
-              </div>
-            </div>
           </CardContent>
         </Card>
 

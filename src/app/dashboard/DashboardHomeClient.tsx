@@ -88,7 +88,7 @@ export default function DashboardHomeClient({
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] xl:items-start">
               <div>
                 <h1 className="text-4xl leading-tight text-[#1f2f4b] md:text-5xl">
-                  <span className="dark:text-[#9db5dc]">{greeting}</span>, <span className="dark:text-zinc-100">{userName}.</span>
+                  <span className="dark:text-[#9db5dc]">{greeting},</span> <span className="dark:text-zinc-100">{userName}.</span>
                 </h1>
 
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#5f7297] md:text-[15px] dark:text-zinc-300">Kies een quiz en speel direct verder.</p>
