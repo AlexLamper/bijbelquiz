@@ -5,9 +5,8 @@ import type { MultiplayerConnectionStatus, MultiplayerWsInboundEvent } from '@/l
 import { MultiplayerRealtimeClient } from '@/lib/multiplayer-web/realtime';
 
 /**
- * Minimal WebSocket mock that mirrors the parts of the browser API the
- * realtime client uses. We expose hooks so the tests can drive the lifecycle
- * (open, message, close) deterministically.
+ * Minimal WebSocket mock mirroring the parts of the browser API the realtime
+ * client uses. Tests drive the lifecycle (open, message, close) deterministically.
  */
 class MockWebSocket {
   static CONNECTING = 0 as const;
@@ -24,7 +23,6 @@ class MockWebSocket {
   onerror: ((event: unknown) => void) | null = null;
   onclose: ((event: { code: number; reason: string; wasClean: boolean }) => void) | null = null;
 
-  private listeners: Record<string, Array<(event: unknown) => void>> = {};
   sentMessages: string[] = [];
   closedBy: 'manual' | 'remote' | null = null;
   closeCalls: Array<{ code?: number; reason?: string }> = [];
@@ -32,18 +30,6 @@ class MockWebSocket {
   constructor(url: string) {
     this.url = url;
     MockWebSocket.instances.push(this);
-  }
-
-  addEventListener(type: string, handler: (event: unknown) => void): void {
-    (this.listeners[type] ??= []).push(handler);
-  }
-
-  removeEventListener(type: string, handler: (event: unknown) => void): void {
-    const list = this.listeners[type];
-    if (!list) {
-      return;
-    }
-    this.listeners[type] = list.filter((existing) => existing !== handler);
   }
 
   send(data: string): void {
@@ -55,57 +41,36 @@ class MockWebSocket {
 
   close(code?: number, reason?: string): void {
     this.closeCalls.push({ code, reason });
-    if (this.readyState === MockWebSocket.CLOSED) {
-      return;
-    }
+    if (this.readyState === MockWebSocket.CLOSED) return;
     this.closedBy = 'manual';
+    const wasOpen = this.readyState === MockWebSocket.OPEN;
     this.readyState = MockWebSocket.CLOSED;
-    this.fire('close', { code: code ?? 1000, reason: reason ?? '', wasClean: true });
+    if (wasOpen && this.onclose) {
+      this.onclose({ code: code ?? 1000, reason: reason ?? '', wasClean: (code ?? 1000) === 1000 });
+    }
   }
 
   triggerOpen(): void {
+    if (this.readyState === MockWebSocket.CLOSED) return;
     this.readyState = MockWebSocket.OPEN;
-    this.fire('open', {});
+    if (this.onopen) this.onopen({});
   }
 
   triggerMessage(payload: unknown): void {
+    if (this.readyState !== MockWebSocket.OPEN) return;
     const data = typeof payload === 'string' ? payload : JSON.stringify(payload);
-    this.fire('message', { data });
+    if (this.onmessage) this.onmessage({ data });
   }
 
   triggerClose(code = 1006, reason = ''): void {
-    if (this.readyState === MockWebSocket.CLOSED) {
-      return;
-    }
+    if (this.readyState === MockWebSocket.CLOSED) return;
     this.closedBy = 'remote';
     this.readyState = MockWebSocket.CLOSED;
-    this.fire('close', { code, reason, wasClean: code === 1000 });
+    if (this.onclose) this.onclose({ code, reason, wasClean: code === 1000 });
   }
 
   triggerError(): void {
-    this.fire('error', {});
-  }
-
-  private fire(type: string, event: unknown): void {
-    const list = this.listeners[type];
-    if (list) {
-      for (const handler of [...list]) {
-        handler(event);
-      }
-    }
-
-    if (type === 'open' && this.onopen) {
-      this.onopen(event);
-    }
-    if (type === 'message' && this.onmessage) {
-      this.onmessage(event as { data: unknown });
-    }
-    if (type === 'error' && this.onerror) {
-      this.onerror(event);
-    }
-    if (type === 'close' && this.onclose) {
-      this.onclose(event as { code: number; reason: string; wasClean: boolean });
-    }
+    if (this.onerror) this.onerror({});
   }
 }
 
@@ -124,30 +89,19 @@ function installBrowserGlobals(): GlobalsBackup {
     hadWebSocket: 'WebSocket' in g,
     prevWebSocket: g.WebSocket,
   };
-
   g.window = {
-    location: {
-      protocol: 'http:',
-      host: '127.0.0.1:0',
-    },
+    location: { protocol: 'http:', host: '127.0.0.1:0' },
   };
   g.WebSocket = MockWebSocket as unknown;
-
   return backup;
 }
 
 function restoreBrowserGlobals(backup: GlobalsBackup): void {
   const g = globalThis as unknown as Record<string, unknown>;
-  if (backup.hadWindow) {
-    g.window = backup.prevWindow;
-  } else {
-    delete g.window;
-  }
-  if (backup.hadWebSocket) {
-    g.WebSocket = backup.prevWebSocket;
-  } else {
-    delete g.WebSocket;
-  }
+  if (backup.hadWindow) g.window = backup.prevWindow;
+  else delete g.window;
+  if (backup.hadWebSocket) g.WebSocket = backup.prevWebSocket;
+  else delete g.WebSocket;
 }
 
 function buildRoomSnapshot(): RoomSnapshot {
@@ -252,32 +206,17 @@ test('realtime client: opens socket and sends join_room on open', async () => {
   });
 });
 
-test('realtime client: stale socket close after replacement does NOT trigger reconnect', async () => {
+test('realtime client: idempotent connect() does not open a second socket while connected', async () => {
   await withClient(async (tracked) => {
     tracked.client.connect();
     const first = MockWebSocket.instances[0];
     first.triggerOpen();
     await flushMicrotasks();
 
-    // Force a manual reconnect cycle by calling connect() again — this should
-    // retire the first socket and create a brand new one.
     tracked.client.connect();
-    assert.equal(MockWebSocket.instances.length, 2, 'second socket should be created');
-    const second = MockWebSocket.instances[1];
+    tracked.client.connect();
 
-    // The first socket's manual close was triggered by retireSession with code
-    // 1000 ("replaced"). Anything else (including a delayed remote close) on
-    // the first socket must NOT cause a reconnect or otherwise interfere.
-    first.triggerClose(1006, 'simulated_late_drop');
-    await flushMicrotasks();
-
-    // We should still be on socket #2; no third instance should have been
-    // created as a result of stale close handlers.
-    assert.equal(MockWebSocket.instances.length, 2, 'stale close must not spawn a reconnect socket');
-
-    second.triggerOpen();
-    await flushMicrotasks();
-    assert.equal(tracked.statuses[tracked.statuses.length - 1], 'connected');
+    assert.equal(MockWebSocket.instances.length, 1, 'extra connect() calls must not open new sockets');
   });
 });
 
@@ -290,7 +229,6 @@ test('realtime client: real abnormal close triggers exactly one reconnect attemp
 
     first.triggerClose(1006, 'simulated_abnormal');
 
-    // Wait long enough for reconnectMinDelayMs (5) + jitter (up to 250) to fire.
     const deadline = Date.now() + 600;
     while (MockWebSocket.instances.length < 2 && Date.now() < deadline) {
       await new Promise<void>((resolve) => setTimeout(resolve, 20));
@@ -325,6 +263,31 @@ test('realtime client: disconnect prevents further reconnect after close fires',
   });
 });
 
+test('realtime client: disconnect on a CONNECTING socket defers close to onopen (avoids 1006)', async () => {
+  await withClient(async (tracked) => {
+    tracked.client.connect();
+    const socket = MockWebSocket.instances[0];
+    assert.equal(socket.readyState, MockWebSocket.CONNECTING);
+
+    // Disconnect BEFORE the socket finishes its handshake. The new client
+    // must NOT call ws.close() while CONNECTING — that would TCP-RST and
+    // surface as 1006. Instead, the close should be deferred to onopen.
+    tracked.client.disconnect();
+
+    assert.equal(socket.closeCalls.length, 0, 'close() must not be called on a CONNECTING socket');
+
+    // Now simulate the handshake completing late (server got there first).
+    socket.triggerOpen();
+    await flushMicrotasks();
+
+    // Either we close on the late open, or the socket is left to time out;
+    // either is acceptable as long as it didn't 1006 the connection.
+    // What we DO require: no further reconnect attempts.
+    await new Promise<void>((resolve) => setTimeout(resolve, 200));
+    assert.equal(MockWebSocket.instances.length, 1, 'no reconnect after disconnect-while-CONNECTING');
+  });
+});
+
 test('realtime client: parses and forwards inbound room_joined event', async () => {
   await withClient(async (tracked) => {
     tracked.client.connect();
@@ -343,22 +306,6 @@ test('realtime client: parses and forwards inbound room_joined event', async () 
   });
 });
 
-test('realtime client: connection status updates are deduplicated', async () => {
-  await withClient(async (tracked) => {
-    tracked.client.connect();
-
-    // 'connecting' on first call.
-    assert.equal(tracked.statuses[0], 'connecting');
-
-    // Re-invoking connect() while the first socket is still alive should retire
-    // the old session and not emit a duplicate identical status transition.
-    const beforeLen = tracked.statuses.length;
-    tracked.client.connect();
-    const afterLen = tracked.statuses.length;
-    assert.ok(afterLen >= beforeLen);
-  });
-});
-
 test('realtime client: rapid abnormal close → reconnect cycles do not accumulate sockets', async () => {
   await withClient(async (tracked) => {
     tracked.client.connect();
@@ -369,7 +316,6 @@ test('realtime client: rapid abnormal close → reconnect cycles do not accumula
       await flushMicrotasks();
       socket.triggerClose(1006, `cycle_${i}`);
 
-      // Wait for reconnect timer + jitter; then the next socket should appear.
       const targetCount = MockWebSocket.instances.length + 1;
       const deadline = Date.now() + 600;
       while (MockWebSocket.instances.length < targetCount && Date.now() < deadline) {
@@ -377,7 +323,7 @@ test('realtime client: rapid abnormal close → reconnect cycles do not accumula
       }
     }
 
-    // We should have exactly one socket per cycle plus the original.
+    // One new socket per cycle plus the original.
     assert.equal(MockWebSocket.instances.length, cycles + 1, 'one new socket per close cycle');
   });
 });

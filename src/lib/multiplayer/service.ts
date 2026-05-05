@@ -324,6 +324,35 @@ export class MultiplayerService {
     return this.buildResults(room);
   }
 
+  /**
+   * Diagnostic helper used by /api/multiplayer/debug to expose the in-memory
+   * room registry without leaking timer handles or full quiz contents.
+   */
+  debugListRooms(): Array<{
+    code: string;
+    id: string;
+    quizTitle: string;
+    status: string;
+    hostUserId: string;
+    playerCount: number;
+    players: Array<{ id: string; name: string; isHost: boolean; isConnected: boolean }>;
+  }> {
+    return Array.from(this.rooms.values()).map((room) => ({
+      code: room.code,
+      id: room.id,
+      quizTitle: room.quizTitle,
+      status: room.status,
+      hostUserId: room.hostUserId,
+      playerCount: room.players.length,
+      players: room.players.map((player) => ({
+        id: player.id,
+        name: player.name,
+        isHost: player.isHost,
+        isConnected: player.isConnected,
+      })),
+    }));
+  }
+
   async leaveRoom(input: RoomUserInput): Promise<void> {
     const roomCode = this.normalizeRoomCode(input.roomCode);
 

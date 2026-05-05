@@ -525,18 +525,52 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
         {process.env.NODE_ENV !== 'production' && (
           <Card className="mt-6 border-amber-300/40 bg-amber-50/30 dark:border-amber-700/30 dark:bg-amber-950/10">
             <CardHeader className="pb-2">
-              <div className="flex items-center justify-between">
-                <div>
+              <div className="flex items-center justify-between gap-3">
+                <div className="min-w-0">
                   <CardTitle className="text-sm">Debug — Samen spelen</CardTitle>
                   <CardDescription className="text-xs">
                     WS: <span className={connectionStatus === 'connected' ? 'text-emerald-600' : 'text-amber-600'}>{connectionStatus}</span>
                     {' · '}Room: {room?.status ?? 'unknown'}
                     {' · '}Spelers: {room?.players.length ?? 0}
+                    {' · '}UserId: {resolvedUserId ?? '(none)'}
                   </CardDescription>
                 </div>
-                <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => void refreshSnapshot()}>
-                  Snapshot ophalen
-                </Button>
+                <div className="flex shrink-0 gap-1">
+                  <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => void refreshSnapshot()}>
+                    Snapshot
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="h-7 text-xs"
+                    onClick={async () => {
+                      try {
+                        await navigator.clipboard.writeText(debugEvents.join('\n'));
+                      } catch {
+                        // ignore
+                      }
+                    }}
+                    disabled={debugEvents.length === 0}
+                  >
+                    Kopieer logs
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="h-7 text-xs"
+                    onClick={async () => {
+                      try {
+                        const response = await fetch('/api/multiplayer/debug', { cache: 'no-store' });
+                        const text = await response.text();
+                        await navigator.clipboard.writeText(text);
+                      } catch {
+                        // ignore
+                      }
+                    }}
+                  >
+                    Server status
+                  </Button>
+                </div>
               </div>
             </CardHeader>
             <CardContent className="pt-0">

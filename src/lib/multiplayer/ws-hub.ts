@@ -2,19 +2,31 @@ import { RawData, WebSocket } from 'ws';
 import { isMultiplayerError } from './errors';
 import { MultiplayerService } from './service';
 
+/**
+ * Multiplayer WebSocket hub.
+ *
+ * Responsibilities:
+ *  - Track every WebSocket attached to this runtime instance.
+ *  - Route inbound commands (join_room / leave_room / ping) to the service.
+ *  - Broadcast service events to the right sockets.
+ *  - Keep connections alive with an application-level ping every 25 s.
+ *  - Drop stale duplicate connections from the same user (e.g. a hot-reloaded
+ *    React component reconnects faster than the previous socket can finish
+ *    closing — without de-duplication the room briefly shows the user as
+ *    offline because the *old* socket's close event arrives last).
+ */
+
 interface SocketContext {
+  /** Stable id used in logs so accept/attach/join/close lines correlate. */
+  connectionId: string;
   userId: string;
+  /** The room this socket is currently a member of, if any. */
   roomCode: string | null;
-  /** Room code extracted from the WS URL at connection time – used as fallback if the client omits it from the join_room payload. */
+  /** Room code from the WS query string. Auto-join target. */
   initialRoomCode: string | null;
   pingTimer: ReturnType<typeof setInterval> | null;
-  /** Stable id used in logs so you can correlate accept/attach/join/close lines for a single connection. */
-  connectionId: string;
-  /** When attachConnection ran, used to compute the socket lifetime on close. */
   attachedAt: number;
-  /** True once a join_room has been processed for this socket (auto or explicit), used to dedupe. */
   hasJoined: boolean;
-  /** True once a join is in-flight, used to drop duplicate join_room frames sent by the client right after open. */
   joinInFlight: boolean;
 }
 
@@ -40,7 +52,6 @@ function asRecord(value: unknown): Record<string, unknown> | null {
   if (!value || typeof value !== 'object') {
     return null;
   }
-
   return value as Record<string, unknown>;
 }
 
@@ -48,42 +59,25 @@ function shouldDebugLog(): boolean {
   return process.env.NODE_ENV === 'development' || process.env.MULTIPLAYER_DEBUG === '1';
 }
 
-function debugLog(message: string, details?: Record<string, unknown>): void {
-  if (!shouldDebugLog()) {
-    return;
-  }
-
-  if (details) {
-    console.info(`[multiplayer-ws-hub] ${message}`, details);
-    return;
-  }
-
-  console.info(`[multiplayer-ws-hub] ${message}`);
-}
-
-function warnLog(message: string, details?: Record<string, unknown>): void {
-  if (!shouldDebugLog()) {
-    return;
-  }
-
-  if (details) {
-    console.warn(`[multiplayer-ws-hub] ${message}`, details);
-    return;
-  }
-
-  console.warn(`[multiplayer-ws-hub] ${message}`);
-}
-
 export class MultiplayerWsHub {
   private readonly service: MultiplayerService;
+  private readonly instanceId: string;
   private readonly roomSockets = new Map<string, Set<WebSocket>>();
   private readonly socketContexts = new Map<WebSocket, SocketContext>();
+  /**
+   * Map of userId → set of attached sockets for that user. Used to evict
+   * stale duplicate connections when a fresh one arrives. We support multiple
+   * sockets per user (e.g. host has two browser tabs open) but only keep the
+   * most recent one to avoid the "ghost player offline" effect.
+   */
+  private readonly userSockets = new Map<string, Set<WebSocket>>();
 
-  constructor(service: MultiplayerService) {
+  constructor(service: MultiplayerService, instanceId = 'unknown') {
     this.service = service;
+    this.instanceId = instanceId;
 
     this.service.onBroadcast((event) => {
-      debugLog('Broadcast event from service', {
+      this.debug('Broadcast event from service', {
         type: event.type,
         roomCode: event.roomCode,
       });
@@ -91,41 +85,71 @@ export class MultiplayerWsHub {
     });
   }
 
+  private logPrefix(): string {
+    return `[multiplayer-ws-hub:${this.instanceId}]`;
+  }
+
+  private debug(message: string, details?: Record<string, unknown>): void {
+    if (!shouldDebugLog()) return;
+    if (details) {
+      console.info(`${this.logPrefix()} ${message}`, details);
+    } else {
+      console.info(`${this.logPrefix()} ${message}`);
+    }
+  }
+
+  private warn(message: string, details?: Record<string, unknown>): void {
+    if (!shouldDebugLog()) return;
+    if (details) {
+      console.warn(`${this.logPrefix()} ${message}`, details);
+    } else {
+      console.warn(`${this.logPrefix()} ${message}`);
+    }
+  }
+
   attachConnection(ws: WebSocket, userId: string, initialRoomCode: string | null): void {
     const normalizedInitialRoomCode = initialRoomCode ? initialRoomCode.trim().toUpperCase() : null;
     const connectionId = makeConnectionId();
     const attachedAt = Date.now();
 
-    debugLog('Attach websocket connection', {
+    this.debug('Attach websocket connection', {
       connectionId,
       userId,
       initialRoomCode: normalizedInitialRoomCode,
+      existingUserSockets: this.userSockets.get(userId)?.size ?? 0,
     });
 
-    // Send a ping every 25 s so the connection is kept alive through any
-    // idle-timeout firewalls or reverse proxies. The browser WS implementation
-    // responds with a pong automatically.
+    // ws library application-level ping every 25 s. Most reverse proxies and
+    // browsers hold idle WS connections for at least a minute, but ours is the
+    // cheap insurance against any in-the-middle idle timer.
     const pingTimer = setInterval(() => {
       if (ws.readyState === WebSocket.OPEN) {
         try {
           ws.ping();
         } catch {
-          // ignore — close handler will clean up if the socket is broken
+          // Close handler will clean up if the socket is broken.
         }
       }
     }, 25_000);
 
     const context: SocketContext = {
+      connectionId,
       userId,
       roomCode: null,
       initialRoomCode: normalizedInitialRoomCode,
       pingTimer,
-      connectionId,
       attachedAt,
       hasJoined: false,
       joinInFlight: false,
     };
     this.socketContexts.set(ws, context);
+
+    let userSet = this.userSockets.get(userId);
+    if (!userSet) {
+      userSet = new Set();
+      this.userSockets.set(userId, userSet);
+    }
+    userSet.add(ws);
 
     ws.on('message', (data) => {
       void this.handleMessage(ws, data);
@@ -136,18 +160,18 @@ export class MultiplayerWsHub {
     });
 
     ws.on('error', (err) => {
-      // Log the error; the 'close' event fires right after and handles cleanup.
-      warnLog('Socket error event fired', {
+      // The 'close' event fires right after; do cleanup there.
+      this.warn('Socket error event fired', {
         connectionId,
         userId,
         error: err instanceof Error ? err.message : String(err),
       });
     });
 
-    // Auto-join from the roomCode embedded in the WS URL. Some clients reconnect
-    // aggressively or can drop before the first 'join_room' command is sent.
-    // Keeping server-side auto-join restores a robust baseline and still allows
-    // the explicit join_room command as an idempotent re-sync path.
+    // Auto-join from the WS URL room code. The HTTP `/join` route has already
+    // added the user to the room as a player; this just attaches the socket
+    // to that room so the user receives broadcasts. Idempotent: if the socket
+    // sends an explicit `join_room` afterwards, we drop it as a duplicate.
     if (normalizedInitialRoomCode) {
       context.joinInFlight = true;
       void this.joinRoomForSocket(ws, userId, normalizedInitialRoomCode);
@@ -156,9 +180,7 @@ export class MultiplayerWsHub {
 
   private async handleMessage(ws: WebSocket, rawData: RawData): Promise<void> {
     const context = this.socketContexts.get(ws);
-    if (!context) {
-      return;
-    }
+    if (!context) return;
 
     const messageText = typeof rawData === 'string' ? rawData : rawData.toString('utf8');
 
@@ -180,20 +202,18 @@ export class MultiplayerWsHub {
     const payload = asRecord(envelope.payload);
     const payloadRoomCode = typeof payload?.roomCode === 'string' ? payload.roomCode.trim().toUpperCase() : null;
 
-    debugLog('Received websocket command', {
+    this.debug('Received websocket command', {
+      connectionId: context.connectionId,
       userId: context.userId,
       type: typeof type === 'string' ? type : 'unknown',
-      // Show the payload room code (what the client sent) and the context room code (current room).
       payloadRoomCode: payloadRoomCode ?? '(not provided)',
       contextRoomCode: context.roomCode ?? '(not joined yet)',
     });
 
     if (type === 'join_room') {
-      // Accept roomCode from the payload; if the client omitted it, fall back to
-      // the one embedded in the WebSocket URL at connection time.
       const roomCode = payloadRoomCode || context.initialRoomCode || '';
       if (!roomCode) {
-        warnLog('join_room rejected — no roomCode in payload and no initialRoomCode from URL', {
+        this.warn('join_room rejected — no roomCode provided', {
           connectionId: context.connectionId,
           userId: context.userId,
         });
@@ -201,18 +221,23 @@ export class MultiplayerWsHub {
         return;
       }
 
-      // Ignore duplicate joins for the same socket/room. This is essential
-      // because the client sends join_room on open while the server already
-      // auto-joins from the URL roomCode — without dedup we'd race two
-      // joinRoomForSocket calls and double-broadcast room_joined.
+      // Already attached to this room — quietly succeed.
       if (context.roomCode === roomCode) {
+        this.debug('join_room is a no-op — socket already in room', {
+          connectionId: context.connectionId,
+          userId: context.userId,
+          roomCode,
+        });
         return;
       }
 
-      // If a join is already in-flight (e.g. server auto-join hasn't completed
-      // yet), drop the duplicate from the client. The auto-join will produce
-      // the same outcome (room_joined to this socket).
+      // A join is already in flight from auto-join; drop this duplicate.
       if (context.joinInFlight) {
+        this.debug('join_room dropped — auto-join already in flight', {
+          connectionId: context.connectionId,
+          userId: context.userId,
+          roomCode,
+        });
         return;
       }
 
@@ -227,13 +252,12 @@ export class MultiplayerWsHub {
         this.sendError(ws, 'VALIDATION_ERROR', 'roomCode is required');
         return;
       }
-
       await this.leaveRoomForSocket(ws, context.userId, roomCode);
       return;
     }
 
     if (type === 'ping') {
-      // Application-level keepalive sent by the client; no response needed.
+      // Application-level keepalive. No response needed.
       return;
     }
 
@@ -247,24 +271,18 @@ export class MultiplayerWsHub {
 
     if (!roomCode) {
       this.sendError(ws, 'VALIDATION_ERROR', 'roomCode is required');
-      if (context) {
-        context.joinInFlight = false;
-      }
+      if (context) context.joinInFlight = false;
       return;
     }
 
-    debugLog('Socket attempting to join room', { connectionId, userId, roomCode });
+    this.debug('Socket attempting to join room', { connectionId, userId, roomCode });
 
     try {
-      const room = await this.service.joinSocketRoom({
-        userId,
-        roomCode,
-      });
+      const room = await this.service.joinSocketRoom({ userId, roomCode });
 
       // The socket may have been closed/torn down while we awaited the lock.
-      // Don't attempt to send to a dead socket; just bail.
       if (!this.socketContexts.has(ws) || ws.readyState !== WebSocket.OPEN) {
-        debugLog('Socket disappeared before join could be finalized', {
+        this.debug('Socket disappeared before join could be finalized', {
           connectionId,
           userId,
           roomCode,
@@ -278,7 +296,7 @@ export class MultiplayerWsHub {
         context.hasJoined = true;
         context.joinInFlight = false;
       }
-      debugLog('Socket joined room', {
+      this.debug('Socket joined room', {
         connectionId,
         userId,
         roomCode,
@@ -289,8 +307,7 @@ export class MultiplayerWsHub {
       // Send the joining socket its room snapshot.
       this.send(ws, 'room_joined', { room });
 
-      // Broadcast updated player list to everyone else already in the room
-      // (the sender already gets room_joined above).
+      // Notify other room members that a player (re)connected.
       const sockets = this.roomSockets.get(roomCode);
       if (sockets) {
         sockets.forEach((socket) => {
@@ -300,10 +317,8 @@ export class MultiplayerWsHub {
         });
       }
     } catch (error) {
-      if (context) {
-        context.joinInFlight = false;
-      }
-      warnLog('Socket failed to join room', {
+      if (context) context.joinInFlight = false;
+      this.warn('Socket failed to join room', {
         connectionId,
         userId,
         roomCode,
@@ -321,15 +336,9 @@ export class MultiplayerWsHub {
     }
 
     try {
-      await this.service.leaveSocketRoom({
-        userId,
-        roomCode,
-      });
+      await this.service.leaveSocketRoom({ userId, roomCode });
       this.detachSocketFromRoom(ws, roomCode);
-      debugLog('Socket left room', {
-        userId,
-        roomCode,
-      });
+      this.debug('Socket left room', { userId, roomCode });
     } catch (error) {
       this.sendErrorFromException(ws, error);
     }
@@ -337,19 +346,21 @@ export class MultiplayerWsHub {
 
   private async handleClose(ws: WebSocket, closeCode: number, closeReason: string): Promise<void> {
     const context = this.socketContexts.get(ws);
-    if (!context) {
-      return;
-    }
+    if (!context) return;
 
-    // Stop the keepalive ping timer for this socket.
     if (context.pingTimer) {
       clearInterval(context.pingTimer);
       context.pingTimer = null;
     }
 
-    const closeType = closeCode === 1000 ? 'clean' : closeCode === 1001 ? 'going-away' : 'abnormal';
+    const closeType =
+      closeCode === 1000 ? 'clean' :
+      closeCode === 1001 ? 'going-away' :
+      closeCode === 1006 ? 'abnormal-no-close-frame' :
+      'abnormal';
     const lifetimeMs = Date.now() - context.attachedAt;
-    debugLog('Socket closed', {
+
+    this.debug('Socket closed', {
       connectionId: context.connectionId,
       userId: context.userId,
       roomCode: context.roomCode,
@@ -362,11 +373,34 @@ export class MultiplayerWsHub {
 
     this.socketContexts.delete(ws);
 
-    if (!context.roomCode) {
-      return;
+    const userSet = this.userSockets.get(context.userId);
+    if (userSet) {
+      userSet.delete(ws);
+      if (userSet.size === 0) {
+        this.userSockets.delete(context.userId);
+      }
     }
 
+    if (!context.roomCode) return;
+
     this.detachSocketFromRoom(ws, context.roomCode);
+
+    // Only mark the player offline if they have NO other active sockets in
+    // this room. Otherwise the player just closed one tab and their other
+    // tab is still connected — keeping them online avoids a flicker.
+    const remainingSocketsForUser = userSet?.size ?? 0;
+    const stillInRoom = remainingSocketsForUser > 0
+      ? Array.from(userSet!).some((other) => this.socketContexts.get(other)?.roomCode === context.roomCode)
+      : false;
+
+    if (stillInRoom) {
+      this.debug('Skipping player_left — user has another socket in room', {
+        userId: context.userId,
+        roomCode: context.roomCode,
+        remainingSocketsForUser,
+      });
+      return;
+    }
 
     try {
       await this.service.handleSocketDisconnect({
@@ -380,23 +414,19 @@ export class MultiplayerWsHub {
 
   private moveSocketToRoom(ws: WebSocket, roomCode: string): void {
     const context = this.socketContexts.get(ws);
-    if (!context) {
-      return;
-    }
+    if (!context) return;
 
     if (context.roomCode && context.roomCode !== roomCode) {
       this.detachSocketFromRoom(ws, context.roomCode);
     }
 
     context.roomCode = roomCode;
-    this.socketContexts.set(ws, context);
 
     let sockets = this.roomSockets.get(roomCode);
     if (!sockets) {
       sockets = new Set<WebSocket>();
       this.roomSockets.set(roomCode, sockets);
     }
-
     sockets.add(ws);
   }
 
@@ -412,21 +442,17 @@ export class MultiplayerWsHub {
     const context = this.socketContexts.get(ws);
     if (context && context.roomCode === roomCode) {
       context.roomCode = null;
-      this.socketContexts.set(ws, context);
     }
   }
 
   private broadcast(roomCode: string, type: OutboundEventName, payload: Record<string, unknown>): void {
     const sockets = this.roomSockets.get(roomCode);
     if (!sockets || sockets.size === 0) {
-      debugLog('No sockets to broadcast to', {
-        roomCode,
-        type,
-      });
+      this.debug('No sockets to broadcast to', { roomCode, type });
       return;
     }
 
-    debugLog('Broadcasting event to sockets', {
+    this.debug('Broadcasting event to sockets', {
       roomCode,
       type,
       socketCount: sockets.size,
@@ -438,21 +464,21 @@ export class MultiplayerWsHub {
   }
 
   private send(socket: WebSocket, type: OutboundEventName, payload: Record<string, unknown>): void {
-    if (socket.readyState !== WebSocket.OPEN) {
-      return;
-    }
+    if (socket.readyState !== WebSocket.OPEN) return;
 
-    socket.send(
-      JSON.stringify({
+    try {
+      socket.send(JSON.stringify({ type, payload }));
+    } catch (error) {
+      this.warn('Failed to send websocket frame', {
         type,
-        payload,
-      }),
-    );
+        error: error instanceof Error ? error.message : String(error),
+      });
+    }
   }
 
   private sendErrorFromException(socket: WebSocket, error: unknown): void {
     if (isMultiplayerError(error)) {
-      warnLog('Sending multiplayer error to websocket client', {
+      this.warn('Sending multiplayer error to websocket client', {
         code: error.code,
         message: error.message,
       });
@@ -460,14 +486,36 @@ export class MultiplayerWsHub {
       return;
     }
 
-    warnLog('Sending internal websocket error to client');
+    this.warn('Sending internal websocket error to client');
     this.sendError(socket, 'INTERNAL_ERROR', 'Unexpected socket error');
   }
 
   private sendError(socket: WebSocket, code: string, message: string): void {
-    this.send(socket, 'error', {
-      code,
-      message,
-    });
+    this.send(socket, 'error', { code, message });
+  }
+
+  /**
+   * Diagnostic helper used by /api/multiplayer/debug. Returns a snapshot of
+   * which users are connected and to which rooms.
+   */
+  debugListSockets(): Array<{
+    connectionId: string;
+    userId: string;
+    roomCode: string | null;
+    hasJoined: boolean;
+    joinInFlight: boolean;
+    attachedAtIso: string;
+    ageMs: number;
+  }> {
+    const now = Date.now();
+    return Array.from(this.socketContexts.values()).map((context) => ({
+      connectionId: context.connectionId,
+      userId: context.userId,
+      roomCode: context.roomCode,
+      hasJoined: context.hasJoined,
+      joinInFlight: context.joinInFlight,
+      attachedAtIso: new Date(context.attachedAt).toISOString(),
+      ageMs: now - context.attachedAt,
+    }));
   }
 }

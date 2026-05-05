@@ -38,15 +38,26 @@ interface MultiplayerControllerState {
   debugEvents: string[];
 }
 
+const INITIAL_STATE: MultiplayerControllerState = {
+  loading: true,
+  room: null,
+  results: [],
+  token: null,
+  errorMessage: null,
+  connectionStatus: 'idle',
+  isStarting: false,
+  isSubmittingAnswer: false,
+  isLeaving: false,
+  roomClosed: false,
+  debugEvents: [],
+};
+
 function normalizeRoomCode(roomCode: string): string {
   return roomCode.trim().toUpperCase();
 }
 
 function serializeDebugDetails(details: Record<string, unknown> | undefined): string {
-  if (!details) {
-    return '';
-  }
-
+  if (!details) return '';
   try {
     return ` ${JSON.stringify(details)}`;
   } catch {
@@ -66,150 +77,299 @@ function isRealtimeSnapshotError(error: Error): boolean {
   return error.name === 'MultiplayerSnapshotRefreshError';
 }
 
-export function useMultiplayerRoomController(options: UseMultiplayerRoomControllerOptions) {
-  const normalizedRoomCode = useMemo(() => normalizeRoomCode(options.roomCode), [options.roomCode]);
-  const realtimeRef = useRef<MultiplayerRealtimeClient | null>(null);
+/**
+ * Encapsulates one room session: token fetch → HTTP join → realtime client →
+ * debug log capture. Construction is synchronous; bootstrapping happens via
+ * `start()`. `dispose()` is idempotent so React Strict Mode's mount-unmount
+ * dance is safe.
+ */
+class RoomSession {
+  private disposed = false;
+  private realtime: MultiplayerRealtimeClient | null = null;
+  private token: string | null = null;
 
-  const pushDebugEvent = useCallback((entry: MultiplayerRealtimeDebugEntry) => {
-    setState((current) => {
-      const nextEvents = [asDebugLine(entry), ...current.debugEvents].slice(0, 120);
-      return {
-        ...current,
-        debugEvents: nextEvents,
-      };
+  constructor(
+    private readonly roomCode: string,
+    private readonly userId: string,
+    private readonly autoJoin: boolean,
+    private readonly callbacks: {
+      onState: (updater: (current: MultiplayerControllerState) => MultiplayerControllerState) => void;
+      onDebugEntry: (entry: MultiplayerRealtimeDebugEntry) => void;
+    },
+  ) {}
+
+  isDisposed(): boolean {
+    return this.disposed;
+  }
+
+  getToken(): string | null {
+    return this.token;
+  }
+
+  emitDebug(level: 'info' | 'warn' | 'error', message: string, details?: Record<string, unknown>): void {
+    this.callbacks.onDebugEntry({
+      timestamp: new Date().toISOString(),
+      level,
+      message,
+      details,
+    });
+  }
+
+  async start(): Promise<void> {
+    this.emitDebug('info', 'Starting room session', {
+      roomCode: this.roomCode,
+      userId: this.userId,
+      autoJoin: this.autoJoin,
     });
 
-    if (process.env.NODE_ENV !== 'production') {
-      const method = entry.level === 'error' ? 'error' : entry.level === 'warn' ? 'warn' : 'info';
+    this.callbacks.onState((current) => ({
+      ...current,
+      loading: true,
+      errorMessage: null,
+      roomClosed: false,
+      results: [],
+    }));
 
-      if (entry.details) {
-        console[method](`[multiplayer-web] ${entry.message}`, entry.details);
-      } else {
-        console[method](`[multiplayer-web] ${entry.message}`);
+    try {
+      const token = await getMultiplayerAuthToken();
+      if (this.disposed) {
+        this.emitDebug('warn', 'Session disposed during token fetch; aborting start');
+        return;
       }
-    }
-  }, []);
-
-  const debug = useCallback(
-    (level: MultiplayerRealtimeDebugEntry['level'], message: string, details?: Record<string, unknown>) => {
-      pushDebugEvent({
-        timestamp: new Date().toISOString(),
-        level,
-        message,
-        details,
+      this.token = token;
+      this.emitDebug('info', 'Fetched multiplayer auth token', {
+        tokenLength: token.length,
       });
-    },
-    [pushDebugEvent],
-  );
 
-  const [state, setState] = useState<MultiplayerControllerState>({
-    loading: true,
-    room: null,
-    results: [],
-    token: null,
-    errorMessage: null,
-    connectionStatus: 'idle',
-    isStarting: false,
-    isSubmittingAnswer: false,
-    isLeaving: false,
-    roomClosed: false,
-    debugEvents: [],
-  });
+      const room = this.autoJoin
+        ? await joinRoom({ token, roomCode: this.roomCode })
+        : await getRoomSnapshot({ token, roomCode: this.roomCode });
 
-  const applyRoom = useCallback((nextRoom: RoomSnapshot) => {
-    setState((current) => {
+      if (this.disposed) {
+        this.emitDebug('warn', 'Session disposed after join/snapshot; aborting start');
+        return;
+      }
+
+      this.emitDebug('info', this.autoJoin ? 'Joined room successfully' : 'Loaded room snapshot', {
+        roomCode: room.code,
+        status: room.status,
+        players: room.players.length,
+      });
+
+      this.callbacks.onState((current) => ({
+        ...current,
+        token,
+        loading: false,
+        errorMessage: null,
+        room: {
+          ...room,
+          status: resolveRoomStatus(current.room?.status ?? null, room.status),
+        },
+        roomClosed: false,
+      }));
+
+      if (room.status === 'finished') {
+        try {
+          const results = await getResults({ token, roomCode: this.roomCode });
+          if (this.disposed) return;
+          this.callbacks.onState((current) => ({ ...current, results }));
+        } catch {
+          // results may be unavailable, that's ok
+        }
+      }
+
+      this.openRealtime(token);
+    } catch (error) {
+      if (this.disposed) return;
+      this.emitDebug('error', 'Failed to start room session', {
+        reason: error instanceof Error ? error.message : 'unknown_error',
+      });
+
+      const isRoomNotFound = error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND';
+
+      this.callbacks.onState((current) => ({
+        ...current,
+        loading: false,
+        roomClosed: isRoomNotFound,
+        errorMessage: toUserMessage(error),
+      }));
+    }
+  }
+
+  private openRealtime(token: string): void {
+    if (this.disposed) return;
+
+    const realtime = new MultiplayerRealtimeClient({
+      token,
+      roomCode: this.roomCode,
+      getSnapshot: () => getRoomSnapshot({ token, roomCode: this.roomCode }),
+      onSnapshot: (room) => {
+        if (this.disposed) return;
+        this.applyRoom(room);
+      },
+      onEvent: (event) => {
+        if (this.disposed) return;
+        this.handleEvent(event);
+      },
+      onConnectionStatus: (status) => {
+        if (this.disposed) return;
+        this.emitDebug('info', 'Realtime connection status changed', { status });
+        this.callbacks.onState((current) =>
+          current.connectionStatus === status ? current : { ...current, connectionStatus: status },
+        );
+      },
+      onError: (error) => {
+        if (this.disposed) return;
+        this.emitDebug('warn', 'Realtime onError', { name: error.name, message: error.message });
+
+        // Connection / polling failures are transient; don't surface to UI.
+        if (isRealtimeConnectionError(error) || isRealtimeSnapshotError(error)) {
+          return;
+        }
+
+        this.callbacks.onState((current) => ({
+          ...current,
+          errorMessage: toUserMessage(error),
+        }));
+      },
+      onDebug: (entry) => {
+        this.callbacks.onDebugEntry(entry);
+      },
+    });
+
+    this.realtime = realtime;
+    realtime.connect();
+  }
+
+  private applyRoom(nextRoom: RoomSnapshot): void {
+    this.callbacks.onState((current) => {
       const resolvedStatus = resolveRoomStatus(current.room?.status ?? null, nextRoom.status);
-
+      // Reject snapshots that would walk the state machine backwards.
       if (current.room && resolvedStatus !== nextRoom.status) {
         return current;
       }
-
       return {
         ...current,
-        room: {
-          ...nextRoom,
-          status: resolvedStatus,
-        },
+        room: { ...nextRoom, status: resolvedStatus },
         roomClosed: false,
         loading: false,
       };
     });
+  }
 
-    debug('info', 'Applied room snapshot', {
-      roomCode: nextRoom.code,
-      status: nextRoom.status,
-      players: nextRoom.players.length,
-      currentQuestionIndex: nextRoom.currentQuestionIndex,
-    });
-  }, [debug]);
+  private handleEvent(event: MultiplayerWsInboundEvent): void {
+    this.emitDebug('info', 'Realtime event received', { type: event.type });
 
-  const handleRealtimeEvent = useCallback(
-    (event: MultiplayerWsInboundEvent) => {
-      debug('info', 'Received realtime event', {
-        type: event.type,
+    if (event.type === 'error') {
+      this.emitDebug('warn', 'Realtime payload contained error event', {
+        code: event.payload.code,
+        message: event.payload.message,
       });
-
-      if (event.type === 'error') {
-        debug('warn', 'Realtime payload contained server error event', {
-          code: event.payload.code,
-          message: event.payload.message,
-        });
-
-        setState((current) => ({
-          ...current,
-          errorMessage: event.payload.message,
-        }));
-        return;
-      }
-
-      if ('room' in event.payload) {
-        applyRoom(event.payload.room);
-      }
-
-      if (event.type === 'game_finished') {
-        setState((current) => ({
-          ...current,
-          results: event.payload.results,
-        }));
-      }
-    },
-    [applyRoom, debug],
-  );
-
-  const refreshSnapshot = useCallback(async () => {
-    if (!state.token) {
-      debug('warn', 'Skipped snapshot refresh because auth token is missing');
+      this.callbacks.onState((current) => ({ ...current, errorMessage: event.payload.message }));
       return;
     }
 
-    debug('info', 'Refreshing room snapshot via HTTP', {
-      roomCode: normalizedRoomCode,
+    if ('room' in event.payload) {
+      this.applyRoom(event.payload.room);
+    }
+
+    if (event.type === 'game_finished') {
+      this.callbacks.onState((current) => ({ ...current, results: event.payload.results }));
+    }
+  }
+
+  dispose(): void {
+    if (this.disposed) return;
+    this.disposed = true;
+    this.emitDebug('info', 'Disposing room session');
+    if (this.realtime) {
+      this.realtime.disconnect();
+      this.realtime = null;
+    }
+  }
+}
+
+export function useMultiplayerRoomController(options: UseMultiplayerRoomControllerOptions) {
+  const normalizedRoomCode = useMemo(() => normalizeRoomCode(options.roomCode), [options.roomCode]);
+  const sessionRef = useRef<RoomSession | null>(null);
+
+  const [state, setState] = useState<MultiplayerControllerState>(INITIAL_STATE);
+
+  const pushDebugEntry = useCallback((entry: MultiplayerRealtimeDebugEntry) => {
+    setState((current) => ({
+      ...current,
+      debugEvents: [asDebugLine(entry), ...current.debugEvents].slice(0, 200),
+    }));
+
+    if (process.env.NODE_ENV !== 'production') {
+      const fn = entry.level === 'error' ? console.error : entry.level === 'warn' ? console.warn : console.info;
+      if (entry.details) {
+        fn(`[multiplayer-web] ${entry.message}`, entry.details);
+      } else {
+        fn(`[multiplayer-web] ${entry.message}`);
+      }
+    }
+  }, []);
+
+  // Effect: own a single RoomSession scoped to (roomCode, userId, autoJoin).
+  useEffect(() => {
+    if (!options.userId) {
+      pushDebugEntry({
+        timestamp: new Date().toISOString(),
+        level: 'warn',
+        message: 'Skipping room controller init — userId is null. Will retry once authenticated.',
+      });
+      setState((current) => ({ ...current, loading: false }));
+      return;
+    }
+
+    const session = new RoomSession(normalizedRoomCode, options.userId, options.autoJoin !== false, {
+      onState: setState,
+      onDebugEntry: pushDebugEntry,
     });
 
-    try {
-      const room = await getRoomSnapshot({
-        token: state.token,
-        roomCode: normalizedRoomCode,
+    sessionRef.current = session;
+
+    void session.start();
+
+    return () => {
+      sessionRef.current = null;
+      session.dispose();
+    };
+  }, [normalizedRoomCode, options.userId, options.autoJoin, pushDebugEntry]);
+
+  const refreshSnapshot = useCallback(async () => {
+    const session = sessionRef.current;
+    const token = session?.getToken() ?? state.token;
+
+    if (!token) {
+      pushDebugEntry({
+        timestamp: new Date().toISOString(),
+        level: 'warn',
+        message: 'Skipped snapshot refresh — no token available',
       });
-      applyRoom(room);
+      return;
+    }
+
+    try {
+      const room = await getRoomSnapshot({ token, roomCode: normalizedRoomCode });
+      setState((current) => {
+        const resolvedStatus = resolveRoomStatus(current.room?.status ?? null, room.status);
+        if (current.room && resolvedStatus !== room.status) return current;
+        return {
+          ...current,
+          room: { ...room, status: resolvedStatus },
+          roomClosed: false,
+          loading: false,
+        };
+      });
 
       if (room.status === 'finished') {
-        const latestResults = await getResults({
-          token: state.token,
-          roomCode: normalizedRoomCode,
-        });
-
-        setState((current) => ({
-          ...current,
-          results: latestResults,
-        }));
+        const results = await getResults({ token, roomCode: normalizedRoomCode });
+        setState((current) => ({ ...current, results }));
       }
     } catch (error) {
       if (error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND') {
-        debug('warn', 'Snapshot refresh returned ROOM_NOT_FOUND', {
-          roomCode: normalizedRoomCode,
-        });
-
         setState((current) => ({
           ...current,
           roomClosed: true,
@@ -218,325 +378,79 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
         }));
         return;
       }
-
-      debug('error', 'Snapshot refresh failed', {
-        reason: error instanceof Error ? error.message : 'unknown_error',
-      });
-
-      setState((current) => ({
-        ...current,
-        errorMessage: toUserMessage(error),
-      }));
+      setState((current) => ({ ...current, errorMessage: toUserMessage(error) }));
     }
-  }, [applyRoom, debug, normalizedRoomCode, state.token]);
-
-  useEffect(() => {
-    // Wait until the session has resolved and we have a real user ID.
-    // When NextAuth transitions from loading → authenticated, userId goes from
-    // null → the real string. Without this guard that transition would cause
-    // the effect to re-run, cleaning up the just-connected socket (code 1006)
-    // and creating a reconnect loop.
-    if (!options.userId) {
-      debug('warn', 'Skipping room controller init — userId is null (session still loading or unauthenticated). Will retry when userId is available.');
-      setState((current) => ({ ...current, loading: false }));
-      return;
-    }
-
-    let cancelled = false;
-
-    debug('info', 'Initializing room controller', {
-      roomCode: normalizedRoomCode,
-      autoJoin: options.autoJoin !== false,
-      userId: options.userId,
-    });
-
-    setState((current) => ({
-      ...current,
-      loading: true,
-      errorMessage: null,
-      roomClosed: false,
-      results: [],
-    }));
-
-    void (async () => {
-      try {
-        const token = await getMultiplayerAuthToken();
-        debug('info', 'Fetched multiplayer auth token', {
-          roomCode: normalizedRoomCode,
-          tokenLength: token.length,
-        });
-
-        if (cancelled) {
-          debug('warn', 'Init aborted after token fetch because effect was cancelled');
-          return;
-        }
-
-        const room = options.autoJoin === false
-          ? await getRoomSnapshot({ token, roomCode: normalizedRoomCode })
-          : await joinRoom({ token, roomCode: normalizedRoomCode });
-
-        debug('info', options.autoJoin === false ? 'Loaded room snapshot without auto-join' : 'Joined room successfully', {
-          roomCode: room.code,
-          status: room.status,
-          players: room.players.length,
-        });
-
-        if (cancelled) {
-          debug('warn', 'Init aborted after join/snapshot because effect was cancelled');
-          return;
-        }
-
-        setState((current) => ({
-          ...current,
-          token,
-          loading: false,
-          errorMessage: null,
-        }));
-        applyRoom(room);
-
-        if (room.status === 'finished') {
-          const latestResults = await getResults({ token, roomCode: normalizedRoomCode });
-          if (!cancelled) {
-            setState((current) => ({
-              ...current,
-              results: latestResults,
-            }));
-          }
-        }
-
-        const realtime = new MultiplayerRealtimeClient({
-          token,
-          roomCode: normalizedRoomCode,
-          // snapshotFallbackIntervalMs defaults to 5000 — only polls when WS is offline.
-          getSnapshot: () =>
-            getRoomSnapshot({
-              token,
-              roomCode: normalizedRoomCode,
-            }),
-          onSnapshot: (snapshotRoom) => {
-            applyRoom(snapshotRoom);
-          },
-          onEvent: handleRealtimeEvent,
-          onConnectionStatus: (status) => {
-            debug('info', 'Realtime connection status changed', {
-              status,
-            });
-
-            setState((current) =>
-              current.connectionStatus === status
-                ? current
-                : { ...current, connectionStatus: status },
-            );
-          },
-          onDebug: (entry) => {
-            pushDebugEvent(entry);
-          },
-          onError: (error) => {
-            debug('warn', 'Realtime onError callback triggered', {
-              name: error.name,
-              message: error.message,
-            });
-
-            // Connection and polling failures are transient; keep syncing and avoid noisy UI banners.
-            if (isRealtimeConnectionError(error) || isRealtimeSnapshotError(error)) {
-              return;
-            }
-
-            setState((current) => ({
-              ...current,
-              errorMessage: toUserMessage(error),
-            }));
-          },
-        });
-
-        // If the effect was cancelled between the last guard and now, do NOT
-        // attach this realtime client to realtimeRef — the cleanup would then
-        // miss it and leak. Just dispose immediately.
-        if (cancelled) {
-          debug('warn', 'Effect cancelled after realtime construction; disposing without connect');
-          realtime.disconnect();
-          return;
-        }
-
-        realtimeRef.current?.disconnect();
-        realtimeRef.current = realtime;
-        realtime.connect();
-      } catch (error) {
-        debug('error', 'Failed to initialize room controller', {
-          reason: error instanceof Error ? error.message : 'unknown_error',
-        });
-
-        if (cancelled) {
-          return;
-        }
-
-        const isRoomNotFound = error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND';
-
-        setState((current) => ({
-          ...current,
-          loading: false,
-          roomClosed: isRoomNotFound,
-          errorMessage: toUserMessage(error),
-        }));
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-      const hadRealtime = realtimeRef.current !== null;
-      debug('warn', 'Room controller effect cleanup running', {
-        roomCode: normalizedRoomCode,
-        userId: options.userId,
-        hadRealtimeClient: hadRealtime,
-        // If hadRealtimeClient is true the WS will be closed here (manuallyClosed=true → code 1000).
-        // If false the WS was never created — cleanup is from the null-userId guard re-run.
-      });
-      realtimeRef.current?.disconnect();
-      realtimeRef.current = null;
-    };
-  }, [
-    applyRoom,
-    debug,
-    handleRealtimeEvent,
-    normalizedRoomCode,
-    options.autoJoin,
-    options.userId,
-    pushDebugEvent,
-  ]);
+  }, [normalizedRoomCode, pushDebugEntry, state.token]);
 
   const start = useCallback(async () => {
-    if (!state.token) {
-      debug('warn', 'Cannot start game because token is missing');
-      return;
-    }
-
-    debug('info', 'Attempting to start room', {
-      roomCode: normalizedRoomCode,
-    });
+    const token = sessionRef.current?.getToken() ?? state.token;
+    if (!token) return;
 
     setState((current) => ({ ...current, isStarting: true, errorMessage: null }));
-
     try {
-      const room = await startRoom({
-        token: state.token,
-        roomCode: normalizedRoomCode,
+      const room = await startRoom({ token, roomCode: normalizedRoomCode });
+      setState((current) => {
+        const resolvedStatus = resolveRoomStatus(current.room?.status ?? null, room.status);
+        if (current.room && resolvedStatus !== room.status) return current;
+        return {
+          ...current,
+          room: { ...room, status: resolvedStatus },
+        };
       });
-      applyRoom(room);
     } catch (error) {
-      debug('warn', 'Start room failed', {
-        reason: error instanceof Error ? error.message : 'unknown_error',
-      });
-
-      setState((current) => ({
-        ...current,
-        errorMessage: toUserMessage(error),
-      }));
+      setState((current) => ({ ...current, errorMessage: toUserMessage(error) }));
     } finally {
       setState((current) => ({ ...current, isStarting: false }));
     }
-  }, [applyRoom, debug, normalizedRoomCode, state.token]);
+  }, [normalizedRoomCode, state.token]);
 
-  const answer = useCallback(
-    async (questionId: string, answerId: string) => {
-      if (!state.token || state.isSubmittingAnswer) {
-        debug('warn', 'Skipped answer submission', {
-          hasToken: Boolean(state.token),
-          isSubmittingAnswer: state.isSubmittingAnswer,
-        });
-        return;
-      }
+  const answer = useCallback(async (questionId: string, answerId: string) => {
+    const token = sessionRef.current?.getToken() ?? state.token;
+    if (!token || state.isSubmittingAnswer) return;
 
-      const currentPlayer = state.room?.players.find((player) => player.id === options.userId);
-      if (currentPlayer?.hasAnswered) {
-        debug('warn', 'Skipped answer submission because player already answered', {
-          roomCode: normalizedRoomCode,
-          userId: options.userId,
-        });
-        return;
-      }
+    const currentPlayer = state.room?.players.find((p) => p.id === options.userId);
+    if (currentPlayer?.hasAnswered) return;
 
-      debug('info', 'Submitting answer', {
-        roomCode: normalizedRoomCode,
-        questionId,
-        answerId,
-      });
-
-      setState((current) => ({
-        ...current,
-        isSubmittingAnswer: true,
-        errorMessage: null,
-      }));
-
-      try {
-        await submitAnswer({
-          token: state.token,
-          roomCode: normalizedRoomCode,
-          questionId,
-          answerId,
-        });
-      } catch (error) {
-        debug('warn', 'Submit answer failed', {
-          reason: error instanceof Error ? error.message : 'unknown_error',
-        });
-
-        setState((current) => ({
-          ...current,
-          errorMessage: toUserMessage(error),
-        }));
-      } finally {
-        setState((current) => ({ ...current, isSubmittingAnswer: false }));
-      }
-    },
-    [debug, normalizedRoomCode, options.userId, state.isSubmittingAnswer, state.room?.players, state.token],
-  );
-
-  const leave = useCallback(async () => {
-    if (!state.token) {
-      debug('warn', 'Cannot leave room because token is missing');
-      return;
-    }
-
-    debug('info', 'Leaving room', {
-      roomCode: normalizedRoomCode,
-    });
-
-    setState((current) => ({ ...current, isLeaving: true, errorMessage: null }));
+    setState((current) => ({ ...current, isSubmittingAnswer: true, errorMessage: null }));
 
     try {
-      await leaveRoom({
-        token: state.token,
-        roomCode: normalizedRoomCode,
-      });
-
-      debug('info', 'Leave room request succeeded', {
-        roomCode: normalizedRoomCode,
-      });
-
-      realtimeRef.current?.disconnect();
-      realtimeRef.current = null;
+      await submitAnswer({ token, roomCode: normalizedRoomCode, questionId, answerId });
     } catch (error) {
-      debug('warn', 'Leave room failed', {
-        reason: error instanceof Error ? error.message : 'unknown_error',
-      });
+      setState((current) => ({ ...current, errorMessage: toUserMessage(error) }));
+    } finally {
+      setState((current) => ({ ...current, isSubmittingAnswer: false }));
+    }
+  }, [normalizedRoomCode, options.userId, state.isSubmittingAnswer, state.room?.players, state.token]);
 
-      setState((current) => ({
-        ...current,
-        errorMessage: toUserMessage(error),
-      }));
+  const leave = useCallback(async () => {
+    const token = sessionRef.current?.getToken() ?? state.token;
+    if (!token) return;
+
+    setState((current) => ({ ...current, isLeaving: true, errorMessage: null }));
+    try {
+      await leaveRoom({ token, roomCode: normalizedRoomCode });
+
+      // Tear down the realtime client immediately so the WS doesn't try to
+      // reconnect after we navigated away.
+      sessionRef.current?.dispose();
+      sessionRef.current = null;
+    } catch (error) {
+      setState((current) => ({ ...current, errorMessage: toUserMessage(error) }));
     } finally {
       setState((current) => ({ ...current, isLeaving: false }));
     }
-  }, [debug, normalizedRoomCode, state.token]);
+  }, [normalizedRoomCode, state.token]);
 
   const clearError = useCallback(() => {
-    debug('info', 'Cleared visible error banner');
     setState((current) => ({ ...current, errorMessage: null }));
-  }, [debug]);
+  }, []);
 
-  const currentPlayer = state.room?.players.find((player) => player.id === options.userId) ?? null;
+  const currentPlayer = state.room?.players.find((p) => p.id === options.userId) ?? null;
   const isHost = currentPlayer?.isHost ?? false;
   const canStart = Boolean(state.room && state.room.status === 'lobby' && isHost && state.room.players.length >= 2);
-  const canAnswer = Boolean(state.room?.status === 'in_progress' && !currentPlayer?.hasAnswered && !state.isSubmittingAnswer);
+  const canAnswer = Boolean(
+    state.room?.status === 'in_progress' && !currentPlayer?.hasAnswered && !state.isSubmittingAnswer,
+  );
 
   return {
     ...state,
