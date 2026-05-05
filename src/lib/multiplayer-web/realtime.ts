@@ -76,6 +76,13 @@ interface SocketSession {
   keepaliveTimer: ReturnType<typeof setInterval> | null;
   joinSent: boolean;
   openedAt: number | null;
+  /**
+   * When true, the session was retired while the socket was still CONNECTING.
+   * The onopen handler must close the socket gracefully (code 1000) once the
+   * handshake completes, instead of the caller using ws.close() on a CONNECTING
+   * socket (which sends a TCP RST → server sees code 1006, not 1000).
+   */
+  closeOnOpen: boolean;
 }
 
 export class MultiplayerRealtimeClient {
@@ -152,6 +159,16 @@ export class MultiplayerRealtimeClient {
    * fire the close event synchronously inside close(). Without this guard, the
    * synchronous close handler would still see the session as active and
    * schedule a reconnect for a socket we just deliberately retired.
+   *
+   * CONNECTING state: calling ws.close() while the socket is still in the
+   * CONNECTING state causes browsers to abort the TCP handshake with a RST
+   * instead of sending a WebSocket close frame. The server then observes close
+   * code 1006 (abnormal) rather than 1000 (clean). To avoid this, we set the
+   * `closeOnOpen` flag and let the `onopen` handler send the close frame once
+   * the connection is actually established. The handlers are registered via
+   * direct property assignment (`ws.onopen = ...`) so they can be removed with
+   * a null assignment — unlike addEventListener, which cannot be removed without
+   * a reference to the exact handler function.
    */
   private retireSession(session: SocketSession, reason: string): void {
     if (this.activeSession === session) {
@@ -164,6 +181,25 @@ export class MultiplayerRealtimeClient {
     }
 
     const ws = session.socket;
+
+    if (ws.readyState === WebSocket.CONNECTING) {
+      // Cannot send a close frame while still connecting — the browser would
+      // abort with TCP RST and the server would see 1006. Instead, mark the
+      // session so the onopen handler sends a clean 1000 close frame once the
+      // handshake completes. Remove all handlers except onopen (we need it to
+      // do the deferred close); onopen will null itself out after firing.
+      session.closeOnOpen = true;
+      try {
+        ws.onmessage = null;
+        ws.onerror = null;
+        ws.onclose = null;
+      } catch {
+        // ignore
+      }
+      return;
+    }
+
+    // Socket is OPEN, CLOSING, or CLOSED — safe to null all handlers now.
     try {
       ws.onopen = null;
       ws.onmessage = null;
@@ -173,7 +209,7 @@ export class MultiplayerRealtimeClient {
       // Some environments throw on null assignment; swallow.
     }
 
-    if (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING) {
+    if (ws.readyState === WebSocket.OPEN) {
       try {
         ws.close(1000, reason);
       } catch {
@@ -237,15 +273,51 @@ export class MultiplayerRealtimeClient {
       keepaliveTimer: null,
       joinSent: false,
       openedAt: null,
+      closeOnOpen: false,
     };
     this.activeSession = session;
 
-    socket.addEventListener('open', () => {
-      if (!this.isActive(session)) {
-        // We were replaced or torn down during the handshake. Ignore.
-        this.debug('warn', 'Discarding open event from stale socket', {
+    // Use direct property assignment (ws.onX = ...) rather than addEventListener
+    // so that retireSession can reliably remove every handler with a null
+    // assignment. With addEventListener the listener reference is needed to
+    // remove it; with the onX API a null assignment is sufficient and avoids
+    // leaving stale handlers on retired sockets.
+    socket.onopen = () => {
+      // Always clear the onopen handler first — whether we proceed normally or
+      // do a deferred close below, we must not fire again.
+      socket.onopen = null;
+
+      if (session.closeOnOpen) {
+        // The session was retired while the socket was still CONNECTING. Now that
+        // the connection is OPEN we can send a proper close frame (1000) instead
+        // of the TCP RST that ws.close() on a CONNECTING socket would produce.
+        this.debug('warn', 'Closing socket that was retired during handshake (deferred clean close)', {
           generation: session.generation,
         });
+        try {
+          socket.onmessage = null;
+          socket.onerror = null;
+          socket.onclose = null;
+          socket.close(1000, 'retired');
+        } catch {
+          // ignore
+        }
+        return;
+      }
+
+      if (!this.isActive(session)) {
+        // We were replaced or torn down during the handshake. Close gracefully.
+        this.debug('warn', 'Discarding open event from stale socket, closing gracefully', {
+          generation: session.generation,
+        });
+        try {
+          socket.onmessage = null;
+          socket.onerror = null;
+          socket.onclose = null;
+          socket.close(1000, 'stale');
+        } catch {
+          // ignore
+        }
         return;
       }
 
@@ -269,17 +341,17 @@ export class MultiplayerRealtimeClient {
           },
         });
       }
-    });
+    };
 
-    socket.addEventListener('message', (message) => {
+    socket.onmessage = (message) => {
       if (!this.isActive(session)) {
         return;
       }
 
       void this.handleMessage(message.data);
-    });
+    };
 
-    socket.addEventListener('error', () => {
+    socket.onerror = () => {
       if (!this.isActive(session)) {
         return;
       }
@@ -289,9 +361,9 @@ export class MultiplayerRealtimeClient {
       });
       this.emitConnectionError();
       // The 'close' event fires immediately after; reconnect handling lives there.
-    });
+    };
 
-    socket.addEventListener('close', (event) => {
+    socket.onclose = (event) => {
       // Clean up this session's resources unconditionally — they are tied to
       // this specific socket only.
       if (session.keepaliveTimer) {
@@ -335,7 +407,7 @@ export class MultiplayerRealtimeClient {
       this.emitConnectionError();
       this.startSnapshotFallback();
       this.scheduleReconnect();
-    });
+    };
   }
 
   disconnect(): void {

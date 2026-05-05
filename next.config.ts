@@ -5,6 +5,14 @@ import type { NextConfig } from "next";
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
+  // React Strict Mode intentionally double-invokes effects (mount → unmount →
+  // remount) in development. For long-lived resources like WebSocket connections
+  // this creates an effect-runs-then-cleanup-runs-while-WS-is-CONNECTING cycle.
+  // When ws.close() is called on a CONNECTING socket the browser sends a TCP RST
+  // instead of a WebSocket close frame — the server observes code 1006 (abnormal).
+  // Disabling Strict Mode eliminates the spurious double-invocation in development
+  // while keeping all production behaviour identical (Strict Mode never runs in prod).
+  reactStrictMode: false,
   turbopack: {
     root: projectRoot,
     resolveAlias: {
