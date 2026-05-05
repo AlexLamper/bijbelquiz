@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { BookOpenCheck, CheckCircle2, Loader2, Palette, Save, Settings2, UserPen } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { useSession } from 'next-auth/react';
 import { toast } from 'sonner';
 
 import { Badge } from '@/components/ui/badge';
@@ -45,6 +46,7 @@ type SaveState = 'idle' | 'saving' | 'saved' | 'error';
 
 export default function SettingsClient({ initialData }: SettingsClientProps) {
   const { setTheme } = useTheme();
+  const { update } = useSession();
 
   const [displayName, setDisplayName] = useState(initialData.profile.name);
   const [nameDraft, setNameDraft] = useState(initialData.profile.name);
@@ -250,6 +252,7 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
       const nextName = payload?.user?.name || trimmedName;
       setDisplayName(nextName);
       setNameDraft(nextName);
+      await update({ name: nextName });
       toast.success('Naam bijgewerkt');
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Naam kon niet worden opgeslagen';

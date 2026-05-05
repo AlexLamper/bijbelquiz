@@ -58,15 +58,26 @@ export async function POST(req: NextRequest) {
     const now = new Date();
     const previous = user.lastPlayedAt ? new Date(user.lastPlayedAt) : null;
     let nextStreak = user.streak || 0;
-    
-    if (previous) {
-      const startOfToday = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-      const startOfPrevious = Date.UTC(previous.getUTCFullYear(), previous.getUTCMonth(), previous.getUTCDate());
-      const diffDays = Math.floor((startOfToday - startOfPrevious) / (1000 * 60 * 60 * 24));
 
-      if (diffDays === 1) {
+    // Compare calendar days in Amsterdam timezone (UTC+1/+2) so day boundaries
+    // are correct for Dutch users rather than flipping at midnight UTC.
+    const toLocalDayStart = (date: Date): number => {
+      const localString = date.toLocaleDateString('nl-NL', { timeZone: 'Europe/Amsterdam' });
+      const [day, month, year] = localString.split('-').map(Number);
+      return Date.UTC(year, month - 1, day);
+    };
+
+    if (previous) {
+      const startOfToday = toLocalDayStart(now);
+      const startOfPrevious = toLocalDayStart(previous);
+      const diffDays = Math.round((startOfToday - startOfPrevious) / (1000 * 60 * 60 * 24));
+
+      if (diffDays === 0) {
+        // Same local calendar day — keep existing streak unchanged.
+      } else if (diffDays === 1) {
         nextStreak += 1;
-      } else if (diffDays > 1) {
+      } else {
+        // Gap of 2+ days resets the streak.
         nextStreak = 1;
       }
     } else {

@@ -147,6 +147,21 @@ async function handleUpgrade(
     roomCode: request.multiplayerRoomCode,
   });
 
+  // Disable any inherited HTTP request timeouts and turn on TCP keepalive on
+  // the underlying socket. Without this, an idle Node http server timeout can
+  // destroy a perfectly healthy upgraded WebSocket and the browser observes a
+  // 1006 abnormal close. We also enable nagle-off for snappier message
+  // delivery once the connection is established.
+  try {
+    socket.setTimeout(0);
+    socket.setNoDelay(true);
+    socket.setKeepAlive(true, 30_000);
+  } catch (error) {
+    warnLog('Failed to configure underlying TCP socket for websocket upgrade', {
+      reason: error instanceof Error ? error.message : 'unknown_error',
+    });
+  }
+
   wsServer.handleUpgrade(request, socket, head, (wsSocket) => {
     wsServer.emit('connection', wsSocket, request);
   });

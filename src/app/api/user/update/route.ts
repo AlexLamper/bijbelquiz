@@ -36,7 +36,7 @@ export async function PUT(req: NextRequest) {
         if (now < nextAllowedDate) {
           const remainingDays = Math.ceil((nextAllowedDate.getTime() - now.getTime()) / (1000 * 3600 * 24));
           return NextResponse.json(
-            { error: 'Je kunt je naam slechts één keer per 30 dagen wijzigen. Wacht nog ' + remainingDays + ' dagen.' },
+            { error: 'Je kunt je naam slechts één keer per maand wijzigen. Wacht nog ' + remainingDays + ' dagen.' },
             { status: 403 }
           );
         }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
@@ -98,6 +98,22 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
   const { data: session, status: sessionStatus } = useSession();
   const normalizedRoomCode = useMemo(() => normalizeRoomCode(roomCode), [roomCode]);
 
+  // Keep using the last known user ID during transient NextAuth "loading" states
+  // (e.g. background refetch) so the room controller does not tear down and
+  // recreate the websocket connection unnecessarily.
+  const [resolvedUserId, setResolvedUserId] = useState<string | null>(session?.user?.id ?? null);
+
+  useEffect(() => {
+    if (sessionStatus === 'unauthenticated') {
+      setResolvedUserId(null);
+      return;
+    }
+
+    if (session?.user?.id) {
+      setResolvedUserId(session.user.id);
+    }
+  }, [session?.user?.id, sessionStatus]);
+
   const {
     loading,
     room,
@@ -120,11 +136,46 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
     clearError,
   } = useMultiplayerRoomController({
     roomCode: normalizedRoomCode,
-    userId: session?.user?.id ?? null,
+    userId: resolvedUserId,
     autoJoin: true,
   });
 
   const [copied, setCopied] = useState(false);
+
+  // Live countdown: tick every second from the server-supplied remainingSeconds.
+  const [localSeconds, setLocalSeconds] = useState<number | null>(null);
+  const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => {
+    const remaining = room?.currentQuestion?.remainingSeconds ?? null;
+    setLocalSeconds(remaining);
+
+    if (countdownRef.current) {
+      clearInterval(countdownRef.current);
+      countdownRef.current = null;
+    }
+
+    if (remaining !== null && remaining > 0 && room?.status === 'in_progress') {
+      countdownRef.current = setInterval(() => {
+        setLocalSeconds((prev) => {
+          if (prev === null || prev <= 1) {
+            clearInterval(countdownRef.current!);
+            countdownRef.current = null;
+            return 0;
+          }
+
+          return prev - 1;
+        });
+      }, 1000);
+    }
+
+    return () => {
+      if (countdownRef.current) {
+        clearInterval(countdownRef.current);
+        countdownRef.current = null;
+      }
+    };
+  }, [room?.currentQuestion?.id, room?.currentQuestion?.remainingSeconds, room?.status]);
 
   useEffect(() => {
     if (!room) {
@@ -305,15 +356,33 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
                 <div className="space-y-2 rounded-lg border p-4">
                   <p className="text-sm font-medium">Startvoorwaarden</p>
-                  <p className="text-sm text-muted-foreground">
-                    Minimaal 2 spelers nodig. Alleen de host kan starten.
-                  </p>
+                  {room.players.length < 2 ? (
+                    <p className="text-sm text-amber-600 dark:text-amber-400">
+                      Nog {2 - room.players.length} {2 - room.players.length === 1 ? 'speler' : 'spelers'} nodig voor de game kan starten.
+                    </p>
+                  ) : (
+                    <p className="text-sm text-emerald-600 dark:text-emerald-400">
+                      Voldoende spelers aanwezig. {isHost ? 'Je kunt de game starten.' : 'Wachten op de host.'}
+                    </p>
+                  )}
+                  {connectionStatus !== 'connected' && (
+                    <p className="text-xs text-muted-foreground">
+                      Spelers worden bijgewerkt via polling — real-time verbinding wordt hersteld.
+                    </p>
+                  )}
                 </div>
 
                 {isHost ? (
-                  <Button onClick={() => void start()} disabled={!canStart || isStarting}>
-                    {isStarting ? 'Game wordt gestart...' : 'Start game'}
-                  </Button>
+                  <>
+                    <Button onClick={() => void start()} disabled={!canStart || isStarting}>
+                      {isStarting ? 'Game wordt gestart...' : 'Start game'}
+                    </Button>
+                    {!canStart && !isStarting && room.players.length >= 2 && (
+                      <p className="text-xs text-muted-foreground">
+                        Even wachten — spelerlijst wordt bijgewerkt...
+                      </p>
+                    )}
+                  </>
                 ) : (
                   <p className="text-sm text-muted-foreground">
                     Wachten op de host om de game te starten...
@@ -345,8 +414,8 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                         {room.currentQuestion.bibleReference}
                       </p>
                       <p className="text-base font-medium leading-relaxed">{room.currentQuestion.text}</p>
-                      <p className="mt-3 text-sm text-muted-foreground">
-                        Tijd over: {room.currentQuestion.remainingSeconds}s
+                      <p className={`mt-3 text-sm font-medium ${(localSeconds ?? 0) <= 5 ? 'text-destructive' : 'text-muted-foreground'}`}>
+                        Tijd over: {localSeconds ?? room.currentQuestion.remainingSeconds}s
                       </p>
                     </div>
 
@@ -454,23 +523,39 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
         </div>
 
         {process.env.NODE_ENV !== 'production' && (
-          <Card className="mt-6">
-            <CardHeader>
-              <CardTitle>Samen spelen debug</CardTitle>
-              <CardDescription>
-                Live client debug voor websocket, reconnects en snapshot fallback.
-              </CardDescription>
+          <Card className="mt-6 border-amber-300/40 bg-amber-50/30 dark:border-amber-700/30 dark:bg-amber-950/10">
+            <CardHeader className="pb-2">
+              <div className="flex items-center justify-between">
+                <div>
+                  <CardTitle className="text-sm">Debug — Samen spelen</CardTitle>
+                  <CardDescription className="text-xs">
+                    WS: <span className={connectionStatus === 'connected' ? 'text-emerald-600' : 'text-amber-600'}>{connectionStatus}</span>
+                    {' · '}Room: {room?.status ?? 'unknown'}
+                    {' · '}Spelers: {room?.players.length ?? 0}
+                  </CardDescription>
+                </div>
+                <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => void refreshSnapshot()}>
+                  Snapshot ophalen
+                </Button>
+              </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-0">
               {debugEvents.length === 0 ? (
                 <p className="text-xs text-muted-foreground">Nog geen debug events.</p>
               ) : (
-                <div className="max-h-64 overflow-y-auto rounded-md border bg-muted/20 p-3 font-mono text-[11px] leading-relaxed">
-                  {debugEvents.map((entry, index) => (
-                    <p key={`${index}-${entry}`} className="break-all">
-                      {entry}
-                    </p>
-                  ))}
+                <div className="max-h-56 overflow-y-auto rounded-md border bg-background p-3 font-mono text-[10px] leading-relaxed">
+                  {debugEvents.map((entry, index) => {
+                    const isError = entry.includes('[error]');
+                    const isWarn = entry.includes('[warn]');
+                    return (
+                      <p
+                        key={`${index}-${entry.slice(0, 30)}`}
+                        className={`break-all ${isError ? 'text-red-600 dark:text-red-400' : isWarn ? 'text-amber-600 dark:text-amber-400' : 'text-muted-foreground'}`}
+                      >
+                        {entry}
+                      </p>
+                    );
+                  })}
                 </div>
               )}
             </CardContent>

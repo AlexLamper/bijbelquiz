@@ -29,7 +29,7 @@ interface MultiplayerEntryClientProps {
   hasUsedFreeRoomCreation: boolean;
 }
 
-const PLAYER_OPTIONS = [2, 4, 6, 8, 10, 12];
+const PLAYER_OPTIONS = [2, 3, 4, 6, 8, 10, 12];
 
 function normalizeRoomCode(code: string): string {
   return code.trim().toUpperCase();
@@ -45,7 +45,7 @@ export default function MultiplayerEntryClient({
   const canCreateRoom = isPremiumUser || !hasUsedFreeRoomCreation;
 
   const [selectedQuizId, setSelectedQuizId] = useState(quizzes[0]?.id ?? '');
-  const [maxPlayers, setMaxPlayers] = useState<string>('8');
+  const [maxPlayers, setMaxPlayers] = useState<string>('4');
   const [joinCode, setJoinCode] = useState('');
 
   const [isCreating, setIsCreating] = useState(false);

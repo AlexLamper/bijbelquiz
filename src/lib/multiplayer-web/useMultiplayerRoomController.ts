@@ -231,6 +231,17 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
   }, [applyRoom, debug, normalizedRoomCode, state.token]);
 
   useEffect(() => {
+    // Wait until the session has resolved and we have a real user ID.
+    // When NextAuth transitions from loading → authenticated, userId goes from
+    // null → the real string. Without this guard that transition would cause
+    // the effect to re-run, cleaning up the just-connected socket (code 1006)
+    // and creating a reconnect loop.
+    if (!options.userId) {
+      debug('warn', 'Skipping room controller init — userId is null (session still loading or unauthenticated). Will retry when userId is available.');
+      setState((current) => ({ ...current, loading: false }));
+      return;
+    }
+
     let cancelled = false;
 
     debug('info', 'Initializing room controller', {
@@ -296,7 +307,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
         const realtime = new MultiplayerRealtimeClient({
           token,
           roomCode: normalizedRoomCode,
-          snapshotIntervalMs: 1500,
+          // snapshotFallbackIntervalMs defaults to 5000 — only polls when WS is offline.
           getSnapshot: () =>
             getRoomSnapshot({
               token,
@@ -311,10 +322,11 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
               status,
             });
 
-            setState((current) => ({
-              ...current,
-              connectionStatus: status,
-            }));
+            setState((current) =>
+              current.connectionStatus === status
+                ? current
+                : { ...current, connectionStatus: status },
+            );
           },
           onDebug: (entry) => {
             pushDebugEvent(entry);
@@ -336,6 +348,15 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
             }));
           },
         });
+
+        // If the effect was cancelled between the last guard and now, do NOT
+        // attach this realtime client to realtimeRef — the cleanup would then
+        // miss it and leak. Just dispose immediately.
+        if (cancelled) {
+          debug('warn', 'Effect cancelled after realtime construction; disposing without connect');
+          realtime.disconnect();
+          return;
+        }
 
         realtimeRef.current?.disconnect();
         realtimeRef.current = realtime;
@@ -362,8 +383,13 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
 
     return () => {
       cancelled = true;
-      debug('info', 'Disposing room controller effect', {
+      const hadRealtime = realtimeRef.current !== null;
+      debug('warn', 'Room controller effect cleanup running', {
         roomCode: normalizedRoomCode,
+        userId: options.userId,
+        hadRealtimeClient: hadRealtime,
+        // If hadRealtimeClient is true the WS will be closed here (manuallyClosed=true → code 1000).
+        // If false the WS was never created — cleanup is from the null-userId guard re-run.
       });
       realtimeRef.current?.disconnect();
       realtimeRef.current = null;

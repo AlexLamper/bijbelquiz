@@ -26,10 +26,11 @@ export async function GET(req: Request) {
   try {
     await connectDB();
     
-    // Fetch active quizzes
-    // We populate the category if it references the ObjectId under field 'category'
-    // Depending on your schema, it might just lean() all fields
-    const quizzes = await Quiz.find({ isActive: { $ne: false } }).lean();
+    // Only return quizzes that are explicitly approved and active.
+    const quizzes = await Quiz.find({
+      status: 'approved',
+      isActive: { $ne: false },
+    }).lean();
     
     // Format the response for Flutter models
     const formattedQuizzes = quizzes.map((quiz: any) => ({

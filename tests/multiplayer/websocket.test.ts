@@ -255,6 +255,160 @@ async function waitForEvent(
   throw new Error(`Timed out waiting for event ${expectedType}`);
 }
 
+async function waitFor(predicate: () => boolean, timeoutMs = 1500): Promise<void> {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() <= deadline) {
+    if (predicate()) {
+      return;
+    }
+    await new Promise<void>((resolve) => setTimeout(resolve, 10));
+  }
+  throw new Error('waitFor predicate not satisfied within timeout');
+}
+
+test('websocket: server-side auto-join + client join_room should produce a single room_joined', async () => {
+  const context = await setupWsContext();
+
+  try {
+    await context.service.createRoom({
+      userId: 'host',
+      quizId: 'quiz-1',
+      maxPlayers: 4,
+    });
+
+    const hostToken = issueToken('host');
+    const hostClient = await connectClient(
+      `ws://127.0.0.1:${context.port}/api/mobile/multiplayer/ws?roomCode=ABC123&token=${encodeURIComponent(hostToken)}`,
+    );
+
+    try {
+      // Wait for the auto-join's room_joined.
+      await waitForEvent(hostClient.events, 'room_joined');
+
+      // Client emulation: send an explicit join_room (which the realtime client
+      // does on socket open) — server must dedupe and NOT produce a second
+      // room_joined event for the same socket/room.
+      hostClient.socket.send(
+        JSON.stringify({ type: 'join_room', payload: { roomCode: 'ABC123' } }),
+      );
+
+      // Give the server time to process the duplicate.
+      await new Promise<void>((resolve) => setTimeout(resolve, 200));
+
+      const extraJoins = hostClient.events.filter((event) => event.type === 'room_joined');
+      assert.equal(extraJoins.length, 0, 'duplicate join_room must not produce a second room_joined');
+    } finally {
+      hostClient.socket.close();
+    }
+  } finally {
+    await closeServer(context.server, context.wsServer);
+  }
+});
+
+test('websocket: idle connection survives without spontaneous close', async () => {
+  const context = await setupWsContext();
+
+  try {
+    await context.service.createRoom({
+      userId: 'host',
+      quizId: 'quiz-1',
+      maxPlayers: 4,
+    });
+
+    const hostToken = issueToken('host');
+    const hostClient = await connectClient(
+      `ws://127.0.0.1:${context.port}/api/mobile/multiplayer/ws?roomCode=ABC123&token=${encodeURIComponent(hostToken)}`,
+    );
+
+    let closeEvent: { code: number; reason: string } | null = null;
+    hostClient.socket.on('close', (code, reason) => {
+      closeEvent = { code, reason: reason.toString('utf8') };
+    });
+
+    try {
+      await waitForEvent(hostClient.events, 'room_joined');
+
+      // Wait long enough that any premature server timeout would have fired.
+      await new Promise<void>((resolve) => setTimeout(resolve, 750));
+
+      assert.equal(hostClient.socket.readyState, WebSocket.OPEN, 'socket should remain open while idle');
+      assert.equal(closeEvent, null, `expected no close event, got ${JSON.stringify(closeEvent)}`);
+    } finally {
+      hostClient.socket.close();
+    }
+  } finally {
+    await closeServer(context.server, context.wsServer);
+  }
+});
+
+test('websocket: rapid reconnect from same user works without errors', async () => {
+  const context = await setupWsContext();
+
+  try {
+    await context.service.createRoom({
+      userId: 'host',
+      quizId: 'quiz-1',
+      maxPlayers: 4,
+    });
+
+    const hostToken = issueToken('host');
+    const url = `ws://127.0.0.1:${context.port}/api/mobile/multiplayer/ws?roomCode=ABC123&token=${encodeURIComponent(hostToken)}`;
+
+    for (let attempt = 0; attempt < 4; attempt++) {
+      const client = await connectClient(url);
+      try {
+        const payload = await waitForEvent(client.events, 'room_joined');
+        assert.ok(payload.room, `attempt ${attempt}: room_joined payload should include room`);
+      } finally {
+        client.socket.close();
+        // Wait for the server to finish handling close before next attempt.
+        await waitFor(() => client.socket.readyState === WebSocket.CLOSED, 1500);
+      }
+    }
+  } finally {
+    await closeServer(context.server, context.wsServer);
+  }
+});
+
+test('websocket: abrupt client terminate triggers single player_left broadcast', async () => {
+  const context = await setupWsContext();
+
+  try {
+    await context.service.createRoom({
+      userId: 'host',
+      quizId: 'quiz-1',
+      maxPlayers: 4,
+    });
+    await context.service.joinRoom({ userId: 'p2', roomCode: 'ABC123' });
+
+    const hostToken = issueToken('host');
+    const p2Token = issueToken('p2');
+    const baseUrl = `ws://127.0.0.1:${context.port}/api/mobile/multiplayer/ws?roomCode=ABC123`;
+
+    const hostClient = await connectClient(`${baseUrl}&token=${encodeURIComponent(hostToken)}`);
+    const p2Client = await connectClient(`${baseUrl}&token=${encodeURIComponent(p2Token)}`);
+
+    try {
+      await waitForEvent(hostClient.events, 'room_joined');
+      await waitForEvent(p2Client.events, 'room_joined');
+
+      // Drain anything produced by the join handshake.
+      hostClient.events.length = 0;
+
+      // Simulate abrupt browser close by terminating the underlying socket.
+      p2Client.socket.terminate();
+
+      const playerLeftPayload = await waitForEvent(hostClient.events, 'player_left', 2000);
+      assert.equal(playerLeftPayload.roomCode, 'ABC123');
+    } finally {
+      hostClient.socket.close();
+      try { p2Client.socket.close(); } catch { /* already terminated */ }
+    }
+  } finally {
+    await closeServer(context.server, context.wsServer);
+  }
+});
+
 test('websocket events contract: room_joined, player_joined, progress_updated, game_finished', async () => {
   const context = await setupWsContext();
 

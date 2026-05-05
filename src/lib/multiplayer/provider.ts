@@ -152,7 +152,7 @@ export class MongoMultiplayerDataProvider implements MultiplayerDataProvider {
   async getQuizSnapshot(quizId: string): Promise<ProviderQuizSnapshot | null> {
     await connectDB();
 
-    const quiz = await Quiz.findById(quizId).lean();
+    const quiz = await Quiz.findOne({ _id: quizId, status: 'approved' }).lean();
     if (!quiz) {
       return null;
     }

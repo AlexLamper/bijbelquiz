@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { Medal, UserCircle2 } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/card';
@@ -20,7 +21,10 @@ interface LeaderboardUser {
 interface LeaderboardClientProps {
   users: LeaderboardUser[];
   currentUserId?: string;
+  initialPeriod: 'weekly' | 'monthly' | 'all-time';
 }
+
+type LeaderboardPeriod = 'weekly' | 'monthly' | 'all-time';
 
 function rankBadgeTone(index: number): string {
   if (index === 0) return 'border-[#d6bf7a] bg-[#f5e7bf] text-[#6e4f13] dark:border-[#866726] dark:bg-[#4a3a1a] dark:text-[#f3d88f]';
@@ -37,9 +41,48 @@ function formatStreak(streak: number): string {
   return streak === 1 ? '1 dag' : `${streak} dagen`;
 }
 
-export default function LeaderboardClient({ users, currentUserId }: LeaderboardClientProps) {
-  const currentUserRank = users.findIndex((user) => user._id === currentUserId) + 1;
-  const topXp = users[0]?.xp || 0;
+const PERIOD_LABELS: Record<LeaderboardPeriod, string> = {
+  weekly: 'Wekelijks',
+  monthly: 'Maandelijks',
+  'all-time': 'All-time',
+};
+
+export default function LeaderboardClient({ users, currentUserId, initialPeriod }: LeaderboardClientProps) {
+  const [selectedPeriod, setSelectedPeriod] = useState<LeaderboardPeriod>(initialPeriod);
+  const [leaderboardUsers, setLeaderboardUsers] = useState<LeaderboardUser[]>(users);
+  const [isLoadingPeriod, setIsLoadingPeriod] = useState(false);
+
+  useEffect(() => {
+    setSelectedPeriod(initialPeriod);
+    setLeaderboardUsers(users);
+  }, [initialPeriod, users]);
+
+  const currentUserRank = leaderboardUsers.findIndex((user) => user._id === currentUserId) + 1;
+  const topXp = leaderboardUsers[0]?.xp || 0;
+
+  const loadPeriod = async (period: LeaderboardPeriod) => {
+    if (period === selectedPeriod) {
+      return;
+    }
+
+    setSelectedPeriod(period);
+    setIsLoadingPeriod(true);
+
+    try {
+      const response = await fetch(`/api/leaderboard?period=${period}`);
+      if (!response.ok) {
+        throw new Error('Kon ranglijst niet laden');
+      }
+
+      const payload = await response.json();
+      setLeaderboardUsers(payload?.leaderboard || []);
+    } catch (error) {
+      console.error('[LEADERBOARD_PERIOD_LOAD]', error);
+      // Keep current list if request fails.
+    } finally {
+      setIsLoadingPeriod(false);
+    }
+  };
 
   return (
     <div className="-mt-24 min-h-screen pt-24 pb-12">
@@ -48,7 +91,7 @@ export default function LeaderboardClient({ users, currentUserId }: LeaderboardC
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-[#9db5dc]">Ranglijst</p>
             <h1 className="mt-1 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Top spelers</h1>
-            <p className="mt-2 text-sm text-muted-foreground">Eenvoudig overzicht op basis van XP.</p>
+            <p className="mt-2 text-sm text-muted-foreground">Verdien XP door quizzen te spelen en stijg in de ranglijst.</p>
           </div>
 
           <div className="flex flex-wrap gap-3">
@@ -63,11 +106,34 @@ export default function LeaderboardClient({ users, currentUserId }: LeaderboardC
       </section>
 
       <section className="mx-auto max-w-340 px-4 pt-6 sm:px-6 lg:px-8">
+        <div className="mb-4 flex flex-wrap items-center gap-2">
+          {(Object.keys(PERIOD_LABELS) as LeaderboardPeriod[]).map((period) => {
+            const isActive = selectedPeriod === period;
+
+            return (
+              <Button
+                key={period}
+                type="button"
+                variant={isActive ? 'default' : 'outline'}
+                onClick={() => loadPeriod(period)}
+                disabled={isLoadingPeriod}
+                className={
+                  isActive
+                    ? 'h-9 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]'
+                    : 'h-9 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800'
+                }
+              >
+                {PERIOD_LABELS[period]}
+              </Button>
+            );
+          })}
+        </div>
+
         <div className="mb-5 grid gap-3 sm:grid-cols-3">
           <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-3.5">
               <p className="text-xs uppercase tracking-wider text-muted-foreground">Deelnemers</p>
-              <p className="mt-1 text-xl font-semibold text-[#24395f] dark:text-zinc-100">{users.length}</p>
+              <p className="mt-1 text-xl font-semibold text-[#24395f] dark:text-zinc-100">{leaderboardUsers.length}</p>
             </CardContent>
           </Card>
           <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
@@ -85,17 +151,21 @@ export default function LeaderboardClient({ users, currentUserId }: LeaderboardC
         </div>
 
         {currentUserRank > 0 && (
-          <Card className="mb-5 border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+          <Card className="mb-5 border-[#b8cff0] bg-[#edf4ff] py-0 shadow-sm dark:border-[#2d4a7a] dark:bg-[#192d48]">
             <CardContent className="flex flex-wrap items-center justify-between gap-3 p-4">
-              <p className="text-sm text-[#30466e] dark:text-zinc-200">Je staat momenteel op plek <span className="font-semibold">#{currentUserRank}</span>.</p>
-              <Badge variant="secondary" className="bg-[#edf2fa] text-[#355384] dark:bg-zinc-800 dark:text-zinc-200">
+              <p className="text-sm font-medium text-[#1e3a6e] dark:text-[#c5d9f5]">
+                Je staat momenteel op plek{' '}
+                <span className="font-bold text-[#4f6faa] dark:text-[#6f8ed4]">#{currentUserRank}</span>{' '}
+                in de ranglijst.
+              </p>
+              <Badge className="bg-[#6f8ed4] text-white dark:bg-[#6f8ed4] dark:text-white">
                 Blijf spelen om te stijgen
               </Badge>
             </CardContent>
           </Card>
         )}
 
-        {users.length === 0 ? (
+        {leaderboardUsers.length === 0 ? (
           <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-8 text-center">
               <h2 className="text-xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Nog geen ranglijstgegevens</h2>
@@ -116,19 +186,19 @@ export default function LeaderboardClient({ users, currentUserId }: LeaderboardC
               </div>
 
               <ul>
-                {users.map((user, index) => {
+                {leaderboardUsers.map((user, index) => {
                   const isCurrentUser = user._id === currentUserId;
                   const isTopThree = index < 3;
 
                   return (
                     <li
                       key={user._id}
-                      className={`grid gap-2 border-b border-[#ecf1f8] p-4 text-sm md:grid-cols-[90px_minmax(0,1fr)_130px_130px] md:items-center ${
+                      className={`grid gap-2 border-b text-sm md:grid-cols-[90px_minmax(0,1fr)_130px_130px] md:items-center ${
                         isCurrentUser
-                          ? 'bg-[#f7faff] dark:bg-zinc-950/20'
+                          ? 'border-l-4 border-l-[#6f8ed4] border-b-[#dce8fb] bg-[#edf4ff] p-4 pl-3 dark:border-l-[#6f8ed4] dark:border-b-zinc-700 dark:bg-[#1a2e4a]'
                           : isTopThree
-                            ? 'bg-[#fbfdff] dark:bg-zinc-900'
-                            : 'bg-white dark:bg-zinc-900/80'
+                            ? 'border-b-[#ecf1f8] bg-[#fbfdff] p-4 dark:border-b-zinc-700 dark:bg-zinc-900'
+                            : 'border-b-[#ecf1f8] bg-white p-4 dark:border-b-zinc-700 dark:bg-zinc-900/80'
                       }`}
                     >
                       <div className="flex items-center gap-2">
@@ -145,7 +215,7 @@ export default function LeaderboardClient({ users, currentUserId }: LeaderboardC
                           <UserCircle2 className="h-4 w-4 text-[#607597] dark:text-zinc-300" />
                           <p className="truncate font-medium text-[#1f2f4b] dark:text-zinc-100">{getDisplayName(user)}</p>
                           {isCurrentUser && (
-                            <Badge variant="secondary" className="bg-[#edf2fa] text-[#355384] dark:bg-zinc-800 dark:text-zinc-200">
+                            <Badge className="bg-[#6f8ed4] text-white dark:bg-[#6f8ed4] dark:text-white">
                               Jij
                             </Badge>
                           )}

@@ -29,8 +29,8 @@ export default async function AdminDashboard() {
   return (
     <div className="-mt-24 min-h-screen pb-12 pt-24">
       <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
-        <Card className="relative overflow-hidden border-0 bg-transparent py-0 shadow-none">
-          <CardContent className="p-0">
+        <div className="relative overflow-hidden">
+          <div>
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_auto] xl:items-end">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-[#9db5dc]">Beheercentrum</p>
@@ -53,8 +53,8 @@ export default async function AdminDashboard() {
                 </Button>
               </div>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </section>
 
       <section className="mx-auto max-w-340 px-4 pt-6 sm:px-5 lg:px-4">

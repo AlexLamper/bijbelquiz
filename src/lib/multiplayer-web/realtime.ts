@@ -14,7 +14,10 @@ export interface MultiplayerRealtimeDebugEntry {
 interface MultiplayerRealtimeOptions {
   token: string;
   roomCode: string;
-  snapshotIntervalMs?: number;
+  /** How often (ms) to poll for a room snapshot while the WebSocket is down. Default 2000. */
+  snapshotFallbackIntervalMs?: number;
+  /** How often (ms) to send a client-side keepalive ping over the WebSocket. Default 20000. */
+  keepalivePingIntervalMs?: number;
   reconnectMinDelayMs?: number;
   reconnectMaxDelayMs?: number;
   getSnapshot: () => Promise<RoomSnapshot>;
@@ -61,17 +64,36 @@ function sanitizeSocketUrl(url: string): string {
   }
 }
 
+/**
+ * Tracks all per-socket state so that stale sockets cannot interfere with the
+ * currently active connection. Every socket created by `connect()` gets its own
+ * SocketSession; only the session that matches `this.activeSession` may mutate
+ * shared client state (status, reconnect, keepalive, etc.).
+ */
+interface SocketSession {
+  generation: number;
+  socket: WebSocket;
+  keepaliveTimer: ReturnType<typeof setInterval> | null;
+  joinSent: boolean;
+  openedAt: number | null;
+}
+
 export class MultiplayerRealtimeClient {
   private readonly options: MultiplayerRealtimeOptions;
-  private socket: WebSocket | null = null;
+  private activeSession: SocketSession | null = null;
+  private generationCounter = 0;
   private reconnectTimer: ReturnType<typeof setTimeout> | null = null;
   private snapshotTimer: ReturnType<typeof setInterval> | null = null;
   private reconnectAttempts = 0;
   private manuallyClosed = false;
+  private lastConnectionStatus: MultiplayerConnectionStatus = 'idle';
 
   constructor(options: MultiplayerRealtimeOptions) {
     this.options = {
-      snapshotIntervalMs: 1500,
+      // Poll every 2 s when WS is offline so lobby player count stays fresh and
+      // the host sees new joiners quickly enough to enable the start button.
+      snapshotFallbackIntervalMs: 2000,
+      keepalivePingIntervalMs: 20_000,
       reconnectMinDelayMs: 800,
       reconnectMaxDelayMs: 8000,
       ...options,
@@ -96,27 +118,103 @@ export class MultiplayerRealtimeClient {
     }
   }
 
+  private setStatus(status: MultiplayerConnectionStatus): void {
+    if (this.lastConnectionStatus === status) {
+      return;
+    }
+
+    this.lastConnectionStatus = status;
+    this.options.onConnectionStatus(status);
+  }
+
   private emitConnectionError(): void {
     this.options.onError(buildError(CONNECTION_ERROR_NAME, CONNECTION_ERROR_MESSAGE));
   }
 
-  connect(): void {
-    this.manuallyClosed = false;
-    this.options.onConnectionStatus(this.reconnectAttempts > 0 ? 'reconnecting' : 'connecting');
-    this.startSnapshotFallback();
+  /**
+   * Returns true when the supplied session is still the currently active one.
+   * Old sockets retain a reference to their original session via closure, so
+   * even after `connect()` swaps in a new session, their event handlers can
+   * see they are obsolete and bail out.
+   */
+  private isActive(session: SocketSession): boolean {
+    return this.activeSession !== null && this.activeSession.generation === session.generation;
+  }
 
-    if (this.socket && this.socket.readyState !== WebSocket.CLOSED) {
-      this.debug('warn', 'Closing stale websocket before opening a new connection', {
-        readyState: this.socket.readyState,
-      });
-      this.socket.close();
+  /**
+   * Detach a socket cleanly: clear all listeners, stop its keepalive, and close
+   * the underlying WebSocket if it is not already closed. This never triggers
+   * reconnect because we only call it from contexts that already decided what
+   * to do next (e.g. disconnect, replacement, or explicit teardown).
+   *
+   * IMPORTANT: we mark the session as no-longer-active *before* calling
+   * `ws.close()`, because some WebSocket implementations (and our test mock)
+   * fire the close event synchronously inside close(). Without this guard, the
+   * synchronous close handler would still see the session as active and
+   * schedule a reconnect for a socket we just deliberately retired.
+   */
+  private retireSession(session: SocketSession, reason: string): void {
+    if (this.activeSession === session) {
+      this.activeSession = null;
     }
 
+    if (session.keepaliveTimer) {
+      clearInterval(session.keepaliveTimer);
+      session.keepaliveTimer = null;
+    }
+
+    const ws = session.socket;
+    try {
+      ws.onopen = null;
+      ws.onmessage = null;
+      ws.onerror = null;
+      ws.onclose = null;
+    } catch {
+      // Some environments throw on null assignment; swallow.
+    }
+
+    if (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING) {
+      try {
+        ws.close(1000, reason);
+      } catch {
+        // ignore
+      }
+    }
+  }
+
+  connect(): void {
+    this.manuallyClosed = false;
+    this.setStatus(this.reconnectAttempts > 0 ? 'reconnecting' : 'connecting');
+
+    // Fallback HTTP polling only kicks in once we've already had at least one
+    // failed attempt. On the very first connect we let the WebSocket have a
+    // clean shot at coming up.
+    if (this.reconnectAttempts > 0) {
+      this.startSnapshotFallback();
+    }
+
+    // Retire any previous session before opening a fresh one. retireSession
+    // detaches listeners and marks it inactive so the obsolete socket can never
+    // trigger reconnect or mutate client state again.
+    if (this.activeSession) {
+      this.debug('warn', 'Retiring previous websocket before opening a new connection', {
+        readyState: this.activeSession.socket.readyState,
+        previousGeneration: this.activeSession.generation,
+      });
+      this.retireSession(this.activeSession, 'replaced');
+    }
+
+    // Also clear any pending reconnect timer; we are establishing a fresh
+    // connection right now.
+    this.clearReconnectTimer();
+
+    const generation = ++this.generationCounter;
     const socketUrl = getWebSocketUrl(this.options.token, this.options.roomCode);
     this.debug('info', 'Opening websocket connection', {
       url: sanitizeSocketUrl(socketUrl),
       roomCode: this.options.roomCode,
       reconnectAttempts: this.reconnectAttempts,
+      generation,
     });
 
     let socket: WebSocket;
@@ -125,52 +223,117 @@ export class MultiplayerRealtimeClient {
     } catch (error) {
       this.debug('error', 'Websocket constructor failed', {
         reason: error instanceof Error ? error.message : 'unknown_error',
+        generation,
       });
       this.emitConnectionError();
+      this.startSnapshotFallback();
       this.scheduleReconnect();
       return;
     }
 
-    this.socket = socket;
+    const session: SocketSession = {
+      generation,
+      socket,
+      keepaliveTimer: null,
+      joinSent: false,
+      openedAt: null,
+    };
+    this.activeSession = session;
 
     socket.addEventListener('open', () => {
+      if (!this.isActive(session)) {
+        // We were replaced or torn down during the handshake. Ignore.
+        this.debug('warn', 'Discarding open event from stale socket', {
+          generation: session.generation,
+        });
+        return;
+      }
+
+      session.openedAt = Date.now();
       this.reconnectAttempts = 0;
       this.debug('info', 'Websocket connection opened', {
         roomCode: this.options.roomCode,
+        generation: session.generation,
       });
-      this.options.onConnectionStatus('connected');
 
-      this.send({
-        type: 'join_room',
-        payload: {
-          roomCode: this.options.roomCode,
-        },
-      });
+      this.stopSnapshotFallback();
+      this.setStatus('connected');
+      this.startKeepalivePing(session);
+
+      if (!session.joinSent) {
+        session.joinSent = true;
+        this.sendOnSession(session, {
+          type: 'join_room',
+          payload: {
+            roomCode: this.options.roomCode,
+          },
+        });
+      }
     });
 
     socket.addEventListener('message', (message) => {
+      if (!this.isActive(session)) {
+        return;
+      }
+
       void this.handleMessage(message.data);
     });
 
     socket.addEventListener('error', () => {
-      this.debug('warn', 'Websocket error event received');
+      if (!this.isActive(session)) {
+        return;
+      }
+
+      this.debug('warn', 'Websocket error event received', {
+        generation: session.generation,
+      });
       this.emitConnectionError();
+      // The 'close' event fires immediately after; reconnect handling lives there.
     });
 
     socket.addEventListener('close', (event) => {
+      // Clean up this session's resources unconditionally — they are tied to
+      // this specific socket only.
+      if (session.keepaliveTimer) {
+        clearInterval(session.keepaliveTimer);
+        session.keepaliveTimer = null;
+      }
+
+      const closeType =
+        event.code === 1000 ? 'clean' :
+        event.code === 1001 ? 'going-away' :
+        event.code === 1006 ? 'abnormal-no-close-frame' :
+        'abnormal';
+
+      const lifetimeMs = session.openedAt !== null ? Date.now() - session.openedAt : null;
+
       this.debug('warn', 'Websocket connection closed', {
         code: event.code,
+        closeType,
         reason: event.reason || null,
         wasClean: event.wasClean,
         manuallyClosed: this.manuallyClosed,
+        generation: session.generation,
+        lifetimeMs,
+        wasActive: this.isActive(session),
       });
 
+      // If this close belongs to a replaced/torn-down socket, do absolutely
+      // nothing else. The active session (if any) drives state.
+      if (!this.isActive(session)) {
+        return;
+      }
+
+      this.activeSession = null;
+
       if (this.manuallyClosed) {
-        this.options.onConnectionStatus('disconnected');
+        this.stopSnapshotFallback();
+        this.setStatus('disconnected');
         return;
       }
 
       this.emitConnectionError();
+      this.startSnapshotFallback();
       this.scheduleReconnect();
     });
   }
@@ -180,18 +343,28 @@ export class MultiplayerRealtimeClient {
     this.clearReconnectTimer();
     this.stopSnapshotFallback();
 
-    if (this.socket && this.socket.readyState === WebSocket.OPEN) {
-      this.send({
-        type: 'leave_room',
-        payload: {
-          roomCode: this.options.roomCode,
-        },
-      });
+    const session = this.activeSession;
+    if (session) {
+      // Best-effort leave_room only if the socket is open. We do this before
+      // retireSession so the leave frame can flush.
+      if (session.socket.readyState === WebSocket.OPEN) {
+        try {
+          session.socket.send(
+            JSON.stringify({
+              type: 'leave_room',
+              payload: { roomCode: this.options.roomCode },
+            } satisfies MultiplayerWsOutboundCommand),
+          );
+        } catch {
+          // ignore — we're shutting down anyway
+        }
+      }
+
+      // retireSession now also marks activeSession as null internally.
+      this.retireSession(session, 'disconnect');
     }
 
-    this.socket?.close();
-    this.socket = null;
-    this.options.onConnectionStatus('disconnected');
+    this.setStatus('disconnected');
     this.debug('info', 'Realtime client disconnected by caller');
   }
 
@@ -242,18 +415,38 @@ export class MultiplayerRealtimeClient {
     throw new Error('Unsupported websocket message data type');
   }
 
-  private send(command: MultiplayerWsOutboundCommand): void {
-    if (!this.socket || this.socket.readyState !== WebSocket.OPEN) {
+  /**
+   * Send a command on a specific session. We deliberately scope sends to a
+   * session rather than to `this.activeSession` so that messages queued during
+   * the open handler can never be sent on a newer session by accident.
+   */
+  private sendOnSession(session: SocketSession, command: MultiplayerWsOutboundCommand): void {
+    if (!this.isActive(session)) {
+      return;
+    }
+
+    if (session.socket.readyState !== WebSocket.OPEN) {
       this.debug('warn', 'Skipped websocket send because socket is not open', {
         commandType: command.type,
+        readyState: session.socket.readyState,
       });
       return;
     }
 
-    this.socket.send(JSON.stringify(command));
+    try {
+      session.socket.send(JSON.stringify(command));
+    } catch (error) {
+      this.debug('warn', 'Websocket send failed', {
+        commandType: command.type,
+        reason: error instanceof Error ? error.message : 'unknown_error',
+      });
+      return;
+    }
+
     this.debug('info', 'Sent websocket command', {
       commandType: command.type,
       roomCode: this.options.roomCode,
+      generation: session.generation,
     });
   }
 
@@ -262,7 +455,7 @@ export class MultiplayerRealtimeClient {
       return;
     }
 
-    this.options.onConnectionStatus('reconnecting');
+    this.setStatus('reconnecting');
     this.clearReconnectTimer();
 
     this.reconnectAttempts += 1;
@@ -279,15 +472,38 @@ export class MultiplayerRealtimeClient {
     });
 
     this.reconnectTimer = setTimeout(() => {
+      this.reconnectTimer = null;
       this.connect();
     }, delayMs);
+  }
+
+  private startKeepalivePing(session: SocketSession): void {
+    if (session.keepaliveTimer) {
+      clearInterval(session.keepaliveTimer);
+      session.keepaliveTimer = null;
+    }
+
+    const intervalMs = this.options.keepalivePingIntervalMs ?? 20_000;
+    session.keepaliveTimer = setInterval(() => {
+      if (!this.isActive(session)) {
+        return;
+      }
+
+      if (session.socket.readyState === WebSocket.OPEN) {
+        try {
+          session.socket.send(JSON.stringify({ type: 'ping' }));
+        } catch {
+          // ignore — close handler will drive reconnect if the socket is broken
+        }
+      }
+    }, intervalMs);
   }
 
   private startSnapshotFallback(): void {
     this.stopSnapshotFallback();
 
-    const intervalMs = this.options.snapshotIntervalMs ?? 6000;
-    this.debug('info', 'Starting snapshot fallback polling', {
+    const intervalMs = this.options.snapshotFallbackIntervalMs ?? 5000;
+    this.debug('info', 'Starting snapshot fallback polling (WS offline)', {
       intervalMs,
       roomCode: this.options.roomCode,
     });
@@ -323,7 +539,7 @@ export class MultiplayerRealtimeClient {
     if (this.snapshotTimer) {
       clearInterval(this.snapshotTimer);
       this.snapshotTimer = null;
-      this.debug('info', 'Stopped snapshot fallback polling');
+      this.debug('info', 'Stopped snapshot fallback polling (WS online)');
     }
   }
 

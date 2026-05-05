@@ -3,18 +3,8 @@ import { redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
 
 import { authOptions } from '@/lib/auth';
-import { connectDB, User } from '@/database';
+import { getLeaderboard, LeaderboardPeriod, parseLeaderboardPeriod } from '@/lib/leaderboard';
 import LeaderboardClient from './LeaderboardClient';
-
-interface LeaderboardEntry {
-  _id: string;
-  name: string;
-  email: string;
-  xp: number;
-  streak: number;
-  badges: string[];
-  createdAt: string;
-}
 
 export const metadata: Metadata = {
   title: 'Ranglijst - BijbelQuiz',
@@ -29,35 +19,26 @@ export const metadata: Metadata = {
   },
 };
 
-async function getLeaderboardData(): Promise<LeaderboardEntry[]> {
-  await connectDB();
-  const users = await User.find({ xp: { $gt: 0 } })
-    .sort({ xp: -1 })
-    .limit(100)
-    .select('name email xp streak badges createdAt')
-    .lean();
-
-  return users.map((user) => ({
-    _id: user._id.toString(),
-    email: user.email || '',
-    name: user.name || 'Speler',
-    xp: user.xp || 0,
-    streak: user.streak || 0,
-    badges: Array.isArray(user.badges) ? user.badges : [],
-    createdAt: user.createdAt ? new Date(user.createdAt).toISOString() : new Date(0).toISOString(),
-  }));
+interface LeaderboardPageProps {
+  searchParams?: Promise<{ period?: string }>;
 }
 
-export default async function LeaderboardPage() {
+export default async function LeaderboardPage({ searchParams }: LeaderboardPageProps) {
   const session = await getServerSession(authOptions);
 
   if (!session?.user) {
     redirect('/login?callbackUrl=/leaderboard');
   }
 
-  const leaderboard = await getLeaderboardData();
+  const resolvedSearchParams = searchParams ? await searchParams : undefined;
+  const period = parseLeaderboardPeriod(resolvedSearchParams?.period) as LeaderboardPeriod;
+  const leaderboard = await getLeaderboard(period, 100);
 
   return (
-    <LeaderboardClient users={leaderboard} currentUserId={session?.user?.id} />
+    <LeaderboardClient
+      users={leaderboard}
+      currentUserId={session?.user?.id}
+      initialPeriod={period}
+    />
   );
 }

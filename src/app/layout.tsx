@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "@/components/Providers";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import AppShell from "@/components/AppShell";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -19,41 +20,61 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bijbelquiz.com'),
   title: {
-    default: "BijbelQuiz - Test & Verdiep je Bijbelkennis Gratis Online",
-    template: "%s | BijbelQuiz"
+    default: "BijbelQuiz - Speel Gratis Bijbelquizzen",
+    template: "%s | BijbelQuiz",
   },
-  description: "De #1 plek voor gratis Bijbelquizzen online. Test je kennis van het Oude en Nieuwe Testament, leer spelenderwijs en ontdek diepgaande Bijbelstudies. Geschikt voor jong en oud.",
+  description: "Speel gratis Bijbelquizzen en test je kennis van het Oude & Nieuwe Testament. Interactieve vragen, direct feedback, ranglijst en premium studies. Voor jong en oud!",
   keywords: [
-    "bijbel quiz", "bijbel quiz online", "gratis bijbel quiz", "bijbel quizzen", "bijbelkennis", 
-    "bijbel trivia", "christelijke quiz", "bijbel vragen", "bijbelstudie", "online bijbelspel", 
-    "geloofsquiz", "oude testament quiz", "nieuwe testament quiz", "jezus quiz", "bijbelverhalen", 
-    "religieuze quiz", "zondagsschool spelletjes", "bijbelteksten leren", "christelijk onderwijs", 
+    "bijbel quiz", "bijbel quiz online", "gratis bijbel quiz", "bijbel quizzen", "bijbelkennis",
+    "bijbel trivia", "christelijke quiz", "bijbel vragen", "bijbelstudie", "online bijbelspel",
+    "geloofsquiz", "oude testament quiz", "nieuwe testament quiz", "jezus quiz", "bijbelverhalen",
+    "religieuze quiz", "zondagsschool spelletjes", "bijbelteksten leren", "christelijk onderwijs",
     "bijbel challenge", "dagelijkse bijbelvraag", "bijbelstudietools", "kennis van de schrift",
     "bijbelvragen en antwoorden", "moeilijke bijbelvragen", "makkelijke bijbelquiz", "kinderbijbel quiz",
     "bijbel kwis", "christelijke spellen", "bijbel onderwijs", "catechisatie vragen", "bijbelkring materiaal",
     "kennis van god", "profeten quiz", "apostelen quiz", "psalmen quiz", "evangelie quiz",
     "openbaring studie", "schepping quiz", "noach quiz", "mozes vragen", "david en goliath quiz",
-    "bijbelse feiten", "christelijk geloof test", "bijbel educatie", "spirtualiteit", "theologie quiz",
+    "bijbelse feiten", "christelijk geloof test", "bijbel educatie", "spiritualiteit", "theologie quiz",
     "gereformeerde quiz", "katholieke bijbelquiz", "protestantse bijbelquiz", "evangelische quiz",
-    "bijbel apps", "leer de bijbel", "bijbel cursus", "geloofsgroei", "bijbelverdieping"
+    "bijbel apps", "leer de bijbel", "bijbel cursus", "geloofsgroei", "bijbelverdieping",
   ],
   openGraph: {
     type: "website",
     locale: "nl_NL",
     url: "https://www.bijbelquiz.com",
-    title: "BijbelQuiz - De Beste Online Bijbeltest",
-    description: "Doe mee met duizenden anderen en test je kennis van Gods Woord. Gratis quizzen, directe feedback en premium studies.",
+    title: "BijbelQuiz - Speel Gratis Bijbelquizzen",
+    description: "Test je Bijbelkennis met gratis interactieve quizzen. Stijg in de ranglijst, verdien XP en leer meer over Gods Woord. Begin nu!",
     siteName: "BijbelQuiz",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "BijbelQuiz – Gratis Bijbelquizzen",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BijbelQuiz - Test je Bijbelkennis",
-    description: "Speel gratis bijbelquizzen en verrijk je geloofsleven.",
+    title: "BijbelQuiz - Speel Gratis Bijbelquizzen",
+    description: "Test je Bijbelkennis met gratis interactieve quizzen en stijg in de ranglijst!",
+    images: ["/opengraph-image"],
+  },
+  icons: {
+    icon: "/icon/Logo - dark.svg",
+    apple: "/icon/Logo - dark.svg",
   },
   robots: {
     index: true,
     follow: true,
-  }
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -84,6 +105,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${poppins.variable} font-sans antialiased bg-background text-foreground`}
       >
+        <GoogleAnalytics />
         <ThemeProvider
             attribute="class"
             defaultTheme="light"

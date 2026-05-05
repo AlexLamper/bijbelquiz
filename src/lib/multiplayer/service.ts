@@ -109,8 +109,8 @@ export class MultiplayerService {
       throw validationError('quizId is required');
     }
 
-    if (!Number.isInteger(input.maxPlayers) || input.maxPlayers < 2 || input.maxPlayers > 4) {
-      throw validationError('maxPlayers must be an integer between 2 and 4');
+    if (!Number.isInteger(input.maxPlayers) || input.maxPlayers < 2 || input.maxPlayers > 20) {
+      throw validationError('maxPlayers must be an integer between 2 and 20');
     }
 
     const [quiz, playerName] = await Promise.all([

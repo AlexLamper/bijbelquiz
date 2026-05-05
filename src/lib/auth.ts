@@ -93,6 +93,7 @@ export const authOptions: NextAuthOptions = {
           const dbUser = await User.findOne({ email: user.email });
           if (dbUser) {
             token.id = dbUser._id.toString();
+            token.name = dbUser.name || user.name || token.name;
             token.isPremium = dbUser.isPremium;
             token.xp = dbUser.xp;
             token.role = dbUser.role;
@@ -100,11 +101,16 @@ export const authOptions: NextAuthOptions = {
           }
         } else {
           token.id = user.id;
+          token.name = user.name || token.name;
           token.isPremium = user.isPremium;
           token.xp = user.xp;
           token.role = user.role;
           token.image = user.image || token.image;
         }
+      }
+
+      if (trigger === 'update' && session?.name) {
+        token.name = session.name;
       }
 
       // Bij een handmatige update (zoals na betaling) halen we de status opnieuw op uit de DB
@@ -114,6 +120,7 @@ export const authOptions: NextAuthOptions = {
           await connectDB();
           const dbUser = await User.findById(token.id);
           if (dbUser) {
+            token.name = dbUser.name || token.name;
             token.isPremium = dbUser.isPremium;
             token.xp = dbUser.xp;
             token.role = dbUser.role;
@@ -127,6 +134,7 @@ export const authOptions: NextAuthOptions = {
     async session({ session, token }) {
         if (token) {
             session.user.id = token.id;
+            session.user.name = typeof token.name === 'string' ? token.name : session.user.name;
             session.user.isPremium = token.isPremium;
           session.user.xp = token.xp ?? 0;
             session.user.role = token.role;

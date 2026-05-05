@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic';
 const createRoomSchema = z
   .object({
     quizId: z.string().trim().min(1, 'quizId is required'),
-    maxPlayers: z.number().int().min(2).max(4).optional().default(4),
+    maxPlayers: z.number().int().min(2).max(20).optional().default(4),
   })
   .strict();
 

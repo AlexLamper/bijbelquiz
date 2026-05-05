@@ -1,28 +1,29 @@
 import { NextResponse } from 'next/server';
-import { connectDB, User } from '@/database';
+import { getLeaderboard, parseLeaderboardPeriod } from '@/lib/leaderboard';
 
 export async function GET(req: Request) {
   try {
-    await connectDB();
-    
-    // Fetch top users by XP, limit to 100
-    const topUsers = await User.find({ xp: { $gt: 0 } })
-      .sort({ xp: -1 })
-      .limit(100)
-      .select('name xp image levelTitle isPremium')
-      .lean();
-    
-    // Format for the mobile app
-    const leaderboard = topUsers.map((user: any) => ({
-      id: user._id.toString(),
+    const { searchParams } = new URL(req.url);
+    const period = parseLeaderboardPeriod(searchParams.get('period'));
+    const rows = await getLeaderboard(period, 100);
+
+    const leaderboard = rows.map((user) => ({
+      id: user._id,
       name: user.name || 'Anonieme Speler',
       xp: user.xp || 0,
       image: user.image || null,
       levelTitle: user.levelTitle || 'Beginner',
-      isPremium: user.isPremium || false
+      isPremium: user.isPremium || false,
     }));
 
-    return NextResponse.json(leaderboard, { status: 200 });
+    return NextResponse.json(
+      {
+        period,
+        count: leaderboard.length,
+        leaderboard,
+      },
+      { status: 200 }
+    );
   } catch (error) {
     console.error('Mobile API - Leaderboard Error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });

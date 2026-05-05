@@ -41,7 +41,7 @@ export default async function MultiplayerPage() {
   const isPremiumUser = Boolean(rawUser?.isPremium || rawUser?.hasLifetimePremium || session.user.isPremium);
   const hasUsedFreeRoomCreation = Boolean(rawUser?.freeMultiplayerRoomCreated);
 
-  const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+  const statusFilter = { status: 'approved' };
   const rawQuizzes = await Quiz.find(statusFilter)
     .select('_id title questions questionCount isPremium')
     .sort({ isPremium: 1, sortOrder: 1, createdAt: -1 })

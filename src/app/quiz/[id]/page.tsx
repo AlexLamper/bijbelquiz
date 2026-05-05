@@ -33,6 +33,24 @@ function getExplanationPreview(explanation?: string): string | undefined {
   return `${trimmed}...`;
 }
 
+function getBibleReferencePreview(bibleReference?: string): string | undefined {
+  if (!bibleReference) return undefined;
+
+  const normalized = bibleReference.replace(/\s+/g, ' ').trim();
+  if (!normalized) return undefined;
+
+  const parts = normalized
+    .split(/[;,|]/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  if (parts.length > 1) {
+    return `${parts[0]} ...`;
+  }
+
+  return normalized;
+}
+
 export async function generateMetadata(
   { params }: PageProps,
   parent: ResolvingMetadata
@@ -116,13 +134,16 @@ export default async function QuizPage({ params }: PageProps) {
 
   if (!session.user.isPremium) {
     serializableQuiz.questions = serializableQuiz.questions.map(
-      (question: { explanation?: string; [key: string]: unknown }) => {
-        const preview = getExplanationPreview(question.explanation);
+      (question: { explanation?: string; bibleReference?: string; [key: string]: unknown }) => {
+        const explanationPreview = getExplanationPreview(question.explanation);
+        const bibleReferencePreview = getBibleReferencePreview(question.bibleReference);
 
         return {
           ...question,
-          explanationPreview: preview,
+          explanationPreview,
+          bibleReferencePreview,
           explanation: undefined,
+          bibleReference: undefined,
         };
       }
     );

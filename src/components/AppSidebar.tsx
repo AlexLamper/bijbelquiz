@@ -14,6 +14,7 @@ import {
   LifeBuoy,
   LogIn,
   Mail,
+  Settings,
   Shield,
   ShieldCheck,
   Trophy,
@@ -67,7 +68,7 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
   const accountItems: SidebarItem[] = session
     ? [
         { href: '/profile', label: 'Profiel', icon: User },
-        { href: '/instellingen', label: 'Instellingen', icon: ShieldCheck, activePrefixes: ['/instellingen'] },
+        { href: '/instellingen', label: 'Instellingen', icon: Settings, activePrefixes: ['/instellingen'] },
       ]
     : [
         { href: '/login', label: 'Inloggen', icon: LogIn },

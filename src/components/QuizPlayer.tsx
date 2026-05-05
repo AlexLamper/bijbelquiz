@@ -33,6 +33,7 @@ interface Question {
   explanation?: string;
   explanationPreview?: string;
   bibleReference?: string;
+  bibleReferencePreview?: string;
   _id: string;
 }
 
@@ -64,6 +65,22 @@ function getCategoryLabel(categoryId?: Quiz['categoryId']): string {
   return 'Algemeen';
 }
 
+function getQuestionTextSizeClass(textSize: 'normal' | 'large', questionText: string): string {
+  const length = questionText.trim().length;
+
+  if (textSize === 'large') {
+    if (length >= 320) return 'text-[1.1rem] md:text-[1.25rem] xl:text-[1.35rem]';
+    if (length >= 220) return 'text-[1.2rem] md:text-[1.4rem] xl:text-[1.55rem]';
+    if (length >= 140) return 'text-[1.35rem] md:text-[1.7rem] xl:text-[1.9rem]';
+    return 'text-[1.75rem] md:text-[2.35rem] xl:text-[2.6rem]';
+  }
+
+  if (length >= 320) return 'text-[1rem] md:text-[1.15rem] xl:text-[1.25rem]';
+  if (length >= 220) return 'text-[1.1rem] md:text-[1.3rem] xl:text-[1.45rem]';
+  if (length >= 140) return 'text-[1.2rem] md:text-[1.55rem] xl:text-[1.7rem]';
+  return 'text-[1.4rem] md:text-[1.9rem] xl:text-[2.2rem]';
+}
+
 export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const { data: session } = useSession();
   const router = useRouter();
@@ -89,6 +106,10 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const hasAnswered = selectedAnswer !== null;
   const difficultyLabel = getDifficultyLabel(quiz.difficulty);
   const categoryLabel = getCategoryLabel(quiz.categoryId);
+  const questionTextSizeClass = getQuestionTextSizeClass(textSize, currentQuestion.text);
+  const visibleBibleReference = isPremium
+    ? currentQuestion.bibleReference
+    : currentQuestion.bibleReferencePreview;
 
   const handleAnswer = (answerIndex: number) => {
     if (hasAnswered) return;
@@ -297,11 +318,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{quiz.title}</p>
             <h1
-              className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 text-[#1f2f4b] dark:text-zinc-100 ${
-                textSize === 'large'
-                  ? 'text-[1.75rem] md:text-[2.35rem] xl:text-[2.6rem]'
-                  : 'text-[1.4rem] md:text-[1.9rem] xl:text-[2.2rem]'
-              } font-semibold leading-[1.15]`}
+              className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 text-[#1f2f4b] dark:text-zinc-100 ${questionTextSizeClass} font-semibold leading-[1.15]`}
             >
               {currentQuestion.text}
             </h1>
@@ -343,9 +360,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   let itemClass = 'border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800';
                   if (hasAnswered) {
                     if (isCorrect) {
-                      itemClass = 'border-[#22c55e] bg-[#22c55e]/12 text-[#166534] dark:border-emerald-500 dark:bg-emerald-500/20 dark:text-emerald-100';
+                      itemClass = 'border-[#16a34a] bg-[#dcfce7] text-[#14532d] dark:border-[#34d399] dark:bg-[#064e3b] dark:text-[#bbf7d0]';
                     } else if (isSelected) {
-                      itemClass = 'border-[#ef4444] bg-[#ef4444]/12 text-[#991b1b] dark:border-rose-500 dark:bg-rose-500/20 dark:text-rose-100';
+                      itemClass = 'border-[#dc2626] bg-[#fee2e2] text-[#7f1d1d] dark:border-[#fb7185] dark:bg-[#5b1020] dark:text-[#fecdd3]';
                     } else {
                       itemClass = 'border-[#e5ebf4] bg-[#fafcff] text-[#90a0b9] dark:border-zinc-700 dark:bg-zinc-900/60 dark:text-zinc-400';
                     }
@@ -403,9 +420,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     </div>
                   )}
 
-                  {currentQuestion.bibleReference && (
+                  {visibleBibleReference && (
                     <Badge variant="secondary" className="mt-3 border border-[#d7e1ee] bg-white text-[#355384] dark:border-[#d7e1ee] dark:bg-white dark:text-[#355384]">
-                      Referentie: {currentQuestion.bibleReference}
+                      Referentie{!isPremium ? ' (preview)' : ''}: {visibleBibleReference}
                     </Badge>
                   )}
                 </div>

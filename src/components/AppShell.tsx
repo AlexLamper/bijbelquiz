@@ -24,6 +24,7 @@ const SIDEBAR_ROUTE_PREFIXES = [
   '/bug-report',
   '/privacy-policy',
   '/terms-of-service',
+  '/account-verwijderen',
   '/instellingen',
   '/settings',
 ];

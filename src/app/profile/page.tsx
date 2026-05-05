@@ -320,7 +320,7 @@ export default async function ProfilePage() {
                 </div>
               </div>
 
-              <div className="grid gap-3 sm:grid-cols-2">
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2">
                 {BADGES.map((badge) => {
                   const earned = (user.badges || []).includes(badge.id);
 
@@ -333,17 +333,17 @@ export default async function ProfilePage() {
                           : 'border-[#d7e1ee] bg-white py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/60'
                       }
                     >
-                      <CardContent className="p-4">
+                      <CardContent className="p-3 sm:p-4">
                         <div className="flex items-start gap-3">
-                          <div className="text-2xl">{badge.icon}</div>
+                          <div className="shrink-0 text-2xl">{badge.icon}</div>
                           <div className="min-w-0 flex-1">
-                            <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">{badge.name}</p>
-                            <p className="mt-1 text-xs text-muted-foreground">{badge.description}</p>
+                            <p className="break-words text-xs font-semibold text-[#24395f] sm:text-sm dark:text-zinc-100">{badge.name}</p>
+                            <p className="mt-1 break-words text-[11px] text-muted-foreground sm:text-xs">{badge.description}</p>
                           </div>
                           {earned ? (
                             <CheckCircle2 className="h-4 w-4 shrink-0 text-[#5f7fc7] dark:text-zinc-300" />
                           ) : (
-                            <span className="mt-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Nog niet</span>
+                            <span className="mt-0.5 shrink-0 whitespace-nowrap text-[9px] font-semibold uppercase tracking-wider text-muted-foreground sm:text-[10px]">Nog niet</span>
                           )}
                         </div>
                       </CardContent>

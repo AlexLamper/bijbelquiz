@@ -5,6 +5,24 @@ import { MultiplayerService } from './service';
 interface SocketContext {
   userId: string;
   roomCode: string | null;
+  /** Room code extracted from the WS URL at connection time – used as fallback if the client omits it from the join_room payload. */
+  initialRoomCode: string | null;
+  pingTimer: ReturnType<typeof setInterval> | null;
+  /** Stable id used in logs so you can correlate accept/attach/join/close lines for a single connection. */
+  connectionId: string;
+  /** When attachConnection ran, used to compute the socket lifetime on close. */
+  attachedAt: number;
+  /** True once a join_room has been processed for this socket (auto or explicit), used to dedupe. */
+  hasJoined: boolean;
+  /** True once a join is in-flight, used to drop duplicate join_room frames sent by the client right after open. */
+  joinInFlight: boolean;
+}
+
+let connectionCounter = 0;
+
+function makeConnectionId(): string {
+  connectionCounter = (connectionCounter + 1) % Number.MAX_SAFE_INTEGER;
+  return `c${connectionCounter.toString(36)}`;
 }
 
 type OutboundEventName =
@@ -74,15 +92,40 @@ export class MultiplayerWsHub {
   }
 
   attachConnection(ws: WebSocket, userId: string, initialRoomCode: string | null): void {
+    const normalizedInitialRoomCode = initialRoomCode ? initialRoomCode.trim().toUpperCase() : null;
+    const connectionId = makeConnectionId();
+    const attachedAt = Date.now();
+
     debugLog('Attach websocket connection', {
+      connectionId,
       userId,
-      initialRoomCode,
+      initialRoomCode: normalizedInitialRoomCode,
     });
 
-    this.socketContexts.set(ws, {
+    // Send a ping every 25 s so the connection is kept alive through any
+    // idle-timeout firewalls or reverse proxies. The browser WS implementation
+    // responds with a pong automatically.
+    const pingTimer = setInterval(() => {
+      if (ws.readyState === WebSocket.OPEN) {
+        try {
+          ws.ping();
+        } catch {
+          // ignore — close handler will clean up if the socket is broken
+        }
+      }
+    }, 25_000);
+
+    const context: SocketContext = {
       userId,
       roomCode: null,
-    });
+      initialRoomCode: normalizedInitialRoomCode,
+      pingTimer,
+      connectionId,
+      attachedAt,
+      hasJoined: false,
+      joinInFlight: false,
+    };
+    this.socketContexts.set(ws, context);
 
     ws.on('message', (data) => {
       void this.handleMessage(ws, data);
@@ -92,15 +135,22 @@ export class MultiplayerWsHub {
       void this.handleClose(ws, code, reason.toString('utf8'));
     });
 
-    ws.on('error', () => {
-      debugLog('Socket error event fired', {
+    ws.on('error', (err) => {
+      // Log the error; the 'close' event fires right after and handles cleanup.
+      warnLog('Socket error event fired', {
+        connectionId,
         userId,
+        error: err instanceof Error ? err.message : String(err),
       });
-      void this.handleClose(ws, 1006, 'socket_error');
     });
 
-    if (initialRoomCode) {
-      void this.joinRoomForSocket(ws, userId, initialRoomCode);
+    // Auto-join from the roomCode embedded in the WS URL. Some clients reconnect
+    // aggressively or can drop before the first 'join_room' command is sent.
+    // Keeping server-side auto-join restores a robust baseline and still allows
+    // the explicit join_room command as an idempotent re-sync path.
+    if (normalizedInitialRoomCode) {
+      context.joinInFlight = true;
+      void this.joinRoomForSocket(ws, userId, normalizedInitialRoomCode);
     }
   }
 
@@ -128,26 +178,51 @@ export class MultiplayerWsHub {
 
     const type = envelope.type;
     const payload = asRecord(envelope.payload);
+    const payloadRoomCode = typeof payload?.roomCode === 'string' ? payload.roomCode.trim().toUpperCase() : null;
 
     debugLog('Received websocket command', {
       userId: context.userId,
       type: typeof type === 'string' ? type : 'unknown',
-      roomCode: context.roomCode,
+      // Show the payload room code (what the client sent) and the context room code (current room).
+      payloadRoomCode: payloadRoomCode ?? '(not provided)',
+      contextRoomCode: context.roomCode ?? '(not joined yet)',
     });
 
     if (type === 'join_room') {
-      const roomCode = typeof payload?.roomCode === 'string' ? payload.roomCode : '';
+      // Accept roomCode from the payload; if the client omitted it, fall back to
+      // the one embedded in the WebSocket URL at connection time.
+      const roomCode = payloadRoomCode || context.initialRoomCode || '';
       if (!roomCode) {
+        warnLog('join_room rejected — no roomCode in payload and no initialRoomCode from URL', {
+          connectionId: context.connectionId,
+          userId: context.userId,
+        });
         this.sendError(ws, 'VALIDATION_ERROR', 'roomCode is required');
         return;
       }
 
+      // Ignore duplicate joins for the same socket/room. This is essential
+      // because the client sends join_room on open while the server already
+      // auto-joins from the URL roomCode — without dedup we'd race two
+      // joinRoomForSocket calls and double-broadcast room_joined.
+      if (context.roomCode === roomCode) {
+        return;
+      }
+
+      // If a join is already in-flight (e.g. server auto-join hasn't completed
+      // yet), drop the duplicate from the client. The auto-join will produce
+      // the same outcome (room_joined to this socket).
+      if (context.joinInFlight) {
+        return;
+      }
+
+      context.joinInFlight = true;
       await this.joinRoomForSocket(ws, context.userId, roomCode);
       return;
     }
 
     if (type === 'leave_room') {
-      const roomCode = typeof payload?.roomCode === 'string' ? payload.roomCode : context.roomCode;
+      const roomCode = payloadRoomCode || context.roomCode;
       if (!roomCode) {
         this.sendError(ws, 'VALIDATION_ERROR', 'roomCode is required');
         return;
@@ -157,16 +232,28 @@ export class MultiplayerWsHub {
       return;
     }
 
+    if (type === 'ping') {
+      // Application-level keepalive sent by the client; no response needed.
+      return;
+    }
+
     this.sendError(ws, 'VALIDATION_ERROR', 'Unsupported socket message type');
   }
 
   private async joinRoomForSocket(ws: WebSocket, userId: string, roomCodeRaw: string): Promise<void> {
     const roomCode = roomCodeRaw.trim().toUpperCase();
+    const context = this.socketContexts.get(ws);
+    const connectionId = context?.connectionId ?? '(unknown)';
 
     if (!roomCode) {
       this.sendError(ws, 'VALIDATION_ERROR', 'roomCode is required');
+      if (context) {
+        context.joinInFlight = false;
+      }
       return;
     }
+
+    debugLog('Socket attempting to join room', { connectionId, userId, roomCode });
 
     try {
       const room = await this.service.joinSocketRoom({
@@ -174,14 +261,54 @@ export class MultiplayerWsHub {
         roomCode,
       });
 
+      // The socket may have been closed/torn down while we awaited the lock.
+      // Don't attempt to send to a dead socket; just bail.
+      if (!this.socketContexts.has(ws) || ws.readyState !== WebSocket.OPEN) {
+        debugLog('Socket disappeared before join could be finalized', {
+          connectionId,
+          userId,
+          roomCode,
+          readyState: ws.readyState,
+        });
+        return;
+      }
+
       this.moveSocketToRoom(ws, roomCode);
+      if (context) {
+        context.hasJoined = true;
+        context.joinInFlight = false;
+      }
       debugLog('Socket joined room', {
+        connectionId,
         userId,
         roomCode,
         playerCount: room.players.length,
+        status: room.status,
       });
+
+      // Send the joining socket its room snapshot.
       this.send(ws, 'room_joined', { room });
+
+      // Broadcast updated player list to everyone else already in the room
+      // (the sender already gets room_joined above).
+      const sockets = this.roomSockets.get(roomCode);
+      if (sockets) {
+        sockets.forEach((socket) => {
+          if (socket !== ws) {
+            this.send(socket, 'room_updated', { roomCode, room });
+          }
+        });
+      }
     } catch (error) {
+      if (context) {
+        context.joinInFlight = false;
+      }
+      warnLog('Socket failed to join room', {
+        connectionId,
+        userId,
+        roomCode,
+        error: error instanceof Error ? error.message : String(error),
+      });
       this.sendErrorFromException(ws, error);
     }
   }
@@ -214,11 +341,23 @@ export class MultiplayerWsHub {
       return;
     }
 
+    // Stop the keepalive ping timer for this socket.
+    if (context.pingTimer) {
+      clearInterval(context.pingTimer);
+      context.pingTimer = null;
+    }
+
+    const closeType = closeCode === 1000 ? 'clean' : closeCode === 1001 ? 'going-away' : 'abnormal';
+    const lifetimeMs = Date.now() - context.attachedAt;
     debugLog('Socket closed', {
+      connectionId: context.connectionId,
       userId: context.userId,
       roomCode: context.roomCode,
       closeCode,
-      closeReason,
+      closeType,
+      closeReason: closeReason || '(none)',
+      lifetimeMs,
+      hadJoined: context.hasJoined,
     });
 
     this.socketContexts.delete(ws);
