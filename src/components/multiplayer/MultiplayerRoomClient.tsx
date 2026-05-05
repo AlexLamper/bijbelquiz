@@ -367,7 +367,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                   )}
                   {connectionStatus !== 'connected' && (
                     <p className="text-xs text-muted-foreground">
-                      Spelers worden bijgewerkt via polling — real-time verbinding wordt hersteld.
+                      Verbinding herstellen — spelerlijst wordt opnieuw opgehaald.
                     </p>
                   )}
                 </div>
@@ -527,9 +527,9 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
             <CardHeader className="pb-2">
               <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
-                  <CardTitle className="text-sm">Debug — Samen spelen</CardTitle>
+                  <CardTitle className="text-sm">Debug — Samen spelen (HTTP polling)</CardTitle>
                   <CardDescription className="text-xs">
-                    WS: <span className={connectionStatus === 'connected' ? 'text-emerald-600' : 'text-amber-600'}>{connectionStatus}</span>
+                    Status: <span className={connectionStatus === 'connected' ? 'text-emerald-600' : 'text-amber-600'}>{connectionStatus}</span>
                     {' · '}Room: {room?.status ?? 'unknown'}
                     {' · '}Spelers: {room?.players.length ?? 0}
                     {' · '}UserId: {resolvedUserId ?? '(none)'}

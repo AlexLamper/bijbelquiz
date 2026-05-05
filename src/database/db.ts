@@ -7,6 +7,7 @@ import './models/Quiz';
 import './models/Category';
 import './models/Payment';
 import './models/UserProgress';
+import './models/MultiplayerRoom';
 
 interface MongooseCache {
   conn: typeof mongoose | null;

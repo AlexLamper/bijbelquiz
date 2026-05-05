@@ -1,21 +1,17 @@
 import { randomUUID } from 'node:crypto';
 import { MongoMultiplayerDataProvider } from './provider';
+import { MongoRoomRepository } from './repository-mongo';
 import { MultiplayerService } from './service';
-import { MultiplayerWsHub } from './ws-hub';
 
 export interface MultiplayerRuntime {
   /**
-   * A short identifier that is generated once per process boot and persisted
-   * via `globalThis`. All multiplayer log lines include this ID so we can tell
-   * exactly which runtime instance handled a given request — invaluable when
-   * diagnosing "ROOM_NOT_FOUND" errors that turn out to be cross-process state
-   * fragmentation.
+   * Short identifier generated once per process boot, included in all log
+   * lines so we can tell which serverless instance handled a given request.
    */
   instanceId: string;
   /** Wallclock time the runtime was first created. */
   bootedAt: number;
   service: MultiplayerService;
-  wsHub: MultiplayerWsHub;
 }
 
 declare global {
@@ -24,12 +20,17 @@ declare global {
 }
 
 function makeInstanceId(): string {
-  // Short unique-ish ID: first 8 hex chars of a UUID, prefixed so it stands out
-  // in logs. `r-XXXXXXXX` is short enough not to bloat logs and long enough to
-  // disambiguate even after multiple reloads in a dev session.
   return `r-${randomUUID().slice(0, 8)}`;
 }
 
+/**
+ * Lazy-initialised runtime singleton. Cached on `globalThis` so:
+ *  - Across hot reloads in dev we keep the same instance (no rebuilding the
+ *    service / DB connection on every code change).
+ *  - Across requests within a single Vercel serverless instance we share the
+ *    same service object — though importantly the service no longer keeps
+ *    *room state* in memory, so cross-instance fragmentation doesn't matter.
+ */
 export function getMultiplayerRuntime(): MultiplayerRuntime {
   if (!globalThis.__multiplayerRuntime) {
     const instanceId = makeInstanceId();
@@ -45,15 +46,13 @@ export function getMultiplayerRuntime(): MultiplayerRuntime {
 
     const service = new MultiplayerService({
       provider: new MongoMultiplayerDataProvider(),
+      repository: new MongoRoomRepository(),
     });
-
-    const wsHub = new MultiplayerWsHub(service, instanceId);
 
     globalThis.__multiplayerRuntime = {
       instanceId,
       bootedAt,
       service,
-      wsHub,
     };
   }
 

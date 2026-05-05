@@ -11,3 +11,5 @@ export { default as UserProgress } from './models/UserProgress';
 export * from './models/UserProgress';
 export { default as Lead } from './models/Lead';
 export * from './models/Lead';
+export { default as MultiplayerRoom } from './models/MultiplayerRoom';
+export * from './models/MultiplayerRoom';

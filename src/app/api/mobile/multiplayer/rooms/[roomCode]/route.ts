@@ -11,12 +11,12 @@ export async function GET(
   { params }: { params: Promise<{ roomCode: string }> },
 ) {
   try {
-    await authenticateMultiplayerRequest(req);
+    const auth = await authenticateMultiplayerRequest(req);
     const resolvedParams = await params;
     const roomCode = normalizeRoomCode(resolvedParams.roomCode);
 
     const { service } = getMultiplayerRuntime();
-    const room = service.getRoom(roomCode);
+    const room = await service.getRoom({ userId: auth.userId, roomCode });
 
     return NextResponse.json({ room }, { status: 200 });
   } catch (error) {

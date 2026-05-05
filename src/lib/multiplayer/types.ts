@@ -22,6 +22,12 @@ export interface RoomCurrentQuestionSnapshot {
   questionNumber: number;
   totalQuestions: number;
   remainingSeconds: number;
+  /**
+   * Server-supplied absolute deadline (ms since epoch) for the current
+   * question. Clients should use this instead of `remainingSeconds` when they
+   * want a sub-second-accurate countdown that survives polling jitter.
+   */
+  deadlineAtMs: number | null;
   answers: RoomAnswerSnapshot[];
 }
 
@@ -37,6 +43,16 @@ export interface RoomSnapshot {
   status: RoomStatus;
   players: RoomPlayerSnapshot[];
   currentQuestion: RoomCurrentQuestionSnapshot | null;
+  /**
+   * Wallclock timestamp at which the server built this snapshot. Clients can
+   * compute drift between local and server clocks using this.
+   */
+  serverTimeMs: number;
+  /**
+   * Optimistic concurrency / freshness counter. Clients can use this to drop
+   * older snapshots that arrive out-of-order over slow networks.
+   */
+  revision: number;
 }
 
 export interface RoomResultEntry {
@@ -60,35 +76,6 @@ export interface ImmutableQuestion {
   correctAnswerId: string;
 }
 
-export interface RoomPlayerState {
-  id: string;
-  name: string;
-  score: number;
-  correctAnswers: number;
-  isHost: boolean;
-  isConnected: boolean;
-  hasAnswered: boolean;
-}
-
-export interface RoomSession {
-  id: string;
-  code: string;
-  quizId: string;
-  quizTitle: string;
-  hostUserId: string;
-  maxPlayers: number;
-  currentQuestionIndex: number;
-  totalQuestions: number;
-  status: RoomStatus;
-  players: RoomPlayerState[];
-  questions: ImmutableQuestion[];
-  questionDeadlineAtMs: number | null;
-  questionSequence: number;
-  submittedAnswers: Map<string, string>;
-  questionTimerHandle: ReturnType<typeof setTimeout> | null;
-  resultTimerHandle: ReturnType<typeof setTimeout> | null;
-}
-
 export interface ProviderQuizSnapshot {
   id: string;
   title: string;
@@ -103,26 +90,22 @@ export interface MultiplayerDataProvider {
 export interface MultiplayerServiceConfig {
   questionTimerSeconds: number;
   questionResultDelayMs: number;
+  /**
+   * After this many milliseconds since `lastSeenAt`, a player is considered
+   * disconnected. The "isConnected" flag in the snapshot is computed from
+   * this — there is no socket-level connection any more.
+   */
+  playerOfflineAfterMs: number;
+  /**
+   * Throttle: only update a player's `lastSeenAt` if it's older than this.
+   * Avoids writing on every poll. Default 10s.
+   */
+  heartbeatThrottleMs: number;
+  /** Room TTL in MongoDB. Bumped on every write. Default 24h. */
+  roomTtlMs: number;
   now: () => number;
-  setTimeoutFn: (callback: () => void, delayMs: number) => ReturnType<typeof setTimeout>;
-  clearTimeoutFn: (timer: ReturnType<typeof setTimeout>) => void;
   createRoomId: () => string;
   createRoomCode: () => string;
-}
-
-export type MultiplayerBroadcastEventName =
-  | 'player_joined'
-  | 'player_left'
-  | 'question_started'
-  | 'progress_updated'
-  | 'question_resolved'
-  | 'game_finished'
-  | 'room_updated';
-
-export interface MultiplayerBroadcastEvent {
-  type: MultiplayerBroadcastEventName;
-  roomCode: string;
-  payload: Record<string, unknown>;
 }
 
 export interface AuthenticatedMultiplayerUser {

@@ -3,6 +3,7 @@ export type MultiplayerErrorCode =
   | 'ROOM_FULL'
   | 'ROOM_ALREADY_STARTED'
   | 'ROOM_FINISHED'
+  | 'ROOM_CODE_TAKEN'
   | 'PLAYER_NOT_IN_ROOM'
   | 'NOT_HOST'
   | 'MIN_PLAYERS_REQUIRED'
@@ -13,6 +14,7 @@ export type MultiplayerErrorCode =
   | 'PREMIUM_REQUIRED'
   | 'UNAUTHORIZED'
   | 'QUIZ_NOT_FOUND'
+  | 'CONCURRENCY_CONFLICT'
   | 'INTERNAL_ERROR';
 
 export class MultiplayerError extends Error {

@@ -18,6 +18,7 @@ type FetchCall = {
 };
 
 function createRoomSnapshot(status: 'lobby' | 'in_progress' | 'question_result' | 'finished') {
+  const now = Date.now();
   return {
     id: 'room-1',
     code: 'ABC123',
@@ -57,12 +58,15 @@ function createRoomSnapshot(status: 'lobby' | 'in_progress' | 'question_result' 
             questionNumber: 1,
             totalQuestions: 5,
             remainingSeconds: 15,
+            deadlineAtMs: status === 'in_progress' ? now + 15_000 : null,
             answers: [
               { id: 'a1', text: 'Antwoord 1' },
               { id: 'a2', text: 'Antwoord 2' },
             ],
           }
         : null,
+    serverTimeMs: now,
+    revision: 1,
   };
 }
 

@@ -4,11 +4,11 @@ import {
   parseApiError,
   parseResultsResponse,
   parseRoomResponse,
-  parseWsEvent,
 } from '@/lib/multiplayer-web/mappers';
 import { isValidRoomTransition, resolveRoomStatus } from '@/lib/multiplayer-web/state-machine';
 
 function createRoomSnapshot(status: 'lobby' | 'in_progress' | 'question_result' | 'finished') {
+  const now = Date.now();
   return {
     id: 'room-1',
     code: 'ABC123',
@@ -49,23 +49,25 @@ function createRoomSnapshot(status: 'lobby' | 'in_progress' | 'question_result' 
             questionNumber: 1,
             totalQuestions: 5,
             remainingSeconds: 12,
+            deadlineAtMs: status === 'in_progress' ? now + 12_000 : null,
             answers: [
               { id: 'a1', text: 'Antwoord 1' },
               { id: 'a2', text: 'Antwoord 2' },
             ],
           },
+    serverTimeMs: now,
+    revision: 1,
   };
 }
 
 test('parseRoomResponse parses room payload', () => {
-  const payload = {
-    room: createRoomSnapshot('lobby'),
-  };
+  const payload = { room: createRoomSnapshot('lobby') };
 
   const parsed = parseRoomResponse(payload);
   assert.equal(parsed.room.code, 'ABC123');
   assert.equal(parsed.room.players.length, 2);
   assert.equal(parsed.room.status, 'lobby');
+  assert.equal(typeof parsed.room.revision, 'number');
 });
 
 test('parseResultsResponse parses results payload', () => {
@@ -91,42 +93,19 @@ test('parseApiError returns null for invalid shape', () => {
   assert.equal(parsed, null);
 });
 
-test('parseWsEvent parses game_finished event', () => {
-  const payload = {
-    type: 'game_finished',
-    payload: {
-      roomCode: 'ABC123',
-      room: createRoomSnapshot('finished'),
-      results: [
-        {
-          rank: 1,
-          playerId: 'host',
-          playerName: 'Host',
-          score: 5,
-          correctAnswers: 5,
-        },
-      ],
-    },
-  };
-
-  const parsed = parseWsEvent(payload);
-  assert.equal(parsed.type, 'game_finished');
-  assert.equal(parsed.payload.room.status, 'finished');
-  assert.equal(parsed.payload.results.length, 1);
-});
-
-test('parseWsEvent throws on unsupported event', () => {
-  assert.throws(() => {
-    parseWsEvent({
-      type: 'unknown_event',
-      payload: {},
-    });
+test('parseApiError extracts code and message', () => {
+  const parsed = parseApiError({
+    error: { code: 'ROOM_NOT_FOUND', message: 'Not here' },
   });
+  assert.ok(parsed);
+  assert.equal(parsed!.error.code, 'ROOM_NOT_FOUND');
 });
 
 test('state machine validates transitions', () => {
   assert.equal(isValidRoomTransition('lobby', 'in_progress'), true);
   assert.equal(isValidRoomTransition('finished', 'in_progress'), false);
+  assert.equal(isValidRoomTransition('in_progress', 'question_result'), true);
+  assert.equal(isValidRoomTransition('question_result', 'in_progress'), true);
 });
 
 test('resolveRoomStatus prevents invalid status regression', () => {

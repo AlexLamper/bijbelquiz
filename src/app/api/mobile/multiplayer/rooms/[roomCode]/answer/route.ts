@@ -25,14 +25,14 @@ export async function POST(
     const roomCode = normalizeRoomCode(resolvedParams.roomCode);
 
     const { service } = getMultiplayerRuntime();
-    await service.submitAnswer({
+    const room = await service.submitAnswer({
       userId: auth.userId,
       roomCode,
       questionId: body.questionId,
       answerId: body.answerId,
     });
 
-    return NextResponse.json({ ok: true }, { status: 200 });
+    return NextResponse.json({ ok: true, room }, { status: 200 });
   } catch (error) {
     return multiplayerErrorResponse(error);
   }
