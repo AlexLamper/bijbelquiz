@@ -147,7 +147,7 @@ export class MultiplayerService {
       throw new MultiplayerError('INTERNAL_ERROR', 'Room creation failed', 500);
     }
 
-    return this.buildSnapshot(created, now);
+    return this.buildSnapshot(created, now, input.userId);
   }
 
   async joinRoom(input: RoomUserInput): Promise<RoomSnapshot> {
@@ -161,7 +161,7 @@ export class MultiplayerService {
       if (existing) {
         existing.isConnected = true;
         existing.lastSeenAtMs = now;
-        return { value: this.buildSnapshot(room, now), mutated: true };
+        return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
       }
 
       if (room.status === 'finished') {
@@ -190,7 +190,7 @@ export class MultiplayerService {
         lastSeenAtMs: now,
       });
 
-      return { value: this.buildSnapshot(room, now), mutated: true };
+      return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
     });
   }
 
@@ -210,7 +210,7 @@ export class MultiplayerService {
       mutated = this.bumpHeartbeat(room, input.userId, now) || mutated;
       mutated = this.recomputeConnectedFlags(room, now) || mutated;
 
-      return { value: this.buildSnapshot(room, now), mutated };
+      return { value: this.buildSnapshot(room, now, input.userId), mutated };
     });
   }
 
@@ -239,7 +239,7 @@ export class MultiplayerService {
       }
 
       this.startQuestion(room, 0, now);
-      return { value: this.buildSnapshot(room, now), mutated: true };
+      return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
     });
   }
 
@@ -295,7 +295,7 @@ export class MultiplayerService {
         this.finalizeQuestion(room, now);
       }
 
-      return { value: this.buildSnapshot(room, now), mutated: true };
+      return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
     });
   }
 
@@ -650,7 +650,7 @@ export class MultiplayerService {
     return mutated;
   }
 
-  private buildSnapshot(room: PersistedRoom, now: number): RoomSnapshot {
+  private buildSnapshot(room: PersistedRoom, now: number, viewerUserId: string): RoomSnapshot {
     const status: RoomStatus = room.status;
     const showQuestion = status === 'in_progress' || status === 'question_result';
     const question = showQuestion ? room.questions[room.currentQuestionIndex] : null;
@@ -662,6 +662,15 @@ export class MultiplayerService {
       remainingSeconds = Math.max(0, Math.ceil((deadlineAtMs - now) / 1000));
     }
 
+    const viewerChoice = room.submittedAnswers[viewerUserId] ?? null;
+    const revealCorrect = status === 'question_result' && question !== null;
+
+    const correctAnswerId = revealCorrect && question ? question.correctAnswerId : null;
+    const explanation =
+      revealCorrect && question?.explanation?.trim()
+        ? question.explanation.trim()
+        : null;
+
     const currentQuestion: RoomCurrentQuestionSnapshot | null = question
       ? {
           id: question.id,
@@ -672,8 +681,16 @@ export class MultiplayerService {
           remainingSeconds,
           deadlineAtMs,
           answers: question.answers.map((a) => ({ id: a.id, text: a.text })),
+          yourAnswerId: viewerChoice,
+          correctAnswerId,
+          explanation,
         }
       : null;
+
+    const resultPhaseEndsAtMs =
+      status === 'question_result' && room.questionResultUntilAtMs !== null
+        ? room.questionResultUntilAtMs
+        : null;
 
     const players: RoomPlayerSnapshot[] = room.players.map((p) => ({
       id: p.id,
@@ -697,6 +714,7 @@ export class MultiplayerService {
       status,
       players,
       currentQuestion,
+      resultPhaseEndsAtMs,
       serverTimeMs: now,
       revision: room.revision,
     };

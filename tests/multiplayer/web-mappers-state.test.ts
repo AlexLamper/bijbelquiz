@@ -54,7 +54,11 @@ function createRoomSnapshot(status: 'lobby' | 'in_progress' | 'question_result' 
               { id: 'a1', text: 'Antwoord 1' },
               { id: 'a2', text: 'Antwoord 2' },
             ],
+            yourAnswerId: null,
+            correctAnswerId: status === 'question_result' ? 'a1' : null,
+            explanation: status === 'question_result' ? null : null,
           },
+    resultPhaseEndsAtMs: status === 'question_result' ? now + 3000 : null,
     serverTimeMs: now,
     revision: 1,
   };

@@ -37,11 +37,16 @@ function persistedToPlayer(player: PersistedRoomPlayer): Partial<IRoomPlayer> {
 }
 
 function questionToPersisted(question: IRoomQuestion): ImmutableQuestion {
+  const explanation =
+    typeof question.explanation === 'string' && question.explanation.trim().length > 0
+      ? question.explanation.trim()
+      : undefined;
   return {
     id: question.id,
     text: question.text,
     bibleReference: question.bibleReference ?? '',
     correctAnswerId: question.correctAnswerId,
+    ...(explanation ? { explanation } : {}),
     answers: question.answers.map((answer) => ({ id: answer.id, text: answer.text })),
   };
 }
@@ -114,6 +119,7 @@ function persistedToDocFields(room: PersistedRoom): Partial<IMultiplayerRoom> {
       text: q.text,
       bibleReference: q.bibleReference,
       correctAnswerId: q.correctAnswerId,
+      ...(q.explanation?.trim() ? { explanation: q.explanation.trim() } : {}),
       answers: q.answers.map((a) => ({ id: a.id, text: a.text })),
     })) as IRoomQuestion[],
     questionDeadlineAt: room.questionDeadlineAtMs ? new Date(room.questionDeadlineAtMs) : null,

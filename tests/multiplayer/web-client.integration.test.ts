@@ -63,8 +63,12 @@ function createRoomSnapshot(status: 'lobby' | 'in_progress' | 'question_result' 
               { id: 'a1', text: 'Antwoord 1' },
               { id: 'a2', text: 'Antwoord 2' },
             ],
+            yourAnswerId: null,
+            correctAnswerId: null,
+            explanation: null,
           }
         : null,
+    resultPhaseEndsAtMs: null,
     serverTimeMs: now,
     revision: 1,
   };

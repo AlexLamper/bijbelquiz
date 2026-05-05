@@ -33,6 +33,9 @@ const roomQuestionSchema = z.object({
   remainingSeconds: z.number(),
   deadlineAtMs: z.number().nullable(),
   answers: z.array(roomAnswerSchema),
+  yourAnswerId: z.string().nullable(),
+  correctAnswerId: z.string().nullable(),
+  explanation: z.string().nullable(),
 });
 
 const roomSnapshotSchema = z.object({
@@ -47,6 +50,7 @@ const roomSnapshotSchema = z.object({
   status: roomStatusSchema,
   players: z.array(roomPlayerSchema),
   currentQuestion: roomQuestionSchema.nullable(),
+  resultPhaseEndsAtMs: z.number().nullable(),
   serverTimeMs: z.number(),
   revision: z.number(),
 });

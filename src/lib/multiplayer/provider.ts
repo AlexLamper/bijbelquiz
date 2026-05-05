@@ -115,10 +115,17 @@ function parseQuestions(rawQuestions: unknown): ImmutableQuestion[] {
         ? questionRecord.bibleReference.trim()
         : '';
 
+    const explanationRaw = questionRecord.explanation;
+    const explanation =
+      typeof explanationRaw === 'string' && explanationRaw.trim().length > 0
+        ? explanationRaw.trim()
+        : undefined;
+
     parsedQuestions.push({
       id,
       text,
       bibleReference,
+      ...(explanation ? { explanation } : {}),
       answers,
       correctAnswerId,
     });

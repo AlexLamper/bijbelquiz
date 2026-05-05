@@ -149,7 +149,7 @@ export default function PremiumOfferLayout({
     <div className="mx-auto max-w-5xl">
       <header className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.14em] text-primary dark:text-[#9db5dc]">BijbelQuiz Premium</p>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-5xl">
+        <h1 className="mt-4 text-2xl font-bold tracking-tight text-foreground md:text-4xl">
           Ontgrendel alle quizzen, uitleg en statistieken met Premium
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">

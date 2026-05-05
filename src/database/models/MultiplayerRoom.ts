@@ -42,6 +42,7 @@ export interface IRoomQuestion {
   text: string;
   bibleReference: string;
   correctAnswerId: string;
+  explanation?: string;
   answers: IRoomQuestionAnswer[];
 }
 
@@ -99,6 +100,7 @@ const RoomQuestionSchema = new Schema<IRoomQuestion>(
     text: { type: String, required: true },
     bibleReference: { type: String, default: '' },
     correctAnswerId: { type: String, required: true },
+    explanation: { type: String, default: '' },
     answers: { type: [RoomQuestionAnswerSchema], default: [] },
   },
   { _id: false },

@@ -1,4 +1,5 @@
 import { createServer } from 'node:http';
+import { createServer as createNetServer } from 'node:net';
 import { parse } from 'node:url';
 import next from 'next';
 
@@ -19,7 +20,15 @@ async function bootstrap(): Promise<void> {
   const mode = process.argv[2] ?? 'dev';
   const dev = mode !== 'start';
   const hostname = process.env.HOST || 'localhost';
-  const port = Number(process.env.PORT || 3000);
+  const requestedPort = Number(process.env.PORT || 3000);
+  const shouldAutoPickPort = dev && !process.env.PORT;
+  const port = shouldAutoPickPort
+    ? await findAvailablePort(hostname, requestedPort)
+    : requestedPort;
+
+  if (port !== requestedPort) {
+    console.log(`> Port ${requestedPort} in use, using ${port} instead`);
+  }
 
   const app = next({ dev, hostname, port });
   const handle = app.getRequestHandler();
@@ -35,6 +44,42 @@ async function bootstrap(): Promise<void> {
     const modeLabel = dev ? 'development' : 'production';
     console.log(`> Server listening on http://${hostname}:${port} (${modeLabel})`);
     console.log('> Multiplayer transport: HTTP polling (no WebSocket required)');
+  });
+}
+
+async function findAvailablePort(hostname: string, startPort: number): Promise<number> {
+  let port = startPort;
+  const maxAttempts = 20;
+
+  for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+    const available = await isPortAvailable(hostname, port);
+    if (available) {
+      return port;
+    }
+    port += 1;
+  }
+
+  throw new Error(`No available port found starting from ${startPort}`);
+}
+
+async function isPortAvailable(hostname: string, port: number): Promise<boolean> {
+  return new Promise((resolve, reject) => {
+    const probe = createNetServer();
+
+    probe.once('error', (error: NodeJS.ErrnoException) => {
+      probe.close();
+      if (error.code === 'EADDRINUSE') {
+        resolve(false);
+        return;
+      }
+      reject(error);
+    });
+
+    probe.once('listening', () => {
+      probe.close(() => resolve(true));
+    });
+
+    probe.listen(port, hostname);
   });
 }
 

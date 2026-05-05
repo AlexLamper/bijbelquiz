@@ -29,6 +29,18 @@ export interface RoomCurrentQuestionSnapshot {
    */
   deadlineAtMs: number | null;
   answers: RoomAnswerSnapshot[];
+  /**
+   * The authenticated viewer's chosen answer for this question, if they
+   * submitted one. Populated during `in_progress` and `question_result`.
+   */
+  yourAnswerId: string | null;
+  /**
+   * Correct answer id. Only set when the room is in `question_result` (after
+   * the timer or all answers). Null while answering so clients cannot cheat.
+   */
+  correctAnswerId: string | null;
+  /** Optional explanation from the quiz, shown after reveal. */
+  explanation: string | null;
 }
 
 export interface RoomSnapshot {
@@ -43,6 +55,11 @@ export interface RoomSnapshot {
   status: RoomStatus;
   players: RoomPlayerSnapshot[];
   currentQuestion: RoomCurrentQuestionSnapshot | null;
+  /**
+   * When `status === 'question_result'`, Unix ms when the pause ends and the
+   * next question starts (or game finishes). Used for a “volgende vraag” timer.
+   */
+  resultPhaseEndsAtMs: number | null;
   /**
    * Wallclock timestamp at which the server built this snapshot. Clients can
    * compute drift between local and server clocks using this.
@@ -72,6 +89,8 @@ export interface ImmutableQuestion {
   id: string;
   text: string;
   bibleReference: string;
+  /** Shown after the correct answer is revealed (multiplayer feedback). */
+  explanation?: string;
   answers: ImmutableAnswer[];
   correctAnswerId: string;
 }
