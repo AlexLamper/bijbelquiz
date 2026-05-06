@@ -119,7 +119,7 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
   const premiumTagDarkClass = useNeutralDarkPalette ? 'dark:bg-[#6f8ed4] dark:text-white' : 'dark:bg-[#6f8ed4] dark:text-white';
   const headingDarkClass = useNeutralDarkPalette ? 'dark:text-zinc-100' : 'dark:text-zinc-100';
   const bodyDarkClass = useNeutralDarkPalette ? 'dark:text-zinc-300' : 'dark:text-zinc-300';
-  const startDarkClass = useNeutralDarkPalette ? 'dark:text-zinc-300' : 'dark:text-zinc-300';
+  const startDarkClass = useNeutralDarkPalette ? 'dark:text-[#a5bdef]' : 'dark:text-[#a5bdef]';
   const cardDarkClass = useNeutralDarkPalette
     ? 'dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800'
     : 'dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800';

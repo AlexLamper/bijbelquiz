@@ -70,7 +70,7 @@ export default async function Home() {
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-450 flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl lg:-mt-32 xl:-mt-24">
             <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[64px] 3xl:text-[72px] leading-[1.1] font-bold text-[#1f2f4b] dark:text-white tracking-tight xl:max-w-none 2xl:max-w-none 3xl:max-w-none">
-              Hoe goed ken jij de Bijbel? Ontdek het... 
+              Hoe goed ken jij de Bijbel? <span className="dark:text-[#9db5dc]">Ontdek het...</span>
             </h1> 
             <p className="mb-8 sm:mb-10 max-w-xl text-[#53647f] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl leading-[1.6]">
               BijbelQuiz heeft tientallen quizzen.
@@ -103,7 +103,7 @@ export default async function Home() {
                 </Button>
               )}
               
-              <DownloadButtons />
+              <DownloadButtons compactOnMobile />
             </div>
           </div>
           

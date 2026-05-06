@@ -270,8 +270,8 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
       <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
-            <h1 className="text-3xl text-[#1f2f4b] md:text-4xl dark:text-[#dce7fa]">Instellingen</h1>
-            <p className="mt-3 max-w-2xl text-sm text-[#5f7297] dark:text-[#9fb3d6]">
+            <h1 className="text-3xl font-semibold text-[#1f2f4b] md:text-4xl dark:text-zinc-100">Instellingen</h1>
+            <p className="mt-3 max-w-2xl text-sm text-[#5f7297] dark:text-zinc-300">
               Pas je account en voorkeuren direct aan. Wijzigingen worden meteen opgeslagen.
             </p>
           </div>

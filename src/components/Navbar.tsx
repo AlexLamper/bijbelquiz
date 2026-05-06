@@ -173,7 +173,7 @@ export default function Navbar({
             <Image src="/icon/Logo%20-%20light.svg" alt="BijbelQuiz Logo" fill className="hidden object-contain dark:block" priority />
           </div>
           <span className="font-serif text-xl font-bold tracking-tight text-[#1f2f4b] dark:text-zinc-100">
-            Bijbel<span className="text-[#4f6faa] dark:text-zinc-300">Quiz</span>
+            Bijbel<span className="text-[#4f6faa] dark:text-[#9db5dc]">Quiz</span>
           </span>
         </Link>
 

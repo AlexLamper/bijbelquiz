@@ -116,7 +116,7 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
           </div>
           {!collapsed && (
             <span className="font-serif text-lg font-bold tracking-tight text-[#1f2f4b] dark:text-zinc-100">
-              Bijbel<span className="text-[#4f6faa] dark:text-zinc-300">Quiz</span>
+              Bijbel<span className="text-[#4f6faa] dark:text-[#6f8ed4]">Quiz</span>
             </span>
           )}
         </Link>

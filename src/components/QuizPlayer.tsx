@@ -201,6 +201,23 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     };
   }, [isSettingsOpen]);
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const mediaQuery = window.matchMedia('(max-width: 639px)');
+    const enforceMobileTextSize = (event: MediaQueryList | MediaQueryListEvent) => {
+      if (event.matches) {
+        setTextSize('normal');
+      }
+    };
+
+    enforceMobileTextSize(mediaQuery);
+
+    const listener = (event: MediaQueryListEvent) => enforceMobileTextSize(event);
+    mediaQuery.addEventListener('change', listener);
+    return () => mediaQuery.removeEventListener('change', listener);
+  }, []);
+
   if (isFinished) {
     const percentage = Math.round((score / quiz.questions.length) * 100);
     const fallbackXp = Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length));
@@ -278,7 +295,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   }
 
   return (
-    <div className="w-full px-4 pb-4 pt-4 sm:px-6 lg:px-8">
+    <div className="w-full overflow-x-hidden px-4 pb-4 pt-4 sm:px-6 lg:px-8">
       <div className="grid min-h-[calc(100dvh-7rem)] gap-6 xl:grid-cols-[minmax(340px,0.46fr)_minmax(0,0.94fr)]">
         <Card className="border-[#d8e1ee] bg-[#f8fafe] py-0 shadow-sm xl:sticky xl:top-24 xl:h-[calc(100dvh-7rem)] dark:border-zinc-700 dark:bg-zinc-900/70">
           <CardContent className="flex h-full flex-col overflow-y-auto p-5 lg:p-6">
@@ -318,20 +335,23 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{quiz.title}</p>
             <h1
-              className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 text-[#1f2f4b] dark:text-zinc-100 ${questionTextSizeClass} font-semibold leading-[1.15]`}
+              className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 wrap-anywhere text-[#1f2f4b] dark:text-zinc-100 ${questionTextSizeClass} font-semibold leading-[1.15]`}
             >
               {currentQuestion.text}
             </h1>
 
-            <div className="mt-auto grid grid-cols-1 gap-2 pt-6 sm:grid-cols-2">
-              <div className="border border-[#d7e1ee] bg-white px-3 py-2 text-xs text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
-                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Type:</span> Normale quiz
+            <div className="mt-auto flex flex-wrap gap-2 pt-6">
+              <div className="min-w-0 flex-1 border border-[#d7e1ee] bg-white px-2 py-2 text-[11px] text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
+                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Type:</span>{' '}
+                <span className="inline-block max-w-full truncate align-bottom">Normale quiz</span>
               </div>
-              <div className="border border-[#d7e1ee] bg-white px-3 py-2 text-xs text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
-                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Categorie:</span> {categoryLabel}
+              <div className="min-w-0 flex-1 border border-[#d7e1ee] bg-white px-2 py-2 text-[11px] text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
+                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Categorie:</span>{' '}
+                <span className="inline-block max-w-full truncate align-bottom">{categoryLabel}</span>
               </div>
-              <div className="border border-[#d7e1ee] bg-white px-3 py-2 text-xs text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 sm:col-span-2">
-                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Niveau:</span> {difficultyLabel}
+              <div className="min-w-0 flex-1 border border-[#d7e1ee] bg-white px-2 py-2 text-[11px] text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
+                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Niveau:</span>{' '}
+                <span className="inline-block max-w-full truncate align-bottom">{difficultyLabel}</span>
               </div>
             </div>
 
@@ -375,13 +395,13 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                       variant="outline"
                       disabled={hasAnswered}
                       onClick={() => handleAnswer(index)}
-                      className={`h-auto w-full justify-start rounded-md border px-4 py-3 text-left text-sm ${itemClass}`}
+                      className={`h-auto w-full justify-start rounded-md border px-4 py-3 text-left text-sm whitespace-normal ${itemClass}`}
                     >
-                      <span className="mr-3 inline-flex h-5 w-5 items-center justify-center border border-current/35">
+                      <span className="mr-3 mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center border border-current/35">
                         {hasAnswered && isCorrect && <CheckCircle2 className="h-3.5 w-3.5" />}
                         {hasAnswered && !isCorrect && isSelected && <X className="h-3.5 w-3.5" />}
                       </span>
-                      <span className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} ${textSize === 'large' ? 'text-base' : 'text-sm'} leading-relaxed`}>
+                      <span className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} min-w-0 wrap-anywhere ${textSize === 'large' ? 'text-base' : 'text-sm'} leading-relaxed`}>
                         {answer.text}
                       </span>
                     </Button>
@@ -397,14 +417,14 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   </p>
 
                   {isPremium ? (
-                    <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
+                    <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 wrap-anywhere text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
                       {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
                     </p>
                   ) : (
                     <div className="mt-2 border border-[#d7e1ee] bg-white p-3 dark:border-zinc-700 dark:bg-zinc-900">
                       {currentQuestion.explanationPreview ? (
                         <>
-                          <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
+                          <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
                             {currentQuestion.explanationPreview}
                           </p>
                           <p className="mt-2 text-[11px] font-semibold uppercase tracking-wider text-[#6f8ed4] dark:text-zinc-400">
@@ -421,7 +441,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   )}
 
                   {visibleBibleReference && (
-                    <Badge variant="secondary" className="mt-3 border border-[#d7e1ee] bg-white text-[#355384] dark:border-[#d7e1ee] dark:bg-white dark:text-[#355384]">
+                    <Badge variant="secondary" className="mt-3 rounded-none border border-[#d7e1ee] bg-white text-[#355384] dark:border-[#d7e1ee] dark:bg-white dark:text-[#355384]">
                       Referentie{!isPremium ? ' (preview)' : ''}: {visibleBibleReference}
                     </Badge>
                   )}
@@ -430,14 +450,14 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
             </div>
 
             {(currentIndex > 0 || hasAnswered) && (
-              <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-                <div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex-1">
                   {currentIndex > 0 && (
                     <Button
                       type="button"
                       variant="outline"
                       onClick={handlePrevious}
-                      className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                      className="h-10 w-full rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
                     >
                       <ArrowLeft className="mr-2 h-4 w-4" />
                       Vorige vraag
@@ -449,7 +469,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   <Button
                     type="button"
                     onClick={handleNext}
-                    className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-5 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400"
+                    className="h-10 flex-1 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
                   >
                     {currentIndex < quiz.questions.length - 1 ? 'Volgende vraag' : 'Quiz afronden'}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -485,7 +505,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center justify-between gap-3">
+              <div className="hidden items-center justify-between gap-3 sm:flex">
                 <span className="text-sm text-[#30466e] dark:text-zinc-200">Tekstgrootte</span>
                 <div className="flex items-center gap-1">
                   <Button

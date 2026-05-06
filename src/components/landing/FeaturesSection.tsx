@@ -31,7 +31,7 @@ export function FeaturesSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-[#1a2942] dark:text-white md:text-4xl lg:text-5xl">
-            Ontdek de rijkdom van Gods Woord
+            Ontdek de <span className="dark:text-[#9db5dc]">rijkdom</span> van Gods Woord
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground dark:text-white/70">
             Met meer dan 200 vragen verdeeld over 4 categorieën is er altijd iets nieuws te ontdekken in de Statenvertaling.
@@ -40,15 +40,15 @@ export function FeaturesSection() {
 
         <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-16">
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">200+</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-[#9db5dc] md:text-5xl">200+</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Vragen</div>
           </div>
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">4</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-[#9db5dc] md:text-5xl">4</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Categorieën</div>
           </div>
           <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-zinc-300 md:text-5xl">3</div>
+            <div className="font-serif text-4xl font-medium text-primary dark:text-[#9db5dc] md:text-5xl">3</div>
             <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Moeilijkheidsgraden</div>
           </div>
         </div>

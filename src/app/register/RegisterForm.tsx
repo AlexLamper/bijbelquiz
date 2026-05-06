@@ -48,7 +48,7 @@ function RegisterContent() {
   };
 
   return (
-    <div className="fixed inset-0 flex h-screen overflow-hidden bg-background">
+    <div className="fixed inset-x-0 bottom-0 top-16 flex h-[calc(100dvh-4rem)] overflow-hidden bg-background md:inset-0 md:h-screen">
       {/* Left Side - Register Form */}
       <div className="flex w-full lg:w-1/2 flex-col justify-center px-6 py-8 lg:px-16 xl:px-24 overflow-y-auto">
         <div className="mx-auto w-full max-w-md">

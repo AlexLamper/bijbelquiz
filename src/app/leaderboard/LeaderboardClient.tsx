@@ -11,7 +11,6 @@ import { Button } from '@/components/ui/button';
 interface LeaderboardUser {
   _id: string;
   name: string;
-  email: string;
   xp: number;
   streak: number;
   badges?: string[];
@@ -34,7 +33,7 @@ function rankBadgeTone(index: number): string {
 }
 
 function getDisplayName(user: LeaderboardUser): string {
-  return user.name?.trim() || user.email?.split('@')[0] || 'Gebruiker';
+  return user.name?.trim() || 'Gebruiker';
 }
 
 function formatStreak(streak: number): string {
@@ -220,7 +219,6 @@ export default function LeaderboardClient({ users, currentUserId, initialPeriod 
                             </Badge>
                           )}
                         </div>
-                        <p className="mt-1 truncate text-xs text-muted-foreground md:hidden">{user.email}</p>
                       </div>
 
                       <div className="flex items-center gap-2 md:block">

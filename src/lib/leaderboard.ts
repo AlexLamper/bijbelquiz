@@ -5,7 +5,6 @@ export type LeaderboardPeriod = 'weekly' | 'monthly' | 'all-time';
 export interface LeaderboardEntry {
   _id: string;
   name: string;
-  email: string;
   xp: number;
   streak: number;
   badges: string[];
@@ -48,7 +47,6 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
 
     return users.map((user) => ({
       _id: String(user._id),
-      email: user.email || '',
       name: user.name || 'Speler',
       xp: user.xp || 0,
       streak: user.streak || 0,
@@ -89,7 +87,6 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
         _id: { $toString: '$_id' },
         xp: 1,
         name: { $ifNull: ['$user.name', 'Speler'] },
-        email: { $ifNull: ['$user.email', ''] },
         streak: { $ifNull: ['$user.streak', 0] },
         badges: { $ifNull: ['$user.badges', []] },
         image: { $ifNull: ['$user.image', null] },
@@ -103,7 +100,6 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
   return leaderboardRows.map((row) => ({
     _id: String(row._id),
     name: row.name || 'Speler',
-    email: row.email || '',
     xp: Number(row.xp) || 0,
     streak: Number(row.streak) || 0,
     badges: Array.isArray(row.badges) ? row.badges : [],

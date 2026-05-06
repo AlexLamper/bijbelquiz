@@ -20,7 +20,7 @@ export function CTASection() {
               <Link href="/quizzes">Speel direct online</Link>
             </Button>
 
-            <DownloadButtons />
+            <DownloadButtons compactOnMobile />
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm text-muted-foreground dark:text-white/60">

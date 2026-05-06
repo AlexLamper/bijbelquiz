@@ -21,8 +21,8 @@ export function PremiumSection() {
           <div className="grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
             <div>
               <div className="mb-6 inline-flex items-center gap-2 text-white/85">
-                <Crown className="h-5 w-5 text-white" />
-                <span className="text-sm font-medium uppercase tracking-[0.14em]">Premium</span>
+                <Crown className="h-5 w-5 text-white dark:text-[#9db5dc]" />
+                <span className="text-sm font-medium uppercase tracking-[0.14em] dark:text-[#9db5dc]">Premium</span>
               </div>
 
               <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight text-white md:text-4xl">
@@ -43,7 +43,7 @@ export function PremiumSection() {
               </ul>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
-                <Button asChild className="h-12 rounded-md bg-[#5b7dd9] px-7 text-base font-medium text-white hover:bg-[#4a6bc7] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
+                <Button asChild className="h-12 rounded-md bg-[#5b7dd9] px-7 text-base font-medium text-white hover:bg-[#4a6bc7] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
                   <Link href="/premium">Bekijk Premium</Link>
                 </Button>
 

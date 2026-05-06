@@ -4,6 +4,7 @@ import { connectDB, UserProgress, Quiz, User } from "@/database";
 import { Metadata } from 'next';
 import DashboardHomeClient from '@/app/dashboard/DashboardHomeClient';
 import { getLevelInfo } from '@/lib/gamification';
+import { calculateNextStreak } from '@/lib/streak';
 
 export const metadata: Metadata = {
   title: 'Dashboard - BijbelQuiz',
@@ -18,8 +19,30 @@ export default async function DashboardPage() {
   const userId = session?.user?.id;
   const isPremium = !!session?.user?.isPremium;
 
-  const user = userId ? await User.findById(userId).select('xp streak quizzesPlayed').lean() : null;
+  const user = userId ? await User.findById(userId).select('xp streak bestStreak quizzesPlayed lastPlayedAt').lean() : null;
   const xp = user?.xp || 0;
+
+  let streak = user?.streak || 0;
+
+  // Treat a logged-in dashboard visit as activity for streak progression.
+  if (userId && user) {
+    const now = new Date();
+    const previous = user.lastPlayedAt ? new Date(user.lastPlayedAt) : null;
+    const { nextStreak } = calculateNextStreak(previous, user.streak || 0, now);
+
+    if (nextStreak !== (user.streak || 0) || !user.lastPlayedAt) {
+      const bestStreak = Math.max(user.bestStreak || 0, nextStreak);
+      await User.findByIdAndUpdate(userId, {
+        $set: {
+          streak: nextStreak,
+          bestStreak,
+          lastPlayedAt: now,
+        },
+      });
+    }
+
+    streak = nextStreak;
+  }
 
   // Fetch quizzes - show all quizzes for both guests and logged users
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
@@ -51,7 +74,6 @@ export default async function DashboardPage() {
 
   const levelInfo = getLevelInfo(xp);
 
-  const streak = user?.streak || 0;
   const recentProgress = JSON.parse(JSON.stringify(progressDocs.slice(0, 5)));
 
   return (

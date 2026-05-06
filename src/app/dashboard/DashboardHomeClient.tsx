@@ -87,7 +87,7 @@ export default function DashboardHomeClient({
           <CardContent className="relative p-0">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] xl:items-start">
               <div>
-                <h1 className="text-4xl leading-tight text-[#1f2f4b] md:text-5xl">
+                <h1 className="text-3xl leading-tight text-[#1f2f4b] sm:text-4xl md:text-5xl">
                   <span className="dark:text-[#9db5dc]">{greeting},</span> <span className="dark:text-zinc-100">{userName}.</span>
                 </h1>
 
@@ -116,29 +116,29 @@ export default function DashboardHomeClient({
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 xl:justify-end xl:pt-1">
+              <div className="grid w-full grid-cols-3 gap-2 xl:flex xl:w-auto xl:justify-end xl:pt-1">
                 <Badge
                   variant="outline"
-                  className="h-9 gap-1.5 border-border bg-card px-3 text-xs font-medium text-foreground dark:border-zinc-700 dark:bg-zinc-900/70"
+                  className="h-8 min-w-0 justify-center gap-1 border-border bg-card px-2 text-[10px] font-medium text-foreground sm:h-9 sm:gap-1.5 sm:px-3 sm:text-xs dark:border-zinc-700 dark:bg-zinc-900/70"
                 >
-                  <Award className="h-3.5 w-3.5 text-muted-foreground" />
-                  Niveau {level} - {levelTitle}
+                  <Award className="h-3 w-3 shrink-0 text-muted-foreground sm:h-3.5 sm:w-3.5" />
+                  <span className="truncate">Niveau {level}</span>
                 </Badge>
 
                 <Badge
                   variant="outline"
-                  className="h-9 gap-1.5 border-border bg-card px-3 text-xs font-medium text-foreground dark:border-zinc-700 dark:bg-zinc-900/70"
+                  className="h-8 min-w-0 justify-center gap-1 border-border bg-card px-2 text-[10px] font-medium text-foreground sm:h-9 sm:gap-1.5 sm:px-3 sm:text-xs dark:border-zinc-700 dark:bg-zinc-900/70"
                 >
-                  <BookOpen className="h-3.5 w-3.5 text-muted-foreground" />
-                  {totalQuizzesDone.toLocaleString('nl-NL')} quizzen gespeeld
+                  <BookOpen className="h-3 w-3 shrink-0 text-muted-foreground sm:h-3.5 sm:w-3.5" />
+                  <span className="truncate">{totalQuizzesDone.toLocaleString('nl-NL')} quizzen</span>
                 </Badge>
 
                 <Badge
                   variant="outline"
-                  className="h-9 gap-1.5 border-border bg-card px-3 text-xs font-medium text-foreground dark:border-zinc-700 dark:bg-zinc-900/70"
+                  className="h-8 min-w-0 justify-center gap-1 border-border bg-card px-2 text-[10px] font-medium text-foreground sm:h-9 sm:gap-1.5 sm:px-3 sm:text-xs dark:border-zinc-700 dark:bg-zinc-900/70"
                 >
-                  <CalendarDays className="h-3.5 w-3.5 text-muted-foreground" />
-                  {streak > 0 ? streakLabel : 'Start je reeks vandaag'}
+                  <CalendarDays className="h-3 w-3 shrink-0 text-muted-foreground sm:h-3.5 sm:w-3.5" />
+                  <span className="truncate">{streak > 0 ? streakLabel : 'Start vandaag'}</span>
                 </Badge>
               </div>
             </div>
@@ -172,12 +172,12 @@ export default function DashboardHomeClient({
 
       <section className="mx-auto max-w-340 px-4 pt-12 sm:px-5 lg:px-4">
         <div className="mb-4 flex items-end justify-between gap-3">
-          <div>
-            <h2 className="text-2xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Aanbevolen quizzen</h2>
+          <div className="min-w-0">
+            <h2 className="text-xl font-semibold text-[#1f2f4b] sm:text-2xl dark:text-zinc-100">Aanbevolen quizzen</h2>
             <p className="mt-1 text-sm text-muted-foreground">Kies een quiz en start direct.</p>
           </div>
 
-          <Link href="/quizzes" className="inline-flex items-center gap-2 text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-100">
+          <Link href="/quizzes" className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-100">
             Alle quizzen
             <ArrowRight className="h-4 w-4" />
           </Link>

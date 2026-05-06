@@ -382,7 +382,7 @@ export default function MultiplayerEntryClient({
                 className="relative overflow-hidden border-[#e2e8f0] shadow-sm dark:border-zinc-800"
               >
                 <CardHeader className="pb-2">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[#6f8ed4]/15 text-[#5f81cc] dark:bg-zinc-800 dark:text-zinc-200">
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[#6f8ed4]/15 text-[#5f81cc] dark:bg-[#1a2b47] dark:text-[#8aa7e6]">
                     <item.icon className="h-5 w-5" aria-hidden />
                   </div>
                   <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">

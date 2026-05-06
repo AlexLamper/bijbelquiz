@@ -8,10 +8,11 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 dark:bg-white/5">
-                <img src="/icon/Logo%20-%20light.svg" alt="BijbelQuiz Logo" className="h-7 w-7 object-contain" />
+                <img src="/icon/Logo%20-%20dark.svg" alt="BijbelQuiz Logo" className="h-7 w-7 object-contain dark:hidden" />
+                <img src="/icon/Logo%20-%20light.svg" alt="BijbelQuiz Logo" className="hidden h-7 w-7 object-contain dark:block" />
               </div>
-              <span className="font-serif text-xl font-bold tracking-tight text-white/90 dark:text-zinc-100">
-                Bijbel<span className="text-white/70 dark:text-zinc-400">Quiz</span>
+              <span className="font-serif text-xl font-bold tracking-tight text-white dark:text-zinc-100">
+                Bijbel<span className="text-[#9db5dc] dark:text-[#9db5dc]">Quiz</span>
               </span>
             </Link>
             <p className="mt-4 text-sm text-white/70 dark:text-zinc-400">
@@ -52,7 +53,9 @@ export function Footer() {
             © {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.
           </p>
           <div className="flex items-center gap-4 text-sm text-white/70 dark:text-zinc-400">
-            <span>Gemaakt door Alex Lamper</span>
+            <span>
+              Gemaakt door <span className="text-white dark:text-[#9db5dc]">Alex Lamper</span>
+            </span>
           </div>
         </div>
       </div>
