@@ -15,7 +15,7 @@ export function CTASection() {
             Download de app of speel direct online. Begin vandaag nog met het ontdekken van de Bijbel op een leuke en interactieve manier.
           </p>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
             <Button className="h-14 rounded-2xl bg-primary px-8 text-base font-medium text-white hover:bg-primary/90 dark:bg-[#5b7dd9] dark:hover:bg-[#4a6bc7]" asChild>
               <Link href="/quizzes">Speel direct online</Link>
             </Button>

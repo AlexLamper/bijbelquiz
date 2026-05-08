@@ -4,10 +4,10 @@ import Image from "next/image"
 import Link from "next/link"
 
 const benefits = [
-  "Alle quizcategorieën en premium quizzen ontgrendeld",
-  "Onbeperkt rooms maken voor samen spelen",
-  "Uitgebreide voortgang en gedetailleerde statistieken",
-  "Toegang tot nieuwe quizzen en inhoud",
+  "Alle quizcategorieen en premium quizzen ontgrendeld",
+  "Onbeperkt rooms maken om samen te spelen",
+  "Uitgebreide voortgang en statistieken",
+  "Toegang tot nieuwe quizzen en content",
 ]
 
 export function PremiumSection() {
@@ -30,7 +30,7 @@ export function PremiumSection() {
               </h2>
 
               <p className="mt-5 max-w-lg leading-relaxed text-white/75">
-                Premium geeft je volledige toegang tot alle quizzen, onbeperkte mogelijkheid om samen te spelen met vrienden en familie, en gedetailleerde voortgang om je groei in Bijbelkennis te volgen.
+                Met Premium krijg je alle quizzen, speel je onbeperkt samen met vrienden en familie, en volg je je voortgang in detail.
               </p>
 
               <ul className="mt-7 space-y-3">
@@ -64,7 +64,7 @@ export function PremiumSection() {
                 Samen spelen
               </p>
 
-              <div className="rounded-2xl border border-white/15 bg-white/5 p-3 shadow-[0_18px_50px_-34px_rgba(0,0,0,0.65)] dark:border-zinc-700 dark:bg-zinc-900/60">
+              <div className="rounded-xl shadow-[0_20px_45px_-20px_rgba(255,255,255,0.65)]">
                 <div className="relative aspect-16/10 overflow-hidden rounded-xl bg-black/25">
                   <Image
                     src="/images/multiplayer1.png"
@@ -73,11 +73,6 @@ export function PremiumSection() {
                     sizes="(max-width: 1024px) 100vw, 45vw"
                     className="object-cover object-center"
                   />
-
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-linear-to-t from-black/75 via-black/35 to-transparent p-4">
-                    <p className="text-sm font-semibold text-white">Speel live samen met vrienden</p>
-                    <p className="mt-1 text-xs text-white/80">Zien wie het beste Bijbelkennis heeft in realtime quizzessies.</p>
-                  </div>
                 </div>
               </div>
             </div>
