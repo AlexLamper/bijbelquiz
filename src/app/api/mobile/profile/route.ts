@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { connectDB, User, UserProgress } from '@/database';
 import jwt from 'jsonwebtoken';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 export async function GET(req: Request) {
   try {
@@ -24,6 +25,7 @@ export async function GET(req: Request) {
     if (!user) {
       return NextResponse.json({ error: 'User not found' }, { status: 404 });
     }
+    const premium = getPremiumSnapshot(user);
 
     // Fetch recent progress to show on the profile (last 5 attempts)
     const recentProgress = await UserProgress.find({ userId: decoded.userId })
@@ -49,7 +51,10 @@ export async function GET(req: Request) {
       xp: user.xp || 0,
       level: user.level || 1,
       levelTitle: user.levelTitle || 'Beginner',
-      isPremium: user.isPremium || false,
+      isPremium: premium.isPremium,
+      premiumStripe: premium.premiumStripe,
+      premiumStore: premium.premiumStore,
+      storePremiumExpiresAt: premium.storePremiumExpiresAt,
       streak: user.streak || 0,
       bestStreak: user.bestStreak || 0,
       badges: user.badges || [],

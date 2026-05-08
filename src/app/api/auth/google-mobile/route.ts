@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, User } from '@/database';
 import { encode } from 'next-auth/jwt';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 export async function POST(req: NextRequest) {
   try {
@@ -36,12 +37,14 @@ export async function POST(req: NextRequest) {
       await user.save();
     }
 
+    const premium = getPremiumSnapshot(user);
+
     // Create JWT token in NextAuth format
     const tokenPayload = {
       id: user._id.toString(),
       email: user.email,
       name: user.name,
-      isPremium: user.isPremium,
+      isPremium: premium.isPremium,
       xp: user.xp,
       role: user.role,
     };
@@ -58,7 +61,10 @@ export async function POST(req: NextRequest) {
         email: user.email,
         name: user.name,
         image: user.image,
-        isPremium: user.isPremium,
+        isPremium: premium.isPremium,
+        premiumStripe: premium.premiumStripe,
+        premiumStore: premium.premiumStore,
+        storePremiumExpiresAt: premium.storePremiumExpiresAt,
         xp: user.xp,
         onboardingCompleted: !!(user.onboarding && user.onboarding.knowledgeLevel),
       },

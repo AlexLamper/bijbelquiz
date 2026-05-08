@@ -3,6 +3,7 @@ import GoogleProvider from 'next-auth/providers/google';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import { connectDB, User } from '@/database';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -43,10 +44,10 @@ export const authOptions: NextAuthOptions = {
         }
 
         return {
+          ...getPremiumSnapshot(user),
           id: user._id.toString(),
           email: user.email,
           name: user.name,
-          isPremium: user.isPremium,
           xp: user.xp,
           role: user.role,
           image: user.image,
@@ -94,7 +95,7 @@ export const authOptions: NextAuthOptions = {
           if (dbUser) {
             token.id = dbUser._id.toString();
             token.name = dbUser.name || user.name || token.name;
-            token.isPremium = dbUser.isPremium;
+            token.isPremium = getPremiumSnapshot(dbUser).isPremium;
             token.xp = dbUser.xp;
             token.role = dbUser.role;
             token.image = dbUser.image || user.image || token.image;
@@ -102,7 +103,7 @@ export const authOptions: NextAuthOptions = {
         } else {
           token.id = user.id;
           token.name = user.name || token.name;
-          token.isPremium = user.isPremium;
+          token.isPremium = Boolean(user.isPremium);
           token.xp = user.xp;
           token.role = user.role;
           token.image = user.image || token.image;
@@ -121,7 +122,7 @@ export const authOptions: NextAuthOptions = {
           const dbUser = await User.findById(token.id);
           if (dbUser) {
             token.name = dbUser.name || token.name;
-            token.isPremium = dbUser.isPremium;
+            token.isPremium = getPremiumSnapshot(dbUser).isPremium;
             token.xp = dbUser.xp;
             token.role = dbUser.role;
             token.image = dbUser.image || token.image;

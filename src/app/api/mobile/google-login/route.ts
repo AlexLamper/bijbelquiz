@@ -3,6 +3,7 @@ import connectDB from '@/database/db';
 import User from '@/database/models/User';
 import jwt from 'jsonwebtoken';
 import { OAuth2Client } from 'google-auth-library';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
@@ -68,6 +69,7 @@ export async function POST(req: Request) {
     // Generate JWT token exactly like the email/password login
     const secret = process.env.NEXTAUTH_SECRET || process.env.JWT_SECRET || 'development_fallback_secret';
     const token = jwt.sign({ userId: user._id }, secret, { expiresIn: '30d' });
+    const premium = getPremiumSnapshot(user);
 
     // Return the standard expected payload format
     return NextResponse.json({
@@ -77,7 +79,10 @@ export async function POST(req: Request) {
         name: user.name,
         email: user.email,
         xp: user.xp || 0,
-        isPremium: user.isPremium || false,
+        isPremium: premium.isPremium,
+        premiumStripe: premium.premiumStripe,
+        premiumStore: premium.premiumStore,
+        storePremiumExpiresAt: premium.storePremiumExpiresAt,
       }
     }, { status: 200 });
 

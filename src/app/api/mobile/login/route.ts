@@ -3,6 +3,7 @@ import connectDB from '@/database/db';
 import User from '@/database/models/User';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 export async function POST(req: Request) {
   try {
@@ -31,6 +32,7 @@ export async function POST(req: Request) {
 
     const secret = process.env.NEXTAUTH_SECRET || process.env.JWT_SECRET || 'development_fallback_secret';
     const token = jwt.sign({ userId: user._id }, secret, { expiresIn: '30d' });
+    const premium = getPremiumSnapshot(user);
 
     return NextResponse.json({
       token,
@@ -39,7 +41,10 @@ export async function POST(req: Request) {
         name: user.name,
         email: user.email,
         xp: user.xp || 0,
-        isPremium: user.isPremium || false,
+        isPremium: premium.isPremium,
+        premiumStripe: premium.premiumStripe,
+        premiumStore: premium.premiumStore,
+        storePremiumExpiresAt: premium.storePremiumExpiresAt,
       }
     }, { status: 200 });
 

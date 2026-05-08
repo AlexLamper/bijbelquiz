@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, User } from '@/database';
 import { normalizeUserSettings } from '@/lib/user-settings';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 export async function GET(req: NextRequest) {
   const session = await getSession(req);
@@ -18,13 +19,18 @@ export async function GET(req: NextRequest) {
       return new NextResponse('User not found', { status: 404 });
     }
 
+    const premium = getPremiumSnapshot(user);
+
     return NextResponse.json({
       id: user._id,
       name: user.name,
       email: user.email,
       image: user.image,
       xp: user.xp || 0,
-      isPremium: !!user.isPremium,
+      isPremium: premium.isPremium,
+      premiumStripe: premium.premiumStripe,
+      premiumStore: premium.premiumStore,
+      storePremiumExpiresAt: premium.storePremiumExpiresAt,
       streak: user.streak || 0,
       level: user.level || 1,
       levelTitle: user.levelTitle || 'Manna Verzamelaar',

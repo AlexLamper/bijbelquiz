@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, User } from '@/database';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 export async function PUT(req: NextRequest) {
   try {
@@ -47,6 +48,8 @@ export async function PUT(req: NextRequest) {
       await user.save();
     }
 
+    const premium = getPremiumSnapshot(user);
+
     return NextResponse.json({
       success: true,
       user: {
@@ -55,7 +58,10 @@ export async function PUT(req: NextRequest) {
         email: user.email,
         image: user.image,
         xp: user.xp,
-        isPremium: user.isPremium
+        isPremium: premium.isPremium,
+        premiumStripe: premium.premiumStripe,
+        premiumStore: premium.premiumStore,
+        storePremiumExpiresAt: premium.storePremiumExpiresAt,
       }
     });
   } catch (error) {

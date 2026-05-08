@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, User } from '@/database';
 import bcrypt from 'bcryptjs';
 import { encode } from 'next-auth/jwt';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 
 export async function POST(req: NextRequest) {
   try {
@@ -23,13 +24,14 @@ export async function POST(req: NextRequest) {
     if (!isValid) {
       return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
     }
+    const premium = getPremiumSnapshot(user);
 
     // Create the same payload NextAuth uses
     const tokenPayload = {
       id: user._id.toString(),
       email: user.email,
       name: user.name,
-      isPremium: user.isPremium,
+      isPremium: premium.isPremium,
       xp: user.xp,
       role: user.role,
       // Add expiration if needed, otherwise uses default
@@ -46,7 +48,10 @@ export async function POST(req: NextRequest) {
         id: user._id.toString(),
         email: user.email,
         name: user.name,
-        isPremium: user.isPremium,
+        isPremium: premium.isPremium,
+        premiumStripe: premium.premiumStripe,
+        premiumStore: premium.premiumStore,
+        storePremiumExpiresAt: premium.storePremiumExpiresAt,
         xp: user.xp,
         onboardingCompleted: !!(user.onboarding && user.onboarding.knowledgeLevel),
       },

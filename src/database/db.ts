@@ -8,6 +8,7 @@ import './models/Category';
 import './models/Payment';
 import './models/UserProgress';
 import './models/MultiplayerRoom';
+import './models/WebhookEvent';
 
 interface MongooseCache {
   conn: typeof mongoose | null;

@@ -13,3 +13,5 @@ export { default as Lead } from './models/Lead';
 export * from './models/Lead';
 export { default as MultiplayerRoom } from './models/MultiplayerRoom';
 export * from './models/MultiplayerRoom';
+export { default as WebhookEvent } from './models/WebhookEvent';
+export * from './models/WebhookEvent';

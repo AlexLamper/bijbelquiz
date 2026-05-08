@@ -67,7 +67,7 @@ export function PremiumSection() {
               <div className="rounded-2xl border border-white/15 bg-white/5 p-3 shadow-[0_18px_50px_-34px_rgba(0,0,0,0.65)] dark:border-zinc-700 dark:bg-zinc-900/60">
                 <div className="relative aspect-16/10 overflow-hidden rounded-xl bg-black/25">
                   <Image
-                    src="/images/multiplayer.png"
+                    src="/images/multiplayer1.png"
                     alt="Samen spelen in BijbelQuiz"
                     fill
                     sizes="(max-width: 1024px) 100vw, 45vw"
