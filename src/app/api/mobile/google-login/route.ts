@@ -4,8 +4,15 @@ import User from '@/database/models/User';
 import jwt from 'jsonwebtoken';
 import { OAuth2Client } from 'google-auth-library';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import {
+  getAllowedGoogleAudiences,
+  getPrimaryAudience,
+  isGoogleAudienceValid,
+  isGoogleEmailVerified,
+  isGoogleIssuerValid,
+} from '@/lib/auth/google-id-token';
 
-const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+const client = new OAuth2Client();
 
 export async function POST(req: Request) {
   try {
@@ -17,17 +24,51 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Google ID token is required' }, { status: 400 });
     }
 
-    // Verify the Google token
-    const ticket = await client.verifyIdToken({
-      idToken,
-      // Pass the Web Client ID here because Google signs the token with it
-      audience: process.env.GOOGLE_CLIENT_ID,
-    });
+    const ticket = await client.verifyIdToken({ idToken });
 
     const payload = ticket.getPayload();
-    
+
     if (!payload || !payload.email) {
+      console.error('[GOOGLE_LOGIN_AUTH_FAILED]', {
+        reason: 'missing_payload_or_email',
+        aud: payload ? getPrimaryAudience(payload) : undefined,
+        iss: payload?.iss,
+        sub: payload?.sub,
+      });
       return NextResponse.json({ error: 'Invalid Google token' }, { status: 401 });
+    }
+
+    const allowedAudiences = getAllowedGoogleAudiences();
+    const audience = getPrimaryAudience(payload);
+
+    if (!isGoogleIssuerValid(payload.iss)) {
+      console.error('[GOOGLE_LOGIN_AUTH_FAILED]', {
+        reason: 'invalid_issuer',
+        aud: audience,
+        iss: payload.iss,
+        sub: payload.sub,
+      });
+      return NextResponse.json({ error: 'Invalid Google token issuer' }, { status: 401 });
+    }
+
+    if (!isGoogleAudienceValid(payload.aud, allowedAudiences)) {
+      console.error('[GOOGLE_LOGIN_AUTH_FAILED]', {
+        reason: 'invalid_audience',
+        aud: audience,
+        iss: payload.iss,
+        sub: payload.sub,
+      });
+      return NextResponse.json({ error: 'Invalid Google token audience' }, { status: 401 });
+    }
+
+    if (!isGoogleEmailVerified(payload.email_verified)) {
+      console.error('[GOOGLE_LOGIN_AUTH_FAILED]', {
+        reason: 'email_not_verified',
+        aud: audience,
+        iss: payload.iss,
+        sub: payload.sub,
+      });
+      return NextResponse.json({ error: 'Google account email is not verified' }, { status: 401 });
     }
 
     const { email, name, picture, sub: googleId } = payload;
@@ -87,7 +128,22 @@ export async function POST(req: Request) {
     }, { status: 200 });
 
   } catch (error) {
-    console.error('Google Mobile Login Error:', error);
+    const errorMessage = error instanceof Error ? error.message : 'unknown_error';
+    if (typeof errorMessage === 'string' && errorMessage.toLowerCase().includes('token')) {
+      console.error('[GOOGLE_LOGIN_AUTH_FAILED]', {
+        reason: 'invalid_token',
+        aud: undefined,
+        iss: undefined,
+        sub: undefined,
+        message: errorMessage,
+      });
+      return NextResponse.json({ error: 'Invalid Google token' }, { status: 401 });
+    }
+
+    console.error('[GOOGLE_MOBILE_LOGIN_ERROR]', {
+      reason: 'unexpected_server_error',
+      message: errorMessage,
+    });
     return NextResponse.json({ error: 'Internal server error during Google login' }, { status: 500 });
   }
 }
