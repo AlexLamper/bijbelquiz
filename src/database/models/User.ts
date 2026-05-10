@@ -6,6 +6,7 @@ export interface IUser extends Document {
   password?: string;
   image?: string;
   googleId?: string;
+  appleId?: string;
   isPremium: boolean;
   premiumStripe: boolean;
   premiumStore: boolean;
@@ -49,6 +50,7 @@ const UserSchema: Schema = new Schema({
   password: { type: String },
   image: { type: String },
   googleId: { type: String },
+  appleId: { type: String, unique: true, sparse: true, index: true },
   isPremium: { type: Boolean, default: false },
   premiumStripe: { type: Boolean, default: false },
   premiumStore: { type: Boolean, default: false },
