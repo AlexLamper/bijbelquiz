@@ -14,6 +14,20 @@ function getJwtSecret() {
   return process.env.NEXTAUTH_SECRET || process.env.JWT_SECRET || 'development_fallback_secret';
 }
 
+function getAppleClientAudiences() {
+  const clientIds = (process.env.APPLE_CLIENT_IDS || '')
+    .split(',')
+    .map((value) => value.trim())
+    .filter(Boolean);
+
+  const legacyClientId = process.env.APPLE_CLIENT_ID?.trim();
+  if (legacyClientId) {
+    clientIds.push(legacyClientId);
+  }
+
+  return [...new Set(clientIds)];
+}
+
 function normalizeEmail(value?: string) {
   return value?.trim().toLowerCase() || undefined;
 }
@@ -50,9 +64,9 @@ export async function POST(req: Request) {
       );
     }
 
-    const clientId = process.env.APPLE_CLIENT_ID;
-    if (!clientId) {
-      console.error('[APPLE_LOGIN_SERVER_CONFIG_ERROR] APPLE_CLIENT_ID is not set');
+    const appleAudiences = getAppleClientAudiences();
+    if (appleAudiences.length === 0) {
+      console.error('[APPLE_LOGIN_SERVER_CONFIG_ERROR] APPLE_CLIENT_IDS or APPLE_CLIENT_ID is not set');
       return NextResponse.json(
         { error: 'Server configuration error' },
         { status: 500 },
@@ -62,7 +76,7 @@ export async function POST(req: Request) {
     let applePayload: AppleIdTokenPayload;
     try {
       applePayload = (await appleSignin.verifyIdToken(identityToken, {
-        audience: clientId,
+        audience: appleAudiences.length === 1 ? appleAudiences[0] : appleAudiences,
       })) as AppleIdTokenPayload;
     } catch (error) {
       const message = error instanceof Error ? error.message : 'unknown_error';
