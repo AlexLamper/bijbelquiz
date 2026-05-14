@@ -33,7 +33,7 @@ export async function GET(req: NextRequest) {
       storePremiumExpiresAt: premium.storePremiumExpiresAt,
       streak: user.streak || 0,
       level: user.level || 1,
-      levelTitle: user.levelTitle || 'Manna Verzamelaar',
+      levelTitle: user.levelTitle || 'Zoeker',
       onboardingCompleted: !!(user.onboarding && user.onboarding.knowledgeLevel),
       onboarding: {
         bibleReadingFrequency: user.onboarding?.bibleReadingFrequency || '',

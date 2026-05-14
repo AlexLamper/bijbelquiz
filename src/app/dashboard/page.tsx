@@ -83,7 +83,6 @@ export default async function DashboardPage() {
       streak={streak}
       xp={xp}
       level={levelInfo.level}
-      levelTitle={levelInfo.title}
       levelProgress={levelInfo.progressPercentage}
       totalQuizzesDone={user?.quizzesPlayed || 0}
       userName={session?.user?.name?.split(' ')[0] || 'Gast'}

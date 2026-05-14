@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Award, BookOpen, CalendarDays, Play, Users } from 'lucide-react';
+import { ArrowRight, Award, BookOpen, CalendarDays, Play, Trophy, Users } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -34,7 +34,6 @@ interface DashboardHomeClientProps {
   streak: number;
   xp: number;
   level: number;
-  levelTitle: string;
   levelProgress: number;
   totalQuizzesDone: number;
   userName: string;
@@ -68,8 +67,9 @@ export default function DashboardHomeClient({
   quizzes,
   recentProgress,
   streak,
+  xp,
   level,
-  levelTitle,
+  levelProgress,
   totalQuizzesDone,
   userName,
   isPremium,
@@ -116,13 +116,21 @@ export default function DashboardHomeClient({
                 </div>
               </div>
 
-              <div className="grid w-full grid-cols-3 gap-2 xl:flex xl:w-auto xl:justify-end xl:pt-1">
+              <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-4 xl:flex xl:w-auto xl:justify-end xl:pt-1">
+                <Badge
+                  variant="outline"
+                  className="h-8 min-w-0 justify-center gap-1 border-border bg-card px-2 text-[10px] font-medium text-foreground sm:h-9 sm:gap-1.5 sm:px-3 sm:text-xs dark:border-zinc-700 dark:bg-zinc-900/70"
+                >
+                  <Trophy className="h-3 w-3 shrink-0 text-muted-foreground sm:h-3.5 sm:w-3.5" />
+                  <span className="truncate">{xp.toLocaleString('nl-NL')} XP</span>
+                </Badge>
+
                 <Badge
                   variant="outline"
                   className="h-8 min-w-0 justify-center gap-1 border-border bg-card px-2 text-[10px] font-medium text-foreground sm:h-9 sm:gap-1.5 sm:px-3 sm:text-xs dark:border-zinc-700 dark:bg-zinc-900/70"
                 >
                   <Award className="h-3 w-3 shrink-0 text-muted-foreground sm:h-3.5 sm:w-3.5" />
-                  <span className="truncate">Niveau {level}</span>
+                  <span className="truncate">Niveau {level} ({levelProgress}%)</span>
                 </Badge>
 
                 <Badge

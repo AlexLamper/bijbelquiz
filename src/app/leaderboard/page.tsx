@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
 
 import { authOptions } from '@/lib/auth';
-import { getLeaderboard, LeaderboardPeriod, parseLeaderboardPeriod } from '@/lib/leaderboard';
+import { getLeaderboardResult, LeaderboardPeriod, parseLeaderboardPeriod } from '@/lib/leaderboard';
 import LeaderboardClient from './LeaderboardClient';
 
 export const metadata: Metadata = {
@@ -32,12 +32,13 @@ export default async function LeaderboardPage({ searchParams }: LeaderboardPageP
 
   const resolvedSearchParams = searchParams ? await searchParams : undefined;
   const period = parseLeaderboardPeriod(resolvedSearchParams?.period) as LeaderboardPeriod;
-  const leaderboard = await getLeaderboard(period, 100);
+  const leaderboardResult = await getLeaderboardResult(period, 100, session?.user?.id);
 
   return (
     <LeaderboardClient
-      users={leaderboard}
+      users={leaderboardResult.leaderboard}
       currentUserId={session?.user?.id}
+      initialCurrentUserRank={leaderboardResult.currentUserRank}
       initialPeriod={period}
     />
   );

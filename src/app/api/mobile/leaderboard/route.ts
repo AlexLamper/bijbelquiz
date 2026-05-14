@@ -1,11 +1,14 @@
-import { NextResponse } from 'next/server';
-import { getLeaderboard, parseLeaderboardPeriod } from '@/lib/leaderboard';
+import { NextRequest, NextResponse } from 'next/server';
+import { getLeaderboardResult, parseLeaderboardPeriod } from '@/lib/leaderboard';
+import { getSession } from '@/lib/get-session';
 
-export async function GET(req: Request) {
+export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const period = parseLeaderboardPeriod(searchParams.get('period'));
-    const rows = await getLeaderboard(period, 100);
+    const session = await getSession(req);
+    const result = await getLeaderboardResult(period, 100, session?.user?.id);
+    const rows = result.leaderboard;
 
     const leaderboard = rows.map((user) => ({
       id: user._id,
@@ -21,6 +24,7 @@ export async function GET(req: Request) {
         period,
         count: leaderboard.length,
         leaderboard,
+        currentUserRank: result.currentUserRank,
       },
       { status: 200 }
     );

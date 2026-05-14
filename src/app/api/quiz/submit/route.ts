@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
-import { connectDB, UserProgress, User, Quiz, Category } from '@/database';
+import { connectDB, UserProgress, User, Quiz } from '@/database';
 import { getLevelInfo, BADGES } from '@/lib/gamification';
 import { calculateNextStreak } from '@/lib/streak';
+import { calculateAttemptXp, getHighestEarnedAttemptXp } from '@/lib/xp';
 
 export async function POST(req: NextRequest) {
   const session = await getSession(req);
@@ -18,11 +19,15 @@ export async function POST(req: NextRequest) {
       return new NextResponse("Invalid request data", { status: 400 });
     }
 
+    if (!Number.isFinite(score) || !Number.isFinite(totalQuestions) || score < 0 || totalQuestions <= 0) {
+      return new NextResponse("Invalid request data", { status: 400 });
+    }
+
     await connectDB();
 
-    const [quiz, previousBestProgress, user] = await Promise.all([
+    const [quiz, previousAttempts, user] = await Promise.all([
       Quiz.findById(quizId).select('_id rewardXp questions').lean(),
-      UserProgress.findOne({ userId: session.user.id, quizId }).sort({ score: -1 }).select('score totalQuestions').lean(),
+      UserProgress.find({ userId: session.user.id, quizId }).select('score totalQuestions').lean(),
       User.findById(session.user.id).select('_id xp streak bestStreak badges lastPlayedAt').lean(),
     ]);
 
@@ -34,24 +39,18 @@ export async function POST(req: NextRequest) {
       return new NextResponse('User not found', { status: 404 });
     }
 
-    const normalizedTotalQuestions = totalQuestions || quiz.questions?.length || 1;
-    const percentage = Math.max(0, Math.min(1, score / normalizedTotalQuestions));
+    const normalizedTotalQuestions = Math.max(1, Math.floor(totalQuestions || quiz.questions?.length || 1));
+    const normalizedScore = Math.max(0, Math.min(score, normalizedTotalQuestions));
+    const percentage = Math.max(0, Math.min(1, normalizedScore / normalizedTotalQuestions));
     const baseRewardXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
-    const calculatedXp = Math.round(baseRewardXp * percentage);
-    
-    let xpEarned = calculatedXp;
-    if (previousBestProgress) {
-      const prevNormQuestions = previousBestProgress.totalQuestions || normalizedTotalQuestions;
-      const prevPercentage = Math.max(0, Math.min(1, previousBestProgress.score / prevNormQuestions));
-      const prevCalculatedXp = Math.round(baseRewardXp * prevPercentage);
-      
-      xpEarned = Math.max(0, calculatedXp - prevCalculatedXp);
-    }
+    const calculatedXp = calculateAttemptXp(baseRewardXp, normalizedScore, normalizedTotalQuestions);
+    const previousBestXp = getHighestEarnedAttemptXp(baseRewardXp, previousAttempts);
+    const xpEarned = Math.max(0, calculatedXp - previousBestXp);
 
     await UserProgress.create({
       userId: session.user.id,
       quizId,
-      score,
+      score: normalizedScore,
       totalQuestions: normalizedTotalQuestions,
       xpEarned,
     });
@@ -63,7 +62,7 @@ export async function POST(req: NextRequest) {
     const bestStreak = Math.max(user.bestStreak || 0, nextStreak);
 
     // Recalculate metrics based on all user progress
-    const allProgress = await UserProgress.find({ userId: session.user.id }).lean();
+    const allProgress = await UserProgress.find({ userId: session.user.id }).select('quizId score totalQuestions').lean();
     const totalQuizzes = allProgress.length;
     let totalScoreSum = 0;
     let totalQuestionSum = 0;
@@ -110,7 +109,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       xpEarned,
-      farmPrevented: !!previousBestProgress && xpEarned === 0,
+      farmPrevented: previousAttempts.length > 0 && xpEarned === 0,
       message: 'Quiz submitted successfully',
     });
   } catch (error) {

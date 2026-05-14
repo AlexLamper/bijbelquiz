@@ -96,6 +96,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const [earnedXp, setEarnedXp] = useState<number | null>(null);
 
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isLeaveDialogOpen, setIsLeaveDialogOpen] = useState(false);
   const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
   const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
   const [showExplanation, setShowExplanation] = useState(true);
@@ -110,6 +111,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const visibleBibleReference = isPremium
     ? currentQuestion.bibleReference
     : currentQuestion.bibleReferencePreview;
+  const maxPossibleXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
 
   const handleAnswer = (answerIndex: number) => {
     if (hasAnswered) return;
@@ -303,7 +305,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
               <Button
                 variant="ghost"
                 className="h-8 px-0 text-[#355384] hover:bg-transparent hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-200"
-                onClick={() => router.push('/quizzes')}
+                onClick={() => setIsLeaveDialogOpen(true)}
               >
                 <ArrowLeft className="mr-1.5 h-4 w-4" />
                 Quizzen
@@ -574,6 +576,45 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 onClick={() => setIsSettingsOpen(false)}
               >
                 Sluiten
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isLeaveDialogOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4"
+          onClick={() => setIsLeaveDialogOpen(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-xl border border-[#d7e1ee] bg-white p-5 shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h2 className="text-base font-semibold text-[#1f2f4b] dark:text-zinc-100">Quiz verlaten?</h2>
+            <p className="mt-2 text-sm text-[#4e5f79] dark:text-zinc-300">
+              Weet je zeker dat je wilt stoppen? Je kunt tot{' '}
+              <span className="font-semibold text-[#24395f] dark:text-zinc-100">{maxPossibleXp} XP</span> mislopen.
+            </p>
+            <p className="mt-2 text-sm text-[#4e5f79] dark:text-zinc-300">
+              Als je nu weggaat, krijg je geen XP en wordt je voortgang niet opgeslagen.
+            </p>
+
+            <div className="mt-5 flex justify-end gap-2">
+              <Button
+                type="button"
+                variant="outline"
+                className="h-9 rounded-md border-[#d7e1ee] bg-white px-3 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                onClick={() => setIsLeaveDialogOpen(false)}
+              >
+                Blijven
+              </Button>
+              <Button
+                type="button"
+                className="h-9 rounded-md bg-[#6f8ed4] px-3 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
+                onClick={() => router.push('/quizzes')}
+              >
+                Quiz verlaten
               </Button>
             </div>
           </div>

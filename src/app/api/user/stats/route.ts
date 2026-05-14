@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
     // Calculate stats
     const totalQuizzes = progressData.length;
     const totalScore = progressData.reduce((sum, p) => sum + p.score, 0);
-    const totalQuestions = progressData.reduce((sum, p) => sum + p.totalQuestions, 0);
+    const totalQuestions = progressData.reduce((sum, p) => sum + (p.totalQuestions || 1), 0);
     const avgScore = totalQuestions > 0 ? Math.round((totalScore / totalQuestions) * 100) : 0;
 
     return NextResponse.json({

@@ -20,6 +20,7 @@ interface LeaderboardUser {
 interface LeaderboardClientProps {
   users: LeaderboardUser[];
   currentUserId?: string;
+  initialCurrentUserRank?: number | null;
   initialPeriod: 'weekly' | 'monthly' | 'all-time';
 }
 
@@ -46,17 +47,20 @@ const PERIOD_LABELS: Record<LeaderboardPeriod, string> = {
   'all-time': 'All-time',
 };
 
-export default function LeaderboardClient({ users, currentUserId, initialPeriod }: LeaderboardClientProps) {
+export default function LeaderboardClient({ users, currentUserId, initialCurrentUserRank, initialPeriod }: LeaderboardClientProps) {
   const [selectedPeriod, setSelectedPeriod] = useState<LeaderboardPeriod>(initialPeriod);
   const [leaderboardUsers, setLeaderboardUsers] = useState<LeaderboardUser[]>(users);
   const [isLoadingPeriod, setIsLoadingPeriod] = useState(false);
+  const [currentUserRank, setCurrentUserRank] = useState<number | null>(initialCurrentUserRank ?? null);
 
   useEffect(() => {
     setSelectedPeriod(initialPeriod);
     setLeaderboardUsers(users);
-  }, [initialPeriod, users]);
+    setCurrentUserRank(initialCurrentUserRank ?? null);
+  }, [initialCurrentUserRank, initialPeriod, users]);
 
-  const currentUserRank = leaderboardUsers.findIndex((user) => user._id === currentUserId) + 1;
+  const visibleCurrentUserRank = leaderboardUsers.findIndex((user) => user._id === currentUserId) + 1;
+  const resolvedCurrentUserRank = currentUserRank || (visibleCurrentUserRank > 0 ? visibleCurrentUserRank : null);
   const topXp = leaderboardUsers[0]?.xp || 0;
 
   const loadPeriod = async (period: LeaderboardPeriod) => {
@@ -75,6 +79,7 @@ export default function LeaderboardClient({ users, currentUserId, initialPeriod 
 
       const payload = await response.json();
       setLeaderboardUsers(payload?.leaderboard || []);
+      setCurrentUserRank(typeof payload?.currentUserRank === 'number' ? payload.currentUserRank : null);
     } catch (error) {
       console.error('[LEADERBOARD_PERIOD_LOAD]', error);
       // Keep current list if request fails.
@@ -144,17 +149,17 @@ export default function LeaderboardClient({ users, currentUserId, initialPeriod 
           <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
             <CardContent className="p-3.5">
               <p className="text-xs uppercase tracking-wider text-muted-foreground">Jouw positie</p>
-              <p className="mt-1 text-xl font-semibold text-[#24395f] dark:text-zinc-100">{currentUserRank > 0 ? `#${currentUserRank}` : '-'}</p>
+              <p className="mt-1 text-xl font-semibold text-[#24395f] dark:text-zinc-100">{resolvedCurrentUserRank ? `#${resolvedCurrentUserRank}` : '-'}</p>
             </CardContent>
           </Card>
         </div>
 
-        {currentUserRank > 0 && (
+        {resolvedCurrentUserRank && (
           <Card className="mb-5 border-[#b8cff0] bg-[#edf4ff] py-0 shadow-sm dark:border-[#2d4a7a] dark:bg-[#192d48]">
             <CardContent className="flex flex-wrap items-center justify-between gap-3 p-4">
               <p className="text-sm font-medium text-[#1e3a6e] dark:text-[#c5d9f5]">
                 Je staat momenteel op plek{' '}
-                <span className="font-bold text-[#4f6faa] dark:text-[#6f8ed4]">#{currentUserRank}</span>{' '}
+                <span className="font-bold text-[#4f6faa] dark:text-[#6f8ed4]">#{resolvedCurrentUserRank}</span>{' '}
                 in de ranglijst.
               </p>
               <Badge className="bg-[#6f8ed4] text-white dark:bg-[#6f8ed4] dark:text-white">

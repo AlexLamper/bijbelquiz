@@ -1,4 +1,5 @@
 import { connectDB, User, UserProgress } from '@/database';
+import mongoose from 'mongoose';
 
 export type LeaderboardPeriod = 'weekly' | 'monthly' | 'all-time';
 
@@ -12,6 +13,11 @@ export interface LeaderboardEntry {
   levelTitle?: string;
   isPremium?: boolean;
   createdAt?: string;
+}
+
+export interface LeaderboardResult {
+  leaderboard: LeaderboardEntry[];
+  currentUserRank: number | null;
 }
 
 function getPeriodStartDate(period: LeaderboardPeriod): Date | null {
@@ -40,7 +46,7 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
 
   if (period === 'all-time') {
     const users = await User.find({ xp: { $gt: 0 } })
-      .sort({ xp: -1 })
+      .sort({ xp: -1, createdAt: 1, _id: 1 })
       .limit(limit)
       .select('name email xp streak badges image levelTitle isPremium createdAt')
       .lean();
@@ -71,7 +77,7 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
         xp: { $sum: '$xpEarned' },
       },
     },
-    { $sort: { xp: -1 } },
+    { $sort: { xp: -1, _id: 1 } },
     { $limit: limit },
     {
       $lookup: {
@@ -108,4 +114,83 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
     isPremium: Boolean(row.isPremium),
     createdAt: row.createdAt ? new Date(row.createdAt).toISOString() : new Date(0).toISOString(),
   }));
+}
+
+async function getAllTimeUserRank(userId: string): Promise<number | null> {
+  const user = await User.findById(userId).select('xp').lean();
+  if (!user || !user.xp || user.xp <= 0) {
+    return null;
+  }
+
+  const higherXpCount = await User.countDocuments({ xp: { $gt: user.xp } });
+  return higherXpCount + 1;
+}
+
+async function getPeriodUserRank(userId: string, periodStart: Date): Promise<number | null> {
+  const userObjectId = new mongoose.Types.ObjectId(userId);
+
+  const userXpRows = await UserProgress.aggregate([
+    { $match: { userId: userObjectId, completedAt: { $gte: periodStart }, xpEarned: { $gt: 0 } } },
+    {
+      $group: {
+        _id: '$userId',
+        xp: { $sum: '$xpEarned' },
+      },
+    },
+  ]);
+
+  const userXp = Number(userXpRows[0]?.xp || 0);
+  if (userXp <= 0) {
+    return null;
+  }
+
+  const higherXpRows = await UserProgress.aggregate([
+    { $match: { completedAt: { $gte: periodStart }, xpEarned: { $gt: 0 } } },
+    {
+      $group: {
+        _id: '$userId',
+        xp: { $sum: '$xpEarned' },
+      },
+    },
+    { $match: { xp: { $gt: userXp } } },
+    { $count: 'count' },
+  ]);
+
+  const higherCount = Number(higherXpRows[0]?.count || 0);
+  return higherCount + 1;
+}
+
+export async function getUserLeaderboardRank(period: LeaderboardPeriod, userId?: string | null): Promise<number | null> {
+  if (!userId || !mongoose.Types.ObjectId.isValid(userId)) {
+    return null;
+  }
+
+  await connectDB();
+
+  if (period === 'all-time') {
+    return getAllTimeUserRank(userId);
+  }
+
+  const periodStart = getPeriodStartDate(period);
+  if (!periodStart) {
+    return null;
+  }
+
+  return getPeriodUserRank(userId, periodStart);
+}
+
+export async function getLeaderboardResult(
+  period: LeaderboardPeriod,
+  limit = 100,
+  userId?: string | null
+): Promise<LeaderboardResult> {
+  const [leaderboard, currentUserRank] = await Promise.all([
+    getLeaderboard(period, limit),
+    getUserLeaderboardRank(period, userId),
+  ]);
+
+  return {
+    leaderboard,
+    currentUserRank,
+  };
 }
