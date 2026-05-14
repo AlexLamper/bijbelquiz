@@ -87,11 +87,42 @@ export default function RootLayout({
     "@type": "WebSite",
     "name": "BijbelQuiz",
     "url": "https://www.bijbelquiz.com",
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Bijbelstudie",
+        "url": "https://www.bijbel-studie.com"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BijbelAPI",
+        "url": "https://www.bijbelapi.com"
+      }
+    ],
+    "sameAs": [
+      "https://www.bijbel-studie.com",
+      "https://www.bijbelapi.com"
+    ],
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://www.bijbelquiz.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
+  };
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BijbelQuiz",
+    "url": "https://www.bijbelquiz.com",
+    "sameAs": [
+      "https://www.bijbel-studie.com",
+      "https://www.bijbelapi.com"
+    ],
+    "knowsAbout": [
+      "Bijbelkennis",
+      "Bijbelstudie",
+      "Digitale Bijbelplatformen"
+    ]
   };
 
   return (
@@ -100,6 +131,10 @@ export default function RootLayout({
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
           />
       </head>
       <body

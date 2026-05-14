@@ -59,8 +59,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          message:
-            'Bug report e-mail is nog niet geconfigureerd op de server. Gebruik tijdelijk de directe e-mail knop.',
+          message: 'Bug report service is momenteel niet beschikbaar. Probeer het later opnieuw.',
         },
         { status: 503 }
       );
@@ -115,7 +114,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        message: 'Er ging iets mis bij het verzenden. Probeer opnieuw of stuur direct een e-mail.',
+        message: 'Er ging iets mis bij het verzenden. Probeer het opnieuw.',
       },
       { status: 500 }
     );

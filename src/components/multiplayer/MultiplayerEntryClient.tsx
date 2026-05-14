@@ -398,6 +398,7 @@ export default function MultiplayerEntryClient({
           </div>
         </div>
       </section>
+
     </div>
   );
 }

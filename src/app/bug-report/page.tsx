@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 }
 
 export default function BugReportPage() {
-  const supportEmail = process.env.NEXT_PUBLIC_BUG_REPORT_EMAIL || 'devlamper06@gmail.com'
-
   return (
     <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
       <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
@@ -27,7 +25,7 @@ export default function BugReportPage() {
 
       <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
         <div className="max-w-3xl">
-          <BugReportForm supportEmail={supportEmail} />
+          <BugReportForm />
         </div>
       </section>
     </div>

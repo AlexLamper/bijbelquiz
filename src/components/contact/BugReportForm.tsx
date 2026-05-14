@@ -1,16 +1,12 @@
 'use client';
 
-import { FormEvent, useMemo, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { AlertCircle, Bug, CheckCircle2, Loader2, Send } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-
-interface BugReportFormProps {
-  supportEmail: string;
-}
 
 interface FormState {
   name: string;
@@ -29,15 +25,10 @@ const INITIAL_FORM_STATE: FormState = {
   message: '',
 };
 
-export default function BugReportForm({ supportEmail }: BugReportFormProps) {
+export default function BugReportForm() {
   const [formState, setFormState] = useState<FormState>(INITIAL_FORM_STATE);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusState, setStatusState] = useState<StatusState>({ type: 'idle', message: '' });
-
-  const directMailTo = useMemo(() => {
-    const subject = encodeURIComponent('Bug report BijbelQuiz');
-    return `mailto:${supportEmail}?subject=${subject}`;
-  }, [supportEmail]);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -146,10 +137,6 @@ export default function BugReportForm({ supportEmail }: BugReportFormProps) {
             <Button type="submit" disabled={isSubmitting} className="gap-2">
               {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
               {isSubmitting ? 'Verzenden...' : 'Bug report verzenden'}
-            </Button>
-
-            <Button asChild variant="outline">
-              <a href={directMailTo}>Of stuur direct e-mail</a>
             </Button>
           </div>
         </form>

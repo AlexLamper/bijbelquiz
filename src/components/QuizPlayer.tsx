@@ -20,6 +20,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
 
 interface Answer {
   text: string;
@@ -97,6 +98,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isLeaveDialogOpen, setIsLeaveDialogOpen] = useState(false);
+  const [pendingLeaveHref, setPendingLeaveHref] = useState<string | null>(null);
   const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
   const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
   const [showExplanation, setShowExplanation] = useState(true);
@@ -112,6 +114,21 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     ? currentQuestion.bibleReference
     : currentQuestion.bibleReferencePreview;
   const maxPossibleXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
+  const studyTopicLink = getStudyTopicLinkForQuizTitle(quiz.title || '');
+
+  const openLeaveDialog = (href: string) => {
+    setPendingLeaveHref(href);
+    setIsLeaveDialogOpen(true);
+  };
+
+  const navigateToPendingHref = () => {
+    const href = pendingLeaveHref || '/quizzes';
+    if (href.startsWith('http://') || href.startsWith('https://')) {
+      window.location.assign(href);
+      return;
+    }
+    router.push(href);
+  };
 
   const handleAnswer = (answerIndex: number) => {
     if (hasAnswered) return;
@@ -220,6 +237,53 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     return () => mediaQuery.removeEventListener('change', listener);
   }, []);
 
+  useEffect(() => {
+    if (isFinished) {
+      return;
+    }
+
+    const onAnchorClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null;
+      const anchor = target?.closest('a');
+
+      if (!anchor || event.defaultPrevented) {
+        return;
+      }
+
+      if (anchor.target === '_blank' || anchor.hasAttribute('download')) {
+        return;
+      }
+
+      const href = anchor.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('javascript:')) {
+        return;
+      }
+
+      const destination = new URL(anchor.href, window.location.href);
+      const current = new URL(window.location.href);
+      const isSameLocation =
+        destination.pathname === current.pathname &&
+        destination.search === current.search &&
+        destination.hash === current.hash;
+
+      if (isSameLocation) {
+        return;
+      }
+
+      event.preventDefault();
+      const normalizedHref =
+        destination.origin === current.origin
+          ? `${destination.pathname}${destination.search}${destination.hash}`
+          : destination.toString();
+      openLeaveDialog(normalizedHref);
+    };
+
+    document.addEventListener('click', onAnchorClick, true);
+    return () => {
+      document.removeEventListener('click', onAnchorClick, true);
+    };
+  }, [isFinished]);
+
   if (isFinished) {
     const percentage = Math.round((score / quiz.questions.length) * 100);
     const fallbackXp = Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length));
@@ -267,6 +331,26 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     </Button>
                   </div>
                 )}
+
+                <div className="mt-4 border-t border-[#e3ebf7] pt-3 dark:border-zinc-700">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-400">Meer ontdekken</p>
+                  <a
+                    href={studyTopicLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 block text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]"
+                  >
+                    Verdiep je verder in {studyTopicLink.label} op Bijbel Studie
+                  </a>
+                  <a
+                    href="https://www.bijbelapi.com/docs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block text-xs text-muted-foreground hover:text-foreground dark:hover:text-zinc-100"
+                  >
+                    Mogelijk gemaakt met BijbelAPI
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -305,7 +389,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
               <Button
                 variant="ghost"
                 className="h-8 px-0 text-[#355384] hover:bg-transparent hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-200"
-                onClick={() => setIsLeaveDialogOpen(true)}
+                onClick={() => openLeaveDialog('/quizzes')}
               >
                 <ArrowLeft className="mr-1.5 h-4 w-4" />
                 Quizzen
@@ -585,7 +669,10 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
       {isLeaveDialogOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4"
-          onClick={() => setIsLeaveDialogOpen(false)}
+          onClick={() => {
+            setIsLeaveDialogOpen(false);
+            setPendingLeaveHref(null);
+          }}
         >
           <div
             className="w-full max-w-md rounded-xl border border-[#d7e1ee] bg-white p-5 shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
@@ -605,14 +692,17 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 type="button"
                 variant="outline"
                 className="h-9 rounded-md border-[#d7e1ee] bg-white px-3 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-                onClick={() => setIsLeaveDialogOpen(false)}
+                onClick={() => {
+                  setIsLeaveDialogOpen(false);
+                  setPendingLeaveHref(null);
+                }}
               >
                 Blijven
               </Button>
               <Button
                 type="button"
                 className="h-9 rounded-md bg-[#6f8ed4] px-3 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
-                onClick={() => router.push('/quizzes')}
+                onClick={navigateToPendingHref}
               >
                 Quiz verlaten
               </Button>

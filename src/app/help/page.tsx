@@ -24,6 +24,10 @@ export default function HelpPage() {
       title: 'Waar kan ik een probleem melden?',
       content: 'Je kunt technische problemen direct melden op de bug report pagina.',
     },
+    {
+      title: 'Waar vind ik extra uitleg over een Bijbelonderwerp?',
+      content: 'Voor extra verdieping verwijzen we op meerdere plekken naar Bijbel Studie met achtergrond en context.',
+    },
   ]
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -70,6 +74,25 @@ export default function HelpPage() {
       <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
         <div className="max-w-3xl">
           <SimpleAccordion items={faqItems} />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+        <div className="grid gap-3 md:max-w-3xl md:grid-cols-2">
+          <div className="rounded-lg border border-[#d8e1ee] bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900/70">
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Meer leren</p>
+            <p className="mt-2 text-sm text-muted-foreground">Verdiep je verder per thema via Bijbel Studie.</p>
+            <Link href="https://www.bijbel-studie.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]">
+              Naar Bijbel Studie
+            </Link>
+          </div>
+          <div className="rounded-lg border border-[#d8e1ee] bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900/70">
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Platform</p>
+            <p className="mt-2 text-sm text-muted-foreground">BijbelQuiz wordt ontwikkeld met de Nederlandse BijbelAPI.</p>
+            <Link href="https://www.bijbelapi.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]">
+              Naar BijbelAPI
+            </Link>
+          </div>
         </div>
       </section>
     </div>

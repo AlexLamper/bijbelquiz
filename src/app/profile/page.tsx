@@ -154,6 +154,38 @@ export default async function ProfilePage() {
     : null;
 
   const levelInfo = getLevelInfo(user.xp || 0);
+  let dailyVerse = {
+    reference: 'Psalm 119:105',
+    text: 'Uw woord is een lamp voor mijn voet en een licht op mijn pad.',
+  };
+
+  try {
+    const apiKey =
+      process.env.BIJBEL_API_KEY ||
+      process.env.BIJBELAPI_KEY ||
+      process.env.NEXT_PUBLIC_BIJBEL_API_KEY ||
+      '';
+
+    const response = await fetch('https://bijbelapi.com/api/daytext?version=bb', {
+      headers: {
+        Accept: 'application/json',
+        ...(apiKey ? { 'x-api-key': apiKey } : {}),
+      },
+      cache: 'no-store',
+    });
+
+    if (response.ok) {
+      const payload = await response.json();
+      if (payload?.text && (payload?.reference || (payload?.book && payload?.chapter && payload?.verse))) {
+        dailyVerse = {
+          reference: payload.reference || `${payload.book} ${payload.chapter}:${payload.verse}`,
+          text: payload.text,
+        };
+      }
+    }
+  } catch (error) {
+    console.error('[PROFILE_DAYTEXT_GET]', error);
+  }
 
   return (
     <div className="relative -mt-24 min-h-screen overflow-hidden pb-14 pt-24">
@@ -430,6 +462,16 @@ export default async function ProfilePage() {
               )}
           </section>
         )}
+
+        <section className="mt-8 border-t border-[#d9e3f1] pt-6 dark:border-zinc-700">
+          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+            <CardContent className="p-5">
+              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Dagtekst</p>
+              <p className="mt-1 text-sm font-semibold text-[#24395f] dark:text-zinc-100">{dailyVerse.reference}</p>
+              <p className="mt-2 text-[15px] leading-relaxed text-[#30466e] dark:text-zinc-300">{dailyVerse.text}</p>
+            </CardContent>
+          </Card>
+        </section>
       </section>
     </div>
   );

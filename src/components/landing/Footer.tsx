@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="bg-[#1a2942] py-12 text-white dark:border-t dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-5">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 dark:bg-white/5">
@@ -48,6 +48,25 @@ export function Footer() {
               <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacybeleid</Link></li>
               <li><Link href="/terms-of-service" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
             </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Meer van ons</h3>
+            <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
+              <li>
+                <Link href="https://www.bijbel-studie.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  Bijbel Studie
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.bijbelapi.com/docs" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  BijbelAPI
+                </Link>
+              </li>
+            </ul>
+            <p className="mt-3 text-xs text-white/60 dark:text-zinc-500">
+              BijbelQuiz wordt technisch ondersteund door de Nederlandse BijbelAPI.
+            </p>
           </div>
         </div>
 

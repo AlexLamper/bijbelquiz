@@ -183,6 +183,18 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
               <p className="mt-2 text-sm text-muted-foreground">
                 Pas je filters aan of probeer een andere zoekterm.
               </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Of verdiep je eerst in een onderwerp via{' '}
+                <a
+                  href="https://www.bijbel-studie.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]"
+                >
+                  Bijbel Studie
+                </a>
+                .
+              </p>
               <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
                 <Button
                   type="button"

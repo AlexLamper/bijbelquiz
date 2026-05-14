@@ -73,7 +73,6 @@ export default async function DashboardPage() {
     .lean() as unknown as PopulatedProgress[] : [];
 
   const levelInfo = getLevelInfo(xp);
-
   const recentProgress = JSON.parse(JSON.stringify(progressDocs.slice(0, 5)));
 
   return (

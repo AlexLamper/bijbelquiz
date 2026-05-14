@@ -23,6 +23,16 @@ export function CTASection() {
             <DownloadButtons compactOnMobile />
           </div>
 
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground dark:text-white/70">
+            <Link href="https://www.bijbel-studie.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground dark:hover:text-white">
+              Verdiep je verder via Bijbel Studie
+            </Link>
+            <span className="hidden sm:inline">•</span>
+            <Link href="https://www.bijbelapi.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground dark:hover:text-white">
+              Ontwikkeld met de Nederlandse BijbelAPI
+            </Link>
+          </div>
+
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm text-muted-foreground dark:text-white/60">
             <div className="flex items-center gap-2">
               <span className="text-xl sm:text-2xl font-semibold text-[#1a2942] dark:text-white">200+</span>
