@@ -1,4 +1,5 @@
 import QuizCard, { QuizItem } from "@/components/QuizCard"
+import Link from "next/link"
 
 interface PopularQuizzesSectionProps {
   quizzes: QuizItem[]
@@ -25,7 +26,7 @@ export function PopularQuizzesSection({ quizzes, isPremiumUser }: PopularQuizzes
         </div>
 
         <div className="mt-10 text-center">
-          <a
+          <Link
             href="/quizzes"
             className="inline-flex items-center gap-2 font-medium text-primary dark:text-zinc-300 transition-colors hover:text-[#4a6bc7]"
           >
@@ -33,7 +34,7 @@ export function PopularQuizzesSection({ quizzes, isPremiumUser }: PopularQuizzes
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

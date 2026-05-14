@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
 
 import { authOptions } from '@/lib/auth';
@@ -25,10 +24,6 @@ interface LeaderboardPageProps {
 
 export default async function LeaderboardPage({ searchParams }: LeaderboardPageProps) {
   const session = await getServerSession(authOptions);
-
-  if (!session?.user) {
-    redirect('/login?callbackUrl=/leaderboard');
-  }
 
   const resolvedSearchParams = searchParams ? await searchParams : undefined;
   const period = parseLeaderboardPeriod(resolvedSearchParams?.period) as LeaderboardPeriod;

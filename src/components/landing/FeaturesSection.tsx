@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Award } from "lucide-react"
 
@@ -7,21 +8,25 @@ const categories = [
     title: "Oude Testament",
     questions: "60+ vragen",
     imageUrl: '/images/quizzes/img1.png',
+    href: '/quizzes?category=oude-testament',
   },
   {
     title: "Nieuwe Testament",
     questions: "50+ vragen",
     imageUrl: '/images/quizzes/img2.png',
+    href: '/quizzes?category=nieuwe-testament',
   },
   {
     title: "Bijbelse Figuren",
     questions: "40+ vragen",
     imageUrl: '/images/quizzes/img3.png',
+    href: '/quizzes?category=bijbelse-figuren',
   },
   {
     title: "Thema's & Verhalen",
     questions: "30+ vragen",
     imageUrl: '/images/quizzes/img4.png',
+    href: '/quizzes?category=verhalen',
   },
 ]
 
@@ -55,30 +60,31 @@ export function FeaturesSection() {
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category, index) => (
-            <Card 
-              key={index}
-              className="group relative h-32 overflow-hidden rounded-2xl border border-slate-200/70 dark:border-white/10 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-            >
-              <div className="absolute inset-0">
-                <Image
-                  src={category.imageUrl}
-                  alt={category.title}
-                  fill
-                  quality={80}
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-                />
-              </div>
-              <div className="absolute inset-0 bg-black/45" />
-              <CardContent className="relative z-10 flex h-full flex-col items-center justify-center p-4 text-center">
-                <h3 className="font-serif text-lg font-semibold text-white drop-shadow-md">
-                  {category.title}
-                </h3>
-                <p className="mt-1 text-sm text-white/90">
-                  {category.questions}
-                </p>
-              </CardContent>
-            </Card>
+            <Link key={index} href={category.href} className="block">
+              <Card
+                className="group relative h-32 overflow-hidden rounded-2xl border border-slate-200/70 dark:border-white/10 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="absolute inset-0">
+                  <Image
+                    src={category.imageUrl}
+                    alt={category.title}
+                    fill
+                    quality={80}
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-black/45" />
+                <CardContent className="relative z-10 flex h-full flex-col items-center justify-center p-4 text-center">
+                  <h3 className="font-serif text-lg font-semibold text-white drop-shadow-md">
+                    {category.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-white/90">
+                    {category.questions}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 

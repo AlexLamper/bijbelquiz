@@ -25,9 +25,25 @@ export default function HelpPage() {
       content: 'Je kunt technische problemen direct melden op de bug report pagina.',
     },
   ]
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.title,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.content,
+      },
+    })),
+  };
 
   return (
     <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
         <div className="rounded-2xl border border-[#d8e1ee] bg-[linear-gradient(140deg,#ffffff,#f3f8ff)] p-6 shadow-sm dark:border-zinc-700 dark:bg-[linear-gradient(140deg,rgba(24,24,27,0.9),rgba(39,39,42,0.85))]">
           <div className="inline-flex items-center gap-2 rounded-full bg-[#e9eff8] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#355384] dark:bg-[#6f8ed4] dark:text-white">

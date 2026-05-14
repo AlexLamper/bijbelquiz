@@ -7,6 +7,10 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/premium/success'],
     },
-    sitemap: 'https://www.bijbelquiz.com/sitemap.xml',
+    sitemap: [
+      'https://www.bijbelquiz.com/sitemap.xml',
+      'https://www.bijbelquiz.com/sitemaps/static.xml',
+      'https://www.bijbelquiz.com/sitemaps/quizzes.xml',
+    ],
   };
 }

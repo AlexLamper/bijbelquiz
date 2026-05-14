@@ -15,7 +15,7 @@ import { Footer } from '@/components/landing/Footer';
 import { DownloadButtons } from '@/components/landing/DownloadButtons';
 
 export const metadata: Metadata = {
-  title: 'BijbelQuiz - Gratis Online Bijbelquizzen & Geloofsverdieping',
+  title: 'BijbelQuiz - Gratis Online Bijbelquizzen',
   description: 'Test je kennis van de Bijbel met honderden gratis vragen. Van makkelijke quizzen voor beginners tot diepgaande studies voor gevorderden. Begin direct!',
   alternates: {
     canonical: '/',

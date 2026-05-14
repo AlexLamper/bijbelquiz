@@ -1,6 +1,5 @@
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import PremiumOfferLayout from '@/components/premium/PremiumOfferLayout';
 
@@ -20,10 +19,6 @@ export const metadata: Metadata = {
 
 export default async function PremiumPage() {
   const session = await getServerSession(authOptions);
-
-  if (!session) {
-    redirect('/login?callbackUrl=/premium');
-  }
 
   const isPremium = session?.user?.isPremium;
   const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';

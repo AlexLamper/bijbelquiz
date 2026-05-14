@@ -25,6 +25,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
               <li><Link href="/quizzes" className="hover:text-white transition-colors">Alle Quizzen</Link></li>
               <li><Link href="/leaderboard" className="hover:text-white transition-colors">Ranglijst</Link></li>
+              <li><Link href="/multiplayer" className="hover:text-white transition-colors">Samen spelen</Link></li>
             </ul>
           </div>
 
@@ -41,7 +42,9 @@ export function Footer() {
           <div>
             <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Informatie</h3>
             <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
+              <li><Link href="/help" className="hover:text-white transition-colors">Helpcentrum</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/bug-report" className="hover:text-white transition-colors">Bug report</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacybeleid</Link></li>
               <li><Link href="/terms-of-service" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
             </ul>

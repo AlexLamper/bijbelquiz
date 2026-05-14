@@ -63,12 +63,34 @@ export default async function QuizzesPage({
     }
   }
 
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'BijbelQuiz quizoverzicht',
+    itemListElement: quizzes.map((quiz: any, index: number) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `https://www.bijbelquiz.com/quiz/${quiz.slug || quiz._id}`,
+      item: {
+        '@type': 'Quiz',
+        name: quiz.title,
+        description: quiz.description || '',
+      },
+    })),
+  };
+
   return (
-    <QuizzesClient
-      quizzes={quizzes}
-      categories={categories}
-      userIsPremium={userIsPremium}
-      initialCategoryId={initialCategoryId}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+      <QuizzesClient
+        quizzes={quizzes}
+        categories={categories}
+        userIsPremium={userIsPremium}
+        initialCategoryId={initialCategoryId}
+      />
+    </>
   );
 }
