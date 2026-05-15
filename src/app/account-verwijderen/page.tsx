@@ -4,6 +4,7 @@ import { AlertTriangle, Mail, ShieldCheck, Trash2 } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { supportEmail } from '@/lib/support-email';
 
 export const metadata: Metadata = {
   title: 'Account Verwijderen | BijbelQuiz',
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function DeleteAccountPage() {
-  const supportEmail = 'devlamper06@gmail.com';
+  const email = supportEmail();
   const emailSubject = encodeURIComponent('Verzoek tot accountverwijdering');
   const emailBody = encodeURIComponent(
     [
@@ -24,7 +25,7 @@ export default function DeleteAccountPage() {
       'Alvast bedankt.',
     ].join('\n')
   );
-  const mailtoHref = `mailto:${supportEmail}?subject=${emailSubject}&body=${emailBody}`;
+  const mailtoHref = `mailto:${email}?subject=${emailSubject}&body=${emailBody}`;
 
   return (
     <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
@@ -56,7 +57,7 @@ export default function DeleteAccountPage() {
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="border-[#d2ddee] text-[#2f466f] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800">
-                  <a href={`mailto:${supportEmail}`}>{supportEmail}</a>
+                  <a href={`mailto:${email}`}>{email}</a>
                 </Button>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">

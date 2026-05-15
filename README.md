@@ -26,7 +26,9 @@ BijbelQuiz is gratis te gebruiken. Voor gebruikers die meer diepgang zoeken, bie
 
 ---
 
-*Wilt u contact met ons opnemen of heeft u suggesties voor nieuwe quizvragen? Bezoek onze contactpagina op de website.*
+**Contact:** [info@bijbelquiz.com](mailto:info@bijbelquiz.com)
+
+*Wilt u contact met ons opnemen of heeft u suggesties voor nieuwe quizvragen? Bezoek ook onze contactpagina op de website.*
 
 Status: **Live & Actief** - actief in ontwikkeling.
 

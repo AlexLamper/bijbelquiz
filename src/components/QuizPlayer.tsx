@@ -17,10 +17,12 @@ import {
   X,
 } from 'lucide-react';
 
+import QuizPremiumReviewSection from '@/components/quiz/QuizPremiumReviewSection';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
+import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
 
 interface Answer {
   text: string;
@@ -95,6 +97,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [isSaving, setIsSaving] = useState(false);
   const [earnedXp, setEarnedXp] = useState<number | null>(null);
+  const [showPremiumReviewUpsell, setShowPremiumReviewUpsell] = useState(false);
 
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isLeaveDialogOpen, setIsLeaveDialogOpen] = useState(false);
@@ -148,6 +151,17 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     setIsSaving(true);
 
     try {
+      const submittedAnswers = quiz.questions.map((question, index) => {
+        const selectedAnswerIndex = selectedAnswers[index];
+        const selectedAnswer =
+          typeof selectedAnswerIndex === 'number' ? question.answers[selectedAnswerIndex] : null;
+        return {
+          questionId: String(question._id),
+          selectedAnswerId: selectedAnswer?._id != null ? String(selectedAnswer._id) : null,
+          selectedAnswerIndex: typeof selectedAnswerIndex === 'number' ? selectedAnswerIndex : null,
+        };
+      });
+
       const response = await fetch('/api/quiz/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -155,6 +169,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
           quizId: quiz._id,
           score,
           totalQuestions: quiz.questions.length,
+          answers: submittedAnswers,
         }),
       });
 
@@ -162,6 +177,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
         const data = await response.json();
         if (typeof data.xpEarned === 'number') {
           setEarnedXp(data.xpEarned);
+        }
+        if (!isPremium) {
+          setShowPremiumReviewUpsell(true);
         }
       }
     } catch (error) {
@@ -287,9 +305,42 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   if (isFinished) {
     const percentage = Math.round((score / quiz.questions.length) * 100);
     const fallbackXp = Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length));
+    const resolvedXp = earnedXp ?? fallbackXp;
+    const premiumReviewQuestions = isPremium
+      ? buildReviewQuestionsFromSelections(quiz.questions as Parameters<typeof buildReviewQuestionsFromSelections>[0], selectedAnswers)
+      : [];
 
     return (
       <div className="mx-auto w-full max-w-340 px-4 pb-12 pt-6 sm:px-6 lg:px-8">
+        {!isPremium && showPremiumReviewUpsell && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4">
+            <div className="w-full max-w-md rounded-xl border border-[#d7e1ee] bg-white p-5 shadow-xl dark:border-zinc-700 dark:bg-zinc-900">
+              <h2 className="text-base font-semibold text-[#1f2f4b] dark:text-zinc-100">Ontgrendel je volledige quizanalyse</h2>
+              <p className="mt-2 text-sm text-[#4e5f79] dark:text-zinc-300">
+                Wil je een gedetailleerd overzicht van je score, precies zien welke antwoorden fout waren, de uitleg per vraag en
+                bijbelverwijzingen? Upgrade dan naar Premium.
+              </p>
+              <div className="mt-5 flex flex-wrap justify-end gap-2">
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="h-9 rounded-md border-[#d7e1ee] bg-white px-3 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                  onClick={() => setShowPremiumReviewUpsell(false)}
+                >
+                  Later bekijken
+                </Button>
+                <Button
+                  asChild
+                  type="button"
+                  className="h-9 rounded-md bg-[#6f8ed4] px-3 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
+                >
+                  <Link href="/premium">Upgrade naar Premium</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+
         <Card className="border-[#d8e1ee] py-0 shadow-[0_14px_28px_-24px_rgba(22,42,74,0.55)] dark:border-zinc-700 dark:bg-zinc-900/80">
           <CardContent className="p-6 lg:p-8">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#607597]">Resultaat</p>
@@ -306,7 +357,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
                 <div className="mt-4 inline-flex items-center gap-2 bg-[#e9eff8] px-3 py-1 text-sm font-medium text-[#355384] dark:bg-zinc-700 dark:text-zinc-200">
                   <Award className="h-4 w-4" />
-                  + {earnedXp ?? fallbackXp} XP verdiend
+                  + {resolvedXp} XP verdiend
                 </div>
               </div>
 
@@ -331,7 +382,6 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     </Button>
                   </div>
                 )}
-
                 <div className="mt-4 border-t border-[#e3ebf7] pt-3 dark:border-zinc-700">
                   <p className="text-xs font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-400">Meer ontdekken</p>
                   <a
@@ -353,6 +403,17 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 </div>
               </div>
             </div>
+
+            {isPremium && premiumReviewQuestions.length > 0 && (
+              <div className="mt-8 border-t border-[#e3ebf7] pt-6 dark:border-zinc-700">
+                <QuizPremiumReviewSection
+                  questions={premiumReviewQuestions}
+                  score={score}
+                  totalQuestions={quiz.questions.length}
+                  xpEarned={resolvedXp}
+                />
+              </div>
+            )}
 
             <div className="mt-6 flex flex-wrap gap-3">
               <Button

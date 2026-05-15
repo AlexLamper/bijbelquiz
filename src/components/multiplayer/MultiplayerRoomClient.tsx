@@ -471,26 +471,28 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                   )}
                 </div>
 
-                {isHost ? (
-                  <>
-                    <Button onClick={() => void start()} disabled={!canStart || isStarting}>
-                      {isStarting ? 'Game wordt gestart...' : 'Start game'}
-                    </Button>
-                    {!canStart && !isStarting && room.players.length >= 2 && (
-                      <p className="text-xs text-muted-foreground">
-                        Even wachten — spelerlijst wordt bijgewerkt...
-                      </p>
-                    )}
-                  </>
-                ) : (
-                  <p className="text-sm text-muted-foreground">
-                    Wachten op de host om de game te starten...
-                  </p>
-                )}
+                <div className="flex flex-col gap-4">
+                  {isHost ? (
+                    <>
+                      <Button onClick={() => void start()} disabled={!canStart || isStarting}>
+                        {isStarting ? 'Game wordt gestart...' : 'Start game'}
+                      </Button>
+                      {!canStart && !isStarting && room.players.length >= 2 && (
+                        <p className="text-xs text-muted-foreground">
+                          Even wachten — spelerlijst wordt bijgewerkt...
+                        </p>
+                      )}
+                    </>
+                  ) : (
+                    <p className="text-sm text-muted-foreground">
+                      Wachten op de host om de game te starten...
+                    </p>
+                  )}
 
-                <Button variant="outline" onClick={() => void handleLeaveAndExit()} disabled={isLeaving}>
-                  {isLeaving ? 'Room verlaten...' : isHost ? 'Room sluiten en verlaten' : 'Room verlaten'}
-                </Button>
+                  <Button variant="outline" onClick={() => void handleLeaveAndExit()} disabled={isLeaving}>
+                    {isLeaving ? 'Room verlaten...' : isHost ? 'Room sluiten en verlaten' : 'Room verlaten'}
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           )}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
+import { supportEmail } from '@/lib/support-email'
 import { AlertTriangle, HelpCircle, Mail } from 'lucide-react'
 import { SimpleAccordion } from '@/components/ui/accordion'
 
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 }
 
 export default function ContactPage() {
-  const supportEmail = process.env.NEXT_PUBLIC_BUG_REPORT_EMAIL || 'devlamper06@gmail.com';
+  const email = supportEmail();
 
   const faqItems = [
       {
@@ -29,7 +30,7 @@ export default function ContactPage() {
       },
       { 
           title: "Kan ik mijn account verwijderen?",
-          content: `Ja, dat kan. Stuur een mailtje naar ${supportEmail} en wij verwerken je verzoek binnen 5 werkdagen.`
+          content: `Ja, dat kan. Stuur een mailtje naar ${email} en wij verwerken je verzoek binnen 5 werkdagen.`
       }
   ];
 
@@ -53,10 +54,10 @@ export default function ContactPage() {
               <p className="mt-2 text-sm text-muted-foreground">We reageren meestal binnen 1-2 werkdagen.</p>
 
               <a
-                href={`mailto:${supportEmail}`}
+                href={`mailto:${email}`}
                 className="mt-4 inline-flex rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
               >
-                {supportEmail}
+                {email}
               </a>
             </CardContent>
           </Card>

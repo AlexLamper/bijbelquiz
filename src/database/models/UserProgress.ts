@@ -7,6 +7,14 @@ export interface IUserProgress extends Document {
   score: number;
   totalQuestions: number;
   xpEarned: number;
+  answers: Array<{
+    questionId: string;
+    selectedAnswerId: string | null;
+    selectedAnswerIndex: number | null;
+    isCorrect: boolean;
+  }>;
+  correctAnswers: number;
+  wrongAnswers: number;
   completedAt: Date;
 }
 
@@ -16,6 +24,19 @@ const UserProgressSchema: Schema = new Schema({
   score: { type: Number, required: true },
   totalQuestions: { type: Number, required: true },
   xpEarned: { type: Number, default: 0 },
+  answers: {
+    type: [
+      {
+        questionId: { type: String, required: true },
+        selectedAnswerId: { type: String, default: null },
+        selectedAnswerIndex: { type: Number, default: null },
+        isCorrect: { type: Boolean, required: true },
+      },
+    ],
+    default: [],
+  },
+  correctAnswers: { type: Number, default: 0 },
+  wrongAnswers: { type: Number, default: 0 },
 }, { timestamps: { createdAt: 'completedAt', updatedAt: false } });
 
 // Compound index for getting all results for a user, sorted by date

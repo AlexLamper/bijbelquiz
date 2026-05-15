@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { z } from 'zod';
 
+import { SUPPORT_EMAIL } from '@/lib/support-email';
+
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
@@ -23,7 +25,7 @@ function getEmailConfig() {
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
   const from = process.env.BUG_REPORT_FROM_EMAIL || process.env.SMTP_FROM_EMAIL;
-  const to = process.env.BUG_REPORT_TO_EMAIL || 'devlamper06@gmail.com';
+  const to = process.env.BUG_REPORT_TO_EMAIL || SUPPORT_EMAIL;
 
   if (!host || !user || !pass || !from) {
     return null;

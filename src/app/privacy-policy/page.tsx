@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import { SUPPORT_EMAIL } from '@/lib/support-email'
+
 export const metadata: Metadata = {
   title: 'Privacybeleid | BijbelQuiz',
   description: 'Hoe wij omgaan met jouw gegevens en privacy bij BijbelQuiz. Lees ons privacy statement.',
@@ -53,7 +55,7 @@ export default function PrivacyPage() {
     },
     {
       title: '8. Contact',
-      body: ['Heeft u vragen over dit privacybeleid? Neem contact op via devlamper06@gmail.com.'],
+      body: [`Heeft u vragen over dit privacybeleid? Neem contact op via ${SUPPORT_EMAIL}.`],
     },
   ]
 

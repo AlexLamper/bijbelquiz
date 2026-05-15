@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const { quizId, score, totalQuestions } = await req.json();
+    const { quizId, score, totalQuestions, answers } = await req.json();
 
     if (!quizId || typeof score !== 'number' || typeof totalQuestions !== 'number') {
       return new NextResponse("Invalid request data", { status: 400 });
@@ -39,20 +39,71 @@ export async function POST(req: NextRequest) {
       return new NextResponse('User not found', { status: 404 });
     }
 
-    const normalizedTotalQuestions = Math.max(1, Math.floor(totalQuestions || quiz.questions?.length || 1));
-    const normalizedScore = Math.max(0, Math.min(score, normalizedTotalQuestions));
+    const questionList = Array.isArray(quiz.questions) ? quiz.questions : [];
+
+    const normalizedTotalQuestions = Math.max(1, Math.floor(totalQuestions || questionList.length || 1));
+    const validatedAnswers = questionList.map((question: any, index: number) => {
+      const questionId = String(question._id);
+      const item = Array.isArray(answers) ? answers[index] : undefined;
+
+      let selectedAnswerId: string | null = null;
+      let selectedAnswerIndex: number | null = null;
+
+      if (item && typeof item === 'object') {
+        if (typeof item.selectedAnswerId === 'string' && item.selectedAnswerId.trim()) {
+          selectedAnswerId = String(item.selectedAnswerId);
+        }
+        if (typeof item.selectedAnswerIndex === 'number' && Number.isFinite(item.selectedAnswerIndex)) {
+          selectedAnswerIndex = Math.floor(item.selectedAnswerIndex);
+        }
+      }
+
+      const answerChoices = Array.isArray(question.answers) ? question.answers : [];
+
+      let selectedAnswer: any = null;
+      if (selectedAnswerId) {
+        selectedAnswer =
+          answerChoices.find((answer: any) => String(answer._id) === selectedAnswerId) || null;
+      }
+      if (!selectedAnswer && selectedAnswerIndex !== null && answerChoices[selectedAnswerIndex]) {
+        selectedAnswer = answerChoices[selectedAnswerIndex];
+        if (selectedAnswer?._id != null) {
+          selectedAnswerId = String(selectedAnswer._id);
+        }
+      }
+
+      const isCorrect = Boolean(selectedAnswer?.isCorrect);
+      const persistedAnswerIndex =
+        selectedAnswer && answerChoices.length > 0 ? answerChoices.indexOf(selectedAnswer) : selectedAnswerIndex;
+
+      return {
+        questionId,
+        selectedAnswerId,
+        selectedAnswerIndex:
+          typeof persistedAnswerIndex === 'number' && persistedAnswerIndex >= 0 ? persistedAnswerIndex : null,
+        isCorrect,
+      };
+    });
+
+    const derivedCorrectAnswers = validatedAnswers.filter((answer) => answer.isCorrect).length;
+    const fallbackScore = Math.max(0, Math.min(score, normalizedTotalQuestions));
+    const hasStructuredAnswers = Array.isArray(answers) && answers.length > 0;
+    const normalizedScore = hasStructuredAnswers ? derivedCorrectAnswers : fallbackScore;
     const percentage = Math.max(0, Math.min(1, normalizedScore / normalizedTotalQuestions));
     const baseRewardXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
     const calculatedXp = calculateAttemptXp(baseRewardXp, normalizedScore, normalizedTotalQuestions);
     const previousBestXp = getHighestEarnedAttemptXp(baseRewardXp, previousAttempts);
     const xpEarned = Math.max(0, calculatedXp - previousBestXp);
 
-    await UserProgress.create({
+    const attempt = await UserProgress.create({
       userId: session.user.id,
       quizId,
       score: normalizedScore,
       totalQuestions: normalizedTotalQuestions,
       xpEarned,
+      answers: validatedAnswers,
+      correctAnswers: normalizedScore,
+      wrongAnswers: Math.max(0, normalizedTotalQuestions - normalizedScore),
     });
 
     const now = new Date();
@@ -108,6 +159,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
+      attemptId: String(attempt._id),
       xpEarned,
       farmPrevented: previousAttempts.length > 0 && xpEarned === 0,
       message: 'Quiz submitted successfully',

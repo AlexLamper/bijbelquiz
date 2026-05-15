@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Bug } from 'lucide-react'
 
 import BugReportForm from '@/components/contact/BugReportForm'
+import { supportEmail } from '@/lib/support-email'
+
+const email = supportEmail()
 
 export const metadata: Metadata = {
   title: 'Bug report | BijbelQuiz Support',
@@ -19,13 +22,14 @@ export default function BugReportPage() {
         </div>
         <h1 className="mt-4 text-4xl text-[#1f2f4b] dark:text-zinc-100">Bug report</h1>
         <p className="mt-3 max-w-2xl text-sm text-[#5f7297] dark:text-zinc-300">
-          Beschrijf wat er misgaat, hoe we het kunnen reproduceren en op welke pagina je het probleem zag.
+          Mail ons op <span className="font-medium text-[#2f466f] dark:text-zinc-200">{email}</span>{' '}
+          met wat er misgaat, hoe we het kunnen reproduceren en op welke pagina je het zag.
         </p>
       </section>
 
       <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
         <div className="max-w-3xl">
-          <BugReportForm />
+          <BugReportForm supportEmail={email} />
         </div>
       </section>
     </div>
