@@ -114,6 +114,7 @@ export default async function QuizzesPage({
         quizzes={quizzes}
         categories={categories}
         userIsPremium={userIsPremium}
+        canCreateQuiz={Boolean(session?.user)}
         initialCategoryId={initialCategoryId}
       />
     </>

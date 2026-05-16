@@ -55,18 +55,29 @@ export async function getQuizSitemapEntries(baseUrl = getSiteBaseUrl()): Promise
 
   const quizzes = await Quiz.find(statusFilter).select('_id slug updatedAt').lean();
 
-  return quizzes
-    .map((quiz: QuizSitemapDocument) => {
-      const quizId = typeof quiz._id === 'string' ? quiz._id : quiz._id.toString();
-      const path = quiz.slug ? `/quiz/${quiz.slug}` : `/quiz/${quizId}`;
-      return {
-        url: `${baseUrl}${path}`,
+  return quizzes.flatMap((quiz: QuizSitemapDocument) => {
+    const quizId = typeof quiz._id === 'string' ? quiz._id : quiz._id.toString();
+    const playPath = quiz.slug ? `/quiz/${quiz.slug}` : `/quiz/${quizId}`;
+    const entries: SitemapEntry[] = [
+      {
+        url: `${baseUrl}${playPath}`,
         lastModified: quiz.updatedAt || new Date(),
-        changeFrequency: 'weekly' as const,
+        changeFrequency: 'weekly',
         priority: 0.85,
-      };
-    })
-    .filter((entry) => !!entry.url);
+      },
+    ];
+
+    if (quiz.slug) {
+      entries.push({
+        url: `${baseUrl}/bijbelquiz/${quiz.slug}`,
+        lastModified: quiz.updatedAt || new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      });
+    }
+
+    return entries;
+  });
 }
 
 function escapeXml(value: string): string {

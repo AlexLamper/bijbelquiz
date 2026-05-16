@@ -4,18 +4,37 @@ import { connectDB, Lead } from '@/database';
 export async function POST(req: NextRequest) {
   try {
     await connectDB();
-    const { name, email } = await req.json();
+    const body = (await req.json().catch(() => ({}))) as {
+      name?: string;
+      email?: string;
+      source?: string;
+    };
+    const name = body.name?.trim();
+    const email = body.email?.trim().toLowerCase();
+    const source = body.source?.trim() || 'quiz-end-popup';
 
-    // If both fields are empty, we just track the interaction or ignore (user skipped)
-    // But the prompt implies we want to capture data if provided.
-    // However, the button "Bekijk Antwoorden" is always active.
-    
-    if (name || email) {
-        await Lead.create({
-            name,
-            email,
-            source: 'quiz-end-popup'
-        });
+    if (!email) {
+      return NextResponse.json(
+        { success: false, message: 'E-mailadres is verplicht.' },
+        { status: 400 }
+      );
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      return NextResponse.json(
+        { success: false, message: 'Vul een geldig e-mailadres in.' },
+        { status: 400 }
+      );
+    }
+
+    const existing = await Lead.findOne({ email, source }).select('_id').lean();
+    if (!existing) {
+      await Lead.create({
+        name,
+        email,
+        source,
+      });
     }
 
     return NextResponse.json({ success: true, message: 'Lead saved successfully' });

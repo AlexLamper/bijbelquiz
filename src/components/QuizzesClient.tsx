@@ -42,10 +42,17 @@ interface QuizzesClientProps {
   quizzes: Quiz[];
   categories: Category[];
   userIsPremium: boolean;
+  canCreateQuiz: boolean;
   initialCategoryId?: string;
 }
 
-export default function QuizzesClient({ quizzes, categories, userIsPremium, initialCategoryId = 'all' }: QuizzesClientProps) {
+export default function QuizzesClient({
+  quizzes,
+  categories,
+  userIsPremium,
+  canCreateQuiz,
+  initialCategoryId = 'all',
+}: QuizzesClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategoryId);
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
@@ -150,6 +157,12 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
               <SlidersHorizontal className="mr-2 h-4 w-4" />
               Premium
             </Button>
+
+            {canCreateQuiz && (
+              <Button asChild className="hidden h-10 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] md:inline-flex dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
+                <Link href="/quizzes/create">Zelf quiz maken</Link>
+              </Button>
+            )}
           </div>
 
           <div className="mt-4 hidden flex-wrap gap-2 md:flex">
@@ -180,6 +193,14 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
               </button>
             ))}
           </div>
+
+          {canCreateQuiz && (
+            <div className="mt-4 md:hidden">
+              <Button asChild className="h-10 w-full rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
+                <Link href="/quizzes/create">Zelf quiz maken</Link>
+              </Button>
+            </div>
+          )}
         </div>
       </section>
 

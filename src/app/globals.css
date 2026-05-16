@@ -140,6 +140,13 @@ html {
   }
 }
 
+/* Use wider content only on very large monitors for dashboard sections. */
+@media (min-width: 1920px) {
+  .dashboard-ultrawide {
+    max-width: calc(100% - 4rem) !important;
+  }
+}
+
 @keyframes section-fade-in {
   from {
     opacity: 0;

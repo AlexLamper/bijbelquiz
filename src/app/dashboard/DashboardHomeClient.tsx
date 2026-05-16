@@ -83,7 +83,7 @@ export default function DashboardHomeClient({
 
   return (
     <div className="-mt-24 min-h-screen bg-transparent pb-10 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
-      <section className="mx-auto w-full max-w-6xl px-4 pt-8 sm:px-5 lg:px-4 2xl:max-w-340">
+      <section className="dashboard-ultrawide mx-auto w-full max-w-6xl px-4 pt-8 sm:px-5 lg:px-4 2xl:max-w-340 min-[1920px]:px-8">
         <Card className="relative overflow-hidden rounded-none border-0 bg-transparent py-0 shadow-none">
           <CardContent className="relative p-0">
             <div className="grid gap-5 xl:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] xl:items-start">
@@ -155,7 +155,7 @@ export default function DashboardHomeClient({
         </Card>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pt-5 sm:px-5 lg:px-4 2xl:max-w-340">
+      <section className="dashboard-ultrawide mx-auto w-full max-w-6xl px-4 pt-5 sm:px-5 lg:px-4 2xl:max-w-340 min-[1920px]:px-8">
         <Link href="/multiplayer" className="block">
           <Card className="overflow-hidden border-[#c8d7ee] bg-[linear-gradient(135deg,#f8fbff,#edf3ff)] py-0 shadow-sm transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-[linear-gradient(135deg,rgba(24,24,27,0.95),rgba(39,39,42,0.92))]">
             <CardContent className="flex flex-wrap items-center justify-between gap-3.5 p-4 md:p-5 xl:p-6">
@@ -179,7 +179,7 @@ export default function DashboardHomeClient({
         </Link>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pt-10 sm:px-5 lg:px-4 2xl:max-w-340">
+      <section className="dashboard-ultrawide mx-auto w-full max-w-6xl px-4 pt-10 sm:px-5 lg:px-4 2xl:max-w-340 min-[1920px]:px-8">
         <div className="mb-3.5 flex items-end justify-between gap-3">
           <div className="min-w-0">
             <h2 className="text-lg font-semibold text-[#1f2f4b] sm:text-xl lg:text-2xl dark:text-zinc-100">Aanbevolen quizzen</h2>
@@ -207,7 +207,7 @@ export default function DashboardHomeClient({
         )}
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pt-7 sm:px-5 lg:px-4 2xl:max-w-340">
+      <section className="dashboard-ultrawide mx-auto w-full max-w-6xl px-4 pt-7 sm:px-5 lg:px-4 2xl:max-w-340 min-[1920px]:px-8">
         <div>
           <div className="mb-5 text-center">
             <h2 className="text-xl font-semibold text-[#1f2f4b] lg:text-2xl dark:text-zinc-100">Verken per categorie</h2>
@@ -246,7 +246,7 @@ export default function DashboardHomeClient({
       </section>
 
       {!isPremium && (
-        <section className="mx-auto w-full max-w-6xl px-4 pt-7 sm:px-5 lg:px-4 2xl:max-w-340">
+        <section className="dashboard-ultrawide mx-auto w-full max-w-6xl px-4 pt-7 sm:px-5 lg:px-4 2xl:max-w-340 min-[1920px]:px-8">
           <Card className="overflow-hidden border-[#c8d7ee] bg-[linear-gradient(140deg,#f8fbff,#edf4ff)] py-0 shadow-sm dark:border-zinc-700 dark:bg-[linear-gradient(140deg,rgba(24,24,27,0.95),rgba(39,39,42,0.92))]">
             <CardContent className="flex flex-wrap items-center justify-between gap-3.5 p-4 md:p-5 xl:p-6">
               <div>

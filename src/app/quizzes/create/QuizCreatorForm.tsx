@@ -97,6 +97,12 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
         return;
     }
 
+    if (questions.length < 5) {
+        toast.error("Een quiz moet minimaal 5 vragen hebben.");
+        setLoading(false);
+        return;
+    }
+
     try {
         const res = await fetch('/api/quizzes', {
             method: 'POST',
@@ -133,7 +139,7 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
         {/* Section 1: Intro / Settings */}
         <div className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-[24px] overflow-hidden shadow-sm">
             <div className="bg-slate-50 dark:bg-zinc-950 border-b border-slate-200 dark:border-zinc-800 px-6 sm:px-8 py-5 flex items-center gap-3">
-               <div className="bg-[#152c31] text-white p-2 rounded-xl shadow-sm">
+               <div className="bg-[#6f8ed4] text-white p-2 rounded-xl shadow-sm">
                  <Settings2 className="h-5 w-5" />
                </div>
                <div>
@@ -151,17 +157,17 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
                         onChange={(e) => setFormData({...formData, title: e.target.value})}
                         disabled={loading}
                         required
-                        className="h-12 bg-slate-50/50 dark:bg-zinc-950/50 focus-visible:ring-[#152c31]"
+                        className="h-12 bg-slate-50/50 dark:bg-zinc-950/50 focus-visible:ring-[#6f8ed4]"
                     />
                 </div>
                 
                 <div className="grid gap-2">
                     <label className="text-sm font-semibold text-slate-700 dark:text-zinc-300">Beschrijving</label>
                     <Textarea 
-                         placeholder="Korte omschrijving war deze quiz over gaat..."
+                         placeholder="Korte omschrijving waar deze quiz over gaat..."
                          value={formData.description}
                          onChange={(e) => setFormData({...formData, description: e.target.value})}
-                         className="min-h-[100px] resize-y bg-slate-50/50 dark:bg-zinc-950/50 focus-visible:ring-[#152c31]"
+                         className="min-h-[100px] resize-y bg-slate-50/50 dark:bg-zinc-950/50 focus-visible:ring-[#6f8ed4]"
                     />
                 </div>
                 
@@ -206,7 +212,7 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
         <div className="space-y-6">
              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="bg-[#152c31] text-white p-2 rounded-xl shadow-sm">
+                  <div className="bg-[#6f8ed4] text-white p-2 rounded-xl shadow-sm">
                      <HelpCircle className="h-5 w-5" />
                   </div>
                   <div>
@@ -215,7 +221,7 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
                   </div>
                 </div>
                 
-                <Button type="button" onClick={addQuestion} variant="outline" className="gap-2 bg-white dark:bg-zinc-900 shadow-sm border-slate-200 dark:border-zinc-800 text-[#152c31] dark:text-white hover:bg-slate-50 h-11 px-6 rounded-full font-medium">
+                <Button type="button" onClick={addQuestion} variant="outline" className="gap-2 bg-white dark:bg-zinc-900 shadow-sm border-slate-200 dark:border-zinc-800 text-[#355384] dark:text-white hover:bg-slate-50 h-11 px-6 rounded-full font-medium">
                     <Plus className="h-4 w-4" /> Vraag Toevoegen
                 </Button>
              </div>
@@ -225,8 +231,8 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
                    <div key={qIndex} className="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-[24px] p-1 relative shadow-sm group transition-all duration-200 hover:shadow-md hover:border-slate-300 dark:hover:border-zinc-700">
                        {/* Q header block */}
                        <div className="flex items-center justify-between px-4 py-3 bg-slate-50/50 dark:bg-zinc-800/30 rounded-t-[20px] mb-4">
-                          <span className="flex items-center gap-2 text-[#152c31] dark:text-white font-bold font-sans tracking-wide">
-                            <span className="bg-[#152c31]/10 dark:bg-white/10 text-[#152c31] dark:text-zinc-200 w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                          <span className="flex items-center gap-2 text-[#355384] dark:text-white font-bold font-sans tracking-wide">
+                            <span className="bg-[#355384]/10 dark:bg-white/10 text-[#355384] dark:text-zinc-200 w-8 h-8 rounded-full flex items-center justify-center text-sm">
                                 {qIndex + 1}
                             </span>
                             Vraag {qIndex + 1}
@@ -253,7 +259,7 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
                                  value={q.text}
                                  onChange={(e) => updateQuestion(qIndex, 'text', e.target.value)}
                                  required
-                                 className="h-12 text-base bg-white dark:bg-zinc-950 focus-visible:ring-[#152c31]"
+                                 className="h-12 text-base bg-white dark:bg-zinc-950 focus-visible:ring-[#6f8ed4]"
                              />
                            </div>
                            
@@ -327,14 +333,14 @@ export default function QuizCreatorForm({ categories }: { categories: Category[]
         </div>
 
         {/* Submit Footer */}
-        <div className="sticky bottom-6 z-20 mt-12 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border border-slate-200 dark:border-zinc-800 p-4 rounded-2xl shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="sticky bottom-6 z-20 mt-12 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border border-slate-200 dark:border-zinc-800 p-4 rounded-2xl shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-sm font-medium text-slate-600 dark:text-zinc-400">
-               Je quiz bevat {questions.length} {questions.length === 1 ? 'vraag' : 'vragen'}.
+               Je quiz bevat {questions.length} {questions.length === 1 ? 'vraag' : 'vragen'} (minimaal 5 vereist).
             </div>
             <Button 
                 size="lg" 
                 disabled={loading} 
-                className="w-full sm:w-auto h-12 px-8 rounded-xl shadow-lg bg-[#152c31] text-white hover:bg-[#1a383e] transition-all font-semibold font-serif text-lg tracking-wide hover:-translate-y-0.5"
+                className="w-full sm:w-auto h-12 px-8 rounded-xl shadow-md bg-[#6f8ed4] text-white hover:bg-[#5f81cc] transition-all font-semibold font-serif text-lg tracking-wide hover:-translate-y-0.5"
             >
                 {loading ? <Info className="h-5 w-5 mr-3 animate-spin" /> : <Save className="h-5 w-5 mr-3" />}
                 Quiz Indienen
