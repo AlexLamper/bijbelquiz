@@ -5,6 +5,11 @@ import { MultiplayerError } from '@/lib/multiplayer/errors';
 import { multiplayerErrorResponse, parseJsonBody } from '@/lib/multiplayer/http';
 import { getMultiplayerRuntime } from '@/lib/multiplayer/runtime';
 import { connectDB, User } from '@/database';
+import {
+  MULTIPLAYER_FREE_MAX_PLAYERS,
+  MULTIPLAYER_FREE_ROOM_QUOTA,
+  MULTIPLAYER_PREMIUM_MAX_PLAYERS,
+} from '@/lib/premium-benefits';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -12,7 +17,13 @@ export const dynamic = 'force-dynamic';
 const createRoomSchema = z
   .object({
     quizId: z.string().trim().min(1, 'quizId is required'),
-    maxPlayers: z.number().int().min(2).max(20).optional().default(4),
+    maxPlayers: z
+      .number()
+      .int()
+      .min(2)
+      .max(MULTIPLAYER_PREMIUM_MAX_PLAYERS)
+      .optional()
+      .default(4),
   })
   .strict();
 
@@ -31,12 +42,20 @@ export async function GET(req: NextRequest) {
 
     const isPremiumUser = Boolean(user.isPremium || user.hasLifetimePremium);
     const hasUsedFreeRoom = Boolean(user.freeMultiplayerRoomCreated);
+    const freeRoomsRemaining = isPremiumUser
+      ? null
+      : Math.max(0, MULTIPLAYER_FREE_ROOM_QUOTA - (hasUsedFreeRoom ? 1 : 0));
 
     return NextResponse.json({
       canCreateRoom: isPremiumUser || !hasUsedFreeRoom,
       isPremium: isPremiumUser,
-      hasUsedFreeRoom: hasUsedFreeRoom,
-      freeRoomsRemaining: isPremiumUser ? Infinity : hasUsedFreeRoom ? 0 : 1,
+      hasUsedFreeRoom,
+      freeRoomsRemaining,
+      maxPlayersFree: MULTIPLAYER_FREE_MAX_PLAYERS,
+      maxPlayersPremium: MULTIPLAYER_PREMIUM_MAX_PLAYERS,
+      maxPlayersForUser: isPremiumUser
+        ? MULTIPLAYER_PREMIUM_MAX_PLAYERS
+        : MULTIPLAYER_FREE_MAX_PLAYERS,
     });
   } catch (error) {
     return multiplayerErrorResponse(error);
@@ -58,6 +77,15 @@ export async function POST(req: NextRequest) {
     }
 
     const isPremiumUser = Boolean(user.isPremium || user.hasLifetimePremium);
+
+    if (!isPremiumUser && body.maxPlayers > MULTIPLAYER_FREE_MAX_PLAYERS) {
+      throw new MultiplayerError(
+        'PREMIUM_REQUIRED',
+        `Met een gratis account speel je tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers per room. Upgrade naar Premium voor rooms tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.`,
+        403,
+      );
+    }
+
     let reservedFreeRoomCreation = false;
 
     if (!isPremiumUser) {
@@ -71,7 +99,7 @@ export async function POST(req: NextRequest) {
       if (!reservation) {
         throw new MultiplayerError(
           'PREMIUM_REQUIRED',
-          'Room aanmaken is Premium. Je kunt als gratis gebruiker 1 room maken; daarna is Premium nodig.',
+          `Je gratis room is al gebruikt. Word Premium om onbeperkt rooms te hosten met tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.`,
           403,
         );
       }

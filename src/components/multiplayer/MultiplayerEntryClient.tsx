@@ -1,12 +1,12 @@
 "use client";
 
-import { useRef, useState } from 'react';
-import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   ArrowRight,
   CheckCircle2,
   Copy,
+  Crown,
   Gamepad2,
   Share2,
   Trophy,
@@ -24,6 +24,12 @@ import {
 } from '@/components/ui/select';
 import { createRoom, getMultiplayerAuthToken, joinRoom } from '@/lib/multiplayer-web/client';
 import { toUserMessage } from '@/lib/multiplayer-web/errors';
+import { trackEvent } from '@/components/GoogleAnalytics';
+import MultiplayerPremiumPaywall from '@/components/multiplayer/MultiplayerPremiumPaywall';
+import {
+  MULTIPLAYER_FREE_MAX_PLAYERS,
+  MULTIPLAYER_PREMIUM_MAX_PLAYERS,
+} from '@/lib/premium-benefits';
 import { cn } from '@/lib/utils';
 
 interface MultiplayerQuizOption {
@@ -37,9 +43,11 @@ interface MultiplayerEntryClientProps {
   quizzes: MultiplayerQuizOption[];
   isPremiumUser: boolean;
   hasUsedFreeRoomCreation: boolean;
+  /** Hard upper bound for the player picker for the current user. */
+  maxPlayersForUser: number;
 }
 
-const PLAYER_OPTIONS = [2, 3, 4, 6, 8, 10, 12];
+const PLAYER_OPTIONS = [2, 3, 4, 6, 8, 10, 12, MULTIPLAYER_PREMIUM_MAX_PLAYERS];
 
 function normalizeRoomCode(code: string): string {
   return code.trim().toUpperCase();
@@ -49,10 +57,12 @@ export default function MultiplayerEntryClient({
   quizzes,
   isPremiumUser,
   hasUsedFreeRoomCreation,
+  maxPlayersForUser,
 }: MultiplayerEntryClientProps) {
   const router = useRouter();
   const tokenRef = useRef<string | null>(null);
   const canCreateRoom = isPremiumUser || !hasUsedFreeRoomCreation;
+  const showQuotaPaywall = !isPremiumUser && hasUsedFreeRoomCreation;
 
   const [selectedQuizId, setSelectedQuizId] = useState(quizzes[0]?.id ?? '');
   const [maxPlayers, setMaxPlayers] = useState<string>('4');
@@ -61,6 +71,25 @@ export default function MultiplayerEntryClient({
   const [isCreating, setIsCreating] = useState(false);
   const [isJoining, setIsJoining] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const selectedPlayersCount = Number(maxPlayers);
+  const playerLimitTriggered =
+    !isPremiumUser && selectedPlayersCount > MULTIPLAYER_FREE_MAX_PLAYERS;
+
+  useEffect(() => {
+    if (showQuotaPaywall) {
+      trackEvent('multiplayer_paywall_shown', { placement: 'free_quota_used' });
+    }
+  }, [showQuotaPaywall]);
+
+  useEffect(() => {
+    if (playerLimitTriggered) {
+      trackEvent('multiplayer_paywall_shown', {
+        placement: 'player_limit',
+        requested_players: selectedPlayersCount,
+      });
+    }
+  }, [playerLimitTriggered, selectedPlayersCount]);
 
   async function ensureToken(): Promise<string> {
     if (tokenRef.current) {
@@ -73,8 +102,27 @@ export default function MultiplayerEntryClient({
   }
 
   async function handleCreateRoom() {
+    trackEvent('multiplayer_room_create_clicked', {
+      is_premium: isPremiumUser,
+      requested_players: selectedPlayersCount,
+    });
+
     if (!canCreateRoom) {
-      setErrorMessage('Room aanmaken is Premium nadat je gratis room is gebruikt.');
+      setErrorMessage(
+        `Je gratis room is al gebruikt. Word Premium om onbeperkt rooms te hosten met tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.`,
+      );
+      trackEvent('multiplayer_room_create_blocked', { reason: 'free_quota_used' });
+      return;
+    }
+
+    if (playerLimitTriggered) {
+      setErrorMessage(
+        `Met een gratis account speel je tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers per room. Upgrade naar Premium voor rooms tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.`,
+      );
+      trackEvent('multiplayer_room_create_blocked', {
+        reason: 'player_limit',
+        requested_players: selectedPlayersCount,
+      });
       return;
     }
 
@@ -91,9 +139,13 @@ export default function MultiplayerEntryClient({
       const room = await createRoom({
         token,
         quizId: selectedQuizId,
-        maxPlayers: Number(maxPlayers),
+        maxPlayers: selectedPlayersCount,
       });
 
+      trackEvent('multiplayer_room_created', {
+        is_premium: isPremiumUser,
+        max_players: selectedPlayersCount,
+      });
       router.push(`/multiplayer/${room.code}/lobby`);
     } catch (error) {
       setErrorMessage(toUserMessage(error));
@@ -112,6 +164,7 @@ export default function MultiplayerEntryClient({
 
     setErrorMessage(null);
     setIsJoining(true);
+    trackEvent('multiplayer_room_join_clicked');
 
     try {
       const token = await ensureToken();
@@ -119,6 +172,8 @@ export default function MultiplayerEntryClient({
         token,
         roomCode,
       });
+
+      trackEvent('multiplayer_room_joined', { status: room.status });
 
       const targetPath = room.status === 'finished'
         ? `/multiplayer/${room.code}/results`
@@ -181,13 +236,6 @@ export default function MultiplayerEntryClient({
       {/* Main actions */}
       <section id="start" className="scroll-mt-24 py-12 md:py-16">
         <div className="container mx-auto max-w-5xl px-4">
-          <div className="mb-8 text-center">
-            <h2 className="text-xl font-semibold tracking-tight md:text-2xl">Aan de slag</h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Maak zelf een room als host, of voeg je bij een bestaande game met een code.
-            </p>
-          </div>
-
           {errorMessage && (
             <div className="mb-6 rounded-lg border border-destructive/30 bg-destructive/10 p-3 text-sm text-destructive">
               {errorMessage}
@@ -205,25 +253,20 @@ export default function MultiplayerEntryClient({
                     <CardTitle>Nieuwe room maken</CardTitle>
                     <CardDescription className="mt-0.5">
                       {isPremiumUser
-                        ? 'Jij bent host en bepaalt wanneer de quiz start.'
+                        ? `Jij bent host en kunt tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers uitnodigen.`
                         : hasUsedFreeRoomCreation
-                          ? 'Premium nodig voor nieuwe rooms na je gratis room.'
-                          : 'Als gratis gebruiker kun je één room maken.'}
+                          ? 'Word Premium om opnieuw te hosten.'
+                          : `Eén room gratis, tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers.`}
                     </CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                {!isPremiumUser && hasUsedFreeRoomCreation && (
-                  <div className="rounded-lg border border-[#d7e1ee] bg-[#f8fbff] p-4 text-sm dark:border-zinc-700 dark:bg-zinc-900/70">
-                    <p className="font-medium text-[#30466e] dark:text-zinc-100">Premium voor hosten</p>
-                    <p className="mt-1 text-xs text-muted-foreground">
-                      Joinen met een code blijft gratis.
-                    </p>
-                    <Button asChild className="mt-3 h-9 rounded-md bg-[#6f8ed4] text-xs text-white hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
-                      <Link href="/premium">Upgrade naar Premium</Link>
-                    </Button>
-                  </div>
+                {showQuotaPaywall && (
+                  <MultiplayerPremiumPaywall
+                    placement="free_quota_used"
+                    headline="Je gratis room is al gebruikt — host onbeperkt met Premium."
+                  />
                 )}
 
                 <div className="space-y-2">
@@ -252,14 +295,37 @@ export default function MultiplayerEntryClient({
                       <SelectValue placeholder="Kies aantal" />
                     </SelectTrigger>
                     <SelectContent>
-                      {PLAYER_OPTIONS.map((count) => (
-                        <SelectItem key={count} value={String(count)}>
-                          {count} spelers
-                        </SelectItem>
-                      ))}
+                      {PLAYER_OPTIONS.map((count) => {
+                        const isPremiumOnly = count > MULTIPLAYER_FREE_MAX_PLAYERS && !isPremiumUser;
+                        return (
+                          <SelectItem key={count} value={String(count)}>
+                            <span className="flex items-center gap-2">
+                              {count} spelers
+                              {isPremiumOnly && (
+                                <span className="inline-flex items-center gap-1 rounded-full bg-[#e9eff8] px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#355384] dark:bg-zinc-700 dark:text-zinc-200">
+                                  <Crown className="h-3 w-3" />
+                                  Premium
+                                </span>
+                              )}
+                            </span>
+                          </SelectItem>
+                        );
+                      })}
                     </SelectContent>
                   </Select>
+                  <p className="text-xs text-muted-foreground">
+                    {isPremiumUser
+                      ? `Je kunt tot ${maxPlayersForUser} spelers uitnodigen.`
+                      : `Gratis tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers, met Premium tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS}.`}
+                  </p>
                 </div>
+
+                {playerLimitTriggered && (
+                  <MultiplayerPremiumPaywall
+                    placement="player_limit"
+                    headline={`Speel met ${selectedPlayersCount} spelers — beschikbaar met Premium.`}
+                  />
+                )}
 
                 <Button
                   className="h-11 w-full text-base shadow-sm dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]"

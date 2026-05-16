@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { QuizCard } from '@/components/QuizCard';
+import { trackEvent } from '@/components/GoogleAnalytics';
 
 interface Quiz {
   _id: string;
@@ -81,20 +82,20 @@ export default function DashboardHomeClient({
   const latestQuiz = recentProgress.find((entry) => entry.quizId);
 
   return (
-    <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
-      <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
+    <div className="-mt-24 min-h-screen bg-transparent pb-10 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
+      <section className="mx-auto w-full max-w-6xl px-4 pt-8 sm:px-5 lg:px-4 2xl:max-w-340">
         <Card className="relative overflow-hidden rounded-none border-0 bg-transparent py-0 shadow-none">
           <CardContent className="relative p-0">
-            <div className="grid gap-6 xl:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] xl:items-start">
+            <div className="grid gap-5 xl:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] xl:items-start">
               <div>
-                <h1 className="text-3xl leading-tight text-[#1f2f4b] sm:text-4xl md:text-5xl">
+                <h1 className="text-2xl leading-tight text-[#1f2f4b] sm:text-3xl lg:text-4xl 2xl:text-5xl">
                   <span className="dark:text-[#9db5dc]">{greeting},</span> <span className="dark:text-zinc-100">{userName}.</span>
                 </h1>
 
-                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#5f7297] md:text-[15px] dark:text-zinc-300">Kies een quiz en speel direct verder.</p>
+                <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-[#5f7297] lg:text-[14px] 2xl:text-[15px] dark:text-zinc-300">Kies een quiz en speel direct verder.</p>
 
-                <div className="mt-5 flex flex-wrap gap-2.5">
-                  <Button asChild className="h-10 rounded-[8px] bg-[#5d82d4] px-5 text-sm font-semibold text-white hover:bg-[#4f74c7] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <Button asChild className="h-9 rounded-[8px] bg-[#5d82d4] px-4 text-sm font-semibold text-white hover:bg-[#4f74c7] sm:h-10 sm:px-5 dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
                     <Link href="/quizzes" className="inline-flex items-center gap-2">
                       <Play className="h-4 w-4" />
                       Speel quiz
@@ -105,7 +106,7 @@ export default function DashboardHomeClient({
                     <Button
                       asChild
                       variant="outline"
-                      className="h-10 rounded-md border-[#cddaf0] bg-white/90 px-5 text-sm font-semibold text-[#2e4670] hover:bg-[#f6f9ff] dark:border-zinc-700 dark:bg-zinc-950/80 dark:text-zinc-100 dark:hover:bg-zinc-900"
+                      className="h-9 rounded-md border-[#cddaf0] bg-white/90 px-4 text-sm font-semibold text-[#2e4670] hover:bg-[#f6f9ff] sm:h-10 sm:px-5 dark:border-zinc-700 dark:bg-zinc-950/80 dark:text-zinc-100 dark:hover:bg-zinc-900"
                     >
                       <Link href={`/quiz/${latestQuiz.quizId.slug || latestQuiz.quizId._id}`} className="inline-flex items-center gap-2">
                         Ga verder
@@ -154,16 +155,16 @@ export default function DashboardHomeClient({
         </Card>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-5 lg:px-4">
+      <section className="mx-auto w-full max-w-6xl px-4 pt-5 sm:px-5 lg:px-4 2xl:max-w-340">
         <Link href="/multiplayer" className="block">
           <Card className="overflow-hidden border-[#c8d7ee] bg-[linear-gradient(135deg,#f8fbff,#edf3ff)] py-0 shadow-sm transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-[linear-gradient(135deg,rgba(24,24,27,0.95),rgba(39,39,42,0.92))]">
-            <CardContent className="flex flex-wrap items-center justify-between gap-4 p-5 md:p-6">
+            <CardContent className="flex flex-wrap items-center justify-between gap-3.5 p-4 md:p-5 xl:p-6">
               <div>
                 <p className="inline-flex items-center gap-1 rounded-full bg-[#4f74c7] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-white dark:bg-[#6f8ed4] dark:text-zinc-100">
                   <Users className="h-3.5 w-3.5 text-white" />
                   Samen spelen
                 </p>
-                <h2 className="mt-3 text-2xl text-[#1f2f4b] dark:text-zinc-100">Speel samen met vrienden of familie</h2>
+                <h2 className="mt-2.5 text-xl text-[#1f2f4b] lg:text-2xl dark:text-zinc-100">Speel samen met vrienden of familie</h2>
                 <p className="mt-1 text-sm text-[#5f7297] dark:text-zinc-300">
                   Start een kamer of sluit direct aan en beantwoord vragen samen in realtime.
                 </p>
@@ -178,10 +179,10 @@ export default function DashboardHomeClient({
         </Link>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-12 sm:px-5 lg:px-4">
-        <div className="mb-4 flex items-end justify-between gap-3">
+      <section className="mx-auto w-full max-w-6xl px-4 pt-10 sm:px-5 lg:px-4 2xl:max-w-340">
+        <div className="mb-3.5 flex items-end justify-between gap-3">
           <div className="min-w-0">
-            <h2 className="text-xl font-semibold text-[#1f2f4b] sm:text-2xl dark:text-zinc-100">Aanbevolen quizzen</h2>
+            <h2 className="text-lg font-semibold text-[#1f2f4b] sm:text-xl lg:text-2xl dark:text-zinc-100">Aanbevolen quizzen</h2>
             <p className="mt-1 text-sm text-muted-foreground">Kies een quiz en start direct.</p>
           </div>
 
@@ -198,7 +199,7 @@ export default function DashboardHomeClient({
             </CardContent>
           </Card>
         ) : (
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {quizzes.map((quiz) => (
               <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={isPremium} layout="stack" darkPalette="neutral" />
             ))}
@@ -206,18 +207,18 @@ export default function DashboardHomeClient({
         )}
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+      <section className="mx-auto w-full max-w-6xl px-4 pt-7 sm:px-5 lg:px-4 2xl:max-w-340">
         <div>
-          <div className="mb-6 text-center">
-            <h2 className="text-2xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Verken per categorie</h2>
+          <div className="mb-5 text-center">
+            <h2 className="text-xl font-semibold text-[#1f2f4b] lg:text-2xl dark:text-zinc-100">Verken per categorie</h2>
             <p className="mt-1 text-sm text-muted-foreground">Snelle ingangen naar je favoriete onderwerpen.</p>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {categories.map((category) => (
               <Link key={category.title} href={category.href} className="block">
                 <Card className="gap-0 overflow-hidden border-0 bg-transparent py-0 shadow-sm transition-transform hover:-translate-y-0.5 dark:bg-transparent">
-                  <div className="relative h-28">
+                  <div className="relative h-24 lg:h-28">
                     <Image
                       src={category.imageUrl}
                       alt={category.title}
@@ -245,18 +246,24 @@ export default function DashboardHomeClient({
       </section>
 
       {!isPremium && (
-        <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+        <section className="mx-auto w-full max-w-6xl px-4 pt-7 sm:px-5 lg:px-4 2xl:max-w-340">
           <Card className="overflow-hidden border-[#c8d7ee] bg-[linear-gradient(140deg,#f8fbff,#edf4ff)] py-0 shadow-sm dark:border-zinc-700 dark:bg-[linear-gradient(140deg,rgba(24,24,27,0.95),rgba(39,39,42,0.92))]">
-            <CardContent className="flex flex-wrap items-center justify-between gap-4 p-5 md:p-6">
+            <CardContent className="flex flex-wrap items-center justify-between gap-3.5 p-4 md:p-5 xl:p-6">
               <div>
                 <p className="inline-flex items-center rounded-full bg-[#6f8ed4] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-white dark:bg-zinc-500 dark:text-zinc-100">
                   Premium
                 </p>
-                <p className="mt-3 text-sm font-semibold text-[#24395f] dark:text-zinc-100">Meer quizzen en geen advertenties met Premium</p>
-                <p className="mt-1 text-xs text-muted-foreground">Ontgrendel alle premium quizzen vanaf EUR 5,99 per maand.</p>
+                <p className="mt-3 text-sm font-semibold text-[#24395f] dark:text-zinc-100">Speel onbeperkt samen met Premium</p>
+                <p className="mt-1 text-xs text-muted-foreground">Host rooms tot 20 spelers en krijg uitleg bij elke vraag.</p>
               </div>
 
-              <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
+              <Button
+                asChild
+                className="h-9 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] sm:h-10 sm:px-5 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                onClick={() =>
+                  trackEvent('multiplayer_premium_cta_clicked', { placement: 'dashboard_banner' })
+                }
+              >
                 <Link href="/premium">Bekijk Premium</Link>
               </Button>
             </CardContent>

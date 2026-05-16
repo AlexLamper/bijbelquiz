@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button"
 import { Check, Crown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import {
+  PREMIUM_TRIGGER_BULLETS,
+  MULTIPLAYER_PREMIUM_MAX_PLAYERS,
+} from "@/lib/premium-benefits"
 
 const benefits = [
-  "Alle quizcategorieen en premium quizzen ontgrendeld",
-  "Onbeperkt rooms maken om samen te spelen",
-  "Uitgebreide voortgang en statistieken",
-  "Toegang tot nieuwe quizzen en content",
+  ...PREMIUM_TRIGGER_BULLETS,
+  "Toegang tot nieuwe seizoenspakketten en thema-quizzen",
 ]
 
 export function PremiumSection() {
@@ -26,11 +28,11 @@ export function PremiumSection() {
               </div>
 
               <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight text-white md:text-4xl">
-                Ontgrendel de volledige BijbelQuiz ervaring.
+                Speel onbeperkt samen — en leer dieper bij elke vraag.
               </h2>
 
               <p className="mt-5 max-w-lg leading-relaxed text-white/75">
-                Met Premium krijg je alle quizzen, speel je onbeperkt samen met vrienden en familie, en volg je je voortgang in detail.
+                Met Premium host je multiplayer-rooms tot {MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers, krijg je uitleg en bijbelverwijzingen bij elke vraag, en volg je je voortgang per boek.
               </p>
 
               <ul className="mt-7 space-y-3">

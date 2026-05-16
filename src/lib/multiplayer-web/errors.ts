@@ -15,7 +15,9 @@ export function toUserMessage(error: unknown): string {
       ANSWER_ALREADY_SUBMITTED: 'Je hebt al een antwoord ingestuurd.',
       GAME_NOT_IN_PROGRESS: 'De game is momenteel niet actief.',
       VALIDATION_ERROR: 'Ongeldige invoer. Controleer je gegevens.',
-      PREMIUM_REQUIRED: 'Room maken is Premium. Gratis accounts kunnen eenmalig een room maken.',
+      // PREMIUM_REQUIRED is intentionally omitted: the server returns a
+      // contextual message (free quota used vs. above free player cap) that
+      // we want to surface verbatim to drive the right paywall framing.
       UNAUTHORIZED: 'Je sessie is verlopen. Log opnieuw in.',
       QUIZ_NOT_FOUND: 'De geselecteerde quiz bestaat niet meer.',
       INTERNAL_ERROR: 'Er ging iets mis op de server. Probeer opnieuw.',

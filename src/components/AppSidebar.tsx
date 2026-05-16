@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { trackEvent } from '@/components/GoogleAnalytics';
 
 interface SidebarItem {
   href: string;
@@ -164,10 +165,13 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
             <Crown className="h-3.5 w-3.5" />
             Premium
           </p>
-          <p className="mt-2 text-sm font-semibold text-[#1f2f4b] dark:text-zinc-100">Meer uit je quizsessies halen</p>
-          <p className="mt-1 text-xs text-[#607597] dark:text-zinc-400">Ontgrendel alle quizzen, zonder advertenties en met extra uitleg.</p>
+          <p className="mt-2 text-sm font-semibold text-[#1f2f4b] dark:text-zinc-100">Samen spelen zonder limiet</p>
+          <p className="mt-1 text-xs text-[#607597] dark:text-zinc-400">Host onbeperkt rooms tot 20 spelers en krijg uitleg bij elke vraag.</p>
           <Link
             href="/premium"
+            onClick={() =>
+              trackEvent('multiplayer_premium_cta_clicked', { placement: 'sidebar' })
+            }
             className="mt-3 inline-flex w-full items-center justify-center rounded-md bg-[#6f8ed4] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
           >
             Bekijk Premium

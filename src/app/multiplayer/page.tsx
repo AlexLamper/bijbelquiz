@@ -3,6 +3,10 @@ import { redirect } from 'next/navigation';
 import MultiplayerEntryClient from '@/components/multiplayer/MultiplayerEntryClient';
 import { authOptions } from '@/lib/auth';
 import { connectDB, Quiz, User } from '@/database';
+import {
+  MULTIPLAYER_FREE_MAX_PLAYERS,
+  MULTIPLAYER_PREMIUM_MAX_PLAYERS,
+} from '@/lib/premium-benefits';
 
 interface QuizOption {
   id: string;
@@ -63,11 +67,16 @@ export default async function MultiplayerPage() {
     };
   });
 
+  const maxPlayersForUser = isPremiumUser
+    ? MULTIPLAYER_PREMIUM_MAX_PLAYERS
+    : MULTIPLAYER_FREE_MAX_PLAYERS;
+
   return (
     <MultiplayerEntryClient
       quizzes={quizzes}
       isPremiumUser={isPremiumUser}
       hasUsedFreeRoomCreation={hasUsedFreeRoomCreation}
+      maxPlayersForUser={maxPlayersForUser}
     />
   );
 }

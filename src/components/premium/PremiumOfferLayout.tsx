@@ -7,6 +7,12 @@ import { Check, ChevronRight } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
+import { trackEvent } from '@/components/GoogleAnalytics';
+import {
+  PREMIUM_HERO_OUTCOME,
+  PREMIUM_TRIGGER_BULLETS,
+  formatPricePerWeek,
+} from '@/lib/premium-benefits';
 import { cn } from '@/lib/utils';
 
 type BillingMode = 'one-time' | 'automatic';
@@ -24,7 +30,7 @@ const FAQ_ITEMS = [
     value: 'item-1',
     question: 'Wat is Premium precies?',
     answer:
-      'Met Premium speel je zonder advertenties en krijg je toegang tot alle quizzen, statistieken en uitleg per vraag.',
+      'Met Premium host je onbeperkt multiplayer-rooms tot 20 spelers, krijg je uitleg en bijbelverwijzingen bij elke vraag, en zie je gedetailleerde voortgang per boek. Ook alle premium quizzen worden ontgrendeld.',
   },
   {
     value: 'item-2',
@@ -101,8 +107,8 @@ export default function PremiumOfferLayout({
       title: 'Per maand',
       price: monthlyPriceLabel,
       cadence: '/maand',
-      description: 'Voor wie flexibel wil blijven en maandelijks wil ondersteunen.',
-      features: ['Alle quizzen beschikbaar', 'Geen advertenties', 'Op elk moment opzegbaar'],
+      description: 'Voor wie flexibel wil blijven en maandelijks wil bijdragen.',
+      features: [...PREMIUM_TRIGGER_BULLETS, 'Op elk moment opzegbaar'],
       ctaLabel: 'Ontgrendel Premium nu',
       footnote: 'Periodieke afschrijving. Eenvoudig opzegbaar.',
     },
@@ -110,12 +116,14 @@ export default function PremiumOfferLayout({
       title: 'Levenslang',
       price: lifetimePriceLabel,
       cadence: '/eenmalig',
-      description: 'Een eenmalige bijdrage voor blijvende premium toegang.',
-      features: ['Alle quizzen beschikbaar', 'Geen advertenties', 'Permanent premium account'],
+      description: 'Een eenmalige bijdrage voor blijvende Premium toegang.',
+      features: [...PREMIUM_TRIGGER_BULLETS, 'Permanent Premium account'],
       ctaLabel: 'Eenmalig bijdragen',
       footnote: 'Eenmalige betaling. Direct geactiveerd.',
     },
   };
+
+  const perWeekLabel = formatPricePerWeek(monthlyPriceLabel);
 
   const renderAction = (planType: PlanType, label: string) => {
     if (isPremium) {
@@ -128,7 +136,17 @@ export default function PremiumOfferLayout({
 
     if (isLoggedIn) {
       return (
-        <form action="/api/stripe/checkout" method="POST" className="w-full">
+        <form
+          action="/api/stripe/checkout"
+          method="POST"
+          className="w-full"
+          onSubmit={() =>
+            trackEvent('premium_checkout_started', {
+              placement: 'premium_page',
+              plan: planType,
+            })
+          }
+        >
           <input type="hidden" name="plan" value={planType} />
           <Button type="submit" size="lg" className="h-11 w-full gap-2 font-semibold dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
             {label}
@@ -139,7 +157,17 @@ export default function PremiumOfferLayout({
     }
 
     return (
-      <Button asChild size="lg" className="h-11 w-full dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
+      <Button
+        asChild
+        size="lg"
+        className="h-11 w-full dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]"
+        onClick={() =>
+          trackEvent('premium_login_required', {
+            placement: 'premium_page',
+            plan: planType,
+          })
+        }
+      >
         <Link href="/api/auth/signin?callbackUrl=/premium">Log in om te kopen</Link>
       </Button>
     );
@@ -150,7 +178,7 @@ export default function PremiumOfferLayout({
       <header className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.14em] text-primary dark:text-[#9db5dc]">BijbelQuiz Premium</p>
         <h1 className="mt-4 text-2xl font-bold tracking-tight text-foreground md:text-4xl">
-          Ontgrendel alle quizzen, uitleg en statistieken met Premium
+          {PREMIUM_HERO_OUTCOME}
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
           Kies of je eenmalig of automatisch wilt bijdragen. Jij bepaalt wat het beste past bij jouw gebruik.
@@ -202,6 +230,11 @@ export default function PremiumOfferLayout({
               <span className="text-4xl font-bold tracking-tight text-foreground">{planContent[activePlan].price}</span>
               <span className="pb-1 text-muted-foreground">{planContent[activePlan].cadence}</span>
             </div>
+            {activePlan === 'monthly' && perWeekLabel && (
+              <p className="text-sm text-muted-foreground">
+                Dat is ongeveer <span className="font-medium text-foreground">{perWeekLabel} per week</span>.
+              </p>
+            )}
             <p className="text-base leading-relaxed text-muted-foreground">{planContent[activePlan].description}</p>
           </CardHeader>
 
