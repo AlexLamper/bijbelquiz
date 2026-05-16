@@ -22,6 +22,14 @@ interface Quiz {
   slug?: string;
   categoryId?: { _id: string; title: string } | string;
   questions?: { _id: string }[];
+  progress?: {
+    attempts: number;
+    bestCorrectAnswers: number;
+    lastCorrectAnswers: number;
+    lastWrongAnswers: number;
+    lastTotalQuestions: number;
+    lastCompletedAt: string;
+  };
 }
 
 interface Category {
@@ -217,7 +225,7 @@ export default function QuizzesClient({ quizzes, categories, userIsPremium, init
         ) : (
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {filteredQuizzes.map((quiz) => (
-              <QuizCard key={quiz._id} quiz={quiz} layout="stack" />
+              <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={userIsPremium} layout="stack" />
             ))}
           </div>
         )}

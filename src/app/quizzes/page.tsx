@@ -1,9 +1,10 @@
-import { connectDB, Quiz, Category } from '@/database';
+import { connectDB, Quiz, Category, UserProgress } from '@/database';
 import { getServerSession } from 'next-auth';
 import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
 import QuizzesClient from '@/components/QuizzesClient';
+import { buildQuizProgressMap } from '@/lib/quiz-progress';
 
 export const metadata: Metadata = {
   title: 'Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz',
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
-async function getData() {
+async function getData(userId?: string) {
   await connectDB();
 
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
@@ -33,8 +34,32 @@ async function getData() {
 
   const categories = await Category.find({ isActive: true }).sort({ sortOrder: 1 }).lean();
 
+  const progressDocs = userId
+    ? await UserProgress.find({ userId })
+        .select('quizId correctAnswers wrongAnswers totalQuestions completedAt')
+        .sort({ completedAt: -1 })
+        .lean()
+    : [];
+  const progressByQuizId = buildQuizProgressMap(
+    progressDocs as unknown as Array<{
+      quizId?: unknown;
+      correctAnswers?: unknown;
+      wrongAnswers?: unknown;
+      totalQuestions?: unknown;
+      completedAt?: unknown;
+    }>
+  );
+
+  const quizzesWithProgress = quizzes.map((quiz) => {
+    const quizId = String((quiz as { _id: unknown })._id);
+    return {
+      ...quiz,
+      progress: progressByQuizId[quizId],
+    };
+  });
+
   return {
-    quizzes: JSON.parse(JSON.stringify(quizzes)),
+    quizzes: JSON.parse(JSON.stringify(quizzesWithProgress)),
     categories: JSON.parse(JSON.stringify(categories)),
   };
 }
@@ -48,7 +73,7 @@ export default async function QuizzesPage({
   const session = await getServerSession(authOptions);
   const userIsPremium = !!session?.user?.isPremium;
 
-  const { quizzes, categories } = await getData();
+  const { quizzes, categories } = await getData(session?.user?.id);
   const currentCategory = params.category || 'all';
 
   let initialCategoryId = 'all';

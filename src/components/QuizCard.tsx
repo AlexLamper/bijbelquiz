@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useMemo, useState } from 'react';
-import { ArrowRight, Crown, Lock } from 'lucide-react';
+import { ArrowRight, Crown, Lock, RotateCcw } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -20,6 +20,14 @@ export interface QuizItem {
   slug?: string;
   categoryId?: { _id: string; title: string } | string;
   questions?: { _id: string }[];
+  progress?: {
+    attempts: number;
+    bestCorrectAnswers: number;
+    lastCorrectAnswers: number;
+    lastWrongAnswers: number;
+    lastTotalQuestions: number;
+    lastCompletedAt: string;
+  };
 }
 
 interface QuizCardProps {
@@ -126,6 +134,11 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
   const difficultyBadgeClassName = cn(difficultyBadgeBaseClassName, difficultyBadgeDarkClass);
 
   const href = `/quiz/${quiz.slug || quiz._id}`;
+  const hasProgress = Boolean(quiz.progress && quiz.progress.attempts > 0);
+  const compactProgressLabel =
+    hasProgress && quiz.progress
+      ? `${quiz.progress.lastCorrectAnswers}/${quiz.progress.lastTotalQuestions} goed`
+      : null;
 
   const imageBlock = (
     <div className={cn('relative h-44 bg-[#dce5f3]', imageContainerDarkClass, isStackLayout && 'rounded-lg overflow-hidden')}>
@@ -143,6 +156,12 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
           {categoryLabel}
         </Badge>
         <Badge className={difficultyBadgeClassName}>{difficultyLabel}</Badge>
+        {hasProgress && compactProgressLabel && (
+          <Badge variant="secondary" className={cn('bg-emerald-50/95 text-emerald-700 dark:bg-emerald-600/20 dark:text-emerald-300', badgeDarkClass)}>
+            <RotateCcw className="mr-1 h-3 w-3" />
+            {compactProgressLabel}
+          </Badge>
+        )}
       </div>
 
       {quiz.isPremium && (
@@ -178,7 +197,7 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
             <div className={cn('mt-4 flex items-center justify-between text-xs text-muted-foreground', bodyDarkClass)}>
               <span>{questionCount} vragen</span>
               <span className={cn('inline-flex items-center gap-1 font-medium text-[#355384]', startDarkClass)}>
-                Start
+                {hasProgress ? 'Opnieuw' : 'Start'}
                 <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </div>
@@ -202,7 +221,7 @@ export function QuizCard({ quiz, isPremiumUser, layout = 'card', darkPalette = '
           <div className={cn('mt-4 flex items-center justify-between text-xs text-muted-foreground', bodyDarkClass)}>
             <span>{questionCount} vragen</span>
             <span className={cn('inline-flex items-center gap-1 font-medium text-[#355384]', startDarkClass)}>
-              Start
+              {hasProgress ? 'Opnieuw' : 'Start'}
               <ArrowRight className="h-3.5 w-3.5" />
             </span>
           </div>

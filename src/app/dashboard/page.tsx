@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import DashboardHomeClient from '@/app/dashboard/DashboardHomeClient';
 import { getLevelInfo } from '@/lib/gamification';
 import { calculateNextStreak } from '@/lib/streak';
+import { buildQuizProgressMap } from '@/lib/quiz-progress';
 
 export const metadata: Metadata = {
   title: 'Dashboard - BijbelQuiz',
@@ -52,7 +53,6 @@ export default async function DashboardPage() {
     .sort({ isPremium: 1, sortOrder: 1 })
     .limit(8)
     .lean();
-  const quizzes = JSON.parse(JSON.stringify(quizzesRaw));
 
   // Fetch user progress only if logged in
   interface PopulatedProgress {
@@ -60,11 +60,14 @@ export default async function DashboardPage() {
     quizId?: { _id: string; title: string; slug?: string; categoryId?: { title: string } };
     score: number;
     totalQuestions: number;
+    correctAnswers: number;
+    wrongAnswers: number;
     completedAt: Date;
   }
 
   const progressDocs = userId ? await UserProgress.find({ userId })
     .sort({ completedAt: -1 })
+    .select('quizId score totalQuestions correctAnswers wrongAnswers completedAt')
     .populate({
       path: 'quizId',
       select: 'title slug categoryId',
@@ -72,12 +75,21 @@ export default async function DashboardPage() {
     })
     .lean() as unknown as PopulatedProgress[] : [];
 
+  const progressByQuizId = buildQuizProgressMap(progressDocs);
+  const quizzesWithProgress = quizzesRaw.map((quiz) => {
+    const quizId = String((quiz as { _id: unknown })._id);
+    return {
+      ...quiz,
+      progress: progressByQuizId[quizId],
+    };
+  });
+
   const levelInfo = getLevelInfo(xp);
   const recentProgress = JSON.parse(JSON.stringify(progressDocs.slice(0, 5)));
 
   return (
     <DashboardHomeClient
-      quizzes={quizzes}
+      quizzes={JSON.parse(JSON.stringify(quizzesWithProgress))}
       recentProgress={recentProgress}
       streak={streak}
       xp={xp}

@@ -2,7 +2,7 @@ import { notFound, redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
 import type { Metadata, ResolvingMetadata } from 'next'; // Added metadata types
 import { authOptions } from '@/lib/auth';
-import { connectDB, Quiz, ICategory } from '@/database';
+import { connectDB, Quiz, ICategory, UserProgress } from '@/database';
 import QuizPlayer from '@/components/QuizPlayer';
 
 interface PageProps {
@@ -132,6 +132,20 @@ export default async function QuizPage({ params }: PageProps) {
   // Serialize for Client Component
   const serializableQuiz = JSON.parse(JSON.stringify(quiz));
 
+  const [lastProgressDoc, attempts] = await Promise.all([
+    UserProgress.findOne({
+      userId: session.user.id,
+      quizId: quiz._id,
+    })
+      .select('correctAnswers wrongAnswers totalQuestions completedAt')
+      .sort({ completedAt: -1 })
+      .lean(),
+    UserProgress.countDocuments({
+      userId: session.user.id,
+      quizId: quiz._id,
+    }),
+  ]);
+
   if (!session.user.isPremium) {
     serializableQuiz.questions = serializableQuiz.questions.map(
       (question: { explanation?: string; bibleReference?: string; [key: string]: unknown }) => {
@@ -178,6 +192,19 @@ export default async function QuizPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {lastProgressDoc && (
+        <section className="mx-auto mb-4 max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+          <div className="rounded-xl border border-[#d7e1ee] bg-[#f7faff] px-4 py-3 text-sm text-[#30466e] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200">
+            <p className="font-medium">
+              Deze quiz heb je al gedaan ({attempts}x).
+            </p>
+            <p className="mt-1 text-xs text-[#5f7297] dark:text-zinc-400">
+              Laatste poging: {lastProgressDoc.correctAnswers ?? 0} goed, {lastProgressDoc.wrongAnswers ?? 0} fout
+              ({lastProgressDoc.totalQuestions ?? 0} vragen).
+            </p>
+          </div>
+        </section>
+      )}
       <QuizPlayer quiz={serializableQuiz} />
     </div>
   );
