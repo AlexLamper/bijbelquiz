@@ -28,7 +28,7 @@ export function trackEvent(
 }
 
 // ---------------------------------------------------------------------------
-// Inner component — must be wrapped in <Suspense> because it uses
+// Inner component - must be wrapped in <Suspense> because it uses
 // useSearchParams(), which opts the page into client-side rendering.
 // ---------------------------------------------------------------------------
 function PageViewTracker() {
@@ -49,7 +49,7 @@ function PageViewTracker() {
 }
 
 // ---------------------------------------------------------------------------
-// Main component — add once to the root layout.
+// Main component - add once to the root layout.
 // ---------------------------------------------------------------------------
 export default function GoogleAnalytics() {
   if (!GA_ID) return null;

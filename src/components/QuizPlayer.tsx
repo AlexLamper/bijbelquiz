@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 
 import QuizPremiumReviewSection from '@/components/quiz/QuizPremiumReviewSection';
-import { Badge } from '@/components/ui/badge';
+import BibleVerseDisplay from '@/components/BibleVerseDisplay';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
@@ -113,9 +113,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const difficultyLabel = getDifficultyLabel(quiz.difficulty);
   const categoryLabel = getCategoryLabel(quiz.categoryId);
   const questionTextSizeClass = getQuestionTextSizeClass(textSize, currentQuestion.text);
-  const visibleBibleReference = isPremium
-    ? currentQuestion.bibleReference
-    : currentQuestion.bibleReferencePreview;
+  const visibleBibleReference = currentQuestion.bibleReference;
   const maxPossibleXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
   const studyTopicLink = getStudyTopicLinkForQuizTitle(quiz.title || '');
 
@@ -269,6 +267,10 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
       }
 
       if (anchor.target === '_blank' || anchor.hasAttribute('download')) {
+        return;
+      }
+
+      if (anchor.hasAttribute('data-skip-leave-guard')) {
         return;
       }
 
@@ -567,30 +569,25 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 wrap-anywhere text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
                       {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
                     </p>
-                  ) : (
-                    <div className="mt-2 border border-[#d7e1ee] bg-white p-3 dark:border-zinc-700 dark:bg-zinc-900">
-                      {currentQuestion.explanationPreview ? (
-                        <>
-                          <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
-                            {currentQuestion.explanationPreview}
-                          </p>
-                          <p className="mt-2 text-[11px] font-semibold uppercase tracking-wider text-[#6f8ed4] dark:text-zinc-400">
-                            Verder lezen met Premium
-                          </p>
-                        </>
-                      ) : (
-                        <p className="text-sm text-muted-foreground">Uitleg is beschikbaar voor Premium leden.</p>
-                      )}
-                      <Button asChild className="mt-3 h-9 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
-                        <Link href="/premium">Ontgrendel volledige uitleg</Link>
-                      </Button>
+                  ) : currentQuestion.explanationPreview ? (
+                    <div className="mt-2">
+                      <div className="relative overflow-hidden">
+                        <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
+                          {currentQuestion.explanationPreview}
+                        </p>
+                        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#f8fafe] to-transparent dark:from-zinc-800/60" />
+                      </div>
+                      <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
+                        <p className="text-xs font-medium text-[#6f8ed4] dark:text-zinc-400">Volledige uitleg zichtbaar met Premium</p>
+                        <Button asChild className="h-7 rounded px-3 text-xs bg-[#6f8ed4] dark:bg-zinc-500 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
+                          <Link href="/premium" data-skip-leave-guard>Ontgrendel Premium</Link>
+                        </Button>
+                      </div>
                     </div>
-                  )}
+                  ) : null}
 
                   {visibleBibleReference && (
-                    <Badge variant="secondary" className="mt-3 rounded-none border border-[#d7e1ee] bg-white text-[#355384] dark:border-[#d7e1ee] dark:bg-white dark:text-[#355384]">
-                      Referentie{!isPremium ? ' (preview)' : ''}: {visibleBibleReference}
-                    </Badge>
+                    <BibleVerseDisplay reference={visibleBibleReference} />
                   )}
                 </div>
               )}

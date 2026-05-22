@@ -8,6 +8,7 @@ import { unstable_cache } from 'next/cache';
 import { Metadata } from 'next';
 
 import { PopularQuizzesSection } from '@/components/landing/PopularQuizzesSection';
+import { MultiplayerHighlightSection } from '@/components/landing/MultiplayerHighlightSection';
 import { PremiumSection } from '@/components/landing/PremiumSection';
 import { FeaturesSection } from '@/components/landing/FeaturesSection';
 import { CTASection } from '@/components/landing/CTASection';
@@ -71,7 +72,7 @@ export default async function Home() {
           <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl lg:-mt-32 xl:-mt-24">
             <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[64px] 3xl:text-[72px] leading-[1.1] font-bold text-[#1f2f4b] dark:text-white tracking-tight xl:max-w-none 2xl:max-w-none 3xl:max-w-none">
               Hoe goed ken jij de Bijbel? <span className="dark:text-[#9db5dc]">Ontdek het...</span>
-            </h1> 
+            </h1>
             <p className="mb-8 sm:mb-10 max-w-xl text-[#53647f] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl leading-[1.6]">
               BijbelQuiz heeft tientallen quizzen.
               Kies uit verschillende categorieën,
@@ -81,9 +82,9 @@ export default async function Home() {
             <div className="flex flex-col items-start gap-4 sm:gap-6 w-full sm:w-auto">
               {!session ? (
                 <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                  <Button 
-                    size="lg" 
-                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors w-full sm:w-auto" 
+                  <Button
+                    size="lg"
+                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors w-full sm:w-auto"
                     asChild
                   >
                     <Link href="/dashboard">
@@ -92,9 +93,9 @@ export default async function Home() {
                   </Button>
                 </div>
               ) : (
-                <Button 
-                  size="lg" 
-                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors" 
+                <Button
+                  size="lg"
+                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors"
                   asChild
                 >
                   <Link href="/dashboard">
@@ -126,6 +127,7 @@ export default async function Home() {
       </section>
 
       <PopularQuizzesSection quizzes={popular} isPremiumUser={isPremiumUser} />
+      <MultiplayerHighlightSection />
       <PremiumSection />
       <FeaturesSection />
       <CTASection />

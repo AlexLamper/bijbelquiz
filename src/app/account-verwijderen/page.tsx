@@ -117,7 +117,7 @@ export default function DeleteAccountPage() {
 
             <p className="text-sm text-muted-foreground">
               Meer weten over privacy? Bekijk ons{' '}
-              <Link href="/privacy-policy" className="font-medium text-[#355384] hover:underline dark:text-[#9db5dc]">
+              <Link href="/privacybeleid" className="font-medium text-[#355384] hover:underline dark:text-[#9db5dc]">
                 privacybeleid
               </Link>
               .

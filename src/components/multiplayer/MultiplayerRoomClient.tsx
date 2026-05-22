@@ -28,14 +28,14 @@ function getRouteForStatus(roomCode: string, status: RoomStatus): string {
   const normalized = normalizeRoomCode(roomCode);
 
   if (status === 'finished') {
-    return `/multiplayer/${normalized}/results`;
+    return `/samen-spelen/$\{normalized\}/uitslag`;
   }
 
   if (status === 'lobby') {
-    return `/multiplayer/${normalized}/lobby`;
+    return `/samen-spelen/$\{normalized\}/lobby`;
   }
 
-  return `/multiplayer/${normalized}/game`;
+  return `/samen-spelen/$\{normalized\}/spel`;
 }
 
 function getConnectionBadgeClass(status: string): string {
@@ -99,7 +99,7 @@ function GameProgressBar(props: { current: number; total: number; status: RoomSt
     <div className="space-y-2">
       <div className="flex items-center justify-between text-xs text-muted-foreground">
         <span className="font-medium text-foreground">
-          {status === 'lobby' ? 'Lobby' : `Vraag ${Math.min(current + 1, total)} van ${total}`}
+          {status === 'lobby' ? 'Wachtkamer' : `Vraag ${Math.min(current + 1, total)} van ${total}`}
         </span>
         <span>{pct}%</span>
       </div>
@@ -252,11 +252,11 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
       return;
     }
 
-    if (view === 'game' && targetRoute.endsWith('/game')) {
+    if (view === 'game' && targetRoute.endsWith('/spel')) {
       return;
     }
 
-    if (view === 'results' && targetRoute.endsWith('/results')) {
+    if (view === 'results' && targetRoute.endsWith('/uitslag')) {
       return;
     }
 
@@ -287,7 +287,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
   async function handleLeaveAndExit() {
     await leave();
-    router.push('/multiplayer');
+    router.push('/samen-spelen');
   }
 
   if (sessionStatus === 'loading' || loading) {
@@ -311,7 +311,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
             </CardHeader>
             <CardContent>
               <Button asChild>
-                <Link href="/login?callbackUrl=/multiplayer">Naar login</Link>
+                <Link href="/inloggen?callbackUrl=/samen-spelen">Naar login</Link>
               </Button>
             </CardContent>
           </Card>
@@ -326,9 +326,9 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
         <div className="container mx-auto max-w-3xl px-4 py-12">
           <Card>
             <CardHeader>
-              <CardTitle>Room niet beschikbaar</CardTitle>
+              <CardTitle>Spel niet beschikbaar</CardTitle>
               <CardDescription>
-                Deze room bestaat niet meer of is beëindigd door de host.
+                Dit spel bestaat niet meer of is beëindigd door de spelleider.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -338,7 +338,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 </p>
               )}
               <Button asChild>
-                <Link href="/multiplayer">Terug naar samen spelen</Link>
+                <Link href="/samen-spelen">Terug naar samen spelen</Link>
               </Button>
             </CardContent>
           </Card>
@@ -353,7 +353,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
         <div className="container mx-auto max-w-3xl px-4 py-12">
           <Card>
             <CardHeader>
-              <CardTitle>Room laden mislukt</CardTitle>
+              <CardTitle>Spel laden mislukt</CardTitle>
               <CardDescription>Probeer opnieuw of ga terug naar de startpagina van samen spelen.</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-3">
@@ -362,7 +362,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 Opnieuw proberen
               </Button>
               <Button asChild>
-                <Link href="/multiplayer">Terug</Link>
+                <Link href="/samen-spelen">Terug</Link>
               </Button>
             </CardContent>
           </Card>
@@ -395,7 +395,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                   {room.code}
                 </span>
                 {view === 'lobby' && (
-                  <span className="ml-2 text-xs">— deel deze code met je groep</span>
+                  <span className="ml-2 text-xs">- deel deze code met je groep</span>
                 )}
               </p>
             </div>
@@ -442,31 +442,31 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
           {view === 'lobby' && (
             <Card className="border-[#e8edf5] shadow-md dark:border-zinc-800">
               <CardHeader>
-                <CardTitle>Lobby</CardTitle>
+                <CardTitle>Wachtkamer</CardTitle>
                 <CardDescription>
-                  Iedereen die wil meespelen join met de room code. Als de host kiest, start de quiz.
+                  Iedereen typt de spelcode in en wacht hier. Als de spelleider start, begint de quiz.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-5">
                 <div className="flex flex-wrap gap-3">
                   <Badge variant="outline">Spelers: {room.players.length} / {room.maxPlayers}</Badge>
-                  {isHost ? <Badge>Host</Badge> : <Badge variant="secondary">Deelnemer</Badge>}
+                  {isHost ? <Badge>Spelleider</Badge> : <Badge variant="secondary">Deelnemer</Badge>}
                 </div>
 
                 <div className="space-y-2 rounded-lg border p-4">
                   <p className="text-sm font-medium">Startvoorwaarden</p>
                   {room.players.length < 2 ? (
                     <p className="text-sm text-amber-600 dark:text-amber-400">
-                      Nog {2 - room.players.length} {2 - room.players.length === 1 ? 'speler' : 'spelers'} nodig voor de game kan starten.
+                      Nog {2 - room.players.length} {2 - room.players.length === 1 ? 'speler' : 'spelers'} nodig om te beginnen.
                     </p>
                   ) : (
                     <p className="text-sm text-emerald-600 dark:text-emerald-400">
-                      Voldoende spelers aanwezig. {isHost ? 'Je kunt de game starten.' : 'Wachten op de host.'}
+                      Voldoende spelers aanwezig. {isHost ? 'Je kunt het spel starten.' : 'Wachten op de spelleider.'}
                     </p>
                   )}
                   {connectionStatus !== 'connected' && (
                     <p className="text-xs text-muted-foreground">
-                      Verbinding herstellen — spelerlijst wordt opnieuw opgehaald.
+                      Verbinding herstellen - spelerlijst wordt opnieuw opgehaald.
                     </p>
                   )}
                 </div>
@@ -475,22 +475,22 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                   {isHost ? (
                     <>
                       <Button onClick={() => void start()} disabled={!canStart || isStarting}>
-                        {isStarting ? 'Game wordt gestart...' : 'Start game'}
+                        {isStarting ? 'Spel wordt gestart...' : 'Start spel'}
                       </Button>
                       {!canStart && !isStarting && room.players.length >= 2 && (
                         <p className="text-xs text-muted-foreground">
-                          Even wachten — spelerlijst wordt bijgewerkt...
+                          Even wachten - spelerlijst wordt bijgewerkt...
                         </p>
                       )}
                     </>
                   ) : (
                     <p className="text-sm text-muted-foreground">
-                      Wachten op de host om de game te starten...
+                      Wachten op de spelleider om het spel te starten...
                     </p>
                   )}
 
                   <Button variant="outline" onClick={() => void handleLeaveAndExit()} disabled={isLeaving}>
-                    {isLeaving ? 'Room verlaten...' : isHost ? 'Room sluiten en verlaten' : 'Room verlaten'}
+                    {isLeaving ? 'Spel verlaten...' : isHost ? 'Spel sluiten' : 'Spel verlaten'}
                   </Button>
                 </div>
               </CardContent>
@@ -507,7 +507,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 <CardDescription>
                   {room.currentQuestion
                     ? room.status === 'question_result'
-                      ? 'Uitslag van deze vraag — daarna gaat het automatisch verder.'
+                      ? 'Uitslag van deze vraag - daarna gaat het automatisch verder.'
                       : `Vraag ${room.currentQuestion.questionNumber} van ${room.currentQuestion.totalQuestions}`
                     : 'Even geduld, de volgende vraag wordt geladen...'}
                 </CardDescription>
@@ -537,7 +537,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                                 Goed zo!
                               </p>
                               <p className="mt-0.5 text-sm text-emerald-900/85 dark:text-emerald-200/90">
-                                Je antwoord is correct — je hebt een punt verdiend.
+                                Je antwoord is correct - je hebt een punt verdiend.
                               </p>
                             </div>
                           </div>
@@ -650,7 +650,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     {room.status === 'in_progress' && (
                       <p className="text-sm text-muted-foreground">
                         {currentPlayer?.hasAnswered
-                          ? 'Je antwoord is verstuurd. Wacht tot iedereen klaar is of de timer afloopt — daarna zie je of het goed was.'
+                          ? 'Je antwoord is verstuurd. Wacht tot iedereen klaar is of de timer afloopt - daarna zie je of het goed was.'
                           : 'Tik op het juiste antwoord. Je kunt maar één keer kiezen.'}
                       </p>
                     )}
@@ -676,7 +676,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 )}
 
                 <Button variant="outline" onClick={() => void handleLeaveAndExit()} disabled={isLeaving}>
-                  {isLeaving ? 'Room verlaten...' : 'Room verlaten'}
+                  {isLeaving ? 'Spel verlaten...' : 'Spel verlaten'}
                 </Button>
               </CardContent>
             </Card>
@@ -714,10 +714,10 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
                 <div className="flex flex-wrap gap-3">
                   <Button variant="outline" onClick={() => void handleLeaveAndExit()} disabled={isLeaving}>
-                    {isLeaving ? 'Room verlaten...' : 'Room verlaten'}
+                    {isLeaving ? 'Spel verlaten...' : 'Spel verlaten'}
                   </Button>
                   <Button asChild>
-                    <Link href="/multiplayer">Nieuwe game</Link>
+                    <Link href="/samen-spelen">Nieuw spel</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -727,7 +727,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
           <Card className="border-[#e8edf5] shadow-md dark:border-zinc-800">
             <CardHeader>
               <CardTitle>Scorebord</CardTitle>
-              <CardDescription>Live stand — wie scoort het hoogst?</CardDescription>
+              <CardDescription>Live stand - wie scoort het hoogst?</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
               {room.players
@@ -744,7 +744,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     <div className="mb-1 flex items-center justify-between gap-2">
                       <p className="font-medium">{player.name}</p>
                       <div className="flex gap-1">
-                        {player.isHost && <Badge variant="outline">Host</Badge>}
+                        {player.isHost && <Badge variant="outline">Spelleider</Badge>}
                         {!player.isConnected && <Badge variant="secondary">Offline</Badge>}
                       </div>
                     </div>
@@ -765,7 +765,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
             <CardHeader className="pb-2">
               <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
-                  <CardTitle className="text-sm">Debug — Samen spelen (HTTP polling)</CardTitle>
+                  <CardTitle className="text-sm">Debug - Samen spelen (HTTP polling)</CardTitle>
                   <CardDescription className="text-xs">
                     Status: <span className={connectionStatus === 'connected' ? 'text-emerald-600' : 'text-amber-600'}>{connectionStatus}</span>
                     {' · '}Room: {room?.status ?? 'unknown'}

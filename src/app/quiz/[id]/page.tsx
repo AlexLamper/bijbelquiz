@@ -33,23 +33,6 @@ function getExplanationPreview(explanation?: string): string | undefined {
   return `${trimmed}...`;
 }
 
-function getBibleReferencePreview(bibleReference?: string): string | undefined {
-  if (!bibleReference) return undefined;
-
-  const normalized = bibleReference.replace(/\s+/g, ' ').trim();
-  if (!normalized) return undefined;
-
-  const parts = normalized
-    .split(/[;,|]/)
-    .map((part) => part.trim())
-    .filter(Boolean);
-
-  if (parts.length > 1) {
-    return `${parts[0]} ...`;
-  }
-
-  return normalized;
-}
 
 export async function generateMetadata(
   { params }: PageProps,
@@ -112,7 +95,7 @@ export default async function QuizPage({ params }: PageProps) {
   const session = await getServerSession(authOptions);
 
   if (!session) {
-    redirect(`/login?callbackUrl=/quiz/${id}`);
+    redirect(`/inloggen?callbackUrl=/quiz/${id}`);
   }
 
   // Status check for non-admins
@@ -150,14 +133,12 @@ export default async function QuizPage({ params }: PageProps) {
     serializableQuiz.questions = serializableQuiz.questions.map(
       (question: { explanation?: string; bibleReference?: string; [key: string]: unknown }) => {
         const explanationPreview = getExplanationPreview(question.explanation);
-        const bibleReferencePreview = getBibleReferencePreview(question.bibleReference);
 
         return {
           ...question,
           explanationPreview,
-          bibleReferencePreview,
           explanation: undefined,
-          bibleReference: undefined,
+          // bibleReference stays visible for all users
         };
       }
     );
@@ -192,19 +173,6 @@ export default async function QuizPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {lastProgressDoc && (
-        <section className="mx-auto mb-4 max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
-          <div className="rounded-xl border border-[#d7e1ee] bg-[#f7faff] px-4 py-3 text-sm text-[#30466e] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200">
-            <p className="font-medium">
-              Deze quiz heb je al gedaan ({attempts}x).
-            </p>
-            <p className="mt-1 text-xs text-[#5f7297] dark:text-zinc-400">
-              Laatste poging: {lastProgressDoc.correctAnswers ?? 0} goed, {lastProgressDoc.wrongAnswers ?? 0} fout
-              ({lastProgressDoc.totalQuestions ?? 0} vragen).
-            </p>
-          </div>
-        </section>
-      )}
       <QuizPlayer quiz={serializableQuiz} />
     </div>
   );

@@ -160,7 +160,7 @@ export default function QuizzesClient({
 
             {canCreateQuiz && (
               <Button asChild className="hidden h-10 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] md:inline-flex dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
-                <Link href="/quizzes/create">Zelf quiz maken</Link>
+                <Link href="/quizzen/aanmaken">Zelf quiz maken</Link>
               </Button>
             )}
           </div>
@@ -197,7 +197,7 @@ export default function QuizzesClient({
           {canCreateQuiz && (
             <div className="mt-4 md:hidden">
               <Button asChild className="h-10 w-full rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
-                <Link href="/quizzes/create">Zelf quiz maken</Link>
+                <Link href="/quizzen/aanmaken">Zelf quiz maken</Link>
               </Button>
             </div>
           )}

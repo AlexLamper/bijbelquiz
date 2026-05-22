@@ -3,7 +3,7 @@ import type { PersistedRoom, RoomRepository } from './repository';
 import type { RoomStatus } from './types';
 
 /**
- * In-memory repository used by unit tests. NOT suitable for production —
+ * In-memory repository used by unit tests. NOT suitable for production -
  * each serverless instance would have its own copy. Use MongoRoomRepository
  * for any deployed code path.
  */

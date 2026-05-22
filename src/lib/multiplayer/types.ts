@@ -112,7 +112,7 @@ export interface MultiplayerServiceConfig {
   /**
    * After this many milliseconds since `lastSeenAt`, a player is considered
    * disconnected. The "isConnected" flag in the snapshot is computed from
-   * this — there is no socket-level connection any more.
+   * this - there is no socket-level connection any more.
    */
   playerOfflineAfterMs: number;
   /**

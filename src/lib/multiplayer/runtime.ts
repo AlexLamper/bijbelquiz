@@ -28,7 +28,7 @@ function makeInstanceId(): string {
  *  - Across hot reloads in dev we keep the same instance (no rebuilding the
  *    service / DB connection on every code change).
  *  - Across requests within a single Vercel serverless instance we share the
- *    same service object — though importantly the service no longer keeps
+ *    same service object - though importantly the service no longer keeps
  *    *room state* in memory, so cross-instance fragmentation doesn't matter.
  */
 export function getMultiplayerRuntime(): MultiplayerRuntime {

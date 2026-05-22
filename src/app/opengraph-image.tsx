@@ -48,7 +48,7 @@ export default function Image() {
           }}
         />
 
-        {/* Logo mark — book shape rendered inline */}
+        {/* Logo mark - book shape rendered inline */}
         <div
           style={{
             width: 110,

@@ -181,7 +181,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
       }
 
       toast.success(initialData ? "Quiz bijgewerkt!" : "Quiz aangemaakt!");
-      router.push("/admin/quizzes");
+      router.push("/beheer/quizzen");
       router.refresh();
     } catch (error: any) {
       toast.error(error.message);
@@ -196,7 +196,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Button variant="outline" size="icon" asChild>
-              <Link href="/admin/quizzes"><ArrowLeft className="h-4 w-4" /></Link>
+              <Link href="/beheer/quizzen"><ArrowLeft className="h-4 w-4" /></Link>
             </Button>
             <h1 className="text-3xl font-bold font-serif">{initialData ? 'Quiz Bewerken' : 'Nieuwe Quiz'}</h1>
           </div>

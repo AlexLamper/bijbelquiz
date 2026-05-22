@@ -1,7 +1,7 @@
 import { connectDB, User, UserProgress } from '@/database';
 import mongoose from 'mongoose';
 
-export type LeaderboardPeriod = 'weekly' | 'monthly' | 'all-time';
+export type LeaderboardPeriod = 'monthly' | 'all-time';
 
 export interface LeaderboardEntry {
   _id: string;
@@ -22,10 +22,6 @@ export interface LeaderboardResult {
 
 function getPeriodStartDate(period: LeaderboardPeriod): Date | null {
   const now = new Date();
-  if (period === 'weekly') {
-    return new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
-  }
-
   if (period === 'monthly') {
     return new Date(now.getTime() - (30 * 24 * 60 * 60 * 1000));
   }
@@ -34,7 +30,7 @@ function getPeriodStartDate(period: LeaderboardPeriod): Date | null {
 }
 
 export function parseLeaderboardPeriod(value: string | null | undefined): LeaderboardPeriod {
-  if (value === 'weekly' || value === 'monthly' || value === 'all-time') {
+  if (value === 'monthly' || value === 'all-time') {
     return value;
   }
 

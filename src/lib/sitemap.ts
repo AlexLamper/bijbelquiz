@@ -27,17 +27,18 @@ export function getStaticSitemapEntries(baseUrl = getSiteBaseUrl()): SitemapEntr
 
   const entries: SitemapEntry[] = [
     { url: `${baseUrl}/`, priority: 1.0, changeFrequency: 'daily' },
-    { url: `${baseUrl}/quizzes`, priority: 0.95, changeFrequency: 'daily' },
+    { url: `${baseUrl}/quizzen`, priority: 0.95, changeFrequency: 'daily' },
     { url: `${baseUrl}/premium`, priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${baseUrl}/leaderboard`, priority: 0.85, changeFrequency: 'daily' },
+    { url: `${baseUrl}/samen-spelen`, priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${baseUrl}/ranglijst`, priority: 0.85, changeFrequency: 'daily' },
     { url: `${baseUrl}/contact`, priority: 0.65, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/help`, priority: 0.65, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/privacy-policy`, priority: 0.5, changeFrequency: 'yearly' },
-    { url: `${baseUrl}/terms-of-service`, priority: 0.5, changeFrequency: 'yearly' },
+    { url: `${baseUrl}/hulp`, priority: 0.65, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/privacybeleid`, priority: 0.5, changeFrequency: 'yearly' },
+    { url: `${baseUrl}/voorwaarden`, priority: 0.5, changeFrequency: 'yearly' },
     { url: `${baseUrl}/account-verwijderen`, priority: 0.45, changeFrequency: 'yearly' },
-    { url: `${baseUrl}/bug-report`, priority: 0.45, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/login`, priority: 0.35, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/register`, priority: 0.35, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/foutmelding`, priority: 0.45, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/inloggen`, priority: 0.35, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/registreren`, priority: 0.35, changeFrequency: 'monthly' },
   ];
 
   return entries.map((entry) => ({

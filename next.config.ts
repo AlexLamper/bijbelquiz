@@ -13,6 +13,29 @@ const nextConfig: NextConfig = {
     },
   },
   transpilePackages: ["@bijbelquiz/database"],
+  async redirects() {
+    return [
+      { source: '/profile', destination: '/profiel', permanent: true },
+      { source: '/leaderboard', destination: '/ranglijst', permanent: true },
+      { source: '/quizzes', destination: '/quizzen', permanent: true },
+      { source: '/quizzes/create', destination: '/quizzen/aanmaken', permanent: true },
+      { source: '/quiz/:id/review', destination: '/quiz/:id/beoordeling', permanent: true },
+      { source: '/login', destination: '/inloggen', permanent: true },
+      { source: '/register', destination: '/registreren', permanent: true },
+      { source: '/multiplayer', destination: '/samen-spelen', permanent: true },
+      { source: '/multiplayer/:roomCode/lobby', destination: '/samen-spelen/:roomCode/lobby', permanent: true },
+      { source: '/multiplayer/:roomCode/game', destination: '/samen-spelen/:roomCode/spel', permanent: true },
+      { source: '/multiplayer/:roomCode/results', destination: '/samen-spelen/:roomCode/uitslag', permanent: true },
+      { source: '/multiplayer/:roomCode', destination: '/samen-spelen/:roomCode', permanent: true },
+      { source: '/premium/success', destination: '/premium/succes', permanent: true },
+      { source: '/help', destination: '/hulp', permanent: true },
+      { source: '/bug-report', destination: '/foutmelding', permanent: true },
+      { source: '/privacy-policy', destination: '/privacybeleid', permanent: true },
+      { source: '/terms-of-service', destination: '/voorwaarden', permanent: true },
+      { source: '/admin', destination: '/beheer', permanent: true },
+      { source: '/admin/:path*', destination: '/beheer/:path*', permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

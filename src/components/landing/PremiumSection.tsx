@@ -28,7 +28,7 @@ export function PremiumSection() {
               </div>
 
               <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight text-white md:text-4xl">
-                Speel onbeperkt samen — en leer dieper bij elke vraag.
+                Speel onbeperkt samen - en verdiep je kennis bij elke vraag.
               </h2>
 
               <p className="mt-5 max-w-lg leading-relaxed text-white/75">

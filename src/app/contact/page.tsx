@@ -73,7 +73,7 @@ export default function ContactPage() {
               </p>
 
               <Link
-                href="/bug-report"
+                href="/foutmelding"
                 className="mt-4 inline-flex rounded-md border border-[#d2ddee] bg-white px-4 py-2 text-sm font-semibold text-[#2f466f] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
               >
                 Naar bug report

@@ -9,11 +9,11 @@ import mongoose, { Document, Model, Schema } from 'mongoose';
  *  approach worked locally but caused random "ROOM_NOT_FOUND" errors in
  *  production because rooms only existed in the memory of whichever instance
  *  happened to handle the create request. Persisting to MongoDB removes that
- *  fragmentation entirely — every instance reads and writes the same source
+ *  fragmentation entirely - every instance reads and writes the same source
  *  of truth.
  *
  *  Game timers (question deadlines, post-question result delay) are NOT run
- *  via setTimeout — those don't survive serverless cold starts. Instead we
+ *  via setTimeout - those don't survive serverless cold starts. Instead we
  *  store deadline timestamps in this document and the service "lazily"
  *  advances state on every read. As long as at least one client polls within
  *  a few seconds of the deadline, transitions still happen on time.
@@ -133,7 +133,7 @@ const MultiplayerRoomSchema = new Schema<IMultiplayerRoom>(
   { timestamps: true },
 );
 
-// TTL index — Mongo will auto-delete rooms after `expiresAt`. We keep
+// TTL index - Mongo will auto-delete rooms after `expiresAt`. We keep
 // every room alive for 24h after creation; if you need to extend a long-running
 // game you bump expiresAt on every write below.
 MultiplayerRoomSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 });

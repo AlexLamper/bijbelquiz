@@ -22,7 +22,7 @@ export default function NotFound() {
           </Link>
         </Button>
         <Button size="lg" variant="outline" asChild className="border-slate-200 bg-white">
-          <Link href="/quizzes">
+          <Link href="/quizzen">
             Bekijk alle quizzen
           </Link>
         </Button>

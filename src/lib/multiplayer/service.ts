@@ -81,7 +81,7 @@ interface MutationOutcome<T> {
 }
 
 /**
- * MultiplayerService — stateless, persistence-backed multiplayer game engine.
+ * MultiplayerService - stateless, persistence-backed multiplayer game engine.
  *
  * Architecture (post-Vercel rewrite):
  *  - All room state lives in MongoDB. No in-memory `this.rooms` map. This is
@@ -507,7 +507,7 @@ export class MultiplayerService {
   private advanceTimers(room: PersistedRoom, now: number): boolean {
     let mutated = false;
 
-    // Multiple transitions might fire from a single advance — e.g. if many
+    // Multiple transitions might fire from a single advance - e.g. if many
     // seconds passed since the last poll the question may have ended AND the
     // result delay may have passed. We loop until we're stable.
     let safety = 0;

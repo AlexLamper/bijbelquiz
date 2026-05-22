@@ -25,20 +25,20 @@ interface NavbarProps {
 function getPageTitle(pathname: string): string {
   if (pathname === '/') return 'Home';
   if (pathname.startsWith('/dashboard')) return 'Dashboard';
-  if (pathname.startsWith('/quizzes/create')) return 'Quiz maken';
-  if (pathname.startsWith('/quizzes')) return 'Quizzen';
+  if (pathname.startsWith('/quizzen/aanmaken')) return 'Quiz maken';
+  if (pathname.startsWith('/quizzen')) return 'Quizzen';
   if (pathname.startsWith('/quiz/')) return 'Quiz';
-  if (pathname.startsWith('/leaderboard')) return 'Ranglijst';
-  if (pathname.startsWith('/multiplayer')) return 'Samen spelen';
+  if (pathname.startsWith('/ranglijst')) return 'Ranglijst';
+  if (pathname.startsWith('/samen-spelen')) return 'Samen spelen';
   if (pathname.startsWith('/premium')) return 'Premium';
-  if (pathname.startsWith('/profile')) return 'Profiel';
+  if (pathname.startsWith('/profiel')) return 'Profiel';
   if (pathname.startsWith('/instellingen')) return 'Instellingen';
-  if (pathname.startsWith('/admin')) return 'Beheer';
-  if (pathname.startsWith('/help')) return 'Help';
+  if (pathname.startsWith('/beheer')) return 'Beheer';
+  if (pathname.startsWith('/hulp')) return 'Help';
   if (pathname.startsWith('/contact')) return 'Contact';
-  if (pathname.startsWith('/bug-report')) return 'Bug report';
-  if (pathname.startsWith('/privacy-policy')) return 'Privacybeleid';
-  if (pathname.startsWith('/terms-of-service')) return 'Voorwaarden';
+  if (pathname.startsWith('/foutmelding')) return 'Foutmelding';
+  if (pathname.startsWith('/privacybeleid')) return 'Privacybeleid';
+  if (pathname.startsWith('/voorwaarden')) return 'Voorwaarden';
   return 'BijbelQuiz';
 }
 
@@ -137,9 +137,9 @@ export default function Navbar({
   const navItems: NavItem[] = session
     ? [
         { href: '/dashboard', label: 'Dashboard' },
-        { href: '/quizzes', label: 'Quizzen' },
-        { href: '/leaderboard', label: 'Ranglijst' },
-        { href: '/profile', label: 'Profiel' },
+        { href: '/quizzen', label: 'Quizzen' },
+        { href: '/ranglijst', label: 'Ranglijst' },
+        { href: '/profiel', label: 'Profiel' },
       ]
     : [
         { href: '/', label: 'Home' },
@@ -200,7 +200,7 @@ export default function Navbar({
 
           {session?.user?.role === 'admin' && (
             <Link
-              href="/admin"
+              href="/beheer"
               className={cn(
                 'px-3 py-1.5 text-sm font-semibold text-[#4e5f79] transition-colors dark:text-zinc-300',
                 isActive('/admin')
@@ -263,7 +263,7 @@ export default function Navbar({
                 {isAccountMenuOpen && (
                   <div className="absolute right-0 top-[calc(100%+0.5rem)] z-50 w-56 rounded-lg border border-[#d7e1ee] bg-white p-1.5 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
                     <Link
-                      href="/profile"
+                      href="/profiel"
                       className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-[#30466e] hover:bg-[#f5f8fd] dark:text-zinc-200 dark:hover:bg-zinc-800"
                     >
                       <User className="h-4 w-4" />
@@ -293,10 +293,10 @@ export default function Navbar({
           {status === 'unauthenticated' && (
             <>
               <Button asChild variant="outline" className="h-9 rounded-md border-[#d7e1ee] px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
-                <Link href="/login">Inloggen</Link>
+                <Link href="/inloggen">Inloggen</Link>
               </Button>
               <Button asChild className="h-9 rounded-md bg-[#6f8ed4] dark:bg-[#5b7dd9] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7]">
-                <Link href="/register">Registreren</Link>
+                <Link href="/registreren">Registreren</Link>
               </Button>
             </>
           )}
@@ -337,7 +337,7 @@ export default function Navbar({
 
               {session?.user?.role === 'admin' && (
                 <Link
-                  href="/admin"
+                  href="/beheer"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block px-3 py-2 text-sm font-semibold text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
                 >
@@ -369,7 +369,7 @@ export default function Navbar({
                     </div>
 
                     <Link
-                      href="/profile"
+                      href="/profiel"
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
                     >
@@ -408,12 +408,12 @@ export default function Navbar({
                 ) : (
                   <>
                     <Button asChild variant="outline" className="h-9 rounded-md border-[#d7e1ee] px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
-                      <Link href="/login" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Link href="/inloggen" onClick={() => setIsMobileMenuOpen(false)}>
                         Inloggen
                       </Link>
                     </Button>
                     <Button asChild className="h-9 rounded-md bg-[#6f8ed4] dark:bg-[#5b7dd9] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7]">
-                      <Link href="/register" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Link href="/registreren" onClick={() => setIsMobileMenuOpen(false)}>
                         Registreren
                       </Link>
                     </Button>

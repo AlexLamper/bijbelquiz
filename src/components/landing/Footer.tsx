@@ -23,17 +23,17 @@ export function Footer() {
           <div>
             <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Quizzen</h3>
             <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
-              <li><Link href="/quizzes" className="hover:text-white transition-colors">Alle Quizzen</Link></li>
-              <li><Link href="/leaderboard" className="hover:text-white transition-colors">Ranglijst</Link></li>
-              <li><Link href="/multiplayer" className="hover:text-white transition-colors">Samen spelen</Link></li>
+              <li><Link href="/quizzen" className="hover:text-white transition-colors">Alle Quizzen</Link></li>
+              <li><Link href="/ranglijst" className="hover:text-white transition-colors">Ranglijst</Link></li>
+              <li><Link href="/samen-spelen" className="hover:text-white transition-colors">Samen spelen</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Account</h3>
             <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
-              <li><Link href="/login" className="hover:text-white transition-colors">Inloggen</Link></li>
-              <li><Link href="/register" className="hover:text-white transition-colors">Registreren</Link></li>
+              <li><Link href="/inloggen" className="hover:text-white transition-colors">Inloggen</Link></li>
+              <li><Link href="/registreren" className="hover:text-white transition-colors">Registreren</Link></li>
               <li><Link href="/premium" className="hover:text-white transition-colors">Premium</Link></li>
               <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
             </ul>
@@ -42,11 +42,11 @@ export function Footer() {
           <div>
             <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Informatie</h3>
             <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
-              <li><Link href="/help" className="hover:text-white transition-colors">Helpcentrum</Link></li>
+              <li><Link href="/hulp" className="hover:text-white transition-colors">Helpcentrum</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-              <li><Link href="/bug-report" className="hover:text-white transition-colors">Bug report</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacybeleid</Link></li>
-              <li><Link href="/terms-of-service" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
+              <li><Link href="/foutmelding" className="hover:text-white transition-colors">Bug report</Link></li>
+              <li><Link href="/privacybeleid" className="hover:text-white transition-colors">Privacybeleid</Link></li>
+              <li><Link href="/voorwaarden" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
             </ul>
           </div>
 

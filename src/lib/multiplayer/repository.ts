@@ -3,7 +3,7 @@ import type { ImmutableQuestion, RoomStatus } from './types';
 
 /**
  * In-memory representation of a room, identical to what we persist in
- * MongoDB. The service operates entirely on this shape — the repository
+ * MongoDB. The service operates entirely on this shape - the repository
  * implementation translates to/from the Mongoose document.
  */
 export interface PersistedRoomPlayer {
@@ -37,9 +37,9 @@ export interface PersistedRoom {
   questionResultUntilAtMs: number | null;
   /** Increments every time we transition to a new question state. */
   questionSequence: number;
-  /** Map<userId, answerId> — current question only. */
+  /** Map<userId, answerId> - current question only. */
   submittedAnswers: Record<string, string>;
-  /** ms since epoch — Mongo TTL deletes the room past this. */
+  /** ms since epoch - Mongo TTL deletes the room past this. */
   expiresAtMs: number;
   /** Optimistic concurrency token. Bumped by repository on every save. */
   revision: number;
@@ -78,7 +78,7 @@ export interface RoomRepository {
  */
 export class RoomConcurrencyError extends Error {
   constructor() {
-    super('Concurrent room modification — retry');
+    super('Concurrent room modification - retry');
     this.name = 'RoomConcurrencyError';
   }
 }

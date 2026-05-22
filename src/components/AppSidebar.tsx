@@ -54,34 +54,34 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
   const playItems: SidebarItem[] = session
     ? [
         { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-        { href: '/quizzes', label: 'Quizzen', icon: BookOpen },
-        { href: '/leaderboard', label: 'Ranglijst', icon: Trophy },
-        { href: '/multiplayer', label: 'Samen spelen', icon: Users },
+        { href: '/quizzen', label: 'Quizzen', icon: BookOpen },
+        { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
+        { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
         { href: '/premium', label: 'Premium', icon: Crown },
       ]
     : [
-        { href: '/quizzes', label: 'Quizzen', icon: BookOpen },
-        { href: '/leaderboard', label: 'Ranglijst', icon: Trophy },
-        { href: '/multiplayer', label: 'Samen spelen', icon: Users },
+        { href: '/quizzen', label: 'Quizzen', icon: BookOpen },
+        { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
+        { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
         { href: '/premium', label: 'Premium', icon: Crown },
       ];
 
   const accountItems: SidebarItem[] = session
     ? [
-        { href: '/profile', label: 'Profiel', icon: User },
+        { href: '/profiel', label: 'Profiel', icon: User },
         { href: '/instellingen', label: 'Instellingen', icon: Settings, activePrefixes: ['/instellingen'] },
       ]
     : [
-        { href: '/login', label: 'Inloggen', icon: LogIn },
-        { href: '/register', label: 'Registreren', icon: UserPlus },
+        { href: '/inloggen', label: 'Inloggen', icon: LogIn },
+        { href: '/registreren', label: 'Registreren', icon: UserPlus },
       ];
 
   const supportItems: SidebarItem[] = [
-    { href: '/help', label: 'Help', icon: LifeBuoy },
+    { href: '/hulp', label: 'Help', icon: LifeBuoy },
     { href: '/contact', label: 'Contact', icon: Mail },
-    { href: '/bug-report', label: 'Bug report', icon: Bug, activePrefixes: ['/bug-report'] },
-    { href: '/privacy-policy', label: 'Privacybeleid', icon: ShieldCheck },
-    { href: '/terms-of-service', label: 'Voorwaarden', icon: FileText },
+    { href: '/foutmelding', label: 'Bug report', icon: Bug, activePrefixes: ['/foutmelding'] },
+    { href: '/privacybeleid', label: 'Privacybeleid', icon: ShieldCheck },
+    { href: '/voorwaarden', label: 'Voorwaarden', icon: FileText },
   ];
 
   const sections: SidebarSection[] = [
@@ -92,7 +92,7 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
   if (session?.user?.role === 'admin') {
     sections.push({
       title: 'Beheer',
-      items: [{ href: '/admin', label: 'Admin', icon: Shield }],
+      items: [{ href: '/beheer', label: 'Admin', icon: Shield }],
     });
   }
 

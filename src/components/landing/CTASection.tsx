@@ -17,7 +17,7 @@ export function CTASection() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
             <Button className="h-14 rounded-2xl bg-primary px-8 text-base font-medium text-white hover:bg-primary/90 dark:bg-[#5b7dd9] dark:hover:bg-[#4a6bc7]" asChild>
-              <Link href="/quizzes">Speel direct online</Link>
+              <Link href="/quizzen">Speel direct online</Link>
             </Button>
 
             <DownloadButtons compactOnMobile />
@@ -40,8 +40,8 @@ export function CTASection() {
             </div>
             <div className="hidden sm:block h-6 w-px bg-border dark:bg-white/20" />
             <div className="flex items-center gap-2">
-              <span className="text-xl sm:text-2xl font-semibold text-[#1a2942] dark:text-white">4.8</span>
-              <span>App rating</span>
+              <span className="text-xl sm:text-2xl font-semibold text-[#1a2942] dark:text-white">8</span>
+              <span>Categorieën</span>
             </div>
           </div>
         </div>

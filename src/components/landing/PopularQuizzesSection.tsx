@@ -27,7 +27,7 @@ export function PopularQuizzesSection({ quizzes, isPremiumUser }: PopularQuizzes
 
         <div className="mt-10 text-center">
           <Link
-            href="/quizzes"
+            href="/quizzen"
             className="inline-flex items-center gap-2 font-medium text-primary dark:text-zinc-300 transition-colors hover:text-[#4a6bc7]"
           >
             Bekijk alle quizzen

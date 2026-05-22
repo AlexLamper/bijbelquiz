@@ -45,22 +45,22 @@ const categories = [
   {
     title: 'Oude Testament',
     imageUrl: '/images/quizzes/img1.png',
-    href: '/quizzes?category=oude-testament',
+    href: '/quizzen?category=oude-testament',
   },
   {
     title: 'Nieuwe Testament',
     imageUrl: '/images/quizzes/img2.png',
-    href: '/quizzes?category=nieuwe-testament',
+    href: '/quizzen?category=nieuwe-testament',
   },
   {
     title: 'Bijbelse Figuren',
     imageUrl: '/images/quizzes/img3.png',
-    href: '/quizzes?category=bijbelse-figuren',
+    href: '/quizzen?category=bijbelse-figuren',
   },
   {
     title: 'Themas en Verhalen',
     imageUrl: '/images/quizzes/img4.png',
-    href: '/quizzes?category=verhalen',
+    href: '/quizzen?category=verhalen',
   },
 ];
 
@@ -96,7 +96,7 @@ export default function DashboardHomeClient({
 
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Button asChild className="h-9 rounded-[8px] bg-[#5d82d4] px-4 text-sm font-semibold text-white hover:bg-[#4f74c7] sm:h-10 sm:px-5 dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]">
-                    <Link href="/quizzes" className="inline-flex items-center gap-2">
+                    <Link href="/quizzen" className="inline-flex items-center gap-2">
                       <Play className="h-4 w-4" />
                       Speel quiz
                     </Link>
@@ -156,7 +156,7 @@ export default function DashboardHomeClient({
       </section>
 
       <section className="dashboard-ultrawide mx-auto w-full max-w-6xl px-4 pt-5 sm:px-5 lg:px-4 2xl:max-w-340 min-[1920px]:px-8">
-        <Link href="/multiplayer" className="block">
+        <Link href="/samen-spelen" className="block">
           <Card className="overflow-hidden border-[#c8d7ee] bg-[linear-gradient(135deg,#f8fbff,#edf3ff)] py-0 shadow-sm transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-[linear-gradient(135deg,rgba(24,24,27,0.95),rgba(39,39,42,0.92))]">
             <CardContent className="flex flex-wrap items-center justify-between gap-3.5 p-4 md:p-5 xl:p-6">
               <div>
@@ -186,7 +186,7 @@ export default function DashboardHomeClient({
             <p className="mt-1 text-sm text-muted-foreground">Kies een quiz en start direct.</p>
           </div>
 
-          <Link href="/quizzes" className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-100">
+          <Link href="/quizzen" className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-100">
             Alle quizzen
             <ArrowRight className="h-4 w-4" />
           </Link>
@@ -237,7 +237,7 @@ export default function DashboardHomeClient({
           </div>
 
           <div className="mt-5 flex justify-center">
-            <Link href="/quizzes" className="inline-flex items-center gap-2 text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-100">
+            <Link href="/quizzen" className="inline-flex items-center gap-2 text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-100">
               Naar alle categorieen
               <ArrowRight className="h-4 w-4" />
             </Link>

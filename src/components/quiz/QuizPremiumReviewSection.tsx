@@ -1,4 +1,5 @@
 import { AlertTriangle, BookOpen, CheckCircle2 } from 'lucide-react';
+import BibleVerseDisplay from '@/components/BibleVerseDisplay';
 
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -133,7 +134,7 @@ export default function QuizPremiumReviewSection({
                     <p className="mt-2 text-sm text-[#30466e] dark:text-zinc-200">{question.explanation}</p>
                   ) : null}
                   {question.bibleReference ? (
-                    <p className="mt-2 text-xs text-muted-foreground">Bijbelverwijzing: {question.bibleReference}</p>
+                    <BibleVerseDisplay reference={question.bibleReference} />
                   ) : null}
                 </div>
               )}

@@ -76,10 +76,10 @@ const INITIAL_STATE: MultiplayerControllerState = {
  * Mongo write load (each poll triggers a heartbeat update at most every 10s
  * server-side).
  *
- * - lobby:           2000  — players joining/leaving must feel near-instant
- * - in_progress:      900  — keep the timer accurate-ish on the client
- * - question_result: 1500  — show feedback then transition to next question
- * - finished:        4000  — almost no updates expected, slow down
+ * - lobby:           2000  - players joining/leaving must feel near-instant
+ * - in_progress:      900  - keep the timer accurate-ish on the client
+ * - question_result: 1500  - show feedback then transition to next question
+ * - finished:        4000  - almost no updates expected, slow down
  */
 const POLL_INTERVALS_MS: Record<RoomStatus, number> = {
   lobby: 2000,
@@ -122,11 +122,11 @@ function pickPollInterval(status: RoomStatus | null, failures: number): number {
  *
  * Lifecycle:
  *  - construct(roomCode, userId, autoJoin, callbacks)
- *  - start()      — fetches token + (optionally) joins room + starts polling
- *  - dispose()    — cancels in-flight work, stops polling, marks disposed
+ *  - start()      - fetches token + (optionally) joins room + starts polling
+ *  - dispose()    - cancels in-flight work, stops polling, marks disposed
  *
  * Idempotency: dispose() is safe to call multiple times. start() is NOT
- * meant to be called more than once on the same instance — to "restart"
+ * meant to be called more than once on the same instance - to "restart"
  * a session, dispose the old one and create a new one.
  */
 class RoomSession {
@@ -325,9 +325,9 @@ class RoomSession {
       if (this.disposed) return;
 
       // Auth/structural errors require a different reaction than transient
-      // network ones — don't keep polling forever if the room is gone.
+      // network ones - don't keep polling forever if the room is gone.
       if (error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND') {
-        this.emitDebug('warn', 'Polling discovered ROOM_NOT_FOUND — closing session');
+        this.emitDebug('warn', 'Polling discovered ROOM_NOT_FOUND - closing session');
         this.callbacks.onState((current) => ({
           ...current,
           loading: false,
@@ -425,7 +425,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
       pushDebugEntry({
         timestamp: new Date().toISOString(),
         level: 'warn',
-        message: 'Skipping room controller init — userId is null. Will retry once authenticated.',
+        message: 'Skipping room controller init - userId is null. Will retry once authenticated.',
       });
       setState((current) => ({ ...current, loading: false }));
       return;
@@ -523,7 +523,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
     setState((current) => ({ ...current, errorMessage: null }));
   }, []);
 
-  // Stable ref for the latest state — used inside `answer` so we don't recreate
+  // Stable ref for the latest state - used inside `answer` so we don't recreate
   // the callback on every render.
   const stateSnapshotRef = useRef(state);
   useEffect(() => {

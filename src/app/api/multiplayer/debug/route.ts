@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic';
 /**
  * Diagnostic endpoint that reports the state of the persistent multiplayer
  * runtime: which serverless instance handled the request, and what rooms
- * exist in MongoDB. Useful for debugging "Room niet gevonden" reports —
+ * exist in MongoDB. Useful for debugging "Room niet gevonden" reports -
  * if /api/multiplayer/debug shows the room then we know the issue is
  * client-side (stale cache, wrong code) rather than missing persistence.
  *

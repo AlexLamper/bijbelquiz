@@ -124,7 +124,7 @@ export default async function QuizLandingPage({ params }: PageProps) {
             Start {quiz.title} quiz
           </Link>
           <Link
-            href="/quizzes"
+            href="/quizzen"
             className="inline-flex items-center rounded-md border border-[#d7e1ee] bg-white px-5 py-2.5 text-sm font-semibold text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
           >
             Bekijk alle quizzen
