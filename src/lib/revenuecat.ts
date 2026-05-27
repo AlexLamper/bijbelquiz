@@ -96,6 +96,29 @@ function inferStateFromEvent(event: RevenueCatEvent, entitlementId: string) {
   return { action: 'ignore' as const };
 }
 
+export async function syncStorePremiumForAppUser(appUserId: string) {
+  if (!Types.ObjectId.isValid(appUserId)) {
+    throw new Error(`Invalid app_user_id: ${appUserId}`);
+  }
+
+  const entitlementId = process.env.REVENUECAT_PREMIUM_ENTITLEMENT_ID || DEFAULT_ENTITLEMENT_ID;
+  const state = await fetchSubscriberEntitlementState(appUserId, entitlementId);
+  if (!state) {
+    throw new Error('REVENUECAT_REST_API_KEY is not set');
+  }
+
+  const result = await updateUserPremiumFromStore(appUserId, state.active, state.expiresAt);
+  if (!result) {
+    throw new Error(`User not found: ${appUserId}`);
+  }
+
+  return {
+    isPremium: result.isPremium,
+    premiumStore: result.premiumStore,
+    storePremiumExpiresAt: result.storePremiumExpiresAt,
+  };
+}
+
 export async function processRevenueCatWebhook(body: unknown) {
   const event = getWebhookEvent(body);
   if (!event) {
