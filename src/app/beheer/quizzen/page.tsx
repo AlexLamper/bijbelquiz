@@ -23,7 +23,7 @@ export default async function AdminPage() {
     <div className="container mx-auto px-4 py-8 max-w-5xl">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
-          <h1 className="text-3xl font-serif font-bold text-foreground">Admin Dashboard</h1>
+          <h1 className="text-3xl font-serif font-normal text-foreground">Admin Dashboard</h1>
           <p className="text-muted-foreground">Beheer quizzen en gebruikersinzendingen.</p>
         </div>
         <Button asChild className="bg-primary hover:bg-primary/90">

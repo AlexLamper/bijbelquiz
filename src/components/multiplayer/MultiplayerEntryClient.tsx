@@ -216,7 +216,7 @@ export default function MultiplayerEntryClient({
       <div className="shrink-0 pb-4">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
           <div>
-            <h1 className="text-2xl font-semibold tracking-tight text-foreground lg:text-3xl">
+            <h1 className="text-2xl font-normal tracking-tight text-foreground lg:text-3xl">
               Samen spelen
             </h1>
             <p className="mt-0.5 text-sm text-muted-foreground">
@@ -230,7 +230,7 @@ export default function MultiplayerEntryClient({
           {steps.map((step, i) => (
             <div key={step.step} className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2">
               {i > 0 && <div className="-ml-3 mr-1 hidden h-full w-px bg-border sm:block" />}
-              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6f8ed4]/15 text-[11px] font-bold text-[#5f81cc] dark:bg-[#1a2b47] dark:text-[#8aa7e6]">
+              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-lapis/15 text-[11px] font-semibold text-ink-soft">
                 {step.step}
               </span>
               <step.icon className="hidden h-3.5 w-3.5 shrink-0 text-muted-foreground sm:block" aria-hidden />
@@ -253,11 +253,11 @@ export default function MultiplayerEntryClient({
       {/* Action cards */}
       <div className="flex min-h-0 flex-1 flex-col gap-5 lg:flex-row lg:gap-6">
         {/* Create room card */}
-        <Card className="flex min-h-0 flex-1 flex-col border-[#e2e8f0] py-0 shadow-md dark:border-zinc-800">
+        <Card className="flex min-h-0 flex-1 flex-col border-rule py-0">
           <CardHeader className="shrink-0 px-5 pb-0 pt-5">
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#6f8ed4]/15">
-                <Gamepad2 className="h-4 w-4 text-[#5f81cc] dark:text-zinc-200" aria-hidden />
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-lapis/15">
+                <Gamepad2 className="h-4 w-4 text-ink-soft" aria-hidden />
               </div>
               <div>
                 <CardTitle className="text-base">Nieuw spel starten</CardTitle>
@@ -312,7 +312,7 @@ export default function MultiplayerEntryClient({
                         <span className="flex items-center gap-2">
                           {count} spelers
                           {isPremiumOnly && (
-                            <span className="inline-flex items-center gap-1 rounded-full bg-[#e9eff8] px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#355384] dark:bg-zinc-700 dark:text-zinc-200">
+                            <span className="inline-flex items-center gap-1 rounded-md bg-paper-sunken px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink">
                               <Crown className="h-3 w-3" />
                               Premium
                             </span>
@@ -338,7 +338,7 @@ export default function MultiplayerEntryClient({
             )}
 
             <Button
-              className="mt-auto h-10 w-full shadow-sm dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]"
+              className="mt-auto h-10 w-full dark:text-ink-inverted"
               onClick={handleCreateRoom}
               disabled={isCreating || quizzes.length === 0 || !canCreateRoom}
             >
@@ -355,11 +355,11 @@ export default function MultiplayerEntryClient({
         </Card>
 
         {/* Join room card */}
-        <Card className="flex min-h-0 flex-1 flex-col border-[#e2e8f0] py-0 shadow-md dark:border-zinc-800">
+        <Card className="flex min-h-0 flex-1 flex-col border-rule py-0">
           <CardHeader className="shrink-0 px-5 pb-0 pt-5">
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10">
-                <Copy className="h-4 w-4 text-emerald-700 dark:text-emerald-400" aria-hidden />
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-positive/10">
+                <Copy className="h-4 w-4 text-positive dark:text-positive" aria-hidden />
               </div>
               <div>
                 <CardTitle className="text-base">Meedoen aan spel</CardTitle>
@@ -391,7 +391,7 @@ export default function MultiplayerEntryClient({
             <div className="flex-1" />
 
             <Button
-              className="mt-auto h-10 w-full dark:border-[#5a79bf] dark:bg-[#5f81cc] dark:text-white dark:hover:bg-[#5275bd]"
+              className="mt-auto h-10 w-full dark:text-ink-inverted"
               variant="outline"
               onClick={handleJoinRoom}
               disabled={isJoining}
@@ -405,13 +405,13 @@ export default function MultiplayerEntryClient({
       {/* Tips strip */}
       <div className="mt-3 shrink-0">
         <div className="flex flex-wrap gap-3">
-          <div className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-xs shadow-sm">
-            <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden />
+          <div className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-xs">
+            <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-positive dark:text-positive" aria-hidden />
             <span className="font-medium text-foreground">Inloggen vereist</span>
             <span className="text-muted-foreground">- maak gratis een account aan.</span>
           </div>
-          <div className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-xs shadow-sm">
-            <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden />
+          <div className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-xs">
+            <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-positive dark:text-positive" aria-hidden />
             <span className="font-medium text-foreground">Stabiele verbinding</span>
             <span className="text-muted-foreground">- scores worden automatisch bijgewerkt.</span>
           </div>

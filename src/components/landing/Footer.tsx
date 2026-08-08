@@ -1,86 +1,97 @@
-import Link from "next/link"
+import Link from 'next/link';
+
+const columns = [
+  {
+    title: 'Quizzen',
+    links: [
+      { href: '/quizzen', label: 'Alle Quizzen' },
+      { href: '/ranglijst', label: 'Ranglijst' },
+      { href: '/samen-spelen', label: 'Samen spelen' },
+    ],
+  },
+  {
+    title: 'Account',
+    links: [
+      { href: '/inloggen', label: 'Inloggen' },
+      { href: '/registreren', label: 'Registreren' },
+      { href: '/premium', label: 'Premium' },
+      { href: '/dashboard', label: 'Dashboard' },
+    ],
+  },
+  {
+    title: 'Informatie',
+    links: [
+      { href: '/hulp', label: 'Helpcentrum' },
+      { href: '/contact', label: 'Contact' },
+      { href: '/foutmelding', label: 'Bug report' },
+      { href: '/privacybeleid', label: 'Privacybeleid' },
+      { href: '/voorwaarden', label: 'Algemene Voorwaarden' },
+    ],
+  },
+  {
+    title: 'Meer van ons',
+    links: [
+      { href: 'https://www.bijbel-studie.com', label: 'Bijbel Studie', external: true },
+      { href: 'https://www.bijbelapi.com/docs', label: 'BijbelAPI', external: true },
+    ],
+  },
+];
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a2942] py-12 text-white dark:border-t dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-8 md:grid-cols-5">
-          <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 dark:bg-white/5">
-                <img src="/icon/Logo%20-%20dark.svg" alt="BijbelQuiz Logo" className="h-7 w-7 object-contain dark:hidden" />
-                <img src="/icon/Logo%20-%20light.svg" alt="BijbelQuiz Logo" className="hidden h-7 w-7 object-contain dark:block" />
+    <footer className="border-t border-rule bg-paper">
+      <div className="mx-auto w-full max-w-[1180px] px-5 py-14 sm:px-8 lg:px-10">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-[minmax(0,1.4fr)_repeat(4,minmax(0,1fr))]">
+          <div className="col-span-2 min-w-0 sm:col-span-4 md:col-span-1">
+            <Link href="/" className="flex items-center gap-2.5">
+              <div className="relative h-7 w-7">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/icon/Logo%20-%20dark.svg" alt="" className="h-7 w-7 object-contain dark:hidden" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/icon/Logo%20-%20light.svg" alt="" className="hidden h-7 w-7 object-contain dark:block" />
               </div>
-              <span className="font-serif text-xl font-bold tracking-tight text-white dark:text-zinc-100">
-                Bijbel<span className="text-[#9db5dc] dark:text-[#9db5dc]">Quiz</span>
+              <span className="font-display text-xl font-semibold tracking-[-0.02em] text-ink">
+                Bijbel<span className="text-lapis">Quiz</span>
               </span>
             </Link>
-            <p className="mt-4 text-sm text-white/70 dark:text-zinc-400">
+
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">
               Test je Bijbelkennis en leer meer over de schrift met onze interactieve quizzen.
             </p>
           </div>
 
-          <div>
-            <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Quizzen</h3>
-            <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
-              <li><Link href="/quizzen" className="hover:text-white transition-colors">Alle Quizzen</Link></li>
-              <li><Link href="/ranglijst" className="hover:text-white transition-colors">Ranglijst</Link></li>
-              <li><Link href="/samen-spelen" className="hover:text-white transition-colors">Samen spelen</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Account</h3>
-            <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
-              <li><Link href="/inloggen" className="hover:text-white transition-colors">Inloggen</Link></li>
-              <li><Link href="/registreren" className="hover:text-white transition-colors">Registreren</Link></li>
-              <li><Link href="/premium" className="hover:text-white transition-colors">Premium</Link></li>
-              <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Informatie</h3>
-            <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
-              <li><Link href="/hulp" className="hover:text-white transition-colors">Helpcentrum</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-              <li><Link href="/foutmelding" className="hover:text-white transition-colors">Bug report</Link></li>
-              <li><Link href="/privacybeleid" className="hover:text-white transition-colors">Privacybeleid</Link></li>
-              <li><Link href="/voorwaarden" className="hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-medium text-white dark:text-zinc-100">Meer van ons</h3>
-            <ul className="space-y-2 text-sm text-white/70 dark:text-zinc-400">
-              <li>
-                <Link href="https://www.bijbel-studie.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  Bijbel Studie
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.bijbelapi.com/docs" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  BijbelAPI
-                </Link>
-              </li>
-            </ul>
-            <p className="mt-3 text-xs text-white/60 dark:text-zinc-500">
-              BijbelQuiz wordt technisch ondersteund door de Nederlandse BijbelAPI.
-            </p>
-          </div>
+          {columns.map((column) => (
+            <div key={column.title} className="min-w-0">
+              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                {column.title}
+              </p>
+              <ul className="mt-4 space-y-2.5 text-sm">
+                {column.links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      {...('external' in link && link.external
+                        ? { target: '_blank', rel: 'noopener noreferrer' }
+                        : {})}
+                      className="text-ink-soft transition-colors hover:text-ink"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row dark:border-zinc-800">
-          <p className="text-sm text-white/70 dark:text-zinc-400">
-            © {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.
+        <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-rule pt-6 text-xs text-ink-muted md:flex-row md:items-center">
+          <p>© {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.</p>
+          <p>
+            BijbelQuiz wordt technisch ondersteund door de Nederlandse BijbelAPI. Gemaakt door{' '}
+            <span className="text-ink-soft">Alex Lamper</span>.
           </p>
-          <div className="flex items-center gap-4 text-sm text-white/70 dark:text-zinc-400">
-            <span>
-              Gemaakt door <span className="text-white dark:text-[#9db5dc]">Alex Lamper</span>
-            </span>
-          </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

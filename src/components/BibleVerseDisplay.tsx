@@ -39,7 +39,7 @@ export default function BibleVerseDisplay({ reference, className }: BibleVerseDi
     // Check session cache first
     const cached = verseCache.get(reference);
     if (cached === 'error') {
-      // Previously failed — just expand without showing an error to the user
+      // Previously failed - just expand without showing an error to the user
       setExpanded(true);
       setFetchFailed(true);
       return;
@@ -79,8 +79,8 @@ export default function BibleVerseDisplay({ reference, className }: BibleVerseDi
         onClick={handleToggle}
         disabled={loading}
         className={cn(
-          'inline-flex items-center gap-1.5 rounded border border-[#d7e1ee] bg-white px-2.5 py-1 text-xs font-medium text-[#355384] transition-colors',
-          'hover:bg-[#f0f5ff] hover:border-[#b5c8e8] dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800',
+          'inline-flex items-center gap-1.5 rounded border border-rule bg-paper-raised px-2.5 py-1 text-xs font-medium text-ink transition-colors',
+          'hover:bg-paper-sunken hover:border-rule    ',
           loading && 'cursor-wait opacity-70',
         )}
         aria-expanded={expanded}
@@ -99,13 +99,13 @@ export default function BibleVerseDisplay({ reference, className }: BibleVerseDi
       </button>
 
       {expanded && (
-        <div className="mt-2 rounded-md border border-[#d7e1ee] bg-[#f8fbff] px-4 py-3 dark:border-zinc-700 dark:bg-zinc-900/60">
+        <div className="mt-2 rounded-md border border-rule bg-paper-sunken px-4 py-3">
           {result && !fetchFailed ? (
             <>
-              <p className="font-serif text-sm italic leading-relaxed text-[#1f3a5c] dark:text-zinc-200">
+              <p className="font-serif text-sm italic leading-relaxed text-ink">
                 &ldquo;{result.text}&rdquo;
               </p>
-              <p className="mt-2 text-[11px] font-medium text-[#607597] dark:text-zinc-400">
+              <p className="mt-2 text-[11px] font-medium text-ink-soft">
                 {result.reference} &middot; Statenvertaling
               </p>
             </>

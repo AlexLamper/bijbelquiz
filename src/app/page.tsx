@@ -1,12 +1,12 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 import { connectDB, Quiz } from '@/database';
-import { Button } from '@/components/ui/button';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { unstable_cache } from 'next/cache';
 import { Metadata } from 'next';
+import { redirect } from 'next/navigation';
 
+import { Eyebrow, InkButton } from '@/components/editorial';
 import { PopularQuizzesSection } from '@/components/landing/PopularQuizzesSection';
 import { MultiplayerHighlightSection } from '@/components/landing/MultiplayerHighlightSection';
 import { PremiumSection } from '@/components/landing/PremiumSection';
@@ -28,34 +28,33 @@ export const metadata: Metadata = {
   },
 };
 
-// Removed unstable_cache as it may cause issues with Mongoose
 async function getQuizzes() {
   try {
     await connectDB();
     const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
     const popularQuizzes = await Quiz.find(statusFilter)
-        .populate('categoryId')
-        .limit(4)
-        .sort({ isPremium: 1, sortOrder: 1 })
-        .lean();
-    
-    return {
-      popular: JSON.parse(JSON.stringify(popularQuizzes)),
-    };
+      .populate('categoryId')
+      .limit(4)
+      .sort({ isPremium: 1, sortOrder: 1 })
+      .lean();
+
+    return { popular: JSON.parse(JSON.stringify(popularQuizzes)) };
   } catch (e) {
-    console.error("Database connection failed", e);
+    console.error('Database connection failed', e);
     return { popular: [] };
   }
 }
 
-// Removed force-dynamic to allow potential partial caching where possible
-// export const dynamic = 'force-dynamic';
-
-import { redirect } from 'next/navigation';
+const figures = [
+  { value: '200+', label: 'Vragen' },
+  { value: '8', label: 'Categorieën' },
+  { value: '3', label: 'Niveaus' },
+  { value: 'Gratis', label: 'Om te spelen' },
+];
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
-  
+
   if (session?.user) {
     redirect('/dashboard');
   }
@@ -64,64 +63,62 @@ export default async function Home() {
   const { popular } = await getQuizzes();
 
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden">
-      {/* Hero Section */}
-      <section id="hero" className="relative overflow-visible pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
+    <div className="flex min-h-screen flex-col overflow-x-hidden bg-paper">
+      {/* Hero */}
+      <section id="hero">
+        <div className="mx-auto w-full max-w-[1180px] px-5 pb-10 pt-8 sm:px-8 lg:px-10 lg:pb-16 lg:pt-14">
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start lg:gap-16">
+            <div className="min-w-0">
+              <Eyebrow>Gratis Bijbelquizzen</Eyebrow>
 
-        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-32 max-w-450 flex flex-col lg:flex-row items-center justify-between">
-          <div className="w-full lg:w-[52%] pr-0 lg:pr-8 xl:pr-12 text-left p-4 sm:p-6 rounded-2xl lg:-mt-32 xl:-mt-24">
-            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[64px] 3xl:text-[72px] leading-[1.1] font-bold text-[#1f2f4b] dark:text-white tracking-tight xl:max-w-none 2xl:max-w-none 3xl:max-w-none">
-              Hoe goed ken jij de Bijbel? <span className="dark:text-[#9db5dc]">Ontdek het...</span>
-            </h1>
-            <p className="mb-8 sm:mb-10 max-w-xl text-[#53647f] dark:text-white/70 text-base sm:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl leading-[1.6]">
-              BijbelQuiz heeft tientallen quizzen.
-              Kies uit verschillende categorieën,
-              concurreer met anderen op de ranglijst en leer elke dag iets nieuws over de Bijbel!
-            </p>
-            
-            <div className="flex flex-col items-start gap-4 sm:gap-6 w-full sm:w-auto">
-              {!session ? (
-                <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                  <Button
-                    size="lg"
-                    className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors w-full sm:w-auto"
-                    asChild
-                  >
-                    <Link href="/dashboard">
-                        Speel direct online
-                    </Link>
-                  </Button>
-                </div>
-              ) : (
-                <Button
-                  size="lg"
-                  className="h-12 sm:h-14 2xl:h-16 3xl:h-20 px-6 sm:px-8 2xl:px-12 3xl:px-16 text-base sm:text-lg 2xl:text-xl 3xl:text-2xl font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-[0_8px_24px_rgba(111,142,212,0.26)] transition-colors"
-                  asChild
+              <h1 className="mt-7 font-display text-[34px] font-semibold leading-[1.06] tracking-[-0.03em] text-ink sm:text-[46px] lg:text-[58px]">
+                Hoe goed ken jij de <span className="text-lapis">Bijbel</span>? Ontdek het...
+              </h1>
+
+              <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-ink-muted sm:text-[17px]">
+                BijbelQuiz heeft tientallen quizzen. Kies uit verschillende categorieën,
+                concurreer met anderen op de ranglijst en leer elke dag iets nieuws over de
+                Bijbel!
+              </p>
+
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+                <InkButton
+                  href="/registreren"
+                  className="group h-13 w-full px-7 text-[15px] font-semibold sm:w-auto lg:h-14 lg:px-8 lg:text-base"
                 >
-                  <Link href="/dashboard">
-                      Ga naar Dashboard
-                  </Link>
-                </Button>
-              )}
-              
-              <DownloadButtons compactOnMobile />
+                  Speel direct online
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+                </InkButton>
+                <DownloadButtons compactOnMobile className="lg:h-14 lg:px-6" />
+              </div>
+            </div>
+
+            <div className="landing-hero-image relative mx-auto aspect-square w-full max-w-sm md:max-w-none">
+              <Image
+                src="/images/hero/hero1.png"
+                alt="BijbelQuiz op telefoon en laptop"
+                fill
+                priority
+                sizes="(max-width: 1024px) 90vw, 45vw"
+                className="object-contain"
+              />
             </div>
           </div>
-          
-          <div className="w-full lg:w-[48%] mt-12 lg:mt-0 relative h-87.5 sm:h-125 lg:h-150 xl:h-175 hidden md:flex justify-center items-center overflow-visible p-6 rounded-2xl">
-             {/* Hero mockup: scaled down contextually */}
-             <div
-               className="landing-hero-image absolute left-40 top-0 h-180 w-180 transform-gpu pointer-events-none scale-100 transform-origin-left lg:scale-[0.92] xl:scale-100"
-             >
-               <Image 
-                 src="/images/hero/hero1.png"
-                 alt="Hero image"
-                 fill
-                 priority
-                 sizes="(max-width: 1024px) 100vw, 50vw"
-                 className="object-contain object-left"
-               />
-             </div>
+        </div>
+
+        {/* Figures rail: one line, always. */}
+        <div className="border-y border-rule">
+          <div className="mx-auto grid w-full max-w-[1180px] grid-cols-2 gap-x-4 gap-y-3 px-5 py-5 sm:grid-cols-4 sm:gap-x-0 sm:gap-y-0 sm:px-8 sm:divide-x sm:divide-rule lg:px-10">
+            {figures.map((figure) => (
+              <div key={figure.label} className="flex min-w-0 items-baseline gap-2 sm:px-5 sm:first:pl-0 sm:last:pr-0">
+                <span className="font-display text-[20px] font-normal leading-none tracking-[-0.02em] text-ink tabular-nums sm:text-[24px]">
+                  {figure.value}
+                </span>
+                <span className="truncate text-[10px] font-medium uppercase tracking-[0.14em] text-ink-muted">
+                  {figure.label}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -135,4 +132,3 @@ export default async function Home() {
     </div>
   );
 }
-

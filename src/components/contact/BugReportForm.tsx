@@ -38,13 +38,13 @@ export default function BugReportForm({ supportEmail }: BugReportFormProps) {
         </p>
 
         <div className="rounded-lg border border-border bg-muted/30 p-4">
-          <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#e9eff8] dark:bg-[#1f3356]">
-            <Mail className="h-5 w-5 text-[#355384] dark:text-[#9db5dc]" />
+          <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-paper-sunken">
+            <Mail className="h-5 w-5 text-ink" />
           </div>
           <p className="text-sm font-medium text-foreground">Stuur naar</p>
           <a
             href={mailtoHref}
-            className="mt-2 inline-flex break-all rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
+            className="mt-2 inline-flex break-all rounded-md bg-ink px-4 py-2 text-sm font-semibold text-ink-inverted hover:bg-ink-soft"
           >
             {supportEmail}
           </a>

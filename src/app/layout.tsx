@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Newsreader } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -11,10 +11,14 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const poppins = Poppins({
+// Editorial display face for the "Ink & Paper" design language. It owns
+// `--font-serif`, so every heading and `font-serif` usage in the app adopts it.
+const newsreader = Newsreader({
   variable: "--font-serif",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -50,7 +54,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "BijbelQuiz – Gratis Bijbelquizzen",
+        alt: "BijbelQuiz - Gratis Bijbelquizzen",
       },
     ],
   },
@@ -138,7 +142,7 @@ export default function RootLayout({
           />
       </head>
       <body
-        className={`${inter.variable} ${poppins.variable} font-sans antialiased bg-background text-foreground`}
+        className={`${inter.variable} ${newsreader.variable} font-sans antialiased bg-background text-foreground`}
       >
         <GoogleAnalytics />
         <ThemeProvider

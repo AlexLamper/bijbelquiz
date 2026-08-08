@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
+import { PageMasthead } from '@/components/editorial';
 import { QuizCard } from '@/components/QuizCard';
 import { MobileQuizFilter } from '@/components/MobileQuizFilter';
 
@@ -94,45 +95,30 @@ export default function QuizzesClient({
       : categories.find((category) => category._id === selectedCategory)?.title || 'Categorie';
 
   return (
-    <div className="-mt-24 min-h-screen pt-24 pb-12">
-      <section className="mx-auto max-w-340 px-4 pt-10 sm:px-6 lg:px-8">
-        <Card className="relative overflow-hidden border-0 bg-transparent py-0 shadow-none">
-          <CardContent className="relative p-0">
-            <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] xl:items-start">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#607597] dark:text-[#9db5dc]">Quizbibliotheek</p>
-                <h1 className="mt-2 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Ontdek en speel Bijbelquizzen</h1>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                  Gebruik filters en zoekopdrachten om snel quizzen te vinden die passen bij je niveau en interesse.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2 xl:justify-end xl:pt-1">
-                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-zinc-900/70">
-                  {resultCount} zichtbaar
-                </Badge>
-                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-zinc-900/70">
-                  {totalCount} totaal
-                </Badge>
-                <Badge variant="outline" className="h-9 border-border bg-card px-3 text-xs font-medium text-foreground dark:bg-zinc-900/70">
-                  {selectedCategoryTitle}
-                </Badge>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+    <div className="min-h-screen bg-paper pb-24 pt-10 lg:pt-14">
+      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+        <PageMasthead
+          eyebrow="Quizbibliotheek"
+          title="Ontdek en speel Bijbelquizzen"
+          lead="Filter en zoek om snel quizzen te vinden die passen bij je niveau en interesse."
+          aside={
+            <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted tabular-nums">
+              {resultCount} van {totalCount} · {selectedCategoryTitle}
+            </p>
+          }
+        />
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
         <div>
           <div className="grid gap-3 md:grid-cols-[minmax(0,1fr)_auto_auto] md:items-center">
             <div className="relative">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#7b8da8] dark:text-zinc-400" />
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-soft" />
               <Input
                 value={searchQuery}
                 onChange={(event) => setSearchQuery(event.target.value)}
                 placeholder="Zoek op titel of beschrijving"
-                className="h-10 border-[#d7e1ee] bg-white pl-9 text-sm focus-visible:ring-[#aac0e8] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
+                className="h-10 border-rule bg-paper-raised pl-9 text-sm focus-visible:ring-rule-strong"
               />
             </div>
 
@@ -150,8 +136,8 @@ export default function QuizzesClient({
               onClick={() => setShowPremiumOnly((value) => !value)}
               className={`hidden h-10 rounded-md px-4 md:inline-flex ${
                 showPremiumOnly
-                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
-                  : 'border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800'
+                  ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
+                  : 'border-rule bg-paper-raised text-ink hover:bg-paper-sunken    '
               }`}
             >
               <SlidersHorizontal className="mr-2 h-4 w-4" />
@@ -159,7 +145,7 @@ export default function QuizzesClient({
             </Button>
 
             {canCreateQuiz && (
-              <Button asChild className="hidden h-10 rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] md:inline-flex dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
+              <Button asChild className="hidden h-10 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft md:inline-flex">
                 <Link href="/quizzen/aanmaken">Zelf quiz maken</Link>
               </Button>
             )}
@@ -171,8 +157,8 @@ export default function QuizzesClient({
               onClick={() => setSelectedCategory('all')}
               className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
                 selectedCategory === 'all'
-                  ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
-                  : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                  ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
+                  : 'border-transparent text-ink-soft hover:bg-paper-sunken hover:text-ink   '
               }`}
             >
               Alle categorieen
@@ -185,8 +171,8 @@ export default function QuizzesClient({
                 onClick={() => setSelectedCategory(category._id)}
                 className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
                   selectedCategory === category._id
-                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
-                    : 'border-transparent text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                    ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
+                    : 'border-transparent text-ink-soft hover:bg-paper-sunken hover:text-ink   '
                 }`}
               >
                 {category.title}
@@ -196,7 +182,7 @@ export default function QuizzesClient({
 
           {canCreateQuiz && (
             <div className="mt-4 md:hidden">
-              <Button asChild className="h-10 w-full rounded-md bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
+              <Button asChild className="h-10 w-full rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
                 <Link href="/quizzen/aanmaken">Zelf quiz maken</Link>
               </Button>
             </div>
@@ -204,11 +190,11 @@ export default function QuizzesClient({
         </div>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
         {resultCount === 0 ? (
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
-            <CardContent className="p-10 text-center">
-              <h2 className="text-2xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Geen quizzen gevonden</h2>
+          <Card className="border-rule py-0">
+            <CardContent className="p-12 text-center">
+              <h2 className="font-display text-xl font-normal tracking-[-0.015em] text-ink">Geen quizzen gevonden</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Pas je filters aan of probeer een andere zoekterm.
               </p>
@@ -218,7 +204,7 @@ export default function QuizzesClient({
                   href="https://www.bijbel-studie.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]"
+                  className="font-medium text-ink hover:text-ink"
                 >
                   Bijbel Studie
                 </a>
@@ -228,7 +214,7 @@ export default function QuizzesClient({
                 <Button
                   type="button"
                   variant="outline"
-                  className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                  className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken"
                   onClick={() => {
                     setSearchQuery('');
                     setSelectedCategory('all');
@@ -237,16 +223,16 @@ export default function QuizzesClient({
                 >
                   Filters wissen
                 </Button>
-                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
+                <Button asChild className="h-10 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
                   <Link href="/dashboard">Naar dashboard</Link>
                 </Button>
               </div>
             </CardContent>
           </Card>
         ) : (
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
             {filteredQuizzes.map((quiz) => (
-              <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={userIsPremium} layout="stack" />
+              <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={userIsPremium} />
             ))}
           </div>
         )}

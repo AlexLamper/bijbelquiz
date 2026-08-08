@@ -27,7 +27,7 @@ export default async function PremiumPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <section className="flex-1 pt-8 pb-16 md:pt-16">
-        <div className="mx-auto max-w-340 px-4 sm:px-5 lg:px-4">
+        <div className="mx-auto max-w-[1180px] px-4 sm:px-5 lg:px-4">
           <PremiumOfferLayout
             isPremium={Boolean(isPremium)}
             isLoggedIn={Boolean(session)}

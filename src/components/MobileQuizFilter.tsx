@@ -42,9 +42,9 @@ export function MobileQuizFilter({
   return (
     <div className="md:hidden">
       <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem}>
-        <AccordionItem value="filters" className="border border-[#d7e1ee] bg-white px-3 dark:border-zinc-700 dark:bg-zinc-900">
+        <AccordionItem value="filters" className="border border-rule bg-paper-raised px-3">
           <AccordionTrigger className="py-2.5 text-sm hover:no-underline">
-            <span className="inline-flex items-center gap-2 font-medium text-[#30466e] dark:text-zinc-100">
+            <span className="inline-flex items-center gap-2 font-medium text-ink">
               <Filter className="h-4 w-4" />
               {activeCategoryLabel}
             </span>
@@ -57,10 +57,10 @@ export function MobileQuizFilter({
                 variant="outline"
                 onClick={() => handleCategorySelect('all')}
                 className={cn(
-                  'h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
+                  'h-9 w-full justify-start rounded-md border-rule px-3 text-sm',
                   selectedCategory === 'all'
-                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
-                    : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                    ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
+                    : 'bg-paper-raised text-ink-soft hover:bg-paper-sunken hover:text-ink     '
                 )}
               >
                 Alle categorieen
@@ -73,10 +73,10 @@ export function MobileQuizFilter({
                   variant="outline"
                   onClick={() => handleCategorySelect(category._id)}
                   className={cn(
-                    'h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
+                    'h-9 w-full justify-start rounded-md border-rule px-3 text-sm',
                     selectedCategory === category._id
-                      ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
-                      : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                      ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
+                      : 'bg-paper-raised text-ink-soft hover:bg-paper-sunken hover:text-ink     '
                   )}
                 >
                   {category.title}
@@ -88,10 +88,10 @@ export function MobileQuizFilter({
                 variant="outline"
                 onClick={() => onPremiumToggle(!showPremiumOnly)}
                 className={cn(
-                  'mt-1 h-9 w-full justify-start rounded-md border-[#d7e1ee] px-3 text-sm',
+                  'mt-1 h-9 w-full justify-start rounded-md border-rule px-3 text-sm',
                   showPremiumOnly
-                    ? 'border-transparent bg-[#6f8ed4] text-white shadow-sm hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
-                    : 'bg-white text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                    ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
+                    : 'bg-paper-raised text-ink-soft hover:bg-paper-sunken hover:text-ink     '
                 )}
               >
                 Alleen Premium

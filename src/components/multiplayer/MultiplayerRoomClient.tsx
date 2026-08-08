@@ -40,11 +40,11 @@ function getRouteForStatus(roomCode: string, status: RoomStatus): string {
 
 function getConnectionBadgeClass(status: string): string {
   if (status === 'connected') {
-    return 'border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300';
+    return 'border-positive/35 bg-positive/10 text-positive dark:text-positive';
   }
 
   if (status === 'reconnecting' || status === 'connecting') {
-    return 'border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300';
+    return 'border-lapis/35 bg-lapis/10 text-lapis dark:text-lapis';
   }
 
   return 'border-muted bg-muted text-muted-foreground';
@@ -80,7 +80,7 @@ function answerChoiceClasses(
   return cn(
     'relative h-auto justify-start gap-3 whitespace-normal py-3.5 pl-4 pr-4 text-left transition-all',
     isCorrectOption &&
-      'border-emerald-500/80 bg-emerald-500/[0.12] font-medium text-emerald-900 shadow-sm dark:bg-emerald-950/35 dark:text-emerald-100',
+      'border-positive/35 bg-positive/[0.12] font-medium text-positive  dark:bg-positive/35 dark:text-positive',
     isYourWrong &&
       'border-destructive/70 bg-destructive/[0.08] font-medium dark:bg-destructive/15',
     !revealed && isYourPending && 'border-primary ring-2 ring-primary/25',
@@ -105,7 +105,7 @@ function GameProgressBar(props: { current: number; total: number; status: RoomSt
       </div>
       <div className="h-2 overflow-hidden rounded-full bg-muted">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-[#8fa8dc] to-[#5f81cc] transition-all duration-500 dark:from-zinc-600 dark:to-zinc-400"
+          className="h-full rounded-full bg-lapis transition-all duration-500"
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -292,7 +292,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
   if (sessionStatus === 'loading' || loading) {
     return (
-      <div className="-mt-24 min-h-screen bg-background pt-24">
+      <div className="min-h-screen bg-background pt-10">
         <div className="container mx-auto max-w-5xl px-4 py-12">
           <LoadingSpinner size="lg" />
         </div>
@@ -302,7 +302,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
   if (!session) {
     return (
-      <div className="-mt-24 min-h-screen bg-background pt-24">
+      <div className="min-h-screen bg-background pt-10">
         <div className="container mx-auto max-w-3xl px-4 py-12">
           <Card>
             <CardHeader>
@@ -322,7 +322,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
   if (roomClosed) {
     return (
-      <div className="-mt-24 min-h-screen bg-background pt-24">
+      <div className="min-h-screen bg-background pt-10">
         <div className="container mx-auto max-w-3xl px-4 py-12">
           <Card>
             <CardHeader>
@@ -349,7 +349,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
   if (!room) {
     return (
-      <div className="-mt-24 min-h-screen bg-background pt-24">
+      <div className="min-h-screen bg-background pt-10">
         <div className="container mx-auto max-w-3xl px-4 py-12">
           <Card>
             <CardHeader>
@@ -372,13 +372,13 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
   }
 
   return (
-    <div className="-mt-24 min-h-screen bg-background pt-24">
+    <div className="min-h-screen bg-background pt-10">
       <div className="container mx-auto max-w-6xl px-4 py-8 md:py-10">
         {/* Room header */}
         <div
           className={cn(
-            'mb-8 rounded-2xl border border-[#e2e8f0] bg-gradient-to-br from-[#f0f4fc] via-background to-background p-5 shadow-sm',
-            'dark:border-zinc-800 dark:from-zinc-900/90 dark:via-background dark:to-background md:p-7',
+            'mb-8 rounded-lg border border-rule bg-paper-raised p-5',
+            '  dark:via-background dark:to-background md:p-7',
           )}
         >
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
@@ -386,7 +386,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
               <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
                 Samen spelen
               </p>
-              <h1 className="mt-1.5 text-balance text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+              <h1 className="mt-1.5 text-balance text-xl font-normal tracking-tight text-foreground md:text-2xl">
                 {room.quizTitle}
               </h1>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -408,7 +408,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 )}
                 {getConnectionLabel(connectionStatus)}
               </Badge>
-              <Button variant="secondary" size="sm" className="shadow-sm" onClick={handleCopyRoomCode}>
+              <Button variant="secondary" size="sm" className="" onClick={handleCopyRoomCode}>
                 <Copy className="mr-2 h-4 w-4" />
                 {copied ? 'Gekopieerd' : 'Code kopiëren'}
               </Button>
@@ -440,7 +440,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
         <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
           {view === 'lobby' && (
-            <Card className="border-[#e8edf5] shadow-md dark:border-zinc-800">
+            <Card className="border-rule">
               <CardHeader>
                 <CardTitle>Wachtkamer</CardTitle>
                 <CardDescription>
@@ -456,11 +456,11 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 <div className="space-y-2 rounded-lg border p-4">
                   <p className="text-sm font-medium">Startvoorwaarden</p>
                   {room.players.length < 2 ? (
-                    <p className="text-sm text-amber-600 dark:text-amber-400">
+                    <p className="text-sm text-lapis dark:text-lapis">
                       Nog {2 - room.players.length} {2 - room.players.length === 1 ? 'speler' : 'spelers'} nodig om te beginnen.
                     </p>
                   ) : (
-                    <p className="text-sm text-emerald-600 dark:text-emerald-400">
+                    <p className="text-sm text-positive dark:text-positive">
                       Voldoende spelers aanwezig. {isHost ? 'Je kunt het spel starten.' : 'Wachten op de spelleider.'}
                     </p>
                   )}
@@ -498,10 +498,10 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
           )}
 
           {view === 'game' && (
-            <Card className="overflow-hidden border-[#e8edf5] shadow-md dark:border-zinc-800">
+            <Card className="overflow-hidden border-rule">
               <CardHeader className="border-b bg-muted/40 pb-4">
                 <CardTitle className="flex items-center gap-2 text-lg">
-                  <Zap className="h-5 w-5 text-[#5f81cc] dark:text-zinc-300" aria-hidden />
+                  <Zap className="h-5 w-5 text-ink-soft" aria-hidden />
                   Live ronde
                 </CardTitle>
                 <CardDescription>
@@ -519,11 +519,11 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     {room.status === 'question_result' && room.currentQuestion.correctAnswerId != null && (
                       <div
                         className={cn(
-                          'rounded-xl border-2 p-4 md:p-5',
+                          'rounded-lg border p-4 md:p-5',
                           room.currentQuestion.yourAnswerId === room.currentQuestion.correctAnswerId &&
-                            'border-emerald-400/60 bg-emerald-500/10 dark:bg-emerald-950/30',
+                            'border-positive/35 bg-positive/10 dark:bg-positive/30',
                           room.currentQuestion.yourAnswerId == null &&
-                            'border-amber-400/50 bg-amber-500/10 dark:bg-amber-950/25',
+                            'border-lapis/35 bg-lapis/10 dark:bg-lapis/25',
                           room.currentQuestion.yourAnswerId != null &&
                             room.currentQuestion.yourAnswerId !== room.currentQuestion.correctAnswerId &&
                             'border-destructive/40 bg-destructive/10 dark:bg-destructive/15',
@@ -531,24 +531,24 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       >
                         {room.currentQuestion.yourAnswerId === room.currentQuestion.correctAnswerId ? (
                           <div className="flex gap-3">
-                            <CheckCircle2 className="mt-0.5 h-8 w-8 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                            <CheckCircle2 className="mt-0.5 h-8 w-8 shrink-0 text-positive dark:text-positive" />
                             <div>
-                              <p className="text-lg font-semibold text-emerald-900 dark:text-emerald-100">
+                              <p className="text-lg font-semibold text-positive dark:text-positive">
                                 Goed zo!
                               </p>
-                              <p className="mt-0.5 text-sm text-emerald-900/85 dark:text-emerald-200/90">
+                              <p className="mt-0.5 text-sm text-positive/85 dark:text-positive/90">
                                 Je antwoord is correct - je hebt een punt verdiend.
                               </p>
                             </div>
                           </div>
                         ) : room.currentQuestion.yourAnswerId == null ? (
                           <div className="flex gap-3">
-                            <XCircle className="mt-0.5 h-8 w-8 shrink-0 text-amber-600 dark:text-amber-400" />
+                            <XCircle className="mt-0.5 h-8 w-8 shrink-0 text-lapis dark:text-lapis" />
                             <div>
-                              <p className="text-lg font-semibold text-amber-900 dark:text-amber-100">
+                              <p className="text-lg font-semibold text-lapis dark:text-lapis">
                                 Geen antwoord
                               </p>
-                              <p className="mt-0.5 text-sm text-amber-900/85 dark:text-amber-200/90">
+                              <p className="mt-0.5 text-sm text-lapis/85 dark:text-lapis/90">
                                 Je hebt niet op tijd geantwoord. Het juiste antwoord staat hieronder gemarkeerd.
                               </p>
                             </div>
@@ -574,8 +574,8 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
                     <div
                       className={cn(
-                        'rounded-xl border bg-card p-4 md:p-5',
-                        room.status === 'in_progress' && 'shadow-sm',
+                        'rounded-lg border bg-card p-4 md:p-5',
+                        room.status === 'in_progress' && '',
                       )}
                     >
                       {room.currentQuestion.bibleReference ? (
@@ -632,7 +632,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                           >
                             <span className="flex flex-1 items-start gap-3 text-left">
                               {isCorrect && (
-                                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-positive dark:text-positive" />
                               )}
                               {isWrongYours && (
                                 <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-destructive" />
@@ -658,8 +658,8 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     {room.status === 'question_result' &&
                       room.currentQuestion.explanation &&
                       room.currentQuestion.explanation.trim().length > 0 && (
-                        <div className="rounded-xl border border-blue-200/60 bg-blue-500/[0.06] p-4 dark:border-blue-900/50 dark:bg-blue-950/20">
-                          <p className="text-xs font-semibold uppercase tracking-wide text-blue-800 dark:text-blue-200">
+                        <div className="rounded-lg border border-lapis/35 bg-lapis/[0.06] p-4 dark:border-lapis/35 dark:bg-lapis/20">
+                          <p className="text-xs font-semibold uppercase tracking-wide text-lapis dark:text-lapis">
                             Uitleg
                           </p>
                           <p className="mt-2 text-sm leading-relaxed text-foreground">
@@ -669,7 +669,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       )}
                   </>
                 ) : (
-                  <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-dashed py-12 text-center text-sm text-muted-foreground">
+                  <div className="flex flex-col items-center justify-center gap-2 rounded-lg border border-dashed py-12 text-center text-sm text-muted-foreground">
                     <RefreshCcw className="h-8 w-8 opacity-40" aria-hidden />
                     Wachten op de volgende vraag…
                   </div>
@@ -683,10 +683,10 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
           )}
 
           {view === 'results' && (
-            <Card className="border-[#e8edf5] shadow-md dark:border-zinc-800">
+            <Card className="border-rule">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Trophy className="h-6 w-6 text-amber-600 dark:text-amber-400" aria-hidden />
+                  <Trophy className="h-6 w-6 text-lapis dark:text-lapis" aria-hidden />
                   Eindstand
                 </CardTitle>
                 <CardDescription>
@@ -724,7 +724,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
             </Card>
           )}
 
-          <Card className="border-[#e8edf5] shadow-md dark:border-zinc-800">
+          <Card className="border-rule">
             <CardHeader>
               <CardTitle>Scorebord</CardTitle>
               <CardDescription>Live stand - wie scoort het hoogst?</CardDescription>
@@ -737,7 +737,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     <div
                     key={player.id}
                     className={cn(
-                      'rounded-xl border bg-card/50 p-3 transition-colors',
+                      'rounded-lg border bg-card/50 p-3 transition-colors',
                       player.id === currentPlayer?.id && 'border-primary/50 bg-primary/[0.07]',
                     )}
                   >
@@ -752,7 +752,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       <p className="text-xs text-muted-foreground">
                         {player.correctAnswers} van {room.totalQuestions} goed
                       </p>
-                      <p className="text-sm font-bold tabular-nums text-foreground">{player.score} pt</p>
+                      <p className="text-sm font-semibold tabular-nums text-foreground">{player.score} pt</p>
                     </div>
                   </div>
                 ))}
@@ -761,13 +761,13 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
         </div>
 
         {process.env.NODE_ENV !== 'production' && (
-          <Card className="mt-6 border-amber-300/40 bg-amber-50/30 dark:border-amber-700/30 dark:bg-amber-950/10">
+          <Card className="mt-6 border-lapis/35 bg-lapis-tint/30 dark:border-lapis/35 dark:bg-lapis/10">
             <CardHeader className="pb-2">
               <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
                   <CardTitle className="text-sm">Debug - Samen spelen (HTTP polling)</CardTitle>
                   <CardDescription className="text-xs">
-                    Status: <span className={connectionStatus === 'connected' ? 'text-emerald-600' : 'text-amber-600'}>{connectionStatus}</span>
+                    Status: <span className={connectionStatus === 'connected' ? 'text-positive' : 'text-lapis'}>{connectionStatus}</span>
                     {' · '}Room: {room?.status ?? 'unknown'}
                     {' · '}Spelers: {room?.players.length ?? 0}
                     {' · '}UserId: {resolvedUserId ?? '(none)'}
@@ -822,7 +822,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     return (
                       <p
                         key={`${index}-${entry.slice(0, 30)}`}
-                        className={`break-all ${isError ? 'text-red-600 dark:text-red-400' : isWarn ? 'text-amber-600 dark:text-amber-400' : 'text-muted-foreground'}`}
+                        className={`break-all ${isError ? 'text-vermilion dark:text-vermilion' : isWarn ? 'text-lapis dark:text-lapis' : 'text-muted-foreground'}`}
                       >
                         {entry}
                       </p>

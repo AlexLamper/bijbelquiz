@@ -1,98 +1,82 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
-import { Award } from "lucide-react"
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
-const categories = [
+import { ArrowLink, PIGMENT_TEXT, SectionHead, type Pigment } from '@/components/editorial';
+
+const categories: {
+  title: string;
+  questions: string;
+  href: string;
+  pigment: Pigment;
+}[] = [
   {
-    title: "Oude Testament",
-    questions: "60+ vragen",
-    imageUrl: '/images/quizzes/img1.png',
-    href: '/quizzes?category=oude-testament',
+    title: 'Oude Testament',
+    questions: '60+ vragen',
+    href: '/quizzen?category=oude-testament',
+    pigment: 'neutral',
   },
   {
-    title: "Nieuwe Testament",
-    questions: "50+ vragen",
-    imageUrl: '/images/quizzes/img2.png',
-    href: '/quizzes?category=nieuwe-testament',
+    title: 'Nieuwe Testament',
+    questions: '50+ vragen',
+    href: '/quizzen?category=nieuwe-testament',
+    pigment: 'lapis',
   },
   {
-    title: "Bijbelse Figuren",
-    questions: "40+ vragen",
-    imageUrl: '/images/quizzes/img3.png',
-    href: '/quizzes?category=bijbelse-figuren',
+    title: 'Bijbelse Figuren',
+    questions: '40+ vragen',
+    href: '/quizzen?category=bijbelse-figuren',
+    pigment: 'vermilion',
   },
   {
     title: "Thema's & Verhalen",
-    questions: "30+ vragen",
-    imageUrl: '/images/quizzes/img4.png',
-    href: '/quizzes?category=verhalen',
+    questions: '30+ vragen',
+    href: '/quizzen?category=verhalen',
+    pigment: 'verdigris',
   },
-]
+];
 
 export function FeaturesSection() {
   return (
-    <section id="categorieen" className="py-16 md:py-24 dark:bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 text-center">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-[#1a2942] dark:text-white md:text-4xl lg:text-5xl">
-            Ontdek de <span className="dark:text-[#9db5dc]">rijkdom</span> van Gods Woord
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground dark:text-white/70">
-            Met meer dan 200 vragen verdeeld over 4 categorieën is er altijd iets nieuws te ontdekken in de Statenvertaling.
-          </p>
-        </div>
+    <section id="categorieen" className="bg-paper">
+      <div className="mx-auto w-full max-w-[1180px] px-5 pt-12 sm:px-8 lg:px-10 lg:pt-20">
+        <SectionHead
+          eyebrow="Categorieën"
+          title="Ontdek de rijkdom van Gods Woord"
+          lead="Met meer dan 200 vragen verdeeld over 4 categorieën is er altijd iets nieuws te ontdekken in de Statenvertaling."
+          action={<ArrowLink href="/quizzen">Alle categorieën</ArrowLink>}
+        />
 
-        <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-16">
-          <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-[#9db5dc] md:text-5xl">200+</div>
-            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Vragen</div>
-          </div>
-          <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-[#9db5dc] md:text-5xl">4</div>
-            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Categorieën</div>
-          </div>
-          <div className="text-center">
-            <div className="font-serif text-4xl font-medium text-primary dark:text-[#9db5dc] md:text-5xl">3</div>
-            <div className="mt-1 text-sm text-muted-foreground dark:text-white/60">Moeilijkheidsgraden</div>
-          </div>
-        </div>
-
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-7 grid gap-px overflow-hidden rounded-lg border border-rule bg-rule sm:grid-cols-2">
           {categories.map((category, index) => (
-            <Link key={index} href={category.href} className="block">
-              <Card
-                className="group relative h-32 overflow-hidden rounded-2xl border border-slate-200/70 dark:border-white/10 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            <Link
+              key={category.title}
+              href={category.href}
+              className="group flex items-center gap-4 bg-paper-raised p-5 transition-colors hover:bg-paper-sunken sm:gap-5"
+            >
+              <span
+                className={`font-display text-sm tabular-nums ${PIGMENT_TEXT[category.pigment]}`}
               >
-                <div className="absolute inset-0">
-                  <Image
-                    src={category.imageUrl}
-                    alt={category.title}
-                    fill
-                    quality={80}
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-black/45" />
-                <CardContent className="relative z-10 flex h-full flex-col items-center justify-center p-4 text-center">
-                  <h3 className="font-serif text-lg font-semibold text-white drop-shadow-md">
-                    {category.title}
-                  </h3>
-                  <p className="mt-1 text-sm text-white/90">
-                    {category.questions}
-                  </p>
-                </CardContent>
-              </Card>
+                {String(index + 1).padStart(2, '0')}
+              </span>
+
+              <span className="min-w-0 flex-1">
+                <span className="block font-display text-base leading-snug text-ink sm:text-lg">
+                  {category.title}
+                </span>
+                <span className="mt-1 block text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  {category.questions}
+                </span>
+              </span>
+
+              <ArrowRight className="h-4 w-4 shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-ink" />
             </Link>
           ))}
         </div>
 
-        <div className="mt-10 flex items-center justify-center gap-2 text-sm text-muted-foreground dark:text-white/60">
-          <Award className="h-4 w-4" />
-          <span>Alle vragen gebaseerd op de Statenvertaling</span>
-        </div>
+        <p className="mt-5 text-xs text-ink-muted">
+          Alle vragen gebaseerd op de Statenvertaling
+        </p>
       </div>
     </section>
-  )
+  );
 }

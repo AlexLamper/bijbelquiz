@@ -1,117 +1,87 @@
-import Link from 'next/link';
-import { Check, Home, Users, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { MULTIPLAYER_PREMIUM_MAX_PLAYERS } from '@/lib/premium-benefits';
+import { Check } from 'lucide-react';
+
+import { InkButton, SectionHead } from '@/components/editorial';
+
+const scenarios = [
+  {
+    title: 'Zondagavond met het gezin',
+    body: "Het gezin zit samen op de bank. Wie kent de Bijbel het best? Met BijbelQuiz test je het samen - spannend voor jong en oud. Eén persoon start een spel, deelt de code, en iedereen kan meedoen op z'n eigen telefoon of laptop.",
+    points: [
+      'Geschikt voor alle leeftijden',
+      'Geen installatie nodig',
+      'Speel op elk apparaat',
+      '2 tot 8 spelers gratis',
+    ],
+  },
+  {
+    title: 'Jeugdvereniging of groepsactiviteit',
+    body: 'Op zoek naar een leuke activiteit voor een grotere groep? BijbelQuiz is perfect voor jeugdavonden en gemeentelijke bijeenkomsten. Iedereen speelt tegelijk mee - spannend, interactief en leerzaam.',
+    points: [
+      'Tot 20 spelers in één spel',
+      'Ideaal voor jeugdavonden',
+      'Geschikt voor gemeenteactiviteiten',
+      'Resultaten live zichtbaar',
+    ],
+  },
+];
+
+const steps = ['1 persoon start een spel', 'Deelt de code met de groep', 'Iedereen speelt direct mee'];
 
 export function MultiplayerHighlightSection() {
   return (
-    <section className="bg-[#f5f8ff] py-16 md:py-24 dark:bg-zinc-900/50 dark:border-y dark:border-zinc-800">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-5xl">
-          {/* Header */}
-          <div className="mb-12 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#6f8ed4]/10 px-4 py-1.5 text-sm font-semibold text-[#355384] dark:bg-[#1a2b47] dark:text-[#9db5dc]">
-              <Users className="h-4 w-4" />
-              Samen spelen
-            </div>
-            <h2 className="font-serif text-3xl font-medium tracking-tight text-[#1a2942] dark:text-white md:text-4xl">
-              Speciaal ontworpen voor groepen
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground dark:text-white/70">
-              Van gezin tot jeugdvereniging - iedereen speelt mee. Geen installatie, gewoon een code delen en direct beginnen.
-            </p>
-          </div>
+    <section className="bg-paper">
+      <div className="mx-auto w-full max-w-[1180px] px-5 pt-12 sm:px-8 lg:px-10 lg:pt-20">
+        <SectionHead
+          eyebrow="Samen spelen"
+          title="Speciaal ontworpen voor groepen"
+          lead="Van gezin tot jeugdvereniging - iedereen speelt mee. Geen installatie, gewoon een code delen en direct beginnen."
+        />
 
-          {/* Scenario cards */}
-          <div className="grid gap-6 md:grid-cols-2">
-            {/* Scenario 1: Familie */}
-            <div className="rounded-2xl border border-[#dce8f8] bg-white p-6 shadow-sm dark:border-zinc-700 dark:bg-zinc-900">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#6f8ed4]/10 dark:bg-[#1a2b47]">
-                <Home className="h-6 w-6 text-[#5f81cc] dark:text-[#9db5dc]" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold text-[#1a2942] dark:text-white">
-                Zondagavond met het gezin
+        <div className="mt-7 grid gap-px overflow-hidden rounded-lg border border-rule bg-rule md:grid-cols-2">
+          {scenarios.map((scenario) => (
+            <article key={scenario.title} className="bg-paper-raised p-5 sm:p-7">
+              <h3 className="font-display text-lg font-normal leading-snug text-ink sm:text-xl">
+                {scenario.title}
               </h3>
-              <p className="mb-5 text-sm leading-relaxed text-muted-foreground dark:text-zinc-400">
-                Het gezin zit samen op de bank. Wie kent de Bijbel het best? Met BijbelQuiz test je het samen - spannend voor jong en oud. Eén persoon start een spel, deelt de code, en iedereen kan meedoen op z'n eigen telefoon of laptop.
-              </p>
-              <ul className="space-y-2">
-                {[
-                  'Geschikt voor alle leeftijden',
-                  'Geen installatie nodig',
-                  'Speel op elk apparaat',
-                  '2 tot 8 spelers gratis',
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-[#30466e] dark:text-zinc-300">
-                    <Check className="h-4 w-4 shrink-0 text-[#6f8ed4] dark:text-[#9db5dc]" />
-                    {item}
+              <p className="mt-3 text-sm leading-relaxed text-ink-muted">{scenario.body}</p>
+
+              <ul className="mt-6 space-y-2.5 border-t border-rule pt-5">
+                {scenario.points.map((point) => (
+                  <li key={point} className="flex items-start gap-2.5 text-sm text-ink-soft">
+                    <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-positive" />
+                    {point}
                   </li>
                 ))}
               </ul>
-            </div>
+            </article>
+          ))}
+        </div>
 
-            {/* Scenario 2: Jeugdvereniging */}
-            <div className="rounded-2xl border border-[#dce8f8] bg-white p-6 shadow-sm dark:border-zinc-700 dark:bg-zinc-900">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#6f8ed4]/10 dark:bg-[#1a2b47]">
-                <Users className="h-6 w-6 text-[#5f81cc] dark:text-[#9db5dc]" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold text-[#1a2942] dark:text-white">
-                Jeugdvereniging of groepsactiviteit
-              </h3>
-              <p className="mb-5 text-sm leading-relaxed text-muted-foreground dark:text-zinc-400">
-                Op zoek naar een leuke activiteit voor een grotere groep? BijbelQuiz is perfect voor jeugdavonden en gemeentelijke bijeenkomsten. Iedereen speelt tegelijk mee - spannend, interactief en leerzaam.
-              </p>
-              <ul className="space-y-2">
-                {[
-                  `Tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers in één spel`,
-                  'Ideaal voor jeugdavonden',
-                  'Geschikt voor gemeenteactiviteiten',
-                  'Resultaten live zichtbaar',
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-[#30466e] dark:text-zinc-300">
-                    <Check className="h-4 w-4 shrink-0 text-[#6f8ed4] dark:text-[#9db5dc]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        {/* Three numbered beats on one rule. */}
+        <div className="mt-7 border-y border-rule py-6">
+          <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+            Zo snel opgezet
+          </p>
 
-          {/* How it works - compact strip */}
-          <div className="mt-10 rounded-xl border border-[#dce8f8] bg-white/60 px-6 py-4 dark:border-zinc-700 dark:bg-zinc-900/60">
-            <p className="mb-3 text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Zo snel opgezet
-            </p>
-            <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-0">
-              {[
-                '1 persoon start een spel',
-                'Deelt de code met de groep',
-                'Iedereen speelt direct mee',
-              ].map((step, i) => (
-                <div key={step} className="flex items-center gap-2">
-                  {i > 0 && (
-                    <ArrowRight className="mx-2 hidden h-4 w-4 shrink-0 text-[#6f8ed4] dark:text-[#9db5dc] sm:block" />
-                  )}
-                  <span className="rounded-lg bg-[#eef3fb] px-3 py-1.5 text-sm font-medium text-[#30466e] dark:bg-[#1a2b47] dark:text-[#9db5dc]">
-                    {step}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ol className="mt-4 grid gap-4 sm:grid-cols-3 sm:gap-8">
+            {steps.map((step, index) => (
+              <li key={step} className="flex items-baseline gap-3">
+                <span className="font-display text-sm tabular-nums text-lapis">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span className="text-sm leading-relaxed text-ink-soft">{step}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
 
-          {/* CTA */}
-          <div className="mt-8 text-center">
-            <Button asChild size="lg" className="h-12 rounded-md bg-[#6f8ed4] px-8 text-base font-medium text-white hover:bg-[#5f81cc] dark:bg-[#5b7dd9] dark:hover:bg-[#4a6bc7]">
-              <Link href="/registreren">
-                Probeer gratis samen spelen
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <p className="mt-3 text-sm text-muted-foreground dark:text-white/60">
-              Gratis account aanmaken in 30 seconden - geen creditcard nodig.
-            </p>
-          </div>
+        <div className="mt-7 flex flex-col items-start gap-x-6 gap-y-3 sm:flex-row sm:items-center">
+          <InkButton href="/registreren" className="w-full sm:w-auto">
+            Probeer gratis samen spelen
+          </InkButton>
+          <p className="text-xs leading-relaxed text-ink-muted">
+            Gratis account aanmaken in 30 seconden - geen creditcard nodig.
+          </p>
         </div>
       </div>
     </section>

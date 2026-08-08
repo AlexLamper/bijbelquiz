@@ -1,44 +1,30 @@
-import QuizCard, { QuizItem } from "@/components/QuizCard"
-import Link from "next/link"
+import QuizCard, { QuizItem } from '@/components/QuizCard';
+import { ArrowLink, SectionHead } from '@/components/editorial';
 
 interface PopularQuizzesSectionProps {
-  quizzes: QuizItem[]
-  isPremiumUser: boolean
+  quizzes: QuizItem[];
+  isPremiumUser: boolean;
 }
 
 export function PopularQuizzesSection({ quizzes, isPremiumUser }: PopularQuizzesSectionProps) {
+  if (quizzes.length === 0) return null;
+
   return (
-    <section id="quizzen" className="bg-white dark:bg-zinc-950 py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 text-center">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-[#1a2942] dark:text-white md:text-4xl lg:text-5xl">
-            Populaire Quizzen
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground dark:text-white/70">
-            Ontdek de meest gespeelde quizzen en daag jezelf uit met verschillende categorieën uit de Bijbel.
-          </p>
-        </div>
+    <section id="quizzen" className="bg-paper">
+      <div className="mx-auto w-full max-w-[1180px] px-5 pt-12 sm:px-8 lg:px-10 lg:pt-20">
+        <SectionHead
+          eyebrow="Quizzen"
+          title="Populaire Quizzen"
+          lead="Ontdek de meest gespeelde quizzen en daag jezelf uit met verschillende categorieën uit de Bijbel."
+          action={<ArrowLink href="/quizzen">Bekijk alle quizzen</ArrowLink>}
+        />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-7 grid gap-x-6 gap-y-9 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 xl:grid-cols-4">
           {quizzes.map((quiz) => (
-            <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={isPremiumUser} layout="stack" />
+            <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={isPremiumUser} />
           ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <Link
-            href="/quizzen"
-            className="inline-flex items-center gap-2 font-medium text-primary dark:text-zinc-300 transition-colors hover:text-[#4a6bc7]"
-          >
-            Bekijk alle quizzen
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
-

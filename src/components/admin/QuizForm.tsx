@@ -198,7 +198,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
             <Button variant="outline" size="icon" asChild>
               <Link href="/beheer/quizzen"><ArrowLeft className="h-4 w-4" /></Link>
             </Button>
-            <h1 className="text-3xl font-bold font-serif">{initialData ? 'Quiz Bewerken' : 'Nieuwe Quiz'}</h1>
+            <h1 className="text-3xl font-normal font-serif">{initialData ? 'Quiz Bewerken' : 'Nieuwe Quiz'}</h1>
           </div>
           <Button type="submit" disabled={loading} className="gap-2">
             <Save className="h-4 w-4" />
@@ -211,7 +211,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
           <div className="lg:col-span-3 space-y-6">
             {/* JSON Upload Section */}
             {!initialData && (
-              <Card className="border-dashed border-2 border-primary/20 bg-primary/5">
+              <Card className="border-dashed border border-primary/20 bg-primary/5">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <FileJson className="h-5 w-5" />
@@ -343,7 +343,7 @@ export default function QuizForm({ initialData }: QuizFormProps) {
 
             {/* Questions */}
             <div className="flex items-center justify-between mt-8 mb-4">
-              <h2 className="text-2xl font-bold font-serif">Vragen</h2>
+              <h2 className="text-2xl font-normal font-serif">Vragen</h2>
             </div>
             
             {form.formState.errors.questions?.root && (
@@ -352,13 +352,13 @@ export default function QuizForm({ initialData }: QuizFormProps) {
 
             <div className="space-y-6">
               {questionFields.map((qField, qIndex) => (
-                <Card key={qField.id} className="relative border-slate-200">
+                <Card key={qField.id} className="relative border-rule">
                   <div className="absolute right-4 top-4">
                     <Button 
                       type="button" 
                       variant="ghost" 
                       size="icon" 
-                      className="text-red-500 hover:text-red-700 hover:bg-red-50"
+                      className="text-vermilion hover:text-vermilion hover:bg-vermilion-tint"
                       onClick={() => removeQuestion(qIndex)}
                     >
                       <Trash2 className="h-4 w-4" />
@@ -611,7 +611,7 @@ function AnswersFieldArray({ control, qIndex }: { control: any, qIndex: number }
                         type="button" 
                         variant="ghost" 
                         size="icon" 
-                        className="text-slate-400 hover:text-red-500"
+                        className="text-ink-muted hover:text-vermilion"
                         onClick={() => remove(aIndex)}
                         disabled={fields.length <= 2}
                     >

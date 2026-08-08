@@ -23,6 +23,7 @@ import { getLevelInfo, BADGES, LEVELS } from '@/lib/gamification';
 import { redirect } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Eyebrow, Figure, SectionHead } from '@/components/editorial';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
@@ -188,40 +189,38 @@ export default async function ProfilePage() {
   }
 
   return (
-    <div className="relative -mt-24 min-h-screen overflow-hidden pb-14 pt-24">
-      <div className="pointer-events-none absolute -top-24 left-0 -z-10 h-72 w-72 rounded-full bg-[#bbcff0]/45 blur-3xl dark:bg-zinc-900/30" />
-      <div className="pointer-events-none absolute right-0 top-8 -z-10 h-64 w-64 rounded-full bg-[#d9e5f8]/70 blur-3xl dark:bg-zinc-700/35" />
-
-      {/* Profile header */}
-      <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
-        <div className="rounded-2xl border border-[#d8e1ee] bg-gradient-to-br from-[#f0f5ff] to-white p-6 shadow-sm dark:border-zinc-700 dark:from-zinc-900/80 dark:to-zinc-900/60">
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-            <div className="flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#dce8f8] shadow-sm dark:bg-zinc-800">
+    <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
+      {/* Masthead */}
+      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+        <div className="border-b border-rule pb-8">
+          <Eyebrow>Profiel</Eyebrow>
+          <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center">
+            <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-rule bg-paper-sunken">
               {user.image ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={user.image} alt={user.name || 'Gebruiker'} className="h-full w-full object-cover" />
               ) : (
-                <UserIcon className="h-10 w-10 text-[#607597] dark:text-zinc-300" />
+                <UserIcon className="h-8 w-8 text-ink-muted" />
               )}
             </div>
 
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-center gap-2.5">
-                <h1 className="text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">{user.name || 'Naamloos'}</h1>
+                <h1 className="font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">{user.name || 'Naamloos'}</h1>
                 {user.isPremium && (
-                  <Badge className="bg-[#6f8ed4] text-white dark:bg-[#5b7dd9]">
-                    <Star className="mr-1 h-3.5 w-3.5" />
+                  <Badge variant="lapis">
+                    <Star className="h-3 w-3" />
                     Premium
                   </Badge>
                 )}
               </div>
 
               <div className="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1.5">
-                <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                <span className="inline-flex items-center gap-1.5 text-sm text-ink-muted">
                   <Mail className="h-3.5 w-3.5" />
                   {user.email}
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                <span className="inline-flex items-center gap-1.5 text-sm text-ink-muted">
                   <Calendar className="h-3.5 w-3.5" />
                   Lid sinds{' '}
                   {new Date(user.createdAt).toLocaleDateString('nl-NL', {
@@ -236,104 +235,58 @@ export default async function ProfilePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-6 sm:px-5 lg:px-4">
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
-            <CardContent className="p-5">
-              <div className="flex items-center justify-between">
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Totaal XP</p>
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-50 dark:bg-amber-900/20">
-                  <Trophy className="h-4 w-4 text-amber-500 dark:text-amber-400" />
-                </div>
-              </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{(user.xp || 0).toLocaleString('nl-NL')}</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">ervaringspunten</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
-            <CardContent className="p-5">
-              <div className="flex items-center justify-between">
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Streak</p>
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-orange-50 dark:bg-orange-900/20">
-                  <Flame className="h-4 w-4 text-orange-500 dark:text-orange-400" />
-                </div>
-              </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{user.streak || 0}</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">opeenvolgende dagen</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
-            <CardContent className="p-5">
-              <div className="flex items-center justify-between">
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Gespeeld</p>
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-900/20">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-                </div>
-              </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{totalQuizzesDone}</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">quizzen gespeeld</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
-            <CardContent className="p-5">
-              <div className="flex items-center justify-between">
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Gem. score</p>
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-900/20">
-                  <Target className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                </div>
-              </div>
-              <p className="mt-2 text-3xl font-bold text-[#1f2f4b] dark:text-zinc-100">{avgScore}%</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">gemiddelde score</p>
-            </CardContent>
-          </Card>
+      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-5 border-b border-rule pb-6 md:grid-cols-4 md:gap-y-0 md:divide-x md:divide-rule">
+          <Figure
+            label="Ervaring"
+            value={(user.xp || 0).toLocaleString('nl-NL')}
+            meta="XP verzameld"
+            pigment="lapis"
+          />
+          <Figure label="Reeks" value={user.streak || 0} meta="opeenvolgende dagen" pigment="vermilion" />
+          <Figure label="Afgerond" value={totalQuizzesDone} meta="quizzen gespeeld" pigment="verdigris" />
+          <Figure label="Gem. score" value={avgScore + '%'} meta="over alle pogingen" pigment="lapis" />
         </div>
 
-        <div className="mt-8 grid gap-8 xl:grid-cols-[minmax(0,2fr)_minmax(300px,1fr)]">
-          <article className="border-t border-[#d9e3f1] pt-6 dark:border-zinc-700">
-              <div className="mb-5 flex items-center gap-3">
-                <TrendingUp className="h-5 w-5 text-[#4f6faa] dark:text-zinc-300" />
-                <div>
-                  <h2 className="text-xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Niveau voortgang</h2>
-                  <p className="text-sm text-muted-foreground">Verdien XP om nieuwe niveaus te ontgrendelen</p>
+        <div className="mt-11 grid gap-11 lg:mt-14 xl:grid-cols-[minmax(0,2fr)_minmax(300px,1fr)] xl:gap-14">
+          <article>
+              <SectionHead
+                eyebrow="Voortgang"
+                title="Niveau"
+                pigment="lapis"
+                action={
+                  <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted tabular-nums">
+                    {levelInfo.progressPercentage}% voltooid
+                  </span>
+                }
+              />
+
+              <div className="mt-7 flex items-center gap-6">
+                <p className="font-display text-[44px] font-normal leading-none tracking-[-0.03em] text-ink tabular-nums">
+                  {levelInfo.level}
+                </p>
+
+                <div className="min-w-0 flex-1">
+                  <p className="font-display text-lg leading-snug text-ink">{levelInfo.title}</p>
+
+                  <div className="mt-3 h-px w-full bg-rule-strong">
+                    <div
+                      className="h-px bg-lapis transition-[width] duration-700"
+                      style={{ width: levelInfo.progressPercentage + '%' }}
+                    />
+                  </div>
+
+                  {!levelInfo.isMaxLevel && (
+                    <p className="mt-2.5 text-xs text-ink-muted">
+                      Nog {levelInfo.nextLevelXp - levelInfo.currentXp} XP tot het volgende niveau
+                    </p>
+                  )}
                 </div>
               </div>
 
-              <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
-                <CardContent className="p-5">
-                  <div className="flex items-center gap-5">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-[#6f8ed4] text-2xl font-bold text-white dark:bg-[#6f8ed4]">
-                      {levelInfo.level}
-                    </div>
-
-                    <div className="flex-1">
-                      <div className="mb-2 flex items-center justify-between">
-                        <p className="text-lg font-semibold text-[#24395f] dark:text-zinc-100">{levelInfo.title}</p>
-                        <p className="text-sm text-muted-foreground">{levelInfo.progressPercentage}%</p>
-                      </div>
-
-                      <div className="h-2.5 w-full overflow-hidden rounded-full bg-[#e2eaf5] dark:bg-zinc-700">
-                        <div
-                          className="h-full bg-[#6f8ed4] dark:bg-[#6f8ed4]"
-                          style={{ width: `${levelInfo.progressPercentage}%` }}
-                        />
-                      </div>
-
-                      {!levelInfo.isMaxLevel && (
-                        <p className="mt-2 text-sm text-muted-foreground">
-                          Nog {levelInfo.nextLevelXp - levelInfo.currentXp} XP tot het volgende niveau
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
               <div className="mt-6">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Alle niveaus</p>
-                <div className="grid gap-3 sm:grid-cols-2">
+                <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Alle niveaus</p>
+                <div className="grid gap-px overflow-hidden rounded-lg border border-rule bg-rule sm:grid-cols-2">
                   {LEVELS.map((entry) => {
                     const isReached = user.xp >= entry.minXp;
                     const isCurrent = entry.level === levelInfo.level;
@@ -341,18 +294,40 @@ export default async function ProfilePage() {
                     return (
                       <div
                         key={entry.level}
-                        className={`rounded-md border px-3 py-3 ${
+                        className={`relative flex items-center gap-4 px-4 py-3.5 ${
                           isCurrent
-                            ? 'border-[#6f8ed4] bg-[#f8fbff] dark:border-[#6f8ed4] dark:bg-[#162948]'
-                            : 'border-[#d7e1ee] bg-white dark:border-zinc-700 dark:bg-zinc-900/40'
+                            ? 'bg-paper-sunken before:absolute before:inset-y-2 before:left-0 before:w-0.5 before:rounded-full before:bg-lapis'
+                            : 'bg-paper-raised'
                         }`}
                       >
-                        <div className="flex items-center gap-2">
-                          <p className={`text-sm font-semibold text-[#24395f] ${isCurrent ? 'dark:text-[#9db5dc]' : 'dark:text-zinc-100'}`}>Niveau {entry.level}</p>
-                          {isReached && <CheckCircle2 className="h-4 w-4 text-[#5f7fc7] dark:text-zinc-300" />}
-                        </div>
-                        <p className={`mt-0.5 text-sm text-[#30466e] ${isCurrent ? 'dark:text-[#8fa5cb]' : 'dark:text-zinc-300'}`}>{entry.title}</p>
-                        <p className="mt-1 text-xs text-muted-foreground">Vanaf {entry.minXp} XP</p>
+                        <span
+                          className={`w-6 shrink-0 font-display text-sm tabular-nums ${
+                            isCurrent ? 'text-lapis' : isReached ? 'text-ink-soft' : 'text-ink-muted'
+                          }`}
+                        >
+                          {String(entry.level).padStart(2, '0')}
+                        </span>
+
+                        <span className="min-w-0 flex-1">
+                          <span
+                            className={`block font-display text-base leading-snug ${
+                              isReached ? 'text-ink' : 'text-ink-muted'
+                            }`}
+                          >
+                            {entry.title}
+                          </span>
+                          <span className="mt-0.5 block text-xs tabular-nums text-ink-muted">
+                            Vanaf {entry.minXp.toLocaleString('nl-NL')} XP
+                          </span>
+                        </span>
+
+                        {isCurrent ? (
+                          <span className="shrink-0 text-[10px] font-medium uppercase tracking-[0.16em] text-lapis">
+                            Nu
+                          </span>
+                        ) : isReached ? (
+                          <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-positive" />
+                        ) : null}
                       </div>
                     );
                   })}
@@ -360,16 +335,19 @@ export default async function ProfilePage() {
               </div>
           </article>
 
-          <aside className="border-t border-[#d9e3f1] pt-6 dark:border-zinc-700">
-              <div className="mb-5 flex items-center gap-3">
-                <Star className="h-5 w-5 text-[#4f6faa] dark:text-zinc-300" />
-                <div>
-                  <h2 className="text-xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Badges</h2>
-                  <p className="text-sm text-muted-foreground">{(user.badges || []).length} van {BADGES.length} verdiend</p>
-                </div>
-              </div>
+          <aside>
+              <SectionHead
+                eyebrow="Erkenning"
+                title="Badges"
+                pigment="verdigris"
+                action={
+                  <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted tabular-nums">
+                    {(user.badges || []).length} / {BADGES.length}
+                  </span>
+                }
+              />
 
-              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2">
+              <div className="mt-7 grid gap-3 sm:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2">
                 {BADGES.map((badge) => {
                   const earned = (user.badges || []).includes(badge.id);
 
@@ -378,21 +356,21 @@ export default async function ProfilePage() {
                       key={badge.id}
                       className={
                         earned
-                          ? 'border-[#6f8ed4]/40 bg-[#f4f8ff] py-0 shadow-sm dark:border-zinc-600 dark:bg-[#1a2b47]/50'
-                          : 'border-[#d7e1ee] bg-white py-0 opacity-60 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/40'
+                          ? 'border-lapis/35 bg-paper-sunken py-0   '
+                          : 'border-rule bg-paper-raised py-0 opacity-60'
                       }
                     >
                       <CardContent className="p-3 sm:p-4">
                         <div className="flex items-start gap-3">
                           <div className={`shrink-0 text-2xl ${earned ? '' : 'grayscale'}`}>{badge.icon}</div>
                           <div className="min-w-0 flex-1">
-                            <p className="break-words text-xs font-semibold text-[#24395f] sm:text-sm dark:text-zinc-100">{badge.name}</p>
-                            <p className="mt-1 break-words text-[11px] text-muted-foreground sm:text-xs">{badge.description}</p>
+                            <p className="break-words font-display text-sm leading-snug text-ink">{badge.name}</p>
+                            <p className="mt-1 break-words text-[11px] leading-relaxed text-ink-muted sm:text-xs">{badge.description}</p>
                           </div>
                           {earned ? (
-                            <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500 dark:text-emerald-400" />
+                            <CheckCircle2 className="h-4 w-4 shrink-0 text-positive dark:text-positive" />
                           ) : (
-                            <span className="mt-0.5 shrink-0 whitespace-nowrap text-[9px] font-semibold uppercase tracking-wider text-muted-foreground sm:text-[10px]">Nog niet</span>
+                            <span className="mt-0.5 shrink-0 whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.16em] text-ink-muted sm:text-[10px]">Nog niet</span>
                           )}
                         </div>
                       </CardContent>
@@ -404,21 +382,21 @@ export default async function ProfilePage() {
         </div>
 
         {!user.isPremium && (
-          <section className="mt-8 border-t border-[#d9e3f1] pt-6 dark:border-zinc-700">
-            <Card className="border-[#d7e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+          <section className="mt-11 lg:mt-14">
+            <Card className="border-lapis/45 py-0">
               <CardContent className="grid gap-5 p-5 lg:grid-cols-[minmax(0,1.6fr)_auto] lg:items-center">
                 <div>
-                  <Badge className="mb-3 bg-[#e9eff8] text-[#355384] dark:bg-[#6f8ed4] dark:text-white">
-                    <Crown className="mr-1 h-3.5 w-3.5" />
+                  <Badge variant="lapis" className="mb-4">
+                    <Crown className="h-3 w-3" />
                     Premium
                   </Badge>
-                  <h3 className="text-2xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Upgrade naar Premium</h3>
-                  <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+                  <h3 className="font-display text-2xl font-normal tracking-[-0.015em] text-ink">Upgrade naar Premium</h3>
+                  <p className="mt-2 max-w-xl text-sm text-ink-muted">
                     Host onbeperkt multiplayer-rooms, krijg uitleg bij elke vraag en ontgrendel alle premium quizzen.
                   </p>
                 </div>
 
-                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-zinc-500 dark:hover:bg-zinc-400">
+                <Button asChild className="h-10 rounded-md bg-ink px-5 text-ink-inverted hover:bg-ink-soft">
                   <Link href="/premium">Word nu Premium</Link>
                 </Button>
               </CardContent>
@@ -427,28 +405,28 @@ export default async function ProfilePage() {
         )}
 
         {user.isPremium && (
-          <section className="mt-8 border-t border-[#d9e3f1] pt-6 dark:border-zinc-700">
+          <section className="mt-8 border-t border-rule pt-6">
               <div className="mb-4 flex items-start justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <CreditCard className="h-5 w-5 text-[#4f6faa] dark:text-zinc-300" />
+                  <CreditCard className="h-5 w-5 text-ink-soft" />
                   <div>
-                    <h3 className="text-xl font-semibold text-[#1f2f4b] dark:text-zinc-100">Premium lidmaatschap</h3>
-                    <p className="text-sm text-muted-foreground">Je account heeft toegang tot alle Premium content.</p>
+                    <h3 className="font-display text-xl font-normal tracking-[-0.015em] text-ink">Premium lidmaatschap</h3>
+                    <p className="text-sm text-ink-muted">Je account heeft toegang tot alle Premium content.</p>
                   </div>
                 </div>
 
-                <Badge variant="secondary" className="bg-[#f3f6fb] text-[#5f7090] dark:bg-zinc-800 dark:text-zinc-300">
+                <Badge variant="secondary" className="bg-paper-sunken text-ink-soft">
                   {isLifetimePremium ? 'Levenslang' : subscriptionStatusText}
                 </Badge>
               </div>
 
               {isMonthlyPremium ? (
                 <>
-                  <div className="mb-5 space-y-2 text-sm text-muted-foreground">
+                  <div className="mb-5 space-y-2 text-sm text-ink-muted">
                     {subscriptionCancelAtPeriodEnd ? (
                       <p>
                         Je abonnement is opgezegd en blijft actief tot{' '}
-                        <span className="font-semibold text-[#24395f] dark:text-zinc-100">{subscriptionEndDateLabel || 'einde van de huidige periode'}</span>.
+                        <span className="font-semibold text-ink">{subscriptionEndDateLabel || 'einde van de huidige periode'}</span>.
                       </p>
                     ) : (
                       <p>
@@ -456,7 +434,7 @@ export default async function ProfilePage() {
                           ? (
                             <>
                               Je Premium loopt door en verlengt op{' '}
-                              <span className="font-semibold text-[#24395f] dark:text-zinc-100">{subscriptionEndDateLabel}</span>.
+                              <span className="font-semibold text-ink">{subscriptionEndDateLabel}</span>.
                             </>
                           )
                           : 'Je maandabonnement is actief.'}
@@ -466,13 +444,13 @@ export default async function ProfilePage() {
                   </div>
 
                   <form action="/api/stripe/portal" method="POST">
-                    <Button type="submit" className="h-10 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
+                    <Button type="submit" className="h-10 rounded-md bg-ink px-5 text-ink-inverted hover:bg-ink-soft">
                       Open abonnementsportaal (Stripe)
                     </Button>
                   </form>
                 </>
               ) : (
-                <div className="space-y-2 text-sm text-muted-foreground">
+                <div className="space-y-2 text-sm text-ink-muted">
                   <p>Je hebt levenslange Premium toegang. Er is geen terugkerend abonnement om stop te zetten.</p>
                   <p>Deze aankoop blijft permanent gekoppeld aan je account.</p>
                 </div>
@@ -480,12 +458,12 @@ export default async function ProfilePage() {
           </section>
         )}
 
-        <section className="mt-8 border-t border-[#d9e3f1] pt-6 dark:border-zinc-700">
-          <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+        <section className="mt-8 border-t border-rule pt-6">
+          <Card className="border-rule py-0">
             <CardContent className="p-5">
-              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Dagtekst</p>
-              <p className="mt-1 text-sm font-semibold text-[#24395f] dark:text-zinc-100">{dailyVerse.reference}</p>
-              <p className="mt-2 text-[15px] leading-relaxed text-[#30466e] dark:text-zinc-300">{dailyVerse.text}</p>
+              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Dagtekst</p>
+              <p className="mt-1 text-sm font-semibold text-ink">{dailyVerse.reference}</p>
+              <p className="mt-2 text-[15px] leading-relaxed text-ink">{dailyVerse.text}</p>
             </CardContent>
           </Card>
         </section>

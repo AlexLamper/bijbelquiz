@@ -162,7 +162,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
       const response = await fetch('/api/quiz/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type':'application/json' },
         body: JSON.stringify({
           quizId: quiz._id,
           score,
@@ -313,12 +313,12 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
       : [];
 
     return (
-      <div className="mx-auto w-full max-w-340 px-4 pb-12 pt-6 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-3xl px-5 pb-16 pt-10 sm:px-8">
         {!isPremium && showPremiumReviewUpsell && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4">
-            <div className="w-full max-w-md rounded-xl border border-[#d7e1ee] bg-white p-5 shadow-xl dark:border-zinc-700 dark:bg-zinc-900">
-              <h2 className="text-base font-semibold text-[#1f2f4b] dark:text-zinc-100">Ontgrendel je volledige quizanalyse</h2>
-              <p className="mt-2 text-sm text-[#4e5f79] dark:text-zinc-300">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/45 px-4">
+            <div className="w-full max-w-md rounded-lg border border-rule bg-paper-raised p-5">
+              <h2 className="text-base font-normal text-ink">Ontgrendel je volledige quizanalyse</h2>
+              <p className="mt-2 text-sm text-ink-soft">
                 Wil je een gedetailleerd overzicht van je score, precies zien welke antwoorden fout waren, de uitleg per vraag en
                 bijbelverwijzingen? Upgrade dan naar Premium.
               </p>
@@ -326,7 +326,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 <Button
                   type="button"
                   variant="outline"
-                  className="h-9 rounded-md border-[#d7e1ee] bg-white px-3 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                  className="h-9 rounded-md border-rule bg-paper-raised px-3 text-ink hover:bg-paper-sunken"
                   onClick={() => setShowPremiumReviewUpsell(false)}
                 >
                   Later bekijken
@@ -334,7 +334,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 <Button
                   asChild
                   type="button"
-                  className="h-9 rounded-md bg-[#6f8ed4] px-3 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
+                  className="h-9 rounded-md bg-ink px-3 text-ink-inverted hover:bg-ink-soft"
                 >
                   <Link href="/premium">Upgrade naar Premium</Link>
                 </Button>
@@ -343,28 +343,28 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
           </div>
         )}
 
-        <Card className="border-[#d8e1ee] py-0 shadow-[0_14px_28px_-24px_rgba(22,42,74,0.55)] dark:border-zinc-700 dark:bg-zinc-900/80">
+        <Card className="border-rule py-0">
           <CardContent className="p-6 lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[#607597]">Resultaat</p>
-            <h1 className="mt-2 text-3xl font-semibold text-[#1f2f4b] dark:text-zinc-100 md:text-4xl">Quiz afgerond</h1>
+            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">Resultaat</p>
+            <h1 className="mt-2 font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">Quiz afgerond</h1>
 
             <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
-              <div className="border border-[#dce5f1] bg-[#f8fafe] p-5 dark:border-zinc-700 dark:bg-zinc-800/60">
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Jouw score</p>
+              <div className="border border-rule bg-paper-sunken p-5">
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Jouw score</p>
                 <div className="mt-2 flex items-end gap-2">
-                  <p className="text-5xl font-bold text-[#1f2f4b] dark:text-zinc-100">{score}</p>
-                  <p className="pb-1 text-2xl font-semibold text-[#5f7190] dark:text-zinc-300">/ {quiz.questions.length}</p>
+                  <p className="text-5xl font-semibold text-ink">{score}</p>
+                  <p className="pb-1 text-2xl font-semibold text-ink-soft">/ {quiz.questions.length}</p>
                 </div>
                 <p className="mt-2 text-sm text-muted-foreground">{percentage}% correct</p>
 
-                <div className="mt-4 inline-flex items-center gap-2 bg-[#e9eff8] px-3 py-1 text-sm font-medium text-[#355384] dark:bg-zinc-700 dark:text-zinc-200">
+                <div className="mt-4 inline-flex items-center gap-2 bg-paper-sunken px-3 py-1 text-sm font-medium text-ink">
                   <Award className="h-4 w-4" />
                   + {resolvedXp} XP verdiend
                 </div>
               </div>
 
-              <div className="border border-[#dce5f1] bg-white p-5 dark:border-zinc-700 dark:bg-zinc-900/70">
-                <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">Volgende stap</p>
+              <div className="border border-rule bg-paper-raised p-5">
+                <p className="text-sm font-semibold text-ink">Volgende stap</p>
                 <p className="mt-2 text-sm text-muted-foreground">
                   {percentage >= 90
                     ? 'Sterk resultaat. Kies nu een moeilijkere quiz of een nieuwe categorie.'
@@ -374,23 +374,23 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 </p>
 
                 {!isPremium && (
-                  <div className="mt-4 border border-[#d7e1ee] bg-[#f8fafe] p-3 dark:border-zinc-700 dark:bg-zinc-800/60">
-                    <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">Premium analyse</p>
+                  <div className="mt-4 border border-rule bg-paper-sunken p-3">
+                    <p className="text-sm font-semibold text-ink">Premium analyse</p>
                     <p className="mt-1 text-xs text-muted-foreground">
                       Ontgrendel uitgebreide uitleg en meer voortgangsinzichten.
                     </p>
-                    <Button asChild className="mt-3 h-9 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
+                    <Button asChild className="mt-3 h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
                       <Link href="/premium">Bekijk Premium</Link>
                     </Button>
                   </div>
                 )}
-                <div className="mt-4 border-t border-[#e3ebf7] pt-3 dark:border-zinc-700">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-400">Meer ontdekken</p>
+                <div className="mt-4 border-t border-rule pt-3">
+                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Meer ontdekken</p>
                   <a
                     href={studyTopicLink.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 block text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]"
+                    className="mt-2 block text-sm font-medium text-ink hover:text-ink"
                   >
                     Verdiep je verder in {studyTopicLink.label} op Bijbel Studie
                   </a>
@@ -398,7 +398,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     href="https://www.bijbelapi.com/docs"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-1 block text-xs text-muted-foreground hover:text-foreground dark:hover:text-zinc-100"
+                    className="mt-1 block text-xs text-muted-foreground hover:text-foreground"
                   >
                     Mogelijk gemaakt met BijbelAPI
                   </a>
@@ -407,7 +407,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
             </div>
 
             {isPremium && premiumReviewQuestions.length > 0 && (
-              <div className="mt-8 border-t border-[#e3ebf7] pt-6 dark:border-zinc-700">
+              <div className="mt-8 border-t border-rule pt-6">
                 <QuizPremiumReviewSection
                   questions={premiumReviewQuestions}
                   score={score}
@@ -422,7 +422,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 type="button"
                 variant="outline"
                 onClick={() => window.location.reload()}
-                className="h-10 rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken"
               >
                 <RotateCcw className="mr-2 h-4 w-4" />
                 Opnieuw spelen
@@ -432,7 +432,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 type="button"
                 onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')}
                 disabled={isSaving}
-                className="h-10 rounded-md bg-[#6f8ed4] dark:bg-zinc-500 px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400"
+                className="h-10 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft"
               >
                 {isSaving ? 'Opslaan...' : isLoggedIn ? 'Naar dashboard' : 'Naar home'}
               </Button>
@@ -443,204 +443,225 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     );
   }
 
+  const answerLetters = ['A', 'B', 'C', 'D', 'E', 'F'];
+
   return (
-    <div className="w-full overflow-x-hidden px-4 pb-4 pt-4 sm:px-6 lg:px-8">
-      <div className="grid min-h-[calc(100dvh-7rem)] gap-6 xl:grid-cols-[minmax(340px,0.46fr)_minmax(0,0.94fr)]">
-        <Card className="border-[#d8e1ee] bg-[#f8fafe] py-0 shadow-sm xl:sticky xl:top-24 xl:h-[calc(100dvh-7rem)] dark:border-zinc-700 dark:bg-zinc-900/70">
-          <CardContent className="flex h-full flex-col overflow-y-auto p-5 lg:p-6">
-            <div className="mb-4 flex items-center justify-between gap-3">
-              <Button
-                variant="ghost"
-                className="h-8 px-0 text-[#355384] hover:bg-transparent hover:text-[#243a5e] dark:text-zinc-300 dark:hover:text-zinc-200"
-                onClick={() => openLeaveDialog('/quizzes')}
-              >
-                <ArrowLeft className="mr-1.5 h-4 w-4" />
-                Quizzen
-              </Button>
+    /* On a laptop the whole player is one viewport-height column: the question
+       area flexes, so the page itself never scrolls. The subtraction is the
+       sticky header's 4rem height plus its 1px bottom border. */
+    <div className="flex min-h-screen flex-col bg-paper lg:h-[calc(100dvh-4rem-1px)] lg:max-h-[calc(100dvh-4rem-1px)] lg:min-h-0 lg:overflow-hidden">
+      {/* Quiz bar: progress, place in the quiz, and the two controls. */}
+      <div className="sticky top-16 z-30 shrink-0 border-b border-rule bg-paper/90 backdrop-blur-sm supports-backdrop-filter:bg-paper/75 lg:static">
+        <div className="h-px w-full bg-rule">
+          <div
+            className="h-px bg-lapis transition-[width] duration-500"
+            style={{ width: `${Math.max(2, progressPercentage)}%` }}
+          />
+        </div>
 
-              <div className="flex items-center gap-1.5">
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  onClick={toggleFullscreen}
-                  className="h-8 w-8 border-[#d7e1ee] bg-white text-[#355384] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-                  aria-label="Volledig scherm"
-                >
-                  <Maximize className="h-4 w-4" />
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  onClick={() => setIsSettingsOpen(true)}
-                  className="h-8 w-8 border-[#d7e1ee] bg-white text-[#355384] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-                  aria-label="Instellingen"
-                >
-                  <Settings className="h-4 w-4" />
-                </Button>
-              </div>
-            </div>
+        <div className="mx-auto flex h-14 w-full max-w-3xl items-center gap-4 px-5 sm:px-8">
+          <button
+            type="button"
+            onClick={() => openLeaveDialog('/quizzen')}
+            className="group inline-flex shrink-0 items-center gap-2 text-sm font-medium text-ink-muted transition-colors hover:text-ink"
+          >
+            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
+            <span className="hidden sm:inline">Quizzen</span>
+          </button>
 
-            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{quiz.title}</p>
-            <h1
-              className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 wrap-anywhere text-[#1f2f4b] dark:text-zinc-100 ${questionTextSizeClass} font-semibold leading-[1.15]`}
+          <p className="min-w-0 flex-1 truncate text-center text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+            {quiz.title}
+          </p>
+
+          <div className="flex shrink-0 items-center gap-1">
+            <button
+              type="button"
+              onClick={toggleFullscreen}
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md text-ink-muted transition-colors hover:bg-paper-sunken hover:text-ink"
+              aria-label="Volledig scherm"
             >
-              {currentQuestion.text}
-            </h1>
+              <Maximize className="h-4 w-4" />
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsSettingsOpen(true)}
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md text-ink-muted transition-colors hover:bg-paper-sunken hover:text-ink"
+              aria-label="Instellingen"
+            >
+              <Settings className="h-4 w-4" />
+            </button>
+          </div>
+        </div>
+      </div>
 
-            <div className="mt-auto flex flex-wrap gap-2 pt-6">
-              <div className="min-w-0 flex-1 border border-[#d7e1ee] bg-white px-2 py-2 text-[11px] text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
-                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Type:</span>{' '}
-                <span className="inline-block max-w-full truncate align-bottom">Normale quiz</span>
-              </div>
-              <div className="min-w-0 flex-1 border border-[#d7e1ee] bg-white px-2 py-2 text-[11px] text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
-                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Categorie:</span>{' '}
-                <span className="inline-block max-w-full truncate align-bottom">{categoryLabel}</span>
-              </div>
-              <div className="min-w-0 flex-1 border border-[#d7e1ee] bg-white px-2 py-2 text-[11px] text-[#4e5f79] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300">
-                <span className="font-semibold text-[#24395f] dark:text-zinc-100">Niveau:</span>{' '}
-                <span className="inline-block max-w-full truncate align-bottom">{difficultyLabel}</span>
-              </div>
-            </div>
+      <div className="mx-auto w-full max-w-3xl flex-1 px-5 pb-10 pt-8 sm:px-8 lg:min-h-0 lg:overflow-y-auto lg:pt-10">
+        {/* Where you are */}
+        <div className="flex items-center justify-between gap-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+          <span className="tabular-nums">
+            Vraag {currentIndex + 1} <span className="text-rule-strong">/</span> {quiz.questions.length}
+          </span>
+          <span className="flex items-center gap-3">
+            <span className="hidden sm:inline">{categoryLabel}</span>
+            <span aria-hidden className="hidden h-3 w-px bg-rule sm:block" />
+            <span>{difficultyLabel}</span>
+          </span>
+        </div>
 
-            <div className="mt-4 h-1.5 w-full overflow-hidden bg-[#e2eaf5] dark:bg-zinc-700">
-              <div className="h-full bg-[#6f8ed4] transition-all dark:bg-zinc-400" style={{ width: `${Math.max(2, progressPercentage)}%` }} />
-            </div>
-            <div className="mt-2 flex items-center justify-between text-xs text-muted-foreground">
-              <span>Vraag {currentIndex + 1} van {quiz.questions.length}</span>
-              <span>Score: {score}</span>
-            </div>
+        {/* The question */}
+        <h1
+          className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-4 wrap-anywhere ${questionTextSizeClass} font-normal leading-[1.2] tracking-[-0.02em] text-ink`}
+        >
+          {currentQuestion.text}
+        </h1>
 
-            <div className="mt-5 border-t border-[#dce5f1] pt-4 text-xs text-muted-foreground dark:border-zinc-700">
-              Gebruik instellingen om tekstgrootte en uitlegweergave aan te passen.
-            </div>
-          </CardContent>
-        </Card>
+        {/* The answers */}
+        <div className="mt-6 space-y-2.5">
+          {currentQuestion.answers.map((answer, index) => {
+            const isSelected = selectedAnswer === index;
+            const isCorrect = answer.isCorrect;
 
-        <Card className="border-[#d8e1ee] py-0 shadow-[0_14px_28px_-24px_rgba(22,42,74,0.55)] xl:h-[calc(100dvh-7rem)] dark:border-zinc-700 dark:bg-zinc-900/80">
-          <CardContent className="flex h-full flex-col overflow-y-auto p-5 lg:p-6">
-            <div className="flex-1">
-              <div className="space-y-3">
-                {currentQuestion.answers.map((answer, index) => {
-                  const isSelected = selectedAnswer === index;
-                  const isCorrect = answer.isCorrect;
+            let rowClass = 'border-rule bg-paper-raised hover:border-ink hover:bg-paper-sunken';
+            let markerClass = 'border-rule-strong text-ink-muted group-hover:border-ink group-hover:text-ink';
 
-                  let itemClass = 'border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800';
-                  if (hasAnswered) {
-                    if (isCorrect) {
-                      itemClass = 'border-[#16a34a] bg-[#dcfce7] text-[#14532d] dark:border-[#34d399] dark:bg-[#064e3b] dark:text-[#bbf7d0]';
-                    } else if (isSelected) {
-                      itemClass = 'border-[#dc2626] bg-[#fee2e2] text-[#7f1d1d] dark:border-[#fb7185] dark:bg-[#5b1020] dark:text-[#fecdd3]';
-                    } else {
-                      itemClass = 'border-[#e5ebf4] bg-[#fafcff] text-[#90a0b9] dark:border-zinc-700 dark:bg-zinc-900/60 dark:text-zinc-400';
-                    }
-                  }
+            if (hasAnswered) {
+              if (isCorrect) {
+                rowClass = 'border-positive/45 bg-positive-tint';
+                markerClass = 'border-positive bg-positive text-ink-inverted';
+              } else if (isSelected) {
+                rowClass = 'border-vermilion/45 bg-vermilion-tint';
+                markerClass = 'border-vermilion bg-vermilion text-ink-inverted';
+              } else {
+                rowClass = 'border-rule bg-paper-raised opacity-55';
+                markerClass = 'border-rule-strong text-ink-muted';
+              }
+            }
 
-                  return (
-                    <Button
-                      key={answer._id || index}
-                      type="button"
-                      variant="outline"
-                      disabled={hasAnswered}
-                      onClick={() => handleAnswer(index)}
-                      className={`h-auto w-full justify-start rounded-md border px-4 py-3 text-left text-sm whitespace-normal ${itemClass}`}
-                    >
-                      <span className="mr-3 mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center border border-current/35">
-                        {hasAnswered && isCorrect && <CheckCircle2 className="h-3.5 w-3.5" />}
-                        {hasAnswered && !isCorrect && isSelected && <X className="h-3.5 w-3.5" />}
-                      </span>
-                      <span className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} min-w-0 wrap-anywhere ${textSize === 'large' ? 'text-base' : 'text-sm'} leading-relaxed`}>
-                        {answer.text}
-                      </span>
-                    </Button>
-                  );
-                })}
-              </div>
-
-              {hasAnswered && showExplanation && (
-                <div className="mt-5 border border-[#d7e1ee] bg-[#f8fafe] p-4 dark:border-zinc-700 dark:bg-zinc-800/60">
-                  <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#355384]">
-                    <BookOpen className="h-4 w-4" />
-                    Uitleg
-                  </p>
-
-                  {isPremium ? (
-                    <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-2 wrap-anywhere text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
-                      {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
-                    </p>
-                  ) : currentQuestion.explanationPreview ? (
-                    <div className="mt-2">
-                      <div className="relative overflow-hidden">
-                        <p className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-sm leading-relaxed text-[#30466e] dark:text-zinc-200`}>
-                          {currentQuestion.explanationPreview}
-                        </p>
-                        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#f8fafe] to-transparent dark:from-zinc-800/60" />
-                      </div>
-                      <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
-                        <p className="text-xs font-medium text-[#6f8ed4] dark:text-zinc-400">Volledige uitleg zichtbaar met Premium</p>
-                        <Button asChild className="h-7 rounded px-3 text-xs bg-[#6f8ed4] dark:bg-zinc-500 text-white hover:bg-[#5f81cc] dark:hover:bg-zinc-400">
-                          <Link href="/premium" data-skip-leave-guard>Ontgrendel Premium</Link>
-                        </Button>
-                      </div>
-                    </div>
-                  ) : null}
-
-                  {visibleBibleReference && (
-                    <BibleVerseDisplay reference={visibleBibleReference} />
+            return (
+              <button
+                key={answer._id || index}
+                type="button"
+                disabled={hasAnswered}
+                onClick={() => handleAnswer(index)}
+                className={`group flex w-full items-start gap-4 rounded-md border px-4 py-3.5 text-left transition-colors disabled:cursor-default ${rowClass}`}
+              >
+                <span
+                  className={`mt-px inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-sm border text-[11px] font-medium transition-colors ${markerClass}`}
+                >
+                  {hasAnswered && isCorrect ? (
+                    <CheckCircle2 className="h-3.5 w-3.5" />
+                  ) : hasAnswered && isSelected ? (
+                    <X className="h-3.5 w-3.5" />
+                  ) : (
+                    answerLetters[index] || index + 1
                   )}
-                </div>
-              )}
-            </div>
+                </span>
 
-            {(currentIndex > 0 || hasAnswered) && (
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex-1">
-                  {currentIndex > 0 && (
-                    <Button
-                      type="button"
-                      variant="outline"
-                      onClick={handlePrevious}
-                      className="h-10 w-full rounded-md border-[#d7e1ee] bg-white px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-                    >
-                      <ArrowLeft className="mr-2 h-4 w-4" />
-                      Vorige vraag
-                    </Button>
-                  )}
-                </div>
+                <span
+                  className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} min-w-0 flex-1 wrap-anywhere ${textSize === 'large' ? 'text-[17px]' : 'text-[15px]'} leading-relaxed text-ink`}
+                >
+                  {answer.text}
+                </span>
+              </button>
+            );
+          })}
+        </div>
 
-                {hasAnswered && (
-                  <Button
-                    type="button"
-                    onClick={handleNext}
-                    className="h-10 flex-1 rounded-md bg-[#6f8ed4] px-5 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
+        {/* Explanation */}
+        {hasAnswered && showExplanation && (
+          <div className="mt-6 rounded-lg border border-rule bg-paper-raised p-5">
+            <p className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+              <BookOpen className="h-3.5 w-3.5 text-lapis" />
+              Uitleg
+            </p>
+
+            {isPremium ? (
+              <p
+                className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-3 wrap-anywhere text-[15px] leading-relaxed text-ink-soft`}
+              >
+                {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
+              </p>
+            ) : currentQuestion.explanationPreview ? (
+              <div className="mt-3">
+                <div className="relative overflow-hidden">
+                  <p
+                    className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-[15px] leading-relaxed text-ink-soft`}
                   >
-                    {currentIndex < quiz.questions.length - 1 ? 'Volgende vraag' : 'Quiz afronden'}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                )}
+                    {currentQuestion.explanationPreview}
+                  </p>
+                  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-paper-raised to-transparent" />
+                </div>
+
+                <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-rule pt-4">
+                  <p className="text-xs text-ink-muted">Volledige uitleg zichtbaar met Premium</p>
+                  <Link
+                    href="/premium"
+                    data-skip-leave-guard
+                    className="inline-flex h-9 items-center rounded-md border border-lapis/45 px-3 text-xs font-medium text-lapis transition-colors hover:bg-lapis-tint"
+                  >
+                    Ontgrendel Premium
+                  </Link>
+                </div>
               </div>
+            ) : null}
+
+            {visibleBibleReference && <BibleVerseDisplay reference={visibleBibleReference} />}
+          </div>
+        )}
+      </div>
+
+      {/* Navigation stays within reach on every screen size. */}
+      <div className="sticky bottom-0 z-30 shrink-0 border-t border-rule bg-paper/95 backdrop-blur-sm">
+        <div className="mx-auto flex h-17 w-full max-w-3xl items-center gap-3 px-5 sm:px-8">
+          <div className="flex min-w-0 flex-1 items-center gap-4">
+            {currentIndex > 0 ? (
+              <button
+                type="button"
+                onClick={handlePrevious}
+                className="group inline-flex items-center gap-2 text-sm font-medium text-ink-muted transition-colors hover:text-ink"
+              >
+                <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
+                Vorige
+              </button>
+            ) : (
+              <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                Score <span className="tabular-nums text-ink">{score}</span>
+              </span>
             )}
-          </CardContent>
-        </Card>
+          </div>
+
+          {hasAnswered ? (
+            <button
+              type="button"
+              onClick={handleNext}
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-ink px-6 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+            >
+              {currentIndex < quiz.questions.length - 1 ? 'Volgende vraag' : 'Quiz afronden'}
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          ) : (
+            <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+              Kies een antwoord
+            </span>
+          )}
+        </div>
       </div>
 
       {isSettingsOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/45 px-4"
           onClick={() => setIsSettingsOpen(false)}
         >
           <div
-            className="w-full max-w-md rounded-xl border border-[#d7e1ee] bg-white p-5 shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
+            className="w-full max-w-md rounded-lg border border-rule bg-paper-raised p-5"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="mb-5 flex items-center justify-between">
-              <h2 className="text-base font-semibold text-[#1f2f4b] dark:text-zinc-100">Instellingen</h2>
+              <h2 className="text-base font-normal text-ink">Instellingen</h2>
               <Button
                 type="button"
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 text-[#30466e] dark:text-zinc-200"
+                className="h-8 w-8 text-ink"
                 onClick={() => setIsSettingsOpen(false)}
                 aria-label="Instellingen sluiten"
               >
@@ -650,12 +671,12 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
             <div className="space-y-4">
               <div className="hidden items-center justify-between gap-3 sm:flex">
-                <span className="text-sm text-[#30466e] dark:text-zinc-200">Tekstgrootte</span>
+                <span className="text-sm text-ink">Tekstgrootte</span>
                 <div className="flex items-center gap-1">
                   <Button
                     type="button"
                     variant="outline"
-                    className={`h-8 rounded-md px-2 text-xs ${textSize === 'normal' ? 'bg-[#edf2fa] text-[#24395f] dark:bg-zinc-800 dark:text-zinc-100' : 'bg-white dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200'}`}
+                    className={`h-8 rounded-md px-2 text-xs ${textSize === 'normal' ? 'bg-paper-sunken text-ink' : 'bg-paper-raised   '}`}
                     onClick={() => setTextSize('normal')}
                   >
                     Normaal
@@ -663,7 +684,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   <Button
                     type="button"
                     variant="outline"
-                    className={`h-8 rounded-md px-2 text-xs ${textSize === 'large' ? 'bg-[#edf2fa] text-[#24395f] dark:bg-zinc-800 dark:text-zinc-100' : 'bg-white dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200'}`}
+                    className={`h-8 rounded-md px-2 text-xs ${textSize === 'large' ? 'bg-paper-sunken text-ink' : 'bg-paper-raised   '}`}
                     onClick={() => setTextSize('large')}
                   >
                     Groot
@@ -672,11 +693,11 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
               </div>
 
               <div className="flex items-center justify-between gap-3">
-                <span className="text-sm text-[#30466e] dark:text-zinc-200">Lettertype</span>
+                <span className="text-sm text-ink">Lettertype</span>
                 <Button
                   type="button"
                   variant="outline"
-                  className="h-8 rounded-md px-2 text-xs dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200"
+                  className="h-8 rounded-md px-2 text-xs"
                   onClick={() => setFontFamily((value) => (value === 'serif' ? 'sans' : 'serif'))}
                 >
                   {fontFamily === 'serif' ? 'Serif' : 'Sans'}
@@ -685,9 +706,9 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-sm text-[#30466e] dark:text-zinc-200">Toon uitleg</p>
+                  <p className="text-sm text-ink">Toon uitleg</p>
                   {!isPremium && (
-                    <p className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-[#6f8ed4]">
+                    <p className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-soft">
                       <Lock className="h-3 w-3" />
                       Premium
                     </p>
@@ -696,7 +717,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 <Button
                   type="button"
                   variant="outline"
-                  className={`h-8 rounded-md px-2 text-xs ${showExplanation ? 'bg-[#edf2fa] text-[#24395f] dark:bg-zinc-800 dark:text-zinc-100' : 'bg-white dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200'}`}
+                  className={`h-8 rounded-md px-2 text-xs ${showExplanation ? 'bg-paper-sunken text-ink' : 'bg-paper-raised   '}`}
                   onClick={() => {
                     if (isPremium) {
                       setShowExplanation((value) => !value);
@@ -714,7 +735,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
               <Button
                 type="button"
                 variant="outline"
-                className="h-9 rounded-md border-[#d7e1ee] bg-white px-3 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                className="h-9 rounded-md border-rule bg-paper-raised px-3 text-ink hover:bg-paper-sunken"
                 onClick={() => setIsSettingsOpen(false)}
               >
                 Sluiten
@@ -726,22 +747,22 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
       {isLeaveDialogOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/45 px-4"
           onClick={() => {
             setIsLeaveDialogOpen(false);
             setPendingLeaveHref(null);
           }}
         >
           <div
-            className="w-full max-w-md rounded-xl border border-[#d7e1ee] bg-white p-5 shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
+            className="w-full max-w-md rounded-lg border border-rule bg-paper-raised p-5"
             onClick={(event) => event.stopPropagation()}
           >
-            <h2 className="text-base font-semibold text-[#1f2f4b] dark:text-zinc-100">Quiz verlaten?</h2>
-            <p className="mt-2 text-sm text-[#4e5f79] dark:text-zinc-300">
+            <h2 className="text-base font-normal text-ink">Quiz verlaten?</h2>
+            <p className="mt-2 text-sm text-ink-soft">
               Weet je zeker dat je wilt stoppen? Je kunt tot{' '}
-              <span className="font-semibold text-[#24395f] dark:text-zinc-100">{maxPossibleXp} XP</span> mislopen.
+              <span className="font-semibold text-ink">{maxPossibleXp} XP</span> mislopen.
             </p>
-            <p className="mt-2 text-sm text-[#4e5f79] dark:text-zinc-300">
+            <p className="mt-2 text-sm text-ink-soft">
               Als je nu weggaat, krijg je geen XP en wordt je voortgang niet opgeslagen.
             </p>
 
@@ -749,7 +770,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
               <Button
                 type="button"
                 variant="outline"
-                className="h-9 rounded-md border-[#d7e1ee] bg-white px-3 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                className="h-9 rounded-md border-rule bg-paper-raised px-3 text-ink hover:bg-paper-sunken"
                 onClick={() => {
                   setIsLeaveDialogOpen(false);
                   setPendingLeaveHref(null);
@@ -759,7 +780,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
               </Button>
               <Button
                 type="button"
-                className="h-9 rounded-md bg-[#6f8ed4] px-3 text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]"
+                className="h-9 rounded-md bg-ink px-3 text-ink-inverted hover:bg-ink-soft"
                 onClick={navigateToPendingHref}
               >
                 Quiz verlaten

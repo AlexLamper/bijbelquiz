@@ -87,6 +87,21 @@ export default async function DashboardPage() {
   const levelInfo = getLevelInfo(xp);
   const recentProgress = JSON.parse(JSON.stringify(progressDocs.slice(0, 5)));
 
+  // Resolved server-side in the reader's timezone so greeting and date stay
+  // stable between server render and hydration (the server itself runs in UTC).
+  const now = new Date();
+  const localHour = Number(
+    new Intl.DateTimeFormat('nl-NL', { hour: 'numeric', hour12: false, timeZone: 'Europe/Amsterdam' })
+      .format(now)
+  );
+  const greeting = localHour < 12 ? 'Goedemorgen' : localHour < 18 ? 'Goedemiddag' : 'Goedenavond';
+  const dateLabel = new Intl.DateTimeFormat('nl-NL', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    timeZone: 'Europe/Amsterdam',
+  }).format(now);
+
   return (
     <DashboardHomeClient
       quizzes={JSON.parse(JSON.stringify(quizzesWithProgress))}
@@ -98,6 +113,8 @@ export default async function DashboardPage() {
       totalQuizzesDone={user?.quizzesPlayed || 0}
       userName={session?.user?.name?.split(' ')[0] || 'Gast'}
       isPremium={isPremium}
+      greeting={greeting}
+      dateLabel={dateLabel}
     />
   );
 }

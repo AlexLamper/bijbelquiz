@@ -32,53 +32,53 @@ export default function QuizPremiumReviewSection({
   return (
     <div className="space-y-5">
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-        <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+        <Card className="border-rule py-0">
           <CardContent className="p-4">
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">Niveau</p>
-            <p className="mt-1 text-base font-semibold text-[#24395f] dark:text-zinc-100">{performanceLabel}</p>
+            <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Niveau</p>
+            <p className="mt-1 text-base font-semibold text-ink">{performanceLabel}</p>
           </CardContent>
         </Card>
-        <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+        <Card className="border-rule py-0">
           <CardContent className="p-4">
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">Beantwoord</p>
-            <p className="mt-1 text-base font-semibold text-[#24395f] dark:text-zinc-100">
+            <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Beantwoord</p>
+            <p className="mt-1 text-base font-semibold text-ink">
               {answeredCount}/{totalQuestions}
             </p>
           </CardContent>
         </Card>
-        <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+        <Card className="border-rule py-0">
           <CardContent className="p-4">
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">Fouten</p>
-            <p className="mt-1 text-base font-semibold text-[#24395f] dark:text-zinc-100">{incorrectCount}</p>
+            <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Fouten</p>
+            <p className="mt-1 text-base font-semibold text-ink">{incorrectCount}</p>
           </CardContent>
         </Card>
-        <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+        <Card className="border-rule py-0">
           <CardContent className="p-4">
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">XP per vraag</p>
-            <p className="mt-1 text-base font-semibold text-[#24395f] dark:text-zinc-100">{xpEfficiency}</p>
+            <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">XP per vraag</p>
+            <p className="mt-1 text-base font-semibold text-ink">{xpEfficiency}</p>
           </CardContent>
         </Card>
       </div>
 
-      <Card className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+      <Card className="border-rule py-0">
         <CardContent className="p-5">
-          <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">Premium analyse</p>
+          <p className="text-sm font-semibold text-ink">Premium analyse</p>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{recommendationText}</p>
           {unansweredCount > 0 && (
             <p className="mt-2 text-sm text-muted-foreground">
-              Je hebt <span className="font-semibold text-[#24395f] dark:text-zinc-100">{unansweredCount}</span> vraag
+              Je hebt <span className="font-semibold text-ink">{unansweredCount}</span> vraag
               {unansweredCount === 1 ? '' : 'en'} onbeantwoord gelaten. Sneller antwoorden kan direct extra punten
               opleveren.
             </p>
           )}
           {consistentTopicRefs.length > 0 && (
             <div className="mt-3">
-              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
                 Focus bijbelgedeelten
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {consistentTopicRefs.map((reference) => (
-                  <Badge key={reference} variant="outline" className="bg-white dark:bg-zinc-900">
+                  <Badge key={reference} variant="outline" className="bg-paper-raised">
                     {reference}
                   </Badge>
                 ))}
@@ -90,48 +90,48 @@ export default function QuizPremiumReviewSection({
 
       <div className="space-y-4">
         {questions.map((question, index) => (
-          <Card key={question.questionId} className="border-[#d8e1ee] py-0 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+          <Card key={question.questionId} className="border-rule py-0">
             <CardContent className="p-5">
               <div className="flex flex-wrap items-start justify-between gap-3">
-                <p className="text-sm font-semibold text-[#24395f] dark:text-zinc-100">Vraag {index + 1}</p>
+                <p className="text-sm font-semibold text-ink">Vraag {index + 1}</p>
                 {question.isCorrect ? (
-                  <Badge className="bg-emerald-600 text-white">
+                  <Badge className="bg-positive text-ink-inverted">
                     <CheckCircle2 className="mr-1 h-3.5 w-3.5" />
                     Goed
                   </Badge>
                 ) : (
-                  <Badge variant="destructive" className="bg-red-600 text-white">
+                  <Badge variant="destructive" className="bg-vermilion text-ink-inverted">
                     <AlertTriangle className="mr-1 h-3.5 w-3.5" />
                     Fout
                   </Badge>
                 )}
               </div>
 
-              <p className="mt-2 text-base text-[#1f2f4b] dark:text-zinc-100">{question.questionText}</p>
+              <p className="mt-2 text-base text-ink">{question.questionText}</p>
 
               <div className="mt-4 grid gap-2 sm:grid-cols-2">
-                <div className="rounded-md border border-[#d7e1ee] bg-white p-3 dark:border-zinc-700 dark:bg-zinc-900">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Jouw antwoord</p>
-                  <p className="mt-1 text-sm text-[#30466e] dark:text-zinc-200">
+                <div className="rounded-md border border-rule bg-paper-raised p-3">
+                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Jouw antwoord</p>
+                  <p className="mt-1 text-sm text-ink">
                     {question.selectedAnswerText ?? 'Geen antwoord'}
                   </p>
                 </div>
-                <div className="rounded-md border border-emerald-200 bg-emerald-50 p-3 dark:border-emerald-900/40 dark:bg-emerald-950/20">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
+                <div className="rounded-md border border-positive/35 bg-positive-tint p-3 dark:border-positive/35 dark:bg-positive/20">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-positive dark:text-positive">
                     Juiste antwoord
                   </p>
-                  <p className="mt-1 text-sm text-emerald-900 dark:text-emerald-200">{question.correctAnswerText}</p>
+                  <p className="mt-1 text-sm text-positive dark:text-positive">{question.correctAnswerText}</p>
                 </div>
               </div>
 
               {(question.explanation || question.bibleReference) && (
-                <div className="mt-4 rounded-md border border-[#d7e1ee] bg-[#f8fafe] p-3 dark:border-zinc-700 dark:bg-zinc-800/60">
-                  <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#355384]">
+                <div className="mt-4 rounded-md border border-rule bg-paper-sunken p-3">
+                  <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink">
                     <BookOpen className="h-4 w-4" />
                     Uitleg
                   </p>
                   {question.explanation ? (
-                    <p className="mt-2 text-sm text-[#30466e] dark:text-zinc-200">{question.explanation}</p>
+                    <p className="mt-2 text-sm text-ink">{question.explanation}</p>
                   ) : null}
                   {question.bibleReference ? (
                     <BibleVerseDisplay reference={question.bibleReference} />

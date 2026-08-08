@@ -52,7 +52,7 @@ function LoginContent() {
         <div className="mx-auto w-full max-w-md">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-2xl lg:text-3xl font-serif font-semibold text-[#1f2f4b] dark:text-foreground mb-2">
+            <h1 className="text-2xl lg:text-3xl font-serif font-normal text-ink dark:text-foreground mb-2">
               Welkom terug
             </h1>
             <p className="text-muted-foreground">
@@ -64,7 +64,7 @@ function LoginContent() {
           <Button 
             variant="outline" 
             onClick={() => signIn('google', { callbackUrl })} 
-            className="w-full relative h-12 rounded-md border-[#d7e1ee] bg-white hover:bg-[#f5f8fd] text-[#30466e] dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800 font-medium group transition-colors mb-6"
+            className="w-full relative h-12 rounded-md border-rule bg-paper-raised hover:bg-paper-sunken text-ink dark:text-ink-inverted font-medium group transition-colors mb-6"
           >
             <svg className="mr-3 h-5 w-5 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
@@ -78,7 +78,7 @@ function LoginContent() {
           {/* Divider */}
           <div className="relative mb-6">
             <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-[#d7e1ee] dark:border-zinc-700" />
+              <span className="w-full border-t border-rule" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
               <span className="bg-background px-3 text-muted-foreground font-medium">Of</span>
@@ -88,21 +88,21 @@ function LoginContent() {
           {/* Email Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && (
-              <div className="rounded-xl bg-destructive/10 p-3 text-sm font-medium text-destructive flex items-center gap-2 border border-destructive/20">
+              <div className="rounded-lg bg-destructive/10 p-3 text-sm font-medium text-destructive flex items-center gap-2 border border-destructive/20">
                 <CheckCircle2 className="h-4 w-4 rotate-45 shrink-0" />
                 {error}
               </div>
             )}
             
             <div className="space-y-2">
-              <label className="text-sm font-medium text-[#1f2f4b] dark:text-foreground" htmlFor="email">
+              <label className="text-sm font-medium text-ink dark:text-foreground" htmlFor="email">
                 E-mailadres
               </label>
               <input
                 id="email"
                 type="email"
                 placeholder="naam@voorbeeld.nl"
-                className="flex h-12 w-full rounded-md border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-zinc-500 dark:text-white focus:bg-white dark:focus:bg-zinc-900 focus:border-[#6f8ed4] dark:focus:border-zinc-500 focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 dark:focus:ring-zinc-500/20 transition-all duration-200"
+                className="flex h-12 w-full rounded-md border border-rule bg-paper-sunken px-4 py-2 text-sm placeholder:text-ink-muted dark:text-ink-inverted focus:bg-paper-raised focus:border-lapis/35 focus:outline-none focus:ring-4 focus:ring-lapis/35 transition-all duration-200"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -110,7 +110,7 @@ function LoginContent() {
             </div>
             
             <div className="space-y-2">
-              <label className="text-sm font-medium text-[#1f2f4b] dark:text-foreground" htmlFor="password">
+              <label className="text-sm font-medium text-ink dark:text-foreground" htmlFor="password">
                 Wachtwoord
               </label>
               <div className="relative">
@@ -118,7 +118,7 @@ function LoginContent() {
                   id="password"
                   type={showPassword ? "text" : "password"}
                   placeholder="••••••••"
-                  className="flex h-12 w-full rounded-md border border-slate-200 dark:border-zinc-700 bg-slate-50 dark:bg-zinc-900/40 px-4 py-2 text-sm placeholder:text-slate-400 dark:placeholder:text-zinc-500 dark:text-white focus:bg-white dark:focus:bg-zinc-900 focus:border-[#6f8ed4] dark:focus:border-zinc-500 focus:outline-none focus:ring-4 focus:ring-[#6f8ed4]/15 dark:focus:ring-zinc-500/20 transition-all duration-200 pr-12"
+                  className="flex h-12 w-full rounded-md border border-rule bg-paper-sunken px-4 py-2 text-sm placeholder:text-ink-muted dark:text-ink-inverted focus:bg-paper-raised focus:border-lapis/35 focus:outline-none focus:ring-4 focus:ring-lapis/35 transition-all duration-200 pr-12"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
@@ -126,7 +126,7 @@ function LoginContent() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-300 focus:outline-none transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-ink-muted hover:text-ink-soft focus:outline-none transition-colors"
                 >
                   {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                 </button>
@@ -135,7 +135,7 @@ function LoginContent() {
             
             <Button 
               type="submit" 
-              className="w-full h-12 text-base font-semibold bg-[#6f8ed4] dark:bg-[#5b7dd9] hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7] text-white rounded-md shadow-lg shadow-[#6f8ed4]/20 transition-colors" 
+              className="w-full h-12 text-base font-semibold bg-lapis hover:bg-ink text-ink-inverted rounded-md shadow-lapis/20 transition-colors" 
               disabled={loading}
             >
               {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
@@ -146,7 +146,7 @@ function LoginContent() {
           {/* Footer */}
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Nog geen account?{' '}
-            <Link href="/registreren" className="text-[#6f8ed4] hover:text-[#5f81cc] font-semibold hover:underline">
+            <Link href="/registreren" className="text-ink-soft hover:text-ink-soft font-semibold hover:underline">
               Registreer nu
             </Link>
           </p>
@@ -165,37 +165,37 @@ function LoginContent() {
         />
         
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-[#1a2942]/60 dark:bg-zinc-950/75" />
+        <div className="absolute inset-0 bg-ink/60" />
         
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col justify-center px-12 xl:px-16">
-          <h2 className="text-3xl xl:text-4xl font-serif font-bold text-white mb-4 leading-tight">
+          <h2 className="text-3xl xl:text-4xl font-serif font-normal text-ink-inverted mb-4 leading-tight">
             Ontdek de rijkdom van{' '}
-            <span className="text-white">Gods Woord</span>
+            <span className="text-ink-inverted">Gods Woord</span>
           </h2>
-          <p className="text-white/80 text-lg mb-8 max-w-md leading-relaxed">
+          <p className="text-ink-inverted/80 text-lg mb-8 max-w-md leading-relaxed">
             Test je kennis, leer nieuwe dingen en groei in je geloof met onze interactieve bijbelquizzen.
           </p>
           
           {/* Features */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                <BookOpen className="h-5 w-5 text-white" />
+              <div className="w-10 h-10 rounded-lg bg-paper-raised/10 flex items-center justify-center">
+                <BookOpen className="h-5 w-5 text-ink-inverted" />
               </div>
-              <span className="text-white/90 font-medium">10+ Quizzen beschikbaar</span>
+              <span className="text-ink-inverted/90 font-medium">10+ Quizzen beschikbaar</span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                <Trophy className="h-5 w-5 text-white" />
+              <div className="w-10 h-10 rounded-lg bg-paper-raised/10 flex items-center justify-center">
+                <Trophy className="h-5 w-5 text-ink-inverted" />
               </div>
-              <span className="text-white/90 font-medium">Verdien punten en badges</span>
+              <span className="text-ink-inverted/90 font-medium">Verdien punten en badges</span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                <Flame className="h-5 w-5 text-white" />
+              <div className="w-10 h-10 rounded-lg bg-paper-raised/10 flex items-center justify-center">
+                <Flame className="h-5 w-5 text-ink-inverted" />
               </div>
-              <span className="text-white/90 font-medium">Houd je streak bij</span>
+              <span className="text-ink-inverted/90 font-medium">Houd je streak bij</span>
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ function LoginContent() {
 
 export default function LoginForm() {
   return (
-    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary dark:text-zinc-300" /></div>}>
+    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>}>
       <LoginContent />
     </Suspense>
   );

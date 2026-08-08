@@ -30,66 +30,66 @@ export default function HelpPage() {
     },
   ]
   const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
+    '@context':'https://schema.org',
+    '@type':'FAQPage',
     mainEntity: faqItems.map((item) => ({
-      '@type': 'Question',
+      '@type':'Question',
       name: item.title,
       acceptedAnswer: {
-        '@type': 'Answer',
+        '@type':'Answer',
         text: item.content,
       },
     })),
   };
 
   return (
-    <div className="-mt-24 min-h-screen bg-transparent pb-12 pt-24 dark:bg-linear-to-b dark:from-zinc-950 dark:via-zinc-900 dark:to-black">
+    <div className="min-h-screen bg-paper pb-12 pt-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <section className="mx-auto max-w-340 px-4 pt-10 sm:px-5 lg:px-4">
-        <div className="rounded-2xl border border-[#d8e1ee] bg-[linear-gradient(140deg,#ffffff,#f3f8ff)] p-6 shadow-sm dark:border-zinc-700 dark:bg-[linear-gradient(140deg,rgba(24,24,27,0.9),rgba(39,39,42,0.85))]">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#e9eff8] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#355384] dark:bg-[#6f8ed4] dark:text-white">
+      <section className="mx-auto max-w-[1180px] px-4 pt-10 sm:px-5 lg:px-4">
+        <div className="rounded-lg border border-rule bg-paper-raised p-6">
+          <div className="inline-flex items-center gap-2 rounded-md bg-paper-sunken px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-ink dark:text-ink-inverted">
             <LifeBuoy className="h-3.5 w-3.5" />
             Support
           </div>
-          <h1 className="mt-4 text-4xl text-[#1f2f4b] dark:text-zinc-100">Helpcentrum</h1>
-          <p className="mt-3 max-w-2xl text-sm text-[#5f7297] dark:text-zinc-300">
+          <h1 className="mt-4 text-4xl text-ink">Helpcentrum</h1>
+          <p className="mt-3 max-w-2xl text-sm text-ink-soft">
             Snel antwoord op veelgestelde vragen over Premium, betalingen en gebruik van BijbelQuiz.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2.5">
-            <Link href="/contact" className="inline-flex items-center gap-2 rounded-md bg-[#6f8ed4] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]">
+            <Link href="/contact" className="inline-flex items-center gap-2 rounded-md bg-ink px-4 py-2 text-sm font-semibold text-ink-inverted hover:bg-ink-soft">
               Contact opnemen
               <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/foutmelding" className="inline-flex items-center gap-2 rounded-md border border-[#d2ddee] bg-white px-4 py-2 text-sm font-semibold text-[#2f466f] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
+            <Link href="/foutmelding" className="inline-flex items-center gap-2 rounded-md border border-rule bg-paper-raised px-4 py-2 text-sm font-semibold text-ink hover:bg-paper-sunken">
               Bug report
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-5 lg:px-4">
         <div className="max-w-3xl">
           <SimpleAccordion items={faqItems} />
         </div>
       </section>
 
-      <section className="mx-auto max-w-340 px-4 pt-8 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-5 lg:px-4">
         <div className="grid gap-3 md:max-w-3xl md:grid-cols-2">
-          <div className="rounded-lg border border-[#d8e1ee] bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900/70">
-            <p className="text-xs font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Meer leren</p>
+          <div className="rounded-lg border border-rule bg-paper-raised p-4">
+            <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Meer leren</p>
             <p className="mt-2 text-sm text-muted-foreground">Verdiep je verder per thema via Bijbel Studie.</p>
-            <Link href="https://www.bijbel-studie.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]">
+            <Link href="https://www.bijbel-studie.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-ink hover:text-ink">
               Naar Bijbel Studie
             </Link>
           </div>
-          <div className="rounded-lg border border-[#d8e1ee] bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900/70">
-            <p className="text-xs font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-300">Platform</p>
+          <div className="rounded-lg border border-rule bg-paper-raised p-4">
+            <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Platform</p>
             <p className="mt-2 text-sm text-muted-foreground">BijbelQuiz wordt ontwikkeld met de Nederlandse BijbelAPI.</p>
-            <Link href="https://www.bijbelapi.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-[#355384] hover:text-[#243a5e] dark:text-[#9db5dc]">
+            <Link href="https://www.bijbelapi.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-ink hover:text-ink">
               Naar BijbelAPI
             </Link>
           </div>

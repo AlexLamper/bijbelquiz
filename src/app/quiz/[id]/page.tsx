@@ -168,7 +168,7 @@ export default async function QuizPage({ params }: PageProps) {
   };
 
   return (
-    <div className="-mt-24 min-h-screen bg-background pt-24">
+    <div className="bg-paper">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

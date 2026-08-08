@@ -85,8 +85,8 @@ export default function PremiumOfferLayout({
     const baseClass = cn(
       'h-12 w-full text-base font-semibold',
       variant === 'primary'
-        ? 'bg-[#6f8ed4] text-white hover:bg-[#5f81cc] dark:bg-[#6f8ed4] dark:hover:bg-[#5f81cc]'
-        : 'dark:bg-[#6f8ed4] dark:text-white dark:hover:bg-[#5f81cc]'
+        ? 'bg-ink text-ink-inverted hover:bg-ink-soft  '
+        : ' dark:text-ink-inverted '
     );
 
     if (isPremium) {
@@ -140,11 +140,11 @@ export default function PremiumOfferLayout({
     <div className="mx-auto max-w-4xl">
       {/* Header */}
       <header className="text-center">
-        <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#6f8ed4]/10 px-4 py-1.5 text-sm font-semibold text-[#355384] dark:bg-[#1a2b47] dark:text-[#9db5dc]">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-md bg-lapis/10 px-4 py-1.5 text-sm font-semibold text-ink">
           <Crown className="h-4 w-4" />
           BijbelQuiz Premium
         </div>
-        <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+        <h1 className="font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">
           Kies jouw Premium plan
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -157,25 +157,25 @@ export default function PremiumOfferLayout({
 
         {/* Monthly plan - highlighted as best value */}
         <div className={cn(
-          'flex flex-col rounded-2xl border-2 border-[#6f8ed4] bg-gradient-to-b from-[#f0f5ff] to-white shadow-md dark:border-[#6f8ed4]/60 dark:from-[#1a2b47]/50 dark:to-zinc-900/70',
+          'flex flex-col rounded-lg border border-lapis/45 bg-paper-raised',
         )}>
           <div className="flex flex-col gap-4 p-6 pb-5">
             <div className="flex items-start justify-between gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#6f8ed4]/15 dark:bg-[#1a2b47]">
-                <Zap className="h-5 w-5 text-[#5f81cc] dark:text-[#9db5dc]" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-lapis/15">
+                <Zap className="h-5 w-5 text-ink-soft" />
               </div>
-              <Badge className="bg-[#6f8ed4] text-white hover:bg-[#6f8ed4] dark:bg-[#6f8ed4]">
+              <Badge className="bg-ink text-ink-inverted hover:bg-ink-soft">
                 Beste keuze
               </Badge>
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold text-foreground">Per maand</h2>
+              <h2 className="font-display text-lg font-normal text-ink">Per maand</h2>
               <p className="mt-0.5 text-sm text-muted-foreground">Flexibel, op elk moment opzegbaar</p>
             </div>
 
             <div className="flex items-end gap-1.5">
-              <span className="text-4xl font-bold tracking-tight text-foreground">{monthlyPriceLabel}</span>
+              <span className="text-4xl font-semibold tracking-tight text-foreground">{monthlyPriceLabel}</span>
               <span className="pb-1 text-muted-foreground">/maand</span>
             </div>
 
@@ -186,11 +186,11 @@ export default function PremiumOfferLayout({
             )}
           </div>
 
-          <div className="border-t border-[#6f8ed4]/30 px-6 py-5 dark:border-[#6f8ed4]/20">
+          <div className="border-t border-lapis/35 px-6 py-5">
             <ul className="space-y-3">
               {[...PREMIUM_TRIGGER_BULLETS, 'Op elk moment opzegbaar'].map((feature) => (
                 <li key={feature} className="flex items-start gap-2.5 text-sm text-foreground">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#6f8ed4] dark:text-[#9db5dc]" />
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
                   <span>{feature}</span>
                 </li>
               ))}
@@ -207,25 +207,25 @@ export default function PremiumOfferLayout({
 
         {/* Lifetime plan */}
         <div className={cn(
-          'flex flex-col rounded-2xl border border-[#d8e1ee] bg-white shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70',
+          'flex flex-col rounded-lg border border-rule bg-paper-raised',
         )}>
           <div className="flex flex-col gap-4 p-6 pb-5">
             <div className="flex items-start justify-between gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#6f8ed4]/10 dark:bg-[#1a2b47]">
-                <Infinity className="h-5 w-5 text-[#5f81cc] dark:text-[#9db5dc]" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-lapis/10">
+                <Infinity className="h-5 w-5 text-ink-soft" />
               </div>
-              <Badge className="bg-[#6f8ed4]/10 text-[#355384] dark:bg-[#1a2b47] dark:text-[#9db5dc] hover:bg-[#6f8ed4]/10">
+              <Badge className="bg-lapis/10 text-ink hover:bg-ink-soft/10">
                 Eenmalig
               </Badge>
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold text-foreground">Levenslang</h2>
+              <h2 className="font-display text-lg font-normal text-ink">Levenslang</h2>
               <p className="mt-0.5 text-sm text-muted-foreground">Eenmalig betalen, voor altijd toegang</p>
             </div>
 
             <div className="flex items-end gap-1.5">
-              <span className="text-4xl font-bold tracking-tight text-foreground">{lifetimePriceLabel}</span>
+              <span className="text-4xl font-semibold tracking-tight text-foreground">{lifetimePriceLabel}</span>
               <span className="pb-1 text-muted-foreground">eenmalig</span>
             </div>
 
@@ -234,11 +234,11 @@ export default function PremiumOfferLayout({
             </p>
           </div>
 
-          <div className="border-t border-[#d8e1ee] px-6 py-5 dark:border-zinc-700">
+          <div className="border-t border-rule px-6 py-5">
             <ul className="space-y-3">
               {[...PREMIUM_TRIGGER_BULLETS, 'Permanent Premium account - geen verloopdatum'].map((feature) => (
                 <li key={feature} className="flex items-start gap-2.5 text-sm text-foreground">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#6f8ed4] dark:text-[#9db5dc]" />
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
                   <span>{feature}</span>
                 </li>
               ))}
@@ -263,12 +263,12 @@ export default function PremiumOfferLayout({
 
       {/* FAQ */}
       <section className="mt-16">
-        <h2 className="text-center text-2xl font-bold tracking-tight text-foreground md:text-3xl">Veelgestelde vragen</h2>
+        <h2 className="text-center font-display text-[26px] font-normal tracking-[-0.02em] text-ink sm:text-[30px]">Veelgestelde vragen</h2>
 
         <div className="mx-auto mt-6 max-w-2xl">
           <Accordion type="single" collapsible className="space-y-2">
             {FAQ_ITEMS.map((item) => (
-              <AccordionItem key={item.value} value={item.value} className="rounded-xl border border-[#d8e1ee] px-1 shadow-none dark:border-zinc-700">
+              <AccordionItem key={item.value} value={item.value} className="rounded-lg border border-rule px-1 shadow-none">
                 <AccordionTrigger className="px-4 text-sm font-medium">{item.question}</AccordionTrigger>
                 <AccordionContent className="px-4 text-sm leading-relaxed text-muted-foreground">{item.answer}</AccordionContent>
               </AccordionItem>

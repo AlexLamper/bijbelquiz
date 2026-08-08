@@ -2,8 +2,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export default function LeaderboardLoading() {
   return (
-    <div className="-mt-24 min-h-screen pb-12 pt-24">
-      <div className="mx-auto max-w-340 px-4 pt-8 sm:px-6 lg:px-8">
+    <div className="min-h-screen pb-12 pt-10">
+      <div className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-end justify-between gap-4">
           <div className="space-y-2">
             <Skeleton className="h-4 w-20" />
@@ -25,7 +25,7 @@ export default function LeaderboardLoading() {
           ))}
         </div>
 
-        <div className="overflow-hidden rounded-lg border border-border/50 bg-white">
+        <div className="overflow-hidden rounded-lg border border-border/50 bg-paper-raised">
           <div className="hidden border-b border-border/50 px-4 py-3 md:block">
             <Skeleton className="h-4 w-80" />
           </div>

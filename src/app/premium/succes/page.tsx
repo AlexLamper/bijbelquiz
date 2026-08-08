@@ -85,21 +85,21 @@ export default async function SuccessPage({ searchParams }: PageProps) {
     <div className="min-h-[80vh] flex items-center justify-center">
       <SessionRefresher />
       <main className="container mx-auto px-4 py-12 flex flex-col items-center">
-        <Card className="w-full max-w-md text-center shadow-lg border-primary/20">
+        <Card className="w-full max-w-md text-center border-primary/20">
            <CardHeader>
-             <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-               <svg className="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-positive-tint dark:bg-positive/30">
+               <svg className="h-10 w-10 text-positive" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                </svg>
              </div>
-             <CardTitle className="text-3xl font-bold">Betaling Geslaagd!</CardTitle>
+             <CardTitle className="text-3xl font-semibold">Betaling Geslaagd!</CardTitle>
            </CardHeader>
            <CardContent className="space-y-4">
-              <p className="text-slate-600 dark:text-zinc-400">
+              <p className="text-ink-soft">
                 Bedankt voor je steun! Je account is nu opgewaardeerd naar <strong>Premium</strong>.
               </p>
-              <div className="p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800 rounded-lg">
-                <p className="text-sm text-amber-800 dark:text-amber-200 font-medium">
+              <div className="p-3 bg-lapis-tint dark:bg-lapis/20 border border-lapis/35 dark:border-lapis/35 rounded-lg">
+                <p className="text-sm text-lapis dark:text-lapis font-medium">
                   Je hebt nu directe toegang tot alle quizzen en diepgaande studies.
                 </p>
               </div>

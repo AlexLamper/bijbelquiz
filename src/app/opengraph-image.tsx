@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'BijbelQuiz – Gratis Bijbelquizzen Spelen';
+export const alt = 'BijbelQuiz - Gratis Bijbelquizzen Spelen';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -10,7 +10,7 @@ export default function Image() {
     (
       <div
         style={{
-          background: 'linear-gradient(135deg, #1a2f52 0%, #243a68 60%, #1e3260 100%)',
+          background: '#1b1a18',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -53,7 +53,7 @@ export default function Image() {
           style={{
             width: 110,
             height: 110,
-            background: '#ffffff',
+            background: '#faf9f6',
             borderRadius: 22,
             display: 'flex',
             alignItems: 'center',
@@ -68,17 +68,17 @@ export default function Image() {
               style={{
                 width: 34,
                 height: 46,
-                background: '#192942',
+                background: '#1b1a18',
                 borderRadius: '3px 0 0 3px',
                 display: 'flex',
               }}
             />
-            <div style={{ width: 3, height: 50, background: '#6f8ed4', borderRadius: 2, display: 'flex' }} />
+            <div style={{ width: 3, height: 50, background: '#85622a', borderRadius: 2, display: 'flex' }} />
             <div
               style={{
                 width: 34,
                 height: 46,
-                background: '#192942',
+                background: '#1b1a18',
                 borderRadius: '0 3px 3px 0',
                 display: 'flex',
               }}
@@ -91,7 +91,7 @@ export default function Image() {
           style={{
             fontSize: 72,
             fontWeight: 700,
-            color: '#ffffff',
+            color: '#faf9f6',
             letterSpacing: '-1px',
             lineHeight: 1,
             display: 'flex',
@@ -104,7 +104,7 @@ export default function Image() {
         <div
           style={{
             fontSize: 30,
-            color: '#a8c0e8',
+            color: '#cba368',
             marginTop: 18,
             fontWeight: 400,
             letterSpacing: 0.3,
@@ -118,8 +118,8 @@ export default function Image() {
         <div
           style={{
             marginTop: 40,
-            background: '#6f8ed4',
-            color: '#ffffff',
+            background: '#85622a',
+            color: '#faf9f6',
             fontSize: 22,
             fontWeight: 600,
             padding: '12px 36px',

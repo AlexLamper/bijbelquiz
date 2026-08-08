@@ -28,22 +28,22 @@ export default function MultiplayerPremiumPaywall({
 
   return (
     <div
-      className="rounded-xl border border-[#c8d7ee] bg-[linear-gradient(140deg,#f6faff,#edf3ff)] p-4 shadow-sm dark:border-zinc-700 dark:bg-[linear-gradient(140deg,rgba(24,24,27,0.95),rgba(39,39,42,0.92))]"
+      className="rounded-lg border border-lapis/45 bg-paper-raised p-4"
       data-paywall-placement={placement}
     >
-      <p className="inline-flex items-center gap-1 rounded-full bg-[#4f74c7] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-white dark:bg-[#6f8ed4]">
+      <p className="inline-flex items-center gap-1 rounded-md bg-ink-soft px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-inverted">
         <Crown className="h-3 w-3" />
         Premium
       </p>
 
-      <p className="mt-3 text-sm font-semibold text-[#1f2f4b] dark:text-zinc-100">
+      <p className="mt-3 text-sm font-semibold text-ink">
         {headline || PREMIUM_HERO_OUTCOME}
       </p>
 
       <ul className="mt-3 space-y-1.5">
         {PREMIUM_TRIGGER_BULLETS.map((bullet) => (
-          <li key={bullet} className="flex items-start gap-2 text-xs text-[#30466e] dark:text-zinc-300">
-            <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#4f74c7] dark:text-[#9db5dc]" />
+          <li key={bullet} className="flex items-start gap-2 text-xs text-ink">
+            <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-ink-soft" />
             <span>{bullet}</span>
           </li>
         ))}
@@ -52,7 +52,7 @@ export default function MultiplayerPremiumPaywall({
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <Button
           asChild
-          className="h-9 rounded-md bg-[#6f8ed4] px-4 text-xs font-semibold text-white hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+          className="h-9 rounded-md bg-ink px-4 text-xs font-semibold text-ink-inverted hover:bg-ink-soft"
           onClick={() =>
             trackEvent('multiplayer_premium_cta_clicked', { placement })
           }

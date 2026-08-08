@@ -101,11 +101,11 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
   return (
     <aside
       className={cn(
-        'fixed left-0 top-0 z-40 hidden h-screen border-r border-[#dbe3ef] bg-white/95 p-3 backdrop-blur supports-backdrop-filter:bg-white/90 lg:flex lg:flex-col dark:border-zinc-700 dark:bg-zinc-950/95 dark:supports-backdrop-filter:bg-zinc-950/90',
+        'fixed left-0 top-0 z-40 hidden h-screen border-r border-rule bg-paper p-3 lg:flex lg:flex-col',
         collapsed ? 'w-16' : 'w-56'
       )}
     >
-      <div className="border-b border-[#e3ebf5] pb-3 dark:border-zinc-700">
+      <div className="border-b border-rule pb-3">
         <Link
           href="/"
           title="BijbelQuiz"
@@ -116,8 +116,8 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
             <Image src="/icon/Logo%20-%20light.svg" alt="BijbelQuiz Logo" fill className="hidden object-contain dark:block" priority />
           </div>
           {!collapsed && (
-            <span className="font-serif text-lg font-bold tracking-tight text-[#1f2f4b] dark:text-zinc-100">
-              Bijbel<span className="text-[#4f6faa] dark:text-[#6f8ed4]">Quiz</span>
+            <span className="font-display text-lg font-semibold tracking-[-0.02em] text-ink">
+              Bijbel<span className="text-lapis">Quiz</span>
             </span>
           )}
         </Link>
@@ -127,7 +127,7 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
         {sections.map((section) => (
           <section key={section.title}>
             {!collapsed && (
-              <p className="px-2 pb-1.5 text-[11px] font-semibold uppercase tracking-wider text-[#607597] dark:text-zinc-400">
+              <p className="px-2 pb-2 text-[10px] font-medium uppercase tracking-[0.18em] text-ink-muted">
                 {section.title}
               </p>
             )}
@@ -142,11 +142,11 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
                     href={item.href}
                     title={item.label}
                     className={cn(
-                      'flex rounded-md text-sm font-medium text-[#4e5f79] transition-colors dark:text-zinc-300',
-                      collapsed ? 'justify-center px-2 py-2.5' : 'items-center gap-2 px-3 py-2',
+                      'relative flex rounded-md text-sm font-medium transition-colors',
+                      collapsed ? 'justify-center px-2 py-2.5' : 'items-center gap-2.5 px-3 py-2',
                       isItemActive(item)
-                        ? 'bg-[#edf2fa] text-[#24395f] dark:bg-zinc-800 dark:text-zinc-100'
-                        : 'hover:bg-[#f5f8fd] hover:text-[#24395f] dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                        ? 'bg-paper-sunken text-ink before:absolute before:inset-y-1.5 before:left-0 before:w-0.5 before:rounded-full before:bg-lapis'
+                        : 'text-ink-muted hover:bg-paper-sunken hover:text-ink'
                     )}
                   >
                     <Icon className="h-4 w-4" />
@@ -160,19 +160,19 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
       </div>
 
       {session && !session.user?.isPremium && !collapsed && (
-        <section className="mt-3 shrink-0 rounded-lg border border-[#d7e1ee] bg-[#f8fbff] p-3 dark:border-zinc-700 dark:bg-zinc-900/70">
-          <p className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-[#4f6faa] dark:text-zinc-300">
+        <section className="mt-3 shrink-0 rounded-lg border border-lapis/45 bg-paper-raised p-4">
+          <p className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-lapis">
             <Crown className="h-3.5 w-3.5" />
             Premium
           </p>
-          <p className="mt-2 text-sm font-semibold text-[#1f2f4b] dark:text-zinc-100">Samen spelen zonder limiet</p>
-          <p className="mt-1 text-xs text-[#607597] dark:text-zinc-400">Host onbeperkt rooms tot 20 spelers en krijg uitleg bij elke vraag.</p>
+          <p className="mt-3 font-display text-base leading-snug text-ink">Samen spelen zonder limiet</p>
+          <p className="mt-1.5 text-xs leading-relaxed text-ink-soft">Host onbeperkt rooms tot 20 spelers en krijg uitleg bij elke vraag.</p>
           <Link
             href="/premium"
             onClick={() =>
               trackEvent('multiplayer_premium_cta_clicked', { placement: 'sidebar' })
             }
-            className="mt-3 inline-flex w-full items-center justify-center rounded-md bg-[#6f8ed4] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#5f81cc] dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+            className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-lapis px-3 py-2.5 text-xs font-medium text-ink-inverted transition-colors hover:bg-lapis-strong"
           >
             Bekijk Premium
           </Link>

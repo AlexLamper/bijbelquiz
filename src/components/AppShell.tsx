@@ -29,6 +29,15 @@ const SIDEBAR_ROUTE_PREFIXES = [
   '/settings',
 ];
 
+/** Full-screen routes that paint their own layout; app chrome would float on top. */
+const CHROMELESS_ROUTES = ['/inloggen', '/registreren'];
+
+function isChromeless(pathname: string): boolean {
+  return CHROMELESS_ROUTES.some(
+    (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`)
+  );
+}
+
 function shouldShowSidebar(pathname: string): boolean {
   return SIDEBAR_ROUTE_PREFIXES.some(
     (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`)
@@ -37,7 +46,8 @@ function shouldShowSidebar(pathname: string): boolean {
 
 export default function AppShell({ children }: AppShellProps) {
   const pathname = usePathname();
-  const showSidebar = shouldShowSidebar(pathname);
+  const chromeless = isChromeless(pathname);
+  const showSidebar = !chromeless && shouldShowSidebar(pathname);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
 
   return (
@@ -48,13 +58,15 @@ export default function AppShell({ children }: AppShellProps) {
       )}
     >
       {showSidebar && <AppSidebar collapsed={isSidebarCollapsed} />}
-      <Navbar
-        withSidebar={showSidebar}
-        sidebarCollapsed={isSidebarCollapsed}
-        onSidebarToggle={() => setIsSidebarCollapsed((value) => !value)}
-      />
+      {!chromeless && (
+        <Navbar
+          withSidebar={showSidebar}
+          sidebarCollapsed={isSidebarCollapsed}
+          onSidebarToggle={() => setIsSidebarCollapsed((value) => !value)}
+        />
+      )}
 
-      <main className="flex-1">{children}</main>
+      <main className="min-h-0 flex-1">{children}</main>
     </div>
   );
 }

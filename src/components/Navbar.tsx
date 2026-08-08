@@ -149,37 +149,37 @@ export default function Navbar({
       ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#dbe3ef] bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/90 dark:border-zinc-700 dark:bg-zinc-950/95 dark:supports-backdrop-filter:bg-zinc-950/90">
-      <div className="relative mx-auto flex h-16 w-full max-w-340 items-center gap-4 px-4 sm:px-5 lg:px-4">
+    <header className="sticky top-0 z-50 border-b border-rule bg-paper/90 backdrop-blur-sm supports-backdrop-filter:bg-paper/75">
+      <div className="mx-auto flex h-16 w-full max-w-[1180px] items-center gap-4 px-5 sm:px-8 lg:px-10">
         {withSidebar && (
-          <div className="hidden items-center gap-3 lg:flex">
+          <div className="hidden shrink-0 items-center gap-3 lg:flex">
             <Button
               type="button"
               variant="outline"
               size="icon"
               onClick={onSidebarToggle}
-              className="h-9 w-9 rounded-md border-[#d7e1ee] bg-white text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+              className="h-9 w-9 rounded-md border-rule bg-paper-raised text-ink hover:bg-paper-sunken"
               aria-label={sidebarCollapsed ? 'Sidebar openen' : 'Sidebar sluiten'}
             >
               {sidebarCollapsed ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
             </Button>
-            <p className="text-lg font-semibold text-[#1f2f4b] dark:text-zinc-100">{pageTitle}</p>
+            <p className="font-display text-lg font-normal tracking-[-0.015em] text-ink">{pageTitle}</p>
           </div>
         )}
 
-        <Link href="/" className={cn('flex items-center gap-2.5', withSidebar && 'lg:hidden')}>
+        <Link href="/" className={cn('flex shrink-0 items-center gap-2.5', withSidebar && 'lg:hidden')}>
           <div className="relative h-7 w-7">
             <Image src="/icon/Logo%20-%20dark.svg" alt="BijbelQuiz Logo" fill className="object-contain dark:hidden" priority />
             <Image src="/icon/Logo%20-%20light.svg" alt="BijbelQuiz Logo" fill className="hidden object-contain dark:block" priority />
           </div>
-          <span className="font-serif text-xl font-bold tracking-tight text-[#1f2f4b] dark:text-zinc-100">
-            Bijbel<span className="text-[#4f6faa] dark:text-[#9db5dc]">Quiz</span>
+          <span className="font-display text-xl font-semibold tracking-[-0.02em] text-ink">
+            Bijbel<span className="text-lapis">Quiz</span>
           </span>
         </Link>
 
         <nav
           className={cn(
-            'hidden items-center gap-1 md:absolute md:left-1/2 md:-translate-x-1/2 md:flex',
+            'hidden min-w-0 flex-1 items-center justify-center gap-1 self-stretch md:flex',
             withSidebar && 'lg:hidden'
           )}
         >
@@ -188,10 +188,10 @@ export default function Navbar({
               key={item.href}
               href={item.href}
               className={cn(
-                'px-3 py-1.5 text-sm font-medium text-[#4e5f79] transition-colors dark:text-zinc-300',
+                'relative flex h-full items-center px-3 text-sm font-medium transition-colors after:absolute after:inset-x-3 after:bottom-0 after:h-px after:transition-colors',
                 isActive(item.href)
-                  ? 'bg-[#edf2fa] text-[#24395f] dark:bg-zinc-800 dark:text-zinc-100'
-                  : 'hover:bg-[#f5f8fd] hover:text-[#24395f] dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                  ? 'text-ink after:bg-lapis'
+                  : 'text-ink-muted hover:text-ink after:bg-paper'
               )}
             >
               {item.label}
@@ -202,10 +202,8 @@ export default function Navbar({
             <Link
               href="/beheer"
               className={cn(
-                'px-3 py-1.5 text-sm font-semibold text-[#4e5f79] transition-colors dark:text-zinc-300',
-                isActive('/admin')
-                  ? 'bg-[#edf2fa] text-[#24395f] dark:bg-zinc-800 dark:text-zinc-100'
-                  : 'hover:bg-[#f5f8fd] hover:text-[#24395f] dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                'flex h-full items-center px-3 text-sm font-medium transition-colors',
+                isActive('/admin') ? 'text-ink' : 'text-ink-muted hover:text-ink'
               )}
             >
               Admin
@@ -213,22 +211,22 @@ export default function Navbar({
           )}
         </nav>
 
-        <div className="ml-auto hidden items-center gap-2 md:flex">
+        <div className="ml-auto hidden shrink-0 items-center gap-2 md:flex">
           <ModeToggle />
 
           {status === 'loading' && (
-            <div className="h-8 w-8 animate-pulse rounded-md bg-[#eef3fb] dark:bg-zinc-800" />
+            <div className="h-8 w-8 animate-pulse rounded-md bg-paper-sunken" />
           )}
 
           {status === 'authenticated' && session && (
             <>
               {session.user?.isPremium ? (
-                <span className="inline-flex h-10 items-center gap-1.5 rounded-md bg-[#6f8ed4] px-3 text-sm font-semibold text-white dark:bg-zinc-500 dark:text-zinc-100">
+                <span className="hidden h-10 items-center gap-1.5 rounded-md border border-lapis/45 bg-paper-raised px-3 text-[11px] font-medium uppercase tracking-[0.16em] text-lapis xl:inline-flex">
                   <Crown className="h-4 w-4" />
                   Premium actief
                 </span>
               ) : (
-                <Button asChild className="h-10 rounded-md bg-[#6f8ed4] dark:bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#5f81cc]">
+                <Button asChild variant="accent" className="h-10 px-4">
                   <Link href="/premium">Premium</Link>
                 </Button>
               )}
@@ -239,39 +237,39 @@ export default function Navbar({
                   onClick={() => setIsAccountMenuOpen((value) => !value)}
                   aria-haspopup="menu"
                   aria-expanded={isAccountMenuOpen}
-                  className="inline-flex h-11 items-center gap-2 rounded-md bg-white px-2 py-1.5 text-left hover:bg-[#f5f8fd] dark:bg-zinc-900 dark:hover:bg-zinc-800"
+                  className="inline-flex h-11 items-center gap-2 rounded-md px-2 py-1.5 text-left transition-colors hover:bg-paper-sunken"
                 >
-                  <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-[#edf2fa] text-[11px] font-semibold text-[#2f456e] dark:bg-zinc-800 dark:text-zinc-100">
+                  <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-paper-sunken text-[11px] font-semibold text-ink">
                     {session.user?.image ? (
                       <img src={session.user.image} alt={userName} className="h-full w-full object-cover" />
                     ) : (
                       userInitials
                     )}
                   </span>
-                  <span className="hidden min-w-0 sm:block">
-                    <span className="block max-w-40 truncate text-sm font-semibold text-[#1f2f4b] dark:text-zinc-100">{userName}</span>
-                    <span className="block max-w-40 truncate text-xs text-[#607597] dark:text-zinc-400">{userEmail}</span>
+                  <span className="hidden min-w-0 lg:block">
+                    <span className="block max-w-36 truncate text-sm font-medium text-ink">{userName}</span>
+                    <span className="block max-w-36 truncate text-xs text-ink-muted">{userEmail}</span>
                   </span>
                   <ChevronDown
                     className={cn(
-                      'h-4 w-4 text-[#607597] transition-transform dark:text-zinc-400',
+                      'h-4 w-4 text-ink-soft transition-transform',
                       isAccountMenuOpen && 'rotate-180'
                     )}
                   />
                 </button>
 
                 {isAccountMenuOpen && (
-                  <div className="absolute right-0 top-[calc(100%+0.5rem)] z-50 w-56 rounded-lg border border-[#d7e1ee] bg-white p-1.5 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
+                  <div className="absolute right-0 top-[calc(100%+0.5rem)] z-50 w-56 rounded-lg border border-rule bg-paper-raised p-1.5">
                     <Link
                       href="/profiel"
-                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-[#30466e] hover:bg-[#f5f8fd] dark:text-zinc-200 dark:hover:bg-zinc-800"
+                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-ink hover:bg-paper-sunken"
                     >
                       <User className="h-4 w-4" />
                       Profiel
                     </Link>
                     <Link
                       href="/instellingen"
-                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-[#30466e] hover:bg-[#f5f8fd] dark:text-zinc-200 dark:hover:bg-zinc-800"
+                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-ink hover:bg-paper-sunken"
                     >
                       <Settings className="h-4 w-4" />
                       Instellingen
@@ -279,7 +277,7 @@ export default function Navbar({
                     <button
                       type="button"
                       onClick={() => signOut({ callbackUrl: '/' })}
-                      className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-[#30466e] hover:bg-[#f5f8fd] dark:text-zinc-200 dark:hover:bg-zinc-800"
+                      className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm text-ink hover:bg-paper-sunken"
                     >
                       <LogOut className="h-4 w-4" />
                       Afmelden
@@ -292,10 +290,10 @@ export default function Navbar({
 
           {status === 'unauthenticated' && (
             <>
-              <Button asChild variant="outline" className="h-9 rounded-md border-[#d7e1ee] px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
+              <Button asChild variant="outline" className="h-9 rounded-md border-rule px-4 text-ink hover:bg-paper-sunken">
                 <Link href="/inloggen">Inloggen</Link>
               </Button>
-              <Button asChild className="h-9 rounded-md bg-[#6f8ed4] dark:bg-[#5b7dd9] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7]">
+              <Button asChild className="h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
                 <Link href="/registreren">Registreren</Link>
               </Button>
             </>
@@ -306,7 +304,7 @@ export default function Navbar({
           <ModeToggle />
           <Button
             variant="outline"
-            className="h-9 w-9 rounded-md border-[#d7e1ee] p-0 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+            className="h-9 w-9 rounded-md border-rule p-0 text-ink hover:bg-paper-sunken"
             aria-label="Menu openen"
             onClick={() => setIsMobileMenuOpen((value) => !value)}
           >
@@ -316,8 +314,8 @@ export default function Navbar({
       </div>
 
       {isMobileMenuOpen && (
-        <div className="border-t border-[#dbe3ef] bg-white md:hidden dark:border-zinc-700 dark:bg-zinc-950">
-          <div className="mx-auto w-full max-w-340 px-4 py-3 sm:px-5 lg:px-4">
+        <div className="border-t border-rule bg-paper-raised md:hidden">
+          <div className="mx-auto w-full max-w-[1180px] px-4 py-3 sm:px-5 lg:px-4">
             <div className="space-y-1.5">
               {navItems.map((item) => (
                 <Link
@@ -325,10 +323,10 @@ export default function Navbar({
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    'block px-3 py-2 text-sm font-medium text-[#4e5f79] dark:text-zinc-300',
+                    'block px-3 py-2 text-sm font-medium text-ink-soft',
                     isActive(item.href)
-                      ? 'bg-[#edf2fa] text-[#24395f] dark:bg-zinc-800 dark:text-zinc-100'
-                      : 'hover:bg-[#f5f8fd] hover:text-[#24395f] dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
+                      ? 'bg-paper-sunken text-ink'
+                      : 'hover:bg-paper-sunken hover:text-ink  '
                   )}
                 >
                   {item.label}
@@ -339,17 +337,17 @@ export default function Navbar({
                 <Link
                   href="/beheer"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-sm font-semibold text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                  className="block px-3 py-2 text-sm font-semibold text-ink-soft hover:bg-paper-sunken hover:text-ink"
                 >
                   Admin
                 </Link>
               )}
 
-              <div className="mt-3 flex items-center gap-2 border-t border-[#e3ebf5] pt-3 dark:border-zinc-700">
+              <div className="mt-3 flex items-center gap-2 border-t border-rule pt-3">
                 {status === 'authenticated' && session ? (
                   <div className="w-full space-y-2">
-                    <div className="flex items-center gap-2 rounded-md bg-white p-2.5 dark:bg-zinc-900">
-                      <span className="inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-[#edf2fa] text-[11px] font-semibold text-[#2f456e] dark:bg-zinc-800 dark:text-zinc-100">
+                    <div className="flex items-center gap-2 rounded-md bg-paper-raised p-2.5">
+                      <span className="inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-paper-sunken text-[11px] font-semibold text-ink">
                         {session.user?.image ? (
                           <img src={session.user.image} alt={userName} className="h-full w-full object-cover" />
                         ) : (
@@ -357,10 +355,10 @@ export default function Navbar({
                         )}
                       </span>
                       <div className="min-w-0">
-                        <p className="truncate text-sm font-semibold text-[#1f2f4b] dark:text-zinc-100">{userName}</p>
-                        <p className="truncate text-xs text-[#607597] dark:text-zinc-400">{userEmail}</p>
+                        <p className="truncate text-sm font-semibold text-ink">{userName}</p>
+                        <p className="truncate text-xs text-ink-soft">{userEmail}</p>
                         {session.user?.isPremium && (
-                          <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-[#355384] dark:text-zinc-300">
+                          <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-ink">
                             <Crown className="h-3.5 w-3.5" />
                             Premium actief
                           </p>
@@ -371,7 +369,7 @@ export default function Navbar({
                     <Link
                       href="/profiel"
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-ink-soft hover:bg-paper-sunken hover:text-ink"
                     >
                       <User className="h-4 w-4" />
                       Profiel
@@ -380,14 +378,14 @@ export default function Navbar({
                     <Link
                       href="/instellingen"
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-[#4e5f79] hover:bg-[#f5f8fd] hover:text-[#24395f] dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-ink-soft hover:bg-paper-sunken hover:text-ink"
                     >
                       <Settings className="h-4 w-4" />
                       Instellingen
                     </Link>
 
                     {!session.user?.isPremium && (
-                      <Button asChild className="h-9 rounded-md bg-[#6f8ed4] dark:bg-[#6f8ed4] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#5f81cc]">
+                      <Button asChild className="h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
                         <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)}>
                           Premium
                         </Link>
@@ -399,7 +397,7 @@ export default function Navbar({
                         signOut({ callbackUrl: '/' });
                       }}
                       variant="outline"
-                      className="h-9 rounded-md border-[#d7e1ee] px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                      className="h-9 rounded-md border-rule px-4 text-ink hover:bg-paper-sunken"
                     >
                       <LogOut className="mr-1.5 h-4 w-4" />
                       Afmelden
@@ -407,12 +405,12 @@ export default function Navbar({
                   </div>
                 ) : (
                   <>
-                    <Button asChild variant="outline" className="h-9 rounded-md border-[#d7e1ee] px-4 text-[#30466e] hover:bg-[#f5f8fd] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
+                    <Button asChild variant="outline" className="h-9 rounded-md border-rule px-4 text-ink hover:bg-paper-sunken">
                       <Link href="/inloggen" onClick={() => setIsMobileMenuOpen(false)}>
                         Inloggen
                       </Link>
                     </Button>
-                    <Button asChild className="h-9 rounded-md bg-[#6f8ed4] dark:bg-[#5b7dd9] px-4 text-white hover:bg-[#5f81cc] dark:hover:bg-[#4a6bc7]">
+                    <Button asChild className="h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
                       <Link href="/registreren" onClick={() => setIsMobileMenuOpen(false)}>
                         Registreren
                       </Link>

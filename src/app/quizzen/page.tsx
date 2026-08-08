@@ -89,15 +89,15 @@ export default async function QuizzesPage({
   }
 
   const itemListJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
+    '@context':'https://schema.org',
+    '@type':'ItemList',
     name: 'BijbelQuiz quizoverzicht',
     itemListElement: quizzes.map((quiz: any, index: number) => ({
-      '@type': 'ListItem',
+      '@type':'ListItem',
       position: index + 1,
       url: `https://www.bijbelquiz.com/quiz/${quiz.slug || quiz._id}`,
       item: {
-        '@type': 'Quiz',
+        '@type':'Quiz',
         name: quiz.title,
         description: quiz.description || '',
       },
