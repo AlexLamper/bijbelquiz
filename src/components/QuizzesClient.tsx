@@ -47,6 +47,53 @@ interface QuizzesClientProps {
   initialCategoryId?: string;
 }
 
+const ROMAN_PARTS: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6 };
+
+/**
+ * Split a quiz title into the series it belongs to and its part number, so
+ * "Daniel Deel 1" and "Daniel Deel 2" are recognised as one series. Quizzes are
+ * sorted server-side with premium last, which would otherwise scatter the parts
+ * of a series across the grid.
+ */
+function readSeries(title: string): { base: string; part: number } {
+  const trimmed = (title || '').trim();
+  const match = trimmed.match(/^(.*?)[\s\-:]*\b(?:deel|dl\.?|part)\s*([0-9]+|[ivx]+)\s*$/i)
+    || trimmed.match(/^(.*?)\s*\(\s*([0-9]+)\s*\)\s*$/)
+    || trimmed.match(/^(.*?)\s+-\s+([0-9]+)\s*$/);
+
+  if (!match || !match[1].trim()) {
+    return { base: trimmed.toLowerCase(), part: 0 };
+  }
+
+  const raw = match[2].toLowerCase();
+  const part = /^[0-9]+$/.test(raw) ? Number(raw) : ROMAN_PARTS[raw] ?? 0;
+
+  return { base: match[1].trim().toLowerCase(), part };
+}
+
+/** Keep the incoming order, but pull every part of a series together, in order. */
+function groupSeries<T extends { title: string }>(items: T[]): T[] {
+  const firstSeen = new Map<string, number>();
+
+  const decorated = items.map((item, index) => {
+    const { base, part } = readSeries(item.title);
+    if (!firstSeen.has(base)) {
+      firstSeen.set(base, index);
+    }
+    return { item, base, part, index };
+  });
+
+  return decorated
+    .sort((a, b) => {
+      const groupA = firstSeen.get(a.base) ?? a.index;
+      const groupB = firstSeen.get(b.base) ?? b.index;
+      if (groupA !== groupB) return groupA - groupB;
+      if (a.part !== b.part) return a.part - b.part;
+      return a.index - b.index;
+    })
+    .map((entry) => entry.item);
+}
+
 export default function QuizzesClient({
   quizzes,
   categories,
@@ -87,8 +134,10 @@ export default function QuizzesClient({
     });
   }, [normalizedQuizzes, searchQuery, selectedCategory, showPremiumOnly]);
 
+  const orderedQuizzes = useMemo(() => groupSeries(filteredQuizzes), [filteredQuizzes]);
+
   const totalCount = normalizedQuizzes.length;
-  const resultCount = filteredQuizzes.length;
+  const resultCount = orderedQuizzes.length;
   const selectedCategoryTitle =
     selectedCategory === 'all'
       ? 'Alle categorieen'
@@ -231,7 +280,7 @@ export default function QuizzesClient({
           </Card>
         ) : (
           <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
-            {filteredQuizzes.map((quiz) => (
+            {orderedQuizzes.map((quiz) => (
               <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={userIsPremium} />
             ))}
           </div>
