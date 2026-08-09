@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
@@ -28,14 +28,14 @@ function getRouteForStatus(roomCode: string, status: RoomStatus): string {
   const normalized = normalizeRoomCode(roomCode);
 
   if (status === 'finished') {
-    return `/samen-spelen/$\{normalized\}/uitslag`;
+    return `/samen-spelen/${normalized}/uitslag`;
   }
 
   if (status === 'lobby') {
-    return `/samen-spelen/$\{normalized\}/lobby`;
+    return `/samen-spelen/${normalized}/lobby`;
   }
 
-  return `/samen-spelen/$\{normalized\}/spel`;
+  return `/samen-spelen/${normalized}/spel`;
 }
 
 function getConnectionBadgeClass(status: string): string {
@@ -113,6 +113,44 @@ function GameProgressBar(props: { current: number; total: number; status: RoomSt
   );
 }
 
+/**
+ * Turns the server's absolute deadlines into a "seconds left" countdown.
+ *
+ * The server publishes deadlines on its own clock, so we track the offset
+ * between it and this browser and correct for it — a user whose system clock
+ * is minutes off still sees the same timer as the rest of the room. While a
+ * deadline is live we re-render 4x/second, which keeps the countdown smooth
+ * between polls instead of stepping only when a snapshot lands.
+ */
+function useServerCountdown(serverTimeMs: number | null, active: boolean) {
+  // The offset is a cache, not rendered state — recording it in a ref avoids a
+  // render pass per snapshot, and it is always read together with `nowMs`,
+  // which does drive renders.
+  const offsetMsRef = useRef(0);
+  const [nowMs, setNowMs] = useState(0);
+
+  useEffect(() => {
+    if (serverTimeMs == null) return;
+    offsetMsRef.current = Date.now() - serverTimeMs;
+  }, [serverTimeMs]);
+
+  useEffect(() => {
+    if (!active) return;
+    const id = window.setInterval(() => setNowMs(Date.now()), 250);
+    return () => window.clearInterval(id);
+  }, [active]);
+
+  return useCallback(
+    (serverDeadlineMs: number | null | undefined): number | null => {
+      // Before the first tick there is nothing to count down from; callers
+      // fall back to the server-supplied `remainingSeconds`.
+      if (serverDeadlineMs == null || nowMs === 0) return null;
+      return Math.max(0, Math.ceil((serverDeadlineMs + offsetMsRef.current - nowMs) / 1000));
+    },
+    [nowMs],
+  );
+}
+
 function buildResultsFallback(players: Array<{
   id: string;
   name: string;
@@ -145,21 +183,10 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
   const { data: session, status: sessionStatus } = useSession();
   const normalizedRoomCode = useMemo(() => normalizeRoomCode(roomCode), [roomCode]);
 
-  // Keep using the last known user ID during transient NextAuth "loading" states
-  // (e.g. background refetch) so the room controller does not tear down and
-  // recreate the websocket connection unnecessarily.
-  const [resolvedUserId, setResolvedUserId] = useState<string | null>(session?.user?.id ?? null);
-
-  useEffect(() => {
-    if (sessionStatus === 'unauthenticated') {
-      setResolvedUserId(null);
-      return;
-    }
-
-    if (session?.user?.id) {
-      setResolvedUserId(session.user.id);
-    }
-  }, [session?.user?.id, sessionStatus]);
+  // NextAuth keeps `data` populated across background refetches, so reading it
+  // straight through is stable: the room controller only tears down when the
+  // user is genuinely signed out.
+  const resolvedUserId = session?.user?.id ?? null;
 
   const {
     loading,
@@ -189,57 +216,19 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
   const [copied, setCopied] = useState(false);
 
-  /** Drives smooth countdown during the between-questions pause. */
-  const [, setResultPhaseTick] = useState(0);
-  useEffect(() => {
-    if (room?.status !== 'question_result' || room.resultPhaseEndsAtMs == null) {
-      return;
-    }
-    const id = window.setInterval(() => {
-      setResultPhaseTick((n) => n + 1);
-    }, 400);
-    return () => window.clearInterval(id);
-  }, [room?.status, room?.resultPhaseEndsAtMs]);
+  const hasLiveDeadline =
+    (room?.status === 'in_progress' && room.currentQuestion?.deadlineAtMs != null) ||
+    (room?.status === 'question_result' && room.resultPhaseEndsAtMs != null);
+
+  const secondsUntil = useServerCountdown(room?.serverTimeMs ?? null, hasLiveDeadline);
 
   const resultPhaseSecondsLeft =
-    room?.status === 'question_result' && room.resultPhaseEndsAtMs != null
-      ? Math.max(0, Math.ceil((room.resultPhaseEndsAtMs - Date.now()) / 1000))
+    room?.status === 'question_result' ? secondsUntil(room.resultPhaseEndsAtMs) : null;
+
+  const localSeconds =
+    room?.status === 'in_progress'
+      ? secondsUntil(room.currentQuestion?.deadlineAtMs) ?? room.currentQuestion?.remainingSeconds ?? null
       : null;
-
-  // Live countdown: tick every second from the server-supplied remainingSeconds.
-  const [localSeconds, setLocalSeconds] = useState<number | null>(null);
-  const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  useEffect(() => {
-    const remaining = room?.currentQuestion?.remainingSeconds ?? null;
-    setLocalSeconds(remaining);
-
-    if (countdownRef.current) {
-      clearInterval(countdownRef.current);
-      countdownRef.current = null;
-    }
-
-    if (remaining !== null && remaining > 0 && room?.status === 'in_progress') {
-      countdownRef.current = setInterval(() => {
-        setLocalSeconds((prev) => {
-          if (prev === null || prev <= 1) {
-            clearInterval(countdownRef.current!);
-            countdownRef.current = null;
-            return 0;
-          }
-
-          return prev - 1;
-        });
-      }, 1000);
-    }
-
-    return () => {
-      if (countdownRef.current) {
-        clearInterval(countdownRef.current);
-        countdownRef.current = null;
-      }
-    };
-  }, [room?.currentQuestion?.id, room?.currentQuestion?.remainingSeconds, room?.status]);
 
   useEffect(() => {
     if (!room) {

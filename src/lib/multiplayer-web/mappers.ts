@@ -1,9 +1,11 @@
 import { z } from 'zod';
 import type {
   MultiplayerApiErrorBody,
+  MultiplayerCapability,
   MultiplayerOkResponse,
   MultiplayerResultsResponse,
   MultiplayerRoomResponse,
+  MultiplayerRuntimeConfig,
   MultiplayerTokenResponse,
 } from './contracts';
 
@@ -71,6 +73,38 @@ const roomResponseSchema = z.object({
   room: roomSnapshotSchema,
 });
 
+/**
+ * `GET /rooms/active` and `POST /rooms/:code/answer` both carry an optional
+ * room: the first because the user may not be in one, the second because it is
+ * a convenience payload alongside `ok: true`.
+ */
+const optionalRoomResponseSchema = z.object({
+  room: roomSnapshotSchema.nullish().transform((value) => value ?? null),
+});
+
+const capabilitySchema = z.object({
+  canCreateRoom: z.boolean(),
+  isPremium: z.boolean(),
+  hasUsedFreeRoom: z.boolean(),
+  freeRoomsRemaining: z.number().nullable(),
+  maxPlayersFree: z.number(),
+  maxPlayersPremium: z.number(),
+  maxPlayersForUser: z.number(),
+});
+
+const configSchema = z.object({
+  questionTimerSeconds: z.number(),
+  questionResultDelayMs: z.number(),
+  playerOfflineAfterMs: z.number(),
+  minPlayersToStart: z.number(),
+  pollIntervalsMs: z.object({
+    lobby: z.number(),
+    in_progress: z.number(),
+    question_result: z.number(),
+    finished: z.number(),
+  }),
+});
+
 const okResponseSchema = z.object({
   ok: z.literal(true),
 });
@@ -92,6 +126,18 @@ export function parseTokenResponse(input: unknown): MultiplayerTokenResponse {
 
 export function parseRoomResponse(input: unknown): MultiplayerRoomResponse {
   return roomResponseSchema.parse(input);
+}
+
+export function parseOptionalRoomResponse(input: unknown): { room: MultiplayerRoomResponse['room'] | null } {
+  return optionalRoomResponseSchema.parse(input);
+}
+
+export function parseCapabilityResponse(input: unknown): MultiplayerCapability {
+  return capabilitySchema.parse(input);
+}
+
+export function parseConfigResponse(input: unknown): MultiplayerRuntimeConfig {
+  return configSchema.parse(input);
 }
 
 export function parseOkResponse(input: unknown): MultiplayerOkResponse {

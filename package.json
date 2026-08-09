@@ -10,7 +10,10 @@
     "build": "next build",
     "start": "tsx server.ts start",
     "lint": "next lint",
-    "test": "node --import tsx --test tests/**/*.test.ts"
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "test:multiplayer": "node scripts/e2e-multiplayer.mjs",
+    "test:multiplayer:cross": "node scripts/e2e-multiplayer-cross-instance.mjs",
+    "test:multiplayer:quota": "node scripts/e2e-multiplayer-quota.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

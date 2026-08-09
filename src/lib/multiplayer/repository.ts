@@ -53,6 +53,13 @@ export interface RoomRepository {
   /** Get a room by code, or null. */
   findByCode(code: string): Promise<PersistedRoom | null>;
   /**
+   * Find the room a user is currently a player in, ignoring finished games.
+   * Used by "resume where you left off" on web reloads and mobile cold starts.
+   * If the user somehow ends up in more than one room, the most recently
+   * updated one wins.
+   */
+  findActiveByUserId(userId: string): Promise<PersistedRoom | null>;
+  /**
    * Persist the room with optimistic concurrency. Returns `true` if the write
    * succeeded, `false` if the in-DB revision moved past `expectedRevision`
    * (caller should retry the mutation).

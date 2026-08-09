@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
 /**
  * Smoke test for the polling-only multiplayer architecture.
  *
@@ -26,6 +25,9 @@
  *        node scripts/smoke-multiplayer-http.mjs
  *
  *   Optional: BASE_URL (default http://localhost:3000)
+ *
+ * For a run that needs no manual cookie copying, use
+ * `scripts/e2e-multiplayer.mjs` instead - it provisions its own users.
  */
 
 const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
@@ -84,7 +86,7 @@ async function main() {
   logStep('Tokens acquired', { hostLen: hostToken.length, p2Len: p2Token.length });
 
   logStep('Host creating room');
-  const create = await bearerFetch('/api/mobile/multiplayer/rooms', {
+  const create = await bearerFetch('/api/multiplayer/rooms', {
     method: 'POST',
     body: JSON.stringify({ quizId: QUIZ_ID, maxPlayers: 4 }),
   }, hostToken, HOST_SESSION_TOKEN);
@@ -96,7 +98,7 @@ async function main() {
 
   logStep('p2 joining');
   const joined = await bearerFetch(
-    `/api/mobile/multiplayer/rooms/${roomCode}/join`,
+    `/api/multiplayer/rooms/${roomCode}/join`,
     { method: 'POST' },
     p2Token,
     P2_SESSION_TOKEN,
@@ -111,8 +113,8 @@ async function main() {
   logStep('Polling 5x in parallel from both clients');
   for (let i = 0; i < 5; i += 1) {
     const [hostSnap, p2Snap] = await Promise.all([
-      bearerFetch(`/api/mobile/multiplayer/rooms/${roomCode}`, {}, hostToken, HOST_SESSION_TOKEN),
-      bearerFetch(`/api/mobile/multiplayer/rooms/${roomCode}`, {}, p2Token, P2_SESSION_TOKEN),
+      bearerFetch(`/api/multiplayer/rooms/${roomCode}`, {}, hostToken, HOST_SESSION_TOKEN),
+      bearerFetch(`/api/multiplayer/rooms/${roomCode}`, {}, p2Token, P2_SESSION_TOKEN),
     ]);
     if (hostSnap.status !== 200) throw new Error(`Host poll #${i} failed: ${hostSnap.status}`);
     if (p2Snap.status !== 200) throw new Error(`P2 poll #${i} failed: ${p2Snap.status}`);
@@ -128,7 +130,7 @@ async function main() {
 
   logStep('Host starting game');
   const started = await bearerFetch(
-    `/api/mobile/multiplayer/rooms/${roomCode}/start`,
+    `/api/multiplayer/rooms/${roomCode}/start`,
     { method: 'POST' },
     hostToken,
     HOST_SESSION_TOKEN,
@@ -143,13 +145,13 @@ async function main() {
   logStep('Both submitting answers', { questionId: q.id });
   const [hostA, p2A] = await Promise.all([
     bearerFetch(
-      `/api/mobile/multiplayer/rooms/${roomCode}/answer`,
+      `/api/multiplayer/rooms/${roomCode}/answer`,
       { method: 'POST', body: JSON.stringify({ questionId: q.id, answerId: q.answers[0].id }) },
       hostToken,
       HOST_SESSION_TOKEN,
     ),
     bearerFetch(
-      `/api/mobile/multiplayer/rooms/${roomCode}/answer`,
+      `/api/multiplayer/rooms/${roomCode}/answer`,
       { method: 'POST', body: JSON.stringify({ questionId: q.id, answerId: q.answers[0].id }) },
       p2Token,
       P2_SESSION_TOKEN,
@@ -163,8 +165,8 @@ async function main() {
   // Cleanup
   logStep('Both leaving');
   await Promise.all([
-    bearerFetch(`/api/mobile/multiplayer/rooms/${roomCode}/leave`, { method: 'POST' }, hostToken, HOST_SESSION_TOKEN),
-    bearerFetch(`/api/mobile/multiplayer/rooms/${roomCode}/leave`, { method: 'POST' }, p2Token, P2_SESSION_TOKEN),
+    bearerFetch(`/api/multiplayer/rooms/${roomCode}/leave`, { method: 'POST' }, hostToken, HOST_SESSION_TOKEN),
+    bearerFetch(`/api/multiplayer/rooms/${roomCode}/leave`, { method: 'POST' }, p2Token, P2_SESSION_TOKEN),
   ]);
 
   console.log('\n✅ Smoke test PASSED — multiplayer works end-to-end via HTTP polling');

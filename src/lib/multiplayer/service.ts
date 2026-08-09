@@ -22,6 +22,20 @@ const DEFAULT_ROOM_CODE_LENGTH = 6;
 const MAX_ROOM_CODE_ATTEMPTS = 50;
 const MAX_CONCURRENCY_RETRIES = 8;
 
+/** Minimum players before the host may start. Mirrored to clients via config. */
+export const MIN_PLAYERS_TO_START = 2;
+
+/**
+ * Poll cadence per room status, served to clients so web and mobile stay in
+ * sync with what the server expects (heartbeats, timer accuracy, DB load).
+ */
+export const RECOMMENDED_POLL_INTERVALS_MS: Record<RoomStatus, number> = {
+  lobby: 2000,
+  in_progress: 900,
+  question_result: 1200,
+  finished: 4000,
+};
+
 function parsePositiveNumber(value: string | undefined, fallback: number): number {
   if (!value) return fallback;
   const parsed = Number(value);
@@ -214,6 +228,45 @@ export class MultiplayerService {
     });
   }
 
+  /**
+   * The room this user is currently a player in, or null. Lets a client that
+   * lost its navigation state (browser reload, Flutter app cold start, phone
+   * call interrupting a game) jump straight back into the right screen without
+   * asking the user to re-enter the room code.
+   */
+  async getActiveRoom(userId: string): Promise<RoomSnapshot | null> {
+    const active = await this.repository.findActiveByUserId(userId);
+    if (!active) {
+      return null;
+    }
+
+    try {
+      return await this.getRoom({ userId, roomCode: active.code });
+    } catch (error) {
+      // The room can disappear between the lookup and the read (TTL eviction,
+      // last player leaving). That's "no active room", not an error.
+      if (error instanceof MultiplayerError && error.code === 'ROOM_NOT_FOUND') {
+        return null;
+      }
+      throw error;
+    }
+  }
+
+  /**
+   * Timing constants clients need in order to render countdowns and pick poll
+   * intervals. Served over HTTP so web and mobile never hardcode values that
+   * only exist in server env vars.
+   */
+  getClientConfig() {
+    return {
+      questionTimerSeconds: this.config.questionTimerSeconds,
+      questionResultDelayMs: this.config.questionResultDelayMs,
+      playerOfflineAfterMs: this.config.playerOfflineAfterMs,
+      minPlayersToStart: MIN_PLAYERS_TO_START,
+      pollIntervalsMs: RECOMMENDED_POLL_INTERVALS_MS,
+    };
+  }
+
   async startRoom(input: RoomUserInput): Promise<RoomSnapshot> {
     const roomCode = this.normalizeRoomCode(input.roomCode);
 
@@ -230,10 +283,10 @@ export class MultiplayerService {
       if (room.status !== 'lobby') {
         throw new MultiplayerError('ROOM_ALREADY_STARTED', 'Room has already started', 409);
       }
-      if (room.players.length < 2) {
+      if (room.players.length < MIN_PLAYERS_TO_START) {
         throw new MultiplayerError(
           'MIN_PLAYERS_REQUIRED',
-          'At least 2 players are required to start',
+          `At least ${MIN_PLAYERS_TO_START} players are required to start`,
           409,
         );
       }

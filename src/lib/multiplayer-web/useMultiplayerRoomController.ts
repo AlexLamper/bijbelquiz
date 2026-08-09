@@ -3,9 +3,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { RoomResultEntry, RoomSnapshot, RoomStatus } from '@/lib/multiplayer/types';
 import {
-  getMultiplayerAuthToken,
   getResults,
   getRoomSnapshot,
+  isAbortError,
   joinRoom,
   leaveRoom,
   startRoom,
@@ -14,6 +14,7 @@ import {
 } from './client';
 import { toUserMessage } from './errors';
 import { resolveRoomStatus } from './state-machine';
+import { MultiplayerTokenStore } from './token-store';
 
 interface UseMultiplayerRoomControllerOptions {
   roomCode: string;
@@ -41,7 +42,6 @@ interface MultiplayerControllerState {
   loading: boolean;
   room: RoomSnapshot | null;
   results: RoomResultEntry[];
-  token: string | null;
   errorMessage: string | null;
   connectionStatus: MultiplayerControllerConnectionStatus;
   isStarting: boolean;
@@ -59,7 +59,6 @@ const INITIAL_STATE: MultiplayerControllerState = {
   loading: true,
   room: null,
   results: [],
-  token: null,
   errorMessage: null,
   connectionStatus: 'idle',
   isStarting: false,
@@ -72,24 +71,30 @@ const INITIAL_STATE: MultiplayerControllerState = {
 };
 
 /**
- * Polling cadence (ms) for room state. Tuned to balance responsiveness with
- * Mongo write load (each poll triggers a heartbeat update at most every 10s
- * server-side).
+ * Polling cadence (ms) per room status. Kept in sync with
+ * `RECOMMENDED_POLL_INTERVALS_MS` on the server.
  *
  * - lobby:           2000  - players joining/leaving must feel near-instant
  * - in_progress:      900  - keep the timer accurate-ish on the client
- * - question_result: 1500  - show feedback then transition to next question
+ * - question_result: 1200  - show feedback then transition to next question
  * - finished:        4000  - almost no updates expected, slow down
  */
 const POLL_INTERVALS_MS: Record<RoomStatus, number> = {
   lobby: 2000,
   in_progress: 900,
-  question_result: 1500,
+  question_result: 1200,
   finished: 4000,
 };
 
 /** When polling fails we back off; this is the absolute ceiling. */
 const POLL_FAILURE_MAX_BACKOFF_MS = 6000;
+/** Never schedule a poll tighter than this, whatever the maths says. */
+const MIN_POLL_INTERVAL_MS = 250;
+/**
+ * Grace period added after a server-side deadline before we poll for the
+ * transition, so we don't arrive a few milliseconds early and waste a request.
+ */
+const DEADLINE_POLL_GRACE_MS = 200;
 
 function normalizeRoomCode(roomCode: string): string {
   return roomCode.trim().toUpperCase();
@@ -108,32 +113,37 @@ function asDebugLine(entry: MultiplayerDebugEntry): string {
   return `${entry.timestamp} [${entry.level}] ${entry.message}${serializeDebugDetails(entry.details)}`;
 }
 
-function pickPollInterval(status: RoomStatus | null, failures: number): number {
-  const base = status ? POLL_INTERVALS_MS[status] : POLL_INTERVALS_MS.lobby;
-  if (failures === 0) return base;
-  // Exponential backoff with cap.
-  const backoff = Math.min(base * 2 ** Math.min(failures, 4), POLL_FAILURE_MAX_BACKOFF_MS);
-  return backoff;
-}
-
 /**
- * Encapsulates a single room session: token bootstrap, optional join, and
- * the perpetual snapshot polling loop.
+ * Encapsulates a single room session: token bootstrap, optional join, and the
+ * perpetual snapshot polling loop.
+ *
+ * Everything that is *not* React state — the poll timer, the abort handle, the
+ * failure counter, the server clock offset — lives on the instance rather than
+ * in `useState`. That matters: React's StrictMode double-invokes state updater
+ * functions in development, so scheduling a timer from inside an updater used
+ * to queue two timers per poll, doubling the request rate on every tick until
+ * the tab was hammering the API. Updaters here are pure.
  *
  * Lifecycle:
  *  - construct(roomCode, userId, autoJoin, callbacks)
  *  - start()      - fetches token + (optionally) joins room + starts polling
  *  - dispose()    - cancels in-flight work, stops polling, marks disposed
  *
- * Idempotency: dispose() is safe to call multiple times. start() is NOT
- * meant to be called more than once on the same instance - to "restart"
- * a session, dispose the old one and create a new one.
+ * Idempotency: dispose() is safe to call multiple times. start() is not meant
+ * to be called more than once on the same instance — to restart a session,
+ * dispose the old one and create a new one.
  */
 class RoomSession {
   private disposed = false;
-  private token: string | null = null;
+  private readonly tokens = new MultiplayerTokenStore();
   private pollTimer: ReturnType<typeof setTimeout> | null = null;
-  private inFlightPoll: AbortController | null = null;
+  private pollAbort: AbortController | null = null;
+  private polling = false;
+  private consecutiveFailures = 0;
+  private lastRoom: RoomSnapshot | null = null;
+  private resultsFetchedForRoom = false;
+  /** localNow - serverTimeMs at the last successful read. */
+  private clockOffsetMs = 0;
 
   constructor(
     private readonly roomCode: string,
@@ -149,17 +159,18 @@ class RoomSession {
     return this.disposed;
   }
 
-  getToken(): string | null {
-    return this.token;
-  }
-
   emitDebug(level: MultiplayerDebugLevel, message: string, details?: Record<string, unknown>): void {
+    if (this.disposed && level !== 'info') return;
     this.callbacks.onDebug({
       timestamp: new Date().toISOString(),
       level,
       message,
       details,
     });
+  }
+
+  private patch(partial: Partial<MultiplayerControllerState>): void {
+    this.callbacks.onState((current) => ({ ...current, ...partial }));
   }
 
   async start(): Promise<void> {
@@ -169,54 +180,36 @@ class RoomSession {
       autoJoin: this.autoJoin,
     });
 
-    this.callbacks.onState((current) => ({
-      ...current,
+    this.patch({
       loading: true,
       errorMessage: null,
       roomClosed: false,
       results: [],
       connectionStatus: 'connecting',
       consecutiveFailures: 0,
-    }));
+    });
 
     try {
-      const token = await getMultiplayerAuthToken();
-      if (this.disposed) return;
-      this.token = token;
-      this.emitDebug('info', 'Fetched multiplayer auth token', { tokenLength: token.length });
-
-      const room = this.autoJoin
-        ? await joinRoom({ token, roomCode: this.roomCode })
-        : await getRoomSnapshot({ token, roomCode: this.roomCode });
-
+      const room = await this.tokens.run((token) => this.enterRoom(token));
       if (this.disposed) return;
 
-      this.emitDebug('info', this.autoJoin ? 'Joined room successfully' : 'Loaded room snapshot', {
+      this.emitDebug('info', this.autoJoin ? 'Joined room' : 'Loaded room snapshot', {
         roomCode: room.code,
         status: room.status,
         players: room.players.length,
         revision: room.revision,
       });
 
-      this.callbacks.onState((current) => ({
-        ...current,
-        token,
-        loading: false,
-        errorMessage: null,
-        room: this.mergeRoom(current.room, room),
-        roomClosed: false,
-        connectionStatus: 'connected',
-        consecutiveFailures: 0,
-        lastSyncedAtMs: Date.now(),
-      }));
+      this.applySnapshot(room, { clearError: true });
+      this.patch({ loading: false, connectionStatus: 'connected' });
 
       if (room.status === 'finished') {
-        await this.fetchResults(token);
+        void this.fetchResults();
       }
 
-      this.scheduleNextPoll(room.status, 0);
+      this.scheduleNextPoll();
     } catch (error) {
-      if (this.disposed) return;
+      if (this.disposed || isAbortError(error)) return;
 
       this.emitDebug('error', 'Failed to start room session', {
         reason: error instanceof Error ? error.message : 'unknown_error',
@@ -225,32 +218,55 @@ class RoomSession {
       const isRoomNotFound =
         error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND';
 
-      this.callbacks.onState((current) => ({
-        ...current,
+      this.patch({
         loading: false,
         roomClosed: isRoomNotFound,
         errorMessage: toUserMessage(error),
         connectionStatus: 'disconnected',
-      }));
+      });
     }
   }
 
   /**
-   * Triggered manually after a state-changing action (e.g. submitAnswer)
-   * so the UI updates immediately rather than waiting for the next poll.
+   * Join the room, falling back to a plain read when joining is not possible
+   * but the room is still viewable. A player who reloads mid-game, or who
+   * follows a link to a game already in progress, should see the live room
+   * rather than a dead-end error card.
+   */
+  private async enterRoom(token: string): Promise<RoomSnapshot> {
+    if (!this.autoJoin) {
+      return getRoomSnapshot({ token, roomCode: this.roomCode });
+    }
+
+    try {
+      return await joinRoom({ token, roomCode: this.roomCode });
+    } catch (error) {
+      const canStillWatch =
+        error instanceof MultiplayerClientHttpError &&
+        (error.code === 'ROOM_ALREADY_STARTED' ||
+          error.code === 'ROOM_FINISHED' ||
+          error.code === 'ROOM_FULL');
+
+      if (!canStillWatch) {
+        throw error;
+      }
+
+      this.emitDebug('warn', 'Join rejected, falling back to read-only snapshot', {
+        code: error.code,
+      });
+      return getRoomSnapshot({ token, roomCode: this.roomCode });
+    }
+  }
+
+  /**
+   * Poll immediately, cancelling anything already in flight. Used after a
+   * state-changing action so the UI updates without waiting a full interval.
    */
   async refreshNow(): Promise<void> {
-    const token = this.token;
-    if (!token || this.disposed) return;
+    if (this.disposed) return;
 
-    if (this.pollTimer) {
-      clearTimeout(this.pollTimer);
-      this.pollTimer = null;
-    }
-    if (this.inFlightPoll) {
-      this.inFlightPoll.abort();
-      this.inFlightPoll = null;
-    }
+    this.clearTimer();
+    this.abortInFlight();
     await this.runPoll();
   }
 
@@ -258,148 +274,203 @@ class RoomSession {
     if (this.disposed) return;
     this.disposed = true;
 
-    if (this.pollTimer) {
-      clearTimeout(this.pollTimer);
-      this.pollTimer = null;
-    }
-    if (this.inFlightPoll) {
-      this.inFlightPoll.abort();
-      this.inFlightPoll = null;
-    }
+    this.clearTimer();
+    this.abortInFlight();
     this.emitDebug('info', 'Disposing room session');
-    this.callbacks.onState((current) => ({
-      ...current,
-      connectionStatus: 'disconnected',
-    }));
+    this.patch({ connectionStatus: 'disconnected' });
+  }
+
+  /** Token accessor for one-off authenticated calls (start/answer/leave). */
+  runAuthenticated<T>(call: (token: string) => Promise<T>): Promise<T> {
+    return this.tokens.run(call);
   }
 
   // ── Polling loop ────────────────────────────────────────────────────────
 
-  private scheduleNextPoll(currentStatus: RoomStatus, failures: number): void {
+  private clearTimer(): void {
+    if (this.pollTimer) {
+      clearTimeout(this.pollTimer);
+      this.pollTimer = null;
+    }
+  }
+
+  private abortInFlight(): void {
+    if (this.pollAbort) {
+      this.pollAbort.abort();
+      this.pollAbort = null;
+    }
+  }
+
+  /**
+   * Pick the delay before the next poll. Normally the per-status cadence, but
+   * when the server has published a deadline that lands sooner (the question
+   * timer, or the end of the between-questions pause) we poll just after it so
+   * the transition shows up immediately instead of up to a full interval late.
+   */
+  private computeDelayMs(): number {
+    if (this.consecutiveFailures > 0) {
+      const base = POLL_INTERVALS_MS[this.lastRoom?.status ?? 'lobby'];
+      return Math.min(base * 2 ** Math.min(this.consecutiveFailures, 4), POLL_FAILURE_MAX_BACKOFF_MS);
+    }
+
+    const room = this.lastRoom;
+    const base = POLL_INTERVALS_MS[room?.status ?? 'lobby'];
+    if (!room) return base;
+
+    const serverDeadline =
+      room.status === 'in_progress'
+        ? room.currentQuestion?.deadlineAtMs ?? null
+        : room.status === 'question_result'
+          ? room.resultPhaseEndsAtMs
+          : null;
+
+    if (serverDeadline == null) return base;
+
+    const untilDeadlineMs = serverDeadline + this.clockOffsetMs - Date.now() + DEADLINE_POLL_GRACE_MS;
+    if (untilDeadlineMs > 0 && untilDeadlineMs < base) {
+      return Math.max(MIN_POLL_INTERVAL_MS, untilDeadlineMs);
+    }
+
+    return base;
+  }
+
+  private scheduleNextPoll(): void {
     if (this.disposed) return;
 
-    const intervalMs = pickPollInterval(currentStatus, failures);
+    this.clearTimer();
     this.pollTimer = setTimeout(() => {
       this.pollTimer = null;
       void this.runPoll();
-    }, intervalMs);
+    }, this.computeDelayMs());
   }
 
   private async runPoll(): Promise<void> {
-    if (this.disposed) return;
-    const token = this.token;
-    if (!token) return;
+    if (this.disposed || this.polling) return;
 
-    this.inFlightPoll = new AbortController();
-
-    let success = false;
-    let nextStatus: RoomStatus = 'lobby';
+    this.polling = true;
+    const abort = new AbortController();
+    this.pollAbort = abort;
 
     try {
-      const room = await getRoomSnapshot({ token, roomCode: this.roomCode });
+      const room = await this.tokens.run(
+        (token) => getRoomSnapshot({ token, roomCode: this.roomCode, signal: abort.signal }),
+        abort.signal,
+      );
       if (this.disposed) return;
 
-      success = true;
-      nextStatus = room.status;
-
-      this.callbacks.onState((current) => {
-        const merged = this.mergeRoom(current.room, room);
-        // If we just transitioned to `finished`, schedule a results fetch on
-        // the next tick rather than blocking this update.
-        const willFetchResults = current.room?.status !== 'finished' && room.status === 'finished';
-        if (willFetchResults) {
-          void this.fetchResults(token);
-        }
-        return {
-          ...current,
-          room: merged,
-          loading: false,
-          roomClosed: false,
-          connectionStatus: 'connected',
-          consecutiveFailures: 0,
-          errorMessage: this.shouldRetainError(current.errorMessage) ? current.errorMessage : null,
-          lastSyncedAtMs: Date.now(),
-        };
+      this.consecutiveFailures = 0;
+      const previousStatus = this.lastRoom?.status ?? null;
+      this.applySnapshot(room, { clearError: true });
+      this.patch({
+        loading: false,
+        roomClosed: false,
+        connectionStatus: 'connected',
+        consecutiveFailures: 0,
       });
-    } catch (error) {
-      if (this.disposed) return;
 
-      // Auth/structural errors require a different reaction than transient
-      // network ones - don't keep polling forever if the room is gone.
+      if (previousStatus !== 'finished' && room.status === 'finished') {
+        void this.fetchResults();
+      }
+    } catch (error) {
+      if (this.disposed || isAbortError(error)) return;
+
+      // A room that no longer exists is terminal — stop polling rather than
+      // retrying a 404 forever.
       if (error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND') {
         this.emitDebug('warn', 'Polling discovered ROOM_NOT_FOUND - closing session');
-        this.callbacks.onState((current) => ({
-          ...current,
+        this.clearTimer();
+        this.patch({
           loading: false,
           roomClosed: true,
           errorMessage: toUserMessage(error),
           connectionStatus: 'disconnected',
-        }));
+        });
         return;
       }
 
-      this.callbacks.onState((current) => {
-        const failures = current.consecutiveFailures + 1;
-        this.emitDebug('warn', 'Snapshot poll failed', {
-          attempt: failures,
-          reason: error instanceof Error ? error.message : 'unknown_error',
-        });
-        return {
-          ...current,
-          consecutiveFailures: failures,
-          connectionStatus: failures >= 2 ? 'reconnecting' : current.connectionStatus,
-        };
+      this.consecutiveFailures += 1;
+      this.emitDebug('warn', 'Snapshot poll failed', {
+        attempt: this.consecutiveFailures,
+        reason: error instanceof Error ? error.message : 'unknown_error',
       });
-      nextStatus = 'lobby';
+      this.patch({
+        consecutiveFailures: this.consecutiveFailures,
+        connectionStatus: this.consecutiveFailures >= 2 ? 'reconnecting' : 'connected',
+      });
     } finally {
-      this.inFlightPoll = null;
+      this.polling = false;
+      if (this.pollAbort === abort) {
+        this.pollAbort = null;
+      }
     }
 
-    if (this.disposed) return;
+    this.scheduleNextPoll();
+  }
 
-    this.callbacks.onState((current) => {
-      this.scheduleNextPoll(success ? nextStatus : (current.room?.status ?? 'lobby'), current.consecutiveFailures);
-      return current;
+  /**
+   * Merge a freshly received snapshot into state, dropping any that arrived
+   * out of order, and refresh the server clock offset used for countdowns.
+   */
+  applySnapshot(next: RoomSnapshot, options: { clearError?: boolean } = {}): void {
+    const merged = this.mergeRoom(this.lastRoom, next);
+    if (merged === this.lastRoom && this.lastRoom !== null) {
+      return;
+    }
+
+    this.clockOffsetMs = Date.now() - next.serverTimeMs;
+    this.lastRoom = merged;
+
+    this.patch({
+      room: merged,
+      lastSyncedAtMs: Date.now(),
+      ...(options.clearError ? { errorMessage: null } : {}),
     });
   }
 
   private mergeRoom(current: RoomSnapshot | null, next: RoomSnapshot): RoomSnapshot {
-    // Reject snapshots that walk the state machine backwards (e.g. due to
-    // an out-of-order response on a slow link).
-    const resolvedStatus = resolveRoomStatus(current?.status ?? null, next.status);
-    if (current && resolvedStatus !== next.status) {
+    if (!current) {
+      return next;
+    }
+
+    // Reject snapshots that walk the state machine backwards (e.g. due to an
+    // out-of-order response on a slow link).
+    const resolvedStatus = resolveRoomStatus(current.status, next.status);
+    if (resolvedStatus !== next.status) {
       return current;
     }
-    if (current && current.revision > next.revision) {
-      // Stale snapshot.
+
+    // Same status but an older revision means a stale response overtook a
+    // fresher one; keep what we have.
+    if (current.status === next.status && current.revision > next.revision) {
       return current;
     }
-    return { ...next, status: resolvedStatus };
+
+    return next;
   }
 
-  private async fetchResults(token: string): Promise<void> {
+  private async fetchResults(): Promise<void> {
+    if (this.disposed || this.resultsFetchedForRoom) return;
+    this.resultsFetchedForRoom = true;
+
     try {
-      const results = await getResults({ token, roomCode: this.roomCode });
+      const results = await this.tokens.run((token) =>
+        getResults({ token, roomCode: this.roomCode }),
+      );
       if (this.disposed) return;
-      this.callbacks.onState((current) => ({ ...current, results }));
+      this.patch({ results });
     } catch (error) {
-      if (this.disposed) return;
+      if (this.disposed || isAbortError(error)) return;
+      this.resultsFetchedForRoom = false;
       this.emitDebug('warn', 'Failed to fetch results', {
         reason: error instanceof Error ? error.message : 'unknown_error',
       });
     }
   }
-
-  private shouldRetainError(message: string | null): boolean {
-    if (!message) return false;
-    // Retain the last server-supplied user-facing error until the user
-    // explicitly clears it. Network reconnection alone shouldn't.
-    return false;
-  }
 }
 
 export function useMultiplayerRoomController(options: UseMultiplayerRoomControllerOptions) {
   const normalizedRoomCode = useMemo(() => normalizeRoomCode(options.roomCode), [options.roomCode]);
+  const autoJoin = options.autoJoin !== false;
   const sessionRef = useRef<RoomSession | null>(null);
 
   const [state, setState] = useState<MultiplayerControllerState>(INITIAL_STATE);
@@ -422,16 +493,11 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
 
   useEffect(() => {
     if (!options.userId) {
-      pushDebugEntry({
-        timestamp: new Date().toISOString(),
-        level: 'warn',
-        message: 'Skipping room controller init - userId is null. Will retry once authenticated.',
-      });
       setState((current) => ({ ...current, loading: false }));
       return;
     }
 
-    const session = new RoomSession(normalizedRoomCode, options.userId, options.autoJoin !== false, {
+    const session = new RoomSession(normalizedRoomCode, options.userId, autoJoin, {
       onState: setState,
       onDebug: pushDebugEntry,
     });
@@ -443,31 +509,44 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
       sessionRef.current = null;
       session.dispose();
     };
-  }, [normalizedRoomCode, options.userId, options.autoJoin, pushDebugEntry]);
+  }, [normalizedRoomCode, options.userId, autoJoin, pushDebugEntry]);
+
+  /**
+   * Poll immediately when the tab becomes visible again. Browsers throttle
+   * background timers hard, so a tab restored after a minute is otherwise
+   * showing a stale room until the next (throttled) tick lands.
+   */
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') {
+        void sessionRef.current?.refreshNow();
+      }
+    };
+
+    document.addEventListener('visibilitychange', onVisible);
+    window.addEventListener('online', onVisible);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisible);
+      window.removeEventListener('online', onVisible);
+    };
+  }, []);
 
   const refreshSnapshot = useCallback(async () => {
-    const session = sessionRef.current;
-    if (!session) return;
-    await session.refreshNow();
+    await sessionRef.current?.refreshNow();
   }, []);
 
   const start = useCallback(async () => {
     const session = sessionRef.current;
-    const token = session?.getToken();
-    if (!token || !session) return;
+    if (!session) return;
 
     setState((current) => ({ ...current, isStarting: true, errorMessage: null }));
     try {
-      const room = await startRoom({ token, roomCode: normalizedRoomCode });
-      setState((current) => {
-        const resolvedStatus = resolveRoomStatus(current.room?.status ?? null, room.status);
-        if (current.room && resolvedStatus !== room.status) return current;
-        return {
-          ...current,
-          room: { ...room, status: resolvedStatus },
-          lastSyncedAtMs: Date.now(),
-        };
-      });
+      const room = await session.runAuthenticated((token) =>
+        startRoom({ token, roomCode: normalizedRoomCode }),
+      );
+      session.applySnapshot(room);
       await session.refreshNow();
     } catch (error) {
       setState((current) => ({ ...current, errorMessage: toUserMessage(error) }));
@@ -479,8 +558,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
   const answer = useCallback(
     async (questionId: string, answerId: string) => {
       const session = sessionRef.current;
-      const token = session?.getToken();
-      if (!token || !session) return;
+      if (!session) return;
 
       const currentSnapshot = stateSnapshotRef.current;
       if (currentSnapshot.isSubmittingAnswer) return;
@@ -491,10 +569,17 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
       setState((current) => ({ ...current, isSubmittingAnswer: true, errorMessage: null }));
 
       try {
-        await submitAnswer({ token, roomCode: normalizedRoomCode, questionId, answerId });
+        const room = await session.runAuthenticated((token) =>
+          submitAnswer({ token, roomCode: normalizedRoomCode, questionId, answerId }),
+        );
+        // The answer endpoint returns the post-answer snapshot, so the choice
+        // is reflected instantly instead of after the next poll.
+        if (room) session.applySnapshot(room);
         await session.refreshNow();
       } catch (error) {
         setState((current) => ({ ...current, errorMessage: toUserMessage(error) }));
+        // Whatever went wrong, re-sync so the UI matches the server.
+        void session.refreshNow();
       } finally {
         setState((current) => ({ ...current, isSubmittingAnswer: false }));
       }
@@ -504,12 +589,11 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
 
   const leave = useCallback(async () => {
     const session = sessionRef.current;
-    const token = session?.getToken();
-    if (!token || !session) return;
+    if (!session) return;
 
     setState((current) => ({ ...current, isLeaving: true, errorMessage: null }));
     try {
-      await leaveRoom({ token, roomCode: normalizedRoomCode });
+      await session.runAuthenticated((token) => leaveRoom({ token, roomCode: normalizedRoomCode }));
       session.dispose();
       sessionRef.current = null;
     } catch (error) {
@@ -526,9 +610,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
   // Stable ref for the latest state - used inside `answer` so we don't recreate
   // the callback on every render.
   const stateSnapshotRef = useRef(state);
-  useEffect(() => {
-    stateSnapshotRef.current = state;
-  }, [state]);
+  stateSnapshotRef.current = state;
 
   const currentPlayer = state.room?.players.find((p) => p.id === options.userId) ?? null;
   const isHost = currentPlayer?.isHost ?? false;

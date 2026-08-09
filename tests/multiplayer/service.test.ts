@@ -477,3 +477,56 @@ test('concurrency: parallel joins both succeed when there is room', async () => 
   assert.equal(r1.code, 'ABC123');
   assert.equal(r2.code, 'ABC123');
 });
+
+test('active room lookup returns the room a player is in', async () => {
+  const { service } = createService();
+  await service.createRoom({ userId: 'host', quizId: 'quiz-1', maxPlayers: 4 });
+  await service.joinRoom({ userId: 'p2', roomCode: 'ABC123' });
+
+  const forHost = await service.getActiveRoom('host');
+  assert.equal(forHost?.code, 'ABC123');
+
+  const forPlayer = await service.getActiveRoom('p2');
+  assert.equal(forPlayer?.code, 'ABC123');
+
+  const forStranger = await service.getActiveRoom('p5');
+  assert.equal(forStranger, null);
+});
+
+test('active room lookup ignores finished games', async () => {
+  const { service, advance } = createService({ questionCount: 1, questionTimerSeconds: 10 });
+  await service.createRoom({ userId: 'host', quizId: 'quiz-1', maxPlayers: 4 });
+  await service.joinRoom({ userId: 'p2', roomCode: 'ABC123' });
+  await service.startRoom({ userId: 'host', roomCode: 'ABC123' });
+
+  advance(11_000);
+  const finished = await service.getRoom({ userId: 'host', roomCode: 'ABC123' });
+  assert.equal(finished.status, 'finished');
+
+  assert.equal(await service.getActiveRoom('host'), null);
+});
+
+test('active room lookup survives a room deleted between lookup and read', async () => {
+  const { service, repository } = createService();
+  await service.createRoom({ userId: 'host', quizId: 'quiz-1', maxPlayers: 4 });
+
+  const originalFind = repository.findActiveByUserId.bind(repository);
+  repository.findActiveByUserId = async (userId: string) => {
+    const room = await originalFind(userId);
+    await repository.delete('ABC123');
+    return room;
+  };
+
+  assert.equal(await service.getActiveRoom('host'), null);
+});
+
+test('client config exposes the values clients need to render timers', async () => {
+  const { service } = createService({ questionTimerSeconds: 25, questionResultDelayMs: 3000 });
+
+  const config = service.getClientConfig();
+  assert.equal(config.questionTimerSeconds, 25);
+  assert.equal(config.questionResultDelayMs, 3000);
+  assert.equal(config.minPlayersToStart, 2);
+  assert.ok(config.pollIntervalsMs.in_progress > 0);
+  assert.ok(config.pollIntervalsMs.lobby > 0);
+});

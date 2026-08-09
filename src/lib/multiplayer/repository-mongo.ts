@@ -166,6 +166,18 @@ export class MongoRoomRepository implements RoomRepository {
     return doc ? docToPersisted(doc) : null;
   }
 
+  async findActiveByUserId(userId: string): Promise<PersistedRoom | null> {
+    await connectDB();
+
+    // Backed by the { 'players.id': 1, status: 1 } compound index.
+    const doc = await MultiplayerRoom.findOne({
+      'players.id': userId,
+      status: { $ne: 'finished' },
+    }).sort({ updatedAt: -1 });
+
+    return doc ? docToPersisted(doc) : null;
+  }
+
   async save(room: PersistedRoom, expectedRevision: number): Promise<boolean> {
     await connectDB();
 

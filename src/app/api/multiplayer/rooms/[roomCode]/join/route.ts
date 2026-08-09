@@ -1,8 +1,6 @@
 import { NextRequest } from 'next/server';
 import { handleJoinRoom } from '@/lib/multiplayer/handlers';
 
-/** Legacy alias for `/api/multiplayer/rooms/:roomCode/join`. */
-
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 

@@ -15,7 +15,6 @@ export interface MultiplayerRuntime {
 }
 
 declare global {
-  // eslint-disable-next-line no-var
   var __multiplayerRuntime: MultiplayerRuntime | undefined;
 }
 
@@ -32,6 +31,18 @@ function makeInstanceId(): string {
  *    *room state* in memory, so cross-instance fragmentation doesn't matter.
  */
 export function getMultiplayerRuntime(): MultiplayerRuntime {
+  const cached = globalThis.__multiplayerRuntime;
+
+  // `instanceof` against the *currently loaded* class is what makes this safe
+  // across dev hot reloads: after an edit the module is re-evaluated with new
+  // class identities, but the object cached on globalThis still belongs to the
+  // previous evaluation. Serving that stale service means missing methods and,
+  // worse, `MultiplayerError`s that the current `instanceof` check no longer
+  // recognises - which turns every 404/409 into a 500. Rebuild instead.
+  if (cached && !(cached.service instanceof MultiplayerService)) {
+    globalThis.__multiplayerRuntime = undefined;
+  }
+
   if (!globalThis.__multiplayerRuntime) {
     const instanceId = makeInstanceId();
     const bootedAt = Date.now();

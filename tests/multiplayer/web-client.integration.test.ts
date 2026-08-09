@@ -99,7 +99,7 @@ function readHeader(headers: HeadersInit | undefined, name: string): string | nu
   return null;
 }
 
-test('web multiplayer client flow hits expected mobile endpoints and payload shapes', async () => {
+test('web multiplayer client flow hits the canonical endpoints and payload shapes', async () => {
   const originalFetch = globalThis.fetch;
   const calls: FetchCall[] = [];
 
@@ -113,27 +113,27 @@ test('web multiplayer client flow hits expected mobile endpoints and payload sha
       return new Response(JSON.stringify({ token: 'token-1' }), { status: 200 });
     }
 
-    if (url === '/api/mobile/multiplayer/rooms' && method === 'POST') {
+    if (url === '/api/multiplayer/rooms' && method === 'POST') {
       return new Response(JSON.stringify({ room: createRoomSnapshot('lobby') }), { status: 200 });
     }
 
-    if (url === '/api/mobile/multiplayer/rooms/ABC123/join' && method === 'POST') {
+    if (url === '/api/multiplayer/rooms/ABC123/join' && method === 'POST') {
       return new Response(JSON.stringify({ room: createRoomSnapshot('lobby') }), { status: 200 });
     }
 
-    if (url === '/api/mobile/multiplayer/rooms/ABC123/start' && method === 'POST') {
+    if (url === '/api/multiplayer/rooms/ABC123/start' && method === 'POST') {
       return new Response(JSON.stringify({ room: createRoomSnapshot('in_progress') }), { status: 200 });
     }
 
-    if (url === '/api/mobile/multiplayer/rooms/ABC123/answer' && method === 'POST') {
+    if (url === '/api/multiplayer/rooms/ABC123/answer' && method === 'POST') {
       return new Response(JSON.stringify({ ok: true }), { status: 200 });
     }
 
-    if (url === '/api/mobile/multiplayer/rooms/ABC123' && method === 'GET') {
+    if (url === '/api/multiplayer/rooms/ABC123' && method === 'GET') {
       return new Response(JSON.stringify({ room: createRoomSnapshot('in_progress') }), { status: 200 });
     }
 
-    if (url === '/api/mobile/multiplayer/rooms/ABC123/results' && method === 'GET') {
+    if (url === '/api/multiplayer/rooms/ABC123/results' && method === 'GET') {
       return new Response(
         JSON.stringify({
           results: [
@@ -150,7 +150,7 @@ test('web multiplayer client flow hits expected mobile endpoints and payload sha
       );
     }
 
-    if (url === '/api/mobile/multiplayer/rooms/ABC123/leave' && method === 'POST') {
+    if (url === '/api/multiplayer/rooms/ABC123/leave' && method === 'POST') {
       return new Response(JSON.stringify({ ok: true }), { status: 200 });
     }
 
@@ -188,7 +188,7 @@ test('web multiplayer client flow hits expected mobile endpoints and payload sha
     assert.equal(calls.length, 8);
 
     const createCall = calls[1];
-    assert.equal(String(createCall.input), '/api/mobile/multiplayer/rooms');
+    assert.equal(String(createCall.input), '/api/multiplayer/rooms');
     assert.equal(createCall.init?.method, 'POST');
     assert.equal(readHeader(createCall.init?.headers, 'authorization'), 'Bearer token-1');
 
@@ -197,7 +197,7 @@ test('web multiplayer client flow hits expected mobile endpoints and payload sha
     assert.equal(createBody.maxPlayers, 8);
 
     const answerCall = calls[4];
-    assert.equal(String(answerCall.input), '/api/mobile/multiplayer/rooms/ABC123/answer');
+    assert.equal(String(answerCall.input), '/api/multiplayer/rooms/ABC123/answer');
     assert.equal(answerCall.init?.method, 'POST');
     const answerBody = JSON.parse(String(answerCall.init?.body));
     assert.equal(answerBody.questionId, 'q1');

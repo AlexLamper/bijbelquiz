@@ -22,6 +22,15 @@ export class InMemoryRoomRepository implements RoomRepository {
     return room ? this.deepClone(room) : null;
   }
 
+  async findActiveByUserId(userId: string): Promise<PersistedRoom | null> {
+    const candidates = Array.from(this.rooms.values())
+      .filter((room) => room.status !== 'finished' && room.players.some((p) => p.id === userId))
+      .sort((left, right) => right.updatedAtMs - left.updatedAtMs);
+
+    const room = candidates[0];
+    return room ? this.deepClone(room) : null;
+  }
+
   async save(room: PersistedRoom, expectedRevision: number): Promise<boolean> {
     const existing = this.rooms.get(room.code);
     if (!existing) {

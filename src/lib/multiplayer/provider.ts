@@ -1,5 +1,17 @@
+import mongoose from 'mongoose';
 import { connectDB, Quiz, User } from '@/database';
 import { validationError } from './errors';
+
+/**
+ * Mongoose throws a CastError when an id isn't a valid ObjectId, which used to
+ * surface as a 500 "Internal server error" for perfectly ordinary bad input
+ * (a mistyped quiz id, a JWT minted with an OAuth `sub` instead of the Mongo
+ * `_id`). Both callers below treat `null` as "not found", so filtering here
+ * converts those into the correct 404/401 instead.
+ */
+function isObjectId(value: string): boolean {
+  return mongoose.Types.ObjectId.isValid(value) && String(new mongoose.Types.ObjectId(value)) === value;
+}
 import {
   ImmutableAnswer,
   ImmutableQuestion,
@@ -136,6 +148,10 @@ function parseQuestions(rawQuestions: unknown): ImmutableQuestion[] {
 
 export class MongoMultiplayerDataProvider implements MultiplayerDataProvider {
   async getUserDisplayName(userId: string): Promise<string | null> {
+    if (!isObjectId(userId)) {
+      return null;
+    }
+
     await connectDB();
 
     const user = await User.findById(userId).lean();
@@ -157,6 +173,10 @@ export class MongoMultiplayerDataProvider implements MultiplayerDataProvider {
   }
 
   async getQuizSnapshot(quizId: string): Promise<ProviderQuizSnapshot | null> {
+    if (!isObjectId(quizId)) {
+      return null;
+    }
+
     await connectDB();
 
     const quiz = await Quiz.findOne({ _id: quizId, status: 'approved' }).lean();

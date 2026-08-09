@@ -24,6 +24,29 @@ export interface MultiplayerOkResponse {
   ok: true;
 }
 
+/** Body of `GET /api/multiplayer/rooms` — what this user may do. */
+export interface MultiplayerCapability {
+  canCreateRoom: boolean;
+  isPremium: boolean;
+  hasUsedFreeRoom: boolean;
+  freeRoomsRemaining: number | null;
+  maxPlayersFree: number;
+  maxPlayersPremium: number;
+  maxPlayersForUser: number;
+}
+
+/**
+ * Body of `GET /api/multiplayer/config`. Server-owned timings so no client
+ * hardcodes values that live in env vars.
+ */
+export interface MultiplayerRuntimeConfig {
+  questionTimerSeconds: number;
+  questionResultDelayMs: number;
+  playerOfflineAfterMs: number;
+  minPlayersToStart: number;
+  pollIntervalsMs: Record<RoomStatus, number>;
+}
+
 export interface MultiplayerStateTransition {
   from: RoomStatus;
   to: RoomStatus;
