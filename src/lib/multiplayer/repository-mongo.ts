@@ -192,7 +192,7 @@ export class MongoRoomRepository implements RoomRepository {
           revision: nextRevision,
         },
       },
-      { new: true },
+      { returnDocument: 'after' },
     );
 
     if (!result) {

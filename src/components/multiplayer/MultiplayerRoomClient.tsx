@@ -326,9 +326,15 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                   {errorMessage}
                 </p>
               )}
-              <Button asChild>
-                <Link href="/samen-spelen">Terug naar samen spelen</Link>
-              </Button>
+              <div className="flex flex-wrap gap-3">
+                <Button variant="outline" onClick={() => void refreshSnapshot()}>
+                  <RefreshCcw className="mr-2 h-4 w-4" />
+                  Opnieuw proberen
+                </Button>
+                <Button asChild>
+                  <Link href="/samen-spelen">Terug naar samen spelen</Link>
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>

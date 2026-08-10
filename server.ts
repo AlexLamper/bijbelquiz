@@ -1,5 +1,5 @@
 import { createServer } from 'node:http';
-import { createServer as createNetServer } from 'node:net';
+import { createConnection } from 'node:net';
 import { parse } from 'node:url';
 import next from 'next';
 
@@ -23,11 +23,19 @@ async function bootstrap(): Promise<void> {
   const requestedPort = Number(process.env.PORT || 3000);
   const shouldAutoPickPort = dev && !process.env.PORT;
   const port = shouldAutoPickPort
-    ? await findAvailablePort(hostname, requestedPort)
+    ? await findAvailablePort(requestedPort)
     : requestedPort;
 
   if (port !== requestedPort) {
     console.log(`> Port ${requestedPort} in use, using ${port} instead`);
+  }
+
+  // An explicitly requested port that someone else already owns must fail loudly.
+  // `listen()` alone won't tell us: see the note on isPortAvailable below.
+  if (!shouldAutoPickPort && !(await isPortAvailable(port))) {
+    throw new Error(
+      `Port ${port} is already in use by another process. Stop it, or start with a different PORT.`,
+    );
   }
 
   const app = next({ dev, hostname, port });
@@ -47,12 +55,12 @@ async function bootstrap(): Promise<void> {
   });
 }
 
-async function findAvailablePort(hostname: string, startPort: number): Promise<number> {
+async function findAvailablePort(startPort: number): Promise<number> {
   let port = startPort;
   const maxAttempts = 20;
 
   for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
-    const available = await isPortAvailable(hostname, port);
+    const available = await isPortAvailable(port);
     if (available) {
       return port;
     }
@@ -62,24 +70,47 @@ async function findAvailablePort(hostname: string, startPort: number): Promise<n
   throw new Error(`No available port found starting from ${startPort}`);
 }
 
-async function isPortAvailable(hostname: string, port: number): Promise<boolean> {
-  return new Promise((resolve, reject) => {
-    const probe = createNetServer();
+/**
+ * Ask whether anything already answers on this port, by connecting to it.
+ *
+ * The obvious implementation — try to `listen()` and treat EADDRINUSE as "taken"
+ * — does not work here. `listen(port, 'localhost')` resolves to ::1, and Windows
+ * happily lets a socket bound to ::1 coexist with another process already
+ * holding `:::port` or `0.0.0.0:port`. Both servers then believe they own the
+ * port and each answers on a different IP stack, so `http://localhost:port`
+ * reaches this app or the other one depending on which stack the client picks.
+ * Requests that land in the wrong app come back as bare 404s, which looks
+ * exactly like a missing API route.
+ *
+ * Connecting sidesteps every bind-semantics quirk: if either loopback address
+ * accepts a TCP connection, something is already serving this port.
+ */
+async function isPortAvailable(port: number): Promise<boolean> {
+  for (const host of ['127.0.0.1', '::1']) {
+    if (await isSomethingListening(host, port)) {
+      return false;
+    }
+  }
 
-    probe.once('error', (error: NodeJS.ErrnoException) => {
-      probe.close();
-      if (error.code === 'EADDRINUSE') {
-        resolve(false);
-        return;
-      }
-      reject(error);
-    });
+  return true;
+}
 
-    probe.once('listening', () => {
-      probe.close(() => resolve(true));
-    });
+function isSomethingListening(host: string, port: number): Promise<boolean> {
+  return new Promise((resolve) => {
+    const socket = createConnection({ host, port });
 
-    probe.listen(port, hostname);
+    const settle = (listening: boolean) => {
+      socket.removeAllListeners();
+      socket.destroy();
+      resolve(listening);
+    };
+
+    socket.setTimeout(1000);
+    socket.once('connect', () => settle(true));
+    socket.once('timeout', () => settle(false));
+    // ECONNREFUSED (nothing there) and EADDRNOTAVAIL (stack unavailable) both
+    // mean this address isn't serving the port.
+    socket.once('error', () => settle(false));
   });
 }
 

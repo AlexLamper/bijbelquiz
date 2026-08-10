@@ -4,6 +4,12 @@ import type { MultiplayerStateTransition } from './contracts';
 const validTransitions: MultiplayerStateTransition[] = [
   { from: 'lobby', to: 'lobby' },
   { from: 'lobby', to: 'in_progress' },
+  // The server advances timers lazily, so a single poll can cross more than one
+  // transition: a client whose snapshot arrives after the first question's
+  // deadline sees `lobby -> question_result` directly. Treating that as invalid
+  // made `mergeRoom` reject every later snapshot, freezing the player in the
+  // wachtkamer while the rest of the room played on.
+  { from: 'lobby', to: 'question_result' },
   { from: 'lobby', to: 'finished' },
   { from: 'in_progress', to: 'in_progress' },
   { from: 'in_progress', to: 'question_result' },

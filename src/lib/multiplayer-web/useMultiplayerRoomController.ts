@@ -95,6 +95,14 @@ const MIN_POLL_INTERVAL_MS = 250;
  * transition, so we don't arrive a few milliseconds early and waste a request.
  */
 const DEADLINE_POLL_GRACE_MS = 200;
+/**
+ * How many polls in a row must report ROOM_NOT_FOUND before we declare the game
+ * gone. A single 404 is not proof: it can also be a request that raced a token
+ * refresh, a dropped connection, or a proxy answering for something else. The
+ * old code latched the "Spel niet beschikbaar" screen on the first one and
+ * never polled again, so a live room stayed unreachable until a full reload.
+ */
+const NOT_FOUND_CONFIRMATIONS = 2;
 
 function normalizeRoomCode(roomCode: string): string {
   return roomCode.trim().toUpperCase();
@@ -139,7 +147,10 @@ class RoomSession {
   private pollTimer: ReturnType<typeof setTimeout> | null = null;
   private pollAbort: AbortController | null = null;
   private polling = false;
+  /** Resolves once the in-flight poll has finished unwinding. */
+  private pollSettled: Promise<void> | null = null;
   private consecutiveFailures = 0;
+  private consecutiveNotFound = 0;
   private lastRoom: RoomSnapshot | null = null;
   private resultsFetchedForRoom = false;
   /** localNow - serverTimeMs at the last successful read. */
@@ -218,9 +229,24 @@ class RoomSession {
       const isRoomNotFound =
         error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND';
 
+      if (isRoomNotFound) {
+        // Count this as the first strike and hand over to the polling loop
+        // instead of closing the session outright. If the room is genuinely
+        // gone the next poll confirms it and we show the same screen a moment
+        // later; if the 404 was a blip, the session recovers by itself.
+        this.consecutiveNotFound = 1;
+        this.patch({
+          loading: false,
+          errorMessage: toUserMessage(error),
+          connectionStatus: 'reconnecting',
+        });
+        this.scheduleNextPoll();
+        return;
+      }
+
       this.patch({
         loading: false,
-        roomClosed: isRoomNotFound,
+        roomClosed: false,
         errorMessage: toUserMessage(error),
         connectionStatus: 'disconnected',
       });
@@ -267,6 +293,16 @@ class RoomSession {
 
     this.clearTimer();
     this.abortInFlight();
+
+    // Aborting a fetch rejects it asynchronously, so `polling` is still true
+    // here and the call below would hit the re-entrancy guard in `runPoll()`
+    // and do nothing — leaving no timer armed and no request in flight, which
+    // silently killed the loop for the rest of the session. Wait for the
+    // superseded poll to unwind before starting its replacement.
+    if (this.pollSettled) {
+      await this.pollSettled;
+    }
+
     await this.runPoll();
   }
 
@@ -351,6 +387,16 @@ class RoomSession {
     const abort = new AbortController();
     this.pollAbort = abort;
 
+    let markSettled: () => void = () => {};
+    this.pollSettled = new Promise<void>((resolve) => {
+      markSettled = resolve;
+    });
+
+    // Every exit path re-arms the timer except two: a poll that `refreshNow()`
+    // superseded (its replacement is already on its way) and a room we have
+    // confirmed is gone.
+    let reschedule = true;
+
     try {
       const room = await this.tokens.run(
         (token) => getRoomSnapshot({ token, roomCode: this.roomCode, signal: abort.signal }),
@@ -359,6 +405,7 @@ class RoomSession {
       if (this.disposed) return;
 
       this.consecutiveFailures = 0;
+      this.consecutiveNotFound = 0;
       const previousStatus = this.lastRoom?.status ?? null;
       this.applySnapshot(room, { clearError: true });
       this.patch({
@@ -372,20 +419,36 @@ class RoomSession {
         void this.fetchResults();
       }
     } catch (error) {
-      if (this.disposed || isAbortError(error)) return;
+      if (this.disposed) return;
 
-      // A room that no longer exists is terminal — stop polling rather than
-      // retrying a 404 forever.
-      if (error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND') {
-        this.emitDebug('warn', 'Polling discovered ROOM_NOT_FOUND - closing session');
-        this.clearTimer();
-        this.patch({
-          loading: false,
-          roomClosed: true,
-          errorMessage: toUserMessage(error),
-          connectionStatus: 'disconnected',
-        });
+      if (isAbortError(error)) {
+        reschedule = false;
         return;
+      }
+
+      // A room that no longer exists is terminal — but only once we've seen it
+      // missing often enough to be sure. Closing on a single 404 turned any
+      // transient blip into a permanent "Spel niet beschikbaar" dead end.
+      if (error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND') {
+        this.consecutiveNotFound += 1;
+
+        if (this.consecutiveNotFound >= NOT_FOUND_CONFIRMATIONS) {
+          this.emitDebug('warn', 'Polling confirmed ROOM_NOT_FOUND - closing session', {
+            attempts: this.consecutiveNotFound,
+          });
+          reschedule = false;
+          this.patch({
+            loading: false,
+            roomClosed: true,
+            errorMessage: toUserMessage(error),
+            connectionStatus: 'disconnected',
+          });
+          return;
+        }
+
+        this.emitDebug('warn', 'Snapshot poll returned ROOM_NOT_FOUND - reconfirming', {
+          attempt: this.consecutiveNotFound,
+        });
       }
 
       this.consecutiveFailures += 1;
@@ -402,9 +465,11 @@ class RoomSession {
       if (this.pollAbort === abort) {
         this.pollAbort = null;
       }
+      markSettled();
+      if (!this.disposed && reschedule) {
+        this.scheduleNextPoll();
+      }
     }
-
-    this.scheduleNextPoll();
   }
 
   /**
