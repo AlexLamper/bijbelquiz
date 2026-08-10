@@ -55,7 +55,9 @@ function createRandomRoomCode(length = DEFAULT_ROOM_CODE_LENGTH): string {
 function createDefaultConfig(): MultiplayerServiceConfig {
   return {
     questionTimerSeconds: parsePositiveNumber(process.env.QUESTION_TIMER_SECONDS, 20),
-    questionResultDelayMs: parsePositiveNumber(process.env.QUESTION_RESULT_DELAY_MS, 2500),
+    // Long enough to actually read the between-questions scoreboard. At 2.5s
+    // the reveal was gone before players could see who got it right.
+    questionResultDelayMs: parsePositiveNumber(process.env.QUESTION_RESULT_DELAY_MS, 6000),
     playerOfflineAfterMs: parsePositiveNumber(process.env.MULTIPLAYER_OFFLINE_AFTER_MS, 30_000),
     heartbeatThrottleMs: parsePositiveNumber(process.env.MULTIPLAYER_HEARTBEAT_MS, 10_000),
     roomTtlMs: parsePositiveNumber(process.env.MULTIPLAYER_ROOM_TTL_MS, 24 * 60 * 60 * 1000),
@@ -719,6 +721,15 @@ export class MultiplayerService {
     const revealCorrect = status === 'question_result' && question !== null;
 
     const correctAnswerId = revealCorrect && question ? question.correctAnswerId : null;
+
+    // Tally of who picked what, for the between-questions breakdown. Built only
+    // during the reveal so an in-progress snapshot never carries it.
+    const answerCounts = new Map<string, number>();
+    if (revealCorrect) {
+      for (const answerId of Object.values(room.submittedAnswers)) {
+        answerCounts.set(answerId, (answerCounts.get(answerId) ?? 0) + 1);
+      }
+    }
     const explanation =
       revealCorrect && question?.explanation?.trim()
         ? question.explanation.trim()
@@ -733,7 +744,11 @@ export class MultiplayerService {
           totalQuestions: room.totalQuestions,
           remainingSeconds,
           deadlineAtMs,
-          answers: question.answers.map((a) => ({ id: a.id, text: a.text })),
+          answers: question.answers.map((a) => ({
+            id: a.id,
+            text: a.text,
+            count: revealCorrect ? answerCounts.get(a.id) ?? 0 : null,
+          })),
           yourAnswerId: viewerChoice,
           correctAnswerId,
           explanation,
@@ -745,15 +760,27 @@ export class MultiplayerService {
         ? room.questionResultUntilAtMs
         : null;
 
-    const players: RoomPlayerSnapshot[] = room.players.map((p) => ({
-      id: p.id,
-      name: p.name,
-      score: p.score,
-      correctAnswers: p.correctAnswers,
-      isHost: p.isHost,
-      isConnected: p.isConnected,
-      hasAnswered: p.hasAnswered,
-    }));
+    // `submittedAnswers` still holds this question's answers during the reveal
+    // pause (it is cleared by `startQuestion`), so the per-player breakdown the
+    // clients show between questions can be derived here rather than tracked
+    // separately.
+    const players: RoomPlayerSnapshot[] = room.players.map((p) => {
+      const submitted = revealCorrect ? room.submittedAnswers[p.id] ?? null : null;
+      const answeredCorrectly =
+        revealCorrect && submitted !== null ? submitted === correctAnswerId : null;
+
+      return {
+        id: p.id,
+        name: p.name,
+        score: p.score,
+        correctAnswers: p.correctAnswers,
+        isHost: p.isHost,
+        isConnected: p.isConnected,
+        hasAnswered: p.hasAnswered,
+        answeredCorrectly,
+        scoreGained: revealCorrect ? (answeredCorrectly === true ? 1 : 0) : null,
+      };
+    });
 
     return {
       id: room.id,

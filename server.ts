@@ -9,7 +9,7 @@ import next from 'next';
  * Why not just `next dev`? Vercel Production runs Next.js as serverless
  * functions, which is great for HTTP but precludes WebSocket upgrades. We
  * used to maintain a custom WS layer here, but the polling-based
- * multiplayer architecture made that obsolete — every transport now goes
+ * multiplayer architecture made that obsolete - every transport now goes
  * through plain HTTP routes that work identically in dev and on Vercel.
  *
  * This file is kept (with no extra responsibilities) because `npm run dev`
@@ -73,8 +73,8 @@ async function findAvailablePort(startPort: number): Promise<number> {
 /**
  * Ask whether anything already answers on this port, by connecting to it.
  *
- * The obvious implementation — try to `listen()` and treat EADDRINUSE as "taken"
- * — does not work here. `listen(port, 'localhost')` resolves to ::1, and Windows
+ * The obvious implementation - try to `listen()` and treat EADDRINUSE as "taken"
+ * - does not work here. `listen(port, 'localhost')` resolves to ::1, and Windows
  * happily lets a socket bound to ::1 coexist with another process already
  * holding `:::port` or `0.0.0.0:port`. Both servers then believe they own the
  * port and each answers on a different IP stack, so `http://localhost:port`

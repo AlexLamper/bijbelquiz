@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
+import { Check } from 'lucide-react';
 import { authOptions } from '@/lib/auth';
 import stripe from '@/lib/stripe';
-import { connectDB, Payment, User } from '@/database';
+import { connectDB, Payment } from '@/database';
+import { updateUserPremiumFromStripe } from '@/lib/premium-state';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import SessionRefresher from './SessionRefresher';
 import { Metadata } from 'next';
 
@@ -26,7 +27,7 @@ export default async function SuccessPage({ searchParams }: PageProps) {
   const session = await getServerSession(authOptions);
 
   if (!session) {
-    redirect('/login');
+    redirect('/inloggen?callbackUrl=/premium');
   }
 
   // Verify the payment securely on the server
@@ -50,13 +51,15 @@ export default async function SuccessPage({ searchParams }: PageProps) {
           }
         }
 
-        // Update DB immediately in case webhook is slow or missing.
-        await User.findByIdAndUpdate(session.user.id, {
-          isPremium: true,
+        // Update DB immediately in case webhook is slow or missing. Route the
+        // write through the same helper the webhook uses: setting `isPremium`
+        // directly used to leave `premiumStripe` unset, so the two sources of
+        // truth disagreed until some later Stripe event happened to repair it.
+        await updateUserPremiumFromStripe(session.user.id, true, {
           hasLifetimePremium: planType === 'lifetime',
-          stripeCustomerId: customerId,
-          stripeSubscriptionId: subscriptionId,
-          stripeSubscriptionStatus: subscriptionStatus,
+          ...(customerId ? { stripeCustomerId: customerId } : {}),
+          ...(subscriptionId ? { stripeSubscriptionId: subscriptionId } : {}),
+          ...(subscriptionStatus ? { stripeSubscriptionStatus: subscriptionStatus } : {}),
         });
 
         await Payment.updateOne(
@@ -82,37 +85,34 @@ export default async function SuccessPage({ searchParams }: PageProps) {
   }
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center">
+    <div className="flex min-h-[80vh] items-center justify-center bg-paper">
       <SessionRefresher />
-      <main className="container mx-auto px-4 py-12 flex flex-col items-center">
-        <Card className="w-full max-w-md text-center border-primary/20">
-           <CardHeader>
-             <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-positive-tint dark:bg-positive/30">
-               <svg className="h-10 w-10 text-positive" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-               </svg>
-             </div>
-             <CardTitle className="text-3xl font-semibold">Betaling Geslaagd!</CardTitle>
-           </CardHeader>
-           <CardContent className="space-y-4">
-              <p className="text-ink-soft">
-                Bedankt voor je steun! Je account is nu opgewaardeerd naar <strong>Premium</strong>.
-              </p>
-              <div className="p-3 bg-lapis-tint dark:bg-lapis/20 border border-lapis/35 dark:border-lapis/35 rounded-lg">
-                <p className="text-sm text-lapis dark:text-lapis font-medium">
-                  Je hebt nu directe toegang tot alle quizzen en diepgaande studies.
-                </p>
-              </div>
-           </CardContent>
-           <CardContent className="pt-0 space-y-3">
-             <Button asChild className="w-full h-12 text-lg">
-               <Link href="/quizzen">Start een Premium Quiz</Link>
-             </Button>
-             <Button asChild variant="outline" className="w-full h-12 text-lg">
-               <Link href="/">Terug naar Home</Link>
-             </Button>
-           </CardContent>
-        </Card>
+      <main className="container mx-auto flex flex-col items-center px-4 py-12">
+        <section className="w-full max-w-md rounded-lg border border-rule bg-paper-raised p-8 text-center">
+          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-positive/35 bg-positive/10">
+            <Check className="h-8 w-8 text-positive" strokeWidth={2} aria-hidden />
+          </div>
+
+          <h1 className="text-3xl tracking-tight text-ink">Betaling Geslaagd!</h1>
+
+          <p className="mt-4 text-ink-soft">
+            Bedankt voor je steun! Je account is nu opgewaardeerd naar{' '}
+            <span className="font-medium text-lapis">Premium</span>.
+          </p>
+
+          <p className="mt-6 border-t border-rule pt-6 text-sm text-ink-soft">
+            Je hebt nu directe toegang tot alle quizzen en diepgaande studies.
+          </p>
+
+          <div className="mt-8 space-y-3">
+            <Button asChild className="h-12 w-full bg-ink text-ink-inverted hover:bg-ink-soft">
+              <Link href="/quizzen">Start een Premium Quiz</Link>
+            </Button>
+            <Button asChild variant="outline" className="h-12 w-full border-rule">
+              <Link href="/">Terug naar Home</Link>
+            </Button>
+          </div>
+        </section>
       </main>
     </div>
   );

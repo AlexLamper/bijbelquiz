@@ -19,11 +19,16 @@ const roomPlayerSchema = z.object({
   isHost: z.boolean(),
   isConnected: z.boolean(),
   hasAnswered: z.boolean(),
+  // Nullish-tolerant so a client that is briefly newer than the deployed API
+  // (or vice versa) keeps parsing snapshots instead of failing the whole room.
+  answeredCorrectly: z.boolean().nullish().transform((value) => value ?? null),
+  scoreGained: z.number().nullish().transform((value) => value ?? null),
 });
 
 const roomAnswerSchema = z.object({
   id: z.string(),
   text: z.string(),
+  count: z.number().nullish().transform((value) => value ?? null),
 });
 
 const roomQuestionSchema = z.object({

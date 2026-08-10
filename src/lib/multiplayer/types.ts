@@ -8,11 +8,31 @@ export interface RoomPlayerSnapshot {
   isHost: boolean;
   isConnected: boolean;
   hasAnswered: boolean;
+  /**
+   * How this player did on the question that was just revealed. Only populated
+   * during `question_result`; `null` everywhere else, and `null` for a player
+   * who let the timer run out. Withheld during `in_progress` for the same
+   * reason `correctAnswerId` is: it would leak the answer to anyone watching
+   * the scoreboard.
+   */
+  answeredCorrectly: boolean | null;
+  /**
+   * Points this player gained on the question that was just revealed (0 or 1).
+   * Only populated during `question_result`, `null` otherwise, so clients can
+   * show the per-round delta next to the running total.
+   */
+  scoreGained: number | null;
 }
 
 export interface RoomAnswerSnapshot {
   id: string;
   text: string;
+  /**
+   * How many players picked this option. Only populated during
+   * `question_result`, `null` while answering so the tally cannot be used to
+   * infer the popular (or correct) choice mid-question.
+   */
+  count: number | null;
 }
 
 export interface RoomCurrentQuestionSnapshot {

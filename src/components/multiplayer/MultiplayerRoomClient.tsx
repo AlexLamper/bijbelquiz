@@ -4,13 +4,18 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
-import { CheckCircle2, Copy, RefreshCcw, Sparkles, Trophy, XCircle, Zap } from 'lucide-react';
+import { CheckCircle2, Copy, MinusCircle, RefreshCcw, Sparkles, Trophy, XCircle, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
 import { useMultiplayerRoomController } from '@/lib/multiplayer-web/useMultiplayerRoomController';
-import type { RoomCurrentQuestionSnapshot, RoomResultEntry, RoomStatus } from '@/lib/multiplayer/types';
+import type {
+  RoomCurrentQuestionSnapshot,
+  RoomPlayerSnapshot,
+  RoomResultEntry,
+  RoomStatus,
+} from '@/lib/multiplayer/types';
 import { cn } from '@/lib/utils';
 
 export type MultiplayerRoomView = 'lobby' | 'game' | 'results';
@@ -117,13 +122,13 @@ function GameProgressBar(props: { current: number; total: number; status: RoomSt
  * Turns the server's absolute deadlines into a "seconds left" countdown.
  *
  * The server publishes deadlines on its own clock, so we track the offset
- * between it and this browser and correct for it — a user whose system clock
+ * between it and this browser and correct for it - a user whose system clock
  * is minutes off still sees the same timer as the rest of the room. While a
  * deadline is live we re-render 4x/second, which keeps the countdown smooth
  * between polls instead of stepping only when a snapshot lands.
  */
 function useServerCountdown(serverTimeMs: number | null, active: boolean) {
-  // The offset is a cache, not rendered state — recording it in a ref avoids a
+  // The offset is a cache, not rendered state - recording it in a ref avoids a
   // render pass per snapshot, and it is always read together with `nowMs`,
   // which does drive renders.
   const offsetMsRef = useRef(0);
@@ -176,6 +181,180 @@ function buildResultsFallback(players: Array<{
     score: player.score,
     correctAnswers: player.correctAnswers,
   }));
+}
+
+/**
+ * The pause between two questions.
+ *
+ * Answering straight through gave players no moment to see how the round
+ * actually went, so this takes over the question card during
+ * `question_result`: the correct answer, how the room split across the
+ * options, and a standings table marking who got this one right. The next
+ * question replaces it automatically when the server's timer elapses.
+ */
+function QuestionResultInterstitial(props: {
+  question: RoomCurrentQuestionSnapshot;
+  players: RoomPlayerSnapshot[];
+  viewerId: string | null;
+  secondsLeft: number | null;
+}) {
+  const { question, players, viewerId, secondsLeft } = props;
+
+  const totalResponses = question.answers.reduce((sum, answer) => sum + (answer.count ?? 0), 0);
+
+  const standings = [...players].sort((left, right) => {
+    if (right.score !== left.score) return right.score - left.score;
+    if (right.correctAnswers !== left.correctAnswers) return right.correctAnswers - left.correctAnswers;
+    return left.name.localeCompare(right.name);
+  });
+
+  const correctCount = players.filter((player) => player.answeredCorrectly === true).length;
+  const viewerAnswer = question.yourAnswerId;
+  const viewerWasCorrect = viewerAnswer != null && viewerAnswer === question.correctAnswerId;
+
+  return (
+    <div className="space-y-6">
+      {/* Your own outcome, kept as the loudest thing on the screen */}
+      <div
+        className={cn(
+          'rounded-lg border p-4 md:p-5',
+          viewerWasCorrect && 'border-positive/35 bg-positive/10 dark:bg-positive/30',
+          viewerAnswer == null && 'border-lapis/35 bg-lapis/10 dark:bg-lapis/25',
+          viewerAnswer != null && !viewerWasCorrect && 'border-destructive/40 bg-destructive/10 dark:bg-destructive/15',
+        )}
+      >
+        <div className="flex gap-3">
+          {viewerWasCorrect ? (
+            <CheckCircle2 className="mt-0.5 h-8 w-8 shrink-0 text-positive dark:text-positive" />
+          ) : viewerAnswer == null ? (
+            <MinusCircle className="mt-0.5 h-8 w-8 shrink-0 text-lapis dark:text-lapis" />
+          ) : (
+            <XCircle className="mt-0.5 h-8 w-8 shrink-0 text-destructive" />
+          )}
+          <div className="min-w-0">
+            <p
+              className={cn(
+                'text-lg font-medium',
+                viewerWasCorrect && 'text-positive dark:text-positive',
+                viewerAnswer == null && 'text-lapis dark:text-lapis',
+                viewerAnswer != null && !viewerWasCorrect && 'text-destructive',
+              )}
+            >
+              {viewerWasCorrect ? 'Goed zo!' : viewerAnswer == null ? 'Geen antwoord' : 'Helaas, niet goed'}
+            </p>
+            <p className="mt-0.5 text-sm text-muted-foreground">
+              {correctCount} van {players.length} {players.length === 1 ? 'speler' : 'spelers'} had deze vraag goed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* The question, with the room's answer split per option */}
+      <div className="rounded-lg border border-rule bg-paper-raised p-4 md:p-5">
+        {question.bibleReference ? (
+          <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            {question.bibleReference}
+          </p>
+        ) : null}
+        <p className="text-base font-medium leading-relaxed md:text-lg">{question.text}</p>
+
+        <div className="mt-4 space-y-2">
+          {question.answers.map((answer) => {
+            const count = answer.count ?? 0;
+            const isCorrect = answer.id === question.correctAnswerId;
+            const isYours = answer.id === viewerAnswer;
+            const share = totalResponses > 0 ? Math.round((count / totalResponses) * 100) : 0;
+
+            return (
+              <div
+                key={answer.id}
+                className={cn(
+                  'relative overflow-hidden rounded-md border px-3 py-2.5',
+                  isCorrect ? 'border-positive/35' : 'border-rule opacity-70',
+                )}
+              >
+                {/* Proportion bar sits behind the label as a tint, not a fill */}
+                <div
+                  aria-hidden
+                  className={cn(
+                    'absolute inset-y-0 left-0',
+                    isCorrect ? 'bg-positive/[0.14]' : 'bg-muted',
+                  )}
+                  style={{ width: `${share}%` }}
+                />
+                <div className="relative flex items-center gap-3">
+                  {isCorrect ? (
+                    <CheckCircle2 className="h-4 w-4 shrink-0 text-positive dark:text-positive" aria-hidden />
+                  ) : (
+                    <span className="h-2 w-2 shrink-0 rounded-full bg-muted-foreground/25" aria-hidden />
+                  )}
+                  <span className="min-w-0 flex-1 text-sm">{answer.text}</span>
+                  {isYours && (
+                    <Badge variant="outline" className="shrink-0 text-[10px]">
+                      Jouw keuze
+                    </Badge>
+                  )}
+                  <span className="shrink-0 text-xs tabular-nums text-muted-foreground">{count}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Standings after this question */}
+      <div className="rounded-lg border border-rule">
+        <div className="flex items-center justify-between border-b border-rule px-4 py-3">
+          <p className="text-sm font-medium text-foreground">Tussenstand</p>
+          <p className="text-xs text-muted-foreground">
+            Na vraag {question.questionNumber} van {question.totalQuestions}
+          </p>
+        </div>
+        <div className="divide-y divide-rule">
+          {standings.map((player, index) => (
+            <div
+              key={player.id}
+              className={cn(
+                'flex items-center gap-3 px-4 py-2.5',
+                player.id === viewerId && 'bg-lapis/[0.06]',
+              )}
+            >
+              <span className="w-5 shrink-0 text-sm tabular-nums text-muted-foreground">{index + 1}</span>
+              {player.answeredCorrectly === true ? (
+                <CheckCircle2 className="h-4 w-4 shrink-0 text-positive dark:text-positive" aria-hidden />
+              ) : player.answeredCorrectly === false ? (
+                <XCircle className="h-4 w-4 shrink-0 text-destructive" aria-hidden />
+              ) : (
+                <MinusCircle className="h-4 w-4 shrink-0 text-muted-foreground/50" aria-hidden />
+              )}
+              <span className="min-w-0 flex-1 truncate text-sm font-medium">{player.name}</span>
+              {player.scoreGained ? (
+                <span className="shrink-0 text-xs font-medium tabular-nums text-positive dark:text-positive">
+                  +{player.scoreGained}
+                </span>
+              ) : null}
+              <span className="w-12 shrink-0 text-right text-sm font-semibold tabular-nums text-foreground">
+                {player.score} pt
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {question.explanation && question.explanation.trim().length > 0 && (
+        <div className="rounded-lg border border-lapis/35 bg-lapis/[0.06] p-4 dark:border-lapis/35 dark:bg-lapis/20">
+          <p className="text-xs font-semibold uppercase tracking-wide text-lapis dark:text-lapis">Uitleg</p>
+          <p className="mt-2 text-sm leading-relaxed text-foreground">{question.explanation}</p>
+        </div>
+      )}
+
+      {secondsLeft != null && secondsLeft > 0 && (
+        <p className="text-center text-xs font-medium text-muted-foreground">
+          Volgende vraag over {secondsLeft}s...
+        </p>
+      )}
+    </div>
+  );
 }
 
 export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoomClientProps) {
@@ -509,64 +688,15 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
                 {room.currentQuestion ? (
+                  room.status === 'question_result' ? (
+                    <QuestionResultInterstitial
+                      question={room.currentQuestion}
+                      players={room.players}
+                      viewerId={resolvedUserId}
+                      secondsLeft={resultPhaseSecondsLeft}
+                    />
+                  ) : (
                   <>
-                    {/* Result banner */}
-                    {room.status === 'question_result' && room.currentQuestion.correctAnswerId != null && (
-                      <div
-                        className={cn(
-                          'rounded-lg border p-4 md:p-5',
-                          room.currentQuestion.yourAnswerId === room.currentQuestion.correctAnswerId &&
-                            'border-positive/35 bg-positive/10 dark:bg-positive/30',
-                          room.currentQuestion.yourAnswerId == null &&
-                            'border-lapis/35 bg-lapis/10 dark:bg-lapis/25',
-                          room.currentQuestion.yourAnswerId != null &&
-                            room.currentQuestion.yourAnswerId !== room.currentQuestion.correctAnswerId &&
-                            'border-destructive/40 bg-destructive/10 dark:bg-destructive/15',
-                        )}
-                      >
-                        {room.currentQuestion.yourAnswerId === room.currentQuestion.correctAnswerId ? (
-                          <div className="flex gap-3">
-                            <CheckCircle2 className="mt-0.5 h-8 w-8 shrink-0 text-positive dark:text-positive" />
-                            <div>
-                              <p className="text-lg font-semibold text-positive dark:text-positive">
-                                Goed zo!
-                              </p>
-                              <p className="mt-0.5 text-sm text-positive/85 dark:text-positive/90">
-                                Je antwoord is correct - je hebt een punt verdiend.
-                              </p>
-                            </div>
-                          </div>
-                        ) : room.currentQuestion.yourAnswerId == null ? (
-                          <div className="flex gap-3">
-                            <XCircle className="mt-0.5 h-8 w-8 shrink-0 text-lapis dark:text-lapis" />
-                            <div>
-                              <p className="text-lg font-semibold text-lapis dark:text-lapis">
-                                Geen antwoord
-                              </p>
-                              <p className="mt-0.5 text-sm text-lapis/85 dark:text-lapis/90">
-                                Je hebt niet op tijd geantwoord. Het juiste antwoord staat hieronder gemarkeerd.
-                              </p>
-                            </div>
-                          </div>
-                        ) : (
-                          <div className="flex gap-3">
-                            <XCircle className="mt-0.5 h-8 w-8 shrink-0 text-destructive" />
-                            <div>
-                              <p className="text-lg font-semibold text-destructive">Helaas, niet goed</p>
-                              <p className="mt-0.5 text-sm text-muted-foreground">
-                                Jouw keuze was fout. Het goede antwoord is groen gemarkeerd.
-                              </p>
-                            </div>
-                          </div>
-                        )}
-                        {resultPhaseSecondsLeft != null && resultPhaseSecondsLeft > 0 && (
-                          <p className="mt-3 text-center text-xs font-medium text-muted-foreground">
-                            Volgende vraag over {resultPhaseSecondsLeft}s…
-                          </p>
-                        )}
-                      </div>
-                    )}
-
                     <div
                       className={cn(
                         'rounded-lg border bg-card p-4 md:p-5',
@@ -650,19 +780,8 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       </p>
                     )}
 
-                    {room.status === 'question_result' &&
-                      room.currentQuestion.explanation &&
-                      room.currentQuestion.explanation.trim().length > 0 && (
-                        <div className="rounded-lg border border-lapis/35 bg-lapis/[0.06] p-4 dark:border-lapis/35 dark:bg-lapis/20">
-                          <p className="text-xs font-semibold uppercase tracking-wide text-lapis dark:text-lapis">
-                            Uitleg
-                          </p>
-                          <p className="mt-2 text-sm leading-relaxed text-foreground">
-                            {room.currentQuestion.explanation}
-                          </p>
-                        </div>
-                      )}
                   </>
+                  )
                 ) : (
                   <div className="flex flex-col items-center justify-center gap-2 rounded-lg border border-dashed py-12 text-center text-sm text-muted-foreground">
                     <RefreshCcw className="h-8 w-8 opacity-40" aria-hidden />

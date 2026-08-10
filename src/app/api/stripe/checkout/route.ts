@@ -51,7 +51,11 @@ export async function POST(req: NextRequest) {
         },
       ],
       mode: selectedConfig.mode,
-      success_url: `${origin}/premium/success?session_id={CHECKOUT_SESSION_ID}`,
+      // Point straight at the Dutch route. Sending Stripe to `/premium/success`
+      // only worked by way of the permanent redirect in next.config.ts, which
+      // browsers cache aggressively and which would silently break the whole
+      // post-payment confirmation if that entry were ever removed.
+      success_url: `${origin}/premium/succes?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/premium`,
       customer_email: session.user.email,
       allow_promotion_codes: true,

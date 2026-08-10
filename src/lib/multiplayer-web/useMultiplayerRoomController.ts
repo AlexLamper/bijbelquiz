@@ -125,8 +125,8 @@ function asDebugLine(entry: MultiplayerDebugEntry): string {
  * Encapsulates a single room session: token bootstrap, optional join, and the
  * perpetual snapshot polling loop.
  *
- * Everything that is *not* React state — the poll timer, the abort handle, the
- * failure counter, the server clock offset — lives on the instance rather than
+ * Everything that is *not* React state - the poll timer, the abort handle, the
+ * failure counter, the server clock offset - lives on the instance rather than
  * in `useState`. That matters: React's StrictMode double-invokes state updater
  * functions in development, so scheduling a timer from inside an updater used
  * to queue two timers per poll, doubling the request rate on every tick until
@@ -138,7 +138,7 @@ function asDebugLine(entry: MultiplayerDebugEntry): string {
  *  - dispose()    - cancels in-flight work, stops polling, marks disposed
  *
  * Idempotency: dispose() is safe to call multiple times. start() is not meant
- * to be called more than once on the same instance — to restart a session,
+ * to be called more than once on the same instance - to restart a session,
  * dispose the old one and create a new one.
  */
 class RoomSession {
@@ -296,7 +296,7 @@ class RoomSession {
 
     // Aborting a fetch rejects it asynchronously, so `polling` is still true
     // here and the call below would hit the re-entrancy guard in `runPoll()`
-    // and do nothing — leaving no timer armed and no request in flight, which
+    // and do nothing - leaving no timer armed and no request in flight, which
     // silently killed the loop for the rest of the session. Wait for the
     // superseded poll to unwind before starting its replacement.
     if (this.pollSettled) {
@@ -426,7 +426,7 @@ class RoomSession {
         return;
       }
 
-      // A room that no longer exists is terminal — but only once we've seen it
+      // A room that no longer exists is terminal - but only once we've seen it
       // missing often enough to be sure. Closing on a single 404 turned any
       // transient blip into a permanent "Spel niet beschikbaar" dead end.
       if (error instanceof MultiplayerClientHttpError && error.code === 'ROOM_NOT_FOUND') {
