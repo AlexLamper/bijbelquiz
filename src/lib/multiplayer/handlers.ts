@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import mongoose from 'mongoose';
 import { z } from 'zod';
-import { connectDB, User } from '@/database';
 import {
   MULTIPLAYER_FREE_MAX_PLAYERS,
   MULTIPLAYER_FREE_ROOM_QUOTA,
@@ -10,6 +8,7 @@ import {
 import { authenticateMultiplayerRequest } from './auth';
 import { MultiplayerError } from './errors';
 import { multiplayerErrorResponse, normalizeRoomCode, parseJsonBody } from './http';
+import { loadMultiplayerQuota, releaseHostedGame, reserveHostedGame } from './quota';
 import { getMultiplayerRuntime } from './runtime';
 
 /**
@@ -39,52 +38,30 @@ const answerSchema = z
   })
   .strict();
 
-interface PremiumStateSummary {
-  isPremiumUser: boolean;
-  hasUsedFreeRoom: boolean;
-}
-
-/**
- * A token can carry a userId that isn't a Mongo ObjectId (a stale token, or an
- * OAuth `sub` that was never mapped to a user). Querying with it throws a
- * CastError, which used to become a 500. Treat it as "unauthenticated".
- */
-async function loadPremiumState(userId: string): Promise<PremiumStateSummary> {
-  if (!mongoose.Types.ObjectId.isValid(userId)) {
-    throw new MultiplayerError('UNAUTHORIZED', 'Unauthorized', 401);
-  }
-
-  await connectDB();
-
-  const user = await User.findById(userId)
-    .select('isPremium hasLifetimePremium freeMultiplayerRoomCreated')
-    .lean();
-
-  if (!user) {
-    throw new MultiplayerError('UNAUTHORIZED', 'Unauthorized', 401);
-  }
-
-  return {
-    isPremiumUser: Boolean(user.isPremium || user.hasLifetimePremium),
-    hasUsedFreeRoom: Boolean(user.freeMultiplayerRoomCreated),
-  };
+/** Shown whenever a free host has no games left. */
+function freeQuotaExhaustedError(): MultiplayerError {
+  return new MultiplayerError(
+    'PREMIUM_REQUIRED',
+    `Je hebt je ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen gebruikt. Word Premium om onbeperkt spellen te hosten met tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers. Meedoen met andermans spel blijft gratis.`,
+    403,
+  );
 }
 
 /** GET /rooms — what this user is allowed to do before they try it. */
 export async function handleGetCapability(req: NextRequest): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
-    const { isPremiumUser, hasUsedFreeRoom } = await loadPremiumState(auth.userId);
-
-    const freeRoomsRemaining = isPremiumUser
-      ? null
-      : Math.max(0, MULTIPLAYER_FREE_ROOM_QUOTA - (hasUsedFreeRoom ? 1 : 0));
+    const quota = await loadMultiplayerQuota(auth.userId);
+    const { isPremiumUser, freeGamesRemaining } = quota;
 
     return NextResponse.json({
-      canCreateRoom: isPremiumUser || !hasUsedFreeRoom,
+      canCreateRoom: quota.canHost,
       isPremium: isPremiumUser,
-      hasUsedFreeRoom,
-      freeRoomsRemaining,
+      // Kept for older mobile builds that only understand the one-room model.
+      hasUsedFreeRoom: !isPremiumUser && freeGamesRemaining === 0,
+      freeRoomsRemaining: freeGamesRemaining,
+      freeRoomsQuota: MULTIPLAYER_FREE_ROOM_QUOTA,
+      freeRoomsUsed: isPremiumUser ? null : quota.gamesHosted,
       maxPlayersFree: MULTIPLAYER_FREE_MAX_PLAYERS,
       maxPlayersPremium: MULTIPLAYER_PREMIUM_MAX_PLAYERS,
       maxPlayersForUser: isPremiumUser
@@ -101,7 +78,7 @@ export async function handleCreateRoom(req: NextRequest): Promise<NextResponse> 
   try {
     const auth = await authenticateMultiplayerRequest(req);
     const body = await parseJsonBody(req, createRoomSchema);
-    const { isPremiumUser } = await loadPremiumState(auth.userId);
+    const { isPremiumUser, canHost } = await loadMultiplayerQuota(auth.userId);
 
     if (!isPremiumUser && body.maxPlayers > MULTIPLAYER_FREE_MAX_PLAYERS) {
       throw new MultiplayerError(
@@ -111,48 +88,21 @@ export async function handleCreateRoom(req: NextRequest): Promise<NextResponse> 
       );
     }
 
-    // Reserve the single free room atomically *before* creating it, so two
-    // concurrent create requests can't both slip through the quota.
-    let reservedFreeRoomCreation = false;
-
-    if (!isPremiumUser) {
-      const reservation = await User.findOneAndUpdate(
-        { _id: auth.userId, freeMultiplayerRoomCreated: { $ne: true } },
-        { $set: { freeMultiplayerRoomCreated: true } },
-      )
-        .select('_id')
-        .lean();
-
-      if (!reservation) {
-        throw new MultiplayerError(
-          'PREMIUM_REQUIRED',
-          `Je gratis room is al gebruikt. Word Premium om onbeperkt rooms te hosten met tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.`,
-          403,
-        );
-      }
-
-      reservedFreeRoomCreation = true;
+    // Creating a room is free — the credit is only spent when the game
+    // actually starts. This check exists purely so a host with an empty quota
+    // isn't led into a lobby that can never start.
+    if (!canHost) {
+      throw freeQuotaExhaustedError();
     }
 
     const { service } = getMultiplayerRuntime();
-    try {
-      const room = await service.createRoom({
-        userId: auth.userId,
-        quizId: body.quizId,
-        maxPlayers: body.maxPlayers,
-      });
+    const room = await service.createRoom({
+      userId: auth.userId,
+      quizId: body.quizId,
+      maxPlayers: body.maxPlayers,
+    });
 
-      return NextResponse.json({ room }, { status: 201 });
-    } catch (error) {
-      if (reservedFreeRoomCreation) {
-        await User.updateOne(
-          { _id: auth.userId },
-          { $set: { freeMultiplayerRoomCreated: false } },
-        );
-      }
-
-      throw error;
-    }
+    return NextResponse.json({ room }, { status: 201 });
   } catch (error) {
     return multiplayerErrorResponse(error);
   }
@@ -207,14 +157,49 @@ export async function handleJoinRoom(req: NextRequest, roomCodeRaw: string): Pro
   }
 }
 
-/** POST /rooms/:roomCode/start — host only. */
+/**
+ * POST /rooms/:roomCode/start — host only.
+ *
+ * This is where a free game is paid for. The credit is reserved atomically
+ * before the room transitions, and handed straight back if the transition is
+ * rejected (not the host, too few players, room already started), so a failed
+ * start never costs the user anything. `startRoom` only succeeds out of the
+ * lobby state, so a room can never be charged twice.
+ */
 export async function handleStartRoom(req: NextRequest, roomCodeRaw: string): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
     const roomCode = normalizeRoomCode(roomCodeRaw);
 
+    const reservation = await reserveHostedGame(auth.userId);
+    if (!reservation.ok) {
+      throw freeQuotaExhaustedError();
+    }
+
     const { service } = getMultiplayerRuntime();
-    const room = await service.startRoom({ userId: auth.userId, roomCode });
+    try {
+      const room = await service.startRoom({ userId: auth.userId, roomCode });
+
+      return NextResponse.json({ room }, { status: 200 });
+    } catch (error) {
+      if (reservation.metered) {
+        await releaseHostedGame(auth.userId);
+      }
+      throw error;
+    }
+  } catch (error) {
+    return multiplayerErrorResponse(error);
+  }
+}
+
+/** POST /rooms/:roomCode/advance - host only, ends the reveal pause early. */
+export async function handleAdvanceQuestion(req: NextRequest, roomCodeRaw: string): Promise<NextResponse> {
+  try {
+    const auth = await authenticateMultiplayerRequest(req);
+    const roomCode = normalizeRoomCode(roomCodeRaw);
+
+    const { service } = getMultiplayerRuntime();
+    const room = await service.advanceQuestion({ userId: auth.userId, roomCode });
 
     return NextResponse.json({ room }, { status: 200 });
   } catch (error) {

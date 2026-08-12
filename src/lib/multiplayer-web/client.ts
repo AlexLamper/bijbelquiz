@@ -195,6 +195,17 @@ export async function startRoom(input: RoomCodeInput): Promise<RoomSnapshot> {
   return parseRoomResponse(body).room;
 }
 
+/** Host only: end the between-questions reveal pause early. */
+export async function advanceRoom(input: RoomCodeInput): Promise<RoomSnapshot> {
+  const body = await jsonFetch(roomPath(input.roomCode, '/advance'), {
+    method: 'POST',
+    headers: buildAuthHeaders(input),
+    signal: input.signal,
+  });
+
+  return parseRoomResponse(body).room;
+}
+
 /**
  * Returns the post-answer snapshot so the caller can paint the result
  * immediately instead of waiting a poll interval for it.

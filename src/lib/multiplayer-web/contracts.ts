@@ -28,8 +28,14 @@ export interface MultiplayerOkResponse {
 export interface MultiplayerCapability {
   canCreateRoom: boolean;
   isPremium: boolean;
+  /** Legacy alias for "no free games left"; prefer `freeRoomsRemaining`. */
   hasUsedFreeRoom: boolean;
+  /** Free games left, or `null` for Premium (unlimited). */
   freeRoomsRemaining: number | null;
+  /** Total free games a non-premium account gets. */
+  freeRoomsQuota: number;
+  /** Free games already spent, or `null` for Premium. */
+  freeRoomsUsed: number | null;
   maxPlayersFree: number;
   maxPlayersPremium: number;
   maxPlayersForUser: number;

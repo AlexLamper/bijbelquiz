@@ -124,6 +124,7 @@ async function provisionUser(db, label, { premium }) {
     isPremium: premium,
     hasLifetimePremium: false,
     freeMultiplayerRoomCreated: false,
+    multiplayerGamesHosted: 0,
     xp: 0,
     level: 1,
     createdAt: new Date(),
@@ -161,6 +162,19 @@ async function cleanup(db) {
 
 const API = '/api/multiplayer';
 const LEGACY_API = '/api/mobile/multiplayer';
+
+/** Mirrors MULTIPLAYER_FREE_ROOM_QUOTA in src/lib/premium-benefits.ts. */
+const FREE_GAME_QUOTA = 5;
+
+/** Force an account's hosted-game counter, to test the edges of the quota. */
+async function setGamesHosted(db, userId, count) {
+  await db
+    .collection('users')
+    .updateOne(
+      { _id: new mongoose.Types.ObjectId(userId) },
+      { $set: { multiplayerGamesHosted: count } },
+    );
+}
 
 // ── the actual scenarios ───────────────────────────────────────────────────
 async function run(db) {
@@ -201,7 +215,9 @@ async function run(db) {
 
   const freeCapability = await api(`${API}/rooms`, { token: freeHost.token });
   check('free host max players is 4', freeCapability.body?.maxPlayersForUser === 4, String(freeCapability.body?.maxPlayersForUser));
-  check('free host has 1 free room left', freeCapability.body?.freeRoomsRemaining === 1, String(freeCapability.body?.freeRoomsRemaining));
+  check('free host has 5 free games left', freeCapability.body?.freeRoomsRemaining === FREE_GAME_QUOTA, String(freeCapability.body?.freeRoomsRemaining));
+  check('capability reports the quota itself', freeCapability.body?.freeRoomsQuota === FREE_GAME_QUOTA, String(freeCapability.body?.freeRoomsQuota));
+  check('premium host has unlimited games', capability.body?.freeRoomsRemaining === null, String(capability.body?.freeRoomsRemaining));
 
   // ── validation ───────────────────────────────────────────────────────────
   section('Create validation');
@@ -282,8 +298,10 @@ async function run(db) {
   check('totalQuestions matches quiz', room.totalQuestions > 0, String(room.totalQuestions));
   check('serverTimeMs present', typeof room.serverTimeMs === 'number');
 
-  // ── free room quota ──────────────────────────────────────────────────────
-  section('Free-tier room quota');
+  // ── free game quota ──────────────────────────────────────────────────────
+  // A free account gets FREE_GAME_QUOTA games, and a game is only paid for
+  // when it actually starts. Creating (and abandoning) rooms must stay free.
+  section('Free-tier game quota');
   const freeRoom = await api(`${API}/rooms`, {
     method: 'POST',
     token: freeHost.token,
@@ -297,7 +315,55 @@ async function run(db) {
     token: freeHost.token,
     body: { quizId: quiz.id, maxPlayers: 4 },
   });
-  check('free host second room → 403 PREMIUM_REQUIRED', freeRoomAgain.status === 403 && freeRoomAgain.body?.error?.code === 'PREMIUM_REQUIRED', `got ${freeRoomAgain.status} ${freeRoomAgain.body?.error?.code}`);
+  check('creating a second room is still free → 201', freeRoomAgain.status === 201, `got ${freeRoomAgain.status}`);
+  if (freeRoomAgain.body?.room?.code) createdRoomCodes.add(freeRoomAgain.body.room.code);
+
+  const afterCreates = await api(`${API}/rooms`, { token: freeHost.token });
+  check('creating rooms spends no credits', afterCreates.body?.freeRoomsRemaining === FREE_GAME_QUOTA, String(afterCreates.body?.freeRoomsRemaining));
+
+  // A start that the service rejects must hand the credit straight back.
+  const lonelyStart = await api(`${API}/rooms/${freeRoom.body.room.code}/start`, {
+    method: 'POST',
+    token: freeHost.token,
+  });
+  check('start with 1 player → 409 MIN_PLAYERS_REQUIRED', lonelyStart.status === 409 && lonelyStart.body?.error?.code === 'MIN_PLAYERS_REQUIRED', `got ${lonelyStart.status} ${lonelyStart.body?.error?.code}`);
+
+  const afterFailedStart = await api(`${API}/rooms`, { token: freeHost.token });
+  check('a refused start refunds the credit', afterFailedStart.body?.freeRoomsRemaining === FREE_GAME_QUOTA, String(afterFailedStart.body?.freeRoomsRemaining));
+
+  await setGamesHosted(db, freeHost.id, FREE_GAME_QUOTA);
+
+  const exhausted = await api(`${API}/rooms`, { token: freeHost.token });
+  check('exhausted quota → 0 games left', exhausted.body?.freeRoomsRemaining === 0, String(exhausted.body?.freeRoomsRemaining));
+  check('exhausted quota → canCreateRoom false', exhausted.body?.canCreateRoom === false, String(exhausted.body?.canCreateRoom));
+  check('exhausted quota → legacy hasUsedFreeRoom true', exhausted.body?.hasUsedFreeRoom === true, String(exhausted.body?.hasUsedFreeRoom));
+
+  const blockedCreate = await api(`${API}/rooms`, {
+    method: 'POST',
+    token: freeHost.token,
+    body: { quizId: quiz.id, maxPlayers: 4 },
+  });
+  check('create on empty quota → 403 PREMIUM_REQUIRED', blockedCreate.status === 403 && blockedCreate.body?.error?.code === 'PREMIUM_REQUIRED', `got ${blockedCreate.status} ${blockedCreate.body?.error?.code}`);
+
+  // The quota is checked before the room state is, so this beats the
+  // "not enough players" error rather than hiding behind it.
+  const blockedStart = await api(`${API}/rooms/${freeRoom.body.room.code}/start`, {
+    method: 'POST',
+    token: freeHost.token,
+  });
+  check('start on empty quota → 403 PREMIUM_REQUIRED', blockedStart.status === 403 && blockedStart.body?.error?.code === 'PREMIUM_REQUIRED', `got ${blockedStart.status} ${blockedStart.body?.error?.code}`);
+
+  // A legacy account carries the old boolean and no counter: that must read
+  // as exactly one game used, not as a fresh quota.
+  const legacyHost = await provisionUser(db, 'legacy', { premium: false });
+  await db.collection('users').updateOne(
+    { _id: new mongoose.Types.ObjectId(legacyHost.id) },
+    { $set: { freeMultiplayerRoomCreated: true }, $unset: { multiplayerGamesHosted: '' } },
+  );
+  const legacyQuota = await api(`${API}/rooms`, { token: legacyHost.token });
+  check('legacy one-room account keeps 4 games', legacyQuota.body?.freeRoomsRemaining === FREE_GAME_QUOTA - 1, String(legacyQuota.body?.freeRoomsRemaining));
+
+  await setGamesHosted(db, freeHost.id, 0);
 
   // ── join ─────────────────────────────────────────────────────────────────
   section('Join room');
@@ -458,13 +524,20 @@ async function run(db) {
       if (current.currentQuestion && current.currentQuestion.correctAnswerId == null) {
         fail('correct answer revealed during question_result');
       }
-      await sleep(300);
+      // Exercise the host skip endpoint instead of waiting out the full
+      // questionResultDelayMs on every question - both keeps this loop inside
+      // its timeout budget and gives /advance permanent regression coverage.
+      const skip = await api(`${API}/rooms/${room.code}/advance`, { method: 'POST', token: host.token });
+      if (skip.status !== 200) {
+        fail('host advance during question_result', `${skip.status} ${JSON.stringify(skip.body?.error ?? '')}`);
+      }
+      await sleep(150);
       continue;
     }
 
     if (current.status === 'in_progress' && current.currentQuestion) {
       const question = current.currentQuestion;
-      // All three answer simultaneously — this is the optimistic-locking test.
+      // All three answer simultaneously - this is the optimistic-locking test.
       const responses = await Promise.all(
         players.map((player, index) =>
           api(`${API}/rooms/${room.code}/answer`, {
@@ -588,7 +661,7 @@ async function main() {
   if (failed.length > 0) {
     console.log('\nFailures:');
     for (const entry of failed) {
-      console.log(`  [31m✗[0m [${entry.section}] ${entry.label}${entry.detail ? ` — ${entry.detail}` : ''}`);
+      console.log(`  [31m✗[0m [${entry.section}] ${entry.label}${entry.detail ? ` - ${entry.detail}` : ''}`);
     }
     process.exit(1);
   }

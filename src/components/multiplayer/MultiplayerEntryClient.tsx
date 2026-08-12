@@ -5,8 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
   ArrowRight,
-  CheckCircle2,
-  Copy,
+  ChevronDown,
   Crown,
   Gamepad2,
   Lock,
@@ -36,7 +35,9 @@ import { toUserMessage } from '@/lib/multiplayer-web/errors';
 import { trackEvent } from '@/components/GoogleAnalytics';
 import MultiplayerPremiumPaywall from '@/components/multiplayer/MultiplayerPremiumPaywall';
 import {
+  formatFreeGamesRemaining,
   MULTIPLAYER_FREE_MAX_PLAYERS,
+  MULTIPLAYER_FREE_ROOM_QUOTA,
   MULTIPLAYER_PREMIUM_MAX_PLAYERS,
 } from '@/lib/premium-benefits';
 import { cn } from '@/lib/utils';
@@ -51,7 +52,8 @@ interface MultiplayerQuizOption {
 interface MultiplayerEntryClientProps {
   quizzes: MultiplayerQuizOption[];
   isPremiumUser: boolean;
-  hasUsedFreeRoomCreation: boolean;
+  /** Free games left to host, or `null` for Premium (unlimited). */
+  freeGamesRemaining: number | null;
   /** Hard upper bound for the player picker for the current user. */
   maxPlayersForUser: number;
 }
@@ -71,7 +73,7 @@ function routeForRoom(code: string, status: string): string {
 export default function MultiplayerEntryClient({
   quizzes,
   isPremiumUser,
-  hasUsedFreeRoomCreation,
+  freeGamesRemaining,
   maxPlayersForUser,
 }: MultiplayerEntryClientProps) {
   const router = useRouter();
@@ -83,17 +85,18 @@ export default function MultiplayerEntryClient({
   }
   /**
    * The server-rendered props are only the *initial* truth: the user may have
-   * upgraded, or used their free room, in another tab or on mobile since this
+   * upgraded, or spent a free game, in another tab or on mobile since this
    * page was rendered. We re-check on mount and after a rejected create, so
-   * the "free room used" state is never wrong in either direction.
+   * the counter is never wrong in either direction.
    */
   const [quota, setQuota] = useState({
     isPremium: isPremiumUser,
-    hasUsedFreeRoom: hasUsedFreeRoomCreation,
+    freeGamesRemaining,
   });
 
-  const canCreateRoom = quota.isPremium || !quota.hasUsedFreeRoom;
-  const freeRoomUsedUp = !quota.isPremium && quota.hasUsedFreeRoom;
+  const gamesLeft = quota.isPremium ? null : Math.max(0, quota.freeGamesRemaining ?? 0);
+  const outOfFreeGames = !quota.isPremium && gamesLeft === 0;
+  const canCreateRoom = quota.isPremium || !outOfFreeGames;
 
   const [selectedQuizId, setSelectedQuizId] = useState(quizzes[0]?.id ?? '');
   const [maxPlayers, setMaxPlayers] = useState<string>('4');
@@ -111,10 +114,10 @@ export default function MultiplayerEntryClient({
     !quota.isPremium && selectedPlayersCount > MULTIPLAYER_FREE_MAX_PLAYERS;
 
   useEffect(() => {
-    if (freeRoomUsedUp) {
+    if (outOfFreeGames) {
       trackEvent('multiplayer_paywall_shown', { placement: 'free_quota_used' });
     }
-  }, [freeRoomUsedUp]);
+  }, [outOfFreeGames]);
 
   useEffect(() => {
     if (playerLimitTriggered) {
@@ -147,7 +150,7 @@ export default function MultiplayerEntryClient({
         if (!cancelled) {
           setQuota({
             isPremium: capability.isPremium,
-            hasUsedFreeRoom: capability.hasUsedFreeRoom,
+            freeGamesRemaining: capability.freeRoomsRemaining,
           });
         }
       } catch {
@@ -160,6 +163,18 @@ export default function MultiplayerEntryClient({
     };
   }, []);
 
+  async function refreshQuota() {
+    try {
+      const capability = await tokensRef.current!.run((token) => getCapability({ token }));
+      setQuota({
+        isPremium: capability.isPremium,
+        freeGamesRemaining: capability.freeRoomsRemaining,
+      });
+    } catch {
+      // Ignore - the error message already explains the block.
+    }
+  }
+
   async function handleCreateRoom() {
     trackEvent('multiplayer_room_create_clicked', {
       is_premium: quota.isPremium,
@@ -168,7 +183,7 @@ export default function MultiplayerEntryClient({
 
     if (!canCreateRoom) {
       setErrorMessage(
-        `Je gratis spel is al gebruikt. Word Premium om onbeperkt spellen te hosten, tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.`,
+        `Je hebt je ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen gebruikt. Word Premium om onbeperkt spellen te hosten.`,
       );
       trackEvent('multiplayer_room_create_blocked', { reason: 'free_quota_used' });
       return;
@@ -206,29 +221,18 @@ export default function MultiplayerEntryClient({
         is_premium: quota.isPremium,
         max_players: selectedPlayersCount,
       });
-      // A free account just spent its one room; reflect that immediately in
-      // case the user navigates back to this page.
-      if (!quota.isPremium) {
-        setQuota((current) => ({ ...current, hasUsedFreeRoom: true }));
-      }
+      // Note: no local decrement. A room costs nothing until the host actually
+      // starts the game, which happens on the lobby screen.
       router.push(`/samen-spelen/${room.code}/lobby`);
     } catch (error) {
       setErrorMessage(toUserMessage(error));
 
-      // The server is the authority on the quota. If it says the free room is
-      // gone, switch the whole card into the "used up" state rather than
+      // The server is the authority on the quota. If it says the free games
+      // are gone, switch the whole card into the "used up" state rather than
       // leaving an enabled button that will keep failing.
       if (error instanceof MultiplayerClientHttpError && error.code === 'PREMIUM_REQUIRED') {
         trackEvent('multiplayer_room_create_blocked', { reason: 'server_rejected' });
-        try {
-          const capability = await tokensRef.current!.run((token) => getCapability({ token }));
-          setQuota({
-            isPremium: capability.isPremium,
-            hasUsedFreeRoom: capability.hasUsedFreeRoom,
-          });
-        } catch {
-          // Ignore - the error message above already explains the block.
-        }
+        await refreshQuota();
       }
     } finally {
       setIsCreating(false);
@@ -270,100 +274,64 @@ export default function MultiplayerEntryClient({
       step: '1',
       icon: Users,
       title: 'Start een spel',
-      text: 'Kies een quiz en max. spelers. Je krijgt een code.',
+      text: 'Kies een quiz en het maximum aantal spelers. Je krijgt een spelcode.',
     },
     {
       step: '2',
       icon: Share2,
       title: 'Deel de code',
-      text: 'Spelers loggen in, vullen de code in en wachten samen.',
+      text: 'De anderen loggen in, vullen de code in en wachten met je in de wachtkamer.',
     },
     {
       step: '3',
       icon: Trophy,
       title: 'Speel samen',
-      text: 'Spelleider start. Iedereen antwoordt live, scores verschijnen direct.',
+      text: 'Jij drukt op start. Iedereen antwoordt tegelijk, de scores verschijnen direct.',
     },
   ];
 
   return (
-    <div className="flex flex-col overflow-auto bg-background px-4 py-4 lg:h-[calc(100vh-4rem)] lg:overflow-hidden lg:px-6 lg:py-5">
-      {/* Header + "Zo werkt het" strip */}
-      <div className="shrink-0 pb-4">
-        <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-          <div>
-            <h1 className="text-2xl font-normal tracking-tight text-foreground lg:text-3xl">
-              Samen spelen
-            </h1>
-            <p className="mt-0.5 text-sm text-muted-foreground">
-              Nodig iedereen uit met een code en speel tegelijk - zie wie de Bijbel het beste kent.
-            </p>
-          </div>
+    <div className="mx-auto w-full max-w-5xl px-4 py-6 lg:px-6 lg:py-8">
+      {/* Header: one sentence of what this is, and the quota, nothing else */}
+      <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
+        <div>
+          <h1 className="text-2xl font-normal tracking-tight text-foreground lg:text-3xl">
+            Samen spelen
+          </h1>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Nodig iedereen uit met een code en speel tegelijk dezelfde quiz.
+          </p>
         </div>
 
-        {/* Compact "Zo werkt het" strip */}
-        <div className="mt-3 flex items-stretch rounded-lg border border-border bg-muted/40">
-          {steps.map((step, i) => (
-            <div key={step.step} className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2">
-              {i > 0 && <div className="-ml-3 mr-1 hidden h-full w-px bg-border sm:block" />}
-              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-lapis/15 text-[11px] font-semibold text-ink-soft">
-                {step.step}
-              </span>
-              <step.icon className="hidden h-3.5 w-3.5 shrink-0 text-muted-foreground sm:block" aria-hidden />
-              <div className="min-w-0">
-                <span className="block text-xs font-semibold text-foreground">{step.title}</span>
-                <span className="hidden truncate text-[11px] text-muted-foreground md:block">{step.text}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+        {quota.isPremium ? (
+          <span className="inline-flex items-center gap-1.5 rounded-md border border-rule bg-paper-sunken px-2.5 py-1.5 text-xs font-medium text-ink">
+            <Crown className="h-3.5 w-3.5" aria-hidden />
+            Premium - onbeperkt spellen
+          </span>
+        ) : (
+          <span
+            className={cn(
+              'inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-xs font-medium',
+              outOfFreeGames
+                ? 'border-vermilion/50 bg-vermilion-tint text-ink'
+                : 'border-rule bg-paper-sunken text-ink',
+            )}
+          >
+            {outOfFreeGames ? (
+              <Lock className="h-3.5 w-3.5 text-vermilion" aria-hidden />
+            ) : (
+              <Gamepad2 className="h-3.5 w-3.5 text-ink-soft" aria-hidden />
+            )}
+            {outOfFreeGames
+              ? 'Je gratis spellen zijn op'
+              : formatFreeGamesRemaining(gamesLeft ?? 0)}
+          </span>
+        )}
       </div>
-
-      {/* Free hosting quota spent - the single loudest thing on the page */}
-      {freeRoomUsedUp && (
-        <div
-          role="status"
-          className="mb-3 shrink-0 rounded-lg border-2 border-vermilion/50 bg-vermilion-tint p-4"
-        >
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-            <div className="flex gap-3">
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-vermilion/15">
-                <Lock className="h-4 w-4 text-vermilion" aria-hidden />
-              </div>
-              <div className="min-w-0">
-                <p className="text-sm font-semibold text-ink">
-                  Je gratis spel is al gebruikt - je kunt geen nieuw spel meer starten
-                </p>
-                <p className="mt-1 text-sm text-ink-soft">
-                  Met een gratis account host je{' '}
-                  <strong className="font-semibold">één spel, één keer</strong>. Die heb je
-                  inmiddels gebruikt. Word Premium om onbeperkt spellen te starten, met tot{' '}
-                  {MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.
-                </p>
-                <p className="mt-1.5 text-sm font-medium text-positive">
-                  Meedoen blijft wél gratis en onbeperkt - vraag een vriend om een spelcode.
-                </p>
-              </div>
-            </div>
-            <Button
-              asChild
-              className="h-9 shrink-0 bg-ink px-4 text-xs font-semibold text-ink-inverted hover:bg-ink-soft"
-              onClick={() =>
-                trackEvent('multiplayer_premium_cta_clicked', { placement: 'free_quota_used' })
-              }
-            >
-              <Link href="/premium">
-                <Crown className="mr-2 h-4 w-4" />
-                Word Premium
-              </Link>
-            </Button>
-          </div>
-        </div>
-      )}
 
       {/* Resume a game this user is still part of */}
       {activeRoom && (
-        <div className="mb-3 flex shrink-0 flex-wrap items-center gap-3 rounded-lg border border-lapis/35 bg-lapis/10 p-3 text-sm">
+        <div className="mt-5 flex flex-wrap items-center gap-3 rounded-lg border border-lapis/35 bg-lapis/10 p-3 text-sm">
           <span className="font-medium text-foreground">
             Je doet nog mee aan{' '}
             <span className="font-mono font-semibold">{activeRoom.code}</span> ({activeRoom.quizTitle}).
@@ -379,66 +347,81 @@ export default function MultiplayerEntryClient({
         </div>
       )}
 
-      {/* Error message */}
       {errorMessage && (
-        <div className="mb-3 shrink-0 rounded-lg border border-destructive/30 bg-destructive/10 p-3 text-sm text-destructive">
+        <div className="mt-5 rounded-lg border border-destructive/30 bg-destructive/10 p-3 text-sm text-destructive">
           {errorMessage}
         </div>
       )}
 
-      {/* Action cards */}
-      <div className="flex min-h-0 flex-1 flex-col gap-5 lg:flex-row lg:gap-6">
-        {/* Create room card */}
+      {/* The single paywall on this page. It only exists once the counter is
+          actually empty - before that the page says nothing about Premium. */}
+      {outOfFreeGames && (
+        <div className="mt-5">
+          <MultiplayerPremiumPaywall
+            placement="free_quota_used"
+            headline={`Je hebt je ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen gespeeld - host onbeperkt met Premium.`}
+          />
+          <p className="mt-2 text-sm text-positive">
+            Meedoen blijft gratis: vraag iemand anders om een spelcode en speel gewoon mee.
+          </p>
+        </div>
+      )}
+
+      {/* Two actions, side by side, nothing between them */}
+      <div className="mt-6 grid gap-5 lg:grid-cols-2">
+        {/* Join - always available, so it comes first */}
+        <Card className="flex flex-col border-rule py-0">
+          <CardHeader className="px-5 pb-0 pt-5">
+            <CardTitle className="text-base">Meedoen aan een spel</CardTitle>
+            <CardDescription className="mt-0.5 text-xs">
+              Heb je een code van de spelleider? Vul hem hier in.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-1 flex-col gap-3 px-5 pb-5 pt-4">
+            <div className="space-y-1.5">
+              <label htmlFor="room-code" className="text-sm font-medium">
+                Spelcode
+              </label>
+              <Input
+                id="room-code"
+                value={joinCode}
+                onChange={(event) => setJoinCode(event.target.value.toUpperCase())}
+                placeholder="Bijv. ABCD12"
+                maxLength={10}
+                autoCapitalize="characters"
+                className="h-12 font-mono text-lg tracking-widest"
+              />
+            </div>
+
+            <Button
+              className="mt-auto h-10 w-full dark:text-ink-inverted"
+              variant="outline"
+              onClick={handleJoinRoom}
+              disabled={isJoining}
+            >
+              {isJoining ? 'Bezig met verbinden...' : 'Meedoen'}
+            </Button>
+          </CardContent>
+        </Card>
+
+        {/* Create */}
         <Card
           className={cn(
-            'flex min-h-0 flex-1 flex-col py-0',
-            freeRoomUsedUp ? 'border-2 border-vermilion/40' : 'border-rule',
+            'flex flex-col py-0',
+            outOfFreeGames ? 'border-2 border-vermilion/40' : 'border-rule',
           )}
         >
-          <CardHeader className="shrink-0 px-5 pb-0 pt-5">
-            <div className="flex items-start gap-2">
-              <div
-                className={cn(
-                  'flex h-9 w-9 shrink-0 items-center justify-center rounded-lg',
-                  freeRoomUsedUp ? 'bg-vermilion/15' : 'bg-lapis/15',
-                )}
-              >
-                {freeRoomUsedUp ? (
-                  <Lock className="h-4 w-4 text-vermilion" aria-hidden />
-                ) : (
-                  <Gamepad2 className="h-4 w-4 text-ink-soft" aria-hidden />
-                )}
-              </div>
-              <div className="min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <CardTitle className="text-base">Nieuw spel starten</CardTitle>
-                  {freeRoomUsedUp && (
-                    <span className="inline-flex items-center gap-1 rounded-md bg-vermilion px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink-inverted">
-                      <Lock className="h-3 w-3" />
-                      Gratis spel gebruikt
-                    </span>
-                  )}
-                </div>
-                <CardDescription className="mt-0.5 text-xs">
-                  {quota.isPremium
-                    ? `Jij bent host en kunt tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers uitnodigen.`
-                    : freeRoomUsedUp
-                      ? 'Je hebt je enige gratis spel al gehost. Alleen Premium kan opnieuw hosten.'
-                      : `Eén spel gratis, tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers. Daarna is Premium nodig.`}
-                </CardDescription>
-              </div>
-            </div>
+          <CardHeader className="px-5 pb-0 pt-5">
+            <CardTitle className="text-base">Nieuw spel starten</CardTitle>
+            <CardDescription className="mt-0.5 text-xs">
+              {quota.isPremium
+                ? `Jij bent spelleider en kunt tot ${maxPlayersForUser} spelers uitnodigen.`
+                : outOfFreeGames
+                  ? 'Hiervoor heb je Premium nodig.'
+                  : `Gratis tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers. Een gratis spel telt pas mee als je het spel echt start.`}
+            </CardDescription>
           </CardHeader>
-          <CardContent className="flex min-h-0 flex-1 flex-col space-y-3 px-5 pb-5 pt-3">
-            {freeRoomUsedUp && (
-              <MultiplayerPremiumPaywall
-                placement="free_quota_used"
-                headline="Je gratis spel is al gebruikt - host onbeperkt met Premium."
-              />
-            )}
-
-            {/* The form stays visible so the user can see what they're missing,
-                but it is inert: nothing here can lead to a room any more. */}
+          <CardContent className="flex flex-1 flex-col gap-3 px-5 pb-5 pt-4">
             <fieldset
               disabled={!canCreateRoom}
               className={cn(
@@ -446,75 +429,66 @@ export default function MultiplayerEntryClient({
                 !canCreateRoom && 'pointer-events-none opacity-45',
               )}
             >
-            <div className="space-y-1.5">
-              <label className="text-sm font-medium">Quiz</label>
-              <Select value={selectedQuizId} onValueChange={setSelectedQuizId}>
-                <SelectTrigger className="h-10">
-                  <SelectValue placeholder="Kies een quiz" />
-                </SelectTrigger>
-                <SelectContent>
-                  {quizzes.map((quiz) => (
-                    <SelectItem key={quiz.id} value={quiz.id}>
-                      {quiz.title}{' '}
-                      <span className="text-muted-foreground">
-                        ({quiz.questionCount} vragen{quiz.isPremium ? ', premium' : ''})
-                      </span>
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div className="space-y-1.5">
-              <label className="text-sm font-medium">Maximaal aantal spelers</label>
-              <Select value={maxPlayers} onValueChange={setMaxPlayers}>
-                <SelectTrigger className="h-10">
-                  <SelectValue placeholder="Kies aantal" />
-                </SelectTrigger>
-                <SelectContent>
-                  {PLAYER_OPTIONS.map((count) => {
-                    const isPremiumOnly = count > MULTIPLAYER_FREE_MAX_PLAYERS && !quota.isPremium;
-                    return (
-                      <SelectItem key={count} value={String(count)}>
-                        <span className="flex items-center gap-2">
-                          {count} spelers
-                          {isPremiumOnly && (
-                            <span className="inline-flex items-center gap-1 rounded-md bg-paper-sunken px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink">
-                              <Crown className="h-3 w-3" />
-                              Premium
-                            </span>
-                          )}
+              <div className="space-y-1.5">
+                <label className="text-sm font-medium">Quiz</label>
+                <Select value={selectedQuizId} onValueChange={setSelectedQuizId}>
+                  <SelectTrigger className="h-10">
+                    <SelectValue placeholder="Kies een quiz" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {quizzes.map((quiz) => (
+                      <SelectItem key={quiz.id} value={quiz.id}>
+                        {quiz.title}{' '}
+                        <span className="text-muted-foreground">
+                          ({quiz.questionCount} vragen{quiz.isPremium ? ', premium' : ''})
                         </span>
                       </SelectItem>
-                    );
-                  })}
-                </SelectContent>
-              </Select>
-              <p className="text-xs text-muted-foreground">
-                {quota.isPremium
-                  ? `Je kunt tot ${maxPlayersForUser} spelers uitnodigen.`
-                  : `Gratis tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers, met Premium tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS}.`}
-              </p>
-            </div>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
 
-            {playerLimitTriggered && (
-              <MultiplayerPremiumPaywall
-                placement="player_limit"
-                headline={`Speel met ${selectedPlayersCount} spelers - beschikbaar met Premium.`}
-              />
-            )}
+              <div className="space-y-1.5">
+                <label className="text-sm font-medium">Maximaal aantal spelers</label>
+                <Select value={maxPlayers} onValueChange={setMaxPlayers}>
+                  <SelectTrigger className="h-10">
+                    <SelectValue placeholder="Kies aantal" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {PLAYER_OPTIONS.map((count) => {
+                      const isPremiumOnly = count > MULTIPLAYER_FREE_MAX_PLAYERS && !quota.isPremium;
+                      return (
+                        <SelectItem key={count} value={String(count)}>
+                          <span className="flex items-center gap-2">
+                            {count} spelers
+                            {isPremiumOnly && (
+                              <span className="inline-flex items-center gap-1 rounded-md bg-paper-sunken px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink">
+                                <Crown className="h-3 w-3" />
+                                Premium
+                              </span>
+                            )}
+                          </span>
+                        </SelectItem>
+                      );
+                    })}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Deliberately a one-liner and not a second paywall block: the
+                  user only needs to know this number is out of reach. */}
+              {playerLimitTriggered && (
+                <p className="text-xs text-ink-soft">
+                  {selectedPlayersCount} spelers vraagt om{' '}
+                  <Link href="/premium" className="font-semibold underline underline-offset-2">
+                    Premium
+                  </Link>
+                  . Gratis speel je tot {MULTIPLAYER_FREE_MAX_PLAYERS} spelers.
+                </p>
+              )}
             </fieldset>
 
-            {/* One free room per free account, so tell the user which state
-                they're in instead of only greying the button out. */}
-            {!quota.isPremium && !freeRoomUsedUp && (
-              <p className="rounded-md border border-rule bg-paper-sunken px-3 py-2 text-xs text-ink-soft">
-                <strong className="font-semibold">Let op:</strong> dit is je enige gratis spel.
-                Daarna heb je Premium nodig om zelf een spel te starten.
-              </p>
-            )}
-
-            {freeRoomUsedUp ? (
+            {outOfFreeGames ? (
               <Button
                 asChild
                 className="mt-auto h-10 w-full bg-ink text-ink-inverted hover:bg-ink-soft"
@@ -524,7 +498,7 @@ export default function MultiplayerEntryClient({
               >
                 <Link href="/premium">
                   <Crown className="mr-2 h-4 w-4" />
-                  Word Premium om weer te hosten
+                  Word Premium om te hosten
                 </Link>
               </Button>
             ) : (
@@ -545,87 +519,31 @@ export default function MultiplayerEntryClient({
             )}
           </CardContent>
         </Card>
+      </div>
 
-        {/* Join room card */}
-        <Card
-          className={cn(
-            'flex min-h-0 flex-1 flex-col py-0',
-            // When hosting is locked, this is the user's remaining route into a
-            // game - make it read as the live option, not the leftover one.
-            freeRoomUsedUp ? 'border-2 border-positive/45' : 'border-rule',
-          )}
-        >
-          <CardHeader className="shrink-0 px-5 pb-0 pt-5">
-            <div className="flex items-start gap-2">
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-positive/10">
-                <Copy className="h-4 w-4 text-positive dark:text-positive" aria-hidden />
-              </div>
+      {/* Folded away: needed once, in the way every time after that */}
+      <details className="group mt-5 rounded-lg border border-border bg-card">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-medium text-foreground">
+          Hoe werkt het?
+          <ChevronDown
+            className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180"
+            aria-hidden
+          />
+        </summary>
+        <ol className="grid gap-4 border-t border-border px-4 py-4 sm:grid-cols-3">
+          {steps.map((step) => (
+            <li key={step.step} className="flex gap-3">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-lapis/15 text-xs font-semibold text-ink-soft">
+                {step.step}
+              </span>
               <div className="min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <CardTitle className="text-base">Meedoen aan spel</CardTitle>
-                  {freeRoomUsedUp && (
-                    <span className="inline-flex items-center gap-1 rounded-md bg-positive/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-positive">
-                      <CheckCircle2 className="h-3 w-3" />
-                      Gratis en onbeperkt
-                    </span>
-                  )}
-                </div>
-                <CardDescription className="mt-0.5 text-xs">
-                  {freeRoomUsedUp
-                    ? 'Dit kan altijd, ook zonder Premium. Vraag iemand anders om een spel te starten en vul hier hun code in.'
-                    : 'Heb je een code van de spelleider? Vul hem hier in - hoofdletters maakt niet uit.'}
-                </CardDescription>
+                <p className="text-sm font-semibold text-foreground">{step.title}</p>
+                <p className="mt-0.5 text-xs text-muted-foreground">{step.text}</p>
               </div>
-            </div>
-          </CardHeader>
-          <CardContent className="flex min-h-0 flex-1 flex-col space-y-3 px-5 pb-5 pt-3">
-            <div className="space-y-1.5">
-              <label htmlFor="room-code" className="text-sm font-medium">
-                Spelcode
-              </label>
-              <Input
-                id="room-code"
-                value={joinCode}
-                onChange={(event) => setJoinCode(event.target.value.toUpperCase())}
-                placeholder="Bijv. ABCD12"
-                maxLength={10}
-                autoCapitalize="characters"
-                className="h-12 font-mono text-lg tracking-widest"
-              />
-              <p className="text-xs text-muted-foreground">
-                Tip: de spelleider kan de code met één klik kopiëren in de wachtkamer.
-              </p>
-            </div>
-
-            <div className="flex-1" />
-
-            <Button
-              className="mt-auto h-10 w-full dark:text-ink-inverted"
-              variant="outline"
-              onClick={handleJoinRoom}
-              disabled={isJoining}
-            >
-              {isJoining ? 'Bezig met verbinden...' : 'Deelnemen'}
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Tips strip */}
-      <div className="mt-3 shrink-0">
-        <div className="flex flex-wrap gap-3">
-          <div className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-xs">
-            <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-positive dark:text-positive" aria-hidden />
-            <span className="font-medium text-foreground">Inloggen vereist</span>
-            <span className="text-muted-foreground">- maak gratis een account aan.</span>
-          </div>
-          <div className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 text-xs">
-            <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-positive dark:text-positive" aria-hidden />
-            <span className="font-medium text-foreground">Stabiele verbinding</span>
-            <span className="text-muted-foreground">- scores worden automatisch bijgewerkt.</span>
-          </div>
-        </div>
-      </div>
+            </li>
+          ))}
+        </ol>
+      </details>
     </div>
   );
 }

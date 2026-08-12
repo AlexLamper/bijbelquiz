@@ -2,10 +2,11 @@
 /**
  * Paywall-clarity regression test.
  *
- * Free accounts may host exactly one room, ever. When that is used up the
- * "samen spelen" page has to say so unmistakably rather than just greying out
- * a button. This renders the real page for three account states and asserts
- * the copy that must (and must not) appear in each.
+ * Free accounts may host a fixed number of games, ever. While credits remain
+ * the page must show the counter and say nothing about Premium; once they are
+ * gone it has to say so unmistakably rather than just greying out a button.
+ * This renders the real page for four account states and asserts the copy that
+ * must (and must not) appear in each.
  *
  * USAGE
  *   node scripts/e2e-multiplayer-quota.mjs
@@ -75,13 +76,17 @@ function check(label, ok, detail) {
   console.log(`  ${ok ? '[32m✓[0m' : '[31m✗[0m'} ${label}${detail ? ` [90m${detail}[0m` : ''}`);
 }
 
+/** Mirrors MULTIPLAYER_FREE_ROOM_QUOTA in src/lib/premium-benefits.ts. */
+const FREE_GAME_QUOTA = 5;
+
 const LOCKED_MARKERS = [
-  'Je gratis spel is al gebruikt',
-  'Gratis spel gebruikt',
-  'Word Premium om weer te hosten',
-  'Meedoen blijft w',           // "Meedoen blijft wél gratis…" (accent-safe prefix)
-  'Gratis en onbeperkt',
+  'Je gratis spellen zijn op',
+  `Je hebt je ${FREE_GAME_QUOTA} gratis spellen gespeeld`,
+  'Word Premium om te hosten',
+  'Meedoen blijft gratis',
 ];
+
+const counterFor = (left) => `${left} van de ${FREE_GAME_QUOTA} gratis spellen over`;
 
 async function main() {
   await mongoose.connect(process.env.MONGODB_URI);
@@ -100,11 +105,13 @@ async function main() {
   };
 
   try {
-    const fresh = await mk('fresh', { isPremium: false, freeMultiplayerRoomCreated: false });
-    const used = await mk('used', { isPremium: false, freeMultiplayerRoomCreated: true });
-    const premium = await mk('premium', { isPremium: true, freeMultiplayerRoomCreated: true });
+    const fresh = await mk('fresh', { isPremium: false, multiplayerGamesHosted: 0 });
+    const used = await mk('used', { isPremium: false, multiplayerGamesHosted: FREE_GAME_QUOTA });
+    // No counter at all: an account from before the quota existed.
+    const legacy = await mk('legacy', { isPremium: false, freeMultiplayerRoomCreated: true });
+    const premium = await mk('premium', { isPremium: true, multiplayerGamesHosted: 99 });
 
-    console.log('\n[1m── Free account, room already used[0m');
+    console.log('\n[1m── Free account, all games used[0m');
     const usedJar = new Jar();
     await login(usedJar, used, 'Test1234!');
     const usedPage = await req(usedJar, '/samen-spelen');
@@ -114,22 +121,31 @@ async function main() {
     }
     check('create button is NOT offered', !usedPage.text.includes('>Spel starten<'));
 
-    console.log('\n[1m── Free account, room still available[0m');
+    console.log('\n[1m── Free account, games still available[0m');
     const freshJar = new Jar();
     await login(freshJar, fresh, 'Test1234!');
     const freshPage = await req(freshJar, '/samen-spelen');
     check('page renders', freshPage.status === 200, `got ${freshPage.status}`);
-    check('no "already used" banner', !freshPage.text.includes('Je gratis spel is al gebruikt'));
-    check('warns this is the only free game', freshPage.text.includes('dit is je enige gratis spel'));
+    check('shows the full counter', freshPage.text.includes(counterFor(FREE_GAME_QUOTA)));
+    check('no "games used up" banner', !freshPage.text.includes('Je gratis spellen zijn op'));
+    check('says a credit is spent at start', freshPage.text.includes('telt pas mee als je het spel echt start'));
     check('create button offered', freshPage.text.includes('Spel starten'));
+
+    const legacyJar = new Jar();
+    await login(legacyJar, legacy, 'Test1234!');
+    const legacyPage = await req(legacyJar, '/samen-spelen');
+    check('legacy page renders', legacyPage.status === 200, `got ${legacyPage.status}`);
+    check('old single room counts as one game used', legacyPage.text.includes(counterFor(FREE_GAME_QUOTA - 1)));
+    check('legacy account may still host', legacyPage.text.includes('Spel starten'));
 
     console.log('\n[1m── Premium account[0m');
     const premJar = new Jar();
     await login(premJar, premium, 'Test1234!');
     const premPage = await req(premJar, '/samen-spelen');
     check('page renders', premPage.status === 200, `got ${premPage.status}`);
-    check('no quota banner despite freeMultiplayerRoomCreated=true', !premPage.text.includes('Je gratis spel is al gebruikt'));
-    check('no "only free game" warning', !premPage.text.includes('dit is je enige gratis spel'));
+    check('no quota banner despite 99 games hosted', !premPage.text.includes('Je gratis spellen zijn op'));
+    check('no free-game counter', !premPage.text.includes('gratis spellen over'));
+    check('shows the unlimited badge', premPage.text.includes('onbeperkt spellen'));
     check('create button offered', premPage.text.includes('Spel starten'));
   } finally {
     await db.collection('users').deleteMany({ _id: { $in: ids } });

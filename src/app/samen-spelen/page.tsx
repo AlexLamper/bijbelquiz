@@ -5,6 +5,7 @@ import { authOptions } from '@/lib/auth';
 import { connectDB, Quiz, User } from '@/database';
 import {
   MULTIPLAYER_FREE_MAX_PLAYERS,
+  MULTIPLAYER_FREE_ROOM_QUOTA,
   MULTIPLAYER_PREMIUM_MAX_PLAYERS,
 } from '@/lib/premium-benefits';
 
@@ -19,6 +20,19 @@ interface RawUserDocument {
   isPremium?: unknown;
   hasLifetimePremium?: unknown;
   freeMultiplayerRoomCreated?: unknown;
+  multiplayerGamesHosted?: unknown;
+}
+
+/**
+ * Same rule as `lib/multiplayer/quota.ts`: accounts predating the counter are
+ * read through the legacy boolean, where "used" means one game spent. This is
+ * only the first paint - the client re-checks against the API on mount.
+ */
+function readGamesHosted(rawUser: RawUserDocument | null): number {
+  if (typeof rawUser?.multiplayerGamesHosted === 'number') {
+    return rawUser.multiplayerGamesHosted;
+  }
+  return rawUser?.freeMultiplayerRoomCreated === true ? 1 : 0;
 }
 
 interface RawQuizDocument {
@@ -39,11 +53,13 @@ export default async function MultiplayerPage() {
   await connectDB();
 
   const rawUser = await User.findById(session.user.id)
-    .select('isPremium hasLifetimePremium freeMultiplayerRoomCreated')
+    .select('isPremium hasLifetimePremium freeMultiplayerRoomCreated multiplayerGamesHosted')
     .lean() as RawUserDocument | null;
 
   const isPremiumUser = Boolean(rawUser?.isPremium || rawUser?.hasLifetimePremium || session.user.isPremium);
-  const hasUsedFreeRoomCreation = Boolean(rawUser?.freeMultiplayerRoomCreated);
+  const freeGamesRemaining = isPremiumUser
+    ? null
+    : Math.max(0, MULTIPLAYER_FREE_ROOM_QUOTA - readGamesHosted(rawUser));
 
   const statusFilter = { status: 'approved' };
   const rawQuizzes = await Quiz.find(statusFilter)
@@ -75,7 +91,7 @@ export default async function MultiplayerPage() {
     <MultiplayerEntryClient
       quizzes={quizzes}
       isPremiumUser={isPremiumUser}
-      hasUsedFreeRoomCreation={hasUsedFreeRoomCreation}
+      freeGamesRemaining={freeGamesRemaining}
       maxPlayersForUser={maxPlayersForUser}
     />
   );

@@ -24,7 +24,13 @@ export interface IUser extends Document {
   badges: string[];
   quizzesPlayed: number;
   averageScore: number;
+  /**
+   * Legacy one-room-ever flag. Superseded by `multiplayerGamesHosted`, kept
+   * only so existing accounts can be backfilled exactly once.
+   */
   freeMultiplayerRoomCreated: boolean;
+  /** Games this user has actually started as host; counts against the free quota. */
+  multiplayerGamesHosted: number;
   role: 'user' | 'admin';
   nameUpdatedAt?: Date;
   onboarding?: {
@@ -69,6 +75,10 @@ const UserSchema: Schema = new Schema({
   quizzesPlayed: { type: Number, default: 0 },
   averageScore: { type: Number, default: 0 },
   freeMultiplayerRoomCreated: { type: Boolean, default: false },
+  // Deliberately has no `default` fallback in application code: a missing
+  // field means "never backfilled", which is how the legacy boolean is
+  // migrated (see `lib/multiplayer/quota.ts`).
+  multiplayerGamesHosted: { type: Number, default: 0 },
   role: { type: String, enum: ['user', 'admin'], default: 'user' },
   nameUpdatedAt: { type: Date },
   onboarding: {

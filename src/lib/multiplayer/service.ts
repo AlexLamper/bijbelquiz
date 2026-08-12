@@ -55,9 +55,10 @@ function createRandomRoomCode(length = DEFAULT_ROOM_CODE_LENGTH): string {
 function createDefaultConfig(): MultiplayerServiceConfig {
   return {
     questionTimerSeconds: parsePositiveNumber(process.env.QUESTION_TIMER_SECONDS, 20),
-    // Long enough to actually read the between-questions scoreboard. At 2.5s
-    // the reveal was gone before players could see who got it right.
-    questionResultDelayMs: parsePositiveNumber(process.env.QUESTION_RESULT_DELAY_MS, 6000),
+    // Long enough to actually read the explanation, not just the scoreboard.
+    // The host can always cut this short via `advanceQuestion`, so leaning
+    // long here costs nothing for a fast-paced group and helps everyone else.
+    questionResultDelayMs: parsePositiveNumber(process.env.QUESTION_RESULT_DELAY_MS, 12000),
     playerOfflineAfterMs: parsePositiveNumber(process.env.MULTIPLAYER_OFFLINE_AFTER_MS, 30_000),
     heartbeatThrottleMs: parsePositiveNumber(process.env.MULTIPLAYER_HEARTBEAT_MS, 10_000),
     roomTtlMs: parsePositiveNumber(process.env.MULTIPLAYER_ROOM_TTL_MS, 24 * 60 * 60 * 1000),
@@ -294,6 +295,33 @@ export class MultiplayerService {
       }
 
       this.startQuestion(room, 0, now);
+      return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
+    });
+  }
+
+  /**
+   * Host-only: end the between-questions reveal pause early instead of
+   * waiting out `questionResultDelayMs`. Idempotent by design rather than
+   * erroring - if the pause already elapsed naturally (a slow request racing
+   * the timer, or a host double-tap) the room has typically already moved on
+   * by the time this runs, and there is nothing left to skip.
+   */
+  async advanceQuestion(input: RoomUserInput): Promise<RoomSnapshot> {
+    const roomCode = this.normalizeRoomCode(input.roomCode);
+
+    return this.mutateRoom(roomCode, async (room) => {
+      const now = this.config.now();
+      const mutatedByTimer = this.advanceTimers(room, now);
+
+      if (room.hostUserId !== input.userId) {
+        throw new MultiplayerError('NOT_HOST', 'Only the host can skip to the next question', 403);
+      }
+
+      if (room.status !== 'question_result') {
+        return { value: this.buildSnapshot(room, now, input.userId), mutated: mutatedByTimer };
+      }
+
+      this.advanceToNextQuestion(room, now);
       return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
     });
   }

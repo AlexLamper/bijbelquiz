@@ -11,8 +11,19 @@ export const MULTIPLAYER_FREE_MAX_PLAYERS = 4;
 /** Maximum players a Premium host may invite. Mirrors the service-level cap. */
 export const MULTIPLAYER_PREMIUM_MAX_PLAYERS = 20;
 
-/** Free users may host one room ever; afterwards Premium is required. */
-export const MULTIPLAYER_FREE_ROOM_QUOTA = 1;
+/**
+ * Free users may host this many games in total, ever. The point of the quota
+ * is discovery, not a teaser: a host needs a few real games before they know
+ * whether "samen spelen" is worth paying for. A credit is only spent when a
+ * game actually starts, so creating a room and walking away costs nothing.
+ */
+export const MULTIPLAYER_FREE_ROOM_QUOTA = 5;
+
+/** "3 van de 5 gratis spellen over" — the counter shown on every host surface. */
+export function formatFreeGamesRemaining(remaining: number): string {
+  const safe = Math.max(0, remaining);
+  return `${safe} van de ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen over`;
+}
 
 /** Single-sentence outcome promise used at the top of every paywall surface. */
 export const PREMIUM_HERO_OUTCOME =

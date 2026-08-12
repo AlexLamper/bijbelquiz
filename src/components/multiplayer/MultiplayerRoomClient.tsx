@@ -10,6 +10,9 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
 import { useMultiplayerRoomController } from '@/lib/multiplayer-web/useMultiplayerRoomController';
+import { getCapability } from '@/lib/multiplayer-web/client';
+import { MultiplayerTokenStore } from '@/lib/multiplayer-web/token-store';
+import { formatFreeGamesRemaining } from '@/lib/premium-benefits';
 import type {
   RoomCurrentQuestionSnapshot,
   RoomPlayerSnapshot,
@@ -197,8 +200,11 @@ function QuestionResultInterstitial(props: {
   players: RoomPlayerSnapshot[];
   viewerId: string | null;
   secondsLeft: number | null;
+  isHost: boolean;
+  onSkip: () => void;
+  isSkipping: boolean;
 }) {
-  const { question, players, viewerId, secondsLeft } = props;
+  const { question, players, viewerId, secondsLeft, isHost, onSkip, isSkipping } = props;
 
   const totalResponses = question.answers.reduce((sum, answer) => sum + (answer.count ?? 0), 0);
 
@@ -283,11 +289,17 @@ function QuestionResultInterstitial(props: {
                   style={{ width: `${share}%` }}
                 />
                 <div className="relative flex items-center gap-3">
-                  {isCorrect ? (
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-positive dark:text-positive" aria-hidden />
-                  ) : (
-                    <span className="h-2 w-2 shrink-0 rounded-full bg-muted-foreground/25" aria-hidden />
-                  )}
+                  {/* Fixed-width slot so every row reserves identical space for
+                      its leading glyph - an icon here versus a small dot on
+                      the other rows must not change where the text starts,
+                      or otherwise-identical rows wrap at different points. */}
+                  <span className="flex h-4 w-4 shrink-0 items-center justify-center">
+                    {isCorrect ? (
+                      <CheckCircle2 className="h-4 w-4 text-positive dark:text-positive" aria-hidden />
+                    ) : (
+                      <span className="h-2 w-2 rounded-full bg-muted-foreground/25" aria-hidden />
+                    )}
+                  </span>
                   <span className="min-w-0 flex-1 text-sm">{answer.text}</span>
                   {isYours && (
                     <Badge variant="outline" className="shrink-0 text-[10px]">
@@ -348,10 +360,26 @@ function QuestionResultInterstitial(props: {
         </div>
       )}
 
-      {secondsLeft != null && secondsLeft > 0 && (
-        <p className="text-center text-xs font-medium text-muted-foreground">
-          Volgende vraag over {secondsLeft}s...
-        </p>
+      {/* The reveal pause is generous so the explanation is actually
+          readable; the host can cut it short instead of everyone waiting
+          out the full delay once the room has clearly moved on. */}
+      {isHost ? (
+        <div className="flex flex-col items-center gap-2">
+          <Button onClick={onSkip} disabled={isSkipping} className="dark:text-ink-inverted">
+            {isSkipping ? 'Bezig...' : 'Volgende vraag'}
+          </Button>
+          {secondsLeft != null && secondsLeft > 0 && (
+            <p className="text-center text-xs text-muted-foreground">
+              Gaat automatisch verder over {secondsLeft}s
+            </p>
+          )}
+        </div>
+      ) : (
+        secondsLeft != null && secondsLeft > 0 && (
+          <p className="text-center text-xs font-medium text-muted-foreground">
+            Volgende vraag over {secondsLeft}s...
+          </p>
+        )
       )}
     </div>
   );
@@ -382,7 +410,9 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
     isStarting,
     isSubmittingAnswer,
     isLeaving,
+    isSkipping,
     start,
+    skip,
     answer,
     leave,
     refreshSnapshot,
@@ -394,6 +424,33 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
   });
 
   const [copied, setCopied] = useState(false);
+
+  /**
+   * Starting the game is what actually spends a free game, so the host has to
+   * be told *here* rather than only on the entry page. Premium hosts (and
+   * non-hosts) get `null` and no line is rendered.
+   */
+  const [freeGamesLeft, setFreeGamesLeft] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!isHost || view !== 'lobby') return;
+
+    let cancelled = false;
+    const tokens = new MultiplayerTokenStore();
+
+    void (async () => {
+      try {
+        const capability = await tokens.run((token) => getCapability({ token }));
+        if (!cancelled) setFreeGamesLeft(capability.freeRoomsRemaining);
+      } catch {
+        // Purely informational - the start button works either way.
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [isHost, view]);
 
   const hasLiveDeadline =
     (room?.status === 'in_progress' && room.currentQuestion?.deadlineAtMs != null) ||
@@ -651,6 +708,12 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       <Button onClick={() => void start()} disabled={!canStart || isStarting}>
                         {isStarting ? 'Spel wordt gestart...' : 'Start spel'}
                       </Button>
+                      {freeGamesLeft !== null && (
+                        <p className="text-xs text-muted-foreground">
+                          Starten kost één gratis spel. Je hebt nu{' '}
+                          {formatFreeGamesRemaining(freeGamesLeft)}.
+                        </p>
+                      )}
                       {!canStart && !isStarting && room.players.length >= 2 && (
                         <p className="text-xs text-muted-foreground">
                           Even wachten - spelerlijst wordt bijgewerkt...
@@ -681,7 +744,9 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 <CardDescription>
                   {room.currentQuestion
                     ? room.status === 'question_result'
-                      ? 'Uitslag van deze vraag - daarna gaat het automatisch verder.'
+                      ? isHost
+                        ? 'Uitslag van deze vraag - klik op "Volgende vraag" of wacht tot de timer afloopt.'
+                        : 'Uitslag van deze vraag - daarna gaat het automatisch verder.'
                       : `Vraag ${room.currentQuestion.questionNumber} van ${room.currentQuestion.totalQuestions}`
                     : 'Even geduld, de volgende vraag wordt geladen...'}
                 </CardDescription>
@@ -694,6 +759,9 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       players={room.players}
                       viewerId={resolvedUserId}
                       secondsLeft={resultPhaseSecondsLeft}
+                      isHost={isHost}
+                      onSkip={() => void skip()}
+                      isSkipping={isSkipping}
                     />
                   ) : (
                   <>
@@ -727,49 +795,30 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     </div>
 
                     <div className="grid gap-3">
-                      {room.currentQuestion.answers.map((answerOption) => {
-                        const revealed =
-                          room.status === 'question_result' &&
-                          room.currentQuestion!.correctAnswerId != null;
-                        const isCorrect =
-                          revealed && answerOption.id === room.currentQuestion!.correctAnswerId;
-                        const isWrongYours =
-                          revealed &&
-                          room.currentQuestion!.yourAnswerId === answerOption.id &&
-                          answerOption.id !== room.currentQuestion!.correctAnswerId;
-
-                        return (
-                          <Button
-                            key={answerOption.id}
-                            type="button"
-                            variant="outline"
-                            className={answerChoiceClasses(
-                              answerOption.id,
-                              room.currentQuestion!,
-                              room.status,
-                            )}
-                            onClick={() => void answer(room.currentQuestion!.id, answerOption.id)}
-                            disabled={
-                              (!canAnswer && room.status === 'in_progress') ||
-                              isSubmittingAnswer ||
-                              room.status === 'question_result'
-                            }
-                          >
-                            <span className="flex flex-1 items-start gap-3 text-left">
-                              {isCorrect && (
-                                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-positive dark:text-positive" />
-                              )}
-                              {isWrongYours && (
-                                <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-destructive" />
-                              )}
-                              {!isCorrect && !isWrongYours && (
-                                <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/25" />
-                              )}
-                              <span>{answerOption.text}</span>
-                            </span>
-                          </Button>
-                        );
-                      })}
+                      {room.currentQuestion.answers.map((answerOption) => (
+                        // This block only ever renders while status is
+                        // in_progress (question_result has its own branch
+                        // above), so there is no correct/wrong reveal to show
+                        // here - every option looks the same aside from the
+                        // player's own pending pick.
+                        <Button
+                          key={answerOption.id}
+                          type="button"
+                          variant="outline"
+                          className={answerChoiceClasses(
+                            answerOption.id,
+                            room.currentQuestion!,
+                            room.status,
+                          )}
+                          onClick={() => void answer(room.currentQuestion!.id, answerOption.id)}
+                          disabled={!canAnswer || isSubmittingAnswer}
+                        >
+                          <span className="flex flex-1 items-center gap-3 text-left">
+                            <span className="h-2 w-2 shrink-0 rounded-full bg-muted-foreground/25" />
+                            <span>{answerOption.text}</span>
+                          </span>
+                        </Button>
+                      ))}
                     </div>
 
                     {room.status === 'in_progress' && (

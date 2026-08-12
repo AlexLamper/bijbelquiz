@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { RoomResultEntry, RoomSnapshot, RoomStatus } from '@/lib/multiplayer/types';
 import {
+  advanceRoom,
   getResults,
   getRoomSnapshot,
   isAbortError,
@@ -47,6 +48,7 @@ interface MultiplayerControllerState {
   isStarting: boolean;
   isSubmittingAnswer: boolean;
   isLeaving: boolean;
+  isSkipping: boolean;
   roomClosed: boolean;
   /** Newest first, capped to 200 entries. */
   debugEvents: string[];
@@ -64,6 +66,7 @@ const INITIAL_STATE: MultiplayerControllerState = {
   isStarting: false,
   isSubmittingAnswer: false,
   isLeaving: false,
+  isSkipping: false,
   roomClosed: false,
   debugEvents: [],
   lastSyncedAtMs: null,
@@ -620,6 +623,24 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
     }
   }, [normalizedRoomCode]);
 
+  const skip = useCallback(async () => {
+    const session = sessionRef.current;
+    if (!session) return;
+
+    setState((current) => ({ ...current, isSkipping: true, errorMessage: null }));
+    try {
+      const room = await session.runAuthenticated((token) =>
+        advanceRoom({ token, roomCode: normalizedRoomCode }),
+      );
+      session.applySnapshot(room);
+      await session.refreshNow();
+    } catch (error) {
+      setState((current) => ({ ...current, errorMessage: toUserMessage(error) }));
+    } finally {
+      setState((current) => ({ ...current, isSkipping: false }));
+    }
+  }, [normalizedRoomCode]);
+
   const answer = useCallback(
     async (questionId: string, answerId: string) => {
       const session = sessionRef.current;
@@ -691,6 +712,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
     canStart,
     canAnswer,
     start,
+    skip,
     answer,
     leave,
     refreshSnapshot,

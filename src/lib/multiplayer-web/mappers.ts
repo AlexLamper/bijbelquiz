@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { MULTIPLAYER_FREE_ROOM_QUOTA } from '@/lib/premium-benefits';
 import type {
   MultiplayerApiErrorBody,
   MultiplayerCapability,
@@ -92,6 +93,12 @@ const capabilitySchema = z.object({
   isPremium: z.boolean(),
   hasUsedFreeRoom: z.boolean(),
   freeRoomsRemaining: z.number().nullable(),
+  // Nullish-tolerant so a client deployed ahead of the API keeps parsing.
+  freeRoomsQuota: z
+    .number()
+    .nullish()
+    .transform((value) => value ?? MULTIPLAYER_FREE_ROOM_QUOTA),
+  freeRoomsUsed: z.number().nullish().transform((value) => value ?? null),
   maxPlayersFree: z.number(),
   maxPlayersPremium: z.number(),
   maxPlayersForUser: z.number(),
