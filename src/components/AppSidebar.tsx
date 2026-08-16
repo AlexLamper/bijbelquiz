@@ -51,24 +51,21 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
     return prefixes.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
   };
 
-  const playItems: SidebarItem[] = session
-    ? [
-        { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-        { href: '/quizzen', label: 'Quizzen', icon: BookOpen },
-        { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
-        { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
-        { href: '/premium', label: 'Premium', icon: Crown },
-      ]
-    : [
-        { href: '/quizzen', label: 'Quizzen', icon: BookOpen },
-        { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
-        { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
-        { href: '/premium', label: 'Premium', icon: Crown },
-      ];
+  const isPremium = !!session?.user?.isPremium;
+
+  const playItems: SidebarItem[] = [
+    ...(session ? [{ href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard }] : []),
+    { href: '/quizzen', label: 'Quizzen', icon: BookOpen },
+    { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
+    { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
+    // Members manage their membership under Account instead — nothing to sell here.
+    ...(isPremium ? [] : [{ href: '/premium', label: 'Premium', icon: Crown }]),
+  ];
 
   const accountItems: SidebarItem[] = session
     ? [
         { href: '/profiel', label: 'Profiel', icon: User },
+        ...(isPremium ? [{ href: '/premium', label: 'Lidmaatschap', icon: Crown }] : []),
         { href: '/instellingen', label: 'Instellingen', icon: Settings, activePrefixes: ['/instellingen'] },
       ]
     : [
@@ -159,7 +156,7 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
         ))}
       </div>
 
-      {session && !session.user?.isPremium && !collapsed && (
+      {session && !isPremium && !collapsed && (
         <section className="mt-3 shrink-0 rounded-lg border border-lapis/45 bg-paper-raised p-4">
           <p className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-lapis">
             <Crown className="h-3.5 w-3.5" />

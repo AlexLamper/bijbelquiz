@@ -1,6 +1,9 @@
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import type { Metadata } from 'next';
+import { connectDB, User } from '@/database';
+import { resolvePremiumSubscription } from '@/lib/premium-subscription';
+import PremiumMemberLayout from '@/components/premium/PremiumMemberLayout';
 import PremiumOfferLayout from '@/components/premium/PremiumOfferLayout';
 
 export const metadata: Metadata = {
@@ -20,20 +23,46 @@ export const metadata: Metadata = {
 export default async function PremiumPage() {
   const session = await getServerSession(authOptions);
 
-  const isPremium = session?.user?.isPremium;
   const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';
   const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
+
+  // The session flag can lag a fresh purchase, so the database decides here.
+  let isPremium = Boolean(session?.user?.isPremium);
+  let subscription = null;
+
+  if (session?.user?.id) {
+    await connectDB();
+    const user = await User.findById(session.user.id)
+      .select('email isPremium hasLifetimePremium stripeCustomerId stripeSubscriptionId stripeSubscriptionStatus')
+      .lean();
+
+    if (user) {
+      isPremium = Boolean(user.isPremium);
+      if (isPremium) {
+        subscription = await resolvePremiumSubscription(user);
+      }
+    }
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
       <section className="flex-1 pt-8 pb-16 md:pt-16">
         <div className="mx-auto max-w-[1180px] px-4 sm:px-5 lg:px-4">
-          <PremiumOfferLayout
-            isPremium={Boolean(isPremium)}
-            isLoggedIn={Boolean(session)}
-            monthlyPriceLabel={monthlyPriceLabel}
-            lifetimePriceLabel={lifetimePriceLabel}
-          />
+          {isPremium && subscription ? (
+            <PremiumMemberLayout
+              isLifetime={subscription.isLifetime}
+              statusLabel={subscription.statusText}
+              renewalLabel={subscription.endDateLabel}
+              cancelAtPeriodEnd={subscription.cancelAtPeriodEnd}
+            />
+          ) : (
+            <PremiumOfferLayout
+              isPremium={isPremium}
+              isLoggedIn={Boolean(session)}
+              monthlyPriceLabel={monthlyPriceLabel}
+              lifetimePriceLabel={lifetimePriceLabel}
+            />
+          )}
         </div>
       </section>
     </div>

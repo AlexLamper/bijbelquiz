@@ -2,6 +2,9 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from './auth';
 import { decode } from 'next-auth/jwt';
 import { NextRequest } from 'next/server';
+import { connectDB, User } from '@/database';
+import { getMobileUserId } from './mobile-auth';
+import { getPremiumSnapshot } from './premium-state';
 
 export async function getSession(req?: NextRequest) {
   // 1. Try standard NextAuth session (cookies)
@@ -34,6 +37,31 @@ export async function getSession(req?: NextRequest) {
         }
       } catch (error) {
         console.error('Failed to decode mobile token', error);
+      }
+
+      // 3. Fall back to the Flutter token format: a plain HS256 JWT with
+      //    `userId`. Without this branch every shared route silently treats
+      //    the mobile app as anonymous.
+      const userId = getMobileUserId(req);
+      if (userId) {
+        await connectDB();
+        const user = await User.findById(userId)
+          .select('email name xp role isPremium premiumStripe premiumStore storePremiumExpiresAt hasLifetimePremium')
+          .lean();
+
+        if (user) {
+          return {
+            user: {
+              id: userId,
+              email: user.email as string,
+              name: user.name as string,
+              isPremium: getPremiumSnapshot(user).isPremium,
+              xp: (user.xp as number) ?? 0,
+              role: user.role as string,
+            },
+            expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
+          };
+        }
       }
     }
   }

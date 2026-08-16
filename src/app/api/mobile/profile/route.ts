@@ -64,6 +64,10 @@ export async function GET(req: Request) {
       streak: user.streak || 0,
       bestStreak: user.bestStreak || 0,
       badges: user.badges || [],
+      // Lifetime totals. The app used to derive these from the last 5 attempts,
+      // which capped "quizzen gespeeld" at 5 and skewed the average.
+      quizzesPlayed: user.quizzesPlayed || 0,
+      averageScore: user.averageScore || 0,
       recentProgress: formattedProgress
     }, { status: 200 });
 

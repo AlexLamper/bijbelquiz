@@ -40,9 +40,11 @@ export async function GET(req: Request) {
       description: quiz.description,
       image: normalizeQuizImagePath(quiz.imageUrl || quiz.image),
       imageUrl: normalizeQuizImagePath(quiz.imageUrl || quiz.image),
-      xpReward: quiz.xpReward || 50,
+      // The schema field is `rewardXp`; `xpReward` is only the wire name.
+      xpReward: quiz.rewardXp ?? quiz.xpReward ?? 50,
       categoryId: quiz.categoryId?.toString() || quiz.category?.toString() || null,
       questionCount: quiz.questions?.length || 0,
+      isPremium: Boolean(quiz.isPremium),
       isActive: quiz.isActive
     }));
 

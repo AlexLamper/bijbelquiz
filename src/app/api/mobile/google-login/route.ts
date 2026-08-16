@@ -4,6 +4,7 @@ import User from '@/database/models/User';
 import jwt from 'jsonwebtoken';
 import { OAuth2Client } from 'google-auth-library';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { LEVELS } from '@/lib/gamification';
 import {
   getAllowedGoogleAudiences,
   getPrimaryAudience,
@@ -85,7 +86,7 @@ export async function POST(req: Request) {
         isPremium: false,
         xp: 0,
         level: 1,
-        levelTitle: 'Beginner',
+        levelTitle: LEVELS[0].title,
         streak: 0,
         bestStreak: 0,
         badges: [],

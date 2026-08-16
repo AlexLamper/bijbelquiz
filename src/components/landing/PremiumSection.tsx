@@ -71,20 +71,19 @@ export function PremiumSection() {
 
           <figure className="min-w-0">
             <figcaption className="mb-3 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-inverted/50">
-              Samen spelen
+              Jouw dashboard
             </figcaption>
-            {/* The screenshot has a light ground, so it is mounted on a paper mat
-                rather than floating as a white block on the ink band. */}
-            <div className="rounded-lg bg-paper-raised p-2.5">
-              <div className="relative aspect-16/10 w-full overflow-hidden rounded-md border border-rule">
-                <Image
-                  src="/images/multiplayer1.png"
-                  alt="Samen spelen in BijbelQuiz"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  className="object-cover object-center"
-                />
-              </div>
+            {/* Pre-rendered laptop mockup on a transparent ground — frame and
+                shadow are baked into the asset, so it floats on the ink band
+                instead of sitting on a paper mat. */}
+            <div className="relative aspect-3944/2564 w-full">
+              <Image
+                src="/images/screenshots/dashboard-desktop-front.png"
+                alt="Het BijbelQuiz-dashboard op een laptop"
+                fill
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                className="object-contain"
+              />
             </div>
           </figure>
         </div>

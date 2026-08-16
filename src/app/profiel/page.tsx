@@ -1,7 +1,6 @@
 import { getServerSession } from 'next-auth';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import type Stripe from 'stripe';
 import {
   Calendar,
   CheckCircle2,
@@ -18,7 +17,7 @@ import {
 
 import { authOptions } from '@/lib/auth';
 import { connectDB, User } from '@/database';
-import stripe from '@/lib/stripe';
+import { resolvePremiumSubscription } from '@/lib/premium-subscription';
 import { getLevelInfo, BADGES, LEVELS } from '@/lib/gamification';
 import { redirect } from 'next/navigation';
 import { Button } from '@/components/ui/button';
@@ -51,108 +50,12 @@ export default async function ProfilePage() {
   const totalQuizzesDone = user.quizzesPlayed || 0;
   const avgScore = user.averageScore || 0;
 
-  const isLifetimePremium = !!user.hasLifetimePremium;
-  const isMonthlyPremium = !!user.isPremium && !isLifetimePremium;
-
-  let resolvedStripeCustomerId = user.stripeCustomerId || '';
-  let resolvedStripeSubscriptionId = user.stripeSubscriptionId || '';
-  let resolvedSubscriptionStatus = (user.stripeSubscriptionStatus || '').toLowerCase();
-  let subscriptionCurrentPeriodEnd: Date | null = null;
-  let subscriptionCancelAtPeriodEnd = false;
-
-  const setSubscriptionPeriodEnd = (subscription: Stripe.Subscription) => {
-    const periodEndUnix = subscription.items?.data?.[0]?.current_period_end;
-    if (typeof periodEndUnix === 'number') {
-      subscriptionCurrentPeriodEnd = new Date(periodEndUnix * 1000);
-    }
-  };
-
-  if (isMonthlyPremium) {
-    try {
-      if (!resolvedStripeSubscriptionId && resolvedStripeCustomerId) {
-        const subscriptions = await stripe.subscriptions.list({
-          customer: resolvedStripeCustomerId,
-          status: 'all',
-          limit: 1,
-        });
-
-        if (subscriptions.data[0]) {
-          resolvedStripeSubscriptionId = subscriptions.data[0].id;
-          resolvedSubscriptionStatus = subscriptions.data[0].status;
-          subscriptionCancelAtPeriodEnd = !!subscriptions.data[0].cancel_at_period_end;
-          setSubscriptionPeriodEnd(subscriptions.data[0]);
-        }
-      }
-
-      if (!resolvedStripeSubscriptionId && user.email) {
-        const customers = await stripe.customers.list({ email: user.email, limit: 10 });
-
-        for (const customer of customers.data) {
-          const subscriptions = await stripe.subscriptions.list({
-            customer: customer.id,
-            status: 'all',
-            limit: 1,
-          });
-
-          if (subscriptions.data[0]) {
-            resolvedStripeCustomerId = customer.id;
-            resolvedStripeSubscriptionId = subscriptions.data[0].id;
-            resolvedSubscriptionStatus = subscriptions.data[0].status;
-            subscriptionCancelAtPeriodEnd = !!subscriptions.data[0].cancel_at_period_end;
-            setSubscriptionPeriodEnd(subscriptions.data[0]);
-            break;
-          }
-        }
-      }
-
-      if (resolvedStripeSubscriptionId && !subscriptionCurrentPeriodEnd) {
-        const subscription = await stripe.subscriptions.retrieve(resolvedStripeSubscriptionId);
-        resolvedSubscriptionStatus = subscription.status || resolvedSubscriptionStatus;
-        subscriptionCancelAtPeriodEnd = !!subscription.cancel_at_period_end;
-        setSubscriptionPeriodEnd(subscription);
-        if (!resolvedStripeCustomerId && typeof subscription.customer === 'string') {
-          resolvedStripeCustomerId = subscription.customer;
-        }
-      }
-    } catch (subscriptionError) {
-      console.warn('[PROFILE] Failed to resolve Stripe subscription details', subscriptionError);
-    }
-
-    if (
-      resolvedStripeCustomerId !== (user.stripeCustomerId || '') ||
-      resolvedStripeSubscriptionId !== (user.stripeSubscriptionId || '') ||
-      resolvedSubscriptionStatus !== (user.stripeSubscriptionStatus || '').toLowerCase()
-    ) {
-      await User.findByIdAndUpdate(user._id, {
-        stripeCustomerId: resolvedStripeCustomerId || undefined,
-        stripeSubscriptionId: resolvedStripeSubscriptionId || undefined,
-        stripeSubscriptionStatus: resolvedSubscriptionStatus || undefined,
-      });
-    }
-  }
-
-  const subscriptionStatusLabel: Record<string, string> = {
-    trialing: 'Proefperiode',
-    active: 'Actief',
-    past_due: 'Betaling achterstallig',
-    unpaid: 'Onbetaald',
-    canceled: 'Geannuleerd',
-    incomplete: 'Onvolledig',
-    incomplete_expired: 'Verlopen',
-  };
-
-  const subscriptionStatusText =
-    subscriptionStatusLabel[resolvedSubscriptionStatus] ||
-    (isMonthlyPremium ? 'In verwerking' : 'Levenslang actief');
-
-  const resolvedPeriodEndDate = subscriptionCurrentPeriodEnd as Date | null;
-  const subscriptionEndDateLabel = resolvedPeriodEndDate
-    ? resolvedPeriodEndDate.toLocaleDateString('nl-NL', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })
-    : null;
+  const subscription = await resolvePremiumSubscription(user);
+  const isLifetimePremium = subscription.isLifetime;
+  const isMonthlyPremium = subscription.isMonthly;
+  const subscriptionStatusText = subscription.statusText;
+  const subscriptionEndDateLabel = subscription.endDateLabel;
+  const subscriptionCancelAtPeriodEnd = subscription.cancelAtPeriodEnd;
 
   const levelInfo = getLevelInfo(user.xp || 0);
   let dailyVerse = {

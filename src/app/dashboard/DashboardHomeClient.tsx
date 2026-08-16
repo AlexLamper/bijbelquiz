@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play, Users } from 'lucide-react';
 
 import { trackEvent } from '@/components/GoogleAnalytics';
 import { QuizTile, type DashboardQuiz } from '@/components/editorial/QuizTile';
@@ -100,7 +100,6 @@ export default function DashboardHomeClient({
 }: DashboardHomeClientProps) {
   const featured = quizzes.slice(0, 6);
   const history = recentProgress.filter((entry) => entry.quizId).slice(0, 4);
-  const latest = history[0];
 
   return (
     <div className="min-h-screen bg-paper">
@@ -133,12 +132,10 @@ export default function DashboardHomeClient({
                 Speel een quiz
               </InkButton>
 
-              {latest?.quizId && (
-                <QuietButton href={`/quiz/${latest.quizId.slug || latest.quizId._id}`}>
-                  Ga verder
-                  <ArrowRight className="h-4 w-4" />
-                </QuietButton>
-              )}
+              <QuietButton href="/samen-spelen">
+                <Users className="h-4 w-4" />
+                Samen spelen
+              </QuietButton>
             </div>
           </div>
         </section>

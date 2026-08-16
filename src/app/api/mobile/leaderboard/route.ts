@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getLeaderboardResult, parseLeaderboardPeriod } from '@/lib/leaderboard';
 import { getSession } from '@/lib/get-session';
+import { getLevelInfo } from '@/lib/gamification';
 
 export async function GET(req: NextRequest) {
   try {
@@ -15,7 +16,8 @@ export async function GET(req: NextRequest) {
       name: user.name || 'Anonieme Speler',
       xp: user.xp || 0,
       image: user.image || null,
-      levelTitle: user.levelTitle || 'Beginner',
+      // Derived, not read: the stored title goes stale whenever XP moves.
+      levelTitle: getLevelInfo(user.xp || 0).title,
       isPremium: user.isPremium || false,
     }));
 

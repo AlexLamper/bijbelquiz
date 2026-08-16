@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { connectDB, Quiz } from '@/database';
 import { getServerSession } from 'next-auth';
@@ -14,6 +13,7 @@ import { FeaturesSection } from '@/components/landing/FeaturesSection';
 import { CTASection } from '@/components/landing/CTASection';
 import { Footer } from '@/components/landing/Footer';
 import { DownloadButtons } from '@/components/landing/DownloadButtons';
+import { HeroMockup } from '@/components/landing/HeroMockup';
 
 export const metadata: Metadata = {
   title: 'BijbelQuiz - Gratis Online Bijbelquizzen',
@@ -93,16 +93,7 @@ export default async function Home() {
               </div>
             </div>
 
-            <div className="landing-hero-image relative mx-auto aspect-square w-full max-w-sm md:max-w-none">
-              <Image
-                src="/images/hero/hero1.png"
-                alt="BijbelQuiz op telefoon en laptop"
-                fill
-                priority
-                sizes="(max-width: 1024px) 90vw, 45vw"
-                className="object-contain"
-              />
-            </div>
+            <HeroMockup />
           </div>
         </div>
 

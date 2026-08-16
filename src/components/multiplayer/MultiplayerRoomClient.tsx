@@ -441,7 +441,11 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
     void (async () => {
       try {
         const capability = await tokens.run((token) => getCapability({ token }));
-        if (!cancelled) setFreeGamesLeft(capability.freeRoomsRemaining);
+        // The quota endpoint still counts down for Premium hosts; they must not
+        // be shown a limit they do not have.
+        if (!cancelled) {
+          setFreeGamesLeft(capability.isPremium ? null : capability.freeRoomsRemaining);
+        }
       } catch {
         // Purely informational - the start button works either way.
       }
