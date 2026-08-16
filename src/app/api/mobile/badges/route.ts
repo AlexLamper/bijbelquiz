@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import { BADGES, LEVELS } from '@/lib/gamification';
 
 /**
- * GET /api/mobile/badges — the badge catalogue the app renders against.
+ * GET /api/mobile/badges - the badge catalogue the app renders against.
  *
  * The app used to ship its own hardcoded copy, which drifted from the ids the
  * server actually awards. Serving the catalogue keeps the two in step: the app

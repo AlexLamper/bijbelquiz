@@ -11,6 +11,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PageMasthead } from '@/components/editorial';
 import { QuizCard } from '@/components/QuizCard';
 import { MobileQuizFilter } from '@/components/MobileQuizFilter';
+import { useUserSettings } from '@/lib/user-settings-client';
+import { matchesPreferredDifficulty, type PreferredDifficulty } from '@/lib/user-settings';
 
 interface Quiz {
   _id: string;
@@ -48,6 +50,13 @@ interface QuizzesClientProps {
 }
 
 const ROMAN_PARTS: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6 };
+
+const DIFFICULTY_FILTERS: { value: PreferredDifficulty; label: string }[] = [
+  { value: 'all', label: 'Elk niveau' },
+  { value: 'easy', label: 'Makkelijk' },
+  { value: 'medium', label: 'Gemiddeld' },
+  { value: 'hard', label: 'Moeilijk' },
+];
 
 /**
  * Split a quiz title into the series it belongs to and its part number, so
@@ -101,9 +110,29 @@ export default function QuizzesClient({
   canCreateQuiz,
   initialCategoryId = 'all',
 }: QuizzesClientProps) {
+  const { settings } = useUserSettings();
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategoryId);
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
+  const [selectedDifficulty, setSelectedDifficulty] = useState<PreferredDifficulty>(
+    settings.preferredDifficulty
+  );
+
+  // The account's preferred difficulty is a starting point, not a lock. The
+  // session resolves after first paint, so the saved value arrives late and has
+  // to be adopted then; tracking what was last seeded means a filter the reader
+  // picked by hand is left alone, because only a change in the saved preference
+  // re-seeds. Adjusting during render (rather than in an effect) keeps this to
+  // a single render pass.
+  const [seededDifficulty, setSeededDifficulty] = useState<PreferredDifficulty>(
+    settings.preferredDifficulty
+  );
+
+  if (seededDifficulty !== settings.preferredDifficulty) {
+    setSeededDifficulty(settings.preferredDifficulty);
+    setSelectedDifficulty(settings.preferredDifficulty);
+  }
 
   const normalizedQuizzes = useMemo(() => {
     return quizzes.map((quiz) => ({
@@ -130,9 +159,11 @@ export default function QuizzesClient({
 
       const matchesPremium = !showPremiumOnly || quiz.isPremium;
 
-      return matchesSearch && matchesCategory && matchesPremium;
+      const matchesDifficulty = matchesPreferredDifficulty(selectedDifficulty, quiz.difficulty);
+
+      return matchesSearch && matchesCategory && matchesPremium && matchesDifficulty;
     });
-  }, [normalizedQuizzes, searchQuery, selectedCategory, showPremiumOnly]);
+  }, [normalizedQuizzes, searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty]);
 
   const orderedQuizzes = useMemo(() => groupSeries(filteredQuizzes), [filteredQuizzes]);
 
@@ -229,6 +260,26 @@ export default function QuizzesClient({
             ))}
           </div>
 
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <span className="mr-1 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+              Niveau
+            </span>
+            {DIFFICULTY_FILTERS.map((option) => (
+              <button
+                key={option.value}
+                type="button"
+                onClick={() => setSelectedDifficulty(option.value)}
+                className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
+                  selectedDifficulty === option.value
+                    ? 'border-transparent bg-ink text-ink-inverted hover:bg-ink-soft dark:text-ink-inverted'
+                    : 'border-rule text-ink-soft hover:bg-paper-sunken hover:text-ink'
+                }`}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
+
           {canCreateQuiz && (
             <div className="mt-4 md:hidden">
               <Button asChild className="h-10 w-full rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
@@ -268,6 +319,7 @@ export default function QuizzesClient({
                     setSearchQuery('');
                     setSelectedCategory('all');
                     setShowPremiumOnly(false);
+                    setSelectedDifficulty('all');
                   }}
                 >
                   Filters wissen

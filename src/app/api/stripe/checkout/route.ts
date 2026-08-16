@@ -14,7 +14,29 @@ const PLAN_CONFIG = {
     mode: 'subscription' as const,
     priceEnvKey: 'STRIPE_PRICE_MONTHLY',
   },
+  yearly: {
+    mode: 'subscription' as const,
+    priceEnvKey: 'STRIPE_PRICE_YEARLY',
+  },
+  // One purchase covering a whole church, school class or youth club.
+  group: {
+    mode: 'subscription' as const,
+    priceEnvKey: 'STRIPE_PRICE_GROUP',
+  },
 };
+
+type PlanId = keyof typeof PLAN_CONFIG;
+
+/**
+ * Unknown plans fall back to lifetime, the one-off payment: treating an
+ * unrecognised value as a subscription would start a recurring charge nobody
+ * asked for.
+ */
+function readPlan(value: unknown): PlanId {
+  return value === 'monthly' || value === 'yearly' || value === 'group' || value === 'lifetime'
+    ? value
+    : 'lifetime';
+}
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions);
@@ -26,8 +48,7 @@ export async function POST(req: NextRequest) {
   }
 
   const formData = await req.formData();
-  const selectedPlanRaw = formData.get('plan');
-  const selectedPlan = selectedPlanRaw === 'monthly' ? 'monthly' : 'lifetime';
+  const selectedPlan = readPlan(formData.get('plan'));
   const selectedConfig = PLAN_CONFIG[selectedPlan];
   const stripePriceId = process.env[selectedConfig.priceEnvKey];
 
@@ -63,7 +84,9 @@ export async function POST(req: NextRequest) {
         userId: session.user.id,
         plan: selectedPlan,
       },
-      subscription_data: selectedPlan === 'monthly' ? {
+      // Carried onto the subscription so the renewal webhooks, which never see
+      // the checkout session, still know which plan this is.
+      subscription_data: selectedConfig.mode === 'subscription' ? {
         metadata: {
           userId: session.user.id,
           plan: selectedPlan,

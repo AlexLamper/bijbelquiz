@@ -3,6 +3,7 @@ import { z } from 'zod';
 import {
   MULTIPLAYER_FREE_MAX_PLAYERS,
   MULTIPLAYER_FREE_ROOM_QUOTA,
+  MULTIPLAYER_MONTHLY_FREE_ROOMS,
   MULTIPLAYER_PREMIUM_MAX_PLAYERS,
 } from '@/lib/premium-benefits';
 import { authenticateMultiplayerRequest } from './auth';
@@ -10,6 +11,9 @@ import { MultiplayerError } from './errors';
 import { multiplayerErrorResponse, normalizeRoomCode, parseJsonBody } from './http';
 import { loadMultiplayerQuota, releaseHostedGame, reserveHostedGame } from './quota';
 import { getMultiplayerRuntime } from './runtime';
+import { recordServerEvent } from '@/lib/analytics/record';
+import { INVITE_SOURCE_PARAM, INVITE_SOURCE_VALUE } from './invite';
+import type { AnalyticsPlatform } from '@/lib/analytics/events';
 
 /**
  * Every multiplayer HTTP handler lives here, and both route trees
@@ -38,16 +42,39 @@ const answerSchema = z
   })
   .strict();
 
-/** Shown whenever a free host has no games left. */
+/**
+ * Which client made this call.
+ *
+ * Read from the path rather than the user agent: the app talks to the
+ * `/api/mobile/*` alias tree, the website to the canonical one, and that is
+ * the only signal here that cannot be spoofed into a wrong answer by a browser
+ * extension. iOS and Android are not separable this way, so both report as the
+ * app; the events the app fires itself carry the exact platform.
+ */
+function platformOf(req: NextRequest): AnalyticsPlatform {
+  return req.nextUrl.pathname.startsWith('/api/mobile') ? 'ios' : 'web';
+}
+
+/**
+ * Shown whenever a free host has no games left.
+ *
+ * Names the monthly refill, because it is true and because "come back next
+ * month" keeps an account that "you are done forever" loses outright.
+ */
 function freeQuotaExhaustedError(): MultiplayerError {
+  const monthly =
+    MULTIPLAYER_MONTHLY_FREE_ROOMS === 1
+      ? 'Volgende maand krijg je weer 1 gratis spel.'
+      : `Volgende maand krijg je weer ${MULTIPLAYER_MONTHLY_FREE_ROOMS} gratis spellen.`;
+
   return new MultiplayerError(
     'PREMIUM_REQUIRED',
-    `Je hebt je ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen gebruikt. Word Premium om onbeperkt spellen te hosten met tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers. Meedoen met andermans spel blijft gratis.`,
+    `Je hebt je gratis spellen gebruikt. ${monthly} Word Premium om nu onbeperkt te hosten met tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers. Meedoen met andermans spel blijft gratis.`,
     403,
   );
 }
 
-/** GET /rooms — what this user is allowed to do before they try it. */
+/** GET /rooms - what this user is allowed to do before they try it. */
 export async function handleGetCapability(req: NextRequest): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
@@ -62,6 +89,10 @@ export async function handleGetCapability(req: NextRequest): Promise<NextRespons
       freeRoomsRemaining: freeGamesRemaining,
       freeRoomsQuota: MULTIPLAYER_FREE_ROOM_QUOTA,
       freeRoomsUsed: isPremiumUser ? null : quota.gamesHosted,
+      // Once the discovery pack is spent the counter means something else, and
+      // the copy has to change with it.
+      onMonthlyAllowance: quota.onMonthlyAllowance,
+      monthlyRoomsQuota: MULTIPLAYER_MONTHLY_FREE_ROOMS,
       maxPlayersFree: MULTIPLAYER_FREE_MAX_PLAYERS,
       maxPlayersPremium: MULTIPLAYER_PREMIUM_MAX_PLAYERS,
       maxPlayersForUser: isPremiumUser
@@ -73,7 +104,7 @@ export async function handleGetCapability(req: NextRequest): Promise<NextRespons
   }
 }
 
-/** POST /rooms — create a room and become its host. */
+/** POST /rooms - create a room and become its host. */
 export async function handleCreateRoom(req: NextRequest): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
@@ -88,7 +119,7 @@ export async function handleCreateRoom(req: NextRequest): Promise<NextResponse> 
       );
     }
 
-    // Creating a room is free — the credit is only spent when the game
+    // Creating a room is free - the credit is only spent when the game
     // actually starts. This check exists purely so a host with an empty quota
     // isn't led into a lobby that can never start.
     if (!canHost) {
@@ -108,7 +139,7 @@ export async function handleCreateRoom(req: NextRequest): Promise<NextResponse> 
   }
 }
 
-/** GET /rooms/active — the room this user is already in, if any. */
+/** GET /rooms/active - the room this user is already in, if any. */
 export async function handleGetActiveRoom(req: NextRequest): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
@@ -121,13 +152,13 @@ export async function handleGetActiveRoom(req: NextRequest): Promise<NextRespons
   }
 }
 
-/** GET /config — timing constants so clients never hardcode server env vars. */
+/** GET /config - timing constants so clients never hardcode server env vars. */
 export async function handleGetConfig(): Promise<NextResponse> {
   const { service } = getMultiplayerRuntime();
   return NextResponse.json(service.getClientConfig(), { status: 200 });
 }
 
-/** GET /rooms/:roomCode — the polling endpoint; also acts as a heartbeat. */
+/** GET /rooms/:roomCode - the polling endpoint; also acts as a heartbeat. */
 export async function handleGetRoom(req: NextRequest, roomCodeRaw: string): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
@@ -142,7 +173,7 @@ export async function handleGetRoom(req: NextRequest, roomCodeRaw: string): Prom
   }
 }
 
-/** POST /rooms/:roomCode/join — idempotent; re-joining returns the snapshot. */
+/** POST /rooms/:roomCode/join - idempotent; re-joining returns the snapshot. */
 export async function handleJoinRoom(req: NextRequest, roomCodeRaw: string): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
@@ -151,6 +182,19 @@ export async function handleJoinRoom(req: NextRequest, roomCodeRaw: string): Pro
     const { service } = getMultiplayerRuntime();
     const room = await service.joinRoom({ userId: auth.userId, roomCode });
 
+    await recordServerEvent('room_joined', {
+      userId: auth.userId,
+      platform: platformOf(req),
+      props: {
+        roomCode,
+        playerCount: room.players.length,
+        // Set by a client that arrived through a shared link, which is what
+        // makes the invite channel measurable at all.
+        viaInvite:
+          req.nextUrl.searchParams.get(INVITE_SOURCE_PARAM) === INVITE_SOURCE_VALUE,
+      },
+    });
+
     return NextResponse.json({ room }, { status: 200 });
   } catch (error) {
     return multiplayerErrorResponse(error);
@@ -158,7 +202,7 @@ export async function handleJoinRoom(req: NextRequest, roomCodeRaw: string): Pro
 }
 
 /**
- * POST /rooms/:roomCode/start — host only.
+ * POST /rooms/:roomCode/start - host only.
  *
  * This is where a free game is paid for. The credit is reserved atomically
  * before the room transitions, and handed straight back if the transition is
@@ -180,10 +224,24 @@ export async function handleStartRoom(req: NextRequest, roomCodeRaw: string): Pr
     try {
       const room = await service.startRoom({ userId: auth.userId, roomCode });
 
+      // Recorded after the transition succeeds, so a refused start (too few
+      // players, not the host) is not counted as a hosted game - which is also
+      // exactly when the credit is handed back below.
+      await recordServerEvent('room_started', {
+        userId: auth.userId,
+        platform: platformOf(req),
+        props: {
+          roomCode,
+          playerCount: room.players.length,
+          totalQuestions: room.totalQuestions,
+          metered: reservation.metered,
+        },
+      });
+
       return NextResponse.json({ room }, { status: 200 });
     } catch (error) {
       if (reservation.metered) {
-        await releaseHostedGame(auth.userId);
+        await releaseHostedGame(auth.userId, reservation.source);
       }
       throw error;
     }
@@ -207,7 +265,7 @@ export async function handleAdvanceQuestion(req: NextRequest, roomCodeRaw: strin
   }
 }
 
-/** POST /rooms/:roomCode/answer — one answer per player per question. */
+/** POST /rooms/:roomCode/answer - one answer per player per question. */
 export async function handleSubmitAnswer(req: NextRequest, roomCodeRaw: string): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
@@ -230,7 +288,7 @@ export async function handleSubmitAnswer(req: NextRequest, roomCodeRaw: string):
   }
 }
 
-/** POST /rooms/:roomCode/leave — idempotent, never 404s. */
+/** POST /rooms/:roomCode/leave - idempotent, never 404s. */
 export async function handleLeaveRoom(req: NextRequest, roomCodeRaw: string): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);
@@ -245,7 +303,7 @@ export async function handleLeaveRoom(req: NextRequest, roomCodeRaw: string): Pr
   }
 }
 
-/** GET /rooms/:roomCode/results — final standings. */
+/** GET /rooms/:roomCode/results - final standings. */
 export async function handleGetResults(req: NextRequest, roomCodeRaw: string): Promise<NextResponse> {
   try {
     const auth = await authenticateMultiplayerRequest(req);

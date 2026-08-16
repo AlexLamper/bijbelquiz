@@ -16,6 +16,8 @@ export async function GET(req: NextRequest) {
       name: user.name || 'Anonieme Speler',
       xp: user.xp || 0,
       image: user.image || null,
+      avatar: user.avatar,
+      streak: user.streak || 0,
       // Derived, not read: the stored title goes stale whenever XP moves.
       levelTitle: getLevelInfo(user.xp || 0).title,
       isPremium: user.isPremium || false,

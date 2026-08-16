@@ -21,6 +21,11 @@ interface UseMultiplayerRoomControllerOptions {
   roomCode: string;
   userId: string | null;
   autoJoin?: boolean;
+  /**
+   * True when the user arrived through a shared invite link. Only labels the
+   * funnel event; it changes nothing about the join itself.
+   */
+  viaInvite?: boolean;
 }
 
 export type MultiplayerControllerConnectionStatus =
@@ -163,6 +168,7 @@ class RoomSession {
     private readonly roomCode: string,
     private readonly userId: string,
     private readonly autoJoin: boolean,
+    private readonly viaInvite: boolean,
     private readonly callbacks: {
       onState: (updater: (current: MultiplayerControllerState) => MultiplayerControllerState) => void;
       onDebug: (entry: MultiplayerDebugEntry) => void;
@@ -268,7 +274,11 @@ class RoomSession {
     }
 
     try {
-      return await joinRoom({ token, roomCode: this.roomCode });
+      return await joinRoom({
+        token,
+        roomCode: this.roomCode,
+        viaInvite: this.viaInvite,
+      });
     } catch (error) {
       const canStillWatch =
         error instanceof MultiplayerClientHttpError &&
@@ -539,6 +549,7 @@ class RoomSession {
 export function useMultiplayerRoomController(options: UseMultiplayerRoomControllerOptions) {
   const normalizedRoomCode = useMemo(() => normalizeRoomCode(options.roomCode), [options.roomCode]);
   const autoJoin = options.autoJoin !== false;
+  const viaInvite = options.viaInvite === true;
   const sessionRef = useRef<RoomSession | null>(null);
 
   const [state, setState] = useState<MultiplayerControllerState>(INITIAL_STATE);
@@ -565,7 +576,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
       return;
     }
 
-    const session = new RoomSession(normalizedRoomCode, options.userId, autoJoin, {
+    const session = new RoomSession(normalizedRoomCode, options.userId, autoJoin, viaInvite, {
       onState: setState,
       onDebug: pushDebugEntry,
     });
@@ -577,7 +588,7 @@ export function useMultiplayerRoomController(options: UseMultiplayerRoomControll
       sessionRef.current = null;
       session.dispose();
     };
-  }, [normalizedRoomCode, options.userId, autoJoin, pushDebugEntry]);
+  }, [normalizedRoomCode, options.userId, autoJoin, viaInvite, pushDebugEntry]);
 
   /**
    * Poll immediately when the tab becomes visible again. Browsers throttle

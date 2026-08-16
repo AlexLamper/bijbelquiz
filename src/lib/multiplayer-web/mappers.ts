@@ -1,5 +1,9 @@
 import { z } from 'zod';
-import { MULTIPLAYER_FREE_ROOM_QUOTA } from '@/lib/premium-benefits';
+import { normalizeAvatar } from '@/lib/avatar';
+import {
+  MULTIPLAYER_FREE_ROOM_QUOTA,
+  MULTIPLAYER_MONTHLY_FREE_ROOMS,
+} from '@/lib/premium-benefits';
 import type {
   MultiplayerApiErrorBody,
   MultiplayerCapability,
@@ -15,6 +19,12 @@ const roomStatusSchema = z.enum(['lobby', 'in_progress', 'question_result', 'fin
 const roomPlayerSchema = z.object({
   id: z.string(),
   name: z.string(),
+  // A room started before mascots shipped has none on its players, so this
+  // repairs the row rather than rejecting the whole snapshot.
+  avatar: z
+    .unknown()
+    .nullish()
+    .transform((value) => normalizeAvatar(value)),
   score: z.number(),
   correctAnswers: z.number(),
   isHost: z.boolean(),
@@ -99,6 +109,11 @@ const capabilitySchema = z.object({
     .nullish()
     .transform((value) => value ?? MULTIPLAYER_FREE_ROOM_QUOTA),
   freeRoomsUsed: z.number().nullish().transform((value) => value ?? null),
+  onMonthlyAllowance: z.boolean().nullish().transform((value) => value ?? false),
+  monthlyRoomsQuota: z
+    .number()
+    .nullish()
+    .transform((value) => value ?? MULTIPLAYER_MONTHLY_FREE_ROOMS),
   maxPlayersFree: z.number(),
   maxPlayersPremium: z.number(),
   maxPlayersForUser: z.number(),

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { avatarFromSeed } from '@/lib/avatar';
 import { MultiplayerError } from '@/lib/multiplayer/errors';
 import { InMemoryRoomRepository } from '@/lib/multiplayer/repository-memory';
 import { MultiplayerService } from '@/lib/multiplayer/service';
@@ -24,8 +25,9 @@ class FakeProvider implements MultiplayerDataProvider {
     private readonly quizzes: Record<string, ProviderQuizSnapshot>,
   ) {}
 
-  async getUserDisplayName(userId: string): Promise<string | null> {
-    return this.users[userId] ?? null;
+  async getUserProfile(userId: string) {
+    const name = this.users[userId];
+    return name ? { name, avatar: avatarFromSeed(userId) } : null;
   }
 
   async getQuizSnapshot(quizId: string): Promise<ProviderQuizSnapshot | null> {

@@ -1,10 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { useEffect } from 'react';
 import { Check, Crown } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { trackEvent } from '@/components/GoogleAnalytics';
+import { track } from '@/lib/analytics/client';
+import type { PaywallTrigger } from '@/lib/analytics/events';
 import {
   PREMIUM_HERO_OUTCOME,
   PREMIUM_TRIGGER_BULLETS,
@@ -20,11 +23,26 @@ interface MultiplayerPremiumPaywallProps {
 
 const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
 
+/** Placement to the closed trigger set the funnel reports on. */
+const PLACEMENT_TRIGGERS: Record<MultiplayerPremiumPaywallProps['placement'], PaywallTrigger> = {
+  free_quota_used: 'host_quota_exhausted',
+  player_limit: 'host_player_cap',
+  lobby_after_create: 'host_quota_warning',
+};
+
 export default function MultiplayerPremiumPaywall({
   placement,
   headline,
 }: MultiplayerPremiumPaywallProps) {
   const perWeek = formatPricePerWeek(monthlyPriceLabel);
+  const trigger = PLACEMENT_TRIGGERS[placement];
+
+  // Recorded where the wall is actually raised, not where it is clicked: a
+  // paywall nobody clicks is exactly the thing the conversion rate is meant to
+  // reveal.
+  useEffect(() => {
+    track('paywall_shown', { trigger, surface: 'multiplayer_entry' });
+  }, [trigger]);
 
   return (
     <div
@@ -57,7 +75,7 @@ export default function MultiplayerPremiumPaywall({
             trackEvent('multiplayer_premium_cta_clicked', { placement })
           }
         >
-          <Link href="/premium">Upgrade naar Premium</Link>
+          <Link href="/premium?reden=host_quota_exhausted">Upgrade naar Premium</Link>
         </Button>
         <p className="text-[11px] text-muted-foreground">
           Vanaf {monthlyPriceLabel} per maand{perWeek ? ` (~${perWeek}/week)` : ''}.

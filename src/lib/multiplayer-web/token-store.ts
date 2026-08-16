@@ -4,7 +4,7 @@ import { getMultiplayerAuthToken, isUnauthorized } from './client';
  * Owns the short-lived multiplayer bearer token for the browser tab.
  *
  * `/api/multiplayer/token` mints a 2-hour JWT from the NextAuth session. A
- * lobby that sits open longer than that — or a tab restored from sleep — used
+ * lobby that sits open longer than that - or a tab restored from sleep - used
  * to start 401-ing forever, because the token was fetched exactly once and
  * cached in a ref. This store instead:
  *

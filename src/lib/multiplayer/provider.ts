@@ -16,8 +16,10 @@ import {
   ImmutableAnswer,
   ImmutableQuestion,
   MultiplayerDataProvider,
+  MultiplayerUserProfile,
   ProviderQuizSnapshot,
 } from './types';
+import { resolveAvatar } from '@/lib/avatar';
 
 function asRecord(value: unknown): Record<string, unknown> | null {
   if (!value || typeof value !== 'object') {
@@ -147,14 +149,14 @@ function parseQuestions(rawQuestions: unknown): ImmutableQuestion[] {
 }
 
 export class MongoMultiplayerDataProvider implements MultiplayerDataProvider {
-  async getUserDisplayName(userId: string): Promise<string | null> {
+  async getUserProfile(userId: string): Promise<MultiplayerUserProfile | null> {
     if (!isObjectId(userId)) {
       return null;
     }
 
     await connectDB();
 
-    const user = await User.findById(userId).lean();
+    const user = await User.findById(userId).select('name avatar').lean();
     if (!user) {
       return null;
     }
@@ -165,11 +167,11 @@ export class MongoMultiplayerDataProvider implements MultiplayerDataProvider {
     }
 
     const name = typeof userRecord.name === 'string' ? userRecord.name.trim() : '';
-    if (name.length > 0) {
-      return name;
-    }
 
-    return 'Player';
+    return {
+      name: name.length > 0 ? name : 'Speler',
+      avatar: resolveAvatar(userRecord.avatar, userId),
+    };
   }
 
   async getQuizSnapshot(quizId: string): Promise<ProviderQuizSnapshot | null> {

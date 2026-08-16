@@ -6,7 +6,7 @@
  * the app awarded nothing. This script provisions a throwaway user, mints the
  * same token `/api/mobile/login` hands out, submits an attempt through the
  * mobile route, and asserts that XP, streak, badges and lifetime totals all
- * moved — and that the web-facing endpoints report the same numbers.
+ * moved - and that the web-facing endpoints report the same numbers.
  *
  * USAGE
  *   npm run dev                       # in another terminal
@@ -123,7 +123,7 @@ async function provision() {
   });
 
   if (!quiz) {
-    console.error('No approved quiz with questions found — cannot run.');
+    console.error('No approved quiz with questions found - cannot run.');
     process.exit(2);
   }
 
@@ -134,8 +134,10 @@ async function cleanup() {
   if (mongoose.connection.readyState !== 1) return;
   const users = mongoose.connection.collection('users');
   const progress = mongoose.connection.collection('userprogresses');
+  const events = mongoose.connection.collection('analyticsevents');
   if (userId) {
     await progress.deleteMany({ userId });
+    await events.deleteMany({ userId });
     await users.deleteOne({ _id: userId });
   }
 }
@@ -290,6 +292,187 @@ async function main() {
     'currentUserRank is resolved for a mobile token',
     `rank=${leaderboard.json?.currentUserRank}`
   );
+  check(
+    (leaderboard.json?.leaderboard || []).every((row) => Boolean(row?.avatar?.character)),
+    'every leaderboard row carries a mascot',
+    `${(leaderboard.json?.leaderboard || []).length} rows`
+  );
+
+  section('name and mascot are owned by the player');
+
+  // An account that never opened the customiser still has to have a face, and
+  // the same one on every platform, so the app can draw it without asking.
+  check(
+    Boolean(profileAfter.json?.avatar?.character),
+    'profile serves a mascot even before one is chosen',
+    `${profileAfter.json?.avatar?.character}/${profileAfter.json?.avatar?.color}`
+  );
+  check(
+    profileAfter.json?.nameChangeAllowedInDays === 0,
+    'a fresh account may rename immediately',
+    `days=${profileAfter.json?.nameChangeAllowedInDays}`
+  );
+
+  const chosenAvatar = {
+    character: 'uil',
+    color: 'lapis',
+    background: 'nacht',
+    accessory: 'kroon',
+  };
+
+  const identity = await api('/api/mobile/profile', {
+    token,
+    method: 'PUT',
+    body: { name: 'Hernoemde Speler', avatar: chosenAvatar },
+  });
+
+  check(identity.status === 200, 'PUT /api/mobile/profile', `HTTP ${identity.status}`);
+  check(identity.json?.name === 'Hernoemde Speler', 'name was written', identity.json?.name);
+  check(
+    JSON.stringify(identity.json?.avatar) === JSON.stringify(chosenAvatar),
+    'mascot was written verbatim',
+    JSON.stringify(identity.json?.avatar)
+  );
+
+  const renamedProfile = await api('/api/mobile/profile', { token });
+  check(
+    renamedProfile.json?.name === 'Hernoemde Speler',
+    'the rename survives a reload',
+    renamedProfile.json?.name
+  );
+  check(
+    renamedProfile.json?.avatar?.accessory === 'kroon',
+    'the mascot survives a reload',
+    renamedProfile.json?.avatar?.accessory
+  );
+  check(
+    renamedProfile.json?.nameChangeAllowedInDays > 0,
+    'renaming starts the cooldown',
+    `days=${renamedProfile.json?.nameChangeAllowedInDays}`
+  );
+
+  const secondRename = await api('/api/mobile/profile', {
+    token,
+    method: 'PUT',
+    body: { name: 'Nog Een Naam' },
+  });
+  check(
+    secondRename.status === 403,
+    'a second rename inside the cooldown is refused',
+    `HTTP ${secondRename.status}`
+  );
+
+  // Changing a mascot must not be blocked by, or consume, the rename window.
+  const avatarOnly = await api('/api/mobile/profile', {
+    token,
+    method: 'PUT',
+    body: { avatar: { ...chosenAvatar, accessory: 'bril' } },
+  });
+  check(
+    avatarOnly.status === 200 && avatarOnly.json?.avatar?.accessory === 'bril',
+    'the mascot can still be changed during the rename cooldown',
+    `HTTP ${avatarOnly.status}`
+  );
+
+  const junkAvatar = await api('/api/mobile/profile', {
+    token,
+    method: 'PUT',
+    body: { avatar: { character: 'draak', color: 'neon' } },
+  });
+  check(
+    junkAvatar.status === 200 && junkAvatar.json?.avatar?.character === 'lam',
+    'an unknown mascot part falls back instead of being stored',
+    `${junkAvatar.json?.avatar?.character}/${junkAvatar.json?.avatar?.color}`
+  );
+
+  const shortName = await api('/api/mobile/profile', {
+    token,
+    method: 'PUT',
+    body: { name: 'x' },
+  });
+  check(shortName.status === 400, 'a one-character name is rejected', `HTTP ${shortName.status}`);
+
+  section('the funnel event stream');
+
+  // `quiz_completed` is written by the shared submission logic, not by a
+  // client, so the two attempts above must already be on record.
+  const AnalyticsEvent = mongoose.connection.collection('analyticsevents');
+  const userObjectId = new mongoose.Types.ObjectId(String(userId));
+
+  const quizEvents = await AnalyticsEvent.find({
+    name: 'quiz_completed',
+    userId: userObjectId,
+  }).toArray();
+
+  check(
+    quizEvents.length === 2,
+    'both attempts wrote a quiz_completed event',
+    `${quizEvents.length} events`
+  );
+  check(
+    quizEvents.some((event) => event.props?.isFirst === true),
+    'the first attempt is flagged as an activation'
+  );
+  check(
+    quizEvents.some((event) => event.props?.isReplay === true),
+    'the replay is flagged as a replay'
+  );
+  check(
+    quizEvents.every((event) => event.platform === 'ios'),
+    'attempts from the app are recorded as ios',
+    quizEvents.map((event) => event.platform).join(', ')
+  );
+
+  const eventPost = await api('/api/mobile/events', {
+    token,
+    method: 'POST',
+    body: {
+      platform: 'ios',
+      anonymousId: 'e2e-anon',
+      events: [
+        {
+          name: 'paywall_shown',
+          props: { trigger: 'host_quota_exhausted', surface: 'upgrade_sheet' },
+          occurredAt: Date.now(),
+        },
+        // Unknown names must be skipped, not fail the whole flush: an app
+        // build ahead of the server has to degrade quietly.
+        { name: 'not_a_real_event', props: {} },
+      ],
+    },
+  });
+
+  check(eventPost.status === 202, 'POST /api/mobile/events', `HTTP ${eventPost.status}`);
+  check(
+    eventPost.json?.accepted === 1,
+    'the unknown event name was skipped, the known one kept',
+    `accepted=${eventPost.json?.accepted}`
+  );
+
+  const paywallEvent = await AnalyticsEvent.findOne({
+    name: 'paywall_shown',
+    userId: userObjectId,
+  });
+
+  check(Boolean(paywallEvent), 'the client event landed against the signed-in user');
+  check(
+    paywallEvent?.props?.trigger === 'host_quota_exhausted',
+    'the trigger survived the round trip',
+    paywallEvent?.props?.trigger
+  );
+  check(
+    paywallEvent?.anonymousId === 'e2e-anon',
+    'the anonymous id is stored so pre-signin events can be stitched'
+  );
+
+  // A malformed body must still answer 202: a client that retries or surfaces
+  // an error because a metric failed is worse than a lost metric.
+  const junkPost = await api('/api/mobile/events', {
+    token,
+    method: 'POST',
+    body: { events: 'not-an-array' },
+  });
+  check(junkPost.status === 202, 'a malformed batch is absorbed, not rejected', `HTTP ${junkPost.status}`);
 
   const failed = checks.filter((entry) => !entry.ok);
   console.log(

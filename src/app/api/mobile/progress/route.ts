@@ -4,7 +4,7 @@ import { getMobileUserId } from '@/lib/mobile-auth';
 import { submitQuizAttempt, type SubmittedAnswer } from '@/lib/quiz-submission';
 
 /**
- * POST /api/mobile/progress — the mobile counterpart of `/api/quiz/submit`.
+ * POST /api/mobile/progress - the mobile counterpart of `/api/quiz/submit`.
  *
  * Both run the same `submitQuizAttempt`, so XP, streak, and badges come out
  * identical no matter which client the player used. The app may send either a
@@ -45,6 +45,9 @@ export async function POST(req: Request) {
       score,
       totalQuestions,
       answers,
+      // The app posts its own platform so the funnel can tell an iOS attempt
+      // from an Android one without guessing from the user agent.
+      platform: body?.platform === 'android' ? 'android' : 'ios',
     });
 
     if (!result.ok) {

@@ -52,6 +52,20 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "Access-Control-Allow-Origin", value: "*" },
         ]
+      },
+      {
+        // Apple refuses an association file that is not served as JSON, and
+        // this one has no extension for Next to infer the type from.
+        source: "/.well-known/apple-app-site-association",
+        headers: [
+          { key: "Content-Type", value: "application/json" },
+        ]
+      },
+      {
+        source: "/.well-known/assetlinks.json",
+        headers: [
+          { key: "Content-Type", value: "application/json" },
+        ]
       }
     ]
   }

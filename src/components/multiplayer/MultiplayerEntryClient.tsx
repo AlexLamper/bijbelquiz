@@ -36,6 +36,7 @@ import { trackEvent } from '@/components/GoogleAnalytics';
 import MultiplayerPremiumPaywall from '@/components/multiplayer/MultiplayerPremiumPaywall';
 import {
   formatFreeGamesRemaining,
+  formatMonthlyFreeGames,
   MULTIPLAYER_FREE_MAX_PLAYERS,
   MULTIPLAYER_FREE_ROOM_QUOTA,
   MULTIPLAYER_PREMIUM_MAX_PLAYERS,
@@ -92,6 +93,9 @@ export default function MultiplayerEntryClient({
   const [quota, setQuota] = useState({
     isPremium: isPremiumUser,
     freeGamesRemaining,
+    // The server-rendered props predate the monthly allowance, so this starts
+    // false and is corrected by the capability call on mount.
+    onMonthlyAllowance: false,
   });
 
   const gamesLeft = quota.isPremium ? null : Math.max(0, quota.freeGamesRemaining ?? 0);
@@ -151,6 +155,7 @@ export default function MultiplayerEntryClient({
           setQuota({
             isPremium: capability.isPremium,
             freeGamesRemaining: capability.freeRoomsRemaining,
+            onMonthlyAllowance: capability.onMonthlyAllowance,
           });
         }
       } catch {
@@ -169,6 +174,7 @@ export default function MultiplayerEntryClient({
       setQuota({
         isPremium: capability.isPremium,
         freeGamesRemaining: capability.freeRoomsRemaining,
+        onMonthlyAllowance: capability.onMonthlyAllowance,
       });
     } catch {
       // Ignore - the error message already explains the block.
@@ -183,7 +189,8 @@ export default function MultiplayerEntryClient({
 
     if (!canCreateRoom) {
       setErrorMessage(
-        `Je hebt je ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen gebruikt. Word Premium om onbeperkt spellen te hosten.`,
+        'Je hebt je gratis spellen gebruikt. Volgende maand krijg je er weer een. ' +
+          'Word Premium om nu onbeperkt spellen te hosten.',
       );
       trackEvent('multiplayer_room_create_blocked', { reason: 'free_quota_used' });
       return;
@@ -323,8 +330,12 @@ export default function MultiplayerEntryClient({
               <Gamepad2 className="h-3.5 w-3.5 text-ink-soft" aria-hidden />
             )}
             {outOfFreeGames
-              ? 'Je gratis spellen zijn op'
-              : formatFreeGamesRemaining(gamesLeft ?? 0)}
+              ? quota.onMonthlyAllowance
+                ? 'Je maandspel is gebruikt'
+                : 'Je gratis spellen zijn op'
+              : quota.onMonthlyAllowance
+                ? formatMonthlyFreeGames(gamesLeft ?? 0)
+                : formatFreeGamesRemaining(gamesLeft ?? 0)}
           </span>
         )}
       </div>
@@ -350,6 +361,31 @@ export default function MultiplayerEntryClient({
       {errorMessage && (
         <div className="mt-5 rounded-lg border border-destructive/30 bg-destructive/10 p-3 text-sm text-destructive">
           {errorMessage}
+        </div>
+      )}
+
+      {/* Two games out, the counter stops being a chip and becomes a notice.
+          Meeting the wall for the first time with a room full of people
+          waiting is the one experience this has to prevent. */}
+      {!outOfFreeGames && gamesLeft !== null && gamesLeft !== undefined && gamesLeft <= 2 && (
+        <div className="mt-5 rounded-lg border border-vermilion/40 bg-vermilion-tint p-4">
+          <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-vermilion">
+            {quota.onMonthlyAllowance
+              ? 'Je gratis spel van deze maand'
+              : gamesLeft <= 1
+                ? 'Laatste gratis spel'
+                : `Nog ${gamesLeft} gratis spellen`}
+          </p>
+          <p className="mt-2 text-sm text-ink">
+            {quota.onMonthlyAllowance
+              ? 'Dit is je gratis spel voor deze maand. Volgende maand krijg je er weer een. Met Premium host je meteen zoveel je wilt.'
+              : gamesLeft <= 1
+                ? 'Dit is je laatste gratis spel om te hosten. Daarna krijg je er elke maand een terug. Meedoen met andermans spel blijft gratis.'
+                : `Je hebt nog ${gamesLeft} gratis spellen om te hosten. Een spel telt pas mee zodra je hem echt start.`}
+          </p>
+          <Button asChild size="sm" variant="outline" className="mt-3 border-rule bg-paper-raised">
+            <Link href="/premium?reden=host_quota_warning">Bekijk Premium</Link>
+          </Button>
         </div>
       )}
 
@@ -480,7 +516,7 @@ export default function MultiplayerEntryClient({
               {playerLimitTriggered && (
                 <p className="text-xs text-ink-soft">
                   {selectedPlayersCount} spelers vraagt om{' '}
-                  <Link href="/premium" className="font-semibold underline underline-offset-2">
+                  <Link href="/premium?reden=host_quota_exhausted" className="font-semibold underline underline-offset-2">
                     Premium
                   </Link>
                   . Gratis speel je tot {MULTIPLAYER_FREE_MAX_PLAYERS} spelers.
@@ -496,7 +532,7 @@ export default function MultiplayerEntryClient({
                   trackEvent('multiplayer_premium_cta_clicked', { placement: 'free_quota_used' })
                 }
               >
-                <Link href="/premium">
+                <Link href="/premium?reden=host_quota_exhausted">
                   <Crown className="mr-2 h-4 w-4" />
                   Word Premium om te hosten
                 </Link>

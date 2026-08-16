@@ -1,24 +1,15 @@
 import { getServerSession } from 'next-auth';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import {
-  Calendar,
-  CheckCircle2,
-  CreditCard,
-  Crown,
-  Flame,
-  Mail,
-  Star,
-  Target,
-  Trophy,
-  TrendingUp,
-  User as UserIcon,
-} from 'lucide-react';
+import { CheckCircle2, CreditCard, Crown } from 'lucide-react';
 
 import { authOptions } from '@/lib/auth';
 import { connectDB, User } from '@/database';
 import { resolvePremiumSubscription } from '@/lib/premium-subscription';
 import { getLevelInfo, BADGES, LEVELS } from '@/lib/gamification';
+import { resolveAvatar } from '@/lib/avatar';
+import { daysUntilRenameAllowed } from '@/lib/profile-identity';
+import ProfileIdentityCard from '@/components/avatar/ProfileIdentityCard';
 import { redirect } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -95,47 +86,19 @@ export default async function ProfilePage() {
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
       {/* Masthead */}
       <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
-        <div className="border-b border-rule pb-8">
-          <Eyebrow>Profiel</Eyebrow>
-          <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center">
-            <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-rule bg-paper-sunken">
-              {user.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={user.image} alt={user.name || 'Gebruiker'} className="h-full w-full object-cover" />
-              ) : (
-                <UserIcon className="h-8 w-8 text-ink-muted" />
-              )}
-            </div>
-
-            <div className="min-w-0 flex-1">
-              <div className="flex flex-wrap items-center gap-2.5">
-                <h1 className="font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">{user.name || 'Naamloos'}</h1>
-                {user.isPremium && (
-                  <Badge variant="lapis">
-                    <Star className="h-3 w-3" />
-                    Premium
-                  </Badge>
-                )}
-              </div>
-
-              <div className="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1.5">
-                <span className="inline-flex items-center gap-1.5 text-sm text-ink-muted">
-                  <Mail className="h-3.5 w-3.5" />
-                  {user.email}
-                </span>
-                <span className="inline-flex items-center gap-1.5 text-sm text-ink-muted">
-                  <Calendar className="h-3.5 w-3.5" />
-                  Lid sinds{' '}
-                  {new Date(user.createdAt).toLocaleDateString('nl-NL', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Eyebrow>Profiel</Eyebrow>
+        <ProfileIdentityCard
+          initialName={user.name || 'Naamloos'}
+          initialAvatar={resolveAvatar(user.avatar, String(user._id))}
+          nameChangeAllowedInDays={daysUntilRenameAllowed(user.nameUpdatedAt)}
+          email={user.email}
+          memberSince={new Date(user.createdAt).toLocaleDateString('nl-NL', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+          isPremium={Boolean(user.isPremium)}
+        />
       </section>
 
       <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">

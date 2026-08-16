@@ -15,7 +15,8 @@
     "test:mobile-sync": "node scripts/e2e-mobile-sync.mjs",
     "test:multiplayer": "node scripts/e2e-multiplayer.mjs",
     "test:multiplayer:cross": "node scripts/e2e-multiplayer-cross-instance.mjs",
-    "test:multiplayer:quota": "node scripts/e2e-multiplayer-quota.mjs"
+    "test:multiplayer:quota": "node scripts/e2e-multiplayer-quota.mjs",
+    "test:group-license": "node --import tsx scripts/e2e-group-license.mts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

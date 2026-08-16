@@ -6,6 +6,7 @@ import MultiplayerRoom, {
 } from '@/database/models/MultiplayerRoom';
 import type { PersistedRoom, PersistedRoomPlayer, RoomRepository } from './repository';
 import { MultiplayerError } from './errors';
+import { normalizeAvatar } from '@/lib/avatar';
 import type { ImmutableQuestion, RoomStatus } from './types';
 
 const DUPLICATE_KEY_CODE = 11000;
@@ -14,6 +15,7 @@ function playerToPersisted(player: IRoomPlayer): PersistedRoomPlayer {
   return {
     id: player.id,
     name: player.name,
+    ...(player.avatar?.character ? { avatar: normalizeAvatar(player.avatar) } : {}),
     score: player.score,
     correctAnswers: player.correctAnswers,
     isHost: player.isHost,
@@ -27,6 +29,7 @@ function persistedToPlayer(player: PersistedRoomPlayer): Partial<IRoomPlayer> {
   return {
     id: player.id,
     name: player.name,
+    ...(player.avatar ? { avatar: player.avatar } : {}),
     score: player.score,
     correctAnswers: player.correctAnswers,
     isHost: player.isHost,

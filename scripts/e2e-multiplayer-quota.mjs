@@ -88,6 +88,25 @@ const LOCKED_MARKERS = [
 
 const counterFor = (left) => `${left} van de ${FREE_GAME_QUOTA} gratis spellen over`;
 
+/**
+ * The period key the server computes, in Europe/Amsterdam.
+ *
+ * Mirrors `currentMonthlyPeriod` in src/lib/multiplayer/quota.ts. Duplicated
+ * rather than imported because this script runs under plain node; the shape is
+ * pinned by tests/quota-monthly.test.ts on the other side.
+ */
+function currentPeriod(now = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Amsterdam',
+    year: 'numeric',
+    month: '2-digit',
+  }).formatToParts(now);
+
+  const year = parts.find((p) => p.type === 'year')?.value ?? '1970';
+  const month = parts.find((p) => p.type === 'month')?.value ?? '01';
+  return `${year}-${month}`;
+}
+
 async function main() {
   await mongoose.connect(process.env.MONGODB_URI);
   const db = mongoose.connection.db;
@@ -106,10 +125,32 @@ async function main() {
 
   try {
     const fresh = await mk('fresh', { isPremium: false, multiplayerGamesHosted: 0 });
+    // Two games left is where the counter is meant to stop being a footnote.
+    const warning = await mk('warning', {
+      isPremium: false,
+      multiplayerGamesHosted: FREE_GAME_QUOTA - 2,
+    });
     const used = await mk('used', { isPremium: false, multiplayerGamesHosted: FREE_GAME_QUOTA });
     // No counter at all: an account from before the quota existed.
     const legacy = await mk('legacy', { isPremium: false, freeMultiplayerRoomCreated: true });
     const premium = await mk('premium', { isPremium: true, multiplayerGamesHosted: 99 });
+
+    // The discovery pack is spent and the stored month is last month's, so the
+    // refill has to fire on read without any job having run.
+    const refilled = await mk('refilled', {
+      isPremium: false,
+      multiplayerGamesHosted: FREE_GAME_QUOTA,
+      multiplayerMonthlyPeriod: '2000-01',
+      multiplayerMonthlyGamesHosted: 1,
+    });
+
+    // Same account one game later: this month's allowance is already gone.
+    const spentThisMonth = await mk('monthly-spent', {
+      isPremium: false,
+      multiplayerGamesHosted: FREE_GAME_QUOTA + 1,
+      multiplayerMonthlyPeriod: currentPeriod(),
+      multiplayerMonthlyGamesHosted: 1,
+    });
 
     console.log('\n[1m── Free account, all games used[0m');
     const usedJar = new Jar();
@@ -147,6 +188,102 @@ async function main() {
     check('no free-game counter', !premPage.text.includes('gratis spellen over'));
     check('shows the unlimited badge', premPage.text.includes('onbeperkt spellen'));
     check('create button offered', premPage.text.includes('Spel starten'));
+
+    console.log('\n[1m── Warning before the wall[0m');
+    const warnJar = new Jar();
+    await login(warnJar, warning, 'Test1234!');
+    const warnPage = await req(warnJar, '/samen-spelen');
+    check('page renders', warnPage.status === 200, `got ${warnPage.status}`);
+    check('warns two games early', warnPage.text.includes('Nog 2 gratis spellen'));
+    check(
+      'the warning links to Premium with its own trigger',
+      warnPage.text.includes('/premium?reden=host_quota_warning'),
+    );
+    check('can still host', warnPage.text.includes('Spel starten'));
+
+    console.log('\n[1m── Monthly refill[0m');
+    const refillJar = new Jar();
+    await login(refillJar, refilled, 'Test1234!');
+    const refillPage = await req(refillJar, '/samen-spelen');
+    check('page renders', refillPage.status === 200, `got ${refillPage.status}`);
+    check(
+      'a stale month refills without a job having run',
+      refillPage.text.includes('Nog 1 gratis spel deze maand'),
+    );
+    check(
+      'the monthly notice replaces the discovery notice',
+      refillPage.text.includes('Dit is je gratis spel voor deze maand'),
+    );
+    check(
+      'it does not fall back to the discovery counter',
+      !refillPage.text.includes('gratis spellen over'),
+    );
+    check('may host again', refillPage.text.includes('Spel starten'));
+
+    // The capability endpoint is what the app reads, so it has to agree with
+    // the page: a refill the website shows but the app does not is worse than
+    // no refill at all.
+    const refillCapability = await req(refillJar, '/api/multiplayer/rooms');
+    check(
+      'the capability endpoint reports one game left',
+      refillCapability.body?.freeRoomsRemaining === 1,
+      `got ${JSON.stringify(refillCapability.body?.freeRoomsRemaining)}`,
+    );
+    check(
+      'the capability endpoint flags the monthly allowance',
+      refillCapability.body?.onMonthlyAllowance === true,
+    );
+
+    const spentJar = new Jar();
+    await login(spentJar, spentThisMonth, 'Test1234!');
+    const spentPage = await req(spentJar, '/samen-spelen');
+    check('page renders', spentPage.status === 200, `got ${spentPage.status}`);
+    check(
+      'a spent month locks hosting again',
+      spentPage.text.includes('Je maandspel is gebruikt'),
+    );
+    check('create button is NOT offered', !spentPage.text.includes('>Spel starten<'));
+
+    const spentCapability = await req(spentJar, '/api/multiplayer/rooms');
+    check(
+      'the capability endpoint refuses a second game this month',
+      spentCapability.body?.canCreateRoom === false,
+      `got ${JSON.stringify(spentCapability.body?.canCreateRoom)}`,
+    );
+    console.log('\n[1m── Price ladder[0m');
+    const premiumPage = await req(freshJar, '/premium');
+    check('premium page renders', premiumPage.status === 200, `got ${premiumPage.status}`);
+    check('offers a monthly plan', premiumPage.text.includes('Per maand'));
+    check('offers lifetime', premiumPage.text.includes('Levenslang'));
+
+    // The yearly card is gated on a real Stripe price. Without one it must be
+    // absent rather than rendering a button whose checkout answers 500.
+    if (process.env.STRIPE_PRICE_YEARLY) {
+      check('offers a yearly plan', premiumPage.text.includes('Per jaar'));
+      check('yearly is priced', premiumPage.text.includes('39,99'));
+      // 5,99 x 12 = 71,88 against 39,99, so the claim must read 44%.
+      check('the saving is computed, not hardcoded', premiumPage.text.includes('Bespaar 44%'));
+      check('shows the monthly equivalent', premiumPage.text.includes('3,33 per maand'));
+      check('posts the plan to checkout', premiumPage.text.includes('value="yearly"'));
+    } else {
+      check(
+        'the yearly card is hidden while STRIPE_PRICE_YEARLY is unset',
+        !premiumPage.text.includes('Start jaarabonnement'),
+        'set STRIPE_PRICE_YEARLY to test the full ladder',
+      );
+    }
+
+    const triggeredPage = await req(freshJar, '/premium?reden=host_quota_exhausted');
+    check(
+      'a trigger changes the headline',
+      triggeredPage.text.includes('Speel onbeperkt samen verder'),
+      'host_quota_exhausted',
+    );
+    const directPage = await req(freshJar, '/premium?reden=onzin');
+    check(
+      'an unknown trigger falls back to the direct headline',
+      directPage.text.includes('Kies jouw Premium plan'),
+    );
   } finally {
     await db.collection('users').deleteMany({ _id: { $in: ids } });
     await mongoose.disconnect();

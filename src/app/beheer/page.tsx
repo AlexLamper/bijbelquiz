@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Users, BookOpen, BarChart3, Settings, Plus, Edit, Crown, Activity } from "lucide-react";
+import AdminGroupLicenseForm from "./AdminGroupLicenseForm";
+import { GROUP_LICENSE_SEATS } from "@/lib/group-license";
 
 export default async function AdminDashboard() {
   const session = await getServerSession(authOptions);
@@ -39,6 +41,12 @@ export default async function AdminDashboard() {
               </div>
 
               <div className="flex flex-wrap gap-3">
+                <Button asChild variant="outline" className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken">
+                  <Link href="/beheer/funnel">
+                    <BarChart3 className="mr-2 h-4 w-4" />
+                    Funnel
+                  </Link>
+                </Button>
                 <Button asChild variant="outline" className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken">
                   <Link href="/beheer/quizzen">
                     <BookOpen className="mr-2 h-4 w-4" />
@@ -188,6 +196,10 @@ export default async function AdminDashboard() {
             </CardContent>
           </Card>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1180px] px-4 pt-6 sm:px-5 lg:px-4">
+        <AdminGroupLicenseForm defaultSeats={GROUP_LICENSE_SEATS} />
       </section>
 
       <section className="mx-auto max-w-[1180px] px-4 pt-6 sm:px-5 lg:px-4">

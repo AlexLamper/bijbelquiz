@@ -1,8 +1,17 @@
+import type { AvatarConfig } from '@/lib/avatar';
+
 export type RoomStatus = 'lobby' | 'in_progress' | 'question_result' | 'finished';
+
+export interface MultiplayerUserProfile {
+  name: string;
+  avatar: AvatarConfig;
+}
 
 export interface RoomPlayerSnapshot {
   id: string;
   name: string;
+  /** The player mascot, as it was when they joined. */
+  avatar: AvatarConfig;
   score: number;
   correctAnswers: number;
   isHost: boolean;
@@ -122,7 +131,14 @@ export interface ProviderQuizSnapshot {
 }
 
 export interface MultiplayerDataProvider {
-  getUserDisplayName(userId: string): Promise<string | null>;
+  /**
+   * Name and mascot for a player joining a room, or null when the id does not
+   * belong to a real account. Both are copied onto the room document at join
+   * time: a lobby snapshot is polled roughly once a second per player, so
+   * re-reading the users collection on every poll would multiply the load for
+   * data that never changes mid-game.
+   */
+  getUserProfile(userId: string): Promise<MultiplayerUserProfile | null>;
   getQuizSnapshot(quizId: string): Promise<ProviderQuizSnapshot | null>;
 }
 

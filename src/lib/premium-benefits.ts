@@ -19,10 +19,34 @@ export const MULTIPLAYER_PREMIUM_MAX_PLAYERS = 20;
  */
 export const MULTIPLAYER_FREE_ROOM_QUOTA = 5;
 
-/** "3 van de 5 gratis spellen over" — the counter shown on every host surface. */
+/**
+ * After the discovery pack above is spent, a free host gets this many games
+ * back at the start of every calendar month.
+ *
+ * A permanent dead end loses the account: a host who cannot host stops opening
+ * the app at all. A monthly refill instead produces a recurring decision point
+ * - one evening a month where they either upgrade or wait - which over a year
+ * is worth considerably more than one hard stop.
+ */
+export const MULTIPLAYER_MONTHLY_FREE_ROOMS = 1;
+
+/** "3 van de 5 gratis spellen over" - the counter shown on every host surface. */
 export function formatFreeGamesRemaining(remaining: number): string {
   const safe = Math.max(0, remaining);
   return `${safe} van de ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen over`;
+}
+
+/**
+ * Counter for a host who is past the discovery pack and now on the monthly
+ * allowance. Says something different on purpose: "1 van de 5 over" would
+ * misdescribe an allowance that comes back next month.
+ */
+export function formatMonthlyFreeGames(remaining: number): string {
+  const safe = Math.max(0, remaining);
+  if (safe === 0) return 'Je maandspel is gebruikt';
+  return safe === 1
+    ? 'Nog 1 gratis spel deze maand'
+    : `Nog ${safe} gratis spellen deze maand`;
 }
 
 /** Single-sentence outcome promise used at the top of every paywall surface. */
@@ -46,6 +70,48 @@ export const PREMIUM_COMPACT_BULLETS: ReadonlyArray<string> = [
   'Diepere uitleg bij elke vraag',
   'Alle premium quizzen en inzichten',
 ];
+
+/**
+ * Read a price out of a label like "€5,99" or "EUR 39,99".
+ * Returns null when the label is not a plain number (localized store text).
+ */
+export function parsePriceLabel(label: string): number | null {
+  const match = label.match(/(\d+(?:[.,]\d+)?)/);
+  if (!match) return null;
+  const value = Number(match[1].replace(',', '.'));
+  return Number.isFinite(value) && value > 0 ? value : null;
+}
+
+/**
+ * What a yearly plan saves against paying monthly for twelve months, as a
+ * whole percentage. Null when either label cannot be parsed, so the UI can
+ * simply omit the claim rather than print a wrong one.
+ */
+export function yearlySavingsPercent(
+  monthlyLabel: string,
+  yearlyLabel: string,
+): number | null {
+  const monthly = parsePriceLabel(monthlyLabel);
+  const yearly = parsePriceLabel(yearlyLabel);
+  if (monthly === null || yearly === null) return null;
+
+  const twelveMonths = monthly * 12;
+  if (yearly >= twelveMonths) return null;
+
+  return Math.round(((twelveMonths - yearly) / twelveMonths) * 100);
+}
+
+/** Monthly equivalent of a yearly price, e.g. "€3,33". */
+export function monthlyEquivalentOfYearly(yearlyLabel: string): string | null {
+  const yearly = parsePriceLabel(yearlyLabel);
+  if (yearly === null) return null;
+
+  const perMonth = yearly / 12;
+  return `€${perMonth.toLocaleString('nl-NL', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })}`;
+}
 
 /**
  * Format a per-week equivalent for a monthly price label like "€5,99".

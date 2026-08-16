@@ -73,7 +73,7 @@ export function PremiumSection() {
             <figcaption className="mb-3 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-inverted/50">
               Jouw dashboard
             </figcaption>
-            {/* Pre-rendered laptop mockup on a transparent ground — frame and
+            {/* Pre-rendered laptop mockup on a transparent ground - frame and
                 shadow are baked into the asset, so it floats on the ink band
                 instead of sitting on a paper mat. */}
             <div className="relative aspect-3944/2564 w-full">

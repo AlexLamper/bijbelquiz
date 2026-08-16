@@ -53,7 +53,7 @@ const NEXTAUTH_SECRET = process.env.NEXTAUTH_SECRET;
 const KEEP_USER = process.argv.includes('--keep-user');
 
 const OUT_DIR = path.resolve(process.cwd(), 'public/images/screenshots');
-// Shown in the navbar, so it has to read like a real address — but it stays a
+// Shown in the navbar, so it has to read like a real address - but it stays a
 // throwaway account, and cleanup matches on exactly this string.
 const SCREENSHOT_EMAIL = 'anna@bijbelquiz-demo.nl';
 
@@ -119,7 +119,7 @@ async function assertServerIsUp() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
   } catch (error) {
     console.error(
-      `\nCannot reach ${BASE_URL} — start the app first (npm run dev).\n` +
+      `\nCannot reach ${BASE_URL} - start the app first (npm run dev).\n` +
         `  ${error.message}`
     );
     process.exit(2);
@@ -197,7 +197,7 @@ async function provisionUser() {
       })
     );
   } else {
-    log('No approved quizzes found — history panels will render empty.');
+    log('No approved quizzes found - history panels will render empty.');
   }
 
   return userId.toString();

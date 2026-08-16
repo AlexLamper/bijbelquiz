@@ -5,6 +5,7 @@ type UserPremiumLike = {
   premiumStripe?: boolean;
   premiumStore?: boolean;
   storePremiumExpiresAt?: Date | string | null;
+  groupPremiumUntil?: Date | string | null;
 };
 
 function parseExpiryDate(input?: Date | string | null) {
@@ -20,12 +21,20 @@ export function getPremiumSnapshot(user: UserPremiumLike) {
   const premiumStripe = Boolean(user.premiumStripe);
   const premiumStore = Boolean(user.premiumStore);
   const storePremiumExpiresAt = parseExpiryDate(user.storePremiumExpiresAt);
-  const isPremium = premiumStripe || premiumStore || Boolean(user.isPremium);
+
+  // Group premium is a lease, not a flag: it lapses on its own date, so a
+  // licence that ends takes the access with it without any cleanup pass.
+  const groupPremiumUntil = parseExpiryDate(user.groupPremiumUntil);
+  const premiumGroup = Boolean(groupPremiumUntil && groupPremiumUntil.getTime() > Date.now());
+
+  const isPremium = premiumStripe || premiumStore || premiumGroup || Boolean(user.isPremium);
 
   return {
     premiumStripe,
     premiumStore,
     storePremiumExpiresAt,
+    premiumGroup,
+    groupPremiumUntil,
     isPremium,
   };
 }

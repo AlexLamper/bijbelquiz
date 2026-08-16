@@ -74,7 +74,7 @@ export default function PremiumMemberLayout({
         )}
       </section>
 
-      {/* What's unlocked — a reminder, not a pitch */}
+      {/* What's unlocked - a reminder, not a pitch */}
       <section className="mt-6 rounded-lg border border-rule bg-paper-raised p-6">
         <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
           Wat je hebt

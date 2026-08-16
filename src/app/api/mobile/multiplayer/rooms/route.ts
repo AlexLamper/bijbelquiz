@@ -4,7 +4,7 @@ import { handleCreateRoom, handleGetCapability } from '@/lib/multiplayer/handler
 /**
  * Legacy alias for `/api/multiplayer/rooms`, kept so already-shipped mobile
  * builds keep working. New clients (web, Flutter) should use the canonical
- * `/api/multiplayer/*` path — both share one implementation.
+ * `/api/multiplayer/*` path - both share one implementation.
  */
 
 export const runtime = 'nodejs';

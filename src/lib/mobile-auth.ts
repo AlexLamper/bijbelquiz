@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 
 /**
  * Tokens handed out by `/api/mobile/{login,register,google-login,apple-login}`
- * are plain HS256 JWTs carrying `userId` — a different shape from the NextAuth
+ * are plain HS256 JWTs carrying `userId` - a different shape from the NextAuth
  * JWE the web uses. Every mobile route reads them through here so the format
  * lives in exactly one place.
  */

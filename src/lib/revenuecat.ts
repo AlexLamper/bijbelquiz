@@ -1,6 +1,7 @@
 import { Types } from 'mongoose';
 import { User, WebhookEvent } from '@/database';
 import { updateUserPremiumFromStore } from '@/lib/premium-state';
+import { recordPurchase, recordServerEvent } from '@/lib/analytics/record';
 
 const REVENUECAT_API_BASE_URL = 'https://api.revenuecat.com/v1';
 const DEFAULT_ENTITLEMENT_ID = 'premium';
@@ -10,7 +11,36 @@ type RevenueCatEvent = {
   type?: string;
   app_user_id?: string;
   entitlement_ids?: string[];
+  /** Store product id, e.g. `bijbelquiz_premium_yearly`. */
+  product_id?: string;
+  /** RevenueCat's own period label: NORMAL, TRIAL, INTRO, PROMOTIONAL. */
+  period_type?: string;
+  store?: string;
+  price_in_purchased_currency?: number;
+  currency?: string;
 };
+
+/**
+ * Map a store product id onto the plan labels the funnel reports on.
+ *
+ * Matches on substring rather than an exact list so renaming a product in App
+ * Store Connect does not silently reclassify every sale as lifetime.
+ */
+function planFromProductId(productId: string | undefined): 'monthly' | 'yearly' | 'lifetime' {
+  const id = (productId || '').toLowerCase();
+  if (id.includes('year') || id.includes('annual') || id.includes('jaar')) return 'yearly';
+  if (id.includes('month') || id.includes('maand')) return 'monthly';
+  if (id.includes('life') || id.includes('levenslang')) return 'lifetime';
+  return 'monthly';
+}
+
+/** Which store this came from, for the platform column on the event. */
+function platformFromStore(store: string | undefined): 'ios' | 'android' | 'web' {
+  const value = (store || '').toUpperCase();
+  if (value === 'PLAY_STORE') return 'android';
+  if (value === 'APP_STORE' || value === 'MAC_APP_STORE') return 'ios';
+  return 'ios';
+}
 
 function getWebhookEvent(payload: unknown): RevenueCatEvent | null {
   if (!payload || typeof payload !== 'object') {
@@ -119,6 +149,54 @@ export async function syncStorePremiumForAppUser(appUserId: string) {
   };
 }
 
+/**
+ * Turn a store event into a funnel event.
+ *
+ * Runs after the idempotency guard above, so a webhook RevenueCat retries
+ * cannot count the same purchase twice. Only the three revenue-relevant types
+ * are recorded; renewals and expirations are subscription health, not funnel.
+ */
+async function recordRevenueCatFunnelEvent(
+  event: RevenueCatEvent,
+  appUserId: string,
+  eventType: string,
+): Promise<void> {
+  const type = eventType.toUpperCase();
+  const isTrial = (event.period_type || '').toUpperCase() === 'TRIAL';
+  const plan = planFromProductId(event.product_id);
+  const platform = platformFromStore(event.store);
+
+  try {
+    if (type === 'INITIAL_PURCHASE' || type === 'NON_RENEWING_PURCHASE') {
+      await recordPurchase({
+        userId: appUserId,
+        plan,
+        platform,
+        provider: 'revenuecat',
+        isTrial,
+        amountCents:
+          typeof event.price_in_purchased_currency === 'number'
+            ? Math.round(event.price_in_purchased_currency * 100)
+            : null,
+        currency: event.currency ?? null,
+      });
+      return;
+    }
+
+    // The first paid renewal after a trial is the conversion. A renewal that
+    // is itself still in the trial period is not.
+    if (type === 'RENEWAL' && !isTrial) {
+      await recordServerEvent('trial_converted', {
+        userId: appUserId,
+        platform,
+        props: { plan, provider: 'revenuecat' },
+      });
+    }
+  } catch (error) {
+    console.error('[REVENUECAT_WEBHOOK_ANALYTICS]', { eventType, error });
+  }
+}
+
 export async function processRevenueCatWebhook(body: unknown) {
   const event = getWebhookEvent(body);
   if (!event) {
@@ -146,6 +224,8 @@ export async function processRevenueCatWebhook(body: unknown) {
     console.error('[REVENUECAT_WEBHOOK_IDEMPOTENCY_ERROR]', { eventId, eventType, appUserId, error });
     return { ok: false as const, status: 500, body: { error: 'Idempotency tracking failed' } };
   }
+
+  await recordRevenueCatFunnelEvent(event, appUserId, eventType);
 
   const entitlementId = process.env.REVENUECAT_PREMIUM_ENTITLEMENT_ID || DEFAULT_ENTITLEMENT_ID;
 

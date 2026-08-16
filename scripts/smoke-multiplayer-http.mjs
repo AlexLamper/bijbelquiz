@@ -4,7 +4,7 @@
  *
  * Spins up two virtual players (host + p2) against a live dev server and
  * walks through:
- *   1. Both fetch auth tokens (requires real session cookies — see USAGE).
+ *   1. Both fetch auth tokens (requires real session cookies - see USAGE).
  *   2. Host creates a room.
  *   3. p2 joins by code from a "different instance" perspective (separate
  *      fetch context). This is the exact case that fails on Vercel today.
@@ -108,7 +108,7 @@ async function main() {
   }
   logStep('p2 joined', { players: joined.body.room.players.length });
 
-  // Multi-poll concurrent reads from both perspectives — proves cross-
+  // Multi-poll concurrent reads from both perspectives - proves cross-
   // instance consistency on Vercel.
   logStep('Polling 5x in parallel from both clients');
   for (let i = 0; i < 5; i += 1) {
@@ -169,7 +169,7 @@ async function main() {
     bearerFetch(`/api/multiplayer/rooms/${roomCode}/leave`, { method: 'POST' }, p2Token, P2_SESSION_TOKEN),
   ]);
 
-  console.log('\n✅ Smoke test PASSED — multiplayer works end-to-end via HTTP polling');
+  console.log('\n✅ Smoke test PASSED - multiplayer works end-to-end via HTTP polling');
 }
 
 main().catch((err) => {

@@ -29,7 +29,7 @@ const APPLY = process.argv.includes('--apply');
 try {
   dns.setServers(['8.8.8.8', '8.8.4.4', '1.1.1.1']);
 } catch {
-  // ignore — fall back to system resolver
+  // ignore - fall back to system resolver
 }
 
 async function buildNonSrvMongoUri(srvUri) {

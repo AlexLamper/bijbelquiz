@@ -4,7 +4,7 @@ import Image from 'next/image';
  * The hero device mockup.
  *
  * The asset is a pre-rendered, transparent phone render of the app's home
- * screen — frame, screen and shadow are already baked in, so nothing is drawn
+ * screen - frame, screen and shadow are already baked in, so nothing is drawn
  * around it here. Replacing it means dropping a new render into
  * `public/images/screenshots/` and pointing `src` at it.
  */

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { BookOpenCheck, CheckCircle2, Loader2, Palette, Save, Settings2, UserPen } from 'lucide-react';
+
 import { useTheme } from 'next-themes';
 import { useSession } from 'next-auth/react';
 import { toast } from 'sonner';
@@ -126,6 +127,12 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
 
       setSettings(payload.settings);
       setOnboarding(payload.onboarding);
+
+      // Preferences ride on the session, and the quiz player and theme read
+      // them from there. Without this refresh the change would only take hold
+      // after a full reload.
+      await update();
+
       applySavedState(successMessage);
       return true;
     } catch (error) {
@@ -154,18 +161,10 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
     );
   };
 
-  const updateSwitchSetting = async (
-    key: 'emailNotifications' | 'soundEffects' | 'showBibleReferences' | 'dailyReminder',
-    value: boolean,
-    successMessage: string
-  ) => {
+  const updateBibleReferences = async (value: boolean) => {
     await saveSettingsPatch(
-      {
-        settings: {
-          [key]: value,
-        },
-      },
-      successMessage
+      { settings: { showBibleReferences: value } },
+      value ? 'Bijbelverwijzingen aan' : 'Bijbelverwijzingen uit'
     );
   };
 
@@ -382,6 +381,23 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
                   <SelectItem value="large">Groot</SelectItem>
                 </SelectContent>
               </Select>
+            </div>
+
+            <div className="flex items-start justify-between gap-4 rounded-md border border-rule bg-paper-raised px-4 py-3 md:col-span-2">
+              <div className="min-w-0">
+                <Label htmlFor="settings-bible-references" className="text-sm font-medium text-ink">
+                  Bijbelverwijzingen tonen
+                </Label>
+                <p className="mt-1 text-sm leading-relaxed text-ink-muted">
+                  Toont de bijbeltekst bij de uitleg na een vraag. Je kunt dit ook tijdens een quiz
+                  omzetten.
+                </p>
+              </div>
+              <Switch
+                id="settings-bible-references"
+                checked={settings.showBibleReferences}
+                onCheckedChange={(value) => updateBibleReferences(value === true)}
+              />
             </div>
           </CardContent>
         </Card>

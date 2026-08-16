@@ -1,4 +1,5 @@
 import { MultiplayerError } from './errors';
+import type { AvatarConfig } from '@/lib/avatar';
 import type { ImmutableQuestion, RoomStatus } from './types';
 
 /**
@@ -9,6 +10,12 @@ import type { ImmutableQuestion, RoomStatus } from './types';
 export interface PersistedRoomPlayer {
   id: string;
   name: string;
+  /**
+   * Mascot copied from the user document when they joined. Optional because
+   * rooms created before mascots shipped are still in Mongo until their TTL
+   * expires; `resolveAvatar` fills those in at snapshot time.
+   */
+  avatar?: AvatarConfig;
   score: number;
   correctAnswers: number;
   isHost: boolean;

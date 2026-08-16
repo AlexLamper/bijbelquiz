@@ -18,6 +18,7 @@ export async function POST(req: NextRequest) {
       score,
       totalQuestions,
       answers,
+      platform: 'web',
     });
 
     if (!result.ok) {

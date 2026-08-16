@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4K4D59MXKW.com.bijbelquiz.app",
+        "paths": [
+          "/samen-spelen/*",
+          "NOT /samen-spelen",
+          "/groepslicentie"
+        ]
+      }
+    ]
+  }
+}

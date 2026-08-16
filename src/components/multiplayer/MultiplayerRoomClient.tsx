@@ -4,11 +4,18 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
-import { CheckCircle2, Copy, MinusCircle, RefreshCcw, Sparkles, Trophy, XCircle, Zap } from 'lucide-react';
+import { CheckCircle2, Copy, MinusCircle, RefreshCcw, Share2, Sparkles, Trophy, XCircle, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
+import MascotAvatar from '@/components/avatar/MascotAvatar';
+import { track } from '@/lib/analytics/client';
+import {
+  buildRoomInviteMessage,
+  INVITE_SOURCE_PARAM,
+  INVITE_SOURCE_VALUE,
+} from '@/lib/multiplayer/invite';
 import { useMultiplayerRoomController } from '@/lib/multiplayer-web/useMultiplayerRoomController';
 import { getCapability } from '@/lib/multiplayer-web/client';
 import { MultiplayerTokenStore } from '@/lib/multiplayer-web/token-store';
@@ -339,6 +346,7 @@ function QuestionResultInterstitial(props: {
               ) : (
                 <MinusCircle className="h-4 w-4 shrink-0 text-muted-foreground/50" aria-hidden />
               )}
+              <MascotAvatar avatar={player.avatar} size={26} bordered />
               <span className="min-w-0 flex-1 truncate text-sm font-medium">{player.name}</span>
               {player.scoreGained ? (
                 <span className="shrink-0 text-xs font-medium tabular-nums text-positive dark:text-positive">
@@ -390,6 +398,16 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
   const { data: session, status: sessionStatus } = useSession();
   const normalizedRoomCode = useMemo(() => normalizeRoomCode(roomCode), [roomCode]);
 
+  // Read once, before the router has a chance to strip the parameter, so a
+  // re-render does not turn an invited join into a direct one.
+  const [arrivedViaInvite] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    return (
+      new URLSearchParams(window.location.search).get(INVITE_SOURCE_PARAM) ===
+      INVITE_SOURCE_VALUE
+    );
+  });
+
   // NextAuth keeps `data` populated across background refetches, so reading it
   // straight through is stable: the room controller only tears down when the
   // user is genuinely signed out.
@@ -421,9 +439,23 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
     roomCode: normalizedRoomCode,
     userId: resolvedUserId,
     autoJoin: true,
+    viaInvite: arrivedViaInvite,
   });
 
   const [copied, setCopied] = useState(false);
+  const [inviteCopied, setInviteCopied] = useState(false);
+
+  /**
+   * Offering to keep the people you just played with.
+   *
+   * Asked on the results screen and nowhere else: this is the one moment the
+   * group demonstrably exists, and a prompt in a settings menu a week later
+   * reaches nobody. Dismissable, and gone for good once saved.
+   */
+  const [groupSaveState, setGroupSaveState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+  const [groupSaveError, setGroupSaveError] = useState<string | null>(null);
+  const [savedGroupName, setSavedGroupName] = useState<string | null>(null);
+  const [groupPromptDismissed, setGroupPromptDismissed] = useState(false);
 
   /**
    * Starting the game is what actually spends a free game, so the host has to
@@ -511,6 +543,73 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
       setTimeout(() => setCopied(false), 1200);
     } catch {
       setCopied(false);
+    }
+  }
+
+  /**
+   * Share the room as a link.
+   *
+   * Uses the native share sheet where there is one - on a phone that is one
+   * tap into WhatsApp, which is where these groups actually live - and falls
+   * back to copying the whole message otherwise.
+   */
+  async function handleShareInvite() {
+    const message = buildRoomInviteMessage(
+      normalizedRoomCode,
+      room?.quizTitle ?? '',
+      window.location.origin,
+    );
+
+    track('room_invite_shared', {
+      roomCode: normalizedRoomCode,
+      method: typeof navigator.share === 'function' ? 'share_sheet' : 'clipboard',
+    });
+
+    if (typeof navigator.share === 'function') {
+      try {
+        await navigator.share({
+          title: 'BijbelQuiz',
+          text: message,
+        });
+        return;
+      } catch {
+        // Cancelled, or unavailable in this context: fall through to copying.
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(message);
+      setInviteCopied(true);
+      setTimeout(() => setInviteCopied(false), 1600);
+    } catch {
+      setInviteCopied(false);
+    }
+  }
+
+  async function handleSaveGroup() {
+    setGroupSaveState('saving');
+    setGroupSaveError(null);
+
+    try {
+      const response = await fetch('/api/player-groups', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ roomCode: normalizedRoomCode }),
+      });
+
+      const payload = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        setGroupSaveError(payload?.error || 'Groep bewaren is niet gelukt.');
+        setGroupSaveState('error');
+        return;
+      }
+
+      setSavedGroupName(payload?.group?.name ?? null);
+      setGroupSaveState('saved');
+    } catch {
+      setGroupSaveError('Groep bewaren is niet gelukt.');
+      setGroupSaveState('error');
     }
   }
 
@@ -643,6 +742,12 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                 )}
                 {getConnectionLabel(connectionStatus)}
               </Badge>
+              {/* The link is the primary action: a code still has to be typed
+                  by everybody in the room, a link does not. */}
+              <Button size="sm" className="bg-ink text-ink-inverted hover:bg-ink-soft" onClick={handleShareInvite}>
+                <Share2 className="mr-2 h-4 w-4" />
+                {inviteCopied ? 'Uitnodiging gekopieerd' : 'Uitnodiging delen'}
+              </Button>
               <Button variant="secondary" size="sm" className="" onClick={handleCopyRoomCode}>
                 <Copy className="mr-2 h-4 w-4" />
                 {copied ? 'Gekopieerd' : 'Code kopiëren'}
@@ -867,15 +972,60 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                   <div className="space-y-2">
                     {displayedResults.map((entry) => (
                       <div key={entry.playerId} className="flex items-center justify-between rounded-lg border p-3">
-                        <div>
-                          <p className="font-medium">#{entry.rank} {entry.playerName}</p>
-                          <p className="text-xs text-muted-foreground">
-                            {entry.correctAnswers} goed beantwoord
-                          </p>
+                        <div className="flex min-w-0 items-center gap-3">
+                          <MascotAvatar
+                            avatar={room?.players.find((player) => player.id === entry.playerId)?.avatar}
+                            size={34}
+                            bordered
+                          />
+                          <div className="min-w-0">
+                            <p className="truncate font-medium">#{entry.rank} {entry.playerName}</p>
+                            <p className="text-xs text-muted-foreground">
+                              {entry.correctAnswers} goed beantwoord
+                            </p>
+                          </div>
                         </div>
                         <p className="text-sm font-semibold">{entry.score} punten</p>
                       </div>
                     ))}
+                  </div>
+                )}
+
+                {room.players.length >= 2 && !groupPromptDismissed && groupSaveState !== 'saved' && (
+                  <div className="rounded-lg border border-lapis/35 bg-lapis-tint p-4">
+                    <p className="text-sm font-medium text-ink">Deze groep bewaren?</p>
+                    <p className="mt-1 text-sm text-ink-muted">
+                      Dan houd je een eigen ranglijst bij met deze {room.players.length} spelers, en
+                      nodig je ze de volgende keer met een tik weer uit.
+                    </p>
+                    {groupSaveError && (
+                      <p className="mt-2 text-sm text-destructive">{groupSaveError}</p>
+                    )}
+                    <div className="mt-3 flex flex-wrap gap-3">
+                      <Button
+                        onClick={() => void handleSaveGroup()}
+                        disabled={groupSaveState === 'saving'}
+                      >
+                        {groupSaveState === 'saving' ? 'Bewaren...' : 'Groep bewaren'}
+                      </Button>
+                      <Button variant="outline" onClick={() => setGroupPromptDismissed(true)}>
+                        Nee, bedankt
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {groupSaveState === 'saved' && (
+                  <div className="rounded-lg border border-rule bg-paper-sunken p-4">
+                    <p className="text-sm font-medium text-ink">
+                      {savedGroupName ? `"${savedGroupName}" is bewaard.` : 'Groep bewaard.'}
+                    </p>
+                    <p className="mt-1 text-sm text-ink-muted">
+                      Je vindt de stand van deze groep op de ranglijst.
+                    </p>
+                    <Button asChild variant="outline" className="mt-3">
+                      <Link href="/ranglijst">Naar de ranglijst</Link>
+                    </Button>
                   </div>
                 )}
 
@@ -909,7 +1059,10 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     )}
                   >
                     <div className="mb-1 flex items-center justify-between gap-2">
-                      <p className="font-medium">{player.name}</p>
+                      <div className="flex min-w-0 items-center gap-2">
+                        <MascotAvatar avatar={player.avatar} size={28} bordered />
+                        <p className="truncate font-medium">{player.name}</p>
+                      </div>
                       <div className="flex gap-1">
                         {player.isHost && <Badge variant="outline">Spelleider</Badge>}
                         {!player.isConnected && <Badge variant="secondary">Offline</Badge>}

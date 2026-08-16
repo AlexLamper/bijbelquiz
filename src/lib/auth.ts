@@ -4,6 +4,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import { connectDB, User } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { normalizeUserSettings, type UserSettings } from '@/lib/user-settings';
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -99,6 +100,7 @@ export const authOptions: NextAuthOptions = {
             token.xp = dbUser.xp;
             token.role = dbUser.role;
             token.image = dbUser.image || user.image || token.image;
+            token.settings = normalizeUserSettings(dbUser.settings);
           }
         } else {
           token.id = user.id;
@@ -107,6 +109,7 @@ export const authOptions: NextAuthOptions = {
           token.xp = user.xp;
           token.role = user.role;
           token.image = user.image || token.image;
+          token.settings = normalizeUserSettings(user.settings);
         }
       }
 
@@ -126,6 +129,9 @@ export const authOptions: NextAuthOptions = {
             token.xp = dbUser.xp;
             token.role = dbUser.role;
             token.image = dbUser.image || token.image;
+            // Re-read on every refresh, so a preference saved on one device is
+            // live on the next session read anywhere else.
+            token.settings = normalizeUserSettings(dbUser.settings);
           }
         }
       }
@@ -140,6 +146,11 @@ export const authOptions: NextAuthOptions = {
           session.user.xp = token.xp ?? 0;
             session.user.role = token.role;
             session.user.image = typeof token.image === 'string' ? token.image : session.user.image;
+            // Normalized again rather than trusted: a token minted before this
+            // field existed carries no settings at all.
+            session.user.settings = normalizeUserSettings(
+              token.settings as Partial<UserSettings> | undefined
+            );
         }
         return session;
     },

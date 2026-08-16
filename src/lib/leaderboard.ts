@@ -1,5 +1,6 @@
 import { connectDB, User, UserProgress } from '@/database';
 import mongoose from 'mongoose';
+import { AvatarConfig, resolveAvatar } from '@/lib/avatar';
 
 export type LeaderboardPeriod = 'monthly' | 'all-time';
 
@@ -10,6 +11,12 @@ export interface LeaderboardEntry {
   streak: number;
   badges: string[];
   image?: string | null;
+  /**
+   * The player mascot. Every row has one - stored when the user picked it,
+   * derived from their id otherwise - so the list never falls back to a row of
+   * identical placeholder silhouettes.
+   */
+  avatar: AvatarConfig;
   levelTitle?: string;
   isPremium?: boolean;
   createdAt?: string;
@@ -44,7 +51,7 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
     const users = await User.find({ xp: { $gt: 0 } })
       .sort({ xp: -1, createdAt: 1, _id: 1 })
       .limit(limit)
-      .select('name email xp streak badges image levelTitle isPremium createdAt')
+      .select('name email xp streak badges image avatar levelTitle isPremium createdAt')
       .lean();
 
     return users.map((user) => ({
@@ -54,6 +61,7 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
       streak: user.streak || 0,
       badges: Array.isArray(user.badges) ? user.badges : [],
       image: user.image || null,
+      avatar: resolveAvatar(user.avatar, String(user._id)),
       levelTitle: user.levelTitle || 'Beginner',
       isPremium: Boolean(user.isPremium),
       createdAt: user.createdAt ? new Date(user.createdAt).toISOString() : new Date(0).toISOString(),
@@ -92,6 +100,7 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
         streak: { $ifNull: ['$user.streak', 0] },
         badges: { $ifNull: ['$user.badges', []] },
         image: { $ifNull: ['$user.image', null] },
+        avatar: { $ifNull: ['$user.avatar', null] },
         levelTitle: { $ifNull: ['$user.levelTitle', 'Beginner'] },
         isPremium: { $ifNull: ['$user.isPremium', false] },
         createdAt: '$user.createdAt',
@@ -106,6 +115,7 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
     streak: Number(row.streak) || 0,
     badges: Array.isArray(row.badges) ? row.badges : [],
     image: row.image || null,
+    avatar: resolveAvatar(row.avatar, String(row._id)),
     levelTitle: row.levelTitle || 'Beginner',
     isPremium: Boolean(row.isPremium),
     createdAt: row.createdAt ? new Date(row.createdAt).toISOString() : new Date(0).toISOString(),

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowRight, Play, Users } from 'lucide-react';
 
 import { trackEvent } from '@/components/GoogleAnalytics';
+import SeasonCard from '@/components/seasons/SeasonCard';
 import { QuizTile, type DashboardQuiz } from '@/components/editorial/QuizTile';
 import {
   ArrowLink,
@@ -170,6 +171,10 @@ export default function DashboardHomeClient({
             />
           </div>
         </section>
+
+        {/* ── Seasonal pack ────────────────────────────────────────────────
+            Renders nothing outside Advent, Lent and the September opening. */}
+        <SeasonCard />
 
         {/* ── Featured quizzes ─────────────────────────────────────────────── */}
         <section className="pt-11 lg:pt-14">

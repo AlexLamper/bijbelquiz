@@ -24,6 +24,13 @@ export type MultiplayerRoomStatus = 'lobby' | 'in_progress' | 'question_result' 
 export interface IRoomPlayer {
   id: string;
   name: string;
+  /** Mascot copied from the user document when this player joined. */
+  avatar?: {
+    character?: string;
+    color?: string;
+    background?: string;
+    accessory?: string;
+  };
   score: number;
   correctAnswers: number;
   isHost: boolean;
@@ -76,6 +83,12 @@ const RoomPlayerSchema = new Schema<IRoomPlayer>(
   {
     id: { type: String, required: true },
     name: { type: String, required: true },
+    avatar: {
+      character: { type: String },
+      color: { type: String },
+      background: { type: String },
+      accessory: { type: String },
+    },
     score: { type: Number, default: 0 },
     correctAnswers: { type: Number, default: 0 },
     isHost: { type: Boolean, default: false },

@@ -23,6 +23,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
 import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
+import { track } from '@/lib/analytics/client';
+import { useUserSettings } from '@/lib/user-settings-client';
+import type { QuestionFontSize } from '@/lib/user-settings';
 
 interface Answer {
   text: string;
@@ -87,6 +90,7 @@ function getQuestionTextSizeClass(textSize: 'normal' | 'large', questionText: st
 export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const { data: session } = useSession();
   const router = useRouter();
+  const { settings, isAuthenticated, saveSettings } = useUserSettings();
 
   const isPremium = !!session?.user?.isPremium;
   const isLoggedIn = !!session?.user;
@@ -102,9 +106,52 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isLeaveDialogOpen, setIsLeaveDialogOpen] = useState(false);
   const [pendingLeaveHref, setPendingLeaveHref] = useState<string | null>(null);
-  const [textSize, setTextSize] = useState<'normal' | 'large'>('normal');
+  // Seeded from the account preference and written back when changed here, so
+  // the in-quiz panel and the settings page are the same knob. Held in state
+  // rather than read straight off `settings` so the button responds instantly,
+  // before the session round-trip finishes.
+  const [textSize, setTextSize] = useState<QuestionFontSize>(settings.questionFontSize);
+  const [showBibleReferences, setShowBibleReferences] = useState(settings.showBibleReferences);
+  // Reading comfort that is genuinely per-sitting: not persisted on purpose.
   const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
   const [showExplanation, setShowExplanation] = useState(true);
+
+  // The session resolves after first paint, so the saved values arrive a beat
+  // late and have to be adopted then. Comparing against what was last seeded
+  // means only a genuine change in the account preference re-applies — a change
+  // made here is not immediately undone by the session catching up. Done during
+  // render rather than in an effect to avoid a second render pass.
+  // Tracked per field, so a change to one preference never resets the other.
+  const [seededFontSize, setSeededFontSize] = useState(settings.questionFontSize);
+  const [seededBibleReferences, setSeededBibleReferences] = useState(settings.showBibleReferences);
+
+  if (seededFontSize !== settings.questionFontSize) {
+    setSeededFontSize(settings.questionFontSize);
+    setTextSize(settings.questionFontSize);
+  }
+
+  if (seededBibleReferences !== settings.showBibleReferences) {
+    setSeededBibleReferences(settings.showBibleReferences);
+    setShowBibleReferences(settings.showBibleReferences);
+  }
+
+  const persistSetting = (patch: Parameters<typeof saveSettings>[0]) => {
+    if (!isAuthenticated) return;
+    saveSettings(patch).catch(() => {
+      // Already applied locally; a failed write only costs persistence, and an
+      // error toast mid-quiz is worse than silently not remembering.
+    });
+  };
+
+  const updateTextSize = (value: QuestionFontSize) => {
+    setTextSize(value);
+    persistSetting({ questionFontSize: value });
+  };
+
+  const updateShowBibleReferences = (value: boolean) => {
+    setShowBibleReferences(value);
+    persistSetting({ showBibleReferences: value });
+  };
 
   const currentQuestion = quiz.questions[currentIndex];
   const progressPercentage = (currentIndex / quiz.questions.length) * 100;
@@ -113,9 +160,31 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const difficultyLabel = getDifficultyLabel(quiz.difficulty);
   const categoryLabel = getCategoryLabel(quiz.categoryId);
   const questionTextSizeClass = getQuestionTextSizeClass(textSize, currentQuestion.text);
-  const visibleBibleReference = currentQuestion.bibleReference;
+  const visibleBibleReference = showBibleReferences ? currentQuestion.bibleReference : undefined;
   const maxPossibleXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
   const studyTopicLink = getStudyTopicLinkForQuizTitle(quiz.title || '');
+
+  const answeredWrong =
+    hasAnswered && !currentQuestion.answers[selectedAnswer!]?.isCorrect;
+  const explanationLocked =
+    !isPremium && hasAnswered && showExplanation && Boolean(currentQuestion.explanationPreview);
+
+  // Recorded once per question, when the locked explanation actually appears.
+  // Somebody who just got it wrong wants to know why more than at any other
+  // point in the quiz, so the funnel needs to see that separately.
+  useEffect(() => {
+    if (!explanationLocked) return;
+    track('paywall_shown', {
+      trigger: 'explanation_locked',
+      surface: 'quiz_explanation',
+      afterWrongAnswer: answeredWrong,
+      questionId: currentQuestion._id,
+    });
+    // `answeredWrong` is derived from the same answer that gates this effect,
+    // so it is deliberately not a dependency: it cannot change without the
+    // question changing too.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [explanationLocked, currentQuestion._id]);
 
   const openLeaveDialog = (href: string) => {
     setPendingLeaveHref(href);
@@ -336,7 +405,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   type="button"
                   className="h-9 rounded-md bg-ink px-3 text-ink-inverted hover:bg-ink-soft"
                 >
-                  <Link href="/premium">Upgrade naar Premium</Link>
+                  <Link href="/premium?reden=explanation_locked">Upgrade naar Premium</Link>
                 </Button>
               </div>
             </div>
@@ -380,7 +449,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                       Ontgrendel uitgebreide uitleg en meer voortgangsinzichten.
                     </p>
                     <Button asChild className="mt-3 h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
-                      <Link href="/premium">Bekijk Premium</Link>
+                      <Link href="/premium?reden=explanation_locked">Bekijk Premium</Link>
                     </Button>
                   </div>
                 )}
@@ -594,7 +663,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-rule pt-4">
                   <p className="text-xs text-ink-muted">Volledige uitleg zichtbaar met Premium</p>
                   <Link
-                    href="/premium"
+                    href="/premium?reden=explanation_locked"
                     data-skip-leave-guard
                     className="inline-flex h-9 items-center rounded-md border border-lapis/45 px-3 text-xs font-medium text-lapis transition-colors hover:bg-lapis-tint"
                   >
@@ -677,7 +746,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     type="button"
                     variant="outline"
                     className={`h-8 rounded-md px-2 text-xs ${textSize === 'normal' ? 'bg-paper-sunken text-ink' : 'bg-paper-raised   '}`}
-                    onClick={() => setTextSize('normal')}
+                    onClick={() => updateTextSize('normal')}
                   >
                     Normaal
                   </Button>
@@ -685,11 +754,23 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     type="button"
                     variant="outline"
                     className={`h-8 rounded-md px-2 text-xs ${textSize === 'large' ? 'bg-paper-sunken text-ink' : 'bg-paper-raised   '}`}
-                    onClick={() => setTextSize('large')}
+                    onClick={() => updateTextSize('large')}
                   >
                     Groot
                   </Button>
                 </div>
+              </div>
+
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-sm text-ink">Bijbelverwijzingen</span>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className={`h-8 rounded-md px-2 text-xs ${showBibleReferences ? 'bg-paper-sunken text-ink' : 'bg-paper-raised   '}`}
+                  onClick={() => updateShowBibleReferences(!showBibleReferences)}
+                >
+                  {showBibleReferences ? 'Aan' : 'Uit'}
+                </Button>
               </div>
 
               <div className="flex items-center justify-between gap-3">
@@ -722,7 +803,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     if (isPremium) {
                       setShowExplanation((value) => !value);
                     } else {
-                      router.push('/premium');
+                      router.push("/premium?reden=explanation_locked");
                     }
                   }}
                 >

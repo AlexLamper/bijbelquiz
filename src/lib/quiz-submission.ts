@@ -2,6 +2,8 @@ import { connectDB, UserProgress, User, Quiz } from '@/database';
 import { getLevelInfo } from '@/lib/gamification';
 import { calculateNextStreak } from '@/lib/streak';
 import { calculateAttemptXp, getHighestEarnedAttemptXp } from '@/lib/xp';
+import { recordServerEvent } from '@/lib/analytics/record';
+import type { AnalyticsPlatform } from '@/lib/analytics/events';
 
 /**
  * The one place a quiz attempt turns into XP, a streak, and badges.
@@ -34,6 +36,8 @@ export interface QuizSubmissionInput {
   score: number;
   totalQuestions: number;
   answers?: SubmittedAnswer[] | null;
+  /** Which client wrote this attempt. Recorded on the funnel event. */
+  platform?: AnalyticsPlatform;
 }
 
 export type QuizSubmissionResult =
@@ -65,7 +69,7 @@ export type QuizSubmissionResult =
 export async function submitQuizAttempt(
   input: QuizSubmissionInput
 ): Promise<QuizSubmissionResult> {
-  const { userId, quizId, score, totalQuestions, answers } = input;
+  const { userId, quizId, score, totalQuestions, answers, platform } = input;
 
   if (!quizId || typeof score !== 'number' || typeof totalQuestions !== 'number') {
     return { ok: false, reason: 'invalid', message: 'Invalid request data' };
@@ -85,7 +89,9 @@ export async function submitQuizAttempt(
   const [quiz, previousAttempts, user] = await Promise.all([
     Quiz.findById(quizId).select('_id rewardXp questions').lean(),
     UserProgress.find({ userId, quizId }).select('score totalQuestions').lean(),
-    User.findById(userId).select('_id xp streak bestStreak badges lastPlayedAt').lean(),
+    User.findById(userId)
+      .select('_id xp streak bestStreak badges lastPlayedAt isPremium')
+      .lean(),
   ]);
 
   if (!quiz) return { ok: false, reason: 'quiz_not_found' };
@@ -224,6 +230,33 @@ export async function submitQuizAttempt(
       badges,
     },
   });
+
+  // Fired here rather than from the clients: this is the only place that knows
+  // whether it was the player's first ever attempt, and it fires identically
+  // for the website and the app.
+  await recordServerEvent('quiz_completed', {
+    userId,
+    platform,
+    props: {
+      quizId: String(quizId),
+      score: normalizedScore,
+      totalQuestions: normalizedTotalQuestions,
+      xpEarned,
+      isFirst: totalQuizzes === 1,
+      isReplay: previousAttempts.length > 0,
+    },
+  });
+
+  // A streak that was worth something and reset to 1 is the loss-aversion
+  // signal the retention work is aimed at, so it is worth its own event.
+  const previousStreak = user.streak || 0;
+  if (previousStreak >= 2 && nextStreak === 1) {
+    await recordServerEvent('streak_broken', {
+      userId,
+      platform,
+      props: { streakLength: previousStreak, wasPremium: Boolean(user.isPremium) },
+    });
+  }
 
   return {
     ok: true,

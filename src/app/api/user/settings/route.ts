@@ -13,10 +13,7 @@ import {
 const settingsSchema = z
   .object({
     themePreference: z.enum(['light', 'dark', 'system']).optional(),
-    emailNotifications: z.boolean().optional(),
-    soundEffects: z.boolean().optional(),
     showBibleReferences: z.boolean().optional(),
-    dailyReminder: z.boolean().optional(),
     preferredDifficulty: z.enum(['all', 'easy', 'medium', 'hard']).optional(),
     questionFontSize: z.enum(['normal', 'large']).optional(),
   })
@@ -111,10 +108,7 @@ export async function PUT(req: NextRequest) {
       const settings = parsed.data.settings;
 
       if (settings.themePreference !== undefined) updateSet['settings.themePreference'] = settings.themePreference;
-      if (settings.emailNotifications !== undefined) updateSet['settings.emailNotifications'] = settings.emailNotifications;
-      if (settings.soundEffects !== undefined) updateSet['settings.soundEffects'] = settings.soundEffects;
       if (settings.showBibleReferences !== undefined) updateSet['settings.showBibleReferences'] = settings.showBibleReferences;
-      if (settings.dailyReminder !== undefined) updateSet['settings.dailyReminder'] = settings.dailyReminder;
       if (settings.preferredDifficulty !== undefined) updateSet['settings.preferredDifficulty'] = settings.preferredDifficulty;
       if (settings.questionFontSize !== undefined) updateSet['settings.questionFontSize'] = settings.questionFontSize;
     }

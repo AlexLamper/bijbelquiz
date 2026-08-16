@@ -58,7 +58,7 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
     { href: '/quizzen', label: 'Quizzen', icon: BookOpen },
     { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
     { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
-    // Members manage their membership under Account instead — nothing to sell here.
+    // Members manage their membership under Account instead - nothing to sell here.
     ...(isPremium ? [] : [{ href: '/premium', label: 'Premium', icon: Crown }]),
   ];
 

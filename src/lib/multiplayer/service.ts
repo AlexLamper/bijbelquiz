@@ -1,4 +1,5 @@
 import { randomInt, randomUUID } from 'node:crypto';
+import { type AvatarConfig, resolveAvatar } from '@/lib/avatar';
 import { MultiplayerError, validationError } from './errors';
 import type {
   PersistedRoom,
@@ -137,12 +138,12 @@ export class MultiplayerService {
       throw validationError('maxPlayers must be an integer between 2 and 20');
     }
 
-    const [quiz, playerName] = await Promise.all([
+    const [quiz, profile] = await Promise.all([
       this.provider.getQuizSnapshot(quizId),
-      this.provider.getUserDisplayName(input.userId),
+      this.provider.getUserProfile(input.userId),
     ]);
 
-    if (!playerName) {
+    if (!profile) {
       throw new MultiplayerError('UNAUTHORIZED', 'Unauthorized', 401);
     }
     if (!quiz) {
@@ -152,7 +153,8 @@ export class MultiplayerService {
     const now = this.config.now();
     const code = await this.allocateUniqueCode(quiz.questions, {
       userId: input.userId,
-      playerName,
+      playerName: profile.name,
+      playerAvatar: profile.avatar,
       quizId: quiz.id,
       quizTitle: quiz.title,
       maxPlayers: input.maxPlayers,
@@ -191,14 +193,15 @@ export class MultiplayerService {
         throw new MultiplayerError('ROOM_FULL', 'Room is full', 409);
       }
 
-      const playerName = await this.provider.getUserDisplayName(input.userId);
-      if (!playerName) {
+      const profile = await this.provider.getUserProfile(input.userId);
+      if (!profile) {
         throw new MultiplayerError('UNAUTHORIZED', 'Unauthorized', 401);
       }
 
       room.players.push({
         id: input.userId,
-        name: playerName,
+        name: profile.name,
+        avatar: profile.avatar,
         score: 0,
         correctAnswers: 0,
         isHost: false,
@@ -518,6 +521,7 @@ export class MultiplayerService {
     seed: {
       userId: string;
       playerName: string;
+      playerAvatar: AvatarConfig;
       quizId: string;
       quizTitle: string;
       maxPlayers: number;
@@ -541,6 +545,7 @@ export class MultiplayerService {
           {
             id: seed.userId,
             name: seed.playerName,
+            avatar: seed.playerAvatar,
             score: 0,
             correctAnswers: 0,
             isHost: true,
@@ -800,6 +805,7 @@ export class MultiplayerService {
       return {
         id: p.id,
         name: p.name,
+        avatar: resolveAvatar(p.avatar, p.id),
         score: p.score,
         correctAnswers: p.correctAnswers,
         isHost: p.isHost,

@@ -1,4 +1,5 @@
 import type { RoomResultEntry, RoomSnapshot } from '@/lib/multiplayer/types';
+import { INVITE_SOURCE_PARAM, INVITE_SOURCE_VALUE } from '@/lib/multiplayer/invite';
 import type { MultiplayerCapability, MultiplayerRuntimeConfig } from './contracts';
 import {
   parseApiError,
@@ -14,7 +15,7 @@ import {
 /**
  * Thin HTTP client for the multiplayer API.
  *
- * Every call targets the canonical `/api/multiplayer/*` routes — the same ones
+ * Every call targets the canonical `/api/multiplayer/*` routes - the same ones
  * the Flutter app should use. (`/api/mobile/multiplayer/*` still exists as an
  * alias for already-shipped mobile builds, but nothing here points at it.)
  *
@@ -154,8 +155,17 @@ export async function createRoom(input: CreateRoomInput): Promise<RoomSnapshot> 
   return parseRoomResponse(body).room;
 }
 
-export async function joinRoom(input: RoomCodeInput): Promise<RoomSnapshot> {
-  const body = await jsonFetch(roomPath(input.roomCode, '/join'), {
+export async function joinRoom(
+  input: RoomCodeInput & { viaInvite?: boolean },
+): Promise<RoomSnapshot> {
+  // Carried as a query parameter rather than a body field so the join endpoint
+  // keeps its "no body" shape across all three clients. The server only uses
+  // it to label the funnel event.
+  const suffix = input.viaInvite
+    ? `/join?${INVITE_SOURCE_PARAM}=${INVITE_SOURCE_VALUE}`
+    : '/join';
+
+  const body = await jsonFetch(roomPath(input.roomCode, suffix), {
     method: 'POST',
     headers: buildAuthHeaders(input),
     signal: input.signal,

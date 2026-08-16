@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bijbelquiz.app",
+      "sha256_cert_fingerprints": [
+        "B6:06:12:EA:40:68:38:BA:F7:DC:3F:54:C3:E5:F5:1F:60:7C:1D:8E:35:02:E8:68:1E:67:0A:B9:2C:B8:9E:8A",
+        "REPLACE_WITH_PLAY_APP_SIGNING_SHA256"
+      ]
+    }
+  }
+]
