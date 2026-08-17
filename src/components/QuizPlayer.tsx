@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import {
   ArrowLeft,
@@ -24,6 +24,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
 import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
 import { track } from '@/lib/analytics/client';
+import { premiumPaywallHref } from '@/lib/premium-benefits';
 import { useUserSettings } from '@/lib/user-settings-client';
 import type { QuestionFontSize } from '@/lib/user-settings';
 
@@ -90,7 +91,12 @@ function getQuestionTextSizeClass(textSize: 'normal' | 'large', questionText: st
 export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const { data: session } = useSession();
   const router = useRouter();
+  const pathname = usePathname();
   const { settings, isAuthenticated, saveSettings } = useUserSettings();
+
+  // Upgrading from inside a quiz returns to that same quiz, so a locked
+  // explanation is still on screen when the reader comes back.
+  const paywallHref = premiumPaywallHref('explanation_locked', pathname);
 
   const isPremium = !!session?.user?.isPremium;
   const isLoggedIn = !!session?.user;
@@ -405,7 +411,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   type="button"
                   className="h-9 rounded-md bg-ink px-3 text-ink-inverted hover:bg-ink-soft"
                 >
-                  <Link href="/premium?reden=explanation_locked">Upgrade naar Premium</Link>
+                  <Link href={paywallHref}>Upgrade naar Premium</Link>
                 </Button>
               </div>
             </div>
@@ -449,7 +455,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                       Ontgrendel uitgebreide uitleg en meer voortgangsinzichten.
                     </p>
                     <Button asChild className="mt-3 h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
-                      <Link href="/premium?reden=explanation_locked">Bekijk Premium</Link>
+                      <Link href={paywallHref}>Bekijk Premium</Link>
                     </Button>
                   </div>
                 )}
@@ -663,7 +669,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                 <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-rule pt-4">
                   <p className="text-xs text-ink-muted">Volledige uitleg zichtbaar met Premium</p>
                   <Link
-                    href="/premium?reden=explanation_locked"
+                    href={paywallHref}
                     data-skip-leave-guard
                     className="inline-flex h-9 items-center rounded-md border border-lapis/45 px-3 text-xs font-medium text-lapis transition-colors hover:bg-lapis-tint"
                   >
@@ -803,7 +809,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                     if (isPremium) {
                       setShowExplanation((value) => !value);
                     } else {
-                      router.push("/premium?reden=explanation_locked");
+                      router.push(paywallHref);
                     }
                   }}
                 >

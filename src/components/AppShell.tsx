@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 
 import Navbar from '@/components/Navbar';
 import AppSidebar from '@/components/AppSidebar';
+import ScrollToTop from '@/components/ScrollToTop';
 import { cn } from '@/lib/utils';
 
 interface AppShellProps {
@@ -57,6 +58,7 @@ export default function AppShell({ children }: AppShellProps) {
         showSidebar && (isSidebarCollapsed ? 'lg:pl-16' : 'lg:pl-56')
       )}
     >
+      <ScrollToTop />
       {showSidebar && <AppSidebar collapsed={isSidebarCollapsed} />}
       {!chromeless && (
         <Navbar

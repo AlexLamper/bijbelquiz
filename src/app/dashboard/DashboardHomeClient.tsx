@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Play, Users } from 'lucide-react';
+import { ArrowRight, Play, Sparkles, Users } from 'lucide-react';
 
 import { trackEvent } from '@/components/GoogleAnalytics';
 import SeasonCard from '@/components/seasons/SeasonCard';
@@ -25,8 +25,19 @@ interface ProgressDoc {
   completedAt: string;
 }
 
+interface RecommendationEntry {
+  quiz: DashboardQuiz;
+  reasons: string[];
+}
+
 interface DashboardHomeClientProps {
   quizzes: DashboardQuiz[];
+  /** Ranked from the reader's own study preferences; empty without a profile. */
+  recommendations: RecommendationEntry[];
+  /** Names the answers the ranking used, so the list is accountable. */
+  recommendationLead: string | null;
+  hasRecommendationProfile: boolean;
+  isLoggedIn: boolean;
   recentProgress: ProgressDoc[];
   streak: number;
   xp: number;
@@ -88,6 +99,10 @@ const shortDate = new Intl.DateTimeFormat('nl-NL', {
 
 export default function DashboardHomeClient({
   quizzes,
+  recommendations,
+  recommendationLead,
+  hasRecommendationProfile,
+  isLoggedIn,
   recentProgress,
   streak,
   xp,
@@ -176,11 +191,63 @@ export default function DashboardHomeClient({
             Renders nothing outside Advent, Lent and the September opening. */}
         <SeasonCard />
 
+        {/* ── Personal recommendations ─────────────────────────────────────
+            Driven by the study preferences on the settings page. When those are
+            unanswered the section asks for them rather than showing a list that
+            would be identical for every reader. */}
+        {isLoggedIn && (
+          <section className="pt-11 lg:pt-14">
+            <SectionHead
+              eyebrow="Op jouw maat"
+              title="Speciaal voor jou aangeraden"
+              lead={
+                recommendationLead ||
+                'Vertel ons je leesritme, niveau en interesses - dan zetten we hier de quizzen neer die daarbij passen.'
+              }
+              action={<ArrowLink href="/instellingen">Voorkeuren aanpassen</ArrowLink>}
+            />
+
+            {hasRecommendationProfile && recommendations.length > 0 ? (
+              <div className="mt-7 grid gap-x-8 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">
+                {recommendations.map(({ quiz, reasons }) => (
+                  <div key={quiz._id} className="flex flex-col">
+                    <QuizTile quiz={quiz} isPremiumUser={isPremium} />
+                    {reasons.length > 0 && (
+                      <ul className="mt-3 flex flex-wrap gap-1.5">
+                        {reasons.map((reason) => (
+                          <li
+                            key={reason}
+                            className="inline-flex items-center gap-1.5 rounded-full border border-lapis/35 bg-lapis-tint px-2.5 py-1 text-xs font-medium text-lapis"
+                          >
+                            <Sparkles className="h-3 w-3 shrink-0" aria-hidden />
+                            {reason}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="mt-7 rounded-lg border border-dashed border-rule-strong px-6 py-10 text-center">
+                <p className="font-display text-lg text-ink">Nog geen voorkeuren bekend</p>
+                <p className="mx-auto mt-1.5 max-w-md text-sm leading-relaxed text-ink-muted">
+                  Vul in de instellingen je leesritme, je kennisniveau en je interessegebieden in.
+                  Daarna staan hier quizzen die daarop aansluiten.
+                </p>
+                <div className="mt-6 flex justify-center">
+                  <QuietButton href="/instellingen">Stel je voorkeuren in</QuietButton>
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
         {/* ── Featured quizzes ─────────────────────────────────────────────── */}
         <section className="pt-11 lg:pt-14">
           <SectionHead
-            eyebrow="Voor jou"
-            title="Aanbevolen quizzen"
+            eyebrow="Bibliotheek"
+            title="Uitgelichte quizzen"
             action={<ArrowLink href="/quizzen">Alle quizzen</ArrowLink>}
           />
 

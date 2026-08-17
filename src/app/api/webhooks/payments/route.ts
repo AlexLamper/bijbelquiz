@@ -3,8 +3,9 @@ import Stripe from 'stripe';
 import stripe from '@/lib/stripe';
 import { connectDB, Payment, User } from '@/database';
 import { updateUserPremiumFromStripe } from '@/lib/premium-state';
-import { recordPurchase } from '@/lib/analytics/record';
+import { recordPurchase, recordServerEvent } from '@/lib/analytics/record';
 import { endGroupLicense, grantGroupLicense } from '@/lib/group-license';
+import { readStripePlan } from '@/lib/stripe-plans';
 
 /**
  * When the paid period ends, plus a two day grace so a renewal that is a few
@@ -24,20 +25,6 @@ function subscriptionPeriodEnd(subscription: Stripe.Subscription): Date {
 }
 
 export const dynamic = 'force-dynamic';
-
-/**
- * Plan label carried in the checkout metadata.
- *
- * Unknown values fall back to `lifetime` because that is the one-off payment
- * mode: treating an unrecognised plan as a subscription would leave an account
- * waiting for a renewal that never arrives.
- */
-function readStripePlan(value: unknown): 'monthly' | 'yearly' | 'group' | 'lifetime' {
-  if (value === 'monthly') return 'monthly';
-  if (value === 'yearly') return 'yearly';
-  if (value === 'group') return 'group';
-  return 'lifetime';
-}
 
 async function findUserByReference(userId?: string | null, userEmail?: string | null) {
   let updatedUser = null;
@@ -173,9 +160,20 @@ async function handleStripeWebhook(req: NextRequest) {
       updateFields.stripeCustomerId = customerId;
     }
 
+    // The real status matters: a checkout that opened a free trial is
+    // `trialing`, and writing `active` over it would make the funnel count a
+    // trial as a sale and hide every trial that never converted.
+    let subscriptionStatus: string | null = null;
     if (subscriptionId) {
+      try {
+        const subscription = await stripe.subscriptions.retrieve(subscriptionId);
+        subscriptionStatus = subscription.status;
+      } catch (error) {
+        console.warn('[Stripe Webhook] Could not read subscription status', error);
+      }
+
       updateFields.stripeSubscriptionId = subscriptionId;
-      updateFields.stripeSubscriptionStatus = 'active';
+      updateFields.stripeSubscriptionStatus = subscriptionStatus || 'active';
     }
 
     await updateUserPremiumFromStripe(user._id.toString(), true, updateFields);
@@ -205,6 +203,7 @@ async function handleStripeWebhook(req: NextRequest) {
       plan: planType,
       platform: 'web',
       provider: 'stripe',
+      isTrial: subscriptionStatus === 'trialing',
       amountCents: session.amount_total ?? null,
       currency: session.currency ?? 'eur',
     });
@@ -213,6 +212,11 @@ async function handleStripeWebhook(req: NextRequest) {
   }
 
   const subscription = event.data.object as Stripe.Subscription;
+  // Only Stripe knows what the status was a moment ago, and it only says so on
+  // the update event. Without this, a trial that turns into a paid period is
+  // indistinguishable from any other status change.
+  const previousStatus = (event.data as { previous_attributes?: { status?: string } })
+    .previous_attributes?.status;
   const customerId = typeof subscription.customer === 'string' ? subscription.customer : null;
   const appUserId = subscription.metadata?.userId;
   const eventStatus = subscription.status;
@@ -259,6 +263,17 @@ async function handleStripeWebhook(req: NextRequest) {
     stripeSubscriptionStatus: eventStatus,
     hasLifetimePremium: lifetimeAccess,
   });
+
+  // The moment a free trial becomes revenue. Reported separately from the
+  // original `trial_started` so trial-to-paid can be measured rather than
+  // guessed at from subscription counts.
+  if (previousStatus === 'trialing' && eventStatus === 'active') {
+    await recordServerEvent('trial_converted', {
+      userId: user._id.toString(),
+      platform: 'web',
+      props: { plan: subscriptionPlan, provider: 'stripe' },
+    });
+  }
 
   await Payment.updateOne(
     {

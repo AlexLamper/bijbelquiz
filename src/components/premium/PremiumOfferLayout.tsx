@@ -1,34 +1,121 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
-import { Check, ChevronRight, Crown, Infinity, Sparkles, Zap } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { ArrowRight, Check, Minus, X } from 'lucide-react';
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Eyebrow, SectionHead } from '@/components/editorial';
 import { trackEvent } from '@/components/GoogleAnalytics';
 import { track } from '@/lib/analytics/client';
 import type { PaywallTrigger } from '@/lib/analytics/events';
+import { GROUP_LICENSE_SEATS } from '@/lib/group-license-constants';
 import {
-  PREMIUM_TRIGGER_BULLETS,
-  formatPricePerWeek,
+  MULTIPLAYER_FREE_MAX_PLAYERS,
+  MULTIPLAYER_FREE_ROOM_QUOTA,
+  MULTIPLAYER_PREMIUM_MAX_PLAYERS,
+  formatTrialLabel,
+  lifetimePricePerWeek,
+  LIFETIME_HORIZON_YEARS,
   monthlyEquivalentOfYearly,
+  formatPricePerWeek,
+  yearlyPricePerWeek,
   yearlySavingsPercent,
 } from '@/lib/premium-benefits';
 import { cn } from '@/lib/utils';
+
+type PlanId = 'yearly' | 'monthly' | 'lifetime';
 
 interface PremiumOfferLayoutProps {
   isPremium: boolean;
   isLoggedIn: boolean;
   monthlyPriceLabel: string;
   yearlyPriceLabel: string;
-  /** False until a Stripe yearly price exists; the card is hidden until then. */
+  /** False until a Stripe yearly price exists; the row is hidden until then. */
   yearlyAvailable: boolean;
   lifetimePriceLabel: string;
+  groupPriceLabel: string;
+  /** Free trial length in days; 0 means no trial is configured. */
+  trialDays: number;
   /** Which surface sent the user here. Recorded on the funnel event. */
   trigger: PaywallTrigger;
+  /** Where to return after checkout, so a host lands back in their lobby. */
+  returnPath: string;
+  /** True when the reader just came back from an abandoned Stripe checkout. */
+  checkoutCancelled: boolean;
 }
+
+/** Headline that names what the reader was just stopped from doing. */
+const TRIGGER_HEADLINES: Record<PaywallTrigger, string> = {
+  host_quota_exhausted: 'Speel onbeperkt samen verder',
+  host_quota_warning: 'Speel onbeperkt samen verder',
+  host_player_cap: 'Speel met je hele groep',
+  explanation_locked: 'Lees bij elke vraag waarom',
+  premium_quiz_locked: 'Ontgrendel alle quizzen',
+  direct: 'Speel onbeperkt samen - en verdiep je kennis bij elke vraag',
+};
+
+const TRIGGER_LEADS: Record<PaywallTrigger, string> = {
+  host_quota_exhausted:
+    'Je gratis spellen zijn op. Met Premium host je zoveel spellen als je wilt, met tot 20 spelers tegelijk. Meedoen met andermans spel blijft altijd gratis.',
+  host_quota_warning:
+    'Je hebt bijna geen gratis spellen meer. Met Premium host je zoveel spellen als je wilt, met tot 20 spelers tegelijk.',
+  host_player_cap:
+    'Gratis spelen jullie met vier. Met Premium passen er 20 spelers in een kamer, genoeg voor een hele jeugdgroep of klas.',
+  explanation_locked:
+    'Bij elke vraag hoort een uitleg en een bijbelverwijzing. Met Premium lees je ze allemaal, ook nadat het spel is afgelopen.',
+  premium_quiz_locked:
+    'Deze quiz hoort bij de premium collectie. Met Premium speel je alle quizzen, nu en in de toekomst.',
+  direct:
+    'Met Premium host je multiplayer-rooms tot 20 spelers, krijg je uitleg en bijbelverwijzingen bij elke vraag, en volg je je voortgang per boek.',
+};
+
+/** The inverted panel's promise list. Multiplayer first: strongest paying intent. */
+const HERO_BENEFITS = [
+  `Onbeperkt rooms hosten en tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers samen spelen`,
+  'Uitleg en bijbelverwijzing bij elke vraag, ook na de game',
+  'Voortgangsinzichten per boek, streakbescherming en alle premium quizzen',
+  'Toegang tot nieuwe seizoenspakketten en thema-quizzen',
+];
+
+/** Free versus Premium, in the terms the product actually enforces. */
+const COMPARISON: { feature: string; free: string | false; premium: string }[] = [
+  {
+    feature: 'Quizzen spelen',
+    free: 'Alle gratis quizzen',
+    premium: 'Alle quizzen, ook de premium collectie',
+  },
+  {
+    feature: 'Zelf een spel hosten',
+    free: `${MULTIPLAYER_FREE_ROOM_QUOTA} spellen, daarna 1 per maand`,
+    premium: 'Onbeperkt',
+  },
+  {
+    feature: 'Spelers per kamer',
+    free: `${MULTIPLAYER_FREE_MAX_PLAYERS} spelers`,
+    premium: `${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers`,
+  },
+  {
+    feature: 'Meedoen met andermans spel',
+    free: 'Onbeperkt',
+    premium: 'Onbeperkt',
+  },
+  {
+    feature: 'Uitleg en bijbelverwijzing',
+    free: false,
+    premium: 'Bij elke vraag, ook na afloop',
+  },
+  {
+    feature: 'Voortgang per bijbelboek',
+    free: false,
+    premium: 'Volledig inzicht',
+  },
+  {
+    feature: 'Seizoenspakketten',
+    free: false,
+    premium: 'Advent, veertigdagentijd en meer',
+  },
+];
 
 const FAQ_ITEMS = [
   {
@@ -41,7 +128,7 @@ const FAQ_ITEMS = [
     value: 'item-2',
     question: 'Wat is het verschil tussen jaarlijks en maandelijks?',
     answer:
-      'Inhoudelijk niets: je krijgt exact dezelfde functies. Bij het jaarplan betaal je een keer per jaar en is de prijs per maand lager. Beide zijn op elk moment opzegbaar.',
+      'Inhoudelijk niets: je krijgt exact dezelfde functies. Bij het jaarplan betaal je een keer per jaar en is de prijs per week lager. Beide zijn op elk moment opzegbaar.',
   },
   {
     value: 'item-3',
@@ -53,7 +140,7 @@ const FAQ_ITEMS = [
     value: 'item-4',
     question: 'Hoe zeg ik op?',
     answer:
-      'Via je profielpagina open je het abonnementsportaal van Stripe. Daar zeg je met een klik op. Je houdt toegang tot het einde van de periode die je al betaald hebt.',
+      'Via je profielpagina of deze pagina open je het abonnementsportaal van Stripe. Daar zeg je met een klik op. Je houdt toegang tot het einde van de periode die je al betaald hebt.',
   },
   {
     value: 'item-5',
@@ -63,15 +150,15 @@ const FAQ_ITEMS = [
   },
   {
     value: 'item-6',
-    question: 'Welke betaalmethoden zijn beschikbaar?',
+    question: 'Ik heb Premium in de app gekocht. Werkt dat hier ook?',
     answer:
-      'De checkout verloopt via Stripe. Beschikbare methoden hangen af van je land en browser.',
+      'Ja. Web en app gebruiken hetzelfde account, dus een aankoop in de App Store of Play Store ontgrendelt Premium ook op de website. Log in met hetzelfde account.',
   },
   {
     value: 'item-7',
-    question: 'Wanneer wordt Premium geactiveerd?',
+    question: 'Welke betaalmethoden zijn beschikbaar?',
     answer:
-      'In de meeste gevallen direct na een succesvolle betaling. Daarna kun je meteen alle premium functies gebruiken.',
+      'De checkout verloopt via Stripe, met onder andere iDEAL, creditcard en Apple Pay. Beschikbare methoden hangen af van je land en browser.',
   },
   {
     value: 'item-8',
@@ -87,33 +174,6 @@ const FAQ_ITEMS = [
   },
 ];
 
-type PlanType = 'monthly' | 'yearly' | 'lifetime';
-
-/** Headline that names what the user was just stopped from doing. */
-const TRIGGER_HEADLINES: Record<PaywallTrigger, string> = {
-  host_quota_exhausted: 'Speel onbeperkt samen verder',
-  host_quota_warning: 'Speel onbeperkt samen verder',
-  host_player_cap: 'Speel met je hele groep',
-  explanation_locked: 'Lees bij elke vraag waarom',
-  premium_quiz_locked: 'Ontgrendel alle quizzen',
-  direct: 'Kies jouw Premium plan',
-};
-
-const TRIGGER_LEADS: Record<PaywallTrigger, string> = {
-  host_quota_exhausted:
-    'Je gratis spellen zijn op. Met Premium host je zoveel spellen als je wilt, met tot 20 spelers tegelijk. Meedoen met andermans spel blijft altijd gratis.',
-  host_quota_warning:
-    'Je hebt bijna geen gratis spellen meer. Met Premium host je zoveel spellen als je wilt, met tot 20 spelers tegelijk.',
-  host_player_cap:
-    'Gratis spelen jullie met vier. Met Premium passen er 20 spelers in een kamer, genoeg voor een hele jeugdgroep of klas.',
-  explanation_locked:
-    'Bij elke vraag hoort een uitleg en een bijbelverwijzing. Met Premium lees je ze allemaal, ook nadat het spel is afgelopen.',
-  premium_quiz_locked:
-    'Deze quiz hoort bij de premium collectie. Met Premium spelen je alle quizzen, nu en in de toekomst.',
-  direct:
-    'Een prijs. Alles erin. Kies of je maandelijks bijdraagt, een jaar vooruit betaalt, of eenmalig voor blijvende toegang.',
-};
-
 export default function PremiumOfferLayout({
   isPremium,
   isLoggedIn,
@@ -121,11 +181,34 @@ export default function PremiumOfferLayout({
   yearlyPriceLabel,
   yearlyAvailable,
   lifetimePriceLabel,
+  groupPriceLabel,
+  trialDays,
   trigger,
+  returnPath,
+  checkoutCancelled,
 }: PremiumOfferLayoutProps) {
-  const perWeekLabel = formatPricePerWeek(monthlyPriceLabel);
-  const perMonthOfYearly = monthlyEquivalentOfYearly(yearlyPriceLabel);
+  // Year leads: it is the rung that catches the reader who is convinced but not
+  // ready to commit for life. Monthly leads only when there is no year price.
+  const [selectedPlan, setSelectedPlan] = useState<PlanId>(yearlyAvailable ? 'yearly' : 'monthly');
+
+  const monthlyPerWeek = formatPricePerWeek(monthlyPriceLabel);
+  const yearlyPerWeek = yearlyPricePerWeek(yearlyPriceLabel);
+  const lifetimePerWeek = lifetimePricePerWeek(lifetimePriceLabel);
+  const yearlyPerMonth = monthlyEquivalentOfYearly(yearlyPriceLabel);
   const savings = yearlySavingsPercent(monthlyPriceLabel, yearlyPriceLabel);
+
+  // The masthead quotes the cheapest honest number on the page, and says which
+  // plan produces it in the same breath.
+  const leadPriceLine =
+    yearlyAvailable && yearlyPerWeek
+      ? { amount: yearlyPerWeek, suffix: `per week met het jaarplan - ${yearlyPriceLabel} per jaar` }
+      : monthlyPerWeek
+        ? { amount: monthlyPerWeek, suffix: `per week - ${monthlyPriceLabel} per maand` }
+        : null;
+
+  const isSubscription = selectedPlan !== 'lifetime';
+  const hasTrial = trialDays > 0 && isSubscription;
+  const trialLabel = formatTrialLabel(trialDays);
 
   // A dismissal is "left without starting checkout". Tracked with a ref so the
   // cleanup below reads the value at unmount rather than at first render.
@@ -147,267 +230,531 @@ export default function PremiumOfferLayout({
     };
   }, [isPremium, trigger]);
 
-  const renderAction = (planType: PlanType, label: string, variant: 'primary' | 'default' = 'default') => {
-    const baseClass = cn(
-      'h-12 w-full text-base font-semibold',
-      variant === 'primary'
-        ? 'bg-ink text-ink-inverted hover:bg-ink-soft  '
-        : ' dark:text-ink-inverted '
-    );
+  /**
+   * The per-week figure leads on every row and the billed amount follows it.
+   *
+   * Three plans that bill on three different rhythms cannot be compared at a
+   * glance any other way, and the week is the unit a reader already prices
+   * things in. The real charge is never hidden - it sits directly underneath, in
+   * the period it is actually taken.
+   */
+  const planRows: {
+    id: PlanId;
+    title: string;
+    subtitle: string;
+    price: string;
+    billing: string;
+    perWeek: string | null;
+    perWeekNote: string;
+    badge?: { label: string; tone: 'loud' | 'quiet' };
+    available: boolean;
+  }[] = [
+    {
+      id: 'yearly',
+      title: 'Jaarlijks',
+      subtitle: yearlyPerMonth
+        ? `${yearlyPriceLabel} per jaar - dat is ${yearlyPerMonth} per maand`
+        : `${yearlyPriceLabel} per jaar`,
+      price: yearlyPriceLabel,
+      billing: 'per jaar',
+      perWeek: yearlyPerWeek,
+      perWeekNote: 'per week',
+      badge: savings
+        ? { label: `Bespaar ${savings}%`, tone: 'loud' }
+        : { label: 'Meest gekozen', tone: 'loud' },
+      available: yearlyAvailable,
+    },
+    {
+      id: 'monthly',
+      title: 'Maandelijks',
+      subtitle: `${monthlyPriceLabel} per maand - elk moment opzegbaar`,
+      price: monthlyPriceLabel,
+      billing: 'per maand',
+      perWeek: monthlyPerWeek,
+      perWeekNote: 'per week',
+      available: true,
+    },
+    {
+      id: 'lifetime',
+      title: 'Levenslang',
+      subtitle: `${lifetimePriceLabel} eenmalig - daarna nooit meer iets`,
+      price: lifetimePriceLabel,
+      billing: 'eenmalig',
+      perWeek: lifetimePerWeek,
+      perWeekNote: `per week over ${LIFETIME_HORIZON_YEARS} jaar`,
+      badge: { label: 'Geen abonnement', tone: 'quiet' },
+      available: true,
+    },
+  ];
 
-    if (isPremium) {
-      return (
-        <Button asChild size="lg" className={baseClass}>
-          <Link href="/quizzen">Je hebt Premium</Link>
-        </Button>
-      );
-    }
+  const selectedRow = planRows.find((row) => row.id === selectedPlan) ?? planRows[1];
 
-    if (isLoggedIn) {
-      return (
-        <form
-          action="/api/stripe/checkout"
-          method="POST"
-          className="w-full"
-          onSubmit={() => {
-            startedCheckout.current = true;
-            trackEvent('premium_checkout_started', {
-              placement: 'premium_page',
-              plan: planType,
-            });
-          }}
-        >
-          <input type="hidden" name="plan" value={planType} />
-          <Button type="submit" size="lg" className={cn(baseClass, 'gap-2')}>
-            {label}
-            <ChevronRight className="h-4 w-4" />
-          </Button>
-        </form>
-      );
-    }
+  const ctaLabel = hasTrial
+    ? `Start ${trialLabel}`
+    : selectedPlan === 'lifetime'
+      ? 'Koop levenslang'
+      : `Ga verder met ${selectedRow.title}`;
 
-    return (
-      <Button
-        asChild
-        size="lg"
-        className={baseClass}
-        onClick={() => {
-          startedCheckout.current = true;
-          trackEvent('premium_login_required', {
-            placement: 'premium_page',
-            plan: planType,
-          });
-        }}
-      >
-        <Link href="/api/auth/signin?callbackUrl=/premium">Inloggen om te kopen</Link>
-      </Button>
-    );
-  };
+  const billingNote = isSubscription
+    ? 'Abonnementen verlengen automatisch en zijn op elk moment opzegbaar via het Stripe-portaal. Je houdt toegang tot het einde van de periode die je al betaald hebt.'
+    : 'Levenslang is een eenmalige betaling. Er wordt daarna nooit meer iets afgeschreven.';
+
+  const trialNote = hasTrial
+    ? `De eerste ${trialLabel.replace(' gratis', '')} zijn gratis. Daarna ${selectedRow.price} ${selectedRow.billing}, tenzij je voor het einde van de proefperiode opzegt.`
+    : null;
 
   return (
-    <div className="mx-auto max-w-6xl">
-      {/* Header - names what the user was stopped from doing, not the product */}
-      <header className="text-center">
-        <div className="mb-4 inline-flex items-center gap-2 rounded-md bg-lapis/10 px-4 py-1.5 text-sm font-semibold text-ink">
-          <Crown className="h-4 w-4" />
-          BijbelQuiz Premium
-        </div>
-        <h1 className="font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">
-          {TRIGGER_HEADLINES[trigger]}
-        </h1>
-        <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          {TRIGGER_LEADS[trigger]}
-        </p>
-      </header>
+    <div className="pb-4">
+      {/* ── Masthead: the promise, before any price ───────────────────────
+          Paper rather than an inverted panel. The weight comes from the display
+          serif and the hairlines, which is how every other page in the product
+          opens - a black block here read as an advert bolted onto the site. */}
+      <section className="border-b border-rule pb-9">
+        <Eyebrow>Premium</Eyebrow>
 
-      {/* Pricing ladder. Year sits in the middle and carries the emphasis: it
-          is the rung that catches the person who is convinced but not ready to
-          commit for life. */}
-      <div className={cn('mt-10 grid gap-5', yearlyAvailable ? 'lg:grid-cols-3' : 'lg:grid-cols-2')}>
+        <div className="mt-6 grid gap-x-14 gap-y-9 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:items-start">
+          <div>
+            <h1 className="font-display text-[30px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[42px]">
+              {TRIGGER_HEADLINES[trigger]}
+            </h1>
 
-        {/* Monthly */}
-        <div className="flex flex-col rounded-lg border border-rule bg-paper-raised">
-          <div className="flex flex-col gap-4 p-6 pb-5">
-            <div className="flex items-start justify-between gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-lapis/10">
-                <Zap className="h-5 w-5 text-ink-soft" />
-              </div>
-            </div>
-
-            <div>
-              <h2 className="font-display text-lg font-normal text-ink">Per maand</h2>
-              <p className="mt-0.5 text-sm text-muted-foreground">Flexibel, elk moment opzegbaar</p>
-            </div>
-
-            <div className="flex items-end gap-1.5">
-              <span className="text-4xl font-semibold tracking-tight text-foreground">{monthlyPriceLabel}</span>
-              <span className="pb-1 text-muted-foreground">/maand</span>
-            </div>
-
-            {perWeekLabel && (
-              <p className="text-sm text-muted-foreground">
-                Ongeveer <span className="font-medium text-foreground">{perWeekLabel} per week</span>
-              </p>
-            )}
-          </div>
-
-          <div className="border-t border-rule px-6 py-5">
-            <ul className="space-y-3">
-              {[...PREMIUM_TRIGGER_BULLETS, 'Op elk moment opzegbaar'].map((feature) => (
-                <li key={feature} className="flex items-start gap-2.5 text-sm text-foreground">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="mt-auto p-6 pt-4">
-            {renderAction('monthly', 'Start maandelijks', 'default')}
-            <p className="mt-2.5 text-center text-xs text-muted-foreground">
-              Periodieke afschrijving. Eenvoudig opzegbaar.
+            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-ink-muted sm:text-base">
+              {TRIGGER_LEADS[trigger]}
             </p>
-          </div>
-        </div>
 
-        {/* Yearly - the default */}
-        {yearlyAvailable && (
-        <div className="relative flex flex-col rounded-lg border-2 border-lapis bg-paper-raised lg:-mt-3 lg:mb-[-0.75rem]">
-          <div className="flex flex-col gap-4 p-6 pb-5">
-            <div className="flex items-start justify-between gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-lapis/15">
-                <Sparkles className="h-5 w-5 text-ink-soft" />
-              </div>
-              <Badge className="bg-ink text-ink-inverted hover:bg-ink-soft">
-                {savings ? `Bespaar ${savings}%` : 'Beste keuze'}
-              </Badge>
-            </div>
-
-            <div>
-              <h2 className="font-display text-lg font-normal text-ink">Per jaar</h2>
-              <p className="mt-0.5 text-sm text-muted-foreground">Een keer per jaar, laagste maandprijs</p>
-            </div>
-
-            <div className="flex items-end gap-1.5">
-              <span className="text-4xl font-semibold tracking-tight text-foreground">{yearlyPriceLabel}</span>
-              <span className="pb-1 text-muted-foreground">/jaar</span>
-            </div>
-
-            {perMonthOfYearly && (
-              <p className="text-sm text-muted-foreground">
-                Dat is{' '}
-                {/* Built as one string so the sentence stays a single text
-                    node: React otherwise splits adjacent expressions, which
-                    breaks copy-paste and screen-reader phrasing. */}
-                <span className="font-medium text-foreground">
-                  {`${perMonthOfYearly} per maand${savings ? `, ${savings}% onder de maandprijs` : ''}`}
+            {leadPriceLine && (
+              <p className="mt-6 inline-flex flex-wrap items-baseline gap-x-2 border-t border-rule pt-5 text-sm text-ink-soft">
+                <span className="font-display text-2xl font-normal tabular-nums text-ink">
+                  {leadPriceLine.amount}
                 </span>
+                <span>{leadPriceLine.suffix}</span>
               </p>
             )}
           </div>
 
-          <div className="border-t border-lapis/35 px-6 py-5">
-            <ul className="space-y-3">
-              {[...PREMIUM_TRIGGER_BULLETS, 'Een keer per jaar betalen, elk moment opzegbaar'].map((feature) => (
-                <li key={feature} className="flex items-start gap-2.5 text-sm text-foreground">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="mt-auto p-6 pt-4">
-            {renderAction('yearly', 'Start jaarabonnement', 'primary')}
-            <p className="mt-2.5 text-center text-xs text-muted-foreground">
-              Jaarlijkse afschrijving. Eenvoudig opzegbaar.
-            </p>
-          </div>
+          {/* The promise as a numbered register: the same four lines the app
+              paywall makes, set as an index rather than a bullet list. */}
+          <ol className="divide-y divide-rule overflow-hidden rounded-lg border border-rule bg-paper-raised">
+            {HERO_BENEFITS.map((benefit, index) => (
+              <li key={benefit} className="flex items-start gap-4 px-5 py-4">
+                <span className="mt-0.5 font-display text-sm tabular-nums text-lapis">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span className="text-sm leading-relaxed text-ink">{benefit}</span>
+              </li>
+            ))}
+          </ol>
         </div>
+      </section>
+
+      {checkoutCancelled && (
+        <p className="mt-8 rounded-lg border border-rule bg-paper-sunken px-5 py-4 text-sm text-ink-soft">
+          De betaling is afgebroken - er is niets afgeschreven. Je plan staat hieronder nog klaar.
+        </p>
+      )}
+
+      {/* ── The plan ladder ──────────────────────────────────────────────── */}
+      <section className="mt-12 lg:mt-16">
+        <SectionHead
+          eyebrow="Kies je plan"
+          title="Een prijs. Alles erin."
+          lead="Alle plannen geven volledige toegang tot elke premium functie. Het enige verschil is hoe vaak je betaalt."
+        />
+
+        {/* The saving is the single most persuasive number here, so it is stated
+            once at full volume rather than only as a chip on one row. */}
+        {savings !== null && yearlyAvailable && (
+          <p className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-lg bg-vermilion px-5 py-3.5 text-sm font-medium text-ink-inverted">
+            <span className="rounded-sm bg-ink-inverted/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em]">
+              Bespaar {savings}%
+            </span>
+            Het jaarplan kost {yearlyPriceLabel} in plaats van {monthlyPriceLabel} per maand
+            {yearlyPerWeek ? ` - ${yearlyPerWeek} per week` : ''}.
+          </p>
         )}
 
-        {/* Lifetime */}
-        <div className="flex flex-col rounded-lg border border-rule bg-paper-raised">
-          <div className="flex flex-col gap-4 p-6 pb-5">
-            <div className="flex items-start justify-between gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-lapis/10">
-                <Infinity className="h-5 w-5 text-ink-soft" />
+        <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-12">
+          <div>
+            <div className="divide-y divide-rule overflow-hidden rounded-lg border border-rule">
+              {planRows
+                .filter((row) => row.available)
+                .map((row) => {
+                  const selected = row.id === selectedPlan;
+
+                  return (
+                    <button
+                      key={row.id}
+                      type="button"
+                      aria-pressed={selected}
+                      onClick={() => setSelectedPlan(row.id)}
+                      className={cn(
+                        'relative flex w-full items-center gap-4 px-5 py-5 text-left transition-colors sm:gap-5 sm:px-6',
+                        selected
+                          ? 'bg-paper-sunken ring-2 ring-inset ring-lapis'
+                          : 'bg-paper-raised hover:bg-paper-sunken/60'
+                      )}
+                    >
+                      <span
+                        aria-hidden
+                        className={cn(
+                          'flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 transition-colors',
+                          selected ? 'border-lapis bg-lapis' : 'border-rule-strong bg-paper-raised'
+                        )}
+                      >
+                        {selected && <Check className="h-3.5 w-3.5 text-ink-inverted" strokeWidth={3} />}
+                      </span>
+
+                      <span className="min-w-0 flex-1">
+                        <span className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+                          <span className="font-display text-lg font-normal text-ink">{row.title}</span>
+                          {row.badge && (
+                            <span
+                              className={cn(
+                                'inline-flex items-center rounded-sm px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em]',
+                                row.badge.tone === 'loud'
+                                  ? 'bg-vermilion text-ink-inverted'
+                                  : 'border border-rule-strong bg-paper text-ink-soft'
+                              )}
+                            >
+                              {row.badge.label}
+                            </span>
+                          )}
+                        </span>
+
+                        <span className="mt-1.5 block text-sm text-ink-muted">{row.subtitle}</span>
+                      </span>
+
+                      {/* Per week leads; the amount actually charged sits under it. */}
+                      <span className="shrink-0 text-right">
+                        {row.perWeek ? (
+                          <>
+                            <span className="block font-display text-[26px] font-normal leading-none tabular-nums text-ink sm:text-[30px]">
+                              {row.perWeek}
+                            </span>
+                            <span className="mt-1.5 block text-[10px] font-semibold uppercase tracking-[0.16em] text-lapis">
+                              {row.perWeekNote}
+                            </span>
+                            <span className="mt-1 block text-[11px] tabular-nums text-ink-muted">
+                              {row.price} {row.billing}
+                            </span>
+                          </>
+                        ) : (
+                          <>
+                            <span className="block font-display text-2xl font-normal tabular-nums text-ink">
+                              {row.price}
+                            </span>
+                            <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
+                              {row.billing}
+                            </span>
+                          </>
+                        )}
+                      </span>
+                    </button>
+                  );
+                })}
+            </div>
+
+            {/* ── Single action for the selected plan ─────────────────────── */}
+            <div className="mt-6">
+              {isPremium ? (
+                <Link
+                  href="/quizzen"
+                  className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+                >
+                  Je hebt Premium - start een quiz
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              ) : isLoggedIn ? (
+                <form
+                  action="/api/stripe/checkout"
+                  method="POST"
+                  onSubmit={() => {
+                    startedCheckout.current = true;
+                    trackEvent('premium_checkout_started', {
+                      placement: 'premium_page',
+                      plan: selectedPlan,
+                    });
+                  }}
+                >
+                  <input type="hidden" name="plan" value={selectedPlan} />
+                  <input type="hidden" name="next" value={returnPath} />
+                  <button
+                    type="submit"
+                    className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+                  >
+                    {ctaLabel}
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                </form>
+              ) : (
+                <Link
+                  href={`/inloggen?callbackUrl=${encodeURIComponent('/premium')}`}
+                  onClick={() => {
+                    startedCheckout.current = true;
+                    trackEvent('premium_login_required', {
+                      placement: 'premium_page',
+                      plan: selectedPlan,
+                    });
+                  }}
+                  className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+                >
+                  Inloggen om verder te gaan
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              )}
+
+              <p className="mt-3 text-center text-xs leading-relaxed text-ink-muted">
+                {hasTrial
+                  ? trialNote
+                  : isSubscription
+                    ? `${selectedRow.price} ${selectedRow.billing}, op elk moment opzegbaar.`
+                    : `${selectedRow.price} eenmalig, direct geactiveerd.`}
+              </p>
+
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/groepslicentie"
+                  className="inline-flex h-10 flex-1 items-center justify-center rounded-md border border-rule-strong bg-paper-raised px-4 text-sm font-medium text-ink transition-colors hover:border-ink hover:bg-paper-sunken"
+                >
+                  Ik koop voor een groep
+                </Link>
+                <Link
+                  href="/profiel"
+                  className="inline-flex h-10 flex-1 items-center justify-center rounded-md border border-rule bg-paper px-4 text-sm text-ink-soft transition-colors hover:border-rule-strong hover:text-ink"
+                >
+                  Al betaald? Beheer hier
+                </Link>
               </div>
-              <Badge className="bg-lapis/10 text-ink hover:bg-ink-soft/10">
-                Eenmalig
-              </Badge>
             </div>
-
-            <div>
-              <h2 className="font-display text-lg font-normal text-ink">Levenslang</h2>
-              <p className="mt-0.5 text-sm text-muted-foreground">Eenmalig betalen, voor altijd toegang</p>
-            </div>
-
-            <div className="flex items-end gap-1.5">
-              <span className="text-4xl font-semibold tracking-tight text-foreground">{lifetimePriceLabel}</span>
-              <span className="pb-1 text-muted-foreground">eenmalig</span>
-            </div>
-
-            <p className="text-sm text-muted-foreground">
-              Geen terugkerend bedrag. <span className="font-medium text-foreground">Betaal een keer.</span>
-            </p>
           </div>
 
-          <div className="border-t border-rule px-6 py-5">
-            <ul className="space-y-3">
-              {[...PREMIUM_TRIGGER_BULLETS, 'Permanent Premium account - geen verloopdatum'].map((feature) => (
-                <li key={feature} className="flex items-start gap-2.5 text-sm text-foreground">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
-                  <span>{feature}</span>
+          {/* ── What the selected plan includes ────────────────────────────── */}
+          <aside className="rounded-lg border border-lapis/45 bg-paper-raised p-6">
+            <Eyebrow>Inbegrepen</Eyebrow>
+            <p className="mt-3 font-display text-lg font-normal leading-snug text-ink">
+              {selectedRow.title} - {selectedRow.price} {selectedRow.billing}
+            </p>
+
+            <ul className="mt-5 space-y-3.5 border-t border-rule pt-5">
+              {HERO_BENEFITS.map((benefit) => (
+                <li key={benefit} className="flex items-start gap-3 text-sm leading-relaxed text-ink">
+                  <span
+                    aria-hidden
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-positive"
+                  >
+                    <Check className="h-3 w-3 text-ink-inverted" strokeWidth={3} />
+                  </span>
+                  <span>{benefit}</span>
                 </li>
               ))}
             </ul>
-          </div>
 
-          <div className="mt-auto p-6 pt-4">
-            {renderAction('lifetime', 'Koop levenslang', 'default')}
-            <p className="mt-2.5 text-center text-xs text-muted-foreground">
-              Eenmalige betaling. Direct geactiveerd.
+            <p className="mt-6 border-t border-rule pt-5 text-xs leading-relaxed text-ink-muted">
+              {billingNote}
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      {/* ── Free versus Premium ──────────────────────────────────────────── */}
+      <section className="mt-14 lg:mt-20">
+        <SectionHead
+          eyebrow="Vergelijk"
+          title="Gratis en Premium naast elkaar"
+          lead="Gratis blijft gratis: meedoen met een spel van iemand anders kost nooit iets."
+        />
+
+        {/* Phone layout: the table's Premium column would sit off-screen behind
+            a horizontal scroll, which hides the only column that sells. */}
+        <div className="mt-7 space-y-3 sm:hidden">
+          {COMPARISON.map((row) => (
+            <div key={row.feature} className="overflow-hidden rounded-lg border border-rule">
+              <p className="border-b border-rule bg-paper-sunken px-4 py-2.5 text-sm font-medium text-ink">
+                {row.feature}
+              </p>
+
+              <div className="flex items-start gap-2 px-4 py-3">
+                <span className="w-16 shrink-0 pt-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-ink-muted">
+                  Gratis
+                </span>
+                {row.free === false ? (
+                  <span className="flex items-center gap-2 text-sm text-ink-muted">
+                    <span
+                      aria-hidden
+                      className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-vermilion/15"
+                    >
+                      <X className="h-3 w-3 text-vermilion" strokeWidth={3} />
+                    </span>
+                    Niet inbegrepen
+                  </span>
+                ) : (
+                  <span className="text-sm text-ink-muted">{row.free}</span>
+                )}
+              </div>
+
+              <div className="flex items-start gap-2 border-t border-rule bg-lapis-tint/40 px-4 py-3">
+                <span className="w-16 shrink-0 pt-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-lapis">
+                  Premium
+                </span>
+                <span className="flex items-start gap-2 text-sm font-medium text-ink">
+                  <span
+                    aria-hidden
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-positive"
+                  >
+                    <Check className="h-3 w-3 text-ink-inverted" strokeWidth={3} />
+                  </span>
+                  {row.premium}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-7 hidden overflow-x-auto sm:block">
+          <table className="w-full min-w-[560px] border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-rule-strong text-left">
+                <th className="py-3 pr-4 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  Functie
+                </th>
+                <th className="w-[30%] py-3 pr-4 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  Gratis
+                </th>
+                <th className="w-[34%] py-3 pl-3">
+                  <span className="inline-flex items-center rounded-sm bg-lapis px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-ink-inverted">
+                    Premium
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {COMPARISON.map((row) => (
+                <tr key={row.feature} className="border-b border-rule align-top">
+                  <td className="py-3.5 pr-4 font-medium text-ink">{row.feature}</td>
+
+                  {/* Included or not has to be readable without reading: a
+                      filled mark in its own pigment, not a hairline glyph. */}
+                  <td className="py-3.5 pr-4 text-ink-muted">
+                    {row.free === false ? (
+                      <span className="inline-flex items-center gap-2">
+                        <span
+                          aria-hidden
+                          className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-vermilion/15"
+                        >
+                          <X className="h-3 w-3 text-vermilion" strokeWidth={3} />
+                        </span>
+                        <span className="text-ink-muted">Niet inbegrepen</span>
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-start gap-2">
+                        <span
+                          aria-hidden
+                          className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-rule"
+                        >
+                          <Minus className="h-3 w-3 text-ink-soft" strokeWidth={3} />
+                        </span>
+                        <span>{row.free}</span>
+                      </span>
+                    )}
+                  </td>
+
+                  <td className="bg-lapis-tint/40 py-3.5 pl-3 text-ink">
+                    <span className="inline-flex items-start gap-2">
+                      <span
+                        aria-hidden
+                        className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-positive"
+                      >
+                        <Check className="h-3 w-3 text-ink-inverted" strokeWidth={3} />
+                      </span>
+                      <span className="font-medium">{row.premium}</span>
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* ── Group licence: the highest-value visitor on this page ─────────── */}
+      <section className="mt-12 rounded-lg border border-rule bg-paper-sunken p-6 sm:p-8">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
+          <div>
+            <Eyebrow pigment="vermilion">Voor groepen</Eyebrow>
+            <h2 className="mt-3 font-display text-xl font-normal tracking-[-0.015em] text-ink sm:text-2xl">
+              Een licentie voor je jeugdgroep, gemeente of klas
+            </h2>
+            <p className="mt-2.5 max-w-xl text-sm leading-relaxed text-ink-muted">
+              {GROUP_LICENSE_SEATS} plekken Premium voor {groupPriceLabel} per jaar, via een code die je
+              gewoon voorleest. Iedereen die de code invult heeft direct alles open - geen losse
+              accounts, geen losse betalingen.
             </p>
           </div>
+
+          <Link
+            href="/groepslicentie"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+          >
+            Bekijk de groepslicentie
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
+      </section>
+
+      {/* ── Trust ────────────────────────────────────────────────────────── */}
+      <div className="mt-8 grid gap-3 sm:grid-cols-3">
+        {[
+          { title: 'Betaling via Stripe', body: 'iDEAL, creditcard en Apple Pay. Geen kaartgegevens bij BijbelQuiz.' },
+          { title: 'Werkt op web en app', body: 'Een account, dezelfde Premium op iOS, Android en de website.' },
+          { title: 'Altijd opzegbaar', body: 'Een klik in het Stripe-portaal. Je houdt de betaalde periode.' },
+        ].map((item) => (
+          <div key={item.title} className="rounded-lg border border-rule bg-paper-raised p-4">
+            <p className="text-sm font-medium text-ink">{item.title}</p>
+            <p className="mt-1.5 text-xs leading-relaxed text-ink-muted">{item.body}</p>
+          </div>
+        ))}
       </div>
 
-      {/* A leader buying for thirty people is not served by a per-person plan,
-          and is the most valuable visitor this page gets. */}
-      <div className="mt-6 rounded-lg border border-rule bg-paper-raised p-5 text-center">
-        <p className="text-sm text-ink">
-          Koop je voor een jeugdgroep, gemeente of klas?
-        </p>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Met een groepslicentie heeft iedereen Premium via een code die je gewoon voorleest.
-        </p>
-        <Button asChild variant="outline" className="mt-3 h-10 border-rule bg-paper px-4">
-          <Link href="/groepslicentie">Bekijk de groepslicentie</Link>
-        </Button>
-      </div>
+      {/* ── FAQ ──────────────────────────────────────────────────────────── */}
+      <section className="mt-14 lg:mt-20">
+        <SectionHead eyebrow="Vragen" title="Veelgestelde vragen" />
 
-      {/* Trust line */}
-      <p className="mt-6 text-center text-sm text-muted-foreground">
-        Betaling via{' '}
-        <span className="font-medium text-foreground">Stripe</span>
-        {' '}- veilig en versleuteld. Geen creditcard opgeslagen bij BijbelQuiz.
-      </p>
-
-      {/* FAQ */}
-      <section className="mt-16">
-        <h2 className="text-center font-display text-[26px] font-normal tracking-[-0.02em] text-ink sm:text-[30px]">Veelgestelde vragen</h2>
-
-        <div className="mx-auto mt-6 max-w-2xl">
+        <div className="mt-6 max-w-2xl">
           <Accordion type="single" collapsible className="space-y-2">
             {FAQ_ITEMS.map((item) => (
-              <AccordionItem key={item.value} value={item.value} className="rounded-lg border border-rule px-1 shadow-none">
-                <AccordionTrigger className="px-4 text-sm font-medium">{item.question}</AccordionTrigger>
-                <AccordionContent className="px-4 text-sm leading-relaxed text-muted-foreground">{item.answer}</AccordionContent>
+              <AccordionItem
+                key={item.value}
+                value={item.value}
+                className="rounded-lg border border-rule px-1 shadow-none"
+              >
+                <AccordionTrigger className="px-4 text-sm font-medium text-ink">
+                  {item.question}
+                </AccordionTrigger>
+                <AccordionContent className="px-4 text-sm leading-relaxed text-ink-muted">
+                  {item.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
+      </section>
+
+      {/* ── Terms ────────────────────────────────────────────────────────── */}
+      <section className="mt-12 border-t border-rule pt-6">
+        <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Voorwaarden</p>
+        <p className="mt-3 max-w-3xl text-xs leading-relaxed text-ink-muted">
+          {billingNote}
+          {trialNote ? ` ${trialNote}` : ''} Prijzen zijn in euro en inclusief btw. Door verder te gaan
+          ga je akkoord met de{' '}
+          <Link href="/voorwaarden" className="text-ink underline underline-offset-2">
+            gebruiksvoorwaarden
+          </Link>{' '}
+          en het{' '}
+          <Link href="/privacybeleid" className="text-ink underline underline-offset-2">
+            privacybeleid
+          </Link>
+          .
+        </p>
       </section>
     </div>
   );

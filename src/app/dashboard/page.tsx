@@ -6,6 +6,12 @@ import DashboardHomeClient from '@/app/dashboard/DashboardHomeClient';
 import { getLevelInfo } from '@/lib/gamification';
 import { calculateNextStreak } from '@/lib/streak';
 import { buildQuizProgressMap } from '@/lib/quiz-progress';
+import { normalizeOnboardingSettings } from '@/lib/user-settings';
+import {
+  describeRecommendationProfile,
+  hasRecommendationProfile,
+  recommendQuizzes,
+} from '@/lib/quiz-recommendations';
 
 export const metadata: Metadata = {
   title: 'Dashboard - BijbelQuiz',
@@ -20,7 +26,11 @@ export default async function DashboardPage() {
   const userId = session?.user?.id;
   const isPremium = !!session?.user?.isPremium;
 
-  const user = userId ? await User.findById(userId).select('xp streak bestStreak quizzesPlayed lastPlayedAt').lean() : null;
+  const user = userId
+    ? await User.findById(userId)
+        .select('xp streak bestStreak quizzesPlayed lastPlayedAt onboarding')
+        .lean()
+    : null;
   const xp = user?.xp || 0;
 
   let streak = user?.streak || 0;
@@ -48,10 +58,14 @@ export default async function DashboardPage() {
   // Fetch quizzes - show all quizzes for both guests and logged users
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
 
+  // Wider than the eight tiles the page shows: the recommendation ranking needs
+  // something to choose from, and a pool of eight would mean "recommended"
+  // amounted to the same eight quizzes for everybody. The category slug comes
+  // along because that is the strongest interest signal there is.
   const quizzesRaw = await Quiz.find(statusFilter)
-    .populate('categoryId', 'title')
+    .populate('categoryId', 'title slug')
     .sort({ isPremium: 1, sortOrder: 1 })
-    .limit(8)
+    .limit(48)
     .lean();
 
   // Fetch user progress only if logged in
@@ -84,6 +98,16 @@ export default async function DashboardPage() {
     };
   });
 
+  // ── Personal recommendations ────────────────────────────────────────────
+  // The three questions on the settings page (reading rhythm, self-rated level,
+  // interests) are read here. Without a profile the list would be the same for
+  // everybody, so the section asks for the answers instead of pretending.
+  const onboarding = normalizeOnboardingSettings(user?.onboarding);
+  const hasProfile = hasRecommendationProfile(onboarding);
+  const recommendations = hasProfile
+    ? recommendQuizzes(quizzesWithProgress, onboarding, { limit: 3, isPremiumUser: isPremium })
+    : [];
+
   const levelInfo = getLevelInfo(xp);
   const recentProgress = JSON.parse(JSON.stringify(progressDocs.slice(0, 5)));
 
@@ -104,7 +128,11 @@ export default async function DashboardPage() {
 
   return (
     <DashboardHomeClient
-      quizzes={JSON.parse(JSON.stringify(quizzesWithProgress))}
+      quizzes={JSON.parse(JSON.stringify(quizzesWithProgress.slice(0, 8)))}
+      recommendations={JSON.parse(JSON.stringify(recommendations))}
+      recommendationLead={describeRecommendationProfile(onboarding)}
+      hasRecommendationProfile={hasProfile}
+      isLoggedIn={Boolean(userId)}
       recentProgress={recentProgress}
       streak={streak}
       xp={xp}

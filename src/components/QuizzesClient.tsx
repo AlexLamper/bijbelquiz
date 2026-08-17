@@ -6,9 +6,8 @@ import { Search, SlidersHorizontal } from 'lucide-react';
 
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { PageMasthead } from '@/components/editorial';
+import { ArrowLink, PageMasthead, SectionHead } from '@/components/editorial';
 import { QuizCard } from '@/components/QuizCard';
 import { MobileQuizFilter } from '@/components/MobileQuizFilter';
 import { useUserSettings } from '@/lib/user-settings-client';
@@ -41,12 +40,21 @@ interface Category {
   slug?: string;
 }
 
+interface RecommendationEntry {
+  quiz: Quiz;
+  reasons: string[];
+}
+
 interface QuizzesClientProps {
   quizzes: Quiz[];
   categories: Category[];
   userIsPremium: boolean;
   canCreateQuiz: boolean;
   initialCategoryId?: string;
+  /** Ranked from the reader's study preferences. Empty without a profile. */
+  recommendations?: RecommendationEntry[];
+  /** Names the answers behind the ranking. */
+  recommendationLead?: string | null;
 }
 
 const ROMAN_PARTS: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6 };
@@ -109,6 +117,8 @@ export default function QuizzesClient({
   userIsPremium,
   canCreateQuiz,
   initialCategoryId = 'all',
+  recommendations = [],
+  recommendationLead = null,
 }: QuizzesClientProps) {
   const { settings } = useUserSettings();
 
@@ -167,6 +177,12 @@ export default function QuizzesClient({
 
   const orderedQuizzes = useMemo(() => groupSeries(filteredQuizzes), [filteredQuizzes]);
 
+  // The difficulty filter is deliberately left out: it is seeded from the saved
+  // preference, so counting it would hide the shortlist from exactly the readers
+  // who filled in a profile.
+  const isBrowsingByHand =
+    searchQuery.trim().length > 0 || selectedCategory !== 'all' || showPremiumOnly;
+
   const totalCount = normalizedQuizzes.length;
   const resultCount = orderedQuizzes.length;
   const selectedCategoryTitle =
@@ -188,6 +204,40 @@ export default function QuizzesClient({
           }
         />
       </section>
+
+      {/* Personal shortlist, above the library. Hidden the moment the reader
+          starts searching or filtering: they have told us what they want, and a
+          second list competing with their own query is noise. */}
+      {recommendations.length > 0 && !isBrowsingByHand && (
+        <section className="mx-auto w-full max-w-[1180px] px-5 pt-10 sm:px-8 lg:px-10">
+          <SectionHead
+            eyebrow="Op jouw maat"
+            title="Aanbevolen voor jou"
+            lead={recommendationLead || undefined}
+            action={<ArrowLink href="/instellingen">Voorkeuren aanpassen</ArrowLink>}
+          />
+
+          <div className="mt-6 grid gap-x-8 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">
+            {recommendations.map(({ quiz, reasons }) => (
+              <div key={`recommended-${quiz._id}`} className="flex flex-col">
+                <QuizCard quiz={quiz} isPremiumUser={userIsPremium} />
+                {reasons.length > 0 && (
+                  <ul className="mt-3 flex flex-wrap gap-1.5">
+                    {reasons.map((reason) => (
+                      <li
+                        key={reason}
+                        className="inline-flex items-center rounded-full border border-lapis/35 bg-lapis-tint px-2.5 py-1 text-xs font-medium text-lapis"
+                      >
+                        {reason}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
         <div>

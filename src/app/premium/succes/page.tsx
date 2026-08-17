@@ -7,6 +7,7 @@ import stripe from '@/lib/stripe';
 import { connectDB, Payment } from '@/database';
 import { updateUserPremiumFromStripe } from '@/lib/premium-state';
 import { Button } from '@/components/ui/button';
+import { readReturnPath, readStripePlan, STRIPE_PLANS } from '@/lib/stripe-plans';
 import SessionRefresher from './SessionRefresher';
 import { Metadata } from 'next';
 
@@ -19,16 +20,20 @@ export const metadata: Metadata = {
 };
 
 interface PageProps {
-  searchParams: Promise<{ session_id?: string }>;
+  searchParams: Promise<{ session_id?: string; next?: string }>;
 }
 
 export default async function SuccessPage({ searchParams }: PageProps) {
-  const { session_id } = await searchParams;
+  const { session_id, next } = await searchParams;
   const session = await getServerSession(authOptions);
 
   if (!session) {
     redirect('/inloggen?callbackUrl=/premium');
   }
+
+  let planLabel: string | null = null;
+  let isTrialing = false;
+  let trialEndLabel: string | null = null;
 
   // Verify the payment securely on the server
   if (session_id) {
@@ -37,7 +42,13 @@ export default async function SuccessPage({ searchParams }: PageProps) {
       const checkoutSession = await stripe.checkout.sessions.retrieve(session_id);
 
       if (checkoutSession.metadata?.userId === session.user.id) {
-        const planType = checkoutSession.metadata?.plan === 'monthly' ? 'monthly' : 'lifetime';
+        // Read through the shared plan table. Deciding "monthly or else
+        // lifetime" here is what used to hand every yearly subscriber - and
+        // every group licence buyer - permanent free access.
+        const planType = readStripePlan(checkoutSession.metadata?.plan);
+        const planConfig = STRIPE_PLANS[planType];
+        planLabel = planConfig.label;
+
         const customerId = typeof checkoutSession.customer === 'string' ? checkoutSession.customer : undefined;
         const subscriptionId = typeof checkoutSession.subscription === 'string' ? checkoutSession.subscription : undefined;
 
@@ -46,21 +57,36 @@ export default async function SuccessPage({ searchParams }: PageProps) {
           try {
             const subscription = await stripe.subscriptions.retrieve(subscriptionId);
             subscriptionStatus = subscription.status;
+            isTrialing = subscription.status === 'trialing';
+
+            if (isTrialing && typeof subscription.trial_end === 'number') {
+              trialEndLabel = new Intl.DateTimeFormat('nl-NL', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+                timeZone: 'Europe/Amsterdam',
+              }).format(new Date(subscription.trial_end * 1000));
+            }
           } catch (subscriptionError) {
             console.warn('Could not fetch subscription status on success page', subscriptionError);
           }
         }
 
-        // Update DB immediately in case webhook is slow or missing. Route the
-        // write through the same helper the webhook uses: setting `isPremium`
-        // directly used to leave `premiumStripe` unset, so the two sources of
-        // truth disagreed until some later Stripe event happened to repair it.
-        await updateUserPremiumFromStripe(session.user.id, true, {
-          hasLifetimePremium: planType === 'lifetime',
-          ...(customerId ? { stripeCustomerId: customerId } : {}),
-          ...(subscriptionId ? { stripeSubscriptionId: subscriptionId } : {}),
-          ...(subscriptionStatus ? { stripeSubscriptionStatus: subscriptionStatus } : {}),
-        });
+        // A group licence is not a personal subscription: the webhook grants the
+        // licence and its join code, and touching the buyer's own premium flags
+        // here would leave them stuck on after the licence lapses.
+        if (!planConfig.isGroup) {
+          // Update DB immediately in case webhook is slow or missing. Route the
+          // write through the same helper the webhook uses: setting `isPremium`
+          // directly used to leave `premiumStripe` unset, so the two sources of
+          // truth disagreed until some later Stripe event happened to repair it.
+          await updateUserPremiumFromStripe(session.user.id, true, {
+            hasLifetimePremium: planConfig.isLifetime,
+            ...(customerId ? { stripeCustomerId: customerId } : {}),
+            ...(subscriptionId ? { stripeSubscriptionId: subscriptionId } : {}),
+            ...(subscriptionStatus ? { stripeSubscriptionStatus: subscriptionStatus } : {}),
+          });
+        }
 
         await Payment.updateOne(
           { provider: 'stripe', stripeSessionId: checkoutSession.id },
@@ -84,6 +110,9 @@ export default async function SuccessPage({ searchParams }: PageProps) {
     }
   }
 
+  // Back to whatever the buyer was doing when they hit the wall.
+  const continuePath = readReturnPath(next);
+
   return (
     <div className="flex min-h-[80vh] items-center justify-center bg-paper">
       <SessionRefresher />
@@ -93,23 +122,36 @@ export default async function SuccessPage({ searchParams }: PageProps) {
             <Check className="h-8 w-8 text-positive" strokeWidth={2} aria-hidden />
           </div>
 
-          <h1 className="text-3xl tracking-tight text-ink">Betaling Geslaagd!</h1>
+          <h1 className="font-display text-3xl font-normal tracking-tight text-ink">
+            {isTrialing ? 'Je proefperiode is gestart' : 'Betaling geslaagd'}
+          </h1>
 
           <p className="mt-4 text-ink-soft">
-            Bedankt voor je steun! Je account is nu opgewaardeerd naar{' '}
-            <span className="font-medium text-lapis">Premium</span>.
+            {isTrialing ? (
+              <>
+                Premium staat open.{' '}
+                {trialEndLabel
+                  ? `Je proefperiode loopt tot ${trialEndLabel}; daarna gaat het abonnement door tenzij je opzegt.`
+                  : 'Zeg op wanneer je wilt voordat de proefperiode eindigt.'}
+              </>
+            ) : (
+              <>
+                Bedankt voor je steun. Je account is opgewaardeerd naar{' '}
+                <span className="font-medium text-lapis">{planLabel || 'Premium'}</span>.
+              </>
+            )}
           </p>
 
           <p className="mt-6 border-t border-rule pt-6 text-sm text-ink-soft">
-            Je hebt nu directe toegang tot alle quizzen en diepgaande studies.
+            Je kunt nu onbeperkt samen spelen, alle quizzen openen en bij elke vraag de uitleg lezen.
           </p>
 
           <div className="mt-8 space-y-3">
             <Button asChild className="h-12 w-full bg-ink text-ink-inverted hover:bg-ink-soft">
-              <Link href="/quizzen">Start een Premium Quiz</Link>
+              <Link href={continuePath}>Ga verder waar je was</Link>
             </Button>
             <Button asChild variant="outline" className="h-12 w-full border-rule">
-              <Link href="/">Terug naar Home</Link>
+              <Link href="/premium">Beheer je lidmaatschap</Link>
             </Button>
           </div>
         </section>

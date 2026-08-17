@@ -6,6 +6,9 @@ import { resolvePremiumSubscription } from '@/lib/premium-subscription';
 import PremiumMemberLayout from '@/components/premium/PremiumMemberLayout';
 import PremiumOfferLayout from '@/components/premium/PremiumOfferLayout';
 import { readPaywallTrigger } from '@/lib/analytics/events';
+import { readTrialDays } from '@/lib/premium-benefits';
+import { GROUP_LICENSE_PRICE_LABEL } from '@/lib/group-license-constants';
+import { readReturnPath } from '@/lib/stripe-plans';
 
 export const metadata: Metadata = {
   title: 'Premium Lidmaatschap | Ontgrendel Alles op BijbelQuiz',
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 interface PremiumPageProps {
-  searchParams?: Promise<{ reden?: string }>;
+  searchParams?: Promise<{ reden?: string; next?: string; checkout?: string }>;
 }
 
 export default async function PremiumPage({ searchParams }: PremiumPageProps) {
@@ -31,15 +34,22 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
   const lifetimePriceLabel = process.env.NEXT_PUBLIC_PREMIUM_LIFETIME_PRICE_LABEL || '€74,99';
   const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
   const yearlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_YEARLY_PRICE_LABEL || '€39,99';
-  // The yearly card only appears once Stripe actually has a price for it.
-  // Rendering the button before then would offer a plan whose checkout 500s.
+  // The yearly row only appears once Stripe actually has a price for it.
+  // Offering it before then would send the buyer into a checkout that 500s.
   const yearlyAvailable = Boolean(process.env.STRIPE_PRICE_YEARLY);
+  // Read from the server so the claim on the page and the trial the checkout
+  // actually creates can never disagree.
+  const trialDays = readTrialDays(process.env.STRIPE_TRIAL_DAYS);
 
   // `?reden=` names the surface that sent the user here, so the page can open
   // on what they were just prevented from doing and the funnel can attribute
   // the sale. Anything unrecognised is treated as a direct visit.
   const resolvedSearchParams = searchParams ? await searchParams : undefined;
   const trigger = readPaywallTrigger(resolvedSearchParams?.reden);
+  // `?next=` carries the page the reader was on. A host who upgrades mid-evening
+  // returns to their lobby rather than to a dead-end thank-you screen.
+  const returnPath = readReturnPath(resolvedSearchParams?.next);
+  const checkoutCancelled = resolvedSearchParams?.checkout === 'geannuleerd';
 
   // The session flag can lag a fresh purchase, so the database decides here.
   let isPremium = Boolean(session?.user?.isPremium);
@@ -60,30 +70,31 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <section className="flex-1 pt-8 pb-16 md:pt-16">
-        <div className="mx-auto max-w-[1180px] px-4 sm:px-5 lg:px-4">
-          {isPremium && subscription ? (
-            <PremiumMemberLayout
-              isLifetime={subscription.isLifetime}
-              statusLabel={subscription.statusText}
-              renewalLabel={subscription.endDateLabel}
-              cancelAtPeriodEnd={subscription.cancelAtPeriodEnd}
-            />
-          ) : (
-            <PremiumOfferLayout
-              isPremium={isPremium}
-              isLoggedIn={Boolean(session)}
-              monthlyPriceLabel={monthlyPriceLabel}
-              yearlyPriceLabel={yearlyPriceLabel}
-              yearlyAvailable={yearlyAvailable}
-              lifetimePriceLabel={lifetimePriceLabel}
-              trigger={trigger}
-            />
-          )}
-        </div>
-      </section>
+    <div className="min-h-screen bg-paper">
+      <div className="mx-auto w-full max-w-[1180px] px-5 pb-16 pt-8 sm:px-8 lg:px-10 lg:pt-10">
+        {isPremium && subscription ? (
+          <PremiumMemberLayout
+            isLifetime={subscription.isLifetime}
+            statusLabel={subscription.statusText}
+            renewalLabel={subscription.endDateLabel}
+            cancelAtPeriodEnd={subscription.cancelAtPeriodEnd}
+          />
+        ) : (
+          <PremiumOfferLayout
+            isPremium={isPremium}
+            isLoggedIn={Boolean(session)}
+            monthlyPriceLabel={monthlyPriceLabel}
+            yearlyPriceLabel={yearlyPriceLabel}
+            yearlyAvailable={yearlyAvailable}
+            lifetimePriceLabel={lifetimePriceLabel}
+            groupPriceLabel={GROUP_LICENSE_PRICE_LABEL}
+            trialDays={trialDays}
+            trigger={trigger}
+            returnPath={returnPath}
+            checkoutCancelled={checkoutCancelled}
+          />
+        )}
+      </div>
     </div>
   );
 }
-

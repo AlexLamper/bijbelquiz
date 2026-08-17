@@ -17,6 +17,7 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { cn } from '@/lib/utils';
+import { INTEREST_OPTIONS } from '@/lib/quiz-recommendations';
 import {
   type QuestionFontSize,
   type ThemePreference,
@@ -35,14 +36,9 @@ interface SettingsClientProps {
   };
 }
 
-const INTEREST_OPTIONS = [
-  { value: 'oude-testament', label: 'Oude Testament' },
-  { value: 'nieuwe-testament', label: 'Nieuwe Testament' },
-  { value: 'evangelien', label: 'Evangelien' },
-  { value: 'profeten', label: 'Profeten' },
-  { value: 'wijsheid', label: 'Wijsheid & Spreuken' },
-  { value: 'personen', label: 'Bijbelse personen' },
-];
+// Imported rather than redeclared: the recommendation ranking matches on these
+// exact values, and a label edited here but not there would silently stop
+// matching quizzes.
 
 type SaveState = 'idle' | 'saving' | 'saved' | 'error';
 
@@ -409,7 +405,10 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
               Bijbelstudie voorkeuren
             </CardTitle>
             <CardDescription className="text-sm leading-relaxed text-ink-muted">
-              Geef je leesritme en interesses op zodat quiz-aanbevelingen beter aansluiten.
+              Deze drie antwoorden bepalen de sectie{' '}
+              <span className="font-medium text-ink">Aanbevolen voor jou</span> op je dashboard en in
+              de quizbibliotheek: interesses kiezen de onderwerpen, je niveau kiest de moeilijkheid en
+              je leesritme bepaalt of we korte of diepere quizzen voorstellen.
             </CardDescription>
           </CardHeader>
 

@@ -40,6 +40,7 @@ import {
   MULTIPLAYER_FREE_MAX_PLAYERS,
   MULTIPLAYER_FREE_ROOM_QUOTA,
   MULTIPLAYER_PREMIUM_MAX_PLAYERS,
+  premiumPaywallHref,
 } from '@/lib/premium-benefits';
 import { cn } from '@/lib/utils';
 
@@ -384,7 +385,9 @@ export default function MultiplayerEntryClient({
                 : `Je hebt nog ${gamesLeft} gratis spellen om te hosten. Een spel telt pas mee zodra je hem echt start.`}
           </p>
           <Button asChild size="sm" variant="outline" className="mt-3 border-rule bg-paper-raised">
-            <Link href="/premium?reden=host_quota_warning">Bekijk Premium</Link>
+            <Link href={premiumPaywallHref('host_quota_warning', '/samen-spelen')}>
+              Bekijk Premium
+            </Link>
           </Button>
         </div>
       )}
@@ -516,7 +519,10 @@ export default function MultiplayerEntryClient({
               {playerLimitTriggered && (
                 <p className="text-xs text-ink-soft">
                   {selectedPlayersCount} spelers vraagt om{' '}
-                  <Link href="/premium?reden=host_quota_exhausted" className="font-semibold underline underline-offset-2">
+                  <Link
+                    href={premiumPaywallHref('host_player_cap', '/samen-spelen')}
+                    className="font-semibold underline underline-offset-2"
+                  >
                     Premium
                   </Link>
                   . Gratis speel je tot {MULTIPLAYER_FREE_MAX_PLAYERS} spelers.
@@ -532,7 +538,7 @@ export default function MultiplayerEntryClient({
                   trackEvent('multiplayer_premium_cta_clicked', { placement: 'free_quota_used' })
                 }
               >
-                <Link href="/premium?reden=host_quota_exhausted">
+                <Link href={premiumPaywallHref('host_quota_exhausted', '/samen-spelen')}>
                   <Crown className="mr-2 h-4 w-4" />
                   Word Premium om te hosten
                 </Link>

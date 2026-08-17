@@ -2,7 +2,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
-html {
+/* Smooth scrolling is opt-in, never global. On `html` it also applies to the
+   scroll-to-top the router performs on every navigation, which turns an instant
+   jump into an animation that content streaming in can interrupt - the reason a
+   freshly opened page could appear already scrolled halfway down. Anything that
+   wants an animated in-page jump asks for it with this class. */
+.scroll-smooth-region {
   scroll-behavior: smooth;
 }
 

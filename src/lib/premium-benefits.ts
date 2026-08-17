@@ -113,19 +113,89 @@ export function monthlyEquivalentOfYearly(yearlyLabel: string): string | null {
   })}`;
 }
 
-/**
- * Format a per-week equivalent for a monthly price label like "€5,99".
- * Falls back to the raw label when it cannot be parsed (e.g. localized text).
- */
-export function formatPricePerWeek(monthlyLabel: string): string | null {
-  const match = monthlyLabel.match(/(\d+(?:[.,]\d+)?)/);
-  if (!match) return null;
-  const monthly = Number(match[1].replace(',', '.'));
-  if (!Number.isFinite(monthly) || monthly <= 0) return null;
-  const perWeek = monthly / 4.33;
-  const formatted = perWeek.toLocaleString('nl-NL', {
+function formatEuro(amount: number): string {
+  return `€${amount.toLocaleString('nl-NL', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
-  });
-  return `€${formatted}`;
+  })}`;
+}
+
+/** Average weeks in a month; the store convention for a per-week equivalent. */
+const WEEKS_PER_MONTH = 4.345;
+
+/**
+ * Per-week equivalent of a price that covers `months` months.
+ *
+ * The week is the unit every plan is quoted in on top of its own billing
+ * period, because it is the smallest honest comparison between three plans that
+ * bill on three different rhythms - and the number a reader can weigh against
+ * something they already buy weekly. Null when the label is not a plain number
+ * (a localized store string), so the UI omits the claim rather than print a
+ * wrong one.
+ */
+export function pricePerWeek(label: string, months: number): string | null {
+  const amount = parsePriceLabel(label);
+  if (amount === null || months <= 0) return null;
+  return formatEuro(amount / (months * WEEKS_PER_MONTH));
+}
+
+/**
+ * Format a per-week equivalent for a monthly price label like "€5,99".
+ * Falls back to null when it cannot be parsed (e.g. localized text).
+ */
+export function formatPricePerWeek(monthlyLabel: string): string | null {
+  return pricePerWeek(monthlyLabel, 1);
+}
+
+/** Per-week equivalent of a yearly price label, e.g. "€0,77". */
+export function yearlyPricePerWeek(yearlyLabel: string): string | null {
+  return pricePerWeek(yearlyLabel, 12);
+}
+
+/**
+ * Per-week equivalent of a one-off lifetime price, amortised over the horizon a
+ * buyer can reasonably be told about. Three years is deliberately conservative:
+ * it undersells "levenslang" rather than making a promise about how long the
+ * product will exist.
+ */
+export const LIFETIME_HORIZON_YEARS = 3;
+
+export function lifetimePricePerWeek(lifetimeLabel: string): string | null {
+  return pricePerWeek(lifetimeLabel, LIFETIME_HORIZON_YEARS * 12);
+}
+
+/**
+ * Free trial length, in days, read from `STRIPE_TRIAL_DAYS`.
+ *
+ * Zero or unset means no trial, and every trial claim in the UI disappears with
+ * it: promising a trial the checkout will not create is the fastest way to a
+ * chargeback and a support thread.
+ */
+export function readTrialDays(raw: string | undefined | null): number {
+  const parsed = Number.parseInt((raw || '').trim(), 10);
+  if (!Number.isFinite(parsed) || parsed <= 0) return 0;
+  // Stripe's own ceiling for a checkout trial.
+  return Math.min(parsed, 730);
+}
+
+/** "14 dagen gratis" / "1 dag gratis". */
+export function formatTrialLabel(days: number): string {
+  return `${days} ${days === 1 ? 'dag' : 'dagen'} gratis`;
+}
+
+/**
+ * Link to the paywall that carries both the trigger and the way back.
+ *
+ * Every wall in the product uses this, so a reader who upgrades always returns
+ * to the thing they were stopped from doing instead of being dropped on a
+ * generic confirmation page and left to navigate back by hand.
+ */
+export function premiumPaywallHref(trigger: string, next?: string | null): string {
+  const params = new URLSearchParams({ reden: trigger });
+
+  if (next && next.startsWith('/') && !next.startsWith('//') && !next.includes('\\')) {
+    params.set('next', next);
+  }
+
+  return `/premium?${params.toString()}`;
 }

@@ -11,7 +11,8 @@ import type { PaywallTrigger } from '@/lib/analytics/events';
 import {
   PREMIUM_HERO_OUTCOME,
   PREMIUM_TRIGGER_BULLETS,
-  formatPricePerWeek,
+  premiumPaywallHref,
+  yearlyPricePerWeek,
 } from '@/lib/premium-benefits';
 
 interface MultiplayerPremiumPaywallProps {
@@ -22,6 +23,7 @@ interface MultiplayerPremiumPaywallProps {
 }
 
 const monthlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL || '€5,99';
+const yearlyPriceLabel = process.env.NEXT_PUBLIC_PREMIUM_YEARLY_PRICE_LABEL || '€39,99';
 
 /** Placement to the closed trigger set the funnel reports on. */
 const PLACEMENT_TRIGGERS: Record<MultiplayerPremiumPaywallProps['placement'], PaywallTrigger> = {
@@ -34,7 +36,9 @@ export default function MultiplayerPremiumPaywall({
   placement,
   headline,
 }: MultiplayerPremiumPaywallProps) {
-  const perWeek = formatPricePerWeek(monthlyPriceLabel);
+  // Quoted per week off the yearly plan: the smallest true number on the page,
+  // and the same anchor the mobile paywall uses.
+  const perWeek = yearlyPricePerWeek(yearlyPriceLabel);
   const trigger = PLACEMENT_TRIGGERS[placement];
 
   // Recorded where the wall is actually raised, not where it is clicked: a
@@ -75,10 +79,12 @@ export default function MultiplayerPremiumPaywall({
             trackEvent('multiplayer_premium_cta_clicked', { placement })
           }
         >
-          <Link href="/premium?reden=host_quota_exhausted">Upgrade naar Premium</Link>
+          <Link href={premiumPaywallHref(trigger, '/samen-spelen')}>Upgrade naar Premium</Link>
         </Button>
         <p className="text-[11px] text-muted-foreground">
-          Vanaf {monthlyPriceLabel} per maand{perWeek ? ` (~${perWeek}/week)` : ''}.
+          {perWeek
+            ? `Vanaf ${perWeek} per week met het jaarplan.`
+            : `Vanaf ${monthlyPriceLabel} per maand.`}
         </p>
       </div>
     </div>

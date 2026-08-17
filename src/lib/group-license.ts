@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 import { GroupLicense, User, connectDB } from '@/database';
+import { GROUP_LICENSE_SEATS } from './group-license-constants';
 
 /**
  * Group licences: one purchase, many people with Premium.
@@ -11,12 +12,10 @@ import { GroupLicense, User, connectDB } from '@/database';
  * pays for themselves. Reading instead means the licence lapsing is enough.
  */
 
-/** Seats included in the standard licence. */
-export const GROUP_LICENSE_SEATS = 30;
-
-/** Yearly list price, mirrored in the pricing copy. */
-export const GROUP_LICENSE_PRICE_LABEL =
-  process.env.NEXT_PUBLIC_GROUP_LICENSE_PRICE_LABEL || '€99,00';
+// Re-exported so existing server-side importers keep one import site, while
+// client components can take the constants alone.
+export { GROUP_LICENSE_PRICE_LABEL } from './group-license-constants';
+export { GROUP_LICENSE_SEATS };
 
 /** Ambiguous characters are left out: this code is read aloud in a room. */
 const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
