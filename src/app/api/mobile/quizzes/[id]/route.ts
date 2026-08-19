@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { connectDB, Quiz, Category } from '@/database';
+import { resolveQuizPassage } from '@/lib/quiz-passage';
 
 const VALID_IMAGE_NAMES = new Set(Array.from({ length: 10 }, (_, index) => `img${index + 1}.png`));
 
@@ -77,6 +78,13 @@ export async function GET(req: Request, context: any) {
         slug: categoryObj.slug || null,
       } : null,
       questionCount: quiz.questions?.length || 0,
+      // The chapter this quiz is about, worked out from the references its
+      // questions carry. Computed here rather than in the app so the website
+      // and the app offer the reader exactly the same passage - the Dutch book
+      // abbreviation table lives in one place only.
+      passage: resolveQuizPassage(
+        (quiz.questions || []).map((q: any) => ({ bibleReference: q.bibleReference }))
+      ),
       questions: (quiz.questions || []).map((q: any) => ({
         id: q._id?.toString(),
         text: q.text,

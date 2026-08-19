@@ -528,28 +528,72 @@ export default function PremiumOfferLayout({
             </div>
           </div>
 
-          {/* ── What the selected plan includes ────────────────────────────── */}
+          {/* ── What you are about to buy ──────────────────────────────────
+              A summary, not a second copy of the promise list above it: the
+              reader has already read what Premium does, and what they need
+              here is the number, when it is taken, and how to stop it. */}
           <aside className="rounded-lg border border-lapis/45 bg-paper-raised p-6">
-            <Eyebrow>Inbegrepen</Eyebrow>
+            <Eyebrow>Jouw keuze</Eyebrow>
             <p className="mt-3 font-display text-lg font-normal leading-snug text-ink">
-              {selectedRow.title} - {selectedRow.price} {selectedRow.billing}
+              Premium {selectedRow.title.toLowerCase()}
             </p>
 
-            <ul className="mt-5 space-y-3.5 border-t border-rule pt-5">
-              {HERO_BENEFITS.map((benefit) => (
-                <li key={benefit} className="flex items-start gap-3 text-sm leading-relaxed text-ink">
-                  <span
-                    aria-hidden
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-positive"
-                  >
-                    <Check className="h-3 w-3 text-ink-inverted" strokeWidth={3} />
-                  </span>
-                  <span>{benefit}</span>
-                </li>
-              ))}
-            </ul>
+            <dl className="mt-5 space-y-3.5 border-t border-rule pt-5 text-sm">
+              {selectedRow.perWeek && (
+                <div className="flex items-baseline justify-between gap-4">
+                  <dt className="text-ink-muted">Per week</dt>
+                  <dd className="font-display text-lg tabular-nums text-ink">{selectedRow.perWeek}</dd>
+                </div>
+              )}
 
-            <p className="mt-6 border-t border-rule pt-5 text-xs leading-relaxed text-ink-muted">
+              <div className="flex items-baseline justify-between gap-4">
+                <dt className="text-ink-muted">
+                  {hasTrial ? 'Na de proefperiode' : 'Je betaalt'}
+                </dt>
+                <dd className="tabular-nums text-ink">
+                  {selectedRow.price} {selectedRow.billing}
+                </dd>
+              </div>
+
+              <div className="flex items-baseline justify-between gap-4">
+                <dt className="text-ink-muted">Vandaag</dt>
+                <dd className="text-ink">
+                  {hasTrial ? `${trialLabel}` : `${selectedRow.price}`}
+                </dd>
+              </div>
+
+              <div className="flex items-baseline justify-between gap-4">
+                <dt className="text-ink-muted">Verlenging</dt>
+                <dd className="text-right text-ink">
+                  {isSubscription ? `Automatisch, ${selectedRow.billing}` : 'Geen'}
+                </dd>
+              </div>
+
+              <div className="flex items-baseline justify-between gap-4">
+                <dt className="text-ink-muted">Opzeggen</dt>
+                <dd className="text-right text-ink">
+                  {isSubscription ? 'Wanneer je wilt' : 'Niet nodig'}
+                </dd>
+              </div>
+            </dl>
+
+            <div className="mt-5 border-t border-rule pt-4">
+              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                Betalen met
+              </p>
+              <div className="mt-2.5 flex flex-wrap gap-1.5">
+                {['iDEAL', 'Creditcard', 'Apple Pay', 'Google Pay'].map((method) => (
+                  <span
+                    key={method}
+                    className="rounded-sm border border-rule bg-paper px-2 py-1 text-[11px] font-medium text-ink-soft"
+                  >
+                    {method}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <p className="mt-5 border-t border-rule pt-4 text-xs leading-relaxed text-ink-muted">
               {billingNote}
             </p>
           </aside>

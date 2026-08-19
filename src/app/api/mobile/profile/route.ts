@@ -40,6 +40,15 @@ export async function GET(req: Request) {
       .populate('quizId', 'title imageUrl')
       .lean();
 
+    // Which quizzes this account has finished, so the library can mark them and
+    // push them below the ones still to play. Ids only: the app needs to know
+    // "done or not", and shipping every attempt would grow with the account.
+    const playedQuizIds = (
+      await UserProgress.distinct('quizId', { userId: decoded.userId })
+    )
+      .filter(Boolean)
+      .map((quizId: unknown) => String(quizId));
+
     const formattedProgress = recentProgress.map((p: any) => ({
       quizId: p.quizId?._id?.toString() || p.quizId?.toString() || '',
       quizTitle: p.quizId?.title || 'Quiz',
@@ -73,6 +82,7 @@ export async function GET(req: Request) {
       // played on the website silences the phone's reminder too.
       lastPlayedAt: user.lastPlayedAt ? new Date(user.lastPlayedAt).toISOString() : null,
       badges: user.badges || [],
+      playedQuizIds,
       // Lifetime totals. The app used to derive these from the last 5 attempts,
       // which capped "quizzen gespeeld" at 5 and skewed the average.
       quizzesPlayed: user.quizzesPlayed || 0,
