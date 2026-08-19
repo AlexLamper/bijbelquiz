@@ -220,15 +220,26 @@ export default function Navbar({
 
           {status === 'authenticated' && session && (
             <>
+              {/* A member gets a quiet mark of status; everybody else gets the
+                  one solid button in the bar. Both are the same height as the
+                  controls beside them, and neither shouts. */}
               {session.user?.isPremium ? (
-                <span className="hidden h-10 items-center gap-1.5 rounded-md border border-lapis/45 bg-paper-raised px-3 text-[11px] font-medium uppercase tracking-[0.16em] text-lapis xl:inline-flex">
-                  <Crown className="h-4 w-4" />
-                  Premium actief
-                </span>
+                <Link
+                  href="/premium"
+                  title="Je Premium lidmaatschap beheren"
+                  className="inline-flex h-10 items-center gap-2 rounded-md border border-lapis/40 bg-lapis-tint px-3 text-sm font-medium text-lapis transition-colors hover:border-lapis/70 lg:px-3.5"
+                >
+                  <Crown className="h-4 w-4 shrink-0" />
+                  <span className="hidden lg:inline">Premium</span>
+                </Link>
               ) : (
-                <Button asChild variant="accent" className="h-10 px-4">
-                  <Link href="/premium">Premium</Link>
-                </Button>
+                <Link
+                  href="/premium"
+                  className="inline-flex h-10 items-center gap-2 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+                >
+                  <Crown className="h-4 w-4 shrink-0" />
+                  Premium
+                </Link>
               )}
 
               <div className="relative" ref={accountMenuRef}>
@@ -384,37 +395,58 @@ export default function Navbar({
                       Instellingen
                     </Link>
 
-                    {!session.user?.isPremium && (
-                      <Button asChild className="h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
-                        <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)}>
-                          Premium
-                        </Link>
+                    {/* Both actions are full width and the same height, with a
+                        rule between them and the navigation above: the upgrade
+                        used to be an odd shrink-to-fit button wedged next to
+                        "Afmelden", which read as a misplaced element rather
+                        than the primary action of the menu. */}
+                    <div className="space-y-2 border-t border-rule pt-3">
+                      {!session.user?.isPremium && (
+                        <Button
+                          asChild
+                          className="h-11 w-full justify-center rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+                        >
+                          <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Crown className="mr-2 h-4 w-4" />
+                            Word Premium
+                          </Link>
+                        </Button>
+                      )}
+
+                      <Button
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          signOut({ callbackUrl: '/' });
+                        }}
+                        variant="outline"
+                        className="h-11 w-full justify-center rounded-md border-rule px-4 text-sm font-medium text-ink hover:bg-paper-sunken"
+                      >
+                        <LogOut className="mr-2 h-4 w-4" />
+                        Afmelden
                       </Button>
-                    )}
-                    <Button
-                      onClick={() => {
-                        setIsMobileMenuOpen(false);
-                        signOut({ callbackUrl: '/' });
-                      }}
-                      variant="outline"
-                      className="h-9 rounded-md border-rule px-4 text-ink hover:bg-paper-sunken"
-                    >
-                      <LogOut className="mr-1.5 h-4 w-4" />
-                      Afmelden
-                    </Button>
+                    </div>
                   </div>
                 ) : (
                   <>
-                    <Button asChild variant="outline" className="h-9 rounded-md border-rule px-4 text-ink hover:bg-paper-sunken">
-                      <Link href="/inloggen" onClick={() => setIsMobileMenuOpen(false)}>
-                        Inloggen
-                      </Link>
-                    </Button>
-                    <Button asChild className="h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
-                      <Link href="/registreren" onClick={() => setIsMobileMenuOpen(false)}>
-                        Registreren
-                      </Link>
-                    </Button>
+                    <div className="w-full space-y-2">
+                      <Button
+                        asChild
+                        className="h-11 w-full justify-center rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+                      >
+                        <Link href="/registreren" onClick={() => setIsMobileMenuOpen(false)}>
+                          Registreren
+                        </Link>
+                      </Button>
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="h-11 w-full justify-center rounded-md border-rule px-4 text-sm font-medium text-ink hover:bg-paper-sunken"
+                      >
+                        <Link href="/inloggen" onClick={() => setIsMobileMenuOpen(false)}>
+                          Inloggen
+                        </Link>
+                      </Button>
+                    </div>
                   </>
                 )}
               </div>

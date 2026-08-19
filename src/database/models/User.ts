@@ -72,6 +72,8 @@ export interface IUser extends Document {
     showBibleReferences?: boolean;
     preferredDifficulty?: 'all' | 'easy' | 'medium' | 'hard';
     questionFontSize?: 'normal' | 'large';
+    questionTimerSeconds?: number;
+    readPassageFirst?: boolean;
   };
   createdAt: Date;
 }
@@ -136,6 +138,10 @@ const UserSchema: Schema = new Schema({
     showBibleReferences: { type: Boolean, default: true },
     preferredDifficulty: { type: String, enum: ['all', 'easy', 'medium', 'hard'], default: 'all' },
     questionFontSize: { type: String, enum: ['normal', 'large'], default: 'normal' },
+    // Chosen on the quiz start screen and remembered from then on, so the
+    // reader sets up how they want to study once rather than every quiz.
+    questionTimerSeconds: { type: Number, enum: [0, 30, 60, 90], default: 0 },
+    readPassageFirst: { type: Boolean, default: false },
   },
 }, { timestamps: true });
 

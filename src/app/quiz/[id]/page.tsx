@@ -3,7 +3,8 @@ import { getServerSession } from 'next-auth';
 import type { Metadata, ResolvingMetadata } from 'next'; // Added metadata types
 import { authOptions } from '@/lib/auth';
 import { connectDB, Quiz, ICategory, UserProgress } from '@/database';
-import QuizPlayer from '@/components/QuizPlayer';
+import QuizExperience from '@/components/quiz/QuizExperience';
+import { resolveQuizPassage } from '@/lib/quiz-passage';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -167,13 +168,49 @@ export default async function QuizPage({ params }: PageProps) {
     }))
   };
 
+  // Which chapter this quiz is about, derived from the references its questions
+  // carry. Resolved before the premium stripping above touches anything, since
+  // `bibleReference` stays visible for everybody.
+  const passage = resolveQuizPassage(serializableQuiz.questions || []);
+
+  const lastResult = lastProgressDoc
+    ? {
+        correctAnswers: Number(lastProgressDoc.correctAnswers) || 0,
+        totalQuestions:
+          Number(lastProgressDoc.totalQuestions) || serializableQuiz.questions.length,
+        completedAtLabel: new Intl.DateTimeFormat('nl-NL', {
+          day: 'numeric',
+          month: 'long',
+          timeZone: 'Europe/Amsterdam',
+        }).format(new Date(lastProgressDoc.completedAt)),
+        attempts,
+      }
+    : null;
+
+  const overview = {
+    _id: String(serializableQuiz._id),
+    title: serializableQuiz.title,
+    description: serializableQuiz.description,
+    imageUrl: serializableQuiz.imageUrl,
+    difficulty: serializableQuiz.difficulty,
+    isPremium: Boolean(serializableQuiz.isPremium),
+    rewardXp: serializableQuiz.rewardXp,
+    categoryTitle: (quiz.categoryId as ICategory)?.title,
+    questionCount: serializableQuiz.questions.length,
+  };
+
   return (
     <div className="bg-paper">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <QuizPlayer quiz={serializableQuiz} />
+      <QuizExperience
+        quiz={serializableQuiz}
+        overview={overview}
+        passage={passage}
+        lastResult={lastResult}
+      />
     </div>
   );
 }

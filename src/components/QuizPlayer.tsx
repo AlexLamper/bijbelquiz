@@ -14,6 +14,7 @@ import {
   Maximize,
   RotateCcw,
   Settings,
+  Timer,
   X,
 } from 'lucide-react';
 
@@ -26,7 +27,11 @@ import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
 import { track } from '@/lib/analytics/client';
 import { premiumPaywallHref } from '@/lib/premium-benefits';
 import { useUserSettings } from '@/lib/user-settings-client';
-import type { QuestionFontSize } from '@/lib/user-settings';
+import {
+  QUESTION_TIMER_CHOICES,
+  type QuestionFontSize,
+  type QuestionTimerSeconds,
+} from '@/lib/user-settings';
 
 interface Answer {
   text: string;
@@ -72,6 +77,14 @@ function getCategoryLabel(categoryId?: Quiz['categoryId']): string {
   return 'Algemeen';
 }
 
+/** "1:05" / "0:24" - minutes only appear once there are any. */
+function formatSeconds(total: number): string {
+  const safe = Math.max(0, total);
+  const minutes = Math.floor(safe / 60);
+  const seconds = safe % 60;
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
 function getQuestionTextSizeClass(textSize: 'normal' | 'large', questionText: string): string {
   const length = questionText.trim().length;
 
@@ -88,7 +101,18 @@ function getQuestionTextSizeClass(textSize: 'normal' | 'large', questionText: st
   return 'text-[1.4rem] md:text-[1.9rem] xl:text-[2.2rem]';
 }
 
-export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
+export default function QuizPlayer({
+  quiz,
+  timerOverride,
+}: {
+  quiz: Quiz;
+  /**
+   * Seconds per question chosen on the start screen for this sitting. Falls
+   * back to the saved preference when not given, so the player still works when
+   * it is rendered on its own.
+   */
+  timerOverride?: number;
+}) {
   const { data: session } = useSession();
   const router = useRouter();
   const pathname = usePathname();
@@ -131,6 +155,27 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
   const [seededFontSize, setSeededFontSize] = useState(settings.questionFontSize);
   const [seededBibleReferences, setSeededBibleReferences] = useState(settings.showBibleReferences);
 
+  // ── Per-question timer ───────────────────────────────────────────────────
+  // Off unless the reader asked for it on the start screen. The countdown is a
+  // thin rule and a number, never a ticking clock face: this is a Bible study
+  // quiz, and the timer is there for people who want a challenge, not to put
+  // everybody under pressure.
+  // Held in state so it can be switched off from the in-quiz panel without
+  // waiting for the session round trip - the reader who wants the clock gone
+  // usually wants it gone now.
+  const [timerSeconds, setTimerSeconds] = useState<number>(
+    timerOverride ?? settings.questionTimerSeconds
+  );
+  const [seededTimer, setSeededTimer] = useState(settings.questionTimerSeconds);
+  const timerEnabled = timerSeconds > 0;
+  const [secondsLeft, setSecondsLeft] = useState(timerSeconds);
+  const [timedOutQuestions, setTimedOutQuestions] = useState<Record<number, true>>({});
+
+  if (seededTimer !== settings.questionTimerSeconds && timerOverride === undefined) {
+    setSeededTimer(settings.questionTimerSeconds);
+    setTimerSeconds(settings.questionTimerSeconds);
+  }
+
   if (seededFontSize !== settings.questionFontSize) {
     setSeededFontSize(settings.questionFontSize);
     setTextSize(settings.questionFontSize);
@@ -154,6 +199,13 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
     persistSetting({ questionFontSize: value });
   };
 
+  const updateTimerSeconds = (value: QuestionTimerSeconds) => {
+    setTimerSeconds(value);
+    setSecondsLeft(value);
+    setSeededTimer(value);
+    persistSetting({ questionTimerSeconds: value });
+  };
+
   const updateShowBibleReferences = (value: boolean) => {
     setShowBibleReferences(value);
     persistSetting({ showBibleReferences: value });
@@ -172,6 +224,7 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
   const answeredWrong =
     hasAnswered && !currentQuestion.answers[selectedAnswer!]?.isCorrect;
+  const timedOut = Boolean(timedOutQuestions[currentIndex]);
   const explanationLocked =
     !isPremium && hasAnswered && showExplanation && Boolean(currentQuestion.explanationPreview);
 
@@ -278,6 +331,51 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
 
     setCurrentIndex((prev) => prev - 1);
   };
+
+  /**
+   * Every question starts at the top of the screen.
+   *
+   * On a phone the answer buttons sit below the fold, so answering leaves the
+   * reader scrolled down; without this the next question opens halfway through
+   * itself and has to be scrolled back up by hand, once per question, for the
+   * whole quiz. Also runs when the quiz finishes, so the result is not opened
+   * from the middle.
+   */
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [currentIndex, isFinished]);
+
+  /** A new question restarts the clock. */
+  useEffect(() => {
+    setSecondsLeft(timerSeconds);
+  }, [currentIndex, timerSeconds]);
+
+  /**
+   * The countdown itself. Stops the moment the question is answered - the
+   * reader is then reading the explanation, and a clock still running would
+   * rush exactly the part of the quiz that is worth lingering on.
+   */
+  useEffect(() => {
+    if (!timerEnabled || hasAnswered || isFinished) return;
+
+    const tick = window.setInterval(() => {
+      setSecondsLeft((remaining) => (remaining <= 1 ? 0 : remaining - 1));
+    }, 1000);
+
+    return () => window.clearInterval(tick);
+  }, [timerEnabled, hasAnswered, isFinished, currentIndex]);
+
+  /**
+   * Running out locks the question in as unanswered rather than skipping past
+   * it: the correct answer and its explanation still appear, which is the whole
+   * point of getting one wrong.
+   */
+  useEffect(() => {
+    if (!timerEnabled || hasAnswered || isFinished || secondsLeft > 0) return;
+
+    setTimedOutQuestions((previous) => ({ ...previous, [currentIndex]: true }));
+    setSelectedAnswers((previous) => ({ ...previous, [currentIndex]: -1 }));
+  }, [timerEnabled, hasAnswered, isFinished, secondsLeft, currentIndex]);
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
@@ -578,9 +676,38 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
           <span className="flex items-center gap-3">
             <span className="hidden sm:inline">{categoryLabel}</span>
             <span aria-hidden className="hidden h-3 w-px bg-rule sm:block" />
-            <span>{difficultyLabel}</span>
+            <span className="hidden sm:inline">{difficultyLabel}</span>
+
+            {/* The countdown. One number and one hairline - on a phone this
+                sits in the line that is already there rather than adding a
+                band of its own. */}
+            {timerEnabled && (
+              <>
+                <span aria-hidden className="h-3 w-px bg-rule" />
+                <span
+                  className={`inline-flex items-center gap-1.5 tabular-nums ${
+                    timedOut ? 'text-vermilion' : secondsLeft <= 5 && !hasAnswered ? 'text-vermilion' : 'text-ink'
+                  }`}
+                  aria-live="off"
+                >
+                  <Timer className="h-3.5 w-3.5" />
+                  {timedOut ? 'Tijd om' : formatSeconds(secondsLeft)}
+                </span>
+              </>
+            )}
           </span>
         </div>
+
+        {timerEnabled && (
+          <div className="mt-3 h-px w-full bg-rule" aria-hidden>
+            <div
+              className={`h-px transition-[width] duration-1000 ease-linear ${
+                secondsLeft <= 5 ? 'bg-vermilion' : 'bg-lapis'
+              }`}
+              style={{ width: `${timerSeconds > 0 ? (secondsLeft / timerSeconds) * 100 : 0}%` }}
+            />
+          </div>
+        )}
 
         {/* The question */}
         <h1
@@ -764,6 +891,28 @@ export default function QuizPlayer({ quiz }: { quiz: Quiz }) {
                   >
                     Groot
                   </Button>
+                </div>
+              </div>
+
+              {/* The timer is switchable mid-quiz, and off is the first
+                  option: somebody opening this panel while a clock is running
+                  is usually looking for the way to stop it. */}
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-sm text-ink">Tijd per vraag</span>
+                <div className="flex items-center gap-1">
+                  {QUESTION_TIMER_CHOICES.map((choice) => (
+                    <Button
+                      key={choice}
+                      type="button"
+                      variant="outline"
+                      className={`h-8 rounded-md px-2 text-xs ${
+                        timerSeconds === choice ? 'bg-paper-sunken text-ink' : 'bg-paper-raised'
+                      }`}
+                      onClick={() => updateTimerSeconds(choice)}
+                    >
+                      {choice === 0 ? 'Uit' : `${choice}s`}
+                    </Button>
+                  ))}
                 </div>
               </div>
 

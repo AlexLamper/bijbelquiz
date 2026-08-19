@@ -88,6 +88,12 @@ export function QuizTile({
     typeof quiz.isLocked === 'boolean' ? quiz.isLocked : quiz.isPremium && isPremiumUser === false;
   const questionCount = quiz.questions?.length ?? 0;
   const played = (quiz.progress?.attempts ?? 0) > 0;
+
+  // "12/15" from the best attempt. Falls back to nothing rather than to a
+  // half-known figure: an older progress row can lack the question total.
+  const bestTotal = quiz.progress?.lastTotalQuestions || questionCount;
+  const bestScoreLabel =
+    played && bestTotal > 0 ? `${quiz.progress?.bestCorrectAnswers ?? 0}/${bestTotal}` : null;
   const difficulty = DIFFICULTY[quiz.difficulty?.toLowerCase()] ?? {
     label: quiz.difficulty,
     pigment: 'neutral' as Pigment,
@@ -114,10 +120,13 @@ export function QuizTile({
           </span>
         )}
 
+        {/* A finished quiz says so at full strength, with the score. Somebody
+            scanning a grid should never have to open a quiz to find out they
+            already did it. */}
         {played && !isLocked && (
-          <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-sm bg-paper-raised/95 px-2 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-positive backdrop-blur-sm">
-            <Check className="h-3 w-3" />
-            Gespeeld
+          <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-sm bg-positive px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-ink-inverted">
+            <Check className="h-3 w-3" strokeWidth={3} />
+            {bestScoreLabel ?? 'Afgerond'}
           </span>
         )}
 
@@ -147,16 +156,16 @@ export function QuizTile({
         <div className="mt-auto flex items-center justify-between border-t border-rule pt-3.5 text-xs text-ink-muted">
           <span className="tabular-nums">
             {questionCount} {questionCount === 1 ? 'vraag' : 'vragen'}
-            {played && quiz.progress ? (
+            {played && bestScoreLabel ? (
               <>
                 <span className="mx-2 text-rule-strong">/</span>
-                beste {quiz.progress.bestCorrectAnswers}
+                <span className="text-positive">beste {bestScoreLabel}</span>
               </>
             ) : null}
           </span>
 
           <span className="inline-flex items-center gap-1.5 font-medium text-ink-soft transition-colors group-hover:text-ink">
-            {isLocked ? 'Bekijk' : played ? 'Opnieuw' : 'Start'}
+            {isLocked ? 'Bekijk' : played ? 'Opnieuw spelen' : 'Start'}
             <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
           </span>
         </div>

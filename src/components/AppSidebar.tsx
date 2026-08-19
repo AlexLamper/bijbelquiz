@@ -25,6 +25,15 @@ import {
 
 import { cn } from '@/lib/utils';
 import { trackEvent } from '@/components/GoogleAnalytics';
+import { yearlyPricePerWeek } from '@/lib/premium-benefits';
+
+/**
+ * Read once at module scope: `NEXT_PUBLIC_` values are inlined at build time,
+ * so this is a constant, not a per-render computation.
+ */
+const sidebarPerWeek = yearlyPricePerWeek(
+  process.env.NEXT_PUBLIC_PREMIUM_YEARLY_PRICE_LABEL || '€39,99'
+);
 
 interface SidebarItem {
   href: string;
@@ -156,21 +165,42 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
         ))}
       </div>
 
+      {/* Sidebar upsell. Deliberately understated - it sits under the
+          navigation all day, so it is a standing offer rather than a banner:
+          hairline card, one figure, one action. The figure is the per-week
+          price, which is the smallest true number this product can quote. */}
       {session && !isPremium && !collapsed && (
-        <section className="mt-3 shrink-0 rounded-lg border border-lapis/45 bg-paper-raised p-4">
-          <p className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-lapis">
-            <Crown className="h-3.5 w-3.5" />
+        <section className="mt-3 shrink-0 rounded-lg border border-rule bg-paper-raised p-4">
+          <p className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+            <span aria-hidden className="h-px w-4 bg-lapis" />
             Premium
           </p>
-          <p className="mt-3 font-display text-base leading-snug text-ink">Samen spelen zonder limiet</p>
-          <p className="mt-1.5 text-xs leading-relaxed text-ink-soft">Host onbeperkt rooms tot 20 spelers en krijg uitleg bij elke vraag.</p>
+
+          <p className="mt-3 font-display text-base leading-snug text-ink">
+            Samen spelen zonder limiet
+          </p>
+
+          {sidebarPerWeek && (
+            <p className="mt-2 flex items-baseline gap-1.5">
+              <span className="font-display text-xl font-normal tabular-nums text-ink">
+                {sidebarPerWeek}
+              </span>
+              <span className="text-[11px] text-ink-muted">per week, jaarlijks</span>
+            </p>
+          )}
+
+          <p className="mt-2 text-xs leading-relaxed text-ink-muted">
+            Onbeperkt hosten tot 20 spelers, uitleg bij elke vraag.
+          </p>
+
           <Link
             href="/premium"
             onClick={() =>
               trackEvent('multiplayer_premium_cta_clicked', { placement: 'sidebar' })
             }
-            className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-lapis px-3 py-2.5 text-xs font-medium text-ink-inverted transition-colors hover:bg-lapis-strong"
+            className="mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-md bg-ink px-3 py-2.5 text-xs font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
           >
+            <Crown className="h-3.5 w-3.5" />
             Bekijk Premium
           </Link>
         </section>

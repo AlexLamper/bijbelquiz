@@ -11,16 +11,27 @@ export const LEVELS = [
   { level: 10, title: 'Legende', minXp: 22500, description: 'Heeft de ultieme kennis bereikt.' },
 ];
 
+/**
+ * The badge catalogue.
+ *
+ * `icon` is a semantic name, not a glyph. Emoji rendered as the badge art put a
+ * different typeface - and a different visual era - next to every piece of
+ * editorial type on the profile page, and they render differently on every
+ * platform. Each client maps the name onto its own icon set instead: the
+ * website onto Lucide, the Flutter app onto Material icons.
+ */
 export const BADGES = [
-  { id: 'first_steps', name: 'Eerste Stappen', description: 'Voltooi je eerste quiz.', icon: '👣' },
-  { id: 'knowledge_seeker', name: 'Kenniszoeker', description: 'Speel 10 verschillende quizzen.', icon: '🔍' },
-  { id: 'perfect_score', name: 'Foutloos', description: 'Haal een 100% score op een quiz.', icon: '⭐' },
-  { id: 'streak_3', name: 'Op Dreef', description: 'Bouw een streak van 3 dagen op.', icon: '🔥' },
-  { id: 'streak_7', name: 'Toegewijd', description: 'Speel 7 dagen op rij.', icon: '📅' },
-  { id: 'scholar', name: 'Geleerde', description: 'Behaal niveau 5.', icon: '🎓' },
-  { id: 'master', name: 'Meester', description: 'Behaal niveau 10.', icon: '👑' },
-  { id: 'all_rounder', name: 'Allrounder', description: 'Speel een quiz in elke categorie.', icon: '🌍' },
-];
+  { id: 'first_steps', name: 'Eerste Stappen', description: 'Voltooi je eerste quiz.', icon: 'footprints' },
+  { id: 'knowledge_seeker', name: 'Kenniszoeker', description: 'Speel 10 verschillende quizzen.', icon: 'search' },
+  { id: 'perfect_score', name: 'Foutloos', description: 'Haal een 100% score op een quiz.', icon: 'target' },
+  { id: 'streak_3', name: 'Op Dreef', description: 'Bouw een streak van 3 dagen op.', icon: 'flame' },
+  { id: 'streak_7', name: 'Toegewijd', description: 'Speel 7 dagen op rij.', icon: 'calendar-check' },
+  { id: 'scholar', name: 'Geleerde', description: 'Behaal niveau 5.', icon: 'graduation-cap' },
+  { id: 'master', name: 'Meester', description: 'Behaal niveau 10.', icon: 'crown' },
+  { id: 'all_rounder', name: 'Allrounder', description: 'Speel een quiz in elke categorie.', icon: 'compass' },
+] as const;
+
+export type BadgeIconName = (typeof BADGES)[number]['icon'];
 
 export function getLevelInfo(xp: number) {
   let currentLevelIndex = 0;

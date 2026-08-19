@@ -98,6 +98,13 @@ export default async function DashboardPage() {
     };
   });
 
+  // Quizzes still to play come first. The featured strip is the shortest list
+  // on the site, so spending its slots on quizzes the reader already finished
+  // is what makes the library look smaller than it is.
+  const featuredQuizzes = [...quizzesWithProgress]
+    .sort((a, b) => Number((a.progress?.attempts ?? 0) > 0) - Number((b.progress?.attempts ?? 0) > 0))
+    .slice(0, 8);
+
   // ── Personal recommendations ────────────────────────────────────────────
   // The three questions on the settings page (reading rhythm, self-rated level,
   // interests) are read here. Without a profile the list would be the same for
@@ -128,7 +135,7 @@ export default async function DashboardPage() {
 
   return (
     <DashboardHomeClient
-      quizzes={JSON.parse(JSON.stringify(quizzesWithProgress.slice(0, 8)))}
+      quizzes={JSON.parse(JSON.stringify(featuredQuizzes))}
       recommendations={JSON.parse(JSON.stringify(recommendations))}
       recommendationLead={describeRecommendationProfile(onboarding)}
       hasRecommendationProfile={hasProfile}

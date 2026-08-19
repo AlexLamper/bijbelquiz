@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { Search, SlidersHorizontal } from 'lucide-react';
 
@@ -175,7 +175,31 @@ export default function QuizzesClient({
     });
   }, [normalizedQuizzes, searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty]);
 
-  const orderedQuizzes = useMemo(() => groupSeries(filteredQuizzes), [filteredQuizzes]);
+  /**
+   * Quizzes you have not played come first.
+   *
+   * A library that opens on the things you already finished makes the same few
+   * quizzes get replayed while the rest is never found. Series stay together -
+   * the grouping runs inside each half - so "Daniel Deel 1" and "Deel 2" are
+   * still adjacent, they just move down together once both are done.
+   */
+  const orderedQuizzes = useMemo(() => {
+    const unplayed = filteredQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) === 0);
+    const played = filteredQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) > 0);
+
+    return [...groupSeries(unplayed), ...groupSeries(played)];
+  }, [filteredQuizzes]);
+
+  const playedCount = useMemo(
+    () => normalizedQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) > 0).length,
+    [normalizedQuizzes]
+  );
+
+  /** Index in `orderedQuizzes` where the already-played half begins. */
+  const firstPlayedIndex = useMemo(
+    () => orderedQuizzes.findIndex((quiz) => (quiz.progress?.attempts ?? 0) > 0),
+    [orderedQuizzes]
+  );
 
   // The difficulty filter is deliberately left out: it is seeded from the saved
   // preference, so counting it would hide the shortlist from exactly the readers
@@ -382,8 +406,20 @@ export default function QuizzesClient({
           </Card>
         ) : (
           <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
-            {orderedQuizzes.map((quiz) => (
-              <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={userIsPremium} />
+            {orderedQuizzes.map((quiz, index) => (
+              <Fragment key={quiz._id}>
+                {/* A labelled rule where the finished half starts, so it is
+                    obvious the grid did not simply run out of new quizzes. */}
+                {index === firstPlayedIndex && firstPlayedIndex > 0 && (
+                  <div className="col-span-full flex items-center gap-4 pt-2">
+                    <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                      Al afgerond ({playedCount})
+                    </span>
+                    <span aria-hidden className="h-px flex-1 bg-rule" />
+                  </div>
+                )}
+                <QuizCard quiz={quiz} isPremiumUser={userIsPremium} />
+              </Fragment>
             ))}
           </div>
         )}

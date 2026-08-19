@@ -16,6 +16,12 @@ const settingsSchema = z
     showBibleReferences: z.boolean().optional(),
     preferredDifficulty: z.enum(['all', 'easy', 'medium', 'hard']).optional(),
     questionFontSize: z.enum(['normal', 'large']).optional(),
+    // A closed set rather than any number: the value drives a countdown, and
+    // an arbitrary one would let a client invent a two-second question.
+    questionTimerSeconds: z
+      .union([z.literal(0), z.literal(30), z.literal(60), z.literal(90)])
+      .optional(),
+    readPassageFirst: z.boolean().optional(),
   })
   .strict();
 
@@ -111,6 +117,8 @@ export async function PUT(req: NextRequest) {
       if (settings.showBibleReferences !== undefined) updateSet['settings.showBibleReferences'] = settings.showBibleReferences;
       if (settings.preferredDifficulty !== undefined) updateSet['settings.preferredDifficulty'] = settings.preferredDifficulty;
       if (settings.questionFontSize !== undefined) updateSet['settings.questionFontSize'] = settings.questionFontSize;
+      if (settings.questionTimerSeconds !== undefined) updateSet['settings.questionTimerSeconds'] = settings.questionTimerSeconds;
+      if (settings.readPassageFirst !== undefined) updateSet['settings.readPassageFirst'] = settings.readPassageFirst;
     }
 
     if (parsed.data.onboarding) {

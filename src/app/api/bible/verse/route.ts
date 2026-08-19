@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { parseBibleReference, formatReferenceDisplay } from '@/lib/bible-reference';
 
-const BIJBEL_API_BASE = 'https://bijbelapi.com';
+// The apex domain answers every request with a 301 to `www`, so addressing it
+// directly cost an extra round trip on every verse lookup.
+const BIJBEL_API_BASE = 'https://www.bijbelapi.com';
 
 function getApiKey(): string {
   return process.env.BIJBEL_API_KEY ?? '';
@@ -53,7 +55,10 @@ async function fetchSingleVerse(book: string, chapter: number, verse: number, ve
 }
 
 async function fetchPassage(book: string, chapter: number, verseStart: number, verseEnd: number, version: string): Promise<string | null> {
-  const url = `${BIJBEL_API_BASE}/api/passage?book=${encodeURIComponent(book)}&chapter=${chapter}&verseStart=${verseStart}&verseEnd=${verseEnd}&version=${version}`;
+  // The upstream parameters are `start` and `end`; the old `verseStart` /
+  // `verseEnd` names failed validation every time, so every multi-verse
+  // reference silently fell through to the per-verse loop below.
+  const url = `${BIJBEL_API_BASE}/api/passage?book=${encodeURIComponent(book)}&chapter=${chapter}&start=${verseStart}&end=${verseEnd}&version=${version}`;
   const res = await apiFetch(url);
   if (!res.ok) {
     // Fallback: fetch each verse individually and join

@@ -1,7 +1,20 @@
 import { getServerSession } from 'next-auth';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { CheckCircle2, CreditCard, Crown } from 'lucide-react';
+import type { ComponentType } from 'react';
+import {
+  Award,
+  CalendarCheck,
+  CheckCircle2,
+  Compass,
+  CreditCard,
+  Crown,
+  Flame,
+  Footprints,
+  GraduationCap,
+  Search,
+  Target,
+} from 'lucide-react';
 
 import { authOptions } from '@/lib/auth';
 import { connectDB, User } from '@/database';
@@ -15,6 +28,18 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Eyebrow, Figure, SectionHead } from '@/components/editorial';
 import { Card, CardContent } from '@/components/ui/card';
+
+/** Semantic badge icon names, mapped onto this platform's icon set. */
+const BADGE_ICONS: Record<string, ComponentType<{ className?: string }>> = {
+  footprints: Footprints,
+  search: Search,
+  target: Target,
+  flame: Flame,
+  'calendar-check': CalendarCheck,
+  'graduation-cap': GraduationCap,
+  crown: Crown,
+  compass: Compass,
+};
 
 export const metadata: Metadata = {
   title: 'Mijn Profiel - BijbelQuiz',
@@ -213,37 +238,60 @@ export default async function ProfilePage() {
                 }
               />
 
-              <div className="mt-7 grid gap-3 sm:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2">
+              {/* Badges are struck marks, not stickers: a hairline square with
+                  a line icon, filled in ink once earned and left as an empty
+                  outline while it is not. */}
+              <ul className="mt-7 divide-y divide-rule overflow-hidden rounded-lg border border-rule">
                 {BADGES.map((badge) => {
                   const earned = (user.badges || []).includes(badge.id);
+                  const Icon = BADGE_ICONS[badge.icon] ?? Award;
 
                   return (
-                    <Card
+                    <li
                       key={badge.id}
                       className={
                         earned
-                          ? 'border-lapis/35 bg-paper-sunken py-0   '
-                          : 'border-rule bg-paper-raised py-0 opacity-60'
+                          ? 'flex items-center gap-3.5 bg-paper-raised px-4 py-3.5'
+                          : 'flex items-center gap-3.5 bg-paper px-4 py-3.5'
                       }
                     >
-                      <CardContent className="p-3 sm:p-4">
-                        <div className="flex items-start gap-3">
-                          <div className={`shrink-0 text-2xl ${earned ? '' : 'grayscale'}`}>{badge.icon}</div>
-                          <div className="min-w-0 flex-1">
-                            <p className="break-words font-display text-sm leading-snug text-ink">{badge.name}</p>
-                            <p className="mt-1 break-words text-[11px] leading-relaxed text-ink-muted sm:text-xs">{badge.description}</p>
-                          </div>
-                          {earned ? (
-                            <CheckCircle2 className="h-4 w-4 shrink-0 text-positive dark:text-positive" />
-                          ) : (
-                            <span className="mt-0.5 shrink-0 whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.16em] text-ink-muted sm:text-[10px]">Nog niet</span>
-                          )}
-                        </div>
-                      </CardContent>
-                    </Card>
+                      <span
+                        aria-hidden
+                        className={
+                          earned
+                            ? 'flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-ink text-ink-inverted'
+                            : 'flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-dashed border-rule-strong text-ink-muted'
+                        }
+                      >
+                        <Icon className="h-4 w-4" />
+                      </span>
+
+                      <div className="min-w-0 flex-1">
+                        <p
+                          className={
+                            earned
+                              ? 'break-words font-display text-sm leading-snug text-ink'
+                              : 'break-words font-display text-sm leading-snug text-ink-muted'
+                          }
+                        >
+                          {badge.name}
+                        </p>
+                        <p className="mt-0.5 break-words text-[11px] leading-relaxed text-ink-muted">
+                          {badge.description}
+                        </p>
+                      </div>
+
+                      {earned ? (
+                        <CheckCircle2 className="h-4 w-4 shrink-0 text-positive" />
+                      ) : (
+                        <span className="shrink-0 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                          Open
+                        </span>
+                      )}
+                    </li>
                   );
                 })}
-              </div>
+              </ul>
           </aside>
         </div>
 
