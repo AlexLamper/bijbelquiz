@@ -1,12 +1,10 @@
-import { connectDB, Quiz, Category, User, UserProgress } from '@/database';
+import { connectDB, Quiz, Category, UserProgress } from '@/database';
 import { getServerSession } from 'next-auth';
 import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
 import QuizzesClient from '@/components/QuizzesClient';
 import { buildQuizProgressMap } from '@/lib/quiz-progress';
-import { describeRecommendationProfile, recommendQuizzes } from '@/lib/quiz-recommendations';
-import { normalizeOnboardingSettings } from '@/lib/user-settings';
 
 export const metadata: Metadata = {
   title: 'Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz',
@@ -60,20 +58,9 @@ async function getData(userId?: string) {
     };
   });
 
-  // Study preferences from the settings page decide the shortlist above the
-  // library. Read here rather than in the client so the first paint already has
-  // the right three quizzes.
-  const user = userId ? await User.findById(userId).select('onboarding').lean() : null;
-  const onboarding = normalizeOnboardingSettings(
-    (user as { onboarding?: Record<string, unknown> } | null)?.onboarding
-  );
-  const recommendations = recommendQuizzes(quizzesWithProgress, onboarding, { limit: 3 });
-
   return {
     quizzes: JSON.parse(JSON.stringify(quizzesWithProgress)),
     categories: JSON.parse(JSON.stringify(categories)),
-    recommendations: JSON.parse(JSON.stringify(recommendations)),
-    recommendationLead: describeRecommendationProfile(onboarding),
   };
 }
 
@@ -86,9 +73,7 @@ export default async function QuizzesPage({
   const session = await getServerSession(authOptions);
   const userIsPremium = !!session?.user?.isPremium;
 
-  const { quizzes, categories, recommendations, recommendationLead } = await getData(
-    session?.user?.id
-  );
+  const { quizzes, categories } = await getData(session?.user?.id);
   const currentCategory = params.category || 'all';
 
   let initialCategoryId = 'all';
@@ -131,8 +116,6 @@ export default async function QuizzesPage({
         userIsPremium={userIsPremium}
         canCreateQuiz={Boolean(session?.user)}
         initialCategoryId={initialCategoryId}
-        recommendations={recommendations}
-        recommendationLead={recommendationLead}
       />
     </>
   );

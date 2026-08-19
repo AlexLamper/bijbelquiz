@@ -1,5 +1,6 @@
 import NextAuth, { DefaultSession, DefaultUser } from "next-auth"
 import type { UserSettings } from "@/lib/user-settings"
+import type { AvatarConfig } from "@/lib/avatar"
 
 declare module "next-auth" {
   interface Session {
@@ -14,6 +15,8 @@ declare module "next-auth" {
        * every session refresh, so this costs no extra query.
        */
       settings: UserSettings;
+      /** The mascot that stands in for a profile photo across the product. */
+      avatar: AvatarConfig;
     } & DefaultSession["user"]
   }
 
@@ -23,6 +26,7 @@ declare module "next-auth" {
     xp: number;
     role: 'user' | 'admin';
     settings?: UserSettings;
+    avatar?: AvatarConfig;
   }
 }
 
@@ -38,5 +42,6 @@ declare module "next-auth/jwt" {
      * (or is not) here into a complete object.
      */
     settings?: UserSettings;
+    avatar?: AvatarConfig;
   }
 }

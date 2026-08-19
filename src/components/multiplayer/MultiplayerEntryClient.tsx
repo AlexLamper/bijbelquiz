@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import {
   ArrowRight,
   ChevronDown,
-  Crown,
+  Gem,
   Gamepad2,
   Lock,
   Share2,
@@ -299,7 +299,7 @@ export default function MultiplayerEntryClient({
   ];
 
   return (
-    <div className="mx-auto w-full max-w-5xl px-4 py-6 lg:px-6 lg:py-8">
+    <div className="mx-auto w-full max-w-[1180px] px-5 pb-16 pt-8 sm:px-8 lg:px-10 lg:pt-10">
       {/* Header: one sentence of what this is, and the quota, nothing else */}
       <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
         <div>
@@ -313,7 +313,7 @@ export default function MultiplayerEntryClient({
 
         {quota.isPremium ? (
           <span className="inline-flex items-center gap-1.5 rounded-md border border-rule bg-paper-sunken px-2.5 py-1.5 text-xs font-medium text-ink">
-            <Crown className="h-3.5 w-3.5" aria-hidden />
+            <Gem className="h-3.5 w-3.5" aria-hidden />
             Premium - onbeperkt spellen
           </span>
         ) : (
@@ -502,7 +502,7 @@ export default function MultiplayerEntryClient({
                             {count} spelers
                             {isPremiumOnly && (
                               <span className="inline-flex items-center gap-1 rounded-md bg-paper-sunken px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink">
-                                <Crown className="h-3 w-3" />
+                                <Gem className="h-3 w-3" />
                                 Premium
                               </span>
                             )}
@@ -539,7 +539,7 @@ export default function MultiplayerEntryClient({
                 }
               >
                 <Link href={premiumPaywallHref('host_quota_exhausted', '/samen-spelen')}>
-                  <Crown className="mr-2 h-4 w-4" />
+                  <Gem className="mr-2 h-4 w-4" />
                   Word Premium om te hosten
                 </Link>
               </Button>

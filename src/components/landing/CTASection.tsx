@@ -22,30 +22,46 @@ export function CTASection() {
         </p>
 
         <div className="mt-7 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-          <InkButton href="/quizzen" className="w-full sm:w-auto">
+          {/* Same height and padding as the App Store button beside it: two
+              primary actions of different sizes read as a mistake. */}
+          <InkButton
+            href="/quizzen"
+            className="h-13 w-full px-5 text-[15px] font-medium sm:w-auto"
+          >
             Speel direct online
           </InkButton>
           <DownloadButtons compactOnMobile />
         </div>
 
+        {/* The sentence is prose; only the destination is a link, and it is
+            underlined so it reads as one. A whole line styled as a link but
+            drawn like body text is a link nobody clicks. */}
         <div className="mt-10 flex flex-col items-center justify-center gap-x-6 gap-y-2 border-t border-rule pt-6 text-xs text-ink-muted sm:flex-row">
-          <Link
-            href="https://www.bijbel-studie.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-ink"
-          >
-            Verdiep je verder via Bijbel Studie
-          </Link>
+          <p>
+            Verdiep je verder via{' '}
+            <Link
+              href="https://www.bijbel-studie.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-ink underline decoration-rule-strong underline-offset-4 transition-colors hover:decoration-ink"
+            >
+              Bijbel Studie
+            </Link>
+          </p>
+
           <span aria-hidden className="hidden h-3 w-px bg-rule sm:block" />
-          <Link
-            href="https://www.bijbelapi.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-ink"
-          >
-            Ontwikkeld met de Nederlandse BijbelAPI
-          </Link>
+
+          <p>
+            Ontwikkeld met de Nederlandse{' '}
+            <Link
+              href="https://www.bijbelapi.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-ink underline decoration-rule-strong underline-offset-4 transition-colors hover:decoration-ink"
+            >
+              BijbelAPI
+            </Link>
+          </p>
         </div>
       </div>
     </section>

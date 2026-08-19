@@ -5,6 +5,7 @@ import bcrypt from 'bcryptjs';
 import { connectDB, User } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { normalizeUserSettings, type UserSettings } from '@/lib/user-settings';
+import { resolveAvatar } from '@/lib/avatar';
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -101,6 +102,9 @@ export const authOptions: NextAuthOptions = {
             token.role = dbUser.role;
             token.image = dbUser.image || user.image || token.image;
             token.settings = normalizeUserSettings(dbUser.settings);
+            // The mascot stands in for a profile photo everywhere it appears,
+            // so it travels on the session rather than being fetched per view.
+            token.avatar = resolveAvatar(dbUser.avatar, dbUser._id.toString());
           }
         } else {
           token.id = user.id;
@@ -110,6 +114,7 @@ export const authOptions: NextAuthOptions = {
           token.role = user.role;
           token.image = user.image || token.image;
           token.settings = normalizeUserSettings(user.settings);
+          token.avatar = resolveAvatar(undefined, String(user.id));
         }
       }
 
@@ -148,6 +153,10 @@ export const authOptions: NextAuthOptions = {
             session.user.image = typeof token.image === 'string' ? token.image : session.user.image;
             // Normalized again rather than trusted: a token minted before this
             // field existed carries no settings at all.
+            session.user.avatar = resolveAvatar(
+              token.avatar as Parameters<typeof resolveAvatar>[0],
+              String(token.id || '')
+            );
             session.user.settings = normalizeUserSettings(
               token.settings as Partial<UserSettings> | undefined
             );

@@ -7,9 +7,9 @@ import { useSession } from 'next-auth/react';
 import {
   ArrowLeft,
   ArrowRight,
-  Award,
   BookOpen,
   CheckCircle2,
+  Gem,
   Lock,
   Maximize,
   RotateCcw,
@@ -21,7 +21,6 @@ import {
 import QuizPremiumReviewSection from '@/components/quiz/QuizPremiumReviewSection';
 import BibleVerseDisplay from '@/components/BibleVerseDisplay';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
 import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
 import { track } from '@/lib/analytics/client';
@@ -485,8 +484,32 @@ export default function QuizPlayer({
       ? buildReviewQuestionsFromSelections(quiz.questions as Parameters<typeof buildReviewQuestionsFromSelections>[0], selectedAnswers)
       : [];
 
+    // The result speaks in its own voice rather than printing "Quiz afgerond"
+    // over every outcome: a 3/15 and a 15/15 are not the same event.
+    const verdict =
+      percentage >= 90
+        ? {
+            headline: 'Uitstekend gedaan',
+            lead: 'Bijna alles goed. Tijd voor een moeilijkere quiz of een nieuw bijbelboek.',
+            tone: 'text-positive',
+            bar: 'bg-positive',
+          }
+        : percentage >= 60
+          ? {
+              headline: 'Goed gedaan',
+              lead: 'Een stevige basis. Speel hem nog eens of ga verder in dezelfde categorie.',
+              tone: 'text-ink',
+              bar: 'bg-lapis',
+            }
+          : {
+              headline: 'Quiz afgerond',
+              lead: 'Herhaling helpt: speel opnieuw en kijk hoeveel je nu al onthoudt.',
+              tone: 'text-ink',
+              bar: 'bg-vermilion',
+            };
+
     return (
-      <div className="mx-auto w-full max-w-3xl px-5 pb-16 pt-10 sm:px-8">
+      <div className="mx-auto w-full max-w-[760px] px-5 pb-20 pt-10 sm:px-8">
         {!isPremium && showPremiumReviewUpsell && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/45 px-4">
             <div className="w-full max-w-md rounded-lg border border-rule bg-paper-raised p-5">
@@ -516,102 +539,159 @@ export default function QuizPlayer({
           </div>
         )}
 
-        <Card className="border-rule py-0">
-          <CardContent className="p-6 lg:p-8">
-            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">Resultaat</p>
-            <h1 className="mt-2 font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">Quiz afgerond</h1>
+        {/* ── The result ────────────────────────────────────────────────
+            An editorial report, not a boxed card inside a boxed card: the
+            score is the headline, everything else is set against hairlines in
+            the same rhythm as the rest of the product. */}
+        <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+          {quiz.title}
+        </p>
 
-            <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
-              <div className="border border-rule bg-paper-sunken p-5">
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Jouw score</p>
-                <div className="mt-2 flex items-end gap-2">
-                  <p className="text-5xl font-semibold text-ink">{score}</p>
-                  <p className="pb-1 text-2xl font-semibold text-ink-soft">/ {quiz.questions.length}</p>
-                </div>
-                <p className="mt-2 text-sm text-muted-foreground">{percentage}% correct</p>
+        <h1 className="mt-3 font-display text-[34px] font-normal leading-[1.05] tracking-[-0.025em] text-ink sm:text-[44px]">
+          {verdict.headline}
+        </h1>
 
-                <div className="mt-4 inline-flex items-center gap-2 bg-paper-sunken px-3 py-1 text-sm font-medium text-ink">
-                  <Award className="h-4 w-4" />
-                  + {resolvedXp} XP verdiend
-                </div>
-              </div>
+        <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-ink-muted">
+          {verdict.lead}
+        </p>
 
-              <div className="border border-rule bg-paper-raised p-5">
-                <p className="text-sm font-semibold text-ink">Volgende stap</p>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {percentage >= 90
-                    ? 'Sterk resultaat. Kies nu een moeilijkere quiz of een nieuwe categorie.'
-                    : percentage >= 60
-                      ? 'Goede basis. Herhaal deze quiz of werk verder in dezelfde categorie.'
-                      : 'Herhaling helpt. Speel opnieuw om je score te verbeteren.'}
+        {/* Score, as one figure with the bar underneath it. */}
+        <div className="mt-9 border-y border-rule py-7">
+          <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-5">
+            <div>
+              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                Jouw score
+              </p>
+              <p className="mt-2 flex items-baseline gap-2">
+                <span className={`font-display text-[56px] font-normal leading-none tabular-nums ${verdict.tone}`}>
+                  {score}
+                </span>
+                <span className="font-display text-2xl leading-none text-ink-muted">
+                  / {quiz.questions.length}
+                </span>
+              </p>
+            </div>
+
+            <div className="flex gap-8">
+              <div>
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  Correct
                 </p>
+                <p className="mt-2 font-display text-[26px] font-normal leading-none tabular-nums text-ink">
+                  {percentage}%
+                </p>
+              </div>
 
-                {!isPremium && (
-                  <div className="mt-4 border border-rule bg-paper-sunken p-3">
-                    <p className="text-sm font-semibold text-ink">Premium analyse</p>
-                    <p className="mt-1 text-xs text-muted-foreground">
-                      Ontgrendel uitgebreide uitleg en meer voortgangsinzichten.
-                    </p>
-                    <Button asChild className="mt-3 h-9 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
-                      <Link href={paywallHref}>Bekijk Premium</Link>
-                    </Button>
-                  </div>
-                )}
-                <div className="mt-4 border-t border-rule pt-3">
-                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Meer ontdekken</p>
-                  <a
-                    href={studyTopicLink.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 block text-sm font-medium text-ink hover:text-ink"
-                  >
-                    Verdiep je verder in {studyTopicLink.label} op Bijbel Studie
-                  </a>
-                  <a
-                    href="https://www.bijbelapi.com/docs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-1 block text-xs text-muted-foreground hover:text-foreground"
-                  >
-                    Mogelijk gemaakt met BijbelAPI
-                  </a>
-                </div>
+              <div>
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  Verdiend
+                </p>
+                <p className="mt-2 inline-flex items-baseline gap-1.5 font-display text-[26px] font-normal leading-none tabular-nums text-positive">
+                  +{resolvedXp}
+                  <span className="text-xs font-sans font-medium uppercase tracking-[0.16em] text-ink-muted">
+                    xp
+                  </span>
+                </p>
               </div>
             </div>
+          </div>
 
-            {isPremium && premiumReviewQuestions.length > 0 && (
-              <div className="mt-8 border-t border-rule pt-6">
-                <QuizPremiumReviewSection
-                  questions={premiumReviewQuestions}
-                  score={score}
-                  totalQuestions={quiz.questions.length}
-                  xpEarned={resolvedXp}
-                />
-              </div>
-            )}
+          <div className="mt-6 h-1 w-full bg-rule">
+            <div
+              className={`h-1 transition-[width] duration-1000 ease-out ${verdict.bar}`}
+              style={{ width: `${Math.max(2, percentage)}%` }}
+            />
+          </div>
+        </div>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Button
-                type="button"
-                variant="outline"
-                onClick={() => window.location.reload()}
-                className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken"
-              >
-                <RotateCcw className="mr-2 h-4 w-4" />
-                Opnieuw spelen
-              </Button>
+        {/* Actions come immediately after the figure - what to do next is the
+            question the reader actually has here. */}
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <Button
+            type="button"
+            onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')}
+            disabled={isSaving}
+            className="h-12 flex-1 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+          >
+            {isSaving ? 'Opslaan...' : isLoggedIn ? 'Naar dashboard' : 'Naar home'}
+          </Button>
 
-              <Button
-                type="button"
-                onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')}
-                disabled={isSaving}
-                className="h-10 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft"
-              >
-                {isSaving ? 'Opslaan...' : isLoggedIn ? 'Naar dashboard' : 'Naar home'}
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => window.location.reload()}
+            className="h-12 flex-1 rounded-md border-rule bg-paper-raised px-5 text-sm font-medium text-ink hover:bg-paper-sunken"
+          >
+            <RotateCcw className="mr-2 h-4 w-4" />
+            Opnieuw spelen
+          </Button>
+
+          <Button
+            asChild
+            variant="outline"
+            className="h-12 flex-1 rounded-md border-rule bg-paper px-5 text-sm font-medium text-ink-soft hover:bg-paper-sunken hover:text-ink"
+          >
+            <Link href="/quizzen">Volgende quiz</Link>
+          </Button>
+        </div>
+
+        {isPremium && premiumReviewQuestions.length > 0 && (
+          <div className="mt-10 border-t border-rule pt-8">
+            <QuizPremiumReviewSection
+              questions={premiumReviewQuestions}
+              score={score}
+              totalQuestions={quiz.questions.length}
+              xpEarned={resolvedXp}
+            />
+          </div>
+        )}
+
+        {!isPremium && (
+          <div className="mt-10 rounded-lg border border-lapis/45 bg-paper-raised p-5 sm:p-6">
+            <p className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+              <span aria-hidden className="h-px w-6 bg-lapis" />
+              Premium
+            </p>
+            <p className="mt-3 font-display text-lg leading-snug text-ink">
+              Zie precies welke vragen je fout had
+            </p>
+            <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">
+              Met Premium krijg je per vraag de uitleg en de bijbelverwijzing, en zie je je
+              voortgang per bijbelboek terug.
+            </p>
+            <Button
+              asChild
+              className="mt-4 h-10 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+            >
+              <Link href={paywallHref}>
+                <Gem className="mr-2 h-4 w-4" />
+                Bekijk Premium
+              </Link>
+            </Button>
+          </div>
+        )}
+
+        <div className="mt-10 border-t border-rule pt-5">
+          <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+            Verder lezen
+          </p>
+          <a
+            href={studyTopicLink.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2.5 block text-sm font-medium text-ink underline decoration-rule-strong underline-offset-4 transition-colors hover:decoration-ink"
+          >
+            Verdiep je in {studyTopicLink.label} op Bijbel Studie
+          </a>
+          <a
+            href="https://www.bijbelapi.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 block text-xs text-ink-muted underline decoration-rule underline-offset-4 transition-colors hover:text-ink"
+          >
+            Mogelijk gemaakt met BijbelAPI
+          </a>
+        </div>
       </div>
     );
   }

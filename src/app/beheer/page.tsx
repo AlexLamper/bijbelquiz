@@ -65,7 +65,7 @@ export default async function AdminDashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-6 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <Card className="border-rule py-0">
             <CardContent className="p-4">
@@ -115,7 +115,7 @@ export default async function AdminDashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-6 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
         <div className="grid gap-6 lg:grid-cols-2">
           <Card className="border-rule py-0">
             <CardHeader className="pb-3 pt-5">
@@ -198,11 +198,11 @@ export default async function AdminDashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-6 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
         <AdminGroupLicenseForm defaultSeats={GROUP_LICENSE_SEATS} />
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-6 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-3 pt-5">
             <CardTitle className="flex items-center gap-2 leading-tight text-ink">

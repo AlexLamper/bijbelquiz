@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Play, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, Play, Users } from 'lucide-react';
 
 import { trackEvent } from '@/components/GoogleAnalytics';
 import SeasonCard from '@/components/seasons/SeasonCard';
+import PremiumNudge from '@/components/premium/PremiumNudge';
 import { QuizTile, type DashboardQuiz } from '@/components/editorial/QuizTile';
 import {
   ArrowLink,
@@ -209,23 +210,12 @@ export default function DashboardHomeClient({
 
             {hasRecommendationProfile && recommendations.length > 0 ? (
               <div className="mt-7 grid gap-x-8 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">
-                {recommendations.map(({ quiz, reasons }) => (
-                  <div key={quiz._id} className="flex flex-col">
-                    <QuizTile quiz={quiz} isPremiumUser={isPremium} />
-                    {reasons.length > 0 && (
-                      <ul className="mt-3 flex flex-wrap gap-1.5">
-                        {reasons.map((reason) => (
-                          <li
-                            key={reason}
-                            className="inline-flex items-center gap-1.5 rounded-full border border-lapis/35 bg-lapis-tint px-2.5 py-1 text-xs font-medium text-lapis"
-                          >
-                            <Sparkles className="h-3 w-3 shrink-0" aria-hidden />
-                            {reason}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                {/* Tiles only. The reasoning behind the ranking is stated
+                    once, in the section lead - repeating it as a chip under
+                    every tile added noise to a grid that reads perfectly well
+                    without it. */}
+                {recommendations.map(({ quiz }) => (
+                  <QuizTile key={quiz._id} quiz={quiz} isPremiumUser={isPremium} />
                 ))}
               </div>
             ) : (
@@ -361,33 +351,16 @@ export default function DashboardHomeClient({
                 </div>
               </Panel>
 
-              {!isPremium && (
-                <Panel tone="lapis">
-                  <Eyebrow>Premium</Eyebrow>
-                  <h3 className="mt-4 font-display text-xl font-normal leading-snug text-ink">
-                    Onbeperkt spelen en verdiepen
-                  </h3>
-                  <p className="mt-2.5 text-sm leading-relaxed text-ink-soft">
-                    Kamers tot 20 spelers, exclusieve quizzen en uitleg bij elke vraag.
-                  </p>
-                  <div className="mt-6">
-                    <ArrowLink
-                      href="/premium"
-                      onClick={() =>
-                        trackEvent('multiplayer_premium_cta_clicked', {
-                          placement: 'dashboard_panel',
-                        })
-                      }
-                    >
-                      Bekijk Premium
-                    </ArrowLink>
-                  </div>
-                </Panel>
-              )}
+
             </div>
           </div>
         </section>
       </div>
+
+      {/* The Premium offer sits in the corner rather than in the page body,
+          where it used to compete with the reader's own progress for the same
+          column. Dismissable, and it stays dismissed. */}
+      {!isPremium && isLoggedIn && <PremiumNudge />}
     </div>
   );
 }

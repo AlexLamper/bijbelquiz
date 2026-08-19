@@ -364,12 +364,14 @@ export default function PremiumOfferLayout({
         {/* The saving is the single most persuasive number here, so it is stated
             once at full volume rather than only as a chip on one row. */}
         {savings !== null && yearlyAvailable && (
-          <p className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-lg bg-vermilion px-5 py-3.5 text-sm font-medium text-ink-inverted">
-            <span className="rounded-sm bg-ink-inverted/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em]">
+          <p className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-lg border border-lapis/30 bg-lapis-tint px-5 py-3.5 text-sm text-ink">
+            <span className="rounded-sm bg-lapis px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-ink-inverted">
               Bespaar {savings}%
             </span>
-            Het jaarplan kost {yearlyPriceLabel} in plaats van {monthlyPriceLabel} per maand
-            {yearlyPerWeek ? ` - ${yearlyPerWeek} per week` : ''}.
+            <span>
+              Het jaarplan kost {yearlyPriceLabel} in plaats van {monthlyPriceLabel} per maand
+              {yearlyPerWeek ? ` - ${yearlyPerWeek} per week` : ''}.
+            </span>
           </p>
         )}
 
@@ -412,7 +414,7 @@ export default function PremiumOfferLayout({
                               className={cn(
                                 'inline-flex items-center rounded-sm px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em]',
                                 row.badge.tone === 'loud'
-                                  ? 'bg-vermilion text-ink-inverted'
+                                  ? 'bg-lapis text-ink-inverted'
                                   : 'border border-rule-strong bg-paper text-ink-soft'
                               )}
                             >

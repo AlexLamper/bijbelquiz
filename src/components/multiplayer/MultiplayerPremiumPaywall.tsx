@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect } from 'react';
-import { Check, Crown } from 'lucide-react';
+import { Check, Gem } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { trackEvent } from '@/components/GoogleAnalytics';
@@ -54,7 +54,7 @@ export default function MultiplayerPremiumPaywall({
       data-paywall-placement={placement}
     >
       <p className="inline-flex items-center gap-1 rounded-md bg-ink-soft px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-ink-inverted">
-        <Crown className="h-3 w-3" />
+        <Gem className="h-3 w-3" />
         Premium
       </p>
 

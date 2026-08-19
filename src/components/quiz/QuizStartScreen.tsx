@@ -94,7 +94,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
 
   return (
     <div className="min-h-screen bg-paper">
-      <div className="mx-auto w-full max-w-[880px] px-5 pb-16 pt-8 sm:px-8 lg:pt-10">
+      <div className="mx-auto w-full max-w-[820px] px-5 pb-10 pt-5 sm:px-8 lg:pt-7">
         <Link
           href="/quizzen"
           className="group inline-flex items-center gap-2 text-sm font-medium text-ink-muted transition-colors hover:text-ink"
@@ -104,9 +104,9 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
         </Link>
 
         {/* ── What this quiz is ─────────────────────────────────────────── */}
-        <header className="mt-6">
+        <header className="mt-4">
           {quiz.imageUrl && (
-            <div className="relative aspect-16/9 w-full overflow-hidden rounded-lg bg-paper-sunken ring-1 ring-rule ring-inset sm:aspect-21/9">
+            <div className="relative aspect-[21/6] w-full overflow-hidden rounded-lg bg-paper-sunken ring-1 ring-rule ring-inset sm:aspect-[32/7]">
               <Image
                 src={quiz.imageUrl}
                 alt=""
@@ -118,25 +118,25 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
             </div>
           )}
 
-          <p className="mt-6 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+          <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
             {quiz.categoryTitle || 'Algemeen'}
             <span className="mx-2 text-rule-strong">/</span>
             {difficultyLabel}
           </p>
 
-          <h1 className="mt-3 font-display text-[30px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">
+          <h1 className="mt-2 font-display text-[26px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[32px]">
             {quiz.title}
           </h1>
 
           {quiz.description && (
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
+            <p className="mt-2.5 line-clamp-2 max-w-2xl text-sm leading-relaxed text-ink-muted">
               {quiz.description}
             </p>
           )}
         </header>
 
         {/* ── Figures ───────────────────────────────────────────────────── */}
-        <div className="mt-8 grid grid-cols-3 gap-x-6 border-y border-rule py-5 sm:divide-x sm:divide-rule">
+        <div className="mt-5 grid grid-cols-3 gap-x-6 border-y border-rule py-3.5 sm:divide-x sm:divide-rule">
           {[
             { label: 'Vragen', value: String(quiz.questionCount) },
             { label: 'Duur', value: `${minutes} min` },
@@ -146,7 +146,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
               <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
                 {figure.label}
               </p>
-              <p className="mt-1.5 font-display text-[22px] font-normal leading-none tabular-nums text-ink">
+              <p className="mt-1 font-display text-[19px] font-normal leading-none tabular-nums text-ink">
                 {figure.value}
               </p>
             </div>
@@ -155,7 +155,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
 
         {/* ── Already played ────────────────────────────────────────────── */}
         {lastResult && (
-          <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 rounded-lg border border-positive/35 bg-positive-tint px-5 py-4">
+          <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-lg border border-positive/35 bg-positive-tint px-4 py-2.5 text-sm">
             <span className="inline-flex items-center gap-2 text-sm font-medium text-ink">
               <span
                 aria-hidden
@@ -174,34 +174,29 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
         )}
 
         {/* ── How you want to play ──────────────────────────────────────── */}
-        <section className="mt-10">
-          <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-2 border-b border-rule pb-3.5">
-            <div>
-              <span className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
-                <span aria-hidden className="h-px w-6 bg-lapis" />
-                Instellingen
-              </span>
-              <h2 className="mt-2.5 font-display text-xl font-normal tracking-[-0.015em] text-ink">
-                Hoe wil je spelen?
-              </h2>
-            </div>
-            <p className="text-xs text-ink-muted">Wordt onthouden voor volgende quizzen</p>
+        <section className="mt-6">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+            <span className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+              <span aria-hidden className="h-px w-6 bg-lapis" />
+              Hoe wil je spelen?
+            </span>
+            <p className="text-xs text-ink-muted">Wordt onthouden</p>
           </div>
 
-          <div className="mt-6 divide-y divide-rule overflow-hidden rounded-lg border border-rule">
+          <div className="mt-3 divide-y divide-rule overflow-hidden rounded-lg border border-rule">
             {/* Read the chapter first - only offered when there is one. */}
             {passage && (
-              <label className="flex cursor-pointer items-start gap-4 bg-paper-raised p-5">
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
+              <label className="flex cursor-pointer items-center gap-3.5 bg-paper-raised px-4 py-3.5">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
                   <BookOpen className="h-4 w-4" />
                 </span>
 
                 <span className="min-w-0 flex-1">
-                  <span className="block font-display text-base text-ink">
+                  <span className="block text-sm font-medium text-ink">
                     Lees eerst {passage.label}
                   </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-ink-muted">
-                    Je leest het hoofdstuk waar deze quiz over gaat voordat de vragen beginnen.
+                  <span className="mt-0.5 block text-xs text-ink-muted">
+                    Het hoofdstuk waar deze quiz over gaat.
                   </span>
                 </span>
 
@@ -217,7 +212,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
                 <span
                   aria-hidden
                   className={cn(
-                    'mt-1 flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 transition-colors',
+                    'flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 transition-colors',
                     readPassageFirst ? 'bg-ink' : 'bg-rule-strong'
                   )}
                 >
@@ -232,16 +227,14 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
             )}
 
             {/* Timer */}
-            <div className="flex flex-wrap items-start gap-4 bg-paper-raised p-5">
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
+            <div className="flex flex-wrap items-center gap-3.5 bg-paper-raised px-4 py-3.5">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
                 <Timer className="h-4 w-4" />
               </span>
 
-              <div className="min-w-[12rem] flex-1">
-                <p className="font-display text-base text-ink">Tijd per vraag</p>
-                <p className="mt-1 text-sm leading-relaxed text-ink-muted">
-                  Standaard uit. Zet een klok aan als je jezelf wilt uitdagen.
-                </p>
+              <div className="min-w-[9rem] flex-1">
+                <p className="text-sm font-medium text-ink">Tijd per vraag</p>
+                <p className="mt-0.5 text-xs text-ink-muted">Standaard uit.</p>
               </div>
 
               <div className="flex w-full shrink-0 gap-1.5 sm:w-auto">
@@ -254,7 +247,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
                       persist({ questionTimerSeconds: choice });
                     }}
                     className={cn(
-                      'h-10 flex-1 rounded-md border px-3 text-sm font-medium transition-colors sm:flex-none',
+                      'h-9 flex-1 rounded-md border px-3 text-sm font-medium transition-colors sm:flex-none',
                       timerSeconds === choice
                         ? 'border-ink bg-ink text-ink-inverted'
                         : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink'
@@ -267,16 +260,14 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
             </div>
 
             {/* Question text size */}
-            <div className="flex flex-wrap items-start gap-4 bg-paper-raised p-5">
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
+            <div className="flex flex-wrap items-center gap-3.5 bg-paper-raised px-4 py-3.5">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
                 <Type className="h-4 w-4" />
               </span>
 
-              <div className="min-w-[12rem] flex-1">
-                <p className="font-display text-base text-ink">Tekstgrootte</p>
-                <p className="mt-1 text-sm leading-relaxed text-ink-muted">
-                  Hoe groot de vraag in beeld staat.
-                </p>
+              <div className="min-w-[9rem] flex-1">
+                <p className="text-sm font-medium text-ink">Tekstgrootte</p>
+                <p className="mt-0.5 text-xs text-ink-muted">Grootte van de vraag.</p>
               </div>
 
               <div className="flex w-full shrink-0 gap-1.5 sm:w-auto">
@@ -289,7 +280,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
                       persist({ questionFontSize: size });
                     }}
                     className={cn(
-                      'h-10 flex-1 rounded-md border px-4 text-sm font-medium transition-colors sm:flex-none',
+                      'h-9 flex-1 rounded-md border px-4 text-sm font-medium transition-colors sm:flex-none',
                       fontSize === size
                         ? 'border-ink bg-ink text-ink-inverted'
                         : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink'
@@ -305,7 +296,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
           <button
             type="button"
             onClick={() => onStart({ readPassageFirst: Boolean(passage) && readPassageFirst, timerSeconds })}
-            className="mt-6 inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+            className="mt-4 inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
           >
             {passage && readPassageFirst
               ? `Lees ${passage.label} en start`
@@ -315,8 +306,8 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
             <ArrowRight className="h-4 w-4" />
           </button>
 
-          <p className="mt-2.5 text-center text-xs text-ink-muted">
-            Je kunt dit tijdens de quiz nog aanpassen via het instellingen-icoon.
+          <p className="mt-2 text-center text-xs text-ink-muted">
+            Tijdens de quiz aanpasbaar via het instellingen-icoon.
           </p>
         </section>
       </div>

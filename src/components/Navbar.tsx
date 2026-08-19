@@ -5,9 +5,10 @@ import Image from 'next/image';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
-import { ChevronDown, ChevronLeft, ChevronRight, Crown, LogOut, Menu, Settings, User, X } from 'lucide-react';
+import { ChevronDown, ChevronLeft, ChevronRight, Gem, LogOut, Menu, Settings, User, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import MascotAvatar from '@/components/avatar/MascotAvatar';
 import { ModeToggle } from '@/components/ModeToggle';
 import { cn } from '@/lib/utils';
 
@@ -229,7 +230,7 @@ export default function Navbar({
                   title="Je Premium lidmaatschap beheren"
                   className="inline-flex h-10 items-center gap-2 rounded-md border border-lapis/40 bg-lapis-tint px-3 text-sm font-medium text-lapis transition-colors hover:border-lapis/70 lg:px-3.5"
                 >
-                  <Crown className="h-4 w-4 shrink-0" />
+                  <Gem className="h-4 w-4 shrink-0" />
                   <span className="hidden lg:inline">Premium</span>
                 </Link>
               ) : (
@@ -237,7 +238,7 @@ export default function Navbar({
                   href="/premium"
                   className="inline-flex h-10 items-center gap-2 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
                 >
-                  <Crown className="h-4 w-4 shrink-0" />
+                  <Gem className="h-4 w-4 shrink-0" />
                   Premium
                 </Link>
               )}
@@ -250,13 +251,10 @@ export default function Navbar({
                   aria-expanded={isAccountMenuOpen}
                   className="inline-flex h-11 items-center gap-2 rounded-md px-2 py-1.5 text-left transition-colors hover:bg-paper-sunken"
                 >
-                  <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-paper-sunken text-[11px] font-semibold text-ink">
-                    {session.user?.image ? (
-                      <img src={session.user.image} alt={userName} className="h-full w-full object-cover" />
-                    ) : (
-                      userInitials
-                    )}
-                  </span>
+                  {/* The mascot, not the OAuth photo: it is the identity the
+                      reader picked on their profile, and it is what they see
+                      beside their name everywhere else in the product. */}
+                  <MascotAvatar avatar={session.user?.avatar} size={32} bordered title={userName} />
                   <span className="hidden min-w-0 lg:block">
                     <span className="block max-w-36 truncate text-sm font-medium text-ink">{userName}</span>
                     <span className="block max-w-36 truncate text-xs text-ink-muted">{userEmail}</span>
@@ -358,19 +356,13 @@ export default function Navbar({
                 {status === 'authenticated' && session ? (
                   <div className="w-full space-y-2">
                     <div className="flex items-center gap-2 rounded-md bg-paper-raised p-2.5">
-                      <span className="inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-paper-sunken text-[11px] font-semibold text-ink">
-                        {session.user?.image ? (
-                          <img src={session.user.image} alt={userName} className="h-full w-full object-cover" />
-                        ) : (
-                          userInitials
-                        )}
-                      </span>
+                      <MascotAvatar avatar={session.user?.avatar} size={36} bordered title={userName} />
                       <div className="min-w-0">
                         <p className="truncate text-sm font-semibold text-ink">{userName}</p>
                         <p className="truncate text-xs text-ink-soft">{userEmail}</p>
                         {session.user?.isPremium && (
                           <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-ink">
-                            <Crown className="h-3.5 w-3.5" />
+                            <Gem className="h-3.5 w-3.5" />
                             Premium actief
                           </p>
                         )}
@@ -407,7 +399,7 @@ export default function Navbar({
                           className="h-11 w-full justify-center rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
                         >
                           <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Crown className="mr-2 h-4 w-4" />
+                            <Gem className="mr-2 h-4 w-4" />
                             Word Premium
                           </Link>
                         </Button>

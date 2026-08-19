@@ -109,7 +109,11 @@ export function QuizTile({
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           className={cn(
             'object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]',
-            isLocked && 'opacity-60 saturate-50'
+            isLocked && 'opacity-60 saturate-50',
+            // A quiz you finished recedes a little - enough to read as "done"
+            // at a glance, nowhere near as far as a locked one, which must
+            // still read as unavailable rather than merely completed.
+            played && !isLocked && 'opacity-80 saturate-[0.7]'
           )}
           onError={() => setFailedSrc(resolved)}
         />
