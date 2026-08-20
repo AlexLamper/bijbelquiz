@@ -34,6 +34,13 @@ export interface UserSettings {
    * afterwards so it does not have to be chosen every time.
    */
   readPassageFirst: boolean;
+  /**
+   * Whether the reader has been through the setup panel on a quiz start screen.
+   *
+   * Once they have, that panel opens collapsed: the choices are remembered, so
+   * showing all of them again on every quiz costs a screenful for nothing.
+   */
+  quizSetupSeen: boolean;
 }
 
 export interface UserOnboardingSettings {
@@ -49,6 +56,7 @@ export const DEFAULT_USER_SETTINGS: UserSettings = {
   questionFontSize: 'normal',
   questionTimerSeconds: 0,
   readPassageFirst: false,
+  quizSetupSeen: false,
 };
 
 export const DEFAULT_ONBOARDING_SETTINGS: UserOnboardingSettings = {
@@ -110,6 +118,10 @@ export function normalizeUserSettings(
       typeof settings?.readPassageFirst === 'boolean'
         ? settings.readPassageFirst
         : DEFAULT_USER_SETTINGS.readPassageFirst,
+    quizSetupSeen:
+      typeof settings?.quizSetupSeen === 'boolean'
+        ? settings.quizSetupSeen
+        : DEFAULT_USER_SETTINGS.quizSetupSeen,
   };
 }
 

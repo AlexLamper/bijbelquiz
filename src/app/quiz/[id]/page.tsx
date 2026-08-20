@@ -5,6 +5,7 @@ import { authOptions } from '@/lib/auth';
 import { connectDB, Quiz, ICategory, UserProgress } from '@/database';
 import QuizExperience from '@/components/quiz/QuizExperience';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
+import { normalizeUserSettings } from '@/lib/user-settings';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -210,6 +211,7 @@ export default async function QuizPage({ params }: PageProps) {
         overview={overview}
         passage={passage}
         lastResult={lastResult}
+        setupSeen={normalizeUserSettings(session.user.settings).quizSetupSeen}
       />
     </div>
   );

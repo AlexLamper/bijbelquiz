@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { ArrowLeft, ArrowRight, BookOpen, Check, Timer, Type } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, Check, ChevronDown, Timer, Type } from 'lucide-react';
 
 import type { QuizPassage } from '@/lib/quiz-passage';
 import {
@@ -38,6 +38,12 @@ interface QuizStartScreenProps {
   /** The chapter this quiz is about, when its questions agree on one. */
   passage: QuizPassage | null;
   lastResult: QuizLastResult | null;
+  /**
+   * Whether this reader has set up how they want to play before. Read on the
+   * server so the panel renders in the right state on the first paint instead
+   * of collapsing itself once the session arrives.
+   */
+  setupSeen: boolean;
   onStart: (choice: { readPassageFirst: boolean; timerSeconds: number }) => void;
 }
 
@@ -57,14 +63,16 @@ const DIFFICULTY_LABELS: Record<string, string> = {
  * play - and, if you already played it, how you did - and it is where you set
  * up *how* you want to play: with or without a clock, and whether to read the
  * chapter first. Those choices are saved to the account, so this screen asks
- * once rather than every time.
+ * once rather than every time: after the first quiz the setup folds into a
+ * single line that says what is currently set, and opens on request.
  */
-export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: QuizStartScreenProps) {
+export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, onStart }: QuizStartScreenProps) {
   const { settings, saveSettings, isAuthenticated } = useUserSettings();
 
   const [readPassageFirst, setReadPassageFirst] = useState(settings.readPassageFirst);
   const [timerSeconds, setTimerSeconds] = useState<QuestionTimerSeconds>(settings.questionTimerSeconds);
   const [fontSize, setFontSize] = useState<QuestionFontSize>(settings.questionFontSize);
+  const [setupOpen, setSetupOpen] = useState(!setupSeen);
 
   // Seeded from the session, which resolves after first paint. Adopting a later
   // change during render (rather than in an effect) keeps this to one pass, and
@@ -84,6 +92,23 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
       // Applied locally already; a failed write costs persistence, and an error
       // toast on the way into a quiz is worse than silently not remembering.
     });
+  };
+
+  // What the collapsed row has to say for itself: the settings that are on,
+  // short enough to sit on one line next to the heading.
+  const setupSummary = [
+    timerSeconds === 0 ? 'Geen tijdslimiet' : `${timerSeconds}s per vraag`,
+    fontSize === 'large' ? 'Grote tekst' : null,
+    passage && readPassageFirst ? `Leest ${passage.label} eerst` : null,
+  ]
+    .filter(Boolean)
+    .join(' · ');
+
+  const handleStart = () => {
+    // Marked on the way into the quiz rather than on opening the panel: what
+    // matters is that the reader has been past these choices once.
+    if (!setupSeen) persist({ quizSetupSeen: true });
+    onStart({ readPassageFirst: Boolean(passage) && readPassageFirst, timerSeconds });
   };
 
   const difficultyLabel = DIFFICULTY_LABELS[(quiz.difficulty || '').toLowerCase()] || 'Gemiddeld';
@@ -175,15 +200,31 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
 
         {/* ── How you want to play ──────────────────────────────────────── */}
         <section className="mt-6">
-          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-            <span className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+          <button
+            type="button"
+            onClick={() => setSetupOpen((open) => !open)}
+            aria-expanded={setupOpen}
+            aria-controls="quiz-setup-panel"
+            className="group flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-1 text-left"
+          >
+            <span className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted transition-colors group-hover:text-ink">
               <span aria-hidden className="h-px w-6 bg-lapis" />
-              Hoe wil je spelen?
+              {setupOpen ? 'Hoe wil je spelen?' : 'Quiz instellingen'}
             </span>
-            <p className="text-xs text-ink-muted">Wordt onthouden</p>
-          </div>
+            <span className="inline-flex min-w-0 items-center gap-1.5 text-xs text-ink-muted transition-colors group-hover:text-ink">
+              <span className="truncate">{setupOpen ? 'Wordt onthouden' : setupSummary}</span>
+              <ChevronDown
+                aria-hidden
+                className={cn('h-3.5 w-3.5 shrink-0 transition-transform', setupOpen && 'rotate-180')}
+              />
+            </span>
+          </button>
 
-          <div className="mt-3 divide-y divide-rule overflow-hidden rounded-lg border border-rule">
+          <div
+            id="quiz-setup-panel"
+            hidden={!setupOpen}
+            className="mt-3 divide-y divide-rule overflow-hidden rounded-lg border border-rule"
+          >
             {/* Read the chapter first - only offered when there is one. */}
             {passage && (
               <label className="flex cursor-pointer items-center gap-3.5 bg-paper-raised px-4 py-3.5">
@@ -295,7 +336,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, onStart }: 
 
           <button
             type="button"
-            onClick={() => onStart({ readPassageFirst: Boolean(passage) && readPassageFirst, timerSeconds })}
+            onClick={handleStart}
             className="mt-4 inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
           >
             {passage && readPassageFirst

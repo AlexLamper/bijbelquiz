@@ -18,6 +18,8 @@ interface QuizExperienceProps {
   overview: QuizStartQuiz;
   passage: QuizPassage | null;
   lastResult: QuizLastResult | null;
+  /** Whether this reader has already been through the setup panel once. */
+  setupSeen: boolean;
 }
 
 /**
@@ -29,7 +31,7 @@ interface QuizExperienceProps {
  * the back button would land them in the middle of a quiz they had already
  * started.
  */
-export default function QuizExperience({ quiz, overview, passage, lastResult }: QuizExperienceProps) {
+export default function QuizExperience({ quiz, overview, passage, lastResult, setupSeen }: QuizExperienceProps) {
   const [phase, setPhase] = useState<Phase>('overview');
   const [timerSeconds, setTimerSeconds] = useState(0);
 
@@ -52,6 +54,7 @@ export default function QuizExperience({ quiz, overview, passage, lastResult }: 
       quiz={overview}
       passage={passage}
       lastResult={lastResult}
+      setupSeen={setupSeen}
       onStart={(choice) => {
         setTimerSeconds(choice.timerSeconds);
         setPhase(choice.readPassageFirst && passage ? 'passage' : 'playing');

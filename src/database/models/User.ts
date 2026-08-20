@@ -74,6 +74,7 @@ export interface IUser extends Document {
     questionFontSize?: 'normal' | 'large';
     questionTimerSeconds?: number;
     readPassageFirst?: boolean;
+    quizSetupSeen?: boolean;
   };
   createdAt: Date;
 }
@@ -142,6 +143,9 @@ const UserSchema: Schema = new Schema({
     // reader sets up how they want to study once rather than every quiz.
     questionTimerSeconds: { type: Number, enum: [0, 30, 60, 90], default: 0 },
     readPassageFirst: { type: Boolean, default: false },
+    // Set the first time a quiz is started from the setup panel, so that panel
+    // can open collapsed from then on.
+    quizSetupSeen: { type: Boolean, default: false },
   },
 }, { timestamps: true });
 

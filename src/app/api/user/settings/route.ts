@@ -22,6 +22,7 @@ const settingsSchema = z
       .union([z.literal(0), z.literal(30), z.literal(60), z.literal(90)])
       .optional(),
     readPassageFirst: z.boolean().optional(),
+    quizSetupSeen: z.boolean().optional(),
   })
   .strict();
 
@@ -119,6 +120,7 @@ export async function PUT(req: NextRequest) {
       if (settings.questionFontSize !== undefined) updateSet['settings.questionFontSize'] = settings.questionFontSize;
       if (settings.questionTimerSeconds !== undefined) updateSet['settings.questionTimerSeconds'] = settings.questionTimerSeconds;
       if (settings.readPassageFirst !== undefined) updateSet['settings.readPassageFirst'] = settings.readPassageFirst;
+      if (settings.quizSetupSeen !== undefined) updateSet['settings.quizSetupSeen'] = settings.quizSetupSeen;
     }
 
     if (parsed.data.onboarding) {
