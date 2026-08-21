@@ -55,6 +55,14 @@ export default function Navbar({
   const accountMenuRef = useRef<HTMLDivElement>(null);
 
   const pageTitle = getPageTitle(pathname);
+  // `status` falls back to 'loading' for the length of every background session
+  // refresh - a theme toggle, a profile save, the window regaining focus - so
+  // rendering the account controls off it makes them blink out and back for no
+  // reason. What the chrome cares about is whether a session is in hand, not
+  // whether one is being revalidated; only the very first resolve has nothing
+  // to show yet.
+  const isAuthenticated = Boolean(session?.user);
+  const isResolvingSession = status === 'loading' && !session;
   const userName = session?.user?.name?.trim() || 'Gebruiker';
   const userEmail = session?.user?.email || 'Geen e-mailadres';
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -215,16 +223,16 @@ export default function Navbar({
         <div className="ml-auto hidden shrink-0 items-center gap-2 md:flex">
           <ModeToggle />
 
-          {status === 'loading' && (
+          {isResolvingSession && (
             <div className="h-8 w-8 animate-pulse rounded-md bg-paper-sunken" />
           )}
 
-          {status === 'authenticated' && session && (
+          {isAuthenticated && (
             <>
               {/* A member gets a quiet mark of status; everybody else gets the
                   one solid button in the bar. Both are the same height as the
                   controls beside them, and neither shouts. */}
-              {session.user?.isPremium ? (
+              {session?.user?.isPremium ? (
                 <Link
                   href="/premium"
                   title="Je Premium lidmaatschap beheren"
@@ -254,7 +262,7 @@ export default function Navbar({
                   {/* The mascot, not the OAuth photo: it is the identity the
                       reader picked on their profile, and it is what they see
                       beside their name everywhere else in the product. */}
-                  <MascotAvatar avatar={session.user?.avatar} size={32} bordered title={userName} />
+                  <MascotAvatar avatar={session?.user?.avatar} size={32} bordered title={userName} />
                   <span className="hidden min-w-0 lg:block">
                     <span className="block max-w-36 truncate text-sm font-medium text-ink">{userName}</span>
                     <span className="block max-w-36 truncate text-xs text-ink-muted">{userEmail}</span>
@@ -297,7 +305,7 @@ export default function Navbar({
             </>
           )}
 
-          {status === 'unauthenticated' && (
+          {!isAuthenticated && !isResolvingSession && (
             <>
               <Button asChild variant="outline" className="h-9 rounded-md border-rule px-4 text-ink hover:bg-paper-sunken">
                 <Link href="/inloggen">Inloggen</Link>
@@ -353,14 +361,14 @@ export default function Navbar({
               )}
 
               <div className="mt-3 flex items-center gap-2 border-t border-rule pt-3">
-                {status === 'authenticated' && session ? (
+                {isAuthenticated ? (
                   <div className="w-full space-y-2">
                     <div className="flex items-center gap-2 rounded-md bg-paper-raised p-2.5">
-                      <MascotAvatar avatar={session.user?.avatar} size={36} bordered title={userName} />
+                      <MascotAvatar avatar={session?.user?.avatar} size={36} bordered title={userName} />
                       <div className="min-w-0">
                         <p className="truncate text-sm font-semibold text-ink">{userName}</p>
                         <p className="truncate text-xs text-ink-soft">{userEmail}</p>
-                        {session.user?.isPremium && (
+                        {session?.user?.isPremium && (
                           <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-ink">
                             <Gem className="h-3.5 w-3.5" />
                             Premium actief
@@ -393,7 +401,7 @@ export default function Navbar({
                         "Afmelden", which read as a misplaced element rather
                         than the primary action of the menu. */}
                     <div className="space-y-2 border-t border-rule pt-3">
-                      {!session.user?.isPremium && (
+                      {!session?.user?.isPremium && (
                         <Button
                           asChild
                           className="h-11 w-full justify-center rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"

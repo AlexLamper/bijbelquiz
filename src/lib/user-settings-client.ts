@@ -18,9 +18,23 @@ import {
  * what makes a change on the settings page show up in the quiz player without
  * a reload.
  *
- * Signed-out visitors get `DEFAULT_USER_SETTINGS` and saves are skipped —
+ * That refresh is not free: `update()` flips `useSession().status` back to
+ * `loading` for every consumer in the tree and costs two extra round trips
+ * (a CSRF token, then a session POST that re-reads the user document). For a
+ * preference the UI has already applied locally - the theme - pass
+ * `refreshSession: false` and let the write settle in the background.
+ *
+ * Signed-out visitors get `DEFAULT_USER_SETTINGS` and saves are skipped -
  * callers can use the same code path for both.
  */
+export interface SaveSettingsOptions {
+  /**
+   * Re-mint the session after the write. Defaults to `true`. Turn it off for a
+   * setting whose effect is already visible without the session catching up.
+   */
+  refreshSession?: boolean;
+}
+
 export function useUserSettings() {
   const { data: session, status, update } = useSession();
 
@@ -32,7 +46,10 @@ export function useUserSettings() {
   );
 
   const saveSettings = useCallback(
-    async (patch: Partial<UserSettings>): Promise<UserSettings> => {
+    async (
+      patch: Partial<UserSettings>,
+      { refreshSession = true }: SaveSettingsOptions = {}
+    ): Promise<UserSettings> => {
       if (!isAuthenticated) {
         return { ...DEFAULT_USER_SETTINGS, ...patch };
       }
@@ -50,8 +67,13 @@ export function useUserSettings() {
       }
 
       // Re-mints the JWT from the user document, so every other consumer of
-      // `useUserSettings` picks the change up on the next render.
-      await update();
+      // `useUserSettings` picks the change up on the next render. Skipped when
+      // the caller has already applied the change itself: the session then
+      // carries a stale value until the next natural refetch, which is cheaper
+      // than putting the whole tree through a loading state.
+      if (refreshSession) {
+        await update();
+      }
 
       return normalizeUserSettings(payload?.settings);
     },

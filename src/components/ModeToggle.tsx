@@ -11,21 +11,32 @@ export function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme()
   const { isAuthenticated, saveSettings } = useUserSettings()
 
-  const toggle = () => {
-    const next = resolvedTheme === "dark" ? "light" : "dark"
+  const toggle = React.useCallback(() => {
+    // `resolvedTheme` is undefined until next-themes has mounted; the class on
+    // <html> is already correct at that point, so read it rather than guessing
+    // and sending the first click the wrong way.
+    const isDark =
+      resolvedTheme === "dark" ||
+      (resolvedTheme === undefined &&
+        typeof document !== "undefined" &&
+        document.documentElement.classList.contains("dark"))
 
-    // Flip immediately; the write is what makes the choice outlive this
-    // browser. Without it `ThemeSync` would restore the stored preference on
-    // the next navigation and the toggle would look broken.
+    const next = isDark ? "light" : "dark"
+
+    // The flip is local and immediate. The write below only decides what this
+    // account starts with next time, so it must not be awaited, and must not
+    // refresh the session: `update()` would push every `useSession()` consumer
+    // through a loading state and blank the account controls in the navbar for
+    // the length of two round trips.
     setTheme(next)
 
     if (isAuthenticated) {
-      saveSettings({ themePreference: next }).catch(() => {
+      saveSettings({ themePreference: next }, { refreshSession: false }).catch(() => {
         // A failed write is not worth interrupting the page for: the theme is
         // already applied locally and will simply not follow to another device.
       })
     }
-  }
+  }, [isAuthenticated, resolvedTheme, saveSettings, setTheme])
 
   return (
     <Button variant="ghost" size="icon" onClick={toggle}>
