@@ -42,6 +42,18 @@
   --positive: #3f6b4f;
   --positive-tint: #e9f0ea;
 
+  /* Chart series.
+     Deliberately not `--lapis` and `--vermilion`. Those are chosen to sit
+     quietly inside a page of text; as adjacent fills in a chart they fall
+     under the chroma floor and read as two greys. These are the nearest steps
+     that clear the colour-vision separation checks against the paper ground,
+     so a reader with protanopia can still tell the two series apart. Dark mode
+     re-picks them against its own ground rather than lightening these.
+     `--chart-grid` is the recessive rule a plot is drawn over. */
+  --chart-1: #2f62c4;
+  --chart-2: #b0532c;
+  --chart-grid: #e6e3db;
+
   /* Legacy shadcn tokens, retargeted onto Ink & Paper so every existing
      component inherits the language without being rewritten. */
   --background: var(--paper);
@@ -100,6 +112,12 @@
 
   --positive: #7fb08d;
   --positive-tint: #17251b;
+
+  /* Re-picked against the dark ground, not lightened from the light steps: the
+     lightness band that keeps two fills separable is a different one here. */
+  --chart-1: #5f93ef;
+  --chart-2: #cc7b30;
+  --chart-grid: #2a2925;
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -173,6 +191,9 @@
   --color-vermilion-tint: var(--vermilion-tint);
   --color-positive: var(--positive);
   --color-positive-tint: var(--positive-tint);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-grid: var(--chart-grid);
 
   --font-display: var(--font-serif), Georgia, "Times New Roman", serif;
 }

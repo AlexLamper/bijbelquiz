@@ -5,9 +5,14 @@ import { connectDB, Quiz, User } from "@/database";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Users, BookOpen, BarChart3, Settings, Plus, Edit, Crown, Activity } from "lucide-react";
+import { Users, BookOpen, BarChart3, LineChart, Settings, Plus, Edit, Crown, Activity } from "lucide-react";
 import AdminGroupLicenseForm from "./AdminGroupLicenseForm";
 import { GROUP_LICENSE_SEATS } from "@/lib/group-license";
+import {
+  getInternalAccountCount,
+  isInternalAccount,
+  premiumUserFilter,
+} from "@/lib/analytics/internal-accounts";
 
 export default async function AdminDashboard() {
   const session = await getServerSession(authOptions);
@@ -18,11 +23,19 @@ export default async function AdminDashboard() {
 
   await connectDB();
 
+  // Developer and app-reviewer accounts hold Premium so the premium surfaces
+  // can be tested, which makes a raw `isPremium` count read as customers we do
+  // not have. See `lib/analytics/internal-accounts.ts`.
+  const [premiumFilter, internalPremiumExcluded] = await Promise.all([
+    premiumUserFilter(),
+    getInternalAccountCount(),
+  ]);
+
   // Fetch statistics
   const [totalUsers, totalQuizzes, premiumUsers, pendingQuizzes, recentUsers, recentQuizzes] = await Promise.all([
     User.countDocuments(),
     Quiz.countDocuments(),
-    User.countDocuments({ isPremium: true }),
+    User.countDocuments(premiumFilter),
     Quiz.countDocuments({ status: 'pending' }),
     User.find().sort({ createdAt: -1 }).limit(10).lean(),
     Quiz.find().populate('categoryId').sort({ createdAt: -1 }).limit(10).lean(),
@@ -41,6 +54,12 @@ export default async function AdminDashboard() {
               </div>
 
               <div className="flex flex-wrap gap-3">
+                <Button asChild variant="outline" className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken">
+                  <Link href="/beheer/statistieken">
+                    <LineChart className="mr-2 h-4 w-4" />
+                    Statistieken
+                  </Link>
+                </Button>
                 <Button asChild variant="outline" className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken">
                   <Link href="/beheer/funnel">
                     <BarChart3 className="mr-2 h-4 w-4" />
@@ -87,6 +106,8 @@ export default async function AdminDashboard() {
               <p className="mt-2 text-3xl font-semibold text-ink">{premiumUsers}</p>
               <p className="mt-1 text-xs text-muted-foreground">
                 {totalUsers > 0 ? Math.round((premiumUsers / totalUsers) * 100) : 0}% van totaal
+                {internalPremiumExcluded > 0 &&
+                  ` · ${internalPremiumExcluded} testaccounts niet meegeteld`}
               </p>
             </CardContent>
           </Card>
@@ -135,8 +156,15 @@ export default async function AdminDashboard() {
                         <p className="text-xs text-muted-foreground">{user.email}</p>
                       </div>
                       <div className="flex items-center gap-2">
-                        {user.isPremium && (
-                          <Crown className="h-4 w-4 text-lapis" />
+                        {/* An internal account carries Premium on purpose, so
+                            it gets its own label rather than the crown that
+                            everywhere else means "a customer". */}
+                        {isInternalAccount(user.email) ? (
+                          <span className="rounded-md bg-paper-sunken px-2 py-1 text-xs text-ink-soft">
+                            Testaccount
+                          </span>
+                        ) : (
+                          user.isPremium && <Crown className="h-4 w-4 text-lapis" />
                         )}
                         <span className="text-xs text-muted-foreground">
                           {new Date(user.createdAt).toLocaleDateString('nl-NL')}

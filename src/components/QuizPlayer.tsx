@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
@@ -23,7 +23,7 @@ import BibleVerseDisplay from '@/components/BibleVerseDisplay';
 import { Button } from '@/components/ui/button';
 import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
 import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
-import { track } from '@/lib/analytics/client';
+import { flushAnalytics, track } from '@/lib/analytics/client';
 import { premiumPaywallHref } from '@/lib/premium-benefits';
 import { useUserSettings } from '@/lib/user-settings-client';
 import {
@@ -131,6 +131,40 @@ export default function QuizPlayer({
   const [isSaving, setIsSaving] = useState(false);
   const [earnedXp, setEarnedXp] = useState<number | null>(null);
   const [showPremiumReviewUpsell, setShowPremiumReviewUpsell] = useState(false);
+
+  // Where the reader had got to when they walked away. Kept in a ref because
+  // the only place that can report it is the unmount cleanup, which would
+  // otherwise close over the state as it was on mount.
+  const progress = useRef({ answered: 0, finished: false });
+  useEffect(() => {
+    progress.current = {
+      answered: Object.keys(selectedAnswers).length,
+      finished: isFinished,
+    };
+  }, [selectedAnswers, isFinished]);
+
+  // There is no "I give up" button, so abandonment has to be inferred from
+  // leaving. Only reported once at least one answer was given: a quiz opened
+  // and closed immediately is already visible as `quiz_started` without a
+  // matching `quiz_completed`, and counting it here as well would double it -
+  // and would fire spuriously on every dev-mode double mount.
+  useEffect(() => {
+    return () => {
+      const { answered, finished } = progress.current;
+      if (finished || answered === 0) return;
+
+      const total = quiz.questions.length;
+      track('quiz_abandoned', {
+        quizId: String(quiz._id),
+        quizTitle: quiz.title,
+        answered,
+        totalQuestions: total,
+        progressPct: total > 0 ? Math.round((answered / total) * 100) : 0,
+      });
+      // The page is on its way out; the debounced flush would never run.
+      flushAnalytics();
+    };
+  }, [quiz._id, quiz.title, quiz.questions.length]);
 
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isLeaveDialogOpen, setIsLeaveDialogOpen] = useState(false);

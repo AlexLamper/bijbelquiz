@@ -31,8 +31,8 @@ const columns = [
   {
     title: 'Meer van ons',
     links: [
-      { href: 'https://www.bijbel-studie.com', label: 'Bijbel Studie', external: true },
-      { href: 'https://www.bijbelapi.com/docs', label: 'BijbelAPI', external: true },
+      { href: 'https://www.bijbel-studie.com', label: 'BijbelStudie', external: true },
+      { href: 'https://www.bijbelapi.com', label: 'BijbelAPI', external: true },
     ],
   },
 ];
@@ -87,7 +87,23 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-rule pt-6 text-xs text-ink-muted md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} BijbelQuiz. Alle rechten voorbehouden.</p>
           <p>
-            BijbelQuiz wordt technisch ondersteund door de Nederlandse BijbelAPI. Gemaakt door{' '}
+            BijbelQuiz wordt technisch ondersteund door de Nederlandse{' '}
+            <a
+              href="https://www.bijbelapi.com"
+              rel="noopener"
+              className="text-ink-soft underline-offset-2 transition-colors hover:text-ink hover:underline"
+            >
+              BijbelAPI
+            </a>{' '}
+            en hoort bij{' '}
+            <a
+              href="https://www.bijbel-studie.com"
+              rel="noopener"
+              className="text-ink-soft underline-offset-2 transition-colors hover:text-ink hover:underline"
+            >
+              BijbelStudie
+            </a>
+            . Gemaakt door{' '}
             <span className="text-ink-soft">Alex Lamper</span>.
           </p>
         </div>

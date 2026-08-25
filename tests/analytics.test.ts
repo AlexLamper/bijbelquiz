@@ -11,6 +11,10 @@ import {
   sanitizeProps,
 } from '@/lib/analytics/events';
 import {
+  INTERNAL_ACCOUNT_EMAILS,
+  isInternalAccount,
+} from '@/lib/analytics/internal-accounts';
+import {
   monthlyEquivalentOfYearly,
   parsePriceLabel,
   yearlySavingsPercent,
@@ -26,21 +30,55 @@ test('only known event names are accepted', () => {
 test('the event list the Flutter app mirrors has not shifted', () => {
   // The app ships its own copy of these names. Renaming one silently orphans
   // half the funnel: the server drops what it does not recognise.
-  assert.deepEqual(
-    [...ANALYTICS_EVENTS],
-    [
-      'quiz_completed',
-      'room_started',
-      'room_joined',
-      'room_invite_shared',
-      'paywall_shown',
-      'paywall_dismissed',
-      'purchase_completed',
-      'trial_started',
-      'trial_converted',
-      'streak_broken',
-    ],
-  );
+  //
+  // Asserted as a prefix rather than the whole list, because the usage events
+  // below are web-only and the app has no reason to learn about them. Adding
+  // one must not fail this test; touching a funnel name still does.
+  assert.deepEqual(ANALYTICS_EVENTS.slice(0, 10), [
+    'quiz_completed',
+    'room_started',
+    'room_joined',
+    'room_invite_shared',
+    'paywall_shown',
+    'paywall_dismissed',
+    'purchase_completed',
+    'trial_started',
+    'trial_converted',
+    'streak_broken',
+  ]);
+});
+
+test('the automatic usage events the reports read are all present', () => {
+  // `insights.ts` queries these by name. A rename here without one there
+  // produces an empty report rather than an error, so it is worth pinning.
+  for (const name of [
+    'page_view',
+    'ui_click',
+    'ui_seen',
+    'session_start',
+    'theme_changed',
+    'quiz_started',
+    'quiz_abandoned',
+  ]) {
+    assert.ok(isAnalyticsEventName(name), `${name} is missing from ANALYTICS_EVENTS`);
+  }
+});
+
+test('the test and reviewer accounts are recognised however they are written', () => {
+  // Stored addresses are lowercase today, but an older document or a manual
+  // edit is not guaranteed to be - and a case slip here silently puts a test
+  // account back into the premium count.
+  for (const email of INTERNAL_ACCOUNT_EMAILS) {
+    assert.ok(isInternalAccount(email), `${email} should be internal`);
+    assert.ok(isInternalAccount(email.toUpperCase()), `${email} uppercased should be internal`);
+    assert.ok(isInternalAccount(`  ${email}  `), `${email} padded should be internal`);
+  }
+
+  assert.ok(!isInternalAccount('lamper0020@hz.nl'));
+  assert.ok(!isInternalAccount('aplamper06@gmail.com.attacker.example'));
+  assert.ok(!isInternalAccount(''));
+  assert.ok(!isInternalAccount(null));
+  assert.ok(!isInternalAccount(undefined));
 });
 
 test('paywall triggers are a closed set', () => {

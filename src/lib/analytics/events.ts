@@ -1,16 +1,26 @@
 /**
- * The funnel event contract.
+ * The event contract.
  *
  * One list, shared by the website, the Flutter app, and the reporting queries,
  * so a rename cannot quietly orphan half the data. The Dart port lives in
  * `lib/core/analytics/analytics_events.dart`; keep the names identical.
  *
- * Only events that answer a question worth acting on belong here. Page views
- * and taps are noise: what the funnel needs to know is who finishes a quiz,
- * who hosts, who sees a paywall, and who pays.
+ * Two families live here and they are answering different questions.
+ *
+ * The *funnel* events - completions, hosted games, paywalls, purchases - are
+ * hand-placed at the moments that decide whether this product earns anything.
+ * They existed first and are still the ones worth alerting on.
+ *
+ * The *usage* events - page views, control impressions, clicks, session
+ * context - are fired automatically by `AnalyticsTracker` and answer the
+ * cheaper but constant questions: which screens carry the traffic, which
+ * controls nobody has ever pressed, whether anybody uses dark mode. They are
+ * higher volume and individually meaningless; they only pay off in aggregate,
+ * which is what `insights.ts` reads them for.
  */
 
 export const ANALYTICS_EVENTS = [
+  // ── Funnel ──────────────────────────────────────────────────────────────
   /** A quiz attempt was finished. `isFirst` separates activation from habit. */
   'quiz_completed',
   /** A host actually started a game. This is what spends a free credit. */
@@ -34,6 +44,42 @@ export const ANALYTICS_EVENTS = [
   'trial_converted',
   /** A streak ended, with how long it was and whether the user paid. */
   'streak_broken',
+
+  // ── Usage ───────────────────────────────────────────────────────────────
+  /**
+   * A screen was opened. `path` is the route *pattern*, never the raw URL, so
+   * ten thousand quiz pages aggregate into one row; the identifying segment
+   * rides along in `param` for the reads that want it.
+   */
+  'page_view',
+  /**
+   * A button or link was pressed. The denominator for "is this control worth
+   * keeping" is `ui_seen`, not page views: plenty of controls sit below the
+   * fold and were never actually offered to the person who did not press them.
+   */
+  'ui_click',
+  /**
+   * A control scrolled into view, once per session per control. Without this
+   * an unclicked button is indistinguishable from an unrendered one, which is
+   * the whole question when deciding what to delete.
+   */
+  'ui_seen',
+  /**
+   * First page of a visit, carrying the context that does not change during
+   * it: theme, device, viewport, referrer, campaign. Everything answerable as
+   * "what share of visits ..." counts these rather than page views, so that a
+   * single user reloading twenty times does not outvote twenty people.
+   */
+  'session_start',
+  /** The theme toggle was used, with the direction. */
+  'theme_changed',
+  /**
+   * A quiz was opened and started. Paired with `quiz_completed` this gives the
+   * drop-off between "pressed start" and "answered the last question".
+   */
+  'quiz_started',
+  /** A started quiz was left before the last question. */
+  'quiz_abandoned',
 ] as const;
 
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];
@@ -74,6 +120,9 @@ export type PurchasePlan = (typeof PURCHASE_PLANS)[number];
 
 export type AnalyticsPlatform = 'web' | 'ios' | 'android';
 
+/** Rough form factor, from viewport width. Three buckets is all the reporting uses. */
+export type DeviceClass = 'mobile' | 'tablet' | 'desktop';
+
 export interface AnalyticsEventInput {
   name: AnalyticsEventName;
   /** Flat, primitive-only. Nested objects make the aggregation queries ugly. */
@@ -88,8 +137,14 @@ export function isAnalyticsEventName(value: unknown): value is AnalyticsEventNam
   return typeof value === 'string' && EVENT_NAMES.has(value);
 }
 
-/** Property caps, applied server-side. A client bug must not fill the collection. */
-export const MAX_EVENTS_PER_REQUEST = 25;
+/**
+ * Property caps, applied server-side. A client bug must not fill the collection.
+ *
+ * The batch cap is generous because the usage events arrive in bursts: opening
+ * a page reports the view plus every control that scrolled into view with it.
+ * A cap below that would silently drop the tail of every single page load.
+ */
+export const MAX_EVENTS_PER_REQUEST = 60;
 export const MAX_PROPS_PER_EVENT = 12;
 export const MAX_PROP_VALUE_LENGTH = 120;
 

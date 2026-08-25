@@ -1,6 +1,7 @@
 'use client';
 
 import { trackEvent as trackGoogleEvent } from '@/components/GoogleAnalytics';
+import { MAX_EVENTS_PER_REQUEST } from './events';
 import type { AnalyticsEventName, AnalyticsEventInput } from './events';
 
 /**
@@ -20,6 +21,20 @@ import type { AnalyticsEventName, AnalyticsEventInput } from './events';
 const ENDPOINT = '/api/events';
 const FLUSH_DELAY_MS = 2000;
 const ANON_KEY = 'bq_anon_id';
+
+/**
+ * Ceiling on the pending queue. Reached only if the network is down for a long
+ * time on a busy page; dropping the oldest is better than growing without
+ * bound, because the newest events are the ones still worth attributing.
+ */
+const MAX_QUEUE = 400;
+
+/**
+ * Events the automatic instrumentation fires in bulk. GA4 has its own page
+ * view tracking and a per-property event cap, so forwarding these would both
+ * duplicate and exhaust it. The first-party copy is the one reports read.
+ */
+const GA_EXCLUDED = new Set<AnalyticsEventName>(['page_view', 'ui_seen', 'ui_click']);
 
 let queue: AnalyticsEventInput[] = [];
 let flushTimer: ReturnType<typeof setTimeout> | null = null;
@@ -53,6 +68,21 @@ function anonymousId(): string | null {
 function send(events: AnalyticsEventInput[]): void {
   if (events.length === 0) return;
 
+  // The server caps a batch and silently drops the tail, and a page load can
+  // easily exceed that on its own - one view plus every control that came into
+  // sight with it - so the split happens here rather than being discovered as
+  // missing rows later.
+  if (events.length > MAX_EVENTS_PER_REQUEST) {
+    for (let i = 0; i < events.length; i += MAX_EVENTS_PER_REQUEST) {
+      sendBatch(events.slice(i, i + MAX_EVENTS_PER_REQUEST));
+    }
+    return;
+  }
+
+  sendBatch(events);
+}
+
+function sendBatch(events: AnalyticsEventInput[]): void {
   const payload = JSON.stringify({
     events,
     anonymousId: anonymousId(),
@@ -107,8 +137,11 @@ export function track(
   if (typeof window === 'undefined') return;
 
   attachListeners();
+
+  if (queue.length >= MAX_QUEUE) queue.shift();
   queue.push({ name, props, occurredAt: Date.now() });
-  trackGoogleEvent(name, sanitizeForGa(props));
+
+  if (!GA_EXCLUDED.has(name)) trackGoogleEvent(name, sanitizeForGa(props));
 
   if (!flushTimer) {
     flushTimer = setTimeout(flushAnalytics, FLUSH_DELAY_MS);

@@ -48,15 +48,25 @@ export default async function FunnelPage() {
             </h1>
             <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
               Laatste {report.windowDays} dagen. De hostcijfers tellen alle accounts, ook die van voor
-              de meting, omdat die teller op het gebruikersdocument staat.
+              de meting, omdat die teller op het gebruikersdocument staat. De test- en reviewaccounts
+              blijven buiten de retentiecijfers: ze hebben allemaal premium, dus anders bestaat die
+              groep vooral uit onszelf.
             </p>
           </div>
-          <Link
-            href="/beheer"
-            className="inline-flex h-10 items-center rounded-md border border-rule bg-paper-raised px-4 text-sm text-ink hover:bg-paper-sunken"
-          >
-            Terug naar beheer
-          </Link>
+          <div className="flex flex-wrap gap-2">
+            <Link
+              href="/beheer/statistieken"
+              className="inline-flex h-10 items-center rounded-md border border-rule bg-paper-raised px-4 text-sm text-ink hover:bg-paper-sunken"
+            >
+              Statistieken
+            </Link>
+            <Link
+              href="/beheer"
+              className="inline-flex h-10 items-center rounded-md border border-rule bg-paper-raised px-4 text-sm text-ink hover:bg-paper-sunken"
+            >
+              Terug naar beheer
+            </Link>
+          </div>
         </div>
 
         {!hasEvents && (

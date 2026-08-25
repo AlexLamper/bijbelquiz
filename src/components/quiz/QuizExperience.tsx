@@ -8,6 +8,7 @@ import QuizStartScreen, {
   type QuizLastResult,
   type QuizStartQuiz,
 } from '@/components/quiz/QuizStartScreen';
+import { track } from '@/lib/analytics/client';
 import type { QuizPassage } from '@/lib/quiz-passage';
 
 type Phase = 'overview' | 'passage' | 'playing';
@@ -56,6 +57,21 @@ export default function QuizExperience({ quiz, overview, passage, lastResult, se
       lastResult={lastResult}
       setupSeen={setupSeen}
       onStart={(choice) => {
+        // The other half of `quiz_completed`. On its own, a completion count
+        // cannot tell a quiz nobody opens from one everybody abandons, and
+        // those want opposite fixes.
+        track('quiz_started', {
+          quizId: overview._id,
+          quizTitle: overview.title,
+          category: overview.categoryTitle ?? null,
+          difficulty: overview.difficulty ?? null,
+          isPremium: Boolean(overview.isPremium),
+          questionCount: overview.questionCount,
+          timerSeconds: choice.timerSeconds,
+          readPassageFirst: choice.readPassageFirst,
+          isReplay: Boolean(lastResult),
+        });
+
         setTimerSeconds(choice.timerSeconds);
         setPhase(choice.readPassageFirst && passage ? 'passage' : 'playing');
       }}

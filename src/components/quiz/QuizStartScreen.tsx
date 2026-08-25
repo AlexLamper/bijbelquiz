@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, Check, ChevronDown, Timer, Type } from 'lucide-react';
 
 import type { QuizPassage } from '@/lib/quiz-passage';
@@ -65,6 +65,12 @@ const DIFFICULTY_LABELS: Record<string, string> = {
  * chapter first. Those choices are saved to the account, so this screen asks
  * once rather than every time: after the first quiz the setup folds into a
  * single line that says what is currently set, and opens on request.
+ *
+ * Stacked on a phone, side by side from `lg` up. The stacked order puts the
+ * setup and its start button below a cover image, a title, a figures row and
+ * possibly a previous result - which on a laptop pushes "Start de quiz" under
+ * the fold even though there is a column of unused width next to it. Splitting
+ * it means the whole screen, setup included, is reachable without scrolling.
  */
 export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, onStart }: QuizStartScreenProps) {
   const { settings, saveSettings, isAuthenticated } = useUserSettings();
@@ -86,9 +92,28 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
     setFontSize(settings.questionFontSize);
   }
 
+  // Whether this account has already been past the panel. Starts from the
+  // server value and flips as soon as anything here is touched, so a second
+  // change in the same sitting does not send the flag again.
+  const seenMarked = useRef(setupSeen);
+
   const persist = (patch: Parameters<typeof saveSettings>[0]) => {
     if (!isAuthenticated) return;
-    saveSettings(patch).catch(() => {
+
+    // Touching anything in this panel counts as having seen it, so it folds
+    // itself away from the next quiz onwards. Sent with the first change rather
+    // than waiting for the quiz to start: somebody who sets a timer and then
+    // goes back to the list has made their choice, and being asked again on
+    // every quiz from then on is the thing this flag exists to prevent.
+    const body = seenMarked.current ? patch : { ...patch, quizSetupSeen: true };
+    seenMarked.current = true;
+
+    // No session refresh: every value here is already applied locally, and
+    // `update()` would put the whole tree through a loading state on each tap
+    // of a timer button - and could land late enough to snap a rapid second
+    // choice back to the first. The next page load re-reads the account
+    // anyway, which is when this flag is needed.
+    saveSettings(body, { refreshSession: false }).catch(() => {
       // Applied locally already; a failed write costs persistence, and an error
       // toast on the way into a quiz is worse than silently not remembering.
     });
@@ -105,9 +130,9 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
     .join(' · ');
 
   const handleStart = () => {
-    // Marked on the way into the quiz rather than on opening the panel: what
-    // matters is that the reader has been past these choices once.
-    if (!setupSeen) persist({ quizSetupSeen: true });
+    // Being taken past these choices counts as having seen them, even when
+    // none of them were changed. `persist` folds the flag in.
+    if (!seenMarked.current) persist({});
     onStart({ readPassageFirst: Boolean(passage) && readPassageFirst, timerSeconds });
   };
 
@@ -118,8 +143,11 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
     : null;
 
   return (
-    <div className="min-h-screen bg-paper">
-      <div className="mx-auto w-full max-w-[820px] px-5 pb-10 pt-5 sm:px-8 lg:pt-7">
+    // Not `min-h-screen`: this screen renders below a 64px sticky navbar, so a
+    // full viewport height here guarantees 64px of scrollbar on a page that
+    // otherwise fits - which is the thing this layout exists to avoid.
+    <div className="min-h-[calc(100vh-4rem)] bg-paper">
+      <div className="mx-auto w-full max-w-[820px] px-5 pb-10 pt-5 sm:px-8 lg:max-w-[1180px] lg:px-10 lg:pb-14 lg:pt-6">
         <Link
           href="/quizzen"
           className="group inline-flex items-center gap-2 text-sm font-medium text-ink-muted transition-colors hover:text-ink"
@@ -128,229 +156,236 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
           Alle quizzen
         </Link>
 
-        {/* ── What this quiz is ─────────────────────────────────────────── */}
-        <header className="mt-4">
-          {quiz.imageUrl && (
-            <div className="relative aspect-[21/6] w-full overflow-hidden rounded-lg bg-paper-sunken ring-1 ring-rule ring-inset sm:aspect-[32/7]">
-              <Image
-                src={quiz.imageUrl}
-                alt=""
-                fill
-                sizes="(max-width: 880px) 100vw, 880px"
-                className="object-cover"
-                priority
-              />
-            </div>
-          )}
-
-          <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-            {quiz.categoryTitle || 'Algemeen'}
-            <span className="mx-2 text-rule-strong">/</span>
-            {difficultyLabel}
-          </p>
-
-          <h1 className="mt-2 font-display text-[26px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[32px]">
-            {quiz.title}
-          </h1>
-
-          {quiz.description && (
-            <p className="mt-2.5 line-clamp-2 max-w-2xl text-sm leading-relaxed text-ink-muted">
-              {quiz.description}
-            </p>
-          )}
-        </header>
-
-        {/* ── Figures ───────────────────────────────────────────────────── */}
-        <div className="mt-5 grid grid-cols-3 gap-x-6 border-y border-rule py-3.5 sm:divide-x sm:divide-rule">
-          {[
-            { label: 'Vragen', value: String(quiz.questionCount) },
-            { label: 'Duur', value: `${minutes} min` },
-            { label: 'XP', value: String(quiz.rewardXp ?? 50) },
-          ].map((figure) => (
-            <div key={figure.label} className="sm:px-6 sm:first:pl-0 sm:last:pr-0">
-              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-                {figure.label}
-              </p>
-              <p className="mt-1 font-display text-[19px] font-normal leading-none tabular-nums text-ink">
-                {figure.value}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* ── Already played ────────────────────────────────────────────── */}
-        {lastResult && (
-          <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-lg border border-positive/35 bg-positive-tint px-4 py-2.5 text-sm">
-            <span className="inline-flex items-center gap-2 text-sm font-medium text-ink">
-              <span
-                aria-hidden
-                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-positive"
-              >
-                <Check className="h-3 w-3 text-ink-inverted" strokeWidth={3} />
-              </span>
-              Deze quiz heb je al gedaan
-            </span>
-            <span className="text-sm text-ink-soft">
-              Beste score <span className="font-medium tabular-nums text-ink">{bestLabel}</span> ·
-              laatst op {lastResult.completedAtLabel}
-              {lastResult.attempts > 1 ? ` · ${lastResult.attempts} pogingen` : ''}
-            </span>
-          </div>
-        )}
-
-        {/* ── How you want to play ──────────────────────────────────────── */}
-        <section className="mt-6">
-          <button
-            type="button"
-            onClick={() => setSetupOpen((open) => !open)}
-            aria-expanded={setupOpen}
-            aria-controls="quiz-setup-panel"
-            className="group flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-1 text-left"
-          >
-            <span className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted transition-colors group-hover:text-ink">
-              <span aria-hidden className="h-px w-6 bg-lapis" />
-              {setupOpen ? 'Hoe wil je spelen?' : 'Quiz instellingen'}
-            </span>
-            <span className="inline-flex min-w-0 items-center gap-1.5 text-xs text-ink-muted transition-colors group-hover:text-ink">
-              <span className="truncate">{setupOpen ? 'Wordt onthouden' : setupSummary}</span>
-              <ChevronDown
-                aria-hidden
-                className={cn('h-3.5 w-3.5 shrink-0 transition-transform', setupOpen && 'rotate-180')}
-              />
-            </span>
-          </button>
-
-          <div
-            id="quiz-setup-panel"
-            hidden={!setupOpen}
-            className="mt-3 divide-y divide-rule overflow-hidden rounded-lg border border-rule"
-          >
-            {/* Read the chapter first - only offered when there is one. */}
-            {passage && (
-              <label className="flex cursor-pointer items-center gap-3.5 bg-paper-raised px-4 py-3.5">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
-                  <BookOpen className="h-4 w-4" />
-                </span>
-
-                <span className="min-w-0 flex-1">
-                  <span className="block text-sm font-medium text-ink">
-                    Lees eerst {passage.label}
-                  </span>
-                  <span className="mt-0.5 block text-xs text-ink-muted">
-                    Het hoofdstuk waar deze quiz over gaat.
-                  </span>
-                </span>
-
-                <input
-                  type="checkbox"
-                  className="sr-only"
-                  checked={readPassageFirst}
-                  onChange={(event) => {
-                    setReadPassageFirst(event.target.checked);
-                    persist({ readPassageFirst: event.target.checked });
-                  }}
-                />
-                <span
-                  aria-hidden
-                  className={cn(
-                    'flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 transition-colors',
-                    readPassageFirst ? 'bg-ink' : 'bg-rule-strong'
-                  )}
-                >
-                  <span
-                    className={cn(
-                      'h-5 w-5 rounded-full bg-paper-raised transition-transform',
-                      readPassageFirst && 'translate-x-5'
-                    )}
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(340px,400px)] lg:items-start lg:gap-x-12">
+          {/* ── What this quiz is ───────────────────────────────────────── */}
+          <div className="min-w-0">
+            <header className="mt-4">
+              {quiz.imageUrl && (
+                <div className="relative aspect-[21/6] w-full overflow-hidden rounded-lg bg-paper-sunken ring-1 ring-rule ring-inset sm:aspect-[32/7]">
+                  <Image
+                    src={quiz.imageUrl}
+                    alt=""
+                    fill
+                    sizes="(max-width: 880px) 100vw, 700px"
+                    className="object-cover"
+                    priority
                   />
+                </div>
+              )}
+
+              <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                {quiz.categoryTitle || 'Algemeen'}
+                <span className="mx-2 text-rule-strong">/</span>
+                {difficultyLabel}
+              </p>
+
+              <h1 className="mt-2 font-display text-[26px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[32px]">
+                {quiz.title}
+              </h1>
+
+              {quiz.description && (
+                <p className="mt-2.5 line-clamp-2 max-w-2xl text-sm leading-relaxed text-ink-muted">
+                  {quiz.description}
+                </p>
+              )}
+            </header>
+
+            {/* ── Figures ─────────────────────────────────────────────── */}
+            <div className="mt-5 grid grid-cols-3 gap-x-6 border-y border-rule py-3.5 sm:divide-x sm:divide-rule">
+              {[
+                { label: 'Vragen', value: String(quiz.questionCount) },
+                { label: 'Duur', value: `${minutes} min` },
+                { label: 'XP', value: String(quiz.rewardXp ?? 50) },
+              ].map((figure) => (
+                <div key={figure.label} className="sm:px-6 sm:first:pl-0 sm:last:pr-0">
+                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                    {figure.label}
+                  </p>
+                  <p className="mt-1 font-display text-[19px] font-normal leading-none tabular-nums text-ink">
+                    {figure.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* ── Already played ──────────────────────────────────────── */}
+            {lastResult && (
+              <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-lg border border-positive/35 bg-positive-tint px-4 py-2.5 text-sm">
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-ink">
+                  <span
+                    aria-hidden
+                    className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-positive"
+                  >
+                    <Check className="h-3 w-3 text-ink-inverted" strokeWidth={3} />
+                  </span>
+                  Deze quiz heb je al gedaan
                 </span>
-              </label>
+                <span className="text-sm text-ink-soft">
+                  Beste score <span className="font-medium tabular-nums text-ink">{bestLabel}</span> ·
+                  laatst op {lastResult.completedAtLabel}
+                  {lastResult.attempts > 1 ? ` · ${lastResult.attempts} pogingen` : ''}
+                </span>
+              </div>
             )}
-
-            {/* Timer */}
-            <div className="flex flex-wrap items-center gap-3.5 bg-paper-raised px-4 py-3.5">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
-                <Timer className="h-4 w-4" />
-              </span>
-
-              <div className="min-w-[9rem] flex-1">
-                <p className="text-sm font-medium text-ink">Tijd per vraag</p>
-                <p className="mt-0.5 text-xs text-ink-muted">Standaard uit.</p>
-              </div>
-
-              <div className="flex w-full shrink-0 gap-1.5 sm:w-auto">
-                {QUESTION_TIMER_CHOICES.map((choice) => (
-                  <button
-                    key={choice}
-                    type="button"
-                    onClick={() => {
-                      setTimerSeconds(choice);
-                      persist({ questionTimerSeconds: choice });
-                    }}
-                    className={cn(
-                      'h-9 flex-1 rounded-md border px-3 text-sm font-medium transition-colors sm:flex-none',
-                      timerSeconds === choice
-                        ? 'border-ink bg-ink text-ink-inverted'
-                        : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink'
-                    )}
-                  >
-                    {choice === 0 ? 'Uit' : `${choice}s`}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Question text size */}
-            <div className="flex flex-wrap items-center gap-3.5 bg-paper-raised px-4 py-3.5">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
-                <Type className="h-4 w-4" />
-              </span>
-
-              <div className="min-w-[9rem] flex-1">
-                <p className="text-sm font-medium text-ink">Tekstgrootte</p>
-                <p className="mt-0.5 text-xs text-ink-muted">Grootte van de vraag.</p>
-              </div>
-
-              <div className="flex w-full shrink-0 gap-1.5 sm:w-auto">
-                {(['normal', 'large'] as QuestionFontSize[]).map((size) => (
-                  <button
-                    key={size}
-                    type="button"
-                    onClick={() => {
-                      setFontSize(size);
-                      persist({ questionFontSize: size });
-                    }}
-                    className={cn(
-                      'h-9 flex-1 rounded-md border px-4 text-sm font-medium transition-colors sm:flex-none',
-                      fontSize === size
-                        ? 'border-ink bg-ink text-ink-inverted'
-                        : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink'
-                    )}
-                  >
-                    {size === 'normal' ? 'Normaal' : 'Groot'}
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
 
-          <button
-            type="button"
-            onClick={handleStart}
-            className="mt-4 inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
-          >
-            {passage && readPassageFirst
-              ? `Lees ${passage.label} en start`
-              : lastResult
-                ? 'Opnieuw spelen'
-                : 'Start de quiz'}
-            <ArrowRight className="h-4 w-4" />
-          </button>
+          {/* ── How you want to play ────────────────────────────────────── */}
+          {/* Sticky under the 64px navbar, so a long left column never scrolls
+              the start button away on the way past it. */}
+          <section className="mt-6 lg:sticky lg:top-20 lg:mt-4">
+            <button
+              type="button"
+              onClick={() => setSetupOpen((open) => !open)}
+              aria-expanded={setupOpen}
+              aria-controls="quiz-setup-panel"
+              className="group flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-1 text-left"
+            >
+              <span className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted transition-colors group-hover:text-ink">
+                <span aria-hidden className="h-px w-6 bg-lapis" />
+                {setupOpen ? 'Hoe wil je spelen?' : 'Quiz instellingen'}
+              </span>
+              <span className="inline-flex min-w-0 items-center gap-1.5 text-xs text-ink-muted transition-colors group-hover:text-ink">
+                <span className="truncate">{setupOpen ? 'Wordt onthouden' : setupSummary}</span>
+                <ChevronDown
+                  aria-hidden
+                  className={cn('h-3.5 w-3.5 shrink-0 transition-transform', setupOpen && 'rotate-180')}
+                />
+              </span>
+            </button>
 
-          <p className="mt-2 text-center text-xs text-ink-muted">
-            Tijdens de quiz aanpasbaar via het instellingen-icoon.
-          </p>
-        </section>
+            <div
+              id="quiz-setup-panel"
+              hidden={!setupOpen}
+              className="mt-3 divide-y divide-rule overflow-hidden rounded-lg border border-rule"
+            >
+              {/* Read the chapter first - only offered when there is one. */}
+              {passage && (
+                <label className="flex cursor-pointer items-center gap-3.5 bg-paper-raised px-4 py-3.5">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
+                    <BookOpen className="h-4 w-4" />
+                  </span>
+
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-sm font-medium text-ink">
+                      Lees eerst {passage.label}
+                    </span>
+                    <span className="mt-0.5 block text-xs text-ink-muted">
+                      Het hoofdstuk waar deze quiz over gaat.
+                    </span>
+                  </span>
+
+                  <input
+                    type="checkbox"
+                    className="sr-only"
+                    checked={readPassageFirst}
+                    onChange={(event) => {
+                      setReadPassageFirst(event.target.checked);
+                      persist({ readPassageFirst: event.target.checked });
+                    }}
+                  />
+                  <span
+                    aria-hidden
+                    className={cn(
+                      'flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 transition-colors',
+                      readPassageFirst ? 'bg-ink' : 'bg-rule-strong'
+                    )}
+                  >
+                    <span
+                      className={cn(
+                        'h-5 w-5 rounded-full bg-paper-raised transition-transform',
+                        readPassageFirst && 'translate-x-5'
+                      )}
+                    />
+                  </span>
+                </label>
+              )}
+
+              {/* Timer */}
+              <div className="flex flex-wrap items-center gap-3.5 bg-paper-raised px-4 py-3.5">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
+                  <Timer className="h-4 w-4" />
+                </span>
+
+                <div className="min-w-[9rem] flex-1">
+                  <p className="text-sm font-medium text-ink">Tijd per vraag</p>
+                  <p className="mt-0.5 text-xs text-ink-muted">Standaard uit.</p>
+                </div>
+
+                <div className="flex w-full shrink-0 gap-1.5 sm:w-auto">
+                  {QUESTION_TIMER_CHOICES.map((choice) => (
+                    <button
+                      key={choice}
+                      type="button"
+                      onClick={() => {
+                        setTimerSeconds(choice);
+                        persist({ questionTimerSeconds: choice });
+                      }}
+                      className={cn(
+                        'h-9 flex-1 rounded-md border px-3 text-sm font-medium transition-colors sm:flex-none',
+                        timerSeconds === choice
+                          ? 'border-ink bg-ink text-ink-inverted'
+                          : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink'
+                      )}
+                    >
+                      {choice === 0 ? 'Uit' : `${choice}s`}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Question text size */}
+              <div className="flex flex-wrap items-center gap-3.5 bg-paper-raised px-4 py-3.5">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-paper-sunken text-ink-soft">
+                  <Type className="h-4 w-4" />
+                </span>
+
+                <div className="min-w-[9rem] flex-1">
+                  <p className="text-sm font-medium text-ink">Tekstgrootte</p>
+                  <p className="mt-0.5 text-xs text-ink-muted">Grootte van de vraag.</p>
+                </div>
+
+                <div className="flex w-full shrink-0 gap-1.5 sm:w-auto">
+                  {(['normal', 'large'] as QuestionFontSize[]).map((size) => (
+                    <button
+                      key={size}
+                      type="button"
+                      onClick={() => {
+                        setFontSize(size);
+                        persist({ questionFontSize: size });
+                      }}
+                      className={cn(
+                        'h-9 flex-1 rounded-md border px-4 text-sm font-medium transition-colors sm:flex-none',
+                        fontSize === size
+                          ? 'border-ink bg-ink text-ink-inverted'
+                          : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink'
+                      )}
+                    >
+                      {size === 'normal' ? 'Normaal' : 'Groot'}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={handleStart}
+              data-analytics-id="quiz.start"
+              className="mt-4 inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
+            >
+              {passage && readPassageFirst
+                ? `Lees ${passage.label} en start`
+                : lastResult
+                  ? 'Opnieuw spelen'
+                  : 'Start de quiz'}
+              <ArrowRight className="h-4 w-4" />
+            </button>
+
+            <p className="mt-2 text-center text-xs text-ink-muted">
+              Tijdens de quiz aanpasbaar via het instellingen-icoon.
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   );

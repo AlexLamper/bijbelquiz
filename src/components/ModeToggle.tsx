@@ -5,6 +5,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
+import { track } from "@/lib/analytics/client"
 import { useUserSettings } from "@/lib/user-settings-client"
 
 export function ModeToggle() {
@@ -29,6 +30,11 @@ export function ModeToggle() {
     // through a loading state and blank the account controls in the navbar for
     // the length of two round trips.
     setTheme(next)
+
+    // The direction, not just the count: "how many people switch to dark" and
+    // "how many switch back" are different numbers, and only the pair says
+    // whether the default is set right.
+    track("theme_changed", { from: isDark ? "dark" : "light", to: next })
 
     if (isAuthenticated) {
       saveSettings({ themePreference: next }, { refreshSession: false }).catch(() => {

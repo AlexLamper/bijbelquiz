@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import { AnalyticsEvent, User, connectDB } from '@/database';
 import { MULTIPLAYER_FREE_ROOM_QUOTA } from '@/lib/premium-benefits';
 
+import { getInternalAccountIds } from './internal-accounts';
+
 /**
  * The four numbers the revenue plan says to run the business on, plus the
  * per-trigger breakdown that tells you which paywall is actually earning.
@@ -167,6 +169,11 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
  * least 30 days after signing up. A cohort read rather than a rolling one:
  * accounts younger than 30 days cannot answer the question yet and are
  * excluded rather than counted as churned.
+ *
+ * The developer and app-reviewer accounts are left out of both cohorts. They
+ * all carry Premium, so counting them would make the premium cohort mostly
+ * ourselves - and a reviewer account that is used once a year would report as
+ * churn we cannot act on.
  */
 export async function getDayThirtyRetention(): Promise<{
   free: { cohort: number; retained: number; rate: number };
@@ -176,9 +183,15 @@ export async function getDayThirtyRetention(): Promise<{
 
   const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
   const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+  const internalIds = await getInternalAccountIds();
 
   const rows = await User.aggregate([
-    { $match: { createdAt: { $lte: thirtyDaysAgo } } },
+    {
+      $match: {
+        createdAt: { $lte: thirtyDaysAgo },
+        ...(internalIds.length > 0 ? { _id: { $nin: internalIds } } : {}),
+      },
+    },
     {
       $group: {
         _id: { $ifNull: ['$isPremium', false] },
