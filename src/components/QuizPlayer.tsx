@@ -518,10 +518,22 @@ export default function QuizPlayer({
       ? buildReviewQuestionsFromSelections(quiz.questions as Parameters<typeof buildReviewQuestionsFromSelections>[0], selectedAnswers)
       : [];
 
+    // Counted, not derived from the percentage: 14/15 rounds to 93% and 10/10
+    // to 100%, but only one of those is actually every question right, and
+    // telling somebody with a perfect score they got "bijna alles goed" reads
+    // as the app not having looked at their answers.
+    const isPerfect = score === quiz.questions.length;
+
     // The result speaks in its own voice rather than printing "Quiz afgerond"
     // over every outcome: a 3/15 and a 15/15 are not the same event.
-    const verdict =
-      percentage >= 90
+    const verdict = isPerfect
+      ? {
+          headline: 'Alles goed',
+          lead: 'Een foutloze ronde. Tijd voor een moeilijkere quiz of een nieuw bijbelboek.',
+          tone: 'text-positive',
+          bar: 'bg-positive',
+        }
+      : percentage >= 90
         ? {
             headline: 'Uitstekend gedaan',
             lead: 'Bijna alles goed. Tijd voor een moeilijkere quiz of een nieuw bijbelboek.',

@@ -59,11 +59,24 @@ export function getQuizReviewInsights(
 
   const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
 
-  const performanceLabel =
-    percentage >= 85 ? 'Sterk resultaat' : percentage >= 65 ? 'Goede basis' : 'Duidelijke groeikans';
+  // Counted rather than read off the percentage. 13/15 rounds to 87% and lands
+  // in the same tier as 15/15, but the advice for the first ("herhaal je fout
+  // beantwoorde vragen") has nothing to point at in the second - there are no
+  // wrong answers left to herhalen, and telling somebody to work towards being
+  // foutloos when they already are reads as the app ignoring their result.
+  const isPerfect = totalQuestions > 0 && incorrectCount === 0 && unansweredCount === 0;
 
-  const recommendationText =
-    percentage >= 85
+  const performanceLabel = isPerfect
+    ? 'Foutloos'
+    : percentage >= 85
+      ? 'Sterk resultaat'
+      : percentage >= 65
+        ? 'Goede basis'
+        : 'Duidelijke groeikans';
+
+  const recommendationText = isPerfect
+    ? 'Elke vraag goed beantwoord. Een moeilijkere quiz of een volgend bijbelboek is nu de logische stap.'
+    : percentage >= 85
       ? 'Je beheerst deze quiz goed. Herhaal vooral je fout beantwoorde vragen om volledig foutloos te worden.'
       : percentage >= 65
         ? 'Je zit op de goede weg. Focus op de fout beantwoorde vragen en vergelijk de uitleg met de bijbelverwijzingen.'

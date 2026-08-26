@@ -147,7 +147,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
     // full viewport height here guarantees 64px of scrollbar on a page that
     // otherwise fits - which is the thing this layout exists to avoid.
     <div className="min-h-[calc(100vh-4rem)] bg-paper">
-      <div className="mx-auto w-full max-w-[820px] px-5 pb-10 pt-5 sm:px-8 lg:max-w-[1180px] lg:px-10 lg:pb-14 lg:pt-6">
+      <div className="mx-auto w-full max-w-[820px] px-5 pb-10 pt-5 sm:px-8 lg:px-10 lg:pb-14 lg:pt-6">
         <Link
           href="/quizzen"
           className="group inline-flex items-center gap-2 text-sm font-medium text-ink-muted transition-colors hover:text-ink"
@@ -156,7 +156,10 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
           Alle quizzen
         </Link>
 
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(340px,400px)] lg:items-start lg:gap-x-12">
+        {/* One column at every width. The quiz and the way you want to play it
+            are read in that order, so they are set in that order rather than
+            side by side. */}
+        <div>
           {/* ── What this quiz is ───────────────────────────────────────── */}
           <div className="min-w-0">
             <header className="mt-4">
@@ -166,7 +169,7 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
                     src={quiz.imageUrl}
                     alt=""
                     fill
-                    sizes="(max-width: 880px) 100vw, 700px"
+                    sizes="(max-width: 880px) 100vw, 760px"
                     className="object-cover"
                     priority
                   />
@@ -230,9 +233,10 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
           </div>
 
           {/* ── How you want to play ────────────────────────────────────── */}
-          {/* Sticky under the 64px navbar, so a long left column never scrolls
-              the start button away on the way past it. */}
-          <section className="mt-6 lg:sticky lg:top-20 lg:mt-4">
+          {/* Not sticky: there is no second column left to scroll past it now,
+              so pinning it would only park the panel on top of what is above
+              it. It sits where it is read, directly under the quiz. */}
+          <section className="mt-6">
             <button
               type="button"
               onClick={() => setSetupOpen((open) => !open)}
