@@ -17,15 +17,12 @@
  *
  * USAGE:
  *   $env:MONGODB_URI="<your mongodb uri>"
- *   node --import tsx scripts/backfill-question-refs.mts           # dry run
- *   node --import tsx scripts/backfill-question-refs.mts --apply   # write
+ *   node --import tsx scripts/backfill-question-refs.ts           # dry run
+ *   node --import tsx scripts/backfill-question-refs.ts --apply   # write
  */
 import mongoose from 'mongoose';
-import bibleReferenceModule from '../src/lib/bible-reference';
-import bookCanonModule from '../src/lib/book-canon';
-
-const { parseBibleReference } = bibleReferenceModule;
-const { toBookCode } = bookCanonModule;
+import { parseBibleReference } from '@/lib/bible-reference';
+import { toBookCode } from '@/lib/book-canon';
 
 const APPLY = process.argv.includes('--apply');
 

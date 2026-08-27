@@ -20,7 +20,7 @@
     "quiz:validate": "node --import tsx scripts/validate-quiz-json.ts",
     "quiz:import": "node --import tsx scripts/import-quiz-json.mts",
     "stripe:setup": "node --import tsx scripts/setup-stripe-products.mts",
-    "quiz:backfill-refs": "node --import tsx scripts/backfill-question-refs.mts"
+    "quiz:backfill-refs": "node --import tsx scripts/backfill-question-refs.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
