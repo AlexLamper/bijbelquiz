@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useMemo, useState } from 'react';
+import { Fragment, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { Search, SlidersHorizontal } from 'lucide-react';
 
@@ -24,6 +24,7 @@ interface Quiz {
   slug?: string;
   categoryId?: { _id: string; title: string } | string;
   questions?: { _id: string }[];
+  questionCount?: number;
   progress?: {
     attempts: number;
     bestCorrectAnswers: number;
@@ -49,6 +50,14 @@ interface QuizzesClientProps {
 }
 
 const ROMAN_PARTS: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6 };
+
+/**
+ * How many cards render at once. The library keeps growing past what fits a
+ * screen, and mounting every match - image, tile, link - for a filter that
+ * returns a hundred results is work nobody scrolls far enough to see. Search
+ * and filtering still run over the full set; only rendering is capped.
+ */
+const PAGE_SIZE = 24;
 
 const DIFFICULTY_FILTERS: { value: PreferredDifficulty; label: string }[] = [
   { value: 'all', label: 'Elk niveau' },
@@ -183,6 +192,17 @@ export default function QuizzesClient({
     () => normalizedQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) > 0).length,
     [normalizedQuizzes]
   );
+
+  // Reset to the first page whenever the result set changes shape - otherwise
+  // a search that narrows a hundred matches to three would leave the "toon
+  // meer" cutoff sitting past the end of the new list.
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty]);
+
+  const visibleQuizzes = orderedQuizzes.slice(0, visibleCount);
+  const hasMore = orderedQuizzes.length > visibleQuizzes.length;
 
   /** Index in `orderedQuizzes` where the already-played half begins. */
   const firstPlayedIndex = useMemo(
@@ -354,23 +374,38 @@ export default function QuizzesClient({
             </CardContent>
           </Card>
         ) : (
-          <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
-            {orderedQuizzes.map((quiz, index) => (
-              <Fragment key={quiz._id}>
-                {/* A labelled rule where the finished half starts, so it is
-                    obvious the grid did not simply run out of new quizzes. */}
-                {index === firstPlayedIndex && firstPlayedIndex > 0 && (
-                  <div className="col-span-full flex items-center gap-4 pt-2">
-                    <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-                      Al afgerond ({playedCount})
-                    </span>
-                    <span aria-hidden className="h-px flex-1 bg-rule" />
-                  </div>
-                )}
-                <QuizCard quiz={quiz} isPremiumUser={userIsPremium} />
-              </Fragment>
-            ))}
-          </div>
+          <>
+            <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
+              {visibleQuizzes.map((quiz, index) => (
+                <Fragment key={quiz._id}>
+                  {/* A labelled rule where the finished half starts, so it is
+                      obvious the grid did not simply run out of new quizzes. */}
+                  {index === firstPlayedIndex && firstPlayedIndex > 0 && (
+                    <div className="col-span-full flex items-center gap-4 pt-2">
+                      <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                        Al afgerond ({playedCount})
+                      </span>
+                      <span aria-hidden className="h-px flex-1 bg-rule" />
+                    </div>
+                  )}
+                  <QuizCard quiz={quiz} isPremiumUser={userIsPremium} />
+                </Fragment>
+              ))}
+            </div>
+
+            {hasMore && (
+              <div className="mt-10 flex justify-center">
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+                  className="h-10 rounded-md border-rule bg-paper-raised px-6 text-ink hover:bg-paper-sunken"
+                >
+                  Toon meer ({orderedQuizzes.length - visibleQuizzes.length} resterend)
+                </Button>
+              </div>
+            )}
+          </>
         )}
       </section>
     </div>

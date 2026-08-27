@@ -19,6 +19,9 @@ export interface DashboardQuiz {
   slug?: string;
   categoryId?: { _id: string; title: string } | string;
   questions?: { _id: string }[];
+  /** Preferred over `questions?.length` when present - lets a list page send
+   *  the count without shipping every question, answer and explanation. */
+  questionCount?: number;
   progress?: {
     attempts: number;
     bestCorrectAnswers: number;
@@ -86,7 +89,7 @@ export function QuizTile({
 
   const isLocked =
     typeof quiz.isLocked === 'boolean' ? quiz.isLocked : quiz.isPremium && isPremiumUser === false;
-  const questionCount = quiz.questions?.length ?? 0;
+  const questionCount = quiz.questionCount ?? quiz.questions?.length ?? 0;
   const played = (quiz.progress?.attempts ?? 0) > 0;
 
   // "12/15" from the best attempt. Falls back to nothing rather than to a

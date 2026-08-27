@@ -27,10 +27,43 @@ async function getData(userId?: string) {
 
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
 
-  const quizzes = await Quiz.find(statusFilter)
-    .populate('categoryId')
-    .sort({ isPremium: 1, title: 1 })
-    .lean();
+  // A browse-and-search grid only ever shows a title, a description and a
+  // count - never the questions themselves. `Quiz.find().populate()` pulled
+  // every question, answer and explanation for every quiz on the page anyway,
+  // which is invisible at ten quizzes and a real cost once the library grows
+  // past a hundred: the payload for this page was scaling with total question
+  // text, not with quiz count. Aggregating a `questionCount` and the category
+  // fields the cards use keeps this page's weight tied to what it displays.
+  const quizzes = await Quiz.aggregate([
+    { $match: statusFilter },
+    {
+      $lookup: {
+        from: 'categories',
+        localField: 'categoryId',
+        foreignField: '_id',
+        as: 'category',
+      },
+    },
+    { $unwind: { path: '$category', preserveNullAndEmptyArrays: true } },
+    {
+      $project: {
+        title: 1,
+        slug: 1,
+        description: 1,
+        imageUrl: 1,
+        difficulty: 1,
+        isPremium: 1,
+        rewardXp: 1,
+        createdAt: 1,
+        questionCount: { $size: { $ifNull: ['$questions', []] } },
+        categoryId: {
+          _id: '$category._id',
+          title: '$category.title',
+        },
+      },
+    },
+    { $sort: { isPremium: 1, title: 1 } },
+  ]);
 
   const categories = await Category.find({ isActive: true }).sort({ sortOrder: 1 }).lean();
 
