@@ -344,7 +344,7 @@ export default function QuizzesClient({
               <p className="mt-1 text-sm text-muted-foreground">
                 Of verdiep je eerst in een onderwerp via{' '}
                 <a
-                  href="https://www.bijbel-studie.com"
+                  href="https://www.bijbelstudie.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium text-ink hover:text-ink"

@@ -1,4 +1,4 @@
-export const BIJBEL_STUDIE_BASE_URL = 'https://www.bijbel-studie.com';
+export const BIJBEL_STUDIE_BASE_URL = 'https://www.bijbelstudie.io';
 export const BIJBEL_API_BASE_URL = 'https://www.bijbelapi.com';
 
 const TOPIC_SLUGS: Array<{ keywords: string[]; slug: string; label: string }> = [

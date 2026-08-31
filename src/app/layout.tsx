@@ -95,7 +95,7 @@ export default function RootLayout({
       {
         "@type": "Thing",
         "name": "Bijbelstudie",
-        "url": "https://www.bijbel-studie.com"
+        "url": "https://www.bijbelstudie.io"
       },
       {
         "@type": "SoftwareApplication",
@@ -104,7 +104,7 @@ export default function RootLayout({
       }
     ],
     "sameAs": [
-      "https://www.bijbel-studie.com",
+      "https://www.bijbelstudie.io",
       "https://www.bijbelapi.com"
     ],
     "potentialAction": {
@@ -119,7 +119,7 @@ export default function RootLayout({
     "name": "BijbelQuiz",
     "url": "https://www.bijbelquiz.com",
     "sameAs": [
-      "https://www.bijbel-studie.com",
+      "https://www.bijbelstudie.io",
       "https://www.bijbelapi.com"
     ],
     "knowsAbout": [

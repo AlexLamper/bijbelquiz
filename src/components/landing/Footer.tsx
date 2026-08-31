@@ -31,7 +31,7 @@ const columns = [
   {
     title: 'Meer van ons',
     links: [
-      { href: 'https://www.bijbel-studie.com', label: 'BijbelStudie', external: true },
+      { href: 'https://www.bijbelstudie.io', label: 'BijbelStudie', external: true },
       { href: 'https://www.bijbelapi.com', label: 'BijbelAPI', external: true },
     ],
   },
@@ -97,7 +97,7 @@ export function Footer() {
             </a>{' '}
             en hoort bij{' '}
             <a
-              href="https://www.bijbel-studie.com"
+              href="https://www.bijbelstudie.io"
               rel="noopener"
               className="text-ink-soft underline-offset-2 transition-colors hover:text-ink hover:underline"
             >

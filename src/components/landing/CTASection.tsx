@@ -40,7 +40,7 @@ export function CTASection() {
           <p>
             Verdiep je verder via{' '}
             <Link
-              href="https://www.bijbel-studie.com"
+              href="https://www.bijbelstudie.io"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-ink underline decoration-rule-strong underline-offset-4 transition-colors hover:decoration-ink"

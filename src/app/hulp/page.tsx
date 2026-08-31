@@ -82,7 +82,7 @@ export default function HelpPage() {
           <div className="rounded-lg border border-rule bg-paper-raised p-4">
             <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Meer leren</p>
             <p className="mt-2 text-sm text-muted-foreground">Verdiep je verder per thema via Bijbel Studie.</p>
-            <Link href="https://www.bijbel-studie.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-ink hover:text-ink">
+            <Link href="https://www.bijbelstudie.io" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-ink hover:text-ink">
               Naar Bijbel Studie
             </Link>
           </div>
