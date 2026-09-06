@@ -4,6 +4,8 @@ import { authOptions } from '@/lib/auth';
 import stripe from '@/lib/stripe';
 import { readTrialDays } from '@/lib/premium-benefits';
 import { readReturnPath, readStripePlan, STRIPE_PLANS } from '@/lib/stripe-plans';
+import { recordServerEvent } from '@/lib/analytics/record';
+import { readPaywallTrigger } from '@/lib/analytics/events';
 
 export const dynamic = 'force-dynamic';
 
@@ -30,6 +32,18 @@ export async function POST(req: NextRequest) {
   // should land back in their lobby, not on a generic thank-you page they then
   // have to navigate out of.
   const returnPath = readReturnPath(formData.get('next'));
+
+  // "Pressed pay" - recorded here, server-side, so it counts even if the buyer
+  // bails at Stripe. The gap to `purchase_completed` is the abandon rate the
+  // payments-health page reads.
+  void recordServerEvent('checkout_started', {
+    userId: session.user.id,
+    platform: 'web',
+    props: {
+      plan: selectedPlan,
+      trigger: readPaywallTrigger(formData.get('reden')),
+    },
+  });
 
   // Use the origin from the request to support both localhost and production dynamically
   const origin = req.headers.get('origin') || process.env.NEXTAUTH_URL || 'http://localhost:3000';

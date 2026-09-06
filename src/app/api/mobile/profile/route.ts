@@ -75,6 +75,8 @@ export async function GET(req: Request) {
       premiumStripe: premium.premiumStripe,
       premiumStore: premium.premiumStore,
       storePremiumExpiresAt: premium.storePremiumExpiresAt,
+      role: user.role || 'user',
+      isAdmin: user.role === 'admin',
       streak: user.streak || 0,
       bestStreak: user.bestStreak || 0,
       // The app's evening streak reminder needs to know whether today already

@@ -1,6 +1,6 @@
 import { MultiplayerError } from './errors';
 import type { AvatarConfig } from '@/lib/avatar';
-import type { ImmutableQuestion, RoomStatus } from './types';
+import type { ImmutableQuestion, RoomPassageSnapshot, RoomStatus } from './types';
 
 /**
  * In-memory representation of a room, identical to what we persist in
@@ -36,6 +36,12 @@ export interface PersistedRoom {
   currentQuestionIndex: number;
   totalQuestions: number;
   status: RoomStatus;
+  /** Host chose to show the chapter before question 1. Only true with a passage. */
+  readChapterFirst: boolean;
+  /** Seconds per question as chosen at creation, or `null` to use the global. */
+  questionTimerSeconds: number | null;
+  /** The single chapter this quiz is about, or `null` when it has none. */
+  passage: RoomPassageSnapshot | null;
   players: PersistedRoomPlayer[];
   questions: ImmutableQuestion[];
   /** ms since epoch; null when no question is active. */

@@ -42,6 +42,7 @@ import {
   MULTIPLAYER_PREMIUM_MAX_PLAYERS,
   premiumPaywallHref,
 } from '@/lib/premium-benefits';
+import { QUESTION_TIMER_CHOICES } from '@/lib/user-settings';
 import { cn } from '@/lib/utils';
 
 interface MultiplayerQuizOption {
@@ -105,6 +106,8 @@ export default function MultiplayerEntryClient({
 
   const [selectedQuizId, setSelectedQuizId] = useState(quizzes[0]?.id ?? '');
   const [maxPlayers, setMaxPlayers] = useState<string>('4');
+  const [readChapterFirst, setReadChapterFirst] = useState(false);
+  const [questionTimerSeconds, setQuestionTimerSeconds] = useState<number>(0);
   const [joinCode, setJoinCode] = useState('');
 
   const [isCreating, setIsCreating] = useState(false);
@@ -222,6 +225,8 @@ export default function MultiplayerEntryClient({
           token,
           quizId: selectedQuizId,
           maxPlayers: selectedPlayersCount,
+          readChapterFirst,
+          questionTimerSeconds,
         }),
       );
 
@@ -513,6 +518,46 @@ export default function MultiplayerEntryClient({
                   </SelectContent>
                 </Select>
               </div>
+
+              <div className="space-y-1.5">
+                <label className="text-sm font-medium">Tempo</label>
+                <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4">
+                  {QUESTION_TIMER_CHOICES.map((choice) => (
+                    <button
+                      key={choice}
+                      type="button"
+                      onClick={() => setQuestionTimerSeconds(choice)}
+                      className={cn(
+                        'h-9 rounded-md border px-2 text-sm font-medium transition-colors',
+                        questionTimerSeconds === choice
+                          ? 'border-ink bg-ink text-ink-inverted'
+                          : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink',
+                      )}
+                    >
+                      {choice === 0 ? 'Host bepaalt tempo' : `${choice}s`}
+                    </button>
+                  ))}
+                </div>
+                <p className="text-xs text-ink-soft">
+                  Zonder timer is er geen aftelklok - jij drukt zelf door naar het antwoord
+                  en de volgende vraag.
+                </p>
+              </div>
+
+              <label className="flex items-start gap-2.5 rounded-md border border-rule bg-paper p-3">
+                <input
+                  type="checkbox"
+                  checked={readChapterFirst}
+                  onChange={(event) => setReadChapterFirst(event.target.checked)}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-rule accent-lapis"
+                />
+                <span className="min-w-0">
+                  <span className="text-sm font-medium">Lees eerst het bijbelhoofdstuk</span>
+                  <span className="mt-0.5 block text-xs text-ink-soft">
+                    Werkt alleen als de quiz over 1 hoofdstuk gaat.
+                  </span>
+                </span>
+              </label>
 
               {/* Deliberately a one-liner and not a second paywall block: the
                   user only needs to know this number is out of reach. */}

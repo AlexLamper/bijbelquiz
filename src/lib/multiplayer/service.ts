@@ -1,5 +1,6 @@
 import { randomInt, randomUUID } from 'node:crypto';
 import { type AvatarConfig, resolveAvatar } from '@/lib/avatar';
+import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { MultiplayerError, validationError } from './errors';
 import type {
   PersistedRoom,
@@ -12,6 +13,7 @@ import type {
   MultiplayerDataProvider,
   MultiplayerServiceConfig,
   RoomCurrentQuestionSnapshot,
+  RoomPassageSnapshot,
   RoomPlayerSnapshot,
   RoomResultEntry,
   RoomSnapshot,
@@ -32,6 +34,9 @@ export const MIN_PLAYERS_TO_START = 2;
  */
 export const RECOMMENDED_POLL_INTERVALS_MS: Record<RoomStatus, number> = {
   lobby: 2000,
+  // The reading phase is deadline-free (the host advances it), so it polls at
+  // the same relaxed cadence as the lobby.
+  reading: 2000,
   in_progress: 900,
   question_result: 1200,
   finished: 4000,
@@ -79,6 +84,10 @@ interface CreateRoomInput {
   userId: string;
   quizId: string;
   maxPlayers: number;
+  /** Show the quiz's chapter before question 1 (ignored if there is no passage). */
+  readChapterFirst?: boolean;
+  /** Seconds per question: `0` = host tempo. Omitted = fall back to the global. */
+  questionTimerSeconds?: number;
 }
 
 interface RoomUserInput {
@@ -151,6 +160,19 @@ export class MultiplayerService {
     }
 
     const now = this.config.now();
+
+    // Derived once, at creation, from the questions themselves - a quiz whose
+    // questions all cite Daniël 2 has "Daniël 2" as its passage; a mixed quiz
+    // has none. `confidence` is internal and never leaves the service.
+    const resolvedPassage = resolveQuizPassage(quiz.questions);
+    const passage: RoomPassageSnapshot | null = resolvedPassage
+      ? {
+          book: resolvedPassage.book,
+          chapter: resolvedPassage.chapter,
+          label: resolvedPassage.label,
+        }
+      : null;
+
     const code = await this.allocateUniqueCode(quiz.questions, {
       userId: input.userId,
       playerName: profile.name,
@@ -158,6 +180,10 @@ export class MultiplayerService {
       quizId: quiz.id,
       quizTitle: quiz.title,
       maxPlayers: input.maxPlayers,
+      readChapterFirst: Boolean(input.readChapterFirst) && passage !== null,
+      questionTimerSeconds:
+        typeof input.questionTimerSeconds === 'number' ? input.questionTimerSeconds : null,
+      passage,
       now,
     });
 
@@ -297,7 +323,16 @@ export class MultiplayerService {
         );
       }
 
-      this.startQuestion(room, 0, now);
+      // With "read the chapter first" on and a passage to show, the game pauses
+      // in `reading` until the host advances; otherwise it goes straight to the
+      // first question as before.
+      if (room.readChapterFirst && room.passage) {
+        room.status = 'reading';
+        room.questionDeadlineAtMs = null;
+        room.questionResultUntilAtMs = null;
+      } else {
+        this.startQuestion(room, 0, now);
+      }
       return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
     });
   }
@@ -320,12 +355,27 @@ export class MultiplayerService {
         throw new MultiplayerError('NOT_HOST', 'Only the host can skip to the next question', 403);
       }
 
-      if (room.status !== 'question_result') {
-        return { value: this.buildSnapshot(room, now, input.userId), mutated: mutatedByTimer };
+      // The single host "next" action, whatever phase the room is in:
+      //  - reading:          begin question 0
+      //  - in_progress + host tempo: reveal this question now
+      //  - question_result:  move to the next question (or finish)
+      //  - anything else:     no-op, return the current snapshot
+      if (room.status === 'reading') {
+        this.startQuestion(room, 0, now);
+        return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
       }
 
-      this.advanceToNextQuestion(room, now);
-      return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
+      if (room.status === 'in_progress' && this.resolvedTimerSeconds(room) === 0) {
+        this.finalizeQuestion(room, now);
+        return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
+      }
+
+      if (room.status === 'question_result') {
+        this.advanceToNextQuestion(room, now);
+        return { value: this.buildSnapshot(room, now, input.userId), mutated: true };
+      }
+
+      return { value: this.buildSnapshot(room, now, input.userId), mutated: mutatedByTimer };
     });
   }
 
@@ -376,8 +426,9 @@ export class MultiplayerService {
       }
 
       // If everyone connected has answered, immediately finalize the question
-      // (no need to wait for the timer).
-      if (this.allActivePlayersAnswered(room)) {
+      // (no need to wait for the timer). In host-tempo mode the reveal is fully
+      // manual, so the last answer must not trigger it.
+      if (this.resolvedTimerSeconds(room) > 0 && this.allActivePlayersAnswered(room)) {
         this.finalizeQuestion(room, now);
       }
 
@@ -525,6 +576,9 @@ export class MultiplayerService {
       quizId: string;
       quizTitle: string;
       maxPlayers: number;
+      readChapterFirst: boolean;
+      questionTimerSeconds: number | null;
+      passage: RoomPassageSnapshot | null;
       now: number;
     },
   ): Promise<string> {
@@ -541,6 +595,9 @@ export class MultiplayerService {
         currentQuestionIndex: 0,
         totalQuestions: questions.length,
         status: 'lobby',
+        readChapterFirst: seed.readChapterFirst,
+        questionTimerSeconds: seed.questionTimerSeconds,
+        passage: seed.passage,
         players: [
           {
             id: seed.userId,
@@ -585,6 +642,16 @@ export class MultiplayerService {
       throw validationError('roomCode is required');
     }
     return normalized;
+  }
+
+  /**
+   * The seconds-per-question actually in force for this room: the host's choice
+   * at creation, or the global default for rooms created before the tempo
+   * option existed (their `questionTimerSeconds` is `null`). `0` means the host
+   * drives every step by hand and no countdown is shown.
+   */
+  private resolvedTimerSeconds(room: PersistedRoom): number {
+    return room.questionTimerSeconds ?? this.config.questionTimerSeconds;
   }
 
   /**
@@ -637,8 +704,9 @@ export class MultiplayerService {
       player.hasAnswered = false;
     });
 
-    const timerMs = Math.max(1, Math.round(this.config.questionTimerSeconds * 1000));
-    room.questionDeadlineAtMs = now + timerMs;
+    const timerSeconds = this.resolvedTimerSeconds(room);
+    room.questionDeadlineAtMs =
+      timerSeconds > 0 ? now + Math.round(timerSeconds * 1000) : null;
     room.questionResultUntilAtMs = null;
   }
 
@@ -664,7 +732,12 @@ export class MultiplayerService {
       return;
     }
 
-    room.questionResultUntilAtMs = baseline + this.config.questionResultDelayMs;
+    // In host-tempo mode there is no automatic move to the next question - the
+    // reveal stays up until the host presses "next".
+    room.questionResultUntilAtMs =
+      this.resolvedTimerSeconds(room) === 0
+        ? null
+        : baseline + this.config.questionResultDelayMs;
   }
 
   private advanceToNextQuestion(room: PersistedRoom, now: number): void {
@@ -826,6 +899,15 @@ export class MultiplayerService {
       currentQuestionIndex: room.currentQuestionIndex,
       totalQuestions: room.totalQuestions,
       status,
+      readChapterFirst: room.readChapterFirst,
+      questionTimerSeconds: this.resolvedTimerSeconds(room),
+      passage: room.passage
+        ? {
+            book: room.passage.book,
+            chapter: room.passage.chapter,
+            label: room.passage.label,
+          }
+        : null,
       players,
       currentQuestion,
       resultPhaseEndsAtMs,

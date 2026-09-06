@@ -74,6 +74,7 @@ export class InMemoryRoomRepository implements RoomRepository {
         answers: q.answers.map((a) => ({ ...a })),
       })),
       submittedAnswers: { ...room.submittedAnswers },
+      passage: room.passage ? { ...room.passage } : null,
     };
   }
 }

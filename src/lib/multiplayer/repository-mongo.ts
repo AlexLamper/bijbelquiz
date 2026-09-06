@@ -93,6 +93,17 @@ function docToPersisted(doc: IMultiplayerRoom): PersistedRoom {
     currentQuestionIndex: doc.currentQuestionIndex,
     totalQuestions: doc.totalQuestions,
     status: doc.status as RoomStatus,
+    readChapterFirst: doc.readChapterFirst === true,
+    questionTimerSeconds:
+      typeof doc.questionTimerSeconds === 'number' ? doc.questionTimerSeconds : null,
+    passage:
+      doc.passage && typeof doc.passage.chapter === 'number'
+        ? {
+            book: String(doc.passage.book),
+            chapter: doc.passage.chapter,
+            label: String(doc.passage.label),
+          }
+        : null,
     players: (doc.players ?? []).map(playerToPersisted),
     questions: (doc.questions ?? []).map(questionToPersisted),
     questionDeadlineAtMs: doc.questionDeadlineAt ? doc.questionDeadlineAt.getTime() : null,
@@ -116,6 +127,15 @@ function persistedToDocFields(room: PersistedRoom): Partial<IMultiplayerRoom> {
     currentQuestionIndex: room.currentQuestionIndex,
     totalQuestions: room.totalQuestions,
     status: room.status,
+    readChapterFirst: room.readChapterFirst,
+    questionTimerSeconds: room.questionTimerSeconds,
+    passage: room.passage
+      ? {
+          book: room.passage.book,
+          chapter: room.passage.chapter,
+          label: room.passage.label,
+        }
+      : null,
     players: room.players.map((player) => persistedToPlayer(player) as IRoomPlayer),
     questions: room.questions.map((q) => ({
       id: q.id,

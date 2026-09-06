@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
 import MascotAvatar from '@/components/avatar/MascotAvatar';
+import MultiplayerReadingView from '@/components/multiplayer/MultiplayerReadingView';
 import { track } from '@/lib/analytics/client';
 import {
   buildRoomInviteMessage,
@@ -108,13 +109,18 @@ function answerChoiceClasses(
 
 function GameProgressBar(props: { current: number; total: number; status: RoomStatus }) {
   const { current, total, status } = props;
+  const beforeQuestions = status === 'lobby' || status === 'reading';
   const pct =
-    total <= 0 ? 0 : status === 'lobby' ? 0 : Math.min(100, Math.round(((current + 1) / total) * 100));
+    total <= 0 ? 0 : beforeQuestions ? 0 : Math.min(100, Math.round(((current + 1) / total) * 100));
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between text-xs text-muted-foreground">
         <span className="font-medium text-foreground">
-          {status === 'lobby' ? 'Wachtkamer' : `Vraag ${Math.min(current + 1, total)} van ${total}`}
+          {status === 'lobby'
+            ? 'Wachtkamer'
+            : status === 'reading'
+              ? 'Hoofdstuk lezen'
+              : `Vraag ${Math.min(current + 1, total)} van ${total}`}
         </span>
         <span>{pct}%</span>
       </div>
@@ -843,7 +849,18 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
             </Card>
           )}
 
-          {view === 'game' && (
+          {view === 'game' && room.status === 'reading' && (
+            <MultiplayerReadingView
+              passage={room.passage}
+              isHost={isHost}
+              onStart={() => void skip()}
+              isStarting={isSkipping}
+              onLeave={() => void handleLeaveAndExit()}
+              isLeaving={isLeaving}
+            />
+          )}
+
+          {view === 'game' && room.status !== 'reading' && (
             <Card className="overflow-hidden border-rule">
               <CardHeader className="border-b bg-muted/40 pb-4">
                 <CardTitle className="flex items-center gap-2 text-lg">
@@ -888,7 +905,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       <p className="text-base font-medium leading-relaxed md:text-lg">
                         {room.currentQuestion.text}
                       </p>
-                      {room.status === 'in_progress' && (
+                      {room.status === 'in_progress' && room.currentQuestion.deadlineAtMs != null && (
                         <div className="mt-4 flex items-center gap-2 rounded-lg bg-muted/80 px-3 py-2 text-sm">
                           <span className="text-muted-foreground">Tijd over</span>
                           <span
@@ -936,6 +953,16 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                           ? 'Je antwoord is verstuurd. Wacht tot iedereen klaar is of de timer afloopt - daarna zie je of het goed was.'
                           : 'Tik op het juiste antwoord. Je kunt maar één keer kiezen.'}
                       </p>
+                    )}
+
+                    {room.status === 'in_progress' && isHost && room.questionTimerSeconds === 0 && (
+                      <Button
+                        onClick={() => void skip()}
+                        disabled={isSkipping}
+                        className="dark:text-ink-inverted"
+                      >
+                        {isSkipping ? 'Bezig...' : 'Toon antwoorden'}
+                      </Button>
                     )}
 
                   </>

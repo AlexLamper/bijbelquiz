@@ -32,6 +32,15 @@ const createRoomSchema = z
       .max(MULTIPLAYER_PREMIUM_MAX_PLAYERS)
       .optional()
       .default(4),
+    // Show the quiz's Bible chapter before question 1. Silently ignored server
+    // side when the quiz has no single resolvable passage.
+    readChapterFirst: z.boolean().optional().default(false),
+    // Seconds per question. `0` = host tempo (no countdown, host advances every
+    // step); the rest are the fixed auto-timer choices.
+    questionTimerSeconds: z
+      .union([z.literal(0), z.literal(30), z.literal(60), z.literal(90)])
+      .optional()
+      .default(0),
   })
   .strict();
 
@@ -131,6 +140,8 @@ export async function handleCreateRoom(req: NextRequest): Promise<NextResponse> 
       userId: auth.userId,
       quizId: body.quizId,
       maxPlayers: body.maxPlayers,
+      readChapterFirst: body.readChapterFirst,
+      questionTimerSeconds: body.questionTimerSeconds,
     });
 
     return NextResponse.json({ room }, { status: 201 });

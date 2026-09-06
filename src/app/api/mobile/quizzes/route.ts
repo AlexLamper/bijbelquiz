@@ -1,45 +1,25 @@
 import { NextResponse } from 'next/server';
 import { connectDB, Quiz } from '@/database';
-
-const VALID_IMAGE_NAMES = new Set(Array.from({ length: 10 }, (_, index) => `img${index + 1}.png`));
-
-function normalizeQuizImagePath(value?: string): string {
-  const image = value?.trim();
-  if (!image) {
-    return '/images/quizzes/img1.png';
-  }
-
-  const lower = image.toLowerCase();
-  if (!lower.startsWith('/images/quizzes/')) {
-    return image;
-  }
-
-  const fileName = lower.split('/').pop() || '';
-  if (!VALID_IMAGE_NAMES.has(fileName)) {
-    return '/images/quizzes/img1.png';
-  }
-
-  return `/images/quizzes/${fileName}`;
-}
+import { resolveQuizImageUrl } from '@/lib/quiz-image';
 
 export async function GET(req: Request) {
   try {
     await connectDB();
-    
+
     // Only return quizzes that are explicitly approved and active.
     const quizzes = await Quiz.find({
       status: 'approved',
       isActive: { $ne: false },
     }).lean();
-    
+
     // Format the response for Flutter models
     const formattedQuizzes = quizzes.map((quiz: any) => ({
       id: quiz._id.toString(),
       title: quiz.title,
       slug: quiz.slug,
       description: quiz.description,
-      image: normalizeQuizImagePath(quiz.imageUrl || quiz.image),
-      imageUrl: normalizeQuizImagePath(quiz.imageUrl || quiz.image),
+      image: resolveQuizImageUrl(quiz),
+      imageUrl: resolveQuizImageUrl(quiz),
       // The schema field is `rewardXp`; `xpReward` is only the wire name.
       xpReward: quiz.rewardXp ?? quiz.xpReward ?? 50,
       categoryId: quiz.categoryId?.toString() || quiz.category?.toString() || null,

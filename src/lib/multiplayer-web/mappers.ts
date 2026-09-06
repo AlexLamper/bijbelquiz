@@ -14,7 +14,19 @@ import type {
   MultiplayerTokenResponse,
 } from './contracts';
 
-const roomStatusSchema = z.enum(['lobby', 'in_progress', 'question_result', 'finished']);
+const roomStatusSchema = z.enum([
+  'lobby',
+  'reading',
+  'in_progress',
+  'question_result',
+  'finished',
+]);
+
+const roomPassageSchema = z.object({
+  book: z.string(),
+  chapter: z.number(),
+  label: z.string(),
+});
 
 const roomPlayerSchema = z.object({
   id: z.string(),
@@ -66,6 +78,11 @@ const roomSnapshotSchema = z.object({
   currentQuestionIndex: z.number(),
   totalQuestions: z.number(),
   status: roomStatusSchema,
+  // Nullish-tolerant so a client briefly newer than the deployed API (rooms
+  // created before these fields shipped) still parses the snapshot.
+  readChapterFirst: z.boolean().nullish().transform((value) => value ?? false),
+  questionTimerSeconds: z.number().nullish().transform((value) => value ?? 0),
+  passage: roomPassageSchema.nullish().transform((value) => value ?? null),
   players: z.array(roomPlayerSchema),
   currentQuestion: roomQuestionSchema.nullable(),
   resultPhaseEndsAtMs: z.number().nullable(),
@@ -126,6 +143,7 @@ const configSchema = z.object({
   minPlayersToStart: z.number(),
   pollIntervalsMs: z.object({
     lobby: z.number(),
+    reading: z.number(),
     in_progress: z.number(),
     question_result: z.number(),
     finished: z.number(),

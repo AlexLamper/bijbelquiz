@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, Quiz } from '@/database';
+import { resolveQuizImageUrl } from '@/lib/quiz-image';
 
 interface IncomingAnswer {
   text?: unknown;
@@ -59,8 +60,14 @@ export async function GET() {
     await connectDB();
     // Support both new 'approved' status and legacy quizzes with missing status
     const filter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
-    const quizzes = await Quiz.find(filter).sort({ createdAt: -1 });
-    return NextResponse.json(quizzes);
+    const quizzes = await Quiz.find(filter).sort({ createdAt: -1 }).lean();
+    // Guarantee every quiz has a cover: explicit imageUrl wins, otherwise a
+    // stable id-derived fallback so the app never renders a blank card.
+    const withImages = quizzes.map((quiz) => {
+      const imageUrl = resolveQuizImageUrl(quiz);
+      return { ...quiz, imageUrl, image: imageUrl };
+    });
+    return NextResponse.json(withImages);
   } catch (error) {
     console.error("[QUIZZES_GET]", error);
     return new NextResponse("Internal Server Error", { status: 500 });

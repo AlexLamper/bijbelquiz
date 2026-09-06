@@ -89,6 +89,8 @@ const INITIAL_STATE: MultiplayerControllerState = {
  */
 const POLL_INTERVALS_MS: Record<RoomStatus, number> = {
   lobby: 2000,
+  // Deadline-free, host-advanced: same relaxed cadence as the lobby.
+  reading: 2000,
   in_progress: 900,
   question_result: 1200,
   finished: 4000,

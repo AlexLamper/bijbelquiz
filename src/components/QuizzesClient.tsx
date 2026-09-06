@@ -22,6 +22,7 @@ interface Quiz {
   isPremium: boolean;
   isLocked?: boolean;
   slug?: string;
+  createdAt?: string;
   categoryId?: { _id: string; title: string } | string;
   questions?: { _id: string }[];
   questionCount?: number;
@@ -64,6 +65,15 @@ const DIFFICULTY_FILTERS: { value: PreferredDifficulty; label: string }[] = [
   { value: 'easy', label: 'Makkelijk' },
   { value: 'medium', label: 'Gemiddeld' },
   { value: 'hard', label: 'Moeilijk' },
+];
+
+type SortOption = 'aanbevolen' | 'nieuwste' | 'titel' | 'categorie';
+
+const SORT_OPTIONS: { value: SortOption; label: string }[] = [
+  { value: 'aanbevolen', label: 'Aanbevolen' },
+  { value: 'nieuwste', label: 'Nieuwste eerst' },
+  { value: 'titel', label: 'Titel (A-Z)' },
+  { value: 'categorie', label: 'Categorie' },
 ];
 
 /**
@@ -123,6 +133,7 @@ export default function QuizzesClient({
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategoryId);
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
+  const [selectedSort, setSelectedSort] = useState<SortOption>('nieuwste');
   const [selectedDifficulty, setSelectedDifficulty] = useState<PreferredDifficulty>(
     settings.preferredDifficulty
   );
@@ -174,19 +185,42 @@ export default function QuizzesClient({
   }, [normalizedQuizzes, searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty]);
 
   /**
-   * Quizzes you have not played come first.
-   *
-   * A library that opens on the things you already finished makes the same few
-   * quizzes get replayed while the rest is never found. Series stay together -
-   * the grouping runs inside each half - so "Daniel Deel 1" and "Deel 2" are
-   * still adjacent, they just move down together once both are done.
+   * "Aanbevolen" keeps the smart default: quizzes you have not played come
+   * first, with series held together inside each half, so a library does not
+   * open on the things you already finished. Every other sort is literal - the
+   * reader asked for a specific order, so played state and series grouping are
+   * left out of it and the grid is exactly what the label says.
    */
   const orderedQuizzes = useMemo(() => {
-    const unplayed = filteredQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) === 0);
-    const played = filteredQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) > 0);
+    if (selectedSort === 'aanbevolen') {
+      const unplayed = filteredQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) === 0);
+      const played = filteredQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) > 0);
+      return [...groupSeries(unplayed), ...groupSeries(played)];
+    }
 
-    return [...groupSeries(unplayed), ...groupSeries(played)];
-  }, [filteredQuizzes]);
+    const sorted = [...filteredQuizzes];
+    const categoryTitle = (quiz: Quiz) =>
+      (typeof quiz.categoryId === 'string' ? '' : quiz.categoryId?.title || '').toLowerCase();
+
+    if (selectedSort === 'nieuwste') {
+      sorted.sort((a, b) => {
+        const at = a.createdAt ? Date.parse(a.createdAt) : 0;
+        const bt = b.createdAt ? Date.parse(b.createdAt) : 0;
+        if (bt !== at) return bt - at;
+        return a.title.localeCompare(b.title, 'nl');
+      });
+    } else if (selectedSort === 'titel') {
+      sorted.sort((a, b) => a.title.localeCompare(b.title, 'nl'));
+    } else if (selectedSort === 'categorie') {
+      sorted.sort(
+        (a, b) =>
+          categoryTitle(a).localeCompare(categoryTitle(b), 'nl') ||
+          a.title.localeCompare(b.title, 'nl')
+      );
+    }
+
+    return sorted;
+  }, [filteredQuizzes, selectedSort]);
 
   const playedCount = useMemo(
     () => normalizedQuizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) > 0).length,
@@ -199,15 +233,22 @@ export default function QuizzesClient({
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty]);
+  }, [searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty, selectedSort]);
 
   const visibleQuizzes = orderedQuizzes.slice(0, visibleCount);
   const hasMore = orderedQuizzes.length > visibleQuizzes.length;
 
-  /** Index in `orderedQuizzes` where the already-played half begins. */
+  /**
+   * Index in `orderedQuizzes` where the already-played half begins. Only the
+   * "Aanbevolen" sort splits played from unplayed, so the divider is off for
+   * every other sort - there played quizzes sit wherever the sort puts them.
+   */
   const firstPlayedIndex = useMemo(
-    () => orderedQuizzes.findIndex((quiz) => (quiz.progress?.attempts ?? 0) > 0),
-    [orderedQuizzes]
+    () =>
+      selectedSort === 'aanbevolen'
+        ? orderedQuizzes.findIndex((quiz) => (quiz.progress?.attempts ?? 0) > 0)
+        : -1,
+    [orderedQuizzes, selectedSort]
   );
 
   const totalCount = normalizedQuizzes.length;
@@ -321,6 +362,23 @@ export default function QuizzesClient({
                 {option.label}
               </button>
             ))}
+
+            <label className="flex items-center gap-2 md:ml-auto">
+              <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                Sorteer
+              </span>
+              <select
+                value={selectedSort}
+                onChange={(event) => setSelectedSort(event.target.value as SortOption)}
+                className="h-9 rounded-md border border-rule bg-paper-raised px-3 text-sm font-medium text-ink focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-rule-strong"
+              >
+                {SORT_OPTIONS.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
 
           {canCreateQuiz && (
@@ -363,6 +421,7 @@ export default function QuizzesClient({
                     setSelectedCategory('all');
                     setShowPremiumOnly(false);
                     setSelectedDifficulty('all');
+                    setSelectedSort('nieuwste');
                   }}
                 >
                   Filters wissen

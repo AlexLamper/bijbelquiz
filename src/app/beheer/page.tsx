@@ -5,14 +5,12 @@ import { connectDB, Quiz, User } from "@/database";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Users, BookOpen, BarChart3, LineChart, Settings, Plus, Edit, Crown, Activity } from "lucide-react";
+import { Users, BookOpen, BarChart3, LineChart, Settings, Plus, Edit, Crown, Activity, CreditCard, CheckCircle2, AlertTriangle, XCircle } from "lucide-react";
 import AdminGroupLicenseForm from "./AdminGroupLicenseForm";
 import { GROUP_LICENSE_SEATS } from "@/lib/group-license";
-import {
-  getInternalAccountCount,
-  isInternalAccount,
-  premiumUserFilter,
-} from "@/lib/analytics/internal-accounts";
+import { isInternalAccount } from "@/lib/analytics/internal-accounts";
+import { getPremiumStats, formatEuroCents } from "@/lib/premium-stats";
+import { getPaymentsHealth } from "@/lib/payments-health";
 
 export default async function AdminDashboard() {
   const session = await getServerSession(authOptions);
@@ -23,23 +21,29 @@ export default async function AdminDashboard() {
 
   await connectDB();
 
-  // Developer and app-reviewer accounts hold Premium so the premium surfaces
-  // can be tested, which makes a raw `isPremium` count read as customers we do
-  // not have. See `lib/analytics/internal-accounts.ts`.
-  const [premiumFilter, internalPremiumExcluded] = await Promise.all([
-    premiumUserFilter(),
-    getInternalAccountCount(),
-  ]);
+  // `getPremiumStats` counts every way an account can be premium (Stripe, store,
+  // lifetime, group licence) and excludes the internal test/reviewer accounts -
+  // see `lib/premium-stats.ts`. It also carries the revenue + recent-payments
+  // data rendered lower down.
+  const [premiumStats, paymentsHealth, totalUsers, totalQuizzes, pendingQuizzes, recentUsers, recentQuizzes] =
+    await Promise.all([
+      getPremiumStats(),
+      // Shallow: config verdict only, no network-heavy Stripe list calls.
+      getPaymentsHealth({ deep: false }).catch(() => null),
+      User.countDocuments(),
+      Quiz.countDocuments(),
+      Quiz.countDocuments({ status: 'pending' }),
+      User.find().sort({ createdAt: -1 }).limit(10).lean(),
+      Quiz.find().populate('categoryId').sort({ createdAt: -1 }).limit(10).lean(),
+    ]);
 
-  // Fetch statistics
-  const [totalUsers, totalQuizzes, premiumUsers, pendingQuizzes, recentUsers, recentQuizzes] = await Promise.all([
-    User.countDocuments(),
-    Quiz.countDocuments(),
-    User.countDocuments(premiumFilter),
-    Quiz.countDocuments({ status: 'pending' }),
-    User.find().sort({ createdAt: -1 }).limit(10).lean(),
-    Quiz.find().populate('categoryId').sort({ createdAt: -1 }).limit(10).lean(),
-  ]);
+  const premiumUsers = premiumStats.premiumUsers;
+  const internalPremiumExcluded = premiumStats.internalExcluded;
+
+  const pipeline = paymentsHealth?.overall ?? 'warn';
+  const pipelineFails = paymentsHealth?.checks.filter((c) => c.status === 'fail').length ?? 0;
+  const PipelineIcon = pipeline === 'ok' ? CheckCircle2 : pipeline === 'warn' ? AlertTriangle : XCircle;
+  const pipelineClass = pipeline === 'ok' ? 'text-positive' : pipeline === 'warn' ? 'text-lapis' : 'text-vermilion';
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
@@ -85,6 +89,30 @@ export default async function AdminDashboard() {
       </section>
 
       <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+        <Link href="/beheer/betalingen" className="block">
+          <Card className="border-rule py-0 transition-colors hover:bg-paper-sunken">
+            <CardContent className="flex flex-wrap items-center justify-between gap-3 p-4">
+              <div className="flex items-center gap-3">
+                <PipelineIcon className={`h-5 w-5 ${pipelineClass}`} />
+                <div>
+                  <p className="text-sm font-medium text-ink">
+                    Betaal-pijplijn:{' '}
+                    <span className={pipelineClass}>
+                      {pipeline === 'ok' ? 'OK' : pipeline === 'warn' ? 'Let op' : `Actie nodig (${pipelineFails})`}
+                    </span>
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Klik &rarr; betaling &rarr; toegang, live gecheckt tegen Stripe en RevenueCat. Klik voor het volledige rapport.
+                  </p>
+                </div>
+              </div>
+              <CreditCard className="h-4 w-4 text-ink-soft" />
+            </CardContent>
+          </Card>
+        </Link>
+      </section>
+
+      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <Card className="border-rule py-0">
             <CardContent className="p-4">
@@ -105,9 +133,13 @@ export default async function AdminDashboard() {
               </div>
               <p className="mt-2 text-3xl font-semibold text-ink">{premiumUsers}</p>
               <p className="mt-1 text-xs text-muted-foreground">
-                {totalUsers > 0 ? Math.round((premiumUsers / totalUsers) * 100) : 0}% van totaal
+                {premiumStats.premiumShare}% van totaal
                 {internalPremiumExcluded > 0 &&
                   ` · ${internalPremiumExcluded} testaccounts niet meegeteld`}
+              </p>
+              <p className="mt-1 text-[11px] text-muted-foreground">
+                Stripe {premiumStats.breakdown.stripe} · Store {premiumStats.breakdown.store} · Levenslang{" "}
+                {premiumStats.breakdown.lifetime} · Groep {premiumStats.breakdown.group}
               </p>
             </CardContent>
           </Card>
@@ -224,6 +256,101 @@ export default async function AdminDashboard() {
             </CardContent>
           </Card>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+        <Card className="border-rule py-0">
+          <CardHeader className="pb-3 pt-5">
+            <CardTitle className="flex items-center gap-2 leading-tight text-ink">
+              <Crown className="h-5 w-5 text-lapis" />
+              Premium &amp; betalingen
+            </CardTitle>
+            <CardDescription>
+              Betalende accounts en omzet uit de <code>Payment</code>-collectie. Renewals van
+              abonnementen worden als &euro; 0 vastgelegd, dus de omzet telt vooral eerste
+              aankopen.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="pb-6">
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="rounded-md border border-rule bg-paper-raised p-4">
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  Omzet (30 dagen)
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-ink">
+                  {formatEuroCents(premiumStats.revenue.grossCentsLast30d)}
+                </p>
+              </div>
+              <div className="rounded-md border border-rule bg-paper-raised p-4">
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  Omzet (totaal)
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-ink">
+                  {formatEuroCents(premiumStats.revenue.grossCentsAllTime)}
+                </p>
+              </div>
+              <div className="rounded-md border border-rule bg-paper-raised p-4">
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                  Betalingen voltooid
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-ink">
+                  {premiumStats.revenue.paymentsCompleted}
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-5 space-y-3">
+              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                Recente betalingen
+              </p>
+              {premiumStats.recentPayments.length > 0 ? (
+                premiumStats.recentPayments.map((payment) => (
+                  <div
+                    key={payment.id}
+                    className="flex items-center justify-between border-b border-rule pb-3 last:border-0"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate text-sm font-medium text-ink">
+                        {payment.userName}
+                        {isInternalAccount(payment.userEmail) && (
+                          <span className="ml-2 rounded bg-paper-sunken px-1.5 py-0.5 text-[10px] text-ink-soft">
+                            Testaccount
+                          </span>
+                        )}
+                      </p>
+                      <p className="truncate text-xs text-muted-foreground">
+                        {payment.provider} · {payment.planType || 'onbekend'} ·{' '}
+                        {new Date(payment.createdAt).toLocaleDateString('nl-NL')}
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-3 pl-3">
+                      <span
+                        className={`rounded-md px-2 py-1 text-xs ${
+                          payment.status === 'completed'
+                            ? 'bg-positive-tint text-positive'
+                            : payment.status === 'failed'
+                              ? 'bg-vermilion-tint text-vermilion'
+                              : 'bg-paper-sunken text-ink-soft'
+                        }`}
+                      >
+                        {payment.status}
+                      </span>
+                      <span className="text-sm font-medium tabular-nums text-ink">
+                        {formatEuroCents(payment.amountCents)}
+                      </span>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p className="py-3 text-sm text-muted-foreground">
+                  Nog geen betalingen vastgelegd. Als er wel is betaald maar hier niets staat,
+                  bereikt de Stripe- of RevenueCat-webhook de server niet (zie{' '}
+                  <code>docs/premium-setup-checklist.md</code>).
+                </p>
+              )}
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">

@@ -36,6 +36,13 @@ export const ANALYTICS_EVENTS = [
   'paywall_shown',
   /** A paywall was closed without a purchase. */
   'paywall_dismissed',
+  /**
+   * The buyer pressed the pay button and a Stripe Checkout Session was created
+   * for them. Fired server-side from the checkout route, so it counts intent
+   * even when the buyer never finishes. The gap to `purchase_completed` is the
+   * "abandoned at Stripe" rate.
+   */
+  'checkout_started',
   /** A purchase completed, with the plan and the trigger that led to it. */
   'purchase_completed',
   /** A free trial began. */

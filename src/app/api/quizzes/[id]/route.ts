@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, Quiz } from '@/database';
+import { resolveQuizImageUrl } from '@/lib/quiz-image';
 
 export async function GET(
   req: NextRequest,
@@ -19,7 +20,15 @@ export async function GET(
       return new NextResponse("Quiz not found", { status: 404 });
     }
 
-    return NextResponse.json(quiz);
+    const category = (quiz as { categoryId?: { imageUrl?: string } }).categoryId;
+    const imageUrl = resolveQuizImageUrl({
+      _id: (quiz as { _id?: unknown })._id,
+      imageUrl: (quiz as { imageUrl?: unknown }).imageUrl,
+      categoryImageUrl:
+        category && typeof category === 'object' ? category.imageUrl : undefined,
+    });
+
+    return NextResponse.json({ ...quiz, imageUrl, image: imageUrl });
   } catch (error) {
     console.error("[QUIZ_GET]", error);
     return new NextResponse("Internal Server Error", { status: 500 });

@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { authOptions } from '@/lib/auth';
 import QuizzesClient from '@/components/QuizzesClient';
 import { buildQuizProgressMap } from '@/lib/quiz-progress';
+import { resolveQuizImageUrl } from '@/lib/quiz-image';
 
 export const metadata: Metadata = {
   title: 'Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz',
@@ -56,6 +57,7 @@ async function getData(userId?: string) {
         rewardXp: 1,
         createdAt: 1,
         questionCount: { $size: { $ifNull: ['$questions', []] } },
+        categoryImageUrl: '$category.imageUrl',
         categoryId: {
           _id: '$category._id',
           title: '$category.title',
@@ -85,8 +87,11 @@ async function getData(userId?: string) {
 
   const quizzesWithProgress = quizzes.map((quiz) => {
     const quizId = String((quiz as { _id: unknown })._id);
+    const rest: Record<string, unknown> = { ...quiz };
+    delete rest.categoryImageUrl;
     return {
-      ...quiz,
+      ...rest,
+      imageUrl: resolveQuizImageUrl(quiz),
       progress: progressByQuizId[quizId],
     };
   });

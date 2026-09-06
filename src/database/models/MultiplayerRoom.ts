@@ -19,7 +19,12 @@ import mongoose, { Document, Model, Schema } from 'mongoose';
  *  a few seconds of the deadline, transitions still happen on time.
  */
 
-export type MultiplayerRoomStatus = 'lobby' | 'in_progress' | 'question_result' | 'finished';
+export type MultiplayerRoomStatus =
+  | 'lobby'
+  | 'reading'
+  | 'in_progress'
+  | 'question_result'
+  | 'finished';
 
 export interface IRoomPlayer {
   id: string;
@@ -62,6 +67,16 @@ export interface IMultiplayerRoom extends Document {
   currentQuestionIndex: number;
   totalQuestions: number;
   status: MultiplayerRoomStatus;
+  /** Host opted to show the quiz's chapter before question 1. */
+  readChapterFirst: boolean;
+  /** Seconds per question, or `null` to use the global default (old rooms). */
+  questionTimerSeconds: number | null;
+  /** The single chapter this quiz is about, or undefined when it has none. */
+  passage?: {
+    book: string;
+    chapter: number;
+    label: string;
+  } | null;
   players: IRoomPlayer[];
   questions: IRoomQuestion[];
   questionDeadlineAt: Date | null;
@@ -130,9 +145,20 @@ const MultiplayerRoomSchema = new Schema<IMultiplayerRoom>(
     totalQuestions: { type: Number, required: true },
     status: {
       type: String,
-      enum: ['lobby', 'in_progress', 'question_result', 'finished'],
+      enum: ['lobby', 'reading', 'in_progress', 'question_result', 'finished'],
       default: 'lobby',
       index: true,
+    },
+    readChapterFirst: { type: Boolean, default: false },
+    questionTimerSeconds: { type: Number, default: null },
+    passage: {
+      type: {
+        book: { type: String, required: true },
+        chapter: { type: Number, required: true },
+        label: { type: String, required: true },
+      },
+      default: null,
+      _id: false,
     },
     players: { type: [RoomPlayerSchema], default: [] },
     questions: { type: [RoomQuestionSchema], default: [] },

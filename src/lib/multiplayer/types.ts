@@ -1,6 +1,22 @@
 import type { AvatarConfig } from '@/lib/avatar';
 
-export type RoomStatus = 'lobby' | 'in_progress' | 'question_result' | 'finished';
+export type RoomStatus =
+  | 'lobby'
+  | 'reading'
+  | 'in_progress'
+  | 'question_result'
+  | 'finished';
+
+/**
+ * The single Bible chapter a quiz is about, resolved from its questions at room
+ * creation. Present on every snapshot but `null` when the quiz spans more than
+ * one passage. `confidence` from `resolveQuizPassage` is dropped from the wire.
+ */
+export interface RoomPassageSnapshot {
+  book: string;
+  chapter: number;
+  label: string;
+}
 
 export interface MultiplayerUserProfile {
   name: string;
@@ -82,6 +98,19 @@ export interface RoomSnapshot {
   currentQuestionIndex: number;
   totalQuestions: number;
   status: RoomStatus;
+  /**
+   * Host chose to show the quiz's Bible chapter before the first question.
+   * Only ever `true` when `passage` is non-null; old rooms report `false`.
+   */
+  readChapterFirst: boolean;
+  /**
+   * Effective seconds per question for this room. `0` means host-tempo (no
+   * countdown, the host advances every step). Rooms created before this
+   * feature report the global default instead of a missing field.
+   */
+  questionTimerSeconds: number;
+  /** The chapter to read first, or `null` when the quiz has no single passage. */
+  passage: RoomPassageSnapshot | null;
   players: RoomPlayerSnapshot[];
   currentQuestion: RoomCurrentQuestionSnapshot | null;
   /**

@@ -9,6 +9,7 @@ import {
   recommendQuizzes,
 } from '@/lib/quiz-recommendations';
 import { normalizeOnboardingSettings } from '@/lib/user-settings';
+import { resolveQuizImageUrl } from '@/lib/quiz-image';
 
 export const dynamic = 'force-dynamic';
 
@@ -68,7 +69,7 @@ export async function GET(req: NextRequest) {
         title: String((quiz as { title?: unknown }).title || ''),
         slug: (quiz as { slug?: string }).slug,
         description: (quiz as { description?: string }).description,
-        imageUrl: (quiz as { imageUrl?: string }).imageUrl,
+        imageUrl: resolveQuizImageUrl(quiz),
         difficulty: (quiz as { difficulty?: string }).difficulty,
         isPremium: Boolean((quiz as { isPremium?: boolean }).isPremium),
         categoryId: (quiz as { categoryId?: unknown }).categoryId as

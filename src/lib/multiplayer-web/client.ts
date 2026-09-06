@@ -36,6 +36,11 @@ interface AuthHeadersInput {
 interface CreateRoomInput extends AuthHeadersInput {
   quizId: string;
   maxPlayers?: number;
+  /** Show the quiz's Bible chapter before question 1 (server ignores it when
+   * the quiz has no single passage). */
+  readChapterFirst?: boolean;
+  /** Seconds per question: `0` = host tempo, otherwise one of 30 | 60 | 90. */
+  questionTimerSeconds?: number;
 }
 
 interface RoomCodeInput extends AuthHeadersInput {
@@ -149,6 +154,10 @@ export async function createRoom(input: CreateRoomInput): Promise<RoomSnapshot> 
     body: {
       quizId: input.quizId,
       ...(input.maxPlayers ? { maxPlayers: input.maxPlayers } : {}),
+      ...(input.readChapterFirst ? { readChapterFirst: true } : {}),
+      ...(typeof input.questionTimerSeconds === 'number'
+        ? { questionTimerSeconds: input.questionTimerSeconds }
+        : {}),
     },
   });
 
