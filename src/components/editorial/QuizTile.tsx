@@ -7,6 +7,7 @@ import { ArrowRight, Check, Lock } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { PIGMENT_TEXT, type Pigment } from './index';
+import { DEFAULT_QUIZ_IMAGE, normalizeQuizImagePath } from '@/lib/quiz-image';
 
 export interface DashboardQuiz {
   _id: string;
@@ -51,17 +52,20 @@ function fallbackImage(seed: string): string {
   return IMAGE_POOL[Math.abs(hash) % IMAGE_POOL.length];
 }
 
+/**
+ * The tile used to accept only `img1..img10` and drop anything else back to the
+ * hash-picked pool - which threw away the per-quiz covers. It now trusts any
+ * name the shared sanitiser accepts, and keeps the pool only for a quiz that
+ * still has no image at all.
+ */
 function resolveImage(imageUrl: string | undefined, fallback: string): string {
   const normalized = imageUrl?.trim();
   if (!normalized) return fallback;
-  if (IMAGE_POOL.includes(normalized)) return normalized;
 
-  const lower = normalized.toLowerCase();
-  if (lower.startsWith('http://') || lower.startsWith('https://')) return normalized;
-  if (!lower.startsWith('/images/quizzes/')) return normalized;
-
-  const fileName = lower.split('/').pop() || '';
-  return /^img([1-9]|10)\.png$/.test(fileName) ? `/images/quizzes/${fileName}` : fallback;
+  const resolved = normalizeQuizImagePath(normalized);
+  const rejected =
+    resolved === DEFAULT_QUIZ_IMAGE && normalized.toLowerCase() !== DEFAULT_QUIZ_IMAGE;
+  return rejected ? fallback : resolved;
 }
 
 function categoryLabel(category: DashboardQuiz['categoryId']): string {

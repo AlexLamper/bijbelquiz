@@ -18,6 +18,12 @@ export const QUIZ_IMAGE_COUNT = 12;
 const QUIZ_IMAGE_DIR = '/images/quizzes/';
 const KNOWN_QUIZ_IMAGE = /^\/images\/quizzes\/img(\d+)\.png$/i;
 
+/** Where a quiz with no usable image of its own ends up. */
+export const DEFAULT_QUIZ_IMAGE = `${QUIZ_IMAGE_DIR}img1.png`;
+
+/** A bare file name, no directories and no traversal. */
+const SAFE_IMAGE_FILE = /^[a-z0-9][a-z0-9._-]*\.(png|jpg|jpeg|webp)$/;
+
 /** Stable, well-spread index in 1..QUIZ_IMAGE_COUNT for a given id string. */
 export function quizImageIndex(id: string): number {
   let hash = 0;
@@ -80,4 +86,31 @@ export function resolveQuizImageUrl(quiz: unknown): string {
   if (category) return category;
 
   return fallbackQuizImageUrl(String(q._id ?? q.id ?? ''));
+}
+
+/**
+ * Sanitises an image path coming out of the database for a client that cannot
+ * fall back on its own (the mobile app, the season banner).
+ *
+ * This used to be three copies of an `img1..img10` allowlist, which meant a
+ * quiz with its own artwork - `/images/quizzes/marcus-bijbelquiz-deel-1.png` -
+ * was silently replaced by img1. Any safe file name in the quizzes folder is
+ * accepted now; the numbered files are still range-checked, because a stale
+ * `img14.png` really does point at nothing.
+ */
+export function normalizeQuizImagePath(value?: string): string {
+  const image = value?.trim();
+  if (!image) return DEFAULT_QUIZ_IMAGE;
+
+  const lower = image.toLowerCase();
+  if (lower.startsWith('http://') || lower.startsWith('https://')) return image;
+  if (!lower.startsWith(QUIZ_IMAGE_DIR)) return image;
+
+  const fileName = lower.slice(QUIZ_IMAGE_DIR.length);
+  if (!SAFE_IMAGE_FILE.test(fileName)) return DEFAULT_QUIZ_IMAGE;
+
+  const numbered = fileName.match(/^img(\d+)\.png$/);
+  if (numbered && Number(numbered[1]) > QUIZ_IMAGE_COUNT) return DEFAULT_QUIZ_IMAGE;
+
+  return `${QUIZ_IMAGE_DIR}${fileName}`;
 }

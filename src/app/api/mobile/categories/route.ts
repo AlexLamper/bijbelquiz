@@ -1,26 +1,6 @@
 import { NextResponse } from 'next/server';
 import { connectDB, Category } from '@/database';
-
-const VALID_IMAGE_NAMES = new Set(Array.from({ length: 10 }, (_, index) => `img${index + 1}.png`));
-
-function normalizeQuizImagePath(value?: string): string {
-  const image = value?.trim();
-  if (!image) {
-    return '/images/quizzes/img1.png';
-  }
-
-  const lower = image.toLowerCase();
-  if (!lower.startsWith('/images/quizzes/')) {
-    return image;
-  }
-
-  const fileName = lower.split('/').pop() || '';
-  if (!VALID_IMAGE_NAMES.has(fileName)) {
-    return '/images/quizzes/img1.png';
-  }
-
-  return `/images/quizzes/${fileName}`;
-}
+import { normalizeQuizImagePath } from '@/lib/quiz-image';
 
 export async function GET(req: Request) {
   try {
