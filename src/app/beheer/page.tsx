@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Users, BookOpen, BarChart3, LineChart, Settings, Plus, Edit, Crown, Activity, CreditCard, CheckCircle2, AlertTriangle, XCircle } from "lucide-react";
 import AdminGroupLicenseForm from "./AdminGroupLicenseForm";
+import AdminRefreshButton from "./AdminRefreshButton";
 import { GROUP_LICENSE_SEATS } from "@/lib/group-license";
 import { isInternalAccount } from "@/lib/analytics/internal-accounts";
 import { getPremiumStats, formatEuroCents } from "@/lib/premium-stats";
@@ -57,7 +58,8 @@ export default async function AdminDashboard() {
                 <p className="mt-3 text-[15px] leading-relaxed text-ink-muted">Beheer je BijbelQuiz platform.</p>
               </div>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap items-center gap-3">
+                <AdminRefreshButton />
                 <Button asChild variant="outline" className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken">
                   <Link href="/beheer/statistieken">
                     <LineChart className="mr-2 h-4 w-4" />
