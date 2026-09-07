@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { ArrowRight, Gem, X } from 'lucide-react';
+import { ArrowRight, Crown, X } from 'lucide-react';
 
 import { trackEvent } from '@/components/GoogleAnalytics';
 import { yearlyPricePerWeek } from '@/lib/premium-benefits';
@@ -128,7 +128,7 @@ export default function PremiumNudge() {
         onClick={() => trackEvent('multiplayer_premium_cta_clicked', { placement: 'dashboard_nudge' })}
         className="mt-3.5 inline-flex h-9 w-full items-center justify-center gap-1.5 rounded-md bg-ink px-3 text-xs font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
       >
-        <Gem className="h-3.5 w-3.5" />
+        <Crown className="h-3.5 w-3.5" />
         Bekijk Premium
         <ArrowRight className="h-3.5 w-3.5" />
       </Link>

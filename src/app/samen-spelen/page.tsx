@@ -2,7 +2,7 @@ import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 import MultiplayerEntryClient from '@/components/multiplayer/MultiplayerEntryClient';
 import { authOptions } from '@/lib/auth';
-import { connectDB, Quiz, User } from '@/database';
+import { connectDB, Category, Quiz, User } from '@/database';
 import {
   MULTIPLAYER_FREE_MAX_PLAYERS,
   MULTIPLAYER_FREE_ROOM_QUOTA,
@@ -14,6 +14,13 @@ interface QuizOption {
   title: string;
   questionCount: number;
   isPremium: boolean;
+  categorySlug: string | null;
+  categoryTitle: string | null;
+}
+
+interface CategoryOption {
+  slug: string;
+  title: string;
 }
 
 interface RawUserDocument {
@@ -41,6 +48,13 @@ interface RawQuizDocument {
   questionCount?: unknown;
   questions?: unknown;
   isPremium?: unknown;
+  categoryId?: unknown;
+}
+
+interface RawCategoryDocument {
+  _id: unknown;
+  slug: unknown;
+  title: unknown;
 }
 
 export default async function MultiplayerPage() {
@@ -62,11 +76,23 @@ export default async function MultiplayerPage() {
     : Math.max(0, MULTIPLAYER_FREE_ROOM_QUOTA - readGamesHosted(rawUser));
 
   const statusFilter = { status: 'approved' };
-  const rawQuizzes = await Quiz.find(statusFilter)
-    .select('_id title questions questionCount isPremium')
-    .sort({ isPremium: 1, sortOrder: 1, createdAt: -1 })
-    .limit(40)
-    .lean() as RawQuizDocument[];
+  const [rawQuizzes, rawCategories] = await Promise.all([
+    Quiz.find(statusFilter)
+      .select('_id title questions questionCount isPremium categoryId')
+      .sort({ isPremium: 1, sortOrder: 1, createdAt: -1 })
+      // Every approved quiz must be reachable from the picker - the client
+      // does its own search/filtering, so nothing is truncated here.
+      .lean() as unknown as RawQuizDocument[],
+    Category.find().select('_id slug title').lean() as unknown as RawCategoryDocument[],
+  ]);
+
+  const categoriesById = new Map(
+    rawCategories.map((category) => [String(category._id), category]),
+  );
+
+  const categories: CategoryOption[] = rawCategories
+    .map((category) => ({ slug: String(category.slug), title: String(category.title) }))
+    .sort((a, b) => a.title.localeCompare(b.title, 'nl'));
 
   const quizzes: QuizOption[] = rawQuizzes.map((quiz) => {
     const questionCount = typeof quiz.questionCount === 'number'
@@ -75,11 +101,15 @@ export default async function MultiplayerPage() {
         ? quiz.questions.length
         : 0;
 
+    const category = quiz.categoryId ? categoriesById.get(String(quiz.categoryId)) : undefined;
+
     return {
       id: String(quiz._id),
       title: String(quiz.title),
       questionCount,
       isPremium: Boolean(quiz.isPremium),
+      categorySlug: category ? String(category.slug) : null,
+      categoryTitle: category ? String(category.title) : null,
     };
   });
 
@@ -90,6 +120,7 @@ export default async function MultiplayerPage() {
   return (
     <MultiplayerEntryClient
       quizzes={quizzes}
+      categories={categories}
       isPremiumUser={isPremiumUser}
       freeGamesRemaining={freeGamesRemaining}
       maxPlayersForUser={maxPlayersForUser}

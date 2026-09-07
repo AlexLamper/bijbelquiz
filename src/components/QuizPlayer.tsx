@@ -9,7 +9,7 @@ import {
   ArrowRight,
   BookOpen,
   CheckCircle2,
-  Gem,
+  Crown,
   Lock,
   Maximize,
   RotateCcw,
@@ -710,7 +710,7 @@ export default function QuizPlayer({
               className="mt-4 h-10 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
             >
               <Link href={paywallHref}>
-                <Gem className="mr-2 h-4 w-4" />
+                <Crown className="mr-2 h-4 w-4" />
                 Bekijk Premium
               </Link>
             </Button>

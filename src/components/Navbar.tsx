@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
-import { ChevronDown, ChevronLeft, ChevronRight, Gem, LogOut, Menu, Settings, User, X } from 'lucide-react';
+import { ChevronDown, ChevronLeft, ChevronRight, Crown, LogOut, Menu, Settings, User, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import MascotAvatar from '@/components/avatar/MascotAvatar';
@@ -229,28 +229,6 @@ export default function Navbar({
 
           {isAuthenticated && (
             <>
-              {/* A member gets a quiet mark of status; everybody else gets the
-                  one solid button in the bar. Both are the same height as the
-                  controls beside them, and neither shouts. */}
-              {session?.user?.isPremium ? (
-                <Link
-                  href="/premium"
-                  title="Je Premium lidmaatschap beheren"
-                  className="inline-flex h-10 items-center gap-2 rounded-md border border-lapis/40 bg-lapis-tint px-3 text-sm font-medium text-lapis transition-colors hover:border-lapis/70 lg:px-3.5"
-                >
-                  <Gem className="h-4 w-4 shrink-0" />
-                  <span className="hidden lg:inline">Premium</span>
-                </Link>
-              ) : (
-                <Link
-                  href="/premium"
-                  className="inline-flex h-10 items-center gap-2 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted transition-colors hover:bg-ink-soft"
-                >
-                  <Gem className="h-4 w-4 shrink-0" />
-                  Premium
-                </Link>
-              )}
-
               <div className="relative" ref={accountMenuRef}>
                 <button
                   type="button"
@@ -370,7 +348,7 @@ export default function Navbar({
                         <p className="truncate text-xs text-ink-soft">{userEmail}</p>
                         {session?.user?.isPremium && (
                           <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-ink">
-                            <Gem className="h-3.5 w-3.5" />
+                            <Crown className="h-3.5 w-3.5" />
                             Premium actief
                           </p>
                         )}
@@ -395,24 +373,9 @@ export default function Navbar({
                       Instellingen
                     </Link>
 
-                    {/* Both actions are full width and the same height, with a
-                        rule between them and the navigation above: the upgrade
-                        used to be an odd shrink-to-fit button wedged next to
-                        "Afmelden", which read as a misplaced element rather
-                        than the primary action of the menu. */}
+                    {/* A single full-width action below the navigation and a
+                        rule, matching the height of the controls around it. */}
                     <div className="space-y-2 border-t border-rule pt-3">
-                      {!session?.user?.isPremium && (
-                        <Button
-                          asChild
-                          className="h-11 w-full justify-center rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
-                        >
-                          <Link href="/premium" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Gem className="mr-2 h-4 w-4" />
-                            Word Premium
-                          </Link>
-                        </Button>
-                      )}
-
                       <Button
                         onClick={() => {
                           setIsMobileMenuOpen(false);

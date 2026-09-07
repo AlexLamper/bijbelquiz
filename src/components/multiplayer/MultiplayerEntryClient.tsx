@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import {
   ArrowRight,
   ChevronDown,
-  Gem,
+  Crown,
   Gamepad2,
   Lock,
   Share2,
@@ -34,6 +34,10 @@ import { MultiplayerTokenStore } from '@/lib/multiplayer-web/token-store';
 import { toUserMessage } from '@/lib/multiplayer-web/errors';
 import { trackEvent } from '@/components/GoogleAnalytics';
 import MultiplayerPremiumPaywall from '@/components/multiplayer/MultiplayerPremiumPaywall';
+import QuizPickerField, {
+  type PickerCategory,
+  type PickerQuiz,
+} from '@/components/multiplayer/QuizPickerField';
 import {
   formatFreeGamesRemaining,
   formatMonthlyFreeGames,
@@ -45,15 +49,12 @@ import {
 import { QUESTION_TIMER_CHOICES } from '@/lib/user-settings';
 import { cn } from '@/lib/utils';
 
-interface MultiplayerQuizOption {
-  id: string;
-  title: string;
-  questionCount: number;
-  isPremium: boolean;
-}
+type MultiplayerQuizOption = PickerQuiz;
 
 interface MultiplayerEntryClientProps {
   quizzes: MultiplayerQuizOption[];
+  /** Categories the picker can filter on, in display order. */
+  categories: PickerCategory[];
   isPremiumUser: boolean;
   /** Free games left to host, or `null` for Premium (unlimited). */
   freeGamesRemaining: number | null;
@@ -75,6 +76,7 @@ function routeForRoom(code: string, status: string): string {
 
 export default function MultiplayerEntryClient({
   quizzes,
+  categories,
   isPremiumUser,
   freeGamesRemaining,
   maxPlayersForUser,
@@ -318,7 +320,7 @@ export default function MultiplayerEntryClient({
 
         {quota.isPremium ? (
           <span className="inline-flex items-center gap-1.5 rounded-md border border-rule bg-paper-sunken px-2.5 py-1.5 text-xs font-medium text-ink">
-            <Gem className="h-3.5 w-3.5" aria-hidden />
+            <Crown className="h-3.5 w-3.5" aria-hidden />
             Premium - onbeperkt spellen
           </span>
         ) : (
@@ -475,21 +477,13 @@ export default function MultiplayerEntryClient({
             >
               <div className="space-y-1.5">
                 <label className="text-sm font-medium">Quiz</label>
-                <Select value={selectedQuizId} onValueChange={setSelectedQuizId}>
-                  <SelectTrigger className="h-10">
-                    <SelectValue placeholder="Kies een quiz" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {quizzes.map((quiz) => (
-                      <SelectItem key={quiz.id} value={quiz.id}>
-                        {quiz.title}{' '}
-                        <span className="text-muted-foreground">
-                          ({quiz.questionCount} vragen{quiz.isPremium ? ', premium' : ''})
-                        </span>
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <QuizPickerField
+                  quizzes={quizzes}
+                  categories={categories}
+                  value={selectedQuizId}
+                  onChange={setSelectedQuizId}
+                  disabled={!canCreateRoom}
+                />
               </div>
 
               <div className="space-y-1.5">
@@ -507,7 +501,7 @@ export default function MultiplayerEntryClient({
                             {count} spelers
                             {isPremiumOnly && (
                               <span className="inline-flex items-center gap-1 rounded-md bg-paper-sunken px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink">
-                                <Gem className="h-3 w-3" />
+                                <Crown className="h-3 w-3" />
                                 Premium
                               </span>
                             )}
@@ -521,14 +515,18 @@ export default function MultiplayerEntryClient({
 
               <div className="space-y-1.5">
                 <label className="text-sm font-medium">Tempo</label>
-                <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4">
+                {/* "Host bepaalt tempo" is far wider than "30s" and used to
+                    wrap to two lines in a quarter-width cell. It gets a row of
+                    its own; the timed choices share the row below. */}
+                <div className="grid grid-cols-3 gap-1.5">
                   {QUESTION_TIMER_CHOICES.map((choice) => (
                     <button
                       key={choice}
                       type="button"
                       onClick={() => setQuestionTimerSeconds(choice)}
                       className={cn(
-                        'h-9 rounded-md border px-2 text-sm font-medium transition-colors',
+                        'h-9 whitespace-nowrap rounded-md border px-2 text-sm font-medium transition-colors',
+                        choice === 0 && 'col-span-3',
                         questionTimerSeconds === choice
                           ? 'border-ink bg-ink text-ink-inverted'
                           : 'border-rule bg-paper text-ink-soft hover:border-rule-strong hover:text-ink',
@@ -584,7 +582,7 @@ export default function MultiplayerEntryClient({
                 }
               >
                 <Link href={premiumPaywallHref('host_quota_exhausted', '/samen-spelen')}>
-                  <Gem className="mr-2 h-4 w-4" />
+                  <Crown className="mr-2 h-4 w-4" />
                   Word Premium om te hosten
                 </Link>
               </Button>

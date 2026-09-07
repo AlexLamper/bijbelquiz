@@ -8,7 +8,7 @@ import { useSession } from 'next-auth/react';
 import {
   Bug,
   ChevronDown,
-  Gem,
+  Crown,
   FileText,
   LayoutDashboard,
   LifeBuoy,
@@ -63,13 +63,13 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
     { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
     { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
     // Members manage their membership under Account instead - nothing to sell here.
-    ...(isPremium ? [] : [{ href: '/premium', label: 'Premium', icon: Gem }]),
+    ...(isPremium ? [] : [{ href: '/premium', label: 'Premium', icon: Crown }]),
   ];
 
   const accountItems: SidebarItem[] = session
     ? [
         { href: '/profiel', label: 'Profiel', icon: User },
-        ...(isPremium ? [{ href: '/premium', label: 'Lidmaatschap', icon: Gem }] : []),
+        ...(isPremium ? [{ href: '/premium', label: 'Lidmaatschap', icon: Crown }] : []),
         { href: '/instellingen', label: 'Instellingen', icon: Settings, activePrefixes: ['/instellingen'] },
       ]
     : [

@@ -1,8 +1,8 @@
 'use client';
 
-import { Fragment, useEffect, useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { Search, SlidersHorizontal } from 'lucide-react';
+import { ChevronDown, Search, SlidersHorizontal } from 'lucide-react';
 
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -12,6 +12,13 @@ import { QuizCard } from '@/components/QuizCard';
 import { MobileQuizFilter } from '@/components/MobileQuizFilter';
 import { useUserSettings } from '@/lib/user-settings-client';
 import { matchesPreferredDifficulty, type PreferredDifficulty } from '@/lib/user-settings';
+import {
+  buildSeriesEntries,
+  countEntryQuizzes,
+  groupSeries,
+  normalizeSearchText,
+  type SeriesEntry,
+} from '@/lib/quiz-series';
 
 interface Quiz {
   _id: string;
@@ -50,15 +57,16 @@ interface QuizzesClientProps {
   initialCategoryId?: string;
 }
 
-const ROMAN_PARTS: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6 };
-
 /**
- * How many cards render at once. The library keeps growing past what fits a
+ * How many entries render at once. The library keeps growing past what fits a
  * screen, and mounting every match - image, tile, link - for a filter that
  * returns a hundred results is work nobody scrolls far enough to see. Search
  * and filtering still run over the full set; only rendering is capped.
  */
-const PAGE_SIZE = 24;
+const PAGE_SIZE = 18;
+
+/** Parts of a collapsed series shown before the reader asks for the rest. */
+const SERIES_PREVIEW = 3;
 
 const DIFFICULTY_FILTERS: { value: PreferredDifficulty; label: string }[] = [
   { value: 'all', label: 'Elk niveau' },
@@ -75,51 +83,6 @@ const SORT_OPTIONS: { value: SortOption; label: string }[] = [
   { value: 'titel', label: 'Titel (A-Z)' },
   { value: 'categorie', label: 'Categorie' },
 ];
-
-/**
- * Split a quiz title into the series it belongs to and its part number, so
- * "Daniel Deel 1" and "Daniel Deel 2" are recognised as one series. Quizzes are
- * sorted server-side with premium last, which would otherwise scatter the parts
- * of a series across the grid.
- */
-function readSeries(title: string): { base: string; part: number } {
-  const trimmed = (title || '').trim();
-  const match = trimmed.match(/^(.*?)[\s\-:]*\b(?:deel|dl\.?|part)\s*([0-9]+|[ivx]+)\s*$/i)
-    || trimmed.match(/^(.*?)\s*\(\s*([0-9]+)\s*\)\s*$/)
-    || trimmed.match(/^(.*?)\s+-\s+([0-9]+)\s*$/);
-
-  if (!match || !match[1].trim()) {
-    return { base: trimmed.toLowerCase(), part: 0 };
-  }
-
-  const raw = match[2].toLowerCase();
-  const part = /^[0-9]+$/.test(raw) ? Number(raw) : ROMAN_PARTS[raw] ?? 0;
-
-  return { base: match[1].trim().toLowerCase(), part };
-}
-
-/** Keep the incoming order, but pull every part of a series together, in order. */
-function groupSeries<T extends { title: string }>(items: T[]): T[] {
-  const firstSeen = new Map<string, number>();
-
-  const decorated = items.map((item, index) => {
-    const { base, part } = readSeries(item.title);
-    if (!firstSeen.has(base)) {
-      firstSeen.set(base, index);
-    }
-    return { item, base, part, index };
-  });
-
-  return decorated
-    .sort((a, b) => {
-      const groupA = firstSeen.get(a.base) ?? a.index;
-      const groupB = firstSeen.get(b.base) ?? b.index;
-      if (groupA !== groupB) return groupA - groupB;
-      if (a.part !== b.part) return a.part - b.part;
-      return a.index - b.index;
-    })
-    .map((entry) => entry.item);
-}
 
 export default function QuizzesClient({
   quizzes,
@@ -161,13 +124,20 @@ export default function QuizzesClient({
   }, [quizzes, userIsPremium]);
 
   const filteredQuizzes = useMemo(() => {
-    const search = searchQuery.trim().toLowerCase();
+    // Readers type "danielsboek" or "Daniel" for the same quiz, and Dutch
+    // titles carry accents the keyboard does not - so both sides of the
+    // comparison are folded to plain lowercase ASCII first.
+    const search = normalizeSearchText(searchQuery);
 
     return normalizedQuizzes.filter((quiz) => {
+      const categoryTitle =
+        typeof quiz.categoryId === 'string' ? '' : quiz.categoryId?.title || '';
+
       const matchesSearch =
         search.length === 0 ||
-        quiz.title.toLowerCase().includes(search) ||
-        (quiz.description || '').toLowerCase().includes(search);
+        normalizeSearchText(quiz.title).includes(search) ||
+        normalizeSearchText(quiz.description || '').includes(search) ||
+        normalizeSearchText(categoryTitle).includes(search);
 
       const categoryId =
         typeof quiz.categoryId === 'string' ? quiz.categoryId : quiz.categoryId?._id;
@@ -227,29 +197,66 @@ export default function QuizzesClient({
     [normalizedQuizzes]
   );
 
+  /**
+   * A book with twenty quizzes used to be twenty adjacent cards, which pushed
+   * everything after it off the bottom of the page: finding "Jakobus" meant
+   * scrolling past all of Handelingen. Long runs of one series collapse into a
+   * single entry that opens on demand, so the grid stays one screen of
+   * subjects rather than one screen of chapters.
+   */
+  const entries = useMemo(
+    () => buildSeriesEntries(orderedQuizzes, (quiz) => quiz._id),
+    [orderedQuizzes]
+  );
+
   // Reset to the first page whenever the result set changes shape - otherwise
   // a search that narrows a hundred matches to three would leave the "toon
-  // meer" cutoff sitting past the end of the new list.
+  // meer" cutoff sitting past the end of the new list. Series the reader had
+  // opened are closed again for the same reason.
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-  useEffect(() => {
-    setVisibleCount(PAGE_SIZE);
-  }, [searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty, selectedSort]);
+  const [expandedSeries, setExpandedSeries] = useState<Set<string>>(() => new Set());
 
-  const visibleQuizzes = orderedQuizzes.slice(0, visibleCount);
-  const hasMore = orderedQuizzes.length > visibleQuizzes.length;
+  const filterSignature = [
+    searchQuery,
+    selectedCategory,
+    showPremiumOnly,
+    selectedDifficulty,
+    selectedSort,
+  ].join('|');
+  const [seededFilters, setSeededFilters] = useState(filterSignature);
+
+  if (seededFilters !== filterSignature) {
+    setSeededFilters(filterSignature);
+    setVisibleCount(PAGE_SIZE);
+    setExpandedSeries(new Set());
+  }
+
+  const toggleSeries = (key: string) => {
+    setExpandedSeries((current) => {
+      const next = new Set(current);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
+
+  const visibleEntries = entries.slice(0, visibleCount);
+  const hasMore = entries.length > visibleEntries.length;
+  const remainingCount = countEntryQuizzes(entries.slice(visibleCount));
 
   /**
-   * Index in `orderedQuizzes` where the already-played half begins. Only the
+   * Index in `entries` where the already-played half begins. Only the
    * "Aanbevolen" sort splits played from unplayed, so the divider is off for
    * every other sort - there played quizzes sit wherever the sort puts them.
+   * An entry counts as finished only when every quiz in it is.
    */
-  const firstPlayedIndex = useMemo(
-    () =>
-      selectedSort === 'aanbevolen'
-        ? orderedQuizzes.findIndex((quiz) => (quiz.progress?.attempts ?? 0) > 0)
-        : -1,
-    [orderedQuizzes, selectedSort]
-  );
+  const firstPlayedIndex = useMemo(() => {
+    if (selectedSort !== 'aanbevolen') return -1;
+    const isPlayed = (quiz: Quiz) => (quiz.progress?.attempts ?? 0) > 0;
+    return entries.findIndex((entry) =>
+      entry.kind === 'series' ? entry.quizzes.every(isPlayed) : isPlayed(entry.quiz)
+    );
+  }, [entries, selectedSort]);
 
   const totalCount = normalizedQuizzes.length;
   const resultCount = orderedQuizzes.length;
@@ -435,8 +442,8 @@ export default function QuizzesClient({
         ) : (
           <>
             <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
-              {visibleQuizzes.map((quiz, index) => (
-                <Fragment key={quiz._id}>
+              {visibleEntries.map((entry, index) => (
+                <Fragment key={entry.key}>
                   {/* A labelled rule where the finished half starts, so it is
                       obvious the grid did not simply run out of new quizzes. */}
                   {index === firstPlayedIndex && firstPlayedIndex > 0 && (
@@ -447,7 +454,17 @@ export default function QuizzesClient({
                       <span aria-hidden className="h-px flex-1 bg-rule" />
                     </div>
                   )}
-                  <QuizCard quiz={quiz} isPremiumUser={userIsPremium} />
+
+                  {entry.kind === 'quiz' ? (
+                    <QuizCard quiz={entry.quiz} isPremiumUser={userIsPremium} />
+                  ) : (
+                    <SeriesGroup
+                      entry={entry}
+                      isExpanded={expandedSeries.has(entry.key)}
+                      onToggle={() => toggleSeries(entry.key)}
+                      userIsPremium={userIsPremium}
+                    />
+                  )}
                 </Fragment>
               ))}
             </div>
@@ -460,7 +477,7 @@ export default function QuizzesClient({
                   onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
                   className="h-10 rounded-md border-rule bg-paper-raised px-6 text-ink hover:bg-paper-sunken"
                 >
-                  Toon meer ({orderedQuizzes.length - visibleQuizzes.length} resterend)
+                  Toon meer ({remainingCount} resterend)
                 </Button>
               </div>
             )}
@@ -468,5 +485,59 @@ export default function QuizzesClient({
         )}
       </section>
     </div>
+  );
+}
+
+interface SeriesGroupProps {
+  entry: Extract<SeriesEntry<Quiz>, { kind: 'series' }>;
+  isExpanded: boolean;
+  onToggle: () => void;
+  userIsPremium: boolean;
+}
+
+/**
+ * One book or series as a single block in the grid: a labelled rule, the first
+ * few parts, and a button for the rest. Collapsed, a twenty-part series costs
+ * the same vertical space as three ordinary quizzes.
+ */
+function SeriesGroup({ entry, isExpanded, onToggle, userIsPremium }: SeriesGroupProps) {
+  const total = entry.quizzes.length;
+  const shown = isExpanded ? entry.quizzes : entry.quizzes.slice(0, SERIES_PREVIEW);
+  const hidden = total - shown.length;
+  const playedInSeries = entry.quizzes.filter((quiz) => (quiz.progress?.attempts ?? 0) > 0).length;
+
+  return (
+    <section className="col-span-full">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <h2 className="font-display text-lg font-normal tracking-[-0.015em] text-ink">
+          {entry.label}
+        </h2>
+        <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted tabular-nums">
+          {total} quizzen
+          {playedInSeries > 0 && ` · ${playedInSeries} afgerond`}
+        </span>
+        <span aria-hidden className="h-px min-w-8 flex-1 bg-rule" />
+        {hidden > 0 || isExpanded ? (
+          <button
+            type="button"
+            onClick={onToggle}
+            aria-expanded={isExpanded}
+            className="inline-flex h-8 items-center gap-1 rounded-md border border-rule bg-paper-raised px-3 text-xs font-medium text-ink transition-colors hover:bg-paper-sunken"
+          >
+            {isExpanded ? 'Toon minder' : `Toon alle ${total}`}
+            <ChevronDown
+              aria-hidden
+              className={`h-3.5 w-3.5 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+            />
+          </button>
+        ) : null}
+      </div>
+
+      <div className="mt-6 grid gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
+        {shown.map((quiz) => (
+          <QuizCard key={quiz._id} quiz={quiz} isPremiumUser={userIsPremium} />
+        ))}
+      </div>
+    </section>
   );
 }
