@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { authOptions } from '@/lib/auth';
 import { connectDB, Quiz, User, UserProgress } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { premiumPaywallHref } from '@/lib/premium-benefits';
 import QuizReviewClient from '@/components/quiz/QuizReviewClient';
 import type { QuizReviewQuestion } from '@/lib/quiz-review';
 
@@ -51,7 +52,11 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
   const hasAccess = premium.isPremium || Boolean((user as any).hasLifetimePremium);
 
   if (!hasAccess) {
-    redirect('/premium');
+    // The review is the one wall a solo player hits right after investing in
+    // a quiz, so the paywall names it and brings them back to this attempt.
+    redirect(
+      premiumPaywallHref('review_locked', `/quiz/${id}/beoordeling?attempt=${attemptId}`),
+    );
   }
 
   const [quiz, attempt] = await Promise.all([

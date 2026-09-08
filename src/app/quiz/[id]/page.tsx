@@ -6,6 +6,7 @@ import { connectDB, Quiz, ICategory, UserProgress } from '@/database';
 import QuizExperience from '@/components/quiz/QuizExperience';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { normalizeUserSettings } from '@/lib/user-settings';
+import { premiumPaywallHref } from '@/lib/premium-benefits';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -110,7 +111,10 @@ export default async function QuizPage({ params }: PageProps) {
 
   if (quiz.isPremium) {
     if (!session.user.isPremium) {
-      redirect('/premium');
+      // Named trigger + way back: the paywall opens on "ontgrendel deze quiz"
+      // and the funnel can attribute the visit, instead of logging it as a
+      // direct hit on a generic page.
+      redirect(premiumPaywallHref('premium_quiz_locked', `/quiz/${id}`));
     }
   }
 

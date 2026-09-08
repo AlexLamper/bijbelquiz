@@ -261,11 +261,15 @@ export default function QuizPlayer({
   const explanationLocked =
     !isPremium && hasAnswered && showExplanation && Boolean(currentQuestion.explanationPreview);
 
-  // Recorded once per question, when the locked explanation actually appears.
-  // Somebody who just got it wrong wants to know why more than at any other
-  // point in the quiz, so the funnel needs to see that separately.
+  // Recorded once per quiz sitting, the first time a locked explanation
+  // appears. It used to fire on every answered question, which made one
+  // player look like ninety paywalls in an afternoon and buried the real
+  // paywall page in the funnel report. Somebody who just got it wrong wants
+  // to know why more than at any other point, so that is still recorded.
+  const lockedExplanationRecorded = useRef(false);
   useEffect(() => {
-    if (!explanationLocked) return;
+    if (!explanationLocked || lockedExplanationRecorded.current) return;
+    lockedExplanationRecorded.current = true;
     track('paywall_shown', {
       trigger: 'explanation_locked',
       surface: 'quiz_explanation',

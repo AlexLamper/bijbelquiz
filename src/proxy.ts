@@ -2,7 +2,7 @@ import { withAuth } from "next-auth/middleware"
 
 export default withAuth({
   pages: {
-    signIn: "/login",
+    signIn: "/inloggen",
   },
 })
 
@@ -11,7 +11,7 @@ export const config = {
     "/admin/:path*",
     "/dashboard/:path*",
     "/profile/:path*",
-    "/premium/:path*",
+    "/premium/succes/:path*",
     "/quizzes/:path*",
     "/quiz/:path*",
     "/account-verwijderen/:path*"

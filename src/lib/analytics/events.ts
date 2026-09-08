@@ -107,6 +107,12 @@ export const PAYWALL_TRIGGERS = [
   'explanation_locked',
   /** A premium-only quiz was opened. */
   'premium_quiz_locked',
+  /**
+   * The post-quiz review (which answers were wrong, and why) was opened by a
+   * free player. The app has sent this since 2026-09-06; the website now
+   * raises it from `/quiz/[id]/beoordeling` as well.
+   */
+  'review_locked',
   /** The user opened the premium page directly. */
   'direct',
 ] as const;

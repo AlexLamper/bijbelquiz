@@ -52,6 +52,7 @@ const TRIGGER_HEADLINES: Record<PaywallTrigger, string> = {
   host_player_cap: 'Speel met je hele groep',
   explanation_locked: 'Lees bij elke vraag waarom',
   premium_quiz_locked: 'Ontgrendel alle quizzen',
+  review_locked: 'Zie precies welke vragen je fout had',
   direct: 'Speel onbeperkt samen - en verdiep je kennis bij elke vraag',
 };
 
@@ -66,6 +67,8 @@ const TRIGGER_LEADS: Record<PaywallTrigger, string> = {
     'Bij elke vraag hoort een uitleg en een bijbelverwijzing. Met Premium lees je ze allemaal, ook nadat het spel is afgelopen.',
   premium_quiz_locked:
     'Deze quiz hoort bij de premium collectie. Met Premium speel je alle quizzen, nu en in de toekomst.',
+  review_locked:
+    'Je score staat vast, maar welke vragen je miste en waarom is Premium. Met Premium krijg je na elke quiz per vraag het goede antwoord, de uitleg en de bijbelverwijzing.',
   direct:
     'Met Premium host je multiplayer-rooms tot 20 spelers, krijg je uitleg en bijbelverwijzingen bij elke vraag, en volg je je voortgang per boek.',
 };
