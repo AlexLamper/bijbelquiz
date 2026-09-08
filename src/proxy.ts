@@ -13,7 +13,6 @@ export const config = {
     "/profile/:path*",
     "/premium/succes/:path*",
     "/quizzes/:path*",
-    "/quiz/:path*",
     "/account-verwijderen/:path*"
   ]
 }

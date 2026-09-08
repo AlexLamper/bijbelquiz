@@ -21,22 +21,6 @@ interface IQuestion {
   explanation?: string;
 }
 
-function getExplanationPreview(explanation?: string): string | undefined {
-  if (!explanation) return undefined;
-
-  const normalized = explanation.replace(/\s+/g, ' ').trim();
-  if (!normalized) return undefined;
-
-  const maxChars = 110;
-  if (normalized.length <= maxChars) {
-    return `${normalized.replace(/[.!?]+$/, '').trimEnd()}...`;
-  }
-
-  const trimmed = normalized.slice(0, maxChars).replace(/[.!?\s]+$/, '').trimEnd();
-  return `${trimmed}...`;
-}
-
-
 export async function generateMetadata(
   { params }: PageProps,
   parent: ResolvingMetadata
@@ -95,58 +79,55 @@ export default async function QuizPage({ params }: PageProps) {
     notFound();
   }
 
+  // Playing needs no account. Search visitors land here from the quiz they
+  // searched for, and a login form in front of the first question turned most
+  // of them into accounts that never played. An account is asked for on the
+  // result screen, where there is a score to keep.
   const session = await getServerSession(authOptions);
-
-  if (!session) {
-    redirect(`/inloggen?callbackUrl=/quiz/${id}`);
-  }
+  const isAdmin = session?.user.role === 'admin';
+  const isPremiumUser = Boolean(session?.user.isPremium);
 
   // Status check for non-admins
   // Allow if status is approved OR if status is missing (legacy)
-  if (quiz.status && quiz.status !== 'approved') {
-    if (!session || session.user.role !== 'admin') {
-       notFound();
-    }
+  if (quiz.status && quiz.status !== 'approved' && !isAdmin) {
+    notFound();
   }
 
-  if (quiz.isPremium) {
-    if (!session.user.isPremium) {
-      // Named trigger + way back: the paywall opens on "ontgrendel deze quiz"
-      // and the funnel can attribute the visit, instead of logging it as a
-      // direct hit on a generic page.
-      redirect(premiumPaywallHref('premium_quiz_locked', `/quiz/${id}`));
-    }
+  if (quiz.isPremium && !isPremiumUser) {
+    // Named trigger + way back: the paywall opens on "ontgrendel deze quiz"
+    // and the funnel can attribute the visit, instead of logging it as a
+    // direct hit on a generic page.
+    redirect(premiumPaywallHref('premium_quiz_locked', `/quiz/${id}`));
   }
 
   // Serialize for Client Component
   const serializableQuiz = JSON.parse(JSON.stringify(quiz));
 
-  const [lastProgressDoc, attempts] = await Promise.all([
-    UserProgress.findOne({
-      userId: session.user.id,
-      quizId: quiz._id,
-    })
-      .select('correctAnswers wrongAnswers totalQuestions completedAt')
-      .sort({ completedAt: -1 })
-      .lean(),
-    UserProgress.countDocuments({
-      userId: session.user.id,
-      quizId: quiz._id,
-    }),
-  ]);
+  const [lastProgressDoc, attempts] = session
+    ? await Promise.all([
+        UserProgress.findOne({
+          userId: session.user.id,
+          quizId: quiz._id,
+        })
+          .select('correctAnswers wrongAnswers totalQuestions completedAt')
+          .sort({ completedAt: -1 })
+          .lean(),
+        UserProgress.countDocuments({
+          userId: session.user.id,
+          quizId: quiz._id,
+        }),
+      ])
+    : [null, 0];
 
-  if (!session.user.isPremium) {
+  // Explanations are Premium. They leave the page entirely for a free
+  // player - no teaser, no preview - and the one "onthulling" a free player
+  // may spend per quiz is fetched on its own. The Bible reference stays.
+  if (!isPremiumUser) {
     serializableQuiz.questions = serializableQuiz.questions.map(
-      (question: { explanation?: string; bibleReference?: string; [key: string]: unknown }) => {
-        const explanationPreview = getExplanationPreview(question.explanation);
-
-        return {
-          ...question,
-          explanationPreview,
-          explanation: undefined,
-          // bibleReference stays visible for all users
-        };
-      }
+      (question: { explanation?: string; bibleReference?: string; [key: string]: unknown }) => ({
+        ...question,
+        explanation: undefined,
+      })
     );
   }
 
@@ -215,7 +196,7 @@ export default async function QuizPage({ params }: PageProps) {
         overview={overview}
         passage={passage}
         lastResult={lastResult}
-        setupSeen={normalizeUserSettings(session.user.settings).quizSetupSeen}
+        setupSeen={session ? normalizeUserSettings(session.user.settings).quizSetupSeen : false}
       />
     </div>
   );

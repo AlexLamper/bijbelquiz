@@ -9,7 +9,6 @@ import {
   ArrowRight,
   BookOpen,
   CheckCircle2,
-  Crown,
   Lock,
   Maximize,
   RotateCcw,
@@ -18,6 +17,7 @@ import {
   X,
 } from 'lucide-react';
 
+import QuizFreeReviewSection, { type RevealedExplanation } from '@/components/quiz/QuizFreeReviewSection';
 import QuizPremiumReviewSection from '@/components/quiz/QuizPremiumReviewSection';
 import BibleVerseDisplay from '@/components/BibleVerseDisplay';
 import { Button } from '@/components/ui/button';
@@ -42,7 +42,6 @@ interface Question {
   text: string;
   answers: Answer[];
   explanation?: string;
-  explanationPreview?: string;
   bibleReference?: string;
   bibleReferencePreview?: string;
   _id: string;
@@ -120,6 +119,8 @@ export default function QuizPlayer({
   // Upgrading from inside a quiz returns to that same quiz, so a locked
   // explanation is still on screen when the reader comes back.
   const paywallHref = premiumPaywallHref('explanation_locked', pathname);
+  // The review after the quiz is its own wall, and the funnel counts it apart.
+  const reviewPaywallHref = premiumPaywallHref('review_locked', pathname);
 
   const isPremium = !!session?.user?.isPremium;
   const isLoggedIn = !!session?.user;
@@ -130,7 +131,13 @@ export default function QuizPlayer({
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [isSaving, setIsSaving] = useState(false);
   const [earnedXp, setEarnedXp] = useState<number | null>(null);
-  const [showPremiumReviewUpsell, setShowPremiumReviewUpsell] = useState(false);
+  // The one free explanation per sitting: the "onthulling". Held here rather
+  // than on the question because the same reveal shows during the quiz and
+  // again in the review afterwards. The text is fetched when chosen, so a
+  // free player's page never carries explanations it is not showing.
+  const [reveal, setReveal] = useState<RevealedExplanation | null>(null);
+  const [revealPending, setRevealPending] = useState<number | null>(null);
+  const [revealError, setRevealError] = useState<string | null>(null);
 
   // Where the reader had got to when they walked away. Kept in a ref because
   // the only place that can report it is the unmount cleanup, which would
@@ -258,8 +265,10 @@ export default function QuizPlayer({
   const answeredWrong =
     hasAnswered && !currentQuestion.answers[selectedAnswer!]?.isCorrect;
   const timedOut = Boolean(timedOutQuestions[currentIndex]);
+  // A free player sees the lock only once their single reveal is spent on
+  // another question. Before that the explanation is an offer, not a wall.
   const explanationLocked =
-    !isPremium && hasAnswered && showExplanation && Boolean(currentQuestion.explanationPreview);
+    !isPremium && hasAnswered && showExplanation && reveal !== null && reveal.index !== currentIndex;
 
   // Recorded once per quiz sitting, the first time a locked explanation
   // appears. It used to fire on every answered question, which made one
@@ -281,6 +290,21 @@ export default function QuizPlayer({
     // question changing too.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [explanationLocked, currentQuestion._id]);
+
+  // The review after the quiz is the wall that matters for a solo player:
+  // they have just spent five minutes, they know their score, and the "why"
+  // per question is what Premium holds back. Counted once per sitting.
+  const reviewPaywallRecorded = useRef(false);
+  useEffect(() => {
+    if (!isFinished || isPremium || reviewPaywallRecorded.current) return;
+    reviewPaywallRecorded.current = true;
+    track('paywall_shown', {
+      trigger: 'review_locked',
+      surface: 'quiz_result',
+      wrongAnswers: quiz.questions.length - score,
+      signedIn: isLoggedIn,
+    });
+  }, [isFinished, isPremium, isLoggedIn, quiz.questions.length, score]);
 
   const openLeaveDialog = (href: string) => {
     setPendingLeaveHref(href);
@@ -309,8 +333,48 @@ export default function QuizPlayer({
     }
   };
 
+  /**
+   * Spend the free reveal on one question. Premium players never need it -
+   * their explanations are already on the page - and a second call is a no-op
+   * because the reveal is a single choice per sitting, not a queue.
+   */
+  const revealExplanation = async (index: number) => {
+    if (isPremium || reveal !== null || revealPending !== null) return;
+
+    const question = quiz.questions[index];
+    if (!question) return;
+
+    setRevealPending(index);
+    setRevealError(null);
+
+    try {
+      const response = await fetch(
+        `/api/quizzes/${quiz._id}/explanation?question=${encodeURIComponent(String(question._id))}`
+      );
+      if (!response.ok) {
+        throw new Error(`Explanation request failed with ${response.status}`);
+      }
+
+      const data = (await response.json()) as { explanation?: string; bibleReference?: string | null };
+      setReveal({
+        index,
+        explanation: data.explanation || 'Geen extra uitleg beschikbaar.',
+        bibleReference: data.bibleReference || null,
+      });
+    } catch {
+      setRevealError('De uitleg kon niet worden opgehaald. Probeer het nog eens.');
+    } finally {
+      setRevealPending(null);
+    }
+  };
+
   const finishQuiz = async () => {
     setIsFinished(true);
+
+    // Nothing to save without an account. The result screen asks for one,
+    // right next to the score it would have kept.
+    if (!isLoggedIn) return;
+
     setIsSaving(true);
 
     try {
@@ -340,9 +404,6 @@ export default function QuizPlayer({
         const data = await response.json();
         if (typeof data.xpEarned === 'number') {
           setEarnedXp(data.xpEarned);
-        }
-        if (!isPremium) {
-          setShowPremiumReviewUpsell(true);
         }
       }
     } catch (error) {
@@ -518,9 +579,12 @@ export default function QuizPlayer({
     const percentage = Math.round((score / quiz.questions.length) * 100);
     const fallbackXp = Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length));
     const resolvedXp = earnedXp ?? fallbackXp;
-    const premiumReviewQuestions = isPremium
-      ? buildReviewQuestionsFromSelections(quiz.questions as Parameters<typeof buildReviewQuestionsFromSelections>[0], selectedAnswers)
-      : [];
+    // Everybody gets the list of what went right and wrong. What differs is
+    // whether the explanation per question is on it.
+    const reviewQuestions = buildReviewQuestionsFromSelections(
+      quiz.questions as Parameters<typeof buildReviewQuestionsFromSelections>[0],
+      selectedAnswers
+    );
 
     // Counted, not derived from the percentage: 14/15 rounds to 93% and 10/10
     // to 100%, but only one of those is actually every question right, and
@@ -560,35 +624,6 @@ export default function QuizPlayer({
 
     return (
       <div className="mx-auto w-full max-w-[760px] px-5 pb-20 pt-10 sm:px-8">
-        {!isPremium && showPremiumReviewUpsell && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-ink/45 px-4">
-            <div className="w-full max-w-md rounded-lg border border-rule bg-paper-raised p-5">
-              <h2 className="text-base font-normal text-ink">Ontgrendel je volledige quizanalyse</h2>
-              <p className="mt-2 text-sm text-ink-soft">
-                Wil je een gedetailleerd overzicht van je score, precies zien welke antwoorden fout waren, de uitleg per vraag en
-                bijbelverwijzingen? Upgrade dan naar Premium.
-              </p>
-              <div className="mt-5 flex flex-wrap justify-end gap-2">
-                <Button
-                  type="button"
-                  variant="outline"
-                  className="h-9 rounded-md border-rule bg-paper-raised px-3 text-ink hover:bg-paper-sunken"
-                  onClick={() => setShowPremiumReviewUpsell(false)}
-                >
-                  Later bekijken
-                </Button>
-                <Button
-                  asChild
-                  type="button"
-                  className="h-9 rounded-md bg-ink px-3 text-ink-inverted hover:bg-ink-soft"
-                >
-                  <Link href={paywallHref}>Upgrade naar Premium</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
-
         {/* ── The result ────────────────────────────────────────────────
             An editorial report, not a boxed card inside a boxed card: the
             score is the headline, everything else is set against hairlines in
@@ -685,10 +720,45 @@ export default function QuizPlayer({
           </Button>
         </div>
 
-        {isPremium && premiumReviewQuestions.length > 0 && (
+        {/* Played without an account: the score above is real but unkept.
+            This is the moment to ask, with the XP it would have saved. */}
+        {!isLoggedIn && (
+          <div className="mt-10 rounded-lg border border-lapis/45 bg-paper-raised p-5 sm:p-6">
+            <p className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+              <span aria-hidden className="h-px w-6 bg-lapis" />
+              Niet opgeslagen
+            </p>
+            <p className="mt-3 font-display text-lg leading-snug text-ink">
+              Bewaar je score, {resolvedXp} XP en je streak
+            </p>
+            <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">
+              Met een gratis account tellen je quizzen mee voor je niveau en de ranglijst, en zie
+              je later terug hoe je groeit.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Button
+                asChild
+                className="h-10 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+              >
+                <Link href={`/registreren?callbackUrl=${encodeURIComponent(pathname)}`}>
+                  Gratis account aanmaken
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="h-10 rounded-md border-rule bg-paper-raised px-4 text-sm font-medium text-ink hover:bg-paper-sunken"
+              >
+                <Link href={`/inloggen?callbackUrl=${encodeURIComponent(pathname)}`}>Inloggen</Link>
+              </Button>
+            </div>
+          </div>
+        )}
+
+        {isPremium && reviewQuestions.length > 0 && (
           <div className="mt-10 border-t border-rule pt-8">
             <QuizPremiumReviewSection
-              questions={premiumReviewQuestions}
+              questions={reviewQuestions}
               score={score}
               totalQuestions={quiz.questions.length}
               xpEarned={resolvedXp}
@@ -696,28 +766,16 @@ export default function QuizPlayer({
           </div>
         )}
 
-        {!isPremium && (
-          <div className="mt-10 rounded-lg border border-lapis/45 bg-paper-raised p-5 sm:p-6">
-            <p className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
-              <span aria-hidden className="h-px w-6 bg-lapis" />
-              Premium
-            </p>
-            <p className="mt-3 font-display text-lg leading-snug text-ink">
-              Zie precies welke vragen je fout had
-            </p>
-            <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">
-              Met Premium krijg je per vraag de uitleg en de bijbelverwijzing, en zie je je
-              voortgang per bijbelboek terug.
-            </p>
-            <Button
-              asChild
-              className="mt-4 h-10 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
-            >
-              <Link href={paywallHref}>
-                <Crown className="mr-2 h-4 w-4" />
-                Bekijk Premium
-              </Link>
-            </Button>
+        {!isPremium && reviewQuestions.length > 0 && (
+          <div className="mt-10 border-t border-rule pt-8">
+            <QuizFreeReviewSection
+              questions={reviewQuestions}
+              reveal={reveal}
+              revealPending={revealPending}
+              revealError={revealError}
+              onReveal={revealExplanation}
+              paywallHref={reviewPaywallHref}
+            />
           </div>
         )}
 
@@ -912,29 +970,60 @@ export default function QuizPlayer({
               >
                 {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
               </p>
-            ) : currentQuestion.explanationPreview ? (
+            ) : reveal && reveal.index === currentIndex ? (
+              /* The one free explanation, spent on this question. */
               <div className="mt-3">
-                <div className="relative overflow-hidden">
-                  <p
-                    className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-[15px] leading-relaxed text-ink-soft`}
+                <p
+                  className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-[15px] leading-relaxed text-ink-soft`}
+                >
+                  {reveal.explanation}
+                </p>
+                <p className="mt-4 border-t border-rule pt-4 text-xs text-ink-muted">
+                  Je gratis onthulling voor deze quiz. Met Premium lees je de uitleg bij elke vraag.
+                </p>
+              </div>
+            ) : reveal === null ? (
+              /* Still available: an offer, not a wall. */
+              <div className="mt-3">
+                <p className="text-sm leading-relaxed text-ink-soft">
+                  Bij deze vraag hoort een uitleg. Je mag er per quiz één gratis onthullen.
+                </p>
+                <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-rule pt-4">
+                  <button
+                    type="button"
+                    data-analytics-id="quiz.reveal-explanation"
+                    disabled={revealPending !== null}
+                    onClick={() => revealExplanation(currentIndex)}
+                    className="inline-flex h-9 items-center rounded-md bg-ink px-3 text-xs font-medium text-ink-inverted transition-colors hover:bg-ink-soft disabled:opacity-60"
                   >
-                    {currentQuestion.explanationPreview}
-                  </p>
-                  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-paper-raised to-transparent" />
+                    {revealPending === currentIndex ? 'Ophalen...' : 'Onthul de uitleg'}
+                  </button>
+                  <span className="text-xs text-ink-muted">1 gratis per quiz</span>
                 </div>
-
+                {revealError && <p className="mt-2 text-xs text-vermilion">{revealError}</p>}
+              </div>
+            ) : (
+              /* Spent elsewhere: now it is Premium, said once and quietly. */
+              <div className="mt-3">
+                <p className="text-sm leading-relaxed text-ink-soft">
+                  Je gratis onthulling zit bij vraag {reveal.index + 1}. Met Premium lees je de uitleg
+                  bij elke vraag, ook na afloop.
+                </p>
                 <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-rule pt-4">
-                  <p className="text-xs text-ink-muted">Volledige uitleg zichtbaar met Premium</p>
+                  <p className="inline-flex items-center gap-1.5 text-xs text-ink-muted">
+                    <Lock className="h-3 w-3" />
+                    Uitleg is Premium
+                  </p>
                   <Link
                     href={paywallHref}
                     data-skip-leave-guard
                     className="inline-flex h-9 items-center rounded-md border border-lapis/45 px-3 text-xs font-medium text-lapis transition-colors hover:bg-lapis-tint"
                   >
-                    Ontgrendel Premium
+                    Bekijk Premium
                   </Link>
                 </div>
               </div>
-            ) : null}
+            )}
 
             {visibleBibleReference && <BibleVerseDisplay reference={visibleBibleReference} />}
           </div>
