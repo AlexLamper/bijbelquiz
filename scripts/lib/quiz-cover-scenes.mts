@@ -572,7 +572,7 @@ export const SCENES: Record<string, Scene> = {
   },
 
   // ── Esther ────────────────────────────────────────────────────────────────
-  'ester-bijbelquiz-deel-1': {
+  'esther-bijbelquiz-deel-1': {
     hue: 322,
     mood: 'gold',
     draw: (c) => [
@@ -588,7 +588,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 684, 16),
     ],
   },
-  'ester-bijbelquiz-deel-2': {
+  'esther-bijbelquiz-deel-2': {
     hue: 326,
     mood: 'gold',
     draw: (c) => [
@@ -602,7 +602,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 686, 14),
     ],
   },
-  'ester-bijbelquiz-deel-3': {
+  'esther-bijbelquiz-deel-3': {
     hue: 316,
     mood: 'dusk',
     draw: (c) => [
@@ -615,7 +615,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 686, 14),
     ],
   },
-  'ester-bijbelquiz-deel-4': {
+  'esther-bijbelquiz-deel-4': {
     hue: 312,
     mood: 'dusk',
     draw: (c) => [
@@ -627,7 +627,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 682, 16),
     ],
   },
-  'ester-bijbelquiz-deel-5': {
+  'esther-bijbelquiz-deel-5': {
     hue: 330,
     mood: 'gold',
     draw: (c) => [
@@ -640,7 +640,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  'ester-bijbelquiz-deel-6': {
+  'esther-bijbelquiz-deel-6': {
     hue: 336,
     mood: 'day',
     draw: (c) => [
@@ -653,7 +653,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  'ester-bijbelquiz-deel-7': {
+  'esther-bijbelquiz-deel-7': {
     hue: 318,
     mood: 'dusk',
     draw: (c) => [
@@ -667,7 +667,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  'ester-bijbelquiz-deel-8': {
+  'esther-bijbelquiz-deel-8': {
     hue: 342,
     mood: 'dawn',
     draw: (c) => [
@@ -679,7 +679,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 672, 22),
     ],
   },
-  'ester-bijbelquiz-deel-9': {
+  'esther-bijbelquiz-deel-9': {
     hue: 348,
     mood: 'gold',
     draw: (c) => [
@@ -690,7 +690,7 @@ export const SCENES: Record<string, Scene> = {
       fg(c, 678, 18),
     ],
   },
-  'ester-bijbelquiz-deel-10': {
+  'esther-bijbelquiz-deel-10': {
     hue: 306,
     mood: 'gold',
     draw: (c) => [

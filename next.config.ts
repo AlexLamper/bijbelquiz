@@ -34,6 +34,19 @@ const nextConfig: NextConfig = {
       { source: '/terms-of-service', destination: '/voorwaarden', permanent: true },
       { source: '/admin', destination: '/beheer', permanent: true },
       { source: '/admin/:path*', destination: '/beheer/:path*', permanent: true },
+      // The book is Esther. Ten quizzes were published under the shorter
+      // spelling and their slugs went out into search results and shared
+      // links, so the old address has to keep resolving.
+      {
+        source: '/quiz/ester-bijbelquiz-deel-:part',
+        destination: '/quiz/esther-bijbelquiz-deel-:part',
+        permanent: true,
+      },
+      {
+        source: '/quiz/ester-bijbelquiz-deel-:part/:rest*',
+        destination: '/quiz/esther-bijbelquiz-deel-:part/:rest*',
+        permanent: true,
+      },
     ];
   },
   async headers() {

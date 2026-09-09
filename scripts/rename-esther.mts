@@ -4,28 +4,31 @@
  *
  * WHY THIS EXISTS
  *
- * Ten quizzes were written as "Ester bijbelquiz - Deel N" and describe
- * themselves as "Quiz over Ester 3, ...". The Dutch name of the book is
- * Esther - it is spelled that way in the questions themselves, in
- * `bible-reference.ts`, and in the description of every one of these quizzes
- * where it refers to the person. Only the book got the shorter spelling.
+ * Ten quizzes were written as "Ester bijbelquiz - Deel N", described
+ * themselves as "Quiz over Ester 3, ..." and were published under the slug
+ * `ester-bijbelquiz-deel-N`. The Dutch name of the book is Esther - it is
+ * spelled that way in the questions themselves, in `bible-reference.ts`, and
+ * in every one of these descriptions where it refers to the person. Only the
+ * book kept the shorter spelling.
  *
- * The JSON files in `docs/quizzes/ester/` are already corrected; this pushes
- * the same correction onto the documents that are actually rendered.
+ * Everything in the repository is corrected already: the source JSON, the
+ * cover manifest, the scene keys and the ten PNGs. This pushes the same
+ * correction onto the documents that are actually rendered.
  *
  * WHY NOT `import-quiz-json.mts --all`
  *
  * That would rewrite all 137 quizzes - every question, answer and reference -
  * to whatever the files say, and quietly undo anything edited through the
- * admin form since the last import. This touches two string fields on ten
+ * admin form since the last import. This touches three string fields on ten
  * documents and nothing else.
  *
- * WHAT IT LEAVES ALONE
+ * ABOUT THE SLUG
  *
- * The slug. `ester-bijbelquiz-deel-N` is a live URL, the key of a cover in
- * `docs/quiz-image-prompts/manifest.json`, and the name of ten PNGs on disk.
- * Renaming it is a redirect exercise, not a spelling fix, and it would break
- * every existing link to these quizzes.
+ * It changes too, because it is the address the reader sees. The old one keeps
+ * working: `next.config.ts` redirects `/quiz/ester-bijbelquiz-deel-:part`
+ * permanently to the new address, so shared links and search results still
+ * resolve. Nothing else keys on the slug - progress, attempts and multiplayer
+ * rooms all reference the quiz by `_id`.
  *
  * USAGE
  *   node --import tsx scripts/rename-esther.mts            # dry run
@@ -66,43 +69,83 @@ if (!uri) {
 }
 
 /** Whole word only, so "Ester" inside another word is never touched. */
-const ESTER = /\bEster\b/g;
+const ESTER_WORD = /\bEster\b/g;
+const ESTER_SLUG = /^ester-/;
 
 await mongoose.connect(uri);
-const quizzes = mongoose.connection.db!.collection('quizzes');
+const db = mongoose.connection.db!;
+console.log(`Database: ${db.databaseName}${apply ? '  (writing)' : '  (dry run)'}\n`);
+
+const quizzes = db.collection('quizzes');
 
 const docs = await quizzes
-  .find({ $or: [{ title: ESTER }, { description: ESTER }] })
-  .project({ _id: 1, slug: 1, title: 1, description: 1 })
+  .find({
+    $or: [
+      { title: ESTER_WORD },
+      { description: ESTER_WORD },
+      { slug: ESTER_SLUG },
+      { 'questions.text': ESTER_WORD },
+      { 'questions.explanation': ESTER_WORD },
+    ],
+  })
+  .project({ _id: 1, slug: 1, title: 1, description: 1, imageUrl: 1, questions: 1 })
   .toArray();
 
 let changed = 0;
 
 for (const doc of docs) {
-  const title = typeof doc.title === 'string' ? doc.title.replace(ESTER, 'Esther') : doc.title;
-  const description =
-    typeof doc.description === 'string' ? doc.description.replace(ESTER, 'Esther') : doc.description;
+  const next: Record<string, string> = {};
 
-  if (title === doc.title && description === doc.description) continue;
+  if (typeof doc.title === 'string' && ESTER_WORD.test(doc.title)) {
+    next.title = doc.title.replace(ESTER_WORD, 'Esther');
+  }
+  if (typeof doc.description === 'string' && ESTER_WORD.test(doc.description)) {
+    next.description = doc.description.replace(ESTER_WORD, 'Esther');
+  }
+  if (typeof doc.slug === 'string' && ESTER_SLUG.test(doc.slug)) {
+    next.slug = doc.slug.replace(ESTER_SLUG, 'esther-');
+  }
+  // A stored cover path points at a file that has been renamed on disk.
+  if (typeof doc.imageUrl === 'string' && doc.imageUrl.includes('/ester-')) {
+    next.imageUrl = doc.imageUrl.replace('/ester-', '/esther-');
+  }
 
-  console.log(`${doc.slug}`);
-  if (title !== doc.title) console.log(`  title:       ${doc.title}  ->  ${title}`);
-  if (description !== doc.description) console.log(`  description: ${description}`);
+  // The spelling is in the questions as well - the book is named in the wording
+  // of the question itself ("Hoe eindigt Ester 3?") and in some explanations.
+  // Addressed per path (`questions.4.text`), never by writing the array back:
+  // a whole-array `$set` would take every other field of every question with
+  // it, and one stale copy in memory would silently undo an admin edit.
+  const questions = Array.isArray(doc.questions) ? doc.questions : [];
+  questions.forEach((question, index) => {
+    for (const field of ['text', 'explanation'] as const) {
+      const value = (question as Record<string, unknown>)[field];
+      if (typeof value === 'string' && ESTER_WORD.test(value)) {
+        next[`questions.${index}.${field}`] = value.replace(ESTER_WORD, 'Esther');
+      }
+    }
+  });
+
+  if (Object.keys(next).length === 0) continue;
+
+  console.log(doc.slug);
+  for (const [field, value] of Object.entries(next)) {
+    console.log(`  ${field.padEnd(24)} ${value.slice(0, 90)}`);
+  }
 
   if (apply) {
-    // `$set` on the two named paths only. Replacing the document would drop
-    // the questions.
-    await quizzes.updateOne({ _id: doc._id }, { $set: { title, description } });
+    // `$set` on the named paths only. Replacing the document would drop the
+    // questions along with it.
+    await quizzes.updateOne({ _id: doc._id }, { $set: next });
   }
   changed += 1;
 }
 
 console.log(
   changed === 0
-    ? 'Nothing to rename.'
+    ? '\nNothing to rename.'
     : apply
-      ? `Renamed ${changed} quiz(zes).`
-      : `${changed} quiz(zes) would be renamed. Re-run with --apply.`,
+      ? `\nRenamed ${changed} quiz(zes).`
+      : `\n${changed} quiz(zes) would be renamed. Re-run with --apply.`,
 );
 
 await mongoose.disconnect();
