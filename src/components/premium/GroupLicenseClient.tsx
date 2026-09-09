@@ -78,6 +78,9 @@ export default function GroupLicenseClient({
     };
   }, [isLoggedIn]);
 
+  // The only surface in the product that still shows a price, so this is the
+  // only `paywall_shown` left. Everything else that used to raise one now
+  // gives the thing away.
   useEffect(() => {
     track('paywall_shown', { trigger: 'direct', surface: 'group_license' });
   }, []);
@@ -157,12 +160,12 @@ export default function GroupLicenseClient({
           Groepslicentie
         </div>
         <h1 className="font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">
-          Premium voor je hele groep
+          Voor wie een groep begeleidt
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          Een licentie voor {defaultSeats} mensen. De beheerder betaalt een keer per jaar, deelt de
-          groepscode, en iedereen die hem invult heeft Premium. Bedoeld voor gemeentes, jeugdgroepen,
-          scholen en verenigingen.
+          Spelen, uitleg lezen en samen spelen is voor iedereen gratis - daar heb je niets
+          voor nodig. Een groepslicentie is er voor de leiding: een code voor je hele groep,
+          {' '}{defaultSeats} plekken die je zelf beheert, en je houdt BijbelQuiz mee overeind.
         </p>
       </header>
 
@@ -179,7 +182,15 @@ export default function GroupLicenseClient({
                 <span className="pb-1 text-muted-foreground">/jaar</span>
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                {defaultSeats} plekken, dus minder dan een tientje per persoon per jaar.
+                {defaultSeats} plekken die je zelf toevoegt en verwijdert. Liever een factuur?
+                {' '}
+                <a
+                  className="underline underline-offset-2"
+                  href="mailto:info@bijbelquiz.com?subject=Groepslicentie%20-%20factuur"
+                >
+                  Mail ons
+                </a>{' '}
+                en we sturen er een.
               </p>
             </div>
 
@@ -211,10 +222,10 @@ export default function GroupLicenseClient({
 
           <ul className="mt-5 grid gap-2.5 border-t border-rule pt-5 sm:grid-cols-2">
             {[
-              `Premium voor ${defaultSeats} personen`,
-              'Onbeperkt spellen hosten, tot 20 spelers',
-              'Uitleg en bijbelverwijzing bij elke vraag',
-              'Een code die je gewoon voorleest in de zaal',
+              `${defaultSeats} plekken onder een code die je voorleest in de zaal`,
+              'Je ziet wie er meedoet en haalt mensen er zelf weer af',
+              'Een keer per jaar geregeld, met factuur als je die nodig hebt',
+              'Je houdt een gratis platform in de lucht voor iedereen',
             ].map((line) => (
               <li key={line} className="flex items-start gap-2.5 text-sm text-foreground">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />

@@ -8,7 +8,7 @@ import { redirect } from 'next/navigation';
 import { Eyebrow, InkButton } from '@/components/editorial';
 import { PopularQuizzesSection } from '@/components/landing/PopularQuizzesSection';
 import { MultiplayerHighlightSection } from '@/components/landing/MultiplayerHighlightSection';
-import { PremiumSection } from '@/components/landing/PremiumSection';
+import { BijbelStudieSection } from '@/components/landing/BijbelStudieSection';
 import { FeaturesSection } from '@/components/landing/FeaturesSection';
 import { CTASection } from '@/components/landing/CTASection';
 import { Footer } from '@/components/landing/Footer';
@@ -116,7 +116,7 @@ export default async function Home() {
 
       <PopularQuizzesSection quizzes={popular} isPremiumUser={isPremiumUser} />
       <MultiplayerHighlightSection />
-      <PremiumSection />
+      <BijbelStudieSection />
       <FeaturesSection />
       <CTASection />
       <Footer />

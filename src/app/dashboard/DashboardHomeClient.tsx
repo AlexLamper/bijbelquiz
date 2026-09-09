@@ -3,9 +3,8 @@
 import Link from 'next/link';
 import { ArrowRight, Play, Users } from 'lucide-react';
 
-import { trackEvent } from '@/components/GoogleAnalytics';
+import { BijbelStudieSection } from '@/components/landing/BijbelStudieSection';
 import SeasonCard from '@/components/seasons/SeasonCard';
-import PremiumNudge from '@/components/premium/PremiumNudge';
 import { QuizTile, type DashboardQuiz } from '@/components/editorial/QuizTile';
 import {
   ArrowLink,
@@ -357,10 +356,11 @@ export default function DashboardHomeClient({
         </section>
       </div>
 
-      {/* The Premium offer sits in the corner rather than in the page body,
-          where it used to compete with the reader's own progress for the same
-          column. Dismissable, and it stays dismissed. */}
-      {!isPremium && isLoggedIn && <PremiumNudge />}
+      {/* The Premium nudge used to sit in the corner here. It was shown for a
+          year and sold nothing; what replaces it is a link to the product
+          people actually read, at the bottom of the page rather than floating
+          over it. */}
+      <BijbelStudieSection surface="dashboard" />
     </div>
   );
 }

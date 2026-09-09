@@ -86,14 +86,14 @@ export default async function FunnelPage() {
             meta={`${report.hosts.reachedQuota} van ${report.hosts.startedOne} hosts haalden spel ${MULTIPLAYER_FREE_ROOM_QUOTA}`}
           />
           <Figure
-            label="Paywall-conversie"
-            value={`${report.paywall.conversionRate}%`}
-            meta={`${report.paywall.purchases} aankopen op ${report.paywall.shown} weergaven`}
+            label="Naar BijbelStudie"
+            value={`${report.handover.clicks}`}
+            meta={`${report.handover.perCompletion}% van ${report.activation.quizzesCompleted} afgeronde quizzen`}
           />
           <Figure
-            label="Niet-maandelijks"
-            value={`${report.plans.nonMonthlyShare}%`}
-            meta={`${report.plans.yearly} jaar, ${report.plans.lifetime} levenslang, ${report.plans.monthly} maand`}
+            label="Kaart weggeklikt"
+            value={`${report.handover.dismissals}`}
+            meta="post-quiz kaart gesloten zonder door te klikken"
           />
           <Figure
             label="Retentie dag 30"
@@ -101,6 +101,50 @@ export default async function FunnelPage() {
             meta={`gratis (${retention.free.cohort}) / premium (${retention.premium.cohort})`}
           />
         </div>
+
+        {/* Which placement actually earns the click */}
+        <section className="mt-12">
+          <h2 className="font-display text-[26px] font-normal tracking-[-0.02em] text-ink">
+            Doorstroom naar BijbelStudie
+          </h2>
+          <p className="mt-2 text-sm text-ink-muted">
+            Per plek waar de link staat. Een plek die na twee weken onderaan staat mag weg -
+            hij kost aandacht die de plekken erboven beter gebruiken.
+          </p>
+
+          <div className="mt-5 overflow-x-auto rounded-lg border border-rule bg-paper-raised">
+            <table className="w-full min-w-[420px] border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-rule-strong text-[10px] uppercase tracking-[0.16em] text-ink-muted">
+                  <th className="px-4 py-3 text-left font-medium">Plek</th>
+                  <th className="px-4 py-3 text-right font-medium">Kliks</th>
+                  <th className="px-4 py-3 text-right font-medium">Aandeel</th>
+                </tr>
+              </thead>
+              <tbody>
+                {report.handover.bySurface.length === 0 ? (
+                  <tr>
+                    <td colSpan={3} className="px-4 py-4 text-ink-muted">
+                      Nog geen kliks in dit venster.
+                    </td>
+                  </tr>
+                ) : (
+                  report.handover.bySurface.map((row) => (
+                    <tr key={row.surface} className="border-b border-rule last:border-b-0">
+                      <td className="px-4 py-3 font-mono text-xs text-ink">{row.surface}</td>
+                      <td className="px-4 py-3 text-right tabular-nums text-ink">{row.clicks}</td>
+                      <td className="px-4 py-3 text-right tabular-nums text-ink-muted">
+                        {report.handover.clicks > 0
+                          ? `${Math.round((row.clicks / report.handover.clicks) * 100)}%`
+                          : '-'}
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
+        </section>
 
         {/* Which trigger carries the revenue */}
         <section className="mt-12">

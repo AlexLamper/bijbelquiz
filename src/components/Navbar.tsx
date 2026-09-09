@@ -31,7 +31,7 @@ function getPageTitle(pathname: string): string {
   if (pathname.startsWith('/quiz/')) return 'Quiz';
   if (pathname.startsWith('/ranglijst')) return 'Ranglijst';
   if (pathname.startsWith('/samen-spelen')) return 'Samen spelen';
-  if (pathname.startsWith('/premium')) return 'Premium';
+  if (pathname.startsWith('/premium')) return 'Lidmaatschap';
   if (pathname.startsWith('/profiel')) return 'Profiel';
   if (pathname.startsWith('/instellingen')) return 'Instellingen';
   if (pathname.startsWith('/beheer')) return 'Beheer';
@@ -70,7 +70,7 @@ export default function Navbar({
   useEffect(() => {
     if (pathname !== '/') return;
 
-    const sectionIds = ['quizzen', 'premium', 'categorieen'];
+    const sectionIds = ['quizzen', 'categorieen'];
 
     const getActiveSection = () => {
       if (window.scrollY === 0) return 'home';
@@ -153,8 +153,8 @@ export default function Navbar({
     : [
         { href: '/', label: 'Home' },
         { href: '/#quizzen', label: 'Quizzen' },
-        { href: '/#premium', label: 'Premium' },
         { href: '/#categorieen', label: 'Categorieën' },
+        { href: '/samen-spelen', label: 'Samen spelen' },
       ];
 
   return (

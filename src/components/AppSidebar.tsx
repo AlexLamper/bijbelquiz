@@ -25,8 +25,6 @@ import {
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
-// The Premium offer lives in the dashboard corner card now. One standing
-// upsell is a nudge; two on the same screen is pressure.
 
 interface SidebarItem {
   href: string;
@@ -62,10 +60,10 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
     { href: '/quizzen', label: 'Quizzen', icon: Library },
     { href: '/ranglijst', label: 'Ranglijst', icon: Trophy },
     { href: '/samen-spelen', label: 'Samen spelen', icon: Users },
-    // Members manage their membership under Account instead - nothing to sell here.
-    ...(isPremium ? [] : [{ href: '/premium', label: 'Premium', icon: Crown }]),
   ];
 
+  // Nothing is sold to an individual any more, so there is no offer here. A
+  // member still needs a way to their own subscription, which is what this is.
   const accountItems: SidebarItem[] = session
     ? [
         { href: '/profiel', label: 'Profiel', icon: User },

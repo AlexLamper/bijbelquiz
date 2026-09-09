@@ -8,7 +8,7 @@ import GroupLicenseClient from '@/components/premium/GroupLicenseClient';
 export const metadata: Metadata = {
   title: 'Groepslicentie | BijbelQuiz voor gemeentes en scholen',
   description:
-    'Een licentie voor je hele jeugdgroep, gemeente of klas. De beheerder betaalt een keer per jaar en deelt een groepscode; iedereen die hem invult heeft Premium.',
+    'BijbelQuiz is gratis. Voor wie een jeugdgroep, gemeente of klas begeleidt is er een groepslicentie: een code voor je hele groep en plekken die je zelf beheert.',
   alternates: { canonical: '/groepslicentie' },
   openGraph: {
     title: 'BijbelQuiz Groepslicentie',

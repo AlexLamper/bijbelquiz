@@ -1,9 +1,5 @@
 import { z } from 'zod';
 import { normalizeAvatar } from '@/lib/avatar';
-import {
-  MULTIPLAYER_FREE_ROOM_QUOTA,
-  MULTIPLAYER_MONTHLY_FREE_ROOMS,
-} from '@/lib/premium-benefits';
 import type {
   MultiplayerApiErrorBody,
   MultiplayerCapability,
@@ -121,16 +117,12 @@ const capabilitySchema = z.object({
   hasUsedFreeRoom: z.boolean(),
   freeRoomsRemaining: z.number().nullable(),
   // Nullish-tolerant so a client deployed ahead of the API keeps parsing.
-  freeRoomsQuota: z
-    .number()
-    .nullish()
-    .transform((value) => value ?? MULTIPLAYER_FREE_ROOM_QUOTA),
+  // Hosting is no longer metered, so the API now sends `null` for both quotas
+  // and these are only still parsed for older responses in flight.
+  freeRoomsQuota: z.number().nullish().transform((value) => value ?? null),
   freeRoomsUsed: z.number().nullish().transform((value) => value ?? null),
   onMonthlyAllowance: z.boolean().nullish().transform((value) => value ?? false),
-  monthlyRoomsQuota: z
-    .number()
-    .nullish()
-    .transform((value) => value ?? MULTIPLAYER_MONTHLY_FREE_ROOMS),
+  monthlyRoomsQuota: z.number().nullish().transform((value) => value ?? null),
   maxPlayersFree: z.number(),
   maxPlayersPremium: z.number(),
   maxPlayersForUser: z.number(),

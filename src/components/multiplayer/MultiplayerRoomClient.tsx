@@ -18,9 +18,8 @@ import {
   INVITE_SOURCE_VALUE,
 } from '@/lib/multiplayer/invite';
 import { useMultiplayerRoomController } from '@/lib/multiplayer-web/useMultiplayerRoomController';
-import { getCapability } from '@/lib/multiplayer-web/client';
-import { MultiplayerTokenStore } from '@/lib/multiplayer-web/token-store';
-import { formatFreeGamesRemaining } from '@/lib/premium-benefits';
+import StudieLink from '@/components/StudieLink';
+import { passageFromBookName } from '@/lib/ecosystem-links';
 import type {
   RoomCurrentQuestionSnapshot,
   RoomPlayerSnapshot,
@@ -463,37 +462,6 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
   const [savedGroupName, setSavedGroupName] = useState<string | null>(null);
   const [groupPromptDismissed, setGroupPromptDismissed] = useState(false);
 
-  /**
-   * Starting the game is what actually spends a free game, so the host has to
-   * be told *here* rather than only on the entry page. Premium hosts (and
-   * non-hosts) get `null` and no line is rendered.
-   */
-  const [freeGamesLeft, setFreeGamesLeft] = useState<number | null>(null);
-
-  useEffect(() => {
-    if (!isHost || view !== 'lobby') return;
-
-    let cancelled = false;
-    const tokens = new MultiplayerTokenStore();
-
-    void (async () => {
-      try {
-        const capability = await tokens.run((token) => getCapability({ token }));
-        // The quota endpoint still counts down for Premium hosts; they must not
-        // be shown a limit they do not have.
-        if (!cancelled) {
-          setFreeGamesLeft(capability.isPremium ? null : capability.freeRoomsRemaining);
-        }
-      } catch {
-        // Purely informational - the start button works either way.
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [isHost, view]);
-
   const hasLiveDeadline =
     (room?.status === 'in_progress' && room.currentQuestion?.deadlineAtMs != null) ||
     (room?.status === 'question_result' && room.resultPhaseEndsAtMs != null);
@@ -823,12 +791,6 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                       <Button onClick={() => void start()} disabled={!canStart || isStarting}>
                         {isStarting ? 'Spel wordt gestart...' : 'Start spel'}
                       </Button>
-                      {freeGamesLeft !== null && (
-                        <p className="text-xs text-muted-foreground">
-                          Starten kost één gratis spel. Je hebt nu{' '}
-                          {formatFreeGamesRemaining(freeGamesLeft)}.
-                        </p>
-                      )}
                       {!canStart && !isStarting && room.players.length >= 2 && (
                         <p className="text-xs text-muted-foreground">
                           Even wachten - spelerlijst wordt bijgewerkt...
@@ -1056,11 +1018,27 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                   </div>
                 )}
 
+                {/* The one moment this product speaks to five to twenty people
+                    at once, so the chapter they just played about is offered to
+                    all of them, not only to the host. */}
+                <div className="rounded-lg border border-rule bg-paper-sunken p-4">
+                  <p className="text-sm text-ink-muted">
+                    Verder met dit gedeelte? Lees het op BijbelStudie, met uitleg erbij.
+                  </p>
+                  <div className="mt-3">
+                    <StudieLink
+                      passage={passageFromBookName(room.passage?.book, room.passage?.chapter)}
+                      surface="multiplayer_end"
+                      quizSlug={room.quizTitle}
+                    />
+                  </div>
+                </div>
+
                 <div className="flex flex-wrap gap-3">
                   <Button variant="outline" onClick={() => void handleLeaveAndExit()} disabled={isLeaving}>
                     {isLeaving ? 'Spel verlaten...' : 'Spel verlaten'}
                   </Button>
-                  <Button asChild>
+                  <Button asChild variant="outline">
                     <Link href="/samen-spelen">Nieuw spel</Link>
                   </Button>
                 </div>

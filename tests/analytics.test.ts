@@ -34,13 +34,14 @@ test('the event list the Flutter app mirrors has not shifted', () => {
   // Asserted as a prefix rather than the whole list, because the usage events
   // below are web-only and the app has no reason to learn about them. Adding
   // one must not fail this test; touching a funnel name still does.
-  assert.deepEqual(ANALYTICS_EVENTS.slice(0, 10), [
+  assert.deepEqual(ANALYTICS_EVENTS.slice(0, 11), [
     'quiz_completed',
     'room_started',
     'room_joined',
     'room_invite_shared',
     'paywall_shown',
     'paywall_dismissed',
+    'checkout_started',
     'purchase_completed',
     'trial_started',
     'trial_converted',
@@ -90,6 +91,7 @@ test('paywall triggers are a closed set', () => {
       'host_player_cap',
       'explanation_locked',
       'premium_quiz_locked',
+      'review_locked',
       'direct',
     ],
   );

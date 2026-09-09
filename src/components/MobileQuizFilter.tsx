@@ -16,16 +16,12 @@ interface MobileQuizFilterProps {
   categories: CategoryShape[];
   selectedCategory: string;
   onCategoryChange: (value: string) => void;
-  showPremiumOnly: boolean;
-  onPremiumToggle: (value: boolean) => void;
 }
 
 export function MobileQuizFilter({
   categories,
   selectedCategory,
   onCategoryChange,
-  showPremiumOnly,
-  onPremiumToggle,
 }: MobileQuizFilterProps) {
   const [openItem, setOpenItem] = React.useState<string>('');
 
@@ -82,20 +78,6 @@ export function MobileQuizFilter({
                   {category.title}
                 </Button>
               ))}
-
-              <Button
-                type="button"
-                variant="outline"
-                onClick={() => onPremiumToggle(!showPremiumOnly)}
-                className={cn(
-                  'mt-1 h-9 w-full justify-start rounded-md border-rule px-3 text-sm',
-                  showPremiumOnly
-                    ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
-                    : 'bg-paper-raised text-ink-soft hover:bg-paper-sunken hover:text-ink     '
-                )}
-              >
-                Alleen Premium
-              </Button>
             </div>
           </AccordionContent>
         </AccordionItem>

@@ -14,8 +14,8 @@ const columns = [
     links: [
       { href: '/inloggen', label: 'Inloggen' },
       { href: '/registreren', label: 'Registreren' },
-      { href: '/premium', label: 'Premium' },
       { href: '/dashboard', label: 'Dashboard' },
+      { href: '/groepslicentie', label: 'Voor groepen en scholen' },
     ],
   },
   {

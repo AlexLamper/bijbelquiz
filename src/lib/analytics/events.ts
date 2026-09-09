@@ -87,6 +87,22 @@ export const ANALYTICS_EVENTS = [
   'quiz_started',
   /** A started quiz was left before the last question. */
   'quiz_abandoned',
+  /**
+   * A reader followed a link out to BijbelStudie.
+   *
+   * The one number this product is now steered on. `surface` says which
+   * placement earned it (see `STUDIE_LINK_SURFACES`), which is what decides
+   * whether a placement is worth keeping; `refBook` and `refChapter` say which
+   * passage sent them, which is what decides what to write more quizzes about.
+   */
+  'bijbelstudie_click',
+  /**
+   * The post-quiz card was closed without following it. Paired with
+   * `bijbelstudie_click{surface:'interstitial'}` this is the only honest read
+   * on whether the card is welcome or merely tolerated - which is the question
+   * that decides whether it stays.
+   */
+  'bijbelstudie_prompt_dismissed',
 ] as const;
 
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];

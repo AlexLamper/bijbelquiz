@@ -54,6 +54,21 @@ export interface FunnelReport {
     quizzesCompleted: number;
     firstQuizzesCompleted: number;
   };
+  /**
+   * Clicks through to BijbelStudie, by placement.
+   *
+   * The number this product is now run on. `perCompletion` is the one that
+   * says whether the handover works at all: paywall conversion could only ever
+   * be judged against purchases, and there were none, but a quiz that is
+   * finished and never followed anywhere is measurable from day one.
+   */
+  handover: {
+    clicks: number;
+    dismissals: number;
+    /** Clicks per finished quiz, as a percentage. */
+    perCompletion: number;
+    bySurface: Array<{ surface: string; clicks: number }>;
+  };
 }
 
 function rate(numerator: number, denominator: number): number {
@@ -93,6 +108,8 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
     trialsConverted,
     quizzesCompleted,
     firstQuizzesCompleted,
+    studieClicksBySurface,
+    studiePromptDismissals,
   ] = await Promise.all([
     User.countDocuments({ multiplayerGamesHosted: { $gte: 1 } }),
     User.countDocuments({ multiplayerGamesHosted: { $gte: MULTIPLAYER_FREE_ROOM_QUOTA } }),
@@ -106,6 +123,11 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
       name: 'quiz_completed',
       createdAt: { $gte: since },
       'props.isFirst': true,
+    }),
+    countByProp('bijbelstudie_click', since, 'surface'),
+    AnalyticsEvent.countDocuments({
+      name: 'bijbelstudie_prompt_dismissed',
+      createdAt: { $gte: since },
     }),
   ]);
 
@@ -125,6 +147,8 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
       };
     })
     .sort((a, b) => b.purchases - a.purchases || b.shown - a.shown);
+
+  const studieClicks = [...studieClicksBySurface.values()].reduce((sum, n) => sum + n, 0);
 
   const monthly = purchasesByPlan.get('monthly') ?? 0;
   const yearly = purchasesByPlan.get('yearly') ?? 0;
@@ -158,6 +182,14 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
     activation: {
       quizzesCompleted,
       firstQuizzesCompleted,
+    },
+    handover: {
+      clicks: studieClicks,
+      dismissals: studiePromptDismissals,
+      perCompletion: rate(studieClicks, quizzesCompleted),
+      bySurface: [...studieClicksBySurface.entries()]
+        .map(([surface, clicks]) => ({ surface, clicks }))
+        .sort((a, b) => b.clicks - a.clicks),
     },
   };
 }

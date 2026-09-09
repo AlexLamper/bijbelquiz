@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { getServerSession } from 'next-auth';
 import type { Metadata, ResolvingMetadata } from 'next'; // Added metadata types
 import { authOptions } from '@/lib/auth';
@@ -6,7 +6,6 @@ import { connectDB, Quiz, ICategory, UserProgress } from '@/database';
 import QuizExperience from '@/components/quiz/QuizExperience';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { normalizeUserSettings } from '@/lib/user-settings';
-import { premiumPaywallHref } from '@/lib/premium-benefits';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -85,7 +84,6 @@ export default async function QuizPage({ params }: PageProps) {
   // result screen, where there is a score to keep.
   const session = await getServerSession(authOptions);
   const isAdmin = session?.user.role === 'admin';
-  const isPremiumUser = Boolean(session?.user.isPremium);
 
   // Status check for non-admins
   // Allow if status is approved OR if status is missing (legacy)
@@ -93,12 +91,11 @@ export default async function QuizPage({ params }: PageProps) {
     notFound();
   }
 
-  if (quiz.isPremium && !isPremiumUser) {
-    // Named trigger + way back: the paywall opens on "ontgrendel deze quiz"
-    // and the funnel can attribute the visit, instead of logging it as a
-    // direct hit on a generic page.
-    redirect(premiumPaywallHref('premium_quiz_locked', `/quiz/${id}`));
-  }
+  // `isPremium` on the quiz is no longer a gate. Two of ninety-five quizzes
+  // ever carried it, nobody bought their way past it, and the redirect it
+  // caused sent the only readers who wanted those quizzes to a pricing page
+  // instead. The field stays on the model so old documents keep loading; it
+  // decides nothing.
 
   // Serialize for Client Component
   const serializableQuiz = JSON.parse(JSON.stringify(quiz));
@@ -119,17 +116,9 @@ export default async function QuizPage({ params }: PageProps) {
       ])
     : [null, 0];
 
-  // Explanations are Premium. They leave the page entirely for a free
-  // player - no teaser, no preview - and the one "onthulling" a free player
-  // may spend per quiz is fetched on its own. The Bible reference stays.
-  if (!isPremiumUser) {
-    serializableQuiz.questions = serializableQuiz.questions.map(
-      (question: { explanation?: string; bibleReference?: string; [key: string]: unknown }) => ({
-        ...question,
-        explanation: undefined,
-      })
-    );
-  }
+  // Explanations ship with the quiz, for everybody. They are the reason a quiz
+  // teaches anything, they are the text that makes this page worth indexing,
+  // and they are where the link to the chapter on BijbelStudie lives.
 
   // JSON-LD for Quiz
   const jsonLd = {
@@ -155,8 +144,7 @@ export default async function QuizPage({ params }: PageProps) {
   };
 
   // Which chapter this quiz is about, derived from the references its questions
-  // carry. Resolved before the premium stripping above touches anything, since
-  // `bibleReference` stays visible for everybody.
+  // carry.
   const passage = resolveQuizPassage(serializableQuiz.questions || []);
 
   const lastResult = lastProgressDoc

@@ -2,7 +2,7 @@
 
 import { Fragment, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, Search, SlidersHorizontal } from 'lucide-react';
+import { ChevronDown, Search } from 'lucide-react';
 
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -95,7 +95,6 @@ export default function QuizzesClient({
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategoryId);
-  const [showPremiumOnly, setShowPremiumOnly] = useState(false);
   const [selectedSort, setSelectedSort] = useState<SortOption>('nieuwste');
   const [selectedDifficulty, setSelectedDifficulty] = useState<PreferredDifficulty>(
     settings.preferredDifficulty
@@ -116,12 +115,7 @@ export default function QuizzesClient({
     setSelectedDifficulty(settings.preferredDifficulty);
   }
 
-  const normalizedQuizzes = useMemo(() => {
-    return quizzes.map((quiz) => ({
-      ...quiz,
-      isLocked: quiz.isPremium && !userIsPremium,
-    }));
-  }, [quizzes, userIsPremium]);
+  const normalizedQuizzes = quizzes;
 
   const filteredQuizzes = useMemo(() => {
     // Readers type "danielsboek" or "Daniel" for the same quiz, and Dutch
@@ -146,13 +140,12 @@ export default function QuizzesClient({
         selectedCategory === 'all' ||
         (categoryId && categoryId.toString() === selectedCategory);
 
-      const matchesPremium = !showPremiumOnly || quiz.isPremium;
 
       const matchesDifficulty = matchesPreferredDifficulty(selectedDifficulty, quiz.difficulty);
 
-      return matchesSearch && matchesCategory && matchesPremium && matchesDifficulty;
+      return matchesSearch && matchesCategory && matchesDifficulty;
     });
-  }, [normalizedQuizzes, searchQuery, selectedCategory, showPremiumOnly, selectedDifficulty]);
+  }, [normalizedQuizzes, searchQuery, selectedCategory, selectedDifficulty]);
 
   /**
    * "Aanbevolen" keeps the smart default: quizzes you have not played come
@@ -219,7 +212,6 @@ export default function QuizzesClient({
   const filterSignature = [
     searchQuery,
     selectedCategory,
-    showPremiumOnly,
     selectedDifficulty,
     selectedSort,
   ].join('|');
@@ -297,23 +289,7 @@ export default function QuizzesClient({
               categories={categories}
               selectedCategory={selectedCategory}
               onCategoryChange={setSelectedCategory}
-              showPremiumOnly={showPremiumOnly}
-              onPremiumToggle={setShowPremiumOnly}
             />
-
-            <Button
-              type="button"
-              variant="outline"
-              onClick={() => setShowPremiumOnly((value) => !value)}
-              className={`hidden h-10 rounded-md px-4 md:inline-flex ${
-                showPremiumOnly
-                  ? 'border-transparent bg-ink text-ink-inverted  hover:bg-ink-soft  dark:text-ink-inverted '
-                  : 'border-rule bg-paper-raised text-ink hover:bg-paper-sunken    '
-              }`}
-            >
-              <SlidersHorizontal className="mr-2 h-4 w-4" />
-              Premium
-            </Button>
 
             {canCreateQuiz && (
               <Button asChild className="hidden h-10 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft md:inline-flex">
@@ -426,7 +402,6 @@ export default function QuizzesClient({
                   onClick={() => {
                     setSearchQuery('');
                     setSelectedCategory('all');
-                    setShowPremiumOnly(false);
                     setSelectedDifficulty('all');
                     setSelectedSort('nieuwste');
                   }}

@@ -78,10 +78,10 @@ function categoryLabel(category: DashboardQuiz['categoryId']): string {
  */
 export function QuizTile({
   quiz,
-  isPremiumUser,
   className,
 }: {
   quiz: DashboardQuiz;
+  /** Accepted and ignored: no quiz in the library is behind a licence. */
   isPremiumUser?: boolean;
   className?: string;
 }) {
@@ -91,8 +91,10 @@ export function QuizTile({
   const [failedSrc, setFailedSrc] = useState<string | null>(null);
   const src = failedSrc === resolved ? fallback : resolved;
 
-  const isLocked =
-    typeof quiz.isLocked === 'boolean' ? quiz.isLocked : quiz.isPremium && isPremiumUser === false;
+  // Nothing in the library is locked any more. `isLocked` survives as a prop
+  // so a future genuinely-unavailable quiz has a way to say so, but no caller
+  // sets it and `isPremium` no longer implies it.
+  const isLocked = quiz.isLocked === true;
   const questionCount = quiz.questionCount ?? quiz.questions?.length ?? 0;
   const played = (quiz.progress?.attempts ?? 0) > 0;
 
@@ -124,12 +126,6 @@ export function QuizTile({
           )}
           onError={() => setFailedSrc(resolved)}
         />
-
-        {quiz.isPremium && (
-          <span className="absolute left-3 top-3 inline-flex items-center rounded-sm bg-paper-raised/95 px-2 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-lapis backdrop-blur-sm">
-            Premium
-          </span>
-        )}
 
         {/* A finished quiz says so at full strength, with the score. Somebody
             scanning a grid should never have to open a quiz to find out they

@@ -3,14 +3,12 @@ import { getServerSession } from 'next-auth';
 import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
-import { connectDB, Quiz, User, UserProgress } from '@/database';
-import { getPremiumSnapshot } from '@/lib/premium-state';
-import { premiumPaywallHref } from '@/lib/premium-benefits';
+import { connectDB, Quiz, UserProgress } from '@/database';
 import QuizReviewClient from '@/components/quiz/QuizReviewClient';
 import type { QuizReviewQuestion } from '@/lib/quiz-review';
 
 export const metadata: Metadata = {
-  title: 'Premium Quiz Overzicht - BijbelQuiz',
+  title: 'Quizoverzicht - BijbelQuiz',
   robots: {
     index: false,
     follow: false,
@@ -40,25 +38,12 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
 
   await connectDB();
 
-  const user = await User.findById(session.user.id)
-    .select('isPremium premiumStripe premiumStore storePremiumExpiresAt hasLifetimePremium')
-    .lean();
-
-  if (!user) {
-    notFound();
-  }
-
-  const premium = getPremiumSnapshot(user);
-  const hasAccess = premium.isPremium || Boolean((user as any).hasLifetimePremium);
-
-  if (!hasAccess) {
-    // The review is the one wall a solo player hits right after investing in
-    // a quiz, so the paywall names it and brings them back to this attempt.
-    redirect(
-      premiumPaywallHref('review_locked', `/quiz/${id}/beoordeling?attempt=${attemptId}`),
-    );
-  }
-
+  // The review used to be the wall: you had just spent five minutes, knew your
+  // score, and had to pay to find out which four you got wrong. Nobody paid,
+  // and "waarom had ik dit fout" is the exact question that makes somebody want
+  // to read the chapter - so it is now the strongest handover this product has
+  // rather than its last paywall. The attempt still belongs to one account,
+  // which is why signing in is still required to open somebody's own history.
   const [quiz, attempt] = await Promise.all([
     id.match(/^[0-9a-fA-F]{24}$/)
       ? Quiz.findById(id).select('_id slug title questions status').lean()

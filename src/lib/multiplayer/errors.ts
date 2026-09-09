@@ -11,7 +11,9 @@ export type MultiplayerErrorCode =
   | 'ANSWER_ALREADY_SUBMITTED'
   | 'GAME_NOT_IN_PROGRESS'
   | 'VALIDATION_ERROR'
+  /** Kept for older clients that still branch on it; nothing raises it now. */
   | 'PREMIUM_REQUIRED'
+  | 'RATE_LIMITED'
   | 'UNAUTHORIZED'
   | 'QUIZ_NOT_FOUND'
   | 'CONCURRENCY_CONFLICT'

@@ -24,26 +24,30 @@ export interface MultiplayerOkResponse {
   ok: true;
 }
 
-/** Body of `GET /api/multiplayer/rooms` - what this user may do. */
+/**
+ * Body of `GET /api/multiplayer/rooms` - what this user may do.
+ *
+ * Hosting is no longer metered, so most of this is now constant. The fields
+ * stay because published app builds parse them: an installed app that suddenly
+ * reads `undefined` where it expected a number renders worse than one that
+ * reads the "unlimited" value it already knows how to handle.
+ */
 export interface MultiplayerCapability {
   canCreateRoom: boolean;
+  /** Whether the account holds a licence. Reported, never enforced. */
   isPremium: boolean;
-  /** Legacy alias for "no free games left"; prefer `freeRoomsRemaining`. */
+  /** Legacy field; always false. */
   hasUsedFreeRoom: boolean;
-  /** Free games left, or `null` for Premium (unlimited). */
+  /** Always `null`, which every client already reads as "unlimited". */
   freeRoomsRemaining: number | null;
-  /** Total free games a non-premium account gets. */
-  freeRoomsQuota: number;
-  /** Free games already spent, or `null` for Premium. */
+  /** Always `null`: there is no quota. */
+  freeRoomsQuota: number | null;
+  /** Games hosted so far. Kept because it is a genuine statistic. */
   freeRoomsUsed: number | null;
-  /**
-   * True once the one-off discovery pack is gone and the account is running on
-   * the monthly allowance. `freeRoomsRemaining` then counts this month, not
-   * the lifetime pack, so the copy has to change with it.
-   */
+  /** Legacy field; always false. */
   onMonthlyAllowance: boolean;
-  /** Free games a non-premium account gets back each calendar month. */
-  monthlyRoomsQuota: number;
+  /** Always `null`: there is no monthly allowance. */
+  monthlyRoomsQuota: number | null;
   maxPlayersFree: number;
   maxPlayersPremium: number;
   maxPlayersForUser: number;

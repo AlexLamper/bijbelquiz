@@ -1,74 +1,41 @@
 /**
- * Single source of truth for Premium messaging and multiplayer free/premium
- * limits. The copy reflects the trigger-matrix in `premium_revenue_strategy`:
- * multiplayer-led outcomes first, learning depth second, "no ads" only when
- * we actually ship ads (we currently don't, so it's omitted).
+ * What is left of the paid product, and the numbers the pricing copy quotes.
+ *
+ * Multiplayer used to be the paywall: four players free, twenty paid, five
+ * hosted games ever and then one a month. In a year that produced three hosts,
+ * four games and no sales, while capping the only surface where BijbelQuiz
+ * reaches more than one person at a time. Hosting is now free and uncapped, and
+ * what remains for sale is the group licence, which is bought by an
+ * organisation rather than by a player who hit a wall.
  */
 
-/** Maximum players a free user may host in a single multiplayer room. */
-export const MULTIPLAYER_FREE_MAX_PLAYERS = 4;
-
-/** Maximum players a Premium host may invite. Mirrors the service-level cap. */
-export const MULTIPLAYER_PREMIUM_MAX_PLAYERS = 20;
+/**
+ * Players in one room. A capacity limit, not a price tier: the service holds a
+ * room's state in memory and broadcasts every answer to every participant.
+ */
+export const MULTIPLAYER_MAX_PLAYERS = 20;
 
 /**
- * Free users may host this many games in total, ever. The point of the quota
- * is discovery, not a teaser: a host needs a few real games before they know
- * whether "samen spelen" is worth paying for. A credit is only spent when a
- * game actually starts, so creating a room and walking away costs nothing.
+ * Games hosted before an account counts as "kept hosting" in the funnel report.
+ *
+ * This was the free allowance; it is now only a reporting milestone, so the
+ * host funnel keeps comparing against the same number it always did and the
+ * historical rows stay meaningful.
  */
 export const MULTIPLAYER_FREE_ROOM_QUOTA = 5;
 
 /**
- * After the discovery pack above is spent, a free host gets this many games
- * back at the start of every calendar month.
+ * What an existing member still has.
  *
- * A permanent dead end loses the account: a host who cannot host stops opening
- * the app at all. A monthly refill instead produces a recurring decision point
- * - one evening a month where they either upgrade or wait - which over a year
- * is worth considerably more than one hard stop.
- */
-export const MULTIPLAYER_MONTHLY_FREE_ROOMS = 1;
-
-/** "3 van de 5 gratis spellen over" - the counter shown on every host surface. */
-export function formatFreeGamesRemaining(remaining: number): string {
-  const safe = Math.max(0, remaining);
-  return `${safe} van de ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen over`;
-}
-
-/**
- * Counter for a host who is past the discovery pack and now on the monthly
- * allowance. Says something different on purpose: "1 van de 5 over" would
- * misdescribe an allowance that comes back next month.
- */
-export function formatMonthlyFreeGames(remaining: number): string {
-  const safe = Math.max(0, remaining);
-  if (safe === 0) return 'Je maandspel is gebruikt';
-  return safe === 1
-    ? 'Nog 1 gratis spel deze maand'
-    : `Nog ${safe} gratis spellen deze maand`;
-}
-
-/** Single-sentence outcome promise used at the top of every paywall surface. */
-export const PREMIUM_HERO_OUTCOME =
-  'Speel onbeperkt samen met familie en vrienden, en leer dieper bij elke vraag.';
-
-/**
- * Three trigger-aligned bullets used on Premium cards, paywalls, and
- * marketing copy. Order matters: multiplayer first because that is where
- * the strongest paying intent lives.
+ * Only shown to somebody who already pays - there is no offer page any more -
+ * so this describes the licence rather than selling it. Everything the old
+ * bullets promised (unlimited hosting, explanations, the premium collection) is
+ * now free for everyone, which is exactly what this says.
  */
 export const PREMIUM_TRIGGER_BULLETS: ReadonlyArray<string> = [
-  `Onbeperkt rooms hosten en tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers samen spelen`,
-  'Uitleg en bijbelverwijzing bij elke vraag, ook na de game',
-  'Voortgangsinzichten per boek, streakbescherming en alle premium quizzen',
-];
-
-/** Compact list used where space is tight (sidebar, small banners). */
-export const PREMIUM_COMPACT_BULLETS: ReadonlyArray<string> = [
-  'Onbeperkt samen spelen',
-  'Diepere uitleg bij elke vraag',
-  'Alle premium quizzen en inzichten',
+  'Alle quizzen, uitleg en bijbelverwijzingen - inmiddels gratis voor iedereen',
+  `Samen spelen met groepen tot ${MULTIPLAYER_MAX_PLAYERS} spelers, zonder limiet op het aantal spellen`,
+  'Je licentie loopt gewoon door; opzeggen kan op elk moment via Instellingen',
 ];
 
 /**

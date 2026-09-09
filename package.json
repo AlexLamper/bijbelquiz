@@ -15,7 +15,6 @@
     "test:mobile-sync": "node scripts/e2e-mobile-sync.mjs",
     "test:multiplayer": "node scripts/e2e-multiplayer.mjs",
     "test:multiplayer:cross": "node scripts/e2e-multiplayer-cross-instance.mjs",
-    "test:multiplayer:quota": "node scripts/e2e-multiplayer-quota.mjs",
     "test:group-license": "node --import tsx scripts/e2e-group-license.mts",
     "quiz:validate": "node --import tsx scripts/validate-quiz-json.ts",
     "quiz:import": "node --import tsx scripts/import-quiz-json.mts",

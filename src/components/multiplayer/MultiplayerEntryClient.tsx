@@ -1,18 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import {
-  ArrowRight,
-  ChevronDown,
-  Crown,
-  Gamepad2,
-  Lock,
-  Share2,
-  Trophy,
-  Users,
-} from 'lucide-react';
+import { ArrowRight, ChevronDown, Share2, Trophy, Users } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -23,29 +13,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import {
-  createRoom,
-  getActiveRoom,
-  getCapability,
-  joinRoom,
-  MultiplayerClientHttpError,
-} from '@/lib/multiplayer-web/client';
+import { createRoom, getActiveRoom, joinRoom } from '@/lib/multiplayer-web/client';
 import { MultiplayerTokenStore } from '@/lib/multiplayer-web/token-store';
 import { toUserMessage } from '@/lib/multiplayer-web/errors';
 import { trackEvent } from '@/components/GoogleAnalytics';
-import MultiplayerPremiumPaywall from '@/components/multiplayer/MultiplayerPremiumPaywall';
 import QuizPickerField, {
   type PickerCategory,
   type PickerQuiz,
 } from '@/components/multiplayer/QuizPickerField';
-import {
-  formatFreeGamesRemaining,
-  formatMonthlyFreeGames,
-  MULTIPLAYER_FREE_MAX_PLAYERS,
-  MULTIPLAYER_FREE_ROOM_QUOTA,
-  MULTIPLAYER_PREMIUM_MAX_PLAYERS,
-  premiumPaywallHref,
-} from '@/lib/premium-benefits';
+import { MULTIPLAYER_MAX_PLAYERS } from '@/lib/premium-benefits';
 import { QUESTION_TIMER_CHOICES } from '@/lib/user-settings';
 import { cn } from '@/lib/utils';
 
@@ -55,14 +31,13 @@ interface MultiplayerEntryClientProps {
   quizzes: MultiplayerQuizOption[];
   /** Categories the picker can filter on, in display order. */
   categories: PickerCategory[];
+  /** Whether this account holds a licence. Reported, never enforced. */
   isPremiumUser: boolean;
-  /** Free games left to host, or `null` for Premium (unlimited). */
-  freeGamesRemaining: number | null;
-  /** Hard upper bound for the player picker for the current user. */
+  /** Room capacity. The same number for everybody. */
   maxPlayersForUser: number;
 }
 
-const PLAYER_OPTIONS = [2, 3, 4, 6, 8, 10, 12, MULTIPLAYER_PREMIUM_MAX_PLAYERS];
+const PLAYER_OPTIONS = [2, 3, 4, 6, 8, 10, 12, MULTIPLAYER_MAX_PLAYERS];
 
 function normalizeRoomCode(code: string): string {
   return code.trim().toUpperCase();
@@ -78,7 +53,6 @@ export default function MultiplayerEntryClient({
   quizzes,
   categories,
   isPremiumUser,
-  freeGamesRemaining,
   maxPlayersForUser,
 }: MultiplayerEntryClientProps) {
   const router = useRouter();
@@ -88,24 +62,6 @@ export default function MultiplayerEntryClient({
   if (!tokensRef.current) {
     tokensRef.current = new MultiplayerTokenStore();
   }
-  /**
-   * The server-rendered props are only the *initial* truth: the user may have
-   * upgraded, or spent a free game, in another tab or on mobile since this
-   * page was rendered. We re-check on mount and after a rejected create, so
-   * the counter is never wrong in either direction.
-   */
-  const [quota, setQuota] = useState({
-    isPremium: isPremiumUser,
-    freeGamesRemaining,
-    // The server-rendered props predate the monthly allowance, so this starts
-    // false and is corrected by the capability call on mount.
-    onMonthlyAllowance: false,
-  });
-
-  const gamesLeft = quota.isPremium ? null : Math.max(0, quota.freeGamesRemaining ?? 0);
-  const outOfFreeGames = !quota.isPremium && gamesLeft === 0;
-  const canCreateRoom = quota.isPremium || !outOfFreeGames;
-
   const [selectedQuizId, setSelectedQuizId] = useState(quizzes[0]?.id ?? '');
   const [maxPlayers, setMaxPlayers] = useState<string>('4');
   const [readChapterFirst, setReadChapterFirst] = useState(false);
@@ -120,26 +76,9 @@ export default function MultiplayerEntryClient({
   );
 
   const selectedPlayersCount = Number(maxPlayers);
-  const playerLimitTriggered =
-    !quota.isPremium && selectedPlayersCount > MULTIPLAYER_FREE_MAX_PLAYERS;
 
-  useEffect(() => {
-    if (outOfFreeGames) {
-      trackEvent('multiplayer_paywall_shown', { placement: 'free_quota_used' });
-    }
-  }, [outOfFreeGames]);
-
-  useEffect(() => {
-    if (playerLimitTriggered) {
-      trackEvent('multiplayer_paywall_shown', {
-        placement: 'player_limit',
-        requested_players: selectedPlayersCount,
-      });
-    }
-  }, [playerLimitTriggered, selectedPlayersCount]);
-
-  // On mount: pick up the room this user is still in (so they can jump back
-  // into it) and re-confirm their hosting quota against the server.
+  // On mount: pick up the room this user is still in, so they can jump back
+  // into it.
   useEffect(() => {
     let cancelled = false;
 
@@ -154,64 +93,16 @@ export default function MultiplayerEntryClient({
       }
     })();
 
-    void (async () => {
-      try {
-        const capability = await tokensRef.current!.run((token) => getCapability({ token }));
-        if (!cancelled) {
-          setQuota({
-            isPremium: capability.isPremium,
-            freeGamesRemaining: capability.freeRoomsRemaining,
-            onMonthlyAllowance: capability.onMonthlyAllowance,
-          });
-        }
-      } catch {
-        // Fall back to the server-rendered props.
-      }
-    })();
-
     return () => {
       cancelled = true;
     };
   }, []);
 
-  async function refreshQuota() {
-    try {
-      const capability = await tokensRef.current!.run((token) => getCapability({ token }));
-      setQuota({
-        isPremium: capability.isPremium,
-        freeGamesRemaining: capability.freeRoomsRemaining,
-        onMonthlyAllowance: capability.onMonthlyAllowance,
-      });
-    } catch {
-      // Ignore - the error message already explains the block.
-    }
-  }
-
   async function handleCreateRoom() {
     trackEvent('multiplayer_room_create_clicked', {
-      is_premium: quota.isPremium,
+      is_premium: isPremiumUser,
       requested_players: selectedPlayersCount,
     });
-
-    if (!canCreateRoom) {
-      setErrorMessage(
-        'Je hebt je gratis spellen gebruikt. Volgende maand krijg je er weer een. ' +
-          'Word Premium om nu onbeperkt spellen te hosten.',
-      );
-      trackEvent('multiplayer_room_create_blocked', { reason: 'free_quota_used' });
-      return;
-    }
-
-    if (playerLimitTriggered) {
-      setErrorMessage(
-        `Met een gratis account speel je tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers per spel. Upgrade naar Premium voor spellen tot ${MULTIPLAYER_PREMIUM_MAX_PLAYERS} spelers.`,
-      );
-      trackEvent('multiplayer_room_create_blocked', {
-        reason: 'player_limit',
-        requested_players: selectedPlayersCount,
-      });
-      return;
-    }
 
     if (!selectedQuizId) {
       setErrorMessage('Kies eerst een quiz.');
@@ -233,22 +124,12 @@ export default function MultiplayerEntryClient({
       );
 
       trackEvent('multiplayer_room_created', {
-        is_premium: quota.isPremium,
+        is_premium: isPremiumUser,
         max_players: selectedPlayersCount,
       });
-      // Note: no local decrement. A room costs nothing until the host actually
-      // starts the game, which happens on the lobby screen.
       router.push(`/samen-spelen/${room.code}/lobby`);
     } catch (error) {
       setErrorMessage(toUserMessage(error));
-
-      // The server is the authority on the quota. If it says the free games
-      // are gone, switch the whole card into the "used up" state rather than
-      // leaving an enabled button that will keep failing.
-      if (error instanceof MultiplayerClientHttpError && error.code === 'PREMIUM_REQUIRED') {
-        trackEvent('multiplayer_room_create_blocked', { reason: 'server_rejected' });
-        await refreshQuota();
-      }
     } finally {
       setIsCreating(false);
     }
@@ -307,45 +188,15 @@ export default function MultiplayerEntryClient({
 
   return (
     <div className="mx-auto w-full max-w-[1180px] px-5 pb-16 pt-8 sm:px-8 lg:px-10 lg:pt-10">
-      {/* Header: one sentence of what this is, and the quota, nothing else */}
-      <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
-        <div>
-          <h1 className="text-2xl font-normal tracking-tight text-foreground lg:text-3xl">
-            Samen spelen
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Nodig iedereen uit met een code en speel tegelijk dezelfde quiz.
-          </p>
-        </div>
-
-        {quota.isPremium ? (
-          <span className="inline-flex items-center gap-1.5 rounded-md border border-rule bg-paper-sunken px-2.5 py-1.5 text-xs font-medium text-ink">
-            <Crown className="h-3.5 w-3.5" aria-hidden />
-            Premium - onbeperkt spellen
-          </span>
-        ) : (
-          <span
-            className={cn(
-              'inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-xs font-medium',
-              outOfFreeGames
-                ? 'border-vermilion/50 bg-vermilion-tint text-ink'
-                : 'border-rule bg-paper-sunken text-ink',
-            )}
-          >
-            {outOfFreeGames ? (
-              <Lock className="h-3.5 w-3.5 text-vermilion" aria-hidden />
-            ) : (
-              <Gamepad2 className="h-3.5 w-3.5 text-ink-soft" aria-hidden />
-            )}
-            {outOfFreeGames
-              ? quota.onMonthlyAllowance
-                ? 'Je maandspel is gebruikt'
-                : 'Je gratis spellen zijn op'
-              : quota.onMonthlyAllowance
-                ? formatMonthlyFreeGames(gamesLeft ?? 0)
-                : formatFreeGamesRemaining(gamesLeft ?? 0)}
-          </span>
-        )}
+      {/* Header: one sentence of what this is. The quota chip that used to sit
+          on the right is gone with the quota. */}
+      <div>
+        <h1 className="text-2xl font-normal tracking-tight text-foreground lg:text-3xl">
+          Samen spelen
+        </h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Nodig iedereen uit met een code en speel tegelijk dezelfde quiz. Gratis, zo vaak je wilt.
+        </p>
       </div>
 
       {/* Resume a game this user is still part of */}
@@ -369,47 +220,6 @@ export default function MultiplayerEntryClient({
       {errorMessage && (
         <div className="mt-5 rounded-lg border border-destructive/30 bg-destructive/10 p-3 text-sm text-destructive">
           {errorMessage}
-        </div>
-      )}
-
-      {/* Two games out, the counter stops being a chip and becomes a notice.
-          Meeting the wall for the first time with a room full of people
-          waiting is the one experience this has to prevent. */}
-      {!outOfFreeGames && gamesLeft !== null && gamesLeft !== undefined && gamesLeft <= 2 && (
-        <div className="mt-5 rounded-lg border border-vermilion/40 bg-vermilion-tint p-4">
-          <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-vermilion">
-            {quota.onMonthlyAllowance
-              ? 'Je gratis spel van deze maand'
-              : gamesLeft <= 1
-                ? 'Laatste gratis spel'
-                : `Nog ${gamesLeft} gratis spellen`}
-          </p>
-          <p className="mt-2 text-sm text-ink">
-            {quota.onMonthlyAllowance
-              ? 'Dit is je gratis spel voor deze maand. Volgende maand krijg je er weer een. Met Premium host je meteen zoveel je wilt.'
-              : gamesLeft <= 1
-                ? 'Dit is je laatste gratis spel om te hosten. Daarna krijg je er elke maand een terug. Meedoen met andermans spel blijft gratis.'
-                : `Je hebt nog ${gamesLeft} gratis spellen om te hosten. Een spel telt pas mee zodra je hem echt start.`}
-          </p>
-          <Button asChild size="sm" variant="outline" className="mt-3 border-rule bg-paper-raised">
-            <Link href={premiumPaywallHref('host_quota_warning', '/samen-spelen')}>
-              Bekijk Premium
-            </Link>
-          </Button>
-        </div>
-      )}
-
-      {/* The single paywall on this page. It only exists once the counter is
-          actually empty - before that the page says nothing about Premium. */}
-      {outOfFreeGames && (
-        <div className="mt-5">
-          <MultiplayerPremiumPaywall
-            placement="free_quota_used"
-            headline={`Je hebt je ${MULTIPLAYER_FREE_ROOM_QUOTA} gratis spellen gespeeld - host onbeperkt met Premium.`}
-          />
-          <p className="mt-2 text-sm text-positive">
-            Meedoen blijft gratis: vraag iemand anders om een spelcode en speel gewoon mee.
-          </p>
         </div>
       )}
 
@@ -451,30 +261,15 @@ export default function MultiplayerEntryClient({
         </Card>
 
         {/* Create */}
-        <Card
-          className={cn(
-            'flex flex-col py-0',
-            outOfFreeGames ? 'border-2 border-vermilion/40' : 'border-rule',
-          )}
-        >
+        <Card className="flex flex-col border-rule py-0">
           <CardHeader className="px-5 pb-0 pt-5">
             <CardTitle className="text-base">Nieuw spel starten</CardTitle>
             <CardDescription className="mt-0.5 text-xs">
-              {quota.isPremium
-                ? `Jij bent spelleider en kunt tot ${maxPlayersForUser} spelers uitnodigen.`
-                : outOfFreeGames
-                  ? 'Hiervoor heb je Premium nodig.'
-                  : `Gratis tot ${MULTIPLAYER_FREE_MAX_PLAYERS} spelers. Een gratis spel telt pas mee als je het spel echt start.`}
+              {`Jij bent spelleider en kunt tot ${maxPlayersForUser} spelers uitnodigen, zo vaak je wilt.`}
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-1 flex-col gap-3 px-5 pb-5 pt-4">
-            <fieldset
-              disabled={!canCreateRoom}
-              className={cn(
-                'min-w-0 space-y-3 border-0 p-0',
-                !canCreateRoom && 'pointer-events-none opacity-45',
-              )}
-            >
+            <fieldset className="min-w-0 space-y-3 border-0 p-0">
               <div className="space-y-1.5">
                 <label className="text-sm font-medium">Quiz</label>
                 <QuizPickerField
@@ -482,7 +277,6 @@ export default function MultiplayerEntryClient({
                   categories={categories}
                   value={selectedQuizId}
                   onChange={setSelectedQuizId}
-                  disabled={!canCreateRoom}
                 />
               </div>
 
@@ -493,22 +287,11 @@ export default function MultiplayerEntryClient({
                     <SelectValue placeholder="Kies aantal" />
                   </SelectTrigger>
                   <SelectContent>
-                    {PLAYER_OPTIONS.map((count) => {
-                      const isPremiumOnly = count > MULTIPLAYER_FREE_MAX_PLAYERS && !quota.isPremium;
-                      return (
-                        <SelectItem key={count} value={String(count)}>
-                          <span className="flex items-center gap-2">
-                            {count} spelers
-                            {isPremiumOnly && (
-                              <span className="inline-flex items-center gap-1 rounded-md bg-paper-sunken px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink">
-                                <Crown className="h-3 w-3" />
-                                Premium
-                              </span>
-                            )}
-                          </span>
-                        </SelectItem>
-                      );
-                    })}
+                    {PLAYER_OPTIONS.map((count) => (
+                      <SelectItem key={count} value={String(count)}>
+                        {count} spelers
+                      </SelectItem>
+                    ))}
                   </SelectContent>
                 </Select>
               </div>
@@ -559,35 +342,9 @@ export default function MultiplayerEntryClient({
 
               {/* Deliberately a one-liner and not a second paywall block: the
                   user only needs to know this number is out of reach. */}
-              {playerLimitTriggered && (
-                <p className="text-xs text-ink-soft">
-                  {selectedPlayersCount} spelers vraagt om{' '}
-                  <Link
-                    href={premiumPaywallHref('host_player_cap', '/samen-spelen')}
-                    className="font-semibold underline underline-offset-2"
-                  >
-                    Premium
-                  </Link>
-                  . Gratis speel je tot {MULTIPLAYER_FREE_MAX_PLAYERS} spelers.
-                </p>
-              )}
             </fieldset>
 
-            {outOfFreeGames ? (
-              <Button
-                asChild
-                className="mt-auto h-10 w-full bg-ink text-ink-inverted hover:bg-ink-soft"
-                onClick={() =>
-                  trackEvent('multiplayer_premium_cta_clicked', { placement: 'free_quota_used' })
-                }
-              >
-                <Link href={premiumPaywallHref('host_quota_exhausted', '/samen-spelen')}>
-                  <Crown className="mr-2 h-4 w-4" />
-                  Word Premium om te hosten
-                </Link>
-              </Button>
-            ) : (
-              <Button
+            <Button
                 className="mt-auto h-10 w-full dark:text-ink-inverted"
                 onClick={handleCreateRoom}
                 disabled={isCreating || quizzes.length === 0}
@@ -600,8 +357,7 @@ export default function MultiplayerEntryClient({
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </>
                 )}
-              </Button>
-            )}
+            </Button>
           </CardContent>
         </Card>
       </div>

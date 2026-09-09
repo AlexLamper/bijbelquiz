@@ -3,11 +3,7 @@ import { redirect } from 'next/navigation';
 import MultiplayerEntryClient from '@/components/multiplayer/MultiplayerEntryClient';
 import { authOptions } from '@/lib/auth';
 import { connectDB, Category, Quiz, User } from '@/database';
-import {
-  MULTIPLAYER_FREE_MAX_PLAYERS,
-  MULTIPLAYER_FREE_ROOM_QUOTA,
-  MULTIPLAYER_PREMIUM_MAX_PLAYERS,
-} from '@/lib/premium-benefits';
+import { MULTIPLAYER_MAX_PLAYERS } from '@/lib/premium-benefits';
 
 interface QuizOption {
   id: string;
@@ -26,20 +22,6 @@ interface CategoryOption {
 interface RawUserDocument {
   isPremium?: unknown;
   hasLifetimePremium?: unknown;
-  freeMultiplayerRoomCreated?: unknown;
-  multiplayerGamesHosted?: unknown;
-}
-
-/**
- * Same rule as `lib/multiplayer/quota.ts`: accounts predating the counter are
- * read through the legacy boolean, where "used" means one game spent. This is
- * only the first paint - the client re-checks against the API on mount.
- */
-function readGamesHosted(rawUser: RawUserDocument | null): number {
-  if (typeof rawUser?.multiplayerGamesHosted === 'number') {
-    return rawUser.multiplayerGamesHosted;
-  }
-  return rawUser?.freeMultiplayerRoomCreated === true ? 1 : 0;
 }
 
 interface RawQuizDocument {
@@ -67,13 +49,12 @@ export default async function MultiplayerPage() {
   await connectDB();
 
   const rawUser = await User.findById(session.user.id)
-    .select('isPremium hasLifetimePremium freeMultiplayerRoomCreated multiplayerGamesHosted')
+    .select('isPremium hasLifetimePremium')
     .lean() as RawUserDocument | null;
 
+  // Still read, because a group licence is a real thing an account can have.
+  // It no longer changes what anybody may do here.
   const isPremiumUser = Boolean(rawUser?.isPremium || rawUser?.hasLifetimePremium || session.user.isPremium);
-  const freeGamesRemaining = isPremiumUser
-    ? null
-    : Math.max(0, MULTIPLAYER_FREE_ROOM_QUOTA - readGamesHosted(rawUser));
 
   const statusFilter = { status: 'approved' };
   const [rawQuizzes, rawCategories] = await Promise.all([
@@ -113,17 +94,12 @@ export default async function MultiplayerPage() {
     };
   });
 
-  const maxPlayersForUser = isPremiumUser
-    ? MULTIPLAYER_PREMIUM_MAX_PLAYERS
-    : MULTIPLAYER_FREE_MAX_PLAYERS;
-
   return (
     <MultiplayerEntryClient
       quizzes={quizzes}
       categories={categories}
       isPremiumUser={isPremiumUser}
-      freeGamesRemaining={freeGamesRemaining}
-      maxPlayersForUser={maxPlayersForUser}
+      maxPlayersForUser={MULTIPLAYER_MAX_PLAYERS}
     />
   );
 }

@@ -9,7 +9,6 @@ import {
   ArrowRight,
   BookOpen,
   CheckCircle2,
-  Lock,
   Maximize,
   RotateCcw,
   Settings,
@@ -17,14 +16,14 @@ import {
   X,
 } from 'lucide-react';
 
-import QuizFreeReviewSection, { type RevealedExplanation } from '@/components/quiz/QuizFreeReviewSection';
-import QuizPremiumReviewSection from '@/components/quiz/QuizPremiumReviewSection';
+import QuizReviewSection from '@/components/quiz/QuizReviewSection';
 import BibleVerseDisplay from '@/components/BibleVerseDisplay';
+import StudieLink from '@/components/StudieLink';
+import StudiePrompt from '@/components/StudiePrompt';
 import { Button } from '@/components/ui/button';
-import { getStudyTopicLinkForQuizTitle } from '@/lib/ecosystem-links';
+import { dominantPassage, passageFromQuestion } from '@/lib/ecosystem-links';
 import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
 import { flushAnalytics, track } from '@/lib/analytics/client';
-import { premiumPaywallHref } from '@/lib/premium-benefits';
 import { useUserSettings } from '@/lib/user-settings-client';
 import {
   QUESTION_TIMER_CHOICES,
@@ -44,11 +43,15 @@ interface Question {
   explanation?: string;
   bibleReference?: string;
   bibleReferencePreview?: string;
+  /** Canonical book code and chapter, maintained by the Quiz model's hook. */
+  refBook?: string | null;
+  refChapter?: number | null;
   _id: string;
 }
 
 interface Quiz {
   _id: string;
+  slug?: string;
   title: string;
   questions: Question[];
   rewardXp?: number;
@@ -116,14 +119,8 @@ export default function QuizPlayer({
   const pathname = usePathname();
   const { settings, isAuthenticated, saveSettings } = useUserSettings();
 
-  // Upgrading from inside a quiz returns to that same quiz, so a locked
-  // explanation is still on screen when the reader comes back.
-  const paywallHref = premiumPaywallHref('explanation_locked', pathname);
-  // The review after the quiz is its own wall, and the funnel counts it apart.
-  const reviewPaywallHref = premiumPaywallHref('review_locked', pathname);
-
-  const isPremium = !!session?.user?.isPremium;
   const isLoggedIn = !!session?.user;
+  const quizSlug = quiz.slug || String(quiz._id);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -131,13 +128,6 @@ export default function QuizPlayer({
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [isSaving, setIsSaving] = useState(false);
   const [earnedXp, setEarnedXp] = useState<number | null>(null);
-  // The one free explanation per sitting: the "onthulling". Held here rather
-  // than on the question because the same reveal shows during the quiz and
-  // again in the review afterwards. The text is fetched when chosen, so a
-  // free player's page never carries explanations it is not showing.
-  const [reveal, setReveal] = useState<RevealedExplanation | null>(null);
-  const [revealPending, setRevealPending] = useState<number | null>(null);
-  const [revealError, setRevealError] = useState<string | null>(null);
 
   // Where the reader had got to when they walked away. Kept in a ref because
   // the only place that can report it is the unmount cleanup, which would
@@ -260,51 +250,10 @@ export default function QuizPlayer({
   const questionTextSizeClass = getQuestionTextSizeClass(textSize, currentQuestion.text);
   const visibleBibleReference = showBibleReferences ? currentQuestion.bibleReference : undefined;
   const maxPossibleXp = typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50;
-  const studyTopicLink = getStudyTopicLinkForQuizTitle(quiz.title || '');
+  /** The chapter this question came from, for the link under its explanation. */
+  const questionPassage = passageFromQuestion(currentQuestion);
 
-  const answeredWrong =
-    hasAnswered && !currentQuestion.answers[selectedAnswer!]?.isCorrect;
   const timedOut = Boolean(timedOutQuestions[currentIndex]);
-  // A free player sees the lock only once their single reveal is spent on
-  // another question. Before that the explanation is an offer, not a wall.
-  const explanationLocked =
-    !isPremium && hasAnswered && showExplanation && reveal !== null && reveal.index !== currentIndex;
-
-  // Recorded once per quiz sitting, the first time a locked explanation
-  // appears. It used to fire on every answered question, which made one
-  // player look like ninety paywalls in an afternoon and buried the real
-  // paywall page in the funnel report. Somebody who just got it wrong wants
-  // to know why more than at any other point, so that is still recorded.
-  const lockedExplanationRecorded = useRef(false);
-  useEffect(() => {
-    if (!explanationLocked || lockedExplanationRecorded.current) return;
-    lockedExplanationRecorded.current = true;
-    track('paywall_shown', {
-      trigger: 'explanation_locked',
-      surface: 'quiz_explanation',
-      afterWrongAnswer: answeredWrong,
-      questionId: currentQuestion._id,
-    });
-    // `answeredWrong` is derived from the same answer that gates this effect,
-    // so it is deliberately not a dependency: it cannot change without the
-    // question changing too.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [explanationLocked, currentQuestion._id]);
-
-  // The review after the quiz is the wall that matters for a solo player:
-  // they have just spent five minutes, they know their score, and the "why"
-  // per question is what Premium holds back. Counted once per sitting.
-  const reviewPaywallRecorded = useRef(false);
-  useEffect(() => {
-    if (!isFinished || isPremium || reviewPaywallRecorded.current) return;
-    reviewPaywallRecorded.current = true;
-    track('paywall_shown', {
-      trigger: 'review_locked',
-      surface: 'quiz_result',
-      wrongAnswers: quiz.questions.length - score,
-      signedIn: isLoggedIn,
-    });
-  }, [isFinished, isPremium, isLoggedIn, quiz.questions.length, score]);
 
   const openLeaveDialog = (href: string) => {
     setPendingLeaveHref(href);
@@ -330,41 +279,6 @@ export default function QuizPlayer({
 
     if (currentQuestion.answers[answerIndex]?.isCorrect) {
       setScore((prev) => prev + 1);
-    }
-  };
-
-  /**
-   * Spend the free reveal on one question. Premium players never need it -
-   * their explanations are already on the page - and a second call is a no-op
-   * because the reveal is a single choice per sitting, not a queue.
-   */
-  const revealExplanation = async (index: number) => {
-    if (isPremium || reveal !== null || revealPending !== null) return;
-
-    const question = quiz.questions[index];
-    if (!question) return;
-
-    setRevealPending(index);
-    setRevealError(null);
-
-    try {
-      const response = await fetch(
-        `/api/quizzes/${quiz._id}/explanation?question=${encodeURIComponent(String(question._id))}`
-      );
-      if (!response.ok) {
-        throw new Error(`Explanation request failed with ${response.status}`);
-      }
-
-      const data = (await response.json()) as { explanation?: string; bibleReference?: string | null };
-      setReveal({
-        index,
-        explanation: data.explanation || 'Geen extra uitleg beschikbaar.',
-        bibleReference: data.bibleReference || null,
-      });
-    } catch {
-      setRevealError('De uitleg kon niet worden opgehaald. Probeer het nog eens.');
-    } finally {
-      setRevealPending(null);
     }
   };
 
@@ -579,12 +493,22 @@ export default function QuizPlayer({
     const percentage = Math.round((score / quiz.questions.length) * 100);
     const fallbackXp = Math.round((typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50) * (score / quiz.questions.length));
     const resolvedXp = earnedXp ?? fallbackXp;
-    // Everybody gets the list of what went right and wrong. What differs is
-    // whether the explanation per question is on it.
     const reviewQuestions = buildReviewQuestionsFromSelections(
       quiz.questions as Parameters<typeof buildReviewQuestionsFromSelections>[0],
       selectedAnswers
     );
+
+    const wrongCount = quiz.questions.length - score;
+    // The chapter the quiz as a whole was about, and - when the reader got
+    // things wrong - the chapter most of those mistakes came from. The second
+    // is the stronger offer: a felt gap beats a general suggestion.
+    const quizPassage = dominantPassage(quiz.questions);
+    const wrongPassage =
+      dominantPassage(
+        quiz.questions.filter(
+          (_, index) => !quiz.questions[index].answers[selectedAnswers[index]]?.isCorrect,
+        ),
+      ) ?? quizPassage;
 
     // Counted, not derived from the percentage: 14/15 rounds to 93% and 10/10
     // to 100%, but only one of those is actually every question right, and
@@ -689,14 +613,32 @@ export default function QuizPlayer({
           </div>
         </div>
 
-        {/* Actions come immediately after the figure - what to do next is the
-            question the reader actually has here. */}
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+        {/* What to do next. Reading the chapter is the primary action: the
+            reader has just been shown, question by question, what they do and
+            do not know about it, and everything else here only loops them back
+            into more quiz. */}
+        <div className="mt-7">
+          {wrongCount > 0 && wrongPassage && (
+            <p className="mb-3 text-[15px] leading-relaxed text-ink-muted">
+              {wrongCount === 1 ? 'Eén vraag ging mis' : `${wrongCount} vragen gingen mis`}
+              {`, vooral over ${wrongPassage.book} ${wrongPassage.chapter}.`}
+            </p>
+          )}
+
+          <StudieLink
+            passage={wrongPassage}
+            surface={wrongCount > 0 ? 'result_wrong_answers' : 'result_primary'}
+            quizSlug={quizSlug}
+            variant="primary"
+          />
+        </div>
+
+        <div className="mt-3 flex flex-col gap-3 sm:flex-row">
           <Button
             type="button"
             onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')}
             disabled={isSaving}
-            className="h-12 flex-1 rounded-md bg-ink px-5 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+            className="h-12 flex-1 rounded-md border border-rule bg-paper-raised px-5 text-sm font-medium text-ink hover:bg-paper-sunken"
           >
             {isSaving ? 'Opslaan...' : isLoggedIn ? 'Naar dashboard' : 'Naar home'}
           </Button>
@@ -755,47 +697,26 @@ export default function QuizPlayer({
           </div>
         )}
 
-        {isPremium && reviewQuestions.length > 0 && (
+        {reviewQuestions.length > 0 && (
           <div className="mt-10 border-t border-rule pt-8">
-            <QuizPremiumReviewSection
+            <QuizReviewSection
               questions={reviewQuestions}
               score={score}
               totalQuestions={quiz.questions.length}
               xpEarned={resolvedXp}
+              quizSlug={quizSlug}
             />
           </div>
         )}
 
-        {!isPremium && reviewQuestions.length > 0 && (
-          <div className="mt-10 border-t border-rule pt-8">
-            <QuizFreeReviewSection
-              questions={reviewQuestions}
-              reveal={reveal}
-              revealPending={revealPending}
-              revealError={revealError}
-              onReveal={revealExplanation}
-              paywallHref={reviewPaywallHref}
-            />
-          </div>
-        )}
+        <StudiePrompt passage={wrongPassage} quizSlug={quizSlug} />
 
         <div className="mt-10 border-t border-rule pt-5">
-          <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-            Verder lezen
-          </p>
-          <a
-            href={studyTopicLink.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2.5 block text-sm font-medium text-ink underline decoration-rule-strong underline-offset-4 transition-colors hover:decoration-ink"
-          >
-            Verdiep je in {studyTopicLink.label} op Bijbel Studie
-          </a>
           <a
             href="https://www.bijbelapi.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 block text-xs text-ink-muted underline decoration-rule underline-offset-4 transition-colors hover:text-ink"
+            className="block text-xs text-ink-muted underline decoration-rule underline-offset-4 transition-colors hover:text-ink"
           >
             Mogelijk gemaakt met BijbelAPI
           </a>
@@ -964,68 +885,27 @@ export default function QuizPlayer({
               Uitleg
             </p>
 
-            {isPremium ? (
-              <p
-                className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-3 wrap-anywhere text-[15px] leading-relaxed text-ink-soft`}
-              >
-                {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
-              </p>
-            ) : reveal && reveal.index === currentIndex ? (
-              /* The one free explanation, spent on this question. */
-              <div className="mt-3">
-                <p
-                  className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} wrap-anywhere text-[15px] leading-relaxed text-ink-soft`}
-                >
-                  {reveal.explanation}
-                </p>
-                <p className="mt-4 border-t border-rule pt-4 text-xs text-ink-muted">
-                  Je gratis onthulling voor deze quiz. Met Premium lees je de uitleg bij elke vraag.
-                </p>
-              </div>
-            ) : reveal === null ? (
-              /* Still available: an offer, not a wall. */
-              <div className="mt-3">
-                <p className="text-sm leading-relaxed text-ink-soft">
-                  Bij deze vraag hoort een uitleg. Je mag er per quiz één gratis onthullen.
-                </p>
-                <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-rule pt-4">
-                  <button
-                    type="button"
-                    data-analytics-id="quiz.reveal-explanation"
-                    disabled={revealPending !== null}
-                    onClick={() => revealExplanation(currentIndex)}
-                    className="inline-flex h-9 items-center rounded-md bg-ink px-3 text-xs font-medium text-ink-inverted transition-colors hover:bg-ink-soft disabled:opacity-60"
-                  >
-                    {revealPending === currentIndex ? 'Ophalen...' : 'Onthul de uitleg'}
-                  </button>
-                  <span className="text-xs text-ink-muted">1 gratis per quiz</span>
-                </div>
-                {revealError && <p className="mt-2 text-xs text-vermilion">{revealError}</p>}
-              </div>
-            ) : (
-              /* Spent elsewhere: now it is Premium, said once and quietly. */
-              <div className="mt-3">
-                <p className="text-sm leading-relaxed text-ink-soft">
-                  Je gratis onthulling zit bij vraag {reveal.index + 1}. Met Premium lees je de uitleg
-                  bij elke vraag, ook na afloop.
-                </p>
-                <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-rule pt-4">
-                  <p className="inline-flex items-center gap-1.5 text-xs text-ink-muted">
-                    <Lock className="h-3 w-3" />
-                    Uitleg is Premium
-                  </p>
-                  <Link
-                    href={paywallHref}
-                    data-skip-leave-guard
-                    className="inline-flex h-9 items-center rounded-md border border-lapis/45 px-3 text-xs font-medium text-lapis transition-colors hover:bg-lapis-tint"
-                  >
-                    Bekijk Premium
-                  </Link>
-                </div>
-              </div>
-            )}
+            <p
+              className={`${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} mt-3 wrap-anywhere text-[15px] leading-relaxed text-ink-soft`}
+            >
+              {currentQuestion.explanation || 'Geen extra uitleg beschikbaar.'}
+            </p>
 
             {visibleBibleReference && <BibleVerseDisplay reference={visibleBibleReference} />}
+
+            {/* The highest-volume handover in the product: one link per
+                answered question, about the chapter that question came from.
+                Opens in its own tab so the quiz is still there afterwards. */}
+            {questionPassage && (
+              <div className="mt-4 border-t border-rule pt-4">
+                <StudieLink
+                  passage={questionPassage}
+                  surface="explanation"
+                  quizSlug={quizSlug}
+                  label={`Lees ${questionPassage.book} ${questionPassage.chapter} met uitleg`}
+                />
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -1160,26 +1040,12 @@ export default function QuizPlayer({
               </div>
 
               <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm text-ink">Toon uitleg</p>
-                  {!isPremium && (
-                    <p className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-soft">
-                      <Lock className="h-3 w-3" />
-                      Premium
-                    </p>
-                  )}
-                </div>
+                <p className="text-sm text-ink">Toon uitleg</p>
                 <Button
                   type="button"
                   variant="outline"
                   className={`h-8 rounded-md px-2 text-xs ${showExplanation ? 'bg-paper-sunken text-ink' : 'bg-paper-raised   '}`}
-                  onClick={() => {
-                    if (isPremium) {
-                      setShowExplanation((value) => !value);
-                    } else {
-                      router.push(paywallHref);
-                    }
-                  }}
+                  onClick={() => setShowExplanation((value) => !value)}
                 >
                   {showExplanation ? 'Aan' : 'Uit'}
                 </Button>
