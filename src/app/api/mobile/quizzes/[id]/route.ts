@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { connectDB, Quiz, Category } from '@/database';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
-import { normalizeQuizImagePath } from '@/lib/quiz-image';
+import { resolveQuizImageUrl } from '@/lib/quiz-image';
 
 export async function GET(req: Request, context: any) {
   try {
@@ -48,7 +48,7 @@ export async function GET(req: Request, context: any) {
       title: quiz.title,
       slug: quiz.slug,
       description: quiz.description,
-      imageUrl: normalizeQuizImagePath(quiz.imageUrl || (quiz as any).image),
+      imageUrl: resolveQuizImageUrl(quiz),
       xpReward: quiz.rewardXp || (quiz as any).xpReward || 50,
       difficulty: quiz.difficulty || 'medium',
       categoryId: categoryObj?._id?.toString() || quiz.categoryId?.toString() || null,

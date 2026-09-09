@@ -59,6 +59,9 @@ const BOOK_CODES: Record<string, BookCode> = {
   ezra: 'EZRA',
   nehemia: 'NEH',
   esther: 'ESTH',
+  // The quiz library spelled the book without the h for a while; the titles
+  // are fixed but older references are not, and a wrong match here is silent.
+  ester: 'ESTH',
   job: 'JOB',
   psalmen: 'PS',
   psalm: 'PS',

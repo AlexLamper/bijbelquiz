@@ -107,3 +107,30 @@ console.log(
     `(${W}x${H}, ${(bytes / 1024 / 1024).toFixed(1)} MB total, ` +
     `${Math.round(bytes / targets.length / 1024)} KB average).`,
 );
+
+// The runtime needs to know which slugs have a cover, and it cannot read the
+// folder - the answer is needed in a browser bundle. Writing the list here,
+// from the same manifest that was just drawn, is what keeps it honest: the
+// list cannot name a file this script did not produce. Only skipped when the
+// run was narrowed to a few slugs or redirected elsewhere, because then it
+// would describe a partial render.
+if (!only.length && outIdx === -1) {
+  const slugs = [...new Set(manifest.quizzes.map((q) => q.slug))].sort();
+  const generated = path.join(root, 'src/lib/quiz-covers.generated.ts');
+  const previous = fs.existsSync(generated) ? fs.readFileSync(generated, 'utf8') : '';
+  const header = previous.slice(0, previous.indexOf('const SLUGS'));
+
+  fs.writeFileSync(
+    generated,
+    `${header}const SLUGS = [\n${slugs.map((s) => `  '${s}',`).join('\n')}\n] as const;\n\n` +
+      `export const QUIZ_COVER_SLUGS: ReadonlySet<string> = new Set(SLUGS);\n\n` +
+      `/** The drawn cover for this slug, or null when none was rendered for it. */\n` +
+      `export function coverForSlug(slug: string | null | undefined): string | null {\n` +
+      `  if (!slug) return null;\n` +
+      `  const key = slug.trim().toLowerCase();\n` +
+      `  return QUIZ_COVER_SLUGS.has(key) ? \`/images/quizzes/\${key}.png\` : null;\n` +
+      `}\n`,
+    'utf8',
+  );
+  console.log(`Slug list: ${path.relative(root, generated)} (${slugs.length} covers).`);
+}

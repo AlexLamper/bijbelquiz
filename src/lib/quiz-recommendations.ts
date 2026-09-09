@@ -54,7 +54,7 @@ const INTEREST_MATCHERS: Record<
     keywords: [
       'oude testament', 'genesis', 'exodus', 'leviticus', 'numeri', 'deuteronomium',
       'jozua', 'richteren', 'ruth', 'samuel', 'koningen', 'kronieken', 'ezra',
-      'nehemia', 'ester', 'job', 'psalm', 'schepping', 'noach', 'abraham', 'mozes',
+      'nehemia', 'esther', 'job', 'psalm', 'schepping', 'noach', 'abraham', 'mozes',
       'david', 'salomo', 'israel',
     ],
   },
@@ -94,7 +94,7 @@ const INTEREST_MATCHERS: Record<
     categorySlugs: ['personen-in-de-bijbel', 'vrouwen-in-de-bijbel'],
     keywords: [
       'personen', 'koningen', 'apostelen', 'vrouwen', 'helden', 'martelaren',
-      'abraham', 'mozes', 'david', 'petrus', 'paulus', 'maria', 'ruth', 'ester',
+      'abraham', 'mozes', 'david', 'petrus', 'paulus', 'maria', 'ruth', 'esther',
       'jozef', 'jakob',
     ],
   },

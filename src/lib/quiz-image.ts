@@ -13,6 +13,8 @@
  * no database migration.
  */
 
+import { coverForSlug } from './quiz-covers.generated';
+
 export const QUIZ_IMAGE_COUNT = 12;
 
 const QUIZ_IMAGE_DIR = '/images/quizzes/';
@@ -65,7 +67,15 @@ function normalize(raw: string): string | null {
 
 /**
  * Best available cover image for a quiz, guaranteed to resolve to a file that
- * exists. Order: explicit quiz image -> category image -> id-derived fallback.
+ * exists. Order: explicit quiz image -> drawn cover for the slug -> category
+ * image -> id-derived fallback.
+ *
+ * The slug step is what keeps a newly imported quiz from wearing its
+ * category's picture. `assign-quiz-images.mts` writes `imageUrl` per quiz, but
+ * only for quizzes that existed the last time somebody ran it; every quiz
+ * added since fell through to the category and forty-two of them ended up
+ * identical. The drawn covers are named after the slug, so the file on disk can
+ * answer directly and a new quiz is correct as soon as its cover is rendered.
  *
  * Takes `unknown` so it can be handed a Mongoose lean document, a plain API
  * shape, or an aggregation row without a cast at every call site.
@@ -74,6 +84,7 @@ export function resolveQuizImageUrl(quiz: unknown): string {
   const q = (quiz ?? {}) as {
     _id?: unknown;
     id?: unknown;
+    slug?: unknown;
     imageUrl?: unknown;
     image?: unknown;
     categoryImageUrl?: unknown;
@@ -81,6 +92,9 @@ export function resolveQuizImageUrl(quiz: unknown): string {
 
   const explicit = normalize(String(q.imageUrl ?? q.image ?? ''));
   if (explicit) return explicit;
+
+  const drawn = coverForSlug(typeof q.slug === 'string' ? q.slug : null);
+  if (drawn) return drawn;
 
   const category = normalize(String(q.categoryImageUrl ?? ''));
   if (category) return category;
