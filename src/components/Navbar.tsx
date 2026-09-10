@@ -151,9 +151,12 @@ export default function Navbar({
         { href: '/profiel', label: 'Profiel' },
       ]
     : [
+        // The same destinations a member gets, minus the ones that need an
+        // account. A visitor used to be sent to anchors on the landing page,
+        // which made the site look like a brochure with a login behind it.
         { href: '/', label: 'Home' },
-        { href: '/#quizzen', label: 'Quizzen' },
-        { href: '/#categorieen', label: 'Categorieën' },
+        { href: '/quizzen', label: 'Quizzen' },
+        { href: '/ranglijst', label: 'Ranglijst' },
         { href: '/samen-spelen', label: 'Samen spelen' },
       ];
 

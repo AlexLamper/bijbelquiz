@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import {
   ArrowLeft,
@@ -22,7 +22,9 @@ import StudieLink from '@/components/StudieLink';
 import StudiePrompt from '@/components/StudiePrompt';
 import { Button } from '@/components/ui/button';
 import { dominantPassage, passageFromQuestion } from '@/lib/ecosystem-links';
+import { addPendingAttempt } from '@/lib/pending-attempts';
 import { buildReviewQuestionsFromSelections } from '@/lib/quiz-review';
+import { calculateAttemptXp } from '@/lib/xp';
 import { flushAnalytics, track } from '@/lib/analytics/client';
 import { useUserSettings } from '@/lib/user-settings-client';
 import {
@@ -116,7 +118,6 @@ export default function QuizPlayer({
 }) {
   const { data: session } = useSession();
   const router = useRouter();
-  const pathname = usePathname();
   const { settings, isAuthenticated, saveSettings } = useUserSettings();
 
   const isLoggedIn = !!session?.user;
@@ -285,24 +286,42 @@ export default function QuizPlayer({
   const finishQuiz = async () => {
     setIsFinished(true);
 
-    // Nothing to save without an account. The result screen asks for one,
-    // right next to the score it would have kept.
-    if (!isLoggedIn) return;
+    const submittedAnswers = quiz.questions.map((question, index) => {
+      const selectedAnswerIndex = selectedAnswers[index];
+      const selectedAnswer =
+        typeof selectedAnswerIndex === 'number' ? question.answers[selectedAnswerIndex] : null;
+      return {
+        questionId: String(question._id),
+        selectedAnswerId: selectedAnswer?._id != null ? String(selectedAnswer._id) : null,
+        selectedAnswerIndex: typeof selectedAnswerIndex === 'number' ? selectedAnswerIndex : null,
+      };
+    });
+
+    // Without an account the attempt is parked in this browser. The result
+    // screen asks for one next to the score it would keep, and the moment a
+    // session appears - here or on any other page - `PendingAttemptSync`
+    // writes the parked attempt to it. That is what makes "bewaar je score"
+    // a promise rather than a slogan.
+    if (!isLoggedIn) {
+      addPendingAttempt({
+        quizId: String(quiz._id),
+        quizSlug,
+        quizTitle: quiz.title,
+        score,
+        totalQuestions: quiz.questions.length,
+        answers: submittedAnswers,
+        xpPreview: calculateAttemptXp(
+          typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50,
+          score,
+          quiz.questions.length
+        ),
+      });
+      return;
+    }
 
     setIsSaving(true);
 
     try {
-      const submittedAnswers = quiz.questions.map((question, index) => {
-        const selectedAnswerIndex = selectedAnswers[index];
-        const selectedAnswer =
-          typeof selectedAnswerIndex === 'number' ? question.answers[selectedAnswerIndex] : null;
-        return {
-          questionId: String(question._id),
-          selectedAnswerId: selectedAnswer?._id != null ? String(selectedAnswer._id) : null,
-          selectedAnswerIndex: typeof selectedAnswerIndex === 'number' ? selectedAnswerIndex : null,
-        };
-      });
-
       const response = await fetch('/api/quiz/submit', {
         method: 'POST',
         headers: { 'Content-Type':'application/json' },
@@ -662,27 +681,39 @@ export default function QuizPlayer({
           </Button>
         </div>
 
-        {/* Played without an account: the score above is real but unkept.
-            This is the moment to ask, with the XP it would have saved. */}
+        {/* Played without an account: the score above is real and parked in
+            this browser. This is the moment to ask, with the XP it would
+            keep. Both buttons land on the dashboard, where the attempt shows
+            up under recent activity the moment the claim has run. The
+            analytics ids make the offer's seen/click ratio readable in
+            /beheer/statistieken. */}
         {!isLoggedIn && (
-          <div className="mt-10 rounded-lg border border-lapis/45 bg-paper-raised p-5 sm:p-6">
+          <div
+            data-analytics-id="result_account_prompt"
+            data-analytics-label="Bewaar je score"
+            className="mt-10 rounded-lg border border-lapis/45 bg-paper-raised p-5 sm:p-6"
+          >
             <p className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
               <span aria-hidden className="h-px w-6 bg-lapis" />
-              Niet opgeslagen
+              Nog niet opgeslagen
             </p>
             <p className="mt-3 font-display text-lg leading-snug text-ink">
               Bewaar je score, {resolvedXp} XP en je streak
             </p>
             <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">
-              Met een gratis account tellen je quizzen mee voor je niveau en de ranglijst, en zie
-              je later terug hoe je groeit.
+              Log in of maak een gratis account, dan wordt deze score direct bijgeschreven. Je
+              quizzen tellen dan mee voor je niveau en de ranglijst, en je ziet later terug hoe
+              je groeit.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <Button
                 asChild
                 className="h-10 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
               >
-                <Link href={`/registreren?callbackUrl=${encodeURIComponent(pathname)}`}>
+                <Link
+                  href="/registreren?callbackUrl=%2Fdashboard"
+                  data-analytics-id="result_account_register"
+                >
                   Gratis account aanmaken
                 </Link>
               </Button>
@@ -691,7 +722,9 @@ export default function QuizPlayer({
                 variant="outline"
                 className="h-10 rounded-md border-rule bg-paper-raised px-4 text-sm font-medium text-ink hover:bg-paper-sunken"
               >
-                <Link href={`/inloggen?callbackUrl=${encodeURIComponent(pathname)}`}>Inloggen</Link>
+                <Link href="/inloggen?callbackUrl=%2Fdashboard" data-analytics-id="result_account_login">
+                  Inloggen
+                </Link>
               </Button>
             </div>
           </div>

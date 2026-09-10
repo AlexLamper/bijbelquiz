@@ -82,8 +82,11 @@ export default async function Home() {
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+                {/* Straight to the quizzes: a visitor who came to play should
+                    not meet a registration form first. An account is offered
+                    on the result screen, where there is a score to keep. */}
                 <InkButton
-                  href="/registreren"
+                  href="/quizzen"
                   className="group h-13 w-full px-7 text-[15px] font-semibold sm:w-auto lg:h-14 lg:px-8 lg:text-base"
                 >
                   Speel direct online

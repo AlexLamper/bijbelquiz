@@ -17,7 +17,7 @@ export default async function InstellingenPage() {
   const session = await getServerSession(authOptions);
 
   if (!session?.user?.id) {
-    redirect('/login');
+    redirect('/inloggen?callbackUrl=/instellingen');
   }
 
   await connectDB();
@@ -25,7 +25,7 @@ export default async function InstellingenPage() {
   const user = await User.findById(session.user.id).lean();
 
   if (!user) {
-    redirect('/login');
+    redirect('/inloggen?callbackUrl=/instellingen');
   }
 
   return (

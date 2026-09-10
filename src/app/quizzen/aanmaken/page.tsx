@@ -14,7 +14,7 @@ export default async function CreateQuizPage() {
   const session = await getServerSession(authOptions);
   
   if (!session) {
-    redirect('/login?callbackUrl=/quizzes/create');
+    redirect('/inloggen?callbackUrl=/quizzen/aanmaken');
   }
 
   await connectDB();

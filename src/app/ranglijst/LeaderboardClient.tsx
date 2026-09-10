@@ -190,7 +190,11 @@ export default function LeaderboardClient({ users, currentUserId, initialCurrent
               <Link href="/quizzen">Speel quiz</Link>
             </Button>
             <Button asChild variant="outline" className="h-10 rounded-md border-rule bg-paper-raised px-5 text-ink hover:bg-paper-sunken">
-              <Link href="/dashboard">Dashboard</Link>
+              {currentUserId ? (
+                <Link href="/dashboard">Dashboard</Link>
+              ) : (
+                <Link href="/inloggen?callbackUrl=/ranglijst">Inloggen</Link>
+              )}
             </Button>
           </div>
         </div>
@@ -267,6 +271,22 @@ export default function LeaderboardClient({ users, currentUserId, initialCurrent
             pigment="verdigris"
           />
         </div>
+
+        {/* A visitor can read the list but is not on it. Said once, next to
+            the empty "Jouw positie" figure, rather than as a wall in front of
+            the page. */}
+        {!currentUserId && (
+          <p className="mb-6 text-sm leading-relaxed text-ink-muted">
+            Speel een quiz en maak een{' '}
+            <Link
+              href="/registreren?callbackUrl=/ranglijst"
+              className="font-medium text-ink underline decoration-rule-strong underline-offset-4 transition-colors hover:decoration-ink"
+            >
+              gratis account
+            </Link>{' '}
+            om hier te staan.
+          </p>
+        )}
 
         {resolvedCurrentUserRank && (
           <Card className="mb-6 border-lapis/35 bg-lapis-tint py-0">

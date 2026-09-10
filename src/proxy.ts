@@ -6,13 +6,19 @@ export default withAuth({
   },
 })
 
+// Only the pages that are meaningless without an account. Playing, browsing
+// and the leaderboard are open to everybody; an account is asked for where
+// there is something to keep. The pages that need one but are not listed here
+// (profiel, instellingen, quizzen/aanmaken, beoordeling) redirect themselves.
+//
+// The Dutch paths, not the English ones: `next.config.ts` redirects the old
+// routes before the middleware ever runs, so an English entry here matched
+// nothing.
 export const config = {
   matcher: [
-    "/admin/:path*",
+    "/beheer/:path*",
     "/dashboard/:path*",
-    "/profile/:path*",
     "/premium/succes/:path*",
-    "/quizzes/:path*",
     "/account-verwijderen/:path*"
   ]
 }

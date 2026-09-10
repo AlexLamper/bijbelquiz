@@ -76,11 +76,11 @@ export function MultiplayerHighlightSection() {
         </div>
 
         <div className="mt-7 flex flex-col items-start gap-x-6 gap-y-3 sm:flex-row sm:items-center">
-          <InkButton href="/registreren" className="w-full sm:w-auto">
+          <InkButton href="/samen-spelen" className="w-full sm:w-auto">
             Probeer gratis samen spelen
           </InkButton>
           <p className="text-xs leading-relaxed text-ink-muted">
-            Gratis account aanmaken in 30 seconden - geen creditcard nodig.
+            Een spel starten kan met een gratis account - geen creditcard nodig.
           </p>
         </div>
       </div>

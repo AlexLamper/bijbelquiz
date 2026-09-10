@@ -35,7 +35,23 @@ function RegisterContent() {
       });
 
       if (res.ok) {
-        router.push(`/inloggen?callbackUrl=${encodeURIComponent(callbackUrl)}&registered=true`);
+        // Signed in straight away with the credentials just created. Sending
+        // a brand-new account to the login form to type them a second time
+        // was the step between "bewaar je score" and the score being saved,
+        // and the step where people gave up.
+        const signInResult = await signIn('credentials', {
+          redirect: false,
+          email,
+          password,
+          callbackUrl,
+        });
+
+        if (signInResult?.error) {
+          router.push(`/inloggen?callbackUrl=${encodeURIComponent(callbackUrl)}&registered=true`);
+        } else {
+          router.push(callbackUrl);
+          router.refresh();
+        }
       } else {
         const data = await res.text();
         setError(data || 'Er is iets misgegaan bij het registreren.');

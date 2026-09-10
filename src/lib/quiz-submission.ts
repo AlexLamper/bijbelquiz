@@ -38,6 +38,13 @@ export interface QuizSubmissionInput {
   answers?: SubmittedAnswer[] | null;
   /** Which client wrote this attempt. Recorded on the funnel event. */
   platform?: AnalyticsPlatform;
+  /**
+   * The attempt was played without an account and is being written now that
+   * one exists. Recorded on the funnel event only: how many visitors' scores
+   * turn into accounts is the number the "play first, sign in later" flow is
+   * judged on.
+   */
+  claimed?: boolean;
 }
 
 export type QuizSubmissionResult =
@@ -69,7 +76,7 @@ export type QuizSubmissionResult =
 export async function submitQuizAttempt(
   input: QuizSubmissionInput
 ): Promise<QuizSubmissionResult> {
-  const { userId, quizId, score, totalQuestions, answers, platform } = input;
+  const { userId, quizId, score, totalQuestions, answers, platform, claimed } = input;
 
   if (!quizId || typeof score !== 'number' || typeof totalQuestions !== 'number') {
     return { ok: false, reason: 'invalid', message: 'Invalid request data' };
@@ -244,6 +251,7 @@ export async function submitQuizAttempt(
       xpEarned,
       isFirst: totalQuizzes === 1,
       isReplay: previousAttempts.length > 0,
+      claimed: Boolean(claimed),
     },
   });
 

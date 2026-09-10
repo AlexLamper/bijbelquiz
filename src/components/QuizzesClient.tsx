@@ -91,7 +91,7 @@ export default function QuizzesClient({
   canCreateQuiz,
   initialCategoryId = 'all',
 }: QuizzesClientProps) {
-  const { settings } = useUserSettings();
+  const { settings, isAuthenticated } = useUserSettings();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategoryId);
@@ -409,7 +409,9 @@ export default function QuizzesClient({
                   Filters wissen
                 </Button>
                 <Button asChild className="h-10 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
-                  <Link href="/dashboard">Naar dashboard</Link>
+                  <Link href={isAuthenticated ? '/dashboard' : '/'}>
+                    {isAuthenticated ? 'Naar dashboard' : 'Naar home'}
+                  </Link>
                 </Button>
               </div>
             </CardContent>

@@ -48,6 +48,8 @@ export async function POST(req: Request) {
       // The app posts its own platform so the funnel can tell an iOS attempt
       // from an Android one without guessing from the user agent.
       platform: body?.platform === 'android' ? 'android' : 'ios',
+      // Played before signing in, kept on the device, written now.
+      claimed: body?.claimed === true,
     });
 
     if (!result.ok) {

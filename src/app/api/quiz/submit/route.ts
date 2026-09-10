@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const { quizId, score, totalQuestions, answers } = await req.json();
+    const { quizId, score, totalQuestions, answers, claimed } = await req.json();
 
     const result = await submitQuizAttempt({
       userId: session.user.id,
@@ -19,6 +19,9 @@ export async function POST(req: NextRequest) {
       totalQuestions,
       answers,
       platform: 'web',
+      // Played before signing in and written now that there is an account.
+      // Only recorded on the funnel event; the attempt itself is ordinary.
+      claimed: claimed === true,
     });
 
     if (!result.ok) {
