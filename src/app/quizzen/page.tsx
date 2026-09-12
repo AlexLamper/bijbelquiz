@@ -1,11 +1,9 @@
-import { connectDB, Quiz, Category, UserProgress } from '@/database';
 import { getServerSession } from 'next-auth';
 import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
 import QuizzesClient from '@/components/QuizzesClient';
-import { buildQuizProgressMap } from '@/lib/quiz-progress';
-import { resolveQuizImageUrl } from '@/lib/quiz-image';
+import { loadQuizIndex } from '@/lib/quiz-index-data';
 
 export const metadata: Metadata = {
   title: 'Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz',
@@ -23,85 +21,6 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
-async function getData(userId?: string) {
-  await connectDB();
-
-  const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
-
-  // A browse-and-search grid only ever shows a title, a description and a
-  // count - never the questions themselves. `Quiz.find().populate()` pulled
-  // every question, answer and explanation for every quiz on the page anyway,
-  // which is invisible at ten quizzes and a real cost once the library grows
-  // past a hundred: the payload for this page was scaling with total question
-  // text, not with quiz count. Aggregating a `questionCount` and the category
-  // fields the cards use keeps this page's weight tied to what it displays.
-  const quizzes = await Quiz.aggregate([
-    { $match: statusFilter },
-    {
-      $lookup: {
-        from: 'categories',
-        localField: 'categoryId',
-        foreignField: '_id',
-        as: 'category',
-      },
-    },
-    { $unwind: { path: '$category', preserveNullAndEmptyArrays: true } },
-    {
-      $project: {
-        title: 1,
-        slug: 1,
-        description: 1,
-        imageUrl: 1,
-        difficulty: 1,
-        isPremium: 1,
-        rewardXp: 1,
-        createdAt: 1,
-        questionCount: { $size: { $ifNull: ['$questions', []] } },
-        categoryImageUrl: '$category.imageUrl',
-        categoryId: {
-          _id: '$category._id',
-          title: '$category.title',
-        },
-      },
-    },
-    { $sort: { isPremium: 1, title: 1 } },
-  ]);
-
-  const categories = await Category.find({ isActive: true }).sort({ sortOrder: 1 }).lean();
-
-  const progressDocs = userId
-    ? await UserProgress.find({ userId })
-        .select('quizId correctAnswers wrongAnswers totalQuestions completedAt')
-        .sort({ completedAt: -1 })
-        .lean()
-    : [];
-  const progressByQuizId = buildQuizProgressMap(
-    progressDocs as unknown as Array<{
-      quizId?: unknown;
-      correctAnswers?: unknown;
-      wrongAnswers?: unknown;
-      totalQuestions?: unknown;
-      completedAt?: unknown;
-    }>
-  );
-
-  const quizzesWithProgress = quizzes.map((quiz) => {
-    const quizId = String((quiz as { _id: unknown })._id);
-    const rest: Record<string, unknown> = { ...quiz };
-    delete rest.categoryImageUrl;
-    return {
-      ...rest,
-      imageUrl: resolveQuizImageUrl(quiz),
-      progress: progressByQuizId[quizId],
-    };
-  });
-
-  return {
-    quizzes: JSON.parse(JSON.stringify(quizzesWithProgress)),
-    categories: JSON.parse(JSON.stringify(categories)),
-  };
-}
-
 export default async function QuizzesPage({
   searchParams,
 }: {
@@ -111,7 +30,7 @@ export default async function QuizzesPage({
   const session = await getServerSession(authOptions);
   const userIsPremium = !!session?.user?.isPremium;
 
-  const { quizzes, categories } = await getData(session?.user?.id);
+  const { quizzes, categories } = await loadQuizIndex(session?.user?.id);
   const currentCategory = params.category || 'all';
 
   let initialCategoryId = 'all';

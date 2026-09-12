@@ -19,6 +19,9 @@ const nextConfig: NextConfig = {
       { source: '/leaderboard', destination: '/ranglijst', permanent: true },
       { source: '/quizzes', destination: '/quizzen', permanent: true },
       { source: '/quizzes/create', destination: '/quizzen/aanmaken', permanent: true },
+      // Layout prototypes for the quiz index, reachable under either spelling.
+      // Temporary: these go once one of them becomes /quizzen.
+      { source: '/quizzes/version-:n', destination: '/quizzen/versie-:n', permanent: false },
       { source: '/quiz/:id/review', destination: '/quiz/:id/beoordeling', permanent: true },
       { source: '/login', destination: '/inloggen', permanent: true },
       { source: '/register', destination: '/registreren', permanent: true },

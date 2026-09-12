@@ -29,8 +29,25 @@ import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import sharp from 'sharp';
-import { SCENES, renderScene } from './lib/quiz-cover-scenes.mjs';
+import { SCENES, SCENE_MODULES, renderScene } from './lib/quiz-cover-scenes.mjs';
 import { H, W } from './lib/quiz-cover-primitives.mjs';
+
+// A slug defined in two scene modules would be drawn by whichever module is
+// spread last, silently. Refuse instead: the covers are supposed to be the
+// record of what a quiz looks like, not the outcome of an import order.
+{
+  const owner = new Map<string, string>();
+  for (const [name, scenes] of Object.entries(SCENE_MODULES)) {
+    for (const slug of Object.keys(scenes)) {
+      const previous = owner.get(slug);
+      if (previous) {
+        console.error(`Scene "${slug}" is defined in both ${previous} and ${name}.`);
+        process.exit(1);
+      }
+      owner.set(slug, name);
+    }
+  }
+}
 
 type ManifestQuiz = { slug: string; title: string; file: string; imageUrl: string; scene: string };
 type Manifest = { template: string; targetDir: string; quizzes: ManifestQuiz[] };
