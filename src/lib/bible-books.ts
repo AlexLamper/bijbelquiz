@@ -120,7 +120,7 @@ export const BIBLE_BOOKS: BibleBook[] = [
   b('2TIM', '2 Timoteüs', '2 Tim.', 'NT', 'brieven-paulus', 4),
   b('TITUS', 'Titus', 'Tit.', 'NT', 'brieven-paulus', 3),
   b('PHLM', 'Filemon', 'Filem.', 'NT', 'brieven-paulus', 1),
-  b('HEB', 'Hebreeën', 'Hebr.', 'NT', 'algemene-brieven', 13),
+  b('HEB', 'Hebree\u00EBn', 'Hebr.', 'NT', 'algemene-brieven', 13),
   b('JAS', 'Jakobus', 'Jak.', 'NT', 'algemene-brieven', 5),
   b('1PET', '1 Petrus', '1 Petr.', 'NT', 'algemene-brieven', 5),
   b('2PET', '2 Petrus', '2 Petr.', 'NT', 'algemene-brieven', 3),

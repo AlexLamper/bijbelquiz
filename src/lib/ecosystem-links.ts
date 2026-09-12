@@ -117,7 +117,7 @@ const STUDIE_BOOK_NAMES: Record<string, string> = {
   '2TIM': '2 Timotheüs',
   TITUS: 'Titus',
   PHLM: 'Filemon',
-  HEB: 'Hebreeën',
+  HEB: 'Hebree\u00EBn',
   JAS: 'Jakobus',
   '1PET': '1 Petrus',
   '2PET': '2 Petrus',

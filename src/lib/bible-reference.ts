@@ -65,7 +65,7 @@ export const DUTCH_ABBREVIATIONS: Record<string, string> = {
   '2 Tim.': '2 Timotheüs', '2 Tim': '2 Timotheüs',
   'Tit.': 'Titus', 'Tit': 'Titus',
   'Filem.': 'Filemon', 'Filem': 'Filemon',
-  'Hebr.': 'Hebreeën', 'Hebr': 'Hebreeën',
+  'Hebr.': 'Hebree\u00EBn', 'Hebr': 'Hebree\u00EBn',
   'Jak.': 'Jakobus', 'Jak': 'Jakobus',
   '1 Petr.': '1 Petrus', '1 Petr': '1 Petrus',
   '2 Petr.': '2 Petrus', '2 Petr': '2 Petrus',
