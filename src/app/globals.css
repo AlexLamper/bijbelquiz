@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Tailwind auto-scans every non-gitignored file. Root-level notes contain Windows
+   paths like `\49513071-...`, which the scanner reads as a CSS escape and crashes
+   the build with "Invalid code point". Markdown never holds class names. */
+@source not "../../**/*.md";
+
 @custom-variant dark (&:is(.dark *));
 
 /* Smooth scrolling is opt-in, never global. On `html` it also applies to the
