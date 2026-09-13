@@ -130,12 +130,18 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
   const warn = (message: string) => report.warnings.push(message);
 
   let quiz: Record<string, unknown>;
+  let raw: string;
   try {
-    quiz = JSON.parse(fs.readFileSync(file, 'utf8'));
+    raw = fs.readFileSync(file, 'utf8');
+    quiz = JSON.parse(raw);
   } catch (error) {
     err(`geen geldige JSON: ${(error as Error).message}`);
     return report;
   }
+
+  // UTF-8 that was read as cp1252 and saved again: "HebreeÃ«n", "â€”".
+  const mojibake = raw.match(/\S*(?:\u00c3[\u0080-\u00bf]|\u00e2\u20ac)\S*/);
+  if (mojibake) err(`dubbel gecodeerde tekens (mojibake), bv. ${mojibake[0]}`);
 
   // ── structure ────────────────────────────────────────────────────────────
   for (const key of QUIZ_KEYS) {
