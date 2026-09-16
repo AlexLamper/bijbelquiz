@@ -159,7 +159,7 @@ export default function StudiePromoModal({ passage, quizSlug }: StudiePromoModal
           <div className="relative mx-7 mt-5 hidden aspect-[16/6] overflow-hidden rounded-md border border-rule bg-paper-sunken sm:block">
             <Image
               src="/images/bijbelstudie/lezen.webp"
-              alt="Genesis 5 in BijbelStudie, met het commentaar van Matthew Henry ernaast"
+              alt="Genesis 1 in BijbelStudie, met het commentaar van Matthew Henry ernaast"
               fill
               sizes="520px"
               className="object-cover object-left-top"

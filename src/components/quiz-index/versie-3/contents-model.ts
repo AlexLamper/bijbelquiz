@@ -8,7 +8,7 @@
 
 import { BOOK_GROUPS, bookOrder, type BookGroup, type Testament } from '@/lib/bible-books';
 import type { QuizIndexBook, QuizIndexQuiz } from '@/lib/quiz-index-data';
-import { normalizeSearchText } from '@/lib/quiz-series';
+import { normalizeSearchText, partMarker } from '@/lib/quiz-series';
 
 export type Quiz = QuizIndexQuiz;
 export type Book = QuizIndexBook;
@@ -56,9 +56,9 @@ export function bestScore(quiz: Quiz): string | null {
   return `${quiz.progress?.bestCorrectAnswers ?? 0}/${total}`;
 }
 
-/** "Deel 5" inside a series, the full title otherwise. */
+/** "Hoofdstuk 5" / "Deel 5" inside a series, the full title otherwise. */
 export function partLabel(quiz: Quiz): string {
-  return quiz.part > 0 ? `Deel ${quiz.part}` : quiz.title;
+  return quiz.part > 0 ? (partMarker(quiz.title) ?? `Deel ${quiz.part}`) : quiz.title;
 }
 
 /** Canonical order: book, first chapter, part, title. */

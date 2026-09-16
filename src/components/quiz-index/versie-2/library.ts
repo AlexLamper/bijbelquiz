@@ -5,7 +5,7 @@
  */
 
 import type { QuizIndexBook, QuizIndexQuiz } from '@/lib/quiz-index-data';
-import { normalizeSearchText } from '@/lib/quiz-series';
+import { normalizeSearchText, partMarker } from '@/lib/quiz-series';
 import type { Pigment } from '@/components/editorial';
 
 /** Difficulty carries a pigment: verdigris, neutral, vermilion. Never a fill. */
@@ -63,9 +63,9 @@ export function chapterLabel(quiz: Pick<QuizIndexQuiz, 'chapterFrom' | 'chapterT
   return `Hfdst. ${quiz.chapterFrom}-${quiz.chapterTo}`;
 }
 
-/** Short row title: "Deel 3" inside a series, the full title otherwise. */
+/** Short row title: "Hoofdstuk 3" / "Deel 3" inside a series, the full title otherwise. */
 export function rowTitle(quiz: Pick<QuizIndexQuiz, 'part' | 'title'>): string {
-  return quiz.part > 0 ? `Deel ${quiz.part}` : quiz.title;
+  return quiz.part > 0 ? (partMarker(quiz.title) ?? `Deel ${quiz.part}`) : quiz.title;
 }
 
 /** Quizzes of one book, in reading order: chapter first, then part, then title. */

@@ -186,6 +186,105 @@ const STUDIE_BOOK_NAMES: Record<string, string> = {
   REV: 'Openbaring',
 };
 
+/**
+ * Canonical book code to the folder name of BijbelStudie's Statenvertaling,
+ * which is what `/lezen?book=` has to match.
+ *
+ * Not the same list as `STUDIE_BOOK_NAMES` above: those are readable Dutch names
+ * for labels ("Lees 1 Korinthe 13"), these are the exact folder spellings the
+ * reader looks up, quirks included ("2 Corinthiër", "Filémon", "Haggaï").
+ * Sending the label spelling used to open Genesis 1 for a dozen books. Copied
+ * from `CANONICAL_NL` in BijbelStudie's `lib/book-mapping.ts`; keep them equal.
+ */
+const STUDIE_READER_BOOKS: Record<string, string> = {
+  GEN: 'Genesis',
+  EXOD: 'Exodus',
+  LEV: 'Leviticus',
+  NUM: 'Numeri',
+  DEUT: 'Deuteronomium',
+  JOSH: 'Jozua',
+  JUDG: 'Richteren',
+  RUTH: 'Ruth',
+  '1SAM': '1 Samuël',
+  '2SAM': '2 Samuël',
+  '1KGS': '1 Koningen',
+  '2KGS': '2 Koningen',
+  '1CHR': '1 Kronieken',
+  '2CHR': '2 Kronieken',
+  EZRA: 'Ezra',
+  NEH: 'Nehemia',
+  ESTH: 'Esther',
+  JOB: 'Job',
+  PS: 'Psalmen',
+  PROV: 'Spreuken',
+  ECCL: 'Prediker',
+  SONG: 'Hooglied',
+  ISA: 'Jesaja',
+  JER: 'Jeremia',
+  LAM: 'Klaagliederen',
+  EZEK: 'Ezechiël',
+  DAN: 'Daniël',
+  HOS: 'Hosea',
+  JOEL: 'Joël',
+  AMOS: 'Amos',
+  OBAD: 'Obadja',
+  JONAH: 'Jona',
+  MIC: 'Micha',
+  NAH: 'Nahum',
+  HAB: 'Habakuk',
+  ZEPH: 'Zefanja',
+  HAG: 'Haggaï',
+  ZECH: 'Zacharia',
+  MAL: 'Maleachi',
+  MATT: 'Mattheüs',
+  MARK: 'Markus',
+  LUKE: 'Lukas',
+  JOHN: 'Johannes',
+  ACTS: 'Handelingen',
+  ROM: 'Romeinen',
+  '1COR': '1 Corinthiërs',
+  '2COR': '2 Corinthiër',
+  GAL: 'Galaten',
+  EPH: 'Efeziërs',
+  PHIL: 'Filippenzen',
+  COL: 'Colossenzen',
+  '1THESS': '1 Thessalonicenzen',
+  '2THESS': '2 Thessalonicenzen',
+  '1TIM': '1 Timotheüs',
+  '2TIM': '2 Timotheüs',
+  TITUS: 'Titus',
+  PHLM: 'Filémon',
+  HEB: 'Hebreeën',
+  JAS: 'Jakobus',
+  '1PET': '1 Petrus',
+  '2PET': '2 Petrus',
+  '1JOHN': '1 Johannes',
+  '2JOHN': '2 Johannes',
+  '3JOHN': '3 Johannes',
+  JUDE: 'Judas',
+  REV: 'Openbaring',
+};
+
+/** The translation whose folder names `STUDIE_READER_BOOKS` holds. */
+export const STUDIE_READER_VERSION = 'statenvertaling';
+
+const CODE_BY_STUDIE_BOOK_NAME = new Map(
+  Object.entries(STUDIE_BOOK_NAMES).map(([code, name]) => [name, code]),
+);
+
+/**
+ * The spelling `/lezen?book=` needs for any name of a book: one of this file's
+ * labels, a canonical code, or anything `book-canon.ts` recognises. Unknown
+ * names pass through unchanged; BijbelStudie resolves loose spellings too.
+ */
+export function studieReaderBookName(book: string): string {
+  const code =
+    CODE_BY_STUDIE_BOOK_NAME.get(book) ??
+    (STUDIE_READER_BOOKS[book] ? book : null) ??
+    toBookCode(book);
+  return (code && STUDIE_READER_BOOKS[code]) || book;
+}
+
 /** A passage, in the spelling BijbelStudie uses. */
 export interface StudiePassage {
   /** BijbelStudie's Dutch book name, e.g. "Mattheüs". */
@@ -302,8 +401,13 @@ function withCampaign(url: URL, { surface, quizSlug }: StudieLinkOptions): strin
 /** Deep link to a chapter in BijbelStudie's reader. */
 export function studieReadHref(passage: StudiePassage, options: StudieLinkOptions): string {
   const url = new URL('/lezen', BIJBEL_STUDIE_BASE_URL);
-  url.searchParams.set('book', passage.book);
+  url.searchParams.set('book', studieReaderBookName(passage.book));
   url.searchParams.set('chapter', String(passage.chapter));
+  // BijbelStudie only honoured `book`/`chapter` when `version` came with them;
+  // without it the reader opened last-read or Genesis 1. It now accepts links
+  // without one, but naming the translation the folder names belong to keeps
+  // the link exact on any deploy.
+  url.searchParams.set('version', STUDIE_READER_VERSION);
   return withCampaign(url, options);
 }
 

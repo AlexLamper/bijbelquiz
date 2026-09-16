@@ -305,6 +305,15 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
     );
   }
 
+  // ── title: "<Boek> bijbelquiz - Hoofdstuk <n>", n = the chapter covered ──
+  const title = String(quiz.title ?? '');
+  const chapterInTitle = title.match(/ - Hoofdstuk (\d+)$/);
+  if (!chapterInTitle) {
+    warn(`titel volgt niet "<Boek> bijbelquiz - Hoofdstuk <n>": "${title}"`);
+  } else if (passage && Number(chapterInTitle[1]) !== passage.chapter) {
+    err(`titel noemt hoofdstuk ${chapterInTitle[1]}, maar de vragen gaan over hoofdstuk ${passage.chapter}`);
+  }
+
   // ── every reference must resolve to real Statenvertaling text ────────────
   if (!NO_FETCH) {
     for (const { index, ref } of refsToCheck) {

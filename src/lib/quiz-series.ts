@@ -62,6 +62,17 @@ export function readSeries(title: string): QuizSeries {
   return { label: base, key: normalizeSearchText(base), part };
 }
 
+/**
+ * The part marker exactly as the title words it - "Hoofdstuk 5" or "Deel 5" -
+ * so a short row label never renames a chapter quiz to a "Deel". Null when the
+ * title carries no Hoofdstuk/Deel marker.
+ */
+export function partMarker(title: string): string | null {
+  const match = (title || '').trim().match(/\b(hoofdstuk|deel)\s*([0-9]+)\s*$/i);
+  if (!match) return null;
+  return `${match[1].charAt(0).toUpperCase()}${match[1].slice(1).toLowerCase()} ${match[2]}`;
+}
+
 /** Keep the incoming order, but pull every part of a series together, in order. */
 export function groupSeries<T extends { title: string }>(items: T[]): T[] {
   const firstSeen = new Map<string, number>();

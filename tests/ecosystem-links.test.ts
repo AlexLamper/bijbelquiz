@@ -11,6 +11,7 @@ import {
   studiePricingHref,
   studiePromo,
   studieReadHref,
+  studieReaderBookName,
 } from '@/lib/ecosystem-links';
 
 /**
@@ -78,6 +79,7 @@ test('the read link carries the chapter and the attribution', () => {
   assert.equal(url.pathname, '/lezen');
   assert.equal(url.searchParams.get('book'), 'Genesis');
   assert.equal(url.searchParams.get('chapter'), '3');
+  assert.equal(url.searchParams.get('version'), 'statenvertaling');
   assert.equal(url.searchParams.get('utm_source'), 'bijbelquiz');
   assert.equal(url.searchParams.get('utm_medium'), 'explanation');
   assert.equal(url.searchParams.get('utm_campaign'), 'genesis-deel-1');
@@ -93,6 +95,53 @@ test('a quiz without a resolvable chapter still gets a link', () => {
   assert.equal(url.searchParams.get('utm_medium'), 'result_primary');
   assert.equal(link.passage, null);
   assert.ok(link.label.includes('BijbelStudie'));
+});
+
+// BijbelStudie's Statenvertaling folder names, in canonical order - what
+// /lezen?book= must match exactly (public/data/books-index.json over there).
+const STATENVERTALING_BOOKS = [
+  'Genesis', 'Exodus', 'Leviticus', 'Numeri', 'Deuteronomium', 'Jozua', 'Richteren', 'Ruth',
+  '1 Samuël', '2 Samuël', '1 Koningen', '2 Koningen', '1 Kronieken', '2 Kronieken', 'Ezra',
+  'Nehemia', 'Esther', 'Job', 'Psalmen', 'Spreuken', 'Prediker', 'Hooglied', 'Jesaja', 'Jeremia',
+  'Klaagliederen', 'Ezechiël', 'Daniël', 'Hosea', 'Joël', 'Amos', 'Obadja', 'Jona', 'Micha',
+  'Nahum', 'Habakuk', 'Zefanja', 'Haggaï', 'Zacharia', 'Maleachi', 'Mattheüs', 'Markus', 'Lukas',
+  'Johannes', 'Handelingen', 'Romeinen', '1 Corinthiërs', '2 Corinthiër', 'Galaten',
+  'Efeziërs', 'Filippenzen', 'Colossenzen', '1 Thessalonicenzen', '2 Thessalonicenzen',
+  '1 Timotheüs', '2 Timotheüs', 'Titus', 'Filémon', 'Hebreeën', 'Jakobus', '1 Petrus',
+  '2 Petrus', '1 Johannes', '2 Johannes', '3 Johannes', 'Judas', 'Openbaring',
+];
+
+const BOOK_CODES_IN_ORDER = [
+  'GEN', 'EXOD', 'LEV', 'NUM', 'DEUT', 'JOSH', 'JUDG', 'RUTH', '1SAM', '2SAM', '1KGS', '2KGS',
+  '1CHR', '2CHR', 'EZRA', 'NEH', 'ESTH', 'JOB', 'PS', 'PROV', 'ECCL', 'SONG', 'ISA', 'JER', 'LAM',
+  'EZEK', 'DAN', 'HOS', 'JOEL', 'AMOS', 'OBAD', 'JONAH', 'MIC', 'NAH', 'HAB', 'ZEPH', 'HAG', 'ZECH',
+  'MAL', 'MATT', 'MARK', 'LUKE', 'JOHN', 'ACTS', 'ROM', '1COR', '2COR', 'GAL', 'EPH', 'PHIL', 'COL',
+  '1THESS', '2THESS', '1TIM', '2TIM', 'TITUS', 'PHLM', 'HEB', 'JAS', '1PET', '2PET', '1JOHN',
+  '2JOHN', '3JOHN', 'JUDE', 'REV',
+];
+
+test('every book links to the exact Statenvertaling folder name BijbelStudie opens', () => {
+  assert.equal(BOOK_CODES_IN_ORDER.length, 66);
+  BOOK_CODES_IN_ORDER.forEach((code, i) => {
+    const passage = passageFromQuestion({ refBook: code, refChapter: 1 });
+    assert.ok(passage, code);
+    const url = new URL(studieReadHref(passage, { surface: 'explanation' }));
+    assert.equal(url.searchParams.get('book'), STATENVERTALING_BOOKS[i], code);
+    assert.equal(url.searchParams.get('book')?.normalize('NFC'), url.searchParams.get('book'), code);
+  });
+});
+
+test('the reported Hebreeen link and loose spellings resolve to reader names', () => {
+  const url = new URL(
+    studieReadHref({ book: 'Hebreeën', chapter: 9 }, { surface: 'explanation', quizSlug: 'hebreeen-bijbelquiz-deel-9' }),
+  );
+  assert.equal(url.searchParams.get('book'), 'Hebreeën');
+  assert.equal(url.searchParams.get('chapter'), '9');
+  assert.equal(studieReaderBookName('1 Korinthe'), '1 Corinthiërs');
+  assert.equal(studieReaderBookName('1 Korintiers'), '1 Corinthiërs');
+  assert.equal(studieReaderBookName('Filemon'), 'Filémon');
+  assert.equal(studieReaderBookName('2COR'), '2 Corinthiër');
+  assert.equal(studieReaderBookName('Onbekend'), 'Onbekend');
 });
 
 test('a diacritic in the book name survives the query string intact', () => {

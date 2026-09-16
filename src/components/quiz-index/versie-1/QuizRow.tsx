@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowRight, Check } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { partMarker } from '@/lib/quiz-series';
 import { bestScoreLabel, difficultyOf, isPlayed, quizHref, type Quiz } from './shelves';
 
 /**
@@ -34,8 +35,10 @@ export function QuizRow({
 
   const meta: string[] = [];
   if (showBook && quiz.bookTitle) meta.push(chapter ? `${quiz.bookTitle} ${chapter}` : quiz.bookTitle);
-  if (quiz.part > 0) meta.push(`Deel ${quiz.part}`);
-  if (!showBook && chapter) meta.push(`Hoofdstuk ${chapter}`);
+  const marker = quiz.part > 0 ? (partMarker(quiz.title) ?? `Deel ${quiz.part}`) : null;
+  // A "Hoofdstuk N" title already names the chapter; do not print it twice.
+  if (marker) meta.push(marker);
+  if (!showBook && chapter && !marker?.startsWith('Hoofdstuk')) meta.push(`Hoofdstuk ${chapter}`);
 
   return (
     <Link

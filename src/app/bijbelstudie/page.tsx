@@ -134,7 +134,7 @@ export default function BijbelStudiePage() {
             <div className="relative aspect-[1600/1167] overflow-hidden rounded-lg border border-rule bg-paper-sunken">
               <Image
                 src="/images/bijbelstudie/lezen.webp"
-                alt="Genesis 5 in de Statenvertaling op BijbelStudie, met het commentaar van Matthew Henry ernaast"
+                alt="Genesis 1 in de Statenvertaling op BijbelStudie, met het commentaar van Matthew Henry ernaast"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 640px"
@@ -184,7 +184,7 @@ export default function BijbelStudiePage() {
             <div className="relative aspect-[1600/1167] overflow-hidden rounded-lg border border-rule bg-paper-sunken">
               <Image
                 src="/images/bijbelstudie/studies.webp"
-                alt="Een begeleide studie van Exodus op BijbelStudie, met veertig lessen van ongeveer tien minuten"
+                alt="De begeleide studie van Filippenzen op BijbelStudie: vier lessen van ongeveer tien minuten per hoofdstuk"
                 fill
                 sizes="(max-width: 1024px) 100vw, 640px"
                 className="object-cover object-left-top"
