@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import StudieLink from '@/components/StudieLink';
 import { InkButton } from '@/components/editorial';
 import { DownloadButtons } from '@/components/landing/DownloadButtons';
 
@@ -39,14 +40,13 @@ export function CTASection() {
         <div className="mt-10 flex flex-col items-center justify-center gap-x-6 gap-y-2 border-t border-rule pt-6 text-xs text-ink-muted sm:flex-row">
           <p>
             Verdiep je verder via{' '}
-            <Link
-              href="https://www.bijbelstudie.io"
-              target="_blank"
-              rel="noopener noreferrer"
+            <StudieLink
+              passage={null}
+              surface="landing_cta"
+              icon={false}
+              label="BijbelStudie"
               className="font-medium text-ink underline decoration-rule-strong underline-offset-4 transition-colors hover:decoration-ink"
-            >
-              Bijbel Studie
-            </Link>
+            />
           </p>
 
           <span aria-hidden className="hidden h-3 w-px bg-rule sm:block" />

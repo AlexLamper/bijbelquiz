@@ -1,6 +1,7 @@
 import { AnalyticsEvent, Quiz, User, UserProgress, connectDB } from '@/database';
 import type { ICategory } from '@/database';
 
+import { CLAIMED_WEB_COMPLETION } from './events';
 import { getInternalAccountCount, premiumUserFilter } from './internal-accounts';
 import { ROUTE_GROUP_LABELS, SITE_ROUTES, type RouteGroup, type SiteRoute, routeLabel } from './routes';
 
@@ -208,6 +209,7 @@ export async function getDailySeries(windowDays: number): Promise<DailyPoint[]> 
         $match: {
           name: { $in: ['page_view', 'session_start', 'quiz_completed'] },
           createdAt: { $gte: from },
+          $nor: [CLAIMED_WEB_COMPLETION],
         },
       },
       { $group: { _id: { day: dayKey(), name: '$name' }, count: { $sum: 1 } } },
@@ -828,6 +830,7 @@ export async function getQuizReport(windowDays: number): Promise<QuizReport> {
         $match: {
           name: { $in: ['quiz_started', 'quiz_completed', 'quiz_abandoned'] },
           createdAt: { $gte: from },
+          $nor: [CLAIMED_WEB_COMPLETION],
         },
       },
       { $group: { _id: { quizId: '$props.quizId', name: '$name' }, count: { $sum: 1 } } },

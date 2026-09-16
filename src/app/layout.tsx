@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     default: "BijbelQuiz - Speel Gratis Bijbelquizzen",
     template: "%s | BijbelQuiz",
   },
-  description: "Speel gratis Bijbelquizzen en test je kennis van het Oude & Nieuwe Testament. Interactieve vragen, direct feedback, ranglijst en premium studies. Voor jong en oud!",
+  description: "Speel gratis Bijbelquizzen en test je kennis van het Oude & Nieuwe Testament. Interactieve vragen, direct feedback, ranglijst en samen spelen. Voor jong en oud!",
   keywords: [
     "bijbel quiz", "bijbel quiz online", "gratis bijbel quiz", "bijbel quizzen", "bijbelkennis",
     "bijbel trivia", "christelijke quiz", "bijbel vragen", "bijbelstudie", "online bijbelspel",

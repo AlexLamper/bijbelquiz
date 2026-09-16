@@ -30,6 +30,7 @@ export function getStaticSitemapEntries(baseUrl = getSiteBaseUrl()): SitemapEntr
     { url: `${baseUrl}/quizzen`, priority: 0.95, changeFrequency: 'daily' },
     { url: `${baseUrl}/premium`, priority: 0.9, changeFrequency: 'weekly' },
     { url: `${baseUrl}/samen-spelen`, priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${baseUrl}/bijbelstudie`, priority: 0.7, changeFrequency: 'monthly' },
     { url: `${baseUrl}/ranglijst`, priority: 0.85, changeFrequency: 'daily' },
     { url: `${baseUrl}/contact`, priority: 0.65, changeFrequency: 'monthly' },
     { url: `${baseUrl}/hulp`, priority: 0.65, changeFrequency: 'monthly' },

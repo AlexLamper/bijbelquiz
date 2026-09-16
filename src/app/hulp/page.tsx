@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, LifeBuoy } from 'lucide-react'
 
+import StudieLink from '@/components/StudieLink'
 import { SimpleAccordion } from '@/components/ui/accordion'
 
 export const metadata: Metadata = {
@@ -13,12 +14,12 @@ export const metadata: Metadata = {
 export default function HelpPage() {
   const faqItems = [
     {
-      title: 'Hoe werkt het Premium lidmaatschap?',
-      content: 'Na betaling krijg je direct toegang tot alle quizzen, uitgebreide uitleg en Premium functies.',
+      title: 'Is BijbelQuiz gratis?',
+      content: 'Ja. Alle quizzen, de uitleg bij de vragen en samen spelen zijn gratis. Voor jeugdgroepen, gemeentes en scholen is er een groepslicentie.',
     },
     {
       title: 'Kan ik mijn abonnement opzeggen?',
-      content: 'Als je een maandabonnement hebt, kun je dit beheren via je profiel en het Stripe-portaal.',
+      content: 'Heb je nog een Premium-abonnement van vroeger, dan beheer en beëindig je het via Lidmaatschap in je account.',
     },
     {
       title: 'Waar kan ik een probleem melden?',
@@ -26,7 +27,7 @@ export default function HelpPage() {
     },
     {
       title: 'Waar vind ik extra uitleg over een Bijbelonderwerp?',
-      content: 'Voor extra verdieping verwijzen we op meerdere plekken naar Bijbel Studie met achtergrond en context.',
+      content: 'Op BijbelStudie, gemaakt door hetzelfde team als BijbelQuiz. Daar lees je elk hoofdstuk met commentaar en begeleide studies. Bij elke vraag in een quiz staat een link naar het hoofdstuk waar hij over gaat.',
     },
   ]
   const faqJsonLd = {
@@ -56,7 +57,7 @@ export default function HelpPage() {
           </div>
           <h1 className="mt-4 text-4xl text-ink">Helpcentrum</h1>
           <p className="mt-3 max-w-2xl text-sm text-ink-soft">
-            Snel antwoord op veelgestelde vragen over Premium, betalingen en gebruik van BijbelQuiz.
+            Snel antwoord op veelgestelde vragen over BijbelQuiz, groepslicenties en BijbelStudie.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2.5">
@@ -81,10 +82,18 @@ export default function HelpPage() {
         <div className="grid gap-3 md:max-w-3xl md:grid-cols-2">
           <div className="rounded-lg border border-rule bg-paper-raised p-4">
             <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Meer leren</p>
-            <p className="mt-2 text-sm text-muted-foreground">Verdiep je verder per thema via Bijbel Studie.</p>
-            <Link href="https://www.bijbelstudie.io" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-medium text-ink hover:text-ink">
-              Naar Bijbel Studie
-            </Link>
+            <p className="mt-2 text-sm text-muted-foreground">Verdiep je verder per thema via BijbelStudie, van hetzelfde team.</p>
+            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+              <StudieLink
+                passage={null}
+                surface="help"
+                label="Naar BijbelStudie"
+                className="inline-flex items-center gap-1 text-sm font-medium text-ink hover:text-ink"
+              />
+              <Link href="/bijbelstudie" className="inline-flex text-sm font-medium text-ink-soft hover:text-ink">
+                Wat is BijbelStudie?
+              </Link>
+            </div>
           </div>
           <div className="rounded-lg border border-rule bg-paper-raised p-4">
             <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Platform</p>

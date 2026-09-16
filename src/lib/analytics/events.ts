@@ -97,13 +97,39 @@ export const ANALYTICS_EVENTS = [
    */
   'bijbelstudie_click',
   /**
-   * The post-quiz card was closed without following it. Paired with
-   * `bijbelstudie_click{surface:'interstitial'}` this is the only honest read
-   * on whether the card is welcome or merely tolerated - which is the question
-   * that decides whether it stays.
+   * The post-quiz popup was closed without following it, with `via` saying
+   * how. Paired with `bijbelstudie_click{surface:'interstitial'}` this is the
+   * only honest read on whether the popup is welcome or merely tolerated -
+   * which is the question that decides whether it stays.
    */
   'bijbelstudie_prompt_dismissed',
+  /** The post-quiz popup opened. The denominator for the two events above. */
+  'bijbelstudie_prompt_shown',
+  /**
+   * The BijbelStudie promo code was copied. The last step visible from here:
+   * whether it was redeemed only shows in BijbelStudie's Stripe.
+   */
+  'bijbelstudie_code_copied',
 ] as const;
+
+/**
+ * Filter for the `quiz_completed` rows that count as a completion.
+ *
+ * A guest's completion is sent from the browser the moment it happens. If that
+ * guest later signs in, the parked attempt is submitted again and the server
+ * records a second `quiz_completed` with `claimed: true` for it. Counting both
+ * would double every claimed attempt, so the web claim is left out. The app's
+ * claims are kept: the app does not send a guest completion of its own.
+ *
+ * `$nor: [CLAIMED_WEB_COMPLETION]` inside a match that also reads other events.
+ */
+export const CLAIMED_WEB_COMPLETION = {
+  name: 'quiz_completed',
+  platform: 'web',
+  'props.claimed': true,
+};
+
+export const COUNTED_COMPLETION = { $nor: [CLAIMED_WEB_COMPLETION] };
 
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];
 

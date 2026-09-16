@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
 import { getDayThirtyRetention, getFunnelReport, getRecentEvents } from '@/lib/analytics/funnel';
+import { STUDIE_PROMO_CODE } from '@/lib/ecosystem-links';
 import { MULTIPLAYER_FREE_ROOM_QUOTA } from '@/lib/premium-benefits';
 
 export const metadata: Metadata = {
@@ -91,9 +92,9 @@ export default async function FunnelPage() {
             meta={`${report.handover.perCompletion}% van ${report.activation.quizzesCompleted} afgeronde quizzen`}
           />
           <Figure
-            label="Kaart weggeklikt"
+            label="Popup weggeklikt"
             value={`${report.handover.dismissals}`}
-            meta="post-quiz kaart gesloten zonder door te klikken"
+            meta={`van ${report.handover.shown} keer getoond na een quiz`}
           />
           <Figure
             label="Retentie dag 30"
@@ -110,6 +111,11 @@ export default async function FunnelPage() {
           <p className="mt-2 text-sm text-ink-muted">
             Per plek waar de link staat. Een plek die na twee weken onderaan staat mag weg -
             hij kost aandacht die de plekken erboven beter gebruiken.
+          </p>
+          <p className="mt-2 text-sm text-ink-muted">
+            De code {STUDIE_PROMO_CODE} is {report.handover.codeCopies} keer gekopieerd. Hoe vaak hij
+            echt is gebruikt, staat bij de promotiecodes in de Stripe van BijbelStudie: BijbelStudie
+            zelf houdt niet bij wie er vanaf BijbelQuiz komt.
           </p>
 
           <div className="mt-5 overflow-x-auto rounded-lg border border-rule bg-paper-raised">

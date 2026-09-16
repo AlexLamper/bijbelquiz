@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, Check, ChevronDown, Timer, Type } from 'lucide-react';
 
+import { BijbelStudieMark } from '@/components/BijbelStudieMark';
+import StudieLink from '@/components/StudieLink';
+import { passageFromBookName } from '@/lib/ecosystem-links';
 import type { QuizPassage } from '@/lib/quiz-passage';
 import {
   QUESTION_TIMER_CHOICES,
@@ -135,6 +138,8 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
     if (!seenMarked.current) persist({});
     onStart({ readPassageFirst: Boolean(passage) && readPassageFirst, timerSeconds });
   };
+
+  const studiePassage = passage ? passageFromBookName(passage.book, passage.chapter) : null;
 
   const difficultyLabel = DIFFICULTY_LABELS[(quiz.difficulty || '').toLowerCase()] || 'Gemiddeld';
   const minutes = Math.min(25, Math.max(3, Math.ceil(quiz.questionCount / 2)));
@@ -388,6 +393,22 @@ export default function QuizStartScreen({ quiz, passage, lastResult, setupSeen, 
             <p className="mt-2 text-center text-xs text-ink-muted">
               Tijdens de quiz aanpasbaar via het instellingen-icoon.
             </p>
+
+            {/* A quiet promise of where this goes next, not a detour before
+                the first question: it opens in its own tab and says "after". */}
+            {studiePassage && (
+              <p className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 border-t border-rule pt-3.5 text-center text-xs text-ink-muted">
+                <BijbelStudieMark className="h-3.5 w-3.5" />
+                <span>Na de quiz:</span>
+                <StudieLink
+                  passage={studiePassage}
+                  surface="quiz_intro"
+                  icon={false}
+                  label={`lees ${studiePassage.book} ${studiePassage.chapter} met uitleg op BijbelStudie`}
+                  className="font-medium text-ink-soft underline decoration-rule-strong underline-offset-4 transition-colors hover:text-ink hover:decoration-ink"
+                />
+              </p>
+            )}
           </section>
         </div>
       </div>

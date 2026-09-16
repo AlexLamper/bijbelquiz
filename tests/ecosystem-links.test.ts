@@ -6,6 +6,10 @@ import {
   passageFromBookName,
   passageFromQuestion,
   studieLinkForPassage,
+  STUDIE_PROMO_CODE,
+  STUDIE_PROMO_EXPIRES_AT,
+  studiePricingHref,
+  studiePromo,
   studieReadHref,
 } from '@/lib/ecosystem-links';
 
@@ -94,4 +98,27 @@ test('a quiz without a resolvable chapter still gets a link', () => {
 test('a diacritic in the book name survives the query string intact', () => {
   const url = new URL(studieReadHref({ book: 'Mattheüs', chapter: 5 }, { surface: 'review' }));
   assert.equal(url.searchParams.get('book'), 'Mattheüs');
+});
+
+test('the promo code only shows once it is switched on, and stops at its expiry', () => {
+  // Switched off by default so a deploy cannot advertise a code that was never
+  // created in BijbelStudie's Stripe.
+  assert.equal(studiePromo(Date.parse('2026-10-01T12:00:00+02:00'), undefined), null);
+  assert.equal(studiePromo(Date.parse('2026-10-01T12:00:00+02:00'), 'false'), null);
+
+  const promo = studiePromo(Date.parse('2026-10-01T12:00:00+02:00'), 'true');
+  assert.equal(promo?.code, STUDIE_PROMO_CODE);
+
+  // The same moment Stripe stops accepting it.
+  const expiry = Date.parse(STUDIE_PROMO_EXPIRES_AT);
+  assert.ok(studiePromo(expiry, 'true'));
+  assert.equal(studiePromo(expiry + 1000, 'true'), null);
+});
+
+test('the pricing link goes to the subscription page with the attribution', () => {
+  const url = new URL(studiePricingHref({ surface: 'interstitial_offer', quizSlug: 'genesis-deel-1' }));
+
+  assert.equal(url.origin, 'https://www.bijbelstudie.io');
+  assert.equal(url.pathname, '/abonnement');
+  assert.equal(url.searchParams.get('utm_medium'), 'interstitial_offer');
 });

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import StudieLink from '@/components/StudieLink';
+
 const columns = [
   {
     title: 'Quizzen',
@@ -31,7 +33,7 @@ const columns = [
   {
     title: 'Meer van ons',
     links: [
-      { href: 'https://www.bijbelstudie.io', label: 'BijbelStudie', external: true },
+      { href: '/bijbelstudie', label: 'BijbelStudie' },
       { href: 'https://www.bijbelapi.com', label: 'BijbelAPI', external: true },
     ],
   },
@@ -96,13 +98,14 @@ export function Footer() {
               BijbelAPI
             </a>{' '}
             en hoort bij{' '}
-            <a
-              href="https://www.bijbelstudie.io"
-              rel="noopener"
+            <StudieLink
+              passage={null}
+              surface="footer"
+              newTab={false}
+              icon={false}
+              label="BijbelStudie"
               className="text-ink-soft underline-offset-2 transition-colors hover:text-ink hover:underline"
-            >
-              BijbelStudie
-            </a>
+            />
             . Gemaakt door{' '}
             <span className="text-ink-soft">Alex Lamper</span>.
           </p>

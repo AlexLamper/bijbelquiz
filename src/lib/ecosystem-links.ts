@@ -22,6 +22,51 @@ export const BIJBEL_STUDIE_BASE_URL = 'https://www.bijbelstudie.io';
 export const BIJBEL_API_BASE_URL = 'https://www.bijbelapi.com';
 
 /**
+ * The welcome offer for BijbelQuiz players: the first month of BijbelStudie Pro
+ * for free.
+ *
+ * It is a Stripe promotion code in BijbelStudie's account, typed in at its own
+ * checkout (which has `allow_promotion_codes` on). Nothing on BijbelStudie's
+ * side knows about BijbelQuiz, so the redemption count of this code in Stripe is
+ * also the only place a paying subscriber can be traced back to this site - the
+ * utm parameters below arrive, but BijbelStudie does not record them.
+ *
+ * A fixed EUR 9,99 off the first invoice rather than 100% off one month: on the
+ * monthly plan that is the same free month, and on the annual plan it is
+ * EUR 9,99 off the year instead of a free year. The copy says both.
+ *
+ * `scripts/create-bijbelstudie-promo.ts` creates the code from these values.
+ * The offer only shows once `NEXT_PUBLIC_BIJBELSTUDIE_PROMO_ENABLED` is `true`,
+ * so a deploy can never advertise a code that does not exist in Stripe yet.
+ */
+export const STUDIE_PROMO_CODE = 'BIJBELQUIZ';
+export const STUDIE_PROMO_AMOUNT_OFF_CENTS = 999;
+/** Stripe refuses the code after this moment, and the site stops showing it. */
+export const STUDIE_PROMO_EXPIRES_AT = '2027-03-31T23:59:59+02:00';
+export const STUDIE_PROMO_MAX_REDEMPTIONS = 250;
+
+export interface StudiePromo {
+  code: string;
+  headline: string;
+  terms: string;
+}
+
+export function studiePromo(
+  now: number = Date.now(),
+  enabled: string | undefined = process.env.NEXT_PUBLIC_BIJBELSTUDIE_PROMO_ENABLED,
+): StudiePromo | null {
+  if (enabled !== 'true') return null;
+  if (now > Date.parse(STUDIE_PROMO_EXPIRES_AT)) return null;
+
+  return {
+    code: STUDIE_PROMO_CODE,
+    headline: 'Je eerste maand Pro gratis',
+    terms:
+      'Voor nieuwe Pro-abonnees, bij het afrekenen op bijbelstudie.io. Kies je een jaarabonnement, dan krijg je €9,99 korting. Geldig t/m 31 maart 2027.',
+  };
+}
+
+/**
  * Where a BijbelStudie link was shown.
  *
  * A closed set rather than free text: the whole point of measuring this is to
@@ -37,15 +82,28 @@ export const STUDIE_LINK_SURFACES = [
   'result_wrong_answers',
   /** Inside the post-quiz review list. */
   'review',
-  /** The once-per-session card after finishing a quiz. */
+  /** The main button of the popup after finishing a quiz. */
   'interstitial',
+  /** The Pro link beside the promo code in that popup. */
+  'interstitial_offer',
+  /** The hint under the start button, before the first question. */
+  'quiz_intro',
   /** The scoreboard at the end of a multiplayer game. */
   'multiplayer_end',
   /** The block on the public home page. */
   'landing',
+  /** The closing line of the home page. */
+  'landing_cta',
   /** The block in the signed-in dashboard. */
   'dashboard',
-  'sidebar',
+  /** The main button on `/bijbelstudie`, the page that explains the tool. */
+  'studie_page',
+  /** The Pro link beside the promo code on that page. */
+  'studie_page_offer',
+  /** A search on `/quizzen` that found nothing. */
+  'quiz_list_empty',
+  /** The help centre. */
+  'help',
   'footer',
 ] as const;
 
@@ -229,9 +287,12 @@ interface StudieLinkOptions {
 }
 
 function withCampaign(url: URL, { surface, quizSlug }: StudieLinkOptions): string {
-  // Own-property attribution, not tracking: this is the only way to tell
-  // whether the handover works at all, and BijbelStudie reads the same three
-  // parameters on arrival.
+  // Own-property attribution, not tracking. BijbelStudie does not record these
+  // parameters today (checked 2026-09-16: no utm handling and no analytics
+  // package in that repo), so what this site can measure ends at the click -
+  // `bijbelstudie_click` here, and redemptions of `STUDIE_PROMO_CODE` in
+  // BijbelStudie's Stripe. They stay on the link so that anything added over
+  // there later has history to read from day one.
   url.searchParams.set('utm_source', 'bijbelquiz');
   url.searchParams.set('utm_medium', surface);
   if (quizSlug) url.searchParams.set('utm_campaign', quizSlug);
@@ -249,6 +310,11 @@ export function studieReadHref(passage: StudiePassage, options: StudieLinkOption
 /** Where to send a reader when no passage could be resolved. */
 export function studieHomeHref(options: StudieLinkOptions): string {
   return withCampaign(new URL('/', BIJBEL_STUDIE_BASE_URL), options);
+}
+
+/** BijbelStudie's pricing page, where the promo code gets used. */
+export function studiePricingHref(options: StudieLinkOptions): string {
+  return withCampaign(new URL('/abonnement', BIJBEL_STUDIE_BASE_URL), options);
 }
 
 /**

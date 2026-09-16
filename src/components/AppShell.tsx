@@ -25,6 +25,7 @@ const SIDEBAR_ROUTE_PREFIXES = [
   '/foutmelding',
   '/privacybeleid',
   '/voorwaarden',
+  '/bijbelstudie',
   '/account-verwijderen',
   '/instellingen',
   '/settings',

@@ -161,6 +161,7 @@ export default function QuizReviewSection({
                         <StudieLink
                           passage={passage}
                           surface="review"
+                          mark
                           quizSlug={quizSlug}
                           label={`Lees ${passage.book} ${passage.chapter} met uitleg`}
                         />

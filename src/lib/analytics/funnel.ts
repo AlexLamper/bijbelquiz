@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import { AnalyticsEvent, User, connectDB } from '@/database';
 import { MULTIPLAYER_FREE_ROOM_QUOTA } from '@/lib/premium-benefits';
 
+import { COUNTED_COMPLETION } from './events';
 import { getInternalAccountIds } from './internal-accounts';
 
 /**
@@ -64,7 +65,11 @@ export interface FunnelReport {
    */
   handover: {
     clicks: number;
+    /** Times the post-quiz popup opened. */
+    shown: number;
     dismissals: number;
+    /** Times the promo code was copied. Redemptions live in BijbelStudie's Stripe. */
+    codeCopies: number;
     /** Clicks per finished quiz, as a percentage. */
     perCompletion: number;
     bySurface: Array<{ surface: string; clicks: number }>;
@@ -110,6 +115,8 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
     firstQuizzesCompleted,
     studieClicksBySurface,
     studiePromptDismissals,
+    studiePromptShown,
+    studieCodeCopies,
   ] = await Promise.all([
     User.countDocuments({ multiplayerGamesHosted: { $gte: 1 } }),
     User.countDocuments({ multiplayerGamesHosted: { $gte: MULTIPLAYER_FREE_ROOM_QUOTA } }),
@@ -118,7 +125,11 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
     countByProp('purchase_completed', since, 'plan'),
     AnalyticsEvent.countDocuments({ name: 'trial_started', createdAt: { $gte: since } }),
     AnalyticsEvent.countDocuments({ name: 'trial_converted', createdAt: { $gte: since } }),
-    AnalyticsEvent.countDocuments({ name: 'quiz_completed', createdAt: { $gte: since } }),
+    AnalyticsEvent.countDocuments({
+      name: 'quiz_completed',
+      createdAt: { $gte: since },
+      ...COUNTED_COMPLETION,
+    }),
     AnalyticsEvent.countDocuments({
       name: 'quiz_completed',
       createdAt: { $gte: since },
@@ -129,6 +140,8 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
       name: 'bijbelstudie_prompt_dismissed',
       createdAt: { $gte: since },
     }),
+    AnalyticsEvent.countDocuments({ name: 'bijbelstudie_prompt_shown', createdAt: { $gte: since } }),
+    AnalyticsEvent.countDocuments({ name: 'bijbelstudie_code_copied', createdAt: { $gte: since } }),
   ]);
 
   const shown = [...paywallShownByTrigger.values()].reduce((sum, n) => sum + n, 0);
@@ -185,7 +198,9 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
     },
     handover: {
       clicks: studieClicks,
+      shown: studiePromptShown,
       dismissals: studiePromptDismissals,
+      codeCopies: studieCodeCopies,
       perCompletion: rate(studieClicks, quizzesCompleted),
       bySurface: [...studieClicksBySurface.entries()]
         .map(([surface, clicks]) => ({ surface, clicks }))

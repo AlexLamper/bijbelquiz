@@ -7,6 +7,7 @@ import { useSession, signOut } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
 import { ChevronDown, ChevronLeft, ChevronRight, Crown, LogOut, Menu, Settings, User, X } from 'lucide-react';
 
+import { BijbelStudieMark } from '@/components/BijbelStudieMark';
 import { Button } from '@/components/ui/button';
 import MascotAvatar from '@/components/avatar/MascotAvatar';
 import { ModeToggle } from '@/components/ModeToggle';
@@ -15,6 +16,8 @@ import { cn } from '@/lib/utils';
 interface NavItem {
   href: string;
   label: string;
+  /** BijbelStudie's mark before the label: this item is the other product. */
+  studie?: boolean;
 }
 
 interface NavbarProps {
@@ -36,6 +39,7 @@ function getPageTitle(pathname: string): string {
   if (pathname.startsWith('/instellingen')) return 'Instellingen';
   if (pathname.startsWith('/beheer')) return 'Beheer';
   if (pathname.startsWith('/hulp')) return 'Help';
+  if (pathname.startsWith('/bijbelstudie')) return 'BijbelStudie';
   if (pathname.startsWith('/contact')) return 'Contact';
   if (pathname.startsWith('/foutmelding')) return 'Foutmelding';
   if (pathname.startsWith('/privacybeleid')) return 'Privacybeleid';
@@ -160,6 +164,10 @@ export default function Navbar({
         { href: '/samen-spelen', label: 'Samen spelen' },
       ];
 
+  // Every visitor, signed in or not: pointing readers on to BijbelStudie is
+  // what this site is for now, so it has a permanent place in the chrome.
+  navItems.push({ href: '/bijbelstudie', label: 'BijbelStudie', studie: true });
+
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-paper/90 backdrop-blur-sm supports-backdrop-filter:bg-paper/75">
       <div className="mx-auto flex h-16 w-full max-w-[1180px] items-center gap-4 px-5 sm:px-8 lg:px-10">
@@ -200,12 +208,13 @@ export default function Navbar({
               key={item.href}
               href={item.href}
               className={cn(
-                'relative flex h-full items-center px-3 text-sm font-medium transition-colors after:absolute after:inset-x-3 after:bottom-0 after:h-px after:transition-colors',
+                'relative flex h-full items-center gap-1.5 px-3 text-sm font-medium transition-colors after:absolute after:inset-x-3 after:bottom-0 after:h-px after:transition-colors',
                 isActive(item.href)
                   ? 'text-ink after:bg-lapis'
                   : 'text-ink-muted hover:text-ink after:bg-paper'
               )}
             >
+              {item.studie && <BijbelStudieMark className="h-3.5 w-3.5" />}
               {item.label}
             </Link>
           ))}
@@ -321,12 +330,13 @@ export default function Navbar({
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    'block px-3 py-2 text-sm font-medium text-ink-soft',
+                    'flex items-center gap-2 px-3 py-2 text-sm font-medium text-ink-soft',
                     isActive(item.href)
                       ? 'bg-paper-sunken text-ink'
                       : 'hover:bg-paper-sunken hover:text-ink  '
                   )}
                 >
+                  {item.studie && <BijbelStudieMark className="h-3.5 w-3.5" />}
                   {item.label}
                 </Link>
               ))}

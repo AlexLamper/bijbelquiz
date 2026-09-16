@@ -2,9 +2,11 @@
 
 import { ArrowUpRight } from 'lucide-react';
 
+import { BijbelStudieMark } from '@/components/BijbelStudieMark';
 import { track } from '@/lib/analytics/client';
 import {
   studieLinkForPassage,
+  studiePricingHref,
   type StudieLinkSurface,
   type StudiePassage,
 } from '@/lib/ecosystem-links';
@@ -20,8 +22,17 @@ interface StudieLinkProps {
    * answered - and opens in a new tab so the quiz survives.
    */
   variant?: 'primary' | 'inline';
+  /** Overrides the tab behaviour the variant implies. */
+  newTab?: boolean;
+  /** `pricing` opens BijbelStudie's subscription page instead of the reader. */
+  destination?: 'passage' | 'pricing';
   /** Overrides the generated "Lees <boek> <hoofdstuk> op BijbelStudie". */
   label?: string;
+  /** BijbelStudie's mark before the label, so the link reads as that product. */
+  mark?: boolean;
+  /** The trailing arrow. Off for a link inside a sentence. */
+  icon?: boolean;
+  onClick?: () => void;
   className?: string;
 }
 
@@ -45,31 +56,40 @@ export default function StudieLink({
   surface,
   quizSlug,
   variant = 'inline',
+  newTab,
+  destination = 'passage',
   label,
+  mark = false,
+  icon = true,
+  onClick,
   className,
 }: StudieLinkProps) {
   const link = studieLinkForPassage(passage, { surface, quizSlug });
-  const opensNewTab = variant === 'inline';
+  const href = destination === 'pricing' ? studiePricingHref({ surface, quizSlug }) : link.href;
+  const opensNewTab = newTab ?? variant === 'inline';
 
   return (
     <a
-      href={link.href}
+      href={href}
       target={opensNewTab ? '_blank' : undefined}
       rel="noopener"
       data-skip-leave-guard
       data-analytics-id={`studie.${surface}`}
-      onClick={() =>
+      onClick={() => {
         track('bijbelstudie_click', {
           surface,
+          destination,
           quizSlug: quizSlug || null,
           refBook: passage?.book || null,
           refChapter: passage?.chapter ?? null,
-        })
-      }
+        });
+        onClick?.();
+      }}
       className={className ?? (variant === 'primary' ? PRIMARY_CLASSES : INLINE_CLASSES)}
     >
+      {mark && <BijbelStudieMark className="h-3.5 w-3.5" />}
       {label ?? link.label}
-      <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden />
+      {icon && <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden />}
     </a>
   );
 }

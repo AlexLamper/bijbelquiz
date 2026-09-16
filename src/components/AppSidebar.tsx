@@ -24,6 +24,7 @@ import {
   Users,
 } from 'lucide-react';
 
+import { BijbelStudieMark } from '@/components/BijbelStudieMark';
 import { cn } from '@/lib/utils';
 
 interface SidebarItem {
@@ -91,6 +92,11 @@ export default function AppSidebar({ collapsed = false }: AppSidebarProps) {
 
   const sections: SidebarSection[] = [
     { title: 'Spelen', items: playItems },
+    // The next step after playing, so it sits directly under it.
+    {
+      title: 'Verdieping',
+      items: [{ href: '/bijbelstudie', label: 'BijbelStudie', icon: BijbelStudieMark }],
+    },
     { title: 'Account', items: accountItems },
   ];
 

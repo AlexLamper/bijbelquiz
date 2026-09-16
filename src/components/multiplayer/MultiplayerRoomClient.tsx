@@ -1029,6 +1029,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
                     <StudieLink
                       passage={passageFromBookName(room.passage?.book, room.passage?.chapter)}
                       surface="multiplayer_end"
+                      mark
                       quizSlug={room.quizTitle}
                     />
                   </div>

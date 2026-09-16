@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PageMasthead } from '@/components/editorial';
 import { QuizCard } from '@/components/QuizCard';
+import StudieLink from '@/components/StudieLink';
 import { MobileQuizFilter } from '@/components/MobileQuizFilter';
 import { useUserSettings } from '@/lib/user-settings-client';
 import { matchesPreferredDifficulty, type PreferredDifficulty } from '@/lib/user-settings';
@@ -384,14 +385,13 @@ export default function QuizzesClient({
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
                 Of verdiep je eerst in een onderwerp via{' '}
-                <a
-                  href="https://www.bijbelstudie.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-ink hover:text-ink"
-                >
-                  Bijbel Studie
-                </a>
+                <StudieLink
+                  passage={null}
+                  surface="quiz_list_empty"
+                  icon={false}
+                  label="BijbelStudie"
+                  className="font-medium text-ink underline decoration-rule-strong underline-offset-4 hover:decoration-ink"
+                />
                 .
               </p>
               <div className="mt-5 flex flex-wrap items-center justify-center gap-3">

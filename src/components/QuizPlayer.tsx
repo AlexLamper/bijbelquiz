@@ -19,7 +19,7 @@ import {
 import QuizReviewSection from '@/components/quiz/QuizReviewSection';
 import BibleVerseDisplay from '@/components/BibleVerseDisplay';
 import StudieLink from '@/components/StudieLink';
-import StudiePrompt from '@/components/StudiePrompt';
+import StudiePromoModal from '@/components/StudiePromoModal';
 import { Button } from '@/components/ui/button';
 import { dominantPassage, passageFromQuestion } from '@/lib/ecosystem-links';
 import { addPendingAttempt } from '@/lib/pending-attempts';
@@ -303,6 +303,18 @@ export default function QuizPlayer({
     // writes the parked attempt to it. That is what makes "bewaar je score"
     // a promise rather than a slogan.
     if (!isLoggedIn) {
+      // A signed-in completion is recorded by the submit route. A guest's never
+      // reaches it until it is claimed, which most never are, so without this
+      // the reports only counted the minority who were signed in. The claim
+      // later arrives marked `claimed` and is left out of the counts
+      // (`COUNTED_COMPLETION`), so the same attempt is not counted twice.
+      track('quiz_completed', {
+        quizId: String(quiz._id),
+        score,
+        totalQuestions: quiz.questions.length,
+        guest: true,
+      });
+
       addPendingAttempt({
         quizId: String(quiz._id),
         quizSlug,
@@ -742,7 +754,7 @@ export default function QuizPlayer({
           </div>
         )}
 
-        <StudiePrompt passage={wrongPassage} quizSlug={quizSlug} />
+        <StudiePromoModal passage={wrongPassage} quizSlug={quizSlug} />
 
         <div className="mt-10 border-t border-rule pt-5">
           <a
@@ -935,7 +947,8 @@ export default function QuizPlayer({
                   passage={questionPassage}
                   surface="explanation"
                   quizSlug={quizSlug}
-                  label={`Lees ${questionPassage.book} ${questionPassage.chapter} met uitleg`}
+                  mark
+                  label={`Lees ${questionPassage.book} ${questionPassage.chapter} met uitleg op BijbelStudie`}
                 />
               </div>
             )}

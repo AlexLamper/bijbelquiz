@@ -58,6 +58,7 @@ export const SITE_ROUTES: SiteRoute[] = [
   { path: '/premium', label: 'Premium', group: 'public', publicFacing: true },
   { path: '/premium/succes', label: 'Premium gelukt', group: 'account', publicFacing: false },
   { path: '/groepslicentie', label: 'Groepslicentie', group: 'public', publicFacing: true },
+  { path: '/bijbelstudie', label: 'Over BijbelStudie', group: 'public', publicFacing: true },
   { path: '/inloggen', label: 'Inloggen', group: 'account', publicFacing: true },
   { path: '/registreren', label: 'Registreren', group: 'account', publicFacing: true },
   { path: '/instellingen', label: 'Instellingen', group: 'account', publicFacing: false },
