@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BijbelQuiz /quizzen — design reference (desktop 1280 + mobile 402)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Reference-only scaffolding (not part of the design) */
+  body{margin:0;background:#e8e5de;font-family:Inter,system-ui,sans-serif;color:#1c1c1c}
+  .ref-wrap{display:flex;gap:40px;align-items:flex-start;padding:32px;overflow-x:auto}
+  .ref-col{flex:none}
+  .ref-cap{font:600 12px/1.4 Inter,system-ui,sans-serif;color:rgba(0,0,0,.55);margin:0 0 12px}
+  .ref-frame{border:1px solid rgba(0,0,0,.12);border-radius:10px;overflow:hidden;background:#f5f3ee}
+  .no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{scrollbar-width:none}
+
+  /* ===== Design tokens (see README) ===== */
+  .q{--page:#f5f3ee;--surface:#fff;--ink:#1c1c1c;--ink-soft:#5f5c55;--muted:#6d6a63;--faint:#8a877f;--disabled:#b3b0a8;--border:#e2dfd7;--border-input:#dcd9d2;--border-dashed:#d5d2ca;--track:#ece9e2;--accent:#8a92c8;--accent-soft:#c9cde6;
+       background:var(--page);color:var(--ink);font-family:Inter,system-ui,sans-serif;box-sizing:border-box}
+  .q *{box-sizing:border-box}
+  .serif{font-family:Newsreader,Georgia,serif;font-weight:400}
+  .eyebrow{font:500 11px/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .rule{display:block;height:2px;background:var(--accent)}
+  .divider{height:1px;background:var(--border)}
+
+  /* Controls */
+  .search{display:flex;align-items:center;gap:10px;padding:0 14px;background:var(--surface);border:1px solid var(--border-input);border-radius:6px;color:var(--faint);font-size:14px}
+  .search svg{flex:none}
+  .seg{display:flex;background:var(--surface);border:1px solid var(--border-input);border-radius:6px;padding:3px;gap:2px;font-size:13.5px;font-weight:500;white-space:nowrap}
+  .seg span{padding:8px 16px;border-radius:4px;color:var(--ink)}
+  .seg .on{background:var(--ink);color:#fff}
+
+  /* Book tile */
+  .tile{background:var(--surface);border-radius:8px;padding:14px 14px 12px;display:flex;flex-direction:column;gap:8px;min-height:96px;border:1px solid var(--border);cursor:pointer}
+  .tile:hover,.tile.selected{border-color:var(--ink)}
+  .tile.none{opacity:.5;cursor:default}
+  .tile .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .tile .name{font:400 17px/1.2 Newsreader,Georgia,serif;color:var(--ink)}
+  .tile .count{font-size:12px;color:var(--faint);white-space:nowrap}
+  .tile .label{font-size:12px;color:var(--muted);margin-top:auto}
+  .bar{height:3px;background:var(--track);border-radius:2px;position:relative;overflow:hidden}
+  .bar i{position:absolute;top:0;bottom:0;left:0}
+  .bar .avail{background:var(--accent-soft)}
+  .bar .done{background:var(--ink)}
+
+  /* Chapter panel + cells */
+  .panel{background:var(--surface);border:1px solid var(--ink);border-radius:8px}
+  .cells{display:flex;flex-wrap:wrap}
+  .cell{display:flex;align-items:center;justify-content:center;font-weight:500;cursor:pointer}
+  .cell.avail{background:#fff;color:var(--ink);border:1px solid var(--border-input)}
+  .cell.avail:hover{border-color:var(--ink)}
+  .cell.done{background:var(--ink);color:#fff;border:1px solid var(--ink)}
+  .cell.off{background:transparent;color:var(--disabled);border:1px dashed var(--border-dashed);cursor:default}
+  .cell.next{box-shadow:0 0 0 2px var(--accent)}
+  .legend{display:flex;font-size:12px;color:var(--muted)}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .sw{display:block;width:10px;height:10px;border-radius:2px}
+
+  /* ===== Desktop (1280) ===== */
+  .desk{width:1280px;padding:48px 56px 64px}
+  .desk .head{display:flex;justify-content:space-between;align-items:center}
+  .desk .brand{display:flex;align-items:center;gap:10px}
+  .desk .brand .rule{width:24px}
+  .desk h1{font:400 40px/1.15 Newsreader,Georgia,serif;letter-spacing:-.01em;margin:22px 0 12px;color:var(--ink)}
+  .desk .lead{font:400 15px/1.55 Inter,system-ui,sans-serif;color:var(--ink-soft);margin:0;max-width:640px}
+  .desk .divider{margin:32px 0 24px}
+  .desk .controls{display:flex;gap:12px;align-items:center}
+  .desk .search{flex:1;height:42px}
+  .desk .body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;margin-top:36px;align-items:start}
+  .index{position:sticky;top:24px;display:flex;flex-direction:column;gap:2px}
+  .index .eyebrow{padding:0 0 10px 14px}
+  .index .eyebrow.nt{padding-top:22px}
+  .index a{display:flex;align-items:center;justify-content:space-between;gap:8px;height:34px;padding:0 6px 0 12px;font-size:13.5px;border-left:2px solid var(--border);color:var(--muted);text-decoration:none}
+  .index a:hover{color:var(--ink)}
+  .index a.on{border-color:var(--ink);color:var(--ink);font-weight:500}
+  .index a small{font-size:11.5px;color:var(--faint);font-weight:400;white-space:nowrap}
+  .index .legend{flex-direction:column;gap:8px;margin-top:26px;padding:16px 0 0 14px;border-top:1px solid var(--border)}
+  .genre{margin-bottom:40px}
+  .genre .gh{display:flex;align-items:center;gap:14px}
+  .genre .gh .serif{font-size:22px;line-height:1.2}
+  .genre .gh .line{flex:1;height:1px;background:var(--border)}
+  .desk .tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}
+  .desk .panel{margin-top:12px;padding:24px 26px 26px}
+  .desk .panel .ph{display:flex;align-items:baseline;gap:14px}
+  .desk .panel .ph .serif{font-size:26px;line-height:1.1}
+  .desk .panel .close{margin-left:auto;font-size:13px;color:var(--muted);cursor:pointer}
+  .desk .cells{gap:5px;margin-top:18px}
+  .desk .cell{width:36px;height:36px;border-radius:5px;font-size:13px}
+
+  /* ===== Mobile (402) ===== */
+  .mob{width:402px;padding:24px 16px 32px}
+  .mob .brand{display:flex;align-items:center;gap:8px}
+  .mob .brand .rule{width:18px}
+  .mob h1{font:400 30px/1.15 Newsreader,Georgia,serif;letter-spacing:-.01em;margin:14px 0 8px;color:var(--ink)}
+  .mob .lead{font:400 14px/1.5 Inter,system-ui,sans-serif;color:var(--ink-soft);margin:0}
+  .mob .search{height:44px;margin-top:20px}
+  .mob .seg{margin-top:10px}
+  .mob .seg span{flex:1;text-align:center;padding:9px 0}
+  .chips-wrap{position:relative;overflow:hidden;margin-top:20px}
+  .chips{display:flex;gap:8px;overflow-x:auto}
+  .chip{flex:none;display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:18px;border:1px solid var(--border-input);font-size:13.5px;font-weight:500;white-space:nowrap;background:#fff;color:var(--ink)}
+  .chip.on{background:var(--ink);color:#fff}
+  .chips-fade{position:absolute;top:0;bottom:0;right:0;width:48px;background:linear-gradient(90deg,rgba(245,243,238,0),#f5f3ee);pointer-events:none}
+  .mob .genre{margin:28px 0 0}
+  .mob .genre .gh{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+  .mob .genre .gh .serif{font-size:19px;line-height:1.2}
+  .mob .tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .mob .tile{min-height:88px}
+  .mob .panel{margin-top:10px;padding:16px}
+  .mob .panel .ph{display:flex;justify-content:space-between;align-items:baseline}
+  .mob .panel .ph .serif{font-size:22px;line-height:1.1}
+  .mob .panel .close{font-size:12px;color:var(--muted)}
+  .mob .panel .eyebrow{display:block;margin-top:6px}
+  .mob .cells{gap:6px;margin-top:14px}
+  .mob .cell{width:44px;height:44px;border-radius:6px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="ref-wrap">
+
+<!-- ================= DESKTOP ================= -->
+<div class="ref-col">
+<p class="ref-cap">Desktop · 1280px · Genesis selected, signed-in user (32 of 50 played)</p>
+<div class="ref-frame">
+<div class="q desk">
+  <div class="head">
+    <div class="brand"><span class="rule"></span><span class="eyebrow">Quizbibliotheek</span></div>
+    <span class="eyebrow">370 quizzen · 66 boeken · 1.189 hoofdstukken</span>
+  </div>
+  <h1>Ontdek en speel Bijbelquizzen</h1>
+  <p class="lead">Alle 66 boeken op één pagina, van Genesis tot Openbaring. Spring via de index naar een genre.</p>
+  <div class="divider"></div>
+  <div class="controls">
+    <div class="search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#6d6a63" stroke-width="1.5"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3.5 3.5"></path></svg>Zoek een boek of hoofdstuk, bijv. Johannes 3</div>
+    <div class="seg"><span class="on">Bijbelboeken</span><span>Thema's</span></div>
+  </div>
+
+  <div class="body">
+    <nav class="index">
+      <span class="eyebrow">Oude Testament</span>
+      <a class="on" href="#wet">Wet <small>90</small></a>
+      <a href="#geschiedenis">Geschiedenis <small>14</small></a>
+      <a href="#poezie">Poëzie &amp; wijsheid <small>42</small></a>
+      <a href="#grote-profeten">Grote profeten <small>12</small></a>
+      <a href="#kleine-profeten">Kleine profeten <small>5</small></a>
+      <span class="eyebrow nt">Nieuwe Testament</span>
+      <a href="#evangelien">Evangeliën &amp; Handelingen <small>117</small></a>
+      <a href="#paulus">Brieven van Paulus <small>56</small></a>
+      <a href="#brieven">Brieven &amp; Openbaring <small>34</small></a>
+      <div class="legend">
+        <span><i class="sw" style="background:#1c1c1c"></i>Gespeeld</span>
+        <span><i class="sw" style="background:#c9cde6"></i>Quiz beschikbaar</span>
+        <span><i class="sw" style="background:#ece9e2"></i>Nog niet beschikbaar</span>
+      </div>
+    </nav>
+
+    <div>
+      <!-- Genre: Wet (selected book Genesis → panel open) -->
+      <section class="genre" id="wet">
+        <div class="gh"><span class="serif">Wet</span><span class="eyebrow">Oude Testament · 5 boeken</span><span class="line"></span></div>
+        <div class="tiles">
+          <div class="tile selected"><div class="top"><span class="name">Genesis</span><span class="count">50</span></div><span class="label">50 quizzen · 32 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:64%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">Exodus</span><span class="count">40</span></div><span class="label">40 quizzen · 6 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:15%"></i></div></div>
+          <div class="tile none"><div class="top"><span class="name">Leviticus</span><span class="count">27</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">Numeri</span><span class="count">36</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">Deuteronomium</span><span class="count">34</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+        </div>
+        <div class="panel">
+          <div class="ph"><span class="serif">Genesis</span><span class="eyebrow">50 hoofdstukken · 50 quizzen</span><span class="close">Sluiten ×</span></div>
+          <div class="cells" id="desk-cells"></div>
+        </div>
+      </section>
+
+      <!-- Genre: Geschiedenis -->
+      <section class="genre" id="geschiedenis">
+        <div class="gh"><span class="serif">Geschiedenis</span><span class="eyebrow">Oude Testament · 12 boeken</span><span class="line"></span></div>
+        <div class="tiles">
+          <div class="tile none"><div class="top"><span class="name">Jozua</span><span class="count">24</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">Rechters</span><span class="count">21</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile"><div class="top"><span class="name">Ruth</span><span class="count">4</span></div><span class="label">4 quizzen · 4 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:100%"></i></div></div>
+          <div class="tile none"><div class="top"><span class="name">1 Samuel</span><span class="count">31</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">2 Samuel</span><span class="count">24</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">1 Koningen</span><span class="count">22</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">2 Koningen</span><span class="count">25</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">1 Kronieken</span><span class="count">29</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">2 Kronieken</span><span class="count">36</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">Ezra</span><span class="count">10</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">Nehemia</span><span class="count">13</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile"><div class="top"><span class="name">Ester</span><span class="count">10</span></div><span class="label">10 quizzen</span><div class="bar"><i class="avail" style="width:100%"></i></div></div>
+        </div>
+      </section>
+
+      <!-- Genre: Poëzie & wijsheid (shows a partially available book) -->
+      <section class="genre" id="poezie">
+        <div class="gh"><span class="serif">Poëzie &amp; wijsheid</span><span class="eyebrow">Oude Testament · 5 boeken</span><span class="line"></span></div>
+        <div class="tiles">
+          <div class="tile none"><div class="top"><span class="name">Job</span><span class="count">42</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile"><div class="top"><span class="name">Psalmen</span><span class="count">150</span></div><span class="label">30 van 150 quizzen · 6 gespeeld</span><div class="bar"><i class="avail" style="width:20%"></i><i class="done" style="width:4%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">Spreuken</span><span class="count">31</span></div><span class="label">12 van 31 quizzen</span><div class="bar"><i class="avail" style="width:39%"></i></div></div>
+          <div class="tile none"><div class="top"><span class="name">Prediker</span><span class="count">12</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile none"><div class="top"><span class="name">Hooglied</span><span class="count">8</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+        </div>
+      </section>
+
+      <!-- Genre: Evangeliën & Handelingen (NT example, single-chapter label rule shown in Paulus) -->
+      <section class="genre" id="evangelien">
+        <div class="gh"><span class="serif">Evangeliën &amp; Handelingen</span><span class="eyebrow">Nieuwe Testament · 5 boeken</span><span class="line"></span></div>
+        <div class="tiles">
+          <div class="tile"><div class="top"><span class="name">Matteüs</span><span class="count">28</span></div><span class="label">28 quizzen · 12 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:43%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">Marcus</span><span class="count">16</span></div><span class="label">16 quizzen · 5 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:31%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">Lucas</span><span class="count">24</span></div><span class="label">24 quizzen</span><div class="bar"><i class="avail" style="width:100%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">Johannes</span><span class="count">21</span></div><span class="label">21 quizzen · 21 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:100%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">Handelingen</span><span class="count">28</span></div><span class="label">28 quizzen</span><div class="bar"><i class="avail" style="width:100%"></i></div></div>
+        </div>
+      </section>
+
+      <section class="genre" id="paulus">
+        <div class="gh"><span class="serif">Brieven van Paulus</span><span class="eyebrow">Nieuwe Testament · 13 boeken</span><span class="line"></span></div>
+        <div class="tiles">
+          <div class="tile"><div class="top"><span class="name">Romeinen</span><span class="count">16</span></div><span class="label">16 quizzen · 3 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:19%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">1 Korintiërs</span><span class="count">16</span></div><span class="label">8 van 16 quizzen</span><div class="bar"><i class="avail" style="width:50%"></i></div></div>
+          <div class="tile none"><div class="top"><span class="name">2 Korintiërs</span><span class="count">13</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+          <div class="tile"><div class="top"><span class="name">Galaten</span><span class="count">6</span></div><span class="label">6 quizzen</span><div class="bar"><i class="avail" style="width:100%"></i></div></div>
+          <div class="tile"><div class="top"><span class="name">Filemon</span><span class="count">1</span></div><span class="label">1 quiz · 1 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:100%"></i></div></div>
+        </div>
+        <p class="eyebrow" style="margin:14px 0 0">… remaining genres continue in the same pattern (see bible-structure.json)</p>
+      </section>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ================= MOBILE ================= -->
+<div class="ref-col">
+<p class="ref-cap">Mobile · 402px · same state</p>
+<div class="ref-frame">
+<div class="q mob">
+  <div class="brand"><span class="rule"></span><span class="eyebrow">Quizbibliotheek</span></div>
+  <h1>Ontdek en speel Bijbelquizzen</h1>
+  <p class="lead">370 quizzen · 66 boeken · 1.189 hoofdstukken</p>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#6d6a63" stroke-width="1.5"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3.5 3.5"></path></svg>Zoek boek of hoofdstuk</div>
+  <div class="seg"><span class="on">Bijbelboeken</span><span>Thema's</span></div>
+  <div class="chips-wrap">
+    <div class="chips no-scrollbar">
+      <span class="chip on">Wet</span><span class="chip">Geschiedenis</span><span class="chip">Poëzie &amp; wijsheid</span><span class="chip">Grote profeten</span><span class="chip">Kleine profeten</span><span class="chip">Evangeliën &amp; Handelingen</span><span class="chip">Brieven van Paulus</span><span class="chip">Brieven &amp; Openbaring</span>
+    </div>
+    <div class="chips-fade"></div>
+  </div>
+
+  <section class="genre">
+    <div class="gh"><span class="serif">Wet</span><span class="eyebrow">Oude Testament · 5 boeken</span></div>
+    <div class="tiles">
+      <div class="tile selected"><div class="top"><span class="name">Genesis</span><span class="count">50</span></div><span class="label">50 quizzen · 32 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:64%"></i></div></div>
+      <div class="tile"><div class="top"><span class="name">Exodus</span><span class="count">40</span></div><span class="label">40 quizzen · 6 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:15%"></i></div></div>
+      <div class="tile none"><div class="top"><span class="name">Leviticus</span><span class="count">27</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+      <div class="tile none"><div class="top"><span class="name">Numeri</span><span class="count">36</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+      <div class="tile none"><div class="top"><span class="name">Deuteronomium</span><span class="count">34</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+    </div>
+    <div class="panel">
+      <div class="ph"><span class="serif">Genesis</span><span class="close">Sluiten ×</span></div>
+      <span class="eyebrow">50 hoofdstukken · 50 quizzen</span>
+      <div class="cells" id="mob-cells"></div>
+    </div>
+  </section>
+
+  <section class="genre">
+    <div class="gh"><span class="serif">Geschiedenis</span><span class="eyebrow">Oude Testament · 12 boeken</span></div>
+    <div class="tiles">
+      <div class="tile none"><div class="top"><span class="name">Jozua</span><span class="count">24</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+      <div class="tile none"><div class="top"><span class="name">Rechters</span><span class="count">21</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+      <div class="tile"><div class="top"><span class="name">Ruth</span><span class="count">4</span></div><span class="label">4 quizzen · 4 gespeeld</span><div class="bar"><i class="avail" style="width:100%"></i><i class="done" style="width:100%"></i></div></div>
+      <div class="tile none"><div class="top"><span class="name">1 Samuel</span><span class="count">31</span></div><span class="label">Nog geen quizzen</span><div class="bar"></div></div>
+    </div>
+    <p class="eyebrow" style="margin:14px 0 0">… continues</p>
+  </section>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+  // Genesis demo state: 50 chapters, all available, 32 played → chapter 33 is "next for you".
+  function cells(target, total, avail, done) {
+    const el = document.getElementById(target); let html = '';
+    for (let n = 1; n <= total; n++) {
+      const cls = n <= done ? 'done' : n <= avail ? 'avail' : 'off';
+      html += '<div class="cell ' + cls + (n === done + 1 && n <= avail ? ' next' : '') + '">' + n + '</div>';
+    }
+    el.innerHTML = html;
+  }
+  cells('desk-cells', 50, 50, 32);
+  cells('mob-cells', 50, 50, 32);
+</script>
+</body>
+</html>

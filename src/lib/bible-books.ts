@@ -33,6 +33,8 @@ export interface BibleBook {
   title: string;
   /** Shorter form for tight layouts: "1 Kor.", "Openb." */
   short: string;
+  /** URL-safe form of `title`, e.g. "1-samuel", "hooglied". */
+  slug: string;
   testament: Testament;
   group: BookGroupId;
   chapters: number;
@@ -51,6 +53,65 @@ export const BOOK_GROUPS: BookGroup[] = [
   { id: 'openbaring', label: 'Openbaring', testament: 'NT' },
 ];
 
+/**
+ * The 8 genre groupings the `/quizzen` overview page shows (one continuous-
+ * canon layout), collapsing the 10 `BookGroupId`s used elsewhere on the site:
+ * Evangeliën+Handelingen become one row, and Algemene brieven+Openbaring
+ * become another.
+ */
+export type OverviewGenreId =
+  | 'wet'
+  | 'geschiedenis'
+  | 'poezie-wijsheid'
+  | 'grote-profeten'
+  | 'kleine-profeten'
+  | 'evangelien-handelingen'
+  | 'brieven-van-paulus'
+  | 'brieven-openbaring';
+
+export interface OverviewGenre {
+  id: OverviewGenreId;
+  label: string;
+  testament: Testament;
+}
+
+export const OVERVIEW_GENRES: OverviewGenre[] = [
+  { id: 'wet', label: 'Wet', testament: 'OT' },
+  { id: 'geschiedenis', label: 'Geschiedenis', testament: 'OT' },
+  { id: 'poezie-wijsheid', label: 'Poëzie & wijsheid', testament: 'OT' },
+  { id: 'grote-profeten', label: 'Grote profeten', testament: 'OT' },
+  { id: 'kleine-profeten', label: 'Kleine profeten', testament: 'OT' },
+  { id: 'evangelien-handelingen', label: 'Evangeliën & Handelingen', testament: 'NT' },
+  { id: 'brieven-van-paulus', label: 'Brieven van Paulus', testament: 'NT' },
+  { id: 'brieven-openbaring', label: 'Brieven & Openbaring', testament: 'NT' },
+];
+
+const GROUP_TO_OVERVIEW_GENRE: Record<BookGroupId, OverviewGenreId> = {
+  wet: 'wet',
+  geschiedenis: 'geschiedenis',
+  poezie: 'poezie-wijsheid',
+  'grote-profeten': 'grote-profeten',
+  'kleine-profeten': 'kleine-profeten',
+  evangelien: 'evangelien-handelingen',
+  handelingen: 'evangelien-handelingen',
+  'brieven-paulus': 'brieven-van-paulus',
+  'algemene-brieven': 'brieven-openbaring',
+  openbaring: 'brieven-openbaring',
+};
+
+export function overviewGenreForGroup(group: BookGroupId): OverviewGenreId {
+  return GROUP_TO_OVERVIEW_GENRE[group];
+}
+
+function slugify(title: string): string {
+  return title
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 const b = (
   code: string,
   title: string,
@@ -58,7 +119,7 @@ const b = (
   testament: Testament,
   group: BookGroupId,
   chapters: number,
-): BibleBook => ({ code, title, short, testament, group, chapters });
+): BibleBook => ({ code, title, short, slug: slugify(title), testament, group, chapters });
 
 export const BIBLE_BOOKS: BibleBook[] = [
   // ── Oude Testament ───────────────────────────────────────────────────────
@@ -132,11 +193,18 @@ export const BIBLE_BOOKS: BibleBook[] = [
 ];
 
 const BY_CODE = new Map(BIBLE_BOOKS.map((book) => [book.code, book]));
+const BY_SLUG = new Map(BIBLE_BOOKS.map((book) => [book.slug, book]));
 
 /** The book for a canonical code, or null for anything unrecognised. */
 export function bookByCode(code: string | null | undefined): BibleBook | null {
   if (!code) return null;
   return BY_CODE.get(code.toUpperCase()) ?? null;
+}
+
+/** The book for a URL slug ("1-samuel"), or null for anything unrecognised. */
+export function bookBySlug(slug: string | null | undefined): BibleBook | null {
+  if (!slug) return null;
+  return BY_SLUG.get(slug.toLowerCase()) ?? null;
 }
 
 /** Position in the canon, 0-based; 999 for unknown so it sorts last. */

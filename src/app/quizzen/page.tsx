@@ -1,9 +1,11 @@
+import { Suspense } from 'react';
 import { getServerSession } from 'next-auth';
 import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
-import QuizzesClient from '@/components/QuizzesClient';
+import { QuizOverviewPage } from '@/components/quiz-overview/QuizOverviewPage';
 import { loadQuizIndex } from '@/lib/quiz-index-data';
+import { buildOverviewBooks } from '@/lib/quiz-overview-data';
 
 export const metadata: Metadata = {
   title: 'Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz',
@@ -21,29 +23,16 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
-export default async function QuizzesPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ category?: string }>;
-}) {
-  const params = await searchParams;
+export default async function QuizzesPage() {
   const session = await getServerSession(authOptions);
   const userIsPremium = !!session?.user?.isPremium;
+  const isAuthenticated = Boolean(session?.user);
 
-  const { quizzes, categories } = await loadQuizIndex(session?.user?.id);
-  const currentCategory = params.category || 'all';
-
-  let initialCategoryId = 'all';
-  if (currentCategory !== 'all') {
-    const matchedCategory = categories.find(
-      (category: { _id: string; slug?: string }) =>
-        category.slug === currentCategory || category._id === currentCategory
-    );
-
-    if (matchedCategory?._id) {
-      initialCategoryId = matchedCategory._id;
-    }
-  }
+  const { quizzes } = await loadQuizIndex(session?.user?.id);
+  const books = buildOverviewBooks(quizzes);
+  const themeQuizzes = quizzes.filter((quiz) => !quiz.book);
+  const totalAvailableChapters = books.reduce((sum, book) => sum + book.avail, 0);
+  const totalChapters = books.reduce((sum, book) => sum + book.chapters, 0);
 
   const itemListJsonLd = {
     '@context':'https://schema.org',
@@ -67,13 +56,16 @@ export default async function QuizzesPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
-      <QuizzesClient
-        quizzes={quizzes}
-        categories={categories}
-        userIsPremium={userIsPremium}
-        canCreateQuiz={Boolean(session?.user)}
-        initialCategoryId={initialCategoryId}
-      />
+      <Suspense fallback={null}>
+        <QuizOverviewPage
+          books={books}
+          themeQuizzes={themeQuizzes}
+          totalAvailableChapters={totalAvailableChapters}
+          totalChapters={totalChapters}
+          showProgress={isAuthenticated}
+          userIsPremium={userIsPremium}
+        />
+      </Suspense>
     </>
   );
 }
