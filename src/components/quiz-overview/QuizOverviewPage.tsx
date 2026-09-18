@@ -151,7 +151,7 @@ export function QuizOverviewPage({
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-10 lg:pb-24 lg:pt-12">
-      <section className="mx-auto w-full max-w-[1168px] px-5 sm:px-8 lg:px-14">
+      <section className="mx-auto w-full max-w-[1168px] px-5 sm:px-8 lg:px-14 2xl:max-w-[1500px]">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-2.5">
             <span aria-hidden className="block h-[2px] w-[18px] bg-lapis sm:w-6" />

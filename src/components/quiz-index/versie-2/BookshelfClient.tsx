@@ -193,7 +193,7 @@ export default function BookshelfClient({ quizzes, books, isSignedIn }: Bookshel
 
   return (
     <div className="min-h-screen bg-paper pb-24 pt-10 lg:pt-14">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <PageMasthead
           eyebrow="Quizbibliotheek"
           title="De boekenplank"
@@ -207,7 +207,7 @@ export default function BookshelfClient({ quizzes, books, isSignedIn }: Bookshel
         />
       </section>
 
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-8 sm:px-8 lg:px-10">
         <label htmlFor="boekenplank-zoeken" className="sr-only">
           Zoek een quiz
         </label>
@@ -266,7 +266,7 @@ export default function BookshelfClient({ quizzes, books, isSignedIn }: Bookshel
       </section>
 
       {featured.length > 0 && !search.active && (
-        <section className="mx-auto w-full max-w-[1180px] px-5 pt-12 sm:px-8 lg:px-10">
+        <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-12 sm:px-8 lg:px-10">
           <SectionHead
             eyebrow="Uitgelicht"
             title={isSignedIn ? 'Verder waar je gebleven was' : 'Om mee te beginnen'}
@@ -290,7 +290,7 @@ export default function BookshelfClient({ quizzes, books, isSignedIn }: Bookshel
       {TESTAMENTS.map((testament) => (
         <section
           key={testament.id}
-          className="mx-auto w-full max-w-[1180px] px-5 pt-14 sm:px-8 lg:px-10"
+          className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-14 sm:px-8 lg:px-10"
         >
           <SectionHead
             eyebrow={testament.eyebrow}
@@ -306,7 +306,7 @@ export default function BookshelfClient({ quizzes, books, isSignedIn }: Bookshel
       ))}
 
       {themed.length > 0 && (
-        <section className="mx-auto w-full max-w-[1180px] px-5 pt-14 sm:px-8 lg:px-10">
+        <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-14 sm:px-8 lg:px-10">
           <SectionHead
             eyebrow="Thema's"
             title="Dwars door de Bijbel"

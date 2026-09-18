@@ -36,14 +36,14 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-paper pb-12 pt-10">
-      <section className="mx-auto max-w-[1180px] px-4 pt-10 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-5 lg:px-4">
         <h1 className="text-4xl text-ink">Contact & Support</h1>
         <p className="mt-3 max-w-2xl text-sm text-ink-soft">
           Heb je een vraag over je account, betaling of gebruik van de app? Neem contact met ons op en we helpen je verder.
         </p>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-7 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-7 sm:px-5 lg:px-4">
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
           <Card className="border-rule bg-paper-raised/80 py-0">
             <CardContent className="p-6">
@@ -83,7 +83,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-5 lg:px-4">
         <div className="max-w-3xl space-y-6">
           <h2 className="text-2xl text-ink flex items-center gap-2">
             <HelpCircle className="h-5 w-5 text-muted-foreground" />

@@ -170,7 +170,7 @@ export default function Navbar({
 
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-paper/90 backdrop-blur-sm supports-backdrop-filter:bg-paper/75">
-      <div className="mx-auto flex h-16 w-full max-w-[1180px] items-center gap-4 px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto flex h-16 w-full max-w-[1180px] 2xl:max-w-[1500px] items-center gap-4 px-5 sm:px-8 lg:px-10">
         {withSidebar && (
           <div className="hidden shrink-0 items-center gap-3 lg:flex">
             <Button
@@ -322,7 +322,7 @@ export default function Navbar({
 
       {isMobileMenuOpen && (
         <div className="border-t border-rule bg-paper-raised md:hidden">
-          <div className="mx-auto w-full max-w-[1180px] px-4 py-3 sm:px-5 lg:px-4">
+          <div className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-4 py-3 sm:px-5 lg:px-4">
             <div className="space-y-1.5">
               {navItems.map((item) => (
                 <Link

@@ -40,7 +40,7 @@ export default async function FunnelPage() {
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <div className="flex flex-wrap items-end justify-between gap-4 border-b border-rule pb-8">
           <div>
             <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">Beheercentrum</p>

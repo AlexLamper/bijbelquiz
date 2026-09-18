@@ -259,8 +259,8 @@ export function PageShell({
         className={cn(
           'mx-auto w-full px-5 pb-16 pt-8 sm:px-8 lg:px-10 lg:pt-10',
           width === 'text' && 'max-w-[760px]',
-          width === 'default' && 'max-w-[1180px]',
-          width === 'wide' && 'max-w-[1420px]',
+          width === 'default' && 'max-w-[1180px] 2xl:max-w-[1500px]',
+          width === 'wide' && 'max-w-[1420px] 2xl:max-w-[1800px]',
           className
         )}
       >

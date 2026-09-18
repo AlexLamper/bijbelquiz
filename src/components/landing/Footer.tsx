@@ -42,7 +42,7 @@ const columns = [
 export function Footer() {
   return (
     <footer className="border-t border-rule bg-paper">
-      <div className="mx-auto w-full max-w-[1180px] px-5 py-14 sm:px-8 lg:px-10">
+      <div className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 py-14 sm:px-8 lg:px-10">
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-[minmax(0,1.4fr)_repeat(4,minmax(0,1fr))]">
           <div className="col-span-2 min-w-0 sm:col-span-4 md:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">

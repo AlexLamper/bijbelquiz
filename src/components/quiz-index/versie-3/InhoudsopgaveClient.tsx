@@ -26,7 +26,7 @@ import {
 } from './contents-model';
 
 const EYEBROW = 'text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted';
-const CONTAINER = 'mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10';
+const CONTAINER = 'mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10';
 
 /** How many search rows to list before pointing at the contents below. */
 const SEARCH_ROWS = 24;

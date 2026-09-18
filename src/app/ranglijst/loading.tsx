@@ -3,7 +3,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 export default function LeaderboardLoading() {
   return (
     <div className="min-h-screen pb-12 pt-10">
-      <div className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-end justify-between gap-4">
           <div className="space-y-2">
             <Skeleton className="h-4 w-20" />

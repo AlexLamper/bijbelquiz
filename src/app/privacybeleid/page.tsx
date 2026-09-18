@@ -61,12 +61,12 @@ export default function PrivacyPage() {
 
   return (
     <div className="min-h-screen bg-paper pb-14 pt-10">
-      <section className="mx-auto max-w-[1180px] px-4 pt-10 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-5 lg:px-4">
         <h1 className="text-4xl text-ink">Privacybeleid</h1>
         <p className="mt-3 text-sm text-ink-soft">Laatst bijgewerkt: 8 april 2026</p>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-5 lg:px-4">
         <article className="max-w-4xl rounded-lg border border-rule bg-paper-raised/80 p-6 md:p-8">
           <div className="space-y-8">
             {sections.map((section) => (

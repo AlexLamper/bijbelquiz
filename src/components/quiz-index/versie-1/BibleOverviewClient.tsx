@@ -97,7 +97,7 @@ export default function BibleOverviewClient({
 
   return (
     <div className="min-h-screen bg-paper pb-24 pt-10 lg:pt-14">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <PageMasthead
           eyebrow="Quizbibliotheek"
           title="De Bijbel in een oogopslag"
@@ -114,7 +114,7 @@ export default function BibleOverviewClient({
       </section>
 
       {/* Search */}
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-8 sm:px-8 lg:px-10">
         <label className="relative block">
           <span className="sr-only">Zoek een quiz</span>
           <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-muted" />
@@ -193,7 +193,7 @@ export default function BibleOverviewClient({
 
       {/* Featured */}
       {!result && featured.length > 0 && (
-        <section className="mx-auto w-full max-w-[1180px] px-5 pt-12 sm:px-8 lg:px-10">
+        <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-12 sm:px-8 lg:px-10">
           <SectionHead
             eyebrow="Uitgelicht"
             title={featured[0]?.eyebrow === 'Verder gaan' ? 'Ga verder waar je was' : 'Begin hier'}
@@ -215,7 +215,7 @@ export default function BibleOverviewClient({
       {sections.map((section) => (
         <section
           key={section.id}
-          className="mx-auto w-full max-w-[1180px] px-5 pt-12 sm:px-8 lg:px-10"
+          className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-12 sm:px-8 lg:px-10"
           aria-labelledby={`sectie-${section.id}`}
         >
           <h2

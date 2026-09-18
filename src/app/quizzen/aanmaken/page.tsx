@@ -22,14 +22,14 @@ export default async function CreateQuizPage() {
 
   return (
     <div className="min-h-screen bg-paper pb-12 pt-10">
-      <section className="mx-auto max-w-[1180px] px-4 pt-10 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-5 lg:px-4">
         <h1 className="text-4xl text-ink">Nieuwe Quiz Maken</h1>
         <p className="mt-3 max-w-3xl text-sm text-ink-soft">
           Deel jouw kennis. Je quiz wordt na indiening beoordeeld door een moderator.
         </p>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-7 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-7 sm:px-5 lg:px-4">
         <QuizCreatorForm categories={JSON.parse(JSON.stringify(categories))} />
       </section>
     </div>

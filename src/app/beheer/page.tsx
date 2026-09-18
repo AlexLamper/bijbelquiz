@@ -48,7 +48,7 @@ export default async function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <div className="relative overflow-hidden">
           <div>
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_auto] xl:items-end">
@@ -90,7 +90,7 @@ export default async function AdminDashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Link href="/beheer/betalingen" className="block">
           <Card className="border-rule py-0 transition-colors hover:bg-paper-sunken">
             <CardContent className="flex flex-wrap items-center justify-between gap-3 p-4">
@@ -114,7 +114,7 @@ export default async function AdminDashboard() {
         </Link>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <Card className="border-rule py-0">
             <CardContent className="p-4">
@@ -170,7 +170,7 @@ export default async function AdminDashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <div className="grid gap-6 lg:grid-cols-2">
           <Card className="border-rule py-0">
             <CardHeader className="pb-3 pt-5">
@@ -260,7 +260,7 @@ export default async function AdminDashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-3 pt-5">
             <CardTitle className="flex items-center gap-2 leading-tight text-ink">
@@ -355,11 +355,11 @@ export default async function AdminDashboard() {
         </Card>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <AdminGroupLicenseForm defaultSeats={GROUP_LICENSE_SEATS} />
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-3 pt-5">
             <CardTitle className="flex items-center gap-2 leading-tight text-ink">

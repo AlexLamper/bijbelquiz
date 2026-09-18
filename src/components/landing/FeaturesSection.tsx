@@ -38,7 +38,7 @@ const categories: {
 export function FeaturesSection() {
   return (
     <section id="categorieen" className="bg-paper">
-      <div className="mx-auto w-full max-w-[1180px] px-5 pt-12 sm:px-8 lg:px-10 lg:pt-20">
+      <div className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-12 sm:px-8 lg:px-10 lg:pt-20">
         <SectionHead
           eyebrow="Categorieën"
           title="Ontdek de rijkdom van Gods Woord"

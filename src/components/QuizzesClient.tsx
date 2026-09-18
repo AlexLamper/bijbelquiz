@@ -260,7 +260,7 @@ export default function QuizzesClient({
 
   return (
     <div className="min-h-screen bg-paper pb-24 pt-10 lg:pt-14">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <PageMasthead
           eyebrow="Quizbibliotheek"
           title="Ontdek en speel Bijbelquizzen"
@@ -273,7 +273,7 @@ export default function QuizzesClient({
         />
       </section>
 
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-8 sm:px-8 lg:px-10">
         <div>
           <div className="grid gap-3 md:grid-cols-[minmax(0,1fr)_auto_auto] md:items-center">
             <div className="relative">
@@ -375,7 +375,7 @@ export default function QuizzesClient({
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-8 sm:px-8 lg:px-10">
         {resultCount === 0 ? (
           <Card className="border-rule py-0">
             <CardContent className="p-12 text-center">

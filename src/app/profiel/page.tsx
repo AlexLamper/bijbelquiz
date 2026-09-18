@@ -110,7 +110,7 @@ export default async function ProfilePage() {
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
       {/* Masthead */}
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <Eyebrow>Profiel</Eyebrow>
         <ProfileIdentityCard
           initialName={user.name || 'Naamloos'}
@@ -126,7 +126,7 @@ export default async function ProfilePage() {
         />
       </section>
 
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-8 sm:px-8 lg:px-10">
         <div className="grid grid-cols-2 gap-x-6 gap-y-5 border-b border-rule pb-6 md:grid-cols-4 md:gap-y-0 md:divide-x md:divide-rule">
           <Figure
             label="Ervaring"

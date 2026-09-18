@@ -29,7 +29,7 @@ export function BijbelStudieSection({ surface = 'landing' }: BijbelStudieSection
        tint looks deliberate rather than like a box drawn too tight around the
        text. */
     <section className="mt-16 border-y border-rule bg-paper-raised lg:mt-28">
-      <div className="mx-auto w-full max-w-[1180px] px-5 py-16 sm:px-8 lg:px-10 lg:py-28">
+      <div className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 py-16 sm:px-8 lg:px-10 lg:py-28">
         <div className="max-w-2xl">
           <BijbelStudieLogo />
 

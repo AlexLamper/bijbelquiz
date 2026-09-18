@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function BugReportPage() {
   return (
     <div className="min-h-screen bg-paper pb-12 pt-10">
-      <section className="mx-auto max-w-[1180px] px-4 pt-10 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-5 lg:px-4">
         <div className="inline-flex items-center gap-2 rounded-md bg-paper-sunken px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-ink">
           <Bug className="h-3.5 w-3.5" />
           Support
@@ -27,7 +27,7 @@ export default function BugReportPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-5 lg:px-4">
         <div className="max-w-3xl">
           <BugReportForm supportEmail={email} />
         </div>

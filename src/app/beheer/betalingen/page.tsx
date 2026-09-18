@@ -63,7 +63,7 @@ export default async function PaymentsHealthPage() {
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">Beheercentrum</p>
@@ -93,7 +93,7 @@ export default async function PaymentsHealthPage() {
       </section>
 
       {/* Overall banner */}
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardContent className="flex flex-wrap items-center justify-between gap-4 p-5">
             <div className="flex items-center gap-3">
@@ -119,7 +119,7 @@ export default async function PaymentsHealthPage() {
       </section>
 
       {/* Checks: fails + warns first, oks collapsed */}
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-2 pt-5">
             <CardTitle className="text-ink">Controlelijst</CardTitle>
@@ -148,7 +148,7 @@ export default async function PaymentsHealthPage() {
         </Card>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <div className="grid gap-6 lg:grid-cols-2">
           {/* Stripe */}
           <Card className="border-rule py-0">
@@ -272,7 +272,7 @@ export default async function PaymentsHealthPage() {
       </section>
 
       {/* Funnel */}
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-3 pt-5">
             <CardTitle className="text-ink">Funnel (30 dagen)</CardTitle>
@@ -305,7 +305,7 @@ export default async function PaymentsHealthPage() {
       </section>
 
       {/* Access gaps */}
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-3 pt-5">
             <CardTitle className={`text-ink ${report.accessGaps.length > 0 ? '' : ''}`}>
@@ -336,7 +336,7 @@ export default async function PaymentsHealthPage() {
       </section>
 
       {/* Recent attempts */}
-      <section className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-3 pt-5">
             <CardTitle className="text-ink">Recente betaalpogingen</CardTitle>
@@ -382,7 +382,7 @@ export default async function PaymentsHealthPage() {
       </section>
 
       {/* Instructions pointer */}
-      <section id="handleiding" className="mx-auto max-w-[1180px] px-5 pt-6 sm:px-8 lg:px-10">
+      <section id="handleiding" className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="pb-3 pt-5">
             <CardTitle className="text-ink">Wat moet ik doen?</CardTitle>

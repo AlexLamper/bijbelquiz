@@ -33,7 +33,7 @@ export default function QuizReviewClient({
 
   return (
     <div className="min-h-screen pt-10 pb-12">
-      <section className="mx-auto max-w-[1180px] px-4 pt-10 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
@@ -55,7 +55,7 @@ export default function QuizReviewClient({
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-6 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-6 sm:px-6 lg:px-8">
         <QuizReviewSection
           questions={questions}
           score={score}

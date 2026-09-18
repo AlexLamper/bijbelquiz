@@ -24,7 +24,7 @@ export default async function GroupLicensePage() {
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-14">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <GroupLicenseClient
           priceLabel={GROUP_LICENSE_PRICE_LABEL}
           defaultSeats={GROUP_LICENSE_SEATS}

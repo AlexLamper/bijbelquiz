@@ -66,7 +66,7 @@ export default async function Home() {
     <div className="flex min-h-screen flex-col overflow-x-hidden bg-paper">
       {/* Hero */}
       <section id="hero">
-        <div className="mx-auto w-full max-w-[1180px] px-5 pb-10 pt-8 sm:px-8 lg:px-10 lg:pb-16 lg:pt-14">
+        <div className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pb-10 pt-8 sm:px-8 lg:px-10 lg:pb-16 lg:pt-14">
           <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start lg:gap-16">
             <div className="min-w-0">
               <Eyebrow>Gratis Bijbelquizzen</Eyebrow>
@@ -102,7 +102,7 @@ export default async function Home() {
 
         {/* Figures rail: one line, always. */}
         <div className="border-y border-rule">
-          <div className="mx-auto grid w-full max-w-[1180px] grid-cols-2 gap-x-4 gap-y-3 px-5 py-5 sm:grid-cols-4 sm:gap-x-0 sm:gap-y-0 sm:px-8 sm:divide-x sm:divide-rule lg:px-10">
+          <div className="mx-auto grid w-full max-w-[1180px] 2xl:max-w-[1500px] grid-cols-2 gap-x-4 gap-y-3 px-5 py-5 sm:grid-cols-4 sm:gap-x-0 sm:gap-y-0 sm:px-8 sm:divide-x sm:divide-rule lg:px-10">
             {figures.map((figure) => (
               <div key={figure.label} className="flex min-w-0 items-baseline gap-2 sm:px-5 sm:first:pl-0 sm:last:pr-0">
                 <span className="font-display text-[20px] font-normal leading-none tracking-[-0.02em] text-ink tabular-nums sm:text-[24px]">

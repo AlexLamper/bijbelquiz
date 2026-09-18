@@ -595,7 +595,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
   if (sessionStatus === 'loading' || loading) {
     return (
       <div className="min-h-screen bg-background pt-10">
-        <div className="container mx-auto max-w-5xl px-4 py-12">
+        <div className="container mx-auto max-w-5xl px-4 py-12 2xl:max-w-[1500px]">
           <LoadingSpinner size="lg" />
         </div>
       </div>
@@ -681,7 +681,7 @@ export default function MultiplayerRoomClient({ roomCode, view }: MultiplayerRoo
 
   return (
     <div className="min-h-screen bg-background pt-10">
-      <div className="container mx-auto max-w-6xl px-4 py-8 md:py-10">
+      <div className="container mx-auto max-w-6xl px-4 py-8 md:py-10 2xl:max-w-[1500px]">
         {/* Room header */}
         <div
           className={cn(

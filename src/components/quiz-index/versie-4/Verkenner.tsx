@@ -115,7 +115,7 @@ function Explorer({
 
   return (
     <div className="min-h-screen bg-paper pb-24 pt-10 lg:pt-14">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <PageMasthead
           eyebrow="Quizbibliotheek"
           title="Bijbelquizzen, boek voor boek"
@@ -135,7 +135,7 @@ function Explorer({
         />
       </section>
 
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-8 sm:px-8 lg:px-10">
         <div className="lg:grid lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-x-12">
           <aside className="lg:sticky lg:top-[calc(4rem+1.5rem)] lg:max-h-[calc(100vh-4rem-3rem)] lg:self-start lg:overflow-y-auto lg:border-r lg:border-rule lg:pr-6 lg:[scrollbar-width:thin]">
             <BookRail

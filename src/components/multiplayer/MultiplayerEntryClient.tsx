@@ -187,7 +187,7 @@ export default function MultiplayerEntryClient({
   ];
 
   return (
-    <div className="mx-auto w-full max-w-[1180px] px-5 pb-16 pt-8 sm:px-8 lg:px-10 lg:pt-10">
+    <div className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pb-16 pt-8 sm:px-8 lg:px-10 lg:pt-10">
       {/* Header: one sentence of what this is. The quota chip that used to sit
           on the right is gone with the quota. */}
       <div>

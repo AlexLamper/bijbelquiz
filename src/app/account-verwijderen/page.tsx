@@ -29,7 +29,7 @@ export default function DeleteAccountPage() {
 
   return (
     <div className="min-h-screen bg-paper pb-12 pt-10">
-      <section className="mx-auto max-w-[1180px] px-4 pt-10 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-5 lg:px-4">
         <h1 className="text-4xl text-ink">Account verwijderen</h1>
         <p className="mt-3 max-w-3xl text-sm text-ink-soft">
           Wil je je BijbelQuiz account en persoonsgegevens verwijderen? Op deze pagina vind je de snelste manier
@@ -37,7 +37,7 @@ export default function DeleteAccountPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-7 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-7 sm:px-5 lg:px-4">
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
           <Card className="border-rule bg-paper-raised/80 py-0">
             <CardContent className="p-6">
@@ -87,7 +87,7 @@ export default function DeleteAccountPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-5 lg:px-4">
+      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-5 lg:px-4">
         <Card className="border-rule bg-paper-raised/80 py-0">
           <CardContent className="space-y-6 p-6">
             <div>

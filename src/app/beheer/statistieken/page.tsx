@@ -138,7 +138,7 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
 
   return (
     <div className="min-h-screen bg-paper pb-20 pt-8 lg:pt-10">
-      <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         {/* ── Header ─────────────────────────────────────────────────────── */}
         <header className="flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-b border-rule pb-8">
           <div>

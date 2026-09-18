@@ -95,7 +95,7 @@ export default function BijbelStudiePage() {
 
   return (
     <div className="min-h-screen bg-paper pb-20">
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-10 sm:px-8 lg:px-10 lg:pt-14">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-10 sm:px-8 lg:px-10 lg:pt-14">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:items-center lg:gap-14">
           <div className="min-w-0">
             <BijbelStudieLogo size="lg" />
@@ -148,7 +148,7 @@ export default function BijbelStudiePage() {
         </div>
       </section>
 
-      <section className="mx-auto mt-20 w-full max-w-[1180px] px-5 sm:px-8 lg:mt-28 lg:px-10">
+      <section className="mx-auto mt-20 w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:mt-28 lg:px-10">
         <SectionHead eyebrow="Wat je er vindt" title="Alles om een hoofdstuk echt te begrijpen" />
 
         <ul className="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -162,7 +162,7 @@ export default function BijbelStudiePage() {
         </ul>
       </section>
 
-      <section className="mx-auto mt-20 w-full max-w-[1180px] px-5 sm:px-8 lg:mt-28 lg:px-10">
+      <section className="mx-auto mt-20 w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:mt-28 lg:px-10">
         <SectionHead eyebrow="Van quiz naar hoofdstuk" title="Zo horen de twee bij elkaar" />
 
         <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:items-center lg:gap-14">
@@ -199,7 +199,7 @@ export default function BijbelStudiePage() {
 
       <section
         id="pro-code"
-        className="mx-auto mt-20 w-full max-w-[1180px] scroll-mt-24 px-5 sm:px-8 lg:mt-28 lg:px-10"
+        className="mx-auto mt-20 w-full max-w-[1180px] 2xl:max-w-[1500px] scroll-mt-24 px-5 sm:px-8 lg:mt-28 lg:px-10"
       >
         <div className="grid gap-10 rounded-lg border border-rule bg-paper-raised p-6 sm:p-8 lg:grid-cols-2 lg:gap-14 lg:p-12">
           <div className="min-w-0">

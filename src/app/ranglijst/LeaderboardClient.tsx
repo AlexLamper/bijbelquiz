@@ -171,7 +171,7 @@ export default function LeaderboardClient({ users, currentUserId, initialCurrent
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <Eyebrow>Ranglijst</Eyebrow>
@@ -200,7 +200,7 @@ export default function LeaderboardClient({ users, currentUserId, initialCurrent
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1180px] px-5 pt-8 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-8 sm:px-8 lg:px-10">
         {groups.length > 0 && (
           <div className="mb-3 flex flex-wrap items-center gap-2">
             <Button

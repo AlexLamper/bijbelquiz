@@ -96,7 +96,7 @@ export default async function QuizLandingPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 lg:px-8 2xl:max-w-[1500px]">
         <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
           Bijbelquiz pagina
         </p>

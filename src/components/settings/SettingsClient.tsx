@@ -260,7 +260,7 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
 
   return (
     <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
-      <section className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10">
+      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
         <div className="flex flex-wrap items-end justify-between gap-4 border-b border-rule pb-7">
           <div>
             <Eyebrow>Account</Eyebrow>
@@ -280,7 +280,7 @@ export default function SettingsClient({ initialData }: SettingsClientProps) {
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1180px] gap-8 px-5 pt-9 sm:px-8 lg:px-10">
+      <section className="mx-auto grid w-full max-w-[1180px] 2xl:max-w-[1500px] gap-8 px-5 pt-9 sm:px-8 lg:px-10">
         <Card className="border-rule py-0">
           <CardHeader className="border-b border-rule pb-5 pt-6">
             <CardTitle className="flex items-center gap-2.5 font-display text-xl font-normal tracking-[-0.015em] text-ink">
