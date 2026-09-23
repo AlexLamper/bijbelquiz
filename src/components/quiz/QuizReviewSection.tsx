@@ -46,9 +46,11 @@ export default function QuizReviewSection({
     xpEfficiency,
   } = getQuizReviewInsights(questions, score, totalQuestions, xpEarned);
 
+  // Sized by its own width rather than the viewport: on the result screen it
+  // is the second column beside the score, on the beoordeling page it is the page.
   return (
-    <div className="space-y-5">
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="@container space-y-5">
+      <div className="grid gap-3 @lg:grid-cols-2 @3xl:grid-cols-4">
         <Card className="border-rule py-0">
           <CardContent className="p-4">
             <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Niveau</p>

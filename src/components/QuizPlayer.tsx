@@ -179,7 +179,7 @@ export default function QuizPlayer({
 
   // The session resolves after first paint, so the saved values arrive a beat
   // late and have to be adopted then. Comparing against what was last seeded
-  // means only a genuine change in the account preference re-applies — a change
+  // means only a genuine change in the account preference re-applies - a change
   // made here is not immediately undone by the session catching up. Done during
   // render rather than in an effect to avoid a second render pass.
   // Tracked per field, so a change to one preference never resets the other.
@@ -577,182 +577,212 @@ export default function QuizPlayer({
               bar: 'bg-vermilion',
             };
 
+    // The account offer and the answer review form the second column on a
+    // laptop. Without either there is nothing to set beside the report, and it
+    // stays a single column.
+    const hasResultAside = !isLoggedIn || reviewQuestions.length > 0;
+
     return (
-      <div className="mx-auto w-full max-w-[760px] px-5 pb-20 pt-10 sm:px-8">
-        {/* ── The result ────────────────────────────────────────────────
-            An editorial report, not a boxed card inside a boxed card: the
-            score is the headline, everything else is set against hairlines in
-            the same rhythm as the rest of the product. */}
-        <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
-          {quiz.title}
-        </p>
+      /* Unlike the player, the result is a page to read back rather than a
+         screen to answer on, so on a laptop it takes the same width as the
+         navbar and the dashboard. Below lg it is the narrow column it always
+         was. */
+      <div className="mx-auto w-full max-w-[760px] px-5 pb-20 pt-10 sm:px-8 lg:max-w-[1180px] lg:px-10 lg:pt-14 2xl:max-w-[1500px]">
+        <div
+          className={
+            hasResultAside
+              ? 'lg:grid lg:grid-cols-[minmax(0,380px)_minmax(0,1fr)] lg:items-start lg:gap-x-10 xl:grid-cols-[minmax(0,420px)_minmax(0,1fr)] xl:gap-x-14 2xl:grid-cols-[minmax(0,460px)_minmax(0,1fr)] 2xl:gap-x-20'
+              : 'lg:max-w-[760px]'
+          }
+        >
+          {/* ── The result ────────────────────────────────────────────────
+              An editorial report, not a boxed card inside a boxed card: the
+              score is the headline, everything else is set against hairlines in
+              the same rhythm as the rest of the product. On a laptop it holds
+              its place while the review beside it scrolls, as long as the
+              window is tall enough to show all of it. */}
+          <section className="lg:[@media(min-height:760px)]:sticky lg:[@media(min-height:760px)]:top-24">
+            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+              {quiz.title}
+            </p>
 
-        <h1 className="mt-3 font-display text-[34px] font-normal leading-[1.05] tracking-[-0.025em] text-ink sm:text-[44px]">
-          {verdict.headline}
-        </h1>
+            <h1 className="mt-3 font-display text-[34px] font-normal leading-[1.05] tracking-[-0.025em] text-ink sm:text-[44px] 2xl:text-[52px]">
+              {verdict.headline}
+            </h1>
 
-        <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-ink-muted">
-          {verdict.lead}
-        </p>
+            <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-ink-muted">
+              {verdict.lead}
+            </p>
 
-        {/* Score, as one figure with the bar underneath it. */}
-        <div className="mt-9 border-y border-rule py-7">
-          <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-5">
-            <div>
-              <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-                Jouw score
-              </p>
-              <p className="mt-2 flex items-baseline gap-2">
-                <span className={`font-display text-[56px] font-normal leading-none tabular-nums ${verdict.tone}`}>
-                  {score}
-                </span>
-                <span className="font-display text-2xl leading-none text-ink-muted">
-                  / {quiz.questions.length}
-                </span>
-              </p>
-            </div>
+            {/* Score, as one figure with the bar underneath it. */}
+            <div className="mt-9 border-y border-rule py-7">
+              <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-5">
+                <div>
+                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                    Jouw score
+                  </p>
+                  <p className="mt-2 flex items-baseline gap-2">
+                    <span className={`font-display text-[56px] font-normal leading-none tabular-nums ${verdict.tone}`}>
+                      {score}
+                    </span>
+                    <span className="font-display text-2xl leading-none text-ink-muted">
+                      / {quiz.questions.length}
+                    </span>
+                  </p>
+                </div>
 
-            <div className="flex gap-8">
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-                  Correct
-                </p>
-                <p className="mt-2 font-display text-[26px] font-normal leading-none tabular-nums text-ink">
-                  {percentage}%
-                </p>
+                <div className="flex gap-8">
+                  <div>
+                    <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                      Correct
+                    </p>
+                    <p className="mt-2 font-display text-[26px] font-normal leading-none tabular-nums text-ink">
+                      {percentage}%
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+                      Verdiend
+                    </p>
+                    <p className="mt-2 inline-flex items-baseline gap-1.5 font-display text-[26px] font-normal leading-none tabular-nums text-positive">
+                      +{resolvedXp}
+                      <span className="text-xs font-sans font-medium uppercase tracking-[0.16em] text-ink-muted">
+                        xp
+                      </span>
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-                  Verdiend
-                </p>
-                <p className="mt-2 inline-flex items-baseline gap-1.5 font-display text-[26px] font-normal leading-none tabular-nums text-positive">
-                  +{resolvedXp}
-                  <span className="text-xs font-sans font-medium uppercase tracking-[0.16em] text-ink-muted">
-                    xp
-                  </span>
-                </p>
+              <div className="mt-6 h-1 w-full bg-rule">
+                <div
+                  className={`h-1 transition-[width] duration-1000 ease-out ${verdict.bar}`}
+                  style={{ width: `${Math.max(2, percentage)}%` }}
+                />
               </div>
             </div>
-          </div>
 
-          <div className="mt-6 h-1 w-full bg-rule">
-            <div
-              className={`h-1 transition-[width] duration-1000 ease-out ${verdict.bar}`}
-              style={{ width: `${Math.max(2, percentage)}%` }}
-            />
-          </div>
-        </div>
+            {/* What to do next. Reading the chapter is the primary action: the
+                reader has just been shown, question by question, what they do and
+                do not know about it, and everything else here only loops them back
+                into more quiz. */}
+            <div className="mt-7">
+              {wrongCount > 0 && wrongPassage && (
+                <p className="mb-3 text-[15px] leading-relaxed text-ink-muted">
+                  {wrongCount === 1 ? 'Eén vraag ging mis' : `${wrongCount} vragen gingen mis`}
+                  {`, vooral over ${wrongPassage.book} ${wrongPassage.chapter}.`}
+                </p>
+              )}
 
-        {/* What to do next. Reading the chapter is the primary action: the
-            reader has just been shown, question by question, what they do and
-            do not know about it, and everything else here only loops them back
-            into more quiz. */}
-        <div className="mt-7">
-          {wrongCount > 0 && wrongPassage && (
-            <p className="mb-3 text-[15px] leading-relaxed text-ink-muted">
-              {wrongCount === 1 ? 'Eén vraag ging mis' : `${wrongCount} vragen gingen mis`}
-              {`, vooral over ${wrongPassage.book} ${wrongPassage.chapter}.`}
-            </p>
-          )}
+              {/* Full width in the narrow report column, so it lines up with the
+                  stacked buttons under it. */}
+              <div className="lg:[&>a]:w-full">
+                <StudieLink
+                  passage={wrongPassage}
+                  surface={wrongCount > 0 ? 'result_wrong_answers' : 'result_primary'}
+                  quizSlug={quizSlug}
+                  variant="primary"
+                />
+              </div>
+            </div>
 
-          <StudieLink
-            passage={wrongPassage}
-            surface={wrongCount > 0 ? 'result_wrong_answers' : 'result_primary'}
-            quizSlug={quizSlug}
-            variant="primary"
-          />
-        </div>
-
-        <div className="mt-3 flex flex-col gap-3 sm:flex-row">
-          <Button
-            type="button"
-            onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')}
-            disabled={isSaving}
-            className="h-12 flex-1 rounded-md border border-rule bg-paper-raised px-5 text-sm font-medium text-ink hover:bg-paper-sunken"
-          >
-            {isSaving ? 'Opslaan...' : isLoggedIn ? 'Naar dashboard' : 'Naar home'}
-          </Button>
-
-          <Button
-            type="button"
-            variant="outline"
-            onClick={() => window.location.reload()}
-            className="h-12 flex-1 rounded-md border-rule bg-paper-raised px-5 text-sm font-medium text-ink hover:bg-paper-sunken"
-          >
-            <RotateCcw className="mr-2 h-4 w-4" />
-            Opnieuw spelen
-          </Button>
-
-          <Button
-            asChild
-            variant="outline"
-            className="h-12 flex-1 rounded-md border-rule bg-paper px-5 text-sm font-medium text-ink-soft hover:bg-paper-sunken hover:text-ink"
-          >
-            <Link href="/quizzen">Volgende quiz</Link>
-          </Button>
-        </div>
-
-        {/* Played without an account: the score above is real and parked in
-            this browser. This is the moment to ask, with the XP it would
-            keep. Both buttons land on the dashboard, where the attempt shows
-            up under recent activity the moment the claim has run. The
-            analytics ids make the offer's seen/click ratio readable in
-            /beheer/statistieken. */}
-        {!isLoggedIn && (
-          <div
-            data-analytics-id="result_account_prompt"
-            data-analytics-label="Bewaar je score"
-            className="mt-10 rounded-lg border border-lapis/45 bg-paper-raised p-5 sm:p-6"
-          >
-            <p className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
-              <span aria-hidden className="h-px w-6 bg-lapis" />
-              Nog niet opgeslagen
-            </p>
-            <p className="mt-3 font-display text-lg leading-snug text-ink">
-              Bewaar je score, {resolvedXp} XP en je streak
-            </p>
-            <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">
-              Log in of maak een gratis account, dan wordt deze score direct bijgeschreven. Je
-              quizzen tellen dan mee voor je niveau en de ranglijst, en je ziet later terug hoe
-              je groeit.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-3 flex flex-col gap-3 sm:flex-row lg:flex-col">
               <Button
-                asChild
-                className="h-10 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+                type="button"
+                onClick={() => router.push(isLoggedIn ? '/dashboard' : '/')}
+                disabled={isSaving}
+                className="h-12 flex-1 rounded-md border border-rule bg-paper-raised px-5 text-sm font-medium text-ink hover:bg-paper-sunken"
               >
-                <Link
-                  href="/registreren?callbackUrl=%2Fdashboard"
-                  data-analytics-id="result_account_register"
-                >
-                  Gratis account aanmaken
-                </Link>
+                {isSaving ? 'Opslaan...' : isLoggedIn ? 'Naar dashboard' : 'Naar home'}
               </Button>
+
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => window.location.reload()}
+                className="h-12 flex-1 rounded-md border-rule bg-paper-raised px-5 text-sm font-medium text-ink hover:bg-paper-sunken"
+              >
+                <RotateCcw className="mr-2 h-4 w-4" />
+                Opnieuw spelen
+              </Button>
+
               <Button
                 asChild
                 variant="outline"
-                className="h-10 rounded-md border-rule bg-paper-raised px-4 text-sm font-medium text-ink hover:bg-paper-sunken"
+                className="h-12 flex-1 rounded-md border-rule bg-paper px-5 text-sm font-medium text-ink-soft hover:bg-paper-sunken hover:text-ink"
               >
-                <Link href="/inloggen?callbackUrl=%2Fdashboard" data-analytics-id="result_account_login">
-                  Inloggen
-                </Link>
+                <Link href="/quizzen">Volgende quiz</Link>
               </Button>
             </div>
-          </div>
-        )}
+          </section>
 
-        {reviewQuestions.length > 0 && (
-          <div className="mt-10 border-t border-rule pt-8">
-            <QuizReviewSection
-              questions={reviewQuestions}
-              score={score}
-              totalQuestions={quiz.questions.length}
-              xpEarned={resolvedXp}
-              quizSlug={quizSlug}
-            />
-          </div>
-        )}
+          {hasResultAside && (
+            <div className="lg:border-l lg:border-rule lg:pl-10 xl:pl-14 2xl:pl-20">
+
+              {/* Played without an account: the score above is real and parked in
+                  this browser. This is the moment to ask, with the XP it would
+                  keep. Both buttons land on the dashboard, where the attempt shows
+                  up under recent activity the moment the claim has run. The
+                  analytics ids make the offer's seen/click ratio readable in
+                  /beheer/statistieken. */}
+              {!isLoggedIn && (
+                <div
+                  data-analytics-id="result_account_prompt"
+                  data-analytics-label="Bewaar je score"
+                  className="mt-10 rounded-lg border border-lapis/45 bg-paper-raised p-5 sm:p-6 lg:first:mt-0"
+                >
+                  <p className="inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">
+                    <span aria-hidden className="h-px w-6 bg-lapis" />
+                    Nog niet opgeslagen
+                  </p>
+                  <p className="mt-3 font-display text-lg leading-snug text-ink">
+                    Bewaar je score, {resolvedXp} XP en je streak
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">
+                    Log in of maak een gratis account, dan wordt deze score direct bijgeschreven. Je
+                    quizzen tellen dan mee voor je niveau en de ranglijst, en je ziet later terug hoe
+                    je groeit.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <Button
+                      asChild
+                      className="h-10 rounded-md bg-ink px-4 text-sm font-medium text-ink-inverted hover:bg-ink-soft"
+                    >
+                      <Link
+                        href="/registreren?callbackUrl=%2Fdashboard"
+                        data-analytics-id="result_account_register"
+                      >
+                        Gratis account aanmaken
+                      </Link>
+                    </Button>
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="h-10 rounded-md border-rule bg-paper-raised px-4 text-sm font-medium text-ink hover:bg-paper-sunken"
+                    >
+                      <Link href="/inloggen?callbackUrl=%2Fdashboard" data-analytics-id="result_account_login">
+                        Inloggen
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              )}
+
+              {reviewQuestions.length > 0 && (
+                <div className="mt-10 border-t border-rule pt-8 lg:first:mt-0 lg:first:border-t-0 lg:first:pt-0">
+                  <QuizReviewSection
+                    questions={reviewQuestions}
+                    score={score}
+                    totalQuestions={quiz.questions.length}
+                    xpEarned={resolvedXp}
+                    quizSlug={quizSlug}
+                  />
+                </div>
+              )}
+            </div>
+          )}
+        </div>
 
         <StudiePromoModal passage={wrongPassage} quizSlug={quizSlug} />
 
