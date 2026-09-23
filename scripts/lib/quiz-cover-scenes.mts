@@ -117,6 +117,9 @@ import {
   type Scene,
 } from './quiz-cover-scene-kit.mjs';
 import { JOHANNES_SCENES } from './quiz-cover-scenes-johannes.mjs';
+import { HOOGLIED_SCENES } from './quiz-cover-scenes-hooglied.mjs';
+import { PREDIKER_SCENES } from './quiz-cover-scenes-prediker.mjs';
+import { KLAAGLIEDEREN_SCENES } from './quiz-cover-scenes-klaagliederen.mjs';
 import { LUCAS_SCENES } from './quiz-cover-scenes-lucas.mjs';
 import { MATTEUS_SCENES } from './quiz-cover-scenes-matteus.mjs';
 import { ROMEINEN_SCENES } from './quiz-cover-scenes-romeinen.mjs';
@@ -1544,15 +1547,28 @@ const CORE_SCENES: Record<string, Scene> = {
       fg(c),
     ],
   },
+  // Chapter 4 only: the gold grown dim, the sanctuary stones poured out in the
+  // streets, children asking bread, pursuers swifter than eagles. The throne
+  // and the closing prayer are chapter 5 (quiz-cover-scenes-klaagliederen.mts).
   'klaagliederen-bijbelquiz-deel-4': {
     hue: 44,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 704, sunY: 280, sunR: 92, far: 'ridge' }),
-      cityWall(980, G, 0.76, c.p.mid, 300, { opacity: 0.6 }),
-      throne(430, G, 0.95, c.p.near, { opacity: 0.75 }),
-      coin(600, G - 6, 1.0, c.p.accentDeep, { opacity: 0.7 }),
-      crowd(c.rand, 800, G + 14, 0.66, c.p.fore, 5, 230),
+      cityWall(1000, G, 0.76, c.p.mid, 300, { opacity: 0.6 }),
+      brickWall(c.rand, 1090, G + 8, 0.8, c.p.near, 2, 3),
+      bird(560, 206, 2.4, c.p.fore, { opacity: 0.75 }),
+      bird(650, 176, 2.0, c.p.fore, { opacity: 0.7 }),
+      bird(490, 244, 1.7, c.p.fore, { opacity: 0.65 }),
+      rotate(-14, 380, G + 30, rect(350, G + 12, 60, 26, c.p.near)),
+      rotate(22, 452, G + 34, rect(428, G + 16, 48, 24, c.p.near, { opacity: 0.9 })),
+      rotate(-6, 522, G + 28, rect(494, G + 14, 54, 22, c.p.near)),
+      rotate(34, 420, G + 8, rect(404, G - 6, 34, 18, c.p.near, { opacity: 0.85 })),
+      coin(610, G + 22, 1.0, c.p.accentDeep, { opacity: 0.55 }),
+      coin(646, G + 28, 0.8, c.p.accentDeep, { opacity: 0.45 }),
+      person(760, G + 38, 0.7, c.p.fore, 'raise'),
+      person(820, G + 40, 0.62, c.p.fore, 'raise'),
+      person(930, G + 36, 1.2, c.p.fore, 'walk'),
       fg(c),
     ],
   },
@@ -1962,6 +1978,9 @@ export const SCENES: Record<string, Scene> = {
   ...TITUS_SCENES,
   ...FILEMON_SCENES,
   ...HEBREEEN_SCENES,
+  ...HOOGLIED_SCENES,
+  ...PREDIKER_SCENES,
+  ...KLAAGLIEDEREN_SCENES,
 };
 
 export const SCENE_MODULES: Record<string, Record<string, Scene>> = {
@@ -1983,6 +2002,9 @@ export const SCENE_MODULES: Record<string, Record<string, Scene>> = {
   titus: TITUS_SCENES,
   filemon: FILEMON_SCENES,
   hebreeen: HEBREEEN_SCENES,
+  hooglied: HOOGLIED_SCENES,
+  prediker: PREDIKER_SCENES,
+  klaagliederen: KLAAGLIEDEREN_SCENES,
 };
 
 export function renderScene(slug: string): string {

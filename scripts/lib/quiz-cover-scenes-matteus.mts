@@ -1,7 +1,8 @@
 /**
- * Covers for the Matteus series, one scene per quiz part.
+ * Covers for the Matteus series, one scene per quiz. Each quiz covers one
+ * chapter: `matteus-bijbelquiz-deel-<n>` is chapter n (1-28).
  *
- * Base hue 300, drifting two degrees per part (wrapping past 360).
+ * Base hue 300, drifting two degrees per chapter (chapter 28 lands on 354).
  * See `quiz-cover-scenes.mts` for the house style and the core set this
  * module is merged into.
  */
@@ -225,28 +226,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 680, 16),
     ],
   },
-  // 6: the lamp on the stand and the city on a hill
+  // 6: look at the birds of the air and the lilies of the field
   'matteus-bijbelquiz-deel-6': {
     hue: 310,
-    mood: 'dusk',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 1080, sunY: 250, far: 'ridge', ground: 'flat', horizon: 516 }),
-      ellipse(1080, 520, 300, 100, c.p.far, { opacity: 0.9 }),
-      c.soft(1080, 420, 170, 0.26),
-      citySkyline(c.rand, 1080, 426, 0.7, c.p.near, 6),
-      rect(410, 508, 80, 10, c.p.fore),
-      rect(444, 420, 12, 96, c.p.fore),
-      rect(414, 414, 72, 8, c.p.fore),
-      c.soft(500, 400, 130, 0.42),
-      lamp(446, 414, 1.5, c.p.accent, c.p.light),
-      person(640, 516, 1.05, c.p.fore, 'sit'),
-      person(740, 516, 1.1, c.p.fore, 'stand'),
-      fg(c, 686, 14),
-    ],
-  },
-  // 7: look at the birds of the air and the lilies of the field
-  'matteus-bijbelquiz-deel-7': {
-    hue: 312,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 1060, sunY: 240, far: 'dunes' }),
@@ -264,9 +246,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  // 8: the house on the rock stands in the storm, the house on sand falls
-  'matteus-bijbelquiz-deel-8': {
-    hue: 314,
+  // 7: the house on the rock stands in the storm, the house on sand falls
+  'matteus-bijbelquiz-deel-7': {
+    hue: 312,
     mood: 'storm',
     draw: (c) => [
       base(c, { sun: 'none', clouds: 4, far: 'none', ground: 'flat', horizon: 520 }),
@@ -277,9 +259,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 686, 14),
     ],
   },
-  // 9: Jesus asleep in the boat as the storm rises
-  'matteus-bijbelquiz-deel-9': {
-    hue: 316,
+  // 8: Jesus asleep in the boat as the storm rises
+  'matteus-bijbelquiz-deel-8': {
+    hue: 314,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 300, sunY: 240, clouds: 3, far: 'none', ground: 'swell', horizon: 440 }),
@@ -292,9 +274,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       streaks(c.rand, 0, 100, W, 360, c.p.light, 40, { opacity: 0.22 }),
     ],
   },
-  // 10: Matthew called at the tax booth
-  'matteus-bijbelquiz-deel-10': {
-    hue: 318,
+  // 9: Matthew called at the tax booth
+  'matteus-bijbelquiz-deel-9': {
+    hue: 316,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 1080, sunY: 242, far: 'none', ground: 'flat', horizon: 512 }),
@@ -311,9 +293,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 11: the twelve sent out two by two
-  'matteus-bijbelquiz-deel-11': {
-    hue: 320,
+  // 10: the twelve sent out two by two
+  'matteus-bijbelquiz-deel-10': {
+    hue: 318,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 260, sunY: 240, far: 'ridge' }),
@@ -330,9 +312,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 12: John in prison sends his disciples to Jesus
-  'matteus-bijbelquiz-deel-12': {
-    hue: 322,
+  // 11: John in prison sends his disciples to Jesus
+  'matteus-bijbelquiz-deel-11': {
+    hue: 320,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1060, sunY: 246, far: 'none', ground: 'flat', horizon: 510 }),
@@ -345,9 +327,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 13: the disciples pluck grain on the sabbath
-  'matteus-bijbelquiz-deel-13': {
-    hue: 324,
+  // 12: the disciples pluck grain on the sabbath
+  'matteus-bijbelquiz-deel-12': {
+    hue: 322,
     mood: 'gold',
     draw: (c) => [
       base(c, { sunX: 1080, sunY: 246, rays: true, far: 'dunes' }),
@@ -363,28 +345,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 680, 16),
     ],
   },
-  // 14: a tree is known by its fruit
-  'matteus-bijbelquiz-deel-14': {
-    hue: 326,
-    mood: 'day',
-    draw: (c) => [
-      base(c, { sunX: 260, sunY: 240, far: 'ridge' }),
-      tree(1000, G + 4, 1.6, c.p.near),
-      circle(970, 350, 9, c.p.accent),
-      circle(1020, 336, 9, c.p.accent),
-      circle(1040, 384, 9, c.p.accent),
-      circle(960, 396, 8, c.p.accent),
-      circle(1002, 372, 8, c.p.accent),
-      circle(1058, 356, 8, c.p.accent),
-      bareTree(1230, G + 6, 1.05, c.p.fore),
-      person(740, G + 8, 1.3, c.p.fore, 'point'),
-      crowd(c.rand, 440, G + 10, 0.85, c.p.near, 3, 150),
-      fg(c, 676, 18),
-    ],
-  },
-  // 15: the sower scatters seed along the path
-  'matteus-bijbelquiz-deel-15': {
-    hue: 328,
+  // 13: the sower scatters seed along the path
+  'matteus-bijbelquiz-deel-13': {
+    hue: 324,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 1070, sunY: 242, far: 'dunes' }),
@@ -400,29 +363,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 16: the treasure hidden in the field
-  'matteus-bijbelquiz-deel-16': {
-    hue: 330,
-    mood: 'gold',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 300, sunY: 248, far: 'ridge' }),
-      tree(1100, G + 2, 1.5, c.p.near),
-      bird(1150, 300, 1.1, c.p.fore, { opacity: 0.6 }),
-      wheat(280, G + 10, 0.9, c.p.near, 6),
-      ellipse(640, G + 18, 74, 14, c.p.fore),
-      c.soft(640, G - 12, 120, 0.4),
-      rect(608, G - 6, 64, 30, c.p.accentDeep),
-      rect(602, G - 16, 76, 12, c.p.accent, { rx: 4 }),
-      coin(626, G - 24, 0.8, c.p.accent),
-      coin(652, G - 26, 0.8, c.p.accent),
-      coin(640, G - 36, 0.7, c.p.accent),
-      person(770, G + 8, 1.15, c.p.fore, 'kneel'),
-      fg(c, 674, 20),
-    ],
-  },
-  // 17: Jesus walks on the water, Peter sinks
-  'matteus-bijbelquiz-deel-17': {
-    hue: 332,
+  // 14: Jesus walks on the water, Peter sinks
+  'matteus-bijbelquiz-deel-14': {
+    hue: 326,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'moon', sunX: 1090, sunY: 232, sunR: 58, far: 'none', ground: 'water', horizon: 450 }),
@@ -436,9 +379,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 692, 12),
     ],
   },
-  // 18: the Canaanite woman kneels before Jesus
-  'matteus-bijbelquiz-deel-18': {
-    hue: 334,
+  // 15: the Canaanite woman kneels before Jesus
+  'matteus-bijbelquiz-deel-15': {
+    hue: 328,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 280, sunY: 240, far: 'ridge', horizon: 474 }),
@@ -450,9 +393,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  // 19: the keys of the kingdom given to Peter on the rock
-  'matteus-bijbelquiz-deel-19': {
-    hue: 336,
+  // 16: the keys of the kingdom given to Peter on the rock
+  'matteus-bijbelquiz-deel-16': {
+    hue: 330,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1080, sunY: 250, far: 'ridge' }),
@@ -465,9 +408,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 20: the transfiguration on the mountain
-  'matteus-bijbelquiz-deel-20': {
-    hue: 338,
+  // 17: the transfiguration on the mountain
+  'matteus-bijbelquiz-deel-17': {
+    hue: 332,
     mood: 'gold',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 704, sunY: 250, sunR: 140, rays: true, far: 'ridge' }),
@@ -483,9 +426,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 21: the shepherd goes after the one lost sheep
-  'matteus-bijbelquiz-deel-21': {
-    hue: 340,
+  // 18: the shepherd goes after the one lost sheep
+  'matteus-bijbelquiz-deel-18': {
+    hue: 334,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 280, sunY: 246, far: 'ridge' }),
@@ -500,9 +443,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 22: a camel through the eye of a needle
-  'matteus-bijbelquiz-deel-22': {
-    hue: 342,
+  // 19: a camel through the eye of a needle
+  'matteus-bijbelquiz-deel-19': {
+    hue: 336,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 1060, sunY: 240, far: 'dunes' }),
@@ -513,9 +456,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  // 23: the vineyard workers paid at evening
-  'matteus-bijbelquiz-deel-23': {
-    hue: 344,
+  // 20: the vineyard workers paid at evening
+  'matteus-bijbelquiz-deel-20': {
+    hue: 338,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1070, sunY: 250, far: 'dunes', horizon: 476 }),
@@ -531,9 +474,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 24: the entry into Jerusalem on a donkey
-  'matteus-bijbelquiz-deel-24': {
-    hue: 346,
+  // 21: the entry into Jerusalem on a donkey
+  'matteus-bijbelquiz-deel-21': {
+    hue: 340,
     mood: 'gold',
     draw: (c) => [
       base(c, { sunX: 190, sunY: 226, sunR: 62, rays: true, far: 'dunes', horizon: 478 }),
@@ -548,23 +491,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 25: the tenants of the vineyard kill the son
-  'matteus-bijbelquiz-deel-25': {
-    hue: 348,
-    mood: 'warm',
-    draw: (c) => [
-      base(c, { sunX: 1080, sunY: 242, far: 'ridge' }),
-      tower(1090, G + 4, 1.05, c.p.near),
-      vineRow(c.rand, 120, G + 8, 1.0, c.p.near, 5),
-      person(620, G + 8, 1.25, c.p.fore, 'raise'),
-      person(700, G + 8, 1.2, c.p.fore, 'raise'),
-      person(850, G + 14, 1.15, c.p.near, 'fallen'),
-      fg(c, 676, 18),
-    ],
-  },
-  // 26: the wedding banquet of the king
-  'matteus-bijbelquiz-deel-26': {
-    hue: 350,
+  // 22: the wedding banquet of the king
+  'matteus-bijbelquiz-deel-22': {
+    hue: 342,
     mood: 'gold',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 704, sunY: 240, far: 'none', ground: 'flat', horizon: 516 }),
@@ -582,24 +511,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 686, 14),
     ],
   },
-  // 27: the greatest commandment - Jesus lifts the law before the Pharisees
-  'matteus-bijbelquiz-deel-27': {
-    hue: 352,
-    mood: 'dusk',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 300, sunY: 246, far: 'none', ground: 'flat', horizon: 512 }),
-      templeFront(1020, 512, 1.1, c.p.near, 6),
-      person(420, 512, 1.2, c.p.fore, 'point'),
-      person(580, 512, 1.3, c.p.fore, 'raise'),
-      c.soft(580, 316, 110, 0.36),
-      scroll(580, 316, 0.75, c.p.accent),
-      crowd(c.rand, 800, 514, 0.8, c.p.near, 4, 180),
-      fg(c, 684, 14),
-    ],
-  },
-  // 28: woe to the Pharisees - whitewashed tombs
-  'matteus-bijbelquiz-deel-28': {
-    hue: 354,
+  // 23: woe to the Pharisees - whitewashed tombs
+  'matteus-bijbelquiz-deel-23': {
+    hue: 344,
     mood: 'storm',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1050, sunY: 240, clouds: 3, far: 'ridge', horizon: 480 }),
@@ -612,9 +526,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 676, 18),
     ],
   },
-  // 29: the temple's destruction foretold from the Mount of Olives
-  'matteus-bijbelquiz-deel-29': {
-    hue: 356,
+  // 24: the temple's destruction foretold from the Mount of Olives
+  'matteus-bijbelquiz-deel-24': {
+    hue: 346,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1070, sunY: 246, far: 'ridge', horizon: 480 }),
@@ -629,27 +543,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 680, 16),
     ],
   },
-  // 30: the Son of Man coming on the clouds with his angels
-  'matteus-bijbelquiz-deel-30': {
-    hue: 358,
-    mood: 'night',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 704, sunY: 230, sunR: 160, far: 'ridge', stars: 50 }),
-      lightning(300, 150, 1.0, c.p.light, 0.7),
-      lightning(1150, 170, 0.9, c.p.light, 0.6),
-      c.soft(704, 270, 270, 0.3),
-      rays(c.rand, 704, 270, 420, c.p.glow, 16, { opacity: 0.2 }),
-      cloudBank(c.rand, 704, 350, 1.8, c.p.light, { opacity: 0.35 }),
-      angel(520, 356, 0.85, c.p.light, { opacity: 0.7 }),
-      angel(890, 356, 0.85, c.p.light, { opacity: 0.7 }),
-      person(704, 340, 1.05, c.p.light, 'raise', { opacity: 0.96 }),
-      crowd(c.rand, 704, G + 10, 0.9, c.p.fore, 8, 560),
-      fg(c, 676, 18),
-    ],
-  },
-  // 31: the ten virgins with their lamps at the shut door
-  'matteus-bijbelquiz-deel-31': {
-    hue: 0,
+  // 25: the ten virgins with their lamps at the shut door
+  'matteus-bijbelquiz-deel-25': {
+    hue: 348,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'moon', sunX: 250, sunY: 232, sunR: 54, far: 'none', ground: 'flat', horizon: 512 }),
@@ -663,9 +559,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 32: the anointing at Bethany
-  'matteus-bijbelquiz-deel-32': {
-    hue: 2,
+  // 26: the anointing at Bethany
+  'matteus-bijbelquiz-deel-26': {
+    hue: 350,
     mood: 'warm',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1080, sunY: 246, far: 'none', ground: 'flat', horizon: 516 }),
@@ -684,28 +580,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 686, 14),
     ],
   },
-  // 33: Gethsemane - Jesus prays while the arrest party approaches with torches
-  'matteus-bijbelquiz-deel-33': {
-    hue: 4,
-    mood: 'night',
-    draw: (c) => [
-      base(c, { sun: 'moon', sunX: 1090, sunY: 230, sunR: 54, far: 'ridge', stars: 60 }),
-      tree(300, G + 4, 1.3, c.p.near),
-      tree(1260, G + 2, 1.0, c.p.near),
-      person(440, G + 14, 1.0, c.p.fore, 'fallen'),
-      person(545, G + 18, 0.95, c.p.fore, 'fallen'),
-      c.soft(660, 400, 130, 0.18),
-      person(680, G + 8, 1.25, c.p.fore, 'kneel'),
-      c.soft(1060, 330, 140, 0.26),
-      torch(1010, 330, 1.0, c.p.near, c.p.accent),
-      torch(1120, 342, 0.9, c.p.near, c.p.accent),
-      crowd(c.rand, 1060, G + 10, 0.9, c.p.near, 5, 260),
-      fg(c, 676, 18),
-    ],
-  },
-  // 34: Pilate washes his hands as the crowd calls for Barabbas
-  'matteus-bijbelquiz-deel-34': {
-    hue: 6,
+  // 27: Pilate washes his hands as the crowd calls for Barabbas
+  'matteus-bijbelquiz-deel-27': {
+    hue: 352,
     mood: 'storm',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 300, sunY: 240, far: 'none', ground: 'flat', horizon: 516 }),
@@ -721,27 +598,9 @@ export const MATTEUS_SCENES: Record<string, Scene> = {
       fg(c, 686, 14),
     ],
   },
-  // 35: the crucifixion in darkness at Golgotha
-  'matteus-bijbelquiz-deel-35': {
-    hue: 8,
-    mood: 'storm',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 704, sunY: 236, sunR: 70, clouds: 4, far: 'ridge' }),
-      rect(0, 0, W, H, c.p.fore, { opacity: 0.3 }),
-      ellipse(704, 522, 420, 92, c.p.near),
-      cross(704, 436, 1.2, c.p.fore),
-      cross(560, 446, 0.9, c.p.fore, { opacity: 0.85 }),
-      cross(848, 446, 0.9, c.p.fore, { opacity: 0.85 }),
-      person(400, 476, 0.95, c.p.fore, 'bow'),
-      person(470, 470, 0.9, c.p.fore, 'kneel'),
-      person(960, 470, 1.0, c.p.fore, 'stand'),
-      rect(986, 300, 4, 176, c.p.fore),
-      fg(c, 680, 16),
-    ],
-  },
-  // 36: the empty tomb at dawn - the angel on the rolled-away stone
-  'matteus-bijbelquiz-deel-36': {
-    hue: 10,
+  // 28: the empty tomb at dawn - the angel on the rolled-away stone
+  'matteus-bijbelquiz-deel-28': {
+    hue: 354,
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 1130, sunY: 244, sunR: 84, rays: true, far: 'ridge' }),

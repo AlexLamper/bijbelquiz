@@ -1,7 +1,8 @@
 /**
- * Covers for the Lucas series, one scene per quiz part.
+ * Covers for the Lucas series, one scene per quiz. Each quiz covers one
+ * chapter: `lucas-bijbelquiz-deel-<n>` is chapter n (1-24).
  *
- * Base hue around 120, drifting a few degrees per part.
+ * Base hue 120, drifting two degrees per chapter (chapter 24 lands on 166).
  * See `quiz-cover-scenes.mts` for the house style and the core set this
  * module is merged into.
  */
@@ -126,23 +127,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 2: Mary greets Elizabeth in the hill country
+  // 2: the angel over the shepherds in the fields of Bethlehem
   'lucas-bijbelquiz-deel-2': {
     hue: 122,
-    mood: 'warm',
-    draw: (c) => [
-      base(c, { sunX: 1070, sunY: 244, far: 'ridge', horizon: 474 }),
-      trail(300, H, 640, 480, 120, c.p.mid, { opacity: 0.5 }),
-      houseBlock(c.rand, 1000, 478, 0.85, c.p.near),
-      tree(340, 480, 1.1, c.p.near),
-      person(560, 482, 1.3, c.p.fore, 'walk'),
-      person(760, 482, 1.25, c.p.near, 'raise'),
-      fg(c, 674, 20),
-    ],
-  },
-  // 3: the angel over the shepherds in the fields of Bethlehem
-  'lucas-bijbelquiz-deel-3': {
-    hue: 124,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 800, sunY: 260, sunR: 130, far: 'dunes', stars: 60 }),
@@ -159,9 +146,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 678, 18),
     ],
   },
-  // 4: John baptizes Jesus in the Jordan, the dove descends
-  'lucas-bijbelquiz-deel-4': {
-    hue: 126,
+  // 3: John baptizes Jesus in the Jordan, the dove descends
+  'lucas-bijbelquiz-deel-3': {
+    hue: 124,
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 300, sunY: 236, rays: true, ground: 'water', far: 'dunes', horizon: 452 }),
@@ -174,9 +161,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 690, 12),
     ],
   },
-  // 5: the temptation in the wilderness, the tempter points at the kingdoms
-  'lucas-bijbelquiz-deel-5': {
-    hue: 128,
+  // 4: the temptation in the wilderness, the tempter points at the kingdoms
+  'lucas-bijbelquiz-deel-4': {
+    hue: 126,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1060, sunY: 250, far: 'dunes' }),
@@ -189,9 +176,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 6: the miraculous catch of fish, Peter kneels in the boat
-  'lucas-bijbelquiz-deel-6': {
-    hue: 130,
+  // 5: the miraculous catch of fish, Peter kneels in the boat
+  'lucas-bijbelquiz-deel-5': {
+    hue: 128,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 260, sunY: 240, ground: 'water', far: 'dunes', horizon: 448 }),
@@ -205,9 +192,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 692, 12),
     ],
   },
-  // 7: the disciples pluck grain on the sabbath
-  'lucas-bijbelquiz-deel-7': {
-    hue: 132,
+  // 6: the disciples pluck grain on the sabbath
+  'lucas-bijbelquiz-deel-6': {
+    hue: 130,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 1080, sunY: 244, far: 'ridge' }),
@@ -220,9 +207,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 8: the young man of Nain raised from the bier at the town gate
-  'lucas-bijbelquiz-deel-8': {
-    hue: 134,
+  // 7: the young man of Nain raised from the bier at the town gate
+  'lucas-bijbelquiz-deel-7': {
+    hue: 132,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 260, sunY: 244, far: 'none', ground: 'flat', horizon: 508 }),
@@ -236,25 +223,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 682, 16),
     ],
   },
-  // 9: the sinful woman anoints Jesus' feet at Simon's table
-  'lucas-bijbelquiz-deel-9': {
-    hue: 136,
-    mood: 'gold',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 1060, sunY: 250, far: 'none', ground: 'flat', horizon: 510 }),
-      columns(230, 510, 1.0, c.p.near, 2),
-      table(760, 510, 360, 1.1, c.p.near),
-      goblet(700, 462, 0.9, c.p.accent),
-      loaf(820, 462, 0.9, c.p.accent),
-      person(960, 510, 1.15, c.p.near, 'sit'),
-      person(560, 510, 1.2, c.p.near, 'sit'),
-      person(430, 510, 1.05, c.p.fore, 'kneel'),
-      fg(c, 682, 16),
-    ],
-  },
-  // 10: the sower scatters seed, the birds come for the path
-  'lucas-bijbelquiz-deel-10': {
-    hue: 138,
+  // 8: the sower scatters seed, the birds come for the path
+  'lucas-bijbelquiz-deel-8': {
+    hue: 134,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 280, sunY: 240, far: 'ridge' }),
@@ -272,27 +243,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 11: the herd of swine rushes down the slope into the lake
-  'lucas-bijbelquiz-deel-11': {
-    hue: 140,
-    mood: 'day',
-    draw: (c) => [
-      base(c, { sunX: 1070, sunY: 240, ground: 'water', far: 'ridge', horizon: 486 }),
-      path(`M -80 500 L 700 500 C 760 470 820 420 900 400 L 1000 420 L 1000 560 L -80 560 Z`, c.p.mid),
-      tombMound(200, 500, 0.7, c.p.near, c.p.fore),
-      person(500, 500, 1.3, c.p.fore, 'point'),
-      person(400, 504, 1.05, c.p.near, 'kneel'),
-      pig(700, 500, 1.0, c.p.near),
-      pig(790, 468, 0.95, c.p.near),
-      pig(870, 436, 0.9, c.p.near),
-      rotate(38, 980, 450, pig(980, 450, 0.9, c.p.near)),
-      rotate(62, 1080, 520, pig(1080, 520, 0.85, c.p.near, { opacity: 0.8 })),
-      fg(c, 692, 12),
-    ],
-  },
-  // 12: five loaves and two fish feed the five thousand, twelve baskets are left
-  'lucas-bijbelquiz-deel-12': {
-    hue: 142,
+  // 9: five loaves and two fish feed the five thousand, twelve baskets are left
+  'lucas-bijbelquiz-deel-9': {
+    hue: 136,
     mood: 'gold',
     draw: (c) => [
       base(c, { sunX: 1060, sunY: 248, rays: true, far: 'ridge' }),
@@ -307,26 +260,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 13: the transfiguration, a cloud overshadows the mountain
-  'lucas-bijbelquiz-deel-13': {
-    hue: 144,
-    mood: 'night',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 704, sunY: 300, sunR: 140, far: 'ridge', stars: 30 }),
-      c.soft(704, 320, 200, 0.22),
-      cloudBank(c.rand, 704, 250, 1.8, c.p.light, { opacity: 0.32 }),
-      person(704, G, 1.4, c.p.light, 'raise', { opacity: 0.95 }),
-      person(590, G + 6, 1.05, c.p.light, 'stand', { opacity: 0.5 }),
-      person(820, G + 6, 1.05, c.p.light, 'stand', { opacity: 0.5 }),
-      person(380, G + 16, 1.0, c.p.fore, 'kneel'),
-      person(470, G + 20, 0.95, c.p.fore, 'bow'),
-      person(1010, G + 18, 1.0, c.p.fore, 'kneel'),
-      fg(c, 678, 18),
-    ],
-  },
-  // 14: the good Samaritan lifts the wounded man onto his donkey
-  'lucas-bijbelquiz-deel-14': {
-    hue: 146,
+  // 10: the good Samaritan lifts the wounded man onto his donkey
+  'lucas-bijbelquiz-deel-10': {
+    hue: 138,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 1080, sunY: 246, far: 'ridge' }),
@@ -338,9 +274,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  // 15: the friend at midnight knocks for three loaves
-  'lucas-bijbelquiz-deel-15': {
-    hue: 148,
+  // 11: the friend at midnight knocks for three loaves
+  'lucas-bijbelquiz-deel-11': {
+    hue: 140,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'moon', sunX: 280, sunY: 232, sunR: 56, far: 'none', ground: 'flat', horizon: 508 }),
@@ -353,23 +289,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 682, 16),
     ],
   },
-  // 16: the sign of Jonah, a great fish off the shore of Nineveh
-  'lucas-bijbelquiz-deel-16': {
-    hue: 150,
-    mood: 'dusk',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 300, sunY: 246, ground: 'water', far: 'dunes', horizon: 446 }),
-      citySkyline(c.rand, 1120, 446, 0.85, c.p.far, 7, { opacity: 0.65 }),
-      fish(880, 540, 1.5, c.p.near),
-      dunes(c.rand, 566, 24, c.p.mid, { segs: 3 }),
-      person(420, 574, 1.3, c.p.fore, 'point'),
-      crowd(c.rand, 240, 580, 0.8, c.p.fore, 3, 140),
-      fg(c, 692, 12),
-    ],
-  },
-  // 17: the rich fool plans bigger barns after the great harvest
-  'lucas-bijbelquiz-deel-17': {
-    hue: 152,
+  // 12: the rich fool plans bigger barns after the great harvest
+  'lucas-bijbelquiz-deel-12': {
+    hue: 142,
     mood: 'gold',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1080, sunY: 248, far: 'dunes', horizon: 476 }),
@@ -384,28 +306,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  // 18: the watchful servants wait with lamps lit for their master
-  'lucas-bijbelquiz-deel-18': {
-    hue: 154,
-    mood: 'dusk',
-    draw: (c) => [
-      base(c, { sun: 'none', stars: 24, far: 'none', ground: 'flat', horizon: 510 }),
-      gateArch(1120, 510, 1.15, c.p.near),
-      c.soft(760, 410, 200, 0.2),
-      person(640, 510, 1.15, c.p.near, 'stand'),
-      person(760, 510, 1.15, c.p.near, 'stand'),
-      person(880, 510, 1.15, c.p.near, 'stand'),
-      lamp(568, 416, 0.7, c.p.fore, c.p.accent),
-      lamp(688, 416, 0.7, c.p.fore, c.p.accent),
-      lamp(808, 416, 0.7, c.p.fore, c.p.accent),
-      trail(200, H, 420, 510, 110, c.p.mid, { opacity: 0.4 }),
-      person(330, 510, 1.2, c.p.fore, 'walk'),
-      fg(c, 682, 16),
-    ],
-  },
-  // 19: the barren fig tree, the gardener asks for one more year
-  'lucas-bijbelquiz-deel-19': {
-    hue: 156,
+  // 13: the barren fig tree, the gardener asks for one more year
+  'lucas-bijbelquiz-deel-13': {
+    hue: 144,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 280, sunY: 244, far: 'dunes' }),
@@ -417,9 +320,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 20: the great banquet, the poor and the lame are brought in from the streets
-  'lucas-bijbelquiz-deel-20': {
-    hue: 158,
+  // 14: the great banquet, the poor and the lame are brought in from the streets
+  'lucas-bijbelquiz-deel-14': {
+    hue: 146,
     mood: 'gold',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 280, sunY: 246, far: 'none', ground: 'flat', horizon: 512 }),
@@ -436,9 +339,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 21: the lost son comes home to his father
-  'lucas-bijbelquiz-deel-21': {
-    hue: 160,
+  // 15: the lost son comes home to his father
+  'lucas-bijbelquiz-deel-15': {
+    hue: 148,
     mood: 'gold',
     draw: (c) => [
       base(c, { sunX: 1080, sunY: 248, rays: true, far: 'dunes', horizon: 474 }),
@@ -451,9 +354,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  // 22: Lazarus lies at the rich man's gate
-  'lucas-bijbelquiz-deel-22': {
-    hue: 162,
+  // 16: Lazarus lies at the rich man's gate
+  'lucas-bijbelquiz-deel-16': {
+    hue: 150,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 300, sunY: 248, far: 'none', ground: 'flat', horizon: 512 }),
@@ -468,9 +371,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 23: the ten lepers, one Samaritan turns back to give thanks
-  'lucas-bijbelquiz-deel-23': {
-    hue: 164,
+  // 17: the ten lepers, one Samaritan turns back to give thanks
+  'lucas-bijbelquiz-deel-17': {
+    hue: 152,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 300, sunY: 240, far: 'ridge' }),
@@ -486,9 +389,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 24: the Pharisee and the tax collector pray in the temple
-  'lucas-bijbelquiz-deel-24': {
-    hue: 166,
+  // 18: the Pharisee and the tax collector pray in the temple
+  'lucas-bijbelquiz-deel-18': {
+    hue: 154,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 1070, sunY: 240, far: 'none', ground: 'flat', horizon: 510 }),
@@ -498,9 +401,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 682, 16),
     ],
   },
-  // 25: Zacchaeus in the sycamore
-  'lucas-bijbelquiz-deel-25': {
-    hue: 168,
+  // 19: Zacchaeus in the sycamore
+  'lucas-bijbelquiz-deel-19': {
+    hue: 156,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 260, sunY: 244, far: 'dunes', horizon: 476 }),
@@ -513,26 +416,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 674, 20),
     ],
   },
-  // 26: the entry into Jerusalem, cloaks and branches on the road
-  'lucas-bijbelquiz-deel-26': {
-    hue: 170,
-    mood: 'gold',
-    draw: (c) => [
-      base(c, { sunX: 270, sunY: 244, rays: true, far: 'ridge', horizon: 476 }),
-      cityWall(1160, 476, 0.9, c.p.near, 320, { opacity: 0.8 }),
-      gateArch(1160, 476, 0.9, c.p.near),
-      rect(560, 470, 180, 10, c.p.accent, { opacity: 0.8 }),
-      rect(780, 474, 140, 9, c.p.accent, { opacity: 0.7 }),
-      donkey(680, 482, 1.2, c.p.near),
-      person(660, 430, 0.85, c.p.fore, 'stand'),
-      palm(360, 482, 0.85, c.p.near),
-      crowd(c.rand, 920, 486, 0.75, c.p.near, 5, 220),
-      fg(c, 674, 20),
-    ],
-  },
-  // 27: the wicked tenants cast the son out of the vineyard
-  'lucas-bijbelquiz-deel-27': {
-    hue: 172,
+  // 20: the wicked tenants cast the son out of the vineyard
+  'lucas-bijbelquiz-deel-20': {
+    hue: 158,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1070, sunY: 250, far: 'dunes' }),
@@ -545,22 +431,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 28: render to Caesar, Jesus holds up the denarius
-  'lucas-bijbelquiz-deel-28': {
-    hue: 174,
-    mood: 'day',
-    draw: (c) => [
-      base(c, { sunX: 260, sunY: 240, far: 'none', ground: 'flat', horizon: 512 }),
-      columns(1130, 512, 1.0, c.p.near, 3),
-      person(620, 512, 1.35, c.p.fore, 'point'),
-      coin(720, 386, 2.2, c.p.accent),
-      crowd(c.rand, 940, 514, 0.95, c.p.near, 4, 200),
-      fg(c, 684, 14),
-    ],
-  },
-  // 29: not one stone left upon another, Jesus foretells the temple's fall
-  'lucas-bijbelquiz-deel-29': {
-    hue: 176,
+  // 21: not one stone left upon another, Jesus foretells the temple's fall
+  'lucas-bijbelquiz-deel-21': {
+    hue: 160,
     mood: 'storm',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 300, sunY: 240, clouds: 4, far: 'none', ground: 'flat', horizon: 512 }),
@@ -571,9 +444,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 30: the last supper, the bread and the cup
-  'lucas-bijbelquiz-deel-30': {
-    hue: 178,
+  // 22: the last supper, the bread and the cup
+  'lucas-bijbelquiz-deel-22': {
+    hue: 162,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'none', stars: 10, far: 'none', ground: 'flat', horizon: 512 }),
@@ -591,27 +464,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 684, 14),
     ],
   },
-  // 31: Gethsemane, an angel strengthens Jesus while the disciples sleep
-  'lucas-bijbelquiz-deel-31': {
-    hue: 180,
-    mood: 'night',
-    draw: (c) => [
-      base(c, { sun: 'moon', sunX: 1080, sunY: 234, sunR: 56, far: 'ridge' }),
-      cypress(300, G + 6, 1.0, c.p.near),
-      tree(1000, G + 4, 1.2, c.p.near),
-      c.soft(640, 380, 170, 0.18),
-      angel(660, G + 2, 1.0, c.p.light, { opacity: 0.7 }),
-      person(540, G + 8, 1.2, c.p.fore, 'kneel'),
-      person(860, G + 14, 1.1, c.p.fore, 'fallen'),
-      person(1180, G + 12, 0.95, c.p.near, 'sit'),
-      flame(1320, 380, 0.35, c.p.accent, { opacity: 0.8 }),
-      flame(1360, 396, 0.3, c.p.accent, { opacity: 0.7 }),
-      fg(c, 676, 20),
-    ],
-  },
-  // 32: Simon of Cyrene carries the cross behind Jesus, the women weep
-  'lucas-bijbelquiz-deel-32': {
-    hue: 182,
+  // 23: Simon of Cyrene carries the cross behind Jesus, the women weep
+  'lucas-bijbelquiz-deel-23': {
+    hue: 164,
     mood: 'storm',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1060, sunY: 246, clouds: 3, far: 'ridge' }),
@@ -625,26 +480,9 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       fg(c, 676, 20),
     ],
   },
-  // 33: the crucifixion, darkness over the land
-  'lucas-bijbelquiz-deel-33': {
-    hue: 184,
-    mood: 'storm',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 320, sunY: 236, sunR: 60, clouds: 5, far: 'ridge' }),
-      rect(0, 0, W, H, c.p.fore, { opacity: 0.28 }),
-      dunes(c.rand, 470, 30, c.p.near, { segs: 3, opacity: 0.6 }),
-      cross(704, G - 10, 1.15, c.p.fore),
-      cross(520, G, 0.8, c.p.near, { opacity: 0.85 }),
-      cross(900, G, 0.8, c.p.near, { opacity: 0.85 }),
-      person(620, G + 16, 1.0, c.p.fore, 'kneel'),
-      person(1090, G + 18, 0.85, c.p.near, 'stand'),
-      person(1160, G + 22, 0.8, c.p.near, 'bow'),
-      fg(c, 676, 20),
-    ],
-  },
-  // 34: the empty tomb at dawn, two men in shining garments
-  'lucas-bijbelquiz-deel-34': {
-    hue: 186,
+  // 24: the empty tomb at dawn, two men in shining garments
+  'lucas-bijbelquiz-deel-24': {
+    hue: 166,
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 300, sunY: 240, sunR: 84, rays: true, far: 'ridge' }),
@@ -656,21 +494,6 @@ export const LUCAS_SCENES: Record<string, Scene> = {
       person(480, G + 8, 1.15, c.p.fore, 'kneel'),
       person(580, G + 6, 1.2, c.p.fore, 'raise'),
       person(400, G + 10, 1.1, c.p.fore, 'stand'),
-      fg(c, 674, 20),
-    ],
-  },
-  // 35: the road to Emmaus, the village ahead as evening falls
-  'lucas-bijbelquiz-deel-35': {
-    hue: 188,
-    mood: 'dusk',
-    draw: (c) => [
-      base(c, { sunX: 1060, sunY: 250, sunR: 74, rays: true, far: 'ridge', horizon: 474 }),
-      citySkyline(c.rand, 1150, 474, 0.75, c.p.far, 5, { opacity: 0.6 }),
-      trail(300, H, 1040, 478, 150, c.p.mid, { opacity: 0.5 }),
-      person(560, 486, 1.2, c.p.fore, 'walk'),
-      person(660, 482, 1.3, c.p.fore, 'walk'),
-      person(760, 486, 1.2, c.p.fore, 'walk'),
-      cypress(260, 482, 0.9, c.p.near),
       fg(c, 674, 20),
     ],
   },

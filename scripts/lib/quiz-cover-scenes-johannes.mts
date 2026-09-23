@@ -1,11 +1,11 @@
 /**
- * Covers for the Johannes series, one scene per quiz part.
+ * Covers for the Johannes series, one scene per quiz. Each quiz covers one
+ * chapter: `johannes-bijbelquiz-deel-<n>` is chapter n (1-21).
  *
- * Base hue 20, drifting two degrees per part (part 29 lands on 76).
+ * Base hue 20, drifting two degrees per chapter (chapter 21 lands on 60).
  * See `quiz-cover-scenes.mts` for the house style and the core set this
  * module is merged into. Each scene is the one event of its chapter the
- * questions actually ask about; chapters that span two parts get two
- * different events.
+ * questions actually ask about.
  */
 
 import { G, base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
@@ -124,26 +124,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 2: "Behold the Lamb of God" - John points, the dove descends, two disciples follow Jesus
+  // 2: The wedding at Cana - six stone jars filled with water
   'johannes-bijbelquiz-deel-2': {
     hue: 22,
-    mood: 'day',
-    draw: (c) => [
-      base(c, { sunX: 250, sunY: 240, far: 'ridge' }),
-      trail(400, H, 1100, G, 120, c.p.mid, { opacity: 0.45 }),
-      person(420, G + 8, 1.3, c.p.fore, 'point'),
-      person(760, G + 4, 1.25, c.p.near, 'walk'),
-      person(900, G + 8, 1.05, c.p.near, 'walk'),
-      person(1000, G + 12, 0.95, c.p.near, 'walk'),
-      dove(760, 250, 1.3, c.p.light, { opacity: 0.9 }),
-      shafts(760, 70, 160, 170, c.p.glow, 3),
-      fg(c, 676, 20),
-    ],
-  },
-
-  // 3: The wedding at Cana - six stone jars filled with water
-  'johannes-bijbelquiz-deel-3': {
-    hue: 24,
     mood: 'gold',
     draw: (c) => [
       base(c, { sunX: 1080, sunY: 236, rays: true, far: 'none', ground: 'flat', horizon: 512 }),
@@ -161,9 +144,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 4: Nicodemus comes to Jesus by night
-  'johannes-bijbelquiz-deel-4': {
-    hue: 26,
+  // 3: Nicodemus comes to Jesus by night
+  'johannes-bijbelquiz-deel-3': {
+    hue: 24,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'moon', sunX: 1080, sunY: 226, sunR: 60, far: 'none', ground: 'flat', horizon: 512, stars: 70 }),
@@ -176,9 +159,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 5: Jesus and the Samaritan woman at Jacob's well
-  'johannes-bijbelquiz-deel-5': {
-    hue: 28,
+  // 4: Jesus and the Samaritan woman at Jacob's well
+  'johannes-bijbelquiz-deel-4': {
+    hue: 26,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 260, sunY: 238, far: 'dunes' }),
@@ -191,24 +174,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 6: "The fields are white for harvest" - the Samaritans come out to Jesus
-  'johannes-bijbelquiz-deel-6': {
-    hue: 30,
-    mood: 'gold',
-    draw: (c) => [
-      base(c, { sunX: 1060, sunY: 244, rays: true, far: 'dunes', horizon: 474 }),
-      citySkyline(c.rand, 1080, 474, 0.85, c.p.far, 6, { opacity: 0.6 }),
-      person(420, 484, 1.35, c.p.fore, 'point'),
-      crowd(c.rand, 940, 486, 0.85, c.p.near, 6, 300),
-      wheat(230, 500, 1.1, c.p.crop, 6),
-      wheat(640, 504, 0.9, c.p.crop, 5),
-      fg(c, 674, 20),
-    ],
-  },
-
-  // 7: Bethesda - the man takes up his mat and walks
-  'johannes-bijbelquiz-deel-7': {
-    hue: 32,
+  // 5: Bethesda - the man takes up his mat and walks
+  'johannes-bijbelquiz-deel-5': {
+    hue: 28,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 1070, sunY: 240, far: 'none', ground: 'flat', horizon: 512 }),
@@ -223,25 +191,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 8: "The Scriptures testify of me" - Jesus teaching, John the burning lamp
-  'johannes-bijbelquiz-deel-8': {
-    hue: 34,
-    mood: 'dusk',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 280, sunY: 246, far: 'none', ground: 'flat', horizon: 514 }),
-      templeFront(1000, 514, 1.05, c.p.near, 6),
-      person(440, 514, 1.35, c.p.fore, 'point'),
-      rect(600, 470, 200, 44, c.p.near),
-      scroll(700, 448, 0.8, c.p.accent),
-      lamp(560, 476, 1.1, c.p.fore, c.p.accent),
-      crowd(c.rand, 1240, 516, 0.7, c.p.fore, 3, 120),
-      fg(c, 686, 14),
-    ],
-  },
-
-  // 9: Five loaves and two fish on the hillside
-  'johannes-bijbelquiz-deel-9': {
-    hue: 36,
+  // 6: Five loaves and two fish on the hillside
+  'johannes-bijbelquiz-deel-6': {
+    hue: 30,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 1060, sunY: 238, far: 'ridge', ground: 'water', horizon: 448 }),
@@ -256,26 +208,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 10: Many disciples turn back; the twelve stay ("to whom shall we go?")
-  'johannes-bijbelquiz-deel-10': {
-    hue: 38,
-    mood: 'dusk',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 1080, sunY: 250, far: 'ridge' }),
-      trail(300, H, 1200, G, 130, c.p.mid, { opacity: 0.45 }),
-      person(560, G + 6, 1.35, c.p.fore, 'stand'),
-      person(440, G + 10, 1.05, c.p.fore, 'raise'),
-      person(660, G + 12, 1.0, c.p.fore, 'stand'),
-      person(1000, G + 6, 0.95, c.p.near, 'walk', { opacity: 0.85 }),
-      person(1090, G + 4, 0.85, c.p.near, 'walk', { opacity: 0.75 }),
-      person(1170, G + 2, 0.75, c.p.near, 'walk', { opacity: 0.65 }),
-      fg(c, 676, 20),
-    ],
-  },
-
-  // 11: The Feast of Tabernacles - booths outside Jerusalem, Jesus arriving quietly
-  'johannes-bijbelquiz-deel-11': {
-    hue: 40,
+  // 7: The Feast of Tabernacles - booths outside Jerusalem, Jesus arriving quietly
+  'johannes-bijbelquiz-deel-7': {
+    hue: 32,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 250, sunY: 240, far: 'dunes', horizon: 476 }),
@@ -290,24 +225,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 12: "If anyone thirsts, let him come to me" - the last day of the feast
-  'johannes-bijbelquiz-deel-12': {
-    hue: 42,
-    mood: 'gold',
-    draw: (c) => [
-      base(c, { sunX: 1120, sunY: 232, sunR: 80, rays: true, far: 'none', ground: 'flat', horizon: 512 }),
-      templeFront(704, 512, 1.15, c.p.near, 7),
-      rect(0, 496, W, 16, c.p.near, { opacity: 0.9 }),
-      person(704, 496, 1.4, c.p.fore, 'raise'),
-      crowd(c.rand, 380, 514, 0.85, c.p.near, 5, 260),
-      crowd(c.rand, 1030, 514, 0.85, c.p.near, 5, 260),
-      fg(c, 686, 14),
-    ],
-  },
-
-  // 13: The woman caught in adultery - Jesus writes on the ground, the accusers leave
-  'johannes-bijbelquiz-deel-13': {
-    hue: 44,
+  // 8: The woman caught in adultery - Jesus writes on the ground, the accusers leave
+  'johannes-bijbelquiz-deel-8': {
+    hue: 34,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 1090, sunY: 236, far: 'none', ground: 'flat', horizon: 514 }),
@@ -323,24 +243,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 14: "Before Abraham was, I am" - they take up stones, Jesus walks out of the temple
-  'johannes-bijbelquiz-deel-14': {
-    hue: 46,
-    mood: 'storm',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 280, sunY: 240, clouds: 3, far: 'none', ground: 'flat', horizon: 514 }),
-      templeFront(1120, 514, 0.95, c.p.near, 5),
-      crowd(c.rand, 800, 516, 1.0, c.p.fore, 6, 280),
-      circle(600, 506, 12, c.p.near),
-      circle(650, 508, 9, c.p.near),
-      person(380, 514, 1.35, c.p.fore, 'walk'),
-      fg(c, 686, 14),
-    ],
-  },
-
-  // 15: The man born blind washes in the pool of Siloam
-  'johannes-bijbelquiz-deel-15': {
-    hue: 48,
+  // 9: The man born blind washes in the pool of Siloam
+  'johannes-bijbelquiz-deel-9': {
+    hue: 36,
     mood: 'day',
     draw: (c) => [
       base(c, { sunX: 1070, sunY: 238, far: 'none', ground: 'flat', horizon: 508 }),
@@ -353,9 +258,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 16: The Good Shepherd at the door of the sheepfold
-  'johannes-bijbelquiz-deel-16': {
-    hue: 50,
+  // 10: The Good Shepherd at the door of the sheepfold
+  'johannes-bijbelquiz-deel-10': {
+    hue: 38,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 260, sunY: 244, far: 'dunes', horizon: 474 }),
@@ -371,9 +276,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 17: Martha meets Jesus on the road outside Bethany
-  'johannes-bijbelquiz-deel-17': {
-    hue: 52,
+  // 11: Martha meets Jesus on the road outside Bethany
+  'johannes-bijbelquiz-deel-11': {
+    hue: 40,
     mood: 'dusk',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 1080, sunY: 246, far: 'ridge' }),
@@ -387,25 +292,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 18: Lazarus walks out of the tomb
-  'johannes-bijbelquiz-deel-18': {
-    hue: 54,
-    mood: 'day',
-    draw: (c) => [
-      base(c, { sunX: 280, sunY: 238, rays: true, far: 'ridge' }),
-      tombMound(940, G, 1.1, c.p.near, c.p.fore),
-      roundStone(1160, G, 0.95, c.p.near),
-      person(940, G + 6, 1.15, c.p.light, 'stand', { opacity: 0.95 }),
-      person(600, G + 8, 1.35, c.p.fore, 'raise'),
-      person(470, G + 12, 1.05, c.p.near, 'kneel'),
-      crowd(c.rand, 320, G + 14, 0.8, c.p.near, 3, 130),
-      fg(c, 676, 20),
-    ],
-  },
-
-  // 19: The entry into Jerusalem with palm branches
-  'johannes-bijbelquiz-deel-19': {
-    hue: 56,
+  // 12: The entry into Jerusalem with palm branches
+  'johannes-bijbelquiz-deel-12': {
+    hue: 42,
     mood: 'gold',
     draw: (c) => [
       base(c, { sunX: 250, sunY: 246, rays: true, far: 'dunes', horizon: 476 }),
@@ -420,24 +309,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 20: "Father, glorify your name" - the voice from heaven over the crowd
-  'johannes-bijbelquiz-deel-20': {
-    hue: 58,
-    mood: 'storm',
-    draw: (c) => [
-      base(c, { sun: 'glow', sunX: 704, sunY: 200, sunR: 120, clouds: 4, far: 'ridge' }),
-      shafts(704, 80, 380, 330, c.p.glow, 5),
-      person(704, G + 4, 1.4, c.p.fore, 'raise'),
-      crowd(c.rand, 400, G + 12, 0.85, c.p.near, 5, 260),
-      crowd(c.rand, 1010, G + 12, 0.85, c.p.near, 5, 260),
-      wheat(230, G + 32, 0.9, c.p.crop, 4),
-      fg(c, 676, 20),
-    ],
-  },
-
-  // 21: Jesus washes the disciples' feet
-  'johannes-bijbelquiz-deel-21': {
-    hue: 60,
+  // 13: Jesus washes the disciples' feet
+  'johannes-bijbelquiz-deel-13': {
+    hue: 44,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'none', stars: 50, far: 'none', ground: 'flat', horizon: 520 }),
@@ -455,9 +329,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 22: "I am the way" - the road to the Father's house
-  'johannes-bijbelquiz-deel-22': {
-    hue: 62,
+  // 14: "I am the way" - the road to the Father's house
+  'johannes-bijbelquiz-deel-14': {
+    hue: 46,
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 1170, sunY: 222, sunR: 90, rays: true, far: 'ridge' }),
@@ -470,9 +344,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 23: The true vine - the vinedresser among the vines
-  'johannes-bijbelquiz-deel-23': {
-    hue: 64,
+  // 15: The true vine - the vinedresser among the vines
+  'johannes-bijbelquiz-deel-15': {
+    hue: 48,
     mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 1070, sunY: 244, far: 'dunes', horizon: 474 }),
@@ -485,9 +359,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 24: "Your sorrow will turn to joy" - the disciples grieving as dawn breaks
-  'johannes-bijbelquiz-deel-24': {
-    hue: 66,
+  // 16: "Your sorrow will turn to joy" - the disciples grieving as dawn breaks
+  'johannes-bijbelquiz-deel-16': {
+    hue: 50,
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 1080, sunY: 246, sunR: 92, rays: true, far: 'ridge' }),
@@ -500,9 +374,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 25: The high-priestly prayer - Jesus lifts his eyes to heaven
-  'johannes-bijbelquiz-deel-25': {
-    hue: 68,
+  // 17: The high-priestly prayer - Jesus lifts his eyes to heaven
+  'johannes-bijbelquiz-deel-17': {
+    hue: 52,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 704, sunY: 250, sunR: 140, far: 'ridge', stars: 50 }),
@@ -515,9 +389,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 26: The arrest in the garden - torches, and the band falling to the ground
-  'johannes-bijbelquiz-deel-26': {
-    hue: 70,
+  // 18: The arrest in the garden - torches, and the band falling to the ground
+  'johannes-bijbelquiz-deel-18': {
+    hue: 54,
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'moon', sunX: 260, sunY: 230, sunR: 58, far: 'ridge', stars: 60 }),
@@ -535,9 +409,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 27: The crucifixion - Mary and the beloved disciple at the foot of the cross
-  'johannes-bijbelquiz-deel-27': {
-    hue: 72,
+  // 19: The crucifixion - Mary and the beloved disciple at the foot of the cross
+  'johannes-bijbelquiz-deel-19': {
+    hue: 56,
     mood: 'storm',
     draw: (c) => [
       base(c, { sun: 'none', clouds: 5, far: 'ridge' }),
@@ -553,9 +427,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 28: The empty tomb - Mary Magdalene turns and sees the risen Jesus
-  'johannes-bijbelquiz-deel-28': {
-    hue: 74,
+  // 20: The empty tomb - Mary Magdalene turns and sees the risen Jesus
+  'johannes-bijbelquiz-deel-20': {
+    hue: 58,
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 1060, sunY: 236, sunR: 90, rays: true, far: 'ridge' }),
@@ -569,9 +443,9 @@ export const JOHANNES_SCENES: Record<string, Scene> = {
     ],
   },
 
-  // 29: The net full of fish and the fire on the beach at Tiberias
-  'johannes-bijbelquiz-deel-29': {
-    hue: 76,
+  // 21: The net full of fish and the fire on the beach at Tiberias
+  'johannes-bijbelquiz-deel-21': {
+    hue: 60,
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 1060, sunY: 240, sunR: 84, rays: true, far: 'dunes', ground: 'water', horizon: 440 }),
