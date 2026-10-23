@@ -5,6 +5,7 @@ import Providers from "@/components/Providers";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import AppShell from "@/components/AppShell";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -155,6 +156,7 @@ export default function RootLayout({
             <AppShell>{children}</AppShell>
           </Providers>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
