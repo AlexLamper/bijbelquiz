@@ -21,3 +21,5 @@ export { default as GroupLicense } from './models/GroupLicense';
 export * from './models/GroupLicense';
 export { default as PlayerGroup } from './models/PlayerGroup';
 export * from './models/PlayerGroup';
+export { default as Duel } from './models/Duel';
+export * from './models/Duel';
