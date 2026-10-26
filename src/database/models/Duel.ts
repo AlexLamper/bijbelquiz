@@ -70,6 +70,12 @@ export interface IDuel extends Document {
   participants: mongoose.Types.ObjectId[];
   /** Absent (never null) on non-invite duels, see the sparse index below. */
   inviteToken?: string;
+  /**
+   * Uniqueness guard while the duel runs: `pair:<id>:<id>` for a friend duel,
+   * `random:<id>` for a random search still waiting. Removed when the duel
+   * finishes (or the search is matched), so the index only covers live ones.
+   */
+  runningKey?: string;
   rounds: IDuelRound[];
   challengerAnswers: IDuelAnswer[];
   opponentAnswers: IDuelAnswer[];
@@ -152,6 +158,10 @@ const DuelSchema = new Schema<IDuel>(
     // index still indexes an explicit null, and the second friend duel would
     // then collide with the first.
     inviteToken: { type: String, unique: true, sparse: true },
+    // Same rule: absent, never null. Two taps on "uitdagen" (or two players
+    // challenging each other at once) would otherwise both pass the "already
+    // running?" check and make two duels; the second insert fails here instead.
+    runningKey: { type: String, unique: true, sparse: true },
     rounds: { type: [RoundSchema], default: [] },
     challengerAnswers: { type: [DuelAnswerSchema], default: [] },
     opponentAnswers: { type: [DuelAnswerSchema], default: [] },

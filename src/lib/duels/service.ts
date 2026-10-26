@@ -5,7 +5,7 @@ import type { DuelEndReason, DuelMode, DuelStatus, IDuel, IDuelAnswer } from '@/
 import { AvatarConfig, resolveAvatar } from '@/lib/avatar';
 import { getLevelInfo } from '@/lib/gamification';
 import { calculateNextStreak } from '@/lib/streak';
-import { DuelError, duelNotFound, duelValidationError } from './errors';
+import { DuelError, duelNotFound, duelValidationError, isVersionConflict } from './errors';
 import {
   buildDuelInviteMessage,
   buildDuelInviteUrl,
@@ -158,6 +158,38 @@ function deadlineFrom(now: Date): Date {
   return new Date(now.getTime() + DUEL_TURN_TIMEOUT_MS);
 }
 
+/** `runningKey` of a friend duel: the same for both directions. */
+function pairKey(a: mongoose.Types.ObjectId, b: mongoose.Types.ObjectId): string {
+  return `pair:${[String(a), String(b)].sort().join(':')}`;
+}
+
+/** `runningKey` of a random search that is still waiting for an opponent. */
+function searchKey(challenger: mongoose.Types.ObjectId): string {
+  return `random:${String(challenger)}`;
+}
+
+function isDuplicateRunningKey(error: unknown): boolean {
+  if (!error || typeof error !== 'object') return false;
+  const { code, keyPattern } = error as { code?: unknown; keyPattern?: Record<string, unknown> };
+  return code === 11000 && !!keyPattern && 'runningKey' in keyPattern;
+}
+
+/**
+ * Runs a load-change-save again when another request saved the same duel in
+ * between. Every attempt reloads the duel, so the retry sees what the other
+ * request did: a double tap finds its own answer already recorded, a second
+ * joiner finds the seat taken. Without this both surfaced as a 409.
+ */
+async function withRetry<T>(operation: () => Promise<T>, attempts = 3): Promise<T> {
+  for (let attempt = 1; ; attempt += 1) {
+    try {
+      return await operation();
+    } catch (error) {
+      if (attempt >= attempts || !isVersionConflict(error)) throw error;
+    }
+  }
+}
+
 function finish(
   duel: IDuel,
   reason: DuelEndReason,
@@ -170,6 +202,8 @@ function finish(
   duel.finishedAt = now;
   duel.turnUserId = null;
   duel.turnSide = null;
+  // $unset, so the pair (or the searcher) can start a new one.
+  duel.runningKey = undefined;
 }
 
 /** Recomputes scores and whose move it is; finishes the duel when all is played. */
@@ -453,15 +487,25 @@ function assertCreationAllowed(userId: string): void {
   }
 }
 
-async function assertActiveLimit(userId: mongoose.Types.ObjectId): Promise<void> {
+/**
+ * Both limits skip duels past their deadline: those are over, they just have
+ * not been read (and settled) yet.
+ */
+async function assertActiveLimit(
+  userId: mongoose.Types.ObjectId,
+  whose: 'mine' | 'opponent' = 'mine',
+): Promise<void> {
   const active = await Duel.countDocuments({
     participants: userId,
     status: { $in: ['open', 'active'] },
+    turnDeadline: { $gt: new Date() },
   });
   if (active >= MAX_ACTIVE_DUELS_PER_USER) {
     throw new DuelError(
       'TOO_MANY_DUELS',
-      `Je hebt al ${MAX_ACTIVE_DUELS_PER_USER} lopende duels. Speel er eerst een paar uit.`,
+      whose === 'mine'
+        ? `Je hebt al ${MAX_ACTIVE_DUELS_PER_USER} lopende duels. Speel er eerst een paar uit.`
+        : 'Deze speler heeft al heel veel lopende duels. Probeer het later opnieuw.',
       429,
     );
   }
@@ -472,6 +516,7 @@ async function assertOpenLimit(userId: mongoose.Types.ObjectId): Promise<void> {
     challengerId: userId,
     status: 'open',
     opponentId: null,
+    turnDeadline: { $gt: new Date() },
   });
   if (open >= MAX_OPEN_DUELS_PER_USER) {
     throw new DuelError(
@@ -540,12 +585,14 @@ export async function listDuels(viewerId: string): Promise<DuelListView> {
 
 export async function getDuel(viewerId: string, duelId: string): Promise<DuelView> {
   await connectDB();
-  const duel = await loadOwnDuel(viewerId, duelId);
-  const now = new Date();
-  if (settleIfExpired(duel, now)) {
-    await duel.save();
-  }
-  return viewOf(duel, viewerId);
+  return withRetry(async () => {
+    const duel = await loadOwnDuel(viewerId, duelId);
+    const now = new Date();
+    if (settleIfExpired(duel, now)) {
+      await duel.save();
+    }
+    return viewOf(duel, viewerId);
+  });
 }
 
 export interface InvitePreview {
@@ -560,12 +607,14 @@ export async function getInvitePreview(rawToken: string): Promise<InvitePreview>
   if (!token) throw new DuelError('INVITE_NOT_FOUND', 'Deze uitnodiging bestaat niet.', 404);
   await connectDB();
 
-  const duel = await Duel.findOne({ inviteToken: token });
-  if (!duel) throw new DuelError('INVITE_NOT_FOUND', 'Deze uitnodiging bestaat niet.', 404);
-
-  if (settleIfExpired(duel, new Date())) {
-    await duel.save();
-  }
+  const duel = await withRetry(async () => {
+    const found = await Duel.findOne({ inviteToken: token });
+    if (!found) throw new DuelError('INVITE_NOT_FOUND', 'Deze uitnodiging bestaat niet.', 404);
+    if (settleIfExpired(found, new Date())) {
+      await found.save();
+    }
+    return found;
+  });
 
   const challengerId = String(duel.challengerId);
   const players = await loadPlayers([challengerId]);
@@ -735,10 +784,24 @@ function newDuelFields(
   };
 }
 
+function existingResult(view: DuelView, matched = false): CreateDuelResult {
+  return { duel: view, created: false, matched, inviteUrl: null, inviteToken: null, inviteMessage: null };
+}
+
 export async function createDuel(viewerId: string, input: CreateDuelInput): Promise<CreateDuelResult> {
   const me = toObjectId(viewerId);
   if (!me) throw new DuelError('UNAUTHORIZED', 'Niet geautoriseerd', 401);
   await connectDB();
+  // A retry only happens when settling an expired duel lost a race, which is
+  // before anything is created or counted against the hourly limit.
+  return withRetry(() => createDuelOnce(me, viewerId, input));
+}
+
+async function createDuelOnce(
+  me: mongoose.Types.ObjectId,
+  viewerId: string,
+  input: CreateDuelInput,
+): Promise<CreateDuelResult> {
   const now = new Date();
 
   if (input.mode === 'friend') {
@@ -753,22 +816,34 @@ export async function createDuel(viewerId: string, input: CreateDuelInput): Prom
       participants: { $all: [me, opponent] },
     });
     if (existing && !settleIfExpired(existing, now)) {
-      return { duel: await viewOf(existing, viewerId), created: false, matched: false, inviteUrl: null, inviteToken: null, inviteMessage: null };
+      return existingResult(await viewOf(existing, viewerId));
     }
     if (existing) await existing.save();
 
     await assertActiveLimit(me);
+    // The limit is per player, so it holds for the one being challenged too.
+    await assertActiveLimit(opponent, 'opponent');
     assertCreationAllowed(viewerId);
     const rounds = await pickDuelRounds();
 
-    const duel = await Duel.create({
-      ...newDuelFields('friend', me, now),
-      status: 'active',
-      opponentId: opponent,
-      participants: [me, opponent],
-      rounds,
-    });
-    return { duel: await viewOf(duel, viewerId), created: true, matched: false, inviteUrl: null, inviteToken: null, inviteMessage: null };
+    const key = pairKey(me, opponent);
+    try {
+      const duel = await Duel.create({
+        ...newDuelFields('friend', me, now),
+        status: 'active',
+        opponentId: opponent,
+        participants: [me, opponent],
+        runningKey: key,
+        rounds,
+      });
+      return { duel: await viewOf(duel, viewerId), created: true, matched: false, inviteUrl: null, inviteToken: null, inviteMessage: null };
+    } catch (error) {
+      // The same challenge (or the reverse one) was made a moment earlier.
+      if (!isDuplicateRunningKey(error)) throw error;
+      const running = await Duel.findOne({ runningKey: key });
+      if (!running) throw error;
+      return existingResult(await viewOf(running, viewerId));
+    }
   }
 
   if (input.mode === 'random') {
@@ -780,7 +855,7 @@ export async function createDuel(viewerId: string, input: CreateDuelInput): Prom
       opponentId: null,
     });
     if (mine && !settleIfExpired(mine, now)) {
-      return { duel: await viewOf(mine, viewerId), created: false, matched: false, inviteUrl: null, inviteToken: null, inviteMessage: null };
+      return existingResult(await viewOf(mine, viewerId));
     }
     if (mine) await mine.save();
 
@@ -810,27 +885,39 @@ export async function createDuel(viewerId: string, input: CreateDuelInput): Prom
       candidate.participants = [candidate.challengerId, me];
       candidate.status = 'active';
       candidate.turnDeadline = deadlineFrom(now);
+      // No longer a search: its starter may look for the next opponent.
+      candidate.runningKey = undefined;
       refreshTurn(candidate, now);
       try {
         await candidate.save();
-        return { duel: await viewOf(candidate, viewerId), created: false, matched: true, inviteUrl: null, inviteToken: null, inviteMessage: null };
+        return existingResult(await viewOf(candidate, viewerId), true);
       } catch (error) {
         // Somebody else took this seat a moment earlier; try the next one.
-        if ((error as { name?: string })?.name !== 'VersionError') throw error;
+        if (!isVersionConflict(error)) throw error;
       }
     }
 
     await assertOpenLimit(me);
     assertCreationAllowed(viewerId);
     const rounds = await pickDuelRounds();
-    const duel = await Duel.create({
-      ...newDuelFields('random', me, now),
-      status: 'open',
-      opponentId: null,
-      participants: [me],
-      rounds,
-    });
-    return { duel: await viewOf(duel, viewerId), created: true, matched: false, inviteUrl: null, inviteToken: null, inviteMessage: null };
+    const key = searchKey(me);
+    try {
+      const duel = await Duel.create({
+        ...newDuelFields('random', me, now),
+        status: 'open',
+        opponentId: null,
+        participants: [me],
+        runningKey: key,
+        rounds,
+      });
+      return { duel: await viewOf(duel, viewerId), created: true, matched: false, inviteUrl: null, inviteToken: null, inviteMessage: null };
+    } catch (error) {
+      // A second tap on "zoek een tegenstander" got here first.
+      if (!isDuplicateRunningKey(error)) throw error;
+      const searching = await Duel.findOne({ runningKey: key });
+      if (!searching) throw error;
+      return existingResult(await viewOf(searching, viewerId));
+    }
   }
 
   // Invite link.
@@ -871,41 +958,45 @@ export async function joinDuelByInvite(viewerId: string, rawToken: string): Prom
   if (!token) throw new DuelError('INVITE_NOT_FOUND', 'Deze uitnodiging bestaat niet.', 404);
   await connectDB();
 
-  const duel = await Duel.findOne({ inviteToken: token });
-  if (!duel) throw new DuelError('INVITE_NOT_FOUND', 'Deze uitnodiging bestaat niet.', 404);
+  // Two people opening the link at once: the retry tells the slower one the
+  // seat is taken (or, for a double tap, that they already joined).
+  return withRetry(async () => {
+    const duel = await Duel.findOne({ inviteToken: token });
+    if (!duel) throw new DuelError('INVITE_NOT_FOUND', 'Deze uitnodiging bestaat niet.', 404);
 
-  if (duel.challengerId.equals(me)) {
-    throw new DuelError(
-      'OWN_INVITE',
-      'Dit is je eigen uitnodiging. Stuur de link naar iemand anders.',
-      409,
-    );
-  }
-  if (duel.opponentId?.equals(me)) {
-    return { duel: await viewOf(duel, viewerId), joined: false };
-  }
-  if (duel.opponentId) {
-    throw new DuelError('DUEL_TAKEN', 'Iemand anders speelt dit duel al.', 409);
-  }
+    if (duel.challengerId.equals(me)) {
+      throw new DuelError(
+        'OWN_INVITE',
+        'Dit is je eigen uitnodiging. Stuur de link naar iemand anders.',
+        409,
+      );
+    }
+    if (duel.opponentId?.equals(me)) {
+      return { duel: await viewOf(duel, viewerId), joined: false };
+    }
+    if (duel.opponentId) {
+      throw new DuelError('DUEL_TAKEN', 'Iemand anders speelt dit duel al.', 409);
+    }
 
-  const now = new Date();
-  if (settleIfExpired(duel, now)) {
+    const now = new Date();
+    if (settleIfExpired(duel, now)) {
+      await duel.save();
+    }
+    if (duel.status === 'finished') {
+      throw new DuelError('DUEL_FINISHED', 'Deze uitnodiging is verlopen of geannuleerd.', 410);
+    }
+
+    await assertActiveLimit(me);
+
+    duel.opponentId = me;
+    duel.participants = [duel.challengerId, me];
+    duel.status = 'active';
+    duel.turnDeadline = deadlineFrom(now);
+    refreshTurn(duel, now);
     await duel.save();
-  }
-  if (duel.status === 'finished') {
-    throw new DuelError('DUEL_FINISHED', 'Deze uitnodiging is verlopen of geannuleerd.', 410);
-  }
 
-  await assertActiveLimit(me);
-
-  duel.opponentId = me;
-  duel.participants = [duel.challengerId, me];
-  duel.status = 'active';
-  duel.turnDeadline = deadlineFrom(now);
-  refreshTurn(duel, now);
-  await duel.save();
-
-  return { duel: await viewOf(duel, viewerId), joined: true };
+    return { duel: await viewOf(duel, viewerId), joined: true };
+  });
 }
 
 export interface SubmitAnswerInput {
@@ -990,87 +1081,93 @@ export async function submitDuelAnswer(
   input: SubmitAnswerInput,
 ): Promise<SubmitAnswerResult> {
   await connectDB();
-  const duel = await loadOwnDuel(viewerId, duelId);
-  const side = sideOf(duel, viewerId) as Side;
-  const now = new Date();
+  // A double tap that arrives while the first one is still saving loses the
+  // race; its retry then finds the answer recorded and returns it as such.
+  return withRetry(async () => {
+    const duel = await loadOwnDuel(viewerId, duelId);
+    const side = sideOf(duel, viewerId) as Side;
+    const now = new Date();
 
-  const myAnswers = answersOf(duel, side);
-  const { roundIndex, questionIndex, answerId } = input;
+    const myAnswers = answersOf(duel, side);
+    const { roundIndex, questionIndex, answerId } = input;
 
-  // A double tap on a slow connection: same answer again is not an error.
-  const existing = myAnswers.find((a) => a.round === roundIndex && a.question === questionIndex);
-  if (existing) {
-    if (existing.answerId === answerId) {
-      return answerResult(await viewOf(duel, viewerId), roundIndex, questionIndex, true);
+    // A double tap on a slow connection: same answer again is not an error.
+    const existing = myAnswers.find((a) => a.round === roundIndex && a.question === questionIndex);
+    if (existing) {
+      if (existing.answerId === answerId) {
+        return answerResult(await viewOf(duel, viewerId), roundIndex, questionIndex, true);
+      }
+      throw new DuelError('ANSWER_ALREADY_SUBMITTED', 'Deze vraag heb je al beantwoord.', 409);
     }
-    throw new DuelError('ANSWER_ALREADY_SUBMITTED', 'Deze vraag heb je al beantwoord.', 409);
-  }
 
-  if (settleIfExpired(duel, now)) {
+    if (settleIfExpired(duel, now)) {
+      await duel.save();
+    }
+    if (duel.status === 'finished') {
+      throw new DuelError('DUEL_FINISHED', 'Dit duel is al afgelopen.', 409);
+    }
+
+    const turn = currentTurn(duel.challengerAnswers, duel.opponentAnswers, duel.rounds.length || DUEL_ROUNDS);
+    if (turn.side !== side) {
+      throw new DuelError('NOT_YOUR_TURN', 'Je tegenstander is nu aan de beurt.', 409);
+    }
+
+    const round = duel.rounds[roundIndex];
+    const questionCount = round?.questions.length ?? DUEL_QUESTIONS_PER_ROUND;
+    if (turn.round !== roundIndex || nextQuestionIndex(myAnswers, roundIndex, questionCount) !== questionIndex) {
+      throw new DuelError(
+        'QUESTION_MISMATCH',
+        'Deze vraag is nu niet aan de beurt. Ververs het duel.',
+        409,
+      );
+    }
+
+    const question = round?.questions[questionIndex];
+    const choice = question?.answers.find((answer) => answer.answerId === answerId);
+    if (!question || !choice) throw duelValidationError('Onbekend antwoord.');
+
+    const correct = choice.isCorrect === true;
+    const xp = correct ? Math.max(0, question.xp ?? 0) : 0;
+    myAnswers.push({ round: roundIndex, question: questionIndex, answerId, correct, xp, answeredAt: now });
+    if (side === 'challenger') duel.challengerXp += xp;
+    else duel.opponentXp += xp;
+
+    const roundDone = isRoundDone(myAnswers, roundIndex, questionCount);
+    duel.lastMoveAt = now;
+    duel.turnDeadline = deadlineFrom(now);
+    refreshTurn(duel, now);
     await duel.save();
-  }
-  if (duel.status === 'finished') {
-    throw new DuelError('DUEL_FINISHED', 'Dit duel is al afgelopen.', 409);
-  }
 
-  const turn = currentTurn(duel.challengerAnswers, duel.opponentAnswers, duel.rounds.length || DUEL_ROUNDS);
-  if (turn.side !== side) {
-    throw new DuelError('NOT_YOUR_TURN', 'Je tegenstander is nu aan de beurt.', 409);
-  }
+    // Only after the save: a write that lost the race must not pay out.
+    await awardDuelProgress(viewerId, xp, roundDone, now);
 
-  const round = duel.rounds[roundIndex];
-  const questionCount = round?.questions.length ?? DUEL_QUESTIONS_PER_ROUND;
-  if (turn.round !== roundIndex || nextQuestionIndex(myAnswers, roundIndex, questionCount) !== questionIndex) {
-    throw new DuelError(
-      'QUESTION_MISMATCH',
-      'Deze vraag is nu niet aan de beurt. Ververs het duel.',
-      409,
-    );
-  }
-
-  const question = round?.questions[questionIndex];
-  const choice = question?.answers.find((answer) => answer.answerId === answerId);
-  if (!question || !choice) throw duelValidationError('Onbekend antwoord.');
-
-  const correct = choice.isCorrect === true;
-  const xp = correct ? Math.max(0, question.xp ?? 0) : 0;
-  myAnswers.push({ round: roundIndex, question: questionIndex, answerId, correct, xp, answeredAt: now });
-  if (side === 'challenger') duel.challengerXp += xp;
-  else duel.opponentXp += xp;
-
-  const roundDone = isRoundDone(myAnswers, roundIndex, questionCount);
-  duel.lastMoveAt = now;
-  duel.turnDeadline = deadlineFrom(now);
-  refreshTurn(duel, now);
-  await duel.save();
-
-  // Only after the save: a write that lost the race must not pay out.
-  await awardDuelProgress(viewerId, xp, roundDone, now);
-
-  return answerResult(await viewOf(duel, viewerId), roundIndex, questionIndex, false);
+    return answerResult(await viewOf(duel, viewerId), roundIndex, questionIndex, false);
+  });
 }
 
 /** The challenged player says no before playing anything. No winner. */
 export async function declineDuel(viewerId: string, duelId: string): Promise<DuelView> {
   await connectDB();
-  const duel = await loadOwnDuel(viewerId, duelId);
-  const now = new Date();
+  return withRetry(async () => {
+    const duel = await loadOwnDuel(viewerId, duelId);
+    const now = new Date();
 
-  if (settleIfExpired(duel, now)) await duel.save();
-  if (duel.status === 'finished') {
-    throw new DuelError('DUEL_FINISHED', 'Dit duel is al afgelopen.', 409);
-  }
-  if (sideOf(duel, viewerId) !== 'opponent' || duel.opponentAnswers.length > 0) {
-    throw new DuelError(
-      'NOT_ALLOWED',
-      'Afwijzen kan alleen voordat je hebt gespeeld. Je kunt nog wel opgeven.',
-      409,
-    );
-  }
+    if (settleIfExpired(duel, now)) await duel.save();
+    if (duel.status === 'finished') {
+      throw new DuelError('DUEL_FINISHED', 'Dit duel is al afgelopen.', 409);
+    }
+    if (sideOf(duel, viewerId) !== 'opponent' || duel.opponentAnswers.length > 0) {
+      throw new DuelError(
+        'NOT_ALLOWED',
+        'Afwijzen kan alleen voordat je hebt gespeeld. Je kunt nog wel opgeven.',
+        409,
+      );
+    }
 
-  finish(duel, 'declined', null, now);
-  await duel.save();
-  return viewOf(duel, viewerId);
+    finish(duel, 'declined', null, now);
+    await duel.save();
+    return viewOf(duel, viewerId);
+  });
 }
 
 /**
@@ -1079,23 +1176,25 @@ export async function declineDuel(viewerId: string, duelId: string): Promise<Due
  */
 export async function forfeitDuel(viewerId: string, duelId: string): Promise<DuelView> {
   await connectDB();
-  const duel = await loadOwnDuel(viewerId, duelId);
-  const now = new Date();
+  return withRetry(async () => {
+    const duel = await loadOwnDuel(viewerId, duelId);
+    const now = new Date();
 
-  if (settleIfExpired(duel, now)) await duel.save();
-  if (duel.status === 'finished') {
-    throw new DuelError('DUEL_FINISHED', 'Dit duel is al afgelopen.', 409);
-  }
+    if (settleIfExpired(duel, now)) await duel.save();
+    if (duel.status === 'finished') {
+      throw new DuelError('DUEL_FINISHED', 'Dit duel is al afgelopen.', 409);
+    }
 
-  if (!duel.opponentId) {
-    finish(duel, 'cancelled', null, now);
-  } else {
-    const side = sideOf(duel, viewerId) as Side;
-    const winner = side === 'challenger' ? duel.opponentId : duel.challengerId;
-    finish(duel, 'forfeit', winner, now);
-    duel.forfeitedBy = side === 'challenger' ? duel.challengerId : duel.opponentId;
-  }
+    if (!duel.opponentId) {
+      finish(duel, 'cancelled', null, now);
+    } else {
+      const side = sideOf(duel, viewerId) as Side;
+      const winner = side === 'challenger' ? duel.opponentId : duel.challengerId;
+      finish(duel, 'forfeit', winner, now);
+      duel.forfeitedBy = side === 'challenger' ? duel.challengerId : duel.opponentId;
+    }
 
-  await duel.save();
-  return viewOf(duel, viewerId);
+    await duel.save();
+    return viewOf(duel, viewerId);
+  });
 }

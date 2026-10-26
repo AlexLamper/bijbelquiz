@@ -52,7 +52,8 @@ export function duelValidationError(message: string): DuelError {
   return new DuelError('VALIDATION_ERROR', message, 400);
 }
 
-function isVersionConflict(error: unknown): boolean {
+/** Another request saved the same duel first (optimistic concurrency). */
+export function isVersionConflict(error: unknown): boolean {
   return (
     !!error &&
     typeof error === 'object' &&

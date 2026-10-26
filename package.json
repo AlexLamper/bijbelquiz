@@ -11,6 +11,7 @@
     "start": "tsx server.ts start",
     "lint": "next lint",
     "test": "node --import tsx --test tests/**/*.test.ts",
+    "test:duels": "node --import tsx --test tests/duels.test.ts tests/duels/*.test.ts",
     "screenshots": "node scripts/capture-screenshots.mjs",
     "test:mobile-sync": "node scripts/e2e-mobile-sync.mjs",
     "test:multiplayer": "node scripts/e2e-multiplayer.mjs",
@@ -64,6 +65,7 @@
     "@types/ws": "^8.18.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "mongodb-memory-server-core": "^11.3.0",
     "playwright": "^1.62.1",
     "tailwindcss": "^4.0.0",
     "typescript": "^5"

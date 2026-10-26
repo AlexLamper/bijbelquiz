@@ -104,8 +104,9 @@ function toDuelQuestion(row: SampledRow): IDuelQuestion | null {
     explanation: asText(row.question.explanation),
     bibleReference: reference && reference !== '-' ? reference : null,
     // One question's share of the quiz reward, exactly what a correct answer
-    // is worth in the solo quiz it came from.
-    xp: Math.max(1, calculateAttemptXp(rewardXp, 1, questionCount)),
+    // is worth in the solo quiz it came from. At least 1 so a long quiz still
+    // pays something, but a quiz set to give no XP gives none here either.
+    xp: rewardXp > 0 ? Math.max(1, calculateAttemptXp(rewardXp, 1, questionCount)) : 0,
   };
 }
 
