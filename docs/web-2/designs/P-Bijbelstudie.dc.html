@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>BijbelStudie</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#35548C}a:hover{color:#263E69}
+summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:none}
+details[open] .bq-chev{transform:rotate(180deg)}
+.bq-burger{display:none}
+@media (max-width: 700px){
+.bq-wrap{padding-left:16px !important;padding-right:16px !important}
+.bq-nav,.bq-hide-m{display:none !important}
+.bq-burger{display:flex !important}
+.bq-stack{grid-template-columns:minmax(0,1fr) !important}
+.bq-two{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.bq-full{grid-column:1 / -1 !important}
+.bq-col{flex-direction:column !important;align-items:stretch !important}
+.bq-hero{font-size:38px !important;line-height:44px !important}
+.bq-title{font-size:32px !important;line-height:38px !important}
+.bq-sec{padding-top:48px !important}
+.bq-pad{padding:20px !important}
+.bq-xp{bottom:20px !important}
+.bq-cell{padding:12px 10px !important}
+.bq-vis{padding-bottom:178px !important}
+.bq-qc{bottom:0 !important}
+.bq-step+.bq-step{border-left:0 !important;border-top:1px solid #EEECE7;padding-top:20px !important}
+}
+.bqh-burger{display:none}@media (max-width: 700px){.bqh-wrap{padding-left:16px !important;padding-right:16px !important}.bqh-nav,.bqh-hide{display:none !important}.bqh-burger{display:flex !important}.bqf-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.bqf-full{grid-column:1 / -1 !important}}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; overflow-x: clip; background: #ECEAE4; font-family: Nunito, system-ui, sans-serif; color: #1B1A18; display: flex; flex-direction: column">
+  <header style="height: 68px; box-sizing: border-box; background: #FFFFFF; border-bottom: 1px solid #DEDBD3">
+    <div class="bqh-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; height: 67px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; column-gap: 24px">
+      <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="justify-self: start; text-decoration: none"><span style="display: flex; align-items: center; gap: 7px"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></span></a>
+      <nav class="bqh-nav" aria-label="Hoofdmenu" style="grid-column: 2; display: flex; align-items: center; gap: 32px"><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Quizzen</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Duels</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Samen spelen</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Ranglijst</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Premium</a></nav>
+      <div style="grid-column: 3; justify-self: end; display: flex; align-items: center; gap: 16px"><a class="bqh-hide" href="#" style="font-size: 15px; font-weight: 700; text-decoration: none; white-space: nowrap">Inloggen</a><a href="#" style="height: 44px; box-sizing: border-box; padding: 0 18px; border-radius: 12px; background: #35548C; border-bottom: 3px solid #263E69; color: #FFFFFF; display: flex; align-items: center; font-size: 15px; font-weight: 800; text-decoration: none; white-space: nowrap">Gratis beginnen</a><button class="bqh-burger" aria-label="Menu openen" style="width: 40px; height: 40px; box-sizing: border-box; padding: 0; border: 1px solid #DEDBD3; border-radius: 12px; background: #FFFFFF; color: #45433E; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg></button></div>
+    </div>
+  </header>
+  <main style="flex-grow: 1">
+    <section class="bq-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; width: 100%; padding-top: 56px">
+      <div class="bq-stack" style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 40px 48px; align-items: center">
+        <div style="display: flex; flex-direction: column; align-items: flex-start">
+          <span role="img" aria-label="BijbelStudie" style="display: flex; align-items: center; gap: 10px"><svg width="36" height="36" viewBox="0 0 60 60" aria-hidden="true"><path d="M0 10C0 4.477 4.477 0 10 0H50C55.523 0 60 4.477 60 10V40C60 51.046 51.046 60 40 60H10C4.477 60 0 55.523 0 50V10Z" fill="#1B1A18"></path><rect x="26.045" y="6.696" width="7.909" height="47.753" rx="1" fill="#FFFFFF"></rect><rect x="15.419" y="16.476" width="29.081" height="7.841" rx="1" fill="#FFFFFF"></rect></svg><span style="font-size: 22px; font-weight: 800; letter-spacing: -0.01em; color: #1B1A18">BijbelStudie</span></span>
+          <span style="margin-top: 22px; font-size: 15px; font-weight: 700; color: #6B6860">Van het team achter BijbelQuiz</span>
+          <h1 class="bq-title" style="margin: 8px 0 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 42px; line-height: 50px">BijbelStudie helpt je de Bijbel echt te begrijpen</h1>
+          <p style="margin: 16px 0 0; max-width: 520px; font-size: 18px; line-height: 28px; font-weight: 600; color: #45433E">BijbelQuiz test wat je weet. In BijbelStudie lees je elk hoofdstuk met uitleg erbij, zodat je ook snapt wat er staat. Gratis, in je browser en op je telefoon.</p>
+          <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px">
+            <a href="#" style="height: 56px; box-sizing: border-box; padding: 0 24px; border: 0; border-bottom: 3px solid #263E69; border-radius: 12px; background: #35548C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 17px; font-weight: 800; text-decoration: none; white-space: nowrap">Begin gratis op BijbelStudie<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg></a>
+            <a href="#" style="height: 56px; box-sizing: border-box; padding: 0 22px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 17px; font-weight: 800; text-decoration: none; white-space: nowrap">Eerste maand Pro gratis</a>
+          </div>
+        </div>
+        <div role="img" aria-label="Voorbeeld: een quizvraag over Genesis 1 met een link naar het hoofdstuk, en Genesis 1 in de Statenvertaling op BijbelStudie met commentaar" style="position: relative; width: 100%; max-width: 540px; justify-self: center; box-sizing: border-box; padding: 24px 0 156px" class="bq-vis">
+          <span style="position: absolute; left: 50%; top: 10px; width: 420px; max-width: 100%; aspect-ratio: 1 / 1; transform: translateX(-50%); border-radius: 50%; background: #DFE5F2"></span>
+          <div style="position: relative; width: 440px; max-width: 94%; margin: 0 auto 0 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 24px rgba(27, 26, 24, 0.10)">
+            <div style="padding: 14px 18px; border-bottom: 1px solid #EEECE7; display: flex; align-items: center; justify-content: space-between; gap: 10px">
+              <span style="display: flex; align-items: center; gap: 8px"><svg width="22" height="22" viewBox="0 0 60 60" aria-hidden="true"><path d="M0 10C0 4.477 4.477 0 10 0H50C55.523 0 60 4.477 60 10V40C60 51.046 51.046 60 40 60H10C4.477 60 0 55.523 0 50V10Z" fill="#1B1A18"></path><rect x="26.045" y="6.696" width="7.909" height="47.753" rx="1" fill="#FFFFFF"></rect><rect x="15.419" y="16.476" width="29.081" height="7.841" rx="1" fill="#FFFFFF"></rect></svg><span style="font-size: 16px; font-weight: 800">Genesis 1</span></span>
+              <span style="height: 32px; padding: 0 10px 0 12px; box-sizing: border-box; border: 1px solid #DEDBD3; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: #45433E; white-space: nowrap">Statenvertaling<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B6860" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+            </div>
+            <div style="padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 6px">
+              <p style="margin: 0; font-size: 15px; line-height: 25px; font-weight: 500; color: #1B1A18"><sup style="font-size: 10px; font-weight: 800; color: #9A978F; margin-right: 4px">1</sup><span style="">In den beginne schiep God den hemel en de aarde.</span></p>
+              <p style="margin: 0; font-size: 15px; line-height: 25px; font-weight: 500; color: #1B1A18"><sup style="font-size: 10px; font-weight: 800; color: #9A978F; margin-right: 4px">2</sup><span style="">De aarde nu was woest en ledig, en duisternis was op den afgrond; en de Geest Gods zweefde op de wateren.</span></p>
+              <p style="margin: 0; font-size: 15px; line-height: 25px; font-weight: 500; color: #1B1A18"><sup style="font-size: 10px; font-weight: 800; color: #9A978F; margin-right: 4px">3</sup><span style="background: #FBF1D6; box-shadow: 0 0 0 3px #FBF1D6; border-radius: 3px; ">En God zeide: Daar zij licht! en daar werd licht.</span></p>
+              <p style="margin: 0; font-size: 15px; line-height: 25px; font-weight: 500; color: #1B1A18"><sup style="font-size: 10px; font-weight: 800; color: #9A978F; margin-right: 4px">4</sup><span style="">En God zag het licht, dat het goed was; en God maakte scheiding tussen het licht en tussen de duisternis.</span></p>
+            </div>
+            <div style="padding: 12px 18px; border-top: 1px solid #EEECE7; display: flex; align-items: center; gap: 10px">
+              <span style="width: 32px; height: 32px; border-radius: 9px; background: #E9F0EA; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F6B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-5 4v-4H4z"></path></svg></span>
+              <span style="flex-grow: 1; min-width: 0; font-size: 13px; font-weight: 700; color: #45433E">Commentaar · Matthew Henry</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9A978F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+            </div>
+          </div>
+          <div class="bq-qc" style="position: absolute; right: 0; bottom: 12px; width: 270px; max-width: 74%; box-sizing: border-box; transform: rotate(3deg); background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 10px 24px rgba(27, 26, 24, 0.10)">
+            <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+              <span style="padding: 3px 9px; border-radius: 999px; background: #EAEEF7; color: #263E69; font-size: 11px; font-weight: 800; letter-spacing: 0.04em">GENESIS 1</span>
+              <svg width="22" height="22" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg>
+            </span>
+            <span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 16px; line-height: 21px">Wat schiep God op de eerste dag?</span>
+            <span style="height: 36px; box-sizing: border-box; border-radius: 10px; border: 1px solid #2C4D38; border-bottom-width: 3px; background: #3F6B4F; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 14px; font-weight: 800; color: #FFFFFF"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Het licht</span>
+            <span style="align-self: flex-start; height: 28px; padding: 0 11px; border-radius: 999px; background: #EAEEF7; color: #35548C; display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg>Lees Genesis 1:3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bq-wrap bq-sec" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; width: 100%; padding-top: 80px">
+      <div style="display: flex; flex-direction: column; gap: 8px; "><h2 style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Alles om een hoofdstuk echt te begrijpen</h2><p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 26px; font-weight: 600; color: #6B6860">Dit vind je op BijbelStudie.</p></div>
+      <ul class="bq-stack" style="margin: 28px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+        <li style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+          <span style="width: 44px; height: 44px; border-radius: 12px; background: #EAEEF7; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#35548C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="display: flex; align-items: center; gap: 8px"><h3 style="margin: 0; font-size: 17px; font-weight: 800">Vier Nederlandse vertalingen</h3></span>
+            <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Lees hoofdstuk voor hoofdstuk, onder andere in de Statenvertaling.</span>
+          </span>
+        </li>
+        <li style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+          <span style="width: 44px; height: 44px; border-radius: 12px; background: #E9F0EA; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F6B4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-5 4v-4H4z"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="display: flex; align-items: center; gap: 8px"><h3 style="margin: 0; font-size: 17px; font-weight: 800">Commentaar bij elk hoofdstuk</h3></span>
+            <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Klassiek commentaar, zoals dat van Matthew Henry, naast de tekst die je leest.</span>
+          </span>
+        </li>
+        <li style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+          <span style="width: 44px; height: 44px; border-radius: 12px; background: #FBF1D6; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A6410" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9.5l10-5 10 5-10 5z"></path><path d="M6 11.5v4.5c3.5 2.5 8.5 2.5 12 0v-4.5"></path><path d="M22 9.5v5"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="display: flex; align-items: center; gap: 8px"><h3 style="margin: 0; font-size: 17px; font-weight: 800">Begeleide studies</h3></span>
+            <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Per bijbelboek, in korte lessen met vragen om over na te denken.</span>
+          </span>
+        </li>
+        <li style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+          <span style="width: 44px; height: 44px; border-radius: 12px; background: #F8ECE6; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A04A2F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13.5 6.5l4 4"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="display: flex; align-items: center; gap: 8px"><h3 style="margin: 0; font-size: 17px; font-weight: 800">Notities en markeringen</h3></span>
+            <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Markeer verzen en schrijf je aantekeningen bij het hoofdstuk zelf.</span>
+          </span>
+        </li>
+        <li style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+          <span style="width: 44px; height: 44px; border-radius: 12px; background: #EAEEF7; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#35548C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"></path><path d="M19 15v5"></path><path d="M16.5 17.5h5"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="display: flex; align-items: center; gap: 8px"><h3 style="margin: 0; font-size: 17px; font-weight: 800">AI-assistent</h3></span>
+            <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Stel een vraag over wat je leest en krijg direct uitleg.</span>
+          </span>
+        </li>
+        <li style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+          <span style="width: 44px; height: 44px; border-radius: 12px; background: #E9F0EA; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F6B4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h9"></path><path d="M8.5 4v2"></path><path d="M11 6c0 4.5-3 8-6.5 9"></path><path d="M6.5 9.5c1.2 2.5 3.4 4.4 6 5.2"></path><path d="M13 20l4-9 4 9"></path><path d="M14.4 17h5.2"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 4px">
+            <span style="display: flex; align-items: center; gap: 8px"><h3 style="margin: 0; font-size: 17px; font-weight: 800">Grondtekst</h3><span style="height: 22px; padding: 0 8px; border-radius: 999px; background: #FBF1D6; color: #8A6410; display: inline-flex; align-items: center; font-size: 12px; font-weight: 800">Pro</span></span>
+            <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Het Hebreeuws en Grieks achter de vertaling, woord voor woord.</span>
+          </span>
+        </li>
+      </ul>
+    </section>
+    <section class="bq-wrap bq-sec" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; width: 100%; padding-top: 80px">
+      <div style="display: flex; flex-direction: column; gap: 8px; "><h2 style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Van quiz naar hoofdstuk</h2><p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 26px; font-weight: 600; color: #6B6860">Zo horen BijbelQuiz en BijbelStudie bij elkaar.</p></div>
+      <ol class="bq-stack" style="margin: 28px 0 0; padding: 24px 0; list-style: none; background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 0">
+        <li class="bq-step" style="padding: 4px 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">1</span>
+            <span style="display: flex; flex-direction: column; gap: 4px">
+              <span style="font-size: 17px; font-weight: 800">Speel een quiz</span>
+              <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Op BijbelQuiz, zoals je gewend bent.</span>
+            </span>
+          </li>
+        <li class="bq-step" style="border-left: 1px solid #EEECE7; padding: 4px 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">2</span>
+            <span style="display: flex; flex-direction: column; gap: 4px">
+              <span style="font-size: 17px; font-weight: 800">Zie wat je nog niet wist</span>
+              <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Bij elke vraag staat het hoofdstuk waar hij over gaat.</span>
+            </span>
+          </li>
+        <li class="bq-step" style="border-left: 1px solid #EEECE7; padding: 4px 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">3</span>
+            <span style="display: flex; flex-direction: column; gap: 4px">
+              <span style="font-size: 17px; font-weight: 800">Lees dat hoofdstuk</span>
+              <span style="font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Op BijbelStudie, met de uitleg ernaast. Eén klik vanaf de vraag.</span>
+            </span>
+          </li>
+      </ol>
+    </section>
+    <section id="pro" class="bq-wrap bq-sec" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; width: 100%; padding-top: 80px; padding-bottom: 80px">
+      <div class="bq-stack bq-pad" style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 40px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 48px; align-items: start">
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; flex-direction: column; gap: 8px; "><h2 style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Lezen is gratis. Pro gaat dieper.</h2><p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 26px; font-weight: 600; color: #6B6860">Alles hierboven gebruik je gratis. Met Pro krijg je er dit bij:</p></div>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 700; color: #1B1A18"><span style="width: 24px; height: 24px; border-radius: 50%; background: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>Het commentaar van Matthew Henry, Calvijn en Dachsel volledig</li>
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 700; color: #1B1A18"><span style="width: 24px; height: 24px; border-radius: 50%; background: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>200 vragen per dag aan de AI-assistent, in plaats van 5</li>
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 700; color: #1B1A18"><span style="width: 24px; height: 24px; border-radius: 50%; background: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>De grondtekst: Hebreeuws en Grieks</li>
+          </ul>
+        </div>
+        <div style="border: 1px solid #DEDBD3; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 14px; font-weight: 800; color: #35548C">Voor BijbelQuiz-spelers</span>
+          <h3 style="margin: -8px 0 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 24px; line-height: 30px">Je eerste maand Pro gratis</h3>
+          <div style="height: 52px; box-sizing: border-box; border: 1px solid #D3D0C7; border-radius: 12px; overflow: hidden; display: flex; align-items: stretch">
+            <span style="flex-grow: 1; min-width: 0; padding: 0 16px; display: flex; align-items: center; font-size: 17px; font-weight: 800; letter-spacing: 0.12em; user-select: all">BIJBELQUIZ</span>
+            <button style="border: 0; border-left: 1px solid #D3D0C7; background: #F7F6F3; padding: 0 16px; display: flex; align-items: center; gap: 6px; font: 800 15px Nunito, system-ui, sans-serif; color: #1B1A18; cursor: pointer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#35548C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V5a1 1 0 0 1 1-1h10"></path></svg>Kopieer</button>
+          </div>
+          <ol style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 22px; font-weight: 600; color: #45433E">
+            <li>Maak een gratis account op BijbelStudie.</li>
+            <li>Kies Pro, per maand of per jaar.</li>
+            <li>Vul <span style="font-weight: 800; color: #1B1A18">BIJBELQUIZ</span> in bij het afrekenen.</li>
+          </ol>
+          <p style="margin: 0; font-size: 13px; line-height: 19px; font-weight: 600; color: #6B6860">Voor nieuwe Pro-abonnees, bij het afrekenen op bijbelstudie.io. Kies je een jaarabonnement, dan krijg je €9,99 korting. Geldig t/m 31 maart 2027.</p>
+          <a href="#" style="height: 52px; box-sizing: border-box; padding: 0 24px; border: 0; border-bottom: 3px solid #263E69; border-radius: 12px; background: #35548C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 16px; font-weight: 800; text-decoration: none; white-space: nowrap">Naar BijbelStudie Pro<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer style="background: #FFFFFF; border-top: 1px solid #DEDBD3">
+    <div class="bqh-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; padding-top: 48px; padding-bottom: 28px">
+      <div class="bqf-grid" style="display: grid; grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 32px">
+        <div class="bqf-full" style="display: flex; flex-direction: column; gap: 14px">
+          <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="align-self: flex-start; text-decoration: none"><span style="display: flex; align-items: center; gap: 7px"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></span></a>
+          <p style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Test je bijbelkennis met korte quizzen.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px"><a href="#" style="height: 48px; box-sizing: border-box; padding: 0 16px 0 14px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; display: inline-flex; align-items: center; gap: 10px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"></rect><path d="M10.5 18.5h3"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap"><span style="font-size: 11px; font-weight: 700; color: #6B6860">Download in de</span><span style="font-size: 16px; font-weight: 800">App Store</span></span></a><a href="#" style="height: 48px; box-sizing: border-box; padding: 0 16px 0 14px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; display: inline-flex; align-items: center; gap: 10px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.7 4.1a.8.8 0 0 0-1.2.7z"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap"><span style="font-size: 11px; font-weight: 700; color: #6B6860">Ontdek het op</span><span style="font-size: 16px; font-weight: 800">Google Play</span></span></a></div>
+        </div>
+        <nav aria-label="Spelen" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">Spelen</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Quizzen</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Duels</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Samen spelen</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Ranglijst</a></li></ul></nav>
+        <nav aria-label="BijbelQuiz" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">BijbelQuiz</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Premium</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Groepslicentie</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Hulp</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Contact</a></li></ul></nav>
+        <nav aria-label="Juridisch" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">Juridisch</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Privacybeleid</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Voorwaarden</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Account verwijderen</a></li></ul></nav>
+      </div>
+      <p style="margin: 40px 0 0; padding-top: 20px; border-top: 1px solid #EEECE7; font-size: 13px; font-weight: 600; color: #6B6860">© 2026 BijbelQuiz</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2450}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

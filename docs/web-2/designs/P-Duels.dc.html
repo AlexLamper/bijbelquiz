@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Duels</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#35548C}a:hover{color:#263E69}
+.bq-mob{display:none}
+@media (max-width: 700px){
+.bq-desk{display:none !important}
+.bq-mob{display:flex}
+.bq-wrap{padding-left:20px !important;padding-right:20px !important}
+.bq-cols{grid-template-columns:minmax(0,1fr) !important}
+.bq-stack{flex-direction:column !important;align-items:stretch !important}
+.bq-full{width:100% !important}
+.bq-h1{font-size:30px !important;line-height:36px !important}
+.bq-foot{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important}
+.bq-foot-brand{grid-column:1 / -1}
+.bq-code{font-size:52px !important}
+.bq-sb{padding:12px 14px !important;gap:8px !important}
+.bq-sb-av{width:36px !important;height:36px !important;font-size:15px !important}
+.bq-sb-score{font-size:26px !important}
+.bq-seg{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+.bqh-burger{display:none}@media (max-width: 700px){.bqh-wrap{padding-left:16px !important;padding-right:16px !important}.bqh-nav,.bqh-hide{display:none !important}.bqh-burger{display:flex !important}.bqf-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.bqf-full{grid-column:1 / -1 !important}}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; box-sizing: border-box; background: #ECEAE4; font-family: Nunito, system-ui, sans-serif; color: #1B1A18; display: flex; flex-direction: column">
+  <header style="height: 68px; box-sizing: border-box; background: #FFFFFF; border-bottom: 1px solid #DEDBD3">
+    <div class="bqh-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; height: 67px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; column-gap: 24px">
+      <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="justify-self: start; text-decoration: none"><span style="display: flex; align-items: center; gap: 7px"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></span></a>
+      <nav class="bqh-nav" aria-label="Hoofdmenu" style="grid-column: 2; display: flex; align-items: center; gap: 32px"><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Quizzen</a><a href="#" aria-current="page" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid #35548C; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #35548C; text-decoration: none; white-space: nowrap">Duels</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Samen spelen</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Ranglijst</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Premium</a></nav>
+      <div style="grid-column: 3; justify-self: end; display: flex; align-items: center; gap: 10px"><span aria-label="Reeks van 6 dagen" style="height: 36px; box-sizing: border-box; padding: 0 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; color: #1B1A18; display: flex; align-items: center; gap: 5px; font-weight: 800; font-size: 15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#D9734F" aria-hidden="true"><path d="M12 2s5 4.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4.2 2.5-5 0 2 1 3 2 3 0-3.5.5-6 .5-8z"></path></svg>6</span><span class="bqh-hide" aria-label="1.240 XP" style="height: 36px; box-sizing: border-box; padding: 0 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; color: #1B1A18; display: flex; align-items: center; gap: 5px; font-weight: 800; font-size: 15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#E9B12E" stroke="#8A6410" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg>1.240</span><a class="bqh-hide" href="#" aria-label="Profiel" style="width: 40px; height: 40px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 1px solid #DEDBD3; color: #45433E; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></a><button class="bqh-burger" aria-label="Menu openen" style="width: 40px; height: 40px; box-sizing: border-box; padding: 0; border: 1px solid #DEDBD3; border-radius: 12px; background: #FFFFFF; color: #45433E; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg></button></div>
+    </div>
+  </header>
+
+  <main class="bq-wrap" style="flex-grow: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 40px 32px 72px; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+        <h1 class="bq-h1" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 40px; line-height: 48px">Duels</h1>
+        <span aria-label="9 gewonnen, 4 verloren" style="height: 36px; padding: 0 14px; box-sizing: border-box; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #45433E; white-space: nowrap">
+          <span style="color: #3F6B4F; font-weight: 800">9</span> gewonnen
+          <span aria-hidden="true" style="color: #C9C5BC">|</span>
+          <span style="font-weight: 800">4</span> verloren
+        </span>
+      </div>
+      <a href="#nieuw-duel" class="bq-mob" style="height: 52px; box-sizing: border-box; border-bottom: 3px solid #263E69; border-radius: 12px; background: #35548C; color: #FFFFFF; font: 800 16px Nunito, system-ui, sans-serif; text-decoration: none; align-items: center; justify-content: center; gap: 8px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l10 10"></path><path d="M20 4L10 14"></path><path d="M6 15l3 3"></path><path d="M18 15l-3 3"></path><path d="M4 20l3-3"></path><path d="M20 20l-3-3"></path></svg>
+        Nieuw duel
+      </a>
+    </div>
+
+    <div class="bq-cols" style="display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 40px; align-items: start">
+      <div style="min-width: 0; display: flex; flex-direction: column; gap: 32px">
+        <section aria-labelledby="beurt-titel" style="display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <h2 id="beurt-titel" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Jouw beurt</h2>
+            <span aria-label="1 duel" style="min-width: 24px; height: 24px; padding: 0 7px; box-sizing: border-box; border-radius: 999px; background: #B4502B; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center">1</span>
+          </div>
+          <div aria-label="Duel met Lotte, jij staat 3 - 2 voor, ronde 2 van 3" class="bq-stack" style="background: #FFFFFF; border: 1.5px solid #EDCBBC; border-radius: 16px; padding: 24px 28px; display: flex; align-items: center; gap: 32px">
+            <div style="flex-grow: 1; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px">
+              <span style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+                <span style="width: 56px; height: 56px; border-radius: 50%; background: #35548C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; flex-shrink: 0">A</span>
+                <span style="font-size: 15px; font-weight: 800">Jij</span>
+              </span>
+              <span style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+                <span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 44px; line-height: 1; white-space: nowrap">3 - 2</span>
+                <span style="display: flex; align-items: center; gap: 6px">
+                  <span aria-hidden="true" style="display: flex; gap: 4px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #B4502B"></span><span style="width: 8px; height: 8px; border-radius: 50%; background: #B4502B"></span><span style="width: 8px; height: 8px; border-radius: 50%; background: #E0DDD5"></span></span>
+                  <span style="font-size: 13px; font-weight: 700; color: #6B6860; white-space: nowrap">Ronde 2 van 3</span>
+                </span>
+              </span>
+              <span style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+                <span style="width: 56px; height: 56px; border-radius: 50%; background: #F8ECE6; color: #A04A2F; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; flex-shrink: 0">L</span>
+                <span style="font-size: 15px; font-weight: 800">Lotte</span>
+              </span>
+            </div>
+            <div class="bq-full" style="width: 240px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px">
+              <span style="font-size: 14px; font-weight: 700; color: #A04A2F; text-align: center">Lotte wacht op jou</span>
+              <button style="height: 52px; border: 0; border-bottom: 3px solid #84391D; border-radius: 12px; background: #B4502B; color: #FFFFFF; font: 800 16px Nunito, system-ui, sans-serif">Speel ronde 2</button>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="wachten-titel" style="display: flex; flex-direction: column; gap: 12px">
+          <h2 id="wachten-titel" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Wachten op tegenstander</h2>
+          <div style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; display: flex; flex-direction: column">
+            <a href="#" style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; color: #1B1A18; text-decoration: none">
+              <span style="width: 44px; height: 44px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 17px; flex-shrink: 0">D</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+                <span style="font-size: 16px; font-weight: 700">Daan</span>
+                <span style="font-size: 14px; font-weight: 600; color: #6B6860">Daan speelt ronde 2</span>
+              </span>
+              <span style="min-width: 64px; height: 36px; padding: 0 10px; box-sizing: border-box; border-radius: 10px; background: #F1EFEA; color: #45433E; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 18px; white-space: nowrap; flex-shrink: 0">1 - 1</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A978F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg>
+            </a>
+          </div>
+        </section>
+
+        <section aria-labelledby="afgelopen-titel" style="display: flex; flex-direction: column; gap: 12px">
+          <h2 id="afgelopen-titel" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Afgelopen</h2>
+          <div style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; display: flex; flex-direction: column">
+            <a href="#" style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid #EEECE7; color: #1B1A18; text-decoration: none">
+              <span style="width: 44px; height: 44px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 17px; flex-shrink: 0">R</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+                <span style="font-size: 16px; font-weight: 700">Ruben</span>
+                <span style="font-size: 14px; font-weight: 600; color: #3F6B4F">Gewonnen</span>
+              </span>
+              <span style="min-width: 64px; height: 36px; padding: 0 10px; box-sizing: border-box; border-radius: 10px; background: #E9F0EA; color: #2E5A3E; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 18px; white-space: nowrap; flex-shrink: 0">7 - 4</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A978F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg>
+            </a>
+            <a href="#" style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid #EEECE7; color: #1B1A18; text-decoration: none">
+              <span style="width: 44px; height: 44px; border-radius: 50%; background: #FBF1D6; color: #8A6410; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 17px; flex-shrink: 0">N</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+                <span style="font-size: 16px; font-weight: 700">Noor</span>
+                <span style="font-size: 14px; font-weight: 600; color: #6B6860">Verloren</span>
+              </span>
+              <span style="min-width: 64px; height: 36px; padding: 0 10px; box-sizing: border-box; border-radius: 10px; background: #F1EFEA; color: #45433E; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 18px; white-space: nowrap; flex-shrink: 0">4 - 5</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A978F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg>
+            </a>
+            <a href="#" style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; color: #1B1A18; text-decoration: none">
+              <span style="width: 44px; height: 44px; border-radius: 50%; background: #F8ECE6; color: #A04A2F; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 17px; flex-shrink: 0">L</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
+                <span style="font-size: 16px; font-weight: 700">Lotte</span>
+                <span style="font-size: 14px; font-weight: 600; color: #3F6B4F">Gewonnen</span>
+              </span>
+              <span style="min-width: 64px; height: 36px; padding: 0 10px; box-sizing: border-box; border-radius: 10px; background: #E9F0EA; color: #2E5A3E; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 18px; white-space: nowrap; flex-shrink: 0">6 - 3</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A978F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <aside id="nieuw-duel" aria-labelledby="nieuw-titel" style="min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <h2 id="nieuw-titel" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Nieuw duel</h2>
+          <p style="margin: 0; font-size: 15px; font-weight: 600; line-height: 22px; color: #6B6860">1 tegen 1 · 3 rondes van 3 vragen · om de beurt</p>
+        </div>
+
+        <a href="#" style="position: relative; overflow: hidden; background: #35548C; border-radius: 16px; padding: 18px; display: flex; align-items: center; gap: 14px; color: #FFFFFF; text-decoration: none; border-bottom: 3px solid #263E69">
+          <span style="width: 52px; height: 52px; border-radius: 14px; background: #FFFFFF; color: #35548C; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"></path><path d="M4 20L21 3"></path><path d="M21 16v5h-5"></path><path d="M15 15l6 6"></path><path d="M4 4l5 5"></path></svg>
+          </span>
+          <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 20px; line-height: 24px">Willekeurige speler</span>
+            <span style="font-size: 14px; font-weight: 600; color: #DCE3F1">Direct een tegenstander vinden</span>
+          </span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+
+        <label style="position: relative; display: flex; align-items: center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A978F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; left: 14px"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+          <input type="search" aria-label="Zoek een speler op naam" placeholder="Zoek een speler op naam" style="width: 100%; height: 48px; box-sizing: border-box; padding: 0 14px 0 44px; border: 1px solid #DEDBD3; border-radius: 12px; background: #FFFFFF; color: #1B1A18; font: 600 15px Nunito, system-ui, sans-serif">
+        </label>
+
+        <section aria-labelledby="vrienden-titel" style="display: flex; flex-direction: column; gap: 8px">
+          <h3 id="vrienden-titel" style="margin: 4px 0 0; font-size: 16px; font-weight: 800; line-height: 22px">Vrienden</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; display: flex; flex-direction: column">
+            <li style="display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 16px; border-bottom: 1px solid #EEECE7">
+              <span style="width: 40px; height: 40px; border-radius: 50%; background: #F8ECE6; color: #A04A2F; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 16px; flex-shrink: 0">L</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column">
+                <span style="font-size: 15px; font-weight: 700">Lotte</span>
+                <span style="font-size: 13px; font-weight: 600; color: #6B6860">Level 9</span>
+              </span>
+              <button aria-label="Lotte uitdagen" style="height: 40px; padding: 0 14px; border: 0; border-bottom: 3px solid #C3CEE6; border-radius: 10px; background: #EAEEF7; color: #263E69; font: 800 14px Nunito, system-ui, sans-serif; flex-shrink: 0">Uitdagen</button>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 16px; border-bottom: 1px solid #EEECE7">
+              <span style="width: 40px; height: 40px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 16px; flex-shrink: 0">D</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column">
+                <span style="font-size: 15px; font-weight: 700">Daan</span>
+                <span style="font-size: 13px; font-weight: 600; color: #6B6860">Level 6</span>
+              </span>
+              <button aria-label="Daan uitdagen" style="height: 40px; padding: 0 14px; border: 0; border-bottom: 3px solid #C3CEE6; border-radius: 10px; background: #EAEEF7; color: #263E69; font: 800 14px Nunito, system-ui, sans-serif; flex-shrink: 0">Uitdagen</button>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 16px; border-bottom: 1px solid #EEECE7">
+              <span style="width: 40px; height: 40px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 16px; flex-shrink: 0">R</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column">
+                <span style="font-size: 15px; font-weight: 700">Ruben</span>
+                <span style="font-size: 13px; font-weight: 600; color: #6B6860">Level 8</span>
+              </span>
+              <button aria-label="Ruben uitdagen" style="height: 40px; padding: 0 14px; border: 0; border-bottom: 3px solid #C3CEE6; border-radius: 10px; background: #EAEEF7; color: #263E69; font: 800 14px Nunito, system-ui, sans-serif; flex-shrink: 0">Uitdagen</button>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 16px">
+              <span style="width: 40px; height: 40px; border-radius: 50%; background: #FBF1D6; color: #8A6410; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 16px; flex-shrink: 0">N</span>
+              <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column">
+                <span style="font-size: 15px; font-weight: 700">Noor</span>
+                <span style="font-size: 13px; font-weight: 600; color: #6B6860">Level 5</span>
+              </span>
+              <button aria-label="Noor uitdagen" style="height: 40px; padding: 0 14px; border: 0; border-bottom: 3px solid #C3CEE6; border-radius: 10px; background: #EAEEF7; color: #263E69; font: 800 14px Nunito, system-ui, sans-serif; flex-shrink: 0">Uitdagen</button>
+            </li>
+          </ul>
+        </section>
+
+        <a href="#" style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; display: flex; align-items: center; gap: 12px; padding: 14px 16px; color: #1B1A18; text-decoration: none">
+          <span style="width: 40px; height: 40px; border-radius: 10px; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"></path><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"></path></svg>
+          </span>
+          <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column">
+            <span style="font-size: 15px; font-weight: 700">Nodig iemand uit met een link</span>
+            <span style="font-size: 13px; font-weight: 600; color: #3F6B4F">Je vriend speelt dit duel gratis</span>
+          </span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A978F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer style="background: #FFFFFF; border-top: 1px solid #DEDBD3">
+    <div class="bqh-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; padding-top: 48px; padding-bottom: 28px">
+      <div class="bqf-grid" style="display: grid; grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 32px">
+        <div class="bqf-full" style="display: flex; flex-direction: column; gap: 14px">
+          <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="align-self: flex-start; text-decoration: none"><span style="display: flex; align-items: center; gap: 7px"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></span></a>
+          <p style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Test je bijbelkennis met korte quizzen.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px"><a href="#" style="height: 48px; box-sizing: border-box; padding: 0 16px 0 14px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; display: inline-flex; align-items: center; gap: 10px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"></rect><path d="M10.5 18.5h3"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap"><span style="font-size: 11px; font-weight: 700; color: #6B6860">Download in de</span><span style="font-size: 16px; font-weight: 800">App Store</span></span></a><a href="#" style="height: 48px; box-sizing: border-box; padding: 0 16px 0 14px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; display: inline-flex; align-items: center; gap: 10px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.7 4.1a.8.8 0 0 0-1.2.7z"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap"><span style="font-size: 11px; font-weight: 700; color: #6B6860">Ontdek het op</span><span style="font-size: 16px; font-weight: 800">Google Play</span></span></a></div>
+        </div>
+        <nav aria-label="Spelen" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">Spelen</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Quizzen</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Duels</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Samen spelen</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Ranglijst</a></li></ul></nav>
+        <nav aria-label="BijbelQuiz" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">BijbelQuiz</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Premium</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Groepslicentie</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Hulp</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Contact</a></li></ul></nav>
+        <nav aria-label="Juridisch" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">Juridisch</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Privacybeleid</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Voorwaarden</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Account verwijderen</a></li></ul></nav>
+      </div>
+      <p style="margin: 40px 0 0; padding-top: 20px; border-top: 1px solid #EEECE7; font-size: 13px; font-weight: 600; color: #6B6860">© 2026 BijbelQuiz</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1182}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

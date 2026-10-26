@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Duel spelen</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#35548C}a:hover{color:#263E69}
+.bq-mob{display:none}
+@media (max-width: 700px){
+.bq-desk{display:none !important}
+.bq-mob{display:flex}
+.bq-wrap{padding-left:20px !important;padding-right:20px !important}
+.bq-cols{grid-template-columns:minmax(0,1fr) !important}
+.bq-stack{flex-direction:column !important;align-items:stretch !important}
+.bq-full{width:100% !important}
+.bq-h1{font-size:30px !important;line-height:36px !important}
+.bq-foot{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important}
+.bq-foot-brand{grid-column:1 / -1}
+.bq-code{font-size:52px !important}
+.bq-sb{padding:12px 14px !important;gap:8px !important}
+.bq-sb-av{width:36px !important;height:36px !important;font-size:15px !important}
+.bq-sb-score{font-size:26px !important}
+.bq-seg{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; box-sizing: border-box; background: #ECEAE4; font-family: Nunito, system-ui, sans-serif; color: #1B1A18; display: flex; flex-direction: column">
+  <header style="flex-shrink: 0; background: #FFFFFF; border-bottom: 1px solid #DEDBD3">
+    <div class="bq-wrap" style="max-width: 1200px; height: 68px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="display: flex; align-items: center; gap: 7px; text-decoration: none; flex-shrink: 0"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></a>
+      <button style="height: 40px; padding: 0 16px 0 12px; box-sizing: border-box; border: 1px solid #DEDBD3; border-radius: 999px; background: #FFFFFF; color: #45433E; display: flex; align-items: center; gap: 8px; font: 700 15px Nunito, system-ui, sans-serif; flex-shrink: 0">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        Duel verlaten
+      </button>
+    </div>
+  </header>
+
+  <main class="bq-wrap" style="flex-grow: 1; width: 100%; max-width: 880px; margin: 0 auto; padding: 32px 32px 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+    <span class="bq-mob" style="align-self: center; height: 32px; padding: 0 12px; box-sizing: border-box; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; align-items: center; font-size: 13px; font-weight: 800; color: #45433E">Ronde 2 van 3 · vraag 2</span>
+    <div role="group" class="bq-sb" aria-label="Stand: jij 3, Lotte 2. Ronde 2 van 3, vraag 2. Deze ronde: jij 2 goed, Lotte 1 goed en 1 fout." style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 16px 20px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 16px">
+      <span style="display: flex; align-items: center; gap: 12px; min-width: 0">
+        <span class="bq-sb-av" style="width: 44px; height: 44px; border-radius: 50%; background: #35548C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 18px; flex-shrink: 0">A</span>
+        <span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+          <span style="font-size: 15px; font-weight: 800">Jij</span>
+          
+        </span>
+      </span>
+      <span style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+        <span class="bq-sb-score" style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 34px; line-height: 1; white-space: nowrap">3 - 2</span>
+        <span class="bq-desk" style="font-size: 13px; font-weight: 800; color: #6B6860; white-space: nowrap">Ronde 2 van 3 · vraag 2</span>
+      </span>
+      <span style="justify-self: end; display: flex; align-items: center; gap: 12px; min-width: 0">
+        <span style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px; min-width: 0">
+          <span style="font-size: 15px; font-weight: 800">Lotte</span>
+          
+        </span>
+        <span class="bq-sb-av" style="width: 44px; height: 44px; border-radius: 50%; background: #F8ECE6; color: #A04A2F; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 18px; flex-shrink: 0">L</span>
+      </span>
+    </div>
+
+    <section style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 1px 2px rgba(27, 26, 24, 0.06)">
+      <span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #E9F0EA; color: #3F6B4F; font-weight: 800; font-size: 12px; letter-spacing: 0.04em">RICHTEREN</span>
+      <h1 style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 28px; line-height: 36px">Hoeveel mannen liet God bij Gideon blijven voor de strijd tegen Midian?</h1>
+    </section>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+      <button disabled style="height: 88px; border: 1px solid #DEDBD3; border-bottom: 3px solid #CFCBC1; border-radius: 14px; background: #FFFFFF; color: #8A877F; font: 800 22px Nunito, system-ui, sans-serif">100</button>
+      <button aria-label="300, jouw antwoord, goed" style="position: relative; height: 88px; border: 1px solid #2C4D38; border-bottom: 3px solid #2C4D38; border-radius: 14px; background: #3F6B4F; color: #FFFFFF; font: 800 22px Nunito, system-ui, sans-serif; display: flex; align-items: center; justify-content: center; gap: 8px">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>300
+        <span aria-hidden="true" style="position: absolute; top: -10px; right: -6px; height: 24px; padding: 0 9px 0 3px; box-sizing: border-box; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 800; color: #35548C"><span style="width: 18px; height: 18px; border-radius: 50%; background: #35548C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 10px; flex-shrink: 0">A</span>Jij</span>
+      </button>
+      <button aria-label="10.000, gekozen door Lotte" disabled style="position: relative; height: 88px; border: 1px solid #DEDBD3; border-bottom: 3px solid #CFCBC1; border-radius: 14px; background: #FFFFFF; color: #8A877F; font: 800 22px Nunito, system-ui, sans-serif">10.000
+        <span aria-hidden="true" style="position: absolute; top: -10px; right: -6px; height: 24px; padding: 0 9px 0 3px; box-sizing: border-box; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 800; color: #A04A2F"><span style="width: 18px; height: 18px; border-radius: 50%; background: #F8ECE6; color: #A04A2F; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 10px; flex-shrink: 0">L</span>Lotte</span>
+      </button>
+      <button disabled style="height: 88px; border: 1px solid #DEDBD3; border-bottom: 3px solid #CFCBC1; border-radius: 14px; background: #FFFFFF; color: #8A877F; font: 800 22px Nunito, system-ui, sans-serif">32.000</button>
+    </div>
+  </main>
+
+  <section aria-label="Goed antwoord" style="flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #DEDBD3; box-shadow: 0 -4px 16px rgba(27, 26, 24, 0.06)">
+    <div class="bq-wrap bq-stack" style="max-width: 880px; margin: 0 auto; padding: 24px 32px 28px; box-sizing: border-box; display: flex; align-items: center; gap: 32px">
+      <div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap">
+          <span style="display: flex; align-items: center; gap: 10px; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 24px; color: #2E5A3E">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #3F6B4F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
+            </span>
+            Goed!
+          </span>
+          <span style="display: flex; align-items: center; gap: 4px; padding: 5px 11px; border-radius: 999px; background: #FBF1D6; font-weight: 800; font-size: 13px; color: #8A6410">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#E9B12E" stroke="#8A6410" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg>
+            +15 XP
+          </span>
+        </div>
+        <p style="margin: 0; max-width: 62ch; font-weight: 600; font-size: 16px; line-height: 24px; color: #3E3C37">God liet alleen de mannen blijven die het water met hun hand naar hun mond brachten: driehonderd man.</p>
+        <a href="#" style="align-self: flex-start; height: 32px; padding: 0 12px; border-radius: 999px; background: #EAEEF7; display: flex; align-items: center; gap: 6px; font-weight: 800; font-size: 14px; text-decoration: none">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg>
+          Lees Richteren 7:7
+        </a>
+      </div>
+      <button class="bq-full" style="width: 240px; height: 52px; flex-shrink: 0; border: 0; border-bottom: 3px solid #263E69; border-radius: 12px; background: #35548C; color: #FFFFFF; font: 800 16px Nunito, system-ui, sans-serif">Volgende vraag</button>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

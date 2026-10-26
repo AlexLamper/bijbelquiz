@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Samen spelen - vraag</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#35548C}a:hover{color:#263E69}
+.bq-mob{display:none}
+@media (max-width: 700px){
+.bq-desk{display:none !important}
+.bq-mob{display:flex}
+.bq-wrap{padding-left:20px !important;padding-right:20px !important}
+.bq-cols{grid-template-columns:minmax(0,1fr) !important}
+.bq-stack{flex-direction:column !important;align-items:stretch !important}
+.bq-full{width:100% !important}
+.bq-h1{font-size:30px !important;line-height:36px !important}
+.bq-foot{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important}
+.bq-foot-brand{grid-column:1 / -1}
+.bq-code{font-size:52px !important}
+.bq-sb{padding:12px 14px !important;gap:8px !important}
+.bq-sb-av{width:36px !important;height:36px !important;font-size:15px !important}
+.bq-sb-score{font-size:26px !important}
+.bq-seg{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; box-sizing: border-box; background: #ECEAE4; font-family: Nunito, system-ui, sans-serif; color: #1B1A18; display: flex; flex-direction: column">
+  <header style="flex-shrink: 0; background: #FFFFFF; border-bottom: 1px solid #DEDBD3">
+    <div class="bq-wrap" style="max-width: 1200px; height: 68px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="display: flex; align-items: center; gap: 7px; text-decoration: none; flex-shrink: 0"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></a>
+      <button style="height: 40px; padding: 0 16px 0 12px; box-sizing: border-box; border: 1px solid #DEDBD3; border-radius: 999px; background: #FFFFFF; color: #45433E; display: flex; align-items: center; gap: 8px; font: 700 15px Nunito, system-ui, sans-serif; flex-shrink: 0">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        Spel verlaten
+      </button>
+    </div>
+  </header>
+
+  <main class="bq-wrap" style="flex-grow: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 32px 32px 56px; box-sizing: border-box">
+    <div class="bq-cols" style="display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 32px; align-items: start">
+      <section aria-label="Vraag 4 van 10" style="min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <div style="display: flex; align-items: center; gap: 14px">
+          <span style="font-size: 15px; font-weight: 800; color: #45433E; white-space: nowrap; flex-shrink: 0">Vraag 4 van 10</span>
+          <div aria-hidden="true" style="flex-grow: 1; display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px">
+            <span style="height: 6px; border-radius: 3px; background: #35548C"></span>
+            <span style="height: 6px; border-radius: 3px; background: #35548C"></span>
+            <span style="height: 6px; border-radius: 3px; background: #35548C"></span>
+            <span style="height: 6px; border-radius: 3px; background: #35548C"></span>
+            <span style="height: 6px; border-radius: 3px; background: #D9D6CE"></span>
+            <span style="height: 6px; border-radius: 3px; background: #D9D6CE"></span>
+            <span style="height: 6px; border-radius: 3px; background: #D9D6CE"></span>
+            <span style="height: 6px; border-radius: 3px; background: #D9D6CE"></span>
+            <span style="height: 6px; border-radius: 3px; background: #D9D6CE"></span>
+            <span style="height: 6px; border-radius: 3px; background: #D9D6CE"></span>
+          </div>
+        </div>
+
+        <section style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 1px 2px rgba(27, 26, 24, 0.06)">
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <span style="padding: 4px 10px; border-radius: 999px; background: #EAEEF7; color: #263E69; font-weight: 800; font-size: 12px; letter-spacing: 0.04em">JOHANNES 6</span>
+            <span role="timer" aria-label="Nog 18 seconden" style="width: 56px; height: 56px; border-radius: 50%; background: conic-gradient(#35548C 0 60%, #E6E4DF 60% 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+              <span style="width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800; color: #1B1A18">18</span>
+            </span>
+          </div>
+          <h1 style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 28px; line-height: 36px">Hoeveel broden had de jongen bij zich toen Jezus de vijfduizend mensen te eten gaf?</h1>
+        </section>
+
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+          <button disabled style="height: 88px; border: 1px solid #DEDBD3; border-bottom: 3px solid #CFCBC1; border-radius: 14px; background: #FFFFFF; color: #8A877F; font: 800 22px Nunito, system-ui, sans-serif">3</button>
+          <button aria-label="5, jouw antwoord" aria-pressed="true" style="position: relative; height: 88px; border: 2px solid #35548C; border-bottom-width: 4px; border-radius: 14px; background: #EAEEF7; color: #263E69; font: 800 22px Nunito, system-ui, sans-serif">5
+            <span aria-hidden="true" style="position: absolute; top: -11px; right: -6px; height: 24px; padding: 0 9px 0 3px; box-sizing: border-box; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 800; color: #35548C"><span style="width: 18px; height: 18px; border-radius: 50%; background: #35548C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 10px; flex-shrink: 0">A</span>Jij</span>
+          </button>
+          <button disabled style="height: 88px; border: 1px solid #DEDBD3; border-bottom: 3px solid #CFCBC1; border-radius: 14px; background: #FFFFFF; color: #8A877F; font: 800 22px Nunito, system-ui, sans-serif">7</button>
+          <button disabled style="height: 88px; border: 1px solid #DEDBD3; border-bottom: 3px solid #CFCBC1; border-radius: 14px; background: #FFFFFF; color: #8A877F; font: 800 22px Nunito, system-ui, sans-serif">12</button>
+        </div>
+
+        <p role="status" style="margin: 0; padding: 14px 16px; border-radius: 12px; background: #FFFFFF; border: 1px solid #DEDBD3; display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 600; line-height: 22px; color: #45433E">
+          <span style="width: 32px; height: 32px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
+          </span>
+          Je antwoord is verstuurd. Je ziet of het goed is zodra iedereen klaar is of de tijd om is.
+        </p>
+      </section>
+
+      <aside aria-labelledby="spelers-titel" style="min-width: 0; background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; overflow: hidden">
+        <div style="padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid #EEECE7">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+            <h2 id="spelers-titel" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Spelers</h2>
+            <span style="font-size: 15px; font-weight: 800; color: #263E69">5 van 8 geantwoord</span>
+          </div>
+          <div aria-hidden="true" style="height: 8px; border-radius: 999px; background: #EEECE7; overflow: hidden">
+            <div style="width: 62.5%; height: 8px; border-radius: 999px; background: #35548C"></div>
+          </div>
+        </div>
+        <span style="display: block; padding: 14px 20px 4px; font-size: 13px; font-weight: 700; color: #6B6860">Stand na vraag 3</span>
+        <ol style="margin: 0; padding: 0 0 8px; list-style: none; display: flex; flex-direction: column">
+          <li style="display: flex; align-items: center; gap: 12px; padding: 8px 20px">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #45433E; text-align: center; flex-shrink: 0">1</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #F8ECE6; color: #A04A2F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">L</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Lotte</span>
+            <span aria-label="heeft geantwoord" style="width: 22px; height: 22px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; flex-shrink: 0">3 pt</span>
+          </li>
+          <li aria-current="true" style="display: flex; align-items: center; gap: 12px; padding: 8px 20px; background: #EAEEF7">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #263E69; text-align: center; flex-shrink: 0">2</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #FFFFFF; color: #35548C; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">A</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Jij</span>
+            <span aria-label="heeft geantwoord" style="width: 22px; height: 22px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; color: #263E69; flex-shrink: 0">3 pt</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 12px; padding: 8px 20px">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #45433E; text-align: center; flex-shrink: 0">3</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">D</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Daan</span>
+            <span aria-label="heeft geantwoord" style="width: 22px; height: 22px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; flex-shrink: 0">2 pt</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 12px; padding: 8px 20px">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #45433E; text-align: center; flex-shrink: 0">4</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #FBF1D6; color: #8A6410; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">N</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Noor</span>
+            <span aria-label="denkt nog na" style="width: 22px; height: 22px; box-sizing: border-box; border-radius: 50%; border: 2px dashed #C9C5BC; flex-shrink: 0"></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; flex-shrink: 0">2 pt</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 12px; padding: 8px 20px">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #45433E; text-align: center; flex-shrink: 0">5</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">R</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Ruben</span>
+            <span aria-label="heeft geantwoord" style="width: 22px; height: 22px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; flex-shrink: 0">2 pt</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 12px; padding: 8px 20px">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #45433E; text-align: center; flex-shrink: 0">6</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #F8ECE6; color: #A04A2F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">S</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Sanne</span>
+            <span aria-label="heeft geantwoord" style="width: 22px; height: 22px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; flex-shrink: 0">1 pt</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 12px; padding: 8px 20px">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #45433E; text-align: center; flex-shrink: 0">7</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #E9F0EA; color: #3F6B4F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">T</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Thijs</span>
+            <span aria-label="denkt nog na" style="width: 22px; height: 22px; box-sizing: border-box; border-radius: 50%; border: 2px dashed #C9C5BC; flex-shrink: 0"></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; flex-shrink: 0">1 pt</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 12px; padding: 8px 20px">
+            <span style="width: 16px; font-size: 14px; font-weight: 800; color: #45433E; text-align: center; flex-shrink: 0">8</span>
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #EAEEF7; color: #35548C; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0">E</span>
+            <span style="flex-grow: 1; min-width: 0; font-size: 15px; font-weight: 700">Eva</span>
+            <span aria-label="denkt nog na" style="width: 22px; height: 22px; box-sizing: border-box; border-radius: 50%; border: 2px dashed #C9C5BC; flex-shrink: 0"></span>
+            <span style="width: 40px; text-align: right; font-size: 15px; font-weight: 800; flex-shrink: 0">0 pt</span>
+          </li>
+        </ol>
+      </aside>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

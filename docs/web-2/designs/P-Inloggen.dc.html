@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Inloggen</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#35548C}a:hover{color:#263E69}
+@media (max-width: 700px){
+.bq-wrap{padding-left:16px !important;padding-right:16px !important}
+.bq-nav,.bq-hide-sm{display:none !important}
+.bq-burger{display:flex !important}
+.bq-foot{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.bq-foot-brand{grid-column:1 / -1}
+.bq-grid{grid-template-columns:minmax(0,1fr) !important;gap:32px !important}
+.bq-main{padding-top:24px !important;padding-bottom:48px !important}
+.bq-h1{font-size:32px !important;line-height:40px !important}
+.bq-card{padding:24px 20px !important}
+.bq-visual{zoom:0.74}
+}
+.bqh-burger{display:none}@media (max-width: 700px){.bqh-wrap{padding-left:16px !important;padding-right:16px !important}.bqh-nav,.bqh-hide{display:none !important}.bqh-burger{display:flex !important}.bqf-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.bqf-full{grid-column:1 / -1 !important}}
+</style>
+</helmet>
+<div style="width: 100%; box-sizing: border-box; background: #ECEAE4; font-family: Nunito, system-ui, sans-serif; color: #1B1A18; display: flex; flex-direction: column">
+
+  <header style="height: 68px; box-sizing: border-box; background: #FFFFFF; border-bottom: 1px solid #DEDBD3">
+    <div class="bqh-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; height: 67px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; column-gap: 24px">
+      <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="justify-self: start; text-decoration: none"><span style="display: flex; align-items: center; gap: 7px"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></span></a>
+      <nav class="bqh-nav" aria-label="Hoofdmenu" style="grid-column: 2; display: flex; align-items: center; gap: 32px"><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Quizzen</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Duels</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Samen spelen</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Ranglijst</a><a href="#" style="height: 67px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #45433E; text-decoration: none; white-space: nowrap">Premium</a></nav>
+      <div style="grid-column: 3; justify-self: end; display: flex; align-items: center; gap: 16px"><a class="bqh-hide" href="#" style="font-size: 15px; font-weight: 700; text-decoration: none; white-space: nowrap">Inloggen</a><a href="#" style="height: 44px; box-sizing: border-box; padding: 0 18px; border-radius: 12px; background: #35548C; border-bottom: 3px solid #263E69; color: #FFFFFF; display: flex; align-items: center; font-size: 15px; font-weight: 800; text-decoration: none; white-space: nowrap">Gratis beginnen</a><button class="bqh-burger" aria-label="Menu openen" style="width: 40px; height: 40px; box-sizing: border-box; padding: 0; border: 1px solid #DEDBD3; border-radius: 12px; background: #FFFFFF; color: #45433E; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg></button></div>
+    </div>
+  </header>
+
+  <main class="bq-main" style="flex-grow: 1; padding: 64px 0 88px">
+    <div class="bq-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box">
+      <div class="bq-grid" style="display: grid; grid-template-columns: minmax(0, 480px) minmax(0, 1fr); gap: 72px; align-items: center">
+
+        <section class="bq-card" aria-labelledby="login-title" style="background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 24px">
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <h1 id="login-title" class="bq-h1" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 40px; line-height: 48px">Welkom terug</h1>
+            <p style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 600; color: #6B6860">Log in en speel verder waar je gebleven was.</p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <button style="height: 52px; border: 0; border-bottom: 3px solid #000000; border-radius: 12px; background: #1B1A18; color: #FFFFFF; font: 800 16px Nunito, system-ui, sans-serif; display: flex; align-items: center; justify-content: center; gap: 10px">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg>
+              Doorgaan met Apple
+            </button>
+            <button style="height: 52px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; font: 800 16px Nunito, system-ui, sans-serif; display: flex; align-items: center; justify-content: center; gap: 10px">
+              <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
+              Doorgaan met Google
+            </button>
+          </div>
+
+          <div aria-hidden="true" style="display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; color: #6B6860">
+            <span style="flex-grow: 1; height: 1px; background: #DEDBD3"></span>
+            of met e-mail
+            <span style="flex-grow: 1; height: 1px; background: #DEDBD3"></span>
+          </div>
+
+          <form style="display: flex; flex-direction: column; gap: 16px">
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="login-email" style="font-size: 14px; font-weight: 800">E-mailadres</label>
+              <input id="login-email" type="email" autocomplete="email" placeholder="naam@voorbeeld.nl" style="width: 100%; height: 52px; box-sizing: border-box; padding: 0 16px; border: 1px solid #BDB9B0; border-radius: 12px; background: #FFFFFF; font: 600 16px Nunito, system-ui, sans-serif; color: #1B1A18">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <span style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><label for="login-password" style="font-size: 14px; font-weight: 800">Wachtwoord</label><a href="#" style="font-size: 14px; font-weight: 800; text-decoration: none">Wachtwoord vergeten?</a></span>
+              <div style="position: relative">
+                <input id="login-password" type="password" autocomplete="current-password" placeholder="Je wachtwoord" style="width: 100%; height: 52px; box-sizing: border-box; padding: 0 52px 0 16px; border: 1px solid #BDB9B0; border-radius: 12px; background: #FFFFFF; font: 600 16px Nunito, system-ui, sans-serif; color: #1B1A18">
+                <button type="button" aria-label="Wachtwoord tonen" style="position: absolute; right: 4px; top: 4px; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 10px; background: transparent; color: #6B6860; display: flex; align-items: center; justify-content: center">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+            </div>
+            <button type="submit" style="margin-top: 4px; height: 52px; border: 0; border-bottom: 3px solid #263E69; border-radius: 12px; background: #35548C; color: #FFFFFF; font: 800 16px Nunito, system-ui, sans-serif">Inloggen</button>
+          </form>
+
+          <p style="margin: 0; font-size: 15px; font-weight: 600; color: #6B6860; text-align: center">Nog geen account? <a href="#" style="font-weight: 800; text-decoration: none">Account aanmaken</a></p>
+        </section>
+
+        <section aria-labelledby="login-visual-title" style="display: flex; flex-direction: column; align-items: center; gap: 28px; min-width: 0">
+          <div class="bq-visual" role="img" aria-label="Voorbeeld: je quiz over Lucas 15 staat op 4 van 10, Lotte wacht op jou in een duel, 1.240 XP en een reeks van 6 dagen" style="position: relative; width: 460px; max-width: 100%; height: 380px; flex-shrink: 0">
+            <span style="position: absolute; left: 50%; top: 22px; margin-left: -170px; width: 340px; height: 340px; border-radius: 50%; background: #DFE5F2"></span>
+            <span style="position: absolute; right: 44px; top: 70px; width: 38px; height: 38px; border-radius: 50%; background: #F3D27A"></span>
+            <div style="position: absolute; left: 50%; top: 92px; margin-left: -150px; width: 300px; box-sizing: border-box; transform: rotate(-3deg); background: #FFFFFF; border: 1px solid #DEDBD3; border-radius: 18px; padding: 18px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 10px 24px rgba(27, 26, 24, 0.10)">
+              <span style="display: flex; justify-content: space-between; align-items: center">
+                <span style="padding: 3px 9px; border-radius: 999px; background: #EAEEF7; color: #35548C; font-size: 12px; font-weight: 800">Lucas</span>
+                <span style="width: 34px; height: 34px; border-radius: 50%; background: conic-gradient(#35548C 0 40%, #E6E4DF 40% 100%); display: flex; align-items: center; justify-content: center">
+                  <span style="width: 25px; height: 25px; border-radius: 50%; background: #FFFFFF"></span>
+                </span>
+              </span>
+              <span style="display: flex; flex-direction: column; gap: 2px">
+                <span style="font-family: Fredoka, Nunito, sans-serif; font-size: 21px; font-weight: 600; line-height: 26px">De verloren zoon</span>
+                <span style="font-size: 14px; font-weight: 700; color: #4F5F82">Hoofdstuk 15 · 4/10</span>
+              </span>
+              <span style="height: 42px; border-radius: 11px; background: #35548C; border-bottom: 3px solid #263E69; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800">Verder spelen</span>
+            </div>
+            <span style="position: absolute; right: 0; top: 14px; transform: rotate(4deg); height: 44px; padding: 0 14px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DEDBD3; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; color: #1B1A18; box-shadow: 0 10px 24px rgba(27, 26, 24, 0.10)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B4502B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l10 10"></path><path d="M20 4L10 14"></path><path d="M6 15l3 3"></path><path d="M18 15l-3 3"></path><path d="M4 20l3-3"></path><path d="M20 20l-3-3"></path></svg>
+              Lotte wacht op jou
+            </span>
+            <span style="position: absolute; left: 0; bottom: 58px; transform: rotate(-5deg); height: 38px; padding: 0 14px; border-radius: 999px; background: #E9B12E; color: #3D2C05; display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 800; box-shadow: 0 10px 24px rgba(27, 26, 24, 0.10)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#3D2C05" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg>
+              1.240 XP
+            </span>
+            <span style="position: absolute; right: 20px; bottom: 14px; transform: rotate(3deg); height: 40px; padding: 0 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #DEDBD3; color: #1B1A18; display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 800; box-shadow: 0 10px 24px rgba(27, 26, 24, 0.10)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#D9734F" aria-hidden="true"><path d="M12 2s5 4.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4.2 2.5-5 0 2 1 3 2 3 0-3.5.5-6 .5-8z"></path></svg>
+              6 dagen op rij
+            </span>
+          </div>
+          <div style="max-width: 420px; display: flex; flex-direction: column; gap: 8px; text-align: center">
+            <h2 id="login-visual-title" style="margin: 0; font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 26px; line-height: 32px">Alles staat voor je klaar</h2>
+            <p style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 600; color: #6B6860">Je reeks, XP en duels horen bij je account. Speel verder op de website of in de app.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer style="background: #FFFFFF; border-top: 1px solid #DEDBD3">
+    <div class="bqh-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; padding-top: 48px; padding-bottom: 28px">
+      <div class="bqf-grid" style="display: grid; grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 32px">
+        <div class="bqf-full" style="display: flex; flex-direction: column; gap: 14px">
+          <a href="#" aria-label="BijbelQuiz, naar de startpagina" style="align-self: flex-start; text-decoration: none"><span style="display: flex; align-items: center; gap: 7px"><svg width="34" height="34" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#263E69" stroke="#263E69" stroke-width="8" stroke-linejoin="round" transform="translate(0 5)"></path><path d="M12 24Q31 13 50 23Q69 13 88 24L88 71Q69 63 50 73Q42 69 36 69L24 86L25 69.5Q18 70 12 72Z" fill="#35548C" stroke="#35548C" stroke-width="8" stroke-linejoin="round"></path><path d="M18 30Q32 22 46 30L46 64Q32 59 18 63Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M54 30Q68 22 82 30L82 63Q68 59 54 64Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path><path d="M24 40Q32 36 40 40M24 50Q32 46 40 50" stroke="#35548C" stroke-width="5" stroke-linecap="round" fill="none"></path><path d="M61.5 39Q61.5 31.5 68 31.5Q74.5 31.5 74.5 37.5Q74.5 41.5 70.5 43.5Q68 44.8 68 48" stroke="#35548C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="68" cy="56" r="4.4" fill="#E9B12E"></circle></svg><span style="font-family: Fredoka, Nunito, sans-serif; font-weight: 600; font-size: 22px; line-height: 1; letter-spacing: -0.01em; color: #1B1A18; white-space: nowrap">Bijbel<span style="color: #35548C">Quiz</span></span></span></a>
+          <p style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 600; color: #6B6860">Test je bijbelkennis met korte quizzen.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px"><a href="#" style="height: 48px; box-sizing: border-box; padding: 0 16px 0 14px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; display: inline-flex; align-items: center; gap: 10px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"></rect><path d="M10.5 18.5h3"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap"><span style="font-size: 11px; font-weight: 700; color: #6B6860">Download in de</span><span style="font-size: 16px; font-weight: 800">App Store</span></span></a><a href="#" style="height: 48px; box-sizing: border-box; padding: 0 16px 0 14px; border: 1px solid #DEDBD3; border-bottom-width: 3px; border-radius: 12px; background: #FFFFFF; color: #1B1A18; display: inline-flex; align-items: center; gap: 10px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.7 4.1a.8.8 0 0 0-1.2.7z"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap"><span style="font-size: 11px; font-weight: 700; color: #6B6860">Ontdek het op</span><span style="font-size: 16px; font-weight: 800">Google Play</span></span></a></div>
+        </div>
+        <nav aria-label="Spelen" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">Spelen</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Quizzen</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Duels</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Samen spelen</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Ranglijst</a></li></ul></nav>
+        <nav aria-label="BijbelQuiz" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">BijbelQuiz</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Premium</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Groepslicentie</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Hulp</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Contact</a></li></ul></nav>
+        <nav aria-label="Juridisch" style="display: flex; flex-direction: column; gap: 14px"><h2 style="margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #6B6860">Juridisch</h2><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Privacybeleid</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Voorwaarden</a></li><li><a href="#" style="font-size: 15px; font-weight: 600; color: #45433E; text-decoration: none">Account verwijderen</a></li></ul></nav>
+      </div>
+      <p style="margin: 40px 0 0; padding-top: 20px; border-top: 1px solid #EEECE7; font-size: 13px; font-weight: 600; color: #6B6860">© 2026 BijbelQuiz</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1178}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

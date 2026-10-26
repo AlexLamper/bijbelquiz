@@ -1,0 +1,2104 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T21:25:00Z"
+ },
+ "title": "BijbelQuiz 2.0 redesign",
+ "launch": {
+  "view": "focused",
+  "file": "R-Home.dc.html"
+ },
+ "pages": [
+  {
+   "id": "v2",
+   "name": "Versie 2 - rustig en simpel"
+  },
+  {
+   "id": "web2",
+   "name": "Website 2.0"
+  },
+  {
+   "id": "app",
+   "name": "App - schermen"
+  },
+  {
+   "id": "appopt",
+   "name": "App - opties B en C"
+  },
+  {
+   "id": "paywall",
+   "name": "Paywall"
+  },
+  {
+   "id": "brand",
+   "name": "Logo en merk"
+  },
+  {
+   "id": "appstore",
+   "name": "App Store"
+  },
+  {
+   "id": "playstore",
+   "name": "Play Store"
+  },
+  {
+   "id": "website",
+   "name": "Website"
+  },
+  {
+   "id": "social",
+   "name": "Social"
+  },
+  {
+   "id": "email",
+   "name": "E-mail en push"
+  },
+  {
+   "id": "mix",
+   "name": "Brand x Bijbelreis"
+  },
+  {
+   "id": "arcade",
+   "name": "Arcade variants"
+  },
+  {
+   "id": "directions",
+   "name": "3 directions"
+  }
+ ],
+ "boards": {
+  "R-Home.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "1 Home",
+   "page": "v2"
+  },
+  "R-Quizzen.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "2 Quizzen",
+   "page": "v2"
+  },
+  "R-QuizDetail.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "3 Quiz starten",
+   "page": "v2"
+  },
+  "R-Lezen.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "4 Bijbeltekst lezen",
+   "page": "v2"
+  },
+  "R-Quiz.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "5 Quizvraag",
+   "page": "v2"
+  },
+  "R-Results.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "6 Resultaat",
+   "page": "v2"
+  },
+  "R-Duels.dc.html": {
+   "x": 2820,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "7 Duels",
+   "page": "v2"
+  },
+  "R-Uitdagen.dc.html": {
+   "x": 3290,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "8 Nieuw duel",
+   "page": "v2"
+  },
+  "R-Duelvraag.dc.html": {
+   "x": 3760,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "9 Duelvraag",
+   "page": "v2"
+  },
+  "R-Ranglijst.dc.html": {
+   "x": 4230,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "10 Ranglijst",
+   "page": "v2"
+  },
+  "R-Profiel.dc.html": {
+   "x": 4700,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "11 Profiel",
+   "page": "v2"
+  },
+  "R-Instellingen.dc.html": {
+   "x": 5170,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "12 Instellingen",
+   "page": "v2"
+  },
+  "R-Samenspelen.dc.html": {
+   "x": 5640,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "13 Samen spelen",
+   "page": "v2"
+  },
+  "R-Lobby.dc.html": {
+   "x": 6110,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "14 Wachtkamer",
+   "page": "v2"
+  },
+  "R-Onboarding.dc.html": {
+   "x": 6580,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "15 Welkom",
+   "page": "v2"
+  },
+  "R-PaywallStart.dc.html": {
+   "x": 7050,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "16 Premium na welkom",
+   "page": "v2"
+  },
+  "R-Paywall.dc.html": {
+   "x": 7520,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "17 Premium na 3 quizzen",
+   "page": "v2"
+  },
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "A - Home",
+   "page": "directions"
+  },
+  "A-Quiz.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "A - Quiz",
+   "page": "directions"
+  },
+  "A-Results.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "A - Results",
+   "page": "directions"
+  },
+  "B-Home.dc.html": {
+   "x": 0,
+   "y": 1300,
+   "w": 390,
+   "h": 844,
+   "title": "B - Home",
+   "page": "directions"
+  },
+  "B-Quiz.dc.html": {
+   "x": 470,
+   "y": 1300,
+   "w": 390,
+   "h": 844,
+   "title": "B - Quiz",
+   "page": "directions"
+  },
+  "B-Results.dc.html": {
+   "x": 940,
+   "y": 1300,
+   "w": 390,
+   "h": 844,
+   "title": "B - Results",
+   "page": "directions"
+  },
+  "C-Home.dc.html": {
+   "x": 0,
+   "y": 2600,
+   "w": 390,
+   "h": 844,
+   "title": "C - Home",
+   "page": "directions"
+  },
+  "C-Quiz.dc.html": {
+   "x": 470,
+   "y": 2600,
+   "w": 390,
+   "h": 844,
+   "title": "C - Quiz",
+   "page": "directions"
+  },
+  "C-Results.dc.html": {
+   "x": 940,
+   "y": 2600,
+   "w": 390,
+   "h": 844,
+   "title": "C - Results",
+   "page": "directions"
+  },
+  "V1-Home.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "1 Brand Arcade - Home",
+   "page": "arcade"
+  },
+  "V2-Home.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "2 Bijbelreis - Home",
+   "page": "arcade"
+  },
+  "V3-Home.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "3 Glas-in-lood - Home",
+   "page": "arcade"
+  },
+  "V4-Home.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "4 De Ark - Home",
+   "page": "arcade"
+  },
+  "V5-Home.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "5 Arena - Home",
+   "page": "arcade"
+  },
+  "V1-Quiz.dc.html": {
+   "x": 0,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "1 Brand Arcade - Quiz",
+   "page": "arcade"
+  },
+  "V2-Quiz.dc.html": {
+   "x": 470,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "2 Bijbelreis - Quiz",
+   "page": "arcade"
+  },
+  "V3-Quiz.dc.html": {
+   "x": 940,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "3 Glas-in-lood - Quiz",
+   "page": "arcade"
+  },
+  "V4-Quiz.dc.html": {
+   "x": 1410,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "4 De Ark - Quiz",
+   "page": "arcade"
+  },
+  "V5-Quiz.dc.html": {
+   "x": 1880,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "5 Arena - Quiz",
+   "page": "arcade"
+  },
+  "M1-Home.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mix 1 - Home",
+   "page": "mix"
+  },
+  "M2-Home.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mix 2 - Home",
+   "page": "mix"
+  },
+  "M3-Home.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mix 3 - Home",
+   "page": "mix"
+  },
+  "M1-Quiz.dc.html": {
+   "x": 0,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "Mix 1 - Quiz",
+   "page": "mix"
+  },
+  "M2-Quiz.dc.html": {
+   "x": 470,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "Mix 2 - Quiz (gekozen)",
+   "page": "mix"
+  },
+  "M3-Quiz.dc.html": {
+   "x": 940,
+   "y": 964,
+   "w": 390,
+   "h": 844,
+   "title": "Mix 3 - Quiz",
+   "page": "mix"
+  },
+  "S1-Onboarding.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Welkom",
+   "page": "app"
+  },
+  "S1-HomeA.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Home - optie A (reis)",
+   "page": "app"
+  },
+  "S1-HomeB.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Home - optie B (vandaag)",
+   "page": "app"
+  },
+  "S1-Quizzen.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Quizzen",
+   "page": "app"
+  },
+  "S1-QuizDetail.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Quiz starten",
+   "page": "app"
+  },
+  "S1-Lezen.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Lees eerst",
+   "page": "app"
+  },
+  "S2-Results.dc.html": {
+   "x": 0,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Resultaat",
+   "page": "app"
+  },
+  "S2-Review.dc.html": {
+   "x": 470,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Antwoorden bekijken",
+   "page": "app"
+  },
+  "S2-Ranglijst.dc.html": {
+   "x": 940,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Ranglijst",
+   "page": "app"
+  },
+  "S2-Profiel.dc.html": {
+   "x": 1410,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Profiel",
+   "page": "app"
+  },
+  "S2-Prestaties.dc.html": {
+   "x": 1880,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Prestaties",
+   "page": "app"
+  },
+  "S2-Reeks.dc.html": {
+   "x": 2350,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Reeks",
+   "page": "app"
+  },
+  "S3-Duels.dc.html": {
+   "x": 0,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duels",
+   "page": "app"
+  },
+  "S3-Uitdagen.dc.html": {
+   "x": 470,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duel uitdagen",
+   "page": "app"
+  },
+  "S3-Vraag.dc.html": {
+   "x": 940,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duelvraag",
+   "page": "app"
+  },
+  "S3-Categorie.dc.html": {
+   "x": 1410,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Categorie kiezen",
+   "page": "app"
+  },
+  "S3-Rondeuitslag.dc.html": {
+   "x": 1880,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Ronde-uitslag",
+   "page": "app"
+  },
+  "S3-Einde.dc.html": {
+   "x": 2350,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duel gewonnen",
+   "page": "app"
+  },
+  "S3-Uitnodiging.dc.html": {
+   "x": 2820,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Uitnodiging (vriend)",
+   "page": "app"
+  },
+  "S4-Samenspelen.dc.html": {
+   "x": 0,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Samen spelen",
+   "page": "app"
+  },
+  "S4-Lobby.dc.html": {
+   "x": 470,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Lobby (host)",
+   "page": "app"
+  },
+  "S4-Livevraag.dc.html": {
+   "x": 940,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Live vraag",
+   "page": "app"
+  },
+  "S4-Paywall.dc.html": {
+   "x": 1410,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Paywall",
+   "page": "app"
+  },
+  "S4-Groepslicentie.dc.html": {
+   "x": 1880,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Groepslicentie",
+   "page": "app"
+  },
+  "S4-Instellingen.dc.html": {
+   "x": 2350,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Instellingen",
+   "page": "app"
+  },
+  "O1-Results-B.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Resultaat B - Feest",
+   "page": "appopt"
+  },
+  "O1-Results-C.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Resultaat C - Tijdlijn",
+   "page": "appopt"
+  },
+  "O1-Profiel-B.dc.html": {
+   "x": 1100,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Profiel B - Blad",
+   "page": "appopt"
+  },
+  "O1-Profiel-C.dc.html": {
+   "x": 1570,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Profiel C - Tegels",
+   "page": "appopt"
+  },
+  "O1-Ranglijst-B.dc.html": {
+   "x": 2200,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Ranglijst B - Tabel",
+   "page": "appopt"
+  },
+  "O1-Ranglijst-C.dc.html": {
+   "x": 2670,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Ranglijst C - Ladder",
+   "page": "appopt"
+  },
+  "O3-Onboarding-B.dc.html": {
+   "x": 0,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Welkom B - Swipe-intro",
+   "page": "appopt"
+  },
+  "O3-Onboarding-C.dc.html": {
+   "x": 470,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Welkom C - Meteen spelen",
+   "page": "appopt"
+  },
+  "O3-Quizzen-B.dc.html": {
+   "x": 1100,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Quizzen B - Boekenplanken",
+   "page": "appopt"
+  },
+  "O3-Quizzen-C.dc.html": {
+   "x": 1570,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Quizzen C - Lijst",
+   "page": "appopt"
+  },
+  "O3-QuizDetail-B.dc.html": {
+   "x": 2200,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Quiz starten B - Hero",
+   "page": "appopt"
+  },
+  "O3-QuizDetail-C.dc.html": {
+   "x": 2670,
+   "y": 1244,
+   "w": 390,
+   "h": 844,
+   "title": "Quiz starten C - Route",
+   "page": "appopt"
+  },
+  "O2-Duels-B.dc.html": {
+   "x": 0,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duels B - Bord",
+   "page": "appopt"
+  },
+  "O2-Duels-C.dc.html": {
+   "x": 470,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duels C - Hero",
+   "page": "appopt"
+  },
+  "O2-Duelvraag-B.dc.html": {
+   "x": 1100,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duelvraag B - VS-banner",
+   "page": "appopt"
+  },
+  "O2-Duelvraag-C.dc.html": {
+   "x": 1570,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duelvraag C - Compact",
+   "page": "appopt"
+  },
+  "O2-Einde-B.dc.html": {
+   "x": 2200,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duel gewonnen B - Revanche",
+   "page": "appopt"
+  },
+  "O2-Einde-C.dc.html": {
+   "x": 2670,
+   "y": 2488,
+   "w": 390,
+   "h": 844,
+   "title": "Duel gewonnen C - Deelkaart",
+   "page": "appopt"
+  },
+  "O2-Samenspelen-B.dc.html": {
+   "x": 0,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Samen spelen B - Code eerst",
+   "page": "appopt"
+  },
+  "O2-Samenspelen-C.dc.html": {
+   "x": 470,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Samen spelen C - Route",
+   "page": "appopt"
+  },
+  "O2-Lobby-B.dc.html": {
+   "x": 1100,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Lobby B - Spelers",
+   "page": "appopt"
+  },
+  "O2-Lobby-C.dc.html": {
+   "x": 1570,
+   "y": 3732,
+   "w": 390,
+   "h": 844,
+   "title": "Lobby C - Code-hero",
+   "page": "appopt"
+  },
+  "PW-Onboarding.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "1 Onboarding (dag 0)",
+   "page": "paywall"
+  },
+  "PW-Moment.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "2 Moment na laatste gratis quiz",
+   "page": "paywall"
+  },
+  "PW-Slot.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "3 Slot - optie A",
+   "page": "paywall"
+  },
+  "PW-Slot-B.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "3 Slot - optie B",
+   "page": "paywall"
+  },
+  "PW-Exitaanbod.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "4 Exitaanbod (eenmalig)",
+   "page": "paywall"
+  },
+  "L-Logo1.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1200,
+   "h": 800,
+   "title": "Logo 1 - Boekballon",
+   "page": "brand"
+  },
+  "L-Logo2.dc.html": {
+   "x": 1280,
+   "y": 0,
+   "w": 1200,
+   "h": 800,
+   "title": "Logo 2 - Reisroute",
+   "page": "brand"
+  },
+  "L-Logo3.dc.html": {
+   "x": 0,
+   "y": 920,
+   "w": 1200,
+   "h": 800,
+   "title": "Logo 3 - Rolvraag",
+   "page": "brand"
+  },
+  "L-Logo4.dc.html": {
+   "x": 1280,
+   "y": 920,
+   "w": 1200,
+   "h": 800,
+   "title": "Logo 4 - BQ-lint",
+   "page": "brand"
+  },
+  "L-Icons.dc.html": {
+   "x": 0,
+   "y": 1840,
+   "w": 1200,
+   "h": 800,
+   "title": "App-iconen",
+   "page": "brand"
+  },
+  "L-Brandboard.dc.html": {
+   "x": 1280,
+   "y": 1840,
+   "w": 1440,
+   "h": 1024,
+   "title": "Merkbord",
+   "page": "brand"
+  },
+  "AS-01.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1290,
+   "h": 2796,
+   "title": "App Store 1 - Quizvraag",
+   "page": "appstore"
+  },
+  "AS-02.dc.html": {
+   "x": 1370,
+   "y": 0,
+   "w": 1290,
+   "h": 2796,
+   "title": "App Store 2 - Bijbelreis",
+   "page": "appstore"
+  },
+  "AS-03.dc.html": {
+   "x": 2740,
+   "y": 0,
+   "w": 1290,
+   "h": 2796,
+   "title": "App Store 3 - Duel",
+   "page": "appstore"
+  },
+  "AS-04.dc.html": {
+   "x": 4110,
+   "y": 0,
+   "w": 1290,
+   "h": 2796,
+   "title": "App Store 4 - Uitleg",
+   "page": "appstore"
+  },
+  "AS-05.dc.html": {
+   "x": 5480,
+   "y": 0,
+   "w": 1290,
+   "h": 2796,
+   "title": "App Store 5 - Samen spelen",
+   "page": "appstore"
+  },
+  "AS-06.dc.html": {
+   "x": 6850,
+   "y": 0,
+   "w": 1290,
+   "h": 2796,
+   "title": "App Store 6 - Reeks",
+   "page": "appstore"
+  },
+  "OAS-B1.dc.html": {
+   "x": 0,
+   "y": 3300,
+   "w": 1290,
+   "h": 2796,
+   "title": "Stijl B1 - Panorama",
+   "page": "appstore"
+  },
+  "OAS-B2.dc.html": {
+   "x": 1290,
+   "y": 3300,
+   "w": 1290,
+   "h": 2796,
+   "title": "Stijl B2 - Panorama",
+   "page": "appstore"
+  },
+  "OAS-B3.dc.html": {
+   "x": 2580,
+   "y": 3300,
+   "w": 1290,
+   "h": 2796,
+   "title": "Stijl B3 - Panorama",
+   "page": "appstore"
+  },
+  "OAS-C1.dc.html": {
+   "x": 0,
+   "y": 6600,
+   "w": 1290,
+   "h": 2796,
+   "title": "Stijl C1 - Grote UI",
+   "page": "appstore"
+  },
+  "OAS-C2.dc.html": {
+   "x": 1370,
+   "y": 6600,
+   "w": 1290,
+   "h": 2796,
+   "title": "Stijl C2 - Grote UI",
+   "page": "appstore"
+  },
+  "OAS-C3.dc.html": {
+   "x": 2740,
+   "y": 6600,
+   "w": 1290,
+   "h": 2796,
+   "title": "Stijl C3 - Grote UI",
+   "page": "appstore"
+  },
+  "PS-Feature.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1024,
+   "h": 500,
+   "title": "Play - Feature graphic",
+   "page": "playstore"
+  },
+  "PS-Icon.dc.html": {
+   "x": 1104,
+   "y": 0,
+   "w": 512,
+   "h": 512,
+   "title": "Play - Icoon (tijdelijk)",
+   "page": "playstore"
+  },
+  "PS-01.dc.html": {
+   "x": 0,
+   "y": 740,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play 1 - Quizvraag",
+   "page": "playstore"
+  },
+  "PS-02.dc.html": {
+   "x": 1160,
+   "y": 740,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play 2 - Bijbelreis",
+   "page": "playstore"
+  },
+  "PS-03.dc.html": {
+   "x": 2320,
+   "y": 740,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play 3 - Duels",
+   "page": "playstore"
+  },
+  "PS-04.dc.html": {
+   "x": 3480,
+   "y": 740,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play 4 - Uitleg",
+   "page": "playstore"
+  },
+  "PS-05.dc.html": {
+   "x": 4640,
+   "y": 740,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play 5 - Samen spelen",
+   "page": "playstore"
+  },
+  "PS-06.dc.html": {
+   "x": 5800,
+   "y": 740,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play 6 - Voortgang",
+   "page": "playstore"
+  },
+  "OPS-Feature-B.dc.html": {
+   "x": 0,
+   "y": 3060,
+   "w": 1024,
+   "h": 500,
+   "title": "Feature graphic - optie B",
+   "page": "playstore"
+  },
+  "OPS-Feature-C.dc.html": {
+   "x": 1104,
+   "y": 3060,
+   "w": 1024,
+   "h": 500,
+   "title": "Feature graphic - optie C",
+   "page": "playstore"
+  },
+  "OPS-B1.dc.html": {
+   "x": 0,
+   "y": 3800,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play B1 - Quizvraag",
+   "page": "playstore"
+  },
+  "OPS-B2.dc.html": {
+   "x": 1160,
+   "y": 3800,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play B2 - Bijbelreis",
+   "page": "playstore"
+  },
+  "OPS-B3.dc.html": {
+   "x": 2320,
+   "y": 3800,
+   "w": 1080,
+   "h": 1920,
+   "title": "Play B3 - Duels",
+   "page": "playstore"
+  },
+  "W-Home.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 5700,
+   "title": "Website - Home",
+   "page": "website",
+   "expand": "fill"
+  },
+  "W-Quizzen.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 2080,
+   "title": "Website - Quizzen",
+   "page": "website",
+   "expand": "fill"
+  },
+  "W-Quiz.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 900,
+   "title": "Website - Quizspeler",
+   "page": "website",
+   "expand": "fill"
+  },
+  "W-Premium.dc.html": {
+   "x": 4560,
+   "y": 0,
+   "w": 1440,
+   "h": 3500,
+   "title": "Website - Premium",
+   "page": "website",
+   "expand": "fill"
+  },
+  "W-Samenspelen.dc.html": {
+   "x": 6080,
+   "y": 0,
+   "w": 1440,
+   "h": 2620,
+   "title": "Website - Samen spelen",
+   "page": "website",
+   "expand": "fill"
+  },
+  "OW-Home-B.dc.html": {
+   "x": 0,
+   "y": 6320,
+   "w": 1440,
+   "h": 4500,
+   "title": "Website - Home optie B (speel meteen)",
+   "page": "website",
+   "expand": "fill"
+  },
+  "OW-Home-C.dc.html": {
+   "x": 1520,
+   "y": 6320,
+   "w": 1440,
+   "h": 5800,
+   "title": "Website - Home optie C (route)",
+   "page": "website",
+   "expand": "fill"
+  },
+  "OW-Premium-B.dc.html": {
+   "x": 3040,
+   "y": 6320,
+   "w": 1440,
+   "h": 3150,
+   "title": "Website - Premium optie B",
+   "page": "website",
+   "expand": "fill"
+  },
+  "SO-Vraag.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1080,
+   "h": 1350,
+   "title": "Post - Vraag",
+   "page": "social"
+  },
+  "SO-Antwoord.dc.html": {
+   "x": 1160,
+   "y": 0,
+   "w": 1080,
+   "h": 1350,
+   "title": "Post - Antwoord",
+   "page": "social"
+  },
+  "SO-Lancering.dc.html": {
+   "x": 2320,
+   "y": 0,
+   "w": 1080,
+   "h": 1350,
+   "title": "Post - Lancering 2.0",
+   "page": "social"
+  },
+  "SO-Duel.dc.html": {
+   "x": 3480,
+   "y": 0,
+   "w": 1080,
+   "h": 1920,
+   "title": "Story - Duel",
+   "page": "social"
+  },
+  "SO-Reeks.dc.html": {
+   "x": 4640,
+   "y": 0,
+   "w": 1080,
+   "h": 1920,
+   "title": "Story - Reeks",
+   "page": "social"
+  },
+  "OSO-Vraag-B.dc.html": {
+   "x": 0,
+   "y": 2400,
+   "w": 1080,
+   "h": 1350,
+   "title": "Post - Vraag optie B",
+   "page": "social"
+  },
+  "OSO-Vraag-C.dc.html": {
+   "x": 1160,
+   "y": 2400,
+   "w": 1080,
+   "h": 1350,
+   "title": "Post - Vraag optie C",
+   "page": "social"
+  },
+  "OSO-Duel-B.dc.html": {
+   "x": 3480,
+   "y": 2400,
+   "w": 1080,
+   "h": 1920,
+   "title": "Story - Duel optie B",
+   "page": "social"
+  },
+  "OE-Welkom-B.dc.html": {
+   "x": 0,
+   "y": 1800,
+   "w": 600,
+   "h": 1400,
+   "title": "E-mail - Welkom optie B",
+   "page": "email"
+  },
+  "E-Welkom.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 600,
+   "h": 1400,
+   "title": "E-mail - Welkom",
+   "page": "email"
+  },
+  "E-Proefperiode.dc.html": {
+   "x": 680,
+   "y": 0,
+   "w": 600,
+   "h": 1200,
+   "title": "E-mail - Proefperiode eindigt",
+   "page": "email"
+  },
+  "E-Duel.dc.html": {
+   "x": 1360,
+   "y": 0,
+   "w": 600,
+   "h": 1100,
+   "title": "E-mail - Jouw beurt",
+   "page": "email"
+  },
+  "E-Push.dc.html": {
+   "x": 2040,
+   "y": 0,
+   "w": 1200,
+   "h": 900,
+   "title": "Pushmeldingen",
+   "page": "email"
+  },
+  "P-Landing.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 4230,
+   "title": "W1 Home  (/)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Premium.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 2139,
+   "title": "W2 Premium  (/premium)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-PremiumSucces.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 1373,
+   "title": "W3 Premium gelukt  (/premium/succes)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Groepslicentie.dc.html": {
+   "x": 4560,
+   "y": 0,
+   "w": 1440,
+   "h": 2547,
+   "title": "W4 Groepslicentie  (/groepslicentie)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Hulp.dc.html": {
+   "x": 6080,
+   "y": 0,
+   "w": 1440,
+   "h": 2012,
+   "title": "W5 Hulp  (/hulp)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Contact.dc.html": {
+   "x": 7600,
+   "y": 0,
+   "w": 1440,
+   "h": 1271,
+   "title": "W6 Contact  (/contact)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Bijbelstudie.dc.html": {
+   "x": 9120,
+   "y": 0,
+   "w": 1440,
+   "h": 2450,
+   "title": "W7 BijbelStudie  (/bijbelstudie)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Inloggen.dc.html": {
+   "x": 0,
+   "y": 4692,
+   "w": 1440,
+   "h": 1178,
+   "title": "W8 Inloggen  (/inloggen)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Registreren.dc.html": {
+   "x": 1520,
+   "y": 4692,
+   "w": 1440,
+   "h": 1372,
+   "title": "W9 Registreren  (/registreren)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Profiel.dc.html": {
+   "x": 3040,
+   "y": 4692,
+   "w": 1440,
+   "h": 1437,
+   "title": "W10 Profiel  (/profiel)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Instellingen.dc.html": {
+   "x": 4560,
+   "y": 4692,
+   "w": 1440,
+   "h": 2252,
+   "title": "W11 Instellingen  (/instellingen)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-AccountVerwijderen.dc.html": {
+   "x": 6080,
+   "y": 4692,
+   "w": 1440,
+   "h": 1440,
+   "title": "W12 Account verwijderen  (/account-verwijderen)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Juridisch.dc.html": {
+   "x": 7600,
+   "y": 4692,
+   "w": 1440,
+   "h": 2184,
+   "title": "W13 Privacy en voorwaarden  (/privacybeleid)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Foutmelding.dc.html": {
+   "x": 9120,
+   "y": 4692,
+   "w": 1440,
+   "h": 1378,
+   "title": "W14 Pagina niet gevonden  (/foutmelding)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Dashboard.dc.html": {
+   "x": 0,
+   "y": 7464,
+   "w": 1440,
+   "h": 1548,
+   "title": "W15 Dashboard  (/dashboard)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Quizzen.dc.html": {
+   "x": 1520,
+   "y": 7464,
+   "w": 1440,
+   "h": 2021,
+   "title": "W16 Quizzen  (/quizzen)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-QuizDetail.dc.html": {
+   "x": 3040,
+   "y": 7464,
+   "w": 1440,
+   "h": 1244,
+   "title": "W17 Quiz starten  (/bijbelquiz/[slug])",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-QuizSpelen.dc.html": {
+   "x": 4560,
+   "y": 7464,
+   "w": 1440,
+   "h": 900,
+   "title": "W18 Quiz spelen  (/quiz/[id])",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Beoordeling.dc.html": {
+   "x": 6080,
+   "y": 7464,
+   "w": 1440,
+   "h": 1610,
+   "title": "W19 Resultaat en antwoorden  (/quiz/[id]/beoordeling)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Ranglijst.dc.html": {
+   "x": 0,
+   "y": 11159,
+   "w": 1440,
+   "h": 1465,
+   "title": "W21 Ranglijst  (/ranglijst)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Duels.dc.html": {
+   "x": 1520,
+   "y": 11159,
+   "w": 1440,
+   "h": 1182,
+   "title": "W22 Duels  (/duels - nieuw)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-DuelSpelen.dc.html": {
+   "x": 3040,
+   "y": 11159,
+   "w": 1440,
+   "h": 900,
+   "title": "W23 Duel spelen  (/duel/[token])",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-SamenSpelen.dc.html": {
+   "x": 4560,
+   "y": 11159,
+   "w": 1440,
+   "h": 1264,
+   "title": "W24 Samen spelen  (/samen-spelen)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-SamenLobby.dc.html": {
+   "x": 6080,
+   "y": 11159,
+   "w": 1440,
+   "h": 1155,
+   "title": "W25 Lobby  (/samen-spelen/[code]/lobby)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-SamenSpel.dc.html": {
+   "x": 7600,
+   "y": 11159,
+   "w": 1440,
+   "h": 900,
+   "title": "W26 Samen - vraag  (/samen-spelen/[code]/spel)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-SamenUitslag.dc.html": {
+   "x": 9120,
+   "y": 11159,
+   "w": 1440,
+   "h": 1280,
+   "title": "W27 Samen - uitslag  (/samen-spelen/[code]/uitslag)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-Beheer.dc.html": {
+   "x": 0,
+   "y": 13124,
+   "w": 1440,
+   "h": 2105,
+   "title": "W28 Beheer  (/beheer)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-BeheerQuizzen.dc.html": {
+   "x": 1520,
+   "y": 13124,
+   "w": 1440,
+   "h": 900,
+   "title": "W29 Beheer - quizzen  (/beheer/quizzen)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-BeheerQuizEditor.dc.html": {
+   "x": 3040,
+   "y": 13124,
+   "w": 1440,
+   "h": 1890,
+   "title": "W30 Beheer - quiz bewerken  (/beheer/quizzen/[id]/bewerken)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-BeheerStatistieken.dc.html": {
+   "x": 4560,
+   "y": 13124,
+   "w": 1440,
+   "h": 8559,
+   "title": "W31 Beheer - statistieken  (/beheer/statistieken)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-BeheerBetalingen.dc.html": {
+   "x": 6080,
+   "y": 13124,
+   "w": 1440,
+   "h": 2072,
+   "title": "W32 Beheer - betalingen  (/beheer/betalingen)",
+   "page": "web2",
+   "expand": "fill"
+  },
+  "P-BeheerFunnel.dc.html": {
+   "x": 7600,
+   "y": 13124,
+   "w": 1440,
+   "h": 2090,
+   "title": "W33 Beheer - funnel  (/beheer/funnel)",
+   "page": "web2",
+   "expand": "fill"
+  }
+ },
+ "order": [
+  "R-Home.dc.html",
+  "R-Quizzen.dc.html",
+  "R-QuizDetail.dc.html",
+  "R-Lezen.dc.html",
+  "R-Quiz.dc.html",
+  "R-Results.dc.html",
+  "R-Duels.dc.html",
+  "R-Uitdagen.dc.html",
+  "R-Duelvraag.dc.html",
+  "R-Ranglijst.dc.html",
+  "R-Profiel.dc.html",
+  "R-Instellingen.dc.html",
+  "R-Samenspelen.dc.html",
+  "R-Lobby.dc.html",
+  "R-Onboarding.dc.html",
+  "R-PaywallStart.dc.html",
+  "R-Paywall.dc.html",
+  "Main.dc.html",
+  "A-Quiz.dc.html",
+  "A-Results.dc.html",
+  "B-Home.dc.html",
+  "B-Quiz.dc.html",
+  "B-Results.dc.html",
+  "C-Home.dc.html",
+  "C-Quiz.dc.html",
+  "C-Results.dc.html",
+  "V1-Home.dc.html",
+  "V2-Home.dc.html",
+  "V3-Home.dc.html",
+  "V4-Home.dc.html",
+  "V5-Home.dc.html",
+  "V1-Quiz.dc.html",
+  "V2-Quiz.dc.html",
+  "V3-Quiz.dc.html",
+  "V4-Quiz.dc.html",
+  "V5-Quiz.dc.html",
+  "M1-Home.dc.html",
+  "M2-Home.dc.html",
+  "M3-Home.dc.html",
+  "M1-Quiz.dc.html",
+  "M2-Quiz.dc.html",
+  "M3-Quiz.dc.html",
+  "S1-Onboarding.dc.html",
+  "S1-HomeA.dc.html",
+  "S1-HomeB.dc.html",
+  "S1-Quizzen.dc.html",
+  "S1-QuizDetail.dc.html",
+  "S1-Lezen.dc.html",
+  "S2-Results.dc.html",
+  "S2-Review.dc.html",
+  "S2-Ranglijst.dc.html",
+  "S2-Profiel.dc.html",
+  "S2-Prestaties.dc.html",
+  "S2-Reeks.dc.html",
+  "S3-Duels.dc.html",
+  "S3-Uitdagen.dc.html",
+  "S3-Vraag.dc.html",
+  "S3-Categorie.dc.html",
+  "S3-Rondeuitslag.dc.html",
+  "S3-Einde.dc.html",
+  "S3-Uitnodiging.dc.html",
+  "S4-Samenspelen.dc.html",
+  "S4-Lobby.dc.html",
+  "S4-Livevraag.dc.html",
+  "S4-Paywall.dc.html",
+  "S4-Groepslicentie.dc.html",
+  "S4-Instellingen.dc.html",
+  "O1-Results-B.dc.html",
+  "O1-Results-C.dc.html",
+  "O1-Profiel-B.dc.html",
+  "O1-Profiel-C.dc.html",
+  "O1-Ranglijst-B.dc.html",
+  "O1-Ranglijst-C.dc.html",
+  "O3-Onboarding-B.dc.html",
+  "O3-Onboarding-C.dc.html",
+  "O3-Quizzen-B.dc.html",
+  "O3-Quizzen-C.dc.html",
+  "O3-QuizDetail-B.dc.html",
+  "O3-QuizDetail-C.dc.html",
+  "O2-Duels-B.dc.html",
+  "O2-Duels-C.dc.html",
+  "O2-Duelvraag-B.dc.html",
+  "O2-Duelvraag-C.dc.html",
+  "O2-Einde-B.dc.html",
+  "O2-Einde-C.dc.html",
+  "O2-Samenspelen-B.dc.html",
+  "O2-Samenspelen-C.dc.html",
+  "O2-Lobby-B.dc.html",
+  "O2-Lobby-C.dc.html",
+  "PW-Onboarding.dc.html",
+  "PW-Moment.dc.html",
+  "PW-Slot.dc.html",
+  "PW-Slot-B.dc.html",
+  "PW-Exitaanbod.dc.html",
+  "L-Logo1.dc.html",
+  "L-Logo2.dc.html",
+  "L-Logo3.dc.html",
+  "L-Logo4.dc.html",
+  "L-Icons.dc.html",
+  "L-Brandboard.dc.html",
+  "AS-01.dc.html",
+  "AS-02.dc.html",
+  "AS-03.dc.html",
+  "AS-04.dc.html",
+  "AS-05.dc.html",
+  "AS-06.dc.html",
+  "OAS-B1.dc.html",
+  "OAS-B2.dc.html",
+  "OAS-B3.dc.html",
+  "OAS-C1.dc.html",
+  "OAS-C2.dc.html",
+  "OAS-C3.dc.html",
+  "PS-Feature.dc.html",
+  "PS-Icon.dc.html",
+  "PS-01.dc.html",
+  "PS-02.dc.html",
+  "PS-03.dc.html",
+  "PS-04.dc.html",
+  "PS-05.dc.html",
+  "PS-06.dc.html",
+  "OPS-Feature-B.dc.html",
+  "OPS-Feature-C.dc.html",
+  "OPS-B1.dc.html",
+  "OPS-B2.dc.html",
+  "OPS-B3.dc.html",
+  "W-Home.dc.html",
+  "W-Quizzen.dc.html",
+  "W-Quiz.dc.html",
+  "W-Premium.dc.html",
+  "W-Samenspelen.dc.html",
+  "OW-Home-B.dc.html",
+  "OW-Home-C.dc.html",
+  "OW-Premium-B.dc.html",
+  "SO-Vraag.dc.html",
+  "SO-Antwoord.dc.html",
+  "SO-Lancering.dc.html",
+  "SO-Duel.dc.html",
+  "SO-Reeks.dc.html",
+  "OSO-Vraag-B.dc.html",
+  "OSO-Vraag-C.dc.html",
+  "OSO-Duel-B.dc.html",
+  "OE-Welkom-B.dc.html",
+  "E-Welkom.dc.html",
+  "E-Proefperiode.dc.html",
+  "E-Duel.dc.html",
+  "E-Push.dc.html",
+  "P-Landing.dc.html",
+  "P-Premium.dc.html",
+  "P-PremiumSucces.dc.html",
+  "P-Groepslicentie.dc.html",
+  "P-Hulp.dc.html",
+  "P-Contact.dc.html",
+  "P-Bijbelstudie.dc.html",
+  "P-Inloggen.dc.html",
+  "P-Registreren.dc.html",
+  "P-Profiel.dc.html",
+  "P-Instellingen.dc.html",
+  "P-AccountVerwijderen.dc.html",
+  "P-Juridisch.dc.html",
+  "P-Foutmelding.dc.html",
+  "P-Dashboard.dc.html",
+  "P-Quizzen.dc.html",
+  "P-QuizDetail.dc.html",
+  "P-QuizSpelen.dc.html",
+  "P-Beoordeling.dc.html",
+  "P-Ranglijst.dc.html",
+  "P-Duels.dc.html",
+  "P-DuelSpelen.dc.html",
+  "P-SamenSpelen.dc.html",
+  "P-SamenLobby.dc.html",
+  "P-SamenSpel.dc.html",
+  "P-SamenUitslag.dc.html",
+  "P-Beheer.dc.html",
+  "P-BeheerQuizzen.dc.html",
+  "P-BeheerQuizEditor.dc.html",
+  "P-BeheerStatistieken.dc.html",
+  "P-BeheerBetalingen.dc.html",
+  "P-BeheerFunnel.dc.html"
+ ],
+ "notes": {
+  "v2Title": {
+   "x": 0,
+   "y": -300,
+   "text": "Versie 2 - rustig, professioneel, geen reis-thema",
+   "kind": "title1",
+   "maxW": 7910,
+   "page": "v2"
+  },
+  "titleA": {
+   "x": 0,
+   "y": -300,
+   "text": "A - Editorial Plus: today's look, made lively",
+   "kind": "title1",
+   "maxW": 1330,
+   "page": "directions"
+  },
+  "titleB": {
+   "x": 0,
+   "y": 1000,
+   "text": "B - Arcade: bold, playful, game-first",
+   "kind": "title1",
+   "maxW": 1330,
+   "page": "directions"
+  },
+  "titleC": {
+   "x": 0,
+   "y": 2300,
+   "text": "C - Night Scroll: dark, gold, epic",
+   "kind": "title1",
+   "maxW": 1330,
+   "page": "directions"
+  },
+  "arcadeTitle": {
+   "x": 0,
+   "y": -560,
+   "text": "Arcade - 5 variants",
+   "kind": "title1",
+   "maxW": 2270,
+   "page": "arcade"
+  },
+  "v1": {
+   "x": 0,
+   "y": -300,
+   "text": "1 Brand Arcade",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "arcade"
+  },
+  "v2": {
+   "x": 470,
+   "y": -300,
+   "text": "2 Bijbelreis",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "arcade"
+  },
+  "v3": {
+   "x": 940,
+   "y": -300,
+   "text": "3 Glas-in-lood",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "arcade"
+  },
+  "v4": {
+   "x": 1410,
+   "y": -300,
+   "text": "4 De Ark",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "arcade"
+  },
+  "v5": {
+   "x": 1880,
+   "y": -300,
+   "text": "5 Arena",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "arcade"
+  },
+  "mixTitle": {
+   "x": 0,
+   "y": -560,
+   "text": "Brand Arcade x Bijbelreis",
+   "kind": "title1",
+   "maxW": 1330,
+   "page": "mix"
+  },
+  "m1": {
+   "x": 0,
+   "y": -300,
+   "text": "Mix 1 - Route",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "mix"
+  },
+  "m2": {
+   "x": 470,
+   "y": -300,
+   "text": "Mix 2 - Per boek",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "mix"
+  },
+  "m3": {
+   "x": 940,
+   "y": -300,
+   "text": "Mix 3 - Kaart",
+   "kind": "title1",
+   "maxW": 390,
+   "page": "mix"
+  },
+  "appS1": {
+   "x": 0,
+   "y": -300,
+   "text": "Start, Home en quizzen",
+   "kind": "title1",
+   "maxW": 2740,
+   "page": "app"
+  },
+  "appS2": {
+   "x": 0,
+   "y": 944,
+   "text": "Resultaat en voortgang",
+   "kind": "title1",
+   "maxW": 2740,
+   "page": "app"
+  },
+  "appS3": {
+   "x": 0,
+   "y": 2188,
+   "text": "Duels",
+   "kind": "title1",
+   "maxW": 3210,
+   "page": "app"
+  },
+  "appS4": {
+   "x": 0,
+   "y": 3432,
+   "text": "Samen spelen, Premium en instellingen",
+   "kind": "title1",
+   "maxW": 2740,
+   "page": "app"
+  },
+  "optResults": {
+   "x": 0,
+   "y": -300,
+   "text": "Resultaat B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optProfiel": {
+   "x": 1100,
+   "y": -300,
+   "text": "Profiel B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optRanglijst": {
+   "x": 2200,
+   "y": -300,
+   "text": "Ranglijst B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optWelkom": {
+   "x": 0,
+   "y": 944,
+   "text": "Welkom B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optQuizzen": {
+   "x": 1100,
+   "y": 944,
+   "text": "Quizzen B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optDetail": {
+   "x": 2200,
+   "y": 944,
+   "text": "Quiz starten B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optDuels": {
+   "x": 0,
+   "y": 2188,
+   "text": "Duels B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optDuelvraag": {
+   "x": 1100,
+   "y": 2188,
+   "text": "Duelvraag B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optEinde": {
+   "x": 2200,
+   "y": 2188,
+   "text": "Duel gewonnen B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optSamen": {
+   "x": 0,
+   "y": 3432,
+   "text": "Samen spelen B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "optLobby": {
+   "x": 1100,
+   "y": 3432,
+   "text": "Lobby B / C",
+   "kind": "title1",
+   "maxW": 860,
+   "page": "appopt"
+  },
+  "pwTitle": {
+   "x": 0,
+   "y": -300,
+   "text": "Paywall-flow: onboarding, moment, slot, exitaanbod",
+   "kind": "title1",
+   "maxW": 2270,
+   "page": "paywall"
+  },
+  "pwNote": {
+   "x": 2350,
+   "y": 0,
+   "text": "Flow: dag 0 onboarding-paywall (overslaan = 3 gratis quizzen) -> na de 3e quiz een zachte vraag (Later) -> bij een nieuwe solo-quiz het slot met 'Niet nu' -> wie sluit zonder te kopen krijgt 1 keer het exitaanbod. Proefperiode 7 dagen, herinnering op dag 5. Uitgenodigde duels en bijbellezen blijven gratis.",
+   "w": 420,
+   "size": "m",
+   "fill": "orange",
+   "page": "paywall"
+  },
+  "brandTitle": {
+   "x": 0,
+   "y": -300,
+   "text": "Logo - 4 concepten, app-iconen en merkbord",
+   "kind": "title1",
+   "maxW": 2720,
+   "page": "brand"
+  },
+  "asTitle": {
+   "x": 0,
+   "y": -300,
+   "text": "App Store - stijl A: 6 screenshots (1290 x 2796)",
+   "kind": "title1",
+   "maxW": 8140,
+   "page": "appstore"
+  },
+  "asOptB": {
+   "x": 0,
+   "y": 3020,
+   "text": "Stijl B - panorama: 1 doorlopende achtergrond over screenshot 1-3",
+   "kind": "title1",
+   "maxW": 3870,
+   "page": "appstore"
+  },
+  "asOptC": {
+   "x": 0,
+   "y": 6320,
+   "text": "Stijl C - grote UI zonder telefoonframe",
+   "kind": "title1",
+   "maxW": 4030,
+   "page": "appstore"
+  },
+  "psTitle": {
+   "x": 0,
+   "y": -300,
+   "text": "Play Store - A: feature graphic, icoon en 6 screenshots",
+   "kind": "title1",
+   "maxW": 6880,
+   "page": "playstore"
+  },
+  "psOptTitle": {
+   "x": 0,
+   "y": 2800,
+   "text": "Opties: feature graphic B en C, screenshots stijl B (kaartstapel)",
+   "kind": "title1",
+   "maxW": 3400,
+   "page": "playstore"
+  },
+  "webTitle": {
+   "x": 0,
+   "y": -300,
+   "text": "Website bijbelquiz.com",
+   "kind": "title1",
+   "maxW": 7520,
+   "page": "website"
+  },
+  "webOpt": {
+   "x": 0,
+   "y": 6040,
+   "text": "Opties: Home B en C, Premium B",
+   "kind": "title1",
+   "maxW": 4480,
+   "page": "website"
+  },
+  "socialTitle": {
+   "x": 0,
+   "y": -400,
+   "text": "Social - Instagram en TikTok templates",
+   "kind": "title1",
+   "maxW": 5720,
+   "page": "social"
+  },
+  "emailTitle": {
+   "x": 0,
+   "y": -300,
+   "text": "E-mails en pushmeldingen",
+   "kind": "title1",
+   "maxW": 3240,
+   "page": "email"
+  },
+  "emailOpt": {
+   "x": 0,
+   "y": 1540,
+   "text": "Optie: welkomstmail B",
+   "kind": "title1",
+   "maxW": 1280,
+   "page": "email"
+  },
+  "socialOpt": {
+   "x": 0,
+   "y": 2140,
+   "text": "Opties: vraagpost B en C, duelstory B",
+   "kind": "title1",
+   "maxW": 4560,
+   "page": "social"
+  },
+  "web2_Marketing": {
+   "x": 0,
+   "y": -220,
+   "text": "Marketing",
+   "kind": "title1",
+   "maxW": 4000,
+   "page": "web2"
+  },
+  "web2_Account": {
+   "x": 0,
+   "y": 4472,
+   "text": "Account",
+   "kind": "title1",
+   "maxW": 4000,
+   "page": "web2"
+  },
+  "web2_Quizzen": {
+   "x": 0,
+   "y": 7244,
+   "text": "Quizzen",
+   "kind": "title1",
+   "maxW": 4000,
+   "page": "web2"
+  },
+  "web2_Samen": {
+   "x": 0,
+   "y": 10939,
+   "text": "Samen",
+   "kind": "title1",
+   "maxW": 4000,
+   "page": "web2"
+  },
+  "web2_Beheer": {
+   "x": 0,
+   "y": 12904,
+   "text": "Beheer",
+   "kind": "title1",
+   "maxW": 4000,
+   "page": "web2"
+  }
+ },
+ "designSystems": []
+}
