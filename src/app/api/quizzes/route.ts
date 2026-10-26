@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, Quiz } from '@/database';
-import { resolveQuizImageUrl } from '@/lib/quiz-image';
+import { quizThumbnailUrl, resolveQuizImageUrl } from '@/lib/quiz-image';
 
 interface IncomingAnswer {
   text?: unknown;
@@ -65,7 +65,7 @@ export async function GET() {
     // stable id-derived fallback so the app never renders a blank card.
     const withImages = quizzes.map((quiz) => {
       const imageUrl = resolveQuizImageUrl(quiz);
-      return { ...quiz, imageUrl, image: imageUrl };
+      return { ...quiz, imageUrl, image: imageUrl, thumbnailUrl: quizThumbnailUrl(imageUrl) };
     });
     return NextResponse.json(withImages);
   } catch (error) {

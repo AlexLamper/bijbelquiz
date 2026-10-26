@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import { QUIZ_COVER_SLUGS, coverForSlug } from '@/lib/quiz-covers.generated';
-import { resolveQuizImageUrl } from '@/lib/quiz-image';
+import { quizThumbnailUrl, resolveQuizImageUrl } from '@/lib/quiz-image';
 
 const root = process.cwd();
 const coverDir = path.join(root, 'public/images/quizzes');
@@ -89,4 +89,42 @@ test("a quiz's own imageUrl still wins over the drawn cover", () => {
 test('an unknown slug falls through to the id-derived rotation', () => {
   const url = resolveQuizImageUrl({ _id: 'zzz', slug: 'bestaat-niet' });
   assert.match(url, /^\/images\/quizzes\/img\d+\.png$/);
+});
+
+test('a numbered placeholder in the database gives way to the drawn cover', () => {
+  assert.equal(
+    resolveQuizImageUrl({
+      _id: 'abc',
+      slug: 'jesaja-bijbelquiz-deel-12',
+      imageUrl: '/images/quizzes/img4.png',
+    }),
+    '/images/quizzes/jesaja-bijbelquiz-deel-12.png',
+  );
+});
+
+test('a placeholder stays when the quiz has no drawn cover', () => {
+  assert.equal(
+    resolveQuizImageUrl({ _id: 'abc', slug: 'bestaat-niet', imageUrl: '/images/quizzes/img4.png' }),
+    '/images/quizzes/img4.png',
+  );
+});
+
+test('every cover has a thumbnail on disk', () => {
+  const missing = [...QUIZ_COVER_SLUGS].filter(
+    (slug) => !fs.existsSync(path.join(coverDir, 'thumbs', `${slug}.webp`)),
+  );
+  assert.deepEqual(
+    missing,
+    [],
+    `run scripts/generate-quiz-thumbnails.py - no thumbnail for: ${missing.join(', ')}`,
+  );
+});
+
+test('thumbnail paths follow the cover path, and only for local covers', () => {
+  assert.equal(
+    quizThumbnailUrl('/images/quizzes/jesaja-bijbelquiz-deel-3.png'),
+    '/images/quizzes/thumbs/jesaja-bijbelquiz-deel-3.webp',
+  );
+  assert.equal(quizThumbnailUrl('https://example.com/cover.png'), null);
+  assert.equal(quizThumbnailUrl(''), null);
 });

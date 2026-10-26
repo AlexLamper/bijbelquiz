@@ -91,9 +91,14 @@ export function resolveQuizImageUrl(quiz: unknown): string {
   };
 
   const explicit = normalize(String(q.imageUrl ?? q.image ?? ''));
-  if (explicit) return explicit;
-
   const drawn = coverForSlug(typeof q.slug === 'string' ? q.slug : null);
+
+  // A numbered placeholder (img1..img12) is what quizzes were given before
+  // their own cover was drawn, and plenty of documents still point at one.
+  // The drawn cover is the newer, better answer, so it replaces a placeholder -
+  // but never an image somebody chose on purpose.
+  if (explicit && !(drawn && KNOWN_QUIZ_IMAGE.test(explicit))) return explicit;
+
   if (drawn) return drawn;
 
   const category = normalize(String(q.categoryImageUrl ?? ''));
@@ -127,4 +132,15 @@ export function normalizeQuizImagePath(value?: string): string {
   if (numbered && Number(numbered[1]) > QUIZ_IMAGE_COUNT) return DEFAULT_QUIZ_IMAGE;
 
   return `${QUIZ_IMAGE_DIR}${fileName}`;
+}
+
+/**
+ * Small WebP version of a cover, for lists. `scripts/generate-quiz-thumbnails.py`
+ * writes one next to every PNG in the quizzes folder; anything else (an
+ * external URL, a path outside that folder) has no thumbnail and gets null, so
+ * the client keeps using the original.
+ */
+export function quizThumbnailUrl(imageUrl: string | null | undefined): string | null {
+  const match = String(imageUrl ?? '').match(/^\/images\/quizzes\/([a-z0-9][a-z0-9._-]*)\.png$/i);
+  return match ? `${QUIZ_IMAGE_DIR}thumbs/${match[1]}.webp` : null;
 }

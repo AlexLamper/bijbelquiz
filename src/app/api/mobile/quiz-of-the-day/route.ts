@@ -11,7 +11,7 @@
 
 import { NextResponse } from 'next/server';
 import { connectDB, Quiz, Category } from '@/database';
-import { resolveQuizImageUrl } from '@/lib/quiz-image';
+import { quizThumbnailUrl, resolveQuizImageUrl } from '@/lib/quiz-image';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { dayNumber, quizOfTheDayIndex } from '@/lib/quiz-of-the-day';
 
@@ -83,12 +83,14 @@ export async function GET() {
     const category: any = categoryRef ? await Category.findById(categoryRef).lean() : null;
     const questions: any[] = quiz.questions || [];
 
+    const imageUrl = resolveQuizImageUrl(quiz);
     const body = {
       id: quiz._id.toString(),
       title: quiz.title,
       slug: quiz.slug,
       description: quiz.description || '',
-      imageUrl: resolveQuizImageUrl(quiz),
+      imageUrl,
+      thumbnailUrl: quizThumbnailUrl(imageUrl),
       xpReward: quiz.rewardXp ?? 50,
       difficulty: quiz.difficulty || 'medium',
       categoryId: quiz.categoryId?.toString() || null,
