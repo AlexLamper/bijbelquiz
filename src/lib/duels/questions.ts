@@ -154,12 +154,12 @@ async function bookTopics(limit: number): Promise<TopicSeed[]> {
   ]);
 
   return rows
-    .map((row) => {
+    .map((row): TopicSeed | null => {
       const book = bookByCode(row._id);
       if (!book) return null;
       return {
         topic: book.title,
-        topicKind: 'book' as const,
+        topicKind: 'book',
         topicKey: book.code,
         quizMatch: { 'questions.refBook': row._id },
         questionMatch: { 'question.refBook': row._id },
@@ -185,12 +185,12 @@ async function categoryTopics(limit: number): Promise<TopicSeed[]> {
   const titles = new Map(categories.map((category) => [String(category._id), category.title]));
 
   return rows
-    .map((row) => {
+    .map((row): TopicSeed | null => {
       const title = titles.get(String(row._id));
       if (!title) return null;
       return {
         topic: title,
-        topicKind: 'category' as const,
+        topicKind: 'category',
         topicKey: String(row._id),
         // `categoryId` lives on the quiz, not on the question.
         quizMatch: { categoryId: row._id },
