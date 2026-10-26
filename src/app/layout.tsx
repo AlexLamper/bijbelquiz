@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import AppShell from "@/components/AppShell";
+import { SiteShell } from "@/components/bq/SiteShell";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Analytics } from "@vercel/analytics/next";
 
-const inter = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
+// The two faces of the 2.0 design: Nunito for all UI text, Fredoka 600 for
+// titles. `globals.css` maps them onto `font-sans` and `font-display`.
+const nunito = Nunito({
+  variable: "--font-nunito",
+  weight: ["500", "600", "700", "800"],
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
 });
 
-// Editorial display face for the "Ink & Paper" design language. It owns
-// `--font-serif`, so every heading and `font-serif` usage in the app adopts it.
-const newsreader = Newsreader({
-  variable: "--font-serif",
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
+  weight: ["500", "600"],
+  subsets: ["latin", "latin-ext"],
   display: "swap",
 });
 
@@ -143,7 +144,7 @@ export default function RootLayout({
           />
       </head>
       <body
-        className={`${inter.variable} ${newsreader.variable} font-sans antialiased bg-background text-foreground`}
+        className={`${nunito.variable} ${fredoka.variable} font-sans antialiased bg-canvas text-ink`}
       >
         <GoogleAnalytics />
         <ThemeProvider
@@ -153,7 +154,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
           <Providers>
-            <AppShell>{children}</AppShell>
+            <SiteShell>{children}</SiteShell>
           </Providers>
         </ThemeProvider>
         <Analytics />

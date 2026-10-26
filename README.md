@@ -32,6 +32,21 @@ Premium is er per maand, per jaar of levenslang. Voor gemeenten, scholen en jeug
 
 Een aankoop geldt overal. Koop je in de app, dan is Premium ook op de website actief, en andersom.
 
+## Lokaal ontwikkelen
+
+Eenmalig: `npm install` en daarna `npm run dev:setup`. Dat maakt `.env.local` aan (uit `scripts/dev/env.local.example`, zonder echte geheimen), start een lokale MongoDB en vult die met testdata.
+
+| Commando | Doet |
+|---|---|
+| `npm run dev:db` / `npm run dev:db:stop` | lokale MongoDB starten/stoppen (`scripts/dev/mongod.sh`, data in `.local/mongo`, poort 27027) |
+| `npm run dev:seed` (`-- --reset` wist eerst alles) | testaccounts, quizzen over meerdere bijbelboeken, gespeelde pogingen voor de ranglijst, een groep en een duel |
+| `npm run dev` | de site op http://localhost:3000 |
+| `npm run dev:shot -- /dashboard --login alex@voorbeeld.nl` | schermafbeeldingen op 1440 en 390 breed in `.local/screenshots`, om naast `docs/web-2/screenshots` te leggen (`--dark`, `--out`, `--name`, `--base`) |
+
+Testaccounts (wachtwoord overal `test1234`): `alex@voorbeeld.nl` (gratis, met voortgang en een duel), `beheer@voorbeeld.nl` (beheerder), `lotte@voorbeeld.nl` (Premium via Stripe), `sanne@voorbeeld.nl` (levenslang Premium), `daan@`, `jonas@`, `noor@`, `ruben@voorbeeld.nl` (spelers op de ranglijst), `nieuw@voorbeeld.nl` (nooit gespeeld).
+
+De gedeelde componenten van het ontwerp 2.0 staan in `src/components/bq/` en zijn allemaal te zien op http://localhost:3000/dev/ui (alleen buiten productie). Kleuren en lettertypen staan in `src/app/globals.css`.
+
 ---
 
 **Contact:** [info@bijbelquiz.com](mailto:info@bijbelquiz.com)

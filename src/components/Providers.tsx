@@ -2,7 +2,7 @@
 'use client';
 
 import { SessionProvider } from 'next-auth/react';
-import { Toaster } from 'sonner';
+import { Toaster } from '@/components/bq/Toast';
 
 import AnalyticsTracker from '@/components/analytics/AnalyticsTracker';
 import PendingAttemptSync from '@/components/PendingAttemptSync';
@@ -20,7 +20,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
             moment one appears, wherever the sign-in happened. */}
         <PendingAttemptSync />
         {children}
-        <Toaster position="top-center" richColors />
+        <Toaster />
     </SessionProvider>
   );
 }

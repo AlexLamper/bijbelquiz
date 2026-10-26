@@ -4,159 +4,283 @@
    paths like `\49513071-...`, which the scanner reads as a CSS escape and crashes
    the build with "Invalid code point". Markdown never holds class names. */
 @source not "../../**/*.md";
+/* The approved static designs are not part of the app and hold thousands of
+   inline styles; scanning them only slows the dev server down. */
+@source not "../../docs/**/*";
 
 @custom-variant dark (&:is(.dark *));
 
 /* Smooth scrolling is opt-in, never global. On `html` it also applies to the
    scroll-to-top the router performs on every navigation, which turns an instant
-   jump into an animation that content streaming in can interrupt - the reason a
-   freshly opened page could appear already scrolled halfway down. Anything that
+   jump into an animation that content streaming in can interrupt. Anything that
    wants an animated in-page jump asks for it with this class. */
 .scroll-smooth-region {
   scroll-behavior: smooth;
 }
 
+/* ---------------------------------------------------------------------------
+   BijbelQuiz 2.0 design tokens
+   Source of truth: docs/web-2/designs (1 CSS px = 1 px on the site).
+   Background #ECEAE4, white cards with a 1px #DEDBD3 line and radius 16,
+   lapis as the brand colour, gold / coral / green only as small touches.
+   Every value is exposed to Tailwind under `@theme inline` below, so pages use
+   classes such as `bg-canvas`, `text-ink-muted`, `border-line`, `bg-lapis`
+   and never a hard-coded hex.
+   --------------------------------------------------------------------------- */
 :root {
-  /* --- "Ink & Paper" editorial design language -------------------------------
-     Warm paper grounds, near-black ink, hairline rules instead of shadows, and a
-     single restrained lapis accent. Namespaced so it can be adopted screen by
-     screen without touching the legacy tokens above. */
-  --paper: #faf9f6;
-  --paper-raised: #ffffff;
-  --paper-sunken: #f1efe9;
+  /* Surfaces */
+  --canvas: #ECEAE4;
+  --card: #FFFFFF;
+  --line: #DEDBD3;
+  --line-soft: #EEECE7;
+  --chip: #F1EFEA;
+  --segment: #E0DDD5;
+  --track: #D9D6CE;
+  --track-soft: #E6E4DF;
+  --input-line: #BDB9B0;
+  --edge: #CFCBC1;
 
-  --ink: #1b1a18;
-  --ink-soft: #45433e;
-  --ink-muted: #6f6c64;
-  --ink-inverted: #faf9f6;
+  /* Text */
+  --ink: #1B1A18;
+  --ink-soft: #45433E;
+  --ink-body: #3E3C37;
+  --ink-muted: #6B6860;
+  --ink-faint: #8A877F;
+  --ink-inverted: #FFFFFF;
 
-  --rule: #e6e3db;
-  --rule-strong: #d3cfc4;
+  /* Lapis (brand) */
+  --lapis: #35548C;
+  --lapis-edge: #263E69;
+  --lapis-soft: #4A679D;
+  --lapis-tint: #EAEEF7;
+  --lapis-wash: #DFE5F2;
+  --lapis-text: #4F5F82;
+  --lapis-pale: #C9D4EC;
+  --lapis-pale-strong: #DCE3F1;
 
-  /* Illuminated-manuscript pigments. Plum is the system accent (marks, premium);
-     lapis / vermilion / verdigris are categorical - they classify, never decorate. */
+  /* Gold */
+  --gold: #E9B12E;
+  --gold-edge: #B9881C;
+  --gold-tint: #FBF1D6;
+  --gold-wash: #F3D27A;
+  --gold-text: #8A6410;
+  --gold-ink: #3D2C05;
 
-  --lapis: #35548c;
-  --lapis-strong: #2a4373;
-  --lapis-tint: #eaeef7;
+  /* Coral */
+  --coral: #D9734F;
+  --coral-strong: #B4502B;
+  --coral-edge: #84391D;
+  --coral-tint: #F8ECE6;
+  --coral-text: #A04A2F;
+  --coral-line: #E3B9A8;
 
-  --vermilion: #a04a2f;
-  --vermilion-strong: #883b23;
-  --vermilion-tint: #f8ece6;
+  /* Green */
+  --green: #3F6B4F;
+  --green-edge: #2C4D38;
+  --green-tint: #E9F0EA;
+  --green-text: #2E5A3E;
 
-  --positive: #3f6b4f;
-  --positive-tint: #e9f0ea;
+  /* Podium */
+  --silver: #A9AFBB;
+  --silver-tint: #D5D9E1;
+  --silver-text: #5C6370;
+  --bronze: #C98A5A;
+  --bronze-tint: #E6C9B1;
+  --bronze-text: #8A5530;
 
-  /* Chart series.
-     Deliberately not `--lapis` and `--vermilion`. Those are chosen to sit
-     quietly inside a page of text; as adjacent fills in a chart they fall
-     under the chroma floor and read as two greys. These are the nearest steps
-     that clear the colour-vision separation checks against the paper ground,
-     so a reader with protanopia can still tell the two series apart. Dark mode
-     re-picks them against its own ground rather than lightening these.
-     `--chart-grid` is the recessive rule a plot is drawn over. */
-  --chart-1: #2f62c4;
-  --chart-2: #b0532c;
-  --chart-grid: #e6e3db;
+  /* Charts */
+  --chart-1: #35548C;
+  --chart-2: #D9734F;
+  --chart-3: #E9B12E;
+  --chart-4: #3F6B4F;
+  --chart-grid: #EEECE7;
 
-  /* Legacy shadcn tokens, retargeted onto Ink & Paper so every existing
-     component inherits the language without being rewritten. */
-  --background: var(--paper);
+  --shadow-float: 0 10px 24px rgba(27, 26, 24, 0.10);
+  --shadow-card: 0 1px 2px rgba(27, 26, 24, 0.06);
+
+  --radius: 16px;
+
+  /* Legacy "Ink & Paper" names, kept so pages that are not rebuilt yet still
+     render in the new palette. New code uses the tokens above. */
+  --paper: var(--canvas);
+  --paper-raised: var(--card);
+  --paper-sunken: var(--chip);
+  --rule: var(--line);
+  --rule-strong: var(--input-line);
+  --lapis-strong: var(--lapis-edge);
+  --vermilion: var(--coral-text);
+  --vermilion-strong: var(--coral-strong);
+  --vermilion-tint: var(--coral-tint);
+  --positive: var(--green);
+  --positive-tint: var(--green-tint);
+
+  /* shadcn-style tokens used by src/components/ui */
+  --background: var(--canvas);
   --foreground: var(--ink);
-
-  --card: var(--paper-raised);
   --card-foreground: var(--ink);
-
-  --popover: var(--paper-raised);
+  --popover: var(--card);
   --popover-foreground: var(--ink);
-
-  --primary: var(--ink);
+  --primary: var(--lapis);
   --primary-foreground: var(--ink-inverted);
-
-  --secondary: var(--paper-sunken);
+  --secondary: var(--chip);
   --secondary-foreground: var(--ink);
-
-  --muted: var(--paper-sunken);
+  --muted: var(--chip);
   --muted-foreground: var(--ink-muted);
-
-  --accent: var(--paper-sunken);
-  --accent-foreground: var(--ink);
-
-  --destructive: #9b3b26;
+  --accent: var(--lapis-tint);
+  --accent-foreground: var(--lapis);
+  --destructive: var(--coral-strong);
   --destructive-foreground: var(--ink-inverted);
-
-  --border: var(--rule);
-  --input: var(--rule);
+  --border: var(--line);
+  --input: var(--input-line);
   --ring: var(--lapis);
-
-  --radius: 0.5rem;
 }
 
 .dark {
-  /* --- "Ink & Paper" - dark ------------------------------------------------ */
-  --paper: #0d0d0c;
-  --paper-raised: #161513;
-  --paper-sunken: #1d1c19;
+  --canvas: #15151A;
+  --card: #1F1F26;
+  --line: #33333D;
+  --line-soft: #2B2B33;
+  --chip: #2A2A32;
+  --segment: #2E2E37;
+  --track: #3A3A45;
+  --track-soft: #343440;
+  --input-line: #4A4A56;
+  --edge: #121216;
 
-  --ink: #f4f2ec;
-  --ink-soft: #cbc7bd;
-  --ink-muted: #918d83;
-  --ink-inverted: #131211;
+  --ink: #F2F1EC;
+  --ink-soft: #CFCDC5;
+  --ink-body: #D8D6CF;
+  --ink-muted: #9D9B94;
+  --ink-faint: #7B7972;
+  --ink-inverted: #FFFFFF;
 
-  --rule: #2a2925;
-  --rule-strong: #3d3b35;
+  --lapis: #4A679D;
+  --lapis-edge: #35548C;
+  --lapis-soft: #5B78AE;
+  --lapis-tint: #262D40;
+  --lapis-wash: #2B3449;
+  --lapis-text: #A9BBE0;
+  --lapis-pale: #C9D4EC;
+  --lapis-pale-strong: #DCE3F1;
 
+  --gold: #E9B12E;
+  --gold-edge: #B9881C;
+  --gold-tint: #3A3120;
+  --gold-wash: #4A3E22;
+  --gold-text: #F0CB6A;
+  --gold-ink: #3D2C05;
 
-  --lapis: #8aa6d9;
-  --lapis-strong: #a4bbe6;
-  --lapis-tint: #141a28;
+  --coral: #D9734F;
+  --coral-strong: #B4502B;
+  --coral-edge: #84391D;
+  --coral-tint: #3B2A24;
+  --coral-text: #E79B7D;
+  --coral-line: #5A3A2E;
 
-  --vermilion: #d98b6a;
-  --vermilion-strong: #e7a488;
-  --vermilion-tint: #271811;
+  --green: #3F6B4F;
+  --green-edge: #2C4D38;
+  --green-tint: #233328;
+  --green-text: #8CC19D;
 
-  --positive: #7fb08d;
-  --positive-tint: #17251b;
+  --silver: #8E95A3;
+  --silver-tint: #3A3E48;
+  --silver-text: #C4C9D3;
+  --bronze: #B07748;
+  --bronze-tint: #4A3828;
+  --bronze-text: #DDB48E;
 
-  /* Re-picked against the dark ground, not lightened from the light steps: the
-     lightness band that keeps two fills separable is a different one here. */
-  --chart-1: #5f93ef;
-  --chart-2: #cc7b30;
-  --chart-grid: #2a2925;
+  --chart-1: #7A98D6;
+  --chart-2: #E08D6B;
+  --chart-3: #E9B12E;
+  --chart-4: #7FB08D;
+  --chart-grid: #2B2B33;
 
-  --background: var(--paper);
-  --foreground: var(--ink);
-
-  --card: var(--paper-raised);
-  --card-foreground: var(--ink);
-
-  --popover: var(--paper-raised);
-  --popover-foreground: var(--ink);
-
-  --primary: var(--ink);
-  --primary-foreground: var(--ink-inverted);
-
-  --secondary: var(--paper-sunken);
-  --secondary-foreground: var(--ink);
-
-  --muted: var(--paper-sunken);
-  --muted-foreground: var(--ink-muted);
-
-  --accent: var(--paper-sunken);
-  --accent-foreground: var(--ink);
-
-  --destructive: #c2604a;
-  --destructive-foreground: var(--ink-inverted);
-
-  --border: var(--rule);
-  --input: var(--rule);
-  --ring: var(--lapis);
+  --shadow-float: 0 10px 24px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 @theme inline {
+  /* Fonts: Fredoka 600 for titles, Nunito for everything else (next/font). */
+  --font-sans: var(--font-nunito), Nunito, system-ui, sans-serif;
+  --font-display: var(--font-fredoka), Fredoka, var(--font-nunito), Nunito, sans-serif;
+  --font-serif: var(--font-display);
+
+  --color-canvas: var(--canvas);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-chip: var(--chip);
+  --color-segment: var(--segment);
+  --color-track: var(--track);
+  --color-track-soft: var(--track-soft);
+  --color-input-line: var(--input-line);
+  --color-edge: var(--edge);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-body: var(--ink-body);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-ink-inverted: var(--ink-inverted);
+
+  --color-lapis: var(--lapis);
+  --color-lapis-edge: var(--lapis-edge);
+  --color-lapis-soft: var(--lapis-soft);
+  --color-lapis-tint: var(--lapis-tint);
+  --color-lapis-wash: var(--lapis-wash);
+  --color-lapis-text: var(--lapis-text);
+  --color-lapis-pale: var(--lapis-pale);
+  --color-lapis-pale-strong: var(--lapis-pale-strong);
+
+  --color-gold: var(--gold);
+  --color-gold-edge: var(--gold-edge);
+  --color-gold-tint: var(--gold-tint);
+  --color-gold-wash: var(--gold-wash);
+  --color-gold-text: var(--gold-text);
+  --color-gold-ink: var(--gold-ink);
+
+  --color-coral: var(--coral);
+  --color-coral-strong: var(--coral-strong);
+  --color-coral-edge: var(--coral-edge);
+  --color-coral-tint: var(--coral-tint);
+  --color-coral-text: var(--coral-text);
+  --color-coral-line: var(--coral-line);
+
+  --color-green: var(--green);
+  --color-green-edge: var(--green-edge);
+  --color-green-tint: var(--green-tint);
+  --color-green-text: var(--green-text);
+
+  --color-silver: var(--silver);
+  --color-silver-tint: var(--silver-tint);
+  --color-silver-text: var(--silver-text);
+  --color-bronze: var(--bronze);
+  --color-bronze-tint: var(--bronze-tint);
+  --color-bronze-text: var(--bronze-text);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-grid: var(--chart-grid);
+
+  --shadow-float: var(--shadow-float);
+  --shadow-card: var(--shadow-card);
+
+  /* Legacy names (Ink & Paper + shadcn) so untouched pages keep compiling. */
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-paper-sunken: var(--paper-sunken);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-lapis-strong: var(--lapis-strong);
+  --color-vermilion: var(--vermilion);
+  --color-vermilion-strong: var(--vermilion-strong);
+  --color-vermilion-tint: var(--vermilion-tint);
+  --color-positive: var(--positive);
+  --color-positive-tint: var(--positive-tint);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
@@ -174,46 +298,32 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
 
-  /* "Ink & Paper" utilities: bg-paper, text-ink, border-rule, text-lapis, … */
-  --color-paper: var(--paper);
-  --color-paper-raised: var(--paper-raised);
-  --color-paper-sunken: var(--paper-sunken);
-  --color-ink: var(--ink);
-  --color-ink-soft: var(--ink-soft);
-  --color-ink-muted: var(--ink-muted);
-  --color-ink-inverted: var(--ink-inverted);
-  --color-rule: var(--rule);
-  --color-rule-strong: var(--rule-strong);
-  --color-lapis: var(--lapis);
-  --color-lapis-strong: var(--lapis-strong);
-  --color-lapis-tint: var(--lapis-tint);
-  --color-vermilion: var(--vermilion);
-  --color-vermilion-strong: var(--vermilion-strong);
-  --color-vermilion-tint: var(--vermilion-tint);
-  --color-positive: var(--positive);
-  --color-positive-tint: var(--positive-tint);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-grid: var(--chart-grid);
-
-  --font-display: var(--font-serif), Georgia, "Times New Roman", serif;
+  /* The phone breakpoint of the designs: `@media (max-width: 700px)`.
+     `max-m:` applies below it, `m:` from 701px up. */
+  --breakpoint-m: 701px;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-line outline-lapis/50;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
-    @apply min-h-screen bg-background text-foreground font-sans antialiased;
+    @apply min-h-screen bg-canvas text-ink font-sans antialiased;
+    font-weight: 600;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-normal tracking-[-0.015em] text-ink;
+  h1, h2, h3, h4 {
+    @apply font-display font-semibold text-ink;
   }
 
   button, [role="button"] {
@@ -221,81 +331,76 @@
   }
 
   a, button {
-    @apply transition-colors duration-200;
+    @apply transition-colors duration-150;
+  }
+
+  a {
+    @apply text-lapis;
+  }
+  a:hover {
+    @apply text-lapis-edge;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-lapis;
+  }
+
+  /* Native disclosure markers are drawn by the Disclosure component itself. */
+  summary {
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
   }
 }
 
-@keyframes section-fade-in {
+@layer utilities {
+  /* The 3px darker bottom edge every button in the design has. */
+  .edge-b {
+    border-bottom-width: 3px;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes bq-fade-up {
   from {
     opacity: 0;
-    transform: translate3d(0, 24px, 0);
-    filter: blur(2px);
+    transform: translate3d(0, 8px, 0);
   }
-
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-    filter: blur(0);
   }
 }
 
-@keyframes hero-image-fade-in {
+@keyframes bq-sheet-in {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bq-fade-in {
   from {
     opacity: 0;
-    transform: translate3d(24px, 16px, 0) scale(0.98);
   }
-
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  main section {
-    opacity: 0;
-    animation: section-fade-in 700ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    will-change: opacity, transform, filter;
+  .animate-fade-up {
+    animation: bq-fade-up 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
   }
-
-  main section:nth-of-type(1) {
-    animation-delay: 0ms;
+  .animate-sheet-in {
+    animation: bq-sheet-in 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
   }
-
-  main section:nth-of-type(2) {
-    animation-delay: 80ms;
-  }
-
-  main section:nth-of-type(3) {
-    animation-delay: 160ms;
-  }
-
-  main section:nth-of-type(4) {
-    animation-delay: 240ms;
-  }
-
-  main section:nth-of-type(5) {
-    animation-delay: 320ms;
-  }
-
-  main section:nth-of-type(6) {
-    animation-delay: 400ms;
-  }
-
-  .landing-hero-image {
-    opacity: 0;
-    animation: hero-image-fade-in 900ms cubic-bezier(0.22, 1, 0.36, 1) 240ms forwards;
-    will-change: opacity, transform;
+  .animate-fade-in {
+    animation: bq-fade-in 180ms ease-out both;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  main section,
-  .landing-hero-image {
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    animation: none !important;
-  }
-}
-
