@@ -30,6 +30,38 @@ export interface IUser extends Document {
    * job because it is a date comparison.
    */
   groupPremiumUntil?: Date | null;
+  /**
+   * A dated manual grant from beheer ("Premium geven"). With `premiumGranted`
+   * true, the grant runs until this moment; null/absent means no end date
+   * (levenslang, or a legacy grant from before grants were dated). Lapses by
+   * itself: every read compares the date (`manualGrantActive`), so no job has
+   * to switch it off. See `lib/admin/premium-grants.ts`.
+   */
+  premiumGrantedUntil?: Date | null;
+  premiumGrantedAt?: Date | null;
+  premiumGrantedBy?: mongoose.Types.ObjectId | null;
+  premiumGrantedNote?: string | null;
+  /** Audit trail of every grant and revoke, oldest first. */
+  premiumGrantLog?: Array<{
+    action: 'grant' | 'revoke';
+    duration?: string | null;
+    until?: Date | null;
+    note?: string | null;
+    by?: mongoose.Types.ObjectId | null;
+    byEmail?: string | null;
+    byName?: string | null;
+    at: Date;
+  }>;
+  /**
+   * Where the account was created: `web-desktop`, `web-mobile`, `ios` or
+   * `android`, and how (`email`, `google`, `apple`). Absent on accounts from
+   * before this was recorded; `lib/admin/platform.ts` derives those on read.
+   */
+  signupPlatform?: 'web-desktop' | 'web-mobile' | 'ios' | 'android';
+  signupMethod?: 'email' | 'google' | 'apple';
+  /** Last visit or app open, written at most once per Amsterdam day. */
+  lastActiveAt?: Date | null;
+  lastSeenPlatform?: 'web-desktop' | 'web-mobile' | 'ios' | 'android' | null;
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;
   stripeSubscriptionStatus?: string;
@@ -127,6 +159,32 @@ const UserSchema: Schema = new Schema({
   hasLifetimePremium: { type: Boolean, default: false },
   premiumGranted: { type: Boolean },
   groupPremiumUntil: { type: Date, default: null },
+  premiumGrantedUntil: { type: Date },
+  premiumGrantedAt: { type: Date },
+  premiumGrantedBy: { type: Schema.Types.ObjectId, ref: 'User' },
+  premiumGrantedNote: { type: String },
+  premiumGrantLog: {
+    type: [
+      {
+        _id: false,
+        action: { type: String, enum: ['grant', 'revoke'], required: true },
+        duration: { type: String },
+        until: { type: Date },
+        note: { type: String },
+        by: { type: Schema.Types.ObjectId, ref: 'User' },
+        byEmail: { type: String },
+        byName: { type: String },
+        at: { type: Date, required: true },
+      },
+    ],
+    default: undefined,
+  },
+  // No enum guard on the platform fields: a newer deployment may add a value
+  // and an older running one must not reject the write.
+  signupPlatform: { type: String },
+  signupMethod: { type: String },
+  lastActiveAt: { type: Date },
+  lastSeenPlatform: { type: String },
   stripeCustomerId: { type: String, index: true },
   stripeSubscriptionId: { type: String, index: true },
   stripeSubscriptionStatus: { type: String },
@@ -199,6 +257,7 @@ const UserSchema: Schema = new Schema({
 }, { timestamps: true });
 
 UserSchema.index({ xp: -1 });
+UserSchema.index({ createdAt: -1 });
 
 const User: Model<IUser> = mongoose.models.User || mongoose.model<IUser>('User', UserSchema);
 

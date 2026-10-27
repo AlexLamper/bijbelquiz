@@ -75,7 +75,7 @@ export async function POST(req: NextRequest) {
   try {
     await connectDB();
     user = await User.findById(session.user.id)
-      .select('name email isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium stripeCustomerId')
+      .select('name email isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium premiumGranted premiumGrantedUntil stripeCustomerId')
       .lean<CheckoutUser>();
   } catch (error) {
     // Not being able to check is no reason to refuse a sale.

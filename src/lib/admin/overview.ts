@@ -1,6 +1,6 @@
 import { connectDB, Quiz, User } from '@/database';
 import { isInternalAccount } from '@/lib/analytics/internal-accounts';
-import { getPremiumSnapshot } from '@/lib/premium-state';
+import { PREMIUM_SNAPSHOT_FIELDS, getPremiumSnapshot } from '@/lib/premium-state';
 import { getPremiumStats, type PremiumStats } from '@/lib/premium-stats';
 
 /**
@@ -66,7 +66,7 @@ export async function getAdminOverview(now: Date = new Date()): Promise<AdminOve
     Quiz.countDocuments(),
     Quiz.countDocuments({ status: 'pending' }),
     User.find()
-      .select('name email createdAt isPremium premiumStripe premiumStore hasLifetimePremium groupPremiumUntil')
+      .select(`name email createdAt signupPlatform signupMethod ${PREMIUM_SNAPSHOT_FIELDS}`)
       .sort({ createdAt: -1, _id: -1 })
       .limit(10)
       .lean<LeanUser[]>(),

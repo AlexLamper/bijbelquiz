@@ -122,7 +122,7 @@ export async function getPremiumStats(now: Date = new Date()): Promise<PremiumSt
       User.countDocuments({ ...notInternal, ...notLifetime, premiumStripe: true }),
       User.countDocuments({ ...notInternal, ...notLifetime, ...notStripe, premiumStore: true }),
       User.countDocuments({ ...notInternal, ...notLifetime, ...notStripe, ...notStore, ...groupActive }),
-      User.countDocuments({ ...notInternal, ...notLifetime, ...notStripe, ...notStore, ...notGroup, isPremium: true }),
+      User.countDocuments({ ...notInternal, ...notLifetime, ...notStripe, ...notStore, ...notGroup, isPremium: true, premiumGrantedUntil: { $not: { $lte: now } } }),
       Payment.find({}).lean<PaymentLike[]>(),
       Payment.find({})
         .sort({ createdAt: -1 })

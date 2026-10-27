@@ -43,6 +43,8 @@ interface RawQuotaUser {
   premiumStore?: boolean;
   storePremiumExpiresAt?: Date | string | null;
   groupPremiumUntil?: Date | string | null;
+  premiumGranted?: boolean;
+  premiumGrantedUntil?: Date | string | null;
   freeMultiplayerRoomCreated?: unknown;
   multiplayerGamesHosted?: unknown;
 }
@@ -87,7 +89,7 @@ export async function loadMultiplayerQuota(userId: string): Promise<MultiplayerQ
   const user = await User.findById(userId)
     .select(
       'isPremium hasLifetimePremium premiumStripe premiumStore storePremiumExpiresAt ' +
-        'groupPremiumUntil freeMultiplayerRoomCreated multiplayerGamesHosted',
+        'groupPremiumUntil premiumGranted premiumGrantedUntil freeMultiplayerRoomCreated multiplayerGamesHosted',
     )
     .lean() as RawQuotaUser | null;
 

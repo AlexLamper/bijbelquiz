@@ -182,11 +182,14 @@ function isPremiumNow(
     premiumStore?: boolean;
     hasLifetimePremium?: boolean;
     groupPremiumUntil?: Date | null;
+    premiumGrantedUntil?: Date | null;
   },
   now: number,
 ): boolean {
+  // A dated beheer grant that ran out leaves a stale `isPremium` behind.
+  const grantExpired = Boolean(user.premiumGrantedUntil && new Date(user.premiumGrantedUntil).getTime() <= now);
   return Boolean(
-    user.isPremium ||
+    (user.isPremium && !grantExpired) ||
       user.premiumStripe ||
       user.premiumStore ||
       user.hasLifetimePremium ||
@@ -639,7 +642,7 @@ export async function getPaymentsHealth({
         .filter((id): id is string => typeof id === 'string' && /^[a-f0-9]{24}$/i.test(id));
       const users = userIds.length
         ? await User.find({ _id: { $in: userIds } })
-            .select('name email isPremium premiumStripe premiumStore hasLifetimePremium groupPremiumUntil')
+            .select('name email isPremium premiumStripe premiumStore hasLifetimePremium groupPremiumUntil premiumGranted premiumGrantedUntil')
             .lean()
         : [];
       const userById = new Map(users.map((u) => [String(u._id), u]));

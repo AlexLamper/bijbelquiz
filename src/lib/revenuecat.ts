@@ -230,7 +230,7 @@ async function hasStripeLifetime(userId: string): Promise<boolean> {
  */
 export async function applyStorePremium(userId: string, update: StorePremiumUpdate) {
   const user = await User.findById(userId)
-    .select('_id isPremium premiumStripe premiumStore storePremiumExpiresAt hasLifetimePremium groupPremiumUntil')
+    .select('_id isPremium premiumStripe premiumStore storePremiumExpiresAt hasLifetimePremium groupPremiumUntil premiumGranted premiumGrantedUntil')
     .lean<{
       _id: Types.ObjectId;
       isPremium?: boolean;
@@ -239,6 +239,8 @@ export async function applyStorePremium(userId: string, update: StorePremiumUpda
       storePremiumExpiresAt?: Date | null;
       hasLifetimePremium?: boolean;
       groupPremiumUntil?: Date | null;
+      premiumGranted?: boolean;
+      premiumGrantedUntil?: Date | null;
     }>();
   if (!user) return null;
 

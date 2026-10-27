@@ -102,7 +102,8 @@ export function resetInternalAccountCache(): void {
  */
 export function effectivePremiumOr(now: Date = new Date()) {
   return [
-    { isPremium: true },
+    // The stored flag, unless it is left over from a dated grant that ran out.
+    { isPremium: true, premiumGrantedUntil: { $not: { $lte: now } } },
     { premiumStripe: true },
     { premiumStore: true },
     { hasLifetimePremium: true },

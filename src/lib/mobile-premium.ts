@@ -1,5 +1,5 @@
 import { User } from '@/database';
-import { getPremiumSnapshot } from '@/lib/premium-state';
+import { PREMIUM_SNAPSHOT_FIELDS, getPremiumSnapshot } from '@/lib/premium-state';
 import { getRevenueCatSecretKey, syncStorePremiumForAppUser } from '@/lib/revenuecat';
 
 /**
@@ -18,15 +18,18 @@ type PremiumFields = {
   storePremiumExpiresAt?: Date | string | null;
   hasLifetimePremium?: boolean;
   groupPremiumUntil?: Date | string | null;
+  premiumGranted?: boolean;
+  premiumGrantedUntil?: Date | string | null;
 };
 
-export const MOBILE_PREMIUM_FIELDS =
-  'isPremium premiumStripe premiumStore storePremiumExpiresAt hasLifetimePremium groupPremiumUntil';
+export const MOBILE_PREMIUM_FIELDS = PREMIUM_SNAPSHOT_FIELDS;
 
 /** The Premium part of `/api/mobile/profile` and `/api/mobile/sync-premium`. */
 export function mobilePremiumPayload(user: PremiumFields) {
   const snapshot = getPremiumSnapshot(user);
   const lifetime = Boolean(user.hasLifetimePremium);
+  // `snapshot.isPremium` already leaves out a beheer grant whose end date
+  // passed, so the app loses that Premium at the same moment the website does.
   const isPremium = snapshot.isPremium || lifetime;
 
   let premiumSource: PremiumSource = null;
@@ -45,6 +48,11 @@ export function mobilePremiumPayload(user: PremiumFields) {
     hasLifetimePremium: lifetime,
     storePremiumExpiresAt: snapshot.storePremiumExpiresAt ? snapshot.storePremiumExpiresAt.toISOString() : null,
     groupPremiumUntil: snapshot.groupPremiumUntil ? snapshot.groupPremiumUntil.toISOString() : null,
+    // Added for the beheer grants: when the manual grant ends (null = no end
+    // date or no grant). Older app versions ignore it.
+    premiumManual: snapshot.premiumManual,
+    manualPremiumUntil:
+      snapshot.premiumManual && snapshot.premiumGrantedUntil ? snapshot.premiumGrantedUntil.toISOString() : null,
   };
 }
 

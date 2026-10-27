@@ -8,6 +8,7 @@ import SamenSpelenClient, {
 import { authOptions } from '@/lib/auth';
 import { connectDB, Category, Quiz, User } from '@/database';
 import { MULTIPLAYER_MAX_PLAYERS } from '@/lib/premium-benefits';
+import { getPremiumSnapshot } from '@/lib/premium-state';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 
 export const metadata: Metadata = {
@@ -16,8 +17,9 @@ export const metadata: Metadata = {
 };
 
 interface RawUserDocument {
-  isPremium?: unknown;
-  hasLifetimePremium?: unknown;
+  isPremium?: boolean;
+  hasLifetimePremium?: boolean;
+  premiumGrantedUntil?: Date | null;
 }
 
 interface RawQuizDocument {
@@ -52,12 +54,12 @@ export default async function SamenSpelenPage({ searchParams }: PageProps) {
   await connectDB();
 
   const rawUser = await User.findById(session.user.id)
-    .select('isPremium hasLifetimePremium')
+    .select('isPremium hasLifetimePremium premiumGrantedUntil')
     .lean() as RawUserDocument | null;
 
   // Only reported to analytics: hosting and room size are the same for
   // everybody, Premium or not.
-  const isPremiumUser = Boolean(rawUser?.isPremium || rawUser?.hasLifetimePremium || session.user.isPremium);
+  const isPremiumUser = Boolean(session.user.isPremium || rawUser?.hasLifetimePremium || (rawUser && getPremiumSnapshot(rawUser).isPremium));
 
   const [rawQuizzes, rawCategories] = await Promise.all([
     Quiz.find({ status: 'approved' })

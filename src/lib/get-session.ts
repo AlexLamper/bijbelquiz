@@ -4,7 +4,7 @@ import { decode } from 'next-auth/jwt';
 import { NextRequest } from 'next/server';
 import { connectDB, User } from '@/database';
 import { getMobileUserId } from './mobile-auth';
-import { getPremiumSnapshot } from './premium-state';
+import { PREMIUM_SNAPSHOT_FIELDS, getPremiumSnapshot } from './premium-state';
 
 export async function getSession(req?: NextRequest) {
   // 1. Try standard NextAuth session (cookies)
@@ -46,7 +46,7 @@ export async function getSession(req?: NextRequest) {
       if (userId) {
         await connectDB();
         const user = await User.findById(userId)
-          .select('email name xp role isPremium premiumStripe premiumStore storePremiumExpiresAt hasLifetimePremium')
+          .select(`email name xp role ${PREMIUM_SNAPSHOT_FIELDS}`)
           .lean();
 
         if (user) {

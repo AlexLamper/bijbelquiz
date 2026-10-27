@@ -12,7 +12,11 @@ import { User } from '@/database';
  * - `groupPremiumUntil`: a seat in a group licence, a lease that lapses by
  *   itself (never folded into `isPremium`);
  * - a manual grant (`premiumGranted`): `isPremium` set by hand (support,
- *   beheer) with none of the flags above explaining it.
+ *   beheer) with none of the flags above explaining it. Since grants are
+ *   dated (`premiumGrantedUntil`, see `lib/admin/premium-grants.ts`) a grant
+ *   can end by itself: every read compares the date, so an expired grant
+ *   stops counting even while the stored `isPremium` still says true, and the
+ *   next recompute (any write, or the lazy one on session refresh) clears it.
  *
  * `isPremium` on the user document is the stored aggregate of the first four
  * kinds, read directly by many queries (leaderboard, counts). Every writer
@@ -44,7 +48,16 @@ type UserPremiumLike = {
   groupPremiumUntil?: Date | string | null;
   hasLifetimePremium?: boolean;
   premiumGranted?: boolean;
+  premiumGrantedUntil?: Date | string | null;
 };
+
+/**
+ * Every field `getPremiumSnapshot` reads. Select these (not a hand-picked
+ * subset) wherever a lean user feeds the snapshot: leaving out
+ * `premiumGrantedUntil` would make an expired grant look active.
+ */
+export const PREMIUM_SNAPSHOT_FIELDS =
+  'isPremium premiumStripe premiumStore storePremiumExpiresAt hasLifetimePremium groupPremiumUntil premiumGranted premiumGrantedUntil';
 
 function parseExpiryDate(input?: Date | string | null) {
   if (!input) {
@@ -53,6 +66,25 @@ function parseExpiryDate(input?: Date | string | null) {
 
   const date = input instanceof Date ? input : new Date(input);
   return Number.isNaN(date.getTime()) ? null : date;
+}
+
+/**
+ * A dated grant whose end has passed. The stored `isPremium` can still be
+ * true for it (nothing rewrote the document at the moment it lapsed), so
+ * readers must not trust that flag on its own for such an account.
+ */
+export function manualGrantExpired(user: UserPremiumLike, now: number = Date.now()): boolean {
+  const until = parseExpiryDate(user.premiumGrantedUntil);
+  return Boolean(until && until.getTime() <= now);
+}
+
+/**
+ * The manual grant gives Premium right now: granted (explicitly, or a legacy
+ * hand-set `isPremium` that no purchase explains) and not past its end date.
+ */
+export function manualGrantActive(user: UserPremiumLike, now: number = Date.now()): boolean {
+  if (manualGrantExpired(user, now)) return false;
+  return isManualPremium(user);
 }
 
 export function getPremiumSnapshot(user: UserPremiumLike) {
@@ -66,8 +98,13 @@ export function getPremiumSnapshot(user: UserPremiumLike) {
   const groupPremiumUntil = parseExpiryDate(user.groupPremiumUntil);
   const premiumGroup = Boolean(groupPremiumUntil && groupPremiumUntil.getTime() > Date.now());
 
-  const isPremium =
-    premiumStripe || premiumStore || premiumLifetime || premiumGroup || Boolean(user.premiumGranted) || Boolean(user.isPremium);
+  // The stored aggregate and the grant flag count only while a dated grant
+  // has not run out; after that only the purchase flags speak.
+  const grantExpired = manualGrantExpired(user);
+  const premiumManual = !grantExpired && isManualPremium(user);
+  const storedFlag = !grantExpired && Boolean(user.isPremium);
+
+  const isPremium = premiumStripe || premiumStore || premiumLifetime || premiumGroup || premiumManual || storedFlag;
 
   return {
     premiumStripe,
@@ -76,6 +113,8 @@ export function getPremiumSnapshot(user: UserPremiumLike) {
     storePremiumExpiresAt,
     premiumGroup,
     groupPremiumUntil,
+    premiumManual,
+    premiumGrantedUntil: parseExpiryDate(user.premiumGrantedUntil),
     isPremium,
   };
 }
@@ -103,6 +142,19 @@ const RESULT_FIELDS = '_id isPremium premiumStripe premiumStore hasLifetimePremi
 
 const isTrue = (field: string) => ({ $eq: [`$${field}`, true] });
 
+/** In a pipeline: the manual grant is on and its end date (if any) is still ahead. */
+const GRANT_ACTIVE = {
+  $and: [
+    isTrue('premiumGranted'),
+    {
+      $or: [
+        { $eq: [{ $ifNull: ['$premiumGrantedUntil', null] }, null] },
+        { $gt: ['$premiumGrantedUntil', '$$NOW'] },
+      ],
+    },
+  ],
+};
+
 /**
  * Write premium-related fields and recompute `isPremium` from every source,
  * in one atomic pipeline update (no read-then-write race with a webhook of
@@ -121,7 +173,12 @@ const isTrue = (field: string) => ({ $eq: [`$${field}`, true] });
 export async function recomputeUserPremium(
   userId: string,
   set: Record<string, unknown>,
-  options: { deriveStripe?: boolean; filter?: QueryFilter<unknown> } = {},
+  options: {
+    deriveStripe?: boolean;
+    filter?: QueryFilter<unknown>;
+    /** Appended to `premiumGrantLog` in the same atomic update (beheer grants). */
+    logEntry?: Record<string, unknown>;
+  } = {},
 ): Promise<PremiumWriteResult | null> {
   const literalSet: Record<string, unknown> = {};
   for (const [key, value] of Object.entries(set)) {
@@ -155,6 +212,16 @@ export async function recomputeUserPremium(
 
   if (Object.keys(literalSet).length > 0) pipeline.push({ $set: literalSet });
 
+  if (options.logEntry) {
+    pipeline.push({
+      $set: {
+        premiumGrantLog: {
+          $concatArrays: [{ $ifNull: ['$premiumGrantLog', []] }, [{ $literal: options.logEntry }]],
+        },
+      },
+    });
+  }
+
   if (options.deriveStripe) {
     pipeline.push({
       $set: {
@@ -169,7 +236,7 @@ export async function recomputeUserPremium(
     {
       $set: {
         isPremium: {
-          $or: [isTrue('premiumStripe'), isTrue('premiumStore'), isTrue('hasLifetimePremium'), isTrue('premiumGranted')],
+          $or: [isTrue('premiumStripe'), isTrue('premiumStore'), isTrue('hasLifetimePremium'), GRANT_ACTIVE],
         },
       },
     },

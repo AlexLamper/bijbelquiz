@@ -129,7 +129,7 @@ export default async function SuccessPage({ searchParams }: PageProps) {
     try {
       await connectDB();
       const user = await User.findById(session.user.id)
-        .select('isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium')
+        .select('isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium premiumGranted premiumGrantedUntil')
         .lean();
       accountIsPremium = Boolean(user && getPremiumSnapshot(user).isPremium);
     } catch (error) {
