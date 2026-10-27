@@ -4,6 +4,7 @@ import { connectDB, User } from '@/database';
 import { getMobileUserId } from '@/lib/mobile-auth';
 import { getPremiumStats } from '@/lib/premium-stats';
 import { getPaymentsHealth } from '@/lib/payments-health';
+import { healthSummary } from '@/lib/admin/api-overview';
 
 export const dynamic = 'force-dynamic';
 
@@ -34,24 +35,9 @@ export async function GET(req: Request) {
       getPaymentsHealth({ deep }).catch(() => null),
     ]);
 
-    // Trim the health report to what the phone screen renders.
-    const healthSummary = health
-      ? {
-          overall: health.overall,
-          checkedAt: health.generatedAt,
-          issues: health.checks
-            .filter((c) => c.status !== 'ok')
-            .map((c) => ({ label: c.label, status: c.status, detail: c.detail, action: c.action ?? null })),
-          okCount: health.checks.filter((c) => c.status === 'ok').length,
-          funnel30d: health.funnel30d,
-          accessGapCount: health.accessGaps.length,
-          stripeKeyMode: health.stripe.keyMode,
-          revenuecatConfigured:
-            health.revenuecat.webhookAuthConfigured && health.revenuecat.restKeyConfigured,
-        }
-      : null;
-
-    return NextResponse.json({ ...stats, health: healthSummary }, { status: 200 });
+    // Trim the health report to what the phone screen renders (shared with
+    // the newer admin endpoints, see lib/admin/api-overview.ts).
+    return NextResponse.json({ ...stats, health: healthSummary(health) }, { status: 200 });
   } catch (error) {
     console.error('Mobile API - Admin Stats Error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
