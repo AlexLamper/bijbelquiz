@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { ArrowUpRight, BookOpen, RefreshCw, Swords, Trophy } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Lock, RefreshCw, Swords, Trophy } from 'lucide-react';
 
 import { Breadcrumbs, Button, Disclosure, DisclosureList, ProgressBar, ResultDisc, type Crumb } from '@/components/bq';
 import { BoltSolidIcon, FlameIcon } from '@/components/bq/icons';
@@ -233,6 +233,9 @@ export function AnswerListLocked({
           ))}
         </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-card/40 px-6 text-center">
+          <span className="flex size-10 items-center justify-center rounded-full border border-line bg-card text-ink-soft">
+            <Lock className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />
+          </span>
           <span className="text-[17px] font-extrabold text-ink">Je antwoorden terugkijken is Premium</span>
           <span className="max-w-[44ch] text-sm font-semibold text-ink-muted">
             Zie bij elke vraag wat je koos, het goede antwoord en de uitleg met de bijbeltekst.

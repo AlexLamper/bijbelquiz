@@ -16,7 +16,6 @@ import {
   ScoreCard,
   StudieCard,
 } from '@/components/web2/quiz-result/ResultView';
-import StudiePromoModal from '@/components/StudiePromoModal';
 import { dominantPassage } from '@/lib/ecosystem-links';
 import { getLevelInfo } from '@/lib/gamification';
 import { dominantBookChapter, pickNextQuiz, type NextQuizCandidate } from '@/lib/next-quiz';
@@ -186,9 +185,10 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
 
   const firstName = (user?.name || session.user.name || '').trim().split(/\s+/)[0] || null;
 
+  // The BijbelStudie handover is the "Lees ... met uitleg" card in the side
+  // column (the old pop-up over the result is gone in the 2.0 design).
   return (
-    <>
-      <ResultLayout
+    <ResultLayout
         crumbs={crumbs}
         main={
           <>
@@ -223,7 +223,5 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
           </>
         }
       />
-      <StudiePromoModal passage={wrongPassage} quizSlug={quizSlug} />
-    </>
   );
 }
