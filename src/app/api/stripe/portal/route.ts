@@ -1,40 +1,73 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+
+import { connectDB, Payment, User } from '@/database';
 import { authOptions } from '@/lib/auth';
 import stripe from '@/lib/stripe';
-import { connectDB, Payment, User } from '@/database';
+import { resolveCheckoutOrigin } from '@/lib/stripe-checkout';
 
 export const dynamic = 'force-dynamic';
 
+/** Pages that have a "Beheer je abonnement" button; the portal returns there. */
+const RETURN_PAGES = new Set(['/premium', '/instellingen', '/profiel']);
+
+/** Where the member came from: the form's `terug`, else the referring page, else /instellingen. */
+function readReturnPage(formValue: FormDataEntryValue | null, referer: string | null, origin: string): string {
+  if (typeof formValue === 'string' && RETURN_PAGES.has(formValue)) return formValue;
+  if (referer) {
+    try {
+      const url = new URL(referer);
+      if (url.origin === origin && RETURN_PAGES.has(url.pathname)) return url.pathname;
+    } catch {
+      // fall through
+    }
+  }
+  return '/instellingen';
+}
+
+/**
+ * "Beheer je abonnement": opens the Stripe customer portal (cancel, switch
+ * plan, payment method, invoices). Whatever the member changes there comes
+ * back through the webhook (`customer.subscription.updated` / `deleted`), not
+ * through this route.
+ */
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions);
+  const origin = req.nextUrl.origin;
+
+  let formValue: FormDataEntryValue | null = null;
+  try {
+    formValue = (await req.formData()).get('terug');
+  } catch {
+    // A POST without a form body is fine.
+  }
+  const returnPage = readReturnPage(formValue, req.headers.get('referer'), origin);
+
+  const fail = (reason: 'unavailable' | 'error') => {
+    const url = new URL(returnPage, origin);
+    url.searchParams.set('billing', reason);
+    return NextResponse.redirect(url, 303);
+  };
 
   if (!session?.user?.id) {
-    const signInUrl = new URL('/api/auth/signin', req.nextUrl.origin);
-    signInUrl.searchParams.set('callbackUrl', '/profile');
+    const signInUrl = new URL('/inloggen', origin);
+    signInUrl.searchParams.set('callbackUrl', returnPage);
     return NextResponse.redirect(signInUrl, 303);
   }
 
   await connectDB();
-  const user = await User.findById(session.user.id);
+  const user = await User.findById(session.user.id).select('_id stripeCustomerId stripeSubscriptionId');
 
-  if (!user) {
-    const profileUrl = new URL('/profile', req.nextUrl.origin);
-    profileUrl.searchParams.set('billing', 'unavailable');
-    return NextResponse.redirect(profileUrl, 303);
-  }
+  if (!user) return fail('unavailable');
 
   let stripeCustomerId = user.stripeCustomerId || '';
-  const stripeSubscriptionId = user.stripeSubscriptionId || '';
-  let stripeSubscriptionStatus = user.stripeSubscriptionStatus || '';
 
-  if (!stripeCustomerId && stripeSubscriptionId) {
+  // Older accounts may lack the customer id: recover it from the
+  // subscription, then from our own payment rows.
+  if (!stripeCustomerId && user.stripeSubscriptionId) {
     try {
-      const subscription = await stripe.subscriptions.retrieve(stripeSubscriptionId);
-      stripeSubscriptionStatus = subscription.status || stripeSubscriptionStatus;
-      if (typeof subscription.customer === 'string') {
-        stripeCustomerId = subscription.customer;
-      }
+      const subscription = await stripe.subscriptions.retrieve(user.stripeSubscriptionId);
+      if (typeof subscription.customer === 'string') stripeCustomerId = subscription.customer;
     } catch (error) {
       console.warn('[STRIPE_PORTAL_POST] Failed to resolve customer from subscription', error);
     }
@@ -42,104 +75,65 @@ export async function POST(req: NextRequest) {
 
   if (!stripeCustomerId) {
     try {
-      const latestStripePayment = await Payment.findOne({
-        user: user._id,
-        provider: 'stripe',
-      }).sort({ createdAt: -1 }).lean();
+      const latest = await Payment.findOne({ user: user._id, provider: 'stripe' })
+        .sort({ createdAt: -1 })
+        .select('stripeCustomerId stripeSessionId stripeSubscriptionId')
+        .lean<{ stripeCustomerId?: string; stripeSessionId?: string; stripeSubscriptionId?: string }>();
 
-      const latestStripeSessionId = latestStripePayment?.stripeSessionId;
-      const latestStripeSubscriptionId = latestStripePayment?.stripeSubscriptionId;
+      if (latest?.stripeCustomerId) stripeCustomerId = latest.stripeCustomerId;
 
-      if (latestStripeSessionId) {
-        const checkoutSession = await stripe.checkout.sessions.retrieve(latestStripeSessionId);
-        if (typeof checkoutSession.customer === 'string') {
-          stripeCustomerId = checkoutSession.customer;
-        }
+      if (!stripeCustomerId && latest?.stripeSessionId) {
+        const checkoutSession = await stripe.checkout.sessions.retrieve(latest.stripeSessionId);
+        if (typeof checkoutSession.customer === 'string') stripeCustomerId = checkoutSession.customer;
       }
 
-      if (!stripeCustomerId && latestStripeSubscriptionId) {
-        const subscription = await stripe.subscriptions.retrieve(latestStripeSubscriptionId);
-        stripeSubscriptionStatus = subscription.status || stripeSubscriptionStatus;
-        if (typeof subscription.customer === 'string') {
-          stripeCustomerId = subscription.customer;
-        }
+      if (!stripeCustomerId && latest?.stripeSubscriptionId) {
+        const subscription = await stripe.subscriptions.retrieve(latest.stripeSubscriptionId);
+        if (typeof subscription.customer === 'string') stripeCustomerId = subscription.customer;
       }
     } catch (error) {
       console.warn('[STRIPE_PORTAL_POST] Failed to resolve customer from payment history', error);
     }
   }
 
+  // Last resort: a customer in Stripe with this e-mail address and a
+  // subscription (bought before customer ids were stored).
   if (!stripeCustomerId && session.user.email) {
     try {
-      const customers = await stripe.customers.list({
-        email: session.user.email,
-        limit: 10,
-      });
-
+      const customers = await stripe.customers.list({ email: session.user.email, limit: 10 });
       for (const customer of customers.data) {
-        const subscriptions = await stripe.subscriptions.list({
-          customer: customer.id,
-          status: 'all',
-          limit: 1,
-        });
-
+        const subscriptions = await stripe.subscriptions.list({ customer: customer.id, status: 'all', limit: 1 });
         if (subscriptions.data[0]) {
           stripeCustomerId = customer.id;
-          stripeSubscriptionStatus = subscriptions.data[0].status || stripeSubscriptionStatus;
           break;
         }
-      }
-
-      if (!stripeCustomerId && customers.data[0]) {
-        stripeCustomerId = customers.data[0].id;
       }
     } catch (error) {
       console.warn('[STRIPE_PORTAL_POST] Failed to resolve customer by email', error);
     }
   }
 
-  if (!stripeCustomerId) {
-    try {
-      const customer = await stripe.customers.create({
-        email: session.user.email || undefined,
-        name: user.name || undefined,
-        metadata: {
-          userId: String(user._id),
-        },
-      });
-      stripeCustomerId = customer.id;
-    } catch (error) {
-      console.error('[STRIPE_PORTAL_POST] Failed to create fallback customer', error);
-      const profileUrl = new URL('/profile', req.nextUrl.origin);
-      profileUrl.searchParams.set('billing', 'unavailable');
-      return NextResponse.redirect(profileUrl, 303);
-    }
-  }
+  // Nothing to manage in Stripe: no empty portal, but a message.
+  if (!stripeCustomerId) return fail('unavailable');
 
-  if (
-    stripeCustomerId !== (user.stripeCustomerId || '') ||
-    stripeSubscriptionId !== (user.stripeSubscriptionId || '') ||
-    stripeSubscriptionStatus !== (user.stripeSubscriptionStatus || '')
-  ) {
-    user.stripeCustomerId = stripeCustomerId;
-    user.stripeSubscriptionId = stripeSubscriptionId || user.stripeSubscriptionId;
-    user.stripeSubscriptionStatus = stripeSubscriptionStatus || user.stripeSubscriptionStatus;
-    await user.save();
+  if (stripeCustomerId !== (user.stripeCustomerId || '')) {
+    await User.updateOne({ _id: user._id }, { $set: { stripeCustomerId } });
   }
-
-  const returnUrl = `${req.nextUrl.origin}/profile`;
 
   try {
     const portalSession = await stripe.billingPortal.sessions.create({
       customer: stripeCustomerId,
-      return_url: returnUrl,
+      return_url: `${resolveCheckoutOrigin({
+        originHeader: req.headers.get('origin'),
+        requestOrigin: origin,
+        configuredUrl: process.env.NEXTAUTH_URL,
+      })}${returnPage}`,
+      locale: 'nl',
     });
 
     return NextResponse.redirect(portalSession.url, 303);
   } catch (error) {
     console.error('[STRIPE_PORTAL_POST] Failed to create billing portal session', error);
-    const profileUrl = new URL('/profile', req.nextUrl.origin);
-    profileUrl.searchParams.set('billing', 'error');
-    return NextResponse.redirect(profileUrl, 303);
+    return fail('error');
   }
 }

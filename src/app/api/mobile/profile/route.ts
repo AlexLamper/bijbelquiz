@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { connectDB, User, UserProgress } from '@/database';
 import jwt from 'jsonwebtoken';
-import { getPremiumSnapshot } from '@/lib/premium-state';
+import { mobilePremiumPayload } from '@/lib/mobile-premium';
 import { getLevelInfo } from '@/lib/gamification';
 import { resolveAvatar } from '@/lib/avatar';
 import { getMobileUserId } from '@/lib/mobile-auth';
@@ -17,10 +17,10 @@ export async function GET(req: Request) {
     const token = authHeader.split(' ')[1];
     const secret = process.env.NEXTAUTH_SECRET || process.env.JWT_SECRET || 'development_fallback_secret';
     
-    let decoded: any;
+    let decoded: { userId?: string };
     try {
-      decoded = jwt.verify(token, secret);
-    } catch (err) {
+      decoded = jwt.verify(token, secret) as { userId?: string };
+    } catch {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
@@ -29,7 +29,9 @@ export async function GET(req: Request) {
     if (!user) {
       return NextResponse.json({ error: 'User not found' }, { status: 404 });
     }
-    const premium = getPremiumSnapshot(user);
+    // Premium from every source (store, Stripe, lifetime, group, manual), so
+    // the app never offers Premium to someone who already has it.
+    const premium = mobilePremiumPayload(user);
 
     const levelInfo = getLevelInfo(user.xp || 0);
 
@@ -49,6 +51,7 @@ export async function GET(req: Request) {
       .filter(Boolean)
       .map((quizId: unknown) => String(quizId));
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- populated lean docs
     const formattedProgress = recentProgress.map((p: any) => ({
       quizId: p.quizId?._id?.toString() || p.quizId?.toString() || '',
       quizTitle: p.quizId?.title || 'Quiz',
@@ -71,10 +74,7 @@ export async function GET(req: Request) {
       levelTitle: levelInfo.title,
       levelProgress: levelInfo.progressPercentage,
       nextLevelXp: levelInfo.nextLevelXp,
-      isPremium: premium.isPremium,
-      premiumStripe: premium.premiumStripe,
-      premiumStore: premium.premiumStore,
-      storePremiumExpiresAt: premium.storePremiumExpiresAt,
+      ...premium,
       role: user.role || 'user',
       isAdmin: user.role === 'admin',
       streak: user.streak || 0,

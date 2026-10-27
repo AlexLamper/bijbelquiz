@@ -24,6 +24,7 @@
 
 import Stripe from 'stripe';
 
+import { STRIPE_WEBHOOK_EVENTS, STRIPE_WEBHOOK_PATH } from '../src/lib/stripe-webhook-events';
 import { loadEnvFiles, stripeModeOf } from './lib/stripe-env.mjs';
 
 loadEnvFiles();
@@ -45,15 +46,10 @@ interface PlanSpec {
 
 const CURRENCY = 'eur';
 
-/** Where Stripe should deliver events. */
-const WEBHOOK_PATH = '/api/webhook/stripe';
+/** Where Stripe should deliver events (shared with the webhook code). */
+const WEBHOOK_PATH = STRIPE_WEBHOOK_PATH;
 
-const WEBHOOK_EVENTS: Stripe.WebhookEndpointCreateParams.EnabledEvent[] = [
-  'checkout.session.completed',
-  'customer.subscription.created',
-  'customer.subscription.updated',
-  'customer.subscription.deleted',
-];
+const WEBHOOK_EVENTS = [...STRIPE_WEBHOOK_EVENTS] as Stripe.WebhookEndpointCreateParams.EnabledEvent[];
 
 /**
  * Payment methods to switch on, never off.
@@ -84,7 +80,7 @@ const PLANS: PlanSpec[] = [
     id: 'monthly',
     productName: 'BijbelQuiz Premium (maandelijks)',
     productDescription:
-      'Onbeperkt samen spelen tot 20 spelers, uitleg en bijbelverwijzing bij elke vraag, alle premium quizzen.',
+      'Alle quizzen, zo vaak je wilt. Uitleg bij elk antwoord. Je antwoorden terugkijken na elke quiz. Per maand, zonder proefperiode.',
     amount: cents('MONTHLY_CENTS', 599),
     interval: 'month',
     envKey: 'STRIPE_PRICE_MONTHLY',
@@ -94,7 +90,7 @@ const PLANS: PlanSpec[] = [
     id: 'yearly',
     productName: 'BijbelQuiz Premium (jaarlijks)',
     productDescription:
-      'Alles uit Premium, een keer per jaar betaald. De laagste prijs per week.',
+      'Alle quizzen, zo vaak je wilt. Uitleg bij elk antwoord. Je antwoorden terugkijken na elke quiz. Per jaar, de eerste 7 dagen gratis.',
     amount: cents('YEARLY_CENTS', 3999),
     interval: 'year',
     envKey: 'STRIPE_PRICE_YEARLY',
@@ -103,7 +99,7 @@ const PLANS: PlanSpec[] = [
   {
     id: 'lifetime',
     productName: 'BijbelQuiz Premium (levenslang)',
-    productDescription: 'Eenmalige aankoop. Permanent Premium, geen verlenging.',
+    productDescription: 'Eenmalig betalen: Premium zonder abonnement en zonder verlenging.',
     amount: cents('LIFETIME_CENTS', 7499),
     interval: null,
     envKey: 'STRIPE_PRICE_LIFETIME',
@@ -272,8 +268,25 @@ async function syncWebhook(stripe: Stripe, apply: boolean, baseUrl: string): Pro
   return created.secret ? [`STRIPE_WEBHOOK_SECRET=${created.secret}`] : [];
 }
 
+/** Monthly and yearly, as product + price, for plan switching in the portal. */
+async function switchablePlans(stripe: Stripe): Promise<Array<{ product: string; prices: string[] }>> {
+  const byProduct = new Map<string, string[]>();
+  for (const plan of PLANS.filter((entry) => entry.id === 'monthly' || entry.id === 'yearly')) {
+    const price = await findPrice(stripe, plan);
+    if (!price) continue;
+    const product = typeof price.product === 'string' ? price.product : price.product.id;
+    byProduct.set(product, [...(byProduct.get(product) ?? []), price.id]);
+  }
+  return [...byProduct].map(([product, prices]) => ({ product, prices }));
+}
+
 /** Without a portal configuration the "manage subscription" button 500s. */
-async function syncPortal(stripe: Stripe, apply: boolean, baseUrl: string): Promise<void> {
+async function syncPortal(
+  stripe: Stripe,
+  apply: boolean,
+  baseUrl: string,
+  switchable: Array<{ product: string; prices: string[] }>,
+): Promise<void> {
   console.log('\n--- customer portal ---');
 
   const configurations = await stripe.billingPortal.configurations.list({ limit: 10 });
@@ -281,6 +294,13 @@ async function syncPortal(stripe: Stripe, apply: boolean, baseUrl: string): Prom
 
   if (existing) {
     console.log(`= portal exists   ${existing.id}`);
+    const cancel = existing.features.subscription_cancel;
+    if (!cancel.enabled || cancel.mode !== 'at_period_end') {
+      console.log('! portal: set "Cancel subscriptions" on, at the end of the billing period (Settings -> Billing -> Customer portal)');
+    }
+    if (!existing.features.subscription_update.enabled) {
+      console.log('! portal: plan switching (monthly <-> yearly) is off; turn on "Customers can switch plans" if you want it');
+    }
     return;
   }
 
@@ -300,6 +320,18 @@ async function syncPortal(stripe: Stripe, apply: boolean, baseUrl: string): Prom
       customer_update: { enabled: true, allowed_updates: ['email', 'address', 'name'] },
       invoice_history: { enabled: true },
       payment_method_update: { enabled: true },
+      // Switch between monthly and yearly. The webhook reads the plan from
+      // the new price, so Premium and the payment rows follow.
+      ...(switchable.length > 0
+        ? {
+            subscription_update: {
+              enabled: true,
+              default_allowed_updates: ['price'] as Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionUpdate.DefaultAllowedUpdate[],
+              proration_behavior: 'create_prorations' as const,
+              products: switchable,
+            },
+          }
+        : {}),
       // Cancellation stays at period end: the member keeps what they paid for,
       // which is what the premium page tells them will happen.
       subscription_cancel: {
@@ -386,7 +418,7 @@ async function main(): Promise<void> {
 
   const priceLines = await syncPlans(stripe, apply);
   const webhookLines = await syncWebhook(stripe, apply, baseUrl);
-  await syncPortal(stripe, apply, baseUrl);
+  await syncPortal(stripe, apply, baseUrl, await switchablePlans(stripe));
   await syncPaymentMethods(stripe, apply);
 
   if (!apply) {

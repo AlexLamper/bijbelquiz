@@ -129,3 +129,41 @@ export function readReturnPath(value: unknown, fallback = '/quizzen'): string {
 
   return trimmed;
 }
+
+/**
+ * Which plan a Stripe price belongs to, for subscription and invoice events.
+ *
+ * The price id decides first: after a switch in the billing portal (monthly to
+ * yearly) the subscription keeps the metadata of the original checkout, so
+ * `metadata.plan` alone would keep calling a yearly subscriber monthly. Then
+ * the metadata, then the recurrence of the price. Null when nothing fits.
+ */
+export function planForStripePrice(
+  input: {
+    priceId?: string | null;
+    interval?: string | null;
+    metadataPlan?: string | null;
+  },
+  env: Record<string, string | undefined> = process.env,
+): StripePlanId | null {
+  if (input.priceId) {
+    for (const plan of STRIPE_PLAN_IDS) {
+      const configured = env[STRIPE_PLANS[plan].priceEnvKey];
+      if (configured && configured === input.priceId) return plan;
+    }
+  }
+
+  if (typeof input.metadataPlan === 'string' && PLAN_IDS.has(input.metadataPlan)) {
+    const fromMetadata = input.metadataPlan as StripePlanId;
+    // A group licence is never switched to a personal plan; for the personal
+    // plans the recurrence of the actual price wins over stale metadata.
+    if (fromMetadata === 'group' || !input.interval) return fromMetadata;
+  }
+
+  if (input.interval === 'year') return 'yearly';
+  if (input.interval === 'month') return 'monthly';
+  if (typeof input.metadataPlan === 'string' && PLAN_IDS.has(input.metadataPlan)) {
+    return input.metadataPlan as StripePlanId;
+  }
+  return null;
+}

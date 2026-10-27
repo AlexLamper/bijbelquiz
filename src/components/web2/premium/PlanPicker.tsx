@@ -20,6 +20,8 @@ export interface PlanPickerProps {
   prices: PremiumPriceLabels;
   /** Trial days on the yearly plan; 0 hides every trial claim. */
   trialDays: number;
+  /** Whether the day-5 reminder mail goes out (SMTP set); false drops the promise. Default true. */
+  trialReminder?: boolean;
   /** Plans with a Stripe price; the others are not offered. */
   sellable: PremiumPlanId[];
   initialPlan: PremiumPlanId;
@@ -43,6 +45,7 @@ export interface PlanPickerProps {
 export function PlanPicker({
   prices,
   trialDays,
+  trialReminder = true,
   sellable,
   initialPlan,
   isLoggedIn,
@@ -207,7 +210,7 @@ export function PlanPicker({
 
       <p className="m-0 mt-3.5 text-balance text-center text-sm font-semibold leading-5 text-ink-muted">
         <ShieldIcon />
-        {premiumReassurance(plan, trialDays)}
+        {premiumReassurance(plan, trialDays, trialReminder)}
       </p>
     </div>
   );

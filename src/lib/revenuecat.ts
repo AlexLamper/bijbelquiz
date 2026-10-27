@@ -1,7 +1,7 @@
 import { timingSafeEqual } from 'node:crypto';
 import { Types } from 'mongoose';
 import { Payment, User, WebhookEvent } from '@/database';
-import { getPremiumSnapshot } from '@/lib/premium-state';
+import { getPremiumSnapshot, recomputeUserPremium } from '@/lib/premium-state';
 import { recordPurchase, recordServerEvent } from '@/lib/analytics/record';
 
 /**
@@ -136,8 +136,8 @@ function platformFromStore(store: string | null | undefined): 'ios' | 'android' 
   return (store || '').toUpperCase() === 'PLAY_STORE' ? 'android' : 'ios';
 }
 
-function environmentOf(event: RevenueCatEvent): 'SANDBOX' | 'PRODUCTION' {
-  return (event.environment || '').toUpperCase() === 'SANDBOX' ? 'SANDBOX' : 'PRODUCTION';
+function environmentOf(event: RevenueCatEvent): 'sandbox' | 'production' {
+  return (event.environment || '').toUpperCase() === 'SANDBOX' ? 'sandbox' : 'production';
 }
 
 function msToDate(ms: number | null | undefined): Date | null {
@@ -242,9 +242,6 @@ export async function applyStorePremium(userId: string, update: StorePremiumUpda
     }>();
   if (!user) return null;
 
-  const manualGrant =
-    Boolean(user.isPremium) && !user.premiumStripe && !user.premiumStore && !user.hasLifetimePremium;
-
   let hasLifetimePremium = Boolean(user.hasLifetimePremium);
   if (update.lifetime === true) hasLifetimePremium = true;
   if (update.lifetime === false) hasLifetimePremium = await hasStripeLifetime(userId);
@@ -253,18 +250,18 @@ export async function applyStorePremium(userId: string, update: StorePremiumUpda
   const premiumStore = update.active || (update.lifetime === true);
   const storePremiumExpiresAt = premiumStore && update.lifetime !== true ? update.expiresAt : null;
 
-  const isPremium = Boolean(user.premiumStripe) || premiumStore || hasLifetimePremium || manualGrant;
-
-  await User.updateOne(
-    { _id: user._id },
-    { $set: { premiumStore, storePremiumExpiresAt, hasLifetimePremium, isPremium } },
-  );
+  // One atomic recompute shared with the Stripe side (premium-state.ts): the
+  // manual grant is judged and remembered (`premiumGranted`) there, so a store
+  // purchase that starts and ends never takes a manual grant with it.
+  const written = await recomputeUserPremium(String(user._id), { premiumStore, storePremiumExpiresAt, hasLifetimePremium });
+  if (!written) return null;
 
   const snapshot = getPremiumSnapshot({
     ...user,
     premiumStore,
     storePremiumExpiresAt,
-    isPremium,
+    hasLifetimePremium,
+    isPremium: written.isPremium,
   });
 
   return {
@@ -272,7 +269,7 @@ export async function applyStorePremium(userId: string, update: StorePremiumUpda
     premiumStore,
     storePremiumExpiresAt,
     hasLifetimePremium,
-    isPremium: snapshot.isPremium || hasLifetimePremium,
+    isPremium: snapshot.isPremium,
   };
 }
 
@@ -314,17 +311,35 @@ export async function fetchSubscriberPremiumState(
     throw new Error(`RevenueCat subscriber lookup failed (${response.status})`);
   }
 
-  const payload = (await response.json()) as { subscriber?: Record<string, any> };
+  const payload = (await response.json()) as { subscriber?: RestSubscriber };
   return subscriberPremiumStateFrom(payload?.subscriber, getEntitlementId(), options.now ?? new Date());
 }
 
+type RestEntitlement = {
+  expires_date?: string | null;
+  grace_period_expires_date?: string | null;
+  product_identifier?: string;
+};
+type RestSubscription = {
+  unsubscribe_detected_at?: string | null;
+  billing_issues_detected_at?: string | null;
+  refunded_at?: string | null;
+  is_sandbox?: boolean;
+  store?: string;
+};
+/** The parts of RevenueCat's `GET /v1/subscribers/{id}` this code reads. */
+export type RestSubscriber = {
+  entitlements?: Record<string, RestEntitlement | undefined>;
+  subscriptions?: Record<string, RestSubscription | undefined>;
+};
+
 /** Pure part of the REST read, exported for tests. */
 export function subscriberPremiumStateFrom(
-  subscriber: Record<string, any> | undefined,
+  subscriber: RestSubscriber | undefined,
   entitlementId: string,
   now: Date,
 ): SubscriberPremiumState {
-  const entitlement = subscriber?.entitlements?.[entitlementId] as Record<string, any> | undefined;
+  const entitlement = subscriber?.entitlements?.[entitlementId];
   const empty: SubscriberPremiumState = {
     active: false,
     expiresAt: null,
@@ -346,7 +361,7 @@ export function subscriberPremiumStateFrom(
   const expiresAt = parse(entitlement.expires_date);
   const graceEnd = parse(entitlement.grace_period_expires_date);
 
-  const subscription = productId ? (subscriber?.subscriptions?.[productId] as Record<string, any> | undefined) : undefined;
+  const subscription = productId ? subscriber?.subscriptions?.[productId] : undefined;
   const refunded = Boolean(subscription?.refunded_at);
 
   const lifetime = !entitlement.expires_date && planFromProductId(productId) === 'lifetime';
@@ -492,16 +507,19 @@ const PAYMENT_EVENTS = new Set(['INITIAL_PURCHASE', 'RENEWAL', 'NON_RENEWING_PUR
  * One Payment row per real charge: the first paid period, every renewal,
  * and the lifetime purchase. A free trial start is not a payment (its price is
  * 0); the conversion arrives as a RENEWAL with the real price. Sandbox
- * purchases are stored with status `sandbox` so they never count as revenue.
+ * purchases carry `environment: 'sandbox'`, which revenue figures leave out.
  */
 export async function recordStorePayment(event: RevenueCatEvent, userId: string): Promise<void> {
   const type = (event.type || '').toUpperCase();
 
   if (isRefund(event)) {
-    const ids = [event.transaction_id, event.original_transaction_id].filter(Boolean) as string[];
-    if (ids.length > 0) {
+    // Only the refunded charge: the first purchase is stored under the
+    // original transaction id, so matching that too would mark the first
+    // purchase refunded when a later renewal is.
+    const refundedId = event.transaction_id || event.original_transaction_id;
+    if (refundedId) {
       await Payment.updateMany(
-        { provider: 'revenuecat', externalTransactionId: { $in: ids }, user: userId },
+        { provider: 'revenuecat', externalTransactionId: refundedId, user: userId },
         { $set: { status: 'refunded', refundedAt: msToDate(event.event_timestamp_ms) ?? new Date() } },
       );
     }
@@ -532,7 +550,7 @@ export async function recordStorePayment(event: RevenueCatEvent, userId: string)
         amount: Math.round(price * 100),
         currency: (event.currency || 'eur').toLowerCase(),
         priceUsdCents: typeof event.price === 'number' ? Math.round(event.price * 100) : undefined,
-        status: environment === 'SANDBOX' ? 'sandbox' : 'completed',
+        status: 'completed',
         isTrialConversion: Boolean(event.is_trial_conversion),
         purchasedAt: msToDate(event.purchased_at_ms) ?? undefined,
       },
@@ -546,7 +564,7 @@ export async function recordStorePayment(event: RevenueCatEvent, userId: string)
  * count a purchase twice. Sandbox purchases stay out of the funnel.
  */
 async function recordFunnelEvent(event: RevenueCatEvent, userId: string): Promise<void> {
-  if (environmentOf(event) === 'SANDBOX') return;
+  if (environmentOf(event) === 'sandbox') return;
   const type = (event.type || '').toUpperCase();
   const isTrial = (event.period_type || '').toUpperCase() === 'TRIAL';
   const plan = planFromProductId(event.product_id);
@@ -667,8 +685,8 @@ export async function processRevenueCatWebhook(
   // Claim the event. A retry of an event already processed stops here.
   try {
     await WebhookEvent.create({ provider: 'revenuecat', eventId });
-  } catch (error: any) {
-    if (error?.code === 11000) {
+  } catch (error) {
+    if ((error as { code?: number } | null)?.code === 11000) {
       return { ok: true, status: 200, body: { received: true, duplicate: true } };
     }
     console.error('[REVENUECAT_WEBHOOK_IDEMPOTENCY_ERROR]', { eventId, eventType, error });

@@ -1,6 +1,8 @@
 import { AnalyticsEvent, Quiz, User, UserProgress, connectDB } from '@/database';
 import type { ICategory } from '@/database';
 
+import { amsterdamWindowDays, amsterdamWindowStart, dayKeyLabel, startOfAmsterdamDay, shiftDayKey, amsterdamDayKey } from '@/lib/admin/time';
+
 import { CLAIMED_WEB_COMPLETION } from './events';
 import { getInternalAccountCount, premiumUserFilter } from './internal-accounts';
 import { ROUTE_GROUP_LABELS, SITE_ROUTES, type RouteGroup, type SiteRoute, routeLabel } from './routes';
@@ -25,7 +27,6 @@ import { ROUTE_GROUP_LABELS, SITE_ROUTES, type RouteGroup, type SiteRoute, route
  * number look like a failure and none of them comparable.
  */
 
-const DAY_MS = 24 * 60 * 60 * 1000;
 const TIMEZONE = 'Europe/Amsterdam';
 
 export const WINDOW_CHOICES = [7, 30, 90, 365] as const;
@@ -36,9 +37,17 @@ export function readWindowDays(value: unknown): WindowDays {
   return (WINDOW_CHOICES as readonly number[]).includes(parsed) ? (parsed as WindowDays) : 30;
 }
 
+/**
+ * Start of an N-day window on the Amsterdam calendar: today plus the N-1 days
+ * before it, from midnight. Not "now minus N x 24 hours": that would start
+ * mid-day and leave the headline totals out of step with the daily charts.
+ */
 function since(windowDays: number): Date {
-  return new Date(Date.now() - windowDays * DAY_MS);
+  return amsterdamWindowStart(windowDays);
 }
+
+/** Rows that belong to somebody: server-side events without a user or browser id are nobody. */
+const HAS_VISITOR = { $or: [{ userId: { $type: 'objectId' } }, { anonymousId: { $type: 'string' } }] };
 
 function pct(numerator: number, denominator: number): number {
   if (denominator <= 0) return 0;
@@ -55,6 +64,19 @@ function pct(numerator: number, denominator: number): number {
  */
 const VISITOR_KEY = {
   $ifNull: [{ $toString: '$userId' }, { $ifNull: ['$anonymousId', 'onbekend'] }],
+};
+
+/**
+ * `VISITOR_KEY`, but null for a row with neither id (a server-side event), so
+ * a `$size` over the set can filter it out instead of counting "onbekend" as
+ * one more person.
+ */
+const VISITOR_OR_NULL = {
+  $cond: [
+    { $eq: [{ $type: '$userId' }, 'objectId'] },
+    { $toString: '$userId' },
+    { $cond: [{ $eq: [{ $type: '$anonymousId' }, 'string'] }, '$anonymousId', null] },
+  ],
 };
 
 function dayKey(field = '$createdAt') {
@@ -126,7 +148,7 @@ export async function getOverview(windowDays: number): Promise<OverviewReport> {
     AnalyticsEvent.countDocuments({ name: 'session_start', createdAt: { $gte: from } }),
     AnalyticsEvent.countDocuments({ name: 'ui_click', createdAt: { $gte: from } }),
     AnalyticsEvent.aggregate([
-      { $match: { createdAt: { $gte: from } } },
+      { $match: { createdAt: { $gte: from }, ...HAS_VISITOR } },
       { $group: { _id: VISITOR_KEY } },
       { $count: 'total' },
     ]),
@@ -139,6 +161,7 @@ export async function getOverview(windowDays: number): Promise<OverviewReport> {
     User.countDocuments({ createdAt: { $gte: from } }),
     User.countDocuments(premiumFilter),
     User.countDocuments({ quizzesPlayed: { $gte: 1 } }),
+    // Amsterdam calendar days: "vandaag" is since midnight, not the last 24 hours.
     User.countDocuments({ lastPlayedAt: { $gte: since(1) } }),
     User.countDocuments({ lastPlayedAt: { $gte: since(7) } }),
     User.countDocuments({ lastPlayedAt: { $gte: since(30) } }),
@@ -172,7 +195,9 @@ export async function getOverview(windowDays: number): Promise<OverviewReport> {
     totalUsers,
     newUsers,
     premiumUsers,
-    premiumShare: pct(premiumUsers, totalUsers),
+    // Of the real accounts: the internal ones are out of the numerator, so
+    // they are out of the denominator too.
+    premiumShare: pct(premiumUsers, Math.max(0, totalUsers - internalPremiumExcluded)),
     internalPremiumExcluded,
     activatedUsers,
     activationRate: pct(activatedUsers, totalUsers),
@@ -223,13 +248,12 @@ export async function getDailySeries(windowDays: number): Promise<DailyPoint[]> 
   const byDay = new Map<string, DailyPoint>();
 
   // Every day in the window gets a row, including the empty ones. A chart that
-  // silently skips quiet days reads as a smooth line over a gap.
-  for (let i = windowDays - 1; i >= 0; i -= 1) {
-    const date = new Date(Date.now() - i * DAY_MS);
-    const key = date.toLocaleDateString('en-CA', { timeZone: TIMEZONE });
+  // silently skips quiet days reads as a smooth line over a gap. Same days as
+  // `since(windowDays)`, so the bars add up to the headline numbers.
+  for (const key of amsterdamWindowDays(windowDays)) {
     byDay.set(key, {
       date: key,
-      label: date.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', timeZone: TIMEZONE }),
+      label: dayKeyLabel(key),
       pageViews: 0,
       sessions: 0,
       quizzes: 0,
@@ -312,10 +336,18 @@ export async function getPageReport(windowDays: number): Promise<PageReport> {
           _id: '$props.path',
           views: { $sum: 1 },
           entries: { $sum: { $cond: [{ $eq: ['$props.isEntry', true] }, 1, 0] } },
-          visitors: { $addToSet: VISITOR_KEY },
+          visitors: {
+            $addToSet: VISITOR_OR_NULL,
+          },
         },
       },
-      { $project: { views: 1, entries: 1, visitors: { $size: '$visitors' } } },
+      {
+        $project: {
+          views: 1,
+          entries: 1,
+          visitors: { $size: { $filter: { input: '$visitors', cond: { $ne: ['$$this', null] } } } },
+        },
+      },
       { $sort: { views: -1 } },
     ]).allowDiskUse(true),
     AnalyticsEvent.aggregate([
@@ -406,14 +438,25 @@ export async function getControlReport(windowDays: number): Promise<ControlRepor
         $group: {
           _id: '$props.id',
           clicks: { $sum: 1 },
-          clickers: { $addToSet: VISITOR_KEY },
+          clickers: {
+            $addToSet: VISITOR_OR_NULL,
+          },
           label: { $last: '$props.label' },
           kind: { $last: '$props.kind' },
           paths: { $push: '$props.path' },
           lastClickAt: { $max: '$createdAt' },
         },
       },
-      { $project: { clicks: 1, label: 1, kind: 1, paths: 1, lastClickAt: 1, clickers: { $size: '$clickers' } } },
+      {
+        $project: {
+          clicks: 1,
+          label: 1,
+          kind: 1,
+          paths: 1,
+          lastClickAt: 1,
+          clickers: { $size: { $filter: { input: '$clickers', cond: { $ne: ['$$this', null] } } } },
+        },
+      },
     ]).allowDiskUse(true),
     AnalyticsEvent.aggregate([
       { $match: { name: 'ui_seen', createdAt: { $gte: from } } },
@@ -767,11 +810,15 @@ export interface QuizRow {
   players: number;
   avgScorePct: number;
   lastPlayedAt: Date | null;
+  /** Correct answers and questions over those attempts, for weighted averages. */
+  scoreSum: number;
+  questionSum: number;
 }
 
 export interface QuizReport {
   rows: QuizRow[];
   totalPlays: number;
+  /** Distinct accounts with at least one attempt in the window (not a sum per quiz). */
   totalPlayers: number;
   /** Published quizzes with no attempt in the window. */
   neverPlayed: QuizRow[];
@@ -779,7 +826,6 @@ export interface QuizReport {
     category: string;
     quizzes: number;
     plays: number;
-    players: number;
     avgScorePct: number;
   }>;
   byDifficulty: Array<{ difficulty: string; quizzes: number; plays: number; avgScorePct: number }>;
@@ -798,7 +844,7 @@ export async function getQuizReport(windowDays: number): Promise<QuizReport> {
   await connectDB();
   const from = since(windowDays);
 
-  const [quizzes, progressRows, eventRows, viewRows] = await Promise.all([
+  const [quizzes, progressRows, eventRows, viewRows, distinctPlayers] = await Promise.all([
     Quiz.find()
       .populate('categoryId', 'title')
       .select('title slug difficulty isPremium status questions categoryId')
@@ -841,6 +887,7 @@ export async function getQuizReport(windowDays: number): Promise<QuizReport> {
       { $match: { name: 'page_view', 'props.path': '/quiz/[id]', createdAt: { $gte: from } } },
       { $group: { _id: '$props.param', count: { $sum: 1 } } },
     ]),
+    UserProgress.distinct('userId', { completedAt: { $gte: from } }),
   ]);
 
   const progressById = new Map<string, (typeof progressRows)[number]>(
@@ -879,7 +926,8 @@ export async function getQuizReport(windowDays: number): Promise<QuizReport> {
       category: (quiz.categoryId as ICategory | undefined)?.title ?? 'Zonder categorie',
       difficulty: DIFFICULTY_LABELS[difficulty] ?? difficulty,
       isPremium: Boolean(quiz.isPremium),
-      status: quiz.status ?? 'approved',
+      // Old documents have no status; the public catalogue treats them as live.
+      status: quiz.status || 'approved',
       questionCount: quiz.questions?.length ?? 0,
       views,
       starts: events.started,
@@ -890,22 +938,24 @@ export async function getQuizReport(windowDays: number): Promise<QuizReport> {
       players: progress?.players ?? 0,
       avgScorePct: pct(progress?.scoreSum ?? 0, progress?.questionSum ?? 0),
       lastPlayedAt: (progress?.lastPlayedAt as Date | undefined) ?? null,
+      scoreSum: (progress?.scoreSum as number | undefined) ?? 0,
+      questionSum: (progress?.questionSum as number | undefined) ?? 0,
     };
   });
 
   rows.sort((a, b) => b.plays - a.plays || b.views - a.views || a.title.localeCompare(b.title));
 
   const groupBy = <T extends string>(key: (row: QuizRow) => T) => {
-    const map = new Map<T, { quizzes: number; plays: number; players: number; scoreSum: number; questionSum: number }>();
+    const map = new Map<T, { quizzes: number; plays: number; scoreSum: number; questionSum: number }>();
     for (const row of rows) {
-      const bucket = map.get(key(row)) ?? { quizzes: 0, plays: 0, players: 0, scoreSum: 0, questionSum: 0 };
+      const bucket = map.get(key(row)) ?? { quizzes: 0, plays: 0, scoreSum: 0, questionSum: 0 };
       bucket.quizzes += 1;
       bucket.plays += row.plays;
-      bucket.players += row.players;
-      // Recomputed from the per-quiz average rather than carried through: the
-      // raw sums are per quiz and this only needs the weighted mean.
-      bucket.scoreSum += (row.avgScorePct / 100) * row.plays;
-      bucket.questionSum += row.plays;
+      // The raw sums, so the bucket average is weighted by questions answered
+      // exactly as the per-quiz and headline averages are (not an average of
+      // rounded per-quiz percentages).
+      bucket.scoreSum += row.scoreSum;
+      bucket.questionSum += row.questionSum;
       map.set(key(row), bucket);
     }
     return map;
@@ -917,14 +967,13 @@ export async function getQuizReport(windowDays: number): Promise<QuizReport> {
   return {
     rows,
     totalPlays: rows.reduce((sum, row) => sum + row.plays, 0),
-    totalPlayers: rows.reduce((sum, row) => sum + row.players, 0),
+    totalPlayers: distinctPlayers.length,
     neverPlayed: rows.filter((row) => row.plays === 0 && row.status === 'approved'),
     byCategory: [...categories.entries()]
       .map(([category, bucket]) => ({
         category,
         quizzes: bucket.quizzes,
         plays: bucket.plays,
-        players: bucket.players,
         avgScorePct: pct(bucket.scoreSum, bucket.questionSum),
       }))
       .sort((a, b) => b.plays - a.plays),
@@ -969,6 +1018,11 @@ export async function getUserReport(windowDays: number): Promise<UserReport> {
     getInternalAccountCount(),
   ]);
 
+  // A stored streak is only reset on the next play, so an account that stopped
+  // weeks ago still carries its old number. It is running only if the last
+  // play was today or yesterday (Amsterdam), the same rule `streak.ts` uses.
+  const streakAliveSince = startOfAmsterdamDay(shiftDayKey(amsterdamDayKey(), -1));
+
   const [total, newInWindow, premium, hosts, neverPlayed, activatedNew, aggregates, levelRows] =
     await Promise.all([
       User.countDocuments(),
@@ -982,7 +1036,15 @@ export async function getUserReport(windowDays: number): Promise<UserReport> {
           $group: {
             _id: null,
             avgQuizzes: { $avg: { $ifNull: ['$quizzesPlayed', 0] } },
-            withStreak: { $sum: { $cond: [{ $gte: ['$streak', 1] }, 1, 0] } },
+            withStreak: {
+              $sum: {
+                $cond: [
+                  { $and: [{ $gte: ['$streak', 1] }, { $gte: [{ $ifNull: ['$lastPlayedAt', null] }, streakAliveSince] }] },
+                  1,
+                  0,
+                ],
+              },
+            },
             longest: { $max: '$bestStreak' },
           },
         },
@@ -1006,7 +1068,7 @@ export async function getUserReport(windowDays: number): Promise<UserReport> {
     total,
     newInWindow,
     premium,
-    premiumShare: pct(premium, total),
+    premiumShare: pct(premium, Math.max(0, total - internalPremiumExcluded)),
     internalPremiumExcluded,
     hosts,
     neverPlayed,

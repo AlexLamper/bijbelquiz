@@ -3,8 +3,10 @@ import mongoose from 'mongoose';
 import { AnalyticsEvent, User, connectDB } from '@/database';
 import { MULTIPLAYER_FREE_ROOM_QUOTA } from '@/lib/premium-benefits';
 
+import { amsterdamWindowStart } from '@/lib/admin/time';
+
 import { COUNTED_COMPLETION } from './events';
-import { getInternalAccountIds } from './internal-accounts';
+import { effectivePremiumOr, getInternalAccountIds } from './internal-accounts';
 
 /**
  * The four numbers the revenue plan says to run the business on, plus the
@@ -81,27 +83,51 @@ function rate(numerator: number, denominator: number): number {
   return Math.round((numerator / denominator) * 1000) / 10;
 }
 
+/** Label for a purchase that no paywall preceded (within the two-hour lookback). */
+export const NO_TRIGGER = 'geen';
+
+/**
+ * Counts per property value. A row without the property is counted under
+ * `fallback` when one is given, so the parts still add up to the whole.
+ */
 async function countByProp(
-  name: string,
-  since: Date,
+  match: Record<string, unknown>,
   prop: string,
+  fallback?: string,
 ): Promise<Map<string, number>> {
   const rows = await AnalyticsEvent.aggregate([
-    { $match: { name, createdAt: { $gte: since } } },
+    { $match: match },
     { $group: { _id: `$props.${prop}`, count: { $sum: 1 } } },
   ]);
 
   const out = new Map<string, number>();
   for (const row of rows) {
-    if (typeof row._id === 'string') out.set(row._id, row.count);
+    const key = typeof row._id === 'string' && row._id ? row._id : fallback;
+    if (key) out.set(key, (out.get(key) ?? 0) + row.count);
   }
   return out;
 }
 
-export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
+/**
+ * @param windowDays  Today plus the days before it, on the Amsterdam calendar.
+ *
+ * Events by the internal developer and app-reviewer accounts are left out
+ * everywhere: their test purchases and paywall views would otherwise be most
+ * of the conversion numbers.
+ */
+export async function getFunnelReport(windowDays = 30, now: Date = new Date()): Promise<FunnelReport> {
   await connectDB();
 
-  const since = new Date(Date.now() - windowDays * 24 * 60 * 60 * 1000);
+  const since = amsterdamWindowStart(windowDays, now);
+  const internalIds = await getInternalAccountIds();
+  const notInternalUser = internalIds.length > 0 ? { _id: { $nin: internalIds } } : {};
+  const notInternalEvent = internalIds.length > 0 ? { userId: { $nin: internalIds } } : {};
+  const inWindow = (name: string, extra: Record<string, unknown> = {}) => ({
+    name,
+    createdAt: { $gte: since },
+    ...notInternalEvent,
+    ...extra,
+  });
 
   const [
     startedOne,
@@ -109,6 +135,7 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
     paywallShownByTrigger,
     purchasesByTrigger,
     purchasesByPlan,
+    purchases,
     trialsStarted,
     trialsConverted,
     quizzesCompleted,
@@ -118,34 +145,26 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
     studiePromptShown,
     studieCodeCopies,
   ] = await Promise.all([
-    User.countDocuments({ multiplayerGamesHosted: { $gte: 1 } }),
-    User.countDocuments({ multiplayerGamesHosted: { $gte: MULTIPLAYER_FREE_ROOM_QUOTA } }),
-    countByProp('paywall_shown', since, 'trigger'),
-    countByProp('purchase_completed', since, 'trigger'),
-    countByProp('purchase_completed', since, 'plan'),
-    AnalyticsEvent.countDocuments({ name: 'trial_started', createdAt: { $gte: since } }),
-    AnalyticsEvent.countDocuments({ name: 'trial_converted', createdAt: { $gte: since } }),
-    AnalyticsEvent.countDocuments({
-      name: 'quiz_completed',
-      createdAt: { $gte: since },
-      ...COUNTED_COMPLETION,
-    }),
-    AnalyticsEvent.countDocuments({
-      name: 'quiz_completed',
-      createdAt: { $gte: since },
-      'props.isFirst': true,
-    }),
-    countByProp('bijbelstudie_click', since, 'surface'),
-    AnalyticsEvent.countDocuments({
-      name: 'bijbelstudie_prompt_dismissed',
-      createdAt: { $gte: since },
-    }),
-    AnalyticsEvent.countDocuments({ name: 'bijbelstudie_prompt_shown', createdAt: { $gte: since } }),
-    AnalyticsEvent.countDocuments({ name: 'bijbelstudie_code_copied', createdAt: { $gte: since } }),
+    User.countDocuments({ ...notInternalUser, multiplayerGamesHosted: { $gte: 1 } }),
+    User.countDocuments({ ...notInternalUser, multiplayerGamesHosted: { $gte: MULTIPLAYER_FREE_ROOM_QUOTA } }),
+    countByProp(inWindow('paywall_shown'), 'trigger', 'direct'),
+    countByProp(inWindow('purchase_completed'), 'trigger', NO_TRIGGER),
+    countByProp(inWindow('purchase_completed'), 'plan', 'onbekend'),
+    AnalyticsEvent.countDocuments(inWindow('purchase_completed')),
+    AnalyticsEvent.countDocuments(inWindow('trial_started')),
+    AnalyticsEvent.countDocuments(inWindow('trial_converted')),
+    AnalyticsEvent.countDocuments(inWindow('quiz_completed', COUNTED_COMPLETION)),
+    // Not filtered with COUNTED_COMPLETION on purpose: a guest's first quiz
+    // reaches the account only as the claimed (`claimed: true`) completion,
+    // and that row is the one that carries `isFirst`.
+    AnalyticsEvent.countDocuments(inWindow('quiz_completed', { 'props.isFirst': true })),
+    countByProp(inWindow('bijbelstudie_click'), 'surface', 'onbekend'),
+    AnalyticsEvent.countDocuments(inWindow('bijbelstudie_prompt_dismissed')),
+    AnalyticsEvent.countDocuments(inWindow('bijbelstudie_prompt_shown')),
+    AnalyticsEvent.countDocuments(inWindow('bijbelstudie_code_copied')),
   ]);
 
   const shown = [...paywallShownByTrigger.values()].reduce((sum, n) => sum + n, 0);
-  const purchases = [...purchasesByPlan.values()].reduce((sum, n) => sum + n, 0);
 
   const triggers = new Set([...paywallShownByTrigger.keys(), ...purchasesByTrigger.keys()]);
   const byTrigger = [...triggers]
@@ -222,42 +241,37 @@ export async function getFunnelReport(windowDays = 30): Promise<FunnelReport> {
  * ourselves - and a reviewer account that is used once a year would report as
  * churn we cannot act on.
  */
-export async function getDayThirtyRetention(): Promise<{
+export async function getDayThirtyRetention(now: Date = new Date()): Promise<{
   free: { cohort: number; retained: number; rate: number };
   premium: { cohort: number; retained: number; rate: number };
 }> {
   await connectDB();
 
-  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
-  const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+  const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+  // "Played in the last 7 days": today plus the six days before, Amsterdam.
+  const activeSince = amsterdamWindowStart(7, now);
   const internalIds = await getInternalAccountIds();
+  const cohort = {
+    createdAt: { $lte: thirtyDaysAgo },
+    ...(internalIds.length > 0 ? { _id: { $nin: internalIds } } : {}),
+  };
+  // Premium as the app unlocks it (Stripe, store, lifetime, group, manual),
+  // not only the denormalized `isPremium` flag, which group members never get.
+  const premium = { $or: effectivePremiumOr(now) };
+  const free = { $nor: effectivePremiumOr(now) };
+  const retained = { lastPlayedAt: { $gte: activeSince } };
 
-  const rows = await User.aggregate([
-    {
-      $match: {
-        createdAt: { $lte: thirtyDaysAgo },
-        ...(internalIds.length > 0 ? { _id: { $nin: internalIds } } : {}),
-      },
-    },
-    {
-      $group: {
-        _id: { $ifNull: ['$isPremium', false] },
-        cohort: { $sum: 1 },
-        retained: {
-          $sum: { $cond: [{ $gte: ['$lastPlayedAt', sevenDaysAgo] }, 1, 0] },
-        },
-      },
-    },
+  const [freeCohort, freeRetained, premiumCohort, premiumRetained] = await Promise.all([
+    User.countDocuments({ ...cohort, ...free }),
+    User.countDocuments({ ...cohort, ...free, ...retained }),
+    User.countDocuments({ ...cohort, ...premium }),
+    User.countDocuments({ ...cohort, ...premium, ...retained }),
   ]);
 
-  const read = (isPremium: boolean) => {
-    const row = rows.find((entry) => Boolean(entry._id) === isPremium);
-    const cohort = row?.cohort ?? 0;
-    const retained = row?.retained ?? 0;
-    return { cohort, retained, rate: rate(retained, cohort) };
+  return {
+    free: { cohort: freeCohort, retained: freeRetained, rate: rate(freeRetained, freeCohort) },
+    premium: { cohort: premiumCohort, retained: premiumRetained, rate: rate(premiumRetained, premiumCohort) },
   };
-
-  return { free: read(false), premium: read(true) };
 }
 
 /** Raw recent events, newest first. For eyeballing that ingest is alive. */

@@ -1,4 +1,8 @@
 import { connectDB, AnalyticsEvent, Payment, User, WebhookEvent } from '@/database';
+import { getInternalAccountIds } from '@/lib/analytics/internal-accounts';
+import { classifyPayment, paidPeriodCoversNow, paymentDate, type PaymentLike } from '@/lib/admin/revenue';
+import { amsterdamWindowStart } from '@/lib/admin/time';
+import { PREMIUM_PRICE_LABEL_ENV } from '@/lib/premium-offer';
 import stripe from '@/lib/stripe';
 import { STRIPE_PLANS, type StripePlanId } from '@/lib/stripe-plans';
 
@@ -7,9 +11,13 @@ import { STRIPE_PLANS, type StripePlanId } from '@/lib/stripe-plans';
  *
  * Answers, in order: is the config there, does Stripe accept our key, is the
  * webhook wired, are the prices real, did people click pay, did checkout
- * succeed, and did the buyer actually end up with a premium account. Every
- * check degrades to a row with a remediation line instead of throwing, so a
- * broken key never blanks the admin page.
+ * succeed, did renewals fail, and did the buyer actually end up with a premium
+ * account. Every check degrades to a row with a remediation line instead of
+ * throwing, so a broken key never blanks the admin page - and a check that
+ * could not run says so, instead of reporting "nothing found".
+ *
+ * Setup steps live in docs/setup/betalingen-web.md (Stripe) and
+ * docs/setup/betalingen-app.md (RevenueCat / App Store / Play).
  */
 
 export type CheckStatus = 'ok' | 'warn' | 'fail';
@@ -31,12 +39,20 @@ export interface PaymentsHealthReport {
   stripe: {
     keyMode: 'live' | 'test' | 'missing';
     keyWorks: boolean | null;
+    /** The live Stripe calls (key, prices) ran. False without a key. */
+    liveChecked: boolean;
+    /** The deep calls (endpoints, sessions, events) ran. */
+    deepChecked: boolean;
     accountCurrency: string | null;
     webhookEndpoints: Array<{
       url: string;
       status: string;
       coversCheckoutCompleted: boolean;
       coversSubscription: boolean;
+      coversInvoices: boolean;
+      coversRefunds: boolean;
+      /** Recommended events this endpoint does not receive. */
+      missingEvents: string[];
     }>;
     prices: Array<{
       plan: StripePlanId;
@@ -68,13 +84,27 @@ export interface PaymentsHealthReport {
   webhooksStored: {
     stripe: number;
     stripeNewestAt: string | null;
+    /** Stripe events claimed but never finished (handler crashed or timed out). */
+    stripeStuck: number;
     revenuecat: number;
     revenuecatNewestAt: string | null;
   };
+  failures30d: {
+    /** Real (non-test) payments that failed in the last 30 days, mostly renewals. */
+    failedPayments: number;
+    /** Accounts whose Stripe subscription is behind on payment right now. */
+    pastDueAccounts: number;
+    refunds: number;
+  };
+  /** Funnel events, last 30 days, test/reviewer accounts excluded. */
   funnel30d: {
     paywallShown: number;
+    /** Stripe checkout sessions created (the web pay button). */
     checkoutStarted: number;
+    /** Purchases on every platform (web and app). */
     purchaseCompleted: number;
+    /** Web (Stripe) purchases plus web trials: the outcome of `checkoutStarted`. */
+    stripeCheckoutsCompleted: number;
     trialStarted: number;
     trialConverted: number;
   };
@@ -85,6 +115,8 @@ export interface PaymentsHealthReport {
     reason: string;
     when: string;
   }>;
+  /** Where `recentAttempts` came from: Stripe's own sessions, or our Payment rows when Stripe could not be asked. */
+  recentAttemptsSource: 'stripe' | 'payment';
   recentAttempts: Array<{
     when: string;
     name: string;
@@ -101,6 +133,29 @@ export interface PaymentsHealthReport {
 }
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+const WEB_DOC = 'docs/setup/betalingen-web.md';
+const APP_DOC = 'docs/setup/betalingen-app.md';
+
+/**
+ * Events the Stripe endpoint should send. `checkout.session.completed` is the
+ * one without which nobody gets Premium; the rest keep renewals, failed
+ * payments, cancellations, refunds and chargebacks in step. Mirrors
+ * `STRIPE_WEBHOOK_EVENTS` in `stripe-billing.ts` (the core of it).
+ */
+export const RECOMMENDED_STRIPE_EVENTS = [
+  'checkout.session.completed',
+  'customer.subscription.created',
+  'customer.subscription.updated',
+  'customer.subscription.deleted',
+  'invoice.paid',
+  'invoice.payment_failed',
+  'charge.refunded',
+  'charge.dispute.created',
+  'charge.dispute.closed',
+] as const;
+
+/** Paths that run our Stripe webhook handler. */
+const STRIPE_WEBHOOK_PATHS = ['/api/webhook/stripe', '/api/webhooks/payments'];
 
 function worst(a: CheckStatus, b: CheckStatus): CheckStatus {
   const rank: Record<CheckStatus, number> = { ok: 0, warn: 1, fail: 2 };
@@ -112,41 +167,56 @@ function envSet(name: string): boolean {
   return typeof value === 'string' && value.trim().length > 0;
 }
 
-function isPremiumNow(user: {
-  isPremium?: boolean;
-  premiumStripe?: boolean;
-  premiumStore?: boolean;
-  hasLifetimePremium?: boolean;
-  groupPremiumUntil?: Date | null;
-}): boolean {
+/** sk_live_ / rk_live_ (restricted) are live; sk_test_ / rk_test_ test. The build placeholder is "missing". */
+export function stripeKeyMode(key: string | undefined): 'live' | 'test' | 'missing' {
+  const value = (key || '').trim();
+  if (/^(sk|rk)_live_/.test(value)) return 'live';
+  if (/^(sk|rk)_test_/.test(value) && !value.includes('dummy_key_for_build')) return 'test';
+  return 'missing';
+}
+
+function isPremiumNow(
+  user: {
+    isPremium?: boolean;
+    premiumStripe?: boolean;
+    premiumStore?: boolean;
+    hasLifetimePremium?: boolean;
+    groupPremiumUntil?: Date | null;
+  },
+  now: number,
+): boolean {
   return Boolean(
     user.isPremium ||
       user.premiumStripe ||
       user.premiumStore ||
       user.hasLifetimePremium ||
-      (user.groupPremiumUntil && new Date(user.groupPremiumUntil).getTime() > Date.now())
+      (user.groupPremiumUntil && new Date(user.groupPremiumUntil).getTime() > now),
   );
 }
 
+function iso(value: unknown): string | null {
+  if (!value) return null;
+  const date = new Date(value as string | Date);
+  return Number.isNaN(date.getTime()) ? null : date.toISOString();
+}
+
 /**
- * @param deep  Run the network-heavy Stripe list calls (sessions, events,
- *              webhook endpoints). Off for the mobile admin screen, which only
- *              needs the config verdict.
+ * @param deep  Run the network-heavy calls (Stripe sessions, events, webhook
+ *              endpoints; the RevenueCat key probe). Off for the dashboard
+ *              tile and the mobile admin screen, which only need the verdict.
  */
-export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}): Promise<PaymentsHealthReport> {
+export async function getPaymentsHealth({
+  deep = true,
+  now: nowDate = new Date(),
+}: { deep?: boolean; now?: Date } = {}): Promise<PaymentsHealthReport> {
   await connectDB();
 
   const checks: HealthCheck[] = [];
-  const now = Date.now();
-  const since30d = new Date(now - 30 * DAY_MS);
+  const now = nowDate.getTime();
+  const since30d = amsterdamWindowStart(30, nowDate);
 
   // ── 1. Config presence ────────────────────────────────────────────────────
-  const secretKey = process.env.STRIPE_SECRET_KEY || '';
-  const keyMode: 'live' | 'test' | 'missing' = secretKey.startsWith('sk_live_')
-    ? 'live'
-    : secretKey.startsWith('sk_test_')
-      ? 'test'
-      : 'missing';
+  const keyMode = stripeKeyMode(process.env.STRIPE_SECRET_KEY);
 
   checks.push(
     keyMode === 'missing'
@@ -154,19 +224,20 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
           id: 'stripe_secret_key',
           label: 'Stripe geheime sleutel',
           status: 'fail',
-          detail: 'STRIPE_SECRET_KEY ontbreekt of is de bouw-placeholder.',
-          action: 'Zet STRIPE_SECRET_KEY (sk_live_...) in de omgeving. Zie stap 1 van de handleiding.',
+          detail:
+            'STRIPE_SECRET_KEY ontbreekt (of is de bouw-placeholder). Er kan niet via de website betaald worden, en de Stripe-controles hieronder (sleutel, prijzen, webhook-endpoint, sessies) zijn daarom niet uitgevoerd.',
+          action: `Zet STRIPE_SECRET_KEY (sk_live_...) in de omgeving. Zie ${WEB_DOC}.`,
         }
       : {
           id: 'stripe_secret_key',
           label: 'Stripe geheime sleutel',
           status: keyMode === 'test' ? 'warn' : 'ok',
-          detail: keyMode === 'test' ? 'Test-sleutel actief (sk_test_).' : 'Live-sleutel actief.',
+          detail: keyMode === 'test' ? 'Test-sleutel actief (sk_test_ / rk_test_).' : 'Live-sleutel actief.',
           action:
             keyMode === 'test'
-              ? 'In productie hoort een sk_live_ sleutel. Alleen laten staan als dit bewust een testomgeving is.'
+              ? 'In productie hoort een live-sleutel (sk_live_). Alleen laten staan als dit bewust een testomgeving is.'
               : undefined,
-        }
+        },
   );
 
   checks.push(
@@ -176,9 +247,9 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
           id: 'stripe_webhook_secret',
           label: 'Stripe webhook-secret',
           status: 'fail',
-          detail: 'STRIPE_WEBHOOK_SECRET ontbreekt - inkomende webhooks worden geweigerd (400).',
-          action: 'Kopieer de "Signing secret" van je webhook-endpoint in Stripe naar STRIPE_WEBHOOK_SECRET. Zie stap 4.',
-        }
+          detail: 'STRIPE_WEBHOOK_SECRET ontbreekt - inkomende Stripe-webhooks worden geweigerd (400), dus betalingen en verlengingen komen niet aan.',
+          action: `Kopieer de "Signing secret" van je webhook-endpoint in Stripe naar STRIPE_WEBHOOK_SECRET. Zie ${WEB_DOC}.`,
+        },
   );
 
   for (const [plan, config] of Object.entries(STRIPE_PLANS) as [StripePlanId, (typeof STRIPE_PLANS)[StripePlanId]][]) {
@@ -196,31 +267,22 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
     }
   }
 
-  checks.push(
-    envSet('NEXT_PUBLIC_PREMIUM_MONTHLY_PRICE_LABEL')
-      ? { id: 'price_labels', label: 'Prijslabels (weergave)', status: 'ok', detail: 'NEXT_PUBLIC_*_PRICE_LABEL is gezet.' }
-      : {
-          id: 'price_labels',
-          label: 'Prijslabels (weergave)',
-          status: 'warn',
-          detail: 'NEXT_PUBLIC_PREMIUM_*_PRICE_LABEL ontbreekt - de paywall valt terug op ingebouwde bedragen.',
-          action: 'Zet de NEXT_PUBLIC_PREMIUM_MONTHLY/YEARLY/LIFETIME_PRICE_LABEL zodat de getoonde prijs de echte prijs is.',
-        }
-  );
-
-  const trialRaw = process.env.STRIPE_TRIAL_DAYS;
-  const trialDays = Number.parseInt(trialRaw || '0', 10) || 0;
+  const trialDays = Number.parseInt(process.env.STRIPE_TRIAL_DAYS || '0', 10) || 0;
+  // A product choice, not a fault: reported, never a warning.
   checks.push({
     id: 'trial',
     label: 'Gratis proefperiode',
-    status: trialDays > 0 ? 'ok' : 'warn',
-    detail: trialDays > 0 ? `${trialDays} dagen proef actief.` : 'STRIPE_TRIAL_DAYS=0 - geen proefperiode. Alle proef-teksten en knoppen staan uit.',
-    action: trialDays > 0 ? undefined : 'Wil je conversie verhogen: zet STRIPE_TRIAL_DAYS op 7 of 14. Zie het conversieplan.',
+    status: 'ok',
+    detail:
+      trialDays > 0
+        ? `${trialDays} dagen proef bij een abonnement via de website.`
+        : 'Geen proefperiode op de website (STRIPE_TRIAL_DAYS is 0 of leeg). Proef-teksten en -knoppen staan uit.',
   });
 
   // ── 2. RevenueCat / App Store config ──────────────────────────────────────
   const rcAuth = envSet('REVENUECAT_WEBHOOK_AUTHORIZATION');
-  const rcRest = envSet('REVENUECAT_REST_API_KEY');
+  const rcKeyName = envSet('REVENUECAT_SECRET_KEY') ? 'REVENUECAT_SECRET_KEY' : envSet('REVENUECAT_REST_API_KEY') ? 'REVENUECAT_REST_API_KEY' : null;
+  const rcRest = rcKeyName !== null;
   checks.push(
     rcAuth
       ? { id: 'rc_webhook_auth', label: 'RevenueCat webhook-autorisatie', status: 'ok', detail: 'REVENUECAT_WEBHOOK_AUTHORIZATION is gezet.' }
@@ -228,20 +290,20 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
           id: 'rc_webhook_auth',
           label: 'RevenueCat webhook-autorisatie',
           status: 'fail',
-          detail: 'REVENUECAT_WEBHOOK_AUTHORIZATION ontbreekt - de app-webhook geeft op elke call 401. App-aankopen geven GEEN premium.',
-          action: 'Bedenk een lange willekeurige string, zet die zowel in de omgeving als in RevenueCat -> Webhooks -> Authorization header. Zie stap 7.',
-        }
+          detail: 'REVENUECAT_WEBHOOK_AUTHORIZATION ontbreekt - de app-webhook weigert elke call (401). App-aankopen, verlengingen en terugbetalingen komen niet aan.',
+          action: `Bedenk een lange willekeurige string en zet die zowel in de omgeving als in RevenueCat -> Integrations -> Webhooks -> Authorization header. Zie ${APP_DOC}.`,
+        },
   );
   checks.push(
     rcRest
-      ? { id: 'rc_rest_key', label: 'RevenueCat REST-sleutel', status: 'ok', detail: 'REVENUECAT_REST_API_KEY is gezet.' }
+      ? { id: 'rc_rest_key', label: 'RevenueCat REST-sleutel', status: 'ok', detail: `${rcKeyName} is gezet.` }
       : {
           id: 'rc_rest_key',
           label: 'RevenueCat REST-sleutel',
           status: 'fail',
-          detail: 'REVENUECAT_REST_API_KEY ontbreekt - /api/mobile/sync-premium geeft 500. App-aankopen worden niet bevestigd.',
-          action: 'Kopieer de secret API key uit RevenueCat -> API keys naar REVENUECAT_REST_API_KEY. Zie stap 8.',
-        }
+          detail: 'REVENUECAT_SECRET_KEY (of het oudere REVENUECAT_REST_API_KEY) ontbreekt - de app kan een aankoop niet direct laten bevestigen; Premium komt dan pas met de webhook.',
+          action: `Kopieer de secret API key (sk_...) uit RevenueCat -> API keys naar REVENUECAT_SECRET_KEY. Zie ${APP_DOC}.`,
+        },
   );
 
   checks.push(
@@ -251,9 +313,9 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
           id: 'jwt_secret',
           label: 'JWT-secret (app-login)',
           status: 'fail',
-          detail: 'NEXTAUTH_SECRET/JWT_SECRET ontbreekt - de app kan geen sessie verifiëren.',
+          detail: 'NEXTAUTH_SECRET en JWT_SECRET ontbreken - de server valt terug op een ingebouwde ontwikkelsleutel, dus app-sessies zijn niet veilig.',
           action: 'Zet NEXTAUTH_SECRET op een lange willekeurige string (zelfde waarde in web en app-backend).',
-        }
+        },
   );
 
   // ── 3. Stripe live checks ─────────────────────────────────────────────────
@@ -264,8 +326,10 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
   let sessions30d: PaymentsHealthReport['stripe']['sessions30d'] = null;
   const recentEventTypes: PaymentsHealthReport['stripe']['recentEventTypes'] = [];
   let newestCheckoutCompletedAt: string | null = null;
+  const liveChecked = keyMode !== 'missing';
+  let deepChecked = false;
 
-  if (keyMode !== 'missing') {
+  if (liveChecked) {
     try {
       const balance = await stripe.balance.retrieve();
       keyWorks = true;
@@ -282,7 +346,6 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
       });
     }
 
-    // Prices
     for (const [plan, config] of Object.entries(STRIPE_PLANS) as [StripePlanId, (typeof STRIPE_PLANS)[StripePlanId]][]) {
       const priceId = process.env[config.priceEnvKey] || null;
       if (!priceId) {
@@ -322,39 +385,49 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
     }
 
     if (deep) {
-      // Webhook endpoints
+      deepChecked = true;
       try {
         const endpoints = await stripe.webhookEndpoints.list({ limit: 20 });
         for (const endpoint of endpoints.data) {
           const events = endpoint.enabled_events ?? [];
           const all = events.includes('*');
+          const covers = (name: string) => all || events.includes(name);
           webhookEndpoints.push({
             url: endpoint.url,
             status: endpoint.status ?? 'unknown',
-            coversCheckoutCompleted: all || events.includes('checkout.session.completed'),
-            coversSubscription:
-              all ||
-              events.some((e) => e.startsWith('customer.subscription.')),
+            coversCheckoutCompleted: covers('checkout.session.completed'),
+            coversSubscription: covers('customer.subscription.updated') && covers('customer.subscription.deleted'),
+            coversInvoices: covers('invoice.paid') || covers('invoice.payment_succeeded'),
+            coversRefunds: covers('charge.refunded'),
+            missingEvents: RECOMMENDED_STRIPE_EVENTS.filter((name) => !covers(name)),
           });
         }
-        const usable = webhookEndpoints.find(
-          (e) => e.status === 'enabled' && e.coversCheckoutCompleted
+        const ours = webhookEndpoints.filter(
+          (e) => e.status === 'enabled' && e.coversCheckoutCompleted && STRIPE_WEBHOOK_PATHS.some((path) => e.url.includes(path)),
         );
-        checks.push(
-          usable
-            ? { id: 'stripe_webhook_endpoint', label: 'Stripe webhook-endpoint', status: 'ok', detail: `Actief endpoint: ${usable.url}` }
-            : {
-                id: 'stripe_webhook_endpoint',
-                label: 'Stripe webhook-endpoint',
-                status: 'fail',
-                detail:
-                  webhookEndpoints.length === 0
-                    ? 'Geen enkel webhook-endpoint in Stripe geconfigureerd.'
-                    : 'Er is een endpoint, maar geen actief endpoint dat checkout.session.completed ontvangt.',
-                action:
-                  'Stripe -> Developers -> Webhooks -> Add endpoint: https://www.bijbelquiz.com/api/webhook/stripe, events checkout.session.completed + customer.subscription.created/updated/deleted. Zie stap 3.',
-              }
-        );
+        const usable = ours[0] ?? webhookEndpoints.find((e) => e.status === 'enabled' && e.coversCheckoutCompleted);
+        if (!usable) {
+          checks.push({
+            id: 'stripe_webhook_endpoint',
+            label: 'Stripe webhook-endpoint',
+            status: 'fail',
+            detail:
+              webhookEndpoints.length === 0
+                ? 'Geen enkel webhook-endpoint in Stripe geconfigureerd.'
+                : 'Er is een endpoint, maar geen actief endpoint dat checkout.session.completed ontvangt.',
+            action: `Stripe -> Developers -> Webhooks -> Add endpoint: https://www.bijbelquiz.com/api/webhook/stripe, met de events uit ${WEB_DOC}.`,
+          });
+        } else if (usable.missingEvents.length > 0) {
+          checks.push({
+            id: 'stripe_webhook_endpoint',
+            label: 'Stripe webhook-endpoint',
+            status: 'warn',
+            detail: `Actief endpoint ${usable.url}, maar het ontvangt niet: ${usable.missingEvents.join(', ')}. Zonder die events kloppen verlengingen, mislukte betalingen, opzeggingen of terugbetalingen niet.`,
+            action: `Voeg de ontbrekende events toe aan het endpoint in Stripe -> Developers -> Webhooks. Zie ${WEB_DOC}.`,
+          });
+        } else {
+          checks.push({ id: 'stripe_webhook_endpoint', label: 'Stripe webhook-endpoint', status: 'ok', detail: `Actief endpoint: ${usable.url}` });
+        }
       } catch (error) {
         checks.push({
           id: 'stripe_webhook_endpoint',
@@ -365,7 +438,6 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
         });
       }
 
-      // Checkout sessions, last 30 days
       try {
         const list = await stripe.checkout.sessions.list({
           limit: 100,
@@ -389,7 +461,6 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
         });
       }
 
-      // Recent events + newest checkout.session.completed
       try {
         const events = await stripe.events.list({ limit: 20 });
         for (const e of events.data) {
@@ -399,19 +470,39 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
           }
         }
       } catch {
-        // non-fatal
+        // non-fatal: the freshness check below simply does not run
       }
     }
   }
 
-  // ── 4. RevenueCat REST key live test ─────────────────────────────────────
+  // Shown prices: an explicit label wins, then the live Stripe price, then a
+  // built-in fallback (`premium-prices.ts`). Only the last is a problem.
+  const labelFallbacks = (Object.keys(PREMIUM_PRICE_LABEL_ENV) as Array<keyof typeof PREMIUM_PRICE_LABEL_ENV>).filter((plan) => {
+    if (envSet(PREMIUM_PRICE_LABEL_ENV[plan])) return false;
+    const live = priceRows.find((row) => row.plan === plan);
+    return !(live?.active && typeof live.amountCents === 'number' && (live.currency || '').toLowerCase() === 'eur');
+  });
+  checks.push(
+    labelFallbacks.length === 0
+      ? { id: 'price_labels', label: 'Getoonde prijzen', status: 'ok', detail: 'Elke getoonde prijs komt uit een prijslabel of uit de live Stripe-prijs.' }
+      : {
+          id: 'price_labels',
+          label: 'Getoonde prijzen',
+          status: 'warn',
+          detail: `Voor ${labelFallbacks.join(', ')} is geen prijslabel gezet en geen live Stripe-prijs opgehaald - de paywall toont dan een ingebouwd bedrag dat kan afwijken van wat Stripe rekent.`,
+          action: `Zet ${labelFallbacks.map((plan) => PREMIUM_PRICE_LABEL_ENV[plan]).join(', ')}, of zorg dat de Stripe-sleutel en price-id werken.`,
+        },
+  );
+
+  // ── 4. RevenueCat REST key live test (deep only: it is a network call) ──
   let rcRestWorks: boolean | null = null;
-  if (rcRest) {
+  if (rcRest && deep) {
     try {
-      const probe = await fetch(
-        'https://api.revenuecat.com/v1/subscribers/000000000000000000000000',
-        { headers: { Authorization: `Bearer ${process.env.REVENUECAT_REST_API_KEY}` } }
-      );
+      const probe = await fetch('https://api.revenuecat.com/v1/subscribers/bijbelquiz-healthcheck', {
+        headers: { Authorization: `Bearer ${process.env[rcKeyName!]}` },
+        signal: AbortSignal.timeout(6000),
+        cache: 'no-store',
+      });
       rcRestWorks = probe.status === 200 || probe.status === 201;
       checks.push(
         rcRestWorks
@@ -422,7 +513,7 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
               status: 'fail',
               detail: `RevenueCat weigert de REST-sleutel (HTTP ${probe.status}).`,
               action: 'Gebruik de SECRET key (sk_...) uit RevenueCat -> API keys, niet de public SDK-key.',
-            }
+            },
       );
     } catch (error) {
       checks.push({
@@ -434,43 +525,113 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
     }
   }
 
-  // ── 5. Stored webhook events ────────────────────────────────────────────
-  const [stripeWebhookCount, rcWebhookCount, newestStripeWebhook, newestRcWebhook] = await Promise.all([
+  // ── 5. Stored webhook events, failures, funnel ─────────────────────────
+  const internalIds = await getInternalAccountIds();
+  const internalSet = new Set(internalIds.map(String));
+  const notInternalEvent = internalIds.length > 0 ? { userId: { $nin: internalIds } } : {};
+  const stuckBefore = new Date(now - 15 * 60 * 1000);
+
+  const [
+    stripeWebhookCount,
+    rcWebhookCount,
+    newestStripeWebhook,
+    newestRcWebhook,
+    stripeStuck,
+    recentPayments,
+    pastDueAccounts,
+    funnelAgg,
+    stripeCheckoutsCompleted,
+  ] = await Promise.all([
     WebhookEvent.countDocuments({ provider: 'stripe' }),
     WebhookEvent.countDocuments({ provider: 'revenuecat' }),
     WebhookEvent.findOne({ provider: 'stripe' }).sort({ createdAt: -1 }).select('createdAt').lean(),
     WebhookEvent.findOne({ provider: 'revenuecat' }).sort({ createdAt: -1 }).select('createdAt').lean(),
+    WebhookEvent.countDocuments({ provider: 'stripe', status: 'processing', updatedAt: { $lt: stuckBefore } }),
+    Payment.find({ createdAt: { $gte: since30d } }).lean<PaymentLike[]>(),
+    User.countDocuments({ stripeSubscriptionStatus: { $in: ['past_due', 'unpaid'] }, ...(internalIds.length > 0 ? { _id: { $nin: internalIds } } : {}) }),
+    AnalyticsEvent.aggregate([
+      {
+        $match: {
+          name: { $in: ['paywall_shown', 'checkout_started', 'purchase_completed', 'trial_started', 'trial_converted'] },
+          createdAt: { $gte: since30d },
+          ...notInternalEvent,
+        },
+      },
+      { $group: { _id: '$name', n: { $sum: 1 } } },
+    ]),
+    // What a web checkout ends in: a purchase or, with a trial, a trial start.
+    AnalyticsEvent.countDocuments({
+      name: { $in: ['purchase_completed', 'trial_started'] },
+      'props.provider': 'stripe',
+      createdAt: { $gte: since30d },
+      ...notInternalEvent,
+    }),
   ]);
 
-  // ── 6. Funnel counts (30 days) ─────────────────────────────────────────
-  const funnelAgg = await AnalyticsEvent.aggregate([
-    { $match: { name: { $in: ['paywall_shown', 'checkout_started', 'purchase_completed', 'trial_started', 'trial_converted'] }, createdAt: { $gte: since30d } } },
-    { $group: { _id: '$name', n: { $sum: 1 } } },
-  ]);
   const funnelMap = new Map<string, number>(funnelAgg.map((r: { _id: string; n: number }) => [r._id, r.n]));
   const funnel30d = {
     paywallShown: funnelMap.get('paywall_shown') ?? 0,
     checkoutStarted: funnelMap.get('checkout_started') ?? 0,
     purchaseCompleted: funnelMap.get('purchase_completed') ?? 0,
+    stripeCheckoutsCompleted,
     trialStarted: funnelMap.get('trial_started') ?? 0,
     trialConverted: funnelMap.get('trial_converted') ?? 0,
   };
 
-  if (funnel30d.checkoutStarted > 0 && funnel30d.purchaseCompleted === 0) {
+  if (funnel30d.checkoutStarted > 0 && funnel30d.stripeCheckoutsCompleted === 0) {
     checks.push({
       id: 'funnel_no_purchase',
       label: 'Klik -> aankoop',
       status: 'fail',
-      detail: `${funnel30d.checkoutStarted} keer op "betalen" geklikt in 30 dagen, 0 voltooide aankopen geregistreerd.`,
-      action: 'Of niemand rondt af, of de webhook bevestigt het niet. Vergelijk met "Stripe checkout-sessies" hieronder: staat daar wel "complete", dan is het de webhook (stap 3-4).',
+      detail: `${funnel30d.checkoutStarted} keer op "betalen" geklikt in 30 dagen, 0 voltooide web-aankopen of proefperiodes geregistreerd.`,
+      action: `Of niemand rondt af, of de webhook bevestigt het niet. Vergelijk met "Checkout-sessies" bij Stripe hieronder: staat daar wel "voltooid", dan is het de webhook (${WEB_DOC}).`,
     });
   }
 
-  // ── 7. Access gaps: paid in Stripe but no premium on the account ────────
-  const accessGaps: PaymentsHealthReport['accessGaps'] = [];
-  const recentAttempts: PaymentsHealthReport['recentAttempts'] = [];
+  const classified = recentPayments.map((payment) => ({ payment, row: classifyPayment(payment, internalSet) }));
+  // Only rows written since the payment rework (they carry `environment`):
+  // before it, a cancelled subscription also left a EUR 0 row on `failed`,
+  // which is not a failed payment.
+  const failedPayments = classified.filter(
+    ({ payment, row }) =>
+      Boolean(payment.environment) &&
+      Number(payment.amount ?? 0) > 0 &&
+      !row.isTest &&
+      !row.isInternal &&
+      row.verdict === 'unpaid' &&
+      row.displayStatus === 'failed',
+  ).length;
+  const refunds30d = classified.filter(({ row }) => row.verdict === 'paid' && row.refundedCents > 0).length;
+  const failures30d = { failedPayments, pastDueAccounts, refunds: refunds30d };
 
-  if (deep && keyMode !== 'missing') {
+  checks.push(
+    failedPayments === 0 && pastDueAccounts === 0
+      ? { id: 'payment_failures', label: 'Mislukte betalingen', status: 'ok', detail: 'Geen mislukte betalingen in 30 dagen en geen abonnement met een betaalachterstand.' }
+      : {
+          id: 'payment_failures',
+          label: 'Mislukte betalingen',
+          status: 'warn',
+          detail: `${failedPayments} betaling(en) mislukt in 30 dagen; ${pastDueAccounts} account(s) met een abonnement dat achterloopt (past_due/unpaid). Meestal een verlopen kaart bij een verlenging.`,
+          action: 'Stripe probeert zelf opnieuw en mailt de klant als dat in Stripe -> Billing -> Revenue recovery aanstaat. Kijk in Stripe -> Payments bij "Failed" wie het betreft.',
+        },
+  );
+
+  if (stripeStuck > 0) {
+    checks.push({
+      id: 'webhook_stuck',
+      label: 'Webhook-verwerking',
+      status: 'warn',
+      detail: `${stripeStuck} Stripe-event(s) zijn binnengekomen maar niet afgerond (langer dan 15 minuten "processing").`,
+      action: 'Stripe probeert ze opnieuw. Zie de serverlogs bij [stripe-billing] voor de fout.',
+    });
+  }
+
+  // ── 6. Access gaps: paid but no premium on the account ──────────────────
+  const accessGaps: PaymentsHealthReport['accessGaps'] = [];
+  let recentAttempts: PaymentsHealthReport['recentAttempts'] = [];
+  let recentAttemptsSource: PaymentsHealthReport['recentAttemptsSource'] = 'payment';
+
+  if (deepChecked) {
     try {
       const list = await stripe.checkout.sessions.list({ limit: 25 });
       const userIds = list.data
@@ -489,17 +650,24 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
         : [];
       const paymentBySession = new Map(payments.map((p) => [p.stripeSessionId, p.status]));
 
+      recentAttemptsSource = 'stripe';
       for (const s of list.data) {
         const uid = s.metadata?.userId;
         const user = uid ? userById.get(uid) : undefined;
-        const access = user ? isPremiumNow(user) : false;
+        const access = user ? isPremiumNow(user, now) : false;
+        const plan = String(s.metadata?.plan ?? '-');
         const settledPaid = s.status === 'complete' && (s.payment_status === 'paid' || s.payment_status === 'no_payment_required');
+        // Only where the purchase should still be running: a lifetime buy, or
+        // a subscription started in the last 35 days. An older subscription
+        // may simply have ended; a group licence gives Premium to the members.
+        const shouldHaveAccess =
+          plan !== 'group' && (plan === 'lifetime' || now - s.created * 1000 < 35 * DAY_MS);
 
         recentAttempts.push({
           when: new Date(s.created * 1000).toISOString(),
           name: user?.name ?? '-',
-          email: user?.email ?? s.customer_email ?? '-',
-          plan: String(s.metadata?.plan ?? '-'),
+          email: user?.email ?? s.customer_email ?? s.customer_details?.email ?? '-',
+          plan,
           amountCents: s.amount_total ?? 0,
           currency: s.currency ?? 'eur',
           stripeSessionStatus: s.status ?? null,
@@ -509,7 +677,7 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
           source: 'stripe',
         });
 
-        if (settledPaid && user && !access) {
+        if (settledPaid && user && !access && shouldHaveAccess) {
           accessGaps.push({
             userId: uid!,
             name: user.name ?? '-',
@@ -529,49 +697,78 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
     }
   }
 
-  // Also: our own completed Payment rows whose user is not premium.
-  const completedPayments = await Payment.find({ status: 'completed' })
+  // Our own received payments whose paid period still runs, but whose
+  // account is not premium. Test money and refunded payments are not checked.
+  const ownPayments = await Payment.find({ status: { $in: ['completed', 'refunded'] } })
     .sort({ createdAt: -1 })
-    .limit(50)
+    .limit(200)
     .populate('user', 'name email isPremium premiumStripe premiumStore hasLifetimePremium groupPremiumUntil')
-    .lean();
-  for (const p of completedPayments as unknown as Array<Record<string, unknown>>) {
+    .lean<PaymentLike[]>();
+  for (const p of ownPayments) {
+    const row = classifyPayment(p, internalSet);
+    if (row.isTest || row.isRefunded || (row.verdict !== 'paid' && row.verdict !== 'internal')) continue;
+    if (!paidPeriodCoversNow(p, nowDate)) continue;
     const user = p.user as
       | { _id?: unknown; name?: string; email?: string; isPremium?: boolean; premiumStripe?: boolean; premiumStore?: boolean; hasLifetimePremium?: boolean; groupPremiumUntil?: Date | null }
       | null;
-    if (user && !isPremiumNow(user)) {
-      const uid = String(user._id ?? '');
-      if (!accessGaps.some((g) => g.userId === uid)) {
-        accessGaps.push({
-          userId: uid,
-          name: user.name ?? '-',
-          email: user.email ?? '-',
-          reason: 'Betaling staat op "completed" in onze database, maar het account is niet premium.',
-          when: p.createdAt instanceof Date ? p.createdAt.toISOString() : String(p.createdAt ?? ''),
-        });
-      }
-    }
-  }
-
-  if (accessGaps.length > 0) {
-    checks.push({
-      id: 'access_gaps',
-      label: 'Betaald zonder toegang',
-      status: 'fail',
-      detail: `${accessGaps.length} account(s) hebben betaald maar zijn niet premium.`,
-      action: 'Fix de webhook (stap 3-4). Zet toegang tijdelijk handmatig via /beheer of de Stripe-portal terwijl je dat doet.',
-    });
-  } else {
-    checks.push({
-      id: 'access_gaps',
-      label: 'Betaald zonder toegang',
-      status: 'ok',
-      detail: 'Geen mismatch gevonden: iedereen die betaalde is premium.',
+    if (!user || typeof user !== 'object' || !('email' in user) || isPremiumNow(user, now)) continue;
+    const uid = String(user._id ?? '');
+    if (accessGaps.some((g) => g.userId === uid)) continue;
+    accessGaps.push({
+      userId: uid,
+      name: user.name ?? '-',
+      email: user.email ?? '-',
+      reason: `Betaling (${p.provider === 'revenuecat' ? 'app' : 'web'}, ${p.planType ?? 'onbekend plan'}) is ontvangen en de betaalde periode loopt nog, maar het account is niet premium.`,
+      when: iso(paymentDate(p)) ?? '',
     });
   }
 
-  // Webhook freshness: Stripe sent a checkout completion but we stored nothing near it.
-  if (deep && newestCheckoutCompletedAt) {
+  checks.push(
+    accessGaps.length > 0
+      ? {
+          id: 'access_gaps',
+          label: 'Betaald zonder toegang',
+          status: 'fail',
+          detail: `${accessGaps.length} account(s) hebben betaald voor een periode die nog loopt, maar zijn niet premium.`,
+          action: 'Kijk of de webhook aankomt (zie hierboven). Zet toegang tijdelijk handmatig terwijl je dat oplost.',
+        }
+      : {
+          id: 'access_gaps',
+          label: 'Betaald zonder toegang',
+          status: 'ok',
+          detail: 'Geen mismatch gevonden: iedereen met een lopende betaalde periode is premium.',
+        },
+  );
+
+  // Without Stripe to ask, show our own newest payment rows.
+  if (recentAttemptsSource === 'payment') {
+    const rows = await Payment.find({})
+      .sort({ createdAt: -1 })
+      .limit(20)
+      .populate('user', 'name email isPremium premiumStripe premiumStore hasLifetimePremium groupPremiumUntil')
+      .lean<PaymentLike[]>();
+    recentAttempts = rows.map((p) => {
+      const user = (p.user ?? null) as { name?: string; email?: string; isPremium?: boolean } | null;
+      const row = classifyPayment(p, internalSet);
+      return {
+        when: iso(paymentDate(p)) ?? '',
+        name: user?.name ?? '-',
+        email: user?.email ?? 'verwijderd account',
+        plan: String(p.planType ?? '-'),
+        amountCents: Math.max(0, Math.round(Number(p.amount ?? 0))),
+        currency: row.currency,
+        stripeSessionStatus: null,
+        stripePaymentStatus: null,
+        ourPaymentStatus: row.isTest ? 'sandbox' : row.displayStatus,
+        hasAccessNow: user ? isPremiumNow(user, now) : false,
+        source: 'payment' as const,
+      };
+    });
+  }
+
+  // ── 7. Webhook freshness ───────────────────────────────────────────────
+  // Stripe sent a checkout completion but we stored nothing near it.
+  if (newestCheckoutCompletedAt) {
     const stripeAt = new Date(newestCheckoutCompletedAt).getTime();
     const oursAt = newestStripeWebhook?.createdAt ? new Date(newestStripeWebhook.createdAt).getTime() : 0;
     if (stripeAt - oursAt > 6 * 60 * 60 * 1000) {
@@ -579,21 +776,38 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
         id: 'webhook_freshness',
         label: 'Webhook komt aan',
         status: 'fail',
-        detail: `Stripe verstuurde recent (${newestCheckoutCompletedAt}) een checkout-bevestiging, maar onze nieuwste opgeslagen webhook is van ${newestStripeWebhook?.createdAt ?? 'nooit'}.`,
-        action: 'De webhook bereikt de server niet of faalt. Check Stripe -> Webhooks -> je endpoint -> "Recent deliveries" op non-2xx antwoorden.',
+        detail: `Stripe verstuurde op ${newestCheckoutCompletedAt} een checkout-bevestiging, maar onze nieuwste opgeslagen Stripe-webhook is van ${iso(newestStripeWebhook?.createdAt) ?? 'nooit'}.`,
+        action: 'De webhook bereikt de server niet of faalt. Check Stripe -> Webhooks -> je endpoint -> "Recent deliveries" op antwoorden die geen 2xx zijn.',
       });
+    } else {
+      checks.push({ id: 'webhook_freshness', label: 'Webhook komt aan', status: 'ok', detail: 'De nieuwste checkout-bevestiging van Stripe is ook bij ons verwerkt.' });
     }
+  }
+
+  // App purchases recorded, but no app webhook ever: the purchase came in
+  // through the app's own sync, so renewals and refunds will not arrive.
+  const storePayments30d = classified.filter(({ payment }) => payment.provider === 'revenuecat').length;
+  if (storePayments30d > 0 && rcWebhookCount === 0) {
+    checks.push({
+      id: 'rc_webhook_freshness',
+      label: 'App-webhook komt aan',
+      status: 'fail',
+      detail: `${storePayments30d} app-betaling(en) in 30 dagen, maar nog nooit een RevenueCat-webhook opgeslagen.`,
+      action: `Zet in RevenueCat -> Integrations -> Webhooks de URL https://www.bijbelquiz.com/api/mobile/revenuecat-webhook met dezelfde Authorization als REVENUECAT_WEBHOOK_AUTHORIZATION. Zie ${APP_DOC}.`,
+    });
   }
 
   const overall = checks.reduce<CheckStatus>((acc, c) => worst(acc, c.status), 'ok');
 
   return {
-    generatedAt: new Date().toISOString(),
+    generatedAt: new Date(now).toISOString(),
     overall,
     checks,
     stripe: {
       keyMode,
       keyWorks,
+      liveChecked,
+      deepChecked,
       accountCurrency,
       webhookEndpoints,
       prices: priceRows,
@@ -606,16 +820,19 @@ export async function getPaymentsHealth({ deep = true }: { deep?: boolean } = {}
       restKeyConfigured: rcRest,
       restKeyWorks: rcRestWorks,
       webhookEventsStored: rcWebhookCount,
-      newestWebhookEventAt: newestRcWebhook?.createdAt ? new Date(newestRcWebhook.createdAt).toISOString() : null,
+      newestWebhookEventAt: iso(newestRcWebhook?.createdAt),
     },
     webhooksStored: {
       stripe: stripeWebhookCount,
-      stripeNewestAt: newestStripeWebhook?.createdAt ? new Date(newestStripeWebhook.createdAt).toISOString() : null,
+      stripeNewestAt: iso(newestStripeWebhook?.createdAt),
+      stripeStuck,
       revenuecat: rcWebhookCount,
-      revenuecatNewestAt: newestRcWebhook?.createdAt ? new Date(newestRcWebhook.createdAt).toISOString() : null,
+      revenuecatNewestAt: iso(newestRcWebhook?.createdAt),
     },
+    failures30d,
     funnel30d,
     accessGaps,
+    recentAttemptsSource,
     recentAttempts: recentAttempts.slice(0, 20),
   };
 }

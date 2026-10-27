@@ -97,9 +97,9 @@ export function premiumCtaLabel(plan: PremiumPlanId, trialDays: number): string 
 }
 
 /** The reassurance line under the button (with the shield). */
-export function premiumReassurance(plan: PremiumPlanId, trialDays: number): string {
+export function premiumReassurance(plan: PremiumPlanId, trialDays: number, withReminder = true): string {
   if (plan === 'yearly' && trialDays > 0) {
-    const day = trialReminderDay(trialDays);
+    const day = withReminder ? trialReminderDay(trialDays) : null;
     return day === null ? 'Vandaag betaal je niets.' : `Vandaag betaal je niets. Herinnering op dag ${day}.`;
   }
   if (plan === 'lifetime') return 'Eenmalig betalen, geen abonnement.';

@@ -6,7 +6,7 @@ import SettingsView, { type PremiumRow } from '@/components/web2/account/Setting
 import { authOptions } from '@/lib/auth';
 import { connectDB, User } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
-import { resolvePremiumSubscription } from '@/lib/premium-subscription';
+import { hasActiveStripeSubscription, resolvePremiumSubscription } from '@/lib/premium-subscription';
 import { normalizeOnboardingSettings, normalizeUserSettings } from '@/lib/user-settings';
 
 export const metadata: Metadata = {
@@ -17,7 +17,9 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
-export default async function InstellingenPage() {
+export default async function InstellingenPage({ searchParams }: { searchParams: Promise<{ billing?: string | string[] }> }) {
+  const billingParam = (await searchParams).billing;
+  const billing = Array.isArray(billingParam) ? billingParam[0] : billingParam;
   const session = await getServerSession(authOptions);
 
   if (!session?.user?.id) {
@@ -45,6 +47,7 @@ export default async function InstellingenPage() {
         onboarding: normalizeOnboardingSettings(user.onboarding),
       }}
       premium={await premiumRow(user)}
+      billingError={billing === 'error' || billing === 'unavailable' ? billing : null}
     />
   );
 }
@@ -55,7 +58,8 @@ async function premiumRow(user: Parameters<typeof getPremiumSnapshot>[0] & Param
   if (!snapshot.isPremium) return { label: 'Je speelt gratis', action: 'link', href: '/premium' };
   if (user.hasLifetimePremium) return { label: 'Levenslang Premium', action: 'link', href: '/premium' };
 
-  if (snapshot.premiumStripe || user.stripeSubscriptionId) {
+  // Only a running subscription: an ended one must not hide app or group Premium.
+  if (hasActiveStripeSubscription(user)) {
     const subscription = await resolvePremiumSubscription(user);
     const label = subscription.cancelAtPeriodEnd
       ? `Opgezegd, actief tot ${subscription.endDateLabel || 'het einde van de periode'}`

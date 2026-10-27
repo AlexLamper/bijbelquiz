@@ -74,7 +74,10 @@ export default function QuizModerationList({ initialStatus }: { initialStatus: S
     try {
       const res = await fetch('/api/admin/quizzes?view=summary', { cache: 'no-store' });
       if (!res.ok) throw new Error(String(res.status));
-      setQuizzes(await res.json());
+      const rows = (await res.json()) as Array<Omit<QuizRow, 'status'> & { status?: StatusFilter | null }>;
+      // Old documents have no status; the catalogue treats them as live, so
+      // they belong under "Goedgekeurd" rather than in no tab at all.
+      setQuizzes(rows.map((row) => ({ ...row, status: row.status || 'approved' })));
       setFailed(false);
     } catch {
       setFailed(true);

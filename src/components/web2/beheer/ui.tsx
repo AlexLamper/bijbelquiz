@@ -171,12 +171,15 @@ export function AdminField({
 export const adminIconButton =
   'inline-flex size-10 shrink-0 items-center justify-center rounded-[10px] border border-line bg-card p-0 text-ink-soft no-underline transition-colors hover:bg-chip hover:text-ink disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lapis';
 
-/** dd-mm-yyyy, as the beheer designs print dates. */
+/**
+ * dd-mm-yyyy, as the beheer designs print dates, on the Amsterdam calendar:
+ * the server runs in UTC, so a sign-up at 00:30 Dutch time must not print as
+ * the day before.
+ */
 export function formatAdminDate(value: string | Date | null | undefined): string {
   if (!value) return '';
   const date = value instanceof Date ? value : new Date(value);
   if (Number.isNaN(date.getTime())) return '';
-  const dd = String(date.getDate()).padStart(2, '0');
-  const mm = String(date.getMonth() + 1).padStart(2, '0');
-  return `${dd}-${mm}-${date.getFullYear()}`;
+  const [yyyy, mm, dd] = date.toLocaleDateString('en-CA', { timeZone: 'Europe/Amsterdam' }).split('-');
+  return `${dd}-${mm}-${yyyy}`;
 }

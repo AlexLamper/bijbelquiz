@@ -13,6 +13,14 @@ export interface IUser extends Document {
   storePremiumExpiresAt?: Date | null;
   hasLifetimePremium: boolean;
   /**
+   * Premium switched on by hand (support, beheer). Set by
+   * `recomputeUserPremium` (premium-state.ts) the first time it finds
+   * `isPremium` with no Stripe, store or lifetime flag behind it, so a later
+   * purchase that ends does not take the manual grant with it. To take a
+   * manual grant away, set both this and `isPremium` to false.
+   */
+  premiumGranted?: boolean;
+  /**
    * Premium inherited from a group licence, valid until this moment.
    *
    * Denormalized from `GroupLicense` for the same reason
@@ -25,6 +33,25 @@ export interface IUser extends Document {
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;
   stripeSubscriptionStatus?: string;
+  /**
+   * The rest of the Stripe subscription as the last webhook described it
+   * (src/lib/stripe-billing.ts), so pages and the trial reminder need no Stripe
+   * call. `stripeSubscriptionEventAt` is the `created` time of that event:
+   * an older event arriving late is not applied over a newer one.
+   */
+  stripeSubscriptionPlan?: 'monthly' | 'yearly';
+  stripeCurrentPeriodEnd?: Date | null;
+  stripeCancelAtPeriodEnd?: boolean;
+  stripeTrialStart?: Date | null;
+  stripeTrialEnd?: Date | null;
+  stripePriceAmount?: number | null;
+  stripePriceCurrency?: string | null;
+  stripeSubscriptionEventAt?: Date | null;
+  /** When the "trial ends soon" mail is due (day 5 of a 7-day trial). */
+  stripeTrialReminderAt?: Date | null;
+  /** Subscription id the trial reminder was sent for: one mail per trial. */
+  stripeTrialReminderSentFor?: string | null;
+  stripeTrialReminderSentAt?: Date | null;
   xp: number;
   level: number;
   levelTitle: string;
@@ -98,10 +125,22 @@ const UserSchema: Schema = new Schema({
   premiumStore: { type: Boolean, default: false },
   storePremiumExpiresAt: { type: Date, default: null },
   hasLifetimePremium: { type: Boolean, default: false },
+  premiumGranted: { type: Boolean },
   groupPremiumUntil: { type: Date, default: null },
   stripeCustomerId: { type: String, index: true },
   stripeSubscriptionId: { type: String, index: true },
   stripeSubscriptionStatus: { type: String },
+  stripeSubscriptionPlan: { type: String, enum: ['monthly', 'yearly'] },
+  stripeCurrentPeriodEnd: { type: Date },
+  stripeCancelAtPeriodEnd: { type: Boolean },
+  stripeTrialStart: { type: Date },
+  stripeTrialEnd: { type: Date },
+  stripePriceAmount: { type: Number },
+  stripePriceCurrency: { type: String },
+  stripeSubscriptionEventAt: { type: Date },
+  stripeTrialReminderAt: { type: Date, index: { sparse: true } },
+  stripeTrialReminderSentFor: { type: String },
+  stripeTrialReminderSentAt: { type: Date },
   xp: { type: Number, default: 0, index: true },
   level: { type: Number, default: 1 },
   levelTitle: { type: String, default: 'Zoeker' },

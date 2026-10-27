@@ -42,6 +42,8 @@ interface SettingsViewProps {
     onboarding: UserOnboardingSettings;
   };
   premium: PremiumRow;
+  /** Set when the Stripe portal could not be opened (`?billing=`). */
+  billingError?: 'error' | 'unavailable' | null;
 }
 
 /** Display labels from the design; the stored values stay those of `INTEREST_OPTIONS`. */
@@ -159,7 +161,7 @@ const linkRow =
 
 /* ── Page ────────────────────────────────────────────────────────────────── */
 
-export default function SettingsView({ initialData, premium }: SettingsViewProps) {
+export default function SettingsView({ initialData, premium, billingError = null }: SettingsViewProps) {
   const { setTheme } = useTheme();
   const { update } = useSession();
 
@@ -502,9 +504,17 @@ export default function SettingsView({ initialData, premium }: SettingsViewProps
 
         <section id="abonnement" aria-labelledby="h-abonnement" className="flex flex-col gap-3">
           <SectionTitle id="h-abonnement" title="Abonnement en privacy" />
+          {billingError && (
+            <p role="status" className="m-0 rounded-[12px] bg-chip px-4 py-3 text-[15px] font-bold text-ink-soft">
+              {billingError === 'unavailable'
+                ? 'We vinden geen abonnement om te beheren. Mail info@bijbelquiz.com, dan helpen we je.'
+                : 'Het abonnementsoverzicht opent nu niet. Probeer het zo opnieuw.'}
+            </p>
+          )}
           <Card padding="none" className="overflow-hidden">
             {premium.action === 'portal' ? (
               <form action="/api/stripe/portal" method="POST" className="border-b border-line-soft">
+                <input type="hidden" name="terug" value="/instellingen" />
                 <button type="submit" className={cn(linkRow, 'border-b-0 font-[inherit]')}>
                   <PremiumRowContent label={premium.label} />
                 </button>

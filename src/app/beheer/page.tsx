@@ -5,7 +5,6 @@ import { redirect } from 'next/navigation';
 import { CheckCircle2, ChevronRight, KeyRound, Pencil, Plus, XCircle } from 'lucide-react';
 
 import { authOptions } from '@/lib/auth';
-import { connectDB, Quiz, User } from '@/database';
 import { AdminPageHeader, Button } from '@/components/bq';
 import { avatarToneFor, initialOf } from '@/components/bq/Avatar';
 import {
@@ -19,10 +18,9 @@ import {
 } from '@/components/web2/beheer/ui';
 import { cn } from '@/lib/utils';
 import { GROUP_LICENSE_SEATS } from '@/lib/group-license';
-import { isInternalAccount } from '@/lib/analytics/internal-accounts';
-import { getPremiumStats, formatEuroCents } from '@/lib/premium-stats';
+import { getAdminOverview } from '@/lib/admin/overview';
+import { formatEuroCents, formatMoneyCents } from '@/lib/premium-stats';
 import { getPaymentsHealth } from '@/lib/payments-health';
-import { getPremiumSnapshot } from '@/lib/premium-state';
 import AdminGroupLicenseForm from './AdminGroupLicenseForm';
 import AdminRefreshButton from './AdminRefreshButton';
 
@@ -30,6 +28,8 @@ export const metadata: Metadata = {
   title: 'Overzicht - Beheer',
   robots: { index: false, follow: false },
 };
+
+export const dynamic = 'force-dynamic';
 
 const AVATAR_TONE = {
   lapis: 'bg-lapis-tint text-lapis',
@@ -44,6 +44,7 @@ const PLAN_LABEL: Record<string, string> = {
   yearly: 'Jaarlijks',
   annual: 'Jaarlijks',
   lifetime: 'Levenslang',
+  group: 'Groepslicentie',
 };
 
 const PROVIDER_LABEL: Record<string, string> = {
@@ -51,34 +52,23 @@ const PROVIDER_LABEL: Record<string, string> = {
   revenuecat: 'RevenueCat',
 };
 
-const PAYMENT_STATUS: Record<string, { label: string; tone: 'green' | 'coral' | 'grey' }> = {
+const PAYMENT_STATUS: Record<string, { label: string; tone: 'green' | 'coral' | 'grey' | 'gold' }> = {
   completed: { label: 'Voltooid', tone: 'green' },
   failed: { label: 'Mislukt', tone: 'coral' },
   pending: { label: 'In behandeling', tone: 'grey' },
+  refunded: { label: 'Terugbetaald', tone: 'coral' },
+  disputed: { label: 'Betwist', tone: 'gold' },
+  trial: { label: 'Proefperiode', tone: 'grey' },
+  sandbox: { label: 'Test', tone: 'grey' },
 };
 
 const nl = new Intl.NumberFormat('nl-NL');
 const pct = new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 1 });
 
-type LeanUser = {
-  _id: unknown;
-  name?: string;
-  email?: string;
-  createdAt?: Date;
-  isPremium?: boolean;
-  premiumStripe?: boolean;
-  premiumStore?: boolean;
-  hasLifetimePremium?: boolean;
-  groupPremiumUntil?: Date | null;
-};
-
-type LeanQuiz = {
-  _id: unknown;
-  title: string;
-  status: string;
-  categoryId?: { title?: string } | null;
-  questions?: unknown[];
-};
+/** "+ US$ 4,99" for the amounts in currencies other than euro. */
+function otherCurrencyNote(rows: Array<{ currency: string; netCents: number }>): string {
+  return rows.map((row) => ` + ${formatMoneyCents(row.netCents, row.currency)}`).join('');
+}
 
 export default async function AdminDashboard() {
   const session = await getServerSession(authOptions);
@@ -86,39 +76,24 @@ export default async function AdminDashboard() {
     redirect('/');
   }
 
-  await connectDB();
+  // `getPremiumStats` (inside `getAdminOverview`) counts every way an account
+  // can be premium once (Stripe, store, lifetime, group licence, manual) and
+  // leaves the internal test/reviewer accounts out; revenue follows the rules
+  // in `lib/admin/revenue.ts`.
+  const [overview, paymentsHealth] = await Promise.all([
+    getAdminOverview(),
+    // Shallow: config verdict only, no network-heavy Stripe list calls.
+    getPaymentsHealth({ deep: false }).catch(() => null),
+  ]);
 
-  // `getPremiumStats` counts every way an account can be premium (Stripe, store,
-  // lifetime, group licence) and excludes the internal test/reviewer accounts -
-  // see `lib/premium-stats.ts`. It also carries the revenue + recent-payments
-  // data rendered lower down.
-  const [premiumStats, paymentsHealth, totalUsers, totalQuizzes, pendingQuizzes, recentUsers, recentQuizzes] =
-    await Promise.all([
-      getPremiumStats(),
-      // Shallow: config verdict only, no network-heavy Stripe list calls.
-      getPaymentsHealth({ deep: false }).catch(() => null),
-      User.countDocuments(),
-      Quiz.countDocuments(),
-      Quiz.countDocuments({ status: 'pending' }),
-      User.find()
-        .select('name email createdAt isPremium premiumStripe premiumStore hasLifetimePremium groupPremiumUntil')
-        .sort({ createdAt: -1 })
-        .limit(10)
-        .lean<LeanUser[]>(),
-      Quiz.find()
-        .select('title status categoryId questions._id createdAt')
-        .populate('categoryId', 'title')
-        .sort({ createdAt: -1 })
-        .limit(10)
-        .lean<LeanQuiz[]>(),
-    ]);
-
+  const { premium: premiumStats, totalUsers, totalQuizzes, pendingQuizzes, recentUsers, recentQuizzes } = overview;
   const internalExcluded = premiumStats.internalExcluded;
-  const share = totalUsers > 0 ? (premiumStats.premiumUsers / totalUsers) * 100 : 0;
   const breakdown = premiumStats.breakdown;
+  const revenue = premiumStats.revenue;
 
   const pipeline = paymentsHealth?.overall ?? 'warn';
   const pipelineFails = paymentsHealth?.checks.filter((check) => check.status === 'fail').length ?? 0;
+  const excludedRows = revenue.excluded.test + revenue.excluded.internal;
 
   return (
     <>
@@ -177,11 +152,12 @@ export default async function AdminDashboard() {
         </StatCard>
         <StatCard label="Premium" value={nl.format(premiumStats.premiumUsers)} icon={<CrownIcon />} tone="gold">
           <StatNote>
-            {pct.format(share)}% van totaal
+            {pct.format(premiumStats.premiumShareExact)}% van de accounts
             {internalExcluded > 0 && ` · ${internalExcluded} testaccounts niet meegeteld`}
           </StatNote>
           <span className="tabular text-xs font-bold leading-4 text-ink-muted">
             Stripe {breakdown.stripe} · Store {breakdown.store} · Levenslang {breakdown.lifetime} · Groep {breakdown.group}
+            {breakdown.other > 0 && ` · Handmatig ${breakdown.other}`}
           </span>
         </StatCard>
         <StatCard label="Quizzen" value={nl.format(totalQuizzes)} icon={<BookIcon />} tone="lapis">
@@ -198,11 +174,11 @@ export default async function AdminDashboard() {
           {recentUsers.length > 0 ? (
             <ul className="m-0 list-none p-0">
               {recentUsers.map((user) => {
-                const internal = isInternalAccount(user.email);
-                const premium = getPremiumSnapshot(user).isPremium || Boolean(user.hasLifetimePremium);
-                const name = user.name || 'Naamloos';
+                const internal = user.isInternal;
+                const premium = user.isPremium;
+                const name = user.name;
                 return (
-                  <li key={String(user._id)} className="flex min-h-[60px] items-center gap-3 border-t border-line-soft py-2.5 first:border-t-0">
+                  <li key={user.id} className="flex min-h-[60px] items-center gap-3 border-t border-line-soft py-2.5 first:border-t-0">
                     <span
                       aria-hidden="true"
                       className={cn(
@@ -239,16 +215,16 @@ export default async function AdminDashboard() {
           {recentQuizzes.length > 0 ? (
             <ul className="m-0 list-none p-0">
               {recentQuizzes.map((quiz) => (
-                <li key={String(quiz._id)} className="flex min-h-[60px] items-center gap-3 border-t border-line-soft py-2.5 first:border-t-0">
+                <li key={quiz.id} className="flex min-h-[60px] items-center gap-3 border-t border-line-soft py-2.5 first:border-t-0">
                   <span className="flex min-w-0 flex-1 flex-col">
                     <span className="truncate text-[15px] font-bold leading-5">{quiz.title}</span>
                     <span className="truncate text-[13px] font-semibold leading-[18px] text-ink-muted">
-                      {quiz.categoryId?.title || 'Geen categorie'} · {quiz.questions?.length ?? 0} vragen
+                      {quiz.category || 'Geen categorie'} · {quiz.questionCount} vragen
                     </span>
                   </span>
                   <QuizStatusPill status={quiz.status} />
                   <Link
-                    href={`/beheer/quizzen/${String(quiz._id)}/bewerken`}
+                    href={`/beheer/quizzen/${quiz.id}/bewerken`}
                     aria-label={`Bewerken: ${quiz.title}`}
                     title={`Bewerken: ${quiz.title}`}
                     className={adminIconButton}
@@ -267,13 +243,25 @@ export default async function AdminDashboard() {
       <AdminSection padding="list" className="gap-4">
         <AdminSectionHead
           title="Premium en betalingen"
-          description="Betalende accounts en omzet uit de Payment-collectie. Verlengingen van abonnementen worden als € 0 vastgelegd, dus de omzet telt vooral eerste aankopen."
+          description="Ontvangen betalingen uit de Payment-collectie: wat kopers betaalden, inclusief btw en vóór Stripe- of storekosten. Terugbetalingen gaan eraf; test- en sandboxbetalingen en testaccounts tellen niet mee. Oudere verlengingen staan als € 0 in de database en ontbreken in deze bedragen."
           action={<ArrowLink href="/beheer/betalingen">Betaal-pijplijn</ArrowLink>}
         />
         <div className="grid grid-cols-1 gap-3 m:grid-cols-3">
-          <RevenueTile label="Omzet (30 dagen)" value={formatEuroCents(premiumStats.revenue.grossCentsLast30d)} />
-          <RevenueTile label="Omzet (totaal)" value={formatEuroCents(premiumStats.revenue.grossCentsAllTime)} />
-          <RevenueTile label="Betalingen voltooid" value={nl.format(premiumStats.revenue.paymentsCompleted)} />
+          <RevenueTile
+            label="Netto omzet (30 dagen)"
+            value={formatEuroCents(revenue.netCentsLast30d)}
+            note={`Stripe ${formatEuroCents(revenue.bySource.stripe.netCentsLast30d)} · Store ${formatEuroCents(revenue.bySource.store.netCentsLast30d)}${otherCurrencyNote(revenue.otherCurrenciesLast30d)}`}
+          />
+          <RevenueTile
+            label="Netto omzet (totaal)"
+            value={formatEuroCents(revenue.netCentsAllTime)}
+            note={`${revenue.refundedCentsAllTime > 0 ? `${formatEuroCents(revenue.refundedCentsAllTime)} terugbetaald` : 'Geen terugbetalingen'}${otherCurrencyNote(revenue.otherCurrenciesAllTime)}`}
+          />
+          <RevenueTile
+            label="Betalingen ontvangen"
+            value={nl.format(revenue.paymentsCompleted)}
+            note={`${nl.format(revenue.renewalsAllTime)} verlengingen${excludedRows > 0 ? ` · ${nl.format(excludedRows)} test niet meegeteld` : ''}`}
+          />
         </div>
         <div className="flex flex-col gap-1">
           <h3 className="m-0 font-sans text-[15px] font-extrabold">Recente betalingen</h3>
@@ -294,25 +282,36 @@ export default async function AdminDashboard() {
                 <tbody className="text-sm leading-5">
                   {premiumStats.recentPayments.map((payment) => {
                     const status = PAYMENT_STATUS[payment.status] ?? { label: payment.status || 'Onbekend', tone: 'grey' as const };
+                    const testBadge = payment.isInternal ? 'Testaccount' : payment.isTest ? 'Test' : null;
                     return (
                       <tr key={payment.id} className="[&>td]:border-t [&>td]:border-line-soft [&>td]:py-3 [&>td]:align-middle">
                         <td className="pl-5 pr-4 font-extrabold text-ink">
                           <span className="inline-flex flex-wrap items-center gap-1">
-                            {payment.userName}
-                            {isInternalAccount(payment.userEmail) && (
+                            <span className={payment.userDeleted ? 'font-semibold text-ink-muted' : undefined}>{payment.userName}</span>
+                            {testBadge && (
                               <AdminPill tone="grey" className="ml-1.5">
-                                Testaccount
+                                {testBadge}
                               </AdminPill>
                             )}
                           </span>
                         </td>
                         <td className="px-4 font-semibold text-ink-soft">{PROVIDER_LABEL[payment.provider] ?? payment.provider}</td>
-                        <td className="px-4 font-semibold text-ink-soft">{PLAN_LABEL[payment.planType] ?? 'onbekend'}</td>
+                        <td className="px-4 font-semibold text-ink-soft">
+                          {PLAN_LABEL[payment.planType] ?? 'onbekend'}
+                          {payment.isRenewal && <span className="text-ink-muted"> · verlenging</span>}
+                        </td>
                         <td className="tabular whitespace-nowrap px-4 font-semibold text-ink-soft">{formatAdminDate(payment.createdAt)}</td>
                         <td className="px-4">
                           <AdminPill tone={status.tone}>{status.label}</AdminPill>
                         </td>
-                        <td className="tabular whitespace-nowrap pl-4 pr-5 text-right font-extrabold text-ink">{formatEuroCents(payment.amountCents)}</td>
+                        <td className="tabular whitespace-nowrap pl-4 pr-5 text-right font-extrabold text-ink">
+                          {formatMoneyCents(payment.amountCents, payment.currency)}
+                          {payment.refundedCents > 0 && payment.refundedCents < payment.amountCents && (
+                            <span className="block text-xs font-bold text-coral-text">
+                              {formatMoneyCents(payment.refundedCents, payment.currency)} terug
+                            </span>
+                          )}
+                        </td>
                       </tr>
                     );
                   })}
@@ -322,7 +321,7 @@ export default async function AdminDashboard() {
           ) : (
             <p className="mb-3 mt-1 text-sm font-semibold leading-5 text-ink-muted">
               Nog geen betalingen vastgelegd. Als er wel is betaald maar hier niets staat, bereikt de Stripe- of RevenueCat-webhook de
-              server niet (zie <code>docs/premium-setup-checklist.md</code>).
+              server niet (zie de controlelijst op <Link href="/beheer/betalingen">Betaal-pijplijn</Link>).
             </p>
           )}
         </div>
@@ -377,11 +376,12 @@ function StatNote({ children }: { children: React.ReactNode }) {
   return <span className="text-[13px] font-semibold leading-[18px] text-ink-muted">{children}</span>;
 }
 
-function RevenueTile({ label, value }: { label: string; value: string }) {
+function RevenueTile({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
     <div className="flex min-w-0 flex-col gap-1 rounded-[12px] border border-line px-4 py-3.5">
       <span className="text-[13px] font-bold text-ink-muted">{label}</span>
       <span className="tabular text-2xl font-extrabold leading-[30px]">{value}</span>
+      {note && <span className="tabular text-xs font-bold leading-4 text-ink-muted">{note}</span>}
     </div>
   );
 }

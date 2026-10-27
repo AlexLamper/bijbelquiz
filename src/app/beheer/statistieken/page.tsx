@@ -284,7 +284,7 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
         <StatCard
           label="Quizzen gespeeld"
           value={formatNumber(overview.quizPlays)}
-          meta={`door ${formatNumber(overview.quizPlayers)} spelers · gemiddeld ${formatShare(overview.avgScorePct)} goed`}
+          meta={`door ${formatNumber(overview.quizPlayers)} accounts (gasten niet) · gemiddeld ${formatShare(overview.avgScorePct)} goed`}
         />
         <StatCard label="Ingelogd" value={formatShare(overview.signedInShare)} meta="van de bezoeken had een account" />
         <StatCard
@@ -296,7 +296,7 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
           label="Premium"
           value={formatShare(overview.premiumShare)}
           tone={overview.premiumUsers > 0 ? 'positive' : 'neutral'}
-          meta={`${formatNumber(overview.premiumUsers)} betalende accounts${
+          meta={`${formatNumber(overview.premiumUsers)} accounts met Premium${
             overview.internalPremiumExcluded > 0 ? ` · ${overview.internalPremiumExcluded} testaccounts niet meegeteld` : ''
           }`}
         />
@@ -308,7 +308,7 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
         <StatCard
           label="Actief"
           value={formatNumber(overview.activeMonth)}
-          meta={`speelden deze maand · ${formatNumber(overview.activeWeek)} deze week · ${formatNumber(overview.activeDay)} vandaag`}
+          meta={`speelden in 30 dagen · ${formatNumber(overview.activeWeek)} in 7 dagen · ${formatNumber(overview.activeDay)} vandaag`}
         />
       </Grid>
 
@@ -316,12 +316,12 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
       <SectionHeading
         id="verloop"
         title="Verloop"
-        intro="Elke grafiek heeft een eigen schaal die op nul begint. Ze naast elkaar leggen met één as zou de vergelijking onwaar maken, dus staan ze onder elkaar met dezelfde tijdlijn."
+        intro="Elke grafiek heeft een eigen schaal die op nul begint. Ze naast elkaar leggen met één as zou de vergelijking onwaar maken, dus staan ze onder elkaar met dezelfde tijdlijn. Een dag is een kalenderdag in Nederlandse tijd, en de periode is vandaag plus de dagen ervoor."
       />
       <Grid cols={2}>
         <DailyPanel title="Paginaweergaven per dag" points={daily} read={(p) => p.pageViews} unit="weergaven" />
         <DailyPanel title="Bezoeken per dag" points={daily} read={(p) => p.sessions} unit="bezoeken" />
-        <DailyPanel title="Afgeronde quizzen per dag" points={daily} read={(p) => p.quizzes} unit="afgerond" tone="green" />
+        <DailyPanel title="Afgeronde quizzen, ook gasten" points={daily} read={(p) => p.quizzes} unit="afgerond" tone="green" />
         <DailyPanel title="Nieuwe accounts per dag" points={daily} read={(p) => p.signups} unit="registraties" tone="green" />
       </Grid>
       <Panel title="Wanneer op de dag" meta="Europese tijd, Amsterdam">
@@ -732,7 +732,7 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
       <SectionHeading
         id="quizzen"
         title="Quizzen"
-        intro="Gespeeld komt uit de opgeslagen resultaten en klopt ook voor de tijd voordat deze meting bestond. Geopend, gestart en afgebroken komen uit de gebeurtenissen. Afmaakratio is afgerond gedeeld door gestart."
+        intro="Gespeeld komt uit de opgeslagen resultaten van accounts en klopt ook voor de tijd voordat deze meting bestond; elke herhaling telt als een poging, gasten tellen niet mee. Geopend, gestart en afgebroken komen uit de gebeurtenissen. Afmaakratio is afgerond gedeeld door gestart."
       />
       <Grid cols={4}>
         <StatCard
@@ -920,7 +920,7 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
         <StatCard
           label="Gem. quizzen"
           value={formatDecimal(users.avgQuizzesPlayed)}
-          meta={`per account · ${formatNumber(users.streaks.withStreak)} lopende streaks, langste ooit ${formatNumber(users.streaks.longest)}`}
+          meta={`pogingen per account · ${formatNumber(users.streaks.withStreak)} lopende streaks, langste ooit ${formatNumber(users.streaks.longest)}`}
         />
       </Grid>
       {users.levels.length > 0 && (

@@ -6,7 +6,7 @@ import { AlertTriangle, ArrowRight, Check, CircleHelp, CreditCard, RefreshCw, Sm
 import { authOptions } from '@/lib/auth';
 import { cn } from '@/lib/utils';
 import { getPaymentsHealth, type CheckStatus, type HealthCheck } from '@/lib/payments-health';
-import { formatEuroCents } from '@/lib/premium-stats';
+import { formatMoneyCents } from '@/lib/premium-stats';
 import { Button } from '@/components/bq/Button';
 import { AdminPageHeader } from '@/components/bq/AdminShell';
 import {
@@ -50,6 +50,12 @@ const PLAN_LABELS: Record<string, string> = {
   yearly: 'Jaarlijks',
   lifetime: 'Levenslang',
   group: 'Groepslicentie',
+};
+
+const KEY_MODE_LABELS: Record<'live' | 'test' | 'missing', string> = {
+  live: 'live',
+  test: 'test',
+  missing: 'ontbreekt',
 };
 
 const INTERVAL_LABELS: Record<string, string> = {
@@ -131,6 +137,12 @@ export default async function PaymentsHealthPage() {
   const oks = report.checks.filter((c) => c.status === 'ok');
   const attention = [...fails, ...warns];
   const funnel = report.funnel30d;
+  const notChecked =
+    report.stripe.keyMode === 'missing'
+      ? 'Niet gecontroleerd: er is geen Stripe-sleutel (STRIPE_SECRET_KEY).'
+      : report.stripe.keyWorks === false
+        ? 'Niet gecontroleerd: Stripe weigert de sleutel.'
+        : null;
 
   return (
     <>
@@ -205,7 +217,7 @@ export default async function PaymentsHealthPage() {
               title="Stripe (web)"
               description={
                 <>
-                  Sleutel: <strong className="text-ink">{report.stripe.keyMode}</strong>
+                  Sleutel: <strong className="text-ink">{KEY_MODE_LABELS[report.stripe.keyMode]}</strong>
                   {report.stripe.keyWorks === true && ' · geaccepteerd'}
                   {report.stripe.keyWorks === false && ' · geweigerd'}
                   {report.stripe.accountCurrency && ` · valuta ${report.stripe.accountCurrency.toUpperCase()}`}
@@ -214,7 +226,9 @@ export default async function PaymentsHealthPage() {
             />
             <div className="flex flex-col gap-2">
               <SubHead>Webhook-endpoints</SubHead>
-              {report.stripe.webhookEndpoints.length === 0 ? (
+              {!report.stripe.deepChecked ? (
+                <p className="m-0 text-sm font-semibold text-ink-muted">{notChecked ?? 'Niet gecontroleerd.'}</p>
+              ) : report.stripe.webhookEndpoints.length === 0 ? (
                 <p className="m-0 text-sm font-bold text-coral-text">Geen enkel endpoint geconfigureerd in Stripe.</p>
               ) : (
                 report.stripe.webhookEndpoints.map((endpoint) => (
@@ -226,7 +240,14 @@ export default async function PaymentsHealthPage() {
                     <span className="flex flex-wrap gap-x-4 gap-y-1.5">
                       <YesNo ok={endpoint.coversCheckoutCompleted} label="checkout" />
                       <YesNo ok={endpoint.coversSubscription} label="abonnement" />
+                      <YesNo ok={endpoint.coversInvoices} label="verlenging" />
+                      <YesNo ok={endpoint.coversRefunds} label="terugbetaling" />
                     </span>
+                    {endpoint.missingEvents.length > 0 && (
+                      <span className="text-[13px] font-semibold leading-[18px] text-ink-muted [overflow-wrap:anywhere]">
+                        Ontbreekt: <Mono className="text-[12.5px]">{endpoint.missingEvents.join(', ')}</Mono>
+                      </span>
+                    )}
                   </div>
                 ))
               )}
@@ -244,7 +265,9 @@ export default async function PaymentsHealthPage() {
               </>
             }
           >
-            {report.stripe.prices.length === 0 && <EmptyRow columns={3}>Nog geen prijzen opgehaald bij Stripe.</EmptyRow>}
+            {report.stripe.prices.length === 0 && (
+              <EmptyRow columns={3}>{notChecked ? notChecked.replace('Niet gecontroleerd', 'Niet opgehaald') : 'Nog geen prijzen opgehaald bij Stripe.'}</EmptyRow>
+            )}
             {report.stripe.prices.map((price) => {
               const [tone, label] = priceStatus(price);
               return (
@@ -257,7 +280,7 @@ export default async function PaymentsHealthPage() {
                   </Td>
                   <Td valign="middle" align="right" numeric tone="strong">
                     {price.amountCents != null
-                      ? `${formatEuroCents(price.amountCents)}${price.interval ? ` ${INTERVAL_LABELS[price.interval] ?? `/ ${price.interval}`}` : ''}`
+                      ? `${formatMoneyCents(price.amountCents, price.currency ?? 'eur')}${price.interval ? ` ${INTERVAL_LABELS[price.interval] ?? `/ ${price.interval}`}` : ''}`
                       : '-'}
                   </Td>
                 </tr>
@@ -289,7 +312,7 @@ export default async function PaymentsHealthPage() {
             <div className="flex flex-col gap-2">
               <SubHead>Recente Stripe-events</SubHead>
               {report.stripe.recentEventTypes.length === 0 ? (
-                <p className="m-0 text-sm font-semibold text-ink-muted">geen</p>
+                <p className="m-0 text-sm font-semibold text-ink-muted">{report.stripe.deepChecked ? 'geen' : 'niet opgehaald'}</p>
               ) : (
                 <div className="flex flex-wrap gap-1.5">
                   {report.stripe.recentEventTypes.slice(0, 6).map((event) => (
@@ -340,7 +363,7 @@ export default async function PaymentsHealthPage() {
               <InfoRow label="Nieuwste app-webhook">{formatDateTime(report.revenuecat.newestWebhookEventAt)}</InfoRow>
               {report.revenuecat.webhookEventsStored === 0 && (
                 <p className="m-0 border-t border-line-soft py-2.5 text-sm font-bold leading-5 text-coral-text">
-                  Nul opgeslagen app-webhooks. Als er in de app is gekocht, komt de webhook niet binnen. Zie stap 7-9.
+                  Nul opgeslagen app-webhooks. Als er in de app is gekocht, komt de webhook niet binnen. Zie docs/setup/betalingen-app.md.
                 </p>
               )}
             </div>
@@ -348,7 +371,7 @@ export default async function PaymentsHealthPage() {
 
           {/* Funnel */}
           <section className="flex min-w-0 flex-col gap-3.5 rounded-[16px] border border-line bg-card px-5 pb-5 pt-[18px]">
-            <CardTitle title="Funnel (30 dagen)" description="Van paywall gezien tot betaald." />
+            <CardTitle title="Funnel (30 dagen)" description="Van paywall gezien tot betaald, in aantal keer. Test- en reviewaccounts tellen niet mee." />
             <HBarList
               label="Funnel over 30 dagen"
               labelColumn="minmax(120px, 150px)"
@@ -356,15 +379,15 @@ export default async function PaymentsHealthPage() {
               rows={[
                 { label: 'Paywall gezien', value: funnel.paywallShown },
                 { label: 'Op betalen geklikt', value: funnel.checkoutStarted },
-                { label: 'Aankoop voltooid', value: funnel.purchaseCompleted },
+                { label: 'Aankoop (web + app)', value: funnel.purchaseCompleted },
                 { label: 'Proef gestart', value: funnel.trialStarted },
                 { label: 'Proef omgezet', value: funnel.trialConverted },
               ]}
             />
             {funnel.checkoutStarted > 0 && (
               <p className="m-0 text-sm font-bold leading-5 text-ink-soft tabular-nums">
-                Afronding bij Stripe: {formatPct(Math.round((funnel.purchaseCompleted / funnel.checkoutStarted) * 100))} (
-                {funnel.purchaseCompleted}/{funnel.checkoutStarted})
+                Afronding bij Stripe: {formatPct(Math.round((funnel.stripeCheckoutsCompleted / funnel.checkoutStarted) * 100))} (
+                {funnel.stripeCheckoutsCompleted}/{funnel.checkoutStarted}, web-aankopen en proefperiodes)
               </p>
             )}
           </section>
@@ -373,14 +396,16 @@ export default async function PaymentsHealthPage() {
           <section className="flex min-w-0 flex-col gap-3.5 rounded-[16px] border border-line bg-card px-5 pb-5 pt-[18px]">
             <CardTitle
               title="Betaald zonder toegang"
-              description="Accounts met een geslaagde betaling die toch niet premium zijn. Dit hoort altijd leeg te zijn."
+              description="Accounts met een ontvangen betaling waarvan de betaalde periode nog loopt, die toch niet premium zijn. Dit hoort altijd leeg te zijn."
             />
             {report.accessGaps.length === 0 ? (
               <div className="flex items-center gap-3 rounded-[12px] border border-line px-4 py-3.5">
                 <span aria-hidden="true" className="flex size-7 shrink-0 items-center justify-center rounded-full bg-green text-white">
                   <Check className="size-4" strokeWidth={2.6} />
                 </span>
-                <span className="text-[15px] font-bold leading-[22px] text-green-text">Leeg. Iedereen die betaalde heeft Premium.</span>
+                <span className="text-[15px] font-bold leading-[22px] text-green-text">
+                  Leeg. Iedereen met een lopende betaalde periode heeft Premium.
+                </span>
               </div>
             ) : (
               <ul className="m-0 flex list-none flex-col gap-2.5 p-0">
@@ -407,7 +432,11 @@ export default async function PaymentsHealthPage() {
       {/* Recent attempts */}
       <TableCard
         title="Recente betaalpogingen"
-        description="Laatste checkout-sessies uit Stripe, naast onze status en de toegang nu."
+        description={
+          report.recentAttemptsSource === 'stripe'
+            ? 'Laatste checkout-sessies uit Stripe, naast onze status en de toegang nu.'
+            : 'Stripe kon niet gevraagd worden, dus dit zijn onze eigen laatste betaalregels (web en app), met de toegang nu.'
+        }
         caption="Recente betaalpogingen"
         minWidth={960}
         head={
@@ -424,7 +453,9 @@ export default async function PaymentsHealthPage() {
         }
       >
         {report.recentAttempts.length === 0 ? (
-          <EmptyRow columns={8}>Nog geen checkout-sessies bij Stripe.</EmptyRow>
+          <EmptyRow columns={8}>
+            {report.recentAttemptsSource === 'stripe' ? 'Nog geen checkout-sessies bij Stripe.' : 'Nog geen betalingen vastgelegd.'}
+          </EmptyRow>
         ) : (
           report.recentAttempts.map((attempt, index) => (
             <tr key={`${attempt.when}-${index}`}>
@@ -438,7 +469,7 @@ export default async function PaymentsHealthPage() {
                 <Mono className="text-[13px] text-ink-soft">{attempt.plan}</Mono>
               </Td>
               <Td valign="middle" align="right" numeric tone="strong">
-                {formatEuroCents(attempt.amountCents)}
+                {formatMoneyCents(attempt.amountCents, attempt.currency)}
               </Td>
               <Td valign="middle">
                 <Mono className="text-[13px] text-ink-soft">{attempt.stripeSessionStatus ?? '-'}</Mono>
@@ -472,10 +503,10 @@ export default async function PaymentsHealthPage() {
         <div className="min-w-0">
           <h2 className="m-0 font-sans text-[17px] font-extrabold leading-6">Wat moet ik doen?</h2>
           <p className="mb-0 mt-1 max-w-[80ch] text-[15px] font-semibold leading-[22px] text-ink-soft">
-            De volledige stap-voor-stap handleiding staat in <Mono className="text-[13px] text-ink">docs/premium-setup-checklist.md</Mono>{' '}
-            in de repo (lokaal, niet in git). Werk de regels in de controlelijst hierboven af in de volgorde waarin ze staan;
-            elke regel verwijst naar het stapnummer in dat document. Kom daarna terug en druk op{' '}
-            <strong className="text-ink">Ververs</strong>.
+            De stap-voor-stap handleidingen staan in de repo: <Mono className="text-[13px] text-ink">docs/setup/betalingen-web.md</Mono>{' '}
+            (Stripe, website) en <Mono className="text-[13px] text-ink">docs/setup/betalingen-app.md</Mono> (RevenueCat, App Store en
+            Play). Werk de regels in de controlelijst hierboven af in de volgorde waarin ze staan; elke regel noemt het document
+            dat erbij hoort. Kom daarna terug en druk op <strong className="text-ink">Ververs</strong>.
           </p>
         </div>
       </section>

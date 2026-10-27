@@ -37,6 +37,12 @@ export interface PaymentLike {
   status?: string | null;
   createdAt?: Date | string | null;
   stripeSessionId?: string | null;
+  stripeInvoiceId?: string | null;
+  stripePaymentIntentId?: string | null;
+  stripeChargeId?: string | null;
+  externalTransactionId?: string | null;
+  /** End of the paid period (Stripe invoices). */
+  periodEnd?: Date | string | null;
   environment?: string | null;
   livemode?: boolean | null;
   isTest?: boolean | null;
@@ -76,6 +82,10 @@ export interface ClassifiedPayment {
   displayStatus: string;
 }
 
+// Not `disputed`: Stripe takes the money back when a chargeback opens (and the
+// write side closes a lifetime licence then); a won dispute returns the row to
+// `completed`, a lost one makes it `refunded`. Not `trial` either: the EUR 0
+// first invoice of a free trial.
 const PAID_STATUSES = new Set(['completed', 'succeeded', 'paid', 'refunded', 'partially_refunded']);
 const TEST_ENVIRONMENTS = new Set(['sandbox', 'test', 'testing', 'development', 'staging']);
 const RENEWAL_KINDS = new Set(['renewal', 'renew', 'subscription_cycle', 'recurring']);
@@ -134,6 +144,11 @@ function wasPaid(payment: PaymentLike): boolean {
   return (
     status === 'failed' &&
     (payment.provider ?? 'stripe') === 'stripe' &&
+    // Only rows from before the rework: those never carry these fields, and a
+    // newer checkout row that failed really did fail.
+    !payment.environment &&
+    !payment.stripeInvoiceId &&
+    !payment.billingReason &&
     typeof payment.stripeSessionId === 'string' &&
     payment.stripeSessionId.length > 0 &&
     cents(payment.amount) > 0
@@ -229,8 +244,17 @@ export function summarizeRevenue(
     excluded: { test: 0, internal: 0, unpaid: 0, zeroAmount: 0 },
   };
 
+  // The same charge must not be counted twice if it ever lands on two rows
+  // (a checkout row and its invoice row, say): one charge, one payment.
+  const seenCharges = new Set<string>();
+
   for (const payment of payments) {
+    const chargeKey = [payment.stripePaymentIntentId, payment.stripeChargeId, payment.stripeInvoiceId, payment.externalTransactionId]
+      .filter((value): value is string => typeof value === 'string' && value.length > 0)
+      .map((value) => `${payment.provider ?? 'stripe'}:${value}`);
+    if (chargeKey.some((key) => seenCharges.has(key))) continue;
     const row = classifyPayment(payment, internalIds);
+    if (row.verdict === 'paid') chargeKey.forEach((key) => seenCharges.add(key));
     if (row.verdict === 'test') summary.excluded.test += 1;
     else if (row.verdict === 'internal') summary.excluded.internal += 1;
     else if (row.verdict === 'unpaid') summary.excluded.unpaid += 1;
@@ -281,4 +305,36 @@ export function formatMoneyCents(amountCents: number, currency = 'eur'): string 
   } catch {
     return `${code} ${((amountCents || 0) / 100).toFixed(2).replace('.', ',')}`;
   }
+}
+
+const PERIOD_FALLBACK_DAYS: Record<string, number> = {
+  monthly: 35,
+  yearly: 370,
+  annual: 370,
+};
+
+/**
+ * Should this payment still be giving its buyer Premium right now?
+ *
+ * Used by "Betaald zonder toegang": a renewal from last spring belongs to a
+ * subscription that may well have ended since, so only payments whose paid
+ * period still runs are compared with the account. Lifetime always runs. A
+ * group licence gives Premium to the members, not to the buyer, so it never
+ * counts here. Without a stored period end, a monthly payment is taken to
+ * cover 35 days and a yearly one 370 (a few days of slack for late renewals).
+ */
+export function paidPeriodCoversNow(payment: PaymentLike, now: Date = new Date()): boolean {
+  const plan = String(payment.planType ?? '').toLowerCase();
+  if (plan === 'group') return false;
+  if (plan === 'lifetime') return true;
+
+  if (payment.periodEnd) {
+    const end = new Date(payment.periodEnd);
+    if (!Number.isNaN(end.getTime())) return end.getTime() > now.getTime();
+  }
+
+  const days = PERIOD_FALLBACK_DAYS[plan];
+  const paidAt = paymentDate(payment);
+  if (!days || !paidAt) return false;
+  return paidAt.getTime() + days * 24 * 60 * 60 * 1000 > now.getTime();
 }

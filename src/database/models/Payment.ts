@@ -10,16 +10,35 @@ export interface IPayment extends Document {
   externalTransactionId?: string;
   amount: number;
   currency: string;
+  /** `refunded`: the store or Stripe paid it back. */
+  // `disputed`: Stripe chargeback open. `trial`: the EUR 0 first invoice of a
+  // free trial (kept for the history, never revenue).
+  status: 'pending' | 'completed' | 'failed' | 'refunded' | 'disputed' | 'trial';
+  // Stripe only (see src/lib/stripe-billing.ts). `environment` is shared with
+  // RevenueCat: a Stripe test-mode payment is `sandbox`.
+  /** One row per invoice for subscriptions: the first charge and every renewal. */
+  stripeInvoiceId?: string;
+  stripePaymentIntentId?: string;
+  stripeChargeId?: string;
+  stripeCustomerId?: string;
+  /** Stripe's `billing_reason`: subscription_create, subscription_cycle, subscription_update, ... */
+  billingReason?: string;
+  /** Cents paid back (refunds and lost disputes); the row keeps its original `amount`. */
+  amountRefunded?: number;
+  /** Stripe dispute status while / after a chargeback: needs_response, won, lost, ... */
+  disputeStatus?: string;
+  periodStart?: Date;
+  periodEnd?: Date;
+  paidAt?: Date;
   /**
-   * `refunded`: the store or Stripe paid it back. `sandbox`: an App Store /
-   * Play test purchase - recorded, never counted as revenue.
+   * `sandbox` for App Store / Play sandbox and Stripe test-mode payments;
+   * revenue figures must leave those out. Rows from before this field have
+   * none and are production.
    */
-  status: 'pending' | 'completed' | 'failed' | 'refunded' | 'sandbox';
+  environment?: 'sandbox' | 'production';
   // RevenueCat (app store) purchases only.
   /** `app_store` or `play_store`. */
   store?: string;
-  /** `SANDBOX` or `PRODUCTION`, as RevenueCat reports it. */
-  environment?: 'SANDBOX' | 'PRODUCTION';
   productId?: string;
   originalTransactionId?: string;
   /** RevenueCat event that created the row: INITIAL_PURCHASE, RENEWAL, NON_RENEWING_PURCHASE. */
@@ -43,7 +62,7 @@ const PaymentSchema: Schema = new Schema({
   currency: { type: String, default: 'eur' },
   status: { type: String, required: true, default: 'pending' },
   store: { type: String },
-  environment: { type: String, enum: ['SANDBOX', 'PRODUCTION'] },
+  environment: { type: String, enum: ['sandbox', 'production'] },
   productId: { type: String },
   originalTransactionId: { type: String },
   eventType: { type: String },
@@ -51,7 +70,24 @@ const PaymentSchema: Schema = new Schema({
   isTrialConversion: { type: Boolean },
   purchasedAt: { type: Date },
   refundedAt: { type: Date },
+  stripeInvoiceId: { type: String },
+  stripePaymentIntentId: { type: String, index: true },
+  stripeChargeId: { type: String },
+  stripeCustomerId: { type: String },
+  billingReason: { type: String },
+  amountRefunded: { type: Number },
+  disputeStatus: { type: String },
+  periodStart: { type: Date },
+  periodEnd: { type: Date },
+  paidAt: { type: Date },
 }, { timestamps: true });
+
+// One row per Stripe invoice (renewals included). Partial for the same reason
+// as the two indexes below.
+PaymentSchema.index(
+  { provider: 1, stripeInvoiceId: 1 },
+  { unique: true, partialFilterExpression: { stripeInvoiceId: { $type: 'string' } }, name: 'provider_stripeInvoiceId_unique' },
+);
 
 // Partial, not sparse: `provider` is on every row, so a sparse compound index
 // still indexes rows without the id as `null` and refuses the second one.

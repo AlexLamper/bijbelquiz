@@ -123,11 +123,11 @@ export async function getInternalAccountCount(): Promise<number> {
 export async function premiumUserFilter(now: Date = new Date()): Promise<UserFilter> {
   const ids = await getInternalAccountIds();
   const premium = { $or: effectivePremiumOr(now) };
-  return (ids.length > 0 ? { ...premium, _id: { $nin: ids } } : premium) as UserFilter;
+  return (ids.length > 0 ? { ...premium, _id: { $nin: ids } } : premium) as unknown as UserFilter;
 }
 
 /** `{ _id: { $nin: internal } }`, or `{}` when none exist. */
 export async function notInternalFilter(): Promise<UserFilter> {
   const ids = await getInternalAccountIds();
-  return (ids.length > 0 ? { _id: { $nin: ids } } : {}) as UserFilter;
+  return (ids.length > 0 ? { _id: { $nin: ids } } : {}) as unknown as UserFilter;
 }

@@ -38,7 +38,7 @@ export interface MultiplayerQuotaState {
 
 interface RawQuotaUser {
   isPremium?: boolean;
-  hasLifetimePremium?: unknown;
+  hasLifetimePremium?: boolean;
   premiumStripe?: boolean;
   premiumStore?: boolean;
   storePremiumExpiresAt?: Date | string | null;

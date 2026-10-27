@@ -1,6 +1,6 @@
 import { Payment } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
-import { resolvePremiumSubscription } from '@/lib/premium-subscription';
+import { hasActiveStripeSubscription, resolvePremiumSubscription } from '@/lib/premium-subscription';
 
 /**
  * What a player who already has Premium sees on /premium instead of the plans.
@@ -23,7 +23,15 @@ export interface PremiumMemberUser {
   stripeCustomerId?: string | null;
   stripeSubscriptionId?: string | null;
   stripeSubscriptionStatus?: string | null;
+  stripeSubscriptionPlan?: 'monthly' | 'yearly' | null;
+  stripeCurrentPeriodEnd?: Date | string | null;
+  stripeCancelAtPeriodEnd?: boolean | null;
 }
+
+/** Fields the Premium page selects for `resolvePremiumMemberState`. */
+export const PREMIUM_MEMBER_FIELDS =
+  'name email isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium ' +
+  'stripeCustomerId stripeSubscriptionId stripeSubscriptionStatus stripeSubscriptionPlan stripeCurrentPeriodEnd stripeCancelAtPeriodEnd';
 
 export interface PremiumMemberState {
   source: 'lifetime' | 'stripe' | 'store' | 'group' | 'account';
@@ -50,7 +58,7 @@ function formatDate(input: Date | string | null | undefined): string | null {
 }
 
 export function isPremiumUser(user: PremiumMemberUser): boolean {
-  return getPremiumSnapshot(user).isPremium || Boolean(user.hasLifetimePremium);
+  return getPremiumSnapshot(user).isPremium;
 }
 
 export async function resolvePremiumMemberState(user: PremiumMemberUser): Promise<PremiumMemberState> {
@@ -69,7 +77,9 @@ export async function resolvePremiumMemberState(user: PremiumMemberUser): Promis
     };
   }
 
-  if (snapshot.premiumStripe || user.stripeSubscriptionId) {
+  // Only a subscription that is running now: an old, ended Stripe
+  // subscription must not hide Premium bought in the app.
+  if (hasActiveStripeSubscription(user)) {
     const [subscription, lastPayment] = await Promise.all([
       resolvePremiumSubscription({ ...user, isPremium: true }),
       Payment.findOne({ user: String(user._id), provider: 'stripe', planType: { $in: ['monthly', 'yearly'] } })
@@ -79,10 +89,10 @@ export async function resolvePremiumMemberState(user: PremiumMemberUser): Promis
         .catch(() => null),
     ]);
 
-    const planType = (lastPayment as { planType?: string } | null)?.planType;
+    const planType = subscription.plan ?? (lastPayment as { planType?: string } | null)?.planType;
     // Older purchases carry no plan on their payment row; say where it runs.
     const planLabel = planType === 'yearly' ? 'Jaarlijks' : planType === 'monthly' ? 'Maandelijks' : 'Via de website';
-    const trialing = subscription.statusText === 'Proefperiode';
+    const trialing = subscription.status === 'trialing';
     const rows = [
       { label: 'Abonnement', value: planLabel },
       { label: 'Status', value: subscription.cancelAtPeriodEnd ? 'Opgezegd' : subscription.statusText },
@@ -97,9 +107,13 @@ export async function resolvePremiumMemberState(user: PremiumMemberUser): Promis
     return {
       source: 'stripe',
       rows,
-      note: subscription.cancelAtPeriodEnd
-        ? 'Je houdt Premium tot het einde van de periode die je al betaald hebt.'
-        : 'Opzeggen kan wanneer je wilt. Je houdt Premium tot het einde van de periode die je al betaald hebt.',
+      note: subscription.status === 'past_due'
+        ? 'Je laatste betaling is niet gelukt. Werk je betaalmethode bij via Beheer je abonnement; je houdt Premium zolang we het opnieuw proberen.'
+        : subscription.cancelAtPeriodEnd
+          ? 'Je houdt Premium tot het einde van de periode die je al betaald hebt.'
+          : trialing
+            ? 'Opzeggen kan wanneer je wilt. Zeg je op in de proefperiode, dan betaal je niets.'
+            : 'Opzeggen kan wanneer je wilt. Je houdt Premium tot het einde van de periode die je al betaald hebt.',
       canManageInPortal: true,
       showGroupLink: false,
     };

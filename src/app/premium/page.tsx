@@ -21,7 +21,8 @@ import { GROUP_LICENSE_SEATS } from '@/lib/group-license-constants';
 import { readPremiumPageQuery, trialReminderDay } from '@/lib/premium-offer';
 import { getPremiumPriceLabels, sellablePremiumPlans } from '@/lib/premium-prices';
 import { trialDaysForPlan } from '@/lib/stripe-plans';
-import { isPremiumUser, resolvePremiumMemberState, type PremiumMemberState } from './member-state';
+import { isMailConfigured } from '@/lib/auth/mail';
+import { isPremiumUser, PREMIUM_MEMBER_FIELDS, resolvePremiumMemberState, type PremiumMemberState } from './member-state';
 
 export const metadata: Metadata = {
   title: 'Premium - Speel onbeperkt',
@@ -64,9 +65,7 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
   const [user, quizCount, prices] = await Promise.all([
     session?.user?.id
       ? User.findById(session.user.id)
-          .select(
-            'name email isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium stripeCustomerId stripeSubscriptionId stripeSubscriptionStatus',
-          )
+          .select(PREMIUM_MEMBER_FIELDS)
           .lean()
           .catch(() => null)
       : null,
@@ -77,7 +76,11 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
   // The database decides, not the session: the session flag lags a purchase.
   const member: PremiumMemberState | null = user && isPremiumUser(user) ? await resolvePremiumMemberState(user) : null;
   const trialDays = trialDaysForPlan('yearly', process.env.STRIPE_TRIAL_DAYS);
-  const reminderDay = trialReminderDay(trialDays);
+  // The reminder mail (src/lib/trial-reminder.ts) needs SMTP; without it the
+  // page does not promise one.
+  const trialReminder = isMailConfigured();
+  const reminderDay = trialReminder ? trialReminderDay(trialDays) : null;
+  const billing = Array.isArray(params.billing) ? params.billing[0] : params.billing;
 
   const title = member
     ? 'Je hebt Premium'
@@ -108,11 +111,12 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
           </div>
 
           {member ? (
-            <MemberCard member={member} returnPath={query.returnPath} />
+            <MemberCard member={member} returnPath={query.returnPath} billingError={billing === 'error' || billing === 'unavailable' ? billing : null} />
           ) : (
             <PlanPicker
               prices={prices}
               trialDays={trialDays}
+              trialReminder={trialReminder}
               sellable={sellablePremiumPlans()}
               initialPlan={query.plan}
               isLoggedIn={Boolean(session?.user?.id)}
@@ -160,7 +164,7 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
               {
                 question: 'Hoe zeg ik op?',
                 answer:
-                  'Wanneer je wilt, via Profiel en dan Premium. Je houdt Premium tot het einde van de periode die je al betaald hebt. Betaal je via de app, dan zeg je op in de App Store of Google Play.',
+                  'Wanneer je wilt, met de knop Beheer je abonnement op deze pagina of in Instellingen. Je houdt Premium tot het einde van de periode die je al betaald hebt. Betaal je via de app, dan zeg je op in de App Store of Google Play.',
               },
               {
                 question: 'Wat als ik opzeg in de proefperiode?',
@@ -192,9 +196,24 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
 }
 
 /** The right-hand card for somebody who already has Premium. */
-function MemberCard({ member, returnPath }: { member: PremiumMemberState; returnPath: string | null }) {
+function MemberCard({
+  member,
+  returnPath,
+  billingError,
+}: {
+  member: PremiumMemberState;
+  returnPath: string | null;
+  billingError: 'error' | 'unavailable' | null;
+}) {
   return (
     <div className="box-border flex flex-col rounded-[20px] border border-line bg-card px-7 pb-[26px] pt-8 max-m:p-5">
+      {billingError && (
+        <p role="status" className="m-0 mb-4 rounded-[12px] bg-chip px-4 py-3 text-center text-[15px] font-bold text-ink-soft">
+          {billingError === 'unavailable'
+            ? 'We vinden geen abonnement om te beheren. Mail info@bijbelquiz.com, dan helpen we je.'
+            : 'Het abonnementsoverzicht opent nu niet. Probeer het zo opnieuw.'}
+        </p>
+      )}
       <h2 className="m-0 text-[22px] leading-7">Je lidmaatschap</h2>
       <p className="m-0 mt-1.5 text-[15px] font-semibold leading-[22px] text-ink-muted">{member.note}</p>
       <DetailRows rows={member.rows} className="mt-5" />
@@ -204,6 +223,7 @@ function MemberCard({ member, returnPath }: { member: PremiumMemberState; return
         </Button>
         {member.canManageInPortal && (
           <form action="/api/stripe/portal" method="POST">
+            <input type="hidden" name="terug" value="/premium" />
             <Button type="submit" variant="secondary" size="xl" block>
               Beheer je abonnement
             </Button>

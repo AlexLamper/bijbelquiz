@@ -6,13 +6,15 @@ import type Stripe from 'stripe';
 
 import { Button, Container } from '@/components/bq';
 import { DetailRows, PremiumPreview } from '@/components/web2/premium/parts';
-import { connectDB, Payment, User } from '@/database';
+import { connectDB, User } from '@/database';
+import { isMailConfigured } from '@/lib/auth/mail';
 import { authOptions } from '@/lib/auth';
 import { formatStripeAmount, trialReminderDate } from '@/lib/premium-offer';
 import { getPremiumPriceLabels } from '@/lib/premium-prices';
-import { getPremiumSnapshot, updateUserPremiumFromStripe } from '@/lib/premium-state';
+import { getPremiumSnapshot } from '@/lib/premium-state';
+import { applyCheckoutSession, readSubscription } from '@/lib/stripe-billing';
 import stripe from '@/lib/stripe';
-import { readReturnPath, readStripePlan, STRIPE_PLANS, type StripePlanId } from '@/lib/stripe-plans';
+import { readReturnPath, readStripePlan, type StripePlanId } from '@/lib/stripe-plans';
 import SessionRefresher from './SessionRefresher';
 
 export const metadata: Metadata = {
@@ -77,87 +79,46 @@ export default async function SuccessPage({ searchParams }: PageProps) {
 
   let purchase: VerifiedPurchase | null = null;
 
-  // Verify the payment securely on the server
+  // Verify the payment on the server and open Premium at once; the webhook
+  // does the same through the same function, so whichever is first wins and
+  // the other changes nothing. Only a completed, paid (or free-trial) checkout
+  // of this account counts: an open or unpaid session id opens nothing.
   if (session_id) {
     try {
       await connectDB();
-      const checkoutSession = await stripe.checkout.sessions.retrieve(session_id);
+      const checkoutSession = await stripe.checkout.sessions.retrieve(session_id, { expand: ['subscription'] });
+      const settled =
+        checkoutSession.status === 'complete' &&
+        (checkoutSession.payment_status === 'paid' || checkoutSession.payment_status === 'no_payment_required');
 
-      if (checkoutSession.metadata?.userId === session.user.id) {
-        // Read through the shared plan table. Deciding "monthly or else
-        // lifetime" here is what used to hand every yearly subscriber - and
-        // every group licence buyer - permanent free access.
-        const planType = readStripePlan(checkoutSession.metadata?.plan);
-        const planConfig = STRIPE_PLANS[planType];
+      if (checkoutSession.metadata?.userId === session.user.id && settled) {
+        await applyCheckoutSession(checkoutSession, { observedAt: new Date(), recordAnalytics: false });
 
-        const customerId = typeof checkoutSession.customer === 'string' ? checkoutSession.customer : undefined;
-        const subscriptionId = typeof checkoutSession.subscription === 'string' ? checkoutSession.subscription : undefined;
+        const subscription =
+          checkoutSession.subscription && typeof checkoutSession.subscription === 'object'
+            ? (checkoutSession.subscription as Stripe.Subscription)
+            : null;
+        const facts = subscription ? readSubscription(subscription) : null;
+        // Read through the shared plan table (and the price, after a switch).
+        const planType: StripePlanId = facts?.plan ?? readStripePlan(checkoutSession.metadata?.plan);
+        const item = subscription?.items?.data?.[0];
 
         purchase = {
           plan: planType,
-          isTrialing: false,
-          trialDays: 0,
-          trialEnd: null,
-          trialStart: null,
-          periodEnd: null,
-          priceLabel: null,
+          isTrialing: facts?.status === 'trialing',
+          trialDays:
+            facts?.trialStart && facts.trialEnd
+              ? Math.round((facts.trialEnd.getTime() - facts.trialStart.getTime()) / DAY_MS)
+              : 0,
+          trialEnd: facts?.trialEnd ?? null,
+          trialStart: facts?.trialStart ?? null,
+          periodEnd: facts?.currentPeriodEnd ?? null,
+          priceLabel: formatStripeAmount(item?.price?.unit_amount, item?.price?.currency),
           amountPaid: formatStripeAmount(checkoutSession.amount_total, checkoutSession.currency),
         };
-
-        let subscriptionStatus: string | undefined;
-        if (subscriptionId) {
-          try {
-            const subscription: Stripe.Subscription = await stripe.subscriptions.retrieve(subscriptionId);
-            subscriptionStatus = subscription.status;
-            purchase.isTrialing = subscription.status === 'trialing';
-            if (typeof subscription.trial_end === 'number') purchase.trialEnd = new Date(subscription.trial_end * 1000);
-            if (typeof subscription.trial_start === 'number') purchase.trialStart = new Date(subscription.trial_start * 1000);
-            if (purchase.trialEnd && purchase.trialStart) {
-              purchase.trialDays = Math.round((purchase.trialEnd.getTime() - purchase.trialStart.getTime()) / DAY_MS);
-            }
-            const item = subscription.items?.data?.[0];
-            if (typeof item?.current_period_end === 'number') purchase.periodEnd = new Date(item.current_period_end * 1000);
-            purchase.priceLabel = formatStripeAmount(item?.price?.unit_amount, item?.price?.currency);
-          } catch (subscriptionError) {
-            console.warn('Could not fetch subscription status on success page', subscriptionError);
-          }
-        }
-
-        // A group licence is not a personal subscription: the webhook grants the
-        // licence and its join code, and touching the buyer's own premium flags
-        // here would leave them stuck on after the licence lapses.
-        if (!planConfig.isGroup) {
-          // Update DB immediately in case webhook is slow or missing. Route the
-          // write through the same helper the webhook uses: setting `isPremium`
-          // directly used to leave `premiumStripe` unset, so the two sources of
-          // truth disagreed until some later Stripe event happened to repair it.
-          await updateUserPremiumFromStripe(session.user.id, true, {
-            hasLifetimePremium: planConfig.isLifetime,
-            ...(customerId ? { stripeCustomerId: customerId } : {}),
-            ...(subscriptionId ? { stripeSubscriptionId: subscriptionId } : {}),
-            ...(subscriptionStatus ? { stripeSubscriptionStatus: subscriptionStatus } : {}),
-          });
-        }
-
-        await Payment.updateOne(
-          { provider: 'stripe', stripeSessionId: checkoutSession.id },
-          {
-            $setOnInsert: {
-              user: session.user.id,
-              provider: 'stripe',
-              planType,
-              stripeSessionId: checkoutSession.id,
-              stripeSubscriptionId: subscriptionId,
-              amount: checkoutSession.amount_total || 0,
-              currency: checkoutSession.currency || 'eur',
-              status: 'completed',
-            },
-          },
-          { upsert: true }
-        );
       }
     } catch (error) {
-      console.error("Error verifying payment:", error);
+      console.error('Error verifying payment:', error);
     }
   }
 
@@ -170,7 +131,7 @@ export default async function SuccessPage({ searchParams }: PageProps) {
       const user = await User.findById(session.user.id)
         .select('isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium')
         .lean();
-      accountIsPremium = Boolean(user && (getPremiumSnapshot(user).isPremium || user.hasLifetimePremium));
+      accountIsPremium = Boolean(user && getPremiumSnapshot(user).isPremium);
     } catch (error) {
       console.warn('Could not read premium state on success page', error);
     }
@@ -262,7 +223,8 @@ async function describe(
   const price = `${purchase.priceLabel ?? fallbackPrices[purchase.plan]} ${period}`;
 
   if (purchase.isTrialing) {
-    const reminder = purchase.trialStart ? trialReminderDate(purchase.trialStart, purchase.trialDays) : null;
+    // The reminder mail needs SMTP; without it no reminder is promised.
+    const reminder = purchase.trialStart && isMailConfigured() ? trialReminderDate(purchase.trialStart, purchase.trialDays) : null;
     const freeDays = purchase.trialDays > 0 ? `de eerste ${purchase.trialDays} dagen` : 'tijdens de proefperiode';
     return {
       title: 'Je proefperiode is gestart',

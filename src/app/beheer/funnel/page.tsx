@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
-import { getDayThirtyRetention, getFunnelReport, getRecentEvents } from '@/lib/analytics/funnel';
+import { NO_TRIGGER, getDayThirtyRetention, getFunnelReport, getRecentEvents } from '@/lib/analytics/funnel';
 import { STUDIE_PROMO_CODE } from '@/lib/ecosystem-links';
 import { MULTIPLAYER_FREE_ROOM_QUOTA } from '@/lib/premium-benefits';
 import { AdminPageHeader } from '@/components/bq/AdminShell';
@@ -41,6 +41,7 @@ const TRIGGER_LABELS: Record<string, string> = {
   review_locked: 'Terugkijken op slot',
   'gratis-limiet': 'Gratis quizzen op',
   direct: 'Rechtstreeks bezoek',
+  [NO_TRIGGER]: 'Geen paywall gezien',
 };
 
 /** Where a BijbelStudie link sits, in words (see STUDIE_LINK_SURFACES). */
@@ -90,7 +91,7 @@ export default async function FunnelPage() {
     <>
       <AdminPageHeader
         title="Funnel"
-        description={`Laatste ${report.windowDays} dagen. De hostcijfers tellen alle accounts, ook die van voor de meting, omdat die teller op het gebruikersdocument staat. De test- en reviewaccounts blijven buiten de retentiecijfers: ze hebben allemaal premium, dus anders bestaat die groep vooral uit onszelf.`}
+        description={`Vandaag en de ${report.windowDays - 1} dagen ervoor (Nederlandse tijd). De hostcijfers tellen alle accounts, ook die van voor de meting, omdat die teller op het gebruikersdocument staat. De test- en reviewaccounts tellen nergens mee: ze hebben allemaal premium en doen testaankopen, dus anders bestaan deze cijfers vooral uit onszelf.`}
       />
 
       {!hasEvents && (
@@ -111,7 +112,7 @@ export default async function FunnelPage() {
         <StatCard
           label="Naar BijbelStudie"
           value={formatNumber(report.handover.clicks)}
-          meta={`${formatPct(report.handover.perCompletion)} van ${formatNumber(report.activation.quizzesCompleted)} afgeronde quizzen`}
+          meta={`kliks, ${formatPct(report.handover.perCompletion)} van het aantal afgeronde quizzen (${formatNumber(report.activation.quizzesCompleted)})`}
         />
         <StatCard
           label="Popup weggeklikt"
@@ -181,7 +182,7 @@ export default async function FunnelPage() {
         <div className="flex min-w-0 flex-col gap-4">
           <SectionHeading
             title="Per trigger"
-            intro="Aankopen worden toegewezen aan de laatste paywall die dit account binnen twee uur zag."
+            intro="Aankopen worden toegewezen aan de laatste paywall die dit account binnen twee uur zag. Weergaven zijn keren getoond, niet personen."
           />
           <TableCard
             caption="Per trigger"
@@ -228,8 +229,8 @@ export default async function FunnelPage() {
           <h2 className="m-0 font-sans text-[17px] font-extrabold leading-6">Proefperiode</h2>
           <span className="text-[32px] font-extrabold leading-10 tabular-nums">{formatPct(report.trials.conversionRate)}</span>
           <Note>
-            {formatNumber(report.trials.converted)} van {formatNumber(report.trials.started)} proefperiodes werden betaald.
-            {report.trials.started === 0 && ' Nog geen proefperiodes gestart.'}
+            In deze periode {formatNumber(report.trials.started)} proefperiodes gestart en {formatNumber(report.trials.converted)} omgezet in
+            een betaald abonnement (een omzetting kan bij een eerder gestarte proef horen).
           </Note>
           <div className="mt-2.5">
             <HBarList
