@@ -30,7 +30,6 @@ import {
   coin,
   colossus,
   columns,
-  crescent,
   cross,
   crowd,
   crown,
@@ -38,12 +37,9 @@ import {
   donkey,
   dove,
   dunes,
-  ellipse,
   fireBed,
   fish,
   flame,
-  forkedRoad,
-  frog,
   gateArch,
   goat,
   goblet,
@@ -52,11 +48,9 @@ import {
   hand,
   horse,
   houseBlock,
-  hsl,
   lamp,
   lion,
   loaf,
-  locust,
   mat,
   ox,
   palm,
@@ -71,7 +65,6 @@ import {
   ridge,
   ring,
   river,
-  rngFor,
   rotate,
   roundStone,
   sandal,
@@ -87,7 +80,6 @@ import {
   stars,
   streaks,
   stump,
-  sunDisc,
   swarm,
   swell,
   tablets,
@@ -99,9 +91,7 @@ import {
   tower,
   trail,
   tree,
-  tri,
   vineRow,
-  water,
   well,
   wheat,
   window as windowFrame,
@@ -109,10 +99,12 @@ import {
   ziggurat,
 } from './quiz-cover-primitives.mjs';
 
+import { OPTION_A, OPTION_A_SLUGS } from './cover-options/option-a-licht.mjs';
 import {
   G,
   base,
   fg,
+  groupOf,
   renderSceneFor,
   type Scene,
 } from './quiz-cover-scene-kit.mjs';
@@ -178,7 +170,9 @@ const CORE_SCENES: Record<string, Scene> = {
     draw: (c) => [
       base(c, { sunX: 300, sunY: 250, sunR: 62, far: 'dunes', horizon: 452 }),
       cityWall(1080, 452, 0.85, c.p.far, 300, { opacity: 0.9 }),
-      forkedRoad(640, 452, c.p.near, { opacity: 0.85 }),
+      // The two ways of Spreuken: a fork in the road at the traveller's feet.
+      trail(640, 720, 450, 456, 70, '#FFFFFF', { opacity: 0.5 }),
+      trail(640, 720, 850, 456, 70, '#FFFFFF', { opacity: 0.5 }),
       person(640, 600, 1.25, c.p.fore, 'stand'),
       cypress(1010, 470, 0.8, c.p.mid),
       fg(c, 700, 20),
@@ -259,9 +253,9 @@ const CORE_SCENES: Record<string, Scene> = {
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'none', far: 'none', ground: 'flat', horizon: 540, stars: 0 }),
-      rect(0, 0, W, 540, c.p.mid, { opacity: 0.5 }),
       columns(210, 540, 1.0, c.p.near, 2),
-      rect(430, 120, 560, 420, c.p.near, { opacity: 0.55 }),
+      rect(430, 150, 560, 390, c.p.far, { opacity: 0.6 }),
+      rect(430, 150, 560, 16, c.p.near, { opacity: 0.5 }),
       c.soft(760, 300, 190, 0.16),
       hand(760, 320, 1.5, c.p.light),
       goblet(300, 530, 1.3, c.p.accent),
@@ -580,8 +574,7 @@ const CORE_SCENES: Record<string, Scene> = {
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 900, sunY: 240, far: 'dunes', horizon: 470 }),
       houseBlock(c.rand, 320, 470, 0.9, c.p.near),
-      swarm(c.rand, 60, 300, W - 120, 300, 1.5, c.p.fore, 44, 'frog'),
-      swarm(c.rand, 60, 180, W - 120, 200, 0.9, c.p.fore, 60, 'dot'),
+      swarm(c.rand, 520, 430, 820, 110, 1.5, c.p.fore, 16, 'frog'),
       fg(c, 672, 20),
     ],
   },
@@ -603,7 +596,7 @@ const CORE_SCENES: Record<string, Scene> = {
     draw: (c) => [
       base(c, { sun: 'glow', sunX: 260, sunY: 250, sunR: 60, far: 'dunes', horizon: 480 }),
       c.veil(420, W, c.p.fore, 0.55),
-      swarm(c.rand, 40, 130, W - 80, 340, 1.6, c.p.fore, 90, 'locust'),
+      swarm(c.rand, 480, 150, 860, 260, 1.5, c.p.fore, 38, 'locust'),
       wheat(300, 484, 0.9, c.p.crop, 4),
       fg(c, 674, 20),
     ],
@@ -883,11 +876,12 @@ const CORE_SCENES: Record<string, Scene> = {
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'none', stars: 54, far: 'none', ground: 'flat', horizon: 556 }),
-      rect(600, 96, W - 600, 460, c.p.near),
-      rect(578, 74, W - 578, 28, c.p.mid),
-      c.soft(930, 320, 250, 0.34),
-      windowFrame(930, 396, 2.2, c.p.mid, c.p.glow),
-      person(1210, 300, 0.9, c.p.fore, 'fallen'),
+      // Hand-fixed for the light style: the house no longer runs off the edge.
+      rect(720, 180, 480, 376, c.p.near),
+      rect(700, 160, 520, 24, c.p.mid),
+      c.soft(960, 330, 250, 0.34),
+      windowFrame(960, 396, 2.0, c.p.mid, c.p.glow),
+      person(600, 556, 0.95, c.p.fore, 'fallen'),
       lamp(330, 452, 2.2, c.p.near, c.p.accent),
       person(300, 556, 1.2, c.p.fore, 'stand'),
       person(438, 556, 1.1, c.p.fore, 'raise'),
@@ -2010,5 +2004,8 @@ export const SCENE_MODULES: Record<string, Record<string, Scene>> = {
 export function renderScene(slug: string): string {
   const scene = SCENES[slug];
   if (!scene) throw new Error(`No scene defined for "${slug}"`);
+  // The six covers composed by hand in the style round are the reference for
+  // the whole set; they are used as drawn there.
+  if (OPTION_A_SLUGS.has(slug)) return OPTION_A.render({ slug, group: groupOf(slug), reference: '', title: '', kind: '', chapter: null, book: '' });
   return renderSceneFor(slug, scene);
 }

@@ -285,6 +285,9 @@ const SCENES: Record<string, (c: Ctx) => string[]> = {
   },
 };
 
+/** The slugs drawn by hand for the options round; production uses these six as they are. */
+export const OPTION_A_SLUGS: ReadonlySet<string> = new Set(Object.keys(SCENES));
+
 export const OPTION_A = {
   id: 'a-licht-landschap',
   letter: 'A',

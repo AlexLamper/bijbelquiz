@@ -1,9 +1,10 @@
 /**
  * Quizzes that have a cover of their own on disk.
  *
- * GENERATED - do not edit. `scripts/generate-quiz-covers.mts` rewrites this
- * from `docs/quiz-image-prompts/manifest.json` every time it draws the covers,
- * so the list can never claim a file that was never rendered.
+ * GENERATED - do not edit. `scripts/generate-quiz-covers.mts` reads this
+ * list, draws a cover for every slug on it and rewrites it after a full run,
+ * so the list can never claim a file that was never rendered. A new quiz is
+ * added with `--add <slug>` once its scene exists.
  *
  * WHY IT EXISTS
  *

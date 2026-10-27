@@ -15,6 +15,43 @@
  * carries meaning may sit outside y 200..590.
  */
 
+import {
+  at,
+  broadWing,
+  cypress as aCypress,
+  figure,
+  kneeler,
+  lion as aLion,
+  olive,
+  palm as aPalm,
+  prostrate,
+  sitter,
+  type Pose as AFigurePose,
+} from './cover-options/shapes.mjs';
+
+/**
+ * Silhouette ink. Scenes name their colours by depth (`c.p.near`, `c.p.mid`);
+ * in the light style a hill or a wall in the near colour stays a mid tone,
+ * but a person, an animal, a boat or a tree in it is the dark silhouette
+ * colour. The scene kit sets this map per scene (see `contextFor`).
+ */
+let inkMap: Record<string, string> = {};
+export function setInk(map: Record<string, string>): void {
+  inkMap = map;
+}
+export function ink(fill: string): string {
+  return inkMap[fill] ?? fill;
+}
+
+/** The same idea for ground and sea drawn by a scene: a depth colour becomes the matching light layer. */
+let terrainMap: Record<string, string> = {};
+export function setTerrain(map: Record<string, string>): void {
+  terrainMap = map;
+}
+function terrain(fill: string): string {
+  return terrainMap[fill] ?? fill;
+}
+
 export const W = 1408;
 export const H = 792;
 
@@ -84,13 +121,40 @@ type Opts = { opacity?: number };
 
 const op = (o?: Opts) => (o?.opacity !== undefined && o.opacity !== 1 ? ` opacity="${o.opacity}"` : '');
 
-export const path = (d: string, fill: string, o?: Opts) => `<path d="${d}" fill="${fill}"${op(o)}/>`;
+/**
+ * A shape wider than this, filled with a depth colour, is landform (a mount,
+ * a rock, a cave wall) and is drawn as a light hill rather than a dark mass.
+ */
+const HILL_WIDTH = 240;
+let hillMap: Record<string, string> = {};
+export function setHills(map: Record<string, string>): void {
+  hillMap = map;
+}
+function pathWidth(d: string): number {
+  const xs: number[] = [];
+  const nums = d.replace(/[A-Za-z]/g, ' ').trim().split(/[\s,]+/).map(Number);
+  // Absolute commands only carry x at even positions; good enough for a size test.
+  if (/[a-z]/.test(d.replace(/e/g, ''))) return 0;
+  for (let i = 0; i < nums.length; i += 2) if (Number.isFinite(nums[i])) xs.push(nums[i]);
+  return xs.length ? Math.max(...xs) - Math.min(...xs) : 0;
+}
+
+export const path = (d: string, fill: string, o?: Opts) => {
+  const f = hillMap[fill] && pathWidth(d) >= HILL_WIDTH ? hillMap[fill] : fill;
+  return `<path d="${d}" fill="${f}"${op(o)}/>`;
+};
 
 export const circle = (x: number, y: number, r: number, fill: string, o?: Opts) =>
   `<circle cx="${r1(x)}" cy="${r1(y)}" r="${r1(r)}" fill="${fill}"${op(o)}/>`;
 
 export const ellipse = (x: number, y: number, rx: number, ry: number, fill: string, o?: Opts) =>
-  `<ellipse cx="${r1(x)}" cy="${r1(y)}" rx="${r1(rx)}" ry="${r1(ry)}" fill="${fill}"${op(o)}/>`;
+  `<ellipse cx="${r1(x)}" cy="${r1(y)}" rx="${r1(rx)}" ry="${r1(ry)}" fill="${rx * 2 >= HILL_WIDTH && hillMap[fill] ? hillMap[fill] : fill}"${op(o)}/>`;
+
+/** Large walls and houses in a depth colour: a mid tone, as the light style draws buildings. */
+let wallMap: Record<string, string> = {};
+export function setWalls(map: Record<string, string>): void {
+  wallMap = map;
+}
 
 export const rect = (
   x: number,
@@ -102,7 +166,7 @@ export const rect = (
 ) =>
   `<rect x="${r1(x)}" y="${r1(y)}" width="${r1(w)}" height="${r1(h)}"${
     o?.rx ? ` rx="${r1(o.rx)}"` : ''
-  } fill="${fill}"${op(o)}/>`;
+  } fill="${w * h >= 240 * 110 && h < 600 && wallMap[fill] ? wallMap[fill] : fill}"${op(o)}/>`;
 
 export const tri = (
   ax: number,
@@ -143,6 +207,7 @@ export function ridge(
   fill: string,
   o?: Opts & { steps?: number },
 ): string {
+  fill = terrain(fill);
   const steps = o?.steps ?? 7;
   const step = (W + 160) / steps;
   let x = -80;
@@ -153,7 +218,8 @@ export function ridge(
     d += ` L ${r1(x)} ${r1(y + amp * (rand() * 0.45))}`;
   }
   d += ` L ${W + 80} ${H} L -80 ${H} Z`;
-  return path(d, fill, o);
+  // A white crest along the top edge, as in the light style's water.
+  return path(d, fill, o) + `<path d="${d}" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.45"/>`;
 }
 
 /** Smooth rolling band - hills, dunes, a swell of water. */
@@ -164,6 +230,7 @@ export function dunes(
   fill: string,
   o?: Opts & { segs?: number },
 ): string {
+  fill = terrain(fill);
   const segs = o?.segs ?? 4;
   const step = (W + 160) / segs;
   let x = -80;
@@ -179,7 +246,8 @@ export function dunes(
     cy = ny;
   }
   d += ` L ${W + 80} ${H} L -80 ${H} Z`;
-  return path(d, fill, o);
+  // A white crest along the top edge, as in the light style's water.
+  return path(d, fill, o) + `<path d="${d}" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.45"/>`;
 }
 
 /** Flat water with a few crest lines above it. */
@@ -208,18 +276,22 @@ export function water(rand: () => number, y: number, fill: string, crest: string
 
 /** Storm swell: tall overlapping wave crests. */
 export function swell(rand: () => number, y: number, fill: string, o?: Opts): string {
-  let d = `M -80 ${r1(y + 40)}`;
+  fill = terrain(fill);
+  // Long, low rollers: the light style's sea is calm in shape even in a storm.
+  let d = `M -80 ${r1(y + 10)}`;
   let x = -80;
-  const step = (W + 160) / 5;
-  for (let i = 0; i < 5; i += 1) {
+  const n = 7;
+  const step = (W + 160) / n;
+  for (let i = 0; i < n; i += 1) {
     d +=
-      ` C ${r1(x + step * 0.3)} ${r1(y - 60 - rand() * 50)}` +
-      ` ${r1(x + step * 0.7)} ${r1(y - 40 - rand() * 60)}` +
-      ` ${r1(x + step)} ${r1(y + 20 + rand() * 30)}`;
+      ` C ${r1(x + step * 0.3)} ${r1(y - 18 - rand() * 22)}` +
+      ` ${r1(x + step * 0.7)} ${r1(y - 14 - rand() * 24)}` +
+      ` ${r1(x + step)} ${r1(y + 6 + rand() * 12)}`;
     x += step;
   }
   d += ` L ${W + 80} ${H} L -80 ${H} Z`;
-  return path(d, fill, o);
+  // A white crest along the top edge, as in the light style's water.
+  return path(d, fill, o) + `<path d="${d}" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.45"/>`;
 }
 
 /** A winding river receding to the horizon. */
@@ -375,76 +447,19 @@ export type Pose = 'stand' | 'raise' | 'kneel' | 'walk' | 'bow' | 'sit' | 'point
  * figure about 92px tall - roughly a twelfth of the canvas height.
  */
 export function person(x: number, y: number, s: number, fill: string, pose: Pose = 'stand', o?: Opts): string {
-  const h = 134 * s;
-  const hr = 14 * s;
-  const shoulder = y - h + hr * 1.75;
-  const w = 22 * s;
-  const parts: string[] = [];
-
-  if (pose === 'fallen') {
-    const g =
-      ellipse(x, y - 9 * s, 42 * s, 12 * s, fill) +
-      circle(x - 44 * s, y - 16 * s, hr, fill) +
-      limb(x + 10 * s, y - 14 * s, x + 44 * s, y - 30 * s, 5 * s, fill);
-    return o ? `<g${op(o)}>${g}</g>` : g;
+  fill = ink(fill);
+  // Drawn with the option-A figures (cover-options/shapes.mts): one hooded
+  // outline, no face. s = 1 keeps the old 134px height.
+  const k = s * (134 / 204);
+  let g: string;
+  if (pose === 'kneel') g = at(x, y, s * 0.6, kneeler(fill, 'pray'));
+  else if (pose === 'sit') g = at(x, y, s * 0.95, sitter(fill, 0));
+  else if (pose === 'bow') g = at(x, y, s * 0.6, kneeler(fill, 'forward'));
+  else if (pose === 'fallen') g = at(x, y, s * 0.72, prostrate(fill));
+  else {
+    const map: Record<string, AFigurePose> = { stand: 'stand', raise: 'raise', walk: 'walk', point: 'reach', carry: 'carry' };
+    g = at(x, y, k, figure(fill, map[pose] ?? 'stand'));
   }
-
-  if (pose === 'kneel') {
-    const top = y - h * 0.68 + hr * 2;
-    parts.push(
-      path(
-        `M ${r1(x - w * 1.5)} ${r1(y)} L ${r1(x - w * 0.75)} ${r1(top)} Q ${r1(x)} ${r1(top - 7 * s)} ${r1(
-          x + w * 0.75,
-        )} ${r1(top)} L ${r1(x + w * 1.35)} ${r1(y)} Z`,
-        fill,
-      ),
-      circle(x, top - hr * 1.15, hr, fill),
-      limb(x - w * 0.6, top + 8 * s, x - w * 1.1, top + 30 * s, 4.5 * s, fill),
-    );
-    return o ? `<g${op(o)}>${parts.join('')}</g>` : parts.join('');
-  }
-
-  if (pose === 'sit') {
-    const top = y - h * 0.62;
-    parts.push(
-      path(`M ${r1(x - w)} ${r1(y - 22 * s)} L ${r1(x - w * 0.7)} ${r1(top)} L ${r1(x + w * 0.7)} ${r1(top)} L ${r1(x + w)} ${r1(y - 22 * s)} Z`, fill),
-      rect(x - w, y - 26 * s, w * 2.3, 9 * s, fill),
-      rect(x + w * 0.7, y - 24 * s, 9 * s, 24 * s, fill),
-      circle(x, top - hr * 1.1, hr, fill),
-    );
-    return o ? `<g${op(o)}>${parts.join('')}</g>` : parts.join('');
-  }
-
-  // Common robe for the upright poses.
-  const robe = path(
-    `M ${r1(x - w)} ${r1(y)} L ${r1(x - w * 0.55)} ${r1(shoulder)} Q ${r1(x)} ${r1(shoulder - 6 * s)} ${r1(
-      x + w * 0.55,
-    )} ${r1(shoulder)} L ${r1(x + w)} ${r1(y)} Z`,
-    fill,
-  );
-  parts.push(robe, circle(x, y - h + hr, hr, fill));
-
-  if (pose === 'raise') {
-    parts.push(
-      limb(x - w * 0.5, shoulder + 4 * s, x - w * 1.5, y - h - 12 * s, 4.5 * s, fill),
-      limb(x + w * 0.5, shoulder + 4 * s, x + w * 1.5, y - h - 12 * s, 4.5 * s, fill),
-    );
-  } else if (pose === 'point') {
-    parts.push(limb(x + w * 0.5, shoulder + 6 * s, x + w * 2.4, shoulder - 6 * s, 4.5 * s, fill));
-  } else if (pose === 'carry') {
-    parts.push(
-      limb(x - w * 0.5, shoulder + 6 * s, x - w * 1.8, shoulder + 16 * s, 4.5 * s, fill),
-      limb(x + w * 0.5, shoulder + 6 * s, x + w * 1.8, shoulder + 16 * s, 4.5 * s, fill),
-    );
-  } else if (pose === 'walk') {
-    parts.push(
-      path(`M ${r1(x - w * 0.2)} ${r1(y)} L ${r1(x + w * 0.9)} ${r1(y - 6 * s)} L ${r1(x + w * 1.3)} ${r1(y)} Z`, fill),
-      limb(x + w * 0.5, shoulder + 8 * s, x + w * 1.6, shoulder + 26 * s, 4 * s, fill),
-    );
-  }
-
-  const g = parts.join('');
-  if (pose === 'bow') return rotate(-22, x, y, o ? `<g${op(o)}>${g}</g>` : g);
   return o ? `<g${op(o)}>${g}</g>` : g;
 }
 
@@ -472,22 +487,16 @@ export function crowd(
 }
 
 export function angel(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  const body = person(x, y, s, fill, 'stand');
-  const top = y - 134 * s;
-  const wing = (dir: number) =>
-    path(
-      `M ${r1(x + dir * 10 * s)} ${r1(top + 30 * s)} C ${r1(x + dir * 60 * s)} ${r1(top - 6 * s)} ${r1(
-        x + dir * 78 * s,
-      )} ${r1(top + 34 * s)} ${r1(x + dir * 52 * s)} ${r1(top + 78 * s)} C ${r1(x + dir * 44 * s)} ${r1(
-        top + 52 * s,
-      )} ${r1(x + dir * 26 * s)} ${r1(top + 44 * s)} ${r1(x + dir * 10 * s)} ${r1(top + 30 * s)} Z`,
-      fill,
-    );
-  const g = wing(-1) + wing(1) + body;
+  fill = ink(fill);
+  const k = s * (134 / 204);
+  const wings =
+    at(-10, -150, 1, broadWing(fill, 150, 1.3), { rot: -58 }) + at(10, -150, 1, broadWing(fill, 150, 1.3), { rot: 58, flip: true });
+  const g = at(x, y, k, wings + figure(fill, 'stand'));
   return o ? `<g${op(o)}>${g}</g>` : g;
 }
 
 export function dove(x: number, y: number, s: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const g =
     ellipse(x, y, 26 * s, 13 * s, fill) +
     circle(x + 24 * s, y - 8 * s, 8 * s, fill) +
@@ -515,25 +524,8 @@ export function bird(x: number, y: number, s: number, fill: string, o?: Opts): s
 // ── animals ────────────────────────────────────────────────────────────────
 
 export function lion(x: number, y: number, scale: number, fill: string, o?: Opts): string {
-  const s = scale * 1.3;
-  const g =
-    ellipse(x, y - 46 * s, 42 * s, 20 * s, fill) +
-    path(`M ${r1(x - 30 * s)} ${r1(y - 52 * s)} L ${r1(x - 22 * s)} ${r1(y)} L ${r1(x - 34 * s)} ${r1(y)} Z`, fill) +
-    path(`M ${r1(x - 14 * s)} ${r1(y - 52 * s)} L ${r1(x - 8 * s)} ${r1(y)} L ${r1(x - 20 * s)} ${r1(y)} Z`, fill) +
-    path(`M ${r1(x + 20 * s)} ${r1(y - 52 * s)} L ${r1(x + 26 * s)} ${r1(y)} L ${r1(x + 14 * s)} ${r1(y)} Z`, fill) +
-    path(`M ${r1(x + 34 * s)} ${r1(y - 52 * s)} L ${r1(x + 40 * s)} ${r1(y)} L ${r1(x + 28 * s)} ${r1(y)} Z`, fill) +
-    limb(x - 34 * s, y - 54 * s, x - 54 * s, y - 78 * s, 11 * s, fill) +
-    circle(x - 62 * s, y - 88 * s, 25 * s, fill) +
-    ellipse(x - 78 * s, y - 84 * s, 15 * s, 11 * s, fill) +
-    tri(x - 78 * s, y - 108 * s, x - 70 * s, y - 94 * s, x - 86 * s, y - 96 * s, fill) +
-    tri(x - 50 * s, y - 110 * s, x - 42 * s, y - 96 * s, x - 58 * s, y - 98 * s, fill) +
-    path(
-      `M ${r1(x + 40 * s)} ${r1(y - 58 * s)} C ${r1(x + 74 * s)} ${r1(y - 70 * s)} ${r1(x + 78 * s)} ${r1(
-        y - 26 * s,
-      )} ${r1(x + 62 * s)} ${r1(y - 18 * s)}`,
-      'none',
-    ).replace('fill="none"', `fill="none" stroke="${fill}" stroke-width="${r1(5 * s)}" stroke-linecap="round"`) +
-    circle(x + 62 * s, y - 16 * s, 8 * s, fill);
+  fill = ink(fill);
+  const g = at(x, y, scale * 0.62, aLion(fill, fill));
   return o ? `<g${op(o)}>${g}</g>` : g;
 }
 
@@ -557,6 +549,7 @@ function quadruped(
 }
 
 export function ram(x: number, y: number, scale: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const s = scale * 1.3;
   const g =
     quadruped(x, y, s, fill, { bodyRx: 38, bodyRy: 21, neck: 14, headR: 12, legW: 8 }) +
@@ -568,6 +561,7 @@ export function ram(x: number, y: number, scale: number, fill: string, o?: Opts)
 }
 
 export function goat(x: number, y: number, scale: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const s = scale * 1.3;
   const g =
     quadruped(x, y, s, fill, { bodyRx: 34, bodyRy: 18, neck: 18, headR: 11, legW: 7 }) +
@@ -578,6 +572,7 @@ export function goat(x: number, y: number, scale: number, fill: string, o?: Opts
 }
 
 export function ox(x: number, y: number, scale: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const s = scale * 1.3;
   const g =
     quadruped(x, y, s, fill, { bodyRx: 44, bodyRy: 24, neck: 8, headR: 14, legW: 9 }) +
@@ -593,6 +588,7 @@ export function ox(x: number, y: number, scale: number, fill: string, o?: Opts):
 }
 
 export function horse(x: number, y: number, scale: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const s = scale * 1.3;
   const g =
     ellipse(x, y - 46 * s, 44 * s, 22 * s, fill) +
@@ -623,6 +619,7 @@ export function horse(x: number, y: number, scale: number, fill: string, o?: Opt
 }
 
 export function donkey(x: number, y: number, scale: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const s = scale * 1.3;
   const g =
     ellipse(x, y - 40 * s, 40 * s, 20 * s, fill) +
@@ -642,6 +639,7 @@ export function donkey(x: number, y: number, scale: number, fill: string, o?: Op
 }
 
 export function fish(x: number, y: number, scale: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const s = scale * 1.3;
   const g =
     path(
@@ -661,6 +659,7 @@ export function fish(x: number, y: number, scale: number, fill: string, o?: Opts
 }
 
 export function serpent(x: number, y: number, scale: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const s = scale * 1.3;
   const g = path(
     `M ${r1(x - 60 * s)} ${r1(y)} C ${r1(x - 30 * s)} ${r1(y - 46 * s)} ${r1(x + 6 * s)} ${r1(y + 30 * s)} ${r1(
@@ -675,6 +674,7 @@ export function serpent(x: number, y: number, scale: number, fill: string, o?: O
 }
 
 export function frog(x: number, y: number, s: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const g =
     ellipse(x, y - 6 * s, 13 * s, 9 * s, fill) +
     circle(x - 9 * s, y - 13 * s, 4 * s, fill) +
@@ -685,6 +685,7 @@ export function frog(x: number, y: number, s: number, fill: string, o?: Opts): s
 }
 
 export function locust(x: number, y: number, s: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const g =
     ellipse(x, y, 11 * s, 4.2 * s, fill) +
     path(`M ${r1(x - 6 * s)} ${r1(y - 2 * s)} q ${r1(10 * s)} ${r1(-11 * s)} ${r1(20 * s)} ${r1(-2 * s)} Z`, fill) +
@@ -695,53 +696,20 @@ export function locust(x: number, y: number, s: number, fill: string, o?: Opts):
 // ── plants ─────────────────────────────────────────────────────────────────
 
 export function tree(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  const g =
-    rect(x - 5 * s, y - 46 * s, 10 * s, 46 * s, fill) +
-    circle(x, y - 66 * s, 30 * s, fill) +
-    circle(x - 26 * s, y - 52 * s, 20 * s, fill) +
-    circle(x + 26 * s, y - 54 * s, 22 * s, fill);
+  fill = ink(fill);
+  const g = at(x, y, s * 0.56, olive(fill, fill));
   return o ? `<g${op(o)}>${g}</g>` : g;
 }
 
 export function cypress(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  const g = path(
-    `M ${r1(x)} ${r1(y - 116 * s)} C ${r1(x + 20 * s)} ${r1(y - 70 * s)} ${r1(x + 15 * s)} ${r1(y - 12 * s)} ${r1(
-      x + 7 * s,
-    )} ${r1(y)} L ${r1(x - 7 * s)} ${r1(y)} C ${r1(x - 15 * s)} ${r1(y - 12 * s)} ${r1(x - 20 * s)} ${r1(
-      y - 70 * s,
-    )} ${r1(x)} ${r1(y - 116 * s)} Z`,
-    fill,
-  );
+  fill = ink(fill);
+  const g = at(x, y, s * 0.58, aCypress(fill));
   return o ? `<g${op(o)}>${g}</g>` : g;
 }
 
 export function palm(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  const parts = [
-    path(
-      `M ${r1(x - 5 * s)} ${r1(y)} C ${r1(x - 2 * s)} ${r1(y - 40 * s)} ${r1(x + 8 * s)} ${r1(y - 70 * s)} ${r1(
-        x + 14 * s,
-      )} ${r1(y - 92 * s)} L ${r1(x + 4 * s)} ${r1(y - 92 * s)} C ${r1(x - 2 * s)} ${r1(y - 70 * s)} ${r1(
-        x - 10 * s,
-      )} ${r1(y - 40 * s)} ${r1(x - 14 * s)} ${r1(y)} Z`,
-      fill,
-    ),
-  ];
-  const tipX = x + 9 * s;
-  const tipY = y - 94 * s;
-  for (let i = 0; i < 6; i += 1) {
-    const a = Math.PI + (i / 5) * Math.PI;
-    const ex = tipX + Math.cos(a) * 46 * s;
-    const ey = tipY + Math.sin(a) * 30 * s + 14 * s;
-    parts.push(
-      path(
-        `M ${r1(tipX)} ${r1(tipY)} Q ${r1((tipX + ex) / 2)} ${r1(Math.min(tipY, ey) - 20 * s)} ${r1(ex)} ${r1(ey)} Q ${r1(
-          (tipX + ex) / 2,
-        )} ${r1(Math.min(tipY, ey) - 6 * s)} ${r1(tipX)} ${r1(tipY)} Z`,
-        fill,
-      ),
-    );
-  }
-  const g = parts.join('');
+  fill = ink(fill);
+  const g = at(x, y, s * 0.55, aPalm(fill, fill));
   return o ? `<g${op(o)}>${g}</g>` : g;
 }
 
@@ -839,6 +807,7 @@ export function reeds(rand: () => number, x: number, y: number, s: number, fill:
 }
 
 export function shrub(x: number, y: number, s: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const g =
     circle(x, y - 20 * s, 20 * s, fill) + circle(x - 18 * s, y - 12 * s, 14 * s, fill) + circle(x + 18 * s, y - 13 * s, 15 * s, fill);
   return o ? `<g${op(o)}>${g}</g>` : g;
@@ -1071,6 +1040,7 @@ export function houseBlock(rand: () => number, x: number, y: number, s: number, 
 // ── vessels & vehicles ─────────────────────────────────────────────────────
 
 export function ship(x: number, y: number, s: number, hull: string, sail: string, o?: Opts): string {
+  hull = ink(hull);
   const g =
     rect(x - 4 * s, y - 150 * s, 8 * s, 150 * s, hull) +
     path(`M ${r1(x + 4 * s)} ${r1(y - 144 * s)} L ${r1(x + 86 * s)} ${r1(y - 36 * s)} L ${r1(x + 4 * s)} ${r1(y - 36 * s)} Z`, sail) +
@@ -1081,6 +1051,7 @@ export function ship(x: number, y: number, s: number, hull: string, sail: string
 }
 
 export function boat(x: number, y: number, s: number, fill: string, withSail = true, o?: Opts): string {
+  fill = ink(fill);
   const parts = [
     path(`M ${r1(x - 64 * s)} ${r1(y - 16 * s)} L ${r1(x + 64 * s)} ${r1(y - 16 * s)} L ${r1(x + 44 * s)} ${r1(y + 8 * s)} L ${r1(x - 44 * s)} ${r1(y + 8 * s)} Z`, fill),
   ];
@@ -1093,6 +1064,7 @@ export function boat(x: number, y: number, s: number, fill: string, withSail = t
 }
 
 export function chariot(x: number, y: number, s: number, fill: string, o?: Opts): string {
+  fill = ink(fill);
   const wheel =
     `<circle cx="${r1(x + 6 * s)}" cy="${r1(y - 26 * s)}" r="${r1(26 * s)}" fill="none" stroke="${fill}" stroke-width="${r1(6 * s)}"/>` +
     circle(x + 6 * s, y - 26 * s, 6 * s, fill);
@@ -1273,12 +1245,15 @@ export function stump(x: number, y: number, s: number, fill: string, o?: Opts): 
 }
 
 /** Two roads splitting at the foot of the frame. */
-export function forkedRoad(x: number, y: number, fill: string, o?: Opts): string {
-  const g =
-    path(`M ${r1(x - 30)} ${H} L ${r1(x + 30)} ${H} L ${r1(x + 14)} ${r1(y)} L ${r1(x - 14)} ${r1(y)} Z`, fill, o) +
-    path(`M ${r1(x - 14)} ${r1(y)} L ${r1(x + 14)} ${r1(y)} L ${r1(x + 150)} ${r1(y - 70)} L ${r1(x + 128)} ${r1(y - 80)} Z`, fill, o) +
-    path(`M ${r1(x - 14)} ${r1(y)} L ${r1(x + 14)} ${r1(y)} L ${r1(x - 118)} ${r1(y - 78)} L ${r1(x - 140)} ${r1(y - 68)} Z`, fill, o);
-  return g;
+export function forkedRoad(x: number, y: number, _fill: string, o?: Opts): string {
+  // A pale path on the ground, not a dark sign standing on the horizon: the
+  // road comes toward the viewer and splits where it meets the horizon.
+  const op2 = { opacity: (o?.opacity ?? 1) * 0.5 };
+  return (
+    path(`M ${r1(x - 70)} ${H} L ${r1(x + 70)} ${H} L ${r1(x + 12)} ${r1(y + 40)} L ${r1(x - 12)} ${r1(y + 40)} Z`, '#FFFFFF', op2) +
+    path(`M ${r1(x - 12)} ${r1(y + 40)} L ${r1(x + 12)} ${r1(y + 40)} L ${r1(x + 190)} ${r1(y + 2)} L ${r1(x + 176)} ${r1(y)} Z`, '#FFFFFF', op2) +
+    path(`M ${r1(x - 12)} ${r1(y + 40)} L ${r1(x + 12)} ${r1(y + 40)} L ${r1(x - 176)} ${r1(y)} L ${r1(x - 190)} ${r1(y + 2)} Z`, '#FFFFFF', op2)
+  );
 }
 
 /** A rising or receding path used as a leading line. */
