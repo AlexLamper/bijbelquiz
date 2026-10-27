@@ -238,7 +238,7 @@ export default function BijbelStudiePage() {
               <span className="text-sm font-extrabold text-lapis">Voor BijbelQuiz-spelers</span>
               <h3 className="-mt-2 text-2xl leading-[30px]">{promo.headline}</h3>
               <PromoCodeBox code={promo.code} surface="studie_page" />
-              <ol className="m-0 flex flex-col gap-1.5 pl-5 text-[15px] font-semibold leading-[22px] text-ink-soft">
+              <ol className="m-0 flex list-decimal flex-col gap-1.5 pl-5 text-[15px] font-semibold leading-[22px] text-ink-soft">
                 <li>Maak een gratis account op BijbelStudie.</li>
                 <li>Kies Pro, per maand of per jaar.</li>
                 <li>

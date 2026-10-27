@@ -45,7 +45,15 @@ export default function QuizEditor({ categories, initial }: { categories: Editor
   const [open, setOpen] = React.useState<Set<string>>(() =>
     initial ? new Set<string>() : new Set(quiz.questions.map((question) => question.key)),
   );
-  const [errors, setErrors] = React.useState<EditorErrors>({});
+  // Errors show after the first save attempt and then follow every edit, so
+  // a fixed field clears at once. `serverErrors` holds what the API rejected
+  // (a slug that already exists) until that field changes.
+  const [submitted, setSubmitted] = React.useState(false);
+  const [serverErrors, setServerErrors] = React.useState<EditorErrors>({});
+  const errors = React.useMemo<EditorErrors>(
+    () => ({ ...(submitted ? validateQuiz(quiz) : {}), ...serverErrors }),
+    [submitted, quiz, serverErrors],
+  );
   const [saving, setSaving] = React.useState(false);
   const [dirty, setDirty] = React.useState(false);
   const [importing, setImporting] = React.useState(false);
@@ -62,6 +70,7 @@ export default function QuizEditor({ categories, initial }: { categories: Editor
   }, [dirty]);
 
   const update = (patch: Partial<EditorQuiz>) => {
+    if ('slug' in patch) setServerErrors({});
     setQuiz((current) => ({ ...current, ...patch }));
     setDirty(true);
   };
@@ -114,7 +123,8 @@ export default function QuizEditor({ categories, initial }: { categories: Editor
       const imported = parseImport(await file.text(), categories);
       setQuiz(imported);
       setOpen(new Set());
-      setErrors({});
+      setSubmitted(false);
+      setServerErrors({});
       setDirty(true);
       toast.success('Quiz geladen uit JSON', {
         description: imported.categoryId ? undefined : 'Kies nog een categorie.',
@@ -129,7 +139,7 @@ export default function QuizEditor({ categories, initial }: { categories: Editor
   const onSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const found = validateQuiz(quiz);
-    setErrors(found);
+    setSubmitted(true);
     const keys = Object.keys(found);
     if (keys.length > 0) {
       // Open every question with a problem and bring the first one into view.
@@ -156,7 +166,7 @@ export default function QuizEditor({ categories, initial }: { categories: Editor
       if (res.status === 409) {
         const body = await res.json().catch(() => ({}));
         const message = body?.error || 'Deze slug bestaat al.';
-        setErrors({ slug: message });
+        setServerErrors({ slug: message });
         toast.error(message);
         return;
       }

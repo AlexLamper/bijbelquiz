@@ -102,13 +102,15 @@ export function CodeInput({ value, onChange, onComplete, disabled, invalid }: Co
             autoCorrect="off"
             spellCheck={false}
             maxLength={ROOM_CODE_LENGTH}
-            onFocus={(event) => {
-              // Always type into the first empty box, so a tap anywhere in the
-              // row continues the code instead of leaving a gap.
+            onPointerDown={(event) => {
+              // A tap on an empty box further on continues the code in the
+              // first empty box instead of leaving a gap.
               if (!char && index > nextIndex) {
+                event.preventDefault();
                 focusBox(nextIndex);
-                return;
               }
+            }}
+            onFocus={(event) => {
               setFocused(index);
               event.currentTarget.select();
             }}

@@ -77,7 +77,7 @@ export default async function DuelInvitePage({ params }: PageProps) {
             />
           )}
           <div className="flex flex-col gap-2">
-            <h1 className="m-0 text-[26px] leading-8 m:text-[32px] m:leading-10">{title}</h1>
+            <h1 className="m-0 text-balance text-[26px] leading-8 m:text-[32px] m:leading-10">{title}</h1>
             <p className="m-0 text-base font-semibold leading-6 text-ink-muted">{body}</p>
           </div>
 

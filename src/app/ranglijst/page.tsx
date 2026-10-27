@@ -88,7 +88,7 @@ export default async function LeaderboardPage({ searchParams }: LeaderboardPageP
         </h1>
         <p className="m-0 flex items-center gap-2 text-[17px] font-semibold leading-6 text-ink-muted">
           <TrophyIcon />
-          {period === 'monthly' ? 'XP van de afgelopen 30 dagen' : 'Alle XP sinds je begon'}
+          {period === 'monthly' ? 'XP van de afgelopen 30 dagen' : 'Alle verdiende XP'}
         </p>
       </div>
 

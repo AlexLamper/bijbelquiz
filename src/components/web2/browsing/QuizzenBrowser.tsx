@@ -138,7 +138,7 @@ export function QuizzenBrowser({ quizzes }: { quizzes: BrowseQuiz[] }) {
         </div>
         <div className="flex flex-col items-stretch gap-4 m:flex-row m:items-center">
           <SearchInput
-            className="min-w-0 flex-1"
+            className="min-w-0 m:flex-1"
             aria-label="Zoek een quiz"
             placeholder="Zoek een bijbelboek of onderwerp"
             value={draft}

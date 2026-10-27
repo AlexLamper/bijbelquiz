@@ -14,7 +14,7 @@ import {
   Mail,
   ScrollText,
   Shield,
-  SignalMedium,
+  ChartNoAxesColumnIncreasing,
   Sun,
   User,
 } from 'lucide-react';
@@ -347,7 +347,7 @@ export default function SettingsView({ initialData, premium }: SettingsViewProps
             </Row>
             <Row>
               <RowIcon>
-                <SignalMedium strokeWidth={2.2} />
+                <ChartNoAxesColumnIncreasing strokeWidth={2.2} />
               </RowIcon>
               <RowText title="Moeilijkheid" hint="Welke quizzen je eerst ziet bij Quizzen." htmlFor="set-level" />
               <RowControl>
