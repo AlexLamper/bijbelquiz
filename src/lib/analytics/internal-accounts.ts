@@ -42,13 +42,18 @@ export function isInternalAccount(email: string | null | undefined): boolean {
 
 const CACHE_MS = 5 * 60 * 1000;
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 let cache: { at: number; ids: Promise<mongoose.Types.ObjectId[]> } | null = null;
 
 async function resolve(): Promise<mongoose.Types.ObjectId[]> {
   await connectDB();
 
   const rows = await User.find({
-    email: { $in: INTERNAL_ACCOUNT_EMAILS.map((email) => new RegExp(`^${email}$`, 'i')) },
+    // Escaped: a bare `.` in an address would otherwise match any character.
+    email: { $in: INTERNAL_ACCOUNT_EMAILS.map((email) => new RegExp(`^\\s*${escapeRegExp(email)}\\s*$`, 'i')) },
   })
     .select('_id')
     .lean();
@@ -81,16 +86,48 @@ export async function getInternalAccountIds(): Promise<mongoose.Types.ObjectId[]
   return ids;
 }
 
+/** Forget the memoised ids. For tests that swap databases; harmless elsewhere. */
+export function resetInternalAccountCache(): void {
+  cache = null;
+}
+
+/**
+ * Every way an account can hold Premium right now, as a Mongo `$or`.
+ *
+ * Matches `getPremiumSnapshot` in `premium-state.ts` plus lifetime, so a
+ * report agrees with what the app actually unlocks: the denormalized
+ * `isPremium` flag alone misses group-licence members (computed from
+ * `groupPremiumUntil`, never written to `isPremium`) and store buyers whose
+ * webhook has not written the flag yet.
+ */
+export function effectivePremiumOr(now: Date = new Date()) {
+  return [
+    { isPremium: true },
+    { premiumStripe: true },
+    { premiumStore: true },
+    { hasLifetimePremium: true },
+    { groupPremiumUntil: { $gt: now } },
+  ];
+}
+
 /** How many of the listed accounts actually exist, for the footnotes. */
 export async function getInternalAccountCount(): Promise<number> {
   return (await getInternalAccountIds()).length;
 }
 
 /**
- * `{ isPremium: true }` with the internal accounts taken out. Use this instead
- * of the raw flag anywhere a number is presented as paying customers.
+ * Effective Premium (see `effectivePremiumOr`) with the internal accounts
+ * taken out. Use this instead of the raw flag anywhere a number is presented
+ * as paying customers.
  */
-export async function premiumUserFilter(): Promise<UserFilter> {
+export async function premiumUserFilter(now: Date = new Date()): Promise<UserFilter> {
   const ids = await getInternalAccountIds();
-  return ids.length > 0 ? { isPremium: true, _id: { $nin: ids } } : { isPremium: true };
+  const premium = { $or: effectivePremiumOr(now) };
+  return (ids.length > 0 ? { ...premium, _id: { $nin: ids } } : premium) as UserFilter;
+}
+
+/** `{ _id: { $nin: internal } }`, or `{}` when none exist. */
+export async function notInternalFilter(): Promise<UserFilter> {
+  const ids = await getInternalAccountIds();
+  return (ids.length > 0 ? { _id: { $nin: ids } } : {}) as UserFilter;
 }
