@@ -82,7 +82,10 @@ async function sessionCookieFor(email) {
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const cookie = LOGIN ? await sessionCookieFor(LOGIN) : null;
-  const browser = await chromium.launch();
+  // CHROMIUM_PATH: use a browser installed outside Playwright's own cache.
+  const browser = await chromium.launch(
+    process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {},
+  );
   try {
     for (const [name, viewport] of Object.entries(VIEWPORTS)) {
       if (ONLY && ONLY !== name) continue;
