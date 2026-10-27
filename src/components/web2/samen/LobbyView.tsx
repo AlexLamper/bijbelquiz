@@ -123,7 +123,7 @@ export function LobbyView({
             >
               {room.players.map((player) => {
                 const isMe = player.id === userId;
-                const label = isMe ? (player.isHost ? 'Jij (host)' : 'Jij') : player.isHost ? `${player.name} (host)` : player.name;
+                const label = isMe ? (player.isHost ? 'Jij (host)' : 'Jij') : player.name;
                 return (
                   <li
                     key={player.id}
@@ -132,6 +132,9 @@ export function LobbyView({
                   >
                     <Avatar name={player.name} size={48} tone={isMe ? 'lapis' : 'auto'} title={label} />
                     <span className="max-w-full truncate text-sm font-bold leading-[18px]">{label}</span>
+                    {!isMe && player.isHost && (
+                      <span className="-mt-1 text-xs font-bold leading-4 text-ink-muted">host</span>
+                    )}
                   </li>
                 );
               })}

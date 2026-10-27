@@ -47,7 +47,7 @@ function CardHeading({ icon, title, subtitle, id }: { icon: React.ReactNode; tit
         <h2 id={id} className="m-0 text-2xl leading-[30px]">
           {title}
         </h2>
-        <span className="text-[15px] font-semibold text-ink-muted">{subtitle}</span>
+        <span className="text-[15px] font-semibold leading-5 text-ink-muted">{subtitle}</span>
       </span>
     </div>
   );
