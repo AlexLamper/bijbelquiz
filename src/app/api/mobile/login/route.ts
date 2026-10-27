@@ -4,6 +4,7 @@ import User from '@/database/models/User';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { appPlatformFromRequest, touchLastActive } from '@/lib/admin/platform';
 
 export async function POST(req: Request) {
   try {
@@ -30,6 +31,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
     }
 
+    await touchLastActive(user._id.toString(), appPlatformFromRequest(req, body?.platform), user);
     const secret = process.env.NEXTAUTH_SECRET || process.env.JWT_SECRET || 'development_fallback_secret';
     const token = jwt.sign({ userId: user._id }, secret, { expiresIn: '30d' });
     const premium = getPremiumSnapshot(user);

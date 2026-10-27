@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { recordEvents } from '@/lib/analytics/record';
 import type { AnalyticsPlatform } from '@/lib/analytics/events';
+import { touchLastActive, webPlatformFromDevice, webPlatformFromUserAgent } from '@/lib/admin/platform';
 
 /**
  * POST /api/events - the funnel ingest endpoint.
@@ -35,11 +36,23 @@ export async function POST(req: NextRequest) {
 
     const session = await getSession(req);
 
+    const platform = readPlatform(body?.platform);
     const accepted = await recordEvents(events, {
       userId: session?.user?.id ?? null,
       anonymousId: typeof body?.anonymousId === 'string' ? body.anonymousId : null,
-      platform: readPlatform(body?.platform),
+      platform,
     });
+
+    // A signed-in visit or app open: "seen today". Only on `session_start`
+    // (once per visit), and the write itself happens once per day at most.
+    const start = (events as Array<{ name?: unknown; props?: { device?: unknown } }>).find((event) => event?.name === 'session_start');
+    if (session?.user?.id && start) {
+      const seen =
+        platform === 'web'
+          ? webPlatformFromDevice(start.props?.device) ?? webPlatformFromUserAgent(req.headers.get('user-agent'))
+          : platform;
+      await touchLastActive(session.user.id, seen);
+    }
 
     return NextResponse.json({ accepted }, { status: 202 });
   } catch (error) {

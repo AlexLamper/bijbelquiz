@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken';
 import { OAuth2Client } from 'google-auth-library';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { LEVELS } from '@/lib/gamification';
+import { appPlatformFromRequest, signupFields, touchLastActive } from '@/lib/admin/platform';
 import {
   getAllowedGoogleAudiences,
   getPrimaryAudience,
@@ -90,7 +91,8 @@ export async function POST(req: Request) {
         streak: 0,
         bestStreak: 0,
         badges: [],
-        role: 'user'
+        role: 'user',
+        ...signupFields(appPlatformFromRequest(req, body?.platform), 'google'),
       });
     } else {
       // If user exists but used email/password before, link the Google ID and grab their picture
@@ -107,6 +109,7 @@ export async function POST(req: Request) {
         await user.save();
       }
     }
+    await touchLastActive(user._id.toString(), appPlatformFromRequest(req, body?.platform), user);
 
     // Generate JWT token exactly like the email/password login
     const secret = process.env.NEXTAUTH_SECRET || process.env.JWT_SECRET || 'development_fallback_secret';

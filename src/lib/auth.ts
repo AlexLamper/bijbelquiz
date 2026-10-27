@@ -3,10 +3,11 @@ import GoogleProvider from 'next-auth/providers/google';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import { connectDB, User } from '@/database';
-import { getPremiumSnapshot } from '@/lib/premium-state';
+import { getPremiumSnapshot, manualGrantExpired, recomputeUserPremium } from '@/lib/premium-state';
 import { normalizeUserSettings, type UserSettings } from '@/lib/user-settings';
 import { resolveAvatar } from '@/lib/avatar';
 import { appleWebCookies, appleWebProviders, linkAppleWebUser } from '@/lib/auth/apple-web';
+import { currentUserAgent, signupFields, touchLastActive, webPlatformFromUserAgent } from '@/lib/admin/platform';
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -87,6 +88,7 @@ export const authOptions: NextAuthOptions = {
               name: name || undefined,
               image: image || undefined,
               isPremium: false,
+              ...signupFields(webPlatformFromUserAgent(await currentUserAgent()), 'google'),
             });
           } else if (!userExists.image && image) {
             userExists.image = image;
@@ -150,6 +152,14 @@ export const authOptions: NextAuthOptions = {
             // Re-read on every refresh, so a preference saved on one device is
             // live on the next session read anywhere else.
             token.settings = normalizeUserSettings(dbUser.settings);
+            // A dated beheer grant that ran out still has the stored flag on:
+            // the snapshot above already ignores it; clear it once so the
+            // queries that read `isPremium` directly agree.
+            if (dbUser.isPremium && manualGrantExpired(dbUser)) {
+              await recomputeUserPremium(String(dbUser._id), {}).catch(() => null);
+            }
+            // "Seen today": one conditional write per account per day.
+            await touchLastActive(String(dbUser._id), webPlatformFromUserAgent(await currentUserAgent()), dbUser);
           }
         }
       }

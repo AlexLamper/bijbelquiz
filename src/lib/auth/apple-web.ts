@@ -3,6 +3,7 @@ import AppleProvider from 'next-auth/providers/apple';
 import type { CookiesOptions } from 'next-auth';
 
 import { connectDB, User } from '@/database';
+import { currentUserAgent, signupFields, webPlatformFromUserAgent } from '@/lib/admin/platform';
 
 /**
  * "Doorgaan met Apple" on the website (the app has its own native flow in
@@ -87,7 +88,13 @@ export async function linkAppleWebUser(
   } else {
     if (!email) return false;
     const name = user.name?.trim() || email.split('@')[0];
-    account = await User.create({ email, name, appleId: appleUserId, isPremium: false });
+    account = await User.create({
+      email,
+      name,
+      appleId: appleUserId,
+      isPremium: false,
+      ...signupFields(webPlatformFromUserAgent(await currentUserAgent()), 'apple'),
+    });
   }
 
   user.email = account.email;

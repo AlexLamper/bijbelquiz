@@ -4,6 +4,7 @@ import User from '@/database/models/User';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { appPlatformFromRequest, signupFields } from '@/lib/admin/platform';
 
 export async function POST(req: Request) {
   try {
@@ -27,7 +28,8 @@ export async function POST(req: Request) {
       password: hashedPassword,
       xp: 0,
       isPremium: false,
-      role: 'user'
+      role: 'user',
+      ...signupFields(appPlatformFromRequest(req, body?.platform), 'email'),
     });
 
     const secret = process.env.NEXTAUTH_SECRET || process.env.JWT_SECRET || 'development_fallback_secret';

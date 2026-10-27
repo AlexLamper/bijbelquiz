@@ -4,6 +4,7 @@ import appleSignin from 'apple-signin-auth';
 import connectDB from '@/database/db';
 import User from '@/database/models/User';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { appPlatformFromRequest, signupFields, touchLastActive } from '@/lib/admin/platform';
 
 interface AppleIdTokenPayload {
   sub: string;
@@ -143,6 +144,7 @@ export async function POST(req: Request) {
           bestStreak: 0,
           badges: [],
           role: 'user',
+          ...signupFields(appPlatformFromRequest(req, (body as { platform?: unknown }).platform), 'apple'),
         });
       } catch (error: unknown) {
         const duplicateKeyErrorCode = 11000;
@@ -166,6 +168,7 @@ export async function POST(req: Request) {
       }
     }
 
+    await touchLastActive(user._id.toString(), appPlatformFromRequest(req, (body as { platform?: unknown }).platform), user);
     const token = jwt.sign({ userId: user._id }, getJwtSecret(), { expiresIn: '30d' });
     const premium = getPremiumSnapshot(user);
 

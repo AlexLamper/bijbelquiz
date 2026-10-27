@@ -2,10 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, User } from '@/database';
 import { encode } from 'next-auth/jwt';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { appPlatformFromRequest, signupFields } from '@/lib/admin/platform';
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, name, image, googleId } = await req.json();
+    const { email, name, image, googleId, platform } = await req.json();
 
     if (!email) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
@@ -25,6 +26,7 @@ export async function POST(req: NextRequest) {
         googleId: googleId || undefined,
         isPremium: false,
         xp: 0,
+        ...signupFields(appPlatformFromRequest(req, platform), 'google'),
       });
     } else {
       // Update existing user with Google data if not already set

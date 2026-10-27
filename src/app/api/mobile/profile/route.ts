@@ -5,6 +5,8 @@ import { mobilePremiumPayload } from '@/lib/mobile-premium';
 import { getLevelInfo } from '@/lib/gamification';
 import { resolveAvatar } from '@/lib/avatar';
 import { getMobileUserId } from '@/lib/mobile-auth';
+import { appPlatformFromRequest, touchLastActive } from '@/lib/admin/platform';
+import { manualGrantExpired, recomputeUserPremium } from '@/lib/premium-state';
 import { daysUntilRenameAllowed, updateIdentity } from '@/lib/profile-identity';
 
 export async function GET(req: Request) {
@@ -29,6 +31,13 @@ export async function GET(req: Request) {
     if (!user) {
       return NextResponse.json({ error: 'User not found' }, { status: 404 });
     }
+    // The app opens on this call: "seen today" (one write per day at most),
+    // and a beheer grant that ran out is cleared from the stored flag.
+    await touchLastActive(String(user._id), appPlatformFromRequest(req), user);
+    if (user.isPremium && manualGrantExpired(user)) {
+      await recomputeUserPremium(String(user._id), {}).catch(() => null);
+    }
+
     // Premium from every source (store, Stripe, lifetime, group, manual), so
     // the app never offers Premium to someone who already has it.
     const premium = mobilePremiumPayload(user);

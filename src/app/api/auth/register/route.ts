@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
 import { connectDB, User } from '@/database';
+import { signupFields, webPlatformFromUserAgent } from '@/lib/admin/platform';
 
 export async function POST(req: NextRequest) {
   try {
@@ -30,6 +31,7 @@ export async function POST(req: NextRequest) {
       email,
       password: hashedPassword,
       isPremium: false,
+      ...signupFields(webPlatformFromUserAgent(req.headers.get('user-agent')), 'email'),
     });
 
     return NextResponse.json({
