@@ -189,39 +189,39 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
   // column (the old pop-up over the result is gone in the 2.0 design).
   return (
     <ResultLayout
-        crumbs={crumbs}
-        main={
-          <>
-            <ScoreCard
-              score={score}
-              total={total}
-              quizTitle={quiz.title}
-              firstName={firstName}
-              isNewBest={isNewBest}
-              playedOnLabel={playedOnLabel(completedAt)}
-              canReview={Boolean(review)}
-            />
-            <NextQuizButton href={await nextQuizHref(quiz as never, playedQuizIds.map(String))} />
-            {review ? (
-              <AnswerList questions={review} score={score} total={total} quizSlug={quizSlug} />
-            ) : (
-              <ReviewLock score={score} total={total} quizSlug={quizSlug} guest={false} />
-            )}
-          </>
-        }
-        aside={
-          <>
-            <ProgressCard
-              xpEarned={Number(attempt.xpEarned) || 0}
-              xpToNext={level.isMaxLevel ? null : Math.max(0, level.nextLevelXp - xp)}
-              nextLevel={level.isMaxLevel ? null : level.level + 1}
-              levelProgress={(xp - level.minXp) / levelSpan}
-              streak={streak}
-            />
-            <ResultActions replayHref={`/quiz/${quizSlug}`} duelHref="/duels" />
-            <StudieCard passage={wrongPassage} quizSlug={quizSlug} hadWrongAnswers={score < total} />
-          </>
-        }
-      />
+      crumbs={crumbs}
+      main={
+        <>
+          <ScoreCard
+            score={score}
+            total={total}
+            quizTitle={quiz.title}
+            firstName={firstName}
+            isNewBest={isNewBest}
+            playedOnLabel={playedOnLabel(completedAt)}
+            canReview={Boolean(review)}
+          />
+          <NextQuizButton href={await nextQuizHref(quiz as never, playedQuizIds.map(String))} />
+          {review ? (
+            <AnswerList questions={review} score={score} total={total} quizSlug={quizSlug} />
+          ) : (
+            <ReviewLock score={score} total={total} quizSlug={quizSlug} guest={false} />
+          )}
+        </>
+      }
+      aside={
+        <>
+          <ProgressCard
+            xpEarned={Number(attempt.xpEarned) || 0}
+            xpToNext={level.isMaxLevel ? null : Math.max(0, level.nextLevelXp - xp)}
+            nextLevel={level.isMaxLevel ? null : level.level + 1}
+            levelProgress={(xp - level.minXp) / levelSpan}
+            streak={streak}
+          />
+          <ResultActions replayHref={`/quiz/${quizSlug}`} duelHref="/duels" />
+          <StudieCard passage={wrongPassage} quizSlug={quizSlug} hadWrongAnswers={score < total} />
+        </>
+      }
+    />
   );
 }
