@@ -194,7 +194,11 @@ export function DuelPlay({ initialDuel }: { initialDuel: DuelView }) {
 
   return (
     <div className="flex min-h-screen flex-col bg-canvas">
-      <PlayHeader leaveLabel="Duel verlaten" leaveHref="/duels" />
+      <PlayHeader
+        leaveLabel="Duel verlaten"
+        leaveHref="/duels"
+        icon={<X className="size-4" strokeWidth={2.6} aria-hidden="true" />}
+      />
 
       {phase === 'question' && question && round ? (
         <QuestionScreen

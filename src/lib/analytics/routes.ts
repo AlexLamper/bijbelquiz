@@ -48,6 +48,9 @@ export const SITE_ROUTES: SiteRoute[] = [
   { path: '/bijbelquiz/[slug]', label: 'SEO-quizpagina', group: 'public', publicFacing: true },
   { path: '/dashboard', label: 'Dashboard', group: 'app', publicFacing: false },
   { path: '/ranglijst', label: 'Ranglijst', group: 'app', publicFacing: false },
+  { path: '/duels', label: 'Duels', group: 'app', publicFacing: false },
+  { path: '/duels/[id]', label: 'Duel spelen', group: 'app', publicFacing: false },
+  { path: '/duel/[token]', label: 'Duel-uitnodiging', group: 'public', publicFacing: true },
   { path: '/profiel', label: 'Profiel', group: 'account', publicFacing: false },
   { path: '/samen-spelen', label: 'Samen spelen', group: 'app', publicFacing: false },
   { path: '/samen-spelen/[roomCode]', label: 'Spelkamer', group: 'app', publicFacing: false },
@@ -92,6 +95,10 @@ const DYNAMIC_ROUTES: Array<{ test: RegExp; pattern: string }> = [
   { test: /^\/quiz\/([^/]+)\/beoordeling$/, pattern: '/quiz/[id]/beoordeling' },
   { test: /^\/quiz\/([^/]+)$/, pattern: '/quiz/[id]' },
   { test: /^\/bijbelquiz\/([^/]+)$/, pattern: '/bijbelquiz/[slug]' },
+  { test: /^\/duels\/([^/]+)$/, pattern: '/duels/[id]' },
+  // The invite token is the only secret of an invite, so it is not kept: the
+  // empty group makes the recorded param ''.
+  { test: /^\/duel\/[^/]+()$/, pattern: '/duel/[token]' },
   { test: /^\/samen-spelen\/([^/]+)\/lobby$/, pattern: '/samen-spelen/[roomCode]/lobby' },
   { test: /^\/samen-spelen\/([^/]+)\/spel$/, pattern: '/samen-spelen/[roomCode]/spel' },
   { test: /^\/samen-spelen\/([^/]+)\/uitslag$/, pattern: '/samen-spelen/[roomCode]/uitslag' },

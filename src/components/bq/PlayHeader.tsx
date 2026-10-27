@@ -20,10 +20,14 @@ export interface PlayHeaderProps {
   /** Something in the middle, such as a room code. Hidden on phones; the
    *  page shows it under the header instead, as the designs do. */
   children?: React.ReactNode;
+  /** Icon before the label; a log-out arrow unless the design asks otherwise
+   *  (duels use a cross). */
+  icon?: React.ReactNode;
   className?: string;
 }
 
-export function PlayHeader({ leaveLabel, leaveHref, onLeave, children, className }: PlayHeaderProps) {
+export function PlayHeader({ leaveLabel, leaveHref, onLeave, children, icon, className }: PlayHeaderProps) {
+  const leaveIcon = icon ?? <LogOut className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />;
   const leaveClass =
     'inline-flex h-10 shrink-0 items-center gap-2 rounded-full border border-line bg-card pl-3 pr-4 text-[15px] font-bold text-ink-soft no-underline hover:bg-chip hover:text-ink';
   return (
@@ -33,12 +37,12 @@ export function PlayHeader({ leaveLabel, leaveHref, onLeave, children, className
         {children && <div className="hidden min-w-0 flex-1 text-center m:block">{children}</div>}
         {leaveHref ? (
           <Link href={leaveHref} className={leaveClass}>
-            <LogOut className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />
+            {leaveIcon}
             {leaveLabel}
           </Link>
         ) : (
           <button type="button" onClick={onLeave} className={leaveClass}>
-            <LogOut className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />
+            {leaveIcon}
             {leaveLabel}
           </button>
         )}
