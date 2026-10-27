@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
-import { RefreshCcw } from 'lucide-react';
+import { RefreshCcw, X } from 'lucide-react';
 
 import { Button, Card, Container, EmptyState, PlayHeader, Spinner } from '@/components/bq';
 import { track } from '@/lib/analytics/client';
@@ -136,7 +136,11 @@ export default function RoomClient({ roomCode, view, categoryTitle = null }: Roo
   const frame = (content: React.ReactNode) =>
     isGame ? (
       <div className="flex min-h-screen flex-col bg-canvas">
-        <PlayHeader leaveLabel="Spel verlaten" leaveHref="/samen-spelen" />
+        <PlayHeader
+          leaveLabel="Spel verlaten"
+          leaveHref="/samen-spelen"
+          icon={<X className="size-4" strokeWidth={2.6} aria-hidden="true" />}
+        />
         <main id="inhoud" className="flex flex-1 flex-col">
           {content}
         </main>

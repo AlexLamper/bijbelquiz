@@ -439,7 +439,11 @@ export function GameView({
 
   return (
     <div className="flex min-h-screen flex-col bg-canvas">
-      <PlayHeader leaveLabel="Spel verlaten" onLeave={() => setConfirmLeave(true)} />
+      <PlayHeader
+        leaveLabel="Spel verlaten"
+        onLeave={() => setConfirmLeave(true)}
+        icon={<X className="size-4" strokeWidth={2.6} aria-hidden="true" />}
+      />
       <main id="inhoud" className="flex-1">
         <Container className="flex flex-col gap-5 pb-14 pt-8 max-m:px-5">
           {errorBar}
