@@ -110,3 +110,13 @@ test('a running Stripe subscription blocks account deletion until it is cancelle
   assert.equal(subscriptionBlocksDeletion('canceled', false), false);
   assert.equal(subscriptionBlocksDeletion(undefined, false), false);
 });
+
+test('safeCallbackUrl only keeps paths on this site', async () => {
+  const { safeCallbackUrl } = await import('@/lib/auth/callback-url');
+  assert.equal(safeCallbackUrl('/quiz/abc/beoordeling?x=1'), '/quiz/abc/beoordeling?x=1');
+  assert.equal(safeCallbackUrl(null), '/dashboard');
+  assert.equal(safeCallbackUrl('https://evil.example/'), '/dashboard');
+  assert.equal(safeCallbackUrl('//evil.example/'), '/dashboard');
+  assert.equal(safeCallbackUrl('/\\evil.example'), '/dashboard');
+  assert.equal(safeCallbackUrl('/inloggen?callbackUrl=/x'), '/dashboard');
+});
