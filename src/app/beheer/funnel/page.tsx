@@ -136,6 +136,7 @@ export default async function FunnelPage() {
           <TableCard
             caption="Per plek"
             minWidth={420}
+            stack
             head={
               <>
                 <Th>Plek</Th>
@@ -166,10 +167,10 @@ export default async function FunnelPage() {
                     </span>
                     <Meter value={row.clicks} max={maxSurface} />
                   </Td>
-                  <Td align="right" numeric tone="strong">
+                  <Td align="right" numeric tone="strong" label="Kliks">
                     {formatNumber(row.clicks)}
                   </Td>
-                  <Td align="right" numeric>
+                  <Td align="right" numeric label="Aandeel">
                     {report.handover.clicks > 0 ? `${Math.round((row.clicks / report.handover.clicks) * 100)}%` : '-'}
                   </Td>
                 </tr>
@@ -187,6 +188,7 @@ export default async function FunnelPage() {
           <TableCard
             caption="Per trigger"
             minWidth={520}
+            stack
             head={
               <>
                 <Th>Trigger</Th>
@@ -207,13 +209,13 @@ export default async function FunnelPage() {
                       <Mono>{row.trigger}</Mono>
                     </span>
                   </Td>
-                  <Td valign="middle" align="right" numeric>
+                  <Td valign="middle" align="right" numeric label="Weergaven">
                     {formatNumber(row.shown)}
                   </Td>
-                  <Td valign="middle" align="right" numeric>
+                  <Td valign="middle" align="right" numeric label="Aankopen">
                     {formatNumber(row.purchases)}
                   </Td>
-                  <Td valign="middle" align="right" numeric tone="strong">
+                  <Td valign="middle" align="right" numeric tone="strong" label="Conversie">
                     {formatPct(row.conversionRate)}
                   </Td>
                 </tr>
@@ -273,6 +275,7 @@ export default async function FunnelPage() {
         description="Nieuwste eerst. Zo zie je in één oogopslag of de meting nog binnenkomt."
         caption="Laatste gebeurtenissen"
         minWidth={720}
+        stack
         head={
           <>
             <Th>Wanneer</Th>
@@ -290,11 +293,11 @@ export default async function FunnelPage() {
               <Td valign="middle" numeric tone="muted">
                 {formatShortDateTime(event.createdAt)}
               </Td>
-              <Td valign="middle" tone="strong" className="whitespace-nowrap">
+              <Td valign="middle" tone="strong" className="whitespace-nowrap" label="Event">
                 {event.name}
               </Td>
-              <Td valign="middle">{event.platform}</Td>
-              <Td valign="middle">
+              <Td valign="middle" label="Platform">{event.platform}</Td>
+              <Td valign="middle" label="Eigenschappen">
                 <Mono className="block max-w-[420px] truncate text-[12.5px] [overflow-wrap:normal]">
                   {JSON.stringify(event.props ?? {})}
                 </Mono>

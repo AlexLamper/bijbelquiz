@@ -19,6 +19,11 @@ import {
 import { cn } from '@/lib/utils';
 import { GROUP_LICENSE_SEATS } from '@/lib/group-license';
 import { getAdminOverview } from '@/lib/admin/overview';
+import { getAudienceStats, type CountByPlatform } from '@/lib/admin/audience';
+import { PLATFORM_KEYS, PLATFORM_LABELS, type PlatformKey } from '@/lib/admin/platform-labels';
+import { toAdminUserRows, ADMIN_USER_ROW_FIELDS } from '@/lib/admin/users';
+import { connectDB, User } from '@/database';
+import { EmptyRow, Table, TableCard, Tag, Td, Th } from '@/components/web2/beheer-2/parts';
 import { formatEuroCents, formatMoneyCents } from '@/lib/premium-stats';
 import { getPaymentsHealth } from '@/lib/payments-health';
 import AdminGroupLicenseForm from './AdminGroupLicenseForm';
@@ -80,13 +85,33 @@ export default async function AdminDashboard() {
   // can be premium once (Stripe, store, lifetime, group licence, manual) and
   // leaves the internal test/reviewer accounts out; revenue follows the rules
   // in `lib/admin/revenue.ts`.
-  const [overview, paymentsHealth] = await Promise.all([
+  await connectDB();
+  const [overview, paymentsHealth, audience, recentUserDocs] = await Promise.all([
     getAdminOverview(),
     // Shallow: config verdict only, no network-heavy Stripe list calls.
     getPaymentsHealth({ deep: false }).catch(() => null),
+    getAudienceStats(),
+    User.aggregate([
+      { $sort: { createdAt: -1, _id: -1 } },
+      { $limit: 10 },
+      {
+        $project: {
+          ...Object.fromEntries(ADMIN_USER_ROW_FIELDS.split(' ').map((field) => [field, 1])),
+          hasPassword: { $gt: [{ $strLenCP: { $ifNull: ['$password', ''] } }, 0] },
+        },
+      },
+    ]),
   ]);
+  const recentUsers = await toAdminUserRows(recentUserDocs);
 
-  const { premium: premiumStats, totalUsers, totalQuizzes, pendingQuizzes, recentUsers, recentQuizzes } = overview;
+  const { premium: premiumStats, totalUsers, totalQuizzes, pendingQuizzes, recentQuizzes } = overview;
+  const reg = audience.registrations;
+  const active = audience.active;
+  // Platforms that occur anywhere in these numbers, in the fixed order.
+  const platformRows = PLATFORM_KEYS.filter((key) =>
+    [reg.allTime, active.days30].some((bucket) => (bucket.byPlatform[key] ?? 0) > 0),
+  );
+  const at = (bucket: CountByPlatform, key: PlatformKey) => bucket.byPlatform[key] ?? 0;
   const internalExcluded = premiumStats.internalExcluded;
   const breakdown = premiumStats.breakdown;
   const revenue = premiumStats.revenue;
@@ -148,7 +173,10 @@ export default async function AdminDashboard() {
 
       <div className="grid grid-cols-1 gap-3 m:grid-cols-2 min-[1101px]:grid-cols-4">
         <StatCard label="Gebruikers" value={nl.format(totalUsers)} icon={<UsersIcon />} tone="lapis">
-          <StatNote>Geregistreerde accounts</StatNote>
+          <StatNote>
+            {nl.format(reg.today.total)} vandaag · {nl.format(reg.days7.total)} in 7 dagen · {nl.format(reg.days30.total)} in 30 dagen
+          </StatNote>
+          <ArrowLink href="/beheer/gebruikers">Alle gebruikers</ArrowLink>
         </StatCard>
         <StatCard label="Premium" value={nl.format(premiumStats.premiumUsers)} icon={<CrownIcon />} tone="gold">
           <StatNote>
@@ -157,49 +185,116 @@ export default async function AdminDashboard() {
           </StatNote>
           <span className="tabular text-xs font-bold leading-4 text-ink-muted">
             Stripe {breakdown.stripe} · Store {breakdown.store} · Levenslang {breakdown.lifetime} · Groep {breakdown.group}
-            {breakdown.other > 0 && ` · Handmatig ${breakdown.other}`}
+            {breakdown.other > 0 && ` · Beheer ${breakdown.other}`}
           </span>
         </StatCard>
-        <StatCard label="Quizzen" value={nl.format(totalQuizzes)} icon={<BookIcon />} tone="lapis">
-          <StatNote>Alle statussen samen</StatNote>
+        <StatCard label="Actief (7 dagen)" value={nl.format(active.days7.total)} icon={<PulseIcon />} tone="lapis">
+          <StatNote>
+            {nl.format(active.today.total)} vandaag · {nl.format(active.days30.total)} in 30 dagen
+          </StatNote>
+          <span className="tabular text-xs font-bold leading-4 text-ink-muted">
+            Quizzen gespeeld (7 dagen): web {nl.format(audience.quizPlays.days7.byPlatform.web ?? 0)} · app{' '}
+            {nl.format((audience.quizPlays.days7.byPlatform.ios ?? 0) + (audience.quizPlays.days7.byPlatform.android ?? 0))}
+          </span>
         </StatCard>
         <StatCard label="Wacht op goedkeuring" value={nl.format(pendingQuizzes)} icon={<InboxIcon />} tone="lapis">
+          <StatNote>{nl.format(totalQuizzes)} quizzen in totaal</StatNote>
           <ArrowLink href="/beheer/quizzen?status=pending">Beoordelen</ArrowLink>
         </StatCard>
       </div>
 
+      <TableCard
+        title="Waar komen mensen vandaan"
+        description={`Nieuwe accounts per platform van aanmelden, en wie er actief was (gespeeld, app geopend of ingelogd op de site; actief op twee platforms telt bij allebei).${
+          audience.derivedPlatforms > 0
+            ? ` Bij ${nl.format(audience.derivedPlatforms)} oudere accounts is het platform afgeleid uit hun eerste activiteit.`
+            : ''
+        }`}
+        action={<ArrowLink href="/beheer/statistieken#gebruikers">Meer cijfers</ArrowLink>}
+        caption="Registraties en actieve gebruikers per platform"
+        minWidth={760}
+        stickyFirst
+        head={
+          <>
+            <Th>Platform</Th>
+            <Th align="right">Vandaag</Th>
+            <Th align="right">7 dagen</Th>
+            <Th align="right">30 dagen</Th>
+            <Th align="right">Totaal</Th>
+            <Th align="right">Actief 7 dagen</Th>
+            <Th align="right">Actief 30 dagen</Th>
+          </>
+        }
+      >
+        {platformRows.length === 0 ? (
+          <EmptyRow columns={7}>Nog geen accounts.</EmptyRow>
+        ) : (
+          <>
+            {platformRows.map((key) => (
+              <tr key={key}>
+                <Td tone="strong">{PLATFORM_LABELS[key]}</Td>
+                <Td align="right" numeric>{nl.format(at(reg.today, key))}</Td>
+                <Td align="right" numeric>{nl.format(at(reg.days7, key))}</Td>
+                <Td align="right" numeric>{nl.format(at(reg.days30, key))}</Td>
+                <Td align="right" numeric tone="strong">{nl.format(at(reg.allTime, key))}</Td>
+                <Td align="right" numeric>{nl.format(at(active.days7, key))}</Td>
+                <Td align="right" numeric>{nl.format(at(active.days30, key))}</Td>
+              </tr>
+            ))}
+            <tr className="[&>td]:border-t-line">
+              <Td tone="strong">Totaal</Td>
+              <Td align="right" numeric tone="strong">{nl.format(reg.today.total)}</Td>
+              <Td align="right" numeric tone="strong">{nl.format(reg.days7.total)}</Td>
+              <Td align="right" numeric tone="strong">{nl.format(reg.days30.total)}</Td>
+              <Td align="right" numeric tone="strong">{nl.format(reg.allTime.total)}</Td>
+              <Td align="right" numeric tone="strong">{nl.format(active.days7.total)}</Td>
+              <Td align="right" numeric tone="strong">{nl.format(active.days30.total)}</Td>
+            </tr>
+          </>
+        )}
+      </TableCard>
+
       <div className="grid grid-cols-1 items-start gap-5 m:grid-cols-2">
         <AdminSection padding="list">
-          <AdminSectionHead title="Recente gebruikers" description="Laatste 10 registraties" />
+          <AdminSectionHead
+            title="Recente gebruikers"
+            description="Laatste 10 registraties"
+            action={<ArrowLink href="/beheer/gebruikers">Alle gebruikers</ArrowLink>}
+          />
           {recentUsers.length > 0 ? (
             <ul className="m-0 list-none p-0">
-              {recentUsers.map((user) => {
-                const internal = user.isInternal;
-                const premium = user.isPremium;
-                const name = user.name;
-                return (
-                  <li key={user.id} className="flex min-h-[60px] items-center gap-3 border-t border-line-soft py-2.5 first:border-t-0">
+              {recentUsers.map((user) => (
+                <li key={user.id} className="border-t border-line-soft first:border-t-0">
+                  <Link
+                    href={`/beheer/gebruikers/${user.id}`}
+                    className="-mx-2 flex min-h-[60px] items-center gap-3 rounded-[10px] px-2 py-2.5 text-ink no-underline transition-colors hover:bg-chip/60 hover:text-ink"
+                  >
                     <span
                       aria-hidden="true"
                       className={cn(
                         'flex size-9 shrink-0 items-center justify-center rounded-full text-[15px] font-extrabold',
-                        AVATAR_TONE[internal ? 'grey' : avatarToneFor(name)],
+                        AVATAR_TONE[user.isInternal ? 'grey' : avatarToneFor(user.name)],
                       )}
                     >
-                      {initialOf(name)}
+                      {initialOf(user.name)}
                     </span>
                     <span className="flex min-w-0 flex-1 flex-col">
-                      <span className="truncate text-[15px] font-bold leading-5">{name}</span>
+                      <span className="flex min-w-0 items-center gap-1.5">
+                        <span className="truncate text-[15px] font-bold leading-5">{user.name}</span>
+                        {/* An internal account carries Premium on purpose, so it
+                            gets its own label rather than the one that everywhere
+                            else means "a customer". */}
+                        {user.isInternal ? <Tag>Testaccount</Tag> : user.premium.active && <AdminPill tone="gold">Premium</AdminPill>}
+                      </span>
                       <span className="truncate text-[13px] font-semibold leading-[18px] text-ink-muted">{user.email}</span>
                     </span>
-                    {/* An internal account carries Premium on purpose, so it
-                        gets its own label rather than the one that everywhere
-                        else means "a customer". */}
-                    {internal ? <AdminPill tone="grey">Testaccount</AdminPill> : premium && <AdminPill tone="gold">Premium</AdminPill>}
-                    <span className="tabular whitespace-nowrap text-[13px] font-semibold text-ink-muted">{formatAdminDate(user.createdAt)}</span>
-                  </li>
-                );
-              })}
+                    <span className="flex shrink-0 flex-col items-end text-right">
+                      <span className="tabular whitespace-nowrap text-[13px] font-semibold text-ink-muted">{formatAdminDate(user.createdAt)}</span>
+                      <span className="whitespace-nowrap text-xs font-bold text-ink-soft">{PLATFORM_LABELS[user.signupPlatform]}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           ) : (
             <p className="py-4 text-center text-sm font-semibold text-ink-muted">Nog geen gebruikers.</p>
@@ -266,57 +361,54 @@ export default async function AdminDashboard() {
         <div className="flex flex-col gap-1">
           <h3 className="m-0 font-sans text-[15px] font-extrabold">Recente betalingen</h3>
           {premiumStats.recentPayments.length > 0 ? (
-            <div className="-mx-5 overflow-x-auto">
-              <table className="w-full min-w-[680px] border-collapse">
-                <caption className="sr-only">Recente betalingen</caption>
-                <thead>
-                  <tr className="text-left text-[13px] font-bold text-ink-muted">
-                    <th scope="col" className="whitespace-nowrap border-b border-line py-2.5 pl-5 pr-4 font-bold">Wie</th>
-                    <th scope="col" className="whitespace-nowrap border-b border-line px-4 py-2.5 font-bold">Via</th>
-                    <th scope="col" className="whitespace-nowrap border-b border-line px-4 py-2.5 font-bold">Plan</th>
-                    <th scope="col" className="whitespace-nowrap border-b border-line px-4 py-2.5 font-bold">Datum</th>
-                    <th scope="col" className="whitespace-nowrap border-b border-line px-4 py-2.5 font-bold">Status</th>
-                    <th scope="col" className="whitespace-nowrap border-b border-line py-2.5 pl-4 pr-5 text-right font-bold">Bedrag</th>
-                  </tr>
-                </thead>
-                <tbody className="text-sm leading-5">
-                  {premiumStats.recentPayments.map((payment) => {
-                    const status = PAYMENT_STATUS[payment.status] ?? { label: payment.status || 'Onbekend', tone: 'grey' as const };
-                    const testBadge = payment.isInternal ? 'Testaccount' : payment.isTest ? 'Test' : null;
-                    return (
-                      <tr key={payment.id} className="[&>td]:border-t [&>td]:border-line-soft [&>td]:py-3 [&>td]:align-middle">
-                        <td className="pl-5 pr-4 font-extrabold text-ink">
-                          <span className="inline-flex flex-wrap items-center gap-1">
-                            <span className={payment.userDeleted ? 'font-semibold text-ink-muted' : undefined}>{payment.userName}</span>
-                            {testBadge && (
-                              <AdminPill tone="grey" className="ml-1.5">
-                                {testBadge}
-                              </AdminPill>
-                            )}
+            <div className="-mx-5">
+              <Table
+                caption="Recente betalingen"
+                minWidth={680}
+                stack
+                head={
+                  <>
+                    <Th>Wie</Th>
+                    <Th>Via</Th>
+                    <Th>Plan</Th>
+                    <Th>Datum</Th>
+                    <Th>Status</Th>
+                    <Th align="right">Bedrag</Th>
+                  </>
+                }
+              >
+                {premiumStats.recentPayments.map((payment) => {
+                  const status = PAYMENT_STATUS[payment.status] ?? { label: payment.status || 'Onbekend', tone: 'grey' as const };
+                  const testBadge = payment.isInternal ? 'Testaccount' : payment.isTest ? 'Test' : null;
+                  return (
+                    <tr key={payment.id}>
+                      <Td valign="middle" tone="strong">
+                        <span className="inline-flex flex-wrap items-center gap-1.5">
+                          <span className={payment.userDeleted ? 'font-semibold text-ink-muted' : undefined}>{payment.userName}</span>
+                          {testBadge && <Tag>{testBadge}</Tag>}
+                        </span>
+                      </Td>
+                      <Td valign="middle" label="Via">{PROVIDER_LABEL[payment.provider] ?? payment.provider}</Td>
+                      <Td valign="middle" label="Plan">
+                        {PLAN_LABEL[payment.planType] ?? 'onbekend'}
+                        {payment.isRenewal && <span className="text-ink-muted"> · verlenging</span>}
+                      </Td>
+                      <Td valign="middle" numeric label="Datum">{formatAdminDate(payment.createdAt)}</Td>
+                      <Td valign="middle" label="Status">
+                        <AdminPill tone={status.tone}>{status.label}</AdminPill>
+                      </Td>
+                      <Td valign="middle" align="right" numeric tone="strong" label="Bedrag">
+                        {formatMoneyCents(payment.amountCents, payment.currency)}
+                        {payment.refundedCents > 0 && payment.refundedCents < payment.amountCents && (
+                          <span className="block text-xs font-bold text-coral-text">
+                            {formatMoneyCents(payment.refundedCents, payment.currency)} terug
                           </span>
-                        </td>
-                        <td className="px-4 font-semibold text-ink-soft">{PROVIDER_LABEL[payment.provider] ?? payment.provider}</td>
-                        <td className="px-4 font-semibold text-ink-soft">
-                          {PLAN_LABEL[payment.planType] ?? 'onbekend'}
-                          {payment.isRenewal && <span className="text-ink-muted"> · verlenging</span>}
-                        </td>
-                        <td className="tabular whitespace-nowrap px-4 font-semibold text-ink-soft">{formatAdminDate(payment.createdAt)}</td>
-                        <td className="px-4">
-                          <AdminPill tone={status.tone}>{status.label}</AdminPill>
-                        </td>
-                        <td className="tabular whitespace-nowrap pl-4 pr-5 text-right font-extrabold text-ink">
-                          {formatMoneyCents(payment.amountCents, payment.currency)}
-                          {payment.refundedCents > 0 && payment.refundedCents < payment.amountCents && (
-                            <span className="block text-xs font-bold text-coral-text">
-                              {formatMoneyCents(payment.refundedCents, payment.currency)} terug
-                            </span>
-                          )}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+                        )}
+                      </Td>
+                    </tr>
+                  );
+                })}
+              </Table>
             </div>
           ) : (
             <p className="mb-3 mt-1 text-sm font-semibold leading-5 text-ink-muted">
@@ -431,11 +523,10 @@ function CrownIcon() {
   );
 }
 
-function BookIcon() {
+function PulseIcon() {
   return (
     <svg {...iconProps()}>
-      <path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z" />
-      <path d="M5 17a3 3 0 0 1 3-3h11" />
+      <path d="M3 12h4l2.5-6 5 12 2.5-6h4" />
     </svg>
   );
 }

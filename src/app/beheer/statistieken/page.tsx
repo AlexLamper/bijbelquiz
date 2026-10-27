@@ -21,6 +21,10 @@ import {
   type DailyPoint,
 } from '@/lib/analytics/insights';
 import { ROUTE_GROUP_LABELS } from '@/lib/analytics/routes';
+import { getAudienceStats } from '@/lib/admin/audience';
+import { METHOD_KEYS, METHOD_LABELS, PLATFORM_KEYS, PLATFORM_LABELS as SIGNUP_PLATFORM_LABELS, type PlatformKey } from '@/lib/admin/platform-labels';
+import { PREMIUM_SOURCES, PREMIUM_SOURCE_LABELS, type PremiumSource } from '@/lib/admin/grant-options';
+import { PLATFORM_TONE, PlatformLegend, StackedWeekChart } from '@/components/web2/beheer-users/charts';
 import { cn } from '@/lib/utils';
 import { AdminPageHeader } from '@/components/bq/AdminShell';
 import {
@@ -100,6 +104,7 @@ const QUIZ_STATUS_LABELS: Record<string, string> = {
 };
 
 const SECTIONS = [
+  ['gebruikers', 'Gebruikers en herkomst'],
   ['verloop', 'Verloop'],
   ['paginas', "Pagina's"],
   ['knoppen', 'Knoppen en links'],
@@ -110,6 +115,14 @@ const SECTIONS = [
   ['accounts', 'Accounts'],
   ['meting', 'Meting'],
 ] as const;
+
+const FILL_CLASS: Record<FillTone, string> = {
+  lapis: 'bg-lapis',
+  gold: 'bg-gold',
+  coral: 'bg-coral',
+  green: 'bg-green',
+  muted: 'bg-edge',
+};
 
 /** Rotates the first three non-zero rows through lapis, coral and grey. */
 const SERIES_TONES: FillTone[] = ['lapis', 'coral', 'muted'];
@@ -187,7 +200,8 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const windowDays = readWindowDays(params?.dagen);
 
-  const [overview, daily, hourly, pages, controls, theme, devices, acquisition, quizzes, users, events] = await Promise.all([
+  const [audience, overview, daily, hourly, pages, controls, theme, devices, acquisition, quizzes, users, events] = await Promise.all([
+    getAudienceStats(),
     getOverview(windowDays),
     getDailySeries(windowDays),
     getHourlyActivity(windowDays),
@@ -310,6 +324,153 @@ export default async function StatisticsPage({ searchParams }: PageProps) {
           value={formatNumber(overview.activeMonth)}
           meta={`speelden in 30 dagen · ${formatNumber(overview.activeWeek)} in 7 dagen · ${formatNumber(overview.activeDay)} vandaag`}
         />
+      </Grid>
+
+      {/* ── Accounts by platform ─────────────────────────────────────────── */}
+      <SectionHeading
+        id="gebruikers"
+        title="Gebruikers en herkomst"
+        intro={`Waar accounts zijn aangemaakt (website op computer of mobiel, iOS- of Android-app), wie er actief is en wie Premium heeft. Deze cijfers staan vast op vandaag, 7 en 30 dagen en volgen de periodekeuze bovenaan niet.${
+          audience.derivedPlatforms > 0
+            ? ` Bij ${formatNumber(audience.derivedPlatforms)} accounts van voor deze meting is het platform afgeleid uit hun eerste activiteit (of een aankoop in de app); is er niets bekend, dan staat het als Onbekend.`
+            : ''
+        }`}
+      />
+      <Grid cols={4} variant="stats">
+        <StatCard
+          label="Nieuwe accounts"
+          value={formatNumber(audience.registrations.days30.total)}
+          meta={`in 30 dagen · ${formatNumber(audience.registrations.days7.total)} in 7 dagen · ${formatNumber(audience.registrations.today.total)} vandaag`}
+        />
+        <StatCard
+          label="Actieve accounts"
+          value={formatNumber(audience.active.days7.total)}
+          meta={`in 7 dagen · ${formatNumber(audience.active.days30.total)} in 30 dagen · ${formatNumber(audience.active.today.total)} vandaag`}
+        />
+        <StatCard
+          label="Gratis naar Premium"
+          value={formatShare(audience.premium.conversion.total.rate)}
+          tone={audience.premium.conversion.total.premium > 0 ? 'positive' : 'neutral'}
+          meta={`${formatShare(audience.premium.conversion.paid.rate)} betaalt zelf · nieuwe accounts (30 dagen) ${formatShare(audience.premium.conversion.newLast30d.rate)}`}
+        />
+        <StatCard
+          label="Behoud"
+          value={formatShare(audience.retention.total.rate)}
+          meta={`van ${formatNumber(audience.retention.total.cohort)} accounts ouder dan 30 dagen was in de laatste 7 dagen actief`}
+        />
+      </Grid>
+      <Panel
+        title="Nieuwe accounts per week"
+        meta={`laatste 12 weken · totaal ${formatNumber(audience.registrations.weekly.reduce((sum, week) => sum + week.total, 0))}`}
+      >
+        <StackedWeekChart
+          weeks={audience.registrations.weekly}
+          label={`Nieuwe accounts per week, 12 weken, per platform`}
+        />
+        <PlatformLegend
+          keys={PLATFORM_KEYS.filter((key) => audience.registrations.weekly.some((week) => (week.byPlatform[key] ?? 0) > 0))}
+          totals={audience.registrations.weekly.reduce<Partial<Record<PlatformKey, number>>>((acc, week) => {
+            for (const [key, value] of Object.entries(week.byPlatform)) acc[key as PlatformKey] = (acc[key as PlatformKey] ?? 0) + (value ?? 0);
+            return acc;
+          }, {})}
+        />
+      </Panel>
+      <TableCard
+        title="Per platform"
+        description="Aangemeld: het platform waarop het account is gemaakt. Actief: gespeeld, de app geopend of ingelogd op de site; wie op twee platforms actief was telt bij allebei. Premium, conversie en behoud tellen zonder testaccounts."
+        caption="Accounts per platform"
+        minWidth={980}
+        stickyFirst
+        head={
+          <>
+            <Th>Platform</Th>
+            <Th align="right">Accounts</Th>
+            <Th align="right">Nieuw 7 d</Th>
+            <Th align="right">Nieuw 30 d</Th>
+            <Th align="right">Actief vandaag</Th>
+            <Th align="right">Actief 7 d</Th>
+            <Th align="right">Actief 30 d</Th>
+            <Th align="right">Premium</Th>
+            <Th align="right">Conversie</Th>
+            <Th align="right">Behoud</Th>
+          </>
+        }
+      >
+        {PLATFORM_KEYS.filter(
+          (key) => (audience.registrations.allTime.byPlatform[key] ?? 0) > 0 || (audience.active.days30.byPlatform[key] ?? 0) > 0,
+        ).map((key) => {
+          const conversion = audience.premium.conversion.byPlatform[key];
+          const retention = audience.retention.byPlatform[key];
+          return (
+            <tr key={key}>
+              <Td tone="strong">
+                <span className="inline-flex items-center gap-2 whitespace-nowrap">
+                  <span aria-hidden="true" className={cn('size-2.5 shrink-0 rounded-[2px]', FILL_CLASS[PLATFORM_TONE[key]])} />
+                  {SIGNUP_PLATFORM_LABELS[key]}
+                </span>
+              </Td>
+              <Td align="right" numeric tone="strong">{formatNumber(audience.registrations.allTime.byPlatform[key] ?? 0)}</Td>
+              <Td align="right" numeric>{formatNumber(audience.registrations.days7.byPlatform[key] ?? 0)}</Td>
+              <Td align="right" numeric>{formatNumber(audience.registrations.days30.byPlatform[key] ?? 0)}</Td>
+              <Td align="right" numeric>{formatNumber(audience.active.today.byPlatform[key] ?? 0)}</Td>
+              <Td align="right" numeric>{formatNumber(audience.active.days7.byPlatform[key] ?? 0)}</Td>
+              <Td align="right" numeric>{formatNumber(audience.active.days30.byPlatform[key] ?? 0)}</Td>
+              <Td align="right" numeric>{formatNumber(audience.premium.bySignupPlatform[key] ?? 0)}</Td>
+              <Td align="right" numeric>{conversion && conversion.accounts > 0 ? formatShare(conversion.rate) : '-'}</Td>
+              <Td align="right" numeric>{retention && retention.cohort > 0 ? formatShare(retention.rate) : '-'}</Td>
+            </tr>
+          );
+        })}
+        <tr className="[&>td]:border-t-line">
+          <Td tone="strong">Totaal</Td>
+          <Td align="right" numeric tone="strong">{formatNumber(audience.registrations.allTime.total)}</Td>
+          <Td align="right" numeric tone="strong">{formatNumber(audience.registrations.days7.total)}</Td>
+          <Td align="right" numeric tone="strong">{formatNumber(audience.registrations.days30.total)}</Td>
+          <Td align="right" numeric tone="strong">{formatNumber(audience.active.today.total)}</Td>
+          <Td align="right" numeric tone="strong">{formatNumber(audience.active.days7.total)}</Td>
+          <Td align="right" numeric tone="strong">{formatNumber(audience.active.days30.total)}</Td>
+          <Td align="right" numeric tone="strong">{formatNumber(audience.premium.total)}</Td>
+          <Td align="right" numeric tone="strong">{formatShare(audience.premium.conversion.total.rate)}</Td>
+          <Td align="right" numeric tone="strong">{audience.retention.total.cohort > 0 ? formatShare(audience.retention.total.rate) : '-'}</Td>
+        </tr>
+      </TableCard>
+      <Grid cols={3}>
+        <Panel title="Premium per bron" meta={`${formatNumber(audience.premium.total)} accounts`}>
+          <ShareBar
+            empty="Nog niemand met Premium."
+            shares={PREMIUM_SOURCES.map((source: PremiumSource, index) => ({
+              label: PREMIUM_SOURCE_LABELS[source],
+              value: audience.premium.bySource[source],
+              tone: (['gold', 'lapis', 'coral', 'green', 'muted'] as FillTone[])[index],
+            }))}
+            caption={`Elk account telt één keer, bij de eerste bron in deze volgorde.${
+              audience.premium.grantsActive > 0
+                ? ` ${formatNumber(audience.premium.grantsActive)} keer Premium van beheer actief${audience.premium.grantsExpiringIn7d > 0 ? `, ${formatNumber(audience.premium.grantsExpiringIn7d)} loopt binnen 7 dagen af` : ''}.`
+                : ''
+            }`}
+          />
+        </Panel>
+        <Panel title="Inlogmethode bij aanmelden" meta={`${formatNumber(audience.totalUsers)} accounts`}>
+          <ShareBar
+            shares={METHOD_KEYS.map((key, index) => ({
+              label: METHOD_LABELS[key],
+              value: audience.byMethod[key] ?? 0,
+              tone: (['lapis', 'coral', 'green', 'muted'] as FillTone[])[index],
+            }))}
+            caption="Bij oudere accounts afgeleid: met wachtwoord is e-mail, anders Google of Apple."
+          />
+        </Panel>
+        <Panel title="Quizzen gespeeld: app of web" meta={`30 dagen · ${formatNumber(audience.quizPlays.days30.total)}`}>
+          <ShareBar
+            empty="Nog geen afgeronde quizzen gemeten."
+            shares={[
+              { label: 'Website', value: audience.quizPlays.days30.byPlatform.web ?? 0, tone: 'lapis' },
+              { label: 'iOS-app', value: audience.quizPlays.days30.byPlatform.ios ?? 0, tone: 'coral' },
+              { label: 'Android-app', value: audience.quizPlays.days30.byPlatform.android ?? 0, tone: 'green' },
+            ]}
+            caption={`Afgeronde quizzen uit de metingen van website en app, ook van gasten. 7 dagen: ${formatNumber(audience.quizPlays.days7.total)}.`}
+          />
+        </Panel>
       </Grid>
 
       {/* ── Activity over time ───────────────────────────────────────────── */}

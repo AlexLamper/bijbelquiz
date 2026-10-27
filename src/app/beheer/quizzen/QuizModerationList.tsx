@@ -284,7 +284,7 @@ function QuizListRow({
   const meta = [author && `Door ${author}`, `${quiz.questionCount} vragen`, date].filter(Boolean).join(' · ');
 
   return (
-    <li className={cn('grid grid-cols-1 items-center gap-2.5 border-t border-line-soft px-5 py-3 first:border-t-0', ROW_GRID)}>
+    <li className={cn('grid grid-cols-1 items-center gap-2.5 border-t border-line-soft px-5 py-3 transition-colors first:border-t-0 hover:bg-chip/60', ROW_GRID)}>
       <span className="flex min-w-0 flex-col">
         <span className="truncate text-[15px] font-extrabold leading-5">{quiz.title}</span>
         <span className="text-[13px] font-semibold leading-[18px] text-ink-muted">{book}</span>

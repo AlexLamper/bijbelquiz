@@ -260,9 +260,15 @@ export function TableCard({
   head,
   footer,
   stack,
+  stickyFirst,
+  id,
+  toolbar,
   className,
   children,
 }: {
+  id?: string;
+  /** Filters or search between the title and the table. */
+  toolbar?: React.ReactNode;
   title?: React.ReactNode;
   description?: React.ReactNode;
   /** Link or control on the right of the title. */
@@ -272,11 +278,13 @@ export function TableCard({
   head: React.ReactNode;
   footer?: React.ReactNode;
   stack?: boolean;
+  /** Keep the first column in view while the rest scrolls (wide number matrices). */
+  stickyFirst?: boolean;
   className?: string;
   children: React.ReactNode;
 }) {
   return (
-    <section className={cn('flex min-w-0 flex-col overflow-hidden rounded-[16px] border border-line bg-card', className)}>
+    <section id={id} className={cn('flex min-w-0 flex-col overflow-hidden rounded-[16px] border border-line bg-card', className)}>
       {title ? (
         <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2 px-5 pb-3 pt-[18px]">
           <CardTitle title={title} description={description} />
@@ -285,7 +293,8 @@ export function TableCard({
       ) : (
         <div className="h-1.5" aria-hidden="true" />
       )}
-      <Table caption={caption} minWidth={minWidth} head={head} stack={stack}>
+      {toolbar && <div className="px-5 pb-3">{toolbar}</div>}
+      <Table caption={caption} minWidth={minWidth} head={head} stack={stack} stickyFirst={stickyFirst}>
         {children}
       </Table>
       {footer ? (
@@ -308,12 +317,14 @@ export function Table({
   minWidth,
   head,
   stack,
+  stickyFirst,
   children,
 }: {
   caption: string;
   minWidth: number;
   head: React.ReactNode;
   stack?: boolean;
+  stickyFirst?: boolean;
   children: React.ReactNode;
 }) {
   return (
@@ -323,6 +334,8 @@ export function Table({
           'w-full border-collapse [&>tbody>tr]:transition-colors [&>tbody>tr:hover]:bg-chip/60',
           stack && 'm:min-w-[var(--table-min)]',
           stack && STACKED,
+          stickyFirst &&
+            'max-m:[&_tr>*:first-child]:sticky max-m:[&_tr>*:first-child]:left-0 max-m:[&_tr>*:first-child]:z-[1] max-m:[&_tr>*:first-child]:bg-card max-m:[&_tr>*:first-child]:shadow-[1px_0_0_var(--line-soft)]',
         )}
         style={stack ? ({ '--table-min': `${minWidth}px` } as React.CSSProperties) : { minWidth }}
       >
@@ -345,6 +358,7 @@ const STACKED = [
   'max-m:[&>tbody>tr>td]:flex max-m:[&>tbody>tr>td]:items-baseline max-m:[&>tbody>tr>td]:justify-between max-m:[&>tbody>tr>td]:gap-3 max-m:[&>tbody>tr>td]:border-0 max-m:[&>tbody>tr>td]:p-0! max-m:[&>tbody>tr>td]:text-right',
   'max-m:[&>tbody>tr>td:first-child]:block max-m:[&>tbody>tr>td:first-child]:text-left max-m:[&>tbody>tr>td:first-child]:pb-1',
   'max-m:[&>tbody>tr>td[data-label]]:before:content-[attr(data-label)] max-m:[&>tbody>tr>td[data-label]]:before:shrink-0 max-m:[&>tbody>tr>td[data-label]]:before:text-left max-m:[&>tbody>tr>td[data-label]]:before:text-[13px] max-m:[&>tbody>tr>td[data-label]]:before:font-bold max-m:[&>tbody>tr>td[data-label]]:before:text-ink-muted',
+  'max-m:[&>tbody>tr>td:not(:first-child)>*]:items-end max-m:[&>tbody>tr>td:not(:first-child)>*]:text-right',
   'max-m:[&>tbody>tr>td[data-empty]]:hidden',
 ].join(' ');
 
@@ -451,6 +465,7 @@ const FILL = {
   lapis: 'bg-lapis',
   green: 'bg-green',
   coral: 'bg-coral',
+  gold: 'bg-gold',
   muted: 'bg-edge',
 } as const;
 

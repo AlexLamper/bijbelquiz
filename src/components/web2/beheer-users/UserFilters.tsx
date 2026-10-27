@@ -50,7 +50,7 @@ export function UserFilters() {
         event.preventDefault();
         apply({ q: q.trim() || null });
       }}
-      className="grid grid-cols-1 gap-2.5 m:grid-cols-[minmax(0,1fr)_200px_200px_190px] m:items-center"
+      className="grid grid-cols-2 gap-2.5 m:grid-cols-[minmax(0,1fr)_200px_200px_190px] m:items-center [&>*:first-child]:col-span-2 m:[&>*:first-child]:col-span-1"
     >
       <SearchInput
         size="sm"
@@ -96,13 +96,13 @@ export function UserFilters() {
           </option>
         ))}
       </Select>
-      <Select size="sm" aria-label="Testaccounts" value={params.get('test') ?? ''} onChange={(event) => apply({ test: event.target.value || null })}>
+      <Select size="sm" aria-label="Testaccounts" className="col-span-2 m:col-span-1" value={params.get('test') ?? ''} onChange={(event) => apply({ test: event.target.value || null })}>
         <option value="">Met testaccounts</option>
         <option value="exclude">Zonder testaccounts</option>
         <option value="only">Alleen testaccounts</option>
       </Select>
       {filtered && (
-        <div className="m:col-span-4">
+        <div className="col-span-2 m:col-span-4">
           <Button
             type="button"
             variant="ghost"

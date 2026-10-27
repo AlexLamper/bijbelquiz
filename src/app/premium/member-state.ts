@@ -20,6 +20,8 @@ export interface PremiumMemberUser {
   storePremiumExpiresAt?: Date | string | null;
   groupPremiumUntil?: Date | string | null;
   hasLifetimePremium?: boolean;
+  premiumGranted?: boolean;
+  premiumGrantedUntil?: Date | string | null;
   stripeCustomerId?: string | null;
   stripeSubscriptionId?: string | null;
   stripeSubscriptionStatus?: string | null;
@@ -30,7 +32,7 @@ export interface PremiumMemberUser {
 
 /** Fields the Premium page selects for `resolvePremiumMemberState`. */
 export const PREMIUM_MEMBER_FIELDS =
-  'name email isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium ' +
+  'name email isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium premiumGranted premiumGrantedUntil ' +
   'stripeCustomerId stripeSubscriptionId stripeSubscriptionStatus stripeSubscriptionPlan stripeCurrentPeriodEnd stripeCancelAtPeriodEnd';
 
 export interface PremiumMemberState {

@@ -7,6 +7,9 @@ import { authOptions } from '@/lib/auth';
 import { cn } from '@/lib/utils';
 import { getPaymentsHealth, type CheckStatus, type HealthCheck } from '@/lib/payments-health';
 import { formatMoneyCents } from '@/lib/premium-stats';
+import { listAdminPayments, readPaymentListQuery } from '@/lib/admin/payments-list';
+import Link from 'next/link';
+import { Tag } from '@/components/web2/beheer-2/parts';
 import { Button } from '@/components/bq/Button';
 import { AdminPageHeader } from '@/components/bq/AdminShell';
 import {
@@ -123,13 +126,61 @@ function priceStatus(price: { priceId: string | null; error?: string; active: bo
  * "Does the paying pipeline work": did someone click pay, did the payment go
  * through, did they get Premium. Checked live against Stripe and RevenueCat.
  */
-export default async function PaymentsHealthPage() {
+type SearchParams = Record<string, string | string[] | undefined>;
+
+const LIST_STATUS: Record<string, { label: string; tone: ChipTone }> = {
+  completed: { label: 'Voltooid', tone: 'green' },
+  failed: { label: 'Mislukt', tone: 'coral' },
+  pending: { label: 'In behandeling', tone: 'grey' },
+  refunded: { label: 'Terugbetaald', tone: 'coral' },
+  disputed: { label: 'Betwist', tone: 'gold' },
+  trial: { label: 'Proefperiode', tone: 'grey' },
+};
+
+function listHref(params: SearchParams, changes: Record<string, string | null>) {
+  const next = new URLSearchParams();
+  for (const [key, value] of Object.entries(params)) {
+    const v = Array.isArray(value) ? value[0] : value;
+    if (v) next.set(key, v);
+  }
+  for (const [key, value] of Object.entries(changes)) {
+    if (value) next.set(key, value);
+    else next.delete(key);
+  }
+  const query = next.toString();
+  return `/beheer/betalingen${query ? `?${query}` : ''}#alle-betalingen`;
+}
+
+/** A filter chip that links to the filtered list. */
+function FilterChip({ href, active, children }: { href: string; active: boolean; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      aria-current={active ? 'true' : undefined}
+      className={cn(
+        'inline-flex h-8 shrink-0 items-center whitespace-nowrap rounded-full border px-3 text-[13px] no-underline',
+        active ? 'border-lapis bg-lapis-tint font-extrabold text-lapis hover:text-lapis' : 'border-line bg-card font-bold text-ink-soft hover:border-input-line hover:text-ink',
+      )}
+    >
+      {children}
+    </Link>
+  );
+}
+
+export default async function PaymentsHealthPage({ searchParams }: { searchParams: Promise<SearchParams> }) {
   const session = await getServerSession(authOptions);
   if (!session || session.user.role !== 'admin') {
     redirect('/');
   }
 
-  const report = await getPaymentsHealth({ deep: true });
+  const params = await searchParams;
+  const listQuery = readPaymentListQuery({
+    provider: params.via,
+    status: params.status,
+    page: params.pagina,
+    pageSize: '25',
+  });
+  const [report, list] = await Promise.all([getPaymentsHealth({ deep: true }), listAdminPayments(listQuery)]);
   const overall = STATUS_META[report.overall];
 
   const fails = report.checks.filter((c) => c.status === 'fail');
@@ -439,6 +490,7 @@ export default async function PaymentsHealthPage() {
         }
         caption="Recente betaalpogingen"
         minWidth={960}
+        stack
         head={
           <>
             <Th>Wanneer</Th>
@@ -462,25 +514,25 @@ export default async function PaymentsHealthPage() {
               <Td valign="middle" numeric tone="muted">
                 {formatDateTime(attempt.when, false)}
               </Td>
-              <Td valign="middle" tone="strong">
+              <Td valign="middle" label="Wie" tone="strong">
                 {attempt.email}
               </Td>
-              <Td valign="middle">
+              <Td valign="middle" label="Plan">
                 <Mono className="text-[13px] text-ink-soft">{attempt.plan}</Mono>
               </Td>
-              <Td valign="middle" align="right" numeric tone="strong">
+              <Td valign="middle" label="Bedrag" align="right" numeric tone="strong">
                 {formatMoneyCents(attempt.amountCents, attempt.currency)}
               </Td>
-              <Td valign="middle">
+              <Td valign="middle" label="Stripe-sessie">
                 <Mono className="text-[13px] text-ink-soft">{attempt.stripeSessionStatus ?? '-'}</Mono>
               </Td>
-              <Td valign="middle">
+              <Td valign="middle" label="Betaling">
                 <Mono className="text-[13px] text-ink-soft">{attempt.stripePaymentStatus ?? '-'}</Mono>
               </Td>
-              <Td valign="middle">
+              <Td valign="middle" label="Onze status">
                 <Mono className="text-[13px] text-ink-soft">{attempt.ourPaymentStatus ?? '-'}</Mono>
               </Td>
-              <Td valign="middle">
+              <Td valign="middle" label="Toegang nu">
                 {attempt.hasAccessNow ? (
                   <span className="inline-flex items-center gap-1.5 font-extrabold text-green-text">
                     <Check className="size-[15px]" strokeWidth={2.6} aria-hidden="true" />
@@ -496,6 +548,116 @@ export default async function PaymentsHealthPage() {
       </TableCard>
 
       {/* Where the full instructions live */}
+      {/* Every payment row */}
+      <TableCard
+        title="Alle betalingen"
+        description="Elke regel uit de Payment-collectie, nieuwste eerst. Telt mee: echt geld, ontvangen, geen test- of testaccountbetaling en meer dan € 0."
+        caption="Alle betalingen"
+        minWidth={860}
+        stack
+        id="alle-betalingen"
+        className="scroll-mt-6"
+        head={
+          <>
+            <Th>Datum</Th>
+            <Th>Wie</Th>
+            <Th>Via</Th>
+            <Th>Plan</Th>
+            <Th>Status</Th>
+            <Th align="right">Bedrag</Th>
+          </>
+        }
+        toolbar={
+          <div className="-mx-5 flex gap-1.5 overflow-x-auto px-5 [scrollbar-width:none] m:mx-0 m:flex-wrap m:px-0" role="group" aria-label="Filter">
+              <FilterChip href={listHref(params, { via: null, pagina: null })} active={!listQuery.provider}>
+                Alles
+              </FilterChip>
+              <FilterChip href={listHref(params, { via: 'stripe', pagina: null })} active={listQuery.provider === 'stripe'}>
+                Stripe
+              </FilterChip>
+              <FilterChip href={listHref(params, { via: 'revenuecat', pagina: null })} active={listQuery.provider === 'revenuecat'}>
+                App Store / Play
+              </FilterChip>
+              <span className="mx-1 h-5 w-px bg-line" aria-hidden="true" />
+              <FilterChip href={listHref(params, { status: null, pagina: null })} active={!listQuery.status}>
+                Elke status
+              </FilterChip>
+              {Object.entries(LIST_STATUS).map(([key, meta]) => (
+                <FilterChip key={key} href={listHref(params, { status: key, pagina: null })} active={listQuery.status === key}>
+                  {meta.label}
+                </FilterChip>
+              ))}
+            </div>
+        }
+        footer={
+          list.total > list.pageSize ? (
+              <nav aria-label="Pagina's" className="flex flex-wrap items-center justify-between gap-3">
+                <span className="text-sm font-bold text-ink-muted tabular-nums">
+                  Pagina {formatNumber(list.page)} van {formatNumber(list.pages)} · {formatNumber(list.total)} betalingen
+                </span>
+                <span className="flex gap-2">
+                  {list.page > 1 && (
+                    <Button href={listHref(params, { pagina: String(list.page - 1) })} variant="secondary" size="sm">
+                      Vorige
+                    </Button>
+                  )}
+                  {list.page < list.pages && (
+                    <Button href={listHref(params, { pagina: String(list.page + 1) })} variant="secondary" size="sm">
+                      Volgende
+                    </Button>
+                  )}
+                </span>
+              </nav>
+          ) : undefined
+        }
+      >
+        {list.payments.length === 0 ? (
+          <EmptyRow columns={6}>{listQuery.provider || listQuery.status ? 'Geen betalingen met dit filter.' : 'Nog geen betalingen vastgelegd.'}</EmptyRow>
+        ) : (
+          list.payments.map((payment) => {
+            const status = LIST_STATUS[payment.status] ?? { label: payment.status || 'Onbekend', tone: 'grey' as ChipTone };
+            return (
+              <tr key={payment.id}>
+                <Td numeric tone="strong" valign="middle">
+                  {formatDateTime(payment.createdAt, false)}
+                </Td>
+                <Td valign="middle" label="Wie">
+                  <span className="inline-flex flex-wrap items-center gap-1.5">
+                    {payment.userId && !payment.userDeleted ? (
+                      <Link href={`/beheer/gebruikers/${payment.userId}`} className="font-bold text-ink no-underline hover:text-lapis">
+                        {payment.userName}
+                      </Link>
+                    ) : (
+                      <span className="font-semibold text-ink-muted">{payment.userName}</span>
+                    )}
+                    {payment.isInternal ? <Tag>Testaccount</Tag> : payment.isTest ? <Tag>Test</Tag> : null}
+                  </span>
+                </Td>
+                <Td valign="middle" label="Via">
+                  {payment.provider === 'revenuecat' ? (payment.store === 'play_store' ? 'Google Play' : payment.store === 'app_store' ? 'App Store' : 'App') : 'Stripe'}
+                </Td>
+                <Td valign="middle" label="Plan">
+                  {PLAN_LABELS[payment.planType] ?? 'onbekend'}
+                  {payment.isRenewal && <span className="text-ink-muted"> · verlenging</span>}
+                </Td>
+                <Td valign="middle" label="Status">
+                  <span className="inline-flex flex-wrap items-center gap-1.5">
+                    <StatusChip tone={status.tone}>{status.label}</StatusChip>
+                    {!payment.counted && payment.status === 'completed' && <Tag>telt niet mee</Tag>}
+                  </span>
+                </Td>
+                <Td valign="middle" align="right" numeric tone="strong" label="Bedrag">
+                  {formatMoneyCents(payment.amountCents, payment.currency)}
+                  {payment.refundedCents > 0 && payment.refundedCents < payment.amountCents && (
+                    <span className="block text-xs font-bold text-coral-text">{formatMoneyCents(payment.refundedCents, payment.currency)} terug</span>
+                  )}
+                </Td>
+              </tr>
+            );
+          })
+        )}
+      </TableCard>
+
       <section id="handleiding" className="flex scroll-mt-6 items-start gap-3.5 rounded-[16px] border border-line bg-card px-5 pb-5 pt-[18px]">
         <span aria-hidden="true" className="flex size-9 shrink-0 items-center justify-center rounded-[10px] bg-lapis-tint text-lapis">
           <CircleHelp className="size-[18px]" strokeWidth={2.2} />

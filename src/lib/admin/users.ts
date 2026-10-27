@@ -497,6 +497,19 @@ export async function getAdminUserDetail(userId: string, now: Date = new Date())
     merged.delete('web');
   }
 
+  // The account's own "seen today" stamp starts with this release; the
+  // analytics history goes back further, so the later of the two is shown.
+  const newest = [...merged.entries()].sort((a, b) => b[1].lastAt - a[1].lastAt)[0];
+  if (newest && newest[1].lastAt > 0) {
+    const stamp = row.lastActiveAt ? new Date(row.lastActiveAt).getTime() : 0;
+    if (newest[1].lastAt > stamp) {
+      row.lastActiveAt = new Date(newest[1].lastAt).toISOString();
+      row.lastSeenPlatform = newest[0];
+    } else if (!row.lastSeenPlatform) {
+      row.lastSeenPlatform = newest[0];
+    }
+  }
+
   const summary = summarizePremium(user, now.getTime());
   const groupUntil = user.groupPremiumUntil ? new Date(user.groupPremiumUntil) : null;
   const manualActive = summary.sources.includes('manual');

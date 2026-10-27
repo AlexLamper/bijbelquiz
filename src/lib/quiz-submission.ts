@@ -107,7 +107,7 @@ export async function submitQuizAttempt(
     UserProgress.find({ userId, quizId }).select('score totalQuestions').lean(),
     User.findById(userId)
       .select(
-        '_id xp streak bestStreak badges lastPlayedAt isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil role'
+        '_id xp streak bestStreak badges lastPlayedAt isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium premiumGranted premiumGrantedUntil role'
       )
       .lean(),
   ]);

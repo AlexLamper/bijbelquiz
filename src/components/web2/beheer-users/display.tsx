@@ -27,13 +27,16 @@ export function PlatformCell({
   return (
     <span className={cn('inline-flex min-w-0 flex-col', className)}>
       <span
-        className={cn('font-bold', platform === 'onbekend' ? 'text-ink-muted' : 'text-ink-soft')}
+        className={cn('whitespace-nowrap font-bold', platform === 'onbekend' ? 'text-ink-muted' : 'text-ink-soft')}
         title={derived ? 'Afgeleid uit de eerste activiteit van dit account (van voor deze meting)' : undefined}
       >
         {PLATFORM_LABELS[platform]}
-        {derived && platform !== 'onbekend' && <span className="text-ink-faint"> (afgeleid)</span>}
       </span>
-      {method && <span className="text-xs font-semibold leading-4 text-ink-muted">{METHOD_LABELS[method]}</span>}
+      {(method || (derived && platform !== 'onbekend')) && (
+        <span className="whitespace-nowrap text-xs font-semibold leading-4 text-ink-muted">
+          {[method && METHOD_LABELS[method], derived && platform !== 'onbekend' && 'afgeleid'].filter(Boolean).join(' · ')}
+        </span>
+      )}
     </span>
   );
 }
@@ -55,9 +58,13 @@ export function PremiumCell({ premium, compact }: { premium: PremiumLike; compac
         Premium
       </Pill>
       {!compact && (
-        <span className="text-xs font-semibold leading-4 text-ink-muted">
-          {PREMIUM_SOURCE_LABELS[premium.source]}
-          {premium.until ? ` · tot ${formatAdminDate(premium.until)}` : premium.source === 'manual' || premium.source === 'lifetime' ? ' · geen einddatum' : ''}
+        <span className="flex flex-col text-xs font-semibold leading-4 text-ink-muted">
+          <span className="whitespace-nowrap">{PREMIUM_SOURCE_LABELS[premium.source]}</span>
+          {premium.until ? (
+            <span className="whitespace-nowrap tabular-nums">tot {formatAdminDate(premium.until)}</span>
+          ) : premium.source === 'manual' ? (
+            <span className="whitespace-nowrap">geen einddatum</span>
+          ) : null}
         </span>
       )}
     </span>
