@@ -31,6 +31,12 @@ database staan: elke volgende rij gaf een duplicate-key-fout en de webhook
 antwoordde 500. Dezelfde stap staat in `betalingen-app.md` (hoofdstuk 5); je
 hoeft hem maar een keer te doen.
 
+> Dit gebeurt nu automatisch: bij de eerste databaseverbinding na de deploy
+> verwijdert de server deze twee oude indexen zelf
+> (`src/database/legacy-indexes.ts`, in de log: `[db] dropped legacy payment
+> indexes`). Je hoeft niets te doen; onderstaande commando's zijn alleen nog
+> om te controleren of als handmatige terugval.
+
 1. Deploy eerst de nieuwe code (Mongoose maakt de nieuwe indexen
    `provider_stripeSessionId_unique`, `provider_externalTransactionId_unique`
    en `provider_stripeInvoiceId_unique` zelf aan bij het opstarten).

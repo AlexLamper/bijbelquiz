@@ -209,6 +209,12 @@ flutter build appbundle --release \
 
 ## 5. Eenmalig in productie: oude Payment-indexen weg
 
+> Dit gebeurt nu automatisch: bij de eerste databaseverbinding na de deploy
+> verwijdert de server deze twee oude indexen zelf
+> (`src/database/legacy-indexes.ts`, in de log: `[db] dropped legacy payment
+> indexes`). Je hoeft niets te doen; onderstaande commando's zijn alleen nog
+> om te controleren of als handmatige terugval.
+
 De oude unieke indexen op `payments` waren "sparse" op een samengestelde
 sleutel met `provider`; daardoor faalde de **tweede** RevenueCat-betaling
 ooit (en de tweede Stripe-betaling zonder `externalTransactionId`) met een

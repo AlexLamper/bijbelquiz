@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 import dns from 'node:dns/promises';
 
+import { dropLegacyPaymentIndexes } from './legacy-indexes';
+
 // Import models here to ensure they are registered with Mongoose on connection
 import './models/User';
 import './models/Quiz';
@@ -54,6 +56,8 @@ export async function connectDB() {
 
   try {
     cached.conn = await cached.promise;
+    // Once per process, in the background: it must not slow the first request.
+    void dropLegacyPaymentIndexes(cached.conn.connection);
     return cached.conn;
   } catch (e) {
     cached.promise = null;
