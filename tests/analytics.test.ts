@@ -92,6 +92,7 @@ test('paywall triggers are a closed set', () => {
       'explanation_locked',
       'premium_quiz_locked',
       'review_locked',
+      'gratis-limiet',
       'direct',
     ],
   );

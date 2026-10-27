@@ -1,49 +1,49 @@
 import { Suspense } from 'react';
-import { getServerSession } from 'next-auth';
 import type { Metadata } from 'next';
 
-import { authOptions } from '@/lib/auth';
-import { QuizOverviewPage } from '@/components/quiz-overview/QuizOverviewPage';
-import { loadQuizIndex } from '@/lib/quiz-index-data';
-import { buildOverviewBooks } from '@/lib/quiz-overview-data';
+import { QuizzenBrowser } from '@/components/web2/browsing/QuizzenBrowser';
+import { loadBrowseCatalogue } from '@/lib/quiz-browse';
+import { getSiteBaseUrl } from '@/lib/sitemap';
 
 export const metadata: Metadata = {
   title: 'Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz',
-  description: 'Overzicht van alle beschikbare Bijbelquizzen. Filter op categorie, speel direct en test je kennis van het Oude en Nieuwe Testament.',
+  description:
+    'Overzicht van alle beschikbare Bijbelquizzen. Filter op categorie, speel direct en test je kennis van het Oude en Nieuwe Testament.',
   keywords: ['bijbelquizzen', 'quiz overzicht', 'bijbelvragen', 'geloofsquiz', 'online bijbelstudie'],
   alternates: {
-    canonical: '/quizzes',
+    canonical: '/quizzen',
   },
   openGraph: {
     title: 'Alle Bijbelquizzen Spelen - Gratis en Premium',
     description: 'Zoek en speel de beste Bijbelquizzen online. Van beginners tot experts.',
-    url: 'https://www.bijbelquiz.com/quizzes',
+    url: 'https://www.bijbelquiz.com/quizzen',
   },
 };
 
 export const dynamic = 'force-dynamic';
 
+/** Long descriptions only feed the search; the cards never show them. */
+const SEARCH_DESCRIPTION_LENGTH = 160;
+
 export default async function QuizzesPage() {
-  const session = await getServerSession(authOptions);
-  const userIsPremium = !!session?.user?.isPremium;
-  const isAuthenticated = Boolean(session?.user);
+  // The library is the same for everybody: no per-reader progress on these cards.
+  const { quizzes } = await loadBrowseCatalogue();
+  const cards = quizzes.map((quiz) => ({
+    ...quiz,
+    description: quiz.description ? quiz.description.slice(0, SEARCH_DESCRIPTION_LENGTH) : null,
+  }));
 
-  const { quizzes } = await loadQuizIndex(session?.user?.id);
-  const books = buildOverviewBooks(quizzes);
-  const themeQuizzes = quizzes.filter((quiz) => !quiz.book);
-  const totalAvailableChapters = books.reduce((sum, book) => sum + book.avail, 0);
-  const totalChapters = books.reduce((sum, book) => sum + book.chapters, 0);
-
+  const baseUrl = getSiteBaseUrl();
   const itemListJsonLd = {
-    '@context':'https://schema.org',
-    '@type':'ItemList',
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
     name: 'BijbelQuiz quizoverzicht',
-    itemListElement: quizzes.map((quiz: { slug?: string; _id: string; title: string; description?: string }, index: number) => ({
-      '@type':'ListItem',
+    itemListElement: quizzes.map((quiz, index) => ({
+      '@type': 'ListItem',
       position: index + 1,
-      url: `https://www.bijbelquiz.com/quiz/${quiz.slug || quiz._id}`,
+      url: `${baseUrl}/bijbelquiz/${quiz.slug}`,
       item: {
-        '@type':'Quiz',
+        '@type': 'Quiz',
         name: quiz.title,
         description: quiz.description || '',
       },
@@ -52,19 +52,9 @@ export default async function QuizzesPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <Suspense fallback={null}>
-        <QuizOverviewPage
-          books={books}
-          themeQuizzes={themeQuizzes}
-          totalAvailableChapters={totalAvailableChapters}
-          totalChapters={totalChapters}
-          showProgress={isAuthenticated}
-          userIsPremium={userIsPremium}
-        />
+        <QuizzenBrowser quizzes={cards} />
       </Suspense>
     </>
   );

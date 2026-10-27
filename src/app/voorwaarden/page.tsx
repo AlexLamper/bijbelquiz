@@ -1,56 +1,73 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
+
+import { LegalPage, LegalText, type LegalSection } from '@/components/web2/marketing/LegalPage';
 
 export const metadata: Metadata = {
   title: 'Algemene Voorwaarden | BijbelQuiz',
   description: 'Lees onze algemene voorwaarden voor het gebruik van BijbelQuiz services en producten.',
-  alternates: { canonical: '/terms-of-service' }
-}
+  alternates: { canonical: '/voorwaarden' },
+};
+
+const SECTIONS: LegalSection[] = [
+  {
+    id: 'algemeen',
+    title: '1. Algemeen',
+    content: (
+      <LegalText>
+        Door gebruik te maken van BijbelQuiz gaat u akkoord met deze algemene voorwaarden. Deze voorwaarden zijn van
+        toepassing op alle diensten die wij aanbieden.
+      </LegalText>
+    ),
+  },
+  {
+    id: 'gebruik',
+    title: '2. Gebruik van de dienst',
+    content: (
+      <LegalText>
+        Het is niet toegestaan accounts van anderen te gebruiken of de veiligheid van de dienst te compromitteren. Wij
+        behouden ons het recht voor accounts te blokkeren bij misbruik.
+      </LegalText>
+    ),
+  },
+  {
+    id: 'premium',
+    title: '3. Premium lidmaatschap',
+    content: (
+      <LegalText>
+        Premium lidmaatschap wordt aangegaan via betaling. Eventuele opzegging en voorwaarden voor terugbetaling
+        verlopen volgens het gekozen betaalmodel en geldende wetgeving.
+      </LegalText>
+    ),
+  },
+  {
+    id: 'eigendom',
+    title: '4. Intellectueel eigendom',
+    content: (
+      <LegalText>
+        Alle quizvragen, logo&apos;s en software zijn eigendom van BijbelQuiz. Kopiëren zonder toestemming is niet
+        toegestaan.
+      </LegalText>
+    ),
+  },
+  {
+    id: 'aansprakelijkheid',
+    title: '5. Aansprakelijkheid',
+    content: (
+      <LegalText>
+        Wij streven naar correctheid, maar kunnen fouten in vragen of antwoorden niet volledig uitsluiten. Wij zijn niet
+        aansprakelijk voor schade voortvloeiend uit gebruik van de dienst.
+      </LegalText>
+    ),
+  },
+];
 
 export default function TermsPage() {
-  const sections = [
-    {
-      title: '1. Algemeen',
-      content: 'Door gebruik te maken van BijbelQuiz gaat u akkoord met deze algemene voorwaarden. Deze voorwaarden zijn van toepassing op alle diensten die wij aanbieden.',
-    },
-    {
-      title: '2. Gebruik van de dienst',
-      content: 'Het is niet toegestaan accounts van anderen te gebruiken of de veiligheid van de dienst te compromitteren. Wij behouden ons het recht voor accounts te blokkeren bij misbruik.',
-    },
-    {
-      title: '3. Premium lidmaatschap',
-      content: 'Premium lidmaatschap wordt aangegaan via betaling. Eventuele opzegging en voorwaarden voor terugbetaling verlopen volgens het gekozen betaalmodel en geldende wetgeving.',
-    },
-    {
-      title: '4. Intellectueel eigendom',
-      content: 'Alle quizvragen, logo\'s en software zijn eigendom van BijbelQuiz. Kopiëren zonder toestemming is niet toegestaan.',
-    },
-    {
-      title: '5. Aansprakelijkheid',
-      content: 'Wij streven naar correctheid, maar kunnen fouten in vragen of antwoorden niet volledig uitsluiten. Wij zijn niet aansprakelijk voor schade voortvloeiend uit gebruik van de dienst.',
-    },
-  ]
-
   return (
-    <div className="min-h-screen bg-paper pb-14 pt-10">
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-5 lg:px-4">
-        <h1 className="text-4xl text-ink">Algemene voorwaarden</h1>
-        <p className="mt-3 text-sm text-ink-soft">
-          Deze voorwaarden zijn van toepassing op het gebruik van BijbelQuiz en bijbehorende diensten.
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-5 lg:px-4">
-        <article className="max-w-4xl rounded-lg border border-rule bg-paper-raised/80 p-6 md:p-8">
-          <div className="space-y-8">
-            {sections.map((section) => (
-              <section key={section.title} className="space-y-3">
-                <h2 className="text-2xl text-ink">{section.title}</h2>
-                <p className="text-sm leading-relaxed text-ink">{section.content}</p>
-              </section>
-            ))}
-          </div>
-        </article>
-      </section>
-    </div>
-  )
+    <LegalPage
+      active="voorwaarden"
+      title="Algemene voorwaarden"
+      meta="Deze voorwaarden zijn van toepassing op het gebruik van BijbelQuiz en bijbehorende diensten."
+      sections={SECTIONS}
+    />
+  );
 }

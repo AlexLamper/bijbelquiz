@@ -1,9 +1,5 @@
-import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { Spinner } from '@/components/bq';
 
 export default function DashboardLoading() {
-  return (
-    <div className="flex min-h-screen w-full items-center justify-center pt-10 bg-paper">
-      <LoadingSpinner size="xl" />
-    </div>
-  );
+  return <Spinner block label="Dashboard laden" className="min-h-[60vh]" />;
 }

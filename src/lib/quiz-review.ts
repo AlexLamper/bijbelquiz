@@ -96,3 +96,69 @@ export function getQuizReviewInsights(
     xpEfficiency,
   };
 }
+
+/** One answer as `submitQuizAttempt` stores it on the attempt. */
+export interface StoredAttemptAnswer {
+  questionId?: unknown;
+  selectedAnswerId?: unknown;
+  selectedAnswerIndex?: unknown;
+  isCorrect?: unknown;
+}
+
+type StoredQuestionInput = {
+  _id: unknown;
+  text?: string;
+  answers?: Array<{ _id?: unknown; text?: string; isCorrect?: boolean }>;
+  explanation?: string;
+  bibleReference?: string;
+};
+
+/**
+ * The review of a saved attempt: each question of the quiz with what was
+ * picked and what was right. Answers are matched by question id first and by
+ * position for attempts written before ids were stored; the pick by answer id
+ * first and by index after that.
+ *
+ * Reviewing answers is Premium: only call this for a Premium player, so the
+ * questions, picks and explanations never reach a free client.
+ */
+export function buildReviewQuestionsFromAttempt(
+  questions: StoredQuestionInput[],
+  storedAnswers: StoredAttemptAnswer[] | null | undefined,
+): QuizReviewQuestion[] {
+  const answers = Array.isArray(storedAnswers) ? storedAnswers : [];
+  const byQuestionId = new Map<string, StoredAttemptAnswer>();
+  for (const answer of answers) {
+    if (answer && answer.questionId != null) byQuestionId.set(String(answer.questionId), answer);
+  }
+
+  return questions.map((question, index) => {
+    const questionId = String(question._id);
+    const state = byQuestionId.get(questionId) ?? answers[index];
+    const choices = Array.isArray(question.answers) ? question.answers : [];
+
+    let selected: (typeof choices)[number] | null = null;
+    if (state?.selectedAnswerId) {
+      selected = choices.find((choice) => String(choice._id) === String(state.selectedAnswerId)) || null;
+    }
+    const selectedIndex =
+      typeof state?.selectedAnswerIndex === 'number' && Number.isFinite(state.selectedAnswerIndex)
+        ? Math.floor(state.selectedAnswerIndex)
+        : null;
+    if (!selected && selectedIndex !== null && choices[selectedIndex]) {
+      selected = choices[selectedIndex];
+    }
+
+    const correct = choices.find((choice) => Boolean(choice.isCorrect));
+
+    return {
+      questionId,
+      questionText: question.text || '',
+      selectedAnswerText: selected?.text ?? null,
+      correctAnswerText: correct?.text || 'Onbekend',
+      isCorrect: Boolean(state?.isCorrect),
+      explanation: question.explanation || '',
+      bibleReference: question.bibleReference || '',
+    };
+  });
+}

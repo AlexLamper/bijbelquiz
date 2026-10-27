@@ -1,39 +1,35 @@
+import type { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import QuizModerationList from './QuizModerationList';
-import { Metadata } from 'next';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { Plus } from 'lucide-react';
+
+import { authOptions } from '@/lib/auth';
+import { connectDB, Quiz } from '@/database';
+import QuizModerationList, { type StatusFilter } from './QuizModerationList';
 
 export const metadata: Metadata = {
-  title: 'Admin Dashboard - BijbelQuiz',
-  robots: { index: false }
-}
+  title: 'Quizzen - Beheer',
+  robots: { index: false, follow: false },
+};
 
-export default async function AdminPage() {
+const STATUSES: StatusFilter[] = ['pending', 'approved', 'rejected', 'draft'];
+
+export default async function AdminQuizzesPage({ searchParams }: { searchParams: Promise<{ status?: string }> }) {
   const session = await getServerSession(authOptions);
-
   if (!session || session.user.role !== 'admin') {
     redirect('/');
   }
 
-  return (
-    <div className="container mx-auto px-4 py-8 max-w-5xl 2xl:max-w-[1500px]">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-        <div>
-          <h1 className="text-3xl font-serif font-normal text-foreground">Admin Dashboard</h1>
-          <p className="text-muted-foreground">Beheer quizzen en gebruikersinzendingen.</p>
-        </div>
-        <Button asChild className="bg-primary hover:bg-primary/90">
-          <Link href="/beheer/quizzen/aanmaken" className="flex items-center gap-2">
-            <Plus className="h-4 w-4" /> Nieuwe Quiz Maken
-          </Link>
-        </Button>
-      </div>
+  const { status } = await searchParams;
+  let initialStatus: StatusFilter;
+  if (status && (STATUSES as string[]).includes(status)) {
+    initialStatus = status as StatusFilter;
+  } else {
+    // Open on the review queue when something is waiting, otherwise on the
+    // live catalogue (quizzes are made by admins now, so the queue is
+    // usually empty).
+    await connectDB();
+    initialStatus = (await Quiz.exists({ status: 'pending' })) ? 'pending' : 'approved';
+  }
 
-      <QuizModerationList />
-    </div>
-  );
+  return <QuizModerationList initialStatus={initialStatus} />;
 }

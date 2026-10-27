@@ -1,32 +1,18 @@
+import type { Metadata } from 'next';
 
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { FileQuestion, Home } from 'lucide-react';
+import { ErrorScreen } from '@/components/web2/marketing/ErrorScreen';
+
+export const metadata: Metadata = {
+  title: 'Pagina niet gevonden',
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-[70vh] flex-col items-center justify-center p-4 text-center">
-      <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 text-primary">
-        <FileQuestion className="h-12 w-12" />
-      </div>
-      <h1 className="mb-4 text-4xl font-normal tracking-tight sm:text-5xl font-serif text-ink dark:text-foreground">
-        404 - Oeps
-      </h1>
-      <p className="mb-8 max-w-md text-lg text-ink-soft dark:text-muted-foreground leading-relaxed">
-        De pagina die u zoekt lijkt niet te bestaan.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4">
-        <Button size="lg" asChild className="bg-ink hover:bg-ink text-ink-inverted">
-          <Link href="/">
-             <Home className="mr-2 h-4 w-4" /> Terug naar Home
-          </Link>
-        </Button>
-        <Button size="lg" variant="outline" asChild className="border-rule bg-paper-raised">
-          <Link href="/quizzen">
-            Bekijk alle quizzen
-          </Link>
-        </Button>
-      </div>
-    </div>
+    <ErrorScreen
+      kicker="FOUT 404"
+      title="Deze pagina bestaat niet"
+      text="De link klopt niet meer, of de pagina is verplaatst. Kies waar je heen wilt, of ga terug naar home."
+    />
   );
 }

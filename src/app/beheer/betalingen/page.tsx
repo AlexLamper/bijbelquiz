@@ -1,53 +1,122 @@
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import Link from 'next/link';
+import type { Metadata } from 'next';
+import { AlertTriangle, ArrowRight, Check, CircleHelp, CreditCard, RefreshCw, Smartphone, X } from 'lucide-react';
 
 import { authOptions } from '@/lib/auth';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import {
-  CheckCircle2,
-  AlertTriangle,
-  XCircle,
-  RefreshCw,
-  ArrowLeft,
-  CreditCard,
-  Smartphone,
-} from 'lucide-react';
+import { cn } from '@/lib/utils';
 import { getPaymentsHealth, type CheckStatus, type HealthCheck } from '@/lib/payments-health';
 import { formatEuroCents } from '@/lib/premium-stats';
+import { Button } from '@/components/bq/Button';
+import { AdminPageHeader } from '@/components/bq/AdminShell';
+import {
+  CardTitle,
+  EmptyRow,
+  HBarList,
+  Mono,
+  StatusChip,
+  Table,
+  TableCard,
+  Td,
+  Th,
+  formatDateTime,
+  formatNumber,
+  formatPct,
+  type ChipTone,
+} from '@/components/web2/beheer-2/parts';
+
+export const metadata: Metadata = {
+  title: 'Betalingen - BijbelQuiz beheer',
+  robots: { index: false, follow: false },
+};
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-const STATUS_META: Record<CheckStatus, { label: string; className: string; Icon: typeof CheckCircle2 }> = {
-  ok: { label: 'OK', className: 'text-positive', Icon: CheckCircle2 },
-  warn: { label: 'Let op', className: 'text-lapis', Icon: AlertTriangle },
-  fail: { label: 'Actie nodig', className: 'text-vermilion', Icon: XCircle },
+const STATUS_META: Record<CheckStatus, { tile: string; Icon: typeof Check }> = {
+  ok: { tile: 'bg-green-tint text-green-text', Icon: Check },
+  warn: { tile: 'bg-gold-tint text-gold-text', Icon: AlertTriangle },
+  fail: { tile: 'bg-coral-tint text-coral-text', Icon: X },
 };
 
-function fmtDate(iso: string | null): string {
-  if (!iso) return '-';
-  const d = new Date(iso);
-  return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('nl-NL');
+const OVERALL_TITLE: Record<CheckStatus, string> = {
+  ok: 'Alles staat goed',
+  warn: 'Werkt, maar er zijn aandachtspunten',
+  fail: 'Er is iets kapot in de betaal-pijplijn',
+};
+
+const PLAN_LABELS: Record<string, string> = {
+  monthly: 'Maandelijks',
+  yearly: 'Jaarlijks',
+  lifetime: 'Levenslang',
+  group: 'Groepslicentie',
+};
+
+const INTERVAL_LABELS: Record<string, string> = {
+  month: '/ maand',
+  year: '/ jaar',
+  week: '/ week',
+  day: '/ dag',
+  eenmalig: 'eenmalig',
+};
+
+/** The 13px grey subheading inside a card ("Webhook-endpoints", "Prijzen"). */
+function SubHead({ children }: { children: React.ReactNode }) {
+  return <h3 className="m-0 font-sans text-[13px] font-extrabold leading-[18px] text-ink-muted">{children}</h3>;
 }
 
 function CheckRow({ check }: { check: HealthCheck }) {
   const meta = STATUS_META[check.status];
   return (
-    <div className="flex gap-3 border-b border-rule py-3 last:border-0">
-      <meta.Icon className={`mt-0.5 h-4 w-4 shrink-0 ${meta.className}`} />
-      <div className="min-w-0">
-        <p className="text-sm font-medium text-ink">{check.label}</p>
-        <p className="mt-0.5 text-xs text-muted-foreground">{check.detail}</p>
+    <li className="flex items-start gap-3 border-t border-line-soft py-3.5 first:border-t-0">
+      <span aria-hidden="true" className={cn('flex size-[30px] shrink-0 items-center justify-center rounded-[9px]', meta.tile)}>
+        <meta.Icon className="size-4" strokeWidth={2.4} />
+      </span>
+      <span className="flex min-w-0 flex-col">
+        <span className="text-[15px] font-extrabold leading-[22px]">{check.label}</span>
+        <span className="text-sm font-semibold leading-5 text-ink-muted [overflow-wrap:anywhere]">{check.detail}</span>
         {check.action && (
-          <p className="mt-1 text-xs font-medium text-ink">→ {check.action}</p>
+          <span className="mt-1 flex items-start gap-1.5 text-sm font-bold leading-5 text-ink">
+            <ArrowRight className="mt-0.5 size-4 shrink-0 text-lapis" strokeWidth={2.4} aria-hidden="true" />
+            <span className="min-w-0 [overflow-wrap:anywhere]">{check.action}</span>
+          </span>
         )}
-      </div>
+      </span>
+    </li>
+  );
+}
+
+/** Label left, value right, hairline above: the RevenueCat rows. */
+function InfoRow({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-t border-line-soft py-2.5">
+      <span className="text-sm font-bold text-ink-soft">{label}</span>
+      <span className="text-right text-sm font-bold text-ink tabular-nums">{children}</span>
     </div>
   );
 }
 
+function YesNo({ ok, label }: { ok: boolean; label: string }) {
+  const Icon = ok ? Check : X;
+  return (
+    <span className={cn('inline-flex items-center gap-1 text-[13px] font-bold', ok ? 'text-ink-soft' : 'text-coral-text')}>
+      <Icon className="size-3.5" strokeWidth={2.6} aria-hidden="true" />
+      {label}
+      <span className="sr-only">{ok ? ' gedekt' : ' niet gedekt'}</span>
+    </span>
+  );
+}
+
+function priceStatus(price: { priceId: string | null; error?: string; active: boolean | null }): [ChipTone, string] {
+  if (!price.priceId) return ['grey', 'niet gezet'];
+  if (price.error) return ['coral', 'onbekend bij Stripe'];
+  return price.active ? ['green', 'actief'] : ['coral', 'inactief'];
+}
+
+/**
+ * "Does the paying pipeline work": did someone click pay, did the payment go
+ * through, did they get Premium. Checked live against Stripe and RevenueCat.
+ */
 export default async function PaymentsHealthPage() {
   const session = await getServerSession(authOptions);
   if (!session || session.user.role !== 'admin') {
@@ -60,343 +129,356 @@ export default async function PaymentsHealthPage() {
   const fails = report.checks.filter((c) => c.status === 'fail');
   const warns = report.checks.filter((c) => c.status === 'warn');
   const oks = report.checks.filter((c) => c.status === 'ok');
+  const attention = [...fails, ...warns];
+  const funnel = report.funnel30d;
 
   return (
-    <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-10">
-      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink-muted">Beheercentrum</p>
-            <h1 className="mt-3 font-display text-[32px] font-normal leading-[1.08] tracking-[-0.025em] text-ink sm:text-[40px]">
-              Betaal-pijplijn
-            </h1>
-            <p className="mt-3 text-[15px] leading-relaxed text-ink-muted">
-              Klikte iemand op betalen, ging de betaling door, kreeg diegene Premium. Live gecontroleerd tegen
-              Stripe en RevenueCat.
+    <>
+      <AdminPageHeader
+        title="Betaal-pijplijn"
+        description="Klikte iemand op betalen, ging de betaling door, kreeg diegene Premium. Live gecontroleerd tegen Stripe en RevenueCat."
+        actions={
+          <Button href="/beheer/betalingen" prefetch={false}>
+            <RefreshCw className="size-[18px]" strokeWidth={2.4} aria-hidden="true" />
+            Ververs
+          </Button>
+        }
+      />
+
+      {/* Overall verdict */}
+      <section
+        aria-label="Totaaloordeel"
+        className="flex flex-wrap items-center gap-x-5 gap-y-3.5 rounded-[16px] border border-line bg-card px-5 py-[18px]"
+      >
+        <div className="flex min-w-0 flex-[1_1_420px] items-center gap-3.5">
+          <span aria-hidden="true" className={cn('flex size-11 shrink-0 items-center justify-center rounded-[12px]', overall.tile)}>
+            <overall.Icon className="size-[22px]" strokeWidth={2.4} />
+          </span>
+          <div className="min-w-0">
+            <p className="m-0 text-lg font-extrabold leading-6">{OVERALL_TITLE[report.overall]}</p>
+            <p className="mb-0 mt-0.5 text-sm font-semibold leading-5 text-ink-muted tabular-nums">
+              {fails.length} actie nodig · {warns.length} let op · {oks.length} ok · gecheckt {formatDateTime(report.generatedAt)}
             </p>
           </div>
-          <div className="flex flex-wrap gap-3">
-            <Button asChild variant="outline" className="h-10 rounded-md border-rule bg-paper-raised px-4 text-ink hover:bg-paper-sunken">
-              <Link href="/beheer">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Terug
-              </Link>
-            </Button>
-            <Button asChild className="h-10 rounded-md bg-ink px-4 text-ink-inverted hover:bg-ink-soft">
-              <Link href="/beheer/betalingen">
-                <RefreshCw className="mr-2 h-4 w-4" />
-                Ververs
-              </Link>
-            </Button>
-          </div>
         </div>
+        <Button href="#handleiding" variant="secondary" className="px-4">
+          <CircleHelp className="size-[18px]" strokeWidth={2.4} aria-hidden="true" />
+          Wat moet ik doen?
+        </Button>
       </section>
 
-      {/* Overall banner */}
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
-        <Card className="border-rule py-0">
-          <CardContent className="flex flex-wrap items-center justify-between gap-4 p-5">
-            <div className="flex items-center gap-3">
-              <overall.Icon className={`h-6 w-6 ${overall.className}`} />
-              <div>
-                <p className={`text-lg font-semibold ${overall.className}`}>
-                  {report.overall === 'ok'
-                    ? 'Alles staat goed'
-                    : report.overall === 'warn'
-                      ? 'Werkt, maar er zijn aandachtspunten'
-                      : 'Er is iets kapot in de betaal-pijplijn'}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {fails.length} actie nodig · {warns.length} let op · {oks.length} ok · gecheckt {fmtDate(report.generatedAt)}
-                </p>
-              </div>
-            </div>
-            <Button asChild variant="outline" className="h-9 rounded-md border-rule bg-paper-raised px-3 text-xs text-ink hover:bg-paper-sunken">
-              <a href="/beheer/betalingen#handleiding">Wat moet ik doen?</a>
-            </Button>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Checks: fails + warns first, oks collapsed */}
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
-        <Card className="border-rule py-0">
-          <CardHeader className="pb-2 pt-5">
-            <CardTitle className="text-ink">Controlelijst</CardTitle>
-            <CardDescription>Elke regel met &rarr; vertelt precies wat je moet doen.</CardDescription>
-          </CardHeader>
-          <CardContent className="pb-5">
-            {[...fails, ...warns].map((c) => (
-              <CheckRow key={c.id} check={c} />
+      {/* Checklist: fails and warnings first, passed checks folded away */}
+      <section className="flex flex-col gap-1 rounded-[16px] border border-line bg-card px-5 pb-2 pt-[18px]">
+        <CardTitle title="Controlelijst" description="Elke regel met een pijl vertelt precies wat je moet doen." />
+        {attention.length > 0 ? (
+          <ul className="m-0 list-none p-0">
+            {attention.map((check) => (
+              <CheckRow key={check.id} check={check} />
             ))}
-            {[...fails, ...warns].length === 0 && (
-              <p className="py-3 text-sm text-positive">Geen problemen gevonden in de configuratie.</p>
-            )}
-            {oks.length > 0 && (
-              <details className="mt-3">
-                <summary className="cursor-pointer text-xs font-medium uppercase tracking-[0.16em] text-ink-muted">
-                  {oks.length} geslaagde checks tonen
-                </summary>
-                <div className="mt-2">
-                  {oks.map((c) => (
-                    <CheckRow key={c.id} check={c} />
+          </ul>
+        ) : (
+          <p className="my-0 py-3.5 text-sm font-bold text-green-text">Geen problemen gevonden in de configuratie.</p>
+        )}
+        {oks.length > 0 && (
+          <details className="group border-t border-line-soft">
+            <summary className="flex cursor-pointer items-center gap-1.5 py-3.5 text-sm font-extrabold text-lapis">
+              <svg viewBox="0 0 10 10" className="size-2.5 transition-transform group-open:rotate-90" aria-hidden="true">
+                <path d="M2 1l6 4-6 4z" fill="currentColor" />
+              </svg>
+              {oks.length} geslaagde checks tonen
+            </summary>
+            <ul className="m-0 list-none border-t border-line-soft p-0">
+              {oks.map((check) => (
+                <CheckRow key={check.id} check={check} />
+              ))}
+            </ul>
+          </details>
+        )}
+      </section>
+
+      <div className="grid grid-cols-1 items-start gap-5 m:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)]">
+        {/* Stripe */}
+        <section className="flex min-w-0 flex-col overflow-hidden rounded-[16px] border border-line bg-card">
+          <div className="flex flex-col gap-3.5 px-5 pb-1 pt-[18px]">
+            <CardTitle
+              icon={<CreditCard className="size-[18px]" strokeWidth={2.2} />}
+              title="Stripe (web)"
+              description={
+                <>
+                  Sleutel: <strong className="text-ink">{report.stripe.keyMode}</strong>
+                  {report.stripe.keyWorks === true && ' · geaccepteerd'}
+                  {report.stripe.keyWorks === false && ' · geweigerd'}
+                  {report.stripe.accountCurrency && ` · valuta ${report.stripe.accountCurrency.toUpperCase()}`}
+                </>
+              }
+            />
+            <div className="flex flex-col gap-2">
+              <SubHead>Webhook-endpoints</SubHead>
+              {report.stripe.webhookEndpoints.length === 0 ? (
+                <p className="m-0 text-sm font-bold text-coral-text">Geen enkel endpoint geconfigureerd in Stripe.</p>
+              ) : (
+                report.stripe.webhookEndpoints.map((endpoint) => (
+                  <div key={endpoint.url} className="flex flex-col gap-2 rounded-[12px] border border-line px-3.5 py-3">
+                    <span className="flex flex-wrap items-center gap-2">
+                      <StatusChip tone={endpoint.status === 'enabled' ? 'green' : 'coral'}>{endpoint.status}</StatusChip>
+                      <Mono className="text-[13px] text-ink">{endpoint.url}</Mono>
+                    </span>
+                    <span className="flex flex-wrap gap-x-4 gap-y-1.5">
+                      <YesNo ok={endpoint.coversCheckoutCompleted} label="checkout" />
+                      <YesNo ok={endpoint.coversSubscription} label="abonnement" />
+                    </span>
+                  </div>
+                ))
+              )}
+            </div>
+            <SubHead>Prijzen</SubHead>
+          </div>
+          <Table
+            caption="Prijzen"
+            minWidth={360}
+            head={
+              <>
+                <Th>Plan</Th>
+                <Th>Status</Th>
+                <Th align="right">Bedrag</Th>
+              </>
+            }
+          >
+            {report.stripe.prices.length === 0 && <EmptyRow columns={3}>Nog geen prijzen opgehaald bij Stripe.</EmptyRow>}
+            {report.stripe.prices.map((price) => {
+              const [tone, label] = priceStatus(price);
+              return (
+                <tr key={price.plan}>
+                  <Td valign="middle">
+                    <span className="font-extrabold text-ink">{PLAN_LABELS[price.plan] ?? price.plan}</span> <Mono>{price.plan}</Mono>
+                  </Td>
+                  <Td valign="middle">
+                    <StatusChip tone={tone}>{label}</StatusChip>
+                  </Td>
+                  <Td valign="middle" align="right" numeric tone="strong">
+                    {price.amountCents != null
+                      ? `${formatEuroCents(price.amountCents)}${price.interval ? ` ${INTERVAL_LABELS[price.interval] ?? `/ ${price.interval}`}` : ''}`
+                      : '-'}
+                  </Td>
+                </tr>
+              );
+            })}
+          </Table>
+          <div className="flex flex-col gap-4 border-t border-line-soft px-5 pb-5 pt-4">
+            {report.stripe.sessions30d && (
+              <div className="flex flex-col gap-2">
+                <SubHead>Checkout-sessies (30 dagen)</SubHead>
+                <div className="grid grid-cols-2 gap-3 m:grid-cols-5">
+                  {(
+                    [
+                      ['aangemaakt', report.stripe.sessions30d.total],
+                      ['voltooid', report.stripe.sessions30d.complete],
+                      ['betaald', report.stripe.sessions30d.paid],
+                      ['open', report.stripe.sessions30d.open],
+                      ['verlopen', report.stripe.sessions30d.expired],
+                    ] as const
+                  ).map(([label, value]) => (
+                    <div key={label} className="flex min-w-0 flex-col">
+                      <span className="text-xl font-extrabold leading-[26px] tabular-nums">{formatNumber(value)}</span>
+                      <span className="text-[13px] font-semibold text-ink-muted">{label}</span>
+                    </div>
                   ))}
                 </div>
-              </details>
+              </div>
             )}
-          </CardContent>
-        </Card>
-      </section>
-
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
-        <div className="grid gap-6 lg:grid-cols-2">
-          {/* Stripe */}
-          <Card className="border-rule py-0">
-            <CardHeader className="pb-3 pt-5">
-              <CardTitle className="flex items-center gap-2 text-ink">
-                <CreditCard className="h-5 w-5 text-ink-soft" />
-                Stripe (web)
-              </CardTitle>
-              <CardDescription>
-                Sleutel: <strong>{report.stripe.keyMode}</strong>
-                {report.stripe.keyWorks === true && ' · geaccepteerd'}
-                {report.stripe.keyWorks === false && ' · geweigerd'}
-                {report.stripe.accountCurrency && ` · valuta ${report.stripe.accountCurrency.toUpperCase()}`}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4 pb-5 text-sm">
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Webhook-endpoints</p>
-                {report.stripe.webhookEndpoints.length === 0 ? (
-                  <p className="mt-1 text-xs text-vermilion">Geen enkel endpoint geconfigureerd in Stripe.</p>
-                ) : (
-                  <ul className="mt-1 space-y-1">
-                    {report.stripe.webhookEndpoints.map((e) => (
-                      <li key={e.url} className="text-xs text-muted-foreground">
-                        <span className={e.status === 'enabled' ? 'text-positive' : 'text-vermilion'}>{e.status}</span>{' '}
-                        · {e.url}{' '}
-                        · checkout {e.coversCheckoutCompleted ? '✓' : '✗'} · abonnement {e.coversSubscription ? '✓' : '✗'}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Prijzen</p>
-                <table className="mt-1 w-full text-xs">
-                  <tbody>
-                    {report.stripe.prices.map((p) => (
-                      <tr key={p.plan} className="border-b border-rule last:border-0">
-                        <td className="py-1.5 pr-2 font-medium text-ink">{p.plan}</td>
-                        <td className="py-1.5 pr-2 text-muted-foreground">
-                          {p.priceId
-                            ? p.error
-                              ? <span className="text-vermilion">onbekend bij Stripe</span>
-                              : p.active
-                                ? <span className="text-positive">actief</span>
-                                : <span className="text-vermilion">inactief</span>
-                            : <span className="text-ink-muted">niet gezet</span>}
-                        </td>
-                        <td className="py-1.5 text-right tabular-nums text-ink">
-                          {p.amountCents != null ? `${formatEuroCents(p.amountCents)} ${p.interval ? `/ ${p.interval}` : ''}` : '-'}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              {report.stripe.sessions30d && (
-                <div>
-                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Checkout-sessies (30 dagen)</p>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    {report.stripe.sessions30d.total} aangemaakt · {report.stripe.sessions30d.complete} voltooid ·{' '}
-                    {report.stripe.sessions30d.paid} betaald · {report.stripe.sessions30d.open} open ·{' '}
-                    {report.stripe.sessions30d.expired} verlopen
-                  </p>
+            <div className="flex flex-col gap-2">
+              <SubHead>Recente Stripe-events</SubHead>
+              {report.stripe.recentEventTypes.length === 0 ? (
+                <p className="m-0 text-sm font-semibold text-ink-muted">geen</p>
+              ) : (
+                <div className="flex flex-wrap gap-1.5">
+                  {report.stripe.recentEventTypes.slice(0, 6).map((event) => (
+                    <span
+                      key={`${event.type}-${event.at}`}
+                      className="inline-flex h-[26px] items-center rounded-[6px] bg-chip px-2 font-mono text-xs text-ink-soft"
+                    >
+                      {event.type}
+                    </span>
+                  ))}
                 </div>
               )}
+              <p className="m-0 text-[13px] font-semibold leading-[18px] text-ink-muted tabular-nums">
+                Nieuwste checkout-bevestiging bij Stripe: {formatDateTime(report.stripe.newestCheckoutCompletedAt)} · nieuwste
+                door ons opgeslagen: {formatDateTime(report.webhooksStored.stripeNewestAt)} ({formatNumber(report.webhooksStored.stripe)}{' '}
+                totaal)
+              </p>
+            </div>
+          </div>
+        </section>
 
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">Recente Stripe-events</p>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  {report.stripe.recentEventTypes.length === 0
-                    ? 'geen'
-                    : report.stripe.recentEventTypes.slice(0, 6).map((e) => e.type).join(', ')}
-                </p>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Nieuwste checkout-bevestiging bij Stripe: {fmtDate(report.stripe.newestCheckoutCompletedAt)} ·
-                  {' '}nieuwste door ons opgeslagen: {fmtDate(report.webhooksStored.stripeNewestAt)} ({report.webhooksStored.stripe} totaal)
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
+        <div className="flex min-w-0 flex-col gap-5">
           {/* RevenueCat */}
-          <Card className="border-rule py-0">
-            <CardHeader className="pb-3 pt-5">
-              <CardTitle className="flex items-center gap-2 text-ink">
-                <Smartphone className="h-5 w-5 text-ink-soft" />
-                RevenueCat / App Store (app)
-              </CardTitle>
-              <CardDescription>In-app aankopen komen hier binnen.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-2 pb-5 text-xs text-muted-foreground">
-              <p>
-                Webhook-autorisatie:{' '}
-                <span className={report.revenuecat.webhookAuthConfigured ? 'text-positive' : 'text-vermilion'}>
-                  {report.revenuecat.webhookAuthConfigured ? 'gezet' : 'ONTBREEKT - app-aankopen geven geen premium'}
+          <section className="flex min-w-0 flex-col gap-2.5 rounded-[16px] border border-line bg-card px-5 pb-2.5 pt-[18px]">
+            <CardTitle
+              icon={<Smartphone className="size-[18px]" strokeWidth={2.2} />}
+              title="RevenueCat / App Store (app)"
+              description="In-app aankopen komen hier binnen."
+            />
+            <div>
+              <InfoRow label="Webhook-autorisatie">
+                {report.revenuecat.webhookAuthConfigured ? (
+                  <StatusChip tone="green">gezet</StatusChip>
+                ) : (
+                  <StatusChip tone="coral">ontbreekt - app-aankopen geven geen premium</StatusChip>
+                )}
+              </InfoRow>
+              <InfoRow label="REST-sleutel">
+                <span className="inline-flex flex-wrap items-center justify-end gap-1.5">
+                  <StatusChip tone={report.revenuecat.restKeyConfigured ? 'green' : 'coral'}>
+                    {report.revenuecat.restKeyConfigured ? 'gezet' : 'ontbreekt'}
+                  </StatusChip>
+                  {report.revenuecat.restKeyWorks === true && <StatusChip tone="green">getest OK</StatusChip>}
+                  {report.revenuecat.restKeyWorks === false && <StatusChip tone="coral">geweigerd door RevenueCat</StatusChip>}
                 </span>
-              </p>
-              <p>
-                REST-sleutel:{' '}
-                <span className={report.revenuecat.restKeyConfigured ? 'text-positive' : 'text-vermilion'}>
-                  {report.revenuecat.restKeyConfigured ? 'gezet' : 'ONTBREEKT'}
-                </span>
-                {report.revenuecat.restKeyWorks === true && ' · getest OK'}
-                {report.revenuecat.restKeyWorks === false && ' · geweigerd door RevenueCat'}
-              </p>
-              <p>
-                Opgeslagen app-webhooks: {report.revenuecat.webhookEventsStored} · nieuwste{' '}
-                {fmtDate(report.revenuecat.newestWebhookEventAt)}
-              </p>
+              </InfoRow>
+              <InfoRow label="Opgeslagen app-webhooks">{formatNumber(report.revenuecat.webhookEventsStored)}</InfoRow>
+              <InfoRow label="Nieuwste app-webhook">{formatDateTime(report.revenuecat.newestWebhookEventAt)}</InfoRow>
               {report.revenuecat.webhookEventsStored === 0 && (
-                <p className="text-vermilion">
+                <p className="m-0 border-t border-line-soft py-2.5 text-sm font-bold leading-5 text-coral-text">
                   Nul opgeslagen app-webhooks. Als er in de app is gekocht, komt de webhook niet binnen. Zie stap 7-9.
                 </p>
               )}
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Funnel */}
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
-        <Card className="border-rule py-0">
-          <CardHeader className="pb-3 pt-5">
-            <CardTitle className="text-ink">Funnel (30 dagen)</CardTitle>
-            <CardDescription>Van paywall gezien tot betaald.</CardDescription>
-          </CardHeader>
-          <CardContent className="pb-5">
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-5">
-              {[
-                ['Paywall gezien', report.funnel30d.paywallShown],
-                ['Op betalen geklikt', report.funnel30d.checkoutStarted],
-                ['Aankoop voltooid', report.funnel30d.purchaseCompleted],
-                ['Proef gestart', report.funnel30d.trialStarted],
-                ['Proef omgezet', report.funnel30d.trialConverted],
-              ].map(([label, value]) => (
-                <div key={label as string} className="rounded-md border border-rule bg-paper-raised p-3">
-                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">{label}</p>
-                  <p className="mt-1 text-2xl font-semibold text-ink">{value as number}</p>
-                </div>
-              ))}
             </div>
-            {report.funnel30d.checkoutStarted > 0 && (
-              <p className="mt-3 text-xs text-muted-foreground">
-                Afronding bij Stripe:{' '}
-                {Math.round((report.funnel30d.purchaseCompleted / report.funnel30d.checkoutStarted) * 100)}% (
-                {report.funnel30d.purchaseCompleted}/{report.funnel30d.checkoutStarted})
+          </section>
+
+          {/* Funnel */}
+          <section className="flex min-w-0 flex-col gap-3.5 rounded-[16px] border border-line bg-card px-5 pb-5 pt-[18px]">
+            <CardTitle title="Funnel (30 dagen)" description="Van paywall gezien tot betaald." />
+            <HBarList
+              label="Funnel over 30 dagen"
+              labelColumn="minmax(120px, 150px)"
+              reserve={48}
+              rows={[
+                { label: 'Paywall gezien', value: funnel.paywallShown },
+                { label: 'Op betalen geklikt', value: funnel.checkoutStarted },
+                { label: 'Aankoop voltooid', value: funnel.purchaseCompleted },
+                { label: 'Proef gestart', value: funnel.trialStarted },
+                { label: 'Proef omgezet', value: funnel.trialConverted },
+              ]}
+            />
+            {funnel.checkoutStarted > 0 && (
+              <p className="m-0 text-sm font-bold leading-5 text-ink-soft tabular-nums">
+                Afronding bij Stripe: {formatPct(Math.round((funnel.purchaseCompleted / funnel.checkoutStarted) * 100))} (
+                {funnel.purchaseCompleted}/{funnel.checkoutStarted})
               </p>
             )}
-          </CardContent>
-        </Card>
-      </section>
+          </section>
 
-      {/* Access gaps */}
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
-        <Card className="border-rule py-0">
-          <CardHeader className="pb-3 pt-5">
-            <CardTitle className={`text-ink ${report.accessGaps.length > 0 ? '' : ''}`}>
-              Betaald zonder toegang
-            </CardTitle>
-            <CardDescription>
-              Accounts met een geslaagde betaling die tóch niet premium zijn. Dit hoort altijd leeg te zijn.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="pb-5">
+          {/* Access gaps */}
+          <section className="flex min-w-0 flex-col gap-3.5 rounded-[16px] border border-line bg-card px-5 pb-5 pt-[18px]">
+            <CardTitle
+              title="Betaald zonder toegang"
+              description="Accounts met een geslaagde betaling die toch niet premium zijn. Dit hoort altijd leeg te zijn."
+            />
             {report.accessGaps.length === 0 ? (
-              <p className="text-sm text-positive">Leeg. Iedereen die betaalde heeft Premium.</p>
-            ) : (
-              <div className="space-y-3">
-                {report.accessGaps.map((g) => (
-                  <div key={g.userId + g.when} className="rounded-md border border-vermilion/40 bg-vermilion-tint p-3">
-                    <p className="text-sm font-medium text-ink">
-                      {g.name} · {g.email}
-                    </p>
-                    <p className="mt-1 text-xs text-ink-soft">{g.reason}</p>
-                    <p className="mt-1 text-xs text-muted-foreground">{fmtDate(g.when)}</p>
-                  </div>
-                ))}
+              <div className="flex items-center gap-3 rounded-[12px] border border-line px-4 py-3.5">
+                <span aria-hidden="true" className="flex size-7 shrink-0 items-center justify-center rounded-full bg-green text-white">
+                  <Check className="size-4" strokeWidth={2.6} />
+                </span>
+                <span className="text-[15px] font-bold leading-[22px] text-green-text">Leeg. Iedereen die betaalde heeft Premium.</span>
               </div>
+            ) : (
+              <ul className="m-0 flex list-none flex-col gap-2.5 p-0">
+                {report.accessGaps.map((gap) => (
+                  <li key={gap.userId + gap.when} className="flex items-start gap-3 rounded-[12px] border border-coral-line px-4 py-3.5">
+                    <span aria-hidden="true" className="flex size-7 shrink-0 items-center justify-center rounded-full bg-coral-strong text-white">
+                      <X className="size-4" strokeWidth={2.6} />
+                    </span>
+                    <span className="flex min-w-0 flex-col">
+                      <span className="text-[15px] font-extrabold leading-[22px] [overflow-wrap:anywhere]">
+                        {gap.name} · {gap.email}
+                      </span>
+                      <span className="text-sm font-semibold leading-5 text-ink-soft">{gap.reason}</span>
+                      <span className="text-[13px] font-semibold leading-[18px] text-ink-muted tabular-nums">{formatDateTime(gap.when)}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
             )}
-          </CardContent>
-        </Card>
-      </section>
+          </section>
+        </div>
+      </div>
 
       {/* Recent attempts */}
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
-        <Card className="border-rule py-0">
-          <CardHeader className="pb-3 pt-5">
-            <CardTitle className="text-ink">Recente betaalpogingen</CardTitle>
-            <CardDescription>Laatste checkout-sessies uit Stripe, naast onze status en de toegang nu.</CardDescription>
-          </CardHeader>
-          <CardContent className="overflow-x-auto pb-5">
-            {report.recentAttempts.length === 0 ? (
-              <p className="text-sm text-muted-foreground">Nog geen checkout-sessies bij Stripe.</p>
-            ) : (
-              <table className="w-full min-w-[720px] text-xs">
-                <thead>
-                  <tr className="border-b border-rule text-left text-[10px] uppercase tracking-[0.14em] text-ink-muted">
-                    <th className="py-2 pr-3">Wanneer</th>
-                    <th className="py-2 pr-3">Wie</th>
-                    <th className="py-2 pr-3">Plan</th>
-                    <th className="py-2 pr-3">Bedrag</th>
-                    <th className="py-2 pr-3">Stripe-sessie</th>
-                    <th className="py-2 pr-3">Betaling</th>
-                    <th className="py-2 pr-3">Onze status</th>
-                    <th className="py-2">Toegang nu</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {report.recentAttempts.map((a, i) => (
-                    <tr key={i} className="border-b border-rule last:border-0">
-                      <td className="py-2 pr-3 text-muted-foreground">{fmtDate(a.when)}</td>
-                      <td className="py-2 pr-3 text-ink">{a.email}</td>
-                      <td className="py-2 pr-3">{a.plan}</td>
-                      <td className="py-2 pr-3 tabular-nums">{formatEuroCents(a.amountCents)}</td>
-                      <td className="py-2 pr-3">{a.stripeSessionStatus ?? '-'}</td>
-                      <td className="py-2 pr-3">{a.stripePaymentStatus ?? '-'}</td>
-                      <td className="py-2 pr-3">{a.ourPaymentStatus ?? '-'}</td>
-                      <td className={`py-2 font-medium ${a.hasAccessNow ? 'text-positive' : 'text-vermilion'}`}>
-                        {a.hasAccessNow ? 'ja' : 'nee'}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            )}
-          </CardContent>
-        </Card>
-      </section>
+      <TableCard
+        title="Recente betaalpogingen"
+        description="Laatste checkout-sessies uit Stripe, naast onze status en de toegang nu."
+        caption="Recente betaalpogingen"
+        minWidth={960}
+        head={
+          <>
+            <Th>Wanneer</Th>
+            <Th>Wie</Th>
+            <Th>Plan</Th>
+            <Th align="right">Bedrag</Th>
+            <Th>Stripe-sessie</Th>
+            <Th>Betaling</Th>
+            <Th>Onze status</Th>
+            <Th>Toegang nu</Th>
+          </>
+        }
+      >
+        {report.recentAttempts.length === 0 ? (
+          <EmptyRow columns={8}>Nog geen checkout-sessies bij Stripe.</EmptyRow>
+        ) : (
+          report.recentAttempts.map((attempt, index) => (
+            <tr key={`${attempt.when}-${index}`}>
+              <Td valign="middle" numeric tone="muted">
+                {formatDateTime(attempt.when, false)}
+              </Td>
+              <Td valign="middle" tone="strong">
+                {attempt.email}
+              </Td>
+              <Td valign="middle">
+                <Mono className="text-[13px] text-ink-soft">{attempt.plan}</Mono>
+              </Td>
+              <Td valign="middle" align="right" numeric tone="strong">
+                {formatEuroCents(attempt.amountCents)}
+              </Td>
+              <Td valign="middle">
+                <Mono className="text-[13px] text-ink-soft">{attempt.stripeSessionStatus ?? '-'}</Mono>
+              </Td>
+              <Td valign="middle">
+                <Mono className="text-[13px] text-ink-soft">{attempt.stripePaymentStatus ?? '-'}</Mono>
+              </Td>
+              <Td valign="middle">
+                <Mono className="text-[13px] text-ink-soft">{attempt.ourPaymentStatus ?? '-'}</Mono>
+              </Td>
+              <Td valign="middle">
+                {attempt.hasAccessNow ? (
+                  <span className="inline-flex items-center gap-1.5 font-extrabold text-green-text">
+                    <Check className="size-[15px]" strokeWidth={2.6} aria-hidden="true" />
+                    ja
+                  </span>
+                ) : (
+                  'nee'
+                )}
+              </Td>
+            </tr>
+          ))
+        )}
+      </TableCard>
 
-      {/* Instructions pointer */}
-      <section id="handleiding" className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-5 pt-6 sm:px-8 lg:px-10">
-        <Card className="border-rule py-0">
-          <CardHeader className="pb-3 pt-5">
-            <CardTitle className="text-ink">Wat moet ik doen?</CardTitle>
-          </CardHeader>
-          <CardContent className="pb-6 text-sm text-muted-foreground">
-            <p>
-              De volledige stap-voor-stap handleiding staat in{' '}
-              <code>docs/premium-setup-checklist.md</code> in de repo (lokaal, niet in git). Werk de rode regels in de
-              controlelijst hierboven af in de volgorde waarin ze staan; elke regel verwijst naar het stapnummer in dat
-              document. Kom daarna terug en druk op <strong>Ververs</strong>.
-            </p>
-          </CardContent>
-        </Card>
+      {/* Where the full instructions live */}
+      <section id="handleiding" className="flex scroll-mt-6 items-start gap-3.5 rounded-[16px] border border-line bg-card px-5 pb-5 pt-[18px]">
+        <span aria-hidden="true" className="flex size-9 shrink-0 items-center justify-center rounded-[10px] bg-lapis-tint text-lapis">
+          <CircleHelp className="size-[18px]" strokeWidth={2.2} />
+        </span>
+        <div className="min-w-0">
+          <h2 className="m-0 font-sans text-[17px] font-extrabold leading-6">Wat moet ik doen?</h2>
+          <p className="mb-0 mt-1 max-w-[80ch] text-[15px] font-semibold leading-[22px] text-ink-soft">
+            De volledige stap-voor-stap handleiding staat in <Mono className="text-[13px] text-ink">docs/premium-setup-checklist.md</Mono>{' '}
+            in de repo (lokaal, niet in git). Werk de regels in de controlelijst hierboven af in de volgorde waarin ze staan;
+            elke regel verwijst naar het stapnummer in dat document. Kom daarna terug en druk op{' '}
+            <strong className="text-ink">Ververs</strong>.
+          </p>
+        </div>
       </section>
-    </div>
+    </>
   );
 }

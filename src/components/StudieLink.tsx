@@ -1,5 +1,6 @@
 'use client';
 
+import type * as React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 import { BijbelStudieMark } from '@/components/BijbelStudieMark';
@@ -27,7 +28,7 @@ interface StudieLinkProps {
   /** `pricing` opens BijbelStudie's subscription page instead of the reader. */
   destination?: 'passage' | 'pricing';
   /** Overrides the generated "Lees <boek> <hoofdstuk> op BijbelStudie". */
-  label?: string;
+  label?: React.ReactNode;
   /** BijbelStudie's mark before the label, so the link reads as that product. */
   mark?: boolean;
   /** The trailing arrow. Off for a link inside a sentence. */

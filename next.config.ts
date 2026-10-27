@@ -18,10 +18,10 @@ const nextConfig: NextConfig = {
       { source: '/profile', destination: '/profiel', permanent: true },
       { source: '/leaderboard', destination: '/ranglijst', permanent: true },
       { source: '/quizzes', destination: '/quizzen', permanent: true },
-      { source: '/quizzes/create', destination: '/quizzen/aanmaken', permanent: true },
-      // Layout prototypes for the quiz index, reachable under either spelling.
-      // Temporary: these go once one of them becomes /quizzen.
-      { source: '/quizzes/version-:n', destination: '/quizzen/versie-:n', permanent: false },
+      // Making your own quiz is gone (admins create quizzes in /beheer); old
+      // links to the creator land on the library instead of a 404.
+      { source: '/quizzes/create', destination: '/quizzen', permanent: true },
+      { source: '/quizzen/aanmaken', destination: '/quizzen', permanent: true },
       { source: '/quiz/:id/review', destination: '/quiz/:id/beoordeling', permanent: true },
       { source: '/login', destination: '/inloggen', permanent: true },
       { source: '/register', destination: '/registreren', permanent: true },

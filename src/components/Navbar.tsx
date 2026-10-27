@@ -29,7 +29,6 @@ interface NavbarProps {
 function getPageTitle(pathname: string): string {
   if (pathname === '/') return 'Home';
   if (pathname.startsWith('/dashboard')) return 'Dashboard';
-  if (pathname.startsWith('/quizzen/aanmaken')) return 'Quiz maken';
   if (pathname.startsWith('/quizzen')) return 'Quizzen';
   if (pathname.startsWith('/quiz/')) return 'Quiz';
   if (pathname.startsWith('/ranglijst')) return 'Ranglijst';

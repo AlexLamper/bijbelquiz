@@ -1,23 +1,19 @@
+import type { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import MultiplayerEntryClient from '@/components/multiplayer/MultiplayerEntryClient';
+import SamenSpelenClient, {
+  type SamenCategory,
+  type SamenQuiz,
+} from '@/components/web2/samen/SamenSpelenClient';
 import { authOptions } from '@/lib/auth';
 import { connectDB, Category, Quiz, User } from '@/database';
 import { MULTIPLAYER_MAX_PLAYERS } from '@/lib/premium-benefits';
+import { resolveQuizPassage } from '@/lib/quiz-passage';
 
-interface QuizOption {
-  id: string;
-  title: string;
-  questionCount: number;
-  isPremium: boolean;
-  categorySlug: string | null;
-  categoryTitle: string | null;
-}
-
-interface CategoryOption {
-  slug: string;
-  title: string;
-}
+export const metadata: Metadata = {
+  title: 'Samen spelen',
+  description: 'Speel met je groep tegelijk dezelfde bijbelquiz, ieder op een eigen telefoon. Gratis, tot 20 spelers.',
+};
 
 interface RawUserDocument {
   isPremium?: unknown;
@@ -28,7 +24,7 @@ interface RawQuizDocument {
   _id: unknown;
   title: unknown;
   questionCount?: unknown;
-  questions?: unknown;
+  questions?: Array<{ bibleReference?: string }>;
   isPremium?: unknown;
   categoryId?: unknown;
 }
@@ -39,12 +35,19 @@ interface RawCategoryDocument {
   title: unknown;
 }
 
-export default async function MultiplayerPage() {
+interface PageProps {
+  searchParams: Promise<{ quiz?: string | string[] }>;
+}
+
+export default async function SamenSpelenPage({ searchParams }: PageProps) {
   const session = await getServerSession(authOptions);
 
   if (!session) {
     redirect('/inloggen?callbackUrl=/samen-spelen');
   }
+
+  const { quiz: quizParam } = await searchParams;
+  const preselectedQuizId = typeof quizParam === 'string' ? quizParam : null;
 
   await connectDB();
 
@@ -52,14 +55,15 @@ export default async function MultiplayerPage() {
     .select('isPremium hasLifetimePremium')
     .lean() as RawUserDocument | null;
 
-  // Still read, because a group licence is a real thing an account can have.
-  // It no longer changes what anybody may do here.
+  // Only reported to analytics: hosting and room size are the same for
+  // everybody, Premium or not.
   const isPremiumUser = Boolean(rawUser?.isPremium || rawUser?.hasLifetimePremium || session.user.isPremium);
 
-  const statusFilter = { status: 'approved' };
   const [rawQuizzes, rawCategories] = await Promise.all([
-    Quiz.find(statusFilter)
-      .select('_id title questions questionCount isPremium categoryId')
+    Quiz.find({ status: 'approved' })
+      // Only the references are needed (for the chapter); the question count
+      // falls out of the array length.
+      .select('_id title questions.bibleReference questionCount isPremium categoryId')
       .sort({ isPremium: 1, sortOrder: 1, createdAt: -1 })
       // Every approved quiz must be reachable from the picker - the client
       // does its own search/filtering, so nothing is truncated here.
@@ -67,22 +71,17 @@ export default async function MultiplayerPage() {
     Category.find().select('_id slug title').lean() as unknown as RawCategoryDocument[],
   ]);
 
-  const categoriesById = new Map(
-    rawCategories.map((category) => [String(category._id), category]),
-  );
+  const categoriesById = new Map(rawCategories.map((category) => [String(category._id), category]));
 
-  const categories: CategoryOption[] = rawCategories
+  const categories: SamenCategory[] = rawCategories
     .map((category) => ({ slug: String(category.slug), title: String(category.title) }))
     .sort((a, b) => a.title.localeCompare(b.title, 'nl'));
 
-  const quizzes: QuizOption[] = rawQuizzes.map((quiz) => {
-    const questionCount = typeof quiz.questionCount === 'number'
-      ? quiz.questionCount
-      : Array.isArray(quiz.questions)
-        ? quiz.questions.length
-        : 0;
-
+  const quizzes: SamenQuiz[] = rawQuizzes.map((quiz) => {
+    const questions = Array.isArray(quiz.questions) ? quiz.questions : [];
+    const questionCount = typeof quiz.questionCount === 'number' ? quiz.questionCount : questions.length;
     const category = quiz.categoryId ? categoriesById.get(String(quiz.categoryId)) : undefined;
+    const passage = resolveQuizPassage(questions);
 
     return {
       id: String(quiz._id),
@@ -91,15 +90,17 @@ export default async function MultiplayerPage() {
       isPremium: Boolean(quiz.isPremium),
       categorySlug: category ? String(category.slug) : null,
       categoryTitle: category ? String(category.title) : null,
+      passageLabel: passage?.label ?? null,
     };
   });
 
   return (
-    <MultiplayerEntryClient
+    <SamenSpelenClient
       quizzes={quizzes}
       categories={categories}
       isPremiumUser={isPremiumUser}
-      maxPlayersForUser={MULTIPLAYER_MAX_PLAYERS}
+      maxPlayers={MULTIPLAYER_MAX_PLAYERS}
+      initialQuizId={preselectedQuizId && quizzes.some((quiz) => quiz.id === preselectedQuizId) ? preselectedQuizId : null}
     />
   );
 }

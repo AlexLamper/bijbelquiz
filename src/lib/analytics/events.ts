@@ -155,6 +155,12 @@ export const PAYWALL_TRIGGERS = [
    * raises it from `/quiz/[id]/beoordeling` as well.
    */
   'review_locked',
+  /**
+   * The free quizzes are used up: a fourth new quiz opens the locked paywall
+   * (`/premium?vergrendeld=1`). Spelled as the app has sent it since the free
+   * tier came back (`PaywallTrigger.freeLimit`).
+   */
+  'gratis-limiet',
   /** The user opened the premium page directly. */
   'direct',
 ] as const;

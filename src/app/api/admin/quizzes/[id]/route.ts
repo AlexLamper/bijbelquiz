@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { connectDB, Quiz } from '@/database';
+import { withDerivedRefs } from '@/lib/quiz-refs';
 
 export async function PATCH(
   req: NextRequest,
@@ -109,6 +110,12 @@ export async function PUT(
     const { id } = await params;
     const body = await req.json();
 
+    // findByIdAndUpdate skips the model's pre-save hook, so derive the
+    // refBook/refChapter/... fields from bibleReference here.
+    if (Array.isArray(body?.questions)) {
+      body.questions = withDerivedRefs(body.questions);
+    }
+
     const quiz = await Quiz.findByIdAndUpdate(id, body, {
       new: true,
       runValidators: true,
@@ -120,6 +127,9 @@ export async function PUT(
 
     return NextResponse.json(quiz);
   } catch (error) {
+    if ((error as { code?: number })?.code === 11000) {
+      return NextResponse.json({ error: 'Deze slug bestaat al. Kies een andere.' }, { status: 409 });
+    }
     console.error("[ADMIN_QUIZZES_ID_PUT]", error);
     return new NextResponse("Internal Server Error", { status: 500 });
   }

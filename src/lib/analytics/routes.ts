@@ -43,7 +43,6 @@ export const ROUTE_GROUP_LABELS: Record<RouteGroup, string> = {
 export const SITE_ROUTES: SiteRoute[] = [
   { path: '/', label: 'Landingspagina', group: 'public', publicFacing: true },
   { path: '/quizzen', label: 'Quizoverzicht', group: 'app', publicFacing: true },
-  { path: '/quizzen/aanmaken', label: 'Quiz aanmaken', group: 'app', publicFacing: false },
   { path: '/quiz/[id]', label: 'Quiz startscherm', group: 'app', publicFacing: true },
   { path: '/quiz/[id]/beoordeling', label: 'Quiz-analyse', group: 'app', publicFacing: false },
   { path: '/bijbelquiz/[slug]', label: 'SEO-quizpagina', group: 'public', publicFacing: true },

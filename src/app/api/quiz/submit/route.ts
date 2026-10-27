@@ -22,6 +22,8 @@ export async function POST(req: NextRequest) {
       // Played before signing in and written now that there is an account.
       // Only recorded on the funnel event; the attempt itself is ordinary.
       claimed: claimed === true,
+      // Three different quizzes free, then Premium (src/lib/free-quiz-limit.ts).
+      enforceFreeLimit: true,
     });
 
     if (!result.ok) {
@@ -30,6 +32,12 @@ export async function POST(req: NextRequest) {
       }
       if (result.reason === 'quiz_not_found') {
         return new NextResponse('Quiz not found', { status: 404 });
+      }
+      if (result.reason === 'free_limit') {
+        return NextResponse.json(
+          { error: 'free_limit', message: 'Speel verder met Premium' },
+          { status: 403 }
+        );
       }
       return new NextResponse('User not found', { status: 404 });
     }

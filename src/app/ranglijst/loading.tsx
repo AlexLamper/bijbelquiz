@@ -1,46 +1,33 @@
-import { Skeleton } from "@/components/ui/skeleton";
+import { Container, Skeleton } from '@/components/bq';
 
 export default function LeaderboardLoading() {
   return (
-    <div className="min-h-screen pb-12 pt-10">
-      <div className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-6 lg:px-8">
-        <div className="mb-6 flex items-end justify-between gap-4">
-          <div className="space-y-2">
-            <Skeleton className="h-4 w-20" />
-            <Skeleton className="h-9 w-44" />
-            <Skeleton className="h-5 w-72" />
-          </div>
-          <div className="flex gap-3">
-            <Skeleton className="h-10 w-28" />
-            <Skeleton className="h-10 w-28" />
-          </div>
-        </div>
-
-        <div className="mb-5 grid gap-3 sm:grid-cols-3">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="rounded-lg border border-border/50 p-4">
-              <Skeleton className="h-3 w-24" />
-              <Skeleton className="mt-2 h-8 w-16" />
-            </div>
-          ))}
-        </div>
-
-        <div className="overflow-hidden rounded-lg border border-border/50 bg-paper-raised">
-          <div className="hidden border-b border-border/50 px-4 py-3 md:block">
-            <Skeleton className="h-4 w-80" />
-          </div>
-          <div className="divide-y divide-border/50">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div key={i} className="grid gap-2 p-4 md:grid-cols-[90px_minmax(0,1fr)_130px_130px] md:items-center">
-                <Skeleton className="h-7 w-16" />
-                <Skeleton className="h-5 w-44" />
-                <Skeleton className="h-5 w-20" />
-                <Skeleton className="h-5 w-20" />
+    <Container className="flex flex-col gap-7 px-5 pb-[72px] pt-10" aria-busy="true">
+      <span className="sr-only">Ranglijst laden</span>
+      <div className="flex flex-col gap-2">
+        <Skeleton className="h-10 w-48" />
+        <Skeleton className="h-6 w-72 max-w-full" />
+      </div>
+      <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="flex flex-col gap-8">
+          <Skeleton className="h-14 w-full rounded-[14px]" />
+          <Skeleton className="mx-auto h-60 w-full max-w-[560px]" />
+          <div className="overflow-hidden rounded-[16px] border border-line bg-card">
+            {[0, 1, 2, 3, 4, 5, 6].map((row) => (
+              <div key={row} className="flex items-center gap-3.5 border-b border-line-soft px-5 py-3 last:border-b-0">
+                <Skeleton className="h-5 w-7" />
+                <Skeleton className="size-10 rounded-full" />
+                <Skeleton className="h-5 grow" />
+                <Skeleton className="h-5 w-16" />
               </div>
             ))}
           </div>
         </div>
+        <div className="flex flex-col gap-5">
+          <Skeleton className="h-52 w-full rounded-[16px]" />
+          <Skeleton className="h-60 w-full rounded-[16px]" />
+        </div>
       </div>
-    </div>
+    </Container>
   );
 }

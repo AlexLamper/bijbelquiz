@@ -88,6 +88,8 @@ export const STUDIE_LINK_SURFACES = [
   'interstitial_offer',
   /** The hint under the start button, before the first question. */
   'quiz_intro',
+  /** The passage card on the quiz landing page (`/bijbelquiz/[slug]`). */
+  'quiz_detail',
   /** The scoreboard at the end of a multiplayer game. */
   'multiplayer_end',
   /** The block on the public home page. */

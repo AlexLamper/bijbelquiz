@@ -52,6 +52,13 @@ export interface IUser extends Document {
   role: 'user' | 'admin';
   nameUpdatedAt?: Date;
   /**
+   * "Wachtwoord vergeten": the SHA-256 of the newest reset token and when it
+   * stops working. The token itself is only in the mail. Both are cleared by
+   * the reset that uses them. See `lib/auth/reset-token.ts`.
+   */
+  passwordResetTokenHash?: string;
+  passwordResetExpiresAt?: Date;
+  /**
    * The player mascot, stored as catalogue ids rather than an image. Absent
    * until the user opens the customiser; `resolveAvatar` then derives a stable
    * one from their id so nobody is ever faceless. See `lib/avatar.ts`.
@@ -116,6 +123,9 @@ const UserSchema: Schema = new Schema({
   multiplayerMonthlyGamesHosted: { type: Number },
   role: { type: String, enum: ['user', 'admin'], default: 'user' },
   nameUpdatedAt: { type: Date },
+  // Sparse: only accounts with a pending reset carry one.
+  passwordResetTokenHash: { type: String, index: { sparse: true } },
+  passwordResetExpiresAt: { type: Date },
   // No enum guard here on purpose: `normalizeAvatar` already rejects unknown
   // ids, and a schema enum would reject a part added in a newer release before
   // this deployment restarts.

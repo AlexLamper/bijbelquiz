@@ -1,30 +1,34 @@
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
-import { redirect } from "next/navigation";
-import QuizForm from "@/components/admin/QuizForm";
-import { connectDB, Quiz } from "@/database";
+import type { Metadata } from 'next';
+import { getServerSession } from 'next-auth';
+import { redirect } from 'next/navigation';
+import { isValidObjectId } from 'mongoose';
+
+import { authOptions } from '@/lib/auth';
+import { connectDB, Quiz } from '@/database';
+import QuizEditor from '@/components/web2/beheer/QuizEditor';
+import { loadEditorCategories, toEditorQuiz } from '@/components/web2/beheer/quiz-editor-data';
+
+export const metadata: Metadata = {
+  title: 'Quiz bewerken - Beheer',
+  robots: { index: false, follow: false },
+};
 
 export default async function EditQuizPage({ params }: { params: Promise<{ id: string }> }) {
   const session = await getServerSession(authOptions);
-
   if (!session || session.user.role !== 'admin') {
     redirect('/');
   }
 
   const { id } = await params;
-
-  await connectDB();
-  const quiz = await Quiz.findById(id).populate('categoryId').lean();
-
-  if (!quiz) {
-    redirect('/admin/quizzes');
+  if (!isValidObjectId(id)) {
+    redirect('/beheer/quizzen');
   }
 
-  const initialData = JSON.parse(JSON.stringify(quiz));
+  await connectDB();
+  const [quiz, categories] = await Promise.all([Quiz.findById(id).lean(), loadEditorCategories()]);
+  if (!quiz) {
+    redirect('/beheer/quizzen');
+  }
 
-  return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl 2xl:max-w-[1800px]">
-      <QuizForm initialData={initialData} />
-    </div>
-  );
+  return <QuizEditor categories={categories} initial={toEditorQuiz(JSON.parse(JSON.stringify(quiz)))} />;
 }

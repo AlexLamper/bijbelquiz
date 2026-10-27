@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
-import { KeyRound } from 'lucide-react';
+import { useId, useState } from 'react';
+import { Check } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/bq';
+import { AdminField, adminInput, formatAdminDate } from '@/components/web2/beheer/ui';
+import { cn } from '@/lib/utils';
 
 interface GrantResult {
   joinCode: string;
@@ -18,8 +19,10 @@ interface GrantResult {
  *
  * The join code is the deliverable: it goes back in the reply to the order
  * email, so it is shown large and stays on screen until the page is left.
+ * The card around it (title, description) is drawn by the overview page.
  */
 export default function AdminGroupLicenseForm({ defaultSeats }: { defaultSeats: number }) {
+  const id = useId();
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [seats, setSeats] = useState(String(defaultSeats));
@@ -58,110 +61,92 @@ export default function AdminGroupLicenseForm({ defaultSeats }: { defaultSeats: 
     }
   }
 
-  const inputClass =
-    'h-10 w-full rounded-md border border-rule bg-paper-raised px-3 text-sm text-ink outline-none focus:border-ink';
-
   return (
-    <Card className="border-rule py-0">
-      <CardHeader className="pb-3 pt-5">
-        <CardTitle className="flex items-center gap-2 leading-tight text-ink">
-          <KeyRound className="h-5 w-5 text-ink-soft" />
-          Groepslicentie toekennen
-        </CardTitle>
-        <CardDescription>
-          Voor een licentie die op factuur is verkocht. De koper moet al een account hebben.
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="pb-6">
-        <form onSubmit={submit} className="grid gap-4 md:grid-cols-2">
-          <label className="block">
-            <span className="mb-1.5 block text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-              E-mail van de koper
-            </span>
+    <>
+      <form onSubmit={submit} className="flex flex-col gap-4">
+        <div className="grid grid-cols-1 gap-3.5 m:grid-cols-[minmax(0,1.4fr)_minmax(0,1.2fr)_minmax(0,0.6fr)_minmax(0,0.8fr)]">
+          <AdminField label="E-mail van de koper" htmlFor={`${id}-email`}>
             <input
+              id={`${id}-email`}
               type="email"
               required
+              autoComplete="off"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="jeugdwerk@kerk.nl"
-              className={inputClass}
+              className={adminInput}
             />
-          </label>
-
-          <label className="block">
-            <span className="mb-1.5 block text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-              Groepsnaam (optioneel)
-            </span>
+          </AdminField>
+          <AdminField label="Groepsnaam (optioneel)" htmlFor={`${id}-name`}>
             <input
+              id={`${id}-name`}
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Jeugdgroep De Ark"
-              className={inputClass}
+              className={adminInput}
             />
-          </label>
-
-          <label className="block">
-            <span className="mb-1.5 block text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-              Plekken
-            </span>
+          </AdminField>
+          <AdminField label="Plekken" htmlFor={`${id}-seats`}>
             <input
+              id={`${id}-seats`}
               type="number"
               min={1}
               max={500}
               value={seats}
               onChange={(e) => setSeats(e.target.value)}
-              className={inputClass}
+              className={cn(adminInput, 'tabular')}
             />
-          </label>
-
-          <label className="block">
-            <span className="mb-1.5 block text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
-              Looptijd in maanden
-            </span>
+          </AdminField>
+          <AdminField label="Looptijd in maanden" htmlFor={`${id}-months`}>
             <input
+              id={`${id}-months`}
               type="number"
               min={1}
               max={60}
               value={months}
               onChange={(e) => setMonths(e.target.value)}
-              className={inputClass}
+              className={cn(adminInput, 'tabular')}
             />
-          </label>
+          </AdminField>
+        </div>
+        <div>
+          <Button type="submit" size="md" loading={busy}>
+            {busy ? 'Bezig...' : 'Licentie toekennen'}
+          </Button>
+        </div>
+      </form>
 
-          <div className="md:col-span-2">
-            <Button
-              type="submit"
-              disabled={busy}
-              className="h-10 rounded-md bg-ink px-5 text-ink-inverted hover:bg-ink-soft"
-            >
-              {busy ? 'Bezig...' : 'Licentie toekennen'}
-            </Button>
+      {error && (
+        <p role="alert" className="m-0 rounded-[12px] border border-coral-line bg-coral-tint px-4 py-3 text-sm font-bold text-coral-text">
+          {error}
+        </p>
+      )}
+
+      {result && (
+        <div role="status" className="flex flex-wrap items-center gap-x-7 gap-y-4 rounded-[12px] border border-line border-t-4 border-t-green px-[18px] py-4">
+          <div className="flex min-w-0 flex-[1_1_340px] items-start gap-3">
+            <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-green text-white" aria-hidden="true">
+              <Check className="size-4" strokeWidth={3.2} />
+            </span>
+            <span className="flex flex-col gap-1">
+              <span className="text-[15px] font-bold leading-[22px]">
+                Licentie voor <strong className="font-extrabold">{result.ownerName}</strong> staat klaar: {result.seats} plekken, geldig tot{' '}
+                {formatAdminDate(result.expiresAt)}.
+              </span>
+              <span className="text-[13px] font-semibold leading-[18px] text-ink-muted">
+                Stuur deze code naar de koper. Iedereen die hem invult op /groepslicentie krijgt Premium zolang de licentie loopt.
+              </span>
+            </span>
           </div>
-        </form>
-
-        {error && (
-          <p className="mt-4 rounded-md border border-destructive/30 bg-destructive/10 p-3 text-sm text-destructive">
-            {error}
-          </p>
-        )}
-
-        {result && (
-          <div className="mt-4 rounded-md border border-lapis/35 bg-lapis-tint p-4">
-            <p className="text-sm text-ink">
-              Licentie voor <strong>{result.ownerName}</strong> staat klaar: {result.seats} plekken,
-              geldig tot {new Date(result.expiresAt).toLocaleDateString('nl-NL')}.
-            </p>
-            <p className="mt-3 font-display text-[28px] tracking-[0.3em] text-ink">
-              {result.joinCode}
-            </p>
-            <p className="mt-2 text-xs text-ink-muted">
-              Stuur deze code naar de koper. Iedereen die hem invult op /groepslicentie krijgt
-              Premium zolang de licentie loopt.
-            </p>
-          </div>
-        )}
-      </CardContent>
-    </Card>
+          <span
+            aria-label={`Code ${result.joinCode}`}
+            className="select-all font-display text-[30px] font-semibold leading-9 tracking-[0.28em] text-ink m:pl-10"
+          >
+            {result.joinCode}
+          </span>
+        </div>
+      )}
+    </>
   );
 }

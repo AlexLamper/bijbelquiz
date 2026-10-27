@@ -6,12 +6,17 @@ import { connectDB, User } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { normalizeUserSettings, type UserSettings } from '@/lib/user-settings';
 import { resolveAvatar } from '@/lib/avatar';
+import { appleWebCookies, appleWebProviders, linkAppleWebUser } from '@/lib/auth/apple-web';
 
 export const authOptions: NextAuthOptions = {
   session: {
     strategy: 'jwt',
   },
+  // Only set when Apple sign-in is configured; see `lib/auth/apple-web.ts`.
+  cookies: appleWebCookies(),
   providers: [
+    // "Doorgaan met Apple": present only when the APPLE_WEB_* env vars are set.
+    ...appleWebProviders(),
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID || '',
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
@@ -59,6 +64,14 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     async signIn({ user, account }) {
+      if (account?.provider === 'apple') {
+        try {
+          return await linkAppleWebUser(user, account.providerAccountId);
+        } catch (error) {
+          console.error('Error saving Apple user', error);
+          return false;
+        }
+      }
       if (account?.provider === 'google') {
         const { email, name, image } = user;
         try {

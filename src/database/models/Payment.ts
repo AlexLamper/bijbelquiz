@@ -3,7 +3,8 @@ import mongoose, { Document, Model, Schema } from 'mongoose';
 export interface IPayment extends Document {
   user: mongoose.Types.ObjectId;
   provider: 'stripe' | 'revenuecat';
-  planType?: 'lifetime' | 'monthly';
+  // Every plan in `STRIPE_PLANS` (src/lib/stripe-plans.ts) lands here.
+  planType?: 'lifetime' | 'monthly' | 'yearly' | 'group';
   stripeSessionId?: string;
   stripeSubscriptionId?: string;
   externalTransactionId?: string;
@@ -16,7 +17,7 @@ export interface IPayment extends Document {
 const PaymentSchema: Schema = new Schema({
   user: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   provider: { type: String, enum: ['stripe', 'revenuecat'], default: 'stripe' },
-  planType: { type: String, enum: ['lifetime', 'monthly'] },
+  planType: { type: String, enum: ['lifetime', 'monthly', 'yearly', 'group'] },
   stripeSessionId: { type: String },
   stripeSubscriptionId: { type: String },
   externalTransactionId: { type: String },

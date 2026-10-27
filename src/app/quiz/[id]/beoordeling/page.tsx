@@ -3,9 +3,25 @@ import { getServerSession } from 'next-auth';
 import type { Metadata } from 'next';
 
 import { authOptions } from '@/lib/auth';
-import { connectDB, Quiz, UserProgress } from '@/database';
-import QuizReviewClient from '@/components/quiz/QuizReviewClient';
-import type { QuizReviewQuestion } from '@/lib/quiz-review';
+import { connectDB, Quiz, User, UserProgress, type ICategory } from '@/database';
+import type { Crumb } from '@/components/bq';
+import GuestResult from '@/components/web2/quiz-result/GuestResult';
+import ReviewLock from '@/components/web2/quiz-result/ReviewLock';
+import {
+  AnswerList,
+  NextQuizButton,
+  ProgressCard,
+  ResultActions,
+  ResultLayout,
+  ScoreCard,
+  StudieCard,
+} from '@/components/web2/quiz-result/ResultView';
+import StudiePromoModal from '@/components/StudiePromoModal';
+import { dominantPassage } from '@/lib/ecosystem-links';
+import { getLevelInfo } from '@/lib/gamification';
+import { dominantBookChapter, pickNextQuiz, type NextQuizCandidate } from '@/lib/next-quiz';
+import { buildReviewQuestionsFromAttempt, type StoredAttemptAnswer } from '@/lib/quiz-review';
+import { calculateNextStreak } from '@/lib/streak';
 
 export const metadata: Metadata = {
   title: 'Quizoverzicht - BijbelQuiz',
@@ -17,112 +33,197 @@ export const metadata: Metadata = {
 
 interface PageProps {
   params: Promise<{ id: string }>;
-  searchParams?: Promise<{ attempt?: string }>;
+  searchParams?: Promise<{ attempt?: string; gast?: string }>;
+}
+
+interface StoredQuestion {
+  _id: unknown;
+  text?: string;
+  answers?: Array<{ _id?: unknown; text?: string; isCorrect?: boolean }>;
+  explanation?: string;
+  bibleReference?: string;
+  refBook?: string | null;
+  refChapter?: number | null;
+}
+
+const OBJECT_ID = /^[0-9a-fA-F]{24}$/;
+
+function playedOnLabel(date: Date): string {
+  return new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Amsterdam' }).format(date);
+}
+
+/** The quiz behind "Volgende quiz": next in the series, else the same book, else the same category. */
+async function nextQuizHref(
+  current: { _id: unknown; title: string; categoryId?: unknown; questions: StoredQuestion[] },
+  playedQuizIds: string[],
+): Promise<string> {
+  const docs = await Quiz.find({ $or: [{ status: 'approved' }, { status: { $exists: false } }] })
+    .select('_id slug title categoryId questions.refBook questions.refChapter')
+    .lean();
+
+  const toCandidate = (quiz: { _id: unknown; slug?: string; title: string; categoryId?: unknown; questions?: StoredQuestion[] }): NextQuizCandidate => {
+    const { book, chapter } = dominantBookChapter(quiz.questions || []);
+    const category = quiz.categoryId as { _id?: unknown } | undefined;
+    return {
+      id: String(quiz._id),
+      slug: quiz.slug,
+      title: quiz.title,
+      categoryId: category ? String(category._id ?? category) : null,
+      book,
+      chapter,
+    };
+  };
+
+  const next = pickNextQuiz(toCandidate(current), docs.map((doc) => toCandidate(doc as never)), playedQuizIds);
+  return next ? `/quiz/${next.slug || next.id}` : '/quizzen';
 }
 
 export default async function QuizBeoordelingPage({ params, searchParams }: PageProps) {
   const session = await getServerSession(authOptions);
-
-  if (!session?.user?.id) {
-    const { id } = await params;
-    redirect(`/inloggen?callbackUrl=/quiz/${id}/beoordeling`);
-  }
-
   const { id } = await params;
-  const resolvedSearchParams = searchParams ? await searchParams : undefined;
-  const attemptId = resolvedSearchParams?.attempt;
-
-  if (!attemptId || !attemptId.match(/^[0-9a-fA-F]{24}$/)) {
-    notFound();
-  }
+  const query = searchParams ? await searchParams : undefined;
 
   await connectDB();
 
-  // The review used to be the wall: you had just spent five minutes, knew your
-  // score, and had to pay to find out which four you got wrong. Nobody paid,
-  // and "waarom had ik dit fout" is the exact question that makes somebody want
-  // to read the chapter - so it is now the strongest handover this product has
-  // rather than its last paywall. The attempt still belongs to one account,
-  // which is why signing in is still required to open somebody's own history.
-  const [quiz, attempt] = await Promise.all([
-    id.match(/^[0-9a-fA-F]{24}$/)
-      ? Quiz.findById(id).select('_id slug title questions status').lean()
-      : Quiz.findOne({ slug: id }).select('_id slug title questions status').lean(),
-    UserProgress.findOne({ _id: attemptId, userId: session.user.id })
-      .select('quizId score totalQuestions xpEarned completedAt answers')
-      .lean(),
-  ]);
+  const quiz = await (OBJECT_ID.test(id) ? Quiz.findById(id) : Quiz.findOne({ slug: id }))
+    .select('_id slug title questions status categoryId')
+    .populate('categoryId', 'title')
+    .lean();
 
-  if (!quiz || !attempt || String(attempt.quizId) !== String(quiz._id)) {
+  if (!quiz) {
     notFound();
   }
 
-  type StoredAnswer = {
-    questionId: string;
-    selectedAnswerId: string | null;
-    selectedAnswerIndex?: number | null;
-    isCorrect: boolean;
-  };
+  const quizId = String(quiz._id);
+  const quizSlug = quiz.slug || quizId;
+  const questions = (quiz.questions || []) as unknown as StoredQuestion[];
+  const categoryTitle = (quiz.categoryId as ICategory | undefined)?.title;
 
-  const rawAnswers = Array.isArray(attempt.answers) ? (attempt.answers as StoredAnswer[]) : [];
+  const crumbs: Crumb[] = [
+    { label: 'Quizzen', href: '/quizzen' },
+    ...(categoryTitle ? [{ label: categoryTitle, href: '/quizzen' }] : []),
+    { label: quiz.title, href: `/bijbelquiz/${quizSlug}` },
+    { label: 'Resultaat' },
+  ];
 
-  const answersByQuestionId = new Map<
-    string,
-    { selectedAnswerId: string | null; selectedAnswerIndex: number | null; isCorrect: boolean }
-  >();
+  const quizPassage = dominantPassage(questions);
 
-  for (const answer of rawAnswers) {
-    answersByQuestionId.set(String(answer.questionId), {
-      selectedAnswerId: answer.selectedAnswerId || null,
-      selectedAnswerIndex:
-        typeof answer.selectedAnswerIndex === 'number' && Number.isFinite(answer.selectedAnswerIndex)
-          ? Math.floor(answer.selectedAnswerIndex)
-          : null,
-      isCorrect: Boolean(answer.isCorrect),
-    });
+  /* ── Guest: the attempt is parked in the browser ─────────────────────── */
+
+  if (!session?.user?.id) {
+    const key = Number(query?.gast);
+    return (
+      <GuestResult
+        quizId={quizId}
+        quizSlug={quizSlug}
+        quizTitle={quiz.title}
+        crumbs={crumbs}
+        nextQuizHref={await nextQuizHref(quiz as never, [quizId])}
+        passage={quizPassage}
+        attemptKey={Number.isFinite(key) && key > 0 ? key : null}
+      />
+    );
   }
 
-  const reviewQuestions: QuizReviewQuestion[] = (quiz.questions || []).map((question: any, index: number) => {
-    const questionId = String(question._id);
-    const answerState = answersByQuestionId.get(questionId) ?? rawAnswers[index];
+  /* ── Signed in: this account's attempt ───────────────────────────────── */
 
-    const choices = Array.isArray(question.answers) ? question.answers : [];
+  const userId = session.user.id;
+  const attemptId = query?.attempt;
+  const attemptSelect = 'quizId score totalQuestions xpEarned completedAt answers';
 
-    let selectedAnswer: any = null;
-    if (answerState?.selectedAnswerId) {
-      selectedAnswer =
-        choices.find((answer: any) => String(answer._id) === String(answerState.selectedAnswerId)) || null;
-    }
-    if (
-      !selectedAnswer &&
-      typeof answerState?.selectedAnswerIndex === 'number' &&
-      choices[answerState.selectedAnswerIndex]
-    ) {
-      selectedAnswer = choices[answerState.selectedAnswerIndex];
-    }
+  const attempt = attemptId
+    ? OBJECT_ID.test(attemptId)
+      ? await UserProgress.findOne({ _id: attemptId, userId }).select(attemptSelect).lean()
+      : null
+    : await UserProgress.findOne({ userId, quizId: quiz._id }).sort({ completedAt: -1 }).select(attemptSelect).lean();
 
-    const correctAnswer = choices.find((answer: any) => Boolean(answer.isCorrect));
+  if (!attempt) {
+    // No attempt asked for and none played yet: the quiz itself is the place.
+    if (!attemptId) redirect(`/quiz/${quizSlug}`);
+    notFound();
+  }
+  if (String(attempt.quizId) !== quizId) {
+    notFound();
+  }
 
-    return {
-      questionId,
-      questionText: question.text || '',
-      selectedAnswerText: selectedAnswer?.text ?? null,
-      correctAnswerText: correctAnswer?.text || 'Onbekend',
-      isCorrect: Boolean(answerState?.isCorrect),
-      explanation: question.explanation || '',
-      bibleReference: question.bibleReference || '',
-    };
-  });
+  const completedAt = attempt.completedAt ? new Date(attempt.completedAt) : new Date();
+  const score = Number(attempt.score) || 0;
+  const total = Number(attempt.totalQuestions) || questions.length;
+
+  const [earlier, user, playedQuizIds] = await Promise.all([
+    UserProgress.find({ userId, quizId: quiz._id, completedAt: { $lt: completedAt } }).select('score').lean(),
+    User.findById(userId).select('name xp streak lastPlayedAt').lean(),
+    UserProgress.distinct('quizId', { userId }) as Promise<unknown[]>,
+  ]);
+
+  const isNewBest = earlier.length > 0 && score > Math.max(...earlier.map((entry) => Number(entry.score) || 0));
+
+  // Reviewing answers is Premium: a free player's page carries the score and
+  // nothing about the individual questions.
+  const hasPremium = Boolean(session.user.isPremium) || session.user.role === 'admin';
+  const review = hasPremium
+    ? buildReviewQuestionsFromAttempt(questions, attempt.answers as StoredAttemptAnswer[] | undefined)
+    : null;
+
+  // The chapter to read: for a Premium player the one most mistakes came from.
+  const wrongPassage = review
+    ? dominantPassage(questions.filter((_, index) => review[index] && !review[index].isCorrect)) ?? quizPassage
+    : quizPassage;
+
+  const xp = Number(user?.xp) || 0;
+  const level = getLevelInfo(xp);
+  const levelSpan = Math.max(1, level.nextLevelXp - level.minXp);
+
+  // The reeks as it stands now: played today keeps it until tomorrow, played
+  // yesterday needs a quiz today, older means it is gone.
+  let streak: { days: number; hint: string } | null = null;
+  const streakDays = Number(user?.streak) || 0;
+  if (user?.lastPlayedAt && streakDays > 0) {
+    const next = calculateNextStreak(new Date(user.lastPlayedAt), streakDays).nextStreak;
+    if (next === streakDays) streak = { days: streakDays, hint: 'Speel morgen om je reeks te houden' };
+    else if (next === streakDays + 1) streak = { days: streakDays, hint: 'Speel vandaag om je reeks te houden' };
+  }
+
+  const firstName = (user?.name || session.user.name || '').trim().split(/\s+/)[0] || null;
 
   return (
-    <QuizReviewClient
-      quizIdOrSlug={quiz.slug || String(quiz._id)}
-      quizTitle={quiz.title || 'Quiz'}
-      score={Number(attempt.score) || 0}
-      totalQuestions={Number(attempt.totalQuestions) || reviewQuestions.length}
-      xpEarned={Number(attempt.xpEarned) || 0}
-      completedAt={attempt.completedAt ? new Date(attempt.completedAt).toISOString() : new Date().toISOString()}
-      questions={reviewQuestions}
-    />
+    <>
+      <ResultLayout
+        crumbs={crumbs}
+        main={
+          <>
+            <ScoreCard
+              score={score}
+              total={total}
+              quizTitle={quiz.title}
+              firstName={firstName}
+              isNewBest={isNewBest}
+              playedOnLabel={playedOnLabel(completedAt)}
+              canReview={Boolean(review)}
+            />
+            <NextQuizButton href={await nextQuizHref(quiz as never, playedQuizIds.map(String))} />
+            {review ? (
+              <AnswerList questions={review} score={score} total={total} quizSlug={quizSlug} />
+            ) : (
+              <ReviewLock score={score} total={total} quizSlug={quizSlug} guest={false} />
+            )}
+          </>
+        }
+        aside={
+          <>
+            <ProgressCard
+              xpEarned={Number(attempt.xpEarned) || 0}
+              xpToNext={level.isMaxLevel ? null : Math.max(0, level.nextLevelXp - xp)}
+              nextLevel={level.isMaxLevel ? null : level.level + 1}
+              levelProgress={(xp - level.minXp) / levelSpan}
+              streak={streak}
+            />
+            <ResultActions replayHref={`/quiz/${quizSlug}`} duelHref="/duels" />
+            <StudieCard passage={wrongPassage} quizSlug={quizSlug} hadWrongAnswers={score < total} />
+          </>
+        }
+      />
+      <StudiePromoModal passage={wrongPassage} quizSlug={quizSlug} />
+    </>
   );
 }

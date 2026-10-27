@@ -1,18 +1,22 @@
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
-import { redirect } from "next/navigation";
-import QuizForm from "@/components/admin/QuizForm";
+import type { Metadata } from 'next';
+import { getServerSession } from 'next-auth';
+import { redirect } from 'next/navigation';
+
+import { authOptions } from '@/lib/auth';
+import QuizEditor from '@/components/web2/beheer/QuizEditor';
+import { loadEditorCategories } from '@/components/web2/beheer/quiz-editor-data';
+
+export const metadata: Metadata = {
+  title: 'Nieuwe quiz - Beheer',
+  robots: { index: false, follow: false },
+};
 
 export default async function CreateQuizPage() {
   const session = await getServerSession(authOptions);
-
   if (!session || session.user.role !== 'admin') {
     redirect('/');
   }
 
-  return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl 2xl:max-w-[1800px]">
-      <QuizForm />
-    </div>
-  );
+  const categories = await loadEditorCategories();
+  return <QuizEditor categories={categories} />;
 }

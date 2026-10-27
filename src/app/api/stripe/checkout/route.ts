@@ -2,8 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import stripe from '@/lib/stripe';
-import { readTrialDays } from '@/lib/premium-benefits';
-import { readReturnPath, readStripePlan, STRIPE_PLANS } from '@/lib/stripe-plans';
+import { readReturnPath, readStripePlan, STRIPE_PLANS, trialDaysForPlan } from '@/lib/stripe-plans';
+import { premiumPageHref } from '@/lib/premium-offer';
+import { getPremiumSnapshot } from '@/lib/premium-state';
+import { connectDB, User } from '@/database';
 import { recordServerEvent } from '@/lib/analytics/record';
 import { readPaywallTrigger } from '@/lib/analytics/events';
 
@@ -23,6 +25,25 @@ export async function POST(req: NextRequest) {
   const selectedConfig = STRIPE_PLANS[selectedPlan];
   const stripePriceId = process.env[selectedConfig.priceEnvKey];
 
+  // Premium belongs to the account, whichever way it was bought (Stripe, the
+  // App Store / Google Play, a group licence). Somebody who already has it is
+  // sent back to the Premium page, which shows their state, instead of into a
+  // second subscription. A group licence is bought for others, so it may.
+  if (!selectedConfig.isGroup) {
+    try {
+      await connectDB();
+      const user = await User.findById(session.user.id)
+        .select('isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil hasLifetimePremium')
+        .lean();
+      if (user && (getPremiumSnapshot(user).isPremium || user.hasLifetimePremium)) {
+        return NextResponse.redirect(new URL('/premium', req.nextUrl.origin), 303);
+      }
+    } catch (error) {
+      // Not being able to check is no reason to refuse a sale.
+      console.warn('[Stripe Checkout] Could not check existing premium', error);
+    }
+  }
+
   if (!stripePriceId) {
     console.error(`[Stripe Checkout] Missing environment variable: ${selectedConfig.priceEnvKey}`);
     return new NextResponse('Stripe price is not configured', { status: 500 });
@@ -32,6 +53,9 @@ export async function POST(req: NextRequest) {
   // should land back in their lobby, not on a generic thank-you page they then
   // have to navigate out of.
   const returnPath = readReturnPath(formData.get('next'));
+  // The locked paywall (4th new quiz) has no way out but buying; an abandoned
+  // checkout returns to that same locked page, with the way back intact.
+  const lockedPaywall = formData.get('vergrendeld') === '1';
 
   // "Pressed pay" - recorded here, server-side, so it counts even if the buyer
   // bails at Stripe. The gap to `purchase_completed` is the abandon rate the
@@ -48,9 +72,9 @@ export async function POST(req: NextRequest) {
   // Use the origin from the request to support both localhost and production dynamically
   const origin = req.headers.get('origin') || process.env.NEXTAUTH_URL || 'http://localhost:3000';
 
-  // A trial only exists if it is configured, and only on recurring plans - a
-  // one-off payment has nothing to trial.
-  const trialDays = selectedConfig.mode === 'subscription' ? readTrialDays(process.env.STRIPE_TRIAL_DAYS) : 0;
+  // A trial only exists if it is configured, and only on the plan that offers
+  // one (yearly). Monthly starts paying at once; a one-off has nothing to trial.
+  const trialDays = trialDaysForPlan(selectedPlan, process.env.STRIPE_TRIAL_DAYS);
 
   console.log(`[Stripe Checkout] Creating session for user: ${session.user.id} (${session.user.email})`);
   console.log(`[Stripe Checkout] plan=${selectedPlan} trialDays=${trialDays} return=${returnPath}`);
@@ -63,7 +87,14 @@ export async function POST(req: NextRequest) {
 
   // Coming back from an abandoned checkout says so, so the page can offer the
   // plans again instead of silently looking like a fresh visit.
-  const cancelUrl = `${origin}/premium?checkout=geannuleerd`;
+  const cancelBase = selectedConfig.isGroup
+    ? '/groepslicentie'
+    : premiumPageHref({
+        locked: lockedPaywall,
+        returnPath: lockedPaywall ? returnPath : null,
+        plan: selectedPlan === 'group' ? undefined : selectedPlan,
+      });
+  const cancelUrl = `${origin}${cancelBase}${cancelBase.includes('?') ? '&' : '?'}checkout=geannuleerd`;
 
   try {
     const checkoutSession = await stripe.checkout.sessions.create({

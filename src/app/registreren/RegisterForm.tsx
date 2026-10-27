@@ -1,246 +1,143 @@
 'use client';
 
-import { useState, Suspense } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { Button } from '@/components/ui/button';
+import * as React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { AlertCircle, Loader2, Eye, EyeOff, BookOpen, Trophy, Flame } from 'lucide-react';
 import { signIn } from 'next-auth/react';
+import { useRouter, useSearchParams } from 'next/navigation';
 
-function RegisterContent() {
+import { Button, Field, Input, PasswordInput } from '@/components/bq';
+import { AuthCard, AuthNotice } from '@/components/web2/account/AuthLayout';
+import { SocialButtons } from '@/components/web2/account/SocialButtons';
+import { safeCallbackUrl } from '@/lib/auth/callback-url';
+
+export default function RegisterForm({ appleEnabled }: { appleEnabled: boolean }) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get('callbackUrl') || '/dashboard';
+  const callbackUrl = safeCallbackUrl(searchParams.get('callbackUrl'));
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  const [error, setError] = React.useState('');
+  const [loading, setLoading] = React.useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
+  const loginHref =
+    callbackUrl === '/dashboard' ? '/inloggen' : `/inloggen?callbackUrl=${encodeURIComponent(callbackUrl)}`;
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
     setError('');
 
+    const trimmedName = name.trim();
+    if (trimmedName.length < 2 || trimmedName.length > 30) {
+      setError('Kies een naam van 2 tot 30 tekens.');
+      return;
+    }
+
+    setLoading(true);
     try {
-      const res = await fetch('/api/auth/register', {
+      const response = await fetch('/api/auth/register', {
         method: 'POST',
-        headers: {
-          'Content-Type':'application/json',
-        },
-        body: JSON.stringify({ name, email, password }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: trimmedName, email, password }),
       });
 
-      if (res.ok) {
-        // Signed in straight away with the credentials just created. Sending
-        // a brand-new account to the login form to type them a second time
-        // was the step between "bewaar je score" and the score being saved,
-        // and the step where people gave up.
-        const signInResult = await signIn('credentials', {
-          redirect: false,
-          email,
-          password,
-          callbackUrl,
-        });
+      if (!response.ok) {
+        const message = await response.text();
+        setError(message || 'Er is iets misgegaan bij het registreren.');
+        setLoading(false);
+        return;
+      }
 
-        if (signInResult?.error) {
-          router.push(`/inloggen?callbackUrl=${encodeURIComponent(callbackUrl)}&registered=true`);
-        } else {
-          router.push(callbackUrl);
-          router.refresh();
-        }
+      // Signed in straight away with the credentials just created. Sending a
+      // brand-new account to the login form to type them a second time was
+      // the step between "bewaar je score" and the score being saved, and the
+      // step where people gave up.
+      const result = await signIn('credentials', { redirect: false, email, password, callbackUrl });
+      if (result?.error) {
+        router.push(`${loginHref}${loginHref.includes('?') ? '&' : '?'}registered=true`);
       } else {
-        const data = await res.text();
-        setError(data || 'Er is iets misgegaan bij het registreren.');
+        router.push(callbackUrl);
+        router.refresh();
       }
     } catch {
       setError('Netwerkfout. Probeer het later opnieuw.');
-    } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="fixed inset-x-0 bottom-0 top-16 flex h-[calc(100dvh-4rem)] overflow-hidden bg-background md:inset-0 md:h-screen">
-      {/* Left Side - Register Form */}
-      <div className="flex w-full lg:w-1/2 flex-col justify-center px-6 py-8 lg:px-16 xl:px-24 overflow-y-auto">
-        <div className="mx-auto w-full max-w-md">
-          {/* Header */}
-          <div className="mb-8">
-            <h1 className="text-2xl lg:text-3xl font-serif font-normal text-ink dark:text-foreground mb-2">
-              Account aanmaken
-            </h1>
-            <p className="text-muted-foreground">
-              Start vandaag nog met het verdiepen van je kennis
-            </p>
-          </div>
+    <AuthCard titleId="reg-title" title="Account aanmaken" subtitle="Gratis, en je voortgang blijft bewaard.">
+      <SocialButtons callbackUrl={callbackUrl} appleEnabled={appleEnabled} />
 
-          {/* Google Sign Up */}
-          <Button 
-            variant="outline" 
-            onClick={() => signIn('google', { callbackUrl })} 
-            className="w-full relative h-12 rounded-md border-rule bg-paper-raised hover:bg-paper-sunken text-ink dark:text-ink-inverted font-medium group transition-colors mb-6"
-          >
-            <svg className="mr-3 h-5 w-5 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
-            </svg>
-            Registreer met Google
-          </Button>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        {error && <AuthNotice tone="error">{error}</AuthNotice>}
 
-          {/* Divider */}
-          <div className="relative mb-6">
-            <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-rule" />
-            </div>
-            <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-background px-3 text-muted-foreground font-medium">Of</span>
-            </div>
-          </div>
+        <Field label="Naam" htmlFor="reg-name" hint={<span id="reg-name-hint">Zo zien anderen je op de ranglijst en in duels.</span>}>
+          <Input
+            id="reg-name"
+            name="name"
+            type="text"
+            autoComplete="given-name"
+            placeholder="Bijvoorbeeld Alex"
+            aria-describedby="reg-name-hint"
+            maxLength={30}
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            required
+          />
+        </Field>
 
-          {/* Email Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
-            {error && (
-              <div className="rounded-lg bg-destructive/10 p-3 text-sm font-medium text-destructive flex items-center gap-2 border border-destructive/20">
-                <AlertCircle className="h-4 w-4 shrink-0" />
-                {error}
-              </div>
-            )}
+        <Field label="E-mailadres" htmlFor="reg-email">
+          <Input
+            id="reg-email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            inputMode="email"
+            placeholder="naam@voorbeeld.nl"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            required
+          />
+        </Field>
 
-            <div className="space-y-2">
-              <label htmlFor="name" className="text-sm font-medium text-ink dark:text-foreground">
-                Naam
-              </label>
-              <input
-                id="name"
-                type="text"
-                placeholder="Volledige naam"
-                className="flex h-12 w-full rounded-md border border-rule bg-paper-sunken px-4 py-2 text-sm placeholder:text-ink-muted dark:text-ink-inverted focus:bg-paper-raised focus:border-lapis/35 focus:outline-none focus:ring-4 focus:ring-lapis/35 transition-all duration-200"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </div>
-            
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium text-ink dark:text-foreground">
-                E-mailadres
-              </label>
-              <input
-                id="email"
-                type="email"
-                placeholder="naam@voorbeeld.nl"
-                className="flex h-12 w-full rounded-md border border-rule bg-paper-sunken px-4 py-2 text-sm placeholder:text-ink-muted dark:text-ink-inverted focus:bg-paper-raised focus:border-lapis/35 focus:outline-none focus:ring-4 focus:ring-lapis/35 transition-all duration-200"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            
-            <div className="space-y-2">
-              <label htmlFor="password" className="text-sm font-medium text-ink dark:text-foreground">
-                Wachtwoord
-              </label>
-              <div className="relative">
-                <input
-                  id="password"
-                  type={showPassword ? "text" : "password"}
-                  placeholder="Minimaal 6 tekens"
-                  className="flex h-12 w-full rounded-md border border-rule bg-paper-sunken px-4 py-2 text-sm placeholder:text-ink-muted dark:text-ink-inverted focus:bg-paper-raised focus:border-lapis/35 focus:outline-none focus:ring-4 focus:ring-lapis/35 transition-all duration-200 pr-12"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  minLength={6}
-                  required
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-ink-muted hover:text-ink-soft focus:outline-none transition-colors"
-                >
-                  {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
-                </button>
-              </div>
-            </div>
-            
-            <Button 
-              type="submit" 
-              className="w-full h-12 text-base font-semibold bg-lapis hover:bg-ink text-ink-inverted rounded-md shadow-lapis/20 transition-colors" 
-              disabled={loading}
-            >
-              {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Registreren'}
-            </Button>
-          </form>
+        <Field label="Wachtwoord" htmlFor="reg-password">
+          <PasswordInput
+            id="reg-password"
+            name="password"
+            autoComplete="new-password"
+            minLength={6}
+            placeholder="Minimaal 6 tekens"
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+            required
+          />
+        </Field>
 
-          {/* Footer */}
-          <p className="mt-8 text-center text-sm text-muted-foreground">
-            Heb je al een account?{' '}
-            <Link href="/inloggen" className="text-ink-soft hover:text-ink-soft font-semibold hover:underline">
-              Inloggen
-            </Link>
-          </p>
-        </div>
-      </div>
+        <Button type="submit" size="xl" block loading={loading} className="mt-1">
+          Account aanmaken
+        </Button>
 
-      {/* Right Side - Image */}
-      <div className="hidden lg:block w-1/2 relative">
-        {/* Background Image - Full coverage */}
-        <Image
-          src="/images/quizzes/img5.png"
-          alt="BijbelQuiz"
-          fill
-          className="object-cover"
-          priority
-        />
-        
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-ink/60" />
-        
-        {/* Overlay Content */}
-        <div className="absolute inset-0 flex flex-col justify-center px-12 xl:px-16">
-          <h2 className="text-3xl xl:text-4xl font-serif font-normal text-ink-inverted mb-4 leading-tight">
-            Begin vandaag met{' '}
-            <span className="text-ink-inverted">leren</span>
-          </h2>
-          <p className="text-ink-inverted/80 text-lg mb-8 max-w-md leading-relaxed">
-            Maak een gratis account aan en ontdek honderden quizzen over de Bijbel. Volg je voortgang en groei in je kennis.
-          </p>
-          
-          {/* Features */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-paper-raised/10 flex items-center justify-center">
-                <BookOpen className="h-5 w-5 text-ink-inverted" />
-              </div>
-              <span className="text-ink-inverted/90 font-medium">10+ Quizzen beschikbaar</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-paper-raised/10 flex items-center justify-center">
-                <Trophy className="h-5 w-5 text-ink-inverted" />
-              </div>
-              <span className="text-ink-inverted/90 font-medium">Verdien punten en badges</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-paper-raised/10 flex items-center justify-center">
-                <Flame className="h-5 w-5 text-ink-inverted" />
-              </div>
-              <span className="text-ink-inverted/90 font-medium">Houd je streak bij</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+        <p className="m-0 text-center text-[13px] leading-5 font-semibold text-ink-muted">
+          Door een account te maken ga je akkoord met de{' '}
+          <Link href="/voorwaarden" className="font-bold underline">
+            voorwaarden
+          </Link>{' '}
+          en het{' '}
+          <Link href="/privacybeleid" className="font-bold underline">
+            privacybeleid
+          </Link>
+          .
+        </p>
+      </form>
 
-export default function RegisterForm() {
-  return (
-    <Suspense fallback={<div className="fixed inset-0 flex items-center justify-center bg-background"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>}>
-      <RegisterContent />
-    </Suspense>
+      <p className="m-0 border-t border-line-soft pt-5 text-center text-[15px] font-semibold text-ink-muted">
+        Heb je al een account?{' '}
+        <Link href={loginHref} className="font-extrabold no-underline">
+          Inloggen
+        </Link>
+      </p>
+    </AuthCard>
   );
 }

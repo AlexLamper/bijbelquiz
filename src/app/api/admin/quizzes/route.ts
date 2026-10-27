@@ -21,6 +21,23 @@ export async function GET(req: NextRequest) {
         filter.status = status;
     }
 
+    // `?view=summary`: the beheer quiz list. Only what the list rows show
+    // (no question bodies), so the whole catalogue loads in one small payload.
+    if (searchParams.get('view') === 'summary') {
+      const rows = await Quiz.find(filter)
+        .select('title slug status isPremium categoryId createdBy createdAt questions._id')
+        .populate('categoryId', 'title')
+        .populate('createdBy', 'name')
+        .sort({ createdAt: -1 })
+        .lean();
+      return NextResponse.json(
+        rows.map((row) => {
+          const { questions, ...rest } = row as typeof row & { questions?: unknown[] };
+          return { ...rest, questionCount: questions?.length ?? 0 };
+        }),
+      );
+    }
+
     const quizzes = await Quiz.find(filter)
         .populate('categoryId')
         .populate('createdBy', 'name email')
@@ -66,6 +83,9 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(quiz, { status: 201 });
   } catch (error) {
+    if ((error as { code?: number })?.code === 11000) {
+      return NextResponse.json({ error: 'Deze slug bestaat al. Kies een andere.' }, { status: 409 });
+    }
     console.error("[ADMIN_QUIZZES_POST]", error);
     return new NextResponse("Internal Server Error", { status: 500 });
   }

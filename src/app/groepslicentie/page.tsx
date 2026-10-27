@@ -2,13 +2,15 @@ import type { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
 
 import { authOptions } from '@/lib/auth';
-import { GROUP_LICENSE_PRICE_LABEL, GROUP_LICENSE_SEATS } from '@/lib/group-license';
-import GroupLicenseClient from '@/components/premium/GroupLicenseClient';
+import { GROUP_LICENSE_PRICE_LABEL, GROUP_LICENSE_SEATS } from '@/lib/group-license-constants';
+import { getPremiumPriceLabels } from '@/lib/premium-prices';
+import { trialDaysForPlan } from '@/lib/stripe-plans';
+import { GroupLicenseView } from '@/components/web2/premium/GroupLicenseView';
 
 export const metadata: Metadata = {
   title: 'Groepslicentie | BijbelQuiz voor gemeentes en scholen',
   description:
-    'BijbelQuiz is gratis. Voor wie een jeugdgroep, gemeente of klas begeleidt is er een groepslicentie: een code voor je hele groep en plekken die je zelf beheert.',
+    `Premium voor je hele groep: één licentie, één code. Tot ${GROUP_LICENSE_SEATS} mensen spelen met Premium, ieder op zijn eigen telefoon. Voor jeugdgroepen, gemeentes en klassen.`,
   alternates: { canonical: '/groepslicentie' },
   openGraph: {
     title: 'BijbelQuiz Groepslicentie',
@@ -19,21 +21,20 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
+/** W4 P-Groepslicentie. */
 export default async function GroupLicensePage() {
-  const session = await getServerSession(authOptions);
+  const [session, prices] = await Promise.all([getServerSession(authOptions), getPremiumPriceLabels()]);
 
   return (
-    <div className="min-h-screen bg-paper pb-16 pt-8 lg:pt-14">
-      <section className="mx-auto w-full max-w-[1180px] 2xl:max-w-[1500px] px-5 sm:px-8 lg:px-10">
-        <GroupLicenseClient
-          priceLabel={GROUP_LICENSE_PRICE_LABEL}
-          defaultSeats={GROUP_LICENSE_SEATS}
-          isLoggedIn={Boolean(session?.user)}
-          // Without a Stripe price the buy button would open a checkout that
-          // 500s, so the page falls back to an email address instead.
-          purchasable={Boolean(process.env.STRIPE_PRICE_GROUP)}
-        />
-      </section>
-    </div>
+    <GroupLicenseView
+      priceLabel={GROUP_LICENSE_PRICE_LABEL}
+      seats={GROUP_LICENSE_SEATS}
+      premiumYearlyPrice={prices.yearly}
+      trialDays={trialDaysForPlan('yearly', process.env.STRIPE_TRIAL_DAYS)}
+      isLoggedIn={Boolean(session?.user)}
+      // Without a Stripe price the buy button would open a checkout that
+      // 500s, so the page falls back to an email address instead.
+      purchasable={Boolean(process.env.STRIPE_PRICE_GROUP)}
+    />
   );
 }

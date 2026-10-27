@@ -10,23 +10,15 @@
  */
 
 import { NextResponse } from 'next/server';
-import { connectDB, Quiz, Category } from '@/database';
+import { connectDB, Category } from '@/database';
 import { quizThumbnailUrl, resolveQuizImageUrl } from '@/lib/quiz-image';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
-import { dayNumber, quizOfTheDayIndex } from '@/lib/quiz-of-the-day';
+import { dayNumber } from '@/lib/quiz-of-the-day';
+import { pickQuizOfTheDay } from '@/lib/quiz-of-the-day-pick';
 
 export const dynamic = 'force-dynamic';
 
 const CACHE_TTL_MS = 10 * 60 * 1000;
-
-// Approved (or legacy, status-less) and still active - the same quizzes the
-// catalogue offers. Free ones first: nobody is offered a quiz of the day they
-// cannot play.
-const PLAYABLE = {
-  $or: [{ status: 'approved' }, { status: { $exists: false } }],
-  isActive: { $ne: false },
-};
-const FREE = { ...PLAYABLE, isPremium: { $ne: true } };
 
 interface CachedPick {
   day: number;
@@ -47,22 +39,6 @@ function respond(body: Record<string, unknown>) {
   });
 }
 
-async function pick(filter: Record<string, unknown>, day: Date) {
-  const count = await Quiz.countDocuments(filter);
-  if (count === 0) return null;
-
-  const [quiz] = await Quiz.find(filter)
-    .sort({ _id: 1 })
-    .skip(quizOfTheDayIndex(count, day))
-    .limit(1)
-    .select(
-      'title slug description imageUrl rewardXp categoryId difficulty isPremium questions.bibleReference'
-    )
-    .lean();
-
-  return quiz ?? null;
-}
-
 export async function GET() {
   try {
     const now = new Date();
@@ -74,7 +50,7 @@ export async function GET() {
 
     await connectDB();
 
-    const quiz: any = (await pick(FREE, now)) ?? (await pick(PLAYABLE, now));
+    const quiz: any = await pickQuizOfTheDay(now);
     if (!quiz) {
       return NextResponse.json({ error: 'No quiz available' }, { status: 404 });
     }

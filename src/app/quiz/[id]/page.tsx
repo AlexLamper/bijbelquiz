@@ -1,23 +1,40 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { getServerSession } from 'next-auth';
-import type { Metadata, ResolvingMetadata } from 'next'; // Added metadata types
+import type { Metadata, ResolvingMetadata } from 'next';
 import { authOptions } from '@/lib/auth';
 import { connectDB, Quiz, ICategory, UserProgress } from '@/database';
-import QuizExperience from '@/components/quiz/QuizExperience';
+import QuizPlay from '@/components/web2/quiz-play/QuizPlay';
+import type { PlayQuiz, PlayQuestion } from '@/components/web2/quiz-play/types';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { normalizeUserSettings } from '@/lib/user-settings';
+import { canPlayQuiz, lockedPaywallHref } from '@/lib/free-quiz-limit';
+import { getFreeQuizAllowanceForUser } from '@/lib/free-quiz-limit-server';
 
 interface PageProps {
   params: Promise<{ id: string }>;
 }
 
 interface IQuestion {
+  _id: unknown;
   text: string;
   answers: Array<{
+    _id: unknown;
     text: string;
     isCorrect: boolean;
   }>;
   explanation?: string;
+  bibleReference?: string;
+  refBook?: string | null;
+  refChapter?: number | null;
+}
+
+async function findQuiz(id: string) {
+  await connectDB();
+  let quiz = await Quiz.findOne({ slug: id }).populate('categoryId').lean();
+  if (!quiz && id.match(/^[0-9a-fA-F]{24}$/)) {
+    quiz = await Quiz.findById(id).populate('categoryId').lean();
+  }
+  return quiz;
 }
 
 export async function generateMetadata(
@@ -25,12 +42,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { id } = await params;
-  await connectDB();
-
-  let quiz = await Quiz.findOne({ slug: id }).populate('categoryId').lean();
-  if (!quiz && id.match(/^[0-9a-fA-F]{24}$/)) {
-    quiz = await Quiz.findById(id).populate('categoryId').lean();
-  }
+  const quiz = await findQuiz(id);
 
   if (!quiz) {
     return {
@@ -66,13 +78,7 @@ export async function generateMetadata(
 
 export default async function QuizPage({ params }: PageProps) {
   const { id } = await params;
-  await connectDB();
-  
-  // Try finding by slug first, then ID
-  let quiz = await Quiz.findOne({ slug: id }).populate('categoryId').lean();
-  if (!quiz && id.match(/^[0-9a-fA-F]{24}$/)) {
-    quiz = await Quiz.findById(id).populate('categoryId').lean();
-  }
+  const quiz = await findQuiz(id);
 
   if (!quiz) {
     notFound();
@@ -91,34 +97,59 @@ export default async function QuizPage({ params }: PageProps) {
     notFound();
   }
 
-  // `isPremium` on the quiz is no longer a gate. Two of ninety-five quizzes
-  // ever carried it, nobody bought their way past it, and the redirect it
-  // caused sent the only readers who wanted those quizzes to a pricing page
-  // instead. The field stays on the model so old documents keep loading; it
-  // decides nothing.
+  const quizId = String(quiz._id);
+  const quizSlug = quiz.slug || quizId;
 
-  // Serialize for Client Component
-  const serializableQuiz = JSON.parse(JSON.stringify(quiz));
+  // The free tier: three different quizzes, replays stay free, Premium is
+  // unlimited (src/lib/free-quiz-limit.ts). Signed-in players are checked
+  // here; guests in the browser, against the attempts parked there. The
+  // submit route checks again, so this cannot be skipped by posting directly.
+  if (session?.user?.id) {
+    const allowance = await getFreeQuizAllowanceForUser({
+      id: session.user.id,
+      isPremium: session.user.isPremium,
+      role: session.user.role,
+    });
+    if (!canPlayQuiz(allowance, quizId, quiz.slug)) {
+      redirect(lockedPaywallHref(quizSlug));
+    }
+  }
 
-  const [lastProgressDoc, attempts] = session
-    ? await Promise.all([
-        UserProgress.findOne({
-          userId: session.user.id,
-          quizId: quiz._id,
-        })
-          .select('correctAnswers wrongAnswers totalQuestions completedAt')
-          .sort({ completedAt: -1 })
-          .lean(),
-        UserProgress.countDocuments({
-          userId: session.user.id,
-          quizId: quiz._id,
-        }),
-      ])
-    : [null, 0];
+  // `isPremium` on the quiz is no longer a gate (two of ninety-five quizzes
+  // ever carried it). The field stays on the model so old documents keep
+  // loading; it decides nothing.
 
-  // Explanations ship with the quiz, for everybody. They are the reason a quiz
-  // teaches anything, they are the text that makes this page worth indexing,
-  // and they are where the link to the chapter on BijbelStudie lives.
+  // Explanations are Premium. A free player sees that there is one (blurred,
+  // with a Premium button) but the text itself never leaves the server, so it
+  // cannot be read in the page source or the RSC payload either.
+  const hasPremium = Boolean(session?.user?.isPremium) || isAdmin;
+
+  const rawQuestions = (quiz.questions || []) as unknown as IQuestion[];
+  const questions: PlayQuestion[] = rawQuestions.map((question) => {
+    const explanation = (question.explanation || '').trim();
+    return {
+      _id: String(question._id),
+      text: question.text,
+      answers: (question.answers || []).map((answer) => ({
+        _id: String(answer._id),
+        text: answer.text,
+        isCorrect: Boolean(answer.isCorrect),
+      })),
+      hasExplanation: explanation.length > 0,
+      explanation: hasPremium ? explanation : '',
+      bibleReference: question.bibleReference || '',
+      refBook: question.refBook ?? null,
+      refChapter: question.refChapter ?? null,
+    };
+  });
+
+  if (questions.length === 0) {
+    notFound();
+  }
+
+  const attempts = session?.user?.id
+    ? await UserProgress.countDocuments({ userId: session.user.id, quizId: quiz._id })
+    : 0;
 
   // JSON-LD for Quiz
   const jsonLd = {
@@ -132,7 +163,7 @@ export default async function QuizPage({ params }: PageProps) {
     },
     "educationalLevel": quiz.difficulty || "beginner",
     "learningResourceType": "Assessment",
-    "hasPart": quiz.questions.map((q: IQuestion) => ({
+    "hasPart": rawQuestions.map((q) => ({
       "@type": "Question",
       "name": q.text,
       "suggestedAnswer": q.answers.map((a) => ({
@@ -144,47 +175,37 @@ export default async function QuizPage({ params }: PageProps) {
   };
 
   // Which chapter this quiz is about, derived from the references its questions
-  // carry.
-  const passage = resolveQuizPassage(serializableQuiz.questions || []);
+  // carry - for the "lees eerst" reader.
+  const passage = resolveQuizPassage(questions);
 
-  const lastResult = lastProgressDoc
-    ? {
-        correctAnswers: Number(lastProgressDoc.correctAnswers) || 0,
-        totalQuestions:
-          Number(lastProgressDoc.totalQuestions) || serializableQuiz.questions.length,
-        completedAtLabel: new Intl.DateTimeFormat('nl-NL', {
-          day: 'numeric',
-          month: 'long',
-          timeZone: 'Europe/Amsterdam',
-        }).format(new Date(lastProgressDoc.completedAt)),
-        attempts,
-      }
-    : null;
-
-  const overview = {
-    _id: String(serializableQuiz._id),
-    title: serializableQuiz.title,
-    description: serializableQuiz.description,
-    imageUrl: serializableQuiz.imageUrl,
-    difficulty: serializableQuiz.difficulty,
-    isPremium: Boolean(serializableQuiz.isPremium),
-    rewardXp: serializableQuiz.rewardXp,
-    categoryTitle: (quiz.categoryId as ICategory)?.title,
-    questionCount: serializableQuiz.questions.length,
+  const playQuiz: PlayQuiz = {
+    _id: quizId,
+    slug: quizSlug,
+    title: quiz.title,
+    rewardXp: typeof quiz.rewardXp === 'number' ? quiz.rewardXp : 50,
+    difficulty: quiz.difficulty,
+    categoryTitle: (quiz.categoryId as ICategory)?.title ?? null,
+    isPremium: Boolean(quiz.isPremium),
+    questions,
   };
 
+  const settings = normalizeUserSettings(session?.user?.settings);
+
   return (
-    <div className="bg-paper">
+    <div className="flex flex-1 flex-col bg-canvas">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <QuizExperience
-        quiz={serializableQuiz}
-        overview={overview}
+      <QuizPlay
+        quiz={playQuiz}
         passage={passage}
-        lastResult={lastResult}
-        setupSeen={session ? normalizeUserSettings(session.user.settings).quizSetupSeen : false}
+        viewer={{
+          isLoggedIn: Boolean(session?.user?.id),
+          hasPremium,
+        }}
+        isReplay={attempts > 0}
+        readPassageFirst={Boolean(session?.user?.id) && settings.readPassageFirst}
       />
     </div>
   );

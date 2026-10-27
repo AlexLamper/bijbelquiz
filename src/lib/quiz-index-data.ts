@@ -125,13 +125,23 @@ function placeInBible(raw: RawQuiz): Pick<QuizIndexQuiz, 'book' | 'bookTitle' | 
   return { book: book.code, bookTitle: book.title, chapterFrom: from, chapterTo: to };
 }
 
-export async function loadQuizIndex(userId?: string): Promise<QuizIndexData> {
+export interface LoadQuizIndexOptions {
+  /**
+   * Extra conditions on the quizzes, ANDed with the approved-status filter -
+   * e.g. `{ 'questions.refBook': 'JOHN' }` for one book, so a quiz landing page
+   * does not read the whole library to list its neighbours.
+   */
+  match?: Record<string, unknown>;
+}
+
+export async function loadQuizIndex(userId?: string, options: LoadQuizIndexOptions = {}): Promise<QuizIndexData> {
   await connectDB();
 
   const statusFilter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
+  const match = options.match ? { $and: [statusFilter, options.match] } : statusFilter;
 
   const rawQuizzes = (await Quiz.aggregate([
-    { $match: statusFilter },
+    { $match: match },
     {
       $lookup: {
         from: 'categories',

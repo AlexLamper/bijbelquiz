@@ -1,98 +1,107 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
-import { Card, CardContent } from '@/components/ui/card'
-import { supportEmail } from '@/lib/support-email'
-import { AlertTriangle, HelpCircle, Mail } from 'lucide-react'
-import { SimpleAccordion } from '@/components/ui/accordion'
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { getServerSession } from 'next-auth';
+
+import { Container } from '@/components/bq';
+import { ContactForm } from '@/components/web2/marketing/ContactForm';
+import { AlertIcon, ChevronRightIcon, IconTile, MailIcon } from '@/components/web2/marketing/icons';
+import { authOptions } from '@/lib/auth';
+import { supportEmail } from '@/lib/support-email';
 
 export const metadata: Metadata = {
   title: 'Contact & Veelgestelde Vragen | BijbelQuiz Support',
   description: 'Heb je een vraag over BijbelQuiz? Bekijk onze FAQ of neem contact op. Wij helpen je graag verder.',
   alternates: { canonical: '/contact' },
   openGraph: {
-      title: 'Contact - BijbelQuiz',
-      description: 'Stel je vraag of bekijk antwoorden op de supportpagina.',
-      url: 'https://www.bijbelquiz.com/contact'
-  }
-}
+    title: 'Contact - BijbelQuiz',
+    description: 'Stel je vraag of bekijk antwoorden op de supportpagina.',
+    url: 'https://www.bijbelquiz.com/contact',
+  },
+};
 
-export default function ContactPage() {
+const QUICK_ANSWERS = [
+  { label: 'Hoe zeg ik Premium op?', href: '/hulp#premium-opzeggen' },
+  { label: 'Hoe werkt een duel?', href: '/hulp#duel' },
+  { label: 'Hoe verwijder ik mijn account?', href: '/hulp#account-verwijderen' },
+];
+
+export default async function ContactPage() {
   const email = supportEmail();
-
-  const faqItems = [
-      {
-          title: "Is BijbelQuiz gratis?",
-          content: "Ja, je kunt gratis quizzen spelen en met een code meedoen aan elke multiplayer-room. Voor onbeperkt zelf rooms hosten, uitleg bij elke vraag en alle premium quizzen bieden we een Premium lidmaatschap aan."
-      },
-      {
-          title: "Hoe werkt het Premium lidmaatschap?",
-          content: "Je kunt kiezen tussen een maandabonnement en een eenmalige levenslange aankoop. Beide geven toegang tot Premium functies."
-      },
-      { 
-          title: "Kan ik mijn account verwijderen?",
-          content: `Ja, dat kan. Stuur een mailtje naar ${email} en wij verwerken je verzoek binnen 5 werkdagen.`
-      }
-  ];
+  // Signed-in players do not have to type their name and address again.
+  const session = await getServerSession(authOptions).catch(() => null);
 
   return (
-    <div className="min-h-screen bg-paper pb-12 pt-10">
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-10 sm:px-5 lg:px-4">
-        <h1 className="text-4xl text-ink">Contact & Support</h1>
-        <p className="mt-3 max-w-2xl text-sm text-ink-soft">
-          Heb je een vraag over je account, betaling of gebruik van de app? Neem contact met ons op en we helpen je verder.
-        </p>
-      </section>
+    <Container as="section" className="pb-20 pt-14">
+      <h1 className="m-0 text-[32px] leading-[38px] m:text-[40px] m:leading-[48px]">Contact</h1>
+      <p className="mt-2.5 max-w-[720px] text-lg font-semibold leading-7 text-ink-soft">
+        Een vraag over je account, Premium of de app? Stuur ons een bericht, we helpen je graag.
+      </p>
 
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-7 sm:px-5 lg:px-4">
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
-          <Card className="border-rule bg-paper-raised/80 py-0">
-            <CardContent className="p-6">
-              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-paper-sunken">
-                <Mail className="h-5 w-5 text-ink" />
-              </div>
-              <h2 className="text-2xl text-ink">Mail ons</h2>
-              <p className="mt-2 text-sm text-muted-foreground">We reageren meestal binnen 1-2 werkdagen.</p>
+      <div className="mt-8 grid grid-cols-1 items-start gap-6 m:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
+        <ContactForm defaultName={session?.user?.name ?? ''} defaultEmail={session?.user?.email ?? ''} />
 
-              <a
-                href={`mailto:${email}`}
-                className="mt-4 inline-flex rounded-md bg-ink px-4 py-2 text-sm font-semibold text-ink-inverted hover:bg-ink-soft"
-              >
+        <div className="flex flex-col gap-4">
+          <div className="flex items-start gap-3.5 rounded-[16px] border border-line bg-card p-[22px]">
+            <IconTile tone="lapis">
+              <MailIcon />
+            </IconTile>
+            <div className="flex min-w-0 flex-1 flex-col gap-1">
+              <h2 className="m-0 font-sans text-[17px] font-extrabold">Liever zelf mailen?</h2>
+              <a href={`mailto:${email}`} className="break-all text-base font-extrabold no-underline">
                 {email}
               </a>
-            </CardContent>
-          </Card>
-
-          <Card className="border-rule bg-paper-raised/80 py-0">
-            <CardContent className="p-6">
-              <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-paper-sunken">
-                <AlertTriangle className="h-5 w-5 text-ink" />
-              </div>
-              <h2 className="text-2xl text-ink">Bug melden</h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Gevonden fout? Meld dit via de speciale bug report pagina.
+              <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-muted">
+                We reageren meestal binnen 1 tot 2 werkdagen.
               </p>
+            </div>
+          </div>
 
+          <div className="flex items-start gap-3.5 rounded-[16px] border border-line bg-card p-[22px]">
+            <IconTile tone="coral">
+              <AlertIcon />
+            </IconTile>
+            <div className="flex min-w-0 flex-1 flex-col gap-1">
+              <h2 className="m-0 font-sans text-[17px] font-extrabold">Iets werkt niet goed?</h2>
+              <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-muted">
+                Meld een fout, dan zoeken we het uit.
+              </p>
               <Link
-                href="/foutmelding"
-                className="mt-4 inline-flex rounded-md border border-rule bg-paper-raised px-4 py-2 text-sm font-semibold text-ink hover:bg-paper-sunken"
+                href="/foutmelding#melden"
+                className="flex min-h-8 items-center gap-1 self-start text-[15px] font-extrabold no-underline"
               >
-                Naar bug report
+                Fout melden
+                <ChevronRightIcon size={16} strokeWidth={2.6} />
               </Link>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+            </div>
+          </div>
 
-      <section className="mx-auto max-w-[1180px] 2xl:max-w-[1500px] px-4 pt-8 sm:px-5 lg:px-4">
-        <div className="max-w-3xl space-y-6">
-          <h2 className="text-2xl text-ink flex items-center gap-2">
-            <HelpCircle className="h-5 w-5 text-muted-foreground" />
-            Veelgestelde vragen
-          </h2>
-
-          <SimpleAccordion items={faqItems} />
+          <nav
+            aria-labelledby="contact-faq-title"
+            className="flex flex-col gap-1.5 rounded-[16px] border border-line bg-card px-[22px] pb-3.5 pt-[22px]"
+          >
+            <h2 id="contact-faq-title" className="m-0 font-sans text-[17px] font-extrabold">
+              Misschien staat je antwoord er al
+            </h2>
+            <ul className="m-0 list-none p-0">
+              {QUICK_ANSWERS.map((item) => (
+                <li key={item.href} className="border-b border-line-soft last:border-b-0">
+                  <Link
+                    href={item.href}
+                    className="flex min-h-12 items-center gap-2.5 text-[15px] font-bold text-ink no-underline hover:text-lapis"
+                  >
+                    <span className="flex-1">{item.label}</span>
+                    <ChevronRightIcon size={18} className="text-ink-faint" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link href="/hulp" className="mt-1 flex min-h-8 items-center gap-1 self-start text-[15px] font-extrabold no-underline">
+              Alle vragen in de hulp
+              <ChevronRightIcon size={16} strokeWidth={2.6} />
+            </Link>
+          </nav>
         </div>
-      </section>
-    </div>
-  )
+      </div>
+    </Container>
+  );
 }

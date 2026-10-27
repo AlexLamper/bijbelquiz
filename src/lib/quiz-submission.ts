@@ -4,6 +4,8 @@ import { calculateNextStreak } from '@/lib/streak';
 import { calculateAttemptXp, getHighestEarnedAttemptXp } from '@/lib/xp';
 import { recordServerEvent } from '@/lib/analytics/record';
 import type { AnalyticsPlatform } from '@/lib/analytics/events';
+import { getPremiumSnapshot } from '@/lib/premium-state';
+import { FREE_QUIZ_LIMIT } from '@/lib/free-quiz-limit';
 
 /**
  * The one place a quiz attempt turns into XP, a streak, and badges.
@@ -45,12 +47,19 @@ export interface QuizSubmissionInput {
    * judged on.
    */
   claimed?: boolean;
+  /**
+   * Refuse a new quiz once a free account has played `FREE_QUIZ_LIMIT`
+   * different ones (replays stay free). The website's submit route sets this,
+   * so the limit on `/quiz/[id]` cannot be bypassed by posting directly.
+   */
+  enforceFreeLimit?: boolean;
 }
 
 export type QuizSubmissionResult =
   | { ok: false; reason: 'invalid'; message: string }
   | { ok: false; reason: 'quiz_not_found' }
   | { ok: false; reason: 'user_not_found' }
+  | { ok: false; reason: 'free_limit' }
   | {
       ok: true;
       attemptId: string;
@@ -76,7 +85,7 @@ export type QuizSubmissionResult =
 export async function submitQuizAttempt(
   input: QuizSubmissionInput
 ): Promise<QuizSubmissionResult> {
-  const { userId, quizId, score, totalQuestions, answers, platform, claimed } = input;
+  const { userId, quizId, score, totalQuestions, answers, platform, claimed, enforceFreeLimit } = input;
 
   if (!quizId || typeof score !== 'number' || typeof totalQuestions !== 'number') {
     return { ok: false, reason: 'invalid', message: 'Invalid request data' };
@@ -97,12 +106,28 @@ export async function submitQuizAttempt(
     Quiz.findById(quizId).select('_id rewardXp questions').lean(),
     UserProgress.find({ userId, quizId }).select('score totalQuestions').lean(),
     User.findById(userId)
-      .select('_id xp streak bestStreak badges lastPlayedAt isPremium')
+      .select(
+        '_id xp streak bestStreak badges lastPlayedAt isPremium premiumStripe premiumStore storePremiumExpiresAt groupPremiumUntil role'
+      )
       .lean(),
   ]);
 
   if (!quiz) return { ok: false, reason: 'quiz_not_found' };
   if (!user) return { ok: false, reason: 'user_not_found' };
+
+  // The free tier: a new quiz needs a free slot unless the account has
+  // Premium. A replay (any earlier attempt at this quiz) is always allowed.
+  if (
+    enforceFreeLimit &&
+    previousAttempts.length === 0 &&
+    user.role !== 'admin' &&
+    !getPremiumSnapshot(user).isPremium
+  ) {
+    const playedQuizIds = (await UserProgress.distinct('quizId', { userId })) as unknown[];
+    if (playedQuizIds.length >= FREE_QUIZ_LIMIT) {
+      return { ok: false, reason: 'free_limit' };
+    }
+  }
 
   const questionList: StoredQuestion[] = Array.isArray(quiz.questions)
     ? (quiz.questions as unknown as StoredQuestion[])

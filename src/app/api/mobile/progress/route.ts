@@ -59,6 +59,9 @@ export async function POST(req: Request) {
       if (result.reason === 'quiz_not_found') {
         return NextResponse.json({ error: 'Quiz not found' }, { status: 404 });
       }
+      if (result.reason === 'free_limit') {
+        return NextResponse.json({ error: 'free_limit' }, { status: 403 });
+      }
       return NextResponse.json({ error: 'User not found' }, { status: 404 });
     }
 

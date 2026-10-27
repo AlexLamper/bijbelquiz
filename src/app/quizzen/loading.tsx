@@ -1,9 +1,5 @@
-import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { Spinner } from '@/components/bq';
 
 export default function QuizzesLoading() {
-  return (
-    <div className="container px-4 py-8 mx-auto flex h-[50vh] w-full items-center justify-center">
-      <LoadingSpinner size="xl" />
-    </div>
-  );
+  return <Spinner block label="Quizzen laden" className="min-h-[60vh]" />;
 }

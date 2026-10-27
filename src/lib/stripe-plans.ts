@@ -7,6 +7,8 @@
  * everything else fell through to the one-off. One table, read by all three.
  */
 
+import { readTrialDays } from './premium-benefits';
+
 export const STRIPE_PLAN_IDS = ['monthly', 'yearly', 'lifetime', 'group'] as const;
 
 export type StripePlanId = (typeof STRIPE_PLAN_IDS)[number];
@@ -24,6 +26,12 @@ export interface StripePlanConfig {
   isLifetime: boolean;
   /** A group licence grants access to members, not a personal subscription. */
   isGroup: boolean;
+  /**
+   * Whether checkout opens this plan with the free trial. Only the yearly plan
+   * has one (the decision for web 2.0, same as the app): monthly starts paying
+   * straight away, and a one-off payment has nothing to trial.
+   */
+  offersTrial: boolean;
 }
 
 export const STRIPE_PLANS: Record<StripePlanId, StripePlanConfig> = {
@@ -34,6 +42,7 @@ export const STRIPE_PLANS: Record<StripePlanId, StripePlanConfig> = {
     months: 1,
     isLifetime: false,
     isGroup: false,
+    offersTrial: false,
   },
   yearly: {
     mode: 'subscription',
@@ -42,6 +51,7 @@ export const STRIPE_PLANS: Record<StripePlanId, StripePlanConfig> = {
     months: 12,
     isLifetime: false,
     isGroup: false,
+    offersTrial: true,
   },
   lifetime: {
     mode: 'payment',
@@ -50,6 +60,7 @@ export const STRIPE_PLANS: Record<StripePlanId, StripePlanConfig> = {
     months: null,
     isLifetime: true,
     isGroup: false,
+    offersTrial: false,
   },
   // One purchase covering a whole church, school class or youth club.
   group: {
@@ -59,6 +70,7 @@ export const STRIPE_PLANS: Record<StripePlanId, StripePlanConfig> = {
     months: 12,
     isLifetime: false,
     isGroup: true,
+    offersTrial: false,
   },
 };
 
@@ -79,6 +91,18 @@ export function readStripePlan(value: unknown): StripePlanId {
 /** True when the plan is billed on a recurring basis. */
 export function isSubscriptionPlan(plan: StripePlanId): boolean {
   return STRIPE_PLANS[plan].mode === 'subscription';
+}
+
+/**
+ * Free trial days for a checkout of this plan.
+ *
+ * The length comes from `STRIPE_TRIAL_DAYS` (see `readTrialDays`: unset or 0
+ * means no trial anywhere), but only plans that offer a trial get it. That
+ * used to apply to every subscription, so a monthly buyer got the yearly
+ * plan's free week too.
+ */
+export function trialDaysForPlan(plan: StripePlanId, raw: string | undefined | null): number {
+  return STRIPE_PLANS[plan].offersTrial ? readTrialDays(raw) : 0;
 }
 
 /** True when this plan grants permanent, non-expiring access. */
