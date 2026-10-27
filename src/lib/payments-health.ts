@@ -581,13 +581,32 @@ export async function getPaymentsHealth({
     trialConverted: funnelMap.get('trial_converted') ?? 0,
   };
 
-  if (funnel30d.checkoutStarted > 0 && funnel30d.stripeCheckoutsCompleted === 0) {
+  // A Stripe checkout stays valid for 24 hours, so a click from the last day
+  // may still be on its way to being paid. Only clicks older than that, with
+  // nothing completed at all, point at a broken webhook.
+  const settledStarts =
+    funnel30d.checkoutStarted > 0 && funnel30d.stripeCheckoutsCompleted === 0
+      ? await AnalyticsEvent.countDocuments({
+          name: 'checkout_started',
+          createdAt: { $gte: since30d, $lt: new Date(now - 24 * 60 * 60 * 1000) },
+          ...notInternalEvent,
+        })
+      : 0;
+
+  if (settledStarts > 0) {
     checks.push({
       id: 'funnel_no_purchase',
       label: 'Klik -> aankoop',
       status: 'fail',
-      detail: `${funnel30d.checkoutStarted} keer op "betalen" geklikt in 30 dagen, 0 voltooide web-aankopen of proefperiodes geregistreerd.`,
+      detail: `${settledStarts} keer op "betalen" geklikt, langer dan 24 uur geleden, in 30 dagen: 0 voltooide web-aankopen of proefperiodes geregistreerd.`,
       action: `Of niemand rondt af, of de webhook bevestigt het niet. Vergelijk met "Checkout-sessies" bij Stripe hieronder: staat daar wel "voltooid", dan is het de webhook (${WEB_DOC}).`,
+    });
+  } else if (funnel30d.checkoutStarted > 0 && funnel30d.stripeCheckoutsCompleted === 0) {
+    checks.push({
+      id: 'funnel_no_purchase',
+      label: 'Klik -> aankoop',
+      status: 'ok',
+      detail: `${funnel30d.checkoutStarted} keer op "betalen" geklikt in de afgelopen 24 uur, nog niet afgerond. Dat kan nog: een checkout blijft 24 uur geldig.`,
     });
   }
 
