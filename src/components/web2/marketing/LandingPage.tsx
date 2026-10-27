@@ -121,7 +121,7 @@ function Hero() {
           </div>
           <div className="mt-8 flex max-w-[500px] flex-col gap-3 self-stretch border-t border-line pt-6">
             <span className="text-sm font-bold text-ink-muted">Of speel in de app</span>
-            <StoreBadges className="gap-3" />
+            <StoreBadges size="lg" className="gap-3" />
           </div>
         </div>
         <HeroVisual />

@@ -13,75 +13,97 @@ import { cn } from '@/lib/utils';
 export const APP_STORE_URL = 'https://apps.apple.com/app/id6761718680';
 export const GOOGLE_PLAY_URL = process.env.NEXT_PUBLIC_GOOGLE_PLAY_URL || null;
 
+/**
+ * `md` is the compact 48px badge (footer, duel page). `lg` is the roomier
+ * 56px one for the landing hero, where the badge sits next to a large CTA
+ * and the compact padding looked cramped.
+ */
+export type StoreBadgeSize = 'md' | 'lg';
+
+const SIZES: Record<StoreBadgeSize, { box: string; eyebrow: string; label: string; icon: number }> = {
+  md: { box: 'h-12 gap-2.5 pl-3.5 pr-4', eyebrow: 'text-[11px]', label: 'text-base', icon: 22 },
+  lg: { box: 'h-14 gap-3 pl-[18px] pr-6', eyebrow: 'text-xs', label: 'text-lg', icon: 26 },
+};
+
 interface StoreBadgeProps {
   href: string;
   eyebrow: string;
   label: string;
-  icon: React.ReactNode;
+  icon: (size: number) => React.ReactNode;
+  size?: StoreBadgeSize;
   className?: string;
 }
 
-function StoreBadge({ href, eyebrow, label, icon, className }: StoreBadgeProps) {
+function StoreBadge({ href, eyebrow, label, icon, size = 'md', className }: StoreBadgeProps) {
+  const s = SIZES[size];
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        'inline-flex h-12 items-center gap-2.5 rounded-[12px] border border-line border-b-[3px] bg-card pl-3.5 pr-4 text-ink no-underline',
+        'inline-flex items-center rounded-[12px] border border-line border-b-[3px] bg-card text-ink no-underline',
+        s.box,
         'hover:bg-chip hover:text-ink transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lapis',
         className,
       )}
     >
-      {icon}
-      <span className="flex flex-col whitespace-nowrap leading-[1.15]">
-        <span className="text-[11px] font-bold text-ink-muted">{eyebrow}</span>
-        <span className="text-base font-extrabold">{label}</span>
+      {icon(s.icon)}
+      <span className="flex flex-col whitespace-nowrap leading-[1.2]">
+        <span className={cn(s.eyebrow, 'font-bold text-ink-muted')}>{eyebrow}</span>
+        <span className={cn(s.label, 'font-extrabold')}>{label}</span>
       </span>
     </a>
   );
 }
 
-export function AppStoreBadge({ className }: { className?: string }) {
+interface BadgeProps {
+  size?: StoreBadgeSize;
+  className?: string;
+}
+
+export function AppStoreBadge({ size, className }: BadgeProps) {
   return (
     <StoreBadge
       href={APP_STORE_URL}
       eyebrow="Download in de"
       label="App Store"
+      size={size}
       className={className}
-      icon={
-        <svg width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      icon={(px) => (
+        <svg width={px} height={px} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <rect x="6" y="2.5" width="12" height="19" rx="3" />
           <path d="M10.5 18.5h3" />
         </svg>
-      }
+      )}
     />
   );
 }
 
-export function GooglePlayBadge({ className }: { className?: string }) {
+export function GooglePlayBadge({ size, className }: BadgeProps) {
   if (!GOOGLE_PLAY_URL) return null;
   return (
     <StoreBadge
       href={GOOGLE_PLAY_URL}
       eyebrow="Ontdek het op"
       label="Google Play"
+      size={size}
       className={className}
-      icon={
-        <svg width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      icon={(px) => (
+        <svg width={px} height={px} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M7.5 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.7 4.1a.8.8 0 0 0-1.2.7z" />
         </svg>
-      }
+      )}
     />
   );
 }
 
 /** Both badges side by side, wrapping on narrow screens. */
-export function StoreBadges({ className }: { className?: string }) {
+export function StoreBadges({ size, className }: BadgeProps) {
   return (
     <div className={cn('flex flex-wrap gap-2.5', className)}>
-      <AppStoreBadge />
-      <GooglePlayBadge />
+      <AppStoreBadge size={size} />
+      <GooglePlayBadge size={size} />
     </div>
   );
 }
