@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "tsx server.ts start",
     "lint": "next lint",
-    "test": "node --import tsx --test tests/**/*.test.ts",
+    "test": "node --import tsx --test 'tests/**/*.test.ts'",
     "test:duels": "node --import tsx --test tests/duels.test.ts tests/duels/*.test.ts",
     "screenshots": "node scripts/capture-screenshots.mjs",
     "dev:setup": "bash scripts/dev/setup.sh",

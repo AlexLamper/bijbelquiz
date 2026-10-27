@@ -23,9 +23,13 @@ test('every slug in the generated list has a cover on disk', () => {
   assert.deepEqual(missing, [], `no PNG for: ${missing.join(', ')}`);
 });
 
-test('every drawn cover is in the manifest the generator reads', () => {
+// The manifest lives in docs/, which is gitignored: it exists where covers
+// are generated, not in a fresh checkout.
+const manifestPath = path.join(root, 'docs/quiz-image-prompts/manifest.json');
+
+test('every drawn cover is in the manifest the generator reads', { skip: !fs.existsSync(manifestPath) && 'no local cover manifest' }, () => {
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(root, 'docs/quiz-image-prompts/manifest.json'), 'utf8'),
+    fs.readFileSync(manifestPath, 'utf8'),
   ) as { quizzes: Array<{ slug: string }> };
 
   const inManifest = new Set(manifest.quizzes.map((q) => q.slug));
