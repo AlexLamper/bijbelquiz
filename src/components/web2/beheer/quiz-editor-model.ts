@@ -68,17 +68,20 @@ export function newKey(): string {
   return `k${Date.now().toString(36)}${keySeed}`;
 }
 
-export function emptyQuestion(): EditorQuestion {
+/** A blank question. `key` fixes its keys, for the first question of a new
+ *  quiz: that one renders on the server and in the browser, and time-based
+ *  keys would differ between the two (a hydration mismatch). */
+export function emptyQuestion(key: () => string = newKey): EditorQuestion {
   return {
-    key: newKey(),
+    key: key(),
     text: '',
     explanation: '',
     bibleReference: '',
     answers: [
-      { key: newKey(), text: '', isCorrect: true },
-      { key: newKey(), text: '', isCorrect: false },
-      { key: newKey(), text: '', isCorrect: false },
-      { key: newKey(), text: '', isCorrect: false },
+      { key: key(), text: '', isCorrect: true },
+      { key: key(), text: '', isCorrect: false },
+      { key: key(), text: '', isCorrect: false },
+      { key: key(), text: '', isCorrect: false },
     ],
   };
 }
@@ -94,8 +97,14 @@ export function emptyQuiz(): EditorQuiz {
     difficulty: 'easy',
     isPremium: false,
     status: 'draft',
-    questions: [emptyQuestion()],
+    questions: [emptyQuestion(firstKeys())],
   };
+}
+
+/** Keys for the first question of a new quiz, the same on every render. */
+function firstKeys(): () => string {
+  let index = 0;
+  return () => `first-${(index += 1)}`;
 }
 
 /** "Daniël en de leeuwenkuil" -> "daniel-en-de-leeuwenkuil". */

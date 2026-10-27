@@ -218,8 +218,10 @@ export function buildAvatarShapes(config: AvatarConfig): AvatarShape[] {
         const angle = (Math.PI * 2 * index) / 12;
         shapes.push({
           kind: 'circle',
-          cx: 50 + Math.cos(angle) * 29,
-          cy: 56 + Math.sin(angle) * 27,
+          // Rounded: server and browser trig can differ in the last digit,
+          // which React reports as a hydration mismatch.
+          cx: Math.round((50 + Math.cos(angle) * 29) * 100) / 100,
+          cy: Math.round((56 + Math.sin(angle) * 27) * 100) / 100,
           r: 9.5,
           fill: shade,
         });
