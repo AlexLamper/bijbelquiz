@@ -8,7 +8,7 @@ import type { StudiePassage } from '@/lib/ecosystem-links';
 import { readPendingAttempts, type PendingAttempt } from '@/lib/pending-attempts';
 
 import ReviewLock from './ReviewLock';
-import { NextQuizButton, ResultActions, ResultLayout, ScoreCard, StudieCard } from './ResultView';
+import { HomeButton, NextQuizButton, ResultActions, ResultLayout, ScoreCard, StudieCard } from './ResultView';
 
 interface GuestResultProps {
   quizId: string;
@@ -76,6 +76,7 @@ export default function GuestResult({ quizId, quizSlug, quizTitle, crumbs, nextQ
           </section>
         }
         aside={null}
+        footer={<HomeButton href="/" />}
       />
     );
   }
@@ -135,6 +136,7 @@ export default function GuestResult({ quizId, quizSlug, quizTitle, crumbs, nextQ
           <StudieCard passage={passage} quizSlug={quizSlug} hadWrongAnswers={hadWrongAnswers} />
         </>
       }
+      footer={<HomeButton href="/" />}
     />
   );
 }

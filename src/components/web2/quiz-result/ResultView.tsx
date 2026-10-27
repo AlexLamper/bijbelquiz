@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { ArrowUpRight, BookOpen, Lock, RefreshCw, Swords, Trophy } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Home, Lock, RefreshCw, Swords, Trophy } from 'lucide-react';
 
 import { Breadcrumbs, Button, Disclosure, DisclosureList, ProgressBar, ResultDisc, type Crumb } from '@/components/bq';
 import { BoltSolidIcon, FlameIcon } from '@/components/bq/icons';
@@ -19,19 +19,26 @@ export function ResultLayout({
   crumbs,
   main,
   aside,
+  footer,
 }: {
   crumbs: Crumb[];
   main: React.ReactNode;
   aside: React.ReactNode;
+  /**
+   * The last thing on the page ("Terug naar home"): under the main column on
+   * a wide screen, after the side column when the two stack on a phone.
+   */
+  footer?: React.ReactNode;
 }) {
   return (
     <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-5 px-4 pb-[72px] pt-7 m:px-8">
       <Breadcrumbs items={crumbs} />
-      <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_300px] lg:grid-cols-[minmax(0,1fr)_360px]">
-        <div className="flex min-w-0 flex-col gap-9">{main}</div>
-        <aside aria-label="Volgende stap" className="flex min-w-0 flex-col gap-4 m:sticky m:top-6">
+      <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_300px] m:grid-rows-[auto_1fr] lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="flex min-w-0 flex-col gap-9 m:col-start-1 m:row-start-1">{main}</div>
+        <aside aria-label="Volgende stap" className="flex min-w-0 flex-col gap-4 m:sticky m:top-6 m:col-start-2 m:row-span-2 m:row-start-1">
           {aside}
         </aside>
+        {footer && <div className="flex min-w-0 flex-col m:col-start-1 m:row-start-2 m:mt-1">{footer}</div>}
       </div>
     </div>
   );
@@ -126,6 +133,16 @@ export function NextQuizButton({ href }: { href: string }) {
   return (
     <Button href={href} block className="h-[60px] rounded-[14px] text-[18px]">
       Volgende quiz
+    </Button>
+  );
+}
+
+/** Back to where the player came from: the dashboard, or the home page for a guest. */
+export function HomeButton({ href }: { href: string }) {
+  return (
+    <Button href={href} variant="secondary" size="xl" block data-analytics-id="result_home">
+      <Home className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />
+      Terug naar home
     </Button>
   );
 }

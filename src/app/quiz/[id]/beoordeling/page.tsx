@@ -9,6 +9,7 @@ import GuestResult from '@/components/web2/quiz-result/GuestResult';
 import ReviewLock from '@/components/web2/quiz-result/ReviewLock';
 import {
   AnswerList,
+  HomeButton,
   NextQuizButton,
   ProgressCard,
   ResultActions,
@@ -229,6 +230,7 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
           <StudieCard passage={wrongPassage} quizSlug={quizSlug} hadWrongAnswers={score < total} />
         </>
       }
+      footer={<HomeButton href="/dashboard" />}
     />
   );
 }
