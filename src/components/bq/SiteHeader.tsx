@@ -74,7 +74,7 @@ export function SiteHeader({ preview }: { preview?: SiteHeaderPreview }) {
 
         <nav aria-label="Hoofdmenu" className="col-start-2 hidden items-center gap-8 m:flex">
           {MAIN_NAV.map((link) => {
-            const active = isActivePath(pathname, link.href);
+            const active = isActivePath(pathname, link.href, link.also);
             return (
               <Link
                 key={link.href}
@@ -157,7 +157,7 @@ function MobileMenu({ open, onOpenChange, signedIn, isAdmin, name, xp, streak }:
     <Modal open={open} onOpenChange={onOpenChange} title="Menu" hideTitle presentation="sheet" size="sm" className="m:hidden">
       <nav aria-label="Hoofdmenu" className="-mt-2 flex flex-col gap-1">
         {MAIN_NAV.map((link) => (
-          <Link key={link.href} href={link.href} aria-current={isActivePath(pathname, link.href) ? 'page' : undefined} className={linkClass(isActivePath(pathname, link.href))}>
+          <Link key={link.href} href={link.href} aria-current={isActivePath(pathname, link.href, link.also) ? 'page' : undefined} className={linkClass(isActivePath(pathname, link.href, link.also))}>
             {link.label}
           </Link>
         ))}

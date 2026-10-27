@@ -17,6 +17,7 @@ import {
   StudieCard,
 } from '@/components/web2/quiz-result/ResultView';
 import { dominantPassage } from '@/lib/ecosystem-links';
+import { bookByCode } from '@/lib/bible-books';
 import { getLevelInfo } from '@/lib/gamification';
 import { dominantBookChapter, pickNextQuiz, type NextQuizCandidate } from '@/lib/next-quiz';
 import { buildReviewQuestionsFromAttempt, type StoredAttemptAnswer } from '@/lib/quiz-review';
@@ -98,9 +99,15 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
   const questions = (quiz.questions || []) as unknown as StoredQuestion[];
   const categoryTitle = (quiz.categoryId as ICategory | undefined)?.title;
 
+  // The book the quiz is about, as on the quiz page; the category otherwise.
+  const book = bookByCode(dominantBookChapter(questions).book);
   const crumbs: Crumb[] = [
     { label: 'Quizzen', href: '/quizzen' },
-    ...(categoryTitle ? [{ label: categoryTitle, href: '/quizzen' }] : []),
+    ...(book
+      ? [{ label: book.title, href: `/quizzen?boek=${book.slug}` }]
+      : categoryTitle
+        ? [{ label: categoryTitle, href: '/quizzen' }]
+        : []),
     { label: quiz.title, href: `/bijbelquiz/${quizSlug}` },
     { label: 'Resultaat' },
   ];

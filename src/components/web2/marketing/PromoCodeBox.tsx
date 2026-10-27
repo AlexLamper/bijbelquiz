@@ -9,7 +9,7 @@ import { CheckIcon, CopyIcon } from './icons';
 /**
  * The BijbelStudie promo code with a "Kopieer" button, in the 2.0 style
  * (52px field, the code spaced out, a grey button on the right). Same
- * behaviour as `StudiePromoCode`: copies to the clipboard and records
+ * behaviour as the old promo code box: copies to the clipboard and records
  * `bijbelstudie_code_copied`; without clipboard access the code stays
  * `select-all` for a manual copy.
  */

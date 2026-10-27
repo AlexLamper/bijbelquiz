@@ -5,10 +5,13 @@
 export interface NavLink {
   label: string;
   href: string;
+  /** Other route prefixes that count as this item, e.g. a quiz page for
+   *  "Quizzen". */
+  also?: string[];
 }
 
 export const MAIN_NAV: NavLink[] = [
-  { label: 'Quizzen', href: '/quizzen' },
+  { label: 'Quizzen', href: '/quizzen', also: ['/quiz', '/bijbelquiz'] },
   { label: 'Duels', href: '/duels' },
   { label: 'Samen spelen', href: '/samen-spelen' },
   { label: 'Ranglijst', href: '/ranglijst' },
@@ -50,9 +53,9 @@ export const ACCOUNT_NAV: NavLink[] = [
   { label: 'Instellingen', href: '/instellingen' },
 ];
 
-/** True when `pathname` is `href` or lives under it. */
-export function isActivePath(pathname: string | null, href: string): boolean {
+/** True when `pathname` is `href` (or one of `also`) or lives under it. */
+export function isActivePath(pathname: string | null, href: string, also: string[] = []): boolean {
   if (!pathname) return false;
   if (href === '/') return pathname === '/';
-  return pathname === href || pathname.startsWith(`${href}/`);
+  return [href, ...also].some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
 }

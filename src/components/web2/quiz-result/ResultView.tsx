@@ -61,7 +61,12 @@ function ScoreRing({ score, total }: { score: number; total: number }) {
         )}
       </svg>
       <span className="flex flex-col items-center [grid-area:1/1]">
-        <span className="text-[40px] font-extrabold leading-[44px] tabular-nums">
+        <span
+          className={cn(
+            'font-extrabold leading-[44px] tabular-nums',
+            `${score}/${total}`.length >= 5 ? 'text-[32px]' : 'text-[40px]',
+          )}
+        >
           {score}/{total}
         </span>
         <span className="text-[13px] font-bold text-ink-muted">goed</span>
@@ -95,7 +100,11 @@ export function ScoreCard({
       <ScoreRing score={score} total={total} />
       <div className="flex min-w-0 flex-col items-start gap-2.5">
         <h1 className="m-0 font-display text-[30px] font-semibold leading-9 m:text-[36px] m:leading-[44px]">
-          {firstName ? `Mooi gespeeld, ${firstName}` : 'Mooi gespeeld!'}
+          {/* Below half right, "mooi gespeeld" would read as not having looked. */}
+          {(() => {
+            const lead = total > 0 && score / total < 0.5 ? 'Goed geprobeerd' : 'Mooi gespeeld';
+            return firstName ? `${lead}, ${firstName}` : `${lead}!`;
+          })()}
         </h1>
         {isNewBest && (
           <span className="inline-flex h-7 items-center gap-1.5 rounded-full bg-lapis-tint px-3 text-[13px] font-extrabold text-lapis">
