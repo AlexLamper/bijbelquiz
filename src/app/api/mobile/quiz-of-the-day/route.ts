@@ -39,6 +39,27 @@ function respond(body: Record<string, unknown>) {
   });
 }
 
+interface PickedQuiz {
+  _id: { toString(): string };
+  title: string;
+  slug?: string;
+  description?: string;
+  imageUrl?: string;
+  rewardXp?: number;
+  difficulty?: string;
+  isPremium?: boolean;
+  categoryId?: { toString(): string } | null;
+  category?: { toString(): string } | null;
+  questions?: Array<{ bibleReference?: string }>;
+}
+
+interface PickedCategory {
+  _id: { toString(): string };
+  name?: string;
+  title?: string;
+  slug?: string;
+}
+
 export async function GET() {
   try {
     const now = new Date();
@@ -50,14 +71,14 @@ export async function GET() {
 
     await connectDB();
 
-    const quiz: any = await pickQuizOfTheDay(now);
+    const quiz = (await pickQuizOfTheDay(now)) as PickedQuiz | null;
     if (!quiz) {
       return NextResponse.json({ error: 'No quiz available' }, { status: 404 });
     }
 
     const categoryRef = quiz.categoryId ?? quiz.category;
-    const category: any = categoryRef ? await Category.findById(categoryRef).lean() : null;
-    const questions: any[] = quiz.questions || [];
+    const category = (categoryRef ? await Category.findById(categoryRef).lean() : null) as PickedCategory | null;
+    const questions = quiz.questions || [];
 
     const imageUrl = resolveQuizImageUrl(quiz);
     const body = {

@@ -163,7 +163,7 @@ export default async function DashboardPage() {
           {greeting}
           {firstName ? `, ${firstName}` : ''}
         </h1>
-        <p className="m-0 text-[17px] font-semibold text-ink-muted">Ga verder waar je gebleven was, of begin aan iets nieuws.</p>
+        <p className="m-0 text-[17px] font-semibold leading-[23px] text-ink-muted">Ga verder waar je gebleven was, of begin aan iets nieuws.</p>
       </div>
 
       <div className="grid grid-cols-1 items-start gap-x-10 gap-y-8 m:grid-cols-[minmax(0,1fr)_340px]">
