@@ -373,8 +373,9 @@ export function Td({
 export function EmptyRow({ columns, children }: { columns: number; children: React.ReactNode }) {
   return (
     <tr>
-      <td colSpan={columns} className="border-t border-line-soft px-5 py-8 text-center text-sm font-semibold text-ink-muted">
-        {children}
+      <td colSpan={columns} className="border-t border-line-soft p-0 text-sm font-semibold text-ink-muted">
+        {/* Sticky, and no wider than the card on phones, so the message stays in view in a table that scrolls sideways. */}
+        <div className="sticky left-0 max-w-[calc(100vw-34px)] px-5 py-8 text-center m:max-w-none">{children}</div>
       </td>
     </tr>
   );
