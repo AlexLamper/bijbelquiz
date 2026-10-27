@@ -8,6 +8,7 @@ import StudieLink from '@/components/StudieLink';
 import { passageFromBookName } from '@/lib/ecosystem-links';
 import type { RoomResultEntry, RoomSnapshot } from '@/lib/multiplayer/types';
 import { cn } from '@/lib/utils';
+import { HomeButton } from '@/components/web2/quiz-result/HomeButton';
 import { playerName } from './players';
 import { pointsLabel, questionCountLabel, quizDisplayTitle } from './quiz-display';
 
@@ -16,7 +17,8 @@ interface ResultsViewProps {
   userId: string | null;
   results: RoomResultEntry[];
   isLeaving: boolean;
-  onLeave: () => void;
+  /** Leave the room, then go to `target` (the Samen spelen page by default). */
+  onLeave: (target?: string) => void;
   errorBar: React.ReactNode;
   debug: React.ReactNode;
 }
@@ -81,6 +83,7 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
   const [groupError, setGroupError] = useState<string | null>(null);
   const [savedGroupName, setSavedGroupName] = useState<string | null>(null);
   const [groupDismissed, setGroupDismissed] = useState(false);
+  const [leavingHome, setLeavingHome] = useState(false);
 
   async function saveGroup() {
     setGroupState('saving');
@@ -131,8 +134,8 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
 
       {errorBar}
 
-      <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_360px]">
-        <section aria-label="Eindstand" className="flex min-w-0 flex-col gap-6">
+      <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_360px] m:grid-rows-[auto_1fr]">
+        <section aria-label="Eindstand" className="flex min-w-0 flex-col gap-6 m:col-start-1 m:row-start-1">
           {results.length === 0 ? (
             <p role="status" className="m-0 rounded-[16px] border border-line bg-card px-5 py-6 text-center text-[15px] font-semibold text-ink-muted">
               De uitslag wordt geladen...
@@ -181,13 +184,22 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
             <Button href="/samen-spelen" size="xl">
               Nieuw spel
             </Button>
-            <Button variant="secondary" size="xl" onClick={onLeave} loading={isLeaving}>
+            <Button
+              variant="secondary"
+              size="xl"
+              onClick={() => {
+                setLeavingHome(false);
+                onLeave();
+              }}
+              loading={isLeaving && !leavingHome}
+              disabled={isLeaving}
+            >
               Spel verlaten
             </Button>
           </div>
         </section>
 
-        <aside className="flex min-w-0 flex-col gap-5">
+        <aside className="flex min-w-0 flex-col gap-5 m:col-start-2 m:row-span-2 m:row-start-1">
           {playerCount >= 2 && !groupDismissed && groupState !== 'saved' && (
             <section aria-labelledby="groep-titel" className="flex flex-col gap-3.5 rounded-[16px] border border-line bg-card p-5">
               <div className="flex items-center gap-3">
@@ -265,6 +277,17 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
             />
           </section>
         </aside>
+
+        {/* Last on the page: under the standings on a wide screen, after the side column on a phone. */}
+        <div className="flex min-w-0 flex-col m:col-start-1 m:row-start-2">
+          <HomeButton
+            onClick={() => {
+              setLeavingHome(true);
+              onLeave('/dashboard');
+            }}
+            loading={isLeaving && leavingHome}
+          />
+        </div>
       </div>
 
       {debug}

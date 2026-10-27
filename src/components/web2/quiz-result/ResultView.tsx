@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { ArrowUpRight, BookOpen, Home, Lock, RefreshCw, Swords, Trophy } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Lock, RefreshCw, Swords, Trophy } from 'lucide-react';
 
 import { Breadcrumbs, Button, Disclosure, DisclosureList, ProgressBar, ResultDisc, type Crumb } from '@/components/bq';
 import { BoltSolidIcon, FlameIcon } from '@/components/bq/icons';
@@ -8,6 +8,8 @@ import StudieLink from '@/components/StudieLink';
 import { passageFromQuestion, type StudiePassage } from '@/lib/ecosystem-links';
 import type { QuizReviewQuestion } from '@/lib/quiz-review';
 import { cn } from '@/lib/utils';
+
+export { HomeButton } from './HomeButton';
 
 /**
  * The pieces of the result page (W19 P-Beoordeling), shared by the signed-in
@@ -133,16 +135,6 @@ export function NextQuizButton({ href }: { href: string }) {
   return (
     <Button href={href} block className="h-[60px] rounded-[14px] text-[18px]">
       Volgende quiz
-    </Button>
-  );
-}
-
-/** Back to where the player came from: the dashboard, or the home page for a guest. */
-export function HomeButton({ href }: { href: string }) {
-  return (
-    <Button href={href} variant="secondary" size="xl" block data-analytics-id="result_home">
-      <Home className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />
-      Terug naar home
     </Button>
   );
 }

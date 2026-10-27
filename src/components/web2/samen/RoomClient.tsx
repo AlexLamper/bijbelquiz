@@ -249,7 +249,7 @@ export default function RoomClient({ roomCode, view, categoryTitle = null }: Roo
         userId={userId}
         results={displayedResults}
         isLeaving={controller.isLeaving}
-        onLeave={() => void leaveAndExit()}
+        onLeave={(target) => void leaveAndExit(target)}
         errorBar={errorBar}
         debug={debug}
       />

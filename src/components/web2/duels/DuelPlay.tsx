@@ -29,6 +29,7 @@ import {
   forfeitRequest,
   getDuelRequest,
 } from './api';
+import { HomeButton } from '@/components/web2/quiz-result/HomeButton';
 import { RoundDots } from './DuelCards';
 import { opponentName, scoreLabel } from './format';
 import { InviteLinkModal, type InviteLink } from './InviteLinkModal';
@@ -760,6 +761,8 @@ function Overview({
           {duel.opponent ? 'Opgeven' : 'Duel annuleren'}
         </button>
       )}
+
+      {finished && <HomeButton href="/dashboard" />}
     </main>
   );
 }
