@@ -3,6 +3,9 @@ import mongoose from 'mongoose';
 import { User, connectDB } from '@/database';
 import { startOfAmsterdamDay, shiftDayKey } from '@/lib/admin/time';
 import { getPremiumSnapshot, manualGrantActive, recomputeUserPremium, PREMIUM_SNAPSHOT_FIELDS } from '@/lib/premium-state';
+import { GRANT_MAX_YEARS_AHEAD, GRANT_NOTE_MAX, isGrantDuration, type GrantDuration, type PremiumSource } from './grant-options';
+
+export * from './grant-options';
 
 /**
  * "Premium geven" in beheer: a dated manual grant on the account.
@@ -13,25 +16,6 @@ import { getPremiumSnapshot, manualGrantActive, recomputeUserPremium, PREMIUM_SN
  * is switched off by Stripe, the stores, lifetime or a group licence, and it
  * ends by itself: every read compares the end date.
  */
-
-export const GRANT_DURATIONS = ['7d', '1m', '3m', '1y', 'lifetime', 'custom'] as const;
-export type GrantDuration = (typeof GRANT_DURATIONS)[number];
-
-export const GRANT_DURATION_LABELS: Record<GrantDuration, string> = {
-  '7d': '7 dagen',
-  '1m': '1 maand',
-  '3m': '3 maanden',
-  '1y': '1 jaar',
-  lifetime: 'Levenslang',
-  custom: 'Tot een datum',
-};
-
-export const GRANT_NOTE_MAX = 300;
-const MAX_YEARS_AHEAD = 10;
-
-export function isGrantDuration(value: unknown): value is GrantDuration {
-  return typeof value === 'string' && (GRANT_DURATIONS as readonly string[]).includes(value);
-}
 
 export type GrantInputError = { ok: false; error: string; field: string };
 
@@ -84,9 +68,9 @@ export function resolveGrantUntil(
         return { ok: false, error: 'De einddatum moet in de toekomst liggen.', field: 'until' };
       }
       const max = new Date(now.getTime());
-      max.setUTCFullYear(max.getUTCFullYear() + MAX_YEARS_AHEAD);
+      max.setUTCFullYear(max.getUTCFullYear() + GRANT_MAX_YEARS_AHEAD);
       if (end.getTime() > max.getTime()) {
-        return { ok: false, error: `Kies een datum binnen ${MAX_YEARS_AHEAD} jaar, of kies Levenslang.`, field: 'until' };
+        return { ok: false, error: `Kies een datum binnen ${GRANT_MAX_YEARS_AHEAD} jaar, of kies Levenslang.`, field: 'until' };
       }
       return { ok: true, duration, until: end };
     }
@@ -108,17 +92,6 @@ export interface GrantActor {
   email?: string | null;
   name?: string | null;
 }
-
-export type PremiumSource = 'lifetime' | 'stripe' | 'store' | 'group' | 'manual';
-export const PREMIUM_SOURCES: readonly PremiumSource[] = ['lifetime', 'stripe', 'store', 'group', 'manual'];
-
-export const PREMIUM_SOURCE_LABELS: Record<PremiumSource, string> = {
-  lifetime: 'Levenslang',
-  stripe: 'Website (Stripe)',
-  store: 'App Store / Play',
-  group: 'Groepslicentie',
-  manual: 'Gegeven door beheer',
-};
 
 export type PremiumFieldsLike = Parameters<typeof getPremiumSnapshot>[0] & {
   stripeCurrentPeriodEnd?: Date | string | null;

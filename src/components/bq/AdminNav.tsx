@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { BarChart3, BookOpen, CreditCard, Filter, LayoutDashboard } from 'lucide-react';
+import { BarChart3, BookOpen, CreditCard, Filter, LayoutDashboard, Users } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { isActivePath } from './nav';
 
 const ADMIN_NAV = [
   { label: 'Overzicht', href: '/beheer', icon: LayoutDashboard, exact: true },
+  { label: 'Gebruikers', href: '/beheer/gebruikers', icon: Users },
   { label: 'Quizzen', href: '/beheer/quizzen', icon: BookOpen },
   { label: 'Statistieken', href: '/beheer/statistieken', icon: BarChart3 },
   { label: 'Betalingen', href: '/beheer/betalingen', icon: CreditCard },

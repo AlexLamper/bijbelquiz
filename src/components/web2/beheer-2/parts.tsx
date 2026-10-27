@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
+import { Pill } from '@/components/bq/Pill';
 
 /**
  * Building blocks for the beheer data pages (P-BeheerStatistieken,
@@ -230,21 +231,14 @@ export function Tag({ tone = 'neutral', children }: { tone?: keyof typeof TAG_TO
   );
 }
 
-const CHIP_TONE = {
-  green: 'bg-green-tint text-green-text',
-  coral: 'bg-coral-tint text-coral-text',
-  gold: 'bg-gold-tint text-gold-text',
-  grey: 'bg-chip text-ink-soft',
-} as const;
+export type ChipTone = 'green' | 'coral' | 'gold' | 'grey';
 
-export type ChipTone = keyof typeof CHIP_TONE;
-
-/** 24px round status chip ("actief", "gezet", "enabled"). */
+/** Round status chip ("actief", "gezet", "enabled"): the foundation Pill. */
 export function StatusChip({ tone, children }: { tone: ChipTone; children: React.ReactNode }) {
   return (
-    <span className={cn('inline-flex h-6 shrink-0 items-center whitespace-nowrap rounded-full px-[9px] text-xs font-extrabold', CHIP_TONE[tone])}>
+    <Pill tone={tone} size="sm" className="shrink-0">
       {children}
-    </span>
+    </Pill>
   );
 }
 
@@ -254,37 +248,44 @@ export function StatusChip({ tone, children }: { tone: ChipTone; children: React
 
 /**
  * A white card holding one table. The table scrolls inside the card, so a wide
- * table never widens the page.
+ * table never widens the page; with `stack` it becomes stacked rows on phones
+ * instead (each cell under its column name, from the `label` on `Td`).
  */
 export function TableCard({
   title,
   description,
+  action,
   caption,
   minWidth,
   head,
   footer,
+  stack,
   className,
   children,
 }: {
   title?: React.ReactNode;
   description?: React.ReactNode;
+  /** Link or control on the right of the title. */
+  action?: React.ReactNode;
   caption: string;
   minWidth: number;
   head: React.ReactNode;
   footer?: React.ReactNode;
+  stack?: boolean;
   className?: string;
   children: React.ReactNode;
 }) {
   return (
     <section className={cn('flex min-w-0 flex-col overflow-hidden rounded-[16px] border border-line bg-card', className)}>
       {title ? (
-        <div className="px-5 pb-3 pt-[18px]">
+        <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2 px-5 pb-3 pt-[18px]">
           <CardTitle title={title} description={description} />
+          {action}
         </div>
       ) : (
         <div className="h-1.5" aria-hidden="true" />
       )}
-      <Table caption={caption} minWidth={minWidth} head={head}>
+      <Table caption={caption} minWidth={minWidth} head={head} stack={stack}>
         {children}
       </Table>
       {footer ? (
@@ -296,21 +297,35 @@ export function TableCard({
   );
 }
 
-/** The bare scrolling table, for tables that sit inside a larger card. */
+/**
+ * The bare scrolling table, for tables that sit inside a larger card. Rows
+ * light up on hover; numbers are right-aligned with tabular figures (`Td
+ * numeric`). `stack`: on phones the rows become blocks, the first cell as the
+ * row title and every other cell as "label  value".
+ */
 export function Table({
   caption,
   minWidth,
   head,
+  stack,
   children,
 }: {
   caption: string;
   minWidth: number;
   head: React.ReactNode;
+  stack?: boolean;
   children: React.ReactNode;
 }) {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse" style={{ minWidth }}>
+    <div className={cn('overflow-x-auto', stack && 'max-m:overflow-visible')}>
+      <table
+        className={cn(
+          'w-full border-collapse [&>tbody>tr]:transition-colors [&>tbody>tr:hover]:bg-chip/60',
+          stack && 'm:min-w-[var(--table-min)]',
+          stack && STACKED,
+        )}
+        style={stack ? ({ '--table-min': `${minWidth}px` } as React.CSSProperties) : { minWidth }}
+      >
         <caption className="sr-only">{caption}</caption>
         <thead>
           <tr>{head}</tr>
@@ -320,6 +335,18 @@ export function Table({
     </div>
   );
 }
+
+/** Phone layout of a stacked table (below the `m` breakpoint). */
+const STACKED = [
+  'max-m:block',
+  'max-m:[&>thead]:sr-only',
+  'max-m:[&>tbody]:block',
+  'max-m:[&>tbody>tr]:flex max-m:[&>tbody>tr]:flex-col max-m:[&>tbody>tr]:gap-1 max-m:[&>tbody>tr]:border-t max-m:[&>tbody>tr]:border-line-soft max-m:[&>tbody>tr]:px-4 max-m:[&>tbody>tr]:py-3 max-m:[&>tbody>tr:first-child]:border-t-0',
+  'max-m:[&>tbody>tr>td]:flex max-m:[&>tbody>tr>td]:items-baseline max-m:[&>tbody>tr>td]:justify-between max-m:[&>tbody>tr>td]:gap-3 max-m:[&>tbody>tr>td]:border-0 max-m:[&>tbody>tr>td]:p-0! max-m:[&>tbody>tr>td]:text-right',
+  'max-m:[&>tbody>tr>td:first-child]:block max-m:[&>tbody>tr>td:first-child]:text-left max-m:[&>tbody>tr>td:first-child]:pb-1',
+  'max-m:[&>tbody>tr>td[data-label]]:before:content-[attr(data-label)] max-m:[&>tbody>tr>td[data-label]]:before:shrink-0 max-m:[&>tbody>tr>td[data-label]]:before:text-left max-m:[&>tbody>tr>td[data-label]]:before:text-[13px] max-m:[&>tbody>tr>td[data-label]]:before:font-bold max-m:[&>tbody>tr>td[data-label]]:before:text-ink-muted',
+  'max-m:[&>tbody>tr>td[data-empty]]:hidden',
+].join(' ');
 
 export function Th({ children, align = 'left' }: { children: React.ReactNode; align?: 'left' | 'right' }) {
   return (
@@ -341,6 +368,8 @@ export function Td({
   tone = 'body',
   valign = 'top',
   numeric,
+  label,
+  hideEmptyOnPhone,
   className,
   style,
 }: {
@@ -350,12 +379,18 @@ export function Td({
   tone?: 'body' | 'strong' | 'muted';
   valign?: 'top' | 'middle';
   numeric?: boolean;
+  /** Column name, shown before the value when a `stack` table is on a phone. */
+  label?: string;
+  /** In a stacked table on a phone, leave this cell out (it is empty or repeated). */
+  hideEmptyOnPhone?: boolean;
   className?: string;
   style?: React.CSSProperties;
 }) {
   return (
     <td
       style={style}
+      data-label={label}
+      data-empty={hideEmptyOnPhone ? '' : undefined}
       className={cn(
         'border-t border-line-soft px-4 py-3 text-sm leading-5 first:pl-5 last:pr-5',
         align === 'right' ? 'text-right' : 'text-left',

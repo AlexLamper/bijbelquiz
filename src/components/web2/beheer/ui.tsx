@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { Pill } from '@/components/bq/Pill';
 
 /**
  * Small building blocks shared by the beheer pages (P-Beheer, P-BeheerQuizzen,
@@ -75,28 +76,14 @@ export function ArrowLink({ href, children, className }: { href: string; childre
   );
 }
 
-const PILL_TONE = {
-  lapis: 'bg-lapis-tint text-lapis',
-  gold: 'bg-gold-tint text-gold-text',
-  coral: 'bg-coral-tint text-coral-text',
-  green: 'bg-green-tint text-green-text',
-  grey: 'bg-chip text-ink-soft',
-} as const;
+export type AdminPillTone = 'lapis' | 'gold' | 'coral' | 'green' | 'grey';
 
-export type AdminPillTone = keyof typeof PILL_TONE;
-
-/** 24px status chip. */
+/** Status chip on every beheer page: the foundation Pill, small. */
 export function AdminPill({ tone, children, className }: { tone: AdminPillTone; children: React.ReactNode; className?: string }) {
   return (
-    <span
-      className={cn(
-        'inline-flex h-6 shrink-0 items-center whitespace-nowrap rounded-full px-[9px] text-xs font-extrabold',
-        PILL_TONE[tone],
-        className,
-      )}
-    >
+    <Pill tone={tone} size="sm" className={cn('shrink-0', className)}>
       {children}
-    </span>
+    </Pill>
   );
 }
 
