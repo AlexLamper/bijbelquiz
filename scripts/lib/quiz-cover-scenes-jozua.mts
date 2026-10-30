@@ -53,7 +53,6 @@ import {
   rotate,
   sandal,
   scroll,
-  sheaf,
   smokeColumn,
   streaks,
   stump,

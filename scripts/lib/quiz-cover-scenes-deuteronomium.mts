@@ -47,7 +47,6 @@ import {
   ellipse,
   fireBed,
   forkedRoad,
-  goat,
   grapes,
   houseBlock,
   loaf,
@@ -71,9 +70,7 @@ import {
   throne,
   trail,
   tree,
-  vineRow,
   wheat,
-  window as windowFrame,
   witheredPlant,
 } from './quiz-cover-primitives.mjs';
 import {
@@ -89,7 +86,6 @@ import {
   eagle,
   figureA,
   fruitIn,
-  hamlet,
   hornedAltar,
   jar,
   kneelA,
