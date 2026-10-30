@@ -93,6 +93,7 @@ import {
   hornedAltar,
   jar,
   kneelA,
+  moon,
   nest,
   scales,
   sheepA,
@@ -218,6 +219,7 @@ export const DEUTERONOMIUM_SCENES: Record<string, Scene> = {
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'moon', sunX: 1130, sunY: 220, sunR: 46, far: 'ridge', horizon: 480 }),
+      moon(1130, 220, 32, c.p.light),
       ellipse(650, 548, 330, 74, c.p.mid),
       path('M 330 524 L 330 400 L 342 386 L 352 398 L 366 380 L 378 392 L 378 524 Z', c.p.near),
       rect(392, 494, 176, 32, c.p.near, { rx: 6 }),
@@ -364,7 +366,7 @@ export const DEUTERONOMIUM_SCENES: Record<string, Scene> = {
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 1140, sunY: 300, sunR: 70, rays: true, far: 'dunes', horizon: 476 }),
-      trail(820, H, 1120, 476, 120, c.p.light, { opacity: 0.35 }),
+      trail(860, H, 1130, 476, 130, c.p.light, { opacity: 0.35 }),
       houseBlock(c.rand, 290, 520, 1.15, c.p.near),
       figureA(470, 540, 1.3, c.p.fore, 'bless'),
       person(840, 548, 1.35, c.p.fore, 'walk'),

@@ -28,7 +28,6 @@ import { G, base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
 import {
   W,
   basket,
-  bird,
   brickWall,
   citySkyline,
   cityWall,

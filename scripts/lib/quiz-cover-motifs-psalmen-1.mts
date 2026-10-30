@@ -22,9 +22,11 @@ import {
   line,
   openBook,
   p,
+  sheaf as aSheaf,
   sheep as aSheep,
   star4 as aStar4,
   throne as aThrone,
+  wheatStalk,
   type Pose as FigurePose,
 } from './cover-options/shapes.mjs';
 import { H, W, ink } from './quiz-cover-primitives.mjs';
@@ -210,6 +212,49 @@ export function fruitTree(x: number, y: number, s: number, fill: string, o: At =
       ell(40, -240, 50, 30, f),
     o,
   );
+}
+
+/** A patch of ripe wheat: leaning stalks between x0 and x1 standing on y. */
+export function wheatField(rand: () => number, x0: number, x1: number, y: number, h: number, stem: string, grain: string, gap = 16): string {
+  const out: string[] = [];
+  for (let x = x0; x <= x1; x += gap * (0.7 + rand() * 0.6)) {
+    out.push(at(x, y + rand() * 8, 1, wheatStalk(h * (0.8 + rand() * 0.35), stem, grain), { rot: (rand() - 0.5) * 16 }));
+  }
+  return out.join('');
+}
+
+/** A bound sheaf of wheat (option-A shape); ~200 tall at s = 1. */
+export function sheafA(x: number, y: number, s: number, stem: string, grain: string, band: string): string {
+  return at(x, y, s, aSheaf(stem, grain, band));
+}
+
+/** A spring welling up: a jet with arcs falling either side into a pool. `(x, y)` is the source. */
+export function fountain(x: number, y: number, s: number, fill: string, light: string): string {
+  const k = (v: number) => r1(v * s);
+  const jet = (d: string, w: number) => `<path d="${d}" fill="none" stroke="${fill}" stroke-width="${k(w)}" stroke-linecap="round"/>`;
+  const out = [
+    ell(x, y + 8 * s, 190 * s, 22 * s, fill),
+    jet(`M ${x} ${y} C ${x - k(14)} ${y - k(150)} ${x - k(110)} ${y - k(150)} ${x - k(130)} ${y + k(4)}`, 12),
+    jet(`M ${x} ${y} C ${x + k(14)} ${y - k(150)} ${x + k(110)} ${y - k(150)} ${x + k(130)} ${y + k(4)}`, 12),
+    jet(`M ${x} ${y} C ${x - k(6)} ${y - k(110)} ${x - k(56)} ${y - k(120)} ${x - k(64)} ${y + k(4)}`, 9),
+    jet(`M ${x} ${y} C ${x + k(6)} ${y - k(110)} ${x + k(56)} ${y - k(120)} ${x + k(64)} ${y + k(4)}`, 9),
+    jet(`M ${x} ${y} L ${x} ${y - k(150)}`, 14),
+    circ(x, y - 162 * s, 11 * s, fill),
+  ];
+  for (const [dx, dy, r] of [
+    [-22, -176, 6],
+    [20, -180, 5],
+    [-150, -10, 6],
+    [150, -14, 6],
+    [-86, -40, 4],
+    [90, -36, 4],
+  ] as const)
+    out.push(circ(x + dx * s, y + dy * s, r * s, fill));
+  out.push(
+    `<path d="M ${x - k(4)} ${y - k(20)} L ${x - k(4)} ${y - k(140)}" fill="none" stroke="${light}" stroke-width="${k(3.5)}" stroke-linecap="round" opacity="0.7"/>`,
+    `<path d="M ${x - k(16)} ${y - k(70)} C ${x - k(40)} ${y - k(118)} ${x - k(84)} ${y - k(116)} ${x - k(104)} ${y - k(60)}" fill="none" stroke="${light}" stroke-width="${k(3.5)}" stroke-linecap="round" opacity="0.6"/>`,
+  );
+  return out.join('');
 }
 
 // ── objects ────────────────────────────────────────────────────────────────
@@ -510,20 +555,23 @@ export function cord(pts: [number, number][], fill: string, w = 5, peg?: string)
   return line(d, fill, w) + pegs;
 }
 
-/** A pile of coins, the heap centred on (x, y) where y is the ground. */
-export function coinHeap(x: number, y: number, s: number, fill: string, deep: string): string {
-  const out: string[] = [p(`M ${r1(x - 70 * s)} ${r1(y)} C ${r1(x - 50 * s)} ${r1(y - 46 * s)} ${r1(x + 50 * s)} ${r1(y - 46 * s)} ${r1(x + 70 * s)} ${r1(y)} Z`, fill)];
-  const spots: [number, number][] = [
-    [-44, -10],
-    [-18, -24],
-    [12, -28],
-    [38, -14],
-    [-2, -8],
-    [26, -2],
-    [-30, 0],
+/** Stacks of coins with a few loose ones; `(x, y)` is the ground under the middle stack. */
+export function coinStacks(x: number, y: number, s: number, fill: string, edge: string): string {
+  const coin = (cx: number, cy: number) => ell(cx, cy + 4 * s, 22 * s, 8 * s, edge) + ell(cx, cy, 22 * s, 8 * s, fill);
+  const out: string[] = [];
+  const stacks: [number, number][] = [
+    [-52, 6],
+    [0, 10],
+    [50, 4],
   ];
-  for (const [dx, dy] of spots) out.push(ell(x + dx * s, y + dy * s, 12 * s, 5 * s, deep, 'opacity="0.45"'));
-  out.push(ell(x + 84 * s, y - 4 * s, 15 * s, 6 * s, fill), ell(x - 92 * s, y - 2 * s, 14 * s, 5 * s, fill));
+  for (const [dx, n] of stacks) for (let i = 0; i < n; i += 1) out.push(coin(x + dx * s, y - 6 * s - i * 9 * s));
+  for (const [dx, dy] of [
+    [-100, 2],
+    [96, 4],
+    [130, 0],
+    [-24, 10],
+  ] as const)
+    out.push(coin(x + dx * s, y + dy * s - 4 * s));
   return out.join('');
 }
 

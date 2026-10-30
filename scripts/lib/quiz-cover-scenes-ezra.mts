@@ -34,9 +34,12 @@ import {
   streaks,
   tent,
   throne,
+  reeds,
   trail,
+  water,
   ziggurat,
 } from './quiz-cover-primitives.mjs';
+import { mix } from './cover-options/shapes.mjs';
 import {
   blaze,
   camel,
@@ -211,7 +214,10 @@ export const EZRA_SCENES: Record<string, Scene> = {
     mood: 'dawn',
     draw: (c) => [
       base(c, { sunX: 1160, sunY: 270, sunR: 66, far: 'dunes', ground: 'water', horizon: 430 }),
+      water(c.rand, 436, mix(c.p.water, '#FFFFFF', 0.25), c.p.crest, 3),
       path(`M -20 522 C 300 500 700 506 1000 518 C 1150 524 1300 518 ${W + 20} 512 L ${W + 20} ${H} L -20 ${H} Z`, c.p.mid),
+      reeds(c.rand, 210, 516, 0.9, c.p.near, 6),
+      reeds(c.rand, 1010, 520, 0.8, c.p.near, 5),
       tent(1130, 524, 0.95, c.p.near),
       tent(1250, 518, 0.72, c.p.near, { opacity: 0.85 }),
       fig(300, 540, 1.3, c.p.fore, 'kneel'),

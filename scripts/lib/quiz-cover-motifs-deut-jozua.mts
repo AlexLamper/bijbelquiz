@@ -407,6 +407,19 @@ export function cloudPillar(x: number, y: number, s: number, fill: string, o?: P
   return place(x, y, s, out.join(''), o);
 }
 
+/**
+ * A crescent moon, horns to the right. (The shared `crescent` closes with an
+ * inner arc whose radius is under half the chord, which SVG scales up onto the
+ * outer arc, so it draws nothing; this one uses a wider inner arc.)
+ */
+export function moon(x: number, y: number, r: number, fill: string, o?: Opts): string {
+  const g = p(
+    `M ${r1(x)} ${r1(y - r)} A ${r1(r)} ${r1(r)} 0 1 0 ${r1(x)} ${r1(y + r)} A ${r1(r * 1.3)} ${r1(r * 1.3)} 0 0 1 ${r1(x)} ${r1(y - r)} Z`,
+    fill,
+  );
+  return o?.opacity !== undefined && o.opacity !== 1 ? `<g opacity="${o.opacity}">${g}</g>` : g;
+}
+
 /** A four-pointed star with a tapering tail trailing down-left: a sign in the sky. */
 export function comet(x: number, y: number, s: number, fill: string, o?: Place): string {
   const k = 8;

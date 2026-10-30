@@ -63,8 +63,8 @@ const BODY =
  * A person, sized like `person()` (s = 1 is about 134 tall standing), with
  * every option-A pose and a `flip` to face left. Kneeling, bowing, weeping
  * and lying figures face right unless flipped. `spread` holds both arms out
- * level (Samson between the pillars); `climb` is a kneeling figure tipped
- * onto a slope that rises to the right, one hand reaching up it.
+ * level (Samson between the pillars); `climb` leans into a slope that
+ * rises to the right, one hand reaching up it and one on the rock.
  */
 export function fig(x: number, y: number, s: number, fill: string, pose: FigPose = 'stand', o: Place & { staffFill?: string } = {}): string {
   const f = ink(fill);
@@ -109,8 +109,13 @@ export function fig(x: number, y: number, s: number, fill: string, pose: FigPose
         circ(100, -146, 7.5, f);
       break;
     case 'climb':
-      inner = `<g transform="rotate(-46)">${kneeler(f, 'up')}</g>`;
-      scale = s * 0.6;
+      inner =
+        `<g transform="rotate(24)">${p(BODY, f)}` +
+        stroke('M 20 -150 C 26 -180 30 -206 32 -232', f, 17) +
+        circ(32, -236, 7.5, f) +
+        stroke('M 18 -140 C 40 -132 58 -122 74 -112', f, 17) +
+        circ(78, -110, 7.5, f) +
+        '</g>';
       break;
     default:
       inner = figure(f, pose, { staffFill: o.staffFill ? ink(o.staffFill) : undefined });

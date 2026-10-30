@@ -77,19 +77,22 @@ export function staffBearer(x: number, y: number, s: number, fill: string, staff
 /** An ant walking right, about 110 wide at s = 1; `carry` puts a grain in its jaws. */
 export function ant(x: number, y: number, s: number, fill: string, carry?: string, o?: Place): string {
   const f = ink(fill);
-  const leg = (d: string) => line(d, f, 4.5);
+  const leg = (d: string, op = 1) => line(d, f, 4, op !== 1 ? `opacity="${op}"` : '');
   const g =
-    leg('M 10 -24 L 26 -44 L 42 0') +
-    leg('M 2 -22 L 2 -46 L -10 0') +
-    leg('M -6 -22 L -26 -46 L -52 0') +
-    ell(-46, -30, 29, 18, f, 'transform="rotate(-14 -46 -30)"') +
-    circ(-14, -27, 6, f) +
-    ell(4, -29, 16, 10, f, 'transform="rotate(-10 4 -29)"') +
-    circ(30, -35, 13, f) +
-    p('M 38 -31 L 52 -25 L 40 -23 Z', f) +
-    line('M 32 -46 C 38 -64 50 -72 62 -68', f, 3.6) +
-    line('M 26 -47 C 26 -66 34 -78 46 -82', f, 3.6) +
-    (carry ? ell(60, -32, 15, 10, carry, 'transform="rotate(-20 60 -32)"') : '');
+    leg('M 4 -26 L 16 -36 L 24 0', 0.45) +
+    leg('M -4 -24 L -12 -36 L -24 0', 0.45) +
+    leg('M -8 -24 L -30 -36 L -40 0', 0.45) +
+    leg('M 8 -26 L 24 -38 L 38 0') +
+    leg('M 0 -24 L 4 -40 L -6 0') +
+    leg('M -6 -24 L -24 -40 L -48 0') +
+    ell(-42, -32, 25, 16, f, 'transform="rotate(-16 -42 -32)"') +
+    circ(-15, -29, 5, f) +
+    ell(2, -31, 15, 9, f, 'transform="rotate(-10 2 -31)"') +
+    circ(27, -38, 12, f) +
+    p('M 35 -33 L 50 -28 L 37 -26 Z', f) +
+    line('M 30 -48 L 34 -66 L 56 -72', f, 3.4) +
+    line('M 25 -48 L 22 -66 L 42 -80', f, 3.4) +
+    (carry ? ell(58, -32, 16, 8, carry, 'transform="rotate(-24 58 -32)"') : '');
   return place(x, y, s, g, o);
 }
 
@@ -110,22 +113,36 @@ export function eagle(x: number, y: number, s: number, fill: string, o?: Place):
 export function standingLion(x: number, y: number, s: number, body: string, mane?: string, o?: Place & { roar?: boolean }): string {
   const b = ink(body);
   const m = mane ?? b;
+  // A shaggy ring of points around the back of the head, none on the face side.
+  const spikes: string[] = [];
+  for (let i = 0; i < 13; i += 1) {
+    const a = ((62 + i * 19) * Math.PI) / 180;
+    const w = (9 * Math.PI) / 180;
+    const pt = (r: number, aa: number) => `${n(70 + Math.cos(aa) * r)} ${n(-126 + Math.sin(aa) * r)}`;
+    spikes.push(p(`M ${pt(42, a - w)} L ${pt(66, a)} L ${pt(42, a + w)} Z`, m));
+  }
   const jaw = o?.roar
-    ? p('M 98 -150 C 116 -156 134 -146 140 -132 L 120 -124 L 142 -112 C 136 -98 116 -94 100 -102 Z', b)
-    : p('M 98 -150 C 116 -156 136 -146 140 -126 C 140 -108 118 -98 100 -104 Z', b);
+    ? p('M 96 -150 C 116 -156 136 -148 142 -134 L 120 -124 L 144 -112 C 138 -98 118 -94 100 -100 Z', b)
+    : p('M 96 -150 C 116 -154 138 -144 142 -126 C 144 -108 124 -98 104 -100 Z', b);
+  const legs =
+    line('M -72 -80 L -78 -8', b, 21) +
+    line('M -46 -76 L -42 -8', b, 17) +
+    line('M 38 -78 L 42 -8', b, 17) +
+    line('M 62 -82 L 68 -8', b, 21) +
+    ell(-76, -6, 14, 7, b) +
+    ell(-40, -6, 12, 6, b) +
+    ell(46, -6, 12, 6, b) +
+    ell(72, -6, 14, 7, b);
   const g =
-    line('M -88 -92 C -122 -104 -132 -66 -118 -46', b, 8) +
-    ell(-118, -42, 9, 12, b) +
-    box(-84, -78, 22, 78, b, 9) +
-    box(-56, -74, 19, 74, b, 8) +
-    box(34, -76, 19, 76, b, 8) +
-    box(60, -80, 22, 80, b, 9) +
-    p('M -96 -86 C -96 -126 -40 -132 10 -128 C 52 -126 86 -118 90 -90 C 92 -64 62 -56 10 -58 C -40 -60 -96 -54 -96 -86 Z', b) +
-    circ(76, -128, 50, m) +
-    circ(92, -158, 13, m) +
-    circ(96, -128, 30, b) +
-    jaw +
-    circ(84, -160, 9, b);
+    line('M -92 -96 C -126 -108 -136 -70 -122 -50', b, 8) +
+    ell(-122, -44, 9, 13, b) +
+    legs +
+    p('M -98 -92 C -98 -130 -40 -134 10 -132 C 52 -130 84 -124 90 -98 C 92 -74 64 -62 24 -64 C -20 -66 -60 -58 -82 -64 C -96 -68 -98 -80 -98 -92 Z', b) +
+    spikes.join('') +
+    circ(70, -126, 48, m) +
+    circ(94, -124, 29, b) +
+    circ(82, -152, 9, b) +
+    jaw;
   return place(x, y, s, g, o);
 }
 
