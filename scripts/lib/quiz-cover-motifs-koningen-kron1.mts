@@ -757,12 +757,12 @@ export function trumpet(x: number, y: number, s: number, fill: string, o?: Opts)
   return wrap(g, o);
 }
 
-/** A cloak / mantle falling open; (x, y) is its collar. ~110 long. */
+/** A cloak / mantle fluttering down, a loose wavy cloth; (x, y) is its upper left corner. ~110 across. */
 export function mantle(x: number, y: number, s: number, fill: string, o?: Opts): string {
   const g =
-    P(xf('M -28 0 C -12 -10 12 -10 28 0 C 34 24 42 56 52 104 C 38 98 28 108 14 100 C 2 110 -14 100 -26 108 C -38 100 -46 106 -52 100 C -44 64 -38 30 -28 0 Z', x, y, s), fill) +
-    S(xf('M -6 6 C -8 40 -10 70 -14 96', x, y, s), '#FFFFFF', 3 * s, 0.22) +
-    S(xf('M 12 8 C 16 40 20 70 26 94', x, y, s), '#FFFFFF', 3 * s, 0.22);
+    P(xf('M 0 0 C 30 -14 64 12 104 -4 C 112 30 106 64 114 100 C 80 112 46 86 8 104 C 14 70 -6 34 0 0 Z', x, y, s), fill) +
+    S(xf('M 34 4 C 40 36 32 66 38 96', x, y, s), '#FFFFFF', 3 * s, 0.25) +
+    S(xf('M 70 0 C 76 32 70 64 78 98', x, y, s), '#FFFFFF', 3 * s, 0.25);
   return wrap(g, o);
 }
 

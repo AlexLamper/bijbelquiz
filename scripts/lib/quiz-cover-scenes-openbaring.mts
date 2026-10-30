@@ -306,7 +306,7 @@ export const OPENBARING_SCENES: Record<string, Scene> = {
       base(c, { sun: 'none', far: 'none', ground: 'flat', horizon: 512, stars: 40 }),
       c.soft(460, 380, 260, 0.75, '#FFFFFF'),
       circle(460, 390, 104, '#FFFFFF', { opacity: 0.85 }),
-      moon(460, 546, 54, '#FFFFFF', { rot: -90 }),
+      moon(460, 528, 54, '#FFFFFF', { rot: -90 }),
       person(460, 532, 1.4, c.p.fore, 'stand'),
       ...Array.from({ length: 12 }, (_, i) => {
         const a = ((196 + i * (148 / 11)) * Math.PI) / 180;
