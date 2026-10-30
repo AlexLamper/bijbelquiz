@@ -466,6 +466,19 @@ export function ruinedHouse(x: number, y: number, s: number, wall: string, o?: P
   return place(x, y, s, g, o);
 }
 
+/** A pair of sandals seen from above, toes up, standing on (x, y): two soles with crossing straps. 110 tall at s = 1. */
+export function sandalPair(x: number, y: number, s: number, sole: string, strap: string, o?: Place): string {
+  const one = (dx: number, k: number) =>
+    p(
+      `M ${dx} 0 C ${dx - 15 * k} 0 ${dx - 18 * k} -20 ${dx - 15 * k} -40 C ${dx - 12 * k} -56 ${dx - 25 * k} -76 ${dx - 23 * k} -94 ` +
+        `C ${dx - 21 * k} -114 ${dx + 21 * k} -118 ${dx + 23 * k} -96 C ${dx + 25 * k} -78 ${dx + 11 * k} -58 ${dx + 13 * k} -38 C ${dx + 15 * k} -16 ${dx + 14 * k} 0 ${dx} 0 Z`,
+      sole,
+    ) +
+    line(`M ${dx - 20 * k} -84 L ${dx + 20 * k} -66 M ${dx + 21 * k} -86 L ${dx - 18 * k} -64`, strap, 6) +
+    line(`M ${dx - 15 * k} -28 L ${dx + 14 * k} -28`, strap, 6);
+  return place(x, y, s, at(-30, 0, 1, one(0, -1), { rot: -7 }) + at(30, 0, 1, one(0, 1), { rot: 7 }), o);
+}
+
 /** A silver bowl on a foot, heaped with apples. */
 export function fruitBowl(x: number, y: number, s: number, bowlFill: string, fruit: string, o?: Place): string {
   const out: string[] = [];

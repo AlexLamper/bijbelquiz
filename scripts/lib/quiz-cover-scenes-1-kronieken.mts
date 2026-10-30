@@ -29,16 +29,14 @@
  * van de tempel (28); de vrijwillige gaven en Davids gebed (29).
  */
 
-import { G, base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
+import { base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
 import {
-  H,
   W,
   angel,
   chariot,
   circle,
   citySkyline,
   cityWall,
-  cloudBank,
   coin,
   crowd,
   crown,
@@ -59,12 +57,9 @@ import {
   scroll,
   shafts,
   smokeColumn,
-  streaks,
-  tent,
   throne,
   tree,
   well,
-  wheat,
 } from './quiz-cover-primitives.mjs';
 import {
   altar,
@@ -83,7 +78,6 @@ import {
   lyre,
   moon,
   personLeft,
-  pitcher,
   roundShield,
   royalThrone,
   sheep,

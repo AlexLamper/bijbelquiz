@@ -23,11 +23,10 @@
  * bij Ramoth (22).
  */
 
-import { G, base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
+import { base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
 import {
   H,
   W,
-  bird,
   boat,
   circle,
   citySkyline,
@@ -39,7 +38,6 @@ import {
   donkey,
   ellipse,
   fireBed,
-  flame,
   houseBlock,
   lion,
   loaf,
@@ -47,18 +45,15 @@ import {
   path,
   person,
   rect,
-  river,
   rotate,
   ship,
   shafts,
   shrub,
   smokeColumn,
   streaks,
-  tent,
   throne,
   trail,
   tree,
-  vineRow,
   water,
   window as windowFrame,
   basket,
@@ -75,12 +70,10 @@ import {
   cedar,
   cherubPair,
   clothPieces,
-  figureAt,
   goldenCalf,
   horn,
   idol,
   ingots,
-  logPile,
   mirror,
   lying,
   personLeft,

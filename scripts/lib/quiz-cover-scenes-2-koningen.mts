@@ -25,7 +25,7 @@
  * en de tempel verbrand (25).
  */
 
-import { G, base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
+import { base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
 import {
   H,
   W,
@@ -35,16 +35,13 @@ import {
   cityWall,
   cloudBank,
   coin,
-  crowd,
   crown,
   donkey,
   ellipse,
   fireBed,
-  flame,
   goblet,
   horse,
   houseBlock,
-  lamp,
   palm,
   path,
   person,
@@ -53,21 +50,16 @@ import {
   rotate,
   scroll,
   shafts,
-  shrub,
   smokeColumn,
   stars,
-  streaks,
   stump,
   templeFront,
-  tent,
-  throne,
   tower,
   trail,
   tree,
   water,
   window as windowFrame,
   ziggurat,
-  brickWall,
 } from './quiz-cover-primitives.mjs';
 import {
   altar,
@@ -86,7 +78,6 @@ import {
   jar,
   lying,
   mantle,
-  mirror,
   moon,
   offeringChest,
   personLeft,

@@ -592,11 +592,6 @@ export function serpentPole(x: number, y: number, s: number, pole: string, snake
   return wrap(g, o);
 }
 
-/** A shepherd's crook standing upright; rotate it to lay it down. ~190 tall. */
-export function crook(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  return wrap(S(xf('M 0 0 L 0 -164 C 0 -196 40 -196 40 -168', x, y, s), fill, 8 * s), o);
-}
-
 /** A large key; (x, y) is the centre of its ring, the bit to the right. */
 export function key(x: number, y: number, s: number, fill: string, o?: Opts): string {
   const g =
@@ -751,12 +746,6 @@ export function rubble(rand: () => number, x: number, y: number, w: number, s: n
   return wrap(out.join(''), o);
 }
 
-/** A long straight trumpet; mouthpiece at (x, y), bell to the right. */
-export function trumpet(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  const g = rect(x, y - 3.5 * s, 120 * s, 7 * s, fill, { rx: 3 * s }) + P(xf('M 110 -4 L 140 -18 L 140 18 L 110 4 Z', x, y, s), fill) + ellipse(x + 140 * s, y, 5 * s, 18 * s, fill);
-  return wrap(g, o);
-}
-
 /** A cloak / mantle fluttering down, a loose wavy cloth; (x, y) is its upper left corner. ~110 across. */
 export function mantle(x: number, y: number, s: number, fill: string, o?: Opts): string {
   const g =
@@ -776,14 +765,3 @@ export function wallWithWindow(fill: string, wx: number, wy: number, ww: number,
   return `<path d="${d}" fill="${fill}" fill-rule="evenodd"${op(o)}/>`;
 }
 
-/** A pair of brass weights / silver talents: round loaves of metal. */
-export function talents(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  const g =
-    ellipse(x - 30 * s, y - 14 * s, 34 * s, 14 * s, fill) +
-    rect(x - 64 * s, y - 14 * s, 68 * s, 14 * s, fill) +
-    ellipse(x - 30 * s, y - 28 * s, 34 * s, 12 * s, fill, { opacity: 0.85 }) +
-    ellipse(x + 34 * s, y - 14 * s, 30 * s, 12 * s, fill) +
-    rect(x + 4 * s, y - 14 * s, 60 * s, 14 * s, fill) +
-    ellipse(x + 34 * s, y - 26 * s, 30 * s, 10 * s, fill, { opacity: 0.85 });
-  return wrap(g, o);
-}
