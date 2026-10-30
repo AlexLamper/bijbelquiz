@@ -128,6 +128,38 @@ import { TIM2_SCENES } from './quiz-cover-scenes-2-timotheus.mjs';
 import { TITUS_SCENES } from './quiz-cover-scenes-titus.mjs';
 import { FILEMON_SCENES } from './quiz-cover-scenes-filemon.mjs';
 import { HEBREEEN_SCENES } from './quiz-cover-scenes-hebreeen.mjs';
+import { GENESIS_SCENES } from './quiz-cover-scenes-genesis.mjs';
+import { EXODUS_SCENES } from './quiz-cover-scenes-exodus.mjs';
+import { LEVITICUS_SCENES } from './quiz-cover-scenes-leviticus.mjs';
+import { NUMERI_SCENES } from './quiz-cover-scenes-numeri.mjs';
+import { DEUTERONOMIUM_SCENES } from './quiz-cover-scenes-deuteronomium.mjs';
+import { JOZUA_SCENES } from './quiz-cover-scenes-jozua.mjs';
+import { RICHTEREN_SCENES } from './quiz-cover-scenes-richteren.mjs';
+import { SAMUEL1_SCENES } from './quiz-cover-scenes-1-samuel.mjs';
+import { SAMUEL2_SCENES } from './quiz-cover-scenes-2-samuel.mjs';
+import { KONINGEN1_SCENES } from './quiz-cover-scenes-1-koningen.mjs';
+import { KONINGEN2_SCENES } from './quiz-cover-scenes-2-koningen.mjs';
+import { KRONIEKEN1_SCENES } from './quiz-cover-scenes-1-kronieken.mjs';
+import { KRONIEKEN2_SCENES } from './quiz-cover-scenes-2-kronieken.mjs';
+import { EZRA_SCENES } from './quiz-cover-scenes-ezra.mjs';
+import { NEHEMIA_SCENES } from './quiz-cover-scenes-nehemia.mjs';
+import { PSALMEN1_SCENES } from './quiz-cover-scenes-psalmen-1.mjs';
+import { PSALMEN2_SCENES } from './quiz-cover-scenes-psalmen-2.mjs';
+import { PSALMEN3_SCENES } from './quiz-cover-scenes-psalmen-3.mjs';
+import { SPREUKEN_SCENES } from './quiz-cover-scenes-spreuken.mjs';
+import { JEREMIA_SCENES } from './quiz-cover-scenes-jeremia.mjs';
+import { EZECHIEL_SCENES } from './quiz-cover-scenes-ezechiel.mjs';
+import { HOSEA_SCENES } from './quiz-cover-scenes-hosea.mjs';
+import { AMOS_SCENES } from './quiz-cover-scenes-amos.mjs';
+import { MICHA_SCENES } from './quiz-cover-scenes-micha.mjs';
+import { ZACHARIA_SCENES } from './quiz-cover-scenes-zacharia.mjs';
+import { KLEINE_PROFETEN_SCENES } from './quiz-cover-scenes-kleine-profeten.mjs';
+import { JAKOBUS_SCENES } from './quiz-cover-scenes-jakobus.mjs';
+import { PETRUS1_SCENES } from './quiz-cover-scenes-1-petrus.mjs';
+import { PETRUS2_SCENES } from './quiz-cover-scenes-2-petrus.mjs';
+import { JOHANNES1_SCENES } from './quiz-cover-scenes-1-johannes.mjs';
+import { KLEINE_BRIEVEN_SCENES } from './quiz-cover-scenes-kleine-brieven.mjs';
+import { OPENBARING_SCENES } from './quiz-cover-scenes-openbaring.mjs';
 
 // Re-exported so nothing that imported these from here has to move.
 export { GROUND, base, contextFor, fg, paletteFor } from './quiz-cover-scene-kit.mjs';
@@ -1972,6 +2004,38 @@ export const SCENES: Record<string, Scene> = {
   ...TITUS_SCENES,
   ...FILEMON_SCENES,
   ...HEBREEEN_SCENES,
+  ...GENESIS_SCENES,
+  ...EXODUS_SCENES,
+  ...LEVITICUS_SCENES,
+  ...NUMERI_SCENES,
+  ...DEUTERONOMIUM_SCENES,
+  ...JOZUA_SCENES,
+  ...RICHTEREN_SCENES,
+  ...SAMUEL1_SCENES,
+  ...SAMUEL2_SCENES,
+  ...KONINGEN1_SCENES,
+  ...KONINGEN2_SCENES,
+  ...KRONIEKEN1_SCENES,
+  ...KRONIEKEN2_SCENES,
+  ...EZRA_SCENES,
+  ...NEHEMIA_SCENES,
+  ...PSALMEN1_SCENES,
+  ...PSALMEN2_SCENES,
+  ...PSALMEN3_SCENES,
+  ...SPREUKEN_SCENES,
+  ...JEREMIA_SCENES,
+  ...EZECHIEL_SCENES,
+  ...HOSEA_SCENES,
+  ...AMOS_SCENES,
+  ...MICHA_SCENES,
+  ...ZACHARIA_SCENES,
+  ...KLEINE_PROFETEN_SCENES,
+  ...JAKOBUS_SCENES,
+  ...PETRUS1_SCENES,
+  ...PETRUS2_SCENES,
+  ...JOHANNES1_SCENES,
+  ...KLEINE_BRIEVEN_SCENES,
+  ...OPENBARING_SCENES,
   ...HOOGLIED_SCENES,
   ...PREDIKER_SCENES,
   ...KLAAGLIEDEREN_SCENES,
@@ -1996,6 +2060,38 @@ export const SCENE_MODULES: Record<string, Record<string, Scene>> = {
   titus: TITUS_SCENES,
   filemon: FILEMON_SCENES,
   hebreeen: HEBREEEN_SCENES,
+  genesis: GENESIS_SCENES,
+  exodus: EXODUS_SCENES,
+  leviticus: LEVITICUS_SCENES,
+  numeri: NUMERI_SCENES,
+  deuteronomium: DEUTERONOMIUM_SCENES,
+  jozua: JOZUA_SCENES,
+  richteren: RICHTEREN_SCENES,
+  '1-samuel': SAMUEL1_SCENES,
+  '2-samuel': SAMUEL2_SCENES,
+  '1-koningen': KONINGEN1_SCENES,
+  '2-koningen': KONINGEN2_SCENES,
+  '1-kronieken': KRONIEKEN1_SCENES,
+  '2-kronieken': KRONIEKEN2_SCENES,
+  ezra: EZRA_SCENES,
+  nehemia: NEHEMIA_SCENES,
+  'psalmen-1': PSALMEN1_SCENES,
+  'psalmen-2': PSALMEN2_SCENES,
+  'psalmen-3': PSALMEN3_SCENES,
+  spreuken: SPREUKEN_SCENES,
+  jeremia: JEREMIA_SCENES,
+  ezechiel: EZECHIEL_SCENES,
+  hosea: HOSEA_SCENES,
+  amos: AMOS_SCENES,
+  micha: MICHA_SCENES,
+  zacharia: ZACHARIA_SCENES,
+  'kleine-profeten': KLEINE_PROFETEN_SCENES,
+  jakobus: JAKOBUS_SCENES,
+  '1-petrus': PETRUS1_SCENES,
+  '2-petrus': PETRUS2_SCENES,
+  '1-johannes': JOHANNES1_SCENES,
+  'kleine-brieven': KLEINE_BRIEVEN_SCENES,
+  openbaring: OPENBARING_SCENES,
   hooglied: HOOGLIED_SCENES,
   prediker: PREDIKER_SCENES,
   klaagliederen: KLAAGLIEDEREN_SCENES,

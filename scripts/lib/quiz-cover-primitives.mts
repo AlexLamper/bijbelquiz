@@ -130,12 +130,38 @@ let hillMap: Record<string, string> = {};
 export function setHills(map: Record<string, string>): void {
   hillMap = map;
 }
+/**
+ * Arguments per absolute path command, and which of them are x coordinates.
+ * An arc carries its radii, rotation and two flags before its end point; read
+ * as "every second number is x", those flags (0 and 1) made any small arc
+ * shape right of x=240 measure as landform, and a throne, a gate or a tomb
+ * drawn there turned into a pale hill.
+ */
+const X_ARGS: Record<string, { n: number; xs: number[] }> = {
+  M: { n: 2, xs: [0] },
+  L: { n: 2, xs: [0] },
+  T: { n: 2, xs: [0] },
+  H: { n: 1, xs: [0] },
+  V: { n: 1, xs: [] },
+  C: { n: 6, xs: [0, 2, 4] },
+  S: { n: 4, xs: [0, 2] },
+  Q: { n: 4, xs: [0, 2] },
+  A: { n: 7, xs: [5] },
+};
+
 function pathWidth(d: string): number {
-  const xs: number[] = [];
-  const nums = d.replace(/[A-Za-z]/g, ' ').trim().split(/[\s,]+/).map(Number);
-  // Absolute commands only carry x at even positions; good enough for a size test.
+  // Relative commands would need the running pen position; the shapes this
+  // test is for are all drawn with absolute ones.
   if (/[a-z]/.test(d.replace(/e/g, ''))) return 0;
-  for (let i = 0; i < nums.length; i += 2) if (Number.isFinite(nums[i])) xs.push(nums[i]);
+  const xs: number[] = [];
+  for (const [, command, args] of d.matchAll(/([A-Z])([^A-Z]*)/g)) {
+    const spec = X_ARGS[command];
+    if (!spec) continue;
+    const nums = args.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    for (let i = 0; i + spec.n <= nums.length; i += spec.n) {
+      for (const k of spec.xs) if (Number.isFinite(nums[i + k])) xs.push(nums[i + k]);
+    }
+  }
   return xs.length ? Math.max(...xs) - Math.min(...xs) : 0;
 }
 
@@ -333,10 +359,16 @@ export function halo(x: number, y: number, r: number, fill: string, rings = 3): 
   return out.join('');
 }
 
+/**
+ * A crescent moon: the left half of the disc, hollowed by a flatter arc of a
+ * larger circle through the same two tips. (The inner arc used to have radius
+ * 0.78r - shorter than half the chord, which SVG scales back up to r, so it
+ * retraced the outer edge and every moon drawn by `base` had no area at all.)
+ */
 export function crescent(x: number, y: number, r: number, fill: string): string {
   return path(
     `M ${r1(x)} ${r1(y - r)} A ${r1(r)} ${r1(r)} 0 1 0 ${r1(x)} ${r1(y + r)}` +
-      ` A ${r1(r * 0.78)} ${r1(r * 0.78)} 0 1 1 ${r1(x)} ${r1(y - r)} Z`,
+      ` A ${r1(r * 1.3)} ${r1(r * 1.3)} 0 0 1 ${r1(x)} ${r1(y - r)} Z`,
     fill,
   );
 }
