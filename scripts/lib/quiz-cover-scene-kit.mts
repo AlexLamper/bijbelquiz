@@ -86,14 +86,24 @@ export const GROUP_PALETTES: Record<Group, GroupPalette> = {
   thema: { skyTop: '#D9E2F1', skyLow: '#F6F1E4', far: '#CCD6EA', mid: '#B9C7E2', near: '#A3B5D7', ground: '#93A7CE', fore: '#7C92BD', figure: '#2E3B57', accent: GOLD, accent2: '#F6E2A6' },
 };
 
+// Law and the historical books share the sand palette; the prophets (and the
+// visions of Openbaring) the coral one; every letter the stone one.
 const BOOK_GROUP: Record<string, Group> = {
-  genesis: 'wet', exodus: 'wet', ruth: 'wet', esther: 'wet',
+  genesis: 'wet', exodus: 'wet', leviticus: 'wet', numeri: 'wet', deuteronomium: 'wet',
+  jozua: 'wet', richteren: 'wet', ruth: 'wet', '1-samuel': 'wet', '2-samuel': 'wet',
+  '1-koningen': 'wet', '2-koningen': 'wet', '1-kronieken': 'wet', '2-kronieken': 'wet',
+  ezra: 'wet', nehemia: 'wet', esther: 'wet',
   prediker: 'poezie', hooglied: 'poezie', klaagliederen: 'poezie', 'het-boek-spreuken': 'poezie', spreuken: 'poezie', psalmen: 'poezie',
-  jesaja: 'profeten', daniel: 'profeten', jona: 'profeten', habakuk: 'profeten',
+  jesaja: 'profeten', jeremia: 'profeten', ezechiel: 'profeten', daniel: 'profeten',
+  hosea: 'profeten', joel: 'profeten', amos: 'profeten', obadja: 'profeten', jona: 'profeten', micha: 'profeten',
+  nahum: 'profeten', habakuk: 'profeten', zefanja: 'profeten', haggai: 'profeten', zacharia: 'profeten', maleachi: 'profeten',
+  openbaring: 'profeten',
   matteus: 'evangelien', marcus: 'evangelien', lucas: 'evangelien', johannes: 'evangelien', handelingen: 'evangelien',
   romeinen: 'brieven', '1-korinthe': 'brieven', '2-korinthe': 'brieven', galaten: 'brieven', efeze: 'brieven',
   filippenzen: 'brieven', kolossenzen: 'brieven', '1-thessalonicenzen': 'brieven', '2-thessalonicenzen': 'brieven',
   '1-timotheus': 'brieven', '2-timotheus': 'brieven', titus: 'brieven', filemon: 'brieven', hebreeen: 'brieven',
+  jakobus: 'brieven', '1-petrus': 'brieven', '2-petrus': 'brieven',
+  '1-johannes': 'brieven', '2-johannes': 'brieven', '3-johannes': 'brieven', judas: 'brieven',
 };
 
 /** The book a slug belongs to: `jesaja-bijbelquiz-deel-4` -> `jesaja`, `hooglied-deel-1` -> `hooglied`. */
