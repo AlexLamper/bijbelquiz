@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, Quiz } from '@/database';
 import { quizThumbnailUrl, resolveQuizImageUrl } from '@/lib/quiz-image';
+import { sortQuizzes } from '@/lib/quiz-order';
 
 interface IncomingAnswer {
   text?: unknown;
@@ -60,7 +61,11 @@ export async function GET() {
     await connectDB();
     // Support both new 'approved' status and legacy quizzes with missing status
     const filter = { $or: [{ status: 'approved' }, { status: { $exists: false } }] };
-    const quizzes = await Quiz.find(filter).sort({ createdAt: -1 }).lean();
+    // Bible order, chapters as numbers: what older app builds list as-is.
+    const quizzes = sortQuizzes(await Quiz.find(filter).lean(), (quiz) => ({
+      title: quiz.title,
+      slug: quiz.slug,
+    }));
     // Guarantee every quiz has a cover: explicit imageUrl wins, otherwise a
     // stable id-derived fallback so the app never renders a blank card.
     const withImages = quizzes.map((quiz) => {

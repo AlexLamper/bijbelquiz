@@ -1,7 +1,10 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 
+import { getServerSession } from 'next-auth';
+
 import { QuizzenBrowser } from '@/components/web2/browsing/QuizzenBrowser';
+import { authOptions } from '@/lib/auth';
 import { loadBrowseCatalogue } from '@/lib/quiz-browse';
 import { getSiteBaseUrl } from '@/lib/sitemap';
 
@@ -26,8 +29,10 @@ export const dynamic = 'force-dynamic';
 const SEARCH_DESCRIPTION_LENGTH = 160;
 
 export default async function QuizzesPage() {
-  // The library is the same for everybody: no per-reader progress on these cards.
-  const { quizzes } = await loadBrowseCatalogue();
+  // A signed-in reader sees which quizzes they already played; a guest gets
+  // the same library without marks.
+  const session = await getServerSession(authOptions).catch(() => null);
+  const { quizzes } = await loadBrowseCatalogue(session?.user?.id);
   const cards = quizzes.map((quiz) => ({
     ...quiz,
     description: quiz.description ? quiz.description.slice(0, SEARCH_DESCRIPTION_LENGTH) : null,

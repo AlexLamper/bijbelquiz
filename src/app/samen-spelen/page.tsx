@@ -9,6 +9,7 @@ import { authOptions } from '@/lib/auth';
 import { connectDB, Category, Quiz, User } from '@/database';
 import { MULTIPLAYER_MAX_PLAYERS } from '@/lib/premium-benefits';
 import { getPremiumSnapshot } from '@/lib/premium-state';
+import { sortQuizzes } from '@/lib/quiz-order';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ interface RawUserDocument {
 interface RawQuizDocument {
   _id: unknown;
   title: unknown;
+  slug?: unknown;
   questionCount?: unknown;
   questions?: Array<{ bibleReference?: string }>;
   isPremium?: unknown;
@@ -65,8 +67,7 @@ export default async function SamenSpelenPage({ searchParams }: PageProps) {
     Quiz.find({ status: 'approved' })
       // Only the references are needed (for the chapter); the question count
       // falls out of the array length.
-      .select('_id title questions.bibleReference questionCount isPremium categoryId')
-      .sort({ isPremium: 1, sortOrder: 1, createdAt: -1 })
+      .select('_id title slug questions.bibleReference questionCount isPremium categoryId')
       // Every approved quiz must be reachable from the picker - the client
       // does its own search/filtering, so nothing is truncated here.
       .lean() as unknown as RawQuizDocument[],
@@ -79,7 +80,14 @@ export default async function SamenSpelenPage({ searchParams }: PageProps) {
     .map((category) => ({ slug: String(category.slug), title: String(category.title) }))
     .sort((a, b) => a.title.localeCompare(b.title, 'nl'));
 
-  const quizzes: SamenQuiz[] = rawQuizzes.map((quiz) => {
+  // Bible order, chapters as numbers (Genesis 1, 2, 3 ...), like the library.
+  const orderedQuizzes = sortQuizzes(rawQuizzes, (quiz) => ({
+    title: String(quiz.title ?? ''),
+    slug: typeof quiz.slug === 'string' ? quiz.slug : null,
+    chapter: resolveQuizPassage(Array.isArray(quiz.questions) ? quiz.questions : [])?.chapter ?? null,
+  }));
+
+  const quizzes: SamenQuiz[] = orderedQuizzes.map((quiz) => {
     const questions = Array.isArray(quiz.questions) ? quiz.questions : [];
     const questionCount = typeof quiz.questionCount === 'number' ? quiz.questionCount : questions.length;
     const category = quiz.categoryId ? categoriesById.get(String(quiz.categoryId)) : undefined;

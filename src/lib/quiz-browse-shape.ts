@@ -10,6 +10,7 @@
  */
 
 import { bookByCode, bookOrder, type Testament } from '@/lib/bible-books';
+import { sortQuizzes } from '@/lib/quiz-order';
 import { normalizeSearchText } from '@/lib/quiz-series';
 
 export interface BrowseBook {
@@ -45,6 +46,13 @@ export interface BrowseQuiz {
   /** Distinct players; 0 without data. Only used for ordering. */
   players: number;
   progress: BrowseProgress | null;
+}
+
+/** The best result of a quiz the reader finished, for the card's played state; null when not played. */
+export function playedOf(quiz: Pick<BrowseQuiz, 'progress'>): { correct: number; total: number } | null {
+  const progress = quiz.progress;
+  if (!progress || progress.attempts < 1) return null;
+  return { correct: progress.bestCorrect, total: progress.total };
 }
 
 /** Landing page of a quiz. */
@@ -142,13 +150,27 @@ export function bookGroups(quizzes: BrowseQuiz[], testament?: Testament): BookGr
     .map((group) => ({ ...group, quizzes: sortByChapter(group.quizzes) }));
 }
 
+/**
+ * Bible order (`compareQuizOrder`): the book, then Hoofdstuk 1, 2, 3 ... by the
+ * number in the title, a quiz about the whole book first.
+ */
 export function sortByChapter(quizzes: BrowseQuiz[]): BrowseQuiz[] {
-  return [...quizzes].sort(
-    (a, b) =>
-      (a.chapterFrom ?? 999) - (b.chapterFrom ?? 999) ||
-      (a.chapterTo ?? 999) - (b.chapterTo ?? 999) ||
-      a.title.localeCompare(b.title, 'nl', { numeric: true }),
-  );
+  return sortQuizzes(quizzes, (quiz) => ({
+    title: quiz.title,
+    slug: quiz.slug,
+    book: quiz.book?.code ?? null,
+    chapter: chapterOfStory(quiz.chapterFrom, quiz.chapterTo),
+  }));
+}
+
+/**
+ * Where a quiz without a chapter in its title sits in its book: the first
+ * chapter its questions cite, as long as they stay within a short run. A quiz
+ * that walks through the whole book has none and goes first.
+ */
+export function chapterOfStory(chapterFrom: number | null, chapterTo: number | null): number | null {
+  if (chapterFrom === null) return null;
+  return (chapterTo ?? chapterFrom) - chapterFrom > MAX_SPAN_FOR_CHAPTER ? null : chapterFrom;
 }
 
 export interface ThemeGroup {

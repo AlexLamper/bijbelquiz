@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { connectDB, Quiz, Category } from '@/database';
 import { quizThumbnailUrl, resolveQuizImageUrl } from '@/lib/quiz-image';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
+import { bookByName } from '@/lib/bible-books';
+import { bookCodeFromSlug, sortQuizzes } from '@/lib/quiz-order';
 
 /**
  * GET /api/mobile/quizzes - the catalogue the app's library, home screen and
@@ -41,7 +43,6 @@ export async function GET() {
             isActive: { $ne: false },
           },
         },
-        { $sort: { createdAt: -1 } },
         {
           $project: {
             title: 1,
@@ -101,8 +102,18 @@ export async function GET() {
       };
     });
 
-    cached = { expiresAt: Date.now() + CACHE_TTL_MS, body };
-    return respond(body);
+    // Bible order - Genesis 1, 2, 3 ... Openbaring, then the themes - so every
+    // list in the app (library, room setup) reads in order, including builds
+    // that show the catalogue as it arrives.
+    const ordered = sortQuizzes(body, (quiz) => ({
+      title: quiz.title,
+      slug: quiz.slug,
+      book: bookCodeFromSlug(quiz.slug) ?? bookByName(quiz.passage?.book)?.code ?? null,
+      chapter: quiz.passage?.chapter ?? null,
+    }));
+
+    cached = { expiresAt: Date.now() + CACHE_TTL_MS, body: ordered };
+    return respond(ordered);
   } catch (error) {
     console.error('Mobile API - Quizzes Error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });

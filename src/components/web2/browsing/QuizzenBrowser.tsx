@@ -14,6 +14,7 @@ import {
   countLabel,
   pickPerTestament,
   pickPopular,
+  playedOf,
   quizHref,
   quizzesInCategory,
   searchBooks,
@@ -439,6 +440,7 @@ function QuizGrid({ quizzes }: { quizzes: BrowseQuiz[] }) {
           kickerTone="muted"
           imageUrl={quiz.cover}
           seed={quiz.slug}
+          played={playedOf(quiz)}
         />
       ))}
     </div>

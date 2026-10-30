@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getServerSession } from 'next-auth';
-import { ChevronRight, CircleHelp, Clock, Trophy } from 'lucide-react';
+import { Check, ChevronRight, CircleHelp, Clock, Trophy } from 'lucide-react';
 
 import { BoltIcon, Breadcrumbs, Button, QuizCover, estimateMinutes, type Crumb } from '@/components/bq';
 import { BookIcon, SwordsIcon } from '@/components/web2/browsing/illustrations';
@@ -19,6 +19,7 @@ import { loadBrowseCatalogue } from '@/lib/quiz-browse';
 import { playHref, quizHref, sortByChapter, themeGroups, type BrowseQuiz } from '@/lib/quiz-browse-shape';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { getSiteBaseUrl } from '@/lib/sitemap';
+import { cn } from '@/lib/utils';
 import { quizzenHref } from '@/components/web2/browsing/quizzen-view';
 
 interface PageProps {
@@ -334,15 +335,26 @@ export default async function QuizLandingPage({ params }: PageProps) {
                     <li key={entry.id}>
                       <Link
                         href={quizHref(entry)}
-                        className="flex h-16 items-center gap-3 border-t border-line-soft px-5 text-ink no-underline hover:bg-chip hover:text-ink"
+                        className={cn(
+                          'flex h-16 items-center gap-3 border-t border-line-soft px-5 text-ink no-underline hover:text-ink',
+                          played ? 'bg-green-tint hover:bg-green-tint/70' : 'hover:bg-chip',
+                        )}
                       >
-                        <span className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-lapis-tint text-[15px] font-extrabold text-lapis">
-                          {entry.chapterFrom ?? index + 1}
-                        </span>
+                        {played ? (
+                          <span className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-green text-white" aria-hidden="true">
+                            <Check className="size-5" strokeWidth={3.2} />
+                          </span>
+                        ) : (
+                          <span className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-lapis-tint text-[15px] font-extrabold text-lapis">
+                            {entry.chapterFrom ?? index + 1}
+                          </span>
+                        )}
                         <span className="flex min-w-0 flex-grow flex-col">
                           <span className="truncate text-[15px] font-bold">{entry.title}</span>
-                          <span className="truncate text-[13px] font-semibold text-ink-muted">
-                            {[entry.reference, `${entry.questionCount} ${entry.questionCount === 1 ? 'vraag' : 'vragen'}`].filter(Boolean).join(' · ')}
+                          <span className={cn('truncate text-[13px] font-semibold', played ? 'font-extrabold text-green-text' : 'text-ink-muted')}>
+                            {[entry.reference, played ? 'Gespeeld' : `${entry.questionCount} ${entry.questionCount === 1 ? 'vraag' : 'vragen'}`]
+                              .filter(Boolean)
+                              .join(' · ')}
                           </span>
                         </span>
                         {played ? (

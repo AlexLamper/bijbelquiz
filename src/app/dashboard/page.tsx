@@ -23,6 +23,7 @@ import {
   bookGroups,
   continueInBook,
   pickPopular,
+  playedOf,
   quizHref,
   referenceFor,
   themeGroups,
@@ -190,6 +191,7 @@ export default async function DashboardPage() {
                     kickerTone={KICKER_TONES[index % KICKER_TONES.length]}
                     imageUrl={quiz.cover}
                     seed={quiz.slug}
+                    played={playedOf(quiz)}
                   />
                 ))}
               </div>

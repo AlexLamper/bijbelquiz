@@ -207,6 +207,12 @@ export function bookBySlug(slug: string | null | undefined): BibleBook | null {
   return BY_SLUG.get(slug.toLowerCase()) ?? null;
 }
 
+/** The book for a display name ("Daniël", "1 Korintiërs"), or null for anything unrecognised. */
+export function bookByName(name: string | null | undefined): BibleBook | null {
+  if (!name) return null;
+  return BY_SLUG.get(slugify(name)) ?? null;
+}
+
 /** Position in the canon, 0-based; 999 for unknown so it sorts last. */
 export function bookOrder(code: string | null | undefined): number {
   if (!code) return 999;

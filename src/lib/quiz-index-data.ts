@@ -17,7 +17,9 @@ import { connectDB, Quiz, Category, UserProgress } from '@/database';
 import { BIBLE_BOOKS, bookByCode, type BibleBook } from '@/lib/bible-books';
 import { resolveQuizImageUrl } from '@/lib/quiz-image';
 import { buildQuizProgressMap, type QuizProgressSummary } from '@/lib/quiz-progress';
-import { readSeries } from '@/lib/quiz-series';
+import { chapterOfStory } from '@/lib/quiz-browse-shape';
+import { bookCodeFromSlug, sortQuizzes } from '@/lib/quiz-order';
+import { partMarker, readSeries } from '@/lib/quiz-series';
 
 export interface QuizIndexCategory {
   _id: string;
@@ -125,6 +127,32 @@ function placeInBible(raw: RawQuiz): Pick<QuizIndexQuiz, 'book' | 'bookTitle' | 
   return { book: book.code, bookTitle: book.title, chapterFrom: from, chapterTo: to };
 }
 
+/**
+ * `placeInBible`, corrected by what the quiz says about itself. A chapter quiz
+ * ("Jesaja bijbelquiz - Hoofdstuk 16") is about the chapter its title names,
+ * even when a question also cites the chapter before - otherwise the card reads
+ * "JESAJA 15" above "Hoofdstuk 16" and the quiz sorts one place too early. A
+ * quiz whose questions carry no references is still filed under the book its
+ * series slug names.
+ */
+function placeInBibleByTitle(
+  raw: RawQuiz,
+  part: number,
+): Pick<QuizIndexQuiz, 'book' | 'bookTitle' | 'chapterFrom' | 'chapterTo'> {
+  const placed = placeInBible(raw);
+  const slugBook = bookByCode(bookCodeFromSlug(raw.slug));
+  const isChapterQuiz = part > 0 && /^hoofdstuk\b/i.test(partMarker(raw.title) ?? '');
+
+  if (!placed.book && slugBook) {
+    const chapter = isChapterQuiz ? part : null;
+    return { book: slugBook.code, bookTitle: slugBook.title, chapterFrom: chapter, chapterTo: chapter };
+  }
+  if (placed.book && isChapterQuiz && (!slugBook || slugBook.code === placed.book)) {
+    return { ...placed, chapterFrom: part, chapterTo: part };
+  }
+  return placed;
+}
+
 export interface LoadQuizIndexOptions {
   /**
    * Extra conditions on the quizzes, ANDed with the approved-status filter -
@@ -173,7 +201,6 @@ export async function loadQuizIndex(userId?: string, options: LoadQuizIndexOptio
         },
       },
     },
-    { $sort: { isPremium: 1, title: 1 } },
   ])) as RawQuiz[];
 
   const categories = await Category.find({ isActive: true }).sort({ sortOrder: 1 }).lean();
@@ -215,13 +242,21 @@ export async function loadQuizIndex(userId?: string, options: LoadQuizIndexOptio
           ? { _id: String(raw.categoryId._id), title: raw.categoryId.title ?? '' }
           : undefined,
       imageUrl: resolveQuizImageUrl(raw),
-      ...placeInBible(raw),
+      ...placeInBibleByTitle(raw, series.part),
       seriesKey: series.key,
       seriesLabel: series.label,
       part: series.part,
       progress: progressByQuizId[id],
     };
   });
+
+  // Canon, then chapter by number: the order every page that lists these keeps.
+  const ordered = sortQuizzes(quizzes, (quiz) => ({
+    title: quiz.title,
+    slug: quiz.slug,
+    book: quiz.book,
+    chapter: chapterOfStory(quiz.chapterFrom, quiz.chapterTo),
+  }));
 
   const covered = new Map<string, { count: number; chapters: Set<number> }>();
   for (const quiz of quizzes) {
@@ -246,7 +281,7 @@ export async function loadQuizIndex(userId?: string, options: LoadQuizIndexOptio
   });
 
   return {
-    quizzes: JSON.parse(JSON.stringify(quizzes)),
+    quizzes: JSON.parse(JSON.stringify(ordered)),
     categories: JSON.parse(JSON.stringify(categories)),
     books,
   };
