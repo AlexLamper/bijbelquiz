@@ -828,9 +828,9 @@ export const PSALMEN2_SCENES: Record<string, Scene> = {
         '#FFFFFF',
         { opacity: 0.4 },
       ),
-      person(640, 542, 1.65, c.p.fore, 'walk'),
-      c.soft(722, 432, 110, 0.6, c.p.accent),
-      lamp(716, 448, 2.3, c.p.accent, c.a.accent2),
+      person(630, 542, 1.65, c.p.fore, 'walk'),
+      c.soft(760, 400, 120, 0.6, c.p.accent),
+      oilLamp(704, 450, 1.0, c.p.accent, c.a.accent2),
       fg(c, 690, 14),
     ],
   },
@@ -1029,8 +1029,8 @@ export const PSALMEN2_SCENES: Record<string, Scene> = {
     draw: (c) => {
       const m1 = rockCol(c, 0.15);
       const m2 = rockCol(c, 0.05);
-      const w1 = mix(m1, c.p.accent, 0.35);
-      const w2 = mix(m2, c.p.accent, 0.35);
+      const w1 = mix(m1, '#FFFFFF', 0.45);
+      const w2 = mix(m2, '#FFFFFF', 0.45);
       return [
         base(c, { sun: 'none', far: 'none', ground: 'flat', horizon: 486 }),
         cloudBank(c.rand, 704, 150, 2.8, c.p.mid, { opacity: 0.4 }),

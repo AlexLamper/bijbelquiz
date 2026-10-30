@@ -22,14 +22,13 @@ import {
   line,
   openBook,
   p,
-  sheaf as aSheaf,
   sheep as aSheep,
   star4 as aStar4,
   throne as aThrone,
   wheatStalk,
   type Pose as FigurePose,
 } from './cover-options/shapes.mjs';
-import { H, W, ink } from './quiz-cover-primitives.mjs';
+import { ink } from './quiz-cover-primitives.mjs';
 
 type At = { flip?: boolean; rot?: number; opacity?: number };
 
@@ -221,11 +220,6 @@ export function wheatField(rand: () => number, x0: number, x1: number, y: number
     out.push(at(x, y + rand() * 8, 1, wheatStalk(h * (0.8 + rand() * 0.35), stem, grain), { rot: (rand() - 0.5) * 16 }));
   }
   return out.join('');
-}
-
-/** A bound sheaf of wheat (option-A shape); ~200 tall at s = 1. */
-export function sheafA(x: number, y: number, s: number, stem: string, grain: string, band: string): string {
-  return at(x, y, s, aSheaf(stem, grain, band));
 }
 
 /** A spring welling up: a jet with arcs falling either side into a pool. `(x, y)` is the source. */
@@ -650,14 +644,4 @@ export function crag(x: number, y: number, w: number, h: number, fill: string, e
     ? line(`M ${r1(x - a * 0.6)} ${r1(y - h * 0.62)} L ${r1(x - a * 0.2)} ${r1(y - h * 0.58)} M ${r1(x + a * 0.1)} ${r1(y - h * 0.4)} L ${r1(x + a * 0.6)} ${r1(y - h * 0.44)}`, edge, 4, 'opacity="0.35"')
     : '';
   return p(d, fill) + ledges;
-}
-
-/** Mirror any fragment about the vertical line x. */
-export function mirror(x: number, inner: string): string {
-  return `<g transform="translate(${r1(2 * x)} 0) scale(-1 1)">${inner}</g>`;
-}
-
-/** A flat wash over the whole frame (a darker sky, a dimmed night). */
-export function wash(fill: string, opacity: number): string {
-  return box(0, 0, W, H, fill, 0, `opacity="${opacity}"`);
 }

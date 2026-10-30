@@ -497,15 +497,27 @@ export function vineLeaf(x: number, y: number, s: number, fill: string): string 
   );
 }
 
-/** A wide nomad tent with two poles and a dark open door; ~180 wide, ~80 tall at s = 1. */
+/** A pavilion tent seen from the front: one pole, sloping eaves, guy ropes and a dark open door; ~190 wide, ~95 tall at s = 1. */
 export function tentWide(x: number, y: number, s: number, fill: string, door: string): string {
   const X = (v: number) => r1(x + v * s);
   const Y = (v: number) => r1(y + v * s);
   return (
-    stroke(`M ${X(-40)} ${Y(-76)} L ${X(-112)} ${Y(0)} M ${X(40)} ${Y(-80)} L ${X(112)} ${Y(0)}`, fill, 2.5 * s, 0.8) +
-    path(`M ${X(-92)} ${Y(0)} L ${X(-78)} ${Y(-44)} L ${X(-40)} ${Y(-76)} L ${X(0)} ${Y(-60)} L ${X(40)} ${Y(-80)} L ${X(80)} ${Y(-46)} L ${X(92)} ${Y(0)} Z`, fill) +
-    path(`M ${X(-16)} ${Y(0)} L ${X(-4)} ${Y(-52)} L ${X(8)} ${Y(-52)} L ${X(20)} ${Y(0)} Z`, door) +
-    stroke(`M ${X(-40)} ${Y(-76)} L ${X(-40)} ${Y(-84)} M ${X(40)} ${Y(-80)} L ${X(40)} ${Y(-90)}`, fill, 4 * s)
+    stroke(`M ${X(-70)} ${Y(-36)} L ${X(-124)} ${Y(0)} M ${X(70)} ${Y(-36)} L ${X(124)} ${Y(0)}`, fill, 2.5 * s, 0.85) +
+    path(`M ${X(-96)} ${Y(0)} L ${X(-70)} ${Y(-36)} L ${X(0)} ${Y(-86)} L ${X(70)} ${Y(-36)} L ${X(96)} ${Y(0)} Z`, fill) +
+    path(`M ${X(-20)} ${Y(0)} L ${X(-3)} ${Y(-58)} L ${X(3)} ${Y(-58)} L ${X(20)} ${Y(0)} Z`, door) +
+    stroke(`M ${X(0)} ${Y(-86)} L ${X(0)} ${Y(-100)}`, fill, 5 * s)
+  );
+}
+
+/** A clay oil lamp with a tall flame at its spout; ~120 wide at s = 1, `y` under the lamp. */
+export function oilLamp(x: number, y: number, s: number, body: string, flameFill: string): string {
+  const X = (v: number) => r1(x + v * s);
+  const Y = (v: number) => r1(y + v * s);
+  return (
+    path(`M ${X(-56)} ${Y(-10)} C ${X(-56)} ${Y(-34)} ${X(30)} ${Y(-40)} ${X(46)} ${Y(-24)} L ${X(74)} ${Y(-38)} L ${X(66)} ${Y(-20)} C ${X(60)} ${Y(-6)} ${X(30)} ${Y(0)} ${X(-20)} ${Y(0)} C ${X(-40)} ${Y(0)} ${X(-56)} ${Y(-2)} ${X(-56)} ${Y(-10)} Z`, body) +
+    ellipse(x - 10 * s, y - 30 * s, 14 * s, 5 * s, '#FFFFFF', { opacity: 0.4 }) +
+    flame(x + 72 * s, y - 38 * s, 0.85 * s, flameFill) +
+    flame(x + 72 * s, y - 40 * s, 0.42 * s, '#FFFFFF', { opacity: 0.6 })
   );
 }
 
