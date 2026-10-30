@@ -34,7 +34,7 @@
  */
 
 import { mix } from './cover-options/shapes.mjs';
-import { G, base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
+import { base, fg, type Scene } from './quiz-cover-scene-kit.mjs';
 import {
   H,
   W,
@@ -87,7 +87,6 @@ import {
   streaks,
   stump,
   sunDisc,
-  swell,
   throne,
   tombMound,
   trail,

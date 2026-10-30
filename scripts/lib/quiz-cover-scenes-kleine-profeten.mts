@@ -55,7 +55,6 @@ import {
   tent,
   tree,
   wheat,
-  witheredPlant,
   ziggurat,
 } from './quiz-cover-primitives.mjs';
 import {
@@ -93,7 +92,7 @@ export const KLEINE_PROFETEN_SCENES: Record<string, Scene> = {
       swarm(c.rand, 140, 130, 1140, 260, 1.6, c.p.fore, 120, 'locust'),
       bareTree(1010, G + 54, 1.3, c.p.near),
       bareTree(1200, G + 40, 0.9, c.p.near, { opacity: 0.85 }),
-      ...[0, 1, 2, 3, 4, 5, 6].map((i) => rotate((i % 2 ? 1 : -1) * (18 + (i % 3) * 10), 500 + i * 56, G + 76, wheat(500 + i * 56, G + 76, 0.62, c.p.accent, 1))),
+      ...[0, 1, 2, 3, 4].map((i) => rotate((i % 2 ? 1 : -1) * (34 + (i % 3) * 12), 520 + i * 74, G + 78, wheat(520 + i * 74, G + 78, 0.85, c.p.accent, 3))),
       person(320, G + 72, 1.5, c.p.fore, 'bow'),
       fg(c, 700, 12),
     ],
