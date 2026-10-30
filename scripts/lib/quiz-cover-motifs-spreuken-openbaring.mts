@@ -59,6 +59,16 @@ export function halfSun(c: C, x: number, y: number, r: number, fill: string): st
   return `<g clip-path="url(#${id})">${circ(x, y, r, fill)}</g>`;
 }
 
+/**
+ * A crescent moon centred on (x, y), opening to the right; `rot: -90` turns
+ * the horns up. (The primitives' `crescent` draws its two arcs on the same
+ * circle, so it comes out empty.)
+ */
+export function moon(x: number, y: number, r: number, fill: string, o?: Place): string {
+  const r2 = r * 1.118;
+  return place(x, y, 1, p(`M 0 ${n(-r)} A ${n(r)} ${n(r)} 0 0 0 0 ${n(r)} A ${n(r2)} ${n(r2)} 0 0 1 0 ${n(-r)} Z`, fill), o);
+}
+
 /** A jagged bolt hanging down from (x, y). */
 export function bolt(x: number, y: number, s: number, fill: string, o?: Opts): string {
   return place(x, y, s, p('M 0 0 L -26 80 L -4 74 L -34 170 L 24 66 L 2 72 L 22 0 Z', fill), o);

@@ -112,18 +112,21 @@ export function lying(x: number, y: number, s: number, fill: string, o?: Opts): 
 
 // ── temple and its furniture ───────────────────────────────────────────────
 
-/** A stone altar with four horns; `tall` gives the narrow altar of incense. */
+/** A stone altar with four horns on a low plinth; `tall` gives the narrow altar of incense. */
 export function altar(x: number, y: number, s: number, fill: string, o?: Opts & { tall?: boolean }): string {
-  const w = o?.tall ? 34 : 58;
-  const h = o?.tall ? 104 : 64;
+  const w = o?.tall ? 32 : 58;
+  const h = o?.tall ? 108 : 64;
+  const hornL = `M ${-w - 6} ${-h - 8} C ${-w - 10} ${-h - 16} ${-w - 8} ${-h - 24} ${-w - 2} ${-h - 26} C ${-w} ${-h - 18} ${-w + 4} ${-h - 12} ${-w + 10} ${-h - 8} Z`;
+  const hornB = `M ${-w * 0.4} ${-h - 8} C ${-w * 0.4 - 2} ${-h - 14} ${-w * 0.4} ${-h - 19} ${-w * 0.4 + 4} ${-h - 20} C ${-w * 0.4 + 5} ${-h - 14} ${-w * 0.4 + 8} ${-h - 11} ${-w * 0.4 + 12} ${-h - 8} Z`;
   const g =
-    P(xf(`M ${-w} 0 L ${-w + 5} ${-h} L ${w - 5} ${-h} L ${w} 0 Z`, x, y, s), fill) +
-    rect(x - (w + 4) * s, y - (h + 10) * s, (w + 4) * 2 * s, 12 * s, fill) +
-    rect(x - (w + 3) * s, y - h * 0.5 * s, (w + 3) * 2 * s, 7 * s, fill) +
-    P(xf(`M ${-w - 4} ${-h - 8} L ${-w - 4} ${-h - 24} Q ${-w + 2} ${-h - 30} ${-w + 8} ${-h - 20} L ${-w + 10} ${-h - 8} Z`, x, y, s), fill) +
-    P(xf(`M ${-w - 4} ${-h - 8} L ${-w - 4} ${-h - 24} Q ${-w + 2} ${-h - 30} ${-w + 8} ${-h - 20} L ${-w + 10} ${-h - 8} Z`, x, y, s, true), fill) +
-    P(xf(`M ${-w * 0.45} ${-h - 8} L ${-w * 0.45} ${-h - 18} Q ${-w * 0.45 + 5} ${-h - 23} ${-w * 0.45 + 9} ${-h - 15} L ${-w * 0.45 + 10} ${-h - 8} Z`, x, y, s), fill, { opacity: 0.8 }) +
-    P(xf(`M ${-w * 0.45} ${-h - 8} L ${-w * 0.45} ${-h - 18} Q ${-w * 0.45 + 5} ${-h - 23} ${-w * 0.45 + 9} ${-h - 15} L ${-w * 0.45 + 10} ${-h - 8} Z`, x, y, s, true), fill, { opacity: 0.8 });
+    rect(x - (w + 8) * s, y - 10 * s, (w + 8) * 2 * s, 10 * s, fill, { rx: 2 * s }) +
+    P(xf(`M ${-w} -10 L ${-w + 4} ${-h} L ${w - 4} ${-h} L ${w} -10 Z`, x, y, s), fill) +
+    rect(x - (w + 6) * s, y - (h + 10) * s, (w + 6) * 2 * s, 12 * s, fill, { rx: 2 * s }) +
+    rect(x - (w + 2) * s, y - h * 0.55 * s, (w + 2) * 2 * s, 7 * s, fill) +
+    P(xf(hornB, x, y, s), fill, { opacity: 0.8 }) +
+    P(xf(hornB, x, y, s, true), fill, { opacity: 0.8 }) +
+    P(xf(hornL, x, y, s), fill) +
+    P(xf(hornL, x, y, s, true), fill);
   return wrap(g, o);
 }
 
@@ -222,6 +225,22 @@ export function bronzeSea(x: number, y: number, s: number, basin: string, inner:
     ellipse(x, y - 178 * s, 166 * s, 14 * s, inner) +
     P(xf('M -150 -136 C -110 -112 110 -112 150 -136', x, y, s), 'none').replace('fill="none"', `fill="none" stroke="#FFFFFF" stroke-width="${r1(4 * s)}" opacity="0.25"`) +
     front;
+  return wrap(g, o);
+}
+
+/** A king's throne seen from the front: high rounded back, arms, open legs, two steps. ~230 tall. */
+export function royalThrone(x: number, y: number, s: number, fill: string, o?: Opts): string {
+  const half = (flip: boolean) =>
+    P(xf('M -64 -134 L -46 -134 L -46 -84 L -64 -84 Z', x, y, s, flip), fill) +
+    circle(x + (flip ? 55 : -55) * s, y - 140 * s, 11 * s, fill) +
+    P(xf('M -56 -84 L -42 -84 L -42 -30 L -56 -30 Z', x, y, s, flip), fill);
+  const g =
+    P(xf('M -42 -96 L -42 -196 C -42 -236 42 -236 42 -196 L 42 -96 Z', x, y, s), fill) +
+    rect(x - 62 * s, y - 98 * s, 124 * s, 16 * s, fill, { rx: 3 * s }) +
+    half(false) +
+    half(true) +
+    rect(x - 86 * s, y - 32 * s, 172 * s, 16 * s, fill, { rx: 2 * s }) +
+    rect(x - 110 * s, y - 16 * s, 220 * s, 16 * s, fill, { rx: 2 * s });
   return wrap(g, o);
 }
 

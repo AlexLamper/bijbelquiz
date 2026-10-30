@@ -2,9 +2,9 @@
  * Motifs drawn for the Psalmen 51-100 covers (`quiz-cover-scenes-psalmen-2.mts`)
  * that the shared primitives do not have: a lyre, a tear bottle, scales, a
  * stone altar, an archer, a shofar and trumpets, the ark of the covenant, a
- * wild boar, a prowling dog, broken weapons, a high crag, a cave, a clay jar,
- * a shepherd's crook, a cedar, a great vine, a swallow and its nest, a
- * curling wave, pillars of fire and cloud.
+ * wild boar, a prowling dog, broken weapons, a rock pillar, a cave, a clay
+ * jar, an oil lamp, a shepherd's crook, a cedar, a great vine, a swallow and
+ * its nest, a curling wave, pillars of fire and cloud.
  *
  * Same conventions as `quiz-cover-primitives.mts`: flat silhouettes, `y` is
  * the ground a motif stands on, `s = 1` is the natural size.
@@ -284,14 +284,6 @@ export function brokenBow(x: number, y: number, s: number, fill: string): string
   );
 }
 
-/** An axe with a long haft lying at an angle; head at (x, y). */
-export function axe(x: number, y: number, s: number, deg: number, fill: string): string {
-  const g =
-    rect(x - 6 * s, y - 4 * s, 130 * s, 8 * s, fill, { rx: 4 * s }) +
-    path(`M ${r1(x - 8 * s)} ${r1(y - 10 * s)} L ${r1(x - 30 * s)} ${r1(y - 34 * s)} C ${r1(x - 46 * s)} ${r1(y - 10 * s)} ${r1(x - 46 * s)} ${r1(y + 10 * s)} ${r1(x - 30 * s)} ${r1(y + 34 * s)} L ${r1(x - 8 * s)} ${r1(y + 10 * s)} Z`, fill);
-  return rotate(deg, x, y, g);
-}
-
 // ── sacred objects ─────────────────────────────────────────────────────────
 
 /** The ark of the covenant with the cherubim's wings over the mercy seat and the carrying poles; ~130 tall at s = 1. */
@@ -546,12 +538,6 @@ export function grapeBunch(x: number, y: number, s: number, fill: string): strin
 }
 
 // ── landforms ──────────────────────────────────────────────────────────────
-
-/** A tall rock rising steeply to a narrow flat top at `top`; base `w` wide at `y`. */
-export function crag(x: number, y: number, w: number, top: number, fill: string): string {
-  const h = y - top;
-  return `<path d="M ${r1(x - w / 2)} ${r1(y)} C ${r1(x - w * 0.42)} ${r1(y - h * 0.3)} ${r1(x - w * 0.3)} ${r1(y - h * 0.5)} ${r1(x - w * 0.26)} ${r1(y - h * 0.72)} L ${r1(x - w * 0.2)} ${r1(y - h * 0.86)} L ${r1(x - w * 0.16)} ${r1(top + 4)} L ${r1(x + w * 0.15)} ${r1(top)} L ${r1(x + w * 0.2)} ${r1(y - h * 0.8)} C ${r1(x + w * 0.28)} ${r1(y - h * 0.62)} ${r1(x + w * 0.36)} ${r1(y - h * 0.4)} ${r1(x + w * 0.5)} ${r1(y)} Z" fill="${fill}"/>`;
-}
 
 /** A rugged rock mass with a dark cave mouth at its foot; ~`w` wide, ~`h` tall. */
 export function caveRock(x: number, y: number, w: number, h: number, rock: string, hole: string): string {
