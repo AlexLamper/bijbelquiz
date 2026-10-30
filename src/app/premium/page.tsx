@@ -18,6 +18,7 @@ import { readPaywallTrigger } from '@/lib/analytics/events';
 import { authOptions } from '@/lib/auth';
 import { FREE_QUIZ_LIMIT } from '@/lib/free-quiz-limit';
 import { GROUP_LICENSE_SEATS } from '@/lib/group-license-constants';
+import { parsePriceLabel, yearlyPricePerWeek } from '@/lib/premium-benefits';
 import { readPremiumPageQuery, trialReminderDay } from '@/lib/premium-offer';
 import { getPremiumPriceLabels, sellablePremiumPlans } from '@/lib/premium-prices';
 import { trialDaysForPlan } from '@/lib/stripe-plans';
@@ -81,6 +82,10 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
   const trialReminder = isMailConfigured();
   const reminderDay = trialReminder ? trialReminderDay(trialDays) : null;
   const billing = Array.isArray(params.billing) ? params.billing[0] : params.billing;
+  // The cheapest way in, as a week: the number the plan cards lead with too.
+  const fromPerWeek = yearlyPricePerWeek(prices.yearly);
+  const yearlyAmount = parsePriceLabel(prices.yearly);
+  const underAEuro = yearlyAmount !== null && yearlyAmount / 52 < 1;
 
   const title = member
     ? 'Je hebt Premium'
@@ -106,6 +111,14 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
         <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,500px)] items-center gap-x-16 gap-y-10 max-m:grid-cols-1">
           <div className="flex min-w-0 flex-col items-start gap-[22px]">
             <h1 className="m-0 max-w-[560px] text-[44px] leading-[52px] max-m:text-[32px] max-m:leading-[38px]">{title}</h1>
+            {!member && fromPerWeek && (
+              <p className="-mt-2 m-0 text-[22px] font-extrabold leading-7 text-lapis max-m:text-lg max-m:leading-6">
+                Vanaf {fromPerWeek} per week
+                <span className="block text-[15px] font-semibold leading-5 text-ink-muted">
+                  {prices.yearly} per jaar{underAEuro ? ', minder dan een euro per week.' : '.'}
+                </span>
+              </p>
+            )}
             <PremiumPreview variant={member ? 'open' : 'locked'} />
             <BenefitList />
           </div>

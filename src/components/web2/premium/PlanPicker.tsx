@@ -4,7 +4,13 @@ import * as React from 'react';
 
 import { Button } from '@/components/bq';
 import { track } from '@/lib/analytics/client';
-import { monthlyEquivalentOfYearly } from '@/lib/premium-benefits';
+import {
+  formatPricePerWeek,
+  lifetimePricePerWeek,
+  LIFETIME_HORIZON_YEARS,
+  yearlyPricePerWeek,
+  yearlySavingsPercent,
+} from '@/lib/premium-benefits';
 import {
   premiumCtaLabel,
   premiumPageHref,
@@ -37,6 +43,13 @@ export interface PlanPickerProps {
 /**
  * The plan card of P-Premium: Jaarlijks / Maandelijks as a radio pair, the
  * small "Of eenmalig: levenslang Premium" link, and the pay button.
+ *
+ * Every plan leads with what it costs per week - the unit a reader already
+ * prices small things in, and the one that shows how little Premium asks. The
+ * amount actually charged, in the period it is charged, sits right under it in
+ * plain sight, never in the small print. (The app does it the other way round:
+ * App Store and Google Play require the billed amount to be the most prominent
+ * price there. On the website Stripe bills, and the stores' rule does not apply.)
  *
  * Paying is a plain form POST to `/api/stripe/checkout` (which redirects to
  * Stripe), so it works before hydration too. Guests are sent to sign up first
@@ -77,7 +90,12 @@ export function PlanPicker({
   }, [trigger, locked]);
 
   const yearlyTrial = trialDays > 0;
-  const yearlyPerMonth = monthlyEquivalentOfYearly(prices.yearly);
+  const savings = yearlySavingsPercent(prices.monthly, prices.yearly);
+  const weekly: Record<PremiumPlanId, string | null> = {
+    yearly: yearlyPricePerWeek(prices.yearly),
+    monthly: formatPricePerWeek(prices.monthly),
+    lifetime: lifetimePricePerWeek(prices.lifetime),
+  };
   const cardPlans = (['yearly', 'monthly'] as const).filter((id) => offered.has(id));
   const radioRefs = React.useRef<Record<string, HTMLButtonElement | null>>({});
 
@@ -114,6 +132,9 @@ export function PlanPicker({
           {cardPlans.map((id) => {
             const selected = plan === id;
             const yearly = id === 'yearly';
+            const perWeek = weekly[id];
+            const billed = `${yearly ? prices.yearly : prices.monthly} ${yearly ? 'per jaar' : 'per maand'}`;
+            const badge = yearly ? (yearlyTrial ? trialDaysLabel(trialDays) : savings ? `Bespaar ${savings}%` : null) : null;
             return (
               <button
                 key={id}
@@ -131,19 +152,29 @@ export function PlanPicker({
                   selected ? 'border-2 border-lapis' : 'border border-line hover:border-input-line',
                 )}
               >
-                {yearly && yearlyTrial && (
+                {badge && (
                   <span className="absolute -top-[13px] left-1/2 flex h-[26px] -translate-x-1/2 items-center whitespace-nowrap rounded-full bg-lapis px-[11px] text-xs font-extrabold uppercase tracking-[0.04em] text-white">
-                    {trialDaysLabel(trialDays)}
+                    {badge}
                   </span>
                 )}
                 <span className={cn('text-[15px] font-extrabold', selected ? 'text-lapis' : 'text-ink-muted')}>
                   {yearly ? 'Jaarlijks' : 'Maandelijks'}
                 </span>
-                <span className="text-2xl font-extrabold">{yearly ? prices.yearly : prices.monthly}</span>
-                <span className="text-sm font-bold text-ink-soft">{yearly ? 'per jaar' : 'per maand'}</span>
-                <span className="text-[13px] font-semibold text-ink-muted">
-                  {yearly ? (yearlyPerMonth ? `= ${yearlyPerMonth} per maand` : ' ') : 'Geen proefperiode'}
-                </span>
+                {perWeek ? (
+                  <>
+                    <span className="mt-0.5 text-[34px] font-extrabold leading-[38px] tracking-[-0.01em] max-m:text-[30px] max-m:leading-[34px]">
+                      {perWeek}
+                    </span>
+                    <span className="text-sm font-bold text-ink-soft">per week</span>
+                    <span className="mt-1.5 rounded-full bg-chip px-2.5 py-0.5 text-[13px] font-extrabold text-ink">{billed}</span>
+                  </>
+                ) : (
+                  // A price label that cannot be read as a number gets no derived claim.
+                  <>
+                    <span className="text-2xl font-extrabold">{yearly ? prices.yearly : prices.monthly}</span>
+                    <span className="text-sm font-bold text-ink-soft">{yearly ? 'per jaar' : 'per maand'}</span>
+                  </>
+                )}
               </button>
             );
           })}
@@ -160,7 +191,10 @@ export function PlanPicker({
           >
             <span className="flex min-w-0 flex-grow flex-col">
               <span className="text-sm font-extrabold text-lapis">Levenslang Premium</span>
-              <span className="text-[13px] font-bold text-ink-soft">{prices.lifetime} eenmalig</span>
+              <span className="text-[13px] font-bold text-ink-soft">
+                {prices.lifetime} eenmalig
+                {weekly.lifetime && ` · ${weekly.lifetime} per week over ${LIFETIME_HORIZON_YEARS} jaar`}
+              </span>
             </span>
             <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-lapis text-white">
               <CheckIcon />
