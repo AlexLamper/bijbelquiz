@@ -419,18 +419,18 @@ export function swallow(x: number, y: number, s: number, fill: string, flip = fa
   return at(x, y, s, g, { flip });
 }
 
-/** A bird's nest with three young, beaks open; `y` is the bottom of the nest. */
-export function nest(x: number, y: number, s: number, fill: string, young: string): string {
+/** A swallow's mud nest with three young peeping over the rim, beaks open; `y` is the bottom of the nest. */
+export function nest(x: number, y: number, s: number, fill: string, young: string, beak = '#FFFFFF'): string {
+  const chick = (cx: number, cy: number, r: number) =>
+    circle(cx, cy, r * s, young) +
+    path(`M ${r1(cx - 2 * s)} ${r1(cy - r * 0.6 * s)} L ${r1(cx - 9 * s)} ${r1(cy - (r + 12) * s)} L ${r1(cx + 1 * s)} ${r1(cy - (r + 4) * s)} L ${r1(cx + 9 * s)} ${r1(cy - (r + 12) * s)} L ${r1(cx + 4 * s)} ${r1(cy - r * 0.6 * s)} Z`, beak);
   const out = [
-    circle(x - 18 * s, y - 30 * s, 10 * s, young),
-    circle(x, y - 34 * s, 11 * s, young),
-    circle(x + 18 * s, y - 30 * s, 10 * s, young),
-    tri(x - 22 * s, y - 40 * s, x - 18 * s, y - 52 * s, x - 12 * s, y - 38 * s, young),
-    tri(x - 4 * s, y - 44 * s, x + 2 * s, y - 58 * s, x + 6 * s, y - 42 * s, young),
-    tri(x + 14 * s, y - 40 * s, x + 22 * s, y - 52 * s, x + 24 * s, y - 36 * s, young),
-    path(`M ${r1(x - 44 * s)} ${r1(y - 28 * s)} C ${r1(x - 40 * s)} ${r1(y + 4 * s)} ${r1(x + 40 * s)} ${r1(y + 4 * s)} ${r1(x + 44 * s)} ${r1(y - 28 * s)} Z`, fill),
+    chick(x - 20 * s, y - 30 * s, 10),
+    chick(x + 20 * s, y - 30 * s, 10),
+    chick(x, y - 34 * s, 11),
+    path(`M ${r1(x - 46 * s)} ${r1(y - 30 * s)} C ${r1(x - 44 * s)} ${r1(y + 2 * s)} ${r1(x - 16 * s)} ${r1(y + 6 * s)} ${r1(x)} ${r1(y + 6 * s)} C ${r1(x + 16 * s)} ${r1(y + 6 * s)} ${r1(x + 44 * s)} ${r1(y + 2 * s)} ${r1(x + 46 * s)} ${r1(y - 30 * s)} Z`, fill),
   ];
-  for (let i = 0; i < 4; i += 1) out.push(stroke(`M ${r1(x - 46 * s)} ${r1(y - 26 * s + i * 6 * s)} L ${r1(x + 46 * s)} ${r1(y - 22 * s + i * 5 * s)}`, fill, 3 * s, 0.8));
+  for (let i = 0; i < 3; i += 1) out.push(stroke(`M ${r1(x - 40 * s + i * 6 * s)} ${r1(y - 20 * s + i * 8 * s)} L ${r1(x + 40 * s - i * 6 * s)} ${r1(y - 18 * s + i * 8 * s)}`, '#FFFFFF', 2.5 * s, 0.35));
   return out.join('');
 }
 

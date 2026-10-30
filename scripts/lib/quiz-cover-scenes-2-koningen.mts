@@ -213,7 +213,7 @@ export const KONINGEN2_SCENES: Record<string, Scene> = {
       person(420, 524, 1.55, c.p.fore, 'point'),
       ripples(800, 528, 1.0, c.p.light, 3),
       rotate(-6, 650, 536, rect(590, 532, 120, 9, c.p.fore, { rx: 4 })),
-      rotate(-16, 820, 500, axeHead(820, 500, 1.15, c.p.accent, c.p.water)),
+      axeHead(820, 506, 1.3, c.p.accent, c.p.fore),
       person(260, 506, 1.15, c.p.fore, 'raise'),
       water(c.rand, 566, c.p.water, c.p.crest, 2),
     ],

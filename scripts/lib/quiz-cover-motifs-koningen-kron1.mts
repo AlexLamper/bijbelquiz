@@ -537,8 +537,8 @@ export function clothPieces(rand: () => number, x: number, y: number, s: number,
 /** An iron axe head (no handle); (x, y) is its centre, the socket left and the curved edge right. */
 export function axeHead(x: number, y: number, s: number, fill: string, eye: string, o?: Opts): string {
   const g =
-    P(xf('M -44 -15 L -8 -15 C 8 -15 18 -32 36 -44 C 48 -22 48 22 36 44 C 18 32 8 15 -8 15 L -44 15 C -52 15 -52 -15 -44 -15 Z', x, y, s), fill) +
-    ellipse(x - 26 * s, y, 8 * s, 10 * s, eye);
+    P(xf('M -40 -16 L 34 -22 C 44 -4 44 22 34 44 C 18 34 8 20 -6 16 L -40 16 C -48 16 -48 -16 -40 -16 Z', x, y, s), fill) +
+    rect(x - 31 * s, y - 9 * s, 14 * s, 18 * s, eye, { rx: 6 * s });
   return wrap(g, o);
 }
 

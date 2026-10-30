@@ -48,7 +48,7 @@ export const JAKOBUS_SCENES: Record<string, Scene> = {
       shafts(960, 100, 220, 260, '#FFFFFF', 4),
       c.soft(960, 290, 170, 0.55),
       crown(960, 330, 0.95, c.p.accent),
-      rotate(-18, 500, 500, boat(500, 500, 1.4, c.p.near, true)),
+      rotate(-18, 520, 506, boat(520, 506, 1.9, c.p.near, true)),
       swell(c.rand, 522, c.p.far),
     ],
   },
