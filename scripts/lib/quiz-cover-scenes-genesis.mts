@@ -1116,8 +1116,7 @@ export const GENESIS_SCENES: Record<string, Scene> = {
     draw: (c) => [
       base(c, { sunX: 1160, sunY: 340, far: 'ridge', horizon: 490 }),
       tombMound(1180, 500, 0.75, c.p.mid, c.p.fore),
-      chariot(320, 530, 0.95, c.p.near),
-      horse(200, 532, 0.62, c.p.near),
+      flipX(290, chariot(340, 530, 0.95, c.p.near) + horse(220, 532, 0.62, c.p.near)),
       person(560, 530, 1.15, c.p.fore, 'walk'),
       person(760, 530, 1.15, c.p.fore, 'walk'),
       person(600, 534, 1.1, c.p.near, 'walk'),

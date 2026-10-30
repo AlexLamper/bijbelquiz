@@ -697,7 +697,7 @@ export const SAMUEL1_SCENES: Record<string, Scene> = {
       sword(820, 410, 1.15, c.p.near, { rot: 172 }),
       spear(380, 556, 560, 470, 1.0, c.p.near),
       `<g transform="translate(640 548) scale(1.3 0.42)">${shield(0, 0, 1.0, c.p.near)}</g>`,
-      rotate(-16, 700, 540, crown(700, 540 - 14 * 0.75, 0.75, c.p.accent)),
+      rotate(-16, 700, 544, crown(700, 544 - 14 * 1.0, 1.0, c.p.accent)),
       c.soft(700, 500, 120, 0.25),
       fg(c, 692, 12),
     ],

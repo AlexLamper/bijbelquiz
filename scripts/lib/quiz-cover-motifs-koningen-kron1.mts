@@ -273,11 +273,22 @@ export function lyre(x: number, y: number, s: number, fill: string, o?: Opts): s
   return wrap(g, o);
 }
 
-/** A pair of cymbals held apart, centre between them. */
+/** A pair of cymbals seen face-on, held apart with a clash between them; (x, y) is the middle. */
 export function cymbals(x: number, y: number, s: number, fill: string, o?: Opts): string {
-  const one = (dx: number, rot: number) =>
-    rotate(rot, x + dx * s, y, ellipse(x + dx * s, y, 10 * s, 34 * s, fill) + circle(x + dx * s + (dx < 0 ? -8 : 8) * s, y, 7 * s, fill));
-  return wrap(one(-30, -14) + one(30, 14), o);
+  const disc = (dx: number) =>
+    circle(x + dx * s, y, 30 * s, fill) +
+    `<circle cx="${r1(x + dx * s)}" cy="${r1(y)}" r="${r1(21 * s)}" fill="none" stroke="#FFFFFF" stroke-width="${r1(2.5 * s)}" opacity="0.35"/>` +
+    circle(x + dx * s, y, 7 * s, '#FFFFFF', { opacity: 0.35 });
+  const clash = [-1, 0, 1].map((k) => S(`M ${r1(x + k * 8 * s)} ${r1(y - 34 * s - Math.abs(k) * 4 * s)} L ${r1(x + k * 14 * s)} ${r1(y - 52 * s - Math.abs(k) * 2 * s)}`, fill, 4 * s)).join('');
+  return wrap(disc(-44) + disc(44) + clash, o);
+}
+
+/**
+ * A crescent moon, horns to the right. (The primitives' `crescent` gives its
+ * inner arc a radius smaller than half the chord, so it collapses to nothing.)
+ */
+export function moon(x: number, y: number, r: number, fill: string, o?: Opts): string {
+  return P(`M ${r1(x)} ${r1(y - r)} A ${r1(r)} ${r1(r)} 0 1 0 ${r1(x)} ${r1(y + r)} A ${r1(r * 1.3)} ${r1(r * 1.3)} 0 0 1 ${r1(x)} ${r1(y - r)} Z`, fill, o);
 }
 
 /** A ram's horn (shofar, or the horn of oil): mouthpiece at (x, y), curving up and right to the bell. */

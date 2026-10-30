@@ -87,6 +87,7 @@ import {
   lying,
   mantle,
   mirror,
+  moon,
   offeringChest,
   personLeft,
   pitcher,
@@ -445,6 +446,7 @@ export const KONINGEN2_SCENES: Record<string, Scene> = {
     mood: 'night',
     draw: (c) => [
       base(c, { sun: 'moon', sunX: 240, sunY: 220, sunR: 46, far: 'dunes', ground: 'flat', horizon: 512 }),
+      moon(240, 220, 30, c.p.light),
       ...[1080, 1190, 1290].map((tx) => campTent(tx, 476, 0.4, c.p.far, undefined, { opacity: 0.8 })),
       solomonTemple(860, 512, 0.9, c.p.near, c.p.light),
       c.soft(860, 440, 180, 0.45),

@@ -64,7 +64,7 @@ import {
   wheat,
   window as windowFrame,
 } from './quiz-cover-primitives.mjs';
-import { mix } from './cover-options/shapes.mjs';
+import { at, mix, scrollShape } from './cover-options/shapes.mjs';
 import {
   altar,
   altarFire,
@@ -153,11 +153,8 @@ export const NUMERI_SCENES: Record<string, Scene> = {
     draw: (c) => [
       base(c, { sunX: 1190, sunY: 216, far: 'none', horizon: 474 }),
       path('M 60 486 C 180 420 260 330 360 270 C 400 246 430 250 460 276 C 520 234 560 230 600 262 C 700 340 800 420 960 486 Z', c.p.mid),
-      seated(330, 560, 1.3, c.p.fore),
-      path('M 380 520 L 560 520 L 560 530 L 380 530 Z', c.p.near),
-      path('M 392 530 L 402 530 L 402 562 L 392 562 Z', c.p.near),
-      path('M 538 530 L 548 530 L 548 562 L 538 562 Z', c.p.near),
-      openScroll(470, 518, 0.95, c.p.accent, mix(c.p.accent, c.a.figure, 0.35)),
+      fig(360, 566, 1.5, c.p.fore, 'reach'),
+      at(470, 522, 0.6, scrollShape(c.p.accent, mix(c.p.accent, c.a.figure, 0.35), mix(c.p.accent, c.a.figure, 0.5))),
       fig(680, 560, 1.3, c.p.fore, 'stand'),
       spear(712, 560, 1.15, c.p.fore, 190),
       fig(790, 554, 1.18, c.p.near, 'stand'),

@@ -279,17 +279,16 @@ export const JOZUA_SCENES: Record<string, Scene> = {
   // 9: "Al het brood hunner teerkost was droog en beschimmeld" - the Gibeonites with worn sacks and old bread come to Joshua
   'jozua-bijbelquiz-deel-9': {
     hue: 156,
-    mood: 'day',
+    mood: 'warm',
     draw: (c) => [
       base(c, { sunX: 1170, sunY: 230, far: 'ridge', horizon: 470 }),
       tent(200, 536, 0.9, c.p.near),
       person(330, 552, 1.15, c.p.near, 'stand'),
       figureA(460, 556, 1.4, c.p.fore, 'stand'),
       loaf(716, 474, 1.8, c.p.accent),
-      circle(694, 456, 6, c.p.light, { opacity: 0.75 }),
-      circle(728, 448, 5, c.p.light, { opacity: 0.75 }),
-      circle(716, 466, 4.5, c.p.light, { opacity: 0.75 }),
-      circle(744, 464, 4, c.p.light, { opacity: 0.75 }),
+      line(690, 452, 700, 436, 5, c.p.accentDeep, 0.45),
+      line(712, 456, 724, 434, 5, c.p.accentDeep, 0.45),
+      line(736, 454, 746, 438, 5, c.p.accentDeep, 0.45),
       figureA(840, 556, 1.35, c.p.fore, 'reach', { flip: true }),
       donkey(1060, 552, 1.1, c.p.near),
       ellipse(1070, 474, 44, 26, c.p.mid),
@@ -301,7 +300,7 @@ export const JOZUA_SCENES: Record<string, Scene> = {
   // 10: "Zon, sta stil te Gibeon, en gij maan, in het dal van Ajalon!"
   'jozua-bijbelquiz-deel-10': {
     hue: 158,
-    mood: 'warm',
+    mood: 'dawn',
     draw: (c) => [
       base(c, { sun: 'none', far: 'ridge', horizon: 478 }),
       c.soft(520, 260, 280, 0.55),
@@ -364,6 +363,10 @@ export const JOZUA_SCENES: Record<string, Scene> = {
     draw: (c) => [
       base(c, { sunX: 300, sunY: 236, far: 'ridge', horizon: 472 }),
       river(472, c.p.water, { opacity: 0.9 }),
+      line(600, 500, 660, 500, 4, c.p.light, 0.8),
+      line(540, 540, 630, 540, 4, c.p.light, 0.8),
+      line(650, 566, 740, 566, 4, c.p.light, 0.8),
+      line(480, 610, 600, 610, 4, c.p.light, 0.8),
       sheepA(960, 520, 0.8, c.p.light, c.p.fore, { flip: true }),
       sheepA(1060, 526, 0.9, c.p.light, c.p.fore, { flip: true }),
       sheepA(1160, 518, 0.75, c.p.light, c.p.fore, { flip: true }),

@@ -418,6 +418,44 @@ export function sealedScroll(x: number, y: number, s: number, paper: string, sea
   return place(x, y, s, out.join(''), o);
 }
 
+/** An open scroll held wide, centred at (x, y): the sheet between two rolls, with lines of writing. 200 wide at s = 1. */
+export function openScroll(x: number, y: number, s: number, paper: string, ink2: string, o?: Place): string {
+  const out = [box(-84, -40, 168, 80, paper, 3)];
+  for (let i = 0; i < 4; i += 1) out.push(line(`M -64 ${-22 + i * 14} L ${i % 2 ? 40 : 60} ${-22 + i * 14}`, ink2, 4, 'opacity="0.55"'));
+  out.push(box(-94, -64, 8, 128, ink2, 4), box(86, -64, 8, 128, ink2, 4));
+  out.push(box(-102, -52, 24, 104, paper, 12), box(78, -52, 24, 104, paper, 12));
+  return place(x, y, s, out.join(''), o);
+}
+
+/**
+ * An upright warp-weighted loom: two posts and a beam, the woven cloth
+ * (`cloth`) hanging from the beam, the warp threads below it held taut by a
+ * row of loom weights. 230 tall at s = 1.
+ */
+export function loom(x: number, y: number, s: number, wood: string, cloth: string, thread: string, o?: Place): string {
+  const out = [box(-96, -232, 12, 232, wood, 3), box(84, -232, 12, 232, wood, 3), box(-110, -238, 220, 14, wood, 4)];
+  out.push(box(-74, -224, 148, 92, cloth, 2));
+  for (let i = 0; i < 9; i += 1) {
+    const tx = -66 + i * 16.5;
+    out.push(line(`M ${n(tx)} -134 L ${n(tx)} -46`, thread, 2.4), circ(tx, -40, 7, wood));
+  }
+  out.push(box(-74, -140, 148, 8, cloth, 2));
+  return place(x, y, s, out.join(''), o);
+}
+
+/** A house fallen in: two jagged wall stubs, a slumped beam and rubble. 240 wide at s = 1. */
+export function ruinedHouse(x: number, y: number, s: number, wall: string, o?: Place): string {
+  const g =
+    p('M -120 0 L -120 -120 L -104 -138 L -92 -110 L -76 -126 L -66 -84 L -50 -92 L -40 -40 L -30 0 Z', wall) +
+    p('M 40 0 L 46 -60 L 60 -54 L 70 -96 L 86 -80 L 98 -112 L 112 -100 L 120 -64 L 120 0 Z', wall) +
+    `<g transform="rotate(-16 -10 -30)">${box(-90, -36, 170, 12, wall, 4)}</g>` +
+    ell(-14, -6, 26, 10, wall) +
+    ell(14, -4, 18, 8, wall) +
+    ell(-150, -4, 16, 7, wall) +
+    ell(150, -4, 20, 8, wall);
+  return place(x, y, s, g, o);
+}
+
 /** A silver bowl on a foot, heaped with apples. */
 export function fruitBowl(x: number, y: number, s: number, bowlFill: string, fruit: string, o?: Place): string {
   const out: string[] = [];

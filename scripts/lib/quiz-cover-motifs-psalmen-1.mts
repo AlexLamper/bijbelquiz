@@ -628,6 +628,30 @@ export function road(
   return { shape: p(d, fill, opacity !== 1 ? `opacity="${opacity}"` : ''), at: centre };
 }
 
+/** A steep crag with a broken, stepped top; `(x, y)` is the middle of its foot. */
+export function crag(x: number, y: number, w: number, h: number, fill: string, edge?: string): string {
+  const a = w / 2;
+  const pts: [number, number][] = [
+    [-a, 0],
+    [-a * 0.86, -h * 0.42],
+    [-a * 0.62, -h * 0.7],
+    [-a * 0.58, -h * 0.86],
+    [-a * 0.36, -h * 0.94],
+    [-a * 0.12, -h],
+    [a * 0.2, -h * 0.98],
+    [a * 0.38, -h * 0.9],
+    [a * 0.56, -h * 0.8],
+    [a * 0.66, -h * 0.56],
+    [a * 0.88, -h * 0.34],
+    [a, 0],
+  ];
+  const d = `M ${pts.map(([px, py]) => `${r1(x + px)} ${r1(y + py)}`).join(' L ')} Z`;
+  const ledges = edge
+    ? line(`M ${r1(x - a * 0.6)} ${r1(y - h * 0.62)} L ${r1(x - a * 0.2)} ${r1(y - h * 0.58)} M ${r1(x + a * 0.1)} ${r1(y - h * 0.4)} L ${r1(x + a * 0.6)} ${r1(y - h * 0.44)}`, edge, 4, 'opacity="0.35"')
+    : '';
+  return p(d, fill) + ledges;
+}
+
 /** Mirror any fragment about the vertical line x. */
 export function mirror(x: number, inner: string): string {
   return `<g transform="translate(${r1(2 * x)} 0) scale(-1 1)">${inner}</g>`;
