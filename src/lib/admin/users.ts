@@ -25,6 +25,7 @@ import {
 } from '@/lib/admin/platform';
 import { toPaymentRow, type AdminPaymentRow } from '@/lib/admin/payments-list';
 import type { PaymentLike } from '@/lib/admin/revenue';
+import { getAdminUserTrial } from '@/lib/admin/trials';
 
 /**
  * The beheer user list and user page, shared by `/beheer/gebruikers` and
@@ -367,7 +368,9 @@ export interface AdminUserDetail {
       customerId: string | null;
       subscriptionId: string | null;
     };
-    store: { active: boolean; expiresAt: string | null };
+    store: { active: boolean; expiresAt: string | null; willRenew: boolean | null };
+    /** The latest free trial (store or website), with what became of it. */
+    trial: Awaited<ReturnType<typeof getAdminUserTrial>>;
     lifetime: { active: boolean };
     group: {
       active: boolean;
@@ -418,6 +421,7 @@ type LeanDetailUser = LeanListUser & {
   stripeSubscriptionPlan?: string;
   stripeCancelAtPeriodEnd?: boolean;
   stripeTrialEnd?: Date | null;
+  storeWillRenew?: boolean | null;
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;
   premiumGrantedAt?: Date | null;
@@ -467,6 +471,7 @@ export async function getAdminUserDetail(userId: string, now: Date = new Date())
     ]);
 
   const row = rows[0];
+  const trial = await getAdminUserTrial(userId, now);
   const internal = new Set((await getInternalAccountIds()).map(String));
 
   // Platform history: web rows split by the visit's device where known.
@@ -547,7 +552,12 @@ export async function getAdminUserDetail(userId: string, now: Date = new Date())
         customerId: user.stripeCustomerId ?? null,
         subscriptionId: user.stripeSubscriptionId ?? null,
       },
-      store: { active: Boolean(user.premiumStore), expiresAt: iso(user.storePremiumExpiresAt) },
+      store: {
+        active: Boolean(user.premiumStore),
+        expiresAt: iso(user.storePremiumExpiresAt),
+        willRenew: user.premiumStore ? (user.storeWillRenew ?? null) : null,
+      },
+      trial,
       lifetime: { active: Boolean(user.hasLifetimePremium) },
       group: {
         active: Boolean(groupUntil && groupUntil.getTime() > now.getTime()),

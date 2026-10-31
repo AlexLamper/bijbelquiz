@@ -1,6 +1,7 @@
 import { User, connectDB } from '@/database';
 import { getAudienceStats } from '@/lib/admin/audience';
 import { getAdminOverview } from '@/lib/admin/overview';
+import { listAdminTrials } from '@/lib/admin/trials';
 import { listAdminPayments } from '@/lib/admin/payments-list';
 import { ADMIN_USER_ROW_FIELDS, toAdminUserRows } from '@/lib/admin/users';
 import { getPaymentsHealth, type PaymentsHealthReport } from '@/lib/payments-health';
@@ -29,7 +30,7 @@ export function healthSummary(health: PaymentsHealthReport | null) {
 
 export async function buildAdminOverviewPayload({ deep = false }: { deep?: boolean } = {}, now: Date = new Date()) {
   await connectDB();
-  const [audience, overview, health, recentUsers, recentPayments] = await Promise.all([
+  const [audience, overview, health, recentUsers, recentPayments, trials] = await Promise.all([
     getAudienceStats(now),
     getAdminOverview(now),
     getPaymentsHealth({ deep }).catch(() => null),
@@ -44,6 +45,7 @@ export async function buildAdminOverviewPayload({ deep = false }: { deep?: boole
       },
     ]),
     listAdminPayments({ q: '', provider: null, status: null, page: 1, pageSize: 10 }),
+    listAdminTrials(now),
   ]);
 
   const stats = overview.premium;
@@ -87,6 +89,8 @@ export async function buildAdminOverviewPayload({ deep = false }: { deep?: boole
     })(),
     recentUsers: await toAdminUserRows(recentUsers, now),
     recentPayments: recentPayments.payments,
+    /** Free trials of the last 60 days: running, cancelled, converted, ended. */
+    trials,
   };
 }
 

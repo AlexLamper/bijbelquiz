@@ -26,6 +26,8 @@ import { connectDB, User } from '@/database';
 import { EmptyRow, Table, TableCard, Tag, Td, Th } from '@/components/web2/beheer-2/parts';
 import { formatEuroCents, formatMoneyCents } from '@/lib/premium-stats';
 import { getPaymentsHealth } from '@/lib/payments-health';
+import { listAdminTrials } from '@/lib/admin/trials';
+import { TrialsCard } from '@/components/web2/beheer-2/TrialsCard';
 import AdminGroupLicenseForm from './AdminGroupLicenseForm';
 import AdminRefreshButton from './AdminRefreshButton';
 
@@ -86,7 +88,7 @@ export default async function AdminDashboard() {
   // leaves the internal test/reviewer accounts out; revenue follows the rules
   // in `lib/admin/revenue.ts`.
   await connectDB();
-  const [overview, paymentsHealth, audience, recentUserDocs] = await Promise.all([
+  const [overview, paymentsHealth, audience, recentUserDocs, trials] = await Promise.all([
     getAdminOverview(),
     // Shallow: config verdict only, no network-heavy Stripe list calls.
     getPaymentsHealth({ deep: false }).catch(() => null),
@@ -101,6 +103,7 @@ export default async function AdminDashboard() {
         },
       },
     ]),
+    listAdminTrials(),
   ]);
   const recentUsers = await toAdminUserRows(recentUserDocs);
 
@@ -334,6 +337,8 @@ export default async function AdminDashboard() {
           )}
         </AdminSection>
       </div>
+
+      <TrialsCard trials={trials} />
 
       <AdminSection padding="list" className="gap-4">
         <AdminSectionHead

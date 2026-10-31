@@ -150,9 +150,31 @@ shallow (config only, fast).
     "accessGapCount": 0
   },
   "recentUsers": [ "UserRow (see 3), newest 10" ],
-  "recentPayments": [ "PaymentRow (see 9), newest 10" ]
+  "recentPayments": [ "PaymentRow (see 9), newest 10" ],
+  "trials": {
+    "windowDays": 60,
+    "running": 2, "cancelled": 1, "converted": 1, "ended": 1,
+    "conversionRate": 50,
+    "trials": [
+      {
+        "userId": "...", "name": "Lennon", "email": "...",
+        "provider": "revenuecat", "platform": "ios", "plan": "yearly",
+        "startedAt": "2026-10-30T10:00:00.000Z", "endsAt": "2026-11-06T10:00:00.000Z",
+        "status": "running", "daysLeft": 6
+      }
+    ]
+  }
 }
 ```
+
+- `trials`: free trials started in the last `windowDays` days (latest per
+  account, internal accounts left out), from the `trial_started` events.
+  `status`: `running` (turns into the paid subscription at `endsAt`),
+  `cancelled` (renewal turned off; stops at `endsAt`), `converted` (a payment
+  came in after the start), `ended` (over, nothing paid). `daysLeft` is null
+  once a trial is over. `conversionRate` = converted / (converted + ended), a
+  whole percentage, null before any trial finished. Open trials come first,
+  soonest end first.
 
 - `byPlatform` objects only contain keys with a count above 0; a missing key
   means 0. Their values add up to `total` for registrations (every account
@@ -253,7 +275,8 @@ shallow (config only, fast).
       "currentPeriodEnd": null, "cancelAtPeriodEnd": false,
       "trialEnd": null, "customerId": "cus_...", "subscriptionId": "sub_..."
     },
-    "store": { "active": false, "expiresAt": null },
+    "store": { "active": false, "expiresAt": null, "willRenew": null },
+    "trial": "Trial (as in 1, without userId/name/email) or null",
     "lifetime": { "active": false },
     "group": {
       "active": false, "until": null,

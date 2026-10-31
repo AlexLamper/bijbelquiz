@@ -11,6 +11,12 @@ export interface IUser extends Document {
   premiumStripe: boolean;
   premiumStore: boolean;
   storePremiumExpiresAt?: Date | null;
+  /**
+   * Whether the store subscription renews at `storePremiumExpiresAt`: false
+   * once the player turned renewal off (cancelled), null when unknown or when
+   * there is no store subscription. Read by the admin trial overview.
+   */
+  storeWillRenew?: boolean | null;
   hasLifetimePremium: boolean;
   /**
    * Premium switched on by hand (support, beheer). Set by
@@ -156,6 +162,7 @@ const UserSchema: Schema = new Schema({
   premiumStripe: { type: Boolean, default: false },
   premiumStore: { type: Boolean, default: false },
   storePremiumExpiresAt: { type: Date, default: null },
+  storeWillRenew: { type: Boolean, default: null },
   hasLifetimePremium: { type: Boolean, default: false },
   premiumGranted: { type: Boolean },
   groupPremiumUntil: { type: Date, default: null },

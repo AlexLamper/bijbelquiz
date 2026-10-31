@@ -412,6 +412,10 @@ export async function syncStorePremiumForAppUser(appUserId: string, options: { f
   if (!result) {
     throw new Error(`User not found: ${appUserId}`);
   }
+  await User.updateOne(
+    { _id: appUserId },
+    { $set: { storeWillRenew: state.active && !state.lifetime ? state.willRenew : null } },
+  );
 
   return { ...result, store: state };
 }
@@ -429,6 +433,20 @@ const GRANT_EVENTS = new Set([
   'TEMPORARY_ENTITLEMENT_GRANT',
   'SUBSCRIPTION_EXTENDED',
 ]);
+
+/**
+ * What an event says about renewal: false when the player turned it off,
+ * true when a (renewed or restarted) subscription renews again, null when the
+ * subscription is gone, undefined when the event says nothing about it.
+ */
+export function renewalFromEvent(event: RevenueCatEvent): boolean | null | undefined {
+  const type = (event.type || '').toUpperCase();
+  if (type === 'CANCELLATION') return isRefund(event) ? null : false;
+  if (type === 'EXPIRATION') return null;
+  if (type === 'NON_RENEWING_PURCHASE') return null;
+  if (['INITIAL_PURCHASE', 'RENEWAL', 'PRODUCT_CHANGE', 'UNCANCELLATION'].includes(type)) return true;
+  return undefined;
+}
 
 /** A CANCELLATION RevenueCat sends for a refund. */
 export function isRefund(event: RevenueCatEvent): boolean {
@@ -625,6 +643,13 @@ async function applyEventToAccount(
     premiumStore?: boolean;
     storePremiumExpiresAt?: Date | null;
   }>();
+  // Renewal is tracked even when access does not change: a cancellation in a
+  // trial leaves Premium on until the trial ends, but the trial will not convert.
+  const renewal = renewalFromEvent(event);
+  if (renewal !== undefined) {
+    await User.updateOne({ _id: userId }, { $set: { storeWillRenew: renewal } });
+  }
+
   const inferred = inferStoreUpdate(event, current ?? {});
   if (inferred.action === 'ignore') return `ignored:${inferred.reason}`;
   await applyStorePremium(userId, inferred.update);

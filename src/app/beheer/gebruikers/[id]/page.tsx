@@ -26,7 +26,7 @@ import { GrantPremiumButton, RevokePremiumButton } from '@/components/web2/behee
 import { formatMoneyCents } from '@/lib/premium-stats';
 import { GRANT_DURATION_LABELS, PREMIUM_SOURCE_LABELS, isGrantDuration } from '@/lib/admin/grant-options';
 import { METHOD_LABELS, PLATFORM_LABELS } from '@/lib/admin/platform-labels';
-import { getAdminUserDetail } from '@/lib/admin/users';
+import { getAdminUserDetail, type AdminUserDetail } from '@/lib/admin/users';
 
 export const metadata: Metadata = {
   title: 'Gebruiker - Beheer',
@@ -138,6 +138,7 @@ export default async function AdminUserPage({ params }: { params: Promise<{ id: 
           <div className="flex flex-wrap items-center gap-2 pt-1">
             <PremiumCell premium={premium} />
           </div>
+          {premium.trial && <TrialNote trial={premium.trial} />}
           <div className="flex flex-col">
             <SourceRow label="Website (Stripe)" active={premium.stripe.active}>
               {premium.stripe.status
@@ -149,7 +150,11 @@ export default async function AdminUserPage({ params }: { params: Promise<{ id: 
                 : 'Geen abonnement'}
             </SourceRow>
             <SourceRow label="App Store / Play" active={premium.store.active}>
-              {premium.store.expiresAt ? `${premium.store.active ? 'loopt tot' : 'liep tot'} ${formatAdminDate(premium.store.expiresAt)}` : 'Geen aankoop in de app'}
+              {premium.store.expiresAt
+                ? `${premium.store.active ? 'loopt tot' : 'liep tot'} ${formatAdminDate(premium.store.expiresAt)}${
+                    premium.store.active && premium.store.willRenew !== null ? ` · ${premium.store.willRenew ? 'verlengt' : 'opgezegd, stopt dan'}` : ''
+                  }`
+                : 'Geen aankoop in de app'}
             </SourceRow>
             <SourceRow label="Levenslang" active={premium.lifetime.active} />
             <SourceRow label="Groepslicentie" active={premium.group.active}>
@@ -405,4 +410,27 @@ export default async function AdminUserPage({ params }: { params: Promise<{ id: 
       )}
     </>
   );
+}
+
+const TRIAL_PLAN: Record<string, string> = { yearly: 'jaarabonnement', monthly: 'maandabonnement', lifetime: 'levenslang' };
+
+/** The latest free trial, in one sentence: what it is, until when, and what happens next. */
+function TrialNote({ trial }: { trial: NonNullable<AdminUserDetail['premium']['trial']> }) {
+  const plan = trial.plan ? (TRIAL_PLAN[trial.plan] ?? trial.plan) : 'abonnement';
+  const via = trial.provider === 'stripe' ? 'website' : 'app';
+  const until = formatAdminDate(trial.endsAt);
+  const left = trial.daysLeft === null ? '' : trial.daysLeft === 0 ? ', laatste dag' : trial.daysLeft === 1 ? ', nog 1 dag' : `, nog ${trial.daysLeft} dagen`;
+  const text = {
+    running: `Gratis proefweek (${plan}, via ${via}) tot ${until}${left}. Daarna gaat het betaalde abonnement automatisch in.`,
+    cancelled: `Gratis proefweek (${plan}, via ${via}) tot ${until}${left}, maar opgezegd: stopt daarna zonder te betalen.`,
+    converted: `Proefweek (${plan}, via ${via}) gestart ${formatAdminDate(trial.startedAt)} en omgezet: betaalt nu.`,
+    ended: `Proefweek (${plan}, via ${via}) liep tot ${until} en is niet omgezet.`,
+  }[trial.status];
+  const tone = {
+    running: 'border-lapis-pale bg-lapis-tint text-lapis',
+    cancelled: 'border-coral-line bg-coral-tint text-coral-text',
+    converted: 'border-transparent bg-green-tint text-green-text',
+    ended: 'border-line bg-chip text-ink-soft',
+  }[trial.status];
+  return <p className={`m-0 rounded-[12px] border px-3.5 py-2.5 text-sm font-bold leading-5 ${tone}`}>{text}</p>;
 }

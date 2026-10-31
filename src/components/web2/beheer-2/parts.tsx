@@ -220,6 +220,7 @@ const TAG_TONE = {
   warning: 'bg-coral-tint text-coral-text',
   accent: 'bg-lapis-tint text-lapis',
   gold: 'bg-gold-tint text-gold-text',
+  positive: 'bg-green-tint text-green-text',
 } as const;
 
 /** 20px square-ish tag next to a row title ("App", "Publiek", "Link"). */
