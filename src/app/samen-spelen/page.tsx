@@ -45,13 +45,14 @@ interface PageProps {
 
 export default async function SamenSpelenPage({ searchParams }: PageProps) {
   const session = await getServerSession(authOptions);
-
-  if (!session) {
-    redirect('/inloggen?callbackUrl=/samen-spelen');
-  }
-
   const { quiz: quizParam } = await searchParams;
   const preselectedQuizId = typeof quizParam === 'string' ? quizParam : null;
+
+  if (!session) {
+    // Back to the same quiz after signing in ("Speel samen met anderen" on a quiz).
+    const back = preselectedQuizId ? `/samen-spelen?quiz=${encodeURIComponent(preselectedQuizId)}` : '/samen-spelen';
+    redirect(`/inloggen?callbackUrl=${encodeURIComponent(back)}`);
+  }
 
   await connectDB();
 

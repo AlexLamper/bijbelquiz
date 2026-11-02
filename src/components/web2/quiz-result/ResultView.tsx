@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { ArrowUpRight, BookOpen, Lock, RefreshCw, Swords, Trophy } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Lock, RefreshCw, Trophy, Users } from 'lucide-react';
 
 import { Breadcrumbs, Button, Disclosure, DisclosureList, ProgressBar, ResultDisc, type Crumb } from '@/components/bq';
 import { BoltSolidIcon, FlameIcon } from '@/components/bq/icons';
@@ -341,12 +341,12 @@ export function ProgressCard({
   );
 }
 
-export function ResultActions({ replayHref, duelHref }: { replayHref: string; duelHref: string }) {
+export function ResultActions({ replayHref, playTogetherHref }: { replayHref: string; playTogetherHref: string }) {
   return (
     <div className="flex flex-col gap-3">
-      <Button href={duelHref} variant="secondary" size="xl" block>
-        <Swords className="size-[18px] text-coral-text" strokeWidth={2.2} aria-hidden="true" />
-        Daag een vriend uit
+      <Button href={playTogetherHref} variant="secondary" size="xl" block>
+        <Users className="size-[18px] text-lapis" strokeWidth={2.2} aria-hidden="true" />
+        Speel samen met anderen
       </Button>
       <Link
         href={replayHref}

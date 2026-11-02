@@ -149,8 +149,8 @@ function ModeCard({ panel, tint, title, text }: { panel: React.ReactNode; tint: 
 function HowItWorks() {
   return (
     <Container as="section" className="pt-12 m:pt-[72px]">
-      <SectionHead title="Zo werkt BijbelQuiz" subtitle="Drie manieren om te spelen, allemaal met dezelfde korte quizzen." />
-      <div className="mt-7 grid grid-cols-1 gap-5 m:grid-cols-3">
+      <SectionHead title="Zo werkt BijbelQuiz" subtitle="Alleen of samen, met dezelfde korte quizzen." />
+      <div className="mt-7 grid grid-cols-1 gap-5 m:grid-cols-2">
         <ModeCard
           tint="bg-lapis-tint"
           title="Speel een quiz"
@@ -175,32 +175,6 @@ function HowItWorks() {
               <span className="flex h-7 items-center gap-1.5 self-start whitespace-nowrap rounded-full bg-lapis-tint px-3 text-xs font-extrabold text-lapis">
                 <BookIcon size={14} strokeWidth={2.4} />
                 Lees Genesis 6:14
-              </span>
-            </span>
-          }
-        />
-        <ModeCard
-          tint="bg-coral-tint"
-          title="Daag een vriend uit"
-          text="Een duel speel je om de beurt: 3 rondes van 3 vragen. Je vriend krijgt een link en speelt gratis mee."
-          panel={
-            <span className="grid w-full max-w-[290px] grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-1.5 rounded-[14px] border-[1.5px] border-coral-line bg-card px-3.5 py-4">
-              <span className="flex flex-col items-center gap-1">
-                <Avatar name="A" tone="solid" size={44} />
-                <span className="text-[13px] font-extrabold">Jij</span>
-              </span>
-              <span className="flex flex-col items-center gap-1.5">
-                <span className="whitespace-nowrap font-display text-[32px] font-semibold leading-none">3 - 2</span>
-                <span className="flex items-center gap-1">
-                  <span className="size-[7px] rounded-full bg-coral-strong" />
-                  <span className="size-[7px] rounded-full bg-coral-strong" />
-                  <span className="size-[7px] rounded-full bg-segment" />
-                </span>
-                <span className="whitespace-nowrap text-xs font-bold text-ink-muted">Ronde 2 van 3</span>
-              </span>
-              <span className="flex flex-col items-center gap-1">
-                <Avatar name="L" tone="coral" size={44} />
-                <span className="text-[13px] font-extrabold">Lotte</span>
               </span>
             </span>
           }
@@ -516,7 +490,7 @@ function PremiumSection() {
 export const LANDING_FAQ: (FaqItem & { text: string })[] = [
   {
     question: 'Is BijbelQuiz gratis?',
-    text: 'Je speelt 3 quizzen gratis, zonder account. Daarna kun je Premium 7 dagen gratis proberen. Word je uitgedaagd voor een duel, dan speel je dat altijd gratis.',
+    text: 'Je speelt 3 quizzen gratis, zonder account. Daarna kun je Premium 7 dagen gratis proberen. Samen spelen met je gezin of vrienden is altijd gratis.',
   },
   {
     question: 'Heb ik een account nodig?',

@@ -226,7 +226,7 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
             levelProgress={(xp - level.minXp) / levelSpan}
             streak={streak}
           />
-          <ResultActions replayHref={`/quiz/${quizSlug}`} duelHref="/duels" />
+          <ResultActions replayHref={`/quiz/${quizSlug}`} playTogetherHref={`/samen-spelen?quiz=${quizId}`} />
           <StudieCard passage={wrongPassage} quizSlug={quizSlug} hadWrongAnswers={score < total} />
         </>
       }

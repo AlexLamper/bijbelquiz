@@ -132,7 +132,7 @@ export default function GuestResult({ quizId, quizSlug, quizTitle, crumbs, nextQ
               </Button>
             </div>
           </section>
-          <ResultActions replayHref={`/quiz/${quizSlug}`} duelHref="/duels" />
+          <ResultActions replayHref={`/quiz/${quizSlug}`} playTogetherHref={`/samen-spelen?quiz=${quizId}`} />
           <StudieCard passage={passage} quizSlug={quizSlug} hadWrongAnswers={hadWrongAnswers} />
         </>
       }

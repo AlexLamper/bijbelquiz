@@ -5,10 +5,8 @@ import { redirect } from 'next/navigation';
 import { Container } from '@/components/bq';
 import ProfileView, { type ProfileBadge } from '@/components/web2/account/ProfileView';
 import { authOptions } from '@/lib/auth';
-import { connectDB, Duel, User, UserProgress } from '@/database';
+import { connectDB, User, UserProgress } from '@/database';
 import { resolveAvatar } from '@/lib/avatar';
-import { listDuelPlayers } from '@/lib/duels/service';
-import { buildDuelInviteUrl } from '@/lib/duels/invite';
 import { BADGES, getLevelInfo } from '@/lib/gamification';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { daysUntilRenameAllowed } from '@/lib/profile-identity';
@@ -39,23 +37,8 @@ export default async function ProfilePage() {
   }
 
   const userId = String(user._id);
-  const [uniqueQuizIds, players, openInvite, dailyVerse] = await Promise.all([
+  const [uniqueQuizIds, dailyVerse] = await Promise.all([
     UserProgress.distinct('quizId', { userId: user._id }),
-    listDuelPlayers(userId, null).catch((error) => {
-      console.error('[PROFILE_DUEL_PLAYERS]', error);
-      return { players: [] };
-    }),
-    Duel.findOne({
-      challengerId: user._id,
-      mode: 'invite',
-      status: 'open',
-      opponentId: null,
-      inviteToken: { $exists: true },
-      turnDeadline: { $gt: new Date() },
-    })
-      .select('inviteToken')
-      .sort({ createdAt: -1 })
-      .lean(),
     fetchDailyVerse(),
   ]);
 
@@ -128,8 +111,6 @@ export default async function ProfilePage() {
           averageScore: user.averageScore || 0,
         }}
         badges={badges}
-        friends={players.players.slice(0, 4)}
-        inviteUrl={openInvite?.inviteToken ? buildDuelInviteUrl(openInvite.inviteToken) : null}
         isPremium={getPremiumSnapshot(user).isPremium}
         dailyVerse={dailyVerse}
       />

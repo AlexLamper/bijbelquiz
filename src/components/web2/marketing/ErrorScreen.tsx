@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button, Container } from '@/components/bq';
 import { supportEmail } from '@/lib/support-email';
 import { BugReportForm } from './BugReportForm';
-import { BookIcon, BugIcon, HomeIcon, IconTile, PeopleIcon, SwordsIcon, TrophyIcon } from './icons';
+import { BookIcon, BugIcon, HomeIcon, IconTile, PeopleIcon, TrophyIcon } from './icons';
 
 /**
  * P-Foutmelding: the page for "this went wrong" - the 404 page, the error
@@ -32,7 +32,6 @@ export interface ErrorScreenProps {
 
 const DESTINATIONS = [
   { label: 'Quizzen', href: '/quizzen', icon: BookIcon, tone: 'text-lapis' },
-  { label: 'Duels', href: '/duels', icon: SwordsIcon, tone: 'text-coral-strong' },
   { label: 'Samen spelen', href: '/samen-spelen', icon: PeopleIcon, tone: 'text-green' },
   { label: 'Ranglijst', href: '/ranglijst', icon: TrophyIcon, tone: 'text-gold-text' },
 ];

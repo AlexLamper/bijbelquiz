@@ -4,10 +4,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getServerSession } from 'next-auth';
-import { Check, ChevronRight, CircleHelp, Clock, Trophy } from 'lucide-react';
+import { Check, ChevronRight, CircleHelp, Clock, Trophy, Users } from 'lucide-react';
 
 import { BoltIcon, Breadcrumbs, Button, QuizCover, estimateMinutes, type Crumb } from '@/components/bq';
-import { BookIcon, SwordsIcon } from '@/components/web2/browsing/illustrations';
+import { BookIcon } from '@/components/web2/browsing/illustrations';
 import { FreeQuizzesLine, PassageReaderButton } from '@/components/web2/browsing/QuizDetailClient';
 import StudieLink from '@/components/StudieLink';
 import { connectDB, Quiz } from '@/database';
@@ -286,9 +286,9 @@ export default async function QuizLandingPage({ params }: PageProps) {
               <Button href={play} size="xl" className="px-10" data-analytics-id="quiz.landing.start">
                 Start quiz
               </Button>
-              <Button href="/duels" variant="secondary" size="xl" className="px-[22px]">
-                <SwordsIcon size={18} strokeWidth={2.2} className="text-coral-text" />
-                Daag een vriend uit
+              <Button href={`/samen-spelen?quiz=${quiz._id}`} variant="secondary" size="xl" className="px-[22px]">
+                <Users className="size-[18px] text-lapis" strokeWidth={2.2} aria-hidden="true" />
+                Speel samen met anderen
               </Button>
               {passage && passageLabel && (
                 <PassageReaderButton book={passage.book} chapter={passage.chapter} label={passageLabel} playHref={play} variant="link" />

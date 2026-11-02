@@ -1,8 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import {
   BookMarked,
@@ -11,7 +9,7 @@ import {
   Crown,
   Footprints,
   GraduationCap,
-  Link2,
+  Users,
   Lock,
   Pencil,
   Search,
@@ -45,20 +43,11 @@ export interface ProfileBadge {
   target: number;
 }
 
-interface Friend {
-  id: string;
-  name: string;
-  level: number;
-  avatar: AvatarConfig;
-}
-
 interface ProfileViewProps {
   identity: { name: string; avatar: AvatarConfig; nameChangeAllowedInDays: number; memberSince: string };
   level: { level: number; xp: number; isMaxLevel: boolean; xpToNext: number; progress: number };
   stats: { streak: number; xp: number; quizzesPlayed: number; averageScore: number };
   badges: ProfileBadge[];
-  friends: Friend[];
-  inviteUrl: string | null;
   isPremium: boolean;
   dailyVerse: { reference: string; text: string };
 }
@@ -308,7 +297,7 @@ function IdentityEditor({
       open={open}
       onOpenChange={onOpenChange}
       title="Profiel bewerken"
-      description="Je naam en je figuur zie je terug op de ranglijst, in duels en bij samen spelen."
+      description="Je naam en je figuur zie je terug op de ranglijst en bij samen spelen."
       size="lg"
       footer={
         <>
@@ -377,106 +366,17 @@ function IdentityEditor({
 
 /* ── Side column ─────────────────────────────────────────────────────────── */
 
-const challengeButton =
-  'inline-flex h-9 shrink-0 items-center rounded-[10px] border-0 border-b-[3px] border-lapis-pale bg-lapis-tint px-3.5 text-sm font-extrabold text-lapis-edge hover:bg-lapis-pale-strong disabled:opacity-60 dark:text-lapis-text dark:border-lapis-edge';
-
-function Friends({ friends }: { friends: Friend[] }) {
-  const router = useRouter();
-  const [pending, setPending] = React.useState<string | null>(null);
-
-  const challenge = async (friend: Friend) => {
-    setPending(friend.id);
-    try {
-      const response = await fetch('/api/duels', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ mode: 'friend', opponentId: friend.id }),
-      });
-      const payload = await response.json().catch(() => ({}));
-      if (!response.ok || !payload?.duel?.id) {
-        toast.error(payload?.error || 'Uitdagen is niet gelukt. Probeer het opnieuw.');
-        setPending(null);
-        return;
-      }
-      router.push(`/duels/${payload.duel.id}`);
-    } catch {
-      toast.error('Uitdagen is niet gelukt. Probeer het opnieuw.');
-      setPending(null);
-    }
-  };
-
-  return (
-    <Card padding="none" className="overflow-hidden">
-      <div className="flex items-baseline justify-between px-4 pb-2 pt-[18px]">
-        <h2 className="m-0 text-xl leading-[26px]">Vrienden</h2>
-        <Link href="/duels" className="text-sm font-extrabold no-underline">
-          Alle duels
-        </Link>
-      </div>
-      <ul className="m-0 list-none p-0">
-        {friends.map((friend) => (
-          <li key={friend.id} className="flex items-center gap-3 border-b border-line-soft px-4 py-3 last:border-b-0">
-            <Avatar name={friend.name} avatar={friend.avatar} size={40} />
-            <span className="flex min-w-0 flex-1 flex-col">
-              <span className="truncate text-[15px] font-extrabold">{friend.name}</span>
-              <span className="text-[13px] font-semibold text-ink-muted">Level {friend.level}</span>
-            </span>
-            <button
-              type="button"
-              className={challengeButton}
-              disabled={pending !== null}
-              aria-label={`${friend.name} uitdagen`}
-              onClick={() => void challenge(friend)}
-            >
-              {pending === friend.id ? 'Even...' : 'Uitdagen'}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </Card>
-  );
-}
-
-function InviteCard({ initialUrl }: { initialUrl: string | null }) {
-  const [url, setUrl] = React.useState(initialUrl);
-  const [busy, setBusy] = React.useState(false);
-
-  const copy = async () => {
-    setBusy(true);
-    try {
-      let link = url;
-      if (!link) {
-        const response = await fetch('/api/duels', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ mode: 'invite' }),
-        });
-        const payload = await response.json().catch(() => ({}));
-        if (!response.ok || !payload?.inviteUrl) {
-          toast.error(payload?.error || 'De link kon niet worden gemaakt.');
-          return;
-        }
-        link = payload.inviteUrl as string;
-        setUrl(link);
-      }
-      await navigator.clipboard.writeText(link);
-      toast.success('Link gekopieerd', { description: 'Stuur hem naar een vriend.' });
-    } catch {
-      toast.error(url ? `Kopiëren lukte niet. Je link: ${url}` : 'Kopiëren lukte niet.');
-    } finally {
-      setBusy(false);
-    }
-  };
-
+/** Samen spelen, where the duel friends and invite link used to be. */
+function PlayTogetherCard() {
   return (
     <Card padding="none" className="flex flex-col gap-3 px-[22px] py-5">
-      <h2 className="m-0 text-xl leading-[26px]">Vrienden uitnodigen</h2>
+      <h2 className="m-0 text-xl leading-[26px]">Samen spelen</h2>
       <p className="m-0 text-sm leading-[21px] font-semibold text-ink-muted">
-        Stuur je link. Wie hem opent, speelt meteen een duel tegen je, gratis.
+        Met je gezin of vrienden: iedereen speelt tegelijk dezelfde quiz, ieder op een eigen telefoon.
       </p>
-      <Button variant="secondary" block loading={busy} onClick={() => void copy()}>
-        {!busy && <Link2 className="size-[18px]" strokeWidth={2.4} aria-hidden="true" />}
-        Kopieer je link
+      <Button href="/samen-spelen" variant="secondary" block>
+        <Users className="size-[18px]" strokeWidth={2.4} aria-hidden="true" />
+        Start een kamer
       </Button>
     </Card>
   );
@@ -486,7 +386,7 @@ function InviteCard({ initialUrl }: { initialUrl: string | null }) {
 
 const statIcon = 'flex size-12 shrink-0 items-center justify-center rounded-[12px]';
 
-export default function ProfileView({ identity, level, stats, badges, friends, inviteUrl, isPremium, dailyVerse }: ProfileViewProps) {
+export default function ProfileView({ identity, level, stats, badges, isPremium, dailyVerse }: ProfileViewProps) {
   const [name, setName] = React.useState(identity.name);
   const [avatar, setAvatar] = React.useState(identity.avatar);
   const [cooldownDays, setCooldownDays] = React.useState(identity.nameChangeAllowedInDays);
@@ -593,8 +493,7 @@ export default function ProfileView({ identity, level, stats, badges, friends, i
             </Button>
           </Card>
         )}
-        {friends.length > 0 && <Friends friends={friends} />}
-        <InviteCard initialUrl={inviteUrl} />
+        <PlayTogetherCard />
         <Card padding="none" className="flex flex-col gap-2 px-[22px] py-5">
           <h2 className="m-0 text-xl leading-[26px]">Dagtekst</h2>
           <p className="m-0 text-sm font-extrabold text-lapis dark:text-lapis-text">{dailyVerse.reference}</p>

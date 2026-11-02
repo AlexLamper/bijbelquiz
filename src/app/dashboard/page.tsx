@@ -6,17 +6,14 @@ import { redirect } from 'next/navigation';
 import { QuizCard, type QuizCardProps } from '@/components/bq';
 import {
   ContinueBookCard,
-  DuelTurnCard,
   LevelCard,
   QuizOfTheDayCard,
   TopicTiles,
-  type DuelTurn,
   type TopicTile,
 } from '@/components/web2/browsing/DashboardParts';
 import { SeasonCard } from '@/components/web2/browsing/SeasonCard';
 import { connectDB, User } from '@/database';
 import { authOptions } from '@/lib/auth';
-import { listDuels } from '@/lib/duels/service';
 import { getLevelInfo } from '@/lib/gamification';
 import { loadBrowseCatalogue } from '@/lib/quiz-browse';
 import {
@@ -79,24 +76,6 @@ async function quizOfTheDay(catalogue: BrowseQuiz[]): Promise<BrowseQuiz | null>
   };
 }
 
-async function duelWaitingForMe(userId: string): Promise<DuelTurn | null> {
-  try {
-    const { myTurn } = await listDuels(userId);
-    const duel = myTurn.find((entry) => entry.opponent);
-    if (!duel || !duel.opponent) return null;
-    return {
-      id: duel.id,
-      opponentName: duel.opponent.name,
-      myScore: duel.myScore,
-      opponentScore: duel.opponentScore,
-      round: duel.currentRound,
-    };
-  } catch (error) {
-    console.error('[DASHBOARD_DUELS]', error);
-    return null;
-  }
-}
-
 function topicTiles(quizzes: BrowseQuiz[]): TopicTile[] {
   const otBooks = bookGroups(quizzes, 'OT').length;
   const ntBooks = bookGroups(quizzes, 'NT').length;
@@ -140,7 +119,7 @@ export default async function DashboardPage() {
     streak = nextStreak;
   }
 
-  const [{ quizzes }, duel] = await Promise.all([loadBrowseCatalogue(userId), duelWaitingForMe(userId)]);
+  const { quizzes } = await loadBrowseCatalogue(userId);
   const daily = await quizOfTheDay(quizzes);
   const popular = pickPopular(quizzes, 6);
   const tiles = topicTiles(quizzes);
@@ -219,7 +198,6 @@ export default async function DashboardPage() {
               allHref={`/quizzen?boek=${resume.book.slug}`}
             />
           )}
-          {duel && <DuelTurnCard duel={duel} />}
         </aside>
       </div>
     </div>

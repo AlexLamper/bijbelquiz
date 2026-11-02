@@ -12,7 +12,8 @@ export interface NavLink {
 
 export const MAIN_NAV: NavLink[] = [
   { label: 'Quizzen', href: '/quizzen', also: ['/quiz', '/bijbelquiz'] },
-  { label: 'Duels', href: '/duels' },
+  // Samen spelen took the place of Duels, as in the app: a group playing
+  // together gets far more play than two players taking turns.
   { label: 'Samen spelen', href: '/samen-spelen' },
   { label: 'Ranglijst', href: '/ranglijst' },
   { label: 'Premium', href: '/premium' },
@@ -23,7 +24,6 @@ export const FOOTER_NAV: { title: string; links: NavLink[] }[] = [
     title: 'Spelen',
     links: [
       { label: 'Quizzen', href: '/quizzen' },
-      { label: 'Duels', href: '/duels' },
       { label: 'Samen spelen', href: '/samen-spelen' },
       { label: 'Ranglijst', href: '/ranglijst' },
     ],
