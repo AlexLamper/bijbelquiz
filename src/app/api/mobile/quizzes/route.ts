@@ -4,6 +4,7 @@ import { quizThumbnailUrl, resolveQuizImageUrl } from '@/lib/quiz-image';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { bookByName } from '@/lib/bible-books';
 import { bookCodeFromSlug, sortQuizzes } from '@/lib/quiz-order';
+import { quizPlayerCounts } from '@/lib/quiz-browse';
 
 /**
  * GET /api/mobile/quizzes - the catalogue the app's library, home screen and
@@ -14,6 +15,9 @@ import { bookCodeFromSlug, sortQuizzes } from '@/lib/quiz-order';
  * uncached - most of that payload was never shown. The chapter each quiz is
  * about is worked out here from the question references, so the library can
  * offer its "per bijbelboek" view and search without downloading the questions.
+ *
+ * `players` is how many different accounts finished the quiz, so the app's
+ * "Populair" lists rank on what people actually play.
  *
  * The list is the same for everybody, so it is memoised briefly and marked
  * cacheable for the CDN.
@@ -35,7 +39,7 @@ export async function GET() {
 
     // Approved (or legacy, status-less) and still active: what the website
     // lists, and nothing a player cannot start.
-    const [rows, categories] = await Promise.all([
+    const [rows, categories, players] = await Promise.all([
       Quiz.aggregate([
         {
           $match: {
@@ -61,6 +65,8 @@ export async function GET() {
         },
       ]),
       Category.find({}).lean(),
+      // A failed count only costs the ranking, never the catalogue.
+      quizPlayerCounts().catch(() => new Map<string, number>()),
     ]);
 
     const categoryById = new Map<string, { id: string; name: string | null; slug: string | null }>();
@@ -94,6 +100,7 @@ export async function GET() {
         isPremium: Boolean(quiz.isPremium),
         isActive: true,
         createdAt: quiz.createdAt ? new Date(quiz.createdAt).toISOString() : '',
+        players: players.get(String(quiz._id)) ?? 0,
         passage: resolveQuizPassage(
           (quiz.references || []).map((reference: unknown) => ({
             bibleReference: typeof reference === 'string' ? reference : undefined,
