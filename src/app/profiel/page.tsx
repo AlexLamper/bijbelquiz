@@ -10,6 +10,7 @@ import { resolveAvatar } from '@/lib/avatar';
 import { BADGES, getLevelInfo } from '@/lib/gamification';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { daysUntilRenameAllowed } from '@/lib/profile-identity';
+import { dutchReference, dutchReferenceString } from '@/lib/daytext-reference';
 
 export const metadata: Metadata = {
   title: 'Mijn Profiel - BijbelQuiz',
@@ -140,7 +141,10 @@ async function fetchDailyVerse(): Promise<{ reference: string; text: string }> {
       const payload = await response.json();
       if (payload?.text && (payload?.reference || (payload?.book && payload?.chapter && payload?.verse))) {
         return {
-          reference: payload.reference || `${payload.book} ${payload.chapter}:${payload.verse}`,
+          // BijbelAPI names the book in English ("Proverbs"); shown in Dutch.
+          reference: payload.reference
+            ? dutchReferenceString(payload.reference)
+            : dutchReference({ book: payload.book, chapter: payload.chapter, verse: payload.verse, verseEnd: payload.verse_end }),
           text: payload.text,
         };
       }

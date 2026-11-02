@@ -1,21 +1,25 @@
 import { NextResponse } from 'next/server';
 
+import { dutchReference, dutchReferenceString } from '@/lib/daytext-reference';
+
 interface DayTextPayload {
   book?: string;
   chapter?: number;
   verse?: number;
+  verse_end?: number | string;
   version?: string;
   text?: string;
   reference?: string;
 }
 
 function toReference(payload: DayTextPayload): string {
+  // BijbelAPI names the book in English ("Proverbs"); the site shows Dutch.
   if (payload.reference && payload.reference.trim().length > 0) {
-    return payload.reference;
+    return dutchReferenceString(payload.reference);
   }
 
   if (payload.book && payload.chapter && payload.verse) {
-    return `${payload.book} ${payload.chapter}:${payload.verse}`;
+    return dutchReference({ book: payload.book, chapter: payload.chapter, verse: payload.verse, verseEnd: payload.verse_end });
   }
 
   return 'Dagtekst';
