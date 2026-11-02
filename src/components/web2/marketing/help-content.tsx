@@ -10,7 +10,7 @@ import type { FaqItem } from './FaqList';
  * `featured` questions are the list of the design; the others only show up
  * when a topic is picked or a search finds them.
  */
-export type HelpTopic = 'start' | 'quizzen' | 'duels' | 'samen' | 'premium' | 'account';
+export type HelpTopic = 'start' | 'quizzen' | 'samen' | 'premium' | 'account';
 
 export interface HelpQuestion extends FaqItem {
   id: string;
@@ -27,22 +27,13 @@ export const HELP_QUESTIONS: HelpQuestion[] = [
     featured: true,
     topics: ['start', 'premium'],
     question: 'Is BijbelQuiz gratis?',
-    text: 'Je speelt 3 quizzen gratis, zonder account. Duels en samen spelen zijn altijd gratis. Wil je alle quizzen en de uitleg bij elk antwoord, dan probeer je Premium 7 dagen gratis.',
+    text: 'Je speelt 3 quizzen gratis, zonder account. Samen spelen is altijd gratis. Wil je alle quizzen en de uitleg bij elk antwoord, dan probeer je Premium 7 dagen gratis.',
     answer: (
       <>
-        Je speelt 3 quizzen gratis, zonder account. Duels en samen spelen zijn altijd gratis. Wil je alle quizzen en de uitleg
+        Je speelt 3 quizzen gratis, zonder account. Samen spelen is altijd gratis. Wil je alle quizzen en de uitleg
         bij elk antwoord, dan probeer je Premium 7 dagen gratis.
       </>
     ),
-  },
-  {
-    id: 'duel',
-    featured: true,
-    topics: ['duels'],
-    question: 'Hoe werkt een duel?',
-    text: 'Je daagt iemand uit met een link, bijvoorbeeld via WhatsApp. Jullie spelen om de beurt 3 rondes van 3 vragen. Wie de meeste vragen goed heeft, wint.',
-    answer:
-      'Je daagt iemand uit met een link, bijvoorbeeld via WhatsApp. Jullie spelen om de beurt 3 rondes van 3 vragen. Wie de meeste vragen goed heeft, wint.',
   },
   {
     id: 'groep',
@@ -124,10 +115,10 @@ export const HELP_QUESTIONS: HelpQuestion[] = [
     id: 'account-nodig',
     topics: ['start', 'account'],
     question: 'Heb ik een account nodig?',
-    text: 'Niet om te beginnen. Met een account bewaar je je XP, je reeks en je duels. Inloggen kan met Google, Apple of je e-mailadres.',
+    text: 'Niet om te beginnen. Met een account bewaar je je XP en je reeks. Inloggen kan met Google, Apple of je e-mailadres.',
     answer: (
       <>
-        Niet om te beginnen. Met een account bewaar je je XP, je reeks en je duels. <Link href="/registreren">Maak een account</Link>{' '}
+        Niet om te beginnen. Met een account bewaar je je XP en je reeks. <Link href="/registreren">Maak een account</Link>{' '}
         of log in met Google, Apple of je e-mailadres.
       </>
     ),
@@ -206,6 +197,5 @@ export const HELP_QUESTIONS: HelpQuestion[] = [
 /** Search chips under the search box: each opens one answer. */
 export const POPULAR_SEARCHES = [
   { label: 'Premium opzeggen', id: 'premium-opzeggen' },
-  { label: 'Een duel starten', id: 'duel' },
   { label: 'Meedoen met een code', id: 'groep' },
 ];

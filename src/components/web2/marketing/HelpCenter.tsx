@@ -15,14 +15,12 @@ import {
   PlayIcon,
   SearchIcon,
   ShieldCheckIcon,
-  SwordsIcon,
   type TileTone,
 } from './icons';
 
 const TOPICS: { id: HelpTopic; title: string; text: string; tone: TileTone; icon: React.ReactNode }[] = [
   { id: 'start', title: 'Aan de slag', text: 'Een account maken, inloggen en je eerste quiz', tone: 'grey', icon: <PlayIcon /> },
   { id: 'quizzen', title: 'Quizzen en uitleg', text: 'Quizzen spelen, uitleg en bijbelverwijzingen', tone: 'lapis', icon: <BookIcon /> },
-  { id: 'duels', title: 'Duels', text: 'Iemand uitdagen, om de beurt spelen en de stand', tone: 'coral', icon: <SwordsIcon /> },
   { id: 'samen', title: 'Samen spelen', text: 'Een kamer starten en meedoen met een code', tone: 'green', icon: <PeopleIcon /> },
   { id: 'premium', title: 'Premium en betalen', text: 'Proefperiode, opzeggen en de groepslicentie', tone: 'gold', icon: <CrownIcon /> },
   { id: 'account', title: 'Account en privacy', text: 'Je gegevens en je account verwijderen', tone: 'grey', icon: <ShieldCheckIcon /> },
@@ -52,7 +50,7 @@ export function HelpCenter() {
   const [topic, setTopic] = React.useState<HelpTopic | null>(null);
   const faqRef = React.useRef<HTMLElement>(null);
 
-  // `/hulp#duel` from the contact page: open that answer once it is rendered.
+  // `/hulp#groep` from the contact page: open that answer once it is rendered.
   React.useEffect(() => {
     const open = () => {
       const id = decodeURIComponent(window.location.hash.slice(1));

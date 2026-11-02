@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const QUICK_ANSWERS = [
   { label: 'Hoe zeg ik Premium op?', href: '/hulp#premium-opzeggen' },
-  { label: 'Hoe werkt een duel?', href: '/hulp#duel' },
+  { label: 'Hoe start ik een spel voor mijn groep?', href: '/hulp#groep' },
   { label: 'Hoe verwijder ik mijn account?', href: '/hulp#account-verwijderen' },
 ];
 

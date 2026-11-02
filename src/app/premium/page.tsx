@@ -181,7 +181,7 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
               },
               {
                 question: 'Wat als ik opzeg in de proefperiode?',
-                answer: 'Dan betaal je niets en speel je gratis verder. Je XP, je reeks en je duels blijven bewaard.',
+                answer: 'Dan betaal je niets en speel je gratis verder. Je XP en je reeks blijven bewaard.',
               },
               {
                 question: 'Werkt Premium ook in de app?',
@@ -259,7 +259,6 @@ function ComparisonTable({ quizCount }: { quizCount: number }) {
     { label: 'Quizzen', free: `${FREE_QUIZ_LIMIT} quizzen`, premium: quizCount > 0 ? `Alle ${quizCount} quizzen` : 'Alle quizzen' },
     { label: 'Uitleg bij elk antwoord', free: 'Alleen de bijbelverwijzing', premium: 'Bij elke vraag' },
     { label: 'Antwoorden terugkijken', free: 'Alleen je score', premium: 'Na elke quiz' },
-    { label: 'Duels', free: true, premium: true },
     { label: 'Samen spelen', free: true, premium: true },
     { label: 'XP, reeks en ranglijst', free: true, premium: true },
   ];

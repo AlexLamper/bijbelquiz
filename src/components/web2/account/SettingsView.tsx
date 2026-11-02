@@ -269,7 +269,7 @@ export default function SettingsView({ initialData, premium, billingError = null
                 <RowIcon>
                   <User strokeWidth={2.2} />
                 </RowIcon>
-                <RowText title="Naam" hint="Zo zien anderen je op de ranglijst en in duels." htmlFor="set-name" />
+                <RowText title="Naam" hint="Zo zien anderen je op de ranglijst en als je samen speelt." htmlFor="set-name" />
                 <RowControl>
                   <Input
                     id="set-name"

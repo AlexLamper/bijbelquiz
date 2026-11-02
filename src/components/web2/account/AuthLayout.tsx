@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Check, Swords } from 'lucide-react';
+import { Check, Users } from 'lucide-react';
 
 import { Container } from '@/components/bq';
 import { BoltSolidIcon, FlameIcon } from '@/components/bq/icons';
@@ -94,11 +94,11 @@ function VisualFrame({ label, children }: { label: string; children: React.React
   );
 }
 
-/** "Alles staat voor je klaar": a quiz to continue, a duel, XP and a streak. */
+/** "Alles staat voor je klaar": a quiz to continue, a room, XP and a streak. */
 export function LoginVisual() {
   return (
     <section aria-labelledby="login-visual-title" className="flex min-w-0 flex-col items-center gap-7">
-      <VisualFrame label="Voorbeeld: je quiz over Lucas 15 staat op 4 van 10, Lotte wacht op jou in een duel, 1.240 XP en een reeks van 6 dagen">
+      <VisualFrame label="Voorbeeld: je quiz over Lucas 15 staat op 4 van 10, je groep wacht in de kamer, 1.240 XP en een reeks van 6 dagen">
         <span aria-hidden="true" className="absolute right-11 top-[70px] size-[38px] rounded-full bg-gold-wash" />
         <div className="absolute left-1/2 top-[92px] -ml-[150px] flex w-[300px] -rotate-3 flex-col gap-3 rounded-[18px] border border-line bg-card p-[18px] shadow-float">
           <span className="flex items-center justify-between">
@@ -119,8 +119,8 @@ export function LoginVisual() {
           </span>
         </div>
         <span className={cn(floatChip, 'right-0 top-[14px] h-11 rotate-[4deg] gap-2 rounded-[14px] px-3.5 text-sm')}>
-          <Swords className="size-4 text-coral-strong" strokeWidth={2.4} aria-hidden="true" />
-          Lotte wacht op jou
+          <Users className="size-4 text-green" strokeWidth={2.4} aria-hidden="true" />
+          Je groep wacht op jou
         </span>
         <span className="absolute bottom-[58px] left-0 flex h-[38px] -rotate-[5deg] items-center gap-1.5 rounded-full bg-gold px-3.5 text-[15px] font-extrabold text-gold-ink shadow-float">
           <BoltSolidIcon size={15} />
@@ -136,7 +136,7 @@ export function LoginVisual() {
           Alles staat voor je klaar
         </h2>
         <p className="m-0 text-base leading-6 font-semibold text-ink-muted">
-          Je reeks, XP en duels horen bij je account. Speel verder op de website of in de app.
+          Je reeks en XP horen bij je account. Speel verder op de website of in de app.
         </p>
       </div>
     </section>
@@ -146,11 +146,11 @@ export function LoginVisual() {
 const answerTile =
   'flex h-[42px] items-center justify-center rounded-[10px] border border-line border-b-[3px] border-b-edge bg-card text-base font-extrabold text-ink-faint';
 
-/** "Hoe goed ken jij de Bijbel?": a question, a duel score, XP and a streak. */
+/** "Hoe goed ken jij de Bijbel?": a question, a room, XP and a streak. */
 export function RegisterVisual() {
   return (
     <section aria-labelledby="reg-visual-title" className="flex min-w-0 flex-col items-center gap-7">
-      <VisualFrame label="Voorbeeld: een quizvraag over Genesis 7 met het goede antwoord, een duel tegen Lotte, XP en een reeks">
+      <VisualFrame label="Voorbeeld: een quizvraag over Genesis 7 met het goede antwoord, een kamer met 6 spelers, XP en een reeks">
         <span aria-hidden="true" className="absolute right-11 top-[62px] size-[38px] rounded-full bg-gold-wash" />
         <div className="absolute left-1/2 top-[72px] -ml-[150px] flex w-[300px] -rotate-3 flex-col gap-3 rounded-[18px] border border-line bg-card p-[18px] shadow-float">
           <span className="self-start rounded-full bg-lapis-tint px-[9px] py-[3px] text-xs font-extrabold tracking-[0.04em] text-lapis-edge dark:text-lapis-text">
@@ -168,8 +168,8 @@ export function RegisterVisual() {
           </span>
         </div>
         <span className={cn(floatChip, 'right-0 top-2.5 h-11 rotate-[4deg] gap-2 rounded-[14px] px-3.5 text-sm text-ink-soft')}>
-          <Swords className="size-4 text-coral-strong" strokeWidth={2.4} aria-hidden="true" />
-          Jij <span className="font-display text-lg font-semibold text-ink">3 - 2</span> Lotte
+          <Users className="size-4 text-green" strokeWidth={2.4} aria-hidden="true" />
+          <span className="font-display text-lg font-semibold text-ink">6</span> spelers in de kamer
         </span>
         <span className="absolute bottom-[54px] left-1 flex h-[38px] -rotate-[5deg] items-center gap-1.5 rounded-full bg-gold px-3.5 text-[15px] font-extrabold text-gold-ink shadow-float">
           <BoltSolidIcon size={15} />
@@ -185,7 +185,7 @@ export function RegisterVisual() {
           Hoe goed ken jij de Bijbel?
         </h2>
         <ul className="m-0 flex list-none flex-col gap-3 p-0">
-          {['Begin gratis met 3 quizzen', 'Bewaar je XP, reeks en badges', 'Daag vrienden uit voor een duel'].map((item) => (
+          {['Begin gratis met 3 quizzen', 'Bewaar je XP, reeks en badges', 'Speel samen met gezin of vrienden'].map((item) => (
             <li key={item} className="flex items-center gap-2.5 text-base font-bold">
               <span aria-hidden="true" className="flex size-6 shrink-0 items-center justify-center rounded-full bg-green">
                 <Check className="size-[13px] text-white" strokeWidth={3.4} />

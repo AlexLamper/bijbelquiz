@@ -18,7 +18,7 @@ import StudieLink from '@/components/StudieLink';
 import { cn } from '@/lib/utils';
 import { FaqList, type FaqItem } from './FaqList';
 import type { LandingData, LandingTestament } from './landing-data';
-import { BookIcon, CheckDisc, CheckIcon, ChevronRightIcon, CrownIcon, LockIcon, PeopleIcon, ShieldCheckIcon, SwordsIcon } from './icons';
+import { BookIcon, CheckDisc, CheckIcon, ChevronRightIcon, CrownIcon, LockIcon, PeopleIcon, ShieldCheckIcon } from './icons';
 import { SectionHead } from './SectionHead';
 
 /** P-Landing: the home page for visitors who are not signed in. */
@@ -41,7 +41,7 @@ function HeroVisual() {
   return (
     <div
       role="img"
-      aria-label="Voorbeeld: een quizvraag over Johannes 6 met het goede antwoord en uitleg, een duel tegen Lotte, verdiende XP en een reeks van 6 dagen"
+      aria-label="Voorbeeld: een quizvraag over Johannes 6 met het goede antwoord en uitleg, een kamer met 6 spelers, verdiende XP en een reeks van 6 dagen"
       className="relative box-border w-full max-w-[540px] justify-self-center pb-[72px] pt-[76px]"
     >
       <span aria-hidden="true" className="absolute left-1/2 top-[30px] aspect-square w-[410px] max-w-full -translate-x-1/2 rounded-full bg-lapis-wash" />
@@ -80,8 +80,8 @@ function HeroVisual() {
         </span>
       </div>
       <span className="absolute right-0 top-[18px] flex h-11 rotate-[4deg] items-center gap-2 whitespace-nowrap rounded-[14px] border border-line bg-card px-3.5 text-sm font-extrabold text-ink-soft shadow-float">
-        <SwordsIcon size={17} strokeWidth={2.4} className="text-coral-strong" />
-        Jij <span className="font-display text-[19px] font-semibold text-ink">3 - 2</span> Lotte
+        <PeopleIcon size={17} strokeWidth={2.4} className="text-green" />
+        <span className="font-display text-[19px] font-semibold text-ink">6</span> spelers in de kamer
       </span>
       <span className="absolute bottom-5 left-0 flex h-[38px] -rotate-[5deg] items-center gap-[5px] whitespace-nowrap rounded-full bg-gold px-[13px] text-[15px] font-extrabold text-gold-ink shadow-float m:bottom-[132px]">
         <BoltSolidIcon size={15} />
@@ -105,8 +105,8 @@ function Hero() {
             de Bijbel?
           </h1>
           <p className="mt-[18px] max-w-[500px] text-[19px] font-semibold leading-[29px] text-ink-soft">
-            Korte quizzen over alle bijbelboeken, met uitleg bij elk antwoord. Speel alleen, daag een vriend uit of speel samen met je
-            groep.
+            Korte quizzen over alle bijbelboeken, met uitleg bij elk antwoord. Speel alleen, of samen met je gezin,
+            vrienden of groep.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-x-[18px] gap-y-3.5">
             {/* Straight to the quizzes: a visitor who came to play should not
@@ -494,7 +494,7 @@ export const LANDING_FAQ: (FaqItem & { text: string })[] = [
   },
   {
     question: 'Heb ik een account nodig?',
-    text: 'Niet om te beginnen. Met een account bewaar je je XP, je reeks en je duels. Inloggen kan met Google, Apple of je e-mailadres.',
+    text: 'Niet om te beginnen. Met een account bewaar je je XP en je reeks. Inloggen kan met Google, Apple of je e-mailadres.',
   },
   {
     question: 'Welke bijbelvertaling gebruiken jullie?',

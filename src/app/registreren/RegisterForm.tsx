@@ -73,7 +73,7 @@ export default function RegisterForm({ appleEnabled }: { appleEnabled: boolean }
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         {error && <AuthNotice tone="error">{error}</AuthNotice>}
 
-        <Field label="Naam" htmlFor="reg-name" hint={<span id="reg-name-hint">Zo zien anderen je op de ranglijst en in duels.</span>}>
+        <Field label="Naam" htmlFor="reg-name" hint={<span id="reg-name-hint">Zo zien anderen je op de ranglijst en als je samen speelt.</span>}>
           <Input
             id="reg-name"
             name="name"
