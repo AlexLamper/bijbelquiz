@@ -118,8 +118,13 @@ export async function applyQuizAction(id: string, body: { action?: unknown; isPr
       update = { status: 'draft' };
       break;
     case 'premium':
-      if (typeof body.isPremium !== 'boolean') return { ok: false, status: 400, error: 'Geef aan of de quiz Premium is.' };
-      update = { isPremium: body.isPremium };
+      // There are no Premium quizzes any more (free players get 3 quizzes,
+      // Premium all of them). Older admin builds still send this; switching a
+      // quiz off is a no-op that succeeds, switching one on is refused.
+      if (body.isPremium === true) {
+        return { ok: false, status: 400, error: 'Premium-quizzen bestaan niet meer: gratis spelers krijgen 3 quizzen, Premium alles.' };
+      }
+      update = { isPremium: false };
       break;
   }
 

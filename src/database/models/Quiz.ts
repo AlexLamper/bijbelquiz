@@ -70,7 +70,9 @@ const QuizSchema: Schema = new Schema({
   categoryId: { type: Schema.Types.ObjectId, ref: 'Category', required: true },
   rewardXp: { type: Number, default: 50, min: 0 },
   difficulty: { type: String, enum: ['easy', 'medium', 'hard'], default: 'medium' },
-  isPremium: { type: Boolean, default: false },
+  // Always false: there are no Premium quizzes (free players get 3 quizzes,
+  // Premium all). Kept because older app builds read it; see clearPremiumQuizzes.
+  isPremium: { type: Boolean, default: false, set: () => false },
   status: { type: String, enum: ['draft', 'pending', 'approved', 'rejected'], default: 'approved' },
   createdBy: { type: Schema.Types.ObjectId, ref: 'User' },
   questions: { type: [QuestionSchema], default: [] },

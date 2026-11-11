@@ -298,7 +298,8 @@ export function parseImport(text: string, categories: EditorCategory[]): EditorQ
     categoryId: category?._id ?? '',
     rewardXp: data.rewardXp ?? 100,
     difficulty: data.difficulty ?? 'medium',
-    isPremium: data.isPremium ?? false,
+    // There are no Premium quizzes: free players get 3 quizzes, Premium all.
+    isPremium: false,
     status: data.status ?? 'draft',
     questions: data.questions.map((question) => ({
       key: newKey(),

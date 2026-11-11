@@ -127,25 +127,6 @@ export default function QuizModerationList({ initialStatus }: { initialStatus: S
     }
   };
 
-  const togglePremium = async (quiz: QuizRow) => {
-    const next = !quiz.isPremium;
-    setBusyId(quiz._id);
-    try {
-      const res = await fetch(`/api/admin/quizzes/${quiz._id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ isPremium: next }),
-      });
-      if (!res.ok) throw new Error();
-      patchLocal(quiz._id, { isPremium: next });
-      toast.success(next ? `"${quiz.title}" is nu een Premium-quiz` : `"${quiz.title}" is nu gratis`);
-    } catch {
-      toast.error('Premium wijzigen is niet gelukt');
-    } finally {
-      setBusyId(null);
-    }
-  };
-
   const deleteQuiz = async (quiz: QuizRow) => {
     if (!window.confirm(`Weet je zeker dat je "${quiz.title}" wilt verwijderen? Dit kan niet ongedaan worden.`)) return;
     setBusyId(quiz._id);
@@ -253,7 +234,6 @@ export default function QuizModerationList({ initialStatus }: { initialStatus: S
                   quiz={quiz}
                   busy={busyId === quiz._id}
                   onStatus={updateStatus}
-                  onPremium={togglePremium}
                   onDelete={deleteQuiz}
                 />
               ))}
@@ -269,13 +249,11 @@ function QuizListRow({
   quiz,
   busy,
   onStatus,
-  onPremium,
   onDelete,
 }: {
   quiz: QuizRow;
   busy: boolean;
   onStatus: (quiz: QuizRow, status: StatusFilter, message: string) => void;
-  onPremium: (quiz: QuizRow) => void;
   onDelete: (quiz: QuizRow) => void;
 }) {
   const author = quiz.createdBy?.name?.trim();
@@ -295,7 +273,7 @@ function QuizListRow({
       <span className="tabular hidden text-sm font-semibold text-ink-soft min-[1101px]:block">{date}</span>
 
       <div className="grid min-w-0 grid-cols-2 items-center gap-1.5 min-[1101px]:flex min-[1101px]:justify-end">
-        <StatusActions quiz={quiz} busy={busy} onStatus={onStatus} onPremium={onPremium} />
+        <StatusActions quiz={quiz} busy={busy} onStatus={onStatus} />
         <span className="col-span-2 flex gap-1.5">
           <a
             href={`/quiz/${quiz._id}`}
@@ -341,12 +319,10 @@ function StatusActions({
   quiz,
   busy,
   onStatus,
-  onPremium,
 }: {
   quiz: QuizRow;
   busy: boolean;
   onStatus: (quiz: QuizRow, status: StatusFilter, message: string) => void;
-  onPremium: (quiz: QuizRow) => void;
 }) {
   const icon = 'size-4';
   switch (quiz.status) {
@@ -383,7 +359,6 @@ function StatusActions({
             <Undo2 className={icon} strokeWidth={2.4} aria-hidden="true" />
             Depubliceren
           </button>
-          <PremiumToggle quiz={quiz} busy={busy} onPremium={onPremium} />
         </>
       );
     default:
@@ -393,27 +368,8 @@ function StatusActions({
             <Upload className={icon} strokeWidth={2.4} aria-hidden="true" />
             Publiceren
           </button>
-          <PremiumToggle quiz={quiz} busy={busy} onPremium={onPremium} />
         </>
       );
   }
 }
 
-function PremiumToggle({ quiz, busy, onPremium }: { quiz: QuizRow; busy: boolean; onPremium: (quiz: QuizRow) => void }) {
-  const on = Boolean(quiz.isPremium);
-  return (
-    <button
-      type="button"
-      disabled={busy}
-      aria-pressed={on}
-      title={on ? 'Premium-quiz: alleen te spelen met Premium. Klik om gratis te maken.' : 'Gratis quiz. Klik om alleen voor Premium te maken.'}
-      onClick={() => onPremium(quiz)}
-      className={cn(actionBase, on ? 'border-gold-edge/40 bg-gold-tint text-gold-text hover:border-gold-edge/70' : 'border-line bg-card text-ink-soft hover:bg-chip')}
-    >
-      <svg width={16} height={16} viewBox="0 0 24 24" aria-hidden="true" strokeWidth={1.8} strokeLinejoin="round" className={on ? 'fill-gold stroke-gold-text' : 'fill-none stroke-current'}>
-        <path d="M3 18L5 7l5 5 2-7 2 7 5-5 2 11z" />
-      </svg>
-      Premium
-    </button>
-  );
-}

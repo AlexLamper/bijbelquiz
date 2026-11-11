@@ -58,6 +58,7 @@ export async function connectDB() {
     cached.conn = await cached.promise;
     // Once per process, in the background: it must not slow the first request.
     void dropLegacyPaymentIndexes(cached.conn.connection);
+    void clearPremiumQuizzes(cached.conn.connection);
     return cached.conn;
   } catch (e) {
     cached.promise = null;
@@ -68,6 +69,21 @@ export async function connectDB() {
     }
 
     throw e;
+  }
+}
+
+/**
+ * There are no Premium quizzes: free players get 3 quizzes and Premium opens
+ * all of them, so a quiz locked behind Premium on top of that only confused
+ * people. The flag stays in the schema (older app builds read it) but is
+ * cleared on any quiz that still has it - once per process, a no-op after the
+ * first run. The Quiz model refuses to set it again.
+ */
+async function clearPremiumQuizzes(connection: mongoose.Connection) {
+  try {
+    await connection.collection('quizzes').updateMany({ isPremium: true }, { $set: { isPremium: false } });
+  } catch (error) {
+    console.error('[CLEAR_PREMIUM_QUIZZES]', error);
   }
 }
 

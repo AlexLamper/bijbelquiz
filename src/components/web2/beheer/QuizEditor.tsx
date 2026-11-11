@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Check, ChevronDown, ChevronLeft, ChevronUp, FileJson, Plus, Trash2, Upload, X } from 'lucide-react';
 
-import { Button, Switch, toast } from '@/components/bq';
+import { Button, toast } from '@/components/bq';
 import { BoltSolidIcon } from '@/components/bq/icons';
 import { parseBibleReference } from '@/lib/bible-reference';
 import { cn } from '@/lib/utils';
@@ -403,15 +403,6 @@ export default function QuizEditor({ categories, initial }: { categories: Editor
                 </span>
               </span>
             </AdminField>
-            <div className="flex items-center gap-3 border-t border-line-soft pt-3.5">
-              <span className="flex flex-1 flex-col">
-                <span id={f('premium')} className="text-[15px] font-extrabold">
-                  Premium-quiz
-                </span>
-                <span className="text-[13px] font-semibold leading-[18px] text-ink-muted">Alleen te spelen met Premium.</span>
-              </span>
-              <Switch checked={quiz.isPremium} onCheckedChange={(checked) => update({ isPremium: checked })} aria-labelledby={f('premium')} />
-            </div>
           </AdminSection>
 
           <AdminSection className="gap-3 pb-[18px]" aria-labelledby={f('import')}>
