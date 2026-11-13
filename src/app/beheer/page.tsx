@@ -21,13 +21,14 @@ import { GROUP_LICENSE_SEATS } from '@/lib/group-license';
 import { getAdminOverview } from '@/lib/admin/overview';
 import { getAudienceStats, type CountByPlatform } from '@/lib/admin/audience';
 import { PLATFORM_KEYS, PLATFORM_LABELS, type PlatformKey } from '@/lib/admin/platform-labels';
-import { toAdminUserRows, ADMIN_USER_ROW_FIELDS } from '@/lib/admin/users';
+import { toAdminUserRows, ADMIN_USER_ROW_FIELDS, loadPremiumBreakdown } from '@/lib/admin/users';
 import { connectDB, User } from '@/database';
 import { EmptyRow, Table, TableCard, Tag, Td, Th } from '@/components/web2/beheer-2/parts';
 import { formatEuroCents, formatMoneyCents } from '@/lib/premium-stats';
 import { getPaymentsHealth } from '@/lib/payments-health';
 import { listAdminTrials } from '@/lib/admin/trials';
 import { TrialsCard } from '@/components/web2/beheer-2/TrialsCard';
+import { PremiumKindsCard } from '@/components/web2/beheer-2/PremiumKindsCard';
 import AdminGroupLicenseForm from './AdminGroupLicenseForm';
 import AdminRefreshButton from './AdminRefreshButton';
 
@@ -88,7 +89,7 @@ export default async function AdminDashboard() {
   // leaves the internal test/reviewer accounts out; revenue follows the rules
   // in `lib/admin/revenue.ts`.
   await connectDB();
-  const [overview, paymentsHealth, audience, recentUserDocs, trials] = await Promise.all([
+  const [overview, paymentsHealth, audience, recentUserDocs, trials, byKind] = await Promise.all([
     getAdminOverview(),
     // Shallow: config verdict only, no network-heavy Stripe list calls.
     getPaymentsHealth({ deep: false }).catch(() => null),
@@ -104,6 +105,7 @@ export default async function AdminDashboard() {
       },
     ]),
     listAdminTrials(),
+    loadPremiumBreakdown(),
   ]);
   const recentUsers = await toAdminUserRows(recentUserDocs);
 
@@ -116,7 +118,6 @@ export default async function AdminDashboard() {
   );
   const at = (bucket: CountByPlatform, key: PlatformKey) => bucket.byPlatform[key] ?? 0;
   const internalExcluded = premiumStats.internalExcluded;
-  const breakdown = premiumStats.breakdown;
   const revenue = premiumStats.revenue;
 
   const pipeline = paymentsHealth?.overall ?? 'warn';
@@ -187,8 +188,9 @@ export default async function AdminDashboard() {
             {internalExcluded > 0 && ` · ${internalExcluded} testaccounts niet meegeteld`}
           </StatNote>
           <span className="tabular text-xs font-bold leading-4 text-ink-muted">
-            Stripe {breakdown.stripe} · Store {breakdown.store} · Levenslang {breakdown.lifetime} · Groep {breakdown.group}
-            {breakdown.other > 0 && ` · Beheer ${breakdown.other}`}
+            Proef {byKind.trial.total} · Betaald {byKind.paid.total} · Levenslang {byKind.lifetime}
+            {byKind.manual > 0 && ` · Gegeven ${byKind.manual}`}
+            {byKind.group > 0 && ` · Groep ${byKind.group}`}
           </span>
         </StatCard>
         <StatCard label="Actief (7 dagen)" value={nl.format(active.days7.total)} icon={<PulseIcon />} tone="lapis">
@@ -337,6 +339,8 @@ export default async function AdminDashboard() {
           )}
         </AdminSection>
       </div>
+
+      <PremiumKindsCard breakdown={byKind} />
 
       <TrialsCard trials={trials} />
 

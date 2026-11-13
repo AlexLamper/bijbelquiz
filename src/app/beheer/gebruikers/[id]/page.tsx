@@ -126,18 +126,24 @@ export default async function AdminUserPage({ params }: { params: Promise<{ id: 
         <StatCard label="XP" value={formatNumber(user.xp)} meta={`niveau ${user.level} · ${user.levelTitle}`} />
         <StatCard label="Reeks" value={formatNumber(user.streak)} meta={`langste ${formatNumber(user.bestStreak)} dagen`} />
         <StatCard
-          label="Duels"
-          value={formatNumber(counts.duels.total)}
-          meta={`${formatNumber(counts.duels.won)} gewonnen · ${formatNumber(counts.duels.finished)} afgerond`}
+          label="Betaald"
+          value={formatMoneyCents(premium.paid.totalCents)}
+          meta={
+            premium.paid.count === 0
+              ? 'nog nooit betaald'
+              : `${formatNumber(premium.paid.count)} ${premium.paid.count === 1 ? 'betaling' : 'betalingen'}${premium.paid.lastAt ? ` · laatst ${formatAdminDate(premium.paid.lastAt)}` : ''}`
+          }
         />
       </Grid>
 
       <Grid cols={2}>
         <section className="flex min-w-0 flex-col gap-2 rounded-[16px] border border-line bg-card px-5 pb-3 pt-[18px]">
-          <CardTitle title="Premium" description="Elke bron telt los; Premium stopt pas als ze allemaal voorbij zijn." />
-          <div className="flex flex-wrap items-center gap-2 pt-1">
-            <PremiumCell premium={premium} />
-          </div>
+          <CardTitle title="Premium" description="Hoe dit account Premium heeft, wat er betaald is en wat er hierna gebeurt." />
+          <PremiumStatusBlock premium={premium} />
+          <details className="group border-t border-line-soft pt-2">
+            <summary className="cursor-pointer list-none py-1 text-sm font-bold text-lapis [&::-webkit-details-marker]:hidden">
+              Alle bronnen en de proefperiode-geschiedenis
+            </summary>
           {premium.trial && <TrialNote trial={premium.trial} />}
           <div className="flex flex-col">
             <SourceRow label="Website (Stripe)" active={premium.stripe.active}>
@@ -178,6 +184,7 @@ export default async function AdminUserPage({ params }: { params: Promise<{ id: 
                   : 'Nooit gegeven'}
             </SourceRow>
           </div>
+          </details>
         </section>
 
         <section className="flex min-w-0 flex-col gap-2 rounded-[16px] border border-line bg-card px-5 pb-3 pt-[18px]">
@@ -433,4 +440,46 @@ function TrialNote({ trial }: { trial: NonNullable<AdminUserDetail['premium']['t
     ended: 'border-line bg-chip text-ink-soft',
   }[trial.status];
   return <p className={`m-0 rounded-[12px] border px-3.5 py-2.5 text-sm font-bold leading-5 ${tone}`}>{text}</p>;
+}
+
+/**
+ * The answer first: how this account has Premium in one sentence, then what
+ * was paid and what is charged next.
+ */
+function PremiumStatusBlock({ premium }: { premium: AdminUserDetail['premium'] }) {
+  const status = premium.status;
+  const paid = premium.paid;
+  if (!status) {
+    return (
+      <div className="flex flex-col gap-2 pt-1">
+        <PremiumCell premium={premium} />
+        <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-soft">
+          Geen Premium.{paid.count > 0 ? ` Heeft eerder ${formatMoneyCents(paid.totalCents)} betaald.` : ' Heeft nooit betaald.'}
+        </p>
+      </div>
+    );
+  }
+  const next = status.nextCharge;
+  return (
+    <div className="flex flex-col gap-2 pt-1">
+      <PremiumCell premium={premium} compact />
+      <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink">{status.summary}</p>
+      <div className="flex flex-col">
+        <InfoRow label="Betaald tot nu">
+          {paid.count === 0
+            ? 'Nog niets'
+            : `${formatMoneyCents(paid.totalCents)} in ${paid.count} ${paid.count === 1 ? 'betaling' : 'betalingen'}`}
+        </InfoRow>
+        <InfoRow label="Volgende betaling">
+          {next
+            ? `${formatAdminDate(next.at)}${next.amount !== null ? ` · ${formatMoneyCents(next.amount, next.currency)}` : ''}`
+            : status.kind === 'lifetime'
+              ? 'Geen, eenmalig betaald'
+              : status.renews === false
+                ? 'Geen, opgezegd'
+                : 'Geen'}
+        </InfoRow>
+      </div>
+    </div>
+  );
 }

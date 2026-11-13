@@ -3,7 +3,7 @@ import { getAudienceStats } from '@/lib/admin/audience';
 import { getAdminOverview } from '@/lib/admin/overview';
 import { listAdminTrials } from '@/lib/admin/trials';
 import { listAdminPayments } from '@/lib/admin/payments-list';
-import { ADMIN_USER_ROW_FIELDS, toAdminUserRows } from '@/lib/admin/users';
+import { ADMIN_USER_ROW_FIELDS, loadPremiumBreakdown, toAdminUserRows } from '@/lib/admin/users';
 import { getPaymentsHealth, type PaymentsHealthReport } from '@/lib/payments-health';
 
 /**
@@ -30,7 +30,7 @@ export function healthSummary(health: PaymentsHealthReport | null) {
 
 export async function buildAdminOverviewPayload({ deep = false }: { deep?: boolean } = {}, now: Date = new Date()) {
   await connectDB();
-  const [audience, overview, health, recentUsers, recentPayments, trials] = await Promise.all([
+  const [audience, overview, health, recentUsers, recentPayments, trials, byKind] = await Promise.all([
     getAudienceStats(now),
     getAdminOverview(now),
     getPaymentsHealth({ deep }).catch(() => null),
@@ -46,6 +46,7 @@ export async function buildAdminOverviewPayload({ deep = false }: { deep?: boole
     ]),
     listAdminPayments({ q: '', provider: null, status: null, page: 1, pageSize: 10 }),
     listAdminTrials(now),
+    loadPremiumBreakdown(now),
   ]);
 
   const stats = overview.premium;
@@ -74,6 +75,8 @@ export async function buildAdminOverviewPayload({ deep = false }: { deep?: boole
       conversion: audience.premium.conversion,
       grantsActive: audience.premium.grantsActive,
       grantsExpiringIn7d: audience.premium.grantsExpiringIn7d,
+      /** How the Premium accounts have it: free trial, paid subscription, lifetime, group, given. */
+      byKind,
     },
     revenue: revenueBlock(stats),
     quizzes: {

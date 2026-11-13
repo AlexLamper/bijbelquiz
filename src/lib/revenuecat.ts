@@ -281,6 +281,8 @@ export async function applyStorePremium(userId: string, update: StorePremiumUpda
 
 export type SubscriberPremiumState = {
   active: boolean;
+  /** `trial`, `intro` or `normal` for the subscription behind the entitlement; null when not known. */
+  periodType: string | null;
   expiresAt: Date | null;
   lifetime: boolean;
   productId: string | null;
@@ -323,6 +325,7 @@ type RestEntitlement = {
   product_identifier?: string;
 };
 type RestSubscription = {
+  period_type?: string | null;
   unsubscribe_detected_at?: string | null;
   billing_issues_detected_at?: string | null;
   refunded_at?: string | null;
@@ -344,6 +347,7 @@ export function subscriberPremiumStateFrom(
   const entitlement = subscriber?.entitlements?.[entitlementId];
   const empty: SubscriberPremiumState = {
     active: false,
+    periodType: null,
     expiresAt: null,
     lifetime: false,
     productId: null,
@@ -377,6 +381,7 @@ export function subscriberPremiumStateFrom(
 
   return {
     active,
+    periodType: typeof subscription?.period_type === 'string' ? subscription.period_type.toLowerCase() : null,
     expiresAt: lifetime ? null : effectiveEnd,
     lifetime: lifetime && active,
     productId,
@@ -414,7 +419,15 @@ export async function syncStorePremiumForAppUser(appUserId: string, options: { f
   }
   await User.updateOne(
     { _id: appUserId },
-    { $set: { storeWillRenew: state.active && !state.lifetime ? state.willRenew : null } },
+    {
+      $set: {
+        storeWillRenew: state.active && !state.lifetime ? state.willRenew : null,
+        // What beheer needs to tell a free trial from a paid period.
+        storePeriodType: state.active ? (state.lifetime ? 'normal' : state.periodType) : null,
+        storePlan: state.active ? (state.lifetime ? 'lifetime' : state.productId ? planFromProductId(state.productId) : null) : null,
+        storeName: state.active ? state.store : null,
+      },
+    },
   );
 
   return { ...result, store: state };
@@ -648,6 +661,20 @@ async function applyEventToAccount(
   const renewal = renewalFromEvent(event);
   if (renewal !== undefined) {
     await User.updateOne({ _id: userId }, { $set: { storeWillRenew: renewal } });
+  }
+  // Trial or paid period, plan and store, from events that start or renew a period.
+  const type = (event.type || '').toUpperCase();
+  if (['INITIAL_PURCHASE', 'RENEWAL', 'PRODUCT_CHANGE', 'NON_RENEWING_PURCHASE', 'UNCANCELLATION'].includes(type)) {
+    await User.updateOne(
+      { _id: userId },
+      {
+        $set: {
+          storePeriodType: event.period_type ? event.period_type.toLowerCase() : null,
+          storePlan: event.product_id ? planFromProductId(event.product_id) : null,
+          storeName: event.store ?? null,
+        },
+      },
+    );
   }
 
   const inferred = inferStoreUpdate(event, current ?? {});

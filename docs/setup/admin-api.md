@@ -70,6 +70,49 @@ one shown, in this priority: lifetime, stripe, store, group, manual.
 
 ---
 
+### Premium kinds (`premium.status`)
+
+How an account has Premium, in one answer, on every user row and on the
+user detail (`premium.status`, null without Premium):
+
+```json
+{
+  "kind": "trial",
+  "label": "Proefperiode",
+  "channel": "app_store",
+  "plan": "yearly",
+  "renews": true,
+  "endsAt": "2026-11-17T09:00:00.000Z",
+  "nextCharge": { "at": "2026-11-17T09:00:00.000Z", "amount": 2999, "currency": "eur" },
+  "summary": "Gratis proefperiode (jaarabonnement, via de App Store) tot 17 nov 2026. Er is nog niets betaald. ..."
+}
+```
+
+| kind | label (nl) | meaning |
+|---|---|---|
+| `trial` | Proefperiode | free trial (website or store); nothing paid for it yet |
+| `paid` | Betaald abonnement | a subscription that has been charged |
+| `lifetime` | Levenslang | bought once |
+| `group` | Groepslicentie | through a group licence |
+| `manual` | Gegeven door beheer | given by beheer, not paid |
+
+`channel`: `website`, `app_store`, `play_store`, `app` (store not known) or
+null. `plan`: `yearly`, `monthly`, `lifetime` or null. `nextCharge.amount` is
+null when the price is not known. Show `summary` as is: it is the sentence
+the website shows. A store trial is recognised from RevenueCat's period type;
+for accounts from before that was stored, a store subscription without any
+real store charge counts as the trial. The user detail re-reads a store
+subscription from RevenueCat before answering.
+
+The user detail also has `premium.paid`: `{ count, totalCents, lastAt,
+lastAmount, lastCurrency, lastPlan, store, stripe, lastAmountByPlan }` - real
+charges only (completed, not sandbox).
+
+The users list takes `kind=<kind>` as a filter. The overview has
+`premium.byKind`: `{ total, trial: { total, renews, cancelled }, paid: {
+total, yearly, monthly, other, cancelled }, lifetime, group, manual }`, test
+accounts left out.
+
 ## 1. Overview
 
 `GET /api/mobile/admin/overview`

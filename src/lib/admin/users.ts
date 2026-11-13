@@ -26,6 +26,20 @@ import {
 import { toPaymentRow, type AdminPaymentRow } from '@/lib/admin/payments-list';
 import type { PaymentLike } from '@/lib/admin/revenue';
 import { getAdminUserTrial } from '@/lib/admin/trials';
+import { getRevenueCatSecretKey, syncStorePremiumForAppUser } from '@/lib/revenuecat';
+import {
+  EMPTY_PAID,
+  PREMIUM_KINDS,
+  PREMIUM_STATUS_FIELDS,
+  paidSummaries,
+  premiumBreakdown,
+  premiumStatus,
+  type PaidSummary,
+  type PremiumBreakdown,
+  type PremiumKind,
+  type PremiumStatus,
+  type PremiumStatusUser,
+} from '@/lib/admin/premium-status';
 
 /**
  * The beheer user list and user page, shared by `/beheer/gebruikers` and
@@ -42,7 +56,8 @@ export interface AdminUserRow {
   signupMethod: MethodKey;
   lastActiveAt: string | null;
   lastSeenPlatform: PlatformKey | null;
-  premium: PremiumSummary;
+  /** `status`: how the account has Premium (trial, paid, lifetime, ...), in one answer; null without Premium. */
+  premium: PremiumSummary & { status: PremiumStatus | null };
   quizzesPlayed: number;
   xp: number;
   level: number;
@@ -58,6 +73,8 @@ export interface UserListQuery {
   platform: PlatformKey | null;
   premium: 'yes' | 'no' | null;
   source: PremiumSource | null;
+  /** How the account has Premium: trial, paid, lifetime, group, manual. */
+  kind: PremiumKind | null;
   test: 'include' | 'exclude' | 'only';
   sort: UserSort;
   order: 'asc' | 'desc';
@@ -84,6 +101,7 @@ export function readUserListQuery(input: URLSearchParams | Record<string, string
   const platform = get('platform');
   const premium = get('premium');
   const source = get('source');
+  const kind = get('kind');
   const test = get('test');
   const sort = get('sort');
   const order = get('order');
@@ -94,6 +112,7 @@ export function readUserListQuery(input: URLSearchParams | Record<string, string
     platform: isPlatformKey(platform) ? platform : null,
     premium: premium === 'yes' || premium === 'no' ? premium : null,
     source: (PREMIUM_SOURCES as readonly string[]).includes(source ?? '') ? (source as PremiumSource) : null,
+    kind: (PREMIUM_KINDS as readonly string[]).includes(kind ?? '') ? (kind as PremiumKind) : null,
     test: test === 'exclude' || test === 'only' ? test : 'include',
     sort: (USER_SORTS as readonly string[]).includes(sort ?? '') ? (sort as UserSort) : 'createdAt',
     order: order === 'asc' ? 'asc' : 'desc',
@@ -139,6 +158,54 @@ function anyPremiumFilter(now: Date) {
   return { $or: PREMIUM_SOURCES.map((source) => premiumSourceFilter(source, now)) };
 }
 
+/**
+ * Mongo condition for one Premium kind (see premium-status.ts). Store
+ * accounts from before `storePeriodType` count as a trial while no real store
+ * charge exists; that needs `_storePaid` (a payments lookup) on the document.
+ */
+export function premiumKindFilter(kind: PremiumKind, now: Date): Record<string, unknown> {
+  const notLifetime = { hasLifetimePremium: { $ne: true } };
+  const stripeTrial = { premiumStripe: true, $or: [{ stripeSubscriptionStatus: 'trialing' }, { stripeTrialEnd: { $gt: now } }] };
+  const storeOnly = { premiumStripe: { $ne: true }, premiumStore: true };
+  const storeTrial = {
+    ...storeOnly,
+    $or: [{ storePeriodType: 'trial' }, { storePeriodType: { $in: [null, ''] }, '_storePaid.0': { $exists: false } }],
+  };
+  switch (kind) {
+    case 'lifetime':
+      return { hasLifetimePremium: true };
+    case 'trial':
+      return { $and: [notLifetime, { $or: [stripeTrial, storeTrial] }] };
+    case 'paid':
+      return {
+        $and: [
+          notLifetime,
+          {
+            $or: [
+              { premiumStripe: true, $nor: [{ stripeSubscriptionStatus: 'trialing' }, { stripeTrialEnd: { $gt: now } }] },
+              {
+                ...storeOnly,
+                storePeriodType: { $ne: 'trial' },
+                $or: [{ storePeriodType: { $nin: [null, ''] } }, { '_storePaid.0': { $exists: true } }],
+              },
+            ],
+          },
+        ],
+      };
+    case 'group':
+      return { ...notLifetime, premiumStripe: { $ne: true }, premiumStore: { $ne: true }, groupPremiumUntil: { $gt: now } };
+    case 'manual':
+      return {
+        $and: [
+          premiumSourceFilter('manual', now),
+          notLifetime,
+          { premiumStripe: { $ne: true }, premiumStore: { $ne: true } },
+          { $nor: [{ groupPremiumUntil: { $gt: now } }] },
+        ],
+      };
+  }
+}
+
 const LIST_FIELDS = [
   'name',
   'email',
@@ -154,11 +221,10 @@ const LIST_FIELDS = [
   'xp',
   'level',
   'role',
-  'stripeCurrentPeriodEnd',
-  ...PREMIUM_SNAPSHOT_FIELDS.split(' '),
+  ...new Set([...PREMIUM_SNAPSHOT_FIELDS.split(' '), ...PREMIUM_STATUS_FIELDS.split(' ')]),
 ];
 
-type LeanListUser = {
+type LeanListUser = PremiumStatusUser & {
   _id: unknown;
   name?: string;
   email?: string;
@@ -206,6 +272,7 @@ function toRow(
   evidence: Map<string, Parameters<typeof deriveSignupPlatform>[1]>,
   internal: Set<string>,
   now: Date,
+  paid: PaidSummary,
 ): AdminUserRow {
   const id = String(user._id);
   const { platform, derived } = deriveSignupPlatform(user.signupPlatform, evidence.get(id));
@@ -219,7 +286,7 @@ function toRow(
     signupMethod: deriveSignupMethod(user),
     lastActiveAt: iso(laterOf(user.lastActiveAt, user.lastPlayedAt)),
     lastSeenPlatform: isSignupPlatform(user.lastSeenPlatform) ? user.lastSeenPlatform : null,
-    premium: summarizePremium(user, now.getTime()),
+    premium: { ...summarizePremium(user, now.getTime()), status: premiumStatus(user, paid, now) },
     quizzesPlayed: user.quizzesPlayed ?? 0,
     xp: user.xp ?? 0,
     level: user.level ?? getLevelInfo(user.xp ?? 0).level,
@@ -232,8 +299,11 @@ function toRow(
 export async function toAdminUserRows(users: LeanListUser[], now: Date = new Date()): Promise<AdminUserRow[]> {
   const internal = new Set((await getInternalAccountIds()).map(String));
   const legacy = users.filter((user) => !isSignupPlatform(user.signupPlatform)).map((user) => String(user._id));
-  const evidence = legacy.length > 0 ? await platformEvidenceFor(legacy) : new Map();
-  return users.map((user) => toRow(user, evidence, internal, now));
+  const [evidence, paid] = await Promise.all([
+    legacy.length > 0 ? platformEvidenceFor(legacy) : Promise.resolve(new Map()),
+    paidSummaries(users.map((user) => String(user._id))),
+  ]);
+  return users.map((user) => toRow(user, evidence, internal, now, paid.get(String(user._id)) ?? EMPTY_PAID));
 }
 
 export const ADMIN_USER_ROW_FIELDS = LIST_FIELDS.join(' ');
@@ -263,6 +333,7 @@ export async function listAdminUsers(query: UserListQuery, now: Date = new Date(
   if (query.source) and.push(premiumSourceFilter(query.source, now));
   else if (query.premium === 'yes') and.push(anyPremiumFilter(now));
   if (query.premium === 'no') and.push({ $nor: [anyPremiumFilter(now)] });
+  if (query.kind && !query.source && query.premium !== 'yes') and.push(anyPremiumFilter(now));
   if (query.platform) {
     const legacy = await legacyIdsWithPlatform(query.platform);
     and.push(
@@ -289,8 +360,36 @@ export async function listAdminUsers(query: UserListQuery, now: Date = new Date(
   projection.hasPassword = { $gt: [{ $strLenCP: { $ifNull: ['$password', ''] } }, 0] };
 
   const farFuture = new Date('9999-12-31T00:00:00Z');
+  // The kind filter needs to know whether a store account was ever charged.
+  const kindStages: mongoose.PipelineStage[] = query.kind
+    ? [
+        {
+          $lookup: {
+            from: 'payments',
+            let: { u: '$_id' },
+            pipeline: [
+              {
+                $match: {
+                  $expr: { $eq: ['$user', '$$u'] },
+                  provider: 'revenuecat',
+                  status: 'completed',
+                  amount: { $gt: 0 },
+                  environment: { $ne: 'sandbox' },
+                },
+              },
+              { $limit: 1 },
+              { $project: { _id: 1 } },
+            ],
+            as: '_storePaid',
+          },
+        },
+        { $match: premiumKindFilter(query.kind, now) },
+      ]
+    : [];
+
   const [result] = await User.aggregate<{ rows: LeanListUser[]; total: Array<{ n: number }> }>([
     { $match: match },
+    ...kindStages,
     {
       $addFields: {
         _lastActive: { $max: [{ $ifNull: ['$lastActiveAt', null] }, { $ifNull: ['$lastPlayedAt', null] }] },
@@ -358,6 +457,10 @@ export interface AdminUserDetail {
     onboarding: { bibleReadingFrequency: string | null; knowledgeLevel: string | null; interests: string[] } | null;
   };
   premium: PremiumSummary & {
+    /** How this account has Premium, in one answer (also on list rows). */
+    status: PremiumStatus | null;
+    /** Real money from this account: count, euro total, latest charge. */
+    paid: PaidSummary;
     stripe: {
       active: boolean;
       status: string | null;
@@ -434,8 +537,18 @@ export async function getAdminUserDetail(userId: string, now: Date = new Date())
   if (!mongoose.Types.ObjectId.isValid(userId)) return null;
   await connectDB();
 
-  const user = await User.findById(userId).lean<LeanDetailUser>();
+  let user = await User.findById(userId).lean<LeanDetailUser>();
   if (!user) return null;
+  // A store subscription is re-read from RevenueCat first, so the page knows
+  // whether it is a trial or a paid period (and fills that in for accounts
+  // from before it was recorded). Best effort, never slower than 4 s.
+  if (user.premiumStore && !user.hasLifetimePremium && getRevenueCatSecretKey()) {
+    const synced = await Promise.race([
+      syncStorePremiumForAppUser(userId).then(() => true, () => false),
+      new Promise<boolean>((resolve) => setTimeout(() => resolve(false), 4000)),
+    ]);
+    if (synced) user = (await User.findById(userId).lean<LeanDetailUser>()) ?? user;
+  }
   const oid = new mongoose.Types.ObjectId(userId);
 
   const [rows, history, payments, attempts, attemptCount, duelTotal, duelFinished, duelWon, groupsOwned, groupsMember, licenses, grantedBy] =
@@ -516,6 +629,7 @@ export async function getAdminUserDetail(userId: string, now: Date = new Date())
   }
 
   const summary = summarizePremium(user, now.getTime());
+  const paid = (await paidSummaries([userId])).get(userId) ?? EMPTY_PAID;
   const groupUntil = user.groupPremiumUntil ? new Date(user.groupPremiumUntil) : null;
   const manualActive = summary.sources.includes('manual');
 
@@ -542,6 +656,8 @@ export async function getAdminUserDetail(userId: string, now: Date = new Date())
     },
     premium: {
       ...summary,
+      status: premiumStatus(user, paid, now),
+      paid,
       stripe: {
         active: Boolean(user.premiumStripe),
         status: user.stripeSubscriptionStatus ?? null,
@@ -635,4 +751,14 @@ export async function getAdminUserRow(userId: string, now: Date = new Date()): P
   if (!user) return null;
   const { password, ...rest } = user;
   return (await toAdminUserRows([{ ...rest, hasPassword: Boolean(password) }], now))[0];
+}
+
+/** Premium by kind (trial / paid / lifetime / group / manual) for the overview. */
+export async function loadPremiumBreakdown(now: Date = new Date()): Promise<PremiumBreakdown> {
+  await connectDB();
+  const [users, internalIds] = await Promise.all([
+    User.find(anyPremiumFilter(now)).select(PREMIUM_STATUS_FIELDS).lean<Array<PremiumStatusUser & { _id: unknown }>>(),
+    getInternalAccountIds(),
+  ]);
+  return premiumBreakdown(users, new Set(internalIds.map(String)), now);
 }

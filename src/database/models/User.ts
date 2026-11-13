@@ -17,6 +17,15 @@ export interface IUser extends Document {
    * there is no store subscription. Read by the admin trial overview.
    */
   storeWillRenew?: boolean | null;
+  /**
+   * The store subscription as RevenueCat last described it, so beheer can
+   * tell a free trial from a paid period: `trial`, `intro` or `normal`; the
+   * plan (`yearly`, `monthly`, `lifetime`); and the store (`app_store`,
+   * `play_store`, ...). Null before it was first recorded.
+   */
+  storePeriodType?: string | null;
+  storePlan?: string | null;
+  storeName?: string | null;
   hasLifetimePremium: boolean;
   /**
    * Premium switched on by hand (support, beheer). Set by
@@ -163,6 +172,9 @@ const UserSchema: Schema = new Schema({
   premiumStore: { type: Boolean, default: false },
   storePremiumExpiresAt: { type: Date, default: null },
   storeWillRenew: { type: Boolean, default: null },
+  storePeriodType: { type: String, default: null },
+  storePlan: { type: String, default: null },
+  storeName: { type: String, default: null },
   hasLifetimePremium: { type: Boolean, default: false },
   premiumGranted: { type: Boolean },
   groupPremiumUntil: { type: Date, default: null },

@@ -7,6 +7,7 @@ import { SearchInput, Select } from '@/components/bq/Field';
 import { Button } from '@/components/bq/Button';
 import { PLATFORM_KEYS, PLATFORM_LABELS } from '@/lib/admin/platform-labels';
 import { PREMIUM_SOURCES, PREMIUM_SOURCE_LABELS } from '@/lib/admin/grant-options';
+import { PREMIUM_KINDS, PREMIUM_KIND_LABELS } from '@/lib/admin/premium-kind-labels';
 
 /**
  * Search and filters for `/beheer/gebruikers`. Everything lives in the URL
@@ -40,8 +41,12 @@ export function UserFilters() {
     if (timer.current) clearTimeout(timer.current);
   }, []);
 
-  const premiumValue = params.get('source') ? `source:${params.get('source')}` : params.get('premium') ?? '';
-  const filtered = ['q', 'platform', 'premium', 'source', 'test'].some((key) => params.get(key));
+  const premiumValue = params.get('kind')
+    ? `kind:${params.get('kind')}`
+    : params.get('source')
+      ? `source:${params.get('source')}`
+      : params.get('premium') ?? '';
+  const filtered = ['q', 'platform', 'premium', 'source', 'kind', 'test'].some((key) => params.get(key));
 
   return (
     <form
@@ -83,18 +88,28 @@ export function UserFilters() {
         value={premiumValue}
         onChange={(event) => {
           const value = event.target.value;
-          if (value.startsWith('source:')) apply({ source: value.slice(7), premium: null });
-          else apply({ premium: value || null, source: null });
+          if (value.startsWith('kind:')) apply({ kind: value.slice(5), source: null, premium: null });
+          else if (value.startsWith('source:')) apply({ source: value.slice(7), premium: null, kind: null });
+          else apply({ premium: value || null, source: null, kind: null });
         }}
       >
         <option value="">Premium en gratis</option>
         <option value="yes">Alleen Premium</option>
         <option value="no">Alleen gratis</option>
+        <optgroup label="Hoe ze Premium hebben">
+          {PREMIUM_KINDS.map((kind) => (
+            <option key={kind} value={`kind:${kind}`}>
+              {PREMIUM_KIND_LABELS[kind]}
+            </option>
+          ))}
+        </optgroup>
+        <optgroup label="Via">
         {PREMIUM_SOURCES.map((source) => (
           <option key={source} value={`source:${source}`}>
             Premium: {PREMIUM_SOURCE_LABELS[source]}
           </option>
         ))}
+        </optgroup>
       </Select>
       <Select size="sm" aria-label="Testaccounts" className="col-span-2 m:col-span-1" value={params.get('test') ?? ''} onChange={(event) => apply({ test: event.target.value || null })}>
         <option value="">Met testaccounts</option>
