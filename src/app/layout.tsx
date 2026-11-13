@@ -66,10 +66,6 @@ export const metadata: Metadata = {
     description: "Test je Bijbelkennis met gratis interactieve quizzen en stijg in de ranglijst!",
     images: ["/opengraph-image"],
   },
-  icons: {
-    icon: "/icon/Logo - dark.svg",
-    apple: "/icon/Logo - dark.svg",
-  },
   robots: {
     index: true,
     follow: true,
