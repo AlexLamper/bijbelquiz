@@ -4,6 +4,12 @@ import type { NextConfig } from "next";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
+// See src/config/site.ts. `nl` (bijbelquiz.com) is the default and keeps every
+// redirect and header exactly as before; the intl build (biblequizzes.app) gets
+// none of the Dutch redirects - `/quizzes` and `/leaderboard` are real pages there.
+const isIntlSite = process.env.SITE === "intl";
+const intlIndexable = process.env.SITE_INDEXABLE === "true";
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   turbopack: {
@@ -14,6 +20,7 @@ const nextConfig: NextConfig = {
   },
   transpilePackages: ["@bijbelquiz/database"],
   async redirects() {
+    if (isIntlSite) return [];
     return [
       { source: '/profile', destination: '/profiel', permanent: true },
       { source: '/leaderboard', destination: '/ranglijst', permanent: true },
@@ -53,7 +60,12 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
+    // Until launch the intl site must stay out of search engines entirely.
+    const intlNoindex = isIntlSite && !intlIndexable
+      ? [{ source: "/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }]
+      : [];
     return [
+      ...intlNoindex,
       {
         source: "/api/:path*",
         headers: [
