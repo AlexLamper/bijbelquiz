@@ -20,6 +20,30 @@ interface ApiPayload {
   translation_id?: string;
 }
 
+const OWN_API = 'https://www.bijbelapi.com';
+
+function ownHeaders(): Record<string, string> {
+  const key = process.env.BIJBEL_API_KEY ?? '';
+  return { Accept: 'application/json', ...(key ? { 'x-api-key': key } : {}) };
+}
+
+/** Our own BijbelAPI first (`version=web`); null when it has no English text yet. */
+async function ownChapter(book: string, chapter: number): Promise<{ verse: number; text: string }[] | null> {
+  try {
+    const res = await fetch(`${OWN_API}/api/chapter?book=${encodeURIComponent(book)}&chapter=${chapter}&version=${ENGLISH_VERSION}`, {
+      headers: ownHeaders(),
+      next: { revalidate: 86400 },
+    });
+    if (!res.ok) return null;
+    const payload = (await res.json()) as { version?: string; verses?: Record<string, string> };
+    // The API silently falls back to its default (Dutch) translation when it does not know `web`.
+    if (payload.version !== ENGLISH_VERSION || !payload.verses) return null;
+    return Object.entries(payload.verses).map(([verse, text]) => ({ verse: Number(verse), text: String(text) }));
+  } catch {
+    return null;
+  }
+}
+
 async function lookup(ref: string): Promise<ApiPayload | null> {
   try {
     const res = await fetch(`${BASE}/${encodeURIComponent(ref)}?translation=${ENGLISH_VERSION}`, {
@@ -46,7 +70,8 @@ export async function englishChapter(
   book: string,
   chapter: number,
 ): Promise<{ book: string; chapter: number; version: string; reference: string; verses: { verse: number; text: string }[] } | null> {
-  const payload = await lookup(`${book} ${chapter}`);
+  const own = await ownChapter(book, chapter);
+  const payload = own ? { verses: own } : await lookup(`${book} ${chapter}`);
   const verses = (payload?.verses ?? [])
     .map((v) => ({ verse: Number(v.verse), text: (v.text || '').replace(/\s+/g, ' ').trim() }))
     .filter((v) => Number.isFinite(v.verse) && v.verse > 0 && v.text.length > 0)
