@@ -1790,6 +1790,60 @@
         "base": "Je zit op de goede weg. Focus op de fout beantwoorde vragen en vergelijk de uitleg met de bijbelverwijzingen.",
         "growth": "Neem tijd voor de uitleg per vraag en lees de genoemde bijbelgedeelten erbij. Daarna levert een herkansing meestal snel progressie op."
       }
+    },
+    "rec": {
+      "ot": "Oude Testament",
+      "nt": "Nieuwe Testament",
+      "gospels": "Evangelien",
+      "prophets": "Profeten",
+      "wisdom": "Wijsheid & Spreuken",
+      "people": "Bijbelse personen",
+      "easy": "makkelijk",
+      "medium": "gemiddeld",
+      "hard": "moeilijk",
+      "daily": "dagelijks",
+      "weekly": "wekelijks",
+      "monthly": "maandelijks",
+      "rarely": "af en toe",
+      "depth": "Extra diepgang",
+      "short": "Kort en compact",
+      "unplayed": "Nog niet gespeeld",
+      "partInterest": "je interesse in {list}",
+      "partLevel": "je niveau ({level})",
+      "partRhythm": "je leesritme ({frequency})",
+      "joinLast": "{head} en {last}",
+      "basedOn": "Samengesteld op basis van {sentence}.",
+      "reasonInterest": "Interesse: {name}",
+      "reasonLevel": "Niveau: {level}"
+    },
+    "group": {
+      "unknownUser": "Onbekende gebruiker.",
+      "unknownRoom": "Onbekende kamer.",
+      "roomGone": "Deze kamer bestaat niet meer.",
+      "notPlayed": "Je hebt niet in deze kamer gespeeld.",
+      "minTwo": "Een groep heeft minstens twee spelers nodig.",
+      "defaultName": "Mijn speelgroep",
+      "unknown": "Onbekende groep.",
+      "nameShort": "Kies een naam van minstens twee tekens.",
+      "ownerRename": "Alleen de eigenaar kan de groep hernoemen.",
+      "gone": "Deze groep bestaat niet meer.",
+      "ownerRemove": "Alleen de eigenaar kan iemand verwijderen.",
+      "notMember": "Deze speler zit niet in de groep.",
+      "noAccess": "Deze groep bestaat niet, of je hoort er niet bij.",
+      "max": "Je kunt maximaal {max} groepen bewaren.",
+      "namePrefix": "Groep {title}"
+    },
+    "gl": {
+      "badCode": "Deze groepscode klopt niet.",
+      "unknownCode": "We kennen deze groepscode niet.",
+      "expired": "Deze groepslicentie is verlopen. Vraag de beheerder om te verlengen.",
+      "joinFailed": "Deelnemen is niet gelukt.",
+      "unknownMember": "Onbekend lid.",
+      "notFound": "Groepslicentie niet gevonden.",
+      "adminSeat": "De beheerder houdt altijd een plek.",
+      "nameLength": "Groepsnaam moet tussen 2 en 60 tekens zijn.",
+      "defaultName": "Groep van {name}",
+      "full": "Deze groep zit vol ({seats} plekken). Vraag de beheerder om plek vrij te maken."
     }
   }
 }

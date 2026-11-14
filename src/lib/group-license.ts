@@ -2,6 +2,8 @@ import mongoose from 'mongoose';
 
 import { GroupLicense, User, connectDB } from '@/database';
 import { GROUP_LICENSE_SEATS } from './group-license-constants';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
 /**
  * Group licences: one purchase, many people with Premium.
@@ -128,7 +130,7 @@ export async function summarizeLicensesFor(userId: string): Promise<GroupLicense
   const users = await User.find({ _id: { $in: memberIds } })
     .select('name')
     .lean();
-  const namesById = new Map(users.map((user) => [String(user._id), user.name || 'Speler']));
+  const namesById = new Map(users.map((user) => [String(user._id), user.name || t('lib.lb.player')]));
 
   return licenses.map((license) => {
     const seatsUsed = license.memberIds.length;
@@ -146,7 +148,7 @@ export async function summarizeLicensesFor(userId: string): Promise<GroupLicense
       isOwner: ownerIdString === userId,
       members: license.memberIds.map((memberId) => ({
         id: String(memberId),
-        name: namesById.get(String(memberId)) ?? 'Speler',
+        name: namesById.get(String(memberId)) ?? t('lib.lb.player'),
         isOwner: String(memberId) === ownerIdString,
       })),
     };
@@ -195,7 +197,7 @@ export async function grantGroupLicense(input: {
   }
 
   const owner = await User.findById(ownerObjectId).select('name').lean();
-  const name = input.name || `Groep van ${owner?.name || 'BijbelQuiz'}`;
+  const name = input.name || t('lib.gl.defaultName', { name: owner?.name || getSiteConfig().brand });
 
   // Retried rather than pre-checked: uniqueness is enforced by the index, and
   // a check-then-insert would still race.
@@ -237,19 +239,19 @@ export async function joinGroupLicense(userId: string, rawCode: string): Promise
 
   const joinCode = rawCode.trim().toUpperCase();
   if (joinCode.length < 4) {
-    return { ok: false, status: 400, error: 'Deze groepscode klopt niet.' };
+    return { ok: false, status: 400, error: t('lib.gl.badCode') };
   }
 
   const license = await GroupLicense.findOne({ joinCode });
   if (!license) {
-    return { ok: false, status: 404, error: 'We kennen deze groepscode niet.' };
+    return { ok: false, status: 404, error: t('lib.gl.unknownCode') };
   }
 
   if (!isLive(license)) {
     return {
       ok: false,
       status: 403,
-      error: 'Deze groepslicentie is verlopen. Vraag de beheerder om te verlengen.',
+      error: t('lib.gl.expired'),
     };
   }
 
@@ -261,7 +263,7 @@ export async function joinGroupLicense(userId: string, rawCode: string): Promise
       return {
         ok: false,
         status: 409,
-        error: `Deze groep zit vol (${license.seats} plekken). Vraag de beheerder om plek vrij te maken.`,
+        error: t('lib.gl.full', { seats: license.seats }),
       };
     }
 
@@ -277,7 +279,7 @@ export async function joinGroupLicense(userId: string, rawCode: string): Promise
       return {
         ok: false,
         status: 409,
-        error: `Deze groep zit vol (${license.seats} plekken). Vraag de beheerder om plek vrij te maken.`,
+        error: t('lib.gl.full', { seats: license.seats }),
       };
     }
 
@@ -289,7 +291,7 @@ export async function joinGroupLicense(userId: string, rawCode: string): Promise
 
   return summary
     ? { ok: true, license: summary }
-    : { ok: false, status: 500, error: 'Deelnemen is niet gelukt.' };
+    : { ok: false, status: 500, error: t('lib.gl.joinFailed') };
 }
 
 /** Owner removes somebody. The owner's own seat cannot be given up. */
@@ -301,16 +303,16 @@ export async function removeGroupMember(
   await connectDB();
 
   if (!mongoose.Types.ObjectId.isValid(licenseId) || !mongoose.Types.ObjectId.isValid(memberId)) {
-    return { ok: false, status: 400, error: 'Onbekend lid.' };
+    return { ok: false, status: 400, error: t('lib.gl.unknownMember') };
   }
 
   const license = await GroupLicense.findOne({ _id: licenseId, ownerId });
   if (!license) {
-    return { ok: false, status: 404, error: 'Groepslicentie niet gevonden.' };
+    return { ok: false, status: 404, error: t('lib.gl.notFound') };
   }
 
   if (String(license.ownerId) === memberId) {
-    return { ok: false, status: 400, error: 'De beheerder houdt altijd een plek.' };
+    return { ok: false, status: 400, error: t('lib.gl.adminSeat') };
   }
 
   const memberObjectId = new mongoose.Types.ObjectId(memberId);
@@ -372,7 +374,7 @@ export async function renameGroupLicense(
 ): Promise<{ ok: boolean; error?: string; status?: number }> {
   const trimmed = name.trim().replace(/\s+/g, ' ');
   if (trimmed.length < 2 || trimmed.length > 60) {
-    return { ok: false, status: 400, error: 'Groepsnaam moet tussen 2 en 60 tekens zijn.' };
+    return { ok: false, status: 400, error: t('lib.gl.nameLength') };
   }
 
   await connectDB();
@@ -382,5 +384,5 @@ export async function renameGroupLicense(
     { $set: { name: trimmed } },
   );
 
-  return updated ? { ok: true } : { ok: false, status: 404, error: 'Groepslicentie niet gevonden.' };
+  return updated ? { ok: true } : { ok: false, status: 404, error: t('lib.gl.notFound') };
 }

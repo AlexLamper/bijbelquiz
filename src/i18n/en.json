@@ -1758,6 +1758,60 @@
         "base": "You are on the right track. Focus on the questions you got wrong and compare the explanation with the Bible references.",
         "growth": "Take time for the explanation of each question and read the Bible passages mentioned. A retry then usually brings quick progress."
       }
+    },
+    "rec": {
+      "ot": "Old Testament",
+      "nt": "New Testament",
+      "gospels": "Gospels",
+      "prophets": "Prophets",
+      "wisdom": "Wisdom & Proverbs",
+      "people": "Bible people",
+      "easy": "easy",
+      "medium": "medium",
+      "hard": "hard",
+      "daily": "daily",
+      "weekly": "weekly",
+      "monthly": "monthly",
+      "rarely": "now and then",
+      "depth": "Extra depth",
+      "short": "Short and compact",
+      "unplayed": "Not played yet",
+      "partInterest": "your interest in {list}",
+      "partLevel": "your level ({level})",
+      "partRhythm": "your reading rhythm ({frequency})",
+      "joinLast": "{head} and {last}",
+      "basedOn": "Put together based on {sentence}.",
+      "reasonInterest": "Interest: {name}",
+      "reasonLevel": "Level: {level}"
+    },
+    "group": {
+      "unknownUser": "Unknown user.",
+      "unknownRoom": "Unknown room.",
+      "roomGone": "This room no longer exists.",
+      "notPlayed": "You did not play in this room.",
+      "minTwo": "A group needs at least two players.",
+      "defaultName": "My play group",
+      "unknown": "Unknown group.",
+      "nameShort": "Choose a name of at least two characters.",
+      "ownerRename": "Only the owner can rename the group.",
+      "gone": "This group no longer exists.",
+      "ownerRemove": "Only the owner can remove someone.",
+      "notMember": "This player is not in the group.",
+      "noAccess": "This group does not exist, or you are not part of it.",
+      "max": "You can keep at most {max} groups.",
+      "namePrefix": "Group {title}"
+    },
+    "gl": {
+      "badCode": "This group code is not valid.",
+      "unknownCode": "We do not know this group code.",
+      "expired": "This group licence has expired. Ask the administrator to renew it.",
+      "joinFailed": "Joining did not work.",
+      "unknownMember": "Unknown member.",
+      "notFound": "Group licence not found.",
+      "adminSeat": "The administrator always keeps a seat.",
+      "nameLength": "The group name must be between 2 and 60 characters.",
+      "defaultName": "Group of {name}",
+      "full": "This group is full ({seats} seats). Ask the administrator to free up a seat."
     }
   }
 }

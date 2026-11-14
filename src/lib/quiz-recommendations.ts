@@ -16,15 +16,16 @@
  */
 
 import type { UserOnboardingSettings } from '@/lib/user-settings';
+import { t } from '@/i18n';
 
 /** The interest checkboxes, single source of truth for settings UI + scoring. */
 export const INTEREST_OPTIONS = [
-  { value: 'oude-testament', label: 'Oude Testament' },
-  { value: 'nieuwe-testament', label: 'Nieuwe Testament' },
-  { value: 'evangelien', label: 'Evangelien' },
-  { value: 'profeten', label: 'Profeten' },
-  { value: 'wijsheid', label: 'Wijsheid & Spreuken' },
-  { value: 'personen', label: 'Bijbelse personen' },
+  { value: 'oude-testament', label: t('lib.rec.ot') },
+  { value: 'nieuwe-testament', label: t('lib.rec.nt') },
+  { value: 'evangelien', label: t('lib.rec.gospels') },
+  { value: 'profeten', label: t('lib.rec.prophets') },
+  { value: 'wijsheid', label: t('lib.rec.wisdom') },
+  { value: 'personen', label: t('lib.rec.people') },
 ] as const;
 
 export type InterestValue = (typeof INTEREST_OPTIONS)[number]['value'];
@@ -117,9 +118,9 @@ function normalizeDifficulty(value: string | undefined): 'easy' | 'medium' | 'ha
 }
 
 const DIFFICULTY_LABELS: Record<'easy' | 'medium' | 'hard', string> = {
-  easy: 'makkelijk',
-  medium: 'gemiddeld',
-  hard: 'moeilijk',
+  easy: t('lib.rec.easy'),
+  medium: t('lib.rec.medium'),
+  hard: t('lib.rec.hard'),
 };
 
 const DIFFICULTY_RANK: Record<'easy' | 'medium' | 'hard', number> = {
@@ -129,10 +130,10 @@ const DIFFICULTY_RANK: Record<'easy' | 'medium' | 'hard', number> = {
 };
 
 export const READING_FREQUENCY_LABELS: Record<string, string> = {
-  daily: 'dagelijks',
-  weekly: 'wekelijks',
-  monthly: 'maandelijks',
-  rarely: 'af en toe',
+  daily: t('lib.rec.daily'),
+  weekly: t('lib.rec.weekly'),
+  monthly: t('lib.rec.monthly'),
+  rarely: t('lib.rec.rarely'),
 };
 
 /**
@@ -208,23 +209,23 @@ export function describeRecommendationProfile(
   const interests = (onboarding?.interests || []).filter(Boolean);
 
   if (interests.length > 0) {
-    parts.push(`je interesse in ${interests.slice(0, 3).map(interestLabel).join(', ')}`);
+    parts.push(t('lib.rec.partInterest', { list: interests.slice(0, 3).map(interestLabel).join(', ') }));
   }
 
   const level = KNOWLEDGE_TO_DIFFICULTY[onboarding?.knowledgeLevel || ''];
-  if (level) parts.push(`je niveau (${DIFFICULTY_LABELS[level]})`);
+  if (level) parts.push(t('lib.rec.partLevel', { level: DIFFICULTY_LABELS[level] }));
 
   const frequency = READING_FREQUENCY_LABELS[onboarding?.bibleReadingFrequency || ''];
-  if (frequency) parts.push(`je leesritme (${frequency})`);
+  if (frequency) parts.push(t('lib.rec.partRhythm', { frequency }));
 
   if (parts.length === 0) return null;
 
   const sentence =
     parts.length === 1
       ? parts[0]
-      : `${parts.slice(0, -1).join(', ')} en ${parts[parts.length - 1]}`;
+      : t('lib.rec.joinLast', { head: parts.slice(0, -1).join(', '), last: parts[parts.length - 1] });
 
-  return `Samengesteld op basis van ${sentence}.`;
+  return t('lib.rec.basedOn', { sentence });
 }
 
 export interface RecommendOptions {
@@ -279,7 +280,7 @@ export function recommendQuizzes<T extends RecommendableQuiz>(
     // full sentence turns into three wrapped lines and stops being scannable.
     // The section lead above them carries the full explanation.
     if (matched.length > 0) {
-      reasons.push(`Interesse: ${interestLabel(matched[0])}`);
+      reasons.push(t('lib.rec.reasonInterest', { name: interestLabel(matched[0]) }));
     }
 
     // ── Self-rated knowledge level ────────────────────────────────────────
@@ -288,7 +289,7 @@ export function recommendQuizzes<T extends RecommendableQuiz>(
       const distance = Math.abs(DIFFICULTY_RANK[difficulty] - DIFFICULTY_RANK[targetDifficulty]);
       if (distance === 0) {
         score += 4;
-        reasons.push(`Niveau: ${DIFFICULTY_LABELS[difficulty]}`);
+        reasons.push(t('lib.rec.reasonLevel', { level: DIFFICULTY_LABELS[difficulty] }));
       } else if (distance === 1) {
         score += 1;
       } else {
@@ -302,17 +303,17 @@ export function recommendQuizzes<T extends RecommendableQuiz>(
     const questionCount = quiz.questions?.length ?? 0;
     if (frequency === 'daily' && questionCount >= 12) {
       score += 2;
-      reasons.push('Extra diepgang');
+      reasons.push(t('lib.rec.depth'));
     } else if ((frequency === 'rarely' || frequency === 'monthly') && questionCount > 0 && questionCount <= 10) {
       score += 2;
-      reasons.push('Kort en compact');
+      reasons.push(t('lib.rec.short'));
     }
 
     // ── Freshness ─────────────────────────────────────────────────────────
     const attempts = quiz.progress?.attempts ?? 0;
     if (attempts === 0) {
       score += 3;
-      reasons.push('Nog niet gespeeld');
+      reasons.push(t('lib.rec.unplayed'));
     } else if (attempts >= 2) {
       score -= 2;
     }

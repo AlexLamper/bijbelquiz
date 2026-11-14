@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import { MultiplayerRoom, PlayerGroup, User, UserProgress, connectDB } from '@/database';
 import { AvatarConfig, resolveAvatar } from '@/lib/avatar';
 import type { LeaderboardPeriod } from '@/lib/leaderboard';
+import { t } from '@/i18n';
 
 /**
  * Saved groups: the people you played with, kept.
@@ -126,7 +127,7 @@ async function summarize(groups: GroupDocumentShape[], viewerId: string): Promis
       const user = byId.get(id);
       return {
         id,
-        name: user?.name || 'Speler',
+        name: user?.name || t('lib.lb.player'),
         isOwner: id === ownerId,
         avatar: resolveAvatar(user?.avatar, id),
       };
@@ -176,19 +177,19 @@ export async function createFromRoom(
   requestedName?: string,
 ): Promise<PlayerGroupResult<{ group: PlayerGroupSummary; created: boolean }>> {
   const ownerObjectId = toObjectId(userId);
-  if (!ownerObjectId) return fail('Onbekende gebruiker.', 401);
+  if (!ownerObjectId) return fail(t('lib.group.unknownUser'), 401);
 
   const code = String(roomCode || '').trim().toUpperCase();
-  if (!code) return fail('Onbekende kamer.', 400);
+  if (!code) return fail(t('lib.group.unknownRoom'), 400);
 
   await connectDB();
 
   const room = await MultiplayerRoom.findOne({ code }).select('code players status quizTitle').lean();
-  if (!room) return fail('Deze kamer bestaat niet meer.', 404);
+  if (!room) return fail(t('lib.group.roomGone'), 404);
 
   const playerIds = (room.players || []).map((player) => String(player.id));
   if (!playerIds.includes(userId)) {
-    return fail('Je hebt niet in deze kamer gespeeld.', 403);
+    return fail(t('lib.group.notPlayed'), 403);
   }
 
   const existing = await PlayerGroup.findOne({
@@ -207,12 +208,12 @@ export async function createFromRoom(
     .slice(0, MAX_GROUP_MEMBERS);
 
   if (memberIds.length < MIN_GROUP_MEMBERS) {
-    return fail('Een groep heeft minstens twee spelers nodig.', 400);
+    return fail(t('lib.group.minTwo'), 400);
   }
 
   const ownedCount = await PlayerGroup.countDocuments({ memberIds: ownerObjectId });
   if (ownedCount >= MAX_GROUPS_PER_USER) {
-    return fail(`Je kunt maximaal ${MAX_GROUPS_PER_USER} groepen bewaren.`, 400);
+    return fail(t('lib.group.max', { max: MAX_GROUPS_PER_USER }), 400);
   }
 
   const name = sanitizeName(requestedName || '') || defaultGroupName(room.quizTitle);
@@ -240,8 +241,8 @@ export async function createFromRoom(
  */
 function defaultGroupName(quizTitle?: string | null): string {
   const title = sanitizeName(quizTitle || '');
-  if (!title) return 'Mijn speelgroep';
-  return sanitizeName(`Groep ${title}`);
+  if (!title) return t('lib.group.defaultName');
+  return sanitizeName(t('lib.group.namePrefix', { title }));
 }
 
 /** Owner-only rename. */
@@ -252,10 +253,10 @@ export async function renameGroup(
 ): Promise<PlayerGroupResult<{ group: PlayerGroupSummary }>> {
   const ownerObjectId = toObjectId(userId);
   const groupObjectId = toObjectId(groupId);
-  if (!ownerObjectId || !groupObjectId) return fail('Onbekende groep.', 400);
+  if (!ownerObjectId || !groupObjectId) return fail(t('lib.group.unknown'), 400);
 
   const name = sanitizeName(rawName);
-  if (name.length < 2) return fail('Kies een naam van minstens twee tekens.', 400);
+  if (name.length < 2) return fail(t('lib.group.nameShort'), 400);
 
   await connectDB();
 
@@ -265,7 +266,7 @@ export async function renameGroup(
     { new: true },
   ).lean();
 
-  if (!updated) return fail('Alleen de eigenaar kan de groep hernoemen.', 403);
+  if (!updated) return fail(t('lib.group.ownerRename'), 403);
 
   const [summary] = await summarize([updated as unknown as GroupDocumentShape], userId);
   return { ok: true, group: summary };
@@ -287,22 +288,22 @@ export async function removeMember(
   const actorObjectId = toObjectId(userId);
   const groupObjectId = toObjectId(groupId);
   const targetObjectId = toObjectId(memberId);
-  if (!actorObjectId || !groupObjectId || !targetObjectId) return fail('Onbekende groep.', 400);
+  if (!actorObjectId || !groupObjectId || !targetObjectId) return fail(t('lib.group.unknown'), 400);
 
   await connectDB();
 
   const group = await PlayerGroup.findById(groupObjectId);
-  if (!group) return fail('Deze groep bestaat niet meer.', 404);
+  if (!group) return fail(t('lib.group.gone'), 404);
 
   const isOwner = String(group.ownerId) === userId;
   const isSelf = memberId === userId;
 
   if (!isOwner && !isSelf) {
-    return fail('Alleen de eigenaar kan iemand verwijderen.', 403);
+    return fail(t('lib.group.ownerRemove'), 403);
   }
 
   if (!group.memberIds.some((id) => String(id) === memberId)) {
-    return fail('Deze speler zit niet in de groep.', 404);
+    return fail(t('lib.group.notMember'), 404);
   }
 
   const remaining = group.memberIds.filter((id) => String(id) !== memberId);
@@ -345,7 +346,7 @@ export async function leaderboardFor(
 ): Promise<PlayerGroupResult<{ leaderboard: PlayerGroupLeaderboard }>> {
   const viewerObjectId = toObjectId(userId);
   const groupObjectId = toObjectId(groupId);
-  if (!viewerObjectId || !groupObjectId) return fail('Onbekende groep.', 400);
+  if (!viewerObjectId || !groupObjectId) return fail(t('lib.group.unknown'), 400);
 
   await connectDB();
 
@@ -354,7 +355,7 @@ export async function leaderboardFor(
     memberIds: viewerObjectId,
   }).lean();
 
-  if (!group) return fail('Deze groep bestaat niet, of je hoort er niet bij.', 404);
+  if (!group) return fail(t('lib.group.noAccess'), 404);
 
   const doc = group as unknown as GroupDocumentShape;
   const [summary] = await summarize([doc], userId);
@@ -388,7 +389,7 @@ export async function leaderboardFor(
       const id = String(user._id);
       return {
         _id: id,
-        name: user.name || 'Speler',
+        name: user.name || t('lib.lb.player'),
         xp: xpById.get(id) || 0,
         streak: Number(user.streak) || 0,
         avatar: resolveAvatar(user.avatar, id),
