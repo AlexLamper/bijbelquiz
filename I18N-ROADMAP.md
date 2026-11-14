@@ -47,7 +47,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] `src/config/site.ts` site config, `SITE` env switch
 - [x] Dutch redirects only on the NL build; intl build sends `noindex` + robots disallow
 - [x] SEO baseline + compare script in repo
-- [ ] i18n setup: `src/i18n/` with `nl.json` (source) and `en.json`, `t()` helper for server + client components
+- [x] i18n setup: `src/i18n/` with `nl.json` (source) and `en.json`, `t()` helper for server + client components
 - [ ] Extract strings, in batches per folder (commit + SEO check after each):
   - [ ] `src/app/layout.tsx`, metadata, JSON-LD, `sitemap.ts` (use `getSiteConfig()`)
   - [ ] `src/components/bq/` (shared design components)
