@@ -48,7 +48,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] Dutch redirects only on the NL build; intl build sends `noindex` + robots disallow
 - [x] SEO baseline + compare script in repo
 - [x] i18n setup: `src/i18n/` with `nl.json` (source) and `en.json`, `t()` helper for server + client components
-- [ ] Extract strings, in batches per folder (commit + SEO check after each):
+- [x] Extract strings, in batches per folder (commit + SEO check after each):
   - [x] `src/app/layout.tsx`, metadata, JSON-LD, `sitemap.ts` (use `getSiteConfig()`)
   - [x] `src/components/bq/` (shared design components; admin components stay Dutch)
   - [x] `src/components/web2/marketing/` (landing, help, legal UI; legal page bodies come with the page.tsx batch)
@@ -64,7 +64,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] Book names per locale on top of `src/lib/book-canon.ts` canonical codes
 
 ### Phase 2 - English site live (noindex)
-- [ ] International MongoDB (Atlas), `lang` on Quiz + Category, slugs unique per lang
+- [ ] International MongoDB (Atlas), `lang` on Quiz + Category (`lang` field done; slugs stay unique per database, each site has its own DB). Atlas cluster itself: external, needs you.
 - [ ] Vercel project `biblequizzes` from this repo: `SITE=intl`, own env vars (DB, auth, Stripe, mail)
 - [ ] DNS at Hostinger -> Vercel (A/CNAME records Vercel gives), `www` -> apex
 - [ ] Mail: `info@biblequizzes.app` (sending via the same provider as NL)

@@ -33,6 +33,8 @@ export interface IQuestion {
 export interface IQuiz extends Document {
   title: string;
   slug: string;
+  /** Content language. Old documents have none and are Dutch. */
+  lang?: string;
   description?: string;
   imageUrl?: string;
   categoryId: mongoose.Types.ObjectId | ICategory; // Reference to Category
@@ -65,6 +67,8 @@ const QuestionSchema = new Schema({
 const QuizSchema: Schema = new Schema({
   title: { type: String, required: true },
   slug: { type: String, required: true, unique: true },
+  // Not indexed: each site has its own database, so slugs stay unique as they are.
+  lang: { type: String, default: 'nl' },
   description: { type: String },
   imageUrl: { type: String },
   categoryId: { type: Schema.Types.ObjectId, ref: 'Category', required: true },

@@ -3,6 +3,8 @@ import mongoose, { Document, Model, Schema } from 'mongoose';
 export interface ICategory extends Document {
   title: string;
   slug: string;
+  /** Content language. Old documents have none and are Dutch. */
+  lang?: string;
   description?: string;
   icon?: string;
   imageUrl?: string;
@@ -13,6 +15,7 @@ export interface ICategory extends Document {
 const CategorySchema: Schema = new Schema({
   title: { type: String, required: true },
   slug: { type: String, required: true, unique: true },
+  lang: { type: String, default: 'nl' },
   description: { type: String },
   icon: { type: String }, // e.g. "book", "sun", "map" - to be mapped to a component
   imageUrl: { type: String },
