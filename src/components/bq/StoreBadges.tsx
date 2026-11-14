@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
+import { t } from '@/i18n';
 
 /**
  * "Download in de App Store" / "Ontdek het op Google Play": 48px white
@@ -66,7 +67,7 @@ export function AppStoreBadge({ size, className }: BadgeProps) {
   return (
     <StoreBadge
       href={APP_STORE_URL}
-      eyebrow="Download in de"
+      eyebrow={t('bq.stores.appStoreEyebrow')}
       label="App Store"
       size={size}
       className={className}
@@ -85,7 +86,7 @@ export function GooglePlayBadge({ size, className }: BadgeProps) {
   return (
     <StoreBadge
       href={GOOGLE_PLAY_URL}
-      eyebrow="Ontdek het op"
+      eyebrow={t('bq.stores.googlePlayEyebrow')}
       label="Google Play"
       size={size}
       className={className}

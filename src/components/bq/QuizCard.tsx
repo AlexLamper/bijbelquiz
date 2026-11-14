@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import { Pill } from './Pill';
 import { ProgressRing } from './ProgressBar';
 import { QuizScene } from './QuizScene';
+import { t } from '@/i18n';
 
 /**
  * The quiz tile: cover (8px inset, radius 10, 16:9), a small uppercase
@@ -56,7 +57,12 @@ export function estimateMinutes(questionCount: number): number {
 export function quizMeta(questionCount?: number, minutes?: number): string | null {
   if (!questionCount) return null;
   const mins = minutes ?? estimateMinutes(questionCount);
-  return `${questionCount} ${questionCount === 1 ? 'vraag' : 'vragen'} · ${mins} min`;
+  return t('bq.quiz.metaLine', {
+    count: questionCount,
+    unit: t(questionCount === 1 ? 'bq.quiz.questionOne' : 'bq.quiz.questionMany'),
+    mins,
+    min: t('bq.quiz.minutesShort'),
+  });
 }
 
 function CheckGlyph({ size }: { size: number }) {
@@ -182,7 +188,7 @@ export function ContinueCard({ href, title, book, chapter, answered, total, clas
         <Pill tone="lapis" size="md">
           {book}
         </Pill>
-        <ProgressRing value={total ? answered / total : 0} size={32} label={`${answered} van ${total} vragen`} />
+        <ProgressRing value={total ? answered / total : 0} size={32} label={t('bq.quiz.answeredOf', { answered, total })} />
       </span>
       <span className="flex flex-col gap-0.5">
         <span className="truncate font-display text-lg font-semibold leading-[22px]">{title}</span>

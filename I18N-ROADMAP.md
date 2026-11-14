@@ -50,7 +50,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] i18n setup: `src/i18n/` with `nl.json` (source) and `en.json`, `t()` helper for server + client components
 - [ ] Extract strings, in batches per folder (commit + SEO check after each):
   - [x] `src/app/layout.tsx`, metadata, JSON-LD, `sitemap.ts` (use `getSiteConfig()`)
-  - [ ] `src/components/bq/` (shared design components)
+  - [x] `src/components/bq/` (shared design components; admin components stay Dutch)
   - [ ] `src/components/web2/marketing/` (landing, help, legal)
   - [ ] `src/components/web2/browsing/`, `quiz-play/`, `quiz-result/`
   - [ ] `src/components/web2/samen/`, `premium/`, `account/`

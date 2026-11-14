@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { afterEach, describe, test } from 'node:test';
 
+import { ACCOUNT_NAV, FOOTER_NAV, MAIN_NAV } from '@/components/bq/nav';
 import { createT, createTList, getDefaultLocale, t, tList } from '@/i18n';
 import en from '@/i18n/en.json';
 import nl from '@/i18n/nl.json';
@@ -27,6 +28,16 @@ describe('i18n', () => {
     process.env.SITE = 'intl';
     assert.equal(getDefaultLocale(), 'en');
     assert.equal(t('common.cancel'), 'Cancel');
+  });
+
+  test('every nav label/title key exists in nl and en', () => {
+    const links = [...MAIN_NAV, ...ACCOUNT_NAV, ...FOOTER_NAV.flatMap((group) => group.links)];
+    const nlKeys = new Set(keys(nl));
+    const enKeys = new Set(keys(en));
+    for (const key of [...links.map((l) => l.labelKey), ...FOOTER_NAV.map((g) => g.titleKey).filter((k) => k !== 'brand')]) {
+      assert.ok(nlKeys.has(key), `nl missing ${key}`);
+      assert.ok(enKeys.has(key), `en missing ${key}`);
+    }
   });
 
   test('lists resolve per locale', () => {

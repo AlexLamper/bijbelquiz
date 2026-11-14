@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
+import { t } from '@/i18n';
 
 /**
  * Progress in three shapes from the designs:
@@ -63,7 +64,7 @@ export function ProgressSegments({ current, total, label, height = 8, className 
   return (
     <div
       role="progressbar"
-      aria-label={label ?? `Vraag ${current} van ${total}`}
+      aria-label={label ?? t('bq.quiz.questionProgress', { current, total })}
       aria-valuemin={1}
       aria-valuemax={total}
       aria-valuenow={current}

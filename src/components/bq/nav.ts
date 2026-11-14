@@ -3,7 +3,8 @@
  * so a route is renamed in one place.
  */
 export interface NavLink {
-  label: string;
+  /** i18n key (see src/i18n), translated where the link is rendered. */
+  labelKey: string;
   href: string;
   /** Other route prefixes that count as this item, e.g. a quiz page for
    *  "Quizzen". */
@@ -11,46 +12,47 @@ export interface NavLink {
 }
 
 export const MAIN_NAV: NavLink[] = [
-  { label: 'Quizzen', href: '/quizzen', also: ['/quiz', '/bijbelquiz'] },
+  { labelKey: 'bq.nav.quizzes', href: '/quizzen', also: ['/quiz', '/bijbelquiz'] },
   // Samen spelen took the place of Duels, as in the app: a group playing
   // together gets far more play than two players taking turns.
-  { label: 'Samen spelen', href: '/samen-spelen' },
-  { label: 'Ranglijst', href: '/ranglijst' },
-  { label: 'Premium', href: '/premium' },
+  { labelKey: 'bq.nav.playTogether', href: '/samen-spelen' },
+  { labelKey: 'bq.nav.leaderboard', href: '/ranglijst' },
+  { labelKey: 'bq.nav.premium', href: '/premium' },
 ];
 
-export const FOOTER_NAV: { title: string; links: NavLink[] }[] = [
+/** A group `titleKey` of 'brand' renders the site's brand name. */
+export const FOOTER_NAV: { titleKey: string; links: NavLink[] }[] = [
   {
-    title: 'Spelen',
+    titleKey: 'bq.nav.groupPlay',
     links: [
-      { label: 'Quizzen', href: '/quizzen' },
-      { label: 'Samen spelen', href: '/samen-spelen' },
-      { label: 'Ranglijst', href: '/ranglijst' },
+      { labelKey: 'bq.nav.quizzes', href: '/quizzen' },
+      { labelKey: 'bq.nav.playTogether', href: '/samen-spelen' },
+      { labelKey: 'bq.nav.leaderboard', href: '/ranglijst' },
     ],
   },
   {
-    title: 'BijbelQuiz',
+    titleKey: 'brand',
     links: [
-      { label: 'Premium', href: '/premium' },
-      { label: 'Groepslicentie', href: '/groepslicentie' },
-      { label: 'Hulp', href: '/hulp' },
-      { label: 'Contact', href: '/contact' },
+      { labelKey: 'bq.nav.premium', href: '/premium' },
+      { labelKey: 'bq.nav.groupLicense', href: '/groepslicentie' },
+      { labelKey: 'bq.nav.help', href: '/hulp' },
+      { labelKey: 'bq.nav.contact', href: '/contact' },
     ],
   },
   {
-    title: 'Juridisch',
+    titleKey: 'bq.nav.groupLegal',
     links: [
-      { label: 'Privacybeleid', href: '/privacybeleid' },
-      { label: 'Voorwaarden', href: '/voorwaarden' },
-      { label: 'Account verwijderen', href: '/account-verwijderen' },
+      { labelKey: 'bq.nav.privacy', href: '/privacybeleid' },
+      { labelKey: 'bq.nav.terms', href: '/voorwaarden' },
+      { labelKey: 'bq.nav.deleteAccount', href: '/account-verwijderen' },
     ],
   },
 ];
 
 export const ACCOUNT_NAV: NavLink[] = [
-  { label: 'Dashboard', href: '/dashboard' },
-  { label: 'Profiel', href: '/profiel' },
-  { label: 'Instellingen', href: '/instellingen' },
+  { labelKey: 'bq.nav.dashboard', href: '/dashboard' },
+  { labelKey: 'bq.nav.profile', href: '/profiel' },
+  { labelKey: 'bq.nav.settings', href: '/instellingen' },
 ];
 
 /** True when `pathname` is `href` (or one of `also`) or lives under it. */

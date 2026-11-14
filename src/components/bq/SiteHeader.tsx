@@ -7,6 +7,7 @@ import { useSession, signOut } from 'next-auth/react';
 import { LogOut, Menu, Settings, Shield, User, X } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { t } from '@/i18n';
 import type { AvatarConfig } from '@/lib/avatar';
 import { Button, IconButton } from './Button';
 import { Avatar } from './Avatar';
@@ -72,7 +73,7 @@ export function SiteHeader({ preview }: { preview?: SiteHeaderPreview }) {
       <Container className="grid h-[67px] grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-x-6">
         <Logo href={signedIn ? '/dashboard' : '/'} className="justify-self-start" />
 
-        <nav aria-label="Hoofdmenu" className="col-start-2 hidden items-center gap-8 m:flex">
+        <nav aria-label={t('bq.nav.mainMenu')} className="col-start-2 hidden items-center gap-8 m:flex">
           {MAIN_NAV.map((link) => {
             const active = isActivePath(pathname, link.href, link.also);
             return (
@@ -85,7 +86,7 @@ export function SiteHeader({ preview }: { preview?: SiteHeaderPreview }) {
                   active ? 'border-lapis text-lapis' : 'border-transparent text-ink-soft hover:text-ink',
                 )}
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             );
           })}
@@ -100,7 +101,7 @@ export function SiteHeader({ preview }: { preview?: SiteHeaderPreview }) {
               {typeof xp === 'number' && <StatPill kind="xp" value={xp} href="/profiel" className="hidden m:inline-flex" />}
               <Link
                 href="/profiel"
-                aria-label="Profiel"
+                aria-label={t('bq.nav.profile')}
                 className="hidden size-10 items-center justify-center rounded-full border border-line bg-card text-ink-soft no-underline hover:bg-chip hover:text-ink m:flex"
               >
                 <User className="size-5" strokeWidth={2.2} aria-hidden="true" />
@@ -109,16 +110,16 @@ export function SiteHeader({ preview }: { preview?: SiteHeaderPreview }) {
           ) : (
             <>
               <Link href="/inloggen" className="hidden whitespace-nowrap text-[15px] font-bold no-underline m:inline">
-                Inloggen
+                {t('bq.auth.login')}
               </Link>
               <Button href="/registreren" size="md">
-                Gratis beginnen
+                {t('bq.auth.startFree')}
               </Button>
             </>
           )}
           <IconButton
             shape="square"
-            aria-label={menuOpen ? 'Menu sluiten' : 'Menu openen'}
+            aria-label={menuOpen ? t('bq.nav.menuClose') : t('bq.nav.menuOpen')}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen(true)}
             className="m:hidden"
@@ -154,11 +155,11 @@ function MobileMenu({ open, onOpenChange, signedIn, isAdmin, name, xp, streak }:
     );
 
   return (
-    <Modal open={open} onOpenChange={onOpenChange} title="Menu" hideTitle presentation="sheet" size="sm" className="m:hidden">
-      <nav aria-label="Hoofdmenu" className="-mt-2 flex flex-col gap-1">
+    <Modal open={open} onOpenChange={onOpenChange} title={t('bq.nav.menu')} hideTitle presentation="sheet" size="sm" className="m:hidden">
+      <nav aria-label={t('bq.nav.mainMenu')} className="-mt-2 flex flex-col gap-1">
         {MAIN_NAV.map((link) => (
           <Link key={link.href} href={link.href} aria-current={isActivePath(pathname, link.href, link.also) ? 'page' : undefined} className={linkClass(isActivePath(pathname, link.href, link.also))}>
-            {link.label}
+            {t(link.labelKey)}
           </Link>
         ))}
       </nav>
@@ -168,9 +169,9 @@ function MobileMenu({ open, onOpenChange, signedIn, isAdmin, name, xp, streak }:
             <div className="mb-2 flex items-center gap-3 px-1">
               <Avatar name={name} tone="solid" size={40} />
               <div className="flex min-w-0 flex-col">
-                <span className="truncate text-base font-extrabold">{name ?? 'Speler'}</span>
+                <span className="truncate text-base font-extrabold">{name ?? t('bq.auth.player')}</span>
                 <span className="text-[13px] font-bold text-ink-muted">
-                  {[typeof xp === 'number' ? `${new Intl.NumberFormat('nl-NL').format(xp)} XP` : null, typeof streak === 'number' ? `${streak} dagen op rij` : null]
+                  {[typeof xp === 'number' ? t('bq.header.xp', { value: new Intl.NumberFormat(t('bq.header.numberLocale')).format(xp) }) : null, typeof streak === 'number' ? t('bq.header.daysInARow', { count: streak }) : null]
                     .filter(Boolean)
                     .join(' · ')}
                 </span>
@@ -178,28 +179,28 @@ function MobileMenu({ open, onOpenChange, signedIn, isAdmin, name, xp, streak }:
             </div>
             {ACCOUNT_NAV.map((link) => (
               <Link key={link.href} href={link.href} className={linkClass(isActivePath(pathname, link.href))}>
-                {link.label === 'Instellingen' ? <Settings className="mr-2.5 size-5" strokeWidth={2.2} aria-hidden="true" /> : <User className="mr-2.5 size-5" strokeWidth={2.2} aria-hidden="true" />}
-                {link.label}
+                {link.href === '/instellingen' ? <Settings className="mr-2.5 size-5" strokeWidth={2.2} aria-hidden="true" /> : <User className="mr-2.5 size-5" strokeWidth={2.2} aria-hidden="true" />}
+                {t(link.labelKey)}
               </Link>
             ))}
             {isAdmin && (
               <Link href="/beheer" className={linkClass(isActivePath(pathname, '/beheer'))}>
                 <Shield className="mr-2.5 size-5" strokeWidth={2.2} aria-hidden="true" />
-                Beheer
+                {t('bq.nav.admin')}
               </Link>
             )}
             <button type="button" onClick={() => signOut({ callbackUrl: '/' })} className={cn(linkClass(false), 'w-full border-0 bg-transparent text-left')}>
               <LogOut className="mr-2.5 size-5" strokeWidth={2.2} aria-hidden="true" />
-              Uitloggen
+              {t('bq.auth.logout')}
             </button>
           </div>
         ) : (
           <div className="flex flex-col gap-2.5">
             <Button href="/registreren" size="xl" block>
-              Gratis beginnen
+              {t('bq.auth.startFree')}
             </Button>
             <Button href="/inloggen" variant="secondary" size="xl" block>
-              Inloggen
+              {t('bq.auth.login')}
             </Button>
           </div>
         )}

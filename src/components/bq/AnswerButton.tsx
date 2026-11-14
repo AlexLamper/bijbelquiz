@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Check, X } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { t } from '@/i18n';
 
 /**
  * One answer option in the quiz player, a duel or a room: 88px tall, 22px
@@ -59,7 +60,7 @@ export const AnswerButton = React.forwardRef<HTMLButtonElement, AnswerButtonProp
 /** The 2-column answer grid (1 column on phones for long answers). */
 export function AnswerGrid({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div role="group" aria-label="Antwoorden" className={cn('grid grid-cols-1 gap-3.5 m:grid-cols-2', className)} {...props}>
+    <div role="group" aria-label={t('bq.a11y.answers')} className={cn('grid grid-cols-1 gap-3.5 m:grid-cols-2', className)} {...props}>
       {children}
     </div>
   );

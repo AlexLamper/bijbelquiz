@@ -4,6 +4,7 @@ import { BookOpen, Lock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from './Button';
 import { Pill } from './Pill';
+import { t, tList } from '@/i18n';
 
 /**
  * What a free player sees instead of an explanation: the Bible reference
@@ -25,19 +26,14 @@ export interface PremiumLockProps {
   className?: string;
 }
 
-const PLACEHOLDER = [
-  'De uitleg bij dit antwoord vertelt wat er in het bijbelgedeelte gebeurt en waarom dit antwoord klopt.',
-  'Met Premium lees je bij elke vraag de uitleg en de bijbeltekst erbij, zo vaak je wilt.',
-  'Zo onthoud je het verhaal beter en leer je bij elke quiz iets nieuws.',
-];
 
 export function PremiumLock({
   reference,
   referenceHref,
   premiumHref = '/premium',
   onPremiumClick,
-  title = 'Uitleg is Premium',
-  description = 'Lees bij elk antwoord waarom het klopt, met de bijbeltekst erbij.',
+  title = t('bq.premiumLock.title'),
+  description = t('bq.premiumLock.description'),
   lines = 2,
   className,
 }: PremiumLockProps) {
@@ -50,7 +46,7 @@ export function PremiumLock({
       )}
       <div className="relative overflow-hidden rounded-[12px] border border-line-soft bg-chip/60 p-4">
         <p aria-hidden="true" className="m-0 select-none text-[15px] leading-[22px] font-semibold text-ink-soft blur-[6px]">
-          {PLACEHOLDER.slice(0, lines).join(' ')}
+          {tList('bq.premiumLock.placeholder').slice(0, lines).join(' ')}
         </p>
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-4 text-center">
           <span className="flex size-9 items-center justify-center rounded-full bg-card border border-line text-ink-soft">
@@ -60,11 +56,11 @@ export function PremiumLock({
           <span className="sr-only">{description}</span>
           {onPremiumClick ? (
             <Button variant="gold" size="sm" onClick={onPremiumClick}>
-              Premium
+              {t('bq.premiumLock.button')}
             </Button>
           ) : (
             <Button variant="gold" size="sm" href={premiumHref}>
-              Premium
+              {t('bq.premiumLock.button')}
             </Button>
           )}
         </div>

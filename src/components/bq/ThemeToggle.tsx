@@ -5,13 +5,14 @@ import { useTheme } from 'next-themes';
 
 import { useUserSettings } from '@/lib/user-settings-client';
 import { Tabs } from './Tabs';
+import { t } from '@/i18n';
 
 type ThemeChoice = 'light' | 'dark' | 'system';
 
 const ITEMS: { value: ThemeChoice; label: string }[] = [
-  { value: 'light', label: 'Licht' },
-  { value: 'dark', label: 'Donker' },
-  { value: 'system', label: 'Systeem' },
+  { value: 'light', label: t('bq.theme.light') },
+  { value: 'dark', label: t('bq.theme.dark') },
+  { value: 'system', label: t('bq.theme.system') },
 ];
 
 /**
@@ -33,7 +34,7 @@ export function ThemeToggle({ className, 'aria-labelledby': labelledBy }: { clas
       items={ITEMS}
       value={ITEMS.some((item) => item.value === value) ? value : 'system'}
       variant="compact"
-      aria-label={labelledBy ? undefined : 'Thema'}
+      aria-label={labelledBy ? undefined : t('bq.theme.label')}
       aria-labelledby={labelledBy}
       className={className}
       onChange={(next) => {

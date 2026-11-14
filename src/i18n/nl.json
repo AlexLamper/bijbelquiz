@@ -80,5 +80,84 @@
       "Bijbelstudie",
       "Digitale Bijbelplatformen"
     ]
+  },
+  "bq": {
+    "brand": {
+      "wordA": "Bijbel",
+      "wordB": "Quiz"
+    },
+    "nav": {
+      "quizzes": "Quizzen",
+      "playTogether": "Samen spelen",
+      "leaderboard": "Ranglijst",
+      "premium": "Premium",
+      "groupLicense": "Groepslicentie",
+      "help": "Hulp",
+      "contact": "Contact",
+      "privacy": "Privacybeleid",
+      "terms": "Voorwaarden",
+      "deleteAccount": "Account verwijderen",
+      "dashboard": "Dashboard",
+      "profile": "Profiel",
+      "settings": "Instellingen",
+      "admin": "Beheer",
+      "groupPlay": "Spelen",
+      "groupLegal": "Juridisch",
+      "mainMenu": "Hoofdmenu",
+      "menu": "Menu",
+      "menuOpen": "Menu openen",
+      "menuClose": "Menu sluiten"
+    },
+    "auth": {
+      "login": "Inloggen",
+      "startFree": "Gratis beginnen",
+      "logout": "Uitloggen",
+      "player": "Speler"
+    },
+    "footer": {
+      "tagline": "Test je bijbelkennis met korte quizzen.",
+      "copyright": "© {year} {brand}"
+    },
+    "header": {
+      "daysInARow": "{count} dagen op rij",
+      "xp": "{value} XP",
+      "numberLocale": "nl-NL"
+    },
+    "logo": {
+      "homeLabel": "{brand}, naar de startpagina"
+    },
+    "stores": {
+      "appStoreEyebrow": "Download in de",
+      "googlePlayEyebrow": "Ontdek het op"
+    },
+    "premiumLock": {
+      "title": "Uitleg is Premium",
+      "description": "Lees bij elk antwoord waarom het klopt, met de bijbeltekst erbij.",
+      "button": "Premium",
+      "placeholder": [
+        "De uitleg bij dit antwoord vertelt wat er in het bijbelgedeelte gebeurt en waarom dit antwoord klopt.",
+        "Met Premium lees je bij elke vraag de uitleg en de bijbeltekst erbij, zo vaak je wilt.",
+        "Zo onthoud je het verhaal beter en leer je bij elke quiz iets nieuws."
+      ]
+    },
+    "quiz": {
+      "questionOne": "vraag",
+      "questionMany": "vragen",
+      "minutesShort": "min",
+      "metaLine": "{count} {unit} · {mins} {min}",
+      "answeredOf": "{answered} van {total} vragen",
+      "questionProgress": "Vraag {current} van {total}"
+    },
+    "theme": {
+      "label": "Thema",
+      "light": "Licht",
+      "dark": "Donker",
+      "system": "Systeem"
+    },
+    "a11y": {
+      "close": "Sluiten",
+      "answers": "Antwoorden",
+      "breadcrumbs": "Kruimelpad"
+    }
   }
 }

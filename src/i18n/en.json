@@ -48,5 +48,84 @@
       "Bible study",
       "Digital Bible platforms"
     ]
+  },
+  "bq": {
+    "brand": {
+      "wordA": "Bible ",
+      "wordB": "Quizzes"
+    },
+    "nav": {
+      "quizzes": "Quizzes",
+      "playTogether": "Play together",
+      "leaderboard": "Leaderboard",
+      "premium": "Premium",
+      "groupLicense": "Group license",
+      "help": "Help",
+      "contact": "Contact",
+      "privacy": "Privacy policy",
+      "terms": "Terms",
+      "deleteAccount": "Delete account",
+      "dashboard": "Dashboard",
+      "profile": "Profile",
+      "settings": "Settings",
+      "admin": "Admin",
+      "groupPlay": "Play",
+      "groupLegal": "Legal",
+      "mainMenu": "Main menu",
+      "menu": "Menu",
+      "menuOpen": "Open menu",
+      "menuClose": "Close menu"
+    },
+    "auth": {
+      "login": "Log in",
+      "startFree": "Start for free",
+      "logout": "Log out",
+      "player": "Player"
+    },
+    "footer": {
+      "tagline": "Test your Bible knowledge with short quizzes.",
+      "copyright": "© {year} {brand}"
+    },
+    "header": {
+      "daysInARow": "{count} day streak",
+      "xp": "{value} XP",
+      "numberLocale": "en-US"
+    },
+    "logo": {
+      "homeLabel": "{brand}, go to the home page"
+    },
+    "stores": {
+      "appStoreEyebrow": "Download on the",
+      "googlePlayEyebrow": "Get it on"
+    },
+    "premiumLock": {
+      "title": "Explanations are Premium",
+      "description": "Read why each answer is right, with the Bible text alongside.",
+      "button": "Premium",
+      "placeholder": [
+        "The explanation for this answer tells you what happens in the Bible passage and why this answer is correct.",
+        "With Premium you read the explanation and the Bible text for every question, as often as you like.",
+        "That way you remember the story better and learn something new in every quiz."
+      ]
+    },
+    "quiz": {
+      "questionOne": "question",
+      "questionMany": "questions",
+      "minutesShort": "min",
+      "metaLine": "{count} {unit} · {mins} {min}",
+      "answeredOf": "{answered} of {total} questions",
+      "questionProgress": "Question {current} of {total}"
+    },
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "a11y": {
+      "close": "Close",
+      "answers": "Answers",
+      "breadcrumbs": "Breadcrumbs"
+    }
   }
 }

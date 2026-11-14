@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { t } from '@/i18n';
 
 /** "Quizzen > Johannes > Brood voor 5000 > Resultaat". The last item is the page. */
 export interface Crumb {
@@ -12,7 +13,7 @@ export interface Crumb {
 
 export function Breadcrumbs({ items, className }: { items: Crumb[]; className?: string }) {
   return (
-    <nav aria-label="Kruimelpad" className={cn('flex flex-wrap items-center gap-1.5 text-sm font-bold', className)}>
+    <nav aria-label={t('bq.a11y.breadcrumbs')} className={cn('flex flex-wrap items-center gap-1.5 text-sm font-bold', className)}>
       {items.map((item, index) => {
         const last = index === items.length - 1;
         return (

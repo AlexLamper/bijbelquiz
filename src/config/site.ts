@@ -52,7 +52,11 @@ const INTL: SiteConfig = {
 };
 
 export function getSiteId(): SiteId {
-  return process.env.SITE === 'intl' ? 'intl' : 'nl';
+  // NEXT_PUBLIC_SITE is set from SITE in next.config.ts so client components
+  // (which cannot read SITE) resolve the same site. Literal access is required
+  // for Next to inline it into the client bundle.
+  const site = process.env.NEXT_PUBLIC_SITE ?? process.env.SITE;
+  return site === 'intl' ? 'intl' : 'nl';
 }
 
 export function getSiteConfig(): SiteConfig {

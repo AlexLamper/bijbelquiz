@@ -12,6 +12,8 @@ const intlIndexable = process.env.SITE_INDEXABLE === "true";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  // Lets client components know which site this is (see src/config/site.ts).
+  env: { NEXT_PUBLIC_SITE: isIntlSite ? "intl" : "nl" },
   turbopack: {
     root: projectRoot,
     resolveAlias: {

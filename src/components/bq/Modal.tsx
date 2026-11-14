@@ -6,6 +6,7 @@ import { X } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { IconButton } from './Button';
+import { t } from '@/i18n';
 
 /**
  * Dialogs on top of a dimmed canvas. `presentation="center"` is a white card
@@ -89,7 +90,7 @@ export function Modal({
             )}
             {dismissible && (
               <Dialog.Close asChild>
-                <IconButton aria-label="Sluiten" shape="round" size="md" className="absolute right-4 top-4 m:right-5 m:top-5">
+                <IconButton aria-label={t('bq.a11y.close')} shape="round" size="md" className="absolute right-4 top-4 m:right-5 m:top-5">
                   <X className="size-5" strokeWidth={2.2} />
                 </IconButton>
               </Dialog.Close>
