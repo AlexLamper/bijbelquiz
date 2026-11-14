@@ -1,3 +1,5 @@
+import { t } from '@/i18n';
+
 /** One row of the board, the global one or a group's. */
 export interface BoardRow {
   id: string;
@@ -6,5 +8,5 @@ export interface BoardRow {
 }
 
 export function formatXp(xp: number): string {
-  return `${new Intl.NumberFormat('nl-NL').format(Math.max(0, Math.round(xp)))} XP`;
+  return `${new Intl.NumberFormat(t('bq.header.numberLocale')).format(Math.max(0, Math.round(xp)))} XP`;
 }

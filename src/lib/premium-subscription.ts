@@ -5,6 +5,7 @@ import { connectDB, User } from '@/database';
 import { subscriptionStatusGrantsPremium } from '@/lib/premium-state';
 import stripe from '@/lib/stripe';
 import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
 
 /**
  * A member's Stripe billing state for the Premium page, Instellingen and
@@ -61,7 +62,7 @@ interface BillingUser {
 }
 
 const dateLabel = (date: Date) =>
-  date.toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Europe/Amsterdam' });
+  date.toLocaleDateString(t('bq.header.numberLocale'), { year: 'numeric', month: 'long', day: 'numeric', timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined });
 
 /** Whether the account has a Stripe subscription that currently gives Premium. */
 export function hasActiveStripeSubscription(user: Pick<BillingUser, 'stripeSubscriptionId' | 'stripeSubscriptionStatus' | 'hasLifetimePremium'> & { premiumStripe?: boolean }): boolean {

@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 import { BoltIcon, BoltSolidIcon, FlameIcon } from './icons';
+import { t } from '@/i18n';
 
 /**
  * Small rounded labels: the book chip on a quiz card ("Johannes"), the
@@ -82,7 +83,7 @@ export function StreakPill({ count, className }: { count: number; className?: st
  * Formats numbers the Dutch way (1.240).
  */
 export function StatPill({ kind, value, className, href }: { kind: 'streak' | 'xp'; value: number; className?: string; href?: string }) {
-  const formatted = new Intl.NumberFormat('nl-NL').format(value);
+  const formatted = new Intl.NumberFormat(t('bq.header.numberLocale')).format(value);
   const label = kind === 'streak' ? `Reeks van ${formatted} dagen` : `${formatted} XP`;
   const classes = cn(
     'inline-flex h-9 items-center gap-[5px] rounded-full bg-card border border-line px-3 text-[15px] font-extrabold text-ink no-underline hover:text-ink hover:bg-chip',

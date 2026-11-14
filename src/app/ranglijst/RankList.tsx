@@ -7,6 +7,7 @@ import { Avatar, initialOf } from '@/components/bq';
 import type { NextPlaceGap } from '@/lib/leaderboard-standing';
 import { cn } from '@/lib/utils';
 import { formatXp, type BoardRow } from './types';
+import { t } from '@/i18n';
 
 /** Rows shown before "Toon meer spelers": places 4 to 10. */
 const COLLAPSED_UNTIL = 10;
@@ -65,7 +66,7 @@ export function RankList({ rows, startAt, currentUserId, gap }: RankListProps) {
           <span className="truncate text-base font-bold text-ink">{row.name}</span>
           {mine && gap && (
             <span className="text-sm font-bold text-lapis">
-              Nog {new Intl.NumberFormat('nl-NL').format(gap.xp)} XP tot plek {gap.place}
+              Nog {new Intl.NumberFormat(t('bq.header.numberLocale')).format(gap.xp)} XP tot plek {gap.place}
             </span>
           )}
         </span>

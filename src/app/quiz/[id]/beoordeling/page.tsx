@@ -24,6 +24,7 @@ import { dominantBookChapter, pickNextQuiz, type NextQuizCandidate } from '@/lib
 import { buildReviewQuestionsFromAttempt, type StoredAttemptAnswer } from '@/lib/quiz-review';
 import { calculateNextStreak } from '@/lib/streak';
 import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
 
 export function generateMetadata(): Metadata {
   return {
@@ -53,7 +54,7 @@ interface StoredQuestion {
 const OBJECT_ID = /^[0-9a-fA-F]{24}$/;
 
 function playedOnLabel(date: Date): string {
-  return new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Amsterdam' }).format(date);
+  return new Intl.DateTimeFormat(t('bq.header.numberLocale'), { day: 'numeric', month: 'long', year: 'numeric', timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined }).format(date);
 }
 
 /** The quiz behind "Volgende quiz": next in the series, else the same book, else the same category. */

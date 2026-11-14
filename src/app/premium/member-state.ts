@@ -1,6 +1,8 @@
 import { Payment } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { hasActiveStripeSubscription, resolvePremiumSubscription } from '@/lib/premium-subscription';
+import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
 
 /**
  * What a player who already has Premium sees on /premium instead of the plans.
@@ -46,11 +48,11 @@ export interface PremiumMemberState {
   showGroupLink: boolean;
 }
 
-const dateFormat = new Intl.DateTimeFormat('nl-NL', {
+const dateFormat = new Intl.DateTimeFormat(t('bq.header.numberLocale'), {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
-  timeZone: 'Europe/Amsterdam',
+  timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined,
 });
 
 function formatDate(input: Date | string | null | undefined): string | null {
