@@ -1,3 +1,5 @@
+import { t } from '@/i18n';
+
 /**
  * How a quiz is named inside Samen spelen: "Johannes 6 - Brood voor 5000",
  * with a three-letter badge ("Joh") in front of it, as the designs draw the
@@ -38,10 +40,10 @@ export function quizBadge(title: string, passageLabel: string | null | undefined
 }
 
 export function questionCountLabel(count: number): string {
-  return `${count} ${count === 1 ? 'vraag' : 'vragen'}`;
+  return t(count === 1 ? 'samen.questionOne' : 'samen.questionMany', { count });
 }
 
 export function pointsLabel(points: number, short = false): string {
-  if (short) return `${points} pt`;
-  return `${points} ${points === 1 ? 'punt' : 'punten'}`;
+  if (short) return t('samen.pointsShort', { points });
+  return t(points === 1 ? 'samen.pointOne' : 'samen.pointMany', { points });
 }

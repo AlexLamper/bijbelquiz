@@ -23,6 +23,7 @@ import { cn } from '@/lib/utils';
 import { playerName, standings } from './players';
 import { ReadingCard } from './ReadingCard';
 import { pointsLabel } from './quiz-display';
+import { t } from '@/i18n';
 
 interface GameViewProps {
   room: RoomSnapshot;
@@ -87,7 +88,7 @@ function YouTag({ name }: { name: string | null }) {
       <span className="flex size-[18px] shrink-0 items-center justify-center rounded-full bg-lapis font-display text-[10px] font-semibold text-white">
         {initialOf(name)}
       </span>
-      Jij
+      {t('samen.you')}
     </span>
   );
 }
@@ -132,7 +133,7 @@ function QuestionCard({
           <span />
         )}
         {secondsLeft != null && timerSeconds > 0 && (
-          <span role="timer" aria-label={`Nog ${secondsLeft} seconden`}>
+          <span role="timer" aria-label={t('play.secondsLeft', { seconds: secondsLeft })}>
             <ProgressRing
               value={secondsLeft / timerSeconds}
               size={56}
@@ -164,30 +165,30 @@ function PlayersCard({
   const correct = room.players.filter((player) => player.answeredCorrectly === true).length;
   const playing = room.status === 'in_progress' || room.status === 'question_result';
 
-  let caption = 'Stand';
-  if (question && revealed) caption = `Stand na vraag ${question.questionNumber}`;
-  else if (question && question.questionNumber > 1) caption = `Stand na vraag ${question.questionNumber - 1}`;
+  let caption = t('samen.game.standings');
+  if (question && revealed) caption = t('samen.game.standingsAfter', { n: question.questionNumber });
+  else if (question && question.questionNumber > 1) caption = t('samen.game.standingsAfter', { n: question.questionNumber - 1 });
 
   return (
     <aside aria-labelledby="spelers-titel" className="min-w-0 overflow-hidden rounded-[16px] border border-line bg-card">
       <div className={cn('flex flex-col gap-3 px-5 pt-5', playing ? 'border-b border-line-soft pb-[18px]' : 'pb-1')}>
         <div className="flex items-baseline justify-between gap-3">
           <h2 id="spelers-titel" className="m-0 text-xl leading-[26px]">
-            Spelers
+            {t('samen.game.players')}
           </h2>
           <span className="text-[15px] font-extrabold text-lapis-edge" aria-live="polite">
             {!playing
-              ? `${room.players.length} spelers`
+              ? t('samen.game.playersCount', { count: room.players.length })
               : revealed
-                ? `${correct} van ${room.players.length} goed`
-                : `${answered} van ${room.players.length} geantwoord`}
+                ? t('samen.game.correctOf', { correct, total: room.players.length })
+                : t('samen.game.answeredOf', { answered, total: room.players.length })}
           </span>
         </div>
         {playing && (
           <ProgressBar
             value={room.players.length ? (revealed ? correct : answered) / room.players.length : 0}
             tone={revealed ? 'green' : 'lapis'}
-            label={revealed ? 'Spelers met een goed antwoord' : 'Spelers die hebben geantwoord'}
+            label={revealed ? t('samen.game.playersCorrect') : t('samen.game.playersAnswered')}
           />
         )}
       </div>
@@ -220,23 +221,23 @@ function PlayerRow({
   if (playing && revealed) {
     status =
       player.answeredCorrectly === true ? (
-        <span aria-label="goed" className="flex size-[22px] shrink-0 items-center justify-center rounded-full bg-green-tint text-green">
+        <span aria-label={t('samen.game.statusCorrect')} className="flex size-[22px] shrink-0 items-center justify-center rounded-full bg-green-tint text-green">
           <Check className="size-3" strokeWidth={3.2} />
         </span>
       ) : player.answeredCorrectly === false ? (
-        <span aria-label="fout" className="flex size-[22px] shrink-0 items-center justify-center rounded-full bg-coral-tint text-coral-text">
+        <span aria-label={t('samen.game.statusWrong')} className="flex size-[22px] shrink-0 items-center justify-center rounded-full bg-coral-tint text-coral-text">
           <X className="size-3" strokeWidth={3.2} />
         </span>
       ) : (
-        <span aria-label="geen antwoord" className="size-[22px] shrink-0 rounded-full border-2 border-dashed border-input-line" />
+        <span aria-label={t('samen.game.statusNone')} className="size-[22px] shrink-0 rounded-full border-2 border-dashed border-input-line" />
       );
   } else if (playing) {
     status = player.hasAnswered ? (
-      <span aria-label="heeft geantwoord" className="flex size-[22px] shrink-0 items-center justify-center rounded-full bg-green-tint text-green">
+      <span aria-label={t('samen.game.statusAnswered')} className="flex size-[22px] shrink-0 items-center justify-center rounded-full bg-green-tint text-green">
         <Check className="size-3" strokeWidth={3.2} />
       </span>
     ) : (
-      <span aria-label="denkt nog na" className="size-[22px] shrink-0 rounded-full border-2 border-dashed border-input-line" />
+      <span aria-label={t('samen.game.statusThinking')} className="size-[22px] shrink-0 rounded-full border-2 border-dashed border-input-line" />
     );
   }
 
@@ -254,7 +255,7 @@ function PlayerRow({
       />
       <span className="flex min-w-0 flex-1 items-baseline gap-1.5">
         <span className="truncate text-[15px] font-bold">{playerName(player, userId)}</span>
-        {!player.isConnected && <span className="shrink-0 text-xs font-bold text-ink-faint">offline</span>}
+        {!player.isConnected && <span className="shrink-0 text-xs font-bold text-ink-faint">{t('samen.offline')}</span>}
       </span>
       {revealed && player.scoreGained ? (
         <span className="shrink-0 text-[13px] font-extrabold text-green-text">+{player.scoreGained}</span>
@@ -316,7 +317,7 @@ export function GameView({
   if (room.status === 'reading') {
     main = <ReadingCard passage={room.passage} isHost={isHost} onStart={onSkip} isStarting={isSkipping} />;
   } else if (!question) {
-    main = <StatusLine tone="grey">Even geduld, de volgende vraag wordt geladen...</StatusLine>;
+    main = <StatusLine tone="grey">{t('samen.game.loadingNext')}</StatusLine>;
   } else {
     const twoUp = answersFitTwoUp(question);
     const totalResponses = question.answers.reduce((sum, answer) => sum + (answer.count ?? 0), 0);
@@ -328,7 +329,7 @@ export function GameView({
       <>
         <div className="flex items-center gap-3.5">
           <span className="shrink-0 whitespace-nowrap text-[15px] font-extrabold text-ink-soft">
-            Vraag {question.questionNumber} van {question.totalQuestions}
+            {t('samen.game.questionOf', { current: question.questionNumber, total: question.totalQuestions })}
           </span>
           <ProgressSegments current={question.questionNumber} total={question.totalQuestions} height={6} />
         </div>
@@ -337,7 +338,7 @@ export function GameView({
 
         <div
           role="group"
-          aria-label="Antwoorden"
+          aria-label={t('bq.a11y.answers')}
           className={cn('grid gap-3.5', twoUp ? 'grid-cols-2' : 'grid-cols-1 m:grid-cols-2')}
         >
           {question.answers.map((option) => {
@@ -349,7 +350,7 @@ export function GameView({
                 <AnswerButton
                   state={state}
                   aria-pressed={isMine || undefined}
-                  aria-label={isMine ? `${option.text}, jouw antwoord` : undefined}
+                  aria-label={isMine ? t('samen.game.yourAnswer', { answer: option.text }) : undefined}
                   disabled={!canAnswer || isSubmittingAnswer}
                   onClick={() => onAnswer(question.id, option.id)}
                 >
@@ -377,15 +378,15 @@ export function GameView({
             <StatusLine>
               {room.questionTimerSeconds === 0
                 ? isHost
-                  ? 'Je antwoord is verstuurd. Laat het antwoord zien zodra iedereen klaar is.'
-                  : 'Je antwoord is verstuurd. Je ziet of het goed is zodra de host het antwoord laat zien.'
-                : 'Je antwoord is verstuurd. Je ziet of het goed is zodra iedereen klaar is of de tijd om is.'}
+                  ? t('samen.game.sentHostReveal')
+                  : t('samen.game.sentWaitHost')
+                : t('samen.game.sentWaitAll')}
             </StatusLine>
           ) : null)}
 
         {room.status === 'in_progress' && isHost && room.questionTimerSeconds === 0 && (
           <Button size="xl" block onClick={onSkip} loading={isSkipping}>
-            {isSkipping ? 'Bezig...' : 'Laat het antwoord zien'}
+            {isSkipping ? t('samen.busy') : t('samen.game.showAnswer')}
           </Button>
         )}
 
@@ -398,15 +399,15 @@ export function GameView({
                   viewerCorrect ? 'text-green-text' : viewerAnswer == null ? 'text-ink' : 'text-coral-text',
                 )}
               >
-                {viewerCorrect ? 'Goed zo!' : viewerAnswer == null ? 'Geen antwoord' : 'Helaas, niet goed'}
+                {viewerCorrect ? t('samen.game.wellDone') : viewerAnswer == null ? t('samen.game.noAnswer') : t('samen.game.notRight')}
               </h2>
               <p className="m-0 text-[15px] font-semibold text-ink-muted">
-                {correctCount} van {room.players.length} {room.players.length === 1 ? 'speler' : 'spelers'} had deze vraag goed.
+                {t(room.players.length === 1 ? 'samen.game.correctCountOne' : 'samen.game.correctCountMany', { correct: correctCount, total: room.players.length })}
               </p>
             </div>
             {question.explanation && question.explanation.trim().length > 0 && (
               <div className="flex flex-col gap-1 border-t border-line-soft pt-3">
-                <span className="text-[13px] font-extrabold uppercase tracking-[0.04em] text-ink-muted">Uitleg</span>
+                <span className="text-[13px] font-extrabold uppercase tracking-[0.04em] text-ink-muted">{t('samen.game.explanation')}</span>
                 <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-body">{question.explanation}</p>
               </div>
             )}
@@ -415,11 +416,11 @@ export function GameView({
             {isHost ? (
               <div className="flex flex-col items-stretch gap-2 pt-1 m:flex-row m:items-center">
                 <Button size="lg" onClick={onSkip} loading={isSkipping}>
-                  {isSkipping ? 'Bezig...' : isLastQuestion ? 'Naar de eindstand' : 'Volgende vraag'}
+                  {isSkipping ? t('samen.busy') : isLastQuestion ? t('samen.game.toFinal') : t('play.next')}
                 </Button>
                 {resultSeconds != null && resultSeconds > 0 && (
                   <span className="text-sm font-semibold text-ink-muted m:ml-2" aria-live="off">
-                    Gaat vanzelf verder over {resultSeconds}s
+                    {t('samen.game.autoContinue', { seconds: resultSeconds })}
                   </span>
                 )}
               </div>
@@ -427,7 +428,7 @@ export function GameView({
               resultSeconds != null &&
               resultSeconds > 0 && (
                 <p className="m-0 text-sm font-bold text-ink-muted" aria-live="off">
-                  {isLastQuestion ? 'De eindstand komt' : 'Volgende vraag'} over {resultSeconds}s
+                  {isLastQuestion ? t('samen.game.finalIn', { seconds: resultSeconds }) : t('samen.game.nextIn', { seconds: resultSeconds })}
                 </p>
               )
             )}
@@ -440,7 +441,7 @@ export function GameView({
   return (
     <div className="flex min-h-screen flex-col bg-canvas">
       <PlayHeader
-        leaveLabel="Spel verlaten"
+        leaveLabel={t('samen.game.leave')}
         onLeave={() => setConfirmLeave(true)}
         icon={<X className="size-4" strokeWidth={2.6} aria-hidden="true" />}
       />
@@ -448,10 +449,10 @@ export function GameView({
         <Container className="flex flex-col gap-5 pb-14 pt-8 max-m:px-5">
           {errorBar}
           {connectionStatus === 'reconnecting' || connectionStatus === 'disconnected' ? (
-            <StatusLine tone="grey">Verbinding herstellen...</StatusLine>
+            <StatusLine tone="grey">{t('samen.reconnecting')}</StatusLine>
           ) : null}
           <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_340px]">
-            <section aria-label={question ? `Vraag ${question.questionNumber} van ${question.totalQuestions}` : 'Spel'} className="flex min-w-0 flex-col gap-5">
+            <section aria-label={question ? t('samen.game.questionOf', { current: question.questionNumber, total: question.totalQuestions }) : t('samen.game.game')} className="flex min-w-0 flex-col gap-5">
               {main}
             </section>
             <PlayersCard room={room} userId={userId} revealed={revealed} />
@@ -463,13 +464,13 @@ export function GameView({
       <Modal
         open={confirmLeave}
         onOpenChange={setConfirmLeave}
-        title="Spel verlaten?"
-        description="Je punten blijven staan, maar je speelt deze ronde niet meer mee."
+        title={t('samen.game.leaveTitle')}
+        description={t('samen.game.leaveText')}
         size="sm"
         footer={
           <>
             <Button variant="secondary" onClick={() => setConfirmLeave(false)}>
-              Blijven
+              {t('samen.stay')}
             </Button>
             <Button
               variant="danger"
@@ -479,7 +480,7 @@ export function GameView({
                 onLeave();
               }}
             >
-              Spel verlaten
+              {t('samen.game.leave')}
             </Button>
           </>
         }

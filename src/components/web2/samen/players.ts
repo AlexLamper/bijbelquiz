@@ -1,8 +1,10 @@
 import type { RoomPlayerSnapshot } from '@/lib/multiplayer/types';
+import { t } from '@/i18n';
+import { getSiteConfig } from '@/config/site';
 
 /** "Jij" for the person looking, the account name for everybody else. */
 export function playerName(player: Pick<RoomPlayerSnapshot, 'id' | 'name'>, userId: string | null): string {
-  return player.id === userId ? 'Jij' : player.name;
+  return player.id === userId ? t('samen.you') : player.name;
 }
 
 /** Highest score first; ties on correct answers, then by name. */
@@ -14,6 +16,6 @@ export function standings(players: RoomPlayerSnapshot[]): RoomPlayerSnapshot[] {
 
 /** The host name shown in "bijbelquiz.com/samen-spelen". */
 export function siteHost(): string {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bijbelquiz.com';
+  const base = process.env.NEXT_PUBLIC_SITE_URL || getSiteConfig().baseUrl;
   return base.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
 }

@@ -5,6 +5,7 @@ import { signIn } from 'next-auth/react';
 
 import { Button, TextDivider } from '@/components/bq';
 import { AppleIcon, GoogleIcon } from '@/components/bq/icons';
+import { t } from '@/i18n';
 
 /**
  * "Doorgaan met Apple" (only when the server has Apple configured) and
@@ -24,15 +25,15 @@ export function SocialButtons({ callbackUrl, appleEnabled }: { callbackUrl: stri
         {appleEnabled && (
           <Button variant="dark" size="xl" block loading={pending === 'apple'} onClick={() => start('apple')}>
             {pending !== 'apple' && <AppleIcon size={18} />}
-            Doorgaan met Apple
+            {t('account.social.apple')}
           </Button>
         )}
         <Button variant="secondary" size="xl" block loading={pending === 'google'} onClick={() => start('google')}>
           {pending !== 'google' && <GoogleIcon size={18} />}
-          Doorgaan met Google
+          {t('account.social.google')}
         </Button>
       </div>
-      <TextDivider>of met e-mail</TextDivider>
+      <TextDivider>{t('account.social.or')}</TextDivider>
     </>
   );
 }

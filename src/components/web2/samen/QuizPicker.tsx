@@ -6,6 +6,7 @@ import { Check, ChevronDown, Search, X } from 'lucide-react';
 import { normalizeSearchText, readSeries } from '@/lib/quiz-series';
 import { cn } from '@/lib/utils';
 import { questionCountLabel, quizBadge, quizDisplayTitle } from './quiz-display';
+import { t } from '@/i18n';
 
 export interface PickerQuiz {
   id: string;
@@ -169,7 +170,7 @@ export function QuizPicker({ quizzes, categories, value, onChange, labelId, disa
               <span className="text-sm font-semibold text-ink-muted">{metaLine(selected)}</span>
             </>
           ) : (
-            <span className="text-base font-bold text-ink-muted">Kies een quiz</span>
+            <span className="text-base font-bold text-ink-muted">{t('samen.picker.choose')}</span>
           )}
         </span>
         <ChevronDown aria-hidden="true" className="size-[18px] shrink-0 text-ink-muted" strokeWidth={2.4} />
@@ -185,8 +186,8 @@ export function QuizPicker({ quizzes, categories, value, onChange, labelId, disa
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 onKeyDown={onSearchKeyDown}
-                placeholder="Zoek op titel, boek of categorie"
-                aria-label="Zoek een quiz"
+                placeholder={t('samen.picker.placeholder')}
+                aria-label={t('browse.browser.searchAria')}
                 aria-controls={listId}
                 className="h-11 w-full rounded-[10px] border border-input-line bg-card pl-10 pr-10 text-[15px] font-semibold text-ink outline-none placeholder:text-ink-faint focus-visible:border-lapis focus-visible:ring-2 focus-visible:ring-lapis/25"
               />
@@ -197,7 +198,7 @@ export function QuizPicker({ quizzes, categories, value, onChange, labelId, disa
                     setQuery('');
                     searchRef.current?.focus();
                   }}
-                  aria-label="Zoekterm wissen"
+                  aria-label={t('samen.picker.clear')}
                   className="absolute right-1 top-1/2 flex size-9 -translate-y-1/2 items-center justify-center rounded-full text-ink-muted hover:text-ink"
                 >
                   <X className="size-4" />
@@ -206,8 +207,8 @@ export function QuizPicker({ quizzes, categories, value, onChange, labelId, disa
             </div>
 
             {usedCategories.length > 1 && (
-              <div className="mt-2.5 flex flex-wrap gap-1.5" role="group" aria-label="Categorie">
-                {[{ slug: 'all', title: 'Alle' }, ...usedCategories].map((category) => (
+              <div className="mt-2.5 flex flex-wrap gap-1.5" role="group" aria-label={t('samen.picker.category')}>
+                {[{ slug: 'all', title: t('samen.picker.all') }, ...usedCategories].map((category) => (
                   <button
                     key={category.slug}
                     type="button"
@@ -227,10 +228,10 @@ export function QuizPicker({ quizzes, categories, value, onChange, labelId, disa
             )}
           </div>
 
-          <div id={listId} ref={listRef} role="listbox" aria-label="Quizzen" className="max-h-80 overflow-y-auto overscroll-contain p-1.5">
+          <div id={listId} ref={listRef} role="listbox" aria-label={t('samen.picker.quizzes')} className="max-h-80 overflow-y-auto overscroll-contain p-1.5">
             {results.length === 0 ? (
               <p className="m-0 px-3 py-6 text-center text-sm font-semibold text-ink-muted">
-                Geen quiz gevonden. Pas je zoekterm of categorie aan.
+                {t('samen.picker.none')}
               </p>
             ) : (
               results.map((quiz, index) => {
@@ -272,7 +273,7 @@ export function QuizPicker({ quizzes, categories, value, onChange, labelId, disa
           </div>
 
           <p className="m-0 border-t border-line-soft px-4 py-2 text-[13px] font-semibold tabular-nums text-ink-muted">
-            {results.length} van {quizzes.length} quizzen
+            {t('samen.picker.count', { shown: results.length, total: quizzes.length })}
           </p>
         </div>
       )}

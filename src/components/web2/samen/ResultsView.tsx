@@ -11,6 +11,8 @@ import { cn } from '@/lib/utils';
 import { HomeButton } from '@/components/web2/quiz-result/HomeButton';
 import { playerName } from './players';
 import { pointsLabel, questionCountLabel, quizDisplayTitle } from './quiz-display';
+import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
 
 interface ResultsViewProps {
   room: RoomSnapshot;
@@ -96,14 +98,14 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
       });
       const payload = await response.json().catch(() => ({}));
       if (!response.ok) {
-        setGroupError(payload?.error || 'Groep bewaren is niet gelukt.');
+        setGroupError(payload?.error || t('samen.results.saveFailed'));
         setGroupState('error');
         return;
       }
       setSavedGroupName(payload?.group?.name ?? null);
       setGroupState('saved');
     } catch {
-      setGroupError('Groep bewaren is niet gelukt.');
+      setGroupError(t('samen.results.saveFailed'));
       setGroupState('error');
     }
   }
@@ -123,11 +125,11 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
   return (
     <Container className="flex flex-col gap-7 pb-[72px] pt-10 max-m:px-5">
       <div className="flex flex-col gap-1.5">
-        <h1 className="m-0 text-[30px] leading-9 m:text-[40px] m:leading-[48px]">Eindstand</h1>
+        <h1 className="m-0 text-[30px] leading-9 m:text-[40px] m:leading-[48px]">{t('samen.results.final')}</h1>
         <p className="m-0 text-[17px] font-semibold leading-[26px] text-ink-muted">
           <span className="whitespace-nowrap">{quizDisplayTitle(room.quizTitle, passageLabel)}</span> ·{' '}
           <span className="whitespace-nowrap">
-            {questionCountLabel(room.totalQuestions)} · {playerCount} {playerCount === 1 ? 'speler' : 'spelers'}
+            {questionCountLabel(room.totalQuestions)} · {t(playerCount === 1 ? 'samen.results.playerOne' : 'samen.game.playersCount', { count: playerCount })}
           </span>
         </p>
       </div>
@@ -135,14 +137,14 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
       {errorBar}
 
       <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_360px] m:grid-rows-[auto_1fr]">
-        <section aria-label="Eindstand" className="flex min-w-0 flex-col gap-6 m:col-start-1 m:row-start-1">
+        <section aria-label={t('samen.results.final')} className="flex min-w-0 flex-col gap-6 m:col-start-1 m:row-start-1">
           {results.length === 0 ? (
             <p role="status" className="m-0 rounded-[16px] border border-line bg-card px-5 py-6 text-center text-[15px] font-semibold text-ink-muted">
-              De uitslag wordt geladen...
+              {t('samen.results.loading')}
             </p>
           ) : (
             <div className="flex flex-col pt-2">
-              <ol aria-label="Top 3" className="mx-auto grid w-full max-w-[560px] list-none grid-cols-3 items-end gap-4 p-0">
+              <ol aria-label={t('samen.results.top3')} className="mx-auto grid w-full max-w-[560px] list-none grid-cols-3 items-end gap-4 p-0">
                 {podium.map((spot, index) =>
                   spot ? (
                     <PodiumPlace key={spot.entry.playerId} entry={spot.entry} place={spot.place} userId={userId} />
@@ -155,7 +157,7 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
               {rest.length > 0 && (
                 <ol
                   start={4}
-                  aria-label={`Plek 4 tot ${results.length}`}
+                  aria-label={t('samen.results.rest', { last: results.length })}
                   className="m-0 flex list-none flex-col overflow-hidden rounded-[16px] border border-line bg-card p-0"
                 >
                   {rest.map((entry, index) => {
@@ -182,7 +184,7 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
 
           <div className="flex flex-col gap-3 m:flex-row">
             <Button href="/samen-spelen" size="xl">
-              Nieuw spel
+              {t('samen.results.newGame')}
             </Button>
             <Button
               variant="secondary"
@@ -194,7 +196,7 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
               loading={isLeaving && !leavingHome}
               disabled={isLeaving}
             >
-              Spel verlaten
+              {t('samen.game.leave')}
             </Button>
           </div>
         </section>
@@ -207,11 +209,11 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
                   <Users className="size-[22px]" strokeWidth={2.2} />
                 </span>
                 <h2 id="groep-titel" className="m-0 text-xl leading-[26px]">
-                  Deze groep bewaren?
+                  {t('samen.results.saveTitle')}
                 </h2>
               </div>
               <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-soft">
-                Dan houd je een eigen ranglijst bij met deze {playerCount} spelers, en nodig je ze de volgende keer met één klik weer uit.
+                {t('samen.results.saveText', { count: playerCount })}
               </p>
               {groupError && (
                 <p role="alert" className="m-0 text-sm font-bold text-coral-text">
@@ -225,14 +227,14 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
                   disabled={groupState === 'saving'}
                   className="h-11 rounded-[10px] border-b-[3px] border-b-lapis-pale bg-lapis-tint px-[18px] text-[15px] font-extrabold text-lapis-edge transition-colors hover:bg-lapis-wash focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lapis disabled:opacity-60"
                 >
-                  {groupState === 'saving' ? 'Bewaren...' : 'Groep bewaren'}
+                  {groupState === 'saving' ? t('samen.results.saving') : t('samen.results.save')}
                 </button>
                 <button
                   type="button"
                   onClick={() => setGroupDismissed(true)}
                   className="h-11 px-1 text-[15px] font-bold text-ink-muted hover:text-ink"
                 >
-                  Nee, bedankt
+                  {t('samen.results.no')}
                 </button>
               </div>
             </section>
@@ -245,29 +247,30 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
                   <Users className="size-[22px]" strokeWidth={2.2} />
                 </span>
                 <h2 id="groep-titel" className="m-0 text-xl leading-[26px]">
-                  {savedGroupName ? `"${savedGroupName}" is bewaard` : 'Groep bewaard'}
+                  {savedGroupName ? t('samen.results.savedNamed', { name: savedGroupName }) : t('samen.results.saved')}
                 </h2>
               </div>
-              <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-soft">Je vindt de stand van deze groep op de ranglijst.</p>
+              <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-soft">{t('samen.results.savedText')}</p>
               <Button href="/ranglijst" variant="secondary" size="md" className="self-start">
-                Naar de ranglijst
+                {t('samen.results.toLeaderboard')}
               </Button>
             </section>
           )}
 
           {/* The one moment this product speaks to a whole group at once, so the
               chapter they just played about is offered to everyone. */}
+          {isNlSite() && (
           <section aria-labelledby="lees-titel" className="flex flex-col gap-3 rounded-[16px] border border-line bg-card p-5">
             <div className="flex items-center gap-3">
               <span className="flex size-11 shrink-0 items-center justify-center rounded-[12px] bg-green-tint text-green" aria-hidden="true">
                 <BookOpen className="size-[22px]" strokeWidth={2.2} />
               </span>
               <h2 id="lees-titel" className="m-0 text-xl leading-[26px]">
-                {studiePassage && passageLabel ? `Verder met ${passageLabel}` : 'Verder met BijbelStudie'}
+                {studiePassage && passageLabel ? t('samen.results.continueWith', { passage: passageLabel }) : t('samen.results.continueStudie')}
               </h2>
             </div>
             <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-soft">
-              {studiePassage ? 'Lees het hoofdstuk op BijbelStudie, met uitleg erbij.' : 'Lees verder op BijbelStudie, met uitleg erbij.'}
+              {studiePassage ? t('samen.results.studieChapter') : t('samen.results.studieMore')}
             </p>
             <StudieLink
               passage={studiePassage}
@@ -276,6 +279,7 @@ export function ResultsView({ room, userId, results, isLeaving, onLeave, errorBa
               className="inline-flex items-center gap-1.5 self-start text-[15px] font-extrabold text-lapis no-underline hover:text-lapis-edge"
             />
           </section>
+          )}
         </aside>
 
         {/* Last on the page: under the standings on a wide screen, after the side column on a phone. */}

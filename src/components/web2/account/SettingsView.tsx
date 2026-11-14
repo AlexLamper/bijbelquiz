@@ -32,6 +32,8 @@ import {
   type UserOnboardingSettings,
   type UserSettings,
 } from '@/lib/user-settings';
+import { getSiteConfig, isNlSite } from '@/config/site';
+import { t } from '@/i18n';
 
 export type PremiumRow = { label: string; action: 'link'; href: string } | { label: string; action: 'portal' };
 
@@ -48,8 +50,8 @@ interface SettingsViewProps {
 
 /** Display labels from the design; the stored values stay those of `INTEREST_OPTIONS`. */
 const INTEREST_LABELS: Record<string, string> = {
-  evangelien: 'Evangeliën',
-  wijsheid: 'Wijsheid en Spreuken',
+  evangelien: t('account.settings.interestGospels'),
+  wijsheid: t('account.settings.interestWisdom'),
 };
 
 type SettingsPatch = { settings?: Partial<UserSettings>; onboarding?: Partial<UserOnboardingSettings> };
@@ -180,7 +182,7 @@ export default function SettingsView({ initialData, premium, billingError = null
     if (patch.onboarding) {
       setOnboarding((current) => ({ ...current, ...patch.onboarding, interests: patch.onboarding?.interests ?? current.interests }));
     }
-    setStatus('Opslaan...');
+    setStatus(t('account.settings.saving'));
 
     try {
       const response = await fetch('/api/user/settings', {
@@ -189,19 +191,19 @@ export default function SettingsView({ initialData, premium, billingError = null
         body: JSON.stringify(patch),
       });
       const payload = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(payload?.error || 'Kon instellingen niet opslaan');
+      if (!response.ok) throw new Error(payload?.error || t('account.settings.saveFailed'));
 
       setSettings(payload.settings);
       setOnboarding(payload.onboarding);
       // Preferences ride on the session; the quiz player and theme read them
       // from there, so refresh it rather than wait for a reload.
       await update();
-      setStatus('Opgeslagen');
+      setStatus(t('account.settings.saved'));
     } catch (error) {
       setSettings(previousSettings);
       setOnboarding(previousOnboarding);
       if (rollbackTheme) setTheme(rollbackTheme);
-      const message = error instanceof Error ? error.message : 'Kon instellingen niet opslaan';
+      const message = error instanceof Error ? error.message : t('account.settings.saveFailed');
       setStatus(message);
       toast.error(message);
     }
@@ -226,7 +228,7 @@ export default function SettingsView({ initialData, premium, billingError = null
     event.preventDefault();
     const name = nameDraft.trim();
     if (name.length < 2 || name.length > 30) {
-      toast.error('Naam moet tussen de 2 en 30 tekens zijn.');
+      toast.error(t('account.settings.nameLength'));
       return;
     }
     if (name === savedName) return;
@@ -239,15 +241,15 @@ export default function SettingsView({ initialData, premium, billingError = null
         body: JSON.stringify({ name }),
       });
       const payload = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(payload?.error || 'Naam kon niet worden opgeslagen');
+      if (!response.ok) throw new Error(payload?.error || t('account.settings.nameFailed'));
 
       const next = payload?.user?.name || name;
       setSavedName(next);
       setNameDraft(next);
       await update({ name: next });
-      toast.success('Naam bijgewerkt');
+      toast.success(t('account.settings.nameUpdated'));
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Naam kon niet worden opgeslagen');
+      toast.error(error instanceof Error ? error.message : t('account.settings.nameFailed'));
     } finally {
       setNameSaving(false);
     }
@@ -256,20 +258,20 @@ export default function SettingsView({ initialData, premium, billingError = null
   return (
     <Container width="narrow">
       <PageBody className="m:pb-[88px]">
-        <PageTitle title="Instellingen" subtitle="Wijzigingen worden meteen opgeslagen." backHref="/profiel" backLabel="Terug naar profiel" />
+        <PageTitle title={t('account.settings.title')} subtitle={t('account.settings.sub')} backHref="/profiel" backLabel={t('account.settings.back')} />
         <p aria-live="polite" className="sr-only">
           {status}
         </p>
 
         <section id="account" aria-labelledby="h-account" className="flex flex-col gap-3">
-          <SectionTitle id="h-account" title="Account" />
+          <SectionTitle id="h-account" title={t('account.settings.account')} />
           <Card padding="none">
             <form onSubmit={saveName}>
               <Row>
                 <RowIcon>
                   <User strokeWidth={2.2} />
                 </RowIcon>
-                <RowText title="Naam" hint="Zo zien anderen je op de ranglijst en als je samen speelt." htmlFor="set-name" />
+                <RowText title={t('account.profile.name')} hint={t('account.settings.nameHint')} htmlFor="set-name" />
                 <RowControl>
                   <Input
                     id="set-name"
@@ -282,7 +284,7 @@ export default function SettingsView({ initialData, premium, billingError = null
                     className="w-[200px] flex-[1_1_160px]"
                   />
                   <Button type="submit" variant="secondary" loading={nameSaving} disabled={nameDraft.trim() === savedName}>
-                    Opslaan
+                    {t('account.save')}
                   </Button>
                 </RowControl>
               </Row>
@@ -291,7 +293,7 @@ export default function SettingsView({ initialData, premium, billingError = null
               <RowIcon>
                 <Mail strokeWidth={2.2} />
               </RowIcon>
-              <RowText title="E-mailadres" hint={initialData.profile.signInMethod} />
+              <RowText title={t('account.settings.email')} hint={initialData.profile.signInMethod} />
               <RowControl className="min-w-0 text-[15px] font-bold text-ink-soft">
                 <span className="min-w-0 break-all">{initialData.profile.email}</span>
               </RowControl>
@@ -300,13 +302,13 @@ export default function SettingsView({ initialData, premium, billingError = null
         </section>
 
         <section id="spelen" aria-labelledby="h-spelen" className="flex flex-col gap-3">
-          <SectionTitle id="h-spelen" title="Spelen" />
+          <SectionTitle id="h-spelen" title={t('account.settings.play')} />
           <Card padding="none">
             <Row className="flex-nowrap">
               <RowIcon tone="lapis">
                 <ScrollText strokeWidth={2.2} />
               </RowIcon>
-              <RowText id="lbl-refs" title="Bijbelverwijzingen tonen" hint="De bijbeltekst bij de uitleg na elke vraag." />
+              <RowText id="lbl-refs" title={t('account.settings.showRefs')} hint={t('account.settings.showRefsHint')} />
               <Switch
                 aria-labelledby="lbl-refs"
                 checked={settings.showBibleReferences}
@@ -317,7 +319,7 @@ export default function SettingsView({ initialData, premium, billingError = null
               <RowIcon>
                 <BookOpen strokeWidth={2.2} />
               </RowIcon>
-              <RowText id="lbl-passage" title="Eerst het hoofdstuk lezen" hint="Lees bijvoorbeeld Daniël 2 voordat de vragen beginnen." />
+              <RowText id="lbl-passage" title={t('account.settings.readFirst')} hint={t('account.settings.readFirstHint')} />
               <Switch
                 aria-labelledby="lbl-passage"
                 checked={settings.readPassageFirst}
@@ -328,7 +330,7 @@ export default function SettingsView({ initialData, premium, billingError = null
               <RowIcon>
                 <Clock strokeWidth={2.2} />
               </RowIcon>
-              <RowText title="Tijd per vraag" hint="Standaard speel je zonder timer." htmlFor="set-timer" />
+              <RowText title={t('play.timer')} hint={t('account.settings.timerHint')} htmlFor="set-timer" />
               <RowControl>
                 <Select
                   id="set-timer"
@@ -351,7 +353,7 @@ export default function SettingsView({ initialData, premium, billingError = null
               <RowIcon>
                 <ChartNoAxesColumnIncreasing strokeWidth={2.2} />
               </RowIcon>
-              <RowText title="Moeilijkheid" hint="Welke quizzen je eerst ziet bij Quizzen." htmlFor="set-level" />
+              <RowText title={t('account.settings.difficulty')} hint={t('account.settings.difficultyHint')} htmlFor="set-level" />
               <RowControl>
                 <Select
                   id="set-level"
@@ -362,18 +364,19 @@ export default function SettingsView({ initialData, premium, billingError = null
                     void save({ settings: { preferredDifficulty: event.target.value as UserSettings['preferredDifficulty'] } })
                   }
                 >
-                  <option value="all">Alles</option>
-                  <option value="easy">Makkelijk</option>
-                  <option value="medium">Gemiddeld</option>
-                  <option value="hard">Moeilijk</option>
+                  <option value="all">{t('account.settings.all')}</option>
+                  <option value="easy">{t('account.settings.easy')}</option>
+                  <option value="medium">{t('account.settings.medium')}</option>
+                  <option value="hard">{t('account.settings.hard')}</option>
                 </Select>
               </RowControl>
             </Row>
+            {isNlSite() && (
             <Row>
               <RowIcon>
                 <Languages strokeWidth={2.2} />
               </RowIcon>
-              <RowText title="Vertaling" hint="Voor de bijbeltekst die je bij een quiz leest." htmlFor="set-translation" />
+              <RowText title={t('account.settings.translation')} hint={t('account.settings.translationHint')} htmlFor="set-translation" />
               <RowControl>
                 {/* The passages come from the Statenvertaling; there is no other to pick yet. */}
                 <Select id="set-translation" size="sm" className="w-[220px] max-w-full" defaultValue="statenvertaling">
@@ -381,26 +384,27 @@ export default function SettingsView({ initialData, premium, billingError = null
                 </Select>
               </RowControl>
             </Row>
+            )}
           </Card>
         </section>
 
         <section id="weergave" aria-labelledby="h-weergave" className="flex flex-col gap-3">
-          <SectionTitle id="h-weergave" title="Weergave" />
+          <SectionTitle id="h-weergave" title={t('account.settings.display')} />
           <Card padding="none">
             <Row>
               <RowIcon>
                 <Sun strokeWidth={2.2} />
               </RowIcon>
-              <RowText id="lbl-theme" title="Thema" />
+              <RowText id="lbl-theme" title={t('account.settings.theme')} />
               <RowControl>
                 <Segmented<ThemePreference>
                   labelledBy="lbl-theme"
                   value={settings.themePreference}
                   onChange={updateTheme}
                   options={[
-                    { value: 'light', label: 'Licht' },
-                    { value: 'dark', label: 'Donker' },
-                    { value: 'system', label: 'Systeem' },
+                    { value: 'light', label: t('account.settings.light') },
+                    { value: 'dark', label: t('account.settings.dark') },
+                    { value: 'system', label: t('account.settings.system') },
                   ]}
                 />
               </RowControl>
@@ -409,7 +413,7 @@ export default function SettingsView({ initialData, premium, billingError = null
               <RowIcon>
                 <ALargeSmall strokeWidth={2.2} />
               </RowIcon>
-              <RowText id="lbl-size" title="Tekstgrootte vragen" hint="Je kunt dit ook tijdens een quiz aanpassen." />
+              <RowText id="lbl-size" title={t('account.settings.fontSize')} hint={t('account.settings.fontSizeHint')} />
               <RowControl>
                 <Segmented<QuestionFontSize>
                   labelledBy="lbl-size"
@@ -418,8 +422,8 @@ export default function SettingsView({ initialData, premium, billingError = null
                     if (questionFontSize !== settings.questionFontSize) void save({ settings: { questionFontSize } });
                   }}
                   options={[
-                    { value: 'normal', label: 'Normaal' },
-                    { value: 'large', label: 'Groot' },
+                    { value: 'normal', label: t('account.settings.normal') },
+                    { value: 'large', label: t('account.settings.large') },
                   ]}
                 />
               </RowControl>
@@ -429,15 +433,15 @@ export default function SettingsView({ initialData, premium, billingError = null
 
         <section id="aanbevelingen" aria-labelledby="h-aanbevelingen" className="flex flex-col gap-3">
           <div className="flex flex-col gap-1">
-            <SectionTitle id="h-aanbevelingen" title="Aanbevelingen" />
+            <SectionTitle id="h-aanbevelingen" title={t('account.settings.recs')} />
             <p className="m-0 text-[15px] leading-[22px] font-semibold text-ink-muted">
-              Hiermee kiezen we de quizzen bij Aanbevolen voor jou.
+              {t('account.settings.recsHint')}
             </p>
           </div>
           <Card padding="none">
             <Row>
               <label htmlFor="set-freq" className="min-w-0 flex-[1_1_200px] text-base font-bold">
-                Hoe vaak lees je de Bijbel?
+                {t('account.settings.freq')}
               </label>
               <RowControl>
                 <Select
@@ -447,17 +451,17 @@ export default function SettingsView({ initialData, premium, billingError = null
                   value={onboarding.bibleReadingFrequency}
                   onChange={(event) => void save({ onboarding: { bibleReadingFrequency: event.target.value } })}
                 >
-                  {!onboarding.bibleReadingFrequency && <option value="">Kies frequentie</option>}
-                  <option value="daily">Dagelijks</option>
-                  <option value="weekly">Wekelijks</option>
-                  <option value="monthly">Maandelijks</option>
-                  <option value="rarely">Af en toe</option>
+                  {!onboarding.bibleReadingFrequency && <option value="">{t('account.settings.pickFreq')}</option>}
+                  <option value="daily">{t('account.settings.daily')}</option>
+                  <option value="weekly">{t('account.settings.weekly')}</option>
+                  <option value="monthly">{t('account.settings.monthly')}</option>
+                  <option value="rarely">{t('account.settings.rarely')}</option>
                 </Select>
               </RowControl>
             </Row>
             <Row>
               <label htmlFor="set-knowledge" className="min-w-0 flex-[1_1_200px] text-base font-bold">
-                Hoe schat je je kennis in?
+                {t('account.settings.knowledge')}
               </label>
               <RowControl>
                 <Select
@@ -467,15 +471,15 @@ export default function SettingsView({ initialData, premium, billingError = null
                   value={onboarding.knowledgeLevel}
                   onChange={(event) => void save({ onboarding: { knowledgeLevel: event.target.value } })}
                 >
-                  {!onboarding.knowledgeLevel && <option value="">Kies niveau</option>}
-                  <option value="beginner">Beginner</option>
-                  <option value="intermediate">Gemiddeld</option>
-                  <option value="advanced">Gevorderd</option>
+                  {!onboarding.knowledgeLevel && <option value="">{t('account.settings.pickLevel')}</option>}
+                  <option value="beginner">{t('account.settings.beginner')}</option>
+                  <option value="intermediate">{t('account.settings.intermediate')}</option>
+                  <option value="advanced">{t('account.settings.advanced')}</option>
                 </Select>
               </RowControl>
             </Row>
             <fieldset className="m-0 flex min-w-0 flex-col gap-3 border-0 px-4 pb-5 pt-4 m:px-5">
-              <legend className="float-left p-0 text-base font-bold">Interesses</legend>
+              <legend className="float-left p-0 text-base font-bold">{t('account.settings.interests')}</legend>
               <span className="flex flex-wrap gap-2">
                 {INTEREST_OPTIONS.map((option) => {
                   const selected = onboarding.interests.includes(option.value);
@@ -503,12 +507,12 @@ export default function SettingsView({ initialData, premium, billingError = null
         </section>
 
         <section id="abonnement" aria-labelledby="h-abonnement" className="flex flex-col gap-3">
-          <SectionTitle id="h-abonnement" title="Abonnement en privacy" />
+          <SectionTitle id="h-abonnement" title={t('account.settings.billing')} />
           {billingError && (
             <p role="status" className="m-0 rounded-[12px] bg-chip px-4 py-3 text-[15px] font-bold text-ink-soft">
               {billingError === 'unavailable'
-                ? 'We vinden geen abonnement om te beheren. Mail info@bijbelquiz.com, dan helpen we je.'
-                : 'Het abonnementsoverzicht opent nu niet. Probeer het zo opnieuw.'}
+                ? t('account.settings.noSubscription', { email: getSiteConfig().supportEmail })
+                : t('account.settings.portalError')}
             </p>
           )}
           <Card padding="none" className="overflow-hidden">
@@ -528,7 +532,7 @@ export default function SettingsView({ initialData, premium, billingError = null
               <RowIcon>
                 <Shield strokeWidth={2.2} />
               </RowIcon>
-              <span className="min-w-0 flex-1 text-base font-bold">Privacybeleid</span>
+              <span className="min-w-0 flex-1 text-base font-bold">{t('account.settings.privacy')}</span>
               <ChevronRight className="size-5 text-ink-muted" strokeWidth={2.2} aria-hidden="true" />
             </Link>
           </Card>
@@ -540,13 +544,13 @@ export default function SettingsView({ initialData, premium, billingError = null
             onClick={() => void signOut({ callbackUrl: '/' })}
             className="flex min-h-[60px] w-full items-center border-0 border-b border-line-soft bg-transparent px-4 text-left text-base font-bold text-coral-text hover:bg-chip/60 m:px-5"
           >
-            Uitloggen
+            {t('account.settings.logout')}
           </button>
           <Link
             href="/account-verwijderen"
             className="flex min-h-[60px] items-center gap-3 px-4 text-ink-muted no-underline hover:bg-chip/60 hover:text-ink m:px-5"
           >
-            <span className="flex-1 text-base font-bold">Account verwijderen</span>
+            <span className="flex-1 text-base font-bold">{t('account.settings.delete')}</span>
             <ChevronRight className="size-5" strokeWidth={2.2} aria-hidden="true" />
           </Link>
         </Card>
@@ -562,7 +566,7 @@ function PremiumRowContent({ label }: { label: string }) {
         <CrownSolidIcon size={18} />
       </RowIcon>
       <span className="flex min-w-0 flex-1 flex-col gap-0.5">
-        <span className="text-base font-bold">Premium beheren</span>
+        <span className="text-base font-bold">{t('account.settings.managePremium')}</span>
         <span className="text-sm font-semibold text-ink-muted">{label}</span>
       </span>
       <ChevronRight className="size-5 text-ink-muted" strokeWidth={2.2} aria-hidden="true" />

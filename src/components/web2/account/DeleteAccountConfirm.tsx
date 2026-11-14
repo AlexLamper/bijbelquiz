@@ -7,6 +7,7 @@ import { Trash2 } from 'lucide-react';
 
 import { Button } from '@/components/bq';
 import { AuthNotice } from './AuthLayout';
+import { t } from '@/i18n';
 
 /** Step 2 of /account-verwijderen for a signed-in visitor: tick, then delete. */
 export default function DeleteAccountConfirm() {
@@ -27,14 +28,14 @@ export default function DeleteAccountConfirm() {
       });
       const payload = await response.json().catch(() => ({}));
       if (!response.ok) {
-        setError(payload?.error || 'Verwijderen is niet gelukt. Probeer het opnieuw of mail ons.');
+        setError(payload?.error || t('account.delete.failed'));
         setDeleting(false);
         return;
       }
       // The session cookie still names an account that no longer exists.
       await signOut({ callbackUrl: '/account-verwijderen?verwijderd=1' });
     } catch {
-      setError('Netwerkfout. Probeer het opnieuw.');
+      setError(t('account.delete.network'));
       setDeleting(false);
     }
   };
@@ -48,7 +49,7 @@ export default function DeleteAccountConfirm() {
           onChange={(event) => setUnderstood(event.target.checked)}
           className="mt-px size-[22px] shrink-0 accent-lapis"
         />
-        Ik begrijp dat mijn account en voortgang voorgoed weg zijn. Dit kan niet ongedaan worden gemaakt.
+        {t('account.delete.confirm')}
       </label>
       {error && <AuthNotice tone="error">{error}</AuthNotice>}
       <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -61,10 +62,10 @@ export default function DeleteAccountConfirm() {
           onClick={() => void remove()}
         >
           {!deleting && <Trash2 className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />}
-          Account definitief verwijderen
+          {t('account.delete.submit')}
         </Button>
         <Link href="/instellingen" className="flex h-11 items-center text-base font-bold no-underline">
-          Annuleren
+          {t('account.cancel')}
         </Link>
       </div>
     </>

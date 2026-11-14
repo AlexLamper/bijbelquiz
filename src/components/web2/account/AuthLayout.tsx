@@ -4,6 +4,8 @@ import { Check, Users } from 'lucide-react';
 import { Container } from '@/components/bq';
 import { BoltSolidIcon, FlameIcon } from '@/components/bq/icons';
 import { cn } from '@/lib/utils';
+import { t, tList } from '@/i18n';
+import { rich } from '@/i18n/rich';
 
 /**
  * The sign-in family (Inloggen, Registreren, Wachtwoord vergeten/herstellen):
@@ -98,11 +100,11 @@ function VisualFrame({ label, children }: { label: string; children: React.React
 export function LoginVisual() {
   return (
     <section aria-labelledby="login-visual-title" className="flex min-w-0 flex-col items-center gap-7">
-      <VisualFrame label="Voorbeeld: je quiz over Lucas 15 staat op 4 van 10, je groep wacht in de kamer, 1.240 XP en een reeks van 6 dagen">
+      <VisualFrame label={t('account.auth.loginVisualLabel')}>
         <span aria-hidden="true" className="absolute right-11 top-[70px] size-[38px] rounded-full bg-gold-wash" />
         <div className="absolute left-1/2 top-[92px] -ml-[150px] flex w-[300px] -rotate-3 flex-col gap-3 rounded-[18px] border border-line bg-card p-[18px] shadow-float">
           <span className="flex items-center justify-between">
-            <span className="rounded-full bg-lapis-tint px-[9px] py-[3px] text-xs font-extrabold text-lapis">Lucas</span>
+            <span className="rounded-full bg-lapis-tint px-[9px] py-[3px] text-xs font-extrabold text-lapis">{t('account.auth.vLuke')}</span>
             <span
               className="flex size-[34px] items-center justify-center rounded-full"
               style={{ background: 'conic-gradient(var(--lapis) 0 40%, var(--track-soft) 40% 100%)' }}
@@ -111,32 +113,32 @@ export function LoginVisual() {
             </span>
           </span>
           <span className="flex flex-col gap-0.5">
-            <span className="font-display text-[21px] font-semibold leading-[26px]">De verloren zoon</span>
-            <span className="text-sm font-bold text-lapis-text">Hoofdstuk 15 · 4/10</span>
+            <span className="font-display text-[21px] font-semibold leading-[26px]">{t('account.auth.vProdigal')}</span>
+            <span className="text-sm font-bold text-lapis-text">{t('account.auth.vChapter')}</span>
           </span>
           <span className="flex h-[42px] items-center justify-center rounded-[11px] border-b-[3px] border-lapis-edge bg-lapis text-[15px] font-extrabold text-white">
-            Verder spelen
+            {t('samen.start.resume')}
           </span>
         </div>
         <span className={cn(floatChip, 'right-0 top-[14px] h-11 rotate-[4deg] gap-2 rounded-[14px] px-3.5 text-sm')}>
           <Users className="size-4 text-green" strokeWidth={2.4} aria-hidden="true" />
-          Je groep wacht op jou
+          {t('account.auth.vGroup')}
         </span>
         <span className="absolute bottom-[58px] left-0 flex h-[38px] -rotate-[5deg] items-center gap-1.5 rounded-full bg-gold px-3.5 text-[15px] font-extrabold text-gold-ink shadow-float">
           <BoltSolidIcon size={15} />
-          1.240 XP
+          {t('account.auth.vXp')}
         </span>
         <span className={cn(floatChip, 'bottom-[14px] right-5 h-10 rotate-3 gap-1.5 rounded-full px-3.5 text-[15px]')}>
           <FlameIcon size={16} className="text-coral" />
-          6 dagen op rij
+          {t('account.auth.vStreak')}
         </span>
       </VisualFrame>
       <div className="flex max-w-[420px] flex-col gap-2 text-center">
         <h2 id="login-visual-title" className="m-0 text-[26px] leading-8">
-          Alles staat voor je klaar
+          {t('account.auth.loginTitle')}
         </h2>
         <p className="m-0 text-base leading-6 font-semibold text-ink-muted">
-          Je reeks en XP horen bij je account. Speel verder op de website of in de app.
+          {t('account.auth.loginText')}
         </p>
       </div>
     </section>
@@ -150,13 +152,13 @@ const answerTile =
 export function RegisterVisual() {
   return (
     <section aria-labelledby="reg-visual-title" className="flex min-w-0 flex-col items-center gap-7">
-      <VisualFrame label="Voorbeeld: een quizvraag over Genesis 7 met het goede antwoord, een kamer met 6 spelers, XP en een reeks">
+      <VisualFrame label={t('account.auth.regVisualLabel')}>
         <span aria-hidden="true" className="absolute right-11 top-[62px] size-[38px] rounded-full bg-gold-wash" />
         <div className="absolute left-1/2 top-[72px] -ml-[150px] flex w-[300px] -rotate-3 flex-col gap-3 rounded-[18px] border border-line bg-card p-[18px] shadow-float">
           <span className="self-start rounded-full bg-lapis-tint px-[9px] py-[3px] text-xs font-extrabold tracking-[0.04em] text-lapis-edge dark:text-lapis-text">
-            GENESIS 7
+            {t('account.auth.vGenesis')}
           </span>
-          <span className="font-display text-[21px] font-semibold leading-[26px]">Hoeveel dagen regende het bij de zondvloed?</span>
+          <span className="font-display text-[21px] font-semibold leading-[26px]">{t('account.auth.vQuestion')}</span>
           <span className="grid grid-cols-2 gap-2">
             <span className={answerTile}>7</span>
             <span className="flex h-[42px] items-center justify-center gap-[5px] rounded-[10px] border border-green-edge border-b-[3px] bg-green text-base font-extrabold text-white">
@@ -169,23 +171,23 @@ export function RegisterVisual() {
         </div>
         <span className={cn(floatChip, 'right-0 top-2.5 h-11 rotate-[4deg] gap-2 rounded-[14px] px-3.5 text-sm text-ink-soft')}>
           <Users className="size-4 text-green" strokeWidth={2.4} aria-hidden="true" />
-          <span className="font-display text-lg font-semibold text-ink">6</span> spelers in de kamer
+          {rich(t('account.auth.vRoom'), { n: <span className="font-display text-lg font-semibold text-ink">6</span> })}
         </span>
         <span className="absolute bottom-[54px] left-1 flex h-[38px] -rotate-[5deg] items-center gap-1.5 rounded-full bg-gold px-3.5 text-[15px] font-extrabold text-gold-ink shadow-float">
           <BoltSolidIcon size={15} />
-          +15 XP
+          {t('account.auth.vXpGain')}
         </span>
         <span className={cn(floatChip, 'bottom-[14px] right-5 h-10 rotate-3 gap-1.5 rounded-full px-3.5 text-[15px]')}>
           <FlameIcon size={16} className="text-coral" />
-          6 dagen op rij
+          {t('account.auth.vStreak')}
         </span>
       </VisualFrame>
       <div className="flex flex-col items-center gap-4">
         <h2 id="reg-visual-title" className="m-0 text-center text-[26px] leading-8">
-          Hoe goed ken jij de Bijbel?
+          {t('account.auth.regTitle')}
         </h2>
         <ul className="m-0 flex list-none flex-col gap-3 p-0">
-          {['Begin gratis met 3 quizzen', 'Bewaar je XP, reeks en badges', 'Speel samen met gezin of vrienden'].map((item) => (
+          {tList('account.auth.regBullets').map((item) => (
             <li key={item} className="flex items-center gap-2.5 text-base font-bold">
               <span aria-hidden="true" className="flex size-6 shrink-0 items-center justify-center rounded-full bg-green">
                 <Check className="size-[13px] text-white" strokeWidth={3.4} />

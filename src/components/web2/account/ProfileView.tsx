@@ -32,6 +32,8 @@ import {
 } from '@/lib/avatar';
 import { cn } from '@/lib/utils';
 import { CrownSolidIcon } from './icons';
+import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 
 export interface ProfileBadge {
   id: string;
@@ -52,7 +54,7 @@ interface ProfileViewProps {
   dailyVerse: { reference: string; text: string };
 }
 
-const nl = new Intl.NumberFormat('nl-NL');
+const nl = new Intl.NumberFormat(t('bq.header.numberLocale'));
 
 /* ── Badges ──────────────────────────────────────────────────────────────── */
 
@@ -110,7 +112,7 @@ function BadgeRow({ badge, highlight }: { badge: ProfileBadge; highlight: boolea
             {badge.current}/{badge.target}
           </span>
         </span>
-        <ProgressBar value={badge.current / badge.target} height={10} label={`${badge.name}: ${badge.current} van ${badge.target}`} />
+        <ProgressBar value={badge.current / badge.target} height={10} label={t('account.profile.badgeProgress', { name: badge.name, current: badge.current, target: badge.target })} />
         <span className="text-sm font-semibold text-ink-muted">{badge.description}</span>
       </span>
     </li>
@@ -129,7 +131,7 @@ function Achievements({ badges }: { badges: ProfileBadge[] }) {
     <section aria-labelledby="badges-title" className="flex flex-col gap-3">
       <div className="flex items-baseline justify-between gap-3">
         <h2 id="badges-title" className="m-0 text-2xl leading-[30px]">
-          Prestaties
+          {t('account.profile.achievements')}
         </h2>
         {open.length > 3 && (
           <button
@@ -139,7 +141,7 @@ function Achievements({ badges }: { badges: ProfileBadge[] }) {
             onClick={() => setShowAll((value) => !value)}
             className="min-h-11 border-0 bg-transparent p-0 text-[15px] font-extrabold text-lapis hover:text-lapis-edge"
           >
-            {showAll ? 'Minder tonen' : 'Alle prestaties'}
+            {showAll ? t('account.profile.showLess') : t('account.profile.showAll')}
           </button>
         )}
       </div>
@@ -150,7 +152,7 @@ function Achievements({ badges }: { badges: ProfileBadge[] }) {
         {earned.length > 0 && (
           <li className="flex items-center justify-between gap-4 px-4 py-4 m:px-[22px]">
             <span className="whitespace-nowrap text-[15px] font-extrabold">
-              Behaald <span className="font-bold text-ink-muted">· {earned.length}</span>
+              {rich(t('account.profile.earned'), { n: <span className="font-bold text-ink-muted">· {earned.length}</span> })}
             </span>
             <span className="flex flex-wrap justify-end gap-2">
               {earned.map((badge) => (
@@ -272,7 +274,7 @@ function IdentityEditor({
       });
       const payload = await response.json().catch(() => ({}));
       if (!response.ok) {
-        toast.error(payload?.error || 'Opslaan is niet gelukt.');
+        toast.error(payload?.error || t('account.profile.saveFailed'));
         return;
       }
       onSaved({
@@ -283,10 +285,10 @@ function IdentityEditor({
       // The header shows the name and mascot too, from the session.
       await update(nameChanged ? { name: payload.user.name } : undefined);
       onOpenChange(false);
-      toast.success('Profiel bijgewerkt');
+      toast.success(t('account.profile.updated'));
     } catch (error) {
       console.error('[PROFILE_IDENTITY_SAVE]', error);
-      toast.error('Opslaan is niet gelukt. Probeer het opnieuw.');
+      toast.error(t('account.profile.saveFailedRetry'));
     } finally {
       setSaving(false);
     }
@@ -296,20 +298,20 @@ function IdentityEditor({
     <Modal
       open={open}
       onOpenChange={onOpenChange}
-      title="Profiel bewerken"
-      description="Je naam en je figuur zie je terug op de ranglijst en bij samen spelen."
+      title={t('account.profile.editTitle')}
+      description={t('account.profile.editText')}
       size="lg"
       footer={
         <>
           <Button variant="secondary" onClick={() => setDraftAvatar(randomAvatar())} disabled={saving} className="m:mr-auto">
             <Shuffle className="size-4" strokeWidth={2.4} aria-hidden="true" />
-            Verras me
+            {t('account.profile.surprise')}
           </Button>
           <Button variant="secondary" onClick={() => onOpenChange(false)} disabled={saving}>
-            Annuleren
+            {t('account.cancel')}
           </Button>
           <Button onClick={save} loading={saving}>
-            Opslaan
+            {t('account.save')}
           </Button>
         </>
       }
@@ -317,12 +319,12 @@ function IdentityEditor({
       <div className="flex items-center gap-4">
         <MascotAvatar avatar={draftAvatar} size={72} bordered />
         <Field
-          label="Naam"
+          label={t('account.profile.name')}
           htmlFor="profile-name"
           hint={
             nameLocked
-              ? `Je kunt je naam over ${cooldownDays} ${cooldownDays === 1 ? 'dag' : 'dagen'} weer wijzigen.`
-              : 'Eens per 30 dagen te wijzigen.'
+              ? t(cooldownDays === 1 ? 'account.profile.nameLockedOne' : 'account.profile.nameLockedMany', { days: cooldownDays })
+              : t('account.profile.nameHint')
           }
           className="min-w-0 flex-1"
         >
@@ -337,25 +339,25 @@ function IdentityEditor({
         </Field>
       </div>
       <PartPicker
-        label="Figuur"
+        label={t('account.profile.character')}
         selected={draftAvatar.character}
         onSelect={(value) => setPart('character', value)}
         options={AVATAR_CHARACTERS.map((option) => ({ id: option.id, label: option.label, preview: { ...draftAvatar, character: option.id } }))}
       />
       <PartPicker
-        label="Kleur"
+        label={t('account.profile.color')}
         selected={draftAvatar.color}
         onSelect={(value) => setPart('color', value)}
         options={AVATAR_COLORS.map((option) => ({ id: option.id, label: option.label, swatch: option.base }))}
       />
       <PartPicker
-        label="Achtergrond"
+        label={t('account.profile.background')}
         selected={draftAvatar.background}
         onSelect={(value) => setPart('background', value)}
         options={AVATAR_BACKGROUNDS.map((option) => ({ id: option.id, label: option.label, swatch: avatarBackgroundFill(option.id) }))}
       />
       <PartPicker
-        label="Accessoire"
+        label={t('account.profile.accessory')}
         selected={draftAvatar.accessory}
         onSelect={(value) => setPart('accessory', value)}
         options={AVATAR_ACCESSORIES.map((option) => ({ id: option.id, label: option.label, preview: { ...draftAvatar, accessory: option.id } }))}
@@ -370,13 +372,13 @@ function IdentityEditor({
 function PlayTogetherCard() {
   return (
     <Card padding="none" className="flex flex-col gap-3 px-[22px] py-5">
-      <h2 className="m-0 text-xl leading-[26px]">Samen spelen</h2>
+      <h2 className="m-0 text-xl leading-[26px]">{t('samen.start.title')}</h2>
       <p className="m-0 text-sm leading-[21px] font-semibold text-ink-muted">
-        Met je gezin of vrienden: iedereen speelt tegelijk dezelfde quiz, ieder op een eigen telefoon.
+        {t('account.profile.togetherText')}
       </p>
       <Button href="/samen-spelen" variant="secondary" block>
         <Users className="size-[18px]" strokeWidth={2.4} aria-hidden="true" />
-        Start een kamer
+        {t('account.profile.startRoom')}
       </Button>
     </Card>
   );
@@ -393,17 +395,17 @@ export default function ProfileView({ identity, level, stats, badges, isPremium,
   const [editing, setEditing] = React.useState(false);
 
   const statItems: { value: string; label: string; icon: React.ReactNode; tone: string }[] = [
-    { value: nl.format(stats.streak), label: 'Dagen op rij', icon: <FlameIcon size={20} className="text-coral" />, tone: 'bg-coral-tint' },
-    { value: nl.format(stats.xp), label: 'Totaal XP', icon: <BoltIcon size={20} />, tone: 'bg-gold-tint' },
+    { value: nl.format(stats.streak), label: t('account.profile.statStreak'), icon: <FlameIcon size={20} className="text-coral" />, tone: 'bg-coral-tint' },
+    { value: nl.format(stats.xp), label: t('account.profile.statXp'), icon: <BoltIcon size={20} />, tone: 'bg-gold-tint' },
     {
       value: nl.format(stats.quizzesPlayed),
-      label: 'Quizzen gespeeld',
+      label: t('account.profile.statPlayed'),
       icon: <BookMarked size={20} strokeWidth={2.2} className="text-lapis" />,
       tone: 'bg-lapis-tint',
     },
     {
       value: `${stats.averageScore}%`,
-      label: 'Gemiddelde score',
+      label: t('account.profile.statAvg'),
       icon: <Target size={20} strokeWidth={2.2} className="text-green" />,
       tone: 'bg-green-tint',
     },
@@ -413,7 +415,7 @@ export default function ProfileView({ identity, level, stats, badges, isPremium,
     <div className="grid grid-cols-1 items-start gap-7 pb-12 pt-6 m:pb-20 m:pt-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-x-10 lg:gap-y-8">
       <div className="flex min-w-0 flex-col gap-8">
         <section
-          aria-label={`${name}, level ${level.level}`}
+          aria-label={t('account.profile.levelAria', { name, level: level.level })}
           className="flex flex-col gap-[22px] rounded-[16px] border border-line bg-card p-5 m:p-7"
         >
           <div className="flex flex-col items-start gap-[22px] m:flex-row m:items-center">
@@ -422,17 +424,17 @@ export default function ProfileView({ identity, level, stats, badges, isPremium,
               <h1 className="m-0 flex flex-wrap items-center gap-3 text-[34px] leading-10">
                 <span className="min-w-0 break-words">{name}</span>
                 <span className="inline-flex h-7 items-center rounded-full bg-lapis-tint px-2.5 font-sans text-[13px] font-extrabold text-lapis dark:text-lapis-text">
-                  Level {level.level}
+                  {t('account.profile.level', { level: level.level })}
                 </span>
               </h1>
-              <span className="text-[15px] font-semibold text-ink-muted">Lid sinds {identity.memberSince}</span>
+              <span className="text-[15px] font-semibold text-ink-muted">{t('account.profile.memberSince', { date: identity.memberSince })}</span>
             </div>
             <div className="flex shrink-0 gap-2.5">
               <Button variant="secondary" onClick={() => setEditing(true)}>
                 <Pencil className="size-4" strokeWidth={2.4} aria-hidden="true" />
-                Bewerken
+                {t('account.profile.edit')}
               </Button>
-              <IconButton href="/instellingen" aria-label="Instellingen" shape="edge" size="lg">
+              <IconButton href="/instellingen" aria-label={t('account.profile.settings')} shape="edge" size="lg">
                 <Settings className="size-5" strokeWidth={2.2} />
               </IconButton>
             </div>
@@ -444,16 +446,16 @@ export default function ProfileView({ identity, level, stats, badges, isPremium,
                 {nl.format(level.xp)} XP
               </span>
               <span className="font-bold text-ink-muted">
-                {level.isMaxLevel ? 'Hoogste level bereikt' : `Nog ${nl.format(level.xpToNext)} XP tot level ${level.level + 1}`}
+                {level.isMaxLevel ? t('account.profile.maxLevel') : t('account.profile.toNext', { xp: nl.format(level.xpToNext), level: level.level + 1 })}
               </span>
             </span>
-            <ProgressBar value={level.progress / 100} height={10} label={`Voortgang naar level ${level.level + 1}`} />
+            <ProgressBar value={level.progress / 100} height={10} label={t('account.profile.progressTo', { level: level.level + 1 })} />
           </div>
         </section>
 
         <section aria-labelledby="stats-title" className="flex flex-col gap-3">
           <h2 id="stats-title" className="m-0 text-2xl leading-[30px]">
-            Statistieken
+            {t('account.profile.stats')}
           </h2>
           <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0">
             {statItems.map((item) => (
@@ -484,18 +486,18 @@ export default function ProfileView({ identity, level, stats, badges, isPremium,
                 <CrownSolidIcon size={22} />
               </span>
               <span className="flex flex-col">
-                <span className="font-display text-xl leading-[26px] font-semibold">Probeer Premium</span>
-                <span className="text-sm font-semibold text-ink-muted">Alle quizzen en uitleg bij elk antwoord</span>
+                <span className="font-display text-xl leading-[26px] font-semibold">{t('account.profile.tryPremium')}</span>
+                <span className="text-sm font-semibold text-ink-muted">{t('account.profile.premiumText')}</span>
               </span>
             </div>
             <Button href="/premium" size="lg" block>
-              7 dagen gratis
+              {t('account.profile.trial')}
             </Button>
           </Card>
         )}
         <PlayTogetherCard />
         <Card padding="none" className="flex flex-col gap-2 px-[22px] py-5">
-          <h2 className="m-0 text-xl leading-[26px]">Dagtekst</h2>
+          <h2 className="m-0 text-xl leading-[26px]">{t('account.profile.verse')}</h2>
           <p className="m-0 text-sm font-extrabold text-lapis dark:text-lapis-text">{dailyVerse.reference}</p>
           <p className="m-0 text-[15px] leading-[23px] font-semibold text-ink-body">{dailyVerse.text}</p>
         </Card>

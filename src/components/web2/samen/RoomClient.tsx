@@ -15,6 +15,7 @@ import { GameView } from './GameView';
 import { LobbyView } from './LobbyView';
 import { ResultsView } from './ResultsView';
 import { routeForRoom, statusBelongsTo, type RoomView } from './routes';
+import { t } from '@/i18n';
 
 interface RoomClientProps {
   roomCode: string;
@@ -152,7 +153,7 @@ export default function RoomClient({ roomCode, view, categoryTitle = null }: Roo
   if (sessionStatus === 'loading' || (loading && !room)) {
     return frame(
       <Container className="flex flex-1 items-center justify-center py-24">
-        <Spinner label="Kamer laden" size={32} />
+        <Spinner label={t('samen.room.loading')} size={32} />
       </Container>,
     );
   }
@@ -161,9 +162,9 @@ export default function RoomClient({ roomCode, view, categoryTitle = null }: Roo
     return frame(
       <Container width="form" className="py-16">
         <EmptyState
-          title="Inloggen vereist"
-          description="Log in om samen te spelen."
-          action={<Button href="/inloggen?callbackUrl=/samen-spelen">Inloggen</Button>}
+          title={t('samen.room.loginTitle')}
+          description={t('samen.room.loginText')}
+          action={<Button href="/inloggen?callbackUrl=/samen-spelen">{t('bq.auth.login')}</Button>}
         />
       </Container>,
     );
@@ -175,18 +176,18 @@ export default function RoomClient({ roomCode, view, categoryTitle = null }: Roo
         <EmptyState
           icon={<RefreshCcw />}
           tone="grey"
-          title={roomClosed ? 'Kamer niet beschikbaar' : 'Kamer laden mislukt'}
+          title={roomClosed ? t('samen.room.closedTitle') : t('samen.room.failedTitle')}
           description={
             roomClosed
-              ? 'Deze kamer bestaat niet meer of is gesloten door de host.'
-              : errorMessage ?? 'Probeer het opnieuw, of ga terug naar Samen spelen.'
+              ? t('samen.room.closedText')
+              : errorMessage ?? t('samen.room.failedText')
           }
           action={
             <div className="flex flex-col gap-2.5 m:flex-row">
               <Button variant="secondary" onClick={() => void refreshSnapshot()}>
-                Opnieuw proberen
+                {t('samen.room.retry')}
               </Button>
-              <Button href="/samen-spelen">Terug naar Samen spelen</Button>
+              <Button href="/samen-spelen">{t('samen.room.back')}</Button>
             </div>
           }
         />
@@ -199,10 +200,10 @@ export default function RoomClient({ roomCode, view, categoryTitle = null }: Roo
       <p className="m-0 flex-1 text-[15px] font-bold text-coral-text">{errorMessage}</p>
       <div className="flex gap-2">
         <Button variant="secondary" size="sm" onClick={clearError}>
-          Sluiten
+          {t('common.close')}
         </Button>
         <Button variant="secondary" size="sm" onClick={() => void refreshSnapshot()}>
-          Verversen
+          {t('samen.room.refresh')}
         </Button>
       </div>
     </Card>

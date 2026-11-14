@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 import { cleanRoomCode, extractRoomCode, ROOM_CODE_LENGTH } from './room-code';
+import { t } from '@/i18n';
 
 export { ROOM_CODE_LENGTH };
 
@@ -82,7 +83,7 @@ export function CodeInput({ value, onChange, onComplete, disabled, invalid }: Co
   const nextIndex = Math.min(value.length, ROOM_CODE_LENGTH - 1);
 
   return (
-    <div role="group" aria-label={`Kamercode, ${ROOM_CODE_LENGTH} tekens`} className="grid grid-cols-6 gap-2">
+    <div role="group" aria-label={t('samen.code.group', { length: ROOM_CODE_LENGTH })} className="grid grid-cols-6 gap-2">
       {chars.map((char, index) => {
         const isActive = focused === index;
         const filled = Boolean(char);
@@ -92,7 +93,7 @@ export function CodeInput({ value, onChange, onComplete, disabled, invalid }: Co
             ref={(node) => {
               refs.current[index] = node;
             }}
-            aria-label={`Teken ${index + 1} van ${ROOM_CODE_LENGTH}`}
+            aria-label={t('samen.code.char', { n: index + 1, length: ROOM_CODE_LENGTH })}
             aria-invalid={invalid || undefined}
             value={char}
             disabled={disabled}

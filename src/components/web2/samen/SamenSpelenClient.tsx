@@ -14,6 +14,8 @@ import { cn } from '@/lib/utils';
 import { CodeInput, ROOM_CODE_LENGTH } from './CodeInput';
 import { QuizPicker, type PickerCategory, type PickerQuiz } from './QuizPicker';
 import { routeForRoom } from './routes';
+import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 
 export type SamenQuiz = PickerQuiz;
 export type SamenCategory = PickerCategory;
@@ -31,10 +33,10 @@ interface SamenSpelenClientProps {
 
 const PLAYER_CHOICES = [2, 3, 4, 6, 8, 10, 12, 15, 20];
 
-const STEPS = [
-  { title: 'Maak een kamer', text: 'Kies een quiz en het aantal spelers. Je krijgt een code.' },
-  { title: 'Deel de code', text: 'De anderen vullen de code in of openen je uitnodiging, en wachten in de wachtkamer.' },
-  { title: 'Speel samen', text: 'Jij start de quiz. Iedereen antwoordt tegelijk en ziet direct de stand.' },
+const steps = () => [
+  { title: t('samen.start.step1Title'), text: t('samen.start.step1Text') },
+  { title: t('samen.start.step2Title'), text: t('samen.start.step2Text') },
+  { title: t('samen.start.step3Title'), text: t('samen.start.step3Text') },
 ];
 
 function CardHeading({ icon, title, subtitle, id }: { icon: React.ReactNode; title: string; subtitle: string; id: string }) {
@@ -120,7 +122,7 @@ export default function SamenSpelenClient({
     });
 
     if (!selectedQuizId) {
-      setCreateError('Kies eerst een quiz.');
+      setCreateError(t('samen.start.pickFirst'));
       return;
     }
 
@@ -153,7 +155,7 @@ export default function SamenSpelenClient({
     const roomCode = (codeOverride ?? joinCode).trim().toUpperCase();
 
     if (roomCode.length < 4) {
-      setJoinError(`Vul de code van ${ROOM_CODE_LENGTH} tekens in.`);
+      setJoinError(t('samen.start.codeLength', { length: ROOM_CODE_LENGTH }));
       return;
     }
 
@@ -172,30 +174,30 @@ export default function SamenSpelenClient({
   }
 
   const chapterHint = selectedQuiz?.passageLabel
-    ? `Iedereen leest ${selectedQuiz.passageLabel} voordat de vragen beginnen. Werkt alleen als de quiz over 1 hoofdstuk gaat.`
-    : 'Iedereen leest het hoofdstuk voordat de vragen beginnen. Werkt alleen als de quiz over 1 hoofdstuk gaat.';
+    ? t('samen.start.chapterHintNamed', { passage: selectedQuiz.passageLabel })
+    : t('samen.start.chapterHint');
 
   return (
     <Container className="flex flex-col gap-7 pb-[72px] pt-10 max-m:px-5">
       <div className="flex flex-col gap-2.5">
-        <h1 className="m-0 text-[30px] leading-9 m:text-[40px] m:leading-[48px]">Samen spelen</h1>
+        <h1 className="m-0 text-[30px] leading-9 m:text-[40px] m:leading-[48px]">{t('samen.start.title')}</h1>
         <p className="m-0 max-w-[70ch] text-[17px] font-semibold leading-[26px] text-ink-soft">
-          Iedereen speelt tegelijk dezelfde quiz, ieder op een eigen telefoon.
+          {t('samen.start.intro')}
         </p>
         <span className="flex items-center gap-2 text-[15px] font-bold text-ink-muted">
           <Users className="size-[18px] shrink-0 text-lapis" strokeWidth={2.2} aria-hidden="true" />
-          Tot {capacity} spelers · gratis, zo vaak je wilt
+          {t('samen.start.capacity', { capacity })}
         </span>
       </div>
 
       {activeRoom && (
         <Card padding="none" className="flex flex-col gap-3 px-5 py-4 m:flex-row m:items-center m:justify-between">
           <p className="m-0 text-base font-bold text-ink">
-            Je doet nog mee aan kamer <span className="font-extrabold tracking-[0.06em]">{activeRoom.code}</span>
+            {rich(t('samen.start.stillIn'), { code: <span className="font-extrabold tracking-[0.06em]">{activeRoom.code}</span> })}
             {activeRoom.quizTitle ? <span className="font-semibold text-ink-muted"> · {activeRoom.quizTitle}</span> : null}
           </p>
           <Button href={routeForRoom(activeRoom.code, activeRoom.status)} size="md">
-            Verder spelen
+            {t('samen.start.resume')}
             <ArrowRight className="size-4" strokeWidth={2.4} aria-hidden="true" />
           </Button>
         </Card>
@@ -206,13 +208,13 @@ export default function SamenSpelenClient({
           <CardHeading
             id="maken-titel"
             icon={<Plus className="size-6" strokeWidth={2.2} />}
-            title="Kamer maken"
-            subtitle="Jij bent de host"
+            title={t('samen.start.createTitle')}
+            subtitle={t('samen.start.createSub')}
           />
 
           <div className="flex flex-col gap-2">
             <span id={quizLabelId} className="text-[15px] font-extrabold">
-              Quiz
+              {t('samen.start.quiz')}
             </span>
             {quizzes.length > 0 ? (
               <QuizPicker
@@ -224,13 +226,13 @@ export default function SamenSpelenClient({
                 disabled={isCreating}
               />
             ) : (
-              <p className="m-0 text-[15px] font-semibold text-ink-muted">Er zijn nog geen quizzen om te kiezen.</p>
+              <p className="m-0 text-[15px] font-semibold text-ink-muted">{t('samen.start.noQuizzes')}</p>
             )}
           </div>
 
           <div className="flex flex-col gap-2">
             <label htmlFor={playersId} className="text-[15px] font-extrabold">
-              Maximaal aantal spelers
+              {t('samen.start.maxPlayers')}
             </label>
             <span className="relative flex w-full m:w-[260px]">
               <select
@@ -242,7 +244,7 @@ export default function SamenSpelenClient({
               >
                 {playerChoices.map((count) => (
                   <option key={count} value={count}>
-                    {count} spelers
+                    {t('samen.game.playersCount', { count })}
                   </option>
                 ))}
               </select>
@@ -256,7 +258,7 @@ export default function SamenSpelenClient({
 
           <div className="flex flex-col gap-2">
             <span id={tempoLabelId} className="text-[15px] font-extrabold">
-              Tijd per vraag
+              {t('play.timer')}
             </span>
             <div role="group" aria-labelledby={tempoLabelId} className="grid grid-cols-2 gap-1 rounded-[12px] bg-segment p-1 m:grid-cols-4">
               {QUESTION_TIMER_CHOICES.map((choice) => {
@@ -275,13 +277,13 @@ export default function SamenSpelenClient({
                         : 'border border-transparent bg-transparent font-bold text-ink-muted hover:text-ink',
                     )}
                   >
-                    {choice === 0 ? 'Geen timer' : `${choice} sec`}
+                    {choice === 0 ? t('samen.start.noTimer') : t('samen.start.seconds', { choice })}
                   </button>
                 );
               })}
             </div>
             <span className="text-sm font-semibold leading-5 text-ink-muted">
-              Zonder timer druk jij zelf door naar het antwoord en de volgende vraag.
+              {t('samen.start.noTimerHint')}
             </span>
           </div>
 
@@ -293,7 +295,7 @@ export default function SamenSpelenClient({
               className="mt-px size-5 shrink-0 accent-lapis"
             />
             <span className="flex min-w-0 flex-col gap-0.5">
-              <span className="text-base font-bold">Lees eerst het bijbelhoofdstuk</span>
+              <span className="text-base font-bold">{t('samen.start.readFirst')}</span>
               <span className="text-sm font-semibold leading-5 text-ink-muted">{chapterHint}</span>
             </span>
           </label>
@@ -307,7 +309,7 @@ export default function SamenSpelenClient({
             loading={isCreating}
             disabled={quizzes.length === 0 || !selectedQuiz}
           >
-            {isCreating ? 'Kamer wordt gemaakt...' : 'Kamer maken'}
+            {isCreating ? t('samen.start.creating') : t('samen.start.createTitle')}
           </Button>
         </section>
 
@@ -316,8 +318,8 @@ export default function SamenSpelenClient({
             <CardHeading
               id="meedoen-titel"
               icon={<LogIn className="size-6" strokeWidth={2.2} />}
-              title="Meedoen met code"
-              subtitle={`De host deelt een code van ${ROOM_CODE_LENGTH} tekens`}
+              title={t('samen.start.joinTitle')}
+              subtitle={t('samen.start.joinSub', { length: ROOM_CODE_LENGTH })}
             />
             <CodeInput
               value={joinCode}
@@ -331,16 +333,16 @@ export default function SamenSpelenClient({
             />
             {joinError && <FormError>{joinError}</FormError>}
             <Button variant="secondary" size="xl" block onClick={() => void handleJoinRoom()} loading={isJoining}>
-              {isJoining ? 'Bezig met verbinden...' : 'Meedoen'}
+              {isJoining ? t('samen.start.connecting') : t('samen.start.join')}
             </Button>
           </section>
 
           <section aria-labelledby="hoe-titel" className="flex flex-col gap-[18px] rounded-[16px] border border-line bg-card p-6">
             <h2 id="hoe-titel" className="m-0 text-xl leading-[26px]">
-              Hoe werkt het?
+              {t('samen.start.how')}
             </h2>
             <ol className="m-0 flex list-none flex-col gap-4 p-0">
-              {STEPS.map((step, index) => (
+              {steps().map((step, index) => (
                 <li key={step.title} className="flex gap-3">
                   <span
                     aria-hidden="true"
