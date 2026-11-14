@@ -1,3 +1,5 @@
+import { t } from '@/i18n';
+
 /**
  * The player mascot.
  *
@@ -40,12 +42,12 @@ export interface AvatarOption<T extends string> {
 }
 
 export const AVATAR_CHARACTERS: AvatarOption<AvatarCharacter>[] = [
-  { id: 'lam', label: 'Lam' },
-  { id: 'leeuw', label: 'Leeuw' },
-  { id: 'duif', label: 'Duif' },
-  { id: 'uil', label: 'Uil' },
-  { id: 'hert', label: 'Hert' },
-  { id: 'os', label: 'Os' },
+  { id: 'lam', label: t('lib.avatar.lam') },
+  { id: 'leeuw', label: t('lib.avatar.leeuw') },
+  { id: 'duif', label: t('lib.avatar.duif') },
+  { id: 'uil', label: t('lib.avatar.uil') },
+  { id: 'hert', label: t('lib.avatar.hert') },
+  { id: 'os', label: t('lib.avatar.os') },
 ];
 
 interface ColorRamp {
@@ -55,29 +57,29 @@ interface ColorRamp {
 }
 
 export const AVATAR_COLORS: (AvatarOption<AvatarColor> & ColorRamp)[] = [
-  { id: 'zand', label: 'Zand', base: '#E2C48D', shade: '#C4A268', light: '#F2E3C6' },
-  { id: 'lapis', label: 'Lapis', base: '#6A87C4', shade: '#4C68A2', light: '#CBD8EE' },
-  { id: 'klei', label: 'Klei', base: '#CE8163', shade: '#AC6446', light: '#F0CDBD' },
-  { id: 'olijf', label: 'Olijf', base: '#7E9A6B', shade: '#5F7A4E', light: '#D3E0C9' },
-  { id: 'roos', label: 'Roos', base: '#D18BA0', shade: '#B06B81', light: '#F1D3DC' },
-  { id: 'leisteen', label: 'Leisteen', base: '#8A93A6', shade: '#6A7386', light: '#D5DAE3' },
+  { id: 'zand', label: t('lib.avatar.zand'), base: '#E2C48D', shade: '#C4A268', light: '#F2E3C6' },
+  { id: 'lapis', label: t('lib.avatar.lapis'), base: '#6A87C4', shade: '#4C68A2', light: '#CBD8EE' },
+  { id: 'klei', label: t('lib.avatar.klei'), base: '#CE8163', shade: '#AC6446', light: '#F0CDBD' },
+  { id: 'olijf', label: t('lib.avatar.olijf'), base: '#7E9A6B', shade: '#5F7A4E', light: '#D3E0C9' },
+  { id: 'roos', label: t('lib.avatar.roos'), base: '#D18BA0', shade: '#B06B81', light: '#F1D3DC' },
+  { id: 'leisteen', label: t('lib.avatar.leisteen'), base: '#8A93A6', shade: '#6A7386', light: '#D5DAE3' },
 ];
 
 export const AVATAR_BACKGROUNDS: (AvatarOption<AvatarBackground> & { fill: string })[] = [
-  { id: 'perkament', label: 'Perkament', fill: '#F1EFE9' },
-  { id: 'hemel', label: 'Hemel', fill: '#DCE6F5' },
-  { id: 'salie', label: 'Salie', fill: '#DFE9DC' },
-  { id: 'zonsopgang', label: 'Zonsopgang', fill: '#FAE3D2' },
-  { id: 'nacht', label: 'Nacht', fill: '#2A3242' },
-  { id: 'blos', label: 'Blos', fill: '#F6E0E6' },
+  { id: 'perkament', label: t('lib.avatar.perkament'), fill: '#F1EFE9' },
+  { id: 'hemel', label: t('lib.avatar.hemel'), fill: '#DCE6F5' },
+  { id: 'salie', label: t('lib.avatar.salie'), fill: '#DFE9DC' },
+  { id: 'zonsopgang', label: t('lib.avatar.zonsopgang'), fill: '#FAE3D2' },
+  { id: 'nacht', label: t('lib.avatar.nacht'), fill: '#2A3242' },
+  { id: 'blos', label: t('lib.avatar.blos'), fill: '#F6E0E6' },
 ];
 
 export const AVATAR_ACCESSORIES: AvatarOption<AvatarAccessory>[] = [
-  { id: 'geen', label: 'Geen' },
-  { id: 'bril', label: 'Bril' },
-  { id: 'pet', label: 'Pet' },
-  { id: 'sjaal', label: 'Sjaal' },
-  { id: 'kroon', label: 'Kroon' },
+  { id: 'geen', label: t('lib.avatar.geen') },
+  { id: 'bril', label: t('lib.avatar.bril') },
+  { id: 'pet', label: t('lib.avatar.pet') },
+  { id: 'sjaal', label: t('lib.avatar.sjaal') },
+  { id: 'kroon', label: t('lib.avatar.kroon') },
 ];
 
 const INK = '#1B1A18';
@@ -362,11 +364,11 @@ export function buildAvatarShapes(config: AvatarConfig): AvatarShape[] {
 
 /** A short human label, e.g. "Lam met kroon". Used in alt text and pickers. */
 export function describeAvatar(config: AvatarConfig): string {
-  const character = AVATAR_CHARACTERS.find((entry) => entry.id === config.character)?.label ?? 'Mascotte';
+  const character = AVATAR_CHARACTERS.find((entry) => entry.id === config.character)?.label ?? t('lib.avatar.mascot');
   if (config.accessory === 'geen') {
     return character;
   }
 
   const accessory = AVATAR_ACCESSORIES.find((entry) => entry.id === config.accessory)?.label ?? '';
-  return `${character} met ${accessory.toLowerCase()}`;
+  return t('lib.avatar.describe', { character, accessory: accessory.toLowerCase() });
 }

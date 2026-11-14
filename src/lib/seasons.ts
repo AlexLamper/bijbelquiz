@@ -1,3 +1,5 @@
+import { t } from '@/i18n';
+
 /**
  * Seasonal quiz packs.
  *
@@ -91,26 +93,26 @@ export function seasonsForYear(year: number): SeasonPack[] {
   return [
     {
       slug: 'seizoensstart',
-      title: 'Nieuw seizoen',
+      title: t('lib.season.start.title'),
       description:
-        'Het clubseizoen begint weer. Een pak vragen om samen mee te openen.',
+        t('lib.season.start.desc'),
       startsAt: new Date(Date.UTC(year, 8, 1)),
       endsAt: endOfDay(new Date(Date.UTC(year, 8, 30))),
       // TODO: tag the September quizzes in /beheer and set the slug here.
     },
     {
       slug: 'veertigdagentijd',
-      title: 'Veertigdagentijd',
+      title: t('lib.season.lent.title'),
       description:
-        'Van Aswoensdag tot Pasen: veertig dagen onderweg naar het paasverhaal.',
+        t('lib.season.lent.desc'),
       startsAt: ashWednesday,
       endsAt: endOfDay(easter),
       // TODO: tag the Lent quizzes in /beheer and set the slug here.
     },
     {
       slug: 'advent',
-      title: 'Advent',
-      description: 'Vier weken aftellen naar Kerst, met een quiz per week.',
+      title: t('lib.season.advent.title'),
+      description: t('lib.season.advent.desc'),
       startsAt: adventStart(year),
       endsAt: endOfDay(new Date(Date.UTC(year, 11, 25))),
       // TODO: tag the Advent quizzes in /beheer and set the slug here.

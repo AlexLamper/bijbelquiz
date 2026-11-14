@@ -1613,5 +1613,151 @@
       "An error in a question",
       "Something else"
     ]
+  },
+  "lib": {
+    "level": {
+      "1": {
+        "title": "Seeker",
+        "desc": "Just started the journey."
+      },
+      "2": {
+        "title": "Reader",
+        "desc": "Starting to get to know the stories."
+      },
+      "3": {
+        "title": "Learner",
+        "desc": "Digging deeper into the material."
+      },
+      "4": {
+        "title": "Connoisseur",
+        "desc": "Has a broad base of knowledge."
+      },
+      "5": {
+        "title": "Researcher",
+        "desc": "Understands the context and connections."
+      },
+      "6": {
+        "desc": "Can answer tricky questions."
+      },
+      "7": {
+        "title": "Teacher of the Law",
+        "desc": "An expert in the Scriptures."
+      },
+      "8": {
+        "title": "Sage",
+        "desc": "Shares their knowledge with others."
+      },
+      "9": {
+        "desc": "A living Bible encyclopedia."
+      },
+      "10": {
+        "title": "Legend",
+        "desc": "Has reached the ultimate knowledge."
+      }
+    },
+    "scholar": "Scholar",
+    "master": "Master",
+    "badge": {
+      "firstSteps": "First Steps",
+      "firstStepsDesc": "Complete your first quiz.",
+      "seeker": "Knowledge Seeker",
+      "seekerDesc": "Play 10 different quizzes.",
+      "perfectDesc": "Score 100% on a quiz.",
+      "streak3": "On a Roll",
+      "streak3Desc": "Build a 3-day streak.",
+      "streak7": "Dedicated",
+      "streak7Desc": "Play 7 days in a row.",
+      "scholarDesc": "Reach level 5.",
+      "masterDesc": "Reach level 10.",
+      "allRounder": "All-rounder",
+      "allRounderDesc": "Play a quiz in every category."
+    },
+    "flawless": "Flawless",
+    "avatar": {
+      "lam": "Lamb",
+      "leeuw": "Lion",
+      "duif": "Dove",
+      "uil": "Owl",
+      "hert": "Deer",
+      "os": "Ox",
+      "zand": "Sand",
+      "lapis": "Lapis",
+      "klei": "Clay",
+      "olijf": "Olive",
+      "roos": "Rose",
+      "leisteen": "Slate",
+      "perkament": "Parchment",
+      "hemel": "Sky",
+      "salie": "Sage",
+      "zonsopgang": "Sunrise",
+      "nacht": "Night",
+      "blos": "Blush",
+      "geen": "None",
+      "bril": "Glasses",
+      "pet": "Cap",
+      "sjaal": "Scarf",
+      "kroon": "Crown",
+      "mascot": "Mascot",
+      "describe": "{character} with {accessory}"
+    },
+    "mp": {
+      "roomNotFound": "Room not found. Check the code and try again.",
+      "roomFull": "This room is full.",
+      "started": "This quiz has already started.",
+      "finished": "This quiz has already ended.",
+      "notIn": "You are not part of this room.",
+      "notHost": "Only the host can do this.",
+      "minPlayers": "At least 2 players are needed to start.",
+      "mismatch": "The question has changed. Refresh the page.",
+      "answered": "You already submitted an answer.",
+      "notRunning": "The quiz is not running right now.",
+      "invalid": "Invalid input. Check your details.",
+      "expired": "Your session has expired. Log in again.",
+      "quizGone": "The selected quiz no longer exists.",
+      "server": "Something went wrong on the server. Try again.",
+      "unexpected": "An unexpected error occurred."
+    },
+    "sub": {
+      "trialing": "Trial",
+      "active": "Active",
+      "pastDue": "Payment failed, we will try again",
+      "unpaid": "Unpaid",
+      "canceled": "Ended",
+      "incomplete": "Incomplete",
+      "expired": "Expired",
+      "paused": "Paused",
+      "processing": "Processing",
+      "lifetime": "Active for life"
+    },
+    "lb": {
+      "player": "Player",
+      "beginner": "Beginner"
+    },
+    "season": {
+      "start": {
+        "title": "New season",
+        "desc": "The club season starts again. A pack of questions to open together."
+      },
+      "lent": {
+        "title": "Lent",
+        "desc": "From Ash Wednesday to Easter: forty days on the way to the Easter story."
+      },
+      "advent": {
+        "title": "Advent",
+        "desc": "Four weeks counting down to Christmas, with a quiz each week."
+      }
+    },
+    "review": {
+      "unknown": "Unknown",
+      "strong": "Strong result",
+      "base": "Good foundation",
+      "growth": "Clear room to grow",
+      "rec": {
+        "perfect": "Every question answered correctly. A harder quiz or another Bible book is the logical next step.",
+        "strong": "You know this quiz well. Review the questions you got wrong to go fully flawless.",
+        "base": "You are on the right track. Focus on the questions you got wrong and compare the explanation with the Bible references.",
+        "growth": "Take time for the explanation of each question and read the Bible passages mentioned. A retry then usually brings quick progress."
+      }
+    }
   }
 }

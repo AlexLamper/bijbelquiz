@@ -1645,5 +1645,151 @@
       "Een fout in een vraag",
       "Iets anders"
     ]
+  },
+  "lib": {
+    "level": {
+      "1": {
+        "title": "Zoeker",
+        "desc": "Net begonnen aan de reis."
+      },
+      "2": {
+        "title": "Lezer",
+        "desc": "Begint de verhalen te leren kennen."
+      },
+      "3": {
+        "title": "Leerling",
+        "desc": "Duikt dieper in de materie."
+      },
+      "4": {
+        "title": "Kenner",
+        "desc": "Heeft een brede basiskennis."
+      },
+      "5": {
+        "title": "Onderzoeker",
+        "desc": "Begrijpt de context en verbanden."
+      },
+      "6": {
+        "desc": "Kan lastige vragen beantwoorden."
+      },
+      "7": {
+        "title": "Schriftgeleerde",
+        "desc": "Een expert in de Schriften."
+      },
+      "8": {
+        "title": "Wijze",
+        "desc": "Deelt zijn kennis met anderen."
+      },
+      "9": {
+        "desc": "Een levende bijbelencyclopedie."
+      },
+      "10": {
+        "title": "Legende",
+        "desc": "Heeft de ultieme kennis bereikt."
+      }
+    },
+    "scholar": "Geleerde",
+    "master": "Meester",
+    "badge": {
+      "firstSteps": "Eerste Stappen",
+      "firstStepsDesc": "Voltooi je eerste quiz.",
+      "seeker": "Kenniszoeker",
+      "seekerDesc": "Speel 10 verschillende quizzen.",
+      "perfectDesc": "Haal een 100% score op een quiz.",
+      "streak3": "Op Dreef",
+      "streak3Desc": "Bouw een streak van 3 dagen op.",
+      "streak7": "Toegewijd",
+      "streak7Desc": "Speel 7 dagen op rij.",
+      "scholarDesc": "Behaal niveau 5.",
+      "masterDesc": "Behaal niveau 10.",
+      "allRounder": "Allrounder",
+      "allRounderDesc": "Speel een quiz in elke categorie."
+    },
+    "flawless": "Foutloos",
+    "avatar": {
+      "lam": "Lam",
+      "leeuw": "Leeuw",
+      "duif": "Duif",
+      "uil": "Uil",
+      "hert": "Hert",
+      "os": "Os",
+      "zand": "Zand",
+      "lapis": "Lapis",
+      "klei": "Klei",
+      "olijf": "Olijf",
+      "roos": "Roos",
+      "leisteen": "Leisteen",
+      "perkament": "Perkament",
+      "hemel": "Hemel",
+      "salie": "Salie",
+      "zonsopgang": "Zonsopgang",
+      "nacht": "Nacht",
+      "blos": "Blos",
+      "geen": "Geen",
+      "bril": "Bril",
+      "pet": "Pet",
+      "sjaal": "Sjaal",
+      "kroon": "Kroon",
+      "mascot": "Mascotte",
+      "describe": "{character} met {accessory}"
+    },
+    "mp": {
+      "roomNotFound": "Kamer niet gevonden. Controleer de code en probeer het opnieuw.",
+      "roomFull": "Deze kamer zit vol.",
+      "started": "Deze quiz is al begonnen.",
+      "finished": "Deze quiz is al afgelopen.",
+      "notIn": "Je doet niet mee in deze kamer.",
+      "notHost": "Alleen de host kan deze actie uitvoeren.",
+      "minPlayers": "Er zijn minimaal 2 spelers nodig om te starten.",
+      "mismatch": "De vraag is intussen veranderd. Ververs de pagina.",
+      "answered": "Je hebt al een antwoord ingestuurd.",
+      "notRunning": "De quiz is nu niet bezig.",
+      "invalid": "Ongeldige invoer. Controleer je gegevens.",
+      "expired": "Je sessie is verlopen. Log opnieuw in.",
+      "quizGone": "De geselecteerde quiz bestaat niet meer.",
+      "server": "Er ging iets mis op de server. Probeer het opnieuw.",
+      "unexpected": "Er is een onverwachte fout opgetreden."
+    },
+    "sub": {
+      "trialing": "Proefperiode",
+      "active": "Actief",
+      "pastDue": "Betaling mislukt, we proberen het opnieuw",
+      "unpaid": "Onbetaald",
+      "canceled": "Beëindigd",
+      "incomplete": "Onvolledig",
+      "expired": "Verlopen",
+      "paused": "Gepauzeerd",
+      "processing": "In verwerking",
+      "lifetime": "Levenslang actief"
+    },
+    "lb": {
+      "player": "Speler",
+      "beginner": "Beginner"
+    },
+    "season": {
+      "start": {
+        "title": "Nieuw seizoen",
+        "desc": "Het clubseizoen begint weer. Een pak vragen om samen mee te openen."
+      },
+      "lent": {
+        "title": "Veertigdagentijd",
+        "desc": "Van Aswoensdag tot Pasen: veertig dagen onderweg naar het paasverhaal."
+      },
+      "advent": {
+        "title": "Advent",
+        "desc": "Vier weken aftellen naar Kerst, met een quiz per week."
+      }
+    },
+    "review": {
+      "unknown": "Onbekend",
+      "strong": "Sterk resultaat",
+      "base": "Goede basis",
+      "growth": "Duidelijke groeikans",
+      "rec": {
+        "perfect": "Elke vraag goed beantwoord. Een moeilijkere quiz of een volgend bijbelboek is nu de logische stap.",
+        "strong": "Je beheerst deze quiz goed. Herhaal vooral je fout beantwoorde vragen om volledig foutloos te worden.",
+        "base": "Je zit op de goede weg. Focus op de fout beantwoorde vragen en vergelijk de uitleg met de bijbelverwijzingen.",
+        "growth": "Neem tijd voor de uitleg per vraag en lees de genoemde bijbelgedeelten erbij. Daarna levert een herkansing meestal snel progressie op."
+      }
+    }
   }
 }

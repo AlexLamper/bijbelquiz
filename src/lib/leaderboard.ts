@@ -1,6 +1,7 @@
 import { connectDB, User, UserProgress } from '@/database';
 import mongoose from 'mongoose';
 import { AvatarConfig, resolveAvatar } from '@/lib/avatar';
+import { t } from '@/i18n';
 
 export type LeaderboardPeriod = 'monthly' | 'all-time';
 
@@ -56,13 +57,13 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
 
     return users.map((user) => ({
       _id: String(user._id),
-      name: user.name || 'Speler',
+      name: user.name || t('lib.lb.player'),
       xp: user.xp || 0,
       streak: user.streak || 0,
       badges: Array.isArray(user.badges) ? user.badges : [],
       image: user.image || null,
       avatar: resolveAvatar(user.avatar, String(user._id)),
-      levelTitle: user.levelTitle || 'Beginner',
+      levelTitle: user.levelTitle || t('lib.lb.beginner'),
       isPremium: Boolean(user.isPremium),
       createdAt: user.createdAt ? new Date(user.createdAt).toISOString() : new Date(0).toISOString(),
     }));
@@ -96,12 +97,12 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
       $project: {
         _id: { $toString: '$_id' },
         xp: 1,
-        name: { $ifNull: ['$user.name', 'Speler'] },
+        name: { $ifNull: ['$user.name', t('lib.lb.player')] },
         streak: { $ifNull: ['$user.streak', 0] },
         badges: { $ifNull: ['$user.badges', []] },
         image: { $ifNull: ['$user.image', null] },
         avatar: { $ifNull: ['$user.avatar', null] },
-        levelTitle: { $ifNull: ['$user.levelTitle', 'Beginner'] },
+        levelTitle: { $ifNull: ['$user.levelTitle', t('lib.lb.beginner')] },
         isPremium: { $ifNull: ['$user.isPremium', false] },
         createdAt: '$user.createdAt',
       },
@@ -110,13 +111,13 @@ export async function getLeaderboard(period: LeaderboardPeriod, limit = 100): Pr
 
   return leaderboardRows.map((row) => ({
     _id: String(row._id),
-    name: row.name || 'Speler',
+    name: row.name || t('lib.lb.player'),
     xp: Number(row.xp) || 0,
     streak: Number(row.streak) || 0,
     badges: Array.isArray(row.badges) ? row.badges : [],
     image: row.image || null,
     avatar: resolveAvatar(row.avatar, String(row._id)),
-    levelTitle: row.levelTitle || 'Beginner',
+    levelTitle: row.levelTitle || t('lib.lb.beginner'),
     isPremium: Boolean(row.isPremium),
     createdAt: row.createdAt ? new Date(row.createdAt).toISOString() : new Date(0).toISOString(),
   }));

@@ -1,3 +1,5 @@
+import { t } from '@/i18n';
+
 export interface QuizReviewQuestion {
   questionId: string;
   questionText: string;
@@ -31,7 +33,7 @@ export function buildReviewQuestionsFromSelections(
       questionId: String(question._id),
       questionText: question.text || '',
       selectedAnswerText: selectedAnswer?.text ?? null,
-      correctAnswerText: correctAnswer?.text || 'Onbekend',
+      correctAnswerText: correctAnswer?.text || t('lib.review.unknown'),
       isCorrect,
       explanation: question.explanation || '',
       bibleReference: question.bibleReference || '',
@@ -67,20 +69,20 @@ export function getQuizReviewInsights(
   const isPerfect = totalQuestions > 0 && incorrectCount === 0 && unansweredCount === 0;
 
   const performanceLabel = isPerfect
-    ? 'Foutloos'
+    ? t('lib.flawless')
     : percentage >= 85
-      ? 'Sterk resultaat'
+      ? t('lib.review.strong')
       : percentage >= 65
-        ? 'Goede basis'
-        : 'Duidelijke groeikans';
+        ? t('lib.review.base')
+        : t('lib.review.growth');
 
   const recommendationText = isPerfect
-    ? 'Elke vraag goed beantwoord. Een moeilijkere quiz of een volgend bijbelboek is nu de logische stap.'
+    ? t('lib.review.rec.perfect')
     : percentage >= 85
-      ? 'Je beheerst deze quiz goed. Herhaal vooral je fout beantwoorde vragen om volledig foutloos te worden.'
+      ? t('lib.review.rec.strong')
       : percentage >= 65
-        ? 'Je zit op de goede weg. Focus op de fout beantwoorde vragen en vergelijk de uitleg met de bijbelverwijzingen.'
-        : 'Neem tijd voor de uitleg per vraag en lees de genoemde bijbelgedeelten erbij. Daarna levert een herkansing meestal snel progressie op.';
+        ? t('lib.review.rec.base')
+        : t('lib.review.rec.growth');
 
   const xpEfficiency =
     totalQuestions > 0 ? Math.round((xpEarned / totalQuestions) * 10) / 10 : 0;
@@ -155,7 +157,7 @@ export function buildReviewQuestionsFromAttempt(
       questionId,
       questionText: question.text || '',
       selectedAnswerText: selected?.text ?? null,
-      correctAnswerText: correct?.text || 'Onbekend',
+      correctAnswerText: correct?.text || t('lib.review.unknown'),
       isCorrect: Boolean(state?.isCorrect),
       explanation: question.explanation || '',
       bibleReference: question.bibleReference || '',

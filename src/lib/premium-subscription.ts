@@ -4,6 +4,7 @@ import type Stripe from 'stripe';
 import { connectDB, User } from '@/database';
 import { subscriptionStatusGrantsPremium } from '@/lib/premium-state';
 import stripe from '@/lib/stripe';
+import { t } from '@/i18n';
 
 /**
  * A member's Stripe billing state for the Premium page, Instellingen and
@@ -17,14 +18,14 @@ import stripe from '@/lib/stripe';
  */
 
 const STATUS_LABELS: Record<string, string> = {
-  trialing: 'Proefperiode',
-  active: 'Actief',
-  past_due: 'Betaling mislukt, we proberen het opnieuw',
-  unpaid: 'Onbetaald',
-  canceled: 'Beëindigd',
-  incomplete: 'Onvolledig',
-  incomplete_expired: 'Verlopen',
-  paused: 'Gepauzeerd',
+  trialing: t('lib.sub.trialing'),
+  active: t('lib.sub.active'),
+  past_due: t('lib.sub.pastDue'),
+  unpaid: t('lib.sub.unpaid'),
+  canceled: t('lib.sub.canceled'),
+  incomplete: t('lib.sub.incomplete'),
+  incomplete_expired: t('lib.sub.expired'),
+  paused: t('lib.sub.paused'),
 };
 
 export interface PremiumSubscriptionState {
@@ -149,7 +150,7 @@ export async function resolvePremiumSubscription(user: BillingUser): Promise<Pre
   return {
     isLifetime,
     isMonthly,
-    statusText: STATUS_LABELS[status] || (isMonthly ? 'In verwerking' : 'Levenslang actief'),
+    statusText: STATUS_LABELS[status] || (isMonthly ? t('lib.sub.processing') : t('lib.sub.lifetime')),
     status,
     plan,
     endDateLabel: resolvedPeriodEnd && !Number.isNaN(resolvedPeriodEnd.getTime()) ? dateLabel(resolvedPeriodEnd) : null,
