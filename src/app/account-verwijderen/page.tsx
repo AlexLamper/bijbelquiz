@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { localizePath } from '@/config/routes';
 import Link from 'next/link';
 import { getServerSession } from 'next-auth';
 import { Mail, SlidersHorizontal, Swords, User } from 'lucide-react';
@@ -18,7 +19,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.account-verwijderen.title'),
     description: t('pages.account-verwijderen.description'),
-    alternates: { canonical: '/account-verwijderen' },
+    alternates: { canonical: localizePath('/account-verwijderen') },
   };
 }
 

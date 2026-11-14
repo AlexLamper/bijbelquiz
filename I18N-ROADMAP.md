@@ -57,7 +57,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
   - [x] `src/app/**/page.tsx` (page metadata and bodies; bijbelstudie, duel and duels are NL-only and 404 on intl)
   - [x] emails: `src/lib/support-mail.ts`, `trial-reminder.ts`, `auth/password-reset.ts`
   - [x] hardcoded `bijbelquiz.com` (41 places) -> `getSiteConfig().baseUrl`
-- [ ] Route map per locale: NL keeps its slugs; en gets `/quizzes`, `/leaderboard`,
+- [x] Route map per locale (`src/config/route-map.ts`; links still on Dutch paths redirect on intl, nav/canonical/sitemap are localized): NL keeps its slugs; en gets `/quizzes`, `/leaderboard`,
       `/play-together`, `/bible-quiz/[slug]`, ... (Next rewrites onto the same pages)
 - [ ] Bible text per locale: `src/app/api/bible/*` currently uses BijbelAPI (Dutch).
       Add an English source (KJV/WEB, public domain) - in BijbelAPI or external. Verify licences.

@@ -1,6 +1,7 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { NextConfig } from "next";
+import { ROUTE_PAIRS } from "./src/config/route-map";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
@@ -21,8 +22,20 @@ const nextConfig: NextConfig = {
     },
   },
   transpilePackages: ["@bijbelquiz/database"],
+  // intl only: the English URLs are served by the Dutch page folders, and a
+  // Dutch URL redirects to its English one. NL gets neither.
+  async rewrites() {
+    if (!isIntlSite) return [];
+    return {
+      beforeFiles: ROUTE_PAIRS.map(([nl, en]) => ({ source: en, destination: nl })),
+      afterFiles: [],
+      fallback: [],
+    };
+  },
   async redirects() {
-    if (isIntlSite) return [];
+    if (isIntlSite) {
+      return ROUTE_PAIRS.map(([nl, en]) => ({ source: nl, destination: en, permanent: true }));
+    }
     return [
       { source: '/profile', destination: '/profiel', permanent: true },
       { source: '/leaderboard', destination: '/ranglijst', permanent: true },

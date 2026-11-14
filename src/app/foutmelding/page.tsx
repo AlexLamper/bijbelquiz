@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { localizePath } from '@/config/routes';
 
 import { ErrorScreen } from '@/components/web2/marketing/ErrorScreen';
 import { t } from '@/i18n';
@@ -7,7 +8,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.foutmelding.title'),
     description: t('pages.foutmelding.description'),
-    alternates: { canonical: '/foutmelding' },
+    alternates: { canonical: localizePath('/foutmelding') },
   };
 }
 

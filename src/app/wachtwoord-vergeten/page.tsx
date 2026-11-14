@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { localizePath } from '@/config/routes';
 
 import { AuthPage } from '@/components/web2/account/AuthLayout';
 import ForgotPasswordForm from './ForgotPasswordForm';
@@ -8,7 +9,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.wachtwoord-vergeten.title'),
     description: t('pages.wachtwoord-vergeten.description'),
-    alternates: { canonical: '/wachtwoord-vergeten' },
+    alternates: { canonical: localizePath('/wachtwoord-vergeten') },
     robots: { index: false, follow: true },
   };
 }

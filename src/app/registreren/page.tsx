@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import { localizePath } from '@/config/routes';
 import type { Metadata } from 'next';
 
 import { AuthPage, RegisterVisual } from '@/components/web2/account/AuthLayout';
@@ -13,7 +14,7 @@ export function generateMetadata(): Metadata {
     description:
     t('pages.registreren.description'),
     alternates: {
-      canonical: '/registreren',
+      canonical: localizePath('/registreren'),
     },
     openGraph: {
       title: t('pages.registreren.ogTitle'),

@@ -21,6 +21,8 @@ export const config = {
   matcher: [
     "/beheer/:path*",
     "/dashboard/:path*",
-    "/premium/succes/:path*"
+    "/premium/succes/:path*",
+    // intl serves this page at its English URL; NL redirects it before this runs.
+    "/premium/success/:path*"
   ]
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { localizePath } from '@/config/routes';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 
@@ -13,7 +14,7 @@ export function generateMetadata(): Metadata {
     title: t('pages.home.title'),
     description: t('pages.home.description'),
     alternates: {
-      canonical: '/',
+      canonical: localizePath('/'),
     },
     openGraph: {
       title: t('pages.home.ogTitle'),

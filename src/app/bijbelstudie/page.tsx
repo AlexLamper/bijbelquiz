@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { localizePath } from '@/config/routes';
 import type { ReactNode } from 'react';
 
 import { buttonVariants, Container, LogoMark } from '@/components/bq';
@@ -32,7 +33,7 @@ export function generateMetadata(): Metadata {
     title: t('pages.bijbelstudie.title'),
     description:
     t('pages.bijbelstudie.description'),
-    alternates: { canonical: '/bijbelstudie' },
+    alternates: { canonical: localizePath('/bijbelstudie') },
     openGraph: {
       title: t('pages.bijbelstudie.ogTitle'),
       description: t('pages.bijbelstudie.ogDescription'),

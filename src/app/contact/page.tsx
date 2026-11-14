@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { localizePath } from '@/config/routes';
 import Link from 'next/link';
 import { getServerSession } from 'next-auth';
 
@@ -14,7 +15,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.contact.title'),
     description: t('pages.contact.description'),
-    alternates: { canonical: '/contact' },
+    alternates: { canonical: localizePath('/contact') },
     openGraph: {
       title: t('pages.contact.ogTitle'),
       description: t('pages.contact.ogDescription'),

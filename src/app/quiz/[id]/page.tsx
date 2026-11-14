@@ -1,4 +1,5 @@
 import { notFound, redirect } from 'next/navigation';
+import { localizePath } from '@/config/routes';
 import { getServerSession } from 'next-auth';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { authOptions } from '@/lib/auth';
@@ -73,7 +74,7 @@ export async function generateMetadata(
       description: quiz.description || t('pages.quizLegacy.twitterDescription', { quiz: quiz.title }),
     },
     alternates: {
-      canonical: `/quiz/${quiz.slug || quiz._id}`,
+      canonical: localizePath(`/quiz/${quiz.slug || quiz._id}`),
     },
   };
 }

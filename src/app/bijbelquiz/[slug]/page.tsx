@@ -1,4 +1,5 @@
 import { cache } from 'react';
+import { localizePath } from '@/config/routes';
 import mongoose from 'mongoose';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -115,7 +116,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: {
-      canonical: `/bijbelquiz/${quiz.slug || slug}`,
+      canonical: localizePath(`/bijbelquiz/${quiz.slug || slug}`),
     },
     openGraph: {
       title: t('pages.quizPage.ogTitle', { quiz: quiz.title }),

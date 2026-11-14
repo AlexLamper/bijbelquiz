@@ -1,4 +1,5 @@
 import { getSiteConfig } from '@/config/site';
+import { localizePath } from '@/config/routes';
 import { connectDB, Quiz } from '@/database';
 
 interface QuizSitemapDocument {
@@ -28,19 +29,19 @@ export function getStaticSitemapEntries(baseUrl = getSiteBaseUrl()): SitemapEntr
 
   const entries: SitemapEntry[] = [
     { url: `${baseUrl}/`, priority: 1.0, changeFrequency: 'daily' },
-    { url: `${baseUrl}/quizzen`, priority: 0.95, changeFrequency: 'daily' },
-    { url: `${baseUrl}/premium`, priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${baseUrl}/samen-spelen`, priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${baseUrl}/bijbelstudie`, priority: 0.7, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/ranglijst`, priority: 0.85, changeFrequency: 'daily' },
-    { url: `${baseUrl}/contact`, priority: 0.65, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/hulp`, priority: 0.65, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/privacybeleid`, priority: 0.5, changeFrequency: 'yearly' },
-    { url: `${baseUrl}/voorwaarden`, priority: 0.5, changeFrequency: 'yearly' },
-    { url: `${baseUrl}/account-verwijderen`, priority: 0.45, changeFrequency: 'yearly' },
-    { url: `${baseUrl}/foutmelding`, priority: 0.45, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/inloggen`, priority: 0.35, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/registreren`, priority: 0.35, changeFrequency: 'monthly' },
+    { url: `${baseUrl}${localizePath(`/quizzen`)}`, priority: 0.95, changeFrequency: 'daily' },
+    { url: `${baseUrl}${localizePath(`/premium`)}`, priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${baseUrl}${localizePath(`/samen-spelen`)}`, priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${baseUrl}${localizePath(`/bijbelstudie`)}`, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${baseUrl}${localizePath(`/ranglijst`)}`, priority: 0.85, changeFrequency: 'daily' },
+    { url: `${baseUrl}${localizePath(`/contact`)}`, priority: 0.65, changeFrequency: 'monthly' },
+    { url: `${baseUrl}${localizePath(`/hulp`)}`, priority: 0.65, changeFrequency: 'monthly' },
+    { url: `${baseUrl}${localizePath(`/privacybeleid`)}`, priority: 0.5, changeFrequency: 'yearly' },
+    { url: `${baseUrl}${localizePath(`/voorwaarden`)}`, priority: 0.5, changeFrequency: 'yearly' },
+    { url: `${baseUrl}${localizePath(`/account-verwijderen`)}`, priority: 0.45, changeFrequency: 'yearly' },
+    { url: `${baseUrl}${localizePath(`/foutmelding`)}`, priority: 0.45, changeFrequency: 'monthly' },
+    { url: `${baseUrl}${localizePath(`/inloggen`)}`, priority: 0.35, changeFrequency: 'monthly' },
+    { url: `${baseUrl}${localizePath(`/registreren`)}`, priority: 0.35, changeFrequency: 'monthly' },
   ];
 
   return entries.map((entry) => ({
@@ -72,7 +73,7 @@ export async function getQuizSitemapEntries(baseUrl = getSiteBaseUrl()): Promise
 
     if (quiz.slug) {
       entries.push({
-        url: `${baseUrl}/bijbelquiz/${quiz.slug}`,
+        url: `${baseUrl}${localizePath(`/bijbelquiz/${quiz.slug}`)}`,
         lastModified: quiz.updatedAt || new Date(),
         changeFrequency: 'weekly',
         priority: 0.8,

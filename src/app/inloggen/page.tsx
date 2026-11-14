@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import { localizePath } from '@/config/routes';
 import type { Metadata } from 'next';
 
 import { AuthPage, LoginVisual } from '@/components/web2/account/AuthLayout';
@@ -12,7 +13,7 @@ export function generateMetadata(): Metadata {
     title: t('pages.inloggen.title'),
     description: t('pages.inloggen.description'),
     alternates: {
-      canonical: '/inloggen',
+      canonical: localizePath('/inloggen'),
     },
     openGraph: {
       title: t('pages.inloggen.ogTitle'),
