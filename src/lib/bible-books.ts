@@ -8,6 +8,8 @@
  * quizzes today.
  */
 
+import { isNlSite } from '@/config/site';
+
 export type Testament = 'OT' | 'NT';
 
 export type BookGroupId =
@@ -40,6 +42,42 @@ export interface BibleBook {
   chapters: number;
 }
 
+
+/** English titles and short forms (intl site), in canonical order, keyed by code. */
+const EN_CODES = [
+  'GEN', 'EXOD', 'LEV', 'NUM', 'DEUT', 'JOSH', 'JUDG', 'RUTH', '1SAM', '2SAM', '1KGS', '2KGS', '1CHR', '2CHR', 'EZRA', 'NEH', 'ESTH', 'JOB', 'PS', 'PROV',
+  'ECCL', 'SONG', 'ISA', 'JER', 'LAM', 'EZEK', 'DAN', 'HOS', 'JOEL', 'AMOS', 'OBAD', 'JONAH', 'MIC', 'NAH', 'HAB', 'ZEPH', 'HAG', 'ZECH', 'MAL',
+  'MATT', 'MARK', 'LUKE', 'JOHN', 'ACTS', 'ROM', '1COR', '2COR', 'GAL', 'EPH', 'PHIL', 'COL', '1THESS', '2THESS', '1TIM', '2TIM', 'TITUS', 'PHLM',
+  'HEB', 'JAS', '1PET', '2PET', '1JOHN', '2JOHN', '3JOHN', 'JUDE', 'REV',
+];
+const EN_TITLES = [
+  'Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', '1 Samuel', '2 Samuel',
+  '1 Kings', '2 Kings', '1 Chronicles', '2 Chronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalms', 'Proverbs',
+  'Ecclesiastes', 'Song of Solomon', 'Isaiah', 'Jeremiah', 'Lamentations', 'Ezekiel', 'Daniel', 'Hosea', 'Joel', 'Amos',
+  'Obadiah', 'Jonah', 'Micah', 'Nahum', 'Habakkuk', 'Zephaniah', 'Haggai', 'Zechariah', 'Malachi',
+  'Matthew', 'Mark', 'Luke', 'John', 'Acts', 'Romans', '1 Corinthians', '2 Corinthians', 'Galatians', 'Ephesians',
+  'Philippians', 'Colossians', '1 Thessalonians', '2 Thessalonians', '1 Timothy', '2 Timothy', 'Titus', 'Philemon',
+  'Hebrews', 'James', '1 Peter', '2 Peter', '1 John', '2 John', '3 John', 'Jude', 'Revelation',
+];
+const EN_SHORT = [
+  'Gen.', 'Ex.', 'Lev.', 'Num.', 'Deut.', 'Josh.', 'Judg.', 'Ruth', '1 Sam.', '2 Sam.', '1 Kgs.', '2 Kgs.', '1 Chr.', '2 Chr.', 'Ezra', 'Neh.', 'Esth.', 'Job', 'Ps.', 'Prov.',
+  'Eccl.', 'Song', 'Isa.', 'Jer.', 'Lam.', 'Ezek.', 'Dan.', 'Hos.', 'Joel', 'Amos', 'Obad.', 'Jonah', 'Mic.', 'Nah.', 'Hab.', 'Zeph.', 'Hag.', 'Zech.', 'Mal.',
+  'Matt.', 'Mark', 'Luke', 'John', 'Acts', 'Rom.', '1 Cor.', '2 Cor.', 'Gal.', 'Eph.', 'Phil.', 'Col.', '1 Thess.', '2 Thess.', '1 Tim.', '2 Tim.', 'Titus', 'Phlm.',
+  'Heb.', 'Jas.', '1 Pet.', '2 Pet.', '1 John', '2 John', '3 John', 'Jude', 'Rev.',
+];
+const EN_BY_CODE = new Map(EN_CODES.map((code, i) => [code, { title: EN_TITLES[i], short: EN_SHORT[i] }]));
+
+const EN_GROUP_LABELS: Record<string, string> = {
+  wet: 'Law', geschiedenis: 'History', poezie: 'Poetry and wisdom', 'grote-profeten': 'Major prophets',
+  'kleine-profeten': 'Minor prophets', evangelien: 'Gospels', handelingen: 'Acts', 'brieven-paulus': 'Letters of Paul',
+  'algemene-brieven': 'General letters', openbaring: 'Revelation',
+};
+const EN_GENRE_LABELS: Record<string, string> = {
+  wet: 'Law', geschiedenis: 'History', 'poezie-wijsheid': 'Poetry & wisdom', 'grote-profeten': 'Major prophets',
+  'kleine-profeten': 'Minor prophets', 'evangelien-handelingen': 'Gospels & Acts', 'brieven-van-paulus': 'Letters of Paul',
+  'brieven-openbaring': 'Letters & Revelation',
+};
+
 export const BOOK_GROUPS: BookGroup[] = [
   { id: 'wet', label: 'Wet', testament: 'OT' },
   { id: 'geschiedenis', label: 'Geschiedenis', testament: 'OT' },
@@ -51,7 +89,7 @@ export const BOOK_GROUPS: BookGroup[] = [
   { id: 'brieven-paulus', label: 'Brieven van Paulus', testament: 'NT' },
   { id: 'algemene-brieven', label: 'Algemene brieven', testament: 'NT' },
   { id: 'openbaring', label: 'Openbaring', testament: 'NT' },
-];
+].map((g) => (isNlSite() ? g : { ...g, label: EN_GROUP_LABELS[g.id] })) as BookGroup[];
 
 /**
  * The 8 genre groupings the `/quizzen` overview page shows (one continuous-
@@ -84,7 +122,7 @@ export const OVERVIEW_GENRES: OverviewGenre[] = [
   { id: 'evangelien-handelingen', label: 'Evangeliën & Handelingen', testament: 'NT' },
   { id: 'brieven-van-paulus', label: 'Brieven van Paulus', testament: 'NT' },
   { id: 'brieven-openbaring', label: 'Brieven & Openbaring', testament: 'NT' },
-];
+].map((g) => (isNlSite() ? g : { ...g, label: EN_GENRE_LABELS[g.id] })) as OverviewGenre[];
 
 const GROUP_TO_OVERVIEW_GENRE: Record<BookGroupId, OverviewGenreId> = {
   wet: 'wet',
@@ -119,7 +157,12 @@ const b = (
   testament: Testament,
   group: BookGroupId,
   chapters: number,
-): BibleBook => ({ code, title, short, slug: slugify(title), testament, group, chapters });
+): BibleBook => {
+  // The site decides the language of the names; on NL this is the Dutch row as written.
+  const en = isNlSite() ? undefined : EN_BY_CODE.get(code);
+  const name = en?.title ?? title;
+  return { code, title: name, short: en?.short ?? short, slug: slugify(name), testament, group, chapters };
+};
 
 export const BIBLE_BOOKS: BibleBook[] = [
   // ── Oude Testament ───────────────────────────────────────────────────────

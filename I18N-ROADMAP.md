@@ -61,7 +61,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
       `/play-together`, `/bible-quiz/[slug]`, ... (Next rewrites onto the same pages)
 - [x] Bible text per locale (intl: WEB via bible-api.com, public domain, `src/lib/bible-en.ts`; daily verse is fixed for now): `src/app/api/bible/*` currently uses BijbelAPI (Dutch).
       Add an English source (KJV/WEB, public domain) - in BijbelAPI or external. Verify licences.
-- [ ] Book names per locale on top of `src/lib/book-canon.ts` canonical codes
+- [x] Book names per locale on top of `src/lib/book-canon.ts` canonical codes
 
 ### Phase 2 - English site live (noindex)
 - [ ] International MongoDB (Atlas), `lang` on Quiz + Category, slugs unique per lang
