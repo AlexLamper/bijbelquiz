@@ -1534,5 +1534,64 @@
       "bestOf": "Best score {correct} of {total}",
       "allFrom": "All {count} quizzes from {group}"
     }
+  },
+  "mail": {
+    "validation": {
+      "name": "Enter your name.",
+      "nameLong": "Your name is too long.",
+      "emailLong": "This email address is too long.",
+      "email": "Enter a valid email address.",
+      "subject": "Choose a subject.",
+      "short": "Write a little more, at least 10 characters.",
+      "messageLong": "Your message is too long (maximum 4000 characters).",
+      "emailOptional": "Enter a valid email address, or leave it empty.",
+      "reportLong": "Your report is too long (maximum 4000 characters)."
+    },
+    "rateLimited": "You just sent a few messages. Try again in a few minutes.",
+    "sendFailed": "Something went wrong sending. Try again, or email us directly.",
+    "checkFields": "Check the fields and try again.",
+    "contactOk": "Thanks, we have received your message.",
+    "contactSubject": "Contact: {subject}",
+    "contactHeading": "New message via the contact form",
+    "fieldName": "Name: {value}",
+    "fieldEmail": "Email: {value}",
+    "fieldSubject": "Subject: {value}",
+    "fieldSubmitted": "Submitted on: {value}",
+    "fieldMessage": "Message:",
+    "invalidReport": "Invalid input. Check your report and try again.",
+    "bugOk": "Thanks. Your report has been sent.",
+    "bugSubject": "New bug report",
+    "bugHeading": "New bug report received",
+    "notFilled": "Not filled in",
+    "unknown": "Unknown",
+    "fieldPage": "Page: {value}",
+    "fieldReport": "Report:",
+    "trial": {
+      "chargePrice": "you pay {price} per year",
+      "chargeYear": "you pay the yearly amount",
+      "body": "Your free trial of Bible Quizzes Premium ends on {end}. After that your yearly subscription starts and {charge}.",
+      "keep": "Want to keep Premium? Then you do not need to do anything.",
+      "cancel": "Do not want to continue? Cancel before {end}. You can do that at {url} with the \"Manage your subscription\" button. You then pay nothing and keep playing for free; your XP and streak are kept.",
+      "subject": "Your Bible Quizzes Premium trial ends on {end}"
+    },
+    "hello": "Hi {name},",
+    "helloPlain": "Hi,",
+    "regards": "Best regards,",
+    "reset": {
+      "subject": "Reset your password - Bible Quizzes",
+      "textIntro": "You asked for a new password for your Bible Quizzes account. Choose one via this link:",
+      "validity": "The link works for {minutes} minutes and only once.",
+      "ignore": "Did not ask for this? You can ignore this email; your password stays the same.",
+      "htmlIntro": "You asked for a new password for your Bible Quizzes account.",
+      "button": "Choose a new password"
+    },
+    "subjects": [
+      "My account and logging in",
+      "Premium and payments",
+      "Group licence",
+      "Duels and playing together",
+      "An error in a question",
+      "Something else"
+    ]
   }
 }

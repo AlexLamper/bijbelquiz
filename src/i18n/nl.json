@@ -1566,5 +1566,64 @@
       "bestOf": "Beste score {correct} van {total}",
       "allFrom": "Alle {count} quizzen uit {group}"
     }
+  },
+  "mail": {
+    "validation": {
+      "name": "Vul je naam in.",
+      "nameLong": "Je naam is te lang.",
+      "emailLong": "Dit e-mailadres is te lang.",
+      "email": "Vul een geldig e-mailadres in.",
+      "subject": "Kies een onderwerp.",
+      "short": "Schrijf iets meer, minstens 10 tekens.",
+      "messageLong": "Je bericht is te lang (maximaal 4000 tekens).",
+      "emailOptional": "Vul een geldig e-mailadres in, of laat het leeg.",
+      "reportLong": "Je melding is te lang (maximaal 4000 tekens)."
+    },
+    "rateLimited": "Je hebt net al een paar berichten gestuurd. Probeer het over een paar minuten opnieuw.",
+    "sendFailed": "Er ging iets mis bij het versturen. Probeer het opnieuw, of mail ons direct.",
+    "checkFields": "Controleer de velden en probeer het opnieuw.",
+    "contactOk": "Bedankt, we hebben je bericht ontvangen.",
+    "contactSubject": "Contact: {subject}",
+    "contactHeading": "Nieuw bericht via het contactformulier",
+    "fieldName": "Naam: {value}",
+    "fieldEmail": "E-mail: {value}",
+    "fieldSubject": "Onderwerp: {value}",
+    "fieldSubmitted": "Ingezonden op: {value}",
+    "fieldMessage": "Bericht:",
+    "invalidReport": "Ongeldige invoer. Controleer je melding en probeer opnieuw.",
+    "bugOk": "Bedankt. Je melding is doorgestuurd.",
+    "bugSubject": "Nieuwe foutmelding",
+    "bugHeading": "Nieuwe foutmelding ontvangen",
+    "notFilled": "Niet ingevuld",
+    "unknown": "Onbekend",
+    "fieldPage": "Pagina: {value}",
+    "fieldReport": "Melding:",
+    "trial": {
+      "chargePrice": "betaal je {price} per jaar",
+      "chargeYear": "betaal je het jaarbedrag",
+      "body": "Je gratis proefperiode van BijbelQuiz Premium loopt op {end} af. Daarna start je jaarabonnement en {charge}.",
+      "keep": "Wil je Premium houden? Dan hoef je niets te doen.",
+      "cancel": "Wil je niet verder? Zeg dan voor {end} op. Dat kan op {url} met de knop \"Beheer je abonnement\". Je betaalt dan niets en speelt gratis verder; je XP en je reeks blijven bewaard.",
+      "subject": "Je proefperiode van BijbelQuiz Premium loopt op {end} af"
+    },
+    "hello": "Hoi {name},",
+    "helloPlain": "Hoi,",
+    "regards": "Groet,",
+    "reset": {
+      "subject": "Je wachtwoord herstellen - BijbelQuiz",
+      "textIntro": "Je hebt gevraagd om een nieuw wachtwoord voor je BijbelQuiz-account. Kies er een via deze link:",
+      "validity": "De link werkt {minutes} minuten en maar een keer.",
+      "ignore": "Heb je dit niet gevraagd? Dan kun je deze mail negeren; je wachtwoord blijft hetzelfde.",
+      "htmlIntro": "Je hebt gevraagd om een nieuw wachtwoord voor je BijbelQuiz-account.",
+      "button": "Nieuw wachtwoord kiezen"
+    },
+    "subjects": [
+      "Mijn account en inloggen",
+      "Premium en betalen",
+      "Groepslicentie",
+      "Duels en samen spelen",
+      "Een fout in een vraag",
+      "Iets anders"
+    ]
   }
 }

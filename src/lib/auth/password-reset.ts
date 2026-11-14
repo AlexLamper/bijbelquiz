@@ -3,6 +3,8 @@ import bcrypt from 'bcryptjs';
 import { connectDB, User } from '@/database';
 import { sendAccountMail } from './mail';
 import { buildResetUrl, createResetToken, hashResetToken, isWellFormedResetToken, RESET_TOKEN_TTL_MS } from './reset-token';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
 /**
  * "Wachtwoord vergeten" and "wachtwoord herstellen", the database side. The
@@ -14,7 +16,7 @@ import { buildResetUrl, createResetToken, hashResetToken, isWellFormedResetToken
  */
 
 function siteOrigin(): string {
-  return (process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXTAUTH_URL || 'https://www.bijbelquiz.com').replace(/\/$/, '');
+  return (process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXTAUTH_URL || getSiteConfig().baseUrl).replace(/\/$/, '');
 }
 
 function escapeHtml(value: string): string {
@@ -38,29 +40,29 @@ export async function requestPasswordReset(email: string, now: Date = new Date()
 
   const link = buildResetUrl(token, siteOrigin());
   const minutes = Math.round(RESET_TOKEN_TTL_MS / 60000);
-  const greeting = user.name?.trim() ? `Hoi ${user.name.trim()},` : 'Hoi,';
+  const greeting = user.name?.trim() ? t('mail.hello', { name: user.name.trim() }) : t('mail.helloPlain');
 
   await sendAccountMail({
     to: user.email,
-    subject: 'Je wachtwoord herstellen - BijbelQuiz',
+    subject: t('mail.reset.subject'),
     text: [
       greeting,
       '',
-      'Je hebt gevraagd om een nieuw wachtwoord voor je BijbelQuiz-account. Kies er een via deze link:',
+      t('mail.reset.textIntro'),
       '',
       link,
       '',
-      `De link werkt ${minutes} minuten en maar een keer.`,
-      'Heb je dit niet gevraagd? Dan kun je deze mail negeren; je wachtwoord blijft hetzelfde.',
+      t('mail.reset.validity', { minutes }),
+      t('mail.reset.ignore'),
       '',
-      'BijbelQuiz',
+      getSiteConfig().brand,
     ].join('\n'),
     html: [
       `<p>${escapeHtml(greeting)}</p>`,
-      '<p>Je hebt gevraagd om een nieuw wachtwoord voor je BijbelQuiz-account.</p>',
-      `<p><a href="${escapeHtml(link)}" style="display:inline-block;padding:12px 20px;border-radius:12px;background:#35548C;color:#ffffff;font-weight:800;text-decoration:none">Nieuw wachtwoord kiezen</a></p>`,
-      `<p>De link werkt ${minutes} minuten en maar een keer.<br>Heb je dit niet gevraagd? Dan kun je deze mail negeren; je wachtwoord blijft hetzelfde.</p>`,
-      '<p>BijbelQuiz</p>',
+      `<p>${escapeHtml(t('mail.reset.htmlIntro'))}</p>`,
+      `<p><a href="${escapeHtml(link)}" style="display:inline-block;padding:12px 20px;border-radius:12px;background:#35548C;color:#ffffff;font-weight:800;text-decoration:none">${escapeHtml(t('mail.reset.button'))}</a></p>`,
+      `<p>${escapeHtml(t('mail.reset.validity', { minutes }))}<br>${escapeHtml(t('mail.reset.ignore'))}</p>`,
+      `<p>${escapeHtml(getSiteConfig().brand)}</p>`,
     ].join(''),
   });
 }

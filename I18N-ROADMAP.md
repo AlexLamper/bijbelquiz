@@ -55,7 +55,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
   - [x] `src/components/web2/browsing/`, `quiz-play/`, `quiz-result/`
   - [x] `src/components/web2/samen/`, `premium/`, `account/`
   - [x] `src/app/**/page.tsx` (page metadata and bodies; bijbelstudie, duel and duels are NL-only and 404 on intl)
-  - [ ] emails: `src/lib/support-mail.ts`, `trial-reminder.ts`, `auth/password-reset.ts`
+  - [x] emails: `src/lib/support-mail.ts`, `trial-reminder.ts`, `auth/password-reset.ts`
   - [ ] hardcoded `bijbelquiz.com` (41 places) -> `getSiteConfig().baseUrl`
 - [ ] Route map per locale: NL keeps its slugs; en gets `/quizzes`, `/leaderboard`,
       `/play-together`, `/bible-quiz/[slug]`, ... (Next rewrites onto the same pages)

@@ -3,6 +3,8 @@ import type { Types } from 'mongoose';
 import { connectDB, User } from '@/database';
 import { isMailConfigured, sendAccountMail, type AccountMail } from '@/lib/auth/mail';
 import { formatStripeAmount } from '@/lib/premium-offer';
+import { isNlSite, getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
 /**
  * "Herinnering op dag 5": the mail the Premium page promises before a free
@@ -29,10 +31,10 @@ export interface TrialReminderDeps {
   siteUrl?: string;
 }
 
-const longDate = new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', timeZone: 'Europe/Amsterdam' });
+const longDate = new Intl.DateTimeFormat(t('bq.header.numberLocale'), { day: 'numeric', month: 'long', timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined });
 
 function siteUrlFrom(env: Record<string, string | undefined> = process.env): string {
-  return (env.NEXTAUTH_URL || 'https://www.bijbelquiz.com').replace(/\/$/, '');
+  return (env.NEXTAUTH_URL || getSiteConfig().baseUrl).replace(/\/$/, '');
 }
 
 export function buildTrialReminderMail(input: {
@@ -46,24 +48,24 @@ export function buildTrialReminderMail(input: {
   const firstName = (input.name || '').trim().split(/\s+/)[0];
   const endLabel = longDate.format(input.trialEnd);
   const price = formatStripeAmount(input.amountCents ?? null, input.currency ?? null);
-  const charge = price ? `betaal je ${price} per jaar` : 'betaal je het jaarbedrag';
+  const charge = price ? t('mail.trial.chargePrice', { price }) : t('mail.trial.chargeYear');
   const manageUrl = `${input.siteUrl}/premium`;
 
   const lines = [
-    firstName ? `Hoi ${firstName},` : 'Hoi,',
+    firstName ? t('mail.hello', { name: firstName }) : t('mail.helloPlain'),
     '',
-    `Je gratis proefperiode van BijbelQuiz Premium loopt op ${endLabel} af. Daarna start je jaarabonnement en ${charge}.`,
+    t('mail.trial.body', { end: endLabel, charge }),
     '',
-    'Wil je Premium houden? Dan hoef je niets te doen.',
-    `Wil je niet verder? Zeg dan voor ${endLabel} op. Dat kan op ${manageUrl} met de knop "Beheer je abonnement". Je betaalt dan niets en speelt gratis verder; je XP en je reeks blijven bewaard.`,
+    t('mail.trial.keep'),
+    t('mail.trial.cancel', { end: endLabel, url: manageUrl }),
     '',
-    'Groet,',
-    'BijbelQuiz',
+    t('mail.regards'),
+    getSiteConfig().brand,
   ];
 
   return {
     to: input.to,
-    subject: `Je proefperiode van BijbelQuiz Premium loopt op ${endLabel} af`,
+    subject: t('mail.trial.subject', { end: endLabel }),
     text: lines.join('\n'),
   };
 }

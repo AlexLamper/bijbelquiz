@@ -18,6 +18,8 @@
 import nodemailer from 'nodemailer';
 import { z } from 'zod';
 
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 import { SUPPORT_EMAIL } from '@/lib/support-email';
 import { CONTACT_SUBJECTS } from '@/lib/support-mail-subjects';
 
@@ -28,14 +30,14 @@ export { CONTACT_SUBJECTS, type ContactSubject } from '@/lib/support-mail-subjec
 const honeypot = z.string().max(500).optional();
 
 export const contactSchema = z.object({
-  name: z.string().trim().min(1, 'Vul je naam in.').max(120, 'Je naam is te lang.'),
-  email: z.string().trim().max(190, 'Dit e-mailadres is te lang.').pipe(z.email('Vul een geldig e-mailadres in.')),
-  subject: z.enum(CONTACT_SUBJECTS, { message: 'Kies een onderwerp.' }),
+  name: z.string().trim().min(1, t('mail.validation.name')).max(120, t('mail.validation.nameLong')),
+  email: z.string().trim().max(190, t('mail.validation.emailLong')).pipe(z.email(t('mail.validation.email'))),
+  subject: z.enum(CONTACT_SUBJECTS, { message: t('mail.validation.subject') }),
   message: z
     .string()
     .trim()
-    .min(10, 'Schrijf iets meer, minstens 10 tekens.')
-    .max(4000, 'Je bericht is te lang (maximaal 4000 tekens).'),
+    .min(10, t('mail.validation.short'))
+    .max(4000, t('mail.validation.messageLong')),
   website: honeypot,
 });
 
@@ -54,15 +56,15 @@ export const bugReportSchema = z.object({
   email: z
     .string()
     .trim()
-    .max(190, 'Dit e-mailadres is te lang.')
+    .max(190, t('mail.validation.emailLong'))
     .optional()
     .transform((value) => (value ? value : undefined))
-    .pipe(z.email('Vul een geldig e-mailadres in, of laat het leeg.').optional()),
+    .pipe(z.email(t('mail.validation.emailOptional')).optional()),
   message: z
     .string()
     .trim()
-    .min(10, 'Schrijf iets meer, minstens 10 tekens.')
-    .max(4000, 'Je melding is te lang (maximaal 4000 tekens).'),
+    .min(10, t('mail.validation.short'))
+    .max(4000, t('mail.validation.reportLong')),
   /** Free text on purpose: people type "bijbelquiz.com/quiz/x" without https. */
   pageUrl: optionalText(500),
   website: honeypot,
@@ -194,12 +196,12 @@ export interface HandlerDeps extends MailDeps {
 
 const RATE_LIMITED: SubmissionResult = {
   status: 429,
-  body: { success: false, message: 'Je hebt net al een paar berichten gestuurd. Probeer het over een paar minuten opnieuw.' },
+  body: { success: false, message: t('mail.rateLimited') },
 };
 
 const SEND_FAILED: SubmissionResult = {
   status: 500,
-  body: { success: false, message: 'Er ging iets mis bij het versturen. Probeer het opnieuw, of mail ons direct.' },
+  body: { success: false, message: t('mail.sendFailed') },
 };
 
 function toAddress(env: Env, specific?: string) {
@@ -215,11 +217,11 @@ export async function handleContactSubmission(
   if (!parsed.success) {
     return {
       status: 400,
-      body: { success: false, message: 'Controleer de velden en probeer het opnieuw.', errors: fieldErrorsOf(parsed.error) },
+      body: { success: false, message: t('mail.checkFields'), errors: fieldErrorsOf(parsed.error) },
     };
   }
 
-  const ok: SubmissionResult = { status: 200, body: { success: true, message: 'Bedankt, we hebben je bericht ontvangen.' } };
+  const ok: SubmissionResult = { status: 200, body: { success: true, message: t('mail.contactOk') } };
   // A bot filled the hidden field: answer as if it worked, send nothing.
   if (parsed.data.website) return ok;
 
@@ -235,18 +237,18 @@ export async function handleContactSubmission(
       {
         to: toAddress(env, 'CONTACT_TO_EMAIL'),
         replyTo: email,
-        subject: `[BijbelQuiz] Contact: ${subject}`,
+        subject: `[${getSiteConfig().brand}] ${t('mail.contactSubject', { subject })}`,
         text: [
-          'Nieuw bericht via het contactformulier',
+          t('mail.contactHeading'),
           '',
-          `Naam: ${name}`,
-          `E-mail: ${email}`,
-          `Onderwerp: ${subject}`,
-          `Ingezonden op: ${submittedAt}`,
+          t('mail.fieldName', { value: name }),
+          t('mail.fieldEmail', { value: email }),
+          t('mail.fieldSubject', { value: subject }),
+          t('mail.fieldSubmitted', { value: submittedAt }),
           `IP: ${meta.ip}`,
           `User-Agent: ${meta.userAgent}`,
           '',
-          'Bericht:',
+          t('mail.fieldMessage'),
           message,
         ].join('\n'),
       },
@@ -268,11 +270,11 @@ export async function handleBugReport(
   if (!parsed.success) {
     return {
       status: 400,
-      body: { success: false, message: 'Ongeldige invoer. Controleer je melding en probeer opnieuw.', errors: fieldErrorsOf(parsed.error) },
+      body: { success: false, message: t('mail.invalidReport'), errors: fieldErrorsOf(parsed.error) },
     };
   }
 
-  const ok: SubmissionResult = { status: 200, body: { success: true, message: 'Bedankt. Je melding is doorgestuurd.' } };
+  const ok: SubmissionResult = { status: 200, body: { success: true, message: t('mail.bugOk') } };
   if (parsed.data.website) return ok;
 
   const limiter = deps.limiter ?? supportRateLimiter;
@@ -287,18 +289,18 @@ export async function handleBugReport(
       {
         to: toAddress(env, 'BUG_REPORT_TO_EMAIL'),
         replyTo: email,
-        subject: '[BijbelQuiz] Nieuwe foutmelding',
+        subject: `[${getSiteConfig().brand}] ${t('mail.bugSubject')}`,
         text: [
-          'Nieuwe foutmelding ontvangen',
+          t('mail.bugHeading'),
           '',
-          `Naam: ${name || 'Niet ingevuld'}`,
-          `E-mail: ${email || 'Niet ingevuld'}`,
-          `Pagina: ${pageUrl || 'Onbekend'}`,
-          `Ingezonden op: ${submittedAt}`,
+          t('mail.fieldName', { value: name || t('mail.notFilled') }),
+          t('mail.fieldEmail', { value: email || t('mail.notFilled') }),
+          t('mail.fieldPage', { value: pageUrl || t('mail.unknown') }),
+          t('mail.fieldSubmitted', { value: submittedAt }),
           `IP: ${meta.ip}`,
           `User-Agent: ${meta.userAgent}`,
           '',
-          'Melding:',
+          t('mail.fieldReport'),
           message,
         ].join('\n'),
       },
