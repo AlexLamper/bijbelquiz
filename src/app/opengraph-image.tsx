@@ -1,7 +1,9 @@
 import { ImageResponse } from 'next/og';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
 export const runtime = 'edge';
-export const alt = 'BijbelQuiz - Gratis Bijbelquizzen Spelen';
+export const alt = t('pagesBody.og.alt');
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -97,7 +99,7 @@ export default function Image() {
             display: 'flex',
           }}
         >
-          BijbelQuiz
+          {getSiteConfig().brand}
         </div>
 
         {/* Tagline */}
@@ -111,7 +113,7 @@ export default function Image() {
             display: 'flex',
           }}
         >
-          Gratis Bijbelquizzen Spelen &amp; Bijbelkennis Testen
+          {t('pagesBody.og.tagline')}
         </div>
 
         {/* CTA pill */}
@@ -128,7 +130,7 @@ export default function Image() {
             letterSpacing: 0.5,
           }}
         >
-          Begin nu op bijbelquiz.com
+          {t('pagesBody.og.cta', { host: new URL(getSiteConfig().baseUrl).host.replace(/^www\./, '') })}
         </div>
       </div>
     ),

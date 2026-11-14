@@ -5,6 +5,7 @@ import { amsterdamWindowStart } from '@/lib/admin/time';
 import { PREMIUM_PRICE_LABEL_ENV } from '@/lib/premium-offer';
 import stripe from '@/lib/stripe';
 import { STRIPE_PLANS, type StripePlanId } from '@/lib/stripe-plans';
+import { getSiteConfig } from '@/config/site';
 
 /**
  * "Does the whole paying pipeline work" - one report.
@@ -418,7 +419,7 @@ export async function getPaymentsHealth({
               webhookEndpoints.length === 0
                 ? 'Geen enkel webhook-endpoint in Stripe geconfigureerd.'
                 : 'Er is een endpoint, maar geen actief endpoint dat checkout.session.completed ontvangt.',
-            action: `Stripe -> Developers -> Webhooks -> Add endpoint: https://www.bijbelquiz.com/api/webhook/stripe, met de events uit ${WEB_DOC}.`,
+            action: `Stripe -> Developers -> Webhooks -> Add endpoint: ${getSiteConfig().baseUrl}/api/webhook/stripe, met de events uit ${WEB_DOC}.`,
           });
         } else if (usable.missingEvents.length > 0) {
           checks.push({
@@ -815,7 +816,7 @@ export async function getPaymentsHealth({
       label: 'App-webhook komt aan',
       status: 'fail',
       detail: `${storePayments30d} app-betaling(en) in 30 dagen, maar nog nooit een RevenueCat-webhook opgeslagen.`,
-      action: `Zet in RevenueCat -> Integrations -> Webhooks de URL https://www.bijbelquiz.com/api/mobile/revenuecat-webhook met dezelfde Authorization als REVENUECAT_WEBHOOK_AUTHORIZATION. Zie ${APP_DOC}.`,
+      action: `Zet in RevenueCat -> Integrations -> Webhooks de URL ${getSiteConfig().baseUrl}/api/mobile/revenuecat-webhook met dezelfde Authorization als REVENUECAT_WEBHOOK_AUTHORIZATION. Zie ${APP_DOC}.`,
     });
   }
 

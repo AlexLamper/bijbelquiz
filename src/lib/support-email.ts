@@ -1,5 +1,7 @@
+import { getSiteConfig } from '@/config/site';
+
 /** Canonical public support inbox for BijbelQuiz (mailto, privacy text, SMTP fallback). */
-export const SUPPORT_EMAIL = 'info@bijbelquiz.com';
+export const SUPPORT_EMAIL = getSiteConfig().supportEmail;
 
 /** Address shown in UI; optional overrides via env (e.g. staging). */
 export function supportEmail(): string {

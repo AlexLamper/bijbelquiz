@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 
 import { ErrorScreen } from '@/components/web2/marketing/ErrorScreen';
+import { t } from '@/i18n';
 
 export const metadata: Metadata = {
-  title: 'Pagina niet gevonden',
+  title: t('pagesBody.notFound.metaTitle'),
   robots: { index: false, follow: true },
 };
 
 export default function NotFound() {
   return (
     <ErrorScreen
-      kicker="FOUT 404"
-      title="Deze pagina bestaat niet"
-      text="De link klopt niet meer, of de pagina is verplaatst. Kies waar je heen wilt, of ga terug naar home."
+      kicker={t('pagesBody.notFound.kicker')}
+      title={t('pagesBody.notFound.title')}
+      text={t('pagesBody.notFound.text')}
     />
   );
 }

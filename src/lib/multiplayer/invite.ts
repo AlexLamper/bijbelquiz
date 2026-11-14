@@ -1,3 +1,5 @@
+import { getSiteConfig } from '@/config/site';
+
 /**
  * Room invitations.
  *
@@ -16,7 +18,7 @@ function siteOrigin(): string {
   return (
     process.env.NEXT_PUBLIC_SITE_URL ||
     process.env.NEXTAUTH_URL ||
-    'https://www.bijbelquiz.com'
+    getSiteConfig().baseUrl
   ).replace(/\/$/, '');
 }
 

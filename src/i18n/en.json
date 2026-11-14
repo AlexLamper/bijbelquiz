@@ -1533,6 +1533,26 @@
       "played": "Played",
       "bestOf": "Best score {correct} of {total}",
       "allFrom": "All {count} quizzes from {group}"
+    },
+    "notFound": {
+      "metaTitle": "Page not found",
+      "kicker": "ERROR 404",
+      "title": "This page does not exist",
+      "text": "The link is no longer valid, or the page has moved. Choose where you want to go, or head back home."
+    },
+    "error": {
+      "kicker": "ERROR 500",
+      "title": "Something went wrong",
+      "cardKicker": "QUESTION 500",
+      "home": "To home",
+      "text": "This page could not load properly. Try again, or choose where you want to go.",
+      "globalText": "Bible Quizzes could not load properly. Try again, or head back home.",
+      "logoAria": "Bible Quizzes, to the home page"
+    },
+    "og": {
+      "alt": "Bible Quizzes - Play Free Bible Quizzes",
+      "tagline": "Play Free Bible Quizzes & Test Your Bible Knowledge",
+      "cta": "Start now at {host}"
     }
   },
   "mail": {

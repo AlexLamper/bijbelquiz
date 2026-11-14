@@ -1,4 +1,5 @@
 import { randomBytes } from 'node:crypto';
+import { getSiteConfig } from '@/config/site';
 
 /**
  * Duel invite links.
@@ -14,7 +15,7 @@ function siteOrigin(): string {
   return (
     process.env.NEXT_PUBLIC_SITE_URL ||
     process.env.NEXTAUTH_URL ||
-    'https://www.bijbelquiz.com'
+    getSiteConfig().baseUrl
   ).replace(/\/$/, '');
 }
 

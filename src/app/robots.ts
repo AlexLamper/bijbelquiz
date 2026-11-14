@@ -20,9 +20,9 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ['/api/', '/premium/success'],
     },
     sitemap: [
-      'https://www.bijbelquiz.com/sitemap.xml',
-      'https://www.bijbelquiz.com/sitemaps/static.xml',
-      'https://www.bijbelquiz.com/sitemaps/quizzes.xml',
+      `${getSiteConfig().baseUrl}/sitemap.xml`,
+      `${getSiteConfig().baseUrl}/sitemaps/static.xml`,
+      `${getSiteConfig().baseUrl}/sitemaps/quizzes.xml`,
     ],
   };
 }

@@ -1565,6 +1565,26 @@
       "played": "Gespeeld",
       "bestOf": "Beste score {correct} van {total}",
       "allFrom": "Alle {count} quizzen uit {group}"
+    },
+    "notFound": {
+      "metaTitle": "Pagina niet gevonden",
+      "kicker": "FOUT 404",
+      "title": "Deze pagina bestaat niet",
+      "text": "De link klopt niet meer, of de pagina is verplaatst. Kies waar je heen wilt, of ga terug naar home."
+    },
+    "error": {
+      "kicker": "FOUT 500",
+      "title": "Er ging iets mis",
+      "cardKicker": "VRAAG 500",
+      "home": "Naar home",
+      "text": "Deze pagina kon niet goed laden. Probeer het opnieuw, of kies waar je heen wilt.",
+      "globalText": "BijbelQuiz kon niet goed laden. Probeer het opnieuw, of ga terug naar home.",
+      "logoAria": "BijbelQuiz, naar de startpagina"
+    },
+    "og": {
+      "alt": "BijbelQuiz - Gratis Bijbelquizzen Spelen",
+      "tagline": "Gratis Bijbelquizzen Spelen & Bijbelkennis Testen",
+      "cta": "Begin nu op {host}"
     }
   },
   "mail": {
