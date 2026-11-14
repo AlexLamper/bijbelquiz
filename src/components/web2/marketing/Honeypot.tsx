@@ -3,10 +3,12 @@
  * keyboard. Bots that fill every input fill this one too, and the server then
  * drops the message (see `src/lib/support-mail.ts`).
  */
+import { t } from '@/i18n';
+
 export function Honeypot({ value, onChange }: { value: string; onChange: (value: string) => void }) {
   return (
     <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
-      <label htmlFor="website-veld">Laat dit veld leeg</label>
+      <label htmlFor="website-veld">{t('support.honeypot')}</label>
       <input
         id="website-veld"
         name="website"
@@ -43,6 +45,6 @@ export async function postSupportForm(url: string, payload: unknown): Promise<{ 
     const data = ((await response.json().catch(() => ({}))) ?? {}) as SubmitResponse;
     return { ok: response.ok && data.success !== false, data };
   } catch {
-    return { ok: false, data: { message: 'Geen verbinding. Controleer je internet en probeer het opnieuw.' } };
+    return { ok: false, data: { message: t('support.noConnection') } };
   }
 }

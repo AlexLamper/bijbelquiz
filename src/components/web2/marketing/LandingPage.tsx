@@ -15,6 +15,8 @@ import {
   StoreBadges,
 } from '@/components/bq';
 import StudieLink from '@/components/StudieLink';
+import { getSiteConfig, isNlSite } from '@/config/site';
+import { t, tList } from '@/i18n';
 import { cn } from '@/lib/utils';
 import { FaqList, type FaqItem } from './FaqList';
 import type { LandingData, LandingTestament } from './landing-data';
@@ -37,26 +39,27 @@ function ArrowLink({ href, children, className }: { href: string; children: Reac
 /* ── Hero ────────────────────────────────────────────────────────────────── */
 
 function HeroVisual() {
-  const answers = ['3', '5', '7', '12'];
+  const answers = tList('landing.hero.answers');
+  const correct = t('landing.hero.correct');
   return (
     <div
       role="img"
-      aria-label="Voorbeeld: een quizvraag over Johannes 6 met het goede antwoord en uitleg, een kamer met 6 spelers, verdiende XP en een reeks van 6 dagen"
+      aria-label={t('landing.hero.visualAlt')}
       className="relative box-border w-full max-w-[540px] justify-self-center pb-[72px] pt-[76px]"
     >
       <span aria-hidden="true" className="absolute left-1/2 top-[30px] aspect-square w-[410px] max-w-full -translate-x-1/2 rounded-full bg-lapis-wash" />
       <span aria-hidden="true" className="absolute right-[58px] top-[54px] size-10 rounded-full bg-gold-wash" />
       <div className="relative mx-auto flex w-[380px] max-w-[84%] -rotate-3 flex-col gap-3.5 rounded-[20px] border border-line bg-card p-[22px] shadow-float">
-        <span className="self-start rounded-full bg-lapis-tint px-2.5 py-1 text-xs font-extrabold tracking-[0.04em] text-lapis-edge">JOHANNES 6</span>
-        <span className="font-display text-[22px] font-semibold leading-7">Hoeveel broden had de jongen bij zich?</span>
+        <span className="self-start rounded-full bg-lapis-tint px-2.5 py-1 text-xs font-extrabold tracking-[0.04em] text-lapis-edge">{t('landing.hero.ref')}</span>
+        <span className="font-display text-[22px] font-semibold leading-7">{t('landing.hero.question')}</span>
         <span className="grid grid-cols-2 gap-2.5">
           {answers.map((answer) =>
-            answer === '5' ? (
+            answer === correct ? (
               <span
                 key={answer}
                 className="flex h-[46px] items-center justify-center gap-1.5 rounded-[12px] border border-green-edge border-b-[3px] bg-green text-[17px] font-extrabold text-white"
               >
-                <CheckIcon size={16} />5
+                <CheckIcon size={16} />{answer}
               </span>
             ) : (
               <span
@@ -70,25 +73,24 @@ function HeroVisual() {
         </span>
         <span className="flex flex-col gap-2.5 border-t border-line-soft pt-3.5">
           <span className="text-sm font-semibold leading-5 text-ink-soft">
-            <span className="font-extrabold text-green-text">Goed!</span> Andreas wees Jezus op een jongen met vijf gerstebroden en
-            twee vissen.
+            <span className="font-extrabold text-green-text">{t('landing.hero.good')}</span>{` ${t('landing.hero.explanation')}`}
           </span>
           <span className="flex h-[30px] items-center gap-1.5 self-start whitespace-nowrap rounded-full bg-lapis-tint px-3 text-[13px] font-extrabold text-lapis">
             <BookIcon size={14} strokeWidth={2.4} />
-            Lees Johannes 6:9
+            {t('landing.hero.readRef')}
           </span>
         </span>
       </div>
       <span className="absolute right-0 top-[18px] flex h-11 rotate-[4deg] items-center gap-2 whitespace-nowrap rounded-[14px] border border-line bg-card px-3.5 text-sm font-extrabold text-ink-soft shadow-float">
         <PeopleIcon size={17} strokeWidth={2.4} className="text-green" />
-        <span className="font-display text-[19px] font-semibold text-ink">6</span> spelers in de kamer
+        <span className="font-display text-[19px] font-semibold text-ink">6</span>{` ${t('landing.hero.playersInRoom')}`}
       </span>
       <span className="absolute bottom-5 left-0 flex h-[38px] -rotate-[5deg] items-center gap-[5px] whitespace-nowrap rounded-full bg-gold px-[13px] text-[15px] font-extrabold text-gold-ink shadow-float m:bottom-[132px]">
         <BoltSolidIcon size={15} />
         +15 XP
       </span>
       <span className="absolute bottom-[26px] right-3.5 flex h-10 rotate-3 items-center gap-1.5 whitespace-nowrap rounded-full border border-line bg-card px-[13px] text-[15px] font-extrabold text-ink shadow-float">
-        <FlameIcon size={17} className="text-coral" />6 dagen op rij
+        <FlameIcon size={17} className="text-coral" />{t('bq.header.daysInARow', { count: 6 })}
       </span>
     </div>
   );
@@ -100,27 +102,26 @@ function Hero() {
       <div className="grid grid-cols-1 items-center gap-10 m:grid-cols-2">
         <div className="flex flex-col items-start">
           <h1 className="m-0 text-[38px] leading-[44px] tracking-[-0.01em] m:text-[56px] m:leading-[62px]">
-            Hoe goed ken jij
+            {t('landing.hero.titleA')}
             <br />
-            de Bijbel?
+            {t('landing.hero.titleB')}
           </h1>
           <p className="mt-[18px] max-w-[500px] text-[19px] font-semibold leading-[29px] text-ink-soft">
-            Korte quizzen over alle bijbelboeken, met uitleg bij elk antwoord. Speel alleen, of samen met je gezin,
-            vrienden of groep.
+            {t('landing.hero.lead')}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-x-[18px] gap-y-3.5">
             {/* Straight to the quizzes: a visitor who came to play should not
                 meet a registration form first. An account is offered on the
                 result screen, where there is a score to keep. */}
             <Button href="/quizzen" size="hero" className="rounded-[12px] px-[34px]">
-              Gratis beginnen
+              {t('landing.hero.cta')}
             </Button>
             <span className="flex items-center gap-[7px] text-sm font-bold text-ink-muted">
-              <ShieldCheckIcon size={16} strokeWidth={2.4} className="text-green" />3 quizzen gratis, zonder account
+              <ShieldCheckIcon size={16} strokeWidth={2.4} className="text-green" />{t('landing.hero.noAccount')}
             </span>
           </div>
           <div className="mt-8 flex max-w-[500px] flex-col gap-3 self-stretch border-t border-line pt-6">
-            <span className="text-sm font-bold text-ink-muted">Of speel in de app</span>
+            <span className="text-sm font-bold text-ink-muted">{t('landing.hero.orApp')}</span>
             <StoreBadges size="lg" className="gap-3" />
           </div>
         </div>
@@ -149,12 +150,12 @@ function ModeCard({ panel, tint, title, text }: { panel: React.ReactNode; tint: 
 function HowItWorks() {
   return (
     <Container as="section" className="pt-12 m:pt-[72px]">
-      <SectionHead title="Zo werkt BijbelQuiz" subtitle="Alleen of samen, met dezelfde korte quizzen." />
+      <SectionHead title={t('landing.how.title', { brand: getSiteConfig().brand })} subtitle={t('landing.how.subtitle')} />
       <div className="mt-7 grid grid-cols-1 gap-5 m:grid-cols-2">
         <ModeCard
           tint="bg-lapis-tint"
-          title="Speel een quiz"
-          text="Tien vragen over een bijbelgedeelte. Na elk antwoord lees je de uitleg en de bijbeltekst erbij."
+          title={t('landing.how.playTitle')}
+          text={t('landing.how.playText')}
           panel={
             <span className="flex w-full max-w-[290px] flex-col gap-2.5 rounded-[14px] border border-line border-t-4 border-t-green bg-card px-4 py-3.5">
               <span className="flex items-center justify-between">
@@ -162,7 +163,7 @@ function HowItWorks() {
                   <span className="flex size-[26px] shrink-0 items-center justify-center rounded-full bg-green text-white">
                     <CheckIcon size={14} />
                   </span>
-                  Goed!
+                  {t('landing.hero.good')}
                 </span>
                 <span className="flex items-center gap-1 rounded-full bg-gold-tint px-2.5 py-1 text-xs font-extrabold text-gold-text">
                   <BoltIcon size={13} />
@@ -170,22 +171,22 @@ function HowItWorks() {
                 </span>
               </span>
               <span className="text-[13px] font-semibold leading-[19px] text-ink-soft">
-                Noach maakte de ark van goferhout, zoals God hem had opgedragen.
+                {t('landing.how.sampleExplanation')}
               </span>
               <span className="flex h-7 items-center gap-1.5 self-start whitespace-nowrap rounded-full bg-lapis-tint px-3 text-xs font-extrabold text-lapis">
                 <BookIcon size={14} strokeWidth={2.4} />
-                Lees Genesis 6:14
+                {t('landing.how.sampleRead')}
               </span>
             </span>
           }
         />
         <ModeCard
           tint="bg-green-tint"
-          title="Speel samen"
-          text="Start een kamer en deel de code. Tot 20 spelers doen mee, ieder op een eigen telefoon."
+          title={t('landing.how.togetherTitle')}
+          text={t('landing.how.togetherText')}
           panel={
             <span className="flex w-full max-w-[290px] flex-col gap-2.5 rounded-[14px] border border-line bg-card px-4 pb-4 pt-3.5">
-              <span className="text-xs font-extrabold text-ink-muted">Kamercode</span>
+              <span className="text-xs font-extrabold text-ink-muted">{t('landing.how.roomCode')}</span>
               <span className="grid grid-cols-6 gap-1.5">
                 {'K7P2QM'.split('').map((char) => (
                   <span
@@ -198,7 +199,7 @@ function HowItWorks() {
               </span>
               <span className="flex items-center gap-[7px] text-[13px] font-bold text-ink-soft">
                 <PeopleIcon size={16} strokeWidth={2.4} className="text-green" />
-                14 spelers doen mee
+                {t('landing.how.playersJoin')}
               </span>
             </span>
           }
@@ -248,8 +249,8 @@ function TestamentBlock({ data }: { data: LandingTestament }) {
           {isOld ? <OldTestamentArt /> : <NewTestamentArt />}
         </span>
         <span className="flex flex-col">
-          <h3 className="m-0 font-sans text-[17px] font-extrabold">{isOld ? 'Oude Testament' : 'Nieuwe Testament'}</h3>
-          <span className="text-sm font-semibold text-ink-muted">{data.totalBooks} boeken</span>
+          <h3 className="m-0 font-sans text-[17px] font-extrabold">{isOld ? t('landing.books.oldTestament') : t('landing.books.newTestament')}</h3>
+          <span className="text-sm font-semibold text-ink-muted">{t('landing.books.bookCount', { count: data.totalBooks })}</span>
         </span>
       </div>
       <ul className="m-0 flex list-none flex-wrap gap-2 p-0">
@@ -269,7 +270,7 @@ function TestamentBlock({ data }: { data: LandingTestament }) {
               href="/quizzen"
               className="inline-flex h-[34px] items-center whitespace-nowrap rounded-full bg-lapis-tint px-3 text-sm font-extrabold no-underline"
             >
-              + {more} meer
+              {t('landing.books.more', { count: more })}
             </Link>
           </li>
         )}
@@ -284,10 +285,12 @@ function QuizzesSection({ data }: { data: LandingData }) {
     <Container as="section" className={sectionTop}>
       <div className="flex flex-col items-start justify-between gap-4 m:flex-row m:items-end">
         <SectionHead
-          title="Quizzen over elk bijbelboek"
-          subtitle={`${data.quizCount ? `${data.quizCount} quizzen` : 'Quizzen'} over het Oude en Nieuwe Testament, per bijbelboek en per thema. De vragen gaan uit van de Statenvertaling.`}
+          title={t('landing.books.title')}
+          subtitle={t('landing.books.subtitle', {
+            quizzes: data.quizCount ? t('landing.books.countQuizzes', { count: data.quizCount }) : t('landing.books.noCountQuizzes'),
+          })}
         />
-        <ArrowLink href="/quizzen">Alle quizzen</ArrowLink>
+        <ArrowLink href="/quizzen">{t('landing.books.all')}</ArrowLink>
       </div>
       {data.featured.length > 0 && (
         <div className="mt-7 grid grid-cols-2 gap-5 m:grid-cols-4">
@@ -319,17 +322,19 @@ function QuizzesSection({ data }: { data: LandingData }) {
 /* ── Samen spelen ────────────────────────────────────────────────────────── */
 
 const GROUP_STEPS = [
-  { title: 'Start een kamer', text: 'Kies een quiz en open de kamer op je telefoon of laptop.' },
-  { title: 'Deel de code', text: 'Lees de code van 6 tekens voor of zet hem op het scherm.' },
-  { title: 'Speel tegelijk', text: 'Iedereen beantwoordt dezelfde vraag. De stand is live te zien.' },
+  { title: t('landing.group.step1Title'), text: t('landing.group.step1Text') },
+  { title: t('landing.group.step2Title'), text: t('landing.group.step2Text') },
+  { title: t('landing.group.step3Title'), text: t('landing.group.step3Text') },
 ];
 
+const ROOM_NAMES = tList('landing.group.names');
+
 const ROOM_EXAMPLE = [
-  { name: 'Lotte', score: 840, tone: 'coral' as const },
-  { name: 'Daan', score: 790, tone: 'green' as const },
-  { name: 'Alex', score: 760, tone: 'solid' as const, me: true },
-  { name: 'Noor', score: 720, tone: 'gold' as const },
-  { name: 'Ruben', score: 650, tone: 'lapis' as const },
+  { name: ROOM_NAMES[0], score: 840, tone: 'coral' as const },
+  { name: ROOM_NAMES[1], score: 790, tone: 'green' as const },
+  { name: ROOM_NAMES[2], score: 760, tone: 'solid' as const, me: true },
+  { name: ROOM_NAMES[3], score: 720, tone: 'gold' as const },
+  { name: ROOM_NAMES[4], score: 650, tone: 'lapis' as const },
 ];
 
 function GroupSection() {
@@ -338,8 +343,8 @@ function GroupSection() {
       <div className="grid grid-cols-1 items-center gap-14 m:grid-cols-2">
         <div className="flex flex-col gap-6">
           <SectionHead
-            title="Samen spelen met je groep"
-            subtitle="Voor het gezin, de jeugdvereniging, catechisatie of de klas. Eén persoon start een kamer, de rest doet mee met de code."
+            title={t('landing.group.title')}
+            subtitle={t('landing.group.subtitle')}
           />
           <ol className="m-0 flex list-none flex-col gap-[18px] p-0">
             {GROUP_STEPS.map((step, index) => (
@@ -356,27 +361,27 @@ function GroupSection() {
           </ol>
           <div className="mt-1 flex flex-wrap items-center gap-x-6 gap-y-3.5">
             <Button href="/samen-spelen" size="xl" className="px-6">
-              Start een kamer
+              {t('landing.group.start')}
             </Button>
             <ArrowLink href="/groepslicentie" className="whitespace-normal">
-              Groepslicentie voor kerken en scholen
+              {t('landing.group.license')}
             </ArrowLink>
           </div>
         </div>
 
         <div
           role="img"
-          aria-label="Voorbeeld van een kamer met code K7P2QM: 14 spelers, vraag 6 van 10, Lotte staat eerste"
+          aria-label={t('landing.group.roomAlt')}
           className="min-w-0 overflow-hidden rounded-[16px] border border-line bg-card"
         >
           <div className="flex items-center justify-between gap-3 border-b border-line-soft px-5 py-[18px]">
             <span className="flex flex-col gap-0.5">
-              <span className="text-xs font-extrabold text-ink-muted">Kamer</span>
+              <span className="text-xs font-extrabold text-ink-muted">{t('landing.group.room')}</span>
               <span className="font-display text-2xl font-semibold leading-7 tracking-[0.1em]">K7P2QM</span>
             </span>
             <span className="flex h-8 items-center gap-1.5 whitespace-nowrap rounded-full bg-green-tint px-3 text-[13px] font-extrabold text-green-text">
               <PeopleIcon size={15} strokeWidth={2.4} className="text-green" />
-              14 spelers
+              {t('landing.group.players')}
             </span>
           </div>
           <div className="flex items-center gap-3 border-b border-line-soft px-5 py-3.5">
@@ -385,9 +390,9 @@ function GroupSection() {
                 <span key={index} className={cn('h-1.5 rounded-[3px]', index < 6 ? 'bg-lapis' : 'bg-segment')} />
               ))}
             </span>
-            <span className="whitespace-nowrap text-[13px] font-extrabold text-ink-soft">Vraag 6 van 10</span>
+            <span className="whitespace-nowrap text-[13px] font-extrabold text-ink-soft">{t('landing.group.questionOf')}</span>
           </div>
-          <div className="px-5 pb-1 pt-3.5 text-xs font-extrabold text-ink-muted">Stand</div>
+          <div className="px-5 pb-1 pt-3.5 text-xs font-extrabold text-ink-muted">{t('landing.group.standings')}</div>
           <ol className="m-0 list-none p-0">
             {ROOM_EXAMPLE.map((player, index) => (
               <li
@@ -401,7 +406,7 @@ function GroupSection() {
               </li>
             ))}
           </ol>
-          <div className="border-t border-line-soft px-5 pb-3.5 pt-3 text-[13px] font-bold text-ink-muted">en 9 andere spelers</div>
+          <div className="border-t border-line-soft px-5 pb-3.5 pt-3 text-[13px] font-bold text-ink-muted">{t('landing.group.others')}</div>
         </div>
       </div>
     </Container>
@@ -410,12 +415,15 @@ function GroupSection() {
 
 /* ── Premium ─────────────────────────────────────────────────────────────── */
 
-const PREMIUM_BENEFITS = ['Alle quizzen, zo vaak je wilt', 'Uitleg bij elk antwoord', 'Je antwoorden terugkijken na elke quiz'];
+const PREMIUM_BENEFITS = tList('landing.premium.benefits');
+
+const LOCK_ABBRS = tList('landing.premium.abbrs');
+const LOCK_TITLES = tList('landing.premium.bookTitles');
 
 const LOCK_EXAMPLE = [
-  { abbr: 'Gen', title: 'Genesis', testament: 'Oude Testament', tone: 'bg-green-tint text-green', free: true },
-  { abbr: 'Ps', title: 'Psalmen', testament: 'Oude Testament', tone: 'bg-lapis-tint text-lapis', free: false },
-  { abbr: 'Opb', title: 'Openbaring', testament: 'Nieuwe Testament', tone: 'bg-coral-tint text-coral-text', free: false },
+  { abbr: LOCK_ABBRS[0], title: LOCK_TITLES[0], testament: t('landing.books.oldTestament'), tone: 'bg-green-tint text-green', free: true },
+  { abbr: LOCK_ABBRS[1], title: LOCK_TITLES[1], testament: t('landing.books.oldTestament'), tone: 'bg-lapis-tint text-lapis', free: false },
+  { abbr: LOCK_ABBRS[2], title: LOCK_TITLES[2], testament: t('landing.books.newTestament'), tone: 'bg-coral-tint text-coral-text', free: false },
 ];
 
 function PremiumSection() {
@@ -424,8 +432,8 @@ function PremiumSection() {
       <div className="grid grid-cols-1 items-center gap-10 rounded-[16px] border border-line bg-card p-5 m:grid-cols-2 m:px-12 m:py-10">
         <div className="flex flex-col items-start gap-[22px]">
           <SectionHead
-            title="Speel onbeperkt met Premium"
-            subtitle="Je eerste 3 quizzen zijn gratis. Met Premium speel je alles, zo vaak je wilt."
+            title={t('landing.premium.title')}
+            subtitle={t('landing.premium.subtitle')}
           />
           <ul className="m-0 flex list-none flex-col gap-3 p-0">
             {PREMIUM_BENEFITS.map((benefit) => (
@@ -443,20 +451,20 @@ function PremiumSection() {
                 'border-b-lapis-pale bg-lapis-tint px-[22px] text-lapis-edge hover:bg-lapis-wash hover:text-lapis-edge',
               )}
             >
-              Bekijk Premium
+              {t('landing.premium.view')}
             </Link>
-            <span className="text-sm font-bold text-ink-muted">7 dagen gratis proberen</span>
+            <span className="text-sm font-bold text-ink-muted">{t('landing.premium.trial')}</span>
           </div>
         </div>
 
         <div
           role="img"
-          aria-label="Gratis speel je 3 quizzen. Met Premium gaan alle bijbelboeken open, ook Psalmen en Openbaring."
+          aria-label={t('landing.premium.alt')}
           className="relative box-border flex min-w-0 justify-center pb-10 pt-7"
         >
           <span aria-hidden="true" className="absolute left-1/2 top-0 aspect-square w-[300px] max-w-full -translate-x-1/2 rounded-full bg-lapis-wash" />
           <span className="relative flex w-[320px] max-w-[92%] -rotate-2 flex-col rounded-[16px] border border-line bg-card px-4 pb-1.5 pt-3 shadow-float">
-            <span className="pb-0.5 text-xs font-extrabold text-ink-muted">Quizzen</span>
+            <span className="pb-0.5 text-xs font-extrabold text-ink-muted">{t('landing.premium.quizzes')}</span>
             {LOCK_EXAMPLE.map((row) => (
               <span key={row.title} className="flex items-center gap-3 border-b border-line-soft py-2.5 last:border-b-0">
                 <span className={cn('flex size-9 shrink-0 items-center justify-center rounded-[10px] text-xs font-extrabold', row.tone)}>{row.abbr}</span>
@@ -465,11 +473,11 @@ function PremiumSection() {
                   <span className="text-xs font-semibold text-ink-muted">{row.testament}</span>
                 </span>
                 {row.free ? (
-                  <span className="flex h-6 items-center rounded-full bg-green-tint px-[9px] text-xs font-extrabold text-green">Gratis</span>
+                  <span className="flex h-6 items-center rounded-full bg-green-tint px-[9px] text-xs font-extrabold text-green">{t('landing.premium.free')}</span>
                 ) : (
                   <span className="flex h-6 items-center gap-1 rounded-full bg-gold-tint px-[9px] text-xs font-extrabold text-gold-text">
                     <LockIcon size={13} className="text-ink-faint" />
-                    Premium
+                    {t('bq.premiumLock.button')}
                   </span>
                 )}
               </span>
@@ -477,7 +485,7 @@ function PremiumSection() {
           </span>
           <span className="absolute bottom-2 right-[8%] flex h-10 rotate-3 items-center gap-1.5 whitespace-nowrap rounded-full bg-gold px-3.5 text-sm font-extrabold text-gold-ink shadow-float">
             <CrownIcon size={16} className="fill-white text-gold-ink" />
-            Met Premium alles open
+            {t('landing.premium.badge')}
           </span>
         </div>
       </div>
@@ -487,40 +495,20 @@ function PremiumSection() {
 
 /* ── FAQ ─────────────────────────────────────────────────────────────────── */
 
-export const LANDING_FAQ: (FaqItem & { text: string })[] = [
-  {
-    question: 'Is BijbelQuiz gratis?',
-    text: 'Je speelt 3 quizzen gratis, zonder account. Daarna kun je Premium 7 dagen gratis proberen. Samen spelen met je gezin of vrienden is altijd gratis.',
-  },
-  {
-    question: 'Heb ik een account nodig?',
-    text: 'Niet om te beginnen. Met een account bewaar je je XP en je reeks. Inloggen kan met Google, Apple of je e-mailadres.',
-  },
-  {
-    question: 'Welke bijbelvertaling gebruiken jullie?',
-    text: 'De vragen gaan uit van de Statenvertaling. Bij elk antwoord staat de bijbelverwijzing, zodat je het zelf kunt nalezen.',
-  },
-  {
-    question: 'Werkt het op mijn telefoon?',
-    text: 'Ja. Je speelt in de browser op elk apparaat, of in de app voor iPhone en Android.',
-  },
-  {
-    question: 'Kan ik spelen met mijn klas of jeugdgroep?',
-    text: 'Ja. Met samen spelen doen tot 20 spelers mee met één code. Voor kerken, scholen en jeugdgroepen is er een groepslicentie.',
-  },
-  {
-    question: 'Hoe zeg ik Premium op?',
-    text: 'Wanneer je wilt, via Profiel en dan Premium. Je houdt Premium tot het einde van de periode die je al betaald hebt.',
-  },
-].map((item) => ({ ...item, answer: item.text }));
+const FAQ_IDS = ['free', 'account', 'translation', 'phone', 'class', 'cancel'] as const;
+
+export const LANDING_FAQ: (FaqItem & { text: string })[] = FAQ_IDS.map((id) => {
+  const text = t(`landing.faq.${id}.a`);
+  return { question: t(`landing.faq.${id}.q`, { brand: getSiteConfig().brand }), text, answer: text };
+});
 
 function FaqSection() {
   return (
     <Container as="section" className={sectionTop}>
       <div className="grid grid-cols-1 items-start gap-x-14 gap-y-8 m:grid-cols-[minmax(0,1fr)_minmax(0,1.75fr)]">
         <div className="flex flex-col items-start gap-4">
-          <SectionHead title="Veelgestelde vragen" subtitle="Staat je vraag er niet bij? In de hulp vind je meer antwoorden." />
-          <ArrowLink href="/hulp">Naar de hulp</ArrowLink>
+          <SectionHead title={t('landing.faq.title')} subtitle={t('landing.faq.subtitle')} />
+          <ArrowLink href="/hulp">{t('landing.faq.toHelp')}</ArrowLink>
         </div>
         <FaqList items={LANDING_FAQ} />
       </div>
@@ -567,17 +555,17 @@ function ClosingBand() {
           <path d="M2 5c3-1 6-1 10 1 4-2 7-2 10-1v14c-3-1-6-1-10 1-4-2-7-2-10-1z" />
           <path d="M12 6v14" />
         </svg>
-        <h2 className="relative m-0 text-[32px] leading-[38px] text-white m:text-4xl m:leading-[42px]">Klaar voor je eerste quiz?</h2>
+        <h2 className="relative m-0 text-[32px] leading-[38px] text-white m:text-4xl m:leading-[42px]">{t('landing.closing.title')}</h2>
         <p className="relative mt-3 max-w-[600px] text-[17px] font-semibold leading-[26px] text-lapis-pale-strong">
-          Speel direct in je browser of download de app. Je eerste 3 quizzen zijn gratis.
+          {t('landing.closing.text')}
         </p>
         <div className="relative mt-7 flex flex-wrap items-center justify-center gap-3">
           <Button href="/quizzen" variant="inverse" size="xl" className="px-[30px]">
-            Gratis beginnen
+            {t('landing.hero.cta')}
           </Button>
           <OutlineStoreBadge
             href={APP_STORE_URL}
-            eyebrow="Download in de"
+            eyebrow={t('bq.stores.appStoreEyebrow')}
             label="App Store"
             icon={
               <svg width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -589,7 +577,7 @@ function ClosingBand() {
           {GOOGLE_PLAY_URL && (
             <OutlineStoreBadge
               href={GOOGLE_PLAY_URL}
-              eyebrow="Ontdek het op"
+              eyebrow={t('bq.stores.googlePlayEyebrow')}
               label="Google Play"
               icon={
                 <svg width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -600,11 +588,14 @@ function ClosingBand() {
           )}
         </div>
       </div>
-      <p className="mt-5 text-center text-[15px] font-semibold leading-[22px] text-ink-muted">
-        Na een quiz verder lezen?{' '}
-        <StudieLink passage={null} surface="landing_cta" label="BijbelStudie" icon={false} variant="primary" className="font-extrabold no-underline" />{' '}
-        geeft het hoofdstuk erbij, van hetzelfde team.
-      </p>
+      {/* BijbelStudie is the Dutch sister product; the international site has no equivalent yet. */}
+      {isNlSite() && (
+        <p className="mt-5 text-center text-[15px] font-semibold leading-[22px] text-ink-muted">
+          {t('landing.closing.readMore')}{' '}
+          <StudieLink passage={null} surface="landing_cta" label="BijbelStudie" icon={false} variant="primary" className="font-extrabold no-underline" />{' '}
+          {t('landing.closing.readMoreAfter')}
+        </p>
+      )}
     </Container>
   );
 }

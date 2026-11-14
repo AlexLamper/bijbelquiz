@@ -51,7 +51,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [ ] Extract strings, in batches per folder (commit + SEO check after each):
   - [x] `src/app/layout.tsx`, metadata, JSON-LD, `sitemap.ts` (use `getSiteConfig()`)
   - [x] `src/components/bq/` (shared design components; admin components stay Dutch)
-  - [ ] `src/components/web2/marketing/` (landing, help, legal)
+  - [x] `src/components/web2/marketing/` (landing, help, legal UI; legal page bodies come with the page.tsx batch)
   - [ ] `src/components/web2/browsing/`, `quiz-play/`, `quiz-result/`
   - [ ] `src/components/web2/samen/`, `premium/`, `account/`
   - [ ] `src/app/**/page.tsx` (page metadata)

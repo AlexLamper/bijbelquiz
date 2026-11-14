@@ -2,6 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 
 import { Container } from '@/components/bq';
+import { t } from '@/i18n';
 import { cn } from '@/lib/utils';
 import { LegalToc } from './LegalToc';
 
@@ -17,8 +18,8 @@ export interface LegalSection {
 }
 
 const TABS = [
-  { key: 'privacy', label: 'Privacybeleid', href: '/privacybeleid' },
-  { key: 'voorwaarden', label: 'Voorwaarden', href: '/voorwaarden' },
+  { key: 'privacy', label: t('legal.privacy'), href: '/privacybeleid' },
+  { key: 'voorwaarden', label: t('legal.terms'), href: '/voorwaarden' },
 ] as const;
 
 export function LegalPage({
@@ -35,7 +36,7 @@ export function LegalPage({
   return (
     <Container className="flex flex-col gap-8 pb-12 pt-6 m:pb-[88px] m:pt-10">
       <div className="flex flex-col items-start gap-5">
-        <nav aria-label="Juridische documenten" className="flex gap-1 rounded-[12px] border border-line bg-card p-1">
+        <nav aria-label={t('legal.tabsLabel')} className="flex gap-1 rounded-[12px] border border-line bg-card p-1">
           {TABS.map((tab) => {
             const current = tab.key === active;
             return (

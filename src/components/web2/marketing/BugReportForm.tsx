@@ -3,6 +3,8 @@
 import * as React from 'react';
 
 import { Button, Field, Input, Textarea } from '@/components/bq';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 import { CheckIcon } from './icons';
 import { Honeypot, postSupportForm, type SubmitState } from './Honeypot';
 
@@ -55,9 +57,9 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const found: Errors = {};
-    if (message.trim().length < 10) found.message = 'Schrijf iets meer, minstens 10 tekens.';
+    if (message.trim().length < 10) found.message = t('bugForm.errMessage');
     if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
-      found.email = 'Vul een geldig e-mailadres in, of laat het leeg.';
+      found.email = t('bugForm.errEmail');
     }
     setErrors(found);
     if (Object.keys(found).length > 0) {
@@ -68,12 +70,12 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
     setState({ status: 'sending' });
     const { ok, data } = await postSupportForm('/api/bug-reports', { message, pageUrl, email, website });
     if (ok) {
-      setState({ status: 'sent', message: data.message || 'Bedankt. Je melding is doorgestuurd.' });
+      setState({ status: 'sent', message: data.message || t('bugForm.sentDefault') });
       requestAnimationFrame(() => doneRef.current?.focus());
       return;
     }
     if (data.errors) setErrors(data.errors as Errors);
-    setState({ status: 'error', message: data.message || 'Er ging iets mis bij het versturen. Probeer het opnieuw.' });
+    setState({ status: 'error', message: data.message || t('bugForm.errDefault') });
   };
 
   if (state.status === 'sent') {
@@ -86,7 +88,7 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
           {state.message}
         </p>
         <p className="m-0 text-base font-semibold leading-6 text-ink-soft">
-          {email.trim() ? 'We laten het je weten als we meer willen weten of als het is opgelost.' : 'We gaan ermee aan de slag.'}
+          {email.trim() ? t('bugForm.sentWithEmail') : t('bugForm.sentNoEmail')}
         </p>
         <Button
           variant="secondary"
@@ -96,7 +98,7 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
             setState({ status: 'idle' });
           }}
         >
-          Nog iets melden
+          {t('bugForm.another')}
         </Button>
       </div>
     );
@@ -104,13 +106,13 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
 
   return (
     <form noValidate onSubmit={onSubmit} aria-labelledby="report-title" className="relative flex min-w-0 flex-col gap-4">
-      <Field label="Wat ging er mis?" htmlFor="bug-msg" error={errors.message}>
+      <Field label={t('bugForm.what')} htmlFor="bug-msg" error={errors.message}>
         <Textarea
           id="bug-msg"
           name="message"
           rows={4}
           maxLength={4000}
-          placeholder="Bijvoorbeeld: ik klikte op een quiz over Genesis en kwam op deze pagina."
+          placeholder={t('bugForm.whatPlaceholder')}
           value={message}
           invalid={Boolean(errors.message)}
           onChange={(event) => setMessage(event.target.value)}
@@ -118,14 +120,14 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
         />
       </Field>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
-        <Field label="Pagina" htmlFor="bug-url" error={errors.pageUrl}>
+        <Field label={t('bugForm.page')} htmlFor="bug-url" error={errors.pageUrl}>
           <Input
             id="bug-url"
             name="pageUrl"
             type="text"
             inputMode="url"
             maxLength={500}
-            placeholder="bijbelquiz.com/..."
+            placeholder={`${new URL(getSiteConfig().baseUrl).host.replace(/^www\./, '')}/...`}
             value={pageUrl}
             onChange={(event) => setPageUrl(event.target.value)}
           />
@@ -133,7 +135,7 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
         <Field
           label={
             <>
-              E-mailadres <span className="font-semibold text-ink-muted">(niet verplicht)</span>
+              {t('bugForm.email')} <span className="font-semibold text-ink-muted">{t('bugForm.optional')}</span>
             </>
           }
           htmlFor="bug-email"
@@ -146,7 +148,7 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
             autoComplete="email"
             inputMode="email"
             maxLength={190}
-            placeholder="Als je antwoord wilt"
+            placeholder={t('bugForm.emailPlaceholder')}
             value={email}
             invalid={Boolean(errors.email)}
             onChange={(event) => setEmail(event.target.value)}
@@ -163,7 +165,7 @@ export function BugReportForm({ pageSource = 'current' }: { pageSource?: 'curren
       )}
 
       <Button type="submit" variant="secondary" size="xl" loading={state.status === 'sending'} className="self-start px-6">
-        Verstuur melding
+        {t('bugForm.submit')}
       </Button>
     </form>
   );

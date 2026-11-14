@@ -3,6 +3,8 @@
 import * as React from 'react';
 import Link from 'next/link';
 
+import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 import { cn } from '@/lib/utils';
 import { FaqList } from './FaqList';
 import { HELP_QUESTIONS, POPULAR_SEARCHES, type HelpTopic } from './help-content';
@@ -19,11 +21,11 @@ import {
 } from './icons';
 
 const TOPICS: { id: HelpTopic; title: string; text: string; tone: TileTone; icon: React.ReactNode }[] = [
-  { id: 'start', title: 'Aan de slag', text: 'Een account maken, inloggen en je eerste quiz', tone: 'grey', icon: <PlayIcon /> },
-  { id: 'quizzen', title: 'Quizzen en uitleg', text: 'Quizzen spelen, uitleg en bijbelverwijzingen', tone: 'lapis', icon: <BookIcon /> },
-  { id: 'samen', title: 'Samen spelen', text: 'Een kamer starten en meedoen met een code', tone: 'green', icon: <PeopleIcon /> },
-  { id: 'premium', title: 'Premium en betalen', text: 'Proefperiode, opzeggen en de groepslicentie', tone: 'gold', icon: <CrownIcon /> },
-  { id: 'account', title: 'Account en privacy', text: 'Je gegevens en je account verwijderen', tone: 'grey', icon: <ShieldCheckIcon /> },
+  { id: 'start', title: t('help.topic.start.title'), text: t('help.topic.start.text'), tone: 'grey', icon: <PlayIcon /> },
+  { id: 'quizzen', title: t('help.topic.quizzen.title'), text: t('help.topic.quizzen.text'), tone: 'lapis', icon: <BookIcon /> },
+  { id: 'samen', title: t('help.topic.samen.title'), text: t('help.topic.samen.text'), tone: 'green', icon: <PeopleIcon /> },
+  { id: 'premium', title: t('help.topic.premium.title'), text: t('help.topic.premium.text'), tone: 'gold', icon: <CrownIcon /> },
+  { id: 'account', title: t('help.topic.account.title'), text: t('help.topic.account.text'), tone: 'grey', icon: <ShieldCheckIcon /> },
 ];
 
 /** Lower case without accents, so "verifieren" finds "verifiëren". */
@@ -72,12 +74,14 @@ export function HelpCenter() {
       : HELP_QUESTIONS.filter((item) => item.featured);
 
   const activeTopic = TOPICS.find((entry) => entry.id === topic) ?? null;
-  const heading = term ? 'Zoekresultaten' : activeTopic ? activeTopic.title : 'Veelgestelde vragen';
+  const heading = term ? t('help.results') : activeTopic ? activeTopic.title : t('help.faqTitle');
   const subtitle = term
-    ? `${items.length === 1 ? '1 antwoord' : `${items.length} antwoorden`} voor "${query.trim()}".`
+    ? items.length === 1
+      ? t('help.resultsOne', { query: query.trim() })
+      : t('help.resultsMany', { count: items.length, query: query.trim() })
     : activeTopic
       ? activeTopic.text + '.'
-      : 'De vragen die we het vaakst krijgen.';
+      : t('help.faqSubtitle');
 
   const showFaq = () => faqRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -85,7 +89,7 @@ export function HelpCenter() {
     <>
       <section className="mx-auto w-full max-w-[1200px] px-4 pt-16 m:px-8">
         <div className="mx-auto flex max-w-[680px] flex-col items-center text-center">
-          <h1 className="m-0 text-[32px] leading-[38px] m:text-[40px] m:leading-[48px]">Waar kunnen we je mee helpen?</h1>
+          <h1 className="m-0 text-[32px] leading-[38px] m:text-[40px] m:leading-[48px]">{t('help.title')}</h1>
           <form
             role="search"
             className="mt-6 w-full"
@@ -96,18 +100,18 @@ export function HelpCenter() {
           >
             <label className="flex h-[60px] items-center gap-3 rounded-[14px] border border-line bg-card px-[18px] text-left focus-within:border-lapis focus-within:ring-2 focus-within:ring-lapis/25">
               <SearchIcon className="shrink-0 text-ink-faint" />
-              <span className="sr-only">Zoek in de hulp</span>
+              <span className="sr-only">{t('help.searchLabel')}</span>
               <input
                 type="search"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
-                placeholder="Zoek in de hulp"
+                placeholder={t('help.searchPlaceholder')}
                 className="h-14 min-w-0 flex-1 border-0 bg-transparent p-0 text-[17px] font-semibold text-ink outline-none placeholder:text-ink-muted focus-visible:outline-none"
               />
             </label>
           </form>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-            <span className="mr-0.5 text-sm font-bold text-ink-muted">Veel gezocht:</span>
+            <span className="mr-0.5 text-sm font-bold text-ink-muted">{t('help.popular')}</span>
             {POPULAR_SEARCHES.map((chip) => (
               <a
                 key={chip.id}
@@ -130,7 +134,7 @@ export function HelpCenter() {
 
       <section aria-labelledby="topics-title" className="mx-auto w-full max-w-[1200px] px-4 pt-12 m:px-8 m:pt-14">
         <h2 id="topics-title" className="m-0 font-sans text-[13px] font-extrabold uppercase tracking-[0.04em] text-ink-muted">
-          Onderwerpen
+          {t('help.topics')}
         </h2>
         <ul className="m-0 mt-3.5 grid list-none grid-cols-1 gap-4 p-0 m:grid-cols-3">
           {TOPICS.map((entry) => {
@@ -188,7 +192,7 @@ export function HelpCenter() {
                 }}
                 className="mt-1 flex min-h-8 items-center gap-1 text-base font-extrabold text-lapis hover:text-lapis-edge"
               >
-                Alle veelgestelde vragen
+                {t('help.allFaq')}
                 <ChevronRightIcon size={18} strokeWidth={2.6} />
               </button>
             )}
@@ -197,8 +201,13 @@ export function HelpCenter() {
             <FaqList key={`${term}|${topic ?? ''}`} items={items} openFirst={!term} />
           ) : (
             <div className="rounded-[16px] border border-line bg-card px-[22px] py-6 text-base font-semibold leading-[25px] text-ink-soft">
-              Daar hebben we nog geen antwoord op. <Link href="/contact" className="font-extrabold no-underline">Stel je vraag</Link>,
-              dan helpen we je verder.
+              {rich(t('help.noAnswer'), {
+                link: (
+                  <Link href="/contact" className="font-extrabold no-underline">
+                    {t('help.askQuestion')}
+                  </Link>
+                ),
+              })}
             </div>
           )}
         </div>

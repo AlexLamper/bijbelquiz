@@ -159,5 +159,314 @@
       "answers": "Antwoorden",
       "breadcrumbs": "Kruimelpad"
     }
+  },
+  "landing": {
+    "hero": {
+      "visualAlt": "Voorbeeld: een quizvraag over Johannes 6 met het goede antwoord en uitleg, een kamer met 6 spelers, verdiende XP en een reeks van 6 dagen",
+      "ref": "JOHANNES 6",
+      "question": "Hoeveel broden had de jongen bij zich?",
+      "answers": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "correct": "5",
+      "good": "Goed!",
+      "explanation": "Andreas wees Jezus op een jongen met vijf gerstebroden en twee vissen.",
+      "readRef": "Lees Johannes 6:9",
+      "playersInRoom": "spelers in de kamer",
+      "titleA": "Hoe goed ken jij",
+      "titleB": "de Bijbel?",
+      "lead": "Korte quizzen over alle bijbelboeken, met uitleg bij elk antwoord. Speel alleen, of samen met je gezin, vrienden of groep.",
+      "cta": "Gratis beginnen",
+      "noAccount": "3 quizzen gratis, zonder account",
+      "orApp": "Of speel in de app"
+    },
+    "how": {
+      "title": "Zo werkt {brand}",
+      "subtitle": "Alleen of samen, met dezelfde korte quizzen.",
+      "playTitle": "Speel een quiz",
+      "playText": "Tien vragen over een bijbelgedeelte. Na elk antwoord lees je de uitleg en de bijbeltekst erbij.",
+      "sampleExplanation": "Noach maakte de ark van goferhout, zoals God hem had opgedragen.",
+      "sampleRead": "Lees Genesis 6:14",
+      "togetherTitle": "Speel samen",
+      "togetherText": "Start een kamer en deel de code. Tot 20 spelers doen mee, ieder op een eigen telefoon.",
+      "roomCode": "Kamercode",
+      "playersJoin": "14 spelers doen mee"
+    },
+    "books": {
+      "title": "Quizzen over elk bijbelboek",
+      "countQuizzes": "{count} quizzen",
+      "noCountQuizzes": "Quizzen",
+      "subtitle": "{quizzes} over het Oude en Nieuwe Testament, per bijbelboek en per thema. De vragen gaan uit van de Statenvertaling.",
+      "all": "Alle quizzen",
+      "oldTestament": "Oude Testament",
+      "newTestament": "Nieuwe Testament",
+      "bookCount": "{count} boeken",
+      "more": "+ {count} meer"
+    },
+    "group": {
+      "title": "Samen spelen met je groep",
+      "subtitle": "Voor het gezin, de jeugdvereniging, catechisatie of de klas. Eén persoon start een kamer, de rest doet mee met de code.",
+      "step1Title": "Start een kamer",
+      "step1Text": "Kies een quiz en open de kamer op je telefoon of laptop.",
+      "step2Title": "Deel de code",
+      "step2Text": "Lees de code van 6 tekens voor of zet hem op het scherm.",
+      "step3Title": "Speel tegelijk",
+      "step3Text": "Iedereen beantwoordt dezelfde vraag. De stand is live te zien.",
+      "start": "Start een kamer",
+      "license": "Groepslicentie voor kerken en scholen",
+      "roomAlt": "Voorbeeld van een kamer met code K7P2QM: 14 spelers, vraag 6 van 10, Lotte staat eerste",
+      "room": "Kamer",
+      "players": "14 spelers",
+      "questionOf": "Vraag 6 van 10",
+      "standings": "Stand",
+      "others": "en 9 andere spelers",
+      "names": [
+        "Lotte",
+        "Daan",
+        "Alex",
+        "Noor",
+        "Ruben"
+      ]
+    },
+    "premium": {
+      "title": "Speel onbeperkt met Premium",
+      "subtitle": "Je eerste 3 quizzen zijn gratis. Met Premium speel je alles, zo vaak je wilt.",
+      "benefits": [
+        "Alle quizzen, zo vaak je wilt",
+        "Uitleg bij elk antwoord",
+        "Je antwoorden terugkijken na elke quiz"
+      ],
+      "view": "Bekijk Premium",
+      "trial": "7 dagen gratis proberen",
+      "alt": "Gratis speel je 3 quizzen. Met Premium gaan alle bijbelboeken open, ook Psalmen en Openbaring.",
+      "quizzes": "Quizzen",
+      "free": "Gratis",
+      "badge": "Met Premium alles open",
+      "abbrs": [
+        "Gen",
+        "Ps",
+        "Opb"
+      ],
+      "bookTitles": [
+        "Genesis",
+        "Psalmen",
+        "Openbaring"
+      ]
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "subtitle": "Staat je vraag er niet bij? In de hulp vind je meer antwoorden.",
+      "toHelp": "Naar de hulp",
+      "free": {
+        "q": "Is {brand} gratis?",
+        "a": "Je speelt 3 quizzen gratis, zonder account. Daarna kun je Premium 7 dagen gratis proberen. Samen spelen met je gezin of vrienden is altijd gratis."
+      },
+      "account": {
+        "q": "Heb ik een account nodig?",
+        "a": "Niet om te beginnen. Met een account bewaar je je XP en je reeks. Inloggen kan met Google, Apple of je e-mailadres."
+      },
+      "translation": {
+        "q": "Welke bijbelvertaling gebruiken jullie?",
+        "a": "De vragen gaan uit van de Statenvertaling. Bij elk antwoord staat de bijbelverwijzing, zodat je het zelf kunt nalezen."
+      },
+      "phone": {
+        "q": "Werkt het op mijn telefoon?",
+        "a": "Ja. Je speelt in de browser op elk apparaat, of in de app voor iPhone en Android."
+      },
+      "class": {
+        "q": "Kan ik spelen met mijn klas of jeugdgroep?",
+        "a": "Ja. Met samen spelen doen tot 20 spelers mee met één code. Voor kerken, scholen en jeugdgroepen is er een groepslicentie."
+      },
+      "cancel": {
+        "q": "Hoe zeg ik Premium op?",
+        "a": "Wanneer je wilt, via Profiel en dan Premium. Je houdt Premium tot het einde van de periode die je al betaald hebt."
+      }
+    },
+    "closing": {
+      "title": "Klaar voor je eerste quiz?",
+      "text": "Speel direct in je browser of download de app. Je eerste 3 quizzen zijn gratis.",
+      "readMore": "Na een quiz verder lezen?",
+      "readMoreAfter": "geeft het hoofdstuk erbij, van hetzelfde team."
+    }
+  },
+  "help": {
+    "title": "Waar kunnen we je mee helpen?",
+    "searchLabel": "Zoek in de hulp",
+    "searchPlaceholder": "Zoek in de hulp",
+    "popular": "Veel gezocht:",
+    "topics": "Onderwerpen",
+    "allFaq": "Alle veelgestelde vragen",
+    "faqTitle": "Veelgestelde vragen",
+    "faqSubtitle": "De vragen die we het vaakst krijgen.",
+    "results": "Zoekresultaten",
+    "resultsOne": "1 antwoord voor \"{query}\".",
+    "resultsMany": "{count} antwoorden voor \"{query}\".",
+    "noAnswer": "Daar hebben we nog geen antwoord op. {link}, dan helpen we je verder.",
+    "askQuestion": "Stel je vraag",
+    "topic": {
+      "start": {
+        "title": "Aan de slag",
+        "text": "Een account maken, inloggen en je eerste quiz"
+      },
+      "quizzen": {
+        "title": "Quizzen en uitleg",
+        "text": "Quizzen spelen, uitleg en bijbelverwijzingen"
+      },
+      "samen": {
+        "title": "Samen spelen",
+        "text": "Een kamer starten en meedoen met een code"
+      },
+      "premium": {
+        "title": "Premium en betalen",
+        "text": "Proefperiode, opzeggen en de groepslicentie"
+      },
+      "account": {
+        "title": "Account en privacy",
+        "text": "Je gegevens en je account verwijderen"
+      }
+    },
+    "popularSearches": {
+      "cancel": "Premium opzeggen",
+      "join": "Meedoen met een code"
+    },
+    "q": {
+      "free": {
+        "q": "Is {brand} gratis?",
+        "a": "Je speelt 3 quizzen gratis, zonder account. Samen spelen is altijd gratis. Wil je alle quizzen en de uitleg bij elk antwoord, dan probeer je Premium 7 dagen gratis."
+      },
+      "group": {
+        "q": "Hoe start ik een spel voor mijn groep?",
+        "a": "Ga naar Samen spelen, kies Kamer maken en kies een quiz. Deel de code van 6 tekens met je groep. Tot 20 spelers doen mee, ieder op een eigen telefoon."
+      },
+      "xp": {
+        "q": "Hoe werken XP en levels?",
+        "a": "Voor elk goed antwoord krijg je XP. Met genoeg XP ga je een level omhoog. Op de ranglijst zie je hoe je het doet, deze maand en sinds je begon."
+      },
+      "translation": {
+        "q": "Welke bijbelvertaling gebruiken jullie?",
+        "a": "De vragen gaan uit van de Statenvertaling. Bij elk antwoord staat de bijbelverwijzing, zodat je het zelf kunt nalezen."
+      },
+      "cancel": {
+        "q": "Hoe zeg ik Premium op?",
+        "a": "Via Profiel en dan Premium. Je houdt Premium tot het einde van de periode die je al betaald hebt. Betaal je via de app, dan zeg je op in de App Store of Google Play."
+      },
+      "deleteAccount": {
+        "q": "Hoe verwijder ik mijn account?",
+        "a": "In de app via je profiel, of via {link}. We wissen je profiel, je voortgang en je scores. Dat kun je daarna niet meer terugdraaien.",
+        "text": "In de app via je profiel, of via Account verwijderen. We wissen je profiel, je voortgang en je scores. Dat kun je daarna niet meer terugdraaien.",
+        "link": "Account verwijderen"
+      },
+      "studie": {
+        "q": "Waar lees ik meer over een bijbelgedeelte?",
+        "a": "Op {studie}, van hetzelfde team. Daar lees je elk hoofdstuk met uitleg erbij. {about}",
+        "text": "Op BijbelStudie, van hetzelfde team. Daar lees je elk hoofdstuk met uitleg erbij.",
+        "about": "Wat is BijbelStudie?"
+      },
+      "needAccount": {
+        "q": "Heb ik een account nodig?",
+        "a": "Niet om te beginnen. Met een account bewaar je je XP en je reeks. {link} of log in met Google, Apple of je e-mailadres.",
+        "text": "Niet om te beginnen. Met een account bewaar je je XP en je reeks. Inloggen kan met Google, Apple of je e-mailadres.",
+        "link": "Maak een account"
+      },
+      "phone": {
+        "q": "Werkt het op mijn telefoon?",
+        "a": "Ja. Je speelt in de browser op elk apparaat, of in de app voor iPhone en Android."
+      },
+      "explanation": {
+        "q": "Waarom zie ik de uitleg niet?",
+        "a": "De uitleg bij elk antwoord hoort bij {link}. Zonder Premium zie je bij elke vraag wel de bijbelverwijzing, zodat je het zelf kunt nalezen.",
+        "text": "De uitleg bij elk antwoord hoort bij Premium. Zonder Premium zie je bij elke vraag wel de bijbelverwijzing, zodat je het zelf kunt nalezen.",
+        "link": "Premium"
+      },
+      "mistake": {
+        "q": "Ik zie een fout in een vraag. Wat nu?",
+        "a": "Meld het via {link}. Noem de quiz en de vraag, dan kijken we het na.",
+        "text": "Meld het via Fout melden. Noem de quiz en de vraag, dan kijken we het na.",
+        "link": "Fout melden"
+      },
+      "class": {
+        "q": "Kan ik spelen met mijn klas of jeugdgroep?",
+        "a": "Ja. Met samen spelen doen tot 20 spelers mee met één code. Voor kerken, scholen en jeugdgroepen is er een {link}.",
+        "text": "Ja. Met samen spelen doen tot 20 spelers mee met één code. Voor kerken, scholen en jeugdgroepen is er een groepslicentie.",
+        "link": "groepslicentie"
+      },
+      "privacy": {
+        "q": "Wat doen jullie met mijn gegevens?",
+        "a": "We gebruiken je gegevens om je account en je voortgang bij te houden. We verkopen ze nooit aan derden. Alles staat in het {link}.",
+        "text": "We gebruiken je gegevens om je account en je voortgang bij te houden. We verkopen ze nooit aan derden. Alles staat in het privacybeleid.",
+        "link": "privacybeleid"
+      },
+      "api": {
+        "q": "Wat is BijbelAPI?",
+        "a": "BijbelQuiz wordt ontwikkeld met de Nederlandse {link}.",
+        "text": "BijbelQuiz wordt ontwikkeld met de Nederlandse BijbelAPI."
+      }
+    }
+  },
+  "contactForm": {
+    "name": "Naam",
+    "namePlaceholder": "Je naam",
+    "email": "E-mailadres",
+    "emailPlaceholder": "naam@voorbeeld.nl",
+    "subject": "Onderwerp",
+    "subjectPlaceholder": "Kies een onderwerp",
+    "message": "Bericht",
+    "messageHint": "Gaat het om een fout? Noem de pagina of de quiz en wat je deed.",
+    "messagePlaceholder": "Waar kunnen we je mee helpen?",
+    "title": "Stuur een bericht",
+    "submit": "Verstuur bericht",
+    "sentTitle": "Bericht verstuurd",
+    "sentDefault": "Bedankt, we hebben je bericht ontvangen.",
+    "sentNote": "We reageren meestal binnen 1 tot 2 werkdagen, op {email}.",
+    "another": "Nog een bericht sturen",
+    "errNetworkDefault": "Er ging iets mis bij het versturen. Probeer het opnieuw.",
+    "privacy": "We gebruiken je gegevens alleen om je vraag te beantwoorden. Lees het {link}.",
+    "privacyLink": "privacybeleid",
+    "errName": "Vul je naam in.",
+    "errEmail": "Vul een geldig e-mailadres in.",
+    "errSubject": "Kies een onderwerp.",
+    "errMessage": "Schrijf iets meer, minstens 10 tekens."
+  },
+  "bugForm": {
+    "what": "Wat ging er mis?",
+    "whatPlaceholder": "Bijvoorbeeld: ik klikte op een quiz over Genesis en kwam op deze pagina.",
+    "page": "Pagina",
+    "email": "E-mailadres",
+    "optional": "(niet verplicht)",
+    "emailPlaceholder": "Als je antwoord wilt",
+    "submit": "Verstuur melding",
+    "sentDefault": "Bedankt. Je melding is doorgestuurd.",
+    "sentWithEmail": "We laten het je weten als we meer willen weten of als het is opgelost.",
+    "sentNoEmail": "We gaan ermee aan de slag.",
+    "another": "Nog iets melden",
+    "errMessage": "Schrijf iets meer, minstens 10 tekens.",
+    "errEmail": "Vul een geldig e-mailadres in, of laat het leeg.",
+    "errDefault": "Er ging iets mis bij het versturen. Probeer het opnieuw."
+  },
+  "support": {
+    "honeypot": "Laat dit veld leeg",
+    "noConnection": "Geen verbinding. Controleer je internet en probeer het opnieuw."
+  },
+  "errorScreen": {
+    "kicker": "VRAAG 404",
+    "report": "Meld deze fout",
+    "home": "Naar home",
+    "where": "Waar wil je naartoe?",
+    "title": "Klopt er iets niet?",
+    "text": "Meld het, dan lossen we het op. Vertel wat je deed, wat er misging en op welke pagina het gebeurde.",
+    "mail": "Liever mailen?"
+  },
+  "legal": {
+    "tabsLabel": "Juridische documenten",
+    "privacy": "Privacybeleid",
+    "terms": "Voorwaarden",
+    "onThisPage": "Op deze pagina"
+  },
+  "promo": {
+    "copy": "Kopieer",
+    "copied": "Gekopieerd"
   }
 }

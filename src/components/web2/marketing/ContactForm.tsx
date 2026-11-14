@@ -4,6 +4,8 @@ import * as React from 'react';
 import Link from 'next/link';
 
 import { Button, Field, Input, Select, Textarea } from '@/components/bq';
+import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 import { CONTACT_SUBJECTS } from '@/lib/support-mail-subjects';
 import { CheckIcon, SendIcon } from './icons';
 import { Honeypot, postSupportForm, type SubmitState } from './Honeypot';
@@ -19,10 +21,10 @@ const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function validate(values: { name: string; email: string; subject: string; message: string }): Errors {
   const errors: Errors = {};
-  if (!values.name.trim()) errors.name = 'Vul je naam in.';
-  if (!EMAIL_PATTERN.test(values.email.trim())) errors.email = 'Vul een geldig e-mailadres in.';
-  if (!values.subject) errors.subject = 'Kies een onderwerp.';
-  if (values.message.trim().length < 10) errors.message = 'Schrijf iets meer, minstens 10 tekens.';
+  if (!values.name.trim()) errors.name = t('contactForm.errName');
+  if (!EMAIL_PATTERN.test(values.email.trim())) errors.email = t('contactForm.errEmail');
+  if (!values.subject) errors.subject = t('contactForm.errSubject');
+  if (values.message.trim().length < 10) errors.message = t('contactForm.errMessage');
   return errors;
 }
 
@@ -51,12 +53,12 @@ export function ContactForm({ defaultName = '', defaultEmail = '' }: ContactForm
     setState({ status: 'sending' });
     const { ok, data } = await postSupportForm('/api/contact', { ...values, website });
     if (ok) {
-      setState({ status: 'sent', message: data.message || 'Bedankt, we hebben je bericht ontvangen.' });
+      setState({ status: 'sent', message: data.message || t('contactForm.sentDefault') });
       requestAnimationFrame(() => headingRef.current?.focus());
       return;
     }
     if (data.errors) setErrors(data.errors as Errors);
-    setState({ status: 'error', message: data.message || 'Er ging iets mis bij het versturen. Probeer het opnieuw.' });
+    setState({ status: 'error', message: data.message || t('contactForm.errNetworkDefault') });
   };
 
   const reset = () => {
@@ -73,13 +75,13 @@ export function ContactForm({ defaultName = '', defaultEmail = '' }: ContactForm
           <CheckIcon size={24} />
         </span>
         <h2 ref={headingRef} tabIndex={-1} className="m-0 text-[22px] leading-7 outline-none">
-          Bericht verstuurd
+          {t('contactForm.sentTitle')}
         </h2>
         <p className="m-0 max-w-[52ch] text-base font-semibold leading-6 text-ink-soft">
-          {state.message} We reageren meestal binnen 1 tot 2 werkdagen, op {email.trim()}.
+          {state.message} {t('contactForm.sentNote', { email: email.trim() })}
         </p>
         <Button variant="secondary" size="lg" onClick={reset}>
-          Nog een bericht sturen
+          {t('contactForm.another')}
         </Button>
       </div>
     );
@@ -93,30 +95,30 @@ export function ContactForm({ defaultName = '', defaultEmail = '' }: ContactForm
       className="relative flex flex-col gap-5 rounded-[16px] border border-line bg-card p-5 m:p-8"
     >
       <h2 id="contact-form-title" className="m-0 text-[22px] leading-7">
-        Stuur een bericht
+        {t('contactForm.title')}
       </h2>
 
       <div className="grid grid-cols-1 gap-x-4 gap-y-5 m:grid-cols-2">
-        <Field label="Naam" htmlFor="contact-name" error={errors.name}>
+        <Field label={t('contactForm.name')} htmlFor="contact-name" error={errors.name}>
           <Input
             id="contact-name"
             name="name"
             autoComplete="name"
-            placeholder="Je naam"
+            placeholder={t('contactForm.namePlaceholder')}
             maxLength={120}
             value={name}
             invalid={Boolean(errors.name)}
             onChange={(event) => setName(event.target.value)}
           />
         </Field>
-        <Field label="E-mailadres" htmlFor="contact-email" error={errors.email}>
+        <Field label={t('contactForm.email')} htmlFor="contact-email" error={errors.email}>
           <Input
             id="contact-email"
             name="email"
             type="email"
             autoComplete="email"
             inputMode="email"
-            placeholder="naam@voorbeeld.nl"
+            placeholder={t('contactForm.emailPlaceholder')}
             maxLength={190}
             value={email}
             invalid={Boolean(errors.email)}
@@ -125,7 +127,7 @@ export function ContactForm({ defaultName = '', defaultEmail = '' }: ContactForm
         </Field>
       </div>
 
-      <Field label="Onderwerp" htmlFor="contact-subject" error={errors.subject}>
+      <Field label={t('contactForm.subject')} htmlFor="contact-subject" error={errors.subject}>
         <Select
           id="contact-subject"
           name="subject"
@@ -135,7 +137,7 @@ export function ContactForm({ defaultName = '', defaultEmail = '' }: ContactForm
           className={subject ? undefined : '[&_select]:text-ink-muted'}
         >
           <option value="" disabled>
-            Kies een onderwerp
+            {t('contactForm.subjectPlaceholder')}
           </option>
           {CONTACT_SUBJECTS.map((option) => (
             <option key={option} value={option} className="text-ink">
@@ -146,16 +148,16 @@ export function ContactForm({ defaultName = '', defaultEmail = '' }: ContactForm
       </Field>
 
       <Field
-        label="Bericht"
+        label={t('contactForm.message')}
         htmlFor="contact-message"
         error={errors.message}
-        hint="Gaat het om een fout? Noem de pagina of de quiz en wat je deed."
+        hint={t('contactForm.messageHint')}
       >
         <Textarea
           id="contact-message"
           name="message"
           rows={6}
-          placeholder="Waar kunnen we je mee helpen?"
+          placeholder={t('contactForm.messagePlaceholder')}
           maxLength={4000}
           value={message}
           invalid={Boolean(errors.message)}
@@ -175,14 +177,16 @@ export function ContactForm({ defaultName = '', defaultEmail = '' }: ContactForm
       <div className="flex flex-col items-stretch gap-x-5 gap-y-3.5 pt-1 m:flex-row m:items-center">
         <Button type="submit" size="xl" loading={state.status === 'sending'} className="shrink-0">
           {state.status !== 'sending' && <SendIcon size={18} />}
-          Verstuur bericht
+          {t('contactForm.submit')}
         </Button>
         <p className="m-0 text-sm font-semibold leading-5 text-ink-muted">
-          We gebruiken je gegevens alleen om je vraag te beantwoorden. Lees het{' '}
-          <Link href="/privacybeleid" className="font-extrabold no-underline">
-            privacybeleid
-          </Link>
-          .
+          {rich(t('contactForm.privacy'), {
+            link: (
+              <Link href="/privacybeleid" className="font-extrabold no-underline">
+                {t('contactForm.privacyLink')}
+              </Link>
+            ),
+          })}
         </p>
       </div>
     </form>

@@ -2,6 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 
 import { Button, Container } from '@/components/bq';
+import { t } from '@/i18n';
 import { supportEmail } from '@/lib/support-email';
 import { BugReportForm } from './BugReportForm';
 import { BookIcon, BugIcon, HomeIcon, IconTile, PeopleIcon, TrophyIcon } from './icons';
@@ -31,16 +32,16 @@ export interface ErrorScreenProps {
 }
 
 const DESTINATIONS = [
-  { label: 'Quizzen', href: '/quizzen', icon: BookIcon, tone: 'text-lapis' },
-  { label: 'Samen spelen', href: '/samen-spelen', icon: PeopleIcon, tone: 'text-green' },
-  { label: 'Ranglijst', href: '/ranglijst', icon: TrophyIcon, tone: 'text-gold-text' },
+  { label: t('bq.nav.quizzes'), href: '/quizzen', icon: BookIcon, tone: 'text-lapis' },
+  { label: t('bq.nav.playTogether'), href: '/samen-spelen', icon: PeopleIcon, tone: 'text-green' },
+  { label: t('bq.nav.leaderboard'), href: '/ranglijst', icon: TrophyIcon, tone: 'text-gold-text' },
 ];
 
 export function HomeButton() {
   return (
     <Button href="/" size="xl" className="px-6">
       <HomeIcon size={18} />
-      Naar home
+      {t('errorScreen.home')}
     </Button>
   );
 }
@@ -49,9 +50,9 @@ export function ErrorScreen({
   kicker,
   title,
   text,
-  cardKicker = 'VRAAG 404',
+  cardKicker = t('errorScreen.kicker'),
   actions,
-  reportLabel = 'Meld deze fout',
+  reportLabel = t('errorScreen.report'),
   pageSource = 'current',
   titleId = 'err-title',
 }: ErrorScreenProps) {
@@ -81,13 +82,13 @@ export function ErrorScreen({
           />
           <span aria-hidden="true" className="absolute right-[30px] top-[30px] size-10 rounded-full bg-gold-wash" />
           <nav
-            aria-label="Waar wil je naartoe?"
+            aria-label={t('errorScreen.where')}
             className="absolute left-1/2 top-[54px] -ml-[170px] flex w-[340px] flex-col gap-3.5 rounded-[18px] border border-line bg-card p-5 shadow-float"
           >
             <span aria-hidden="true" className="self-start rounded-full bg-lapis-tint px-[9px] py-[3px] text-xs font-extrabold tracking-[0.04em] text-lapis-edge">
               {cardKicker}
             </span>
-            <span className="font-display text-2xl font-semibold leading-[30px]">Waar wil je naartoe?</span>
+            <span className="font-display text-2xl font-semibold leading-[30px]">{t('errorScreen.where')}</span>
             <ul className="m-0 grid list-none grid-cols-2 gap-2.5 p-0">
               {DESTINATIONS.map(({ label, href, icon: Icon, tone }) => (
                 <li key={href}>
@@ -116,13 +117,13 @@ export function ErrorScreen({
               <BugIcon />
             </IconTile>
             <h2 id="report-title" className="mt-1.5 text-[26px] leading-8">
-              Klopt er iets niet?
+              {t('errorScreen.title')}
             </h2>
             <p className="m-0 text-base font-semibold leading-[25px] text-ink-soft">
-              Meld het, dan lossen we het op. Vertel wat je deed, wat er misging en op welke pagina het gebeurde.
+              {t('errorScreen.text')}
             </p>
             <p className="mt-1 text-[15px] font-semibold leading-[23px] text-ink-muted">
-              Liever mailen?{' '}
+              {t('errorScreen.mail')}{' '}
               <a href={`mailto:${email}`} className="break-all font-bold underline">
                 {email}
               </a>

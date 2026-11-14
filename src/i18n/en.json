@@ -127,5 +127,314 @@
       "answers": "Answers",
       "breadcrumbs": "Breadcrumbs"
     }
+  },
+  "landing": {
+    "hero": {
+      "visualAlt": "Example: a quiz question about John 6 with the right answer and explanation, a room with 6 players, XP earned and a 6-day streak",
+      "ref": "JOHN 6",
+      "question": "How many loaves did the boy have with him?",
+      "answers": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "correct": "5",
+      "good": "Correct!",
+      "explanation": "Andrew pointed Jesus to a boy with five barley loaves and two fish.",
+      "readRef": "Read John 6:9",
+      "playersInRoom": "players in the room",
+      "titleA": "How well do you know",
+      "titleB": "the Bible?",
+      "lead": "Short quizzes on every book of the Bible, with an explanation for each answer. Play alone, or together with family, friends or your group.",
+      "cta": "Start for free",
+      "noAccount": "3 free quizzes, no account needed",
+      "orApp": "Or play in the app"
+    },
+    "how": {
+      "title": "How {brand} works",
+      "subtitle": "Alone or together, with the same short quizzes.",
+      "playTitle": "Play a quiz",
+      "playText": "Ten questions on a Bible passage. After each answer you read the explanation and the Bible text.",
+      "sampleExplanation": "Noah built the ark of gopher wood, just as God had commanded him.",
+      "sampleRead": "Read Genesis 6:14",
+      "togetherTitle": "Play together",
+      "togetherText": "Start a room and share the code. Up to 20 players join, each on their own phone.",
+      "roomCode": "Room code",
+      "playersJoin": "14 players joined"
+    },
+    "books": {
+      "title": "Quizzes on every book of the Bible",
+      "countQuizzes": "{count} quizzes",
+      "noCountQuizzes": "Quizzes",
+      "subtitle": "{quizzes} on the Old and New Testament, by book and by theme.",
+      "all": "All quizzes",
+      "oldTestament": "Old Testament",
+      "newTestament": "New Testament",
+      "bookCount": "{count} books",
+      "more": "+ {count} more"
+    },
+    "group": {
+      "title": "Play together with your group",
+      "subtitle": "For the family, youth group, Sunday school or class. One person starts a room, everyone else joins with the code.",
+      "step1Title": "Start a room",
+      "step1Text": "Pick a quiz and open the room on your phone or laptop.",
+      "step2Title": "Share the code",
+      "step2Text": "Read out the 6-character code or put it on the screen.",
+      "step3Title": "Play at the same time",
+      "step3Text": "Everyone answers the same question. The standings update live.",
+      "start": "Start a room",
+      "license": "Group license for churches and schools",
+      "roomAlt": "Example of a room with code K7P2QM: 14 players, question 6 of 10, Lotte is in first place",
+      "room": "Room",
+      "players": "14 players",
+      "questionOf": "Question 6 of 10",
+      "standings": "Standings",
+      "others": "and 9 other players",
+      "names": [
+        "Lotte",
+        "Daan",
+        "Alex",
+        "Noor",
+        "Ruben"
+      ]
+    },
+    "premium": {
+      "title": "Play without limits with Premium",
+      "subtitle": "Your first 3 quizzes are free. With Premium you play everything, as often as you like.",
+      "benefits": [
+        "All quizzes, as often as you like",
+        "An explanation for every answer",
+        "Review your answers after each quiz"
+      ],
+      "view": "See Premium",
+      "trial": "Try free for 7 days",
+      "alt": "You play 3 quizzes for free. With Premium every book of the Bible opens up, including Psalms and Revelation.",
+      "quizzes": "Quizzes",
+      "free": "Free",
+      "badge": "Everything open with Premium",
+      "abbrs": [
+        "Gen",
+        "Ps",
+        "Rev"
+      ],
+      "bookTitles": [
+        "Genesis",
+        "Psalms",
+        "Revelation"
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Don't see your question? You'll find more answers in the help section.",
+      "toHelp": "Go to help",
+      "free": {
+        "q": "Is {brand} free?",
+        "a": "You play 3 quizzes for free, without an account. After that you can try Premium free for 7 days. Playing together with family or friends is always free."
+      },
+      "account": {
+        "q": "Do I need an account?",
+        "a": "Not to get started. With an account you keep your XP and your streak. You can log in with Google, Apple or your email address."
+      },
+      "translation": {
+        "q": "Which Bible translation do you use?",
+        "a": "Every answer shows its Bible reference, so you can read the passage yourself."
+      },
+      "phone": {
+        "q": "Does it work on my phone?",
+        "a": "Yes. You play in the browser on any device, or in the app for iPhone and Android."
+      },
+      "class": {
+        "q": "Can I play with my class or youth group?",
+        "a": "Yes. With play together, up to 20 players join with one code. There is a group license for churches, schools and youth groups."
+      },
+      "cancel": {
+        "q": "How do I cancel Premium?",
+        "a": "Whenever you like, via Profile and then Premium. You keep Premium until the end of the period you have already paid for."
+      }
+    },
+    "closing": {
+      "title": "Ready for your first quiz?",
+      "text": "Play right in your browser or download the app. Your first 3 quizzes are free.",
+      "readMore": "Want to keep reading after a quiz?",
+      "readMoreAfter": "gives you the chapter to go with it, from the same team."
+    }
+  },
+  "help": {
+    "title": "How can we help you?",
+    "searchLabel": "Search the help",
+    "searchPlaceholder": "Search the help",
+    "popular": "Popular searches:",
+    "topics": "Topics",
+    "allFaq": "All frequently asked questions",
+    "faqTitle": "Frequently asked questions",
+    "faqSubtitle": "The questions we get most often.",
+    "results": "Search results",
+    "resultsOne": "1 answer for \"{query}\".",
+    "resultsMany": "{count} answers for \"{query}\".",
+    "noAnswer": "We don't have an answer to that yet. {link} and we'll help you further.",
+    "askQuestion": "Ask your question",
+    "topic": {
+      "start": {
+        "title": "Getting started",
+        "text": "Creating an account, logging in and your first quiz"
+      },
+      "quizzen": {
+        "title": "Quizzes and explanations",
+        "text": "Playing quizzes, explanations and Bible references"
+      },
+      "samen": {
+        "title": "Play together",
+        "text": "Starting a room and joining with a code"
+      },
+      "premium": {
+        "title": "Premium and payments",
+        "text": "Free trial, canceling and the group license"
+      },
+      "account": {
+        "title": "Account and privacy",
+        "text": "Your data and deleting your account"
+      }
+    },
+    "popularSearches": {
+      "cancel": "Cancel Premium",
+      "join": "Join with a code"
+    },
+    "q": {
+      "free": {
+        "q": "Is {brand} free?",
+        "a": "You play 3 quizzes for free, without an account. Playing together is always free. If you want all quizzes and the explanation for every answer, you can try Premium free for 7 days."
+      },
+      "group": {
+        "q": "How do I start a game for my group?",
+        "a": "Go to Play together, choose Create room and pick a quiz. Share the 6-character code with your group. Up to 20 players join, each on their own phone."
+      },
+      "xp": {
+        "q": "How do XP and levels work?",
+        "a": "You earn XP for every correct answer. With enough XP you go up a level. The leaderboard shows how you are doing, this month and since you started."
+      },
+      "translation": {
+        "q": "Which Bible translation do you use?",
+        "a": "Every answer shows its Bible reference, so you can read the passage yourself."
+      },
+      "cancel": {
+        "q": "How do I cancel Premium?",
+        "a": "Via Profile and then Premium. You keep Premium until the end of the period you have already paid for. If you pay through the app, you cancel in the App Store or Google Play."
+      },
+      "deleteAccount": {
+        "q": "How do I delete my account?",
+        "a": "In the app via your profile, or via {link}. We erase your profile, your progress and your scores. You cannot undo this afterwards.",
+        "text": "In the app via your profile, or via Delete account. We erase your profile, your progress and your scores. You cannot undo this afterwards.",
+        "link": "Delete account"
+      },
+      "studie": {
+        "q": "Where can I read more about a Bible passage?",
+        "a": "On {studie}, from the same team. There you read every chapter with an explanation. {about}",
+        "text": "On Bible Study, from the same team. There you read every chapter with an explanation.",
+        "about": "What is Bible Study?"
+      },
+      "needAccount": {
+        "q": "Do I need an account?",
+        "a": "Not to get started. With an account you keep your XP and your streak. {link} or log in with Google, Apple or your email address.",
+        "text": "Not to get started. With an account you keep your XP and your streak. You can log in with Google, Apple or your email address.",
+        "link": "Create an account"
+      },
+      "phone": {
+        "q": "Does it work on my phone?",
+        "a": "Yes. You play in the browser on any device, or in the app for iPhone and Android."
+      },
+      "explanation": {
+        "q": "Why can't I see the explanation?",
+        "a": "The explanation for each answer is part of {link}. Without Premium you still see the Bible reference for every question, so you can read it yourself.",
+        "text": "The explanation for each answer is part of Premium. Without Premium you still see the Bible reference for every question, so you can read it yourself.",
+        "link": "Premium"
+      },
+      "mistake": {
+        "q": "I see a mistake in a question. What now?",
+        "a": "Report it via {link}. Mention the quiz and the question and we'll look into it.",
+        "text": "Report it via Report a problem. Mention the quiz and the question and we'll look into it.",
+        "link": "Report a problem"
+      },
+      "class": {
+        "q": "Can I play with my class or youth group?",
+        "a": "Yes. With play together, up to 20 players join with one code. There is a {link} for churches, schools and youth groups.",
+        "text": "Yes. With play together, up to 20 players join with one code. There is a group license for churches, schools and youth groups.",
+        "link": "group license"
+      },
+      "privacy": {
+        "q": "What do you do with my data?",
+        "a": "We use your data to keep track of your account and your progress. We never sell it to third parties. Everything is in the {link}.",
+        "text": "We use your data to keep track of your account and your progress. We never sell it to third parties. Everything is in the privacy policy.",
+        "link": "privacy policy"
+      },
+      "api": {
+        "q": "What is BijbelAPI?",
+        "a": "BijbelQuiz is built with the Dutch {link}.",
+        "text": "BijbelQuiz is built with the Dutch BijbelAPI."
+      }
+    }
+  },
+  "contactForm": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email address",
+    "emailPlaceholder": "name@example.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "Choose a subject",
+    "message": "Message",
+    "messageHint": "Is it about a mistake? Mention the page or the quiz and what you did.",
+    "messagePlaceholder": "How can we help you?",
+    "title": "Send a message",
+    "submit": "Send message",
+    "sentTitle": "Message sent",
+    "sentDefault": "Thanks, we have received your message.",
+    "sentNote": "We usually reply within 1 to 2 working days, at {email}.",
+    "another": "Send another message",
+    "errNetworkDefault": "Something went wrong while sending. Please try again.",
+    "privacy": "We only use your details to answer your question. Read the {link}.",
+    "privacyLink": "privacy policy",
+    "errName": "Enter your name.",
+    "errEmail": "Enter a valid email address.",
+    "errSubject": "Choose a subject.",
+    "errMessage": "Write a little more, at least 10 characters."
+  },
+  "bugForm": {
+    "what": "What went wrong?",
+    "whatPlaceholder": "For example: I clicked on a quiz about Genesis and ended up on this page.",
+    "page": "Page",
+    "email": "Email address",
+    "optional": "(optional)",
+    "emailPlaceholder": "If you want a reply",
+    "submit": "Send report",
+    "sentDefault": "Thanks. Your report has been sent.",
+    "sentWithEmail": "We'll let you know if we need more details or when it is fixed.",
+    "sentNoEmail": "We'll get to work on it.",
+    "another": "Report something else",
+    "errMessage": "Write a little more, at least 10 characters.",
+    "errEmail": "Enter a valid email address, or leave it empty.",
+    "errDefault": "Something went wrong while sending. Please try again."
+  },
+  "support": {
+    "honeypot": "Leave this field empty",
+    "noConnection": "No connection. Check your internet and try again."
+  },
+  "errorScreen": {
+    "kicker": "QUESTION 404",
+    "report": "Report this problem",
+    "home": "Go home",
+    "where": "Where do you want to go?",
+    "title": "Is something wrong?",
+    "text": "Report it and we'll fix it. Tell us what you did, what went wrong and on which page it happened.",
+    "mail": "Prefer email?"
+  },
+  "legal": {
+    "tabsLabel": "Legal documents",
+    "privacy": "Privacy policy",
+    "terms": "Terms",
+    "onThisPage": "On this page"
+  },
+  "promo": {
+    "copy": "Copy",
+    "copied": "Copied"
   }
 }

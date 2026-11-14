@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 
+import { t } from '@/i18n';
 import { cn } from '@/lib/utils';
 
 /**
@@ -36,7 +37,7 @@ export function LegalToc({ sections }: { sections: { id: string; title: string }
       className="sticky top-6 hidden flex-col gap-1.5 rounded-[16px] border border-line bg-card px-2 pb-2.5 pt-[18px] m:flex"
     >
       <span id="toc-title" className="px-3 pb-1 text-[13px] font-extrabold text-ink-muted">
-        Op deze pagina
+        {t('legal.onThisPage')}
       </span>
       <ol className="m-0 flex list-none flex-col gap-0.5 p-0">
         {sections.map((section) => {

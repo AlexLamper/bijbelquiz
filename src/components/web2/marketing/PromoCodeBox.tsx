@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 
+import { t } from '@/i18n';
 import { track } from '@/lib/analytics/client';
 import type { StudieLinkSurface } from '@/lib/ecosystem-links';
 import { CheckIcon, CopyIcon } from './icons';
@@ -48,7 +49,7 @@ export function PromoCodeBox({ code, surface }: { code: string; surface: StudieL
         className="flex shrink-0 items-center gap-1.5 border-0 border-l border-input-line bg-chip px-4 text-[15px] font-extrabold text-ink hover:bg-line-soft focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-lapis"
       >
         {copied ? <CheckIcon size={16} className="text-green" /> : <CopyIcon size={16} className="text-lapis" />}
-        {copied ? 'Gekopieerd' : 'Kopieer'}
+        {copied ? t('promo.copied') : t('promo.copy')}
       </button>
     </div>
   );
