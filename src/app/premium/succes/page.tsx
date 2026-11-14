@@ -17,6 +17,8 @@ import stripe from '@/lib/stripe';
 import { readReturnPath, readStripePlan, type StripePlanId } from '@/lib/stripe-plans';
 import SessionRefresher from './SessionRefresher';
 import { t } from '@/i18n';
+import { isNlSite, getSiteConfig } from '@/config/site';
+import { rich } from '@/i18n/rich';
 
 export function generateMetadata(): Metadata {
   return {
@@ -32,15 +34,16 @@ interface PageProps {
   searchParams: Promise<{ session_id?: string; next?: string }>;
 }
 
-const longDate = new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Amsterdam' });
-const shortDate = new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', timeZone: 'Europe/Amsterdam' });
+const dateZone = () => (isNlSite() ? 'Europe/Amsterdam' : undefined);
+const longDate = { format: (date: Date) => new Intl.DateTimeFormat(t('bq.header.numberLocale'), { day: 'numeric', month: 'long', year: 'numeric', timeZone: dateZone() }).format(date) };
+const shortDate = { format: (date: Date) => new Intl.DateTimeFormat(t('bq.header.numberLocale'), { day: 'numeric', month: 'long', timeZone: dateZone() }).format(date) };
 
-const PLAN_NAMES: Record<StripePlanId, string> = {
-  yearly: 'Jaarlijks',
-  monthly: 'Maandelijks',
-  lifetime: 'Levenslang',
-  group: 'Groepslicentie',
-};
+const planNames = (): Record<StripePlanId, string> => ({
+  yearly: t('premium.yearly'),
+  monthly: t('premium.monthly'),
+  lifetime: t('pagesBody.success.lifetime'),
+  group: t('premium.group.licence'),
+});
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -143,7 +146,7 @@ export default async function SuccessPage({ searchParams }: PageProps) {
   // Back to whatever the buyer was doing when they hit the wall.
   const continuePath = readReturnPath(next);
   const firstName = (session.user.name || '').trim().split(/\s+/)[0] || '';
-  const named = (text: string) => (firstName ? `${text}, ${firstName}.` : `${text}.`);
+  const named = (text: string) => (firstName ? t('pagesBody.success.named', { text, name: firstName }) : t('pagesBody.success.namedPlain', { text }));
 
   const content = await describe(purchase, accountIsPremium, named);
   const isGroup = purchase?.plan === 'group';
@@ -160,23 +163,25 @@ export default async function SuccessPage({ searchParams }: PageProps) {
           <div className="mt-6 flex flex-col gap-3 self-stretch">
             {isGroup ? (
               <Button href="/groepslicentie" size="hero" block className="rounded-[12px]">
-                Naar je groep
+                {t('pagesBody.premium.toGroup')}
               </Button>
             ) : (
               <>
                 <Button href={continuePath} size="hero" block className="rounded-[12px]">
-                  Ga verder waar je was
+                  {t('pagesBody.premium.continue')}
                 </Button>
                 <Button href="/premium" variant="secondary" size="xl" block className="text-base">
-                  Beheer je lidmaatschap
+                  {t('pagesBody.success.manageMembership')}
                 </Button>
               </>
             )}
           </div>
         </div>
         <p className="m-0 mt-5 max-w-[560px] text-center text-[15px] font-semibold leading-[22px] text-ink-muted [&_a]:font-extrabold [&_a]:no-underline">
-          Vragen over je abonnement? Kijk in de <Link href="/hulp">hulp</Link> of mail{' '}
-          <a href="mailto:info@bijbelquiz.com">info@bijbelquiz.com</a>.
+          {rich(t('pagesBody.success.questions'), {
+            help: <Link href="/hulp">{t('pagesBody.success.helpWord')}</Link>,
+            email: <a href={`mailto:${getSiteConfig().supportEmail}`}>{getSiteConfig().supportEmail}</a>,
+          })}
         </p>
       </div>
     </Container>
@@ -190,21 +195,21 @@ async function describe(
 ): Promise<{ title: string; text: string; rows: Array<{ label: string; value: string }> }> {
   if (!purchase) {
     return accountIsPremium
-      ? { title: 'Premium is actief', text: named('Premium staat open'), rows: [] }
+      ? { title: t('pagesBody.success.active'), text: named(t('pagesBody.success.open')), rows: [] }
       : {
-          title: 'Bedankt voor je bestelling',
-          text: 'We verwerken je betaling. Zodra die binnen is, staat Premium vanzelf open.',
+          title: t('pagesBody.success.thanks'),
+          text: t('pagesBody.success.processing'),
           rows: [],
         };
   }
 
   if (purchase.plan === 'group') {
     return {
-      title: 'Je groepslicentie is actief',
-      text: 'Je groepscode staat klaar. Deel hem met je groep, dan hebben ze meteen Premium.',
+      title: t('pagesBody.success.groupTitle'),
+      text: t('pagesBody.success.groupText'),
       rows: [
-        { label: 'Licentie', value: 'Groepslicentie' },
-        ...(purchase.periodEnd ? [{ label: 'Loopt tot', value: longDate.format(purchase.periodEnd) }] : []),
+        { label: t('pagesBody.success.licence'), value: t('premium.group.licence') },
+        ...(purchase.periodEnd ? [{ label: t('pagesBody.success.validUntil'), value: longDate.format(purchase.periodEnd) }] : []),
       ],
     };
   }
@@ -213,41 +218,41 @@ async function describe(
 
   if (purchase.plan === 'lifetime') {
     return {
-      title: 'Welkom bij Premium',
-      text: `${named('Premium staat open')} Je hebt levenslang Premium, zonder abonnement en zonder verlenging.`,
+      title: t('pagesBody.success.welcome'),
+      text: `${named(t('pagesBody.success.open'))} ${t('pagesBody.success.lifetimeText')}`,
       rows: [
-        { label: 'Abonnement', value: PLAN_NAMES.lifetime },
-        { label: 'Betaald', value: `${purchase.amountPaid ?? fallbackPrices.lifetime} eenmalig` },
+        { label: t('pagesBody.success.subscription'), value: planNames().lifetime },
+        { label: t('pagesBody.success.paid'), value: t('premium.lifetimeOnce', { price: purchase.amountPaid ?? fallbackPrices.lifetime }) },
       ],
     };
   }
 
-  const period = purchase.plan === 'yearly' ? 'per jaar' : 'per maand';
+  const period = purchase.plan === 'yearly' ? t('premium.perYear') : t('premium.perMonth');
   const price = `${purchase.priceLabel ?? fallbackPrices[purchase.plan]} ${period}`;
 
   if (purchase.isTrialing) {
     // The reminder mail needs SMTP; without it no reminder is promised.
     const reminder = purchase.trialStart && isMailConfigured() ? trialReminderDate(purchase.trialStart, purchase.trialDays) : null;
-    const freeDays = purchase.trialDays > 0 ? `de eerste ${purchase.trialDays} dagen` : 'tijdens de proefperiode';
+    const freeDays = purchase.trialDays > 0 ? t('pagesBody.success.firstDays', { days: purchase.trialDays }) : t('pagesBody.success.duringTrial');
     return {
-      title: 'Je proefperiode is gestart',
-      text: `${named('Premium staat open')} Je betaalt ${freeDays} niets en kunt opzeggen wanneer je wilt.`,
+      title: t('pagesBody.success.trialTitle'),
+      text: `${named(t('pagesBody.success.open'))} ${t('pagesBody.success.trialText', { freeDays })}`,
       rows: [
-        { label: 'Abonnement', value: PLAN_NAMES[purchase.plan] },
-        ...(purchase.trialEnd ? [{ label: 'Gratis tot', value: longDate.format(purchase.trialEnd) }] : []),
-        ...(reminder ? [{ label: 'Herinnering', value: shortDate.format(reminder) }] : []),
-        { label: 'Daarna', value: price },
+        { label: t('pagesBody.success.subscription'), value: planNames()[purchase.plan] },
+        ...(purchase.trialEnd ? [{ label: t('pagesBody.success.freeUntil'), value: longDate.format(purchase.trialEnd) }] : []),
+        ...(reminder ? [{ label: t('pagesBody.success.reminder'), value: shortDate.format(reminder) }] : []),
+        { label: t('pagesBody.success.then'), value: price },
       ],
     };
   }
 
   return {
-    title: 'Welkom bij Premium',
-    text: `${named('Premium staat open')} Je kunt opzeggen wanneer je wilt.`,
+    title: t('pagesBody.success.welcome'),
+    text: `${named(t('pagesBody.success.open'))} ${t('pagesBody.success.cancelAnytime')}`,
     rows: [
-      { label: 'Abonnement', value: PLAN_NAMES[purchase.plan] },
-      ...(purchase.periodEnd ? [{ label: 'Volgende betaling', value: longDate.format(purchase.periodEnd) }] : []),
-      { label: 'Bedrag', value: price },
+      { label: t('pagesBody.success.subscription'), value: planNames()[purchase.plan] },
+      ...(purchase.periodEnd ? [{ label: t('pagesBody.success.nextPayment'), value: longDate.format(purchase.periodEnd) }] : []),
+      { label: t('pagesBody.success.amount'), value: price },
     ],
   };
 }

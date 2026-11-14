@@ -26,6 +26,7 @@ import { isMailConfigured } from '@/lib/auth/mail';
 import { isPremiumUser, PREMIUM_MEMBER_FIELDS, resolvePremiumMemberState, type PremiumMemberState } from './member-state';
 import { getSiteConfig } from '@/config/site';
 import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 
 export function generateMetadata(): Metadata {
   return {
@@ -92,20 +93,20 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
   const underAEuro = yearlyAmount !== null && yearlyAmount / 52 < 1;
 
   const title = member
-    ? 'Je hebt Premium'
+    ? t('pagesBody.premium.have')
     : query.locked
       ? (
           <>
-            Mooi gespeeld!
+            {t('pagesBody.premium.lockedA')}
             <br />
-            Speel verder met Premium
+            {t('pagesBody.premium.lockedB')}
           </>
         )
       : (
           <>
-            Speel onbeperkt
+            {t('pagesBody.premium.unlimitedA')}
             <br />
-            met Premium
+            {t('pagesBody.premium.unlimitedB')}
           </>
         );
 
@@ -117,9 +118,9 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
             <h1 className="m-0 max-w-[560px] text-[44px] leading-[52px] max-m:text-[32px] max-m:leading-[38px]">{title}</h1>
             {!member && fromPerWeek && (
               <p className="-mt-2 m-0 text-[22px] font-extrabold leading-7 text-lapis max-m:text-lg max-m:leading-6">
-                Vanaf {fromPerWeek} per week
+                {t('pagesBody.premium.from', { price: fromPerWeek })}
                 <span className="block text-[15px] font-semibold leading-5 text-ink-muted">
-                  {prices.yearly} per jaar{underAEuro ? ', minder dan een euro per week.' : '.'}
+                  {t('pagesBody.premium.perYearLine', { price: prices.yearly })}{underAEuro ? t('pagesBody.premium.underOne') : '.'}
                 </span>
               </p>
             )}
@@ -149,7 +150,7 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
       {!member && (
         <Container as="section" className="pt-[88px] max-m:pt-12">
           <div className="flex flex-col gap-6">
-            <SectionHead title="Gratis of Premium" subtitle="Je account blijft altijd gratis. Premium zet alles open." />
+            <SectionHead title={t('pagesBody.premium.freeOrPremium')} subtitle={t('pagesBody.premium.freeOrPremiumSub')} />
             <ComparisonTable quizCount={quizCount} />
           </div>
         </Container>
@@ -158,9 +159,9 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
       <Container as="section" className="pb-20 pt-[88px] max-m:pt-12">
         <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.75fr)] items-start gap-x-14 gap-y-8 max-m:grid-cols-1">
           <div className="flex flex-col items-start gap-4">
-            <SectionHead title="Vragen over Premium" subtitle="Over de proefperiode, opzeggen en betalen." />
+            <SectionHead title={t('pagesBody.premium.faq')} subtitle={t('pagesBody.premium.faqSub')} />
             <Link href="/hulp" className="flex items-center gap-1 text-base font-extrabold no-underline">
-              Meer in de hulp
+              {t('pagesBody.premium.moreHelp')}
               <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.6} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M9 6l6 6-6 6" />
               </svg>
@@ -169,38 +170,34 @@ export default async function PremiumPage({ searchParams }: PremiumPageProps) {
           <FaqList
             items={[
               {
-                question: 'Hoe werkt de proefperiode?',
+                question: t('pagesBody.premium.q1'),
                 open: true,
                 answer:
                   trialDays > 0
-                    ? `Kies je Jaarlijks, dan betaal je de eerste ${trialDays} dagen niets.${
-                        reminderDay ? ` Op dag ${reminderDay} krijg je een herinnering.` : ''
-                      } Zeg je niet op, dan start je jaarabonnement na de ${trialDays} dagen.`
-                    : 'Op dit moment is er geen proefperiode. Je betaalt vanaf de eerste dag en kunt opzeggen wanneer je wilt.',
+                    ? t('pagesBody.premium.a1', { days: trialDays, reminder: reminderDay ? t('pagesBody.premium.a1Reminder', { day: reminderDay }) : '' })
+                    : t('pagesBody.premium.a1None'),
               },
               {
-                question: 'Hoe zeg ik op?',
-                answer:
-                  'Wanneer je wilt, met de knop Beheer je abonnement op deze pagina of in Instellingen. Je houdt Premium tot het einde van de periode die je al betaald hebt. Betaal je via de app, dan zeg je op in de App Store of Google Play.',
+                question: t('pagesBody.premium.q2'),
+                answer: t('pagesBody.premium.a2'),
               },
               {
-                question: 'Wat als ik opzeg in de proefperiode?',
-                answer: 'Dan betaal je niets en speel je gratis verder. Je XP en je reeks blijven bewaard.',
+                question: t('pagesBody.premium.q3'),
+                answer: t('pagesBody.premium.a3'),
               },
               {
-                question: 'Werkt Premium ook in de app?',
-                answer: 'Ja. Premium hoort bij je account. Log in de app in met hetzelfde account en alles staat open.',
+                question: t('pagesBody.premium.q4'),
+                answer: t('pagesBody.premium.a4'),
               },
               {
-                question: 'Wat is levenslang Premium?',
-                answer: `Je betaalt één keer ${prices.lifetime} en houdt Premium, zonder abonnement en zonder verlenging.`,
+                question: t('pagesBody.premium.q5'),
+                answer: t('pagesBody.premium.a5', { price: prices.lifetime }),
               },
               {
-                question: 'Is er iets voor groepen?',
+                question: t('pagesBody.premium.q6'),
                 answer: (
                   <>
-                    Ja. Voor kerken, scholen en jeugdgroepen is er de <Link href="/groepslicentie">groepslicentie</Link>: Premium voor{' '}
-                    {GROUP_LICENSE_SEATS} plekken onder één code.
+                    {rich(t('pagesBody.premium.a6'), { link: <Link href="/groepslicentie">{t('pagesBody.premium.a6Link')}</Link>, seats: GROUP_LICENSE_SEATS })}
                   </>
                 ),
               },
@@ -227,28 +224,28 @@ function MemberCard({
       {billingError && (
         <p role="status" className="m-0 mb-4 rounded-[12px] bg-chip px-4 py-3 text-center text-[15px] font-bold text-ink-soft">
           {billingError === 'unavailable'
-            ? 'We vinden geen abonnement om te beheren. Mail info@bijbelquiz.com, dan helpen we je.'
-            : 'Het abonnementsoverzicht opent nu niet. Probeer het zo opnieuw.'}
+            ? t('account.settings.noSubscription', { email: getSiteConfig().supportEmail })
+            : t('account.settings.portalError')}
         </p>
       )}
-      <h2 className="m-0 text-[22px] leading-7">Je lidmaatschap</h2>
+      <h2 className="m-0 text-[22px] leading-7">{t('pagesBody.premium.membership')}</h2>
       <p className="m-0 mt-1.5 text-[15px] font-semibold leading-[22px] text-ink-muted">{member.note}</p>
       <DetailRows rows={member.rows} className="mt-5" />
       <div className="mt-6 flex flex-col gap-3">
         <Button href={returnPath ?? '/quizzen'} size="hero" block>
-          {returnPath ? 'Ga verder waar je was' : 'Naar de quizzen'}
+          {returnPath ? t('pagesBody.premium.continue') : t('pagesBody.premium.toQuizzes')}
         </Button>
         {member.canManageInPortal && (
           <form action="/api/stripe/portal" method="POST">
             <input type="hidden" name="terug" value="/premium" />
             <Button type="submit" variant="secondary" size="xl" block>
-              Beheer je abonnement
+              {t('pagesBody.premium.manage')}
             </Button>
           </form>
         )}
         {member.showGroupLink && (
           <Button href="/groepslicentie" variant="secondary" size="xl" block>
-            Naar je groep
+            {t('pagesBody.premium.toGroup')}
           </Button>
         )}
       </div>
@@ -260,17 +257,17 @@ const TABLE_CELL = 'px-6 py-4 align-middle max-m:px-2.5 max-m:py-3';
 
 function ComparisonTable({ quizCount }: { quizCount: number }) {
   const rows: Array<{ label: string; free: string | true; premium: string | true }> = [
-    { label: 'Quizzen', free: `${FREE_QUIZ_LIMIT} quizzen`, premium: quizCount > 0 ? `Alle ${quizCount} quizzen` : 'Alle quizzen' },
-    { label: 'Uitleg bij elk antwoord', free: 'Alleen de bijbelverwijzing', premium: 'Bij elke vraag' },
-    { label: 'Antwoorden terugkijken', free: 'Alleen je score', premium: 'Na elke quiz' },
-    { label: 'Samen spelen', free: true, premium: true },
-    { label: 'XP, reeks en ranglijst', free: true, premium: true },
+    { label: t('pagesBody.premium.rowQuizzes'), free: t('pagesBody.premium.freeQuizzes', { n: FREE_QUIZ_LIMIT }), premium: quizCount > 0 ? t('pagesBody.premium.allN', { n: quizCount }) : t('pagesBody.premium.all') },
+    { label: t('pagesBody.premium.rowExplain'), free: t('pagesBody.premium.explainFree'), premium: t('pagesBody.premium.explainPremium') },
+    { label: t('pagesBody.premium.rowReview'), free: t('pagesBody.premium.reviewFree'), premium: t('pagesBody.premium.reviewPremium') },
+    { label: t('samen.start.title'), free: true, premium: true },
+    { label: t('pagesBody.premium.rowXp'), free: true, premium: true },
   ];
 
   return (
     <div className="overflow-x-auto rounded-[16px] border border-line bg-card">
       <table className="w-full border-collapse font-sans">
-        <caption className="sr-only">Verschil tussen gratis en Premium</caption>
+        <caption className="sr-only">{t('pagesBody.premium.caption')}</caption>
         <colgroup>
           <col className="w-[34%]" />
           <col className="w-[30%]" />
@@ -279,15 +276,15 @@ function ComparisonTable({ quizCount }: { quizCount: number }) {
         <thead>
           <tr>
             <th scope="col" className={`${TABLE_CELL} border-b border-line text-left text-[13px] font-extrabold text-ink-muted`}>
-              Wat je krijgt
+              {t('pagesBody.premium.whatYouGet')}
             </th>
             <th scope="col" className={`${TABLE_CELL} border-b border-line text-left text-[15px] font-extrabold text-ink-soft`}>
-              Gratis
+              {t('premium.preview.free')}
             </th>
             <th scope="col" className={`${TABLE_CELL} border-b border-line text-left text-[15px] font-extrabold text-lapis`}>
               <span className="flex items-center gap-[7px]">
                 <CrownIcon size={18} className="fill-gold stroke-gold-text" />
-                Premium
+                {t('premium.preview.premium')}
               </span>
             </th>
           </tr>
@@ -302,14 +299,14 @@ function ComparisonTable({ quizCount }: { quizCount: number }) {
                 </th>
                 <td className={`${TABLE_CELL} ${line}`}>
                   {row.free === true ? (
-                    <CheckDisc size={22} label="Ja" />
+                    <CheckDisc size={22} label={t('pagesBody.premium.yes')} />
                   ) : (
                     <span className="text-[15px] font-bold text-ink-soft">{row.free}</span>
                   )}
                 </td>
                 <td className={`${TABLE_CELL} ${line}`}>
                   {row.premium === true ? (
-                    <CheckDisc size={22} label="Ja" />
+                    <CheckDisc size={22} label={t('pagesBody.premium.yes')} />
                   ) : (
                     <span className="flex items-center gap-2.5 text-[15px] font-extrabold text-ink">
                       <span className="flex max-m:hidden">

@@ -106,14 +106,14 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
   // The book the quiz is about, as on the quiz page; the category otherwise.
   const book = bookByCode(dominantBookChapter(questions).book);
   const crumbs: Crumb[] = [
-    { label: 'Quizzen', href: '/quizzen' },
+    { label: t('pagesBody.review.quizzes'), href: '/quizzen' },
     ...(book
       ? [{ label: book.title, href: `/quizzen?boek=${book.slug}` }]
       : categoryTitle
         ? [{ label: categoryTitle, href: '/quizzen' }]
         : []),
     { label: quiz.title, href: `/bijbelquiz/${quizSlug}` },
-    { label: 'Resultaat' },
+    { label: t('pagesBody.review.result') },
   ];
 
   const quizPassage = dominantPassage(questions);
@@ -190,8 +190,8 @@ export default async function QuizBeoordelingPage({ params, searchParams }: Page
   const streakDays = Number(user?.streak) || 0;
   if (user?.lastPlayedAt && streakDays > 0) {
     const next = calculateNextStreak(new Date(user.lastPlayedAt), streakDays).nextStreak;
-    if (next === streakDays) streak = { days: streakDays, hint: 'Speel morgen om je reeks te houden' };
-    else if (next === streakDays + 1) streak = { days: streakDays, hint: 'Speel vandaag om je reeks te houden' };
+    if (next === streakDays) streak = { days: streakDays, hint: t('pagesBody.review.playTomorrow') };
+    else if (next === streakDays + 1) streak = { days: streakDays, hint: t('pagesBody.review.playToday') };
   }
 
   const firstName = (user?.name || session.user.name || '').trim().split(/\s+/)[0] || null;

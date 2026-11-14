@@ -158,10 +158,10 @@ export default async function QuizPage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "Quiz",
     "name": quiz.title,
-    "description": quiz.description || `Test je kennis over ${quiz.title} in deze interactieve bijbelquiz.`,
+    "description": quiz.description || t('pagesBody.quizLd.description', { quiz: quiz.title }),
     "about": {
       "@type": "Thing",
-      "name": (quiz.categoryId as ICategory)?.title || "Bijbel"
+      "name": (quiz.categoryId as ICategory)?.title || t('pages.quizPage.defaultCategory')
     },
     "educationalLevel": quiz.difficulty || "beginner",
     "learningResourceType": "Assessment",

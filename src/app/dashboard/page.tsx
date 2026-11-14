@@ -30,6 +30,7 @@ import { pickQuizOfTheDay } from '@/lib/quiz-of-the-day-pick';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { calculateNextStreak } from '@/lib/streak';
 import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
 
 export function generateMetadata(): Metadata {
   return {
@@ -85,16 +86,16 @@ function topicTiles(quizzes: BrowseQuiz[]): TopicTile[] {
   const themes = themeGroups(quizzes);
   const general = themes.find((group) => /algemeen/i.test(`${group.key} ${group.title}`));
   const tiles: TopicTile[] = [];
-  if (otBooks > 0) tiles.push({ key: 'ot', title: 'Oude Testament', detail: `${otBooks} ${otBooks === 1 ? 'boek' : 'boeken'}`, href: '/quizzen?filter=oude-testament' });
-  if (ntBooks > 0) tiles.push({ key: 'nt', title: 'Nieuwe Testament', detail: `${ntBooks} ${ntBooks === 1 ? 'boek' : 'boeken'}`, href: '/quizzen?filter=nieuwe-testament' });
+  if (otBooks > 0) tiles.push({ key: 'ot', title: t('pagesBody.dashboard.ot'), detail: t(otBooks === 1 ? 'pagesBody.dashboard.bookOne' : 'pagesBody.dashboard.bookMany', { count: otBooks }), href: '/quizzen?filter=oude-testament' });
+  if (ntBooks > 0) tiles.push({ key: 'nt', title: t('pagesBody.dashboard.nt'), detail: t(ntBooks === 1 ? 'pagesBody.dashboard.bookOne' : 'pagesBody.dashboard.bookMany', { count: ntBooks }), href: '/quizzen?filter=nieuwe-testament' });
   if (themes.length > 0) {
     tiles.push({
       key: 'algemeen',
-      title: 'Algemeen',
-      detail: 'Hele Bijbel',
+      title: t('pagesBody.dashboard.general'),
+      detail: t('pagesBody.dashboard.wholeBible'),
       href: general ? `/quizzen?thema=${encodeURIComponent(general.key)}` : '/quizzen?filter=themas',
     });
-    tiles.push({ key: 'themas', title: "Thema's", detail: 'Per thema', href: '/quizzen?filter=themas' });
+    tiles.push({ key: 'themas', title: t('pagesBody.dashboard.themes'), detail: t('pagesBody.dashboard.perTheme'), href: '/quizzen?filter=themas' });
   }
   return tiles;
 }
@@ -134,9 +135,9 @@ export default async function DashboardPage() {
   // Resolved on the server in the reader's timezone, so the greeting does not
   // change between server render and hydration (the server runs in UTC).
   const hour = Number(
-    new Intl.DateTimeFormat('nl-NL', { hour: 'numeric', hour12: false, timeZone: 'Europe/Amsterdam' }).format(new Date()),
+    new Intl.DateTimeFormat(t('bq.header.numberLocale'), { hour: 'numeric', hour12: false, timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined }).format(new Date()),
   );
-  const greeting = hour < 12 ? 'Goedemorgen' : hour < 18 ? 'Goedemiddag' : 'Goedenavond';
+  const greeting = hour < 12 ? t('pagesBody.dashboard.morning') : hour < 18 ? t('pagesBody.dashboard.afternoon') : t('pagesBody.dashboard.evening');
   const firstName = session.user.name?.trim().split(/\s+/)[0];
 
   return (
@@ -146,7 +147,7 @@ export default async function DashboardPage() {
           {greeting}
           {firstName ? `, ${firstName}` : ''}
         </h1>
-        <p className="m-0 text-[17px] font-semibold leading-[23px] text-ink-muted">Ga verder waar je gebleven was, of begin aan iets nieuws.</p>
+        <p className="m-0 text-[17px] font-semibold leading-[23px] text-ink-muted">{t('pagesBody.dashboard.sub')}</p>
       </div>
 
       <div className="grid grid-cols-1 items-start gap-x-10 gap-y-8 m:grid-cols-[minmax(0,1fr)_340px]">
@@ -157,9 +158,9 @@ export default async function DashboardPage() {
           {popular.length > 0 && (
             <section className="flex flex-col gap-3.5">
               <div className="flex items-baseline justify-between gap-3">
-                <h2 className="m-0 text-[26px] leading-8">Populaire quizzen</h2>
+                <h2 className="m-0 text-[26px] leading-8">{t('pagesBody.dashboard.popular')}</h2>
                 <Link href="/quizzen?filter=populair" className="whitespace-nowrap text-[15px] font-extrabold no-underline">
-                  Alle quizzen
+                  {t('pagesBody.dashboard.allQuizzes')}
                 </Link>
               </div>
               <div className="grid grid-cols-2 gap-3 m:grid-cols-3 m:gap-4">
@@ -181,7 +182,7 @@ export default async function DashboardPage() {
           )}
         </div>
 
-        <aside aria-label="Jouw overzicht" className="flex min-w-0 flex-col gap-6 max-m:-order-1">
+        <aside aria-label={t('pagesBody.dashboard.overview')} className="flex min-w-0 flex-col gap-6 max-m:-order-1">
           <LevelCard
             summary={{
               level: level.level,

@@ -7,6 +7,7 @@ import { authOptions } from '@/lib/auth';
 import { isDuelError } from '@/lib/duels/errors';
 import { getDuel, type DuelView } from '@/lib/duels/service';
 import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,6 +28,8 @@ interface PageProps {
  * anybody else the duel does not exist, exactly as the API answers.
  */
 export default async function DuelPlayPage({ params }: PageProps) {
+  // Dutch-only: the sister product and the legacy duels have no intl version.
+  if (!isNlSite()) notFound();
   const { id } = await params;
   const session = await getServerSession(authOptions);
   const userId = session?.user?.id ? String(session.user.id) : null;

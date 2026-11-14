@@ -24,6 +24,8 @@ import { studiePromo } from '@/lib/ecosystem-links';
 import { cn } from '@/lib/utils';
 import { getSiteConfig } from '@/config/site';
 import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
+import { notFound } from 'next/navigation';
 
 export function generateMetadata(): Metadata {
   return {
@@ -140,6 +142,8 @@ function HeroVisual() {
  * purpose, since "bijbelstudie" is already one of this site's keywords.
  */
 export default function BijbelStudiePage() {
+  // Dutch-only: the sister product and the legacy duels have no intl version.
+  if (!isNlSite()) notFound();
   const promo = studiePromo();
 
   return (

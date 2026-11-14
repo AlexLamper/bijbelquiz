@@ -46,7 +46,7 @@ export default async function QuizzesPage() {
   const itemListJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'BijbelQuiz quizoverzicht',
+    name: t('pagesBody.quizzen.listName'),
     itemListElement: quizzes.map((quiz, index) => ({
       '@type': 'ListItem',
       position: index + 1,

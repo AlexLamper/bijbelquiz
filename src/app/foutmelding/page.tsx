@@ -19,11 +19,11 @@ export function generateMetadata(): Metadata {
 export default function FoutmeldingPage() {
   return (
     <ErrorScreen
-      kicker="FOUT MELDEN"
-      title="Iets werkt niet goed?"
-      text="Vertel ons wat er misging, dan zoeken we het uit. Of kies waar je heen wilt, of ga terug naar home."
-      cardKicker="VERDER SPELEN"
-      reportLabel="Naar het formulier"
+      kicker={t('pagesBody.report.kicker')}
+      title={t('pagesBody.report.title')}
+      text={t('pagesBody.report.text')}
+      cardKicker={t('pagesBody.report.cardKicker')}
+      reportLabel={t('pagesBody.report.formLabel')}
       pageSource="referrer"
     />
   );

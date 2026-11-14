@@ -82,43 +82,43 @@ export default async function LeaderboardPage({ searchParams }: LeaderboardPageP
     return text ? `/ranglijst?${text}` : '/ranglijst';
   };
 
-  const periodLabel = period === 'monthly' ? 'deze maand' : 'altijd';
+  const periodLabel = period === 'monthly' ? t('pagesBody.leaderboard.thisMonthLower') : t('pagesBody.leaderboard.alwaysLower');
 
   return (
     <Container className="flex flex-col gap-7 px-5 pb-[72px] pt-10">
       <div className="flex flex-col gap-1.5">
         <h1 className="m-0 text-[30px] leading-9 m:text-[40px] m:leading-[48px]">
-          {activeGroup ? activeGroup.name : 'Ranglijst'}
+          {activeGroup ? activeGroup.name : t('pagesBody.leaderboard.title')}
         </h1>
         <p className="m-0 flex items-center gap-2 text-[17px] font-semibold leading-6 text-ink-muted">
           <TrophyIcon />
-          {period === 'monthly' ? 'XP van de afgelopen 30 dagen' : 'Alle verdiende XP'}
+          {period === 'monthly' ? t('pagesBody.leaderboard.xp30') : t('pagesBody.leaderboard.xpAll')}
         </p>
       </div>
 
       <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_360px]">
-        <section aria-label={`Ranglijst ${periodLabel}`} className="flex min-w-0 flex-col gap-8">
+        <section aria-label={t('pagesBody.leaderboard.aria', { period: periodLabel })} className="flex min-w-0 flex-col gap-8">
           <Tabs
-            aria-label="Periode"
+            aria-label={t('pagesBody.leaderboard.period')}
             value={period}
             items={[
-              { value: 'monthly', label: 'Deze maand', href: query({ period: 'monthly' }) },
-              { value: 'all-time', label: 'Altijd', href: query({ period: 'all-time' }) },
+              { value: 'monthly', label: t('pagesBody.leaderboard.thisMonth'), href: query({ period: 'monthly' }) },
+              { value: 'all-time', label: t('pagesBody.leaderboard.always'), href: query({ period: 'all-time' }) },
             ]}
           />
 
           {rows.length === 0 ? (
             <div className="flex flex-col items-center gap-3 rounded-[16px] border border-line bg-card px-6 py-10 text-center">
-              <p className="m-0 font-display text-xl font-semibold text-ink">Nog niemand op de ranglijst</p>
+              <p className="m-0 font-display text-xl font-semibold text-ink">{t('pagesBody.leaderboard.empty')}</p>
               <p className="m-0 max-w-[44ch] text-[15px] font-semibold leading-[22px] text-ink-muted">
                 {period === 'monthly'
-                  ? 'De afgelopen 30 dagen heeft nog niemand XP verdiend. Speel een quiz en sta bovenaan.'
-                  : 'Speel een quiz om de eerste op de ranglijst te zijn.'}
+                  ? t('pagesBody.leaderboard.emptyMonthly')
+                  : t('pagesBody.leaderboard.emptyAll')}
               </p>
             </div>
           ) : (
             <div className="flex flex-col">
-              <Podium rows={rows.slice(0, 3)} label={`Top 3 ${periodLabel}`} />
+              <Podium rows={rows.slice(0, 3)} label={t('pagesBody.leaderboard.top3', { period: periodLabel })} />
               <RankList rows={rows} startAt={3} currentUserId={userId} gap={gap} />
             </div>
           )}
@@ -129,7 +129,7 @@ export default async function LeaderboardPage({ searchParams }: LeaderboardPageP
             signedIn={!!userId}
             rank={ownRank}
             xp={ownXp}
-            label={activeGroup ? `Jouw plek in ${activeGroup.name}` : period === 'monthly' ? 'Jouw plek deze maand' : 'Jouw plek altijd'}
+            label={activeGroup ? t('pagesBody.leaderboard.yourPlaceIn', { name: activeGroup.name }) : period === 'monthly' ? t('pagesBody.leaderboard.yourPlaceMonth') : t('pagesBody.leaderboard.yourPlaceAll')}
           />
           {userId && (
             <GroupsCard

@@ -11,7 +11,8 @@ import { authOptions } from '@/lib/auth';
 import { connectDB, User as UserModel } from '@/database';
 import { getLevelInfo } from '@/lib/gamification';
 import { supportEmail } from '@/lib/support-email';
-import { t } from '@/i18n';
+import { t, tList } from '@/i18n';
+import { rich } from '@/i18n/rich';
 
 export function generateMetadata(): Metadata {
   return {
@@ -23,10 +24,10 @@ export function generateMetadata(): Metadata {
 
 export const dynamic = 'force-dynamic';
 
-const nl = new Intl.NumberFormat('nl-NL');
+const nl = new Intl.NumberFormat(t('bq.header.numberLocale'));
 
-function plural(count: number, one: string, many: string) {
-  return `${nl.format(count)} ${count === 1 ? one : many}`;
+function plural(count: number, oneKey: string, manyKey: string) {
+  return t(count === 1 ? oneKey : manyKey, { count: nl.format(count) });
 }
 
 export default async function DeleteAccountPage({ searchParams }: { searchParams: Promise<{ verwijderd?: string }> }) {
@@ -41,48 +42,43 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
       .lean();
     if (user) {
       const level = getLevelInfo(user.xp || 0).level;
-      const link = user.password ? 'je wachtwoord' : user.appleId ? 'de koppeling met Apple' : 'de koppeling met Google';
+      const link = user.password ? t('pagesBody.delete.linkPassword') : user.appleId ? t('pagesBody.delete.linkApple') : t('pagesBody.delete.linkGoogle');
       account = {
-        profile: `Naam, e-mailadres, profielfoto en ${link}`,
-        progress: `${nl.format(user.xp || 0)} XP, level ${level}, je reeks van ${plural(user.streak || 0, 'dag', 'dagen')}, scores en ${plural((user.badges || []).length, 'badge', 'badges')}`,
+        profile: t('pagesBody.delete.profile', { link }),
+        progress: t('pagesBody.delete.progress', { xp: nl.format(user.xp || 0), level, streak: plural(user.streak || 0, 'pagesBody.delete.dayOne', 'pagesBody.delete.dayMany'), badges: plural((user.badges || []).length, 'pagesBody.delete.badgeOne', 'pagesBody.delete.badgeMany') }),
       };
     }
   }
 
   const email = supportEmail();
-  const mailtoHref = `mailto:${email}?subject=${encodeURIComponent('Verzoek tot accountverwijdering')}&body=${encodeURIComponent(
+  const mailtoHref = `mailto:${email}?subject=${encodeURIComponent(t('pagesBody.delete.mailSubject'))}&body=${encodeURIComponent(
     [
-      'Hallo BijbelQuiz team,',
-      '',
-      'Ik wil graag mijn account laten verwijderen.',
-      'Mijn account e-mailadres is: [vul hier je e-mailadres in]',
-      '',
-      'Alvast bedankt.',
+      ...tList('pagesBody.delete.mailBody'),
     ].join('\n'),
   )}`;
 
   const items = [
     {
-      title: 'Je profiel',
-      text: account?.profile ?? 'Naam, e-mailadres, profielfoto en de koppeling met Google of Apple',
+      title: t('pagesBody.delete.t1'),
+      text: account?.profile ?? t('pagesBody.delete.profileDefault'),
       icon: <User className="size-5" strokeWidth={2.2} />,
       tone: 'bg-chip text-ink-soft',
     },
     {
-      title: 'Je voortgang',
-      text: account?.progress ?? 'Je XP, level, reeks, scores en badges',
+      title: t('pagesBody.delete.t2'),
+      text: account?.progress ?? t('pagesBody.delete.progressDefault'),
       icon: <BoltIcon size={20} />,
       tone: 'bg-gold-tint',
     },
     {
-      title: 'Je duels en ranglijst',
-      text: 'Je duels met vrienden en je plek op de ranglijst',
+      title: t('pagesBody.delete.t3'),
+      text: t('pagesBody.delete.duelsText'),
       icon: <Swords className="size-5" strokeWidth={2.2} />,
       tone: 'bg-coral-tint text-coral-text',
     },
     {
-      title: 'Je voorkeuren',
-      text: 'Instellingen, interesses en andere appgegevens',
+      title: t('pagesBody.delete.t4'),
+      text: t('pagesBody.delete.prefsText'),
       icon: <SlidersHorizontal className="size-5" strokeWidth={2.2} />,
       tone: 'bg-chip text-ink-soft',
     },
@@ -95,10 +91,10 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
     <Container>
       <PageBody className="m:pb-[88px]">
         <PageTitle
-          title="Account verwijderen"
-          subtitle={deleted ? 'Je account en je gegevens zijn verwijderd.' : 'Lees eerst wat er verdwijnt. Daarna bevestig je in stap 2.'}
+          title={t('account.settings.delete')}
+          subtitle={deleted ? t('pagesBody.delete.doneSub') : t('pagesBody.delete.sub')}
           backHref={signedIn ? '/instellingen' : '/'}
-          backLabel={signedIn ? 'Terug naar instellingen' : 'Terug naar de startpagina'}
+          backLabel={signedIn ? t('pagesBody.delete.backSettings') : t('pagesBody.delete.backHome')}
         />
 
         <div className="grid grid-cols-1 items-start gap-7 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-8">
@@ -106,21 +102,21 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
             {deleted && (
               <Card as="section" padding="none" aria-labelledby="done-title" className="flex flex-col gap-3 px-4 py-5 m:p-7">
                 <h2 id="done-title" className="m-0 text-[22px] leading-7">
-                  Je account is verwijderd
+                  {t('pagesBody.delete.doneTitle')}
                 </h2>
                 <p className="m-0 text-[15px] leading-[23px] font-semibold text-ink-soft">
-                  Bedankt dat je met BijbelQuiz hebt gespeeld. Je kunt altijd opnieuw beginnen met een nieuw account.
+                  {t('pagesBody.delete.doneText')}
                 </p>
                 <div>
                   <Button href="/" variant="secondary">
-                    Naar de startpagina
+                    {t('pagesBody.delete.toHome')}
                   </Button>
                 </div>
               </Card>
             )}
 
             <Card as="section" padding="none" aria-labelledby="step1-title" className="flex flex-col gap-5 px-4 py-5 m:p-7">
-              <StepTitle id="step1-title" step={1} title="Dit wordt verwijderd" />
+              <StepTitle id="step1-title" step={1} title={t('pagesBody.delete.step1')} />
               <ul className="m-0 flex list-none flex-col p-0">
                 {items.map((item) => (
                   <li key={item.title} className="flex items-center gap-3.5 border-b border-line-soft py-3 last:border-b-0">
@@ -135,28 +131,29 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
                 ))}
               </ul>
               <div className="flex flex-col gap-1 border-t border-line-soft pt-4">
-                <h3 className="m-0 font-sans text-[15px] font-extrabold">Wat we wel bewaren</h3>
+                <h3 className="m-0 font-sans text-[15px] font-extrabold">{t('pagesBody.delete.keepTitle')}</h3>
                 <p className="m-0 text-[15px] leading-[23px] font-semibold text-ink-soft">
-                  Voor de belasting en de wet bewaren we anonieme gegevens van aankopen. Die zijn na het verwijderen niet
-                  meer aan jou gekoppeld.
+                  {t('pagesBody.delete.keepText')}
                 </p>
               </div>
             </Card>
 
             {!deleted && (
               <Card as="section" padding="none" aria-labelledby="step2-title" className="flex flex-col gap-5 px-4 py-5 m:p-7">
-                <StepTitle id="step2-title" step={2} title="Bevestigen" />
+                <StepTitle id="step2-title" step={2} title={t('pagesBody.delete.step2')} />
                 <div className="flex items-start gap-3.5">
                   <span aria-hidden="true" className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-gold-tint">
                     <CrownSolidIcon size={20} />
                   </span>
                   <p className="m-0 text-[15px] leading-[23px] font-semibold text-ink-soft">
-                    <span className="font-extrabold text-ink">Heb je Premium?</span> Zeg je abonnement eerst op via{' '}
-                    <Link href={signedIn ? '/instellingen#abonnement' : '/premium'} className="font-bold underline">
-                      Premium beheren
-                    </Link>
-                    , of in de App Store of Google Play als je het daar hebt gekocht. Verwijderen stopt een abonnement niet
-                    vanzelf.
+                    {rich(t('pagesBody.delete.premiumNote'), {
+                      head: <span className="font-extrabold text-ink">{t('pagesBody.delete.premiumHead')}</span>,
+                      link: (
+                        <Link href={signedIn ? '/instellingen#abonnement' : '/premium'} className="font-bold underline">
+                          {t('account.settings.managePremium')}
+                        </Link>
+                      ),
+                    })}
                   </p>
                 </div>
                 {signedIn ? (
@@ -164,11 +161,11 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
                 ) : (
                   <div className="flex flex-col gap-4">
                     <p className="m-0 text-[15px] leading-[23px] font-semibold text-ink-soft">
-                      Log in met het account dat je wilt verwijderen. Daarna bevestig je het hier.
+                      {t('pagesBody.delete.loginText')}
                     </p>
                     <div>
                       <Button href="/inloggen?callbackUrl=%2Faccount-verwijderen" size="xl">
-                        Inloggen om te verwijderen
+                        {t('pagesBody.delete.loginButton')}
                       </Button>
                     </div>
                   </div>
@@ -181,10 +178,10 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
             <Card as="section" padding="none" aria-labelledby="mail-title" className="flex flex-col gap-4 px-4 py-5 m:p-6">
               <div className="flex flex-col gap-1.5">
                 <h2 id="mail-title" className="m-0 text-xl leading-[26px]">
-                  Kun je niet meer inloggen?
+                  {t('pagesBody.delete.cantLogin')}
                 </h2>
                 <p className="m-0 text-[15px] leading-[23px] font-semibold text-ink-soft">
-                  Mail ons vanaf het e-mailadres van je account. We verwerken je verzoek binnen 14 dagen.
+                  {t('pagesBody.delete.mailText')}
                 </p>
               </div>
               <a
@@ -198,10 +195,10 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
 
             <Card as="section" padding="none" aria-labelledby="app-title" className="flex flex-col gap-3.5 px-4 py-5 m:p-6">
               <h2 id="app-title" className="m-0 text-xl leading-[26px]">
-                Liever in de app?
+                {t('pagesBody.delete.inApp')}
               </h2>
               <ol className="m-0 flex list-none flex-col gap-2.5 p-0">
-                {['Open Profiel', 'Tik op het tandwiel', 'Kies Account verwijderen'].map((step, index) => (
+                {tList('pagesBody.delete.appSteps').map((step, index) => (
                   <li key={step} className="flex items-center gap-2.5 text-[15px] font-bold">
                     <span
                       aria-hidden="true"
@@ -216,11 +213,13 @@ export default async function DeleteAccountPage({ searchParams }: { searchParams
             </Card>
 
             <p className="m-0 mx-1 text-[15px] leading-[23px] font-semibold text-ink-muted">
-              Meer over je gegevens lees je in het{' '}
-              <Link href="/privacybeleid" className="font-bold underline">
-                privacybeleid
-              </Link>
-              .
+              {rich(t('pagesBody.delete.moreData'), {
+                link: (
+                  <Link href="/privacybeleid" className="font-bold underline">
+                    {t('pagesBody.delete.privacyWord')}
+                  </Link>
+                ),
+              })}
             </p>
           </aside>
         </div>

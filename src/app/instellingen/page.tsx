@@ -37,10 +37,10 @@ export default async function InstellingenPage({ searchParams }: { searchParams:
   }
 
   const signInMethod = user.password
-    ? 'Ingelogd met e-mail en wachtwoord'
+    ? t('pagesBody.settings.signInEmail')
     : user.appleId
-      ? 'Ingelogd met Apple'
-      : 'Ingelogd met Google';
+      ? t('pagesBody.settings.signInApple')
+      : t('pagesBody.settings.signInGoogle');
 
   return (
     <SettingsView
@@ -58,22 +58,22 @@ export default async function InstellingenPage({ searchParams }: { searchParams:
 /** What the "Premium beheren" row says, and where it goes. */
 async function premiumRow(user: Parameters<typeof getPremiumSnapshot>[0] & Parameters<typeof resolvePremiumSubscription>[0]): Promise<PremiumRow> {
   const snapshot = getPremiumSnapshot(user);
-  if (!snapshot.isPremium) return { label: 'Je speelt gratis', action: 'link', href: '/premium' };
-  if (user.hasLifetimePremium) return { label: 'Levenslang Premium', action: 'link', href: '/premium' };
+  if (!snapshot.isPremium) return { label: t('pagesBody.settings.free'), action: 'link', href: '/premium' };
+  if (user.hasLifetimePremium) return { label: t('pagesBody.settings.lifetime'), action: 'link', href: '/premium' };
 
   // Only a running subscription: an ended one must not hide app or group Premium.
   if (hasActiveStripeSubscription(user)) {
     const subscription = await resolvePremiumSubscription(user);
     const label = subscription.cancelAtPeriodEnd
-      ? `Opgezegd, actief tot ${subscription.endDateLabel || 'het einde van de periode'}`
+      ? t('pagesBody.settings.cancelledUntil', { date: subscription.endDateLabel || t('pagesBody.settings.endOfPeriod') })
       : subscription.endDateLabel
-        ? `${subscription.statusText}, verlengt op ${subscription.endDateLabel}`
+        ? t('pagesBody.settings.renews', { status: subscription.statusText, date: subscription.endDateLabel })
         : subscription.statusText;
     // The Stripe portal: change payment details, see invoices, cancel.
     return { label, action: 'portal' };
   }
 
-  if (snapshot.premiumStore) return { label: 'Premium via de App Store of Google Play', action: 'link', href: '/premium' };
-  if (snapshot.premiumGroup) return { label: 'Premium via een groepslicentie', action: 'link', href: '/groepslicentie' };
-  return { label: 'Premium actief', action: 'link', href: '/premium' };
+  if (snapshot.premiumStore) return { label: t('pagesBody.settings.viaStore'), action: 'link', href: '/premium' };
+  if (snapshot.premiumGroup) return { label: t('pagesBody.settings.viaGroup'), action: 'link', href: '/groepslicentie' };
+  return { label: t('pagesBody.settings.active'), action: 'link', href: '/premium' };
 }

@@ -32,7 +32,7 @@ export default function HelpPage() {
 
       <Container as="section" aria-labelledby="more-help-title" className="pb-20 pt-12 m:pt-[72px]">
         <h2 id="more-help-title" className="m-0 text-[26px] leading-8">
-          Niet gevonden wat je zocht?
+          {t('pagesBody.help.notFound')}
         </h2>
         <div className="mt-5 grid grid-cols-1 gap-4 m:grid-cols-2">
           <div className="flex items-start gap-4 rounded-[16px] border border-line bg-card p-6">
@@ -40,10 +40,10 @@ export default function HelpPage() {
               <MailIcon />
             </IconTile>
             <div className="flex min-w-0 flex-1 flex-col items-start gap-1">
-              <h3 className="m-0 font-sans text-[17px] font-extrabold">Stel je vraag</h3>
-              <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-muted">We reageren meestal binnen 1 tot 2 werkdagen.</p>
+              <h3 className="m-0 font-sans text-[17px] font-extrabold">{t('pagesBody.help.ask')}</h3>
+              <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-muted">{t('pagesBody.help.response')}</p>
               <Button href="/contact" variant="secondary" size="lg" className="mt-3 px-[22px]">
-                Neem contact op
+                {t('pagesBody.help.contact')}
               </Button>
             </div>
           </div>
@@ -52,12 +52,12 @@ export default function HelpPage() {
               <AlertIcon />
             </IconTile>
             <div className="flex min-w-0 flex-1 flex-col items-start gap-1">
-              <h3 className="m-0 font-sans text-[17px] font-extrabold">Iets werkt niet goed?</h3>
+              <h3 className="m-0 font-sans text-[17px] font-extrabold">{t('pagesBody.report.title')}</h3>
               <p className="m-0 text-[15px] font-semibold leading-[22px] text-ink-muted">
-                Meld een fout met de pagina en wat je deed, dan zoeken we het uit.
+                {t('pagesBody.help.reportText')}
               </p>
               <Button href="/foutmelding#melden" variant="secondary" size="lg" className="mt-3 px-[22px]">
-                Fout melden
+                {t('pagesBody.help.report')}
               </Button>
             </div>
           </div>

@@ -8,6 +8,8 @@ import { DUEL_RULES_LINE } from '@/components/web2/duels/format';
 import { authOptions } from '@/lib/auth';
 import { getInvitePreview, type InvitePreview } from '@/lib/duels/service';
 import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
+import { notFound } from 'next/navigation';
 
 /**
  * Where a shared duel link lands.
@@ -42,6 +44,8 @@ async function loadInvite(token: string): Promise<InvitePreview | null> {
 }
 
 export default async function DuelInvitePage({ params }: PageProps) {
+  // Dutch-only: the sister product and the legacy duels have no intl version.
+  if (!isNlSite()) notFound();
   const { token } = await params;
   const [invite, session] = await Promise.all([loadInvite(token), getServerSession(authOptions)]);
   const userId = session?.user?.id ? String(session.user.id) : null;

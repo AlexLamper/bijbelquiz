@@ -82,7 +82,7 @@ export default async function ProfilePage() {
       name: badge.name,
       // The rule behind "Allrounder" is a number of different quizzes; the
       // description says so rather than promise categories it does not count.
-      description: badge.id === 'all_rounder' ? `Speel ${ALL_ROUNDER_QUIZZES} verschillende quizzen.` : badge.description,
+      description: badge.id === 'all_rounder' ? t('pagesBody.profile.allRounder', { n: ALL_ROUNDER_QUIZZES }) : badge.description,
       icon: badge.icon,
       earned: earned.has(badge.id),
       current: Math.min(current, target),
@@ -90,13 +90,13 @@ export default async function ProfilePage() {
     };
   });
 
-  const memberSince = new Date(user.createdAt).toLocaleDateString('nl-NL', { month: 'long', year: 'numeric' });
+  const memberSince = new Date(user.createdAt).toLocaleDateString(t('bq.header.numberLocale'), { month: 'long', year: 'numeric' });
 
   return (
     <Container>
       <ProfileView
         identity={{
-          name: user.name || 'Naamloos',
+          name: user.name || t('pagesBody.profile.unnamed'),
           avatar: resolveAvatar(user.avatar, userId),
           nameChangeAllowedInDays: daysUntilRenameAllowed(user.nameUpdatedAt),
           memberSince,
@@ -125,8 +125,8 @@ export default async function ProfilePage() {
 /** The verse of the day from BijbelAPI; a fixed verse when it is unreachable. */
 async function fetchDailyVerse(): Promise<{ reference: string; text: string }> {
   const fallback = {
-    reference: 'Psalm 119:105',
-    text: 'Uw woord is een lamp voor mijn voet en een licht op mijn pad.',
+    reference: t('pagesBody.profile.verseRef'),
+    text: t('pagesBody.profile.verseText'),
   };
 
   try {
