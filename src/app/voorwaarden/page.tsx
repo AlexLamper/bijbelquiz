@@ -11,66 +11,16 @@ export function generateMetadata(): Metadata {
   };
 }
 
-const SECTIONS: LegalSection[] = [
-  {
-    id: 'algemeen',
-    title: '1. Algemeen',
-    content: (
-      <LegalText>
-        Door gebruik te maken van BijbelQuiz gaat u akkoord met deze algemene voorwaarden. Deze voorwaarden zijn van
-        toepassing op alle diensten die wij aanbieden.
-      </LegalText>
-    ),
-  },
-  {
-    id: 'gebruik',
-    title: '2. Gebruik van de dienst',
-    content: (
-      <LegalText>
-        Het is niet toegestaan accounts van anderen te gebruiken of de veiligheid van de dienst te compromitteren. Wij
-        behouden ons het recht voor accounts te blokkeren bij misbruik.
-      </LegalText>
-    ),
-  },
-  {
-    id: 'premium',
-    title: '3. Premium lidmaatschap',
-    content: (
-      <LegalText>
-        Premium lidmaatschap wordt aangegaan via betaling. Eventuele opzegging en voorwaarden voor terugbetaling
-        verlopen volgens het gekozen betaalmodel en geldende wetgeving.
-      </LegalText>
-    ),
-  },
-  {
-    id: 'eigendom',
-    title: '4. Intellectueel eigendom',
-    content: (
-      <LegalText>
-        Alle quizvragen, logo&apos;s en software zijn eigendom van BijbelQuiz. Kopiëren zonder toestemming is niet
-        toegestaan.
-      </LegalText>
-    ),
-  },
-  {
-    id: 'aansprakelijkheid',
-    title: '5. Aansprakelijkheid',
-    content: (
-      <LegalText>
-        Wij streven naar correctheid, maar kunnen fouten in vragen of antwoorden niet volledig uitsluiten. Wij zijn niet
-        aansprakelijk voor schade voortvloeiend uit gebruik van de dienst.
-      </LegalText>
-    ),
-  },
-];
+function sections(): LegalSection[] {
+  return [
+    { id: 'algemeen', title: t('termsPage.s1.title'), content: <LegalText>{t('termsPage.s1.text')}</LegalText> },
+    { id: 'gebruik', title: t('termsPage.s2.title'), content: <LegalText>{t('termsPage.s2.text')}</LegalText> },
+    { id: 'premium', title: t('termsPage.s3.title'), content: <LegalText>{t('termsPage.s3.text')}</LegalText> },
+    { id: 'eigendom', title: t('termsPage.s4.title'), content: <LegalText>{t('termsPage.s4.text')}</LegalText> },
+    { id: 'aansprakelijkheid', title: t('termsPage.s5.title'), content: <LegalText>{t('termsPage.s5.text')}</LegalText> },
+  ];
+}
 
 export default function TermsPage() {
-  return (
-    <LegalPage
-      active="voorwaarden"
-      title="Algemene voorwaarden"
-      meta="Deze voorwaarden zijn van toepassing op het gebruik van BijbelQuiz en bijbehorende diensten."
-      sections={SECTIONS}
-    />
-  );
+  return <LegalPage active="voorwaarden" title={t('termsPage.title')} meta={t('termsPage.meta')} sections={sections()} />;
 }

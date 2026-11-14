@@ -1215,6 +1215,107 @@
     "wachtwoord-vergeten": {
       "title": "Wachtwoord vergeten | BijbelQuiz",
       "description": "Vraag een link aan om een nieuw wachtwoord voor je BijbelQuiz account te kiezen."
+    },
+    "quizPage": {
+      "notFoundTitle": "Bijbelquiz niet gevonden | BijbelQuiz",
+      "notFoundDescription": "Deze bijbelquiz bestaat niet of is nog niet beschikbaar.",
+      "defaultCategory": "Bijbel",
+      "title": "{quiz} bijbelquiz | {category} quiz spelen",
+      "description": "Speel de {quiz} bijbelquiz online. Test je kennis met vragen over {category} en krijg direct feedback op je antwoorden.",
+      "ogTitle": "{quiz} bijbelquiz",
+      "kw1": "{quiz} bijbelquiz",
+      "kw2": "{quiz} quiz",
+      "kw3": "{category} bijbelquiz",
+      "kw4": "bijbelquiz online",
+      "kw5": "bijbelvragen en antwoorden"
+    },
+    "quizLegacy": {
+      "notFound": "Quiz niet gevonden",
+      "title": "{quiz} - {category} Quiz | BijbelQuiz",
+      "description": "Test je kennis over {quiz}. Een interactieve {category} quiz met vragen over de Bijbel. Gratis spelen op BijbelQuiz.com.",
+      "kwCategory": "{category} quiz",
+      "ogTitle": "{quiz} | De Ultieme Bijbelquiz",
+      "ogDescription": "Doe de {quiz} quiz en zie direct je score!",
+      "twitterDescription": "Speel de {quiz} quiz nu op BijbelQuiz.com",
+      "keywords": [
+        "bijbelquiz",
+        "online quiz",
+        "christelijke kennis",
+        "bijbelstudie"
+      ]
+    }
+  },
+  "privacyPage": {
+    "metaUpdated": "Laatst bijgewerkt: 8 april 2026",
+    "title": "Privacybeleid",
+    "s1": {
+      "title": "1. Inleiding",
+      "text": "Welkom bij BijbelQuiz. Wij hechten veel waarde aan uw privacy en de bescherming van uw persoonsgegevens. In dit privacybeleid leggen we uit welke gegevens we verzamelen, waarom we deze verzamelen en hoe we hiermee omgaan wanneer u onze app of website gebruikt."
+    },
+    "s2": {
+      "title": "2. Welke gegevens we verzamelen",
+      "intro": "Wanneer u BijbelQuiz gebruikt, kunnen wij de volgende gegevens verwerken:",
+      "i1": "{label} e-mailadres, naam en profielfoto wanneer u inlogt via bijvoorbeeld Google.",
+      "l1": "Persoonlijke identificatiegegevens:",
+      "i2": "{label} scores, voltooide quizzen en voortgang om uw ervaring te verbeteren.",
+      "l2": "App-activiteit en voortgang:",
+      "i3": "{label} bij Premium-aankopen verwerken wij statusinformatie via onze betalingsprovider. Wij hebben geen toegang tot uw kaartgegevens.",
+      "l3": "Aankoopgeschiedenis:"
+    },
+    "s3": {
+      "title": "3. Hoe we uw gegevens gebruiken",
+      "intro": "Wij gebruiken uw gegevens voor de volgende doeleinden:",
+      "items": [
+        "Uw account aanmaken en beheren.",
+        "Voortgang en resultaten opslaan en synchroniseren.",
+        "Premium-functionaliteiten verifiëren.",
+        "Stabiliteit en prestaties analyseren en verbeteren."
+      ]
+    },
+    "s4": {
+      "title": "4. Gegevens delen met derden",
+      "text": "Wij verkopen uw persoonsgegevens nooit aan derden."
+    },
+    "s5": {
+      "title": "5. Gegevensbeveiliging",
+      "text": "Wij nemen passende technische en organisatorische maatregelen. Alle communicatie met onze servers verloopt versleuteld via HTTPS."
+    },
+    "s6": {
+      "title": "6. Uw rechten en gegevensverwijdering",
+      "text": "U heeft het recht om inzage, correctie of verwijdering van uw gegevens aan te vragen. Dit kan via support of via de verwijderoptie in uw accountinstellingen.",
+      "link": "Account verwijderen"
+    },
+    "s7": {
+      "title": "7. Cookies",
+      "text": "Op onze website gebruiken wij alleen functionele cookies, bijvoorbeeld om ingelogd te blijven tijdens uw sessie."
+    },
+    "s8": {
+      "title": "8. Contact",
+      "text": "Heeft u vragen over dit privacybeleid? Neem contact op via {email}."
+    }
+  },
+  "termsPage": {
+    "title": "Algemene voorwaarden",
+    "meta": "Deze voorwaarden zijn van toepassing op het gebruik van BijbelQuiz en bijbehorende diensten.",
+    "s1": {
+      "title": "1. Algemeen",
+      "text": "Door gebruik te maken van BijbelQuiz gaat u akkoord met deze algemene voorwaarden. Deze voorwaarden zijn van toepassing op alle diensten die wij aanbieden."
+    },
+    "s2": {
+      "title": "2. Gebruik van de dienst",
+      "text": "Het is niet toegestaan accounts van anderen te gebruiken of de veiligheid van de dienst te compromitteren. Wij behouden ons het recht voor accounts te blokkeren bij misbruik."
+    },
+    "s3": {
+      "title": "3. Premium lidmaatschap",
+      "text": "Premium lidmaatschap wordt aangegaan via betaling. Eventuele opzegging en voorwaarden voor terugbetaling verlopen volgens het gekozen betaalmodel en geldende wetgeving."
+    },
+    "s4": {
+      "title": "4. Intellectueel eigendom",
+      "text": "Alle quizvragen, logo's en software zijn eigendom van BijbelQuiz. Kopiëren zonder toestemming is niet toegestaan."
+    },
+    "s5": {
+      "title": "5. Aansprakelijkheid",
+      "text": "Wij streven naar correctheid, maar kunnen fouten in vragen of antwoorden niet volledig uitsluiten. Wij zijn niet aansprakelijk voor schade voortvloeiend uit gebruik van de dienst."
     }
   }
 }

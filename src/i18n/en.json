@@ -1183,6 +1183,107 @@
     "wachtwoord-vergeten": {
       "title": "Forgot password | Bible Quizzes",
       "description": "Request a link to choose a new password for your Bible Quizzes account."
+    },
+    "quizPage": {
+      "notFoundTitle": "Bible quiz not found | Bible Quizzes",
+      "notFoundDescription": "This Bible quiz does not exist or is not available yet.",
+      "defaultCategory": "Bible",
+      "title": "{quiz} Bible quiz | Play the {category} quiz",
+      "description": "Play the {quiz} Bible quiz online. Test your knowledge with questions about {category} and get instant feedback on your answers.",
+      "ogTitle": "{quiz} Bible quiz",
+      "kw1": "{quiz} Bible quiz",
+      "kw2": "{quiz} quiz",
+      "kw3": "{category} Bible quiz",
+      "kw4": "Bible quiz online",
+      "kw5": "Bible questions and answers"
+    },
+    "quizLegacy": {
+      "notFound": "Quiz not found",
+      "title": "{quiz} - {category} Quiz | Bible Quizzes",
+      "description": "Test your knowledge of {quiz}. An interactive {category} quiz with questions about the Bible. Play for free on biblequizzes.app.",
+      "kwCategory": "{category} quiz",
+      "ogTitle": "{quiz} | The Ultimate Bible Quiz",
+      "ogDescription": "Take the {quiz} quiz and see your score right away!",
+      "twitterDescription": "Play the {quiz} quiz now on biblequizzes.app",
+      "keywords": [
+        "bible quiz",
+        "online quiz",
+        "christian knowledge",
+        "bible study"
+      ]
+    }
+  },
+  "privacyPage": {
+    "metaUpdated": "Last updated: April 8, 2026",
+    "title": "Privacy Policy",
+    "s1": {
+      "title": "1. Introduction",
+      "text": "Welcome to Bible Quizzes. We value your privacy and the protection of your personal data. In this privacy policy we explain which data we collect, why we collect it and how we handle it when you use our app or website."
+    },
+    "s2": {
+      "title": "2. Which data we collect",
+      "intro": "When you use Bible Quizzes, we may process the following data:",
+      "i1": "{label} email address, name and profile picture when you sign in through, for example, Google.",
+      "l1": "Personal identification data:",
+      "i2": "{label} scores, completed quizzes and progress, to improve your experience.",
+      "l2": "App activity and progress:",
+      "i3": "{label} for Premium purchases we process status information through our payment provider. We have no access to your card details.",
+      "l3": "Purchase history:"
+    },
+    "s3": {
+      "title": "3. How we use your data",
+      "intro": "We use your data for the following purposes:",
+      "items": [
+        "Creating and managing your account.",
+        "Saving and syncing progress and results.",
+        "Verifying Premium features.",
+        "Analysing and improving stability and performance."
+      ]
+    },
+    "s4": {
+      "title": "4. Sharing data with third parties",
+      "text": "We never sell your personal data to third parties."
+    },
+    "s5": {
+      "title": "5. Data security",
+      "text": "We take appropriate technical and organisational measures. All communication with our servers is encrypted via HTTPS."
+    },
+    "s6": {
+      "title": "6. Your rights and data deletion",
+      "text": "You have the right to request access to, correction of or deletion of your data. You can do this through support or through the delete option in your account settings.",
+      "link": "Delete account"
+    },
+    "s7": {
+      "title": "7. Cookies",
+      "text": "On our website we only use functional cookies, for example to keep you signed in during your session."
+    },
+    "s8": {
+      "title": "8. Contact",
+      "text": "Do you have questions about this privacy policy? Contact us at {email}."
+    }
+  },
+  "termsPage": {
+    "title": "Terms and Conditions",
+    "meta": "These terms apply to the use of Bible Quizzes and related services.",
+    "s1": {
+      "title": "1. General",
+      "text": "By using Bible Quizzes you agree to these terms and conditions. These terms apply to all services we offer."
+    },
+    "s2": {
+      "title": "2. Use of the service",
+      "text": "You may not use other people's accounts or compromise the security of the service. We reserve the right to block accounts in case of misuse."
+    },
+    "s3": {
+      "title": "3. Premium membership",
+      "text": "Premium membership is entered into by payment. Any cancellation and refund conditions follow the chosen payment model and applicable law."
+    },
+    "s4": {
+      "title": "4. Intellectual property",
+      "text": "All quiz questions, logos and software are the property of Bible Quizzes. Copying without permission is not allowed."
+    },
+    "s5": {
+      "title": "5. Liability",
+      "text": "We strive for accuracy, but cannot completely rule out errors in questions or answers. We are not liable for damage resulting from use of the service."
     }
   }
 }

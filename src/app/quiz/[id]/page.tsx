@@ -9,6 +9,8 @@ import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { normalizeUserSettings } from '@/lib/user-settings';
 import { canPlayQuiz, lockedPaywallHref } from '@/lib/free-quiz-limit';
 import { getFreeQuizAllowanceForUser } from '@/lib/free-quiz-limit-server';
+import { getSiteConfig } from '@/config/site';
+import { t, tList } from '@/i18n';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -46,29 +48,29 @@ export async function generateMetadata(
 
   if (!quiz) {
     return {
-      title: 'Quiz niet gevonden',
+      title: t('pages.quizLegacy.notFound'),
     };
   }
 
-  const categoryTitle = (quiz.categoryId as ICategory)?.title || 'Bijbel';
+  const categoryTitle = (quiz.categoryId as ICategory)?.title || t('pages.quizPage.defaultCategory');
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
-    title: `${quiz.title} - ${categoryTitle} Quiz | BijbelQuiz`,
-    description: quiz.description || `Test je kennis over ${quiz.title}. Een interactieve ${categoryTitle} quiz met vragen over de Bijbel. Gratis spelen op BijbelQuiz.com.`,
-    keywords: [`${quiz.title} quiz`, `${categoryTitle} quiz`, 'bijbelquiz', 'online quiz', 'christelijke kennis', 'bijbelstudie'],
+    title: t('pages.quizLegacy.title', { quiz: quiz.title, category: categoryTitle }),
+    description: quiz.description || t('pages.quizLegacy.description', { quiz: quiz.title, category: categoryTitle }),
+    keywords: [t('pages.quizPage.kw2', { quiz: quiz.title }), t('pages.quizLegacy.kwCategory', { category: categoryTitle }), ...tList('pages.quizLegacy.keywords')],
     openGraph: {
-      title: `${quiz.title} | De Ultieme Bijbelquiz`,
-      description: quiz.description || `Doe de ${quiz.title} quiz en zie direct je score!`,
+      title: t('pages.quizLegacy.ogTitle', { quiz: quiz.title }),
+      description: quiz.description || t('pages.quizLegacy.ogDescription', { quiz: quiz.title }),
       type: 'website',
-      url: `https://www.bijbelquiz.com/quiz/${quiz.slug || quiz._id}`,
+      url: `${getSiteConfig().baseUrl}/quiz/${quiz.slug || quiz._id}`,
       images: previousImages,
-      siteName: 'BijbelQuiz',
+      siteName: getSiteConfig().brand,
     },
     twitter: {
       card: 'summary_large_image',
       title: quiz.title,
-      description: quiz.description || `Speel de ${quiz.title} quiz nu op BijbelQuiz.com`,
+      description: quiz.description || t('pages.quizLegacy.twitterDescription', { quiz: quiz.title }),
     },
     alternates: {
       canonical: `/quiz/${quiz.slug || quiz._id}`,

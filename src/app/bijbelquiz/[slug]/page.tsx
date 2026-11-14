@@ -21,6 +21,8 @@ import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { getSiteBaseUrl } from '@/lib/sitemap';
 import { cn } from '@/lib/utils';
 import { quizzenHref } from '@/components/web2/browsing/quizzen-view';
+import { isNlSite, getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -90,7 +92,7 @@ function verseSpan(questions: QuestionRefs[], code: string, chapter: number): st
   return from === to ? `${chapter}:${from}` : `${chapter}:${from}-${to}`;
 }
 
-const playedOn = new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', timeZone: 'Europe/Amsterdam' });
+const playedOn = new Intl.DateTimeFormat(t('bq.header.numberLocale'), { day: 'numeric', month: 'long', timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined });
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -98,16 +100,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!quiz) {
     return {
-      title: 'Bijbelquiz niet gevonden | BijbelQuiz',
-      description: 'Deze bijbelquiz bestaat niet of is nog niet beschikbaar.',
+      title: t('pages.quizPage.notFoundTitle'),
+      description: t('pages.quizPage.notFoundDescription'),
     };
   }
 
-  const category = quiz.categoryId?.title || 'Bijbel';
-  const title = `${quiz.title} bijbelquiz | ${category} quiz spelen`;
+  const category = quiz.categoryId?.title || t('pages.quizPage.defaultCategory');
+  const title = t('pages.quizPage.title', { quiz: quiz.title, category });
   const description =
     quiz.description ||
-    `Speel de ${quiz.title} bijbelquiz online. Test je kennis met vragen over ${category} en krijg direct feedback op je antwoorden.`;
+    t('pages.quizPage.description', { quiz: quiz.title, category });
 
   return {
     title,
@@ -116,16 +118,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/bijbelquiz/${quiz.slug || slug}`,
     },
     openGraph: {
-      title: `${quiz.title} bijbelquiz`,
+      title: t('pages.quizPage.ogTitle', { quiz: quiz.title }),
       description,
-      url: `https://www.bijbelquiz.com/bijbelquiz/${quiz.slug || slug}`,
+      url: `${getSiteConfig().baseUrl}/bijbelquiz/${quiz.slug || slug}`,
     },
     keywords: [
-      `${quiz.title} bijbelquiz`,
-      `${quiz.title} quiz`,
-      `${category} bijbelquiz`,
-      'bijbelquiz online',
-      'bijbelvragen en antwoorden',
+      t('pages.quizPage.kw1', { quiz: quiz.title }),
+      t('pages.quizPage.kw2', { quiz: quiz.title }),
+      t('pages.quizPage.kw3', { category }),
+      t('pages.quizPage.kw4'),
+      t('pages.quizPage.kw5'),
     ],
   };
 }
