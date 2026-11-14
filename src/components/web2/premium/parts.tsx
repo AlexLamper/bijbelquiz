@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
+import { t, tList } from '@/i18n';
 
 /**
  * Small pieces the Premium, Premium-succes and Groepslicentie pages share,
@@ -67,16 +68,12 @@ export function ShieldIcon() {
 }
 
 /** The 3 benefit lines, copy exactly as decided in the review. */
-export const PREMIUM_BENEFITS = [
-  'Alle quizzen, zo vaak je wilt',
-  'Uitleg bij elk antwoord',
-  'Je antwoorden terugkijken na elke quiz',
-] as const;
+export const premiumBenefits = () => tList('premium.benefits');
 
 export function BenefitList({ className }: { className?: string }) {
   return (
     <ul className={cn('m-0 flex list-none flex-col gap-3 p-0', className)}>
-      {PREMIUM_BENEFITS.map((benefit) => (
+      {premiumBenefits().map((benefit) => (
         <li key={benefit} className="flex items-center gap-3 text-[17px] font-bold text-ink">
           <CheckDisc />
           {benefit}
@@ -86,11 +83,12 @@ export function BenefitList({ className }: { className?: string }) {
   );
 }
 
-const PREVIEW_ROWS = [
-  { short: 'Gen', title: 'Genesis', testament: 'Oude Testament', tone: 'bg-green-tint text-green', free: true },
-  { short: 'Ps', title: 'Psalmen', testament: 'Oude Testament', tone: 'bg-lapis-tint text-lapis', free: false },
-  { short: 'Opb', title: 'Openbaring', testament: 'Nieuwe Testament', tone: 'bg-coral-tint text-coral-text', free: false },
-] as const;
+const previewRows = () =>
+  [
+    { short: t('premium.preview.genShort'), title: t('premium.preview.genesis'), testament: t('premium.preview.ot'), tone: 'bg-green-tint text-green', free: true },
+    { short: t('premium.preview.psShort'), title: t('premium.preview.psalms'), testament: t('premium.preview.ot'), tone: 'bg-lapis-tint text-lapis', free: false },
+    { short: t('premium.preview.revShort'), title: t('premium.preview.revelation'), testament: t('premium.preview.nt'), tone: 'bg-coral-tint text-coral-text', free: false },
+  ] as const;
 
 /**
  * The tilted quiz list with the gold sticker.
@@ -106,8 +104,8 @@ export function PremiumPreview({ variant, className }: { variant: 'locked' | 'op
       role="img"
       aria-label={
         open
-          ? 'Alle quizzen staan nu open, ook Psalmen en Openbaring'
-          : 'Gratis speel je 3 quizzen. Met Premium gaan alle bijbelboeken open, ook Psalmen en Openbaring.'
+          ? t('premium.preview.openAria')
+          : t('premium.preview.lockedAria')
       }
       className={cn(
         'relative box-border flex max-w-full justify-center',
@@ -128,11 +126,11 @@ export function PremiumPreview({ variant, className }: { variant: 'locked' | 'op
           open ? 'w-[310px]' : 'w-[320px]',
         )}
       >
-        <span className="pb-0.5 text-xs font-extrabold text-ink-muted">Quizzen</span>
-        {PREVIEW_ROWS.map((row, index) => (
+        <span className="pb-0.5 text-xs font-extrabold text-ink-muted">{t('premium.preview.quizzes')}</span>
+        {previewRows().map((row, index) => (
           <span
             key={row.title}
-            className={cn('flex items-center gap-3 py-2.5', index < PREVIEW_ROWS.length - 1 && 'border-b border-line-soft')}
+            className={cn('flex items-center gap-3 py-2.5', index < previewRows().length - 1 && 'border-b border-line-soft')}
           >
             <span className={cn('flex size-9 shrink-0 items-center justify-center rounded-[10px] text-xs font-extrabold', row.tone)}>
               {row.short}
@@ -144,14 +142,14 @@ export function PremiumPreview({ variant, className }: { variant: 'locked' | 'op
             {open ? (
               <span className="flex h-6 items-center gap-1 rounded-full bg-green-tint px-[9px] text-xs font-extrabold text-green-text">
                 <CheckIcon size={11} />
-                Open
+                {t('premium.preview.open')}
               </span>
             ) : row.free ? (
-              <span className="flex h-6 items-center rounded-full bg-green-tint px-[9px] text-xs font-extrabold text-green-text">Gratis</span>
+              <span className="flex h-6 items-center rounded-full bg-green-tint px-[9px] text-xs font-extrabold text-green-text">{t('premium.preview.free')}</span>
             ) : (
               <span className="flex h-6 items-center gap-1 rounded-full bg-gold-tint px-[9px] text-xs font-extrabold text-gold-text">
                 <LockIcon />
-                Premium
+                {t('premium.preview.premium')}
               </span>
             )}
           </span>
@@ -164,7 +162,7 @@ export function PremiumPreview({ variant, className }: { variant: 'locked' | 'op
         )}
       >
         <CrownIcon className="fill-white stroke-gold-ink" />
-        {open ? 'Premium is actief' : 'Met Premium alles open'}
+        {open ? t('premium.preview.active') : t('premium.preview.all')}
       </span>
     </div>
   );

@@ -21,6 +21,7 @@ import {
 } from '@/lib/premium-offer';
 import { cn } from '@/lib/utils';
 import { CheckIcon, ShieldIcon } from './parts';
+import { t } from '@/i18n';
 
 export interface PlanPickerProps {
   prices: PremiumPriceLabels;
@@ -119,22 +120,22 @@ export function PlanPicker({
     <div className="box-border flex flex-col rounded-[20px] border border-line bg-card px-7 pb-[26px] pt-8 max-m:p-5">
       {checkoutCancelled && (
         <p role="status" className="m-0 mb-4 rounded-[12px] bg-chip px-4 py-3 text-center text-[15px] font-bold text-ink-soft">
-          Je betaling is niet afgerond. Kies opnieuw wanneer je wilt.
+          {t('premium.checkoutCancelled')}
         </p>
       )}
 
       {cardPlans.length > 0 && (
         <div
           role="radiogroup"
-          aria-label="Kies een abonnement"
+          aria-label={t('premium.choosePlan')}
           className={cn('grid gap-3.5 pt-3', cardPlans.length === 2 ? 'grid-cols-2' : 'grid-cols-1')}
         >
           {cardPlans.map((id) => {
             const selected = plan === id;
             const yearly = id === 'yearly';
             const perWeek = weekly[id];
-            const billed = `${yearly ? prices.yearly : prices.monthly} ${yearly ? 'per jaar' : 'per maand'}`;
-            const badge = yearly ? (yearlyTrial ? trialDaysLabel(trialDays) : savings ? `Bespaar ${savings}%` : null) : null;
+            const billed = `${yearly ? prices.yearly : prices.monthly} ${yearly ? t('premium.perYear') : t('premium.perMonth')}`;
+            const badge = yearly ? (yearlyTrial ? trialDaysLabel(trialDays) : savings ? t('premium.save', { savings }) : null) : null;
             return (
               <button
                 key={id}
@@ -158,21 +159,21 @@ export function PlanPicker({
                   </span>
                 )}
                 <span className={cn('text-[15px] font-extrabold', selected ? 'text-lapis' : 'text-ink-muted')}>
-                  {yearly ? 'Jaarlijks' : 'Maandelijks'}
+                  {yearly ? t('premium.yearly') : t('premium.monthly')}
                 </span>
                 {perWeek ? (
                   <>
                     <span className="mt-0.5 text-[34px] font-extrabold leading-[38px] tracking-[-0.01em] max-m:text-[30px] max-m:leading-[34px]">
                       {perWeek}
                     </span>
-                    <span className="text-sm font-bold text-ink-soft">per week</span>
+                    <span className="text-sm font-bold text-ink-soft">{t('premium.perWeek')}</span>
                     <span className="mt-1.5 rounded-full bg-chip px-2.5 py-0.5 text-[13px] font-extrabold text-ink">{billed}</span>
                   </>
                 ) : (
                   // A price label that cannot be read as a number gets no derived claim.
                   <>
                     <span className="text-2xl font-extrabold">{yearly ? prices.yearly : prices.monthly}</span>
-                    <span className="text-sm font-bold text-ink-soft">{yearly ? 'per jaar' : 'per maand'}</span>
+                    <span className="text-sm font-bold text-ink-soft">{yearly ? t('premium.perYear') : t('premium.perMonth')}</span>
                   </>
                 )}
               </button>
@@ -190,10 +191,10 @@ export function PlanPicker({
             className="mt-4 box-border flex min-h-14 items-center gap-3 rounded-[16px] border-2 border-lapis bg-card px-4 py-2.5 text-left"
           >
             <span className="flex min-w-0 flex-grow flex-col">
-              <span className="text-sm font-extrabold text-lapis">Levenslang Premium</span>
+              <span className="text-sm font-extrabold text-lapis">{t('premium.lifetime')}</span>
               <span className="text-[13px] font-bold text-ink-soft">
-                {prices.lifetime} eenmalig
-                {weekly.lifetime && ` · ${weekly.lifetime} per week over ${LIFETIME_HORIZON_YEARS} jaar`}
+                {t('premium.lifetimeOnce', { price: prices.lifetime })}
+                {weekly.lifetime && ` · ${t('premium.lifetimeWeekly', { weekly: weekly.lifetime, years: LIFETIME_HORIZON_YEARS })}`}
               </span>
             </span>
             <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-lapis text-white">
@@ -206,7 +207,7 @@ export function PlanPicker({
             onClick={() => setPlan('lifetime')}
             className="mt-4 flex min-h-8 items-center self-center bg-transparent text-[15px] font-bold text-lapis hover:text-lapis-edge"
           >
-            Of eenmalig: levenslang Premium
+            {t('premium.orLifetime')}
           </button>
         ))}
 

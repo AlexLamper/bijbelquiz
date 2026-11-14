@@ -9,6 +9,7 @@
  */
 
 import { readReturnPath } from './stripe-plans';
+import { t } from '@/i18n';
 
 /** The three personal plans, in the order the page shows them. */
 export const PREMIUM_PLAN_IDS = ['yearly', 'monthly', 'lifetime'] as const;
@@ -86,24 +87,24 @@ export function trialReminderDate(trialStart: Date, trialDays: number): Date | n
 
 /** "7 DAGEN GRATIS" badge text / "7 dagen gratis" in copy. */
 export function trialDaysLabel(days: number): string {
-  return `${days} ${days === 1 ? 'dag' : 'dagen'} gratis`;
+  return t(days === 1 ? 'premium.trialOne' : 'premium.trialMany', { days });
 }
 
 /** Label of the main button for the chosen plan. */
 export function premiumCtaLabel(plan: PremiumPlanId, trialDays: number): string {
-  if (plan === 'yearly' && trialDays > 0) return `Probeer ${trialDaysLabel(trialDays)}`;
-  if (plan === 'lifetime') return 'Koop levenslang Premium';
-  return 'Start Premium';
+  if (plan === 'yearly' && trialDays > 0) return t('premium.tryTrial', { trial: trialDaysLabel(trialDays) });
+  if (plan === 'lifetime') return t('premium.buyLifetime');
+  return t('premium.start');
 }
 
 /** The reassurance line under the button (with the shield). */
 export function premiumReassurance(plan: PremiumPlanId, trialDays: number, withReminder = true): string {
   if (plan === 'yearly' && trialDays > 0) {
     const day = withReminder ? trialReminderDay(trialDays) : null;
-    return day === null ? 'Vandaag betaal je niets.' : `Vandaag betaal je niets. Herinnering op dag ${day}.`;
+    return day === null ? t('premium.payNothing') : t('premium.payNothingReminder', { day });
   }
-  if (plan === 'lifetime') return 'Eenmalig betalen, geen abonnement.';
-  return 'Zeg op wanneer je wilt.';
+  if (plan === 'lifetime') return t('premium.oneOff');
+  return t('premium.cancelAnytime');
 }
 
 /**

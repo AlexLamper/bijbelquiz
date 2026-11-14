@@ -8,6 +8,9 @@ import { Button, Card, ProgressBar, toast } from '@/components/bq';
 import { track } from '@/lib/analytics/client';
 import { cn } from '@/lib/utils';
 import { CheckDisc, FaqList } from './parts';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 
 /**
  * W4 P-Groepslicentie: buying, redeeming and running a group licence.
@@ -52,15 +55,15 @@ export interface GroupLicenseViewProps {
   purchasable: boolean;
 }
 
-const MAIL = 'info@bijbelquiz.com';
-const INVOICE_MAIL = `mailto:${MAIL}?subject=${encodeURIComponent('Groepslicentie - factuur')}`;
+const MAIL = getSiteConfig().supportEmail;
+const INVOICE_MAIL = `mailto:${MAIL}?subject=${encodeURIComponent(t('premium.group.invoiceSubject'))}`;
 
 function formatDate(iso: string | null): string | null {
   if (!iso) return null;
   const date = new Date(iso);
   return Number.isNaN(date.getTime())
     ? null
-    : date.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
+    : date.toLocaleDateString(t('bq.header.numberLocale'), { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
 export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialDays, isLoggedIn, purchasable }: GroupLicenseViewProps) {
@@ -105,7 +108,7 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
     event.preventDefault();
     const code = joinCode.trim().toUpperCase();
     if (code.length < 4) {
-      toast.error('Vul de volledige groepscode in.');
+      toast.error(t('premium.group.codeIncomplete'));
       return;
     }
 
@@ -125,15 +128,15 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
       const payload = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        toast.error(payload?.error || 'Deelnemen is niet gelukt.');
+        toast.error(payload?.error || t('premium.group.joinFailed'));
         return;
       }
 
       setLicenses((current) => [payload.license, ...current.filter((entry) => entry.id !== payload.license.id)]);
       setJoinCode('');
-      toast.success(`Je hoort nu bij ${payload.license.name}.`);
+      toast.success(t('premium.group.joined', { name: payload.license.name }));
     } catch {
-      toast.error('Deelnemen is niet gelukt. Probeer het opnieuw.');
+      toast.error(t('premium.group.joinFailedRetry'));
     } finally {
       setIsJoining(false);
     }
@@ -149,23 +152,23 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
       const payload = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        toast.error(payload?.error || 'Bijwerken is niet gelukt.');
+        toast.error(payload?.error || t('premium.group.updateFailed'));
         return;
       }
 
       setLicenses(payload.licenses ?? []);
       toast.success(successMessage);
     } catch {
-      toast.error('Bijwerken is niet gelukt.');
+      toast.error(t('premium.group.updateFailed'));
     }
   };
 
   const copyCode = async (code: string) => {
     try {
       await navigator.clipboard.writeText(code);
-      toast.success('Groepscode gekopieerd.');
+      toast.success(t('premium.group.copied'));
     } catch {
-      toast.error('Kopiëren is niet gelukt. Selecteer de code zelf.');
+      toast.error(t('premium.group.copyFailed'));
     }
   };
 
@@ -182,17 +185,17 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
       >
         <input type="hidden" name="plan" value="group" />
         <Button type="submit" size="hero" block className="rounded-[12px]">
-          Licentie kopen
+          {t('premium.group.buy')}
         </Button>
       </form>
     ) : isLoggedIn ? (
       // No Stripe price yet: the licence is set up by hand after an email.
-      <Button href={`mailto:${MAIL}?subject=Groepslicentie`} size="hero" block className={cn('rounded-[12px]', className)}>
-        Licentie aanvragen
+      <Button href={`mailto:${MAIL}?subject=${t('premium.group.mailSubject')}`} size="hero" block className={cn('rounded-[12px]', className)}>
+        {t('premium.group.request')}
       </Button>
     ) : (
       <Button href={`/inloggen?callbackUrl=${encodeURIComponent('/groepslicentie#kopen')}`} size="hero" block className={cn('rounded-[12px]', className)}>
-        Inloggen om te kopen
+        {t('premium.group.loginToBuy')}
       </Button>
     );
 
@@ -203,23 +206,23 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
         <div className="grid grid-cols-2 items-center gap-x-14 gap-y-10 max-m:grid-cols-1">
           <div className="flex flex-col items-start">
             <h1 className="m-0 text-[44px] leading-[52px] max-m:text-[32px] max-m:leading-[38px]">
-              Premium voor
+              {t('premium.group.titleA')}
               <br />
-              je hele groep
+              {t('premium.group.titleB')}
             </h1>
             <p className="m-0 mt-4 max-w-[500px] text-lg font-semibold leading-7 text-ink-soft">
-              Eén licentie, één code. Tot {seats} mensen spelen met Premium, ieder op zijn eigen telefoon.
+              {t('premium.group.intro', { seats })}
             </p>
             <div className="mt-7 flex flex-wrap gap-3 max-m:w-full max-m:flex-col">
               <Button href="#kopen" size="hero" className="rounded-[12px] px-[30px]">
-                Licentie kopen
+                {t('premium.group.buy')}
               </Button>
               <Button href="#code" variant="secondary" size="hero" className="rounded-[12px] px-6">
-                Ik heb een code
+                {t('premium.group.haveCode')}
               </Button>
             </div>
             <p className="m-0 mt-3.5 text-sm font-semibold text-ink-muted">
-              {priceLabel} per jaar voor {seats} plekken. Betalen per factuur kan ook.
+              {t('premium.group.priceLine', { price: priceLabel, seats })}
             </p>
           </div>
           <GroupIllustration seats={seats} />
@@ -230,9 +233,9 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
       {isLoggedIn && (isLoading || licenses.length > 0) && (
         <section className="mx-auto box-border w-full max-w-[1200px] px-8 pt-[88px] max-m:px-4 max-m:pt-12" aria-labelledby="jouw-groepen">
           <h2 id="jouw-groepen" className="m-0 text-[26px] leading-8">
-            {owned.length > 0 ? 'Jouw groep' : 'Je groep'}
+            {owned.length > 0 ? t('premium.group.yourGroup') : t('premium.group.yourGroupShort')}
           </h2>
-          {isLoading && <p className="m-0 mt-4 text-[15px] font-semibold text-ink-muted">Groepen laden...</p>}
+          {isLoading && <p className="m-0 mt-4 text-[15px] font-semibold text-ink-muted">{t('premium.group.loading')}</p>}
           <div className="mt-6 flex flex-col gap-5">
             {owned.map((license) => {
               const until = formatDate(license.expiresAt);
@@ -240,11 +243,11 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
                 <Card key={license.id} as="article" padding="lg" className="flex flex-col gap-5">
                   <div className="flex flex-wrap items-start justify-between gap-4">
                     <div className="flex min-w-0 flex-col gap-0.5">
-                      <span className="text-[13px] font-extrabold text-ink-muted">Code van {license.name}</span>
+                      <span className="text-[13px] font-extrabold text-ink-muted">{t('premium.group.codeOf', { name: license.name })}</span>
                       <button
                         type="button"
                         onClick={() => copyCode(license.joinCode)}
-                        aria-label={`Groepscode ${license.joinCode} kopiëren`}
+                        aria-label={t('premium.group.copyAria', { code: license.joinCode })}
                         className="flex items-center gap-3 bg-transparent p-0 text-left font-display text-[40px] font-semibold leading-[48px] tracking-[0.12em] text-lapis-edge hover:text-lapis"
                       >
                         {license.joinCode}
@@ -252,27 +255,27 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
                       </button>
                     </div>
                     <span className={cn('text-sm font-extrabold', license.status === 'active' ? 'text-green-text' : 'text-coral-text')}>
-                      {license.status === 'active' ? 'Premium actief' : license.status === 'cancelled' ? 'Opgezegd' : 'Verlopen'}
+                      {license.status === 'active' ? t('premium.group.active') : license.status === 'cancelled' ? t('premium.group.cancelled') : t('premium.group.expired')}
                     </span>
                   </div>
 
                   <div className="flex flex-col gap-2">
                     <div className="flex justify-between gap-3 text-sm font-extrabold">
                       <span>
-                        {license.seatsUsed} van {license.seats} plekken
+                        {t('premium.group.seatsOf', { used: license.seatsUsed, seats: license.seats })}
                       </span>
-                      {until && <span className="font-semibold text-ink-muted">Loopt tot {until}</span>}
+                      {until && <span className="font-semibold text-ink-muted">{t('premium.group.until', { date: until })}</span>}
                     </div>
                     <ProgressBar
                       tone="lapis"
-                      label="Bezette plekken"
+                      label={t('premium.group.seatsUsed')}
                       value={license.seats > 0 ? license.seatsUsed / license.seats : 0}
                     />
                   </div>
 
                   <div className="flex flex-col gap-2 border-t border-line-soft pt-5">
                     <label htmlFor={`naam-${license.id}`} className="text-sm font-extrabold text-ink">
-                      Groepsnaam
+                      {t('premium.group.name')}
                     </label>
                     <div className="flex flex-wrap gap-3">
                       <input
@@ -285,32 +288,32 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
                       <Button
                         variant="secondary"
                         size="md"
-                        onClick={() => patch({ licenseId: license.id, name: renameDraft[license.id] ?? license.name }, 'Groepsnaam bijgewerkt.')}
+                        onClick={() => patch({ licenseId: license.id, name: renameDraft[license.id] ?? license.name }, t('premium.group.nameUpdated'))}
                       >
-                        Opslaan
+                        {t('account.save')}
                       </Button>
                     </div>
                   </div>
 
                   <div className="flex flex-col border-t border-line-soft pt-5">
-                    <span className="text-sm font-extrabold text-ink">Leden</span>
+                    <span className="text-sm font-extrabold text-ink">{t('premium.group.members')}</span>
                     <ul className="m-0 mt-1 list-none p-0">
                       {license.members.map((member) => (
                         <li key={member.id} className="flex min-h-12 items-center justify-between gap-3 border-b border-line-soft py-1.5 last:border-b-0">
                           <span className="text-[15px] font-bold text-ink">
                             {member.name}
-                            {member.isOwner ? ' (beheerder)' : ''}
+                            {member.isOwner ? t('premium.group.owner') : ''}
                           </span>
                           {!member.isOwner && (
                             <button
                               type="button"
                               onClick={() =>
-                                patch({ licenseId: license.id, removeMemberId: member.id }, `${member.name} is uit de groep gehaald.`)
+                                patch({ licenseId: license.id, removeMemberId: member.id }, t('premium.group.removed', { name: member.name }))
                               }
                               className="inline-flex min-h-11 items-center gap-1.5 bg-transparent px-1 text-sm font-bold text-ink-muted hover:text-coral-text"
                             >
                               <Trash2 className="size-4" strokeWidth={2.2} aria-hidden="true" />
-                              Verwijderen
+                              {t('premium.group.remove')}
                             </button>
                           )}
                         </li>
@@ -327,9 +330,9 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
                 <Card key={license.id} as="article" padding="lg" className="flex items-center gap-4">
                   <CheckDisc />
                   <div className="flex min-w-0 flex-col gap-0.5">
-                    <span className="text-[17px] font-extrabold text-ink">Je doet mee met {license.name}</span>
+                    <span className="text-[17px] font-extrabold text-ink">{t('premium.group.membership', { name: license.name })}</span>
                     <span className="text-[15px] font-semibold text-ink-muted">
-                      Je hebt Premium via deze groep{until ? ` tot ${until}` : ''}.
+                      {until ? t('premium.group.viaGroupUntil', { date: until }) : t('premium.group.viaGroup')}
                     </span>
                   </div>
                 </Card>
@@ -341,15 +344,15 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
 
       {/* How it works */}
       <section className="mx-auto box-border w-full max-w-[1200px] px-8 pt-[88px] max-m:px-4 max-m:pt-12">
-        <h2 className="m-0 text-[26px] leading-8">Zo werkt het</h2>
+        <h2 className="m-0 text-[26px] leading-8">{t('premium.group.how')}</h2>
         <p className="m-0 mt-2 max-w-[640px] text-[17px] font-semibold leading-[26px] text-ink-muted">
-          In drie stappen speelt je hele groep met Premium.
+          {t('premium.group.howText')}
         </p>
         <ol className="m-0 mt-6 grid list-none grid-cols-3 rounded-[16px] border border-line bg-card p-0 max-m:grid-cols-1">
           {[
-            { title: 'Koop de licentie', text: 'Betaal online, of vraag een factuur aan.' },
-            { title: 'Deel de code', text: 'Lees de code voor of stuur hem in de groepsapp.' },
-            { title: 'Iedereen speelt met Premium', text: 'Leden vullen de code in en hebben meteen alles open.' },
+            { title: t('premium.group.s1'), text: t('premium.group.s1t') },
+            { title: t('premium.group.s2'), text: t('premium.group.s2t') },
+            { title: t('premium.group.s3'), text: t('premium.group.s3t') },
           ].map((step, index) => (
             <li
               key={step.title}
@@ -370,28 +373,28 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
 
       {/* Choose */}
       <section id="kopen" className="mx-auto box-border w-full max-w-[1200px] scroll-mt-20 px-8 pt-[88px] max-m:px-4 max-m:pt-12">
-        <h2 className="m-0 text-[26px] leading-8">Kies wat bij je past</h2>
+        <h2 className="m-0 text-[26px] leading-8">{t('premium.group.choose')}</h2>
         <p className="m-0 mt-2 max-w-[640px] text-[17px] font-semibold leading-[26px] text-ink-muted">
-          Speel je alleen, neem dan Premium. Speel je met een groep, dan is de licentie voordeliger.
+          {t('premium.group.chooseText')}
         </p>
         <div className="mt-6 grid grid-cols-2 items-stretch gap-5 max-m:grid-cols-1">
           <OfferCard
             name="Premium"
-            audience="Voor jezelf"
+            audience={t('premium.group.forYou')}
             price={premiumYearlyPrice}
-            bullets={['1 account', 'Alle quizzen en de uitleg bij elk antwoord', ...(trialDays > 0 ? [`${trialDays} dagen gratis proberen`] : [])]}
+            bullets={[t('premium.group.oneAccount'), t('premium.group.allQuizzes'), ...(trialDays > 0 ? [t('premium.group.trial', { days: trialDays })] : [])]}
             action={
               <Button href="/premium" variant="secondary" size="hero" block className="rounded-[12px]">
-                Bekijk Premium
+                {t('premium.group.viewPremium')}
               </Button>
             }
           />
           <OfferCard
             highlighted
-            name="Groepslicentie"
-            audience="Voor je jeugdgroep, gemeente of klas"
+            name={t('premium.group.licence')}
+            audience={t('premium.group.forGroup')}
             price={priceLabel}
-            bullets={[`${seats} plekken onder één code`, 'Iedereen heeft Premium, ook thuis', 'Jij ziet wie er meedoet', 'Betalen per factuur kan ook']}
+            bullets={[t('premium.group.b1', { seats }), t('premium.group.b2'), t('premium.group.b3'), t('premium.group.b4')]}
             action={buyButton()}
           />
         </div>
@@ -403,19 +406,19 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
           <span className="flex size-[52px] items-center justify-center rounded-[14px] bg-lapis-tint text-lapis">
             <LogIn className="size-6" strokeWidth={2.2} aria-hidden="true" />
           </span>
-          <h2 className="m-0 mt-4 text-[30px] leading-9">Een code gekregen?</h2>
+          <h2 className="m-0 mt-4 text-[30px] leading-9">{t('premium.group.gotCode')}</h2>
           <p className="m-0 mt-2 text-[17px] font-semibold leading-[26px] text-ink-muted">
-            Vul de code van je leiding in. Daarna heb je meteen Premium.
+            {t('premium.group.gotCodeText')}
           </p>
           <form onSubmit={join} className="mt-6 flex w-full items-center justify-center gap-3 max-m:flex-col max-m:items-stretch">
             <label htmlFor="groepscode" className="sr-only">
-              Groepscode
+              {t('premium.group.code')}
             </label>
             <input
               id="groepscode"
               value={joinCode}
               onChange={(event) => setJoinCode(event.target.value.toUpperCase())}
-              placeholder="Groepscode"
+              placeholder={t('premium.group.code')}
               maxLength={12}
               autoComplete="off"
               autoCapitalize="characters"
@@ -423,7 +426,7 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
               className="box-border h-16 w-[360px] min-w-0 max-w-full rounded-[14px] border-2 border-lapis-pale bg-card px-[22px] text-center font-sans text-2xl font-extrabold tracking-[0.1em] text-ink outline-none placeholder:text-ink-faint focus-visible:border-lapis max-m:w-full"
             />
             <Button type="submit" size="hero" loading={isJoining} className="h-16 px-[34px] text-[19px]">
-              Meedoen
+              {t('samen.start.join')}
             </Button>
           </form>
         </div>
@@ -433,9 +436,9 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
       <section className="mx-auto box-border w-full max-w-[1200px] px-8 pb-20 pt-[88px] max-m:px-4 max-m:pt-12">
         <div className="grid grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] items-start gap-x-14 gap-y-6 max-m:grid-cols-1">
           <div>
-            <h2 className="m-0 text-[26px] leading-8">Vragen over de licentie</h2>
+            <h2 className="m-0 text-[26px] leading-8">{t('premium.group.faq')}</h2>
             <p className="m-0 mt-2 max-w-[640px] text-[17px] font-semibold leading-[26px] text-ink-muted">
-              Staat je vraag er niet bij? Mail{' '}
+              {t('premium.group.faqMail')}{' '}
               <a href={`mailto:${MAIL}`} className="font-extrabold no-underline">
                 {MAIL}
               </a>
@@ -445,28 +448,27 @@ export function GroupLicenseView({ priceLabel, seats, premiumYearlyPrice, trialD
           <FaqList
             items={[
               {
-                question: 'Kan ik op factuur betalen?',
+                question: t('premium.group.faq1q'),
                 open: true,
                 answer: (
                   <>
-                    Ja. <a href={INVOICE_MAIL}>Mail ons</a> de naam van je groep en het factuuradres, dan sturen we een factuur. Na
-                    betaling krijg je de code.
+                    {rich(t('premium.group.faq1a'), { mail: <a href={INVOICE_MAIL}>{t('premium.group.faq1mail')}</a> })}
                   </>
                 ),
               },
               {
-                question: 'Hebben leden een account nodig?',
-                answer: 'Ja, een gratis account. Daarmee bewaren ze ook hun XP, reeks en voortgang.',
+                question: t('premium.group.faq2q'),
+                answer: t('premium.group.faq2a'),
               },
               {
-                question: 'Wat als iemand de groep verlaat?',
-                answer: 'Je haalt hem zelf uit de groep. Zijn plek komt dan weer vrij voor iemand anders.',
+                question: t('premium.group.faq3q'),
+                answer: t('premium.group.faq3a'),
               },
               {
-                question: 'Hoe lang loopt de licentie?',
+                question: t('premium.group.faq4q'),
                 answer: (
                   <>
-                    Een jaar. In je <Link href="/groepslicentie#jouw-groepen">groepsoverzicht</Link> zie je tot wanneer, en wie er meedoet.
+                    {rich(t('premium.group.faq4a'), { overview: <Link href="/groepslicentie#jouw-groepen">{t('premium.group.overview')}</Link> })}
                   </>
                 ),
               },
@@ -504,7 +506,7 @@ function OfferCard({
       <span className="mt-0.5 text-[15px] font-semibold text-ink-muted">{audience}</span>
       <span className="mt-3.5 flex items-baseline gap-2">
         <span className="text-[32px] font-extrabold text-ink">{price}</span>
-        <span className="text-[15px] font-bold text-ink-soft">per jaar</span>
+        <span className="text-[15px] font-bold text-ink-soft">{t('premium.perYear')}</span>
       </span>
       <ul className="m-0 mt-5 flex flex-grow list-none flex-col gap-3 border-t border-line-soft p-0 pt-5">
         {bullets.map((bullet) => (
@@ -524,19 +526,19 @@ function GroupIllustration({ seats }: { seats: number }) {
   return (
     <div
       role="img"
-      aria-label={`Een groepslicentie: één code voor de hele groep, 12 van de ${seats} plekken zijn bezet.`}
+      aria-label={t('premium.group.illustration', { seats })}
       className="relative h-[340px] max-m:mx-auto max-m:w-full max-m:max-w-[360px]"
     >
       <span aria-hidden="true" className="absolute left-1/2 top-1/2 -ml-[150px] -mt-[150px] size-[300px] rounded-full bg-lapis-wash" />
       <span className="absolute left-1/2 top-1/2 -ml-[170px] -mt-[84px] box-border flex w-[340px] max-w-[calc(100vw-48px)] -rotate-2 flex-col gap-3.5 rounded-[16px] border border-line bg-card px-6 py-[22px] shadow-float max-m:left-0 max-m:ml-0">
         <span className="flex flex-col gap-0.5">
-          <span className="text-[13px] font-extrabold text-ink-muted">Code van Jeugdgroep 16+</span>
-          <span className="font-display text-[40px] font-semibold leading-[48px] tracking-[0.12em] text-lapis-edge">K7PQ2M</span>
+          <span className="text-[13px] font-extrabold text-ink-muted">{t('premium.group.demoName')}</span>
+          <span className="font-display text-[40px] font-semibold leading-[48px] tracking-[0.12em] text-lapis-edge">{t('premium.group.demoCode')}</span>
         </span>
         <span className="flex flex-col gap-2">
           <span className="flex justify-between text-sm font-extrabold text-ink">
-            <span>12 van {seats} plekken</span>
-            <span className="text-green-text">Premium actief</span>
+            <span>{t('premium.group.demoSeats', { seats })}</span>
+            <span className="text-green-text">{t('premium.group.active')}</span>
           </span>
           <span className="block h-2 overflow-hidden rounded-full bg-line-soft">
             <span className="block h-full w-[40%] rounded-full bg-lapis" />
@@ -545,7 +547,7 @@ function GroupIllustration({ seats }: { seats: number }) {
       </span>
       <span className="absolute bottom-[52px] right-[6%] flex h-10 rotate-3 items-center gap-2 rounded-full border border-line bg-card px-4 text-[15px] font-extrabold text-ink shadow-float">
         <CheckDisc size={22} />
-        Noor doet mee
+        {t('premium.group.demoJoin')}
       </span>
     </div>
   );
