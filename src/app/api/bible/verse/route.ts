@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { isNlSite } from '@/config/site';
+import { englishVerse } from '@/lib/bible-en';
 import { parseBibleReference, formatReferenceDisplay } from '@/lib/bible-reference';
 
 // The apex domain answers every request with a 301 to `www`, so addressing it
@@ -98,6 +100,13 @@ export async function GET(request: NextRequest) {
 
   if (!ref) {
     return NextResponse.json({ error: 'ref parameter required' }, { status: 400 });
+  }
+
+  // intl: English text (WEB). The Dutch parser and BijbelAPI are NL-only.
+  if (!isNlSite()) {
+    const english = await englishVerse(ref);
+    if (!english) return NextResponse.json({ error: 'Verse not found' }, { status: 404 });
+    return NextResponse.json(english);
   }
 
   try {

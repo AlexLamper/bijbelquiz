@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+import { isNlSite } from '@/config/site';
+import { englishVerse } from '@/lib/bible-en';
+
 import { dutchReference, dutchReferenceString } from '@/lib/daytext-reference';
 
 interface DayTextPayload {
@@ -26,6 +29,18 @@ function toReference(payload: DayTextPayload): string {
 }
 
 export async function GET() {
+  if (!isNlSite()) {
+    // No daily-verse feed in English yet: a fixed verse until one exists.
+    const verse = await englishVerse('Psalm 119:105');
+    return NextResponse.json({
+      source: verse ? 'bible-api' : 'fallback',
+      reference: verse?.reference ?? 'Psalm 119:105',
+      text: verse?.text ?? 'Your word is a lamp to my feet, and a light for my path.',
+      version: 'web',
+      docsUrl: 'https://bible-api.com',
+    });
+  }
+
   try {
     const apiKey =
       process.env.BIJBEL_API_KEY ||

@@ -59,7 +59,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
   - [x] hardcoded `bijbelquiz.com` (41 places) -> `getSiteConfig().baseUrl`
 - [x] Route map per locale (`src/config/route-map.ts`; links still on Dutch paths redirect on intl, nav/canonical/sitemap are localized): NL keeps its slugs; en gets `/quizzes`, `/leaderboard`,
       `/play-together`, `/bible-quiz/[slug]`, ... (Next rewrites onto the same pages)
-- [ ] Bible text per locale: `src/app/api/bible/*` currently uses BijbelAPI (Dutch).
+- [x] Bible text per locale (intl: WEB via bible-api.com, public domain, `src/lib/bible-en.ts`; daily verse is fixed for now): `src/app/api/bible/*` currently uses BijbelAPI (Dutch).
       Add an English source (KJV/WEB, public domain) - in BijbelAPI or external. Verify licences.
 - [ ] Book names per locale on top of `src/lib/book-canon.ts` canonical codes
 

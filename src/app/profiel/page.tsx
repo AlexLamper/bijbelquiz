@@ -1,3 +1,4 @@
+import { isNlSite } from '@/config/site';
 import type { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
@@ -128,6 +129,9 @@ async function fetchDailyVerse(): Promise<{ reference: string; text: string }> {
     reference: t('pagesBody.profile.verseRef'),
     text: t('pagesBody.profile.verseText'),
   };
+
+  // intl: the fixed English verse from the dictionary (no English daily feed yet).
+  if (!isNlSite()) return fallback;
 
   try {
     const apiKey =

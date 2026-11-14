@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { isNlSite } from '@/config/site';
+import { englishChapter } from '@/lib/bible-en';
 
 /**
  * GET /api/bible/chapter?book=Daniël&chapter=2 - a whole chapter, in order.
@@ -57,6 +59,12 @@ export async function GET(request: NextRequest) {
 
   if (!book || !Number.isFinite(chapter) || chapter < 1) {
     return NextResponse.json({ error: 'book en chapter zijn verplicht' }, { status: 400 });
+  }
+
+  if (!isNlSite()) {
+    const english = await englishChapter(book, chapter);
+    if (!english) return NextResponse.json({ error: 'Chapter not found' }, { status: 404 });
+    return NextResponse.json(english);
   }
 
   const url =
