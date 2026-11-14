@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 
 import { Button, Pill, Skeleton } from '@/components/bq';
 import type { QuizPassage } from '@/lib/quiz-passage';
+import { t } from '@/i18n';
 
 interface ChapterVerse {
   verse: number;
@@ -61,21 +62,21 @@ export default function PassageReader({ passage, onContinue, onBack }: PassageRe
         className="inline-flex h-11 items-center gap-2 self-start text-[15px] font-bold text-lapis hover:text-lapis-edge"
       >
         <ArrowLeft className="size-4" strokeWidth={2.4} aria-hidden="true" />
-        Terug naar de quizzen
+        {t('passage.back')}
       </button>
 
       <section className="flex flex-col gap-4 rounded-[16px] border border-line bg-card p-5 m:px-7 m:py-6">
         <Pill kicker className="h-6 self-start px-2.5 text-lapis-edge">
-          Lees eerst
+          {t('passage.readFirst')}
         </Pill>
         <h1 className="m-0 font-display text-[30px] font-semibold leading-9 m:text-[36px] m:leading-[44px]">{passage.label}</h1>
         <p className="m-0 text-base font-semibold leading-6 text-ink-soft">
-          Neem dit hoofdstuk rustig door. De vragen die hierna komen gaan hierover, dus lezen helpt echt.
+          {t('passage.text')}
         </p>
 
         {failed && (
           <p className="m-0 rounded-[12px] bg-chip px-4 py-3 text-[15px] font-semibold text-ink-soft">
-            Dit hoofdstuk kon nu niet geladen worden. Je kunt gewoon met de quiz beginnen.
+            {t('passage.failed')}
           </p>
         )}
 
@@ -95,7 +96,7 @@ export default function PassageReader({ passage, onContinue, onBack }: PassageRe
                 <span className="text-[17px] font-semibold leading-7 text-ink">{verse.text}</span>
               </p>
             ))}
-            <p className="m-0 border-t border-line-soft pt-3 text-[13px] font-bold text-ink-muted">Statenvertaling</p>
+            <p className="m-0 border-t border-line-soft pt-3 text-[13px] font-bold text-ink-muted">{t('passage.translation')}</p>
           </div>
         )}
       </section>
@@ -103,9 +104,9 @@ export default function PassageReader({ passage, onContinue, onBack }: PassageRe
       {/* The chapter can be long; the way on is never something to scroll to. */}
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-card">
         <div className="mx-auto flex w-full max-w-[784px] items-center justify-between gap-3 px-4 py-3 m:px-8">
-          <span className="hidden text-[15px] font-bold text-ink-muted m:inline">Klaar met lezen?</span>
+          <span className="hidden text-[15px] font-bold text-ink-muted m:inline">{t('passage.ready')}</span>
           <Button size="xl" onClick={onContinue} className="w-full m:w-auto m:min-w-[240px]">
-            Start de quiz
+            {t('passage.start')}
           </Button>
         </div>
       </div>

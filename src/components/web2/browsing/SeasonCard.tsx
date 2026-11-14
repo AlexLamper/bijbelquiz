@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
+import { t } from '@/i18n';
 import { CalendarDays, ChevronRight } from 'lucide-react';
 
 interface SeasonPayload {
@@ -50,14 +51,14 @@ export function SeasonCard() {
   if (!season || quizzes.length === 0) return null;
 
   const days = season.daysRemaining;
-  const countdown = days <= 0 ? 'Loopt vandaag af' : days === 1 ? 'Nog 1 dag' : `Nog ${days} dagen`;
+  const countdown = days <= 0 ? t('browse.season.endsToday') : days === 1 ? t('browse.season.oneDay') : t('browse.season.days', { days });
 
   return (
     <section aria-label={season.title} className="overflow-hidden rounded-[16px] border border-line bg-card">
       <div className="flex flex-col gap-1.5 px-5 pb-3 pt-[18px]">
         <span className="flex items-center gap-2 text-xs font-extrabold tracking-[0.04em] text-lapis">
           <CalendarDays className="size-4" aria-hidden="true" />
-          SEIZOEN · {countdown.toUpperCase()}
+          {t('browse.season.kicker', { countdown: countdown.toUpperCase() })}
         </span>
         <h2 className="m-0 text-[20px] leading-[26px]">{season.title}</h2>
         <p className="m-0 text-[15px] leading-[23px] font-semibold text-ink-soft">{season.description}</p>
@@ -70,7 +71,7 @@ export function SeasonCard() {
               className="flex min-h-[52px] items-center gap-3 border-t border-line-soft px-5 text-ink no-underline hover:bg-chip hover:text-ink"
             >
               <span className="min-w-0 flex-grow truncate text-[15px] font-bold">{quiz.title}</span>
-              <span className="shrink-0 text-[13px] font-semibold text-ink-muted">{quiz.questionCount} vragen</span>
+              <span className="shrink-0 text-[13px] font-semibold text-ink-muted">{t('browse.season.questions', { count: quiz.questionCount })}</span>
               <ChevronRight className="size-[18px] shrink-0 text-ink-faint" strokeWidth={2.4} aria-hidden="true" />
             </Link>
           </li>
@@ -81,7 +82,7 @@ export function SeasonCard() {
           href={`/quizzen?categorie=${encodeURIComponent(season.categorySlug)}`}
           className="flex h-[52px] items-center justify-center border-t border-line-soft text-[15px] font-bold no-underline"
         >
-          Alles uit dit seizoen
+          {t('browse.season.all')}
         </Link>
       )}
     </section>

@@ -8,6 +8,7 @@ import { ChevronRight, CircleHelp, Crown, Search, Shield, Sparkle, Users } from 
 import { Button, EmptyState, QuizCard, SearchInput, Tabs, type TabItem } from '@/components/bq';
 import { BOOK_GROUPS, bookBySlug } from '@/lib/bible-books';
 import { MULTIPLAYER_MAX_PLAYERS } from '@/lib/premium-benefits';
+import { t } from '@/i18n';
 import { cn } from '@/lib/utils';
 import {
   bookGroups,
@@ -29,13 +30,13 @@ import { BookIcon } from './illustrations';
 import { quizzenHref, readQuizzenState, type QuizzenChip, type QuizzenState, type QuizzenView } from './quizzen-view';
 
 const CHIPS: TabItem<QuizzenChip>[] = [
-  { value: 'alles', label: 'Alles' },
-  { value: 'oude-testament', label: 'Oude Testament' },
-  { value: 'nieuwe-testament', label: 'Nieuwe Testament' },
-  { value: 'themas', label: "Thema's" },
+  { value: 'alles', label: t('browse.browser.chipAll') },
+  { value: 'oude-testament', label: t('browse.browser.chipOt') },
+  { value: 'nieuwe-testament', label: t('browse.browser.chipNt') },
+  { value: 'themas', label: t('browse.browser.chipThemes') },
 ];
 
-const TESTAMENT_TITLE = { OT: 'Oude Testament', NT: 'Nieuwe Testament' } as const;
+const TESTAMENT_TITLE = { OT: t('browse.browser.chipOt'), NT: t('browse.browser.chipNt') } as const;
 
 function chipOf(view: QuizzenView, books: BookGroup[]): QuizzenChip {
   switch (view.kind) {
@@ -132,16 +133,16 @@ export function QuizzenBrowser({ quizzes }: { quizzes: BrowseQuiz[] }) {
     <div className="mx-auto box-border flex w-full max-w-[1200px] flex-col gap-10 px-4 pb-[72px] pt-6 m:px-8 m:pt-10">
       <div className="flex flex-col gap-[22px]">
         <div className="flex min-w-0 flex-col gap-1.5">
-          <h1 className="m-0 text-[30px] leading-9 m:text-[40px] m:leading-[48px]">Quizzen</h1>
+          <h1 className="m-0 text-[30px] leading-9 m:text-[40px] m:leading-[48px]">{t('browse.browser.title')}</h1>
           <p className="m-0 max-w-[70ch] text-[17px] font-semibold leading-[26px] text-ink-muted">
-            Kies een bijbelboek of thema. Bij elk antwoord krijg je uitleg en de bijbeltekst.
+            {t('browse.browser.lead')}
           </p>
         </div>
         <div className="flex flex-col items-stretch gap-4 m:flex-row m:items-center">
           <SearchInput
             className="min-w-0 m:flex-1"
-            aria-label="Zoek een quiz"
-            placeholder="Zoek een bijbelboek of onderwerp"
+            aria-label={t('browse.browser.searchAria')}
+            placeholder={t('browse.browser.searchPlaceholder')}
             value={draft}
             onChange={(event) => setDraft(event.target.value)}
             enterKeyHint="search"
@@ -149,7 +150,7 @@ export function QuizzenBrowser({ quizzes }: { quizzes: BrowseQuiz[] }) {
           <Tabs
             variant="pills"
             semantics="tabs"
-            aria-label="Filter"
+            aria-label={t('browse.browser.filter')}
             items={CHIPS}
             value={chip}
             onChange={(value) => go({ view: viewOfChip(value), query })}
@@ -193,13 +194,13 @@ function ViewBody({
       return <TestamentView testament={view.testament} books={books} goView={goView} />;
     case 'themes':
       return (
-        <Section title="Thema's">
+        <Section title={t('browse.browser.chipThemes')}>
           <ThemeRows themes={themes} goView={goView} />
         </Section>
       );
     case 'popular':
       return (
-        <Section title="Populaire quizzen" action={<ViewLink view={{ kind: 'overview' }} goView={goView} label="Alle quizzen" />}>
+        <Section title={t('browse.browser.popular')} action={<ViewLink view={{ kind: 'overview' }} goView={goView} label={t('browse.browser.allQuizzes')} />}>
           <QuizGrid quizzes={pickPopular(quizzes, 24)} />
         </Section>
       );
@@ -211,7 +212,7 @@ function ViewBody({
         <Section
           title={group.book.title}
           subtitle={countLabel(group.quizzes.length)}
-          action={<ViewLink view={{ kind: 'testament', testament }} goView={goView} label={`Alle boeken van het ${TESTAMENT_TITLE[testament]}`} short="Alle boeken" />}
+          action={<ViewLink view={{ kind: 'testament', testament }} goView={goView} label={t('browse.browser.allBooksOf', { testament: TESTAMENT_TITLE[testament] })} short={t('browse.browser.allBooksShort')} />}
         >
           <QuizGrid quizzes={group.quizzes} />
         </Section>
@@ -221,9 +222,9 @@ function ViewBody({
       const theme = themes.find((entry) => entry.key === view.key);
       const inCategory = theme ? theme.quizzes : sortByChapter(quizzesInCategory(quizzes, view.key));
       if (inCategory.length === 0) return <NotFound goView={goView} />;
-      const title = theme?.title ?? inCategory[0].category?.title ?? "Thema's";
+      const title = theme?.title ?? inCategory[0].category?.title ?? t('browse.browser.chipThemes');
       return (
-        <Section title={title} subtitle={countLabel(inCategory.length)} action={<ViewLink view={{ kind: 'themes' }} goView={goView} label="Alle thema's" />}>
+        <Section title={title} subtitle={countLabel(inCategory.length)} action={<ViewLink view={{ kind: 'themes' }} goView={goView} label={t('browse.browser.allThemes')} />}>
           <QuizGrid quizzes={inCategory} />
         </Section>
       );
@@ -244,33 +245,33 @@ function Overview({ quizzes, books, themes, goView }: { quizzes: BrowseQuiz[]; b
   return (
     <>
       {popular.length > 0 && (
-        <Section title="Populaire quizzen" action={<ViewLink view={{ kind: 'popular' }} goView={goView} label="Alles" />}>
+        <Section title={t('browse.browser.popular')} action={<ViewLink view={{ kind: 'popular' }} goView={goView} label={t('common.all')} />}>
           <QuizGrid quizzes={popular} />
         </Section>
       )}
       <SamenSpelenBanner />
       {ot.length > 0 && (
         <Section
-          title="Oude Testament"
-          action={<ViewLink view={{ kind: 'testament', testament: 'OT' }} goView={goView} label={`Alle ${otBooks} ${otBooks === 1 ? 'boek' : 'boeken'}`} />}
+          title={TESTAMENT_TITLE.OT}
+          action={<ViewLink view={{ kind: 'testament', testament: 'OT' }} goView={goView} label={t(otBooks === 1 ? 'browse.browser.allNBooksOne' : 'browse.browser.allNBooks', { count: otBooks })} />}
         >
           <QuizGrid quizzes={ot} />
         </Section>
       )}
       {nt.length > 0 && (
         <Section
-          title="Nieuwe Testament"
-          action={<ViewLink view={{ kind: 'testament', testament: 'NT' }} goView={goView} label={`Alle ${ntBooks} ${ntBooks === 1 ? 'boek' : 'boeken'}`} />}
+          title={TESTAMENT_TITLE.NT}
+          action={<ViewLink view={{ kind: 'testament', testament: 'NT' }} goView={goView} label={t(ntBooks === 1 ? 'browse.browser.allNBooksOne' : 'browse.browser.allNBooks', { count: ntBooks })} />}
         >
           <QuizGrid quizzes={nt} />
         </Section>
       )}
       {themes.length > 0 && (
-        <Section title="Thema's">
+        <Section title={t('browse.browser.chipThemes')}>
           <ThemeRows themes={themes} goView={goView} />
         </Section>
       )}
-      {quizzes.length === 0 && <EmptyState title="Nog geen quizzen" description="Zodra er quizzen klaarstaan, vind je ze hier." />}
+      {quizzes.length === 0 && <EmptyState title={t('browse.browser.noQuizzesYet')} description={t('browse.browser.noQuizzesYetText')} />}
     </>
   );
 }
@@ -282,11 +283,11 @@ function TestamentView({ testament, books, goView }: { testament: 'OT' | 'NT'; b
     .filter((entry) => entry.books.length > 0);
 
   if (inTestament.length === 0) {
-    return <EmptyState title={`Nog geen quizzen uit het ${TESTAMENT_TITLE[testament]}`} description="Kies een ander filter of zoek op een onderwerp." />;
+    return <EmptyState title={t('browse.browser.noTestament', { testament: TESTAMENT_TITLE[testament] })} description={t('browse.browser.noTestamentText')} />;
   }
 
   return (
-    <Section title={TESTAMENT_TITLE[testament]} subtitle={`${inTestament.length} ${inTestament.length === 1 ? 'boek' : 'boeken'}`}>
+    <Section title={TESTAMENT_TITLE[testament]} subtitle={t(inTestament.length === 1 ? 'browse.browser.bookCountOne' : 'browse.browser.bookCount', { count: inTestament.length })}>
       <div className="flex flex-col gap-6">
         {groups.map(({ group, books: entries }) => (
           <div key={group.id} className="flex flex-col gap-3">
@@ -336,11 +337,11 @@ function SearchResults({
     return (
       <EmptyState
         icon={<Search />}
-        title="Geen quiz gevonden"
-        description={`Niets gevonden voor "${query}". Probeer een bijbelboek, een persoon of een ander woord.`}
+        title={t('browse.browser.noResults')}
+        description={t('browse.browser.noResultsText', { query })}
         action={
           <Button variant="secondary" onClick={onClear}>
-            Wis zoekopdracht
+            {t('browse.browser.clearSearch')}
           </Button>
         }
       />
@@ -350,7 +351,7 @@ function SearchResults({
   return (
     <>
       {bookMatches.length > 0 && (
-        <Section title="Bijbelboeken">
+        <Section title={t('browse.browser.booksSection')}>
           <div className="grid grid-cols-1 gap-3 m:grid-cols-3">
             {bookMatches.map((entry) => (
               <RowLink
@@ -367,7 +368,7 @@ function SearchResults({
         </Section>
       )}
       {matches.length > 0 && (
-        <Section title="Quizzen" subtitle={countLabel(matches.length)}>
+        <Section title={t('browse.browser.quizzesSection')} subtitle={countLabel(matches.length)}>
           <QuizGrid quizzes={matches} />
         </Section>
       )}
@@ -379,11 +380,11 @@ function NotFound({ goView }: { goView: GoView }) {
   return (
     <EmptyState
       icon={<Search />}
-      title="Hier staan (nog) geen quizzen"
-      description="Kies een bijbelboek of thema uit het overzicht."
+      title={t('browse.browser.notFound')}
+      description={t('browse.browser.notFoundText')}
       action={
         <Button variant="secondary" href="/quizzen" onClick={goView({ kind: 'overview' })}>
-          Naar alle quizzen
+          {t('browse.browser.toAll')}
         </Button>
       }
     />
@@ -503,7 +504,7 @@ function themeLook(theme: ThemeGroup, index: number): { icon: React.ReactNode; t
 
 function ThemeRows({ themes, goView }: { themes: ThemeGroup[]; goView: GoView }) {
   if (themes.length === 0) {
-    return <EmptyState title="Nog geen thema's" description="Zodra er een themaquiz klaarstaat, vind je die hier." />;
+    return <EmptyState title={t('browse.browser.noThemes')} description={t('browse.browser.noThemesText')} />;
   }
   return (
     <div className="grid grid-cols-1 gap-3 m:grid-cols-3">
@@ -535,9 +536,9 @@ function SamenSpelenBanner() {
         <Users className="size-6" strokeWidth={2.2} />
       </span>
       <span className="flex min-w-0 flex-grow flex-col gap-0.5">
-        <span className="text-[17px] font-extrabold">Samen spelen</span>
+        <span className="text-[17px] font-extrabold">{t('browse.browser.bannerTitle')}</span>
         <span className="text-[15px] font-semibold text-ink-muted">
-          Speel live met je groep of klas. Deel de kamercode, tot {MULTIPLAYER_MAX_PLAYERS} spelers doen mee.
+          {t('browse.browser.bannerText', { max: MULTIPLAYER_MAX_PLAYERS })}
         </span>
       </span>
       <ChevronRight className="size-5 shrink-0 text-ink-faint" strokeWidth={2.4} aria-hidden="true" />

@@ -8,6 +8,8 @@ import StudieLink from '@/components/StudieLink';
 import { passageFromQuestion, type StudiePassage } from '@/lib/ecosystem-links';
 import type { QuizReviewQuestion } from '@/lib/quiz-review';
 import { cn } from '@/lib/utils';
+import { isNlSite } from '@/config/site';
+import { t } from '@/i18n';
 
 export { HomeButton } from './HomeButton';
 
@@ -37,7 +39,7 @@ export function ResultLayout({
       <Breadcrumbs items={crumbs} />
       <div className="grid grid-cols-1 items-start gap-8 m:grid-cols-[minmax(0,1fr)_300px] m:grid-rows-[auto_1fr] lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="flex min-w-0 flex-col gap-9 m:col-start-1 m:row-start-1">{main}</div>
-        <aside aria-label="Volgende stap" className="flex min-w-0 flex-col gap-4 m:sticky m:top-6 m:col-start-2 m:row-span-2 m:row-start-1">
+        <aside aria-label={t('result.nextStep')} className="flex min-w-0 flex-col gap-4 m:sticky m:top-6 m:col-start-2 m:row-span-2 m:row-start-1">
           {aside}
         </aside>
         {footer && <div className="flex min-w-0 flex-col m:col-start-1 m:row-start-2 m:mt-1">{footer}</div>}
@@ -78,7 +80,7 @@ function ScoreRing({ score, total }: { score: number; total: number }) {
         >
           {score}/{total}
         </span>
-        <span className="text-[13px] font-bold text-ink-muted">goed</span>
+        <span className="text-[13px] font-bold text-ink-muted">{t('result.ringLabel')}</span>
       </span>
     </div>
   );
@@ -103,7 +105,7 @@ export function ScoreCard({
 }) {
   return (
     <section
-      aria-label={`Score ${score} van ${total}`}
+      aria-label={t('result.scoreAria', { score, total })}
       className="flex flex-col items-stretch gap-8 rounded-[16px] border border-line bg-card p-5 m:flex-row m:items-center m:px-8 m:py-7"
     >
       <ScoreRing score={score} total={total} />
@@ -111,21 +113,21 @@ export function ScoreCard({
         <h1 className="m-0 font-display text-[30px] font-semibold leading-9 m:text-[36px] m:leading-[44px]">
           {/* Below half right, "mooi gespeeld" would read as not having looked. */}
           {(() => {
-            const lead = total > 0 && score / total < 0.5 ? 'Goed geprobeerd' : 'Mooi gespeeld';
-            return firstName ? `${lead}, ${firstName}` : `${lead}!`;
+            const lead = total > 0 && score / total < 0.5 ? t('result.tryAgain') : t('result.nicelyPlayed');
+            return firstName ? t('result.titleNamed', { lead, name: firstName }) : t('result.titleAnon', { lead });
           })()}
         </h1>
         {isNewBest && (
           <span className="inline-flex h-7 items-center gap-1.5 rounded-full bg-lapis-tint px-3 text-[13px] font-extrabold text-lapis">
             <Trophy className="size-3.5" strokeWidth={2.4} aria-hidden="true" />
-            Nieuwe beste score
+            {t('result.newBest')}
           </span>
         )}
         <p className="m-0 mt-1 max-w-[56ch] text-base font-semibold leading-6 text-ink-soft">
-          Je had {score} van de {total} vragen goed in {quizTitle}.
-          {canReview ? ' Open een vraag voor de uitleg en de bijbeltekst.' : ''}
+          {t('result.summary', { score, total, title: quizTitle })}
+          {canReview ? ` ${t('result.openQuestion')}` : ''}
         </p>
-        {playedOnLabel && <span className="text-[13px] font-semibold text-ink-muted">Gespeeld op {playedOnLabel}</span>}
+        {playedOnLabel && <span className="text-[13px] font-semibold text-ink-muted">{t('result.playedOn', { date: playedOnLabel })}</span>}
       </div>
     </section>
   );
@@ -134,7 +136,7 @@ export function ScoreCard({
 export function NextQuizButton({ href }: { href: string }) {
   return (
     <Button href={href} block className="h-[60px] rounded-[14px] text-[18px]">
-      Volgende quiz
+      {t('result.nextQuiz')}
     </Button>
   );
 }
@@ -145,10 +147,10 @@ function AnswersHeader({ score, total }: { score: number; total: number }) {
   return (
     <div className="flex items-baseline justify-between gap-3">
       <h2 id="antwoorden" className="m-0 font-display text-[26px] font-semibold leading-8">
-        Jouw antwoorden
+        {t('result.yourAnswers')}
       </h2>
       <span className="shrink-0 text-[15px] font-bold text-ink-muted">
-        <span className="text-green">{score} goed</span> · <span className="text-coral-text">{total - score} fout</span>
+        <span className="text-green">{t('result.nCorrect', { count: score })}</span> · <span className="text-coral-text">{t('result.nWrong', { count: total - score })}</span>
       </span>
     </div>
   );
@@ -180,7 +182,7 @@ export function AnswerList({
               trailing={<span className="text-green">{question.correctAnswerText}</span>}
               summary={
                 <span className="flex flex-col">
-                  <span className="text-[13px] font-extrabold text-ink-muted">Vraag {index + 1}</span>
+                  <span className="text-[13px] font-extrabold text-ink-muted">{t('result.question', { n: index + 1 })}</span>
                   <span className="text-base font-bold text-ink">{question.questionText}</span>
                 </span>
               }
@@ -189,13 +191,13 @@ export function AnswerList({
               <p className="m-0">
                 {!question.isCorrect && (
                   <span className="mb-1.5 block text-sm font-bold text-coral-text">
-                    {question.selectedAnswerText ? `Jouw antwoord: ${question.selectedAnswerText}` : 'Geen antwoord gegeven'}
+                    {question.selectedAnswerText ? t('result.yourAnswer', { answer: question.selectedAnswerText }) : t('result.noAnswer')}
                   </span>
                 )}
                 <span className="mb-1.5 block text-sm font-bold text-green m:hidden">
-                  Goed antwoord: {question.correctAnswerText}
+                  {t('result.correctAnswer', { answer: question.correctAnswerText })}
                 </span>
-                {question.explanation || 'Bij deze vraag staat geen uitleg.'}
+                {question.explanation || t('result.noExplanation')}
               </p>
               {reference && reference !== '-' && (
                 <StudieLink
@@ -244,7 +246,7 @@ export function AnswerListLocked({
             <div key={index} className="flex items-center gap-3.5 border-b border-line-soft px-5 py-3.5 last:border-b-0">
               <span className="size-7 shrink-0 rounded-full bg-track" />
               <span className="flex min-w-0 flex-1 flex-col gap-1.5">
-                <span className="text-[13px] font-extrabold text-ink-muted">Vraag {index + 1}</span>
+                <span className="text-[13px] font-extrabold text-ink-muted">{t('result.question', { n: index + 1 })}</span>
                 <span className="h-3.5 rounded-full bg-segment" style={{ width: `${[78, 62, 70, 55, 66][index]}%` }} />
               </span>
             </div>
@@ -254,12 +256,12 @@ export function AnswerListLocked({
           <span className="flex size-10 items-center justify-center rounded-full border border-line bg-card text-ink-soft">
             <Lock className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />
           </span>
-          <span className="text-[17px] font-extrabold text-ink">Je antwoorden terugkijken is Premium</span>
+          <span className="text-[17px] font-extrabold text-ink">{t('result.lockedTitle')}</span>
           <span className="max-w-[44ch] text-sm font-semibold text-ink-muted">
-            Zie bij elke vraag wat je koos, het goede antwoord en de uitleg met de bijbeltekst.
+            {t('result.lockedText')}
           </span>
           <Button variant="gold" size="md" className="mt-1" href={premiumHref}>
-            Premium bekijken
+            {t('result.viewPremium')}
           </Button>
         </div>
       </div>
@@ -301,7 +303,7 @@ export function ProgressCard({
   streak: { days: number; hint: string } | null;
 }) {
   return (
-    <section aria-label="Jouw voortgang" className="flex flex-col rounded-[16px] border border-line bg-card">
+    <section aria-label={t('browse.dash.yourProgress')} className="flex flex-col rounded-[16px] border border-line bg-card">
       <div className="flex flex-col gap-3 px-[18px] py-4">
         <div className="flex items-center gap-3">
           <IconTile tone="gold">
@@ -309,19 +311,19 @@ export function ProgressCard({
           </IconTile>
           <span className="flex min-w-0 flex-1 flex-col gap-px">
             <span className="text-[15px] font-bold">
-              {xpEarned > 0 ? `+${xpEarned} XP verdiend` : 'Geen nieuwe XP'}
+              {xpEarned > 0 ? t('result.xpEarned', { xp: xpEarned }) : t('result.noNewXp')}
             </span>
             <span className="text-[13px] font-semibold text-ink-muted">
               {xpEarned > 0 || xpToNext === null
                 ? xpToNext !== null && nextLevel !== null
-                  ? `Nog ${xpToNext} XP tot level ${nextLevel}`
-                  : 'Je hebt het hoogste level bereikt'
-                : 'Verbeter je beste score voor meer XP'}
+                  ? t('browse.dash.xpToLevel', { xp: xpToNext, level: nextLevel })
+                  : t('browse.dash.reachedHighest')
+                : t('result.improve')}
             </span>
           </span>
         </div>
         {nextLevel !== null && (
-          <ProgressBar value={levelProgress} tone="gold" label={`Voortgang naar level ${nextLevel}`} />
+          <ProgressBar value={levelProgress} tone="gold" label={t('browse.dash.progressToLevel', { level: nextLevel })} />
         )}
       </div>
       {streak && (
@@ -331,7 +333,7 @@ export function ProgressCard({
           </IconTile>
           <span className="flex min-w-0 flex-1 flex-col gap-px">
             <span className="text-[15px] font-bold">
-              Reeks van {streak.days} {streak.days === 1 ? 'dag' : 'dagen'}
+              {t(streak.days === 1 ? 'result.streakOne' : 'result.streakMany', { days: streak.days })}
             </span>
             <span className="text-[13px] font-semibold text-ink-muted">{streak.hint}</span>
           </span>
@@ -346,14 +348,14 @@ export function ResultActions({ replayHref, playTogetherHref }: { replayHref: st
     <div className="flex flex-col gap-3">
       <Button href={playTogetherHref} variant="secondary" size="xl" block>
         <Users className="size-[18px] text-lapis" strokeWidth={2.2} aria-hidden="true" />
-        Speel samen met anderen
+        {t('result.playTogether')}
       </Button>
       <Link
         href={replayHref}
         className="flex h-11 items-center justify-center gap-2 rounded-[12px] text-[15px] font-bold no-underline focus-visible:outline-2 focus-visible:outline-lapis"
       >
         <RefreshCw className="size-4" strokeWidth={2.4} aria-hidden="true" />
-        Opnieuw spelen
+        {t('result.replay')}
       </Link>
     </div>
   );
@@ -368,18 +370,20 @@ export function StudieCard({
   quizSlug: string;
   hadWrongAnswers: boolean;
 }) {
+  // BijbelStudie is the Dutch sister product; the intl site has no equivalent yet.
+  if (!isNlSite()) return null;
   return (
-    <section aria-label="Lees het hoofdstuk" className="flex flex-col gap-2.5 rounded-[16px] border border-line bg-card px-[18px] py-4">
+    <section aria-label={t('result.readChapter')} className="flex flex-col gap-2.5 rounded-[16px] border border-line bg-card px-[18px] py-4">
       <div className="flex items-center gap-3">
         <IconTile tone="lapis">
           <BookOpen className="size-5" strokeWidth={2.2} aria-hidden="true" />
         </IconTile>
         <span className="text-[15px] font-bold">
-          {passage ? `Lees ${passage.book} ${passage.chapter} met uitleg` : 'Lees verder in de Bijbel'}
+          {passage ? t('result.readPassage', { book: passage.book, chapter: passage.chapter }) : t('result.readMore')}
         </span>
       </div>
       <p className="m-0 text-sm font-semibold leading-[21px] text-ink-muted">
-        {hadWrongAnswers ? 'Waarom was het antwoord anders? ' : ''}Op BijbelStudie lees je het hele hoofdstuk met uitleg.
+        {hadWrongAnswers ? `${t('result.whyDifferent')} ` : ''}{t('result.studieText')}
       </p>
       <StudieLink
         passage={passage}
@@ -389,7 +393,7 @@ export function StudieCard({
         icon={false}
         label={
           <>
-            Naar BijbelStudie
+            {t('result.toStudie')}
             <ArrowUpRight className="size-3.5" strokeWidth={2.4} aria-hidden="true" />
           </>
         }

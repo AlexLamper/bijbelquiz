@@ -1,6 +1,8 @@
 'use client';
 
 import * as React from 'react';
+import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 
 import { Button, Modal, Skeleton } from '@/components/bq';
 import { readGuestAllowance } from '@/lib/free-quiz-limit';
@@ -63,7 +65,7 @@ export function PassageReaderButton({
           className="inline-flex h-9 items-center gap-1.5 rounded-full bg-lapis-tint px-3.5 text-sm font-extrabold text-lapis hover:bg-lapis-wash"
         >
           <BookIcon size={15} strokeWidth={2.4} />
-          Lees {label}
+          {t('browse.detail.readPill', { label })}
         </button>
       ) : (
         <button
@@ -71,24 +73,24 @@ export function PassageReaderButton({
           onClick={() => setOpen(true)}
           className="inline-flex h-11 items-center justify-center px-2 text-[15px] font-bold text-lapis hover:text-lapis-edge"
         >
-          Lees eerst {label}
+          {t('browse.detail.readFirst', { label })}
         </button>
       )}
       <Modal
         open={open}
         onOpenChange={setOpen}
         title={label}
-        description="Lees het hoofdstuk rustig door. De vragen gaan hierover."
+        description={t('browse.detail.modalDescription')}
         size="lg"
         footer={
           <Button href={playHref} size="lg">
-            Start quiz
+            {t('browse.detail.start')}
           </Button>
         }
       >
         {failed && (
           <p className="m-0 rounded-[12px] bg-chip px-4 py-3 text-[15px] font-semibold text-ink-soft">
-            Dit hoofdstuk kon nu niet geladen worden. Je kunt gewoon met de quiz beginnen.
+            {t('browse.detail.failed')}
           </p>
         )}
         {!failed && !verses && (
@@ -106,7 +108,7 @@ export function PassageReaderButton({
                 <span>{verse.text}</span>
               </p>
             ))}
-            <p className="m-0 border-t border-line-soft pt-3 text-[13px] font-semibold text-ink-muted">Statenvertaling</p>
+            <p className="m-0 border-t border-line-soft pt-3 text-[13px] font-semibold text-ink-muted">{t('browse.detail.translation')}</p>
           </div>
         )}
       </Modal>
@@ -133,7 +135,9 @@ export function FreeQuizzesLine({ remaining }: { remaining: number | null | 'gue
 
   return (
     <p className="m-0 text-sm font-semibold text-ink-muted">
-      Nog <span className="font-extrabold text-ink">{value}</span> gratis {value === 1 ? 'quiz' : 'quizzen'}
+      {rich(t(value === 1 ? 'browse.detail.freeLeftOne' : 'browse.detail.freeLeftMany', { value: '{value}' }), {
+        value: <span className="font-extrabold text-ink">{value}</span>,
+      })}
     </p>
   );
 }

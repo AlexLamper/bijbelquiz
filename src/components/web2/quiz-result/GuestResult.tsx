@@ -9,6 +9,8 @@ import { readPendingAttempts, type PendingAttempt } from '@/lib/pending-attempts
 
 import ReviewLock from './ReviewLock';
 import { HomeButton, NextQuizButton, ResultActions, ResultLayout, ScoreCard, StudieCard } from './ResultView';
+import { isNlSite } from '@/config/site';
+import { t } from '@/i18n';
 
 interface GuestResultProps {
   quizId: string;
@@ -24,7 +26,12 @@ interface GuestResultProps {
 const subscribe = () => () => undefined;
 
 function formatPlayedOn(timestamp: number): string {
-  return new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Amsterdam' }).format(
+  return new Intl.DateTimeFormat(t('bq.header.numberLocale'), {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined,
+  }).format(
     new Date(timestamp),
   );
 }
@@ -63,14 +70,14 @@ export default function GuestResult({ quizId, quizSlug, quizTitle, crumbs, nextQ
         crumbs={crumbs}
         main={
           <section className="flex flex-col items-start gap-3 rounded-[16px] border border-line bg-card p-5 m:px-8 m:py-7">
-            <h1 className="m-0 font-display text-[30px] font-semibold leading-9">Geen resultaat gevonden</h1>
+            <h1 className="m-0 font-display text-[30px] font-semibold leading-9">{t('result.guest.noneTitle')}</h1>
             <p className="m-0 text-base font-semibold leading-6 text-ink-soft">
-              Op dit apparaat staat geen score van {quizTitle}. Speel de quiz, of log in om je resultaten te zien.
+              {t('result.guest.noneText', { title: quizTitle })}
             </p>
             <div className="mt-1 flex flex-wrap gap-3">
-              <Button href={`/quiz/${quizSlug}`}>Speel de quiz</Button>
+              <Button href={`/quiz/${quizSlug}`}>{t('result.guest.playQuiz')}</Button>
               <Button href={`/inloggen?callbackUrl=${encodeURIComponent(`/quiz/${quizSlug}/beoordeling`)}`} variant="secondary">
-                Inloggen
+                {t('bq.auth.login')}
               </Button>
             </div>
           </section>
@@ -105,7 +112,7 @@ export default function GuestResult({ quizId, quizSlug, quizTitle, crumbs, nextQ
               browser. Both buttons land on the dashboard, where the attempt
               shows up once `PendingAttemptSync` has claimed it. */}
           <section
-            aria-label="Bewaar je score"
+            aria-label={t('result.guest.saveAria')}
             data-analytics-id="result_account_prompt"
             data-analytics-label="Bewaar je score"
             className="flex flex-col gap-3 rounded-[16px] border border-line bg-card px-[18px] py-4"
@@ -115,20 +122,19 @@ export default function GuestResult({ quizId, quizSlug, quizTitle, crumbs, nextQ
                 <BoltSolidIcon size={20} />
               </span>
               <span className="flex min-w-0 flex-1 flex-col gap-px">
-                <span className="text-[15px] font-bold">Bewaar je score en {attempt.xpPreview} XP</span>
-                <span className="text-[13px] font-semibold text-ink-muted">Nog niet opgeslagen</span>
+                <span className="text-[15px] font-bold">{t('result.guest.saveTitle', { xp: attempt.xpPreview })}</span>
+                <span className="text-[13px] font-semibold text-ink-muted">{t('result.guest.notSaved')}</span>
               </span>
             </div>
             <p className="m-0 text-sm font-semibold leading-[21px] text-ink-muted">
-              Maak een gratis account of log in, dan wordt deze score direct bijgeschreven en telt hij mee voor je level, je reeks en de
-              ranglijst.
+              {t('result.guest.saveText')}
             </p>
             <div className="flex flex-col gap-2">
               <Button href="/registreren?callbackUrl=%2Fdashboard" data-analytics-id="result_account_register" block>
-                Gratis account aanmaken
+                {t('result.guest.register')}
               </Button>
               <Button href="/inloggen?callbackUrl=%2Fdashboard" data-analytics-id="result_account_login" variant="secondary" block>
-                Inloggen
+                {t('bq.auth.login')}
               </Button>
             </div>
           </section>

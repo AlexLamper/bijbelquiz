@@ -1,6 +1,7 @@
 import { Home } from 'lucide-react';
 
 import { Button } from '@/components/bq';
+import { t } from '@/i18n';
 
 /**
  * "Terug naar home" at the bottom of an end screen (quiz result, Samen spelen
@@ -16,7 +17,7 @@ export function HomeButton({
   const content = (
     <>
       <Home className="size-[18px]" strokeWidth={2.2} aria-hidden="true" />
-      Terug naar home
+      {t('result.home')}
     </>
   );
   return href !== undefined ? (

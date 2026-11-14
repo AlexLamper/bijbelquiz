@@ -33,6 +33,9 @@ import { addPendingAttempt } from '@/lib/pending-attempts';
 import type { QuizPassage } from '@/lib/quiz-passage';
 import { useUserSettings } from '@/lib/user-settings-client';
 import { QUESTION_TIMER_CHOICES, type QuestionFontSize, type QuestionTimerSeconds } from '@/lib/user-settings';
+import { isNlSite } from '@/config/site';
+import { t } from '@/i18n';
+import { rich } from '@/i18n/rich';
 import { cn } from '@/lib/utils';
 import { calculateAttemptXp } from '@/lib/xp';
 
@@ -456,23 +459,23 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
   };
 
   const verdict = answeredCorrectly
-    ? { label: 'Goed!', aria: 'Goed antwoord', tone: 'text-green-text', border: 'border-t-green' }
+    ? { label: t('play.verdictGood'), aria: t('play.verdictGoodAria'), tone: 'text-green-text', border: 'border-t-green' }
     : timedOut
-      ? { label: 'Tijd om', aria: 'Tijd om', tone: 'text-coral-text', border: 'border-t-coral-strong' }
-      : { label: 'Helaas', aria: 'Fout antwoord', tone: 'text-coral-text', border: 'border-t-coral-strong' };
+      ? { label: t('play.verdictTime'), aria: t('play.verdictTime'), tone: 'text-coral-text', border: 'border-t-coral-strong' }
+      : { label: t('play.verdictBad'), aria: t('play.verdictBadAria'), tone: 'text-coral-text', border: 'border-t-coral-strong' };
 
   return (
     <div className="mx-auto flex w-full max-w-[784px] flex-col gap-5 px-4 pb-16 pt-8 m:px-8">
       {/* Stop, progress, settings */}
       <div className="flex items-center gap-3.5">
-        <IconButton aria-label="Quiz stoppen" onClick={() => setPendingLeaveHref('/quizzen')}>
+        <IconButton aria-label={t('play.stop')} onClick={() => setPendingLeaveHref('/quizzen')}>
           <X className="size-[18px]" strokeWidth={2.6} aria-hidden="true" />
         </IconButton>
         <ProgressSegments current={currentIndex + 1} total={total} />
         <span className="shrink-0 text-[15px] font-extrabold tabular-nums text-ink-soft" aria-hidden="true">
           {currentIndex + 1}/{total}
         </span>
-        <IconButton aria-label="Quiz-instellingen" onClick={() => setIsSettingsOpen(true)}>
+        <IconButton aria-label={t('play.settingsAria')} onClick={() => setIsSettingsOpen(true)}>
           <Settings className="size-[19px]" strokeWidth={2.2} aria-hidden="true" />
         </IconButton>
       </div>
@@ -495,7 +498,7 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
                   value={timerSeconds > 0 ? secondsLeft / timerSeconds : 0}
                   size={36}
                   tone={secondsLeft <= 5 && !hasAnswered ? 'coral' : 'lapis'}
-                  label={timedOut ? 'Tijd om' : `Nog ${secondsLeft} seconden`}
+                  label={timedOut ? t('play.timeUp') : t('play.secondsLeft', { seconds: secondsLeft })}
                 >
                   <span className="text-[12px] tabular-nums">{timedOut ? 0 : secondsLeft}</span>
                 </ProgressRing>
@@ -509,7 +512,7 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
           className={cn('m-0 wrap-anywhere text-ink outline-none', questionFont, questionSize)}
         >
           <span className="sr-only">
-            Vraag {currentIndex + 1} van {total}:{' '}
+            {t('play.questionOfSr', { current: currentIndex + 1, total })}{' '}
           </span>
           {question.text}
         </h1>
@@ -527,9 +530,9 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
               aria-keyshortcuts={index < 9 ? String(index + 1) : undefined}
               aria-label={
                 state === 'correct'
-                  ? `${answer.text}, goed antwoord`
+                  ? t('play.answerCorrectAria', { answer: answer.text })
                   : state === 'wrong'
-                    ? `${answer.text}, jouw antwoord, fout`
+                    ? t('play.answerWrongAria', { answer: answer.text })
                     : undefined
               }
               className={cn(anyLong && 'text-[18px] leading-snug', fontFamily === 'sans' && 'font-sans')}
@@ -571,7 +574,7 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
               <PremiumLock
                 lines={2}
                 onPremiumClick={openPremium}
-                description="Lees bij elk antwoord waarom het klopt, met Premium."
+                description={t('play.explanationLock')}
               />
             )
           )}
@@ -589,7 +592,7 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
                 ) : (
                   <BookOpen className="size-[15px]" strokeWidth={2.4} aria-hidden="true" />
                 )}
-                {verse.open ? `Verberg ${reference}` : `Lees ${reference}`}
+                {verse.open ? t('play.hideRef', { reference }) : t('play.readRef', { reference })}
               </button>
             ) : (
               <span />
@@ -601,13 +604,13 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
               loading={isFinishing}
               className="w-full m:w-auto m:min-w-[240px]"
             >
-              {isFinishing ? 'Opslaan...' : isLast ? 'Quiz afronden' : 'Volgende vraag'}
+              {isFinishing ? t('play.saving') : isLast ? t('play.finish') : t('play.next')}
             </Button>
           </div>
 
           {finishError && (
             <p role="alert" className="m-0 text-sm font-bold text-coral-text">
-              Je score kon niet worden opgeslagen. Controleer je verbinding en probeer het opnieuw.
+              {t('play.saveFailed')}
             </p>
           )}
 
@@ -618,19 +621,19 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
                   <p className="m-0 text-[15px] font-semibold italic leading-[22px] text-ink">
                     &ldquo;{verse.result.text}&rdquo;
                   </p>
-                  <p className="m-0 text-[13px] font-semibold text-ink-muted">{verse.result.reference} - Statenvertaling</p>
+                  <p className="m-0 text-[13px] font-semibold text-ink-muted">{verse.result.reference} - {t('play.translation')}</p>
                 </>
               ) : (
-                <p className="m-0 text-[13px] font-semibold text-ink-muted">De tekst kon niet worden opgehaald.</p>
+                <p className="m-0 text-[13px] font-semibold text-ink-muted">{t('play.verseFailed')}</p>
               )}
               {/* The handover to BijbelStudie: the whole chapter, in its own tab
                   so the quiz is still here afterwards. */}
-              {questionPassage && (
+              {questionPassage && isNlSite() && (
                 <StudieLink
                   passage={questionPassage}
                   surface="explanation"
                   quizSlug={quiz.slug}
-                  label={`Lees ${questionPassage.book} ${questionPassage.chapter} met uitleg op BijbelStudie`}
+                  label={t('play.studieLabel', { book: questionPassage.book, chapter: questionPassage.chapter })}
                   className="text-[14px] font-bold no-underline"
                 />
               )}
@@ -642,21 +645,21 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
       <Modal
         open={isSettingsOpen}
         onOpenChange={setIsSettingsOpen}
-        title="Quiz-instellingen"
+        title={t('play.settingsTitle')}
         size="sm"
         footer={
           <Button variant="secondary" onClick={() => setIsSettingsOpen(false)}>
-            Sluiten
+            {t('bq.a11y.close')}
           </Button>
         }
       >
         <div className="flex flex-col divide-y divide-line-soft">
-          <SettingRow label="Tekstgrootte" className="hidden m:flex">
+          <SettingRow label={t('play.textSize')} className="hidden m:flex">
             <Segmented
               value={textSize}
               options={[
-                { value: 'normal', label: 'Normaal' },
-                { value: 'large', label: 'Groot' },
+                { value: 'normal', label: t('play.sizeNormal') },
+                { value: 'large', label: t('play.sizeLarge') },
               ]}
               onChange={(value) => {
                 setTextSize(value);
@@ -665,10 +668,10 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
             />
           </SettingRow>
           {/* Off first: somebody opening this while a clock runs usually wants it gone. */}
-          <SettingRow label="Tijd per vraag">
+          <SettingRow label={t('play.timer')}>
             <Segmented
               value={timerSeconds as QuestionTimerSeconds}
-              options={QUESTION_TIMER_CHOICES.map((choice) => ({ value: choice, label: choice === 0 ? 'Uit' : `${choice}s` }))}
+              options={QUESTION_TIMER_CHOICES.map((choice) => ({ value: choice, label: choice === 0 ? t('play.off') : `${choice}s` }))}
               onChange={(value) => {
                 setTimerSeconds(value);
                 setSecondsLeft(value);
@@ -676,12 +679,12 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
               }}
             />
           </SettingRow>
-          <SettingRow label="Bijbelverwijzingen">
+          <SettingRow label={t('play.bibleRefs')}>
             <Segmented
               value={showBibleReferences}
               options={[
-                { value: true, label: 'Aan' },
-                { value: false, label: 'Uit' },
+                { value: true, label: t('play.on') },
+                { value: false, label: t('play.off') },
               ]}
               onChange={(value) => {
                 setShowBibleReferences(value);
@@ -689,29 +692,29 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
               }}
             />
           </SettingRow>
-          <SettingRow label="Lettertype">
+          <SettingRow label={t('play.font')}>
             <Segmented
               value={fontFamily}
               options={[
-                { value: 'display', label: 'Rond' },
-                { value: 'sans', label: 'Strak' },
+                { value: 'display', label: t('play.fontRound') },
+                { value: 'sans', label: t('play.fontSharp') },
               ]}
               onChange={setFontFamily}
             />
           </SettingRow>
-          <SettingRow label="Toon uitleg">
+          <SettingRow label={t('play.showExplanation')}>
             <Segmented
               value={showExplanation}
               options={[
-                { value: true, label: 'Aan' },
-                { value: false, label: 'Uit' },
+                { value: true, label: t('play.on') },
+                { value: false, label: t('play.off') },
               ]}
               onChange={setShowExplanation}
             />
           </SettingRow>
-          <SettingRow label="Volledig scherm">
+          <SettingRow label={t('play.fullscreen')}>
             <Button variant="secondary" size="sm" onClick={toggleFullscreen}>
-              Aan/uit
+              {t('play.toggle')}
             </Button>
           </SettingRow>
         </div>
@@ -722,21 +725,18 @@ export default function QuizPlay({ quiz, passage, viewer, isReplay: serverReplay
         onOpenChange={(open) => {
           if (!open) setPendingLeaveHref(null);
         }}
-        title="Quiz verlaten?"
+        title={t('play.leaveTitle')}
         size="sm"
         description={
-          <>
-            Weet je zeker dat je wilt stoppen? Je kunt tot <span className="font-extrabold text-ink">{quiz.rewardXp} XP</span>{' '}
-            mislopen. Als je nu weggaat, wordt je voortgang niet opgeslagen.
-          </>
+          rich(t('play.leaveText'), { xp: <span className="font-extrabold text-ink">{quiz.rewardXp} XP</span> })
         }
         footer={
           <>
             <Button variant="secondary" onClick={() => setPendingLeaveHref(null)}>
-              Blijven
+              {t('play.stay')}
             </Button>
             <Button variant="danger" onClick={leave}>
-              Quiz verlaten
+              {t('play.leave')}
             </Button>
           </>
         }

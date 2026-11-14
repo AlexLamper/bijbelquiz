@@ -12,6 +12,7 @@
 import { bookByCode, bookOrder, type Testament } from '@/lib/bible-books';
 import { sortQuizzes } from '@/lib/quiz-order';
 import { normalizeSearchText } from '@/lib/quiz-series';
+import { t } from '@/i18n';
 
 export interface BrowseBook {
   code: string;
@@ -265,5 +266,5 @@ export function searchBooks(groups: BookGroup[], query: string): BookGroup[] {
 }
 
 export function countLabel(count: number): string {
-  return `${count} ${count === 1 ? 'quiz' : 'quizzen'}`;
+  return t(count === 1 ? 'browse.countLabelOne' : 'browse.countLabelMany', { count });
 }
