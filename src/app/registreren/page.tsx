@@ -4,20 +4,24 @@ import type { Metadata } from 'next';
 import { AuthPage, RegisterVisual } from '@/components/web2/account/AuthLayout';
 import { isAppleWebSignInEnabled } from '@/lib/auth/apple-web';
 import RegisterForm from './RegisterForm';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Gratis Account Aanmaken | BijbelQuiz',
-  description:
-    'Registreer je gratis bij BijbelQuiz. Houd je voortgang bij, verdien badges en leer meer over de Bijbel. Sluit je aan bij de community.',
-  alternates: {
-    canonical: '/registreren',
-  },
-  openGraph: {
-    title: 'Start met BijbelQuiz - Maak een Account',
-    description: 'Begin vandaag nog met het testen van je Bijbelkennis. Gratis aanmelden.',
-    url: 'https://www.bijbelquiz.com/registreren',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.registreren.title'),
+    description:
+    t('pages.registreren.description'),
+    alternates: {
+      canonical: '/registreren',
+    },
+    openGraph: {
+      title: t('pages.registreren.ogTitle'),
+      description: t('pages.registreren.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/registreren`,
+    },
+  };
+}
 
 export default function RegisterPage() {
   return (

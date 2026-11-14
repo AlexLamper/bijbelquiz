@@ -6,18 +6,22 @@ import { GROUP_LICENSE_PRICE_LABEL, GROUP_LICENSE_SEATS } from '@/lib/group-lice
 import { getPremiumPriceLabels } from '@/lib/premium-prices';
 import { trialDaysForPlan } from '@/lib/stripe-plans';
 import { GroupLicenseView } from '@/components/web2/premium/GroupLicenseView';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Groepslicentie | BijbelQuiz voor gemeentes en scholen',
-  description:
-    `Premium voor je hele groep: één licentie, één code. Tot ${GROUP_LICENSE_SEATS} mensen spelen met Premium, ieder op zijn eigen telefoon. Voor jeugdgroepen, gemeentes en klassen.`,
-  alternates: { canonical: '/groepslicentie' },
-  openGraph: {
-    title: 'BijbelQuiz Groepslicentie',
-    description: 'Premium voor je hele groep met een code die je gewoon voorleest.',
-    url: 'https://www.bijbelquiz.com/groepslicentie',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.groepslicentie.title'),
+    description:
+    t('pages.groepslicentie.description', { seats: GROUP_LICENSE_SEATS }),
+    alternates: { canonical: '/groepslicentie' },
+    openGraph: {
+      title: t('pages.groepslicentie.ogTitle'),
+      description: t('pages.groepslicentie.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/groepslicentie`,
+    },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

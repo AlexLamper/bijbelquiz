@@ -29,12 +29,15 @@ import {
 import { pickQuizOfTheDay } from '@/lib/quiz-of-the-day-pick';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
 import { calculateNextStreak } from '@/lib/streak';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Dashboard - BijbelQuiz',
-  description: 'Jouw persoonlijke Bijbelquiz dashboard.',
-  robots: { index: false, follow: true },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.dashboard.title'),
+    description: t('pages.dashboard.description'),
+    robots: { index: false, follow: true },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

@@ -16,14 +16,17 @@ import { applyCheckoutSession, readSubscription } from '@/lib/stripe-billing';
 import stripe from '@/lib/stripe';
 import { readReturnPath, readStripePlan, type StripePlanId } from '@/lib/stripe-plans';
 import SessionRefresher from './SessionRefresher';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Welkom bij Premium',
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.premium-succes.title'),
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
 
 interface PageProps {
   searchParams: Promise<{ session_id?: string; next?: string }>;

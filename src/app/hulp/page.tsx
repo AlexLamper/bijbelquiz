@@ -4,12 +4,15 @@ import { Button, Container } from '@/components/bq';
 import { HELP_QUESTIONS } from '@/components/web2/marketing/help-content';
 import { HelpCenter } from '@/components/web2/marketing/HelpCenter';
 import { AlertIcon, IconTile, MailIcon } from '@/components/web2/marketing/icons';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Hulp & Support | BijbelQuiz Helpdesk',
-  description: 'Vind antwoorden voor BijbelQuiz problemen, betalingen en spelregels.',
-  alternates: { canonical: '/hulp' },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.hulp.title'),
+    description: t('pages.hulp.description'),
+    alternates: { canonical: '/hulp' },
+  };
+}
 
 export default function HelpPage() {
   const faqJsonLd = {

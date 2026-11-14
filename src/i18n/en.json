@@ -1057,5 +1057,132 @@
       "An explanation with every answer",
       "Review your answers after every quiz"
     ]
+  },
+  "pages": {
+    "account-verwijderen": {
+      "title": "Delete Account | Bible Quizzes",
+      "description": "Delete your Bible Quizzes account and the data that goes with it, or submit a request by email."
+    },
+    "bijbelstudie": {
+      "title": "BijbelStudie: read the Bible with explanation",
+      "description": "BijbelStudie is made by the team behind Bible Quizzes. Read every chapter with commentary, follow guided studies and ask an AI assistant. Free to use.",
+      "ogTitle": "BijbelStudie, from the team behind Bible Quizzes",
+      "ogDescription": "The quiz asks the question. BijbelStudie gives you the chapter."
+    },
+    "contact": {
+      "title": "Contact & Frequently Asked Questions | Bible Quizzes Support",
+      "description": "Do you have a question about Bible Quizzes? Check our FAQ or get in touch. We are happy to help.",
+      "ogTitle": "Contact - Bible Quizzes",
+      "ogDescription": "Ask your question or find answers on the support page."
+    },
+    "dashboard": {
+      "title": "Dashboard - Bible Quizzes",
+      "description": "Your personal Bible quiz dashboard."
+    },
+    "duel-token": {
+      "title": "You have been challenged to a duel - Bible Quizzes"
+    },
+    "duels-id": {
+      "title": "Duel - Bible Quizzes"
+    },
+    "foutmelding": {
+      "title": "Report a Problem | Bible Quizzes Support",
+      "description": "Report technical problems or errors in Bible Quizzes so we can fix them quickly."
+    },
+    "groepslicentie": {
+      "title": "Group Licence | Bible Quizzes for churches and schools",
+      "description": "Premium for your whole group: one licence, one code. Up to {seats} people play with Premium, each on their own phone. For youth groups, churches and classes.",
+      "ogTitle": "Bible Quizzes Group Licence",
+      "ogDescription": "Premium for your whole group with a code you simply read out."
+    },
+    "hulp": {
+      "title": "Help & Support | Bible Quizzes Help Desk",
+      "description": "Find answers about Bible Quizzes problems, payments and game rules."
+    },
+    "inloggen": {
+      "title": "Log in | Bible Quizzes - Keep Learning",
+      "description": "Log in to your Bible Quizzes account. See your statistics, resume unfinished quizzes and keep your streak.",
+      "ogTitle": "Log in to Bible Quizzes",
+      "ogDescription": "Welcome back! Log in to keep playing."
+    },
+    "instellingen": {
+      "title": "Settings | Bible Quizzes",
+      "description": "Manage your personal preferences and account settings."
+    },
+    "home": {
+      "title": "Bible Quizzes - Free Online Bible Quizzes",
+      "description": "Test your Bible knowledge with hundreds of free questions. From easy quizzes for beginners to in-depth studies for advanced players. Start right away!",
+      "ogTitle": "Bible Quizzes - Test Your Bible Knowledge for Free",
+      "ogDescription": "How well do you know the Bible? Take the free test and learn more about the faith through interactive quizzes."
+    },
+    "premium": {
+      "title": "Premium - Play without limits",
+      "description": "Play all Bible quizzes as often as you like, read the explanation with every answer and review your answers after each quiz. Yearly with a 7-day free trial.",
+      "ogTitle": "Bible Quizzes Premium",
+      "ogDescription": "All quizzes, as often as you like. An explanation with every answer. Review your answers after every quiz."
+    },
+    "premium-succes": {
+      "title": "Welcome to Premium"
+    },
+    "privacybeleid": {
+      "title": "Privacy Policy | Bible Quizzes",
+      "description": "How we handle your data and privacy at Bible Quizzes. Read our privacy statement."
+    },
+    "profiel": {
+      "title": "My Profile - Bible Quizzes"
+    },
+    "quiz-id-beoordeling": {
+      "title": "Quiz Overview - Bible Quizzes"
+    },
+    "quizzen": {
+      "title": "All Bible Quizzes - Choose Your Category and Level | Bible Quizzes",
+      "description": "Overview of all available Bible quizzes. Filter by category, play right away and test your knowledge of the Old and New Testament.",
+      "keywords": [
+        "bible quizzes",
+        "quiz overview",
+        "bible questions",
+        "faith quiz",
+        "online bible study"
+      ],
+      "ogTitle": "Play All Bible Quizzes - Free and Premium",
+      "ogDescription": "Search and play the best Bible quizzes online. From beginners to experts."
+    },
+    "ranglijst": {
+      "title": "Leaderboard - Bible Quizzes",
+      "description": "See the top players of Bible Quizzes. Earn points by playing quizzes and climb the leaderboard.",
+      "ogTitle": "The Bible Quizzes Leaderboard - Who Knows the Bible Best?",
+      "ogDescription": "Compete for first place. Play quizzes, earn points and become number 1."
+    },
+    "registreren": {
+      "title": "Create a Free Account | Bible Quizzes",
+      "description": "Sign up for free at Bible Quizzes. Track your progress, earn badges and learn more about the Bible. Join the community.",
+      "ogTitle": "Get Started with Bible Quizzes - Create an Account",
+      "ogDescription": "Start testing your Bible knowledge today. Sign up for free."
+    },
+    "samen-spelen-roomCode-lobby": {
+      "title": "Waiting room"
+    },
+    "samen-spelen-roomCode-spel": {
+      "title": "Play together"
+    },
+    "samen-spelen-roomCode-uitslag": {
+      "title": "Final standings"
+    },
+    "samen-spelen": {
+      "title": "Play together",
+      "description": "Play the same Bible quiz at the same time with your group, each on their own phone. Free, up to 20 players."
+    },
+    "voorwaarden": {
+      "title": "Terms and Conditions | Bible Quizzes",
+      "description": "Read our terms and conditions for using Bible Quizzes services and products."
+    },
+    "wachtwoord-herstellen": {
+      "title": "New password | Bible Quizzes",
+      "description": "Choose a new password for your Bible Quizzes account."
+    },
+    "wachtwoord-vergeten": {
+      "title": "Forgot password | Bible Quizzes",
+      "description": "Request a link to choose a new password for your Bible Quizzes account."
+    }
   }
 }

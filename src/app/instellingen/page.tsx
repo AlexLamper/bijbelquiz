@@ -8,12 +8,15 @@ import { connectDB, User } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { hasActiveStripeSubscription, resolvePremiumSubscription } from '@/lib/premium-subscription';
 import { normalizeOnboardingSettings, normalizeUserSettings } from '@/lib/user-settings';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Instellingen | BijbelQuiz',
-  description: 'Beheer je persoonlijke voorkeuren en accountinstellingen.',
-  robots: { index: false, follow: true },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.instellingen.title'),
+    description: t('pages.instellingen.description'),
+    robots: { index: false, follow: true },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

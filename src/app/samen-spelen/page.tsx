@@ -11,11 +11,14 @@ import { MULTIPLAYER_MAX_PLAYERS } from '@/lib/premium-benefits';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { sortQuizzes } from '@/lib/quiz-order';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Samen spelen',
-  description: 'Speel met je groep tegelijk dezelfde bijbelquiz, ieder op een eigen telefoon. Gratis, tot 20 spelers.',
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.samen-spelen.title'),
+    description: t('pages.samen-spelen.description'),
+  };
+}
 
 interface RawUserDocument {
   isPremium?: boolean;

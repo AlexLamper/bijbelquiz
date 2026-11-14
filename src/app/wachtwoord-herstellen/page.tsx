@@ -3,14 +3,17 @@ import type { Metadata } from 'next';
 import { AuthPage } from '@/components/web2/account/AuthLayout';
 import { isResetTokenUsable } from '@/lib/auth/password-reset';
 import ResetPasswordForm, { InvalidResetLink } from './ResetPasswordForm';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Nieuw wachtwoord | BijbelQuiz',
-  description: 'Kies een nieuw wachtwoord voor je BijbelQuiz account.',
-  robots: { index: false, follow: false },
-  // The token is in the address; never hand it to another site as a referrer.
-  referrer: 'no-referrer',
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.wachtwoord-herstellen.title'),
+    description: t('pages.wachtwoord-herstellen.description'),
+    robots: { index: false, follow: false },
+    // The token is in the address; never hand it to another site as a referrer.
+    referrer: 'no-referrer',
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

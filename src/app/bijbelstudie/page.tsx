@@ -22,18 +22,22 @@ import { PromoCodeBox } from '@/components/web2/marketing/PromoCodeBox';
 import { SectionHead } from '@/components/web2/marketing/SectionHead';
 import { studiePromo } from '@/lib/ecosystem-links';
 import { cn } from '@/lib/utils';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'BijbelStudie: de Bijbel lezen met uitleg erbij',
-  description:
-    'BijbelStudie is gemaakt door het team achter BijbelQuiz. Lees elk hoofdstuk met commentaar, volg begeleide studies en stel je vragen aan een AI-assistent. Gratis te gebruiken.',
-  alternates: { canonical: '/bijbelstudie' },
-  openGraph: {
-    title: 'BijbelStudie, van het team achter BijbelQuiz',
-    description: 'De quiz stelt de vraag. BijbelStudie geeft het hoofdstuk erbij.',
-    url: 'https://www.bijbelquiz.com/bijbelstudie',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.bijbelstudie.title'),
+    description:
+    t('pages.bijbelstudie.description'),
+    alternates: { canonical: '/bijbelstudie' },
+    openGraph: {
+      title: t('pages.bijbelstudie.ogTitle'),
+      description: t('pages.bijbelstudie.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/bijbelstudie`,
+    },
+  };
+}
 
 // Re-rendered hourly so the offer disappears on its own once it expires,
 // without waiting for the next deploy.

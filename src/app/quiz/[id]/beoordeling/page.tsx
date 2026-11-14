@@ -23,14 +23,17 @@ import { getLevelInfo } from '@/lib/gamification';
 import { dominantBookChapter, pickNextQuiz, type NextQuizCandidate } from '@/lib/next-quiz';
 import { buildReviewQuestionsFromAttempt, type StoredAttemptAnswer } from '@/lib/quiz-review';
 import { calculateNextStreak } from '@/lib/streak';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Quizoverzicht - BijbelQuiz',
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.quiz-id-beoordeling.title'),
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
 
 interface PageProps {
   params: Promise<{ id: string }>;

@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
 
 import { LegalPage, LegalText, type LegalSection } from '@/components/web2/marketing/LegalPage';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Algemene Voorwaarden | BijbelQuiz',
-  description: 'Lees onze algemene voorwaarden voor het gebruik van BijbelQuiz services en producten.',
-  alternates: { canonical: '/voorwaarden' },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.voorwaarden.title'),
+    description: t('pages.voorwaarden.description'),
+    alternates: { canonical: '/voorwaarden' },
+  };
+}
 
 const SECTIONS: LegalSection[] = [
   {

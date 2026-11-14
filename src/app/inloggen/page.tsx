@@ -4,19 +4,23 @@ import type { Metadata } from 'next';
 import { AuthPage, LoginVisual } from '@/components/web2/account/AuthLayout';
 import { isAppleWebSignInEnabled } from '@/lib/auth/apple-web';
 import LoginForm from './LoginForm';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Inloggen | BijbelQuiz - Ga Verder met Leren',
-  description: 'Log in op je BijbelQuiz account. Bekijk je statistieken, hervat openstaande quizzen en houd je streak vast.',
-  alternates: {
-    canonical: '/inloggen',
-  },
-  openGraph: {
-    title: 'Inloggen bij BijbelQuiz',
-    description: 'Welkom terug! Log in om verder te spelen.',
-    url: 'https://www.bijbelquiz.com/inloggen',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.inloggen.title'),
+    description: t('pages.inloggen.description'),
+    alternates: {
+      canonical: '/inloggen',
+    },
+    openGraph: {
+      title: t('pages.inloggen.ogTitle'),
+      description: t('pages.inloggen.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/inloggen`,
+    },
+  };
+}
 
 export default function LoginPage() {
   return (

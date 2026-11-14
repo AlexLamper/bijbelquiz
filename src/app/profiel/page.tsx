@@ -11,14 +11,17 @@ import { BADGES, getLevelInfo } from '@/lib/gamification';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { daysUntilRenameAllowed } from '@/lib/profile-identity';
 import { dutchReference, dutchReferenceString } from '@/lib/daytext-reference';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Mijn Profiel - BijbelQuiz',
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.profiel.title'),
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

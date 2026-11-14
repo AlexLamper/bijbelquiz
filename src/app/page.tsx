@@ -5,19 +5,23 @@ import { redirect } from 'next/navigation';
 import { loadLandingData } from '@/components/web2/marketing/landing-data';
 import { LANDING_FAQ, LandingPage } from '@/components/web2/marketing/LandingPage';
 import { authOptions } from '@/lib/auth';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'BijbelQuiz - Gratis Online Bijbelquizzen',
-  description: 'Test je kennis van de Bijbel met honderden gratis vragen. Van makkelijke quizzen voor beginners tot diepgaande studies voor gevorderden. Begin direct!',
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    title: 'BijbelQuiz - Gratis Online Bijbelkennis Testen',
-    description: 'Hoe goed ken jij de Bijbel? Doe de gratis test en leer meer over het geloof via interactieve quizzen.',
-    url: 'https://www.bijbelquiz.com',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.home.title'),
+    description: t('pages.home.description'),
+    alternates: {
+      canonical: '/',
+    },
+    openGraph: {
+      title: t('pages.home.ogTitle'),
+      description: t('pages.home.ogDescription'),
+      url: getSiteConfig().baseUrl,
+    },
+  };
+}
 
 export default async function Home() {
   const session = await getServerSession(authOptions);

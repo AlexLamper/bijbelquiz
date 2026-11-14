@@ -11,12 +11,15 @@ import { authOptions } from '@/lib/auth';
 import { connectDB, User as UserModel } from '@/database';
 import { getLevelInfo } from '@/lib/gamification';
 import { supportEmail } from '@/lib/support-email';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Account Verwijderen | BijbelQuiz',
-  description: 'Verwijder je BijbelQuiz account en bijbehorende gegevens, of dien een verzoek in per e-mail.',
-  alternates: { canonical: '/account-verwijderen' },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.account-verwijderen.title'),
+    description: t('pages.account-verwijderen.description'),
+    alternates: { canonical: '/account-verwijderen' },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

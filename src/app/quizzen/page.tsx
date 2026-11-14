@@ -7,21 +7,25 @@ import { QuizzenBrowser } from '@/components/web2/browsing/QuizzenBrowser';
 import { authOptions } from '@/lib/auth';
 import { loadBrowseCatalogue } from '@/lib/quiz-browse';
 import { getSiteBaseUrl } from '@/lib/sitemap';
+import { getSiteConfig } from '@/config/site';
+import { t, tList } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz',
-  description:
-    'Overzicht van alle beschikbare Bijbelquizzen. Filter op categorie, speel direct en test je kennis van het Oude en Nieuwe Testament.',
-  keywords: ['bijbelquizzen', 'quiz overzicht', 'bijbelvragen', 'geloofsquiz', 'online bijbelstudie'],
-  alternates: {
-    canonical: '/quizzen',
-  },
-  openGraph: {
-    title: 'Alle Bijbelquizzen Spelen - Gratis en Premium',
-    description: 'Zoek en speel de beste Bijbelquizzen online. Van beginners tot experts.',
-    url: 'https://www.bijbelquiz.com/quizzen',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.quizzen.title'),
+    description:
+    t('pages.quizzen.description'),
+    keywords: tList('pages.quizzen.keywords'),
+    alternates: {
+      canonical: '/quizzen',
+    },
+    openGraph: {
+      title: t('pages.quizzen.ogTitle'),
+      description: t('pages.quizzen.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/quizzen`,
+    },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

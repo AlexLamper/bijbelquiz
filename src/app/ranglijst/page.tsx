@@ -10,19 +10,23 @@ import { GroupsCard, StandingCard } from './SideCards';
 import { Podium } from './Podium';
 import { RankList } from './RankList';
 import type { BoardRow } from './types';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Ranglijst - BijbelQuiz',
-  description: 'Bekijk de topspelers van BijbelQuiz. Verdien punten door quizzen te spelen en stijg in de ranglijst.',
-  alternates: {
-    canonical: '/ranglijst',
-  },
-  openGraph: {
-    title: 'De BijbelQuiz Ranglijst - Wie heeft de meeste bijbelkennis?',
-    description: 'Strijd mee voor de eerste plek. Speel quizzen, verdien punten en word de nummer 1.',
-    url: 'https://www.bijbelquiz.com/ranglijst',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.ranglijst.title'),
+    description: t('pages.ranglijst.description'),
+    alternates: {
+      canonical: '/ranglijst',
+    },
+    openGraph: {
+      title: t('pages.ranglijst.ogTitle'),
+      description: t('pages.ranglijst.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/ranglijst`,
+    },
+  };
+}
 
 interface LeaderboardPageProps {
   searchParams?: Promise<{ period?: string; groep?: string }>;

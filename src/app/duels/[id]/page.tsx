@@ -6,13 +6,16 @@ import { DuelPlay } from '@/components/web2/duels/DuelPlay';
 import { authOptions } from '@/lib/auth';
 import { isDuelError } from '@/lib/duels/errors';
 import { getDuel, type DuelView } from '@/lib/duels/service';
+import { t } from '@/i18n';
 
 export const dynamic = 'force-dynamic';
 
-export const metadata: Metadata = {
-  title: 'Duel - BijbelQuiz',
-  robots: { index: false, follow: false },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.duels-id.title'),
+    robots: { index: false, follow: false },
+  };
+}
 
 interface PageProps {
   params: Promise<{ id: string }>;

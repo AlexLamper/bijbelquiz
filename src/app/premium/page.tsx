@@ -24,18 +24,22 @@ import { getPremiumPriceLabels, sellablePremiumPlans } from '@/lib/premium-price
 import { trialDaysForPlan } from '@/lib/stripe-plans';
 import { isMailConfigured } from '@/lib/auth/mail';
 import { isPremiumUser, PREMIUM_MEMBER_FIELDS, resolvePremiumMemberState, type PremiumMemberState } from './member-state';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Premium - Speel onbeperkt',
-  description:
-    'Speel alle bijbelquizzen zo vaak je wilt, lees de uitleg bij elk antwoord en kijk je antwoorden terug na elke quiz. Jaarlijks met 7 dagen gratis proberen.',
-  alternates: { canonical: '/premium' },
-  openGraph: {
-    title: 'BijbelQuiz Premium',
-    description: 'Alle quizzen, zo vaak je wilt. Uitleg bij elk antwoord. Je antwoorden terugkijken na elke quiz.',
-    url: 'https://www.bijbelquiz.com/premium',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.premium.title'),
+    description:
+    t('pages.premium.description'),
+    alternates: { canonical: '/premium' },
+    openGraph: {
+      title: t('pages.premium.ogTitle'),
+      description: t('pages.premium.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/premium`,
+    },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

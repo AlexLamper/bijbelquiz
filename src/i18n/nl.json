@@ -1089,5 +1089,132 @@
       "Uitleg bij elk antwoord",
       "Je antwoorden terugkijken na elke quiz"
     ]
+  },
+  "pages": {
+    "account-verwijderen": {
+      "title": "Account Verwijderen | BijbelQuiz",
+      "description": "Verwijder je BijbelQuiz account en bijbehorende gegevens, of dien een verzoek in per e-mail."
+    },
+    "bijbelstudie": {
+      "title": "BijbelStudie: de Bijbel lezen met uitleg erbij",
+      "description": "BijbelStudie is gemaakt door het team achter BijbelQuiz. Lees elk hoofdstuk met commentaar, volg begeleide studies en stel je vragen aan een AI-assistent. Gratis te gebruiken.",
+      "ogTitle": "BijbelStudie, van het team achter BijbelQuiz",
+      "ogDescription": "De quiz stelt de vraag. BijbelStudie geeft het hoofdstuk erbij."
+    },
+    "contact": {
+      "title": "Contact & Veelgestelde Vragen | BijbelQuiz Support",
+      "description": "Heb je een vraag over BijbelQuiz? Bekijk onze FAQ of neem contact op. Wij helpen je graag verder.",
+      "ogTitle": "Contact - BijbelQuiz",
+      "ogDescription": "Stel je vraag of bekijk antwoorden op de supportpagina."
+    },
+    "dashboard": {
+      "title": "Dashboard - BijbelQuiz",
+      "description": "Jouw persoonlijke Bijbelquiz dashboard."
+    },
+    "duel-token": {
+      "title": "Je bent uitgedaagd voor een duel - BijbelQuiz"
+    },
+    "duels-id": {
+      "title": "Duel - BijbelQuiz"
+    },
+    "foutmelding": {
+      "title": "Fout melden | BijbelQuiz Support",
+      "description": "Meld technische problemen of fouten in BijbelQuiz zodat we ze snel kunnen oplossen."
+    },
+    "groepslicentie": {
+      "title": "Groepslicentie | BijbelQuiz voor gemeentes en scholen",
+      "description": "Premium voor je hele groep: één licentie, één code. Tot {seats} mensen spelen met Premium, ieder op zijn eigen telefoon. Voor jeugdgroepen, gemeentes en klassen.",
+      "ogTitle": "BijbelQuiz Groepslicentie",
+      "ogDescription": "Premium voor je hele groep met een code die je gewoon voorleest."
+    },
+    "hulp": {
+      "title": "Hulp & Support | BijbelQuiz Helpdesk",
+      "description": "Vind antwoorden voor BijbelQuiz problemen, betalingen en spelregels."
+    },
+    "inloggen": {
+      "title": "Inloggen | BijbelQuiz - Ga Verder met Leren",
+      "description": "Log in op je BijbelQuiz account. Bekijk je statistieken, hervat openstaande quizzen en houd je streak vast.",
+      "ogTitle": "Inloggen bij BijbelQuiz",
+      "ogDescription": "Welkom terug! Log in om verder te spelen."
+    },
+    "instellingen": {
+      "title": "Instellingen | BijbelQuiz",
+      "description": "Beheer je persoonlijke voorkeuren en accountinstellingen."
+    },
+    "home": {
+      "title": "BijbelQuiz - Gratis Online Bijbelquizzen",
+      "description": "Test je kennis van de Bijbel met honderden gratis vragen. Van makkelijke quizzen voor beginners tot diepgaande studies voor gevorderden. Begin direct!",
+      "ogTitle": "BijbelQuiz - Gratis Online Bijbelkennis Testen",
+      "ogDescription": "Hoe goed ken jij de Bijbel? Doe de gratis test en leer meer over het geloof via interactieve quizzen."
+    },
+    "premium": {
+      "title": "Premium - Speel onbeperkt",
+      "description": "Speel alle bijbelquizzen zo vaak je wilt, lees de uitleg bij elk antwoord en kijk je antwoorden terug na elke quiz. Jaarlijks met 7 dagen gratis proberen.",
+      "ogTitle": "BijbelQuiz Premium",
+      "ogDescription": "Alle quizzen, zo vaak je wilt. Uitleg bij elk antwoord. Je antwoorden terugkijken na elke quiz."
+    },
+    "premium-succes": {
+      "title": "Welkom bij Premium"
+    },
+    "privacybeleid": {
+      "title": "Privacybeleid | BijbelQuiz",
+      "description": "Hoe wij omgaan met jouw gegevens en privacy bij BijbelQuiz. Lees ons privacy statement."
+    },
+    "profiel": {
+      "title": "Mijn Profiel - BijbelQuiz"
+    },
+    "quiz-id-beoordeling": {
+      "title": "Quizoverzicht - BijbelQuiz"
+    },
+    "quizzen": {
+      "title": "Alle Bijbelquizzen - Kies je Categorie en Niveau | BijbelQuiz",
+      "description": "Overzicht van alle beschikbare Bijbelquizzen. Filter op categorie, speel direct en test je kennis van het Oude en Nieuwe Testament.",
+      "keywords": [
+        "bijbelquizzen",
+        "quiz overzicht",
+        "bijbelvragen",
+        "geloofsquiz",
+        "online bijbelstudie"
+      ],
+      "ogTitle": "Alle Bijbelquizzen Spelen - Gratis en Premium",
+      "ogDescription": "Zoek en speel de beste Bijbelquizzen online. Van beginners tot experts."
+    },
+    "ranglijst": {
+      "title": "Ranglijst - BijbelQuiz",
+      "description": "Bekijk de topspelers van BijbelQuiz. Verdien punten door quizzen te spelen en stijg in de ranglijst.",
+      "ogTitle": "De BijbelQuiz Ranglijst - Wie heeft de meeste bijbelkennis?",
+      "ogDescription": "Strijd mee voor de eerste plek. Speel quizzen, verdien punten en word de nummer 1."
+    },
+    "registreren": {
+      "title": "Gratis Account Aanmaken | BijbelQuiz",
+      "description": "Registreer je gratis bij BijbelQuiz. Houd je voortgang bij, verdien badges en leer meer over de Bijbel. Sluit je aan bij de community.",
+      "ogTitle": "Start met BijbelQuiz - Maak een Account",
+      "ogDescription": "Begin vandaag nog met het testen van je Bijbelkennis. Gratis aanmelden."
+    },
+    "samen-spelen-roomCode-lobby": {
+      "title": "Wachtkamer"
+    },
+    "samen-spelen-roomCode-spel": {
+      "title": "Samen spelen"
+    },
+    "samen-spelen-roomCode-uitslag": {
+      "title": "Eindstand"
+    },
+    "samen-spelen": {
+      "title": "Samen spelen",
+      "description": "Speel met je groep tegelijk dezelfde bijbelquiz, ieder op een eigen telefoon. Gratis, tot 20 spelers."
+    },
+    "voorwaarden": {
+      "title": "Algemene Voorwaarden | BijbelQuiz",
+      "description": "Lees onze algemene voorwaarden voor het gebruik van BijbelQuiz services en producten."
+    },
+    "wachtwoord-herstellen": {
+      "title": "Nieuw wachtwoord | BijbelQuiz",
+      "description": "Kies een nieuw wachtwoord voor je BijbelQuiz account."
+    },
+    "wachtwoord-vergeten": {
+      "title": "Wachtwoord vergeten | BijbelQuiz",
+      "description": "Vraag een link aan om een nieuw wachtwoord voor je BijbelQuiz account te kiezen."
+    }
   }
 }

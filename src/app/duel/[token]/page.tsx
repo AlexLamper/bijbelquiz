@@ -7,6 +7,7 @@ import { JoinInviteButton } from '@/components/web2/duels/JoinInviteButton';
 import { DUEL_RULES_LINE } from '@/components/web2/duels/format';
 import { authOptions } from '@/lib/auth';
 import { getInvitePreview, type InvitePreview } from '@/lib/duels/service';
+import { t } from '@/i18n';
 
 /**
  * Where a shared duel link lands.
@@ -21,10 +22,12 @@ import { getInvitePreview, type InvitePreview } from '@/lib/duels/service';
 
 export const dynamic = 'force-dynamic';
 
-export const metadata: Metadata = {
-  title: 'Je bent uitgedaagd voor een duel - BijbelQuiz',
-  robots: { index: false, follow: false },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.duel-token.title'),
+    robots: { index: false, follow: false },
+  };
+}
 
 interface PageProps {
   params: Promise<{ token: string }>;

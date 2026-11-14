@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
 
 import { ErrorScreen } from '@/components/web2/marketing/ErrorScreen';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Fout melden | BijbelQuiz Support',
-  description: 'Meld technische problemen of fouten in BijbelQuiz zodat we ze snel kunnen oplossen.',
-  alternates: { canonical: '/foutmelding' },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.foutmelding.title'),
+    description: t('pages.foutmelding.description'),
+    alternates: { canonical: '/foutmelding' },
+  };
+}
 
 /**
  * Reporting a problem on purpose ("Fout melden" in the help and contact

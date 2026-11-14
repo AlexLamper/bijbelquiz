@@ -4,12 +4,15 @@ import Link from 'next/link';
 import { ChevronRightIcon } from '@/components/web2/marketing/icons';
 import { LegalList, LegalPage, LegalText, type LegalSection } from '@/components/web2/marketing/LegalPage';
 import { SUPPORT_EMAIL } from '@/lib/support-email';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Privacybeleid | BijbelQuiz',
-  description: 'Hoe wij omgaan met jouw gegevens en privacy bij BijbelQuiz. Lees ons privacy statement.',
-  alternates: { canonical: '/privacybeleid' },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.privacybeleid.title'),
+    description: t('pages.privacybeleid.description'),
+    alternates: { canonical: '/privacybeleid' },
+  };
+}
 
 const SECTIONS: LegalSection[] = [
   {

@@ -4,11 +4,14 @@ import { redirect } from 'next/navigation';
 import RoomClient from '@/components/web2/samen/RoomClient';
 import { loadRoomQuizMeta } from '@/components/web2/samen/room-meta';
 import { authOptions } from '@/lib/auth';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Wachtkamer',
-  robots: { index: false, follow: false },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.samen-spelen-roomCode-lobby.title'),
+    robots: { index: false, follow: false },
+  };
+}
 
 interface PageProps {
   params: Promise<{ roomCode: string }>;

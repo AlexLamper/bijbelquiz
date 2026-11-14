@@ -7,17 +7,21 @@ import { ContactForm } from '@/components/web2/marketing/ContactForm';
 import { AlertIcon, ChevronRightIcon, IconTile, MailIcon } from '@/components/web2/marketing/icons';
 import { authOptions } from '@/lib/auth';
 import { supportEmail } from '@/lib/support-email';
+import { getSiteConfig } from '@/config/site';
+import { t } from '@/i18n';
 
-export const metadata: Metadata = {
-  title: 'Contact & Veelgestelde Vragen | BijbelQuiz Support',
-  description: 'Heb je een vraag over BijbelQuiz? Bekijk onze FAQ of neem contact op. Wij helpen je graag verder.',
-  alternates: { canonical: '/contact' },
-  openGraph: {
-    title: 'Contact - BijbelQuiz',
-    description: 'Stel je vraag of bekijk antwoorden op de supportpagina.',
-    url: 'https://www.bijbelquiz.com/contact',
-  },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: t('pages.contact.title'),
+    description: t('pages.contact.description'),
+    alternates: { canonical: '/contact' },
+    openGraph: {
+      title: t('pages.contact.ogTitle'),
+      description: t('pages.contact.ogDescription'),
+      url: `${getSiteConfig().baseUrl}/contact`,
+    },
+  };
+}
 
 const QUICK_ANSWERS = [
   { label: 'Hoe zeg ik Premium op?', href: '/hulp#premium-opzeggen' },
