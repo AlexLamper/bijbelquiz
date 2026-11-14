@@ -5,5 +5,48 @@
     "save": "Save",
     "close": "Close",
     "back": "Back"
+  },
+  "meta": {
+    "ogLocale": "en_US",
+    "titleDefault": "{brand} - Play Free Bible Quizzes",
+    "titleTemplate": "%s | {brand}",
+    "description": "Play free Bible quizzes and test your knowledge of the Old and New Testament. Interactive questions, instant feedback, leaderboards and multiplayer. For young and old!",
+    "keywords": [
+      "bible quiz",
+      "bible quiz online",
+      "free bible quiz",
+      "bible quizzes",
+      "bible knowledge",
+      "bible trivia",
+      "christian quiz",
+      "bible questions",
+      "bible study",
+      "online bible game",
+      "faith quiz",
+      "old testament quiz",
+      "new testament quiz",
+      "jesus quiz",
+      "bible stories",
+      "bible questions and answers",
+      "hard bible questions",
+      "easy bible quiz",
+      "kids bible quiz",
+      "sunday school games",
+      "learn the bible",
+      "daily bible question",
+      "christian games",
+      "bible challenge"
+    ],
+    "ogTitle": "{brand} - Play Free Bible Quizzes",
+    "ogDescription": "Test your Bible knowledge with free interactive quizzes. Climb the leaderboard, earn XP and learn more about God's Word. Start now!",
+    "ogImageAlt": "{brand} - Free Bible Quizzes",
+    "twitterTitle": "{brand} - Play Free Bible Quizzes",
+    "twitterDescription": "Test your Bible knowledge with free interactive quizzes and climb the leaderboard!",
+    "aboutStudieName": "Bible study",
+    "knowsAbout": [
+      "Bible knowledge",
+      "Bible study",
+      "Digital Bible platforms"
+    ]
   }
 }

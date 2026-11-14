@@ -49,7 +49,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] SEO baseline + compare script in repo
 - [x] i18n setup: `src/i18n/` with `nl.json` (source) and `en.json`, `t()` helper for server + client components
 - [ ] Extract strings, in batches per folder (commit + SEO check after each):
-  - [ ] `src/app/layout.tsx`, metadata, JSON-LD, `sitemap.ts` (use `getSiteConfig()`)
+  - [x] `src/app/layout.tsx`, metadata, JSON-LD, `sitemap.ts` (use `getSiteConfig()`)
   - [ ] `src/components/bq/` (shared design components)
   - [ ] `src/components/web2/marketing/` (landing, help, legal)
   - [ ] `src/components/web2/browsing/`, `quiz-play/`, `quiz-result/`

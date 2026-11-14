@@ -1,3 +1,4 @@
+import { getSiteConfig } from '@/config/site';
 import { connectDB, Quiz } from '@/database';
 
 interface QuizSitemapDocument {
@@ -19,7 +20,7 @@ export function getSiteBaseUrl(): string {
     return envUrl.replace(/\/+$/, '');
   }
 
-  return 'https://www.bijbelquiz.com';
+  return getSiteConfig().baseUrl;
 }
 
 export function getStaticSitemapEntries(baseUrl = getSiteBaseUrl()): SitemapEntry[] {
