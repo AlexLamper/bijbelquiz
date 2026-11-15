@@ -14,7 +14,7 @@
       "bibleReference": "John 3:1",
       "answers": [
         {
-          "text": "A Roman centurion",
+          "text": "A Roman centurion in Capernaum",
           "isCorrect": false
         },
         {
@@ -22,11 +22,11 @@
           "isCorrect": true
         },
         {
-          "text": "A fisherman from Galilee",
+          "text": "A fisherman from the Sea of Galilee",
           "isCorrect": false
         },
         {
-          "text": "A Samaritan priest",
+          "text": "A Samaritan priest from Sychar",
           "isCorrect": false
         }
       ]
@@ -221,7 +221,7 @@
       "bibleReference": "John 3:30",
       "answers": [
         {
-          "text": "I will build the temple again",
+          "text": "I will build the temple again in three days",
           "isCorrect": false
         },
         {
@@ -229,11 +229,11 @@
           "isCorrect": true
         },
         {
-          "text": "I am the Messiah",
+          "text": "I am the Messiah you are waiting for",
           "isCorrect": false
         },
         {
-          "text": "Follow me to the desert",
+          "text": "Follow me out into the wilderness",
           "isCorrect": false
         }
       ]
