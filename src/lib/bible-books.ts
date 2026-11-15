@@ -8,7 +8,8 @@
  * quizzes today.
  */
 
-import { isNlSite } from '@/config/site';
+import { getSiteConfig, isNlSite } from '@/config/site';
+import { INTL_BOOK_TABLES, type IntlNameLocale } from './book-names-intl';
 
 export type Testament = 'OT' | 'NT';
 
@@ -65,7 +66,12 @@ const EN_SHORT = [
   'Matt.', 'Mark', 'Luke', 'John', 'Acts', 'Rom.', '1 Cor.', '2 Cor.', 'Gal.', 'Eph.', 'Phil.', 'Col.', '1 Thess.', '2 Thess.', '1 Tim.', '2 Tim.', 'Titus', 'Phlm.',
   'Heb.', 'Jas.', '1 Pet.', '2 Pet.', '1 John', '2 John', '3 John', 'Jude', 'Rev.',
 ];
-const EN_BY_CODE = new Map(EN_CODES.map((code, i) => [code, { title: EN_TITLES[i], short: EN_SHORT[i] }]));
+/** Language of the book names: 'nl' on the Dutch site, otherwise the intl build's locale. */
+const NAME_LOCALE: string = isNlSite() ? 'nl' : getSiteConfig().defaultLocale;
+const OTHER = NAME_LOCALE in INTL_BOOK_TABLES ? INTL_BOOK_TABLES[NAME_LOCALE as IntlNameLocale] : null;
+const EN_BY_CODE = new Map(
+  EN_CODES.map((code, i) => [code, OTHER ? { title: OTHER.titles[i], short: OTHER.shorts[i] } : { title: EN_TITLES[i], short: EN_SHORT[i] }]),
+);
 
 const EN_GROUP_LABELS: Record<string, string> = {
   wet: 'Law', geschiedenis: 'History', poezie: 'Poetry and wisdom', 'grote-profeten': 'Major prophets',
@@ -89,7 +95,7 @@ export const BOOK_GROUPS: BookGroup[] = [
   { id: 'brieven-paulus', label: 'Brieven van Paulus', testament: 'NT' },
   { id: 'algemene-brieven', label: 'Algemene brieven', testament: 'NT' },
   { id: 'openbaring', label: 'Openbaring', testament: 'NT' },
-].map((g) => (isNlSite() ? g : { ...g, label: EN_GROUP_LABELS[g.id] })) as BookGroup[];
+].map((g) => (isNlSite() ? g : { ...g, label: (OTHER?.groups ?? EN_GROUP_LABELS)[g.id] })) as BookGroup[];
 
 /**
  * The 8 genre groupings the `/quizzen` overview page shows (one continuous-
@@ -122,7 +128,7 @@ export const OVERVIEW_GENRES: OverviewGenre[] = [
   { id: 'evangelien-handelingen', label: 'Evangeliën & Handelingen', testament: 'NT' },
   { id: 'brieven-van-paulus', label: 'Brieven van Paulus', testament: 'NT' },
   { id: 'brieven-openbaring', label: 'Brieven & Openbaring', testament: 'NT' },
-].map((g) => (isNlSite() ? g : { ...g, label: EN_GENRE_LABELS[g.id] })) as OverviewGenre[];
+].map((g) => (isNlSite() ? g : { ...g, label: (OTHER?.genres ?? EN_GENRE_LABELS)[g.id] })) as OverviewGenre[];
 
 const GROUP_TO_OVERVIEW_GENRE: Record<BookGroupId, OverviewGenreId> = {
   wet: 'wet',

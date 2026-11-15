@@ -19,6 +19,8 @@
  * worth the build complexity; keep the two copies identical.
  */
 
+import { INTL_ALIASES } from './book-names-intl';
+
 export type BookCode = string;
 
 /** Lowercase, strip diacritics, drop dots, collapse whitespace. */
@@ -183,7 +185,8 @@ const BOOK_CODES: Record<string, BookCode> = {
 /** The canonical code for a Dutch book name, or null when unrecognised. */
 export function toBookCode(name: string | null | undefined): BookCode | null {
   if (!name) return null;
-  return BOOK_CODES[normaliseBookName(name)] ?? null;
+  const key = normaliseBookName(name);
+  return BOOK_CODES[key] ?? INTL_ALIASES[key] ?? null;
 }
 
 /** True when two book names refer to the same book, whichever project spelled them. */
