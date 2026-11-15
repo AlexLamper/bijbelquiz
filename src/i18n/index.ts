@@ -18,6 +18,7 @@ import en from './en.json';
 import es from './es.json';
 import pt from './pt.json';
 import de from './de.json';
+import fr from './fr.json';
 import nl from './nl.json';
 
 type Dictionary = { [key: string]: string | string[] | Dictionary };
@@ -27,7 +28,7 @@ export type Locale = 'nl' | 'en' | 'es' | 'pt' | 'de' | 'fr';
 // Only languages that have a dictionary file are listed. A new language is
 // added by creating `<locale>.json` and one import + one line here (see
 // docs/setup/new-language.md).
-const dictionaries: Partial<Record<Locale, Dictionary>> & Record<'nl' | 'en', Dictionary> = { nl, en, es, pt, de };
+const dictionaries: Partial<Record<Locale, Dictionary>> & Record<'nl' | 'en', Dictionary> = { nl, en, es, pt, de, fr };
 
 export type TranslateParams = Record<string, string | number>;
 export type Translator = (key: string, params?: TranslateParams) => string;
