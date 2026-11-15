@@ -36,7 +36,7 @@ export async function GET() {
       source: verse ? 'bible-api' : 'fallback',
       reference: verse?.reference ?? 'Psalm 119:105',
       text: verse?.text ?? 'Your word is a lamp to my feet, and a light for my path.',
-      version: 'web',
+      version: verse?.version ?? 'web',
       docsUrl: 'https://bible-api.com',
     });
   }
