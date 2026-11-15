@@ -18,6 +18,7 @@
  *   node --import tsx scripts/validate-quiz-json.ts <file...>
  *   node --import tsx scripts/validate-quiz-json.ts --all
  *   node --import tsx scripts/validate-quiz-json.ts --all --no-fetch
+ *   node --import tsx scripts/validate-quiz-json.ts --lang=en --all     # docs/quizzes-en, World English Bible
  *
  * Exits 1 if any file has an error. Warnings do not fail the run.
  */
@@ -47,7 +48,16 @@ for (const file of ['.env', '.env.local']) {
   }
 }
 
-const QUIZ_DIR = path.resolve(process.cwd(), 'docs/quizzes');
+const LANG_EN = process.argv.includes('--lang=en');
+const QUIZ_DIR = path.resolve(process.cwd(), LANG_EN ? 'docs/quizzes-en' : 'docs/quizzes');
+/** English files point at a category by slug (the intl database has its own ids). */
+const EN_CATEGORY_SLUGS = new Set<string>(
+  LANG_EN
+    ? (JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'docs/quizzes-en/categories.json'), 'utf8')) as Array<{ slug: string }>).map(
+        (category) => category.slug,
+      )
+    : [],
+);
 const NO_FETCH = process.argv.includes('--no-fetch');
 
 /** Live category ObjectIds. A quiz pointing anywhere else cannot be imported. */
@@ -62,7 +72,7 @@ const CATEGORY_IDS = new Set([
 ]);
 
 const QUIZ_KEYS = [
-  'title', 'description', 'slug', 'categoryId',
+  'title', 'description', 'slug', LANG_EN ? 'categorySlug' : 'categoryId',
   'rewardXp', 'difficulty', 'isPremium', 'status', 'questions',
 ];
 const QUESTION_KEYS = ['text', 'explanation', 'bibleReference', 'answers'];
@@ -88,7 +98,7 @@ function listFiles(): string[] {
       for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
         const full = path.join(dir, entry.name);
         if (entry.isDirectory()) walk(full);
-        else if (entry.name.endsWith('.json')) out.push(full);
+        else if (entry.name.endsWith('.json') && entry.name !== 'categories.json') out.push(full);
       }
     };
     walk(QUIZ_DIR);
@@ -112,12 +122,14 @@ async function referenceResolves(ref: string): Promise<boolean> {
   const key = process.env.BIJBEL_API_KEY;
   const url =
     `https://www.bijbelapi.com/api/verse?book=${encodeURIComponent(parsed.book)}` +
-    `&chapter=${parsed.chapter}&verse=${parsed.verse}&version=sv`;
+    `&chapter=${parsed.chapter}&verse=${parsed.verse}&version=${LANG_EN ? 'web' : 'sv'}`;
 
   try {
     const response = await fetch(url, { headers: key ? { 'x-api-key': key } : {} });
     if (!response.ok) return false;
-    const body = (await response.json()) as { text?: string };
+    const body = (await response.json()) as { text?: string; version?: string };
+    // The API falls back to Dutch when it does not know the version; that is not a pass.
+    if (LANG_EN && body.version !== 'web') return false;
     return typeof body.text === 'string' && body.text.trim().length > 0;
   } catch {
     return false;
@@ -160,7 +172,11 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
   if (typeof quiz.description !== 'string' || quiz.description.length < 10) {
     err('description moet minstens 10 tekens zijn (eis van het zod-schema in QuizForm)');
   }
-  if (!CATEGORY_IDS.has(String(quiz.categoryId))) {
+  if (LANG_EN) {
+    if (!EN_CATEGORY_SLUGS.has(String(quiz.categorySlug))) {
+      err(`categorySlug staat niet in docs/quizzes-en/categories.json: ${String(quiz.categorySlug)}`);
+    }
+  } else if (!CATEGORY_IDS.has(String(quiz.categoryId))) {
     err(`categoryId is geen bekende live ObjectId: ${String(quiz.categoryId)}`);
   }
 
@@ -307,9 +323,13 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
 
   // ── title: "<Boek> bijbelquiz - Hoofdstuk <n>", n = the chapter covered ──
   const title = String(quiz.title ?? '');
-  const chapterInTitle = title.match(/ - Hoofdstuk (\d+)$/);
+  const chapterInTitle = title.match(LANG_EN ? / Bible Quiz - Chapter (\d+)$/ : / - Hoofdstuk (\d+)$/);
   if (!chapterInTitle) {
-    warn(`titel volgt niet "<Boek> bijbelquiz - Hoofdstuk <n>": "${title}"`);
+    warn(
+      LANG_EN
+        ? `title does not follow "<Book> Bible Quiz - Chapter <n>": "${title}"`
+        : `titel volgt niet "<Boek> bijbelquiz - Hoofdstuk <n>": "${title}"`,
+    );
   } else if (passage && Number(chapterInTitle[1]) !== passage.chapter) {
     err(`titel noemt hoofdstuk ${chapterInTitle[1]}, maar de vragen gaan over hoofdstuk ${passage.chapter}`);
   }
@@ -318,7 +338,7 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
   if (!NO_FETCH) {
     for (const { index, ref } of refsToCheck) {
       if (!(await referenceResolves(ref))) {
-        err(`vraag ${index}: referentie "${ref}" levert geen tekst op in de Statenvertaling`);
+        err(`vraag ${index}: referentie "${ref}" levert geen tekst op in de ${LANG_EN ? 'World English Bible' : 'Statenvertaling'}`);
       }
     }
   }

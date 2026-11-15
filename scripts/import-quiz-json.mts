@@ -31,6 +31,7 @@
  *   node --import tsx scripts/import-quiz-json.mts <file...>           # dry run
  *   node --import tsx scripts/import-quiz-json.mts <file...> --apply   # write
  *   node --import tsx scripts/import-quiz-json.mts --all --apply
+ *   node --import tsx scripts/import-quiz-json.mts --lang=en --all     # docs/quizzes-en into the intl database
  *
  * Run scripts/validate-quiz-json.ts on the same files first. This script
  * checks that a quiz can be stored, not that it is correct.
@@ -61,7 +62,8 @@ for (const file of ['.env', '.env.local']) {
   }
 }
 
-const QUIZ_DIR = path.resolve(process.cwd(), 'docs/quizzes');
+const LANG_EN = process.argv.includes('--lang=en');
+const QUIZ_DIR = path.resolve(process.cwd(), LANG_EN ? 'docs/quizzes-en' : 'docs/quizzes');
 const APPLY = process.argv.includes('--apply');
 
 interface QuizFile {
@@ -69,6 +71,8 @@ interface QuizFile {
   description?: string;
   slug: string;
   categoryId: string;
+  /** English files: a slug from docs/quizzes-en/categories.json, resolved against the database. */
+  categorySlug?: string;
   rewardXp: number;
   difficulty: string;
   isPremium: boolean;
@@ -89,7 +93,7 @@ function listFiles(): string[] {
       for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
         const full = path.join(dir, entry.name);
         if (entry.isDirectory()) walk(full);
-        else if (entry.name.endsWith('.json')) out.push(full);
+        else if (entry.name.endsWith('.json') && entry.name !== 'categories.json') out.push(full);
       }
     };
     walk(QUIZ_DIR);
@@ -107,7 +111,9 @@ function storageErrors(quiz: QuizFile): string[] {
 
   if (!quiz.title) errors.push('title ontbreekt');
   if (!quiz.slug) errors.push('slug ontbreekt');
-  if (!mongoose.Types.ObjectId.isValid(String(quiz.categoryId))) {
+  if (LANG_EN) {
+    if (!quiz.categorySlug) errors.push('categorySlug ontbreekt');
+  } else if (!mongoose.Types.ObjectId.isValid(String(quiz.categoryId))) {
     errors.push(`categoryId is geen ObjectId: ${String(quiz.categoryId)}`);
   }
   if (!['easy', 'medium', 'hard'].includes(String(quiz.difficulty))) {
@@ -132,12 +138,13 @@ function storageErrors(quiz: QuizFile): string[] {
 }
 
 /** The document body, minus everything the database owns (`_id`, timestamps). */
-function toDocument(quiz: QuizFile) {
+function toDocument(quiz: QuizFile, categoryId: string) {
   return {
     title: quiz.title,
     slug: quiz.slug,
     description: quiz.description,
-    categoryId: new mongoose.Types.ObjectId(quiz.categoryId),
+    categoryId: new mongoose.Types.ObjectId(categoryId),
+    ...(LANG_EN ? { lang: 'en' } : {}),
     rewardXp: quiz.rewardXp,
     difficulty: quiz.difficulty,
     isPremium: quiz.isPremium,
@@ -173,8 +180,10 @@ async function main() {
   // Categories are read up front so a bad categoryId is reported as a missing
   // category rather than surfacing later as a quiz nothing can list.
   const categoryLabels = new Map<string, string>();
+  const categoryIdBySlug = new Map<string, string>();
   for (const category of await Category.find({}, { title: 1, slug: 1 }).lean()) {
     categoryLabels.set(String(category._id), String(category.slug ?? category.title));
+    if (category.slug) categoryIdBySlug.set(String(category.slug), String(category._id));
   }
 
   let inserted = 0;
@@ -209,9 +218,14 @@ async function main() {
       continue;
     }
 
-    if (!categoryLabels.has(String(quiz.categoryId))) {
+    // English files name the category by slug; Dutch ones carry the live ObjectId.
+    const categoryId = LANG_EN ? categoryIdBySlug.get(String(quiz.categorySlug)) : String(quiz.categoryId);
+    if (!categoryId || !categoryLabels.has(categoryId)) {
       console.log(`FOUT   ${label}`);
-      console.log(`         x categorie ${String(quiz.categoryId)} bestaat niet in de database`);
+      console.log(
+        `         x categorie ${String(LANG_EN ? quiz.categorySlug : quiz.categoryId)} bestaat niet in de database` +
+          (LANG_EN ? ' (eerst: node --import tsx scripts/seed-categories-en.mts --apply)' : ''),
+      );
       failed += 1;
       continue;
     }
@@ -219,7 +233,7 @@ async function main() {
     const existing = await Quiz.findOne({ slug: quiz.slug });
     const summary =
       `${quiz.questions.length} vragen, ${quiz.difficulty}, ` +
-      `${categoryLabels.get(String(quiz.categoryId))}, status ${quiz.status}` +
+      `${categoryLabels.get(categoryId)}, status ${quiz.status}` +
       `${quiz.isPremium ? ', premium' : ''}`;
 
     if (!APPLY) {
@@ -229,7 +243,7 @@ async function main() {
       continue;
     }
 
-    const document = toDocument(quiz);
+    const document = toDocument(quiz, categoryId);
     if (existing) {
       existing.set(document);
       await existing.save();

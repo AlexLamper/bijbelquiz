@@ -82,3 +82,11 @@ test('the book view: whole-book quiz first, then the chapters, a story quiz at i
     ['genesis', 'genesis-bijbelquiz-deel-1', 'genesis-bijbelquiz-deel-2', 'genesis-6-de-ark-van-noach', 'genesis-bijbelquiz-deel-10'],
   );
 });
+
+test('English series titles and slugs order like the Dutch ones', async () => {
+  const { titlePart, bookCodeFromSlug } = await import('../src/lib/quiz-order');
+  assert.equal(titlePart('Genesis Bible Quiz - Chapter 12'), 12);
+  assert.equal(titlePart('Genesis Bijbelquiz - Hoofdstuk 12'), 12);
+  assert.equal(bookCodeFromSlug('genesis-bible-quiz-part-3'), 'GEN');
+  assert.equal(bookCodeFromSlug('genesis-bijbelquiz-deel-3'), 'GEN');
+});

@@ -23,7 +23,7 @@
 import { bookBySlug, bookOrder } from '@/lib/bible-books';
 import { readSeries } from '@/lib/quiz-series';
 
-const SERIES_SLUG = /^(.+?)-bijbelquiz-deel-\d+$/;
+const SERIES_SLUG = /^(.+?)-(?:bijbelquiz-deel|bible-quiz-part)-\d+$/;
 
 /**
  * Series slugs that were published before the book titles moved to the NBV21

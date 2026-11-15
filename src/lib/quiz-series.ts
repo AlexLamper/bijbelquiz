@@ -46,7 +46,7 @@ export interface QuizSeries {
 export function readSeries(title: string): QuizSeries {
   const trimmed = (title || '').trim();
   const match =
-    trimmed.match(/^(.*?)[\s\-:]*\b(?:deel|dl\.?|part|hoofdstuk|hfst\.?)\s*([0-9]+|[ivx]+)\s*$/i)
+    trimmed.match(/^(.*?)[\s\-:]*\b(?:deel|dl\.?|part|chapter|hoofdstuk|hfst\.?)\s*([0-9]+|[ivx]+)\s*$/i)
     || trimmed.match(/^(.*?)\s*\(\s*([0-9]+)\s*\)\s*$/)
     || trimmed.match(/^(.*?)\s+-\s+([0-9]+)\s*$/)
     || trimmed.match(/^(.*?[^\s\d])\s+([0-9]+)\s*$/);
@@ -68,7 +68,7 @@ export function readSeries(title: string): QuizSeries {
  * title carries no Hoofdstuk/Deel marker.
  */
 export function partMarker(title: string): string | null {
-  const match = (title || '').trim().match(/\b(hoofdstuk|deel)\s*([0-9]+)\s*$/i);
+  const match = (title || '').trim().match(/\b(hoofdstuk|deel|chapter|part)\s*([0-9]+)\s*$/i);
   if (!match) return null;
   return `${match[1].charAt(0).toUpperCase()}${match[1].slice(1).toLowerCase()} ${match[2]}`;
 }

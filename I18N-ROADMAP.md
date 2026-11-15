@@ -71,8 +71,8 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [ ] Auth: Google/Apple sign-in redirect URLs for the new domain
 
 ### Phase 3 - English content
-- [ ] Quiz generation pipeline in English (same JSON format, `scripts/validate-quiz-json.ts`)
-- [ ] Categories + first batch of quizzes, review sample per batch
+- [x] Quiz generation pipeline in English (same JSON format; `--lang=en` in validate/import scripts, `docs/quizzes-en/QUIZ-GENERATION-PLAN-EN.md`, `seed-categories-en.mts`)
+- [ ] Categories + first batch of quizzes, review sample per batch (categories file and first sample quiz `genesis-bible-quiz-part-1` are in `docs/quizzes-en`; seeding needs the intl DB)
 - [ ] Covers/images reuse where language-free
 
 ### Phase 4 - payments
