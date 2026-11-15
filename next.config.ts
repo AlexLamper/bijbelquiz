@@ -10,11 +10,16 @@ const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 // none of the Dutch redirects - `/quizzes` and `/leaderboard` are real pages there.
 const isIntlSite = process.env.SITE === "intl";
 const intlIndexable = process.env.SITE_INDEXABLE === "true";
+// intl only: English is the root site; any other language is its own build served
+// under a path prefix (`SITE_LOCALE=es` -> basePath `/es`), proxied from the root project.
+const intlLocale = isIntlSite ? (process.env.SITE_LOCALE || "en") : "en";
+const intlBasePath = intlLocale === "en" ? undefined : `/${intlLocale}`;
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Lets client components know which site this is (see src/config/site.ts).
-  env: { NEXT_PUBLIC_SITE: isIntlSite ? "intl" : "nl" },
+  env: { NEXT_PUBLIC_SITE: isIntlSite ? "intl" : "nl", NEXT_PUBLIC_SITE_LOCALE: intlLocale },
+  ...(intlBasePath ? { basePath: intlBasePath } : {}),
   turbopack: {
     root: projectRoot,
     resolveAlias: {

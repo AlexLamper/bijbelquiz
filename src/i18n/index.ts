@@ -19,9 +19,12 @@ import nl from './nl.json';
 
 type Dictionary = { [key: string]: string | string[] | Dictionary };
 
-export type Locale = 'nl' | 'en';
+export type Locale = 'nl' | 'en' | 'es' | 'pt' | 'de' | 'fr';
 
-const dictionaries: Record<Locale, Dictionary> = { nl, en };
+// Only languages that have a dictionary file are listed. A new language is
+// added by creating `<locale>.json` and one import + one line here (see
+// docs/setup/new-language.md).
+const dictionaries: Partial<Record<Locale, Dictionary>> & Record<'nl' | 'en', Dictionary> = { nl, en };
 
 export type TranslateParams = Record<string, string | number>;
 export type Translator = (key: string, params?: TranslateParams) => string;
@@ -29,9 +32,19 @@ export type ListTranslator = (key: string) => string[];
 
 export const isLocale = (value: string): value is Locale => value in dictionaries;
 
+/** locale -> English -> Dutch: a language that is not fully translated shows English, not Dutch. */
+function chain(locale: Locale): Dictionary[] {
+  if (locale === 'nl') return [nl];
+  return [dictionaries[locale] ?? en, en, nl];
+}
+
+const KNOWN_LOCALES: readonly string[] = ['nl', 'en', 'es', 'pt', 'de', 'fr'];
+
 export function getDefaultLocale(): Locale {
   const locale = getSiteConfig().defaultLocale;
-  return isLocale(locale) ? locale : 'nl';
+  // A language without a dictionary yet is still that language (html lang,
+  // number formats); its text falls back to English through `chain`.
+  return KNOWN_LOCALES.includes(locale) ? (locale as Locale) : 'nl';
 }
 
 function lookupNode(dictionary: Dictionary, key: string): string | string[] | Dictionary | undefined {
@@ -62,14 +75,24 @@ function interpolate(template: string, params?: TranslateParams): string {
 
 export function createT(locale: Locale = getDefaultLocale()): Translator {
   return (key, params) => {
-    const text = lookup(dictionaries[locale], key) ?? lookup(nl, key) ?? key;
-    return interpolate(text, params);
+    let text: string | undefined;
+    for (const dictionary of chain(locale)) {
+      text = lookup(dictionary, key);
+      if (text !== undefined) break;
+    }
+    return interpolate(text ?? key, params);
   };
 }
 
 /** Lists (e.g. keywords) are stored as JSON arrays; falls back to Dutch, then []. */
 export function createTList(locale: Locale = getDefaultLocale()): ListTranslator {
-  return (key) => lookupList(dictionaries[locale], key) ?? lookupList(nl, key) ?? [];
+  return (key) => {
+    for (const dictionary of chain(locale)) {
+      const list = lookupList(dictionary, key);
+      if (list) return list;
+    }
+    return [];
+  };
 }
 
 /** Translate with the site's default locale (server-side convenience). */

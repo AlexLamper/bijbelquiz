@@ -39,17 +39,38 @@ const NL: SiteConfig = {
   indexable: true,
 };
 
-const INTL: SiteConfig = {
-  id: 'intl',
-  brand: 'Bible Quizzes',
-  baseUrl: 'https://biblequizzes.app',
-  defaultLocale: 'en',
-  // Rollout order: en first; es, pt, de, fr follow. Add a locale here only
-  // when its content and translations are ready.
-  locales: ['en'],
-  supportEmail: 'info@biblequizzes.app',
-  indexable: process.env.SITE_INDEXABLE === 'true',
-};
+/** Domain of the international site; every language lives on it. */
+const INTL_ORIGIN = 'https://biblequizzes.app';
+
+/**
+ * The languages of the intl site, in rollout order. English is on the root;
+ * every other language is a path prefix (`/es`) and its own build/deployment:
+ * `SITE=intl SITE_LOCALE=es` (Next `basePath: '/es'`), proxied from the English
+ * project with a rewrite. Add a language here only when its dictionary,
+ * content and Bible text are ready.
+ */
+export const INTL_LOCALES = ['en', 'es', 'pt', 'de', 'fr'] as const;
+
+function intlLocale(): string {
+  // NEXT_PUBLIC_SITE_LOCALE is set from SITE_LOCALE in next.config.ts (see getSiteId).
+  const raw = process.env.NEXT_PUBLIC_SITE_LOCALE ?? process.env.SITE_LOCALE ?? 'en';
+  return (INTL_LOCALES as readonly string[]).includes(raw) ? raw : 'en';
+}
+
+function intlConfig(): SiteConfig {
+  const locale = intlLocale();
+  return {
+    id: 'intl',
+    brand: 'Bible Quizzes',
+    // The prefix is part of the base URL, so canonicals, the sitemap and invite
+    // links of the Spanish build all point at biblequizzes.app/es/...
+    baseUrl: locale === 'en' ? INTL_ORIGIN : `${INTL_ORIGIN}/${locale}`,
+    defaultLocale: locale,
+    locales: INTL_LOCALES,
+    supportEmail: 'info@biblequizzes.app',
+    indexable: process.env.SITE_INDEXABLE === 'true',
+  };
+}
 
 export function getSiteId(): SiteId {
   // NEXT_PUBLIC_SITE is set from SITE in next.config.ts so client components
@@ -60,7 +81,7 @@ export function getSiteId(): SiteId {
 }
 
 export function getSiteConfig(): SiteConfig {
-  return getSiteId() === 'intl' ? INTL : NL;
+  return getSiteId() === 'intl' ? intlConfig() : NL;
 }
 
 export const isNlSite = (): boolean => getSiteId() === 'nl';
