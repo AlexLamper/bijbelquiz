@@ -16,6 +16,7 @@ import { getSiteConfig } from '@/config/site';
 
 import en from './en.json';
 import es from './es.json';
+import pt from './pt.json';
 import nl from './nl.json';
 
 type Dictionary = { [key: string]: string | string[] | Dictionary };
@@ -25,7 +26,7 @@ export type Locale = 'nl' | 'en' | 'es' | 'pt' | 'de' | 'fr';
 // Only languages that have a dictionary file are listed. A new language is
 // added by creating `<locale>.json` and one import + one line here (see
 // docs/setup/new-language.md).
-const dictionaries: Partial<Record<Locale, Dictionary>> & Record<'nl' | 'en', Dictionary> = { nl, en, es };
+const dictionaries: Partial<Record<Locale, Dictionary>> & Record<'nl' | 'en', Dictionary> = { nl, en, es, pt };
 
 export type TranslateParams = Record<string, string | number>;
 export type Translator = (key: string, params?: TranslateParams) => string;
