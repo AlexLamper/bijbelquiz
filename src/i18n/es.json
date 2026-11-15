@@ -1,0 +1,1817 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "quiz": "cuestionario",
+    "quizzes": "cuestionarios",
+    "book": "libro",
+    "books": "libros",
+    "all": "Todos"
+  },
+  "meta": {
+    "ogLocale": "es_ES",
+    "titleDefault": "{brand} - Juega cuestionarios bíblicos gratis",
+    "titleTemplate": "%s | {brand}",
+    "description": "Juega cuestionarios bíblicos gratis y pon a prueba tu conocimiento del Antiguo y del Nuevo Testamento. Preguntas interactivas, respuestas al instante, clasificaciones y modo multijugador. ¡Para pequeños y grandes!",
+    "keywords": [
+      "cuestionario bíblico",
+      "cuestionario bíblico online",
+      "cuestionario bíblico gratis",
+      "cuestionarios bíblicos",
+      "conocimiento bíblico",
+      "trivia bíblica",
+      "cuestionario cristiano",
+      "preguntas bíblicas",
+      "estudio bíblico",
+      "juego bíblico online",
+      "cuestionario de fe",
+      "cuestionario del Antiguo Testamento",
+      "cuestionario del Nuevo Testamento",
+      "cuestionario sobre Jesús",
+      "historias bíblicas",
+      "preguntas y respuestas bíblicas",
+      "preguntas bíblicas difíciles",
+      "cuestionario bíblico fácil",
+      "cuestionario bíblico para niños",
+      "juegos para la escuela dominical",
+      "aprender la Biblia",
+      "pregunta bíblica diaria",
+      "juegos cristianos",
+      "reto bíblico"
+    ],
+    "ogTitle": "{brand} - Juega cuestionarios bíblicos gratis",
+    "ogDescription": "Pon a prueba tu conocimiento bíblico con cuestionarios interactivos gratuitos. Sube en la clasificación, gana XP y aprende más sobre la Palabra de Dios. ¡Empieza ahora!",
+    "ogImageAlt": "{brand} - Cuestionarios bíblicos gratis",
+    "twitterTitle": "{brand} - Juega cuestionarios bíblicos gratis",
+    "twitterDescription": "Pon a prueba tu conocimiento bíblico con cuestionarios interactivos gratuitos y sube en la clasificación.",
+    "aboutStudieName": "Estudio bíblico",
+    "knowsAbout": [
+      "Conocimiento bíblico",
+      "Estudio bíblico",
+      "Plataformas bíblicas digitales"
+    ]
+  },
+  "bq": {
+    "brand": {
+      "wordA": "Cuestionarios ",
+      "wordB": "Bíblicos"
+    },
+    "nav": {
+      "quizzes": "Cuestionarios",
+      "playTogether": "Jugar juntos",
+      "leaderboard": "Clasificación",
+      "premium": "Premium",
+      "groupLicense": "Licencia de grupo",
+      "help": "Ayuda",
+      "contact": "Contacto",
+      "privacy": "Política de privacidad",
+      "terms": "Condiciones",
+      "deleteAccount": "Eliminar cuenta",
+      "dashboard": "Panel",
+      "profile": "Perfil",
+      "settings": "Ajustes",
+      "admin": "Administración",
+      "groupPlay": "Jugar",
+      "groupLegal": "Legal",
+      "mainMenu": "Menú principal",
+      "menu": "Menú",
+      "menuOpen": "Abrir menú",
+      "menuClose": "Cerrar menú"
+    },
+    "auth": {
+      "login": "Iniciar sesión",
+      "startFree": "Empieza gratis",
+      "logout": "Cerrar sesión",
+      "player": "Jugador"
+    },
+    "footer": {
+      "tagline": "Pon a prueba tu conocimiento bíblico con cuestionarios cortos.",
+      "copyright": "© {year} {brand}"
+    },
+    "header": {
+      "daysInARow": "Racha de {count} días",
+      "xp": "{value} XP",
+      "numberLocale": "es-ES"
+    },
+    "logo": {
+      "homeLabel": "{brand}, ir a la página de inicio"
+    },
+    "stores": {
+      "appStoreEyebrow": "Descárgalo en",
+      "googlePlayEyebrow": "Disponible en"
+    },
+    "premiumLock": {
+      "title": "Las explicaciones son Premium",
+      "description": "Lee por qué cada respuesta es correcta, con el texto bíblico al lado.",
+      "button": "Premium",
+      "placeholder": [
+        "La explicación de esta respuesta te cuenta lo que ocurre en el pasaje bíblico y por qué esta respuesta es la correcta.",
+        "Con Premium lees la explicación y el texto bíblico de cada pregunta, tantas veces como quieras.",
+        "Así recuerdas mejor la historia y aprendes algo nuevo en cada cuestionario."
+      ]
+    },
+    "quiz": {
+      "questionOne": "pregunta",
+      "questionMany": "preguntas",
+      "minutesShort": "min",
+      "metaLine": "{count} {unit} · {mins} {min}",
+      "answeredOf": "{answered} de {total} preguntas",
+      "questionProgress": "Pregunta {current} de {total}"
+    },
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "a11y": {
+      "close": "Cerrar",
+      "answers": "Respuestas",
+      "breadcrumbs": "Ruta de navegación"
+    }
+  },
+  "landing": {
+    "hero": {
+      "visualAlt": "Ejemplo: una pregunta sobre Juan 6 con la respuesta correcta y su explicación, una sala con 6 jugadores, XP ganados y una racha de 6 días",
+      "ref": "JUAN 6",
+      "question": "¿Cuántos panes llevaba el muchacho?",
+      "answers": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "correct": "5",
+      "good": "¡Correcto!",
+      "explanation": "Andrés llevó a Jesús a un muchacho que tenía cinco panes de cebada y dos peces.",
+      "readRef": "Leer Juan 6:9",
+      "playersInRoom": "jugadores en la sala",
+      "titleA": "¿Cuánto conoces",
+      "titleB": "la Biblia?",
+      "lead": "Cuestionarios cortos sobre cada libro de la Biblia, con una explicación para cada respuesta. Juega solo o en grupo con familia, amigos o tu comunidad.",
+      "cta": "Empieza gratis",
+      "noAccount": "3 cuestionarios gratis, sin cuenta",
+      "orApp": "O juega en la aplicación"
+    },
+    "how": {
+      "title": "Cómo funciona {brand}",
+      "subtitle": "Solo o en grupo, con los mismos cuestionarios cortos.",
+      "playTitle": "Juega un cuestionario",
+      "playText": "Diez preguntas sobre un pasaje bíblico. Tras cada respuesta lees la explicación y el texto bíblico.",
+      "sampleExplanation": "Noé construyó el arca de madera de ciprés, tal como Dios se lo había ordenado.",
+      "sampleRead": "Leer Génesis 6:14",
+      "togetherTitle": "Jugar juntos",
+      "togetherText": "Abre una sala y comparte el código. Hasta 20 jugadores se unen, cada uno desde su móvil.",
+      "roomCode": "Código de sala",
+      "playersJoin": "14 jugadores se han unido"
+    },
+    "books": {
+      "title": "Cuestionarios sobre cada libro de la Biblia",
+      "countQuizzes": "{count} cuestionarios",
+      "noCountQuizzes": "Cuestionarios",
+      "subtitle": "{quizzes} sobre el Antiguo y el Nuevo Testamento, por libro y por tema.",
+      "all": "Todos los cuestionarios",
+      "oldTestament": "Antiguo Testamento",
+      "newTestament": "Nuevo Testamento",
+      "bookCount": "{count} libros",
+      "more": "+ {count} más"
+    },
+    "group": {
+      "title": "Juega en grupo",
+      "subtitle": "Para la familia, el grupo de jóvenes, la escuela dominical o la clase. Una persona abre una sala y los demás se unen con el código.",
+      "step1Title": "Abre una sala",
+      "step1Text": "Elige un cuestionario y abre la sala desde el móvil o el ordenador.",
+      "step2Title": "Comparte el código",
+      "step2Text": "Lee en voz alta el código de 6 caracteres o ponlo en la pantalla.",
+      "step3Title": "Juega a la vez",
+      "step3Text": "Todos responden la misma pregunta. La clasificación se actualiza en directo.",
+      "start": "Abrir una sala",
+      "license": "Licencia de grupo para iglesias y escuelas",
+      "roomAlt": "Ejemplo de una sala con el código K7P2QM: 14 jugadores, pregunta 6 de 10, Lotte va en primer lugar",
+      "room": "Sala",
+      "players": "14 jugadores",
+      "questionOf": "Pregunta 6 de 10",
+      "standings": "Clasificación",
+      "others": "y otros 9 jugadores",
+      "names": [
+        "Lotte",
+        "Daan",
+        "Alex",
+        "Noor",
+        "Ruben"
+      ]
+    },
+    "premium": {
+      "title": "Juega sin límites con Premium",
+      "subtitle": "Tus primeros 3 cuestionarios son gratis. Con Premium juegas todo, tantas veces como quieras.",
+      "benefits": [
+        "Todos los cuestionarios, tantas veces como quieras",
+        "Una explicación para cada respuesta",
+        "Repasa tus respuestas después de cada cuestionario"
+      ],
+      "view": "Ver Premium",
+      "trial": "Prueba gratis durante 7 días",
+      "alt": "Juegas 3 cuestionarios gratis. Con Premium se abre cada libro de la Biblia, incluidos Salmos y Apocalipsis.",
+      "quizzes": "Cuestionarios",
+      "free": "Gratis",
+      "badge": "Todo abierto con Premium",
+      "abbrs": [
+        "Gn",
+        "Sal",
+        "Ap"
+      ],
+      "bookTitles": [
+        "Génesis",
+        "Salmos",
+        "Apocalipsis"
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "¿No encuentras tu pregunta? Hallarás más respuestas en la sección de ayuda.",
+      "toHelp": "Ir a la ayuda",
+      "free": {
+        "q": "¿{brand} es gratis?",
+        "a": "Juegas 3 cuestionarios gratis, sin cuenta. Después puedes contratar Premium. Jugar en grupo con familia o amigos es siempre gratis."
+      },
+      "account": {
+        "q": "¿Necesito una cuenta?",
+        "a": "Para empezar, no. Con una cuenta conservas tus XP y tu racha. Puedes iniciar sesión con Google, Apple o tu correo electrónico."
+      },
+      "translation": {
+        "q": "¿Qué traducción de la Biblia usan?",
+        "a": "Cada respuesta muestra su referencia bíblica, para que puedas leer el pasaje tú mismo."
+      },
+      "phone": {
+        "q": "¿Funciona en mi móvil?",
+        "a": "Sí. Juegas en el navegador desde cualquier dispositivo, o en la aplicación para iPhone y Android."
+      },
+      "class": {
+        "q": "¿Puedo jugar con mi clase o mi grupo de jóvenes?",
+        "a": "Sí. Con el juego en grupo, hasta 20 jugadores se unen con un solo código. Hay una licencia de grupo para iglesias, escuelas y grupos de jóvenes."
+      },
+      "cancel": {
+        "q": "¿Cómo cancelo Premium?",
+        "a": "Cuando quieras, desde Perfil y luego Premium. Conservas Premium hasta el final del periodo que ya has pagado."
+      }
+    },
+    "closing": {
+      "title": "¿Listo para tu primer cuestionario?",
+      "text": "Juega directamente en el navegador o descarga la aplicación. Tus primeros 3 cuestionarios son gratis.",
+      "readMore": "¿Quieres seguir leyendo después de un cuestionario?",
+      "readMoreAfter": "te ofrece el capítulo correspondiente, del mismo equipo."
+    }
+  },
+  "help": {
+    "title": "¿Cómo podemos ayudarte?",
+    "searchLabel": "Buscar en la ayuda",
+    "searchPlaceholder": "Buscar en la ayuda",
+    "popular": "Búsquedas populares:",
+    "topics": "Temas",
+    "allFaq": "Todas las preguntas frecuentes",
+    "faqTitle": "Preguntas frecuentes",
+    "faqSubtitle": "Las preguntas que recibimos con más frecuencia.",
+    "results": "Resultados de la búsqueda",
+    "resultsOne": "1 respuesta para \"{query}\".",
+    "resultsMany": "{count} respuestas para \"{query}\".",
+    "noAnswer": "Todavía no tenemos respuesta a eso. {link} y te ayudaremos.",
+    "askQuestion": "Haz tu pregunta",
+    "topic": {
+      "start": {
+        "title": "Primeros pasos",
+        "text": "Crear una cuenta, iniciar sesión y tu primer cuestionario"
+      },
+      "quizzen": {
+        "title": "Cuestionarios y explicaciones",
+        "text": "Jugar cuestionarios, explicaciones y referencias bíblicas"
+      },
+      "samen": {
+        "title": "Jugar juntos",
+        "text": "Abrir una sala y unirse con un código"
+      },
+      "premium": {
+        "title": "Premium y pagos",
+        "text": "Precios, cancelación y la licencia de grupo"
+      },
+      "account": {
+        "title": "Cuenta y privacidad",
+        "text": "Tus datos y la eliminación de tu cuenta"
+      }
+    },
+    "popularSearches": {
+      "cancel": "Cancelar Premium",
+      "join": "Unirse con un código"
+    },
+    "q": {
+      "free": {
+        "q": "¿{brand} es gratis?",
+        "a": "Juegas 3 cuestionarios gratis, sin cuenta. Jugar en grupo es siempre gratis. Si quieres todos los cuestionarios y la explicación de cada respuesta, puedes contratar Premium."
+      },
+      "group": {
+        "q": "¿Cómo empiezo una partida para mi grupo?",
+        "a": "Ve a Jugar juntos, elige Crear sala y escoge un cuestionario. Comparte el código de 6 caracteres con tu grupo. Hasta 20 jugadores se unen, cada uno desde su móvil."
+      },
+      "xp": {
+        "q": "¿Cómo funcionan los XP y los niveles?",
+        "a": "Ganas XP por cada respuesta correcta. Con suficientes XP subes de nivel. La clasificación muestra cómo vas, este mes y desde que empezaste."
+      },
+      "translation": {
+        "q": "¿Qué traducción de la Biblia usan?",
+        "a": "Cada respuesta muestra su referencia bíblica, para que puedas leer el pasaje tú mismo."
+      },
+      "cancel": {
+        "q": "¿Cómo cancelo Premium?",
+        "a": "Desde Perfil y luego Premium. Conservas Premium hasta el final del periodo que ya has pagado. Si pagas a través de la aplicación, cancelas en la App Store o en Google Play."
+      },
+      "deleteAccount": {
+        "q": "¿Cómo elimino mi cuenta?",
+        "a": "En la aplicación desde tu perfil, o a través de {link}. Borramos tu perfil, tu progreso y tus puntuaciones. Después no se puede deshacer.",
+        "text": "En la aplicación desde tu perfil, o a través de Eliminar cuenta. Borramos tu perfil, tu progreso y tus puntuaciones. Después no se puede deshacer.",
+        "link": "Eliminar cuenta"
+      },
+      "studie": {
+        "q": "¿Dónde puedo leer más sobre un pasaje bíblico?",
+        "a": "En {studie}, del mismo equipo. Allí lees cada capítulo con una explicación. {about}",
+        "text": "En Estudio bíblico, del mismo equipo. Allí lees cada capítulo con una explicación.",
+        "about": "¿Qué es Estudio bíblico?"
+      },
+      "needAccount": {
+        "q": "¿Necesito una cuenta?",
+        "a": "Para empezar, no. Con una cuenta conservas tus XP y tu racha. {link} o inicia sesión con Google, Apple o tu correo electrónico.",
+        "text": "Para empezar, no. Con una cuenta conservas tus XP y tu racha. Puedes iniciar sesión con Google, Apple o tu correo electrónico.",
+        "link": "Crea una cuenta"
+      },
+      "phone": {
+        "q": "¿Funciona en mi móvil?",
+        "a": "Sí. Juegas en el navegador desde cualquier dispositivo, o en la aplicación para iPhone y Android."
+      },
+      "explanation": {
+        "q": "¿Por qué no veo la explicación?",
+        "a": "La explicación de cada respuesta forma parte de {link}. Sin Premium sigues viendo la referencia bíblica de cada pregunta, para que puedas leerla tú mismo.",
+        "text": "La explicación de cada respuesta forma parte de Premium. Sin Premium sigues viendo la referencia bíblica de cada pregunta, para que puedas leerla tú mismo.",
+        "link": "Premium"
+      },
+      "mistake": {
+        "q": "Veo un error en una pregunta. ¿Qué hago?",
+        "a": "Infórmanos desde {link}. Indica el cuestionario y la pregunta y lo revisaremos.",
+        "text": "Infórmanos desde Informar de un problema. Indica el cuestionario y la pregunta y lo revisaremos.",
+        "link": "Informar de un problema"
+      },
+      "class": {
+        "q": "¿Puedo jugar con mi clase o mi grupo de jóvenes?",
+        "a": "Sí. Con el juego en grupo, hasta 20 jugadores se unen con un solo código. Hay una {link} para iglesias, escuelas y grupos de jóvenes.",
+        "text": "Sí. Con el juego en grupo, hasta 20 jugadores se unen con un solo código. Hay una licencia de grupo para iglesias, escuelas y grupos de jóvenes.",
+        "link": "licencia de grupo"
+      },
+      "privacy": {
+        "q": "¿Qué hacen con mis datos?",
+        "a": "Usamos tus datos para llevar el control de tu cuenta y de tu progreso. Nunca los vendemos a terceros. Todo está en la {link}.",
+        "text": "Usamos tus datos para llevar el control de tu cuenta y de tu progreso. Nunca los vendemos a terceros. Todo está en la política de privacidad.",
+        "link": "política de privacidad"
+      },
+      "api": {
+        "q": "¿Qué es BijbelAPI?",
+        "a": "BijbelQuiz está construido con la {link} neerlandesa.",
+        "text": "BijbelQuiz está construido con la BijbelAPI neerlandesa."
+      }
+    }
+  },
+  "contactForm": {
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "nombre@ejemplo.com",
+    "subject": "Asunto",
+    "subjectPlaceholder": "Elige un asunto",
+    "message": "Mensaje",
+    "messageHint": "¿Se trata de un error? Indica la página o el cuestionario y lo que hiciste.",
+    "messagePlaceholder": "¿Cómo podemos ayudarte?",
+    "title": "Enviar un mensaje",
+    "submit": "Enviar mensaje",
+    "sentTitle": "Mensaje enviado",
+    "sentDefault": "Gracias, hemos recibido tu mensaje.",
+    "sentNote": "Normalmente respondemos en 1 o 2 días laborables, a {email}.",
+    "another": "Enviar otro mensaje",
+    "errNetworkDefault": "Algo salió mal al enviar. Inténtalo de nuevo.",
+    "privacy": "Solo usamos tus datos para responder a tu pregunta. Lee la {link}.",
+    "privacyLink": "política de privacidad",
+    "errName": "Escribe tu nombre.",
+    "errEmail": "Escribe un correo electrónico válido.",
+    "errSubject": "Elige un asunto.",
+    "errMessage": "Escribe un poco más, al menos 10 caracteres."
+  },
+  "bugForm": {
+    "what": "¿Qué salió mal?",
+    "whatPlaceholder": "Por ejemplo: hice clic en un cuestionario de Génesis y acabé en esta página.",
+    "page": "Página",
+    "email": "Correo electrónico",
+    "optional": "(opcional)",
+    "emailPlaceholder": "Si quieres una respuesta",
+    "submit": "Enviar informe",
+    "sentDefault": "Gracias. Tu informe se ha enviado.",
+    "sentWithEmail": "Te avisaremos si necesitamos más detalles o cuando esté solucionado.",
+    "sentNoEmail": "Nos ponemos manos a la obra.",
+    "another": "Informar de otra cosa",
+    "errMessage": "Escribe un poco más, al menos 10 caracteres.",
+    "errEmail": "Escribe un correo electrónico válido, o déjalo vacío.",
+    "errDefault": "Algo salió mal al enviar. Inténtalo de nuevo."
+  },
+  "support": {
+    "honeypot": "Deja este campo vacío",
+    "noConnection": "Sin conexión. Revisa tu internet e inténtalo de nuevo."
+  },
+  "errorScreen": {
+    "kicker": "PREGUNTA 404",
+    "report": "Informar de este problema",
+    "home": "Ir al inicio",
+    "where": "¿A dónde quieres ir?",
+    "title": "¿Algo no va bien?",
+    "text": "Infórmanos y lo arreglaremos. Cuéntanos qué hiciste, qué falló y en qué página ocurrió.",
+    "mail": "¿Prefieres el correo?"
+  },
+  "legal": {
+    "tabsLabel": "Documentos legales",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones",
+    "onThisPage": "En esta página"
+  },
+  "promo": {
+    "copy": "Copiar",
+    "copied": "Copiado"
+  },
+  "browse": {
+    "countLabelOne": "{count} cuestionario",
+    "countLabelMany": "{count} cuestionarios",
+    "season": {
+      "endsToday": "Termina hoy",
+      "oneDay": "Queda 1 día",
+      "days": "Quedan {days} días",
+      "kicker": "TEMPORADA · {countdown}",
+      "questions": "{count} preguntas",
+      "all": "Todo lo de esta temporada"
+    },
+    "detail": {
+      "readPill": "Leer {label}",
+      "readFirst": "Lee primero {label}",
+      "modalDescription": "Lee el capítulo a tu ritmo. Las preguntas tratan de él.",
+      "start": "Empezar cuestionario",
+      "failed": "No se pudo cargar este capítulo ahora mismo. Puedes empezar el cuestionario sin más.",
+      "translation": "Texto bíblico",
+      "freeLeftOne": "Te queda {value} cuestionario gratis",
+      "freeLeftMany": "Te quedan {value} cuestionarios gratis"
+    },
+    "dash": {
+      "quizOfDay": "Cuestionario del día",
+      "quizOfDayKicker": "CUESTIONARIO DEL DÍA",
+      "playNow": "Jugar ahora",
+      "pickTopic": "Elige un tema",
+      "yourProgress": "Tu progreso",
+      "level": "Nivel {level}",
+      "xpCollected": "{xp} XP conseguidos",
+      "highestLevel": "Nivel máximo",
+      "progressToLevel": "Progreso hacia el nivel {level}",
+      "reachedHighest": "Has alcanzado el nivel máximo",
+      "xpToLevel": "{xp} XP para el nivel {level}",
+      "dayStreak": "Racha de días",
+      "daysStreak": "Racha de días",
+      "quizPlayed": "Cuestionario jugado",
+      "quizzesPlayed": "Cuestionarios jugados",
+      "chapter": "Capítulo {chapter}",
+      "continue": "Sigue jugando",
+      "bookProgress": "{played} de {total} cuestionarios de {book} jugados",
+      "duelAria": "Duelo con {name}, es tu turno",
+      "yourTurn": "TU TURNO",
+      "waiting": "{name} te está esperando",
+      "duelLine": "Duelo · {mine} - {theirs} · ronda {round}",
+      "play": "Jugar",
+      "playTurnAria": "Juega tu turno contra {name}"
+    },
+    "browser": {
+      "title": "Cuestionarios",
+      "lead": "Elige un libro de la Biblia o un tema. Con cada respuesta recibes una explicación y el texto bíblico.",
+      "searchAria": "Buscar un cuestionario",
+      "searchPlaceholder": "Busca un libro o un tema",
+      "filter": "Filtrar",
+      "chipAll": "Todos",
+      "chipOt": "Antiguo Testamento",
+      "chipNt": "Nuevo Testamento",
+      "chipThemes": "Temas",
+      "popular": "Cuestionarios populares",
+      "allQuizzes": "Todos los cuestionarios",
+      "allBooksOf": "Todos los libros del {testament}",
+      "allBooksShort": "Todos los libros",
+      "allThemes": "Todos los temas",
+      "allNBooksOne": "{count} libro en total",
+      "allNBooks": "Los {count} libros",
+      "bookCountOne": "{count} libro",
+      "bookCount": "{count} libros",
+      "noQuizzesYet": "Aún no hay cuestionarios",
+      "noQuizzesYetText": "En cuanto haya cuestionarios listos, los encontrarás aquí.",
+      "noTestament": "Aún no hay cuestionarios del {testament}",
+      "noTestamentText": "Elige otro filtro o busca un tema.",
+      "noResults": "No se encontró ningún cuestionario",
+      "noResultsText": "No se encontró nada para \"{query}\". Prueba con un libro de la Biblia, un personaje u otra palabra.",
+      "clearSearch": "Borrar búsqueda",
+      "booksSection": "Libros de la Biblia",
+      "quizzesSection": "Cuestionarios",
+      "notFound": "Aquí no hay cuestionarios (todavía)",
+      "notFoundText": "Elige un libro de la Biblia o un tema en la vista general.",
+      "toAll": "Ir a todos los cuestionarios",
+      "noThemes": "Aún no hay temas",
+      "noThemesText": "En cuanto haya un cuestionario temático listo, lo encontrarás aquí.",
+      "bannerTitle": "Jugar juntos",
+      "bannerText": "Juega en directo con tu grupo o tu clase. Comparte el código de sala; pueden unirse hasta {max} jugadores."
+    }
+  },
+  "play": {
+    "verdictGood": "¡Correcto!",
+    "verdictGoodAria": "Respuesta correcta",
+    "verdictTime": "Se acabó el tiempo",
+    "verdictBad": "No exactamente",
+    "verdictBadAria": "Respuesta incorrecta",
+    "stop": "Salir del cuestionario",
+    "settingsAria": "Ajustes del cuestionario",
+    "settingsTitle": "Ajustes del cuestionario",
+    "secondsLeft": "Quedan {seconds} segundos",
+    "timeUp": "Se acabó el tiempo",
+    "questionOfSr": "Pregunta {current} de {total}:",
+    "answerCorrectAria": "{answer}, respuesta correcta",
+    "answerWrongAria": "{answer}, tu respuesta, incorrecta",
+    "explanationLock": "Lee por qué cada respuesta es correcta, con Premium.",
+    "hideRef": "Ocultar {reference}",
+    "readRef": "Leer {reference}",
+    "saving": "Guardando...",
+    "finish": "Terminar cuestionario",
+    "next": "Siguiente pregunta",
+    "saveFailed": "No se pudo guardar tu puntuación. Revisa tu conexión e inténtalo de nuevo.",
+    "translation": "Texto bíblico",
+    "verseFailed": "No se pudo cargar el texto.",
+    "studieLabel": "Lee {book} {chapter} con explicación en Estudio bíblico",
+    "textSize": "Tamaño del texto",
+    "sizeNormal": "Normal",
+    "sizeLarge": "Grande",
+    "timer": "Tiempo por pregunta",
+    "off": "Desactivado",
+    "on": "Activado",
+    "bibleRefs": "Referencias bíblicas",
+    "font": "Tipografía",
+    "fontRound": "Redondeada",
+    "fontSharp": "Nítida",
+    "showExplanation": "Mostrar explicación",
+    "fullscreen": "Pantalla completa",
+    "toggle": "Sí/no",
+    "leaveTitle": "¿Salir del cuestionario?",
+    "leaveText": "¿Seguro que quieres parar? Podrías perder hasta {xp}. Si sales ahora, tu progreso no se guardará.",
+    "stay": "Quedarme",
+    "leave": "Salir del cuestionario"
+  },
+  "passage": {
+    "back": "Volver a los cuestionarios",
+    "readFirst": "Lee primero",
+    "text": "Tómate tu tiempo con este capítulo. Las preguntas que siguen tratan de él, así que leer ayuda de verdad.",
+    "failed": "No se pudo cargar este capítulo ahora mismo. Puedes empezar el cuestionario sin más.",
+    "translation": "Texto bíblico",
+    "ready": "¿Has terminado de leer?",
+    "start": "Empezar el cuestionario"
+  },
+  "result": {
+    "nextStep": "Siguiente paso",
+    "ringLabel": "correctas",
+    "scoreAria": "Puntuación {score} de {total}",
+    "tryAgain": "Buen intento",
+    "nicelyPlayed": "Bien jugado",
+    "titleNamed": "{lead}, {name}",
+    "titleAnon": "¡{lead}!",
+    "newBest": "Nueva mejor puntuación",
+    "summary": "Acertaste {score} de las {total} preguntas en {title}.",
+    "openQuestion": "Abre una pregunta para ver la explicación y el texto bíblico.",
+    "playedOn": "Jugado el {date}",
+    "nextQuiz": "Siguiente cuestionario",
+    "yourAnswers": "Tus respuestas",
+    "nCorrect": "{count} correctas",
+    "nWrong": "{count} incorrectas",
+    "question": "Pregunta {n}",
+    "yourAnswer": "Tu respuesta: {answer}",
+    "noAnswer": "Sin respuesta",
+    "correctAnswer": "Respuesta correcta: {answer}",
+    "noExplanation": "Esta pregunta no tiene explicación.",
+    "lockedTitle": "Repasar tus respuestas es Premium",
+    "lockedText": "Mira lo que elegiste en cada pregunta, la respuesta correcta y la explicación con el texto bíblico.",
+    "viewPremium": "Ver Premium",
+    "xpEarned": "+{xp} XP ganados",
+    "noNewXp": "Sin XP nuevos",
+    "improve": "Mejora tu mejor puntuación para ganar más XP",
+    "streakOne": "Racha de {days} día",
+    "streakMany": "Racha de {days} días",
+    "playTogether": "Jugar con otros",
+    "replay": "Jugar de nuevo",
+    "readChapter": "Leer el capítulo",
+    "readPassage": "Lee {book} {chapter} con explicación",
+    "readMore": "Sigue leyendo en la Biblia",
+    "whyDifferent": "¿Por qué era distinta la respuesta?",
+    "studieText": "En Estudio bíblico lees el capítulo entero con explicación.",
+    "toStudie": "Ir a Estudio bíblico",
+    "home": "Volver al inicio",
+    "guest": {
+      "noneTitle": "No se encontró ningún resultado",
+      "noneText": "No hay puntuación de {title} en este dispositivo. Juega el cuestionario o inicia sesión para ver tus resultados.",
+      "playQuiz": "Jugar el cuestionario",
+      "saveAria": "Guardar tu puntuación",
+      "saveTitle": "Guarda tu puntuación y {xp} XP",
+      "notSaved": "Aún no guardado",
+      "saveText": "Crea una cuenta gratis o inicia sesión y esta puntuación se añade al instante y cuenta para tu nivel, tu racha y la clasificación.",
+      "register": "Crear una cuenta gratis"
+    }
+  },
+  "samen": {
+    "you": "Tú",
+    "game": {
+      "standings": "Clasificación",
+      "standingsAfter": "Clasificación tras la pregunta {n}",
+      "players": "Jugadores",
+      "playersCount": "{count} jugadores",
+      "correctOf": "{correct} de {total} correctas",
+      "answeredOf": "{answered} de {total} han respondido",
+      "playersCorrect": "Jugadores con respuesta correcta",
+      "playersAnswered": "Jugadores que han respondido",
+      "statusCorrect": "correcta",
+      "statusWrong": "incorrecta",
+      "statusNone": "sin respuesta",
+      "statusAnswered": "ha respondido",
+      "statusThinking": "aún pensando",
+      "loadingNext": "Espera, se está cargando la siguiente pregunta...",
+      "questionOf": "Pregunta {current} de {total}",
+      "yourAnswer": "{answer}, tu respuesta",
+      "sentHostReveal": "Tu respuesta está enviada. Muestra la respuesta en cuanto todos estén listos.",
+      "sentWaitHost": "Tu respuesta está enviada. Verás si es correcta cuando el anfitrión muestre la respuesta.",
+      "sentWaitAll": "Tu respuesta está enviada. Verás si es correcta cuando todos estén listos o se acabe el tiempo.",
+      "showAnswer": "Mostrar la respuesta",
+      "wellDone": "¡Bien hecho!",
+      "noAnswer": "Sin respuesta",
+      "notRight": "Lástima, no es correcta",
+      "correctCountOne": "{correct} de {total} jugador acertó esta pregunta.",
+      "correctCountMany": "{correct} de {total} jugadores acertaron esta pregunta.",
+      "explanation": "Explicación",
+      "toFinal": "A la clasificación final",
+      "autoContinue": "Continúa automáticamente en {seconds} s",
+      "finalIn": "Clasificación final en {seconds} s",
+      "nextIn": "Siguiente pregunta en {seconds} s",
+      "game": "Partida",
+      "leaveTitle": "¿Salir de la partida?",
+      "leaveText": "Tus puntos se conservan, pero ya no participarás en esta ronda.",
+      "leave": "Salir de la partida"
+    },
+    "offline": "sin conexión",
+    "busy": "Trabajando...",
+    "reconnecting": "Reconectando...",
+    "stay": "Quedarme",
+    "questionOne": "{count} pregunta",
+    "questionMany": "{count} preguntas",
+    "pointsShort": "{points} pts",
+    "pointOne": "{points} punto",
+    "pointMany": "{points} puntos",
+    "picker": {
+      "choose": "Elige un cuestionario",
+      "placeholder": "Busca por título, libro o categoría",
+      "clear": "Borrar búsqueda",
+      "category": "Categoría",
+      "all": "Todas",
+      "quizzes": "Cuestionarios",
+      "none": "No se encontró ningún cuestionario. Ajusta la búsqueda o la categoría.",
+      "count": "{shown} de {total} cuestionarios"
+    },
+    "reading": {
+      "title": "Lee primero el capítulo",
+      "sub": "Tómate tu tiempo. Las preguntas tratan de esto.",
+      "failed": "No se pudo cargar este capítulo ahora mismo. Puedes empezar las preguntas sin más.",
+      "aria": "Texto bíblico",
+      "start": "Empezar las preguntas",
+      "waitHost": "Espera a que el anfitrión empiece las preguntas."
+    },
+    "room": {
+      "loading": "Cargando la sala",
+      "loginTitle": "Hace falta iniciar sesión",
+      "loginText": "Inicia sesión para jugar juntos.",
+      "closedTitle": "Sala no disponible",
+      "failedTitle": "No se pudo cargar la sala",
+      "closedText": "Esta sala ya no existe o el anfitrión la cerró.",
+      "failedText": "Inténtalo de nuevo o vuelve a Jugar juntos.",
+      "retry": "Intentar de nuevo",
+      "back": "Volver a Jugar juntos",
+      "refresh": "Actualizar"
+    },
+    "results": {
+      "saveFailed": "No se pudo guardar el grupo.",
+      "final": "Clasificación final",
+      "loading": "Cargando los resultados...",
+      "top3": "Top 3",
+      "rest": "Puestos del 4 al {last}",
+      "newGame": "Nueva partida",
+      "saveTitle": "¿Guardar este grupo?",
+      "saveText": "Llevas tu propia clasificación con estos {count} jugadores y la próxima vez puedes invitarlos de nuevo con un clic.",
+      "saving": "Guardando...",
+      "save": "Guardar grupo",
+      "no": "No, gracias",
+      "savedNamed": "\"{name}\" está guardado",
+      "saved": "Grupo guardado",
+      "savedText": "Encontrarás la clasificación de este grupo en la clasificación general.",
+      "toLeaderboard": "A la clasificación",
+      "continueWith": "Sigue con {passage}",
+      "continueStudie": "Sigue con BijbelStudie",
+      "studieChapter": "Lee el capítulo en BijbelStudie, con explicación.",
+      "studieMore": "Sigue leyendo en BijbelStudie, con explicación.",
+      "playerOne": "{count} jugador"
+    },
+    "start": {
+      "step1Title": "Crea una sala",
+      "step1Text": "Elige un cuestionario y el número de jugadores. Recibes un código.",
+      "step2Title": "Comparte el código",
+      "step2Text": "Los demás introducen el código o abren tu invitación y esperan en la sala de espera.",
+      "step3Title": "Jugad juntos",
+      "step3Text": "Tú empiezas el cuestionario. Todos responden a la vez y ven la clasificación al instante.",
+      "pickFirst": "Elige primero un cuestionario.",
+      "codeLength": "Introduce el código de {length} caracteres.",
+      "chapterHintNamed": "Todos leen {passage} antes de que empiecen las preguntas. Solo funciona si el cuestionario abarca 1 capítulo.",
+      "chapterHint": "Todos leen el capítulo antes de que empiecen las preguntas. Solo funciona si el cuestionario abarca 1 capítulo.",
+      "title": "Jugar juntos",
+      "intro": "Todos juegan el mismo cuestionario a la vez, cada uno desde su móvil.",
+      "capacity": "Hasta {capacity} jugadores · gratis, tantas veces como quieras",
+      "stillIn": "Sigues en la sala {code}",
+      "resume": "Seguir jugando",
+      "createTitle": "Crear sala",
+      "createSub": "Eres el anfitrión",
+      "quiz": "Cuestionario",
+      "noQuizzes": "Todavía no hay cuestionarios para elegir.",
+      "maxPlayers": "Número máximo de jugadores",
+      "noTimer": "Sin temporizador",
+      "seconds": "{choice} s",
+      "noTimerHint": "Sin temporizador, pasas tú mismo a la respuesta y a la siguiente pregunta.",
+      "readFirst": "Leer primero el capítulo bíblico",
+      "creating": "Creando la sala...",
+      "joinTitle": "Unirse con un código",
+      "joinSub": "El anfitrión comparte un código de {length} caracteres",
+      "connecting": "Conectando...",
+      "join": "Unirse",
+      "how": "¿Cómo funciona?"
+    },
+    "code": {
+      "group": "Código de sala, {length} caracteres",
+      "char": "Carácter {n} de {length}"
+    },
+    "lobby": {
+      "title": "Sala de espera",
+      "subHost": "Empieza el cuestionario en cuanto estén todos aquí.",
+      "subGuest": "El anfitrión empieza el cuestionario en cuanto estén todos aquí.",
+      "codeAria": "Código de sala",
+      "codeLabel": "CÓDIGO DE SALA",
+      "codeSpoken": "Código de sala {code}",
+      "goTo": "Ve a {url} e introduce el código",
+      "inviteCopied": "Invitación copiada",
+      "invite": "Compartir invitación",
+      "codeCopied": "Código copiado",
+      "copyCode": "Copiar código",
+      "ofMax": "{count} de {max}",
+      "youHost": "Tú (anfitrión)",
+      "isOffline": "{name} está sin conexión",
+      "host": "anfitrión",
+      "newPlayers": "Los nuevos jugadores aparecen aquí automáticamente.",
+      "reconnecting": "Reconectando: se está volviendo a pedir la lista de jugadores.",
+      "change": "Cambiar",
+      "startAria": "Empezar",
+      "enoughHost": "Hay jugadores suficientes para empezar",
+      "enoughGuest": "Hay jugadores suficientes, esperando al anfitrión",
+      "needOne": "Falta {missing} jugador más para empezar",
+      "needMany": "Faltan {missing} jugadores más para empezar",
+      "starting": "Empezando el cuestionario...",
+      "start": "Empezar el cuestionario",
+      "guestHint": "En cuanto el anfitrión empiece, todos pasan juntos a la primera pregunta.",
+      "close": "Cerrar sala",
+      "leave": "Salir de la sala",
+      "changeTitle": "¿Elegir otro cuestionario?",
+      "changeText": "Sales de esta sala y creas una nueva, con un código nuevo. Quien ya esté dentro introduce entonces el código nuevo.",
+      "changeConfirm": "Elegir otro cuestionario"
+    }
+  },
+  "account": {
+    "auth": {
+      "loginVisualLabel": "Ejemplo: tu cuestionario sobre Lucas 15 va por 4 de 10, tu grupo espera en la sala, 1.240 XP y una racha de 6 días",
+      "vLuke": "Lucas",
+      "vProdigal": "El hijo pródigo",
+      "vChapter": "Capítulo 15 · 4/10",
+      "vGroup": "Tu grupo te está esperando",
+      "vXp": "1.240 XP",
+      "vStreak": "6 días seguidos",
+      "loginTitle": "Todo está listo para ti",
+      "loginText": "Tu racha y tus XP pertenecen a tu cuenta. Sigue jugando en la web o en la aplicación.",
+      "regVisualLabel": "Ejemplo: una pregunta sobre Génesis 7 con la respuesta correcta, una sala con 6 jugadores, XP y una racha",
+      "vGenesis": "GÉNESIS 7",
+      "vQuestion": "¿Cuántos días llovió durante el diluvio?",
+      "regTitle": "¿Cuánto conoces la Biblia?",
+      "vXpGain": "+15 XP",
+      "vRoom": "{n} jugadores en la sala",
+      "regBullets": [
+        "Empieza gratis con 3 cuestionarios",
+        "Guarda tus XP, tu racha y tus insignias",
+        "Juega en grupo con familia o amigos"
+      ]
+    },
+    "social": {
+      "apple": "Continuar con Apple",
+      "google": "Continuar con Google",
+      "or": "o con correo electrónico"
+    },
+    "delete": {
+      "failed": "No se pudo eliminar. Inténtalo de nuevo o escríbenos.",
+      "network": "Error de red. Inténtalo de nuevo.",
+      "confirm": "Entiendo que mi cuenta y mi progreso desaparecerán para siempre. Esto no se puede deshacer.",
+      "submit": "Eliminar la cuenta definitivamente"
+    },
+    "cancel": "Cancelar",
+    "profile": {
+      "badgeProgress": "{name}: {current} de {target}",
+      "showLess": "Mostrar menos",
+      "showAll": "Todos los logros",
+      "saveFailed": "No se pudo guardar.",
+      "updated": "Perfil actualizado",
+      "saveFailedRetry": "No se pudo guardar. Inténtalo de nuevo.",
+      "editTitle": "Editar perfil",
+      "editText": "Tu nombre y tu avatar aparecen en la clasificación y al jugar juntos.",
+      "nameLockedOne": "Podrás cambiar tu nombre de nuevo en {days} día.",
+      "nameLockedMany": "Podrás cambiar tu nombre de nuevo en {days} días.",
+      "nameHint": "Se puede cambiar una vez cada 30 días.",
+      "name": "Nombre",
+      "character": "Avatar",
+      "color": "Color",
+      "background": "Fondo",
+      "accessory": "Accesorio",
+      "statStreak": "Días seguidos",
+      "statXp": "XP totales",
+      "statPlayed": "Cuestionarios jugados",
+      "statAvg": "Puntuación media",
+      "levelAria": "{name}, nivel {level}",
+      "maxLevel": "Nivel máximo alcanzado",
+      "toNext": "{xp} XP para el nivel {level}",
+      "progressTo": "Progreso hacia el nivel {level}",
+      "memberSince": "Miembro desde {date}",
+      "settings": "Ajustes",
+      "earned": "Conseguidos {n}",
+      "level": "Nivel {level}",
+      "achievements": "Logros",
+      "surprise": "Sorpréndeme",
+      "togetherText": "Con familia o amigos: todos juegan el mismo cuestionario a la vez, cada uno desde su móvil.",
+      "startRoom": "Abrir una sala",
+      "stats": "Estadísticas",
+      "tryPremium": "Prueba Premium",
+      "premiumText": "Todos los cuestionarios y una explicación con cada respuesta",
+      "trial": "Conseguir Premium",
+      "verse": "Versículo del día",
+      "edit": "Editar"
+    },
+    "save": "Guardar",
+    "settings": {
+      "interestGospels": "Evangelios",
+      "interestWisdom": "Sabiduría y Proverbios",
+      "saving": "Guardando...",
+      "saveFailed": "No se pudieron guardar los ajustes",
+      "saved": "Guardado",
+      "nameLength": "El nombre debe tener entre 2 y 30 caracteres.",
+      "nameFailed": "No se pudo guardar el nombre",
+      "nameUpdated": "Nombre actualizado",
+      "title": "Ajustes",
+      "sub": "Los cambios se guardan al instante.",
+      "account": "Cuenta",
+      "nameHint": "Así te ven los demás en la clasificación y cuando jugáis juntos.",
+      "email": "Correo electrónico",
+      "play": "Juego",
+      "showRefs": "Mostrar referencias bíblicas",
+      "showRefsHint": "El texto bíblico con la explicación después de cada pregunta.",
+      "readFirst": "Leer primero el capítulo",
+      "readFirstHint": "Por ejemplo, leer Daniel 2 antes de que empiecen las preguntas.",
+      "timerHint": "Por defecto juegas sin temporizador.",
+      "difficulty": "Dificultad",
+      "difficultyHint": "Qué cuestionarios ves primero en Cuestionarios.",
+      "all": "Todas",
+      "easy": "Fácil",
+      "hard": "Difícil",
+      "translation": "Traducción",
+      "translationHint": "Para el texto bíblico que lees con un cuestionario.",
+      "display": "Pantalla",
+      "theme": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema",
+      "fontSize": "Tamaño del texto de las preguntas",
+      "fontSizeHint": "También puedes cambiarlo durante un cuestionario.",
+      "normal": "Normal",
+      "large": "Grande",
+      "recs": "Recomendaciones",
+      "recsHint": "Así elegimos los cuestionarios de Recomendado para ti.",
+      "freq": "¿Con qué frecuencia lees la Biblia?",
+      "pickFreq": "Elige la frecuencia",
+      "daily": "A diario",
+      "weekly": "Cada semana",
+      "monthly": "Cada mes",
+      "rarely": "De vez en cuando",
+      "knowledge": "¿Cómo valoras tu conocimiento?",
+      "pickLevel": "Elige el nivel",
+      "beginner": "Principiante",
+      "advanced": "Avanzado",
+      "interests": "Intereses",
+      "billing": "Suscripción y privacidad",
+      "portalError": "La vista general de la suscripción no se abre ahora mismo. Inténtalo de nuevo en un momento.",
+      "privacy": "Política de privacidad",
+      "logout": "Cerrar sesión",
+      "delete": "Eliminar cuenta",
+      "managePremium": "Gestionar Premium",
+      "medium": "Media",
+      "intermediate": "Intermedio",
+      "noSubscription": "No encontramos ninguna suscripción que gestionar. Escribe a {email} y te ayudaremos.",
+      "back": "Volver al perfil"
+    }
+  },
+  "premium": {
+    "group": {
+      "invoiceSubject": "Licencia de grupo - factura",
+      "mailSubject": "Licencia de grupo",
+      "codeIncomplete": "Introduce el código de grupo completo.",
+      "joinFailed": "No se pudo unir.",
+      "joinFailedRetry": "No se pudo unir. Inténtalo de nuevo.",
+      "updateFailed": "No se pudo actualizar.",
+      "copied": "Código de grupo copiado.",
+      "copyFailed": "No se pudo copiar. Selecciona el código tú mismo.",
+      "buy": "Comprar licencia",
+      "request": "Solicitar licencia",
+      "loginToBuy": "Inicia sesión para comprar",
+      "haveCode": "Tengo un código",
+      "loading": "Cargando grupos...",
+      "name": "Nombre del grupo",
+      "nameUpdated": "Nombre del grupo actualizado.",
+      "members": "Miembros",
+      "remove": "Quitar",
+      "how": "Cómo funciona",
+      "howText": "En tres pasos todo tu grupo juega con Premium.",
+      "choose": "Elige lo que te conviene",
+      "chooseText": "¿Juegas solo? Consigue Premium. ¿Juegas con un grupo? La licencia es más rentable.",
+      "viewPremium": "Ver Premium",
+      "gotCode": "¿Tienes un código?",
+      "gotCodeText": "Introduce el código de tu responsable. Tienes Premium al instante.",
+      "code": "Código de grupo",
+      "faq": "Preguntas sobre la licencia",
+      "faq1q": "¿Puedo pagar con factura?",
+      "faq2q": "¿Necesitan una cuenta los miembros?",
+      "faq2a": "Sí, una cuenta gratuita. Así también se guardan sus XP, su racha y su progreso.",
+      "faq3q": "¿Qué pasa si alguien deja el grupo?",
+      "faq3a": "Tú mismo lo quitas del grupo. Su plaza queda libre para otra persona.",
+      "faq4q": "¿Cuánto dura la licencia?",
+      "forYou": "Para ti",
+      "licence": "Licencia de grupo",
+      "forGroup": "Para tu grupo de jóvenes, iglesia o clase",
+      "seatsUsed": "Plazas ocupadas",
+      "demoName": "Código del grupo de jóvenes 16+",
+      "demoCode": "K7PQ2M",
+      "demoJoin": "Noor se está uniendo",
+      "active": "Premium activo",
+      "cancelled": "Cancelada",
+      "expired": "Caducada",
+      "oneAccount": "1 cuenta",
+      "allQuizzes": "Todos los cuestionarios y la explicación de cada respuesta",
+      "b2": "Todos tienen Premium, también en casa",
+      "b3": "Ves quién participa",
+      "b4": "También puedes pagar con factura",
+      "s1": "Compra la licencia",
+      "s1t": "Paga online o solicita una factura.",
+      "s2": "Comparte el código",
+      "s2t": "Léelo en voz alta o envíalo en el chat del grupo.",
+      "s3": "Todos juegan con Premium",
+      "s3t": "Los miembros introducen el código y tienen todo desbloqueado al instante.",
+      "joined": "Ahora perteneces a {name}.",
+      "titleA": "Premium para",
+      "titleB": "todo tu grupo",
+      "intro": "Una licencia, un código. Hasta {seats} personas juegan con Premium, cada una desde su móvil.",
+      "priceLine": "{price} al año por {seats} plazas. También puedes pagar con factura.",
+      "yourGroup": "Tu grupo",
+      "yourGroupShort": "Tu grupo",
+      "codeOf": "Código de {name}",
+      "copyAria": "Copiar el código de grupo {code}",
+      "seatsOf": "{used} de {seats} plazas",
+      "until": "Válida hasta el {date}",
+      "owner": " (responsable)",
+      "removed": "{name} fue quitado del grupo.",
+      "membership": "Formas parte de {name}",
+      "viaGroup": "Tienes Premium a través de este grupo.",
+      "viaGroupUntil": "Tienes Premium a través de este grupo hasta el {date}.",
+      "trial": "Prueba gratis durante {days} días",
+      "b1": "{seats} plazas con un solo código",
+      "faqMail": "¿No está tu pregunta en la lista? Escribe a",
+      "faq1a": "Sí. {mail} el nombre de tu grupo y la dirección de facturación, y te enviaremos una factura. Tras el pago recibes el código.",
+      "faq1mail": "Escríbenos",
+      "faq4a": "Un año. En tu {overview} ves hasta cuándo y quién participa.",
+      "overview": "vista general del grupo",
+      "illustration": "Una licencia de grupo: un código para todo el grupo, 12 de las {seats} plazas están ocupadas.",
+      "demoSeats": "12 de {seats} plazas"
+    },
+    "perYear": "al año",
+    "trialOne": "{days} día gratis",
+    "trialMany": "{days} días gratis",
+    "tryTrial": "Prueba {trial}",
+    "buyLifetime": "Comprar Premium de por vida",
+    "start": "Empezar Premium",
+    "payNothing": "Hoy no pagas nada.",
+    "payNothingReminder": "Hoy no pagas nada. Recordatorio el día {day}.",
+    "oneOff": "Pago único, sin suscripción.",
+    "cancelAnytime": "Cancela cuando quieras.",
+    "checkoutCancelled": "Tu pago no se completó. Elige de nuevo cuando quieras.",
+    "choosePlan": "Elige un plan",
+    "yearly": "Anual",
+    "monthly": "Mensual",
+    "perWeek": "por semana",
+    "perMonth": "al mes",
+    "lifetime": "Premium de por vida",
+    "orLifetime": "O pago único: Premium de por vida",
+    "lifetimeOnce": "{price} una sola vez",
+    "save": "Ahorra un {savings}%",
+    "lifetimeWeekly": "{weekly} por semana durante {years} años",
+    "preview": {
+      "genShort": "Gn",
+      "genesis": "Génesis",
+      "ot": "Antiguo Testamento",
+      "psShort": "Sal",
+      "psalms": "Salmos",
+      "revShort": "Ap",
+      "revelation": "Apocalipsis",
+      "nt": "Nuevo Testamento",
+      "openAria": "Todos los cuestionarios están abiertos, incluidos Salmos y Apocalipsis",
+      "lockedAria": "Juegas 3 cuestionarios gratis. Con Premium se abren todos los libros de la Biblia, incluidos Salmos y Apocalipsis.",
+      "quizzes": "Cuestionarios",
+      "open": "Abierto",
+      "free": "Gratis",
+      "premium": "Premium",
+      "active": "Premium está activo",
+      "all": "Todo abierto con Premium"
+    },
+    "benefits": [
+      "Todos los cuestionarios, tantas veces como quieras",
+      "Una explicación con cada respuesta",
+      "Repasa tus respuestas después de cada cuestionario"
+    ]
+  },
+  "pages": {
+    "account-verwijderen": {
+      "title": "Eliminar cuenta | Cuestionarios Bíblicos",
+      "description": "Elimina tu cuenta de Cuestionarios Bíblicos y los datos asociados, o envía una solicitud por correo electrónico."
+    },
+    "bijbelstudie": {
+      "title": "BijbelStudie: lee la Biblia con explicación",
+      "description": "BijbelStudie lo hace el equipo de Cuestionarios Bíblicos. Lee cada capítulo con comentarios, sigue estudios guiados y pregunta a un asistente de IA. De uso gratuito.",
+      "ogTitle": "BijbelStudie, del equipo de Cuestionarios Bíblicos",
+      "ogDescription": "El cuestionario hace la pregunta. BijbelStudie te da el capítulo."
+    },
+    "contact": {
+      "title": "Contacto y preguntas frecuentes | Soporte de Cuestionarios Bíblicos",
+      "description": "¿Tienes una pregunta sobre Cuestionarios Bíblicos? Consulta las preguntas frecuentes o ponte en contacto. Estaremos encantados de ayudarte.",
+      "ogTitle": "Contacto - Cuestionarios Bíblicos",
+      "ogDescription": "Haz tu pregunta o encuentra respuestas en la página de soporte."
+    },
+    "dashboard": {
+      "title": "Panel - Cuestionarios Bíblicos",
+      "description": "Tu panel personal de cuestionarios bíblicos."
+    },
+    "duel-token": {
+      "title": "Te han retado a un duelo - Cuestionarios Bíblicos"
+    },
+    "duels-id": {
+      "title": "Duelo - Cuestionarios Bíblicos"
+    },
+    "foutmelding": {
+      "title": "Informar de un problema | Soporte de Cuestionarios Bíblicos",
+      "description": "Informa de problemas técnicos o errores en Cuestionarios Bíblicos para que podamos solucionarlos rápido."
+    },
+    "groepslicentie": {
+      "title": "Licencia de grupo | Cuestionarios Bíblicos para iglesias y escuelas",
+      "description": "Premium para todo tu grupo: una licencia, un código. Hasta {seats} personas juegan con Premium, cada una desde su móvil. Para grupos de jóvenes, iglesias y clases.",
+      "ogTitle": "Licencia de grupo de Cuestionarios Bíblicos",
+      "ogDescription": "Premium para todo tu grupo con un código que basta con leer en voz alta."
+    },
+    "hulp": {
+      "title": "Ayuda y soporte | Centro de ayuda de Cuestionarios Bíblicos",
+      "description": "Encuentra respuestas sobre problemas, pagos y reglas del juego de Cuestionarios Bíblicos."
+    },
+    "inloggen": {
+      "title": "Iniciar sesión | Cuestionarios Bíblicos - Sigue aprendiendo",
+      "description": "Inicia sesión en tu cuenta de Cuestionarios Bíblicos. Mira tus estadísticas, retoma cuestionarios sin terminar y mantén tu racha.",
+      "ogTitle": "Inicia sesión en Cuestionarios Bíblicos",
+      "ogDescription": "¡Bienvenido de nuevo! Inicia sesión para seguir jugando."
+    },
+    "instellingen": {
+      "title": "Ajustes | Cuestionarios Bíblicos",
+      "description": "Gestiona tus preferencias personales y los ajustes de tu cuenta."
+    },
+    "home": {
+      "title": "Cuestionarios Bíblicos - Cuestionarios bíblicos online gratis",
+      "description": "Pon a prueba tu conocimiento bíblico con cientos de preguntas gratuitas. Desde cuestionarios fáciles para principiantes hasta estudios a fondo para jugadores avanzados. ¡Empieza ya!",
+      "ogTitle": "Cuestionarios Bíblicos - Pon a prueba gratis tu conocimiento bíblico",
+      "ogDescription": "¿Cuánto conoces la Biblia? Haz la prueba gratuita y aprende más sobre la fe con cuestionarios interactivos."
+    },
+    "premium": {
+      "title": "Premium - Juega sin límites",
+      "description": "Juega todos los cuestionarios bíblicos tantas veces como quieras, lee la explicación de cada respuesta y repasa tus respuestas después de cada cuestionario. Mensual, anual o de por vida.",
+      "ogTitle": "Cuestionarios Bíblicos Premium",
+      "ogDescription": "Todos los cuestionarios, tantas veces como quieras. Una explicación con cada respuesta. Repasa tus respuestas después de cada cuestionario."
+    },
+    "premium-succes": {
+      "title": "Bienvenido a Premium"
+    },
+    "privacybeleid": {
+      "title": "Política de privacidad | Cuestionarios Bíblicos",
+      "description": "Cómo tratamos tus datos y tu privacidad en Cuestionarios Bíblicos. Lee nuestra declaración de privacidad."
+    },
+    "profiel": {
+      "title": "Mi perfil - Cuestionarios Bíblicos"
+    },
+    "quiz-id-beoordeling": {
+      "title": "Resumen del cuestionario - Cuestionarios Bíblicos"
+    },
+    "quizzen": {
+      "title": "Todos los cuestionarios bíblicos - Elige categoría y nivel | Cuestionarios Bíblicos",
+      "description": "Resumen de todos los cuestionarios bíblicos disponibles. Filtra por categoría, juega al instante y pon a prueba tu conocimiento del Antiguo y del Nuevo Testamento.",
+      "keywords": [
+        "cuestionarios bíblicos",
+        "resumen de cuestionarios",
+        "preguntas bíblicas",
+        "cuestionario de fe",
+        "estudio bíblico online"
+      ],
+      "ogTitle": "Juega todos los cuestionarios bíblicos - Gratis y Premium",
+      "ogDescription": "Busca y juega los mejores cuestionarios bíblicos online. De principiantes a expertos."
+    },
+    "ranglijst": {
+      "title": "Clasificación - Cuestionarios Bíblicos",
+      "description": "Mira a los mejores jugadores de Cuestionarios Bíblicos. Gana puntos jugando cuestionarios y sube en la clasificación.",
+      "ogTitle": "La clasificación de Cuestionarios Bíblicos - ¿Quién conoce mejor la Biblia?",
+      "ogDescription": "Compite por el primer puesto. Juega cuestionarios, gana puntos y llega al número 1."
+    },
+    "registreren": {
+      "title": "Crea una cuenta gratis | Cuestionarios Bíblicos",
+      "description": "Regístrate gratis en Cuestionarios Bíblicos. Sigue tu progreso, gana insignias y aprende más sobre la Biblia. Únete a la comunidad.",
+      "ogTitle": "Empieza con Cuestionarios Bíblicos - Crea una cuenta",
+      "ogDescription": "Empieza hoy a poner a prueba tu conocimiento bíblico. Regístrate gratis."
+    },
+    "samen-spelen-roomCode-lobby": {
+      "title": "Sala de espera"
+    },
+    "samen-spelen-roomCode-spel": {
+      "title": "Jugar juntos"
+    },
+    "samen-spelen-roomCode-uitslag": {
+      "title": "Clasificación final"
+    },
+    "samen-spelen": {
+      "title": "Jugar juntos",
+      "description": "Juega el mismo cuestionario bíblico a la vez con tu grupo, cada uno desde su móvil. Gratis, hasta 20 jugadores."
+    },
+    "voorwaarden": {
+      "title": "Términos y condiciones | Cuestionarios Bíblicos",
+      "description": "Lee nuestros términos y condiciones de uso de los servicios y productos de Cuestionarios Bíblicos."
+    },
+    "wachtwoord-herstellen": {
+      "title": "Nueva contraseña | Cuestionarios Bíblicos",
+      "description": "Elige una nueva contraseña para tu cuenta de Cuestionarios Bíblicos."
+    },
+    "wachtwoord-vergeten": {
+      "title": "¿Olvidaste tu contraseña? | Cuestionarios Bíblicos",
+      "description": "Solicita un enlace para elegir una nueva contraseña para tu cuenta de Cuestionarios Bíblicos."
+    },
+    "quizPage": {
+      "notFoundTitle": "Cuestionario bíblico no encontrado | Cuestionarios Bíblicos",
+      "notFoundDescription": "Este cuestionario bíblico no existe o aún no está disponible.",
+      "defaultCategory": "Biblia",
+      "title": "Cuestionario bíblico de {quiz} | Juega el cuestionario de {category}",
+      "description": "Juega online el cuestionario bíblico de {quiz}. Pon a prueba tu conocimiento con preguntas sobre {category} y recibe comentarios al instante sobre tus respuestas.",
+      "ogTitle": "Cuestionario bíblico de {quiz}",
+      "kw1": "cuestionario bíblico de {quiz}",
+      "kw2": "cuestionario de {quiz}",
+      "kw3": "cuestionario bíblico de {category}",
+      "kw4": "cuestionario bíblico online",
+      "kw5": "preguntas y respuestas bíblicas"
+    },
+    "quizLegacy": {
+      "notFound": "Cuestionario no encontrado",
+      "title": "{quiz} - Cuestionario de {category} | Cuestionarios Bíblicos",
+      "description": "Pon a prueba tu conocimiento de {quiz}. Un cuestionario interactivo de {category} con preguntas sobre la Biblia. Juega gratis en biblequizzes.app.",
+      "kwCategory": "cuestionario de {category}",
+      "ogTitle": "{quiz} | El cuestionario bíblico definitivo",
+      "ogDescription": "¡Haz el cuestionario de {quiz} y mira tu puntuación al instante!",
+      "twitterDescription": "Juega ya el cuestionario de {quiz} en biblequizzes.app",
+      "keywords": [
+        "cuestionario bíblico",
+        "cuestionario online",
+        "conocimiento cristiano",
+        "estudio bíblico"
+      ]
+    }
+  },
+  "privacyPage": {
+    "metaUpdated": "Última actualización: 8 de abril de 2026",
+    "title": "Política de privacidad",
+    "s1": {
+      "title": "1. Introducción",
+      "text": "Te damos la bienvenida a Cuestionarios Bíblicos. Valoramos tu privacidad y la protección de tus datos personales. En esta política de privacidad explicamos qué datos recogemos, por qué los recogemos y cómo los tratamos cuando usas nuestra aplicación o nuestro sitio web."
+    },
+    "s2": {
+      "title": "2. Qué datos recogemos",
+      "intro": "Cuando usas Cuestionarios Bíblicos, podemos tratar los siguientes datos:",
+      "i1": "{label} correo electrónico, nombre y foto de perfil cuando inicias sesión mediante, por ejemplo, Google.",
+      "l1": "Datos de identificación personal:",
+      "i2": "{label} puntuaciones, cuestionarios completados y progreso, para mejorar tu experiencia.",
+      "l2": "Actividad en la aplicación y progreso:",
+      "i3": "{label} en las compras de Premium tratamos información de estado a través de nuestro proveedor de pagos. No tenemos acceso a los datos de tu tarjeta.",
+      "l3": "Historial de compras:"
+    },
+    "s3": {
+      "title": "3. Cómo usamos tus datos",
+      "intro": "Usamos tus datos para los siguientes fines:",
+      "items": [
+        "Crear y gestionar tu cuenta.",
+        "Guardar y sincronizar el progreso y los resultados.",
+        "Verificar las funciones Premium.",
+        "Analizar y mejorar la estabilidad y el rendimiento."
+      ]
+    },
+    "s4": {
+      "title": "4. Compartir datos con terceros",
+      "text": "Nunca vendemos tus datos personales a terceros."
+    },
+    "s5": {
+      "title": "5. Seguridad de los datos",
+      "text": "Adoptamos medidas técnicas y organizativas adecuadas. Toda la comunicación con nuestros servidores está cifrada mediante HTTPS."
+    },
+    "s6": {
+      "title": "6. Tus derechos y la eliminación de datos",
+      "text": "Tienes derecho a solicitar el acceso, la rectificación o la supresión de tus datos. Puedes hacerlo a través del soporte o con la opción de eliminar en los ajustes de tu cuenta.",
+      "link": "Eliminar cuenta"
+    },
+    "s7": {
+      "title": "7. Cookies",
+      "text": "En nuestro sitio web solo usamos cookies funcionales, por ejemplo para mantener tu sesión iniciada."
+    },
+    "s8": {
+      "title": "8. Contacto",
+      "text": "¿Tienes preguntas sobre esta política de privacidad? Escríbenos a {email}."
+    }
+  },
+  "termsPage": {
+    "title": "Términos y condiciones",
+    "meta": "Estos términos se aplican al uso de Cuestionarios Bíblicos y los servicios relacionados.",
+    "s1": {
+      "title": "1. Generalidades",
+      "text": "Al usar Cuestionarios Bíblicos aceptas estos términos y condiciones. Estos términos se aplican a todos los servicios que ofrecemos."
+    },
+    "s2": {
+      "title": "2. Uso del servicio",
+      "text": "No puedes usar cuentas de otras personas ni poner en peligro la seguridad del servicio. Nos reservamos el derecho de bloquear cuentas en caso de uso indebido."
+    },
+    "s3": {
+      "title": "3. Suscripción Premium",
+      "text": "La suscripción Premium se contrata mediante el pago. Las condiciones de cancelación y reembolso dependen del modelo de pago elegido y de la legislación aplicable."
+    },
+    "s4": {
+      "title": "4. Propiedad intelectual",
+      "text": "Todas las preguntas de los cuestionarios, los logotipos y el software son propiedad de Cuestionarios Bíblicos. No se permite copiarlos sin autorización."
+    },
+    "s5": {
+      "title": "5. Responsabilidad",
+      "text": "Nos esforzamos por ser precisos, pero no podemos descartar por completo errores en preguntas o respuestas. No nos hacemos responsables de los daños derivados del uso del servicio."
+    }
+  },
+  "pagesBody": {
+    "report": {
+      "kicker": "INFORMAR DE UN PROBLEMA",
+      "title": "¿Algo no funciona?",
+      "text": "Cuéntanos qué salió mal y lo revisaremos. O elige a dónde quieres ir, o vuelve al inicio.",
+      "cardKicker": "SIGUE JUGANDO",
+      "formLabel": "Al formulario"
+    },
+    "help": {
+      "notFound": "¿No encontraste lo que buscabas?",
+      "ask": "Haz tu pregunta",
+      "response": "Solemos responder en 1 o 2 días laborables.",
+      "contact": "Ponte en contacto",
+      "reportText": "Informa de un error con la página y lo que hiciste, y lo revisaremos.",
+      "report": "Informar de un problema"
+    },
+    "contact": {
+      "q1": "¿Cómo cancelo Premium?",
+      "q2": "¿Cómo empiezo una partida para mi grupo?",
+      "q3": "¿Cómo elimino mi cuenta?",
+      "title": "Contacto",
+      "intro": "¿Una pregunta sobre tu cuenta, Premium o la aplicación? Envíanos un mensaje, estaremos encantados de ayudarte.",
+      "mailYourself": "¿Prefieres escribir tú mismo un correo?",
+      "reportText": "Informa de un error y lo revisaremos.",
+      "maybe": "Puede que tu respuesta ya esté ahí",
+      "allHelp": "Todas las preguntas en la ayuda"
+    },
+    "settings": {
+      "signInEmail": "Sesión iniciada con correo y contraseña",
+      "signInApple": "Sesión iniciada con Apple",
+      "signInGoogle": "Sesión iniciada con Google",
+      "free": "Juegas gratis",
+      "lifetime": "Premium de por vida",
+      "cancelledUntil": "Cancelado, activo hasta el {date}",
+      "endOfPeriod": "el final del periodo",
+      "renews": "{status}, se renueva el {date}",
+      "viaStore": "Premium a través de la App Store o Google Play",
+      "viaGroup": "Premium a través de una licencia de grupo",
+      "active": "Premium activo"
+    },
+    "profile": {
+      "allRounder": "Juega {n} cuestionarios distintos.",
+      "unnamed": "Sin nombre",
+      "verseRef": "Salmo 119:105",
+      "verseText": "Lámpara es a mis pies tu palabra, y lumbrera a mi camino."
+    },
+    "review": {
+      "playTomorrow": "Juega mañana para mantener tu racha",
+      "playToday": "Juega hoy para mantener tu racha",
+      "quizzes": "Cuestionarios",
+      "result": "Resultado"
+    },
+    "quizzen": {
+      "listName": "Resumen de cuestionarios de Cuestionarios Bíblicos"
+    },
+    "quizLd": {
+      "description": "Pon a prueba tu conocimiento de {quiz} en este cuestionario bíblico interactivo."
+    },
+    "leaderboard": {
+      "thisMonthLower": "este mes",
+      "alwaysLower": "de siempre",
+      "title": "Clasificación",
+      "xp30": "XP de los últimos 30 días",
+      "xpAll": "Todos los XP ganados",
+      "aria": "Clasificación {period}",
+      "period": "Periodo",
+      "thisMonth": "Este mes",
+      "always": "De siempre",
+      "empty": "Todavía no hay nadie en la clasificación",
+      "emptyMonthly": "Nadie ha ganado XP en los últimos 30 días. Juega un cuestionario y toma el primer puesto.",
+      "emptyAll": "Juega un cuestionario para ser el primero en la clasificación.",
+      "top3": "Top 3 {period}",
+      "yourPlaceIn": "Tu puesto en {name}",
+      "yourPlaceMonth": "Tu puesto este mes",
+      "yourPlaceAll": "Tu puesto de siempre"
+    },
+    "dashboard": {
+      "ot": "Antiguo Testamento",
+      "bookOne": "{count} libro",
+      "bookMany": "{count} libros",
+      "nt": "Nuevo Testamento",
+      "general": "General",
+      "wholeBible": "Toda la Biblia",
+      "themes": "Temas",
+      "perTheme": "Por tema",
+      "morning": "Buenos días",
+      "afternoon": "Buenas tardes",
+      "evening": "Buenas noches",
+      "sub": "Retoma donde lo dejaste o empieza algo nuevo.",
+      "popular": "Cuestionarios populares",
+      "allQuizzes": "Todos los cuestionarios",
+      "overview": "Tu resumen"
+    },
+    "delete": {
+      "dayOne": "{count} día",
+      "dayMany": "{count} días",
+      "badgeOne": "{count} insignia",
+      "badgeMany": "{count} insignias",
+      "linkPassword": "tu contraseña",
+      "linkApple": "el vínculo con Apple",
+      "linkGoogle": "el vínculo con Google",
+      "profile": "Nombre, correo electrónico, foto de perfil y {link}",
+      "progress": "{xp} XP, nivel {level}, tu racha de {streak}, puntuaciones y {badges}",
+      "mailSubject": "Solicitud de eliminación de cuenta",
+      "profileDefault": "Nombre, correo electrónico, foto de perfil y el vínculo con Google o Apple",
+      "progressDefault": "Tus XP, nivel, racha, puntuaciones e insignias",
+      "duelsText": "Tus duelos con amigos y tu puesto en la clasificación",
+      "prefsText": "Ajustes, intereses y otros datos de la aplicación",
+      "t1": "Tu perfil",
+      "t2": "Tu progreso",
+      "t3": "Tus duelos y la clasificación",
+      "t4": "Tus preferencias",
+      "doneSub": "Tu cuenta y tus datos se han eliminado.",
+      "sub": "Primero lee lo que desaparecerá. Luego confirma en el paso 2.",
+      "backSettings": "Volver a los ajustes",
+      "backHome": "Volver a la página de inicio",
+      "doneTitle": "Tu cuenta se ha eliminado",
+      "doneText": "Gracias por jugar a Cuestionarios Bíblicos. Siempre puedes empezar de nuevo con una cuenta nueva.",
+      "toHome": "A la página de inicio",
+      "step1": "Esto se eliminará",
+      "keepTitle": "Lo que sí conservamos",
+      "step2": "Confirmar",
+      "loginText": "Inicia sesión con la cuenta que quieres eliminar. Luego confirma aquí.",
+      "loginButton": "Inicia sesión para eliminar",
+      "cantLogin": "¿Ya no puedes iniciar sesión?",
+      "mailText": "Escríbenos desde la dirección de correo de tu cuenta. Tramitamos tu solicitud en un plazo de 14 días.",
+      "inApp": "¿Prefieres la aplicación?",
+      "keepText": "Por motivos fiscales y legales conservamos datos de compra anónimos. Tras la eliminación ya no están vinculados a ti.",
+      "premiumNote": "{head} Cancela primero tu suscripción en {link}, o en la App Store o Google Play si la compraste allí. Eliminar la cuenta no detiene por sí solo una suscripción.",
+      "premiumHead": "¿Tienes Premium?",
+      "moreData": "Puedes leer más sobre tus datos en la {link}.",
+      "privacyWord": "política de privacidad",
+      "mailBody": [
+        "Hola, equipo de Cuestionarios Bíblicos:",
+        "",
+        "Quiero que se elimine mi cuenta.",
+        "La dirección de correo de mi cuenta es: [escribe aquí tu correo electrónico]",
+        "",
+        "Gracias de antemano."
+      ],
+      "appSteps": [
+        "Abre Perfil",
+        "Toca el icono del engranaje",
+        "Elige Eliminar cuenta"
+      ]
+    },
+    "premium": {
+      "have": "Tienes Premium",
+      "lockedA": "¡Bien jugado!",
+      "lockedB": "Sigue jugando con Premium",
+      "unlimitedA": "Juega sin límites",
+      "unlimitedB": "con Premium",
+      "from": "Desde {price} por semana",
+      "perYearLine": "{price} al año",
+      "underOne": ", menos de un dólar por semana.",
+      "freeOrPremium": "Gratis o Premium",
+      "freeOrPremiumSub": "Tu cuenta siempre sigue siendo gratuita. Premium lo desbloquea todo.",
+      "faq": "Preguntas sobre Premium",
+      "faqSub": "Sobre cancelar y pagar.",
+      "moreHelp": "Más en la ayuda",
+      "q1": "¿Hay una prueba gratuita?",
+      "a1": "Elige Anual y no pagas nada durante los primeros {days} días.{reminder} Si no cancelas, tu suscripción anual empieza después de los {days} días.",
+      "a1Reminder": " El día {day} recibes un recordatorio.",
+      "a1None": "No. Pagas desde el primer día y puedes cancelar cuando quieras. Siempre puedes jugar antes algunos cuestionarios gratis.",
+      "q2": "¿Cómo cancelo?",
+      "a2": "Cuando quieras, con el botón Gestionar tu suscripción de esta página o en Ajustes. Conservas Premium hasta el final del periodo que ya has pagado. Si pagas a través de la aplicación, cancelas en la App Store o en Google Play.",
+      "q3": "¿Qué pasa con mi progreso si cancelo?",
+      "a3": "Sigues jugando gratis. Tus XP y tu racha se conservan.",
+      "q4": "¿Premium funciona también en la aplicación?",
+      "a4": "Sí. Premium pertenece a tu cuenta. Inicia sesión en la aplicación con la misma cuenta y todo está abierto.",
+      "q5": "¿Qué es Premium de por vida?",
+      "a5": "Pagas {price} una sola vez y conservas Premium, sin suscripción ni renovación.",
+      "q6": "¿Hay algo para grupos?",
+      "a6": "Sí. Para iglesias, escuelas y grupos de jóvenes existe la {link}: Premium para {seats} plazas con un solo código.",
+      "a6Link": "licencia de grupo",
+      "membership": "Tu suscripción",
+      "continue": "Sigue donde lo dejaste",
+      "toQuizzes": "A los cuestionarios",
+      "manage": "Gestionar tu suscripción",
+      "toGroup": "A tu grupo",
+      "rowQuizzes": "Cuestionarios",
+      "freeQuizzes": "{n} cuestionarios",
+      "allN": "Los {n} cuestionarios",
+      "all": "Todos los cuestionarios",
+      "rowExplain": "Una explicación con cada respuesta",
+      "explainFree": "Solo la referencia bíblica",
+      "explainPremium": "Con cada pregunta",
+      "rowReview": "Repasar respuestas",
+      "reviewFree": "Solo tu puntuación",
+      "reviewPremium": "Después de cada cuestionario",
+      "rowXp": "XP, racha y clasificación",
+      "caption": "Diferencia entre gratis y Premium",
+      "whatYouGet": "Lo que obtienes",
+      "yes": "Sí"
+    },
+    "success": {
+      "lifetime": "De por vida",
+      "named": "{text}, {name}.",
+      "namedPlain": "{text}.",
+      "manageMembership": "Gestionar tu suscripción",
+      "questions": "¿Preguntas sobre tu suscripción? Mira en el {help} o escribe a {email}.",
+      "helpWord": "centro de ayuda",
+      "active": "Premium está activo",
+      "open": "Premium está desbloqueado",
+      "thanks": "Gracias por tu pedido",
+      "processing": "Estamos procesando tu pago. En cuanto llegue, Premium se desbloquea automáticamente.",
+      "groupTitle": "Tu licencia de grupo está activa",
+      "groupText": "Tu código de grupo está listo. Compártelo con tu grupo y tendrán Premium al instante.",
+      "licence": "Licencia",
+      "validUntil": "Válida hasta",
+      "welcome": "Bienvenido a Premium",
+      "lifetimeText": "Tienes Premium de por vida, sin suscripción ni renovación.",
+      "subscription": "Suscripción",
+      "paid": "Pagado",
+      "firstDays": "los primeros {days} días",
+      "duringTrial": "durante la prueba",
+      "trialTitle": "Tu prueba ha empezado",
+      "trialText": "No pagas nada {freeDays} y puedes cancelar cuando quieras.",
+      "freeUntil": "Gratis hasta",
+      "reminder": "Recordatorio",
+      "then": "Después",
+      "cancelAnytime": "Puedes cancelar cuando quieras.",
+      "nextPayment": "Próximo pago",
+      "amount": "Importe"
+    },
+    "quiz": {
+      "kickerAbout": "Cuestionario bíblico sobre {reference}",
+      "kickerCategory": "Cuestionario bíblico - {category}",
+      "ldDescription": "Juega el cuestionario bíblico de {quiz} y pon a prueba tu conocimiento con preguntas sobre {category}.",
+      "fallbackDescription": "Juega online este cuestionario bíblico de {category} y descubre cuánto sabes ya.",
+      "about": "Sobre este cuestionario",
+      "questionOne": "pregunta",
+      "questionMany": "preguntas",
+      "minutes": "{n} min",
+      "approx": "aprox.",
+      "best": "Tu mejor puntuación",
+      "playedTimes": "Jugado {n} veces · {date}",
+      "start": "Empezar cuestionario",
+      "together": "Jugar juntos con otros",
+      "aside": "Sobre este cuestionario (barra lateral)",
+      "passage": "El pasaje bíblico",
+      "isAbout": "Este cuestionario trata de",
+      "studie": "Con explicación en BijbelStudie",
+      "moreFrom": "Más de {group}",
+      "played": "Jugado",
+      "bestOf": "Mejor puntuación {correct} de {total}",
+      "allFrom": "Los {count} cuestionarios de {group}"
+    },
+    "notFound": {
+      "metaTitle": "Página no encontrada",
+      "kicker": "ERROR 404",
+      "title": "Esta página no existe",
+      "text": "El enlace ya no es válido o la página se ha movido. Elige a dónde quieres ir o vuelve al inicio."
+    },
+    "error": {
+      "kicker": "ERROR 500",
+      "title": "Algo salió mal",
+      "cardKicker": "PREGUNTA 500",
+      "home": "Al inicio",
+      "text": "Esta página no se pudo cargar bien. Inténtalo de nuevo o elige a dónde quieres ir.",
+      "globalText": "Cuestionarios Bíblicos no se pudo cargar bien. Inténtalo de nuevo o vuelve al inicio.",
+      "logoAria": "Cuestionarios Bíblicos, a la página de inicio"
+    },
+    "og": {
+      "alt": "Cuestionarios Bíblicos - Juega cuestionarios bíblicos gratis",
+      "tagline": "Juega cuestionarios bíblicos gratis y pon a prueba tu conocimiento",
+      "cta": "Empieza ahora en {host}"
+    }
+  },
+  "mail": {
+    "validation": {
+      "name": "Escribe tu nombre.",
+      "nameLong": "Tu nombre es demasiado largo.",
+      "emailLong": "Este correo electrónico es demasiado largo.",
+      "email": "Escribe un correo electrónico válido.",
+      "subject": "Elige un asunto.",
+      "short": "Escribe un poco más, al menos 10 caracteres.",
+      "messageLong": "Tu mensaje es demasiado largo (máximo 4000 caracteres).",
+      "emailOptional": "Escribe un correo electrónico válido, o déjalo vacío.",
+      "reportLong": "Tu informe es demasiado largo (máximo 4000 caracteres)."
+    },
+    "rateLimited": "Acabas de enviar varios mensajes. Inténtalo de nuevo en unos minutos.",
+    "sendFailed": "Algo salió mal al enviar. Inténtalo de nuevo o escríbenos directamente.",
+    "checkFields": "Revisa los campos e inténtalo de nuevo.",
+    "contactOk": "Gracias, hemos recibido tu mensaje.",
+    "contactSubject": "Contacto: {subject}",
+    "contactHeading": "Nuevo mensaje del formulario de contacto",
+    "fieldName": "Nombre: {value}",
+    "fieldEmail": "Correo electrónico: {value}",
+    "fieldSubject": "Asunto: {value}",
+    "fieldSubmitted": "Enviado el: {value}",
+    "fieldMessage": "Mensaje:",
+    "invalidReport": "Datos no válidos. Revisa tu informe e inténtalo de nuevo.",
+    "bugOk": "Gracias. Tu informe se ha enviado.",
+    "bugSubject": "Nuevo informe de error",
+    "bugHeading": "Nuevo informe de error recibido",
+    "notFilled": "Sin rellenar",
+    "unknown": "Desconocido",
+    "fieldPage": "Página: {value}",
+    "fieldReport": "Informe:",
+    "trial": {
+      "chargePrice": "pagas {price} al año",
+      "chargeYear": "pagas el importe anual",
+      "body": "Tu prueba gratuita de Cuestionarios Bíblicos Premium termina el {end}. Después empieza tu suscripción anual y {charge}.",
+      "keep": "¿Quieres conservar Premium? Entonces no tienes que hacer nada.",
+      "cancel": "¿No quieres continuar? Cancela antes del {end}. Puedes hacerlo en {url} con el botón \"Gestionar tu suscripción\". Entonces no pagas nada y sigues jugando gratis; tus XP y tu racha se conservan.",
+      "subject": "Tu prueba de Cuestionarios Bíblicos Premium termina el {end}"
+    },
+    "hello": "Hola, {name}:",
+    "helloPlain": "Hola:",
+    "regards": "Un saludo,",
+    "reset": {
+      "subject": "Restablece tu contraseña - Cuestionarios Bíblicos",
+      "textIntro": "Has solicitado una nueva contraseña para tu cuenta de Cuestionarios Bíblicos. Elige una con este enlace:",
+      "validity": "El enlace funciona durante {minutes} minutos y solo una vez.",
+      "ignore": "¿No lo solicitaste? Puedes ignorar este correo; tu contraseña no cambia.",
+      "htmlIntro": "Has solicitado una nueva contraseña para tu cuenta de Cuestionarios Bíblicos.",
+      "button": "Elegir una nueva contraseña"
+    },
+    "subjects": [
+      "Mi cuenta e inicio de sesión",
+      "Premium y pagos",
+      "Licencia de grupo",
+      "Duelos y jugar juntos",
+      "Un error en una pregunta",
+      "Otra cosa"
+    ]
+  },
+  "lib": {
+    "level": {
+      "1": {
+        "title": "Buscador",
+        "desc": "Acaba de empezar el camino."
+      },
+      "2": {
+        "title": "Lector",
+        "desc": "Empieza a conocer las historias."
+      },
+      "3": {
+        "title": "Aprendiz",
+        "desc": "Profundiza en la materia."
+      },
+      "4": {
+        "title": "Conocedor",
+        "desc": "Tiene una amplia base de conocimientos."
+      },
+      "5": {
+        "title": "Investigador",
+        "desc": "Entiende el contexto y las conexiones."
+      },
+      "6": {
+        "desc": "Sabe responder preguntas difíciles."
+      },
+      "7": {
+        "title": "Maestro de la Ley",
+        "desc": "Un experto en las Escrituras."
+      },
+      "8": {
+        "title": "Sabio",
+        "desc": "Comparte su conocimiento con otros."
+      },
+      "9": {
+        "desc": "Una enciclopedia bíblica viviente."
+      },
+      "10": {
+        "title": "Leyenda",
+        "desc": "Ha alcanzado el conocimiento supremo."
+      }
+    },
+    "scholar": "Erudito",
+    "master": "Maestro",
+    "badge": {
+      "firstSteps": "Primeros pasos",
+      "firstStepsDesc": "Completa tu primer cuestionario.",
+      "seeker": "Buscador de conocimiento",
+      "seekerDesc": "Juega 10 cuestionarios distintos.",
+      "perfectDesc": "Consigue el 100% en un cuestionario.",
+      "streak3": "En racha",
+      "streak3Desc": "Consigue una racha de 3 días.",
+      "streak7": "Constante",
+      "streak7Desc": "Juega 7 días seguidos.",
+      "scholarDesc": "Alcanza el nivel 5.",
+      "masterDesc": "Alcanza el nivel 10.",
+      "allRounder": "Todoterreno",
+      "allRounderDesc": "Juega un cuestionario de cada categoría."
+    },
+    "flawless": "Impecable",
+    "avatar": {
+      "lam": "Cordero",
+      "leeuw": "León",
+      "duif": "Paloma",
+      "uil": "Búho",
+      "hert": "Ciervo",
+      "os": "Buey",
+      "zand": "Arena",
+      "lapis": "Lapislázuli",
+      "klei": "Arcilla",
+      "olijf": "Oliva",
+      "roos": "Rosa",
+      "leisteen": "Pizarra",
+      "perkament": "Pergamino",
+      "hemel": "Cielo",
+      "salie": "Salvia",
+      "zonsopgang": "Amanecer",
+      "nacht": "Noche",
+      "blos": "Rubor",
+      "geen": "Ninguno",
+      "bril": "Gafas",
+      "pet": "Gorra",
+      "sjaal": "Bufanda",
+      "kroon": "Corona",
+      "mascot": "Mascota",
+      "describe": "{character} con {accessory}"
+    },
+    "mp": {
+      "roomNotFound": "Sala no encontrada. Revisa el código e inténtalo de nuevo.",
+      "roomFull": "Esta sala está llena.",
+      "started": "Este cuestionario ya ha empezado.",
+      "finished": "Este cuestionario ya ha terminado.",
+      "notIn": "No formas parte de esta sala.",
+      "notHost": "Solo el anfitrión puede hacer esto.",
+      "minPlayers": "Hacen falta al menos 2 jugadores para empezar.",
+      "mismatch": "La pregunta ha cambiado. Actualiza la página.",
+      "answered": "Ya enviaste una respuesta.",
+      "notRunning": "El cuestionario no está en marcha ahora mismo.",
+      "invalid": "Datos no válidos. Revisa tus datos.",
+      "expired": "Tu sesión ha caducado. Inicia sesión de nuevo.",
+      "quizGone": "El cuestionario elegido ya no existe.",
+      "server": "Algo salió mal en el servidor. Inténtalo de nuevo.",
+      "unexpected": "Ocurrió un error inesperado."
+    },
+    "sub": {
+      "trialing": "Prueba",
+      "active": "Activa",
+      "pastDue": "El pago falló, lo intentaremos de nuevo",
+      "unpaid": "Sin pagar",
+      "canceled": "Terminada",
+      "incomplete": "Incompleta",
+      "expired": "Caducada",
+      "paused": "En pausa",
+      "processing": "Procesando",
+      "lifetime": "Activa de por vida"
+    },
+    "lb": {
+      "player": "Jugador",
+      "beginner": "Principiante"
+    },
+    "season": {
+      "start": {
+        "title": "Nueva temporada",
+        "desc": "Vuelve a empezar la temporada del club. Un paquete de preguntas para abrirla juntos."
+      },
+      "lent": {
+        "title": "Cuaresma",
+        "desc": "Del Miércoles de Ceniza a la Pascua: cuarenta días de camino hacia la historia de la Pascua."
+      },
+      "advent": {
+        "title": "Adviento",
+        "desc": "Cuatro semanas de cuenta atrás hacia la Navidad, con un cuestionario cada semana."
+      }
+    },
+    "review": {
+      "unknown": "Desconocido",
+      "strong": "Resultado sólido",
+      "base": "Buena base",
+      "growth": "Claro margen de mejora",
+      "rec": {
+        "perfect": "Todas las preguntas respondidas correctamente. Un cuestionario más difícil u otro libro de la Biblia es el siguiente paso lógico.",
+        "strong": "Conoces bien este cuestionario. Repasa las preguntas que fallaste para lograr un resultado impecable.",
+        "base": "Vas por buen camino. Concéntrate en las preguntas que fallaste y compara la explicación con las referencias bíblicas.",
+        "growth": "Dedica tiempo a la explicación de cada pregunta y lee los pasajes bíblicos mencionados. Un nuevo intento suele traer un progreso rápido."
+      }
+    },
+    "rec": {
+      "ot": "Antiguo Testamento",
+      "nt": "Nuevo Testamento",
+      "gospels": "Evangelios",
+      "prophets": "Profetas",
+      "wisdom": "Sabiduría y Proverbios",
+      "people": "Personajes bíblicos",
+      "easy": "fácil",
+      "medium": "media",
+      "hard": "difícil",
+      "daily": "a diario",
+      "weekly": "cada semana",
+      "monthly": "cada mes",
+      "rarely": "de vez en cuando",
+      "depth": "Más profundidad",
+      "short": "Corto y compacto",
+      "unplayed": "Aún sin jugar",
+      "partInterest": "tu interés en {list}",
+      "partLevel": "tu nivel ({level})",
+      "partRhythm": "tu ritmo de lectura ({frequency})",
+      "joinLast": "{head} y {last}",
+      "basedOn": "Seleccionado según {sentence}.",
+      "reasonInterest": "Interés: {name}",
+      "reasonLevel": "Nivel: {level}"
+    },
+    "group": {
+      "unknownUser": "Usuario desconocido.",
+      "unknownRoom": "Sala desconocida.",
+      "roomGone": "Esta sala ya no existe.",
+      "notPlayed": "No jugaste en esta sala.",
+      "minTwo": "Un grupo necesita al menos dos jugadores.",
+      "defaultName": "Mi grupo de juego",
+      "unknown": "Grupo desconocido.",
+      "nameShort": "Elige un nombre de al menos dos caracteres.",
+      "ownerRename": "Solo el propietario puede renombrar el grupo.",
+      "gone": "Este grupo ya no existe.",
+      "ownerRemove": "Solo el propietario puede quitar a alguien.",
+      "notMember": "Este jugador no está en el grupo.",
+      "noAccess": "Este grupo no existe o no formas parte de él.",
+      "max": "Puedes tener como máximo {max} grupos.",
+      "namePrefix": "Grupo {title}"
+    },
+    "gl": {
+      "badCode": "Este código de grupo no es válido.",
+      "unknownCode": "No conocemos este código de grupo.",
+      "expired": "Esta licencia de grupo ha caducado. Pide al administrador que la renueve.",
+      "joinFailed": "No se pudo unir.",
+      "unknownMember": "Miembro desconocido.",
+      "notFound": "Licencia de grupo no encontrada.",
+      "adminSeat": "El administrador siempre conserva una plaza.",
+      "nameLength": "El nombre del grupo debe tener entre 2 y 60 caracteres.",
+      "defaultName": "Grupo de {name}",
+      "full": "Este grupo está completo ({seats} plazas). Pide al administrador que libere una plaza."
+    }
+  }
+}
