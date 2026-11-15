@@ -15,6 +15,23 @@ const intlIndexable = process.env.SITE_INDEXABLE === "true";
 const intlLocale = isIntlSite ? (process.env.SITE_LOCALE || "en") : "en";
 const intlBasePath = intlLocale === "en" ? undefined : `/${intlLocale}`;
 
+// intl root (English) only: each other language is its own Vercel project with
+// basePath `/xx`. Set INTL_PROXY_ES / _PT / _DE / _FR to that project's URL
+// (for example https://biblequizzes-es.vercel.app) and the root project forwards
+// biblequizzes.app/es/... to it. Unset means no proxy for that language yet.
+const intlProxies =
+  isIntlSite && intlLocale === "en"
+    ? (["es", "pt", "de", "fr"] as const).flatMap((l) => {
+        const target = process.env[`INTL_PROXY_${l.toUpperCase()}`]?.replace(/\/$/, "");
+        return target
+          ? [
+              { source: `/${l}`, destination: `${target}/${l}` },
+              { source: `/${l}/:path*`, destination: `${target}/${l}/:path*` },
+            ]
+          : [];
+      })
+    : [];
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Lets client components know which site this is (see src/config/site.ts).
@@ -32,7 +49,7 @@ const nextConfig: NextConfig = {
   async rewrites() {
     if (!isIntlSite) return [];
     return {
-      beforeFiles: ROUTE_PAIRS.map(([nl, en]) => ({ source: en, destination: nl })),
+      beforeFiles: [...intlProxies, ...ROUTE_PAIRS.map(([nl, en]) => ({ source: en, destination: nl }))],
       afterFiles: [],
       fallback: [],
     };

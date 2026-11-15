@@ -99,3 +99,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - ASO per language in the stores.
 - Social: one TikTok/Instagram account per big language, content from the marketing engine. Start with en only.
 - Group licence for churches/schools/youth groups in every language.
+
+### Language proxy (biblequizzes.app/es, /pt, /de, /fr)
+- Each language: own Vercel project from this repo with `SITE=intl`, `SITE_LOCALE=<xx>`, own `MONGODB_URI`, `NEXTAUTH_URL=https://biblequizzes.app/<xx>`.
+- The English (root) project gets `INTL_PROXY_ES|PT|DE|FR=https://<that-project>.vercel.app`; `next.config.ts` then forwards `/xx/...` to it. NL is untouched (no rewrites).
