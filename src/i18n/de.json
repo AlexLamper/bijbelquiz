@@ -1,0 +1,1817 @@
+{
+  "common": {
+    "loading": "Wird geladen...",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "close": "Schließen",
+    "back": "Zurück",
+    "quiz": "Quiz",
+    "quizzes": "Quizze",
+    "book": "Buch",
+    "books": "Bücher",
+    "all": "Alle"
+  },
+  "meta": {
+    "ogLocale": "de_DE",
+    "titleDefault": "{brand} - Bibelquizze kostenlos spielen",
+    "titleTemplate": "%s | {brand}",
+    "description": "Spiele kostenlos Bibelquizze und teste dein Wissen über das Alte und das Neue Testament. Interaktive Fragen, sofortige Antworten, Ranglisten und Mehrspielermodus. Für Klein und Groß!",
+    "keywords": [
+      "Bibelquiz",
+      "Bibelquiz online",
+      "Bibelquiz kostenlos",
+      "Bibelquizze",
+      "Bibelwissen",
+      "Bibel-Trivia",
+      "christliches Quiz",
+      "Bibelfragen",
+      "Bibelstudium",
+      "Bibelspiel online",
+      "Glaubensquiz",
+      "Quiz zum Alten Testament",
+      "Quiz zum Neuen Testament",
+      "Jesus-Quiz",
+      "Bibelgeschichten",
+      "Bibelfragen und Antworten",
+      "schwere Bibelfragen",
+      "einfaches Bibelquiz",
+      "Bibelquiz für Kinder",
+      "Spiele für den Kindergottesdienst",
+      "die Bibel lernen",
+      "Bibelfrage des Tages",
+      "christliche Spiele",
+      "Bibelchallenge"
+    ],
+    "ogTitle": "{brand} - Bibelquizze kostenlos spielen",
+    "ogDescription": "Teste dein Bibelwissen mit kostenlosen interaktiven Quizzen. Steige in der Rangliste auf, sammle XP und lerne mehr über Gottes Wort. Jetzt starten!",
+    "ogImageAlt": "{brand} - Kostenlose Bibelquizze",
+    "twitterTitle": "{brand} - Bibelquizze kostenlos spielen",
+    "twitterDescription": "Teste dein Bibelwissen mit kostenlosen interaktiven Quizzen und steige in der Rangliste auf.",
+    "aboutStudieName": "Bibelstudium",
+    "knowsAbout": [
+      "Bibelwissen",
+      "Bibelstudium",
+      "Digitale Bibelplattformen"
+    ]
+  },
+  "bq": {
+    "brand": {
+      "wordA": "Bibel",
+      "wordB": "quizze"
+    },
+    "nav": {
+      "quizzes": "Quizze",
+      "playTogether": "Gemeinsam spielen",
+      "leaderboard": "Rangliste",
+      "premium": "Premium",
+      "groupLicense": "Gruppenlizenz",
+      "help": "Hilfe",
+      "contact": "Kontakt",
+      "privacy": "Datenschutzerklärung",
+      "terms": "AGB",
+      "deleteAccount": "Konto löschen",
+      "dashboard": "Übersicht",
+      "profile": "Profil",
+      "settings": "Einstellungen",
+      "admin": "Verwaltung",
+      "groupPlay": "Spielen",
+      "groupLegal": "Rechtliches",
+      "mainMenu": "Hauptmenü",
+      "menu": "Menü",
+      "menuOpen": "Menü öffnen",
+      "menuClose": "Menü schließen"
+    },
+    "auth": {
+      "login": "Anmelden",
+      "startFree": "Kostenlos starten",
+      "logout": "Abmelden",
+      "player": "Spieler"
+    },
+    "footer": {
+      "tagline": "Teste dein Bibelwissen mit kurzen Quizzen.",
+      "copyright": "© {year} {brand}"
+    },
+    "header": {
+      "daysInARow": "{count} Tage in Folge",
+      "xp": "{value} XP",
+      "numberLocale": "de-DE"
+    },
+    "logo": {
+      "homeLabel": "{brand}, zur Startseite"
+    },
+    "stores": {
+      "appStoreEyebrow": "Laden im",
+      "googlePlayEyebrow": "Jetzt bei"
+    },
+    "premiumLock": {
+      "title": "Erklärungen gibt es mit Premium",
+      "description": "Lies, warum jede Antwort richtig ist, mit dem Bibeltext daneben.",
+      "button": "Premium",
+      "placeholder": [
+        "Die Erklärung zu dieser Antwort erzählt dir, was in der Bibelstelle geschieht und warum diese Antwort die richtige ist.",
+        "Mit Premium liest du zu jeder Frage die Erklärung und den Bibeltext, so oft du willst.",
+        "So behältst du die Geschichte besser und lernst bei jedem Quiz etwas Neues."
+      ]
+    },
+    "quiz": {
+      "questionOne": "Frage",
+      "questionMany": "Fragen",
+      "minutesShort": "Min.",
+      "metaLine": "{count} {unit} · {mins} {min}",
+      "answeredOf": "{answered} von {total} Fragen",
+      "questionProgress": "Frage {current} von {total}"
+    },
+    "theme": {
+      "label": "Design",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    },
+    "a11y": {
+      "close": "Schließen",
+      "answers": "Antworten",
+      "breadcrumbs": "Brotkrümelnavigation"
+    }
+  },
+  "landing": {
+    "hero": {
+      "visualAlt": "Beispiel: eine Frage zu Johannes 6 mit richtiger Antwort und Erklärung, ein Raum mit 6 Spielern, gesammelte XP und eine 6-Tage-Serie",
+      "ref": "JOHANNES 6",
+      "question": "Wie viele Brote hatte der Junge?",
+      "answers": [
+        "3",
+        "5",
+        "7",
+        "12"
+      ],
+      "correct": "5",
+      "good": "Richtig!",
+      "explanation": "Andreas brachte einen Jungen zu Jesus, der fünf Gerstenbrote und zwei Fische hatte.",
+      "readRef": "Johannes 6,9 lesen",
+      "playersInRoom": "Spieler im Raum",
+      "titleA": "Wie gut kennst du",
+      "titleB": "die Bibel?",
+      "lead": "Kurze Quizze zu jedem Buch der Bibel, mit einer Erklärung zu jeder Antwort. Spiele allein oder in der Gruppe mit Familie, Freunden oder deiner Gemeinde.",
+      "cta": "Kostenlos starten",
+      "noAccount": "3 Quizze gratis, ohne Konto",
+      "orApp": "Oder spiele in der App"
+    },
+    "how": {
+      "title": "So funktioniert {brand}",
+      "subtitle": "Allein oder in der Gruppe, mit denselben kurzen Quizzen.",
+      "playTitle": "Spiele ein Quiz",
+      "playText": "Zehn Fragen zu einer Bibelstelle. Nach jeder Antwort liest du die Erklärung und den Bibeltext.",
+      "sampleExplanation": "Noah baute die Arche aus Zypressenholz, so wie Gott es ihm geboten hatte.",
+      "sampleRead": "1. Mose 6,14 lesen",
+      "togetherTitle": "Gemeinsam spielen",
+      "togetherText": "Öffne einen Raum und teile den Code. Bis zu 20 Spieler treten bei, jeder mit seinem eigenen Handy.",
+      "roomCode": "Raumcode",
+      "playersJoin": "14 Spieler sind beigetreten"
+    },
+    "books": {
+      "title": "Quizze zu jedem Buch der Bibel",
+      "countQuizzes": "{count} Quizze",
+      "noCountQuizzes": "Quizze",
+      "subtitle": "{quizzes} zum Alten und Neuen Testament, nach Buch und nach Thema.",
+      "all": "Alle Quizze",
+      "oldTestament": "Altes Testament",
+      "newTestament": "Neues Testament",
+      "bookCount": "{count} Bücher",
+      "more": "+ {count} weitere"
+    },
+    "group": {
+      "title": "Spiele in der Gruppe",
+      "subtitle": "Für Familie, Jugendkreis, Kindergottesdienst oder Klasse. Eine Person öffnet einen Raum, die anderen treten mit dem Code bei.",
+      "step1Title": "Raum öffnen",
+      "step1Text": "Wähle ein Quiz und öffne den Raum am Handy oder Computer.",
+      "step2Title": "Code teilen",
+      "step2Text": "Lies den 6-stelligen Code vor oder zeige ihn auf dem Bildschirm.",
+      "step3Title": "Gleichzeitig spielen",
+      "step3Text": "Alle beantworten dieselbe Frage. Die Rangliste aktualisiert sich live.",
+      "start": "Einen Raum öffnen",
+      "license": "Gruppenlizenz für Gemeinden und Schulen",
+      "roomAlt": "Beispiel eines Raums mit dem Code K7P2QM: 14 Spieler, Frage 6 von 10, Lotte liegt vorn",
+      "room": "Raum",
+      "players": "14 Spieler",
+      "questionOf": "Frage 6 von 10",
+      "standings": "Rangliste",
+      "others": "und 9 weitere Spieler",
+      "names": [
+        "Lotte",
+        "Daan",
+        "Alex",
+        "Noor",
+        "Ruben"
+      ]
+    },
+    "premium": {
+      "title": "Spiele ohne Grenzen mit Premium",
+      "subtitle": "Deine ersten 3 Quizze sind kostenlos. Mit Premium spielst du alles, so oft du willst.",
+      "benefits": [
+        "Alle Quizze, so oft du willst",
+        "Eine Erklärung zu jeder Antwort",
+        "Sieh dir nach jedem Quiz deine Antworten noch einmal an"
+      ],
+      "view": "Premium ansehen",
+      "trial": "7 Tage kostenlos testen",
+      "alt": "Du spielst 3 Quizze gratis. Mit Premium öffnet sich jedes Buch der Bibel, auch Psalmen und Offenbarung.",
+      "quizzes": "Quizze",
+      "free": "Gratis",
+      "badge": "Mit Premium alles offen",
+      "abbrs": [
+        "1. Mo",
+        "Ps",
+        "Offb"
+      ],
+      "bookTitles": [
+        "1. Mose",
+        "Psalmen",
+        "Offenbarung"
+      ]
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "subtitle": "Deine Frage ist nicht dabei? Weitere Antworten findest du im Hilfebereich.",
+      "toHelp": "Zur Hilfe",
+      "free": {
+        "q": "Ist {brand} kostenlos?",
+        "a": "Du spielst 3 Quizze gratis, ohne Konto. Danach kannst du Premium abschließen. Das Spielen in der Gruppe mit Familie oder Freunden ist immer kostenlos."
+      },
+      "account": {
+        "q": "Brauche ich ein Konto?",
+        "a": "Zum Einstieg nicht. Mit einem Konto behältst du deine XP und deine Serie. Du kannst dich mit Google, Apple oder deiner E-Mail-Adresse anmelden."
+      },
+      "translation": {
+        "q": "Welche Bibelübersetzung verwendet ihr?",
+        "a": "Bei jeder Antwort steht die Bibelstelle, damit du den Abschnitt selbst nachlesen kannst."
+      },
+      "phone": {
+        "q": "Funktioniert es auf meinem Handy?",
+        "a": "Ja. Du spielst im Browser auf jedem Gerät oder in der App für iPhone und Android."
+      },
+      "class": {
+        "q": "Kann ich mit meiner Klasse oder meinem Jugendkreis spielen?",
+        "a": "Ja. Beim Gruppenspiel treten bis zu 20 Spieler mit einem Code bei. Für Gemeinden, Schulen und Jugendgruppen gibt es eine Gruppenlizenz."
+      },
+      "cancel": {
+        "q": "Wie kündige ich Premium?",
+        "a": "Jederzeit, unter Profil und dann Premium. Du behältst Premium bis zum Ende des bereits bezahlten Zeitraums."
+      }
+    },
+    "closing": {
+      "title": "Bereit für dein erstes Quiz?",
+      "text": "Spiele direkt im Browser oder lade die App herunter. Deine ersten 3 Quizze sind kostenlos.",
+      "readMore": "Möchtest du nach einem Quiz weiterlesen?",
+      "readMoreAfter": "bietet dir das passende Kapitel, vom selben Team."
+    }
+  },
+  "help": {
+    "title": "Wie können wir dir helfen?",
+    "searchLabel": "In der Hilfe suchen",
+    "searchPlaceholder": "In der Hilfe suchen",
+    "popular": "Beliebte Suchen:",
+    "topics": "Themen",
+    "allFaq": "Alle häufigen Fragen",
+    "faqTitle": "Häufige Fragen",
+    "faqSubtitle": "Die Fragen, die wir am häufigsten bekommen.",
+    "results": "Suchergebnisse",
+    "resultsOne": "1 Antwort für \"{query}\".",
+    "resultsMany": "{count} Antworten für \"{query}\".",
+    "noAnswer": "Darauf haben wir noch keine Antwort. {link}, dann helfen wir dir.",
+    "askQuestion": "Stelle deine Frage",
+    "topic": {
+      "start": {
+        "title": "Erste Schritte",
+        "text": "Konto erstellen, anmelden und dein erstes Quiz"
+      },
+      "quizzen": {
+        "title": "Quizze und Erklärungen",
+        "text": "Quizze spielen, Erklärungen und Bibelstellen"
+      },
+      "samen": {
+        "title": "Gemeinsam spielen",
+        "text": "Einen Raum öffnen und mit einem Code beitreten"
+      },
+      "premium": {
+        "title": "Premium und Zahlungen",
+        "text": "Preise, Kündigung und die Gruppenlizenz"
+      },
+      "account": {
+        "title": "Konto und Datenschutz",
+        "text": "Deine Daten und das Löschen deines Kontos"
+      }
+    },
+    "popularSearches": {
+      "cancel": "Premium kündigen",
+      "join": "Mit einem Code beitreten"
+    },
+    "q": {
+      "free": {
+        "q": "Ist {brand} kostenlos?",
+        "a": "Du spielst 3 Quizze gratis, ohne Konto. Das Spielen in der Gruppe ist immer kostenlos. Wenn du alle Quizze und die Erklärung zu jeder Antwort möchtest, kannst du Premium abschließen."
+      },
+      "group": {
+        "q": "Wie starte ich eine Runde für meine Gruppe?",
+        "a": "Gehe zu Gemeinsam spielen, wähle Raum erstellen und such ein Quiz aus. Teile den 6-stelligen Code mit deiner Gruppe. Bis zu 20 Spieler treten bei, jeder mit seinem eigenen Handy."
+      },
+      "xp": {
+        "q": "Wie funktionieren XP und Level?",
+        "a": "Für jede richtige Antwort bekommst du XP. Mit genug XP steigst du ein Level auf. Die Rangliste zeigt, wie du abschneidest, in diesem Monat und seit Beginn."
+      },
+      "translation": {
+        "q": "Welche Bibelübersetzung verwendet ihr?",
+        "a": "Bei jeder Antwort steht die Bibelstelle, damit du den Abschnitt selbst nachlesen kannst."
+      },
+      "cancel": {
+        "q": "Wie kündige ich Premium?",
+        "a": "Unter Profil und dann Premium. Du behältst Premium bis zum Ende des bereits bezahlten Zeitraums. Wenn du über die App zahlst, kündigst du im App Store oder bei Google Play."
+      },
+      "deleteAccount": {
+        "q": "Wie lösche ich mein Konto?",
+        "a": "In der App über dein Profil oder über {link}. Wir löschen dein Profil, deinen Fortschritt und deine Ergebnisse. Das lässt sich danach nicht mehr rückgängig machen.",
+        "text": "In der App über dein Profil oder über Konto löschen. Wir löschen dein Profil, deinen Fortschritt und deine Ergebnisse. Das lässt sich danach nicht mehr rückgängig machen.",
+        "link": "Konto löschen"
+      },
+      "studie": {
+        "q": "Wo kann ich mehr über eine Bibelstelle lesen?",
+        "a": "Im {studie}, vom selben Team. Dort liest du jedes Kapitel mit einer Erklärung. {about}",
+        "text": "Im Bibelstudium, vom selben Team. Dort liest du jedes Kapitel mit einer Erklärung.",
+        "about": "Was ist das Bibelstudium?"
+      },
+      "needAccount": {
+        "q": "Brauche ich ein Konto?",
+        "a": "Zum Einstieg nicht. Mit einem Konto behältst du deine XP und deine Serie. {link} oder melde dich mit Google, Apple oder deiner E-Mail-Adresse an.",
+        "text": "Zum Einstieg nicht. Mit einem Konto behältst du deine XP und deine Serie. Du kannst dich mit Google, Apple oder deiner E-Mail-Adresse anmelden.",
+        "link": "Erstelle ein Konto"
+      },
+      "phone": {
+        "q": "Funktioniert es auf meinem Handy?",
+        "a": "Ja. Du spielst im Browser auf jedem Gerät oder in der App für iPhone und Android."
+      },
+      "explanation": {
+        "q": "Warum sehe ich die Erklärung nicht?",
+        "a": "Die Erklärung zu jeder Antwort gehört zu {link}. Ohne Premium siehst du bei jeder Frage weiterhin die Bibelstelle, damit du sie selbst nachlesen kannst.",
+        "text": "Die Erklärung zu jeder Antwort gehört zu Premium. Ohne Premium siehst du bei jeder Frage weiterhin die Bibelstelle, damit du sie selbst nachlesen kannst.",
+        "link": "Premium"
+      },
+      "mistake": {
+        "q": "Ich sehe einen Fehler in einer Frage. Was tue ich?",
+        "a": "Melde ihn uns über {link}. Nenne das Quiz und die Frage, dann prüfen wir es.",
+        "text": "Melde ihn uns über Problem melden. Nenne das Quiz und die Frage, dann prüfen wir es.",
+        "link": "Problem melden"
+      },
+      "class": {
+        "q": "Kann ich mit meiner Klasse oder meinem Jugendkreis spielen?",
+        "a": "Ja. Beim Gruppenspiel treten bis zu 20 Spieler mit einem Code bei. Für Gemeinden, Schulen und Jugendgruppen gibt es eine {link}.",
+        "text": "Ja. Beim Gruppenspiel treten bis zu 20 Spieler mit einem Code bei. Für Gemeinden, Schulen und Jugendgruppen gibt es eine Gruppenlizenz.",
+        "link": "Gruppenlizenz"
+      },
+      "privacy": {
+        "q": "Was macht ihr mit meinen Daten?",
+        "a": "Wir verwenden deine Daten, um dein Konto und deinen Fortschritt zu verwalten. Wir verkaufen sie niemals an Dritte. Alles steht in der {link}.",
+        "text": "Wir verwenden deine Daten, um dein Konto und deinen Fortschritt zu verwalten. Wir verkaufen sie niemals an Dritte. Alles steht in der Datenschutzerklärung.",
+        "link": "Datenschutzerklärung"
+      },
+      "api": {
+        "q": "Was ist die BijbelAPI?",
+        "a": "BijbelQuiz ist mit der niederländischen {link} gebaut.",
+        "text": "BijbelQuiz ist mit der niederländischen BijbelAPI gebaut."
+      }
+    }
+  },
+  "contactForm": {
+    "name": "Name",
+    "namePlaceholder": "Dein Name",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "name@beispiel.de",
+    "subject": "Betreff",
+    "subjectPlaceholder": "Wähle einen Betreff",
+    "message": "Nachricht",
+    "messageHint": "Geht es um einen Fehler? Nenne die Seite oder das Quiz und was du getan hast.",
+    "messagePlaceholder": "Wie können wir dir helfen?",
+    "title": "Nachricht senden",
+    "submit": "Nachricht senden",
+    "sentTitle": "Nachricht gesendet",
+    "sentDefault": "Danke, wir haben deine Nachricht erhalten.",
+    "sentNote": "Wir antworten normalerweise innerhalb von 1 bis 2 Werktagen an {email}.",
+    "another": "Weitere Nachricht senden",
+    "errNetworkDefault": "Beim Senden ist etwas schiefgegangen. Versuche es erneut.",
+    "privacy": "Wir verwenden deine Daten nur, um deine Frage zu beantworten. Lies die {link}.",
+    "privacyLink": "Datenschutzerklärung",
+    "errName": "Gib deinen Namen ein.",
+    "errEmail": "Gib eine gültige E-Mail-Adresse ein.",
+    "errSubject": "Wähle einen Betreff.",
+    "errMessage": "Schreibe etwas mehr, mindestens 10 Zeichen."
+  },
+  "bugForm": {
+    "what": "Was ist schiefgelaufen?",
+    "whatPlaceholder": "Zum Beispiel: Ich habe auf ein Quiz zu 1. Mose geklickt und bin auf dieser Seite gelandet.",
+    "page": "Seite",
+    "email": "E-Mail-Adresse",
+    "optional": "(optional)",
+    "emailPlaceholder": "Falls du eine Antwort möchtest",
+    "submit": "Meldung senden",
+    "sentDefault": "Danke. Deine Meldung wurde gesendet.",
+    "sentWithEmail": "Wir melden uns, wenn wir mehr Details brauchen oder wenn es behoben ist.",
+    "sentNoEmail": "Wir kümmern uns darum.",
+    "another": "Etwas anderes melden",
+    "errMessage": "Schreibe etwas mehr, mindestens 10 Zeichen.",
+    "errEmail": "Gib eine gültige E-Mail-Adresse ein oder lass das Feld leer.",
+    "errDefault": "Beim Senden ist etwas schiefgegangen. Versuche es erneut."
+  },
+  "support": {
+    "honeypot": "Lass dieses Feld leer",
+    "noConnection": "Keine Verbindung. Prüfe dein Internet und versuche es erneut."
+  },
+  "errorScreen": {
+    "kicker": "FRAGE 404",
+    "report": "Dieses Problem melden",
+    "home": "Zur Startseite",
+    "where": "Wohin möchtest du?",
+    "title": "Stimmt etwas nicht?",
+    "text": "Melde es uns, dann beheben wir es. Erzähle uns, was du getan hast, was nicht funktioniert hat und auf welcher Seite es passiert ist.",
+    "mail": "Lieber per E-Mail?"
+  },
+  "legal": {
+    "tabsLabel": "Rechtliche Dokumente",
+    "privacy": "Datenschutzerklärung",
+    "terms": "AGB",
+    "onThisPage": "Auf dieser Seite"
+  },
+  "promo": {
+    "copy": "Kopieren",
+    "copied": "Kopiert"
+  },
+  "browse": {
+    "countLabelOne": "{count} Quiz",
+    "countLabelMany": "{count} Quizze",
+    "season": {
+      "endsToday": "Endet heute",
+      "oneDay": "Noch 1 Tag",
+      "days": "Noch {days} Tage",
+      "kicker": "SAISON · {countdown}",
+      "questions": "{count} Fragen",
+      "all": "Alles aus dieser Saison"
+    },
+    "detail": {
+      "readPill": "{label} lesen",
+      "readFirst": "Lies zuerst {label}",
+      "modalDescription": "Lies das Kapitel in deinem Tempo. Die Fragen drehen sich darum.",
+      "start": "Quiz starten",
+      "failed": "Dieses Kapitel konnte gerade nicht geladen werden. Du kannst das Quiz einfach starten.",
+      "translation": "Bibeltext",
+      "freeLeftOne": "Noch {value} Gratis-Quiz übrig",
+      "freeLeftMany": "Noch {value} Gratis-Quizze übrig"
+    },
+    "dash": {
+      "quizOfDay": "Quiz des Tages",
+      "quizOfDayKicker": "QUIZ DES TAGES",
+      "playNow": "Jetzt spielen",
+      "pickTopic": "Wähle ein Thema",
+      "yourProgress": "Dein Fortschritt",
+      "level": "Level {level}",
+      "xpCollected": "{xp} XP gesammelt",
+      "highestLevel": "Höchstes Level",
+      "progressToLevel": "Fortschritt zu Level {level}",
+      "reachedHighest": "Du hast das höchste Level erreicht",
+      "xpToLevel": "{xp} XP bis Level {level}",
+      "dayStreak": "Tage in Folge",
+      "daysStreak": "Tage in Folge",
+      "quizPlayed": "Quiz gespielt",
+      "quizzesPlayed": "Quizze gespielt",
+      "chapter": "Kapitel {chapter}",
+      "continue": "Weiterspielen",
+      "bookProgress": "{played} von {total} Quizzen aus {book} gespielt",
+      "duelAria": "Duell mit {name}, du bist dran",
+      "yourTurn": "DU BIST DRAN",
+      "waiting": "{name} wartet auf dich",
+      "duelLine": "Duell · {mine} - {theirs} · Runde {round}",
+      "play": "Spielen",
+      "playTurnAria": "Spiele deinen Zug gegen {name}"
+    },
+    "browser": {
+      "title": "Quizze",
+      "lead": "Wähle ein Buch der Bibel oder ein Thema. Zu jeder Antwort bekommst du eine Erklärung und den Bibeltext.",
+      "searchAria": "Nach einem Quiz suchen",
+      "searchPlaceholder": "Suche ein Buch oder Thema",
+      "filter": "Filtern",
+      "chipAll": "Alle",
+      "chipOt": "Altes Testament",
+      "chipNt": "Neues Testament",
+      "chipThemes": "Themen",
+      "popular": "Beliebte Quizze",
+      "allQuizzes": "Alle Quizze",
+      "allBooksOf": "Alle Bücher des {testament}",
+      "allBooksShort": "Alle Bücher",
+      "allThemes": "Alle Themen",
+      "allNBooksOne": "Insgesamt {count} Buch",
+      "allNBooks": "Alle {count} Bücher",
+      "bookCountOne": "{count} Buch",
+      "bookCount": "{count} Bücher",
+      "noQuizzesYet": "Noch keine Quizze",
+      "noQuizzesYetText": "Sobald Quizze bereit sind, findest du sie hier.",
+      "noTestament": "Noch keine Quizze aus dem {testament}",
+      "noTestamentText": "Wähle einen anderen Filter oder suche nach einem Thema.",
+      "noResults": "Kein Quiz gefunden",
+      "noResultsText": "Nichts gefunden für \"{query}\". Versuche es mit einem Bibelbuch, einer Person oder einem anderen Wort.",
+      "clearSearch": "Suche löschen",
+      "booksSection": "Bücher der Bibel",
+      "quizzesSection": "Quizze",
+      "notFound": "Hier gibt es (noch) keine Quizze",
+      "notFoundText": "Wähle in der Übersicht ein Buch der Bibel oder ein Thema.",
+      "toAll": "Zu allen Quizzen",
+      "noThemes": "Noch keine Themen",
+      "noThemesText": "Sobald ein Themenquiz bereit ist, findest du es hier.",
+      "bannerTitle": "Gemeinsam spielen",
+      "bannerText": "Spiele live mit deiner Gruppe oder Klasse. Teile den Raumcode, bis zu {max} Spieler können beitreten."
+    }
+  },
+  "play": {
+    "verdictGood": "Richtig!",
+    "verdictGoodAria": "Richtige Antwort",
+    "verdictTime": "Die Zeit ist um",
+    "verdictBad": "Nicht ganz",
+    "verdictBadAria": "Falsche Antwort",
+    "stop": "Quiz beenden",
+    "settingsAria": "Quiz-Einstellungen",
+    "settingsTitle": "Quiz-Einstellungen",
+    "secondsLeft": "Noch {seconds} Sekunden",
+    "timeUp": "Die Zeit ist um",
+    "questionOfSr": "Frage {current} von {total}:",
+    "answerCorrectAria": "{answer}, richtige Antwort",
+    "answerWrongAria": "{answer}, deine Antwort, falsch",
+    "explanationLock": "Lies mit Premium, warum jede Antwort richtig ist.",
+    "hideRef": "{reference} ausblenden",
+    "readRef": "{reference} lesen",
+    "saving": "Wird gespeichert...",
+    "finish": "Quiz beenden",
+    "next": "Nächste Frage",
+    "saveFailed": "Dein Ergebnis konnte nicht gespeichert werden. Prüfe deine Verbindung und versuche es erneut.",
+    "translation": "Bibeltext",
+    "verseFailed": "Der Text konnte nicht geladen werden.",
+    "studieLabel": "Lies {book} {chapter} mit Erklärung im Bibelstudium",
+    "textSize": "Textgröße",
+    "sizeNormal": "Normal",
+    "sizeLarge": "Groß",
+    "timer": "Zeit pro Frage",
+    "off": "Aus",
+    "on": "An",
+    "bibleRefs": "Bibelstellen",
+    "font": "Schrift",
+    "fontRound": "Rund",
+    "fontSharp": "Eckig",
+    "showExplanation": "Erklärung anzeigen",
+    "fullscreen": "Vollbild",
+    "toggle": "An/Aus",
+    "leaveTitle": "Quiz verlassen?",
+    "leaveText": "Möchtest du wirklich aufhören? Dir könnten bis zu {xp} entgehen. Wenn du jetzt gehst, wird dein Fortschritt nicht gespeichert.",
+    "stay": "Bleiben",
+    "leave": "Quiz verlassen"
+  },
+  "passage": {
+    "back": "Zurück zu den Quizzen",
+    "readFirst": "Zuerst lesen",
+    "text": "Nimm dir Zeit für dieses Kapitel. Die folgenden Fragen drehen sich darum, Lesen hilft also wirklich.",
+    "failed": "Dieses Kapitel konnte gerade nicht geladen werden. Du kannst das Quiz einfach starten.",
+    "translation": "Bibeltext",
+    "ready": "Fertig gelesen?",
+    "start": "Quiz starten"
+  },
+  "result": {
+    "nextStep": "Nächster Schritt",
+    "ringLabel": "richtig",
+    "scoreAria": "Ergebnis {score} von {total}",
+    "tryAgain": "Guter Versuch",
+    "nicelyPlayed": "Gut gespielt",
+    "titleNamed": "{lead}, {name}",
+    "titleAnon": "{lead}!",
+    "newBest": "Neue Bestleistung",
+    "summary": "Du hast {score} von {total} Fragen in {title} richtig beantwortet.",
+    "openQuestion": "Öffne eine Frage für die Erklärung und den Bibeltext.",
+    "playedOn": "Gespielt am {date}",
+    "nextQuiz": "Nächstes Quiz",
+    "yourAnswers": "Deine Antworten",
+    "nCorrect": "{count} richtig",
+    "nWrong": "{count} falsch",
+    "question": "Frage {n}",
+    "yourAnswer": "Deine Antwort: {answer}",
+    "noAnswer": "Keine Antwort gegeben",
+    "correctAnswer": "Richtige Antwort: {answer}",
+    "noExplanation": "Zu dieser Frage gibt es keine Erklärung.",
+    "lockedTitle": "Das Durchsehen deiner Antworten gibt es mit Premium",
+    "lockedText": "Sieh, was du bei jeder Frage gewählt hast, die richtige Antwort und die Erklärung mit dem Bibeltext.",
+    "viewPremium": "Premium ansehen",
+    "xpEarned": "+{xp} XP verdient",
+    "noNewXp": "Keine neuen XP",
+    "improve": "Verbessere deine Bestleistung für mehr XP",
+    "streakOne": "{days} Tag in Folge",
+    "streakMany": "{days} Tage in Folge",
+    "playTogether": "Mit anderen spielen",
+    "replay": "Nochmal spielen",
+    "readChapter": "Das Kapitel lesen",
+    "readPassage": "Lies {book} {chapter} mit Erklärung",
+    "readMore": "Lies weiter in der Bibel",
+    "whyDifferent": "Warum war die Antwort anders?",
+    "studieText": "Im Bibelstudium liest du das ganze Kapitel mit Erklärung.",
+    "toStudie": "Zum Bibelstudium",
+    "home": "Zurück zur Startseite",
+    "guest": {
+      "noneTitle": "Kein Ergebnis gefunden",
+      "noneText": "Auf diesem Gerät gibt es kein Ergebnis für {title}. Spiele das Quiz oder melde dich an, um deine Ergebnisse zu sehen.",
+      "playQuiz": "Das Quiz spielen",
+      "saveAria": "Dein Ergebnis speichern",
+      "saveTitle": "Speichere dein Ergebnis und {xp} XP",
+      "notSaved": "Noch nicht gespeichert",
+      "saveText": "Erstelle ein kostenloses Konto oder melde dich an, dann wird dieses Ergebnis sofort hinzugefügt und zählt für dein Level, deine Serie und die Rangliste.",
+      "register": "Kostenloses Konto erstellen"
+    }
+  },
+  "samen": {
+    "you": "Du",
+    "game": {
+      "standings": "Rangliste",
+      "standingsAfter": "Rangliste nach Frage {n}",
+      "players": "Spieler",
+      "playersCount": "{count} Spieler",
+      "correctOf": "{correct} von {total} richtig",
+      "answeredOf": "{answered} von {total} haben geantwortet",
+      "playersCorrect": "Spieler mit richtiger Antwort",
+      "playersAnswered": "Spieler, die geantwortet haben",
+      "statusCorrect": "richtig",
+      "statusWrong": "falsch",
+      "statusNone": "keine Antwort",
+      "statusAnswered": "hat geantwortet",
+      "statusThinking": "überlegt noch",
+      "loadingNext": "Einen Moment, die nächste Frage lädt...",
+      "questionOf": "Frage {current} von {total}",
+      "yourAnswer": "{answer}, deine Antwort",
+      "sentHostReveal": "Deine Antwort ist abgeschickt. Zeige die Antwort, sobald alle bereit sind.",
+      "sentWaitHost": "Deine Antwort ist abgeschickt. Ob sie richtig ist, siehst du, sobald der Gastgeber die Antwort zeigt.",
+      "sentWaitAll": "Deine Antwort ist abgeschickt. Ob sie richtig ist, siehst du, sobald alle bereit sind oder die Zeit abgelaufen ist.",
+      "showAnswer": "Antwort zeigen",
+      "wellDone": "Gut gemacht!",
+      "noAnswer": "Keine Antwort",
+      "notRight": "Leider nicht richtig",
+      "correctCountOne": "{correct} von {total} Spieler hat diese Frage richtig beantwortet.",
+      "correctCountMany": "{correct} von {total} Spielern haben diese Frage richtig beantwortet.",
+      "explanation": "Erklärung",
+      "toFinal": "Zur Endwertung",
+      "autoContinue": "Weiter automatisch in {seconds} s",
+      "finalIn": "Endwertung in {seconds} s",
+      "nextIn": "Nächste Frage in {seconds} s",
+      "game": "Spiel",
+      "leaveTitle": "Spiel verlassen?",
+      "leaveText": "Deine Punkte bleiben erhalten, aber du nimmst nicht mehr an dieser Runde teil.",
+      "leave": "Spiel verlassen"
+    },
+    "offline": "offline",
+    "busy": "Wird bearbeitet...",
+    "reconnecting": "Verbindung wird wiederhergestellt...",
+    "stay": "Bleiben",
+    "questionOne": "{count} Frage",
+    "questionMany": "{count} Fragen",
+    "pointsShort": "{points} Pkt.",
+    "pointOne": "{points} Punkt",
+    "pointMany": "{points} Punkte",
+    "picker": {
+      "choose": "Wähle ein Quiz",
+      "placeholder": "Suche nach Titel, Buch oder Kategorie",
+      "clear": "Suche löschen",
+      "category": "Kategorie",
+      "all": "Alle",
+      "quizzes": "Quizze",
+      "none": "Kein Quiz gefunden. Passe deine Suche oder die Kategorie an.",
+      "count": "{shown} von {total} Quizzen"
+    },
+    "reading": {
+      "title": "Lies zuerst das Kapitel",
+      "sub": "Nimm dir Zeit. Die Fragen drehen sich darum.",
+      "failed": "Dieses Kapitel konnte gerade nicht geladen werden. Du kannst die Fragen einfach starten.",
+      "aria": "Bibeltext",
+      "start": "Fragen starten",
+      "waitHost": "Warte, bis der Gastgeber die Fragen startet."
+    },
+    "room": {
+      "loading": "Raum wird geladen",
+      "loginTitle": "Anmeldung erforderlich",
+      "loginText": "Melde dich an, um gemeinsam zu spielen.",
+      "closedTitle": "Raum nicht verfügbar",
+      "failedTitle": "Raum konnte nicht geladen werden",
+      "closedText": "Dieser Raum existiert nicht mehr oder wurde vom Gastgeber geschlossen.",
+      "failedText": "Versuche es erneut oder gehe zurück zu Gemeinsam spielen.",
+      "retry": "Erneut versuchen",
+      "back": "Zurück zu Gemeinsam spielen",
+      "refresh": "Aktualisieren"
+    },
+    "results": {
+      "saveFailed": "Die Gruppe konnte nicht gespeichert werden.",
+      "final": "Endwertung",
+      "loading": "Ergebnisse werden geladen...",
+      "top3": "Top 3",
+      "rest": "Plätze 4 bis {last}",
+      "newGame": "Neues Spiel",
+      "saveTitle": "Diese Gruppe speichern?",
+      "saveText": "Du führst mit diesen {count} Spielern deine eigene Rangliste und kannst sie nächstes Mal mit einem Klick wieder einladen.",
+      "saving": "Wird gespeichert...",
+      "save": "Gruppe speichern",
+      "no": "Nein, danke",
+      "savedNamed": "\"{name}\" ist gespeichert",
+      "saved": "Gruppe gespeichert",
+      "savedText": "Die Wertung dieser Gruppe findest du in der Rangliste.",
+      "toLeaderboard": "Zur Rangliste",
+      "continueWith": "Weiter mit {passage}",
+      "continueStudie": "Weiter mit BijbelStudie",
+      "studieChapter": "Lies das Kapitel auf BijbelStudie, mit Erklärung.",
+      "studieMore": "Lies weiter auf BijbelStudie, mit Erklärung.",
+      "playerOne": "{count} Spieler"
+    },
+    "start": {
+      "step1Title": "Raum erstellen",
+      "step1Text": "Wähle ein Quiz und die Zahl der Spieler. Du bekommst einen Code.",
+      "step2Title": "Code teilen",
+      "step2Text": "Die anderen geben den Code ein oder öffnen deine Einladung und warten im Wartezimmer.",
+      "step3Title": "Gemeinsam spielen",
+      "step3Text": "Du startest das Quiz. Alle antworten gleichzeitig und sehen sofort die Rangliste.",
+      "pickFirst": "Wähle zuerst ein Quiz.",
+      "codeLength": "Gib den Code mit {length} Zeichen ein.",
+      "chapterHintNamed": "Alle lesen {passage}, bevor die Fragen beginnen. Funktioniert nur, wenn das Quiz 1 Kapitel umfasst.",
+      "chapterHint": "Alle lesen das Kapitel, bevor die Fragen beginnen. Funktioniert nur, wenn das Quiz 1 Kapitel umfasst.",
+      "title": "Gemeinsam spielen",
+      "intro": "Alle spielen gleichzeitig dasselbe Quiz, jeder auf seinem eigenen Handy.",
+      "capacity": "Bis zu {capacity} Spieler · kostenlos, so oft du willst",
+      "stillIn": "Du bist noch in Raum {code}",
+      "resume": "Weiterspielen",
+      "createTitle": "Raum erstellen",
+      "createSub": "Du bist der Gastgeber",
+      "quiz": "Quiz",
+      "noQuizzes": "Es gibt noch keine Quizze zur Auswahl.",
+      "maxPlayers": "Maximale Spielerzahl",
+      "noTimer": "Kein Timer",
+      "seconds": "{choice} Sek.",
+      "noTimerHint": "Ohne Timer gehst du selbst zur Antwort und zur nächsten Frage weiter.",
+      "readFirst": "Zuerst das Bibelkapitel lesen",
+      "creating": "Raum wird erstellt...",
+      "joinTitle": "Mit einem Code beitreten",
+      "joinSub": "Der Gastgeber teilt einen Code mit {length} Zeichen",
+      "connecting": "Verbindung wird hergestellt...",
+      "join": "Beitreten",
+      "how": "Wie funktioniert das?"
+    },
+    "code": {
+      "group": "Raumcode, {length} Zeichen",
+      "char": "Zeichen {n} von {length}"
+    },
+    "lobby": {
+      "title": "Wartezimmer",
+      "subHost": "Starte das Quiz, sobald alle da sind.",
+      "subGuest": "Der Gastgeber startet das Quiz, sobald alle da sind.",
+      "codeAria": "Raumcode",
+      "codeLabel": "RAUMCODE",
+      "codeSpoken": "Raumcode {code}",
+      "goTo": "Gehe zu {url} und gib den Code ein",
+      "inviteCopied": "Einladung kopiert",
+      "invite": "Einladung teilen",
+      "codeCopied": "Code kopiert",
+      "copyCode": "Code kopieren",
+      "ofMax": "{count} von {max}",
+      "youHost": "Du (Gastgeber)",
+      "isOffline": "{name} ist offline",
+      "host": "Gastgeber",
+      "newPlayers": "Neue Spieler erscheinen hier automatisch.",
+      "reconnecting": "Verbindung wird wiederhergestellt - die Spielerliste wird neu abgerufen.",
+      "change": "Ändern",
+      "startAria": "Starten",
+      "enoughHost": "Genug Spieler zum Starten",
+      "enoughGuest": "Genug Spieler, warte auf den Gastgeber",
+      "needOne": "Noch {missing} Spieler nötig zum Starten",
+      "needMany": "Noch {missing} Spieler nötig zum Starten",
+      "starting": "Quiz wird gestartet...",
+      "start": "Quiz starten",
+      "guestHint": "Sobald der Gastgeber startet, gehen alle gemeinsam zur ersten Frage.",
+      "close": "Raum schließen",
+      "leave": "Raum verlassen",
+      "changeTitle": "Anderes Quiz wählen?",
+      "changeText": "Du verlässt diesen Raum und erstellst einen neuen, mit einem neuen Code. Wer schon drin ist, gibt dann den neuen Code ein.",
+      "changeConfirm": "Anderes Quiz wählen"
+    }
+  },
+  "account": {
+    "auth": {
+      "loginVisualLabel": "Beispiel: dein Quiz zu Lukas 15 steht bei 4 von 10, deine Gruppe wartet im Raum, 1.240 XP und eine 6-Tage-Serie",
+      "vLuke": "Lukas",
+      "vProdigal": "Der verlorene Sohn",
+      "vChapter": "Kapitel 15 · 4/10",
+      "vGroup": "Deine Gruppe wartet auf dich",
+      "vXp": "1.240 XP",
+      "vStreak": "6 Tage in Folge",
+      "loginTitle": "Alles ist für dich bereit",
+      "loginText": "Deine Serie und deine XP gehören zu deinem Konto. Spiele weiter auf der Website oder in der App.",
+      "regVisualLabel": "Beispiel: eine Quizfrage zu 1. Mose 7 mit der richtigen Antwort, ein Raum mit 6 Spielern, XP und eine Serie",
+      "vGenesis": "1. MOSE 7",
+      "vQuestion": "Wie viele Tage regnete es während der Sintflut?",
+      "regTitle": "Wie gut kennst du die Bibel?",
+      "vXpGain": "+15 XP",
+      "vRoom": "{n} Spieler im Raum",
+      "regBullets": [
+        "Starte kostenlos mit 3 Quizzen",
+        "Speichere deine XP, deine Serie und deine Abzeichen",
+        "Spiele gemeinsam mit Familie oder Freunden"
+      ]
+    },
+    "social": {
+      "apple": "Weiter mit Apple",
+      "google": "Weiter mit Google",
+      "or": "oder mit E-Mail"
+    },
+    "delete": {
+      "failed": "Das Löschen ist fehlgeschlagen. Versuche es erneut oder schreibe uns.",
+      "network": "Netzwerkfehler. Versuche es erneut.",
+      "confirm": "Ich verstehe, dass mein Konto und mein Fortschritt für immer verschwinden. Das lässt sich nicht rückgängig machen.",
+      "submit": "Konto endgültig löschen"
+    },
+    "cancel": "Abbrechen",
+    "profile": {
+      "badgeProgress": "{name}: {current} von {target}",
+      "showLess": "Weniger anzeigen",
+      "showAll": "Alle Erfolge",
+      "saveFailed": "Speichern fehlgeschlagen.",
+      "updated": "Profil aktualisiert",
+      "saveFailedRetry": "Speichern fehlgeschlagen. Versuche es erneut.",
+      "editTitle": "Profil bearbeiten",
+      "editText": "Dein Name und dein Avatar erscheinen in der Rangliste und beim gemeinsamen Spielen.",
+      "nameLockedOne": "Du kannst deinen Namen in {days} Tag wieder ändern.",
+      "nameLockedMany": "Du kannst deinen Namen in {days} Tagen wieder ändern.",
+      "nameHint": "Kann alle 30 Tage einmal geändert werden.",
+      "name": "Name",
+      "character": "Avatar",
+      "color": "Farbe",
+      "background": "Hintergrund",
+      "accessory": "Accessoire",
+      "statStreak": "Tage in Folge",
+      "statXp": "XP gesamt",
+      "statPlayed": "Gespielte Quizze",
+      "statAvg": "Durchschnittliches Ergebnis",
+      "levelAria": "{name}, Level {level}",
+      "maxLevel": "Höchstes Level erreicht",
+      "toNext": "{xp} XP bis Level {level}",
+      "progressTo": "Fortschritt zu Level {level}",
+      "memberSince": "Mitglied seit {date}",
+      "settings": "Einstellungen",
+      "earned": "{n} erreicht",
+      "level": "Level {level}",
+      "achievements": "Erfolge",
+      "surprise": "Überrasch mich",
+      "togetherText": "Mit Familie oder Freunden: Alle spielen gleichzeitig dasselbe Quiz, jeder auf seinem eigenen Handy.",
+      "startRoom": "Raum öffnen",
+      "stats": "Statistiken",
+      "tryPremium": "Premium testen",
+      "premiumText": "Alle Quizze und eine Erklärung zu jeder Antwort",
+      "trial": "Premium holen",
+      "verse": "Vers des Tages",
+      "edit": "Bearbeiten"
+    },
+    "save": "Speichern",
+    "settings": {
+      "interestGospels": "Evangelien",
+      "interestWisdom": "Weisheit und Sprüche",
+      "saving": "Wird gespeichert...",
+      "saveFailed": "Einstellungen konnten nicht gespeichert werden",
+      "saved": "Gespeichert",
+      "nameLength": "Der Name muss zwischen 2 und 30 Zeichen lang sein.",
+      "nameFailed": "Der Name konnte nicht gespeichert werden",
+      "nameUpdated": "Name aktualisiert",
+      "title": "Einstellungen",
+      "sub": "Änderungen werden sofort gespeichert.",
+      "account": "Konto",
+      "nameHint": "So sehen dich andere in der Rangliste und beim gemeinsamen Spielen.",
+      "email": "E-Mail-Adresse",
+      "play": "Spielen",
+      "showRefs": "Bibelstellen anzeigen",
+      "showRefsHint": "Der Bibeltext mit der Erklärung nach jeder Frage.",
+      "readFirst": "Zuerst das Kapitel lesen",
+      "readFirstHint": "Zum Beispiel Daniel 2 lesen, bevor die Fragen beginnen.",
+      "timerHint": "Standardmäßig spielst du ohne Timer.",
+      "difficulty": "Schwierigkeit",
+      "difficultyHint": "Welche Quizze du unter Quizze zuerst siehst.",
+      "all": "Alle",
+      "easy": "Leicht",
+      "hard": "Schwer",
+      "translation": "Übersetzung",
+      "translationHint": "Für den Bibeltext, den du zu einem Quiz liest.",
+      "display": "Darstellung",
+      "theme": "Design",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System",
+      "fontSize": "Schriftgröße der Fragen",
+      "fontSizeHint": "Du kannst das auch während eines Quiz ändern.",
+      "normal": "Normal",
+      "large": "Groß",
+      "recs": "Empfehlungen",
+      "recsHint": "So wählen wir die Quizze unter Für dich empfohlen aus.",
+      "freq": "Wie oft liest du die Bibel?",
+      "pickFreq": "Häufigkeit wählen",
+      "daily": "Täglich",
+      "weekly": "Wöchentlich",
+      "monthly": "Monatlich",
+      "rarely": "Hin und wieder",
+      "knowledge": "Wie schätzt du dein Wissen ein?",
+      "pickLevel": "Niveau wählen",
+      "beginner": "Anfänger",
+      "advanced": "Fortgeschritten",
+      "interests": "Interessen",
+      "billing": "Abonnement und Datenschutz",
+      "portalError": "Die Abo-Übersicht lässt sich gerade nicht öffnen. Versuche es gleich noch einmal.",
+      "privacy": "Datenschutzerklärung",
+      "logout": "Abmelden",
+      "delete": "Konto löschen",
+      "managePremium": "Premium verwalten",
+      "medium": "Mittel",
+      "intermediate": "Mittelstufe",
+      "noSubscription": "Wir haben kein Abonnement zum Verwalten gefunden. Schreibe an {email}, dann helfen wir dir.",
+      "back": "Zurück zum Profil"
+    }
+  },
+  "premium": {
+    "group": {
+      "invoiceSubject": "Gruppenlizenz - Rechnung",
+      "mailSubject": "Gruppenlizenz",
+      "codeIncomplete": "Gib den vollständigen Gruppencode ein.",
+      "joinFailed": "Beitreten hat nicht geklappt.",
+      "joinFailedRetry": "Beitreten hat nicht geklappt. Versuche es erneut.",
+      "updateFailed": "Aktualisieren hat nicht geklappt.",
+      "copied": "Gruppencode kopiert.",
+      "copyFailed": "Kopieren fehlgeschlagen. Markiere den Code selbst.",
+      "buy": "Lizenz kaufen",
+      "request": "Lizenz anfragen",
+      "loginToBuy": "Zum Kaufen anmelden",
+      "haveCode": "Ich habe einen Code",
+      "loading": "Gruppen werden geladen...",
+      "name": "Gruppenname",
+      "nameUpdated": "Gruppenname aktualisiert.",
+      "members": "Mitglieder",
+      "remove": "Entfernen",
+      "how": "So funktioniert es",
+      "howText": "In drei Schritten spielt deine ganze Gruppe mit Premium.",
+      "choose": "Wähle, was zu dir passt",
+      "chooseText": "Du spielst allein? Hol dir Premium. Du spielst mit einer Gruppe? Die Lizenz ist günstiger.",
+      "viewPremium": "Premium ansehen",
+      "gotCode": "Du hast einen Code?",
+      "gotCodeText": "Gib den Code von deiner Leitung ein. Du bekommst sofort Premium.",
+      "code": "Gruppencode",
+      "faq": "Fragen zur Lizenz",
+      "faq1q": "Kann ich per Rechnung zahlen?",
+      "faq2q": "Brauchen die Mitglieder ein Konto?",
+      "faq2a": "Ja, ein kostenloses Konto. Damit werden auch ihre XP, ihre Serie und ihr Fortschritt gespeichert.",
+      "faq3q": "Was, wenn jemand die Gruppe verlässt?",
+      "faq3a": "Du entfernst die Person selbst aus der Gruppe. Ihr Platz wird dann für jemand anderen frei.",
+      "faq4q": "Wie lange gilt die Lizenz?",
+      "forYou": "Für dich selbst",
+      "licence": "Gruppenlizenz",
+      "forGroup": "Für deinen Jugendkreis, deine Gemeinde oder Klasse",
+      "seatsUsed": "Belegte Plätze",
+      "demoName": "Code des Jugendkreises 16+",
+      "demoCode": "K7PQ2M",
+      "demoJoin": "Noor tritt bei",
+      "active": "Premium aktiv",
+      "cancelled": "Gekündigt",
+      "expired": "Abgelaufen",
+      "oneAccount": "1 Konto",
+      "allQuizzes": "Alle Quizze und die Erklärung zu jeder Antwort",
+      "b2": "Alle haben Premium, auch zu Hause",
+      "b3": "Du siehst, wer teilnimmt",
+      "b4": "Du kannst auch per Rechnung zahlen",
+      "s1": "Lizenz kaufen",
+      "s1t": "Online bezahlen oder eine Rechnung anfordern.",
+      "s2": "Code teilen",
+      "s2t": "Lies den Code vor oder schicke ihn in den Gruppenchat.",
+      "s3": "Alle spielen mit Premium",
+      "s3t": "Die Mitglieder geben den Code ein und haben sofort alles freigeschaltet.",
+      "joined": "Du gehörst jetzt zu {name}.",
+      "titleA": "Premium für",
+      "titleB": "deine ganze Gruppe",
+      "intro": "Eine Lizenz, ein Code. Bis zu {seats} Personen spielen mit Premium, jede auf ihrem eigenen Handy.",
+      "priceLine": "{price} pro Jahr für {seats} Plätze. Du kannst auch per Rechnung zahlen.",
+      "yourGroup": "Deine Gruppe",
+      "yourGroupShort": "Deine Gruppe",
+      "codeOf": "Code von {name}",
+      "copyAria": "Gruppencode {code} kopieren",
+      "seatsOf": "{used} von {seats} Plätzen",
+      "until": "Gültig bis {date}",
+      "owner": " (Leitung)",
+      "removed": "{name} wurde aus der Gruppe entfernt.",
+      "membership": "Du gehörst zu {name}",
+      "viaGroup": "Du hast Premium über diese Gruppe.",
+      "viaGroupUntil": "Du hast Premium über diese Gruppe bis {date}.",
+      "trial": "{days} Tage kostenlos testen",
+      "b1": "{seats} Plätze mit einem Code",
+      "faqMail": "Deine Frage fehlt? Schreibe an",
+      "faq1a": "Ja. {mail} den Namen deiner Gruppe und die Rechnungsadresse, dann schicken wir dir eine Rechnung. Nach der Zahlung erhältst du den Code.",
+      "faq1mail": "Schreibe uns",
+      "faq4a": "Ein Jahr. In deiner {overview} siehst du, bis wann, und wer teilnimmt.",
+      "overview": "Gruppenübersicht",
+      "illustration": "Eine Gruppenlizenz: ein Code für die ganze Gruppe, 12 der {seats} Plätze sind belegt.",
+      "demoSeats": "12 von {seats} Plätzen"
+    },
+    "perYear": "pro Jahr",
+    "trialOne": "{days} Tag gratis",
+    "trialMany": "{days} Tage gratis",
+    "tryTrial": "{trial} testen",
+    "buyLifetime": "Lebenslanges Premium kaufen",
+    "start": "Premium starten",
+    "payNothing": "Heute zahlst du nichts.",
+    "payNothingReminder": "Heute zahlst du nichts. Erinnerung an Tag {day}.",
+    "oneOff": "Einmal zahlen, kein Abonnement.",
+    "cancelAnytime": "Jederzeit kündbar.",
+    "checkoutCancelled": "Deine Zahlung wurde nicht abgeschlossen. Wähle jederzeit erneut.",
+    "choosePlan": "Wähle einen Tarif",
+    "yearly": "Jährlich",
+    "monthly": "Monatlich",
+    "perWeek": "pro Woche",
+    "perMonth": "pro Monat",
+    "lifetime": "Lebenslanges Premium",
+    "orLifetime": "Oder einmalig: lebenslanges Premium",
+    "lifetimeOnce": "{price} einmalig",
+    "save": "{savings} % sparen",
+    "lifetimeWeekly": "{weekly} pro Woche über {years} Jahre",
+    "preview": {
+      "genShort": "1. Mo",
+      "genesis": "1. Mose",
+      "ot": "Altes Testament",
+      "psShort": "Ps",
+      "psalms": "Psalmen",
+      "revShort": "Offb",
+      "revelation": "Offenbarung",
+      "nt": "Neues Testament",
+      "openAria": "Alle Quizze sind jetzt offen, auch Psalmen und Offenbarung",
+      "lockedAria": "Du spielst 3 Quizze gratis. Mit Premium öffnen sich alle Bücher der Bibel, auch Psalmen und Offenbarung.",
+      "quizzes": "Quizze",
+      "open": "Offen",
+      "free": "Gratis",
+      "premium": "Premium",
+      "active": "Premium ist aktiv",
+      "all": "Mit Premium alles offen"
+    },
+    "benefits": [
+      "Alle Quizze, so oft du willst",
+      "Eine Erklärung zu jeder Antwort",
+      "Sieh dir nach jedem Quiz deine Antworten noch einmal an"
+    ]
+  },
+  "pages": {
+    "account-verwijderen": {
+      "title": "Konto löschen | Bibelquizze",
+      "description": "Lösche dein Bibelquizze-Konto und die dazugehörigen Daten oder sende eine Anfrage per E-Mail."
+    },
+    "bijbelstudie": {
+      "title": "BijbelStudie: die Bibel mit Erklärung lesen",
+      "description": "BijbelStudie kommt vom Team hinter Bibelquizze. Lies jedes Kapitel mit Kommentar, folge geführten Studien und frage einen KI-Assistenten. Kostenlos nutzbar.",
+      "ogTitle": "BijbelStudie, vom Team hinter Bibelquizze",
+      "ogDescription": "Das Quiz stellt die Frage. BijbelStudie gibt dir das Kapitel."
+    },
+    "contact": {
+      "title": "Kontakt und häufige Fragen | Bibelquizze Support",
+      "description": "Hast du eine Frage zu Bibelquizze? Sieh dir die häufigen Fragen an oder nimm Kontakt auf. Wir helfen gern.",
+      "ogTitle": "Kontakt - Bibelquizze",
+      "ogDescription": "Stelle deine Frage oder finde Antworten auf der Supportseite."
+    },
+    "dashboard": {
+      "title": "Übersicht - Bibelquizze",
+      "description": "Deine persönliche Bibelquiz-Übersicht."
+    },
+    "duel-token": {
+      "title": "Du wurdest zu einem Duell herausgefordert - Bibelquizze"
+    },
+    "duels-id": {
+      "title": "Duell - Bibelquizze"
+    },
+    "foutmelding": {
+      "title": "Problem melden | Bibelquizze Support",
+      "description": "Melde technische Probleme oder Fehler in Bibelquizze, damit wir sie schnell beheben können."
+    },
+    "groepslicentie": {
+      "title": "Gruppenlizenz | Bibelquizze für Gemeinden und Schulen",
+      "description": "Premium für deine ganze Gruppe: eine Lizenz, ein Code. Bis zu {seats} Personen spielen mit Premium, jede auf ihrem eigenen Handy. Für Jugendgruppen, Gemeinden und Klassen.",
+      "ogTitle": "Bibelquizze Gruppenlizenz",
+      "ogDescription": "Premium für deine ganze Gruppe mit einem Code, den du einfach vorliest."
+    },
+    "hulp": {
+      "title": "Hilfe und Support | Bibelquizze Hilfecenter",
+      "description": "Finde Antworten zu Problemen, Zahlungen und Spielregeln bei Bibelquizze."
+    },
+    "inloggen": {
+      "title": "Anmelden | Bibelquizze - Lerne weiter",
+      "description": "Melde dich bei deinem Bibelquizze-Konto an. Sieh deine Statistiken, setze unfertige Quizze fort und behalte deine Serie.",
+      "ogTitle": "Bei Bibelquizze anmelden",
+      "ogDescription": "Willkommen zurück! Melde dich an, um weiterzuspielen."
+    },
+    "instellingen": {
+      "title": "Einstellungen | Bibelquizze",
+      "description": "Verwalte deine persönlichen Einstellungen und Kontoeinstellungen."
+    },
+    "home": {
+      "title": "Bibelquizze - Kostenlose Bibelquizze online",
+      "description": "Teste dein Bibelwissen mit Hunderten kostenloser Fragen. Von leichten Quizzen für Anfänger bis zu tiefgehenden Studien für Fortgeschrittene. Jetzt starten!",
+      "ogTitle": "Bibelquizze - Teste dein Bibelwissen kostenlos",
+      "ogDescription": "Wie gut kennst du die Bibel? Mache den kostenlosen Test und lerne mehr über den Glauben mit interaktiven Quizzen."
+    },
+    "premium": {
+      "title": "Premium - Spiele ohne Grenzen",
+      "description": "Spiele alle Bibelquizze so oft du willst, lies die Erklärung zu jeder Antwort und sieh dir nach jedem Quiz deine Antworten noch einmal an. Monatlich, jährlich oder lebenslang.",
+      "ogTitle": "Bibelquizze Premium",
+      "ogDescription": "Alle Quizze, so oft du willst. Eine Erklärung zu jeder Antwort. Sieh dir nach jedem Quiz deine Antworten noch einmal an."
+    },
+    "premium-succes": {
+      "title": "Willkommen bei Premium"
+    },
+    "privacybeleid": {
+      "title": "Datenschutzerklärung | Bibelquizze",
+      "description": "Wie wir bei Bibelquizze mit deinen Daten und deiner Privatsphäre umgehen. Lies unsere Datenschutzerklärung."
+    },
+    "profiel": {
+      "title": "Mein Profil - Bibelquizze"
+    },
+    "quiz-id-beoordeling": {
+      "title": "Quiz-Übersicht - Bibelquizze"
+    },
+    "quizzen": {
+      "title": "Alle Bibelquizze - Wähle Kategorie und Niveau | Bibelquizze",
+      "description": "Übersicht aller verfügbaren Bibelquizze. Filtere nach Kategorie, spiele sofort und teste dein Wissen über das Alte und Neue Testament.",
+      "keywords": [
+        "Bibelquizze",
+        "Quizübersicht",
+        "Bibelfragen",
+        "Glaubensquiz",
+        "Bibelstudium online"
+      ],
+      "ogTitle": "Spiele alle Bibelquizze - Kostenlos und Premium",
+      "ogDescription": "Suche und spiele die besten Bibelquizze online. Von Anfängern bis zu Experten."
+    },
+    "ranglijst": {
+      "title": "Rangliste - Bibelquizze",
+      "description": "Sieh dir die besten Spieler von Bibelquizze an. Sammle Punkte mit Quizzen und steige in der Rangliste auf.",
+      "ogTitle": "Die Bibelquizze-Rangliste - Wer kennt die Bibel am besten?",
+      "ogDescription": "Kämpfe um Platz eins. Spiele Quizze, sammle Punkte und werde die Nummer 1."
+    },
+    "registreren": {
+      "title": "Kostenloses Konto erstellen | Bibelquizze",
+      "description": "Registriere dich kostenlos bei Bibelquizze. Verfolge deinen Fortschritt, sammle Abzeichen und lerne mehr über die Bibel. Werde Teil der Gemeinschaft.",
+      "ogTitle": "Starte mit Bibelquizze - Konto erstellen",
+      "ogDescription": "Teste noch heute dein Bibelwissen. Registriere dich kostenlos."
+    },
+    "samen-spelen-roomCode-lobby": {
+      "title": "Wartezimmer"
+    },
+    "samen-spelen-roomCode-spel": {
+      "title": "Gemeinsam spielen"
+    },
+    "samen-spelen-roomCode-uitslag": {
+      "title": "Endwertung"
+    },
+    "samen-spelen": {
+      "title": "Gemeinsam spielen",
+      "description": "Spiele mit deiner Gruppe gleichzeitig dasselbe Bibelquiz, jeder auf seinem eigenen Handy. Kostenlos, bis zu 20 Spieler."
+    },
+    "voorwaarden": {
+      "title": "Allgemeine Geschäftsbedingungen | Bibelquizze",
+      "description": "Lies unsere allgemeinen Geschäftsbedingungen für die Nutzung der Dienste und Produkte von Bibelquizze."
+    },
+    "wachtwoord-herstellen": {
+      "title": "Neues Passwort | Bibelquizze",
+      "description": "Wähle ein neues Passwort für dein Bibelquizze-Konto."
+    },
+    "wachtwoord-vergeten": {
+      "title": "Passwort vergessen | Bibelquizze",
+      "description": "Fordere einen Link an, um ein neues Passwort für dein Bibelquizze-Konto zu wählen."
+    },
+    "quizPage": {
+      "notFoundTitle": "Bibelquiz nicht gefunden | Bibelquizze",
+      "notFoundDescription": "Dieses Bibelquiz existiert nicht oder ist noch nicht verfügbar.",
+      "defaultCategory": "Bibel",
+      "title": "Bibelquiz {quiz} | Spiele das Quiz {category}",
+      "description": "Spiele das Bibelquiz {quiz} online. Teste dein Wissen mit Fragen zu {category} und erhalte sofort Rückmeldung zu deinen Antworten.",
+      "ogTitle": "Bibelquiz {quiz}",
+      "kw1": "Bibelquiz {quiz}",
+      "kw2": "Quiz {quiz}",
+      "kw3": "Bibelquiz {category}",
+      "kw4": "Bibelquiz online",
+      "kw5": "Bibelfragen und Antworten"
+    },
+    "quizLegacy": {
+      "notFound": "Quiz nicht gefunden",
+      "title": "{quiz} - Quiz {category} | Bibelquizze",
+      "description": "Teste dein Wissen über {quiz}. Ein interaktives Quiz zu {category} mit Fragen zur Bibel. Kostenlos spielen auf biblequizzes.app.",
+      "kwCategory": "Quiz {category}",
+      "ogTitle": "{quiz} | Das ultimative Bibelquiz",
+      "ogDescription": "Mache das Quiz {quiz} und sieh sofort dein Ergebnis!",
+      "twitterDescription": "Spiele jetzt das Quiz {quiz} auf biblequizzes.app",
+      "keywords": [
+        "Bibelquiz",
+        "Online-Quiz",
+        "christliches Wissen",
+        "Bibelstudium"
+      ]
+    }
+  },
+  "privacyPage": {
+    "metaUpdated": "Zuletzt aktualisiert: 8. April 2026",
+    "title": "Datenschutzerklärung",
+    "s1": {
+      "title": "1. Einleitung",
+      "text": "Willkommen bei Bibelquizze. Dir ist deine Privatsphäre wichtig, und uns der Schutz deiner personenbezogenen Daten. In dieser Datenschutzerklärung erklären wir, welche Daten wir erheben, warum wir sie erheben und wie wir damit umgehen, wenn du unsere App oder Website nutzt."
+    },
+    "s2": {
+      "title": "2. Welche Daten wir erheben",
+      "intro": "Wenn du Bibelquizze nutzt, können wir folgende Daten verarbeiten:",
+      "i1": "{label} E-Mail-Adresse, Name und Profilbild, wenn du dich zum Beispiel über Google anmeldest.",
+      "l1": "Personenbezogene Identifikationsdaten:",
+      "i2": "{label} Ergebnisse, abgeschlossene Quizze und Fortschritt, um dein Erlebnis zu verbessern.",
+      "l2": "App-Aktivität und Fortschritt:",
+      "i3": "{label} bei Premium-Käufen verarbeiten wir Statusinformationen über unseren Zahlungsdienstleister. Auf deine Kartendaten haben wir keinen Zugriff.",
+      "l3": "Kaufhistorie:"
+    },
+    "s3": {
+      "title": "3. Wie wir deine Daten verwenden",
+      "intro": "Wir verwenden deine Daten für folgende Zwecke:",
+      "items": [
+        "Erstellen und Verwalten deines Kontos.",
+        "Speichern und Synchronisieren von Fortschritt und Ergebnissen.",
+        "Überprüfen der Premium-Funktionen.",
+        "Analysieren und Verbessern von Stabilität und Leistung."
+      ]
+    },
+    "s4": {
+      "title": "4. Weitergabe von Daten an Dritte",
+      "text": "Wir verkaufen deine personenbezogenen Daten niemals an Dritte."
+    },
+    "s5": {
+      "title": "5. Datensicherheit",
+      "text": "Wir treffen angemessene technische und organisatorische Maßnahmen. Die gesamte Kommunikation mit unseren Servern ist über HTTPS verschlüsselt."
+    },
+    "s6": {
+      "title": "6. Deine Rechte und die Löschung von Daten",
+      "text": "Du hast das Recht, Auskunft über deine Daten, deren Berichtigung oder Löschung zu verlangen. Das kannst du über den Support oder über die Löschoption in deinen Kontoeinstellungen tun.",
+      "link": "Konto löschen"
+    },
+    "s7": {
+      "title": "7. Cookies",
+      "text": "Auf unserer Website verwenden wir nur funktionale Cookies, zum Beispiel, damit du während deiner Sitzung angemeldet bleibst."
+    },
+    "s8": {
+      "title": "8. Kontakt",
+      "text": "Hast du Fragen zu dieser Datenschutzerklärung? Kontaktiere uns unter {email}."
+    }
+  },
+  "termsPage": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "meta": "Diese Bedingungen gelten für die Nutzung von Bibelquizze und zugehörigen Diensten.",
+    "s1": {
+      "title": "1. Allgemeines",
+      "text": "Mit der Nutzung von Bibelquizze erklärst du dich mit diesen Geschäftsbedingungen einverstanden. Diese Bedingungen gelten für alle von uns angebotenen Dienste."
+    },
+    "s2": {
+      "title": "2. Nutzung des Dienstes",
+      "text": "Du darfst keine Konten anderer Personen verwenden oder die Sicherheit des Dienstes gefährden. Wir behalten uns vor, Konten bei Missbrauch zu sperren."
+    },
+    "s3": {
+      "title": "3. Premium-Mitgliedschaft",
+      "text": "Die Premium-Mitgliedschaft kommt durch Zahlung zustande. Eventuelle Kündigungs- und Erstattungsbedingungen richten sich nach dem gewählten Zahlungsmodell und dem geltenden Recht."
+    },
+    "s4": {
+      "title": "4. Geistiges Eigentum",
+      "text": "Alle Quizfragen, Logos und die Software sind Eigentum von Bibelquizze. Kopieren ohne Erlaubnis ist nicht gestattet."
+    },
+    "s5": {
+      "title": "5. Haftung",
+      "text": "Wir bemühen uns um Genauigkeit, können Fehler in Fragen oder Antworten aber nicht vollständig ausschließen. Für Schäden, die aus der Nutzung des Dienstes entstehen, haften wir nicht."
+    }
+  },
+  "pagesBody": {
+    "report": {
+      "kicker": "PROBLEM MELDEN",
+      "title": "Etwas funktioniert nicht?",
+      "text": "Erzähle uns, was schiefgelaufen ist, dann schauen wir es uns an. Oder wähle, wohin du möchtest, oder gehe zurück zur Startseite.",
+      "cardKicker": "WEITERSPIELEN",
+      "formLabel": "Zum Formular"
+    },
+    "help": {
+      "notFound": "Nicht gefunden, was du gesucht hast?",
+      "ask": "Stelle deine Frage",
+      "response": "Wir antworten in der Regel innerhalb von 1 bis 2 Werktagen.",
+      "contact": "Kontakt aufnehmen",
+      "reportText": "Melde einen Fehler mit der Seite und dem, was du getan hast, dann schauen wir es uns an.",
+      "report": "Problem melden"
+    },
+    "contact": {
+      "q1": "Wie kündige ich Premium?",
+      "q2": "Wie starte ich eine Runde für meine Gruppe?",
+      "q3": "Wie lösche ich mein Konto?",
+      "title": "Kontakt",
+      "intro": "Eine Frage zu deinem Konto, zu Premium oder zur App? Schicke uns eine Nachricht, wir helfen gern.",
+      "mailYourself": "Lieber selbst eine E-Mail schreiben?",
+      "reportText": "Melde einen Fehler, dann schauen wir es uns an.",
+      "maybe": "Deine Antwort steht vielleicht schon dort",
+      "allHelp": "Alle Fragen in der Hilfe"
+    },
+    "settings": {
+      "signInEmail": "Mit E-Mail und Passwort angemeldet",
+      "signInApple": "Mit Apple angemeldet",
+      "signInGoogle": "Mit Google angemeldet",
+      "free": "Du spielst kostenlos",
+      "lifetime": "Lebenslanges Premium",
+      "cancelledUntil": "Gekündigt, aktiv bis {date}",
+      "endOfPeriod": "das Ende des Zeitraums",
+      "renews": "{status}, verlängert sich am {date}",
+      "viaStore": "Premium über den App Store oder Google Play",
+      "viaGroup": "Premium über eine Gruppenlizenz",
+      "active": "Premium aktiv"
+    },
+    "profile": {
+      "allRounder": "Spiele {n} verschiedene Quizze.",
+      "unnamed": "Ohne Namen",
+      "verseRef": "Psalm 119,105",
+      "verseText": "Dein Wort ist meines Fußes Leuchte und ein Licht auf meinem Wege."
+    },
+    "review": {
+      "playTomorrow": "Spiele morgen, um deine Serie zu halten",
+      "playToday": "Spiele heute, um deine Serie zu halten",
+      "quizzes": "Quizze",
+      "result": "Ergebnis"
+    },
+    "quizzen": {
+      "listName": "Quizübersicht von Bibelquizze"
+    },
+    "quizLd": {
+      "description": "Teste dein Wissen über {quiz} in diesem interaktiven Bibelquiz."
+    },
+    "leaderboard": {
+      "thisMonthLower": "in diesem Monat",
+      "alwaysLower": "aller Zeiten",
+      "title": "Rangliste",
+      "xp30": "XP der letzten 30 Tage",
+      "xpAll": "Alle verdienten XP",
+      "aria": "Rangliste {period}",
+      "period": "Zeitraum",
+      "thisMonth": "Dieser Monat",
+      "always": "Aller Zeiten",
+      "empty": "Noch niemand in der Rangliste",
+      "emptyMonthly": "In den letzten 30 Tagen hat niemand XP verdient. Spiele ein Quiz und sichere dir die Spitze.",
+      "emptyAll": "Spiele ein Quiz, um der Erste in der Rangliste zu sein.",
+      "top3": "Top 3 {period}",
+      "yourPlaceIn": "Dein Platz in {name}",
+      "yourPlaceMonth": "Dein Platz in diesem Monat",
+      "yourPlaceAll": "Dein Platz aller Zeiten"
+    },
+    "dashboard": {
+      "ot": "Altes Testament",
+      "bookOne": "{count} Buch",
+      "bookMany": "{count} Bücher",
+      "nt": "Neues Testament",
+      "general": "Allgemein",
+      "wholeBible": "Ganze Bibel",
+      "themes": "Themen",
+      "perTheme": "Nach Thema",
+      "morning": "Guten Morgen",
+      "afternoon": "Guten Tag",
+      "evening": "Guten Abend",
+      "sub": "Mache dort weiter, wo du aufgehört hast, oder starte etwas Neues.",
+      "popular": "Beliebte Quizze",
+      "allQuizzes": "Alle Quizze",
+      "overview": "Deine Übersicht"
+    },
+    "delete": {
+      "dayOne": "{count} Tag",
+      "dayMany": "{count} Tage",
+      "badgeOne": "{count} Abzeichen",
+      "badgeMany": "{count} Abzeichen",
+      "linkPassword": "dein Passwort",
+      "linkApple": "die Verknüpfung mit Apple",
+      "linkGoogle": "die Verknüpfung mit Google",
+      "profile": "Name, E-Mail-Adresse, Profilbild und {link}",
+      "progress": "{xp} XP, Level {level}, deine Serie von {streak}, Ergebnisse und {badges}",
+      "mailSubject": "Antrag auf Kontolöschung",
+      "profileDefault": "Name, E-Mail-Adresse, Profilbild und die Verknüpfung mit Google oder Apple",
+      "progressDefault": "Deine XP, dein Level, deine Serie, Ergebnisse und Abzeichen",
+      "duelsText": "Deine Duelle mit Freunden und dein Platz in der Rangliste",
+      "prefsText": "Einstellungen, Interessen und andere App-Daten",
+      "t1": "Dein Profil",
+      "t2": "Dein Fortschritt",
+      "t3": "Deine Duelle und die Rangliste",
+      "t4": "Deine Einstellungen",
+      "doneSub": "Dein Konto und deine Daten wurden gelöscht.",
+      "sub": "Lies zuerst, was verschwindet. Bestätige dann in Schritt 2.",
+      "backSettings": "Zurück zu den Einstellungen",
+      "backHome": "Zurück zur Startseite",
+      "doneTitle": "Dein Konto wurde gelöscht",
+      "doneText": "Danke, dass du Bibelquizze gespielt hast. Du kannst jederzeit mit einem neuen Konto neu anfangen.",
+      "toHome": "Zur Startseite",
+      "step1": "Das wird gelöscht",
+      "keepTitle": "Was wir behalten",
+      "step2": "Bestätigen",
+      "loginText": "Melde dich mit dem Konto an, das du löschen möchtest. Bestätige dann hier.",
+      "loginButton": "Zum Löschen anmelden",
+      "cantLogin": "Kannst du dich nicht mehr anmelden?",
+      "mailText": "Schreibe uns von der E-Mail-Adresse deines Kontos. Wir bearbeiten deine Anfrage innerhalb von 14 Tagen.",
+      "inApp": "Lieber in der App?",
+      "keepText": "Aus steuerlichen und rechtlichen Gründen bewahren wir anonyme Kaufdaten auf. Nach der Löschung sind sie nicht mehr mit dir verknüpft.",
+      "premiumNote": "{head} Kündige zuerst dein Abonnement über {link} oder im App Store bzw. bei Google Play, wenn du dort gekauft hast. Das Löschen beendet ein Abonnement nicht von selbst.",
+      "premiumHead": "Hast du Premium?",
+      "moreData": "Mehr zu deinen Daten liest du in der {link}.",
+      "privacyWord": "Datenschutzerklärung",
+      "mailBody": [
+        "Hallo Bibelquizze-Team,",
+        "",
+        "ich möchte mein Konto löschen lassen.",
+        "Die E-Mail-Adresse meines Kontos lautet: [hier deine E-Mail-Adresse eintragen]",
+        "",
+        "Vielen Dank im Voraus."
+      ],
+      "appSteps": [
+        "Profil öffnen",
+        "Auf das Zahnradsymbol tippen",
+        "Konto löschen wählen"
+      ]
+    },
+    "premium": {
+      "have": "Du hast Premium",
+      "lockedA": "Gut gespielt!",
+      "lockedB": "Spiele weiter mit Premium",
+      "unlimitedA": "Spiele ohne Grenzen",
+      "unlimitedB": "mit Premium",
+      "from": "Ab {price} pro Woche",
+      "perYearLine": "{price} pro Jahr",
+      "underOne": ", weniger als ein Dollar pro Woche.",
+      "freeOrPremium": "Gratis oder Premium",
+      "freeOrPremiumSub": "Dein Konto bleibt immer kostenlos. Premium schaltet alles frei.",
+      "faq": "Fragen zu Premium",
+      "faqSub": "Zu Kündigung und Zahlung.",
+      "moreHelp": "Mehr in der Hilfe",
+      "q1": "Gibt es eine kostenlose Testphase?",
+      "a1": "Wähle Jährlich und du zahlst in den ersten {days} Tagen nichts.{reminder} Wenn du nicht kündigst, beginnt dein Jahresabo nach den {days} Tagen.",
+      "a1Reminder": " An Tag {day} bekommst du eine Erinnerung.",
+      "a1None": "Nein. Du zahlst ab dem ersten Tag und kannst jederzeit kündigen. Du kannst vorher immer einige Quizze gratis spielen.",
+      "q2": "Wie kündige ich?",
+      "a2": "Jederzeit, mit der Schaltfläche Abonnement verwalten auf dieser Seite oder in den Einstellungen. Du behältst Premium bis zum Ende des bereits bezahlten Zeitraums. Wenn du über die App zahlst, kündigst du im App Store oder bei Google Play.",
+      "q3": "Was passiert mit meinem Fortschritt, wenn ich kündige?",
+      "a3": "Du spielst kostenlos weiter. Deine XP und deine Serie bleiben erhalten.",
+      "q4": "Funktioniert Premium auch in der App?",
+      "a4": "Ja. Premium gehört zu deinem Konto. Melde dich in der App mit demselben Konto an, und alles ist offen.",
+      "q5": "Was ist lebenslanges Premium?",
+      "a5": "Du zahlst einmalig {price} und behältst Premium, ohne Abonnement und ohne Verlängerung.",
+      "q6": "Gibt es etwas für Gruppen?",
+      "a6": "Ja. Für Gemeinden, Schulen und Jugendgruppen gibt es die {link}: Premium für {seats} Plätze mit einem Code.",
+      "a6Link": "Gruppenlizenz",
+      "membership": "Deine Mitgliedschaft",
+      "continue": "Dort weitermachen, wo du warst",
+      "toQuizzes": "Zu den Quizzen",
+      "manage": "Abonnement verwalten",
+      "toGroup": "Zu deiner Gruppe",
+      "rowQuizzes": "Quizze",
+      "freeQuizzes": "{n} Quizze",
+      "allN": "Alle {n} Quizze",
+      "all": "Alle Quizze",
+      "rowExplain": "Eine Erklärung zu jeder Antwort",
+      "explainFree": "Nur die Bibelstelle",
+      "explainPremium": "Zu jeder Frage",
+      "rowReview": "Antworten ansehen",
+      "reviewFree": "Nur dein Ergebnis",
+      "reviewPremium": "Nach jedem Quiz",
+      "rowXp": "XP, Serie und Rangliste",
+      "caption": "Unterschied zwischen Gratis und Premium",
+      "whatYouGet": "Das bekommst du",
+      "yes": "Ja"
+    },
+    "success": {
+      "lifetime": "Lebenslang",
+      "named": "{text}, {name}.",
+      "namedPlain": "{text}.",
+      "manageMembership": "Mitgliedschaft verwalten",
+      "questions": "Fragen zu deinem Abonnement? Schau ins {help} oder schreibe an {email}.",
+      "helpWord": "Hilfecenter",
+      "active": "Premium ist aktiv",
+      "open": "Premium ist freigeschaltet",
+      "thanks": "Danke für deine Bestellung",
+      "processing": "Wir verarbeiten deine Zahlung. Sobald sie eingeht, wird Premium automatisch freigeschaltet.",
+      "groupTitle": "Deine Gruppenlizenz ist aktiv",
+      "groupText": "Dein Gruppencode ist bereit. Teile ihn mit deiner Gruppe, dann haben alle sofort Premium.",
+      "licence": "Lizenz",
+      "validUntil": "Gültig bis",
+      "welcome": "Willkommen bei Premium",
+      "lifetimeText": "Du hast lebenslanges Premium, ohne Abonnement und ohne Verlängerung.",
+      "subscription": "Abonnement",
+      "paid": "Bezahlt",
+      "firstDays": "die ersten {days} Tage",
+      "duringTrial": "während der Testphase",
+      "trialTitle": "Deine Testphase hat begonnen",
+      "trialText": "Du zahlst {freeDays} nichts und kannst jederzeit kündigen.",
+      "freeUntil": "Gratis bis",
+      "reminder": "Erinnerung",
+      "then": "Danach",
+      "cancelAnytime": "Du kannst jederzeit kündigen.",
+      "nextPayment": "Nächste Zahlung",
+      "amount": "Betrag"
+    },
+    "quiz": {
+      "kickerAbout": "Bibelquiz zu {reference}",
+      "kickerCategory": "Bibelquiz - {category}",
+      "ldDescription": "Spiele das Bibelquiz {quiz} und teste dein Wissen mit Fragen zu {category}.",
+      "fallbackDescription": "Spiele dieses Bibelquiz zu {category} online und finde heraus, wie viel du schon weißt.",
+      "about": "Über dieses Quiz",
+      "questionOne": "Frage",
+      "questionMany": "Fragen",
+      "minutes": "{n} Min.",
+      "approx": "ca.",
+      "best": "Dein bestes Ergebnis",
+      "playedTimes": "{n} Mal gespielt · {date}",
+      "start": "Quiz starten",
+      "together": "Gemeinsam mit anderen spielen",
+      "aside": "Über dieses Quiz (Seitenleiste)",
+      "passage": "Die Bibelstelle",
+      "isAbout": "In diesem Quiz geht es um",
+      "studie": "Mit Erklärung auf BijbelStudie",
+      "moreFrom": "Mehr aus {group}",
+      "played": "Gespielt",
+      "bestOf": "Bestes Ergebnis {correct} von {total}",
+      "allFrom": "Alle {count} Quizze aus {group}"
+    },
+    "notFound": {
+      "metaTitle": "Seite nicht gefunden",
+      "kicker": "FEHLER 404",
+      "title": "Diese Seite existiert nicht",
+      "text": "Der Link ist nicht mehr gültig oder die Seite wurde verschoben. Wähle, wohin du möchtest, oder gehe zurück zur Startseite."
+    },
+    "error": {
+      "kicker": "FEHLER 500",
+      "title": "Etwas ist schiefgegangen",
+      "cardKicker": "FRAGE 500",
+      "home": "Zur Startseite",
+      "text": "Diese Seite konnte nicht richtig geladen werden. Versuche es erneut oder wähle, wohin du möchtest.",
+      "globalText": "Bibelquizze konnte nicht richtig geladen werden. Versuche es erneut oder gehe zurück zur Startseite.",
+      "logoAria": "Bibelquizze, zur Startseite"
+    },
+    "og": {
+      "alt": "Bibelquizze - Kostenlose Bibelquizze spielen",
+      "tagline": "Spiele kostenlose Bibelquizze und teste dein Bibelwissen",
+      "cta": "Jetzt starten auf {host}"
+    }
+  },
+  "mail": {
+    "validation": {
+      "name": "Gib deinen Namen ein.",
+      "nameLong": "Dein Name ist zu lang.",
+      "emailLong": "Diese E-Mail-Adresse ist zu lang.",
+      "email": "Gib eine gültige E-Mail-Adresse ein.",
+      "subject": "Wähle einen Betreff.",
+      "short": "Schreibe etwas mehr, mindestens 10 Zeichen.",
+      "messageLong": "Deine Nachricht ist zu lang (maximal 4000 Zeichen).",
+      "emailOptional": "Gib eine gültige E-Mail-Adresse ein oder lass das Feld leer.",
+      "reportLong": "Deine Meldung ist zu lang (maximal 4000 Zeichen)."
+    },
+    "rateLimited": "Du hast gerade mehrere Nachrichten gesendet. Versuche es in einigen Minuten erneut.",
+    "sendFailed": "Beim Senden ist etwas schiefgegangen. Versuche es erneut oder schreibe uns direkt.",
+    "checkFields": "Prüfe die Felder und versuche es erneut.",
+    "contactOk": "Danke, wir haben deine Nachricht erhalten.",
+    "contactSubject": "Kontakt: {subject}",
+    "contactHeading": "Neue Nachricht über das Kontaktformular",
+    "fieldName": "Name: {value}",
+    "fieldEmail": "E-Mail: {value}",
+    "fieldSubject": "Betreff: {value}",
+    "fieldSubmitted": "Gesendet am: {value}",
+    "fieldMessage": "Nachricht:",
+    "invalidReport": "Ungültige Eingabe. Prüfe deine Meldung und versuche es erneut.",
+    "bugOk": "Danke. Deine Meldung wurde gesendet.",
+    "bugSubject": "Neue Fehlermeldung",
+    "bugHeading": "Neue Fehlermeldung erhalten",
+    "notFilled": "Nicht ausgefüllt",
+    "unknown": "Unbekannt",
+    "fieldPage": "Seite: {value}",
+    "fieldReport": "Meldung:",
+    "trial": {
+      "chargePrice": "zahlst du {price} pro Jahr",
+      "chargeYear": "zahlst du den Jahresbetrag",
+      "body": "Deine kostenlose Testphase von Bibelquizze Premium endet am {end}. Danach beginnt dein Jahresabo und {charge}.",
+      "keep": "Möchtest du Premium behalten? Dann musst du nichts tun.",
+      "cancel": "Möchtest du nicht weitermachen? Kündige vor dem {end}. Das geht unter {url} mit der Schaltfläche \"Abonnement verwalten\". Dann zahlst du nichts und spielst kostenlos weiter; deine XP und deine Serie bleiben erhalten.",
+      "subject": "Deine Bibelquizze-Premium-Testphase endet am {end}"
+    },
+    "hello": "Hallo {name},",
+    "helloPlain": "Hallo,",
+    "regards": "Viele Grüße",
+    "reset": {
+      "subject": "Passwort zurücksetzen - Bibelquizze",
+      "textIntro": "Du hast ein neues Passwort für dein Bibelquizze-Konto angefordert. Wähle über diesen Link eines:",
+      "validity": "Der Link funktioniert {minutes} Minuten lang und nur einmal.",
+      "ignore": "Das warst nicht du? Dann kannst du diese E-Mail ignorieren; dein Passwort bleibt gleich.",
+      "htmlIntro": "Du hast ein neues Passwort für dein Bibelquizze-Konto angefordert.",
+      "button": "Neues Passwort wählen"
+    },
+    "subjects": [
+      "Mein Konto und die Anmeldung",
+      "Premium und Zahlungen",
+      "Gruppenlizenz",
+      "Duelle und gemeinsam spielen",
+      "Ein Fehler in einer Frage",
+      "Etwas anderes"
+    ]
+  },
+  "lib": {
+    "level": {
+      "1": {
+        "title": "Suchender",
+        "desc": "Hat die Reise gerade begonnen."
+      },
+      "2": {
+        "title": "Leser",
+        "desc": "Lernt die Geschichten kennen."
+      },
+      "3": {
+        "title": "Lernender",
+        "desc": "Taucht tiefer in den Stoff ein."
+      },
+      "4": {
+        "title": "Kenner",
+        "desc": "Hat eine breite Wissensbasis."
+      },
+      "5": {
+        "title": "Forscher",
+        "desc": "Versteht Zusammenhänge und Hintergründe."
+      },
+      "6": {
+        "desc": "Kann knifflige Fragen beantworten."
+      },
+      "7": {
+        "title": "Schriftgelehrter",
+        "desc": "Ein Experte der Heiligen Schrift."
+      },
+      "8": {
+        "title": "Weiser",
+        "desc": "Teilt sein Wissen mit anderen."
+      },
+      "9": {
+        "desc": "Ein lebendes Bibellexikon."
+      },
+      "10": {
+        "title": "Legende",
+        "desc": "Hat das höchste Wissen erreicht."
+      }
+    },
+    "scholar": "Gelehrter",
+    "master": "Meister",
+    "badge": {
+      "firstSteps": "Erste Schritte",
+      "firstStepsDesc": "Schließe dein erstes Quiz ab.",
+      "seeker": "Wissbegierig",
+      "seekerDesc": "Spiele 10 verschiedene Quizze.",
+      "perfectDesc": "Erreiche 100 % in einem Quiz.",
+      "streak3": "Auf Kurs",
+      "streak3Desc": "Baue eine 3-Tage-Serie auf.",
+      "streak7": "Beständig",
+      "streak7Desc": "Spiele 7 Tage in Folge.",
+      "scholarDesc": "Erreiche Level 5.",
+      "masterDesc": "Erreiche Level 10.",
+      "allRounder": "Allrounder",
+      "allRounderDesc": "Spiele ein Quiz in jeder Kategorie."
+    },
+    "flawless": "Fehlerfrei",
+    "avatar": {
+      "lam": "Lamm",
+      "leeuw": "Löwe",
+      "duif": "Taube",
+      "uil": "Eule",
+      "hert": "Hirsch",
+      "os": "Ochse",
+      "zand": "Sand",
+      "lapis": "Lapislazuli",
+      "klei": "Ton",
+      "olijf": "Olive",
+      "roos": "Rose",
+      "leisteen": "Schiefer",
+      "perkament": "Pergament",
+      "hemel": "Himmel",
+      "salie": "Salbei",
+      "zonsopgang": "Sonnenaufgang",
+      "nacht": "Nacht",
+      "blos": "Rosé",
+      "geen": "Keines",
+      "bril": "Brille",
+      "pet": "Mütze",
+      "sjaal": "Schal",
+      "kroon": "Krone",
+      "mascot": "Maskottchen",
+      "describe": "{character} mit {accessory}"
+    },
+    "mp": {
+      "roomNotFound": "Raum nicht gefunden. Prüfe den Code und versuche es erneut.",
+      "roomFull": "Dieser Raum ist voll.",
+      "started": "Dieses Quiz hat bereits begonnen.",
+      "finished": "Dieses Quiz ist bereits beendet.",
+      "notIn": "Du gehörst nicht zu diesem Raum.",
+      "notHost": "Das kann nur der Gastgeber tun.",
+      "minPlayers": "Zum Starten sind mindestens 2 Spieler nötig.",
+      "mismatch": "Die Frage hat sich geändert. Aktualisiere die Seite.",
+      "answered": "Du hast bereits eine Antwort abgeschickt.",
+      "notRunning": "Das Quiz läuft gerade nicht.",
+      "invalid": "Ungültige Eingabe. Prüfe deine Angaben.",
+      "expired": "Deine Sitzung ist abgelaufen. Melde dich erneut an.",
+      "quizGone": "Das gewählte Quiz existiert nicht mehr.",
+      "server": "Auf dem Server ist etwas schiefgegangen. Versuche es erneut.",
+      "unexpected": "Ein unerwarteter Fehler ist aufgetreten."
+    },
+    "sub": {
+      "trialing": "Testphase",
+      "active": "Aktiv",
+      "pastDue": "Zahlung fehlgeschlagen, wir versuchen es erneut",
+      "unpaid": "Unbezahlt",
+      "canceled": "Beendet",
+      "incomplete": "Unvollständig",
+      "expired": "Abgelaufen",
+      "paused": "Pausiert",
+      "processing": "In Bearbeitung",
+      "lifetime": "Lebenslang aktiv"
+    },
+    "lb": {
+      "player": "Spieler",
+      "beginner": "Anfänger"
+    },
+    "season": {
+      "start": {
+        "title": "Neue Saison",
+        "desc": "Die Vereinssaison beginnt von Neuem. Ein Fragenpaket zum gemeinsamen Auftakt."
+      },
+      "lent": {
+        "title": "Fastenzeit",
+        "desc": "Von Aschermittwoch bis Ostern: vierzig Tage auf dem Weg zur Ostergeschichte."
+      },
+      "advent": {
+        "title": "Advent",
+        "desc": "Vier Wochen Countdown bis Weihnachten, mit einem Quiz pro Woche."
+      }
+    },
+    "review": {
+      "unknown": "Unbekannt",
+      "strong": "Starkes Ergebnis",
+      "base": "Gute Grundlage",
+      "growth": "Deutlich Luft nach oben",
+      "rec": {
+        "perfect": "Alle Fragen richtig beantwortet. Ein schwereres Quiz oder ein anderes Buch der Bibel ist der logische nächste Schritt.",
+        "strong": "Du kennst dieses Quiz gut. Sieh dir die falsch beantworteten Fragen noch einmal an, um fehlerfrei zu werden.",
+        "base": "Du bist auf dem richtigen Weg. Konzentriere dich auf die falsch beantworteten Fragen und vergleiche die Erklärung mit den Bibelstellen.",
+        "growth": "Nimm dir Zeit für die Erklärung zu jeder Frage und lies die genannten Bibelstellen. Ein neuer Versuch bringt dann meist schnell Fortschritt."
+      }
+    },
+    "rec": {
+      "ot": "Altes Testament",
+      "nt": "Neues Testament",
+      "gospels": "Evangelien",
+      "prophets": "Propheten",
+      "wisdom": "Weisheit und Sprüche",
+      "people": "Personen der Bibel",
+      "easy": "leicht",
+      "medium": "mittel",
+      "hard": "schwer",
+      "daily": "täglich",
+      "weekly": "wöchentlich",
+      "monthly": "monatlich",
+      "rarely": "hin und wieder",
+      "depth": "Mehr Tiefgang",
+      "short": "Kurz und kompakt",
+      "unplayed": "Noch nicht gespielt",
+      "partInterest": "deinem Interesse an {list}",
+      "partLevel": "deinem Niveau ({level})",
+      "partRhythm": "deinem Leserhythmus ({frequency})",
+      "joinLast": "{head} und {last}",
+      "basedOn": "Zusammengestellt auf Grundlage von {sentence}.",
+      "reasonInterest": "Interesse: {name}",
+      "reasonLevel": "Niveau: {level}"
+    },
+    "group": {
+      "unknownUser": "Unbekannter Nutzer.",
+      "unknownRoom": "Unbekannter Raum.",
+      "roomGone": "Dieser Raum existiert nicht mehr.",
+      "notPlayed": "Du hast in diesem Raum nicht gespielt.",
+      "minTwo": "Eine Gruppe braucht mindestens zwei Spieler.",
+      "defaultName": "Meine Spielgruppe",
+      "unknown": "Unbekannte Gruppe.",
+      "nameShort": "Wähle einen Namen mit mindestens zwei Zeichen.",
+      "ownerRename": "Nur der Besitzer kann die Gruppe umbenennen.",
+      "gone": "Diese Gruppe existiert nicht mehr.",
+      "ownerRemove": "Nur der Besitzer kann jemanden entfernen.",
+      "notMember": "Dieser Spieler ist nicht in der Gruppe.",
+      "noAccess": "Diese Gruppe existiert nicht oder du gehörst nicht dazu.",
+      "max": "Du kannst höchstens {max} Gruppen behalten.",
+      "namePrefix": "Gruppe {title}"
+    },
+    "gl": {
+      "badCode": "Dieser Gruppencode ist ungültig.",
+      "unknownCode": "Diesen Gruppencode kennen wir nicht.",
+      "expired": "Diese Gruppenlizenz ist abgelaufen. Bitte den Administrator, sie zu verlängern.",
+      "joinFailed": "Beitreten hat nicht geklappt.",
+      "unknownMember": "Unbekanntes Mitglied.",
+      "notFound": "Gruppenlizenz nicht gefunden.",
+      "adminSeat": "Der Administrator behält immer einen Platz.",
+      "nameLength": "Der Gruppenname muss zwischen 2 und 60 Zeichen lang sein.",
+      "defaultName": "Gruppe von {name}",
+      "full": "Diese Gruppe ist voll ({seats} Plätze). Bitte den Administrator, einen Platz freizugeben."
+    }
+  }
+}
