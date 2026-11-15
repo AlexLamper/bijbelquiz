@@ -1,3 +1,5 @@
+import { isNlSite } from '@/config/site';
+
 /**
  * What is left of the paid product, and the numbers the pricing copy quotes.
  *
@@ -134,11 +136,13 @@ export function lifetimePricePerWeek(lifetimeLabel: string): string | null {
 /**
  * Free trial length, in days, read from `STRIPE_TRIAL_DAYS`.
  *
- * Zero or unset means no trial, and every trial claim in the UI disappears with
+ * Zero or unset means no trial (and the intl site never has one), and every trial claim in the UI disappears with
  * it: promising a trial the checkout will not create is the fastest way to a
  * chargeback and a support thread.
  */
 export function readTrialDays(raw: string | undefined | null): number {
+  // The international site has no free trial week, whatever STRIPE_TRIAL_DAYS says.
+  if (!isNlSite()) return 0;
   const parsed = Number.parseInt((raw || '').trim(), 10);
   if (!Number.isFinite(parsed) || parsed <= 0) return 0;
   // Stripe's own ceiling for a checkout trial.

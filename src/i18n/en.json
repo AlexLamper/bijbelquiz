@@ -235,7 +235,7 @@
       "toHelp": "Go to help",
       "free": {
         "q": "Is {brand} free?",
-        "a": "You play 3 quizzes for free, without an account. After that you can try Premium free for 7 days. Playing together with family or friends is always free."
+        "a": "You play 3 quizzes for free, without an account. After that you can get Premium. Playing together with family or friends is always free."
       },
       "account": {
         "q": "Do I need an account?",
@@ -294,7 +294,7 @@
       },
       "premium": {
         "title": "Premium and payments",
-        "text": "Free trial, canceling and the group license"
+        "text": "Pricing, canceling and the group license"
       },
       "account": {
         "title": "Account and privacy",
@@ -308,7 +308,7 @@
     "q": {
       "free": {
         "q": "Is {brand} free?",
-        "a": "You play 3 quizzes for free, without an account. Playing together is always free. If you want all quizzes and the explanation for every answer, you can try Premium free for 7 days."
+        "a": "You play 3 quizzes for free, without an account. Playing together is always free. If you want all quizzes and the explanation for every answer, you can get Premium."
       },
       "group": {
         "q": "How do I start a game for my group?",
@@ -866,7 +866,7 @@
       "stats": "Statistics",
       "tryPremium": "Try Premium",
       "premiumText": "All quizzes and an explanation with every answer",
-      "trial": "7 days free",
+      "trial": "Get Premium",
       "verse": "Verse of the day",
       "edit": "Edit"
     },
@@ -1117,7 +1117,7 @@
     },
     "premium": {
       "title": "Premium - Play without limits",
-      "description": "Play all Bible quizzes as often as you like, read the explanation with every answer and review your answers after each quiz. Yearly with a 7-day free trial.",
+      "description": "Play all Bible quizzes as often as you like, read the explanation with every answer and review your answers after each quiz. Monthly, yearly or lifetime.",
       "ogTitle": "Bible Quizzes Premium",
       "ogDescription": "All quizzes, as often as you like. An explanation with every answer. Review your answers after every quiz."
     },
@@ -1444,16 +1444,16 @@
       "freeOrPremium": "Free or Premium",
       "freeOrPremiumSub": "Your account always stays free. Premium unlocks everything.",
       "faq": "Questions about Premium",
-      "faqSub": "About the trial, cancelling and paying.",
+      "faqSub": "About cancelling and paying.",
       "moreHelp": "More in help",
-      "q1": "How does the trial work?",
+      "q1": "Is there a free trial?",
       "a1": "Choose Yearly and you pay nothing for the first {days} days.{reminder} If you do not cancel, your yearly subscription starts after the {days} days.",
       "a1Reminder": " On day {day} you get a reminder.",
-      "a1None": "There is currently no trial. You pay from the first day and can cancel whenever you like.",
+      "a1None": "No. You pay from the first day and can cancel whenever you like. You can always play a few quizzes for free first.",
       "q2": "How do I cancel?",
       "a2": "Whenever you like, with the Manage your subscription button on this page or in Settings. You keep Premium until the end of the period you already paid for. If you pay through the app, you cancel in the App Store or Google Play.",
-      "q3": "What if I cancel during the trial?",
-      "a3": "Then you pay nothing and keep playing for free. Your XP and streak are kept.",
+      "q3": "What happens to my progress if I cancel?",
+      "a3": "You keep playing for free. Your XP and streak are kept.",
       "q4": "Does Premium work in the app too?",
       "a4": "Yes. Premium belongs to your account. Log in to the app with the same account and everything is open.",
       "q5": "What is lifetime Premium?",

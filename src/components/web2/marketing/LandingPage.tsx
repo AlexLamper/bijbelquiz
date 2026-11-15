@@ -453,7 +453,7 @@ function PremiumSection() {
             >
               {t('landing.premium.view')}
             </Link>
-            <span className="text-sm font-bold text-ink-muted">{t('landing.premium.trial')}</span>
+            {isNlSite() && <span className="text-sm font-bold text-ink-muted">{t('landing.premium.trial')}</span>}
           </div>
         </div>
 
