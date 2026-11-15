@@ -1,0 +1,242 @@
+{
+  "title": "Daniel Bible Quiz - Chapter 6",
+  "description": "Ten questions on Daniel 6: the plot against Daniel and the night in the lions' den.",
+  "slug": "daniel-bible-quiz-part-6",
+  "categorySlug": "people-of-the-bible",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who was king when Daniel was thrown into the lions' den?",
+      "explanation": "Darius the Mede ruled the kingdom and set 120 satraps over it, with Daniel as one of three presidents.",
+      "bibleReference": "Daniel 6:1-2",
+      "answers": [
+        {
+          "text": "Nebuchadnezzar",
+          "isCorrect": false
+        },
+        {
+          "text": "Belshazzar",
+          "isCorrect": false
+        },
+        {
+          "text": "Cyrus",
+          "isCorrect": false
+        },
+        {
+          "text": "Darius",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did the other officials want to bring Daniel down?",
+      "explanation": "Daniel distinguished himself with an excellent spirit, and the king planned to set him over the whole kingdom.",
+      "bibleReference": "Daniel 6:3-4",
+      "answers": [
+        {
+          "text": "He had been caught stealing from the royal treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "He had refused to pay the taxes of the kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "The king planned to promote him above them all",
+          "isCorrect": true
+        },
+        {
+          "text": "He had spoken against the king in public",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the decree forbid for thirty days?",
+      "explanation": "No one could ask a petition of any god or man except the king, or be thrown into the den of lions.",
+      "bibleReference": "Daniel 6:7",
+      "answers": [
+        {
+          "text": "Eating meat or drinking wine at the feast",
+          "isCorrect": false
+        },
+        {
+          "text": "Praying to anyone except the king",
+          "isCorrect": true
+        },
+        {
+          "text": "Traveling outside the city of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Selling grain to the foreign merchants",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Daniel do when he heard the decree was signed?",
+      "explanation": "He went to his house, opened his windows toward Jerusalem and prayed, as he always had.",
+      "bibleReference": "Daniel 6:10",
+      "answers": [
+        {
+          "text": "He went home and prayed as before",
+          "isCorrect": true
+        },
+        {
+          "text": "He hid himself away inside the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "He fled from the city that night",
+          "isCorrect": false
+        },
+        {
+          "text": "He begged the king to cancel the decree",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How often did Daniel pray each day?",
+      "explanation": "Daniel knelt on his knees three times a day, praying and giving thanks before his God.",
+      "bibleReference": "Daniel 6:10",
+      "answers": [
+        {
+          "text": "Only once, at the break of day",
+          "isCorrect": false
+        },
+        {
+          "text": "Twice, at morning and evening",
+          "isCorrect": false
+        },
+        {
+          "text": "Three times",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven times, through the whole day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which way did the windows of Daniel's room face?",
+      "explanation": "Daniel's windows were open toward Jerusalem.",
+      "bibleReference": "Daniel 6:10",
+      "answers": [
+        {
+          "text": "Toward Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Toward Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Toward the sunrise",
+          "isCorrect": false
+        },
+        {
+          "text": "Toward the palace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the king feel when he heard what the officials reported?",
+      "explanation": "The king was very displeased and worked until sundown to rescue Daniel.",
+      "bibleReference": "Daniel 6:14",
+      "answers": [
+        {
+          "text": "He was glad and rewarded the officials",
+          "isCorrect": false
+        },
+        {
+          "text": "He was angry at Daniel for disobeying",
+          "isCorrect": false
+        },
+        {
+          "text": "He felt nothing and went to sleep",
+          "isCorrect": false
+        },
+        {
+          "text": "He was displeased and tried to save Daniel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How was the den of lions closed?",
+      "explanation": "A stone was brought and laid on the mouth of the den, and the king sealed it with his own signet ring.",
+      "bibleReference": "Daniel 6:17",
+      "answers": [
+        {
+          "text": "A stone sealed with the king's signet",
+          "isCorrect": true
+        },
+        {
+          "text": "An iron gate locked with a key",
+          "isCorrect": false
+        },
+        {
+          "text": "Heavy beams nailed across",
+          "isCorrect": false
+        },
+        {
+          "text": "A guard stood in front",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Daniel say had shut the lions' mouths?",
+      "explanation": "Daniel said his God sent his angel and shut the lions' mouths, because he was found innocent before him.",
+      "bibleReference": "Daniel 6:22",
+      "answers": [
+        {
+          "text": "The lions were already fed",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's decree",
+          "isCorrect": false
+        },
+        {
+          "text": "God sent his angel",
+          "isCorrect": true
+        },
+        {
+          "text": "Daniel's skill with animals",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the men who had accused Daniel?",
+      "explanation": "The king commanded that those who had accused Daniel be thrown into the den of lions, with their children and wives.",
+      "bibleReference": "Daniel 6:24",
+      "answers": [
+        {
+          "text": "They were sent into exile",
+          "isCorrect": false
+        },
+        {
+          "text": "They were thrown into the lions' den",
+          "isCorrect": true
+        },
+        {
+          "text": "They were fined",
+          "isCorrect": false
+        },
+        {
+          "text": "They were made servants",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

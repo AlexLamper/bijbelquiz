@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 5",
+  "description": "Ten questions on Matthew 5: the Beatitudes and the opening of the Sermon on the Mount.",
+  "slug": "matthew-bible-quiz-part-5",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was Jesus when he began to teach his disciples?",
+      "explanation": "Seeing the crowds, Jesus went up on the mountain, sat down, and his disciples came to him.",
+      "bibleReference": "Matthew 5:1-2",
+      "answers": [
+        {
+          "text": "In a boat on the lake",
+          "isCorrect": false
+        },
+        {
+          "text": "On the mountain",
+          "isCorrect": true
+        },
+        {
+          "text": "In the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "In a synagogue in Capernaum",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "\"Blessed are the poor in spirit, for theirs is...\"",
+      "explanation": "Jesus said theirs is the Kingdom of Heaven.",
+      "bibleReference": "Matthew 5:3",
+      "answers": [
+        {
+          "text": "The comfort of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The inheritance of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "The mercy of God",
+          "isCorrect": false
+        },
+        {
+          "text": "The Kingdom of Heaven",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "\"Blessed are the meek, for they will...\"",
+      "explanation": "The meek will inherit the earth.",
+      "bibleReference": "Matthew 5:5",
+      "answers": [
+        {
+          "text": "Inherit the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "See God face to face",
+          "isCorrect": false
+        },
+        {
+          "text": "Be filled with good things",
+          "isCorrect": false
+        },
+        {
+          "text": "Be called children of God",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "\"Blessed are the pure in heart, for they will...\"",
+      "explanation": "The pure in heart will see God.",
+      "bibleReference": "Matthew 5:8",
+      "answers": [
+        {
+          "text": "Receive mercy",
+          "isCorrect": false
+        },
+        {
+          "text": "Inherit the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "See God",
+          "isCorrect": true
+        },
+        {
+          "text": "Be comforted",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the peacemakers called?",
+      "explanation": "Blessed are the peacemakers, for they will be called children of God.",
+      "bibleReference": "Matthew 5:9",
+      "answers": [
+        {
+          "text": "Children of God",
+          "isCorrect": true
+        },
+        {
+          "text": "Servants of the King",
+          "isCorrect": false
+        },
+        {
+          "text": "Salt of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Prophets of the Most High",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Jesus told his disciples, \"You are the ___ of the earth.\"",
+      "explanation": "Jesus said, \"You are the salt of the earth,\" and warned that salt that loses its flavor is good for nothing.",
+      "bibleReference": "Matthew 5:13",
+      "answers": [
+        {
+          "text": "Light",
+          "isCorrect": false
+        },
+        {
+          "text": "Seed",
+          "isCorrect": false
+        },
+        {
+          "text": "Salt",
+          "isCorrect": true
+        },
+        {
+          "text": "Rock",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What cannot be hidden, according to Jesus?",
+      "explanation": "\"A city located on a hill can't be hidden,\" Jesus said, telling his disciples to let their light shine.",
+      "bibleReference": "Matthew 5:14",
+      "answers": [
+        {
+          "text": "A lamp under a bed",
+          "isCorrect": false
+        },
+        {
+          "text": "A treasure in a field",
+          "isCorrect": false
+        },
+        {
+          "text": "A seed in the ground",
+          "isCorrect": false
+        },
+        {
+          "text": "A city on a hill",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the law and the prophets?",
+      "explanation": "Jesus said he had not come to destroy the law or the prophets, but to fulfill them.",
+      "bibleReference": "Matthew 5:17",
+      "answers": [
+        {
+          "text": "He came to fulfill them",
+          "isCorrect": true
+        },
+        {
+          "text": "He came to replace them",
+          "isCorrect": false
+        },
+        {
+          "text": "He came to end them",
+          "isCorrect": false
+        },
+        {
+          "text": "He came to hide them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to do if someone strikes you on the right cheek?",
+      "explanation": "Jesus said not to resist an evil person, but to turn the other cheek also.",
+      "bibleReference": "Matthew 5:39",
+      "answers": [
+        {
+          "text": "Strike back at him in return",
+          "isCorrect": false
+        },
+        {
+          "text": "Turn the other cheek also",
+          "isCorrect": true
+        },
+        {
+          "text": "Walk away without a word",
+          "isCorrect": false
+        },
+        {
+          "text": "Take the matter to the elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell his hearers to do for their enemies?",
+      "explanation": "Jesus said, \"Love your enemies, bless those who curse you, do good to those who hate you, and pray for those who mistreat you.\"",
+      "bibleReference": "Matthew 5:44",
+      "answers": [
+        {
+          "text": "Avoid them at all costs and leave",
+          "isCorrect": false
+        },
+        {
+          "text": "Forgive them only one time",
+          "isCorrect": false
+        },
+        {
+          "text": "Love them and pray for those who persecute them",
+          "isCorrect": true
+        },
+        {
+          "text": "Report them to the local judge",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
