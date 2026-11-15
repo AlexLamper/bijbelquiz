@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 2",
+  "description": "Ten questions on the birth of Jesus and his childhood in Luke 2.",
+  "slug": "luke-bible-quiz-part-2",
+  "categorySlug": "life-of-jesus",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which Roman emperor ordered that the whole empire be registered?",
+      "explanation": "In those days a decree went out from Caesar Augustus that all the world should be enrolled.",
+      "bibleReference": "Luke 2:1",
+      "answers": [
+        {
+          "text": "Nero",
+          "isCorrect": false
+        },
+        {
+          "text": "Caesar Augustus",
+          "isCorrect": true
+        },
+        {
+          "text": "Tiberius",
+          "isCorrect": false
+        },
+        {
+          "text": "Herod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which town did Joseph travel to be registered, because he was of the house of David?",
+      "explanation": "Joseph went up from Nazareth in Galilee to Bethlehem, the city of David.",
+      "bibleReference": "Luke 2:4",
+      "answers": [
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethlehem",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Mary lay her newborn son?",
+      "explanation": "She wrapped him in strips of cloth and laid him in a feeding trough, because there was no room for them in the inn.",
+      "bibleReference": "Luke 2:7",
+      "answers": [
+        {
+          "text": "In a manger",
+          "isCorrect": true
+        },
+        {
+          "text": "In a basket",
+          "isCorrect": false
+        },
+        {
+          "text": "In a temple",
+          "isCorrect": false
+        },
+        {
+          "text": "On a hillside",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were the first to hear the announcement of the birth from the angel?",
+      "explanation": "Shepherds in the same country were staying in the field, keeping watch over their flock by night, when an angel of the Lord stood by them.",
+      "bibleReference": "Luke 2:8-9",
+      "answers": [
+        {
+          "text": "Wise men from the east",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Shepherds watching their flocks by night",
+          "isCorrect": true
+        },
+        {
+          "text": "The king's officials",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What sign did the angel give the shepherds?",
+      "explanation": "This will be the sign to you: you will find a baby wrapped in strips of cloth, lying in a feeding trough.",
+      "bibleReference": "Luke 2:12",
+      "answers": [
+        {
+          "text": "A star above Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "A baby wrapped in strips of cloth lying in a feeding trough",
+          "isCorrect": true
+        },
+        {
+          "text": "A fire on the hill",
+          "isCorrect": false
+        },
+        {
+          "text": "A voice from heaven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the multitude of heavenly host say?",
+      "explanation": "They praised God and said, Glory to God in the highest, and on earth peace, goodwill toward men.",
+      "bibleReference": "Luke 2:13-14",
+      "answers": [
+        {
+          "text": "Glory to God in the highest",
+          "isCorrect": true
+        },
+        {
+          "text": "Hosanna to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "Holy, holy, holy",
+          "isCorrect": false
+        },
+        {
+          "text": "Blessed be the Lord God of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name was given to the child on the eighth day?",
+      "explanation": "When eight days were fulfilled for the circumcision of the child, his name was called Jesus, the name given by the angel before he was conceived.",
+      "bibleReference": "Luke 2:21",
+      "answers": [
+        {
+          "text": "Emmanuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "John",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who took the child Jesus in his arms in the temple and blessed God?",
+      "explanation": "Simeon, a righteous and devout man, was waiting for the consolation of Israel, and the Holy Spirit was on him.",
+      "bibleReference": "Luke 2:25-28",
+      "answers": [
+        {
+          "text": "Zechariah",
+          "isCorrect": false
+        },
+        {
+          "text": "Eli",
+          "isCorrect": false
+        },
+        {
+          "text": "Simeon",
+          "isCorrect": true
+        },
+        {
+          "text": "Nicodemus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Jesus when his parents found him in the temple among the teachers?",
+      "explanation": "When he was twelve years old they went up to Jerusalem for the feast, and after three days they found him in the temple, sitting in the midst of the teachers.",
+      "bibleReference": "Luke 2:42-46",
+      "answers": [
+        {
+          "text": "Twelve",
+          "isCorrect": true
+        },
+        {
+          "text": "Eight",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirteen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when his parents asked why he had stayed behind?",
+      "explanation": "He said to them, Why were you looking for me? Didn't you know that I must be in my Father's house?",
+      "bibleReference": "Luke 2:49",
+      "answers": [
+        {
+          "text": "He had lost the way",
+          "isCorrect": false
+        },
+        {
+          "text": "He had to be in his Father's house",
+          "isCorrect": true
+        },
+        {
+          "text": "He was waiting for them to return",
+          "isCorrect": false
+        },
+        {
+          "text": "He wanted to see the city",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

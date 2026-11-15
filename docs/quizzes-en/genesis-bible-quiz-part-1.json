@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 1",
+  "description": "Ten questions on the creation account in Genesis 1, from the first light to the sixth day.",
+  "slug": "genesis-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did God create on the first day?",
+      "explanation": "God said \"Let there be light\" and there was light. He separated the light from the darkness and called the light Day. The sun and moon came on the fourth day.",
+      "bibleReference": "Genesis 1:3-5",
+      "answers": [
+        {
+          "text": "The sky",
+          "isCorrect": false
+        },
+        {
+          "text": "Light",
+          "isCorrect": true
+        },
+        {
+          "text": "Dry land",
+          "isCorrect": false
+        },
+        {
+          "text": "The sun and the moon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day did God make the sun, the moon and the stars?",
+      "explanation": "On the fourth day God made the two great lights and the stars to separate day from night and to mark seasons, days and years.",
+      "bibleReference": "Genesis 1:14-19",
+      "answers": [
+        {
+          "text": "The second day",
+          "isCorrect": false
+        },
+        {
+          "text": "The third day",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourth day",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did God call the expanse He made between the waters on the second day?",
+      "explanation": "God made an expanse to separate the waters from the waters, and called the expanse sky. The dry land was called earth on the third day.",
+      "bibleReference": "Genesis 1:6-8",
+      "answers": [
+        {
+          "text": "Sky",
+          "isCorrect": true
+        },
+        {
+          "text": "Earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God say about everything He had made at the end of the sixth day?",
+      "explanation": "God saw everything that He had made, and behold, it was very good. After each earlier day He had said that it was good; the sixth day closes with this stronger verdict.",
+      "bibleReference": "Genesis 1:31",
+      "answers": [
+        {
+          "text": "It was complete",
+          "isCorrect": false
+        },
+        {
+          "text": "It was beautiful",
+          "isCorrect": false
+        },
+        {
+          "text": "It was very good",
+          "isCorrect": true
+        },
+        {
+          "text": "It was ready for rest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which creatures did God make on the fifth day?",
+      "explanation": "God filled the waters with living creatures and made birds to fly above the earth, and He blessed them to be fruitful and multiply. Land animals and people came on the sixth day.",
+      "bibleReference": "Genesis 1:20-23",
+      "answers": [
+        {
+          "text": "Cattle and creeping things",
+          "isCorrect": false
+        },
+        {
+          "text": "Sea creatures and birds",
+          "isCorrect": true
+        },
+        {
+          "text": "Wild animals and man",
+          "isCorrect": false
+        },
+        {
+          "text": "Plants and trees",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does Genesis 1 describe the way God created?",
+      "explanation": "Again and again the chapter says \"God said\", and it was so. Creation is presented as the effect of God's word alone.",
+      "bibleReference": "Genesis 1:3",
+      "answers": [
+        {
+          "text": "He spoke and it came to be",
+          "isCorrect": true
+        },
+        {
+          "text": "He shaped everything from clay",
+          "isCorrect": false
+        },
+        {
+          "text": "He fought the waters of chaos",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent angels to do the work",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose image did God create mankind?",
+      "explanation": "God created man in his own image, in God's image he created him; male and female he created them.",
+      "bibleReference": "Genesis 1:27",
+      "answers": [
+        {
+          "text": "The image of the angels",
+          "isCorrect": false
+        },
+        {
+          "text": "The image of the animals",
+          "isCorrect": false
+        },
+        {
+          "text": "The image of the heavens",
+          "isCorrect": false
+        },
+        {
+          "text": "His own image",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did God give people and animals to eat in the beginning?",
+      "explanation": "God gave every herb yielding seed and every tree with seed-bearing fruit to people for food, and the green herb to the animals.",
+      "bibleReference": "Genesis 1:29-30",
+      "answers": [
+        {
+          "text": "Only fish and birds",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread from the heavens",
+          "isCorrect": false
+        },
+        {
+          "text": "Plants that yield seed and fruit",
+          "isCorrect": true
+        },
+        {
+          "text": "Whatever they could hunt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does Genesis 1 describe the earth at the very beginning?",
+      "explanation": "The earth was formless and empty, and darkness was on the surface of the deep, while God's Spirit hovered over the waters.",
+      "bibleReference": "Genesis 1:2",
+      "answers": [
+        {
+          "text": "Formless and empty, with darkness over the deep",
+          "isCorrect": true
+        },
+        {
+          "text": "Full of life, but covered in ice",
+          "isCorrect": false
+        },
+        {
+          "text": "A garden with a river flowing through it",
+          "isCorrect": false
+        },
+        {
+          "text": "Bright, with the sun already shining",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God tell the first man and woman to do after He blessed them?",
+      "explanation": "God blessed them and told them to be fruitful, multiply, fill the earth, subdue it and have dominion over the fish, the birds and every living thing.",
+      "bibleReference": "Genesis 1:28",
+      "answers": [
+        {
+          "text": "Name every animal and plant",
+          "isCorrect": false
+        },
+        {
+          "text": "Be fruitful, multiply, fill the earth and subdue it",
+          "isCorrect": true
+        },
+        {
+          "text": "Build an altar and bring an offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Guard the garden and rest on the seventh day",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

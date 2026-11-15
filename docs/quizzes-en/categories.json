@@ -1,0 +1,9 @@
+[
+  { "slug": "old-testament", "title": "Old Testament", "description": "Quizzes on the books of the Old Testament.", "sortOrder": 1 },
+  { "slug": "new-testament", "title": "New Testament", "description": "Quizzes on the books of the New Testament.", "sortOrder": 2 },
+  { "slug": "general", "title": "General Bible Knowledge", "description": "Mixed quizzes across the whole Bible.", "sortOrder": 3 },
+  { "slug": "life-of-jesus", "title": "Life of Jesus", "description": "From the manger to the empty tomb.", "sortOrder": 4 },
+  { "slug": "women-of-the-bible", "title": "Women of the Bible", "description": "Ruth, Esther, Mary and many more.", "sortOrder": 5 },
+  { "slug": "miracles-and-signs", "title": "Miracles and Signs", "description": "The wonders in the Old and New Testament.", "sortOrder": 6 },
+  { "slug": "people-of-the-bible", "title": "People of the Bible", "description": "Kings, prophets, apostles and ordinary people.", "sortOrder": 7 }
+]
