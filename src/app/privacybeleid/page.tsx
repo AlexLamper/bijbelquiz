@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { localizePath } from '@/config/routes';
+import { pageAlternates } from '@/config/routes';
 import Link from 'next/link';
 
 import { ChevronRightIcon } from '@/components/web2/marketing/icons';
@@ -12,7 +12,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.privacybeleid.title'),
     description: t('pages.privacybeleid.description'),
-    alternates: { canonical: localizePath('/privacybeleid') },
+    alternates: pageAlternates('/privacybeleid'),
   };
 }
 

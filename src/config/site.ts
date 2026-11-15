@@ -40,7 +40,7 @@ const NL: SiteConfig = {
 };
 
 /** Domain of the international site; every language lives on it. */
-const INTL_ORIGIN = 'https://biblequizzes.app';
+export const INTL_ORIGIN = 'https://biblequizzes.app';
 
 /**
  * The languages of the intl site, in rollout order. English is on the root;

@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { localizePath } from '@/config/routes';
+import { pageAlternates } from '@/config/routes';
 import type { Metadata } from 'next';
 
 import { getServerSession } from 'next-auth';
@@ -17,9 +17,7 @@ export function generateMetadata(): Metadata {
     description:
     t('pages.quizzen.description'),
     keywords: tList('pages.quizzen.keywords'),
-    alternates: {
-      canonical: localizePath('/quizzen'),
-    },
+    alternates: pageAlternates('/quizzen'),
     openGraph: {
       title: t('pages.quizzen.ogTitle'),
       description: t('pages.quizzen.ogDescription'),

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { localizePath } from '@/config/routes';
+import { pageAlternates } from '@/config/routes';
 import { getServerSession } from 'next-auth';
 
 import { authOptions } from '@/lib/auth';
@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
     title: t('pages.groepslicentie.title'),
     description:
     t('pages.groepslicentie.description', { seats: GROUP_LICENSE_SEATS }),
-    alternates: { canonical: localizePath('/groepslicentie') },
+    alternates: pageAlternates('/groepslicentie'),
     openGraph: {
       title: t('pages.groepslicentie.ogTitle'),
       description: t('pages.groepslicentie.ogDescription'),

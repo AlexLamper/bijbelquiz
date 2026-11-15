@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { localizePath } from '@/config/routes';
+import { pageAlternates } from '@/config/routes';
 
 import { Button, Container } from '@/components/bq';
 import { HELP_QUESTIONS } from '@/components/web2/marketing/help-content';
@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.hulp.title'),
     description: t('pages.hulp.description'),
-    alternates: { canonical: localizePath('/hulp') },
+    alternates: pageAlternates('/hulp'),
   };
 }
 

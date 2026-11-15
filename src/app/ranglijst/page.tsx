@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { localizePath } from '@/config/routes';
+import { pageAlternates } from '@/config/routes';
 import { getServerSession } from 'next-auth';
 
 import { Container, Tabs } from '@/components/bq';
@@ -18,9 +18,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.ranglijst.title'),
     description: t('pages.ranglijst.description'),
-    alternates: {
-      canonical: localizePath('/ranglijst'),
-    },
+    alternates: pageAlternates('/ranglijst'),
     openGraph: {
       title: t('pages.ranglijst.ogTitle'),
       description: t('pages.ranglijst.ogDescription'),

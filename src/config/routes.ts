@@ -1,5 +1,5 @@
 import { ROUTE_PAIRS } from '@/config/route-map';
-import { isNlSite } from '@/config/site';
+import { INTL_LOCALES, INTL_ORIGIN, isNlSite } from '@/config/site';
 
 /** Turns a Next path pattern into a matcher: `/a/:id/b` -> /^\/a\/([^/]+)\/b$/. */
 function matcher(pattern: string): RegExp {
@@ -30,4 +30,20 @@ export function localizePath(path: string): string {
     return en.replace(/:[A-Za-z]+/g, () => m[i++]) + rest;
   }
   return path;
+}
+
+/**
+ * Metadata `alternates` for a page that exists in every language. Identity on
+ * NL (canonical only, the Dutch HTML stays as it was). On intl it adds `hreflang`
+ * links to the same page in each language plus `x-default` (English). Pages whose
+ * slugs differ per language (quizzes) keep a plain canonical.
+ */
+export function pageAlternates(path: string): { canonical: string; languages?: Record<string, string> } {
+  const canonical = localizePath(path);
+  if (isNlSite()) return { canonical };
+  const tail = canonical === '/' ? '' : canonical;
+  const languages: Record<string, string> = {};
+  for (const l of INTL_LOCALES) languages[l] = `${INTL_ORIGIN}${l === 'en' ? '' : `/${l}`}${tail}` || INTL_ORIGIN;
+  languages['x-default'] = `${INTL_ORIGIN}${tail}`;
+  return { canonical, languages };
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { localizePath } from '@/config/routes';
+import { pageAlternates } from '@/config/routes';
 
 import { LegalPage, LegalText, type LegalSection } from '@/components/web2/marketing/LegalPage';
 import { t } from '@/i18n';
@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   return {
     title: t('pages.voorwaarden.title'),
     description: t('pages.voorwaarden.description'),
-    alternates: { canonical: localizePath('/voorwaarden') },
+    alternates: pageAlternates('/voorwaarden'),
   };
 }
 

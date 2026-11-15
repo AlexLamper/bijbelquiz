@@ -82,7 +82,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 
 ### Phase 5 - launch English
 - [ ] `SITE_INDEXABLE=true`, Search Console property, submit sitemap
-- [ ] `hreflang` between equivalent pages (nl on bijbelquiz.com <-> en/es/... on biblequizzes.app)
+- [x] `hreflang` between the intl languages (static pages; quiz pages differ per language so keep a plain canonical). NL <-> intl link deliberately left out to keep NL HTML unchanged
 
 ### Phase 6 - app (repo bijbelquiz-app)
 - [ ] Flutter l10n (`intl`/ARB): extract strings (~58 of 132 Dart files)
