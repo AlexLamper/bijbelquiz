@@ -1,3 +1,5 @@
+import { isNlSite } from '@/config/site';
+
 export interface ParsedReference {
   book: string;
   chapter: number;
@@ -97,8 +99,12 @@ export function parseBibleReference(ref: string): ParsedReference | null {
 
   // Match: optional number prefix + book name + chapter:verse(-endVerse)
   // Examples: "Genesis 1:1", "1 Samuël 17:50", "Dan. 12:13", "Genesis 6:13-14"
+  // German writes "1. Mose": the dot after the number is allowed on the intl site only,
+  // so Dutch references parse exactly as they always did.
   const match = firstRef.match(
-    /^(\d+\s+)?([A-Za-zÀ-ÿ]+\.?(?:\s[A-Za-zÀ-ÿ]+\.?)*)\s+(\d+):(\d+)(?:-(\d+))?$/
+    isNlSite()
+      ? /^(\d+\s+)?([A-Za-zÀ-ÿ]+\.?(?:\s[A-Za-zÀ-ÿ]+\.?)*)\s+(\d+):(\d+)(?:-(\d+))?$/
+      : /^(\d+\.?\s+)?([A-Za-zÀ-ÿ]+\.?(?:\s[A-Za-zÀ-ÿ]+\.?)*)\s+(\d+):(\d+)(?:-(\d+))?$/
   );
 
   if (!match) return null;

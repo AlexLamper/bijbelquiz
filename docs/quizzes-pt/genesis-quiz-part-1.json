@@ -1,0 +1,242 @@
+{
+  "title": "Gênesis Quiz bíblico - Capítulo 1",
+  "description": "Dez perguntas sobre a criação em Gênesis 1, da primeira luz ao sexto dia.",
+  "slug": "genesis-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "O que Deus criou no princípio?",
+      "explanation": "O capítulo começa com Deus criando os céus e a terra no princípio.",
+      "bibleReference": "Gênesis 1:1",
+      "answers": [
+        {
+          "text": "Somente o mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Os céus e a terra",
+          "isCorrect": true
+        },
+        {
+          "text": "As estrelas sozinhas",
+          "isCorrect": false
+        },
+        {
+          "text": "O paraíso e os homens",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "O que Deus disse quando criou a luz?",
+      "explanation": "Disse Deus: Haja luz; e houve luz.",
+      "bibleReference": "Gênesis 1:3",
+      "answers": [
+        {
+          "text": "\"Haja dia!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Brilhe o sol!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Venha a claridade!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Haja luz!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Como Deus chamou a luz?",
+      "explanation": "Deus chamou à luz Dia, e às trevas chamou Noite.",
+      "bibleReference": "Gênesis 1:5",
+      "answers": [
+        {
+          "text": "Dia",
+          "isCorrect": true
+        },
+        {
+          "text": "Noite",
+          "isCorrect": false
+        },
+        {
+          "text": "Céus",
+          "isCorrect": false
+        },
+        {
+          "text": "Terra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Como Deus chamou a expansão que fez no meio das águas?",
+      "explanation": "Deus chamou à expansão Céus.",
+      "bibleReference": "Gênesis 1:7-8",
+      "answers": [
+        {
+          "text": "Mares",
+          "isCorrect": false
+        },
+        {
+          "text": "Terra",
+          "isCorrect": false
+        },
+        {
+          "text": "Céus",
+          "isCorrect": true
+        },
+        {
+          "text": "Trevas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Como Deus chamou a porção seca que apareceu?",
+      "explanation": "Deus chamou à porção seca Terra, e à reunião das águas chamou Mares.",
+      "bibleReference": "Gênesis 1:9-10",
+      "answers": [
+        {
+          "text": "Terra",
+          "isCorrect": true
+        },
+        {
+          "text": "Mares",
+          "isCorrect": false
+        },
+        {
+          "text": "Expansão",
+          "isCorrect": false
+        },
+        {
+          "text": "Céus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "O que Deus fez para dominar o dia e a noite?",
+      "explanation": "Deus fez os dois grandes luminares: o maior para o dia e o menor para a noite; fez também as estrelas.",
+      "bibleReference": "Gênesis 1:14-16",
+      "answers": [
+        {
+          "text": "Dois luminares do mesmo tamanho para o dia inteiro",
+          "isCorrect": false
+        },
+        {
+          "text": "Somente as estrelas do céu",
+          "isCorrect": false
+        },
+        {
+          "text": "Um luminar maior e um luminar menor",
+          "isCorrect": true
+        },
+        {
+          "text": "Um grande fogo sobre a terra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "O que Deus fez surgir nas águas e no ar?",
+      "explanation": "Deus disse que as águas produzissem seres vivos e que aves voassem; criou as grandes criaturas marinhas, os seres vivos das águas e toda ave de asas.",
+      "bibleReference": "Gênesis 1:20-21",
+      "answers": [
+        {
+          "text": "Somente aves",
+          "isCorrect": false
+        },
+        {
+          "text": "Somente peixes",
+          "isCorrect": false
+        },
+        {
+          "text": "Seres das águas e animais da terra",
+          "isCorrect": false
+        },
+        {
+          "text": "Seres das águas e aves",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "À imagem de quem Deus criou o ser humano?",
+      "explanation": "Deus criou o ser humano à sua imagem, à imagem de Deus o criou; macho e fêmea os criou.",
+      "bibleReference": "Gênesis 1:26-27",
+      "answers": [
+        {
+          "text": "À sua própria imagem",
+          "isCorrect": true
+        },
+        {
+          "text": "À imagem dos anjos",
+          "isCorrect": false
+        },
+        {
+          "text": "À imagem dos animais",
+          "isCorrect": false
+        },
+        {
+          "text": "A nenhuma imagem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "O que Deus deu aos seres humanos para comer?",
+      "explanation": "Deus deu toda erva que dá semente e toda árvore que dá fruto com semente para o seu alimento.",
+      "bibleReference": "Gênesis 1:29",
+      "answers": [
+        {
+          "text": "Os peixes do mar aberto",
+          "isCorrect": false
+        },
+        {
+          "text": "Ervas e frutos das árvores",
+          "isCorrect": true
+        },
+        {
+          "text": "Pão e vinho da colheita",
+          "isCorrect": false
+        },
+        {
+          "text": "Mel e leite dos animais",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Como Deus avaliou, no fim, tudo o que tinha feito?",
+      "explanation": "Deus viu tudo o que havia feito, e eis que era bom em grande maneira.",
+      "bibleReference": "Gênesis 1:31",
+      "answers": [
+        {
+          "text": "Ainda não estava terminado",
+          "isCorrect": false
+        },
+        {
+          "text": "Não era bom nem mau",
+          "isCorrect": false
+        },
+        {
+          "text": "Era muito bom",
+          "isCorrect": true
+        },
+        {
+          "text": "Era bom, mas incompleto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

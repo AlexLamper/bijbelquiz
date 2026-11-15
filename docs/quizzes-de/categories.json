@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "old-testament",
+    "title": "Altes Testament",
+    "description": "Quizze zu den Büchern des Alten Testaments.",
+    "sortOrder": 1
+  },
+  {
+    "slug": "new-testament",
+    "title": "Neues Testament",
+    "description": "Quizze zu den Büchern des Neuen Testaments.",
+    "sortOrder": 2
+  },
+  {
+    "slug": "general",
+    "title": "Allgemeines Bibelwissen",
+    "description": "Gemischte Quizze aus der ganzen Bibel.",
+    "sortOrder": 3
+  },
+  {
+    "slug": "life-of-jesus",
+    "title": "Das Leben Jesu",
+    "description": "Von der Krippe bis zum leeren Grab.",
+    "sortOrder": 4
+  },
+  {
+    "slug": "women-of-the-bible",
+    "title": "Frauen der Bibel",
+    "description": "Rut, Ester, Maria und viele mehr.",
+    "sortOrder": 5
+  },
+  {
+    "slug": "miracles-and-signs",
+    "title": "Wunder und Zeichen",
+    "description": "Die Wunder im Alten und Neuen Testament.",
+    "sortOrder": 6
+  },
+  {
+    "slug": "people-of-the-bible",
+    "title": "Personen der Bibel",
+    "description": "Könige, Propheten, Apostel und ganz normale Menschen.",
+    "sortOrder": 7
+  }
+]

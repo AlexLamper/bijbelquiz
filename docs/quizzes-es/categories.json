@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "old-testament",
+    "title": "Antiguo Testamento",
+    "description": "Cuestionarios sobre los libros del Antiguo Testamento.",
+    "sortOrder": 1
+  },
+  {
+    "slug": "new-testament",
+    "title": "Nuevo Testamento",
+    "description": "Cuestionarios sobre los libros del Nuevo Testamento.",
+    "sortOrder": 2
+  },
+  {
+    "slug": "general",
+    "title": "Conocimiento bíblico general",
+    "description": "Cuestionarios variados sobre toda la Biblia.",
+    "sortOrder": 3
+  },
+  {
+    "slug": "life-of-jesus",
+    "title": "La vida de Jesús",
+    "description": "Del pesebre a la tumba vacía.",
+    "sortOrder": 4
+  },
+  {
+    "slug": "women-of-the-bible",
+    "title": "Mujeres de la Biblia",
+    "description": "Rut, Ester, María y muchas más.",
+    "sortOrder": 5
+  },
+  {
+    "slug": "miracles-and-signs",
+    "title": "Milagros y señales",
+    "description": "Las maravillas del Antiguo y del Nuevo Testamento.",
+    "sortOrder": 6
+  },
+  {
+    "slug": "people-of-the-bible",
+    "title": "Personajes de la Biblia",
+    "description": "Reyes, profetas, apóstoles y gente común.",
+    "sortOrder": 7
+  }
+]

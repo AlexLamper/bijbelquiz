@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "old-testament",
+    "title": "Ancien Testament",
+    "description": "Quiz sur les livres de l'Ancien Testament.",
+    "sortOrder": 1
+  },
+  {
+    "slug": "new-testament",
+    "title": "Nouveau Testament",
+    "description": "Quiz sur les livres du Nouveau Testament.",
+    "sortOrder": 2
+  },
+  {
+    "slug": "general",
+    "title": "Culture biblique générale",
+    "description": "Des quiz variés sur toute la Bible.",
+    "sortOrder": 3
+  },
+  {
+    "slug": "life-of-jesus",
+    "title": "La vie de Jésus",
+    "description": "De la crèche au tombeau vide.",
+    "sortOrder": 4
+  },
+  {
+    "slug": "women-of-the-bible",
+    "title": "Femmes de la Bible",
+    "description": "Ruth, Esther, Marie et bien d'autres.",
+    "sortOrder": 5
+  },
+  {
+    "slug": "miracles-and-signs",
+    "title": "Miracles et signes",
+    "description": "Les prodiges de l'Ancien et du Nouveau Testament.",
+    "sortOrder": 6
+  },
+  {
+    "slug": "people-of-the-bible",
+    "title": "Personnages de la Bible",
+    "description": "Rois, prophètes, apôtres et gens ordinaires.",
+    "sortOrder": 7
+  }
+]

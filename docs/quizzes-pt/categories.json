@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "old-testament",
+    "title": "Antigo Testamento",
+    "description": "Quizzes sobre os livros do Antigo Testamento.",
+    "sortOrder": 1
+  },
+  {
+    "slug": "new-testament",
+    "title": "Novo Testamento",
+    "description": "Quizzes sobre os livros do Novo Testamento.",
+    "sortOrder": 2
+  },
+  {
+    "slug": "general",
+    "title": "Conhecimento bíblico geral",
+    "description": "Quizzes variados sobre toda a Bíblia.",
+    "sortOrder": 3
+  },
+  {
+    "slug": "life-of-jesus",
+    "title": "A vida de Jesus",
+    "description": "Da manjedoura ao túmulo vazio.",
+    "sortOrder": 4
+  },
+  {
+    "slug": "women-of-the-bible",
+    "title": "Mulheres da Bíblia",
+    "description": "Rute, Ester, Maria e muitas outras.",
+    "sortOrder": 5
+  },
+  {
+    "slug": "miracles-and-signs",
+    "title": "Milagres e sinais",
+    "description": "Os feitos maravilhosos do Antigo e do Novo Testamento.",
+    "sortOrder": 6
+  },
+  {
+    "slug": "people-of-the-bible",
+    "title": "Personagens da Bíblia",
+    "description": "Reis, profetas, apóstolos e gente comum.",
+    "sortOrder": 7
+  }
+]

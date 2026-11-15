@@ -34,6 +34,7 @@ for (const file of ['.env', '.env.local']) {
 }
 
 const APPLY = process.argv.includes('--apply');
+const LANG = process.argv.find((a) => a.startsWith('--lang='))?.slice(7) ?? 'en';
 
 interface CategoryFile {
   slug: string;
@@ -48,7 +49,7 @@ async function main() {
     process.exit(2);
   }
   const categories = JSON.parse(
-    fs.readFileSync(path.resolve(process.cwd(), 'docs/quizzes-en/categories.json'), 'utf8'),
+    fs.readFileSync(path.resolve(process.cwd(), `docs/quizzes-${LANG}/categories.json`), 'utf8'),
   ) as CategoryFile[];
 
   const { connectDB, Category } = await import('@/database');
@@ -65,7 +66,7 @@ async function main() {
     const existing = await Category.findOne({ slug: category.slug });
     console.log(`${existing ? 'UPDATE' : 'NIEUW '} ${category.slug}  (${category.title})`);
     if (!APPLY) continue;
-    const body = { ...category, lang: 'en', isActive: true };
+    const body = { ...category, lang: LANG, isActive: true };
     if (existing) {
       existing.set(body);
       await existing.save();

@@ -31,7 +31,7 @@
  *   node --import tsx scripts/import-quiz-json.mts <file...>           # dry run
  *   node --import tsx scripts/import-quiz-json.mts <file...> --apply   # write
  *   node --import tsx scripts/import-quiz-json.mts --all --apply
- *   node --import tsx scripts/import-quiz-json.mts --lang=en --all     # docs/quizzes-en into the intl database
+ *   node --import tsx scripts/import-quiz-json.mts --lang=en --all     # docs/quizzes-en into the intl database (also --lang=de|fr|pt)
  *
  * Run scripts/validate-quiz-json.ts on the same files first. This script
  * checks that a quiz can be stored, not that it is correct.
@@ -62,8 +62,14 @@ for (const file of ['.env', '.env.local']) {
   }
 }
 
-const LANG_EN = process.argv.includes('--lang=en');
-const QUIZ_DIR = path.resolve(process.cwd(), LANG_EN ? 'docs/quizzes-en' : 'docs/quizzes');
+const LANG = process.argv.find((a) => a.startsWith('--lang='))?.slice(7) ?? 'nl';
+const LANG_EN = LANG !== 'nl'; // "not Dutch": category slugs, own library folder, `lang` on the document
+// Spanish has no verified Bible text yet (see docs/quizzes-es), so nothing may be imported for it.
+if (LANG === 'es') {
+  console.error('Spanish quizzes cannot be imported until a verified Spanish Bible text exists.');
+  process.exit(2);
+}
+const QUIZ_DIR = path.resolve(process.cwd(), LANG === 'nl' ? 'docs/quizzes' : `docs/quizzes-${LANG}`);
 const APPLY = process.argv.includes('--apply');
 
 interface QuizFile {
@@ -144,7 +150,7 @@ function toDocument(quiz: QuizFile, categoryId: string) {
     slug: quiz.slug,
     description: quiz.description,
     categoryId: new mongoose.Types.ObjectId(categoryId),
-    ...(LANG_EN ? { lang: 'en' } : {}),
+    ...(LANG_EN ? { lang: LANG } : {}),
     rewardXp: quiz.rewardXp,
     difficulty: quiz.difficulty,
     isPremium: quiz.isPremium,

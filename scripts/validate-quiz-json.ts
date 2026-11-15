@@ -19,6 +19,7 @@
  *   node --import tsx scripts/validate-quiz-json.ts --all
  *   node --import tsx scripts/validate-quiz-json.ts --all --no-fetch
  *   node --import tsx scripts/validate-quiz-json.ts --lang=en --all     # docs/quizzes-en, World English Bible
+ *   node --import tsx scripts/validate-quiz-json.ts --lang=de --all --bible-dir=../bijbelapi-data/data   # offline, strict
  *
  * Exits 1 if any file has an error. Warnings do not fail the run.
  */
@@ -29,6 +30,7 @@ import process from 'node:process';
 
 import { parseBibleReference } from '@/lib/bible-reference';
 import { resolveQuizPassage } from '@/lib/quiz-passage';
+import { parseStrictRef } from '@/lib/quiz-ref-intl';
 
 // Mirrors Next.js precedence: .env.local overrides .env.
 for (const file of ['.env', '.env.local']) {
@@ -48,12 +50,40 @@ for (const file of ['.env', '.env.local']) {
   }
 }
 
-const LANG_EN = process.argv.includes('--lang=en');
-const QUIZ_DIR = path.resolve(process.cwd(), LANG_EN ? 'docs/quizzes-en' : 'docs/quizzes');
+/** `--lang=xx` (en, es, pt, de, fr). Without it the Dutch library is checked. */
+const LANG = process.argv.find((a) => a.startsWith('--lang='))?.slice(7) ?? 'nl';
+const LANG_EN = LANG !== 'nl'; // "not Dutch": category slugs, own library folder
+/** BijbelAPI version per language. `es` has no verified public-domain text yet, so it cannot be checked. */
+const VERSION_BY_LANG: Record<string, string> = { nl: 'sv', en: 'web', de: 'luth1912', fr: 'lsg1910', pt: 'blivre' };
+/** `--bible-dir=<bijbelapi-data/data>`: check references against the real data files, offline. */
+const BIBLE_DIR = process.argv.find((a) => a.startsWith('--bible-dir='))?.slice(12);
+const QUIZ_DIR = path.resolve(process.cwd(), LANG === 'nl' ? 'docs/quizzes' : `docs/quizzes-${LANG}`);
+if (LANG_EN && !VERSION_BY_LANG[LANG]) {
+  console.error(`No verified Bible text for "${LANG}" yet, so its quizzes cannot be checked. Not allowed to import.`);
+  process.exit(2);
+}
+if (LANG_EN && LANG !== 'en' && !BIBLE_DIR) {
+  console.error(`--bible-dir=<path to bijbelapi-data/data> is required for --lang=${LANG}: every reference is checked against the real text.`);
+  process.exit(2);
+}
+const BIBLE_DATA: Record<string, any> = {};
+function bibleData(): any {
+  const v = VERSION_BY_LANG[LANG];
+  BIBLE_DATA[v] ??= JSON.parse(fs.readFileSync(path.join(BIBLE_DIR as string, `${v}.json`), 'utf8')).books;
+  return BIBLE_DATA[v];
+}
+/** Title pattern per language: "<Book> <label> - <chapter word> <n>". */
+const TITLE_RE: Record<string, RegExp> = {
+  en: / Bible Quiz - Chapter (\d+)$/,
+  de: / Bibelquiz - Kapitel (\d+)$/,
+  fr: / Quiz biblique - Chapitre (\d+)$/,
+  pt: / Quiz bíblico - Capítulo (\d+)$/,
+  es: / Quiz bíblico - Capítulo (\d+)$/,
+};
 /** English files point at a category by slug (the intl database has its own ids). */
 const EN_CATEGORY_SLUGS = new Set<string>(
   LANG_EN
-    ? (JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'docs/quizzes-en/categories.json'), 'utf8')) as Array<{ slug: string }>).map(
+    ? (JSON.parse(fs.readFileSync(path.resolve(QUIZ_DIR, 'categories.json'), 'utf8')) as Array<{ slug: string }>).map(
         (category) => category.slug,
       )
     : [],
@@ -122,18 +152,35 @@ async function referenceResolves(ref: string): Promise<boolean> {
   const key = process.env.BIJBEL_API_KEY;
   const url =
     `https://www.bijbelapi.com/api/verse?book=${encodeURIComponent(parsed.book)}` +
-    `&chapter=${parsed.chapter}&verse=${parsed.verse}&version=${LANG_EN ? 'web' : 'sv'}`;
+    `&chapter=${parsed.chapter}&verse=${parsed.verse}&version=${VERSION_BY_LANG[LANG]}`;
 
   try {
     const response = await fetch(url, { headers: key ? { 'x-api-key': key } : {} });
     if (!response.ok) return false;
     const body = (await response.json()) as { text?: string; version?: string };
     // The API falls back to Dutch when it does not know the version; that is not a pass.
-    if (LANG_EN && body.version !== 'web') return false;
+    if (LANG_EN && body.version !== VERSION_BY_LANG[LANG]) return false;
     return typeof body.text === 'string' && body.text.trim().length > 0;
   } catch {
     return false;
   }
+}
+
+/** Parses one reference: Dutch leniently (as the app does), other languages strictly. */
+function refParses(ref: string): boolean {
+  if (LANG === 'nl') return !!parseBibleReference(ref);
+  return typeof parseStrictRef(LANG, ref) !== 'string';
+}
+
+/** Offline check against the real data file: every verse of the range must exist and have text. */
+function referenceInData(ref: string): string | null {
+  const parsed = parseStrictRef(LANG, ref);
+  if (typeof parsed === 'string') return parsed;
+  const verses = bibleData()[parsed.apiBook]?.chapters?.[String(parsed.chapter)]?.verses ?? {};
+  for (let v = parsed.verse; v <= parsed.endVerse; v += 1) {
+    if (!String(verses[String(v)] ?? '').trim()) return `${ref}: verse ${v} does not exist in ${VERSION_BY_LANG[LANG]}`;
+  }
+  return null;
 }
 
 async function validate(file: string, slugsSeen: Map<string, string>): Promise<Report> {
@@ -174,7 +221,7 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
   }
   if (LANG_EN) {
     if (!EN_CATEGORY_SLUGS.has(String(quiz.categorySlug))) {
-      err(`categorySlug staat niet in docs/quizzes-en/categories.json: ${String(quiz.categorySlug)}`);
+      err(`categorySlug staat niet in categories.json: ${String(quiz.categorySlug)}`);
     }
   } else if (!CATEGORY_IDS.has(String(quiz.categoryId))) {
     err(`categoryId is geen bekende live ObjectId: ${String(quiz.categoryId)}`);
@@ -261,7 +308,7 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
     const ref = typeof q.bibleReference === 'string' ? q.bibleReference.trim() : '';
     if (ref === '' || ref === '-') {
       dashRefs += 1;
-    } else if (!parseBibleReference(ref)) {
+    } else if (!refParses(ref.split(/[;,]/)[0].trim())) {
       err(`${label}: regel 8: bibleReference onparsebaar: "${ref}"`);
     } else {
       // Every reference in the field is checked, not only the first.
@@ -271,7 +318,7 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
       // sat in third position in hooglied-deel-2 for exactly that reason.
       const segments = ref.split(/[;,]/).map((s) => s.trim()).filter(Boolean);
       segments.forEach((segment, position) => {
-        if (parseBibleReference(segment)) {
+        if (refParses(segment)) {
           refsToCheck.push({ index: i + 1, ref: segment });
         } else if (position > 0) {
           warn(`${label}: deel van de referentie is onparsebaar: "${segment}"`);
@@ -323,7 +370,7 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
 
   // ── title: "<Boek> bijbelquiz - Hoofdstuk <n>", n = the chapter covered ──
   const title = String(quiz.title ?? '');
-  const chapterInTitle = title.match(LANG_EN ? / Bible Quiz - Chapter (\d+)$/ : / - Hoofdstuk (\d+)$/);
+  const chapterInTitle = title.match(LANG_EN ? TITLE_RE[LANG] : / - Hoofdstuk (\d+)$/);
   if (!chapterInTitle) {
     warn(
       LANG_EN
@@ -335,7 +382,13 @@ async function validate(file: string, slugsSeen: Map<string, string>): Promise<R
   }
 
   // ── every reference must resolve to real Statenvertaling text ────────────
-  if (!NO_FETCH) {
+  if (BIBLE_DIR && LANG !== 'nl') {
+    // Deterministic and offline: the cited verses must exist in the language's own text.
+    for (const { index, ref } of refsToCheck) {
+      const problem = referenceInData(ref);
+      if (problem) err(`vraag ${index}: ${problem}`);
+    }
+  } else if (!NO_FETCH) {
     for (const { index, ref } of refsToCheck) {
       if (!(await referenceResolves(ref))) {
         err(`vraag ${index}: referentie "${ref}" levert geen tekst op in de ${LANG_EN ? 'World English Bible' : 'Statenvertaling'}`);

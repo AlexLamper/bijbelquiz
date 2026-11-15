@@ -1,0 +1,242 @@
+{
+  "title": "Genèse Quiz biblique - Chapitre 1",
+  "description": "Dix questions sur la création en Genèse 1, de la première lumière au sixième jour.",
+  "slug": "genesis-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Que Dieu créa-t-il au commencement ?",
+      "explanation": "Le chapitre commence par la création des cieux et de la terre par Dieu.",
+      "bibleReference": "Genèse 1:1",
+      "answers": [
+        {
+          "text": "Seulement la mer",
+          "isCorrect": false
+        },
+        {
+          "text": "Les étoiles seules",
+          "isCorrect": false
+        },
+        {
+          "text": "Les cieux et la terre",
+          "isCorrect": true
+        },
+        {
+          "text": "Le paradis et les hommes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Qu'a dit Dieu quand il a créé la lumière ?",
+      "explanation": "Dieu dit : Que la lumière soit ! Et la lumière fut.",
+      "bibleReference": "Genèse 1:3",
+      "answers": [
+        {
+          "text": "« Que la lumière soit ! »",
+          "isCorrect": true
+        },
+        {
+          "text": "« Que le jour paraisse ! »",
+          "isCorrect": false
+        },
+        {
+          "text": "« Que le soleil brille ! »",
+          "isCorrect": false
+        },
+        {
+          "text": "« Que la clarté vienne ! »",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Comment Dieu appela-t-il la lumière ?",
+      "explanation": "Dieu appela la lumière jour, et il appela les ténèbres nuit.",
+      "bibleReference": "Genèse 1:5",
+      "answers": [
+        {
+          "text": "Nuit",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciel",
+          "isCorrect": false
+        },
+        {
+          "text": "Terre",
+          "isCorrect": false
+        },
+        {
+          "text": "Jour",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Comment Dieu appela-t-il l'étendue qu'il fit entre les eaux ?",
+      "explanation": "Dieu appela l'étendue ciel.",
+      "bibleReference": "Genèse 1:7-8",
+      "answers": [
+        {
+          "text": "Mer",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciel",
+          "isCorrect": true
+        },
+        {
+          "text": "Terre",
+          "isCorrect": false
+        },
+        {
+          "text": "Ténèbres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Comment Dieu appela-t-il le sec qui parut ?",
+      "explanation": "Dieu appela le sec terre, et l'amas des eaux mers.",
+      "bibleReference": "Genèse 1:9-10",
+      "answers": [
+        {
+          "text": "Mers",
+          "isCorrect": false
+        },
+        {
+          "text": "Étendue",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciel",
+          "isCorrect": false
+        },
+        {
+          "text": "Terre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Qu'a fait Dieu pour présider au jour et à la nuit ?",
+      "explanation": "Dieu fit les deux grands luminaires, le plus grand pour le jour et le plus petit pour la nuit ; il fit aussi les étoiles.",
+      "bibleReference": "Genèse 1:14-16",
+      "answers": [
+        {
+          "text": "Un grand luminaire et un petit luminaire",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux luminaires de même taille pour tout le jour",
+          "isCorrect": false
+        },
+        {
+          "text": "Seulement les étoiles du ciel",
+          "isCorrect": false
+        },
+        {
+          "text": "Un grand feu sur la terre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Qu'a fait paraître Dieu dans les eaux et dans les airs ?",
+      "explanation": "Dieu dit que les eaux produisent des animaux vivants et que des oiseaux volent ; il créa les grands poissons, les animaux vivants des eaux et tout oiseau ailé.",
+      "bibleReference": "Genèse 1:20-21",
+      "answers": [
+        {
+          "text": "Seulement des oiseaux du ciel",
+          "isCorrect": false
+        },
+        {
+          "text": "Seulement des poissons de mer",
+          "isCorrect": false
+        },
+        {
+          "text": "Des animaux aquatiques et des oiseaux",
+          "isCorrect": true
+        },
+        {
+          "text": "Des animaux aquatiques et terrestres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "À quelle image Dieu créa-t-il l'homme ?",
+      "explanation": "Dieu créa l'homme à son image, à l'image de Dieu ; il créa l'homme et la femme.",
+      "bibleReference": "Genèse 1:26-27",
+      "answers": [
+        {
+          "text": "À l'image des anges",
+          "isCorrect": false
+        },
+        {
+          "text": "À sa propre image",
+          "isCorrect": true
+        },
+        {
+          "text": "À l'image des animaux",
+          "isCorrect": false
+        },
+        {
+          "text": "À aucune image",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Que Dieu donna-t-il aux hommes pour nourriture ?",
+      "explanation": "Dieu donna toute herbe portant de la semence et tout arbre ayant du fruit : ce sera leur nourriture.",
+      "bibleReference": "Genèse 1:29",
+      "answers": [
+        {
+          "text": "Les herbes et les fruits des arbres",
+          "isCorrect": true
+        },
+        {
+          "text": "Les poissons de la mer",
+          "isCorrect": false
+        },
+        {
+          "text": "Le pain et le vin du champ",
+          "isCorrect": false
+        },
+        {
+          "text": "Le miel et le lait des bêtes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Comment Dieu jugea-t-il tout ce qu'il avait fait à la fin ?",
+      "explanation": "Dieu vit tout ce qu'il avait fait et voici, cela était très bon.",
+      "bibleReference": "Genèse 1:31",
+      "answers": [
+        {
+          "text": "Ce n'était pas encore achevé",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce n'était ni bon ni mauvais",
+          "isCorrect": false
+        },
+        {
+          "text": "C'était bon, mais incomplet",
+          "isCorrect": false
+        },
+        {
+          "text": "C'était très bon",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

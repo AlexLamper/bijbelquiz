@@ -1,0 +1,242 @@
+{
+  "title": "1. Mose Bibelquiz - Kapitel 1",
+  "description": "Zehn Fragen zur Schöpfung in 1. Mose 1, vom ersten Licht bis zum sechsten Tag.",
+  "slug": "genesis-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Was schuf Gott am Anfang?",
+      "explanation": "Das Kapitel beginnt damit, dass Gott am Anfang Himmel und Erde schuf.",
+      "bibleReference": "1. Mose 1:1",
+      "answers": [
+        {
+          "text": "Himmel und Erde",
+          "isCorrect": true
+        },
+        {
+          "text": "Nur das Meer",
+          "isCorrect": false
+        },
+        {
+          "text": "Die Sterne allein",
+          "isCorrect": false
+        },
+        {
+          "text": "Das Paradies und die Menschen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Was sprach Gott, als er das Licht schuf?",
+      "explanation": "Gott sprach: Es werde Licht! Und es ward Licht.",
+      "bibleReference": "1. Mose 1:3",
+      "answers": [
+        {
+          "text": "\"Es werde Tag!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Es werde Licht!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Die Sonne soll scheinen!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Das Licht komme!\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Wie nannte Gott das Licht?",
+      "explanation": "Gott nannte das Licht Tag und die Finsternis Nacht.",
+      "bibleReference": "1. Mose 1:5",
+      "answers": [
+        {
+          "text": "Nacht",
+          "isCorrect": false
+        },
+        {
+          "text": "Himmel",
+          "isCorrect": false
+        },
+        {
+          "text": "Tag",
+          "isCorrect": true
+        },
+        {
+          "text": "Erde",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Wie nannte Gott die Feste, die er zwischen den Wassern machte?",
+      "explanation": "Gott nannte die Feste Himmel.",
+      "bibleReference": "1. Mose 1:7-8",
+      "answers": [
+        {
+          "text": "Meer",
+          "isCorrect": false
+        },
+        {
+          "text": "Erde",
+          "isCorrect": false
+        },
+        {
+          "text": "Finsternis",
+          "isCorrect": false
+        },
+        {
+          "text": "Himmel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Wie nannte Gott das Trockene, das sichtbar wurde?",
+      "explanation": "Gott nannte das Trockene Erde und die Sammlung der Wasser Meer.",
+      "bibleReference": "1. Mose 1:9-10",
+      "answers": [
+        {
+          "text": "Meer",
+          "isCorrect": false
+        },
+        {
+          "text": "Erde",
+          "isCorrect": true
+        },
+        {
+          "text": "Feste",
+          "isCorrect": false
+        },
+        {
+          "text": "Himmel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Was machte Gott, damit sie Tag und Nacht regieren?",
+      "explanation": "Gott machte zwei große Lichter: ein großes für den Tag, ein kleines für die Nacht, dazu auch die Sterne.",
+      "bibleReference": "1. Mose 1:14-16",
+      "answers": [
+        {
+          "text": "Zwei gleich große Lichter für den ganzen Tag",
+          "isCorrect": false
+        },
+        {
+          "text": "Allein die Sterne am Himmel über der Erde",
+          "isCorrect": false
+        },
+        {
+          "text": "Ein großes Feuer auf der Erde",
+          "isCorrect": false
+        },
+        {
+          "text": "Ein großes Licht und ein kleines Licht",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Was ließ Gott im Wasser und in der Luft entstehen?",
+      "explanation": "Gott sprach, dass sich das Wasser mit Tieren errege und Gevögel auffliege; er schuf große Walfische, allerlei Getier und gefiedertes Gevögel.",
+      "bibleReference": "1. Mose 1:20-21",
+      "answers": [
+        {
+          "text": "Wassertiere und Vögel",
+          "isCorrect": true
+        },
+        {
+          "text": "Nur Vögel in der Luft",
+          "isCorrect": false
+        },
+        {
+          "text": "Nur Fische im Wasser",
+          "isCorrect": false
+        },
+        {
+          "text": "Wassertiere und Landtiere",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Nach wessen Bild schuf Gott den Menschen?",
+      "explanation": "Gott schuf den Menschen ihm zum Bilde, zum Bilde Gottes schuf er ihn; er schuf sie einen Mann und ein Weib.",
+      "bibleReference": "1. Mose 1:26-27",
+      "answers": [
+        {
+          "text": "Nach dem Bild der Engel",
+          "isCorrect": false
+        },
+        {
+          "text": "Nach dem Bild der Tiere",
+          "isCorrect": false
+        },
+        {
+          "text": "Nach seinem eigenen Bild",
+          "isCorrect": true
+        },
+        {
+          "text": "Nach keinem Bild",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Was gab Gott den Menschen zur Speise?",
+      "explanation": "Gott gab ihnen allerlei Kraut, das sich besamt, und allerlei fruchtbare Bäume zur Speise.",
+      "bibleReference": "1. Mose 1:29",
+      "answers": [
+        {
+          "text": "Die Fische des Meeres",
+          "isCorrect": false
+        },
+        {
+          "text": "Brot und Wein vom Feld",
+          "isCorrect": false
+        },
+        {
+          "text": "Honig und Milch der Tiere",
+          "isCorrect": false
+        },
+        {
+          "text": "Kräuter und Früchte der Bäume",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Wie beurteilte Gott am Ende alles, was er gemacht hatte?",
+      "explanation": "Gott sah alles an, was er gemacht hatte, und siehe da, es war sehr gut.",
+      "bibleReference": "1. Mose 1:31",
+      "answers": [
+        {
+          "text": "Es war noch nicht fertig",
+          "isCorrect": false
+        },
+        {
+          "text": "Es war sehr gut",
+          "isCorrect": true
+        },
+        {
+          "text": "Es war weder gut noch schlecht",
+          "isCorrect": false
+        },
+        {
+          "text": "Es war gut, aber unvollständig",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
