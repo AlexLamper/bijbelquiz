@@ -1,4 +1,5 @@
 import { isNlSite } from '@/config/site';
+import { t } from '@/i18n';
 
 /**
  * What is left of the paid product, and the numbers the pricing copy quotes.
@@ -75,15 +76,18 @@ export function monthlyEquivalentOfYearly(yearlyLabel: string): string | null {
   const yearly = parsePriceLabel(yearlyLabel);
   if (yearly === null) return null;
 
-  const perMonth = yearly / 12;
-  return `€${perMonth.toLocaleString('nl-NL', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  })}`;
+  return formatEuro(yearly / 12, currencyPrefix(yearlyLabel));
 }
 
-function formatEuro(amount: number): string {
-  return `€${amount.toLocaleString('nl-NL', {
+/** The currency symbol written in front of a price label ("€", "$"); "€" when there is none. */
+function currencyPrefix(label: string): string {
+  if (isNlSite()) return '€';
+  const prefix = label.match(/^[^\d]*/)?.[0].trim();
+  return prefix || '€';
+}
+
+function formatEuro(amount: number, prefix = '€'): string {
+  return `${prefix}${amount.toLocaleString(t('bq.header.numberLocale'), {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   })}`;
@@ -105,7 +109,7 @@ const WEEKS_PER_MONTH = 4.345;
 export function pricePerWeek(label: string, months: number): string | null {
   const amount = parsePriceLabel(label);
   if (amount === null || months <= 0) return null;
-  return formatEuro(amount / (months * WEEKS_PER_MONTH));
+  return formatEuro(amount / (months * WEEKS_PER_MONTH), currencyPrefix(label));
 }
 
 /**

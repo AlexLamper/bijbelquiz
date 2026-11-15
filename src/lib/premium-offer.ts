@@ -10,6 +10,7 @@
 
 import { readReturnPath } from './stripe-plans';
 import { t } from '@/i18n';
+import { isNlSite } from '@/config/site';
 
 /** The three personal plans, in the order the page shows them. */
 export const PREMIUM_PLAN_IDS = ['yearly', 'monthly', 'lifetime'] as const;
@@ -28,11 +29,10 @@ export function readPremiumPlan(value: unknown): PremiumPlanId {
  * the list prices `scripts/setup-stripe-products.mts` creates and the app's own
  * fallbacks (`premium_screen.dart`), so all three places agree.
  */
-export const PREMIUM_PRICE_FALLBACKS: Readonly<Record<PremiumPlanId, string>> = {
-  monthly: '€5,99',
-  yearly: '€39,99',
-  lifetime: '€74,99',
-};
+export const PREMIUM_PRICE_FALLBACKS: Readonly<Record<PremiumPlanId, string>> = isNlSite()
+  ? { monthly: '€5,99', yearly: '€39,99', lifetime: '€74,99' }
+  : // intl: dollars until the intl Stripe prices exist; NEXT_PUBLIC_PREMIUM_*_PRICE_LABEL or the Stripe price overrides this.
+    { monthly: '$5.99', yearly: '$39.99', lifetime: '$74.99' };
 
 /** Environment variables that override the shown price (payments-health checks them). */
 export const PREMIUM_PRICE_LABEL_ENV: Readonly<Record<PremiumPlanId, string>> = {
@@ -50,6 +50,14 @@ export type PremiumPriceLabels = Record<PremiumPlanId, string>;
  */
 export function formatStripeAmount(unitAmount: number | null | undefined, currency: string | null | undefined): string | null {
   if (typeof unitAmount !== 'number' || !Number.isFinite(unitAmount) || unitAmount <= 0) return null;
+  if (!isNlSite()) {
+    // intl sells in whatever currency the Stripe price is in.
+    try {
+      return new Intl.NumberFormat(t('bq.header.numberLocale'), { style: 'currency', currency: (currency || 'usd').toUpperCase() }).format(unitAmount / 100);
+    } catch {
+      return null;
+    }
+  }
   if ((currency || '').toLowerCase() !== 'eur') return null;
 
   return `€${(unitAmount / 100).toLocaleString('nl-NL', {
