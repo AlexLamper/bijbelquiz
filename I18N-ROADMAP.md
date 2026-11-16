@@ -90,7 +90,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [ ] Store listings with localized name, keywords and screenshots
 
 ### Phase 7 - more languages (each: config + translations + content + Bible source)
-- [ ] es (blocked: no verified Spanish Bible text), pt-BR (pilot quiz ready)
+- [ ] es (Bible text ready: Reina-Valera 1909 `rv1909`), pt-BR (pilot quiz ready)
 - [ ] de, fr
 - [ ] next, based on data
 

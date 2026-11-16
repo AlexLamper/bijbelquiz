@@ -459,7 +459,7 @@
       "modalDescription": "Lee el capítulo a tu ritmo. Las preguntas tratan de él.",
       "start": "Empezar cuestionario",
       "failed": "No se pudo cargar este capítulo ahora mismo. Puedes empezar el cuestionario sin más.",
-      "translation": "Texto bíblico",
+      "translation": "Texto bíblico: Reina-Valera 1909 (dominio público)",
       "freeLeftOne": "Te queda {value} cuestionario gratis",
       "freeLeftMany": "Te quedan {value} cuestionarios gratis"
     },
@@ -547,7 +547,7 @@
     "finish": "Terminar cuestionario",
     "next": "Siguiente pregunta",
     "saveFailed": "No se pudo guardar tu puntuación. Revisa tu conexión e inténtalo de nuevo.",
-    "translation": "Texto bíblico",
+    "translation": "Texto bíblico: Reina-Valera 1909 (dominio público)",
     "verseFailed": "No se pudo cargar el texto.",
     "studieLabel": "Lee {book} {chapter} con explicación en Estudio bíblico",
     "textSize": "Tamaño del texto",
@@ -573,7 +573,7 @@
     "readFirst": "Lee primero",
     "text": "Tómate tu tiempo con este capítulo. Las preguntas que siguen tratan de él, así que leer ayuda de verdad.",
     "failed": "No se pudo cargar este capítulo ahora mismo. Puedes empezar el cuestionario sin más.",
-    "translation": "Texto bíblico",
+    "translation": "Texto bíblico: Reina-Valera 1909 (dominio público)",
     "ready": "¿Has terminado de leer?",
     "start": "Empezar el cuestionario"
   },

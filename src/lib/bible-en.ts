@@ -16,7 +16,7 @@ export const ENGLISH_VERSION = 'web';
  * BijbelAPI version per language build. Spanish has no verified public-domain
  * text yet, so it (like English) reads the World English Bible.
  */
-const VERSION_BY_LOCALE: Record<string, string> = { de: 'luth1912', fr: 'lsg1910', pt: 'blivre' };
+const VERSION_BY_LOCALE: Record<string, string> = { de: 'luth1912', fr: 'lsg1910', pt: 'blivre', es: 'rv1909' };
 
 /** The Bible version this build shows. */
 export function bibleVersion(): string {
