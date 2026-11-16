@@ -27,7 +27,10 @@ let cache: { at: number; labels: Partial<Record<PremiumPlanId, string>> } | null
 
 function stripeConfigured(): boolean {
   const key = process.env.STRIPE_SECRET_KEY || '';
-  return key.startsWith('sk_') && !key.includes('dummy');
+  // Secret (sk_) or restricted (rk_) key; the build placeholder does not count.
+  const ok = (key.startsWith('sk_') || key.startsWith('rk_')) && !key.includes('dummy');
+  if (!ok && key) console.warn(`[premium-prices] STRIPE_SECRET_KEY has an unexpected format (starts with ${key.slice(0, 3)}…)`);
+  return ok;
 }
 
 async function stripeLabel(plan: PremiumPlanId): Promise<string | null> {
