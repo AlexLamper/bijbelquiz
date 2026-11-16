@@ -10,6 +10,7 @@ import { recomputeUserPremium, subscriptionStatusGrantsPremium } from '@/lib/pre
 import stripe from '@/lib/stripe';
 import { planForStripePrice, STRIPE_PLAN_IDS, type StripePlanId } from '@/lib/stripe-plans';
 import { sendTrialReminder } from '@/lib/trial-reminder';
+import { eventBelongsToSite, stripeSiteTag } from '@/lib/stripe-site';
 
 /**
  * Everything a Stripe event changes in our database, in one place.
@@ -873,6 +874,11 @@ export async function handleStripeWebhookRequest(
 
   if (!HANDLED.has(event.type)) {
     return { status: 200, body: { received: true, ignored: event.type } };
+  }
+
+  // One Stripe account, several sites: leave another site's events alone.
+  if (!eventBelongsToSite(event, stripeSiteTag())) {
+    return { status: 200, body: { received: true, ignored: 'other_site' } };
   }
 
   await connectDB();
