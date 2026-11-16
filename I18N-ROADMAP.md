@@ -64,9 +64,9 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] Book names per locale on top of `src/lib/book-canon.ts` canonical codes
 
 ### Phase 2 - English site live (noindex)
-- [ ] International MongoDB (Atlas), `lang` on Quiz + Category (`lang` field done; slugs stay unique per database, each site has its own DB). Atlas cluster itself: external, needs you.
-- [ ] Vercel project `biblequizzes` from this repo: `SITE=intl`, own env vars (DB, auth, Stripe, mail)
-- [ ] DNS at Hostinger -> Vercel (A/CNAME records Vercel gives), `www` -> apex
+- [x] International MongoDB (Atlas; one free cluster, one database per language: biblequizzes_en/de/fr/pt), `lang` on Quiz + Category (`lang` field done; slugs stay unique per database, each site has its own DB). Atlas cluster itself: external, needs you.
+- [x] Vercel projects `biblequizzes` (en) + `biblequizzes-de/-fr/-pt` from this repo: `SITE=intl`, own env vars (DB, auth, Stripe, mail)
+- [x] DNS at Hostinger -> Vercel (live, public, noindex; /de /fr /pt proxied) (A/CNAME records Vercel gives), `www` -> apex
 - [ ] Mail: `info@biblequizzes.app` (sending via the same provider as NL)
 - [ ] Auth: Google/Apple sign-in redirect URLs for the new domain
 
