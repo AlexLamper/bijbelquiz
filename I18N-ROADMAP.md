@@ -85,8 +85,8 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] `hreflang` between the intl languages (static pages; quiz pages differ per language so keep a plain canonical). NL <-> intl link deliberately left out to keep NL HTML unchanged
 
 ### Phase 6 - app (repo bijbelquiz-app)
-- [ ] Flutter l10n (`intl`/ARB): extract strings (~58 of 132 Dart files)
-- [ ] Flavors: `bijbelquiz` (com.bijbelquiz.app, unchanged) and `biblequizzes` (new bundle ID, API `https://biblequizzes.app/api/mobile`)
+- [x] Flutter l10n (ARB, nl template + en/es/pt/de/fr, 683 keys): all player-facing screens; admin and duels (NL-only) stay Dutch. Branch `feat/biblequizzes-brand` in bijbelquiz-app
+- [x] Brand switch `--dart-define=APP_BRAND=biblequizzes`: language picks the site/API (biblequizzes.app[/xx]/api/mobile), Android package com.biblequizzes.app via Gradle, iOS via `tool/brand_biblequizzes.sh`; language picker in Settings. Still needed: bundle ID + App Store Connect / Play Console apps, RevenueCat project, Google iOS/Android OAuth clients for the new IDs
 - [ ] Store listings with localized name, keywords and screenshots
 
 ### Phase 7 - more languages (each: config + translations + content + Bible source)
