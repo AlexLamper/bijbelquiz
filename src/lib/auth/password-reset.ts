@@ -16,6 +16,7 @@ import { t } from '@/i18n';
  */
 
 function siteOrigin(): string {
+  if (getSiteConfig().id === 'intl') return getSiteConfig().baseUrl;
   return (process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXTAUTH_URL || getSiteConfig().baseUrl).replace(/\/$/, '');
 }
 

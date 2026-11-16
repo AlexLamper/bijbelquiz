@@ -1,4 +1,4 @@
-import { getSiteConfig } from '@/config/site';
+import { getSiteConfig, getSiteId } from '@/config/site';
 
 /**
  * Room invitations.
@@ -15,6 +15,8 @@ export const INVITE_SOURCE_PARAM = 'bron';
 export const INVITE_SOURCE_VALUE = 'uitnodiging';
 
 function siteOrigin(): string {
+  // Intl: the language's own site (biblequizzes.app/de), never the root.
+  if (getSiteId() === 'intl') return getSiteConfig().baseUrl;
   return (
     process.env.NEXT_PUBLIC_SITE_URL ||
     process.env.NEXTAUTH_URL ||
