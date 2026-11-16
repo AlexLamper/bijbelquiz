@@ -5,11 +5,12 @@ import en from '../../../../docs/quizzes-en/categories.json';
 import de from '../../../../docs/quizzes-de/categories.json';
 import fr from '../../../../docs/quizzes-fr/categories.json';
 import pt from '../../../../docs/quizzes-pt/categories.json';
+import es from '../../../../docs/quizzes-es/categories.json';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
-const FILES: Record<string, { slug: string }[]> = { en, de, fr, pt };
+const FILES: Record<string, { slug: string }[]> = { en, de, fr, pt, es };
 
 export async function GET(request: NextRequest) {
   const token = process.env.SEED_TOKEN;
