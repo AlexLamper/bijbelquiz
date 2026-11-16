@@ -1,7 +1,5 @@
 import type Stripe from 'stripe';
 
-import { getSiteConfig, isNlSite } from '@/config/site';
-
 /**
  * One Stripe account serves BijbelQuiz (NL) and every Bible Quizzes language
  * site, and every webhook endpoint receives every event of the account. Intl
@@ -15,7 +13,10 @@ import { getSiteConfig, isNlSite } from '@/config/site';
  * tagged event.
  */
 export function stripeSiteTag(): string | null {
-  return isNlSite() ? null : `biblequizzes-${getSiteConfig().defaultLocale}`;
+  // Read straight from the env (not src/config/site.ts) so this file is the
+  // same on main, where the NL webhook needs it before the i18n work lands.
+  if (process.env.SITE !== 'intl') return null;
+  return `biblequizzes-${process.env.SITE_LOCALE || 'en'}`;
 }
 
 /** The site tag on the object of an event, or null when it has none. */
