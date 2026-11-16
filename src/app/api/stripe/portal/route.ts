@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
+import type Stripe from 'stripe';
 import { getServerSession } from 'next-auth';
 
 import { connectDB, Payment, User } from '@/database';
 import { authOptions } from '@/lib/auth';
 import stripe from '@/lib/stripe';
 import { resolveCheckoutOrigin } from '@/lib/stripe-checkout';
+import { localizePath, siteUrl } from '@/config/routes';
+import { getSiteConfig, isNlSite } from '@/config/site';
 
 export const dynamic = 'force-dynamic';
 
@@ -44,14 +47,14 @@ export async function POST(req: NextRequest) {
   const returnPage = readReturnPage(formValue, req.headers.get('referer'), origin);
 
   const fail = (reason: 'unavailable' | 'error') => {
-    const url = new URL(returnPage, origin);
+    const url = siteUrl(returnPage, origin);
     url.searchParams.set('billing', reason);
     return NextResponse.redirect(url, 303);
   };
 
   if (!session?.user?.id) {
-    const signInUrl = new URL('/inloggen', origin);
-    signInUrl.searchParams.set('callbackUrl', returnPage);
+    const signInUrl = siteUrl('/inloggen', origin);
+    signInUrl.searchParams.set('callbackUrl', localizePath(returnPage));
     return NextResponse.redirect(signInUrl, 303);
   }
 
@@ -98,7 +101,9 @@ export async function POST(req: NextRequest) {
 
   // Last resort: a customer in Stripe with this e-mail address and a
   // subscription (bought before customer ids were stored).
-  if (!stripeCustomerId && session.user.email) {
+  // NL only: the Stripe account is shared with the Bible Quizzes sites, where
+  // the same e-mail address can belong to somebody else's subscription.
+  if (!stripeCustomerId && session.user.email && isNlSite()) {
     try {
       const customers = await stripe.customers.list({ email: session.user.email, limit: 10 });
       for (const customer of customers.data) {
@@ -123,12 +128,14 @@ export async function POST(req: NextRequest) {
   try {
     const portalSession = await stripe.billingPortal.sessions.create({
       customer: stripeCustomerId,
-      return_url: `${resolveCheckoutOrigin({
-        originHeader: req.headers.get('origin'),
-        requestOrigin: origin,
-        configuredUrl: process.env.NEXTAUTH_URL,
-      })}${returnPage}`,
-      locale: 'nl',
+      return_url: isNlSite()
+        ? `${resolveCheckoutOrigin({
+            originHeader: req.headers.get('origin'),
+            requestOrigin: origin,
+            configuredUrl: process.env.NEXTAUTH_URL,
+          })}${returnPage}`
+        : siteUrl(returnPage, origin).toString(),
+      locale: isNlSite() ? 'nl' : (getSiteConfig().defaultLocale as Stripe.BillingPortal.SessionCreateParams.Locale),
     });
 
     return NextResponse.redirect(portalSession.url, 303);

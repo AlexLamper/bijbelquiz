@@ -11,6 +11,9 @@ import { premiumPageHref } from '@/lib/premium-offer';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import stripe from '@/lib/stripe';
 import { buildCheckoutSessionParams, resolveCheckoutOrigin } from '@/lib/stripe-checkout';
+import { stripeSiteTag } from '@/lib/stripe-site';
+import { localizePath, siteUrl } from '@/config/routes';
+import { getSiteConfig, isNlSite } from '@/config/site';
 import { readReturnPath, readStripePlan, STRIPE_PLANS, trialDaysForPlan } from '@/lib/stripe-plans';
 
 export const dynamic = 'force-dynamic';
@@ -39,7 +42,7 @@ async function ensureCustomer(user: CheckoutUser, userId: string, email: string)
     const customer = await stripe.customers.create({
       email,
       name: user.name || undefined,
-      metadata: { userId },
+      metadata: { userId, ...(stripeSiteTag() ? { site: stripeSiteTag()! } : {}) },
     });
     await User.updateOne({ _id: user._id }, { $set: { stripeCustomerId: customer.id } });
     return customer.id;
@@ -64,8 +67,8 @@ export async function POST(req: NextRequest) {
     const back = selectedConfig.isGroup
       ? '/groepslicentie'
       : premiumPageHref({ locked: lockedPaywall, returnPath: lockedPaywall ? returnPath : null, plan: selectedPlan === 'group' ? undefined : selectedPlan });
-    const signInUrl = new URL('/inloggen', req.nextUrl.origin);
-    signInUrl.searchParams.set('callbackUrl', back);
+    const signInUrl = siteUrl('/inloggen', req.nextUrl.origin);
+    signInUrl.searchParams.set('callbackUrl', localizePath(back));
     return NextResponse.redirect(signInUrl, 303);
   }
 
@@ -88,7 +91,7 @@ export async function POST(req: NextRequest) {
   // instead of into a second subscription. A group licence is bought for
   // others, so it may.
   if (!selectedConfig.isGroup && user && getPremiumSnapshot(user).isPremium) {
-    return NextResponse.redirect(new URL('/premium', req.nextUrl.origin), 303);
+    return NextResponse.redirect(siteUrl('/premium', req.nextUrl.origin), 303);
   }
 
   if (!stripePriceId) {
@@ -108,11 +111,14 @@ export async function POST(req: NextRequest) {
     },
   });
 
-  const origin = resolveCheckoutOrigin({
-    originHeader: req.headers.get('origin'),
-    requestOrigin: req.nextUrl.origin,
-    configuredUrl: process.env.NEXTAUTH_URL,
-  });
+  // Intl: the site's base URL, which carries the language prefix (/de).
+  const origin = isNlSite()
+    ? resolveCheckoutOrigin({
+        originHeader: req.headers.get('origin'),
+        requestOrigin: req.nextUrl.origin,
+        configuredUrl: process.env.NEXTAUTH_URL,
+      })
+    : getSiteConfig().baseUrl;
 
   let customerId = user?.stripeCustomerId || null;
   if (!customerId && user) customerId = await ensureCustomer(user, session.user.id, session.user.email);
@@ -128,6 +134,13 @@ export async function POST(req: NextRequest) {
       returnPath,
       locked: lockedPaywall,
       trialDays: trialDaysForPlan(selectedPlan, process.env.STRIPE_TRIAL_DAYS),
+      ...(isNlSite()
+        ? {}
+        : {
+            stripeLocale: getSiteConfig().defaultLocale as Stripe.Checkout.SessionCreateParams.Locale,
+            localize: localizePath,
+            siteTag: stripeSiteTag(),
+          }),
     });
 
   try {

@@ -1,5 +1,5 @@
 import { ROUTE_PAIRS } from '@/config/route-map';
-import { INTL_LOCALES, INTL_ORIGIN, isNlSite } from '@/config/site';
+import { getSiteConfig, INTL_LOCALES, INTL_ORIGIN, isNlSite } from '@/config/site';
 
 /** Turns a Next path pattern into a matcher: `/a/:id/b` -> /^\/a\/([^/]+)\/b$/. */
 function matcher(pattern: string): RegExp {
@@ -46,4 +46,16 @@ export function pageAlternates(path: string): { canonical: string; languages?: R
   for (const l of INTL_LOCALES) languages[l] = `${INTL_ORIGIN}${l === 'en' ? '' : `/${l}`}${tail}` || INTL_ORIGIN;
   languages['x-default'] = `${INTL_ORIGIN}${tail}`;
   return { canonical, languages };
+}
+
+/**
+ * Absolute URL for an internal (Dutch-folder) path, for server redirects and
+ * URLs handed to Stripe. NL: on the given origin, path unchanged (as before).
+ * Intl: on the site's base URL, which carries the language prefix
+ * (`https://biblequizzes.app/de`), with the localized path. Without this a
+ * redirect from the German build would leave out `/de` and land on English.
+ */
+export function siteUrl(path: string, nlOrigin: string): URL {
+  if (isNlSite()) return new URL(path, nlOrigin);
+  return new URL(`${getSiteConfig().baseUrl}${localizePath(path)}`);
 }
