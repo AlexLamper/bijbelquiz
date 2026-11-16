@@ -68,7 +68,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [x] Vercel projects `biblequizzes` (en) + `biblequizzes-de/-fr/-pt` from this repo: `SITE=intl`, own env vars (DB, auth, Stripe, mail)
 - [x] DNS at Hostinger -> Vercel (live, public, noindex; /de /fr /pt proxied) (A/CNAME records Vercel gives), `www` -> apex
 - [ ] Mail: `info@biblequizzes.app` (sending via the same provider as NL)
-- [ ] Auth: Google/Apple sign-in redirect URLs for the new domain
+- [ ] Auth: Google redirect URIs added for biblequizzes.app (+ /es /pt /de /fr); client id/secret still to paste. Apple: todo
 
 ### Phase 3 - English content
 - [x] Quiz generation pipeline in English (same JSON format; `--lang=en` in validate/import scripts, `docs/quizzes-en/QUIZ-GENERATION-PLAN-EN.md`, `seed-categories-en.mts`)
@@ -76,7 +76,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [ ] Covers/images reuse where language-free
 
 ### Phase 4 - payments
-- [ ] Stripe: new products/prices "Bible Quizzes Premium" (monthly/yearly/lifetime), USD/EUR/GBP...
+- [x] Stripe: "Bible Quizzes Premium" monthly/yearly/lifetime + group, EUR with USD/GBP options; webhooks per language; `metadata.site` tag so the shared account's webhooks never cross sites (NL guard: PR #3). Secret key still to paste.
 - [ ] Tax decision (Stripe Tax or merchant of record) - with accountant
 - [ ] RevenueCat: new project, `premium` entitlement, webhook -> intl `/api/mobile/revenuecat-webhook`
 
@@ -90,7 +90,7 @@ Known pre-existing issues (fix separately, then refresh the baseline):
 - [ ] Store listings with localized name, keywords and screenshots
 
 ### Phase 7 - more languages (each: config + translations + content + Bible source)
-- [ ] es (Bible text ready: Reina-Valera 1909 `rv1909`), pt-BR (pilot quiz ready)
+- [x] es site live (Reina-Valera 1909 `rv1909`, own project + DB, proxied at /es), pt-BR (pilot quiz ready)
 - [ ] de, fr
 - [ ] next, based on data
 
