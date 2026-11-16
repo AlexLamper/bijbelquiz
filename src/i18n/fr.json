@@ -459,7 +459,7 @@
       "modalDescription": "Lisez le chapitre à votre rythme. Les questions portent dessus.",
       "start": "Commencer le quiz",
       "failed": "Ce chapitre n'a pas pu être chargé pour le moment. Vous pouvez simplement commencer le quiz.",
-      "translation": "Texte biblique",
+      "translation": "Texte biblique : Louis Segond 1910 (domaine public)",
       "freeLeftOne": "Il vous reste {value} quiz gratuit",
       "freeLeftMany": "Il vous reste {value} quiz gratuits"
     },
@@ -547,7 +547,7 @@
     "finish": "Terminer le quiz",
     "next": "Question suivante",
     "saveFailed": "Votre score n'a pas pu être enregistré. Vérifiez votre connexion et réessayez.",
-    "translation": "Texte biblique",
+    "translation": "Texte biblique : Louis Segond 1910 (domaine public)",
     "verseFailed": "Le texte n'a pas pu être chargé.",
     "studieLabel": "Lisez {book} {chapter} avec explication dans l'Étude biblique",
     "textSize": "Taille du texte",
@@ -573,7 +573,7 @@
     "readFirst": "À lire d'abord",
     "text": "Prenez le temps de lire ce chapitre. Les questions suivantes portent dessus, alors lire aide vraiment.",
     "failed": "Ce chapitre n'a pas pu être chargé pour le moment. Vous pouvez simplement commencer le quiz.",
-    "translation": "Texte biblique",
+    "translation": "Texte biblique : Louis Segond 1910 (domaine public)",
     "ready": "Vous avez fini de lire ?",
     "start": "Commencer le quiz"
   },

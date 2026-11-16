@@ -459,7 +459,7 @@
       "modalDescription": "Read the chapter at your own pace. The questions are about it.",
       "start": "Start quiz",
       "failed": "This chapter could not be loaded right now. You can simply start the quiz.",
-      "translation": "Bible text",
+      "translation": "Bible text: World English Bible (public domain)",
       "freeLeftOne": "{value} free quiz left",
       "freeLeftMany": "{value} free quizzes left"
     },
@@ -547,7 +547,7 @@
     "finish": "Finish quiz",
     "next": "Next question",
     "saveFailed": "Your score could not be saved. Check your connection and try again.",
-    "translation": "Bible text",
+    "translation": "Bible text: World English Bible (public domain)",
     "verseFailed": "The text could not be loaded.",
     "studieLabel": "Read {book} {chapter} with explanation on Bible Study",
     "textSize": "Text size",
@@ -573,7 +573,7 @@
     "readFirst": "Read first",
     "text": "Take your time with this chapter. The questions that follow are about it, so reading really helps.",
     "failed": "This chapter could not be loaded right now. You can simply start the quiz.",
-    "translation": "Bible text",
+    "translation": "Bible text: World English Bible (public domain)",
     "ready": "Done reading?",
     "start": "Start the quiz"
   },

@@ -459,7 +459,7 @@
       "modalDescription": "Lies das Kapitel in deinem Tempo. Die Fragen drehen sich darum.",
       "start": "Quiz starten",
       "failed": "Dieses Kapitel konnte gerade nicht geladen werden. Du kannst das Quiz einfach starten.",
-      "translation": "Bibeltext",
+      "translation": "Bibeltext: Lutherbibel 1912 (gemeinfrei)",
       "freeLeftOne": "Noch {value} Gratis-Quiz übrig",
       "freeLeftMany": "Noch {value} Gratis-Quizze übrig"
     },
@@ -547,7 +547,7 @@
     "finish": "Quiz beenden",
     "next": "Nächste Frage",
     "saveFailed": "Dein Ergebnis konnte nicht gespeichert werden. Prüfe deine Verbindung und versuche es erneut.",
-    "translation": "Bibeltext",
+    "translation": "Bibeltext: Lutherbibel 1912 (gemeinfrei)",
     "verseFailed": "Der Text konnte nicht geladen werden.",
     "studieLabel": "Lies {book} {chapter} mit Erklärung im Bibelstudium",
     "textSize": "Textgröße",
@@ -573,7 +573,7 @@
     "readFirst": "Zuerst lesen",
     "text": "Nimm dir Zeit für dieses Kapitel. Die folgenden Fragen drehen sich darum, Lesen hilft also wirklich.",
     "failed": "Dieses Kapitel konnte gerade nicht geladen werden. Du kannst das Quiz einfach starten.",
-    "translation": "Bibeltext",
+    "translation": "Bibeltext: Lutherbibel 1912 (gemeinfrei)",
     "ready": "Fertig gelesen?",
     "start": "Quiz starten"
   },
