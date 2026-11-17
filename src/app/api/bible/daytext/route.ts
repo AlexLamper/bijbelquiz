@@ -74,9 +74,12 @@ export async function GET() {
     return NextResponse.json(
       {
         source: 'fallback',
-        reference: 'Psalm 119:105',
-        text: 'Uw woord is een lamp voor mijn voet en een licht op mijn pad.',
-        version: 'bb',
+        reference: isNlSite() ? 'Psalm 119:105' : 'Psalms 119:105',
+        // Intl: World English Bible (public domain) rather than Dutch.
+        text: isNlSite()
+          ? 'Uw woord is een lamp voor mijn voet en een licht op mijn pad.'
+          : 'Your word is a lamp to my feet, and a light for my path.',
+        version: isNlSite() ? 'bb' : 'web',
         docsUrl: 'https://www.bijbelapi.com/docs',
       },
       { status: 200 }
