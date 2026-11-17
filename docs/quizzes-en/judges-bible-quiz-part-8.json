@@ -1,0 +1,242 @@
+{
+  "title": "Judges Bible Quiz - Chapter 8",
+  "description": "Ten questions on Judges 8: Gideon pursues the kings of Midian, punishes Succoth and Penuel, refuses to rule and makes an ephod.",
+  "slug": "judges-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who rebuked Gideon sharply for not calling them when he went to fight Midian?",
+      "explanation": "The men of Ephraim said, \"Why have you treated us this way, that you didn't call us?\" and rebuked him sharply.",
+      "bibleReference": "Judges 8:1",
+      "answers": [
+        {
+          "text": "The men of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "The men of Asher",
+          "isCorrect": false
+        },
+        {
+          "text": "The men of Ephraim",
+          "isCorrect": true
+        },
+        {
+          "text": "The men of Benjamin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the names of the kings of Midian whom Gideon was pursuing?",
+      "explanation": "Gideon told the men of Succoth he was pursuing Zebah and Zalmunna, the kings of Midian.",
+      "bibleReference": "Judges 8:5",
+      "answers": [
+        {
+          "text": "Zebah and Zalmunna",
+          "isCorrect": true
+        },
+        {
+          "text": "Oreb and Zeeb",
+          "isCorrect": false
+        },
+        {
+          "text": "Nobah and Jogbehah",
+          "isCorrect": false
+        },
+        {
+          "text": "Balak and Sihon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what did Gideon threaten to tear the flesh of the men of Succoth?",
+      "explanation": "Gideon said he would tear their flesh with the thorns of the wilderness and with briers.",
+      "bibleReference": "Judges 8:7",
+      "answers": [
+        {
+          "text": "The whips of the Midianite kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Iron rods and sharp hooks",
+          "isCorrect": false
+        },
+        {
+          "text": "Swords and spears of bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "Thorns of the wilderness and briers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Gideon say he would break down at Penuel?",
+      "explanation": "He said to the men of Penuel, \"When I come again in peace, I will break down this tower.\"",
+      "bibleReference": "Judges 8:9",
+      "answers": [
+        {
+          "text": "Their altar of Baal",
+          "isCorrect": false
+        },
+        {
+          "text": "Their tower",
+          "isCorrect": true
+        },
+        {
+          "text": "Their city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "Their wine presses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many princes and elders of Succoth did the young man describe to Gideon?",
+      "explanation": "The young man described the princes of Succoth and its elders, seventy-seven men.",
+      "bibleReference": "Judges 8:14",
+      "answers": [
+        {
+          "text": "Seventy-seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty-seven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Jether, Gideon's firstborn, not draw his sword to kill the kings?",
+      "explanation": "The youth didn't draw his sword, for he was afraid, because he was yet a youth.",
+      "bibleReference": "Judges 8:20",
+      "answers": [
+        {
+          "text": "He had been wounded in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "His sword had been taken from him",
+          "isCorrect": false
+        },
+        {
+          "text": "He was afraid, because he was still a youth",
+          "isCorrect": true
+        },
+        {
+          "text": "He wanted to keep the kings alive",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Gideon answer when the men of Israel asked him to rule over them?",
+      "explanation": "Gideon said, \"I will not rule over you, neither shall my son rule over you. Yahweh shall rule over you.\"",
+      "bibleReference": "Judges 8:22-23",
+      "answers": [
+        {
+          "text": "\"I will rule, and my son after me.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Yahweh shall rule over you.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Choose a king from Ephraim.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let my son Jether rule over you.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Gideon ask each man to give him from the plunder?",
+      "explanation": "Gideon asked that each would give him the earrings of his plunder, for they had golden earrings.",
+      "bibleReference": "Judges 8:24",
+      "answers": [
+        {
+          "text": "The swords of the Midianites",
+          "isCorrect": false
+        },
+        {
+          "text": "The best of the camels",
+          "isCorrect": false
+        },
+        {
+          "text": "A tenth of the silver",
+          "isCorrect": false
+        },
+        {
+          "text": "The earrings of his plunder",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Gideon make out of the gold and put in his city Ophrah?",
+      "explanation": "Gideon made an ephod out of it and put it in Ophrah, and it became a snare to Gideon and to his house.",
+      "bibleReference": "Judges 8:27",
+      "answers": [
+        {
+          "text": "A golden calf",
+          "isCorrect": false
+        },
+        {
+          "text": "A crown",
+          "isCorrect": false
+        },
+        {
+          "text": "An altar",
+          "isCorrect": false
+        },
+        {
+          "text": "An ephod",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the name of the son borne to Gideon by his concubine in Shechem?",
+      "explanation": "His concubine who was in Shechem bore him a son, and he named him Abimelech.",
+      "bibleReference": "Judges 8:31",
+      "answers": [
+        {
+          "text": "Abimelech",
+          "isCorrect": true
+        },
+        {
+          "text": "Jotham",
+          "isCorrect": false
+        },
+        {
+          "text": "Jether",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaal",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

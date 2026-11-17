@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 26",
+  "description": "Ten questions on Numbers 26: the second census in the plains of Moab, the families of each tribe, the dividing of the land and the Levites.",
+  "slug": "numbers-bible-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "From what age were the men counted in this census?",
+      "explanation": "Yahweh told them to take a census of the congregation from twenty years old and upward, all who were able to go to war.",
+      "bibleReference": "Numbers 26:2",
+      "answers": [
+        {
+          "text": "Thirteen years old and upward",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty years old and upward",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty years old and upward",
+          "isCorrect": true
+        },
+        {
+          "text": "Fifty years old and upward",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Moses and Eleazar take this census?",
+      "explanation": "Moses and Eleazar the priest spoke with them in the plains of Moab by the Jordan at Jericho.",
+      "bibleReference": "Numbers 26:3",
+      "answers": [
+        {
+          "text": "In the wilderness of Sinai by the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "At Kadesh in the wilderness of Zin",
+          "isCorrect": false
+        },
+        {
+          "text": "On the top of Mount Hor near Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "In the plains of Moab by the Jordan at Jericho",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about the sons of Korah?",
+      "explanation": "After describing how the earth swallowed up Korah's company, the text says, \"Notwithstanding, the sons of Korah didn't die.\"",
+      "bibleReference": "Numbers 26:10-11",
+      "answers": [
+        {
+          "text": "They did not die",
+          "isCorrect": true
+        },
+        {
+          "text": "They were all swallowed by the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "They were burned with the two hundred fifty men",
+          "isCorrect": false
+        },
+        {
+          "text": "They were driven out of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these was one of the daughters of Zelophehad?",
+      "explanation": "The daughters of Zelophehad were Mahlah, Noah, Hoglah, Milcah and Tirzah.",
+      "bibleReference": "Numbers 26:33",
+      "answers": [
+        {
+          "text": "Hannah",
+          "isCorrect": false
+        },
+        {
+          "text": "Tirzah",
+          "isCorrect": true
+        },
+        {
+          "text": "Deborah",
+          "isCorrect": false
+        },
+        {
+          "text": "Rebekah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which tribe's list is a daughter named Serah mentioned?",
+      "explanation": "In the list of the sons of Asher the text says, \"The name of the daughter of Asher was Serah.\"",
+      "bibleReference": "Numbers 26:46",
+      "answers": [
+        {
+          "text": "Naphtali",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Reuben",
+          "isCorrect": false
+        },
+        {
+          "text": "Asher",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the total number counted of the children of Israel?",
+      "explanation": "\"These are those who were counted of the children of Israel, six hundred one thousand seven hundred thirty.\"",
+      "bibleReference": "Numbers 26:51",
+      "answers": [
+        {
+          "text": "Five hundred ninety-one thousand two hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred one thousand seven hundred thirty",
+          "isCorrect": true
+        },
+        {
+          "text": "Six hundred twenty thousand five hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven hundred one thousand four hundred thirty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the land to be divided among the tribes?",
+      "explanation": "The larger groups would get more and the smaller less, but the land was to be divided by lot, according to the names of the tribes of their fathers.",
+      "bibleReference": "Numbers 26:54-55",
+      "answers": [
+        {
+          "text": "By lot, more to the larger and less to the smaller",
+          "isCorrect": true
+        },
+        {
+          "text": "Equally to every tribe, whatever its size",
+          "isCorrect": false
+        },
+        {
+          "text": "By the choice of each prince",
+          "isCorrect": false
+        },
+        {
+          "text": "According to the age of each tribe's father",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the name of Amram's wife?",
+      "explanation": "Amram's wife was Jochebed, the daughter of Levi, and she bore to Amram Aaron, Moses and Miriam their sister.",
+      "bibleReference": "Numbers 26:59",
+      "answers": [
+        {
+          "text": "Elisheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Zipporah",
+          "isCorrect": false
+        },
+        {
+          "text": "Jochebed",
+          "isCorrect": true
+        },
+        {
+          "text": "Serah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Nadab and Abihu die?",
+      "explanation": "\"Nadab and Abihu died when they offered strange fire before Yahweh.\"",
+      "bibleReference": "Numbers 26:61",
+      "answers": [
+        {
+          "text": "They were bitten by snakes",
+          "isCorrect": false
+        },
+        {
+          "text": "They were swallowed by the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "They died of the plague at Peor",
+          "isCorrect": false
+        },
+        {
+          "text": "They offered strange fire before Yahweh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who were the only men left of those counted by Moses and Aaron in the wilderness of Sinai?",
+      "explanation": "Yahweh had said they would die in the wilderness, and not a man was left of them except Caleb the son of Jephunneh and Joshua the son of Nun.",
+      "bibleReference": "Numbers 26:64-65",
+      "answers": [
+        {
+          "text": "Moses and Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb and Joshua",
+          "isCorrect": true
+        },
+        {
+          "text": "Eleazar and Ithamar",
+          "isCorrect": false
+        },
+        {
+          "text": "Dathan and Abiram",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

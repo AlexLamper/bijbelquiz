@@ -1,0 +1,242 @@
+{
+  "title": "2 Kings Bible Quiz - Chapter 5",
+  "description": "Ten questions on 2 Kings 5: Naaman the Syrian is healed in the Jordan, and Gehazi's greed brings Naaman's leprosy on himself.",
+  "slug": "2-kings-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Naaman was captain of the army of which king?",
+      "explanation": "Naaman was captain of the army of the king of Syria, a mighty man of valor, but he was a leper.",
+      "bibleReference": "2 Kings 5:1",
+      "answers": [
+        {
+          "text": "The king of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Syria",
+          "isCorrect": true
+        },
+        {
+          "text": "The king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who told Naaman's wife about the prophet in Samaria?",
+      "explanation": "A little maiden brought captive from Israel, who waited on Naaman's wife, wished that her lord were with the prophet in Samaria.",
+      "bibleReference": "2 Kings 5:2-3",
+      "answers": [
+        {
+          "text": "A merchant from Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the king's officers",
+          "isCorrect": false
+        },
+        {
+          "text": "A priest of the house of Rimmon",
+          "isCorrect": false
+        },
+        {
+          "text": "A little maiden taken captive from Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the king of Israel do when he read the letter from the king of Syria?",
+      "explanation": "When the king of Israel had read the letter, he tore his clothes and asked, 'Am I God, to kill and to make alive?'",
+      "bibleReference": "2 Kings 5:7",
+      "answers": [
+        {
+          "text": "He tore his clothes",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent for his army",
+          "isCorrect": false
+        },
+        {
+          "text": "He wrote back in anger",
+          "isCorrect": false
+        },
+        {
+          "text": "He went to see Elisha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Elisha's messenger tell Naaman to do?",
+      "explanation": "Elisha sent a messenger saying, 'Go and wash in the Jordan seven times, and your flesh shall come again to you, and you shall be clean.'",
+      "bibleReference": "2 Kings 5:10",
+      "answers": [
+        {
+          "text": "Offer a sacrifice on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Go back to Damascus and wait",
+          "isCorrect": false
+        },
+        {
+          "text": "Wash in the Jordan seven times",
+          "isCorrect": true
+        },
+        {
+          "text": "Fast and pray for three days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which rivers of Damascus did Naaman think were better than all the waters of Israel?",
+      "explanation": "Naaman asked, 'Aren't Abanah and Pharpar, the rivers of Damascus, better than all the waters of Israel?'",
+      "bibleReference": "2 Kings 5:12",
+      "answers": [
+        {
+          "text": "Euphrates and Tigris",
+          "isCorrect": false
+        },
+        {
+          "text": "Kishon and Jabbok",
+          "isCorrect": false
+        },
+        {
+          "text": "Abanah and Pharpar",
+          "isCorrect": true
+        },
+        {
+          "text": "Arnon and Kidron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Naaman's flesh like after he dipped himself in the Jordan?",
+      "explanation": "His flesh was restored like the flesh of a little child, and he was clean.",
+      "bibleReference": "2 Kings 5:14",
+      "answers": [
+        {
+          "text": "Like the flesh of a little child",
+          "isCorrect": true
+        },
+        {
+          "text": "Rough like the bark of a tree",
+          "isCorrect": false
+        },
+        {
+          "text": "Still covered with sores",
+          "isCorrect": false
+        },
+        {
+          "text": "Like the flesh of an old man",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Elisha respond when Naaman offered him a gift?",
+      "explanation": "Elisha said, 'As Yahweh lives, before whom I stand, I will receive none,' and though Naaman urged him, he refused.",
+      "bibleReference": "2 Kings 5:16",
+      "answers": [
+        {
+          "text": "He took half and gave it to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "He refused to receive anything",
+          "isCorrect": true
+        },
+        {
+          "text": "He accepted it for the sons of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "He told him to give it to the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Naaman ask to take home with him?",
+      "explanation": "Naaman asked that two mules' burden of earth be given to him, for he would offer sacrifice to no other god but Yahweh.",
+      "bibleReference": "2 Kings 5:17",
+      "answers": [
+        {
+          "text": "A jar of water from the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "A stone from Elisha's house",
+          "isCorrect": false
+        },
+        {
+          "text": "A scroll of Yahweh's law",
+          "isCorrect": false
+        },
+        {
+          "text": "Two mules' burden of earth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Gehazi ask Naaman for, claiming his master had sent him?",
+      "explanation": "Gehazi said that his master asked for a talent of silver and two changes of clothing for two young men of the sons of the prophets.",
+      "bibleReference": "2 Kings 5:22",
+      "answers": [
+        {
+          "text": "Ten pieces of gold and a fine robe",
+          "isCorrect": false
+        },
+        {
+          "text": "A talent of silver and two changes of clothing",
+          "isCorrect": true
+        },
+        {
+          "text": "A chariot with two horses for the road",
+          "isCorrect": false
+        },
+        {
+          "text": "A bag of gold and a team of mules",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Gehazi as he went out from Elisha's presence?",
+      "explanation": "Elisha said the leprosy of Naaman would cling to him, and he went out from his presence a leper, as white as snow.",
+      "bibleReference": "2 Kings 5:27",
+      "answers": [
+        {
+          "text": "He was struck blind",
+          "isCorrect": false
+        },
+        {
+          "text": "He fell down and died",
+          "isCorrect": false
+        },
+        {
+          "text": "He was driven from the city",
+          "isCorrect": false
+        },
+        {
+          "text": "He was a leper, as white as snow",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

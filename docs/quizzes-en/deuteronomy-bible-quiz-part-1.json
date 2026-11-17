@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomy Bible Quiz - Chapter 1",
+  "description": "Ten questions on Deuteronomy 1: Moses looks back on the judges, the twelve spies and Israel's refusal to enter the land.",
+  "slug": "deuteronomy-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How many days' journey is it from Horeb by the way of Mount Seir to Kadesh Barnea?",
+      "explanation": "The text says it is eleven days' journey from Horeb by the way of Mount Seir to Kadesh Barnea.",
+      "bibleReference": "Deuteronomy 1:2",
+      "answers": [
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleven days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "When did Moses speak these words to the children of Israel?",
+      "explanation": "Moses spoke in the fortieth year, in the eleventh month, on the first day of the month.",
+      "bibleReference": "Deuteronomy 1:3",
+      "answers": [
+        {
+          "text": "In the second year, first month",
+          "isCorrect": false
+        },
+        {
+          "text": "In the fortieth year, eleventh month",
+          "isCorrect": true
+        },
+        {
+          "text": "In the thirtieth year, seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "In the fortieth year, first month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Because he could not bear the people alone, what did Moses ask them to take from their tribes?",
+      "explanation": "Moses asked them to take wise men of understanding who were respected among their tribes, so he could make them heads over them.",
+      "bibleReference": "Deuteronomy 1:12-13",
+      "answers": [
+        {
+          "text": "Wise, respected men to be heads",
+          "isCorrect": true
+        },
+        {
+          "text": "Priests to offer for them",
+          "isCorrect": false
+        },
+        {
+          "text": "Warriors to guard the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "Spies to search the land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were the judges not to be afraid of the face of man?",
+      "explanation": "Moses told them not to be afraid of the face of man, for the judgment is God's.",
+      "bibleReference": "Deuteronomy 1:17",
+      "answers": [
+        {
+          "text": "Because Moses would protect them",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they were Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the judgment is God's",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the people had chosen them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many men did Moses take to search the land?",
+      "explanation": "Moses took twelve of their men, one man for every tribe.",
+      "bibleReference": "Deuteronomy 1:23",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did the brothers say they had seen in the land?",
+      "explanation": "They said the people were greater and taller, the cities fortified, and \"we have seen the sons of the Anakim there!\"",
+      "bibleReference": "Deuteronomy 1:28",
+      "answers": [
+        {
+          "text": "The armies of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The sons of the Anakim",
+          "isCorrect": true
+        },
+        {
+          "text": "The kings of Midian",
+          "isCorrect": false
+        },
+        {
+          "text": "The children of Esau",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Yahweh carry Israel in the wilderness, according to Moses?",
+      "explanation": "Moses said they had seen how Yahweh carried them as a man carries his son, all the way until they came to this place.",
+      "bibleReference": "Deuteronomy 1:31",
+      "answers": [
+        {
+          "text": "As a shepherd carries a lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "As a servant carries a load",
+          "isCorrect": false
+        },
+        {
+          "text": "As a man carries his son",
+          "isCorrect": true
+        },
+        {
+          "text": "As a river carries a boat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who would see the good land because he had wholly followed Yahweh?",
+      "explanation": "Not one of that evil generation would see the land, except Caleb the son of Jephunneh, because he wholly followed Yahweh.",
+      "bibleReference": "Deuteronomy 1:35-36",
+      "answers": [
+        {
+          "text": "Caleb",
+          "isCorrect": true
+        },
+        {
+          "text": "Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Korah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who would cause Israel to inherit the land?",
+      "explanation": "Yahweh said that Joshua the son of Nun would go in there, and that he would cause Israel to inherit it.",
+      "bibleReference": "Deuteronomy 1:38",
+      "answers": [
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua",
+          "isCorrect": true
+        },
+        {
+          "text": "Phinehas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the Amorites chase Israel when they went up without Yahweh?",
+      "explanation": "The Amorites came out against them and chased them as bees do, and beat them down in Seir, even to Hormah.",
+      "bibleReference": "Deuteronomy 1:44",
+      "answers": [
+        {
+          "text": "As wolves do",
+          "isCorrect": false
+        },
+        {
+          "text": "As lions do",
+          "isCorrect": false
+        },
+        {
+          "text": "As eagles do",
+          "isCorrect": false
+        },
+        {
+          "text": "As bees do",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 13",
+  "description": "Ten questions on 1 Samuel 13: Saul's unlawful burnt offering at Gilgal and Israel without swords against the Philistines.",
+  "slug": "1-samuel-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How old was Saul when he became king?",
+      "explanation": "1 Samuel 13:1 says Saul was thirty years old when he became king.",
+      "bibleReference": "1 Samuel 13:1",
+      "answers": [
+        {
+          "text": "Thirty years old",
+          "isCorrect": true
+        },
+        {
+          "text": "Twenty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-five years old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the garrison of the Philistines that Jonathan struck?",
+      "explanation": "Jonathan struck the garrison of the Philistines that was in Geba.",
+      "bibleReference": "1 Samuel 13:3",
+      "answers": [
+        {
+          "text": "In Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "In Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "In Geba",
+          "isCorrect": true
+        },
+        {
+          "text": "In Ramah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the people of Israel hide when they saw they were in trouble?",
+      "explanation": "The people hid themselves in caves, in thickets, in rocks, in tombs, and in pits.",
+      "bibleReference": "1 Samuel 13:6",
+      "answers": [
+        {
+          "text": "In the cities of the Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "In caves, thickets, rocks, tombs and pits",
+          "isCorrect": true
+        },
+        {
+          "text": "In the house of Yahweh at Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "In the land of Egypt and in Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did Saul wait at Gilgal according to the time set by Samuel?",
+      "explanation": "He stayed seven days, according to the time set by Samuel, but Samuel didn't come.",
+      "bibleReference": "1 Samuel 13:8",
+      "answers": [
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Saul do when Samuel did not come and the people were scattering?",
+      "explanation": "Saul said, \"Bring the burnt offering to me here,\" and he offered the burnt offering.",
+      "bibleReference": "1 Samuel 13:9",
+      "answers": [
+        {
+          "text": "He went to look for Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "He offered the burnt offering",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent the people home",
+          "isCorrect": false
+        },
+        {
+          "text": "He attacked the Philistines at once",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel say to Saul about what he had done?",
+      "explanation": "Samuel said, \"You have done foolishly. You have not kept the commandment of Yahweh your God.\"",
+      "bibleReference": "1 Samuel 13:13",
+      "answers": [
+        {
+          "text": "\"You have done foolishly.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"You have done well.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Yahweh is pleased with you.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let us offer another sacrifice.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of man did Samuel say Yahweh had sought for himself?",
+      "explanation": "Samuel said, \"Yahweh has sought for himself a man after his own heart.\"",
+      "bibleReference": "1 Samuel 13:14",
+      "answers": [
+        {
+          "text": "A man taller than Saul",
+          "isCorrect": false
+        },
+        {
+          "text": "A man from the tribe of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "A man older than Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "A man after his own heart",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "About how many men were with Saul when he counted the people?",
+      "explanation": "Saul counted the people who were present with him, about six hundred men.",
+      "bibleReference": "1 Samuel 13:15",
+      "answers": [
+        {
+          "text": "About three thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About thirty thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About six hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "About sixty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why was there no blacksmith in all the land of Israel?",
+      "explanation": "The Philistines said, \"Lest the Hebrews make themselves swords or spears.\"",
+      "bibleReference": "1 Samuel 13:19",
+      "answers": [
+        {
+          "text": "So the Hebrews could not make swords or spears",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the blacksmiths had all died in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Saul had forbidden all work with iron",
+          "isCorrect": false
+        },
+        {
+          "text": "Because there was no iron anywhere in the land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On the day of battle, who among Saul's people had a sword and spear?",
+      "explanation": "Neither sword nor spear was found with the people, but Saul and Jonathan his son had them.",
+      "bibleReference": "1 Samuel 13:22",
+      "answers": [
+        {
+          "text": "Every man of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Only Saul and Jonathan",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the men of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "No one at all",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

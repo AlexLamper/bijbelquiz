@@ -1,0 +1,242 @@
+{
+  "title": "Judges Bible Quiz - Chapter 4",
+  "description": "Ten questions on Judges 4: Deborah, Barak and Jael bring the defeat of Sisera.",
+  "slug": "judges-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Jabin king of Canaan reign?",
+      "explanation": "Judges 4:2 says Jabin king of Canaan reigned in Hazor.",
+      "bibleReference": "Judges 4:2",
+      "answers": [
+        {
+          "text": "Hazor",
+          "isCorrect": true
+        },
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the captain of Jabin's army?",
+      "explanation": "Judges 4:2 says the captain of his army was Sisera, who lived in Harosheth of the Gentiles.",
+      "bibleReference": "Judges 4:2",
+      "answers": [
+        {
+          "text": "Eglon",
+          "isCorrect": false
+        },
+        {
+          "text": "Heber",
+          "isCorrect": false
+        },
+        {
+          "text": "Abinoam",
+          "isCorrect": false
+        },
+        {
+          "text": "Sisera",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many chariots of iron did Jabin have?",
+      "explanation": "Judges 4:3 says he had nine hundred chariots of iron.",
+      "bibleReference": "Judges 4:3",
+      "answers": [
+        {
+          "text": "Three hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "Six hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose wife was Deborah the prophetess?",
+      "explanation": "Judges 4:4 calls Deborah a prophetess, the wife of Lappidoth.",
+      "bibleReference": "Judges 4:4",
+      "answers": [
+        {
+          "text": "Barak",
+          "isCorrect": false
+        },
+        {
+          "text": "Jephunneh",
+          "isCorrect": false
+        },
+        {
+          "text": "Lappidoth",
+          "isCorrect": true
+        },
+        {
+          "text": "Abinoam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Deborah live when Israel came to her for judgment?",
+      "explanation": "Judges 4:5 says she lived under Deborah's palm tree between Ramah and Bethel in the hill country of Ephraim.",
+      "bibleReference": "Judges 4:5",
+      "answers": [
+        {
+          "text": "In the city of Hazor",
+          "isCorrect": false
+        },
+        {
+          "text": "Between Ramah and Bethel",
+          "isCorrect": true
+        },
+        {
+          "text": "By the oak in Zaanannim",
+          "isCorrect": false
+        },
+        {
+          "text": "On the top of Mount Tabor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which mountain was Barak told to lead the way?",
+      "explanation": "In Judges 4:6 Deborah tells Barak to lead the way to Mount Tabor.",
+      "bibleReference": "Judges 4:6",
+      "answers": [
+        {
+          "text": "Mount Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Gaash",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Tabor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What condition did Barak set before he would go?",
+      "explanation": "In Judges 4:8 Barak says, \"If you will go with me, then I will go.\"",
+      "bibleReference": "Judges 4:8",
+      "answers": [
+        {
+          "text": "That Deborah would go with him",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would get twenty thousand men",
+          "isCorrect": false
+        },
+        {
+          "text": "That Yahweh would send a sign first",
+          "isCorrect": false
+        },
+        {
+          "text": "That Jabin would come out himself",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Into whose hand did Deborah say Yahweh would sell Sisera?",
+      "explanation": "Judges 4:9 says Yahweh will sell Sisera into a woman's hand.",
+      "bibleReference": "Judges 4:9",
+      "answers": [
+        {
+          "text": "Barak's hand",
+          "isCorrect": false
+        },
+        {
+          "text": "The Kenites' hand",
+          "isCorrect": false
+        },
+        {
+          "text": "A woman's hand",
+          "isCorrect": true
+        },
+        {
+          "text": "The hand of Naphtali's elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When Sisera asked Jael for a little water, what did she give him?",
+      "explanation": "Judges 4:19 says she opened a container of milk and gave him a drink.",
+      "bibleReference": "Judges 4:18-19",
+      "answers": [
+        {
+          "text": "Wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Water from a spring",
+          "isCorrect": false
+        },
+        {
+          "text": "Honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Milk",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Jael kill Sisera?",
+      "explanation": "Judges 4:21 says she struck a tent peg into his temples with a hammer while he was in a deep sleep.",
+      "bibleReference": "Judges 4:21",
+      "answers": [
+        {
+          "text": "She struck a tent peg into his temples",
+          "isCorrect": true
+        },
+        {
+          "text": "She stabbed him with his own sword",
+          "isCorrect": false
+        },
+        {
+          "text": "She threw a millstone on his head",
+          "isCorrect": false
+        },
+        {
+          "text": "She poisoned his drink",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 16",
+  "description": "Ten questions on Exodus 16: the quail and the manna in the wilderness of Sin, and the Sabbath rest.",
+  "slug": "exodus-bible-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Into which wilderness did the congregation come after leaving Elim?",
+      "explanation": "They came to the wilderness of Sin, which is between Elim and Sinai.",
+      "bibleReference": "Exodus 16:1",
+      "answers": [
+        {
+          "text": "The wilderness of Sin",
+          "isCorrect": true
+        },
+        {
+          "text": "The wilderness of Shur",
+          "isCorrect": false
+        },
+        {
+          "text": "The wilderness of Paran",
+          "isCorrect": false
+        },
+        {
+          "text": "The wilderness of Etham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people wish when they murmured against Moses and Aaron?",
+      "explanation": "They said they wished they had died by Yahweh's hand in Egypt, when they sat by the meat pots and ate their fill of bread.",
+      "bibleReference": "Exodus 16:3",
+      "answers": [
+        {
+          "text": "That they had stayed at Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "That Aaron had led them instead",
+          "isCorrect": false
+        },
+        {
+          "text": "That they had gone by the way of the Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "That they had died by Yahweh's hand in Egypt",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How much were they to gather on the sixth day?",
+      "explanation": "On the sixth day what they brought in would be twice as much as they gathered daily.",
+      "bibleReference": "Exodus 16:5",
+      "answers": [
+        {
+          "text": "Nothing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "Half as much",
+          "isCorrect": false
+        },
+        {
+          "text": "Twice as much",
+          "isCorrect": true
+        },
+        {
+          "text": "Three times as much",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What came up and covered the camp in the evening?",
+      "explanation": "In the evening quail came up and covered the camp, and in the morning the dew lay around the camp.",
+      "bibleReference": "Exodus 16:13",
+      "answers": [
+        {
+          "text": "Locusts",
+          "isCorrect": false
+        },
+        {
+          "text": "Quail",
+          "isCorrect": true
+        },
+        {
+          "text": "Fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Doves",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses say the small round thing on the ground was?",
+      "explanation": "When they asked 'What is it?', Moses said: 'It is the bread which Yahweh has given you to eat.'",
+      "bibleReference": "Exodus 16:15",
+      "answers": [
+        {
+          "text": "The bread Yahweh had given them to eat",
+          "isCorrect": true
+        },
+        {
+          "text": "Frost that had fallen from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "Honey that had dripped from the rocks",
+          "isCorrect": false
+        },
+        {
+          "text": "Seed for sowing in the fields",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much were they to gather for each person?",
+      "explanation": "Yahweh commanded them to gather an omer a head, according to the number of their persons.",
+      "bibleReference": "Exodus 16:16",
+      "answers": [
+        {
+          "text": "An ephah",
+          "isCorrect": false
+        },
+        {
+          "text": "A hin",
+          "isCorrect": false
+        },
+        {
+          "text": "An omer",
+          "isCorrect": true
+        },
+        {
+          "text": "A bushel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the manna that some left until the morning?",
+      "explanation": "Some did not listen to Moses and left it until morning, and it bred worms and became foul.",
+      "bibleReference": "Exodus 16:20",
+      "answers": [
+        {
+          "text": "It turned hard as stone",
+          "isCorrect": false
+        },
+        {
+          "text": "It vanished completely",
+          "isCorrect": false
+        },
+        {
+          "text": "It grew twice as large",
+          "isCorrect": false
+        },
+        {
+          "text": "It bred worms and became foul",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened when some people went out to gather on the seventh day?",
+      "explanation": "On the seventh day some of the people went out to gather, and they found none.",
+      "bibleReference": "Exodus 16:27",
+      "answers": [
+        {
+          "text": "They found twice as much",
+          "isCorrect": false
+        },
+        {
+          "text": "They found none",
+          "isCorrect": true
+        },
+        {
+          "text": "They found only quail",
+          "isCorrect": false
+        },
+        {
+          "text": "They found it full of worms",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the taste of the manna like?",
+      "explanation": "Manna was like coriander seed, white, and its taste was like wafers with honey.",
+      "bibleReference": "Exodus 16:31",
+      "answers": [
+        {
+          "text": "Like fresh oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Like salt",
+          "isCorrect": false
+        },
+        {
+          "text": "Like bitter herbs",
+          "isCorrect": false
+        },
+        {
+          "text": "Like wafers with honey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long did the children of Israel eat the manna?",
+      "explanation": "The children of Israel ate the manna forty years, until they came to the borders of the land of Canaan.",
+      "bibleReference": "Exodus 16:35",
+      "answers": [
+        {
+          "text": "Forty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy years",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

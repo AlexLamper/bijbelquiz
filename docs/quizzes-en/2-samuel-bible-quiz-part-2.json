@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 2",
+  "description": "Ten questions on 2 Samuel 2: David is anointed king in Hebron, Ishbosheth reigns over Israel, and Abner kills Asahel.",
+  "slug": "2-samuel-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "To which city did Yahweh tell David to go up?",
+      "explanation": "David asked where he should go up, and Yahweh said, \"To Hebron.\"",
+      "bibleReference": "2 Samuel 2:1",
+      "answers": [
+        {
+          "text": "Hebron",
+          "isCorrect": true
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the men of Judah do at Hebron?",
+      "explanation": "The men of Judah came, and there they anointed David king over the house of Judah.",
+      "bibleReference": "2 Samuel 2:4",
+      "answers": [
+        {
+          "text": "They made a treaty with the Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "They brought Saul's body to David",
+          "isCorrect": false
+        },
+        {
+          "text": "They anointed David king over the house of Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "They built an altar to Yahweh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Abner the son of Ner make king?",
+      "explanation": "Abner took Ishbosheth the son of Saul to Mahanaim and made him king over all Israel.",
+      "bibleReference": "2 Samuel 2:8-9",
+      "answers": [
+        {
+          "text": "Jonathan the son of Saul",
+          "isCorrect": false
+        },
+        {
+          "text": "Ishbosheth the son of Saul",
+          "isCorrect": true
+        },
+        {
+          "text": "Mephibosheth",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab the son of Zeruiah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Ishbosheth when he began to reign over Israel?",
+      "explanation": "Ishbosheth, Saul's son, was forty years old when he began to reign over Israel, and he reigned two years.",
+      "bibleReference": "2 Samuel 2:10",
+      "answers": [
+        {
+          "text": "Twenty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years old",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long was David king in Hebron over the house of Judah?",
+      "explanation": "The time that David was king in Hebron over the house of Judah was seven years and six months.",
+      "bibleReference": "2 Samuel 2:11",
+      "answers": [
+        {
+          "text": "Two years and three months",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years and six months",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty years and six months",
+          "isCorrect": false
+        },
+        {
+          "text": "Three years and six months",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Joab and David's servants meet Abner and his men?",
+      "explanation": "Joab and David's servants met them by the pool of Gibeon and sat down on either side of the pool.",
+      "bibleReference": "2 Samuel 2:13",
+      "answers": [
+        {
+          "text": "By the pool of Gibeon",
+          "isCorrect": true
+        },
+        {
+          "text": "By the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "At the gate of Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "On Mount Gilboa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what was Asahel's speed compared?",
+      "explanation": "Asahel was as light of foot as a wild gazelle.",
+      "bibleReference": "2 Samuel 2:18",
+      "answers": [
+        {
+          "text": "A swift eagle",
+          "isCorrect": false
+        },
+        {
+          "text": "A young horse",
+          "isCorrect": false
+        },
+        {
+          "text": "The east wind",
+          "isCorrect": false
+        },
+        {
+          "text": "A wild gazelle",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Abner kill Asahel?",
+      "explanation": "Asahel refused to turn away, so Abner struck him in the body with the back end of the spear, and he died there.",
+      "bibleReference": "2 Samuel 2:23",
+      "answers": [
+        {
+          "text": "With a stone from a sling",
+          "isCorrect": false
+        },
+        {
+          "text": "With an arrow from his bow",
+          "isCorrect": false
+        },
+        {
+          "text": "With the back end of his spear",
+          "isCorrect": true
+        },
+        {
+          "text": "With a sword from behind",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Joab do to stop the fighting?",
+      "explanation": "Joab blew the trumpet, and all the people stood still and pursued Israel no more.",
+      "bibleReference": "2 Samuel 2:28",
+      "answers": [
+        {
+          "text": "He blew the trumpet",
+          "isCorrect": true
+        },
+        {
+          "text": "He raised a white flag",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent a messenger to Abner",
+          "isCorrect": false
+        },
+        {
+          "text": "He offered a sacrifice",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Asahel buried?",
+      "explanation": "They took up Asahel and buried him in the tomb of his father, which was in Bethlehem.",
+      "bibleReference": "2 Samuel 2:32",
+      "answers": [
+        {
+          "text": "In Hebron beside the pool",
+          "isCorrect": false
+        },
+        {
+          "text": "In a field near Mahanaim",
+          "isCorrect": false
+        },
+        {
+          "text": "On the hill of Ammah",
+          "isCorrect": false
+        },
+        {
+          "text": "In his father's tomb in Bethlehem",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

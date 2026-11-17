@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 24",
+  "description": "Ten questions on Joshua 24: the covenant at Shechem, Israel's choice to serve Yahweh, and Joshua's death.",
+  "slug": "joshua-bible-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Joshua gather all the tribes of Israel in this chapter?",
+      "explanation": "Joshua 24:1 says Joshua gathered all the tribes of Israel to Shechem.",
+      "bibleReference": "Joshua 24:1",
+      "answers": [
+        {
+          "text": "Shechem",
+          "isCorrect": true
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh give to Esau to possess?",
+      "explanation": "Joshua 24:4 says Yahweh gave Esau Mount Seir to possess it.",
+      "bibleReference": "Joshua 24:4",
+      "answers": [
+        {
+          "text": "The land of Goshen",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Gaash",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Seir",
+          "isCorrect": true
+        },
+        {
+          "text": "The land of Gilead",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When the fathers cried out at the sea, what did Yahweh put between them and the Egyptians?",
+      "explanation": "Joshua 24:7 says Yahweh put darkness between them and the Egyptians and brought the sea on the Egyptians.",
+      "bibleReference": "Joshua 24:7",
+      "answers": [
+        {
+          "text": "A pillar of stone",
+          "isCorrect": false
+        },
+        {
+          "text": "Darkness",
+          "isCorrect": true
+        },
+        {
+          "text": "A wall of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A great wind",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Balak the son of Zippor call to curse Israel?",
+      "explanation": "Joshua 24:9 says Balak sent and called Balaam the son of Beor to curse them.",
+      "bibleReference": "Joshua 24:9",
+      "answers": [
+        {
+          "text": "Achan the son of Zerah",
+          "isCorrect": false
+        },
+        {
+          "text": "Og the king of Bashan",
+          "isCorrect": false
+        },
+        {
+          "text": "Sihon the Amorite",
+          "isCorrect": false
+        },
+        {
+          "text": "Balaam the son of Beor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh send before Israel to drive out the two kings of the Amorites?",
+      "explanation": "Joshua 24:12 says Yahweh sent the hornet before them, not with their sword or bow.",
+      "bibleReference": "Joshua 24:12",
+      "answers": [
+        {
+          "text": "A flood",
+          "isCorrect": false
+        },
+        {
+          "text": "The hornet",
+          "isCorrect": true
+        },
+        {
+          "text": "Hailstones",
+          "isCorrect": false
+        },
+        {
+          "text": "A plague of frogs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Joshua declare about himself and his house?",
+      "explanation": "In Joshua 24:15 Joshua says, \"as for me and my house, we will serve Yahweh.\"",
+      "bibleReference": "Joshua 24:15",
+      "answers": [
+        {
+          "text": "They would serve Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "They would return beyond the River",
+          "isCorrect": false
+        },
+        {
+          "text": "They would choose the gods of the Amorites",
+          "isCorrect": false
+        },
+        {
+          "text": "They would wait for a sign",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides holy, how did Joshua describe Yahweh when he warned the people?",
+      "explanation": "Joshua 24:19 says Yahweh is a holy God and a jealous God.",
+      "bibleReference": "Joshua 24:19",
+      "answers": [
+        {
+          "text": "A distant God",
+          "isCorrect": false
+        },
+        {
+          "text": "A God who forgets sins",
+          "isCorrect": false
+        },
+        {
+          "text": "A God of one tribe only",
+          "isCorrect": false
+        },
+        {
+          "text": "A jealous God",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Joshua set up under the oak by the sanctuary of Yahweh?",
+      "explanation": "Joshua 24:26 says Joshua took a great stone and set it up under the oak by the sanctuary of Yahweh.",
+      "bibleReference": "Joshua 24:26-27",
+      "answers": [
+        {
+          "text": "An altar of bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden lampstand",
+          "isCorrect": false
+        },
+        {
+          "text": "A great stone",
+          "isCorrect": true
+        },
+        {
+          "text": "A wooden pillar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Joshua when he died?",
+      "explanation": "Joshua 24:29 says Joshua the son of Nun died, being one hundred ten years old.",
+      "bibleReference": "Joshua 24:29",
+      "answers": [
+        {
+          "text": "One hundred ten years old",
+          "isCorrect": true
+        },
+        {
+          "text": "Eighty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninety-five years old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how much had Jacob bought the ground where Joseph's bones were buried?",
+      "explanation": "Joshua 24:32 says Jacob bought the parcel of ground from the sons of Hamor for a hundred pieces of silver.",
+      "bibleReference": "Joshua 24:32",
+      "answers": [
+        {
+          "text": "Thirty pieces of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "A hundred pieces of silver",
+          "isCorrect": true
+        },
+        {
+          "text": "Four hundred shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten pieces of gold",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "2 Chronicles Bible Quiz - Chapter 9",
+  "description": "Ten questions on 2 Chronicles 9: the visit of the queen of Sheba, Solomon's gold and ivory throne, and the end of his reign.",
+  "slug": "2-chronicles-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why did the queen of Sheba come to Solomon in Jerusalem?",
+      "explanation": "When she heard of Solomon's fame, she came to test him with hard questions at Jerusalem.",
+      "bibleReference": "2 Chronicles 9:1",
+      "answers": [
+        {
+          "text": "To ask for help against her enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "To marry one of his sons",
+          "isCorrect": false
+        },
+        {
+          "text": "To buy cedar wood from Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "To test him with hard questions",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the queen say about the report she had heard of Solomon's wisdom?",
+      "explanation": "She said half of the greatness of his wisdom had not been told to her; he exceeded the fame she had heard.",
+      "bibleReference": "2 Chronicles 9:6",
+      "answers": [
+        {
+          "text": "It had been greatly exaggerated by the travelers",
+          "isCorrect": false
+        },
+        {
+          "text": "Half of the greatness of his wisdom had not been told her",
+          "isCorrect": true
+        },
+        {
+          "text": "She had never heard any report of him before",
+          "isCorrect": false
+        },
+        {
+          "text": "Only his riches had been reported, not his wisdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much gold did the queen of Sheba give the king?",
+      "explanation": "She gave the king one hundred and twenty talents of gold, spices in great abundance and precious stones.",
+      "bibleReference": "2 Chronicles 9:9",
+      "answers": [
+        {
+          "text": "One hundred and twenty talents",
+          "isCorrect": true
+        },
+        {
+          "text": "Six hundred sixty-six talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred fifty talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy talents",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king make from the algum tree wood, besides terraces?",
+      "explanation": "He used algum wood for terraces for Yahweh's house and the king's house, and harps and stringed instruments for the singers.",
+      "bibleReference": "2 Chronicles 9:10-11",
+      "answers": [
+        {
+          "text": "Chariots for his horsemen in the cities",
+          "isCorrect": false
+        },
+        {
+          "text": "Doors for the gates of the city walls",
+          "isCorrect": false
+        },
+        {
+          "text": "Harps and stringed instruments for the singers",
+          "isCorrect": true
+        },
+        {
+          "text": "Ships to sail on the sea to Ophir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the weight of gold that came to Solomon in one year?",
+      "explanation": "The weight of gold that came to Solomon in one year was six hundred sixty-six talents.",
+      "bibleReference": "2 Chronicles 9:13",
+      "answers": [
+        {
+          "text": "One hundred twenty talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred talents",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred sixty-six talents",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did the king put the three hundred shields of beaten gold?",
+      "explanation": "The king put the shields in the House of the Forest of Lebanon.",
+      "bibleReference": "2 Chronicles 9:16",
+      "answers": [
+        {
+          "text": "In the House of the Forest of Lebanon",
+          "isCorrect": true
+        },
+        {
+          "text": "In the treasury of Yahweh's house",
+          "isCorrect": false
+        },
+        {
+          "text": "In the tower of the city of David",
+          "isCorrect": false
+        },
+        {
+          "text": "In the storage cities of Hamath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Of what was Solomon's great throne made, and with what was it overlaid?",
+      "explanation": "The king made a great throne of ivory and overlaid it with pure gold.",
+      "bibleReference": "2 Chronicles 9:17",
+      "answers": [
+        {
+          "text": "Cedar, overlaid with silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Ivory, overlaid with pure gold",
+          "isCorrect": true
+        },
+        {
+          "text": "Bronze, overlaid with ivory",
+          "isCorrect": false
+        },
+        {
+          "text": "Stone, overlaid with precious stones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many lions stood on the six steps of the throne?",
+      "explanation": "Twelve lions stood on the one side and on the other on the six steps.",
+      "bibleReference": "2 Chronicles 9:19",
+      "answers": [
+        {
+          "text": "Four",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": true
+        },
+        {
+          "text": "Fourteen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides gold, silver and ivory, what did the ships of Tarshish bring?",
+      "explanation": "Once every three years the ships of Tarshish brought gold, silver, ivory, apes and peacocks.",
+      "bibleReference": "2 Chronicles 9:21",
+      "answers": [
+        {
+          "text": "Apes and peacocks",
+          "isCorrect": true
+        },
+        {
+          "text": "Lions and leopards",
+          "isCorrect": false
+        },
+        {
+          "text": "Horses and mules",
+          "isCorrect": false
+        },
+        {
+          "text": "Camels and sheep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did Solomon reign in Jerusalem over all Israel?",
+      "explanation": "Solomon reigned in Jerusalem over all Israel forty years.",
+      "bibleReference": "2 Chronicles 9:30",
+      "answers": [
+        {
+          "text": "Twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventeen years",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty years",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

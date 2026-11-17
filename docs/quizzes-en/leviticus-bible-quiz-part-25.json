@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 25",
+  "description": "Ten questions on Leviticus 25: the Sabbath year for the land, the Year of Jubilee, and caring for a brother who becomes poor.",
+  "slug": "leviticus-bible-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Yahweh speak to Moses the laws of Leviticus 25?",
+      "explanation": "Verse 1 says Yahweh said these things to Moses in Mount Sinai.",
+      "bibleReference": "Leviticus 25:1",
+      "answers": [
+        {
+          "text": "In Mount Sinai",
+          "isCorrect": true
+        },
+        {
+          "text": "In the plains of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "At Kadesh",
+          "isCorrect": false
+        },
+        {
+          "text": "In the land of Canaan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the Israelites not to do in the seventh year?",
+      "explanation": "The seventh year was a Sabbath of solemn rest for the land: they were not to sow their field or prune their vineyard.",
+      "bibleReference": "Leviticus 25:3-4",
+      "answers": [
+        {
+          "text": "Eat what the land produced",
+          "isCorrect": false
+        },
+        {
+          "text": "Keep livestock on the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Sow their field or prune their vineyard",
+          "isCorrect": true
+        },
+        {
+          "text": "Live in their houses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many years make up the seven Sabbaths of years?",
+      "explanation": "They were to count seven Sabbaths of years, seven times seven years, even forty-nine years.",
+      "bibleReference": "Leviticus 25:8",
+      "answers": [
+        {
+          "text": "Seventy years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty-nine years",
+          "isCorrect": true
+        },
+        {
+          "text": "Fifty-two years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day was the loud trumpet to be sounded throughout the land?",
+      "explanation": "They were to sound the loud trumpet on the tenth day of the seventh month, on the Day of Atonement.",
+      "bibleReference": "Leviticus 25:9",
+      "answers": [
+        {
+          "text": "On the day of Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "On the first day of the year",
+          "isCorrect": false
+        },
+        {
+          "text": "On the first day of the feast of booths",
+          "isCorrect": false
+        },
+        {
+          "text": "On the Day of Atonement",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were the Israelites to proclaim in the fiftieth year?",
+      "explanation": "They were to make the fiftieth year holy and proclaim liberty throughout the land to all its inhabitants; it would be a jubilee.",
+      "bibleReference": "Leviticus 25:10",
+      "answers": [
+        {
+          "text": "A fast of seven days for all the people",
+          "isCorrect": false
+        },
+        {
+          "text": "War against the nations around the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Liberty throughout the land to all its inhabitants",
+          "isCorrect": true
+        },
+        {
+          "text": "A new king over all the tribes of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why was the land not to be sold in perpetuity?",
+      "explanation": "Verse 23 says the land is Yahweh's, and the Israelites are strangers and foreigners with him.",
+      "bibleReference": "Leviticus 25:23",
+      "answers": [
+        {
+          "text": "Because the land belongs to Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the priests own all the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Because it was won in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the elders must approve every sale",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Within what time could a man redeem a house he had sold in a walled city?",
+      "explanation": "He could redeem it within a whole year after the sale; if not, it belonged to the buyer for good and was not released in the Jubilee.",
+      "bibleReference": "Leviticus 25:29-30",
+      "answers": [
+        {
+          "text": "Within seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Within a full year",
+          "isCorrect": true
+        },
+        {
+          "text": "Until the Year of Jubilee",
+          "isCorrect": false
+        },
+        {
+          "text": "Within thirty days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 36 forbid you to take from a brother who has become poor?",
+      "explanation": "Verse 36 says to take no interest or profit from him, but to fear God so that your brother may live among you.",
+      "bibleReference": "Leviticus 25:35-36",
+      "answers": [
+        {
+          "text": "His cloak as a pledge",
+          "isCorrect": false
+        },
+        {
+          "text": "His land",
+          "isCorrect": false
+        },
+        {
+          "text": "His children as servants",
+          "isCorrect": false
+        },
+        {
+          "text": "Interest or profit",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long was an Israelite who sold himself to a fellow Israelite to serve?",
+      "explanation": "He was to be with his master as a hired servant and serve until the Year of Jubilee, then go out with his children.",
+      "bibleReference": "Leviticus 25:39-41",
+      "answers": [
+        {
+          "text": "For six years",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the Year of Jubilee",
+          "isCorrect": true
+        },
+        {
+          "text": "For the rest of his life",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the next Sabbath year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides his brothers, who does verse 49 say may redeem an Israelite sold to a foreigner?",
+      "explanation": "One of his brothers may redeem him, or his uncle, or his uncle's son, or any close relative of his family, or he may redeem himself.",
+      "bibleReference": "Leviticus 25:48-49",
+      "answers": [
+        {
+          "text": "His uncle or his uncle's son",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "The prince of his tribe",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

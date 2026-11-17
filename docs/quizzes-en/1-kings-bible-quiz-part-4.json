@@ -1,0 +1,242 @@
+{
+  "title": "1 Kings Bible Quiz - Chapter 4",
+  "description": "Ten questions on 1 Kings 4: Solomon's officials, his daily provision, his peaceful kingdom and his great wisdom.",
+  "slug": "1-kings-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who was over the army in Solomon's government?",
+      "explanation": "In the list of Solomon's princes, Benaiah the son of Jehoiada was over the army.",
+      "bibleReference": "1 Kings 4:4",
+      "answers": [
+        {
+          "text": "Azariah the son of Zadok",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehoshaphat the son of Ahilud",
+          "isCorrect": false
+        },
+        {
+          "text": "Benaiah the son of Jehoiada",
+          "isCorrect": true
+        },
+        {
+          "text": "Ahishar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was chief minister and called \"the king's friend\"?",
+      "explanation": "Zabud the son of Nathan was chief minister, the king's friend.",
+      "bibleReference": "1 Kings 4:5",
+      "answers": [
+        {
+          "text": "Zabud the son of Nathan",
+          "isCorrect": true
+        },
+        {
+          "text": "Adoniram the son of Abda",
+          "isCorrect": false
+        },
+        {
+          "text": "Elihoreph the son of Shisha",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahishar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did each of Solomon's twelve officers have to provide food for the king's household?",
+      "explanation": "Solomon had twelve officers over all Israel, and each man had to make provision for a month in the year.",
+      "bibleReference": "1 Kings 4:7",
+      "answers": [
+        {
+          "text": "One week",
+          "isCorrect": false
+        },
+        {
+          "text": "A whole year",
+          "isCorrect": false
+        },
+        {
+          "text": "Three months",
+          "isCorrect": false
+        },
+        {
+          "text": "A month in the year",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which officer had Taphath, Solomon's daughter, as his wife?",
+      "explanation": "Ben Abinadab, in all the height of Dor, had Taphath, Solomon's daughter, as wife.",
+      "bibleReference": "1 Kings 4:11",
+      "answers": [
+        {
+          "text": "Ben Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "Ben Abinadab",
+          "isCorrect": true
+        },
+        {
+          "text": "Ben Geber",
+          "isCorrect": false
+        },
+        {
+          "text": "Baana the son of Ahilud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the chapter describe the people of Judah and Israel?",
+      "explanation": "Judah and Israel were numerous as the sand by the sea, eating and drinking and making merry.",
+      "bibleReference": "1 Kings 4:20",
+      "answers": [
+        {
+          "text": "Numerous as the sand, eating and drinking",
+          "isCorrect": true
+        },
+        {
+          "text": "Few in number and afraid of their enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "Hungry and weak because of a long famine",
+          "isCorrect": false
+        },
+        {
+          "text": "Scattered far away among the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Under what did every man live safely in the days of Solomon?",
+      "explanation": "Judah and Israel lived safely, every man under his vine and under his fig tree, from Dan to Beersheba.",
+      "bibleReference": "1 Kings 4:25",
+      "answers": [
+        {
+          "text": "Under the shade of a palm tree",
+          "isCorrect": false
+        },
+        {
+          "text": "Inside a fortified tower",
+          "isCorrect": false
+        },
+        {
+          "text": "Under his vine and under his fig tree",
+          "isCorrect": true
+        },
+        {
+          "text": "In a tent of goat hair",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many horsemen did Solomon have?",
+      "explanation": "Solomon had forty thousand stalls of horses for his chariots, and twelve thousand horsemen.",
+      "bibleReference": "1 Kings 4:26",
+      "answers": [
+        {
+          "text": "Two thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Twenty thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Solomon's wisdom excelled the wisdom of all the children of the east and of which land?",
+      "explanation": "Solomon's wisdom excelled the wisdom of all the children of the east and all the wisdom of Egypt.",
+      "bibleReference": "1 Kings 4:30",
+      "answers": [
+        {
+          "text": "Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "Philistia",
+          "isCorrect": false
+        },
+        {
+          "text": "Egypt",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many proverbs did Solomon speak?",
+      "explanation": "He spoke three thousand proverbs, and his songs numbered one thousand five.",
+      "bibleReference": "1 Kings 4:32",
+      "answers": [
+        {
+          "text": "Seven hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Three thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Solomon spoke of trees from the cedar in Lebanon even to which plant?",
+      "explanation": "He spoke of trees, from the cedar that is in Lebanon even to the hyssop that grows out of the wall.",
+      "bibleReference": "1 Kings 4:33",
+      "answers": [
+        {
+          "text": "The hyssop that grows out of the wall",
+          "isCorrect": true
+        },
+        {
+          "text": "The palm tree of Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "The olive tree on the hill",
+          "isCorrect": false
+        },
+        {
+          "text": "The thornbush in the desert",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 41",
+  "description": "Ten questions on Genesis 41: Pharaoh's dreams, Joseph's interpretation and his rise over the land of Egypt.",
+  "slug": "genesis-bible-quiz-part-41",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "After how long did Pharaoh have his dream by the river?",
+      "explanation": "Genesis 41:1 says it was at the end of two full years that Pharaoh dreamed he stood by the river.",
+      "bibleReference": "Genesis 41:1",
+      "answers": [
+        {
+          "text": "One full year",
+          "isCorrect": false
+        },
+        {
+          "text": "Two full years",
+          "isCorrect": true
+        },
+        {
+          "text": "Three full years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven full years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who told Pharaoh about the young Hebrew who had interpreted their dreams?",
+      "explanation": "The chief cup bearer remembered his faults and told Pharaoh about the young Hebrew, servant to the captain of the guard, who had interpreted their dreams.",
+      "bibleReference": "Genesis 41:9; Genesis 41:12",
+      "answers": [
+        {
+          "text": "The captain of the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "One of Egypt's magicians",
+          "isCorrect": false
+        },
+        {
+          "text": "The keeper of the prison",
+          "isCorrect": false
+        },
+        {
+          "text": "The chief cup bearer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Joseph answer when Pharaoh said he had heard Joseph could interpret dreams?",
+      "explanation": "Joseph answered Pharaoh, \"It isn't in me. God will give Pharaoh an answer of peace.\"",
+      "bibleReference": "Genesis 41:15-16",
+      "answers": [
+        {
+          "text": "\"It isn't in me. God will give Pharaoh an answer of peace.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Yes, I can interpret any dream you have.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Only your magicians can explain it.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let me first ask my father in Canaan.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Joseph, what did the seven thin and ugly cattle stand for?",
+      "explanation": "Joseph said the seven thin and ugly cattle and the seven empty heads of grain were seven years of famine.",
+      "bibleReference": "Genesis 41:27",
+      "answers": [
+        {
+          "text": "Seven years of plenty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven enemy kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years of famine",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven days of storms",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What part of Egypt's produce did Joseph advise taking up in the seven plenteous years?",
+      "explanation": "Joseph advised Pharaoh to appoint overseers and take up the fifth part of the land of Egypt's produce in the seven plenteous years.",
+      "bibleReference": "Genesis 41:34",
+      "answers": [
+        {
+          "text": "The tenth part",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifth part",
+          "isCorrect": true
+        },
+        {
+          "text": "Half of it",
+          "isCorrect": false
+        },
+        {
+          "text": "The third part",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh take off his own hand and put on Joseph's hand?",
+      "explanation": "Pharaoh took off his signet ring and put it on Joseph's hand, dressed him in fine linen and put a gold chain about his neck.",
+      "bibleReference": "Genesis 41:42",
+      "answers": [
+        {
+          "text": "His signet ring",
+          "isCorrect": true
+        },
+        {
+          "text": "A gold bracelet",
+          "isCorrect": false
+        },
+        {
+          "text": "His royal staff",
+          "isCorrect": false
+        },
+        {
+          "text": "A silver cup",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did Pharaoh give to Joseph?",
+      "explanation": "Pharaoh called Joseph's name Zaphenath-Paneah and gave him Asenath as a wife.",
+      "bibleReference": "Genesis 41:45",
+      "answers": [
+        {
+          "text": "Potiphera of On",
+          "isCorrect": false
+        },
+        {
+          "text": "Belteshazzar",
+          "isCorrect": false
+        },
+        {
+          "text": "Mephibosheth",
+          "isCorrect": false
+        },
+        {
+          "text": "Zaphenath-Paneah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How old was Joseph when he stood before Pharaoh king of Egypt?",
+      "explanation": "Genesis 41:46 says Joseph was thirty years old when he stood before Pharaoh king of Egypt.",
+      "bibleReference": "Genesis 41:46",
+      "answers": [
+        {
+          "text": "Seventeen",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-five",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Joseph name his firstborn son Manasseh?",
+      "explanation": "Joseph said, \"God has made me forget all my toil, and all my father's house.\"",
+      "bibleReference": "Genesis 41:51",
+      "answers": [
+        {
+          "text": "God had made him forget all his toil and his father's house",
+          "isCorrect": true
+        },
+        {
+          "text": "God had made him fruitful in the land of his affliction",
+          "isCorrect": false
+        },
+        {
+          "text": "God had heard his cry while he was in the prison",
+          "isCorrect": false
+        },
+        {
+          "text": "God had given him a double portion of the land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh tell the Egyptians when they cried to him for bread?",
+      "explanation": "Pharaoh said to all the Egyptians, \"Go to Joseph. What he says to you, do.\"",
+      "bibleReference": "Genesis 41:55",
+      "answers": [
+        {
+          "text": "\"Go to the land of Canaan.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Ask the magicians for help.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Wait until the famine is over.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go to Joseph. What he says to you, do.\"",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

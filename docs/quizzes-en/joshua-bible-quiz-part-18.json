@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 18",
+  "description": "Ten questions on Joshua 18: the survey of the land at Shiloh and the lot and borders of Benjamin.",
+  "slug": "joshua-bible-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did the whole congregation of Israel assemble and set up the Tent of Meeting?",
+      "explanation": "Joshua 18:1 says the congregation assembled at Shiloh and set up the Tent of Meeting there.",
+      "bibleReference": "Joshua 18:1",
+      "answers": [
+        {
+          "text": "At Shiloh",
+          "isCorrect": true
+        },
+        {
+          "text": "At Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "At Shechem",
+          "isCorrect": false
+        },
+        {
+          "text": "At Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many tribes had not yet divided their inheritance?",
+      "explanation": "Joshua 18:2 says seven tribes remained which had not yet divided their inheritance.",
+      "bibleReference": "Joshua 18:2",
+      "answers": [
+        {
+          "text": "Five",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Two",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many men did Joshua tell the Israelites to appoint from each tribe to walk through the land?",
+      "explanation": "Joshua told them to appoint three men from each tribe to walk through the land and describe it.",
+      "bibleReference": "Joshua 18:4",
+      "answers": [
+        {
+          "text": "Two",
+          "isCorrect": false
+        },
+        {
+          "text": "Three",
+          "isCorrect": true
+        },
+        {
+          "text": "Five",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the Levites have no portion of the land?",
+      "explanation": "Joshua 18:7 says the Levites had no portion because the priesthood of Yahweh was their inheritance.",
+      "bibleReference": "Joshua 18:7",
+      "answers": [
+        {
+          "text": "They had already received land east of the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "They had refused to cross the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "Their lot had not yet come out",
+          "isCorrect": false
+        },
+        {
+          "text": "The priesthood of Yahweh was their inheritance",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In what did the men describe the land, by cities into seven portions?",
+      "explanation": "Joshua 18:9 says they surveyed the land by cities into seven portions in a book.",
+      "bibleReference": "Joshua 18:9",
+      "answers": [
+        {
+          "text": "On stone tablets",
+          "isCorrect": false
+        },
+        {
+          "text": "In a book",
+          "isCorrect": true
+        },
+        {
+          "text": "On a map in the sand",
+          "isCorrect": false
+        },
+        {
+          "text": "Only from memory",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Between which two peoples did the border of Benjamin's lot go out?",
+      "explanation": "Joshua 18:11 says Benjamin's border went out between the children of Judah and the children of Joseph.",
+      "bibleReference": "Joshua 18:11",
+      "answers": [
+        {
+          "text": "Judah and Joseph",
+          "isCorrect": true
+        },
+        {
+          "text": "Reuben and Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan and Simeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim and Zebulun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By what other name was Luz also called?",
+      "explanation": "Joshua 18:13 speaks of Luz, also called Bethel.",
+      "bibleReference": "Joshua 18:13",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Horon",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Aven",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Kiriath Baal, where Benjamin's west border ended, was also called what?",
+      "explanation": "Joshua 18:14 says the border ended at Kiriath Baal, also called Kiriath Jearim, a city of the children of Judah.",
+      "bibleReference": "Joshua 18:14",
+      "answers": [
+        {
+          "text": "Kiriath Arba",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Sepher",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": true
+        },
+        {
+          "text": "Kiriath Huzoth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Benjamin's south border went down to the stone of which person?",
+      "explanation": "Joshua 18:17 says the border went down to the stone of Bohan the son of Reuben.",
+      "bibleReference": "Joshua 18:17",
+      "answers": [
+        {
+          "text": "Bohan the son of Reuben",
+          "isCorrect": true
+        },
+        {
+          "text": "Achan the son of Zerah",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb the son of Jephunneh",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar the son of Aaron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which city in Benjamin's list is called \"the Jebusite\"?",
+      "explanation": "Joshua 18:28 lists \"the Jebusite (also called Jerusalem)\" among the cities of Benjamin.",
+      "bibleReference": "Joshua 18:28",
+      "answers": [
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Mizpeh",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

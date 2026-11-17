@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 28",
+  "description": "Ten questions on Numbers 28: the daily offerings, the Sabbath, the new months, the Passover and the feast of weeks.",
+  "slug": "numbers-bible-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How many male lambs a year old were to be offered day by day as the continual burnt offering?",
+      "explanation": "Yahweh commanded male lambs a year old without defect, two day by day, for a continual burnt offering.",
+      "bibleReference": "Numbers 28:3",
+      "answers": [
+        {
+          "text": "One",
+          "isCorrect": false
+        },
+        {
+          "text": "Two",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Four",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When were the two lambs of the continual burnt offering to be offered?",
+      "explanation": "The one lamb was to be offered in the morning and the other lamb at evening.",
+      "bibleReference": "Numbers 28:4",
+      "answers": [
+        {
+          "text": "One in the morning and one at evening",
+          "isCorrect": true
+        },
+        {
+          "text": "Both lambs together at sunrise",
+          "isCorrect": false
+        },
+        {
+          "text": "One at noon and the other at midnight",
+          "isCorrect": false
+        },
+        {
+          "text": "Both lambs together at evening",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the continual burnt offering ordained, according to this chapter?",
+      "explanation": "It is called a continual burnt offering which was ordained in Mount Sinai for a pleasant aroma to Yahweh.",
+      "bibleReference": "Numbers 28:6",
+      "answers": [
+        {
+          "text": "In Mount Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "In Mount Nebo",
+          "isCorrect": false
+        },
+        {
+          "text": "In Mount Sinai",
+          "isCorrect": true
+        },
+        {
+          "text": "In Mount Seir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What burnt offering was to be offered on the Sabbath day?",
+      "explanation": "On the Sabbath day they were to offer two male lambs a year old without defect, with a meal offering and its drink offering.",
+      "bibleReference": "Numbers 28:9-10",
+      "answers": [
+        {
+          "text": "One young bull and one ram",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven male lambs a year old",
+          "isCorrect": false
+        },
+        {
+          "text": "Two young bulls and two rams",
+          "isCorrect": false
+        },
+        {
+          "text": "Two male lambs a year old without defect",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "At the beginnings of the months, what was the drink offering for each bull?",
+      "explanation": "Their drink offerings were half a hin of wine for a bull, the third part of a hin for the ram, and the fourth part of a hin for a lamb.",
+      "bibleReference": "Numbers 28:14",
+      "answers": [
+        {
+          "text": "Half a hin of wine",
+          "isCorrect": true
+        },
+        {
+          "text": "The third part of a hin",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourth part of a hin",
+          "isCorrect": false
+        },
+        {
+          "text": "A whole hin of wine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides the burnt offering, what was offered for a sin offering at the beginnings of the months?",
+      "explanation": "One male goat was to be offered for a sin offering to Yahweh, in addition to the continual burnt offering.",
+      "bibleReference": "Numbers 28:15",
+      "answers": [
+        {
+          "text": "One ram",
+          "isCorrect": false
+        },
+        {
+          "text": "One young bull",
+          "isCorrect": false
+        },
+        {
+          "text": "Two male lambs",
+          "isCorrect": false
+        },
+        {
+          "text": "One male goat",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "On which day was Yahweh's Passover?",
+      "explanation": "In the first month, on the fourteenth day of the month, is Yahweh's Passover.",
+      "bibleReference": "Numbers 28:16",
+      "answers": [
+        {
+          "text": "The fifteenth day of the first month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourteenth day of the first month",
+          "isCorrect": true
+        },
+        {
+          "text": "The tenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The first day of the seventh month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long was unleavened bread to be eaten in the feast that started on the fifteenth day?",
+      "explanation": "On the fifteenth day of the month there was a feast, and unleavened bread was to be eaten for seven days.",
+      "bibleReference": "Numbers 28:17",
+      "answers": [
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": true
+        },
+        {
+          "text": "Fourteen days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In that feast, how much fine flour was offered as a meal offering for each bull?",
+      "explanation": "The meal offering was fine flour mixed with oil: three tenths for a bull and two tenths for the ram.",
+      "bibleReference": "Numbers 28:20",
+      "answers": [
+        {
+          "text": "Two tenths",
+          "isCorrect": false
+        },
+        {
+          "text": "Three tenths",
+          "isCorrect": true
+        },
+        {
+          "text": "One tenth",
+          "isCorrect": false
+        },
+        {
+          "text": "Four tenths",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The day of the first fruits, when a new meal offering was brought, belonged to which feast?",
+      "explanation": "In the day of the first fruits they offered a new meal offering to Yahweh in their feast of weeks, with a holy convocation.",
+      "bibleReference": "Numbers 28:26",
+      "answers": [
+        {
+          "text": "The Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of blowing of trumpets",
+          "isCorrect": false
+        },
+        {
+          "text": "The beginning of the months",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast of weeks",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

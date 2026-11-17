@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 22",
+  "description": "Ten questions on Exodus 22: the laws about theft, damage, borrowed goods, the poor and the stranger.",
+  "slug": "exodus-bible-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "If a man steals an ox and kills or sells it, how much must he pay?",
+      "explanation": "He shall pay five oxen for an ox, and four sheep for a sheep.",
+      "bibleReference": "Exodus 22:1",
+      "answers": [
+        {
+          "text": "Two oxen for the ox",
+          "isCorrect": false
+        },
+        {
+          "text": "Five oxen for the ox",
+          "isCorrect": true
+        },
+        {
+          "text": "Three oxen for the ox",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven oxen for the ox",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If the stolen animal is found alive in the thief's hand, what must he pay?",
+      "explanation": "If the stolen ox, donkey or sheep is found in his hand alive, he shall pay double.",
+      "bibleReference": "Exodus 22:4",
+      "answers": [
+        {
+          "text": "Nothing more",
+          "isCorrect": false
+        },
+        {
+          "text": "Five times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "Double",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten times as much",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If a fire spreads through thorns and burns another man's grain, who must make restitution?",
+      "explanation": "He who kindled the fire shall surely make restitution.",
+      "bibleReference": "Exodus 22:6",
+      "answers": [
+        {
+          "text": "The one who kindled the fire",
+          "isCorrect": true
+        },
+        {
+          "text": "The owner of the thorns",
+          "isCorrect": false
+        },
+        {
+          "text": "No one",
+          "isCorrect": false
+        },
+        {
+          "text": "The whole town together",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What should a keeper do if an animal left with him is torn in pieces?",
+      "explanation": "If it is torn in pieces, he shall bring it for evidence, and he shall not make good what was torn.",
+      "bibleReference": "Exodus 22:13",
+      "answers": [
+        {
+          "text": "Pay its full price to the owner",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring a sin offering to the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Give the owner one of his own animals",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring it as evidence; no payment is due",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom shall you not allow to live?",
+      "explanation": "The law says: 'You shall not allow a sorceress to live.'",
+      "bibleReference": "Exodus 22:18",
+      "answers": [
+        {
+          "text": "A foreigner",
+          "isCorrect": false
+        },
+        {
+          "text": "A sorceress",
+          "isCorrect": true
+        },
+        {
+          "text": "A thief",
+          "isCorrect": false
+        },
+        {
+          "text": "A debtor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why must Israel not wrong or oppress an alien?",
+      "explanation": "You shall not wrong an alien or oppress him, 'for you were aliens in the land of Egypt.'",
+      "bibleReference": "Exodus 22:21",
+      "answers": [
+        {
+          "text": "Aliens bring trade to the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Aliens will become Israelites",
+          "isCorrect": false
+        },
+        {
+          "text": "Aliens pay tribute to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "They were aliens in the land of Egypt",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What may you not do when you lend money to a poor person among God's people?",
+      "explanation": "You shall not be to him as a creditor; you shall not charge him interest.",
+      "bibleReference": "Exodus 22:25",
+      "answers": [
+        {
+          "text": "Charge him interest",
+          "isCorrect": true
+        },
+        {
+          "text": "Lend him more than once",
+          "isCorrect": false
+        },
+        {
+          "text": "Lend to him on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Lend him silver instead of grain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When must a neighbor's garment taken as collateral be given back?",
+      "explanation": "You shall restore it to him before the sun goes down, for it is his only covering.",
+      "bibleReference": "Exodus 22:26-27",
+      "answers": [
+        {
+          "text": "After seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "At the end of the year",
+          "isCorrect": false
+        },
+        {
+          "text": "Before the sun goes down",
+          "isCorrect": true
+        },
+        {
+          "text": "When the debt is paid",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides God, whom shall you not curse?",
+      "explanation": "The law says: 'You shall not blaspheme God, nor curse a ruler of your people.'",
+      "bibleReference": "Exodus 22:28",
+      "answers": [
+        {
+          "text": "A priest of your people",
+          "isCorrect": false
+        },
+        {
+          "text": "A ruler of your people",
+          "isCorrect": true
+        },
+        {
+          "text": "A prophet in your land",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant in your house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day was the firstborn of cattle and sheep to be given to God?",
+      "explanation": "It was to be with its mother seven days, and on the eighth day given to God.",
+      "bibleReference": "Exodus 22:30",
+      "answers": [
+        {
+          "text": "The eighth day",
+          "isCorrect": true
+        },
+        {
+          "text": "The third day",
+          "isCorrect": false
+        },
+        {
+          "text": "The thirtieth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The fortieth day",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

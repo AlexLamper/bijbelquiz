@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 33",
+  "description": "Ten questions on Numbers 33: the journeys of Israel from Rameses to the plains of Moab.",
+  "slug": "numbers-bible-quiz-part-33",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who wrote down the starting points of Israel's journeys?",
+      "explanation": "Moses wrote the starting points of their journeys by the commandment of Yahweh.",
+      "bibleReference": "Numbers 33:2",
+      "answers": [
+        {
+          "text": "Moses",
+          "isCorrect": true
+        },
+        {
+          "text": "Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did Israel travel from Rameses?",
+      "explanation": "They traveled from Rameses on the fifteenth day of the first month, the next day after the Passover.",
+      "bibleReference": "Numbers 33:3",
+      "answers": [
+        {
+          "text": "The day before the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "On the tenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days after the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "The day after the Passover",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were the Egyptians doing while Israel went out?",
+      "explanation": "The Egyptians were burying all their firstborn, whom Yahweh had struck among them.",
+      "bibleReference": "Numbers 33:4",
+      "answers": [
+        {
+          "text": "Building the city of Rameses",
+          "isCorrect": false
+        },
+        {
+          "text": "Burying all their firstborn",
+          "isCorrect": true
+        },
+        {
+          "text": "Chasing Israel to the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Celebrating a feast",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was at Elim, where Israel encamped?",
+      "explanation": "In Elim there were twelve springs of water and seventy palm trees.",
+      "bibleReference": "Numbers 33:9",
+      "answers": [
+        {
+          "text": "Seven wells and twelve palm trees",
+          "isCorrect": false
+        },
+        {
+          "text": "A river and a forest of cedars",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve springs and seventy palm trees",
+          "isCorrect": true
+        },
+        {
+          "text": "Bitter water and a single tree",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was missing at Rephidim?",
+      "explanation": "At Rephidim there was no water for the people to drink.",
+      "bibleReference": "Numbers 33:14",
+      "answers": [
+        {
+          "text": "Wood for their fires",
+          "isCorrect": false
+        },
+        {
+          "text": "Water for the people to drink",
+          "isCorrect": true
+        },
+        {
+          "text": "Grass for the livestock",
+          "isCorrect": false
+        },
+        {
+          "text": "Room to pitch the tents",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which mountain did Aaron the priest die?",
+      "explanation": "Aaron went up into Mount Hor at the commandment of Yahweh and died there.",
+      "bibleReference": "Numbers 33:38",
+      "answers": [
+        {
+          "text": "Mount Nebo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Hor",
+          "isCorrect": true
+        },
+        {
+          "text": "Mount Shepher",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Aaron when he died?",
+      "explanation": "Aaron was one hundred twenty-three years old when he died in Mount Hor.",
+      "bibleReference": "Numbers 33:39",
+      "answers": [
+        {
+          "text": "One hundred twenty-three years",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred thirty years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred ten years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who heard of the coming of the children of Israel?",
+      "explanation": "The Canaanite king of Arad, who lived in the South in the land of Canaan, heard of their coming.",
+      "bibleReference": "Numbers 33:40",
+      "answers": [
+        {
+          "text": "The king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Og the king of Bashan",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "The Canaanite king of Arad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Israel encamp after traveling from the mountains of Abarim?",
+      "explanation": "They traveled from the mountains of Abarim and encamped in the plains of Moab by the Jordan at Jericho.",
+      "bibleReference": "Numbers 33:48",
+      "answers": [
+        {
+          "text": "In the plains of Moab",
+          "isCorrect": true
+        },
+        {
+          "text": "In the wilderness of Zin",
+          "isCorrect": false
+        },
+        {
+          "text": "At Ezion Geber",
+          "isCorrect": false
+        },
+        {
+          "text": "By the Red Sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What would the inhabitants they let remain in the land be like?",
+      "explanation": "Those they let remain would be like pricks in their eyes and thorns in their sides.",
+      "bibleReference": "Numbers 33:55",
+      "answers": [
+        {
+          "text": "Stones in their shoes and dust in their mouths",
+          "isCorrect": false
+        },
+        {
+          "text": "Snakes in their tents and wolves in their fields",
+          "isCorrect": false
+        },
+        {
+          "text": "Weeds in their fields and rust on their swords",
+          "isCorrect": false
+        },
+        {
+          "text": "Pricks in their eyes and thorns in their sides",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

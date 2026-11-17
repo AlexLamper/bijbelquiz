@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 27",
+  "description": "Ten questions on Exodus 27: the bronze altar, the court of the tabernacle and the oil for the lamp.",
+  "slug": "exodus-bible-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What shape was the altar to have?",
+      "explanation": "The altar was to be five cubits long and five cubits wide; the altar was to be square.",
+      "bibleReference": "Exodus 27:1",
+      "answers": [
+        {
+          "text": "Round",
+          "isCorrect": false
+        },
+        {
+          "text": "Square",
+          "isCorrect": true
+        },
+        {
+          "text": "Twice as long as it was wide",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight-sided",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was to be made on the four corners of the altar?",
+      "explanation": "Horns were to be made on its four corners, of one piece with the altar.",
+      "bibleReference": "Exodus 27:2",
+      "answers": [
+        {
+          "text": "Horns",
+          "isCorrect": true
+        },
+        {
+          "text": "Cherubim",
+          "isCorrect": false
+        },
+        {
+          "text": "Pomegranates",
+          "isCorrect": false
+        },
+        {
+          "text": "Lamps",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What metal was the altar overlaid with?",
+      "explanation": "The altar of acacia wood was to be overlaid with bronze, and all its vessels made of bronze.",
+      "bibleReference": "Exodus 27:2-3",
+      "answers": [
+        {
+          "text": "Gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Iron",
+          "isCorrect": false
+        },
+        {
+          "text": "Bronze",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How far up the altar was the bronze net to reach?",
+      "explanation": "The grating was put under the ledge around the altar, so that the net would reach halfway up the altar.",
+      "bibleReference": "Exodus 27:4-5",
+      "answers": [
+        {
+          "text": "To the very top",
+          "isCorrect": false
+        },
+        {
+          "text": "A third of the way",
+          "isCorrect": false
+        },
+        {
+          "text": "Halfway up the altar",
+          "isCorrect": true
+        },
+        {
+          "text": "One cubit high",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the altar to be made?",
+      "explanation": "The altar was to be made hollow with planks, as it had been shown on the mountain.",
+      "bibleReference": "Exodus 27:8",
+      "answers": [
+        {
+          "text": "Hollow, with planks",
+          "isCorrect": true
+        },
+        {
+          "text": "Filled with earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Filled with uncut stones",
+          "isCorrect": false
+        },
+        {
+          "text": "Of solid bronze",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long were the hangings for the south side of the court?",
+      "explanation": "The hangings of fine twined linen for the south side were to be one hundred cubits long.",
+      "bibleReference": "Exodus 27:9",
+      "answers": [
+        {
+          "text": "Fifty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "Twenty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifteen cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the hooks and fillets of the court's pillars made of?",
+      "explanation": "The hooks of the pillars and their fillets were to be of silver, while their sockets were bronze.",
+      "bibleReference": "Exodus 27:10",
+      "answers": [
+        {
+          "text": "Gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Iron",
+          "isCorrect": false
+        },
+        {
+          "text": "Acacia wood",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How wide was the screen for the gate of the court?",
+      "explanation": "The gate of the court was to have a screen of twenty cubits, the work of the embroiderer.",
+      "bibleReference": "Exodus 27:16",
+      "answers": [
+        {
+          "text": "Fifteen cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the Israelites to bring for the light?",
+      "explanation": "They were to bring pure olive oil beaten for the light, to cause a lamp to burn continually.",
+      "bibleReference": "Exodus 27:20",
+      "answers": [
+        {
+          "text": "Pure olive oil beaten for the light",
+          "isCorrect": true
+        },
+        {
+          "text": "Fat from the burnt offerings",
+          "isCorrect": false
+        },
+        {
+          "text": "Wax taken from wild honeycombs",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil mixed with sweet spices and myrrh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was to keep the lamp in order from evening to morning?",
+      "explanation": "In the Tent of Meeting, outside the veil, Aaron and his sons were to keep it in order from evening to morning before Yahweh.",
+      "bibleReference": "Exodus 27:21",
+      "answers": [
+        {
+          "text": "Moses alone",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua and the young men",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron and his sons",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

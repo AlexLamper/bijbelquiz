@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 12",
+  "description": "Ten questions on Joshua 12: the kings struck east and west of the Jordan, from Sihon and Og to the list of thirty-one.",
+  "slug": "joshua-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "East of the Jordan, the land Israel possessed stretched from the valley of the Arnon to where?",
+      "explanation": "The land beyond the Jordan toward the sunrise ran from the valley of the Arnon to Mount Hermon.",
+      "bibleReference": "Joshua 12:1",
+      "answers": [
+        {
+          "text": "Mount Hermon",
+          "isCorrect": true
+        },
+        {
+          "text": "Mount Ebal",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Gerizim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Sihon king of the Amorites live?",
+      "explanation": "Sihon king of the Amorites lived in Heshbon and ruled from Aroer.",
+      "bibleReference": "Joshua 12:2",
+      "answers": [
+        {
+          "text": "In Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "In Heshbon",
+          "isCorrect": true
+        },
+        {
+          "text": "In Hazor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which river is named as the border of the children of Ammon?",
+      "explanation": "Sihon ruled half Gilead, even to the river Jabbok, the border of the children of Ammon.",
+      "bibleReference": "Joshua 12:2",
+      "answers": [
+        {
+          "text": "The river Euphrates",
+          "isCorrect": false
+        },
+        {
+          "text": "The river Jabbok",
+          "isCorrect": true
+        },
+        {
+          "text": "The river Kishon",
+          "isCorrect": false
+        },
+        {
+          "text": "The river Nile",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What other name does the text give for the sea of the Arabah?",
+      "explanation": "The text speaks of the sea of the Arabah, even the Salt Sea.",
+      "bibleReference": "Joshua 12:3",
+      "answers": [
+        {
+          "text": "The great sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The Red Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea of Joppa",
+          "isCorrect": false
+        },
+        {
+          "text": "The Salt Sea",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Og king of Bashan was of the remnant of which people?",
+      "explanation": "The text calls Og king of Bashan one of the remnant of the Rephaim.",
+      "bibleReference": "Joshua 12:4",
+      "answers": [
+        {
+          "text": "The Anakim",
+          "isCorrect": false
+        },
+        {
+          "text": "The Rephaim",
+          "isCorrect": true
+        },
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Amalekites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Moses give the land of these eastern kings?",
+      "explanation": "Moses gave it for a possession to the Reubenites, the Gadites, and the half-tribe of Manasseh.",
+      "bibleReference": "Joshua 12:6",
+      "answers": [
+        {
+          "text": "The Reubenites, Gadites, and half-tribe of Manasseh",
+          "isCorrect": true
+        },
+        {
+          "text": "The tribes of Judah, Benjamin, and Simeon",
+          "isCorrect": false
+        },
+        {
+          "text": "The tribes of Ephraim, Issachar, and Zebulun",
+          "isCorrect": false
+        },
+        {
+          "text": "The tribes of Levi, Dan, and Naphtali",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "West of the Jordan, the land stretched from Baal Gad to which mountain?",
+      "explanation": "Joshua and Israel struck the kings west of the Jordan, from Baal Gad in the valley of Lebanon to Mount Halak.",
+      "bibleReference": "Joshua 12:7",
+      "answers": [
+        {
+          "text": "Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Nebo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Tabor",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Halak",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "The king of Ai is listed, and Ai is described as being beside which place?",
+      "explanation": "The list names the king of Ai, which is beside Bethel.",
+      "bibleReference": "Joshua 12:9",
+      "answers": [
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": true
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Jokneam, whose king is in the list?",
+      "explanation": "The list names the king of Jokneam in Carmel.",
+      "bibleReference": "Joshua 12:22",
+      "answers": [
+        {
+          "text": "In Carmel",
+          "isCorrect": true
+        },
+        {
+          "text": "In Bashan",
+          "isCorrect": false
+        },
+        {
+          "text": "In Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "In Lebanon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What total number of kings does the list give?",
+      "explanation": "The list ends with the king of Tirzah and says all the kings were thirty-one.",
+      "bibleReference": "Joshua 12:24",
+      "answers": [
+        {
+          "text": "Twenty-one",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-nine",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty-one",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty-one",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "2 Chronicles Bible Quiz - Chapter 8",
+  "description": "Ten questions on 2 Chronicles 8: Solomon's building of cities, his forced labor, the daily offerings and the gold from Ophir.",
+  "slug": "2-chronicles-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "At the end of how many years had Solomon built Yahweh's house and his own house?",
+      "explanation": "The chapter begins at the end of twenty years, in which Solomon had built Yahweh's house and his own house.",
+      "bibleReference": "2 Chronicles 8:1",
+      "answers": [
+        {
+          "text": "Ten years",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Solomon built the cities that had been given to him by whom?",
+      "explanation": "Solomon built the cities which Huram had given to him and caused the children of Israel to live there.",
+      "bibleReference": "2 Chronicles 8:2",
+      "answers": [
+        {
+          "text": "Huram",
+          "isCorrect": true
+        },
+        {
+          "text": "Pharaoh",
+          "isCorrect": false
+        },
+        {
+          "text": "The queen of Sheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Hadad the Edomite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which city did Solomon go to and prevail against?",
+      "explanation": "Solomon went to Hamath Zobah and prevailed against it.",
+      "bibleReference": "2 Chronicles 8:3",
+      "answers": [
+        {
+          "text": "Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Rabbah of Ammon",
+          "isCorrect": false
+        },
+        {
+          "text": "Hamath Zobah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which city did Solomon build in the wilderness?",
+      "explanation": "Solomon built Tadmor in the wilderness, and all the storage cities in Hamath.",
+      "bibleReference": "2 Chronicles 8:4",
+      "answers": [
+        {
+          "text": "Beersheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Tadmor",
+          "isCorrect": true
+        },
+        {
+          "text": "Kadesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Arad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From whom did Solomon conscript forced labor?",
+      "explanation": "Solomon conscripted forced labor from the children of the Hittites, Amorites, Perizzites, Hivites and Jebusites who were left in the land.",
+      "bibleReference": "2 Chronicles 8:7-8",
+      "answers": [
+        {
+          "text": "From the peoples left in the land, not of Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "From the children of Israel in every tribe",
+          "isCorrect": false
+        },
+        {
+          "text": "From the priests and the Levites of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "From the servants whom Huram had sent him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many chief officers of King Solomon ruled over the people?",
+      "explanation": "The chief officers of King Solomon were two-hundred fifty, who ruled over the people.",
+      "bibleReference": "2 Chronicles 8:10",
+      "answers": [
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Two-hundred fifty",
+          "isCorrect": true
+        },
+        {
+          "text": "Three hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why would Solomon not let Pharaoh's daughter live in the house of David?",
+      "explanation": "He said the places where Yahweh's ark had come are holy.",
+      "bibleReference": "2 Chronicles 8:11",
+      "answers": [
+        {
+          "text": "She asked for a house of her own",
+          "isCorrect": false
+        },
+        {
+          "text": "The places where Yahweh's ark had come are holy",
+          "isCorrect": true
+        },
+        {
+          "text": "The house of David had burned down",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests would not allow a foreigner there",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At which three feasts each year did Solomon offer burnt offerings?",
+      "explanation": "He offered on the three set feasts: the feast of unleavened bread, the feast of weeks and the feast of booths.",
+      "bibleReference": "2 Chronicles 8:13",
+      "answers": [
+        {
+          "text": "Weeks, trumpets and Purim",
+          "isCorrect": false
+        },
+        {
+          "text": "Booths, new year and dedication",
+          "isCorrect": false
+        },
+        {
+          "text": "Unleavened bread, Purim and trumpets",
+          "isCorrect": false
+        },
+        {
+          "text": "Unleavened bread, weeks and booths",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to whose ordinance did Solomon appoint the divisions of the priests and Levites?",
+      "explanation": "He appointed them according to the ordinance of David his father, for David the man of God had so commanded.",
+      "bibleReference": "2 Chronicles 8:14",
+      "answers": [
+        {
+          "text": "Samuel the seer",
+          "isCorrect": false
+        },
+        {
+          "text": "Nathan the prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "David his father",
+          "isCorrect": true
+        },
+        {
+          "text": "Zadok the priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much gold did Huram's and Solomon's servants bring from Ophir?",
+      "explanation": "They went to Ophir and brought from there four hundred fifty talents of gold to King Solomon.",
+      "bibleReference": "2 Chronicles 8:18",
+      "answers": [
+        {
+          "text": "Four hundred fifty talents",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred fifty talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred sixty-six talents",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand talents",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

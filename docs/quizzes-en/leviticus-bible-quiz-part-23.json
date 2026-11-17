@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 23",
+  "description": "Ten questions on Leviticus 23: the set feasts of Yahweh, from Passover and the first fruits to the day of atonement and the feast of booths.",
+  "slug": "leviticus-bible-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "When is Yahweh's Passover, according to verse 5?",
+      "explanation": "In the first month, on the fourteenth day of the month in the evening, is Yahweh's Passover.",
+      "bibleReference": "Leviticus 23:5",
+      "answers": [
+        {
+          "text": "The fifteenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourteenth day of the first month, in the evening",
+          "isCorrect": true
+        },
+        {
+          "text": "The tenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The first day of the seventh month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the Israelites to bring to the priest when they reaped the harvest in the land?",
+      "explanation": "They were to bring the sheaf of the first fruits of their harvest to the priest, who would wave it before Yahweh.",
+      "bibleReference": "Leviticus 23:10-11",
+      "answers": [
+        {
+          "text": "A tenth of all the grain of their fields",
+          "isCorrect": false
+        },
+        {
+          "text": "A basket of figs and grapes from the vines",
+          "isCorrect": false
+        },
+        {
+          "text": "A jar of beaten olive oil for the lamp",
+          "isCorrect": false
+        },
+        {
+          "text": "The sheaf of the first fruits of their harvest",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were they not allowed to eat until they had brought this offering to God?",
+      "explanation": "Verse 14 says they must not eat bread, roasted grain or fresh grain until they had brought the offering of their God.",
+      "bibleReference": "Leviticus 23:14",
+      "answers": [
+        {
+          "text": "Bread, roasted grain or fresh grain",
+          "isCorrect": true
+        },
+        {
+          "text": "Meat from their herds and flocks",
+          "isCorrect": false
+        },
+        {
+          "text": "Honey, figs or dates",
+          "isCorrect": false
+        },
+        {
+          "text": "Fish caught in the rivers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After the seventh Sabbath, how many days were they to count before offering a new meal offering?",
+      "explanation": "The next day after the seventh Sabbath they were to count fifty days and offer a new meal offering to Yahweh.",
+      "bibleReference": "Leviticus 23:16",
+      "answers": [
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy days",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty days",
+          "isCorrect": true
+        },
+        {
+          "text": "Thirty days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How were the two loaves for the wave offering to be baked?",
+      "explanation": "The two loaves of fine flour were to be baked with yeast, as first fruits to Yahweh.",
+      "bibleReference": "Leviticus 23:17",
+      "answers": [
+        {
+          "text": "Without yeast",
+          "isCorrect": false
+        },
+        {
+          "text": "With yeast",
+          "isCorrect": true
+        },
+        {
+          "text": "With honey",
+          "isCorrect": false
+        },
+        {
+          "text": "On hot stones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was held on the first day of the seventh month?",
+      "explanation": "On the first day of the seventh month there was a solemn rest, a memorial of blowing of trumpets, a holy convocation.",
+      "bibleReference": "Leviticus 23:24",
+      "answers": [
+        {
+          "text": "A memorial of blowing of trumpets",
+          "isCorrect": true
+        },
+        {
+          "text": "The feast of booths",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast of unleavened bread",
+          "isCorrect": false
+        },
+        {
+          "text": "The wave offering of the sheaf",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day was the day of atonement?",
+      "explanation": "Verse 27 says the day of atonement is on the tenth day of the seventh month.",
+      "bibleReference": "Leviticus 23:27",
+      "answers": [
+        {
+          "text": "The first day of the first month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifteenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourteenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth day of the seventh month",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What would happen to anyone who did not deny himself on the day of atonement?",
+      "explanation": "Verse 29 says whoever does not deny himself on that day shall be cut off from his people.",
+      "bibleReference": "Leviticus 23:29",
+      "answers": [
+        {
+          "text": "He would have to pay a fine",
+          "isCorrect": false
+        },
+        {
+          "text": "He would have to offer a double sacrifice",
+          "isCorrect": false
+        },
+        {
+          "text": "He would be cut off from his people",
+          "isCorrect": true
+        },
+        {
+          "text": "He would be unclean until evening",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these were they to take on the first day of the feast of booths?",
+      "explanation": "They were to take the fruit of majestic trees, branches of palm trees, boughs of thick trees and willows of the brook, and rejoice before Yahweh seven days.",
+      "bibleReference": "Leviticus 23:40",
+      "answers": [
+        {
+          "text": "Willows of the brook",
+          "isCorrect": true
+        },
+        {
+          "text": "Cedar wood and hyssop",
+          "isCorrect": false
+        },
+        {
+          "text": "Ears of barley",
+          "isCorrect": false
+        },
+        {
+          "text": "Branches of the fig tree",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were all native-born Israelites to dwell in temporary shelters for seven days?",
+      "explanation": "They were to do this so that their generations would know that Yahweh made Israel dwell in temporary shelters when he brought them out of Egypt.",
+      "bibleReference": "Leviticus 23:42-43",
+      "answers": [
+        {
+          "text": "To remember the tents of Abraham, Isaac and Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "So later generations would know Israel lived in shelters after Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the harvest fields were far away from their homes",
+          "isCorrect": false
+        },
+        {
+          "text": "To honor the priests who lived at the Tent of Meeting",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

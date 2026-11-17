@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 1",
+  "description": "Ten questions on Numbers 1: the census of Israel in the wilderness of Sinai, the princes of the tribes, and the special task of the Levites.",
+  "slug": "numbers-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "When did Yahweh tell Moses to take the census?",
+      "explanation": "Yahweh spoke to Moses in the Tent of Meeting on the first day of the second month, in the second year after they came out of Egypt.",
+      "bibleReference": "Numbers 1:1-2",
+      "answers": [
+        {
+          "text": "On the tenth day of the first month, in the first year",
+          "isCorrect": false
+        },
+        {
+          "text": "On the first day of the seventh month, in the third year",
+          "isCorrect": false
+        },
+        {
+          "text": "On the first day of the second month, in the second year",
+          "isCorrect": true
+        },
+        {
+          "text": "On the fourteenth day of the first month, in the second year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which males were to be counted?",
+      "explanation": "They were to count every male from twenty years old and upward, all who were able to go out to war.",
+      "bibleReference": "Numbers 1:2-3",
+      "answers": [
+        {
+          "text": "Those twenty years old and upward who could go to war",
+          "isCorrect": true
+        },
+        {
+          "text": "Those thirty years old and upward who could serve",
+          "isCorrect": false
+        },
+        {
+          "text": "Every male from a month old and upward",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the firstborn of every family",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was to stand with Moses and Aaron for the census?",
+      "explanation": "Verse 4 says a man of every tribe, each one head of his fathers' house, was to be with them.",
+      "bibleReference": "Numbers 1:4",
+      "answers": [
+        {
+          "text": "The seventy elders of Israel and their officers",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests Eleazar and Ithamar, the sons of Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "The judges of every city in Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A man from every tribe, the head of his fathers' house",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who was the man named for the tribe of Judah?",
+      "explanation": "Verse 7 names Nahshon the son of Amminadab for Judah.",
+      "bibleReference": "Numbers 1:7",
+      "answers": [
+        {
+          "text": "Elizur the son of Shedeur",
+          "isCorrect": false
+        },
+        {
+          "text": "Nahshon the son of Amminadab",
+          "isCorrect": true
+        },
+        {
+          "text": "Eliab the son of Helon",
+          "isCorrect": false
+        },
+        {
+          "text": "Abidan the son of Gideoni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which tribe is called \"Israel's firstborn\" in this chapter?",
+      "explanation": "Verse 20 speaks of the children of Reuben, Israel's firstborn.",
+      "bibleReference": "Numbers 1:20",
+      "answers": [
+        {
+          "text": "Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Reuben",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many were counted of the tribe of Judah?",
+      "explanation": "Verse 27 says those counted of the tribe of Judah were seventy-four thousand six hundred.",
+      "bibleReference": "Numbers 1:26-27",
+      "answers": [
+        {
+          "text": "Fifty-nine thousand three hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty-two thousand seven hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy-four thousand six hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty-six thousand five hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the total of all who were counted?",
+      "explanation": "Verse 46 says all those who were counted were six hundred three thousand five hundred fifty.",
+      "bibleReference": "Numbers 1:45-46",
+      "answers": [
+        {
+          "text": "Six hundred three thousand five hundred fifty",
+          "isCorrect": true
+        },
+        {
+          "text": "Six hundred thousand exactly",
+          "isCorrect": false
+        },
+        {
+          "text": "Five hundred ninety-eight thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred twenty-two thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which tribe was not counted among the others?",
+      "explanation": "Yahweh told Moses not to count the tribe of Levi or take a census of them among the children of Israel.",
+      "bibleReference": "Numbers 1:47-49",
+      "answers": [
+        {
+          "text": "Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "Levi",
+          "isCorrect": true
+        },
+        {
+          "text": "Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Manasseh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Over what were the Levites appointed?",
+      "explanation": "Verse 50 says the Levites were appointed over the Tabernacle of the Testimony, its furnishings and all that belongs to it.",
+      "bibleReference": "Numbers 1:50",
+      "answers": [
+        {
+          "text": "The army of Israel and its captains",
+          "isCorrect": false
+        },
+        {
+          "text": "The standards and banners of the tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The Tabernacle of the Testimony and its furnishings",
+          "isCorrect": true
+        },
+        {
+          "text": "The storehouses of grain and oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What would happen to a stranger who came near when the tabernacle was taken down or set up?",
+      "explanation": "The Levites were to take down and set up the tabernacle, and the stranger who came near was to be put to death.",
+      "bibleReference": "Numbers 1:51",
+      "answers": [
+        {
+          "text": "He would be put to death",
+          "isCorrect": true
+        },
+        {
+          "text": "He would be unclean until evening",
+          "isCorrect": false
+        },
+        {
+          "text": "He would have to bring a sin offering",
+          "isCorrect": false
+        },
+        {
+          "text": "He would be put out of the camp for seven days",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

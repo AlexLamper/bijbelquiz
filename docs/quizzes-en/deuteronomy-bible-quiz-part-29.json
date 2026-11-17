@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomy Bible Quiz - Chapter 29",
+  "description": "Ten questions on Deuteronomy 29: the covenant in the land of Moab and the warning against turning to other gods.",
+  "slug": "deuteronomy-bible-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In which land did Yahweh command Moses to make this covenant with the children of Israel?",
+      "explanation": "Verse 1 says these are the words of the covenant Yahweh commanded Moses to make in the land of Moab, in addition to the covenant made in Horeb.",
+      "bibleReference": "Deuteronomy 29:1",
+      "answers": [
+        {
+          "text": "The land of Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Moab",
+          "isCorrect": true
+        },
+        {
+          "text": "The land of Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Moses say did not grow old during the forty years in the wilderness?",
+      "explanation": "Moses says he led them forty years in the wilderness, and their clothes and their sandals did not grow old.",
+      "bibleReference": "Deuteronomy 29:5",
+      "answers": [
+        {
+          "text": "Their clothes and their sandals",
+          "isCorrect": true
+        },
+        {
+          "text": "Their tents and their cords",
+          "isCorrect": false
+        },
+        {
+          "text": "Their weapons and their shields",
+          "isCorrect": false
+        },
+        {
+          "text": "Their carts and their wheels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was Og, according to Moses?",
+      "explanation": "Verse 7 says Sihon the king of Heshbon and Og the king of Bashan came out to battle and were struck.",
+      "bibleReference": "Deuteronomy 29:7",
+      "answers": [
+        {
+          "text": "The king of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Bashan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom was the land of Sihon and Og given as an inheritance?",
+      "explanation": "Their land was given as an inheritance to the Reubenites, the Gadites and the half-tribe of the Manassites.",
+      "bibleReference": "Deuteronomy 29:7-8",
+      "answers": [
+        {
+          "text": "The tribes of Judah, Benjamin, Simeon and Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "The Reubenites, Gadites and half-tribe of the Manassites",
+          "isCorrect": true
+        },
+        {
+          "text": "The tribes of Ephraim, Dan, Asher and Naphtali",
+          "isCorrect": false
+        },
+        {
+          "text": "The tribes of Issachar and Zebulun and the Levites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does Moses describe the foreigners who stand before Yahweh with Israel?",
+      "explanation": "Verse 11 mentions the foreigners in the camps, \"from the one who cuts your wood to the one who draws your water.\"",
+      "bibleReference": "Deuteronomy 29:11",
+      "answers": [
+        {
+          "text": "From the one who guards the gate to the one who keeps the sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "From the one who bakes your bread to the one who builds your houses",
+          "isCorrect": false
+        },
+        {
+          "text": "From the one who sows your field to the one who reaps your harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "From the one who cuts your wood to the one who draws your water",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Moses warns that there should not be among them a root that produces what?",
+      "explanation": "Verse 18 warns against anyone turning away to other gods, and against \"a root that produces bitter poison.\"",
+      "bibleReference": "Deuteronomy 29:18",
+      "answers": [
+        {
+          "text": "Thorns and thistles",
+          "isCorrect": false
+        },
+        {
+          "text": "Sour grapes",
+          "isCorrect": false
+        },
+        {
+          "text": "Bitter poison",
+          "isCorrect": true
+        },
+        {
+          "text": "Wild weeds",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will Yahweh do to the name of the man who blesses himself in his heart and walks in stubbornness?",
+      "explanation": "Yahweh will not pardon him; all the curse in this book will fall on him and Yahweh will blot out his name from under the sky.",
+      "bibleReference": "Deuteronomy 29:19-20",
+      "answers": [
+        {
+          "text": "Blot it out from under the sky",
+          "isCorrect": true
+        },
+        {
+          "text": "Change it to a new name",
+          "isCorrect": false
+        },
+        {
+          "text": "Make it great among the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Engrave it on a stone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The ruined land is compared to the overthrow of which cities?",
+      "explanation": "Verse 23 says the land will be sulfur, salt and burning, like the overthrow of Sodom, Gomorrah, Admah, and Zeboiim.",
+      "bibleReference": "Deuteronomy 29:23",
+      "answers": [
+        {
+          "text": "Jericho, Ai, Bethel, and Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Sodom, Gomorrah, Admah, and Zeboiim",
+          "isCorrect": true
+        },
+        {
+          "text": "Heshbon, Dibon, Medeba, and Aroer",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebron, Debir, Lachish, and Eglon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When the nations ask why Yahweh has done this to the land, what answer will be given?",
+      "explanation": "Men will say it is because they abandoned the covenant of Yahweh, the God of their fathers, and served other gods.",
+      "bibleReference": "Deuteronomy 29:24-26",
+      "answers": [
+        {
+          "text": "They abandoned the covenant of Yahweh, the God of their fathers",
+          "isCorrect": true
+        },
+        {
+          "text": "They failed to pay tribute to their enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "Their king made a treaty with Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "They did not build walls around their cities",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom do the secret things belong?",
+      "explanation": "Verse 29 says the secret things belong to Yahweh our God, but the things that are revealed belong to us and to our children forever.",
+      "bibleReference": "Deuteronomy 29:29",
+      "answers": [
+        {
+          "text": "The priests and the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses the servant of Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh our God",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

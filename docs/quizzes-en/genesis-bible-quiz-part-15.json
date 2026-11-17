@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 15",
+  "description": "Ten questions on Genesis 15: Yahweh's promise of offspring, Abram's faith and the covenant between the pieces.",
+  "slug": "genesis-bible-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In the vision, what did Yahweh say He was to Abram, along with his exceedingly great reward?",
+      "explanation": "Yahweh said, \"Don't be afraid, Abram. I am your shield, your exceedingly great reward.\"",
+      "bibleReference": "Genesis 15:1",
+      "answers": [
+        {
+          "text": "His rock",
+          "isCorrect": false
+        },
+        {
+          "text": "His fortress",
+          "isCorrect": false
+        },
+        {
+          "text": "His shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "His shield",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who did Abram say would inherit his estate, since he was childless?",
+      "explanation": "Abram said he went childless and that he who would inherit his estate was Eliezer of Damascus.",
+      "bibleReference": "Genesis 15:2",
+      "answers": [
+        {
+          "text": "Lot, his brother's son",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliezer of Damascus",
+          "isCorrect": true
+        },
+        {
+          "text": "Aner the Amorite",
+          "isCorrect": false
+        },
+        {
+          "text": "Melchizedek of Salem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Abram to look at and count?",
+      "explanation": "Yahweh brought him outside and said, \"Look now toward the sky, and count the stars, if you are able to count them... So your offspring will be.\"",
+      "bibleReference": "Genesis 15:5",
+      "answers": [
+        {
+          "text": "The grains of sand",
+          "isCorrect": false
+        },
+        {
+          "text": "The dust of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The stars",
+          "isCorrect": true
+        },
+        {
+          "text": "The trees of the land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh credit to Abram for righteousness?",
+      "explanation": "Abram believed in Yahweh, who credited it to him for righteousness.",
+      "bibleReference": "Genesis 15:6",
+      "answers": [
+        {
+          "text": "That he believed in Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "That he offered a sacrifice",
+          "isCorrect": false
+        },
+        {
+          "text": "That he gave a tenth of all",
+          "isCorrect": false
+        },
+        {
+          "text": "That he left his father's house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Out of which place did Yahweh say He had brought Abram?",
+      "explanation": "Yahweh said, \"I am Yahweh who brought you out of Ur of the Chaldees, to give you this land to inherit it.\"",
+      "bibleReference": "Genesis 15:7",
+      "answers": [
+        {
+          "text": "The city of Haran",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The city of Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "Ur of the Chaldees",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How old were the heifer, the female goat and the ram that Abram had to bring?",
+      "explanation": "Yahweh asked for a heifer, a female goat and a ram, each three years old, plus a turtledove and a young pigeon.",
+      "bibleReference": "Genesis 15:9",
+      "answers": [
+        {
+          "text": "Three years old",
+          "isCorrect": true
+        },
+        {
+          "text": "One year old",
+          "isCorrect": false
+        },
+        {
+          "text": "Two years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What fell on Abram when the sun was going down?",
+      "explanation": "When the sun was going down, a deep sleep fell on Abram, and terror and great darkness fell on him.",
+      "bibleReference": "Genesis 15:12",
+      "answers": [
+        {
+          "text": "A heavy rain",
+          "isCorrect": false
+        },
+        {
+          "text": "Fire from the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "A deep sleep",
+          "isCorrect": true
+        },
+        {
+          "text": "A great wind",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long would Abram's offspring be afflicted in a land that was not theirs?",
+      "explanation": "Yahweh said Abram's offspring would live as foreigners in a land not theirs, would serve them, and would be afflicted four hundred years.",
+      "bibleReference": "Genesis 15:13",
+      "answers": [
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred years",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventy years",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred thirty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What passed between the pieces when it was dark?",
+      "explanation": "When the sun went down and it was dark, a smoking furnace and a flaming torch passed between the pieces.",
+      "bibleReference": "Genesis 15:17",
+      "answers": [
+        {
+          "text": "A smoking furnace and a flaming torch",
+          "isCorrect": true
+        },
+        {
+          "text": "A pillar of cloud and fire",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel holding a flaming sword",
+          "isCorrect": false
+        },
+        {
+          "text": "A white dove carrying a branch",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which river did Yahweh call \"the great river\" when describing the land given to Abram's offspring?",
+      "explanation": "Yahweh gave the land from the river of Egypt to the great river, the river Euphrates.",
+      "bibleReference": "Genesis 15:18",
+      "answers": [
+        {
+          "text": "The Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "The Tigris",
+          "isCorrect": false
+        },
+        {
+          "text": "The Pishon",
+          "isCorrect": false
+        },
+        {
+          "text": "The Euphrates",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 10",
+  "description": "Ten questions on Genesis 10: the families of Shem, Ham, and Japheth and the nations that came from them after the flood.",
+  "slug": "genesis-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which of these is named as a son of Japheth?",
+      "explanation": "The sons of Japheth were Gomer, Magog, Madai, Javan, Tubal, Meshech, and Tiras.",
+      "bibleReference": "Genesis 10:2",
+      "answers": [
+        {
+          "text": "Cush",
+          "isCorrect": false
+        },
+        {
+          "text": "Elam",
+          "isCorrect": false
+        },
+        {
+          "text": "Gomer",
+          "isCorrect": true
+        },
+        {
+          "text": "Canaan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these is named as a son of Ham?",
+      "explanation": "The sons of Ham were Cush, Mizraim, Put, and Canaan.",
+      "bibleReference": "Genesis 10:6",
+      "answers": [
+        {
+          "text": "Mizraim",
+          "isCorrect": true
+        },
+        {
+          "text": "Javan",
+          "isCorrect": false
+        },
+        {
+          "text": "Asshur",
+          "isCorrect": false
+        },
+        {
+          "text": "Aram",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is Nimrod described?",
+      "explanation": "Nimrod began to be a mighty one in the earth. He was a mighty hunter before Yahweh.",
+      "bibleReference": "Genesis 10:8-9",
+      "answers": [
+        {
+          "text": "A keeper of sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "A forger of bronze tools",
+          "isCorrect": false
+        },
+        {
+          "text": "The father of tent dwellers",
+          "isCorrect": false
+        },
+        {
+          "text": "A mighty hunter before Yahweh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which city did Nimrod build after he went into Assyria?",
+      "explanation": "Out of the land of Shinar Nimrod went into Assyria, and built Nineveh, Rehoboth Ir, and Calah.",
+      "bibleReference": "Genesis 10:11",
+      "answers": [
+        {
+          "text": "Sidon",
+          "isCorrect": false
+        },
+        {
+          "text": "Nineveh",
+          "isCorrect": true
+        },
+        {
+          "text": "Gaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From whom did the Philistines descend, according to this chapter?",
+      "explanation": "Mizraim became the father of, among others, Casluhim, which the Philistines descended from.",
+      "bibleReference": "Genesis 10:13-14",
+      "answers": [
+        {
+          "text": "Ludim",
+          "isCorrect": false
+        },
+        {
+          "text": "Anamim",
+          "isCorrect": false
+        },
+        {
+          "text": "Lehabim",
+          "isCorrect": false
+        },
+        {
+          "text": "Casluhim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who was Canaan's firstborn?",
+      "explanation": "Canaan became the father of Sidon, his firstborn, and Heth.",
+      "bibleReference": "Genesis 10:15",
+      "answers": [
+        {
+          "text": "Heth",
+          "isCorrect": false
+        },
+        {
+          "text": "Nimrod",
+          "isCorrect": false
+        },
+        {
+          "text": "Sidon",
+          "isCorrect": true
+        },
+        {
+          "text": "Seba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Shem is called the father of all the children of whom?",
+      "explanation": "Children were born to Shem, the elder brother of Japheth, the father of all the children of Eber.",
+      "bibleReference": "Genesis 10:21",
+      "answers": [
+        {
+          "text": "Eber",
+          "isCorrect": true
+        },
+        {
+          "text": "Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "Gomer",
+          "isCorrect": false
+        },
+        {
+          "text": "Cush",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why was Peleg given his name?",
+      "explanation": "One of Eber's sons was named Peleg, for in his days the earth was divided.",
+      "bibleReference": "Genesis 10:25",
+      "answers": [
+        {
+          "text": "He was a mighty hunter",
+          "isCorrect": false
+        },
+        {
+          "text": "In his days the earth was divided",
+          "isCorrect": true
+        },
+        {
+          "text": "He built a great city",
+          "isCorrect": false
+        },
+        {
+          "text": "He was Shem's firstborn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the name of Peleg's brother?",
+      "explanation": "To Eber were born two sons: Peleg, and his brother Joktan.",
+      "bibleReference": "Genesis 10:25",
+      "answers": [
+        {
+          "text": "Shelah",
+          "isCorrect": false
+        },
+        {
+          "text": "Arpachshad",
+          "isCorrect": false
+        },
+        {
+          "text": "Uz",
+          "isCorrect": false
+        },
+        {
+          "text": "Joktan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to the last verse, what came from the families of Noah's sons after the flood?",
+      "explanation": "These are the families of the sons of Noah; the nations divided from these in the earth after the flood.",
+      "bibleReference": "Genesis 10:32",
+      "answers": [
+        {
+          "text": "The giants of old",
+          "isCorrect": false
+        },
+        {
+          "text": "The nations of the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "The cities of the plain",
+          "isCorrect": false
+        },
+        {
+          "text": "The angels of heaven",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

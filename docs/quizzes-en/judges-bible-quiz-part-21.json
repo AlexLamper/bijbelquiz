@@ -1,0 +1,242 @@
+{
+  "title": "Judges Bible Quiz - Chapter 21",
+  "description": "Ten questions on Judges 21: Israel grieves for Benjamin and finds wives for the survivors from Jabesh Gilead and Shiloh.",
+  "slug": "judges-bible-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What had the men of Israel sworn in Mizpah?",
+      "explanation": "They had sworn, \"None of us will give his daughter to Benjamin as a wife.\"",
+      "bibleReference": "Judges 21:1",
+      "answers": [
+        {
+          "text": "None of them would ever fight Benjamin again",
+          "isCorrect": false
+        },
+        {
+          "text": "They would not go home until Gibeah was rebuilt",
+          "isCorrect": false
+        },
+        {
+          "text": "They would choose a king from Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "None of them would give his daughter to Benjamin as a wife",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "At Bethel, why did the people weep and question Yahweh?",
+      "explanation": "They asked why it had happened in Israel that there should be one tribe lacking in Israel that day.",
+      "bibleReference": "Judges 21:3",
+      "answers": [
+        {
+          "text": "They had lost the first battle",
+          "isCorrect": false
+        },
+        {
+          "text": "One tribe was lacking in Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "No rain had fallen for a year",
+          "isCorrect": false
+        },
+        {
+          "text": "The ark had been taken away",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people do on the next day at Bethel?",
+      "explanation": "On the next day they rose early, built an altar there, and offered burnt offerings and peace offerings.",
+      "bibleReference": "Judges 21:4",
+      "answers": [
+        {
+          "text": "They chose a king for Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "They tore down the walls of Gibeah",
+          "isCorrect": false
+        },
+        {
+          "text": "They built an altar and offered sacrifices",
+          "isCorrect": true
+        },
+        {
+          "text": "They divided the land of Benjamin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From which place had no one come to the assembly at Mizpah?",
+      "explanation": "No one came from Jabesh Gilead to the camp to the assembly; when the people were counted, none of its inhabitants were there.",
+      "bibleReference": "Judges 21:8-9",
+      "answers": [
+        {
+          "text": "Jabesh Gilead",
+          "isCorrect": true
+        },
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Rehob",
+          "isCorrect": false
+        },
+        {
+          "text": "Lebonah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many of the most valiant men did the congregation send against Jabesh Gilead?",
+      "explanation": "The congregation sent twelve thousand of the most valiant men there.",
+      "bibleReference": "Judges 21:10",
+      "answers": [
+        {
+          "text": "Ten thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Twenty thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many young virgins were found among the inhabitants of Jabesh Gilead?",
+      "explanation": "They found four hundred young virgins among the inhabitants of Jabesh Gilead and brought them to the camp at Shiloh.",
+      "bibleReference": "Judges 21:12",
+      "answers": [
+        {
+          "text": "Two hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the congregation proclaim to the Benjamites at the rock of Rimmon?",
+      "explanation": "The whole congregation sent and spoke to the children of Benjamin in the rock of Rimmon, and proclaimed peace to them.",
+      "bibleReference": "Judges 21:13",
+      "answers": [
+        {
+          "text": "Peace",
+          "isCorrect": true
+        },
+        {
+          "text": "War",
+          "isCorrect": false
+        },
+        {
+          "text": "A curse",
+          "isCorrect": false
+        },
+        {
+          "text": "A fast",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the yearly feast of Yahweh held, according to the elders?",
+      "explanation": "They said there was a feast of Yahweh from year to year in Shiloh, which is on the north of Bethel.",
+      "bibleReference": "Judges 21:19",
+      "answers": [
+        {
+          "text": "In Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "In Shiloh",
+          "isCorrect": true
+        },
+        {
+          "text": "In Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "In Shechem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were the Benjamites told to lie in wait for the daughters of Shiloh?",
+      "explanation": "They commanded the children of Benjamin, \"Go and lie in wait in the vineyards.\"",
+      "bibleReference": "Judges 21:20-21",
+      "answers": [
+        {
+          "text": "In the barley fields",
+          "isCorrect": false
+        },
+        {
+          "text": "In the caves of the hills",
+          "isCorrect": false
+        },
+        {
+          "text": "At the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "In the vineyards",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the last verse of Judges 21 say about those days?",
+      "explanation": "The last verse says, \"In those days there was no king in Israel. Everyone did that which was right in his own eyes.\"",
+      "bibleReference": "Judges 21:25",
+      "answers": [
+        {
+          "text": "The land had rest for forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Everyone did what was right in his own eyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Israel asked Samuel for a king",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamin was blotted out from Israel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

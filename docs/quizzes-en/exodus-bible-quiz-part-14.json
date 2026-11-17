@@ -1,240 +1,240 @@
 {
   "title": "Exodus Bible Quiz - Chapter 14",
-  "description": "Ten questions on Exodus 14: Pharaoh's pursuit and Israel's crossing of the Red Sea.",
+  "description": "Ten questions on Exodus 14: Pharaoh's pursuit and Israel's crossing of the sea on dry ground.",
   "slug": "exodus-bible-quiz-part-14",
-  "categorySlug": "miracles-and-signs",
+  "categorySlug": "old-testament",
   "rewardXp": 100,
-  "difficulty": "medium",
+  "difficulty": "easy",
   "isPremium": false,
   "status": "draft",
   "questions": [
     {
-      "text": "Who chased the Israelites after they left Egypt?",
-      "explanation": "Pharaoh changed his mind and pursued Israel with his chariots, horsemen and army.",
-      "bibleReference": "Exodus 14:8-9",
+      "text": "Where did Yahweh tell Israel to turn back and encamp?",
+      "explanation": "They were to encamp before Pihahiroth, between Migdol and the sea, before Baal Zephon.",
+      "bibleReference": "Exodus 14:2",
       "answers": [
         {
-          "text": "The Amalekites",
+          "text": "At Marah, beside the bitter waters",
           "isCorrect": false
         },
         {
-          "text": "The Philistines",
+          "text": "At Elim, among the springs and the palm trees",
           "isCorrect": false
         },
         {
-          "text": "Pharaoh and his army",
+          "text": "At Succoth, on the road from Rameses",
+          "isCorrect": false
+        },
+        {
+          "text": "Before Pihahiroth, between Migdol and the sea",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say Pharaoh would say about the children of Israel?",
+      "explanation": "Pharaoh would say: 'They are entangled in the land. The wilderness has shut them in.'",
+      "bibleReference": "Exodus 14:3",
+      "answers": [
+        {
+          "text": "They have gone to serve their God and will soon return",
+          "isCorrect": false
+        },
+        {
+          "text": "They are entangled in the land; the wilderness has shut them in",
           "isCorrect": true
         },
         {
-          "text": "The Canaanite kings",
+          "text": "They are far too many for my army to fight",
+          "isCorrect": false
+        },
+        {
+          "text": "They have escaped beyond the borders of my land",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What lay in front of the Israelites when the Egyptians caught up with them?",
-      "explanation": "The Israelites were camped by the sea, with the Egyptian army behind them.",
-      "bibleReference": "Exodus 14:9-10",
+      "text": "How many chosen chariots did Pharaoh take with him?",
+      "explanation": "Pharaoh took six hundred chosen chariots, and all the chariots of Egypt, with captains over all of them.",
+      "bibleReference": "Exodus 14:7",
       "answers": [
         {
-          "text": "The sea",
+          "text": "Six hundred",
           "isCorrect": true
         },
         {
-          "text": "A desert",
+          "text": "Three hundred",
           "isCorrect": false
         },
         {
-          "text": "A mountain pass",
+          "text": "One thousand",
           "isCorrect": false
         },
         {
-          "text": "A walled city",
+          "text": "Seventy",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did Moses tell the frightened people to do?",
-      "explanation": "Moses said, \"Stand still, and see the salvation of Yahweh,\" promising that Yahweh would fight for them.",
+      "text": "What did the frightened Israelites say to Moses?",
+      "explanation": "They asked: 'Because there were no graves in Egypt, have you taken us away to die in the wilderness?'",
+      "bibleReference": "Exodus 14:11",
+      "answers": [
+        {
+          "text": "Why did you not bring more food and water for the way?",
+          "isCorrect": false
+        },
+        {
+          "text": "Why did you not let us take our flocks and herds along?",
+          "isCorrect": false
+        },
+        {
+          "text": "Were there no graves in Egypt, that you brought us here to die?",
+          "isCorrect": true
+        },
+        {
+          "text": "Why have you led us toward the mountain of God instead?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses tell the people to do?",
+      "explanation": "Moses said: 'Don't be afraid. Stand still, and see the salvation of Yahweh,' for Yahweh would fight for them.",
       "bibleReference": "Exodus 14:13-14",
       "answers": [
         {
-          "text": "Turn back and return to Egypt",
+          "text": "Run to the hills and hide",
           "isCorrect": false
         },
         {
-          "text": "Pick up weapons and fight the Egyptians",
+          "text": "Stand still and see the salvation of Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "Take up your swords and fight",
           "isCorrect": false
         },
         {
-          "text": "Build rafts and cross the sea",
+          "text": "Go back to Egypt and ask for mercy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Moses to lift up before stretching out his hand over the sea?",
+      "explanation": "Yahweh said: 'Lift up your rod, and stretch out your hand over the sea and divide it.'",
+      "bibleReference": "Exodus 14:16",
+      "answers": [
+        {
+          "text": "His sword",
           "isCorrect": false
         },
         {
-          "text": "Stand still and see Yahweh's salvation",
+          "text": "A bronze serpent",
+          "isCorrect": false
+        },
+        {
+          "text": "A trumpet",
+          "isCorrect": false
+        },
+        {
+          "text": "His rod",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "What did Moses do to part the sea?",
-      "explanation": "Moses stretched out his hand over the sea, and Yahweh made the waters divide.",
+      "text": "What moved from before the camp of Israel and went behind them?",
+      "explanation": "The angel of God who went before the camp moved behind them, and the pillar of cloud also moved and stood behind them.",
+      "bibleReference": "Exodus 14:19",
+      "answers": [
+        {
+          "text": "The angel of God and the pillar of cloud",
+          "isCorrect": true
+        },
+        {
+          "text": "Aaron and the elders of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests and the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua and the chosen soldiers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Yahweh make the sea go back?",
+      "explanation": "Yahweh caused the sea to go back by a strong east wind all night, and made the sea dry land.",
       "bibleReference": "Exodus 14:21",
       "answers": [
         {
-          "text": "Struck the water with a rope",
+          "text": "By a great earthquake",
           "isCorrect": false
         },
         {
-          "text": "Stretched out his hand over the sea",
+          "text": "By a west wind at noon",
+          "isCorrect": false
+        },
+        {
+          "text": "By a strong east wind all night",
           "isCorrect": true
         },
         {
-          "text": "Threw his staff into the sea",
-          "isCorrect": false
-        },
-        {
-          "text": "Called the people to pray in silence",
+          "text": "By fire from heaven",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What drove the sea back?",
-      "explanation": "Yahweh caused the sea to go back by a strong east wind all night and made the sea dry land.",
-      "bibleReference": "Exodus 14:21",
+      "text": "What did Yahweh take off the Egyptians' chariots?",
+      "explanation": "Yahweh took off their chariot wheels, so that they drove them heavily.",
+      "bibleReference": "Exodus 14:25",
       "answers": [
         {
-          "text": "A great earthquake",
-          "isCorrect": false
-        },
-        {
-          "text": "A heavy rainstorm",
-          "isCorrect": false
-        },
-        {
-          "text": "A flood from the south",
-          "isCorrect": false
-        },
-        {
-          "text": "A strong east wind",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "text": "Where did the pillar of cloud go during the night?",
-      "explanation": "The pillar moved behind the Israelites, coming between the camp of Egypt and the camp of Israel.",
-      "bibleReference": "Exodus 14:19-20",
-      "answers": [
-        {
-          "text": "Behind Israel, facing Egypt",
+          "text": "Their wheels",
           "isCorrect": true
         },
         {
-          "text": "Out over the water of the sea",
+          "text": "Their horses",
           "isCorrect": false
         },
         {
-          "text": "Far ahead of the whole camp",
+          "text": "Their banners",
           "isCorrect": false
         },
         {
-          "text": "Back to the mountain of God",
+          "text": "Their armor plates",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "How did the waters stand while Israel crossed?",
-      "explanation": "The waters were a wall to them on their right hand and on their left.",
-      "bibleReference": "Exodus 14:22",
-      "answers": [
-        {
-          "text": "As a bridge over their heads",
-          "isCorrect": false
-        },
-        {
-          "text": "As a single tall pillar",
-          "isCorrect": false
-        },
-        {
-          "text": "As a wall on the right and the left",
-          "isCorrect": true
-        },
-        {
-          "text": "As a deep river beside them",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "What happened to the Egyptian chariots in the sea?",
-      "explanation": "Yahweh took off their chariot wheels so that they drove heavily, and the Egyptians said they must flee.",
-      "bibleReference": "Exodus 14:24-25",
-      "answers": [
-        {
-          "text": "Their horses fell asleep",
-          "isCorrect": false
-        },
-        {
-          "text": "Their wheels came off",
-          "isCorrect": true
-        },
-        {
-          "text": "Their axles were struck by lightning",
-          "isCorrect": false
-        },
-        {
-          "text": "They lost their way in the fog",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "What did the sea do at daybreak when Moses stretched out his hand again?",
-      "explanation": "The sea returned to its place and covered the chariots, the horsemen and all Pharaoh's army.",
-      "bibleReference": "Exodus 14:27-28",
-      "answers": [
-        {
-          "text": "It returned and covered the Egyptians",
-          "isCorrect": true
-        },
-        {
-          "text": "It froze solid under the Egyptians",
-          "isCorrect": false
-        },
-        {
-          "text": "It stayed open for another day",
-          "isCorrect": false
-        },
-        {
-          "text": "It turned into blood and mud",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "What did the people do when they saw the great work Yahweh had done?",
+      "text": "In whom did the people believe after seeing the great work Yahweh did?",
       "explanation": "The people feared Yahweh, and they believed in Yahweh and in his servant Moses.",
       "bibleReference": "Exodus 14:31",
       "answers": [
         {
-          "text": "They went back to the land of Egypt",
+          "text": "In Aaron and his sister Miriam",
           "isCorrect": false
         },
         {
-          "text": "They built an altar of uncut stone",
-          "isCorrect": false
-        },
-        {
-          "text": "They crowned Moses as their king",
-          "isCorrect": false
-        },
-        {
-          "text": "They feared Yahweh and believed in him and Moses",
+          "text": "In Yahweh and in his servant Moses",
           "isCorrect": true
+        },
+        {
+          "text": "In the gods of the land of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "In the strength of their army",
+          "isCorrect": false
         }
       ]
     }

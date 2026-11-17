@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 5",
+  "description": "Ten questions on Leviticus 5: confessing sin, offerings for those who cannot afford a lamb, and the trespass offering.",
+  "slug": "leviticus-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which of these makes a person guilty, even when it was hidden from him?",
+      "explanation": "If anyone touches any unclean thing, such as the carcass of an unclean animal, and it is hidden from him, and he is unclean, then he shall be guilty.",
+      "bibleReference": "Leviticus 5:2",
+      "answers": [
+        {
+          "text": "Touching the carcass of an unclean animal",
+          "isCorrect": true
+        },
+        {
+          "text": "Eating unleavened bread at the feast",
+          "isCorrect": false
+        },
+        {
+          "text": "Washing his clothes in running water",
+          "isCorrect": false
+        },
+        {
+          "text": "Sleeping outside the camp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must a person do when he is guilty of one of these sins?",
+      "explanation": "When he is guilty of one of these, he shall confess that in which he has sinned.",
+      "bibleReference": "Leviticus 5:5",
+      "answers": [
+        {
+          "text": "Fast for seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Confess the sin he has committed",
+          "isCorrect": true
+        },
+        {
+          "text": "Shave his head and his beard",
+          "isCorrect": false
+        },
+        {
+          "text": "Stay outside the camp until evening",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the guilty person to bring as his trespass offering for a sin offering?",
+      "explanation": "He shall bring a female from the flock, a lamb or a goat, for a sin offering.",
+      "bibleReference": "Leviticus 5:6",
+      "answers": [
+        {
+          "text": "A young bull from the herd",
+          "isCorrect": false
+        },
+        {
+          "text": "A male goat without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "A female from the flock, a lamb or a goat",
+          "isCorrect": true
+        },
+        {
+          "text": "A tenth of an ephah of barley",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What could someone bring if he could not afford a lamb?",
+      "explanation": "If he can't afford a lamb, he shall bring two turtledoves, or two young pigeons, to Yahweh.",
+      "bibleReference": "Leviticus 5:7",
+      "answers": [
+        {
+          "text": "A young male goat",
+          "isCorrect": false
+        },
+        {
+          "text": "A jar of olive oil for the lamp",
+          "isCorrect": false
+        },
+        {
+          "text": "Five shekels of silver for the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Two turtledoves or two young pigeons",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was done with the two birds?",
+      "explanation": "One was for a sin offering, and the other for a burnt offering.",
+      "bibleReference": "Leviticus 5:7",
+      "answers": [
+        {
+          "text": "Both were burned as burnt offerings",
+          "isCorrect": false
+        },
+        {
+          "text": "One was a sin offering and the other a burnt offering",
+          "isCorrect": true
+        },
+        {
+          "text": "One was offered and the other set free",
+          "isCorrect": false
+        },
+        {
+          "text": "Both were given to the priest to eat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the head of the bird for the sin offering handled?",
+      "explanation": "The priest shall wring off its head from its neck, but shall not sever it completely.",
+      "bibleReference": "Leviticus 5:8",
+      "answers": [
+        {
+          "text": "It was wrung at the neck but not severed completely",
+          "isCorrect": true
+        },
+        {
+          "text": "It was cut off and thrown into the fire",
+          "isCorrect": false
+        },
+        {
+          "text": "It was left untouched",
+          "isCorrect": false
+        },
+        {
+          "text": "It was cut off completely and buried outside the camp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much fine flour could someone bring if he could not even afford two birds?",
+      "explanation": "He shall bring one tenth of an ephah of fine flour for a sin offering.",
+      "bibleReference": "Leviticus 5:11",
+      "answers": [
+        {
+          "text": "A whole ephah of flour",
+          "isCorrect": false
+        },
+        {
+          "text": "Half an ephah",
+          "isCorrect": false
+        },
+        {
+          "text": "Two handfuls of flour",
+          "isCorrect": false
+        },
+        {
+          "text": "One tenth of an ephah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why was no oil or frankincense to be put on that fine flour?",
+      "explanation": "He shall put no oil on it, and he shall not put any frankincense on it, for it is a sin offering.",
+      "bibleReference": "Leviticus 5:11",
+      "answers": [
+        {
+          "text": "Because oil was too costly",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the priest would add them later",
+          "isCorrect": false
+        },
+        {
+          "text": "Because it is a sin offering",
+          "isCorrect": true
+        },
+        {
+          "text": "Because it was offered in the evening",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must someone add when making restitution for a wrong regarding Yahweh's holy things?",
+      "explanation": "He shall make restitution for that which he has done wrong regarding the holy thing, and shall add a fifth part to it, and give it to the priest.",
+      "bibleReference": "Leviticus 5:15-16",
+      "answers": [
+        {
+          "text": "A fifth part",
+          "isCorrect": true
+        },
+        {
+          "text": "A tenth part",
+          "isCorrect": false
+        },
+        {
+          "text": "Double the amount",
+          "isCorrect": false
+        },
+        {
+          "text": "Half the amount",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about someone who does a forbidden thing without knowing it?",
+      "explanation": "Though he didn't know it, he is still guilty, and shall bear his iniquity.",
+      "bibleReference": "Leviticus 5:17",
+      "answers": [
+        {
+          "text": "He is not guilty at all",
+          "isCorrect": false
+        },
+        {
+          "text": "He is still guilty and shall bear his iniquity",
+          "isCorrect": true
+        },
+        {
+          "text": "He is only unclean until evening",
+          "isCorrect": false
+        },
+        {
+          "text": "He must stay outside the camp for seven days",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 19",
+  "description": "Ten questions on Leviticus 19: holiness in daily life, from harvest gleanings and fair wages to loving your neighbor and the stranger.",
+  "slug": "leviticus-bible-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What reason does Yahweh give in verse 2 for the command \"You shall be holy\"?",
+      "explanation": "Moses was to tell the congregation to be holy, because Yahweh their God is holy.",
+      "bibleReference": "Leviticus 19:2",
+      "answers": [
+        {
+          "text": "Because the land belongs to Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Yahweh their God is holy",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the Sabbath is holy",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they were his firstborn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had to be done with peace offering meat that remained until the third day?",
+      "explanation": "The peace offering was to be eaten on the day it was offered and the next day; anything left until the third day had to be burned with fire.",
+      "bibleReference": "Leviticus 19:6",
+      "answers": [
+        {
+          "text": "It was given to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "It was buried outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "It was poured out at the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "It had to be burned with fire",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For whom were the corners of the field and the fallen grapes of the vineyard to be left?",
+      "explanation": "The Israelites were not to reap the corners of their field or gather the fallen grapes, but leave them for the poor and for the foreigner.",
+      "bibleReference": "Leviticus 19:9-10",
+      "answers": [
+        {
+          "text": "The poor and the foreigner",
+          "isCorrect": true
+        },
+        {
+          "text": "The Levites and the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The widows of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "The animals of the field",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 13 say about the wages of a hired servant?",
+      "explanation": "The wages of a hired servant were not to remain with the employer all night until the morning.",
+      "bibleReference": "Leviticus 19:13",
+      "answers": [
+        {
+          "text": "They must be paid at the end of each week",
+          "isCorrect": false
+        },
+        {
+          "text": "They must be paid when the harvest is in",
+          "isCorrect": false
+        },
+        {
+          "text": "They must not stay with you all night until the morning",
+          "isCorrect": true
+        },
+        {
+          "text": "They must be paid on the Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Before whom must you not put a stumbling block?",
+      "explanation": "Verse 14 forbids cursing the deaf and putting a stumbling block before the blind.",
+      "bibleReference": "Leviticus 19:14",
+      "answers": [
+        {
+          "text": "The lame",
+          "isCorrect": false
+        },
+        {
+          "text": "The blind",
+          "isCorrect": true
+        },
+        {
+          "text": "The widow",
+          "isCorrect": false
+        },
+        {
+          "text": "The orphan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Instead of taking vengeance or bearing a grudge, what does verse 18 command?",
+      "explanation": "The Israelites were not to take vengeance or bear a grudge, but to love their neighbor as themselves.",
+      "bibleReference": "Leviticus 19:18",
+      "answers": [
+        {
+          "text": "Love your neighbor as yourself",
+          "isCorrect": true
+        },
+        {
+          "text": "Leave the matter to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring a trespass offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Forgive him on the day of the Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides cross-breeding different kinds of animals, which of these does verse 19 forbid?",
+      "explanation": "Verse 19 forbids cross-breeding animals, sowing a field with two kinds of seed, and wearing a garment made of two kinds of material.",
+      "bibleReference": "Leviticus 19:19",
+      "answers": [
+        {
+          "text": "Grafting one tree onto another",
+          "isCorrect": false
+        },
+        {
+          "text": "Mixing wine with water",
+          "isCorrect": false
+        },
+        {
+          "text": "Building a house from two kinds of stone",
+          "isCorrect": false
+        },
+        {
+          "text": "Sowing a field with two kinds of seed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "When newly planted fruit trees bore fruit, in which year could the Israelites first eat it?",
+      "explanation": "The fruit was forbidden for three years, the fruit of the fourth year was holy for praising Yahweh, and in the fifth year they could eat it.",
+      "bibleReference": "Leviticus 19:23-25",
+      "answers": [
+        {
+          "text": "The second year",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourth year",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifth year",
+          "isCorrect": true
+        },
+        {
+          "text": "The seventh year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Before whom does verse 32 say you shall rise up?",
+      "explanation": "Verse 32 says to rise up before the gray head and honor the face of the elderly.",
+      "bibleReference": "Leviticus 19:32",
+      "answers": [
+        {
+          "text": "The gray head",
+          "isCorrect": true
+        },
+        {
+          "text": "The high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The king",
+          "isCorrect": false
+        },
+        {
+          "text": "The judge at the gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were the Israelites to love the stranger living among them as themselves?",
+      "explanation": "The stranger was to be treated like the native-born and loved as oneself, because the Israelites had lived as foreigners in the land of Egypt.",
+      "bibleReference": "Leviticus 19:34",
+      "answers": [
+        {
+          "text": "Because the stranger was their brother",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they had lived as foreigners in Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the stranger also kept the Sabbaths",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the land belonged to the stranger first",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

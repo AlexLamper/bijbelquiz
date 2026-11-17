@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomy Bible Quiz - Chapter 10",
+  "description": "Ten questions on Deuteronomy 10: the new tablets, the ark of acacia wood, the tribe of Levi and what Yahweh requires.",
+  "slug": "deuteronomy-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Of what wood did Moses make the ark?",
+      "explanation": "Moses made an ark of acacia wood and cut two stone tablets like the first.",
+      "bibleReference": "Deuteronomy 10:3",
+      "answers": [
+        {
+          "text": "Cedar wood",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive wood",
+          "isCorrect": false
+        },
+        {
+          "text": "Cypress wood",
+          "isCorrect": false
+        },
+        {
+          "text": "Acacia wood",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Moses put the new tablets after he came down from the mountain?",
+      "explanation": "Moses came down and put the tablets in the ark he had made, as Yahweh commanded him.",
+      "bibleReference": "Deuteronomy 10:5",
+      "answers": [
+        {
+          "text": "Under the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "In the ark he had made",
+          "isCorrect": true
+        },
+        {
+          "text": "In Aaron's tent",
+          "isCorrect": false
+        },
+        {
+          "text": "On top of the mountain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Aaron die and get buried?",
+      "explanation": "Israel traveled from Beeroth Bene Jaakan to Moserah. There Aaron died, and there he was buried.",
+      "bibleReference": "Deuteronomy 10:6",
+      "answers": [
+        {
+          "text": "Gudgodah",
+          "isCorrect": false
+        },
+        {
+          "text": "Jotbathah",
+          "isCorrect": false
+        },
+        {
+          "text": "Moserah",
+          "isCorrect": true
+        },
+        {
+          "text": "Beeroth Bene Jaakan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who ministered in the priest's office in Aaron's place?",
+      "explanation": "After Aaron died, Eleazar his son ministered in the priest's office in his place.",
+      "bibleReference": "Deuteronomy 10:6",
+      "answers": [
+        {
+          "text": "Eleazar",
+          "isCorrect": true
+        },
+        {
+          "text": "Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "Korah",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which tribe did Yahweh set apart to bear the ark of his covenant?",
+      "explanation": "Yahweh set apart the tribe of Levi to bear the ark, to stand before him to minister and to bless in his name.",
+      "bibleReference": "Deuteronomy 10:8",
+      "answers": [
+        {
+          "text": "Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Reuben",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Levi",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why does Levi have no portion or inheritance with his brothers?",
+      "explanation": "Levi has no portion nor inheritance with his brothers because Yahweh is his inheritance.",
+      "bibleReference": "Deuteronomy 10:9",
+      "answers": [
+        {
+          "text": "Levi sold his portion",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh is his inheritance",
+          "isCorrect": true
+        },
+        {
+          "text": "Levi was the youngest brother",
+          "isCorrect": false
+        },
+        {
+          "text": "Levi was to stay in Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh require of Israel, according to Deuteronomy 10:12?",
+      "explanation": "He requires them to fear him, walk in all his ways, love him and serve him with all their heart and soul.",
+      "bibleReference": "Deuteronomy 10:12",
+      "answers": [
+        {
+          "text": "To fear him, walk in his ways, love and serve him",
+          "isCorrect": true
+        },
+        {
+          "text": "To bring him a burnt offering every day",
+          "isCorrect": false
+        },
+        {
+          "text": "To build him a house of cedar in the land",
+          "isCorrect": false
+        },
+        {
+          "text": "To go back and make war against Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Deuteronomy 10:16, the foreskin of what must Israel circumcise?",
+      "explanation": "Moses says: \"Circumcise therefore the foreskin of your heart, and be no more stiff-necked.\"",
+      "bibleReference": "Deuteronomy 10:16",
+      "answers": [
+        {
+          "text": "Their lips",
+          "isCorrect": false
+        },
+        {
+          "text": "Their ears",
+          "isCorrect": false
+        },
+        {
+          "text": "Their heart",
+          "isCorrect": true
+        },
+        {
+          "text": "Their eyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why should Israel love the foreigner?",
+      "explanation": "They are to love the foreigner, for they were foreigners in the land of Egypt.",
+      "bibleReference": "Deuteronomy 10:19",
+      "answers": [
+        {
+          "text": "Foreigners would fight for them",
+          "isCorrect": false
+        },
+        {
+          "text": "They were foreigners in the land of Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "Foreigners brought them food in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses was a foreigner",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With how many persons did their fathers go down into Egypt?",
+      "explanation": "Their fathers went down into Egypt with seventy persons, and now Yahweh has made them as the stars of the sky for multitude.",
+      "bibleReference": "Deuteronomy 10:22",
+      "answers": [
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

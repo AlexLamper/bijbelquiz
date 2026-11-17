@@ -1,0 +1,242 @@
+{
+  "title": "2 Chronicles Bible Quiz - Chapter 1",
+  "description": "Ten questions on 2 Chronicles 1: Solomon at Gibeon asks God for wisdom and knowledge and receives riches and honor as well.",
+  "slug": "2-chronicles-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Solomon and all the assembly go, because God's Tent of Meeting was there?",
+      "explanation": "2 Chronicles 1:3 says they went to the high place at Gibeon, for God's Tent of Meeting was there.",
+      "bibleReference": "2 Chronicles 1:3",
+      "answers": [
+        {
+          "text": "The high place at Gibeon",
+          "isCorrect": true
+        },
+        {
+          "text": "The city of Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "The town of Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "The hill of Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From where had David brought God's ark up to Jerusalem?",
+      "explanation": "2 Chronicles 1:4 says David had brought God's ark up from Kiriath Jearim to the place he had prepared for it.",
+      "bibleReference": "2 Chronicles 1:4",
+      "answers": [
+        {
+          "text": "Ramah of Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Shemesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": true
+        },
+        {
+          "text": "Bethlehem of Judah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who had made the bronze altar that stood before Yahweh's tabernacle?",
+      "explanation": "2 Chronicles 1:5 says the bronze altar had been made by Bezalel the son of Uri, the son of Hur.",
+      "bibleReference": "2 Chronicles 1:5",
+      "answers": [
+        {
+          "text": "Huram the king of Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "Bezalel the son of Uri",
+          "isCorrect": true
+        },
+        {
+          "text": "Aaron the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "King David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many burnt offerings did Solomon offer on the bronze altar?",
+      "explanation": "2 Chronicles 1:6 says Solomon offered one thousand burnt offerings on it.",
+      "bibleReference": "2 Chronicles 1:6",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did God say to Solomon when he appeared to him that night?",
+      "explanation": "God said to Solomon, \"Ask for what you want me to give you.\"",
+      "bibleReference": "2 Chronicles 1:7",
+      "answers": [
+        {
+          "text": "Ask for what you want me to give you",
+          "isCorrect": true
+        },
+        {
+          "text": "Build me a house in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Go back to your father's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Do not be afraid of your enemies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Solomon ask God to give him?",
+      "explanation": "Solomon asked, \"Now give me wisdom and knowledge, that I may go out and come in before this people.\"",
+      "bibleReference": "2 Chronicles 1:10",
+      "answers": [
+        {
+          "text": "Riches and honor",
+          "isCorrect": false
+        },
+        {
+          "text": "Wisdom and knowledge",
+          "isCorrect": true
+        },
+        {
+          "text": "A long life",
+          "isCorrect": false
+        },
+        {
+          "text": "The life of his enemies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides wisdom and knowledge, what did God promise to give Solomon?",
+      "explanation": "God said he would give Solomon riches, wealth, and honor such as no king before or after him would have.",
+      "bibleReference": "2 Chronicles 1:12",
+      "answers": [
+        {
+          "text": "Many sons and daughters",
+          "isCorrect": false
+        },
+        {
+          "text": "Victory over Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Peace with all the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Riches, wealth, and honor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many chariots did Solomon have?",
+      "explanation": "2 Chronicles 1:14 says he had one thousand four hundred chariots and twelve thousand horsemen.",
+      "bibleReference": "2 Chronicles 1:14",
+      "answers": [
+        {
+          "text": "One thousand two hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven hundred fifty",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand four hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "Two thousand four hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Solomon made silver and gold as common in Jerusalem as what?",
+      "explanation": "2 Chronicles 1:15 says the king made silver and gold to be as common as stones in Jerusalem.",
+      "bibleReference": "2 Chronicles 1:15",
+      "answers": [
+        {
+          "text": "Sand",
+          "isCorrect": false
+        },
+        {
+          "text": "Stones",
+          "isCorrect": true
+        },
+        {
+          "text": "Water",
+          "isCorrect": false
+        },
+        {
+          "text": "Grass",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From where were Solomon's horses brought?",
+      "explanation": "2 Chronicles 1:16 says the horses were brought out of Egypt and from Kue.",
+      "bibleReference": "2 Chronicles 1:16",
+      "answers": [
+        {
+          "text": "Tyre and Sidon",
+          "isCorrect": false
+        },
+        {
+          "text": "Edom and Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Egypt and Kue",
+          "isCorrect": true
+        },
+        {
+          "text": "Assyria and Babylon",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

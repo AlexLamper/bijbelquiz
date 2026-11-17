@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 26",
+  "description": "Ten questions on Genesis 26: Isaac in Gerar, Abimelech, the disputed wells and the covenant at Beersheba.",
+  "slug": "genesis-bible-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Isaac go when there was a famine in the land?",
+      "explanation": "There was a famine in the land, and Isaac went to Abimelech king of the Philistines, to Gerar.",
+      "bibleReference": "Genesis 26:1",
+      "answers": [
+        {
+          "text": "To Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "To Haran",
+          "isCorrect": false
+        },
+        {
+          "text": "To Gerar",
+          "isCorrect": true
+        },
+        {
+          "text": "To Shur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Isaac not to do?",
+      "explanation": "Yahweh appeared to him and said, \"Don't go down into Egypt. Live in the land I will tell you about.\"",
+      "bibleReference": "Genesis 26:2",
+      "answers": [
+        {
+          "text": "Dig wells in Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "Make a covenant with Abimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Return to Beersheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Go down into Egypt",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Isaac tell the men of Gerar about Rebekah?",
+      "explanation": "He said, \"She is my sister,\" because he was afraid the men of the place might kill him for Rebekah, since she was beautiful.",
+      "bibleReference": "Genesis 26:7",
+      "answers": [
+        {
+          "text": "That she was his sister",
+          "isCorrect": true
+        },
+        {
+          "text": "That she was his servant",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was his daughter",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was a widow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much did Isaac reap in the year he sowed in that land?",
+      "explanation": "Isaac sowed in that land and reaped in the same year one hundred times what he planted, and Yahweh blessed him.",
+      "bibleReference": "Genesis 26:12",
+      "answers": [
+        {
+          "text": "Ten times what he planted",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred times what he planted",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven times what he planted",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty times what he planted",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had the Philistines done to the wells dug in the days of Abraham?",
+      "explanation": "The Philistines had stopped all the wells that Abraham's servants had dug and filled them with earth.",
+      "bibleReference": "Genesis 26:15",
+      "answers": [
+        {
+          "text": "Gave each of them a new name",
+          "isCorrect": false
+        },
+        {
+          "text": "Built a wall around each of them",
+          "isCorrect": false
+        },
+        {
+          "text": "Poured salt into all of them",
+          "isCorrect": false
+        },
+        {
+          "text": "Stopped them and filled them with earth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What name did Isaac give the well in the valley that the herdsmen of Gerar argued about first?",
+      "explanation": "The herdsmen of Gerar argued, \"The water is ours,\" so he called the well Esek, because they contended with him.",
+      "bibleReference": "Genesis 26:19-20",
+      "answers": [
+        {
+          "text": "Rehoboth",
+          "isCorrect": false
+        },
+        {
+          "text": "Esek",
+          "isCorrect": true
+        },
+        {
+          "text": "Sitnah",
+          "isCorrect": false
+        },
+        {
+          "text": "Shibah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Isaac call a well Rehoboth?",
+      "explanation": "Nobody argued over that well, and he called it Rehoboth, saying, \"For now Yahweh has made room for us.\"",
+      "bibleReference": "Genesis 26:22",
+      "answers": [
+        {
+          "text": "Yahweh had made room for them",
+          "isCorrect": true
+        },
+        {
+          "text": "The herdsmen had contended with him",
+          "isCorrect": false
+        },
+        {
+          "text": "His servants had found water there",
+          "isCorrect": false
+        },
+        {
+          "text": "Abimelech had sworn an oath there",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was Phicol, who came to Isaac with Abimelech?",
+      "explanation": "Abimelech went to Isaac from Gerar with Ahuzzath his friend and Phicol the captain of his army.",
+      "bibleReference": "Genesis 26:26",
+      "answers": [
+        {
+          "text": "A herdsman of the valley of Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of the Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The captain of Abimelech's army",
+          "isCorrect": true
+        },
+        {
+          "text": "A servant from Isaac's household",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did Isaac give the well his servants reported on the day of the oath?",
+      "explanation": "His servants came and said, \"We have found water.\" He called it \"Shibah\", and so the city is named \"Beersheba\".",
+      "bibleReference": "Genesis 26:32-33",
+      "answers": [
+        {
+          "text": "Esek",
+          "isCorrect": false
+        },
+        {
+          "text": "Sitnah",
+          "isCorrect": false
+        },
+        {
+          "text": "Rehoboth",
+          "isCorrect": false
+        },
+        {
+          "text": "Shibah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whose daughter was Judith, whom Esau took as wife at forty years old?",
+      "explanation": "When Esau was forty years old, he took as wife Judith, the daughter of Beeri the Hittite, and Basemath, the daughter of Elon the Hittite.",
+      "bibleReference": "Genesis 26:34",
+      "answers": [
+        {
+          "text": "Beeri the Hittite",
+          "isCorrect": true
+        },
+        {
+          "text": "Elon the Hittite",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephron the Hittite",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethuel the Syrian",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

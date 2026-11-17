@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 22",
+  "description": "Ten questions on 1 Samuel 22: David at Adullam's cave, Doeg's report and the slaughter of the priests of Nob.",
+  "slug": "1-samuel-bible-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did David escape to after leaving Gath?",
+      "explanation": "David departed from there and escaped to Adullam's cave.",
+      "bibleReference": "1 Samuel 22:1",
+      "answers": [
+        {
+          "text": "The cave of Machpelah",
+          "isCorrect": false
+        },
+        {
+          "text": "Adullam's cave",
+          "isCorrect": true
+        },
+        {
+          "text": "The rock of Etam",
+          "isCorrect": false
+        },
+        {
+          "text": "The hill of Moreh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "About how many men were with David at the cave?",
+      "explanation": "Those in distress, in debt and discontented gathered to him, and there were with him about four hundred men.",
+      "bibleReference": "1 Samuel 22:2",
+      "answers": [
+        {
+          "text": "About sixty",
+          "isCorrect": false
+        },
+        {
+          "text": "About two thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "About four hundred",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did David ask the king of Moab to take in?",
+      "explanation": "David said to the king of Moab, \"Please let my father and my mother come out with you.\"",
+      "bibleReference": "1 Samuel 22:3",
+      "answers": [
+        {
+          "text": "His father and mother",
+          "isCorrect": true
+        },
+        {
+          "text": "His wife Michal",
+          "isCorrect": false
+        },
+        {
+          "text": "His brother Eliab",
+          "isCorrect": false
+        },
+        {
+          "text": "The priest Ahimelech",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which prophet told David not to stay in the stronghold?",
+      "explanation": "The prophet Gad told David to depart and go into the land of Judah.",
+      "bibleReference": "1 Samuel 22:5",
+      "answers": [
+        {
+          "text": "Nathan",
+          "isCorrect": false
+        },
+        {
+          "text": "Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Gad",
+          "isCorrect": true
+        },
+        {
+          "text": "Elijah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Saul sitting when he heard that David was discovered?",
+      "explanation": "Saul was sitting in Gibeah, under the tamarisk tree in Ramah, with his spear in his hand.",
+      "bibleReference": "1 Samuel 22:6",
+      "answers": [
+        {
+          "text": "At the gate of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "On his throne in the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "Beside the great well in Secu",
+          "isCorrect": false
+        },
+        {
+          "text": "Under the tamarisk tree",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who told Saul that he had seen David coming to Ahimelech at Nob?",
+      "explanation": "Doeg the Edomite said, \"I saw the son of Jesse coming to Nob, to Ahimelech the son of Ahitub.\"",
+      "bibleReference": "1 Samuel 22:9",
+      "answers": [
+        {
+          "text": "Abner the son of Ner",
+          "isCorrect": false
+        },
+        {
+          "text": "Doeg the Edomite",
+          "isCorrect": true
+        },
+        {
+          "text": "Adriel the Meholathite",
+          "isCorrect": false
+        },
+        {
+          "text": "Abiathar the priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Ahimelech describe David to Saul?",
+      "explanation": "Ahimelech said David was the king's son-in-law, captain of his body guard and honored in his house.",
+      "bibleReference": "1 Samuel 22:14",
+      "answers": [
+        {
+          "text": "As the king's son-in-law and captain of his body guard",
+          "isCorrect": true
+        },
+        {
+          "text": "As the king's cupbearer and his chief scribe",
+          "isCorrect": false
+        },
+        {
+          "text": "As a runaway servant who rebelled against the king",
+          "isCorrect": false
+        },
+        {
+          "text": "As a stranger he had never met before",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the king's guard respond when Saul ordered them to kill the priests?",
+      "explanation": "The servants of the king would not put out their hand to fall on the priests of Yahweh.",
+      "bibleReference": "1 Samuel 22:17",
+      "answers": [
+        {
+          "text": "They killed the priests at once",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled to David",
+          "isCorrect": false
+        },
+        {
+          "text": "They refused to touch the priests",
+          "isCorrect": true
+        },
+        {
+          "text": "They brought the priests to Gibeah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many people who wore a linen ephod did Doeg kill that day?",
+      "explanation": "Doeg the Edomite attacked the priests and killed on that day eighty-five people who wore a linen ephod.",
+      "bibleReference": "1 Samuel 22:18",
+      "answers": [
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "Eighty-five",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which son of Ahimelech escaped and fled after David?",
+      "explanation": "One of the sons of Ahimelech, named Abiathar, escaped and fled after David.",
+      "bibleReference": "1 Samuel 22:20",
+      "answers": [
+        {
+          "text": "Ahitub",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinehas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hophni",
+          "isCorrect": false
+        },
+        {
+          "text": "Abiathar",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

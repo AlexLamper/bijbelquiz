@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 6",
+  "description": "Ten questions on Numbers 6: the vow of the Nazirite, its offerings, and the blessing Aaron and his sons were to speak over Israel.",
+  "slug": "numbers-bible-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "From what must a Nazirite separate himself?",
+      "explanation": "A man or woman who made the vow of a Nazirite was to separate himself from wine and strong drink.",
+      "bibleReference": "Numbers 6:2-3",
+      "answers": [
+        {
+          "text": "Wine and strong drink",
+          "isCorrect": true
+        },
+        {
+          "text": "Meat and fat",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread and salt",
+          "isCorrect": false
+        },
+        {
+          "text": "Milk and honey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the rule for the Nazirite's hair during the days of his vow?",
+      "explanation": "No razor was to come on his head; he was to let the locks of the hair of his head grow long.",
+      "bibleReference": "Numbers 6:5",
+      "answers": [
+        {
+          "text": "He had to shave it every seventh day",
+          "isCorrect": false
+        },
+        {
+          "text": "He had to keep it covered",
+          "isCorrect": false
+        },
+        {
+          "text": "No razor was to come on his head",
+          "isCorrect": true
+        },
+        {
+          "text": "He had to cut it at each new moon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was a Nazirite not allowed to go near during his separation?",
+      "explanation": "All the days that he separated himself to Yahweh he was not to go near a dead body, not even for his father, mother, brother or sister.",
+      "bibleReference": "Numbers 6:6-7",
+      "answers": [
+        {
+          "text": "The Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "A foreigner",
+          "isCorrect": false
+        },
+        {
+          "text": "The altar",
+          "isCorrect": false
+        },
+        {
+          "text": "A dead body",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "If someone died suddenly beside a Nazirite, on which day was he to shave his head?",
+      "explanation": "If a man died very suddenly beside him, he was to shave his head in the day of his cleansing, on the seventh day.",
+      "bibleReference": "Numbers 6:9",
+      "answers": [
+        {
+          "text": "The third day",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventh day",
+          "isCorrect": true
+        },
+        {
+          "text": "The eighth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the defiled Nazirite bring to the priest on the eighth day?",
+      "explanation": "On the eighth day he was to bring two turtledoves or two young pigeons to the priest, to the door of the Tent of Meeting.",
+      "bibleReference": "Numbers 6:10",
+      "answers": [
+        {
+          "text": "A ram without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "A basket of unleavened bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Two turtledoves or two young pigeons",
+          "isCorrect": true
+        },
+        {
+          "text": "A tenth of an ephah of barley meal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After his separation was defiled, what happened to the days he had already kept?",
+      "explanation": "He had to separate the days of his separation again, and the former days were void, because his separation was defiled.",
+      "bibleReference": "Numbers 6:12",
+      "answers": [
+        {
+          "text": "They were void",
+          "isCorrect": true
+        },
+        {
+          "text": "They were counted double",
+          "isCorrect": false
+        },
+        {
+          "text": "They were added to his new vow",
+          "isCorrect": false
+        },
+        {
+          "text": "They were given to the priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Nazirite do with the hair of his head when his vow was fulfilled?",
+      "explanation": "He shaved his head at the door of the Tent of Meeting and put the hair on the fire under the sacrifice of peace offerings.",
+      "bibleReference": "Numbers 6:18",
+      "answers": [
+        {
+          "text": "He buried it outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "He put it on the fire under the peace offerings",
+          "isCorrect": true
+        },
+        {
+          "text": "He gave it to the priest as a wave offering",
+          "isCorrect": false
+        },
+        {
+          "text": "He kept it in the Tent of Meeting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After the wave offering at the end of his vow, what was the Nazirite allowed to do?",
+      "explanation": "After the priest waved the offerings before Yahweh, the Nazirite was allowed to drink wine.",
+      "bibleReference": "Numbers 6:20",
+      "answers": [
+        {
+          "text": "Enter the most holy place",
+          "isCorrect": false
+        },
+        {
+          "text": "Eat the breast of the ram",
+          "isCorrect": false
+        },
+        {
+          "text": "Shave his head again",
+          "isCorrect": false
+        },
+        {
+          "text": "Drink wine",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom did Yahweh give the words for blessing the children of Israel?",
+      "explanation": "Yahweh told Moses to speak to Aaron and to his sons, saying, \"This is how you shall bless the children of Israel.\"",
+      "bibleReference": "Numbers 6:22-23",
+      "answers": [
+        {
+          "text": "Aaron and his sons",
+          "isCorrect": true
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The Nazirites",
+          "isCorrect": false
+        },
+        {
+          "text": "The princes of the tribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Complete the blessing: \"Yahweh lift up his face toward you, and give you...\"",
+      "explanation": "The blessing ends with: \"Yahweh lift up his face toward you, and give you peace.\"",
+      "bibleReference": "Numbers 6:26",
+      "answers": [
+        {
+          "text": "rest",
+          "isCorrect": false
+        },
+        {
+          "text": "strength",
+          "isCorrect": false
+        },
+        {
+          "text": "peace",
+          "isCorrect": true
+        },
+        {
+          "text": "joy",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

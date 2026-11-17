@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 29",
+  "description": "Ten questions on Exodus 29: the consecration of Aaron and his sons, the offerings, and the daily lambs.",
+  "slug": "exodus-bible-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which animals were to be taken to make Aaron and his sons holy?",
+      "explanation": "Moses was to take one young bull and two rams without defect.",
+      "bibleReference": "Exodus 29:1",
+      "answers": [
+        {
+          "text": "One young bull and two rams",
+          "isCorrect": true
+        },
+        {
+          "text": "Two lambs and a goat",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven bulls",
+          "isCorrect": false
+        },
+        {
+          "text": "A heifer and two doves",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the anointing oil poured on Aaron?",
+      "explanation": "Moses was to take the anointing oil, pour it on Aaron's head and anoint him.",
+      "bibleReference": "Exodus 29:7",
+      "answers": [
+        {
+          "text": "On his feet",
+          "isCorrect": false
+        },
+        {
+          "text": "On his hands",
+          "isCorrect": false
+        },
+        {
+          "text": "On his breastplate",
+          "isCorrect": false
+        },
+        {
+          "text": "On his head",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where were the meat, skin and dung of the bull to be burned?",
+      "explanation": "The meat, skin and dung of the bull were to be burned with fire outside of the camp. It was a sin offering.",
+      "bibleReference": "Exodus 29:14",
+      "answers": [
+        {
+          "text": "On the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside of the camp",
+          "isCorrect": true
+        },
+        {
+          "text": "In the most holy place",
+          "isCorrect": false
+        },
+        {
+          "text": "At the gate of the court",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was done with the first ram?",
+      "explanation": "The whole ram was to be burned on the altar as a burnt offering to Yahweh, a pleasant aroma.",
+      "bibleReference": "Exodus 29:18",
+      "answers": [
+        {
+          "text": "Aaron and his sons ate it",
+          "isCorrect": false
+        },
+        {
+          "text": "It was sent into the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "It was burned whole on the altar",
+          "isCorrect": true
+        },
+        {
+          "text": "It was given to the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was some blood of the second ram put, besides the right thumb and the right big toe?",
+      "explanation": "The blood was put on the tip of the right ear of Aaron and his sons, on the thumb of their right hand and on the big toe of their right foot.",
+      "bibleReference": "Exodus 29:20",
+      "answers": [
+        {
+          "text": "On the middle of the forehead",
+          "isCorrect": false
+        },
+        {
+          "text": "On the tip of the right ear",
+          "isCorrect": true
+        },
+        {
+          "text": "On the tip of the left ear",
+          "isCorrect": false
+        },
+        {
+          "text": "On the lips and the tongue",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were Aaron and his sons to eat the meat of the ram and the bread from the basket?",
+      "explanation": "Aaron and his sons were to eat the meat of the ram and the bread in the basket at the door of the Tent of Meeting.",
+      "bibleReference": "Exodus 29:32",
+      "answers": [
+        {
+          "text": "At the door of the Tent of Meeting",
+          "isCorrect": true
+        },
+        {
+          "text": "In their own tents",
+          "isCorrect": false
+        },
+        {
+          "text": "In the most holy place",
+          "isCorrect": false
+        },
+        {
+          "text": "By the basin in the court",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was to happen to consecration meat or bread left until the morning?",
+      "explanation": "Anything left until the morning was to be burned with fire and not eaten, because it was holy.",
+      "bibleReference": "Exodus 29:34",
+      "answers": [
+        {
+          "text": "It was given to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "The Levites were to eat it",
+          "isCorrect": false
+        },
+        {
+          "text": "It was to be burned with fire",
+          "isCorrect": true
+        },
+        {
+          "text": "It was kept for the next day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how many days were Aaron and his sons to be consecrated?",
+      "explanation": "God told Moses: \"You shall consecrate them seven days.\"",
+      "bibleReference": "Exodus 29:35",
+      "answers": [
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "When were the two lambs to be offered each day?",
+      "explanation": "Two lambs a year old were to be offered day by day: one in the morning and the other at evening.",
+      "bibleReference": "Exodus 29:38-39",
+      "answers": [
+        {
+          "text": "Both together at noon each day",
+          "isCorrect": false
+        },
+        {
+          "text": "One in the morning and one at evening",
+          "isCorrect": true
+        },
+        {
+          "text": "Both of them at sunrise each day",
+          "isCorrect": false
+        },
+        {
+          "text": "One on the Sabbath and one at the new moon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 46, why did Yahweh bring Israel out of the land of Egypt?",
+      "explanation": "Yahweh said he brought them out of the land of Egypt that he might dwell among them.",
+      "bibleReference": "Exodus 29:46",
+      "answers": [
+        {
+          "text": "That they might build him a city",
+          "isCorrect": false
+        },
+        {
+          "text": "That they might become rich",
+          "isCorrect": false
+        },
+        {
+          "text": "That they might rule over Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "That he might dwell among them",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

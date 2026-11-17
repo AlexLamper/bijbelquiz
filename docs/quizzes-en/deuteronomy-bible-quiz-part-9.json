@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomy Bible Quiz - Chapter 9",
+  "description": "Ten questions on Deuteronomy 9: not for Israel's righteousness, the molded calf, the broken tablets and Moses' prayer.",
+  "slug": "deuteronomy-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "About which tall people did Israel hear it said, \"Who can stand before ...?\"",
+      "explanation": "The people were great and tall, the sons of the Anakim, of whom it was said: \"Who can stand before the sons of Anak?\"",
+      "bibleReference": "Deuteronomy 9:2",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Egyptians",
+          "isCorrect": false
+        },
+        {
+          "text": "The sons of Anak",
+          "isCorrect": true
+        },
+        {
+          "text": "The Moabites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does Yahweh drive out the nations before Israel?",
+      "explanation": "It is not for Israel's righteousness, but because of the wickedness of these nations, and to establish the word he swore to their fathers.",
+      "bibleReference": "Deuteronomy 9:4-5",
+      "answers": [
+        {
+          "text": "Because of the wickedness of these nations",
+          "isCorrect": true
+        },
+        {
+          "text": "Because of Israel's righteousness",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the nations were few in number",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Israel paid them silver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does Moses describe Israel in Deuteronomy 9:6?",
+      "explanation": "Yahweh does not give them the land for their righteousness, for they are a stiff-necked people.",
+      "bibleReference": "Deuteronomy 9:6",
+      "answers": [
+        {
+          "text": "A righteous people",
+          "isCorrect": false
+        },
+        {
+          "text": "A patient people",
+          "isCorrect": false
+        },
+        {
+          "text": "A humble people",
+          "isCorrect": false
+        },
+        {
+          "text": "A stiff-necked people",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what were the two stone tablets written?",
+      "explanation": "Yahweh delivered to Moses the two stone tablets written with God's finger.",
+      "bibleReference": "Deuteronomy 9:10",
+      "answers": [
+        {
+          "text": "Moses' staff",
+          "isCorrect": false
+        },
+        {
+          "text": "God's finger",
+          "isCorrect": true
+        },
+        {
+          "text": "An iron chisel",
+          "isCorrect": false
+        },
+        {
+          "text": "Ink and a reed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had the people made for themselves while Moses was on the mountain?",
+      "explanation": "Moses looked and saw they had sinned against Yahweh: they had made themselves a molded calf.",
+      "bibleReference": "Deuteronomy 9:16",
+      "answers": [
+        {
+          "text": "A molded calf",
+          "isCorrect": true
+        },
+        {
+          "text": "A bronze serpent",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden altar",
+          "isCorrect": false
+        },
+        {
+          "text": "A carved lion",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses do with the two tablets when he saw the people's sin?",
+      "explanation": "Moses took hold of the two tablets, threw them out of his hands and broke them before their eyes.",
+      "bibleReference": "Deuteronomy 9:17",
+      "answers": [
+        {
+          "text": "He hid them in a cave on the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave them to Aaron to keep",
+          "isCorrect": false
+        },
+        {
+          "text": "He threw them down and broke them",
+          "isCorrect": true
+        },
+        {
+          "text": "He buried them under the mountain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides the people, for whom did Moses also pray because Yahweh was angry enough to destroy him?",
+      "explanation": "Yahweh was angry enough with Aaron to destroy him, and Moses prayed for Aaron at the same time.",
+      "bibleReference": "Deuteronomy 9:20",
+      "answers": [
+        {
+          "text": "Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron",
+          "isCorrect": true
+        },
+        {
+          "text": "Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Miriam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Moses throw the dust of the calf?",
+      "explanation": "Moses burned the calf, crushed it as fine as dust and threw its dust into the brook that came down out of the mountain.",
+      "bibleReference": "Deuteronomy 9:21",
+      "answers": [
+        {
+          "text": "Into the Red Sea behind them",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the fire on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the wind of the desert",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the brook from the mountain",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "From where did Yahweh send Israel, saying, \"Go up and possess the land\"?",
+      "explanation": "When Yahweh sent them from Kadesh Barnea to go up and possess the land, they rebelled and did not believe him.",
+      "bibleReference": "Deuteronomy 9:23",
+      "answers": [
+        {
+          "text": "Beth Peor",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "Kadesh Barnea",
+          "isCorrect": true
+        },
+        {
+          "text": "Beersheba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In his prayer, which servants did Moses ask Yahweh to remember?",
+      "explanation": "Moses prayed: \"Remember your servants, Abraham, Isaac, and Jacob,\" and asked Yahweh not to look at the people's stubbornness.",
+      "bibleReference": "Deuteronomy 9:26-27",
+      "answers": [
+        {
+          "text": "Abraham, Isaac, and Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "Noah, Shem, and Japheth",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph and his brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron and his sons",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

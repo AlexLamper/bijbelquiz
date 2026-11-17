@@ -1,0 +1,242 @@
+{
+  "title": "1 Kings Bible Quiz - Chapter 5",
+  "description": "Ten questions on 1 Kings 5: Solomon's agreement with Hiram of Tyre and the preparations to build the house of Yahweh.",
+  "slug": "1-kings-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who was Hiram, who sent his servants to Solomon?",
+      "explanation": "Hiram king of Tyre sent his servants to Solomon, for he had always loved David.",
+      "bibleReference": "1 Kings 5:1",
+      "answers": [
+        {
+          "text": "The king of Sidon",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Tyre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why, according to Solomon, could David not build a house for Yahweh's name?",
+      "explanation": "Solomon said David could not build the house because of the wars which were around him on every side.",
+      "bibleReference": "1 Kings 5:3",
+      "answers": [
+        {
+          "text": "Because he did not have enough gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Because of the wars around him on every side",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the people refused to work",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he had no cedar wood",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Solomon said no one among his people could cut timber like whom?",
+      "explanation": "Solomon wrote that there was nobody among them who knew how to cut timber like the Sidonians.",
+      "bibleReference": "1 Kings 5:6",
+      "answers": [
+        {
+          "text": "The Egyptians",
+          "isCorrect": false
+        },
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Sidonians",
+          "isCorrect": true
+        },
+        {
+          "text": "The Moabites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Hiram say when he heard Solomon's words?",
+      "explanation": "Hiram rejoiced greatly and said, \"Blessed is Yahweh today, who has given to David a wise son to rule over this great people.\"",
+      "bibleReference": "1 Kings 5:7",
+      "answers": [
+        {
+          "text": "\"Blessed is Yahweh today, who has given to David a wise son\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"I will not send my servants to the land of Israel\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let Solomon first pay me in silver and gold\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Tyre and Sidon will serve Israel forever\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Hiram plan to bring the timber to the place Solomon chose?",
+      "explanation": "Hiram's servants would bring the timber down from Lebanon to the sea and make it into rafts to go by sea.",
+      "bibleReference": "1 Kings 5:9",
+      "answers": [
+        {
+          "text": "On wagons pulled by oxen",
+          "isCorrect": false
+        },
+        {
+          "text": "With camel caravans through the desert",
+          "isCorrect": false
+        },
+        {
+          "text": "As rafts going by sea",
+          "isCorrect": true
+        },
+        {
+          "text": "Carried by slaves over the mountains",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Solomon give Hiram year by year?",
+      "explanation": "Solomon gave Hiram twenty thousand cors of wheat for his household and twenty cors of pure oil, year by year.",
+      "bibleReference": "1 Kings 5:11",
+      "answers": [
+        {
+          "text": "Gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Horses and chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "Cattle and sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "Wheat and pure oil",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Hiram and Solomon make together?",
+      "explanation": "There was peace between Hiram and Solomon, and the two of them made a treaty together.",
+      "bibleReference": "1 Kings 5:12",
+      "answers": [
+        {
+          "text": "A treaty",
+          "isCorrect": true
+        },
+        {
+          "text": "A joint army against Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "A marriage between their children",
+          "isCorrect": false
+        },
+        {
+          "text": "A new city by the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the time of the levy of workers divided?",
+      "explanation": "Solomon sent them to Lebanon ten thousand a month by courses: a month in Lebanon and two months at home.",
+      "bibleReference": "1 Kings 5:14",
+      "answers": [
+        {
+          "text": "Two months in Lebanon and one month at home",
+          "isCorrect": false
+        },
+        {
+          "text": "One month in Lebanon and two months at home",
+          "isCorrect": true
+        },
+        {
+          "text": "A whole year in Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "One week in Lebanon and one week at home",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was over the men subject to forced labor?",
+      "explanation": "The levy was sent to Lebanon in courses, and Adoniram was over the men subject to forced labor.",
+      "bibleReference": "1 Kings 5:14",
+      "answers": [
+        {
+          "text": "Benaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Zabud",
+          "isCorrect": false
+        },
+        {
+          "text": "Hiram",
+          "isCorrect": false
+        },
+        {
+          "text": "Adoniram",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were the large, costly stones cut for?",
+      "explanation": "The king commanded, and they cut out large, costly stones to lay the foundation of the house with worked stone.",
+      "bibleReference": "1 Kings 5:17",
+      "answers": [
+        {
+          "text": "To build the wall of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To lay the foundation of the house",
+          "isCorrect": true
+        },
+        {
+          "text": "To make the altar of burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "To pave the king's courtyard",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

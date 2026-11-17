@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 21",
+  "description": "Ten questions on 2 Samuel 21: the famine and the Gibeonites, Rizpah's vigil, Saul's bones, and the giants of Gath.",
+  "slug": "2-samuel-bible-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why was there a famine in the days of David, according to Yahweh?",
+      "explanation": "Yahweh said, \"It is for Saul, and for his bloody house, because he put the Gibeonites to death.\"",
+      "bibleReference": "2 Samuel 21:1",
+      "answers": [
+        {
+          "text": "Because David had counted the people",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Israel worshiped idols",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the ark was not in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Saul had put the Gibeonites to death",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Of which people were the Gibeonites a remnant?",
+      "explanation": "The Gibeonites were not of the children of Israel, but of the remnant of the Amorites.",
+      "bibleReference": "2 Samuel 21:2",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Amorites",
+          "isCorrect": true
+        },
+        {
+          "text": "The Moabites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Edomites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many of Saul's sons did the Gibeonites ask to be delivered to them?",
+      "explanation": "They said, \"Let seven men of his sons be delivered to us.\"",
+      "bibleReference": "2 Samuel 21:6",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the king spare because of Yahweh's oath between David and Jonathan?",
+      "explanation": "The king spared Mephibosheth, the son of Jonathan the son of Saul, because of Yahweh's oath between David and Jonathan.",
+      "bibleReference": "2 Samuel 21:7",
+      "answers": [
+        {
+          "text": "Mephibosheth the son of Jonathan",
+          "isCorrect": true
+        },
+        {
+          "text": "Armoni the son of Rizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "Adriel the son of Barzillai",
+          "isCorrect": false
+        },
+        {
+          "text": "Ishbibenob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When were the seven put to death?",
+      "explanation": "They were put to death in the days of harvest, in the first days, at the beginning of barley harvest.",
+      "bibleReference": "2 Samuel 21:9",
+      "answers": [
+        {
+          "text": "At the end of wheat harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "In the middle of winter",
+          "isCorrect": false
+        },
+        {
+          "text": "At the beginning of barley harvest",
+          "isCorrect": true
+        },
+        {
+          "text": "At the feast of tents",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Rizpah spread for herself on the rock?",
+      "explanation": "Rizpah the daughter of Aiah took sackcloth and spread it for herself on the rock.",
+      "bibleReference": "2 Samuel 21:10",
+      "answers": [
+        {
+          "text": "A tent",
+          "isCorrect": false
+        },
+        {
+          "text": "Her royal robe",
+          "isCorrect": false
+        },
+        {
+          "text": "A sheepskin",
+          "isCorrect": false
+        },
+        {
+          "text": "Sackcloth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did they bury the bones of Saul and Jonathan?",
+      "explanation": "They buried them in the country of Benjamin in Zela, in the tomb of Kish his father.",
+      "bibleReference": "2 Samuel 21:14",
+      "answers": [
+        {
+          "text": "In Zela, in the tomb of Kish",
+          "isCorrect": true
+        },
+        {
+          "text": "In Gibeah of Saul, by his house",
+          "isCorrect": false
+        },
+        {
+          "text": "In Bethlehem of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "In Ramah, in Samuel's tomb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did David's men say he should not go out to battle any more?",
+      "explanation": "They said, \"Don't go out with us to battle any more, so that you don't quench the lamp of Israel.\"",
+      "bibleReference": "2 Samuel 21:17",
+      "answers": [
+        {
+          "text": "Because he was too old to lead",
+          "isCorrect": false
+        },
+        {
+          "text": "So that he would not quench the lamp of Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Because Yahweh had forbidden it",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Joab wanted the glory",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Elhanan the son of Jaare-Oregim the Bethlehemite kill?",
+      "explanation": "Elhanan the son of Jaare-Oregim the Bethlehemite killed Goliath the Gittite's brother.",
+      "bibleReference": "2 Samuel 21:19",
+      "answers": [
+        {
+          "text": "Saph, a son of the giant",
+          "isCorrect": false
+        },
+        {
+          "text": "Ishbibenob the Philistine",
+          "isCorrect": false
+        },
+        {
+          "text": "Shobach the Syrian captain",
+          "isCorrect": false
+        },
+        {
+          "text": "Goliath the Gittite's brother",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who killed the man of great stature at Gath who had six fingers on every hand?",
+      "explanation": "When he defied Israel, Jonathan the son of Shimei, David's brother, killed him.",
+      "bibleReference": "2 Samuel 21:20-21",
+      "answers": [
+        {
+          "text": "Sibbecai the Hushathite",
+          "isCorrect": false
+        },
+        {
+          "text": "Abishai the son of Zeruiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonathan the son of Shimei",
+          "isCorrect": true
+        },
+        {
+          "text": "Joab the son of Zeruiah",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

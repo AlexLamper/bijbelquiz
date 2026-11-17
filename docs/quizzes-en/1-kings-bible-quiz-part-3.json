@@ -1,0 +1,242 @@
+{
+  "title": "1 Kings Bible Quiz - Chapter 3",
+  "description": "Ten questions on 1 Kings 3: Solomon asks God for an understanding heart and judges between two mothers.",
+  "slug": "1-kings-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Whose daughter did Solomon take as part of an alliance?",
+      "explanation": "Solomon made an alliance with Pharaoh king of Egypt and took Pharaoh's daughter.",
+      "bibleReference": "1 Kings 3:1",
+      "answers": [
+        {
+          "text": "Hiram's, the king of Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "Pharaoh's, the king of Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "The king of Moab's",
+          "isCorrect": false
+        },
+        {
+          "text": "Achish's, the king of Gath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the great high place where Solomon offered a thousand burnt offerings?",
+      "explanation": "The king went to Gibeon to sacrifice, for that was the great high place, and offered a thousand burnt offerings there.",
+      "bibleReference": "1 Kings 3:4",
+      "answers": [
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Yahweh appear to Solomon in Gibeon?",
+      "explanation": "In Gibeon, Yahweh appeared to Solomon in a dream by night and said, \"Ask for what I should give you.\"",
+      "bibleReference": "1 Kings 3:5",
+      "answers": [
+        {
+          "text": "In a dream by night",
+          "isCorrect": true
+        },
+        {
+          "text": "In a burning bush",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the prophet Nathan",
+          "isCorrect": false
+        },
+        {
+          "text": "In a pillar of cloud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Solomon describe himself in his answer to God?",
+      "explanation": "Solomon said, \"I am just a little child. I don't know how to go out or come in.\"",
+      "bibleReference": "1 Kings 3:7",
+      "answers": [
+        {
+          "text": "As a mighty warrior",
+          "isCorrect": false
+        },
+        {
+          "text": "As the wisest man in Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "As just a little child",
+          "isCorrect": true
+        },
+        {
+          "text": "As an old man near death",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Solomon ask God to give him?",
+      "explanation": "Solomon asked for an understanding heart to judge God's people, so that he could discern between good and evil.",
+      "bibleReference": "1 Kings 3:9",
+      "answers": [
+        {
+          "text": "A long life for himself",
+          "isCorrect": false
+        },
+        {
+          "text": "Riches for himself",
+          "isCorrect": false
+        },
+        {
+          "text": "The life of his enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "An understanding heart",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides wisdom, what did God also give Solomon that he had not asked for?",
+      "explanation": "God said, \"I have also given you that which you have not asked, both riches and honor.\"",
+      "bibleReference": "1 Kings 3:13",
+      "answers": [
+        {
+          "text": "Many sons and daughters",
+          "isCorrect": false
+        },
+        {
+          "text": "Riches and honor",
+          "isCorrect": true
+        },
+        {
+          "text": "Victory over Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "A great army of chariots",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the first woman say the other woman's child had died?",
+      "explanation": "The woman said, \"This woman's child died in the night, because she lay on it.\"",
+      "bibleReference": "1 Kings 3:19",
+      "answers": [
+        {
+          "text": "It fell sick with a fever",
+          "isCorrect": false
+        },
+        {
+          "text": "It fell from the roof",
+          "isCorrect": false
+        },
+        {
+          "text": "She lay on it in the night",
+          "isCorrect": true
+        },
+        {
+          "text": "It was taken by a stranger",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king call for when the two women argued?",
+      "explanation": "The king said, \"Get me a sword,\" and they brought a sword before him.",
+      "bibleReference": "1 Kings 3:24",
+      "answers": [
+        {
+          "text": "A sword",
+          "isCorrect": true
+        },
+        {
+          "text": "A scale",
+          "isCorrect": false
+        },
+        {
+          "text": "A scroll of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "A witness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did the king give the living child?",
+      "explanation": "The real mother said, \"Give her the living child, and in no way kill him!\" The king said to give her the living child, for she was his mother.",
+      "bibleReference": "1 Kings 3:26-27",
+      "answers": [
+        {
+          "text": "The woman who said, \"Divide him\"",
+          "isCorrect": false
+        },
+        {
+          "text": "The woman who said not to kill him",
+          "isCorrect": true
+        },
+        {
+          "text": "A nurse from the king's house",
+          "isCorrect": false
+        },
+        {
+          "text": "The priest who stood at the ark",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did all Israel fear the king after this judgment?",
+      "explanation": "All Israel heard of the judgment and feared the king, for they saw that the wisdom of God was in him, to do justice.",
+      "bibleReference": "1 Kings 3:28",
+      "answers": [
+        {
+          "text": "He had a great army of chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "He punished the lying woman with death",
+          "isCorrect": false
+        },
+        {
+          "text": "He had built the wall of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "They saw the wisdom of God was in him to do justice",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

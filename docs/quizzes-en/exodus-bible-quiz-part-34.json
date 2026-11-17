@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 34",
+  "description": "Ten questions on Exodus 34: the new stone tablets, the name of Yahweh proclaimed, the covenant renewed and Moses' shining face.",
+  "slug": "exodus-bible-quiz-part-34",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Yahweh tell Moses to chisel?",
+      "explanation": "Yahweh said: \"Chisel two stone tablets like the first.\"",
+      "bibleReference": "Exodus 34:1",
+      "answers": [
+        {
+          "text": "A new ark of acacia wood",
+          "isCorrect": false
+        },
+        {
+          "text": "A stone altar for the offerings",
+          "isCorrect": false
+        },
+        {
+          "text": "Two stone tablets like the first",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve pillars for the tribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What instruction was given about the flocks and herds?",
+      "explanation": "No one was to come up with Moses, and the flocks and herds were not to graze in front of that mountain.",
+      "bibleReference": "Exodus 34:3",
+      "answers": [
+        {
+          "text": "They had to be sacrificed",
+          "isCorrect": false
+        },
+        {
+          "text": "They had to be brought up the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "They had to be kept inside the camp for forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "They must not graze in front of the mountain",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which phrase did Yahweh use about himself when he passed by Moses?",
+      "explanation": "Yahweh proclaimed that he is a merciful and gracious God, slow to anger, and abundant in loving kindness and truth.",
+      "bibleReference": "Exodus 34:6",
+      "answers": [
+        {
+          "text": "Slow to anger",
+          "isCorrect": true
+        },
+        {
+          "text": "Quick to wrath",
+          "isCorrect": false
+        },
+        {
+          "text": "A God who forgets",
+          "isCorrect": false
+        },
+        {
+          "text": "A God far away",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses do when Yahweh passed by and proclaimed his name?",
+      "explanation": "Moses hurried and bowed his head toward the earth, and worshiped.",
+      "bibleReference": "Exodus 34:8",
+      "answers": [
+        {
+          "text": "He hid his face in his cloak",
+          "isCorrect": false
+        },
+        {
+          "text": "He bowed his head and worshiped",
+          "isCorrect": true
+        },
+        {
+          "text": "He ran back down the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "He cried out with a loud voice",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the Israelites to cut down?",
+      "explanation": "They were to break down the altars, dash in pieces the pillars, and cut down the Asherah poles of the people of the land.",
+      "bibleReference": "Exodus 34:13",
+      "answers": [
+        {
+          "text": "Their olive trees",
+          "isCorrect": false
+        },
+        {
+          "text": "Their vineyards",
+          "isCorrect": false
+        },
+        {
+          "text": "Their Asherah poles",
+          "isCorrect": true
+        },
+        {
+          "text": "Their city gates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Yahweh's name according to verse 14?",
+      "explanation": "They were to worship no other god, for Yahweh, whose name is Jealous, is a jealous God.",
+      "bibleReference": "Exodus 34:14",
+      "answers": [
+        {
+          "text": "Jealous",
+          "isCorrect": true
+        },
+        {
+          "text": "Mighty",
+          "isCorrect": false
+        },
+        {
+          "text": "Faithful",
+          "isCorrect": false
+        },
+        {
+          "text": "Shepherd",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what was the firstborn of a donkey to be redeemed?",
+      "explanation": "The firstborn of a donkey was to be redeemed with a lamb; if not, its neck was to be broken.",
+      "bibleReference": "Exodus 34:20",
+      "answers": [
+        {
+          "text": "With a goat",
+          "isCorrect": false
+        },
+        {
+          "text": "With a silver coin",
+          "isCorrect": false
+        },
+        {
+          "text": "With a dove",
+          "isCorrect": false
+        },
+        {
+          "text": "With a lamb",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In which times were they still to rest on the seventh day?",
+      "explanation": "They were to work six days and rest on the seventh: in plowing time and in harvest they were to rest.",
+      "bibleReference": "Exodus 34:21",
+      "answers": [
+        {
+          "text": "Only in winter",
+          "isCorrect": false
+        },
+        {
+          "text": "In plowing time and in harvest",
+          "isCorrect": true
+        },
+        {
+          "text": "Only in time of war",
+          "isCorrect": false
+        },
+        {
+          "text": "Only during the feasts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses do during the forty days and forty nights with Yahweh?",
+      "explanation": "He neither ate bread nor drank water, and he wrote on the tablets the words of the covenant, the ten commandments.",
+      "bibleReference": "Exodus 34:28",
+      "answers": [
+        {
+          "text": "He ate manna once a day",
+          "isCorrect": false
+        },
+        {
+          "text": "He drank only water",
+          "isCorrect": false
+        },
+        {
+          "text": "He ate and drank with the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "He neither ate bread nor drank water",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Moses put on his face after he finished speaking with the people?",
+      "explanation": "The skin of Moses' face shone, and when he was done speaking with them, he put a veil on his face.",
+      "bibleReference": "Exodus 34:33",
+      "answers": [
+        {
+          "text": "A golden mask",
+          "isCorrect": false
+        },
+        {
+          "text": "Ashes",
+          "isCorrect": false
+        },
+        {
+          "text": "A veil",
+          "isCorrect": true
+        },
+        {
+          "text": "Oil",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

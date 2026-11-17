@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 31",
+  "description": "Ten questions on Genesis 31: Jacob leaves Laban, Rachel takes the teraphim, and Jacob and Laban make a covenant at the heap.",
+  "slug": "genesis-bible-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Yahweh tell Jacob after Laban's attitude toward him changed?",
+      "explanation": "Laban's face was not toward Jacob as before, and Yahweh said, \"Return to the land of your fathers, and to your relatives, and I will be with you.\"",
+      "bibleReference": "Genesis 31:2-3",
+      "answers": [
+        {
+          "text": "Stay with Laban seven more years",
+          "isCorrect": false
+        },
+        {
+          "text": "Return to the land of his fathers",
+          "isCorrect": true
+        },
+        {
+          "text": "Go down into Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Build an altar at Mizpah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Jacob, how many times had Laban changed his wages?",
+      "explanation": "Jacob told Rachel and Leah, \"Your father has deceived me, and changed my wages ten times, but God didn't allow him to hurt me.\"",
+      "bibleReference": "Genesis 31:7",
+      "answers": [
+        {
+          "text": "Ten times",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven times",
+          "isCorrect": false
+        },
+        {
+          "text": "Three times",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty times",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the angel of God identify himself in Jacob's dream?",
+      "explanation": "In the dream he said, \"I am the God of Bethel, where you anointed a pillar, where you vowed a vow to me.\"",
+      "bibleReference": "Genesis 31:11-13",
+      "answers": [
+        {
+          "text": "As the God of Haran",
+          "isCorrect": false
+        },
+        {
+          "text": "As the God of Nahor",
+          "isCorrect": false
+        },
+        {
+          "text": "As the God of Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "As the God of Bethel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Rachel steal while Laban was shearing his sheep?",
+      "explanation": "Laban had gone to shear his sheep, and Rachel stole the teraphim that were her father's.",
+      "bibleReference": "Genesis 31:19",
+      "answers": [
+        {
+          "text": "Her father's silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "The best rams of Laban's flock",
+          "isCorrect": false
+        },
+        {
+          "text": "The teraphim that were her father's",
+          "isCorrect": true
+        },
+        {
+          "text": "Her sister Leah's jewelry",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day was Laban told that Jacob had fled?",
+      "explanation": "Laban was told on the third day that Jacob had fled.",
+      "bibleReference": "Genesis 31:22",
+      "answers": [
+        {
+          "text": "On the third day",
+          "isCorrect": true
+        },
+        {
+          "text": "On the first day",
+          "isCorrect": false
+        },
+        {
+          "text": "On the seventh day",
+          "isCorrect": false
+        },
+        {
+          "text": "On the tenth day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God warn Laban in a dream of the night?",
+      "explanation": "God came to Laban in a dream and said, \"Be careful that you don't speak to Jacob either good or bad.\"",
+      "bibleReference": "Genesis 31:24",
+      "answers": [
+        {
+          "text": "To make a covenant with Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "To bless Jacob's children",
+          "isCorrect": false
+        },
+        {
+          "text": "Not to speak to Jacob either good or bad",
+          "isCorrect": true
+        },
+        {
+          "text": "To return home at once",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Rachel hide the teraphim when Laban searched her tent?",
+      "explanation": "Rachel had put the teraphim in the camel's saddle and sat on them, and Laban felt around the tent but did not find them.",
+      "bibleReference": "Genesis 31:34",
+      "answers": [
+        {
+          "text": "Under an oak tree near the tents",
+          "isCorrect": false
+        },
+        {
+          "text": "In the camel's saddle, sitting on them",
+          "isCorrect": true
+        },
+        {
+          "text": "In Leah's tent among her things",
+          "isCorrect": false
+        },
+        {
+          "text": "In a pit among the sheep pens",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how many years did Jacob say he served Laban for his flock?",
+      "explanation": "Jacob said, \"I served you fourteen years for your two daughters, and six years for your flock.\"",
+      "bibleReference": "Genesis 31:41",
+      "answers": [
+        {
+          "text": "Fourteen years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Six years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jacob call the heap of stones?",
+      "explanation": "Laban called it Jegar Sahadutha, but Jacob called it Galeed.",
+      "bibleReference": "Genesis 31:47",
+      "answers": [
+        {
+          "text": "Galeed",
+          "isCorrect": true
+        },
+        {
+          "text": "Jegar Sahadutha",
+          "isCorrect": false
+        },
+        {
+          "text": "Mahanaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Peniel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Laban do early in the morning before he returned to his place?",
+      "explanation": "Early in the morning Laban rose up, kissed his sons and his daughters, and blessed them. Then he returned to his place.",
+      "bibleReference": "Genesis 31:55",
+      "answers": [
+        {
+          "text": "He searched Rachel's tent again",
+          "isCorrect": false
+        },
+        {
+          "text": "He offered a sacrifice on the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "He kissed his sons and daughters and blessed them",
+          "isCorrect": true
+        },
+        {
+          "text": "He took his daughters back home",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

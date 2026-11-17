@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 21",
+  "description": "Ten questions on Exodus 21: the laws about servants, violence, injuries and goring bulls.",
+  "slug": "exodus-bible-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How many years was a bought Hebrew servant to serve before going out free?",
+      "explanation": "A Hebrew servant was to serve six years, and in the seventh he would go out free without paying anything.",
+      "bibleReference": "Exodus 21:2",
+      "answers": [
+        {
+          "text": "Six years",
+          "isCorrect": true
+        },
+        {
+          "text": "Three years",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If a master gave his servant a wife and she bore him children, what happened when the servant went free?",
+      "explanation": "The wife and her children would be her master's, and the servant would go out by himself.",
+      "bibleReference": "Exodus 21:4",
+      "answers": [
+        {
+          "text": "They all went out with him",
+          "isCorrect": false
+        },
+        {
+          "text": "They were sold to another master",
+          "isCorrect": false
+        },
+        {
+          "text": "They paid a price to go with him",
+          "isCorrect": false
+        },
+        {
+          "text": "The wife and children stayed with the master",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what did the master bore the ear of a servant who chose to stay?",
+      "explanation": "The master brought him to the door or doorpost and bored his ear through with an awl, and he served him forever.",
+      "bibleReference": "Exodus 21:6",
+      "answers": [
+        {
+          "text": "A nail",
+          "isCorrect": false
+        },
+        {
+          "text": "An awl",
+          "isCorrect": true
+        },
+        {
+          "text": "A knife",
+          "isCorrect": false
+        },
+        {
+          "text": "A needle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which three things may a master not take away from a female servant he married when he takes another wife?",
+      "explanation": "He shall not diminish her food, her clothing, and her marital rights; if he does not do these three things, she may go free.",
+      "bibleReference": "Exodus 21:10-11",
+      "answers": [
+        {
+          "text": "Her land, her house and her cattle",
+          "isCorrect": false
+        },
+        {
+          "text": "Her silver, her gold and her jewels",
+          "isCorrect": false
+        },
+        {
+          "text": "Her food, her clothing and her marital rights",
+          "isCorrect": true
+        },
+        {
+          "text": "Her bread, her wine and her oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What would God appoint for someone who killed a man unintentionally?",
+      "explanation": "If it was unintentional, God says: 'I will appoint you a place where he shall flee.'",
+      "bibleReference": "Exodus 21:13",
+      "answers": [
+        {
+          "text": "A fine paid in silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Death by stoning",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years as a servant",
+          "isCorrect": false
+        },
+        {
+          "text": "A place where he could flee",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "If a man was injured in a quarrel but got up and walked with his staff, what did the one who struck him have to do?",
+      "explanation": "He was cleared, but he had to pay for the loss of the man's time and provide for his healing until he was thoroughly healed.",
+      "bibleReference": "Exodus 21:18-19",
+      "answers": [
+        {
+          "text": "Pay for his lost time and his healing",
+          "isCorrect": true
+        },
+        {
+          "text": "Pay him double what he lost",
+          "isCorrect": false
+        },
+        {
+          "text": "Give him an ox from his herd",
+          "isCorrect": false
+        },
+        {
+          "text": "Serve him as a servant for six years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must a man do if he strikes his servant's eye and destroys it?",
+      "explanation": "He shall let the servant go free for his eye's sake.",
+      "bibleReference": "Exodus 21:26",
+      "answers": [
+        {
+          "text": "Pay a fine to the judges",
+          "isCorrect": false
+        },
+        {
+          "text": "Give the servant a field",
+          "isCorrect": false
+        },
+        {
+          "text": "Let the servant go free",
+          "isCorrect": true
+        },
+        {
+          "text": "Be put to death",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to a bull that gores a man or a woman to death?",
+      "explanation": "The bull shall surely be stoned, and its meat shall not be eaten; the owner is not held responsible.",
+      "bibleReference": "Exodus 21:28",
+      "answers": [
+        {
+          "text": "It is sold and the money given to the family",
+          "isCorrect": false
+        },
+        {
+          "text": "It is stoned and its meat is not eaten",
+          "isCorrect": true
+        },
+        {
+          "text": "It is offered on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "It is given to the priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much silver was to be given to the master if a bull gored his servant?",
+      "explanation": "Thirty shekels of silver were to be given to their master, and the ox was to be stoned.",
+      "bibleReference": "Exodus 21:32",
+      "answers": [
+        {
+          "text": "Thirty shekels",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty shekels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If one man's bull kills another man's bull, what are they to do?",
+      "explanation": "They shall sell the live bull and divide its price, and they shall also divide the dead animal.",
+      "bibleReference": "Exodus 21:35",
+      "answers": [
+        {
+          "text": "Let the owner of the live bull keep both",
+          "isCorrect": false
+        },
+        {
+          "text": "Stone the live bull as well",
+          "isCorrect": false
+        },
+        {
+          "text": "Offer the live bull as a sacrifice",
+          "isCorrect": false
+        },
+        {
+          "text": "Sell the live bull and divide its price",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

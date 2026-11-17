@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 5",
+  "description": "Ten questions on Exodus 5: Pharaoh's refusal, bricks without straw and the complaint of Israel's officers.",
+  "slug": "exodus-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why did Moses and Aaron say Yahweh wanted Pharaoh to let his people go?",
+      "explanation": "They told Pharaoh that Yahweh says, \"Let my people go, that they may hold a feast to me in the wilderness.\"",
+      "bibleReference": "Exodus 5:1",
+      "answers": [
+        {
+          "text": "To hold a feast to him in the wilderness",
+          "isCorrect": true
+        },
+        {
+          "text": "To return to the land of Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "To rest from their work for one month",
+          "isCorrect": false
+        },
+        {
+          "text": "To build an altar in Goshen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Pharaoh answer the request?",
+      "explanation": "Pharaoh said, \"Who is Yahweh, that I should listen to his voice to let Israel go? I don't know Yahweh.\"",
+      "bibleReference": "Exodus 5:2",
+      "answers": [
+        {
+          "text": "\"Your God is welcome in my land.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go, but leave your children behind.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will ask my magicians first.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Who is Yahweh, that I should listen to his voice?\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How far into the wilderness did Moses and Aaron ask to go?",
+      "explanation": "They asked, \"Please let us go three days' journey into the wilderness, and sacrifice to Yahweh, our God.\"",
+      "bibleReference": "Exodus 5:3",
+      "answers": [
+        {
+          "text": "One day's journey",
+          "isCorrect": false
+        },
+        {
+          "text": "Three days' journey",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven days' journey",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days' journey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh command the taskmasters to stop giving the people?",
+      "explanation": "Pharaoh commanded, \"You shall no longer give the people straw to make brick, as before.\"",
+      "bibleReference": "Exodus 5:7",
+      "answers": [
+        {
+          "text": "Bread and water",
+          "isCorrect": false
+        },
+        {
+          "text": "Their daily wages",
+          "isCorrect": false
+        },
+        {
+          "text": "Straw to make brick",
+          "isCorrect": true
+        },
+        {
+          "text": "Tools for the fields",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many bricks were the people now required to make?",
+      "explanation": "Pharaoh said they must make the number of bricks they made before, without diminishing anything.",
+      "bibleReference": "Exodus 5:8",
+      "answers": [
+        {
+          "text": "The same number as before",
+          "isCorrect": true
+        },
+        {
+          "text": "Half as many as before",
+          "isCorrect": false
+        },
+        {
+          "text": "Twice as many as before",
+          "isCorrect": false
+        },
+        {
+          "text": "As many as they could",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people gather throughout Egypt in place of straw?",
+      "explanation": "The people were scattered throughout all the land of Egypt to gather stubble for straw.",
+      "bibleReference": "Exodus 5:12",
+      "answers": [
+        {
+          "text": "Reeds from the river",
+          "isCorrect": false
+        },
+        {
+          "text": "Palm leaves",
+          "isCorrect": false
+        },
+        {
+          "text": "Stubble",
+          "isCorrect": true
+        },
+        {
+          "text": "Sand from the desert",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were beaten when the brick quota was not met?",
+      "explanation": "The officers of the children of Israel, whom Pharaoh's taskmasters had set over them, were beaten.",
+      "bibleReference": "Exodus 5:14",
+      "answers": [
+        {
+          "text": "Moses and Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "The Egyptian taskmasters",
+          "isCorrect": false
+        },
+        {
+          "text": "Pharaoh's servants",
+          "isCorrect": false
+        },
+        {
+          "text": "The Israelite officers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh call the Israelites when their officers complained?",
+      "explanation": "Pharaoh said, \"You are idle! You are idle! Therefore you say, 'Let's go and sacrifice to Yahweh.'\"",
+      "bibleReference": "Exodus 5:17",
+      "answers": [
+        {
+          "text": "Rebellious",
+          "isCorrect": false
+        },
+        {
+          "text": "Idle",
+          "isCorrect": true
+        },
+        {
+          "text": "Foolish",
+          "isCorrect": false
+        },
+        {
+          "text": "Ungrateful",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the officers say Moses and Aaron had made them in Pharaoh's eyes?",
+      "explanation": "The officers said Moses and Aaron had made them \"a stench to be abhorred\" in the eyes of Pharaoh and his servants.",
+      "bibleReference": "Exodus 5:21",
+      "answers": [
+        {
+          "text": "A people without a name",
+          "isCorrect": false
+        },
+        {
+          "text": "Slaves forever",
+          "isCorrect": false
+        },
+        {
+          "text": "Enemies of the gods",
+          "isCorrect": false
+        },
+        {
+          "text": "A stench to be abhorred",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Moses say to Yahweh at the end of the chapter?",
+      "explanation": "Moses asked, \"Lord, why have you brought trouble on this people? Why is it that you have sent me?\"",
+      "bibleReference": "Exodus 5:22-23",
+      "answers": [
+        {
+          "text": "\"Why is it that you have sent me?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Send someone else in my place.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will speak to Pharaoh once more.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Thank you for rescuing your people.\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

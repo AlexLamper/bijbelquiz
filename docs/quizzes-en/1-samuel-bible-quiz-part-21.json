@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 21",
+  "description": "Ten questions on 1 Samuel 21: David at Nob with Ahimelech the priest and his flight to Achish of Gath.",
+  "slug": "1-samuel-bible-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "To which priest did David come at Nob?",
+      "explanation": "David came to Nob to Ahimelech the priest, who came to meet him trembling.",
+      "bibleReference": "1 Samuel 21:1",
+      "answers": [
+        {
+          "text": "Ahimelech",
+          "isCorrect": true
+        },
+        {
+          "text": "Abiathar",
+          "isCorrect": false
+        },
+        {
+          "text": "Hilkiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinehas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many loaves of bread did David ask the priest for?",
+      "explanation": "David said, \"Please give me five loaves of bread in my hand, or whatever is available.\"",
+      "bibleReference": "1 Samuel 21:3",
+      "answers": [
+        {
+          "text": "Two",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Five",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of bread did the priest say he had?",
+      "explanation": "The priest said, \"I have no common bread, but there is holy bread.\"",
+      "bibleReference": "1 Samuel 21:4",
+      "answers": [
+        {
+          "text": "Only barley bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Only holy bread",
+          "isCorrect": true
+        },
+        {
+          "text": "Fresh common bread",
+          "isCorrect": false
+        },
+        {
+          "text": "No bread at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which servant of Saul was at Nob that day?",
+      "explanation": "Doeg the Edomite, the best of Saul's herdsmen, was there that day, detained before Yahweh.",
+      "bibleReference": "1 Samuel 21:7",
+      "answers": [
+        {
+          "text": "Abner the son of Ner",
+          "isCorrect": false
+        },
+        {
+          "text": "Adriel the Meholathite",
+          "isCorrect": false
+        },
+        {
+          "text": "Palti the son of Laish",
+          "isCorrect": false
+        },
+        {
+          "text": "Doeg the Edomite",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did David say he had not brought his sword or weapons?",
+      "explanation": "David said he had not brought his sword or his weapons because the king's business required haste.",
+      "bibleReference": "1 Samuel 21:8",
+      "answers": [
+        {
+          "text": "Saul had taken them from him",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's business required haste",
+          "isCorrect": true
+        },
+        {
+          "text": "He had lost them in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "He had given them to Jonathan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the sword of Goliath kept?",
+      "explanation": "The priest said the sword of Goliath was there, wrapped in a cloth behind the ephod.",
+      "bibleReference": "1 Samuel 21:9",
+      "answers": [
+        {
+          "text": "Wrapped in a cloth behind the ephod",
+          "isCorrect": true
+        },
+        {
+          "text": "Buried under the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanging in the king's house",
+          "isCorrect": false
+        },
+        {
+          "text": "In the tent of Abner",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did David flee that day for fear of Saul?",
+      "explanation": "David fled that day for fear of Saul and went to Achish the king of Gath.",
+      "bibleReference": "1 Samuel 21:10",
+      "answers": [
+        {
+          "text": "The king of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Nahash the Ammonite",
+          "isCorrect": false
+        },
+        {
+          "text": "Samuel at Ramah",
+          "isCorrect": false
+        },
+        {
+          "text": "Achish the king of Gath",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the servants of Achish call David?",
+      "explanation": "The servants of Achish said, \"Isn't this David the king of the land?\"",
+      "bibleReference": "1 Samuel 21:11",
+      "answers": [
+        {
+          "text": "\"The son of Saul\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The prince of Judah\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The king of the land\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The shepherd of Bethlehem\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did David do when he pretended to be insane?",
+      "explanation": "David scribbled on the doors of the gate and let his spittle fall down on his beard.",
+      "bibleReference": "1 Samuel 21:13",
+      "answers": [
+        {
+          "text": "Scribbled on the gate doors and drooled on his beard",
+          "isCorrect": true
+        },
+        {
+          "text": "Tore his clothes and threw dust in the air",
+          "isCorrect": false
+        },
+        {
+          "text": "Ran through the streets shouting",
+          "isCorrect": false
+        },
+        {
+          "text": "Sat silently in ashes for three days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Achish ask his servants about David?",
+      "explanation": "Achish asked, \"Do I lack madmen, that you have brought this fellow to play the madman in my presence?\"",
+      "bibleReference": "1 Samuel 21:14-15",
+      "answers": [
+        {
+          "text": "\"Why is he not dead yet?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Where is his army?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Do I lack madmen?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Can he fight for us?\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

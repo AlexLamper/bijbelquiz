@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 11",
+  "description": "Ten questions on Genesis 11: the tower of Babel, the generations of Shem, and Terah's family on the way to Canaan.",
+  "slug": "genesis-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What was true of the whole earth at the start of the chapter?",
+      "explanation": "The whole earth was of one language and of one speech.",
+      "bibleReference": "Genesis 11:1",
+      "answers": [
+        {
+          "text": "It was ruled by one king",
+          "isCorrect": false
+        },
+        {
+          "text": "It was still covered with water",
+          "isCorrect": false
+        },
+        {
+          "text": "It was divided into many nations",
+          "isCorrect": false
+        },
+        {
+          "text": "It had one language and one speech",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did the people settle as they traveled from the east?",
+      "explanation": "As they traveled from the east, they found a plain in the land of Shinar, and they lived there.",
+      "bibleReference": "Genesis 11:2",
+      "answers": [
+        {
+          "text": "The city of Ur of the Chaldees",
+          "isCorrect": false
+        },
+        {
+          "text": "A plain in the land of Shinar",
+          "isCorrect": true
+        },
+        {
+          "text": "The land of Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountains of Ararat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the builders use for mortar?",
+      "explanation": "They had brick for stone, and they used tar for mortar.",
+      "bibleReference": "Genesis 11:3",
+      "answers": [
+        {
+          "text": "Tar",
+          "isCorrect": true
+        },
+        {
+          "text": "Clay",
+          "isCorrect": false
+        },
+        {
+          "text": "Lime",
+          "isCorrect": false
+        },
+        {
+          "text": "Mud and straw",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the people want to build a city and a tower?",
+      "explanation": "They said, \"Let's make a name for ourselves, lest we be scattered abroad on the surface of the whole earth.\"",
+      "bibleReference": "Genesis 11:4",
+      "answers": [
+        {
+          "text": "To worship the stars",
+          "isCorrect": false
+        },
+        {
+          "text": "To guard their cattle",
+          "isCorrect": false
+        },
+        {
+          "text": "To make a name for themselves",
+          "isCorrect": true
+        },
+        {
+          "text": "To store grain for a famine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh do to stop the builders?",
+      "explanation": "Yahweh confused their language so that they would not understand one another's speech, and scattered them abroad.",
+      "bibleReference": "Genesis 11:7-8",
+      "answers": [
+        {
+          "text": "He destroyed the tower with fire",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent another flood",
+          "isCorrect": false
+        },
+        {
+          "text": "He confused their language",
+          "isCorrect": true
+        },
+        {
+          "text": "He struck them with blindness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the city called?",
+      "explanation": "Its name was called Babel, because there Yahweh confused the language of all the earth.",
+      "bibleReference": "Genesis 11:9",
+      "answers": [
+        {
+          "text": "Haran",
+          "isCorrect": false
+        },
+        {
+          "text": "Nineveh",
+          "isCorrect": false
+        },
+        {
+          "text": "Calah",
+          "isCorrect": false
+        },
+        {
+          "text": "Babel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How old was Shem when he became the father of Arpachshad?",
+      "explanation": "Shem was one hundred years old when he became the father of Arpachshad, two years after the flood.",
+      "bibleReference": "Genesis 11:10",
+      "answers": [
+        {
+          "text": "Five hundred years old",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred years old",
+          "isCorrect": true
+        },
+        {
+          "text": "Thirty-five years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy years old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the son of Haran?",
+      "explanation": "Terah became the father of Abram, Nahor, and Haran. Haran became the father of Lot.",
+      "bibleReference": "Genesis 11:27",
+      "answers": [
+        {
+          "text": "Lot",
+          "isCorrect": true
+        },
+        {
+          "text": "Abram",
+          "isCorrect": false
+        },
+        {
+          "text": "Terah",
+          "isCorrect": false
+        },
+        {
+          "text": "Eber",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about Sarai, Abram's wife?",
+      "explanation": "The name of Abram's wife was Sarai. Sarai was barren; she had no child.",
+      "bibleReference": "Genesis 11:29-30",
+      "answers": [
+        {
+          "text": "She was barren and had no child",
+          "isCorrect": true
+        },
+        {
+          "text": "She was the wife of Nahor",
+          "isCorrect": false
+        },
+        {
+          "text": "She died in Ur of the Chaldees",
+          "isCorrect": false
+        },
+        {
+          "text": "She had two young sons",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Terah die?",
+      "explanation": "Terah set out from Ur of the Chaldees to go into Canaan, came to Haran and lived there. Terah died in Haran.",
+      "bibleReference": "Genesis 11:31-32",
+      "answers": [
+        {
+          "text": "In Ur of the Chaldees",
+          "isCorrect": false
+        },
+        {
+          "text": "In the land of Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "In the land of Shinar",
+          "isCorrect": false
+        },
+        {
+          "text": "In Haran",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

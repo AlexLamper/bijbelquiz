@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 4",
+  "description": "Ten questions on Exodus 4: the signs God gave Moses, Aaron as his spokesman and the return to Egypt.",
+  "slug": "exodus-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Moses' rod become when he threw it on the ground?",
+      "explanation": "Moses threw the rod on the ground, it became a snake, and Moses ran away from it.",
+      "bibleReference": "Exodus 4:3",
+      "answers": [
+        {
+          "text": "A tree",
+          "isCorrect": false
+        },
+        {
+          "text": "A flame of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A snake",
+          "isCorrect": true
+        },
+        {
+          "text": "A dove",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Moses' hand when he first took it out of his cloak?",
+      "explanation": "When he took his hand out of his cloak, it was leprous, as white as snow.",
+      "bibleReference": "Exodus 4:6",
+      "answers": [
+        {
+          "text": "It was covered in blood",
+          "isCorrect": false
+        },
+        {
+          "text": "It was leprous, as white as snow",
+          "isCorrect": true
+        },
+        {
+          "text": "It shone like the sun",
+          "isCorrect": false
+        },
+        {
+          "text": "It was withered and could not move",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What would happen to the river water Moses poured on the dry land?",
+      "explanation": "If the people did not believe the first two signs, Moses was to pour river water on the dry land, and it would become blood.",
+      "bibleReference": "Exodus 4:9",
+      "answers": [
+        {
+          "text": "It would turn into frogs",
+          "isCorrect": false
+        },
+        {
+          "text": "It would dry up at once",
+          "isCorrect": false
+        },
+        {
+          "text": "It would become sweet wine",
+          "isCorrect": false
+        },
+        {
+          "text": "It would become blood",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Moses say he was not fit to speak?",
+      "explanation": "Moses said he was not eloquent, for he was slow of speech and of a slow tongue.",
+      "bibleReference": "Exodus 4:10",
+      "answers": [
+        {
+          "text": "He was slow of speech and of a slow tongue",
+          "isCorrect": true
+        },
+        {
+          "text": "He did not speak the Egyptian language",
+          "isCorrect": false
+        },
+        {
+          "text": "He was too old to travel",
+          "isCorrect": false
+        },
+        {
+          "text": "He was a wanted man in Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did God appoint as Moses' spokesman to the people?",
+      "explanation": "God said Aaron, Moses' brother the Levite, could speak well and would be his spokesman to the people.",
+      "bibleReference": "Exodus 4:14-16",
+      "answers": [
+        {
+          "text": "Jethro, his father-in-law",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron, his brother",
+          "isCorrect": true
+        },
+        {
+          "text": "Joshua, his servant",
+          "isCorrect": false
+        },
+        {
+          "text": "Gershom, his son",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Yahweh tell Moses he could safely return to Egypt?",
+      "explanation": "Yahweh said to Moses in Midian, \"Go, return into Egypt; for all the men who sought your life are dead.\"",
+      "bibleReference": "Exodus 4:19",
+      "answers": [
+        {
+          "text": "Pharaoh had forgiven him",
+          "isCorrect": false
+        },
+        {
+          "text": "The Egyptian he killed had survived",
+          "isCorrect": false
+        },
+        {
+          "text": "The Israelites had already been freed",
+          "isCorrect": false
+        },
+        {
+          "text": "All the men who sought his life were dead",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was Moses to tell Pharaoh that Yahweh calls Israel?",
+      "explanation": "Moses was to tell Pharaoh, \"Yahweh says, Israel is my son, my firstborn.\"",
+      "bibleReference": "Exodus 4:22",
+      "answers": [
+        {
+          "text": "\"My son, my firstborn\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"My servant, my chosen one\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"My vine, my vineyard\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"My flock, my sheep\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Zipporah use to circumcise her son?",
+      "explanation": "Zipporah took a flint, cut off the foreskin of her son and cast it at Moses' feet.",
+      "bibleReference": "Exodus 4:25",
+      "answers": [
+        {
+          "text": "A sword",
+          "isCorrect": false
+        },
+        {
+          "text": "A bronze knife",
+          "isCorrect": false
+        },
+        {
+          "text": "A flint",
+          "isCorrect": true
+        },
+        {
+          "text": "A shepherd's staff",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Aaron meet Moses?",
+      "explanation": "Yahweh told Aaron to go into the wilderness to meet Moses, and he met him on God's mountain and kissed him.",
+      "bibleReference": "Exodus 4:27",
+      "answers": [
+        {
+          "text": "On God's mountain",
+          "isCorrect": true
+        },
+        {
+          "text": "At the river's bank",
+          "isCorrect": false
+        },
+        {
+          "text": "In Pharaoh's court",
+          "isCorrect": false
+        },
+        {
+          "text": "At a well in Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the people respond when Aaron spoke and did the signs?",
+      "explanation": "The people believed, and when they heard that Yahweh had seen their affliction, they bowed their heads and worshiped.",
+      "bibleReference": "Exodus 4:30-31",
+      "answers": [
+        {
+          "text": "They laughed at Moses and Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "They asked for a king",
+          "isCorrect": false
+        },
+        {
+          "text": "They told Pharaoh about the signs",
+          "isCorrect": false
+        },
+        {
+          "text": "They believed and worshiped",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

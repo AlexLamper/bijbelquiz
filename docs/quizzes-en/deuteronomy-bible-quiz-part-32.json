@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomy Bible Quiz - Chapter 32",
+  "description": "Ten questions on Deuteronomy 32: the song of Moses about the Rock, and Moses sent up Mount Nebo.",
+  "slug": "deuteronomy-bible-quiz-part-32",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "To what does Moses compare his doctrine at the start of the song?",
+      "explanation": "Verse 2 says: \"My doctrine will drop as the rain. My speech will condense as the dew.\"",
+      "bibleReference": "Deuteronomy 32:2",
+      "answers": [
+        {
+          "text": "A fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A river",
+          "isCorrect": false
+        },
+        {
+          "text": "The rain",
+          "isCorrect": true
+        },
+        {
+          "text": "The wind",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name does the song use for God, whose \"work is perfect\"?",
+      "explanation": "Verse 4 says: \"The Rock: his work is perfect, for all his ways are just.\"",
+      "bibleReference": "Deuteronomy 32:4",
+      "answers": [
+        {
+          "text": "The Rock",
+          "isCorrect": true
+        },
+        {
+          "text": "The Shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "The Fortress",
+          "isCorrect": false
+        },
+        {
+          "text": "The Lion",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the song, how did Yahweh keep Jacob in the wilderness?",
+      "explanation": "Verse 10 says he found him in a desert land, cared for him, and kept him as the apple of his eye.",
+      "bibleReference": "Deuteronomy 32:10",
+      "answers": [
+        {
+          "text": "As a lamp in the darkness",
+          "isCorrect": false
+        },
+        {
+          "text": "As the apple of his eye",
+          "isCorrect": true
+        },
+        {
+          "text": "As a seal on his hand",
+          "isCorrect": false
+        },
+        {
+          "text": "As a tent in the desert",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Yahweh's care is compared to which creature stirring up her nest?",
+      "explanation": "Verse 11 says: \"As an eagle that stirs up her nest, that flutters over her young.\"",
+      "bibleReference": "Deuteronomy 32:11",
+      "answers": [
+        {
+          "text": "A dove",
+          "isCorrect": false
+        },
+        {
+          "text": "A hen",
+          "isCorrect": false
+        },
+        {
+          "text": "A sparrow",
+          "isCorrect": false
+        },
+        {
+          "text": "An eagle",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jeshurun do after he grew fat?",
+      "explanation": "Verse 15 says Jeshurun grew fat and kicked, and abandoned God who made him.",
+      "bibleReference": "Deuteronomy 32:15",
+      "answers": [
+        {
+          "text": "He kicked and abandoned God who made him",
+          "isCorrect": true
+        },
+        {
+          "text": "He gave thanks and built an altar",
+          "isCorrect": false
+        },
+        {
+          "text": "He went back to Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "He divided the land among his sons",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did they sacrifice, according to the song?",
+      "explanation": "Verse 17 says they sacrificed to demons, not God, to new gods their fathers did not dread.",
+      "bibleReference": "Deuteronomy 32:17",
+      "answers": [
+        {
+          "text": "To the sun and the moon",
+          "isCorrect": false
+        },
+        {
+          "text": "To the kings of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "To demons, not God",
+          "isCorrect": true
+        },
+        {
+          "text": "To a golden calf",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How could one chase a thousand and two put ten thousand to flight?",
+      "explanation": "Verse 30 says this could only happen if their Rock had sold them and Yahweh had delivered them up.",
+      "bibleReference": "Deuteronomy 32:30",
+      "answers": [
+        {
+          "text": "They had better swords and many more chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "Their enemies were asleep in their tents at night",
+          "isCorrect": false
+        },
+        {
+          "text": "Their camp was on a high and fortified mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "Their Rock had sold them, and Yahweh had delivered them up",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "The song says \"their vine\" is of the vine of which place?",
+      "explanation": "Verse 32 says: \"For their vine is of the vine of Sodom, of the fields of Gomorrah.\"",
+      "bibleReference": "Deuteronomy 32:32",
+      "answers": [
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Sodom",
+          "isCorrect": true
+        },
+        {
+          "text": "Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Heshbon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Yahweh tell Moses to go up?",
+      "explanation": "Yahweh told Moses to go up into the mountain of Abarim, to Mount Nebo in the land of Moab, across from Jericho.",
+      "bibleReference": "Deuteronomy 32:49",
+      "answers": [
+        {
+          "text": "Mount Carmel near the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Sinai in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Nebo in the land of Moab",
+          "isCorrect": true
+        },
+        {
+          "text": "Mount Hermon in the north",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where, according to Yahweh, did Moses trespass against him?",
+      "explanation": "Verse 51 says it was at the waters of Meribah of Kadesh, in the wilderness of Zin.",
+      "bibleReference": "Deuteronomy 32:51",
+      "answers": [
+        {
+          "text": "At the waters of Meribah of Kadesh",
+          "isCorrect": true
+        },
+        {
+          "text": "At the shore of the Red Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "At the foot of Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "In the plains of Jericho",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

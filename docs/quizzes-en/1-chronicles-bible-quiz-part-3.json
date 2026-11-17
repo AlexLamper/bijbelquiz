@@ -1,0 +1,242 @@
+{
+  "title": "1 Chronicles Bible Quiz - Chapter 3",
+  "description": "Ten questions on 1 Chronicles 3: the sons of David born in Hebron and Jerusalem, and the line of kings from Solomon to the captivity.",
+  "slug": "1-chronicles-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who was David's firstborn, born to him in Hebron?",
+      "explanation": "The firstborn of David in Hebron was Amnon, of Ahinoam the Jezreelitess.",
+      "bibleReference": "1 Chronicles 3:1",
+      "answers": [
+        {
+          "text": "Amnon",
+          "isCorrect": true
+        },
+        {
+          "text": "Absalom",
+          "isCorrect": false
+        },
+        {
+          "text": "Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "Adonijah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Absalom's mother Maacah was the daughter of whom?",
+      "explanation": "The third son was Absalom, the son of Maacah the daughter of Talmai king of Geshur.",
+      "bibleReference": "1 Chronicles 3:2",
+      "answers": [
+        {
+          "text": "Ammiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Elnathan of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Talmai king of Geshur",
+          "isCorrect": true
+        },
+        {
+          "text": "Jeremiah of Libnah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did David reign in Hebron?",
+      "explanation": "Six sons were born to David in Hebron, and he reigned there seven years and six months.",
+      "bibleReference": "1 Chronicles 3:4",
+      "answers": [
+        {
+          "text": "Thirty-three years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years and six months",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Three years and six months",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the mother of Shimea, Shobab, Nathan, and Solomon?",
+      "explanation": "These four were born to David in Jerusalem, of Bathshua the daughter of Ammiel.",
+      "bibleReference": "1 Chronicles 3:5",
+      "answers": [
+        {
+          "text": "Abigail the Carmelitess",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahinoam the Jezreelitess",
+          "isCorrect": false
+        },
+        {
+          "text": "Maacah the daughter of Talmai",
+          "isCorrect": false
+        },
+        {
+          "text": "Bathshua the daughter of Ammiel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who is named as the sister of David's sons?",
+      "explanation": "All these were the sons of David, besides the sons of the concubines, and Tamar was their sister.",
+      "bibleReference": "1 Chronicles 3:9",
+      "answers": [
+        {
+          "text": "Shelomith",
+          "isCorrect": false
+        },
+        {
+          "text": "Tamar",
+          "isCorrect": true
+        },
+        {
+          "text": "Abital",
+          "isCorrect": false
+        },
+        {
+          "text": "Achsah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was Solomon's son?",
+      "explanation": "Verse 10 begins the line of kings: Solomon's son was Rehoboam.",
+      "bibleReference": "1 Chronicles 3:10",
+      "answers": [
+        {
+          "text": "Rehoboam",
+          "isCorrect": true
+        },
+        {
+          "text": "Jeroboam",
+          "isCorrect": false
+        },
+        {
+          "text": "Absalom",
+          "isCorrect": false
+        },
+        {
+          "text": "Nathan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the firstborn son of Josiah?",
+      "explanation": "The sons of Josiah were the firstborn Johanan, the second Jehoiakim, the third Zedekiah and the fourth Shallum.",
+      "bibleReference": "1 Chronicles 3:15",
+      "answers": [
+        {
+          "text": "Jehoiakim",
+          "isCorrect": false
+        },
+        {
+          "text": "Zedekiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Shallum",
+          "isCorrect": false
+        },
+        {
+          "text": "Johanan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which son of Jeconiah, \"the captive\", is named first?",
+      "explanation": "The sons of Jeconiah, the captive, begin with Shealtiel his son, followed by Malchiram, Pedaiah and others.",
+      "bibleReference": "1 Chronicles 3:17-18",
+      "answers": [
+        {
+          "text": "Pedaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Zerubbabel",
+          "isCorrect": false
+        },
+        {
+          "text": "Shealtiel",
+          "isCorrect": true
+        },
+        {
+          "text": "Malchiram",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were the sons of Pedaiah?",
+      "explanation": "The sons of Pedaiah were Zerubbabel and Shimei.",
+      "bibleReference": "1 Chronicles 3:19",
+      "answers": [
+        {
+          "text": "Zerubbabel and Shimei",
+          "isCorrect": true
+        },
+        {
+          "text": "Meshullam and Hananiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelatiah and Jeshaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Hattush and Igal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose seven sons were Hodaviah, Eliashib, Pelaiah, Akkub, Johanan, Delaiah, and Anani?",
+      "explanation": "The last verse lists these seven as the sons of Elioenai.",
+      "bibleReference": "1 Chronicles 3:24",
+      "answers": [
+        {
+          "text": "Neariah",
+          "isCorrect": false
+        },
+        {
+          "text": "Shemaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Elioenai",
+          "isCorrect": true
+        },
+        {
+          "text": "Hananiah",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

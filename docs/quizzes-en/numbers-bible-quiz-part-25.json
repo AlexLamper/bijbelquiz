@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 25",
+  "description": "Ten questions on Numbers 25: Israel joins himself to Baal Peor, Phinehas stops the plague, and Yahweh gives him a covenant of peace.",
+  "slug": "numbers-bible-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was Israel staying when the people began to play the prostitute with the daughters of Moab?",
+      "explanation": "\"Israel stayed in Shittim; and the people began to play the prostitute with the daughters of Moab.\"",
+      "bibleReference": "Numbers 25:1",
+      "answers": [
+        {
+          "text": "Kadesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "Jahaz",
+          "isCorrect": false
+        },
+        {
+          "text": "Shittim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom did Israel join himself, making Yahweh's anger burn?",
+      "explanation": "The people ate and bowed down to their gods, and Israel joined himself to Baal Peor.",
+      "bibleReference": "Numbers 25:2-3",
+      "answers": [
+        {
+          "text": "Chemosh",
+          "isCorrect": false
+        },
+        {
+          "text": "Baal Peor",
+          "isCorrect": true
+        },
+        {
+          "text": "The golden calf",
+          "isCorrect": false
+        },
+        {
+          "text": "Molech",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the people doing at the door of the Tent of Meeting when a man brought a Midianite woman?",
+      "explanation": "The man brought the Midianite woman in the sight of Moses and the whole congregation while they were weeping at the door of the Tent of Meeting.",
+      "bibleReference": "Numbers 25:6",
+      "answers": [
+        {
+          "text": "Singing a song",
+          "isCorrect": false
+        },
+        {
+          "text": "Offering a bull and a ram",
+          "isCorrect": false
+        },
+        {
+          "text": "Weeping",
+          "isCorrect": true
+        },
+        {
+          "text": "Counting the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who rose up from the congregation and took a spear in his hand?",
+      "explanation": "Phinehas, the son of Eleazar, the son of Aaron the priest, saw it, rose up and took a spear in his hand.",
+      "bibleReference": "Numbers 25:7",
+      "answers": [
+        {
+          "text": "Phinehas",
+          "isCorrect": true
+        },
+        {
+          "text": "Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many died by the plague?",
+      "explanation": "\"Those who died by the plague were twenty-four thousand.\"",
+      "bibleReference": "Numbers 25:9",
+      "answers": [
+        {
+          "text": "Fourteen thousand seven hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Three thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-four thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What covenant did Yahweh give to Phinehas?",
+      "explanation": "Yahweh said, \"Behold, I give to him my covenant of peace.\"",
+      "bibleReference": "Numbers 25:12",
+      "answers": [
+        {
+          "text": "The covenant of the rainbow",
+          "isCorrect": false
+        },
+        {
+          "text": "The covenant of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "The covenant of circumcision",
+          "isCorrect": false
+        },
+        {
+          "text": "My covenant of peace",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What would the covenant be to Phinehas and his offspring after him?",
+      "explanation": "It would be \"the covenant of an everlasting priesthood,\" because he was jealous for his God and made atonement for Israel.",
+      "bibleReference": "Numbers 25:13",
+      "answers": [
+        {
+          "text": "The covenant of an everlasting priesthood",
+          "isCorrect": true
+        },
+        {
+          "text": "A promise of a large inheritance of land",
+          "isCorrect": false
+        },
+        {
+          "text": "The right to be king over Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Leadership over the army",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which tribe did Zimri, the man who was slain, belong?",
+      "explanation": "Zimri, the son of Salu, was a prince of a fathers' house among the Simeonites.",
+      "bibleReference": "Numbers 25:14",
+      "answers": [
+        {
+          "text": "Reuben",
+          "isCorrect": false
+        },
+        {
+          "text": "Simeon",
+          "isCorrect": true
+        },
+        {
+          "text": "Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Levi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the name of the Midianite woman who was slain?",
+      "explanation": "The Midianite woman who was slain was Cozbi, the daughter of Zur, who was head of a fathers' house in Midian.",
+      "bibleReference": "Numbers 25:15",
+      "answers": [
+        {
+          "text": "Zipporah",
+          "isCorrect": false
+        },
+        {
+          "text": "Tirzah",
+          "isCorrect": false
+        },
+        {
+          "text": "Cozbi",
+          "isCorrect": true
+        },
+        {
+          "text": "Salu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh command Moses to do to the Midianites at the end of the chapter?",
+      "explanation": "Yahweh said, \"Harass the Midianites, and strike them,\" because they had deceived Israel in the matter of Peor.",
+      "bibleReference": "Numbers 25:16-18",
+      "answers": [
+        {
+          "text": "Make peace with them",
+          "isCorrect": false
+        },
+        {
+          "text": "Harass them and strike them",
+          "isCorrect": true
+        },
+        {
+          "text": "Take wives from them",
+          "isCorrect": false
+        },
+        {
+          "text": "Let them pass through the land",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

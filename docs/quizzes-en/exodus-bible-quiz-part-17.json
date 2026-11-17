@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 17",
+  "description": "Ten questions on Exodus 17: water from the rock at Horeb and the battle with Amalek at Rephidim.",
+  "slug": "exodus-bible-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did the congregation encamp when there was no water to drink?",
+      "explanation": "They traveled from the wilderness of Sin and encamped in Rephidim, but there was no water for the people to drink.",
+      "bibleReference": "Exodus 17:1",
+      "answers": [
+        {
+          "text": "Marah",
+          "isCorrect": false
+        },
+        {
+          "text": "Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "Rephidim",
+          "isCorrect": true
+        },
+        {
+          "text": "Succoth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses tell Yahweh the people were almost ready to do?",
+      "explanation": "Moses cried to Yahweh: 'What shall I do with these people? They are almost ready to stone me.'",
+      "bibleReference": "Exodus 17:4",
+      "answers": [
+        {
+          "text": "To make Aaron their leader",
+          "isCorrect": false
+        },
+        {
+          "text": "To stone him",
+          "isCorrect": true
+        },
+        {
+          "text": "To go and fight Amalek",
+          "isCorrect": false
+        },
+        {
+          "text": "To build an altar to other gods",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Yahweh say he would stand before Moses on the rock?",
+      "explanation": "Yahweh said: 'I will stand before you there on the rock in Horeb. You shall strike the rock, and water will come out of it.'",
+      "bibleReference": "Exodus 17:6",
+      "answers": [
+        {
+          "text": "In Seir",
+          "isCorrect": false
+        },
+        {
+          "text": "In Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "In Pisgah",
+          "isCorrect": false
+        },
+        {
+          "text": "In Horeb",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What names did Moses give the place where water came from the rock?",
+      "explanation": "He called the place Massah and Meribah, because the people quarreled and tested Yahweh.",
+      "bibleReference": "Exodus 17:7",
+      "answers": [
+        {
+          "text": "Massah and Meribah",
+          "isCorrect": true
+        },
+        {
+          "text": "Marah and Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "Etham and Succoth",
+          "isCorrect": false
+        },
+        {
+          "text": "Migdol and Baal Zephon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came and fought with Israel in Rephidim?",
+      "explanation": "Amalek came and fought with Israel in Rephidim.",
+      "bibleReference": "Exodus 17:8",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Egyptians",
+          "isCorrect": false
+        },
+        {
+          "text": "Amalek",
+          "isCorrect": true
+        },
+        {
+          "text": "Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Moses tell to choose men and go out to fight?",
+      "explanation": "Moses said to Joshua: 'Choose men for us, and go out, fight with Amalek.'",
+      "bibleReference": "Exodus 17:9",
+      "answers": [
+        {
+          "text": "Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened when Moses held up his hand?",
+      "explanation": "When Moses held up his hand, Israel prevailed; when he let it down, Amalek prevailed.",
+      "bibleReference": "Exodus 17:11",
+      "answers": [
+        {
+          "text": "Amalek prevailed",
+          "isCorrect": false
+        },
+        {
+          "text": "Israel prevailed",
+          "isCorrect": true
+        },
+        {
+          "text": "The sun stood still",
+          "isCorrect": false
+        },
+        {
+          "text": "Water came from the rock",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who held up Moses' hands when they grew heavy?",
+      "explanation": "Aaron and Hur held up his hands, one on each side, and his hands were steady until sunset.",
+      "bibleReference": "Exodus 17:12",
+      "answers": [
+        {
+          "text": "Aaron and Hur",
+          "isCorrect": true
+        },
+        {
+          "text": "Joshua and Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron and Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Moses to write in a book as a memorial?",
+      "explanation": "Yahweh told Moses to write that he would utterly blot out the memory of Amalek from under the sky.",
+      "bibleReference": "Exodus 17:14",
+      "answers": [
+        {
+          "text": "The names of all who fought",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would blot out the memory of Amalek",
+          "isCorrect": true
+        },
+        {
+          "text": "The way from Egypt to Rephidim",
+          "isCorrect": false
+        },
+        {
+          "text": "The words spoken at the rock",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did Moses give the altar he built?",
+      "explanation": "Moses built an altar and called its name 'Yahweh our Banner'.",
+      "bibleReference": "Exodus 17:15",
+      "answers": [
+        {
+          "text": "Yahweh will provide",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh our Shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh our Banner",
+          "isCorrect": true
+        },
+        {
+          "text": "Yahweh is peace",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

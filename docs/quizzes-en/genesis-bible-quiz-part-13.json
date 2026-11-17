@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 13",
+  "description": "Ten questions on Genesis 13: Abram and Lot separate, Lot moves toward Sodom and Yahweh promises Abram the land.",
+  "slug": "genesis-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Out of which land did Abram go up with his wife, all he had, and Lot?",
+      "explanation": "Genesis 13 opens with Abram going up out of Egypt into the South, together with his wife, all that he had, and Lot.",
+      "bibleReference": "Genesis 13:1",
+      "answers": [
+        {
+          "text": "Haran",
+          "isCorrect": false
+        },
+        {
+          "text": "Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "Shinar",
+          "isCorrect": false
+        },
+        {
+          "text": "Damascus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the altar that Abram returned to on his journey from the South?",
+      "explanation": "Abram went as far as Bethel, to the place where his tent had first been, between Bethel and Ai, where he had made an altar. There he called on Yahweh's name.",
+      "bibleReference": "Genesis 13:3-4",
+      "answers": [
+        {
+          "text": "Between Dan and Beersheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Between Hebron and Zoar",
+          "isCorrect": false
+        },
+        {
+          "text": "Between Shechem and Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Between Bethel and Ai",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Between whom was there strife in Genesis 13?",
+      "explanation": "There was strife between the herdsmen of Abram's livestock and the herdsmen of Lot's livestock.",
+      "bibleReference": "Genesis 13:7",
+      "answers": [
+        {
+          "text": "Abram's and Lot's herdsmen",
+          "isCorrect": true
+        },
+        {
+          "text": "Sarai and Lot's wife",
+          "isCorrect": false
+        },
+        {
+          "text": "Abram and the king of Sodom",
+          "isCorrect": false
+        },
+        {
+          "text": "Lot and the Canaanites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which peoples were living in the land at that time?",
+      "explanation": "Verse 7 says the Canaanites and the Perizzites lived in the land at that time.",
+      "bibleReference": "Genesis 13:7",
+      "answers": [
+        {
+          "text": "The Hittites and the Jebusites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Philistines and the Moabites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Canaanites and the Perizzites",
+          "isCorrect": true
+        },
+        {
+          "text": "The Amorites and the Hivites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What reason did Abram give Lot for why there should be no strife between them?",
+      "explanation": "Abram said, \"Please, let there be no strife between you and me... for we are relatives.\"",
+      "bibleReference": "Genesis 13:8",
+      "answers": [
+        {
+          "text": "The land belonged to Abram",
+          "isCorrect": false
+        },
+        {
+          "text": "They were relatives",
+          "isCorrect": true
+        },
+        {
+          "text": "Yahweh had forbidden it",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of the land would hear of it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Lot see when he looked at all the plain of the Jordan?",
+      "explanation": "Lot saw that the plain of the Jordan was well-watered everywhere, like the garden of Yahweh and like the land of Egypt.",
+      "bibleReference": "Genesis 13:10",
+      "answers": [
+        {
+          "text": "It was well-watered everywhere",
+          "isCorrect": true
+        },
+        {
+          "text": "It was dry and rocky",
+          "isCorrect": false
+        },
+        {
+          "text": "It was full of wild animals",
+          "isCorrect": false
+        },
+        {
+          "text": "It was covered with vineyards",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which direction did Lot travel after choosing the plain of the Jordan?",
+      "explanation": "Lot chose the Plain of the Jordan for himself and traveled east, and he and Abram separated.",
+      "bibleReference": "Genesis 13:11",
+      "answers": [
+        {
+          "text": "West",
+          "isCorrect": false
+        },
+        {
+          "text": "North",
+          "isCorrect": false
+        },
+        {
+          "text": "South",
+          "isCorrect": false
+        },
+        {
+          "text": "East",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "As far as which city did Lot move his tent?",
+      "explanation": "Lot lived in the cities of the plain and moved his tent as far as Sodom.",
+      "bibleReference": "Genesis 13:12",
+      "answers": [
+        {
+          "text": "Zoar",
+          "isCorrect": false
+        },
+        {
+          "text": "Gomorrah",
+          "isCorrect": false
+        },
+        {
+          "text": "Sodom",
+          "isCorrect": true
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what did Yahweh compare Abram's offspring in Genesis 13?",
+      "explanation": "Yahweh said He would make Abram's offspring as the dust of the earth, so that if a man could count the dust, the offspring could also be counted.",
+      "bibleReference": "Genesis 13:16",
+      "answers": [
+        {
+          "text": "The dust of the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "The stars of the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "The sand of the seashore",
+          "isCorrect": false
+        },
+        {
+          "text": "The trees of the forest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Abram go to live and build an altar to Yahweh at the end of the chapter?",
+      "explanation": "Abram moved his tent and lived by the oaks of Mamre, which are in Hebron, and built an altar there to Yahweh.",
+      "bibleReference": "Genesis 13:18",
+      "answers": [
+        {
+          "text": "Near the altar at Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "By the oaks of Mamre in Hebron",
+          "isCorrect": true
+        },
+        {
+          "text": "In the wilderness of Beersheba",
+          "isCorrect": false
+        },
+        {
+          "text": "By the well on the way to Shur",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

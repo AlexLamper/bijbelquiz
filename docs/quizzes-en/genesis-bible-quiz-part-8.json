@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 8",
+  "description": "Ten questions on Genesis 8: the waters go down, the raven and the dove, and Noah's altar after the flood.",
+  "slug": "genesis-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did God make to pass over the earth so that the waters subsided?",
+      "explanation": "God remembered Noah and the animals, and God made a wind to pass over the earth. The waters subsided.",
+      "bibleReference": "Genesis 8:1",
+      "answers": [
+        {
+          "text": "A fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A wind",
+          "isCorrect": true
+        },
+        {
+          "text": "A great light",
+          "isCorrect": false
+        },
+        {
+          "text": "A flock of birds",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the ship come to rest?",
+      "explanation": "The ship rested in the seventh month, on the seventeenth day of the month, on Ararat's mountains.",
+      "bibleReference": "Genesis 8:4",
+      "answers": [
+        {
+          "text": "On the mountains of Havilah",
+          "isCorrect": false
+        },
+        {
+          "text": "Near Ur of the Chaldees",
+          "isCorrect": false
+        },
+        {
+          "text": "On Ararat's mountains",
+          "isCorrect": true
+        },
+        {
+          "text": "In the land of Nod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What became visible on the first day of the tenth month?",
+      "explanation": "The waters receded continually until the tenth month. On the first day of that month the tops of the mountains were visible.",
+      "bibleReference": "Genesis 8:5",
+      "answers": [
+        {
+          "text": "A rainbow in the cloud",
+          "isCorrect": false
+        },
+        {
+          "text": "The ruins of the cities",
+          "isCorrect": false
+        },
+        {
+          "text": "The sun and the moon",
+          "isCorrect": false
+        },
+        {
+          "text": "The tops of the mountains",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which bird did Noah send out first?",
+      "explanation": "At the end of forty days Noah opened the window of the ship and sent out a raven, which went back and forth until the waters were dried up.",
+      "bibleReference": "Genesis 8:6-7",
+      "answers": [
+        {
+          "text": "A raven",
+          "isCorrect": true
+        },
+        {
+          "text": "A dove",
+          "isCorrect": false
+        },
+        {
+          "text": "An eagle",
+          "isCorrect": false
+        },
+        {
+          "text": "A sparrow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the dove return to the ship the first time?",
+      "explanation": "The dove found no place to rest her foot, for the waters were on the surface of the whole earth.",
+      "bibleReference": "Genesis 8:9",
+      "answers": [
+        {
+          "text": "She found no place to rest her foot",
+          "isCorrect": true
+        },
+        {
+          "text": "She was afraid of the raven",
+          "isCorrect": false
+        },
+        {
+          "text": "She could not find food",
+          "isCorrect": false
+        },
+        {
+          "text": "Noah called her back",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was in the dove's mouth when she came back in the evening?",
+      "explanation": "The dove came back at evening with a freshly plucked olive leaf in her mouth, so Noah knew the waters were abated.",
+      "bibleReference": "Genesis 8:11",
+      "answers": [
+        {
+          "text": "A leaf from a fig tree",
+          "isCorrect": false
+        },
+        {
+          "text": "A small smooth stone",
+          "isCorrect": false
+        },
+        {
+          "text": "A piece of dry bread",
+          "isCorrect": false
+        },
+        {
+          "text": "A freshly plucked olive leaf",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened when Noah sent out the dove after waiting another seven days?",
+      "explanation": "Noah waited another seven days and sent out the dove, and she didn't return to him any more.",
+      "bibleReference": "Genesis 8:12",
+      "answers": [
+        {
+          "text": "She came back with a twig",
+          "isCorrect": false
+        },
+        {
+          "text": "She came back with the raven",
+          "isCorrect": false
+        },
+        {
+          "text": "She didn't return to him any more",
+          "isCorrect": true
+        },
+        {
+          "text": "She stayed on the roof of the ship",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Noah build after he went out of the ship?",
+      "explanation": "Noah built an altar to Yahweh and offered burnt offerings of every clean animal and clean bird on it.",
+      "bibleReference": "Genesis 8:20",
+      "answers": [
+        {
+          "text": "A house for his family",
+          "isCorrect": false
+        },
+        {
+          "text": "An altar to Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "A city for his sons",
+          "isCorrect": false
+        },
+        {
+          "text": "A tower to the sky",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say in his heart after smelling the pleasant aroma?",
+      "explanation": "Yahweh said in his heart that he would not again curse the ground any more for man's sake.",
+      "bibleReference": "Genesis 8:21",
+      "answers": [
+        {
+          "text": "He would send another flood",
+          "isCorrect": false
+        },
+        {
+          "text": "He would not again curse the ground",
+          "isCorrect": true
+        },
+        {
+          "text": "He would take away the animals",
+          "isCorrect": false
+        },
+        {
+          "text": "He would make the earth new",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which pair is named among the things that will not cease while the earth remains?",
+      "explanation": "While the earth remains, seed time and harvest, cold and heat, summer and winter, and day and night will not cease.",
+      "bibleReference": "Genesis 8:22",
+      "answers": [
+        {
+          "text": "Rain and drought",
+          "isCorrect": false
+        },
+        {
+          "text": "Joy and sorrow",
+          "isCorrect": false
+        },
+        {
+          "text": "Seed time and harvest",
+          "isCorrect": true
+        },
+        {
+          "text": "War and peace",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

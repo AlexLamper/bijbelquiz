@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 19",
+  "description": "Ten questions on Numbers 19: the red heifer, the water for impurity and the cleansing of those who touched the dead.",
+  "slug": "numbers-bible-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What kind of heifer were the children of Israel to bring?",
+      "explanation": "They were to bring a red heifer without spot, with no defect, which was never yoked.",
+      "bibleReference": "Numbers 19:2",
+      "answers": [
+        {
+          "text": "A white heifer that had borne a calf",
+          "isCorrect": false
+        },
+        {
+          "text": "A black heifer from the flock of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "A spotted heifer that had been yoked once",
+          "isCorrect": false
+        },
+        {
+          "text": "A red heifer without spot that was never yoked",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To which priest was the heifer to be given?",
+      "explanation": "The heifer was to be given to Eleazar the priest, who would bring her outside the camp.",
+      "bibleReference": "Numbers 19:3",
+      "answers": [
+        {
+          "text": "Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": true
+        },
+        {
+          "text": "Phinehas",
+          "isCorrect": false
+        },
+        {
+          "text": "Ithamar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many times was the heifer's blood to be sprinkled toward the front of the Tent of Meeting?",
+      "explanation": "Eleazar was to take some of her blood with his finger and sprinkle it toward the front of the Tent of Meeting seven times.",
+      "bibleReference": "Numbers 19:4",
+      "answers": [
+        {
+          "text": "Three times",
+          "isCorrect": false
+        },
+        {
+          "text": "Once",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven times",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve times",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the priest cast into the middle of the burning heifer?",
+      "explanation": "The priest was to take cedar wood, hyssop and scarlet and cast it into the middle of the burning of the heifer.",
+      "bibleReference": "Numbers 19:6",
+      "answers": [
+        {
+          "text": "Cedar wood, hyssop and scarlet",
+          "isCorrect": true
+        },
+        {
+          "text": "Myrrh, frankincense and salt",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive oil, wine and flour",
+          "isCorrect": false
+        },
+        {
+          "text": "Gold, silver and bronze",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were the ashes of the heifer to be laid up?",
+      "explanation": "A clean man was to gather the ashes and lay them up outside of the camp in a clean place.",
+      "bibleReference": "Numbers 19:9",
+      "answers": [
+        {
+          "text": "Inside the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "Beside the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside the camp in a clean place",
+          "isCorrect": true
+        },
+        {
+          "text": "In the tent of the high priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which days was someone who touched a dead body to purify himself with water?",
+      "explanation": "He was to purify himself with water on the third day, and on the seventh day he would be clean.",
+      "bibleReference": "Numbers 19:11-12",
+      "answers": [
+        {
+          "text": "Only on the first day after touching it",
+          "isCorrect": false
+        },
+        {
+          "text": "On the second day and on the eighth day",
+          "isCorrect": false
+        },
+        {
+          "text": "Every day for a whole month",
+          "isCorrect": false
+        },
+        {
+          "text": "On the third day and on the seventh day",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What would happen to someone who touched a dead person and did not purify himself?",
+      "explanation": "He defiled Yahweh's tabernacle, and that soul was to be cut off from Israel.",
+      "bibleReference": "Numbers 19:13",
+      "answers": [
+        {
+          "text": "He would be cut off from Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "He would be clean after one day",
+          "isCorrect": false
+        },
+        {
+          "text": "He would pay five shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "He would be made a servant of the Levites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When a man died in a tent, which vessels were unclean?",
+      "explanation": "Every open vessel which had no covering bound on it was unclean.",
+      "bibleReference": "Numbers 19:14-15",
+      "answers": [
+        {
+          "text": "Only the vessels made of gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Every open vessel with no covering bound on it",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the empty clay vessels in the tent",
+          "isCorrect": false
+        },
+        {
+          "text": "No vessels at all, only the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was poured on the ashes in a vessel to make the water for the unclean?",
+      "explanation": "For the unclean they were to take of the ashes of the sin offering, and running water was poured on them in a vessel.",
+      "bibleReference": "Numbers 19:17",
+      "answers": [
+        {
+          "text": "Wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Running water",
+          "isCorrect": true
+        },
+        {
+          "text": "Blood of a lamb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about whatever an unclean person touches?",
+      "explanation": "Whatever the unclean person touches is unclean, and the soul that touches it is unclean until evening.",
+      "bibleReference": "Numbers 19:22",
+      "answers": [
+        {
+          "text": "It must be burned",
+          "isCorrect": false
+        },
+        {
+          "text": "It shall be unclean",
+          "isCorrect": true
+        },
+        {
+          "text": "It becomes holy",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be given to the priest",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

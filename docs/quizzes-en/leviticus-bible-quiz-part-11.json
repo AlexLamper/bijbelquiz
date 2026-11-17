@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 11",
+  "description": "Ten questions on Leviticus 11: the clean and unclean land animals, water creatures, birds, insects and creeping things.",
+  "slug": "leviticus-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which land animals may Israel eat?",
+      "explanation": "Whatever parts the hoof, is cloven-footed, and chews the cud among the animals may be eaten.",
+      "bibleReference": "Leviticus 11:3",
+      "answers": [
+        {
+          "text": "Those that eat only grass and green plants",
+          "isCorrect": false
+        },
+        {
+          "text": "Those that part the hoof and chew the cud",
+          "isCorrect": true
+        },
+        {
+          "text": "Those that live together in large herds",
+          "isCorrect": false
+        },
+        {
+          "text": "Those that have neither claws nor paws",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why is the camel unclean?",
+      "explanation": "The camel chews the cud but doesn't have a parted hoof, so it is unclean.",
+      "bibleReference": "Leviticus 11:4",
+      "answers": [
+        {
+          "text": "It has a parted hoof but doesn't chew the cud",
+          "isCorrect": false
+        },
+        {
+          "text": "It eats unclean food from the ground",
+          "isCorrect": false
+        },
+        {
+          "text": "It carries heavy loads for its owner",
+          "isCorrect": false
+        },
+        {
+          "text": "It chews the cud but doesn't have a parted hoof",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why is the pig unclean?",
+      "explanation": "The pig has a split hoof and is cloven-footed, but doesn't chew the cud.",
+      "bibleReference": "Leviticus 11:7",
+      "answers": [
+        {
+          "text": "It doesn't chew the cud",
+          "isCorrect": true
+        },
+        {
+          "text": "It doesn't have a split hoof",
+          "isCorrect": false
+        },
+        {
+          "text": "It lives in the water",
+          "isCorrect": false
+        },
+        {
+          "text": "It walks on its paws",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which creatures in the waters may be eaten?",
+      "explanation": "Whatever has fins and scales in the waters, in the seas and in the rivers, may be eaten.",
+      "bibleReference": "Leviticus 11:9",
+      "answers": [
+        {
+          "text": "Only fish from the rivers",
+          "isCorrect": false
+        },
+        {
+          "text": "Anything that swims",
+          "isCorrect": false
+        },
+        {
+          "text": "Whatever has fins and scales",
+          "isCorrect": true
+        },
+        {
+          "text": "Only creatures with shells",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these is named in the list of birds that must not be eaten?",
+      "explanation": "The list of birds to detest includes the stork, any kind of heron, the hoopoe and the bat.",
+      "bibleReference": "Leviticus 11:19",
+      "answers": [
+        {
+          "text": "The stork",
+          "isCorrect": true
+        },
+        {
+          "text": "The dove",
+          "isCorrect": false
+        },
+        {
+          "text": "The quail",
+          "isCorrect": false
+        },
+        {
+          "text": "The sparrow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these is named among the winged creeping things that may be eaten?",
+      "explanation": "Of the winged creeping things, any kind of locust, katydid, cricket and grasshopper may be eaten.",
+      "bibleReference": "Leviticus 11:22",
+      "answers": [
+        {
+          "text": "The hornet",
+          "isCorrect": false
+        },
+        {
+          "text": "The butterfly",
+          "isCorrect": false
+        },
+        {
+          "text": "The cricket",
+          "isCorrect": true
+        },
+        {
+          "text": "The beetle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long is someone unclean after touching the carcass of an unclean animal?",
+      "explanation": "Whoever touches their carcass shall be unclean until the evening.",
+      "bibleReference": "Leviticus 11:24",
+      "answers": [
+        {
+          "text": "For seven full days",
+          "isCorrect": false
+        },
+        {
+          "text": "For three whole days",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the next Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the evening",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What must be done with an earthen vessel into which a dead creeping thing falls?",
+      "explanation": "Every earthen vessel into which any of them falls, with all that is in it, is unclean; it must be broken.",
+      "bibleReference": "Leviticus 11:33",
+      "answers": [
+        {
+          "text": "It must be washed twice",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be broken",
+          "isCorrect": true
+        },
+        {
+          "text": "It must be given to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be filled with oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What stays clean even if part of an unclean carcass falls into it?",
+      "explanation": "A spring or a cistern in which water is gathered shall be clean, but what touches the carcass is unclean.",
+      "bibleReference": "Leviticus 11:36",
+      "answers": [
+        {
+          "text": "A spring or a cistern",
+          "isCorrect": true
+        },
+        {
+          "text": "A clay jar of water",
+          "isCorrect": false
+        },
+        {
+          "text": "An oven",
+          "isCorrect": false
+        },
+        {
+          "text": "A wooden bowl of food",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What reason does Yahweh give for why Israel must be holy?",
+      "explanation": "Yahweh says, 'Sanctify yourselves therefore, and be holy; for I am holy.'",
+      "bibleReference": "Leviticus 11:44-45",
+      "answers": [
+        {
+          "text": "\"For the land is holy\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"For the priests are holy\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"For the Sabbath is holy\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"For I am holy\"",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 13",
+  "description": "Ten questions on 2 Samuel 13: Amnon and Tamar, Absalom's revenge, and his flight to Geshur.",
+  "slug": "2-samuel-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who was Amnon's friend, described as a very subtle man?",
+      "explanation": "Amnon had a friend whose name was Jonadab, the son of Shimeah, David's brother, and he was a very subtle man.",
+      "bibleReference": "2 Samuel 13:3",
+      "answers": [
+        {
+          "text": "Ahithophel the Gilonite",
+          "isCorrect": false
+        },
+        {
+          "text": "Hushai the Archite",
+          "isCorrect": false
+        },
+        {
+          "text": "Ittai the Gittite",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonadab the son of Shimeah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jonadab tell Amnon to do?",
+      "explanation": "Jonadab said, \"Lay down on your bed, and pretend to be sick.\"",
+      "bibleReference": "2 Samuel 13:5",
+      "answers": [
+        {
+          "text": "Go to the king and ask for a feast",
+          "isCorrect": false
+        },
+        {
+          "text": "Lie down on his bed and pretend to be sick",
+          "isCorrect": true
+        },
+        {
+          "text": "Send Tamar a letter",
+          "isCorrect": false
+        },
+        {
+          "text": "Go out to the sheep shearers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Tamar make in Amnon's sight?",
+      "explanation": "Tamar took dough, kneaded it, made cakes in his sight, and baked the cakes.",
+      "bibleReference": "2 Samuel 13:8",
+      "answers": [
+        {
+          "text": "Stew of lentils",
+          "isCorrect": false
+        },
+        {
+          "text": "Roasted lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "Cakes",
+          "isCorrect": true
+        },
+        {
+          "text": "Bread of barley with honey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of garment was Tamar wearing?",
+      "explanation": "She had a garment of various colors on her, for the king's daughters who were virgins dressed in such robes.",
+      "bibleReference": "2 Samuel 13:18",
+      "answers": [
+        {
+          "text": "A garment of various colors",
+          "isCorrect": true
+        },
+        {
+          "text": "A garment of sackcloth",
+          "isCorrect": false
+        },
+        {
+          "text": "A linen ephod",
+          "isCorrect": false
+        },
+        {
+          "text": "A purple royal mantle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Tamar put on her head as she went away crying?",
+      "explanation": "Tamar put ashes on her head and tore her garment of various colors.",
+      "bibleReference": "2 Samuel 13:19",
+      "answers": [
+        {
+          "text": "Oil",
+          "isCorrect": false
+        },
+        {
+          "text": "A veil",
+          "isCorrect": false
+        },
+        {
+          "text": "Ashes",
+          "isCorrect": true
+        },
+        {
+          "text": "A crown",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Absalom have sheep shearers when he invited all the king's sons?",
+      "explanation": "Absalom had sheep shearers in Baal Hazor, which is beside Ephraim.",
+      "bibleReference": "2 Samuel 13:23",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Beersheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "Baal Hazor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "When did Absalom command his servants to strike Amnon?",
+      "explanation": "Absalom said, \"Mark now, when Amnon's heart is merry with wine; and when I tell you, 'Strike Amnon,' then kill him.\"",
+      "bibleReference": "2 Samuel 13:28",
+      "answers": [
+        {
+          "text": "When Amnon's heart was merry with wine",
+          "isCorrect": true
+        },
+        {
+          "text": "While Amnon was asleep in his tent",
+          "isCorrect": false
+        },
+        {
+          "text": "When Amnon went out to the field",
+          "isCorrect": false
+        },
+        {
+          "text": "At the sound of a trumpet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what did the king's sons ride as they fled?",
+      "explanation": "All the king's sons arose, and every man got up on his mule, and fled.",
+      "bibleReference": "2 Samuel 13:29",
+      "answers": [
+        {
+          "text": "Their chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "Their mules",
+          "isCorrect": true
+        },
+        {
+          "text": "Their camels",
+          "isCorrect": false
+        },
+        {
+          "text": "Their horses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Absalom flee?",
+      "explanation": "Absalom fled and went to Talmai the son of Ammihur, king of Geshur.",
+      "bibleReference": "2 Samuel 13:37",
+      "answers": [
+        {
+          "text": "Hanun the king of Ammon",
+          "isCorrect": false
+        },
+        {
+          "text": "Achish the king of Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Hiram the king of Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "Talmai, king of Geshur",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long was Absalom in Geshur?",
+      "explanation": "Absalom fled, went to Geshur, and was there three years.",
+      "bibleReference": "2 Samuel 13:38",
+      "answers": [
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten years",
+          "isCorrect": false
+        },
+        {
+          "text": "Three years",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

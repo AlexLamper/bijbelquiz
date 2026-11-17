@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 16",
+  "description": "Ten questions on 2 Samuel 16: Ziba's gifts, Shimei's curses, and Ahithophel's counsel to Absalom.",
+  "slug": "2-samuel-bible-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who met David with saddled donkeys loaded with bread, raisins, summer fruits and wine?",
+      "explanation": "Ziba the servant of Mephibosheth met him with a couple of donkeys saddled, carrying bread, raisins, summer fruits, and wine.",
+      "bibleReference": "2 Samuel 16:1",
+      "answers": [
+        {
+          "text": "Barzillai the Gileadite",
+          "isCorrect": false
+        },
+        {
+          "text": "Ziba the servant of Mephibosheth",
+          "isCorrect": true
+        },
+        {
+          "text": "Shimei the son of Gera",
+          "isCorrect": false
+        },
+        {
+          "text": "Hushai the Archite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Ziba say Mephibosheth was staying?",
+      "explanation": "Ziba said, \"Behold, he is staying in Jerusalem.\"",
+      "bibleReference": "2 Samuel 16:3",
+      "answers": [
+        {
+          "text": "In Lodebar",
+          "isCorrect": false
+        },
+        {
+          "text": "In Geshur",
+          "isCorrect": false
+        },
+        {
+          "text": "In Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did David give to Ziba?",
+      "explanation": "The king said to Ziba, \"Behold, all that belongs to Mephibosheth is yours.\"",
+      "bibleReference": "2 Samuel 16:4",
+      "answers": [
+        {
+          "text": "All that belonged to Mephibosheth",
+          "isCorrect": true
+        },
+        {
+          "text": "A place at the king's table",
+          "isCorrect": false
+        },
+        {
+          "text": "A captaincy in the army",
+          "isCorrect": false
+        },
+        {
+          "text": "The city of Bahurim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came out at Bahurim and cursed David?",
+      "explanation": "At Bahurim a man of the family of Saul's house came out, whose name was Shimei, the son of Gera.",
+      "bibleReference": "2 Samuel 16:5",
+      "answers": [
+        {
+          "text": "Sheba the son of Bichri",
+          "isCorrect": false
+        },
+        {
+          "text": "Ziba",
+          "isCorrect": false
+        },
+        {
+          "text": "Shimei the son of Gera",
+          "isCorrect": true
+        },
+        {
+          "text": "Abner the son of Ner",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Shimei call David as he cursed him?",
+      "explanation": "Shimei said, \"Be gone, be gone, you man of blood, and wicked fellow!\"",
+      "bibleReference": "2 Samuel 16:7",
+      "answers": [
+        {
+          "text": "A foreigner",
+          "isCorrect": false
+        },
+        {
+          "text": "A shepherd boy",
+          "isCorrect": false
+        },
+        {
+          "text": "A false prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "A man of blood",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Abishai want to do to Shimei?",
+      "explanation": "Abishai said, \"Why should this dead dog curse my lord the king? Please let me go over and take off his head.\"",
+      "bibleReference": "2 Samuel 16:9",
+      "answers": [
+        {
+          "text": "Throw him into prison",
+          "isCorrect": false
+        },
+        {
+          "text": "Go over and take off his head",
+          "isCorrect": true
+        },
+        {
+          "text": "Bring him to Absalom",
+          "isCorrect": false
+        },
+        {
+          "text": "Drive him out of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides cursing and throwing stones, what else did Shimei throw at David?",
+      "explanation": "Shimei cursed as he went, threw stones at him, and threw dust.",
+      "bibleReference": "2 Samuel 16:13",
+      "answers": [
+        {
+          "text": "Ashes",
+          "isCorrect": false
+        },
+        {
+          "text": "Arrows",
+          "isCorrect": false
+        },
+        {
+          "text": "Dust",
+          "isCorrect": true
+        },
+        {
+          "text": "Water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Hushai say when he came to Absalom?",
+      "explanation": "Hushai said to Absalom, \"Long live the king! Long live the king!\"",
+      "bibleReference": "2 Samuel 16:16",
+      "answers": [
+        {
+          "text": "\"Long live the king!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"I have come to spy on you.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Your father has sent me.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Peace be to this house.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was a tent spread for Absalom when he followed Ahithophel's counsel?",
+      "explanation": "They spread a tent for Absalom on the top of the house, and he went in to his father's concubines in the sight of all Israel.",
+      "bibleReference": "2 Samuel 16:21-22",
+      "answers": [
+        {
+          "text": "In the field of Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "On the top of the house",
+          "isCorrect": true
+        },
+        {
+          "text": "By the gate of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Beside the brook Kidron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is the counsel of Ahithophel in those days described?",
+      "explanation": "The counsel of Ahithophel was as if a man inquired at the inner sanctuary of God.",
+      "bibleReference": "2 Samuel 16:23",
+      "answers": [
+        {
+          "text": "As if a man inquired at the inner sanctuary of God",
+          "isCorrect": true
+        },
+        {
+          "text": "As the empty words of a fool in the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "As the foolish counsel of a young child",
+          "isCorrect": false
+        },
+        {
+          "text": "As a passing dream in the night season",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 10",
+  "description": "Ten questions on Leviticus 10: the strange fire of Nadab and Abihu, the rules for the priests and the question of the sin offering.",
+  "slug": "leviticus-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which sons of Aaron offered strange fire before Yahweh?",
+      "explanation": "Nadab and Abihu, the sons of Aaron, put fire and incense in their censers and offered strange fire before Yahweh, which he had not commanded them.",
+      "bibleReference": "Leviticus 10:1",
+      "answers": [
+        {
+          "text": "Nadab and Abihu",
+          "isCorrect": true
+        },
+        {
+          "text": "Eleazar and Ithamar",
+          "isCorrect": false
+        },
+        {
+          "text": "Mishael and Elzaphan",
+          "isCorrect": false
+        },
+        {
+          "text": "Hophni and Phinehas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the two sons who offered strange fire?",
+      "explanation": "Fire came out from before Yahweh and devoured them, and they died before Yahweh.",
+      "bibleReference": "Leviticus 10:2",
+      "answers": [
+        {
+          "text": "They were sent out of the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "They became leprous",
+          "isCorrect": false
+        },
+        {
+          "text": "Fire from Yahweh devoured them and they died",
+          "isCorrect": true
+        },
+        {
+          "text": "They lost their priesthood but lived",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Aaron respond when Moses told him what Yahweh had spoken?",
+      "explanation": "After Moses' words about Yahweh showing himself holy, Aaron held his peace.",
+      "bibleReference": "Leviticus 10:3",
+      "answers": [
+        {
+          "text": "He tore his clothes",
+          "isCorrect": false
+        },
+        {
+          "text": "He cried out loudly",
+          "isCorrect": false
+        },
+        {
+          "text": "He left the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "He held his peace",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did Moses call to carry the dead men out of the camp?",
+      "explanation": "Moses called Mishael and Elzaphan, the sons of Uzziel the uncle of Aaron, to carry their brothers out of the camp.",
+      "bibleReference": "Leviticus 10:4",
+      "answers": [
+        {
+          "text": "Eleazar and Ithamar",
+          "isCorrect": false
+        },
+        {
+          "text": "Mishael and Elzaphan",
+          "isCorrect": true
+        },
+        {
+          "text": "Joshua and Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were Aaron, Eleazar and Ithamar told not to do in their mourning?",
+      "explanation": "Moses told them not to let the hair of their heads go loose and not to tear their clothes, so that they would not die.",
+      "bibleReference": "Leviticus 10:6",
+      "answers": [
+        {
+          "text": "Eat any bread or drink any water that day",
+          "isCorrect": false
+        },
+        {
+          "text": "Speak to the people of the congregation",
+          "isCorrect": false
+        },
+        {
+          "text": "Light the lamps of the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "Let their hair go loose or tear their clothes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were Aaron and his sons not to drink when they went into the Tent of Meeting?",
+      "explanation": "Yahweh said they were not to drink wine or strong drink when they went into the Tent of Meeting, or they would die.",
+      "bibleReference": "Leviticus 10:8-9",
+      "answers": [
+        {
+          "text": "Water from the basin",
+          "isCorrect": false
+        },
+        {
+          "text": "Wine or strong drink",
+          "isCorrect": true
+        },
+        {
+          "text": "Milk or honey",
+          "isCorrect": false
+        },
+        {
+          "text": "The blood of the offerings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Between what were the priests to make a distinction?",
+      "explanation": "They were to make a distinction between the holy and the common, and between the unclean and the clean.",
+      "bibleReference": "Leviticus 10:10",
+      "answers": [
+        {
+          "text": "The rich and the poor, the old and the young",
+          "isCorrect": false
+        },
+        {
+          "text": "Israelites and strangers, servants and masters",
+          "isCorrect": false
+        },
+        {
+          "text": "The holy and the common, the unclean and the clean",
+          "isCorrect": true
+        },
+        {
+          "text": "Men and women, firstborn and younger sons",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides Aaron and his sons, who could eat the waved breast and the heaved thigh?",
+      "explanation": "Aaron, his sons and his daughters with him were to eat the waved breast and heaved thigh in a clean place.",
+      "bibleReference": "Leviticus 10:14",
+      "answers": [
+        {
+          "text": "His daughters",
+          "isCorrect": true
+        },
+        {
+          "text": "His servants",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Any stranger in the camp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had happened to the goat of the sin offering when Moses inquired about it?",
+      "explanation": "Moses diligently inquired about the goat of the sin offering, and it had been burned; he was angry with Eleazar and Ithamar.",
+      "bibleReference": "Leviticus 10:16",
+      "answers": [
+        {
+          "text": "It had been stolen",
+          "isCorrect": false
+        },
+        {
+          "text": "It had run away",
+          "isCorrect": false
+        },
+        {
+          "text": "It had been given to the people",
+          "isCorrect": false
+        },
+        {
+          "text": "It had been burned",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Moses respond to Aaron's explanation at the end of the chapter?",
+      "explanation": "When Moses heard Aaron's answer, it was pleasing in his sight.",
+      "bibleReference": "Leviticus 10:19-20",
+      "answers": [
+        {
+          "text": "He punished Eleazar and Ithamar",
+          "isCorrect": false
+        },
+        {
+          "text": "He went to ask Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "It was pleasing in his sight",
+          "isCorrect": true
+        },
+        {
+          "text": "He ordered a new sin offering",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

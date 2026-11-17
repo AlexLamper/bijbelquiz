@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 11",
+  "description": "Ten questions on Numbers 11: the fire at Taberah, the complaint about manna, the seventy elders, Eldad and Medad, and the quails at Kibroth Hattaavah.",
+  "slug": "numbers-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why was the place called Taberah?",
+      "explanation": "When the people complained, Yahweh's fire burned among them, so the place was called Taberah.",
+      "bibleReference": "Numbers 11:1-3",
+      "answers": [
+        {
+          "text": "Because the people found water there",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Yahweh's fire burned among them",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the people buried their dead there",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the ark rested there",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these foods did the people say they remembered eating in Egypt?",
+      "explanation": "The people remembered the fish, cucumbers, melons, leeks, onions and garlic they ate in Egypt.",
+      "bibleReference": "Numbers 11:5",
+      "answers": [
+        {
+          "text": "Figs",
+          "isCorrect": false
+        },
+        {
+          "text": "Pomegranates",
+          "isCorrect": false
+        },
+        {
+          "text": "Grapes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cucumbers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the manna like?",
+      "explanation": "The manna was like coriander seed, and it looked like bdellium.",
+      "bibleReference": "Numbers 11:7",
+      "answers": [
+        {
+          "text": "Coriander seed",
+          "isCorrect": true
+        },
+        {
+          "text": "Barley grain",
+          "isCorrect": false
+        },
+        {
+          "text": "Snowflakes",
+          "isCorrect": false
+        },
+        {
+          "text": "Mustard seed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many men of the elders of Israel did Yahweh tell Moses to gather?",
+      "explanation": "Yahweh told Moses to gather seventy men of the elders of Israel and bring them to the Tent of Meeting.",
+      "bibleReference": "Numbers 11:16",
+      "answers": [
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long did Yahweh say the people would eat meat?",
+      "explanation": "Yahweh said they would eat meat not just one, two, five, ten or twenty days, but a whole month, until it came out at their nostrils.",
+      "bibleReference": "Numbers 11:19-20",
+      "answers": [
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "A whole month",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many men on foot did Moses say were among the people?",
+      "explanation": "Moses said the people among whom he was were six hundred thousand men on foot.",
+      "bibleReference": "Numbers 11:21",
+      "answers": [
+        {
+          "text": "Six hundred thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventy thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "One million",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two men prophesied in the camp instead of going out to the Tent?",
+      "explanation": "Eldad and Medad remained in the camp; the Spirit rested on them and they prophesied in the camp.",
+      "bibleReference": "Numbers 11:26",
+      "answers": [
+        {
+          "text": "Nadab and Abihu",
+          "isCorrect": false
+        },
+        {
+          "text": "Eldad and Medad",
+          "isCorrect": true
+        },
+        {
+          "text": "Joshua and Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Hur and Bezalel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who said, \"My lord Moses, forbid them!\"?",
+      "explanation": "Joshua the son of Nun, the servant of Moses, answered, \"My lord Moses, forbid them!\"",
+      "bibleReference": "Numbers 11:28",
+      "answers": [
+        {
+          "text": "Aaron the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "A young man from the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua the son of Nun",
+          "isCorrect": true
+        },
+        {
+          "text": "Hobab the son of Reuel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the wind from Yahweh bring from the sea?",
+      "explanation": "A wind from Yahweh went out and brought quails from the sea, and let them fall around the camp.",
+      "bibleReference": "Numbers 11:31",
+      "answers": [
+        {
+          "text": "Locusts",
+          "isCorrect": false
+        },
+        {
+          "text": "Quails",
+          "isCorrect": true
+        },
+        {
+          "text": "Fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Rain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why was the place called Kibroth Hattaavah?",
+      "explanation": "The place was called Kibroth Hattaavah because there they buried the people who lusted.",
+      "bibleReference": "Numbers 11:34",
+      "answers": [
+        {
+          "text": "Because the quails fell all around the camp there",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Moses prayed to Yahweh there",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the seventy elders prophesied there",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they buried the people who lusted there",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

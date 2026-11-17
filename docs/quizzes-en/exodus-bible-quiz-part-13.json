@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 13",
+  "description": "Ten questions on Exodus 13: the firstborn set apart, the feast of unleavened bread and the pillars of cloud and fire.",
+  "slug": "exodus-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Yahweh tell Moses to sanctify to him?",
+      "explanation": "Yahweh said to sanctify to him all the firstborn among the children of Israel, both of man and of animal, for it is his.",
+      "bibleReference": "Exodus 13:2",
+      "answers": [
+        {
+          "text": "All the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "The tabernacle",
+          "isCorrect": false
+        },
+        {
+          "text": "All the firstborn",
+          "isCorrect": true
+        },
+        {
+          "text": "The seventh day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which month did the people go out of Egypt?",
+      "explanation": "Moses told the people: 'Today you go out in the month Abib.'",
+      "bibleReference": "Exodus 13:4",
+      "answers": [
+        {
+          "text": "The month Abib",
+          "isCorrect": true
+        },
+        {
+          "text": "The month Ziv",
+          "isCorrect": false
+        },
+        {
+          "text": "The month Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "The month Elul",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is the land Yahweh swore to give them described?",
+      "explanation": "It is described as the land of the Canaanite, Hittite, Amorite, Hivite and Jebusite, a land flowing with milk and honey.",
+      "bibleReference": "Exodus 13:5",
+      "answers": [
+        {
+          "text": "A land full of gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "A land covered with olive groves",
+          "isCorrect": false
+        },
+        {
+          "text": "A land rich in wheat and barley",
+          "isCorrect": false
+        },
+        {
+          "text": "A land flowing with milk and honey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were the people to tell their son on the day of the feast?",
+      "explanation": "They were to tell their son: 'It is because of that which Yahweh did for me when I came out of Egypt.'",
+      "bibleReference": "Exodus 13:8",
+      "answers": [
+        {
+          "text": "It is a custom handed down from our fathers of old",
+          "isCorrect": false
+        },
+        {
+          "text": "Because of what Yahweh did for me when I came out of Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "It is to remember the day our fathers came to Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "It is to mark the start of the barley harvest each year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what was every firstborn donkey to be redeemed?",
+      "explanation": "Every firstborn of a donkey was to be redeemed with a lamb.",
+      "bibleReference": "Exodus 13:13",
+      "answers": [
+        {
+          "text": "A lamb",
+          "isCorrect": true
+        },
+        {
+          "text": "A dove",
+          "isCorrect": false
+        },
+        {
+          "text": "A calf",
+          "isCorrect": false
+        },
+        {
+          "text": "Five shekels of silver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was to be done to a firstborn donkey that was not redeemed?",
+      "explanation": "If the firstborn donkey was not redeemed, its neck was to be broken.",
+      "bibleReference": "Exodus 13:13",
+      "answers": [
+        {
+          "text": "It was sold to a foreigner",
+          "isCorrect": false
+        },
+        {
+          "text": "It was released into the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "Its neck was to be broken",
+          "isCorrect": true
+        },
+        {
+          "text": "It was given to Aaron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did God not lead the people by the way of the land of the Philistines?",
+      "explanation": "Although that way was near, God said: 'Lest perhaps the people change their minds when they see war, and they return to Egypt.'",
+      "bibleReference": "Exodus 13:17",
+      "answers": [
+        {
+          "text": "Because the way was too long",
+          "isCorrect": false
+        },
+        {
+          "text": "Because there was no water on that road",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Pharaoh's army guarded it",
+          "isCorrect": false
+        },
+        {
+          "text": "Lest they see war and return to Egypt",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which way did God lead the people instead?",
+      "explanation": "God led the people around by the way of the wilderness by the Red Sea, and they went up armed out of Egypt.",
+      "bibleReference": "Exodus 13:18",
+      "answers": [
+        {
+          "text": "Along the banks of the Nile",
+          "isCorrect": false
+        },
+        {
+          "text": "By the way of the wilderness by the Red Sea",
+          "isCorrect": true
+        },
+        {
+          "text": "Through the land of Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Along the coast of the Great Sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses take with him out of Egypt?",
+      "explanation": "Moses took the bones of Joseph with him, because Joseph had made the children of Israel swear to carry up his bones.",
+      "bibleReference": "Exodus 13:19",
+      "answers": [
+        {
+          "text": "The bones of Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "The bones of Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "The bones of Joseph",
+          "isCorrect": true
+        },
+        {
+          "text": "The tablets of stone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Yahweh go before the people by night?",
+      "explanation": "Yahweh went before them by day in a pillar of cloud and by night in a pillar of fire, to give them light.",
+      "bibleReference": "Exodus 13:21",
+      "answers": [
+        {
+          "text": "In a pillar of fire",
+          "isCorrect": true
+        },
+        {
+          "text": "As a bright star",
+          "isCorrect": false
+        },
+        {
+          "text": "As an angel carrying a torch",
+          "isCorrect": false
+        },
+        {
+          "text": "In the light of the full moon",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

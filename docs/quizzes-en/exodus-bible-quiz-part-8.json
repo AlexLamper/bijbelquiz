@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 8",
+  "description": "Ten questions on Exodus 8: the frogs, the lice and the swarms of flies that came on Egypt.",
+  "slug": "exodus-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who stretched out his hand over the waters of Egypt to bring up the frogs?",
+      "explanation": "Aaron stretched out his hand over the waters of Egypt, and the frogs came up and covered the land.",
+      "bibleReference": "Exodus 8:6",
+      "answers": [
+        {
+          "text": "Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Pharaoh",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron",
+          "isCorrect": true
+        },
+        {
+          "text": "The magicians",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the magicians do when the frogs came up?",
+      "explanation": "The magicians did the same thing with their enchantments and brought up frogs on the land of Egypt.",
+      "bibleReference": "Exodus 8:7",
+      "answers": [
+        {
+          "text": "They also brought up frogs",
+          "isCorrect": true
+        },
+        {
+          "text": "They drove the frogs back to the river",
+          "isCorrect": false
+        },
+        {
+          "text": "They said, \"This is God's finger\"",
+          "isCorrect": false
+        },
+        {
+          "text": "They were covered with boils",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did Pharaoh ask for the frogs to be taken away?",
+      "explanation": "When Moses let Pharaoh set the time, Pharaoh said, \"Tomorrow.\"",
+      "bibleReference": "Exodus 8:9-10",
+      "answers": [
+        {
+          "text": "Immediately",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomorrow",
+          "isCorrect": true
+        },
+        {
+          "text": "After seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "At the next new moon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened after the frogs died?",
+      "explanation": "The people gathered the dead frogs together in heaps, and the land stank.",
+      "bibleReference": "Exodus 8:13-14",
+      "answers": [
+        {
+          "text": "They were thrown into the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "They came back to life in the river",
+          "isCorrect": false
+        },
+        {
+          "text": "They were eaten by the birds",
+          "isCorrect": false
+        },
+        {
+          "text": "They were gathered in heaps and the land stank",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Aaron strike to bring the lice?",
+      "explanation": "Aaron stretched out his rod and struck the dust of the earth, and all the dust became lice throughout Egypt.",
+      "bibleReference": "Exodus 8:16-17",
+      "answers": [
+        {
+          "text": "The waters of the river",
+          "isCorrect": false
+        },
+        {
+          "text": "The dust of the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "Pharaoh's palace walls",
+          "isCorrect": false
+        },
+        {
+          "text": "A rock in the wilderness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the magicians say to Pharaoh when they could not produce lice?",
+      "explanation": "The magicians said to Pharaoh, \"This is God's finger,\" but Pharaoh's heart was hardened.",
+      "bibleReference": "Exodus 8:18-19",
+      "answers": [
+        {
+          "text": "\"This is God's finger\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"We need more time\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let the people go at once\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The Hebrews have tricked us\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which land did Yahweh set apart so that no swarms of flies would be there?",
+      "explanation": "Yahweh said he would set apart the land of Goshen, where his people lived, so that no swarms of flies would be there.",
+      "bibleReference": "Exodus 8:22",
+      "answers": [
+        {
+          "text": "Midian",
+          "isCorrect": false
+        },
+        {
+          "text": "Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "Goshen",
+          "isCorrect": true
+        },
+        {
+          "text": "Sidon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh first offer after the swarms of flies came?",
+      "explanation": "Pharaoh said, \"Go, sacrifice to your God in the land!\"",
+      "bibleReference": "Exodus 8:25",
+      "answers": [
+        {
+          "text": "To let them go for three days' journey",
+          "isCorrect": false
+        },
+        {
+          "text": "To give them back their straw",
+          "isCorrect": false
+        },
+        {
+          "text": "To set them free forever",
+          "isCorrect": false
+        },
+        {
+          "text": "To let them sacrifice to their God in the land",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Moses say they could not sacrifice in the land of Egypt?",
+      "explanation": "Moses said they would sacrifice what was an abomination to the Egyptians, who might stone them for it.",
+      "bibleReference": "Exodus 8:26",
+      "answers": [
+        {
+          "text": "The Egyptians might stone them for their sacrifice",
+          "isCorrect": true
+        },
+        {
+          "text": "They had no animals to sacrifice",
+          "isCorrect": false
+        },
+        {
+          "text": "Their priests were in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "The land was full of frogs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many swarms of flies remained after Yahweh removed them?",
+      "explanation": "Yahweh removed the swarms of flies from Pharaoh, his servants and his people. There remained not one.",
+      "bibleReference": "Exodus 8:31",
+      "answers": [
+        {
+          "text": "A few in Pharaoh's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Only those in the fields",
+          "isCorrect": false
+        },
+        {
+          "text": "Not one",
+          "isCorrect": true
+        },
+        {
+          "text": "Half of them",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

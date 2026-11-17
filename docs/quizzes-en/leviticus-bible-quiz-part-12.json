@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 12",
+  "description": "Ten questions on Leviticus 12: the days of a mother's purification after childbirth and the offerings she brings.",
+  "slug": "leviticus-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How long is a woman unclean after giving birth to a son?",
+      "explanation": "If a woman bears a male child, she shall be unclean seven days, as in the days of her monthly period.",
+      "bibleReference": "Leviticus 12:2",
+      "answers": [
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day is a baby boy to be circumcised?",
+      "explanation": "In the eighth day the flesh of his foreskin shall be circumcised.",
+      "bibleReference": "Leviticus 12:3",
+      "answers": [
+        {
+          "text": "The eighth day",
+          "isCorrect": true
+        },
+        {
+          "text": "The first day",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventh day",
+          "isCorrect": false
+        },
+        {
+          "text": "The thirtieth day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After the birth of a son, how long does the mother continue in the blood of purification?",
+      "explanation": "She shall continue in the blood of purification thirty-three days.",
+      "bibleReference": "Leviticus 12:4",
+      "answers": [
+        {
+          "text": "Twelve days",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty-three days",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty-six days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What may the mother not do until the days of her purifying are completed?",
+      "explanation": "She shall not touch any holy thing, nor come into the sanctuary, until the days of her purifying are completed.",
+      "bibleReference": "Leviticus 12:4",
+      "answers": [
+        {
+          "text": "Leave her house or do any kind of work",
+          "isCorrect": false
+        },
+        {
+          "text": "Eat bread or drink wine with her family",
+          "isCorrect": false
+        },
+        {
+          "text": "Speak with the priests at the Tent",
+          "isCorrect": false
+        },
+        {
+          "text": "Touch any holy thing or come into the sanctuary",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long is a woman unclean after giving birth to a daughter?",
+      "explanation": "If she bears a female child, she shall be unclean two weeks, as in her period.",
+      "bibleReference": "Leviticus 12:5",
+      "answers": [
+        {
+          "text": "One week",
+          "isCorrect": false
+        },
+        {
+          "text": "Two weeks",
+          "isCorrect": true
+        },
+        {
+          "text": "Three weeks",
+          "isCorrect": false
+        },
+        {
+          "text": "One month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After the birth of a daughter, how long does the mother continue in the blood of purification?",
+      "explanation": "After a daughter she shall continue in the blood of purification sixty-six days.",
+      "bibleReference": "Leviticus 12:5",
+      "answers": [
+        {
+          "text": "Thirty-three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy days",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty-six days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What animal does the mother bring for a burnt offering when her purification is completed?",
+      "explanation": "She shall bring to the priest a year old lamb for a burnt offering.",
+      "bibleReference": "Leviticus 12:6",
+      "answers": [
+        {
+          "text": "A year old lamb",
+          "isCorrect": true
+        },
+        {
+          "text": "A young bull",
+          "isCorrect": false
+        },
+        {
+          "text": "A male goat",
+          "isCorrect": false
+        },
+        {
+          "text": "A ram",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does she bring for a sin offering?",
+      "explanation": "Along with the lamb she brings a young pigeon or a turtledove for a sin offering.",
+      "bibleReference": "Leviticus 12:6",
+      "answers": [
+        {
+          "text": "A handful of fine flour with oil",
+          "isCorrect": false
+        },
+        {
+          "text": "A young male goat of the flock",
+          "isCorrect": false
+        },
+        {
+          "text": "A young pigeon or a turtledove",
+          "isCorrect": true
+        },
+        {
+          "text": "A jar of oil and some incense",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom and where does she bring her offerings?",
+      "explanation": "She brings them to the priest at the door of the Tent of Meeting.",
+      "bibleReference": "Leviticus 12:6",
+      "answers": [
+        {
+          "text": "To Moses at his tent",
+          "isCorrect": false
+        },
+        {
+          "text": "To the priest at the door of the Tent of Meeting",
+          "isCorrect": true
+        },
+        {
+          "text": "To the elders at the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "To the Levites at the camp's edge",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What may she bring if she cannot afford a lamb?",
+      "explanation": "If she cannot afford a lamb, she shall take two turtledoves or two young pigeons, one for a burnt offering and one for a sin offering.",
+      "bibleReference": "Leviticus 12:8",
+      "answers": [
+        {
+          "text": "Two turtledoves or two young pigeons",
+          "isCorrect": true
+        },
+        {
+          "text": "A tenth of an ephah of fine flour",
+          "isCorrect": false
+        },
+        {
+          "text": "A shekel of silver for the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "A young goat instead of a lamb",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

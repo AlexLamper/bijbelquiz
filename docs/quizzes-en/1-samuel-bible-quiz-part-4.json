@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 4",
+  "description": "Ten questions on 1 Samuel 4: Israel's defeat by the Philistines, the capture of the ark, and the death of Eli.",
+  "slug": "1-samuel-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did the Philistines encamp before the battle?",
+      "explanation": "Israel encamped beside Ebenezer, and the Philistines encamped in Aphek.",
+      "bibleReference": "1 Samuel 4:1",
+      "answers": [
+        {
+          "text": "In Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "In Gaza",
+          "isCorrect": false
+        },
+        {
+          "text": "In Ashdod",
+          "isCorrect": false
+        },
+        {
+          "text": "In Aphek",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "About how many men of Israel did the Philistines kill in the first battle?",
+      "explanation": "Israel was defeated, and the Philistines killed about four thousand men of the army in the field.",
+      "bibleReference": "1 Samuel 4:2",
+      "answers": [
+        {
+          "text": "About one thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About four thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "About ten thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About forty thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the elders of Israel decide to do after the first defeat?",
+      "explanation": "They said, \"Let's get the ark of Yahweh's covenant out of Shiloh and bring it to us, that it may come among us and save us.\"",
+      "bibleReference": "1 Samuel 4:3",
+      "answers": [
+        {
+          "text": "Ask the Philistines for peace",
+          "isCorrect": false
+        },
+        {
+          "text": "Choose a king to lead them",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring the ark of the covenant from Shiloh",
+          "isCorrect": true
+        },
+        {
+          "text": "Burn the camp of the Philistines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened when the ark of Yahweh's covenant came into the camp?",
+      "explanation": "All Israel shouted with a great shout, so that the earth resounded.",
+      "bibleReference": "1 Samuel 4:5",
+      "answers": [
+        {
+          "text": "Israel shouted so that the earth resounded",
+          "isCorrect": true
+        },
+        {
+          "text": "The Philistines fled at once",
+          "isCorrect": false
+        },
+        {
+          "text": "Fire came down from the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "The people fell silent and wept",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Philistines say these mighty gods had done?",
+      "explanation": "They said, \"These are the gods that struck the Egyptians with all kinds of plagues in the wilderness.\"",
+      "bibleReference": "1 Samuel 4:8",
+      "answers": [
+        {
+          "text": "Brought down the walls of Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Made the sun stand still",
+          "isCorrect": false
+        },
+        {
+          "text": "Struck the Egyptians with plagues",
+          "isCorrect": true
+        },
+        {
+          "text": "Sent fire on Mount Carmel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many footmen of Israel fell in the second battle?",
+      "explanation": "There was a very great slaughter; thirty thousand footmen of Israel fell.",
+      "bibleReference": "1 Samuel 4:10",
+      "answers": [
+        {
+          "text": "Three thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-two thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty thousand",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "From which tribe was the man who ran to Shiloh with the news?",
+      "explanation": "A man of Benjamin ran out of the army and came to Shiloh the same day, with his clothes torn and dirt on his head.",
+      "bibleReference": "1 Samuel 4:12",
+      "answers": [
+        {
+          "text": "Benjamin",
+          "isCorrect": true
+        },
+        {
+          "text": "Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Eli when the news came?",
+      "explanation": "Eli was ninety-eight years old, and his eyes were set so that he could not see.",
+      "bibleReference": "1 Samuel 4:15",
+      "answers": [
+        {
+          "text": "Eighty",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninety-eight",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventy-five",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Eli die?",
+      "explanation": "When the ark was mentioned, Eli fell backward from his seat by the side of the gate, and his neck broke, for he was old and heavy.",
+      "bibleReference": "1 Samuel 4:18",
+      "answers": [
+        {
+          "text": "He was killed by the Philistines in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "He died in his sleep that night",
+          "isCorrect": false
+        },
+        {
+          "text": "He was struck by the man of Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "He fell backward from his seat and broke his neck",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Phinehas' wife name her son?",
+      "explanation": "She named the child Ichabod, saying, \"The glory has departed from Israel!\"",
+      "bibleReference": "1 Samuel 4:21",
+      "answers": [
+        {
+          "text": "Obed",
+          "isCorrect": false
+        },
+        {
+          "text": "Ichabod",
+          "isCorrect": true
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Samuel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

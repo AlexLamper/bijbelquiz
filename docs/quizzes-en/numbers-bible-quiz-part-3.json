@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 3",
+  "description": "Ten questions on Numbers 3: the sons of Aaron, the families and duties of the Levites, and the redemption of the firstborn.",
+  "slug": "numbers-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who was the firstborn son of Aaron?",
+      "explanation": "Verse 2 names the sons of Aaron: Nadab the firstborn, and Abihu, Eleazar, and Ithamar.",
+      "bibleReference": "Numbers 3:2",
+      "answers": [
+        {
+          "text": "Abihu",
+          "isCorrect": false
+        },
+        {
+          "text": "Ithamar",
+          "isCorrect": false
+        },
+        {
+          "text": "Gershon",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadab",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Nadab and Abihu die before Yahweh?",
+      "explanation": "Verse 4 says they died before Yahweh when they offered strange fire before Yahweh in the wilderness of Sinai.",
+      "bibleReference": "Numbers 3:4",
+      "answers": [
+        {
+          "text": "They touched the ark of the covenant",
+          "isCorrect": false
+        },
+        {
+          "text": "They offered strange fire before Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "They refused to carry the tabernacle",
+          "isCorrect": false
+        },
+        {
+          "text": "They were struck by a plague in the camp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Instead of whom did Yahweh take the Levites?",
+      "explanation": "Yahweh took the Levites from among Israel instead of all the firstborn who open the womb, for all the firstborn are his.",
+      "bibleReference": "Numbers 3:12-13",
+      "answers": [
+        {
+          "text": "Instead of the tribe of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Instead of the seventy elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Instead of all the firstborn of Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Instead of the princes of the tribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From what age were the Levite males to be counted?",
+      "explanation": "Yahweh told Moses to count every male of the children of Levi from a month old and upward.",
+      "bibleReference": "Numbers 3:15",
+      "answers": [
+        {
+          "text": "From a month old and upward",
+          "isCorrect": true
+        },
+        {
+          "text": "From twenty years old and upward",
+          "isCorrect": false
+        },
+        {
+          "text": "From thirty years old and upward",
+          "isCorrect": false
+        },
+        {
+          "text": "From five years old and upward",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these was a son of Levi?",
+      "explanation": "Verse 17 says the sons of Levi were Gershon, Kohath, and Merari.",
+      "bibleReference": "Numbers 3:17",
+      "answers": [
+        {
+          "text": "Kohath",
+          "isCorrect": true
+        },
+        {
+          "text": "Amram",
+          "isCorrect": false
+        },
+        {
+          "text": "Libni",
+          "isCorrect": false
+        },
+        {
+          "text": "Mahli",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which side of the tabernacle did the families of the Gershonites encamp?",
+      "explanation": "Verse 23 says the families of the Gershonites encamped behind the tabernacle westward.",
+      "bibleReference": "Numbers 3:23",
+      "answers": [
+        {
+          "text": "On the east side",
+          "isCorrect": false
+        },
+        {
+          "text": "On the south side",
+          "isCorrect": false
+        },
+        {
+          "text": "On the north side",
+          "isCorrect": false
+        },
+        {
+          "text": "On the west side",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which Levite families had the ark, the table and the lamp stand as their duty?",
+      "explanation": "Verse 31 says the duty of the Kohathites was the ark, the table, the lamp stand, the altars and the vessels of the sanctuary.",
+      "bibleReference": "Numbers 3:29-31",
+      "answers": [
+        {
+          "text": "The families of Gershon",
+          "isCorrect": false
+        },
+        {
+          "text": "The families of Merari",
+          "isCorrect": false
+        },
+        {
+          "text": "The families of Kohath",
+          "isCorrect": true
+        },
+        {
+          "text": "The families of Judah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was prince of the princes of the Levites?",
+      "explanation": "Verse 32 says Eleazar the son of Aaron the priest was prince of the princes of the Levites.",
+      "bibleReference": "Numbers 3:32",
+      "answers": [
+        {
+          "text": "Elizaphan the son of Uzziel",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar the son of Aaron",
+          "isCorrect": true
+        },
+        {
+          "text": "Zuriel the son of Abihail",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliasaph the son of Lael",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the appointed duty of the sons of Merari?",
+      "explanation": "Verse 36 says their duty was the tabernacle's boards, its bars, its pillars, its sockets and all its instruments.",
+      "bibleReference": "Numbers 3:35-36",
+      "answers": [
+        {
+          "text": "The ark, the table and the lamp stand",
+          "isCorrect": false
+        },
+        {
+          "text": "The tent, its covering and the door screen",
+          "isCorrect": false
+        },
+        {
+          "text": "The anointing oil and the sweet incense",
+          "isCorrect": false
+        },
+        {
+          "text": "The boards, bars, pillars and sockets of the tabernacle",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How much was taken for each firstborn who exceeded the number of the Levites?",
+      "explanation": "For the redemption of the two hundred seventy-three extra firstborn, Moses was to take five shekels apiece and give the money to Aaron and his sons.",
+      "bibleReference": "Numbers 3:46-48",
+      "answers": [
+        {
+          "text": "Ten shekels apiece",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty shekels apiece",
+          "isCorrect": false
+        },
+        {
+          "text": "Five shekels apiece",
+          "isCorrect": true
+        },
+        {
+          "text": "Fifty shekels apiece",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

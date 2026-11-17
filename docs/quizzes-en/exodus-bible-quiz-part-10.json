@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 10",
+  "description": "Ten questions on Exodus 10: the locusts, the three days of darkness and Pharaoh's final warning to Moses.",
+  "slug": "exodus-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "To whom did Yahweh want Moses to tell the signs he had done in Egypt?",
+      "explanation": "Yahweh said Moses should tell in the hearing of his son and his son's son what things he had done to Egypt.",
+      "bibleReference": "Exodus 10:2",
+      "answers": [
+        {
+          "text": "His son and his son's son",
+          "isCorrect": true
+        },
+        {
+          "text": "The kings of Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The people of Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who did Moses say would go to hold a feast to Yahweh?",
+      "explanation": "Moses said, \"We will go with our young and with our old... with our sons and with our daughters, with our flocks and with our herds.\"",
+      "bibleReference": "Exodus 10:9",
+      "answers": [
+        {
+          "text": "Only the men who were able to work",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the elders and the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "Young and old, with flocks and herds",
+          "isCorrect": true
+        },
+        {
+          "text": "Only Moses, Aaron and the elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Pharaoh allow to go after Moses' answer about who would go?",
+      "explanation": "Pharaoh said, \"Not so! Go now you who are men, and serve Yahweh,\" and they were driven out from his presence.",
+      "bibleReference": "Exodus 10:10-11",
+      "answers": [
+        {
+          "text": "Everyone except the elderly",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the women and children",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the tribe of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the men",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh use to bring the locusts?",
+      "explanation": "Yahweh brought an east wind on the land all day and all night, and in the morning the east wind brought the locusts.",
+      "bibleReference": "Exodus 10:13",
+      "answers": [
+        {
+          "text": "A west wind",
+          "isCorrect": false
+        },
+        {
+          "text": "An east wind",
+          "isCorrect": true
+        },
+        {
+          "text": "A storm of hail",
+          "isCorrect": false
+        },
+        {
+          "text": "A cloud from the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was left after the locusts had eaten?",
+      "explanation": "The locusts ate every herb and all the fruit the hail had left; nothing green remained in all the land of Egypt.",
+      "bibleReference": "Exodus 10:15",
+      "answers": [
+        {
+          "text": "Only the trees",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the wheat and the spelt",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing green",
+          "isCorrect": true
+        },
+        {
+          "text": "Only what was in Goshen's fields",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were the locusts driven?",
+      "explanation": "Yahweh sent an exceedingly strong west wind, which took up the locusts and drove them into the Red Sea.",
+      "bibleReference": "Exodus 10:19",
+      "answers": [
+        {
+          "text": "Into the Red Sea",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the river",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "Back to Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did the thick darkness last over Egypt?",
+      "explanation": "Moses stretched out his hand toward the sky, and there was thick darkness in all the land of Egypt for three days.",
+      "bibleReference": "Exodus 10:22",
+      "answers": [
+        {
+          "text": "One day",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Three days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the children of Israel have during the darkness?",
+      "explanation": "Nobody rose from his place for three days, but all the children of Israel had light in their dwellings.",
+      "bibleReference": "Exodus 10:23",
+      "answers": [
+        {
+          "text": "A pillar of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "Light in their dwellings",
+          "isCorrect": true
+        },
+        {
+          "text": "Food from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "Water from a rock",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh want to stay behind when he let the people go to serve Yahweh?",
+      "explanation": "Pharaoh said, \"Go, serve Yahweh. Only let your flocks and your herds stay behind.\"",
+      "bibleReference": "Exodus 10:24",
+      "answers": [
+        {
+          "text": "Their little ones and wives",
+          "isCorrect": false
+        },
+        {
+          "text": "Their old men and women",
+          "isCorrect": false
+        },
+        {
+          "text": "Their flocks and their herds",
+          "isCorrect": true
+        },
+        {
+          "text": "Their sons and daughters",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh warn Moses at the end of the chapter?",
+      "explanation": "Pharaoh said, \"Be careful to see my face no more; for in the day you see my face you shall die!\"",
+      "bibleReference": "Exodus 10:28",
+      "answers": [
+        {
+          "text": "That he would die on the day he saw Pharaoh's face again",
+          "isCorrect": true
+        },
+        {
+          "text": "That the Israelites would work twice as hard",
+          "isCorrect": false
+        },
+        {
+          "text": "That the plagues would be blamed on him",
+          "isCorrect": false
+        },
+        {
+          "text": "That he must leave Egypt by morning",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

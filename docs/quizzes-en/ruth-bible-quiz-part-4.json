@@ -1,0 +1,242 @@
+{
+  "title": "Ruth Bible Quiz - Chapter 4",
+  "description": "Ten questions on Ruth 4: Boaz redeems Elimelech's land at the gate, marries Ruth, and Obed is born.",
+  "slug": "ruth-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Boaz go up and sit down to meet the near kinsman?",
+      "explanation": "Boaz went up to the gate and sat down there, and the near kinsman came by.",
+      "bibleReference": "Ruth 4:1",
+      "answers": [
+        {
+          "text": "At the threshing floor",
+          "isCorrect": false
+        },
+        {
+          "text": "In his field",
+          "isCorrect": false
+        },
+        {
+          "text": "In Naomi's house",
+          "isCorrect": false
+        },
+        {
+          "text": "At the gate",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many elders of the city did Boaz take to sit with them?",
+      "explanation": "Boaz took ten men of the elders of the city and said, \"Sit down here.\"",
+      "bibleReference": "Ruth 4:2",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Boaz say Naomi was selling?",
+      "explanation": "Naomi was selling the parcel of land which was their brother Elimelech's.",
+      "bibleReference": "Ruth 4:3",
+      "answers": [
+        {
+          "text": "Her house in Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Her flocks and her donkeys",
+          "isCorrect": false
+        },
+        {
+          "text": "The parcel of land that was Elimelech's",
+          "isCorrect": true
+        },
+        {
+          "text": "The barley from her harvest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the near kinsman say he could not redeem the land?",
+      "explanation": "He said, \"I can't redeem it for myself, lest I endanger my own inheritance.\"",
+      "bibleReference": "Ruth 4:6",
+      "answers": [
+        {
+          "text": "He would endanger his own inheritance",
+          "isCorrect": true
+        },
+        {
+          "text": "He did not have enough silver",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders would not allow it",
+          "isCorrect": false
+        },
+        {
+          "text": "He was afraid of the Moabites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the old custom in Israel, what did a man do to confirm a transaction?",
+      "explanation": "A man took off his sandal and gave it to his neighbor; this was the way of formalizing transactions in Israel.",
+      "bibleReference": "Ruth 4:7-8",
+      "answers": [
+        {
+          "text": "He tore his cloak",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave a ring",
+          "isCorrect": false
+        },
+        {
+          "text": "He took off his sandal",
+          "isCorrect": true
+        },
+        {
+          "text": "He broke a clay jar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Ruth the Moabitess is called the wife of whom?",
+      "explanation": "Boaz said, \"Ruth the Moabitess, the wife of Mahlon, I have purchased to be my wife.\"",
+      "bibleReference": "Ruth 4:10",
+      "answers": [
+        {
+          "text": "Chilion",
+          "isCorrect": false
+        },
+        {
+          "text": "Elimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Salmon",
+          "isCorrect": false
+        },
+        {
+          "text": "Mahlon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "The people and elders asked that Ruth be like which two women who built the house of Israel?",
+      "explanation": "They said, \"May Yahweh make the woman who has come into your house like Rachel and like Leah, which both built the house of Israel.\"",
+      "bibleReference": "Ruth 4:11",
+      "answers": [
+        {
+          "text": "Rachel and Leah",
+          "isCorrect": true
+        },
+        {
+          "text": "Sarah and Rebekah",
+          "isCorrect": false
+        },
+        {
+          "text": "Hannah and Peninnah",
+          "isCorrect": false
+        },
+        {
+          "text": "Tamar and Orpah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The women said Ruth was better to Naomi than how many sons?",
+      "explanation": "The women said her daughter-in-law, who loved her, was better to her than seven sons.",
+      "bibleReference": "Ruth 4:15",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did the neighbor women give to Ruth's son?",
+      "explanation": "The women, her neighbors, gave him a name, and they named him Obed.",
+      "bibleReference": "Ruth 4:17",
+      "answers": [
+        {
+          "text": "Perez",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesse",
+          "isCorrect": false
+        },
+        {
+          "text": "Hezron",
+          "isCorrect": false
+        },
+        {
+          "text": "Obed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the last verse, Jesse became the father of whom?",
+      "explanation": "The genealogy ends: \"Obed became the father of Jesse, and Jesse became the father of David.\"",
+      "bibleReference": "Ruth 4:22",
+      "answers": [
+        {
+          "text": "Boaz",
+          "isCorrect": false
+        },
+        {
+          "text": "David",
+          "isCorrect": true
+        },
+        {
+          "text": "Nahshon",
+          "isCorrect": false
+        },
+        {
+          "text": "Salmon",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

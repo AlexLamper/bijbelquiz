@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 30",
+  "description": "Ten questions on Genesis 30: the sons born to Jacob, the mandrakes, the birth of Joseph and Jacob's flocks.",
+  "slug": "genesis-bible-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Rachel say to Jacob when she envied her sister?",
+      "explanation": "When Rachel saw that she bore Jacob no children, she envied her sister and said, \"Give me children, or else I will die.\"",
+      "bibleReference": "Genesis 30:1",
+      "answers": [
+        {
+          "text": "\"Give me children, or else I will die.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Send me back to my father's house.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Give me your blessing before you go.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let me go out to the field.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did Rachel give the first son born to Bilhah?",
+      "explanation": "Bilhah bore Jacob a son, and Rachel said, \"God has judged me,\" and called his name Dan.",
+      "bibleReference": "Genesis 30:5-6",
+      "answers": [
+        {
+          "text": "Naphtali",
+          "isCorrect": false
+        },
+        {
+          "text": "Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan",
+          "isCorrect": true
+        },
+        {
+          "text": "Asher",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Rachel say when she named Naphtali?",
+      "explanation": "Rachel said, \"I have wrestled with my sister with mighty wrestlings, and have prevailed.\" She named him Naphtali.",
+      "bibleReference": "Genesis 30:8",
+      "answers": [
+        {
+          "text": "\"God has judged me, and has also heard my voice.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I have wrestled with my sister with mighty wrestlings.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Happy am I, for the daughters will call me happy.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"God has taken away my reproach.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Reuben find in the field during the wheat harvest?",
+      "explanation": "Reuben went in the days of wheat harvest, found mandrakes in the field, and brought them to his mother Leah.",
+      "bibleReference": "Genesis 30:14",
+      "answers": [
+        {
+          "text": "Ripe figs",
+          "isCorrect": false
+        },
+        {
+          "text": "Wild honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Wild grapes",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandrakes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which son did Leah name with the words \"God has given me my hire\"?",
+      "explanation": "Leah bore Jacob a fifth son and said, \"God has given me my hire.\" She named him Issachar.",
+      "bibleReference": "Genesis 30:17-18",
+      "answers": [
+        {
+          "text": "Zebulun",
+          "isCorrect": false
+        },
+        {
+          "text": "Issachar",
+          "isCorrect": true
+        },
+        {
+          "text": "Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Reuben",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the name of the daughter Leah bore?",
+      "explanation": "Afterwards Leah bore a daughter and named her Dinah.",
+      "bibleReference": "Genesis 30:21",
+      "answers": [
+        {
+          "text": "Dinah",
+          "isCorrect": true
+        },
+        {
+          "text": "Deborah",
+          "isCorrect": false
+        },
+        {
+          "text": "Tamar",
+          "isCorrect": false
+        },
+        {
+          "text": "Milcah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Rachel say when she named Joseph?",
+      "explanation": "She named him Joseph, saying, \"May Yahweh add another son to me.\"",
+      "bibleReference": "Genesis 30:24",
+      "answers": [
+        {
+          "text": "\"I have prevailed over my sister.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Now my husband will live with me.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Yahweh has looked at my affliction.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"May Yahweh add another son to me.\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Laban want Jacob to stay with him?",
+      "explanation": "Laban said, \"Stay here, for I have divined that Yahweh has blessed me for your sake.\"",
+      "bibleReference": "Genesis 30:27",
+      "answers": [
+        {
+          "text": "He needed Jacob to repay a debt",
+          "isCorrect": false
+        },
+        {
+          "text": "His sons were too young to keep the flock",
+          "isCorrect": false
+        },
+        {
+          "text": "He had divined that Yahweh blessed him for Jacob's sake",
+          "isCorrect": true
+        },
+        {
+          "text": "He wanted Jacob to marry another daughter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jacob ask for as his hire?",
+      "explanation": "Jacob said he would remove every speckled and spotted one, every black one among the sheep and the spotted and speckled among the goats: \"This will be my hire.\"",
+      "bibleReference": "Genesis 30:32",
+      "answers": [
+        {
+          "text": "The speckled and spotted animals and the black sheep",
+          "isCorrect": true
+        },
+        {
+          "text": "A tenth of all the young of Laban's flocks",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty camels with their colts and ten donkeys",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver and a field of his own near Haran",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From which trees did Jacob take fresh rods to peel?",
+      "explanation": "Jacob took rods of fresh poplar, almond and plane tree and peeled white streaks in them.",
+      "bibleReference": "Genesis 30:37",
+      "answers": [
+        {
+          "text": "Oak, cedar and olive",
+          "isCorrect": false
+        },
+        {
+          "text": "Poplar, almond and plane tree",
+          "isCorrect": true
+        },
+        {
+          "text": "Acacia, fig and palm",
+          "isCorrect": false
+        },
+        {
+          "text": "Cypress, willow and oak",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

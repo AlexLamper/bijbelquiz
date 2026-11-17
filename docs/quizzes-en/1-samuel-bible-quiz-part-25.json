@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 25",
+  "description": "Ten questions on 1 Samuel 25: the death of Samuel, Nabal's insult and Abigail's wise intervention.",
+  "slug": "1-samuel-bible-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was Samuel buried?",
+      "explanation": "Samuel died, and all Israel mourned for him and buried him at his house at Ramah.",
+      "bibleReference": "1 Samuel 25:1",
+      "answers": [
+        {
+          "text": "At his house at Ramah",
+          "isCorrect": true
+        },
+        {
+          "text": "In the cave of Adullam",
+          "isCorrect": false
+        },
+        {
+          "text": "At Gibeah of Saul",
+          "isCorrect": false
+        },
+        {
+          "text": "At Bethlehem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many sheep did Nabal have?",
+      "explanation": "The man in Maon had three thousand sheep and a thousand goats.",
+      "bibleReference": "1 Samuel 25:2",
+      "answers": [
+        {
+          "text": "Five hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Three thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is Abigail described?",
+      "explanation": "Abigail was intelligent and had a beautiful face, but her husband was surly and evil in his doings.",
+      "bibleReference": "1 Samuel 25:3",
+      "answers": [
+        {
+          "text": "Proud, and quick to grow angry",
+          "isCorrect": false
+        },
+        {
+          "text": "Intelligent, with a beautiful face",
+          "isCorrect": true
+        },
+        {
+          "text": "Old, and very rich in flocks",
+          "isCorrect": false
+        },
+        {
+          "text": "Foolish, but kind to strangers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many young men did David send to Nabal?",
+      "explanation": "David sent ten young men to go up to Carmel and greet Nabal in his name.",
+      "bibleReference": "1 Samuel 25:5",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "About how many men followed David when he put on his sword?",
+      "explanation": "About four hundred men followed David, and two hundred stayed by the baggage.",
+      "bibleReference": "1 Samuel 25:13",
+      "answers": [
+        {
+          "text": "About one hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "About four hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "About a thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About sixty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Nabal's young man describe David's men?",
+      "explanation": "The young man told Abigail, \"They were a wall to us both by night and by day.\"",
+      "bibleReference": "1 Samuel 25:16",
+      "answers": [
+        {
+          "text": "\"A wall to us both by night and by day\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Robbers who took our sheep\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Strangers we never saw\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Men who demanded our silver\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Abigail, what is with Nabal, just as his name says?",
+      "explanation": "Abigail said, \"As his name is, so is he. Nabal is his name, and folly is with him.\"",
+      "bibleReference": "1 Samuel 25:25",
+      "answers": [
+        {
+          "text": "Wisdom",
+          "isCorrect": false
+        },
+        {
+          "text": "Wealth",
+          "isCorrect": false
+        },
+        {
+          "text": "Strength",
+          "isCorrect": false
+        },
+        {
+          "text": "Folly",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Abigail tell Nabal nothing until the morning light?",
+      "explanation": "Nabal held a feast like the feast of a king, and his heart was merry, for he was very drunk.",
+      "bibleReference": "1 Samuel 25:36",
+      "answers": [
+        {
+          "text": "He was away shearing sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "He was sick in bed",
+          "isCorrect": false
+        },
+        {
+          "text": "He was very drunk at a feast",
+          "isCorrect": true
+        },
+        {
+          "text": "He had gone to Carmel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Nabal when his wife told him these things?",
+      "explanation": "When his wife told him these things, his heart died within him, and he became as a stone.",
+      "bibleReference": "1 Samuel 25:37",
+      "answers": [
+        {
+          "text": "His heart died within him, and he became as a stone",
+          "isCorrect": true
+        },
+        {
+          "text": "He laughed and mocked David again",
+          "isCorrect": false
+        },
+        {
+          "text": "He fled to the wilderness of Paran",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent a gift to David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom had Saul given Michal, David's wife?",
+      "explanation": "Saul had given Michal his daughter, David's wife, to Palti the son of Laish, who was of Gallim.",
+      "bibleReference": "1 Samuel 25:44",
+      "answers": [
+        {
+          "text": "Adriel the Meholathite",
+          "isCorrect": false
+        },
+        {
+          "text": "Abner the son of Ner",
+          "isCorrect": false
+        },
+        {
+          "text": "Palti the son of Laish",
+          "isCorrect": true
+        },
+        {
+          "text": "Doeg the Edomite",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 2",
+  "description": "Ten questions on Numbers 2: how the tribes of Israel camped around the Tent of Meeting and in which order they set out.",
+  "slug": "numbers-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where were the children of Israel to encamp?",
+      "explanation": "Verse 2 says they were to encamp by their standards around the Tent of Meeting, at a distance from it.",
+      "bibleReference": "Numbers 2:2",
+      "answers": [
+        {
+          "text": "Around the Tent of Meeting, at a distance from it",
+          "isCorrect": true
+        },
+        {
+          "text": "Only on the east side of the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "Inside the court of the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "In one long line behind the Tent of Meeting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which camp was on the east side, toward the sunrise?",
+      "explanation": "Verse 3 says the standard of the camp of Judah was on the east side toward the sunrise.",
+      "bibleReference": "Numbers 2:3",
+      "answers": [
+        {
+          "text": "The camp of Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "The camp of Benjamin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which tribe encamped next to Judah?",
+      "explanation": "Verse 5 says the tribe of Issachar encamped next to Judah, with Nethanel the son of Zuar as prince.",
+      "bibleReference": "Numbers 2:5",
+      "answers": [
+        {
+          "text": "Simeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Issachar",
+          "isCorrect": true
+        },
+        {
+          "text": "Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Asher",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When was the camp of Judah to set out?",
+      "explanation": "Verse 9 says the camp of Judah, one hundred eighty-six thousand four hundred, would set out first.",
+      "bibleReference": "Numbers 2:9",
+      "answers": [
+        {
+          "text": "Second",
+          "isCorrect": false
+        },
+        {
+          "text": "Third",
+          "isCorrect": false
+        },
+        {
+          "text": "Last",
+          "isCorrect": false
+        },
+        {
+          "text": "First",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which camp was on the south side?",
+      "explanation": "Verse 10 says the standard of the camp of Reuben was on the south side.",
+      "bibleReference": "Numbers 2:10",
+      "answers": [
+        {
+          "text": "The camp of Naphtali",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Zebulun",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Reuben",
+          "isCorrect": true
+        },
+        {
+          "text": "The camp of Manasseh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the camp of the Levites when the Tent of Meeting set out?",
+      "explanation": "Verse 17 says the Tent of Meeting would set out with the camp of the Levites in the middle of the camps.",
+      "bibleReference": "Numbers 2:17",
+      "answers": [
+        {
+          "text": "In the middle of the camps",
+          "isCorrect": true
+        },
+        {
+          "text": "At the front of all the camps",
+          "isCorrect": false
+        },
+        {
+          "text": "At the very back of all the camps",
+          "isCorrect": false
+        },
+        {
+          "text": "Beside the camp of Judah only",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the prince of the children of Ephraim?",
+      "explanation": "Verse 18 names Elishama the son of Ammihud as prince of Ephraim, on the west side.",
+      "bibleReference": "Numbers 2:18",
+      "answers": [
+        {
+          "text": "Gamaliel the son of Pedahzur",
+          "isCorrect": false
+        },
+        {
+          "text": "Elishama the son of Ammihud",
+          "isCorrect": true
+        },
+        {
+          "text": "Abidan the son of Gideoni",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagiel the son of Ochran",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which camp was to set out last?",
+      "explanation": "Verse 31 says the camp of Dan, one hundred fifty-seven thousand six hundred, would set out last by their standards.",
+      "bibleReference": "Numbers 2:31",
+      "answers": [
+        {
+          "text": "The camp of Reuben",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Issachar",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Dan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the total of all who were counted of the camps?",
+      "explanation": "Verse 32 says all who were counted of the camps according to their armies were six hundred three thousand five hundred fifty.",
+      "bibleReference": "Numbers 2:32",
+      "answers": [
+        {
+          "text": "One hundred eighty-six thousand four hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred three thousand five hundred fifty",
+          "isCorrect": true
+        },
+        {
+          "text": "Six hundred thousand exactly",
+          "isCorrect": false
+        },
+        {
+          "text": "Five hundred seventy-three thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were not counted among the children of Israel?",
+      "explanation": "Verse 33 says the Levites were not counted among the children of Israel, as Yahweh commanded Moses.",
+      "bibleReference": "Numbers 2:33",
+      "answers": [
+        {
+          "text": "The Levites",
+          "isCorrect": true
+        },
+        {
+          "text": "The princes of the tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The sons of Joseph",
+          "isCorrect": false
+        },
+        {
+          "text": "The strangers in the camp",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

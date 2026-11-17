@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 3",
+  "description": "Ten questions on Joshua 3: the ark goes before the people and Israel crosses the Jordan on dry ground.",
+  "slug": "joshua-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "From where did Israel move before they came to the Jordan?",
+      "explanation": "Verse 1 says Joshua got up early, and they moved from Shittim and came to the Jordan.",
+      "bibleReference": "Joshua 3:1",
+      "answers": [
+        {
+          "text": "Shittim",
+          "isCorrect": true
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the people to follow when they saw it?",
+      "explanation": "The officers said that when the people saw the ark of Yahweh's covenant and the Levitical priests bearing it, they were to follow it.",
+      "bibleReference": "Joshua 3:3",
+      "answers": [
+        {
+          "text": "A pillar of fire by night",
+          "isCorrect": false
+        },
+        {
+          "text": "The staff raised by Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "The sound of the trumpets",
+          "isCorrect": false
+        },
+        {
+          "text": "The ark of Yahweh's covenant",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "About how much space was to be kept between the people and the ark?",
+      "explanation": "Verse 4 says there was to be a space of about two thousand cubits between them and the ark.",
+      "bibleReference": "Joshua 3:4",
+      "answers": [
+        {
+          "text": "About one hundred cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "About two thousand cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "About five hundred cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "About ten thousand cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Joshua tell the people to do, because Yahweh would do wonders tomorrow?",
+      "explanation": "Verse 5 says: \"Sanctify yourselves; for tomorrow Yahweh will do wonders among you.\"",
+      "bibleReference": "Joshua 3:5",
+      "answers": [
+        {
+          "text": "Sharpen their swords",
+          "isCorrect": false
+        },
+        {
+          "text": "Fast until evening",
+          "isCorrect": false
+        },
+        {
+          "text": "Sanctify themselves",
+          "isCorrect": true
+        },
+        {
+          "text": "Bring offerings to the altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say he would begin to do for Joshua that day?",
+      "explanation": "Yahweh said, \"Today I will begin to magnify you in the sight of all Israel.\"",
+      "bibleReference": "Joshua 3:7",
+      "answers": [
+        {
+          "text": "Give him a crown before all the people",
+          "isCorrect": false
+        },
+        {
+          "text": "Show him the whole land from a mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "Teach him a new song for the people",
+          "isCorrect": false
+        },
+        {
+          "text": "Magnify him in the sight of all Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many men were to be taken out of the tribes of Israel?",
+      "explanation": "Verse 12 says: \"Take twelve men out of the tribes of Israel, for every tribe a man.\"",
+      "bibleReference": "Joshua 3:12",
+      "answers": [
+        {
+          "text": "Twelve, a man for every tribe",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven, one for each nation",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten, from the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty, from the mighty men",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say the Jordan does all the time of harvest?",
+      "explanation": "Verse 15 says the Jordan overflows all its banks all the time of harvest.",
+      "bibleReference": "Joshua 3:15",
+      "answers": [
+        {
+          "text": "It becomes shallow enough to wade",
+          "isCorrect": false
+        },
+        {
+          "text": "It almost dries up completely",
+          "isCorrect": false
+        },
+        {
+          "text": "It overflows all its banks",
+          "isCorrect": true
+        },
+        {
+          "text": "It flows slowly and quietly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At which city did the waters from above rise up in one heap?",
+      "explanation": "Verse 16 says the waters stood and rose up in one heap a great way off, at Adam, the city beside Zarethan.",
+      "bibleReference": "Joshua 3:16",
+      "answers": [
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Adam",
+          "isCorrect": true
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Near which city did the people pass over?",
+      "explanation": "Verse 16 ends: \"Then the people passed over near Jericho.\"",
+      "bibleReference": "Joshua 3:16",
+      "answers": [
+        {
+          "text": "Jericho",
+          "isCorrect": true
+        },
+        {
+          "text": "Ai",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the priests stand while all Israel crossed over?",
+      "explanation": "Verse 17 says the priests stood firm on dry ground in the middle of the Jordan until all the nation had passed over.",
+      "bibleReference": "Joshua 3:17",
+      "answers": [
+        {
+          "text": "On the far bank of the river",
+          "isCorrect": false
+        },
+        {
+          "text": "On a hill near Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "At the edge of the Salt Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "On dry ground in the middle of the Jordan",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

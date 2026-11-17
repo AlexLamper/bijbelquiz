@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 14",
+  "description": "Ten questions on Leviticus 14: the cleansing of a healed leper with birds and offerings, and the law of mildew in a house.",
+  "slug": "leviticus-bible-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where does the priest go to examine a leper on the day of his cleansing?",
+      "explanation": "The leper is brought to the priest, and the priest goes out of the camp to examine him.",
+      "bibleReference": "Leviticus 14:2-3",
+      "answers": [
+        {
+          "text": "Out of the camp",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the Most Holy Place",
+          "isCorrect": false
+        },
+        {
+          "text": "To the leper's own tent",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the nearest city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is taken along with two living clean birds for the leper's cleansing?",
+      "explanation": "The priest commands them to take two living clean birds, cedar wood, scarlet and hyssop.",
+      "bibleReference": "Leviticus 14:4",
+      "answers": [
+        {
+          "text": "Olive wood, purple and myrrh",
+          "isCorrect": false
+        },
+        {
+          "text": "Acacia wood, linen and salt",
+          "isCorrect": false
+        },
+        {
+          "text": "Cedar wood, scarlet and hyssop",
+          "isCorrect": true
+        },
+        {
+          "text": "Gold, silver and incense",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the priest do with the living bird?",
+      "explanation": "After sprinkling the one being cleansed seven times, the priest lets the living bird go into the open field.",
+      "bibleReference": "Leviticus 14:7",
+      "answers": [
+        {
+          "text": "Offers it as a burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Gives it to the cleansed man",
+          "isCorrect": false
+        },
+        {
+          "text": "Keeps it at the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "Lets it go into the open field",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "After coming back into the camp, where must the cleansed man stay for seven days?",
+      "explanation": "After washing, shaving and bathing he comes into the camp, but shall dwell outside his tent seven days.",
+      "bibleReference": "Leviticus 14:8",
+      "answers": [
+        {
+          "text": "Inside the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside his tent",
+          "isCorrect": true
+        },
+        {
+          "text": "In the house of the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside the city gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must he shave off on the seventh day?",
+      "explanation": "On the seventh day he shall shave all his hair off his head, his beard and his eyebrows.",
+      "bibleReference": "Leviticus 14:9",
+      "answers": [
+        {
+          "text": "Only the hair on the top of his head",
+          "isCorrect": false
+        },
+        {
+          "text": "Only his beard, leaving his head alone",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing, since he already shaved before",
+          "isCorrect": false
+        },
+        {
+          "text": "All his hair, including his beard and eyebrows",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where does the priest put blood of the trespass offering on the man being cleansed?",
+      "explanation": "The priest puts it on the tip of his right ear, the thumb of his right hand and the big toe of his right foot.",
+      "bibleReference": "Leviticus 14:14",
+      "answers": [
+        {
+          "text": "On his forehead and on both of his hands",
+          "isCorrect": false
+        },
+        {
+          "text": "On his right ear, right thumb and right big toe",
+          "isCorrect": true
+        },
+        {
+          "text": "On his left ear, left hand and left foot",
+          "isCorrect": false
+        },
+        {
+          "text": "On his clothes and on the hair of his head",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Into what does the priest pour some of the log of oil?",
+      "explanation": "The priest pours some of the log of oil into the palm of his own left hand.",
+      "bibleReference": "Leviticus 14:15",
+      "answers": [
+        {
+          "text": "A golden bowl from the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "The cupped hands of the man",
+          "isCorrect": false
+        },
+        {
+          "text": "The palm of his own left hand",
+          "isCorrect": true
+        },
+        {
+          "text": "The bronze basin of water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If the leper is poor, what may he bring for the sin offering and the burnt offering?",
+      "explanation": "If he is poor, he shall take two turtledoves or two young pigeons, one for a sin offering and the other for a burnt offering.",
+      "bibleReference": "Leviticus 14:21-22",
+      "answers": [
+        {
+          "text": "Two turtledoves or two young pigeons",
+          "isCorrect": true
+        },
+        {
+          "text": "Two male goats from the flock",
+          "isCorrect": false
+        },
+        {
+          "text": "Two young bulls from the herd",
+          "isCorrect": false
+        },
+        {
+          "text": "Two rams without any defect",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must happen before the priest goes in to examine a house with a plague?",
+      "explanation": "The priest commands that they empty the house, so that all that is in it is not made unclean.",
+      "bibleReference": "Leviticus 14:36",
+      "answers": [
+        {
+          "text": "The house must be washed with water",
+          "isCorrect": false
+        },
+        {
+          "text": "The family must offer a lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "The roof must be removed",
+          "isCorrect": false
+        },
+        {
+          "text": "The house must be emptied",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happens if the plague breaks out again after the house has been scraped and plastered?",
+      "explanation": "If the plague has spread, it is a destructive mildew; he shall break down the house and carry it out of the city to an unclean place.",
+      "bibleReference": "Leviticus 14:43-45",
+      "answers": [
+        {
+          "text": "The house is plastered a third time",
+          "isCorrect": false
+        },
+        {
+          "text": "The owner must leave the land",
+          "isCorrect": false
+        },
+        {
+          "text": "The house is broken down",
+          "isCorrect": true
+        },
+        {
+          "text": "The house is given to the priests",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

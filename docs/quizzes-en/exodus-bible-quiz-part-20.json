@@ -1,239 +1,239 @@
 {
   "title": "Exodus Bible Quiz - Chapter 20",
-  "description": "Ten questions on the Ten Commandments in Exodus 20.",
+  "description": "Ten questions on Exodus 20: the Ten Commandments, the people's fear at the mountain and the law of the altar.",
   "slug": "exodus-bible-quiz-part-20",
   "categorySlug": "old-testament",
   "rewardXp": 100,
-  "difficulty": "medium",
+  "difficulty": "easy",
   "isPremium": false,
   "status": "draft",
   "questions": [
     {
-      "text": "Where did God speak the Ten Commandments to Israel?",
-      "explanation": "God spoke all these words at Sinai, reminding Israel that he had brought them out of the land of Egypt, out of the house of bondage.",
-      "bibleReference": "Exodus 20:1-2",
+      "text": "Out of where does God say he brought the people at the start of the commandments?",
+      "explanation": "God said: 'I am Yahweh your God, who brought you out of the land of Egypt, out of the house of bondage.'",
+      "bibleReference": "Exodus 20:2",
       "answers": [
         {
-          "text": "From the Red Sea",
+          "text": "The land of Midian",
           "isCorrect": false
         },
         {
-          "text": "From Mount Sinai",
+          "text": "The wilderness of Sin",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Egypt",
           "isCorrect": true
         },
         {
-          "text": "From the burning bush",
-          "isCorrect": false
-        },
-        {
-          "text": "From the tabernacle",
+          "text": "The land of Canaan",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What is the first commandment?",
-      "explanation": "The first commandment forbids any other gods before the LORD.",
-      "bibleReference": "Exodus 20:3",
+      "text": "To which generations does God visit the iniquity of the fathers on those who hate him?",
+      "explanation": "God visits the iniquity of the fathers on the children, on the third and on the fourth generation of those who hate him.",
+      "bibleReference": "Exodus 20:5",
       "answers": [
         {
-          "text": "You shall not commit murder",
-          "isCorrect": false
-        },
-        {
-          "text": "Honor your father and mother",
-          "isCorrect": false
-        },
-        {
-          "text": "You shall not steal from others",
-          "isCorrect": false
-        },
-        {
-          "text": "You shall have no other gods before me",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "text": "What does the second commandment forbid?",
-      "explanation": "You shall not make for yourself an engraved image, nor bow down to it or serve it.",
-      "bibleReference": "Exodus 20:4-5",
-      "answers": [
-        {
-          "text": "Making an idol or bowing down to it",
+          "text": "The third and the fourth generation",
           "isCorrect": true
         },
         {
-          "text": "Working on the seventh day",
+          "text": "The second generation only",
           "isCorrect": false
         },
         {
-          "text": "Using the LORD's name in vain",
+          "text": "The seventh generation",
           "isCorrect": false
         },
         {
-          "text": "Coveting your neighbor's house",
+          "text": "The tenth generation",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What does the third commandment say about the LORD's name?",
-      "explanation": "You shall not take the LORD your God's name in vain, for he will not hold him guiltless who takes his name in vain.",
-      "bibleReference": "Exodus 20:7",
-      "answers": [
-        {
-          "text": "Write it on your doorposts",
-          "isCorrect": false
-        },
-        {
-          "text": "Never speak it aloud",
-          "isCorrect": false
-        },
-        {
-          "text": "Do not take it in vain",
-          "isCorrect": true
-        },
-        {
-          "text": "Give it to your children",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "What are Israel told to do with the Sabbath day?",
-      "explanation": "Remember the Sabbath day, to keep it holy: six days work, but the seventh day is a Sabbath to the LORD.",
+      "text": "Which day were the people to remember and keep holy?",
+      "explanation": "The commandment says: 'Remember the Sabbath day, to keep it holy.'",
       "bibleReference": "Exodus 20:8",
       "answers": [
         {
-          "text": "Spend it traveling",
+          "text": "The day of the new moon",
           "isCorrect": false
         },
         {
-          "text": "Remember it and keep it holy",
+          "text": "The Sabbath day",
           "isCorrect": true
         },
         {
-          "text": "Use it for trade",
+          "text": "The first day of the year",
           "isCorrect": false
         },
         {
-          "text": "Bring a tenth of their crops",
+          "text": "The day of harvest",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What reason is given for the Sabbath?",
-      "explanation": "In six days the LORD made heaven and earth, the sea, and all that is in them, and rested the seventh day.",
+      "text": "What reason does the commandment give for keeping the Sabbath?",
+      "explanation": "In six days Yahweh made heaven and earth, the sea, and all that is in them, and rested the seventh day.",
       "bibleReference": "Exodus 20:11",
       "answers": [
         {
-          "text": "God made heaven, earth and sea in six days and rested on the seventh",
+          "text": "The manna did not fall from heaven on that day",
+          "isCorrect": false
+        },
+        {
+          "text": "The land and its fields needed time to rest",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests needed one day for their sacrifices",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh made everything in six days and rested the seventh",
           "isCorrect": true
-        },
-        {
-          "text": "The LORD freed Israel from slavery in Egypt on that day",
-          "isCorrect": false
-        },
-        {
-          "text": "Moses came down from the mountain with the law on that day",
-          "isCorrect": false
-        },
-        {
-          "text": "The LORD rained down manna for the people on that day",
-          "isCorrect": false
         }
       ]
     },
     {
-      "text": "Which commandment comes with a promise of long life in the land?",
-      "explanation": "Honor your father and your mother, that your days may be long in the land which the LORD your God gives you.",
+      "text": "What promise comes with the command to honor your father and mother?",
+      "explanation": "Honor your father and your mother, 'that your days may be long in the land which Yahweh your God gives you.'",
       "bibleReference": "Exodus 20:12",
       "answers": [
         {
-          "text": "You shall not commit murder",
-          "isCorrect": false
-        },
-        {
-          "text": "You shall not commit adultery",
-          "isCorrect": false
-        },
-        {
-          "text": "You shall not bear false witness",
-          "isCorrect": false
-        },
-        {
-          "text": "Honor your father and your mother",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "text": "Which of these is one of the Ten Commandments?",
-      "explanation": "Alongside the commandments against murder and adultery stands the plain command: you shall not steal.",
-      "bibleReference": "Exodus 20:15",
-      "answers": [
-        {
-          "text": "You shall not eat unclean food",
-          "isCorrect": false
-        },
-        {
-          "text": "You shall not cut your hair",
-          "isCorrect": false
-        },
-        {
-          "text": "You shall not steal",
+          "text": "That your days may be long in the land",
           "isCorrect": true
         },
         {
-          "text": "You shall not travel on the Sabbath",
+          "text": "That you will become rich",
+          "isCorrect": false
+        },
+        {
+          "text": "That your children will honor you",
+          "isCorrect": false
+        },
+        {
+          "text": "That you will have many sons",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What does the last commandment forbid?",
-      "explanation": "You shall not covet your neighbor's house, wife, servants, ox, donkey, or anything that is your neighbor's.",
+      "text": "Besides his house and wife, which possession of your neighbor does the last commandment name?",
+      "explanation": "You shall not covet your neighbor's house, wife, male servant, female servant, ox, donkey, or anything that is your neighbor's.",
       "bibleReference": "Exodus 20:17",
       "answers": [
         {
-          "text": "Coveting what belongs to your neighbor",
+          "text": "His camel",
+          "isCorrect": false
+        },
+        {
+          "text": "His vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "His ox",
           "isCorrect": true
         },
         {
-          "text": "Gathering food on the Sabbath",
-          "isCorrect": false
-        },
-        {
-          "text": "Bowing down to carved images",
-          "isCorrect": false
-        },
-        {
-          "text": "Taking the LORD's name in vain",
+          "text": "His sword",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "How did the people react when they saw the thunder, lightning and smoke on the mountain?",
-      "explanation": "The people trembled and stayed at a distance, and asked Moses to speak with them rather than God, lest they die.",
-      "bibleReference": "Exodus 20:18-19",
+      "text": "What did the trembling people ask Moses?",
+      "explanation": "They said: 'Speak with us yourself, and we will listen; but don't let God speak with us, lest we die.'",
+      "bibleReference": "Exodus 20:19",
       "answers": [
         {
-          "text": "They ran to climb the mountain",
+          "text": "That Moses take them back to Egypt",
           "isCorrect": false
         },
         {
-          "text": "They trembled and stood far away",
+          "text": "That Aaron go up the mountain instead",
+          "isCorrect": false
+        },
+        {
+          "text": "That Moses build them an altar at once",
+          "isCorrect": false
+        },
+        {
+          "text": "That Moses speak with them, not God, lest they die",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to Moses, why had God come?",
+      "explanation": "Moses said: 'Don't be afraid, for God has come to test you, and that his fear may be before you, that you won't sin.'",
+      "bibleReference": "Exodus 20:20",
+      "answers": [
+        {
+          "text": "To punish them for their murmuring",
+          "isCorrect": false
+        },
+        {
+          "text": "To test them, so that they would not sin",
           "isCorrect": true
         },
         {
-          "text": "They sang and danced",
+          "text": "To give them the land right away",
           "isCorrect": false
         },
         {
-          "text": "They built a second altar at once",
+          "text": "To choose a king for them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Of what did Yahweh tell them to make an altar for him?",
+      "explanation": "Yahweh said: 'You shall make an altar of earth for me, and shall sacrifice on it your burnt offerings and your peace offerings.'",
+      "bibleReference": "Exodus 20:24",
+      "answers": [
+        {
+          "text": "Earth",
+          "isCorrect": true
+        },
+        {
+          "text": "Gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "Cedar wood",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What would pollute an altar of stone?",
+      "explanation": "An altar of stone was not to be built of cut stones, 'for if you lift up your tool on it, you have polluted it.'",
+      "bibleReference": "Exodus 20:25",
+      "answers": [
+        {
+          "text": "Touching it with bare hands",
+          "isCorrect": false
+        },
+        {
+          "text": "Building it on a hill",
+          "isCorrect": false
+        },
+        {
+          "text": "Lifting up a tool on it",
+          "isCorrect": true
+        },
+        {
+          "text": "Putting it near the tents",
           "isCorrect": false
         }
       ]

@@ -1,0 +1,242 @@
+{
+  "title": "Ruth Bible Quiz - Chapter 1",
+  "description": "Ten questions on Ruth 1: Naomi's family in Moab, Ruth's loyalty, and the return to Bethlehem.",
+  "slug": "ruth-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why did the man of Bethlehem Judah go to live in Moab?",
+      "explanation": "In the days when the judges judged, there was a famine in the land, so a man of Bethlehem Judah went to live in Moab with his wife and two sons.",
+      "bibleReference": "Ruth 1:1",
+      "answers": [
+        {
+          "text": "There was a famine in the land",
+          "isCorrect": true
+        },
+        {
+          "text": "An enemy army attacked Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "The king sent him there",
+          "isCorrect": false
+        },
+        {
+          "text": "A flood destroyed his fields",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the names of Elimelech's two sons?",
+      "explanation": "The names of his two sons were Mahlon and Chilion, Ephrathites of Bethlehem Judah.",
+      "bibleReference": "Ruth 1:2",
+      "answers": [
+        {
+          "text": "Perez and Hezron",
+          "isCorrect": false
+        },
+        {
+          "text": "Hophni and Phinehas",
+          "isCorrect": false
+        },
+        {
+          "text": "Mahlon and Chilion",
+          "isCorrect": true
+        },
+        {
+          "text": "Boaz and Obed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the names of the Moabite women the two sons married?",
+      "explanation": "They took wives of the women of Moab; the name of one was Orpah and the other Ruth.",
+      "bibleReference": "Ruth 1:4",
+      "answers": [
+        {
+          "text": "Hannah and Peninnah",
+          "isCorrect": false
+        },
+        {
+          "text": "Orpah and Ruth",
+          "isCorrect": true
+        },
+        {
+          "text": "Rachel and Leah",
+          "isCorrect": false
+        },
+        {
+          "text": "Tamar and Dinah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "About how long did the family live in Moab?",
+      "explanation": "The text says they lived there about ten years.",
+      "bibleReference": "Ruth 1:4",
+      "answers": [
+        {
+          "text": "About three years",
+          "isCorrect": false
+        },
+        {
+          "text": "About seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "About forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "About ten years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What news made Naomi decide to return from Moab?",
+      "explanation": "She had heard in Moab how Yahweh had visited his people in giving them bread.",
+      "bibleReference": "Ruth 1:6",
+      "answers": [
+        {
+          "text": "Her husband's brother had sent for her",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh had given his people bread",
+          "isCorrect": true
+        },
+        {
+          "text": "The Moabites wanted her to leave",
+          "isCorrect": false
+        },
+        {
+          "text": "Her land in Bethlehem had been sold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Orpah do when Naomi urged her daughters-in-law to go back?",
+      "explanation": "They wept again; then Orpah kissed her mother-in-law, but Ruth stayed with her.",
+      "bibleReference": "Ruth 1:14",
+      "answers": [
+        {
+          "text": "She kissed her mother-in-law",
+          "isCorrect": true
+        },
+        {
+          "text": "She refused to say goodbye",
+          "isCorrect": false
+        },
+        {
+          "text": "She went on with Naomi to Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "She asked Ruth to stay in Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Complete Ruth's words: \"Your people will be my people, and...\"",
+      "explanation": "Ruth said, \"Your people will be my people, and your God my God.\"",
+      "bibleReference": "Ruth 1:16",
+      "answers": [
+        {
+          "text": "\"...your house my house.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"...your land my inheritance.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"...your sorrow my sorrow.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"...your God my God.\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Naomi ask the women of Bethlehem to call her?",
+      "explanation": "She said, \"Don't call me Naomi. Call me Mara, for the Almighty has dealt very bitterly with me.\"",
+      "bibleReference": "Ruth 1:20",
+      "answers": [
+        {
+          "text": "Hephzibah",
+          "isCorrect": false
+        },
+        {
+          "text": "Dinah",
+          "isCorrect": false
+        },
+        {
+          "text": "Mara",
+          "isCorrect": true
+        },
+        {
+          "text": "Orpah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Complete Naomi's words: \"I went out full, and Yahweh has brought me home again...\"",
+      "explanation": "Naomi said, \"I went out full, and Yahweh has brought me home again empty.\"",
+      "bibleReference": "Ruth 1:21",
+      "answers": [
+        {
+          "text": "\"...empty.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"...rich.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"...in honor.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"...rejoicing.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what time of year did Naomi and Ruth come to Bethlehem?",
+      "explanation": "They came to Bethlehem in the beginning of barley harvest.",
+      "bibleReference": "Ruth 1:22",
+      "answers": [
+        {
+          "text": "At the end of wheat harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "During the grape harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "At the beginning of barley harvest",
+          "isCorrect": true
+        },
+        {
+          "text": "In the middle of winter",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

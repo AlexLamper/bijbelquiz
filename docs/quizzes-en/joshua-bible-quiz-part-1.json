@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 1",
+  "description": "Ten questions on Joshua 1: Yahweh's charge to Joshua after the death of Moses, and the people's answer.",
+  "slug": "joshua-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Whose servant is Joshua the son of Nun called in verse 1?",
+      "explanation": "Verse 1 says Yahweh spoke to Joshua the son of Nun, Moses' servant, after the death of Moses.",
+      "bibleReference": "Joshua 1:1",
+      "answers": [
+        {
+          "text": "Aaron's servant",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb's servant",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar's servant",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses' servant",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say he had given to Joshua?",
+      "explanation": "Verse 3 says: \"I have given you every place that the sole of your foot will tread on, as I told Moses.\"",
+      "bibleReference": "Joshua 1:3",
+      "answers": [
+        {
+          "text": "Every place that the sole of his foot would tread on",
+          "isCorrect": true
+        },
+        {
+          "text": "Every city whose king he defeated",
+          "isCorrect": false
+        },
+        {
+          "text": "Every land he could see from the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "Every well that he would dig",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which great river is named as part of the border?",
+      "explanation": "Verse 4 names the border as reaching \"to the great river, the river Euphrates.\"",
+      "bibleReference": "Joshua 1:4",
+      "answers": [
+        {
+          "text": "The river Tigris",
+          "isCorrect": false
+        },
+        {
+          "text": "The river Arnon",
+          "isCorrect": false
+        },
+        {
+          "text": "The river Euphrates",
+          "isCorrect": true
+        },
+        {
+          "text": "The river Nile",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Complete Yahweh's promise: \"As I was with Moses, so ...\"",
+      "explanation": "Verse 5 says: \"As I was with Moses, so I will be with you. I will not fail you nor forsake you.\"",
+      "bibleReference": "Joshua 1:5",
+      "answers": [
+        {
+          "text": "\"I will give you a new name\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will be with you\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"you will see my face\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"you will speak with me on the mountain\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was not to depart from Joshua's mouth?",
+      "explanation": "Verse 8 says: \"This book of the law shall not depart from your mouth.\"",
+      "bibleReference": "Joshua 1:8",
+      "answers": [
+        {
+          "text": "This book of the law",
+          "isCorrect": true
+        },
+        {
+          "text": "The song of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The names of the tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The blessing of Aaron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When was Joshua to meditate on the book of the law?",
+      "explanation": "Verse 8 says he was to meditate on it day and night, to observe to do all that is written in it.",
+      "bibleReference": "Joshua 1:8",
+      "answers": [
+        {
+          "text": "Only on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Every morning at sunrise",
+          "isCorrect": false
+        },
+        {
+          "text": "At the end of every seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Day and night",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Within how many days were the people to pass over the Jordan?",
+      "explanation": "The officers were to tell the people to prepare food, \"for within three days you are to pass over this Jordan.\"",
+      "bibleReference": "Joshua 1:10-11",
+      "answers": [
+        {
+          "text": "Within seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Within ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Within three days",
+          "isCorrect": true
+        },
+        {
+          "text": "Within forty days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which tribes were told their wives, little ones and livestock would stay in the land beyond the Jordan?",
+      "explanation": "Joshua spoke to the Reubenites, the Gadites and the half-tribe of Manasseh, whose families and livestock would live in the land Moses gave them beyond the Jordan.",
+      "bibleReference": "Joshua 1:12-14",
+      "answers": [
+        {
+          "text": "The tribes of Judah, Simeon and Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "The Reubenites, the Gadites and the half-tribe of Manasseh",
+          "isCorrect": true
+        },
+        {
+          "text": "The tribes of Ephraim, Dan and Naphtali",
+          "isCorrect": false
+        },
+        {
+          "text": "The tribes of Levi, Issachar and Zebulun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Until when were these armed men to help their brothers?",
+      "explanation": "They were to help their brothers until Yahweh had given them rest and they had also possessed their land; then they could return.",
+      "bibleReference": "Joshua 1:14-15",
+      "answers": [
+        {
+          "text": "Until Joshua had grown old and died",
+          "isCorrect": false
+        },
+        {
+          "text": "For seven years after crossing the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the walls of Jericho were rebuilt",
+          "isCorrect": false
+        },
+        {
+          "text": "Until Yahweh had given their brothers rest",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the people say should happen to anyone who rebels against Joshua's commandment?",
+      "explanation": "Verse 18 says whoever rebels against his commandment and does not listen to his words \"shall himself be put to death.\"",
+      "bibleReference": "Joshua 1:18",
+      "answers": [
+        {
+          "text": "He shall be put to death",
+          "isCorrect": true
+        },
+        {
+          "text": "He shall be sent back across the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "He shall lose his inheritance",
+          "isCorrect": false
+        },
+        {
+          "text": "He shall pay a fine",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

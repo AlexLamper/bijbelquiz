@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 32",
+  "description": "Ten questions on Exodus 32: the golden calf, Moses' prayer for the people, the broken tablets and the sons of Levi.",
+  "slug": "exodus-bible-quiz-part-32",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why did the people gather to Aaron and ask him to make them gods?",
+      "explanation": "The people saw that Moses delayed coming down from the mountain, and they said they did not know what had become of him.",
+      "bibleReference": "Exodus 32:1",
+      "answers": [
+        {
+          "text": "They were hungry and thirsty",
+          "isCorrect": false
+        },
+        {
+          "text": "Enemies were attacking the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron had called them together",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses delayed coming down from the mountain",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Aaron tell the people to bring him?",
+      "explanation": "Aaron said: \"Take off the golden rings, which are in the ears of your wives, of your sons, and of your daughters, and bring them to me.\"",
+      "bibleReference": "Exodus 32:2",
+      "answers": [
+        {
+          "text": "The golden rings in their ears",
+          "isCorrect": true
+        },
+        {
+          "text": "Their silver drinking cups",
+          "isCorrect": false
+        },
+        {
+          "text": "Their polished bronze mirrors",
+          "isCorrect": false
+        },
+        {
+          "text": "The best of their cattle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Aaron make with the gold?",
+      "explanation": "Aaron fashioned the gold with an engraving tool and made it a molded calf.",
+      "bibleReference": "Exodus 32:4",
+      "answers": [
+        {
+          "text": "A bronze serpent",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden eagle",
+          "isCorrect": false
+        },
+        {
+          "text": "A molded calf",
+          "isCorrect": true
+        },
+        {
+          "text": "A golden lion",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Moses ask God to remember?",
+      "explanation": "Moses said: \"Remember Abraham, Isaac, and Israel, your servants,\" to whom God had sworn to multiply their offspring.",
+      "bibleReference": "Exodus 32:13",
+      "answers": [
+        {
+          "text": "Noah and his sons",
+          "isCorrect": false
+        },
+        {
+          "text": "Abraham, Isaac and Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Adam and Eve",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph and his brothers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Joshua think he heard in the camp?",
+      "explanation": "When Joshua heard the noise of the people shouting, he said: \"There is the noise of war in the camp.\"",
+      "bibleReference": "Exodus 32:17",
+      "answers": [
+        {
+          "text": "The noise of war",
+          "isCorrect": true
+        },
+        {
+          "text": "A great storm",
+          "isCorrect": false
+        },
+        {
+          "text": "People crying for help",
+          "isCorrect": false
+        },
+        {
+          "text": "Wild animals",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses do with the tablets when he saw the calf and the dancing?",
+      "explanation": "Moses' anger grew hot, and he threw the tablets out of his hands and broke them beneath the mountain.",
+      "bibleReference": "Exodus 32:19",
+      "answers": [
+        {
+          "text": "He hid them in a cave",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave them to Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "He took them back up the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "He threw them down and broke them",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Moses make the Israelites do with the ground-up calf?",
+      "explanation": "He burned the calf, ground it to powder, scattered it on the water and made the children of Israel drink it.",
+      "bibleReference": "Exodus 32:20",
+      "answers": [
+        {
+          "text": "Bury it",
+          "isCorrect": false
+        },
+        {
+          "text": "Carry it out of the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "Drink it",
+          "isCorrect": true
+        },
+        {
+          "text": "Throw it into the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What excuse did Aaron give for the calf?",
+      "explanation": "Aaron said: \"I threw it into the fire, and out came this calf.\"",
+      "bibleReference": "Exodus 32:24",
+      "answers": [
+        {
+          "text": "Moses had told him to make it",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of the fire came this calf",
+          "isCorrect": true
+        },
+        {
+          "text": "The elders made it without him",
+          "isCorrect": false
+        },
+        {
+          "text": "An Egyptian craftsman made it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who gathered to Moses when he asked who was on Yahweh's side?",
+      "explanation": "Moses said: \"Whoever is on Yahweh's side, come to me!\" and all the sons of Levi gathered to him.",
+      "bibleReference": "Exodus 32:26",
+      "answers": [
+        {
+          "text": "All the sons of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventy elders",
+          "isCorrect": false
+        },
+        {
+          "text": "The women of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "All the sons of Levi",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Moses ask God to do if he would not forgive the people's sin?",
+      "explanation": "Moses said: \"Forgive their sin - and if not, please blot me out of your book which you have written.\"",
+      "bibleReference": "Exodus 32:32",
+      "answers": [
+        {
+          "text": "Blot him out of his book",
+          "isCorrect": true
+        },
+        {
+          "text": "Let him die in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "Send him back to Midian",
+          "isCorrect": false
+        },
+        {
+          "text": "Give the people a new leader",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

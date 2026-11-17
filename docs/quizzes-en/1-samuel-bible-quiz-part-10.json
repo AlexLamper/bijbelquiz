@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 10",
+  "description": "Ten questions on 1 Samuel 10: Saul is anointed by Samuel, prophesies among the prophets, and is chosen king at Mizpah.",
+  "slug": "1-samuel-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Samuel pour on Saul's head?",
+      "explanation": "Samuel took the vial of oil, poured it on his head, and kissed him.",
+      "bibleReference": "1 Samuel 10:1",
+      "answers": [
+        {
+          "text": "A cup of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A vial of oil",
+          "isCorrect": true
+        },
+        {
+          "text": "Water from the well",
+          "isCorrect": false
+        },
+        {
+          "text": "Ashes from the altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Samuel say Saul would find two men?",
+      "explanation": "Samuel said Saul would find two men by Rachel's tomb, on the border of Benjamin at Zelzah.",
+      "bibleReference": "1 Samuel 10:2",
+      "answers": [
+        {
+          "text": "At the oak of Tabor",
+          "isCorrect": false
+        },
+        {
+          "text": "At the gate of Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "By the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "By Rachel's tomb",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many loaves of bread would the three men at the oak of Tabor give Saul?",
+      "explanation": "Samuel said they would greet him and give him two loaves of bread.",
+      "bibleReference": "1 Samuel 10:3-4",
+      "answers": [
+        {
+          "text": "Two",
+          "isCorrect": true
+        },
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Five",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long was Saul to wait at Gilgal until Samuel came?",
+      "explanation": "Samuel said, \"Wait seven days, until I come to you, and show you what you are to do.\"",
+      "bibleReference": "1 Samuel 10:8",
+      "answers": [
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What saying became a proverb when Saul prophesied?",
+      "explanation": "When people saw him prophesying, it became a proverb: \"Is Saul also among the prophets?\"",
+      "bibleReference": "1 Samuel 10:11-12",
+      "answers": [
+        {
+          "text": "\"Saul has slain his thousands\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Long live the son of Kish!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Is Saul also among the prophets?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Who is like Saul in Israel?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Saul not tell his uncle?",
+      "explanation": "Saul told his uncle the donkeys were found, but did not tell him about the matter of the kingdom.",
+      "bibleReference": "1 Samuel 10:16",
+      "answers": [
+        {
+          "text": "That the donkeys had been found",
+          "isCorrect": false
+        },
+        {
+          "text": "The matter of the kingdom Samuel spoke of",
+          "isCorrect": true
+        },
+        {
+          "text": "That he had visited Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Where he had gone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Saul hiding when he was chosen and could not be found?",
+      "explanation": "Yahweh answered, \"Behold, he has hidden himself among the baggage.\"",
+      "bibleReference": "1 Samuel 10:22",
+      "answers": [
+        {
+          "text": "Among the baggage",
+          "isCorrect": true
+        },
+        {
+          "text": "In a cave",
+          "isCorrect": false
+        },
+        {
+          "text": "In his father's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Behind the altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did all the people shout when Samuel presented Saul?",
+      "explanation": "All the people shouted, \"Long live the king!\"",
+      "bibleReference": "1 Samuel 10:24",
+      "answers": [
+        {
+          "text": "\"Yahweh is our king!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"We will not have him!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Hosanna!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Long live the king!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To which town did Saul go to his house?",
+      "explanation": "Saul also went to his house to Gibeah, and the army whose hearts God had touched went with him.",
+      "bibleReference": "1 Samuel 10:26",
+      "answers": [
+        {
+          "text": "Ramah",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeah",
+          "isCorrect": true
+        },
+        {
+          "text": "Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Saul respond when certain worthless fellows despised him?",
+      "explanation": "They despised him and brought him no present, but he held his peace.",
+      "bibleReference": "1 Samuel 10:27",
+      "answers": [
+        {
+          "text": "He had them put to death",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent them out of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "He held his peace",
+          "isCorrect": true
+        },
+        {
+          "text": "He demanded a present from them",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

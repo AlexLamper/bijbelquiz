@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 12",
+  "description": "Ten questions on Exodus 12: the first Passover, the blood on the doors, the death of the firstborn and the departure from Egypt.",
+  "slug": "exodus-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Yahweh say this month would be for Israel?",
+      "explanation": "Yahweh said this month would be the beginning of months, the first month of the year for them.",
+      "bibleReference": "Exodus 12:2",
+      "answers": [
+        {
+          "text": "The first month of the year",
+          "isCorrect": true
+        },
+        {
+          "text": "The last month of the year",
+          "isCorrect": false
+        },
+        {
+          "text": "A month of fasting",
+          "isCorrect": false
+        },
+        {
+          "text": "The month of harvest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day of the month was every man to take a lamb for his household?",
+      "explanation": "On the tenth day of this month every man was to take a lamb, a lamb for a household.",
+      "bibleReference": "Exodus 12:3",
+      "answers": [
+        {
+          "text": "The first day",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventh day",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth day",
+          "isCorrect": true
+        },
+        {
+          "text": "The twentieth day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of lamb were they to take?",
+      "explanation": "The lamb had to be without defect, a male a year old, taken from the sheep or from the goats.",
+      "bibleReference": "Exodus 12:5",
+      "answers": [
+        {
+          "text": "A female two years old",
+          "isCorrect": false
+        },
+        {
+          "text": "A male a year old, without defect",
+          "isCorrect": true
+        },
+        {
+          "text": "A male three years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Any lamb from the flock",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were they to put some of the lamb's blood?",
+      "explanation": "They were to put some of the blood on the two door posts and on the lintel of the houses where they ate it.",
+      "bibleReference": "Exodus 12:7",
+      "answers": [
+        {
+          "text": "On the roof and the outer walls",
+          "isCorrect": false
+        },
+        {
+          "text": "On the threshold and the floor",
+          "isCorrect": false
+        },
+        {
+          "text": "On the altar in front of the house",
+          "isCorrect": false
+        },
+        {
+          "text": "On the two door posts and the lintel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How were they to eat the meat of the lamb?",
+      "explanation": "They were to eat the meat that night, roasted with fire, with unleavened bread and bitter herbs.",
+      "bibleReference": "Exodus 12:8",
+      "answers": [
+        {
+          "text": "Boiled in water, with leavened bread and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Roasted, with unleavened bread and bitter herbs",
+          "isCorrect": true
+        },
+        {
+          "text": "Raw, with salt and fresh bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Dried in the sun, with honey and figs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How were they to be dressed while eating the Passover?",
+      "explanation": "They were to eat it with a belt on the waist, sandals on the feet and a staff in the hand, and eat it in haste.",
+      "bibleReference": "Exodus 12:11",
+      "answers": [
+        {
+          "text": "With belt, sandals and staff ready",
+          "isCorrect": true
+        },
+        {
+          "text": "In white linen robes",
+          "isCorrect": false
+        },
+        {
+          "text": "Barefoot with covered heads",
+          "isCorrect": false
+        },
+        {
+          "text": "In sackcloth and ashes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses tell the elders to dip in the blood in the basin?",
+      "explanation": "Moses told them to take a bunch of hyssop, dip it in the blood in the basin, and strike the lintel and the two door posts.",
+      "bibleReference": "Exodus 12:22",
+      "answers": [
+        {
+          "text": "A palm branch",
+          "isCorrect": false
+        },
+        {
+          "text": "A linen cloth",
+          "isCorrect": false
+        },
+        {
+          "text": "An olive branch",
+          "isCorrect": false
+        },
+        {
+          "text": "A bunch of hyssop",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "From where to where did the children of Israel travel when they left?",
+      "explanation": "The children of Israel traveled from Rameses to Succoth, about six hundred thousand men on foot, besides children.",
+      "bibleReference": "Exodus 12:37",
+      "answers": [
+        {
+          "text": "From Pithom to Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "From On to Shur",
+          "isCorrect": false
+        },
+        {
+          "text": "From Rameses to Succoth",
+          "isCorrect": true
+        },
+        {
+          "text": "From Memphis to Marah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long had the children of Israel lived in Egypt?",
+      "explanation": "The time that the children of Israel lived in Egypt was four hundred thirty years.",
+      "bibleReference": "Exodus 12:40",
+      "answers": [
+        {
+          "text": "Four hundred thirty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Four hundred years",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the ordinance of the Passover, what must not be done to the lamb?",
+      "explanation": "It had to be eaten in one house, none of the meat could be carried outside, and none of its bones could be broken.",
+      "bibleReference": "Exodus 12:46",
+      "answers": [
+        {
+          "text": "It may not be killed at evening",
+          "isCorrect": false
+        },
+        {
+          "text": "It may not be shared with a neighbor",
+          "isCorrect": false
+        },
+        {
+          "text": "None of its bones may be broken",
+          "isCorrect": true
+        },
+        {
+          "text": "It may not be roasted",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
