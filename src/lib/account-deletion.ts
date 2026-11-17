@@ -14,6 +14,7 @@ import {
   UserProgress,
 } from '@/database';
 import { resolvePremiumSubscription } from '@/lib/premium-subscription';
+import { msg } from '@/lib/api-messages';
 
 /**
  * Deleting an account, for `/account-verwijderen` (web) and the same route
@@ -46,14 +47,14 @@ export type DeletionResult =
 
 export async function deleteAccount(userId: string): Promise<DeletionResult> {
   if (!mongoose.isValidObjectId(userId)) {
-    return { ok: false, code: 'NOT_FOUND', message: 'Account niet gevonden.', status: 404 };
+    return { ok: false, code: 'NOT_FOUND', message: msg('Account niet gevonden.'), status: 404 };
   }
 
   await connectDB();
   const id = new mongoose.Types.ObjectId(userId);
   const user = await User.findById(id);
   if (!user) {
-    return { ok: false, code: 'NOT_FOUND', message: 'Account niet gevonden.', status: 404 };
+    return { ok: false, code: 'NOT_FOUND', message: msg('Account niet gevonden.'), status: 404 };
   }
 
   if (user.stripeSubscriptionId || (user.isPremium && !user.hasLifetimePremium && user.stripeCustomerId)) {
@@ -64,7 +65,7 @@ export async function deleteAccount(userId: string): Promise<DeletionResult> {
         ok: false,
         code: 'ACTIVE_SUBSCRIPTION',
         status: 409,
-        message: 'Je hebt nog een lopend Premium-abonnement. Zeg het eerst op via Premium beheren, daarna kun je je account verwijderen.',
+        message: msg('Je hebt nog een lopend Premium-abonnement. Zeg het eerst op via Premium beheren, daarna kun je je account verwijderen.'),
       };
     }
   }
@@ -75,7 +76,7 @@ export async function deleteAccount(userId: string): Promise<DeletionResult> {
       ok: false,
       code: 'ACTIVE_GROUP_LICENSE',
       status: 409,
-      message: 'Je beheert nog een actieve groepslicentie. Neem contact met ons op om die over te dragen of te stoppen.',
+      message: msg('Je beheert nog een actieve groepslicentie. Neem contact met ons op om die over te dragen of te stoppen.'),
     };
   }
 

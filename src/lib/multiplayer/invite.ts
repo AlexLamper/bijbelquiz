@@ -1,4 +1,5 @@
 import { getSiteConfig, getSiteId } from '@/config/site';
+import { msg } from '@/lib/api-messages';
 
 /**
  * Room invitations.
@@ -46,13 +47,13 @@ export function buildRoomInviteMessage(
   origin?: string,
 ): string {
   const code = roomCode.trim().toUpperCase();
-  const title = quizTitle.trim() || 'een bijbelquiz';
+  const title = quizTitle.trim() || msg('een bijbelquiz');
 
   return [
-    `Doe je mee met ${title} op BijbelQuiz?`,
+    msg('Doe je mee met {title} op BijbelQuiz?', { title }),
     '',
     buildRoomInviteUrl(code, origin),
     '',
-    `Of vul de code in: ${code}`,
+    msg('Of vul de code in: {code}', { code }),
   ].join('\n');
 }

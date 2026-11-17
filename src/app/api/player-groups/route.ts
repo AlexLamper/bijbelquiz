@@ -8,6 +8,7 @@ import {
   removeMember,
   renameGroup,
 } from '@/lib/player-groups';
+import { msg } from '@/lib/api-messages';
 
 /**
  * Saved player groups.
@@ -59,7 +60,7 @@ export async function POST(req: NextRequest) {
     );
   } catch (error) {
     console.error('[PLAYER_GROUPS_POST]', error);
-    return NextResponse.json({ error: 'Groep bewaren is niet gelukt.' }, { status: 500 });
+    return NextResponse.json({ error: msg('Groep bewaren is niet gelukt.') }, { status: 500 });
   }
 }
 
@@ -96,6 +97,6 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ groups });
   } catch (error) {
     console.error('[PLAYER_GROUPS_PATCH]', error);
-    return NextResponse.json({ error: 'Bijwerken is niet gelukt.' }, { status: 500 });
+    return NextResponse.json({ error: msg('Bijwerken is niet gelukt.') }, { status: 500 });
   }
 }

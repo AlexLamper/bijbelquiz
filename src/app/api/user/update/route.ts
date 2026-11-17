@@ -4,6 +4,7 @@ import { connectDB, User } from '@/database';
 import { getPremiumSnapshot } from '@/lib/premium-state';
 import { resolveAvatar } from '@/lib/avatar';
 import { daysUntilRenameAllowed, updateIdentity } from '@/lib/profile-identity';
+import { msg } from '@/lib/api-messages';
 
 /**
  * PUT /api/user/update - change display name and/or mascot.
@@ -17,7 +18,7 @@ export async function PUT(req: NextRequest) {
     const session = await getSession(req);
 
     if (!session?.user?.id) {
-      return NextResponse.json({ error: 'Niet geautoriseerd' }, { status: 401 });
+      return NextResponse.json({ error: msg('Niet geautoriseerd') }, { status: 401 });
     }
 
     const body = await req.json().catch(() => ({}));
@@ -38,7 +39,7 @@ export async function PUT(req: NextRequest) {
     await connectDB();
     const user = await User.findById(session.user.id).lean();
     if (!user) {
-      return NextResponse.json({ error: 'Gebruiker niet gevonden' }, { status: 404 });
+      return NextResponse.json({ error: msg('Gebruiker niet gevonden') }, { status: 404 });
     }
 
     const premium = getPremiumSnapshot(user);
@@ -61,7 +62,7 @@ export async function PUT(req: NextRequest) {
     });
   } catch (error) {
     console.error('[USER_UPDATE_PUT]', error);
-    return NextResponse.json({ error: 'Er is een interne fout opgetreden' }, { status: 500 });
+    return NextResponse.json({ error: msg('Er is een interne fout opgetreden') }, { status: 500 });
   }
 }
 
@@ -71,14 +72,14 @@ export async function GET(req: NextRequest) {
     const session = await getSession(req);
 
     if (!session?.user?.id) {
-      return NextResponse.json({ error: 'Niet geautoriseerd' }, { status: 401 });
+      return NextResponse.json({ error: msg('Niet geautoriseerd') }, { status: 401 });
     }
 
     await connectDB();
     const user = await User.findById(session.user.id).select('name email image avatar nameUpdatedAt').lean();
 
     if (!user) {
-      return NextResponse.json({ error: 'Gebruiker niet gevonden' }, { status: 404 });
+      return NextResponse.json({ error: msg('Gebruiker niet gevonden') }, { status: 404 });
     }
 
     return NextResponse.json({
@@ -91,6 +92,6 @@ export async function GET(req: NextRequest) {
     });
   } catch (error) {
     console.error('[USER_UPDATE_GET]', error);
-    return NextResponse.json({ error: 'Er is een interne fout opgetreden' }, { status: 500 });
+    return NextResponse.json({ error: msg('Er is een interne fout opgetreden') }, { status: 500 });
   }
 }

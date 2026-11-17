@@ -1,4 +1,5 @@
 import { MultiplayerError } from './errors';
+import { msg } from '@/lib/api-messages';
 
 /**
  * A ceiling on how many rooms one account can open in an hour.
@@ -61,7 +62,7 @@ export function assertRoomCreationAllowed(userId: string): void {
   if (timestamps.length >= MAX_ROOMS_PER_HOUR) {
     throw new MultiplayerError(
       'RATE_LIMITED',
-      'Je hebt in korte tijd veel spellen aangemaakt. Probeer het over een uurtje opnieuw.',
+      msg('Je hebt in korte tijd veel spellen aangemaakt. Probeer het over een uurtje opnieuw.'),
       429,
     );
   }

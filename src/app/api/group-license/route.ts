@@ -8,6 +8,7 @@ import {
   renameGroupLicense,
   summarizeLicensesFor,
 } from '@/lib/group-license';
+import { msg } from '@/lib/api-messages';
 
 /**
  * Group licences, for the buyer and for the people who redeem their code.
@@ -55,7 +56,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ license: result.license });
   } catch (error) {
     console.error('[GROUP_LICENSE_POST]', error);
-    return NextResponse.json({ error: 'Deelnemen is niet gelukt.' }, { status: 500 });
+    return NextResponse.json({ error: msg('Deelnemen is niet gelukt.') }, { status: 500 });
   }
 }
 
@@ -71,7 +72,7 @@ export async function PATCH(req: NextRequest) {
     const licenseId = typeof body?.licenseId === 'string' ? body.licenseId : '';
 
     if (!licenseId) {
-      return NextResponse.json({ error: 'Onbekende groep.' }, { status: 400 });
+      return NextResponse.json({ error: msg('Onbekende groep.') }, { status: 400 });
     }
 
     if (typeof body?.removeMemberId === 'string') {
@@ -92,6 +93,6 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ licenses });
   } catch (error) {
     console.error('[GROUP_LICENSE_PATCH]', error);
-    return NextResponse.json({ error: 'Bijwerken is niet gelukt.' }, { status: 500 });
+    return NextResponse.json({ error: msg('Bijwerken is niet gelukt.') }, { status: 500 });
   }
 }
