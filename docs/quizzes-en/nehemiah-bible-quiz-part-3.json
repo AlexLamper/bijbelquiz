@@ -1,0 +1,242 @@
+{
+  "title": "Nehemiah Bible Quiz - Chapter 3",
+  "description": "Ten questions on Nehemiah 3: who rebuilt which gates and sections of the wall of Jerusalem.",
+  "slug": "nehemiah-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who built the sheep gate?",
+      "explanation": "Nehemiah 3:1 says Eliashib the high priest rose up with his brothers the priests and built the sheep gate.",
+      "bibleReference": "Nehemiah 3:1",
+      "answers": [
+        {
+          "text": "Eliashib the high priest and the priests",
+          "isCorrect": true
+        },
+        {
+          "text": "The men of Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanun and the inhabitants of Zanoah",
+          "isCorrect": false
+        },
+        {
+          "text": "The goldsmiths and the merchants",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which gate did the sons of Hassenaah build?",
+      "explanation": "Nehemiah 3:3 says the sons of Hassenaah built the fish gate.",
+      "bibleReference": "Nehemiah 3:3",
+      "answers": [
+        {
+          "text": "The dung gate",
+          "isCorrect": false
+        },
+        {
+          "text": "The spring gate",
+          "isCorrect": false
+        },
+        {
+          "text": "The old gate",
+          "isCorrect": false
+        },
+        {
+          "text": "The fish gate",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is said about the nobles of the Tekoites?",
+      "explanation": "Nehemiah 3:5 says their nobles didn't put their necks to the Lord's work.",
+      "bibleReference": "Nehemiah 3:5",
+      "answers": [
+        {
+          "text": "They paid for all the timber",
+          "isCorrect": false
+        },
+        {
+          "text": "They didn't put their necks to the Lord's work",
+          "isCorrect": true
+        },
+        {
+          "text": "They built the tower of Hananel",
+          "isCorrect": false
+        },
+        {
+          "text": "They guarded the workers at night",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Hananiah, who made repairs next to Uzziel?",
+      "explanation": "Nehemiah 3:8 says Hananiah was one of the perfumers.",
+      "bibleReference": "Nehemiah 3:8",
+      "answers": [
+        {
+          "text": "One of the gatekeepers",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the singers",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the perfumers",
+          "isCorrect": true
+        },
+        {
+          "text": "One of the soldiers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who made repairs together with Shallum the son of Hallohesh?",
+      "explanation": "Nehemiah 3:12 says Shallum made repairs, he and his daughters.",
+      "bibleReference": "Nehemiah 3:12",
+      "answers": [
+        {
+          "text": "His daughters",
+          "isCorrect": true
+        },
+        {
+          "text": "The men of Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "The Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "His servants",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which gate did Hanun and the inhabitants of Zanoah repair?",
+      "explanation": "Nehemiah 3:13 says they repaired the valley gate and one thousand cubits of the wall to the dung gate.",
+      "bibleReference": "Nehemiah 3:13",
+      "answers": [
+        {
+          "text": "The sheep gate",
+          "isCorrect": false
+        },
+        {
+          "text": "The water gate",
+          "isCorrect": false
+        },
+        {
+          "text": "The valley gate",
+          "isCorrect": true
+        },
+        {
+          "text": "The east gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who repaired the dung gate?",
+      "explanation": "Nehemiah 3:14 says Malchijah the son of Rechab, the ruler of the district of Beth Haccherem, repaired the dung gate.",
+      "bibleReference": "Nehemiah 3:14",
+      "answers": [
+        {
+          "text": "Shallun the son of Colhozeh",
+          "isCorrect": false
+        },
+        {
+          "text": "Malchijah the son of Rechab",
+          "isCorrect": true
+        },
+        {
+          "text": "Joiada the son of Paseah",
+          "isCorrect": false
+        },
+        {
+          "text": "Rephaiah the son of Hur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Next to which garden was the wall of the pool of Shelah that Shallun repaired?",
+      "explanation": "Nehemiah 3:15 says the wall of the pool of Shelah was by the king's garden.",
+      "bibleReference": "Nehemiah 3:15",
+      "answers": [
+        {
+          "text": "The garden of the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The garden of Eden",
+          "isCorrect": false
+        },
+        {
+          "text": "The governor's garden",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's garden",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Baruch the son of Zabbai repair his portion?",
+      "explanation": "Nehemiah 3:20 says Baruch the son of Zabbai earnestly repaired another portion.",
+      "bibleReference": "Nehemiah 3:20",
+      "answers": [
+        {
+          "text": "Earnestly",
+          "isCorrect": true
+        },
+        {
+          "text": "Slowly",
+          "isCorrect": false
+        },
+        {
+          "text": "Unwillingly",
+          "isCorrect": false
+        },
+        {
+          "text": "Only by night",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the temple servants live?",
+      "explanation": "Nehemiah 3:26 says the temple servants lived in Ophel.",
+      "bibleReference": "Nehemiah 3:26",
+      "answers": [
+        {
+          "text": "In Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "In Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "In Ophel",
+          "isCorrect": true
+        },
+        {
+          "text": "In Beth Zur",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

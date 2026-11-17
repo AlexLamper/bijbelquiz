@@ -1,0 +1,242 @@
+{
+  "title": "Ezra Bible Quiz - Chapter 6",
+  "description": "Ten questions on Ezra 6: Darius finds Cyrus' decree, the temple is finished and dedicated, and the Passover is kept with joy.",
+  "slug": "ezra-bible-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was the scroll with Cyrus' decree found?",
+      "explanation": "Ezra 6:2 says a scroll was found at Achmetha, in the palace in the province of Media.",
+      "bibleReference": "Ezra 6:1-2",
+      "answers": [
+        {
+          "text": "At Achmetha in Media",
+          "isCorrect": true
+        },
+        {
+          "text": "At Susa, the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "In the temple at Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "At Damascus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Cyrus' decree, what was to be the height of God's house?",
+      "explanation": "Ezra 6:3 says its height was to be sixty cubits, and its width sixty cubits.",
+      "bibleReference": "Ezra 6:3",
+      "answers": [
+        {
+          "text": "Thirty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Out of what were the building expenses to be paid?",
+      "explanation": "Ezra 6:4 says the expenses were to be given out of the king's house.",
+      "bibleReference": "Ezra 6:4",
+      "answers": [
+        {
+          "text": "Out of the temple treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of Tattenai's own possessions",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of the king's house",
+          "isCorrect": true
+        },
+        {
+          "text": "Out of gifts from the elders of the Jews",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who had taken the gold and silver vessels of God's house to Babylon?",
+      "explanation": "Ezra 6:5 says Nebuchadnezzar took them out of the temple in Jerusalem and brought them to Babylon.",
+      "bibleReference": "Ezra 6:5",
+      "answers": [
+        {
+          "text": "Darius the king",
+          "isCorrect": false
+        },
+        {
+          "text": "Cyrus the king",
+          "isCorrect": false
+        },
+        {
+          "text": "Tattenai the governor",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebuchadnezzar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What punishment did Darius decree for anyone who altered his message?",
+      "explanation": "Ezra 6:11 says a beam was to be pulled out of his house, he was to be fastened on it, and his house made a dunghill.",
+      "bibleReference": "Ezra 6:11",
+      "answers": [
+        {
+          "text": "He would be thrown into a den of lions",
+          "isCorrect": false
+        },
+        {
+          "text": "A beam pulled from his house and he fastened on it",
+          "isCorrect": true
+        },
+        {
+          "text": "He would be sent into exile in Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "He would pay a fine of one hundred talents",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Through whose prophesying did the elders of the Jews build and prosper?",
+      "explanation": "Ezra 6:14 says they built and prospered through the prophesying of Haggai the prophet and Zechariah the son of Iddo.",
+      "bibleReference": "Ezra 6:14",
+      "answers": [
+        {
+          "text": "Haggai and Zechariah",
+          "isCorrect": true
+        },
+        {
+          "text": "Isaiah and Jeremiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Daniel and Ezekiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Ezra and Nehemiah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which month was the house finished?",
+      "explanation": "Ezra 6:15 says the house was finished on the third day of the month Adar, in the sixth year of Darius.",
+      "bibleReference": "Ezra 6:15",
+      "answers": [
+        {
+          "text": "Nisan",
+          "isCorrect": false
+        },
+        {
+          "text": "Elul",
+          "isCorrect": false
+        },
+        {
+          "text": "Chislev",
+          "isCorrect": false
+        },
+        {
+          "text": "Adar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did they offer as a sin offering for all Israel at the dedication?",
+      "explanation": "Ezra 6:17 says they offered twelve male goats as a sin offering, according to the number of the tribes of Israel.",
+      "bibleReference": "Ezra 6:17",
+      "answers": [
+        {
+          "text": "Seven young bulls",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten rams",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve male goats",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty lambs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day did the children of the captivity keep the Passover?",
+      "explanation": "Ezra 6:19 says they kept the Passover on the fourteenth day of the first month.",
+      "bibleReference": "Ezra 6:19",
+      "answers": [
+        {
+          "text": "The fourteenth day of the first month",
+          "isCorrect": true
+        },
+        {
+          "text": "The first day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth day of the first month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifteenth day of the second month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose heart had Yahweh turned to the people, to strengthen their hands in the work?",
+      "explanation": "Ezra 6:22 says Yahweh had turned the heart of the king of Assyria to them.",
+      "bibleReference": "Ezra 6:22",
+      "answers": [
+        {
+          "text": "The king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Assyria",
+          "isCorrect": true
+        },
+        {
+          "text": "The king of Tyre",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

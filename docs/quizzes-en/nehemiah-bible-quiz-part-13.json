@@ -1,0 +1,242 @@
+{
+  "title": "Nehemiah Bible Quiz - Chapter 13",
+  "description": "Ten questions on Nehemiah 13: Nehemiah returns to Jerusalem and deals with Tobiah's room, the tithes, the Sabbath and foreign marriages.",
+  "slug": "nehemiah-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What was found written in the book of Moses about the assembly of God?",
+      "explanation": "It was found written that an Ammonite and a Moabite should not enter into the assembly of God forever.",
+      "bibleReference": "Nehemiah 13:1",
+      "answers": [
+        {
+          "text": "An Edomite and an Egyptian should not enter it",
+          "isCorrect": false
+        },
+        {
+          "text": "An Ammonite and a Moabite should not enter it",
+          "isCorrect": true
+        },
+        {
+          "text": "A Philistine and a Canaanite should not enter it",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hittite and an Amorite should not enter it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did they hire to curse the children of Israel?",
+      "explanation": "They did not meet Israel with bread and water, but hired Balaam to curse them; God turned the curse into a blessing.",
+      "bibleReference": "Nehemiah 13:2",
+      "answers": [
+        {
+          "text": "Sanballat",
+          "isCorrect": false
+        },
+        {
+          "text": "Geshem",
+          "isCorrect": false
+        },
+        {
+          "text": "Shelemiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Balaam",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For whom had Eliashib the priest prepared a great room in the house of God?",
+      "explanation": "Eliashib, who was allied to Tobiah, had prepared a great room for him where the offerings used to be kept.",
+      "bibleReference": "Nehemiah 13:4-5",
+      "answers": [
+        {
+          "text": "Tobiah",
+          "isCorrect": true
+        },
+        {
+          "text": "Sanballat",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanan",
+          "isCorrect": false
+        },
+        {
+          "text": "Zadok",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Nehemiah do when he understood what had been done for Tobiah?",
+      "explanation": "It grieved him severely, so he threw all Tobiah's household stuff out of the room.",
+      "bibleReference": "Nehemiah 13:8",
+      "answers": [
+        {
+          "text": "He burned the room and everything in it",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave the room to the singers instead",
+          "isCorrect": false
+        },
+        {
+          "text": "He threw out all Tobiah's household stuff",
+          "isCorrect": true
+        },
+        {
+          "text": "He sealed the door of the room with stones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had the Levites and singers done because their portions had not been given?",
+      "explanation": "The portions of the Levites had not been given them, so each of them had fled to his field.",
+      "bibleReference": "Nehemiah 13:10",
+      "answers": [
+        {
+          "text": "They had gone back to Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Each had fled to his field",
+          "isCorrect": true
+        },
+        {
+          "text": "They had joined Tobiah's household",
+          "isCorrect": false
+        },
+        {
+          "text": "They had gone to the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the men of Tyre bring in and sell on the Sabbath?",
+      "explanation": "Men of Tyre brought in fish and all kinds of wares and sold on the Sabbath to the children of Judah.",
+      "bibleReference": "Nehemiah 13:16",
+      "answers": [
+        {
+          "text": "Fish and all kinds of wares",
+          "isCorrect": true
+        },
+        {
+          "text": "Gold and precious stones",
+          "isCorrect": false
+        },
+        {
+          "text": "Horses and chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "Cedar wood and stone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did Nehemiah command the doors of Jerusalem to be shut?",
+      "explanation": "When the gates began to be dark before the Sabbath, he commanded the doors shut until after the Sabbath.",
+      "bibleReference": "Nehemiah 13:19",
+      "answers": [
+        {
+          "text": "At midday on the Sabbath itself",
+          "isCorrect": false
+        },
+        {
+          "text": "Only on the days of the feasts",
+          "isCorrect": false
+        },
+        {
+          "text": "As it grew dark before the Sabbath",
+          "isCorrect": true
+        },
+        {
+          "text": "At sunrise after the Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose speech did half of the children of the mixed marriages speak?",
+      "explanation": "Their children spoke half in the speech of Ashdod and could not speak in the Jews' language.",
+      "bibleReference": "Nehemiah 13:24",
+      "answers": [
+        {
+          "text": "The speech of Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "The speech of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The speech of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "The speech of Ashdod",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which king did Nehemiah name as one whom foreign women caused to sin?",
+      "explanation": "Nehemiah said that Solomon king of Israel, loved by his God, was caused to sin by foreign women.",
+      "bibleReference": "Nehemiah 13:26",
+      "answers": [
+        {
+          "text": "Hezekiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Solomon",
+          "isCorrect": true
+        },
+        {
+          "text": "Jeroboam",
+          "isCorrect": false
+        },
+        {
+          "text": "Rehoboam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "One of the sons of Joiada was son-in-law to whom?",
+      "explanation": "One of the sons of Joiada, the son of Eliashib the high priest, was son-in-law to Sanballat the Horonite, so Nehemiah chased him away.",
+      "bibleReference": "Nehemiah 13:28",
+      "answers": [
+        {
+          "text": "Hanan the son of Zaccur",
+          "isCorrect": false
+        },
+        {
+          "text": "Shelemiah the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Sanballat the Horonite",
+          "isCorrect": true
+        },
+        {
+          "text": "Pedaiah the Levite",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

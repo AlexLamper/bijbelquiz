@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 137",
+  "description": "Ten questions on Psalms 137: weeping by the rivers of Babylon, the hung-up harps and the vow never to forget Jerusalem.",
+  "slug": "psalms-bible-quiz-part-137",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did they sit down and weep?",
+      "explanation": "Psalms 137:1 says, \"By the rivers of Babylon, there we sat down. Yes, we wept.\"",
+      "bibleReference": "Psalms 137:1",
+      "answers": [
+        {
+          "text": "By the rivers of Babylon",
+          "isCorrect": true
+        },
+        {
+          "text": "By the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "At the gates of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In the wilderness of Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what did they hang up their harps?",
+      "explanation": "Psalms 137:2 says, \"On the willows in that land, we hung up our harps.\"",
+      "bibleReference": "Psalms 137:2",
+      "answers": [
+        {
+          "text": "On the city walls",
+          "isCorrect": false
+        },
+        {
+          "text": "On the cedars",
+          "isCorrect": false
+        },
+        {
+          "text": "On the willows",
+          "isCorrect": true
+        },
+        {
+          "text": "On the tent poles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did those who tormented them demand?",
+      "explanation": "Psalms 137:3 says those who tormented them demanded songs of joy: \"Sing us one of the songs of Zion!\"",
+      "bibleReference": "Psalms 137:3",
+      "answers": [
+        {
+          "text": "Gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Songs of joy",
+          "isCorrect": true
+        },
+        {
+          "text": "Their harps",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread and water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where do they ask how they can sing Yahweh's song?",
+      "explanation": "Psalms 137:4 says, \"How can we sing Yahweh's song in a foreign land?\"",
+      "bibleReference": "Psalms 137:4",
+      "answers": [
+        {
+          "text": "In the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "In the dark of night",
+          "isCorrect": false
+        },
+        {
+          "text": "Before the king",
+          "isCorrect": false
+        },
+        {
+          "text": "In a foreign land",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What should happen if the speaker forgets Jerusalem, according to verse 5?",
+      "explanation": "Psalms 137:5 says, \"If I forget you, Jerusalem, let my right hand forget its skill.\"",
+      "bibleReference": "Psalms 137:5",
+      "answers": [
+        {
+          "text": "His eyes should grow dim",
+          "isCorrect": false
+        },
+        {
+          "text": "His right hand should forget its skill",
+          "isCorrect": true
+        },
+        {
+          "text": "His harp should break",
+          "isCorrect": false
+        },
+        {
+          "text": "His name should be forgotten",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what should his tongue stick if he doesn't remember Jerusalem?",
+      "explanation": "Psalms 137:6 says, \"Let my tongue stick to the roof of my mouth if I don't remember you.\"",
+      "bibleReference": "Psalms 137:6",
+      "answers": [
+        {
+          "text": "The roof of his mouth",
+          "isCorrect": true
+        },
+        {
+          "text": "His own front teeth",
+          "isCorrect": false
+        },
+        {
+          "text": "The dust of the ground",
+          "isCorrect": false
+        },
+        {
+          "text": "The rock by the river",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Above what does he want to prefer Jerusalem?",
+      "explanation": "Psalms 137:6 speaks of preferring Jerusalem above his chief joy.",
+      "bibleReference": "Psalms 137:6",
+      "answers": [
+        {
+          "text": "His own house",
+          "isCorrect": false
+        },
+        {
+          "text": "His harp",
+          "isCorrect": false
+        },
+        {
+          "text": "His family",
+          "isCorrect": false
+        },
+        {
+          "text": "His chief joy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Against whom does the psalmist ask Yahweh to remember the day of Jerusalem?",
+      "explanation": "Psalms 137:7 says, \"Remember, Yahweh, against the children of Edom in the day of Jerusalem.\"",
+      "bibleReference": "Psalms 137:7",
+      "answers": [
+        {
+          "text": "The children of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The children of Edom",
+          "isCorrect": true
+        },
+        {
+          "text": "The Amorites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they say in the day of Jerusalem?",
+      "explanation": "Psalms 137:7 says they said, \"Raze it! Raze it even to its foundation!\"",
+      "bibleReference": "Psalms 137:7",
+      "answers": [
+        {
+          "text": "\"Raze it! Raze it even to its foundation!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Take all its gold and its silver!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Burn its gates and its walls with fire!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Carry its people away into captivity!\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is the daughter of Babylon described in verse 8?",
+      "explanation": "Psalms 137:8 says, \"Daughter of Babylon, doomed to destruction.\"",
+      "bibleReference": "Psalms 137:8",
+      "answers": [
+        {
+          "text": "Queen of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Doomed to destruction",
+          "isCorrect": true
+        },
+        {
+          "text": "Rich and secure",
+          "isCorrect": false
+        },
+        {
+          "text": "Mother of many cities",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

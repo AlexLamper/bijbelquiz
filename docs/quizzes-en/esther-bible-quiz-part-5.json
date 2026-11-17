@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 5",
+  "description": "Ten questions on Esther 5: Esther goes in to the king, invites him and Haman to banquets, and Haman has a gallows made for Mordecai.",
+  "slug": "esther-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "On the third day, what did Esther put on?",
+      "explanation": "On the third day Esther put on her royal clothing and stood in the inner court of the king's house.",
+      "bibleReference": "Esther 5:1",
+      "answers": [
+        {
+          "text": "Sackcloth and ashes",
+          "isCorrect": false
+        },
+        {
+          "text": "A borrowed robe",
+          "isCorrect": false
+        },
+        {
+          "text": "Her royal clothing",
+          "isCorrect": true
+        },
+        {
+          "text": "Her maidservant's clothes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Esther do when the king held out the golden scepter?",
+      "explanation": "Esther came near and touched the top of the scepter.",
+      "bibleReference": "Esther 5:2",
+      "answers": [
+        {
+          "text": "She touched the top of the scepter",
+          "isCorrect": true
+        },
+        {
+          "text": "She bowed with her face to the ground",
+          "isCorrect": false
+        },
+        {
+          "text": "She kissed the king's hand",
+          "isCorrect": false
+        },
+        {
+          "text": "She sat down beside the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Up to how much did the king promise to give Esther?",
+      "explanation": "The king said her request would be given her even to the half of the kingdom.",
+      "bibleReference": "Esther 5:3",
+      "answers": [
+        {
+          "text": "A tenth of his treasures",
+          "isCorrect": false
+        },
+        {
+          "text": "Any city she chose",
+          "isCorrect": false
+        },
+        {
+          "text": "A province of her own",
+          "isCorrect": false
+        },
+        {
+          "text": "Even to the half of the kingdom",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was Esther's first request to the king?",
+      "explanation": "She asked that the king and Haman come that day to the banquet she had prepared.",
+      "bibleReference": "Esther 5:4",
+      "answers": [
+        {
+          "text": "That Haman be hanged on a gallows",
+          "isCorrect": false
+        },
+        {
+          "text": "That the king and Haman come to her banquet",
+          "isCorrect": true
+        },
+        {
+          "text": "That the king cancel Haman's decree",
+          "isCorrect": false
+        },
+        {
+          "text": "That Mordecai be honored in the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Esther ask at the banquet of wine?",
+      "explanation": "She asked that the king and Haman come to another banquet she would prepare, and said she would answer tomorrow.",
+      "bibleReference": "Esther 5:8",
+      "answers": [
+        {
+          "text": "That Mordecai join them at the table",
+          "isCorrect": false
+        },
+        {
+          "text": "That the king read the chronicles",
+          "isCorrect": false
+        },
+        {
+          "text": "That they come to another banquet she would prepare",
+          "isCorrect": true
+        },
+        {
+          "text": "That Haman leave the palace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why was Haman filled with wrath when he left the banquet?",
+      "explanation": "Haman saw Mordecai in the king's gate, who didn't stand up or move for him.",
+      "bibleReference": "Esther 5:9",
+      "answers": [
+        {
+          "text": "Esther did not speak to him",
+          "isCorrect": false
+        },
+        {
+          "text": "The king had insulted him",
+          "isCorrect": false
+        },
+        {
+          "text": "His friends had not been invited",
+          "isCorrect": false
+        },
+        {
+          "text": "Mordecai didn't stand up or move for him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the name of Haman's wife?",
+      "explanation": "Haman went home and called for his friends and Zeresh his wife.",
+      "bibleReference": "Esther 5:10",
+      "answers": [
+        {
+          "text": "Zeresh",
+          "isCorrect": true
+        },
+        {
+          "text": "Vashti",
+          "isCorrect": false
+        },
+        {
+          "text": "Abihail",
+          "isCorrect": false
+        },
+        {
+          "text": "Hadassah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Haman recount to his friends and wife?",
+      "explanation": "Haman recounted the glory of his riches, the multitude of his children, and how the king had promoted him.",
+      "bibleReference": "Esther 5:11",
+      "answers": [
+        {
+          "text": "His victories in battle for the king",
+          "isCorrect": false
+        },
+        {
+          "text": "His riches, his many children and his promotion",
+          "isCorrect": true
+        },
+        {
+          "text": "The fields and vineyards he had bought",
+          "isCorrect": false
+        },
+        {
+          "text": "The letters he had sent to every province",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Haman say spoiled all his honor?",
+      "explanation": "He said all this availed him nothing so long as he saw Mordecai the Jew sitting at the king's gate.",
+      "bibleReference": "Esther 5:13",
+      "answers": [
+        {
+          "text": "Being second to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "Having no son to follow him",
+          "isCorrect": false
+        },
+        {
+          "text": "Not being invited to the banquet",
+          "isCorrect": false
+        },
+        {
+          "text": "Seeing Mordecai the Jew at the king's gate",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How high was the gallows that Zeresh and his friends told Haman to make?",
+      "explanation": "They said, \"Let a gallows be made fifty cubits high.\"",
+      "bibleReference": "Esther 5:14",
+      "answers": [
+        {
+          "text": "Fifty cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred cubits",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

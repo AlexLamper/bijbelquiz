@@ -1,0 +1,242 @@
+{
+  "title": "Nehemiah Bible Quiz - Chapter 2",
+  "description": "Ten questions on Nehemiah 2: the king sends Nehemiah to Jerusalem, where he inspects the walls by night.",
+  "slug": "nehemiah-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In which month did Nehemiah bring wine to the king?",
+      "explanation": "Nehemiah 2:1 says it was in the month Nisan, in the twentieth year of Artaxerxes.",
+      "bibleReference": "Nehemiah 2:1",
+      "answers": [
+        {
+          "text": "Chislev",
+          "isCorrect": false
+        },
+        {
+          "text": "Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "Elul",
+          "isCorrect": false
+        },
+        {
+          "text": "Nisan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Nehemiah feel when the king asked why his face was sad?",
+      "explanation": "Nehemiah 2:2 says, \"Then I was very much afraid.\"",
+      "bibleReference": "Nehemiah 2:2",
+      "answers": [
+        {
+          "text": "Very angry with the king",
+          "isCorrect": false
+        },
+        {
+          "text": "Relieved and glad",
+          "isCorrect": false
+        },
+        {
+          "text": "Very much afraid",
+          "isCorrect": true
+        },
+        {
+          "text": "Proud and confident",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Nehemiah do right after the king asked, \"What is your request?\"",
+      "explanation": "Nehemiah 2:4 says he prayed to the God of heaven.",
+      "bibleReference": "Nehemiah 2:4",
+      "answers": [
+        {
+          "text": "He prayed to the God of heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "He bowed down and wept",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked for time to think",
+          "isCorrect": false
+        },
+        {
+          "text": "He called for his brother Hanani",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was sitting by the king when he asked how long the journey would be?",
+      "explanation": "Nehemiah 2:6 says the queen was also sitting by him.",
+      "bibleReference": "Nehemiah 2:6",
+      "answers": [
+        {
+          "text": "Sanballat",
+          "isCorrect": false
+        },
+        {
+          "text": "The queen",
+          "isCorrect": true
+        },
+        {
+          "text": "Ezra the scribe",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's seven counselors",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Nehemiah ask for a letter so that he could get timber?",
+      "explanation": "Nehemiah 2:8 says he asked for a letter to Asaph, the keeper of the king's forest.",
+      "bibleReference": "Nehemiah 2:8",
+      "answers": [
+        {
+          "text": "Tobiah the Ammonite servant",
+          "isCorrect": false
+        },
+        {
+          "text": "The captains of the king's army",
+          "isCorrect": false
+        },
+        {
+          "text": "The governor of the fortress",
+          "isCorrect": false
+        },
+        {
+          "text": "Asaph, the keeper of the king's forest",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom had the king sent with Nehemiah?",
+      "explanation": "Nehemiah 2:9 says the king had sent captains of the army and horsemen with him.",
+      "bibleReference": "Nehemiah 2:9",
+      "answers": [
+        {
+          "text": "Captains of the army and horsemen",
+          "isCorrect": true
+        },
+        {
+          "text": "The queen and her servants",
+          "isCorrect": false
+        },
+        {
+          "text": "Priests and Levites from Susa",
+          "isCorrect": false
+        },
+        {
+          "text": "Prophets and singers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is Sanballat described in this chapter?",
+      "explanation": "Nehemiah 2:10 calls him Sanballat the Horonite.",
+      "bibleReference": "Nehemiah 2:10",
+      "answers": [
+        {
+          "text": "The Arabian",
+          "isCorrect": false
+        },
+        {
+          "text": "The Ammonite",
+          "isCorrect": false
+        },
+        {
+          "text": "The Horonite",
+          "isCorrect": true
+        },
+        {
+          "text": "The Gibeonite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By which gate did Nehemiah go out at night to inspect the walls?",
+      "explanation": "Nehemiah 2:13 says he went out by night by the valley gate.",
+      "bibleReference": "Nehemiah 2:12-13",
+      "answers": [
+        {
+          "text": "The sheep gate",
+          "isCorrect": false
+        },
+        {
+          "text": "The valley gate",
+          "isCorrect": true
+        },
+        {
+          "text": "The fish gate",
+          "isCorrect": false
+        },
+        {
+          "text": "The horse gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What problem did Nehemiah have near the spring gate and the king's pool?",
+      "explanation": "Nehemiah 2:14 says there was no place for the animal under him to pass.",
+      "bibleReference": "Nehemiah 2:14",
+      "answers": [
+        {
+          "text": "There was no place for his animal to pass",
+          "isCorrect": true
+        },
+        {
+          "text": "The guards would not let him through",
+          "isCorrect": false
+        },
+        {
+          "text": "The pool was full of soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "It was too dark to see anything",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Nehemiah tell Sanballat, Tobiah and Geshem they had in Jerusalem?",
+      "explanation": "Nehemiah 2:20 says, \"you have no portion, nor right, nor memorial, in Jerusalem.\"",
+      "bibleReference": "Nehemiah 2:19-20",
+      "answers": [
+        {
+          "text": "A share in the work",
+          "isCorrect": false
+        },
+        {
+          "text": "A house near the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "No portion, right, or memorial",
+          "isCorrect": true
+        },
+        {
+          "text": "A seat among the rulers",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

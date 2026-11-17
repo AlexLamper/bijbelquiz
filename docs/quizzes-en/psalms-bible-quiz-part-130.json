@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 130",
+  "description": "Ten questions on Psalms 130: a cry from the depths, forgiveness with Yahweh and waiting for him like watchmen for the morning.",
+  "slug": "psalms-bible-quiz-part-130",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "From where has the psalmist cried to Yahweh?",
+      "explanation": "Psalms 130:1 says, \"Out of the depths I have cried to you, Yahweh.\"",
+      "bibleReference": "Psalms 130:1",
+      "answers": [
+        {
+          "text": "From the mountaintop",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of the depths",
+          "isCorrect": true
+        },
+        {
+          "text": "From the temple courts",
+          "isCorrect": false
+        },
+        {
+          "text": "From a foreign land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what does the psalmist ask the Lord's ears to be attentive?",
+      "explanation": "Psalms 130:2 asks, \"Let your ears be attentive to the voice of my petitions.\"",
+      "bibleReference": "Psalms 130:2",
+      "answers": [
+        {
+          "text": "The songs of the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "The cries of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The sound of the trumpet",
+          "isCorrect": false
+        },
+        {
+          "text": "The voice of his petitions",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What question does the psalmist ask if Yah kept a record of sins?",
+      "explanation": "Psalms 130:3 says, \"If you, Yah, kept a record of sins, Lord, who could stand?\"",
+      "bibleReference": "Psalms 130:3",
+      "answers": [
+        {
+          "text": "\"Who could stand?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Who could sing?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Who could flee?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Who could sleep?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Because there is forgiveness with the Lord, what follows according to verse 4?",
+      "explanation": "Psalms 130:4 says there is forgiveness with him, therefore he is feared.",
+      "bibleReference": "Psalms 130:4",
+      "answers": [
+        {
+          "text": "He is forgotten",
+          "isCorrect": false
+        },
+        {
+          "text": "He keeps silent",
+          "isCorrect": false
+        },
+        {
+          "text": "He is feared",
+          "isCorrect": true
+        },
+        {
+          "text": "He stays far away",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist's soul do in verse 5?",
+      "explanation": "Psalms 130:5 says, \"I wait for Yahweh. My soul waits.\"",
+      "bibleReference": "Psalms 130:5",
+      "answers": [
+        {
+          "text": "It waits",
+          "isCorrect": true
+        },
+        {
+          "text": "It sings",
+          "isCorrect": false
+        },
+        {
+          "text": "It trembles",
+          "isCorrect": false
+        },
+        {
+          "text": "It sleeps",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what does the psalmist hope?",
+      "explanation": "Psalms 130:5 says, \"I hope in his word.\"",
+      "bibleReference": "Psalms 130:5",
+      "answers": [
+        {
+          "text": "In his own strength",
+          "isCorrect": false
+        },
+        {
+          "text": "In his word",
+          "isCorrect": true
+        },
+        {
+          "text": "In horses and chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "In the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "His soul longs for the Lord more than whom?",
+      "explanation": "Psalms 130:6 says his soul longs for the Lord more than watchmen long for the morning.",
+      "bibleReference": "Psalms 130:6",
+      "answers": [
+        {
+          "text": "Travelers for their home",
+          "isCorrect": false
+        },
+        {
+          "text": "Farmers for the rain",
+          "isCorrect": false
+        },
+        {
+          "text": "Watchmen for the morning",
+          "isCorrect": true
+        },
+        {
+          "text": "Sailors for the shore",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is told to hope in Yahweh in verse 7?",
+      "explanation": "Psalms 130:7 says, \"Israel, hope in Yahweh.\"",
+      "bibleReference": "Psalms 130:7",
+      "answers": [
+        {
+          "text": "The nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem's kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides loving kindness, what does verse 7 say is with Yahweh?",
+      "explanation": "Psalms 130:7 says there is loving kindness with Yahweh and abundant redemption is with him.",
+      "bibleReference": "Psalms 130:7",
+      "answers": [
+        {
+          "text": "Great wealth",
+          "isCorrect": false
+        },
+        {
+          "text": "Abundant redemption",
+          "isCorrect": true
+        },
+        {
+          "text": "Mighty armies",
+          "isCorrect": false
+        },
+        {
+          "text": "Many sacrifices",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From what will he redeem Israel?",
+      "explanation": "Psalms 130:8 says he will redeem Israel from all their sins.",
+      "bibleReference": "Psalms 130:8",
+      "answers": [
+        {
+          "text": "From all their sins",
+          "isCorrect": true
+        },
+        {
+          "text": "From Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "From Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "From hunger and thirst",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

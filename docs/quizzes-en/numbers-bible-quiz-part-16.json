@@ -9,7 +9,7 @@
   "status": "draft",
   "questions": [
     {
-      "text": "Who was the son of Izhar, the son of Kohath, who took men and rose up against Moses?",
+      "text": "Who was the son of Izhar, the son of Kohath, who took some men and rose up before Moses?",
       "explanation": "The chapter opens with Korah, the son of Izhar, the son of Kohath, the son of Levi, taking men together with Dathan, Abiram and On.",
       "bibleReference": "Numbers 16:1-2",
       "answers": [
@@ -124,24 +124,24 @@
       ]
     },
     {
-      "text": "What happened to Dathan, Abiram and their households when Moses finished speaking?",
+      "text": "As Moses finished speaking all these words, what did the earth do to them and their households?",
       "explanation": "The ground under them split apart, and the earth opened its mouth and swallowed them up with their households.",
       "bibleReference": "Numbers 16:31-32",
       "answers": [
         {
-          "text": "They were struck by a plague",
+          "text": "It shook and threw down their tents",
           "isCorrect": false
         },
         {
-          "text": "They were stoned by the people",
+          "text": "It burned with fire beneath them",
           "isCorrect": false
         },
         {
-          "text": "The ground split apart and swallowed them",
+          "text": "It opened its mouth and swallowed them up",
           "isCorrect": true
         },
         {
-          "text": "They were driven out of the camp",
+          "text": "It was flooded with water",
           "isCorrect": false
         }
       ]

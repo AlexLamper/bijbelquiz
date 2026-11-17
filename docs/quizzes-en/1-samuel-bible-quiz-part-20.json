@@ -57,7 +57,7 @@
     {
       "text": "By which stone was David to remain?",
       "explanation": "Jonathan told David to come to the place where he had hidden and remain by the stone Ezel.",
-      "bibleReference": "1 Samuel 20:19",
+      "bibleReference": "1 Samuel 20:18-19",
       "answers": [
         {
           "text": "The stone Ebenezer",
@@ -80,7 +80,7 @@
     {
       "text": "How many arrows did Jonathan say he would shoot?",
       "explanation": "Jonathan said, \"I will shoot three arrows on its side, as though I shot at a mark.\"",
-      "bibleReference": "1 Samuel 20:20",
+      "bibleReference": "1 Samuel 20:18-20",
       "answers": [
         {
           "text": "Three",
@@ -101,24 +101,24 @@
       ]
     },
     {
-      "text": "What did it mean if Jonathan told the boy, \"The arrows are beyond you\"?",
-      "explanation": "Jonathan said that if he told the boy the arrows were beyond him, David should go his way, for Yahweh had sent him away.",
+      "text": "According to verse 22, what did it mean if the boy was told, \"The arrows are beyond you\"?",
+      "explanation": "If the boy was told that the arrows were beyond him, the one addressed was to go his way, for Yahweh had sent him away.",
       "bibleReference": "1 Samuel 20:22",
       "answers": [
         {
-          "text": "David could safely come back",
+          "text": "Come, for there is peace",
           "isCorrect": false
         },
         {
-          "text": "David should hide one more day",
+          "text": "Hide for one more day",
           "isCorrect": false
         },
         {
-          "text": "David must go his way",
+          "text": "Go your way",
           "isCorrect": true
         },
         {
-          "text": "David must come to the king's table",
+          "text": "Come to the king's table",
           "isCorrect": false
         }
       ]
@@ -147,9 +147,9 @@
       ]
     },
     {
-      "text": "Why did Saul say nothing about David's empty seat on the first day?",
+      "text": "Why did Saul say nothing about David's empty place that day?",
       "explanation": "Saul thought, \"Something has happened to him. He is not clean.\"",
-      "bibleReference": "1 Samuel 20:26",
+      "bibleReference": "1 Samuel 20:25-26",
       "answers": [
         {
           "text": "He thought David was not clean",
@@ -218,7 +218,7 @@
     {
       "text": "When David and Jonathan wept together, who wept the most?",
       "explanation": "They kissed one another and wept one with another, and David wept the most.",
-      "bibleReference": "1 Samuel 20:41",
+      "bibleReference": "1 Samuel 20:40-41",
       "answers": [
         {
           "text": "Jonathan",

@@ -80,7 +80,7 @@
     {
       "text": "What did Jesse tell David to bring to the captain of his brothers' thousand?",
       "explanation": "Jesse told David to bring ten cheeses to the captain of their thousand and to see how his brothers were doing.",
-      "bibleReference": "1 Samuel 17:18",
+      "bibleReference": "1 Samuel 17:17-18",
       "answers": [
         {
           "text": "A jar of wine",
@@ -125,7 +125,7 @@
     },
     {
       "text": "Which animals did David tell Saul he had struck while keeping his father's sheep?",
-      "explanation": "David told Saul that his servant had struck both the lion and the bear.",
+      "explanation": "David told Saul, \"Your servant struck both the lion and the bear.\"",
       "bibleReference": "1 Samuel 17:34-36",
       "answers": [
         {
@@ -133,11 +133,11 @@
           "isCorrect": true
         },
         {
-          "text": "A wolf and a lion",
+          "text": "A wolf and a hyena",
           "isCorrect": false
         },
         {
-          "text": "A bear and a leopard",
+          "text": "A leopard and a boar",
           "isCorrect": false
         },
         {
@@ -149,7 +149,7 @@
     {
       "text": "Why did David take off the armor and sword Saul gave him?",
       "explanation": "David told Saul he could not go with them, because he had not tested them, and he took them off.",
-      "bibleReference": "1 Samuel 17:39",
+      "bibleReference": "1 Samuel 17:38-39",
       "answers": [
         {
           "text": "They were made for a king",

@@ -193,24 +193,24 @@
       ]
     },
     {
-      "text": "What tore when Saul grabbed it as Samuel turned to go?",
-      "explanation": "Saul grabbed the skirt of Samuel's robe, and it tore.",
+      "text": "What did Saul grab as Samuel turned around to go away, so that it tore?",
+      "explanation": "As Samuel turned around to go away, Saul grabbed the skirt of his robe, and it tore.",
       "bibleReference": "1 Samuel 15:27",
       "answers": [
         {
-          "text": "The scroll in Samuel's hand",
+          "text": "A scroll in Samuel's hand",
           "isCorrect": false
         },
         {
-          "text": "The curtain of Saul's tent",
+          "text": "The curtain of a tent",
           "isCorrect": false
         },
         {
-          "text": "The skirt of Samuel's robe",
+          "text": "The skirt of his robe",
           "isCorrect": true
         },
         {
-          "text": "The crown on Saul's head",
+          "text": "Samuel's staff",
           "isCorrect": false
         }
       ]

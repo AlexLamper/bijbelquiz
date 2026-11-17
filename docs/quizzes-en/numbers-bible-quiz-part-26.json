@@ -32,9 +32,9 @@
       ]
     },
     {
-      "text": "Where did Moses and Eleazar take this census?",
-      "explanation": "Moses and Eleazar the priest spoke with them in the plains of Moab by the Jordan at Jericho.",
-      "bibleReference": "Numbers 26:3",
+      "text": "Where did Moses and Eleazar the priest count the children of Israel?",
+      "explanation": "Those counted were counted by Moses and Eleazar the priest in the plains of Moab by the Jordan at Jericho.",
+      "bibleReference": "Numbers 26:63",
       "answers": [
         {
           "text": "In the wilderness of Sinai by the mountain",
@@ -193,24 +193,24 @@
       ]
     },
     {
-      "text": "How did Nadab and Abihu die?",
+      "text": "When did Nadab and Abihu die?",
       "explanation": "\"Nadab and Abihu died when they offered strange fire before Yahweh.\"",
       "bibleReference": "Numbers 26:61",
       "answers": [
         {
-          "text": "They were bitten by snakes",
+          "text": "When they were bitten by snakes",
           "isCorrect": false
         },
         {
-          "text": "They were swallowed by the earth",
+          "text": "When they were swallowed by the earth",
           "isCorrect": false
         },
         {
-          "text": "They died of the plague at Peor",
+          "text": "When they died of the plague at Peor",
           "isCorrect": false
         },
         {
-          "text": "They offered strange fire before Yahweh",
+          "text": "When they offered strange fire before Yahweh",
           "isCorrect": true
         }
       ]

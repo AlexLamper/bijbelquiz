@@ -9,24 +9,24 @@
   "status": "draft",
   "questions": [
     {
-      "text": "After how long did Pharaoh have his dream by the river?",
+      "text": "At the end of how many full years did Pharaoh dream that he stood by the river?",
       "explanation": "Genesis 41:1 says it was at the end of two full years that Pharaoh dreamed he stood by the river.",
       "bibleReference": "Genesis 41:1",
       "answers": [
         {
-          "text": "One full year",
+          "text": "One",
           "isCorrect": false
         },
         {
-          "text": "Two full years",
+          "text": "Two",
           "isCorrect": true
         },
         {
-          "text": "Three full years",
+          "text": "Three",
           "isCorrect": false
         },
         {
-          "text": "Seven full years",
+          "text": "Seven",
           "isCorrect": false
         }
       ]

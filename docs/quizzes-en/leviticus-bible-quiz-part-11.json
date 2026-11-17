@@ -101,8 +101,8 @@
       ]
     },
     {
-      "text": "Which of these is named in the list of birds that must not be eaten?",
-      "explanation": "The list of birds to detest includes the stork, any kind of heron, the hoopoe and the bat.",
+      "text": "Which bird is named together with the heron, the hoopoe and the bat?",
+      "explanation": "Verse 19 names the stork, any kind of heron, the hoopoe, and the bat.",
       "bibleReference": "Leviticus 11:19",
       "answers": [
         {
@@ -125,8 +125,8 @@
     },
     {
       "text": "Which of these is named among the winged creeping things that may be eaten?",
-      "explanation": "Of the winged creeping things, any kind of locust, katydid, cricket and grasshopper may be eaten.",
-      "bibleReference": "Leviticus 11:22",
+      "explanation": "Of the winged creeping things that hop on the earth, any kind of locust, katydid, cricket and grasshopper may be eaten.",
+      "bibleReference": "Leviticus 11:21-22",
       "answers": [
         {
           "text": "The hornet",
@@ -141,7 +141,7 @@
           "isCorrect": true
         },
         {
-          "text": "The beetle",
+          "text": "The bee",
           "isCorrect": false
         }
       ]
@@ -194,8 +194,8 @@
     },
     {
       "text": "What stays clean even if part of an unclean carcass falls into it?",
-      "explanation": "A spring or a cistern in which water is gathered shall be clean, but what touches the carcass is unclean.",
-      "bibleReference": "Leviticus 11:36",
+      "explanation": "An oven or range on which part of a carcass falls must be broken, but a spring or a cistern in which water is gathered stays clean.",
+      "bibleReference": "Leviticus 11:35-36",
       "answers": [
         {
           "text": "A spring or a cistern",

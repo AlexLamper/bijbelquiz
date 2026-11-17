@@ -1,0 +1,242 @@
+{
+  "title": "Nehemiah Bible Quiz - Chapter 1",
+  "description": "Ten questions on Nehemiah 1: news of Jerusalem's broken wall reaches Susa, and Nehemiah prays.",
+  "slug": "nehemiah-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Whose son was Nehemiah?",
+      "explanation": "Nehemiah 1:1 calls him Nehemiah the son of Hacaliah.",
+      "bibleReference": "Nehemiah 1:1",
+      "answers": [
+        {
+          "text": "Hanani",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacaliah",
+          "isCorrect": true
+        },
+        {
+          "text": "Hilkiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehiel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Nehemiah in the month Chislev of the twentieth year?",
+      "explanation": "Nehemiah 1:1 says he was in Susa the palace.",
+      "bibleReference": "Nehemiah 1:1",
+      "answers": [
+        {
+          "text": "In Susa the palace",
+          "isCorrect": true
+        },
+        {
+          "text": "In the city of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In the city of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "At Achmetha in Media",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came to Nehemiah with certain men out of Judah?",
+      "explanation": "Nehemiah 1:2 says Hanani, one of his brothers, came with certain men out of Judah.",
+      "bibleReference": "Nehemiah 1:2",
+      "answers": [
+        {
+          "text": "Ezra the scribe",
+          "isCorrect": false
+        },
+        {
+          "text": "Sanballat the Horonite",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanani, one of his brothers",
+          "isCorrect": true
+        },
+        {
+          "text": "Asaph the keeper of the forest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the men report about the wall and gates of Jerusalem?",
+      "explanation": "Nehemiah 1:3 says the wall was broken down and its gates were burned with fire.",
+      "bibleReference": "Nehemiah 1:3",
+      "answers": [
+        {
+          "text": "The wall had just been finished",
+          "isCorrect": false
+        },
+        {
+          "text": "The gates had been covered with gold",
+          "isCorrect": false
+        },
+        {
+          "text": "The wall was guarded by the king's army",
+          "isCorrect": false
+        },
+        {
+          "text": "The wall was broken down and the gates burned",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Nehemiah do when he heard these words?",
+      "explanation": "Nehemiah 1:4 says he sat down and wept, mourned several days, and fasted and prayed before the God of heaven.",
+      "bibleReference": "Nehemiah 1:4",
+      "answers": [
+        {
+          "text": "He wept, mourned, fasted and prayed",
+          "isCorrect": true
+        },
+        {
+          "text": "He went to Jerusalem the same day",
+          "isCorrect": false
+        },
+        {
+          "text": "He wrote a letter to the governors",
+          "isCorrect": false
+        },
+        {
+          "text": "He gathered an army to fight",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With whom does God keep covenant and loving kindness, according to Nehemiah's prayer?",
+      "explanation": "Nehemiah 1:5 says God keeps covenant and loving kindness with those who love him and keep his commandments.",
+      "bibleReference": "Nehemiah 1:5",
+      "answers": [
+        {
+          "text": "All the kings of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who love him and keep his commandments",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the priests and Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who bring the most offerings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does Nehemiah include when he confesses sin?",
+      "explanation": "Nehemiah 1:6 says, \"Yes, I and my father's house have sinned.\"",
+      "bibleReference": "Nehemiah 1:6",
+      "answers": [
+        {
+          "text": "Only the kings of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the people in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the enemies of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Himself and his father's house",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What had God said would happen if the people trespassed?",
+      "explanation": "Nehemiah 1:8 recalls God's word to Moses: \"If you trespass, I will scatter you among the peoples.\"",
+      "bibleReference": "Nehemiah 1:8",
+      "answers": [
+        {
+          "text": "He would send a flood",
+          "isCorrect": false
+        },
+        {
+          "text": "He would take away their king",
+          "isCorrect": false
+        },
+        {
+          "text": "He would scatter them among the peoples",
+          "isCorrect": true
+        },
+        {
+          "text": "He would close the gates of heaven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had God promised to do if the people returned to him?",
+      "explanation": "Nehemiah 1:9 says he would gather them, even from the uttermost part of the heavens, and bring them to the place he had chosen.",
+      "bibleReference": "Nehemiah 1:9",
+      "answers": [
+        {
+          "text": "Gather them to the place he had chosen",
+          "isCorrect": true
+        },
+        {
+          "text": "Make them rulers over Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Give them a new land across the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Destroy all their enemies at once",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Nehemiah's job?",
+      "explanation": "Nehemiah 1:11 ends: \"Now I was cup bearer to the king.\"",
+      "bibleReference": "Nehemiah 1:11",
+      "answers": [
+        {
+          "text": "Keeper of the king's forest",
+          "isCorrect": false
+        },
+        {
+          "text": "Scribe of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Cup bearer to the king",
+          "isCorrect": true
+        },
+        {
+          "text": "Governor beyond the River",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -9,24 +9,24 @@
   "status": "draft",
   "questions": [
     {
-      "text": "Whom did Jonathan not tell that he was going over to the Philistines' garrison?",
-      "explanation": "Jonathan spoke to his armor bearer about going over, but he didn't tell his father.",
+      "text": "To whom did Jonathan say, \"Come! Let's go over to the Philistines' garrison\"?",
+      "explanation": "Jonathan said this to the young man who bore his armor, but he didn't tell his father.",
       "bibleReference": "1 Samuel 14:1",
       "answers": [
         {
-          "text": "His armor bearer",
+          "text": "Saul his father",
           "isCorrect": false
         },
         {
-          "text": "His father",
+          "text": "His armor bearer",
           "isCorrect": true
         },
         {
-          "text": "His brothers",
+          "text": "Ahijah the priest",
           "isCorrect": false
         },
         {
-          "text": "Samuel",
+          "text": "Saul's six hundred men",
           "isCorrect": false
         }
       ]

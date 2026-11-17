@@ -1,0 +1,242 @@
+{
+  "title": "Nehemiah Bible Quiz - Chapter 8",
+  "description": "Ten questions on Nehemiah 8: Ezra reads the law to the people, the day is declared holy, and the feast of booths is kept again.",
+  "slug": "nehemiah-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did all the people gather at the start of the chapter?",
+      "explanation": "Nehemiah 8:1 says the people gathered as one man in the wide place in front of the water gate.",
+      "bibleReference": "Nehemiah 8:1",
+      "answers": [
+        {
+          "text": "In the wide place in front of the water gate",
+          "isCorrect": true
+        },
+        {
+          "text": "In the courtyard of the sheep gate",
+          "isCorrect": false
+        },
+        {
+          "text": "On the steps beside the fish gate",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside the walls near the valley gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what day did Ezra bring the law before the assembly?",
+      "explanation": "Ezra brought the law before the assembly on the first day of the seventh month.",
+      "bibleReference": "Nehemiah 8:2",
+      "answers": [
+        {
+          "text": "The tenth day of the sixth month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifteenth day of the second month",
+          "isCorrect": false
+        },
+        {
+          "text": "The first day of the seventh month",
+          "isCorrect": true
+        },
+        {
+          "text": "The last day of the twelfth month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long did Ezra read from the book of the law that day?",
+      "explanation": "He read from it from early morning until midday, and the people listened attentively.",
+      "bibleReference": "Nehemiah 8:3",
+      "answers": [
+        {
+          "text": "From midday until evening",
+          "isCorrect": false
+        },
+        {
+          "text": "From early morning until midday",
+          "isCorrect": true
+        },
+        {
+          "text": "Through the whole night",
+          "isCorrect": false
+        },
+        {
+          "text": "From sunset until sunrise",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ezra the scribe stand on while he read?",
+      "explanation": "Ezra stood on a pulpit of wood which they had made for the purpose.",
+      "bibleReference": "Nehemiah 8:4",
+      "answers": [
+        {
+          "text": "A bronze platform from the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The top of the city wall",
+          "isCorrect": false
+        },
+        {
+          "text": "A large stone in the square",
+          "isCorrect": false
+        },
+        {
+          "text": "A wooden pulpit made for the purpose",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the people answer when Ezra blessed Yahweh, the great God?",
+      "explanation": "All the people answered \"Amen, Amen\" with lifted hands, and bowed and worshiped with their faces to the ground.",
+      "bibleReference": "Nehemiah 8:6",
+      "answers": [
+        {
+          "text": "\"Amen, Amen\" with lifted hands",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Long live the king\" with a shout",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Hallelujah\" with blowing trumpets",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Glory to God\" with loud singing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were all the people weeping?",
+      "explanation": "The people wept when they heard the words of the law, but they were told the day was holy and they should not mourn.",
+      "bibleReference": "Nehemiah 8:9",
+      "answers": [
+        {
+          "text": "Their enemies had attacked the wall",
+          "isCorrect": false
+        },
+        {
+          "text": "They heard the words of the law",
+          "isCorrect": true
+        },
+        {
+          "text": "There was a famine in the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Their governor had died",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Complete the words spoken to the people: \"Don't be grieved, for the joy of Yahweh is your ...\"",
+      "explanation": "The people were told: \"Don't be grieved, for the joy of Yahweh is your strength.\"",
+      "bibleReference": "Nehemiah 8:10",
+      "answers": [
+        {
+          "text": "shield",
+          "isCorrect": false
+        },
+        {
+          "text": "song",
+          "isCorrect": false
+        },
+        {
+          "text": "reward",
+          "isCorrect": false
+        },
+        {
+          "text": "strength",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did they find written in the law about the feast of the seventh month?",
+      "explanation": "They found that Yahweh had commanded through Moses that the children of Israel should dwell in booths during the feast of the seventh month.",
+      "bibleReference": "Nehemiah 8:14",
+      "answers": [
+        {
+          "text": "That Israel should fast for seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "That every firstborn should be redeemed",
+          "isCorrect": false
+        },
+        {
+          "text": "That Israel should dwell in booths",
+          "isCorrect": true
+        },
+        {
+          "text": "That the wall should be rebuilt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Since whose days had the children of Israel not lived in temporary shelters like this?",
+      "explanation": "The text says that since the days of Jeshua the son of Nun the children of Israel had not done so.",
+      "bibleReference": "Nehemiah 8:17",
+      "answers": [
+        {
+          "text": "Jeshua the son of Nun",
+          "isCorrect": true
+        },
+        {
+          "text": "David the son of Jesse",
+          "isCorrect": false
+        },
+        {
+          "text": "Samuel the prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "Solomon the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What took place on the eighth day, after the seven days of the feast?",
+      "explanation": "They kept the feast seven days, and on the eighth day there was a solemn assembly, according to the ordinance.",
+      "bibleReference": "Nehemiah 8:18",
+      "answers": [
+        {
+          "text": "The dedication of the wall",
+          "isCorrect": false
+        },
+        {
+          "text": "A battle against their enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "A census of all the people",
+          "isCorrect": false
+        },
+        {
+          "text": "A solemn assembly",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

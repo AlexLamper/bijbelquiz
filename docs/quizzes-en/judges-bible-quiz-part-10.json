@@ -34,7 +34,7 @@
     {
       "text": "On what did the thirty sons of Jair ride?",
       "explanation": "Jair had thirty sons who rode on thirty donkey colts.",
-      "bibleReference": "Judges 10:4",
+      "bibleReference": "Judges 10:3-4",
       "answers": [
         {
           "text": "Thirty camels",
@@ -57,7 +57,7 @@
     {
       "text": "What were the thirty cities of Jair's sons called?",
       "explanation": "They had thirty cities, which are called Havvoth Jair to this day, in the land of Gilead.",
-      "bibleReference": "Judges 10:4",
+      "bibleReference": "Judges 10:3-4",
       "answers": [
         {
           "text": "Ramoth Gilead",
@@ -170,24 +170,24 @@
       ]
     },
     {
-      "text": "What did Yahweh tell the Israelites when they cried to him?",
+      "text": "To whom did Yahweh tell the Israelites to go and cry in the time of their distress?",
       "explanation": "Yahweh said, \"Go and cry to the gods which you have chosen. Let them save you in the time of your distress!\"",
       "bibleReference": "Judges 10:13-14",
       "answers": [
         {
-          "text": "To bring offerings to Shiloh",
+          "text": "The priests at Shiloh",
           "isCorrect": false
         },
         {
-          "text": "To fast for seven days",
+          "text": "The elders of Gilead",
           "isCorrect": false
         },
         {
-          "text": "To cry to the gods they had chosen",
+          "text": "The gods they had chosen",
           "isCorrect": true
         },
         {
-          "text": "To send for a prophet from the tribe of Judah to pray for them",
+          "text": "A prophet from the tribe of Judah",
           "isCorrect": false
         }
       ]

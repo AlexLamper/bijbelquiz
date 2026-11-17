@@ -1,0 +1,242 @@
+{
+  "title": "Ezra Bible Quiz - Chapter 1",
+  "description": "Ten questions on Ezra 1: Cyrus king of Persia lets the exiles go up to rebuild Yahweh's house in Jerusalem.",
+  "slug": "ezra-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In which year of Cyrus king of Persia did he make his proclamation?",
+      "explanation": "In the first year of Cyrus king of Persia, Yahweh stirred up his spirit, so that he made a proclamation throughout all his kingdom.",
+      "bibleReference": "Ezra 1:1",
+      "answers": [
+        {
+          "text": "The third year",
+          "isCorrect": false
+        },
+        {
+          "text": "The first year",
+          "isCorrect": true
+        },
+        {
+          "text": "The seventh year",
+          "isCorrect": false
+        },
+        {
+          "text": "The twentieth year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose mouth had spoken the word of Yahweh that was now being accomplished?",
+      "explanation": "The proclamation came so that Yahweh's word by Jeremiah's mouth might be accomplished.",
+      "bibleReference": "Ezra 1:1",
+      "answers": [
+        {
+          "text": "Jeremiah's",
+          "isCorrect": true
+        },
+        {
+          "text": "Isaiah's",
+          "isCorrect": false
+        },
+        {
+          "text": "Daniel's",
+          "isCorrect": false
+        },
+        {
+          "text": "Ezekiel's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Cyrus say Yahweh, the God of heaven, had given him?",
+      "explanation": "Cyrus said, \"Yahweh, the God of heaven, has given me all the kingdoms of the earth.\"",
+      "bibleReference": "Ezra 1:2",
+      "answers": [
+        {
+          "text": "Only the city of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "All the kingdoms of the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "A son to rule after him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Cyrus say Yahweh had commanded him to build a house?",
+      "explanation": "Cyrus said Yahweh had commanded him to build him a house in Jerusalem, which is in Judah.",
+      "bibleReference": "Ezra 1:2",
+      "answers": [
+        {
+          "text": "In Babylon, the city of the king",
+          "isCorrect": false
+        },
+        {
+          "text": "In Susa, the royal city of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "In Samaria, in the land of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem, which is in Judah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what were the men of each place to help those who went up?",
+      "explanation": "Cyrus said the men of each place should help him with silver, with gold, with goods, and with animals.",
+      "bibleReference": "Ezra 1:4",
+      "answers": [
+        {
+          "text": "Swords, shields, and spears",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver, gold, goods, and animals",
+          "isCorrect": true
+        },
+        {
+          "text": "Chariots, horses, and riders",
+          "isCorrect": false
+        },
+        {
+          "text": "Bricks, straw, and mortar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The heads of fathers' households of which tribes rose up to build Yahweh's house?",
+      "explanation": "The heads of fathers' households of Judah and Benjamin, the priests, and the Levites rose up to build Yahweh's house in Jerusalem.",
+      "bibleReference": "Ezra 1:5",
+      "answers": [
+        {
+          "text": "Reuben and Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim and Manasseh",
+          "isCorrect": false
+        },
+        {
+          "text": "Judah and Benjamin",
+          "isCorrect": true
+        },
+        {
+          "text": "Dan and Naphtali",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who had brought the vessels of Yahweh's house out of Jerusalem?",
+      "explanation": "Cyrus brought out the vessels of Yahweh's house, which Nebuchadnezzar had brought out of Jerusalem and put in the house of his gods.",
+      "bibleReference": "Ezra 1:7",
+      "answers": [
+        {
+          "text": "Nebuchadnezzar",
+          "isCorrect": true
+        },
+        {
+          "text": "Sennacherib",
+          "isCorrect": false
+        },
+        {
+          "text": "Shalmaneser",
+          "isCorrect": false
+        },
+        {
+          "text": "Tiglath-pileser",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By whose hand did Cyrus bring out the vessels?",
+      "explanation": "Cyrus king of Persia brought them out by the hand of Mithredath the treasurer.",
+      "bibleReference": "Ezra 1:8",
+      "answers": [
+        {
+          "text": "Daniel the wise man",
+          "isCorrect": false
+        },
+        {
+          "text": "Nehemiah the cupbearer",
+          "isCorrect": false
+        },
+        {
+          "text": "Ezra the scribe",
+          "isCorrect": false
+        },
+        {
+          "text": "Mithredath the treasurer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom were the vessels counted out?",
+      "explanation": "The vessels were counted out to Sheshbazzar, the prince of Judah.",
+      "bibleReference": "Ezra 1:8",
+      "answers": [
+        {
+          "text": "Sheshbazzar, the prince of Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "Zerubbabel the son of Shealtiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Jeshua the son of Jozadak",
+          "isCorrect": false
+        },
+        {
+          "text": "Haggai the prophet in Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many vessels of gold and of silver were there in all?",
+      "explanation": "All the vessels of gold and of silver were five thousand four hundred.",
+      "bibleReference": "Ezra 1:11",
+      "answers": [
+        {
+          "text": "One thousand thirty",
+          "isCorrect": false
+        },
+        {
+          "text": "Four thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Five thousand four hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven thousand two hundred",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

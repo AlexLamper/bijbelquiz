@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 1",
+  "description": "Ten questions on Esther 1: King Ahasuerus' great feasts in Susa, Queen Vashti's refusal, and the king's decree.",
+  "slug": "esther-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Over how many provinces did Ahasuerus reign?",
+      "explanation": "Esther 1:1 says Ahasuerus reigned from India to Ethiopia, over one hundred twenty-seven provinces.",
+      "bibleReference": "Esther 1:1",
+      "answers": [
+        {
+          "text": "One hundred seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty-seven",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred twenty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the throne of King Ahasuerus' kingdom?",
+      "explanation": "King Ahasuerus sat on the throne of his kingdom in Susa the palace.",
+      "bibleReference": "Esther 1:2",
+      "answers": [
+        {
+          "text": "In Susa the palace",
+          "isCorrect": true
+        },
+        {
+          "text": "In Babylon the great",
+          "isCorrect": false
+        },
+        {
+          "text": "In the city of Nineveh",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how many days did the king display the riches of his glorious kingdom?",
+      "explanation": "He displayed the riches of his kingdom many days, even one hundred eighty days.",
+      "bibleReference": "Esther 1:4",
+      "answers": [
+        {
+          "text": "One hundred twenty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred sixty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days and nights",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred eighty days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the rule for the drinking at the king's feast?",
+      "explanation": "The drinking was not compulsory; the king had instructed his officials to let every man do as he pleased.",
+      "bibleReference": "Esther 1:8",
+      "answers": [
+        {
+          "text": "Everyone had to drink with the king",
+          "isCorrect": false
+        },
+        {
+          "text": "It was not compulsory",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the princes could drink",
+          "isCorrect": false
+        },
+        {
+          "text": "No wine was served at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who made a feast for the women in the royal house?",
+      "explanation": "Vashti the queen made a feast for the women in the royal house of King Ahasuerus.",
+      "bibleReference": "Esther 1:9",
+      "answers": [
+        {
+          "text": "Esther the queen",
+          "isCorrect": false
+        },
+        {
+          "text": "The princesses of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Vashti the queen",
+          "isCorrect": true
+        },
+        {
+          "text": "The king's mother",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the king want Vashti brought before him with the royal crown?",
+      "explanation": "He wanted to show the people and the princes her beauty, for she was beautiful.",
+      "bibleReference": "Esther 1:11",
+      "answers": [
+        {
+          "text": "To ask her advice about the kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "To read a decree to the guests",
+          "isCorrect": false
+        },
+        {
+          "text": "To announce a new prince",
+          "isCorrect": false
+        },
+        {
+          "text": "To show the people and princes her beauty",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did the king react when Vashti refused to come?",
+      "explanation": "Vashti refused to come at the king's commandment, so the king was very angry and his anger burned in him.",
+      "bibleReference": "Esther 1:12",
+      "answers": [
+        {
+          "text": "He was very angry",
+          "isCorrect": true
+        },
+        {
+          "text": "He laughed it off",
+          "isCorrect": false
+        },
+        {
+          "text": "He went to her himself",
+          "isCorrect": false
+        },
+        {
+          "text": "He ended the feast quietly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who answered the king's question about what to do with Queen Vashti?",
+      "explanation": "Memucan answered before the king and the princes.",
+      "bibleReference": "Esther 1:16",
+      "answers": [
+        {
+          "text": "Carshena",
+          "isCorrect": false
+        },
+        {
+          "text": "Memucan",
+          "isCorrect": true
+        },
+        {
+          "text": "Mehuman",
+          "isCorrect": false
+        },
+        {
+          "text": "Harbona",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Memucan fear would happen when the queen's deed became known?",
+      "explanation": "He said all women would show contempt for their husbands when they heard the queen had refused to come.",
+      "bibleReference": "Esther 1:17",
+      "answers": [
+        {
+          "text": "The provinces would rise up in revolt",
+          "isCorrect": false
+        },
+        {
+          "text": "The princes would leave the king",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast would be remembered as a failure",
+          "isCorrect": false
+        },
+        {
+          "text": "All women would show contempt for their husbands",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the letters the king sent to every province say every man should do?",
+      "explanation": "The letters said that every man should rule his own house, speaking in the language of his own people.",
+      "bibleReference": "Esther 1:22",
+      "answers": [
+        {
+          "text": "Rule his own house",
+          "isCorrect": true
+        },
+        {
+          "text": "Bring his wife to the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "Pay a tax to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "Come to Susa for a feast",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
