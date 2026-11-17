@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 19",
+  "description": "Ten questions on Psalms 19: the heavens declaring God's glory, the sun like a bridegroom, and Yahweh's perfect law.",
+  "slug": "psalms-bible-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What do the heavens declare?",
+      "explanation": "Psalms 19:1 says, \"The heavens declare the glory of God.\"",
+      "bibleReference": "Psalms 19:1",
+      "answers": [
+        {
+          "text": "The day of judgment",
+          "isCorrect": false
+        },
+        {
+          "text": "The coming of rain",
+          "isCorrect": false
+        },
+        {
+          "text": "The glory of God",
+          "isCorrect": true
+        },
+        {
+          "text": "The names of the stars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the expanse show?",
+      "explanation": "Psalms 19:1 says, \"The expanse shows his handiwork.\"",
+      "bibleReference": "Psalms 19:1",
+      "answers": [
+        {
+          "text": "His handiwork",
+          "isCorrect": true
+        },
+        {
+          "text": "His anger",
+          "isCorrect": false
+        },
+        {
+          "text": "The seasons",
+          "isCorrect": false
+        },
+        {
+          "text": "His throne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What has God set in the heavens for the sun?",
+      "explanation": "Psalms 19:4 says, \"In them he has set a tent for the sun.\"",
+      "bibleReference": "Psalms 19:4",
+      "answers": [
+        {
+          "text": "A throne",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden chariot",
+          "isCorrect": false
+        },
+        {
+          "text": "A path of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A tent",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom is the sun compared in verse 5?",
+      "explanation": "Psalms 19:5 compares it to a bridegroom coming out of his room and a strong man rejoicing to run his course.",
+      "bibleReference": "Psalms 19:5",
+      "answers": [
+        {
+          "text": "A king going to war",
+          "isCorrect": false
+        },
+        {
+          "text": "A bridegroom coming out of his room",
+          "isCorrect": true
+        },
+        {
+          "text": "A shepherd leading his sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "A bird leaving its nest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is hidden from the sun's heat?",
+      "explanation": "Psalms 19:6 says, \"There is nothing hidden from its heat.\"",
+      "bibleReference": "Psalms 19:6",
+      "answers": [
+        {
+          "text": "The depths of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The caves of the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of the north",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does verse 7 say Yahweh's perfect law does?",
+      "explanation": "Psalms 19:7 says, \"Yahweh's law is perfect, restoring the soul.\"",
+      "bibleReference": "Psalms 19:7",
+      "answers": [
+        {
+          "text": "It fills the barns",
+          "isCorrect": false
+        },
+        {
+          "text": "It shakes the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "It restores the soul",
+          "isCorrect": true
+        },
+        {
+          "text": "It ends all war",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh's pure commandment do?",
+      "explanation": "Psalms 19:8 says, \"Yahweh's commandment is pure, enlightening the eyes.\"",
+      "bibleReference": "Psalms 19:8",
+      "answers": [
+        {
+          "text": "It enlightens the eyes",
+          "isCorrect": true
+        },
+        {
+          "text": "It heals the body",
+          "isCorrect": false
+        },
+        {
+          "text": "It strengthens the arms",
+          "isCorrect": false
+        },
+        {
+          "text": "It calms the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Yahweh's ordinances are sweeter than what?",
+      "explanation": "Psalms 19:10 says they are sweeter than honey and the extract of the honeycomb.",
+      "bibleReference": "Psalms 19:10",
+      "answers": [
+        {
+          "text": "New wine from the vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "Honey and the honeycomb",
+          "isCorrect": true
+        },
+        {
+          "text": "Fresh milk from the flock",
+          "isCorrect": false
+        },
+        {
+          "text": "Ripe figs from the tree",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From what does the psalmist ask to be forgiven?",
+      "explanation": "Psalms 19:12 says, \"Forgive me from hidden errors.\"",
+      "bibleReference": "Psalms 19:12",
+      "answers": [
+        {
+          "text": "The sins of his fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "Broken vows",
+          "isCorrect": false
+        },
+        {
+          "text": "Hidden errors",
+          "isCorrect": true
+        },
+        {
+          "text": "Unpaid debts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist ask to be acceptable in Yahweh's sight?",
+      "explanation": "Psalms 19:14 asks that the words of his mouth and the meditation of his heart be acceptable in Yahweh's sight.",
+      "bibleReference": "Psalms 19:14",
+      "answers": [
+        {
+          "text": "The words of his mouth and the meditation of his heart",
+          "isCorrect": true
+        },
+        {
+          "text": "The offerings and sacrifices he brings",
+          "isCorrect": false
+        },
+        {
+          "text": "The songs and dances of his people",
+          "isCorrect": false
+        },
+        {
+          "text": "The gold and silver of his treasury",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

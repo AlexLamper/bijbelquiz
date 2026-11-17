@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 9",
+  "description": "Ten questions on Psalms 9: Yahweh's righteous judgment, the high tower for the oppressed and the nations caught in their own pit.",
+  "slug": "psalms-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "With what does the psalmist say he will give thanks to Yahweh?",
+      "explanation": "Psalms 9:1 says he will give thanks to Yahweh with his whole heart and tell of all his marvelous works.",
+      "bibleReference": "Psalms 9:1",
+      "answers": [
+        {
+          "text": "With his whole heart",
+          "isCorrect": true
+        },
+        {
+          "text": "With a ten-stringed harp",
+          "isCorrect": false
+        },
+        {
+          "text": "With burnt offerings",
+          "isCorrect": false
+        },
+        {
+          "text": "With a loud trumpet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does the psalmist say God sits as he judges righteously?",
+      "explanation": "Psalms 9:4 says God sits on the throne, judging righteously.",
+      "bibleReference": "Psalms 9:4",
+      "answers": [
+        {
+          "text": "At the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "On the mountain top",
+          "isCorrect": false
+        },
+        {
+          "text": "On the throne",
+          "isCorrect": true
+        },
+        {
+          "text": "In the tent of meeting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 5, what has God blotted out forever and ever?",
+      "explanation": "Psalms 9:5 says God has destroyed the wicked and blotted out their name forever and ever.",
+      "bibleReference": "Psalms 9:5",
+      "answers": [
+        {
+          "text": "The memory of Zion",
+          "isCorrect": false
+        },
+        {
+          "text": "The name of the wicked",
+          "isCorrect": true
+        },
+        {
+          "text": "The sins of his people",
+          "isCorrect": false
+        },
+        {
+          "text": "The borders of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will Yahweh be for the oppressed?",
+      "explanation": "Psalms 9:9 says Yahweh will be a high tower for the oppressed, a high tower in times of trouble.",
+      "bibleReference": "Psalms 9:9",
+      "answers": [
+        {
+          "text": "A shady tree",
+          "isCorrect": false
+        },
+        {
+          "text": "A flowing river",
+          "isCorrect": false
+        },
+        {
+          "text": "A shepherd's staff",
+          "isCorrect": false
+        },
+        {
+          "text": "A high tower",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who will put their trust in Yahweh, according to verse 10?",
+      "explanation": "Psalms 9:10 says those who know Yahweh's name will put their trust in him.",
+      "bibleReference": "Psalms 9:10",
+      "answers": [
+        {
+          "text": "Those who are rich",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who know his name",
+          "isCorrect": true
+        },
+        {
+          "text": "Those who are strong in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who serve the kings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does verse 11 say Yahweh dwells?",
+      "explanation": "Psalms 9:11 calls for praises to Yahweh, who dwells in Zion.",
+      "bibleReference": "Psalms 9:11",
+      "answers": [
+        {
+          "text": "In Zion",
+          "isCorrect": true
+        },
+        {
+          "text": "In Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "In Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "In Shiloh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he who avenges blood not forget?",
+      "explanation": "Psalms 9:12 says he who avenges blood doesn't forget the cry of the afflicted.",
+      "bibleReference": "Psalms 9:12",
+      "answers": [
+        {
+          "text": "The offerings of the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The pride of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The songs of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The cry of the afflicted",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where have the nations sunk down?",
+      "explanation": "Psalms 9:15 says the nations have sunk down in the pit that they made, and their own foot is taken in the net they hid.",
+      "bibleReference": "Psalms 9:15",
+      "answers": [
+        {
+          "text": "In the waters of the flood",
+          "isCorrect": false
+        },
+        {
+          "text": "In the mire of the streets",
+          "isCorrect": false
+        },
+        {
+          "text": "In the pit that they made",
+          "isCorrect": true
+        },
+        {
+          "text": "In a valley of thorns",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 18, what shall not perish forever?",
+      "explanation": "Psalms 9:18 says the needy shall not always be forgotten, nor the hope of the poor perish forever.",
+      "bibleReference": "Psalms 9:18",
+      "answers": [
+        {
+          "text": "The hope of the poor",
+          "isCorrect": true
+        },
+        {
+          "text": "The pride of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The kingdom of the wicked",
+          "isCorrect": false
+        },
+        {
+          "text": "The strength of the mighty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist ask Yahweh to let the nations know?",
+      "explanation": "Psalms 9:20 asks Yahweh to put the nations in fear and let them know that they are only men.",
+      "bibleReference": "Psalms 9:20",
+      "answers": [
+        {
+          "text": "That Zion cannot fall",
+          "isCorrect": false
+        },
+        {
+          "text": "That they are only men",
+          "isCorrect": true
+        },
+        {
+          "text": "That their gods are mighty",
+          "isCorrect": false
+        },
+        {
+          "text": "That the king is coming",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

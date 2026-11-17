@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 7",
+  "description": "Ten questions on Esther 7: Esther's second banquet, where she names Haman as the enemy and he is hanged on his own gallows.",
+  "slug": "esther-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who came to the banquet with Esther the queen?",
+      "explanation": "The king and Haman came to banquet with Esther the queen.",
+      "bibleReference": "Esther 7:1",
+      "answers": [
+        {
+          "text": "The king and Mordecai",
+          "isCorrect": false
+        },
+        {
+          "text": "The king and Haman",
+          "isCorrect": true
+        },
+        {
+          "text": "Mordecai and Harbonah",
+          "isCorrect": false
+        },
+        {
+          "text": "The princes of Persia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How far did the king say he would go to grant Esther's request?",
+      "explanation": "The king told Esther that even to the half of the kingdom her request would be performed.",
+      "bibleReference": "Esther 7:2",
+      "answers": [
+        {
+          "text": "A third of the kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "The whole kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "A tenth of his treasures",
+          "isCorrect": false
+        },
+        {
+          "text": "Even to half of the kingdom",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Esther ask to be given to her at her petition and request?",
+      "explanation": "Esther asked that her life be given her at her petition, and her people at her request.",
+      "bibleReference": "Esther 7:3",
+      "answers": [
+        {
+          "text": "Her life and her people",
+          "isCorrect": true
+        },
+        {
+          "text": "The house of Haman",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's signet ring",
+          "isCorrect": false
+        },
+        {
+          "text": "A new palace in Susa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Esther said she would have held her peace if they had only been sold as what?",
+      "explanation": "Esther said that if they had been sold for male and female slaves, she would have held her peace.",
+      "bibleReference": "Esther 7:4",
+      "answers": [
+        {
+          "text": "Soldiers for the army",
+          "isCorrect": false
+        },
+        {
+          "text": "Workers in the fields",
+          "isCorrect": false
+        },
+        {
+          "text": "Male and female slaves",
+          "isCorrect": true
+        },
+        {
+          "text": "Captives to another nation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Esther name as the adversary and enemy?",
+      "explanation": "Esther said the adversary and enemy was \"this wicked Haman\".",
+      "bibleReference": "Esther 7:6",
+      "answers": [
+        {
+          "text": "Harbonah",
+          "isCorrect": false
+        },
+        {
+          "text": "Hammedatha",
+          "isCorrect": false
+        },
+        {
+          "text": "Haman",
+          "isCorrect": true
+        },
+        {
+          "text": "Mordecai",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the king go when he arose in his wrath from the banquet of wine?",
+      "explanation": "The king arose in his wrath and went into the palace garden.",
+      "bibleReference": "Esther 7:7",
+      "answers": [
+        {
+          "text": "Into the palace garden",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "To the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "To his bedchamber",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Haman stand up after the king left the banquet?",
+      "explanation": "Haman stood up to make request for his life to Esther the queen, because he saw that evil was determined against him.",
+      "bibleReference": "Esther 7:7",
+      "answers": [
+        {
+          "text": "To flee from the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "To call for his sons",
+          "isCorrect": false
+        },
+        {
+          "text": "To accuse Mordecai before the king",
+          "isCorrect": false
+        },
+        {
+          "text": "To plead with Esther for his life",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "When the king came back from the garden, where had Haman fallen?",
+      "explanation": "When the king returned, Haman had fallen on the couch where Esther was.",
+      "bibleReference": "Esther 7:8",
+      "answers": [
+        {
+          "text": "At the king's feet",
+          "isCorrect": false
+        },
+        {
+          "text": "On the couch where Esther was",
+          "isCorrect": true
+        },
+        {
+          "text": "Before the palace gate",
+          "isCorrect": false
+        },
+        {
+          "text": "Into a pool in the garden",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who told the king about the gallows that Haman had made for Mordecai?",
+      "explanation": "Harbonah, one of the eunuchs who were with the king, spoke of the gallows fifty cubits high standing at Haman's house.",
+      "bibleReference": "Esther 7:9",
+      "answers": [
+        {
+          "text": "Harbonah, a eunuch",
+          "isCorrect": true
+        },
+        {
+          "text": "Esther the queen",
+          "isCorrect": false
+        },
+        {
+          "text": "Mordecai the Jew",
+          "isCorrect": false
+        },
+        {
+          "text": "A royal scribe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the king's wrath after Haman was hanged?",
+      "explanation": "After Haman was hanged on the gallows he had prepared for Mordecai, the king's wrath was pacified.",
+      "bibleReference": "Esther 7:10",
+      "answers": [
+        {
+          "text": "It grew even stronger",
+          "isCorrect": false
+        },
+        {
+          "text": "It turned against Esther",
+          "isCorrect": false
+        },
+        {
+          "text": "It was pacified",
+          "isCorrect": true
+        },
+        {
+          "text": "It turned against the eunuchs",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

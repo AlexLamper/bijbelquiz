@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 11",
+  "description": "Ten questions on Psalms 11: taking refuge in Yahweh, the wicked bending their bows, and Yahweh on his throne in heaven.",
+  "slug": "psalms-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In whom does the psalmist take refuge?",
+      "explanation": "Psalms 11:1 opens with the words, \"In Yahweh, I take refuge.\"",
+      "bibleReference": "Psalms 11:1",
+      "answers": [
+        {
+          "text": "In the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "In a fortified city",
+          "isCorrect": false
+        },
+        {
+          "text": "In Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "In the king's palace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were others saying to the psalmist's soul?",
+      "explanation": "Psalms 11:1 asks how they can say to his soul, \"Flee as a bird to your mountain.\"",
+      "bibleReference": "Psalms 11:1",
+      "answers": [
+        {
+          "text": "\"Flee as a bird to your mountain.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Hide yourself in the caves of the rocks.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go down to Egypt for help.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Return to your father's house.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At whom do the wicked aim to shoot in darkness?",
+      "explanation": "Psalms 11:2 says the wicked set their arrows on the strings to shoot in darkness at the upright in heart.",
+      "bibleReference": "Psalms 11:2",
+      "answers": [
+        {
+          "text": "The kings of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The birds of the air",
+          "isCorrect": false
+        },
+        {
+          "text": "The upright in heart",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What question does verse 3 ask?",
+      "explanation": "Psalms 11:3 asks, \"If the foundations are destroyed, what can the righteous do?\"",
+      "bibleReference": "Psalms 11:3",
+      "answers": [
+        {
+          "text": "\"How long will the wicked triumph over the upright?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"If the foundations are destroyed, what can the righteous do?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Why do the nations rage against the righteous?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Who can stand before Yahweh when he is angry?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where is Yahweh's throne, according to verse 4?",
+      "explanation": "Psalms 11:4 says Yahweh is in his holy temple and on his throne in heaven.",
+      "bibleReference": "Psalms 11:4",
+      "answers": [
+        {
+          "text": "On Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "By the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "In the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "In heaven",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What do Yahweh's eyes examine?",
+      "explanation": "Psalms 11:4 says his eyes observe and examine the children of men.",
+      "bibleReference": "Psalms 11:4",
+      "answers": [
+        {
+          "text": "The stars of the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "The roots of the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "The children of men",
+          "isCorrect": true
+        },
+        {
+          "text": "The depths of the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does Yahweh's soul hate?",
+      "explanation": "Psalms 11:5 says his soul hates the wicked and him who loves violence.",
+      "bibleReference": "Psalms 11:5",
+      "answers": [
+        {
+          "text": "The wicked and him who loves violence",
+          "isCorrect": true
+        },
+        {
+          "text": "The poor and the weak of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who flee to the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "The upright and the pure in heart",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will Yahweh rain on the wicked?",
+      "explanation": "Psalms 11:6 says that on the wicked he will rain blazing coals.",
+      "bibleReference": "Psalms 11:6",
+      "answers": [
+        {
+          "text": "Manna",
+          "isCorrect": false
+        },
+        {
+          "text": "Blazing coals",
+          "isCorrect": true
+        },
+        {
+          "text": "Hailstones",
+          "isCorrect": false
+        },
+        {
+          "text": "Swarms of locusts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What shall be the portion of the wicked's cup?",
+      "explanation": "Psalms 11:6 says fire, sulfur, and scorching wind shall be the portion of their cup.",
+      "bibleReference": "Psalms 11:6",
+      "answers": [
+        {
+          "text": "Sweet wine and honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Bitter water from a well",
+          "isCorrect": false
+        },
+        {
+          "text": "Fire, sulfur, and scorching wind",
+          "isCorrect": true
+        },
+        {
+          "text": "Milk, bread, and oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who shall see Yahweh's face?",
+      "explanation": "Psalms 11:7 says Yahweh is righteous, loves righteousness, and the upright shall see his face.",
+      "bibleReference": "Psalms 11:7",
+      "answers": [
+        {
+          "text": "The upright",
+          "isCorrect": true
+        },
+        {
+          "text": "The wicked",
+          "isCorrect": false
+        },
+        {
+          "text": "The nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of the earth",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 32",
+  "description": "Ten questions on Psalms 32: the blessing of forgiven sin, confessing to Yahweh, and the warning not to be like the horse or the mule.",
+  "slug": "psalms-bible-quiz-part-32",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Besides being forgiven, what has happened to the sin of the blessed man in verse 1?",
+      "explanation": "Psalms 32:1 says, 'Blessed is he whose disobedience is forgiven, whose sin is covered.'",
+      "bibleReference": "Psalms 32:1",
+      "answers": [
+        {
+          "text": "It is written down",
+          "isCorrect": false
+        },
+        {
+          "text": "It is punished",
+          "isCorrect": false
+        },
+        {
+          "text": "It is remembered",
+          "isCorrect": false
+        },
+        {
+          "text": "It is covered",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is there none of in the spirit of the blessed man?",
+      "explanation": "Verse 2 says the blessed man is the one 'in whose spirit there is no deceit.'",
+      "bibleReference": "Psalms 32:2",
+      "answers": [
+        {
+          "text": "Fear",
+          "isCorrect": false
+        },
+        {
+          "text": "Deceit",
+          "isCorrect": true
+        },
+        {
+          "text": "Sorrow",
+          "isCorrect": false
+        },
+        {
+          "text": "Pride",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened when the psalmist kept silence?",
+      "explanation": "Psalms 32:3 says, 'When I kept silence, my bones wasted away through my groaning all day long.'",
+      "bibleReference": "Psalms 32:3",
+      "answers": [
+        {
+          "text": "His bones wasted away",
+          "isCorrect": true
+        },
+        {
+          "text": "His enemies left him",
+          "isCorrect": false
+        },
+        {
+          "text": "He slept in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "His house fell down",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what was the psalmist's strength sapped?",
+      "explanation": "Verse 4 says, 'My strength was sapped in the heat of summer.'",
+      "bibleReference": "Psalms 32:4",
+      "answers": [
+        {
+          "text": "The cold of winter",
+          "isCorrect": false
+        },
+        {
+          "text": "The years of famine",
+          "isCorrect": false
+        },
+        {
+          "text": "The heat of summer",
+          "isCorrect": true
+        },
+        {
+          "text": "The days of war",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh do when the psalmist acknowledged his sin?",
+      "explanation": "Psalms 32:5 says, 'I will confess my transgressions to Yahweh, and you forgave the iniquity of my sin.'",
+      "bibleReference": "Psalms 32:5",
+      "answers": [
+        {
+          "text": "He forgave the iniquity of his sin",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent him far away from his house",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave him a long and peaceful life",
+          "isCorrect": false
+        },
+        {
+          "text": "He made him a king over many",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 6 say about the great waters when they overflow?",
+      "explanation": "Verse 6 says, 'Surely when the great waters overflow, they shall not reach to him.'",
+      "bibleReference": "Psalms 32:6",
+      "answers": [
+        {
+          "text": "They shall cover the land",
+          "isCorrect": false
+        },
+        {
+          "text": "They shall sweep away the wicked",
+          "isCorrect": false
+        },
+        {
+          "text": "They shall last forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "They shall not reach him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist call Yahweh at the start of verse 7?",
+      "explanation": "Psalms 32:7 says, 'You are my hiding place. You will preserve me from trouble.'",
+      "bibleReference": "Psalms 32:7",
+      "answers": [
+        {
+          "text": "His shield",
+          "isCorrect": false
+        },
+        {
+          "text": "His portion",
+          "isCorrect": false
+        },
+        {
+          "text": "His hiding place",
+          "isCorrect": true
+        },
+        {
+          "text": "His banner",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what will Yahweh surround the psalmist?",
+      "explanation": "Verse 7 says, 'You will surround me with songs of deliverance.'",
+      "bibleReference": "Psalms 32:7",
+      "answers": [
+        {
+          "text": "Walls of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "Songs of deliverance",
+          "isCorrect": true
+        },
+        {
+          "text": "A great army",
+          "isCorrect": false
+        },
+        {
+          "text": "High mountains",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Like which animals are the readers told not to be?",
+      "explanation": "Psalms 32:9 says, 'Don't be like the horse, or like the mule, which have no understanding.'",
+      "bibleReference": "Psalms 32:9",
+      "answers": [
+        {
+          "text": "The lion and the bear",
+          "isCorrect": false
+        },
+        {
+          "text": "The ox and the donkey",
+          "isCorrect": false
+        },
+        {
+          "text": "The dog and the pig",
+          "isCorrect": false
+        },
+        {
+          "text": "The horse and the mule",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom shall loving kindness surround?",
+      "explanation": "Verse 10 says, 'Loving kindness shall surround him who trusts in Yahweh.'",
+      "bibleReference": "Psalms 32:10",
+      "answers": [
+        {
+          "text": "Him who is strong",
+          "isCorrect": false
+        },
+        {
+          "text": "The king and his house",
+          "isCorrect": false
+        },
+        {
+          "text": "Him who trusts in Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "The one who is rich",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

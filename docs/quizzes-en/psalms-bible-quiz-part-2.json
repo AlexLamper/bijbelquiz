@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 2",
+  "description": "Ten questions on Psalms 2: the raging nations, the King set on Zion, and the call to the kings of the earth to be wise.",
+  "slug": "psalms-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What do the peoples plot, according to verse 1?",
+      "explanation": "The psalm asks why the nations rage and the peoples plot a vain thing.",
+      "bibleReference": "Psalms 2:1",
+      "answers": [
+        {
+          "text": "A great feast",
+          "isCorrect": false
+        },
+        {
+          "text": "A journey to Zion",
+          "isCorrect": false
+        },
+        {
+          "text": "A vain thing",
+          "isCorrect": true
+        },
+        {
+          "text": "A new temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Against whom do the kings of the earth take a stand?",
+      "explanation": "The kings and rulers take counsel together against Yahweh and against his Anointed.",
+      "bibleReference": "Psalms 2:2",
+      "answers": [
+        {
+          "text": "Yahweh and his Anointed",
+          "isCorrect": true
+        },
+        {
+          "text": "Each other",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea and the dry land",
+          "isCorrect": false
+        },
+        {
+          "text": "Their own people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the kings and rulers want to break apart?",
+      "explanation": "They say, \"Let's break their bonds apart, and cast their cords from us.\"",
+      "bibleReference": "Psalms 2:3",
+      "answers": [
+        {
+          "text": "Their swords",
+          "isCorrect": false
+        },
+        {
+          "text": "The city walls",
+          "isCorrect": false
+        },
+        {
+          "text": "The tablets of stone",
+          "isCorrect": false
+        },
+        {
+          "text": "Their bonds",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will he who sits in the heavens do?",
+      "explanation": "He who sits in the heavens will laugh; the Lord will have them in derision.",
+      "bibleReference": "Psalms 2:4",
+      "answers": [
+        {
+          "text": "Weep",
+          "isCorrect": false
+        },
+        {
+          "text": "Laugh",
+          "isCorrect": true
+        },
+        {
+          "text": "Sleep",
+          "isCorrect": false
+        },
+        {
+          "text": "Flee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where has the Lord set his King?",
+      "explanation": "He says, \"Yet I have set my King on my holy hill of Zion.\"",
+      "bibleReference": "Psalms 2:5-6",
+      "answers": [
+        {
+          "text": "On his holy hill of Zion",
+          "isCorrect": true
+        },
+        {
+          "text": "At the gates of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "On the banks of the river",
+          "isCorrect": false
+        },
+        {
+          "text": "In the land of Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say to the speaker in the decree?",
+      "explanation": "Yahweh said, \"You are my son. Today I have become your father.\"",
+      "bibleReference": "Psalms 2:7",
+      "answers": [
+        {
+          "text": "\"You are my servant.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are my prophet.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are my son.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"You are my shepherd.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh promise to give as an inheritance?",
+      "explanation": "Yahweh says, \"Ask of me, and I will give the nations for your inheritance.\"",
+      "bibleReference": "Psalms 2:8",
+      "answers": [
+        {
+          "text": "A vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "The nations",
+          "isCorrect": true
+        },
+        {
+          "text": "The temple treasures",
+          "isCorrect": false
+        },
+        {
+          "text": "A field of grain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what will the nations be broken?",
+      "explanation": "Verse 9 says, \"You shall break them with a rod of iron.\"",
+      "bibleReference": "Psalms 2:9",
+      "answers": [
+        {
+          "text": "A staff of wood",
+          "isCorrect": false
+        },
+        {
+          "text": "A sword of bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden scepter",
+          "isCorrect": false
+        },
+        {
+          "text": "A rod of iron",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How are the kings and judges told to serve Yahweh?",
+      "explanation": "They are told to serve Yahweh with fear and rejoice with trembling.",
+      "bibleReference": "Psalms 2:10-11",
+      "answers": [
+        {
+          "text": "With pride",
+          "isCorrect": false
+        },
+        {
+          "text": "With silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "With loud songs",
+          "isCorrect": false
+        },
+        {
+          "text": "With fear",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who are called blessed at the end of the psalm?",
+      "explanation": "Verse 12 says, \"Blessed are all those who take refuge in him.\"",
+      "bibleReference": "Psalms 2:12",
+      "answers": [
+        {
+          "text": "All those who take refuge in him",
+          "isCorrect": true
+        },
+        {
+          "text": "Those who rule the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who rage",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who are strong",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 8",
+  "description": "Ten questions on Esther 8: Mordecai receives the king's ring, a new decree goes out to every province, and the Jews rejoice.",
+  "slug": "esther-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did King Ahasuerus give to Esther the queen on that day?",
+      "explanation": "On that day King Ahasuerus gave the house of Haman, the Jews' enemy, to Esther the queen.",
+      "bibleReference": "Esther 8:1",
+      "answers": [
+        {
+          "text": "A crown of gold",
+          "isCorrect": false
+        },
+        {
+          "text": "A province of her own",
+          "isCorrect": false
+        },
+        {
+          "text": "The house of Haman",
+          "isCorrect": true
+        },
+        {
+          "text": "The treasury of Susa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king give to Mordecai?",
+      "explanation": "The king took off his ring, which he had taken from Haman, and gave it to Mordecai.",
+      "bibleReference": "Esther 8:2",
+      "answers": [
+        {
+          "text": "The ring taken from Haman",
+          "isCorrect": true
+        },
+        {
+          "text": "Haman's horse",
+          "isCorrect": false
+        },
+        {
+          "text": "The golden scepter",
+          "isCorrect": false
+        },
+        {
+          "text": "Half of the kingdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Esther plead with the king to put away the mischief of Haman?",
+      "explanation": "Esther fell down at the king's feet and begged him with tears to put away Haman's mischief.",
+      "bibleReference": "Esther 8:3",
+      "answers": [
+        {
+          "text": "She sent Mordecai to speak for her",
+          "isCorrect": false
+        },
+        {
+          "text": "She wrote him a sealed letter",
+          "isCorrect": false
+        },
+        {
+          "text": "She fasted at the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "She fell at his feet and begged with tears",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the king hold out to Esther before she stood up?",
+      "explanation": "The king held out the golden scepter to Esther, and she arose and stood before him.",
+      "bibleReference": "Esther 8:4",
+      "answers": [
+        {
+          "text": "His signet ring",
+          "isCorrect": false
+        },
+        {
+          "text": "The golden scepter",
+          "isCorrect": true
+        },
+        {
+          "text": "A cup of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A royal robe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Esther ask to be written?",
+      "explanation": "Esther asked that it be written to reverse the letters devised by Haman to destroy the Jews in all the king's provinces.",
+      "bibleReference": "Esther 8:5",
+      "answers": [
+        {
+          "text": "Letters reversing those devised by Haman",
+          "isCorrect": true
+        },
+        {
+          "text": "A decree making Mordecai king",
+          "isCorrect": false
+        },
+        {
+          "text": "A letter honoring Haman's family",
+          "isCorrect": false
+        },
+        {
+          "text": "An order to rebuild the walls of Susa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the king, what kind of writing may not be reversed by any man?",
+      "explanation": "The king said that writing written in the king's name and sealed with the king's ring may not be reversed by any man.",
+      "bibleReference": "Esther 8:8",
+      "answers": [
+        {
+          "text": "Writing approved by the princes",
+          "isCorrect": false
+        },
+        {
+          "text": "Writing kept in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Writing in the king's name, sealed with his ring",
+          "isCorrect": true
+        },
+        {
+          "text": "Writing read aloud at the gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which month were the king's scribes called to write Mordecai's letters?",
+      "explanation": "The scribes were called in the third month, which is the month Sivan, on the twenty-third day.",
+      "bibleReference": "Esther 8:9",
+      "answers": [
+        {
+          "text": "Adar, the twelfth month",
+          "isCorrect": false
+        },
+        {
+          "text": "Sivan, the third month",
+          "isCorrect": true
+        },
+        {
+          "text": "The seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The first month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day were the Jews allowed to gather and defend their lives?",
+      "explanation": "The letters allowed this on one day: the thirteenth day of the twelfth month, which is the month Adar.",
+      "bibleReference": "Esther 8:11-12",
+      "answers": [
+        {
+          "text": "The fourteenth day of Sivan",
+          "isCorrect": false
+        },
+        {
+          "text": "The first day of the third month",
+          "isCorrect": false
+        },
+        {
+          "text": "The twenty-third day of Sivan",
+          "isCorrect": false
+        },
+        {
+          "text": "The thirteenth day of Adar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Mordecai wear when he went out from the presence of the king?",
+      "explanation": "Mordecai went out in royal clothing of blue and white, with a great crown of gold and a robe of fine linen and purple.",
+      "bibleReference": "Esther 8:15",
+      "answers": [
+        {
+          "text": "Sackcloth with ashes on his head",
+          "isCorrect": false
+        },
+        {
+          "text": "A soldier's armor and a sword",
+          "isCorrect": false
+        },
+        {
+          "text": "A shepherd's cloak and a staff",
+          "isCorrect": false
+        },
+        {
+          "text": "Royal blue and white with a crown of gold",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened among the peoples of the land at the end of the chapter?",
+      "explanation": "Many from among the peoples of the land became Jews, because the fear of the Jews had fallen on them.",
+      "bibleReference": "Esther 8:17",
+      "answers": [
+        {
+          "text": "Many of them became Jews",
+          "isCorrect": true
+        },
+        {
+          "text": "They left the provinces",
+          "isCorrect": false
+        },
+        {
+          "text": "They rose up against the king",
+          "isCorrect": false
+        },
+        {
+          "text": "They burned the citadel of Susa",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

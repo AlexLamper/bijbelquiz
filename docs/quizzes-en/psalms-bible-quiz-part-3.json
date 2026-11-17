@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 3",
+  "description": "Ten questions on Psalms 3: many adversaries, Yahweh as a shield, and sleeping in peace because Yahweh sustains.",
+  "slug": "psalms-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What has increased, according to the first verse?",
+      "explanation": "The psalmist says, \"Yahweh, how my adversaries have increased!\"",
+      "bibleReference": "Psalms 3:1",
+      "answers": [
+        {
+          "text": "His riches",
+          "isCorrect": false
+        },
+        {
+          "text": "His years",
+          "isCorrect": false
+        },
+        {
+          "text": "His friends",
+          "isCorrect": false
+        },
+        {
+          "text": "His adversaries",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What do many say about the psalmist's soul?",
+      "explanation": "Many say of his soul, \"There is no help for him in God.\"",
+      "bibleReference": "Psalms 3:2",
+      "answers": [
+        {
+          "text": "He is blessed by God",
+          "isCorrect": false
+        },
+        {
+          "text": "There is no help for him in God",
+          "isCorrect": true
+        },
+        {
+          "text": "He will soon be king",
+          "isCorrect": false
+        },
+        {
+          "text": "He will live long",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Yahweh around the psalmist?",
+      "explanation": "He says, \"You, Yahweh, are a shield around me.\"",
+      "bibleReference": "Psalms 3:3",
+      "answers": [
+        {
+          "text": "A wall",
+          "isCorrect": false
+        },
+        {
+          "text": "A fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A shield",
+          "isCorrect": true
+        },
+        {
+          "text": "A cloud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh lift up, according to verse 3?",
+      "explanation": "Yahweh is called the one who lifts up the psalmist's head.",
+      "bibleReference": "Psalms 3:3",
+      "answers": [
+        {
+          "text": "His head",
+          "isCorrect": true
+        },
+        {
+          "text": "His hands",
+          "isCorrect": false
+        },
+        {
+          "text": "His voice",
+          "isCorrect": false
+        },
+        {
+          "text": "His tent",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From where does Yahweh answer when the psalmist cries?",
+      "explanation": "He cries to Yahweh with his voice, and Yahweh answers him out of his holy hill.",
+      "bibleReference": "Psalms 3:4",
+      "answers": [
+        {
+          "text": "The depths of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "His holy hill",
+          "isCorrect": true
+        },
+        {
+          "text": "A burning bush",
+          "isCorrect": false
+        },
+        {
+          "text": "The wilderness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the psalmist wake up again after he slept?",
+      "explanation": "He laid himself down and slept, and awakened, for Yahweh sustains him.",
+      "bibleReference": "Psalms 3:5",
+      "answers": [
+        {
+          "text": "Because his enemies attacked",
+          "isCorrect": false
+        },
+        {
+          "text": "Because a trumpet sounded",
+          "isCorrect": false
+        },
+        {
+          "text": "Because his friends called him",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Yahweh sustains him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Of what will the psalmist not be afraid?",
+      "explanation": "He will not be afraid of tens of thousands of people who have set themselves against him on every side.",
+      "bibleReference": "Psalms 3:6",
+      "answers": [
+        {
+          "text": "Tens of thousands of people",
+          "isCorrect": true
+        },
+        {
+          "text": "Wild animals in the night",
+          "isCorrect": false
+        },
+        {
+          "text": "Storms out at sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Sickness and plague",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where has Yahweh struck all the psalmist's enemies?",
+      "explanation": "He says, \"You have struck all of my enemies on the cheek bone.\"",
+      "bibleReference": "Psalms 3:7",
+      "answers": [
+        {
+          "text": "On the knee",
+          "isCorrect": false
+        },
+        {
+          "text": "On the back",
+          "isCorrect": false
+        },
+        {
+          "text": "On the cheek bone",
+          "isCorrect": true
+        },
+        {
+          "text": "On the forehead",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose teeth has Yahweh broken?",
+      "explanation": "Verse 7 says, \"You have broken the teeth of the wicked.\"",
+      "bibleReference": "Psalms 3:7",
+      "answers": [
+        {
+          "text": "The lions",
+          "isCorrect": false
+        },
+        {
+          "text": "The wicked",
+          "isCorrect": true
+        },
+        {
+          "text": "The wolves",
+          "isCorrect": false
+        },
+        {
+          "text": "The bulls",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom does salvation belong, according to the last verse?",
+      "explanation": "Verse 8 says, \"Salvation belongs to Yahweh.\"",
+      "bibleReference": "Psalms 3:8",
+      "answers": [
+        {
+          "text": "Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "Kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Warriors",
+          "isCorrect": false
+        },
+        {
+          "text": "The rich",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 128",
+  "description": "Ten questions on Psalms 128: the blessings of everyone who fears Yahweh - eating the labor of his hands, a fruitful wife, children like olive plants and peace on Israel.",
+  "slug": "psalms-bible-quiz-part-128",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Verse 1 calls blessed everyone who fears Yahweh and who does what?",
+      "explanation": "Psalms 128:1 says \"Blessed is everyone who fears Yahweh, who walks in his ways.\"",
+      "bibleReference": "Psalms 128:1",
+      "answers": [
+        {
+          "text": "Builds him a house",
+          "isCorrect": false
+        },
+        {
+          "text": "Gives to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "Sings his praise daily",
+          "isCorrect": false
+        },
+        {
+          "text": "Walks in his ways",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will you eat, according to verse 2?",
+      "explanation": "Psalms 128:2 says \"For you will eat the labor of your hands.\"",
+      "bibleReference": "Psalms 128:2",
+      "answers": [
+        {
+          "text": "The bread of strangers",
+          "isCorrect": false
+        },
+        {
+          "text": "The labor of your hands",
+          "isCorrect": true
+        },
+        {
+          "text": "The fat of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Food from the king's table",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What else does verse 2 promise?",
+      "explanation": "Psalms 128:2 says \"You will be happy, and it will be well with you.\"",
+      "bibleReference": "Psalms 128:2",
+      "answers": [
+        {
+          "text": "You will be happy, and it will be well with you",
+          "isCorrect": true
+        },
+        {
+          "text": "You will be rich and famous in all the land of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "You will rule over many people",
+          "isCorrect": false
+        },
+        {
+          "text": "You will never grow old or weak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will your wife be like, according to verse 3?",
+      "explanation": "Psalms 128:3 says \"Your wife will be as a fruitful vine.\"",
+      "bibleReference": "Psalms 128:3",
+      "answers": [
+        {
+          "text": "A fig tree",
+          "isCorrect": false
+        },
+        {
+          "text": "A tall cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "A fruitful vine",
+          "isCorrect": true
+        },
+        {
+          "text": "A palm tree by the water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where in the house will the wife be as a fruitful vine?",
+      "explanation": "Psalms 128:3 says she will be as a fruitful vine \"in the innermost parts of your house.\"",
+      "bibleReference": "Psalms 128:3",
+      "answers": [
+        {
+          "text": "In the innermost parts of your house",
+          "isCorrect": true
+        },
+        {
+          "text": "At the door of your house",
+          "isCorrect": false
+        },
+        {
+          "text": "On the roof of your house",
+          "isCorrect": false
+        },
+        {
+          "text": "In the outer courtyard of your house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will your children be like around your table?",
+      "explanation": "Psalms 128:3 says \"your children like olive plants around your table.\"",
+      "bibleReference": "Psalms 128:3",
+      "answers": [
+        {
+          "text": "Young lambs",
+          "isCorrect": false
+        },
+        {
+          "text": "Cedar saplings",
+          "isCorrect": false
+        },
+        {
+          "text": "Bright stars",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive plants",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Out of where does verse 5 ask Yahweh to bless you?",
+      "explanation": "Psalms 128:5 says \"May Yahweh bless you out of Zion.\"",
+      "bibleReference": "Psalms 128:5",
+      "answers": [
+        {
+          "text": "Out of Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of Zion",
+          "isCorrect": true
+        },
+        {
+          "text": "Out of Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What may you see all the days of your life, according to verse 5?",
+      "explanation": "Psalms 128:5 says \"may you see the good of Jerusalem all the days of your life.\"",
+      "bibleReference": "Psalms 128:5",
+      "answers": [
+        {
+          "text": "The fall of your enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "The good of Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "The face of the king",
+          "isCorrect": false
+        },
+        {
+          "text": "The ends of the earth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does verse 6 wish that you may see?",
+      "explanation": "Psalms 128:6 says \"Yes, may you see your children's children.\"",
+      "bibleReference": "Psalms 128:6",
+      "answers": [
+        {
+          "text": "Your fathers' graves",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of the nations of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Your brothers' houses",
+          "isCorrect": false
+        },
+        {
+          "text": "Your children's children",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With which words does the psalm end?",
+      "explanation": "Psalms 128:6 ends with \"Peace be upon Israel.\"",
+      "bibleReference": "Psalms 128:6",
+      "answers": [
+        {
+          "text": "\"Praise Yah!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Peace be upon Israel.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Amen and amen.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Blessed be Zion forever.\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

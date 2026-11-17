@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 9",
+  "description": "Ten questions on Esther 9: the thirteenth of Adar, the fall of Haman's sons, and how the days of Purim got their name.",
+  "slug": "esther-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What happened on the day the enemies of the Jews hoped to conquer them?",
+      "explanation": "On that day the opposite happened: the Jews conquered those who hated them.",
+      "bibleReference": "Esther 9:1",
+      "answers": [
+        {
+          "text": "The king canceled the decree",
+          "isCorrect": false
+        },
+        {
+          "text": "The enemies fled to India",
+          "isCorrect": false
+        },
+        {
+          "text": "Haman's sons took over Susa",
+          "isCorrect": false
+        },
+        {
+          "text": "The Jews conquered those who hated them",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did the princes and governors of the provinces help the Jews?",
+      "explanation": "They helped the Jews because the fear of Mordecai had fallen on them.",
+      "bibleReference": "Esther 9:3",
+      "answers": [
+        {
+          "text": "Esther had paid them silver",
+          "isCorrect": false
+        },
+        {
+          "text": "The fear of Mordecai had fallen on them",
+          "isCorrect": true
+        },
+        {
+          "text": "They were Jews themselves",
+          "isCorrect": false
+        },
+        {
+          "text": "They wanted Haman's house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many men did the Jews kill in the citadel of Susa, as stated in verse 6?",
+      "explanation": "In the citadel of Susa, the Jews killed and destroyed five hundred men.",
+      "bibleReference": "Esther 9:6",
+      "answers": [
+        {
+          "text": "One thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "Five hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "Two hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Esther ask to be done with Haman's ten sons?",
+      "explanation": "Esther asked that Haman's ten sons be hanged on the gallows.",
+      "bibleReference": "Esther 9:13",
+      "answers": [
+        {
+          "text": "That they be hanged on the gallows",
+          "isCorrect": true
+        },
+        {
+          "text": "That they be sent into exile",
+          "isCorrect": false
+        },
+        {
+          "text": "That they serve Mordecai",
+          "isCorrect": false
+        },
+        {
+          "text": "That they be set over the provinces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day of the month did the Jews in Susa rest and make a day of feasting?",
+      "explanation": "The Jews in Susa assembled on the thirteenth and fourteenth days, and on the fifteenth day they rested and feasted.",
+      "bibleReference": "Esther 9:18",
+      "answers": [
+        {
+          "text": "The thirteenth",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifteenth",
+          "isCorrect": true
+        },
+        {
+          "text": "The first",
+          "isCorrect": false
+        },
+        {
+          "text": "The twenty-third",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 19, who make the fourteenth day of Adar a day of gladness and feasting?",
+      "explanation": "The Jews of the villages, who live in the unwalled towns, make the fourteenth day of Adar a day of gladness and feasting.",
+      "bibleReference": "Esther 9:19",
+      "answers": [
+        {
+          "text": "The Jews in the citadel of Susa",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests serving in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's eunuchs in the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "The Jews of the villages in unwalled towns",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which days did Mordecai tell the Jews to keep every year?",
+      "explanation": "Mordecai wrote that they should keep the fourteenth and fifteenth days of the month Adar yearly.",
+      "bibleReference": "Esther 9:20-21",
+      "answers": [
+        {
+          "text": "The fourteenth and fifteenth days of Adar",
+          "isCorrect": true
+        },
+        {
+          "text": "The first and second days of Sivan",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the thirteenth day of Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventh day of every month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is \"Pur\", according to verse 24?",
+      "explanation": "Haman had cast \"Pur\", that is the lot, to consume and destroy the Jews.",
+      "bibleReference": "Esther 9:24",
+      "answers": [
+        {
+          "text": "A feast",
+          "isCorrect": false
+        },
+        {
+          "text": "A letter",
+          "isCorrect": false
+        },
+        {
+          "text": "The lot",
+          "isCorrect": true
+        },
+        {
+          "text": "A gallows",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they call these days, from the word \"Pur\"?",
+      "explanation": "They called these days \"Purim\", from the word \"Pur\".",
+      "bibleReference": "Esther 9:26",
+      "answers": [
+        {
+          "text": "Sivan",
+          "isCorrect": false
+        },
+        {
+          "text": "Purim",
+          "isCorrect": true
+        },
+        {
+          "text": "Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "Susa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose daughter was Esther the queen, according to verse 29?",
+      "explanation": "Verse 29 calls her Esther the queen, the daughter of Abihail.",
+      "bibleReference": "Esther 9:29",
+      "answers": [
+        {
+          "text": "Abihail",
+          "isCorrect": true
+        },
+        {
+          "text": "Hammedatha",
+          "isCorrect": false
+        },
+        {
+          "text": "Harbonah",
+          "isCorrect": false
+        },
+        {
+          "text": "Vaizatha",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

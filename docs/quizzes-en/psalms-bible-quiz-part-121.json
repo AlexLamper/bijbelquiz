@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 121",
+  "description": "Ten questions on Psalms 121: lifting up the eyes to the hills - Yahweh, maker of heaven and earth, is the keeper who never slumbers.",
+  "slug": "psalms-bible-quiz-part-121",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "To what does the psalmist lift up his eyes in verse 1?",
+      "explanation": "Psalms 121:1 says \"I will lift up my eyes to the hills.\"",
+      "bibleReference": "Psalms 121:1",
+      "answers": [
+        {
+          "text": "To the hills",
+          "isCorrect": true
+        },
+        {
+          "text": "To the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "To the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "To the city gates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does the psalmist's help come from?",
+      "explanation": "Psalms 121:2 says \"My help comes from Yahweh, who made heaven and earth.\"",
+      "bibleReference": "Psalms 121:2",
+      "answers": [
+        {
+          "text": "From the king's army and its many chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "From his friends and his brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "From Yahweh, who made heaven and earth",
+          "isCorrect": true
+        },
+        {
+          "text": "From his own strength and wisdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will he not allow to be moved, according to verse 3?",
+      "explanation": "Psalms 121:3 says \"He will not allow your foot to be moved.\"",
+      "bibleReference": "Psalms 121:3",
+      "answers": [
+        {
+          "text": "Your house",
+          "isCorrect": false
+        },
+        {
+          "text": "Your foot",
+          "isCorrect": true
+        },
+        {
+          "text": "Your tent",
+          "isCorrect": false
+        },
+        {
+          "text": "Your heart",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will he who keeps Israel never do?",
+      "explanation": "Psalms 121:4 says he who keeps Israel will neither slumber nor sleep.",
+      "bibleReference": "Psalms 121:4",
+      "answers": [
+        {
+          "text": "Rest nor eat",
+          "isCorrect": false
+        },
+        {
+          "text": "Turn away nor forget",
+          "isCorrect": false
+        },
+        {
+          "text": "Speak nor keep silent",
+          "isCorrect": false
+        },
+        {
+          "text": "Slumber nor sleep",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Verse 4 calls him \"he who keeps\" whom?",
+      "explanation": "Psalms 121:4 says \"Behold, he who keeps Israel will neither slumber nor sleep.\"",
+      "bibleReference": "Psalms 121:4",
+      "answers": [
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Zion",
+          "isCorrect": false
+        },
+        {
+          "text": "David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which side is Yahweh your shade?",
+      "explanation": "Psalms 121:5 says \"Yahweh is your shade on your right hand.\"",
+      "bibleReference": "Psalms 121:5",
+      "answers": [
+        {
+          "text": "On your right hand",
+          "isCorrect": true
+        },
+        {
+          "text": "On your left hand",
+          "isCorrect": false
+        },
+        {
+          "text": "Over your head",
+          "isCorrect": false
+        },
+        {
+          "text": "Behind you on the road",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Verse 6 says the sun will not harm you by day. What will not harm you by night?",
+      "explanation": "Psalms 121:6 says \"The sun will not harm you by day, nor the moon by night.\"",
+      "bibleReference": "Psalms 121:6",
+      "answers": [
+        {
+          "text": "The cold",
+          "isCorrect": false
+        },
+        {
+          "text": "The darkness",
+          "isCorrect": false
+        },
+        {
+          "text": "Wild beasts",
+          "isCorrect": false
+        },
+        {
+          "text": "The moon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides keeping you from all evil, what will Yahweh keep, according to verse 7?",
+      "explanation": "Psalms 121:7 says \"Yahweh will keep you from all evil. He will keep your soul.\"",
+      "bibleReference": "Psalms 121:7",
+      "answers": [
+        {
+          "text": "Your flocks",
+          "isCorrect": false
+        },
+        {
+          "text": "Your fields",
+          "isCorrect": false
+        },
+        {
+          "text": "Your soul",
+          "isCorrect": true
+        },
+        {
+          "text": "Your gold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two things of yours will Yahweh keep, according to verse 8?",
+      "explanation": "Psalms 121:8 says \"Yahweh will keep your going out and your coming in.\"",
+      "bibleReference": "Psalms 121:8",
+      "answers": [
+        {
+          "text": "Your going out and your coming in",
+          "isCorrect": true
+        },
+        {
+          "text": "Your sowing and your reaping",
+          "isCorrect": false
+        },
+        {
+          "text": "Your sitting down and your rising up",
+          "isCorrect": false
+        },
+        {
+          "text": "Your eating and your drinking",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long will Yahweh keep you, according to the last verse?",
+      "explanation": "Psalms 121:8 says \"from this time forward, and forever more.\"",
+      "bibleReference": "Psalms 121:8",
+      "answers": [
+        {
+          "text": "Until you grow old and gray",
+          "isCorrect": false
+        },
+        {
+          "text": "For seventy years and no more",
+          "isCorrect": false
+        },
+        {
+          "text": "From this time forward, and forever more",
+          "isCorrect": true
+        },
+        {
+          "text": "Only until the next harvest is in",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

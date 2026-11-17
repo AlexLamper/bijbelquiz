@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 26",
+  "description": "Ten questions on Psalms 26: a plea to be judged for walking in integrity, washing hands in innocence and loving the house where Yahweh's glory dwells.",
+  "slug": "psalms-bible-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why does the psalmist ask Yahweh to judge him in verse 1?",
+      "explanation": "Psalms 26:1 says, 'Judge me, Yahweh, for I have walked in my integrity.'",
+      "bibleReference": "Psalms 26:1",
+      "answers": [
+        {
+          "text": "He has given many gifts",
+          "isCorrect": false
+        },
+        {
+          "text": "He has walked in his integrity",
+          "isCorrect": true
+        },
+        {
+          "text": "He has never been sick",
+          "isCorrect": false
+        },
+        {
+          "text": "He has defeated his enemies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist ask Yahweh to try?",
+      "explanation": "Verse 2 says, 'Examine me, Yahweh, and prove me. Try my heart and my mind.'",
+      "bibleReference": "Psalms 26:2",
+      "answers": [
+        {
+          "text": "His hands and his feet",
+          "isCorrect": false
+        },
+        {
+          "text": "His words and his deeds",
+          "isCorrect": false
+        },
+        {
+          "text": "His strength and his skill",
+          "isCorrect": false
+        },
+        {
+          "text": "His heart and his mind",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is before the psalmist's eyes?",
+      "explanation": "Psalms 26:3 says, 'For your loving kindness is before my eyes.'",
+      "bibleReference": "Psalms 26:3",
+      "answers": [
+        {
+          "text": "His own sin and guilt",
+          "isCorrect": false
+        },
+        {
+          "text": "The path of the wicked",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh's loving kindness",
+          "isCorrect": true
+        },
+        {
+          "text": "The faces of his enemies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With whom has the psalmist not sat?",
+      "explanation": "Verse 4 says, 'I have not sat with deceitful men, neither will I go in with hypocrites.'",
+      "bibleReference": "Psalms 26:4",
+      "answers": [
+        {
+          "text": "Deceitful men",
+          "isCorrect": true
+        },
+        {
+          "text": "The elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Strangers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist say he hates?",
+      "explanation": "Psalms 26:5 says, 'I hate the assembly of evildoers.'",
+      "bibleReference": "Psalms 26:5",
+      "answers": [
+        {
+          "text": "The city of his enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "The house of the rich",
+          "isCorrect": false
+        },
+        {
+          "text": "The assembly of evildoers",
+          "isCorrect": true
+        },
+        {
+          "text": "The songs of the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what will the psalmist wash his hands?",
+      "explanation": "Verse 6 says, 'I will wash my hands in innocence, so I will go about your altar, Yahweh.'",
+      "bibleReference": "Psalms 26:6",
+      "answers": [
+        {
+          "text": "In the river",
+          "isCorrect": false
+        },
+        {
+          "text": "In innocence",
+          "isCorrect": true
+        },
+        {
+          "text": "In wine",
+          "isCorrect": false
+        },
+        {
+          "text": "In tears",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why will the psalmist go about Yahweh's altar?",
+      "explanation": "Verses 6-7 say he will go about the altar to make the voice of thanksgiving heard and tell of all Yahweh's wondrous deeds.",
+      "bibleReference": "Psalms 26:6-7",
+      "answers": [
+        {
+          "text": "To make the voice of thanksgiving heard",
+          "isCorrect": true
+        },
+        {
+          "text": "To offer a bull as a burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "To ask Yahweh for riches and honor",
+          "isCorrect": false
+        },
+        {
+          "text": "To speak with the priests at the gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the psalmist describe the house he loves?",
+      "explanation": "Psalms 26:8 says, 'I love the habitation of your house, the place where your glory dwells.'",
+      "bibleReference": "Psalms 26:8",
+      "answers": [
+        {
+          "text": "The place where the kings meet",
+          "isCorrect": false
+        },
+        {
+          "text": "The place his father built",
+          "isCorrect": false
+        },
+        {
+          "text": "The place of the evening sacrifice",
+          "isCorrect": false
+        },
+        {
+          "text": "The place where Yahweh's glory dwells",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what is the right hand of the bloodthirsty men full?",
+      "explanation": "Verse 10 says their right hand is full of bribes.",
+      "bibleReference": "Psalms 26:10",
+      "answers": [
+        {
+          "text": "Stones",
+          "isCorrect": false
+        },
+        {
+          "text": "Bribes",
+          "isCorrect": true
+        },
+        {
+          "text": "Weapons",
+          "isCorrect": false
+        },
+        {
+          "text": "Grain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does the psalmist's foot stand in the last verse?",
+      "explanation": "Psalms 26:12 says, 'My foot stands in an even place.'",
+      "bibleReference": "Psalms 26:12",
+      "answers": [
+        {
+          "text": "In an even place",
+          "isCorrect": true
+        },
+        {
+          "text": "In a slippery place",
+          "isCorrect": false
+        },
+        {
+          "text": "In a deep pit",
+          "isCorrect": false
+        },
+        {
+          "text": "On a narrow path",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

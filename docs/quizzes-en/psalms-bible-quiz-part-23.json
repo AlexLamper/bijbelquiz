@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 23",
+  "description": "Ten questions on Psalms 23: Yahweh as shepherd, green pastures and still waters, the valley of the shadow of death and dwelling in Yahweh's house.",
+  "slug": "psalms-bible-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does the psalmist call Yahweh in the first verse?",
+      "explanation": "Psalms 23:1 says, 'Yahweh is my shepherd: I shall lack nothing.'",
+      "bibleReference": "Psalms 23:1",
+      "answers": [
+        {
+          "text": "My king",
+          "isCorrect": false
+        },
+        {
+          "text": "My judge",
+          "isCorrect": false
+        },
+        {
+          "text": "My shepherd",
+          "isCorrect": true
+        },
+        {
+          "text": "My fortress",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Because Yahweh is his shepherd, what does the psalmist say about himself?",
+      "explanation": "Verse 1 says, 'Yahweh is my shepherd: I shall lack nothing.'",
+      "bibleReference": "Psalms 23:1",
+      "answers": [
+        {
+          "text": "\"I shall lack nothing.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"I shall never grow old.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I shall rule the nations.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I shall build a great house.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does he make the psalmist lie down?",
+      "explanation": "Psalms 23:2 says, 'He makes me lie down in green pastures.'",
+      "bibleReference": "Psalms 23:2",
+      "answers": [
+        {
+          "text": "In a quiet tent",
+          "isCorrect": false
+        },
+        {
+          "text": "In the shade of a tree",
+          "isCorrect": false
+        },
+        {
+          "text": "On a soft bed",
+          "isCorrect": false
+        },
+        {
+          "text": "In green pastures",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Beside what does he lead the psalmist?",
+      "explanation": "Verse 2 says, 'He leads me beside still waters.'",
+      "bibleReference": "Psalms 23:2",
+      "answers": [
+        {
+          "text": "The great sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Still waters",
+          "isCorrect": true
+        },
+        {
+          "text": "A rushing river",
+          "isCorrect": false
+        },
+        {
+          "text": "A deep well",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For whose sake does he guide the psalmist in the paths of righteousness?",
+      "explanation": "Psalms 23:3 says, 'He guides me in the paths of righteousness for his name's sake.'",
+      "bibleReference": "Psalms 23:3",
+      "answers": [
+        {
+          "text": "For the sake of the psalmist's father",
+          "isCorrect": false
+        },
+        {
+          "text": "For the people's sake",
+          "isCorrect": false
+        },
+        {
+          "text": "For the sake of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "For his name's sake",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Through which valley does the psalmist say he may walk?",
+      "explanation": "Verse 4 says, 'Even though I walk through the valley of the shadow of death, I will fear no evil.'",
+      "bibleReference": "Psalms 23:4",
+      "answers": [
+        {
+          "text": "The valley of tears",
+          "isCorrect": false
+        },
+        {
+          "text": "The valley of decision",
+          "isCorrect": false
+        },
+        {
+          "text": "The valley of the shadow of death",
+          "isCorrect": true
+        },
+        {
+          "text": "The valley of dry bones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What two things comfort the psalmist?",
+      "explanation": "Psalms 23:4 says, 'Your rod and your staff, they comfort me.'",
+      "bibleReference": "Psalms 23:4",
+      "answers": [
+        {
+          "text": "Your sword and your shield",
+          "isCorrect": false
+        },
+        {
+          "text": "Your rod and your staff",
+          "isCorrect": true
+        },
+        {
+          "text": "Your lamp and your light",
+          "isCorrect": false
+        },
+        {
+          "text": "Your words and your promises",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose presence is a table prepared before the psalmist?",
+      "explanation": "Verse 5 says, 'You prepare a table before me in the presence of my enemies.'",
+      "bibleReference": "Psalms 23:5",
+      "answers": [
+        {
+          "text": "His enemies",
+          "isCorrect": true
+        },
+        {
+          "text": "His friends",
+          "isCorrect": false
+        },
+        {
+          "text": "The king",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what is the psalmist's head anointed?",
+      "explanation": "Psalms 23:5 says, 'You anoint my head with oil. My cup runs over.'",
+      "bibleReference": "Psalms 23:5",
+      "answers": [
+        {
+          "text": "Water",
+          "isCorrect": false
+        },
+        {
+          "text": "Wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil",
+          "isCorrect": true
+        },
+        {
+          "text": "Honey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long will the psalmist dwell in Yahweh's house?",
+      "explanation": "Verse 6 says, 'I will dwell in Yahweh's house forever.'",
+      "bibleReference": "Psalms 23:6",
+      "answers": [
+        {
+          "text": "For seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Forever",
+          "isCorrect": true
+        },
+        {
+          "text": "For one year",
+          "isCorrect": false
+        },
+        {
+          "text": "Until he grows old",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

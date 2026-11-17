@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 4",
+  "description": "Ten questions on Psalms 4: a prayer in distress, a word to the sons of men, and lying down to sleep in peace.",
+  "slug": "psalms-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How does the psalmist address God in the first verse?",
+      "explanation": "He prays, \"Answer me when I call, God of my righteousness.\"",
+      "bibleReference": "Psalms 4:1",
+      "answers": [
+        {
+          "text": "God of my righteousness",
+          "isCorrect": true
+        },
+        {
+          "text": "God of my fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "God of all armies",
+          "isCorrect": false
+        },
+        {
+          "text": "God of Jacob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does the psalmist ask, \"How long shall my glory be turned into dishonor?\"",
+      "explanation": "Verse 2 is addressed to \"You sons of men\".",
+      "bibleReference": "Psalms 4:2",
+      "answers": [
+        {
+          "text": "The kings of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The sons of men",
+          "isCorrect": true
+        },
+        {
+          "text": "The angels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist say the sons of men seek after?",
+      "explanation": "He asks, \"Will you love vanity and seek after falsehood?\"",
+      "bibleReference": "Psalms 4:2",
+      "answers": [
+        {
+          "text": "Wisdom",
+          "isCorrect": false
+        },
+        {
+          "text": "Falsehood",
+          "isCorrect": true
+        },
+        {
+          "text": "Peace",
+          "isCorrect": false
+        },
+        {
+          "text": "Righteousness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom has Yahweh set apart for himself?",
+      "explanation": "Yahweh has set apart for himself him who is godly.",
+      "bibleReference": "Psalms 4:3",
+      "answers": [
+        {
+          "text": "The strong",
+          "isCorrect": false
+        },
+        {
+          "text": "The rich",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Him who is godly",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where are the listeners told to search their own heart?",
+      "explanation": "Verse 4 says, \"Search your own heart on your bed, and be still.\"",
+      "bibleReference": "Psalms 4:4",
+      "answers": [
+        {
+          "text": "In the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "At the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "In the field",
+          "isCorrect": false
+        },
+        {
+          "text": "On their bed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What are the listeners told to offer?",
+      "explanation": "Verse 5 says, \"Offer the sacrifices of righteousness.\"",
+      "bibleReference": "Psalms 4:5",
+      "answers": [
+        {
+          "text": "Gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrifices of righteousness",
+          "isCorrect": true
+        },
+        {
+          "text": "Rams and bulls from the herd",
+          "isCorrect": false
+        },
+        {
+          "text": "Their firstborn cattle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do many say, according to verse 6?",
+      "explanation": "Many say, \"Who will show us any good?\"",
+      "bibleReference": "Psalms 4:6",
+      "answers": [
+        {
+          "text": "\"Where is your God?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"When will the rain come?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Who will show us any good?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Who can stand before him?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the psalmist ask Yahweh to let shine on them?",
+      "explanation": "He prays, \"Yahweh, let the light of your face shine on us.\"",
+      "bibleReference": "Psalms 4:6",
+      "answers": [
+        {
+          "text": "The light of his face",
+          "isCorrect": true
+        },
+        {
+          "text": "The fire of his altar",
+          "isCorrect": false
+        },
+        {
+          "text": "The stars of heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The sun at noon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Yahweh put gladness in his heart, more than when what happens?",
+      "explanation": "He has gladness more than when their grain and their new wine are increased.",
+      "bibleReference": "Psalms 4:7",
+      "answers": [
+        {
+          "text": "When their gold is counted",
+          "isCorrect": false
+        },
+        {
+          "text": "When their enemies flee",
+          "isCorrect": false
+        },
+        {
+          "text": "When their grain and new wine increase",
+          "isCorrect": true
+        },
+        {
+          "text": "When their sons are born",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will the psalmist do in peace?",
+      "explanation": "He says, \"In peace I will both lay myself down and sleep.\"",
+      "bibleReference": "Psalms 4:8",
+      "answers": [
+        {
+          "text": "Go out to war",
+          "isCorrect": false
+        },
+        {
+          "text": "Lie down and sleep",
+          "isCorrect": true
+        },
+        {
+          "text": "Build a house",
+          "isCorrect": false
+        },
+        {
+          "text": "Sing all night",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 1",
+  "description": "Ten questions on Psalms 1: the blessed man who delights in Yahweh's law, like a tree by the streams, and the way of the wicked.",
+  "slug": "psalms-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In whose counsel does the blessed man not walk?",
+      "explanation": "The blessed man doesn't walk in the counsel of the wicked.",
+      "bibleReference": "Psalms 1:1",
+      "answers": [
+        {
+          "text": "The righteous",
+          "isCorrect": false
+        },
+        {
+          "text": "The wicked",
+          "isCorrect": true
+        },
+        {
+          "text": "The elders",
+          "isCorrect": false
+        },
+        {
+          "text": "His father",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose seat does the blessed man not sit?",
+      "explanation": "He does not sit in the seat of scoffers.",
+      "bibleReference": "Psalms 1:1",
+      "answers": [
+        {
+          "text": "Judges",
+          "isCorrect": false
+        },
+        {
+          "text": "Kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Scoffers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "On whose path does the blessed man not stand?",
+      "explanation": "He does not stand on the path of sinners.",
+      "bibleReference": "Psalms 1:1",
+      "answers": [
+        {
+          "text": "Sinners",
+          "isCorrect": true
+        },
+        {
+          "text": "Strangers",
+          "isCorrect": false
+        },
+        {
+          "text": "Merchants",
+          "isCorrect": false
+        },
+        {
+          "text": "Soldiers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is the delight of the blessed man?",
+      "explanation": "His delight is in Yahweh's law.",
+      "bibleReference": "Psalms 1:2",
+      "answers": [
+        {
+          "text": "Great riches",
+          "isCorrect": false
+        },
+        {
+          "text": "His own wisdom",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh's law",
+          "isCorrect": true
+        },
+        {
+          "text": "Feasts and wine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When does the blessed man meditate on Yahweh's law?",
+      "explanation": "On his law he meditates day and night.",
+      "bibleReference": "Psalms 1:2",
+      "answers": [
+        {
+          "text": "Only on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Only in the morning",
+          "isCorrect": false
+        },
+        {
+          "text": "Day and night",
+          "isCorrect": true
+        },
+        {
+          "text": "Once a year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will the blessed man be like?",
+      "explanation": "He will be like a tree planted by the streams of water.",
+      "bibleReference": "Psalms 1:3",
+      "answers": [
+        {
+          "text": "A tree by streams of water",
+          "isCorrect": true
+        },
+        {
+          "text": "A house built on a rock",
+          "isCorrect": false
+        },
+        {
+          "text": "A lamp on a stand",
+          "isCorrect": false
+        },
+        {
+          "text": "A rock in the desert",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is said about the leaf of that tree?",
+      "explanation": "The tree produces its fruit in its season, and its leaf does not wither.",
+      "bibleReference": "Psalms 1:3",
+      "answers": [
+        {
+          "text": "It falls in winter",
+          "isCorrect": false
+        },
+        {
+          "text": "It turns to gold",
+          "isCorrect": false
+        },
+        {
+          "text": "It is eaten by locusts",
+          "isCorrect": false
+        },
+        {
+          "text": "It does not wither",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What are the wicked like?",
+      "explanation": "The wicked are like the chaff which the wind drives away.",
+      "bibleReference": "Psalms 1:4",
+      "answers": [
+        {
+          "text": "Grass that withers in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "Chaff the wind drives away",
+          "isCorrect": true
+        },
+        {
+          "text": "Smoke that vanishes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sand by the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where shall the wicked not stand?",
+      "explanation": "The wicked shall not stand in the judgment.",
+      "bibleReference": "Psalms 1:5",
+      "answers": [
+        {
+          "text": "In the judgment",
+          "isCorrect": true
+        },
+        {
+          "text": "In the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "At the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "In the king's court",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh know, according to the last verse?",
+      "explanation": "Yahweh knows the way of the righteous, but the way of the wicked shall perish.",
+      "bibleReference": "Psalms 1:6",
+      "answers": [
+        {
+          "text": "The plans of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The number of the stars",
+          "isCorrect": false
+        },
+        {
+          "text": "The way of the righteous",
+          "isCorrect": true
+        },
+        {
+          "text": "The hearts of kings",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

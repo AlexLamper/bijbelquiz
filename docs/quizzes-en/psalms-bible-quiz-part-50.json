@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 50",
+  "description": "Ten questions on Psalms 50: God calls heaven and earth to judge his people, owns the livestock on a thousand hills, and asks for the sacrifice of thanksgiving.",
+  "slug": "psalms-bible-quiz-part-50",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "From where to where does God call the earth in verse 1?",
+      "explanation": "Psalms 50:1 says God \"calls the earth from sunrise to sunset.\"",
+      "bibleReference": "Psalms 50:1",
+      "answers": [
+        {
+          "text": "From sea to sea",
+          "isCorrect": false
+        },
+        {
+          "text": "From sunrise to sunset",
+          "isCorrect": true
+        },
+        {
+          "text": "From the river to the desert",
+          "isCorrect": false
+        },
+        {
+          "text": "From the north to the south",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Out of which place, \"the perfection of beauty,\" does God shine out?",
+      "explanation": "Psalms 50:2 says, \"Out of Zion, the perfection of beauty, God shines out.\"",
+      "bibleReference": "Psalms 50:2",
+      "answers": [
+        {
+          "text": "Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "Zion",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What devours before God as he comes?",
+      "explanation": "Psalms 50:3 says, \"A fire devours before him. It is very stormy around him.\"",
+      "bibleReference": "Psalms 50:3",
+      "answers": [
+        {
+          "text": "A fire",
+          "isCorrect": true
+        },
+        {
+          "text": "A flood",
+          "isCorrect": false
+        },
+        {
+          "text": "A lion",
+          "isCorrect": false
+        },
+        {
+          "text": "A sword",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "God's saints have made a covenant with him by what?",
+      "explanation": "Psalms 50:5 says, \"Gather my saints together to me, those who have made a covenant with me by sacrifice.\"",
+      "bibleReference": "Psalms 50:5",
+      "answers": [
+        {
+          "text": "Fasting",
+          "isCorrect": false
+        },
+        {
+          "text": "A gift of gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrifice",
+          "isCorrect": true
+        },
+        {
+          "text": "A written law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "God says the livestock on how many hills are his?",
+      "explanation": "Psalms 50:10 says, \"For every animal of the forest is mine, and the livestock on a thousand hills.\"",
+      "bibleReference": "Psalms 50:10",
+      "answers": [
+        {
+          "text": "A thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "A hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why would God not tell his people if he were hungry?",
+      "explanation": "Psalms 50:12 says, \"If I were hungry, I would not tell you, for the world is mine, and all that is in it.\"",
+      "bibleReference": "Psalms 50:12",
+      "answers": [
+        {
+          "text": "He never speaks to his people",
+          "isCorrect": false
+        },
+        {
+          "text": "The world and all that is in it are his",
+          "isCorrect": true
+        },
+        {
+          "text": "His people have nothing to give",
+          "isCorrect": false
+        },
+        {
+          "text": "His angels bring him food",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 14, what sacrifice are the people told to offer to God?",
+      "explanation": "Psalms 50:14 says, \"Offer to God the sacrifice of thanksgiving. Pay your vows to the Most High.\"",
+      "bibleReference": "Psalms 50:14",
+      "answers": [
+        {
+          "text": "A bull from the stall",
+          "isCorrect": false
+        },
+        {
+          "text": "Male goats from the pens",
+          "isCorrect": false
+        },
+        {
+          "text": "The sacrifice of thanksgiving",
+          "isCorrect": true
+        },
+        {
+          "text": "The firstborn of the flock",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When does God tell his people to call on him?",
+      "explanation": "Psalms 50:15 says, \"Call on me in the day of trouble. I will deliver you, and you will honor me.\"",
+      "bibleReference": "Psalms 50:15",
+      "answers": [
+        {
+          "text": "Only at the new moon",
+          "isCorrect": false
+        },
+        {
+          "text": "Only at the feasts",
+          "isCorrect": false
+        },
+        {
+          "text": "Only in the morning",
+          "isCorrect": false
+        },
+        {
+          "text": "In the day of trouble",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the wicked do when they saw a thief?",
+      "explanation": "Psalms 50:18 says, \"When you saw a thief, you consented with him.\"",
+      "bibleReference": "Psalms 50:18",
+      "answers": [
+        {
+          "text": "Reported him to the judges",
+          "isCorrect": false
+        },
+        {
+          "text": "Consented with him",
+          "isCorrect": true
+        },
+        {
+          "text": "Rebuked him to his face",
+          "isCorrect": false
+        },
+        {
+          "text": "Ran away from him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does the wicked person slander, according to verse 20?",
+      "explanation": "Psalms 50:20 says, \"You sit and speak against your brother. You slander your own mother's son.\"",
+      "bibleReference": "Psalms 50:20",
+      "answers": [
+        {
+          "text": "The king of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "The priest at the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "His own mother's son",
+          "isCorrect": true
+        },
+        {
+          "text": "His own father",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

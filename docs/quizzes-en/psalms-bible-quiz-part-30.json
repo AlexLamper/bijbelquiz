@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 30",
+  "description": "Ten questions on Psalms 30: being raised up from Sheol, weeping for the night and joy in the morning, and mourning turned into dancing.",
+  "slug": "psalms-bible-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What has Yahweh not allowed the psalmist's foes to do?",
+      "explanation": "Psalms 30:1 says Yahweh has not made his foes to rejoice over him.",
+      "bibleReference": "Psalms 30:1",
+      "answers": [
+        {
+          "text": "Enter his house",
+          "isCorrect": false
+        },
+        {
+          "text": "Rejoice over him",
+          "isCorrect": true
+        },
+        {
+          "text": "Take his land",
+          "isCorrect": false
+        },
+        {
+          "text": "Speak against him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh do when the psalmist cried to him?",
+      "explanation": "Verse 2 says, 'Yahweh my God, I cried to you, and you have healed me.'",
+      "bibleReference": "Psalms 30:2",
+      "answers": [
+        {
+          "text": "He made him rich",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave him a son",
+          "isCorrect": false
+        },
+        {
+          "text": "He made him king",
+          "isCorrect": false
+        },
+        {
+          "text": "He healed him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "From where has Yahweh brought up the psalmist's soul?",
+      "explanation": "Psalms 30:3 says, 'Yahweh, you have brought up my soul from Sheol.'",
+      "bibleReference": "Psalms 30:3",
+      "answers": [
+        {
+          "text": "Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Sheol",
+          "isCorrect": true
+        },
+        {
+          "text": "Prison",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long does Yahweh's anger last, according to verse 5?",
+      "explanation": "Verse 5 says, 'For his anger is but for a moment. His favor is for a lifetime.'",
+      "bibleReference": "Psalms 30:5",
+      "answers": [
+        {
+          "text": "A moment",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "A generation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When does joy come, according to verse 5?",
+      "explanation": "Psalms 30:5 says, 'Weeping may stay for the night, but joy comes in the morning.'",
+      "bibleReference": "Psalms 30:5",
+      "answers": [
+        {
+          "text": "In the evening",
+          "isCorrect": false
+        },
+        {
+          "text": "At harvest time",
+          "isCorrect": false
+        },
+        {
+          "text": "In the morning",
+          "isCorrect": true
+        },
+        {
+          "text": "In the spring",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the psalmist say in his prosperity?",
+      "explanation": "Verse 6 says, 'As for me, I said in my prosperity, \"I shall never be moved.\"'",
+      "bibleReference": "Psalms 30:6",
+      "answers": [
+        {
+          "text": "\"My riches will save me.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I shall never be moved.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Who is like me?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I have no more enemies.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the psalmist when Yahweh hid his face?",
+      "explanation": "Psalms 30:7 says, 'But when you hid your face, I was troubled.'",
+      "bibleReference": "Psalms 30:7",
+      "answers": [
+        {
+          "text": "He was troubled",
+          "isCorrect": true
+        },
+        {
+          "text": "He slept in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "He went out to battle",
+          "isCorrect": false
+        },
+        {
+          "text": "He left the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What question about the dust does the psalmist ask Yahweh?",
+      "explanation": "Verse 9 asks, 'Shall the dust praise you? Shall it declare your truth?'",
+      "bibleReference": "Psalms 30:9",
+      "answers": [
+        {
+          "text": "\"Shall the dust become a man?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Shall the dust cover the earth?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Shall the dust be blown away?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Shall the dust praise you?\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Into what has Yahweh turned the psalmist's mourning?",
+      "explanation": "Psalms 30:11 says, 'You have turned my mourning into dancing for me.'",
+      "bibleReference": "Psalms 30:11",
+      "answers": [
+        {
+          "text": "Silence",
+          "isCorrect": false
+        },
+        {
+          "text": "Dancing",
+          "isCorrect": true
+        },
+        {
+          "text": "Sleep",
+          "isCorrect": false
+        },
+        {
+          "text": "Fasting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After removing his sackcloth, with what did Yahweh clothe the psalmist?",
+      "explanation": "Verse 11 says, 'You have removed my sackcloth, and clothed me with gladness.'",
+      "bibleReference": "Psalms 30:11",
+      "answers": [
+        {
+          "text": "Gladness",
+          "isCorrect": true
+        },
+        {
+          "text": "A royal robe",
+          "isCorrect": false
+        },
+        {
+          "text": "Fine linen",
+          "isCorrect": false
+        },
+        {
+          "text": "Armor",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
