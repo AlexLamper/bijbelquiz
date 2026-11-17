@@ -1,7 +1,9 @@
 # Quiz agent brief (writer and reviewer)
 
 Repo: /home/claude/bijbelquiz. Bible data: ../bijbelapi-data/data. Never commit, never push,
-never touch the Dutch library or any file outside your own batch. Run all commands from the repo root.
+never touch the Dutch library or any file outside your own batch. Many agents run in parallel:
+keep helper scripts ONLY in your own folder `/tmp/q-<lang>-<batch>-<role>` (never /tmp/qgen or another shared path),
+and never run a script you did not write. Run all commands from the repo root.
 
 ## Languages
 
