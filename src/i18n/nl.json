@@ -1845,5 +1845,28 @@
       "defaultName": "Groep van {name}",
       "full": "Deze groep zit vol ({seats} plekken). Vraag de beheerder om plek vrij te maken."
     }
+  },
+  "leaderboardSide": {
+    "joinLabel": "Meedoen",
+    "joinTitle": "Sta jij ook op de ranglijst?",
+    "joinBody": "Maak een gratis account, verdien XP met quizzen en stijg in de ranglijst.",
+    "joinCta": "Gratis account maken",
+    "haveAccount": "Al een account?",
+    "signIn": "Inloggen",
+    "earnBody": "Verdien XP door quizzen te spelen en stijg in de ranglijst.",
+    "playQuiz": "Speel een quiz",
+    "groupsTitle": "Jouw groepen",
+    "groupsBody": "Bewaar je groep na een spel bij Samen spelen en volg hier jullie eigen stand.",
+    "everyone": "Iedereen",
+    "wholeBoard": "De hele ranglijst",
+    "onePlayer": "1 speler",
+    "players": "{count} spelers",
+    "playTogether": "Speel samen",
+    "playTogetherBody": "Start een spel en bewaar je groep"
+  },
+  "loadingLabels": {
+    "quizzes": "Quizzen laden",
+    "leaderboard": "Ranglijst laden",
+    "dashboard": "Dashboard laden"
   }
 }

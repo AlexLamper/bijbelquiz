@@ -1,9 +1,10 @@
 import { Container, Skeleton } from '@/components/bq';
+import { t } from '@/i18n';
 
 export default function LeaderboardLoading() {
   return (
     <Container className="flex flex-col gap-7 px-5 pb-[72px] pt-10" aria-busy="true">
-      <span className="sr-only">Ranglijst laden</span>
+      <span className="sr-only">{t('loadingLabels.leaderboard')}</span>
       <div className="flex flex-col gap-2">
         <Skeleton className="h-10 w-48" />
         <Skeleton className="h-6 w-72 max-w-full" />

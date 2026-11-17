@@ -1813,5 +1813,28 @@
       "defaultName": "Gruppe von {name}",
       "full": "Diese Gruppe ist voll ({seats} Plätze). Bitte den Administrator, einen Platz freizugeben."
     }
+  },
+  "leaderboardSide": {
+    "joinLabel": "Mitmachen",
+    "joinTitle": "Willst du auch in die Rangliste?",
+    "joinBody": "Erstelle ein kostenloses Konto, verdiene XP mit Quizzen und steig in der Rangliste auf.",
+    "joinCta": "Kostenloses Konto erstellen",
+    "haveAccount": "Schon ein Konto?",
+    "signIn": "Anmelden",
+    "earnBody": "Verdiene XP mit Quizzen und steig in der Rangliste auf.",
+    "playQuiz": "Spiel ein Quiz",
+    "groupsTitle": "Deine Gruppen",
+    "groupsBody": "Speichere deine Gruppe nach einem Spiel bei Zusammen spielen und verfolge hier euren eigenen Stand.",
+    "everyone": "Alle",
+    "wholeBoard": "Die ganze Rangliste",
+    "onePlayer": "1 Spieler",
+    "players": "{count} Spieler",
+    "playTogether": "Zusammen spielen",
+    "playTogetherBody": "Starte ein Spiel und speichere deine Gruppe"
+  },
+  "loadingLabels": {
+    "quizzes": "Quizze werden geladen",
+    "leaderboard": "Rangliste wird geladen",
+    "dashboard": "Dashboard wird geladen"
   }
 }

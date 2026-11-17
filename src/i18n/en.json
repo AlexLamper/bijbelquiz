@@ -1813,5 +1813,28 @@
       "defaultName": "Group of {name}",
       "full": "This group is full ({seats} seats). Ask the administrator to free up a seat."
     }
+  },
+  "leaderboardSide": {
+    "joinLabel": "Join in",
+    "joinTitle": "Want a spot on the leaderboard?",
+    "joinBody": "Create a free account, earn XP with quizzes and climb the leaderboard.",
+    "joinCta": "Create a free account",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "earnBody": "Earn XP by playing quizzes and climb the leaderboard.",
+    "playQuiz": "Play a quiz",
+    "groupsTitle": "Your groups",
+    "groupsBody": "Save your group after a game in Play together and follow your own standings here.",
+    "everyone": "Everyone",
+    "wholeBoard": "The whole leaderboard",
+    "onePlayer": "1 player",
+    "players": "{count} players",
+    "playTogether": "Play together",
+    "playTogetherBody": "Start a game and save your group"
+  },
+  "loadingLabels": {
+    "quizzes": "Loading quizzes",
+    "leaderboard": "Loading leaderboard",
+    "dashboard": "Loading dashboard"
   }
 }

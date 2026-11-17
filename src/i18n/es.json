@@ -1813,5 +1813,28 @@
       "defaultName": "Grupo de {name}",
       "full": "Este grupo está completo ({seats} plazas). Pide al administrador que libere una plaza."
     }
+  },
+  "leaderboardSide": {
+    "joinLabel": "Participar",
+    "joinTitle": "¿Quieres aparecer en la clasificación?",
+    "joinBody": "Crea una cuenta gratis, gana XP con quizzes y sube en la clasificación.",
+    "joinCta": "Crear una cuenta gratis",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "signIn": "Iniciar sesión",
+    "earnBody": "Gana XP jugando quizzes y sube en la clasificación.",
+    "playQuiz": "Juega un quiz",
+    "groupsTitle": "Tus grupos",
+    "groupsBody": "Guarda tu grupo después de una partida en Jugar juntos y sigue aquí vuestra clasificación.",
+    "everyone": "Todos",
+    "wholeBoard": "Toda la clasificación",
+    "onePlayer": "1 jugador",
+    "players": "{count} jugadores",
+    "playTogether": "Jugad juntos",
+    "playTogetherBody": "Empieza una partida y guarda tu grupo"
+  },
+  "loadingLabels": {
+    "quizzes": "Cargando quizzes",
+    "leaderboard": "Cargando clasificación",
+    "dashboard": "Cargando panel"
   }
 }
