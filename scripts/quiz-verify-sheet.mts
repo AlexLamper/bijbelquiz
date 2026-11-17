@@ -16,9 +16,9 @@ const { parseStrictRef } = refMod.default ?? refMod;
 const arg = (name: string) => process.argv.find((a) => a.startsWith(`--${name}=`))?.slice(name.length + 3);
 const LANG = arg('lang') ?? 'en';
 const DIR = arg('bible-dir');
-const VERSION: Record<string, string> = { en: 'web', de: 'luth1912', fr: 'lsg1910', pt: 'blivre' };
+const VERSION: Record<string, string> = { en: 'web', es: 'rv1909', de: 'luth1912', fr: 'lsg1910', pt: 'blivre' };
 if (!DIR || !VERSION[LANG]) {
-  console.error('usage: --lang=en|de|fr|pt --bible-dir=<path> [files...]');
+  console.error('usage: --lang=en|es|de|fr|pt --bible-dir=<path> [files...]');
   process.exit(2);
 }
 const books = JSON.parse(fs.readFileSync(path.join(DIR, `${VERSION[LANG]}.json`), 'utf8')).books;
