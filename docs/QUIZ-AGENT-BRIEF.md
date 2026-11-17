@@ -63,6 +63,8 @@ for 10 good questions, still make 10 but only from what the text says; say so in
    d. the question uses no fact from outside the cited verses;
    e. the reference points at the verses that actually contain the answer;
    f. grammar and wording are natural <language>; names as spelled in the text.
+   A speaker or person may be named in a question when this chapter names them anywhere (e.g. Moses in
+   Deuteronomy 31, the king in Esther 5); otherwise use the text's own words ("the speaker", "he").
 2. Fix every problem in place (rewrite the question if needed). Keep slug, title, isPremium.
 3. Re-run the validator on the batch files: 0 errors, 0 warnings.
 4. Write `docs/quizzes-<xx>/_reviews/batch-<NNN>.md`: one line per quiz, `OK` or `FIXED: <what>`,
