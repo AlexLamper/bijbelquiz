@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 147",
+  "description": "Ten questions on Psalms 147: the God who heals the brokenhearted, counts the stars, and sends snow, frost and hail.",
+  "slug": "psalms-bible-quiz-part-147",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What city does Yahweh build up, gathering together the outcasts of Israel?",
+      "explanation": "The psalm says, \"Yahweh builds up Jerusalem. He gathers together the outcasts of Israel.\"",
+      "bibleReference": "Psalms 147:2",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh do for the broken in heart?",
+      "explanation": "The psalm says he heals the broken in heart and binds up their wounds.",
+      "bibleReference": "Psalms 147:3",
+      "answers": [
+        {
+          "text": "He gives them a new song",
+          "isCorrect": false
+        },
+        {
+          "text": "He heals them and binds up their wounds",
+          "isCorrect": true
+        },
+        {
+          "text": "He hides them in his tent",
+          "isCorrect": false
+        },
+        {
+          "text": "He wipes away their tears",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh do with the stars?",
+      "explanation": "He counts the number of the stars and calls them all by their names.",
+      "bibleReference": "Psalms 147:4",
+      "answers": [
+        {
+          "text": "He counts their number and calls them all by their names",
+          "isCorrect": true
+        },
+        {
+          "text": "He makes them bow before him",
+          "isCorrect": false
+        },
+        {
+          "text": "He sets them as signs for the seasons",
+          "isCorrect": false
+        },
+        {
+          "text": "He commands them to fight for Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the psalm describe the Lord's understanding?",
+      "explanation": "It says, \"Great is our Lord, and mighty in power. His understanding is infinite.\"",
+      "bibleReference": "Psalms 147:5",
+      "answers": [
+        {
+          "text": "It is deeper than the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "It is hidden from men",
+          "isCorrect": false
+        },
+        {
+          "text": "It is infinite",
+          "isCorrect": true
+        },
+        {
+          "text": "It is past tracing out by angels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides the livestock, who does God provide food for when they call?",
+      "explanation": "He provides food for the livestock, and for the young ravens when they call.",
+      "bibleReference": "Psalms 147:9",
+      "answers": [
+        {
+          "text": "The young lions",
+          "isCorrect": false
+        },
+        {
+          "text": "The sparrows",
+          "isCorrect": false
+        },
+        {
+          "text": "The eagles",
+          "isCorrect": false
+        },
+        {
+          "text": "The young ravens",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh not delight in, according to verse 10?",
+      "explanation": "The psalm says he doesn't delight in the strength of the horse, and takes no pleasure in the legs of a man.",
+      "bibleReference": "Psalms 147:10",
+      "answers": [
+        {
+          "text": "The strength of the horse",
+          "isCorrect": true
+        },
+        {
+          "text": "The sacrifices of bulls",
+          "isCorrect": false
+        },
+        {
+          "text": "The songs of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The wealth of kings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whom does Yahweh take pleasure?",
+      "explanation": "Yahweh takes pleasure in those who fear him, in those who hope in his loving kindness.",
+      "bibleReference": "Psalms 147:11",
+      "answers": [
+        {
+          "text": "Those who are mighty and strong in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who fast and mourn before him daily",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who fear him and hope in his loving kindness",
+          "isCorrect": true
+        },
+        {
+          "text": "Those who give their riches to the poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does God fill Zion with, according to verse 14?",
+      "explanation": "He makes peace in Zion's borders and fills her with the finest of the wheat.",
+      "bibleReference": "Psalms 147:14",
+      "answers": [
+        {
+          "text": "Milk and honey",
+          "isCorrect": false
+        },
+        {
+          "text": "The finest of the wheat",
+          "isCorrect": true
+        },
+        {
+          "text": "New wine and oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver and gold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does God give \"like wool\"?",
+      "explanation": "The psalm says he gives snow like wool, and scatters frost like ashes.",
+      "bibleReference": "Psalms 147:16",
+      "answers": [
+        {
+          "text": "Clouds",
+          "isCorrect": false
+        },
+        {
+          "text": "Rain",
+          "isCorrect": false
+        },
+        {
+          "text": "Hail",
+          "isCorrect": false
+        },
+        {
+          "text": "Snow",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom does God show his word, his statutes and his ordinances?",
+      "explanation": "He shows his word to Jacob, his statutes and his ordinances to Israel; he has not done this for just any nation.",
+      "bibleReference": "Psalms 147:19",
+      "answers": [
+        {
+          "text": "Jacob and Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "All the nations of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of the east",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests and prophets",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

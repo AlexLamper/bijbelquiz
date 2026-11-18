@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 6",
+  "description": "Ten questions on Isaiah 6: the vision of the Lord on his throne, the seraphim, the live coal, and \"Here I am. Send me!\"",
+  "slug": "isaiah-bible-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In the year of which king's death did Isaiah see the Lord on a throne?",
+      "explanation": "Isaiah says, \"In the year that king Uzziah died, I saw the Lord sitting on a throne, high and lifted up.\"",
+      "bibleReference": "Isaiah 6:1",
+      "answers": [
+        {
+          "text": "King Ahaz",
+          "isCorrect": false
+        },
+        {
+          "text": "King Uzziah",
+          "isCorrect": true
+        },
+        {
+          "text": "King Hezekiah",
+          "isCorrect": false
+        },
+        {
+          "text": "King Jotham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Lord's train fill?",
+      "explanation": "The Lord was sitting on a throne, high and lifted up, and his train filled the temple.",
+      "bibleReference": "Isaiah 6:1",
+      "answers": [
+        {
+          "text": "The city",
+          "isCorrect": false
+        },
+        {
+          "text": "The heavens",
+          "isCorrect": false
+        },
+        {
+          "text": "The whole earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The temple",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many wings did each of the seraphim have?",
+      "explanation": "Each seraphim had six wings: with two he covered his face, with two he covered his feet, and with two he flew.",
+      "bibleReference": "Isaiah 6:2",
+      "answers": [
+        {
+          "text": "Six",
+          "isCorrect": true
+        },
+        {
+          "text": "Two",
+          "isCorrect": false
+        },
+        {
+          "text": "Four",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the seraphim call to one another?",
+      "explanation": "One called to another, \"Holy, holy, holy, is Yahweh of Armies! The whole earth is full of his glory!\"",
+      "bibleReference": "Isaiah 6:3",
+      "answers": [
+        {
+          "text": "\"Great is Yahweh, and greatly to be praised!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Blessed is he who comes in Yahweh's name!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Holy, holy, holy, is Yahweh of Armies!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Mighty is the King of Israel!\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what was the house filled when the voice called?",
+      "explanation": "The foundations of the thresholds shook at the voice of him who called, and the house was filled with smoke.",
+      "bibleReference": "Isaiah 6:4",
+      "answers": [
+        {
+          "text": "Light",
+          "isCorrect": false
+        },
+        {
+          "text": "Smoke",
+          "isCorrect": true
+        },
+        {
+          "text": "Fire",
+          "isCorrect": false
+        },
+        {
+          "text": "Singing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Isaiah cry out \"Woe is me!\"?",
+      "explanation": "Isaiah said he was undone because he was a man of unclean lips dwelling among a people of unclean lips, and his eyes had seen the King, Yahweh of Armies.",
+      "bibleReference": "Isaiah 6:5",
+      "answers": [
+        {
+          "text": "Because he was a man of unclean lips",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the temple was shaking",
+          "isCorrect": false
+        },
+        {
+          "text": "Because king Uzziah had died",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the people had rejected him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did one of the seraphim bring to Isaiah?",
+      "explanation": "One of the seraphim flew to him with a live coal in his hand, which he had taken with the tongs from off the altar.",
+      "bibleReference": "Isaiah 6:6",
+      "answers": [
+        {
+          "text": "A scroll with writing on it",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden cup of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A measuring line in his hand",
+          "isCorrect": false
+        },
+        {
+          "text": "A live coal from the altar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Isaiah answer when the Lord asked, \"Whom shall I send, and who will go for us?\"",
+      "explanation": "Isaiah answered, \"Here I am. Send me!\"",
+      "bibleReference": "Isaiah 6:8",
+      "answers": [
+        {
+          "text": "\"Send my brother in my place\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I am too unclean to go\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Here I am. Send me!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Lord, choose another\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When Isaiah asked \"Lord, how long?\", what was the answer?",
+      "explanation": "The Lord answered, \"Until cities are waste without inhabitant, houses without man, the land becomes utterly waste.\"",
+      "bibleReference": "Isaiah 6:11",
+      "answers": [
+        {
+          "text": "Until cities are waste without inhabitant",
+          "isCorrect": true
+        },
+        {
+          "text": "Until the people turn and repent",
+          "isCorrect": false
+        },
+        {
+          "text": "Until a new king is crowned",
+          "isCorrect": false
+        },
+        {
+          "text": "For seventy years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the last verse say about the tenth that is left in the land?",
+      "explanation": "If there is a tenth left in it, that also will in turn be consumed, like a terebinth or an oak whose stump remains when cut down; the holy seed is its stock.",
+      "bibleReference": "Isaiah 6:13",
+      "answers": [
+        {
+          "text": "It will rebuild the cities",
+          "isCorrect": false
+        },
+        {
+          "text": "It will flee to Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be spared forever",
+          "isCorrect": false
+        },
+        {
+          "text": "It will in turn be consumed",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

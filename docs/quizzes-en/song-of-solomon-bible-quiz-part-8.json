@@ -1,0 +1,242 @@
+{
+  "title": "Song of Solomon Bible Quiz - Chapter 8",
+  "description": "Ten questions on Song of Solomon 8: love strong as death, the little sister, and Solomon's vineyard at Baal Hamon.",
+  "slug": "song-of-solomon-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does the woman wish her beloved were like, so that she could kiss him outside without being despised?",
+      "explanation": "She says, \"Oh that you were like my brother, who nursed from the breasts of my mother!\" Then she could kiss him outside and no one would despise her.",
+      "bibleReference": "Song of Solomon 8:1",
+      "answers": [
+        {
+          "text": "A king on his throne",
+          "isCorrect": false
+        },
+        {
+          "text": "Her brother",
+          "isCorrect": true
+        },
+        {
+          "text": "A shepherd in the fields",
+          "isCorrect": false
+        },
+        {
+          "text": "A watchman of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What would she have her beloved drink in her mother's house?",
+      "explanation": "She says she would have him drink spiced wine, of the juice of her pomegranate.",
+      "bibleReference": "Song of Solomon 8:2",
+      "answers": [
+        {
+          "text": "Milk and honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Water from the well",
+          "isCorrect": false
+        },
+        {
+          "text": "New wine from the vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "Spiced wine",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who does the woman adjure not to stir up or awaken love until it so desires?",
+      "explanation": "She says, \"I adjure you, daughters of Jerusalem, that you not stir up, nor awaken love, until it so desires.\"",
+      "bibleReference": "Song of Solomon 8:4",
+      "answers": [
+        {
+          "text": "The daughters of Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "The watchmen of the walls",
+          "isCorrect": false
+        },
+        {
+          "text": "Her mother's sons",
+          "isCorrect": false
+        },
+        {
+          "text": "The keepers of the vineyard",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the woman come up from the wilderness?",
+      "explanation": "The question is asked, \"Who is this who comes up from the wilderness, leaning on her beloved?\"",
+      "bibleReference": "Song of Solomon 8:5",
+      "answers": [
+        {
+          "text": "Riding on a donkey",
+          "isCorrect": false
+        },
+        {
+          "text": "Carried in a chariot",
+          "isCorrect": false
+        },
+        {
+          "text": "Leaning on her beloved",
+          "isCorrect": true
+        },
+        {
+          "text": "Dancing with her friends",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to this chapter, love is as strong as what?",
+      "explanation": "The text says, \"love is strong as death. Jealousy is as cruel as Sheol.\"",
+      "bibleReference": "Song of Solomon 8:6",
+      "answers": [
+        {
+          "text": "Death",
+          "isCorrect": true
+        },
+        {
+          "text": "A lion",
+          "isCorrect": false
+        },
+        {
+          "text": "A fortress",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What can many waters not do to love?",
+      "explanation": "The text says that many waters can't quench love, neither can floods drown it.",
+      "bibleReference": "Song of Solomon 8:7",
+      "answers": [
+        {
+          "text": "Cool it down",
+          "isCorrect": false
+        },
+        {
+          "text": "Quench it",
+          "isCorrect": true
+        },
+        {
+          "text": "Carry it away",
+          "isCorrect": false
+        },
+        {
+          "text": "Make it grow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is said about the little sister in this chapter?",
+      "explanation": "The speakers say, \"We have a little sister. She has no breasts,\" and ask what they shall do for her in the day when she is to be spoken for.",
+      "bibleReference": "Song of Solomon 8:8",
+      "answers": [
+        {
+          "text": "She tends the vineyards",
+          "isCorrect": false
+        },
+        {
+          "text": "She is already married",
+          "isCorrect": false
+        },
+        {
+          "text": "She lives in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "She has no breasts",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "If the sister is a wall, what will they build on her?",
+      "explanation": "They say, \"If she is a wall, we will build on her a turret of silver. If she is a door, we will enclose her with boards of cedar.\"",
+      "bibleReference": "Song of Solomon 8:9",
+      "answers": [
+        {
+          "text": "A tower of ivory",
+          "isCorrect": false
+        },
+        {
+          "text": "A gate of bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "A turret of silver",
+          "isCorrect": true
+        },
+        {
+          "text": "A roof of cedar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Solomon have a vineyard?",
+      "explanation": "The text says that Solomon had a vineyard at Baal Hamon, which he leased out to keepers.",
+      "bibleReference": "Song of Solomon 8:11",
+      "answers": [
+        {
+          "text": "At En Gedi",
+          "isCorrect": false
+        },
+        {
+          "text": "At Baal Hamon",
+          "isCorrect": true
+        },
+        {
+          "text": "On Mount Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the last verse, the woman tells her beloved to come away and be like what?",
+      "explanation": "She says, \"Come away, my beloved! Be like a gazelle or a young stag on the mountains of spices!\"",
+      "bibleReference": "Song of Solomon 8:14",
+      "answers": [
+        {
+          "text": "An eagle in the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "A dove in the clefts of the rock",
+          "isCorrect": false
+        },
+        {
+          "text": "A lion on the hills",
+          "isCorrect": false
+        },
+        {
+          "text": "A gazelle or a young stag",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

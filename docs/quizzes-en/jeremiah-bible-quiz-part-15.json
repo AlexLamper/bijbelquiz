@@ -1,0 +1,242 @@
+{
+  "title": "Jeremiah Bible Quiz - Chapter 15",
+  "description": "Ten questions on Jeremiah 15: even Moses and Samuel could not turn Yahweh's mind, four kinds of destroyers, eaten words, and a fortified bronze wall.",
+  "slug": "jeremiah-bible-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which two men does Yahweh name, saying even their standing before Him would not turn His mind toward this people?",
+      "explanation": "Yahweh said, \"Though Moses and Samuel stood before me, yet my mind would not turn toward this people.\"",
+      "bibleReference": "Jeremiah 15:1",
+      "answers": [
+        {
+          "text": "Abraham and David",
+          "isCorrect": false
+        },
+        {
+          "text": "Noah and Job",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses and Samuel",
+          "isCorrect": true
+        },
+        {
+          "text": "Jacob and Aaron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When the people ask \"Where shall we go out?\", what answer must the speaker give?",
+      "explanation": "The speaker must say, \"Such as are for death, to death; such as are for the sword, to the sword; such as are for the famine, to the famine; and such as are for captivity, to captivity.\"",
+      "bibleReference": "Jeremiah 15:2",
+      "answers": [
+        {
+          "text": "To death, the sword, the famine, or captivity",
+          "isCorrect": true
+        },
+        {
+          "text": "To Egypt, to Moab, to Edom, or to Ammon",
+          "isCorrect": false
+        },
+        {
+          "text": "To the mountains, the caves, and the rocks",
+          "isCorrect": false
+        },
+        {
+          "text": "To Babylon to serve the king seventy years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which four kinds does Yahweh say He will appoint over them?",
+      "explanation": "Yahweh says, \"I will appoint over them four kinds: the sword to kill, the dogs to tear, the birds of the sky, and the animals of the earth, to devour and to destroy.\"",
+      "bibleReference": "Jeremiah 15:3",
+      "answers": [
+        {
+          "text": "Fire from heaven, hail, famine and pestilence",
+          "isCorrect": false
+        },
+        {
+          "text": "The sword, the dogs, the birds of the sky and the animals of the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "The lions, the bears, the wolves and the leopards",
+          "isCorrect": false
+        },
+        {
+          "text": "The drought, the locusts, the serpents and the storm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Because of which king will Yahweh cause them to be tossed back and forth among all the kingdoms of the earth?",
+      "explanation": "It is because of Manasseh, the son of Hezekiah, king of Judah, for that which he did in Jerusalem.",
+      "bibleReference": "Jeremiah 15:4",
+      "answers": [
+        {
+          "text": "Jehoiakim",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahab",
+          "isCorrect": false
+        },
+        {
+          "text": "Zedekiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Manasseh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what does Yahweh say He has winnowed them in the gates of the land?",
+      "explanation": "Yahweh says, \"I have winnowed them with a fan in the gates of the land. I have bereaved them of children.\"",
+      "bibleReference": "Jeremiah 15:7",
+      "answers": [
+        {
+          "text": "With a fan",
+          "isCorrect": true
+        },
+        {
+          "text": "With a sieve",
+          "isCorrect": false
+        },
+        {
+          "text": "With the east wind",
+          "isCorrect": false
+        },
+        {
+          "text": "With a threshing sledge",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How numerous have their widows become, according to Yahweh?",
+      "explanation": "Yahweh says, \"Their widows are increased more than the sand of the seas.\"",
+      "bibleReference": "Jeremiah 15:8",
+      "answers": [
+        {
+          "text": "More than the stars of the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "More than the drops of the dew",
+          "isCorrect": false
+        },
+        {
+          "text": "More than the grass of the field",
+          "isCorrect": false
+        },
+        {
+          "text": "More than the sand of the seas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the speaker do with Yahweh's words when they were found?",
+      "explanation": "He says, \"Your words were found, and I ate them. Your words were to me a joy and the rejoicing of my heart.\"",
+      "bibleReference": "Jeremiah 15:16",
+      "answers": [
+        {
+          "text": "He wrote them on a scroll",
+          "isCorrect": false
+        },
+        {
+          "text": "He ate them, and they became his joy",
+          "isCorrect": true
+        },
+        {
+          "text": "He hid them in his house",
+          "isCorrect": false
+        },
+        {
+          "text": "He proclaimed them at the gates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the speaker sit alone instead of sitting with those who make merry?",
+      "explanation": "He says, \"I sat alone because of your hand, for you have filled me with indignation.\"",
+      "bibleReference": "Jeremiah 15:17",
+      "answers": [
+        {
+          "text": "Because all his friends had abandoned him in his trouble",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he was sick with grief over the slain",
+          "isCorrect": false
+        },
+        {
+          "text": "Because of Yahweh's hand, for He had filled him with indignation",
+          "isCorrect": true
+        },
+        {
+          "text": "Because he was hiding himself from the anger of the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what does the speaker fear Yahweh will be to him?",
+      "explanation": "He asks, \"Will you indeed be to me as a deceitful brook, like waters that fail?\"",
+      "bibleReference": "Jeremiah 15:18",
+      "answers": [
+        {
+          "text": "As a deceitful brook, like waters that fail",
+          "isCorrect": true
+        },
+        {
+          "text": "As a consuming fire",
+          "isCorrect": false
+        },
+        {
+          "text": "As an enemy with a drawn sword",
+          "isCorrect": false
+        },
+        {
+          "text": "As a dream that vanishes at dawn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh say He will make the speaker to this people?",
+      "explanation": "Yahweh says, \"I will make you to this people a fortified bronze wall. They will fight against you, but they will not prevail against you.\"",
+      "bibleReference": "Jeremiah 15:20",
+      "answers": [
+        {
+          "text": "A watchman on the tower",
+          "isCorrect": false
+        },
+        {
+          "text": "A fortified bronze wall",
+          "isCorrect": true
+        },
+        {
+          "text": "A sharp threshing instrument",
+          "isCorrect": false
+        },
+        {
+          "text": "A light in the darkness",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

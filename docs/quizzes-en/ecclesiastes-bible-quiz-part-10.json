@@ -1,0 +1,242 @@
+{
+  "title": "Ecclesiastes Bible Quiz - Chapter 10",
+  "description": "Ten questions on Ecclesiastes 10: dead flies in the perfumer's oil, the blunt ax, wise and foolish words, and a bird that may carry your voice.",
+  "slug": "ecclesiastes-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What do dead flies cause the oil of the perfumer to produce?",
+      "explanation": "Dead flies cause the oil of the perfumer to produce an evil odor; so does a little folly outweigh wisdom and honor.",
+      "bibleReference": "Ecclesiastes 10:1",
+      "answers": [
+        {
+          "text": "A sweet fragrance",
+          "isCorrect": false
+        },
+        {
+          "text": "An evil odor",
+          "isCorrect": true
+        },
+        {
+          "text": "A thick foam",
+          "isCorrect": false
+        },
+        {
+          "text": "A dark color",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where is a fool's heart, according to this chapter?",
+      "explanation": "A wise man's heart is at his right hand, but a fool's heart at his left.",
+      "bibleReference": "Ecclesiastes 10:2",
+      "answers": [
+        {
+          "text": "At his right hand",
+          "isCorrect": false
+        },
+        {
+          "text": "In his mouth",
+          "isCorrect": false
+        },
+        {
+          "text": "Far from him",
+          "isCorrect": false
+        },
+        {
+          "text": "At his left",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What should you do if the spirit of the ruler rises up against you?",
+      "explanation": "If the spirit of the ruler rises up against you, don't leave your place, for gentleness lays great offenses to rest.",
+      "bibleReference": "Ecclesiastes 10:4",
+      "answers": [
+        {
+          "text": "Don't leave your place",
+          "isCorrect": true
+        },
+        {
+          "text": "Flee from the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Answer him boldly",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring him a gift",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What has the speaker seen concerning servants and princes?",
+      "explanation": "The speaker has seen servants on horses, and princes walking like servants on the earth.",
+      "bibleReference": "Ecclesiastes 10:7",
+      "answers": [
+        {
+          "text": "Servants ruling cities and princes in prison",
+          "isCorrect": false
+        },
+        {
+          "text": "Servants feasting and princes fasting",
+          "isCorrect": false
+        },
+        {
+          "text": "Servants on horses and princes walking like servants",
+          "isCorrect": true
+        },
+        {
+          "text": "Servants sleeping and princes keeping watch",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What may happen to him who digs a pit?",
+      "explanation": "He who digs a pit may fall into it, and whoever breaks through a wall may be bitten by a snake.",
+      "bibleReference": "Ecclesiastes 10:8",
+      "answers": [
+        {
+          "text": "He may find a treasure in it",
+          "isCorrect": false
+        },
+        {
+          "text": "He may be injured by stones",
+          "isCorrect": false
+        },
+        {
+          "text": "He may grow weary and stop",
+          "isCorrect": false
+        },
+        {
+          "text": "He may fall into it",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "If the ax is blunt and one doesn't sharpen the edge, what must he do?",
+      "explanation": "If the ax is blunt and one doesn't sharpen the edge, then he must use more strength; but skill brings success.",
+      "bibleReference": "Ecclesiastes 10:10",
+      "answers": [
+        {
+          "text": "He must buy a new ax",
+          "isCorrect": false
+        },
+        {
+          "text": "He must use more strength",
+          "isCorrect": true
+        },
+        {
+          "text": "He must stop splitting wood",
+          "isCorrect": false
+        },
+        {
+          "text": "He must hire a helper",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the words of a wise man's mouth like, in contrast to a fool?",
+      "explanation": "The words of a wise man's mouth are gracious, but a fool is swallowed by his own lips.",
+      "bibleReference": "Ecclesiastes 10:12",
+      "answers": [
+        {
+          "text": "Gracious",
+          "isCorrect": true
+        },
+        {
+          "text": "Endless",
+          "isCorrect": false
+        },
+        {
+          "text": "Mischievous",
+          "isCorrect": false
+        },
+        {
+          "text": "Hidden",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When is a land called happy, according to this chapter?",
+      "explanation": "Happy are you, land, when your king is the son of nobles, and your princes eat in due season, for strength and not for drunkenness.",
+      "bibleReference": "Ecclesiastes 10:17",
+      "answers": [
+        {
+          "text": "When its king is a child",
+          "isCorrect": false
+        },
+        {
+          "text": "When its princes eat in the morning",
+          "isCorrect": false
+        },
+        {
+          "text": "When its king is the son of nobles",
+          "isCorrect": true
+        },
+        {
+          "text": "When its people feast every day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to the roof through slothfulness?",
+      "explanation": "By slothfulness the roof sinks in, and through idleness of the hands the house leaks.",
+      "bibleReference": "Ecclesiastes 10:18",
+      "answers": [
+        {
+          "text": "The roof sinks in",
+          "isCorrect": true
+        },
+        {
+          "text": "The roof catches fire",
+          "isCorrect": false
+        },
+        {
+          "text": "The roof is carried off by the wind",
+          "isCorrect": false
+        },
+        {
+          "text": "The roof is covered with grass",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why should you not curse the king, even in your thoughts?",
+      "explanation": "Don't curse the king in your thoughts, nor the rich in your bedroom, for a bird of the sky may carry your voice, and that which has wings may tell the matter.",
+      "bibleReference": "Ecclesiastes 10:20",
+      "answers": [
+        {
+          "text": "Because the king's servants stand at every door",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the king knows the hearts of all men",
+          "isCorrect": false
+        },
+        {
+          "text": "Because God hears every word",
+          "isCorrect": false
+        },
+        {
+          "text": "Because a bird of the sky may carry your voice",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

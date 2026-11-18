@@ -1,0 +1,242 @@
+{
+  "title": "Ecclesiastes Bible Quiz - Chapter 1",
+  "description": "Ten questions on Ecclesiastes 1: the Preacher's words, vanity of vanities, the circuits of sun, wind and rivers, and the grief of much wisdom.",
+  "slug": "ecclesiastes-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How is the Preacher described in the first verse?",
+      "explanation": "The book opens with the words of the Preacher, the son of David, king in Jerusalem.",
+      "bibleReference": "Ecclesiastes 1:1",
+      "answers": [
+        {
+          "text": "The son of Jakeh, king in Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A shepherd from the hills of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The son of David, king in Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "A prophet sent to the king in Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the Preacher say in the second verse?",
+      "explanation": "The Preacher says: 'Vanity of vanities, vanity of vanities, all is vanity.'",
+      "bibleReference": "Ecclesiastes 1:2",
+      "answers": [
+        {
+          "text": "\"Vanity of vanities, all is vanity\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Wisdom of wisdoms, all is wisdom\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The fear of Yahweh is the beginning of knowledge\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"All is well under the sun\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "One generation goes and another comes, but what remains forever?",
+      "explanation": "The verse says one generation goes and another generation comes, but the earth remains forever.",
+      "bibleReference": "Ecclesiastes 1:4",
+      "answers": [
+        {
+          "text": "The king's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Man's labor",
+          "isCorrect": false
+        },
+        {
+          "text": "The memory of the former",
+          "isCorrect": false
+        },
+        {
+          "text": "The earth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the sun do after it goes down, according to this chapter?",
+      "explanation": "The verse says the sun rises and goes down, and hurries to its place where it rises.",
+      "bibleReference": "Ecclesiastes 1:5",
+      "answers": [
+        {
+          "text": "It rests in the depths of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "It hurries to its place where it rises",
+          "isCorrect": true
+        },
+        {
+          "text": "It turns around toward the north",
+          "isCorrect": false
+        },
+        {
+          "text": "It is never seen in its place again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "All the rivers run into the sea, yet what does this chapter say about the sea?",
+      "explanation": "The verse says all the rivers run into the sea, yet the sea is not full.",
+      "bibleReference": "Ecclesiastes 1:7",
+      "answers": [
+        {
+          "text": "The sea is not full",
+          "isCorrect": true
+        },
+        {
+          "text": "The sea overflows its shores",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea dries up",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea turns the rivers back",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does this chapter say the eye is not satisfied with?",
+      "explanation": "The verse says the eye is not satisfied with seeing, nor the ear filled with hearing.",
+      "bibleReference": "Ecclesiastes 1:8",
+      "answers": [
+        {
+          "text": "Weeping",
+          "isCorrect": false
+        },
+        {
+          "text": "Light",
+          "isCorrect": false
+        },
+        {
+          "text": "Beauty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seeing",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does this chapter say there is none of under the sun?",
+      "explanation": "The verse says that which has been is that which shall be, and there is no new thing under the sun.",
+      "bibleReference": "Ecclesiastes 1:9",
+      "answers": [
+        {
+          "text": "No rest for man",
+          "isCorrect": false
+        },
+        {
+          "text": "No justice at all",
+          "isCorrect": false
+        },
+        {
+          "text": "No new thing",
+          "isCorrect": true
+        },
+        {
+          "text": "No joy in labor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Having seen all the works done under the sun, what does the Preacher call them?",
+      "explanation": "He says: behold, all is vanity and a chasing after wind.",
+      "bibleReference": "Ecclesiastes 1:14",
+      "answers": [
+        {
+          "text": "A heavy yoke on the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Vanity and a chasing after wind",
+          "isCorrect": true
+        },
+        {
+          "text": "The gift of God to men",
+          "isCorrect": false
+        },
+        {
+          "text": "A treasure beyond counting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides wisdom, what did the Preacher apply his heart to know?",
+      "explanation": "He says he applied his heart to know wisdom, and to know madness and folly, and perceived that this also was a chasing after wind.",
+      "bibleReference": "Ecclesiastes 1:17",
+      "answers": [
+        {
+          "text": "The paths of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The laws of the kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "The times and the seasons",
+          "isCorrect": false
+        },
+        {
+          "text": "Madness and folly",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does he who increases knowledge increase, according to the last verse?",
+      "explanation": "The verse says that in much wisdom is much grief, and he who increases knowledge increases sorrow.",
+      "bibleReference": "Ecclesiastes 1:18",
+      "answers": [
+        {
+          "text": "Sorrow",
+          "isCorrect": true
+        },
+        {
+          "text": "Riches",
+          "isCorrect": false
+        },
+        {
+          "text": "Honor",
+          "isCorrect": false
+        },
+        {
+          "text": "Length of days",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

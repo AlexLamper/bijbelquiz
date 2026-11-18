@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 13",
+  "description": "Ten questions on Isaiah 13: the burden of Babylon, the day of Yahweh, the Medes stirred up, and a city left to wild animals.",
+  "slug": "isaiah-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Isaiah 13 is called the burden of which place?",
+      "explanation": "Verse 1 introduces the chapter as the burden of Babylon, which Isaiah the son of Amoz saw.",
+      "bibleReference": "Isaiah 13:1",
+      "answers": [
+        {
+          "text": "Babylon",
+          "isCorrect": true
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "Philistia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does verse 2 say to set up a banner?",
+      "explanation": "Verse 2 says to set up a banner on the bare mountain, lift up the voice and wave the hand.",
+      "bibleReference": "Isaiah 13:2",
+      "answers": [
+        {
+          "text": "On the city wall",
+          "isCorrect": false
+        },
+        {
+          "text": "By the great river",
+          "isCorrect": false
+        },
+        {
+          "text": "On the bare mountain",
+          "isCorrect": true
+        },
+        {
+          "text": "In the king's gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is mustering the army for the battle?",
+      "explanation": "Verse 4 says that Yahweh of Armies is mustering the army for the battle.",
+      "bibleReference": "Isaiah 13:4",
+      "answers": [
+        {
+          "text": "The king of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh of Armies",
+          "isCorrect": true
+        },
+        {
+          "text": "The princes of the Medes",
+          "isCorrect": false
+        },
+        {
+          "text": "The watchmen on the walls",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In verse 8, the people in pain are compared to whom?",
+      "explanation": "Verse 8 says pangs and sorrows will seize them, and they will be in pain like a woman in labor.",
+      "bibleReference": "Isaiah 13:8",
+      "answers": [
+        {
+          "text": "A wounded soldier",
+          "isCorrect": false
+        },
+        {
+          "text": "A man without water",
+          "isCorrect": false
+        },
+        {
+          "text": "A bird caught in a snare",
+          "isCorrect": false
+        },
+        {
+          "text": "A woman in labor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will happen to the sun in the day of Yahweh?",
+      "explanation": "Verse 10 says the sun will be darkened in its going out, and the moon will not cause its light to shine.",
+      "bibleReference": "Isaiah 13:10",
+      "answers": [
+        {
+          "text": "It will be darkened in its going out",
+          "isCorrect": true
+        },
+        {
+          "text": "It will stand still in the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "It will turn to blood",
+          "isCorrect": false
+        },
+        {
+          "text": "It will scorch the earth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Verse 12 says people will be made more rare than what?",
+      "explanation": "Verse 12 says, \"I will make people more rare than fine gold, even a person than the pure gold of Ophir.\"",
+      "bibleReference": "Isaiah 13:12",
+      "answers": [
+        {
+          "text": "Choice silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Precious stones",
+          "isCorrect": false
+        },
+        {
+          "text": "Fine gold",
+          "isCorrect": true
+        },
+        {
+          "text": "Cedars of Lebanon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In verse 14, those who flee are compared to which animals?",
+      "explanation": "Verse 14 says they will be like a hunted gazelle and like sheep that no one gathers, each fleeing to his own land.",
+      "bibleReference": "Isaiah 13:14",
+      "answers": [
+        {
+          "text": "A lion and a bear robbed of her cubs",
+          "isCorrect": false
+        },
+        {
+          "text": "A hunted gazelle and sheep that no one gathers",
+          "isCorrect": true
+        },
+        {
+          "text": "An eagle and a dove",
+          "isCorrect": false
+        },
+        {
+          "text": "An ox and a donkey without a master",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom will Yahweh stir up against Babylon?",
+      "explanation": "Verse 17 says, \"Behold, I will stir up the Medes against them,\" a people who will not value silver or delight in gold.",
+      "bibleReference": "Isaiah 13:17",
+      "answers": [
+        {
+          "text": "The Egyptians",
+          "isCorrect": false
+        },
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Assyrians",
+          "isCorrect": false
+        },
+        {
+          "text": "The Medes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Babylon's overthrow is compared to that of which cities?",
+      "explanation": "Verse 19 says Babylon, the glory of kingdoms, will be like when God overthrew Sodom and Gomorrah.",
+      "bibleReference": "Isaiah 13:19",
+      "answers": [
+        {
+          "text": "Jericho and Ai",
+          "isCorrect": false
+        },
+        {
+          "text": "Sodom and Gomorrah",
+          "isCorrect": true
+        },
+        {
+          "text": "Nineveh and Tarshish",
+          "isCorrect": false
+        },
+        {
+          "text": "Tyre and Sidon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verses 20-21, what will become of Babylon?",
+      "explanation": "Verses 20-21 say it will never be inhabited; wild animals of the desert will lie there and its houses will be full of jackals.",
+      "bibleReference": "Isaiah 13:20-21",
+      "answers": [
+        {
+          "text": "It will never be inhabited",
+          "isCorrect": true
+        },
+        {
+          "text": "It will be rebuilt by shepherds",
+          "isCorrect": false
+        },
+        {
+          "text": "It will become a city of refuge",
+          "isCorrect": false
+        },
+        {
+          "text": "The Arabian will pitch his tents inside it",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

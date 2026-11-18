@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 18",
+  "description": "Ten questions on Isaiah 18: the land of the rustling of wings, swift messengers in papyrus vessels, and a present brought to Mount Zion.",
+  "slug": "isaiah-bible-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where does verse 1 place the land of the rustling of wings?",
+      "explanation": "Verse 1 says, \"Ah, the land of the rustling of wings, which is beyond the rivers of Ethiopia.\"",
+      "bibleReference": "Isaiah 18:1",
+      "answers": [
+        {
+          "text": "Beyond the river Euphrates",
+          "isCorrect": false
+        },
+        {
+          "text": "Beside the great sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Beyond the rivers of Ethiopia",
+          "isCorrect": true
+        },
+        {
+          "text": "In the wilderness of the south",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what kind of vessels does this land send ambassadors by the sea?",
+      "explanation": "Verse 2 says it sends ambassadors by the sea, even in vessels of papyrus on the waters.",
+      "bibleReference": "Isaiah 18:2",
+      "answers": [
+        {
+          "text": "Vessels of papyrus",
+          "isCorrect": true
+        },
+        {
+          "text": "Ships of cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ships of Tarshish",
+          "isCorrect": false
+        },
+        {
+          "text": "Rafts of reeds and pitch",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is the nation to which the messengers are sent described?",
+      "explanation": "Verse 2 describes them as a nation tall and smooth, a people awesome from their beginning onward.",
+      "bibleReference": "Isaiah 18:2",
+      "answers": [
+        {
+          "text": "Small and feeble",
+          "isCorrect": false
+        },
+        {
+          "text": "Tall and smooth",
+          "isCorrect": true
+        },
+        {
+          "text": "Rich and idle",
+          "isCorrect": false
+        },
+        {
+          "text": "Fierce and bearded",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What should the inhabitants of the world do when a banner is lifted up on the mountains?",
+      "explanation": "Verse 3 calls all inhabitants of the world to look when a banner is lifted up, and to listen when the trumpet is blown.",
+      "bibleReference": "Isaiah 18:3",
+      "answers": [
+        {
+          "text": "Flee to the hills",
+          "isCorrect": false
+        },
+        {
+          "text": "Bow down",
+          "isCorrect": false
+        },
+        {
+          "text": "Keep silent",
+          "isCorrect": false
+        },
+        {
+          "text": "Look",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh say he will do in his dwelling place?",
+      "explanation": "Verse 4 says, \"I will be still, and I will see in my dwelling place, like clear heat in sunshine.\"",
+      "bibleReference": "Isaiah 18:4",
+      "answers": [
+        {
+          "text": "Be still and see",
+          "isCorrect": true
+        },
+        {
+          "text": "Thunder against the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Hide his face",
+          "isCorrect": false
+        },
+        {
+          "text": "Send fire on the mountains",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what are the sprigs cut off before the harvest?",
+      "explanation": "Verse 5 says that before the harvest he will cut off the sprigs with pruning hooks and take away the spreading branches.",
+      "bibleReference": "Isaiah 18:5",
+      "answers": [
+        {
+          "text": "Sharp swords",
+          "isCorrect": false
+        },
+        {
+          "text": "Axes of iron",
+          "isCorrect": false
+        },
+        {
+          "text": "Pruning hooks",
+          "isCorrect": true
+        },
+        {
+          "text": "Sickles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For whom are the cut branches left together?",
+      "explanation": "Verse 6 says they will be left together for the ravenous birds of the mountains and for the animals of the earth.",
+      "bibleReference": "Isaiah 18:6",
+      "answers": [
+        {
+          "text": "The poor and the stranger in the land",
+          "isCorrect": false
+        },
+        {
+          "text": "The ravenous birds and the animals of the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "The fire that burns in the oven",
+          "isCorrect": false
+        },
+        {
+          "text": "The locusts and the caterpillars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which season will all the animals of the earth eat them?",
+      "explanation": "Verse 6 says the ravenous birds will eat them in the summer, and all the animals of the earth will eat them in the winter.",
+      "bibleReference": "Isaiah 18:6",
+      "answers": [
+        {
+          "text": "In the spring",
+          "isCorrect": false
+        },
+        {
+          "text": "In the summer",
+          "isCorrect": false
+        },
+        {
+          "text": "At the time of harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "In the winter",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will be brought to Yahweh of Armies in that time?",
+      "explanation": "Verse 7 says a present will be brought to Yahweh of Armies from a people tall and smooth.",
+      "bibleReference": "Isaiah 18:7",
+      "answers": [
+        {
+          "text": "A tribute of horses and chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "A present from a people tall and smooth",
+          "isCorrect": true
+        },
+        {
+          "text": "The spoils of the land of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "A cedar cut from Lebanon for the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what place will the present be brought?",
+      "explanation": "Verse 7 says it will be brought to the place of the name of Yahweh of Armies, Mount Zion.",
+      "bibleReference": "Isaiah 18:7",
+      "answers": [
+        {
+          "text": "Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Zion",
+          "isCorrect": true
+        },
+        {
+          "text": "The mountains of Ararat",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

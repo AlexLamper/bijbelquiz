@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 9",
+  "description": "Ten questions on Isaiah 9: a great light in Galilee, the child born to us and his names, and the hand stretched out still.",
+  "slug": "isaiah-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which lands were brought into contempt in the former time?",
+      "explanation": "In the former time he brought into contempt the land of Zebulun and the land of Naphtali, but in the latter time he has made it glorious.",
+      "bibleReference": "Isaiah 9:1",
+      "answers": [
+        {
+          "text": "Judah and Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Moab and Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Zebulun and Naphtali",
+          "isCorrect": true
+        },
+        {
+          "text": "Ephraim and Manasseh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What have the people who walked in darkness seen?",
+      "explanation": "The text says, \"The people who walked in darkness have seen a great light.\"",
+      "bibleReference": "Isaiah 9:2",
+      "answers": [
+        {
+          "text": "A great light",
+          "isCorrect": true
+        },
+        {
+          "text": "A burning fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A new star",
+          "isCorrect": false
+        },
+        {
+          "text": "The glory of the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "As in which day has the rod of the oppressor been broken?",
+      "explanation": "The yoke of his burden, the staff of his shoulder, and the rod of his oppressor have been broken as in the day of Midian.",
+      "bibleReference": "Isaiah 9:4",
+      "answers": [
+        {
+          "text": "The day of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of Sodom",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of Midian",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where will the government be, for the child who is born to us?",
+      "explanation": "The text says, \"For a child is born to us. A son is given to us; and the government will be on his shoulders.\"",
+      "bibleReference": "Isaiah 9:6",
+      "answers": [
+        {
+          "text": "In his hands",
+          "isCorrect": false
+        },
+        {
+          "text": "On his shoulders",
+          "isCorrect": true
+        },
+        {
+          "text": "On his head",
+          "isCorrect": false
+        },
+        {
+          "text": "At his feet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these is one of the names the child will be called?",
+      "explanation": "His name will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.",
+      "bibleReference": "Isaiah 9:6",
+      "answers": [
+        {
+          "text": "King of Kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Good Shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "Prince of Peace",
+          "isCorrect": true
+        },
+        {
+          "text": "Light of the World",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On whose throne will his government and peace be established?",
+      "explanation": "Of the increase of his government and of peace there shall be no end, on David's throne and on his kingdom.",
+      "bibleReference": "Isaiah 9:7",
+      "answers": [
+        {
+          "text": "David's throne",
+          "isCorrect": true
+        },
+        {
+          "text": "Solomon's throne",
+          "isCorrect": false
+        },
+        {
+          "text": "Jacob's throne",
+          "isCorrect": false
+        },
+        {
+          "text": "Hezekiah's throne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the proud inhabitants of Samaria say they will build with after the bricks have fallen?",
+      "explanation": "In pride they say, \"The bricks have fallen, but we will build with cut stone. The sycamore fig trees have been cut down, but we will put cedars in their place.\"",
+      "bibleReference": "Isaiah 9:9-10",
+      "answers": [
+        {
+          "text": "Marble",
+          "isCorrect": false
+        },
+        {
+          "text": "Cut stone",
+          "isCorrect": true
+        },
+        {
+          "text": "New bricks",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive wood",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is the tail that Yahweh will cut off from Israel?",
+      "explanation": "The text explains, \"The elder and the honorable man is the head, and the prophet who teaches lies is the tail.\"",
+      "bibleReference": "Isaiah 9:14-15",
+      "answers": [
+        {
+          "text": "The judge who takes bribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "The drunkard at the feast",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophet who teaches lies",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Like what does wickedness burn, devouring the briers and thorns?",
+      "explanation": "The text says, \"For wickedness burns like a fire. It devours the briers and thorns; yes, it kindles in the thickets of the forest.\"",
+      "bibleReference": "Isaiah 9:18",
+      "answers": [
+        {
+          "text": "Like a fire",
+          "isCorrect": true
+        },
+        {
+          "text": "Like a flood",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a storm",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a plague",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which refrain closes this chapter after Manasseh and Ephraim turn against Judah?",
+      "explanation": "The chapter ends, \"For all this his anger is not turned away, but his hand is stretched out still.\"",
+      "bibleReference": "Isaiah 9:21",
+      "answers": [
+        {
+          "text": "\"And there was peace in the land\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"For the mouth of Yahweh has spoken it\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"His hand is stretched out still\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"And the remnant shall return\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

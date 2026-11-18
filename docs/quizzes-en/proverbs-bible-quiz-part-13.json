@@ -1,0 +1,242 @@
+{
+  "title": "Proverbs Bible Quiz - Chapter 13",
+  "description": "Ten questions on Proverbs 13: guarding your mouth, hope deferred, walking with the wise, and the discipline of a loving father.",
+  "slug": "proverbs-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does a wise son do, in contrast with a scoffer?",
+      "explanation": "A wise son listens to his father's instruction, but a scoffer doesn't listen to rebuke.",
+      "bibleReference": "Proverbs 13:1",
+      "answers": [
+        {
+          "text": "He listens to his father's instruction",
+          "isCorrect": true
+        },
+        {
+          "text": "He gathers in the summer",
+          "isCorrect": false
+        },
+        {
+          "text": "He honors his mother",
+          "isCorrect": false
+        },
+        {
+          "text": "He speaks with few words",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to the one who guards his mouth, in contrast with one who opens wide his lips?",
+      "explanation": "He who guards his mouth guards his soul, but one who opens wide his lips comes to ruin.",
+      "bibleReference": "Proverbs 13:3",
+      "answers": [
+        {
+          "text": "He wins favor with kings",
+          "isCorrect": false
+        },
+        {
+          "text": "He will never be ashamed",
+          "isCorrect": false
+        },
+        {
+          "text": "He guards his soul",
+          "isCorrect": true
+        },
+        {
+          "text": "He grows in knowledge",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the soul of the sluggard do, in contrast with the diligent?",
+      "explanation": "The soul of the sluggard desires and has nothing, but the desire of the diligent shall be fully satisfied.",
+      "bibleReference": "Proverbs 13:4",
+      "answers": [
+        {
+          "text": "It sleeps through the harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "It desires and has nothing",
+          "isCorrect": true
+        },
+        {
+          "text": "It despises hard work",
+          "isCorrect": false
+        },
+        {
+          "text": "It craves violence",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does this chapter say some who pretend to be rich actually have?",
+      "explanation": "There are some who pretend to be rich yet have nothing, and some who pretend to be poor yet have great wealth.",
+      "bibleReference": "Proverbs 13:7",
+      "answers": [
+        {
+          "text": "Great wealth",
+          "isCorrect": false
+        },
+        {
+          "text": "Hidden treasure",
+          "isCorrect": false
+        },
+        {
+          "text": "Borrowed riches",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happens to the lamp of the wicked, in contrast with the light of the righteous?",
+      "explanation": "The light of the righteous shines brightly, but the lamp of the wicked is snuffed out.",
+      "bibleReference": "Proverbs 13:9",
+      "answers": [
+        {
+          "text": "It burns through the night",
+          "isCorrect": false
+        },
+        {
+          "text": "It is snuffed out",
+          "isCorrect": true
+        },
+        {
+          "text": "It gives no light",
+          "isCorrect": false
+        },
+        {
+          "text": "It runs out of oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the saying go: \"Hope deferred makes the heart sick, but when longing is fulfilled...\"?",
+      "explanation": "Hope deferred makes the heart sick, but when longing is fulfilled, it is a tree of life.",
+      "bibleReference": "Proverbs 13:12",
+      "answers": [
+        {
+          "text": "it is a tree of life",
+          "isCorrect": true
+        },
+        {
+          "text": "it is sweet to the soul",
+          "isCorrect": false
+        },
+        {
+          "text": "the heart rejoices",
+          "isCorrect": false
+        },
+        {
+          "text": "it is a crown of honor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to one who walks with wise men, in contrast with a companion of fools?",
+      "explanation": "One who walks with wise men grows wise, but a companion of fools suffers harm.",
+      "bibleReference": "Proverbs 13:20",
+      "answers": [
+        {
+          "text": "He finds favor and honor",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be crowned with knowledge",
+          "isCorrect": false
+        },
+        {
+          "text": "He grows wise",
+          "isCorrect": true
+        },
+        {
+          "text": "He avoids all trouble",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom does a good man leave an inheritance?",
+      "explanation": "A good man leaves an inheritance to his children's children, but the wealth of the sinner is stored for the righteous.",
+      "bibleReference": "Proverbs 13:22",
+      "answers": [
+        {
+          "text": "To the poor of his city",
+          "isCorrect": false
+        },
+        {
+          "text": "To his firstborn son",
+          "isCorrect": false
+        },
+        {
+          "text": "To his faithful servants",
+          "isCorrect": false
+        },
+        {
+          "text": "To his children's children",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does this chapter say about one who spares the rod?",
+      "explanation": "One who spares the rod hates his son, but one who loves him is careful to discipline him.",
+      "bibleReference": "Proverbs 13:24",
+      "answers": [
+        {
+          "text": "He hates his son",
+          "isCorrect": true
+        },
+        {
+          "text": "He spoils his son",
+          "isCorrect": false
+        },
+        {
+          "text": "He is gentle of heart",
+          "isCorrect": false
+        },
+        {
+          "text": "He will regret it later",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to the belly of the wicked, in contrast with the righteous one who eats to the satisfying of his soul?",
+      "explanation": "The righteous one eats to the satisfying of his soul, but the belly of the wicked goes hungry.",
+      "bibleReference": "Proverbs 13:25",
+      "answers": [
+        {
+          "text": "It is filled with evil",
+          "isCorrect": false
+        },
+        {
+          "text": "It craves stolen bread",
+          "isCorrect": false
+        },
+        {
+          "text": "It goes hungry",
+          "isCorrect": true
+        },
+        {
+          "text": "It is never satisfied with riches",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

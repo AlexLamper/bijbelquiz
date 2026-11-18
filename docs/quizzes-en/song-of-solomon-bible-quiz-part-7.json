@@ -1,0 +1,242 @@
+{
+  "title": "Song of Solomon Bible Quiz - Chapter 7",
+  "description": "Ten questions on Song of Solomon 7: the prince's daughter, a stature like a palm tree, the pools in Heshbon, and going out to the vineyards.",
+  "slug": "song-of-solomon-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How is the woman addressed in the opening verse of this chapter?",
+      "explanation": "The verse says, \"How beautiful are your feet in sandals, prince's daughter!\"",
+      "bibleReference": "Song of Solomon 7:1",
+      "answers": [
+        {
+          "text": "Daughter of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Fairest of the queens",
+          "isCorrect": false
+        },
+        {
+          "text": "Prince's daughter",
+          "isCorrect": true
+        },
+        {
+          "text": "Rose of Sharon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what is her waist compared?",
+      "explanation": "The verse says, \"Your waist is like a heap of wheat, set about with lilies.\"",
+      "bibleReference": "Song of Solomon 7:2",
+      "answers": [
+        {
+          "text": "A heap of wheat, set about with lilies",
+          "isCorrect": true
+        },
+        {
+          "text": "A round goblet of mixed wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A sheaf bound in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "A garden of spices",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where are the pools to which her eyes are compared?",
+      "explanation": "The verse says, \"Your eyes are like the pools in Heshbon by the gate of Bathrabbim.\"",
+      "bibleReference": "Song of Solomon 7:4",
+      "answers": [
+        {
+          "text": "In Tirzah",
+          "isCorrect": false
+        },
+        {
+          "text": "In En Gedi",
+          "isCorrect": false
+        },
+        {
+          "text": "In Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "In Heshbon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is said about the king and the hair of her head?",
+      "explanation": "The verse says her head is like Carmel, her hair like purple, and the king is held captive in its tresses.",
+      "bibleReference": "Song of Solomon 7:5",
+      "answers": [
+        {
+          "text": "The king crowns her hair with gold",
+          "isCorrect": false
+        },
+        {
+          "text": "The king is held captive in its tresses",
+          "isCorrect": true
+        },
+        {
+          "text": "The king compares it to a flock of goats",
+          "isCorrect": false
+        },
+        {
+          "text": "The king covers it with a veil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which tree is her stature compared?",
+      "explanation": "The verse says, \"This, your stature, is like a palm tree, your breasts like its fruit.\"",
+      "bibleReference": "Song of Solomon 7:7",
+      "answers": [
+        {
+          "text": "An apple tree",
+          "isCorrect": false
+        },
+        {
+          "text": "A cedar of Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "A fig tree",
+          "isCorrect": false
+        },
+        {
+          "text": "A palm tree",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is the smell of her breath compared to?",
+      "explanation": "The verse says, \"the smell of your breath like apples.\"",
+      "bibleReference": "Song of Solomon 7:8",
+      "answers": [
+        {
+          "text": "Apples",
+          "isCorrect": true
+        },
+        {
+          "text": "Myrrh",
+          "isCorrect": false
+        },
+        {
+          "text": "Wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandrakes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what is her mouth compared in this chapter?",
+      "explanation": "The verse says, \"Your mouth is like the best wine, that goes down smoothly for my beloved.\"",
+      "bibleReference": "Song of Solomon 7:9",
+      "answers": [
+        {
+          "text": "A honeycomb",
+          "isCorrect": false
+        },
+        {
+          "text": "Lilies dropping myrrh",
+          "isCorrect": false
+        },
+        {
+          "text": "The best wine",
+          "isCorrect": true
+        },
+        {
+          "text": "A scarlet thread",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Complete the speaker's words: \"I am my beloved's. His desire is...\"",
+      "explanation": "She says, \"I am my beloved's. His desire is toward me.\"",
+      "bibleReference": "Song of Solomon 7:10",
+      "answers": [
+        {
+          "text": "\"...like the dawn\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"...toward me\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"...in the vineyards\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"...without end\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does the speaker invite her beloved to go with her?",
+      "explanation": "She says, \"Come, my beloved! Let's go out into the field. Let's lodge in the villages. Let's go early up to the vineyards.\"",
+      "bibleReference": "Song of Solomon 7:11-12",
+      "answers": [
+        {
+          "text": "To the banquet hall of king Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "To the house of her mother in the city",
+          "isCorrect": false
+        },
+        {
+          "text": "To the gardens, to gather lilies there",
+          "isCorrect": false
+        },
+        {
+          "text": "Out into the field and up to the vineyards",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the speaker say is stored up at their doors for her beloved?",
+      "explanation": "She says, \"At our doors are all kinds of precious fruits, new and old, which I have stored up for you, my beloved.\"",
+      "bibleReference": "Song of Solomon 7:13",
+      "answers": [
+        {
+          "text": "All kinds of precious fruits, new and old",
+          "isCorrect": true
+        },
+        {
+          "text": "Jars of the best wine of the vineyards",
+          "isCorrect": false
+        },
+        {
+          "text": "Myrrh and frankincense from the merchant",
+          "isCorrect": false
+        },
+        {
+          "text": "Clusters of henna blossoms from En Gedi",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

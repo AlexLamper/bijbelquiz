@@ -1,0 +1,242 @@
+{
+  "title": "Proverbs Bible Quiz - Chapter 29",
+  "description": "Ten questions on Proverbs 29: the stiff-necked man, righteous and wicked rulers, the fool who vents his anger, and trusting in Yahweh.",
+  "slug": "proverbs-bible-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What happens to the one who is often rebuked and stiffens his neck?",
+      "explanation": "The first verse says he who is often rebuked and stiffens his neck will be destroyed suddenly, with no remedy.",
+      "bibleReference": "Proverbs 29:1",
+      "answers": [
+        {
+          "text": "He will be destroyed suddenly, with no remedy",
+          "isCorrect": true
+        },
+        {
+          "text": "He will slowly learn wisdom in the end",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be sent away into a distant exile",
+          "isCorrect": false
+        },
+        {
+          "text": "He will lose all his wealth and his honor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the people do when the wicked rule?",
+      "explanation": "The verse says that when the righteous thrive, the people rejoice, but when the wicked rule, the people groan.",
+      "bibleReference": "Proverbs 29:2",
+      "answers": [
+        {
+          "text": "They rejoice",
+          "isCorrect": false
+        },
+        {
+          "text": "They flee the land",
+          "isCorrect": false
+        },
+        {
+          "text": "They groan",
+          "isCorrect": true
+        },
+        {
+          "text": "They go to war",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The king by justice makes the land stable, but what does he who takes bribes do?",
+      "explanation": "The verse says the king by justice makes the land stable, but he who takes bribes tears it down.",
+      "bibleReference": "Proverbs 29:4",
+      "answers": [
+        {
+          "text": "He makes it rich",
+          "isCorrect": false
+        },
+        {
+          "text": "He tears it down",
+          "isCorrect": true
+        },
+        {
+          "text": "He divides it among his sons",
+          "isCorrect": false
+        },
+        {
+          "text": "He sells it to strangers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does a man who flatters his neighbor do, according to this chapter?",
+      "explanation": "The verse says a man who flatters his neighbor spreads a net for his feet.",
+      "bibleReference": "Proverbs 29:5",
+      "answers": [
+        {
+          "text": "He wins his lasting friendship",
+          "isCorrect": false
+        },
+        {
+          "text": "He sharpens his countenance",
+          "isCorrect": false
+        },
+        {
+          "text": "He brings him great honor",
+          "isCorrect": false
+        },
+        {
+          "text": "He spreads a net for his feet",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "A fool vents all of his anger, but what does a wise man do?",
+      "explanation": "The verse says a fool vents all of his anger, but a wise man brings himself under control.",
+      "bibleReference": "Proverbs 29:11",
+      "answers": [
+        {
+          "text": "He answers with a soft word",
+          "isCorrect": false
+        },
+        {
+          "text": "He leaves the city",
+          "isCorrect": false
+        },
+        {
+          "text": "He brings himself under control",
+          "isCorrect": true
+        },
+        {
+          "text": "He vents it even louder",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does a child left to himself cause, according to this chapter?",
+      "explanation": "The verse says the rod of correction gives wisdom, but a child left to himself causes shame to his mother.",
+      "bibleReference": "Proverbs 29:15",
+      "answers": [
+        {
+          "text": "Shame to his mother",
+          "isCorrect": true
+        },
+        {
+          "text": "Joy to his father",
+          "isCorrect": false
+        },
+        {
+          "text": "Peace in the house",
+          "isCorrect": false
+        },
+        {
+          "text": "Strife among his brothers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the people do where there is no revelation?",
+      "explanation": "The verse says that where there is no revelation, the people cast off restraint, but one who keeps the law is blessed.",
+      "bibleReference": "Proverbs 29:18",
+      "answers": [
+        {
+          "text": "They seek wisdom",
+          "isCorrect": false
+        },
+        {
+          "text": "They build altars",
+          "isCorrect": false
+        },
+        {
+          "text": "They keep silent",
+          "isCorrect": false
+        },
+        {
+          "text": "They cast off restraint",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For whom is there more hope than for a man who is hasty in his words?",
+      "explanation": "The verse says: do you see a man who is hasty in his words? There is more hope for a fool than for him.",
+      "bibleReference": "Proverbs 29:20",
+      "answers": [
+        {
+          "text": "A servant",
+          "isCorrect": false
+        },
+        {
+          "text": "A fool",
+          "isCorrect": true
+        },
+        {
+          "text": "A thief",
+          "isCorrect": false
+        },
+        {
+          "text": "A mocker",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "A man's pride brings him low, but what does one of lowly spirit gain?",
+      "explanation": "The verse says a man's pride brings him low, but one of lowly spirit gains honor.",
+      "bibleReference": "Proverbs 29:23",
+      "answers": [
+        {
+          "text": "Riches",
+          "isCorrect": false
+        },
+        {
+          "text": "Long life",
+          "isCorrect": false
+        },
+        {
+          "text": "A throne",
+          "isCorrect": false
+        },
+        {
+          "text": "Honor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "The fear of man proves to be a snare, but what happens to whoever puts his trust in Yahweh?",
+      "explanation": "The verse says the fear of man proves to be a snare, but whoever puts his trust in Yahweh is kept safe.",
+      "bibleReference": "Proverbs 29:25",
+      "answers": [
+        {
+          "text": "He is kept safe",
+          "isCorrect": true
+        },
+        {
+          "text": "He gains the ruler's favor",
+          "isCorrect": false
+        },
+        {
+          "text": "He becomes bold as a lion",
+          "isCorrect": false
+        },
+        {
+          "text": "He is given wealth",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

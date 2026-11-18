@@ -1,0 +1,242 @@
+{
+  "title": "Jeremiah Bible Quiz - Chapter 1",
+  "description": "Ten questions on Jeremiah 1: the call of Jeremiah, the almond branch, the boiling cauldron, and the promise that Yahweh is with him.",
+  "slug": "jeremiah-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Whose son was Jeremiah, and where was he from?",
+      "explanation": "Jeremiah was the son of Hilkiah, one of the priests who were in Anathoth in the land of Benjamin.",
+      "bibleReference": "Jeremiah 1:1",
+      "answers": [
+        {
+          "text": "The son of Amoz, from the city of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The son of Hilkiah, from Anathoth in the land of Benjamin",
+          "isCorrect": true
+        },
+        {
+          "text": "The son of Josiah, from the town of Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "The son of Asaph, from the city of Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the days of which king did Yahweh's word first come to Jeremiah?",
+      "explanation": "Yahweh's word came to him in the days of Josiah the son of Amon, king of Judah, in the thirteenth year of his reign.",
+      "bibleReference": "Jeremiah 1:2",
+      "answers": [
+        {
+          "text": "Josiah the son of Amon, in the thirteenth year of his reign",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehoiakim the son of Josiah, in his first year",
+          "isCorrect": false
+        },
+        {
+          "text": "Zedekiah the son of Josiah, in his eleventh year",
+          "isCorrect": false
+        },
+        {
+          "text": "Hezekiah, in his fourteenth year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say he did before forming Jeremiah in the womb?",
+      "explanation": "Yahweh said, \"Before I formed you in the womb, I knew you,\" and appointed him a prophet to the nations.",
+      "bibleReference": "Jeremiah 1:5",
+      "answers": [
+        {
+          "text": "He named him",
+          "isCorrect": false
+        },
+        {
+          "text": "He crowned him",
+          "isCorrect": false
+        },
+        {
+          "text": "He knew him",
+          "isCorrect": true
+        },
+        {
+          "text": "He hid him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What objection did Jeremiah raise when he was called?",
+      "explanation": "Jeremiah said, \"Ah, Lord Yahweh! Behold, I don't know how to speak; for I am a child.\"",
+      "bibleReference": "Jeremiah 1:6",
+      "answers": [
+        {
+          "text": "That the people would not believe him",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was a man of unclean lips",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was the least in his father's house",
+          "isCorrect": false
+        },
+        {
+          "text": "That he did not know how to speak, for he was a child",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh do when he stretched out his hand to Jeremiah?",
+      "explanation": "Yahweh touched Jeremiah's mouth and said, \"Behold, I have put my words in your mouth.\"",
+      "bibleReference": "Jeremiah 1:9",
+      "answers": [
+        {
+          "text": "He placed a burning coal on his lips",
+          "isCorrect": false
+        },
+        {
+          "text": "He touched his mouth and put his words in it",
+          "isCorrect": true
+        },
+        {
+          "text": "He wrote his words on a scroll for him",
+          "isCorrect": false
+        },
+        {
+          "text": "He anointed his head with oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jeremiah see in his first vision?",
+      "explanation": "When Yahweh asked what he saw, Jeremiah said, \"I see a branch of an almond tree.\"",
+      "bibleReference": "Jeremiah 1:11",
+      "answers": [
+        {
+          "text": "A branch of an almond tree",
+          "isCorrect": true
+        },
+        {
+          "text": "A basket of summer fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "A measuring line in a man's hand",
+          "isCorrect": false
+        },
+        {
+          "text": "A scroll flying through the sky",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jeremiah see the second time Yahweh's word came to him?",
+      "explanation": "Jeremiah said, \"I see a boiling cauldron; and it is tipping away from the north.\"",
+      "bibleReference": "Jeremiah 1:13",
+      "answers": [
+        {
+          "text": "A burning bush that was not consumed",
+          "isCorrect": false
+        },
+        {
+          "text": "A plumb line against a wall",
+          "isCorrect": false
+        },
+        {
+          "text": "A boiling cauldron tipping away from the north",
+          "isCorrect": true
+        },
+        {
+          "text": "An olive tree with two branches",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From which direction did Yahweh say evil would break out on the inhabitants of the land?",
+      "explanation": "Yahweh said, \"Out of the north, evil will break out on all the inhabitants of the land.\"",
+      "bibleReference": "Jeremiah 1:14",
+      "answers": [
+        {
+          "text": "Out of the south",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of the east",
+          "isCorrect": false
+        },
+        {
+          "text": "From beyond the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Out of the north",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For what wickedness would Yahweh utter his judgments against them?",
+      "explanation": "He would judge them because they had forsaken him, burned incense to other gods, and worshiped the works of their own hands.",
+      "bibleReference": "Jeremiah 1:16",
+      "answers": [
+        {
+          "text": "They forsook Yahweh, burned incense to other gods and worshiped their own handiwork",
+          "isCorrect": true
+        },
+        {
+          "text": "They refused to keep the Sabbath day and the appointed feasts",
+          "isCorrect": false
+        },
+        {
+          "text": "They oppressed the poor and the needy in the gates of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "They made alliances with Egypt and trusted in horses and chariots",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say he had made Jeremiah against the whole land?",
+      "explanation": "Yahweh said, \"I have made you today a fortified city, an iron pillar, and bronze walls,\" and that they would fight against him but not prevail.",
+      "bibleReference": "Jeremiah 1:18-19",
+      "answers": [
+        {
+          "text": "A watchman standing on a high tower",
+          "isCorrect": false
+        },
+        {
+          "text": "A hammer that breaks the rock in pieces",
+          "isCorrect": false
+        },
+        {
+          "text": "A fortified city, an iron pillar, and bronze walls",
+          "isCorrect": true
+        },
+        {
+          "text": "A sharp threshing instrument with teeth",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

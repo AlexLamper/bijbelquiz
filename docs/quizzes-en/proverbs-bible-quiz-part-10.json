@@ -1,0 +1,242 @@
+{
+  "title": "Proverbs Bible Quiz - Chapter 10",
+  "description": "Ten questions on Proverbs 10: the proverbs of Solomon contrasting the righteous and the wicked, the diligent and the lazy.",
+  "slug": "proverbs-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "According to the first proverb of Solomon, what does a wise son do?",
+      "explanation": "A wise son makes a glad father, but a foolish son brings grief to his mother.",
+      "bibleReference": "Proverbs 10:1",
+      "answers": [
+        {
+          "text": "He honors the king",
+          "isCorrect": false
+        },
+        {
+          "text": "He makes a glad father",
+          "isCorrect": true
+        },
+        {
+          "text": "He gathers wealth",
+          "isCorrect": false
+        },
+        {
+          "text": "He builds his father's house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the hand of the diligent bring, in contrast with a lazy hand?",
+      "explanation": "He becomes poor who works with a lazy hand, but the hand of the diligent brings wealth.",
+      "bibleReference": "Proverbs 10:4",
+      "answers": [
+        {
+          "text": "Honor",
+          "isCorrect": false
+        },
+        {
+          "text": "Long life",
+          "isCorrect": false
+        },
+        {
+          "text": "Rest",
+          "isCorrect": false
+        },
+        {
+          "text": "Wealth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who is called a son who causes shame?",
+      "explanation": "He who gathers in summer is a wise son, but he who sleeps during the harvest is a son who causes shame.",
+      "bibleReference": "Proverbs 10:5",
+      "answers": [
+        {
+          "text": "He who sleeps during the harvest",
+          "isCorrect": true
+        },
+        {
+          "text": "He who forsakes his mother",
+          "isCorrect": false
+        },
+        {
+          "text": "He who wastes his inheritance",
+          "isCorrect": false
+        },
+        {
+          "text": "He who mocks his father",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "This chapter contrasts the memory of the righteous with the name of the wicked: what happens to the name of the wicked?",
+      "explanation": "The memory of the righteous is blessed, but the name of the wicked will rot.",
+      "bibleReference": "Proverbs 10:7",
+      "answers": [
+        {
+          "text": "It will be forgotten",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be cut off",
+          "isCorrect": false
+        },
+        {
+          "text": "It will rot",
+          "isCorrect": true
+        },
+        {
+          "text": "It will be cursed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the saying continue: \"Hatred stirs up strife, but love...\"?",
+      "explanation": "The proverb says: hatred stirs up strife, but love covers all wrongs.",
+      "bibleReference": "Proverbs 10:12",
+      "answers": [
+        {
+          "text": "covers all wrongs",
+          "isCorrect": true
+        },
+        {
+          "text": "endures forever",
+          "isCorrect": false
+        },
+        {
+          "text": "makes peace",
+          "isCorrect": false
+        },
+        {
+          "text": "rejoices in truth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to this chapter, who acts wisely where there is a multitude of words?",
+      "explanation": "In the multitude of words there is no lack of disobedience, but he who restrains his lips does wisely.",
+      "bibleReference": "Proverbs 10:19",
+      "answers": [
+        {
+          "text": "He who speaks the loudest",
+          "isCorrect": false
+        },
+        {
+          "text": "He who answers softly",
+          "isCorrect": false
+        },
+        {
+          "text": "He who listens to all",
+          "isCorrect": false
+        },
+        {
+          "text": "He who restrains his lips",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is the tongue of the righteous compared to?",
+      "explanation": "The tongue of the righteous is like choice silver, but the heart of the wicked is of little worth.",
+      "bibleReference": "Proverbs 10:20",
+      "answers": [
+        {
+          "text": "Fine gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Choice silver",
+          "isCorrect": true
+        },
+        {
+          "text": "A spring of life",
+          "isCorrect": false
+        },
+        {
+          "text": "A sharp sword",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to the wicked when the whirlwind passes?",
+      "explanation": "When the whirlwind passes, the wicked is no more, but the righteous stand firm forever.",
+      "bibleReference": "Proverbs 10:25",
+      "answers": [
+        {
+          "text": "He hides in his strong city",
+          "isCorrect": false
+        },
+        {
+          "text": "He cries out to Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "He is no more",
+          "isCorrect": true
+        },
+        {
+          "text": "He loses his wealth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is the sluggard like to those who send him?",
+      "explanation": "As vinegar to the teeth and as smoke to the eyes, so is the sluggard to those who send him.",
+      "bibleReference": "Proverbs 10:26",
+      "answers": [
+        {
+          "text": "A broken sandal and a lame foot",
+          "isCorrect": false
+        },
+        {
+          "text": "Vinegar to the teeth and smoke to the eyes",
+          "isCorrect": true
+        },
+        {
+          "text": "A leaking roof and a dripping rain",
+          "isCorrect": false
+        },
+        {
+          "text": "A snare and a stumbling block",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is said about the wealth that Yahweh's blessing brings?",
+      "explanation": "Yahweh's blessing brings wealth, and he adds no trouble to it.",
+      "bibleReference": "Proverbs 10:22",
+      "answers": [
+        {
+          "text": "It must be shared with the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "It passes to the children's children",
+          "isCorrect": false
+        },
+        {
+          "text": "It is greater than the wealth of kings",
+          "isCorrect": false
+        },
+        {
+          "text": "He adds no trouble to it",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

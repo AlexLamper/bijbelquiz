@@ -1,0 +1,242 @@
+{
+  "title": "Jeremiah Bible Quiz - Chapter 18",
+  "description": "Ten questions on Jeremiah 18: the potter's house, clay in Yahweh's hand, a nation that turns from evil, and plots against Jeremiah.",
+  "slug": "jeremiah-bible-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was Jeremiah told to go to hear Yahweh's words?",
+      "explanation": "Yahweh said, \"Arise, and go down to the potter's house, and there I will cause you to hear my words.\"",
+      "bibleReference": "Jeremiah 18:2",
+      "answers": [
+        {
+          "text": "To the king's palace",
+          "isCorrect": false
+        },
+        {
+          "text": "To the potter's house",
+          "isCorrect": true
+        },
+        {
+          "text": "To the valley of Hinnom",
+          "isCorrect": false
+        },
+        {
+          "text": "To the gate of the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the potter do when the vessel he was making was marred in his hand?",
+      "explanation": "When the vessel of clay was marred in the potter's hand, he made it again another vessel, as seemed good to the potter to make it.",
+      "bibleReference": "Jeremiah 18:4",
+      "answers": [
+        {
+          "text": "He threw the marred clay away",
+          "isCorrect": false
+        },
+        {
+          "text": "He broke it in pieces on the ground",
+          "isCorrect": false
+        },
+        {
+          "text": "He left the wheel and went out of the house",
+          "isCorrect": false
+        },
+        {
+          "text": "He made it again into another vessel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh say the house of Israel is in His hand?",
+      "explanation": "Yahweh says, \"Behold, as the clay in the potter's hand, so are you in my hand, house of Israel.\"",
+      "bibleReference": "Jeremiah 18:6",
+      "answers": [
+        {
+          "text": "As the clay in the potter's hand",
+          "isCorrect": true
+        },
+        {
+          "text": "As a sword in the warrior's hand",
+          "isCorrect": false
+        },
+        {
+          "text": "As an arrow in the archer's hand",
+          "isCorrect": false
+        },
+        {
+          "text": "As a seal on his right hand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will Yahweh do if a nation He has spoken against turns from its evil?",
+      "explanation": "Yahweh says that if that nation turns from their evil, He will repent of the evil that He thought to do to them.",
+      "bibleReference": "Jeremiah 18:8",
+      "answers": [
+        {
+          "text": "He will test them for seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "He will delay the evil one generation",
+          "isCorrect": false
+        },
+        {
+          "text": "He will repent of the evil He thought to do to them",
+          "isCorrect": true
+        },
+        {
+          "text": "He will make them rulers over other nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How do the people answer the call to return from their evil ways?",
+      "explanation": "They say, \"It is in vain; for we will walk after our own plans, and we will each follow the stubbornness of his evil heart.\"",
+      "bibleReference": "Jeremiah 18:12",
+      "answers": [
+        {
+          "text": "\"It is in vain; we will walk after our own plans\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"We will return, for Yahweh is merciful\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let the prophet first show us a sign\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"We have not sinned against Yahweh\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh ask about the snow of Lebanon?",
+      "explanation": "Yahweh asks, \"Will the snow of Lebanon fail from the rock of the field? Will the cold waters that flow down from afar be dried up?\"",
+      "bibleReference": "Jeremiah 18:14",
+      "answers": [
+        {
+          "text": "Whether it will cover the sins of the people",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether it will fail from the rock of the field",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether it will melt before the fire of His anger",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether it will fall on the cities of Judah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What have Yahweh's people done, so that they stumble in their ways?",
+      "explanation": "The text says, \"My people have forgotten me. They have burned incense to false gods,\" and have been made to stumble in the ancient paths.",
+      "bibleReference": "Jeremiah 18:15",
+      "answers": [
+        {
+          "text": "They have sold their inheritance for silver",
+          "isCorrect": false
+        },
+        {
+          "text": "They have sworn oaths by the king of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "They have despised the elders at the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "They have forgotten Him and burned incense to false gods",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will Yahweh show them in the day of their calamity?",
+      "explanation": "Yahweh says, \"I will scatter them as with an east wind before the enemy. I will show them the back, and not the face, in the day of their calamity.\"",
+      "bibleReference": "Jeremiah 18:17",
+      "answers": [
+        {
+          "text": "His outstretched arm",
+          "isCorrect": false
+        },
+        {
+          "text": "His burning anger",
+          "isCorrect": false
+        },
+        {
+          "text": "The back, and not the face",
+          "isCorrect": true
+        },
+        {
+          "text": "The armies of the north",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How do Jeremiah's enemies plan to attack him when they devise plans against him?",
+      "explanation": "They say, \"Come, and let's strike him with the tongue, and let's not give heed to any of his words.\"",
+      "bibleReference": "Jeremiah 18:18",
+      "answers": [
+        {
+          "text": "With stones at the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "With the tongue, ignoring his words",
+          "isCorrect": true
+        },
+        {
+          "text": "With a letter to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "With false witnesses in court",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jeremiah say his enemies have dug for his soul?",
+      "explanation": "He asks, \"Should evil be recompensed for good? For they have dug a pit for my soul,\" though he stood before Yahweh to speak good for them.",
+      "bibleReference": "Jeremiah 18:20",
+      "answers": [
+        {
+          "text": "A pit",
+          "isCorrect": true
+        },
+        {
+          "text": "A grave",
+          "isCorrect": false
+        },
+        {
+          "text": "A well without water",
+          "isCorrect": false
+        },
+        {
+          "text": "A trench of fire",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

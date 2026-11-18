@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 40",
+  "description": "Ten questions on Isaiah 40: comfort for God's people, the voice in the wilderness, and the Creator who renews the strength of those who wait.",
+  "slug": "isaiah-bible-quiz-part-40",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "With which words does this chapter open?",
+      "explanation": "The chapter opens, \"Comfort, comfort my people,\" says your God.",
+      "bibleReference": "Isaiah 40:1",
+      "answers": [
+        {
+          "text": "\"Comfort, comfort my people,\" says your God",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Hear, O heavens, and listen, O earth\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Woe to the rebellious children\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Arise, shine, for your light has come\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is to be called out to Jerusalem?",
+      "explanation": "Jerusalem is to be told that her warfare is accomplished and her iniquity is pardoned.",
+      "bibleReference": "Isaiah 40:2",
+      "answers": [
+        {
+          "text": "That her king is coming on a donkey",
+          "isCorrect": false
+        },
+        {
+          "text": "That her walls will be rebuilt in seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "That her warfare is accomplished and her iniquity is pardoned",
+          "isCorrect": true
+        },
+        {
+          "text": "That her enemies will serve her forever",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the voice call out to prepare in the wilderness?",
+      "explanation": "The voice calls out, \"Prepare the way of Yahweh in the wilderness! Make a level highway in the desert for our God.\"",
+      "bibleReference": "Isaiah 40:3",
+      "answers": [
+        {
+          "text": "A city of refuge",
+          "isCorrect": false
+        },
+        {
+          "text": "An altar of stones",
+          "isCorrect": false
+        },
+        {
+          "text": "A well of living water",
+          "isCorrect": false
+        },
+        {
+          "text": "The way of Yahweh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What shall happen to every valley?",
+      "explanation": "Every valley shall be exalted, and every mountain and hill shall be made low.",
+      "bibleReference": "Isaiah 40:4",
+      "answers": [
+        {
+          "text": "It shall be filled with water",
+          "isCorrect": false
+        },
+        {
+          "text": "It shall be exalted",
+          "isCorrect": true
+        },
+        {
+          "text": "It shall be made low",
+          "isCorrect": false
+        },
+        {
+          "text": "It shall blossom like a rose",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the voice, what is all flesh like?",
+      "explanation": "The voice says that all flesh is like grass, and all its glory like the flower of the field.",
+      "bibleReference": "Isaiah 40:6",
+      "answers": [
+        {
+          "text": "Grass",
+          "isCorrect": true
+        },
+        {
+          "text": "Dust",
+          "isCorrect": false
+        },
+        {
+          "text": "A passing shadow",
+          "isCorrect": false
+        },
+        {
+          "text": "A breath of wind",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "While the grass withers and the flower fades, what stands forever?",
+      "explanation": "The grass withers and the flower fades, but the word of our God stands forever.",
+      "bibleReference": "Isaiah 40:8",
+      "answers": [
+        {
+          "text": "The mountains of Zion",
+          "isCorrect": false
+        },
+        {
+          "text": "The throne of David",
+          "isCorrect": false
+        },
+        {
+          "text": "The heavens and the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The word of our God",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How will the Lord Yahweh feed his flock?",
+      "explanation": "He will feed his flock like a shepherd, gather the lambs in his arm and carry them in his bosom.",
+      "bibleReference": "Isaiah 40:11",
+      "answers": [
+        {
+          "text": "Like a king at a great banquet",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a farmer scattering seed",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a shepherd, gathering the lambs in his arm",
+          "isCorrect": true
+        },
+        {
+          "text": "Like an eagle feeding its young",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the nations like before him?",
+      "explanation": "The nations are like a drop in a bucket, and are regarded as a speck of dust on a balance.",
+      "bibleReference": "Isaiah 40:15",
+      "answers": [
+        {
+          "text": "A drop in a bucket and a speck of dust on a balance",
+          "isCorrect": true
+        },
+        {
+          "text": "A roaring sea and a mighty rushing flood",
+          "isCorrect": false
+        },
+        {
+          "text": "A field white and ready for the harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "Stars that cannot be counted for number",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the inhabitants of the earth like to him who sits above the circle of the earth?",
+      "explanation": "He sits above the circle of the earth, and its inhabitants are like grasshoppers.",
+      "bibleReference": "Isaiah 40:22",
+      "answers": [
+        {
+          "text": "Ants on a hill",
+          "isCorrect": false
+        },
+        {
+          "text": "Grasshoppers",
+          "isCorrect": true
+        },
+        {
+          "text": "Sheep in a pasture",
+          "isCorrect": false
+        },
+        {
+          "text": "Sparrows on a roof",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will those who wait for Yahweh do?",
+      "explanation": "Those who wait for Yahweh will renew their strength and mount up with wings like eagles; they will run and not be weary.",
+      "bibleReference": "Isaiah 40:31",
+      "answers": [
+        {
+          "text": "Inherit all the cities of the land of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Behold the glory and the beauty of Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "Lie down and rest beside the still waters",
+          "isCorrect": false
+        },
+        {
+          "text": "Renew their strength and mount up with wings like eagles",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

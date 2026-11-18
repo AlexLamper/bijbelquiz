@@ -1,0 +1,242 @@
+{
+  "title": "Ecclesiastes Bible Quiz - Chapter 11",
+  "description": "Ten questions on Ecclesiastes 11: casting bread on the waters, sowing in the morning, the sweetness of light, and rejoicing in youth.",
+  "slug": "ecclesiastes-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does the opening verse say will happen if you cast your bread on the waters?",
+      "explanation": "Cast your bread on the waters, for you shall find it after many days.",
+      "bibleReference": "Ecclesiastes 11:1",
+      "answers": [
+        {
+          "text": "It will feed the fish of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be carried away forever",
+          "isCorrect": false
+        },
+        {
+          "text": "You shall find it after many days",
+          "isCorrect": true
+        },
+        {
+          "text": "The waters will return it the same day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To how many should you give a portion, because you don't know what evil will be on the earth?",
+      "explanation": "Give a portion to seven, yes, even to eight, for you don't know what evil will be on the earth.",
+      "bibleReference": "Ecclesiastes 11:2",
+      "answers": [
+        {
+          "text": "To seven, yes, even to eight",
+          "isCorrect": true
+        },
+        {
+          "text": "To three, yes, even to four",
+          "isCorrect": false
+        },
+        {
+          "text": "To ten, yes, even to twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "To one, and no more",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to this chapter, what happens in the place where a tree falls?",
+      "explanation": "If a tree falls toward the south or toward the north, in the place where the tree falls, there shall it be.",
+      "bibleReference": "Ecclesiastes 11:3",
+      "answers": [
+        {
+          "text": "A new tree grows up",
+          "isCorrect": false
+        },
+        {
+          "text": "There shall it be",
+          "isCorrect": true
+        },
+        {
+          "text": "The clouds empty themselves",
+          "isCorrect": false
+        },
+        {
+          "text": "The wind carries it away",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will he who observes the wind not do?",
+      "explanation": "He who observes the wind won't sow, and he who regards the clouds won't reap.",
+      "bibleReference": "Ecclesiastes 11:4",
+      "answers": [
+        {
+          "text": "He won't reap",
+          "isCorrect": false
+        },
+        {
+          "text": "He won't rest",
+          "isCorrect": false
+        },
+        {
+          "text": "He won't travel",
+          "isCorrect": false
+        },
+        {
+          "text": "He won't sow",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Just as you don't know the way of the wind, what else does this chapter say you don't know?",
+      "explanation": "As you don't know the way of the wind, nor how the bones grow in the womb of her who is with child, so you don't know the work of God who does all.",
+      "bibleReference": "Ecclesiastes 11:5",
+      "answers": [
+        {
+          "text": "The number of your days",
+          "isCorrect": false
+        },
+        {
+          "text": "The work of God who does all",
+          "isCorrect": true
+        },
+        {
+          "text": "The thoughts of the king",
+          "isCorrect": false
+        },
+        {
+          "text": "The depths of the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why should you sow your seed in the morning and not withhold your hand in the evening?",
+      "explanation": "You don't know which will prosper, whether this or that, or whether they both will be equally good.",
+      "bibleReference": "Ecclesiastes 11:6",
+      "answers": [
+        {
+          "text": "Because the days of harvest are short",
+          "isCorrect": false
+        },
+        {
+          "text": "Because rain is coming on the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Because you don't know which will prosper",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the idle man stays poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does this chapter call sweet and pleasant for the eyes?",
+      "explanation": "Truly the light is sweet, and it is a pleasant thing for the eyes to see the sun.",
+      "bibleReference": "Ecclesiastes 11:7",
+      "answers": [
+        {
+          "text": "The light, and seeing the sun",
+          "isCorrect": true
+        },
+        {
+          "text": "Honey, and seeing the harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "Wine, and seeing one's children",
+          "isCorrect": false
+        },
+        {
+          "text": "Sleep, and seeing the morning",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If a man lives many years and rejoices in them all, what should he still remember?",
+      "explanation": "Let him remember the days of darkness, for they shall be many; all that comes is vanity.",
+      "bibleReference": "Ecclesiastes 11:8",
+      "answers": [
+        {
+          "text": "The days of his youth",
+          "isCorrect": false
+        },
+        {
+          "text": "The kindness of his friends",
+          "isCorrect": false
+        },
+        {
+          "text": "The years of plenty",
+          "isCorrect": false
+        },
+        {
+          "text": "The days of darkness",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "The young man is told to rejoice in his youth, but what must he know?",
+      "explanation": "The young man may walk in the ways of his heart, but must know that for all these things God will bring him into judgment.",
+      "bibleReference": "Ecclesiastes 11:9",
+      "answers": [
+        {
+          "text": "That his youth will pass away like the morning dawn",
+          "isCorrect": false
+        },
+        {
+          "text": "That his own heart will surely deceive him in the end",
+          "isCorrect": false
+        },
+        {
+          "text": "That for all these things God will bring him into judgment",
+          "isCorrect": true
+        },
+        {
+          "text": "That the days of darkness are drawing near to him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the last verse of the chapter say about youth and the dawn of life?",
+      "explanation": "Remove sorrow from your heart and put away evil from your flesh, for youth and the dawn of life are vanity.",
+      "bibleReference": "Ecclesiastes 11:10",
+      "answers": [
+        {
+          "text": "They are vanity",
+          "isCorrect": true
+        },
+        {
+          "text": "They are a gift that lasts",
+          "isCorrect": false
+        },
+        {
+          "text": "They are full of sorrow",
+          "isCorrect": false
+        },
+        {
+          "text": "They are better than old age",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

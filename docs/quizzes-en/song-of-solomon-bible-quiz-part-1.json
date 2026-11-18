@@ -1,0 +1,242 @@
+{
+  "title": "Song of Solomon Bible Quiz - Chapter 1",
+  "description": "Ten questions on Song of Solomon 1: the song which is Solomon's, love better than wine, the vineyards of En Gedi, and eyes like doves.",
+  "slug": "song-of-solomon-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Whose song is the Song of songs, according to the first verse?",
+      "explanation": "The opening verse says it is the Song of songs, which is Solomon's.",
+      "bibleReference": "Song of Solomon 1:1",
+      "answers": [
+        {
+          "text": "Solomon's",
+          "isCorrect": true
+        },
+        {
+          "text": "David's",
+          "isCorrect": false
+        },
+        {
+          "text": "Pharaoh's",
+          "isCorrect": false
+        },
+        {
+          "text": "The daughters of Jerusalem's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the speaker say the beloved's love is better than?",
+      "explanation": "She says, \"Let him kiss me with the kisses of his mouth, for your love is better than wine.\"",
+      "bibleReference": "Song of Solomon 1:2",
+      "answers": [
+        {
+          "text": "Gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Wine",
+          "isCorrect": true
+        },
+        {
+          "text": "Oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The speaker says she is dark but lovely. To what does she compare herself?",
+      "explanation": "She tells the daughters of Jerusalem she is dark but lovely, like Kedar's tents, like Solomon's curtains.",
+      "bibleReference": "Song of Solomon 1:5",
+      "answers": [
+        {
+          "text": "The cedars of Lebanon and the firs",
+          "isCorrect": false
+        },
+        {
+          "text": "Kedar's tents and Solomon's curtains",
+          "isCorrect": true
+        },
+        {
+          "text": "The night and the shadows",
+          "isCorrect": false
+        },
+        {
+          "text": "Myrrh and frankincense",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does the speaker say she is dark?",
+      "explanation": "She says, \"Don't stare at me because I am dark, because the sun has scorched me.\"",
+      "bibleReference": "Song of Solomon 1:6",
+      "answers": [
+        {
+          "text": "Because she was born in Kedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Because she works in the king's kitchens",
+          "isCorrect": false
+        },
+        {
+          "text": "Because she wears dark curtains",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the sun has scorched her",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did her mother's sons, who were angry with her, make her do?",
+      "explanation": "Her mother's sons were angry with her and made her keeper of the vineyards, but she has not kept her own vineyard.",
+      "bibleReference": "Song of Solomon 1:6",
+      "answers": [
+        {
+          "text": "They made her graze the young goats",
+          "isCorrect": false
+        },
+        {
+          "text": "They made her keeper of the vineyards",
+          "isCorrect": true
+        },
+        {
+          "text": "They made her serve at the king's table",
+          "isCorrect": false
+        },
+        {
+          "text": "They made her draw water at noon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what does the beloved compare his love in verse 9?",
+      "explanation": "He says, \"I have compared you, my love, to a steed in Pharaoh's chariots.\"",
+      "bibleReference": "Song of Solomon 1:9",
+      "answers": [
+        {
+          "text": "A steed in Pharaoh's chariots",
+          "isCorrect": true
+        },
+        {
+          "text": "A dove in the clefts of the rock",
+          "isCorrect": false
+        },
+        {
+          "text": "A lily of the valleys",
+          "isCorrect": false
+        },
+        {
+          "text": "A tower hung with shields",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The speaker calls her beloved a cluster of henna blossoms from the vineyards of which place?",
+      "explanation": "She says, \"My beloved is to me a cluster of henna blossoms from the vineyards of En Gedi.\"",
+      "bibleReference": "Song of Solomon 1:14",
+      "answers": [
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Kedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gedi",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the beloved say her eyes are like?",
+      "explanation": "He says, \"Behold, you are beautiful, my love. Your eyes are like doves.\"",
+      "bibleReference": "Song of Solomon 1:15",
+      "answers": [
+        {
+          "text": "Stars",
+          "isCorrect": false
+        },
+        {
+          "text": "Pools of water",
+          "isCorrect": false
+        },
+        {
+          "text": "Doves",
+          "isCorrect": true
+        },
+        {
+          "text": "Jewels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did the speaker's perfume spread its fragrance?",
+      "explanation": "She says, \"While the king sat at his table, my perfume spread its fragrance.\"",
+      "bibleReference": "Song of Solomon 1:12",
+      "answers": [
+        {
+          "text": "While the king sat at his table",
+          "isCorrect": true
+        },
+        {
+          "text": "While she kept the vineyards",
+          "isCorrect": false
+        },
+        {
+          "text": "While she rested at noon",
+          "isCorrect": false
+        },
+        {
+          "text": "While the virgins sang",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the beams of their house, according to the last verse?",
+      "explanation": "The chapter ends, \"The beams of our house are cedars. Our rafters are firs.\"",
+      "bibleReference": "Song of Solomon 1:17",
+      "answers": [
+        {
+          "text": "Gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Marble",
+          "isCorrect": false
+        },
+        {
+          "text": "Cedars",
+          "isCorrect": true
+        },
+        {
+          "text": "Olive wood",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
