@@ -1,6 +1,6 @@
 {
   "title": "Song of Solomon Bible Quiz - Chapter 4",
-  "description": "Ten questions on Song of Solomon 4: hair like a flock of goats, a neck like David's tower, a locked garden, and streams from Lebanon.",
+  "description": "Ten questions on Song of Solomon 4: hair like a flock of goats, a neck like David's tower, a locked garden, and an orchard of pomegranates.",
   "slug": "song-of-solomon-bible-quiz-part-4",
   "categorySlug": "old-testament",
   "rewardXp": 100,
@@ -193,24 +193,24 @@
       ]
     },
     {
-      "text": "From where do the flowing streams of the \"well of living waters\" come?",
-      "explanation": "The bride is called a fountain of gardens, a well of living waters, flowing streams from Lebanon.",
-      "bibleReference": "Song of Solomon 4:15",
+      "text": "To what does the beloved compare the shoots of his bride?",
+      "explanation": "He says her shoots are an orchard of pomegranates, with precious fruits, henna with spikenard plants.",
+      "bibleReference": "Song of Solomon 4:13",
       "answers": [
         {
-          "text": "From Lebanon",
+          "text": "An orchard of pomegranates",
           "isCorrect": true
         },
         {
-          "text": "From Gilead",
+          "text": "A field of lilies among the thorns",
           "isCorrect": false
         },
         {
-          "text": "From Heshbon",
+          "text": "A vineyard in blossom on the hillside",
           "isCorrect": false
         },
         {
-          "text": "From the valleys of Sharon",
+          "text": "A row of cedars and firs",
           "isCorrect": false
         }
       ]

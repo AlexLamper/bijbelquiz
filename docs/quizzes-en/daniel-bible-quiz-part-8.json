@@ -1,0 +1,242 @@
+{
+  "title": "Daniel Bible Quiz - Chapter 8",
+  "description": "Ten questions on Daniel 8: the ram with two horns, the male goat from the west, the little horn, and Gabriel explaining the vision.",
+  "slug": "daniel-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was Daniel when he saw this vision?",
+      "explanation": "He says that when he saw, he was in the citadel of Susa, which is in the province of Elam, and that he was by the river Ulai.",
+      "bibleReference": "Daniel 8:2",
+      "answers": [
+        {
+          "text": "By the great river Hiddekel",
+          "isCorrect": false
+        },
+        {
+          "text": "In the plain of Dura, in the province of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "In the royal palace of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "In the citadel of Susa, by the river Ulai",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the ram standing before the river have?",
+      "explanation": "The ram had two horns; the two horns were high, but one was higher than the other, and the higher came up last.",
+      "bibleReference": "Daniel 8:3",
+      "answers": [
+        {
+          "text": "Four horns toward the four winds",
+          "isCorrect": false
+        },
+        {
+          "text": "Two high horns, one higher than the other",
+          "isCorrect": true
+        },
+        {
+          "text": "A notable horn between his eyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten horns and a little horn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which directions did Daniel see the ram pushing?",
+      "explanation": "He saw the ram pushing westward, northward, and southward, and no animals could stand before him.",
+      "bibleReference": "Daniel 8:4",
+      "answers": [
+        {
+          "text": "Westward, northward and southward",
+          "isCorrect": true
+        },
+        {
+          "text": "Eastward, northward and southward",
+          "isCorrect": false
+        },
+        {
+          "text": "Toward the four winds of the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "Toward the south, the east and the glorious land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What came from the west over the surface of the whole earth?",
+      "explanation": "A male goat came from the west over the surface of the whole earth and did not touch the ground, and the goat had a notable horn between his eyes.",
+      "bibleReference": "Daniel 8:5",
+      "answers": [
+        {
+          "text": "A ram pushing westward from the river",
+          "isCorrect": false
+        },
+        {
+          "text": "A leopard with four wings of a bird",
+          "isCorrect": false
+        },
+        {
+          "text": "A male goat with a notable horn between his eyes",
+          "isCorrect": true
+        },
+        {
+          "text": "A lion with eagle's wings and a man's heart",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the male goat do to the ram?",
+      "explanation": "He struck the ram and broke his two horns, cast him down to the ground and trampled on him, and there was no one who could deliver the ram out of his hand.",
+      "bibleReference": "Daniel 8:7",
+      "answers": [
+        {
+          "text": "He drove it westward into the river",
+          "isCorrect": false
+        },
+        {
+          "text": "He broke its two horns and trampled it to the ground",
+          "isCorrect": true
+        },
+        {
+          "text": "He took its horns and wore them himself",
+          "isCorrect": false
+        },
+        {
+          "text": "He left it standing but took away its power to push",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened when the male goat was strong?",
+      "explanation": "When he was strong the great horn was broken, and instead of it four notable horns came up toward the four winds of the sky.",
+      "bibleReference": "Daniel 8:8",
+      "answers": [
+        {
+          "text": "It grew two more horns, one higher than the other",
+          "isCorrect": false
+        },
+        {
+          "text": "It was cast down to the ground and trampled",
+          "isCorrect": false
+        },
+        {
+          "text": "Its wings were plucked and it stood as a man",
+          "isCorrect": false
+        },
+        {
+          "text": "Its great horn was broken and four notable horns came up",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long was it to be before the sanctuary would be cleansed?",
+      "explanation": "The answer given was, to two thousand and three hundred evenings and mornings, and then the sanctuary will be cleansed.",
+      "bibleReference": "Daniel 8:13-14",
+      "answers": [
+        {
+          "text": "Three hundred and ninety evenings and mornings",
+          "isCorrect": false
+        },
+        {
+          "text": "A time, times and half a time",
+          "isCorrect": false
+        },
+        {
+          "text": "Two thousand three hundred evenings and mornings",
+          "isCorrect": true
+        },
+        {
+          "text": "One thousand two hundred and sixty days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was called by name and told to make Daniel understand the vision?",
+      "explanation": "Daniel heard a man's voice between the banks of the Ulai, which called and said, “Gabriel, make this man understand the vision.”",
+      "bibleReference": "Daniel 8:16",
+      "answers": [
+        {
+          "text": "Gabriel",
+          "isCorrect": true
+        },
+        {
+          "text": "Michael",
+          "isCorrect": false
+        },
+        {
+          "text": "Belteshazzar",
+          "isCorrect": false
+        },
+        {
+          "text": "The prince of the army",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the ram's two horns stand for, according to the explanation given to Daniel?",
+      "explanation": "He was told that the ram which had the two horns is the kings of Media and Persia.",
+      "bibleReference": "Daniel 8:20",
+      "answers": [
+        {
+          "text": "The king of Greece",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of Babylon and Elam",
+          "isCorrect": false
+        },
+        {
+          "text": "The prince of princes",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of Media and Persia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened to Daniel after the vision?",
+      "explanation": "Daniel fainted and was sick for some days; then he rose up and did the king's business, and he wondered at the vision, but no one understood it.",
+      "bibleReference": "Daniel 8:27",
+      "answers": [
+        {
+          "text": "He wrote the vision down and told it to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "He fainted and was sick for some days, then did the king's business",
+          "isCorrect": true
+        },
+        {
+          "text": "He mourned three whole weeks and ate no pleasant bread",
+          "isCorrect": false
+        },
+        {
+          "text": "He returned to the river Ulai to seek another vision",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

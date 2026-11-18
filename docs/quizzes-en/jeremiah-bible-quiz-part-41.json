@@ -1,0 +1,242 @@
+{
+  "title": "Jeremiah Bible Quiz - Chapter 41",
+  "description": "Ten questions on Jeremiah 41: Gedaliah killed at Mizpah, the eighty men from the north, and Johanan's pursuit of Ishmael to Gibeon.",
+  "slug": "jeremiah-bible-quiz-part-41",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How many men came with Ishmael the son of Nethaniah to Gedaliah at Mizpah?",
+      "explanation": "In the seventh month Ishmael the son of Nethaniah came to Gedaliah at Mizpah with ten men, and there they ate bread together.",
+      "bibleReference": "Jeremiah 41:1",
+      "answers": [
+        {
+          "text": "Eight men",
+          "isCorrect": false
+        },
+        {
+          "text": "Eighty men",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten men",
+          "isCorrect": true
+        },
+        {
+          "text": "Thirty men",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ishmael and the men with him do to Gedaliah at Mizpah?",
+      "explanation": "Ishmael the son of Nethaniah and the ten men with him arose and struck Gedaliah the son of Ahikam with the sword and killed him.",
+      "bibleReference": "Jeremiah 41:2",
+      "answers": [
+        {
+          "text": "They struck him with the sword and killed him",
+          "isCorrect": true
+        },
+        {
+          "text": "They carried him away captive to Ammon",
+          "isCorrect": false
+        },
+        {
+          "text": "They shut him up in the pit at Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "They took his wine and summer fruits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What position had the king of Babylon given Gedaliah, whom Ishmael killed?",
+      "explanation": "The text says the king of Babylon had made Gedaliah governor over the land.",
+      "bibleReference": "Jeremiah 41:2",
+      "answers": [
+        {
+          "text": "Captain of the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "Keeper of the threshold",
+          "isCorrect": false
+        },
+        {
+          "text": "Chief of the scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "Governor over the land",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did the eighty men come from who carried meal offerings and frankincense?",
+      "explanation": "Eighty men came from Shechem, from Shiloh and from Samaria, with their beards shaved and their clothes torn, bringing meal offerings and frankincense to Yahweh's house.",
+      "bibleReference": "Jeremiah 41:5",
+      "answers": [
+        {
+          "text": "From Moab, Ammon and Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "From Shechem, Shiloh and Samaria",
+          "isCorrect": true
+        },
+        {
+          "text": "From Lachish, Azekah and Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "From Gibeon, Ramah and Anathoth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ishmael do as he went out from Mizpah to meet those men?",
+      "explanation": "Ishmael the son of Nethaniah went out from Mizpah to meet them, weeping all along as he went, and said to them, \"Come to Gedaliah the son of Ahikam.\"",
+      "bibleReference": "Jeremiah 41:6",
+      "answers": [
+        {
+          "text": "He hid himself until they had passed by",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent ten men out ahead of him",
+          "isCorrect": false
+        },
+        {
+          "text": "He wept as he went, and invited them to Gedaliah",
+          "isCorrect": true
+        },
+        {
+          "text": "He set a watch at the gate of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Ishmael stop and not kill ten of the men?",
+      "explanation": "Ten men said to Ishmael not to kill them, because they had stores hidden in the field of wheat, barley, oil and honey; so he stopped and didn't kill them among their brothers.",
+      "bibleReference": "Jeremiah 41:8",
+      "answers": [
+        {
+          "text": "They had stores of wheat, barley, oil and honey",
+          "isCorrect": true
+        },
+        {
+          "text": "They promised to serve him in Ammon",
+          "isCorrect": false
+        },
+        {
+          "text": "They were his own brothers from Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "They had come from Yahweh's house with offerings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who had made the pit which Ishmael filled with the dead bodies?",
+      "explanation": "The pit in which Ishmael cast the dead bodies was that which Asa the king had made for fear of Baasha king of Israel.",
+      "bibleReference": "Jeremiah 41:9",
+      "answers": [
+        {
+          "text": "Gedaliah the son of Ahikam",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebuzaradan the captain of the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "Baasha the king of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Asa the king, for fear of Baasha",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was Ishmael going when he carried away captive the people who were left in Mizpah?",
+      "explanation": "Ishmael carried away captive all the people who were left in Mizpah, even the king's daughters, and departed to go over to the children of Ammon.",
+      "bibleReference": "Jeremiah 41:10",
+      "answers": [
+        {
+          "text": "To the land of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Over to the children of Ammon",
+          "isCorrect": true
+        },
+        {
+          "text": "To Babylon with the captives",
+          "isCorrect": false
+        },
+        {
+          "text": "To Samaria in the north",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Johanan and the captains find Ishmael?",
+      "explanation": "They took all the men and went to fight with Ishmael the son of Nethaniah, and found him by the great waters that are in Gibeon.",
+      "bibleReference": "Jeremiah 41:12",
+      "answers": [
+        {
+          "text": "By the great waters that are in Gibeon",
+          "isCorrect": true
+        },
+        {
+          "text": "In the plains of Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "At the entry of Pharaoh's house",
+          "isCorrect": false
+        },
+        {
+          "text": "In the middle gate of Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Johanan and the people go to live, intending to enter Egypt?",
+      "explanation": "They departed and lived in Geruth Chimham, which is by Bethlehem, to go to enter into Egypt, because they were afraid of the Chaldeans.",
+      "bibleReference": "Jeremiah 41:17",
+      "answers": [
+        {
+          "text": "At Mizpah, with the remnant of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "In Anathoth, in the land of Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "In Geruth Chimham, which is by Bethlehem",
+          "isCorrect": true
+        },
+        {
+          "text": "At Tahpanhes, in the land of Egypt",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Amos Bible Quiz - Chapter 2",
+  "description": "Ten questions on Amos 2: the words against Moab, Judah and Israel, the Amorite and the Nazirites.",
+  "slug": "amos-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What is Moab charged with in verse 1?",
+      "explanation": "Moab is charged with burning the bones of the king of Edom into lime.",
+      "bibleReference": "Amos 2:1",
+      "answers": [
+        {
+          "text": "Burning the bones of the king of Edom",
+          "isCorrect": true
+        },
+        {
+          "text": "Selling the poor for a pair of sandals",
+          "isCorrect": false
+        },
+        {
+          "text": "Rejecting the law of Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "Threshing Gilead with iron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose palaces will the fire sent on Moab devour?",
+      "explanation": "God says he will send a fire on Moab, and it will devour the palaces of Kerioth.",
+      "bibleReference": "Amos 2:2",
+      "answers": [
+        {
+          "text": "Bozrah's",
+          "isCorrect": false
+        },
+        {
+          "text": "Kerioth's",
+          "isCorrect": true
+        },
+        {
+          "text": "Jerusalem's",
+          "isCorrect": false
+        },
+        {
+          "text": "Rabbah's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom will God cut off from among them, according to verse 3?",
+      "explanation": "He will cut off the judge from among them and kill all its princes with him.",
+      "bibleReference": "Amos 2:3",
+      "answers": [
+        {
+          "text": "The priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "The judge",
+          "isCorrect": true
+        },
+        {
+          "text": "The merchant",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Judah charged with in verse 4?",
+      "explanation": "Judah has rejected Yahweh's law and has not kept his statutes, and their lies have led them astray.",
+      "bibleReference": "Amos 2:4",
+      "answers": [
+        {
+          "text": "Burning incense to the Baals",
+          "isCorrect": false
+        },
+        {
+          "text": "Selling children to the Greeks",
+          "isCorrect": false
+        },
+        {
+          "text": "Making a covenant with Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "Rejecting Yahweh's law and statutes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For what did Israel sell the needy, according to verse 6?",
+      "explanation": "Israel has sold the righteous for silver and the needy for a pair of sandals.",
+      "bibleReference": "Amos 2:6",
+      "answers": [
+        {
+          "text": "For a field",
+          "isCorrect": false
+        },
+        {
+          "text": "For a pair of sandals",
+          "isCorrect": true
+        },
+        {
+          "text": "For a jar of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "For a measure of wheat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 7 say they do to the oppressed?",
+      "explanation": "They trample on the dust of the earth on the head of the poor and deny justice to the oppressed.",
+      "bibleReference": "Amos 2:7",
+      "answers": [
+        {
+          "text": "They deny them justice",
+          "isCorrect": true
+        },
+        {
+          "text": "They drive them out of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "They take their children as slaves",
+          "isCorrect": false
+        },
+        {
+          "text": "They burn down their houses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do they drink in the house of their God, according to verse 8?",
+      "explanation": "They lay themselves down beside every altar on clothes taken in pledge, and in the house of their God they drink the wine of those who have been fined.",
+      "bibleReference": "Amos 2:8",
+      "answers": [
+        {
+          "text": "The new wine of the harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "Water drawn from the brook",
+          "isCorrect": false
+        },
+        {
+          "text": "The sweet wine of Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "The wine of those who have been fined",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To what is the Amorite's height compared in verse 9?",
+      "explanation": "God destroyed the Amorite before them, whose height was like the height of the cedars, and who was strong as the oaks.",
+      "bibleReference": "Amos 2:9",
+      "answers": [
+        {
+          "text": "The height of the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "The towers of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "The height of the cedars",
+          "isCorrect": true
+        },
+        {
+          "text": "The palms of the plain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God raise up some of their young men to be, according to verse 11?",
+      "explanation": "He raised up some of their sons for prophets and some of their young men for Nazirites.",
+      "bibleReference": "Amos 2:11",
+      "answers": [
+        {
+          "text": "Nazirites",
+          "isCorrect": true
+        },
+        {
+          "text": "Priests",
+          "isCorrect": false
+        },
+        {
+          "text": "Judges",
+          "isCorrect": false
+        },
+        {
+          "text": "Kings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 16 say the courageous among the mighty will do on that day?",
+      "explanation": "He who is courageous among the mighty will flee away naked on that day.",
+      "bibleReference": "Amos 2:16",
+      "answers": [
+        {
+          "text": "Stand firm in the battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Flee away naked",
+          "isCorrect": true
+        },
+        {
+          "text": "Be carried captive to Kir",
+          "isCorrect": false
+        },
+        {
+          "text": "Hide himself in the caves",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

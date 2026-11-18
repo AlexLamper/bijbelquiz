@@ -1,0 +1,242 @@
+{
+  "title": "Daniel Bible Quiz - Chapter 12",
+  "description": "Ten questions on Daniel 12: Michael standing up, those who sleep in the dust, the sealed book and the counted days.",
+  "slug": "daniel-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who will stand up at that time as the great prince who stands for the children of your people?",
+      "explanation": "The text says that at that time Michael will stand up, the great prince who stands for the children of your people.",
+      "bibleReference": "Daniel 12:1",
+      "answers": [
+        {
+          "text": "Gabriel",
+          "isCorrect": false
+        },
+        {
+          "text": "Michael",
+          "isCorrect": true
+        },
+        {
+          "text": "Darius",
+          "isCorrect": false
+        },
+        {
+          "text": "Daniel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the time of trouble, who does the text say will be delivered?",
+      "explanation": "The text says that at that time your people will be delivered, everyone who is found written in the book.",
+      "bibleReference": "Daniel 12:1",
+      "answers": [
+        {
+          "text": "Everyone who fasts and prays",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the princes of the people",
+          "isCorrect": false
+        },
+        {
+          "text": "Everyone who flees to the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "Everyone who is found written in the book",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about many of those who sleep in the dust of the earth?",
+      "explanation": "The text says many of those who sleep in the dust of the earth will awake, some to everlasting life and some to shame and everlasting contempt.",
+      "bibleReference": "Daniel 12:2",
+      "answers": [
+        {
+          "text": "They will awake, some to everlasting life and some to shame",
+          "isCorrect": true
+        },
+        {
+          "text": "They will sleep on until the book is opened",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be gathered to the glorious land",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be hidden until the trouble has passed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will those who turn many to righteousness be like, according to this chapter?",
+      "explanation": "The text says those who turn many to righteousness will shine as the stars forever and ever.",
+      "bibleReference": "Daniel 12:3",
+      "answers": [
+        {
+          "text": "They will stand as pillars in the sanctuary",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be as the sand of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "They will shine as the stars forever and ever",
+          "isCorrect": true
+        },
+        {
+          "text": "They will be hidden in the day of trouble",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Daniel told to do with the words, even to the time of the end?",
+      "explanation": "The text says Daniel is told to shut up the words and seal the book, even to the time of the end.",
+      "bibleReference": "Daniel 12:4",
+      "answers": [
+        {
+          "text": "Read the words aloud to the people",
+          "isCorrect": false
+        },
+        {
+          "text": "Shut up the words and seal the book",
+          "isCorrect": true
+        },
+        {
+          "text": "Write the words on the wall of the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "Carry the book to the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Daniel see when he looked, beside the river?",
+      "explanation": "The text says Daniel looked and saw two others standing, one on the river bank on this side and the other on the river bank on that side.",
+      "bibleReference": "Daniel 12:5",
+      "answers": [
+        {
+          "text": "Two others standing, one on each bank of the river",
+          "isCorrect": true
+        },
+        {
+          "text": "Four chariots coming out from the water",
+          "isCorrect": false
+        },
+        {
+          "text": "A great beast rising out of the river",
+          "isCorrect": false
+        },
+        {
+          "text": "A host of horsemen crossing the river",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What question was put to the man clothed in linen who was above the waters of the river?",
+      "explanation": "The text says one asked the man clothed in linen, who was above the waters of the river, how long it would be to the end of these wonders.",
+      "bibleReference": "Daniel 12:6",
+      "answers": [
+        {
+          "text": "Who will stand up for your people?",
+          "isCorrect": false
+        },
+        {
+          "text": "Where is the book that is sealed?",
+          "isCorrect": false
+        },
+        {
+          "text": "What is written in the book of truth?",
+          "isCorrect": false
+        },
+        {
+          "text": "How long will it be to the end of these wonders?",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the man clothed in linen swear that it would be?",
+      "explanation": "The text says he held up his right hand and his left hand to heaven and swore by him who lives forever that it would be for a time, times, and a half.",
+      "bibleReference": "Daniel 12:7",
+      "answers": [
+        {
+          "text": "For seventy weeks of years",
+          "isCorrect": false
+        },
+        {
+          "text": "For three full generations",
+          "isCorrect": false
+        },
+        {
+          "text": "For a time, times, and a half",
+          "isCorrect": true
+        },
+        {
+          "text": "For a thousand years and more",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many days are counted from the taking away of the continual burnt offering and the setting up of the abomination that makes desolate?",
+      "explanation": "The text says that from the time the continual burnt offering is taken away and the abomination that makes desolate set up, there will be one thousand two hundred ninety days.",
+      "bibleReference": "Daniel 12:11",
+      "answers": [
+        {
+          "text": "One thousand two hundred ninety days",
+          "isCorrect": true
+        },
+        {
+          "text": "One thousand three hundred thirty-five days",
+          "isCorrect": false
+        },
+        {
+          "text": "Two thousand three hundred days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy days and seven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Daniel told at the very end of the chapter?",
+      "explanation": "The text says Daniel is told to go his way until the end, for he will rest and will stand in his inheritance at the end of the days.",
+      "bibleReference": "Daniel 12:13",
+      "answers": [
+        {
+          "text": "To return to the river and wait there",
+          "isCorrect": false
+        },
+        {
+          "text": "To go his way, for he will rest and stand in his inheritance",
+          "isCorrect": true
+        },
+        {
+          "text": "To take the book to the king of the north",
+          "isCorrect": false
+        },
+        {
+          "text": "To tell the people everything he has heard",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Daniel Bible Quiz - Chapter 5",
+  "description": "Ten questions on Daniel 5: Belshazzar's feast with the temple vessels, the hand that wrote on the wall, and the meaning of MENE, MENE, TEKEL, UPHARSIN.",
+  "slug": "daniel-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "To how many of his lords did Belshazzar make a great feast?",
+      "explanation": "Belshazzar the king made a great feast to a thousand of his lords, and drank wine before the thousand.",
+      "bibleReference": "Daniel 5:1",
+      "answers": [
+        {
+          "text": "A hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "A thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Sixty-two",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which vessels did Belshazzar command to be brought to the feast?",
+      "explanation": "He commanded that the golden and silver vessels which Nebuchadnezzar his father had taken out of the temple in Jerusalem be brought, so that he and his lords, his wives and his concubines might drink from them.",
+      "bibleReference": "Daniel 5:2",
+      "answers": [
+        {
+          "text": "The vessels made for his own royal palace",
+          "isCorrect": false
+        },
+        {
+          "text": "The vessels of the gods of Babylon's temples",
+          "isCorrect": false
+        },
+        {
+          "text": "The vessels of the house of his god in Shinar",
+          "isCorrect": false
+        },
+        {
+          "text": "The gold and silver vessels taken from the temple in Jerusalem",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What appeared in the same hour, while they were drinking?",
+      "explanation": "The fingers of a man's hand came out and wrote near the lamp stand on the plaster of the wall of the king's palace, and the king saw the part of the hand that wrote.",
+      "bibleReference": "Daniel 5:5",
+      "answers": [
+        {
+          "text": "A watcher and a holy one from the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "A man clothed in linen with eyes like torches",
+          "isCorrect": false
+        },
+        {
+          "text": "The fingers of a man's hand, writing on the wall",
+          "isCorrect": true
+        },
+        {
+          "text": "A stone cut out without hands",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the king react to what he saw?",
+      "explanation": "The king's face was changed, his thoughts troubled him, the joints of his thighs were loosened, and his knees struck one against another.",
+      "bibleReference": "Daniel 5:6",
+      "answers": [
+        {
+          "text": "His face changed and his knees struck one against another",
+          "isCorrect": true
+        },
+        {
+          "text": "He fell on his face and worshiped in silence",
+          "isCorrect": false
+        },
+        {
+          "text": "He laughed and called for more wine",
+          "isCorrect": false
+        },
+        {
+          "text": "He fell into a deep sleep on the ground",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king promise to whoever could read the writing and interpret it?",
+      "explanation": "He promised that whoever read the writing and showed its interpretation would be clothed with purple, have a chain of gold about his neck, and be the third ruler in the kingdom.",
+      "bibleReference": "Daniel 5:7",
+      "answers": [
+        {
+          "text": "Half of the kingdom and the king's daughter",
+          "isCorrect": false
+        },
+        {
+          "text": "A portion of the whole province of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Rule over all the wise men of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Purple clothing, a chain of gold and third place in the kingdom",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who came into the banquet house and told the king about a man who could interpret?",
+      "explanation": "The queen came into the banquet house and told the king there was a man in his kingdom in whom is the spirit of the holy gods, and said that Daniel should be called.",
+      "bibleReference": "Daniel 5:10-12",
+      "answers": [
+        {
+          "text": "Arioch the captain of the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "The queen",
+          "isCorrect": true
+        },
+        {
+          "text": "The chief of the Chaldeans",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the king's concubines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Daniel say about the king's gifts before reading the writing?",
+      "explanation": "Daniel said, “Let your gifts be to yourself, and give your rewards to another,” but added that he would still read the writing and make known the interpretation.",
+      "bibleReference": "Daniel 5:17",
+      "answers": [
+        {
+          "text": "That the king should keep his gifts and give the rewards to another",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would read the writing only for a double reward",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would take the gifts but not the office",
+          "isCorrect": false
+        },
+        {
+          "text": "That the gifts should be given to the queen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the writing that was inscribed on the wall?",
+      "explanation": "Daniel said, “This is the writing that was inscribed: MENE, MENE, TEKEL, UPHARSIN.”",
+      "bibleReference": "Daniel 5:25",
+      "answers": [
+        {
+          "text": "MENE, TEKEL, PERES, UPHARSIN",
+          "isCorrect": false
+        },
+        {
+          "text": "TEKEL, TEKEL, MENE, PERES",
+          "isCorrect": false
+        },
+        {
+          "text": "MENE, MENE, TEKEL, UPHARSIN",
+          "isCorrect": true
+        },
+        {
+          "text": "MENE, UPHARSIN, MENE, TEKEL",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Daniel, what does PERES mean?",
+      "explanation": "Daniel said PERES means that the kingdom is divided and given to the Medes and Persians.",
+      "bibleReference": "Daniel 5:28",
+      "answers": [
+        {
+          "text": "The king is weighed in the balances and found wanting",
+          "isCorrect": false
+        },
+        {
+          "text": "The kingdom is divided and given to the Medes and Persians",
+          "isCorrect": true
+        },
+        {
+          "text": "God has counted the kingdom and brought it to an end",
+          "isCorrect": false
+        },
+        {
+          "text": "The kingdom will stand forever and not be destroyed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who received the kingdom after Belshazzar was slain that night?",
+      "explanation": "In that night Belshazzar the Chaldean king was slain, and Darius the Mede received the kingdom, being about sixty-two years old.",
+      "bibleReference": "Daniel 5:30-31",
+      "answers": [
+        {
+          "text": "Cyrus the Persian",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebuchadnezzar his father",
+          "isCorrect": false
+        },
+        {
+          "text": "Daniel, the third ruler",
+          "isCorrect": false
+        },
+        {
+          "text": "Darius the Mede",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

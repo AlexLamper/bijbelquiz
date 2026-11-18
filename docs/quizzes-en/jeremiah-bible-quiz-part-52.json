@@ -1,0 +1,242 @@
+{
+  "title": "Jeremiah Bible Quiz - Chapter 52",
+  "description": "Ten questions on Jeremiah 52: the reign of Zedekiah, the fall and burning of Jerusalem, the captives carried away and the release of Jehoiachin.",
+  "slug": "jeremiah-bible-quiz-part-52",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How old was Zedekiah when he began to reign, and how long did he reign in Jerusalem?",
+      "explanation": "Zedekiah was twenty-one years old when he began to reign, and he reigned eleven years in Jerusalem.",
+      "bibleReference": "Jeremiah 52:1",
+      "answers": [
+        {
+          "text": "Twenty-one years old, and he reigned eleven years",
+          "isCorrect": true
+        },
+        {
+          "text": "Eight years old, and he reigned thirty-one years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-five years old, and he reigned twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty years old, and he reigned three years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the name of Zedekiah's mother?",
+      "explanation": "His mother's name was Hamutal the daughter of Jeremiah of Libnah.",
+      "bibleReference": "Jeremiah 52:1",
+      "answers": [
+        {
+          "text": "Hamutal the daughter of Josiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Nehushta the daughter of Elnathan",
+          "isCorrect": false
+        },
+        {
+          "text": "Hamutal the daughter of Jeremiah of Libnah",
+          "isCorrect": true
+        },
+        {
+          "text": "Zebidah the daughter of Pedaiah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did Nebuchadnezzar come with all his army against Jerusalem?",
+      "explanation": "He came in the ninth year of Zedekiah's reign, in the tenth month, on the tenth day of the month, and encamped against the city.",
+      "bibleReference": "Jeremiah 52:4",
+      "answers": [
+        {
+          "text": "In the fourth year, the fourth month, on the ninth day",
+          "isCorrect": false
+        },
+        {
+          "text": "In the ninth year, the tenth month, on the tenth day",
+          "isCorrect": true
+        },
+        {
+          "text": "In the seventh year, the second month, on the first day",
+          "isCorrect": false
+        },
+        {
+          "text": "In the first year, the first month, on the first day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened in the fourth month, on the ninth day of the month?",
+      "explanation": "The famine was severe in the city, so that there was no bread for the people of the land.",
+      "bibleReference": "Jeremiah 52:6",
+      "answers": [
+        {
+          "text": "The temple of Yahweh was burned with fire",
+          "isCorrect": false
+        },
+        {
+          "text": "The king was crowned again in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The walls of the city were rebuilt",
+          "isCorrect": false
+        },
+        {
+          "text": "The famine was severe, with no bread for the people",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did the army of the Chaldeans overtake Zedekiah?",
+      "explanation": "The army of the Chaldeans pursued the king and overtook Zedekiah in the plains of Jericho, and all his army was scattered from him.",
+      "bibleReference": "Jeremiah 52:8",
+      "answers": [
+        {
+          "text": "In the plains of Jericho",
+          "isCorrect": true
+        },
+        {
+          "text": "By the river Euphrates",
+          "isCorrect": false
+        },
+        {
+          "text": "In the wilderness of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "At the gate of Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king of Babylon do to Zedekiah?",
+      "explanation": "He killed the sons of Zedekiah before his eyes, put out Zedekiah's eyes, bound him in fetters, carried him to Babylon and put him in prison until the day of his death.",
+      "bibleReference": "Jeremiah 52:10-11",
+      "answers": [
+        {
+          "text": "He set him on a throne in Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent him back to rule in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "He killed his sons, put out his eyes and imprisoned him",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent him away to Egypt bound in fetters",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came into Jerusalem and burned Yahweh's house and the king's house?",
+      "explanation": "Nebuzaradan the captain of the guard came into Jerusalem and burned Yahweh's house, the king's house and every great house of the city.",
+      "bibleReference": "Jeremiah 52:12-13",
+      "answers": [
+        {
+          "text": "Nebuchadnezzar himself",
+          "isCorrect": false
+        },
+        {
+          "text": "Seraiah the chief priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Evilmerodach king of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebuzaradan the captain of the guard",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Nebuzaradan leave the poorest of the land to be?",
+      "explanation": "Nebuzaradan the captain of the guard left some of the poorest of the land to be vineyard keepers and farmers.",
+      "bibleReference": "Jeremiah 52:16",
+      "answers": [
+        {
+          "text": "Soldiers to guard the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Vineyard keepers and farmers",
+          "isCorrect": true
+        },
+        {
+          "text": "Priests for the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Servants in Babylon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many people in all were carried away captive, according to the count given?",
+      "explanation": "The chapter lists the captives of three years and says that all the people were four thousand six hundred.",
+      "bibleReference": "Jeremiah 52:28-30",
+      "answers": [
+        {
+          "text": "Four thousand six hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten thousand and forty",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand two hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven thousand and seventy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Evilmerodach king of Babylon do for Jehoiachin king of Judah?",
+      "explanation": "He lifted up the head of Jehoiachin and released him from prison, spoke kindly to him, set his throne above the thrones of the kings who were with him in Babylon and changed his prison garments.",
+      "bibleReference": "Jeremiah 52:31-33",
+      "answers": [
+        {
+          "text": "He sent him back to Judah to reign as king",
+          "isCorrect": false
+        },
+        {
+          "text": "He put him to death in the city of Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "He released him from prison and spoke kindly to him",
+          "isCorrect": true
+        },
+        {
+          "text": "He gave him charge of all the army",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

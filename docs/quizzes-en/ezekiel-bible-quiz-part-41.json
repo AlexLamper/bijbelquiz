@@ -1,0 +1,242 @@
+{
+  "title": "Ezekiel Bible Quiz - Chapter 41",
+  "description": "Ten questions on Ezekiel 41: the temple measured inside, the side rooms, and the cherubim and palm trees on the walls.",
+  "slug": "ezekiel-bible-quiz-part-41",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How wide were the posts that he measured at the temple, on each side?",
+      "explanation": "He measured the posts, six cubits wide on the one side and six cubits wide on the other side.",
+      "bibleReference": "Ezekiel 41:1",
+      "answers": [
+        {
+          "text": "Six cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "Two cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Five cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the width of the entrance of the temple?",
+      "explanation": "The width of the entrance was ten cubits, and the sides of the entrance were five cubits on each side.",
+      "bibleReference": "Ezekiel 41:2",
+      "answers": [
+        {
+          "text": "Three cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the man call the room that measured twenty cubits by twenty cubits?",
+      "explanation": "He measured its length, twenty cubits, and the width, twenty cubits, before the temple, and said, \"This is the most holy place.\"",
+      "bibleReference": "Ezekiel 41:4",
+      "answers": [
+        {
+          "text": "The porch of the house",
+          "isCorrect": false
+        },
+        {
+          "text": "The most holy place",
+          "isCorrect": true
+        },
+        {
+          "text": "The outer court",
+          "isCorrect": false
+        },
+        {
+          "text": "The holy rooms of the priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How wide was every side room around the house?",
+      "explanation": "He measured the wall of the house, six cubits, and the width of every side room, four cubits, all around the house.",
+      "bibleReference": "Ezekiel 41:5",
+      "answers": [
+        {
+          "text": "Two cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Three cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Four cubits",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In how many stories were the side rooms, and how many were there in order?",
+      "explanation": "The side rooms were in three stories, one over another, and thirty in order.",
+      "bibleReference": "Ezekiel 41:6",
+      "answers": [
+        {
+          "text": "Three stories, thirty in order",
+          "isCorrect": true
+        },
+        {
+          "text": "Two stories, twenty in order",
+          "isCorrect": false
+        },
+        {
+          "text": "Four stories, forty in order",
+          "isCorrect": false
+        },
+        {
+          "text": "One story, twelve in order",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How thick was the wall for the side rooms on the outside?",
+      "explanation": "The thickness of the wall which was for the side rooms, on the outside, was five cubits.",
+      "bibleReference": "Ezekiel 41:9",
+      "answers": [
+        {
+          "text": "Three cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Five cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the width and length of the building before the separate place toward the west?",
+      "explanation": "The building before the separate place at the side toward the west was seventy cubits wide, and its length ninety cubits.",
+      "bibleReference": "Ezekiel 41:12",
+      "answers": [
+        {
+          "text": "Fifty cubits wide and one hundred long",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred wide and one hundred long",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty cubits wide and thirty long",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy cubits wide and ninety long",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which two faces did every cherub have?",
+      "explanation": "A palm tree was between cherub and cherub, and every cherub had two faces: the face of a man on one side and the face of a young lion on the other.",
+      "bibleReference": "Ezekiel 41:18-19",
+      "answers": [
+        {
+          "text": "A man's face and an eagle's face",
+          "isCorrect": false
+        },
+        {
+          "text": "An ox's face and an eagle's face",
+          "isCorrect": false
+        },
+        {
+          "text": "A man's face and a young lion's face",
+          "isCorrect": true
+        },
+        {
+          "text": "A lion's face and an ox's face",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Of what was the altar made, and how high was it?",
+      "explanation": "The altar was of wood, three cubits high, and its length two cubits, and he said, \"This is the table that is before Yahweh.\"",
+      "bibleReference": "Ezekiel 41:22",
+      "answers": [
+        {
+          "text": "Of bronze, five cubits high",
+          "isCorrect": false
+        },
+        {
+          "text": "Of wood, three cubits high",
+          "isCorrect": true
+        },
+        {
+          "text": "Of cut stone, four cubits high",
+          "isCorrect": false
+        },
+        {
+          "text": "Of gold, two cubits high",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many doors did the temple and the sanctuary have, and how many leaves had each door?",
+      "explanation": "The temple and the sanctuary had two doors, and the doors had two leaves each, two turning leaves.",
+      "bibleReference": "Ezekiel 41:23-24",
+      "answers": [
+        {
+          "text": "One door, with one leaf",
+          "isCorrect": false
+        },
+        {
+          "text": "Three doors, with two leaves each",
+          "isCorrect": false
+        },
+        {
+          "text": "Four doors, with three leaves each",
+          "isCorrect": false
+        },
+        {
+          "text": "Two doors, with two leaves each",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

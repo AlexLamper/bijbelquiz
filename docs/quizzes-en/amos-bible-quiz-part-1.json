@@ -1,0 +1,242 @@
+{
+  "title": "Amos Bible Quiz - Chapter 1",
+  "description": "Ten questions on Amos 1: the herdsman of Tekoa and the words spoken against Damascus, Gaza, Tyre, Edom and Ammon.",
+  "slug": "amos-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does verse 1 say about Amos himself?",
+      "explanation": "Verse 1 says these are the words of Amos, who was among the herdsmen of Tekoa.",
+      "bibleReference": "Amos 1:1",
+      "answers": [
+        {
+          "text": "He was among the herdsmen of Tekoa",
+          "isCorrect": true
+        },
+        {
+          "text": "He was a priest serving at Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "He was a scribe living in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "He was a vineyard keeper on Carmel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose reigns did Amos see these words concerning Israel?",
+      "explanation": "He saw them in the days of Uzziah king of Judah and in the days of Jeroboam the son of Joash king of Israel, two years before the earthquake.",
+      "bibleReference": "Amos 1:1",
+      "answers": [
+        {
+          "text": "Hezekiah of Judah and Hoshea of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Josiah of Judah and Jehu of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahaz of Judah and Pekah of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Uzziah of Judah and Jeroboam of Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will wither when Yahweh utters his voice from Jerusalem?",
+      "explanation": "Yahweh will roar from Zion and utter his voice from Jerusalem, the pastures of the shepherds will mourn and the top of Carmel will wither.",
+      "bibleReference": "Amos 1:2",
+      "answers": [
+        {
+          "text": "The cedars of Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "The top of Carmel",
+          "isCorrect": true
+        },
+        {
+          "text": "The vineyards of Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "The gardens of Damascus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Damascus charged with in verse 3?",
+      "explanation": "Damascus is charged with threshing Gilead with threshing instruments of iron.",
+      "bibleReference": "Amos 1:3",
+      "answers": [
+        {
+          "text": "Burning the bones of a king into lime",
+          "isCorrect": false
+        },
+        {
+          "text": "Selling captives to the sons of the Greeks",
+          "isCorrect": false
+        },
+        {
+          "text": "Threshing Gilead with instruments of iron",
+          "isCorrect": true
+        },
+        {
+          "text": "Ripping open the pregnant women",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose palaces will the fire sent into the house of Hazael devour?",
+      "explanation": "God says he will send a fire into the house of Hazael, and it will devour the palaces of Ben Hadad.",
+      "bibleReference": "Amos 1:4",
+      "answers": [
+        {
+          "text": "Ben Hadad's",
+          "isCorrect": true
+        },
+        {
+          "text": "Bozrah's",
+          "isCorrect": false
+        },
+        {
+          "text": "Rabbah's",
+          "isCorrect": false
+        },
+        {
+          "text": "Ashdod's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where will the people of Syria go into captivity?",
+      "explanation": "God will break the bar of Damascus, and the people of Syria shall go into captivity to Kir.",
+      "bibleReference": "Amos 1:5",
+      "answers": [
+        {
+          "text": "To Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "To Kir",
+          "isCorrect": true
+        },
+        {
+          "text": "To Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "To Babylon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Gaza deliver up the whole community it carried away captive?",
+      "explanation": "Gaza carried away captive the whole community to deliver them up to Edom.",
+      "bibleReference": "Amos 1:6",
+      "answers": [
+        {
+          "text": "To Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "To Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "To the Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "To Edom",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Against which city does God say he will turn his hand in verse 8?",
+      "explanation": "He says he will turn his hand against Ekron, and the remnant of the Philistines will perish.",
+      "bibleReference": "Amos 1:8",
+      "answers": [
+        {
+          "text": "Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "Ekron",
+          "isCorrect": true
+        },
+        {
+          "text": "Bozrah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Edom charged with in verse 11?",
+      "explanation": "Edom pursued his brother with the sword, cast off all pity, and his anger raged continually.",
+      "bibleReference": "Amos 1:11",
+      "answers": [
+        {
+          "text": "Pursuing his brother with the sword",
+          "isCorrect": true
+        },
+        {
+          "text": "Burning a whole city with fire",
+          "isCorrect": false
+        },
+        {
+          "text": "Robbing the temple of its silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Making a covenant with Assyria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 15 say will happen to the king of the children of Ammon?",
+      "explanation": "Their king will go into captivity, he and his princes together.",
+      "bibleReference": "Amos 1:15",
+      "answers": [
+        {
+          "text": "He will die by the sword in battle",
+          "isCorrect": false
+        },
+        {
+          "text": "He will go into captivity with his princes",
+          "isCorrect": true
+        },
+        {
+          "text": "He will be handed over to Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "He will flee away into Egypt",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
