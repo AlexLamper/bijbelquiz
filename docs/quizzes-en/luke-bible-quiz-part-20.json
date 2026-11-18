@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 20",
+  "description": "Ten questions on Luke 20: the question about authority, the parable of the vineyard, the denarius, the Sadducees and the warning about the scribes.",
+  "slug": "luke-bible-quiz-part-20",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who came to Jesus in the temple and asked by what authority he was acting?",
+      "explanation": "While he was teaching in the temple and preaching the Good News, the priests and scribes came to him with the elders.",
+      "bibleReference": "Luke 20:1-2",
+      "answers": [
+        {
+          "text": "The priests and scribes, with the elders",
+          "isCorrect": true
+        },
+        {
+          "text": "The Roman governor and his soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "A crowd of Galilean fishermen",
+          "isCorrect": false
+        },
+        {
+          "text": "Two of his own disciples",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What question did Jesus ask them in return?",
+      "explanation": "He said he would ask them one question: whether the baptism of John was from heaven or from men.",
+      "bibleReference": "Luke 20:3-4",
+      "answers": [
+        {
+          "text": "Whether it was lawful to heal on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Who had built the temple they stood in",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether the baptism of John was from heaven or from men",
+          "isCorrect": true
+        },
+        {
+          "text": "How many prophets they had believed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they fear would happen if they answered that John's baptism was from men?",
+      "explanation": "They reasoned that if they said \"From men\", all the people would stone them, because the people were persuaded that John was a prophet.",
+      "bibleReference": "Luke 20:6",
+      "answers": [
+        {
+          "text": "The governor would have them arrested",
+          "isCorrect": false
+        },
+        {
+          "text": "All the people would stone them",
+          "isCorrect": true
+        },
+        {
+          "text": "Jesus would refuse to teach again",
+          "isCorrect": false
+        },
+        {
+          "text": "They would lose their seats in the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the parable, what did the farmers do to the first servant the owner sent?",
+      "explanation": "The owner sent a servant to collect his share of the fruit, but the farmers beat him and sent him away empty.",
+      "bibleReference": "Luke 20:9-10",
+      "answers": [
+        {
+          "text": "They gladly gave him the fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "They killed him and buried him in the vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "They sent him back with a gift for the owner",
+          "isCorrect": false
+        },
+        {
+          "text": "They beat him and sent him away empty",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did the lord of the vineyard send after the three servants?",
+      "explanation": "The lord of the vineyard said he would send his beloved son, hoping that they would respect him.",
+      "bibleReference": "Luke 20:12-13",
+      "answers": [
+        {
+          "text": "His beloved son",
+          "isCorrect": true
+        },
+        {
+          "text": "A fourth servant",
+          "isCorrect": false
+        },
+        {
+          "text": "A company of soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "His neighbour from another country",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the hearers react when Jesus said the owner would destroy those farmers?",
+      "explanation": "Jesus said the lord of the vineyard would destroy the farmers and give the vineyard to others, and when they heard it they said, \"May that never be!\"",
+      "bibleReference": "Luke 20:16",
+      "answers": [
+        {
+          "text": "They praised him with a loud shout",
+          "isCorrect": false
+        },
+        {
+          "text": "They asked him to tell the parable again",
+          "isCorrect": false
+        },
+        {
+          "text": "They quietly got up and left",
+          "isCorrect": false
+        },
+        {
+          "text": "They said, \"May that never be!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whose image and inscription did they say were on the denarius?",
+      "explanation": "Jesus asked them to show him a denarius and whose image and inscription were on it, and they answered, \"Caesar's.\"",
+      "bibleReference": "Luke 20:24",
+      "answers": [
+        {
+          "text": "Moses'",
+          "isCorrect": false
+        },
+        {
+          "text": "David's",
+          "isCorrect": false
+        },
+        {
+          "text": "Caesar's",
+          "isCorrect": true
+        },
+        {
+          "text": "The governor's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Sadducees who came to him deny?",
+      "explanation": "Some of the Sadducees came to him, those who deny that there is a resurrection.",
+      "bibleReference": "Luke 20:27",
+      "answers": [
+        {
+          "text": "That Moses wrote the law",
+          "isCorrect": false
+        },
+        {
+          "text": "That there is a resurrection",
+          "isCorrect": true
+        },
+        {
+          "text": "That the temple would be destroyed",
+          "isCorrect": false
+        },
+        {
+          "text": "That taxes should be paid to Caesar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say those who attain to that age are like?",
+      "explanation": "He said they can no longer die, for they are like the angels, and are children of God, being children of the resurrection.",
+      "bibleReference": "Luke 20:36",
+      "answers": [
+        {
+          "text": "Like little children",
+          "isCorrect": false
+        },
+        {
+          "text": "Like the prophets of old",
+          "isCorrect": false
+        },
+        {
+          "text": "Like Moses at the bush",
+          "isCorrect": false
+        },
+        {
+          "text": "Like the angels",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say the scribes do to widows' houses?",
+      "explanation": "He warned his disciples about the scribes who devour widows' houses and for a pretense make long prayers.",
+      "bibleReference": "Luke 20:46-47",
+      "answers": [
+        {
+          "text": "They devour them",
+          "isCorrect": true
+        },
+        {
+          "text": "They rebuild them",
+          "isCorrect": false
+        },
+        {
+          "text": "They buy them at a fair price",
+          "isCorrect": false
+        },
+        {
+          "text": "They pray in them every morning",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

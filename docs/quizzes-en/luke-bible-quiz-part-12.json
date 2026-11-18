@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 12",
+  "description": "Ten questions on Luke 12: the yeast of the Pharisees, the rich man and his barns, the ravens and the lilies, and being ready.",
+  "slug": "luke-bible-quiz-part-12",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does he call the yeast of the Pharisees?",
+      "explanation": "He warns his disciples to beware of the yeast of the Pharisees, which is hypocrisy.",
+      "bibleReference": "Luke 12:1",
+      "answers": [
+        {
+          "text": "Hypocrisy",
+          "isCorrect": true
+        },
+        {
+          "text": "Covetousness",
+          "isCorrect": false
+        },
+        {
+          "text": "Unbelief",
+          "isCorrect": false
+        },
+        {
+          "text": "Drunkenness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say will happen to what is spoken in the ear in the inner rooms?",
+      "explanation": "He says that what has been said in the darkness will be heard in the light, and what was spoken in the ear in the inner rooms will be proclaimed on the housetops.",
+      "bibleReference": "Luke 12:3",
+      "answers": [
+        {
+          "text": "It will be forgotten by morning",
+          "isCorrect": false
+        },
+        {
+          "text": "It will stay hidden until the judgment",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be proclaimed on the housetops",
+          "isCorrect": true
+        },
+        {
+          "text": "It will be written in a book",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say about the hairs of your head?",
+      "explanation": "He says that the very hairs of your head are all counted, so they should not be afraid, since they are of more value than many sparrows.",
+      "bibleReference": "Luke 12:7",
+      "answers": [
+        {
+          "text": "They are of little value",
+          "isCorrect": false
+        },
+        {
+          "text": "They are all counted",
+          "isCorrect": true
+        },
+        {
+          "text": "They turn white with worry",
+          "isCorrect": false
+        },
+        {
+          "text": "They are numbered only by angels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did one of the multitude ask him to tell his brother to do?",
+      "explanation": "One of the multitude asked him to tell his brother to divide the inheritance with him.",
+      "bibleReference": "Luke 12:13",
+      "answers": [
+        {
+          "text": "Forgive him seven times",
+          "isCorrect": false
+        },
+        {
+          "text": "Give him a goat to celebrate with",
+          "isCorrect": false
+        },
+        {
+          "text": "Pay him the very last penny",
+          "isCorrect": false
+        },
+        {
+          "text": "Divide the inheritance with him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the parable, what did the rich man plan to do because he had no room for his crops?",
+      "explanation": "The rich man said he would pull down his barns and build bigger ones, and store all his grain and goods there.",
+      "bibleReference": "Luke 12:17-18",
+      "answers": [
+        {
+          "text": "Pull down his barns and build bigger ones",
+          "isCorrect": true
+        },
+        {
+          "text": "Sell his grain in the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Give his crops to the needy",
+          "isCorrect": false
+        },
+        {
+          "text": "Rent a storehouse from his neighbor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God say to the rich man in the parable?",
+      "explanation": "God said, \"You foolish one, tonight your soul is required of you. The things which you have prepared - whose will they be?\"",
+      "bibleReference": "Luke 12:20",
+      "answers": [
+        {
+          "text": "That his barns would be burned",
+          "isCorrect": false
+        },
+        {
+          "text": "That his soul was required of him that very night",
+          "isCorrect": true
+        },
+        {
+          "text": "That his servants would rob him",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would live many more years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say about the lilies and Solomon?",
+      "explanation": "He says the lilies do not toil or spin, yet even Solomon in all his glory was not arrayed like one of these.",
+      "bibleReference": "Luke 12:27",
+      "answers": [
+        {
+          "text": "Solomon planted them in his garden",
+          "isCorrect": false
+        },
+        {
+          "text": "They were woven into Solomon's robes",
+          "isCorrect": false
+        },
+        {
+          "text": "Solomon in all his glory was not arrayed like one of them",
+          "isCorrect": true
+        },
+        {
+          "text": "Solomon was clothed more beautifully than they are",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say about where your treasure is?",
+      "explanation": "He says that where your treasure is, there your heart will be also.",
+      "bibleReference": "Luke 12:34",
+      "answers": [
+        {
+          "text": "Your enemies will find it",
+          "isCorrect": false
+        },
+        {
+          "text": "Moths will destroy it",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be repaid to you twice",
+          "isCorrect": false
+        },
+        {
+          "text": "Your heart will be there also",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does he say is required of the one to whom much is given?",
+      "explanation": "He says that to whomever much is given, of him much will be required, and of him to whom much was entrusted, more will be asked.",
+      "bibleReference": "Luke 12:48",
+      "answers": [
+        {
+          "text": "He will be forgiven much",
+          "isCorrect": false
+        },
+        {
+          "text": "Much will be required of him",
+          "isCorrect": true
+        },
+        {
+          "text": "He will be given even more without asking",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be beaten with few stripes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do people say when they see a cloud rising from the west?",
+      "explanation": "He says that when they see a cloud rising from the west they immediately say, \"A shower is coming,\" and so it happens.",
+      "bibleReference": "Luke 12:54",
+      "answers": [
+        {
+          "text": "\"There will be a scorching heat\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The harvest is near\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"A shower is coming\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"A wind storm is coming down on the lake\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 14",
+  "description": "Ten questions on Matthew 14: the death of John the Baptizer, the five loaves and two fish, and the walk on the sea.",
+  "slug": "matthew-bible-quiz-part-14",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Herod the tetrarch say about Jesus when he heard the report?",
+      "explanation": "Herod said to his servants that this was John the Baptizer, risen from the dead, and that is why these powers work in him.",
+      "bibleReference": "Matthew 14:2",
+      "answers": [
+        {
+          "text": "That he was Elijah returned to Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was John the Baptizer, risen",
+          "isCorrect": true
+        },
+        {
+          "text": "That he was a prophet from Nazareth",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was the son of Herodias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For whose sake had Herod arrested John and put him in prison?",
+      "explanation": "Herod had arrested John and bound him and put him in prison for the sake of Herodias, his brother Philip's wife.",
+      "bibleReference": "Matthew 14:3",
+      "answers": [
+        {
+          "text": "Herodias, his brother Philip's wife",
+          "isCorrect": true
+        },
+        {
+          "text": "The scribes who came from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The multitude who counted John a prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests who served in the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the daughter of Herodias ask for, prompted by her mother?",
+      "explanation": "She asked for the head of John the Baptizer, given to her there on a platter.",
+      "bibleReference": "Matthew 14:8",
+      "answers": [
+        {
+          "text": "Half of the kingdom of Herod the tetrarch",
+          "isCorrect": false
+        },
+        {
+          "text": "The release of John the Baptizer from prison",
+          "isCorrect": false
+        },
+        {
+          "text": "A place beside the king at his table",
+          "isCorrect": false
+        },
+        {
+          "text": "The head of John the Baptizer on a platter",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did the king command it to be given, although he was grieved?",
+      "explanation": "The king was grieved, but for the sake of his oaths and of those who sat at the table with him, he commanded it to be given.",
+      "bibleReference": "Matthew 14:9",
+      "answers": [
+        {
+          "text": "Because John had broken the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the multitude demanded it of him",
+          "isCorrect": false
+        },
+        {
+          "text": "Because of his oaths and his guests at the table",
+          "isCorrect": true
+        },
+        {
+          "text": "Because Herodias threatened him with war",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do when he went out and saw the great multitude?",
+      "explanation": "Jesus went out, saw a great multitude, had compassion on them, and healed their sick.",
+      "bibleReference": "Matthew 14:14",
+      "answers": [
+        {
+          "text": "He had compassion and healed their sick",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent them away to the villages",
+          "isCorrect": false
+        },
+        {
+          "text": "He taught them in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked them for food and drink",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the disciples say they had there in the deserted place?",
+      "explanation": "They told him they only had five loaves and two fish there.",
+      "bibleReference": "Matthew 14:17",
+      "answers": [
+        {
+          "text": "Seven loaves and a few fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Five loaves and two fish",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve baskets of bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Two loaves and five fish",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was taken up after they all ate and were filled?",
+      "explanation": "They all ate and were filled, and they took up twelve baskets full of what was left over from the broken pieces.",
+      "bibleReference": "Matthew 14:20",
+      "answers": [
+        {
+          "text": "Seven baskets of broken pieces",
+          "isCorrect": false
+        },
+        {
+          "text": "Five baskets of whole loaves",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve baskets of broken pieces",
+          "isCorrect": true
+        },
+        {
+          "text": "Nothing at all was left over",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many ate, in addition to women and children?",
+      "explanation": "Those who ate were about five thousand men, in addition to women and children.",
+      "bibleReference": "Matthew 14:21",
+      "answers": [
+        {
+          "text": "About four thousand men",
+          "isCorrect": false
+        },
+        {
+          "text": "About five hundred men",
+          "isCorrect": false
+        },
+        {
+          "text": "About twelve thousand men",
+          "isCorrect": false
+        },
+        {
+          "text": "About five thousand men",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to Peter after he took hold of him on the water?",
+      "explanation": "Jesus stretched out his hand, took hold of him, and said: You of little faith, why did you doubt?",
+      "bibleReference": "Matthew 14:31",
+      "answers": [
+        {
+          "text": "Your faith has made you well",
+          "isCorrect": false
+        },
+        {
+          "text": "You of little faith, why did you doubt?",
+          "isCorrect": true
+        },
+        {
+          "text": "Peace, be still, and fear not",
+          "isCorrect": false
+        },
+        {
+          "text": "Come, and walk further with me",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people of Gennesaret beg him for?",
+      "explanation": "They brought him all who were sick and begged him that they might just touch the fringe of his garment.",
+      "bibleReference": "Matthew 14:35-36",
+      "answers": [
+        {
+          "text": "To touch the fringe of his garment",
+          "isCorrect": true
+        },
+        {
+          "text": "To stay in their city seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "To send his disciples to them",
+          "isCorrect": false
+        },
+        {
+          "text": "To calm the wind on the sea",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

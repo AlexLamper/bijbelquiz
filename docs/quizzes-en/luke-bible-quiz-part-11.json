@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 11",
+  "description": "Ten questions on Luke 11: teaching on prayer, the friend at midnight, the sign of Jonah and the woes to the Pharisees.",
+  "slug": "luke-bible-quiz-part-11",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did one of the disciples ask him in a certain place?",
+      "explanation": "One of his disciples asked him to teach them to pray, just as John also taught his disciples.",
+      "bibleReference": "Luke 11:1",
+      "answers": [
+        {
+          "text": "To teach them to fast",
+          "isCorrect": false
+        },
+        {
+          "text": "To give them a sign from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "To explain the parable of the sower",
+          "isCorrect": false
+        },
+        {
+          "text": "To teach them to pray",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the prayer he taught, what are they to ask for day by day?",
+      "explanation": "The prayer asks, \"Give us day by day our daily bread.\"",
+      "bibleReference": "Luke 11:3",
+      "answers": [
+        {
+          "text": "A sign from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "Their daily bread",
+          "isCorrect": true
+        },
+        {
+          "text": "Rest from their enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "Wisdom like Solomon's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many loaves of bread does the man in the story ask his friend for at midnight?",
+      "explanation": "The man says, \"Friend, lend me three loaves of bread,\" because a friend has come to him from a journey.",
+      "bibleReference": "Luke 11:5-6",
+      "answers": [
+        {
+          "text": "One",
+          "isCorrect": false
+        },
+        {
+          "text": "Five",
+          "isCorrect": false
+        },
+        {
+          "text": "Three",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say will happen to the one who keeps asking, seeking and knocking?",
+      "explanation": "He says that everyone who asks receives, he who seeks finds, and to him who knocks it will be opened.",
+      "bibleReference": "Luke 11:9-10",
+      "answers": [
+        {
+          "text": "He receives, finds, and the door is opened",
+          "isCorrect": true
+        },
+        {
+          "text": "He will be sent away empty-handed",
+          "isCorrect": false
+        },
+        {
+          "text": "He must first bring his friend a gift",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be answered only at daybreak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which three things does he say a father would not give his son who asks for food?",
+      "explanation": "He asks whether a father would give a stone instead of bread, a snake instead of a fish, or a scorpion instead of an egg.",
+      "bibleReference": "Luke 11:11-12",
+      "answers": [
+        {
+          "text": "Bread, a fish and an egg",
+          "isCorrect": false
+        },
+        {
+          "text": "A thorn, a stone and a cup",
+          "isCorrect": false
+        },
+        {
+          "text": "Dust, ashes and sand",
+          "isCorrect": false
+        },
+        {
+          "text": "A stone, a snake and a scorpion",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does he say the heavenly Father will give to those who ask him?",
+      "explanation": "He says that if evil people know how to give good gifts to their children, how much more will the heavenly Father give the Holy Spirit to those who ask him.",
+      "bibleReference": "Luke 11:13",
+      "answers": [
+        {
+          "text": "The Holy Spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "Daily bread",
+          "isCorrect": false
+        },
+        {
+          "text": "A kingdom and a throne",
+          "isCorrect": false
+        },
+        {
+          "text": "Authority over serpents",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did some people say about how he cast out demons?",
+      "explanation": "Some of them said that he casts out demons by Beelzebul, the prince of the demons.",
+      "bibleReference": "Luke 11:15",
+      "answers": [
+        {
+          "text": "By the finger of God",
+          "isCorrect": false
+        },
+        {
+          "text": "By Beelzebul, the prince of the demons",
+          "isCorrect": true
+        },
+        {
+          "text": "By the wisdom of Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "By the preaching of Jonah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say happens to every kingdom divided against itself?",
+      "explanation": "He says that every kingdom divided against itself is brought to desolation, and a house divided against itself falls.",
+      "bibleReference": "Luke 11:17",
+      "answers": [
+        {
+          "text": "It becomes twice as strong",
+          "isCorrect": false
+        },
+        {
+          "text": "It is given to its enemies to rule",
+          "isCorrect": false
+        },
+        {
+          "text": "It is brought to desolation",
+          "isCorrect": true
+        },
+        {
+          "text": "It is restored by its king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What sign does he say will be given to this generation?",
+      "explanation": "He says that no sign will be given to this evil generation but the sign of Jonah, the prophet.",
+      "bibleReference": "Luke 11:29",
+      "answers": [
+        {
+          "text": "The sign of Jonah",
+          "isCorrect": true
+        },
+        {
+          "text": "The sign of Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "A sign from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The sign of Abel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Pharisee marvel at when his guest sat at the table?",
+      "explanation": "The Pharisee marveled that his guest had not first washed himself before dinner.",
+      "bibleReference": "Luke 11:37-38",
+      "answers": [
+        {
+          "text": "That he ate with tax collectors",
+          "isCorrect": false
+        },
+        {
+          "text": "That he taught on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "That he took the best seat",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had not first washed before dinner",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

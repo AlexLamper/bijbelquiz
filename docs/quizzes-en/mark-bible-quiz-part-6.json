@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 6",
+  "description": "Ten questions on Mark 6: rejection in his own country, the sending out of the twelve, the death of John the Baptizer, the five thousand fed and the walk on the sea.",
+  "slug": "mark-bible-quiz-part-6",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How did the people of his own country speak of him when they were offended?",
+      "explanation": "They asked, \"Isn't this the carpenter, the son of Mary, and brother of James, Joses, Judah, and Simon?\" and they were offended at him.",
+      "bibleReference": "Mark 6:3",
+      "answers": [
+        {
+          "text": "As a scribe from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "As the carpenter, the son of Mary",
+          "isCorrect": true
+        },
+        {
+          "text": "As a prophet like Elijah",
+          "isCorrect": false
+        },
+        {
+          "text": "As a ruler of the synagogue",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about a prophet and his own country?",
+      "explanation": "Jesus said that a prophet is not without honor, except in his own country, among his own relatives, and in his own house.",
+      "bibleReference": "Mark 6:4",
+      "answers": [
+        {
+          "text": "A prophet is without honor in his own country",
+          "isCorrect": true
+        },
+        {
+          "text": "A prophet is honored first at home",
+          "isCorrect": false
+        },
+        {
+          "text": "A prophet must leave his own house",
+          "isCorrect": false
+        },
+        {
+          "text": "A prophet is known by his mighty works",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he allow the twelve to take for their journey?",
+      "explanation": "He commanded them to take nothing for the journey except a staff only: no bread, no wallet, no money in their purse.",
+      "bibleReference": "Mark 6:8",
+      "answers": [
+        {
+          "text": "Bread and a wallet",
+          "isCorrect": false
+        },
+        {
+          "text": "Money for the road",
+          "isCorrect": false
+        },
+        {
+          "text": "Two tunics each",
+          "isCorrect": false
+        },
+        {
+          "text": "A staff only",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were the twelve to do where they were not received?",
+      "explanation": "He told them to shake off the dust that is under their feet as they departed, for a testimony against that place.",
+      "bibleReference": "Mark 6:11",
+      "answers": [
+        {
+          "text": "Stay until they were heard",
+          "isCorrect": false
+        },
+        {
+          "text": "Call down fire on the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Shake the dust off their feet",
+          "isCorrect": true
+        },
+        {
+          "text": "Return at once to Galilee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Herod say when he heard about Jesus' name becoming known?",
+      "explanation": "Herod said, \"This is John, whom I beheaded. He has risen from the dead.\"",
+      "bibleReference": "Mark 6:16",
+      "answers": [
+        {
+          "text": "That John, whom he beheaded, had risen",
+          "isCorrect": true
+        },
+        {
+          "text": "That a new prophet had come from Judea",
+          "isCorrect": false
+        },
+        {
+          "text": "That the prophets were silent",
+          "isCorrect": false
+        },
+        {
+          "text": "That the man should be arrested",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the daughter of Herodias ask the king for?",
+      "explanation": "She came in with haste and asked for the head of John the Baptizer on a platter, right away.",
+      "bibleReference": "Mark 6:24-25",
+      "answers": [
+        {
+          "text": "Half of the kingdom of Herod",
+          "isCorrect": false
+        },
+        {
+          "text": "The head of John the Baptizer",
+          "isCorrect": true
+        },
+        {
+          "text": "The release of John from prison",
+          "isCorrect": false
+        },
+        {
+          "text": "A seat beside the king at the supper",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What food did the disciples have for the great multitude?",
+      "explanation": "When he asked how many loaves they had, they said, \"Five, and two fish.\"",
+      "bibleReference": "Mark 6:38",
+      "answers": [
+        {
+          "text": "Seven loaves and a few fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred denarii worth of bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve baskets of bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Five loaves and two fish",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many baskets full of broken pieces did they take up?",
+      "explanation": "They all ate and were filled, and they took up twelve baskets full of broken pieces and also of the fish.",
+      "bibleReference": "Mark 6:42-43",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Five",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": true
+        },
+        {
+          "text": "Two",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the disciples see about the fourth watch of the night?",
+      "explanation": "About the fourth watch of the night he came to them, walking on the sea, and they supposed that it was a ghost and cried out.",
+      "bibleReference": "Mark 6:48-49",
+      "answers": [
+        {
+          "text": "Him walking on the sea",
+          "isCorrect": true
+        },
+        {
+          "text": "A light on the shore",
+          "isCorrect": false
+        },
+        {
+          "text": "A boat coming toward them",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel above the water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the sick people beg to be allowed to do wherever he entered?",
+      "explanation": "They laid the sick in the marketplaces and begged that they might just touch the fringe of his garment; as many as touched him were made well.",
+      "bibleReference": "Mark 6:56",
+      "answers": [
+        {
+          "text": "Be carried into the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "Touch the fringe of his garment",
+          "isCorrect": true
+        },
+        {
+          "text": "Be anointed with oil by the twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Hear him teach from a boat",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

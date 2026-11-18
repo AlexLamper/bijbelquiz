@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 8",
+  "description": "Ten questions on Luke 8: the parable of the sower, the storm on the lake, the man called Legion and Jairus' daughter.",
+  "slug": "luke-bible-quiz-part-8",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "From whom does the text say seven demons had gone out?",
+      "explanation": "The text lists Mary who was called Magdalene as the one from whom seven demons had gone out.",
+      "bibleReference": "Luke 8:2",
+      "answers": [
+        {
+          "text": "Mary who was called Magdalene",
+          "isCorrect": true
+        },
+        {
+          "text": "Joanna, the wife of Chuzas",
+          "isCorrect": false
+        },
+        {
+          "text": "Susanna, one of the other women",
+          "isCorrect": false
+        },
+        {
+          "text": "The daughter of Jairus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the parable, what happened to the seed that fell along the road?",
+      "explanation": "The seed that fell along the road was trampled under foot, and the birds of the sky devoured it.",
+      "bibleReference": "Luke 8:5",
+      "answers": [
+        {
+          "text": "It withered because it had no moisture",
+          "isCorrect": false
+        },
+        {
+          "text": "The thorns grew up and choked it",
+          "isCorrect": false
+        },
+        {
+          "text": "It was trampled and the birds devoured it",
+          "isCorrect": true
+        },
+        {
+          "text": "It grew and bore fruit a hundredfold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much fruit did the seed that fell into the good ground produce?",
+      "explanation": "The seed that fell into the good ground grew and produced one hundred times as much fruit.",
+      "bibleReference": "Luke 8:8",
+      "answers": [
+        {
+          "text": "Ten times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred times as much",
+          "isCorrect": true
+        },
+        {
+          "text": "Twice as much",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty times as much",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When he explained the parable, what did he say the seed is?",
+      "explanation": "He said that the seed is the word of God.",
+      "bibleReference": "Luke 8:11",
+      "answers": [
+        {
+          "text": "The Kingdom of heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The faith of the hearers",
+          "isCorrect": false
+        },
+        {
+          "text": "The law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The word of God",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does he say a person does with a lamp once it is lit?",
+      "explanation": "No one covers a lit lamp with a container or puts it under a bed; it is put on a stand so that those who enter may see the light.",
+      "bibleReference": "Luke 8:16",
+      "answers": [
+        {
+          "text": "Puts it on a stand",
+          "isCorrect": true
+        },
+        {
+          "text": "Covers it with a container",
+          "isCorrect": false
+        },
+        {
+          "text": "Puts it under a bed",
+          "isCorrect": false
+        },
+        {
+          "text": "Carries it outside the house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did he call his mother and his brothers?",
+      "explanation": "He answered that his mother and his brothers are those who hear the word of God and do it.",
+      "bibleReference": "Luke 8:20-21",
+      "answers": [
+        {
+          "text": "The twelve who travel with him",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who hear the word of God and do it",
+          "isCorrect": true
+        },
+        {
+          "text": "The women who served from their possessions",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who came to him for healing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he say to the disciples after he calmed the wind and the water?",
+      "explanation": "He rebuked the wind and the raging of the water, and then asked the disciples, \"Where is your faith?\"",
+      "bibleReference": "Luke 8:24-25",
+      "answers": [
+        {
+          "text": "\"Why are you still here?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Peace be to this house.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Where is your faith?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"He who has ears to hear, let him hear!\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did the man with the demons give when Jesus asked his name?",
+      "explanation": "The man said his name was Legion, because many demons had entered into him.",
+      "bibleReference": "Luke 8:30",
+      "answers": [
+        {
+          "text": "Beelzebul",
+          "isCorrect": false
+        },
+        {
+          "text": "Gadara",
+          "isCorrect": false
+        },
+        {
+          "text": "Abyss",
+          "isCorrect": false
+        },
+        {
+          "text": "Legion",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who was Jairus, the man who fell down at Jesus' feet?",
+      "explanation": "The text says that Jairus was a ruler of the synagogue, and that he begged Jesus to come into his house.",
+      "bibleReference": "Luke 8:41",
+      "answers": [
+        {
+          "text": "A chief tax collector",
+          "isCorrect": false
+        },
+        {
+          "text": "A ruler of the synagogue",
+          "isCorrect": true
+        },
+        {
+          "text": "Herod's steward",
+          "isCorrect": false
+        },
+        {
+          "text": "A physician",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the woman with a flow of blood touch?",
+      "explanation": "She came up behind him and touched the fringe of his cloak, and immediately the flow of her blood stopped.",
+      "bibleReference": "Luke 8:43-44",
+      "answers": [
+        {
+          "text": "The staff in his hand",
+          "isCorrect": false
+        },
+        {
+          "text": "His feet as he passed by",
+          "isCorrect": false
+        },
+        {
+          "text": "The fringe of his cloak",
+          "isCorrect": true
+        },
+        {
+          "text": "The hem of his sandal",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

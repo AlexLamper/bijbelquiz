@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 10",
+  "description": "Ten questions on Luke 10: the seventy sent out two by two, the good Samaritan, and Martha and Mary.",
+  "slug": "luke-bible-quiz-part-10",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How many others did the Lord appoint and send ahead of him?",
+      "explanation": "The Lord appointed seventy others and sent them two by two ahead of him into every city and place where he was about to come.",
+      "bibleReference": "Luke 10:1",
+      "answers": [
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": true
+        },
+        {
+          "text": "A hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he say about the harvest and the laborers?",
+      "explanation": "He said the harvest is plentiful but the laborers are few, and told them to pray to the Lord of the harvest to send out laborers.",
+      "bibleReference": "Luke 10:2",
+      "answers": [
+        {
+          "text": "The harvest is plentiful, but the laborers are few",
+          "isCorrect": true
+        },
+        {
+          "text": "The harvest is small, but the laborers are many",
+          "isCorrect": false
+        },
+        {
+          "text": "Both the harvest and the laborers are few",
+          "isCorrect": false
+        },
+        {
+          "text": "The harvest must wait for another year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were they told to carry on the way?",
+      "explanation": "They were told to carry no purse, no wallet and no sandals, and to greet no one on the way.",
+      "bibleReference": "Luke 10:4",
+      "answers": [
+        {
+          "text": "A purse and a wallet",
+          "isCorrect": false
+        },
+        {
+          "text": "Sandals and a staff",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread for the journey",
+          "isCorrect": false
+        },
+        {
+          "text": "No purse, wallet or sandals",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the seventy report with joy when they returned?",
+      "explanation": "The seventy returned with joy and said that even the demons were subject to them in his name.",
+      "bibleReference": "Luke 10:17",
+      "answers": [
+        {
+          "text": "That every city had received them gladly",
+          "isCorrect": false
+        },
+        {
+          "text": "That even the demons were subject to them in his name",
+          "isCorrect": true
+        },
+        {
+          "text": "That they had healed every sick person in the cities",
+          "isCorrect": false
+        },
+        {
+          "text": "That they had wiped the dust off their feet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he tell them to rejoice in instead?",
+      "explanation": "He told them not to rejoice that the spirits are subject to them, but to rejoice that their names are written in heaven.",
+      "bibleReference": "Luke 10:20",
+      "answers": [
+        {
+          "text": "That they had authority over serpents",
+          "isCorrect": false
+        },
+        {
+          "text": "That the harvest was plentiful",
+          "isCorrect": false
+        },
+        {
+          "text": "That their names are written in heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "That they had been sent two by two",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the lawyer answer the question about what is written in the law?",
+      "explanation": "He answered that you shall love the Lord your God with all your heart, soul, strength and mind, and your neighbor as yourself.",
+      "bibleReference": "Luke 10:27",
+      "answers": [
+        {
+          "text": "Do not steal and do not give false testimony",
+          "isCorrect": false
+        },
+        {
+          "text": "Tithe everything you get and fast twice a week",
+          "isCorrect": false
+        },
+        {
+          "text": "Honor your father and your mother",
+          "isCorrect": false
+        },
+        {
+          "text": "Love the Lord your God with everything, and your neighbor as yourself",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the priest and the Levite do when they saw the wounded man?",
+      "explanation": "Both the priest and the Levite saw the man and passed by on the other side.",
+      "bibleReference": "Luke 10:31-32",
+      "answers": [
+        {
+          "text": "They passed by on the other side",
+          "isCorrect": true
+        },
+        {
+          "text": "They carried him to an inn",
+          "isCorrect": false
+        },
+        {
+          "text": "They called for a Samaritan to help",
+          "isCorrect": false
+        },
+        {
+          "text": "They bound up his wounds and left him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Samaritan pour on the wounded man's wounds?",
+      "explanation": "The Samaritan bound up his wounds, pouring on oil and wine.",
+      "bibleReference": "Luke 10:34",
+      "answers": [
+        {
+          "text": "Water and myrrh",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil and wine",
+          "isCorrect": true
+        },
+        {
+          "text": "Oil and water",
+          "isCorrect": false
+        },
+        {
+          "text": "Wine and salt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much money did the Samaritan give to the host of the inn?",
+      "explanation": "He took out two denarii and gave them to the host, and promised to repay whatever more was spent.",
+      "bibleReference": "Luke 10:35",
+      "answers": [
+        {
+          "text": "Ten drachma coins",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty denarii",
+          "isCorrect": false
+        },
+        {
+          "text": "A hundred batos of oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Two denarii",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about Mary when Martha complained?",
+      "explanation": "Jesus said that Mary had chosen the good part, which will not be taken away from her.",
+      "bibleReference": "Luke 10:41-42",
+      "answers": [
+        {
+          "text": "She had chosen the good part, which will not be taken away",
+          "isCorrect": true
+        },
+        {
+          "text": "She should get up and help her sister",
+          "isCorrect": false
+        },
+        {
+          "text": "She was anxious and troubled about many things",
+          "isCorrect": false
+        },
+        {
+          "text": "She had not yet heard his word",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

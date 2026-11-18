@@ -1,154 +1,154 @@
 {
   "title": "Luke Bible Quiz - Chapter 2",
-  "description": "Ten questions on the birth of Jesus and his childhood in Luke 2.",
+  "description": "Ten questions on Luke 2: the enrollment under Caesar Augustus, the birth at Bethlehem, the shepherds, Simeon and Anna, and the boy Jesus in the temple.",
   "slug": "luke-bible-quiz-part-2",
-  "categorySlug": "life-of-jesus",
+  "categorySlug": "new-testament",
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": false,
   "status": "draft",
   "questions": [
     {
-      "text": "Which Roman emperor ordered that the whole empire be registered?",
+      "text": "Whose decree sent everyone to be enrolled?",
       "explanation": "In those days a decree went out from Caesar Augustus that all the world should be enrolled.",
       "bibleReference": "Luke 2:1",
       "answers": [
-        {
-          "text": "Emperor Nero",
-          "isCorrect": false
-        },
         {
           "text": "Caesar Augustus",
           "isCorrect": true
         },
         {
-          "text": "Emperor Tiberius",
+          "text": "Quirinius, governor of Syria",
           "isCorrect": false
         },
         {
-          "text": "King Herod the Great",
+          "text": "Herod, the king of Judea",
+          "isCorrect": false
+        },
+        {
+          "text": "The council in Jerusalem",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "To which town did Joseph travel to be registered, because he was of the house of David?",
-      "explanation": "Joseph went up from Nazareth in Galilee to Bethlehem, the city of David.",
+      "text": "Why did Joseph go up from Nazareth to Bethlehem, David's city?",
+      "explanation": "Joseph went up from Galilee, out of Nazareth, into Judea to David's city, which is called Bethlehem, because he was of the house and family of David.",
       "bibleReference": "Luke 2:4",
       "answers": [
         {
-          "text": "Jericho",
+          "text": "Because the shepherds called him",
           "isCorrect": false
         },
         {
-          "text": "Capernaum",
+          "text": "Because an angel told him to go",
           "isCorrect": false
         },
         {
-          "text": "Jerusalem",
-          "isCorrect": false
-        },
-        {
-          "text": "Bethlehem",
+          "text": "Because he was of the house and family of David",
           "isCorrect": true
+        },
+        {
+          "text": "Because he owned a field there",
+          "isCorrect": false
         }
       ]
     },
     {
-      "text": "Where did Mary lay her newborn son?",
-      "explanation": "She wrapped him in strips of cloth and laid him in a feeding trough, because there was no room for them in the inn.",
+      "text": "Where did Mary lay her firstborn son after she had wrapped him in bands of cloth?",
+      "explanation": "She wrapped him in bands of cloth and laid him in a feeding trough, because there was no room for them in the inn.",
       "bibleReference": "Luke 2:7",
       "answers": [
         {
-          "text": "In a manger",
+          "text": "In a bed in the inn",
+          "isCorrect": false
+        },
+        {
+          "text": "In a feeding trough",
           "isCorrect": true
         },
         {
-          "text": "In a basket",
+          "text": "In the arms of Joseph",
           "isCorrect": false
         },
         {
-          "text": "In a temple",
-          "isCorrect": false
-        },
-        {
-          "text": "On a hillside",
+          "text": "On a cloak in the field",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "Who were the first to hear the announcement of the birth from the angel?",
-      "explanation": "Shepherds in the same country were staying in the field, keeping watch over their flock by night, when an angel of the Lord stood by them.",
-      "bibleReference": "Luke 2:8-9",
+      "text": "What were the shepherds doing in the same country when the angel stood by them?",
+      "explanation": "There were shepherds staying in the field, keeping watch by night over their flock, when an angel of the Lord stood by them.",
+      "bibleReference": "Luke 2:8",
       "answers": [
         {
-          "text": "Wise men from the east",
+          "text": "Driving their flock to Bethlehem",
           "isCorrect": false
         },
         {
-          "text": "Priests serving in the temple",
+          "text": "Sleeping in the city gate",
           "isCorrect": false
         },
         {
-          "text": "Shepherds watching their flocks by night",
+          "text": "Enrolling themselves for the decree",
+          "isCorrect": false
+        },
+        {
+          "text": "Keeping watch by night over their flock",
           "isCorrect": true
-        },
-        {
-          "text": "Officials of the king's court",
-          "isCorrect": false
         }
       ]
     },
     {
       "text": "What sign did the angel give the shepherds?",
-      "explanation": "This will be the sign to you: you will find a baby wrapped in strips of cloth, lying in a feeding trough.",
+      "explanation": "The angel told them that this is the sign: they will find a baby wrapped in strips of cloth, lying in a feeding trough.",
       "bibleReference": "Luke 2:12",
       "answers": [
         {
-          "text": "A bright star standing still above the town of Bethlehem",
+          "text": "A star shining over the city",
           "isCorrect": false
         },
         {
-          "text": "A baby wrapped in strips of cloth lying in a feeding trough",
+          "text": "A light burning in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "A baby lying in a feeding trough",
           "isCorrect": true
         },
         {
-          "text": "A great fire burning on the hillside above the flocks",
-          "isCorrect": false
-        },
-        {
-          "text": "A voice speaking from heaven that called each shepherd by name",
+          "text": "A voice calling from the sky",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did the multitude of heavenly host say?",
-      "explanation": "They praised God and said, Glory to God in the highest, and on earth peace, goodwill toward men.",
+      "text": "What did the multitude of the heavenly army say as they praised God?",
+      "explanation": "They said, \"Glory to God in the highest, on earth peace, good will toward men.\"",
       "bibleReference": "Luke 2:13-14",
       "answers": [
         {
-          "text": "Glory to God in the highest",
+          "text": "\"Glory to God in the highest, on earth peace, good will toward men\"",
           "isCorrect": true
         },
         {
-          "text": "Hosanna to the king",
+          "text": "\"Blessed is he who comes in the name of the Lord\"",
           "isCorrect": false
         },
         {
-          "text": "Holy, holy, holy",
+          "text": "\"Holy, holy, holy is the Lord of the whole earth\"",
           "isCorrect": false
         },
         {
-          "text": "Blessed be the Lord God of Israel",
+          "text": "\"Fear not, for a Savior is born to you today\"",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What name was given to the child on the eighth day?",
-      "explanation": "When eight days were fulfilled for the circumcision of the child, his name was called Jesus, the name given by the angel before he was conceived.",
+      "text": "What name was given to the child when eight days were fulfilled for his circumcision?",
+      "explanation": "When eight days were fulfilled for the circumcision of the child, his name was called Jesus, the name given by the angel before he was conceived in the womb.",
       "bibleReference": "Luke 2:21",
       "answers": [
         {
@@ -156,11 +156,11 @@
           "isCorrect": false
         },
         {
-          "text": "Joshua",
+          "text": "John",
           "isCorrect": false
         },
         {
-          "text": "John",
+          "text": "Joseph",
           "isCorrect": false
         },
         {
@@ -170,70 +170,70 @@
       ]
     },
     {
-      "text": "Who took the child Jesus in his arms in the temple and blessed God?",
-      "explanation": "Simeon, a righteous and devout man, was waiting for the consolation of Israel, and the Holy Spirit was on him.",
-      "bibleReference": "Luke 2:25-28",
+      "text": "What had the Holy Spirit revealed to Simeon?",
+      "explanation": "It had been revealed to him by the Holy Spirit that he should not see death before he had seen the Lord's Christ.",
+      "bibleReference": "Luke 2:26",
       "answers": [
         {
-          "text": "Zechariah",
+          "text": "That he would serve in the temple all his life",
           "isCorrect": false
         },
         {
-          "text": "Eli",
-          "isCorrect": false
-        },
-        {
-          "text": "Simeon",
+          "text": "That he would not see death before he had seen the Lord's Christ",
           "isCorrect": true
         },
         {
-          "text": "Nicodemus",
+          "text": "That a sword would pierce through his own soul",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would speak to all the peoples of Israel",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "How old was Jesus when his parents found him in the temple among the teachers?",
-      "explanation": "When he was twelve years old they went up to Jerusalem for the feast, and after three days they found him in the temple, sitting in the midst of the teachers.",
-      "bibleReference": "Luke 2:42-46",
+      "text": "Who was Anna, who came up at that very hour and gave thanks to the Lord?",
+      "explanation": "There was one Anna, a prophetess, the daughter of Phanuel, of the tribe of Asher, who did not depart from the temple but worshiped with fastings and petitions night and day.",
+      "bibleReference": "Luke 2:36-37",
       "answers": [
         {
-          "text": "Twelve",
+          "text": "A prophetess, the daughter of Phanuel, of the tribe of Asher",
           "isCorrect": true
         },
         {
-          "text": "Eight",
+          "text": "A widow of Bethlehem who kept the inn there",
           "isCorrect": false
         },
         {
-          "text": "Ten",
+          "text": "A servant of Simeon who worked in the temple",
           "isCorrect": false
         },
         {
-          "text": "Thirteen",
+          "text": "A woman of Nazareth who came up with Mary",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did Jesus say when his parents asked why he had stayed behind?",
-      "explanation": "He said to them, Why were you looking for me? Didn't you know that I must be in my Father's house?",
-      "bibleReference": "Luke 2:49",
+      "text": "Where did Joseph and his mother find the boy Jesus after three days?",
+      "explanation": "After three days they found him in the temple, sitting in the middle of the teachers, both listening to them and asking them questions.",
+      "bibleReference": "Luke 2:46",
       "answers": [
         {
-          "text": "He had lost the way",
+          "text": "Among their relatives and acquaintances",
           "isCorrect": false
         },
         {
-          "text": "He had to be in his Father's house",
+          "text": "On the road back to Nazareth",
+          "isCorrect": false
+        },
+        {
+          "text": "In the temple, sitting among the teachers",
           "isCorrect": true
         },
         {
-          "text": "He was waiting for them to return",
-          "isCorrect": false
-        },
-        {
-          "text": "He wanted to see the city",
+          "text": "At the feast with the company",
           "isCorrect": false
         }
       ]

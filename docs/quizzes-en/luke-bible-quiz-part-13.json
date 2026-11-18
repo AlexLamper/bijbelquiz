@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 13",
+  "description": "Ten questions on Luke 13: the barren fig tree, the woman healed on the Sabbath, the mustard seed and the narrow door.",
+  "slug": "luke-bible-quiz-part-13",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What had Pilate done, according to those who spoke to Jesus?",
+      "explanation": "They told him about the Galileans whose blood Pilate had mixed with their sacrifices.",
+      "bibleReference": "Luke 13:1",
+      "answers": [
+        {
+          "text": "He had made the tower in Siloam fall on eighteen men",
+          "isCorrect": false
+        },
+        {
+          "text": "He had mixed the Galileans' blood with their sacrifices",
+          "isCorrect": true
+        },
+        {
+          "text": "He had forbidden sacrifices in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "He had sent Pharisees to warn him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long had the owner come looking for fruit on the fig tree?",
+      "explanation": "He said, \"These three years I have come looking for fruit on this fig tree, and found none.\"",
+      "bibleReference": "Luke 13:6-7",
+      "answers": [
+        {
+          "text": "One year",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Eighteen years",
+          "isCorrect": false
+        },
+        {
+          "text": "Three years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the vine dresser ask to be allowed to do with the fig tree?",
+      "explanation": "The vine dresser asked that the tree be left alone for one more year, while he dug around it and fertilized it.",
+      "bibleReference": "Luke 13:8-9",
+      "answers": [
+        {
+          "text": "Leave it one more year so he could fertilize it",
+          "isCorrect": true
+        },
+        {
+          "text": "Cut it down and plant another in its place",
+          "isCorrect": false
+        },
+        {
+          "text": "Move it out of the vineyard into the garden",
+          "isCorrect": false
+        },
+        {
+          "text": "Water it every day for three years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long had the woman in the synagogue had a spirit of infirmity?",
+      "explanation": "The text says she had a spirit of infirmity eighteen years, was bent over, and could in no way straighten herself up.",
+      "bibleReference": "Luke 13:11",
+      "answers": [
+        {
+          "text": "Twelve years",
+          "isCorrect": false
+        },
+        {
+          "text": "Three years",
+          "isCorrect": false
+        },
+        {
+          "text": "Eighteen years",
+          "isCorrect": true
+        },
+        {
+          "text": "Since her birth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why was the ruler of the synagogue indignant?",
+      "explanation": "He was indignant because Jesus had healed on the Sabbath, and said that there are six days in which men ought to work.",
+      "bibleReference": "Luke 13:14",
+      "answers": [
+        {
+          "text": "Because the woman had not asked permission",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Jesus had healed on the Sabbath",
+          "isCorrect": true
+        },
+        {
+          "text": "Because Jesus taught in parables",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the multitude rejoiced",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he compare God's Kingdom to, that a man put in his own garden?",
+      "explanation": "He said God's Kingdom is like a grain of mustard seed which a man put in his own garden, which grew and became a large tree where the birds of the sky live.",
+      "bibleReference": "Luke 13:18-19",
+      "answers": [
+        {
+          "text": "A fig tree planted in a vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "A narrow door in a house",
+          "isCorrect": false
+        },
+        {
+          "text": "A grain of mustard seed",
+          "isCorrect": true
+        },
+        {
+          "text": "A vineyard with a vine dresser",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In how many measures of flour did the woman hide the yeast?",
+      "explanation": "He said the Kingdom is like yeast, which a woman took and hid in three measures of flour, until it was all leavened.",
+      "bibleReference": "Luke 13:21",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Two",
+          "isCorrect": false
+        },
+        {
+          "text": "Three",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did he tell them to strive to enter in by?",
+      "explanation": "He told them to strive to enter in by the narrow door, for many will seek to enter in and will not be able.",
+      "bibleReference": "Luke 13:24",
+      "answers": [
+        {
+          "text": "The narrow door",
+          "isCorrect": true
+        },
+        {
+          "text": "The gate of the vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "The door of the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "The way to Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did some Pharisees warn him about on that same day?",
+      "explanation": "Some Pharisees came and told him to get out and go away, because Herod wanted to kill him.",
+      "bibleReference": "Luke 13:31",
+      "answers": [
+        {
+          "text": "That the crowd would stone him",
+          "isCorrect": false
+        },
+        {
+          "text": "That the tower in Siloam would fall",
+          "isCorrect": false
+        },
+        {
+          "text": "That Herod wanted to kill him",
+          "isCorrect": true
+        },
+        {
+          "text": "That Pilate had forbidden him to teach",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he compare himself to when he spoke about gathering Jerusalem's children?",
+      "explanation": "He said he had often wanted to gather her children together, like a hen gathers her own brood under her wings, and they refused.",
+      "bibleReference": "Luke 13:34",
+      "answers": [
+        {
+          "text": "A farmer sowing his seed",
+          "isCorrect": false
+        },
+        {
+          "text": "A hen gathering her brood under her wings",
+          "isCorrect": true
+        },
+        {
+          "text": "A shepherd leading his sheep to water",
+          "isCorrect": false
+        },
+        {
+          "text": "A vine dresser pruning a tree",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

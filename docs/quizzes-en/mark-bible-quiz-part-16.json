@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 16",
+  "description": "Ten questions on Mark 16: the women at the open tomb, the young man in the white robe, the risen Lord appearing and the sending out of the disciples.",
+  "slug": "mark-bible-quiz-part-16",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who bought spices to come and anoint him when the Sabbath was past?",
+      "explanation": "When the Sabbath was past, Mary Magdalene, Mary the mother of James, and Salome bought spices so that they might come and anoint him.",
+      "bibleReference": "Mark 16:1",
+      "answers": [
+        {
+          "text": "Mary Magdalene, Martha and Salome",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary the mother of James, Salome and Joanna",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary Magdalene, Mary the mother of James, and Salome",
+          "isCorrect": true
+        },
+        {
+          "text": "Mary Magdalene, Salome and the mother of Joses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the women saying among themselves on the way to the tomb?",
+      "explanation": "They were saying among themselves, \"Who will roll away the stone from the door of the tomb for us?\"",
+      "bibleReference": "Mark 16:3",
+      "answers": [
+        {
+          "text": "Who will roll away the stone for us?",
+          "isCorrect": true
+        },
+        {
+          "text": "Who will give us more spices?",
+          "isCorrect": false
+        },
+        {
+          "text": "Who will open the city gate for us?",
+          "isCorrect": false
+        },
+        {
+          "text": "Who will tell the disciples?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the women see when they looked up at the tomb?",
+      "explanation": "The stone was very big, and when they looked up they saw that it was rolled back.",
+      "bibleReference": "Mark 16:4",
+      "answers": [
+        {
+          "text": "The tomb sealed with wax",
+          "isCorrect": false
+        },
+        {
+          "text": "Soldiers standing guard",
+          "isCorrect": false
+        },
+        {
+          "text": "A light shining inside",
+          "isCorrect": false
+        },
+        {
+          "text": "The stone rolled back",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did the women see when they entered into the tomb?",
+      "explanation": "Entering into the tomb, they saw a young man sitting on the right side, dressed in a white robe, and they were amazed.",
+      "bibleReference": "Mark 16:5",
+      "answers": [
+        {
+          "text": "Two soldiers guarding the door of the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "A young man in a white robe sitting on the right side",
+          "isCorrect": true
+        },
+        {
+          "text": "Peter and John standing inside the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus standing by the door of the tomb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the young man tell the women about Jesus the Nazarene?",
+      "explanation": "He told them not to be amazed, that Jesus the Nazarene who had been crucified has risen and is not there, and he showed them the place where they laid him.",
+      "bibleReference": "Mark 16:6",
+      "answers": [
+        {
+          "text": "That he had been taken away",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was still being prepared for burial",
+          "isCorrect": false
+        },
+        {
+          "text": "That he has risen and is not there",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would come to the tomb at evening",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom were the women told to go and tell?",
+      "explanation": "He told them to go and tell his disciples and Peter that he goes before them into Galilee, where they will see him, as he said to them.",
+      "bibleReference": "Mark 16:7",
+      "answers": [
+        {
+          "text": "His disciples and Peter",
+          "isCorrect": true
+        },
+        {
+          "text": "The chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The young men at the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "No one at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the women do when they went out from the tomb?",
+      "explanation": "They went out and fled from the tomb, and said nothing to anyone, because trembling and astonishment had come on them and they were afraid.",
+      "bibleReference": "Mark 16:8",
+      "answers": [
+        {
+          "text": "They sang praises to God on the way back",
+          "isCorrect": false
+        },
+        {
+          "text": "They went back to the city for more spices",
+          "isCorrect": false
+        },
+        {
+          "text": "They waited at the door for the disciples",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled and said nothing to anyone, for they were afraid",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom did he appear first after he had risen early on the first day of the week?",
+      "explanation": "He appeared first to Mary Magdalene, from whom he had cast out seven demons.",
+      "bibleReference": "Mark 16:9",
+      "answers": [
+        {
+          "text": "To the eleven at the table",
+          "isCorrect": false
+        },
+        {
+          "text": "To Mary Magdalene",
+          "isCorrect": true
+        },
+        {
+          "text": "To two of them walking into the country",
+          "isCorrect": false
+        },
+        {
+          "text": "To Peter alone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he tell the eleven to do?",
+      "explanation": "He said to them, \"Go into all the world, and preach the Good News to the whole creation.\"",
+      "bibleReference": "Mark 16:15",
+      "answers": [
+        {
+          "text": "Stay in Jerusalem and wait for him",
+          "isCorrect": false
+        },
+        {
+          "text": "Return to their fishing in Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "Go into all the world and preach the Good News",
+          "isCorrect": true
+        },
+        {
+          "text": "Say nothing until he returned to them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the Lord after he had spoken to them?",
+      "explanation": "So then the Lord, after he had spoken to them, was received up into heaven, and sat down at the right hand of God.",
+      "bibleReference": "Mark 16:19",
+      "answers": [
+        {
+          "text": "He was received up into heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "He returned to the tomb outside the city",
+          "isCorrect": false
+        },
+        {
+          "text": "He stayed with them in the house",
+          "isCorrect": false
+        },
+        {
+          "text": "He was hidden from their sight at the table",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

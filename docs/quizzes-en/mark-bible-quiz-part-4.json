@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 4",
+  "description": "Ten questions on Mark 4: the parable of the sower and its explanation, the lamp on a stand, the growing seed, the mustard seed and the storm on the sea.",
+  "slug": "mark-bible-quiz-part-4",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did he sit while the whole multitude was on the land?",
+      "explanation": "A great multitude was gathered to him, so that he entered into a boat in the sea and sat down, while all the multitude were on the land by the sea.",
+      "bibleReference": "Mark 4:1",
+      "answers": [
+        {
+          "text": "On the mountainside",
+          "isCorrect": false
+        },
+        {
+          "text": "In a boat on the sea",
+          "isCorrect": true
+        },
+        {
+          "text": "In the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "At the door of a house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the seed that fell by the road?",
+      "explanation": "As the farmer sowed, some seed fell by the road, and the birds came and devoured it.",
+      "bibleReference": "Mark 4:4",
+      "answers": [
+        {
+          "text": "The thorns choked it",
+          "isCorrect": false
+        },
+        {
+          "text": "The sun scorched it",
+          "isCorrect": false
+        },
+        {
+          "text": "It yielded a hundred times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "The birds came and devoured it",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did the seed on the rocky ground wither away?",
+      "explanation": "When the sun had risen it was scorched, and because it had no root it withered away.",
+      "bibleReference": "Mark 4:6",
+      "answers": [
+        {
+          "text": "The birds ate its leaves",
+          "isCorrect": false
+        },
+        {
+          "text": "The ground was full of thorns",
+          "isCorrect": false
+        },
+        {
+          "text": "It had no root",
+          "isCorrect": true
+        },
+        {
+          "text": "The rain never came",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much did the seed that fell into the good ground produce?",
+      "explanation": "It yielded fruit, growing up and increasing: some produced thirty times, some sixty times, and some one hundred times as much.",
+      "bibleReference": "Mark 4:8",
+      "answers": [
+        {
+          "text": "Thirty, sixty or one hundred times as much",
+          "isCorrect": true
+        },
+        {
+          "text": "Two, five or ten times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten, twenty or forty times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "Five, ten or fifteen times as much",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the farmer sow in the explanation of the parable?",
+      "explanation": "He said, \"The farmer sows the word.\"",
+      "bibleReference": "Mark 4:14",
+      "answers": [
+        {
+          "text": "Good ground",
+          "isCorrect": false
+        },
+        {
+          "text": "The word",
+          "isCorrect": true
+        },
+        {
+          "text": "The kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "A grain of mustard",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who takes away the word that was sown by the road?",
+      "explanation": "The ones by the road are those who, when they have heard, immediately have the word taken away from them by Satan.",
+      "bibleReference": "Mark 4:15",
+      "answers": [
+        {
+          "text": "The birds of the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "The cares of this age",
+          "isCorrect": false
+        },
+        {
+          "text": "Satan",
+          "isCorrect": true
+        },
+        {
+          "text": "The scribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did he say a lamp is put?",
+      "explanation": "He asked whether the lamp is brought to be put under a basket or under a bed, and said that it is put on a stand.",
+      "bibleReference": "Mark 4:21",
+      "answers": [
+        {
+          "text": "On a stand",
+          "isCorrect": true
+        },
+        {
+          "text": "Under a basket",
+          "isCorrect": false
+        },
+        {
+          "text": "Under a bed",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside the door",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he compare God's Kingdom to in the parable of the smallest seed?",
+      "explanation": "He said it is like a grain of mustard seed, which is less than all the seeds on the earth, yet grows up and becomes greater than all the herbs.",
+      "bibleReference": "Mark 4:31-32",
+      "answers": [
+        {
+          "text": "A lamp on a stand",
+          "isCorrect": false
+        },
+        {
+          "text": "A measure of grain",
+          "isCorrect": false
+        },
+        {
+          "text": "A fruit tree by the water",
+          "isCorrect": false
+        },
+        {
+          "text": "A grain of mustard seed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was he when the big wind storm arose and the boat was filling?",
+      "explanation": "He himself was in the stern, asleep on the cushion, and they woke him up.",
+      "bibleReference": "Mark 4:38",
+      "answers": [
+        {
+          "text": "At the front of the boat, rowing",
+          "isCorrect": false
+        },
+        {
+          "text": "In the stern, asleep on the cushion",
+          "isCorrect": true
+        },
+        {
+          "text": "On the shore, praying alone",
+          "isCorrect": false
+        },
+        {
+          "text": "In a small boat beside them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he say to the sea when he was woken up?",
+      "explanation": "He rebuked the wind and said to the sea, \"Peace! Be still!\" The wind ceased and there was a great calm.",
+      "bibleReference": "Mark 4:39",
+      "answers": [
+        {
+          "text": "\"Why are you so afraid?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let's go over to the other side.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Peace! Be still!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Have faith in God!\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

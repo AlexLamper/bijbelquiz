@@ -1,0 +1,242 @@
+{
+  "title": "Zechariah Bible Quiz - Chapter 7",
+  "description": "Ten questions on Zechariah 7: the question about fasting, the call to true judgment and kindness, and the people who refused to listen.",
+  "slug": "zechariah-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In which month, named in the first verse, did Yahweh's word come to Zechariah?",
+      "explanation": "The word came in the fourth year of king Darius, on the fourth day of the ninth month, the month of Chislev.",
+      "bibleReference": "Zechariah 7:1",
+      "answers": [
+        {
+          "text": "The month Shebat",
+          "isCorrect": false
+        },
+        {
+          "text": "The month of harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "The month of Chislev",
+          "isCorrect": true
+        },
+        {
+          "text": "The month of the feast",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the people of Bethel send to entreat Yahweh's favor?",
+      "explanation": "The people of Bethel sent Sharezer and Regem Melech, and their men, to entreat Yahweh's favor.",
+      "bibleReference": "Zechariah 7:2",
+      "answers": [
+        {
+          "text": "Sharezer and Regem Melech",
+          "isCorrect": true
+        },
+        {
+          "text": "Heldai and Tobijah",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua and Zerubbabel",
+          "isCorrect": false
+        },
+        {
+          "text": "Berechiah and Iddo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they come to ask the priests and the prophets?",
+      "explanation": "They asked, \"Should I weep in the fifth month, separating myself, as I have done these so many years?\"",
+      "bibleReference": "Zechariah 7:3",
+      "answers": [
+        {
+          "text": "Whether the temple would be finished",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether they should weep in the fifth month",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether they should return to Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether the land would give its fruit",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which months does Yahweh say they had fasted and mourned?",
+      "explanation": "Yahweh asks whether, when they fasted and mourned in the fifth and in the seventh month, they fasted at all to him.",
+      "bibleReference": "Zechariah 7:5",
+      "answers": [
+        {
+          "text": "The first and the second month",
+          "isCorrect": false
+        },
+        {
+          "text": "The third and the ninth month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourth and the tenth month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifth and the seventh month",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For how long does he say they had done this?",
+      "explanation": "He speaks of their fasting and mourning in the fifth and the seventh month for these seventy years.",
+      "bibleReference": "Zechariah 7:5",
+      "answers": [
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy years",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What question does Yahweh ask about their eating and drinking?",
+      "explanation": "He asks, \"When you eat, and when you drink, don't you eat for yourselves, and drink for yourselves?\"",
+      "bibleReference": "Zechariah 7:6",
+      "answers": [
+        {
+          "text": "Whether they eat and drink for themselves",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether they eat the bread of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether they drink the new wine first",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether they share with the priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh of Armies tell them to do toward one another?",
+      "explanation": "Yahweh of Armies says, \"Execute true judgment, and show kindness and compassion every man to his brother.\"",
+      "bibleReference": "Zechariah 7:9",
+      "answers": [
+        {
+          "text": "Keep the fasts faithfully",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring their offerings in silence",
+          "isCorrect": false
+        },
+        {
+          "text": "Execute true judgment and show kindness",
+          "isCorrect": true
+        },
+        {
+          "text": "Build the house before their own houses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom were they told not to oppress?",
+      "explanation": "They were told not to oppress the widow, nor the fatherless, the foreigner, nor the poor, and not to devise evil against a brother in their heart.",
+      "bibleReference": "Zechariah 7:10",
+      "answers": [
+        {
+          "text": "The priest, the prophet and the judge",
+          "isCorrect": false
+        },
+        {
+          "text": "The king, his princes and his servants",
+          "isCorrect": false
+        },
+        {
+          "text": "The merchant, the farmer and the shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "The widow, the fatherless, the foreigner and the poor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did the people respond to these words?",
+      "explanation": "They refused to listen, turned their backs and stopped their ears, and made their hearts as hard as flint.",
+      "bibleReference": "Zechariah 7:11-12",
+      "answers": [
+        {
+          "text": "They wept and fasted for many days",
+          "isCorrect": false
+        },
+        {
+          "text": "They refused to listen and made their hearts hard as flint",
+          "isCorrect": true
+        },
+        {
+          "text": "They sent men to the prophets for an answer",
+          "isCorrect": false
+        },
+        {
+          "text": "They repaired the temple and its courts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh of Armies say he will do with them among the nations?",
+      "explanation": "He says he will scatter them with a whirlwind among all the nations which they have not known, and the land was left desolate after them.",
+      "bibleReference": "Zechariah 7:14",
+      "answers": [
+        {
+          "text": "He will gather them to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "He will hide them in the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "He will scatter them with a whirlwind",
+          "isCorrect": true
+        },
+        {
+          "text": "He will give them a new name",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

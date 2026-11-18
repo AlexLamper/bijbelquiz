@@ -1,240 +1,240 @@
 {
   "title": "John Bible Quiz - Chapter 3",
-  "description": "Ten questions on the conversation with Nicodemus and John the Baptist's testimony in John 3.",
+  "description": "Ten questions on John 3: Nicodemus by night, being born anew, God's love for the world, and John's words about the bridegroom.",
   "slug": "john-bible-quiz-part-3",
   "categorySlug": "new-testament",
   "rewardXp": 100,
-  "difficulty": "medium",
+  "difficulty": "easy",
   "isPremium": false,
   "status": "draft",
   "questions": [
     {
-      "text": "What was Nicodemus?",
-      "explanation": "There was a man of the Pharisees named Nicodemus, a ruler of the Jews.",
-      "bibleReference": "John 3:1",
+      "text": "Who came to Jesus by night?",
+      "explanation": "There was a man of the Pharisees named Nicodemus, a ruler of the Jews, who came to him by night.",
+      "bibleReference": "John 3:1-2",
       "answers": [
         {
-          "text": "A Roman centurion in Capernaum",
+          "text": "Joseph of Arimathaea, a member of the council",
           "isCorrect": false
         },
         {
-          "text": "A Pharisee and a ruler of the Jews",
-          "isCorrect": true
-        },
-        {
-          "text": "A fisherman from the Sea of Galilee",
+          "text": "A priest sent from Jerusalem by the Levites",
           "isCorrect": false
         },
         {
-          "text": "A Samaritan priest from Sychar",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "When did Nicodemus come to Jesus?",
-      "explanation": "This man came to Jesus by night and said that no one could do the signs Jesus did unless God was with him.",
-      "bibleReference": "John 3:2",
-      "answers": [
-        {
-          "text": "At noon",
+          "text": "One of John's disciples from beyond the Jordan",
           "isCorrect": false
         },
         {
-          "text": "At the feast of Passover",
-          "isCorrect": false
-        },
-        {
-          "text": "At sunrise",
-          "isCorrect": false
-        },
-        {
-          "text": "By night",
+          "text": "Nicodemus, a Pharisee and ruler of the Jews",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "What did Jesus say a person must be to see the kingdom of God?",
-      "explanation": "Unless one is born anew, he can't see the kingdom of God.",
+      "text": "What did Jesus say a person must be in order to see God's Kingdom?",
+      "explanation": "Jesus answered that unless one is born anew, he can't see God's Kingdom.",
       "bibleReference": "John 3:3",
       "answers": [
-        {
-          "text": "Born anew",
-          "isCorrect": true
-        },
         {
           "text": "Baptized by John",
           "isCorrect": false
         },
         {
-          "text": "A son of Abraham",
+          "text": "Born anew",
+          "isCorrect": true
+        },
+        {
+          "text": "A teacher of Israel",
           "isCorrect": false
         },
         {
-          "text": "A keeper of the whole law",
+          "text": "Circumcised on the Sabbath",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What question did Nicodemus ask about being born again?",
-      "explanation": "Nicodemus asked how a man can be born when he is old, and whether he can enter a second time into his mother's womb.",
+      "text": "What did Nicodemus ask in reply?",
+      "explanation": "Nicodemus asked how a man can be born when he is old, and whether he can enter a second time into his mother's womb and be born.",
       "bibleReference": "John 3:4",
       "answers": [
         {
-          "text": "Who can forgive sins",
+          "text": "Where he should go to be baptized",
           "isCorrect": false
         },
         {
-          "text": "Where does the Spirit come from",
+          "text": "Which of the prophets had said this",
           "isCorrect": false
         },
         {
-          "text": "How can a man be born when he is old",
+          "text": "How a man can be born when he is old",
           "isCorrect": true
         },
         {
-          "text": "When will the kingdom come",
+          "text": "Whether the Kingdom was already near",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "To what did Jesus compare the Spirit?",
-      "explanation": "The wind blows where it wants to, and you hear its sound, but you don't know where it comes from or where it goes; so is everyone who is born of the Spirit.",
+      "text": "What did Jesus compare everyone who is born of the Spirit to?",
+      "explanation": "He said the wind blows where it wants to, and you hear its sound but don't know where it comes from or where it is going, and so is everyone who is born of the Spirit.",
       "bibleReference": "John 3:8",
       "answers": [
         {
-          "text": "A river",
-          "isCorrect": false
-        },
-        {
-          "text": "The wind",
+          "text": "The wind, which blows where it wants to",
           "isCorrect": true
         },
         {
-          "text": "A fire",
+          "text": "A lamp set on a stand",
           "isCorrect": false
         },
         {
-          "text": "A seed",
+          "text": "A seed sown in good ground",
+          "isCorrect": false
+        },
+        {
+          "text": "A well of water in the desert",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did Moses lift up in the wilderness, as a picture of the Son of Man being lifted up?",
-      "explanation": "As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up.",
+      "text": "What did Jesus say the lifting up of the Son of Man is like?",
+      "explanation": "He said that as Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up.",
       "bibleReference": "John 3:14",
       "answers": [
         {
-          "text": "The serpent",
+          "text": "The manna given in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "The ark carried over the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "The lamp lifted up in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses lifting up the serpent in the wilderness",
           "isCorrect": true
-        },
-        {
-          "text": "The tabernacle",
-          "isCorrect": false
-        },
-        {
-          "text": "The tablets of the law",
-          "isCorrect": false
-        },
-        {
-          "text": "The staff",
-          "isCorrect": false
         }
       ]
     },
     {
-      "text": "Which verse says God so loved the world that he gave his one and only Son?",
-      "explanation": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
+      "text": "What did God give because he so loved the world?",
+      "explanation": "God so loved the world that he gave his one and only Son, so that whoever believes in him should not perish but have eternal life.",
       "bibleReference": "John 3:16",
       "answers": [
         {
-          "text": "John 1:1",
-          "isCorrect": false
-        },
-        {
-          "text": "John 14:6",
-          "isCorrect": false
-        },
-        {
-          "text": "John 10:10",
-          "isCorrect": false
-        },
-        {
-          "text": "John 3:16",
+          "text": "His one and only Son",
           "isCorrect": true
+        },
+        {
+          "text": "The law through Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The Spirit without measure",
+          "isCorrect": false
+        },
+        {
+          "text": "A voice crying in the wilderness",
+          "isCorrect": false
         }
       ]
     },
     {
-      "text": "Why did God send his Son into the world, according to John 3:17?",
-      "explanation": "God didn't send his Son into the world to judge the world, but that the world should be saved through him.",
-      "bibleReference": "John 3:17",
+      "text": "What does the chapter say the judgment is?",
+      "explanation": "This is the judgment: the light has come into the world, and men loved the darkness rather than the light, for their works were evil.",
+      "bibleReference": "John 3:19",
       "answers": [
         {
-          "text": "To judge the world",
+          "text": "That the Son was sent into the world to judge it",
           "isCorrect": false
         },
         {
-          "text": "To restore the temple",
-          "isCorrect": false
-        },
-        {
-          "text": "To save the world through him",
+          "text": "That the light has come into the world and men loved the darkness",
           "isCorrect": true
         },
         {
-          "text": "To teach the law again",
+          "text": "That no one has ever ascended into heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "That the law was given to the world through Moses",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "Where was John the Baptist baptizing in this chapter?",
-      "explanation": "John also was baptizing in Aenon near Salim, because there was much water there.",
+      "text": "Where was John baptizing, and why there?",
+      "explanation": "John was baptizing in Enon near Salim, because there was much water there.",
       "bibleReference": "John 3:23",
       "answers": [
         {
-          "text": "Aenon near Salim",
+          "text": "In Cana of Galilee, because a wedding was held there",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem, because the Passover was near",
+          "isCorrect": false
+        },
+        {
+          "text": "In Enon near Salim, because there was much water there",
           "isCorrect": true
         },
         {
-          "text": "At the Jordan near Jericho",
-          "isCorrect": false
-        },
-        {
-          "text": "At the Sea of Galilee",
-          "isCorrect": false
-        },
-        {
-          "text": "At Bethany near Jerusalem",
+          "text": "In Judea, because Jesus was baptizing there",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did John the Baptist say about Jesus and himself?",
-      "explanation": "He must increase, but I must decrease.",
-      "bibleReference": "John 3:30",
+      "text": "In John's answer, who rejoices greatly because of the bridegroom's voice?",
+      "explanation": "He said that the one who has the bride is the bridegroom, but the friend of the bridegroom, who stands and hears him, rejoices greatly because of the bridegroom's voice.",
+      "bibleReference": "John 3:29",
       "answers": [
         {
-          "text": "I will build the temple again in three days",
-          "isCorrect": false
-        },
-        {
-          "text": "He must increase, but I must decrease",
+          "text": "The friend of the bridegroom, who stands and hears him",
           "isCorrect": true
         },
         {
-          "text": "I am the Messiah you are waiting for",
+          "text": "The bride, who waits for the bridegroom",
           "isCorrect": false
         },
         {
-          "text": "Follow me out into the wilderness",
+          "text": "The ruler of the feast, who tastes the wine",
           "isCorrect": false
+        },
+        {
+          "text": "The servants who pour out the wine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did John describe what must happen to the other and to himself?",
+      "explanation": "John said, \"He must increase, but I must decrease.\"",
+      "bibleReference": "John 3:30",
+      "answers": [
+        {
+          "text": "\"We must both baptize together\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He must go away, and I must stay\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I must increase, and he must wait\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He must increase, but I must decrease\"",
+          "isCorrect": true
         }
       ]
     }

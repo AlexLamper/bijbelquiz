@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 11",
+  "description": "Ten questions on Matthew 11: John's question from prison, what Jesus said about John, the woes on the cities and the invitation to find rest.",
+  "slug": "matthew-bible-quiz-part-11",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did John's disciples ask Jesus when John heard in prison about his works?",
+      "explanation": "They asked whether he was the one who comes, or whether they should look for another.",
+      "bibleReference": "Matthew 11:2-3",
+      "answers": [
+        {
+          "text": "Whether he would free John from prison",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he was the one who comes",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether he was Elijah the prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "When the Kingdom of Heaven would come",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say happens to the poor?",
+      "explanation": "Among the things they hear and see, Jesus named that the poor have good news preached to them.",
+      "bibleReference": "Matthew 11:5",
+      "answers": [
+        {
+          "text": "Good news is preached to them",
+          "isCorrect": true
+        },
+        {
+          "text": "They are given bread",
+          "isCorrect": false
+        },
+        {
+          "text": "They are made rulers",
+          "isCorrect": false
+        },
+        {
+          "text": "They are called prophets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Jesus say those who wear soft clothing are?",
+      "explanation": "He said that those who wear soft clothing are in kings' houses.",
+      "bibleReference": "Matthew 11:8",
+      "answers": [
+        {
+          "text": "In the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "In the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "In the marketplaces",
+          "isCorrect": false
+        },
+        {
+          "text": "In kings' houses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about John compared with those born of women?",
+      "explanation": "He said that among those born of women no one greater than John the Baptizer has arisen.",
+      "bibleReference": "Matthew 11:11",
+      "answers": [
+        {
+          "text": "He was the least of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "He was equal to Elijah's servant",
+          "isCorrect": false
+        },
+        {
+          "text": "No one greater than John had arisen",
+          "isCorrect": true
+        },
+        {
+          "text": "He was greater than the Kingdom of Heaven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what did Jesus compare this generation?",
+      "explanation": "He compared this generation to children sitting in the marketplaces who call to their companions.",
+      "bibleReference": "Matthew 11:16",
+      "answers": [
+        {
+          "text": "Sheep without a shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "Children sitting in the marketplaces",
+          "isCorrect": true
+        },
+        {
+          "text": "A reed shaken by the wind",
+          "isCorrect": false
+        },
+        {
+          "text": "Servants waiting for their lord",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did people say about John, who came neither eating nor drinking?",
+      "explanation": "Because John came neither eating nor drinking, they said: He has a demon.",
+      "bibleReference": "Matthew 11:18",
+      "answers": [
+        {
+          "text": "He is a glutton and a drunkard",
+          "isCorrect": false
+        },
+        {
+          "text": "He is a servant of the king",
+          "isCorrect": false
+        },
+        {
+          "text": "He is a reed in the wind",
+          "isCorrect": false
+        },
+        {
+          "text": "He has a demon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "On which two cities did Jesus pronounce woe, saying Tyre and Sidon would have repented?",
+      "explanation": "He said: Woe to you, Chorazin! Woe to you, Bethsaida! For Tyre and Sidon would have repented had such works been done in them.",
+      "bibleReference": "Matthew 11:21",
+      "answers": [
+        {
+          "text": "Chorazin and Bethsaida",
+          "isCorrect": true
+        },
+        {
+          "text": "Tyre and Sidon",
+          "isCorrect": false
+        },
+        {
+          "text": "Capernaum and Nazareth",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem and Jericho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say would happen to Capernaum, which was exalted to heaven?",
+      "explanation": "He said that Capernaum, exalted to heaven, would go down to Hades.",
+      "bibleReference": "Matthew 11:23",
+      "answers": [
+        {
+          "text": "It would be left in ashes",
+          "isCorrect": false
+        },
+        {
+          "text": "It would be called great",
+          "isCorrect": false
+        },
+        {
+          "text": "It would go down to Hades",
+          "isCorrect": true
+        },
+        {
+          "text": "It would never be shaken",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Jesus thank the Father for revealing these things?",
+      "explanation": "He thanked the Father for hiding these things from the wise and understanding and revealing them to infants.",
+      "bibleReference": "Matthew 11:25",
+      "answers": [
+        {
+          "text": "To infants",
+          "isCorrect": true
+        },
+        {
+          "text": "To the scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "To the wise and understanding",
+          "isCorrect": false
+        },
+        {
+          "text": "To the prophets of old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about his yoke and his burden?",
+      "explanation": "He said his yoke is easy and his burden is light.",
+      "bibleReference": "Matthew 11:30",
+      "answers": [
+        {
+          "text": "His yoke is heavy but his reward is great",
+          "isCorrect": false
+        },
+        {
+          "text": "His burden must be carried alone",
+          "isCorrect": false
+        },
+        {
+          "text": "His yoke is for the wise only",
+          "isCorrect": false
+        },
+        {
+          "text": "His yoke is easy and his burden is light",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 14",
+  "description": "Ten questions on Luke 14: the Sabbath healing, the lowest place at the feast, the great supper and counting the cost.",
+  "slug": "luke-bible-quiz-part-14",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What illness did the man in front of Jesus in the Pharisee's house have?",
+      "explanation": "The text says a certain man who had dropsy was in front of him.",
+      "bibleReference": "Luke 14:2",
+      "answers": [
+        {
+          "text": "Leprosy",
+          "isCorrect": false
+        },
+        {
+          "text": "A flow of blood",
+          "isCorrect": false
+        },
+        {
+          "text": "Dropsy",
+          "isCorrect": true
+        },
+        {
+          "text": "A spirit of infirmity",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say about everyone who exalts himself?",
+      "explanation": "He says that everyone who exalts himself will be humbled, and whoever humbles himself will be exalted.",
+      "bibleReference": "Luke 14:11",
+      "answers": [
+        {
+          "text": "He will be humbled",
+          "isCorrect": true
+        },
+        {
+          "text": "He will be honored at the table",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be invited again",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be given the best seat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the host say to the guest who sat in the lowest place?",
+      "explanation": "He says that the host may tell that guest, \"Friend, move up higher,\" and then he will be honored before all who sit at the table.",
+      "bibleReference": "Luke 14:10",
+      "answers": [
+        {
+          "text": "\"Make room for this person\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Give an accounting of your management\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Come, for everything is ready now\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Friend, move up higher\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom does he say to invite when you make a feast?",
+      "explanation": "He says that when you make a feast you should ask the poor, the maimed, the lame and the blind.",
+      "bibleReference": "Luke 14:13",
+      "answers": [
+        {
+          "text": "Your friends, brothers and kinsmen",
+          "isCorrect": false
+        },
+        {
+          "text": "The poor, the maimed, the lame and the blind",
+          "isCorrect": true
+        },
+        {
+          "text": "Rich neighbors who can repay you",
+          "isCorrect": false
+        },
+        {
+          "text": "The rulers of the Pharisees",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the parable, what did one of the invited men say he had bought and had to go try out?",
+      "explanation": "One of the invited men said he had bought five yoke of oxen and had to go try them out.",
+      "bibleReference": "Luke 14:19",
+      "answers": [
+        {
+          "text": "A herd of pigs in the country",
+          "isCorrect": false
+        },
+        {
+          "text": "A fattened calf for a feast",
+          "isCorrect": false
+        },
+        {
+          "text": "Five yoke of oxen",
+          "isCorrect": true
+        },
+        {
+          "text": "Two donkeys and a cart",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After the servant reported that there was still room, where did the lord send him?",
+      "explanation": "When the servant said there was still room, the lord sent him out into the highways and hedges to compel people to come in, so that his house might be filled.",
+      "bibleReference": "Luke 14:22-23",
+      "answers": [
+        {
+          "text": "Into the streets and lanes of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "To the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "To the homes of the rich neighbors",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the highways and hedges",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does he say a person should do first who wants to build a tower?",
+      "explanation": "He says that whoever wants to build a tower first sits down and counts the cost, to see if he has enough to complete it.",
+      "bibleReference": "Luke 14:28",
+      "answers": [
+        {
+          "text": "Sit down and count the cost",
+          "isCorrect": true
+        },
+        {
+          "text": "Lay the foundation quickly",
+          "isCorrect": false
+        },
+        {
+          "text": "Hire ten thousand laborers",
+          "isCorrect": false
+        },
+        {
+          "text": "Ask his friends for help",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With how many does the king in the example consider meeting the king who comes against him with twenty thousand?",
+      "explanation": "He asks what king, going to war, will not first consider whether he is able with ten thousand to meet the one who comes against him with twenty thousand.",
+      "bibleReference": "Luke 14:31",
+      "answers": [
+        {
+          "text": "Five thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he say the king does while the other is still a great way off?",
+      "explanation": "He says the king sends an envoy and asks for conditions of peace.",
+      "bibleReference": "Luke 14:32",
+      "answers": [
+        {
+          "text": "He builds a tower to defend his border",
+          "isCorrect": false
+        },
+        {
+          "text": "He counts his ten thousand soldiers again",
+          "isCorrect": false
+        },
+        {
+          "text": "He calls the multitude together for war",
+          "isCorrect": false
+        },
+        {
+          "text": "He sends an envoy and asks for conditions of peace",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does he say about salt that has become flat and tasteless?",
+      "explanation": "He says such salt is fit neither for the soil nor for the manure pile, and it is thrown out.",
+      "bibleReference": "Luke 14:34-35",
+      "answers": [
+        {
+          "text": "It is fit for nothing and is thrown out",
+          "isCorrect": true
+        },
+        {
+          "text": "It can be mixed with fresh salt",
+          "isCorrect": false
+        },
+        {
+          "text": "It is still good for the soil",
+          "isCorrect": false
+        },
+        {
+          "text": "It is used to season the manure pile",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

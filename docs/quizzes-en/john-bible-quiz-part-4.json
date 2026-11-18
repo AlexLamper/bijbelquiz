@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 4",
+  "description": "Ten questions on John 4: the woman at Jacob's well, living water, worship in spirit and truth, and the nobleman's son.",
+  "slug": "john-bible-quiz-part-4",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "By which well did Jesus sit down, tired from his journey?",
+      "explanation": "Jacob's well was there, near the city of Samaria called Sychar, and Jesus, being tired from his journey, sat down by it about the sixth hour.",
+      "bibleReference": "John 4:5-6",
+      "answers": [
+        {
+          "text": "Jacob's well",
+          "isCorrect": true
+        },
+        {
+          "text": "The pool called Bethesda",
+          "isCorrect": false
+        },
+        {
+          "text": "A well at Cana of Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "The spring at Enon near Salim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus ask the woman of Samaria for?",
+      "explanation": "A woman of Samaria came to draw water, and Jesus said to her, \"Give me a drink.\"",
+      "bibleReference": "John 4:7",
+      "answers": [
+        {
+          "text": "Her water pot",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread from the city",
+          "isCorrect": false
+        },
+        {
+          "text": "A drink",
+          "isCorrect": true
+        },
+        {
+          "text": "A place to rest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where had his disciples gone?",
+      "explanation": "His disciples had gone away into the city to buy food.",
+      "bibleReference": "John 4:8",
+      "answers": [
+        {
+          "text": "Back to Judea",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the city to buy food",
+          "isCorrect": true
+        },
+        {
+          "text": "To the mountain to pray",
+          "isCorrect": false
+        },
+        {
+          "text": "Across the sea by boat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say he would have given her if she had asked?",
+      "explanation": "He said that if she knew the gift of God and who was asking her for a drink, she would have asked him, and he would have given her living water.",
+      "bibleReference": "John 4:10",
+      "answers": [
+        {
+          "text": "A prophet's blessing",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread out of heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "A place among the true worshipers",
+          "isCorrect": false
+        },
+        {
+          "text": "Living water",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the water he gives?",
+      "explanation": "He said whoever drinks of the water he gives will never thirst again, and that water will become in him a well of water springing up to eternal life.",
+      "bibleReference": "John 4:14",
+      "answers": [
+        {
+          "text": "Whoever drinks it will never thirst again",
+          "isCorrect": true
+        },
+        {
+          "text": "It must be drawn again each morning",
+          "isCorrect": false
+        },
+        {
+          "text": "It can only be drawn from Jacob's well",
+          "isCorrect": false
+        },
+        {
+          "text": "It is for the Jews and not the Samaritans",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the woman about her husbands?",
+      "explanation": "He told her she had had five husbands, and the one she now had was not her husband, and that she had spoken truly in saying she had no husband.",
+      "bibleReference": "John 4:17-18",
+      "answers": [
+        {
+          "text": "Her husband had died in the city of Sychar long ago",
+          "isCorrect": false
+        },
+        {
+          "text": "She had never been married to any man in Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Her husband was waiting for her back in the city",
+          "isCorrect": false
+        },
+        {
+          "text": "She had had five husbands, and the one she now had was not her husband",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about God and the way he must be worshiped?",
+      "explanation": "He said, \"God is spirit, and those who worship him must worship in spirit and truth.\"",
+      "bibleReference": "John 4:24",
+      "answers": [
+        {
+          "text": "God must be worshiped on this mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "God must be worshiped only in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "God is spirit, and worshipers must worship in spirit and truth",
+          "isCorrect": true
+        },
+        {
+          "text": "God must be worshiped with water and fire",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the woman say to the people in the city?",
+      "explanation": "She left her water pot, went into the city and said, \"Come, see a man who told me everything that I did. Can this be the Christ?\"",
+      "bibleReference": "John 4:28-29",
+      "answers": [
+        {
+          "text": "\"A prophet is sitting at Jacob's well outside the city\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Come, see a man who told me everything that I did. Can this be the Christ?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The Messiah has gone up to Jerusalem to the feast\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"A Jew at the well has asked me for a drink of water\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say his food was?",
+      "explanation": "He said, \"My food is to do the will of him who sent me and to accomplish his work.\"",
+      "bibleReference": "John 4:34",
+      "answers": [
+        {
+          "text": "The bread his disciples had bought in the city",
+          "isCorrect": false
+        },
+        {
+          "text": "The fruit of the fields white for harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "The wages that the one who reaps receives",
+          "isCorrect": false
+        },
+        {
+          "text": "To do the will of him who sent him and to accomplish his work",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the nobleman who begged him to come and heal his son?",
+      "explanation": "Jesus said to him, \"Go your way. Your son lives,\" and the man believed the word that Jesus spoke to him and went his way.",
+      "bibleReference": "John 4:49-50",
+      "answers": [
+        {
+          "text": "\"Go your way. Your son lives\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Bring the boy here to me\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Your faith has made him well\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will come down with you to Capernaum\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 8",
+  "description": "Ten questions on Matthew 8: the leper, the centurion's servant, the storm on the sea and the demons sent into the pigs.",
+  "slug": "matthew-bible-quiz-part-8",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What happened immediately after Jesus touched the leper?",
+      "explanation": "Jesus stretched out his hand, touched him and said he wanted to, and immediately the man's leprosy was cleansed.",
+      "bibleReference": "Matthew 8:3",
+      "answers": [
+        {
+          "text": "The multitudes went away",
+          "isCorrect": false
+        },
+        {
+          "text": "His leprosy was cleansed",
+          "isCorrect": true
+        },
+        {
+          "text": "He fell asleep at once",
+          "isCorrect": false
+        },
+        {
+          "text": "The priest came to him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the cleansed man to do?",
+      "explanation": "Jesus told him to tell nobody, but to go, show himself to the priest, and offer the gift that Moses commanded.",
+      "bibleReference": "Matthew 8:4",
+      "answers": [
+        {
+          "text": "Show himself to the priest and offer the gift",
+          "isCorrect": true
+        },
+        {
+          "text": "Follow him to the other side of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Tell everyone in the city what happened",
+          "isCorrect": false
+        },
+        {
+          "text": "Stay in the house for seven days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came to Jesus in Capernaum about a paralyzed servant?",
+      "explanation": "When Jesus came into Capernaum, a centurion came to him about his servant, who lay in the house paralyzed.",
+      "bibleReference": "Matthew 8:5-6",
+      "answers": [
+        {
+          "text": "A scribe",
+          "isCorrect": false
+        },
+        {
+          "text": "A ruler",
+          "isCorrect": false
+        },
+        {
+          "text": "A centurion",
+          "isCorrect": true
+        },
+        {
+          "text": "A leper",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the centurion say he was not worthy of?",
+      "explanation": "The centurion said he was not worthy for Jesus to come under his roof, and asked him to just say the word.",
+      "bibleReference": "Matthew 8:8",
+      "answers": [
+        {
+          "text": "To be called a son of Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "To offer a gift at the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "To sit at the table with Jesus",
+          "isCorrect": false
+        },
+        {
+          "text": "For Jesus to come under his roof",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the centurion's faith?",
+      "explanation": "Jesus marveled and said that he had not found so great a faith, not even in Israel.",
+      "bibleReference": "Matthew 8:10",
+      "answers": [
+        {
+          "text": "It was like the faith of Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "He had not found such faith, even in Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "It was small, like a grain of seed",
+          "isCorrect": false
+        },
+        {
+          "text": "It was the faith of the children of the Kingdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was lying sick with a fever in Peter's house?",
+      "explanation": "When Jesus came into Peter's house, he saw Peter's wife's mother lying sick with a fever, and he touched her hand.",
+      "bibleReference": "Matthew 8:14-15",
+      "answers": [
+        {
+          "text": "Peter's wife's mother",
+          "isCorrect": true
+        },
+        {
+          "text": "Peter's daughter",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant of the centurion",
+          "isCorrect": false
+        },
+        {
+          "text": "The scribe's mother",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer the scribe who said he would follow him wherever he went?",
+      "explanation": "Jesus said that foxes have holes and birds have nests, but the Son of Man has nowhere to lay his head.",
+      "bibleReference": "Matthew 8:19-20",
+      "answers": [
+        {
+          "text": "Let him first go and bury his father",
+          "isCorrect": false
+        },
+        {
+          "text": "He should stay in Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "He has nowhere to lay his head",
+          "isCorrect": true
+        },
+        {
+          "text": "He must sell his nets first",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do after the disciples woke him in the storm?",
+      "explanation": "He asked why they were fearful, then got up and rebuked the wind and the sea, and there was a great calm.",
+      "bibleReference": "Matthew 8:26",
+      "answers": [
+        {
+          "text": "He walked out on the water",
+          "isCorrect": false
+        },
+        {
+          "text": "He told them to row harder",
+          "isCorrect": false
+        },
+        {
+          "text": "He went back to sleep",
+          "isCorrect": false
+        },
+        {
+          "text": "He rebuked the wind and the sea",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who met Jesus in the country of the Gergesenes, coming out of the tombs?",
+      "explanation": "Two people possessed by demons met him there, coming out of the tombs, exceedingly fierce.",
+      "bibleReference": "Matthew 8:28",
+      "answers": [
+        {
+          "text": "Two blind men",
+          "isCorrect": false
+        },
+        {
+          "text": "Two people possessed by demons",
+          "isCorrect": true
+        },
+        {
+          "text": "A scribe and a centurion",
+          "isCorrect": false
+        },
+        {
+          "text": "The whole city with torches",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the herd of pigs?",
+      "explanation": "The demons went into the herd of pigs, and the whole herd rushed down the cliff into the sea and died in the water.",
+      "bibleReference": "Matthew 8:32",
+      "answers": [
+        {
+          "text": "They rushed down the cliff and died in the sea",
+          "isCorrect": true
+        },
+        {
+          "text": "They were driven away into the tombs",
+          "isCorrect": false
+        },
+        {
+          "text": "They were kept by those who fed them",
+          "isCorrect": false
+        },
+        {
+          "text": "They followed Jesus to the other side",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

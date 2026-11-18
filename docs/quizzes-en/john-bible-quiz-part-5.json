@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 5",
+  "description": "Ten questions on John 5: the healing at the pool, the Sabbath dispute, the Son's authority, and the witnesses Jesus names.",
+  "slug": "john-bible-quiz-part-5",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What was the pool by the sheep gate in Jerusalem called in Hebrew?",
+      "explanation": "In Jerusalem by the sheep gate there is a pool, which is called in Hebrew \"Bethesda\", having five porches.",
+      "bibleReference": "John 5:2",
+      "answers": [
+        {
+          "text": "Sychar",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethesda",
+          "isCorrect": true
+        },
+        {
+          "text": "Salim",
+          "isCorrect": false
+        },
+        {
+          "text": "Tiberias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long had the man at the pool been sick?",
+      "explanation": "A certain man was there who had been sick for thirty-eight years.",
+      "bibleReference": "John 5:5",
+      "answers": [
+        {
+          "text": "Twelve years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty-six years",
+          "isCorrect": false
+        },
+        {
+          "text": "Eighteen years",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty-eight years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the sick man say kept him from being made well?",
+      "explanation": "He said he had no one to put him into the pool when the water was stirred up, and while he was coming, another stepped down before him.",
+      "bibleReference": "John 5:7",
+      "answers": [
+        {
+          "text": "He had no one to put him into the pool, and another always stepped down first",
+          "isCorrect": true
+        },
+        {
+          "text": "The porches by the pool were always too crowded to enter",
+          "isCorrect": false
+        },
+        {
+          "text": "He had no money to pay anyone to carry him to the water",
+          "isCorrect": false
+        },
+        {
+          "text": "The water in the pool was only stirred up on the Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the man to do?",
+      "explanation": "Jesus said to him, \"Arise, take up your mat, and walk,\" and immediately the man was made well and walked.",
+      "bibleReference": "John 5:8-9",
+      "answers": [
+        {
+          "text": "\"Wash in the pool and be clean\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go, and sin no more\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Arise, take up your mat, and walk\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Wait until the water is stirred up\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the Jews object to what the healed man was doing?",
+      "explanation": "They told him it was the Sabbath, and that it was not lawful for him to carry the mat.",
+      "bibleReference": "John 5:10",
+      "answers": [
+        {
+          "text": "He had not thanked God for his healing",
+          "isCorrect": false
+        },
+        {
+          "text": "It was the Sabbath, and carrying the mat was not lawful",
+          "isCorrect": true
+        },
+        {
+          "text": "He had entered the temple while unclean",
+          "isCorrect": false
+        },
+        {
+          "text": "He had not told them who healed him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus answer those who persecuted him for doing these things on the Sabbath?",
+      "explanation": "Jesus answered them, \"My Father is still working, so I am working, too.\"",
+      "bibleReference": "John 5:16-17",
+      "answers": [
+        {
+          "text": "\"The Sabbath was made for man, not man for it\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Moses gave you the law, and I keep it\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"My Father is still working, so I am working, too\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"I did this work in secret, not openly\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the Father and judgment?",
+      "explanation": "He said the Father judges no one, but has given all judgment to the Son, so that all may honor the Son even as they honor the Father.",
+      "bibleReference": "John 5:22-23",
+      "answers": [
+        {
+          "text": "The Father alone judges, and the Son does not",
+          "isCorrect": false
+        },
+        {
+          "text": "Judgment belongs to Moses and the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "No one will be judged at all",
+          "isCorrect": false
+        },
+        {
+          "text": "The Father judges no one, but has given all judgment to the Son",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say will happen to all who are in the tombs?",
+      "explanation": "He said the hour comes in which all who are in the tombs will hear his voice and will come out: those who have done good to the resurrection of life, and those who have done evil to the resurrection of judgment.",
+      "bibleReference": "John 5:28-29",
+      "answers": [
+        {
+          "text": "They will hear his voice and come out",
+          "isCorrect": true
+        },
+        {
+          "text": "They will stay until the last prophet comes",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be raised only if they believed Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "They will rise and remain silent",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus describe John to them?",
+      "explanation": "He said, \"He was the burning and shining lamp, and you were willing to rejoice for a while in his light.\"",
+      "bibleReference": "John 5:33-35",
+      "answers": [
+        {
+          "text": "As the one who gives life to the dead",
+          "isCorrect": false
+        },
+        {
+          "text": "As a witness who is not valid",
+          "isCorrect": false
+        },
+        {
+          "text": "As the burning and shining lamp",
+          "isCorrect": true
+        },
+        {
+          "text": "As the teacher of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who did Jesus say accuses them, the one on whom they had set their hope?",
+      "explanation": "He said that there is one who accuses them, even Moses, on whom they had set their hope, and that if they believed Moses they would believe him, for Moses wrote about him.",
+      "bibleReference": "John 5:45-46",
+      "answers": [
+        {
+          "text": "John",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses",
+          "isCorrect": true
+        },
+        {
+          "text": "The Father who sent him",
+          "isCorrect": false
+        },
+        {
+          "text": "The Scriptures they search",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 9",
+  "description": "Ten questions on Matthew 9: the paralyzed man forgiven, the calling of Matthew, the ruler's daughter and the plentiful harvest.",
+  "slug": "matthew-bible-quiz-part-9",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Jesus say to the paralyzed man when he saw their faith?",
+      "explanation": "Jesus said to the paralytic: Son, cheer up! Your sins are forgiven you.",
+      "bibleReference": "Matthew 9:2",
+      "answers": [
+        {
+          "text": "You will see greater things",
+          "isCorrect": false
+        },
+        {
+          "text": "Your servant will be healed",
+          "isCorrect": false
+        },
+        {
+          "text": "Go your way in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "Your sins are forgiven you",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did some of the scribes say to themselves about him?",
+      "explanation": "Some of the scribes said to themselves: This man blasphemes.",
+      "bibleReference": "Matthew 9:3",
+      "answers": [
+        {
+          "text": "This man is a teacher of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "He is John the Baptizer",
+          "isCorrect": false
+        },
+        {
+          "text": "This man blasphemes",
+          "isCorrect": true
+        },
+        {
+          "text": "This man keeps the Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the paralyzed man do after Jesus told him to get up?",
+      "explanation": "Jesus told him to get up, take up his mat and go to his house, and he arose and departed to his house.",
+      "bibleReference": "Matthew 9:6-7",
+      "answers": [
+        {
+          "text": "He stayed lying on his bed",
+          "isCorrect": false
+        },
+        {
+          "text": "He arose and went to his house",
+          "isCorrect": true
+        },
+        {
+          "text": "He followed Jesus to the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "He went into the synagogue",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the man called whom Jesus called at the tax collection office?",
+      "explanation": "Jesus saw a man called Matthew sitting at the tax collection office and said to him: Follow me.",
+      "bibleReference": "Matthew 9:9",
+      "answers": [
+        {
+          "text": "Matthew",
+          "isCorrect": true
+        },
+        {
+          "text": "Simon",
+          "isCorrect": false
+        },
+        {
+          "text": "Philip",
+          "isCorrect": false
+        },
+        {
+          "text": "James",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus say he came to call?",
+      "explanation": "Jesus said he came not to call the righteous, but sinners to repentance.",
+      "bibleReference": "Matthew 9:13",
+      "answers": [
+        {
+          "text": "The righteous of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The scribes and Pharisees",
+          "isCorrect": false
+        },
+        {
+          "text": "Sinners to repentance",
+          "isCorrect": true
+        },
+        {
+          "text": "The healthy and the strong",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did Jesus say the friends of the bridegroom would fast?",
+      "explanation": "He said the days will come when the bridegroom is taken away from them, and then they will fast.",
+      "bibleReference": "Matthew 9:15",
+      "answers": [
+        {
+          "text": "Every Sabbath in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "When the Pharisees fast with them",
+          "isCorrect": false
+        },
+        {
+          "text": "When new wine is put in old skins",
+          "isCorrect": false
+        },
+        {
+          "text": "When the bridegroom is taken away",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where does Jesus say new wine is put?",
+      "explanation": "People do not put new wine into old wine skins, but into fresh wine skins, and both are preserved.",
+      "bibleReference": "Matthew 9:17",
+      "answers": [
+        {
+          "text": "Into old wine skins",
+          "isCorrect": false
+        },
+        {
+          "text": "Into fresh wine skins",
+          "isCorrect": true
+        },
+        {
+          "text": "Onto an old garment",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the barns of the harvest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long had the woman who touched the fringe of his garment had a discharge of blood?",
+      "explanation": "A woman who had a discharge of blood for twelve years came behind him and touched the fringe of his garment.",
+      "bibleReference": "Matthew 9:20",
+      "answers": [
+        {
+          "text": "Twelve years",
+          "isCorrect": true
+        },
+        {
+          "text": "Three years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the girl in the ruler's house?",
+      "explanation": "He told them to make room, because the girl was not dead, but sleeping, and they ridiculed him.",
+      "bibleReference": "Matthew 9:24",
+      "answers": [
+        {
+          "text": "She will rise at the last day",
+          "isCorrect": false
+        },
+        {
+          "text": "Her faith has made her well",
+          "isCorrect": false
+        },
+        {
+          "text": "She is not dead, but sleeping",
+          "isCorrect": true
+        },
+        {
+          "text": "She must be carried outside",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the harvest and the laborers?",
+      "explanation": "He said the harvest is plentiful, but the laborers are few, and told them to pray that laborers would be sent out.",
+      "bibleReference": "Matthew 9:37",
+      "answers": [
+        {
+          "text": "The harvest belongs to the Lord of hosts",
+          "isCorrect": false
+        },
+        {
+          "text": "The laborers are many, but the harvest is small",
+          "isCorrect": false
+        },
+        {
+          "text": "The harvest will come at the end of the age",
+          "isCorrect": false
+        },
+        {
+          "text": "The harvest is plentiful, but the laborers are few",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

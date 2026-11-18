@@ -106,10 +106,6 @@
       "bibleReference": "Ezekiel 27:12",
       "answers": [
         {
-          "text": "With silver, iron, tin and lead",
-          "isCorrect": true
-        },
-        {
           "text": "With gold, bronze, brass and salt",
           "isCorrect": false
         },
@@ -120,6 +116,10 @@
         {
           "text": "With iron, copper, amber and pearls",
           "isCorrect": false
+        },
+        {
+          "text": "With silver, iron, tin and lead",
+          "isCorrect": true
         }
       ]
     },

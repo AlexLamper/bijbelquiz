@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 26",
+  "description": "Ten questions on Matthew 26: the plot against Jesus, the ointment at Bethany, the Passover meal, Gethsemane, and Peter's denials.",
+  "slug": "matthew-bible-quiz-part-26",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Jesus say was coming after two days?",
+      "explanation": "He told his disciples that after two days the Passover was coming, and that the Son of Man would be delivered up to be crucified.",
+      "bibleReference": "Matthew 26:2",
+      "answers": [
+        {
+          "text": "The Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of Atonement",
+          "isCorrect": false
+        },
+        {
+          "text": "His journey into Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "The Passover",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In whose court did the chief priests, scribes, and elders gather?",
+      "explanation": "They gathered together in the court of the high priest, who was called Caiaphas, and took counsel to take Jesus by deceit and kill him.",
+      "bibleReference": "Matthew 26:3-4",
+      "answers": [
+        {
+          "text": "Simon the leper",
+          "isCorrect": false
+        },
+        {
+          "text": "Caiaphas the high priest",
+          "isCorrect": true
+        },
+        {
+          "text": "Pontius Pilate the governor",
+          "isCorrect": false
+        },
+        {
+          "text": "Judas Iscariot",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the woman in the house of Simon the leper pour on his head?",
+      "explanation": "A woman came to him with an alabaster jar of very expensive ointment and poured it on his head as he sat at the table.",
+      "bibleReference": "Matthew 26:6-7",
+      "answers": [
+        {
+          "text": "Very expensive ointment",
+          "isCorrect": true
+        },
+        {
+          "text": "Water from a stone jar",
+          "isCorrect": false
+        },
+        {
+          "text": "Wine mixed with gall",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil from a lamp vessel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say the woman had done in pouring the ointment on him?",
+      "explanation": "He said that in pouring the ointment on his body she did it to prepare him for burial.",
+      "bibleReference": "Matthew 26:12",
+      "answers": [
+        {
+          "text": "Honored him as a king",
+          "isCorrect": false
+        },
+        {
+          "text": "Shown that she was sorry",
+          "isCorrect": false
+        },
+        {
+          "text": "Prepared him for burial",
+          "isCorrect": true
+        },
+        {
+          "text": "Given what should have gone to the poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the chief priests weigh out for Judas Iscariot?",
+      "explanation": "When Judas asked what they were willing to give him to deliver Jesus, they weighed out for him thirty pieces of silver.",
+      "bibleReference": "Matthew 26:14-15",
+      "answers": [
+        {
+          "text": "A hundred denarii",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty pieces of silver",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten talents of gold",
+          "isCorrect": false
+        },
+        {
+          "text": "A stater coin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus describe the one who would betray him, as they were eating?",
+      "explanation": "He answered that the one who dipped his hand with him in the dish would betray him.",
+      "bibleReference": "Matthew 26:21-23",
+      "answers": [
+        {
+          "text": "As the one who dipped his hand with him in the dish",
+          "isCorrect": true
+        },
+        {
+          "text": "As the one who would sleep in the garden",
+          "isCorrect": false
+        },
+        {
+          "text": "As the one who carried the money",
+          "isCorrect": false
+        },
+        {
+          "text": "As the one sitting at his right hand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the cup he gave them?",
+      "explanation": "He said that this is his blood of the new covenant, which is poured out for many for the remission of sins.",
+      "bibleReference": "Matthew 26:27-28",
+      "answers": [
+        {
+          "text": "That it was the cup of the Passover lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "That they should keep it until he returned",
+          "isCorrect": false
+        },
+        {
+          "text": "That it should be poured out on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "That it is his blood of the new covenant",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did they do before they went out to the Mount of Olives?",
+      "explanation": "When they had sung a hymn, they went out to the Mount of Olives.",
+      "bibleReference": "Matthew 26:30",
+      "answers": [
+        {
+          "text": "They washed their hands",
+          "isCorrect": false
+        },
+        {
+          "text": "They divided the bread again",
+          "isCorrect": false
+        },
+        {
+          "text": "They sang a hymn",
+          "isCorrect": true
+        },
+        {
+          "text": "They put out the lamps",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus pray when he went forward a little and fell on his face?",
+      "explanation": "He prayed that, if it were possible, this cup might pass away from him; nevertheless, not what he desired, but what his Father desired.",
+      "bibleReference": "Matthew 26:39",
+      "answers": [
+        {
+          "text": "That the cup might pass away from him",
+          "isCorrect": true
+        },
+        {
+          "text": "That the disciples would not be scattered",
+          "isCorrect": false
+        },
+        {
+          "text": "That the hour would come quickly",
+          "isCorrect": false
+        },
+        {
+          "text": "That his betrayer would be kept away",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened immediately after Peter denied for the third time that he knew Jesus?",
+      "explanation": "After he began to curse and swear that he did not know the man, the rooster crowed; Peter remembered what Jesus had said, went out, and wept bitterly.",
+      "bibleReference": "Matthew 26:74-75",
+      "answers": [
+        {
+          "text": "The guards seized him",
+          "isCorrect": false
+        },
+        {
+          "text": "The rooster crowed",
+          "isCorrect": true
+        },
+        {
+          "text": "The high priest tore his clothing",
+          "isCorrect": false
+        },
+        {
+          "text": "The disciples came back for him",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

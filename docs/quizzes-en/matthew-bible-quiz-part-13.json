@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 13",
+  "description": "Ten questions on Matthew 13: the farmer and the seeds, the darnel weeds, the mustard seed, the pearl of great price and his own country.",
+  "slug": "matthew-bible-quiz-part-13",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What happened to the seeds that fell by the roadside?",
+      "explanation": "As the farmer sowed, some seeds fell by the roadside, and the birds came and devoured them.",
+      "bibleReference": "Matthew 13:4",
+      "answers": [
+        {
+          "text": "The thorns choked them",
+          "isCorrect": false
+        },
+        {
+          "text": "The birds devoured them",
+          "isCorrect": true
+        },
+        {
+          "text": "The sun scorched them",
+          "isCorrect": false
+        },
+        {
+          "text": "They yielded a hundredfold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the seeds on rocky ground wither away?",
+      "explanation": "They sprang up at once but were scorched when the sun rose, and they withered away because they had no root.",
+      "bibleReference": "Matthew 13:5-6",
+      "answers": [
+        {
+          "text": "They had no root",
+          "isCorrect": true
+        },
+        {
+          "text": "They were eaten by birds",
+          "isCorrect": false
+        },
+        {
+          "text": "They fell among thorns",
+          "isCorrect": false
+        },
+        {
+          "text": "They were trodden down",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much fruit did the seed on good soil yield?",
+      "explanation": "Others fell on good soil and yielded fruit: some one hundred times as much, some sixty, and some thirty.",
+      "bibleReference": "Matthew 13:8",
+      "answers": [
+        {
+          "text": "Seven, five and three times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten, twenty and thirty times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty, forty and fifty times as much",
+          "isCorrect": false
+        },
+        {
+          "text": "A hundred, sixty and thirty times as much",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say had been given to the disciples?",
+      "explanation": "He said that to them it is given to know the mysteries of the Kingdom of Heaven, but not to the others.",
+      "bibleReference": "Matthew 13:11",
+      "answers": [
+        {
+          "text": "Authority to cast out demons",
+          "isCorrect": false
+        },
+        {
+          "text": "The parable of the mustard seed",
+          "isCorrect": false
+        },
+        {
+          "text": "To know the mysteries of the Kingdom",
+          "isCorrect": true
+        },
+        {
+          "text": "A reward in the day of judgment",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the explanation, who snatches away what was sown by the roadside?",
+      "explanation": "When someone hears the word and doesn't understand it, the evil one comes and snatches away what was sown in his heart.",
+      "bibleReference": "Matthew 13:19",
+      "answers": [
+        {
+          "text": "The birds of the air",
+          "isCorrect": false
+        },
+        {
+          "text": "The evil one",
+          "isCorrect": true
+        },
+        {
+          "text": "The thorns of the field",
+          "isCorrect": false
+        },
+        {
+          "text": "The reapers of the harvest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the enemy sow among the wheat while people slept?",
+      "explanation": "While people slept, his enemy came and sowed darnel weeds among the wheat, and went away.",
+      "bibleReference": "Matthew 13:25",
+      "answers": [
+        {
+          "text": "Grains of mustard seed",
+          "isCorrect": false
+        },
+        {
+          "text": "Thorns and thistles",
+          "isCorrect": false
+        },
+        {
+          "text": "Yeast hidden in meal",
+          "isCorrect": false
+        },
+        {
+          "text": "Darnel weeds",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the householder say should be done at harvest time?",
+      "explanation": "He said to let both grow until the harvest, when the reapers would gather the darnel weeds in bundles to burn and gather the wheat into his barn.",
+      "bibleReference": "Matthew 13:30",
+      "answers": [
+        {
+          "text": "Gather the weeds to burn and the wheat into the barn",
+          "isCorrect": true
+        },
+        {
+          "text": "Pull up the weeds at once before harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "Burn the whole field and sow it again",
+          "isCorrect": false
+        },
+        {
+          "text": "Leave both in the field through the winter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what is the Kingdom of Heaven compared, which is smaller than all seeds?",
+      "explanation": "The Kingdom of Heaven is like a grain of mustard seed, which is smaller than all seeds, but grows greater than the herbs.",
+      "bibleReference": "Matthew 13:31-32",
+      "answers": [
+        {
+          "text": "A measure of meal",
+          "isCorrect": false
+        },
+        {
+          "text": "A pearl of great price",
+          "isCorrect": false
+        },
+        {
+          "text": "A grain of mustard seed",
+          "isCorrect": true
+        },
+        {
+          "text": "A dragnet in the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the merchant do when he found one pearl of great price?",
+      "explanation": "Having found one pearl of great price, he went and sold all that he had, and bought it.",
+      "bibleReference": "Matthew 13:45-46",
+      "answers": [
+        {
+          "text": "He sold all he had and bought it",
+          "isCorrect": true
+        },
+        {
+          "text": "He hid it again in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave it away to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "He sowed it in his own field",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people in his own country ask about him?",
+      "explanation": "They were astonished at his wisdom and works and asked whether this was not the carpenter's son, whose mother is called Mary.",
+      "bibleReference": "Matthew 13:55",
+      "answers": [
+        {
+          "text": "Isn't this the son of David?",
+          "isCorrect": false
+        },
+        {
+          "text": "Isn't this John the Baptizer?",
+          "isCorrect": false
+        },
+        {
+          "text": "Isn't this the carpenter's son?",
+          "isCorrect": true
+        },
+        {
+          "text": "Isn't this Elijah who was to come?",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

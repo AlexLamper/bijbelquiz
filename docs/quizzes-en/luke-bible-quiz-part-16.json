@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 16",
+  "description": "Ten questions on Luke 16: the dishonest manager, serving two masters, and the rich man and Lazarus.",
+  "slug": "luke-bible-quiz-part-16",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What accusation was made against the rich man's manager?",
+      "explanation": "An accusation was made that the manager was wasting his master's possessions.",
+      "bibleReference": "Luke 16:1",
+      "answers": [
+        {
+          "text": "That he was wasting his master's possessions",
+          "isCorrect": true
+        },
+        {
+          "text": "That he had stolen a hundred cors of wheat",
+          "isCorrect": false
+        },
+        {
+          "text": "That he refused to collect the debts",
+          "isCorrect": false
+        },
+        {
+          "text": "That he served two masters",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the manager say he was not able or willing to do?",
+      "explanation": "The manager said he did not have strength to dig and was ashamed to beg.",
+      "bibleReference": "Luke 16:3",
+      "answers": [
+        {
+          "text": "He could not read his lord's bills",
+          "isCorrect": false
+        },
+        {
+          "text": "He would not leave his lord's house",
+          "isCorrect": false
+        },
+        {
+          "text": "He had no strength to dig and was ashamed to beg",
+          "isCorrect": true
+        },
+        {
+          "text": "He could not collect from the debtors",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the manager tell the debtor who owed a hundred batos of oil to write?",
+      "explanation": "He told him to take his bill and quickly write fifty.",
+      "bibleReference": "Luke 16:6",
+      "answers": [
+        {
+          "text": "Eighty",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty",
+          "isCorrect": true
+        },
+        {
+          "text": "A hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did his lord commend the dishonest manager?",
+      "explanation": "His lord commended the dishonest manager because he had done wisely.",
+      "bibleReference": "Luke 16:8",
+      "answers": [
+        {
+          "text": "Because he had repaid the debts",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he had given to the needy",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he had confessed everything",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he had done wisely",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does he say about a servant and two masters?",
+      "explanation": "He says that no servant can serve two masters, and that you are not able to serve God and Mammon.",
+      "bibleReference": "Luke 16:13",
+      "answers": [
+        {
+          "text": "No servant can serve two masters",
+          "isCorrect": true
+        },
+        {
+          "text": "A servant may serve two masters in turn",
+          "isCorrect": false
+        },
+        {
+          "text": "A wise servant serves the richer master",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant must serve his master's debtors",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the text describe the Pharisees who heard these things?",
+      "explanation": "The text says the Pharisees, who were lovers of money, heard all these things and scoffed at him.",
+      "bibleReference": "Luke 16:14",
+      "answers": [
+        {
+          "text": "They repented at once and believed him",
+          "isCorrect": false
+        },
+        {
+          "text": "They were lovers of money and scoffed at him",
+          "isCorrect": true
+        },
+        {
+          "text": "They asked him for a sign from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "They invited him to dine with them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the rich man in the story clothed?",
+      "explanation": "The rich man was clothed in purple and fine linen, and lived in luxury every day.",
+      "bibleReference": "Luke 16:19",
+      "answers": [
+        {
+          "text": "In sackcloth and ashes",
+          "isCorrect": false
+        },
+        {
+          "text": "In the best robe and sandals",
+          "isCorrect": false
+        },
+        {
+          "text": "In purple and fine linen",
+          "isCorrect": true
+        },
+        {
+          "text": "In a plain coat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the sores of Lazarus the beggar at the gate?",
+      "explanation": "Lazarus was full of sores and desired the crumbs from the rich man's table, and even the dogs came and licked his sores.",
+      "bibleReference": "Luke 16:20-21",
+      "answers": [
+        {
+          "text": "They were washed with oil and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "They were healed at the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "They were bound up by the rich man's servants",
+          "isCorrect": false
+        },
+        {
+          "text": "The dogs came and licked them",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the rich man ask that Lazarus be sent to do for him?",
+      "explanation": "He asked that Lazarus dip the tip of his finger in water and cool his tongue, because he was in anguish in the flame.",
+      "bibleReference": "Luke 16:24",
+      "answers": [
+        {
+          "text": "Lead him across the great gulf to Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "Dip his finger in water and cool his tongue",
+          "isCorrect": true
+        },
+        {
+          "text": "Go at once to warn his five brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring him purple and fine linen to wear",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the last answer given to the rich man about those who do not listen to Moses and the prophets?",
+      "explanation": "The answer was that if they do not listen to Moses and the prophets, neither will they be persuaded if one rises from the dead.",
+      "bibleReference": "Luke 16:31",
+      "answers": [
+        {
+          "text": "They will repent if a sign is given to them",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be taught by the angels instead",
+          "isCorrect": false
+        },
+        {
+          "text": "They will not be persuaded if one rises from the dead",
+          "isCorrect": true
+        },
+        {
+          "text": "They will be carried to Abraham's bosom too",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

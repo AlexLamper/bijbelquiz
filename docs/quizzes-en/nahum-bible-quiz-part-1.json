@@ -1,0 +1,242 @@
+{
+  "title": "Nahum Bible Quiz - Chapter 1",
+  "description": "Ten questions on Nahum 1: a jealous God who avenges, a stronghold in the day of trouble, and good news on the mountains.",
+  "slug": "nahum-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which city is this revelation about?",
+      "explanation": "Nahum 1:1 calls this a revelation about Nineveh, the book of the vision of Nahum the Elkoshite.",
+      "bibleReference": "Nahum 1:1",
+      "answers": [
+        {
+          "text": "Nineveh",
+          "isCorrect": true
+        },
+        {
+          "text": "Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Nahum called in the opening verse?",
+      "explanation": "Nahum 1:1 names the book as the vision of Nahum the Elkoshite.",
+      "bibleReference": "Nahum 1:1",
+      "answers": [
+        {
+          "text": "The Tekoite",
+          "isCorrect": false
+        },
+        {
+          "text": "The Anathothite",
+          "isCorrect": false
+        },
+        {
+          "text": "The Elkoshite",
+          "isCorrect": true
+        },
+        {
+          "text": "The Gileadite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does verse 3 say Yahweh has his way?",
+      "explanation": "Nahum 1:3 says Yahweh has his way in the whirlwind and in the storm, and the clouds are the dust of his feet.",
+      "bibleReference": "Nahum 1:3",
+      "answers": [
+        {
+          "text": "In the temple and in the city",
+          "isCorrect": false
+        },
+        {
+          "text": "In the whirlwind and in the storm",
+          "isCorrect": true
+        },
+        {
+          "text": "In the sea and in the rivers",
+          "isCorrect": false
+        },
+        {
+          "text": "On the hills and in the valleys",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides Bashan and Carmel, what else languishes?",
+      "explanation": "Nahum 1:4 says Bashan languishes, and Carmel, and the flower of Lebanon languishes.",
+      "bibleReference": "Nahum 1:4",
+      "answers": [
+        {
+          "text": "The vines of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "The fields of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The palms of Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "The flower of Lebanon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What do the mountains do before him, according to verse 5?",
+      "explanation": "Nahum 1:5 says the mountains quake before him and the hills melt away.",
+      "bibleReference": "Nahum 1:5",
+      "answers": [
+        {
+          "text": "They are made level",
+          "isCorrect": false
+        },
+        {
+          "text": "They are split open",
+          "isCorrect": false
+        },
+        {
+          "text": "They quake",
+          "isCorrect": true
+        },
+        {
+          "text": "They burn with fire",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is his wrath poured out like?",
+      "explanation": "Nahum 1:6 says his wrath is poured out like fire, and the rocks are broken apart by him.",
+      "bibleReference": "Nahum 1:6",
+      "answers": [
+        {
+          "text": "Fire",
+          "isCorrect": true
+        },
+        {
+          "text": "Water",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Hail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Yahweh called in the day of trouble?",
+      "explanation": "Nahum 1:7 says Yahweh is good, a stronghold in the day of trouble, and he knows those who take refuge in him.",
+      "bibleReference": "Nahum 1:7",
+      "answers": [
+        {
+          "text": "A witness",
+          "isCorrect": false
+        },
+        {
+          "text": "A judge",
+          "isCorrect": false
+        },
+        {
+          "text": "A shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "A stronghold",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh say he will break off from you in verse 13?",
+      "explanation": "In Nahum 1:13 Yahweh says he will break his yoke from off you and burst your bonds apart.",
+      "bibleReference": "Nahum 1:13",
+      "answers": [
+        {
+          "text": "His rod",
+          "isCorrect": false
+        },
+        {
+          "text": "His yoke",
+          "isCorrect": true
+        },
+        {
+          "text": "The sword",
+          "isCorrect": false
+        },
+        {
+          "text": "The gates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will Yahweh cut off out of the house of your gods?",
+      "explanation": "Nahum 1:14 says Yahweh will cut off the engraved image and the molten image out of the house of your gods.",
+      "bibleReference": "Nahum 1:14",
+      "answers": [
+        {
+          "text": "The engraved image and the molten image",
+          "isCorrect": true
+        },
+        {
+          "text": "The altars and the high places",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests and the soothsayers",
+          "isCorrect": false
+        },
+        {
+          "text": "The silver and the gold vessels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Judah told to do in the last verse?",
+      "explanation": "Nahum 1:15 tells Judah to keep its feasts and perform its vows, because the wicked one will no more pass through.",
+      "bibleReference": "Nahum 1:15",
+      "answers": [
+        {
+          "text": "Flee into the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "Gather itself for battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Keep its feasts and perform its vows",
+          "isCorrect": true
+        },
+        {
+          "text": "Mourn and put on sackcloth",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

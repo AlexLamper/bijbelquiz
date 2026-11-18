@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 7",
+  "description": "Ten questions on John 7: the Feast of Booths, the teaching in the temple, the division in the crowd and the words of Nicodemus.",
+  "slug": "john-bible-quiz-part-7",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which feast of the Jews was at hand?",
+      "explanation": "Now the feast of the Jews, the Feast of Booths, was at hand.",
+      "bibleReference": "John 7:2",
+      "answers": [
+        {
+          "text": "The Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast of unleavened bread",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast of dedication",
+          "isCorrect": false
+        },
+        {
+          "text": "The Feast of Booths",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about his brothers, who told him to go into Judea?",
+      "explanation": "His brothers told him to depart and go into Judea so that his disciples might see his works, for even his brothers didn't believe in him.",
+      "bibleReference": "John 7:3-5",
+      "answers": [
+        {
+          "text": "They had followed him from the beginning",
+          "isCorrect": false
+        },
+        {
+          "text": "Even his brothers didn't believe in him",
+          "isCorrect": true
+        },
+        {
+          "text": "They were among the twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "They were afraid of the Jews in Galilee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus go up to the feast after his brothers had gone?",
+      "explanation": "When his brothers had gone up to the feast, then he also went up, not publicly, but as it were in secret.",
+      "bibleReference": "John 7:10",
+      "answers": [
+        {
+          "text": "With a great crowd around him",
+          "isCorrect": false
+        },
+        {
+          "text": "Riding ahead of his brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "Not publicly, but as it were in secret",
+          "isCorrect": true
+        },
+        {
+          "text": "Only after the feast had ended",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the multitudes saying about him?",
+      "explanation": "There was much murmuring among the multitudes: some said, \"He is a good man,\" and others said, \"Not so, but he leads the multitude astray.\"",
+      "bibleReference": "John 7:12",
+      "answers": [
+        {
+          "text": "Some said he was a good man, others that he led the multitude astray",
+          "isCorrect": true
+        },
+        {
+          "text": "All of them said that he was truly a prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "All of them openly called him the Christ of God",
+          "isCorrect": false
+        },
+        {
+          "text": "None of them had ever heard of him before",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Jews marvel at when he taught in the temple?",
+      "explanation": "The Jews marveled, saying, \"How does this man know letters, having never been educated?\"",
+      "bibleReference": "John 7:15",
+      "answers": [
+        {
+          "text": "That he taught in the middle of the feast",
+          "isCorrect": false
+        },
+        {
+          "text": "That no officer dared to arrest him",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had come up from Galilee alone",
+          "isCorrect": false
+        },
+        {
+          "text": "That he knew letters, having never been educated",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about his teaching?",
+      "explanation": "He answered, \"My teaching is not mine, but his who sent me.\"",
+      "bibleReference": "John 7:16",
+      "answers": [
+        {
+          "text": "\"My teaching is not mine, but his who sent me\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"My teaching is from Moses and the fathers\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"My teaching is only for those who believe\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"My teaching cannot be understood by anyone\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What work did Jesus say he had done on the Sabbath?",
+      "explanation": "He asked why they were angry with him because he made a man completely healthy on the Sabbath, while they themselves circumcise a boy on the Sabbath.",
+      "bibleReference": "John 7:23",
+      "answers": [
+        {
+          "text": "He circumcised a boy",
+          "isCorrect": false
+        },
+        {
+          "text": "He made a man completely healthy",
+          "isCorrect": true
+        },
+        {
+          "text": "He taught in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave the law to the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus cry out on the last and greatest day of the feast?",
+      "explanation": "He stood and cried out, \"If anyone is thirsty, let him come to me and drink!\"",
+      "bibleReference": "John 7:37",
+      "answers": [
+        {
+          "text": "\"I am the bread of life that came down\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Search the Scriptures and see for yourselves\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"If anyone is thirsty, let him come to me and drink!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The feast is ended, go to your homes\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the officers answer when asked why they had not brought him?",
+      "explanation": "The officers answered, \"No man ever spoke like this man!\"",
+      "bibleReference": "John 7:45-46",
+      "answers": [
+        {
+          "text": "\"No man ever spoke like this man!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The multitude would not let us near him\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He had already left the temple\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"We are also led astray by him\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who reminded them that their law does not judge a man before hearing from him?",
+      "explanation": "Nicodemus, he who came to him by night and was one of them, asked whether their law judges a man unless it first hears from him personally and knows what he does.",
+      "bibleReference": "John 7:50-51",
+      "answers": [
+        {
+          "text": "One of the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the officers",
+          "isCorrect": false
+        },
+        {
+          "text": "A ruler from Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "Nicodemus",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 18",
+  "description": "Ten questions on Luke 18: the widow and the judge, the Pharisee and the tax collector, the rich ruler and the blind man near Jericho.",
+  "slug": "luke-bible-quiz-part-18",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How is the judge in the parable described?",
+      "explanation": "The parable says there was a judge in a certain city who did not fear God and did not respect man.",
+      "bibleReference": "Luke 18:2",
+      "answers": [
+        {
+          "text": "He was faithful and wise",
+          "isCorrect": false
+        },
+        {
+          "text": "He feared God but despised men",
+          "isCorrect": false
+        },
+        {
+          "text": "He did not fear God and did not respect man",
+          "isCorrect": true
+        },
+        {
+          "text": "He was a ruler of the synagogue",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the judge finally decide to defend the widow?",
+      "explanation": "He said that because this widow bothered him, he would defend her, or else she would wear him out by her continual coming.",
+      "bibleReference": "Luke 18:5",
+      "answers": [
+        {
+          "text": "Because she kept bothering him and would wear him out",
+          "isCorrect": true
+        },
+        {
+          "text": "Because he had begun to fear God at last",
+          "isCorrect": false
+        },
+        {
+          "text": "Because she paid him two denarii for help",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the judge respected her husband",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Pharisee in the temple say he did?",
+      "explanation": "The Pharisee prayed that he was not like other men, and said, \"I fast twice a week. I give tithes of all that I get.\"",
+      "bibleReference": "Luke 18:11-12",
+      "answers": [
+        {
+          "text": "He prayed day and night in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave half of his goods to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "He had kept the commandments from his youth",
+          "isCorrect": false
+        },
+        {
+          "text": "He fasted twice a week and gave tithes of all he got",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the tax collector say as he beat his breast?",
+      "explanation": "Standing far away, he would not even lift up his eyes to heaven, but beat his breast and said, \"God, be merciful to me, a sinner!\"",
+      "bibleReference": "Luke 18:13",
+      "answers": [
+        {
+          "text": "\"God, I thank you that I am not like other men.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"God, be merciful to me, a sinner!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Lord, that I may see again.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Increase our faith.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when the disciples rebuked those bringing babies to him?",
+      "explanation": "Jesus summoned them and said to allow the little children to come to him and not to hinder them, for God's Kingdom belongs to such as these.",
+      "bibleReference": "Luke 18:16",
+      "answers": [
+        {
+          "text": "That the babies should be brought on another day",
+          "isCorrect": false
+        },
+        {
+          "text": "That only the disciples could touch them",
+          "isCorrect": false
+        },
+        {
+          "text": "That the little children should come to him and not be hindered",
+          "isCorrect": true
+        },
+        {
+          "text": "That the parents should first be taught",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the ruler he still lacked?",
+      "explanation": "Jesus said he still lacked one thing: to sell all that he had and distribute it to the poor, and then he would have treasure in heaven.",
+      "bibleReference": "Luke 18:22",
+      "answers": [
+        {
+          "text": "To fast twice a week",
+          "isCorrect": false
+        },
+        {
+          "text": "To keep the commandments from his youth",
+          "isCorrect": false
+        },
+        {
+          "text": "To leave his house and family behind",
+          "isCorrect": false
+        },
+        {
+          "text": "To sell all he had and give it to the poor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What comparison did Jesus make about a rich man entering God's Kingdom?",
+      "explanation": "He said it is easier for a camel to enter in through a needle's eye than for a rich man to enter into God's Kingdom.",
+      "bibleReference": "Luke 18:25",
+      "answers": [
+        {
+          "text": "It is easier for a camel to go through a needle's eye",
+          "isCorrect": true
+        },
+        {
+          "text": "It is easier for a rich man than for a child",
+          "isCorrect": false
+        },
+        {
+          "text": "It is like a grain of mustard seed in a garden",
+          "isCorrect": false
+        },
+        {
+          "text": "It is like entering by a narrow door",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he answer when people asked, \"Then who can be saved?\"",
+      "explanation": "He said that the things which are impossible with men are possible with God.",
+      "bibleReference": "Luke 18:27",
+      "answers": [
+        {
+          "text": "Only those who have left everything",
+          "isCorrect": false
+        },
+        {
+          "text": "What is impossible with men is possible with God",
+          "isCorrect": true
+        },
+        {
+          "text": "Those who fast and give tithes",
+          "isCorrect": false
+        },
+        {
+          "text": "No one who has riches",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the blind man near Jericho cry out?",
+      "explanation": "He cried out, \"Jesus, you son of David, have mercy on me!\" and cried out all the more when he was rebuked.",
+      "bibleReference": "Luke 18:38-39",
+      "answers": [
+        {
+          "text": "\"Jesus, Master, have mercy on us!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Lord, teach me to pray.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"What shall I do to inherit eternal life?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Jesus, you son of David, have mercy on me!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the blind man do after he received his sight?",
+      "explanation": "He immediately received his sight and followed him, glorifying God, and all the people who saw it praised God.",
+      "bibleReference": "Luke 18:43",
+      "answers": [
+        {
+          "text": "He followed him, glorifying God",
+          "isCorrect": true
+        },
+        {
+          "text": "He went home to his own house",
+          "isCorrect": false
+        },
+        {
+          "text": "He told no one what had happened",
+          "isCorrect": false
+        },
+        {
+          "text": "He sold all that he had",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

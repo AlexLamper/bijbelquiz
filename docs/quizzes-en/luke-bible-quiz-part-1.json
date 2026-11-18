@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 1",
+  "description": "Ten questions on Luke 1: the angel's word to Zacharias, Gabriel's message to Mary, the visit to Elizabeth and the birth of John.",
+  "slug": "luke-bible-quiz-part-1",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "To whom did the writer say he was writing his orderly account?",
+      "explanation": "He wrote that it seemed good to him, having traced the course of all things accurately from the first, to write in order to most excellent Theophilus.",
+      "bibleReference": "Luke 1:3",
+      "answers": [
+        {
+          "text": "To the priests of Abijah",
+          "isCorrect": false
+        },
+        {
+          "text": "To most excellent Theophilus",
+          "isCorrect": true
+        },
+        {
+          "text": "To the eyewitnesses of the word",
+          "isCorrect": false
+        },
+        {
+          "text": "To the people of Judea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Zacharias and Elizabeth have no child?",
+      "explanation": "They had no child because Elizabeth was barren, and they both were well advanced in years.",
+      "bibleReference": "Luke 1:7",
+      "answers": [
+        {
+          "text": "Because they had only just married in their old age",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the child they had was taken from them",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they had made a vow before the Lord",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Elizabeth was barren and both were well advanced in years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was the angel of the Lord standing when he appeared to Zacharias?",
+      "explanation": "An angel of the Lord appeared to him, standing on the right side of the altar of incense.",
+      "bibleReference": "Luke 1:11",
+      "answers": [
+        {
+          "text": "On the right side of the altar of incense",
+          "isCorrect": true
+        },
+        {
+          "text": "At the door of the temple of the Lord",
+          "isCorrect": false
+        },
+        {
+          "text": "Among the multitude praying outside",
+          "isCorrect": false
+        },
+        {
+          "text": "On the roof of the temple at Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did the angel tell Zacharias to give his son?",
+      "explanation": "The angel said that his wife Elizabeth will bear him a son, and that he shall call his name John.",
+      "bibleReference": "Luke 1:13",
+      "answers": [
+        {
+          "text": "Zacharias",
+          "isCorrect": false
+        },
+        {
+          "text": "Elijah",
+          "isCorrect": false
+        },
+        {
+          "text": "John",
+          "isCorrect": true
+        },
+        {
+          "text": "Gabriel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the angel name himself to Zacharias?",
+      "explanation": "The angel answered, \"I am Gabriel, who stands in the presence of God,\" sent to speak to him and bring him this good news.",
+      "bibleReference": "Luke 1:19",
+      "answers": [
+        {
+          "text": "Michael",
+          "isCorrect": false
+        },
+        {
+          "text": "Gabriel",
+          "isCorrect": true
+        },
+        {
+          "text": "A prophet of the Most High",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant of the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Zacharias because he did not believe the angel's words?",
+      "explanation": "The angel said he would be silent and not able to speak until the day these things happen, because he did not believe the words that would be fulfilled in their proper time.",
+      "bibleReference": "Luke 1:20",
+      "answers": [
+        {
+          "text": "He was struck blind until the child was born",
+          "isCorrect": false
+        },
+        {
+          "text": "He was sent away from the temple for a year",
+          "isCorrect": false
+        },
+        {
+          "text": "He lost his place in the priestly division",
+          "isCorrect": false
+        },
+        {
+          "text": "He was silent and unable to speak until it happened",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To what city was the angel Gabriel sent in the sixth month, and to whom?",
+      "explanation": "In the sixth month the angel Gabriel was sent from God to a city of Galilee named Nazareth, to a virgin named Mary, who was pledged to be married to Joseph of David's house.",
+      "bibleReference": "Luke 1:26-27",
+      "answers": [
+        {
+          "text": "To Nazareth, to Mary",
+          "isCorrect": true
+        },
+        {
+          "text": "To Bethlehem, to Mary",
+          "isCorrect": false
+        },
+        {
+          "text": "To Jerusalem, to Elizabeth",
+          "isCorrect": false
+        },
+        {
+          "text": "To a city of Judah, to Joseph",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened when Elizabeth heard Mary's greeting?",
+      "explanation": "When Elizabeth heard Mary's greeting, the baby leaped in her womb, and Elizabeth was filled with the Holy Spirit.",
+      "bibleReference": "Luke 1:41",
+      "answers": [
+        {
+          "text": "She went out to meet her at the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "She was unable to speak a word",
+          "isCorrect": false
+        },
+        {
+          "text": "The baby leaped in her womb",
+          "isCorrect": true
+        },
+        {
+          "text": "She sent for Zacharias at once",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In her song, what did Mary say God has done for the hungry and for the rich?",
+      "explanation": "She said he has filled the hungry with good things, and has sent the rich away empty.",
+      "bibleReference": "Luke 1:53",
+      "answers": [
+        {
+          "text": "He has fed the hungry and the rich alike",
+          "isCorrect": false
+        },
+        {
+          "text": "He has filled the hungry and sent the rich away empty",
+          "isCorrect": true
+        },
+        {
+          "text": "He has made the rich give to the hungry",
+          "isCorrect": false
+        },
+        {
+          "text": "He has scattered both the hungry and the rich",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Zacharias write when they made signs to him about the child's name?",
+      "explanation": "He asked for a writing tablet and wrote, \"His name is John,\" and they all marveled; then his mouth was opened and he spoke, blessing God.",
+      "bibleReference": "Luke 1:63-64",
+      "answers": [
+        {
+          "text": "\"Call him Zacharias\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let his mother choose\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He will be a prophet\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"His name is John\"",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

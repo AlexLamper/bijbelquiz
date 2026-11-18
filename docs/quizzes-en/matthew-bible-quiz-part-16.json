@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 16",
+  "description": "Ten questions on Matthew 16: a demand for a sign, the yeast of the Pharisees, Peter's answer about the Christ, and the cost of following.",
+  "slug": "matthew-bible-quiz-part-16",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who came to test him and asked him to show them a sign from heaven?",
+      "explanation": "The Pharisees and Sadducees came and, testing him, asked him to show them a sign from heaven.",
+      "bibleReference": "Matthew 16:1",
+      "answers": [
+        {
+          "text": "The Pharisees and Sadducees",
+          "isCorrect": true
+        },
+        {
+          "text": "The scribes and the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "The Herodians and the lawyers",
+          "isCorrect": false
+        },
+        {
+          "text": "The chief priests and the Levites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which sign did he say would be given to an evil and adulterous generation?",
+      "explanation": "He said an evil and adulterous generation seeks a sign, and no sign would be given to it except the sign of the prophet Jonah.",
+      "bibleReference": "Matthew 16:4",
+      "answers": [
+        {
+          "text": "The sign of the prophet Isaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "The sign of the prophet Jonah",
+          "isCorrect": true
+        },
+        {
+          "text": "The sign of Moses in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "The sign of the red evening sky",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the disciples to beware of after they had forgotten to take bread?",
+      "explanation": "Jesus told them to take heed and beware of the yeast of the Pharisees and Sadducees.",
+      "bibleReference": "Matthew 16:5-6",
+      "answers": [
+        {
+          "text": "The bread of the multitude",
+          "isCorrect": false
+        },
+        {
+          "text": "The wine of the marketplace",
+          "isCorrect": false
+        },
+        {
+          "text": "The yeast of the Pharisees and Sadducees",
+          "isCorrect": true
+        },
+        {
+          "text": "The feasts of the elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the disciples finally understand the yeast stood for?",
+      "explanation": "They understood that he was not telling them to beware of the yeast of bread, but of the teaching of the Pharisees and Sadducees.",
+      "bibleReference": "Matthew 16:12",
+      "answers": [
+        {
+          "text": "The bread of the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "The hypocrisy of the crowds",
+          "isCorrect": false
+        },
+        {
+          "text": "The laws given through Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The teaching of the Pharisees and Sadducees",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to the disciples, who did men say the Son of Man was?",
+      "explanation": "They answered that some said John the Baptizer, some Elijah, and others Jeremiah or one of the prophets.",
+      "bibleReference": "Matthew 16:13-14",
+      "answers": [
+        {
+          "text": "Moses, Aaron, or Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "John the Baptizer, Elijah, or Jeremiah",
+          "isCorrect": true
+        },
+        {
+          "text": "David, Solomon, or Hezekiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaiah, Daniel, or Ezekiel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Simon Peter answer when Jesus asked who they said he was?",
+      "explanation": "Simon Peter answered that he was the Christ, the Son of the living God.",
+      "bibleReference": "Matthew 16:15-16",
+      "answers": [
+        {
+          "text": "The Christ, the Son of the living God",
+          "isCorrect": true
+        },
+        {
+          "text": "A prophet sent from Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "The son of David, the king of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The teacher sent to the lost sheep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say he would build on this rock?",
+      "explanation": "Jesus said that on this rock he would build his assembly, and that the gates of Hades would not prevail against it.",
+      "bibleReference": "Matthew 16:18",
+      "answers": [
+        {
+          "text": "A city set on a hill",
+          "isCorrect": false
+        },
+        {
+          "text": "The temple of God in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A throne for the house of David",
+          "isCorrect": false
+        },
+        {
+          "text": "His assembly",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say he would give to him?",
+      "explanation": "Jesus said he would give him the keys of the Kingdom of Heaven, and that what he bound or released on earth would have been bound or released in heaven.",
+      "bibleReference": "Matthew 16:19",
+      "answers": [
+        {
+          "text": "The scroll of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "A crown of glory",
+          "isCorrect": false
+        },
+        {
+          "text": "The keys of the Kingdom of Heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "Authority over the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to Peter when Peter took him aside and began to rebuke him?",
+      "explanation": "Jesus turned and told Peter to get behind him, calling him Satan and a stumbling block, because he was setting his mind on the things of men and not of God.",
+      "bibleReference": "Matthew 16:22-23",
+      "answers": [
+        {
+          "text": "Get behind me, Satan",
+          "isCorrect": true
+        },
+        {
+          "text": "Your faith has saved you",
+          "isCorrect": false
+        },
+        {
+          "text": "Watch and pray with me",
+          "isCorrect": false
+        },
+        {
+          "text": "Follow me no longer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say the Son of Man will do when he comes in the glory of his Father with his angels?",
+      "explanation": "He said that the Son of Man will come in the glory of his Father with his angels, and then he will render to everyone according to his deeds.",
+      "bibleReference": "Matthew 16:27",
+      "answers": [
+        {
+          "text": "Gather the nations to the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Render to everyone according to his deeds",
+          "isCorrect": true
+        },
+        {
+          "text": "Build a new city on the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "Send the prophets out again",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

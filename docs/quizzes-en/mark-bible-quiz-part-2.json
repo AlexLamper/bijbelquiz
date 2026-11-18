@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 2",
+  "description": "Ten questions on Mark 2: the paralytic let down through the roof, the calling of Levi, the question about fasting and the Sabbath in the grain fields.",
+  "slug": "mark-bible-quiz-part-2",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How did the four people get the paralytic to Jesus?",
+      "explanation": "Because they could not come near for the crowd, they removed the roof, broke it up, and let down the mat the paralytic was lying on.",
+      "bibleReference": "Mark 2:4",
+      "answers": [
+        {
+          "text": "They removed the roof and let his mat down",
+          "isCorrect": true
+        },
+        {
+          "text": "They carried him through the door",
+          "isCorrect": false
+        },
+        {
+          "text": "They called Jesus out into the street",
+          "isCorrect": false
+        },
+        {
+          "text": "They waited until the crowd had left",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the paralytic when he saw their faith?",
+      "explanation": "Jesus, seeing their faith, said to the paralytic, \"Son, your sins are forgiven you.\"",
+      "bibleReference": "Mark 2:5",
+      "answers": [
+        {
+          "text": "\"Your faith has made you well.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go and show yourself to the priest.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Son, your sins are forgiven you.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Do you believe that I can do this?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the scribes sitting there reason about Jesus?",
+      "explanation": "They reasoned in their hearts that he spoke blasphemies, asking who can forgive sins but God alone.",
+      "bibleReference": "Mark 2:6-7",
+      "answers": [
+        {
+          "text": "That he healed by the power of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "That he blasphemed, since God alone can forgive sins",
+          "isCorrect": true
+        },
+        {
+          "text": "That he was a prophet sent from God",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had broken the Sabbath day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the paralytic to do?",
+      "explanation": "He said, \"I tell you, arise, take up your mat, and go to your house.\"",
+      "bibleReference": "Mark 2:11",
+      "answers": [
+        {
+          "text": "Go and wash in the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Stay and listen to his teaching",
+          "isCorrect": false
+        },
+        {
+          "text": "Tell no one what had happened",
+          "isCorrect": false
+        },
+        {
+          "text": "Arise, take up his mat and go home",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus call while he was sitting at the tax office?",
+      "explanation": "As he passed by, he saw Levi, the son of Alphaeus, sitting at the tax office, and said to him, \"Follow me.\"",
+      "bibleReference": "Mark 2:14",
+      "answers": [
+        {
+          "text": "Levi, the son of Alphaeus",
+          "isCorrect": true
+        },
+        {
+          "text": "Simon the Zealot",
+          "isCorrect": false
+        },
+        {
+          "text": "James the son of Zebedee",
+          "isCorrect": false
+        },
+        {
+          "text": "Jairus the synagogue ruler",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer those who asked why he ate with tax collectors and sinners?",
+      "explanation": "He said that the healthy have no need for a physician, but those who are sick, and that he came not to call the righteous but sinners to repentance.",
+      "bibleReference": "Mark 2:17",
+      "answers": [
+        {
+          "text": "The law allows eating with anyone",
+          "isCorrect": false
+        },
+        {
+          "text": "He eats with whoever invites him",
+          "isCorrect": false
+        },
+        {
+          "text": "A physician is for the sick, not the healthy",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the righteous can be taught",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about fasting while the bridegroom is present?",
+      "explanation": "He said the groomsmen cannot fast as long as they have the bridegroom with them.",
+      "bibleReference": "Mark 2:19",
+      "answers": [
+        {
+          "text": "They must fast twice a week",
+          "isCorrect": false
+        },
+        {
+          "text": "The groomsmen cannot fast then",
+          "isCorrect": true
+        },
+        {
+          "text": "They should fast after the meal",
+          "isCorrect": false
+        },
+        {
+          "text": "They fast only for the bridegroom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens when new wine is put into old wineskins?",
+      "explanation": "The new wine bursts the skins, the wine pours out, and the skins are destroyed; new wine is put into fresh wineskins.",
+      "bibleReference": "Mark 2:22",
+      "answers": [
+        {
+          "text": "The skins burst and the wine is lost",
+          "isCorrect": true
+        },
+        {
+          "text": "The wine turns sour but keeps",
+          "isCorrect": false
+        },
+        {
+          "text": "The old skins grow strong again",
+          "isCorrect": false
+        },
+        {
+          "text": "The wine becomes better with age",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the disciples do on the Sabbath that the Pharisees objected to?",
+      "explanation": "As they went through the grain fields on the Sabbath day, the disciples began to pluck the ears of grain.",
+      "bibleReference": "Mark 2:23-24",
+      "answers": [
+        {
+          "text": "They lit a fire in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "They carried water from a well",
+          "isCorrect": false
+        },
+        {
+          "text": "They traveled far from the city",
+          "isCorrect": false
+        },
+        {
+          "text": "They plucked ears of grain",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the Sabbath and man?",
+      "explanation": "He said, \"The Sabbath was made for man, not man for the Sabbath.\"",
+      "bibleReference": "Mark 2:27",
+      "answers": [
+        {
+          "text": "Man was made for the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "The Sabbath was made for man",
+          "isCorrect": true
+        },
+        {
+          "text": "The Sabbath was made for the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The Sabbath was given to David",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

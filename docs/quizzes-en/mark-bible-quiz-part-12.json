@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 12",
+  "description": "Ten questions on Mark 12: the parable of the vineyard, the question about taxes, the greatest commandment and the poor widow.",
+  "slug": "mark-bible-quiz-part-12",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "In the parable, what did the man do with the vineyard he had planted before he went into another country?",
+      "explanation": "The man planted a vineyard, put a hedge around it, dug a pit for the wine press, built a tower, and rented it out to a farmer before going into another country.",
+      "bibleReference": "Mark 12:1",
+      "answers": [
+        {
+          "text": "He rented it out to a farmer",
+          "isCorrect": true
+        },
+        {
+          "text": "He sold it to the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "He left it standing empty",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave it to his son",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the farmers treat the servants the owner sent to get his share of the fruit?",
+      "explanation": "They beat the first servant and sent him away empty, threw stones at another and wounded him in the head, and killed others.",
+      "bibleReference": "Mark 12:3-5",
+      "answers": [
+        {
+          "text": "They paid them more than was asked",
+          "isCorrect": false
+        },
+        {
+          "text": "They sent them back with gifts",
+          "isCorrect": false
+        },
+        {
+          "text": "They beat them and killed some of them",
+          "isCorrect": true
+        },
+        {
+          "text": "They refused to open the gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the owner of the vineyard send to the farmers last of all?",
+      "explanation": "Still having one, his beloved son, he sent him last to them, saying that they would respect his son.",
+      "bibleReference": "Mark 12:6",
+      "answers": [
+        {
+          "text": "Another servant",
+          "isCorrect": false
+        },
+        {
+          "text": "His beloved son",
+          "isCorrect": true
+        },
+        {
+          "text": "A band of soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "A neighboring farmer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say the lord of the vineyard would do?",
+      "explanation": "He said the lord of the vineyard will come and destroy the farmers, and will give the vineyard to others.",
+      "bibleReference": "Mark 12:9",
+      "answers": [
+        {
+          "text": "Forgive the farmers and wait another year for the fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "Sell the vineyard and settle in another country",
+          "isCorrect": false
+        },
+        {
+          "text": "Raise the rent that the farmers must pay",
+          "isCorrect": false
+        },
+        {
+          "text": "Destroy the farmers and give the vineyard to others",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whose image and inscription were on the denarius that was brought to Jesus?",
+      "explanation": "When he asked whose image and inscription it was, they said to him that it was Caesar's.",
+      "bibleReference": "Mark 12:16",
+      "answers": [
+        {
+          "text": "David's",
+          "isCorrect": false
+        },
+        {
+          "text": "Herod's",
+          "isCorrect": false
+        },
+        {
+          "text": "Caesar's",
+          "isCorrect": true
+        },
+        {
+          "text": "Moses'",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which group that came to Jesus is described as saying that there is no resurrection?",
+      "explanation": "Some Sadducees, who say that there is no resurrection, came to him and asked him a question.",
+      "bibleReference": "Mark 12:18",
+      "answers": [
+        {
+          "text": "The Sadducees",
+          "isCorrect": true
+        },
+        {
+          "text": "The Herodians",
+          "isCorrect": false
+        },
+        {
+          "text": "The scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about those who rise from the dead?",
+      "explanation": "He said that when they rise from the dead they neither marry nor are given in marriage, but are like angels in heaven.",
+      "bibleReference": "Mark 12:25",
+      "answers": [
+        {
+          "text": "They keep the wives they had on the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "They are each given a new name in heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "They no longer remember their life on earth",
+          "isCorrect": false
+        },
+        {
+          "text": "They do not marry, but are like angels in heaven",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus name as the greatest commandment of all?",
+      "explanation": "He answered that the greatest is to hear that the Lord our God is one, and to love the Lord your God with all your heart, soul, mind and strength.",
+      "bibleReference": "Mark 12:29-30",
+      "answers": [
+        {
+          "text": "To bring whole burnt offerings to the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "To love the Lord your God with all your heart",
+          "isCorrect": true
+        },
+        {
+          "text": "To keep the Sabbath day holy",
+          "isCorrect": false
+        },
+        {
+          "text": "To honor your father and your mother",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say the scribes like to do?",
+      "explanation": "He said they like to walk in long robes, to get greetings in the marketplaces, and to have the best seats in the synagogues and the best places at feasts.",
+      "bibleReference": "Mark 12:38-39",
+      "answers": [
+        {
+          "text": "Fast in secret and give alms openly",
+          "isCorrect": false
+        },
+        {
+          "text": "Travel to far countries to teach",
+          "isCorrect": false
+        },
+        {
+          "text": "Walk in long robes and take the best seats",
+          "isCorrect": true
+        },
+        {
+          "text": "Keep silent in the temple courts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the poor widow who cast in two small brass coins?",
+      "explanation": "He said she gave more than all those giving into the treasury, because the others gave out of their abundance but she gave all that she had to live on.",
+      "bibleReference": "Mark 12:43-44",
+      "answers": [
+        {
+          "text": "She gave more than all the others",
+          "isCorrect": true
+        },
+        {
+          "text": "She should have kept her coins",
+          "isCorrect": false
+        },
+        {
+          "text": "She gave as much as the rich men",
+          "isCorrect": false
+        },
+        {
+          "text": "She gave what she could spare",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

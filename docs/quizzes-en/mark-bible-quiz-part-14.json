@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 14",
+  "description": "Ten questions on Mark 14: the anointing at Bethany, the Passover meal, Gethsemane, the trial before the high priest and Peter's denial.",
+  "slug": "mark-bible-quiz-part-14",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was Jesus when a woman poured ointment of pure nard over his head?",
+      "explanation": "He was at Bethany, in the house of Simon the leper, sitting at the table, when the woman broke the alabaster jar and poured it over his head.",
+      "bibleReference": "Mark 14:3",
+      "answers": [
+        {
+          "text": "In the temple at Jerusalem, during the feast",
+          "isCorrect": false
+        },
+        {
+          "text": "On the Mount of Olives, after the supper",
+          "isCorrect": false
+        },
+        {
+          "text": "At Bethany, in the house of Simon the leper",
+          "isCorrect": true
+        },
+        {
+          "text": "In a boat on the lake with his disciples",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how much did the indignant onlookers say the ointment might have been sold?",
+      "explanation": "They said it might have been sold for more than three hundred denarii and given to the poor.",
+      "bibleReference": "Mark 14:5",
+      "answers": [
+        {
+          "text": "More than three hundred denarii",
+          "isCorrect": true
+        },
+        {
+          "text": "Thirty pieces of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred denarii",
+          "isCorrect": false
+        },
+        {
+          "text": "A hundred pieces of gold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say the woman had done for him?",
+      "explanation": "He said she had done what she could, and had anointed his body beforehand for the burying.",
+      "bibleReference": "Mark 14:8",
+      "answers": [
+        {
+          "text": "Paid a debt he owed",
+          "isCorrect": false
+        },
+        {
+          "text": "Kept the ointment for the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "Shown the disciples her wealth",
+          "isCorrect": false
+        },
+        {
+          "text": "Anointed his body beforehand for the burying",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who went away to the chief priests in order to deliver Jesus to them?",
+      "explanation": "Judas Iscariot, who was one of the twelve, went away to the chief priests so that he might deliver him to them.",
+      "bibleReference": "Mark 14:10",
+      "answers": [
+        {
+          "text": "Simon the leper of Bethany",
+          "isCorrect": false
+        },
+        {
+          "text": "Judas Iscariot, one of the twelve",
+          "isCorrect": true
+        },
+        {
+          "text": "One of the scribes of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant of the high priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the disciples as he gave them the cup?",
+      "explanation": "He said that this is his blood of the new covenant, which is poured out for many.",
+      "bibleReference": "Mark 14:23-24",
+      "answers": [
+        {
+          "text": "\"This is my blood of the new covenant\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Drink it in remembrance of Moses\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"This cup is the Passover of the Lord\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Keep this cup until I return\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell Peter would happen before the rooster crowed twice?",
+      "explanation": "He told Peter that that very night, before the rooster crowed twice, Peter would deny him three times.",
+      "bibleReference": "Mark 14:30",
+      "answers": [
+        {
+          "text": "Peter would run away to Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter would be arrested with him",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter would deny him three times",
+          "isCorrect": true
+        },
+        {
+          "text": "Peter would fall asleep three times",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus take with him when he began to be greatly troubled?",
+      "explanation": "He took with him Peter, James and John, and began to be greatly troubled and distressed.",
+      "bibleReference": "Mark 14:33",
+      "answers": [
+        {
+          "text": "Peter, Andrew and John",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter, James and Andrew",
+          "isCorrect": false
+        },
+        {
+          "text": "James, John and Judas",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter, James and John",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus ask of the Father when he prayed at Gethsemane?",
+      "explanation": "He said, \"Abba, Father, all things are possible to you. Please remove this cup from me. However, not what I desire, but what you desire.\"",
+      "bibleReference": "Mark 14:36",
+      "answers": [
+        {
+          "text": "That his disciples would be kept awake with him",
+          "isCorrect": false
+        },
+        {
+          "text": "That the cup be removed from him, yet the Father's will be done",
+          "isCorrect": true
+        },
+        {
+          "text": "That the hour of his betrayal would come quickly",
+          "isCorrect": false
+        },
+        {
+          "text": "That the one who betrayed him would be stopped",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer when the high priest asked him whether he was the Christ, the Son of the Blessed?",
+      "explanation": "He said, \"I am,\" and added that they would see the Son of Man sitting at the right hand of Power and coming with the clouds of the sky.",
+      "bibleReference": "Mark 14:61-62",
+      "answers": [
+        {
+          "text": "He said, \"Ask those who heard me\"",
+          "isCorrect": false
+        },
+        {
+          "text": "He said, \"So you say\"",
+          "isCorrect": false
+        },
+        {
+          "text": "He said, \"I am\"",
+          "isCorrect": true
+        },
+        {
+          "text": "He asked the high priest a question in return",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter say when a maid of the high priest said he had been with Jesus the Nazarene?",
+      "explanation": "He denied it, saying that he neither knew nor understood what she was saying, and he went out on the porch.",
+      "bibleReference": "Mark 14:67-68",
+      "answers": [
+        {
+          "text": "He admitted that he was one of the disciples",
+          "isCorrect": false
+        },
+        {
+          "text": "He denied it and said he did not understand her",
+          "isCorrect": true
+        },
+        {
+          "text": "He told her to be silent and went away",
+          "isCorrect": false
+        },
+        {
+          "text": "He said he was only there to warm himself",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

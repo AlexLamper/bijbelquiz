@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 4",
+  "description": "Ten questions on Matthew 4: the temptation in the wilderness, the move to Capernaum, and the calling of the first fishermen.",
+  "slug": "matthew-bible-quiz-part-4",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where was Jesus led by the Spirit to be tempted by the devil?",
+      "explanation": "Matthew 4:1 says Jesus was led up by the Spirit into the wilderness to be tempted by the devil.",
+      "bibleReference": "Matthew 4:1",
+      "answers": [
+        {
+          "text": "Into the wilderness",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the region of Decapolis",
+          "isCorrect": false
+        },
+        {
+          "text": "To the sea of Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the city of Nazareth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did Jesus fast before he was hungry?",
+      "explanation": "He had fasted forty days and forty nights, and afterward he was hungry.",
+      "bibleReference": "Matthew 4:2",
+      "answers": [
+        {
+          "text": "Seven days and seven nights",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days and forty nights",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve days and twelve nights",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty days and thirty nights",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the tempter tell Jesus to command the stones to become?",
+      "explanation": "The tempter said that if he was the Son of God, he should command that the stones become bread.",
+      "bibleReference": "Matthew 4:3",
+      "answers": [
+        {
+          "text": "Gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Water",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread",
+          "isCorrect": true
+        },
+        {
+          "text": "Fish",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Jesus' answer, by what does man live besides bread?",
+      "explanation": "Jesus answered that man shall not live by bread alone, but by every word that proceeds out of God's mouth.",
+      "bibleReference": "Matthew 4:4",
+      "answers": [
+        {
+          "text": "Bread alone and nothing else",
+          "isCorrect": false
+        },
+        {
+          "text": "The words of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "The gifts of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Every word from God's mouth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did the devil set Jesus when he took him into the holy city?",
+      "explanation": "The devil took him into the holy city and set him on the pinnacle of the temple.",
+      "bibleReference": "Matthew 4:5",
+      "answers": [
+        {
+          "text": "Beside the altar of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "On the pinnacle of the temple",
+          "isCorrect": true
+        },
+        {
+          "text": "At the gate of the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "On the wall of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the devil offer Jesus on the exceedingly high mountain?",
+      "explanation": "The devil showed him all the kingdoms of the world and their glory, and offered them if Jesus would fall down and worship him.",
+      "bibleReference": "Matthew 4:8-9",
+      "answers": [
+        {
+          "text": "All the kingdoms of the world and their glory",
+          "isCorrect": true
+        },
+        {
+          "text": "Bread from the stones of the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "Command over all the angels of heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The throne of Galilee and Judea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened after the devil left Jesus?",
+      "explanation": "The devil left him, and angels came and served him.",
+      "bibleReference": "Matthew 4:11",
+      "answers": [
+        {
+          "text": "A great light shone over the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The report about him reached Syria",
+          "isCorrect": false
+        },
+        {
+          "text": "Angels came and served him",
+          "isCorrect": true
+        },
+        {
+          "text": "The temple was shut against him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which town did Jesus live in after he left Nazareth?",
+      "explanation": "Leaving Nazareth, he came and lived in Capernaum, which is by the sea.",
+      "bibleReference": "Matthew 4:13",
+      "answers": [
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Decapolis",
+          "isCorrect": false
+        },
+        {
+          "text": "Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "Capernaum",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the two fishermen Simon and Andrew?",
+      "explanation": "He told them to come after him, and he would make them fishers for men.",
+      "bibleReference": "Matthew 4:18-19",
+      "answers": [
+        {
+          "text": "Come after me, and I will make you fishers for men",
+          "isCorrect": true
+        },
+        {
+          "text": "Go and tell no one what you have seen",
+          "isCorrect": false
+        },
+        {
+          "text": "Mend your nets and wait for me in Nazareth",
+          "isCorrect": false
+        },
+        {
+          "text": "Sell your boat and give the money away",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do in the synagogues as he went about all Galilee?",
+      "explanation": "He went about all Galilee, teaching in their synagogues and preaching the Good News of the Kingdom.",
+      "bibleReference": "Matthew 4:23",
+      "answers": [
+        {
+          "text": "Read the writings of Isaiah the prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "Chose twelve men to be his apostles",
+          "isCorrect": false
+        },
+        {
+          "text": "Taught and preached the Good News of the Kingdom",
+          "isCorrect": true
+        },
+        {
+          "text": "Appointed priests to offer gifts",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
