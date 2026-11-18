@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 19",
+  "description": "Ten questions on Acts 19: Paul at Ephesus, the sons of Sceva, the burning of the books, and the uproar in the theater.",
+  "slug": "acts-bible-quiz-part-19",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did the disciples at Ephesus answer when Paul asked whether they had received the Holy Spirit?",
+      "explanation": "They said they had not even heard that there is a Holy Spirit.",
+      "bibleReference": "Acts 19:1-2",
+      "answers": [
+        {
+          "text": "That they had received him when they believed",
+          "isCorrect": false
+        },
+        {
+          "text": "That they had not even heard that there is a Holy Spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "That Apollos had already given him to them",
+          "isCorrect": false
+        },
+        {
+          "text": "That they were waiting for him in Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Into what had those disciples been baptized before Paul spoke with them?",
+      "explanation": "They said they had been baptized into John's baptism, and afterward they were baptized in the name of the Lord Jesus.",
+      "bibleReference": "Acts 19:3-5",
+      "answers": [
+        {
+          "text": "Into the name of the Lord Jesus",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the baptism of the Holy Spirit",
+          "isCorrect": false
+        },
+        {
+          "text": "Into John's baptism",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the baptism of Apollos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many were the men on whom Paul laid his hands at Ephesus?",
+      "explanation": "When Paul laid his hands on them the Holy Spirit came on them, and they were about twelve men in all.",
+      "bibleReference": "Acts 19:6-7",
+      "answers": [
+        {
+          "text": "About twelve",
+          "isCorrect": true
+        },
+        {
+          "text": "About seven",
+          "isCorrect": false
+        },
+        {
+          "text": "About forty",
+          "isCorrect": false
+        },
+        {
+          "text": "About seventy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Paul reason daily after he had departed from the synagogue?",
+      "explanation": "He separated the disciples and reasoned daily in the school of Tyrannus.",
+      "bibleReference": "Acts 19:9",
+      "answers": [
+        {
+          "text": "In the theater of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "In the house of Aquila",
+          "isCorrect": false
+        },
+        {
+          "text": "In the temple of Artemis",
+          "isCorrect": false
+        },
+        {
+          "text": "In the school of Tyrannus",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened when handkerchiefs or aprons were carried away from Paul's body to the sick?",
+      "explanation": "The diseases departed from them and the evil spirits went out.",
+      "bibleReference": "Acts 19:11-12",
+      "answers": [
+        {
+          "text": "The diseases departed and the evil spirits went out",
+          "isCorrect": true
+        },
+        {
+          "text": "The dead among them were raised",
+          "isCorrect": false
+        },
+        {
+          "text": "The crowds of the city were stilled",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who touched them began to prophesy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the evil spirit answer the exorcists who invoked the name of the Lord Jesus?",
+      "explanation": "The evil spirit said, \"Jesus I know, and Paul I know, but who are you?\"",
+      "bibleReference": "Acts 19:13-15",
+      "answers": [
+        {
+          "text": "I know neither Jesus nor Paul",
+          "isCorrect": false
+        },
+        {
+          "text": "Great is Artemis, whom all Asia worships",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus I know, and Paul I know, but who are you?",
+          "isCorrect": true
+        },
+        {
+          "text": "Why do you come to torment us?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did those who had practiced magical arts do with their books?",
+      "explanation": "They brought their books together and burned them in the sight of all, and the price of them was counted at fifty thousand pieces of silver.",
+      "bibleReference": "Acts 19:19",
+      "answers": [
+        {
+          "text": "They sold them for fifty thousand pieces of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "They hid them away in the temple of Artemis",
+          "isCorrect": false
+        },
+        {
+          "text": "They handed them over to Demetrius the silversmith",
+          "isCorrect": false
+        },
+        {
+          "text": "They brought them together and burned them in the sight of all",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who was Demetrius, and what did he make?",
+      "explanation": "Demetrius was a silversmith who made silver shrines of Artemis and brought much business to the craftsmen.",
+      "bibleReference": "Acts 19:24",
+      "answers": [
+        {
+          "text": "The town clerk of the city of Ephesus",
+          "isCorrect": false
+        },
+        {
+          "text": "A silversmith who made silver shrines of Artemis",
+          "isCorrect": true
+        },
+        {
+          "text": "A maker of tents who worked with Paul",
+          "isCorrect": false
+        },
+        {
+          "text": "A chief priest whose sons were exorcists",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the whole city rush, and whom had they seized?",
+      "explanation": "They rushed with one accord into the theater, having seized Gaius and Aristarchus, men of Macedonia and Paul's companions in travel.",
+      "bibleReference": "Acts 19:29",
+      "answers": [
+        {
+          "text": "Into the theater, having seized Gaius and Aristarchus",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the synagogue, having seized Alexander",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the temple of Artemis, having seized Paul",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the school of Tyrannus, having seized the disciples",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the town clerk say when he had quieted the multitude?",
+      "explanation": "He said that everyone knows Ephesus is temple keeper of the great goddess Artemis, and that since these things cannot be denied they ought to be quiet and do nothing rash.",
+      "bibleReference": "Acts 19:35-36",
+      "answers": [
+        {
+          "text": "That Paul should be handed over to the craftsmen",
+          "isCorrect": false
+        },
+        {
+          "text": "That the temple of Artemis should be shut up for a time",
+          "isCorrect": false
+        },
+        {
+          "text": "That Ephesus is temple keeper of Artemis and they should do nothing rash",
+          "isCorrect": true
+        },
+        {
+          "text": "That Demetrius should be put out of the city at once",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

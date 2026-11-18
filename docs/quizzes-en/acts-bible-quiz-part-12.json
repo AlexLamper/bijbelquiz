@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 12",
+  "description": "Ten questions on Acts 12: Peter led out of prison by an angel, the house of Mary, and the end of King Herod.",
+  "slug": "acts-bible-quiz-part-12",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Whom did King Herod kill with the sword?",
+      "explanation": "Acts 12:2 says he killed James, the brother of John, with the sword.",
+      "bibleReference": "Acts 12:1-2",
+      "answers": [
+        {
+          "text": "Peter",
+          "isCorrect": false
+        },
+        {
+          "text": "James",
+          "isCorrect": true
+        },
+        {
+          "text": "Blastus",
+          "isCorrect": false
+        },
+        {
+          "text": "Mark",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To how many squads of soldiers was Peter delivered in prison?",
+      "explanation": "Herod put Peter in prison and delivered him to four squads of four soldiers each to guard him.",
+      "bibleReference": "Acts 12:4",
+      "answers": [
+        {
+          "text": "Four squads of four soldiers each",
+          "isCorrect": true
+        },
+        {
+          "text": "Two squads of six soldiers each",
+          "isCorrect": false
+        },
+        {
+          "text": "Three squads of four soldiers each",
+          "isCorrect": false
+        },
+        {
+          "text": "Six squads of two soldiers each",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was Peter sleeping on the night before Herod meant to bring him out?",
+      "explanation": "He was sleeping between two soldiers, bound with two chains, while guards kept the door.",
+      "bibleReference": "Acts 12:6",
+      "answers": [
+        {
+          "text": "Alone, with his feet in the stocks",
+          "isCorrect": false
+        },
+        {
+          "text": "Chained to the iron gate of the prison",
+          "isCorrect": false
+        },
+        {
+          "text": "In an open courtyard with the other prisoners",
+          "isCorrect": false
+        },
+        {
+          "text": "Between two soldiers, bound with two chains",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened when the angel struck Peter on the side and woke him?",
+      "explanation": "The angel told him to stand up quickly, and his chains fell off his hands.",
+      "bibleReference": "Acts 12:7",
+      "answers": [
+        {
+          "text": "The whole prison was shaken",
+          "isCorrect": false
+        },
+        {
+          "text": "The guards fell into a deep sleep",
+          "isCorrect": false
+        },
+        {
+          "text": "His chains fell off his hands",
+          "isCorrect": true
+        },
+        {
+          "text": "The walls of the cell were broken open",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened at the iron gate that leads into the city?",
+      "explanation": "They came to the iron gate leading into the city, and it opened to them by itself.",
+      "bibleReference": "Acts 12:10",
+      "answers": [
+        {
+          "text": "It opened to them by itself",
+          "isCorrect": true
+        },
+        {
+          "text": "The angel unlocked it with a key",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter climbed over it in the dark",
+          "isCorrect": false
+        },
+        {
+          "text": "The guards opened it at the angel's word",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose house did Peter come to after the angel departed from him?",
+      "explanation": "He came to the house of Mary, the mother of John who was called Mark, where many were gathered and praying.",
+      "bibleReference": "Acts 12:12",
+      "answers": [
+        {
+          "text": "The house of James, the brother of John",
+          "isCorrect": false
+        },
+        {
+          "text": "The house of Rhoda the servant girl",
+          "isCorrect": false
+        },
+        {
+          "text": "The house of Mary, the mother of John called Mark",
+          "isCorrect": true
+        },
+        {
+          "text": "The house of Blastus, the king's aide",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came to answer when Peter knocked at the door of the gate?",
+      "explanation": "A servant girl named Rhoda came to answer, and she recognized Peter's voice.",
+      "bibleReference": "Acts 12:13-14",
+      "answers": [
+        {
+          "text": "Mary, the mother of John Mark",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant girl named Rhoda",
+          "isCorrect": true
+        },
+        {
+          "text": "One of the soldiers from the prison",
+          "isCorrect": false
+        },
+        {
+          "text": "James, to whom Peter sent word",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What message did Peter leave before he departed and went to another place?",
+      "explanation": "He declared how the Lord had brought him out of the prison and said that these things should be told to James and to the brothers.",
+      "bibleReference": "Acts 12:17",
+      "answers": [
+        {
+          "text": "To meet him again in Antioch",
+          "isCorrect": false
+        },
+        {
+          "text": "To say nothing at all to anyone",
+          "isCorrect": false
+        },
+        {
+          "text": "To go down with him to Caesarea",
+          "isCorrect": false
+        },
+        {
+          "text": "To tell these things to James and to the brothers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Herod do when he had sought Peter and did not find him?",
+      "explanation": "He examined the guards and then commanded that they should be put to death.",
+      "bibleReference": "Acts 12:19",
+      "answers": [
+        {
+          "text": "He examined the guards and had them put to death",
+          "isCorrect": true
+        },
+        {
+          "text": "He set free the rest of the prisoners",
+          "isCorrect": false
+        },
+        {
+          "text": "He went up to Jerusalem for the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "He promised silver to whoever found Peter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Herod after the people shouted, \"The voice of a god, and not of a man!\"?",
+      "explanation": "An angel of the Lord struck him because he did not give God the glory, and he was eaten by worms and died.",
+      "bibleReference": "Acts 12:22-23",
+      "answers": [
+        {
+          "text": "He tore his royal clothing and repented",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave God the glory before the people",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel of the Lord struck him, and he died",
+          "isCorrect": true
+        },
+        {
+          "text": "He fled from Caesarea to Tyre",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

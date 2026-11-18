@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 5",
+  "description": "Ten questions on Acts 5: Ananias and Sapphira, the apostles freed from prison, and Gamaliel's advice to the council.",
+  "slug": "acts-bible-quiz-part-5",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Ananias do with the price of the possession he sold?",
+      "explanation": "He kept back part of the price, his wife also being aware of it, and brought a certain part to the apostles' feet.",
+      "bibleReference": "Acts 5:1-2",
+      "answers": [
+        {
+          "text": "He kept back part of the price",
+          "isCorrect": true
+        },
+        {
+          "text": "He gave all of it to the apostles",
+          "isCorrect": false
+        },
+        {
+          "text": "He returned the field to its owner",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave it to the priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter say Satan had filled Ananias' heart to do?",
+      "explanation": "Peter asked why Satan had filled his heart to lie to the Holy Spirit and to keep back part of the price of the land.",
+      "bibleReference": "Acts 5:3",
+      "answers": [
+        {
+          "text": "To despise the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "To lie to the Holy Spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "To flee from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To tempt the apostles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Ananias when he heard these words?",
+      "explanation": "Ananias, hearing these words, fell down and died, and great fear came on all who heard these things.",
+      "bibleReference": "Acts 5:5",
+      "answers": [
+        {
+          "text": "He asked for forgiveness",
+          "isCorrect": false
+        },
+        {
+          "text": "He left the house angrily",
+          "isCorrect": false
+        },
+        {
+          "text": "He fell down and died",
+          "isCorrect": true
+        },
+        {
+          "text": "He was put in custody",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long after this did his wife come in?",
+      "explanation": "About three hours later his wife came in, not knowing what had happened.",
+      "bibleReference": "Acts 5:7",
+      "answers": [
+        {
+          "text": "The next morning",
+          "isCorrect": false
+        },
+        {
+          "text": "After eight days",
+          "isCorrect": false
+        },
+        {
+          "text": "The same hour",
+          "isCorrect": false
+        },
+        {
+          "text": "About three hours later",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did they lay the sick on cots and mattresses in the streets?",
+      "explanation": "They did it so that as Peter came by, at the least his shadow might overshadow some of them.",
+      "bibleReference": "Acts 5:15",
+      "answers": [
+        {
+          "text": "So that Peter's shadow might overshadow them",
+          "isCorrect": true
+        },
+        {
+          "text": "So that the priests would see them",
+          "isCorrect": false
+        },
+        {
+          "text": "So that they could hear the teaching",
+          "isCorrect": false
+        },
+        {
+          "text": "So that the apostles could count them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who opened the prison doors by night and brought the apostles out?",
+      "explanation": "An angel of the Lord opened the prison doors by night, brought them out, and told them to speak in the temple.",
+      "bibleReference": "Acts 5:19",
+      "answers": [
+        {
+          "text": "The captain of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel of the Lord",
+          "isCorrect": true
+        },
+        {
+          "text": "The young men of the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "Gamaliel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the officers report when they went to the prison?",
+      "explanation": "They reported that they found the prison shut and locked with the guards standing before the doors, but no one inside.",
+      "bibleReference": "Acts 5:22-23",
+      "answers": [
+        {
+          "text": "That the apostles refused to come",
+          "isCorrect": false
+        },
+        {
+          "text": "That the doors had been broken open",
+          "isCorrect": false
+        },
+        {
+          "text": "That the guards had fled in the night",
+          "isCorrect": false
+        },
+        {
+          "text": "That the prison was locked but empty",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Peter and the apostles answer the high priest?",
+      "explanation": "Peter and the apostles answered, \"We must obey God rather than men.\"",
+      "bibleReference": "Acts 5:28-29",
+      "answers": [
+        {
+          "text": "\"We have taught nothing new.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Judge for yourselves what is right.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"We must obey God rather than men.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"We will speak no more in this name.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who stood up in the council and advised them to leave these men alone?",
+      "explanation": "A Pharisee named Gamaliel, a teacher of the law honored by all the people, stood up in the council and spoke.",
+      "bibleReference": "Acts 5:34-38",
+      "answers": [
+        {
+          "text": "Gamaliel, a Pharisee",
+          "isCorrect": true
+        },
+        {
+          "text": "Annas the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The captain of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Judas of Galilee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the apostles rejoice as they left the council?",
+      "explanation": "They departed rejoicing that they were counted worthy to suffer dishonor for Jesus' name.",
+      "bibleReference": "Acts 5:40-41",
+      "answers": [
+        {
+          "text": "Because the council had believed them",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they were counted worthy to suffer dishonor",
+          "isCorrect": true
+        },
+        {
+          "text": "Because they were not beaten",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the people had defended them",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

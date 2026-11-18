@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 14",
+  "description": "Ten questions on John 14: the Father's house, the way and the truth and the life, and the promise of the Counselor.",
+  "slug": "john-bible-quiz-part-14",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does Jesus say is in his Father's house?",
+      "explanation": "He says that in his Father's house are many homes, and that he is going to prepare a place for them.",
+      "bibleReference": "John 14:2",
+      "answers": [
+        {
+          "text": "A single room",
+          "isCorrect": false
+        },
+        {
+          "text": "Many sheep folds",
+          "isCorrect": false
+        },
+        {
+          "text": "Many homes",
+          "isCorrect": true
+        },
+        {
+          "text": "A treasury",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer Thomas, who asked how they could know the way?",
+      "explanation": "Jesus said that he is the way, the truth and the life, and that no one comes to the Father except through him.",
+      "bibleReference": "John 14:6",
+      "answers": [
+        {
+          "text": "I am the way, the truth, and the life",
+          "isCorrect": true
+        },
+        {
+          "text": "I am the true vine and the farmer",
+          "isCorrect": false
+        },
+        {
+          "text": "I am the good shepherd of the sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "I am the door of the sheep fold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Philip ask Jesus for?",
+      "explanation": "Philip said, \"Lord, show us the Father, and that will be enough for us.\"",
+      "bibleReference": "John 14:8",
+      "answers": [
+        {
+          "text": "To show them the way",
+          "isCorrect": false
+        },
+        {
+          "text": "To give them his peace",
+          "isCorrect": false
+        },
+        {
+          "text": "To send them the Counselor",
+          "isCorrect": false
+        },
+        {
+          "text": "To show them the Father",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say the one who believes in him will do?",
+      "explanation": "He says that the one who believes in him will do the works that he does, and will do greater works than these.",
+      "bibleReference": "John 14:12",
+      "answers": [
+        {
+          "text": "He will see the Father face to face",
+          "isCorrect": false
+        },
+        {
+          "text": "He will do greater works than these",
+          "isCorrect": true
+        },
+        {
+          "text": "He will never be troubled",
+          "isCorrect": false
+        },
+        {
+          "text": "He will judge the world",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus promise about asking in his name?",
+      "explanation": "He said that whatever they ask in his name, he will do it, that the Father may be glorified in the Son.",
+      "bibleReference": "John 14:13-14",
+      "answers": [
+        {
+          "text": "He will do whatever they ask in his name",
+          "isCorrect": true
+        },
+        {
+          "text": "They must ask the Father alone",
+          "isCorrect": false
+        },
+        {
+          "text": "They should ask him nothing",
+          "isCorrect": false
+        },
+        {
+          "text": "They will receive only later",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus call the Counselor whom the Father will give?",
+      "explanation": "He says the Father will give them another Counselor to be with them forever: the Spirit of truth.",
+      "bibleReference": "John 14:16-17",
+      "answers": [
+        {
+          "text": "The spirit of the world",
+          "isCorrect": false
+        },
+        {
+          "text": "The prince of the world",
+          "isCorrect": false
+        },
+        {
+          "text": "The Spirit of truth",
+          "isCorrect": true
+        },
+        {
+          "text": "An angel from heaven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will the Holy Spirit do, according to Jesus?",
+      "explanation": "He says the Counselor, the Holy Spirit, will teach them all things and remind them of all that he said to them.",
+      "bibleReference": "John 14:26",
+      "answers": [
+        {
+          "text": "Bring them to the Father's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Teach them all things and remind them",
+          "isCorrect": true
+        },
+        {
+          "text": "Keep them out of the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "Say nothing to them at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of peace does Jesus say he gives?",
+      "explanation": "He says he leaves them his peace, and that he does not give as the world gives.",
+      "bibleReference": "John 14:27",
+      "answers": [
+        {
+          "text": "Peace that lasts a little while",
+          "isCorrect": false
+        },
+        {
+          "text": "The same peace the world gives",
+          "isCorrect": false
+        },
+        {
+          "text": "Peace only after he returns",
+          "isCorrect": false
+        },
+        {
+          "text": "His own peace, not as the world gives",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say they would have done if they loved him?",
+      "explanation": "He says that if they loved him they would have rejoiced, because he said he is going to his Father.",
+      "bibleReference": "John 14:28",
+      "answers": [
+        {
+          "text": "They would have wept",
+          "isCorrect": false
+        },
+        {
+          "text": "They would have followed him at once",
+          "isCorrect": false
+        },
+        {
+          "text": "They would have rejoiced",
+          "isCorrect": true
+        },
+        {
+          "text": "They would have gone to the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what words does Jesus end this chapter?",
+      "explanation": "After saying that he does as the Father commanded him, he says, \"Arise, let's go from here.\"",
+      "bibleReference": "John 14:31",
+      "answers": [
+        {
+          "text": "Arise, let's go from here",
+          "isCorrect": true
+        },
+        {
+          "text": "Go your way, and sin no more",
+          "isCorrect": false
+        },
+        {
+          "text": "It is finished",
+          "isCorrect": false
+        },
+        {
+          "text": "I have overcome the world",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

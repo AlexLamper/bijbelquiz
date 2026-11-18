@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 16",
+  "description": "Ten questions on John 16: sorrow turned into joy, the work of the Spirit of truth, and overcoming the world.",
+  "slug": "john-bible-quiz-part-16",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does Jesus say will be done to his disciples?",
+      "explanation": "He says that they will put them out of the synagogues, and that the time comes when whoever kills them will think he offers service to God.",
+      "bibleReference": "John 16:2",
+      "answers": [
+        {
+          "text": "They will be put out of the synagogues",
+          "isCorrect": true
+        },
+        {
+          "text": "They will be made rulers",
+          "isCorrect": false
+        },
+        {
+          "text": "They will suffer nothing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be sent to the Greeks",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had filled the disciples' heart because of what Jesus told them?",
+      "explanation": "He says that because he has told them these things, sorrow has filled their heart.",
+      "bibleReference": "John 16:6",
+      "answers": [
+        {
+          "text": "Joy",
+          "isCorrect": false
+        },
+        {
+          "text": "Sorrow",
+          "isCorrect": true
+        },
+        {
+          "text": "Peace",
+          "isCorrect": false
+        },
+        {
+          "text": "Anger",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does Jesus say it is to their advantage that he goes away?",
+      "explanation": "He says that if he does not go away, the Counselor will not come to them, but if he goes, he will send him to them.",
+      "bibleReference": "John 16:7",
+      "answers": [
+        {
+          "text": "Otherwise the world would hate them more",
+          "isCorrect": false
+        },
+        {
+          "text": "Otherwise they would bear no fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "Otherwise the Counselor will not come",
+          "isCorrect": true
+        },
+        {
+          "text": "Otherwise they would be put out of the synagogue",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "About what three things will the Counselor convict the world?",
+      "explanation": "When he has come, he will convict the world about sin, about righteousness, and about judgment.",
+      "bibleReference": "John 16:8",
+      "answers": [
+        {
+          "text": "The law, the prophets and the psalms",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin, death and the law",
+          "isCorrect": false
+        },
+        {
+          "text": "The Father, the Son and the world",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin, righteousness and judgment",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will the Spirit of truth do when he has come?",
+      "explanation": "He will guide them into all truth, will not speak from himself, and will declare to them things that are coming.",
+      "bibleReference": "John 16:13",
+      "answers": [
+        {
+          "text": "Speak only from himself",
+          "isCorrect": false
+        },
+        {
+          "text": "Guide them into all truth",
+          "isCorrect": true
+        },
+        {
+          "text": "Take away all their questions",
+          "isCorrect": false
+        },
+        {
+          "text": "Convict them of their own sin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What image does Jesus use for sorrow that turns into joy?",
+      "explanation": "He speaks of a woman who has sorrow when she gives birth, but does not remember the anguish for the joy that a child is born.",
+      "bibleReference": "John 16:21",
+      "answers": [
+        {
+          "text": "A woman giving birth to a child",
+          "isCorrect": true
+        },
+        {
+          "text": "A grain of wheat in the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "A branch pruned by the farmer",
+          "isCorrect": false
+        },
+        {
+          "text": "A shepherd finding his sheep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say about the joy they will have when he sees them again?",
+      "explanation": "He says their heart will rejoice, and that no one will take their joy away from them.",
+      "bibleReference": "John 16:22",
+      "answers": [
+        {
+          "text": "It will last only a little while",
+          "isCorrect": false
+        },
+        {
+          "text": "The world will share it with them",
+          "isCorrect": false
+        },
+        {
+          "text": "It will come only after the judgment",
+          "isCorrect": false
+        },
+        {
+          "text": "No one will take it away from them",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How had Jesus been speaking to them until that time?",
+      "explanation": "He says he has spoken these things to them in figures of speech, but that the time is coming when he will tell them plainly about the Father.",
+      "bibleReference": "John 16:25",
+      "answers": [
+        {
+          "text": "Plainly about the Father",
+          "isCorrect": false
+        },
+        {
+          "text": "In the words of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "In figures of speech",
+          "isCorrect": true
+        },
+        {
+          "text": "In the words of Isaiah the prophet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the disciples say they now knew about him?",
+      "explanation": "They said that now they know that he knows all things and does not need anyone to question him.",
+      "bibleReference": "John 16:30",
+      "answers": [
+        {
+          "text": "That he knows all things",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would not leave them",
+          "isCorrect": false
+        },
+        {
+          "text": "That their sorrow would not return",
+          "isCorrect": false
+        },
+        {
+          "text": "That they would not be scattered",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say at the end of this chapter about the world?",
+      "explanation": "He says that in the world they have trouble, but tells them to cheer up, because he has overcome the world.",
+      "bibleReference": "John 16:33",
+      "answers": [
+        {
+          "text": "The world will give them peace",
+          "isCorrect": false
+        },
+        {
+          "text": "They will have no trouble",
+          "isCorrect": false
+        },
+        {
+          "text": "He has overcome the world",
+          "isCorrect": true
+        },
+        {
+          "text": "The world has overcome him",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

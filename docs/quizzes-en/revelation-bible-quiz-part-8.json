@@ -1,0 +1,242 @@
+{
+  "title": "Revelation Bible Quiz - Chapter 8",
+  "description": "Ten questions on Revelation 8: the seventh seal, the golden censer and the first four trumpets.",
+  "slug": "revelation-bible-quiz-part-8",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What happened in heaven when the seventh seal was opened?",
+      "explanation": "When he opened the seventh seal, there was silence in heaven for about half an hour.",
+      "bibleReference": "Revelation 8:1",
+      "answers": [
+        {
+          "text": "There was a great earthquake",
+          "isCorrect": false
+        },
+        {
+          "text": "Great voices praised God",
+          "isCorrect": false
+        },
+        {
+          "text": "There was silence for about half an hour",
+          "isCorrect": true
+        },
+        {
+          "text": "The temple was filled with smoke",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was given to the seven angels who stand before God?",
+      "explanation": "John saw the seven angels who stand before God, and seven trumpets were given to them.",
+      "bibleReference": "Revelation 8:2",
+      "answers": [
+        {
+          "text": "Seven trumpets",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven golden bowls",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven crowns",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven sharp sickles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the angel who stood over the altar add to the prayers of all the saints?",
+      "explanation": "Another angel came with a golden censer, and much incense was given to him to add to the prayers of all the saints on the golden altar.",
+      "bibleReference": "Revelation 8:3",
+      "answers": [
+        {
+          "text": "Fire from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Water from the springs",
+          "isCorrect": false
+        },
+        {
+          "text": "Much incense",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the angel do with the censer after filling it with fire from the altar?",
+      "explanation": "The angel filled the censer with the fire of the altar and threw it on the earth, and thunders, sounds, lightnings and an earthquake followed.",
+      "bibleReference": "Revelation 8:5",
+      "answers": [
+        {
+          "text": "He set it before the throne",
+          "isCorrect": false
+        },
+        {
+          "text": "He threw it on the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "He poured it into the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave it to another angel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What followed when the first angel sounded his trumpet?",
+      "explanation": "There followed hail and fire, mixed with blood, and one third of the earth and of the trees was burned up, and all green grass was burned up.",
+      "bibleReference": "Revelation 8:7",
+      "answers": [
+        {
+          "text": "A great star burning like a torch",
+          "isCorrect": false
+        },
+        {
+          "text": "Locusts out of the smoke",
+          "isCorrect": false
+        },
+        {
+          "text": "Hail and fire, mixed with blood",
+          "isCorrect": true
+        },
+        {
+          "text": "Harmful sores on people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was thrown into the sea when the second angel sounded?",
+      "explanation": "Something like a great burning mountain was thrown into the sea, and one third of the sea became blood.",
+      "bibleReference": "Revelation 8:8",
+      "answers": [
+        {
+          "text": "A censer filled with fire",
+          "isCorrect": false
+        },
+        {
+          "text": "Something like a great burning mountain",
+          "isCorrect": true
+        },
+        {
+          "text": "A star called Wormwood",
+          "isCorrect": false
+        },
+        {
+          "text": "A millstone of the great city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to one third of the ships?",
+      "explanation": "One third of the living creatures in the sea died, and one third of the ships were destroyed.",
+      "bibleReference": "Revelation 8:9",
+      "answers": [
+        {
+          "text": "They were destroyed",
+          "isCorrect": true
+        },
+        {
+          "text": "They were driven to the land",
+          "isCorrect": false
+        },
+        {
+          "text": "They were burned by hail",
+          "isCorrect": false
+        },
+        {
+          "text": "They turned black as sackcloth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is the name of the great star that fell when the third angel sounded?",
+      "explanation": "A great star fell from the sky, burning like a torch, and the name of the star is called “Wormwood”.",
+      "bibleReference": "Revelation 8:10-11",
+      "answers": [
+        {
+          "text": "Abaddon",
+          "isCorrect": false
+        },
+        {
+          "text": "Megiddo",
+          "isCorrect": false
+        },
+        {
+          "text": "Apollyon",
+          "isCorrect": false
+        },
+        {
+          "text": "Wormwood",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was struck when the fourth angel sounded?",
+      "explanation": "One third of the sun was struck, and one third of the moon, and one third of the stars, so that one third of them would be darkened.",
+      "bibleReference": "Revelation 8:12",
+      "answers": [
+        {
+          "text": "One third of the sun, the moon and the stars",
+          "isCorrect": true
+        },
+        {
+          "text": "The throne of the beast and his kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "The rivers and the springs of water",
+          "isCorrect": false
+        },
+        {
+          "text": "The great river Euphrates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the eagle flying in mid heaven cry out?",
+      "explanation": "John heard an eagle flying in mid heaven saying with a loud voice, “Woe! Woe! Woe for those who dwell on the earth,” because of the trumpets of the three angels who were yet to sound.",
+      "bibleReference": "Revelation 8:13",
+      "answers": [
+        {
+          "text": "“Holy, holy, holy is the Lord God”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Babylon the great has fallen”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Woe! Woe! Woe for those who dwell on the earth”",
+          "isCorrect": true
+        },
+        {
+          "text": "“Fear the Lord, and give him glory!”",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

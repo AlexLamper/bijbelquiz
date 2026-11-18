@@ -1,239 +1,239 @@
 {
   "title": "John Bible Quiz - Chapter 11",
-  "description": "Ten questions on John 11: the death and raising of Lazarus.",
+  "description": "Ten questions on John 11: the sickness and death of Lazarus, Martha and Mary, and the call at the tomb in Bethany.",
   "slug": "john-bible-quiz-part-11",
-  "categorySlug": "miracles-and-signs",
+  "categorySlug": "new-testament",
   "rewardXp": 100,
-  "difficulty": "medium",
+  "difficulty": "easy",
   "isPremium": false,
   "status": "draft",
   "questions": [
     {
-      "text": "Whom did Jesus raise from the dead in this chapter?",
-      "explanation": "Jesus called Lazarus out of the tomb after he had been dead four days.",
-      "bibleReference": "John 11:43-44",
+      "text": "Who was sick in Bethany, the village of Mary and her sister Martha?",
+      "explanation": "A certain man was sick, Lazarus from Bethany, of the village of Mary and her sister Martha.",
+      "bibleReference": "John 11:1",
       "answers": [
+        {
+          "text": "Thomas",
+          "isCorrect": false
+        },
+        {
+          "text": "Caiaphas",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon",
+          "isCorrect": false
+        },
         {
           "text": "Lazarus",
           "isCorrect": true
-        },
-        {
-          "text": "Jairus's daughter",
-          "isCorrect": false
-        },
-        {
-          "text": "The widow's son",
-          "isCorrect": false
-        },
-        {
-          "text": "Stephen",
-          "isCorrect": false
         }
       ]
     },
     {
-      "text": "Who were the sisters of Lazarus?",
-      "explanation": "Mary and Martha lived in Bethany with their brother Lazarus.",
-      "bibleReference": "John 11:1",
+      "text": "What did Jesus say about this sickness when he heard of it?",
+      "explanation": "He said that this sickness is not to death, but for the glory of God, that God's Son may be glorified by it.",
+      "bibleReference": "John 11:4",
       "answers": [
         {
-          "text": "Ruth and Naomi",
+          "text": "It is the result of sin",
           "isCorrect": false
         },
         {
-          "text": "Leah and Rachel",
+          "text": "It will last only two days",
           "isCorrect": false
         },
         {
-          "text": "Mary and Martha",
+          "text": "It is for the glory of God",
           "isCorrect": true
         },
         {
-          "text": "Elizabeth and Anna",
+          "text": "It will never be healed",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "Which village did Lazarus come from?",
-      "explanation": "Lazarus was from Bethany, the village of Mary and her sister Martha.",
-      "bibleReference": "John 11:1",
+      "text": "What did Jesus do when he heard that Lazarus was sick?",
+      "explanation": "When he heard that he was sick, he stayed two days in the place where he was.",
+      "bibleReference": "John 11:6",
       "answers": [
         {
-          "text": "Nazareth",
+          "text": "He went at once to Bethany",
           "isCorrect": false
         },
         {
-          "text": "Bethany",
+          "text": "He stayed two days where he was",
           "isCorrect": true
         },
         {
-          "text": "Capernaum",
+          "text": "He sent Thomas ahead of him",
           "isCorrect": false
         },
         {
-          "text": "Bethlehem",
+          "text": "He went up to Jerusalem",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "How long had Lazarus been in the tomb when Jesus arrived?",
-      "explanation": "Jesus found that Lazarus had been in the tomb four days already.",
+      "text": "Which disciple said, \"Let's go also, that we may die with him\"?",
+      "explanation": "Thomas, who is called Didymus, said this to his fellow disciples.",
+      "bibleReference": "John 11:16",
+      "answers": [
+        {
+          "text": "Thomas",
+          "isCorrect": true
+        },
+        {
+          "text": "Martha",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary",
+          "isCorrect": false
+        },
+        {
+          "text": "Caiaphas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long had Lazarus already been in the tomb when Jesus came?",
+      "explanation": "When Jesus came, he found that Lazarus had been in the tomb four days already.",
       "bibleReference": "John 11:17",
       "answers": [
+        {
+          "text": "Two days",
+          "isCorrect": false
+        },
         {
           "text": "One day",
           "isCorrect": false
         },
         {
-          "text": "Three days",
-          "isCorrect": false
+          "text": "Four days",
+          "isCorrect": true
         },
         {
           "text": "Seven days",
-          "isCorrect": false
-        },
-        {
-          "text": "Four days",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "text": "What is the shortest verse in the Bible, found in this chapter?",
-      "explanation": "Seeing the grief of Mary and those with her, Jesus wept.",
-      "bibleReference": "John 11:35",
-      "answers": [
-        {
-          "text": "\"Jesus prayed.\"",
-          "isCorrect": false
-        },
-        {
-          "text": "\"Jesus spoke.\"",
-          "isCorrect": false
-        },
-        {
-          "text": "\"Jesus wept.\"",
-          "isCorrect": true
-        },
-        {
-          "text": "\"Jesus sighed.\"",
           "isCorrect": false
         }
       ]
     },
     {
       "text": "What did Jesus say to Martha about himself?",
-      "explanation": "Jesus said, \"I am the resurrection and the life. He who believes in me, though he die, yet will he live.\"",
+      "explanation": "Jesus said to her that he is the resurrection and the life, and that whoever believes in him will still live, even if he dies.",
       "bibleReference": "John 11:25",
       "answers": [
         {
-          "text": "\"I am the resurrection and the life.\"",
+          "text": "I am the true vine",
+          "isCorrect": false
+        },
+        {
+          "text": "I am the good shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "I am the light of the world",
+          "isCorrect": false
+        },
+        {
+          "text": "I am the resurrection and the life",
           "isCorrect": true
-        },
-        {
-          "text": "\"I am the bread of life.\"",
-          "isCorrect": false
-        },
-        {
-          "text": "\"I am the good shepherd.\"",
-          "isCorrect": false
-        },
-        {
-          "text": "\"I am the true vine.\"",
-          "isCorrect": false
         }
       ]
     },
     {
-      "text": "What closed the entrance of the tomb?",
-      "explanation": "The tomb was a cave, and a stone lay against it.",
-      "bibleReference": "John 11:38",
+      "text": "What did Jesus do when he saw Mary and the Jews with her weeping?",
+      "explanation": "He groaned in the spirit and was troubled, asked where they had laid him, and wept.",
+      "bibleReference": "John 11:33-35",
       "answers": [
         {
-          "text": "A wooden door",
-          "isCorrect": false
-        },
-        {
-          "text": "A woven mat",
-          "isCorrect": false
-        },
-        {
-          "text": "A bronze gate",
-          "isCorrect": false
-        },
-        {
-          "text": "A stone",
+          "text": "He was troubled and wept",
           "isCorrect": true
+        },
+        {
+          "text": "He rebuked those who wept",
+          "isCorrect": false
+        },
+        {
+          "text": "He said nothing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent the mourners away",
+          "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did Martha object when Jesus asked to take away the stone?",
-      "explanation": "Martha said, \"Lord, by this time there is a stench, for he has been dead four days.\"",
+      "text": "What did Martha say when Jesus told them to take away the stone?",
+      "explanation": "Martha said that by this time there is a stench, for Lazarus had been dead four days.",
       "bibleReference": "John 11:39",
       "answers": [
+        {
+          "text": "That the priests had sealed the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "That there was a stench by now",
+          "isCorrect": true
+        },
         {
           "text": "That the stone was too heavy",
           "isCorrect": false
         },
         {
-          "text": "That he had been dead four days",
-          "isCorrect": true
-        },
-        {
-          "text": "That the Sabbath had begun",
-          "isCorrect": false
-        },
-        {
-          "text": "That the tomb was not theirs",
+          "text": "That Lazarus was only asleep",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did Jesus cry out with a loud voice at the tomb?",
-      "explanation": "Jesus cried with a loud voice, \"Lazarus, come out!\"",
+      "text": "What did Jesus cry with a loud voice at the tomb?",
+      "explanation": "When he had said this, he cried with a loud voice, \"Lazarus, come out!\"",
       "bibleReference": "John 11:43",
       "answers": [
         {
-          "text": "\"Lazarus, wake up!\"",
+          "text": "Woman, behold your son!",
           "isCorrect": false
         },
         {
-          "text": "\"Lazarus, follow me!\"",
+          "text": "It is finished",
           "isCorrect": false
         },
         {
-          "text": "\"Lazarus, be healed!\"",
+          "text": "Peace I leave with you",
           "isCorrect": false
         },
         {
-          "text": "\"Lazarus, come out!\"",
+          "text": "Lazarus, come out!",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "How was Lazarus dressed when he came out?",
-      "explanation": "He came out bound hand and foot with wrappings, and his face was wrapped with a cloth.",
-      "bibleReference": "John 11:44",
+      "text": "What did Caiaphas, the high priest that year, say to the council?",
+      "explanation": "He said it is advantageous for them that one man should die for the people, and that the whole nation not perish.",
+      "bibleReference": "John 11:49-50",
       "answers": [
         {
-          "text": "In grave clothes, with his face wrapped",
+          "text": "That Jesus should be set free",
+          "isCorrect": false
+        },
+        {
+          "text": "That one man should die for the people",
           "isCorrect": true
         },
         {
-          "text": "In a clean white linen robe",
+          "text": "That Lazarus should be killed",
           "isCorrect": false
         },
         {
-          "text": "In the garments of a king",
-          "isCorrect": false
-        },
-        {
-          "text": "In the clothes he had worn in life",
+          "text": "That the Romans should be warned",
           "isCorrect": false
         }
       ]

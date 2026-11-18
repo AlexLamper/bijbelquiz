@@ -1,0 +1,242 @@
+{
+  "title": "Titus Bible Quiz - Chapter 1",
+  "description": "Ten questions on Titus 1: the greeting, the elders left to be appointed in Crete, what the overseer must be, and the unruly talkers who deny God by their deeds.",
+  "slug": "titus-bible-quiz-part-1",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does verse 2 say about the God who promised eternal life before time began?",
+      "explanation": "Verse 2 speaks of the hope of eternal life, which God, who cannot lie, promised before time began.",
+      "bibleReference": "Titus 1:2",
+      "answers": [
+        {
+          "text": "He cannot lie",
+          "isCorrect": true
+        },
+        {
+          "text": "He cannot be seen",
+          "isCorrect": false
+        },
+        {
+          "text": "He never sleeps",
+          "isCorrect": false
+        },
+        {
+          "text": "He knows no end",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Titus left behind?",
+      "explanation": "Verse 5 says Paul left him in Crete so that he would set in order the things that were lacking.",
+      "bibleReference": "Titus 1:5",
+      "answers": [
+        {
+          "text": "Ephesus",
+          "isCorrect": false
+        },
+        {
+          "text": "Troas",
+          "isCorrect": false
+        },
+        {
+          "text": "Crete",
+          "isCorrect": true
+        },
+        {
+          "text": "Corinth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Titus to appoint in every city?",
+      "explanation": "Verse 5 says he was to set in order the things that were lacking and appoint elders in every city, as he had been directed.",
+      "bibleReference": "Titus 1:5",
+      "answers": [
+        {
+          "text": "Judges",
+          "isCorrect": false
+        },
+        {
+          "text": "Elders",
+          "isCorrect": true
+        },
+        {
+          "text": "Teachers",
+          "isCorrect": false
+        },
+        {
+          "text": "Prophets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 6 say about the marriage of the blameless man?",
+      "explanation": "Verse 6 says he must be blameless, the husband of one wife, having children who believe and who are not accused of loose or unruly behavior.",
+      "bibleReference": "Titus 1:6",
+      "answers": [
+        {
+          "text": "He must marry a woman from his own city",
+          "isCorrect": false
+        },
+        {
+          "text": "He must not be married at all",
+          "isCorrect": false
+        },
+        {
+          "text": "He must marry before he has children",
+          "isCorrect": false
+        },
+        {
+          "text": "He must be the husband of one wife",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How must the overseer be, as God's steward?",
+      "explanation": "Verse 7 says the overseer must be blameless, as God's steward, not self-pleasing, not easily angered, not given to wine, not violent and not greedy for dishonest gain.",
+      "bibleReference": "Titus 1:7",
+      "answers": [
+        {
+          "text": "Blameless",
+          "isCorrect": true
+        },
+        {
+          "text": "Wealthy",
+          "isCorrect": false
+        },
+        {
+          "text": "Unmarried",
+          "isCorrect": false
+        },
+        {
+          "text": "Elderly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is the overseer to be given to, according to verse 8?",
+      "explanation": "Verse 8 says he should be given to hospitality, a lover of good, sober minded, fair, holy and self-controlled.",
+      "bibleReference": "Titus 1:8",
+      "answers": [
+        {
+          "text": "To fasting",
+          "isCorrect": false
+        },
+        {
+          "text": "To hospitality",
+          "isCorrect": true
+        },
+        {
+          "text": "To silence",
+          "isCorrect": false
+        },
+        {
+          "text": "To study",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did one of their own prophets say about Cretans?",
+      "explanation": "Verse 12 quotes a prophet of their own who said, \"Cretans are always liars, evil beasts, and idle gluttons.\"",
+      "bibleReference": "Titus 1:12",
+      "answers": [
+        {
+          "text": "That they are wise in their own eyes",
+          "isCorrect": false
+        },
+        {
+          "text": "That they are quick to hear the truth",
+          "isCorrect": false
+        },
+        {
+          "text": "That they are poor but generous people",
+          "isCorrect": false
+        },
+        {
+          "text": "That they are always liars and evil beasts",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What should they not pay attention to, according to verse 14?",
+      "explanation": "Verse 14 says they should not pay attention to Jewish fables and the commandments of men who turn away from the truth.",
+      "bibleReference": "Titus 1:14",
+      "answers": [
+        {
+          "text": "The letters sent from Crete",
+          "isCorrect": false
+        },
+        {
+          "text": "The songs of the vain talkers",
+          "isCorrect": false
+        },
+        {
+          "text": "Jewish fables and commandments of men",
+          "isCorrect": true
+        },
+        {
+          "text": "The teaching of the appointed elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 15, what is pure to those who are defiled and unbelieving?",
+      "explanation": "Verse 15 says that to the pure all things are pure, but to those who are defiled and unbelieving nothing is pure, and that their mind and conscience are defiled.",
+      "bibleReference": "Titus 1:15",
+      "answers": [
+        {
+          "text": "Nothing",
+          "isCorrect": true
+        },
+        {
+          "text": "Only their words",
+          "isCorrect": false
+        },
+        {
+          "text": "Only their deeds",
+          "isCorrect": false
+        },
+        {
+          "text": "All things",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do these people do to God by their deeds, though they profess that they know him?",
+      "explanation": "Verse 16 says they profess that they know God, but by their deeds they deny him, being abominable, disobedient and unfit for any good work.",
+      "bibleReference": "Titus 1:16",
+      "answers": [
+        {
+          "text": "They praise him",
+          "isCorrect": false
+        },
+        {
+          "text": "They deny him",
+          "isCorrect": true
+        },
+        {
+          "text": "They test him",
+          "isCorrect": false
+        },
+        {
+          "text": "They serve him",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

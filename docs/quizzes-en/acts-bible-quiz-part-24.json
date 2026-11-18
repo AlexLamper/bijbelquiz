@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 24",
+  "description": "Ten questions on Acts 24: the accusation by Tertullus, Paul's defense before Felix, and the two years that followed.",
+  "slug": "acts-bible-quiz-part-24",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who was the orator who came down with the high priest Ananias to inform the governor against Paul?",
+      "explanation": "After five days the high priest, Ananias, came down with certain elders and an orator, one Tertullus.",
+      "bibleReference": "Acts 24:1",
+      "answers": [
+        {
+          "text": "Claudius Lysias",
+          "isCorrect": false
+        },
+        {
+          "text": "Tertullus",
+          "isCorrect": true
+        },
+        {
+          "text": "Porcius Festus",
+          "isCorrect": false
+        },
+        {
+          "text": "Aristarchus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Tertullus call Paul when he began to accuse him?",
+      "explanation": "Tertullus called him a plague, an instigator of insurrections among all the Jews, and a ringleader of the sect of the Nazarenes.",
+      "bibleReference": "Acts 24:5",
+      "answers": [
+        {
+          "text": "A teacher of a new law for the city of Rome",
+          "isCorrect": false
+        },
+        {
+          "text": "A false prophet who came out of Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "A thief who robbed the temple treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "A plague and a ringleader of the sect of the Nazarenes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long did Paul say it had been since he went up to worship at Jerusalem?",
+      "explanation": "Paul said the governor could verify that it was not more than twelve days since he went up to worship at Jerusalem.",
+      "bibleReference": "Acts 24:11",
+      "answers": [
+        {
+          "text": "Not more than twelve days",
+          "isCorrect": true
+        },
+        {
+          "text": "Not more than two years",
+          "isCorrect": false
+        },
+        {
+          "text": "About forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "More than ten years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Paul say his accusers call the Way?",
+      "explanation": "Paul confesses that after the Way, which they call a sect, he serves the God of his fathers.",
+      "bibleReference": "Acts 24:14",
+      "answers": [
+        {
+          "text": "A synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "A kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "A sect",
+          "isCorrect": true
+        },
+        {
+          "text": "A conspiracy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What hope toward God does Paul say he has, which his accusers also look for?",
+      "explanation": "Paul says he has hope toward God that there will be a resurrection of the dead, both of the just and unjust.",
+      "bibleReference": "Acts 24:15",
+      "answers": [
+        {
+          "text": "That the temple will be rebuilt in glory",
+          "isCorrect": false
+        },
+        {
+          "text": "That Rome will be judged by the law",
+          "isCorrect": false
+        },
+        {
+          "text": "That the nations will come to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "That there will be a resurrection of the just and the unjust",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Paul say he had come to his nation after some years?",
+      "explanation": "Paul says he came to bring gifts for the needy to his nation, and offerings.",
+      "bibleReference": "Acts 24:17",
+      "answers": [
+        {
+          "text": "To gather a crowd in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "To bring gifts for the needy and offerings",
+          "isCorrect": true
+        },
+        {
+          "text": "To collect letters from the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "To stand trial before the council",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose arrival did Felix say he would wait for before deciding the case?",
+      "explanation": "Felix deferred them, saying that when Lysias, the commanding officer, came down, he would decide their case.",
+      "bibleReference": "Acts 24:22",
+      "answers": [
+        {
+          "text": "Ananias, the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Tertullus, the orator",
+          "isCorrect": false
+        },
+        {
+          "text": "Lysias, the commanding officer",
+          "isCorrect": true
+        },
+        {
+          "text": "Agrippa, the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came with Felix when he sent for Paul and heard him concerning the faith in Christ Jesus?",
+      "explanation": "After some days Felix came with Drusilla, his wife, who was a Jewess, and sent for Paul.",
+      "bibleReference": "Acts 24:24",
+      "answers": [
+        {
+          "text": "Drusilla, his wife",
+          "isCorrect": true
+        },
+        {
+          "text": "Bernice, his sister",
+          "isCorrect": false
+        },
+        {
+          "text": "Ananias, the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Julius, the centurion",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Felix react as Paul reasoned about righteousness, self-control and the judgment to come?",
+      "explanation": "Felix was terrified and told Paul to go his way for that time, saying he would summon him when it was convenient.",
+      "bibleReference": "Acts 24:25",
+      "answers": [
+        {
+          "text": "He had Paul beaten and chained",
+          "isCorrect": false
+        },
+        {
+          "text": "He set Paul free at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He laughed and called Paul crazy",
+          "isCorrect": false
+        },
+        {
+          "text": "He was terrified and sent Paul away for the time",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who succeeded Felix when two years were fulfilled?",
+      "explanation": "When two years were fulfilled, Felix was succeeded by Porcius Festus, and Felix left Paul in bonds to gain favor with the Jews.",
+      "bibleReference": "Acts 24:27",
+      "answers": [
+        {
+          "text": "King Agrippa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porcius Festus",
+          "isCorrect": true
+        },
+        {
+          "text": "Claudius Lysias",
+          "isCorrect": false
+        },
+        {
+          "text": "Publius of Malta",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

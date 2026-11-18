@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 4",
+  "description": "Ten questions on Acts 4: Peter and John before the council, the command not to speak in Jesus' name, and the believers sharing all things.",
+  "slug": "acts-bible-quiz-part-4",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Why were the priests, the captain of the temple and the Sadducees upset?",
+      "explanation": "They were upset because Peter and John taught the people and proclaimed in Jesus the resurrection from the dead.",
+      "bibleReference": "Acts 4:1-2",
+      "answers": [
+        {
+          "text": "Because they healed on a Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they taught the resurrection in Jesus",
+          "isCorrect": true
+        },
+        {
+          "text": "Because they entered the temple at evening",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they spoke against the law of Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What number did the men who believed come to be?",
+      "explanation": "Many of those who heard the word believed, and the number of the men came to be about five thousand.",
+      "bibleReference": "Acts 4:4",
+      "answers": [
+        {
+          "text": "About five thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "About three thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About one hundred twenty",
+          "isCorrect": false
+        },
+        {
+          "text": "About seventy-five",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is named as the high priest at this gathering?",
+      "explanation": "Annas the high priest was there, with Caiaphas, John, Alexander, and as many as were relatives of the high priest.",
+      "bibleReference": "Acts 4:6",
+      "answers": [
+        {
+          "text": "Alexander",
+          "isCorrect": false
+        },
+        {
+          "text": "Caiaphas",
+          "isCorrect": false
+        },
+        {
+          "text": "Annas",
+          "isCorrect": true
+        },
+        {
+          "text": "Gamaliel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the rulers ask Peter and John when they stood them in the middle?",
+      "explanation": "They inquired, \"By what power, or in what name, have you done this?\"",
+      "bibleReference": "Acts 4:7",
+      "answers": [
+        {
+          "text": "Whether they had been with Jesus",
+          "isCorrect": false
+        },
+        {
+          "text": "Who had sent them to the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Why they had come at evening",
+          "isCorrect": false
+        },
+        {
+          "text": "By what power or in what name they had done this",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Peter say about salvation?",
+      "explanation": "Peter said there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.",
+      "bibleReference": "Acts 4:12",
+      "answers": [
+        {
+          "text": "That it belongs to the rulers of the people",
+          "isCorrect": false
+        },
+        {
+          "text": "That there is no other name by which we must be saved",
+          "isCorrect": true
+        },
+        {
+          "text": "That it comes through the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "That it is for Israel only",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the rulers recognize about these unlearned men?",
+      "explanation": "When they saw the boldness of Peter and John they marveled, and recognized that they had been with Jesus.",
+      "bibleReference": "Acts 4:13",
+      "answers": [
+        {
+          "text": "That they had been with Jesus",
+          "isCorrect": true
+        },
+        {
+          "text": "That they were trained scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "That they were relatives of the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "That they came from Samaria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the council command Peter and John?",
+      "explanation": "They called them and commanded them not to speak at all nor teach in the name of Jesus.",
+      "bibleReference": "Acts 4:18",
+      "answers": [
+        {
+          "text": "To leave Jerusalem at once and not return",
+          "isCorrect": false
+        },
+        {
+          "text": "To bring the healed man before them",
+          "isCorrect": false
+        },
+        {
+          "text": "To pay a price for the miracle",
+          "isCorrect": false
+        },
+        {
+          "text": "Not to speak at all nor teach in Jesus' name",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Peter and John answer that command?",
+      "explanation": "They answered that they could not help telling the things which they had seen and heard.",
+      "bibleReference": "Acts 4:19-20",
+      "answers": [
+        {
+          "text": "That they would obey the rulers",
+          "isCorrect": false
+        },
+        {
+          "text": "That they would teach in secret",
+          "isCorrect": false
+        },
+        {
+          "text": "That they cannot stop telling what they saw",
+          "isCorrect": true
+        },
+        {
+          "text": "That they would first ask the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened when the believers had prayed together?",
+      "explanation": "When they had prayed, the place where they were gathered was shaken, they were all filled with the Holy Spirit, and spoke the word of God with boldness.",
+      "bibleReference": "Acts 4:31",
+      "answers": [
+        {
+          "text": "The place where they were gathered was shaken",
+          "isCorrect": true
+        },
+        {
+          "text": "A cloud filled the house where they sat",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel opened the doors for them",
+          "isCorrect": false
+        },
+        {
+          "text": "The rulers came and threatened them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say the name Barnabas means?",
+      "explanation": "Joses, who was also called Barnabas by the apostles, is said to mean Son of Encouragement.",
+      "bibleReference": "Acts 4:36",
+      "answers": [
+        {
+          "text": "Son of Consolation of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Son of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "Son of Encouragement",
+          "isCorrect": true
+        },
+        {
+          "text": "Servant of the apostles",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

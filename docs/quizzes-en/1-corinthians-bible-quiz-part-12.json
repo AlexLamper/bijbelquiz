@@ -1,0 +1,242 @@
+{
+  "title": "1 Corinthians Bible Quiz - Chapter 12",
+  "description": "Ten questions on 1 Corinthians 12: various gifts and one Spirit, one body with many members, the foot and the ear, and those God set in the assembly.",
+  "slug": "1-corinthians-bible-quiz-part-12",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "According to verse 3, what can no one say except by the Holy Spirit?",
+      "explanation": "The verse says no one can say, \"Jesus is Lord,\" but by the Holy Spirit.",
+      "bibleReference": "1 Corinthians 12:3",
+      "answers": [
+        {
+          "text": "\"Jesus is accursed\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Jesus is Lord\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"God is among you\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Amen\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do verses 4 to 6 say about the various kinds of gifts, service and workings?",
+      "explanation": "The verses say there are various kinds of gifts but the same Spirit, various kinds of service and the same Lord, various kinds of workings but the same God.",
+      "bibleReference": "1 Corinthians 12:4-6",
+      "answers": [
+        {
+          "text": "There are various kinds, but the same Spirit, Lord and God",
+          "isCorrect": true
+        },
+        {
+          "text": "There is one kind of each for every believer",
+          "isCorrect": false
+        },
+        {
+          "text": "Each kind comes from a different spirit",
+          "isCorrect": false
+        },
+        {
+          "text": "The kinds will all cease in time",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two gifts does verse 8 name?",
+      "explanation": "The verse says that to one is given the word of wisdom through the Spirit, and to another the word of knowledge.",
+      "bibleReference": "1 Corinthians 12:8",
+      "answers": [
+        {
+          "text": "Faith and the gifts of healings",
+          "isCorrect": false
+        },
+        {
+          "text": "Prophecy and the discerning of spirits",
+          "isCorrect": false
+        },
+        {
+          "text": "The word of wisdom and the word of knowledge",
+          "isCorrect": true
+        },
+        {
+          "text": "Different kinds of languages and their interpretation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does verse 11 say the Spirit distributes these gifts?",
+      "explanation": "The verse says the one and the same Spirit produces all of these, distributing to each one separately as he desires.",
+      "bibleReference": "1 Corinthians 12:11",
+      "answers": [
+        {
+          "text": "Equally to all of them at the same time",
+          "isCorrect": false
+        },
+        {
+          "text": "Only to those who ask him for them",
+          "isCorrect": false
+        },
+        {
+          "text": "According to each one's own labor",
+          "isCorrect": false
+        },
+        {
+          "text": "To each one separately, as he desires",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to verse 13, into what were they all baptized in one Spirit?",
+      "explanation": "The verse says that in one Spirit we were all baptized into one body, whether Jews or Greeks, bond or free.",
+      "bibleReference": "1 Corinthians 12:13",
+      "answers": [
+        {
+          "text": "One assembly in Corinth",
+          "isCorrect": false
+        },
+        {
+          "text": "One body",
+          "isCorrect": true
+        },
+        {
+          "text": "One Lord",
+          "isCorrect": false
+        },
+        {
+          "text": "One hope",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the foot say in verse 15?",
+      "explanation": "The verse quotes the foot saying, \"Because I'm not the hand, I'm not part of the body,\" and answers that it is still part of the body.",
+      "bibleReference": "1 Corinthians 12:15",
+      "answers": [
+        {
+          "text": "\"Because I'm not the hand, I'm not part of the body\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Because I'm not the eye, I'm not part of the body\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I have no need for you, I am the whole body\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"If the whole body were an eye, where would the hearing be?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who set the members in the body, according to verse 18?",
+      "explanation": "The verse says God has set the members, each one of them, in the body, just as he desired.",
+      "bibleReference": "1 Corinthians 12:18",
+      "answers": [
+        {
+          "text": "The members themselves",
+          "isCorrect": false
+        },
+        {
+          "text": "The head",
+          "isCorrect": false
+        },
+        {
+          "text": "The assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "God",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does verse 26 say happens when one member is honored?",
+      "explanation": "The verse says that when one member is honored, all the members rejoice with it.",
+      "bibleReference": "1 Corinthians 12:26",
+      "answers": [
+        {
+          "text": "The other members suffer",
+          "isCorrect": false
+        },
+        {
+          "text": "The member is set over the rest",
+          "isCorrect": false
+        },
+        {
+          "text": "All the members rejoice with it",
+          "isCorrect": true
+        },
+        {
+          "text": "The body is divided",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did God set first in the assembly, according to verse 28?",
+      "explanation": "The verse lists first apostles, second prophets, third teachers, then miracle workers and others.",
+      "bibleReference": "1 Corinthians 12:28",
+      "answers": [
+        {
+          "text": "Teachers",
+          "isCorrect": false
+        },
+        {
+          "text": "Apostles",
+          "isCorrect": true
+        },
+        {
+          "text": "Prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "Miracle workers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 31 tell them to desire earnestly?",
+      "explanation": "The verse says to earnestly desire the best gifts, and adds that he shows a most excellent way to them.",
+      "bibleReference": "1 Corinthians 12:31",
+      "answers": [
+        {
+          "text": "Silence in the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "The interpretation of languages",
+          "isCorrect": false
+        },
+        {
+          "text": "Honor from one another",
+          "isCorrect": false
+        },
+        {
+          "text": "The best gifts",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

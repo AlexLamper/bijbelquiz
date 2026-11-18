@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 16",
+  "description": "Ten questions on Romans 16: the commendation of Phoebe, the long list of greetings, the warning about divisions, and the closing blessing.",
+  "slug": "romans-bible-quiz-part-16",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Whom does the writer commend as a servant of the assembly at Cenchreae?",
+      "explanation": "Romans 16:1 commends Phoebe, our sister, who is a servant of the assembly that is at Cenchreae.",
+      "bibleReference": "Romans 16:1",
+      "answers": [
+        {
+          "text": "Phoebe",
+          "isCorrect": true
+        },
+        {
+          "text": "Mary",
+          "isCorrect": false
+        },
+        {
+          "text": "Julia",
+          "isCorrect": false
+        },
+        {
+          "text": "Persis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which fellow workers in Christ Jesus risked their own necks for the writer's life?",
+      "explanation": "Romans 16:3-4 greet Prisca and Aquila, fellow workers in Christ Jesus, who risked their own necks for his life.",
+      "bibleReference": "Romans 16:3-4",
+      "answers": [
+        {
+          "text": "Andronicus and Junia",
+          "isCorrect": false
+        },
+        {
+          "text": "Prisca and Aquila",
+          "isCorrect": true
+        },
+        {
+          "text": "Philologus and Julia",
+          "isCorrect": false
+        },
+        {
+          "text": "Tryphaena and Tryphosa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is greeted as the first fruits of Achaia to Christ?",
+      "explanation": "Romans 16:5 greets Epaenetus, his beloved, who is the first fruits of Achaia to Christ.",
+      "bibleReference": "Romans 16:5",
+      "answers": [
+        {
+          "text": "Urbanus",
+          "isCorrect": false
+        },
+        {
+          "text": "Stachys",
+          "isCorrect": false
+        },
+        {
+          "text": "Epaenetus",
+          "isCorrect": true
+        },
+        {
+          "text": "Apelles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is greeted as the one who labored much for them?",
+      "explanation": "Romans 16:6 says, “Greet Mary, who labored much for us.”",
+      "bibleReference": "Romans 16:6",
+      "answers": [
+        {
+          "text": "Phoebe",
+          "isCorrect": false
+        },
+        {
+          "text": "Junia",
+          "isCorrect": false
+        },
+        {
+          "text": "Olympas",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which two are called the writer's relatives and fellow prisoners, notable among the apostles?",
+      "explanation": "Romans 16:7 greets Andronicus and Junia, his relatives and fellow prisoners, who are notable among the apostles and were in Christ before him.",
+      "bibleReference": "Romans 16:7",
+      "answers": [
+        {
+          "text": "Andronicus and Junia",
+          "isCorrect": true
+        },
+        {
+          "text": "Lucius and Jason",
+          "isCorrect": false
+        },
+        {
+          "text": "Nereus and Olympas",
+          "isCorrect": false
+        },
+        {
+          "text": "Asyncritus and Phlegon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two women are greeted together as those who labor in the Lord?",
+      "explanation": "Romans 16:12 greets Tryphaena and Tryphosa, who labor in the Lord, and then Persis, the beloved.",
+      "bibleReference": "Romans 16:12",
+      "answers": [
+        {
+          "text": "Phoebe and Prisca",
+          "isCorrect": false
+        },
+        {
+          "text": "Tryphaena and Tryphosa",
+          "isCorrect": true
+        },
+        {
+          "text": "Julia and Olympas",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary and Junia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is greeted as the chosen in the Lord, together with his mother?",
+      "explanation": "Romans 16:13 says, “Greet Rufus, the chosen in the Lord, and his mother and mine.”",
+      "bibleReference": "Romans 16:13",
+      "answers": [
+        {
+          "text": "Herodion",
+          "isCorrect": false
+        },
+        {
+          "text": "Patrobas",
+          "isCorrect": false
+        },
+        {
+          "text": "Rufus",
+          "isCorrect": true
+        },
+        {
+          "text": "Quartus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How are they told to greet one another?",
+      "explanation": "Romans 16:16 says to greet one another with a holy kiss, and that the assemblies of Christ greet them.",
+      "bibleReference": "Romans 16:16",
+      "answers": [
+        {
+          "text": "With a word of blessing",
+          "isCorrect": false
+        },
+        {
+          "text": "With lifted hands",
+          "isCorrect": false
+        },
+        {
+          "text": "With a bow of the head",
+          "isCorrect": false
+        },
+        {
+          "text": "With a holy kiss",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who says that he is the one who wrote the letter?",
+      "explanation": "Romans 16:22 says, “I, Tertius, who write the letter, greet you in the Lord.”",
+      "bibleReference": "Romans 16:22",
+      "answers": [
+        {
+          "text": "Tertius",
+          "isCorrect": true
+        },
+        {
+          "text": "Timothy",
+          "isCorrect": false
+        },
+        {
+          "text": "Sosipater",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaius",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is named as the treasurer of the city?",
+      "explanation": "Romans 16:23 says Erastus, the treasurer of the city, greets them, as does Quartus, the brother.",
+      "bibleReference": "Romans 16:23",
+      "answers": [
+        {
+          "text": "Gaius",
+          "isCorrect": false
+        },
+        {
+          "text": "Erastus",
+          "isCorrect": true
+        },
+        {
+          "text": "Lucius",
+          "isCorrect": false
+        },
+        {
+          "text": "Hermas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

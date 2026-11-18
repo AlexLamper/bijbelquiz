@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 13",
+  "description": "Ten questions on John 13: the washing of the disciples' feet, the piece of bread given to Judas, and the new commandment.",
+  "slug": "john-bible-quiz-part-13",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Jesus do after he arose from supper and laid aside his outer garments?",
+      "explanation": "He took a towel and wrapped it around his waist, poured water into the basin, and began to wash the disciples' feet.",
+      "bibleReference": "John 13:4-5",
+      "answers": [
+        {
+          "text": "He broke bread and gave thanks",
+          "isCorrect": false
+        },
+        {
+          "text": "He began to wash the disciples' feet",
+          "isCorrect": true
+        },
+        {
+          "text": "He read aloud from the law",
+          "isCorrect": false
+        },
+        {
+          "text": "He washed his own hands",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer when Peter said he would never let him wash his feet?",
+      "explanation": "Jesus answered that if he did not wash him, Peter would have no part with him.",
+      "bibleReference": "John 13:8",
+      "answers": [
+        {
+          "text": "You are already completely clean",
+          "isCorrect": false
+        },
+        {
+          "text": "Then you are no longer my disciple",
+          "isCorrect": false
+        },
+        {
+          "text": "You need no washing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "If I don't wash you, you have no part with me",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say they ought to do, since he, the Lord and Teacher, had washed their feet?",
+      "explanation": "He said that they also ought to wash one another's feet, for he had given them an example to follow.",
+      "bibleReference": "John 13:14-15",
+      "answers": [
+        {
+          "text": "Wash one another's feet",
+          "isCorrect": true
+        },
+        {
+          "text": "Forgive one another's debts",
+          "isCorrect": false
+        },
+        {
+          "text": "Give their goods to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "Keep the Passover together",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say about a servant and his lord?",
+      "explanation": "He says that a servant is not greater than his lord, nor is one who is sent greater than he who sent him.",
+      "bibleReference": "John 13:16",
+      "answers": [
+        {
+          "text": "A servant is greater than the one who sent him",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant remains in the house forever",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant is not greater than his lord",
+          "isCorrect": true
+        },
+        {
+          "text": "A servant knows all that his lord does",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus testify when he was troubled in spirit?",
+      "explanation": "He testified that one of those at the table with him would betray him.",
+      "bibleReference": "John 13:21",
+      "answers": [
+        {
+          "text": "That they would all leave him alone",
+          "isCorrect": false
+        },
+        {
+          "text": "That one of them did not believe",
+          "isCorrect": false
+        },
+        {
+          "text": "That the world would hate them",
+          "isCorrect": false
+        },
+        {
+          "text": "That one of them would betray him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did Simon Peter beckon to, to ask who it was that Jesus meant?",
+      "explanation": "Peter beckoned to the disciple whom Jesus loved, who was at the table leaning against Jesus.",
+      "bibleReference": "John 13:23-24",
+      "answers": [
+        {
+          "text": "Judas, the son of Simon Iscariot",
+          "isCorrect": false
+        },
+        {
+          "text": "The disciple whom Jesus loved",
+          "isCorrect": true
+        },
+        {
+          "text": "One of the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant at the supper",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus show who would betray him?",
+      "explanation": "He said it is the one to whom he would give the piece of bread when he had dipped it, and he gave it to Judas, the son of Simon Iscariot.",
+      "bibleReference": "John 13:26",
+      "answers": [
+        {
+          "text": "He named him aloud to everyone",
+          "isCorrect": false
+        },
+        {
+          "text": "He washed his feet last of all",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave him a piece of dipped bread",
+          "isCorrect": true
+        },
+        {
+          "text": "He laid his hand on his head",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about the time when Judas went out?",
+      "explanation": "Having received that morsel, he went out immediately, and the text says it was night.",
+      "bibleReference": "John 13:30",
+      "answers": [
+        {
+          "text": "It was night",
+          "isCorrect": true
+        },
+        {
+          "text": "It was early morning",
+          "isCorrect": false
+        },
+        {
+          "text": "It was the sixth hour",
+          "isCorrect": false
+        },
+        {
+          "text": "It was a Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By what will everyone know that they are his disciples?",
+      "explanation": "He gives them a new commandment to love one another, and says that by this everyone will know they are his disciples.",
+      "bibleReference": "John 13:34-35",
+      "answers": [
+        {
+          "text": "By the signs they will do",
+          "isCorrect": false
+        },
+        {
+          "text": "By washing feet in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "By keeping the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "By their love for one another",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell Peter would happen before the rooster crowed?",
+      "explanation": "Jesus said that the rooster would not crow until Peter had denied him three times.",
+      "bibleReference": "John 13:38",
+      "answers": [
+        {
+          "text": "Peter would lay down his life",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter would deny him three times",
+          "isCorrect": true
+        },
+        {
+          "text": "Peter would betray him for money",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter would follow him at once",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 3",
+  "description": "Ten questions on Romans 3: the advantage of the Jew, the words of Scripture about all being under sin, and righteousness through faith.",
+  "slug": "romans-bible-quiz-part-3",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does the chapter say the Jews were entrusted with, first of all?",
+      "explanation": "Asked what advantage the Jew has, the text answers, \"Much in every way! Because first of all, they were entrusted with the revelations of God.\"",
+      "bibleReference": "Romans 3:2",
+      "answers": [
+        {
+          "text": "The promise made to Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "The service of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The revelations of God",
+          "isCorrect": true
+        },
+        {
+          "text": "The land of their fathers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about God and every man?",
+      "explanation": "It says, \"Yes, let God be found true, but every man a liar.\"",
+      "bibleReference": "Romans 3:4",
+      "answers": [
+        {
+          "text": "Let God be found true, but every man a liar",
+          "isCorrect": true
+        },
+        {
+          "text": "Let God be feared and every man be silent",
+          "isCorrect": false
+        },
+        {
+          "text": "God is true and every man is wise",
+          "isCorrect": false
+        },
+        {
+          "text": "God judges and every man accuses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What saying does the chapter report as slander against them, adding that those who say so are justly condemned?",
+      "explanation": "The text mentions the slanderous report, \"Let's do evil, that good may come?\" and says those who say so are justly condemned.",
+      "bibleReference": "Romans 3:8",
+      "answers": [
+        {
+          "text": "\"Let's sin, for the law is ended.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let's keep the law and boast.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let's judge the world ourselves.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let's do evil, that good may come?\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What had they previously warned about both Jews and Greeks?",
+      "explanation": "The text says they previously warned both Jews and Greeks that they are all under sin.",
+      "bibleReference": "Romans 3:9",
+      "answers": [
+        {
+          "text": "That they would be judged by the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "That they are all under sin",
+          "isCorrect": true
+        },
+        {
+          "text": "That the law was given only to the Jews",
+          "isCorrect": false
+        },
+        {
+          "text": "That faith was counted to Abraham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the words quoted from Scripture say about the righteous?",
+      "explanation": "It is written, \"There is no one righteous; no, not one.\"",
+      "bibleReference": "Romans 3:10",
+      "answers": [
+        {
+          "text": "\"There is no one righteous; no, not one.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The righteous are few among many.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Only the doers of the law are righteous.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The righteous shall never be moved.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What image does the chapter use for their throat in the words it quotes?",
+      "explanation": "The quoted words say, \"Their throat is an open tomb,\" and that with their tongues they have used deceit.",
+      "bibleReference": "Romans 3:13",
+      "answers": [
+        {
+          "text": "A sharp sword",
+          "isCorrect": false
+        },
+        {
+          "text": "A dry well",
+          "isCorrect": false
+        },
+        {
+          "text": "An open tomb",
+          "isCorrect": true
+        },
+        {
+          "text": "A burning furnace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What comes through the law, according to this chapter?",
+      "explanation": "It says that by the works of the law no flesh will be justified in his sight, for through the law comes the knowledge of sin.",
+      "bibleReference": "Romans 3:20",
+      "answers": [
+        {
+          "text": "The promise of life",
+          "isCorrect": false
+        },
+        {
+          "text": "The knowledge of sin",
+          "isCorrect": true
+        },
+        {
+          "text": "The righteousness of God",
+          "isCorrect": false
+        },
+        {
+          "text": "The hope of the fathers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about all, in the words that follow \"there is no distinction\"?",
+      "explanation": "It says that all have sinned, and fall short of the glory of God.",
+      "bibleReference": "Romans 3:23",
+      "answers": [
+        {
+          "text": "All are justified by the works of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "All have been entrusted with the revelations of God",
+          "isCorrect": false
+        },
+        {
+          "text": "All will be judged by Moses and the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "All have sinned and fall short of the glory of God",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "By what kind of law does the chapter say boasting is excluded?",
+      "explanation": "It asks by what kind of law boasting is excluded, and answers, \"Of works? No, but by a law of faith.\"",
+      "bibleReference": "Romans 3:27",
+      "answers": [
+        {
+          "text": "By a law of faith",
+          "isCorrect": true
+        },
+        {
+          "text": "By the law of works",
+          "isCorrect": false
+        },
+        {
+          "text": "By the law written in the heart",
+          "isCorrect": false
+        },
+        {
+          "text": "By the law of the prophets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is the answer the chapter gives to the question whether faith nullifies the law?",
+      "explanation": "It answers, \"May it never be! No, we establish the law.\"",
+      "bibleReference": "Romans 3:31",
+      "answers": [
+        {
+          "text": "\"Yes, the law is nullified.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The law remains only for the Jews.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"May it never be! No, we establish the law.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"We leave the question to God.\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

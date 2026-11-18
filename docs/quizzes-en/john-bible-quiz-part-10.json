@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 10",
+  "description": "Ten questions on John 10: the sheep fold, the good shepherd who lays down his life, and the words at the Feast of the Dedication.",
+  "slug": "john-bible-quiz-part-10",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What does Jesus call the one who does not enter the sheep fold by the door?",
+      "explanation": "He says that whoever does not enter by the door but climbs up some other way is a thief and a robber.",
+      "bibleReference": "John 10:1",
+      "answers": [
+        {
+          "text": "The gatekeeper",
+          "isCorrect": false
+        },
+        {
+          "text": "A hired hand",
+          "isCorrect": false
+        },
+        {
+          "text": "A thief and a robber",
+          "isCorrect": true
+        },
+        {
+          "text": "The good shepherd",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why do the sheep follow the shepherd when he brings them out?",
+      "explanation": "He goes before them and the sheep follow him, because they know his voice.",
+      "bibleReference": "John 10:4",
+      "answers": [
+        {
+          "text": "Because they know his voice",
+          "isCorrect": true
+        },
+        {
+          "text": "Because he drives them from behind",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the gatekeeper leads them",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they are tied together",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the sheep do when a stranger calls them?",
+      "explanation": "They will by no means follow a stranger, but will flee from him, for they do not know the voice of strangers.",
+      "bibleReference": "John 10:5",
+      "answers": [
+        {
+          "text": "They follow him",
+          "isCorrect": false
+        },
+        {
+          "text": "They listen to his voice",
+          "isCorrect": false
+        },
+        {
+          "text": "They stay still in the fold",
+          "isCorrect": false
+        },
+        {
+          "text": "They flee from him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why does Jesus say he came, in contrast to the thief?",
+      "explanation": "The thief only comes to steal, kill and destroy, but Jesus came that they may have life, and may have it abundantly.",
+      "bibleReference": "John 10:10",
+      "answers": [
+        {
+          "text": "To steal, kill and destroy",
+          "isCorrect": false
+        },
+        {
+          "text": "So that they may have life abundantly",
+          "isCorrect": true
+        },
+        {
+          "text": "To judge the whole world",
+          "isCorrect": false
+        },
+        {
+          "text": "To gather the hired hands",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the good shepherd do for the sheep?",
+      "explanation": "Jesus says that he is the good shepherd, and that the good shepherd lays down his life for the sheep.",
+      "bibleReference": "John 10:11",
+      "answers": [
+        {
+          "text": "He lays down his life for them",
+          "isCorrect": true
+        },
+        {
+          "text": "He hires a servant for them",
+          "isCorrect": false
+        },
+        {
+          "text": "He flees from the wolf",
+          "isCorrect": false
+        },
+        {
+          "text": "He builds them a new fold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does the hired hand leave the sheep when he sees the wolf coming?",
+      "explanation": "The hired hand flees because he is a hired hand and does not care for the sheep.",
+      "bibleReference": "John 10:12-13",
+      "answers": [
+        {
+          "text": "The gatekeeper has called him",
+          "isCorrect": false
+        },
+        {
+          "text": "The sheep do not know his voice",
+          "isCorrect": false
+        },
+        {
+          "text": "He does not care for the sheep",
+          "isCorrect": true
+        },
+        {
+          "text": "The fold has no door",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say about his other sheep, which are not of this fold?",
+      "explanation": "He says he must bring them also, that they will hear his voice, and that they will become one flock with one shepherd.",
+      "bibleReference": "John 10:16",
+      "answers": [
+        {
+          "text": "They will remain in another fold",
+          "isCorrect": false
+        },
+        {
+          "text": "They will become one flock with one shepherd",
+          "isCorrect": true
+        },
+        {
+          "text": "They will follow a stranger",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be left to the hired hand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Jesus walking at the Feast of the Dedication?",
+      "explanation": "It was winter, and Jesus was walking in the temple, in Solomon's porch.",
+      "bibleReference": "John 10:22-23",
+      "answers": [
+        {
+          "text": "By the pool of Siloam",
+          "isCorrect": false
+        },
+        {
+          "text": "On the Mount of Olives",
+          "isCorrect": false
+        },
+        {
+          "text": "In a garden across the brook",
+          "isCorrect": false
+        },
+        {
+          "text": "In Solomon's porch in the temple",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For what reason did the Jews say they were stoning him?",
+      "explanation": "They answered that they were not stoning him for a good work, but for blasphemy, because he, being a man, made himself God.",
+      "bibleReference": "John 10:33",
+      "answers": [
+        {
+          "text": "For a good work",
+          "isCorrect": false
+        },
+        {
+          "text": "For healing on a Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "For blasphemy",
+          "isCorrect": true
+        },
+        {
+          "text": "For speaking against Caesar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Jesus go after they sought again to seize him?",
+      "explanation": "He went away beyond the Jordan, into the place where John was baptizing at first, and he stayed there.",
+      "bibleReference": "John 10:39-40",
+      "answers": [
+        {
+          "text": "Beyond the Jordan, where John baptized",
+          "isCorrect": true
+        },
+        {
+          "text": "To Bethany, the village near Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the temple treasury in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Up to the Mount of Olives",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

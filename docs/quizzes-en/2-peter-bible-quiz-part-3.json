@@ -1,0 +1,242 @@
+{
+  "title": "2 Peter Bible Quiz - Chapter 3",
+  "description": "Ten questions on 2 Peter 3: the mockers of the last days, the day of the Lord, and new heavens and a new earth.",
+  "slug": "2-peter-bible-quiz-part-3",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Which letter to them does verse 1 say this is?",
+      "explanation": "Verse 1 says: this is now, beloved, the second letter that I have written to you.",
+      "bibleReference": "2 Peter 3:1",
+      "answers": [
+        {
+          "text": "The first",
+          "isCorrect": false
+        },
+        {
+          "text": "The third",
+          "isCorrect": false
+        },
+        {
+          "text": "The second",
+          "isCorrect": true
+        },
+        {
+          "text": "The last",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who does verse 3 say will come in the last days?",
+      "explanation": "Verse 3 says that in the last days mockers will come, walking after their own lusts.",
+      "bibleReference": "2 Peter 3:3",
+      "answers": [
+        {
+          "text": "Mockers",
+          "isCorrect": true
+        },
+        {
+          "text": "Kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Shepherds",
+          "isCorrect": false
+        },
+        {
+          "text": "Scribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the world that existed then perish, according to verses 5 and 6?",
+      "explanation": "Verses 5 and 6 say the earth was formed out of water and amid water by the word of God, and the world that existed then, being overflowed with water, perished.",
+      "bibleReference": "2 Peter 3:5-6",
+      "answers": [
+        {
+          "text": "It was burned with fire",
+          "isCorrect": false
+        },
+        {
+          "text": "It was shaken by an earthquake",
+          "isCorrect": false
+        },
+        {
+          "text": "It was emptied by famine",
+          "isCorrect": false
+        },
+        {
+          "text": "It was overflowed with water",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For what have the heavens and the earth that exist now been stored up?",
+      "explanation": "Verse 7 says the heavens that exist now and the earth have by the same word been stored up for fire, reserved against the day of judgment.",
+      "bibleReference": "2 Peter 3:7",
+      "answers": [
+        {
+          "text": "For water",
+          "isCorrect": false
+        },
+        {
+          "text": "For fire",
+          "isCorrect": true
+        },
+        {
+          "text": "For darkness",
+          "isCorrect": false
+        },
+        {
+          "text": "For the sword",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "One day is with the Lord as what, according to verse 8?",
+      "explanation": "Verse 8 says that one day is with the Lord as a thousand years, and a thousand years as one day.",
+      "bibleReference": "2 Peter 3:8",
+      "answers": [
+        {
+          "text": "A thousand years",
+          "isCorrect": true
+        },
+        {
+          "text": "A single hour",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "A short moment",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why is the Lord patient, according to verse 9?",
+      "explanation": "Verse 9 says the Lord is patient with us, not wishing that anyone should perish, but that all should come to repentance.",
+      "bibleReference": "2 Peter 3:9",
+      "answers": [
+        {
+          "text": "He is slow concerning his promise",
+          "isCorrect": false
+        },
+        {
+          "text": "He waits for the heavens to pass",
+          "isCorrect": false
+        },
+        {
+          "text": "He wants all to come to repentance",
+          "isCorrect": true
+        },
+        {
+          "text": "He has forgotten the ungodly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How will the day of the Lord come, according to verse 10?",
+      "explanation": "Verse 10 says the day of the Lord will come as a thief in the night, and the heavens will pass away with a great noise.",
+      "bibleReference": "2 Peter 3:10",
+      "answers": [
+        {
+          "text": "As a roaring lion",
+          "isCorrect": false
+        },
+        {
+          "text": "As a thief in the night",
+          "isCorrect": true
+        },
+        {
+          "text": "As rain on dry grass",
+          "isCorrect": false
+        },
+        {
+          "text": "As a shout at noon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do they look for according to his promise, in verse 13?",
+      "explanation": "Verse 13 says: according to his promise, we look for new heavens and a new earth, in which righteousness dwells.",
+      "bibleReference": "2 Peter 3:13",
+      "answers": [
+        {
+          "text": "A city built of gold",
+          "isCorrect": false
+        },
+        {
+          "text": "A kingdom among the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "A land flowing with milk",
+          "isCorrect": false
+        },
+        {
+          "text": "New heavens and a new earth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who is named in verse 15 as their beloved brother who also wrote to them?",
+      "explanation": "Verse 15 speaks of our beloved brother Paul, who according to the wisdom given to him also wrote to them.",
+      "bibleReference": "2 Peter 3:15",
+      "answers": [
+        {
+          "text": "Paul",
+          "isCorrect": true
+        },
+        {
+          "text": "Silvanus",
+          "isCorrect": false
+        },
+        {
+          "text": "James",
+          "isCorrect": false
+        },
+        {
+          "text": "John",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what does verse 18 tell them to grow?",
+      "explanation": "Verse 18 says: but grow in the grace and knowledge of our Lord and Savior Jesus Christ.",
+      "bibleReference": "2 Peter 3:18",
+      "answers": [
+        {
+          "text": "In numbers and strength",
+          "isCorrect": false
+        },
+        {
+          "text": "In grace and knowledge",
+          "isCorrect": true
+        },
+        {
+          "text": "In riches and honor",
+          "isCorrect": false
+        },
+        {
+          "text": "In years and wisdom",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

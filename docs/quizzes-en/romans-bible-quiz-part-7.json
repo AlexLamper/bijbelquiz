@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 7",
+  "description": "Ten questions on Romans 7: the law and marriage, the commandment that revealed sin, and the struggle between mind and flesh.",
+  "slug": "romans-bible-quiz-part-7",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "For how long does the law have dominion over a man, according to the opening question?",
+      "explanation": "Romans 7:1 asks whether they do not know that the law has dominion over a man for as long as he lives.",
+      "bibleReference": "Romans 7:1",
+      "answers": [
+        {
+          "text": "For as long as he lives",
+          "isCorrect": true
+        },
+        {
+          "text": "Until he is circumcised",
+          "isCorrect": false
+        },
+        {
+          "text": "For seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Until a priest releases him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to a married woman if her husband dies?",
+      "explanation": "Romans 7:2 says a woman with a husband is bound by law to him while he lives, but if the husband dies she is discharged from the law of the husband.",
+      "bibleReference": "Romans 7:2",
+      "answers": [
+        {
+          "text": "She is still bound by law to her husband",
+          "isCorrect": false
+        },
+        {
+          "text": "She is discharged from the law of the husband",
+          "isCorrect": true
+        },
+        {
+          "text": "She must marry her husband's brother",
+          "isCorrect": false
+        },
+        {
+          "text": "She is called an adulteress by the law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Through what were the brothers made dead to the law?",
+      "explanation": "Romans 7:4 says they were made dead to the law through the body of Christ, so that they would be joined to him who was raised from the dead.",
+      "bibleReference": "Romans 7:4",
+      "answers": [
+        {
+          "text": "Through the blood of bulls",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the preaching of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the body of Christ",
+          "isCorrect": true
+        },
+        {
+          "text": "Through their own obedience",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which commandment does the writer quote to show how he came to know coveting?",
+      "explanation": "Romans 7:7 says he would not have known coveting unless the law had said, “You shall not covet.”",
+      "bibleReference": "Romans 7:7",
+      "answers": [
+        {
+          "text": "“You shall not steal”",
+          "isCorrect": false
+        },
+        {
+          "text": "“You shall not murder”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Honor your father and mother”",
+          "isCorrect": false
+        },
+        {
+          "text": "“You shall not covet”",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about sin apart from the law?",
+      "explanation": "Romans 7:8 says that apart from the law, sin is dead.",
+      "bibleReference": "Romans 7:8",
+      "answers": [
+        {
+          "text": "Sin is dead",
+          "isCorrect": true
+        },
+        {
+          "text": "Sin is hidden",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin is forgiven",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin is stronger",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the writer describe the law and the commandment?",
+      "explanation": "Romans 7:12 says the law indeed is holy, and the commandment holy, and righteous, and good.",
+      "bibleReference": "Romans 7:12",
+      "answers": [
+        {
+          "text": "Weak and useless",
+          "isCorrect": false
+        },
+        {
+          "text": "Holy, righteous and good",
+          "isCorrect": true
+        },
+        {
+          "text": "Heavy and unbearable",
+          "isCorrect": false
+        },
+        {
+          "text": "Temporary and shadowy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The law is spiritual, but how does the writer describe himself?",
+      "explanation": "Romans 7:14 says that we know the law is spiritual, but that he is fleshly, sold under sin.",
+      "bibleReference": "Romans 7:14",
+      "answers": [
+        {
+          "text": "Blameless before the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Free from every weakness",
+          "isCorrect": false
+        },
+        {
+          "text": "Fleshly, sold under sin",
+          "isCorrect": true
+        },
+        {
+          "text": "Ignorant of the commandment",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the writer say dwells in his flesh?",
+      "explanation": "Romans 7:18 says that in him, that is, in his flesh, dwells no good thing.",
+      "bibleReference": "Romans 7:18",
+      "answers": [
+        {
+          "text": "Perfect obedience",
+          "isCorrect": false
+        },
+        {
+          "text": "The Spirit of life",
+          "isCorrect": false
+        },
+        {
+          "text": "A pure conscience",
+          "isCorrect": false
+        },
+        {
+          "text": "No good thing",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the writer see in his members, warring against the law of his mind?",
+      "explanation": "Romans 7:22-23 say he delights in God's law after the inward man, but sees a different law in his members warring against the law of his mind.",
+      "bibleReference": "Romans 7:22-23",
+      "answers": [
+        {
+          "text": "A different law",
+          "isCorrect": true
+        },
+        {
+          "text": "An angel of light",
+          "isCorrect": false
+        },
+        {
+          "text": "The voice of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "A new commandment",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does the writer thank after crying out about the body of this death?",
+      "explanation": "Romans 7:24-25 ask who will deliver him out of the body of this death, and he thanks God through Jesus Christ, our Lord.",
+      "bibleReference": "Romans 7:24-25",
+      "answers": [
+        {
+          "text": "The elders of the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "God, through Jesus Christ our Lord",
+          "isCorrect": true
+        },
+        {
+          "text": "Moses, who gave the law",
+          "isCorrect": false
+        },
+        {
+          "text": "The rulers of this world",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

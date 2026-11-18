@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 25",
+  "description": "Ten questions on Acts 25: Festus in Caesarea, Paul's appeal to Caesar, and the hearing arranged before King Agrippa.",
+  "slug": "acts-bible-quiz-part-25",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Festus go up, three days after coming into the province?",
+      "explanation": "Festus, having come into the province, after three days went up to Jerusalem from Caesarea.",
+      "bibleReference": "Acts 25:1",
+      "answers": [
+        {
+          "text": "To Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "To Antioch",
+          "isCorrect": false
+        },
+        {
+          "text": "To Rome",
+          "isCorrect": false
+        },
+        {
+          "text": "To Malta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the leading men plotting when they asked Festus to summon Paul to Jerusalem?",
+      "explanation": "They asked a favor against Paul, that Festus would summon him to Jerusalem, plotting to kill him on the way.",
+      "bibleReference": "Acts 25:3",
+      "answers": [
+        {
+          "text": "To make him swear by the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "To hand him over to the Romans",
+          "isCorrect": false
+        },
+        {
+          "text": "To kill him on the way",
+          "isCorrect": true
+        },
+        {
+          "text": "To take his money as a fine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul say in his defense when the charges were brought?",
+      "explanation": "Paul said he had not sinned at all against the law of the Jews, nor against the temple, nor against Caesar.",
+      "bibleReference": "Acts 25:8",
+      "answers": [
+        {
+          "text": "That he had sinned against the temple only in ignorance",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had sinned neither against the law, nor the temple, nor Caesar",
+          "isCorrect": true
+        },
+        {
+          "text": "That he had never once gone up to the city of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "That the law of the Jews did not apply to him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Festus ask Paul, desiring to gain favor with the Jews?",
+      "explanation": "Festus asked Paul whether he was willing to go up to Jerusalem and be judged by him there concerning these things.",
+      "bibleReference": "Acts 25:9",
+      "answers": [
+        {
+          "text": "Whether he would pay for his release",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he would deny the resurrection",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he would leave the province quietly",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he was willing to be judged at Jerusalem",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Paul declare at the end of his answer to Festus?",
+      "explanation": "Paul said that if the charges were untrue no one could give him up to them, and he declared, \"I appeal to Caesar!\"",
+      "bibleReference": "Acts 25:11",
+      "answers": [
+        {
+          "text": "\"I appeal to the council!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will go up to Jerusalem.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I appeal to Caesar!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Let the high priest judge me.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who arrived at Caesarea and greeted Festus after some days had passed?",
+      "explanation": "When some days had passed, King Agrippa and Bernice arrived at Caesarea and greeted Festus.",
+      "bibleReference": "Acts 25:13",
+      "answers": [
+        {
+          "text": "King Agrippa and Bernice",
+          "isCorrect": true
+        },
+        {
+          "text": "Felix and Drusilla",
+          "isCorrect": false
+        },
+        {
+          "text": "Claudius Lysias and Tertullus",
+          "isCorrect": false
+        },
+        {
+          "text": "Julius and Aristarchus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Festus say was not the custom of the Romans?",
+      "explanation": "Festus said it is not the custom of the Romans to give up any man before the accused has met the accusers face to face and has had opportunity to make his defense.",
+      "bibleReference": "Acts 25:16",
+      "answers": [
+        {
+          "text": "To judge a prisoner outside the city where he was seized",
+          "isCorrect": false
+        },
+        {
+          "text": "To hear a case without the high priest being present",
+          "isCorrect": false
+        },
+        {
+          "text": "To send a prisoner to the emperor for a decision",
+          "isCorrect": false
+        },
+        {
+          "text": "To give up a man before he has faced his accusers and defended himself",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Festus say Paul affirmed about one Jesus?",
+      "explanation": "Festus said the questions were about their own religion and about one Jesus, who was dead, whom Paul affirmed to be alive.",
+      "bibleReference": "Acts 25:19",
+      "answers": [
+        {
+          "text": "That Jesus had never died",
+          "isCorrect": false
+        },
+        {
+          "text": "That Jesus, who was dead, was alive",
+          "isCorrect": true
+        },
+        {
+          "text": "That Jesus would judge Caesar",
+          "isCorrect": false
+        },
+        {
+          "text": "That Jesus was a teacher of the law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Agrippa say to Festus about the prisoner?",
+      "explanation": "Agrippa said he would also like to hear the man himself, and Festus said he would hear him the next day.",
+      "bibleReference": "Acts 25:22",
+      "answers": [
+        {
+          "text": "That he should be sent to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "That he should be released at once",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would also like to hear the man himself",
+          "isCorrect": true
+        },
+        {
+          "text": "That he had no interest in the case",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Festus bring Paul out before Agrippa and the others?",
+      "explanation": "Festus said he had nothing certain to write to his lord, so he brought Paul out that after examination he might have something to write, since it seemed unreasonable to send a prisoner without specifying the charges.",
+      "bibleReference": "Acts 25:26-27",
+      "answers": [
+        {
+          "text": "So that after examination he might have something to write",
+          "isCorrect": true
+        },
+        {
+          "text": "So that Agrippa could pronounce the sentence",
+          "isCorrect": false
+        },
+        {
+          "text": "So that the crowd could see the prisoner",
+          "isCorrect": false
+        },
+        {
+          "text": "So that the chief priests could accuse him again",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

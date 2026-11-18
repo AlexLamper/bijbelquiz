@@ -1,0 +1,242 @@
+{
+  "title": "Philemon Bible Quiz - Chapter 1",
+  "description": "Ten questions on Philemon 1: the greeting to Philemon and the assembly in his house, the plea for Onesimus, and the promise to repay what he owes.",
+  "slug": "philemon-bible-quiz-part-1",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who is named with Paul in the opening verse as \"our brother\"?",
+      "explanation": "Verse 1 names Paul, a prisoner of Christ Jesus, and Timothy our brother, as the senders of the letter.",
+      "bibleReference": "Philemon 1:1",
+      "answers": [
+        {
+          "text": "Archippus",
+          "isCorrect": false
+        },
+        {
+          "text": "Timothy",
+          "isCorrect": true
+        },
+        {
+          "text": "Epaphras",
+          "isCorrect": false
+        },
+        {
+          "text": "Aristarchus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is Philemon described in the first verse?",
+      "explanation": "Verse 1 calls Philemon \"our beloved fellow worker\".",
+      "bibleReference": "Philemon 1:1",
+      "answers": [
+        {
+          "text": "As a fellow prisoner",
+          "isCorrect": false
+        },
+        {
+          "text": "As a fellow soldier",
+          "isCorrect": false
+        },
+        {
+          "text": "As an elder of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "As a beloved fellow worker",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is Archippus called in verse 2?",
+      "explanation": "Verse 2 greets Apphia the beloved, and Archippus \"our fellow soldier\", and the assembly in the house.",
+      "bibleReference": "Philemon 1:2",
+      "answers": [
+        {
+          "text": "Our fellow soldier",
+          "isCorrect": true
+        },
+        {
+          "text": "Our fellow worker",
+          "isCorrect": false
+        },
+        {
+          "text": "Our fellow prisoner",
+          "isCorrect": false
+        },
+        {
+          "text": "Our beloved child",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had Paul heard about Philemon?",
+      "explanation": "Verse 5 says he had heard of Philemon's love and of the faith which he had toward the Lord Jesus and toward all the saints.",
+      "bibleReference": "Philemon 1:5",
+      "answers": [
+        {
+          "text": "Of his great riches",
+          "isCorrect": false
+        },
+        {
+          "text": "Of his many travels",
+          "isCorrect": false
+        },
+        {
+          "text": "Of his love and faith",
+          "isCorrect": true
+        },
+        {
+          "text": "Of his skill in teaching",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What has happened to the hearts of the saints through Philemon?",
+      "explanation": "Verse 7 says there is much joy and comfort in his love, because the hearts of the saints have been refreshed through him.",
+      "bibleReference": "Philemon 1:7",
+      "answers": [
+        {
+          "text": "They have been taught",
+          "isCorrect": false
+        },
+        {
+          "text": "They have been refreshed",
+          "isCorrect": true
+        },
+        {
+          "text": "They have been gathered",
+          "isCorrect": false
+        },
+        {
+          "text": "They have been warned",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Though he has boldness to command, what does Paul do instead for love's sake?",
+      "explanation": "Verses 8 and 9 say that although he has all boldness in Christ to command what is appropriate, for love's sake he rather begs.",
+      "bibleReference": "Philemon 1:8-9",
+      "answers": [
+        {
+          "text": "He begs",
+          "isCorrect": true
+        },
+        {
+          "text": "He waits",
+          "isCorrect": false
+        },
+        {
+          "text": "He warns",
+          "isCorrect": false
+        },
+        {
+          "text": "He rebukes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For whom does Paul beg, the child he became the father of in his chains?",
+      "explanation": "Verse 10 says he begs for his child Onesimus, whom he became the father of in his chains.",
+      "bibleReference": "Philemon 1:10",
+      "answers": [
+        {
+          "text": "Epaphras",
+          "isCorrect": false
+        },
+        {
+          "text": "Archippus",
+          "isCorrect": false
+        },
+        {
+          "text": "Demas",
+          "isCorrect": false
+        },
+        {
+          "text": "Onesimus",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How does verse 11 describe the change in Onesimus?",
+      "explanation": "Verse 11 says that he once was useless to Philemon, but now is useful to Philemon and to Paul.",
+      "bibleReference": "Philemon 1:11",
+      "answers": [
+        {
+          "text": "He was poor, but is now rich",
+          "isCorrect": false
+        },
+        {
+          "text": "He was silent, but now speaks",
+          "isCorrect": false
+        },
+        {
+          "text": "He was useless, but is now useful",
+          "isCorrect": true
+        },
+        {
+          "text": "He was far off, but is now near",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "As what, rather than as a slave, should Philemon now have him?",
+      "explanation": "Verse 16 says he should have him no longer as a slave, but more than a slave, as a beloved brother.",
+      "bibleReference": "Philemon 1:16",
+      "answers": [
+        {
+          "text": "As a beloved brother",
+          "isCorrect": true
+        },
+        {
+          "text": "As a hired servant",
+          "isCorrect": false
+        },
+        {
+          "text": "As a fellow prisoner",
+          "isCorrect": false
+        },
+        {
+          "text": "As a stranger in his house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Paul say about anything Onesimus owes or any wrong he has done?",
+      "explanation": "Verses 18 and 19 say to put it to Paul's account, and that he writes with his own hand that he will repay it.",
+      "bibleReference": "Philemon 1:18-19",
+      "answers": [
+        {
+          "text": "That it must be forgotten",
+          "isCorrect": false
+        },
+        {
+          "text": "That he will repay it himself",
+          "isCorrect": true
+        },
+        {
+          "text": "That the assembly will pay it",
+          "isCorrect": false
+        },
+        {
+          "text": "That it will be judged later",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

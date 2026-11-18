@@ -1,0 +1,122 @@
+{
+  "title": "Revelation Bible Quiz - Chapter 19",
+  "description": "Ten questions on Revelation 19: the hallelujahs in heaven, the wedding supper of the Lamb, and the rider on the white horse.",
+  "slug": "revelation-bible-quiz-part-19",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did the loud voice of the great multitude in heaven say belongs to our God?",
+      "explanation": "The great multitude said, \"Hallelujah! Salvation, power, and glory belong to our God.\"",
+      "bibleReference": "Revelation 19:1",
+      "answers": [
+        { "text": "Salvation, power, and glory", "isCorrect": true },
+        { "text": "Mercy, patience, and peace", "isCorrect": false },
+        { "text": "Wisdom, riches, and strength", "isCorrect": false },
+        { "text": "Judgment, war, and wrath", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What did a second voice say about her smoke?",
+      "explanation": "A second said, \"Hallelujah! Her smoke goes up forever and ever.\"",
+      "bibleReference": "Revelation 19:3",
+      "answers": [
+        { "text": "It filled the temple", "isCorrect": false },
+        { "text": "It darkened the sun", "isCorrect": false },
+        { "text": "It goes up forever and ever", "isCorrect": true },
+        { "text": "It was blown away by the wind", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Who fell down and worshiped God who sits on the throne, saying \"Amen! Hallelujah!\"?",
+      "explanation": "Revelation 19:4 says the twenty-four elders and the four living creatures fell down and worshiped God who sits on the throne.",
+      "bibleReference": "Revelation 19:4",
+      "answers": [
+        { "text": "The kings of the earth and their armies", "isCorrect": false },
+        { "text": "The twenty-four elders and the four living creatures", "isCorrect": true },
+        { "text": "The seven angels who had the seven bowls", "isCorrect": false },
+        { "text": "All the birds that fly in the sky", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What reason did the great multitude give for rejoicing and being exceedingly glad?",
+      "explanation": "They rejoiced because the wedding of the Lamb had come and his wife had made herself ready.",
+      "bibleReference": "Revelation 19:7",
+      "answers": [
+        { "text": "The temple had been rebuilt", "isCorrect": false },
+        { "text": "The seventh trumpet had sounded", "isCorrect": false },
+        { "text": "The nations had been gathered to war", "isCorrect": false },
+        { "text": "The wedding of the Lamb had come", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "What does the text say the bright, pure, fine linen is?",
+      "explanation": "Revelation 19:8 says that the fine linen she was given to wear is the righteous acts of the saints.",
+      "bibleReference": "Revelation 19:8",
+      "answers": [
+        { "text": "The glory of the angels", "isCorrect": false },
+        { "text": "The righteous acts of the saints", "isCorrect": true },
+        { "text": "The prayers of the prophets", "isCorrect": false },
+        { "text": "The light of the city", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Who are called blessed in the words John was told to write?",
+      "explanation": "John was told to write, \"Blessed are those who are invited to the wedding supper of the Lamb.\"",
+      "bibleReference": "Revelation 19:9",
+      "answers": [
+        { "text": "Those who are invited to the wedding supper of the Lamb", "isCorrect": true },
+        { "text": "Those who keep the words of this book", "isCorrect": false },
+        { "text": "Those who die in the Lord", "isCorrect": false },
+        { "text": "Those who worship before the throne", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is on the head of him who sat on the white horse?",
+      "explanation": "Revelation 19:12 says his eyes are a flame of fire, and on his head are many crowns.",
+      "bibleReference": "Revelation 19:11-12",
+      "answers": [
+        { "text": "A golden helmet", "isCorrect": false },
+        { "text": "A crown of thorns", "isCorrect": false },
+        { "text": "Many crowns", "isCorrect": true },
+        { "text": "A wreath of olive branches", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What proceeds out of the mouth of the rider?",
+      "explanation": "Out of his mouth proceeds a sharp, double-edged sword, with which he should strike the nations.",
+      "bibleReference": "Revelation 19:15",
+      "answers": [
+        { "text": "Smoke and burning sulfur", "isCorrect": false },
+        { "text": "A sealed scroll of judgment", "isCorrect": false },
+        { "text": "A river of living water", "isCorrect": false },
+        { "text": "A sharp, double-edged sword", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "What name is written on his garment and on his thigh?",
+      "explanation": "Revelation 19:16 says he has a name written on his garment and on his thigh: \"KING OF KINGS, AND LORD OF LORDS.\"",
+      "bibleReference": "Revelation 19:16",
+      "answers": [
+        { "text": "\"KING OF KINGS, AND LORD OF LORDS\"", "isCorrect": true },
+        { "text": "\"The Lion of the tribe of Judah\"", "isCorrect": false },
+        { "text": "\"The Beginning and the End\"", "isCorrect": false },
+        { "text": "\"The Bright and Morning Star\"", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Who were thrown alive into the lake of fire that burns with sulfur?",
+      "explanation": "The beast was taken, and with him the false prophet, and these two were thrown alive into the lake of fire that burns with sulfur.",
+      "bibleReference": "Revelation 19:20",
+      "answers": [
+        { "text": "The kings of the earth", "isCorrect": false },
+        { "text": "The dragon and his angels", "isCorrect": false },
+        { "text": "The beast and the false prophet", "isCorrect": true },
+        { "text": "The armies on white horses", "isCorrect": false }
+      ]
+    }
+  ]
+}

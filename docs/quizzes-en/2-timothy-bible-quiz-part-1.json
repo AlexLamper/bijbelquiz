@@ -1,0 +1,242 @@
+{
+  "title": "2 Timothy Bible Quiz - Chapter 1",
+  "description": "Ten questions on 2 Timothy 1: the greeting to Timothy, the faith of Lois and Eunice, the spirit God gave, and the house of Onesiphorus.",
+  "slug": "2-timothy-bible-quiz-part-1",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How does Paul describe himself in the opening verse?",
+      "explanation": "Verse 1 says Paul is an apostle of Jesus Christ through the will of God.",
+      "bibleReference": "2 Timothy 1:1",
+      "answers": [
+        {
+          "text": "A servant of the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "An apostle of Jesus Christ",
+          "isCorrect": true
+        },
+        {
+          "text": "A teacher sent from Asia",
+          "isCorrect": false
+        },
+        {
+          "text": "An elder among the saints",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom is this letter written?",
+      "explanation": "Verse 2 addresses the letter to Timothy, called \"my beloved child\".",
+      "bibleReference": "2 Timothy 1:2",
+      "answers": [
+        {
+          "text": "Titus",
+          "isCorrect": false
+        },
+        {
+          "text": "Philemon",
+          "isCorrect": false
+        },
+        {
+          "text": "Hermogenes",
+          "isCorrect": false
+        },
+        {
+          "text": "Timothy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In whom did the sincere faith that is in Timothy live first?",
+      "explanation": "Verse 5 says the sincere faith lived first in his grandmother Lois, and then in his mother Eunice.",
+      "bibleReference": "2 Timothy 1:5",
+      "answers": [
+        {
+          "text": "His grandmother Lois",
+          "isCorrect": true
+        },
+        {
+          "text": "His mother Eunice",
+          "isCorrect": false
+        },
+        {
+          "text": "His father in Asia",
+          "isCorrect": false
+        },
+        {
+          "text": "His brother Phygelus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does Paul say the gift of God came to be in Timothy?",
+      "explanation": "Verse 6 says Timothy should stir up the gift of God which is in him through the laying on of Paul's hands.",
+      "bibleReference": "2 Timothy 1:6",
+      "answers": [
+        {
+          "text": "By a word from the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "By the prayers of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the laying on of his hands",
+          "isCorrect": true
+        },
+        {
+          "text": "Through the washing of water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of spirit does the text say God gave us?",
+      "explanation": "Verse 7 says God did not give us a spirit of fear, but of power, love and self-control.",
+      "bibleReference": "2 Timothy 1:7",
+      "answers": [
+        {
+          "text": "A spirit of fear",
+          "isCorrect": false
+        },
+        {
+          "text": "A spirit of power, love and self-control",
+          "isCorrect": true
+        },
+        {
+          "text": "A spirit of wisdom and of riches",
+          "isCorrect": false
+        },
+        {
+          "text": "A spirit of silence and of waiting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is Timothy told not to be ashamed of?",
+      "explanation": "Verse 8 says he should not be ashamed of the testimony of our Lord, nor of Paul his prisoner, but should endure hardship for the Good News.",
+      "bibleReference": "2 Timothy 1:8",
+      "answers": [
+        {
+          "text": "The testimony of our Lord",
+          "isCorrect": true
+        },
+        {
+          "text": "The city where he was born",
+          "isCorrect": false
+        },
+        {
+          "text": "The tears he had wept",
+          "isCorrect": false
+        },
+        {
+          "text": "The gift given to him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did our Savior, Christ Jesus, abolish according to verse 10?",
+      "explanation": "Verse 10 says that at the appearing of our Savior, Christ Jesus, he abolished death and brought life and immortality to light through the Good News.",
+      "bibleReference": "2 Timothy 1:10",
+      "answers": [
+        {
+          "text": "The law",
+          "isCorrect": false
+        },
+        {
+          "text": "Fear",
+          "isCorrect": false
+        },
+        {
+          "text": "Hardship",
+          "isCorrect": false
+        },
+        {
+          "text": "Death",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Paul says he was appointed as a preacher, an apostle, and a teacher of whom?",
+      "explanation": "Verse 11 says he was appointed as a preacher, an apostle, and a teacher of the Gentiles.",
+      "bibleReference": "2 Timothy 1:11",
+      "answers": [
+        {
+          "text": "Of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "Of the Gentiles",
+          "isCorrect": true
+        },
+        {
+          "text": "Of the prisoners",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two men are named among all those in Asia who turned away from Paul?",
+      "explanation": "Verse 15 says that all who are in Asia turned away from him, and names Phygelus and Hermogenes.",
+      "bibleReference": "2 Timothy 1:15",
+      "answers": [
+        {
+          "text": "Phygelus and Hermogenes",
+          "isCorrect": true
+        },
+        {
+          "text": "Lois and Eunice",
+          "isCorrect": false
+        },
+        {
+          "text": "Demas and Crescens",
+          "isCorrect": false
+        },
+        {
+          "text": "Paul and Timothy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who often refreshed Paul and sought him diligently when he was in Rome?",
+      "explanation": "Verses 16 and 17 say that Onesiphorus often refreshed Paul, was not ashamed of his chain, and sought him diligently in Rome until he found him.",
+      "bibleReference": "2 Timothy 1:16-17",
+      "answers": [
+        {
+          "text": "Hermogenes",
+          "isCorrect": false
+        },
+        {
+          "text": "Onesiphorus",
+          "isCorrect": true
+        },
+        {
+          "text": "Timothy",
+          "isCorrect": false
+        },
+        {
+          "text": "Eunice",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

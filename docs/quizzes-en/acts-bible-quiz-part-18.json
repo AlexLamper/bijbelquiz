@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 18",
+  "description": "Ten questions on Acts 18: Paul at Corinth with Aquila and Priscilla, Gallio's judgment seat, and Apollos at Ephesus.",
+  "slug": "acts-bible-quiz-part-18",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What trade did Paul share with Aquila and Priscilla?",
+      "explanation": "Because he practiced the same trade, he lived with them and worked, for by trade they were tent makers.",
+      "bibleReference": "Acts 18:3",
+      "answers": [
+        {
+          "text": "They were silversmiths",
+          "isCorrect": false
+        },
+        {
+          "text": "They were sellers of purple",
+          "isCorrect": false
+        },
+        {
+          "text": "They were fishermen",
+          "isCorrect": false
+        },
+        {
+          "text": "They were tent makers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why had Aquila recently come from Italy?",
+      "explanation": "Acts 18:2 says Claudius had commanded all the Jews to depart from Rome.",
+      "bibleReference": "Acts 18:2",
+      "answers": [
+        {
+          "text": "A great famine had come upon Italy",
+          "isCorrect": false
+        },
+        {
+          "text": "Claudius had commanded all the Jews to depart from Rome",
+          "isCorrect": true
+        },
+        {
+          "text": "The apostles had sent him to Corinth",
+          "isCorrect": false
+        },
+        {
+          "text": "A plot had been made against his life",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul say when they opposed him and blasphemed?",
+      "explanation": "He shook out his clothing and said that their blood was on their own heads, that he was clean, and that from then on he would go to the Gentiles.",
+      "bibleReference": "Acts 18:6",
+      "answers": [
+        {
+          "text": "Your blood be on your own heads! From now on, I will go to the Gentiles",
+          "isCorrect": true
+        },
+        {
+          "text": "I will come back to you again if God wills it so, brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "I must by all means keep this coming feast in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Let the courts judge between you and me in this matter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the ruler of the synagogue who believed in the Lord with all his house?",
+      "explanation": "Acts 18:8 says Crispus, the ruler of the synagogue, believed in the Lord with all his house.",
+      "bibleReference": "Acts 18:8",
+      "answers": [
+        {
+          "text": "Sosthenes",
+          "isCorrect": false
+        },
+        {
+          "text": "Justus",
+          "isCorrect": false
+        },
+        {
+          "text": "Crispus",
+          "isCorrect": true
+        },
+        {
+          "text": "Apollos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Lord say to Paul in the night by a vision?",
+      "explanation": "The Lord told him not to be afraid but to speak and not be silent, for the Lord was with him and had many people in that city.",
+      "bibleReference": "Acts 18:9-10",
+      "answers": [
+        {
+          "text": "Don't be afraid, but speak and don't be silent, for I am with you",
+          "isCorrect": true
+        },
+        {
+          "text": "Go up to Jerusalem without delay and testify there",
+          "isCorrect": false
+        },
+        {
+          "text": "Shake off the dust of your feet and leave this city",
+          "isCorrect": false
+        },
+        {
+          "text": "Sail from here to Syria before the coming feast",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did Paul live there, teaching the word of God among them?",
+      "explanation": "Acts 18:11 says he lived there a year and six months.",
+      "bibleReference": "Acts 18:11",
+      "answers": [
+        {
+          "text": "Three whole months",
+          "isCorrect": false
+        },
+        {
+          "text": "Two years and six months",
+          "isCorrect": false
+        },
+        {
+          "text": "Three years and a half",
+          "isCorrect": false
+        },
+        {
+          "text": "A year and six months",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Gallio do when the Jews brought Paul before the judgment seat?",
+      "explanation": "Gallio said that questions about words and names and their own law were for them to settle, and he drove them from the judgment seat.",
+      "bibleReference": "Acts 18:14-16",
+      "answers": [
+        {
+          "text": "He commanded that Paul should be beaten with rods",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent Paul away to Caesar at Rome for judgment",
+          "isCorrect": false
+        },
+        {
+          "text": "He refused to judge the matter and drove them from the judgment seat",
+          "isCorrect": true
+        },
+        {
+          "text": "He judged for Paul and punished his accusers himself",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul do in Cenchreae before sailing for Syria?",
+      "explanation": "Acts 18:18 says he shaved his head in Cenchreae, for he had a vow.",
+      "bibleReference": "Acts 18:18",
+      "answers": [
+        {
+          "text": "He baptized Priscilla and Aquila there",
+          "isCorrect": false
+        },
+        {
+          "text": "He shaved his head, for he had a vow",
+          "isCorrect": true
+        },
+        {
+          "text": "He left Silas and Timothy behind there",
+          "isCorrect": false
+        },
+        {
+          "text": "He wrote a letter to the brothers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is said about Apollos when he came to Ephesus?",
+      "explanation": "He was a Jew, an Alexandrian by race, an eloquent man, mighty in the Scriptures, who knew only the baptism of John.",
+      "bibleReference": "Acts 18:24-25",
+      "answers": [
+        {
+          "text": "He was an eloquent Alexandrian Jew, mighty in the Scriptures",
+          "isCorrect": true
+        },
+        {
+          "text": "He was a tent maker from Pontus who came from Italy",
+          "isCorrect": false
+        },
+        {
+          "text": "He was the ruler of the synagogue at Corinth",
+          "isCorrect": false
+        },
+        {
+          "text": "He was the proconsul of Achaia at that time",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Priscilla and Aquila do when they heard Apollos speaking boldly in the synagogue?",
+      "explanation": "They took him aside and explained to him the way of God more accurately.",
+      "bibleReference": "Acts 18:26",
+      "answers": [
+        {
+          "text": "They sent him up to the apostles in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "They rebuked him in front of the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "They took him aside and explained the way of God more accurately",
+          "isCorrect": true
+        },
+        {
+          "text": "They baptized him in the name of the Lord Jesus",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 8",
+  "description": "Ten questions on John 8: the woman brought to Jesus in the temple, the light of the world, and the dispute about Abraham.",
+  "slug": "john-bible-quiz-part-8",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Where did Jesus sit down and teach the people very early in the morning?",
+      "explanation": "Very early in the morning he came again into the temple, all the people came to him, and he sat down and taught them.",
+      "bibleReference": "John 8:2",
+      "answers": [
+        {
+          "text": "In the temple",
+          "isCorrect": true
+        },
+        {
+          "text": "On the Mount of Olives",
+          "isCorrect": false
+        },
+        {
+          "text": "In a boat on the lake",
+          "isCorrect": false
+        },
+        {
+          "text": "In a synagogue in Galilee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the scribes and the Pharisees bring to Jesus and set in the middle?",
+      "explanation": "The scribes and the Pharisees brought a woman taken in adultery and set her in the middle.",
+      "bibleReference": "John 8:3",
+      "answers": [
+        {
+          "text": "A man blind from birth",
+          "isCorrect": false
+        },
+        {
+          "text": "A woman taken in adultery",
+          "isCorrect": true
+        },
+        {
+          "text": "A tax collector",
+          "isCorrect": false
+        },
+        {
+          "text": "A man who could not walk",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do while they were testing him with their question?",
+      "explanation": "They asked to have something to accuse him of, but Jesus stooped down and wrote on the ground with his finger.",
+      "bibleReference": "John 8:6",
+      "answers": [
+        {
+          "text": "He read aloud from the law",
+          "isCorrect": false
+        },
+        {
+          "text": "He walked away in silence",
+          "isCorrect": false
+        },
+        {
+          "text": "He wrote on the ground with his finger",
+          "isCorrect": true
+        },
+        {
+          "text": "He prayed with his hands lifted up",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who did Jesus say should throw the first stone at her?",
+      "explanation": "He looked up and said that the one among them who is without sin should throw the first stone at her.",
+      "bibleReference": "John 8:7",
+      "answers": [
+        {
+          "text": "The oldest man present",
+          "isCorrect": false
+        },
+        {
+          "text": "The one who had found her",
+          "isCorrect": false
+        },
+        {
+          "text": "The judges who knew the law",
+          "isCorrect": false
+        },
+        {
+          "text": "The one among them who is without sin",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In what order did her accusers leave?",
+      "explanation": "When they heard it, they were convicted by their conscience and went out one by one, beginning from the oldest.",
+      "bibleReference": "John 8:9",
+      "answers": [
+        {
+          "text": "All of them at once",
+          "isCorrect": false
+        },
+        {
+          "text": "One by one, beginning from the oldest",
+          "isCorrect": true
+        },
+        {
+          "text": "Beginning from the youngest",
+          "isCorrect": false
+        },
+        {
+          "text": "The scribes first, then the Pharisees",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus call himself when he spoke to them again?",
+      "explanation": "Jesus said that he is the light of the world, and that whoever follows him will not walk in the darkness.",
+      "bibleReference": "John 8:12",
+      "answers": [
+        {
+          "text": "The light of the world",
+          "isCorrect": true
+        },
+        {
+          "text": "The true vine",
+          "isCorrect": false
+        },
+        {
+          "text": "The good shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "The door of the sheep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Jesus, what does their law say about valid testimony?",
+      "explanation": "He said it is written in their law that the testimony of two people is valid.",
+      "bibleReference": "John 8:17",
+      "answers": [
+        {
+          "text": "Only a priest may testify",
+          "isCorrect": false
+        },
+        {
+          "text": "Three witnesses are needed",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders must testify first",
+          "isCorrect": false
+        },
+        {
+          "text": "The testimony of two people is valid",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say the truth would do for those who remain in his word?",
+      "explanation": "He said that they would know the truth, and that the truth would make them free.",
+      "bibleReference": "John 8:32",
+      "answers": [
+        {
+          "text": "It would judge the world",
+          "isCorrect": false
+        },
+        {
+          "text": "It would remain forever",
+          "isCorrect": false
+        },
+        {
+          "text": "It would make them free",
+          "isCorrect": true
+        },
+        {
+          "text": "It would condemn no one",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus say was the father of those who wanted to kill him?",
+      "explanation": "Jesus told them that they are of their father, the devil, who was a murderer from the beginning and is the father of lies.",
+      "bibleReference": "John 8:44",
+      "answers": [
+        {
+          "text": "The devil",
+          "isCorrect": true
+        },
+        {
+          "text": "Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they do after Jesus said, \"before Abraham came into existence, I AM\"?",
+      "explanation": "They took up stones to throw at him, but Jesus was hidden and went out of the temple through the middle of them.",
+      "bibleReference": "John 8:58-59",
+      "answers": [
+        {
+          "text": "They worshiped him",
+          "isCorrect": false
+        },
+        {
+          "text": "They put him out of the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "They took up stones to throw at him",
+          "isCorrect": true
+        },
+        {
+          "text": "They led him away to Pilate",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

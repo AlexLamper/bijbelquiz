@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 14",
+  "description": "Ten questions on Acts 14: Iconium and Lystra, the man who had never walked, and the return through Perga to Antioch.",
+  "slug": "acts-bible-quiz-part-14",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What happened when they spoke in the synagogue at Iconium?",
+      "explanation": "They spoke in such a way that a great multitude both of Jews and of Greeks believed.",
+      "bibleReference": "Acts 14:1",
+      "answers": [
+        {
+          "text": "The rulers put them into prison at once",
+          "isCorrect": false
+        },
+        {
+          "text": "No one in the synagogue would listen to them",
+          "isCorrect": false
+        },
+        {
+          "text": "They were stoned before they could finish",
+          "isCorrect": false
+        },
+        {
+          "text": "A great multitude of both Jews and Greeks believed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How was the multitude of the city divided?",
+      "explanation": "Acts 14:4 says part of the multitude sided with the Jews and part with the apostles.",
+      "bibleReference": "Acts 14:4",
+      "answers": [
+        {
+          "text": "Part with the priest of Jupiter and part with Paul",
+          "isCorrect": false
+        },
+        {
+          "text": "Part sided with the Jews and part with the apostles",
+          "isCorrect": true
+        },
+        {
+          "text": "The Greeks on one side and the Romans on the other",
+          "isCorrect": false
+        },
+        {
+          "text": "The rich with the rulers and the poor with Barnabas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did they flee when a violent attempt was made to stone them?",
+      "explanation": "They became aware of it and fled to the cities of Lycaonia: Lystra, Derbe and the surrounding region.",
+      "bibleReference": "Acts 14:5-6",
+      "answers": [
+        {
+          "text": "To Perga and Attalia on the coast",
+          "isCorrect": false
+        },
+        {
+          "text": "To Antioch and Iconium, where they had been",
+          "isCorrect": false
+        },
+        {
+          "text": "To Lystra, Derbe and the region around them",
+          "isCorrect": true
+        },
+        {
+          "text": "To Pisidia and Pamphylia by another road",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is said about the man who sat at Lystra?",
+      "explanation": "He was impotent in his feet, a cripple from his mother's womb, who never had walked.",
+      "bibleReference": "Acts 14:8",
+      "answers": [
+        {
+          "text": "He had never walked",
+          "isCorrect": true
+        },
+        {
+          "text": "He had been blind from birth",
+          "isCorrect": false
+        },
+        {
+          "text": "He could neither hear nor speak",
+          "isCorrect": false
+        },
+        {
+          "text": "He was lying sick with a fever",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the man do when Paul said with a loud voice, \"Stand upright on your feet!\"?",
+      "explanation": "Acts 14:10 says he leaped up and walked.",
+      "bibleReference": "Acts 14:10",
+      "answers": [
+        {
+          "text": "He stared at Paul without moving",
+          "isCorrect": false
+        },
+        {
+          "text": "He was carried into the city by friends",
+          "isCorrect": false
+        },
+        {
+          "text": "He leaped up and walked",
+          "isCorrect": true
+        },
+        {
+          "text": "He fell down as though he were dead",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By which names did the multitude at Lystra call Barnabas and Paul?",
+      "explanation": "They called Barnabas \"Jupiter\" and Paul \"Mercury\", because Paul was the chief speaker.",
+      "bibleReference": "Acts 14:12",
+      "answers": [
+        {
+          "text": "Barnabas \"Mercury\" and Paul \"Jupiter\"",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas \"Jupiter\" and Paul \"Mercury\"",
+          "isCorrect": true
+        },
+        {
+          "text": "Both of them \"sons of the gods\"",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas \"Artemis\" and Paul \"Jupiter\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Barnabas and Paul do when they heard of the sacrifice being prepared?",
+      "explanation": "The apostles tore their clothes and sprang into the multitude, crying out to them.",
+      "bibleReference": "Acts 14:13-14",
+      "answers": [
+        {
+          "text": "They tore their clothes and sprang into the multitude",
+          "isCorrect": true
+        },
+        {
+          "text": "They accepted the oxen and the garlands",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled out of the city by night",
+          "isCorrect": false
+        },
+        {
+          "text": "They offered the oxen to the living God",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How, in Paul's words, had God not left himself without witness?",
+      "explanation": "He did good and gave them rains from the sky and fruitful seasons, filling their hearts with food and gladness.",
+      "bibleReference": "Acts 14:17",
+      "answers": [
+        {
+          "text": "He sent prophets to every nation",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave the law to their fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "He set signs in the sun and the moon",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave rains from the sky and fruitful seasons",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did some Jews from Antioch and Iconium do at Lystra?",
+      "explanation": "Having persuaded the multitudes, they stoned Paul and dragged him out of the city, supposing that he was dead.",
+      "bibleReference": "Acts 14:19",
+      "answers": [
+        {
+          "text": "They stoned Paul and dragged him out of the city",
+          "isCorrect": true
+        },
+        {
+          "text": "They brought Paul before the magistrates",
+          "isCorrect": false
+        },
+        {
+          "text": "They burned the books of the sorcerers",
+          "isCorrect": false
+        },
+        {
+          "text": "They drove Barnabas away by himself",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they do when they had appointed elders in every assembly?",
+      "explanation": "They prayed with fasting and commended them to the Lord, on whom they had believed.",
+      "bibleReference": "Acts 14:23",
+      "answers": [
+        {
+          "text": "They delivered a letter from the apostles to them",
+          "isCorrect": false
+        },
+        {
+          "text": "They baptized every one of the disciples again",
+          "isCorrect": false
+        },
+        {
+          "text": "They prayed with fasting and commended them to the Lord",
+          "isCorrect": true
+        },
+        {
+          "text": "They laid hands on them and sent them away",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

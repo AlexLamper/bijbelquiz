@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 1",
+  "description": "Ten questions on Romans 1: Paul's greeting to those in Rome, his eagerness to preach the Good News, and what the chapter says about those who suppress the truth.",
+  "slug": "romans-bible-quiz-part-1",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "How does Paul describe himself in the opening words of the letter?",
+      "explanation": "The letter opens, \"Paul, a servant of Jesus Christ, called to be an apostle, set apart for the Good News of God.\"",
+      "bibleReference": "Romans 1:1",
+      "answers": [
+        {
+          "text": "A servant of Jesus Christ, called to be an apostle",
+          "isCorrect": true
+        },
+        {
+          "text": "A teacher of the law in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "An elder of the church in Rome",
+          "isCorrect": false
+        },
+        {
+          "text": "A prophet sent to the twelve tribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about God's Son according to the flesh?",
+      "explanation": "Romans 1:3 says that his Son was born of the offspring of David according to the flesh.",
+      "bibleReference": "Romans 1:3",
+      "answers": [
+        {
+          "text": "He was born of the tribe of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "He came from the house of Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "He was born of the offspring of David",
+          "isCorrect": true
+        },
+        {
+          "text": "He was born in Rome",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom is this letter addressed?",
+      "explanation": "The greeting is to all who are in Rome, beloved of God, called to be saints.",
+      "bibleReference": "Romans 1:7",
+      "answers": [
+        {
+          "text": "To the elders and the saints who are in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To all who are in Rome, beloved of God, called to be saints",
+          "isCorrect": true
+        },
+        {
+          "text": "To all the churches throughout the province of Asia",
+          "isCorrect": false
+        },
+        {
+          "text": "To the Jews scattered among the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Paul thank his God for first?",
+      "explanation": "Paul thanks his God through Jesus Christ for all of them, because their faith is proclaimed throughout the whole world.",
+      "bibleReference": "Romans 1:8",
+      "answers": [
+        {
+          "text": "That they have kept the whole law of their fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "That they have sent him gifts for the needy",
+          "isCorrect": false
+        },
+        {
+          "text": "That they have built a house of prayer",
+          "isCorrect": false
+        },
+        {
+          "text": "That their faith is proclaimed throughout the whole world",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why does Paul say he longs to see them?",
+      "explanation": "Paul says he longs to see them so that he may impart to them some spiritual gift, to the end that they may be established.",
+      "bibleReference": "Romans 1:11",
+      "answers": [
+        {
+          "text": "To collect money for the needy among the saints",
+          "isCorrect": false
+        },
+        {
+          "text": "To settle a quarrel that had arisen among them",
+          "isCorrect": false
+        },
+        {
+          "text": "To impart some spiritual gift, so that they may be established",
+          "isCorrect": true
+        },
+        {
+          "text": "To appoint elders over them in the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom does Paul say he is a debtor?",
+      "explanation": "Paul says he is debtor both to Greeks and to foreigners, both to the wise and to the foolish.",
+      "bibleReference": "Romans 1:14",
+      "answers": [
+        {
+          "text": "To Greeks and to foreigners, to the wise and to the foolish",
+          "isCorrect": true
+        },
+        {
+          "text": "To the prophets and to the apostles before him",
+          "isCorrect": false
+        },
+        {
+          "text": "Only to his own nation and to no one else",
+          "isCorrect": false
+        },
+        {
+          "text": "To Caesar and to the governors of the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does Paul say he is not ashamed of the Good News of Christ?",
+      "explanation": "He is not ashamed of it because it is the power of God for salvation for everyone who believes, for the Jew first and also for the Greek.",
+      "bibleReference": "Romans 1:16",
+      "answers": [
+        {
+          "text": "Because it was given to him by the apostles at Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Because it has been proclaimed before kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Because it fulfills the law of Moses in every point",
+          "isCorrect": false
+        },
+        {
+          "text": "Because it is the power of God for salvation for everyone who believes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What words does Paul quote as written, after saying God's righteousness is revealed from faith to faith?",
+      "explanation": "Romans 1:17 quotes, \"But the righteous shall live by faith.\"",
+      "bibleReference": "Romans 1:17",
+      "answers": [
+        {
+          "text": "\"The just shall judge the nations.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"But the righteous shall live by faith.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Without faith it is impossible to please God.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The righteous shall shine as the sun.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say has been clearly seen since the creation of the world?",
+      "explanation": "It says the invisible things of him, his everlasting power and divinity, are clearly seen, being perceived through the things that are made, so that they are without excuse.",
+      "bibleReference": "Romans 1:20",
+      "answers": [
+        {
+          "text": "The coming day of wrath",
+          "isCorrect": false
+        },
+        {
+          "text": "The names of his prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "His everlasting power and divinity",
+          "isCorrect": true
+        },
+        {
+          "text": "The glory of the law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they trade the glory of the incorruptible God for?",
+      "explanation": "They traded the glory of the incorruptible God for the likeness of an image of corruptible man, and of birds, four-footed animals, and creeping things.",
+      "bibleReference": "Romans 1:23",
+      "answers": [
+        {
+          "text": "The likeness of an image of corruptible man, birds, animals and creeping things",
+          "isCorrect": true
+        },
+        {
+          "text": "The wisdom of the Greeks and the learning of the foolish",
+          "isCorrect": false
+        },
+        {
+          "text": "The riches of the nations and the honor that comes from men",
+          "isCorrect": false
+        },
+        {
+          "text": "The traditions handed down to them by their fathers",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

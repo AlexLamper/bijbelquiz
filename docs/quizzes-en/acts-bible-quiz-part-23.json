@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 23",
+  "description": "Ten questions on Acts 23: Paul before the council, the plot of more than forty men, and the night ride to Caesarea.",
+  "slug": "acts-bible-quiz-part-23",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Who commanded those standing by to strike Paul on the mouth?",
+      "explanation": "Acts 23:2 says the high priest, Ananias, commanded those who stood by him to strike him on the mouth.",
+      "bibleReference": "Acts 23:2",
+      "answers": [
+        {
+          "text": "Felix the governor",
+          "isCorrect": false
+        },
+        {
+          "text": "The commanding officer",
+          "isCorrect": false
+        },
+        {
+          "text": "The high priest, Ananias",
+          "isCorrect": true
+        },
+        {
+          "text": "One of the centurions",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul call the man who had ordered him to be struck?",
+      "explanation": "Paul said, \"God will strike you, you whitewashed wall!\" and asked why he was struck contrary to the law.",
+      "bibleReference": "Acts 23:3",
+      "answers": [
+        {
+          "text": "A whitewashed wall",
+          "isCorrect": true
+        },
+        {
+          "text": "A blind guide",
+          "isCorrect": false
+        },
+        {
+          "text": "A thief of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "A son of the devil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul cry out that he was, when he saw the two parties in the council?",
+      "explanation": "Paul cried out that he was a Pharisee, a son of Pharisees, and that he was being judged concerning the hope and resurrection of the dead.",
+      "bibleReference": "Acts 23:6",
+      "answers": [
+        {
+          "text": "A Sadducee, a son of Sadducees",
+          "isCorrect": false
+        },
+        {
+          "text": "A scribe of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "A soldier of Rome",
+          "isCorrect": false
+        },
+        {
+          "text": "A Pharisee, a son of Pharisees",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What do the Sadducees say, according to this chapter?",
+      "explanation": "The chapter explains that the Sadducees say there is no resurrection, nor angel, nor spirit, while the Pharisees confess all of these.",
+      "bibleReference": "Acts 23:8",
+      "answers": [
+        {
+          "text": "That the law was given by angels alone",
+          "isCorrect": false
+        },
+        {
+          "text": "That there is no resurrection, nor angel, nor spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "That only the priests will rise again",
+          "isCorrect": false
+        },
+        {
+          "text": "That the prophets were not sent by God",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Lord tell Paul when he stood by him the following night?",
+      "explanation": "The Lord told Paul to cheer up, because as he had testified about him at Jerusalem, so he must testify also at Rome.",
+      "bibleReference": "Acts 23:11",
+      "answers": [
+        {
+          "text": "That he must testify also at Rome",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would be set free the next day",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would never see Jerusalem again",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would sail to Cyprus to preach",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did more than forty men bind themselves under a curse to do?",
+      "explanation": "They bound themselves under a curse to neither eat nor drink until they had killed Paul, and there were more than forty of them.",
+      "bibleReference": "Acts 23:12-13",
+      "answers": [
+        {
+          "text": "Keep silent until Paul had left the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Fast for forty days in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Neither eat nor drink until they had killed Paul",
+          "isCorrect": true
+        },
+        {
+          "text": "Pay the high priest for Paul's death",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who heard of the ambush and went into the barracks to tell Paul?",
+      "explanation": "Paul's sister's son heard that they were lying in wait, and he came and entered the barracks and told Paul.",
+      "bibleReference": "Acts 23:16",
+      "answers": [
+        {
+          "text": "The high priest Ananias",
+          "isCorrect": false
+        },
+        {
+          "text": "Paul's sister's son",
+          "isCorrect": true
+        },
+        {
+          "text": "A scribe of the Pharisees",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the elders of the Jews",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the commanding officer order his two centurions to prepare for the journey to Caesarea?",
+      "explanation": "He told them to prepare two hundred soldiers, seventy horsemen, and two hundred men armed with spears, at the third hour of the night.",
+      "bibleReference": "Acts 23:23",
+      "answers": [
+        {
+          "text": "Seventy soldiers with spears and two chariots of war",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred horsemen and twelve guards of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "A single centurion with ten soldiers of the barracks",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred soldiers, seventy horsemen and two hundred spearmen",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who wrote the letter to the governor Felix about Paul?",
+      "explanation": "The letter begins, \"Claudius Lysias to the most excellent governor Felix: Greetings.\"",
+      "bibleReference": "Acts 23:26",
+      "answers": [
+        {
+          "text": "Claudius Lysias",
+          "isCorrect": true
+        },
+        {
+          "text": "Ananias the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Julius the centurion",
+          "isCorrect": false
+        },
+        {
+          "text": "Tertullus the orator",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the governor command that Paul be kept?",
+      "explanation": "After saying he would hear Paul fully when his accusers arrived, the governor commanded that he be kept in Herod's palace.",
+      "bibleReference": "Acts 23:35",
+      "answers": [
+        {
+          "text": "In the barracks at Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In the temple courts",
+          "isCorrect": false
+        },
+        {
+          "text": "In Herod's palace",
+          "isCorrect": true
+        },
+        {
+          "text": "On a ship bound for Rome",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

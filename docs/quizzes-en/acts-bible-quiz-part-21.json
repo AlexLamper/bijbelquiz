@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 21",
+  "description": "Ten questions on Acts 21: the journey to Jerusalem, the warning of Agabus, and the uproar in the temple.",
+  "slug": "acts-bible-quiz-part-21",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did the disciples at Tyre say to Paul through the Spirit?",
+      "explanation": "They said to Paul through the Spirit that he should not go up to Jerusalem.",
+      "bibleReference": "Acts 21:3-4",
+      "answers": [
+        {
+          "text": "That he would sail on to Rome",
+          "isCorrect": false
+        },
+        {
+          "text": "That he should not go up to Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would soon be set free",
+          "isCorrect": false
+        },
+        {
+          "text": "That he should shave his head there",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose house at Caesarea did Paul's companions stay?",
+      "explanation": "They entered into the house of Philip the evangelist, who was one of the seven, and stayed with him.",
+      "bibleReference": "Acts 21:8",
+      "answers": [
+        {
+          "text": "Mnason of Cyprus, an early disciple",
+          "isCorrect": false
+        },
+        {
+          "text": "Agabus, the prophet from Judea",
+          "isCorrect": false
+        },
+        {
+          "text": "James, with whom all the elders were",
+          "isCorrect": false
+        },
+        {
+          "text": "Philip the evangelist, one of the seven",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Agabus do with Paul's belt, and what did he say?",
+      "explanation": "Taking Paul's belt, he bound his own feet and hands and said the Holy Spirit declared that the Jews at Jerusalem would bind the owner of the belt and deliver him into the hands of the Gentiles.",
+      "bibleReference": "Acts 21:10-11",
+      "answers": [
+        {
+          "text": "He bound his own feet and hands and said the belt's owner would be bound",
+          "isCorrect": true
+        },
+        {
+          "text": "He gave the belt back and said Paul would be set free",
+          "isCorrect": false
+        },
+        {
+          "text": "He laid the belt on the ground and wept over it",
+          "isCorrect": false
+        },
+        {
+          "text": "He wore the belt and said he would go in Paul's place",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul answer when they begged him not to go up to Jerusalem?",
+      "explanation": "Paul said he was ready not only to be bound but also to die at Jerusalem for the name of the Lord Jesus.",
+      "bibleReference": "Acts 21:12-13",
+      "answers": [
+        {
+          "text": "That he would go no further than Caesarea this time",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Spirit had not spoken to him about this at all",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was ready to be bound and even to die for the name of the Lord Jesus",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would return after the day of Pentecost had passed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had the believers in Jerusalem been told about Paul?",
+      "explanation": "They said he had been reported to teach the Jews among the Gentiles to forsake Moses, telling them not to circumcise their children and not to walk after the customs.",
+      "bibleReference": "Acts 21:20-21",
+      "answers": [
+        {
+          "text": "That he teaches the Jews among the Gentiles to forsake Moses",
+          "isCorrect": true
+        },
+        {
+          "text": "That he had taken money from the Gentiles",
+          "isCorrect": false
+        },
+        {
+          "text": "That he no longer preached the resurrection",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had been bound already at Caesarea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did James and the elders tell Paul to do?",
+      "explanation": "They told him to take the four men who had taken a vow, purify himself with them, and pay their expenses so that they might shave their heads.",
+      "bibleReference": "Acts 21:23-24",
+      "answers": [
+        {
+          "text": "To leave the city of Jerusalem at once and quietly",
+          "isCorrect": false
+        },
+        {
+          "text": "To write a letter to the Gentile believers about it",
+          "isCorrect": false
+        },
+        {
+          "text": "To offer a sacrifice in the temple for his own sins",
+          "isCorrect": false
+        },
+        {
+          "text": "To purify himself with four men under a vow and pay their expenses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did the Jews from Asia stir up the multitude against Paul in the temple?",
+      "explanation": "They had seen Trophimus the Ephesian with him in the city and supposed that Paul had brought him into the temple.",
+      "bibleReference": "Acts 21:28-29",
+      "answers": [
+        {
+          "text": "He had refused to pay for the purification of the men",
+          "isCorrect": false
+        },
+        {
+          "text": "He had spoken to the people in Greek on the stairs",
+          "isCorrect": false
+        },
+        {
+          "text": "They supposed he had brought Trophimus the Ephesian into the temple",
+          "isCorrect": true
+        },
+        {
+          "text": "He had broken the vow that he had taken earlier",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the commanding officer do when he came down with the soldiers?",
+      "explanation": "He arrested Paul and commanded him to be bound with two chains, then asked who he was and what he had done.",
+      "bibleReference": "Acts 21:32-33",
+      "answers": [
+        {
+          "text": "He had Paul scourged there in the street",
+          "isCorrect": false
+        },
+        {
+          "text": "He arrested Paul and had him bound with two chains",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent Paul away to Caesarea that night",
+          "isCorrect": false
+        },
+        {
+          "text": "He left Paul to the crowd and withdrew",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the commanding officer ask Paul as he was about to be brought into the barracks?",
+      "explanation": "He asked whether Paul knew Greek, and whether he was the Egyptian who had led out four thousand men of the Assassins into the wilderness.",
+      "bibleReference": "Acts 21:37-38",
+      "answers": [
+        {
+          "text": "Whether he knew Greek, and whether he was the Egyptian",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether he was a priest of the temple at Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he had come up to the city for the feast",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he was one of the four men under a vow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul say about himself, and what did he then do from the stairs?",
+      "explanation": "Paul said he was a Jew from Tarsus in Cilicia, and when permission was given he beckoned to the people and spoke to them in the Hebrew language.",
+      "bibleReference": "Acts 21:39-40",
+      "answers": [
+        {
+          "text": "He said he was a Roman and asked to be sent to Caesar",
+          "isCorrect": false
+        },
+        {
+          "text": "He said nothing and was carried into the barracks by soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "He said he was a Jew from Tarsus and spoke to the people in the Hebrew language",
+          "isCorrect": true
+        },
+        {
+          "text": "He asked the officer to send him back to Caesarea at once",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

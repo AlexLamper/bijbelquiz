@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 27",
+  "description": "Ten questions on Acts 27: the voyage toward Italy, the storm called Euroclydon, and the shipwreck from which all escaped safely.",
+  "slug": "acts-bible-quiz-part-27",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What was the name of the centurion to whom Paul and the other prisoners were delivered?",
+      "explanation": "When it was determined that they should sail for Italy, Paul and certain other prisoners were delivered to a centurion named Julius, of the Augustan band.",
+      "bibleReference": "Acts 27:1",
+      "answers": [
+        {
+          "text": "Cornelius",
+          "isCorrect": false
+        },
+        {
+          "text": "Publius",
+          "isCorrect": false
+        },
+        {
+          "text": "Julius",
+          "isCorrect": true
+        },
+        {
+          "text": "Lysias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who went with them, described as a Macedonian of Thessalonica?",
+      "explanation": "They embarked in a ship of Adramyttium and put to sea, with Aristarchus, a Macedonian of Thessalonica, being with them.",
+      "bibleReference": "Acts 27:2",
+      "answers": [
+        {
+          "text": "Aristarchus",
+          "isCorrect": true
+        },
+        {
+          "text": "Tertullus",
+          "isCorrect": false
+        },
+        {
+          "text": "Claudius Lysias",
+          "isCorrect": false
+        },
+        {
+          "text": "Julius",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Julius allow Paul to do when they touched at Sidon?",
+      "explanation": "Julius treated Paul kindly and gave him permission to go to his friends and refresh himself.",
+      "bibleReference": "Acts 27:3",
+      "answers": [
+        {
+          "text": "Preach in the synagogue there",
+          "isCorrect": false
+        },
+        {
+          "text": "Buy food for the whole ship",
+          "isCorrect": false
+        },
+        {
+          "text": "Send a letter to Rome",
+          "isCorrect": false
+        },
+        {
+          "text": "Go to his friends and refresh himself",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Paul warn the voyage would bring?",
+      "explanation": "Paul said he perceived that the voyage would be with injury and much loss, not only of the cargo and the ship, but also of their lives.",
+      "bibleReference": "Acts 27:10",
+      "answers": [
+        {
+          "text": "A long delay in Crete, but no danger to anyone",
+          "isCorrect": false
+        },
+        {
+          "text": "Injury and much loss of the cargo, the ship and their lives",
+          "isCorrect": true
+        },
+        {
+          "text": "The loss of the cargo, but not of the ship",
+          "isCorrect": false
+        },
+        {
+          "text": "Shipwreck on the coast of Cilicia near Myra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did the centurion give more heed than to what Paul said?",
+      "explanation": "The centurion gave more heed to the master and to the owner of the ship than to the things spoken by Paul.",
+      "bibleReference": "Acts 27:11",
+      "answers": [
+        {
+          "text": "To the master and the owner of the ship",
+          "isCorrect": true
+        },
+        {
+          "text": "To the soldiers under his command",
+          "isCorrect": false
+        },
+        {
+          "text": "To the other prisoners",
+          "isCorrect": false
+        },
+        {
+          "text": "To the chief man of Crete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the stormy wind called that beat down from shore?",
+      "explanation": "Before long a stormy wind beat down from shore, which is called Euroclydon.",
+      "bibleReference": "Acts 27:14",
+      "answers": [
+        {
+          "text": "Salmone",
+          "isCorrect": false
+        },
+        {
+          "text": "Clauda",
+          "isCorrect": false
+        },
+        {
+          "text": "Euroclydon",
+          "isCorrect": true
+        },
+        {
+          "text": "Adramyttium",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the angel who stood by Paul that night tell him?",
+      "explanation": "The angel said, \"Don't be afraid, Paul. You must stand before Caesar,\" and that God had granted him all those who sailed with him.",
+      "bibleReference": "Acts 27:23-24",
+      "answers": [
+        {
+          "text": "That the ship would reach Italy unharmed",
+          "isCorrect": false
+        },
+        {
+          "text": "Not to be afraid, because he must stand before Caesar",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would be freed in Crete",
+          "isCorrect": false
+        },
+        {
+          "text": "That only the sailors would be saved",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the sailors find when they took soundings twice near midnight?",
+      "explanation": "They took soundings and found twenty fathoms, and after a little while they took soundings again and found fifteen fathoms.",
+      "bibleReference": "Acts 27:28",
+      "answers": [
+        {
+          "text": "First fifteen fathoms, then twenty fathoms",
+          "isCorrect": false
+        },
+        {
+          "text": "Four fathoms both times",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy fathoms, then forty fathoms",
+          "isCorrect": false
+        },
+        {
+          "text": "First twenty fathoms, then fifteen fathoms",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many souls does the text say were on the ship?",
+      "explanation": "The chapter says that in all they were two hundred seventy-six souls on the ship.",
+      "bibleReference": "Acts 27:37",
+      "answers": [
+        {
+          "text": "Two hundred seventy-six",
+          "isCorrect": true
+        },
+        {
+          "text": "Two hundred and twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Only seventy-six",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred seventy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the centurion do when the soldiers planned to kill the prisoners?",
+      "explanation": "The soldiers' counsel was to kill the prisoners, but the centurion, desiring to save Paul, stopped them from their purpose.",
+      "bibleReference": "Acts 27:42-43",
+      "answers": [
+        {
+          "text": "He agreed and had them bound",
+          "isCorrect": false
+        },
+        {
+          "text": "He put the prisoners in the boat",
+          "isCorrect": false
+        },
+        {
+          "text": "He stopped them, because he wanted to save Paul",
+          "isCorrect": true
+        },
+        {
+          "text": "He left the decision to the ship's master",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

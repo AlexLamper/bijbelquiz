@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 9",
+  "description": "Ten questions on Acts 9: Saul on the road to Damascus, Ananias sent to him, and Peter at Lydda and Joppa.",
+  "slug": "acts-bible-quiz-part-9",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What did Saul ask the high priest for?",
+      "explanation": "He asked for letters to the synagogues of Damascus, so that he might bring any of the Way bound to Jerusalem.",
+      "bibleReference": "Acts 9:1-2",
+      "answers": [
+        {
+          "text": "Letters to the synagogues of Damascus",
+          "isCorrect": true
+        },
+        {
+          "text": "Soldiers to go with him to Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "Money for the journey to Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "A place in the council at Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the voice say when a light from the sky shone around him?",
+      "explanation": "He fell on the earth and heard a voice saying, \"Saul, Saul, why do you persecute me?\"",
+      "bibleReference": "Acts 9:3-4",
+      "answers": [
+        {
+          "text": "\"Why do you stand looking into the sky?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Saul, Saul, why do you persecute me?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Who are you looking for?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go to the street called Straight.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the Lord answer when Saul asked who he was?",
+      "explanation": "The Lord said, \"I am Jesus, whom you are persecuting.\"",
+      "bibleReference": "Acts 9:5",
+      "answers": [
+        {
+          "text": "\"I am an angel of the Lord.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I am the God of your fathers.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I am Jesus, whom you are persecuting.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"I am the Son of Man.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long was Saul without sight after this?",
+      "explanation": "He was without sight for three days, and neither ate nor drank.",
+      "bibleReference": "Acts 9:9",
+      "answers": [
+        {
+          "text": "Eight years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight days",
+          "isCorrect": false
+        },
+        {
+          "text": "Three days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the name of the street where Ananias was sent?",
+      "explanation": "The Lord told Ananias to go to the street which is called Straight and inquire in the house of Judah for Saul.",
+      "bibleReference": "Acts 9:11",
+      "answers": [
+        {
+          "text": "Straight",
+          "isCorrect": true
+        },
+        {
+          "text": "Beautiful",
+          "isCorrect": false
+        },
+        {
+          "text": "Solomon's",
+          "isCorrect": false
+        },
+        {
+          "text": "Tarsus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Lord say Saul was to him?",
+      "explanation": "The Lord said Saul was his chosen vessel to bear his name before the nations and kings and the children of Israel.",
+      "bibleReference": "Acts 9:15",
+      "answers": [
+        {
+          "text": "A teacher of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "His chosen vessel to bear his name",
+          "isCorrect": true
+        },
+        {
+          "text": "A servant of the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "A witness to Jerusalem only",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What fell from Saul's eyes when Ananias laid hands on him?",
+      "explanation": "Immediately something like scales fell from his eyes and he received his sight, then he arose and was baptized.",
+      "bibleReference": "Acts 9:17-18",
+      "answers": [
+        {
+          "text": "A covering of cloth",
+          "isCorrect": false
+        },
+        {
+          "text": "Drops of water",
+          "isCorrect": false
+        },
+        {
+          "text": "A thick dust",
+          "isCorrect": false
+        },
+        {
+          "text": "Something like scales",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did his disciples get Saul out of Damascus when the Jews watched the gates?",
+      "explanation": "His disciples took him by night and let him down through the wall, lowering him in a basket.",
+      "bibleReference": "Acts 9:25",
+      "answers": [
+        {
+          "text": "They hid him in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "They sent him out with Barnabas",
+          "isCorrect": false
+        },
+        {
+          "text": "They lowered him through the wall in a basket",
+          "isCorrect": true
+        },
+        {
+          "text": "They led him out at daybreak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Peter heal at Lydda?",
+      "explanation": "At Lydda he found Aeneas, who had been bedridden for eight years because he was paralyzed, and he arose immediately.",
+      "bibleReference": "Acts 9:33-34",
+      "answers": [
+        {
+          "text": "Aeneas, who was paralyzed",
+          "isCorrect": true
+        },
+        {
+          "text": "Tabitha, who had died",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon the tanner of Joppa",
+          "isCorrect": false
+        },
+        {
+          "text": "A man lame from birth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter say to the woman at Joppa after he had prayed?",
+      "explanation": "Turning to the body, he said, \"Tabitha, get up!\" and she opened her eyes and sat up.",
+      "bibleReference": "Acts 9:40",
+      "answers": [
+        {
+          "text": "\"Dorcas, your faith has saved you.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Woman, why are you weeping?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Tabitha, get up!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Rise up and make your bed!\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

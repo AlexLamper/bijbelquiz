@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 11",
+  "description": "Ten questions on Acts 11: Peter explains his vision in Jerusalem, and the word spreads to Antioch.",
+  "slug": "acts-bible-quiz-part-11",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "What news reached the apostles and the brothers in Judea?",
+      "explanation": "Acts 11:1 says they heard that the Gentiles had also received the word of God.",
+      "bibleReference": "Acts 11:1",
+      "answers": [
+        {
+          "text": "That the Gentiles had also received the word of God",
+          "isCorrect": true
+        },
+        {
+          "text": "That Herod had killed James with the sword",
+          "isCorrect": false
+        },
+        {
+          "text": "That a great famine had already begun",
+          "isCorrect": false
+        },
+        {
+          "text": "That Barnabas had gone to Tarsus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did those of the circumcision accuse Peter of when he came up to Jerusalem?",
+      "explanation": "They contended with him, saying that he went in to uncircumcised men and ate with them.",
+      "bibleReference": "Acts 11:2-3",
+      "answers": [
+        {
+          "text": "Baptizing in water instead of in the Holy Spirit",
+          "isCorrect": false
+        },
+        {
+          "text": "Going in to uncircumcised men and eating with them",
+          "isCorrect": true
+        },
+        {
+          "text": "Taking money from the Gentiles",
+          "isCorrect": false
+        },
+        {
+          "text": "Leaving Jerusalem without being sent",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Peter when he saw the vision he described?",
+      "explanation": "Peter said he was in the city of Joppa praying when he saw the vision in a trance.",
+      "bibleReference": "Acts 11:5",
+      "answers": [
+        {
+          "text": "In Caesarea, at a soldier's house",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem, in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "In the city of Joppa, praying",
+          "isCorrect": true
+        },
+        {
+          "text": "In Antioch, teaching the assembly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the voice from heaven answer Peter the second time?",
+      "explanation": "The voice said that what God has cleansed, Peter should not call unclean.",
+      "bibleReference": "Acts 11:9",
+      "answers": [
+        {
+          "text": "Your prayer has been heard in heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "Do not eat, for you are unclean",
+          "isCorrect": false
+        },
+        {
+          "text": "Rise and go to Caesarea alone",
+          "isCorrect": false
+        },
+        {
+          "text": "What God has cleansed, don't you call unclean",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many times, according to Peter, was the vision repeated?",
+      "explanation": "Peter said this was done three times, and then all were drawn up again into heaven.",
+      "bibleReference": "Acts 11:10",
+      "answers": [
+        {
+          "text": "Twice",
+          "isCorrect": false
+        },
+        {
+          "text": "Three times",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven times",
+          "isCorrect": false
+        },
+        {
+          "text": "Once only",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which city were the disciples first called Christians?",
+      "explanation": "Acts 11:26 says the disciples were first called Christians in Antioch, where Barnabas and Saul taught for a whole year.",
+      "bibleReference": "Acts 11:26",
+      "answers": [
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Joppa",
+          "isCorrect": false
+        },
+        {
+          "text": "Caesarea",
+          "isCorrect": false
+        },
+        {
+          "text": "Antioch",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the listeners in Jerusalem say when they had heard these things?",
+      "explanation": "They held their peace and glorified God, saying that God had also granted the Gentiles repentance to life.",
+      "bibleReference": "Acts 11:18",
+      "answers": [
+        {
+          "text": "That Peter should go back to Joppa at once",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Gentiles must still be circumcised",
+          "isCorrect": false
+        },
+        {
+          "text": "That God had also granted the Gentiles repentance to life",
+          "isCorrect": true
+        },
+        {
+          "text": "That they would send Peter to Caesarea again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did the men of Cyprus and Cyrene preach the Lord Jesus when they came to Antioch?",
+      "explanation": "Acts 11:20 says they spoke to the Hellenists, preaching the Lord Jesus.",
+      "bibleReference": "Acts 11:20",
+      "answers": [
+        {
+          "text": "To the Hellenists",
+          "isCorrect": true
+        },
+        {
+          "text": "To the elders in Judea",
+          "isCorrect": false
+        },
+        {
+          "text": "To the rulers of the synagogue in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To the soldiers of Caesarea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the assembly in Jerusalem send out to go as far as Antioch?",
+      "explanation": "When the report about Antioch reached Jerusalem, the assembly sent out Barnabas.",
+      "bibleReference": "Acts 11:22",
+      "answers": [
+        {
+          "text": "Peter",
+          "isCorrect": false
+        },
+        {
+          "text": "Agabus",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas",
+          "isCorrect": true
+        },
+        {
+          "text": "Saul",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Agabus indicate by the Spirit?",
+      "explanation": "Agabus stood up and indicated by the Spirit that there should be a great famine all over the world.",
+      "bibleReference": "Acts 11:28",
+      "answers": [
+        {
+          "text": "That there would be a great famine all over the world",
+          "isCorrect": true
+        },
+        {
+          "text": "That Peter would be delivered from prison",
+          "isCorrect": false
+        },
+        {
+          "text": "That Saul would be sent to the Gentiles",
+          "isCorrect": false
+        },
+        {
+          "text": "That Jerusalem would be shaken by an earthquake",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
