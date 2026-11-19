@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What does the writer say they have renounced, and how do they not handle the word of God?",
@@ -91,7 +91,7 @@
           "isCorrect": false
         },
         {
-          "text": "\"I believed, and therefore I spoke\"",
+          "text": "\"Touch no unclean thing\"",
           "isCorrect": false
         },
         {

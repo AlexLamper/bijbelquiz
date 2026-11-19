@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Through whom did God speak to the fathers in the past?",
@@ -194,8 +194,8 @@
     },
     {
       "text": "What does the text say will happen to the heavens, the works of his hands?",
-      "explanation": "Verses 11 and 12 say they will perish and all grow old like a garment, and will be rolled up like a mantle and changed, while he remains the same.",
-      "bibleReference": "Hebrews 1:11-12",
+      "explanation": "Verses 10 to 12 call the heavens the works of his hands and say they will perish and all grow old like a garment, and will be rolled up like a mantle and changed, while he remains the same.",
+      "bibleReference": "Hebrews 1:10-12",
       "answers": [
         {
           "text": "They will grow old like a garment",

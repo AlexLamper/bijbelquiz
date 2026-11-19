@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What does verse 3 call the will of God?",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "text": "In which region do they already show brotherly love toward all the brothers?",
+      "text": "Toward the brothers in which region do they already show this love?",
       "explanation": "Verse 10 says that indeed they do it toward all the brothers who are in all Macedonia.",
       "bibleReference": "1 Thessalonians 4:10",
       "answers": [

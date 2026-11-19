@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Why did the word they heard not profit the people spoken of in verse 2?",
@@ -22,7 +22,7 @@
           "isCorrect": false
         },
         {
-          "text": "It was spoken in a language they did not know",
+          "text": "It was spoken to them in a language that they did not know",
           "isCorrect": false
         },
         {
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "text": "What does verse 13 say about creatures and his sight?",
+      "text": "What does verse 13 say about creatures and God's sight?",
       "explanation": "Verse 13 says there is no creature hidden from his sight, but all things are naked and laid open before his eyes.",
       "bibleReference": "Hebrews 4:13",
       "answers": [
@@ -229,7 +229,7 @@
           "isCorrect": false
         },
         {
-          "text": "A new name written on a stone",
+          "text": "A new name written on a stone of white marble",
           "isCorrect": false
         },
         {

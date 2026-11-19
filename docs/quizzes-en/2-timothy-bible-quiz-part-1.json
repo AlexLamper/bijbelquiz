@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How does Paul describe himself in the opening verse?",
@@ -78,20 +78,20 @@
       ]
     },
     {
-      "text": "How does Paul say the gift of God came to be in Timothy?",
+      "text": "Through what does Paul say Timothy should stir up the gift of God?",
       "explanation": "Verse 6 says Timothy should stir up the gift of God which is in him through the laying on of Paul's hands.",
       "bibleReference": "2 Timothy 1:6",
       "answers": [
         {
-          "text": "By a word from the prophets",
+          "text": "Through a word from the prophets",
           "isCorrect": false
         },
         {
-          "text": "By the prayers of the elders",
+          "text": "Through the prayers of the elders",
           "isCorrect": false
         },
         {
-          "text": "Through the laying on of his hands",
+          "text": "Through the laying on of Paul’s hands",
           "isCorrect": true
         },
         {

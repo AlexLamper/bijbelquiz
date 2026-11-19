@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Which three names open this letter?",
@@ -32,24 +32,24 @@
       ]
     },
     {
-      "text": "To whom is the letter written?",
-      "explanation": "Verse 1 writes to the assembly of the Thessalonians in God the Father and the Lord Jesus Christ.",
-      "bibleReference": "1 Thessalonians 1:1",
+      "text": "What does verse 8 say has gone out from them into every place?",
+      "explanation": "Verse 8 says the word of the Lord has been declared from them, not only in Macedonia and Achaia, and that their faith toward God has gone out in every place.",
+      "bibleReference": "1 Thessalonians 1:8",
       "answers": [
         {
-          "text": "The saints who are at Philippi",
+          "text": "The letters they had written to the other assemblies",
           "isCorrect": false
         },
         {
-          "text": "The assembly of the Thessalonians",
+          "text": "Their faith toward God",
           "isCorrect": true
         },
         {
-          "text": "The brothers in Christ at Colossae",
+          "text": "The gifts they had gathered for the saints",
           "isCorrect": false
         },
         {
-          "text": "The assemblies of Macedonia and Achaia",
+          "text": "The report of those who first opposed them",
           "isCorrect": false
         }
       ]

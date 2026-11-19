@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did one of the disciples ask him in a certain place?",
@@ -83,7 +83,7 @@
       "bibleReference": "Luke 11:9-10",
       "answers": [
         {
-          "text": "He receives, finds, and the door is opened",
+          "text": "He receives, finds, and it is opened to him",
           "isCorrect": true
         },
         {

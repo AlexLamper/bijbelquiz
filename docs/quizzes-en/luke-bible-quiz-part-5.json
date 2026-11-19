@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Whose boat did Jesus enter and teach the multitudes from, by the lake of Gennesaret?",
@@ -194,7 +194,7 @@
     },
     {
       "text": "What did Levi the tax collector do when Jesus said, \"Follow me\"?",
-      "explanation": "Levi left everything, and rose up and followed him, and then made a great feast for him in his house.",
+      "explanation": "Levi was sitting at the tax office when Jesus said, \"Follow me!\", and he left everything, rose up and followed him.",
       "bibleReference": "Luke 5:27-28",
       "answers": [
         {

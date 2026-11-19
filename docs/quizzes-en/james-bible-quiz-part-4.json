@@ -6,10 +6,10 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
-      "text": "According to verse 1, where do wars and fightings among you come from?",
+      "text": "According to verse 1, where do the wars and fightings among them come from?",
       "explanation": "Verse 1 asks where the wars and fightings come from, and answers: from your pleasures that war in your members.",
       "bibleReference": "James 4:1",
       "answers": [
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "text": "At the end of verse 2, why do they not have?",
+      "text": "According to the end of verse 2, what is the reason they do not have?",
       "explanation": "Verse 2 ends by saying: you don't have, because you don't ask.",
       "bibleReference": "James 4:2",
       "answers": [
@@ -193,8 +193,8 @@
       ]
     },
     {
-      "text": "What is your life compared to in verse 14?",
-      "explanation": "Verse 14 says that you are a vapor that appears for a little time, and then vanishes away.",
+      "text": "What does verse 14 compare their life to?",
+      "explanation": "Verse 14 says: for what is your life? For you are a vapor that appears for a little time, and then vanishes away.",
       "bibleReference": "James 4:14",
       "answers": [
         {

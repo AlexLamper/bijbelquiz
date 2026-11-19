@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How does the writer say he did not come to them?",
@@ -125,8 +125,8 @@
     },
     {
       "text": "What would the rulers of this world not have done, had they known God's wisdom?",
-      "explanation": "1 Corinthians 2:8 says none of the rulers of this world knew it, for had they known it they would not have crucified the Lord of glory.",
-      "bibleReference": "1 Corinthians 2:8",
+      "explanation": "1 Corinthians 2:7-8 say that God's wisdom in a mystery was known by none of the rulers of this world, for had they known it they would not have crucified the Lord of glory.",
+      "bibleReference": "1 Corinthians 2:7-8",
       "answers": [
         {
           "text": "They would not have crucified the Lord of glory",

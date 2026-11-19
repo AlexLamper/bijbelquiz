@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the disciples ask Jesus about the man who was blind from birth?",
@@ -149,7 +149,7 @@
     {
       "text": "How did the man's parents answer when asked how their son could now see?",
       "explanation": "His parents said that they did not know how he now sees, that he is of age, and that he should be asked himself.",
-      "bibleReference": "John 9:20-21",
+      "bibleReference": "John 9:19-21",
       "answers": [
         {
           "text": "Jesus opened his eyes",

@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Who came to Jesus by night?",
@@ -95,7 +95,7 @@
           "isCorrect": false
         },
         {
-          "text": "A well of water in the desert",
+          "text": "A well of water in the middle of the desert",
           "isCorrect": false
         }
       ]
@@ -106,7 +106,7 @@
       "bibleReference": "John 3:14",
       "answers": [
         {
-          "text": "The manna given in the wilderness",
+          "text": "The manna given to the fathers in the wilderness",
           "isCorrect": false
         },
         {
@@ -156,7 +156,7 @@
           "isCorrect": false
         },
         {
-          "text": "That the light has come into the world and men loved the darkness",
+          "text": "That the light has come and men loved the darkness",
           "isCorrect": true
         },
         {
@@ -198,7 +198,7 @@
       "bibleReference": "John 3:29",
       "answers": [
         {
-          "text": "The friend of the bridegroom, who stands and hears him",
+          "text": "The friend of the bridegroom, who hears him",
           "isCorrect": true
         },
         {

@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What accusation was made against the rich man's manager?",
@@ -206,7 +206,7 @@
           "isCorrect": true
         },
         {
-          "text": "Go at once to warn his five brothers",
+          "text": "Carry him away to Abraham's bosom",
           "isCorrect": false
         },
         {

@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What does someone who seeks to be an overseer desire, according to verse 1?",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "text": "Which three things does verse 3 say the overseer must not be?",
+      "text": "What does verse 3 say the overseer must not be?",
       "explanation": "Verse 3 says: not a drinker, not violent, not greedy for money, but gentle and not quarrelsome.",
       "bibleReference": "1 Timothy 3:3",
       "answers": [
@@ -149,7 +149,7 @@
     {
       "text": "What must happen before servants are allowed to serve?",
       "explanation": "Verse 10 says: let them also first be tested; then let them serve if they are blameless.",
-      "bibleReference": "1 Timothy 3:10",
+      "bibleReference": "1 Timothy 3:8-10",
       "answers": [
         {
           "text": "They must first be taught the law",
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "text": "What does verse 11 require of their wives?",
+      "text": "What does verse 11 require of the wives?",
       "explanation": "Verse 11 says their wives must be reverent, not slanderers, temperate, and faithful in all things.",
       "bibleReference": "1 Timothy 3:11",
       "answers": [

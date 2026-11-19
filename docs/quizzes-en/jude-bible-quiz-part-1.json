@@ -1,12 +1,12 @@
 {
   "title": "Jude Bible Quiz - Chapter 1",
-  "description": "Ten questions on Jude 1: contending for the faith, the warnings from Egypt, Sodom and the angels, Michael and the devil, and the words of Enoch.",
+  "description": "Ten questions on Jude 1: contending for the faith, the warnings from Egypt and the angels, Michael and the devil, Korah's rebellion, and the words of Enoch.",
   "slug": "jude-bible-quiz-part-1",
   "categorySlug": "new-testament",
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How does Jude describe himself in the first verse?",
@@ -217,8 +217,8 @@
     },
     {
       "text": "What did the apostles say there would be in the last time?",
-      "explanation": "Jude 1:18 says they told them there will be mockers in the last time, walking after their own ungodly lusts.",
-      "bibleReference": "Jude 1:18",
+      "explanation": "Jude 1:17-18 says the apostles told them that in the last time there will be mockers, walking after their own ungodly lusts.",
+      "bibleReference": "Jude 1:17-18",
       "answers": [
         {
           "text": "Famines and troubles in many places",

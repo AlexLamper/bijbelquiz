@@ -6,10 +6,10 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
-      "text": "What is the first thing Timothy is commanded to do in verse 2?",
+      "text": "What is the first thing the reader is commanded to do in verse 2?",
       "explanation": "Verse 2 says to preach the word, to be urgent in season and out of season, and to reprove, rebuke and exhort with all patience and teaching.",
       "bibleReference": "2 Timothy 4:2",
       "answers": [
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "text": "What is Timothy asked to bring from Troas, where it was left with Carpus?",
+      "text": "What is the reader asked to bring from Troas, where it was left with Carpus?",
       "explanation": "Verse 13 asks him to bring the cloak left at Troas with Carpus, and the books, especially the parchments.",
       "bibleReference": "2 Timothy 4:13",
       "answers": [

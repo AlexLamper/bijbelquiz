@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How does Paul describe himself in the opening words of the letter?",
@@ -18,7 +18,7 @@
           "isCorrect": true
         },
         {
-          "text": "A teacher of the law in Jerusalem",
+          "text": "A teacher of the law brought up in Jerusalem among the elders",
           "isCorrect": false
         },
         {
@@ -41,7 +41,7 @@
           "isCorrect": false
         },
         {
-          "text": "He came from the house of Aaron",
+          "text": "He came from the house of Aaron, of the priests who serve the temple",
           "isCorrect": false
         },
         {
@@ -106,11 +106,11 @@
       "bibleReference": "Romans 1:11",
       "answers": [
         {
-          "text": "To collect money for the needy among the saints",
+          "text": "To collect money for the needy among the saints of his own nation",
           "isCorrect": false
         },
         {
-          "text": "To settle a quarrel that had arisen among them",
+          "text": "To settle a quarrel that had arisen among the elders of the city",
           "isCorrect": false
         },
         {
@@ -156,7 +156,7 @@
           "isCorrect": false
         },
         {
-          "text": "Because it has been proclaimed before kings",
+          "text": "Because it has already been proclaimed before kings and governors",
           "isCorrect": false
         },
         {
@@ -229,7 +229,7 @@
           "isCorrect": false
         },
         {
-          "text": "The riches of the nations and the honor that comes from men",
+          "text": "The riches of the nations, the honor that comes from men and the wisdom of this world",
           "isCorrect": false
         },
         {

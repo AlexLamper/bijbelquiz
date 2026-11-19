@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did John see in the right hand of him who sat on the throne?",
@@ -194,8 +194,8 @@
     },
     {
       "text": "What does the new song say he made them to be for God?",
-      "explanation": "Revelation 5:10 says he made us kings and priests to our God, and that we will reign on the earth.",
-      "bibleReference": "Revelation 5:10",
+      "explanation": "Revelation 5:9-10 says the new song tells him he made us kings and priests to our God, and that we will reign on the earth.",
+      "bibleReference": "Revelation 5:9-10",
       "answers": [
         {
           "text": "Kings and priests",

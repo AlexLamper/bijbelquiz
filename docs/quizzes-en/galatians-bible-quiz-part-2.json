@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Whom did the writer take with him when he went up again to Jerusalem?",
@@ -187,7 +187,7 @@
           "isCorrect": true
         },
         {
-          "text": "Cephas",
+          "text": "John",
           "isCorrect": false
         }
       ]

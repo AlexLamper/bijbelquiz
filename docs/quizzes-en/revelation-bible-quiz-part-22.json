@@ -6,17 +6,29 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What proceeded out of the throne of God and of the Lamb?",
       "explanation": "Revelation 22:1 says he showed John a river of water of life, clear as crystal, proceeding out of the throne of God and of the Lamb.",
       "bibleReference": "Revelation 22:1",
       "answers": [
-        { "text": "A river of water of life, clear as crystal", "isCorrect": true },
-        { "text": "A sea of glass mixed with fire", "isCorrect": false },
-        { "text": "Flashes of lightning and thunder", "isCorrect": false },
-        { "text": "A cloud of incense", "isCorrect": false }
+        {
+          "text": "A river of water of life, clear as crystal",
+          "isCorrect": true
+        },
+        {
+          "text": "A sea of glass mixed with fire",
+          "isCorrect": false
+        },
+        {
+          "text": "Flashes of lightning and thunder",
+          "isCorrect": false
+        },
+        {
+          "text": "A cloud of incense",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -24,10 +36,22 @@
       "explanation": "Revelation 22:2 says the tree of life bore twelve kinds of fruits, and its leaves were for the healing of the nations.",
       "bibleReference": "Revelation 22:2",
       "answers": [
-        { "text": "For the clothing of the saints", "isCorrect": false },
-        { "text": "For the light of the city", "isCorrect": false },
-        { "text": "For the healing of the nations", "isCorrect": true },
-        { "text": "For the food of the servants", "isCorrect": false }
+        {
+          "text": "For the clothing of the saints",
+          "isCorrect": false
+        },
+        {
+          "text": "For the light of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "For the healing of the nations",
+          "isCorrect": true
+        },
+        {
+          "text": "For the food of the servants",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -35,10 +59,22 @@
       "explanation": "Revelation 22:3 says there will be no curse any more, the throne of God and of the Lamb will be in it, and his servants will serve him.",
       "bibleReference": "Revelation 22:3",
       "answers": [
-        { "text": "The sea", "isCorrect": false },
-        { "text": "The curse", "isCorrect": true },
-        { "text": "The nations", "isCorrect": false },
-        { "text": "The gates", "isCorrect": false }
+        {
+          "text": "The sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The curse",
+          "isCorrect": true
+        },
+        {
+          "text": "The nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The gates",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -46,10 +82,22 @@
       "explanation": "Revelation 22:4 says they will see his face, and his name will be on their foreheads.",
       "bibleReference": "Revelation 22:4",
       "answers": [
-        { "text": "On the gates of the city", "isCorrect": false },
-        { "text": "On the foundations of the wall", "isCorrect": false },
-        { "text": "On a white stone", "isCorrect": false },
-        { "text": "On their foreheads", "isCorrect": true }
+        {
+          "text": "On the gates of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "On the foundations of the wall",
+          "isCorrect": false
+        },
+        {
+          "text": "On a white stone",
+          "isCorrect": false
+        },
+        {
+          "text": "On their foreheads",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -57,10 +105,22 @@
       "explanation": "Revelation 22:5 says there will be no night, and they need no lamp light or sun light, for the Lord God will illuminate them.",
       "bibleReference": "Revelation 22:5",
       "answers": [
-        { "text": "Because the moon shines there always", "isCorrect": false },
-        { "text": "Because the Lord God will illuminate them", "isCorrect": true },
-        { "text": "Because the river shines like crystal", "isCorrect": false },
-        { "text": "Because the angels carry torches", "isCorrect": false }
+        {
+          "text": "Because the moon shines there always",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the Lord God will illuminate them",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the river shines like crystal",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the angels carry torches",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -68,10 +128,22 @@
       "explanation": "Revelation 22:8 says, \"Now I, John, am the one who heard and saw these things.\"",
       "bibleReference": "Revelation 22:8",
       "answers": [
-        { "text": "John", "isCorrect": true },
-        { "text": "David", "isCorrect": false },
-        { "text": "One of the prophets", "isCorrect": false },
-        { "text": "One of the elders", "isCorrect": false }
+        {
+          "text": "John",
+          "isCorrect": true
+        },
+        {
+          "text": "David",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the elders",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -79,10 +151,22 @@
       "explanation": "The angel said he was a fellow bondservant with John and with his brothers, and told him, \"Worship God.\"",
       "bibleReference": "Revelation 22:9",
       "answers": [
-        { "text": "To write down the vision", "isCorrect": false },
-        { "text": "To stand up and measure the city", "isCorrect": false },
-        { "text": "To worship God", "isCorrect": true },
-        { "text": "To go back to the assemblies", "isCorrect": false }
+        {
+          "text": "To write down the vision",
+          "isCorrect": false
+        },
+        {
+          "text": "To stand up and measure the city",
+          "isCorrect": false
+        },
+        {
+          "text": "To worship God",
+          "isCorrect": true
+        },
+        {
+          "text": "To go back to the assemblies",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -90,10 +174,22 @@
       "explanation": "Revelation 22:12 says, \"Behold, I come quickly. My reward is with me, to repay to each man according to his work.\"",
       "bibleReference": "Revelation 22:12",
       "answers": [
-        { "text": "A sharp sickle for the harvest of the earth", "isCorrect": false },
-        { "text": "The keys of Death and of Hades", "isCorrect": false },
-        { "text": "Seven golden bowls full of wrath", "isCorrect": false },
-        { "text": "His reward, to repay each man's work", "isCorrect": true }
+        {
+          "text": "A sharp sickle for the harvest of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The keys of Death and of Hades",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven golden bowls full of wrath",
+          "isCorrect": false
+        },
+        {
+          "text": "His reward, to repay each man's work",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -101,10 +197,22 @@
       "explanation": "In Revelation 22:16 Jesus says he is the root and the offspring of David, the Bright and Morning Star.",
       "bibleReference": "Revelation 22:16",
       "answers": [
-        { "text": "As the root and the offspring of David", "isCorrect": true },
-        { "text": "As the shepherd of the house of David", "isCorrect": false },
-        { "text": "As the faithful servant of David", "isCorrect": false },
-        { "text": "As the city of David restored", "isCorrect": false }
+        {
+          "text": "As the root and the offspring of David",
+          "isCorrect": true
+        },
+        {
+          "text": "As the shepherd of the house of David",
+          "isCorrect": false
+        },
+        {
+          "text": "As the faithful servant of David",
+          "isCorrect": false
+        },
+        {
+          "text": "As the city of David restored",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -112,10 +220,22 @@
       "explanation": "Revelation 22:18 says that if anyone adds to the words of the prophecy of this book, may God add to him the plagues which are written in this book.",
       "bibleReference": "Revelation 22:18",
       "answers": [
-        { "text": "He will be shut outside the gates", "isCorrect": false },
-        { "text": "He will be cast into the lake of fire", "isCorrect": false },
-        { "text": "God will add to him the plagues written in this book", "isCorrect": true },
-        { "text": "His name will be blotted from the book of life", "isCorrect": false }
+        {
+          "text": "He will be shut outside the gates",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be cast into the lake of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "God will add to him the plagues written in this book",
+          "isCorrect": true
+        },
+        {
+          "text": "His name will be blotted from the book of life",
+          "isCorrect": false
+        }
       ]
     }
   ]

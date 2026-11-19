@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Where did Jesus sit down and teach the people very early in the morning?",
@@ -172,7 +172,7 @@
     {
       "text": "What did Jesus say the truth would do for those who remain in his word?",
       "explanation": "He said that they would know the truth, and that the truth would make them free.",
-      "bibleReference": "John 8:32",
+      "bibleReference": "John 8:31-32",
       "answers": [
         {
           "text": "It would judge the world",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "text": "Whom did Jesus say was the father of those who wanted to kill him?",
+      "text": "Who did Jesus say was the father of those who wanted to kill him?",
       "explanation": "Jesus told them that they are of their father, the devil, who was a murderer from the beginning and is the father of lies.",
       "bibleReference": "John 8:44",
       "answers": [

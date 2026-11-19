@@ -6,12 +6,12 @@
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the soldiers put on Jesus after Pilate had him flogged?",
       "explanation": "The soldiers twisted thorns into a crown and put it on his head, and dressed him in a purple garment.",
-      "bibleReference": "John 19:2",
+      "bibleReference": "John 19:1-2",
       "answers": [
         {
           "text": "A white robe and a reed in his hand",
@@ -57,7 +57,7 @@
     {
       "text": "What did Jesus answer when Pilate said that he had power to release him and power to crucify him?",
       "explanation": "Jesus answered that Pilate would have no power at all against him unless it were given to him from above, and that the one who delivered him up has greater sin.",
-      "bibleReference": "John 19:11",
+      "bibleReference": "John 19:10-11",
       "answers": [
         {
           "text": "That Pilate's power came from the chief priests",

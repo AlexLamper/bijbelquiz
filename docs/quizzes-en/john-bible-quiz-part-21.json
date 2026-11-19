@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Where did Jesus reveal himself again to the disciples?",
@@ -91,7 +91,7 @@
           "isCorrect": false
         },
         {
-          "text": "One of the sons of Zebedee",
+          "text": "Simon Peter himself",
           "isCorrect": false
         },
         {

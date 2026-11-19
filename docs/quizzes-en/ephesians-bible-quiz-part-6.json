@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Why does verse 1 tell children to obey their parents in the Lord?",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "text": "According to verse 12, against what is our wrestling not?",
+      "text": "According to verse 12, what is our wrestling not against?",
       "explanation": "Verse 12 says our wrestling is not against flesh and blood, but against the principalities, the powers, the world's rulers of the darkness of this age, and the spiritual forces of wickedness in the heavenly places.",
       "bibleReference": "Ephesians 6:12",
       "answers": [

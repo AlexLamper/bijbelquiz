@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What was on the head of the mighty angel coming down out of the sky?",
@@ -78,8 +78,8 @@
       ]
     },
     {
-      "text": "What did the voice from the sky tell John about the words of the seven thunders?",
-      "explanation": "John was about to write, but a voice from the sky said to seal up the things which the seven thunders said and not to write them.",
+      "text": "What did the voice from the sky say about the words of the seven thunders?",
+      "explanation": "The narrator was about to write, but a voice from the sky told him to seal up the things which the seven thunders said and not to write them.",
       "bibleReference": "Revelation 10:4",
       "answers": [
         {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "text": "What did the voice from heaven tell John to do?",
+      "text": "What did the voice from heaven tell the narrator to do?",
       "explanation": "The voice said, “Go, take the book which is open in the hand of the angel who stands on the sea and on the land.”",
       "bibleReference": "Revelation 10:8",
       "answers": [
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "text": "What did the angel tell John to do with the little book?",
+      "text": "What did the angel tell the narrator to do with the little book?",
       "explanation": "The angel said, “Take it, and eat it. It will make your stomach bitter, but in your mouth it will be as sweet as honey.”",
       "bibleReference": "Revelation 10:9",
       "answers": [
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "text": "What happened after John had eaten the little book?",
+      "text": "What happened after the narrator had eaten the little book?",
       "explanation": "It was as sweet as honey in his mouth, and when he had eaten it his stomach was made bitter.",
       "bibleReference": "Revelation 10:10",
       "answers": [
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "text": "What was John told at the end of the chapter?",
+      "text": "What was the narrator told at the end of the chapter?",
       "explanation": "They told him, “You must prophesy again over many peoples, nations, languages, and kings.”",
       "bibleReference": "Revelation 10:11",
       "answers": [

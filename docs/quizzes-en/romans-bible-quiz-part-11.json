@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Of which tribe does the writer say he is?",
@@ -33,8 +33,8 @@
     },
     {
       "text": "How many men did God say he had reserved for himself who had not bowed the knee to Baal?",
-      "explanation": "Romans 11:4 says God answers Elijah that he has reserved for himself seven thousand men who have not bowed the knee to Baal.",
-      "bibleReference": "Romans 11:4",
+      "explanation": "Romans 11:2-4 say that Elijah pleads with God against Israel, and that God answers him, “I have reserved for myself seven thousand men who have not bowed the knee to Baal.”",
+      "bibleReference": "Romans 11:2-4",
       "answers": [
         {
           "text": "Three hundred",

@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Where did Festus go up, three days after coming into the province?",
@@ -32,9 +32,9 @@
       ]
     },
     {
-      "text": "What were the leading men plotting when they asked Festus to summon Paul to Jerusalem?",
-      "explanation": "They asked a favor against Paul, that Festus would summon him to Jerusalem, plotting to kill him on the way.",
-      "bibleReference": "Acts 25:3",
+      "text": "What were the high priest and the principal men of the Jews plotting when they asked Festus to summon Paul to Jerusalem?",
+      "explanation": "The high priest and the principal men asked a favor against Paul, that Festus would summon him to Jerusalem, plotting to kill him on the way.",
+      "bibleReference": "Acts 25:2-3",
       "answers": [
         {
           "text": "To make him swear by the temple",

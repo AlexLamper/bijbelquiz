@@ -6,11 +6,11 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
-      "text": "What does the text say not many of you should be?",
-      "explanation": "James 3:1 says: let not many of you be teachers, because teachers will receive heavier judgment.",
+      "text": "What does verse 1 say not many of them should be?",
+      "explanation": "Verse 1 says: let not many of you be teachers, my brothers, knowing that we will receive heavier judgment.",
       "bibleReference": "James 3:1",
       "answers": [
         {
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "text": "With the tongue we bless God and we curse men who are what?",
+      "text": "What does verse 9 say about the men who are cursed with the same tongue that blesses God?",
       "explanation": "Verse 9 says that with the tongue we bless our God and Father, and with it we curse men who are made in the image of God.",
       "bibleReference": "James 3:9",
       "answers": [

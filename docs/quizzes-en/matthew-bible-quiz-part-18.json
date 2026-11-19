@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the disciples come and ask Jesus in that hour?",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "text": "In the parable, how much did the fellow servant owe the man who had been forgiven ten thousand talents?",
+      "text": "In the parable, how much did the fellow servant owe the servant who found him?",
       "explanation": "The servant who had been forgiven found a fellow servant who owed him one hundred denarii, and grabbed him by the throat demanding payment.",
       "bibleReference": "Matthew 18:28",
       "answers": [

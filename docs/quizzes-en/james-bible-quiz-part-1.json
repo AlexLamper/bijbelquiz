@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "To whom is the letter addressed in verse 1?",
@@ -87,7 +87,7 @@
           "isCorrect": false
         },
         {
-          "text": "A man looking in a mirror",
+          "text": "A man who looks at his own face in a mirror",
           "isCorrect": false
         },
         {
@@ -114,7 +114,7 @@
           "isCorrect": false
         },
         {
-          "text": "A tree planted beside water",
+          "text": "A tree planted beside water that never withers",
           "isCorrect": false
         },
         {

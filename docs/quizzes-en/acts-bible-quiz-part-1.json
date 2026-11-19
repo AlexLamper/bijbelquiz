@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "To whom is this book addressed?",
@@ -95,7 +95,7 @@
           "isCorrect": false
         },
         {
-          "text": "In Jerusalem, Judea, Samaria and the earth",
+          "text": "In Jerusalem, Judea, Samaria and the uttermost parts of the earth",
           "isCorrect": true
         }
       ]

@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "According to verses 1 and 2, how may a husband who does not obey the Word be won?",
@@ -124,9 +124,9 @@
       ]
     },
     {
-      "text": "What is the one who would love life told in verse 11 to seek and pursue?",
-      "explanation": "Verse 11 says: let him turn away from evil and do good; let him seek peace and pursue it.",
-      "bibleReference": "1 Peter 3:11",
+      "text": "What is the one who would love life told to seek and pursue?",
+      "explanation": "Verse 10 speaks of him who would love life and see good days, and verse 11 says: let him seek peace and pursue it.",
+      "bibleReference": "1 Peter 3:10-11",
       "answers": [
         {
           "text": "Wisdom",

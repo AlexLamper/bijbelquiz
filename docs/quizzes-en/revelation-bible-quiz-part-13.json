@@ -6,11 +6,11 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the beast coming up out of the sea have?",
-      "explanation": "John saw a beast coming up out of the sea, having ten horns and seven heads, with ten crowns on his horns and blasphemous names on his heads.",
+      "explanation": "The narrator saw a beast coming up out of the sea, having ten horns and seven heads, with ten crowns on his horns and blasphemous names on his heads.",
       "bibleReference": "Revelation 13:1",
       "answers": [
         {

@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Who are named as writing to the saints at Philippi?",
@@ -45,7 +45,7 @@
           "isCorrect": true
         },
         {
-          "text": "That he will see them again in Philippi before the winter",
+          "text": "That no adversary will ever stand against them at Philippi",
           "isCorrect": false
         },
         {

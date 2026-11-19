@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How is an older man to be treated, according to verse 1?",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "text": "Which widows is Timothy to honor, according to verse 3?",
+      "text": "Which widows are to be honored, according to verse 3?",
       "explanation": "Verse 3 says: honor widows who are widows indeed.",
       "bibleReference": "1 Timothy 5:3",
       "answers": [

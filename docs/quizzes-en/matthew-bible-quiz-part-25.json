@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How many of the ten virgins were foolish?",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "text": "Why does the King welcome those on his right hand?",
+      "text": "In the King's answer, why does he say that they did it to him?",
       "explanation": "The King answers them that because they did it to one of the least of these his brothers, they did it to him.",
       "bibleReference": "Matthew 25:40",
       "answers": [

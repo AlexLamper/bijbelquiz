@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the loud voice out of the temple tell the seven angels to do?",
@@ -148,7 +148,7 @@
     },
     {
       "text": "What came out of the mouths of the dragon, the beast and the false prophet?",
-      "explanation": "John saw three unclean spirits, something like frogs, coming out of their mouths.",
+      "explanation": "The narrator saw three unclean spirits, something like frogs, coming out of their mouths.",
       "bibleReference": "Revelation 16:13",
       "answers": [
         {

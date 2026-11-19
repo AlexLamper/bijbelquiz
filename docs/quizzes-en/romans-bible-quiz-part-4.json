@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What does the Scripture quoted in this chapter say about Abraham?",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "text": "What does the chapter say about Abraham's own body when he did not waver?",
+      "text": "What does the chapter say about Abraham's own body, which he did not consider?",
       "explanation": "It says he did not consider his own body, already worn out, he being about a hundred years old, nor the deadness of Sarah's womb.",
       "bibleReference": "Romans 4:19",
       "answers": [

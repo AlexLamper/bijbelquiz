@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Whom did King Herod kill with the sword?",
@@ -179,7 +179,7 @@
           "isCorrect": false
         },
         {
-          "text": "To say nothing at all to anyone",
+          "text": "To wait for him in the house of Mary",
           "isCorrect": false
         },
         {

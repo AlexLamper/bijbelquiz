@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Whom does the chapter begin by telling them to accept?",
@@ -91,7 +91,7 @@
           "isCorrect": false
         },
         {
-          "text": "Keep every day alike",
+          "text": "Do as the one who is strong in faith does",
           "isCorrect": false
         },
         {
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "text": "What does the text call good to leave undone?",
+      "text": "What does the text say it is good not to do?",
       "explanation": "Romans 14:21 says it is good to not eat meat, drink wine, nor do anything by which your brother stumbles, is offended, or is made weak.",
       "bibleReference": "Romans 14:21",
       "answers": [

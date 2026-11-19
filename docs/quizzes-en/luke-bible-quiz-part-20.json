@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Who came to Jesus in the temple and asked by what authority he was acting?",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "text": "Whom did the lord of the vineyard send after the three servants?",
+      "text": "Whom did the lord of the vineyard say he would send after the three servants?",
       "explanation": "The lord of the vineyard said he would send his beloved son, hoping that they would respect him.",
       "bibleReference": "Luke 20:12-13",
       "answers": [
@@ -118,7 +118,7 @@
           "isCorrect": false
         },
         {
-          "text": "His neighbour from another country",
+          "text": "His neighbor from another country",
           "isCorrect": false
         }
       ]

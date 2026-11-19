@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "In which city had they suffered before and been shamefully treated?",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "text": "Who hindered them from coming to the Thessalonians?",
+      "text": "Who hindered them when they wanted to come to the readers?",
       "explanation": "Verse 18 says they wanted to come, Paul once and again, but Satan hindered them.",
       "bibleReference": "1 Thessalonians 2:18",
       "answers": [

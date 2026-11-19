@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Which three names stand at the head of this letter?",
@@ -147,9 +147,9 @@
       ]
     },
     {
-      "text": "Whom is he punishing, according to verse 8?",
+      "text": "Whom is the Lord Jesus punishing when he is revealed?",
       "explanation": "Verse 8 says he punishes those who don't know God and those who don't obey the Good News of our Lord Jesus.",
-      "bibleReference": "2 Thessalonians 1:8",
+      "bibleReference": "2 Thessalonians 1:7-8",
       "answers": [
         {
           "text": "Those who were afflicted with them",

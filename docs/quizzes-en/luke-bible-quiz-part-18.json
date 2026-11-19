@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How is the judge in the parable described?",
@@ -49,7 +49,7 @@
           "isCorrect": false
         },
         {
-          "text": "Because the judge respected her husband",
+          "text": "Because he respected her husband",
           "isCorrect": false
         }
       ]

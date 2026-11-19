@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the master of the household agree to pay the laborers for the day?",
@@ -32,8 +32,8 @@
       ]
     },
     {
-      "text": "At what hour did he go out the last time and find others standing idle?",
-      "explanation": "About the eleventh hour he went out and found others standing idle, and asked why they stood there all day idle.",
+      "text": "At what hour did the master go out and ask those standing idle why they stood there all day idle?",
+      "explanation": "About the eleventh hour he went out, found others standing idle, and asked why they stood there all day idle.",
       "bibleReference": "Matthew 20:6",
       "answers": [
         {

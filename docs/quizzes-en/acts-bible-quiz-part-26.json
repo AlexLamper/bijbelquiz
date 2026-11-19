@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Who told Paul, \"You may speak for yourself\"?",
@@ -55,9 +55,9 @@
       ]
     },
     {
-      "text": "Who does Paul say earnestly serve night and day, hoping to attain the promise?",
-      "explanation": "Paul says that the twelve tribes, earnestly serving night and day, hope to attain the promise, and that he is accused concerning this hope.",
-      "bibleReference": "Acts 26:7",
+      "text": "Who does Paul say earnestly serve night and day, hoping to attain the promise made by God to the fathers?",
+      "explanation": "Paul says he stands to be judged for the hope of the promise made by God to the fathers, which the twelve tribes, earnestly serving night and day, hope to attain.",
+      "bibleReference": "Acts 26:6-7",
       "answers": [
         {
           "text": "The elders of Jerusalem",
@@ -68,7 +68,7 @@
           "isCorrect": false
         },
         {
-          "text": "Our twelve tribes",
+          "text": "The twelve tribes",
           "isCorrect": true
         },
         {

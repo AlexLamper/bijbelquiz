@@ -6,11 +6,11 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the seven angels in the great and marvelous sign have?",
-      "explanation": "John saw seven angels having the seven last plagues, for in them God’s wrath is finished.",
+      "explanation": "The narrator saw seven angels having the seven last plagues, for in them God’s wrath is finished.",
       "bibleReference": "Revelation 15:1",
       "answers": [
         {
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "text": "What did the sea that John saw look like?",
+      "text": "What did the sea that the narrator saw look like?",
       "explanation": "He saw something like a sea of glass mixed with fire.",
       "bibleReference": "Revelation 15:2",
       "answers": [
@@ -148,7 +148,7 @@
     },
     {
       "text": "What was opened in heaven after these things?",
-      "explanation": "John looked, and the temple of the tabernacle of the testimony in heaven was opened.",
+      "explanation": "The narrator looked, and the temple of the tabernacle of the testimony in heaven was opened.",
       "bibleReference": "Revelation 15:5",
       "answers": [
         {

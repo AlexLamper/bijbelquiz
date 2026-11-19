@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What does the Spirit say some will pay attention to in later times?",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "text": "What is Timothy told to refuse in verse 7?",
+      "text": "What does verse 7 say to refuse?",
       "explanation": "Verse 7 says: refuse profane and old wives' fables, and exercise yourself toward godliness.",
       "bibleReference": "1 Timothy 4:7",
       "answers": [
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "text": "In what is Timothy to be an example to those who believe?",
+      "text": "According to verse 12, in what is he to be an example to those who believe?",
       "explanation": "Verse 12 says: let no man despise your youth, but be an example in word, in your way of life, in love, in spirit, in faith, and in purity.",
       "bibleReference": "1 Timothy 4:12",
       "answers": [

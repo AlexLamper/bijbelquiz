@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the writer say he delivered to them first of all, which he had also received?",
@@ -32,16 +32,16 @@
       ]
     },
     {
-      "text": "According to verse 5, to whom did Christ appear first, and then to whom?",
+      "text": "According to verse 5, to whom did Christ appear, and then to whom?",
       "explanation": "Verse 5 says that he appeared to Cephas, then to the twelve.",
       "bibleReference": "1 Corinthians 15:5",
       "answers": [
         {
-          "text": "To James, then to all the apostles",
+          "text": "To the twelve, then to Cephas",
           "isCorrect": false
         },
         {
-          "text": "To the five hundred brothers, then to James",
+          "text": "To all the apostles, then to the twelve",
           "isCorrect": false
         },
         {
@@ -49,7 +49,7 @@
           "isCorrect": true
         },
         {
-          "text": "To the apostles, then to Cephas",
+          "text": "To James, then to Cephas",
           "isCorrect": false
         }
       ]

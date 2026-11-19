@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Why does the writer praise them in verse 2?",
@@ -170,8 +170,8 @@
       ]
     },
     {
-      "text": "What does verse 23 say the Lord Jesus did on the night in which he was betrayed?",
-      "explanation": "The verse says that on the night in which he was betrayed he took bread, and verse 24 adds that he gave thanks and broke it.",
+      "text": "What do verses 23 and 24 say the Lord Jesus did on the night in which he was betrayed?",
+      "explanation": "Verse 23 says that on the night in which he was betrayed he took bread, and verse 24 says that he gave thanks and broke it.",
       "bibleReference": "1 Corinthians 11:23-24",
       "answers": [
         {

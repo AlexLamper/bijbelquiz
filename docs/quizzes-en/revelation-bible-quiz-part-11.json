@@ -6,10 +6,10 @@
   "rewardXp": 100,
   "difficulty": "hard",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
-      "text": "What was given to John at the beginning of the chapter?",
+      "text": "What was given to the narrator at the beginning of the chapter?",
       "explanation": "A reed like a rod was given to him, and someone said, “Rise, and measure God’s temple, and the altar, and those who worship in it.”",
       "bibleReference": "Revelation 11:1",
       "answers": [

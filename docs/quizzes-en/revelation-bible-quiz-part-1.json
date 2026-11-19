@@ -6,11 +6,11 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
-      "text": "By whom did God send and make known the Revelation to John?",
-      "explanation": "Revelation 1:1 says God sent it and made it known by his angel to his servant John.",
+      "text": "By whom was the Revelation sent and made known to John?",
+      "explanation": "Revelation 1:1 says it was sent and made known by his angel to his servant John.",
       "bibleReference": "Revelation 1:1",
       "answers": [
         {
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "text": "What does the Lord God call himself in verse 8?",
+      "text": "What does the Lord God, the Almighty, call himself?",
       "explanation": "Revelation 1:8 says, \"I am the Alpha and the Omega,\" says the Lord God, the Almighty.",
       "bibleReference": "Revelation 1:8",
       "answers": [

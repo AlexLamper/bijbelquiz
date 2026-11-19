@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "How does the writer describe himself as he begs them to walk worthily of their calling?",
@@ -60,7 +60,7 @@
       "bibleReference": "Ephesians 4:5",
       "answers": [
         {
-          "text": "One Lord, one hope, one calling",
+          "text": "One law, one temple, one priesthood",
           "isCorrect": false
         },
         {
@@ -68,11 +68,11 @@
           "isCorrect": true
         },
         {
-          "text": "One God, one Spirit, one body",
+          "text": "One covenant, one altar, one sacrifice",
           "isCorrect": false
         },
         {
-          "text": "One Father, one Son, one Spirit",
+          "text": "One throne, one crown, one kingdom",
           "isCorrect": false
         }
       ]

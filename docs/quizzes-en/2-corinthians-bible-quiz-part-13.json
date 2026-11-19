@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "By how many witnesses shall every word be established, as this chapter quotes it?",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "text": "What does he say they also pray for, besides rejoicing when they are weak?",
+      "text": "After saying they rejoice when they are weak, what does he say they pray for?",
       "explanation": "He says they rejoice when they are weak and the readers are strong, and they also pray for the readers becoming perfect.",
       "bibleReference": "2 Corinthians 13:9",
       "answers": [

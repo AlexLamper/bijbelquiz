@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What did the rider on the white horse have when the first seal was opened?",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "text": "What did John see underneath the altar when the fifth seal was opened?",
+      "text": "What was seen underneath the altar when the fifth seal was opened?",
       "explanation": "He saw underneath the altar the souls of those who had been killed for the Word of God and for the testimony of the Lamb.",
       "bibleReference": "Revelation 6:9",
       "answers": [

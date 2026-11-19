@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "Who has been born of God, according to the first verse?",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "text": "By what did he come, according to the letter?",
+      "text": "By what does the letter say Jesus Christ came?",
       "explanation": "1 John 5:6 says that Jesus Christ came by water and blood, not with the water only, but with the water and the blood.",
       "bibleReference": "1 John 5:6",
       "answers": [

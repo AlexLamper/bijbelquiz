@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "hard",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What was given to the star that had fallen from the sky to the earth?",
@@ -171,7 +171,7 @@
     },
     {
       "text": "What was the number of the armies of the horsemen?",
-      "explanation": "John says the number of the armies of the horsemen was two hundred million, and that he heard the number of them.",
+      "explanation": "The text says the number of the armies of the horsemen was two hundred million, and that the narrator heard the number of them.",
       "bibleReference": "Revelation 9:16",
       "answers": [
         {

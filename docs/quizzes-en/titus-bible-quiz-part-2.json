@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What should older men be, according to verse 2?",
@@ -124,8 +124,8 @@
       ]
     },
     {
-      "text": "What is Titus himself to be in all things?",
-      "explanation": "Verse 7 says that in all things he should show himself an example of good works, and that in his teaching he should show integrity, seriousness and incorruptibility.",
+      "text": "What is the one addressed told to show himself to be in all things?",
+      "explanation": "Verse 7 says that in all things he should be showing himself an example of good works, and that in his teaching he should show integrity, seriousness and incorruptibility.",
       "bibleReference": "Titus 2:7",
       "answers": [
         {
@@ -198,19 +198,19 @@
       "bibleReference": "Titus 2:13",
       "answers": [
         {
-          "text": "The reward of our good works",
+          "text": "The reward promised for our own good works",
           "isCorrect": false
         },
         {
-          "text": "The rest promised to the faithful",
+          "text": "The rest promised to the faithful servants",
           "isCorrect": false
         },
         {
-          "text": "The blessed hope and his appearing",
+          "text": "The blessed hope and the appearing of his glory",
           "isCorrect": true
         },
         {
-          "text": "The peace of this present age",
+          "text": "The lasting peace of this present age",
           "isCorrect": false
         }
       ]

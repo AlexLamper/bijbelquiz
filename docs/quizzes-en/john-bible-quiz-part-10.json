@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What does Jesus call the one who does not enter the sheep fold by the door?",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "text": "What do the sheep do when a stranger calls them?",
+      "text": "What does Jesus say the sheep will do with a stranger?",
       "explanation": "They will by no means follow a stranger, but will flee from him, for they do not know the voice of strangers.",
       "bibleReference": "John 10:5",
       "answers": [

@@ -6,7 +6,7 @@
   "rewardXp": 100,
   "difficulty": "medium",
   "isPremium": true,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
       "text": "What were the four angels standing at the four corners of the earth holding?",
@@ -33,7 +33,7 @@
     },
     {
       "text": "What did the angel who ascended from the sunrise have?",
-      "explanation": "John saw another angel ascend from the sunrise, having the seal of the living God.",
+      "explanation": "The narrator saw another angel ascend from the sunrise, having the seal of the living God.",
       "bibleReference": "Revelation 7:2",
       "answers": [
         {
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "text": "What number of sealed people did John hear?",
+      "text": "What number of sealed people did the narrator hear?",
       "explanation": "He heard the number of those who were sealed: one hundred forty-four thousand, sealed out of every tribe of the children of Israel.",
       "bibleReference": "Revelation 7:4",
       "answers": [
