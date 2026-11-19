@@ -17,7 +17,11 @@ export default async function middleware(request: NextRequest) {
   if (token) return NextResponse.next()
 
   const target = siteUrl("/inloggen", request.url)
-  target.searchParams.set("callbackUrl", request.nextUrl.pathname + request.nextUrl.search)
+  // `nextUrl.pathname` has the basePath stripped, so on /es, /pt, /de and /fr the
+  // callback has to come from the original URL or sign-in would send the person
+  // to the English page of the same name.
+  const original = new URL(request.url)
+  target.searchParams.set("callbackUrl", original.pathname + original.search)
   return NextResponse.redirect(target)
 }
 
