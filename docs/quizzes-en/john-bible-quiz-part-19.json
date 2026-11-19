@@ -55,24 +55,24 @@
       ]
     },
     {
-      "text": "What did Jesus answer Pilate about his power?",
-      "explanation": "Jesus answered that Pilate would have no power at all against him unless it were given to him from above.",
+      "text": "What did Jesus answer when Pilate said that he had power to release him and power to crucify him?",
+      "explanation": "Jesus answered that Pilate would have no power at all against him unless it were given to him from above, and that the one who delivered him up has greater sin.",
       "bibleReference": "John 19:11",
       "answers": [
         {
-          "text": "He had no power over anyone",
+          "text": "That Pilate's power came from the chief priests",
           "isCorrect": false
         },
         {
-          "text": "His power was given to him from above",
+          "text": "That Pilate had no power against him unless it were given from above",
           "isCorrect": true
         },
         {
-          "text": "Caesar had given him all power",
+          "text": "That Caesar had given Pilate all his power",
           "isCorrect": false
         },
         {
-          "text": "The chief priests held the power",
+          "text": "That Pilate's power would be taken away that same day",
           "isCorrect": false
         }
       ]
