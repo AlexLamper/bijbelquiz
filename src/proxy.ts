@@ -1,14 +1,25 @@
-import { withAuth } from "next-auth/middleware"
+import { getToken } from "next-auth/jwt"
+import { NextResponse, type NextRequest } from "next/server"
 
-import { localizePath } from "@/config/routes"
+import { siteUrl } from "@/config/routes"
 
-export default withAuth({
-  pages: {
-    // intl serves the sign-in page at its English URL, so send people straight
-    // there instead of through the Dutch path's redirect.
-    signIn: localizePath("/inloggen"),
-  },
-})
+/**
+ * Signed-out visitors to the pages below are sent to the sign-in page. This was
+ * `withAuth` from next-auth/middleware, which builds that redirect from the
+ * request host - correct on bijbelquiz.com and on biblequizzes.app, but wrong on
+ * the prefixed languages, which are proxied: the browser was sent to the
+ * deployment's own vercel.app host instead of biblequizzes.app/<lang>. `siteUrl`
+ * uses the site's public base URL and the localized path, so the address bar
+ * keeps showing the site the person is on.
+ */
+export default async function middleware(request: NextRequest) {
+  const token = await getToken({ req: request, secret: process.env.NEXTAUTH_SECRET })
+  if (token) return NextResponse.next()
+
+  const target = siteUrl("/inloggen", request.url)
+  target.searchParams.set("callbackUrl", request.nextUrl.pathname + request.nextUrl.search)
+  return NextResponse.redirect(target)
+}
 
 // Only the pages that are meaningless without an account. Playing, browsing
 // and the leaderboard are open to everybody; an account is asked for where
