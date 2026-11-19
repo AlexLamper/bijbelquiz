@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Números 15: los presentes y libaciones de las ofrendas, el pecado por yerro, el que recogía leña en sábado y los pezuelos.",
+  "slug": "numbers-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuánto vino para la libación se ofrecía por cada cordero?",
+      "explanation": "Por cada cordero se ofrecía la cuarta parte de un hin de vino para la libación, además del holocausto o del sacrificio.",
+      "bibleReference": "Números 15:5",
+      "answers": [
+        {
+          "text": "El tercio de un hin",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad de un hin",
+          "isCorrect": false
+        },
+        {
+          "text": "Un hin entero",
+          "isCorrect": false
+        },
+        {
+          "text": "La cuarta parte de un hin",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto vino se ofrecía junto con el novillo?",
+      "explanation": "Con el novillo se ofrecía un presente de tres décimas de flor de harina con la mitad de un hin de aceite, y la mitad de un hin de vino para la libación.",
+      "bibleReference": "Números 15:10",
+      "answers": [
+        {
+          "text": "La cuarta parte de un hin",
+          "isCorrect": false
+        },
+        {
+          "text": "El tercio de un hin",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad de un hin",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos hines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ley tenía el peregrino que moraba con ellos?",
+      "explanation": "Tendrían una misma ley y un mismo derecho ellos y el peregrino que moraba con ellos.",
+      "bibleReference": "Números 15:16",
+      "answers": [
+        {
+          "text": "Una ley aparte de la suya",
+          "isCorrect": false
+        },
+        {
+          "text": "La misma ley que los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Ninguna ley sobre las ofrendas",
+          "isCorrect": false
+        },
+        {
+          "text": "La ley sólo en las solemnidades",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían ofrecer de lo primero que amasaran?",
+      "explanation": "De lo primero que amasaran ofrecerían una torta en ofrenda, como la ofrenda de la era.",
+      "bibleReference": "Números 15:20",
+      "answers": [
+        {
+          "text": "Una torta en ofrenda",
+          "isCorrect": true
+        },
+        {
+          "text": "Una décima de epha de cebada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío",
+          "isCorrect": false
+        },
+        {
+          "text": "La cuarta parte de un hin de vino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrecía toda la congregación por un pecado hecho por yerro?",
+      "explanation": "Si el pecado era hecho por yerro con ignorancia de la congregación, toda la congregación ofrecía un novillo por holocausto y un macho cabrío en expiación.",
+      "bibleReference": "Números 15:24",
+      "answers": [
+        {
+          "text": "Un novillo y un macho cabrío",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos tórtolas y dos palominos",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce becerros y doce carneros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrecía una sola persona que pecaba por yerro?",
+      "explanation": "Si una persona pecaba por yerro, ofrecía una cabra de un año por expiación.",
+      "bibleReference": "Números 15:27",
+      "answers": [
+        {
+          "text": "Un novillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra de un año",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos tórtolas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasaba a la persona que hacía algo con altiva mano?",
+      "explanation": "La persona que obraba con altiva mano injuriaba a Jehová y era cortada de en medio de su pueblo.",
+      "bibleReference": "Números 15:30",
+      "answers": [
+        {
+          "text": "Traía una ofrenda doble",
+          "isCorrect": false
+        },
+        {
+          "text": "Era cortada de en medio de su pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Era echada del campo siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba perdonada por el sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el hombre que fue hallado en día de sábado?",
+      "explanation": "Estando los hijos de Israel en el desierto, hallaron un hombre que recogía leña en día de sábado.",
+      "bibleReference": "Números 15:32",
+      "answers": [
+        {
+          "text": "Encendía fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Amasaba pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevaba carga de agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Recogía leña",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué lo pusieron en la cárcel?",
+      "explanation": "Lo pusieron en la cárcel porque no estaba declarado qué le habían de hacer.",
+      "bibleReference": "Números 15:34",
+      "answers": [
+        {
+          "text": "Porque no quiso traer ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque había hablado con altiva mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no estaba declarado qué hacerle",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué color era el cordón que ponían en cada pezuelo de sus vestidos?",
+      "explanation": "Debían hacerse pezuelos en los remates de sus vestidos y poner en cada pezuelo un cordón de cárdeno.",
+      "bibleReference": "Números 15:38",
+      "answers": [
+        {
+          "text": "Carmesí",
+          "isCorrect": false
+        },
+        {
+          "text": "Cárdeno",
+          "isCorrect": true
+        },
+        {
+          "text": "Púrpura",
+          "isCorrect": false
+        },
+        {
+          "text": "Blanco",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

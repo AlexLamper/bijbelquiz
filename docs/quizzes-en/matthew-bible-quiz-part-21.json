@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 21",
+  "description": "Ten questions on Matthew 21: the entry into Jerusalem, the temple cleared out, the withered fig tree, and two parables about a vineyard.",
+  "slug": "matthew-bible-quiz-part-21",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Jesus send two disciples to find in the village opposite them?",
+      "explanation": "He told them they would immediately find a donkey tied, and a colt with her, which they were to untie and bring to him.",
+      "bibleReference": "Matthew 21:1-2",
+      "answers": [
+        {
+          "text": "A room prepared for the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "A boat ready at the shore",
+          "isCorrect": false
+        },
+        {
+          "text": "A lamb without blemish",
+          "isCorrect": false
+        },
+        {
+          "text": "A donkey tied, and a colt with her",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the multitudes keep shouting as he went?",
+      "explanation": "The multitudes in front of him and those who followed kept shouting Hosanna to the son of David, and that blessed is he who comes in the name of the Lord.",
+      "bibleReference": "Matthew 21:9",
+      "answers": [
+        {
+          "text": "Peace to the city of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Hosanna to the son of David",
+          "isCorrect": true
+        },
+        {
+          "text": "Glory to the house of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "Behold, the Kingdom has come",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the multitudes answer when all the city asked who this was?",
+      "explanation": "The multitudes said that this is the prophet, Jesus, from Nazareth of Galilee.",
+      "bibleReference": "Matthew 21:10-11",
+      "answers": [
+        {
+          "text": "The prophet, Jesus, from Nazareth of Galilee",
+          "isCorrect": true
+        },
+        {
+          "text": "A teacher sent from the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Elijah, who was to come",
+          "isCorrect": false
+        },
+        {
+          "text": "A stranger from beyond the Jordan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do when he entered into the temple of God?",
+      "explanation": "He drove out all those who sold and bought in the temple, and overthrew the money changers' tables and the seats of those who sold the doves.",
+      "bibleReference": "Matthew 21:12",
+      "answers": [
+        {
+          "text": "He read aloud from the scroll of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "He called all the children to himself",
+          "isCorrect": false
+        },
+        {
+          "text": "He drove out those who sold and bought there",
+          "isCorrect": true
+        },
+        {
+          "text": "He sat down and taught the chief priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say they had made the house of prayer?",
+      "explanation": "He said it is written that his house shall be called a house of prayer, but that they had made it a den of robbers.",
+      "bibleReference": "Matthew 21:13",
+      "answers": [
+        {
+          "text": "A marketplace of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "A den of robbers",
+          "isCorrect": true
+        },
+        {
+          "text": "A seat for the money changers",
+          "isCorrect": false
+        },
+        {
+          "text": "A house left desolate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the fig tree by the road?",
+      "explanation": "He found nothing on it but leaves and said that no fruit should come from it forever, and immediately the fig tree withered away.",
+      "bibleReference": "Matthew 21:18-19",
+      "answers": [
+        {
+          "text": "It was cut down by the disciples",
+          "isCorrect": false
+        },
+        {
+          "text": "It bore fruit out of season",
+          "isCorrect": false
+        },
+        {
+          "text": "Its leaves became tender again",
+          "isCorrect": false
+        },
+        {
+          "text": "It immediately withered away",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What question did Jesus ask the chief priests and elders in return when they asked by what authority he acted?",
+      "explanation": "He said he would ask them one question, and asked where the baptism of John was from, from heaven or from men.",
+      "bibleReference": "Matthew 21:23-25",
+      "answers": [
+        {
+          "text": "Where the baptism of John was from",
+          "isCorrect": true
+        },
+        {
+          "text": "Who had sent them into the temple courts",
+          "isCorrect": false
+        },
+        {
+          "text": "Whose image was on the tax money",
+          "isCorrect": false
+        },
+        {
+          "text": "Which commandment in the law is greatest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the parable of the two sons, which one did the will of his father?",
+      "explanation": "The first son said he would not go, but afterward changed his mind and went, and they answered that this was the one who did his father's will.",
+      "bibleReference": "Matthew 21:28-31",
+      "answers": [
+        {
+          "text": "Neither of the two sons did it",
+          "isCorrect": false
+        },
+        {
+          "text": "The second son, who said he was going",
+          "isCorrect": false
+        },
+        {
+          "text": "The first son, who refused and then went",
+          "isCorrect": true
+        },
+        {
+          "text": "Both of the sons did it alike",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the farmers do to the servants sent to receive the fruit of the vineyard?",
+      "explanation": "The farmers took his servants and beat one, killed another, and stoned another.",
+      "bibleReference": "Matthew 21:34-35",
+      "answers": [
+        {
+          "text": "They beat one, killed another, and stoned another",
+          "isCorrect": true
+        },
+        {
+          "text": "They sent them back with the fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "They locked them in the tower",
+          "isCorrect": false
+        },
+        {
+          "text": "They led them out of the country",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say had happened to the stone which the builders rejected?",
+      "explanation": "He asked whether they had never read that the stone which the builders rejected was made the head of the corner, and that this was from the Lord.",
+      "bibleReference": "Matthew 21:42",
+      "answers": [
+        {
+          "text": "It was buried under the vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "It was made the head of the corner",
+          "isCorrect": true
+        },
+        {
+          "text": "It was carried to another country",
+          "isCorrect": false
+        },
+        {
+          "text": "It was broken to pieces by the builders",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

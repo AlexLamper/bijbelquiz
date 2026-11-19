@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Jueces 5: el cántico de Débora y Barac, lo que dice de las tribus y de la derrota de Sísara.",
+  "slug": "judges-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes cantaron aquel día el cántico?",
+      "explanation": "El texto dice que aquel día cantó Débora, con Barac, hijo de Abinoam.",
+      "bibleReference": "Jueces 5:1",
+      "answers": [
+        {
+          "text": "Jael y las mujeres de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de Issachâr",
+          "isCorrect": false
+        },
+        {
+          "text": "Barac y los hijos de Zabulón",
+          "isCorrect": false
+        },
+        {
+          "text": "Débora y Barac, hijo de Abinoam",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes llama el cántico a oir y a estar atentos?",
+      "explanation": "El cántico dice: Oid, reyes; estad, oh príncipes, atentos: yo cantaré a Jehová, cantaré salmos a Jehová Dios de Israel.",
+      "bibleReference": "Jueces 5:3",
+      "answers": [
+        {
+          "text": "A los sacerdotes y Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes y a los príncipes",
+          "isCorrect": true
+        },
+        {
+          "text": "A los jueces de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A las madres de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el cántico, ¿qué pasó cuando Jehová salió de Seir?",
+      "explanation": "El cántico dice que cuando él salió de Seir y se apartó del campo de Edom, la tierra tembló, los cielos destilaron y las nubes gotearon aguas.",
+      "bibleReference": "Jueces 5:4",
+      "answers": [
+        {
+          "text": "El sol se detuvo en el cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "El mar se partió en dos",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra tembló y las nubes gotearon",
+          "isCorrect": true
+        },
+        {
+          "text": "Cayó fuego sobre el campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el cántico que hicieron los montes delante de Jehová?",
+      "explanation": "El cántico dice que los montes se derritieron delante de Jehová, aqueste Sinaí, delante de Jehová Dios de Israel.",
+      "bibleReference": "Jueces 5:5",
+      "answers": [
+        {
+          "text": "Se derritieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Se cubrieron de humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se partieron por medio",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantaron de alegría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe a sí misma Débora en el cántico?",
+      "explanation": "El cántico dice que las aldeas habían cesado en Israel y habían decaído, hasta que ella se levantó, se levantó madre en Israel.",
+      "bibleReference": "Jueces 5:7",
+      "answers": [
+        {
+          "text": "Como profetisa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Como juez de las aldeas",
+          "isCorrect": false
+        },
+        {
+          "text": "Como sierva de Barac",
+          "isCorrect": false
+        },
+        {
+          "text": "Como madre en Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el cántico, ¿dónde se mantuvo Aser?",
+      "explanation": "El cántico dice que Galaad se quedó de la otra parte del Jordán, que Dan se estuvo junto a los navíos, y que Aser se mantuvo a la ribera de la mar y se quedó en sus puertos.",
+      "bibleReference": "Jueces 5:17",
+      "answers": [
+        {
+          "text": "En las alturas del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "De la otra parte del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "A la ribera de la mar, en sus puertos",
+          "isCorrect": true
+        },
+        {
+          "text": "Entre las majadas de los rebaños",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde pelearon los reyes de Canaán, según el cántico?",
+      "explanation": "El cántico dice que vinieron reyes y pelearon, que los reyes de Canaán pelearon en Taanac, junto a las aguas de Megiddo, y que no llevaron ganancia alguna de dinero.",
+      "bibleReference": "Jueces 5:19",
+      "answers": [
+        {
+          "text": "En el monte de Tabor",
+          "isCorrect": false
+        },
+        {
+          "text": "En Taanac, junto a Megiddo",
+          "isCorrect": true
+        },
+        {
+          "text": "En Haroseth de las Gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "En las puertas de Asor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el cántico que pelearon contra Sísara desde los cielos?",
+      "explanation": "El cántico dice que de los cielos pelearon: las estrellas desde sus órbitas pelearon contra Sísara.",
+      "bibleReference": "Jueces 5:20",
+      "answers": [
+        {
+          "text": "Las estrellas desde sus órbitas",
+          "isCorrect": true
+        },
+        {
+          "text": "Los ángeles de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Los truenos y el granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las nubes del norte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién manda maldecir el ángel de Jehová en el cántico, y por qué?",
+      "explanation": "El cántico dice: Maldecid a Meroz, dijo el ángel de Jehová, maldecid severamente a sus moradores, porque no vinieron en socorro a Jehová contra los fuertes.",
+      "bibleReference": "Jueces 5:23",
+      "answers": [
+        {
+          "text": "A Taanac, porque peleó contra Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A Dan, porque se quedó junto a los navíos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Meroz, porque no vino en socorro a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "A Sísara, porque afligió a Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace la madre de Sísara asomada a la ventana?",
+      "explanation": "El cántico dice que la madre de Sísara se asoma a la ventana y dice a voces: ¿Por qué se detiene su carro, que no viene? ¿por qué las ruedas de sus carros se tardan?",
+      "bibleReference": "Jueces 5:28",
+      "answers": [
+        {
+          "text": "Dónde están los reyes de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién venció en Taanac",
+          "isCorrect": false
+        },
+        {
+          "text": "Por qué callan las aldeas de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Por qué se detiene su carro",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

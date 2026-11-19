@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 23",
+  "description": "Ten questions on Numbers 23: Balak's altars and Balaam's first two parables, in which he blesses Israel instead of cursing them.",
+  "slug": "numbers-bible-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How many altars did Balaam ask Balak to build for him?",
+      "explanation": "Balaam said to Balak, \"Build here seven altars for me, and prepare here seven bulls and seven rams for me.\"",
+      "bibleReference": "Numbers 23:1",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Four",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Balak and Balaam offer on every altar?",
+      "explanation": "Balak did as Balaam had spoken, and they offered on every altar a bull and a ram.",
+      "bibleReference": "Numbers 23:2",
+      "answers": [
+        {
+          "text": "A bull and a ram",
+          "isCorrect": true
+        },
+        {
+          "text": "A lamb and a goat",
+          "isCorrect": false
+        },
+        {
+          "text": "Two turtledoves",
+          "isCorrect": false
+        },
+        {
+          "text": "A heifer and a dove",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What question did Balaam ask in his first parable about cursing Israel?",
+      "explanation": "Balaam said, \"How shall I curse whom God has not cursed? How shall I defy whom Yahweh has not defied?\"",
+      "bibleReference": "Numbers 23:7-8",
+      "answers": [
+        {
+          "text": "\"Who is Balak, that I should obey him?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Why should Israel be blessed above Moab?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Where shall I flee from Yahweh?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"How shall I curse whom God has not cursed?\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Balaam wish for himself at the end of his first parable?",
+      "explanation": "He said, \"Let me die the death of the righteous! Let my last end be like his!\"",
+      "bibleReference": "Numbers 23:10",
+      "answers": [
+        {
+          "text": "To be rich in silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "To be made a prince of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "To die the death of the righteous",
+          "isCorrect": true
+        },
+        {
+          "text": "To return home to Aram in peace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Balak react after the first parable?",
+      "explanation": "Balak said, \"I took you to curse my enemies, and behold, you have blessed them altogether.\"",
+      "bibleReference": "Numbers 23:11",
+      "answers": [
+        {
+          "text": "He complained that Balaam had blessed them altogether",
+          "isCorrect": true
+        },
+        {
+          "text": "He thanked Balaam and paid him in silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "He ordered his servants to kill Balaam at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent Balaam home with the princes of Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Balak take Balaam for the second set of altars?",
+      "explanation": "Balak took him into the field of Zophim, to the top of Pisgah, and built seven altars there.",
+      "bibleReference": "Numbers 23:14",
+      "answers": [
+        {
+          "text": "The high places of Baal, as before",
+          "isCorrect": false
+        },
+        {
+          "text": "The city of Moab on the border",
+          "isCorrect": false
+        },
+        {
+          "text": "The field of Zophim, on the top of Pisgah",
+          "isCorrect": true
+        },
+        {
+          "text": "The plains of Moab by the Jordan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Balaam's second parable, in what way is God not like a man?",
+      "explanation": "Balaam said, \"God is not a man, that he should lie, nor a son of man, that he should repent.\"",
+      "bibleReference": "Numbers 23:18-19",
+      "answers": [
+        {
+          "text": "He does not sleep",
+          "isCorrect": false
+        },
+        {
+          "text": "He does not lie",
+          "isCorrect": true
+        },
+        {
+          "text": "He cannot be seen",
+          "isCorrect": false
+        },
+        {
+          "text": "He does not grow old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which animal did Balaam compare the people rising up?",
+      "explanation": "Balaam said, \"Behold, a people rises up as a lioness. As a lion he lifts himself up.\"",
+      "bibleReference": "Numbers 23:24",
+      "answers": [
+        {
+          "text": "An eagle",
+          "isCorrect": false
+        },
+        {
+          "text": "A bear",
+          "isCorrect": false
+        },
+        {
+          "text": "A leopard",
+          "isCorrect": false
+        },
+        {
+          "text": "A lioness",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Balak say to Balaam after the second parable?",
+      "explanation": "Balak said, \"Neither curse them at all, nor bless them at all.\"",
+      "bibleReference": "Numbers 23:25",
+      "answers": [
+        {
+          "text": "\"Neither curse them at all, nor bless them at all.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Curse them three more times from the top of Pisgah.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go back at once to your own land in Aram.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Bless Moab instead, and leave Israel alone.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Balak take Balaam next, a place that looks down on the desert?",
+      "explanation": "Balak took Balaam to the top of Peor, that looks down on the desert, hoping he might curse them from there.",
+      "bibleReference": "Numbers 23:27-28",
+      "answers": [
+        {
+          "text": "The top of Mount Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "The city of Heshbon",
+          "isCorrect": false
+        },
+        {
+          "text": "The top of Peor",
+          "isCorrect": true
+        },
+        {
+          "text": "The valley of Zered",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

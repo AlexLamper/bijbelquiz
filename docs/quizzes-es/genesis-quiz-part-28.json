@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 28",
+  "description": "Diez preguntas sobre Génesis 28: la bendición de Isaac, el sueño de la escala en Beth-el y el voto de Jacob.",
+  "slug": "genesis-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le mandó Isaac a Jacob cuando lo bendijo?",
+      "explanation": "Isaac le mandó que no tomase mujer de las hijas de Canaán.",
+      "bibleReference": "Génesis 28:1",
+      "answers": [
+        {
+          "text": "Que no volviera nunca a la casa de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no hablara más con su hermano Esaú",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no edificara altar fuera de aquella tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tomara mujer de las hijas de Canaán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde le dijo Isaac a Jacob que fuera a buscar mujer?",
+      "explanation": "Le dijo que fuera á Padan-aram, á casa de Bethuel, padre de su madre, y tomase mujer de las hijas de Labán.",
+      "bibleReference": "Génesis 28:2",
+      "answers": [
+        {
+          "text": "A Seir, a la tierra de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "A Padan-aram, a casa de Bethuel",
+          "isCorrect": true
+        },
+        {
+          "text": "A Gerar, con los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Beer-seba, donde vivía su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quién se casó Esaú cuando vio lo que había hecho su padre?",
+      "explanation": "Esaú se fue á Ismael y tomó por mujer á Mahaleth, hija de Ismael y hermana de Nabaioth, además de sus otras mujeres.",
+      "bibleReference": "Génesis 28:9",
+      "answers": [
+        {
+          "text": "Con Mahaleth, hija de Ismael",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una hija de Labán Arameo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una hija de Bethuel Arameo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Débora, el ama de Rebeca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Jacob a su cabecera para dormir en aquel lugar?",
+      "explanation": "Jacob tomó de las piedras de aquel paraje y las puso á su cabecera, porque ya el sol se había puesto.",
+      "bibleReference": "Génesis 28:11",
+      "answers": [
+        {
+          "text": "Su manto de viaje",
+          "isCorrect": false
+        },
+        {
+          "text": "Un haz de ramas secas",
+          "isCorrect": false
+        },
+        {
+          "text": "Piedras de aquel paraje",
+          "isCorrect": true
+        },
+        {
+          "text": "La albarda de un camello",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio Jacob en su sueño?",
+      "explanation": "Vio una escala apoyada en tierra cuya cabeza tocaba en el cielo, y ángeles de Dios que subían y descendían por ella.",
+      "bibleReference": "Génesis 28:12",
+      "answers": [
+        {
+          "text": "Un altar encendido en medio del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Una puerta de hierro que se abría sola",
+          "isCorrect": false
+        },
+        {
+          "text": "Un camino de fuego que iba hasta Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "Una escala con ángeles que subían y descendían",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Jehová la simiente que Jacob tendría?",
+      "explanation": "Jehová le dijo que su simiente sería como el polvo de la tierra, y que se extendería al occidente, al oriente, al aquilón y al mediodía.",
+      "bibleReference": "Génesis 28:14",
+      "answers": [
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el polvo de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la arena de la ribera",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los rebaños del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jacob cuando despertó de su sueño?",
+      "explanation": "Jacob dijo: Ciertamente Jehová está en este lugar, y yo no lo sabía.",
+      "bibleReference": "Génesis 28:16",
+      "answers": [
+        {
+          "text": "\"Ciertamente Jehová está en este lugar, y yo no lo sabía\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"He visto á Dios cara á cara, y fué librada mi alma\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Dios me ha dado mi recompensa en esta tierra\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"No pasaré de aquí hasta que Dios me bendiga\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jacob que era aquel lugar, cuando tuvo miedo?",
+      "explanation": "Dijo que aquel lugar era terrible, y que no era otra cosa que casa de Dios y puerta del cielo.",
+      "bibleReference": "Génesis 28:17",
+      "answers": [
+        {
+          "text": "El campo de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de su peregrinación",
+          "isCorrect": false
+        },
+        {
+          "text": "Casa de Dios y puerta del cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "El monte santo de Abraham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Jacob a aquel lugar, que antes se llamaba Luz?",
+      "explanation": "Jacob llamó el nombre de aquel lugar Beth-el, bien que Luz era antes el nombre de la ciudad.",
+      "bibleReference": "Génesis 28:19",
+      "answers": [
+        {
+          "text": "Mahanaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth-el",
+          "isCorrect": true
+        },
+        {
+          "text": "Peniel",
+          "isCorrect": false
+        },
+        {
+          "text": "Succoth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prometió Jacob apartar para Dios en su voto?",
+      "explanation": "Jacob prometió que de todo lo que Dios le diere apartaría el diezmo para él.",
+      "bibleReference": "Génesis 28:22",
+      "answers": [
+        {
+          "text": "La primera de sus ovejas cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad de todo su ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Las primicias de su trigo y su mosto",
+          "isCorrect": false
+        },
+        {
+          "text": "El diezmo de todo lo que recibiera",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

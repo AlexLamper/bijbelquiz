@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 19",
+  "description": "Ten questions on Joshua 19: the lots of Simeon, Zebulun, Issachar, Asher, Naphtali and Dan, and Joshua's own city.",
+  "slug": "joshua-bible-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where was the inheritance of Simeon located?",
+      "explanation": "Joshua 19:1 says Simeon's inheritance was in the middle of the inheritance of the children of Judah.",
+      "bibleReference": "Joshua 19:1",
+      "answers": [
+        {
+          "text": "East of the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "In the middle of Judah's inheritance",
+          "isCorrect": true
+        },
+        {
+          "text": "Next to the great sea in the north",
+          "isCorrect": false
+        },
+        {
+          "text": "In the hill country of Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which city in Simeon's list is given with the alternative name Sheba?",
+      "explanation": "Joshua 19:2 lists Beersheba (or Sheba) as part of Simeon's inheritance.",
+      "bibleReference": "Joshua 19:2",
+      "answers": [
+        {
+          "text": "Ziklag",
+          "isCorrect": false
+        },
+        {
+          "text": "Hormah",
+          "isCorrect": false
+        },
+        {
+          "text": "Moladah",
+          "isCorrect": false
+        },
+        {
+          "text": "Beersheba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Simeon receive its inheritance out of Judah's part?",
+      "explanation": "Joshua 19:9 says the portion of the children of Judah was too much for them.",
+      "bibleReference": "Joshua 19:9",
+      "answers": [
+        {
+          "text": "Judah's portion was too much for them",
+          "isCorrect": true
+        },
+        {
+          "text": "Simeon had lost a battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua was angry with Simeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Simeon asked to live near Judah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For which tribe did the third lot come up?",
+      "explanation": "Joshua 19:10 says the third lot came up for the children of Zebulun.",
+      "bibleReference": "Joshua 19:10",
+      "answers": [
+        {
+          "text": "Issachar",
+          "isCorrect": false
+        },
+        {
+          "text": "Asher",
+          "isCorrect": false
+        },
+        {
+          "text": "Zebulun",
+          "isCorrect": true
+        },
+        {
+          "text": "Naphtali",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Westward, Asher's border reached to which place?",
+      "explanation": "Joshua 19:26 says Asher's border reached to Carmel westward, and to Shihorlibnath.",
+      "bibleReference": "Joshua 19:26",
+      "answers": [
+        {
+          "text": "Carmel",
+          "isCorrect": true
+        },
+        {
+          "text": "Tabor",
+          "isCorrect": false
+        },
+        {
+          "text": "Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "Hermon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Asher's border turned to Ramah and to which fortified city?",
+      "explanation": "Joshua 19:29 says the border turned to Ramah, to the fortified city of Tyre.",
+      "bibleReference": "Joshua 19:29",
+      "answers": [
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Tyre",
+          "isCorrect": true
+        },
+        {
+          "text": "Hazor",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For which tribe did the sixth lot come out?",
+      "explanation": "Joshua 19:32 says the sixth lot came out for the children of Naphtali.",
+      "bibleReference": "Joshua 19:32",
+      "answers": [
+        {
+          "text": "Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Naphtali",
+          "isCorrect": true
+        },
+        {
+          "text": "Simeon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the children of Dan call Leshem after they took it?",
+      "explanation": "Joshua 19:47 says they called Leshem Dan, after the name of Dan their forefather.",
+      "bibleReference": "Joshua 19:47",
+      "answers": [
+        {
+          "text": "Zorah",
+          "isCorrect": false
+        },
+        {
+          "text": "Joppa",
+          "isCorrect": false
+        },
+        {
+          "text": "Ekron",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which city did Joshua receive as his inheritance?",
+      "explanation": "Joshua 19:50 says they gave him the city he asked, Timnathserah in the hill country of Ephraim.",
+      "bibleReference": "Joshua 19:50",
+      "answers": [
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "Timnathserah",
+          "isCorrect": true
+        },
+        {
+          "text": "Beth Shemesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which priest, together with Joshua and the heads of the fathers' houses, distributed the inheritances?",
+      "explanation": "Joshua 19:51 says Eleazar the priest, Joshua the son of Nun and the heads of the fathers' houses distributed the land by lot in Shiloh.",
+      "bibleReference": "Joshua 19:51",
+      "answers": [
+        {
+          "text": "Eleazar",
+          "isCorrect": true
+        },
+        {
+          "text": "Phinehas",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Eli",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 3",
+  "description": "Ten questions on Exodus 3: the burning bush, God's call to Moses and the name \"I AM WHO I AM\".",
+  "slug": "exodus-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Whose flock was Moses keeping when he came to God's mountain?",
+      "explanation": "Moses was keeping the flock of Jethro, his father-in-law, the priest of Midian.",
+      "bibleReference": "Exodus 3:1",
+      "answers": [
+        {
+          "text": "Aaron's",
+          "isCorrect": false
+        },
+        {
+          "text": "Jethro's",
+          "isCorrect": true
+        },
+        {
+          "text": "Pharaoh's",
+          "isCorrect": false
+        },
+        {
+          "text": "Laban's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the name of God's mountain where Moses came?",
+      "explanation": "Moses led the flock to the back of the wilderness and came to God's mountain, to Horeb.",
+      "bibleReference": "Exodus 3:1",
+      "answers": [
+        {
+          "text": "Horeb",
+          "isCorrect": true
+        },
+        {
+          "text": "Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "Moriah",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was unusual about the bush Moses saw?",
+      "explanation": "The bush burned with fire, but the bush was not consumed, so Moses went to see why it was not burned.",
+      "bibleReference": "Exodus 3:2-3",
+      "answers": [
+        {
+          "text": "It bloomed in the middle of the desert",
+          "isCorrect": false
+        },
+        {
+          "text": "It was covered with snow",
+          "isCorrect": false
+        },
+        {
+          "text": "It glowed only at night",
+          "isCorrect": false
+        },
+        {
+          "text": "It burned but was not consumed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why was Moses told to take off his sandals?",
+      "explanation": "God said, \"Take off your sandals, for the place you are standing on is holy ground.\"",
+      "bibleReference": "Exodus 3:5",
+      "answers": [
+        {
+          "text": "His sandals were unclean from the flock",
+          "isCorrect": false
+        },
+        {
+          "text": "He was about to enter a tent",
+          "isCorrect": false
+        },
+        {
+          "text": "The place he stood on was holy ground",
+          "isCorrect": true
+        },
+        {
+          "text": "He had to walk through water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Moses hide his face?",
+      "explanation": "When God said he was the God of Abraham, Isaac and Jacob, Moses hid his face because he was afraid to look at God.",
+      "bibleReference": "Exodus 3:6",
+      "answers": [
+        {
+          "text": "He was afraid to look at God",
+          "isCorrect": true
+        },
+        {
+          "text": "The fire was too hot",
+          "isCorrect": false
+        },
+        {
+          "text": "The sun was in his eyes",
+          "isCorrect": false
+        },
+        {
+          "text": "He was ashamed of killing the Egyptian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does God describe the land he will bring his people into?",
+      "explanation": "God says he will bring them up to a good and large land, a land flowing with milk and honey.",
+      "bibleReference": "Exodus 3:8",
+      "answers": [
+        {
+          "text": "A land of fountains and rivers",
+          "isCorrect": false
+        },
+        {
+          "text": "A land of gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "A land of rest by the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "A land flowing with milk and honey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What sign did God give Moses that he had sent him?",
+      "explanation": "God said that when Moses had brought the people out of Egypt, they would serve God on this mountain.",
+      "bibleReference": "Exodus 3:12",
+      "answers": [
+        {
+          "text": "Pharaoh would bow down to Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "They would serve God on this mountain",
+          "isCorrect": true
+        },
+        {
+          "text": "The river would turn to blood",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses' staff would bud and bloom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God say when Moses asked what his name was?",
+      "explanation": "God said to Moses, \"I AM WHO I AM,\" and told him to say, \"I AM has sent me to you.\"",
+      "bibleReference": "Exodus 3:13-14",
+      "answers": [
+        {
+          "text": "\"The Mighty One of Egypt\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The God of the river\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I AM WHO I AM\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The Lord of the bush\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were Moses and the elders to ask the king of Egypt?",
+      "explanation": "They were to ask, \"Please let us go three days' journey into the wilderness, that we may sacrifice to Yahweh, our God.\"",
+      "bibleReference": "Exodus 3:18",
+      "answers": [
+        {
+          "text": "To be given the land of Goshen as their own",
+          "isCorrect": false
+        },
+        {
+          "text": "To be paid wages for their work",
+          "isCorrect": false
+        },
+        {
+          "text": "To be allowed to build a temple in Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "To go three days' journey into the wilderness to sacrifice",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What would every Israelite woman ask of her neighbor?",
+      "explanation": "Every woman would ask her neighbor for jewels of silver, jewels of gold and clothing, and so they would plunder the Egyptians.",
+      "bibleReference": "Exodus 3:22",
+      "answers": [
+        {
+          "text": "Bread and water for the journey",
+          "isCorrect": false
+        },
+        {
+          "text": "Jewels of silver and gold, and clothing",
+          "isCorrect": true
+        },
+        {
+          "text": "Sheep and goats for sacrifice",
+          "isCorrect": false
+        },
+        {
+          "text": "Tents for the wilderness",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

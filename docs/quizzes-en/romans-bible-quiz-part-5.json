@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 5",
+  "description": "Ten questions on Romans 5: peace with God through faith, rejoicing in sufferings, and the contrast between the one trespass and the free gift.",
+  "slug": "romans-bible-quiz-part-5",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What does the chapter say we have, being justified by faith?",
+      "explanation": "It says that being justified by faith, we have peace with God through our Lord Jesus Christ.",
+      "bibleReference": "Romans 5:1",
+      "answers": [
+        {
+          "text": "Peace with God through our Lord Jesus Christ",
+          "isCorrect": true
+        },
+        {
+          "text": "A place among the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "The reward that is owed to us",
+          "isCorrect": false
+        },
+        {
+          "text": "The law written on our hearts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does suffering produce, according to this chapter?",
+      "explanation": "It says that suffering produces perseverance, and perseverance proven character, and proven character hope.",
+      "bibleReference": "Romans 5:3-4",
+      "answers": [
+        {
+          "text": "Wrath, which produces judgment and condemnation",
+          "isCorrect": false
+        },
+        {
+          "text": "Knowledge, which produces boasting and then pride",
+          "isCorrect": false
+        },
+        {
+          "text": "Perseverance, which produces proven character and then hope",
+          "isCorrect": true
+        },
+        {
+          "text": "Weakness, which produces fear and unbelief",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How has God's love been poured into our hearts?",
+      "explanation": "It says hope does not disappoint us, because God's love has been poured into our hearts through the Holy Spirit who was given to us.",
+      "bibleReference": "Romans 5:5",
+      "answers": [
+        {
+          "text": "Through the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the Holy Spirit who was given to us",
+          "isCorrect": true
+        },
+        {
+          "text": "Through the words of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "Through our own perseverance",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For whom does the chapter say Christ died at the right time?",
+      "explanation": "It says that while we were yet weak, at the right time Christ died for the ungodly.",
+      "bibleReference": "Romans 5:6",
+      "answers": [
+        {
+          "text": "For the righteous",
+          "isCorrect": false
+        },
+        {
+          "text": "For the doers of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "For the twelve tribes only",
+          "isCorrect": false
+        },
+        {
+          "text": "For the ungodly",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about our state when Christ died for us?",
+      "explanation": "It says God commends his own love toward us, in that while we were yet sinners, Christ died for us.",
+      "bibleReference": "Romans 5:8",
+      "answers": [
+        {
+          "text": "We were already reconciled",
+          "isCorrect": false
+        },
+        {
+          "text": "We were seeking after God",
+          "isCorrect": false
+        },
+        {
+          "text": "We were yet sinners",
+          "isCorrect": true
+        },
+        {
+          "text": "We were under the law and blameless",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the chapter say we were reconciled to God while we were enemies?",
+      "explanation": "It says that while we were enemies, we were reconciled to God through the death of his Son.",
+      "bibleReference": "Romans 5:10",
+      "answers": [
+        {
+          "text": "Through the death of his Son",
+          "isCorrect": true
+        },
+        {
+          "text": "Through the blood of the sacrifices",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the preaching of the apostles",
+          "isCorrect": false
+        },
+        {
+          "text": "Through our own repentance",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the chapter say sin entered into the world?",
+      "explanation": "It says that sin entered into the world through one man, and death through sin, so death passed to all men.",
+      "bibleReference": "Romans 5:12",
+      "answers": [
+        {
+          "text": "Through the law, and death through the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the nations, and death through war",
+          "isCorrect": false
+        },
+        {
+          "text": "Through Moses, and death through disobedience",
+          "isCorrect": false
+        },
+        {
+          "text": "Through one man, and death through sin",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Between whom does the chapter say death reigned?",
+      "explanation": "It says that death reigned from Adam until Moses, even over those whose sins were not like Adam's disobedience.",
+      "bibleReference": "Romans 5:14",
+      "answers": [
+        {
+          "text": "From Abraham until David",
+          "isCorrect": false
+        },
+        {
+          "text": "From Adam until Moses",
+          "isCorrect": true
+        },
+        {
+          "text": "From Moses until Christ",
+          "isCorrect": false
+        },
+        {
+          "text": "From Adam until Abraham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say happened where sin abounded?",
+      "explanation": "It says the law came in that the trespass might abound, but where sin abounded, grace abounded more exceedingly.",
+      "bibleReference": "Romans 5:20",
+      "answers": [
+        {
+          "text": "Wrath was poured out without measure",
+          "isCorrect": false
+        },
+        {
+          "text": "The law was taken away",
+          "isCorrect": false
+        },
+        {
+          "text": "Grace abounded more exceedingly",
+          "isCorrect": true
+        },
+        {
+          "text": "Death reigned over the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Through what does the chapter say grace reigns to eternal life?",
+      "explanation": "It says that as sin reigned in death, even so grace might reign through righteousness to eternal life through Jesus Christ our Lord.",
+      "bibleReference": "Romans 5:21",
+      "answers": [
+        {
+          "text": "Through righteousness, through Jesus Christ our Lord",
+          "isCorrect": true
+        },
+        {
+          "text": "Through the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the obedience of the many",
+          "isCorrect": false
+        },
+        {
+          "text": "Through suffering and perseverance",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

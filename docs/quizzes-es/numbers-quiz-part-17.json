@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Números 17: las doce varas en el tabernáculo del testimonio y la vara de Aarón que produjo almendras.",
+  "slug": "numbers-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántas varas debía recoger Moisés de los hijos de Israel?",
+      "explanation": "Jehová mandó tomar una vara por cada casa de los padres, doce varas en total.",
+      "bibleReference": "Números 17:2",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y cuatro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía escribirse sobre cada vara?",
+      "explanation": "Jehová dijo que se escribiría el nombre de cada uno sobre su vara.",
+      "bibleReference": "Números 17:2",
+      "answers": [
+        {
+          "text": "El número de su tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "Las palabras de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "El nombre del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "El nombre de cada uno",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre la vara de qué tribu debía escribirse el nombre de Aarón?",
+      "explanation": "Jehová mandó escribir el nombre de Aarón sobre la vara de Leví.",
+      "bibleReference": "Números 17:3",
+      "answers": [
+        {
+          "text": "Sobre la vara de Leví",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre la vara de Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la vara de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la vara de José",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde debían ponerse las varas?",
+      "explanation": "Las varas debían ponerse en el tabernáculo del testimonio, delante del testimonio.",
+      "bibleReference": "Números 17:4",
+      "answers": [
+        {
+          "text": "Sobre el altar del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "En el tabernáculo del testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tienda de Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál sería la señal del varón que Jehová escogiere?",
+      "explanation": "Jehová dijo que la vara del varón que él escogiera florecería.",
+      "bibleReference": "Números 17:5",
+      "answers": [
+        {
+          "text": "Que su vara se partiría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su vara florecería",
+          "isCorrect": true
+        },
+        {
+          "text": "Que su vara ardería",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su vara se volvería serpiente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quería hacer cesar Jehová por medio de esta señal?",
+      "explanation": "Jehová dijo que así haría cesar de sobre él las quejas de los hijos de Israel, con que murmuraban contra Moisés y Aarón.",
+      "bibleReference": "Números 17:5",
+      "answers": [
+        {
+          "text": "Las quejas de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "El hambre en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "La sequía del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Las guerras con los pueblos vecinos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes entregaron las varas a Moisés?",
+      "explanation": "Todos los príncipes de los hijos de Israel le dieron varas, cada príncipe una vara por las casas de sus padres.",
+      "bibleReference": "Números 17:6",
+      "answers": [
+        {
+          "text": "Los ancianos de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Las mujeres del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los príncipes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué fruto había producido la vara de Aarón al día siguiente?",
+      "explanation": "La vara de Aarón había brotado, echado flores, arrojado renuevos y producido almendras.",
+      "bibleReference": "Números 17:8",
+      "answers": [
+        {
+          "text": "Higos",
+          "isCorrect": false
+        },
+        {
+          "text": "Racimos de uvas",
+          "isCorrect": false
+        },
+        {
+          "text": "Almendras",
+          "isCorrect": true
+        },
+        {
+          "text": "Granadas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová hacer con la vara de Aarón después de la señal?",
+      "explanation": "Jehová mandó volver la vara de Aarón delante del testimonio, para que se guardara por señal a los hijos rebeldes.",
+      "bibleReference": "Números 17:10",
+      "answers": [
+        {
+          "text": "Guardarla por señal delante del testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "Quemarla sobre el altar del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "Partirla en doce pedazos iguales",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartirla entre los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los hijos de Israel a Moisés al final del capítulo?",
+      "explanation": "Dijeron que estaban muertos y perdidos, y preguntaron si acabarían de perecer todos, porque el que se acercara al tabernáculo moriría.",
+      "bibleReference": "Números 17:12-13",
+      "answers": [
+        {
+          "text": "Que querían otra señal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que todos estaban perdidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volverían a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que elegirían otro sacerdote",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Éxodo 20: los diez mandamientos, el temor del pueblo ante el monte y el altar de tierra.",
+  "slug": "exodus-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde dice Dios que sacó al pueblo, al comenzar a hablar estas palabras?",
+      "explanation": "Dios dice: Yo soy JEHOVÁ tu Dios, que te saqué de la tierra de Egipto, de casa de siervos.",
+      "bibleReference": "Éxodo 20:2",
+      "answers": [
+        {
+          "text": "Del desierto de Sinaí y del monte Horeb",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tierra de Canaán y de sus ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "De la casa de Jacob y de sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tierra de Egipto, de casa de siervos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el versículo 3 acerca de otros dioses?",
+      "explanation": "El mandamiento dice: No tendrás dioses ajenos delante de mí.",
+      "bibleReference": "Éxodo 20:3",
+      "answers": [
+        {
+          "text": "No tendrás dioses ajenos delante de mí",
+          "isCorrect": true
+        },
+        {
+          "text": "No nombrarás a los dioses de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "No ofrecerás a los dioses de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "No harás pacto con otros dioses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre quiénes dice Jehová que visita la maldad de los padres, a los que le aborrecen?",
+      "explanation": "Jehová dice que visita la maldad de los padres sobre los hijos, sobre los terceros y sobre los cuartos, a los que le aborrecen.",
+      "bibleReference": "Éxodo 20:5",
+      "answers": [
+        {
+          "text": "Sobre los pueblos vecinos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las bestias de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los hijos, los terceros y los cuartos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los reyes y los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes hace misericordia en millares?",
+      "explanation": "Dice que hace misericordia en millares a los que le aman y guardan sus mandamientos.",
+      "bibleReference": "Éxodo 20:6",
+      "answers": [
+        {
+          "text": "A los que ofrecen holocaustos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que le aman y guardan sus mandamientos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes y sus casas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los extranjeros de sus puertas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días trabajarás, según este mandamiento?",
+      "explanation": "Seis días trabajarás y harás toda tu obra, mas el séptimo día será reposo para Jehová tu Dios.",
+      "bibleReference": "Éxodo 20:9-10",
+      "answers": [
+        {
+          "text": "Seis días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué bendijo Jehová el día del reposo y lo santificó?",
+      "explanation": "Porque en seis días hizo Jehová los cielos y la tierra, la mar y todas las cosas que en ellos hay, y reposó en el séptimo día.",
+      "bibleReference": "Éxodo 20:11",
+      "answers": [
+        {
+          "text": "Porque en él sacó al pueblo de la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque en él bajó al monte de Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque en él dio el maná en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque hizo todo en seis días y reposó en el séptimo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promesa acompaña al mandamiento de honrar a padre y madre?",
+      "explanation": "Honra a tu padre y a tu madre, porque tus días se alarguen en la tierra que Jehová tu Dios te da.",
+      "bibleReference": "Éxodo 20:12",
+      "answers": [
+        {
+          "text": "Que tendrás muchos hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tus días se alarguen en la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tus campos darán fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie te hará mal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además de la casa y la mujer del prójimo, ¿qué más manda no codiciar?",
+      "explanation": "El mandamiento nombra la casa, la mujer, el siervo, la criada, el buey, el asno, ni cosa alguna del prójimo.",
+      "bibleReference": "Éxodo 20:17",
+      "answers": [
+        {
+          "text": "Su plata, su oro y sus vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus hijos, sus hijas y su heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Su siervo, su criada, su buey y su asno",
+          "isCorrect": true
+        },
+        {
+          "text": "Su viña, su campo y sus olivos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron a Moisés cuando vieron las llamas y oyeron la bocina?",
+      "explanation": "Le dijeron: Habla tú con nosotros, que nosotros oiremos; mas no hable Dios con nosotros, porque no muramos.",
+      "bibleReference": "Éxodo 20:19",
+      "answers": [
+        {
+          "text": "Que subiese otra vez al monte de Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hablase él, y que Dios no hablase con ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que les diese agua de la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Que escribiese las palabras en un libro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué debía hacerse el altar que harían para Jehová?",
+      "explanation": "Jehová dice: Altar de tierra harás para mí, y sacrificarás sobre él tus holocaustos y tus pacíficos.",
+      "bibleReference": "Éxodo 20:24",
+      "answers": [
+        {
+          "text": "De tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "De oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De plata",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

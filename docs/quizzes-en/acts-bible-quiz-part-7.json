@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 7",
+  "description": "Ten questions on Acts 7: Stephen's account of Abraham, Joseph and Moses before the council, and his death outside the city.",
+  "slug": "acts-bible-quiz-part-7",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where was Abraham when the God of glory appeared to him?",
+      "explanation": "Stephen says the God of glory appeared to Abraham when he was in Mesopotamia, before he lived in Haran.",
+      "bibleReference": "Acts 7:2",
+      "answers": [
+        {
+          "text": "In Mesopotamia, before he lived in Haran",
+          "isCorrect": true
+        },
+        {
+          "text": "In the land of Egypt, before Joseph",
+          "isCorrect": false
+        },
+        {
+          "text": "In Shechem, in the land of Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "In the wilderness of Mount Sinai",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long did God say Abraham's offspring would be enslaved and mistreated?",
+      "explanation": "God said his offspring would live as aliens in a strange land and be enslaved and mistreated for four hundred years.",
+      "bibleReference": "Acts 7:6",
+      "answers": [
+        {
+          "text": "For forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "For four hundred years",
+          "isCorrect": true
+        },
+        {
+          "text": "For seventy-five years",
+          "isCorrect": false
+        },
+        {
+          "text": "For eight years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the patriarchs do to Joseph out of jealousy?",
+      "explanation": "The patriarchs, moved with jealousy against Joseph, sold him into Egypt, and God was with him.",
+      "bibleReference": "Acts 7:9",
+      "answers": [
+        {
+          "text": "They drove him into the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "They left him in Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "They sold him into Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "They made him governor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many souls did Joseph summon when he sent for his father and relatives?",
+      "explanation": "Joseph sent and summoned Jacob his father and all his relatives, seventy-five souls.",
+      "bibleReference": "Acts 7:14",
+      "answers": [
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy-five",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who took Moses up and reared him as her own son?",
+      "explanation": "When Moses was thrown out, Pharaoh's daughter took him up and reared him as her own son.",
+      "bibleReference": "Acts 7:20-21",
+      "answers": [
+        {
+          "text": "Pharaoh's daughter",
+          "isCorrect": true
+        },
+        {
+          "text": "His own mother",
+          "isCorrect": false
+        },
+        {
+          "text": "A woman of Midian",
+          "isCorrect": false
+        },
+        {
+          "text": "The daughter of Hamor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Moses flee and become a stranger?",
+      "explanation": "Moses fled at this saying and became a stranger in the land of Midian, where he became the father of two sons.",
+      "bibleReference": "Acts 7:29",
+      "answers": [
+        {
+          "text": "To the land of Haran",
+          "isCorrect": false
+        },
+        {
+          "text": "To the land of Midian",
+          "isCorrect": true
+        },
+        {
+          "text": "To the city of Shechem",
+          "isCorrect": false
+        },
+        {
+          "text": "Back to the land of Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Lord tell Moses to do at the burning bush?",
+      "explanation": "The Lord told him to take off his sandals, because the place where he stood was holy ground.",
+      "bibleReference": "Acts 7:33",
+      "answers": [
+        {
+          "text": "To hide his face from the fire",
+          "isCorrect": false
+        },
+        {
+          "text": "To go up the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "To bring his brother Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "To take off his sandals",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the fathers make in those days when they turned back in their hearts to Egypt?",
+      "explanation": "They made a calf in those days, brought a sacrifice to the idol, and rejoiced in the works of their hands.",
+      "bibleReference": "Acts 7:40-41",
+      "answers": [
+        {
+          "text": "A tabernacle of the testimony",
+          "isCorrect": false
+        },
+        {
+          "text": "An altar of stones",
+          "isCorrect": false
+        },
+        {
+          "text": "A calf, and brought a sacrifice to it",
+          "isCorrect": true
+        },
+        {
+          "text": "A house for the God of Jacob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Stephen say he saw as he looked up into heaven?",
+      "explanation": "He said he saw the heavens opened and the Son of Man standing at the right hand of God.",
+      "bibleReference": "Acts 7:55-56",
+      "answers": [
+        {
+          "text": "The Son of Man standing at the right hand of God",
+          "isCorrect": true
+        },
+        {
+          "text": "An angel of the Lord in a flame of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "The glory of the temple in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A cloud receiving him out of sight",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At whose feet did the witnesses place their garments?",
+      "explanation": "They threw Stephen out of the city and stoned him, and the witnesses placed their garments at the feet of a young man named Saul.",
+      "bibleReference": "Acts 7:58",
+      "answers": [
+        {
+          "text": "At the feet of the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "At the feet of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "At the feet of a young man named Saul",
+          "isCorrect": true
+        },
+        {
+          "text": "At the feet of the scribes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 22",
+  "description": "Ten questions on Psalms 22: a cry of being forsaken, mockers and bulls of Bashan all around, and praise of Yahweh in the great assembly.",
+  "slug": "psalms-bible-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "With what question does the psalm open?",
+      "explanation": "Psalms 22:1 opens with the words, 'My God, my God, why have you forsaken me?'",
+      "bibleReference": "Psalms 22:1",
+      "answers": [
+        {
+          "text": "Why do the wicked prosper?",
+          "isCorrect": false
+        },
+        {
+          "text": "My God, my God, why have you forsaken me?",
+          "isCorrect": true
+        },
+        {
+          "text": "Where is my God today?",
+          "isCorrect": false
+        },
+        {
+          "text": "Why have my friends left me?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the speaker describe himself in verse 6?",
+      "explanation": "Verse 6 says, 'But I am a worm, and no man; a reproach of men, and despised by the people.'",
+      "bibleReference": "Psalms 22:6",
+      "answers": [
+        {
+          "text": "A lion among men",
+          "isCorrect": false
+        },
+        {
+          "text": "A tree planted by water",
+          "isCorrect": false
+        },
+        {
+          "text": "A shepherd without sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "A worm, and no man",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What do the people who mock the speaker say about him?",
+      "explanation": "Verses 7-8 say they shake their heads, saying, 'He trusts in Yahweh. Let him deliver him.'",
+      "bibleReference": "Psalms 22:7-8",
+      "answers": [
+        {
+          "text": "\"Let him go back to his father's house.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let him bring an offering for his sins.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He trusts in Yahweh. Let him deliver him.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"He has never spoken the truth.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Strong bulls of which place have encircled the speaker?",
+      "explanation": "Psalms 22:12 says, 'Many bulls have surrounded me. Strong bulls of Bashan have encircled me.'",
+      "bibleReference": "Psalms 22:12",
+      "answers": [
+        {
+          "text": "Bashan",
+          "isCorrect": true
+        },
+        {
+          "text": "Lebanon",
+          "isCorrect": false
+        },
+        {
+          "text": "Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what does the speaker compare his heart in verse 14?",
+      "explanation": "Verse 14 says, 'My heart is like wax. It is melted within me.'",
+      "bibleReference": "Psalms 22:14",
+      "answers": [
+        {
+          "text": "Stone",
+          "isCorrect": false
+        },
+        {
+          "text": "A dry leaf",
+          "isCorrect": false
+        },
+        {
+          "text": "Wax",
+          "isCorrect": true
+        },
+        {
+          "text": "A burning coal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 16, what have they pierced?",
+      "explanation": "Psalms 22:16 says, 'They have pierced my hands and feet.'",
+      "bibleReference": "Psalms 22:16",
+      "answers": [
+        {
+          "text": "His side and back",
+          "isCorrect": false
+        },
+        {
+          "text": "His hands and feet",
+          "isCorrect": true
+        },
+        {
+          "text": "His ears and eyes",
+          "isCorrect": false
+        },
+        {
+          "text": "His head and shoulders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For what do they cast lots?",
+      "explanation": "Verse 18 says they divide his garments among them and cast lots for his clothing.",
+      "bibleReference": "Psalms 22:18",
+      "answers": [
+        {
+          "text": "His clothing",
+          "isCorrect": true
+        },
+        {
+          "text": "His land",
+          "isCorrect": false
+        },
+        {
+          "text": "His bread",
+          "isCorrect": false
+        },
+        {
+          "text": "His cattle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From the horns of what animals has the speaker been rescued?",
+      "explanation": "Psalms 22:21 says, 'Yes, you have rescued me from the horns of the wild oxen.'",
+      "bibleReference": "Psalms 22:21",
+      "answers": [
+        {
+          "text": "The rams",
+          "isCorrect": false
+        },
+        {
+          "text": "The goats",
+          "isCorrect": false
+        },
+        {
+          "text": "The stags",
+          "isCorrect": false
+        },
+        {
+          "text": "The wild oxen",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom will the speaker declare Yahweh's name?",
+      "explanation": "Verse 22 says, 'I will declare your name to my brothers. Among the assembly, I will praise you.'",
+      "bibleReference": "Psalms 22:22",
+      "answers": [
+        {
+          "text": "The kings of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "His brothers",
+          "isCorrect": true
+        },
+        {
+          "text": "His enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 28, whose is the kingdom?",
+      "explanation": "Psalms 22:28 says, 'For the kingdom is Yahweh's. He is the ruler over the nations.'",
+      "bibleReference": "Psalms 22:28",
+      "answers": [
+        {
+          "text": "Yahweh's",
+          "isCorrect": true
+        },
+        {
+          "text": "The king of Israel's",
+          "isCorrect": false
+        },
+        {
+          "text": "The rich ones of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The descendants of Jacob",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

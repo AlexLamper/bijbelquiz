@@ -1,0 +1,242 @@
+{
+  "title": "Judges Bible Quiz - Chapter 19",
+  "description": "Ten questions on Judges 19: the Levite and his concubine, the long stay in Bethlehem, and the night in Gibeah.",
+  "slug": "judges-bible-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "From where did the Levite take his concubine?",
+      "explanation": "The Levite, living on the farther side of the hill country of Ephraim, took a concubine out of Bethlehem Judah.",
+      "bibleReference": "Judges 19:1",
+      "answers": [
+        {
+          "text": "Gibeah in Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethlehem Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "Ramah in Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long was the concubine at her father's house before her husband came after her?",
+      "explanation": "She went away to her father's house in Bethlehem Judah and was there for four months.",
+      "bibleReference": "Judges 19:2",
+      "answers": [
+        {
+          "text": "Two weeks",
+          "isCorrect": false
+        },
+        {
+          "text": "One year",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Four months",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long did the Levite first stay with his father-in-law?",
+      "explanation": "His father-in-law kept him there, and he stayed with him three days, eating and drinking.",
+      "bibleReference": "Judges 19:4",
+      "answers": [
+        {
+          "text": "Three days",
+          "isCorrect": true
+        },
+        {
+          "text": "Two days",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "A whole month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By what other name is Jebus called in this chapter?",
+      "explanation": "The man went near Jebus, which the text says is also called Jerusalem.",
+      "bibleReference": "Judges 19:10",
+      "answers": [
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramah",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the Levite refuse to stay in Jebus?",
+      "explanation": "He said they would not enter the city of a foreigner that was not of the children of Israel, but would pass over to Gibeah.",
+      "bibleReference": "Judges 19:12",
+      "answers": [
+        {
+          "text": "Its gates were already shut for the night",
+          "isCorrect": false
+        },
+        {
+          "text": "His servant had fallen ill there",
+          "isCorrect": false
+        },
+        {
+          "text": "It was too far from the road",
+          "isCorrect": false
+        },
+        {
+          "text": "It was a city of foreigners, not of Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To which tribe did Gibeah belong?",
+      "explanation": "The sun went down on them near Gibeah, which belongs to Benjamin.",
+      "bibleReference": "Judges 19:14",
+      "answers": [
+        {
+          "text": "Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamin",
+          "isCorrect": true
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the old man coming from when he saw the travelers in the street?",
+      "explanation": "An old man came from his work out of the field at evening; he was from the hill country of Ephraim and lived in Gibeah.",
+      "bibleReference": "Judges 19:16",
+      "answers": [
+        {
+          "text": "From the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "From the market in Jebus",
+          "isCorrect": false
+        },
+        {
+          "text": "From his work in the field",
+          "isCorrect": true
+        },
+        {
+          "text": "From the house of Yahweh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides heading home, where did the Levite tell the old man he was going?",
+      "explanation": "The Levite said, \"I am going to Yahweh's house; and there is no one who has taken me into his house.\"",
+      "bibleReference": "Judges 19:18",
+      "answers": [
+        {
+          "text": "To Yahweh's house",
+          "isCorrect": true
+        },
+        {
+          "text": "To the elders of Gibeah",
+          "isCorrect": false
+        },
+        {
+          "text": "To the land of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "To the city of Jebus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who surrounded the old man's house and beat at the door?",
+      "explanation": "The men of the city, certain wicked fellows, surrounded the house and beat at the door.",
+      "bibleReference": "Judges 19:22",
+      "answers": [
+        {
+          "text": "Soldiers from Jebus",
+          "isCorrect": false
+        },
+        {
+          "text": "Wicked men of the city",
+          "isCorrect": true
+        },
+        {
+          "text": "Men from Bethlehem Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "The Levite's own brothers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Into how many pieces did the Levite divide his concubine before sending her throughout Israel?",
+      "explanation": "He took a knife and divided her, limb by limb, into twelve pieces, and sent her throughout all the borders of Israel.",
+      "bibleReference": "Judges 19:29",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleven",
+          "isCorrect": false
+        },
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

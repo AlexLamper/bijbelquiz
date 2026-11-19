@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Josué 24: la reunión en Sichêm, la elección del pueblo y la muerte de Josué.",
+  "slug": "joshua-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué lugar juntó Josué todas las tribus de Israel?",
+      "explanation": "El texto dice que Josué juntó todas las tribus de Israel en Sichêm y llamó a los ancianos, príncipes, jueces y oficiales.",
+      "bibleReference": "Josué 24:1",
+      "answers": [
+        {
+          "text": "En Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "En Sichêm",
+          "isCorrect": true
+        },
+        {
+          "text": "En el monte de Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién era, según el discurso de Josué, el padre de Abraham y de Nachôr?",
+      "explanation": "Josué dijo que sus padres habitaron antiguamente de esotra parte del río, es a saber, Tharé, padre de Abraham y de Nachôr, y que servían a dioses extraños.",
+      "bibleReference": "Josué 24:2",
+      "answers": [
+        {
+          "text": "Tharé",
+          "isCorrect": true
+        },
+        {
+          "text": "Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Beor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le fue dado a Esaú, según estas palabras?",
+      "explanation": "El texto dice que a Isaac le dio a Jacob y a Esaú, y que a Esaú dio el monte de Seir para que lo poseyese.",
+      "bibleReference": "Josué 24:4",
+      "answers": [
+        {
+          "text": "La tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de Seir",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes envió Jehová antes de sacarlos de Egipto?",
+      "explanation": "El texto dice: yo envié a Moisés y a Aarón, y herí a Egipto, y después os saqué.",
+      "bibleReference": "Josué 24:5",
+      "answers": [
+        {
+          "text": "A Josué y a Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "A Moisés y a Aarón",
+          "isCorrect": true
+        },
+        {
+          "text": "A Eleazar y a Phinees",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién mandó llamar Balac hijo de Sephor para que maldijese a Israel?",
+      "explanation": "El texto dice que Balac hijo de Sephor, rey de los Moabitas, peleó contra Israel y envió a llamar a Balaam hijo de Beor para que los maldijese.",
+      "bibleReference": "Josué 24:9",
+      "answers": [
+        {
+          "text": "A Nachôr hijo de Tharé",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hemor padre de Sichêm",
+          "isCorrect": false
+        },
+        {
+          "text": "A Balaam hijo de Beor",
+          "isCorrect": true
+        },
+        {
+          "text": "A los dos reyes de los Amorrheos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué envió Jehová delante de Israel para echar a los dos reyes de los Amorrheos?",
+      "explanation": "El texto dice que envió tábanos delante de ellos, los cuales echaron a los dos reyes de los Amorrheos, y no fue con su espada ni con su arco.",
+      "bibleReference": "Josué 24:12",
+      "answers": [
+        {
+          "text": "Fuego del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Granizo y truenos",
+          "isCorrect": false
+        },
+        {
+          "text": "Leones del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Tábanos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Josué que harían él y su casa?",
+      "explanation": "Josué dijo al pueblo que escogiesen a quién servir, y añadió: que yo y mi casa serviremos a Jehová.",
+      "bibleReference": "Josué 24:15",
+      "answers": [
+        {
+          "text": "Que servirían a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volverían al otro lado del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Que servirían a los dioses de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se quedarían en Sichêm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el pueblo cuando Josué les dijo que eran testigos contra sí mismos?",
+      "explanation": "Josué les dijo que eran testigos contra sí mismos de que habían elegido a Jehová para servirle, y ellos respondieron: Testigos somos.",
+      "bibleReference": "Josué 24:22",
+      "answers": [
+        {
+          "text": "Danos tiempo para pensarlo",
+          "isCorrect": false
+        },
+        {
+          "text": "Testigos somos",
+          "isCorrect": true
+        },
+        {
+          "text": "No podremos servirle",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová lo sabe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué levantó Josué debajo de un alcornoque junto al santuario de Jehová?",
+      "explanation": "El texto dice que Josué tomó una grande piedra y la levantó allí debajo de un alcornoque que estaba junto al santuario de Jehová, y dijo que esa piedra sería por testigo.",
+      "bibleReference": "Josué 24:26-27",
+      "answers": [
+        {
+          "text": "Un altar de tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Una columna de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Una tienda de testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "Una grande piedra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años tenía Josué cuando murió?",
+      "explanation": "El texto dice que murió Josué, hijo de Nun, siervo de Jehová, siendo de ciento y diez años.",
+      "bibleReference": "Josué 24:29",
+      "answers": [
+        {
+          "text": "Ciento y diez",
+          "isCorrect": true
+        },
+        {
+          "text": "Ochenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Noventa y cinco",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

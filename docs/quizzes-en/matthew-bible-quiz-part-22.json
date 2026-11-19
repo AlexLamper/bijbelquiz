@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 22",
+  "description": "Ten questions on Matthew 22: the king's wedding feast, the question about Caesar's tax, the Sadducees on the resurrection, and the greatest commandment.",
+  "slug": "matthew-bible-quiz-part-22",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What was the feast in the parable of the king?",
+      "explanation": "The Kingdom of Heaven is like a certain king who made a wedding feast for his son.",
+      "bibleReference": "Matthew 22:2",
+      "answers": [
+        {
+          "text": "A harvest feast for his servants",
+          "isCorrect": false
+        },
+        {
+          "text": "A feast for the elders of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "A wedding feast for his son",
+          "isCorrect": true
+        },
+        {
+          "text": "A feast at the end of a journey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did those who were invited do instead of coming?",
+      "explanation": "They made light of it and went their ways, one to his own farm and another to his merchandise.",
+      "bibleReference": "Matthew 22:5",
+      "answers": [
+        {
+          "text": "They made light of it and went their ways",
+          "isCorrect": true
+        },
+        {
+          "text": "They sent gifts to the king in their place",
+          "isCorrect": false
+        },
+        {
+          "text": "They came but would not eat the dinner",
+          "isCorrect": false
+        },
+        {
+          "text": "They asked the king to wait a year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the servants gather from the highways?",
+      "explanation": "The servants went out into the highways and gathered together as many as they found, both bad and good, and the wedding was filled with guests.",
+      "bibleReference": "Matthew 22:9-10",
+      "answers": [
+        {
+          "text": "Only the poor of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Only those who had been invited first",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders and the scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "As many as they found, both bad and good",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the king notice about one of the guests?",
+      "explanation": "When the king came in to see the guests, he saw a man who did not have on wedding clothing, and the man was speechless.",
+      "bibleReference": "Matthew 22:11-12",
+      "answers": [
+        {
+          "text": "That he had come without a gift",
+          "isCorrect": false
+        },
+        {
+          "text": "That he did not have on wedding clothing",
+          "isCorrect": true
+        },
+        {
+          "text": "That he sat in the place of honor",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would not eat the dinner",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus end this parable?",
+      "explanation": "He ended by saying that many are called, but few chosen.",
+      "bibleReference": "Matthew 22:14",
+      "answers": [
+        {
+          "text": "Many are called, but few chosen",
+          "isCorrect": true
+        },
+        {
+          "text": "The feast will be made ready again",
+          "isCorrect": false
+        },
+        {
+          "text": "The servants will sit with the king",
+          "isCorrect": false
+        },
+        {
+          "text": "The city will be rebuilt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Pharisees' disciples and the Herodians ask Jesus?",
+      "explanation": "After calling him honest, they asked whether it is lawful to pay taxes to Caesar or not.",
+      "bibleReference": "Matthew 22:16-17",
+      "answers": [
+        {
+          "text": "Whether a man may divorce his wife",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether they should fast on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether it is lawful to pay taxes to Caesar",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether John's baptism was from heaven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say after they told him the image on the coin was Caesar's?",
+      "explanation": "He told them to give to Caesar the things that are Caesar's, and to God the things that are God's.",
+      "bibleReference": "Matthew 22:20-21",
+      "answers": [
+        {
+          "text": "That the coin should be left in the temple treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "To give to Caesar what is Caesar's, and to God what is God's",
+          "isCorrect": true
+        },
+        {
+          "text": "That they should pay no taxes to Caesar at all",
+          "isCorrect": false
+        },
+        {
+          "text": "That the image on the coin should be broken",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Sadducees ask about the woman who had been married to seven brothers?",
+      "explanation": "They said that seven brothers each had her in turn and then she died, and they asked whose wife she would be of the seven in the resurrection.",
+      "bibleReference": "Matthew 22:25-28",
+      "answers": [
+        {
+          "text": "Which brother had sinned",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether she could marry again",
+          "isCorrect": false
+        },
+        {
+          "text": "How her inheritance should be divided",
+          "isCorrect": false
+        },
+        {
+          "text": "Whose wife she would be in the resurrection",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about people in the resurrection?",
+      "explanation": "He said that in the resurrection they neither marry nor are given in marriage, but are like God's angels in heaven.",
+      "bibleReference": "Matthew 22:30",
+      "answers": [
+        {
+          "text": "They are like God's angels in heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "They keep the households they had on earth",
+          "isCorrect": false
+        },
+        {
+          "text": "They are given new names by the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "They are gathered to the city of David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus call the first and great commandment?",
+      "explanation": "He said the first and great commandment is to love the Lord your God with all your heart, with all your soul, and with all your mind.",
+      "bibleReference": "Matthew 22:36-38",
+      "answers": [
+        {
+          "text": "To keep the Sabbath day holy in the land",
+          "isCorrect": false
+        },
+        {
+          "text": "To love the Lord your God with all your heart",
+          "isCorrect": true
+        },
+        {
+          "text": "To honor your father and your mother always",
+          "isCorrect": false
+        },
+        {
+          "text": "To love your neighbor as you love yourself",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 2",
+  "description": "Ten questions on Isaiah 2: the mountain of Yahweh's house, swords into plowshares, and the day against all that is proud.",
+  "slug": "isaiah-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What shall be established on the top of the mountains in the latter days?",
+      "explanation": "The text says that in the latter days the mountain of Yahweh's house shall be established on the top of the mountains, and all nations shall flow to it.",
+      "bibleReference": "Isaiah 2:2",
+      "answers": [
+        {
+          "text": "A great and fortified city",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain of Yahweh's house",
+          "isCorrect": true
+        },
+        {
+          "text": "A watchtower for the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "The throne of David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The law shall go out of Zion, and what shall go from Jerusalem?",
+      "explanation": "The peoples say the law shall go out of Zion, and Yahweh's word from Jerusalem.",
+      "bibleReference": "Isaiah 2:3",
+      "answers": [
+        {
+          "text": "The king's decree",
+          "isCorrect": false
+        },
+        {
+          "text": "A great army",
+          "isCorrect": false
+        },
+        {
+          "text": "Peace for the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh's word",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Into what shall the peoples beat their spears?",
+      "explanation": "They shall beat their swords into plowshares, and their spears into pruning hooks.",
+      "bibleReference": "Isaiah 2:4",
+      "answers": [
+        {
+          "text": "Pruning hooks",
+          "isCorrect": true
+        },
+        {
+          "text": "Plowshares",
+          "isCorrect": false
+        },
+        {
+          "text": "Sickles",
+          "isCorrect": false
+        },
+        {
+          "text": "Shepherds' staffs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will the nations no longer learn when Yahweh judges between them?",
+      "explanation": "The text says nation shall not lift up sword against nation, neither shall they learn war any more.",
+      "bibleReference": "Isaiah 2:4",
+      "answers": [
+        {
+          "text": "Divination",
+          "isCorrect": false
+        },
+        {
+          "text": "Foreign languages",
+          "isCorrect": false
+        },
+        {
+          "text": "War",
+          "isCorrect": true
+        },
+        {
+          "text": "Trade",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the people whose land is full of idols worship?",
+      "explanation": "Their land is full of idols, and they worship the work of their own hands, that which their own fingers have made.",
+      "bibleReference": "Isaiah 2:8",
+      "answers": [
+        {
+          "text": "The stars of heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The work of their own hands",
+          "isCorrect": true
+        },
+        {
+          "text": "The gods of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountains and hills",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From what are people told to hide when they enter into the rock and the dust?",
+      "explanation": "They are told to enter into the rock and hide in the dust, from before the terror of Yahweh and from the glory of his majesty.",
+      "bibleReference": "Isaiah 2:10",
+      "answers": [
+        {
+          "text": "The terror of Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "The armies of Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "A great flood",
+          "isCorrect": false
+        },
+        {
+          "text": "The heat of the sun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Against what will the day of Yahweh of Armies come?",
+      "explanation": "There will be a day of Yahweh of Armies for all that is proud and arrogant, and for all that is lifted up; and it shall be brought low.",
+      "bibleReference": "Isaiah 2:12",
+      "answers": [
+        {
+          "text": "All that is weak and lowly",
+          "isCorrect": false
+        },
+        {
+          "text": "All the nations of the east",
+          "isCorrect": false
+        },
+        {
+          "text": "All who dwell in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "All that is proud and arrogant",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "The day of Yahweh is for all the cedars of Lebanon and for all the oaks of which place?",
+      "explanation": "It is for all the cedars of Lebanon, that are high and lifted up, and for all the oaks of Bashan.",
+      "bibleReference": "Isaiah 2:13",
+      "answers": [
+        {
+          "text": "Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "Tarshish",
+          "isCorrect": false
+        },
+        {
+          "text": "Bashan",
+          "isCorrect": true
+        },
+        {
+          "text": "Gilead",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what will men cast away their idols of silver and gold in that day?",
+      "explanation": "In that day men shall cast away their idols of silver and their idols of gold to the moles and to the bats.",
+      "bibleReference": "Isaiah 2:20",
+      "answers": [
+        {
+          "text": "To the moles and to the bats",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the depths of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the fire",
+          "isCorrect": false
+        },
+        {
+          "text": "To the beggars at the gates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The chapter ends by saying to stop trusting in man, whose breath is where?",
+      "explanation": "The last verse says, \"Stop trusting in man, whose breath is in his nostrils; for of what account is he?\"",
+      "bibleReference": "Isaiah 2:22",
+      "answers": [
+        {
+          "text": "In his heart",
+          "isCorrect": false
+        },
+        {
+          "text": "In his mouth",
+          "isCorrect": false
+        },
+        {
+          "text": "In his chest",
+          "isCorrect": false
+        },
+        {
+          "text": "In his nostrils",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

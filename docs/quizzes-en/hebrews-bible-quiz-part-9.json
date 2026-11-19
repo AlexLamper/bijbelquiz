@@ -1,0 +1,242 @@
+{
+  "title": "Hebrews Bible Quiz - Chapter 9",
+  "description": "Ten questions on Hebrews 9: the earthly tabernacle and its two parts, the blood of goats and bulls, and Christ who entered in once for all.",
+  "slug": "hebrews-bible-quiz-part-9",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What was in the first part of the tabernacle, which is called the Holy Place?",
+      "explanation": "Verse 2 says that in the first part were the lamp stand, the table, and the show bread, and that this part is called the Holy Place.",
+      "bibleReference": "Hebrews 9:2",
+      "answers": [
+        {
+          "text": "The ark of the covenant overlaid with gold",
+          "isCorrect": false
+        },
+        {
+          "text": "The mercy seat and the cherubim of glory",
+          "isCorrect": false
+        },
+        {
+          "text": "The lamp stand, the table and the show bread",
+          "isCorrect": true
+        },
+        {
+          "text": "The golden altar of incense and the ark",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the part of the tabernacle after the second veil called?",
+      "explanation": "Verse 3 says that after the second veil was the tabernacle which is called the Holy of Holies.",
+      "bibleReference": "Hebrews 9:3",
+      "answers": [
+        {
+          "text": "The Holy of Holies",
+          "isCorrect": true
+        },
+        {
+          "text": "The Holy Place",
+          "isCorrect": false
+        },
+        {
+          "text": "The true tabernacle",
+          "isCorrect": false
+        },
+        {
+          "text": "The mercy seat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the golden pot inside the ark hold?",
+      "explanation": "Verse 4 says the ark held a golden pot holding the manna, Aaron's rod that budded, and the tablets of the covenant.",
+      "bibleReference": "Hebrews 9:4",
+      "answers": [
+        {
+          "text": "Oil for the lamps",
+          "isCorrect": false
+        },
+        {
+          "text": "Incense for the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Water from the rock",
+          "isCorrect": false
+        },
+        {
+          "text": "The manna",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whose rod that budded was in the ark, according to verse 4?",
+      "explanation": "Verse 4 names Aaron's rod that budded among the things in the ark of the covenant.",
+      "bibleReference": "Hebrews 9:4",
+      "answers": [
+        {
+          "text": "Moses' rod",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron's rod",
+          "isCorrect": true
+        },
+        {
+          "text": "Levi's rod",
+          "isCorrect": false
+        },
+        {
+          "text": "Abraham's rod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How often did the high priest go into the second part, and with what?",
+      "explanation": "Verse 7 says the high priest alone went into the second part once in the year, not without blood, which he offered for himself and for the errors of the people.",
+      "bibleReference": "Hebrews 9:7",
+      "answers": [
+        {
+          "text": "Every day, with incense",
+          "isCorrect": false
+        },
+        {
+          "text": "Every Sabbath, with bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Once in the year, not without blood",
+          "isCorrect": true
+        },
+        {
+          "text": "Twice a year, with oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Through what did Christ enter in once for all into the Holy Place?",
+      "explanation": "Verse 12 says he entered in once for all, not through the blood of goats and calves, but through his own blood, having obtained eternal redemption.",
+      "bibleReference": "Hebrews 9:12",
+      "answers": [
+        {
+          "text": "Through his own blood",
+          "isCorrect": true
+        },
+        {
+          "text": "Through the blood of goats and calves",
+          "isCorrect": false
+        },
+        {
+          "text": "Through the ashes of a heifer",
+          "isCorrect": false
+        },
+        {
+          "text": "Through water and scarlet wool",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 14 say the blood of Christ will cleanse?",
+      "explanation": "Verse 14 asks how much more the blood of Christ will cleanse your conscience from dead works to serve the living God.",
+      "bibleReference": "Hebrews 9:14",
+      "answers": [
+        {
+          "text": "The vessels of the tabernacle",
+          "isCorrect": false
+        },
+        {
+          "text": "Your conscience from dead works",
+          "isCorrect": true
+        },
+        {
+          "text": "The ashes on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "The book of the law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses sprinkle with the blood of the calves and the goats?",
+      "explanation": "Verse 19 says that when every commandment had been spoken, Moses took the blood with water and scarlet wool and hyssop, and sprinkled both the book itself and all the people.",
+      "bibleReference": "Hebrews 9:19",
+      "answers": [
+        {
+          "text": "The altar and the priests only",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain and the tablets",
+          "isCorrect": false
+        },
+        {
+          "text": "The ark and the mercy seat",
+          "isCorrect": false
+        },
+        {
+          "text": "The book itself and all the people",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does verse 22 say happens apart from the shedding of blood?",
+      "explanation": "Verse 22 says that according to the law nearly everything is cleansed with blood, and apart from shedding of blood there is no remission.",
+      "bibleReference": "Hebrews 9:22",
+      "answers": [
+        {
+          "text": "There is no remission",
+          "isCorrect": true
+        },
+        {
+          "text": "There is no covenant",
+          "isCorrect": false
+        },
+        {
+          "text": "There is no priesthood",
+          "isCorrect": false
+        },
+        {
+          "text": "There is no judgment",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say Christ will do when he appears a second time?",
+      "explanation": "Verse 28 says that having been offered once to bear the sins of many, he will appear a second time, without sin, to those who are eagerly waiting for him for salvation.",
+      "bibleReference": "Hebrews 9:28",
+      "answers": [
+        {
+          "text": "Offer himself again for the sins of many",
+          "isCorrect": false
+        },
+        {
+          "text": "Enter the earthly sanctuary with blood",
+          "isCorrect": false
+        },
+        {
+          "text": "Appear without sin, to those waiting for him",
+          "isCorrect": true
+        },
+        {
+          "text": "Sprinkle all the people with blood again",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

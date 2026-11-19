@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Éxodo 19: la llegada al desierto de Sinaí, el pacto propuesto al pueblo y el monte que humeaba.",
+  "slug": "exodus-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué mes de la salida de Egipto vinieron al desierto de Sinaí?",
+      "explanation": "Al mes tercero de la salida de los hijos de Israel de la tierra de Egipto, en aquel día vinieron al desierto de Sinaí.",
+      "bibleReference": "Éxodo 19:1",
+      "answers": [
+        {
+          "text": "Al mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "Al mes segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "Al mes tercero",
+          "isCorrect": true
+        },
+        {
+          "text": "Al mes séptimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dijo Jehová que había tomado al pueblo y lo había traído a sí?",
+      "explanation": "Jehová les recuerda lo que hizo a los Egipcios y cómo los tomó sobre alas de águilas y los trajo a sí.",
+      "bibleReference": "Éxodo 19:4",
+      "answers": [
+        {
+          "text": "Sobre alas de águilas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con cuerdas de amor",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre hombros de hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "En carros de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué serían si daban oído a su voz y guardaban su pacto?",
+      "explanation": "Jehová dijo que, si daban oído a su voz y guardaban su pacto, serían su especial tesoro sobre todos los pueblos, porque suya es toda la tierra.",
+      "bibleReference": "Éxodo 19:5",
+      "answers": [
+        {
+          "text": "Los más numerosos de todos los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Su especial tesoro sobre todos los pueblos",
+          "isCorrect": true
+        },
+        {
+          "text": "Señores de Egipto y de sus riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Jueces de la tierra de Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además de gente santa, ¿qué dijo Jehová que serían?",
+      "explanation": "Jehová dijo: Y vosotros seréis mi reino de sacerdotes, y gente santa.",
+      "bibleReference": "Éxodo 19:6",
+      "answers": [
+        {
+          "text": "Un pueblo de profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una casa de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Siervos de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Su reino de sacerdotes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió todo el pueblo a una, cuando Moisés les propuso estas palabras?",
+      "explanation": "Todo el pueblo respondió a una: Todo lo que Jehová ha dicho haremos. Y Moisés refirió las palabras del pueblo a Jehová.",
+      "bibleReference": "Éxodo 19:8",
+      "answers": [
+        {
+          "text": "Todo lo que Jehová ha dicho haremos",
+          "isCorrect": true
+        },
+        {
+          "text": "Habla tú, y nosotros pensaremos",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvamos al desierto de Sin",
+          "isCorrect": false
+        },
+        {
+          "text": "No podemos guardar este pacto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer el pueblo para estar apercibido?",
+      "explanation": "Jehová mandó a Moisés ir al pueblo, santificarlos aquel día y el siguiente, y que lavasen sus vestidos.",
+      "bibleReference": "Éxodo 19:10",
+      "answers": [
+        {
+          "text": "Ofrecer holocaustos en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Ayunar tres días y tres noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Santificarse y lavar sus vestidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Subir al monte con Moisés y Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le sucedería a cualquiera que tocase el monte?",
+      "explanation": "Moisés debía señalar término al pueblo en derredor: cualquiera que tocase el monte, de seguro moriría.",
+      "bibleReference": "Éxodo 19:12",
+      "answers": [
+        {
+          "text": "Quedaría ciego",
+          "isCorrect": false
+        },
+        {
+          "text": "De seguro moriría",
+          "isCorrect": true
+        },
+        {
+          "text": "Sería echado del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Tendría que lavar sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió al tercer día, cuando vino la mañana?",
+      "explanation": "Al tercer día, cuando vino la mañana, vinieron truenos y relámpagos, espesa nube sobre el monte y sonido de bocina muy fuerte, y todo el pueblo se estremeció.",
+      "bibleReference": "Éxodo 19:16",
+      "answers": [
+        {
+          "text": "Vino granizo y fuego sobre el real",
+          "isCorrect": false
+        },
+        {
+          "text": "Se abrió la tierra delante del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Bajó rocío con maná sobre el real",
+          "isCorrect": false
+        },
+        {
+          "text": "Vinieron truenos, relámpagos y sonido de bocina",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo subía el humo del monte de Sinaí?",
+      "explanation": "Todo el monte humeaba porque Jehová había descendido sobre él en fuego, y el humo subía como el humo de un horno.",
+      "bibleReference": "Éxodo 19:18",
+      "answers": [
+        {
+          "text": "Como el humo de un horno",
+          "isCorrect": true
+        },
+        {
+          "text": "Como una columna de nube",
+          "isCorrect": false
+        },
+        {
+          "text": "Como niebla de la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Como polvo del camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién podía subir con Moisés, según lo que le dijo Jehová?",
+      "explanation": "Jehová le dijo que descendiese y subiese él, y Aarón con él, pero que los sacerdotes y el pueblo no traspasasen el término.",
+      "bibleReference": "Éxodo 19:24",
+      "answers": [
+        {
+          "text": "Los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón",
+          "isCorrect": true
+        },
+        {
+          "text": "Los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Josué",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

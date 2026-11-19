@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Deuteronomio 14: los animales limpios e inmundos, lo que no se come y el diezmo que se guarda cada tres años.",
+  "slug": "deuteronomy-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el texto que no debían hacer por un muerto?",
+      "explanation": "Como hijos de Jehová su Dios, no se sajarían ni pondrían calva sobre sus ojos por un muerto.",
+      "bibleReference": "Deuteronomio 14:1",
+      "answers": [
+        {
+          "text": "No salir de la ciudad por siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "No comer pan por tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "No sajarse ni poner calva sobre sus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "No entrar en la casa del Levita",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a este pueblo al prohibirle lo abominable?",
+      "explanation": "Dice que es pueblo santo a Jehová su Dios, y que Jehová lo ha escogido para que le sea un pueblo singular de entre todos los pueblos.",
+      "bibleReference": "Deuteronomio 14:2",
+      "answers": [
+        {
+          "text": "Pueblo santo y singular",
+          "isCorrect": true
+        },
+        {
+          "text": "Pueblo duro de cerviz",
+          "isCorrect": false
+        },
+        {
+          "text": "Pueblo de los más pocos",
+          "isCorrect": false
+        },
+        {
+          "text": "Pueblo sabio y entendido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuáles son los primeros animales que el texto nombra que podían comer?",
+      "explanation": "Dice: Estos son los animales que comeréis: el buey, la oveja y la cabra.",
+      "bibleReference": "Deuteronomio 14:4",
+      "answers": [
+        {
+          "text": "El camello, la liebre y el conejo",
+          "isCorrect": false
+        },
+        {
+          "text": "El puerco, el camello y el águila",
+          "isCorrect": false
+        },
+        {
+          "text": "El cabrito, el buitre y el cisne",
+          "isCorrect": false
+        },
+        {
+          "text": "El buey, la oveja y la cabra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué señales debía tener un animal para que lo pudieran comer?",
+      "explanation": "Todo animal de pezuñas, que tiene hendidura de dos uñas y que rumiare, ése comerían.",
+      "bibleReference": "Deuteronomio 14:6",
+      "answers": [
+        {
+          "text": "Que rumie, aunque no tenga uña hendida",
+          "isCorrect": false
+        },
+        {
+          "text": "Pezuña hendida en dos uñas y que rumie",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tenga uña hendida, aunque no rumie",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tenga aleta y escama",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué eran inmundos para ellos el camello, la liebre y el conejo?",
+      "explanation": "Dice que no los comerían porque rumian, mas no tienen uña hendida; les serían inmundos.",
+      "bibleReference": "Deuteronomio 14:7",
+      "answers": [
+        {
+          "text": "Porque tienen uña hendida, mas no rumian",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no tienen aleta ni escama",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque rumian, mas no tienen uña hendida",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque andan arrastrando por la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué les sería inmundo el puerco?",
+      "explanation": "Dice: Ni puerco: porque tiene uña hendida, mas no rumia, os será inmundo.",
+      "bibleReference": "Deuteronomio 14:8",
+      "answers": [
+        {
+          "text": "Porque rumia, mas no tiene uña hendida",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque come cosas mortecinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque es ave de las que no se comen",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tiene uña hendida, mas no rumia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué podían comer de todo lo que está en el agua?",
+      "explanation": "Esto comerían de todo lo que está en el agua: todo lo que tiene aleta y escama; lo que no las tuviere les sería inmundo.",
+      "bibleReference": "Deuteronomio 14:9-10",
+      "answers": [
+        {
+          "text": "Todo lo que se mueve en el agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo lo que tiene aleta y escama",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo lo que se halla en los arroyos",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada de lo que vive en el agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prohíbe el texto acerca del cabrito?",
+      "explanation": "Dice: No cocerás el cabrito en la leche de su madre.",
+      "bibleReference": "Deuteronomio 14:21",
+      "answers": [
+        {
+          "text": "No cocerlo en la leche de su madre",
+          "isCorrect": true
+        },
+        {
+          "text": "No ofrecerlo en el altar de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "No sacrificarlo en sus poblaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "No comerlo antes del año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué podía gastar el dinero cuando el camino fuere muy largo?",
+      "explanation": "Daría el dinero por todo lo que su alma deseare: por vacas, por ovejas, por vino, por sidra o por cualquier cosa que su alma le demandare, y comería allí delante de Jehová su Dios.",
+      "bibleReference": "Deuteronomio 14:26",
+      "answers": [
+        {
+          "text": "En plata y oro para el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "En vestidos y aceite para su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "En simiente para sembrar su campo",
+          "isCorrect": false
+        },
+        {
+          "text": "En vacas, ovejas, vino, sidra o lo que deseare",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía al cabo de cada tres años con el diezmo de sus productos?",
+      "explanation": "Sacaría todo el diezmo de sus productos de aquel año y lo guardaría en sus ciudades, y vendrían el Levita, el extranjero, el huérfano y la viuda, y comerían y serían saciados.",
+      "bibleReference": "Deuteronomio 14:28-29",
+      "answers": [
+        {
+          "text": "Lo quemaba todo sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo vendía y guardaba el dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo guardaba en sus ciudades",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo llevaba a las gentes vecinas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

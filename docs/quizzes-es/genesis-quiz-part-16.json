@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre Génesis 16: Sarai da su sierva Agar a Abram, la huida de Agar y el ángel de Jehová junto a la fuente.",
+  "slug": "genesis-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaba la sierva egipcia de Sarai?",
+      "explanation": "Sarai, mujer de Abram, no le paría, y tenía una sierva egipcia que se llamaba Agar.",
+      "bibleReference": "Génesis 16:1",
+      "answers": [
+        {
+          "text": "Rebeca",
+          "isCorrect": false
+        },
+        {
+          "text": "Agar",
+          "isCorrect": true
+        },
+        {
+          "text": "Milca",
+          "isCorrect": false
+        },
+        {
+          "text": "Reúma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué propuso Sarai a Abram, y qué hizo él?",
+      "explanation": "Sarai le dijo que Jehová la había hecho estéril y le rogó que entrase a su sierva, por si tenía hijos de ella; y Abram atendió a su dicho.",
+      "bibleReference": "Génesis 16:2",
+      "answers": [
+        {
+          "text": "Que tomase mujer de las hijas de los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que orase a Jehová por ella en el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que entrase a su sierva, y Abram atendió a su dicho",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tomase a Lot su sobrino por heredero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo había habitado Abram en la tierra de Canaán cuando Sarai le dio a Agar?",
+      "explanation": "Sarai tomó a Agar su sierva egipcia y la dio a Abram por mujer al cabo de diez años que Abram había habitado en la tierra de Canaán.",
+      "bibleReference": "Génesis 16:3",
+      "answers": [
+        {
+          "text": "Tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez años",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta y seis años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Agar cuando vio que había concebido?",
+      "explanation": "Cuando vio que había concebido, miraba con desprecio a su señora.",
+      "bibleReference": "Génesis 16:4",
+      "answers": [
+        {
+          "text": "Miraba con desprecio a su señora",
+          "isCorrect": true
+        },
+        {
+          "text": "Dio gracias a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió perdón a Sarai",
+          "isCorrect": false
+        },
+        {
+          "text": "Se escondió en la tienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Agar cuando Sarai la afligía?",
+      "explanation": "Abram dejó a la sierva en mano de Sarai, y como Sarai la afligía, Agar huyó de su presencia.",
+      "bibleReference": "Génesis 16:6",
+      "answers": [
+        {
+          "text": "Se sometió calladamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvió a Egipto con su hijo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió ayuda a Abram",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó de su presencia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde halló el ángel de Jehová a Agar?",
+      "explanation": "El ángel de Jehová la halló junto a una fuente de agua en el desierto, junto a la fuente que está en el camino del Sur.",
+      "bibleReference": "Génesis 16:7",
+      "answers": [
+        {
+          "text": "En la tienda de Abram, en la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a una fuente de agua en el desierto, en el camino del Sur",
+          "isCorrect": true
+        },
+        {
+          "text": "En la ciudad de Gerar, junto a la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al mar salado, en el valle de Siddim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó el ángel de Jehová a Agar?",
+      "explanation": "El ángel de Jehová le dijo que volviese a su señora y se pusiese sumisa bajo su mano.",
+      "bibleReference": "Génesis 16:9",
+      "answers": [
+        {
+          "text": "Seguir su camino hasta la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedarse junto a la fuente del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Volver a su señora y ponerse sumisa bajo su mano",
+          "isCorrect": true
+        },
+        {
+          "text": "Buscar a Abram en Hebrón y contarle todo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dijo el ángel que pondría Agar a su hijo?",
+      "explanation": "El ángel le dijo que había concebido y pariría un hijo, y lo llamaría Ismael, porque Jehová había oído su aflicción.",
+      "bibleReference": "Génesis 16:11",
+      "answers": [
+        {
+          "text": "Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Ismael",
+          "isCorrect": true
+        },
+        {
+          "text": "Ben-ammí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dijo el ángel que sería ese hijo?",
+      "explanation": "Dijo que sería hombre fiero, su mano contra todos y las manos de todos contra él, y habitaría delante de todos sus hermanos.",
+      "bibleReference": "Génesis 16:12",
+      "answers": [
+        {
+          "text": "Un hombre fiero, su mano contra todos y las de todos contra él",
+          "isCorrect": true
+        },
+        {
+          "text": "Un pastor pacífico que habitaría entre sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un príncipe de Dios entre todas las naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Un sacerdote del Dios alto en aquella tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre recibió el pozo que está entre Cades y Bered?",
+      "explanation": "Por lo que allí sucedió, al pozo se le llamó Pozo del Viviente que me ve, y está entre Cades y Bered.",
+      "bibleReference": "Génesis 16:14",
+      "answers": [
+        {
+          "text": "Pozo de Agar la sierva",
+          "isCorrect": false
+        },
+        {
+          "text": "Pozo de Bered",
+          "isCorrect": false
+        },
+        {
+          "text": "Pozo entre Cades y Sur",
+          "isCorrect": false
+        },
+        {
+          "text": "Pozo del Viviente que me ve",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

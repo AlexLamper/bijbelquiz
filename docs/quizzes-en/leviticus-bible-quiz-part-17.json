@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 17",
+  "description": "Ten questions on Leviticus 17: where sacrifices must be brought, why blood may not be eaten, and eating what dies of itself.",
+  "slug": "leviticus-bible-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where must an Israelite bring a bull, lamb or goat he kills, to offer it to Yahweh?",
+      "explanation": "He must bring it to the door of the Tent of Meeting to offer it as an offering to Yahweh before Yahweh's tabernacle.",
+      "bibleReference": "Leviticus 17:3-4",
+      "answers": [
+        {
+          "text": "To any altar in the open field",
+          "isCorrect": false
+        },
+        {
+          "text": "To the elders at the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "To his own tent",
+          "isCorrect": false
+        },
+        {
+          "text": "To the door of the Tent of Meeting",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is imputed to the man who does not bring his animal there?",
+      "explanation": "Blood shall be imputed to that man; he has shed blood, and he shall be cut off from among his people.",
+      "bibleReference": "Leviticus 17:4",
+      "answers": [
+        {
+          "text": "Theft",
+          "isCorrect": false
+        },
+        {
+          "text": "Blood",
+          "isCorrect": true
+        },
+        {
+          "text": "A debt of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing, if he gives a tithe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the priest burn for a pleasant aroma to Yahweh?",
+      "explanation": "The priest sprinkles the blood on Yahweh's altar and burns the fat for a pleasant aroma to Yahweh.",
+      "bibleReference": "Leviticus 17:6",
+      "answers": [
+        {
+          "text": "The skin",
+          "isCorrect": false
+        },
+        {
+          "text": "The head",
+          "isCorrect": false
+        },
+        {
+          "text": "The fat",
+          "isCorrect": true
+        },
+        {
+          "text": "The breast",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom were the Israelites no longer to sacrifice?",
+      "explanation": "They shall no more sacrifice their sacrifices to the goat idols.",
+      "bibleReference": "Leviticus 17:7",
+      "answers": [
+        {
+          "text": "The goat idols",
+          "isCorrect": true
+        },
+        {
+          "text": "The sun and the moon",
+          "isCorrect": false
+        },
+        {
+          "text": "The golden calf",
+          "isCorrect": false
+        },
+        {
+          "text": "The gods of the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides the house of Israel, who else must bring a burnt offering to the door of the Tent of Meeting?",
+      "explanation": "The law applies to any man of the house of Israel or of the strangers who live as foreigners among them.",
+      "bibleReference": "Leviticus 17:8-9",
+      "answers": [
+        {
+          "text": "Only the priests, the sons of Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the elders of each tribe",
+          "isCorrect": false
+        },
+        {
+          "text": "The strangers who live among them",
+          "isCorrect": true
+        },
+        {
+          "text": "No one outside the house of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does Yahweh say the life of the flesh is?",
+      "explanation": "Yahweh says, 'For the life of the flesh is in the blood.'",
+      "bibleReference": "Leviticus 17:11",
+      "answers": [
+        {
+          "text": "In the blood",
+          "isCorrect": true
+        },
+        {
+          "text": "In the heart",
+          "isCorrect": false
+        },
+        {
+          "text": "In the breath",
+          "isCorrect": false
+        },
+        {
+          "text": "In the bones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For what purpose has Yahweh given the blood on the altar?",
+      "explanation": "He has given it on the altar to make atonement for their souls.",
+      "bibleReference": "Leviticus 17:11",
+      "answers": [
+        {
+          "text": "To feed the priests and their families",
+          "isCorrect": false
+        },
+        {
+          "text": "To make atonement for their souls",
+          "isCorrect": true
+        },
+        {
+          "text": "To mark the borders of the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "To heal the sick among the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must a hunter do with the blood of an animal or bird that may be eaten?",
+      "explanation": "He shall pour out its blood and cover it with dust.",
+      "bibleReference": "Leviticus 17:13",
+      "answers": [
+        {
+          "text": "Bring it to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Drink it on the day of the hunt",
+          "isCorrect": false
+        },
+        {
+          "text": "Mix it with oil for the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Pour it out and cover it with dust",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What must someone do after eating an animal that died of itself or was torn by animals?",
+      "explanation": "He shall wash his clothes, bathe himself in water, and be unclean until the evening; then he shall be clean.",
+      "bibleReference": "Leviticus 17:15",
+      "answers": [
+        {
+          "text": "Offer a ram as a trespass offering to Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "Fast and pray alone for seven full days",
+          "isCorrect": false
+        },
+        {
+          "text": "Wash his clothes, bathe, and be unclean until evening",
+          "isCorrect": true
+        },
+        {
+          "text": "Leave the camp and live outside for a month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens if he does not wash his clothes or bathe?",
+      "explanation": "If he doesn't wash them or bathe his flesh, then he shall bear his iniquity.",
+      "bibleReference": "Leviticus 17:16",
+      "answers": [
+        {
+          "text": "He must pay a fine",
+          "isCorrect": false
+        },
+        {
+          "text": "He shall bear his iniquity",
+          "isCorrect": true
+        },
+        {
+          "text": "He is stoned outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "His food becomes holy",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 3",
+  "description": "Ten questions on Luke 3: the word of God coming to John in the wilderness, his preaching and instructions, and the baptism of Jesus.",
+  "slug": "luke-bible-quiz-part-3",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "In the fifteenth year of whose reign does this chapter begin?",
+      "explanation": "It begins in the fifteenth year of the reign of Tiberius Caesar, when Pontius Pilate was governor of Judea.",
+      "bibleReference": "Luke 3:1",
+      "answers": [
+        {
+          "text": "Herod the tetrarch",
+          "isCorrect": false
+        },
+        {
+          "text": "Pontius Pilate",
+          "isCorrect": false
+        },
+        {
+          "text": "Caesar Augustus",
+          "isCorrect": false
+        },
+        {
+          "text": "Tiberius Caesar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom did the word of God come in the wilderness, and whose son was he?",
+      "explanation": "The word of God came to John, the son of Zacharias, in the wilderness.",
+      "bibleReference": "Luke 3:2",
+      "answers": [
+        {
+          "text": "To Annas, the son of Caiaphas",
+          "isCorrect": false
+        },
+        {
+          "text": "To John, the son of Zacharias",
+          "isCorrect": true
+        },
+        {
+          "text": "To Philip, the brother of Herod",
+          "isCorrect": false
+        },
+        {
+          "text": "To Lysanias of Abilene",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which prophet's book is the saying written that is quoted about the voice crying in the wilderness?",
+      "explanation": "It is written in the book of the words of Isaiah the prophet: \"The voice of one crying in the wilderness, 'Make ready the way of the Lord.'\"",
+      "bibleReference": "Luke 3:4",
+      "answers": [
+        {
+          "text": "Isaiah",
+          "isCorrect": true
+        },
+        {
+          "text": "Daniel",
+          "isCorrect": false
+        },
+        {
+          "text": "Elijah",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did John call the multitudes who went out to be baptized by him?",
+      "explanation": "He said to them, \"You offspring of vipers, who warned you to flee from the wrath to come?\"",
+      "bibleReference": "Luke 3:7",
+      "answers": [
+        {
+          "text": "Children of Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "A faithful people",
+          "isCorrect": false
+        },
+        {
+          "text": "Offspring of vipers",
+          "isCorrect": true
+        },
+        {
+          "text": "Trees of the field",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did John answer the multitudes who asked what they must do?",
+      "explanation": "He answered that he who has two coats should give to him who has none, and he who has food should do likewise.",
+      "bibleReference": "Luke 3:10-11",
+      "answers": [
+        {
+          "text": "That they should go up to Jerusalem to the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "That they should fast and pray in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "That they should wait for the Christ to come",
+          "isCorrect": false
+        },
+        {
+          "text": "That whoever has two coats should give to him who has none",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did John tell the tax collectors to do?",
+      "explanation": "He said to them, \"Collect no more than that which is appointed to you.\"",
+      "bibleReference": "Luke 3:12-13",
+      "answers": [
+        {
+          "text": "To give back everything they had taken",
+          "isCorrect": false
+        },
+        {
+          "text": "To collect no more than what is appointed to them",
+          "isCorrect": true
+        },
+        {
+          "text": "To leave the tax office",
+          "isCorrect": false
+        },
+        {
+          "text": "To pay the temple a double share",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did John tell the soldiers who asked what they must do?",
+      "explanation": "He said to them to extort from no one by violence, neither accuse anyone wrongfully, and to be content with their wages.",
+      "bibleReference": "Luke 3:14",
+      "answers": [
+        {
+          "text": "To extort from no one and be content with their wages",
+          "isCorrect": true
+        },
+        {
+          "text": "To lay down their weapons and leave the army",
+          "isCorrect": false
+        },
+        {
+          "text": "To leave the service of Herod the tetrarch",
+          "isCorrect": false
+        },
+        {
+          "text": "To give half of their wages to the poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what did John say the one mightier than he would baptize?",
+      "explanation": "He said he baptizes with water, but the one who comes who is mightier than he will baptize in the Holy Spirit and fire.",
+      "bibleReference": "Luke 3:16",
+      "answers": [
+        {
+          "text": "With water only",
+          "isCorrect": false
+        },
+        {
+          "text": "With water from the Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "In the Holy Spirit and fire",
+          "isCorrect": true
+        },
+        {
+          "text": "With oil and water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Herod the tetrarch do to John after being reproved by him?",
+      "explanation": "Herod, being reproved by John for Herodias, his brother's wife, and for all the evil things he had done, added this also: he shut up John in prison.",
+      "bibleReference": "Luke 3:19-20",
+      "answers": [
+        {
+          "text": "He sent him away to the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "He let him preach freely",
+          "isCorrect": false
+        },
+        {
+          "text": "He came to be baptized by him",
+          "isCorrect": false
+        },
+        {
+          "text": "He shut him up in prison",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the voice out of the sky say when Jesus had been baptized and was praying?",
+      "explanation": "The Holy Spirit descended in a bodily form like a dove on him, and a voice came out of the sky, saying, \"You are my beloved Son. In you I am well pleased.\"",
+      "bibleReference": "Luke 3:21-22",
+      "answers": [
+        {
+          "text": "\"This is the prophet Isaiah foretold\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are my beloved Son. In you I am well pleased\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"This is the prophet of the Most High\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Repent, for the wrath is coming\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

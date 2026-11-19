@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 20",
+  "description": "Ten questions on John 20: the empty tomb, Mary at the garden, and the risen Jesus with his disciples and with Thomas.",
+  "slug": "john-bible-quiz-part-20",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who went to the tomb early on the first day of the week, while it was still dark?",
+      "explanation": "John 20:1 says Mary Magdalene went early to the tomb while it was still dark and saw the stone taken away.",
+      "bibleReference": "John 20:1",
+      "answers": [
+        {
+          "text": "Mary Magdalene",
+          "isCorrect": true
+        },
+        {
+          "text": "Simon Peter",
+          "isCorrect": false
+        },
+        {
+          "text": "Thomas called Didymus",
+          "isCorrect": false
+        },
+        {
+          "text": "Two angels in white",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did she tell Simon Peter and the other disciple?",
+      "explanation": "She said that they had taken away the Lord out of the tomb and that she did not know where they had laid him.",
+      "bibleReference": "John 20:2",
+      "answers": [
+        {
+          "text": "That the tomb was still sealed",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Lord had been taken out of the tomb",
+          "isCorrect": true
+        },
+        {
+          "text": "That the guards had run away",
+          "isCorrect": false
+        },
+        {
+          "text": "That she had spoken with the Lord",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of the two running disciples reached the tomb first?",
+      "explanation": "They both ran together, but the other disciple outran Peter and came to the tomb first.",
+      "bibleReference": "John 20:4",
+      "answers": [
+        {
+          "text": "They arrived at the same moment",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon Peter",
+          "isCorrect": false
+        },
+        {
+          "text": "The other disciple",
+          "isCorrect": true
+        },
+        {
+          "text": "Neither of them reached it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the cloth that had been on Jesus' head?",
+      "explanation": "The cloth from his head was not lying with the linen cloths, but rolled up in a place by itself.",
+      "bibleReference": "John 20:6-7",
+      "answers": [
+        {
+          "text": "Lying under the linen cloths",
+          "isCorrect": false
+        },
+        {
+          "text": "Folded at the door of the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "Taken away with the body",
+          "isCorrect": false
+        },
+        {
+          "text": "Rolled up in a place by itself",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Mary see when she stooped and looked into the tomb?",
+      "explanation": "She saw two angels in white sitting, one at the head and one at the feet, where the body of Jesus had lain.",
+      "bibleReference": "John 20:11-12",
+      "answers": [
+        {
+          "text": "The linen cloths alone",
+          "isCorrect": false
+        },
+        {
+          "text": "Two angels in white sitting",
+          "isCorrect": true
+        },
+        {
+          "text": "A young man with the guards",
+          "isCorrect": false
+        },
+        {
+          "text": "The stone rolled back inside",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who did Mary suppose the man standing there to be?",
+      "explanation": "She did not know that it was Jesus and supposed him to be the gardener, so she asked where he had laid the body.",
+      "bibleReference": "John 20:14-15",
+      "answers": [
+        {
+          "text": "The gardener",
+          "isCorrect": true
+        },
+        {
+          "text": "One of the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "A soldier of the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon Peter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when he stood among the disciples behind locked doors?",
+      "explanation": "On that first day of the week, with the doors locked, Jesus came, stood in the middle and said, \"Peace be to you.\"",
+      "bibleReference": "John 20:19",
+      "answers": [
+        {
+          "text": "\"Do not be afraid of the Jews.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Why do you stand looking at me?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Rise and follow me.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Peace be to you.\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Thomas say he needed before he would believe?",
+      "explanation": "Thomas said he would not believe unless he saw and touched the print of the nails and put his hand into Jesus' side.",
+      "bibleReference": "John 20:25",
+      "answers": [
+        {
+          "text": "To hear it from the angels",
+          "isCorrect": false
+        },
+        {
+          "text": "To see the empty tomb himself",
+          "isCorrect": false
+        },
+        {
+          "text": "To touch the nail prints and his side",
+          "isCorrect": true
+        },
+        {
+          "text": "To watch Jesus eat with them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Thomas answer when Jesus told him to reach out his hand?",
+      "explanation": "Thomas answered him, \"My Lord and my God!\"",
+      "bibleReference": "John 20:27-28",
+      "answers": [
+        {
+          "text": "\"My Lord and my God!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Teacher, now I believe.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I have seen the Lord!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Blessed are those who believe.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does the writer say these things were written?",
+      "explanation": "They were written so that readers may believe that Jesus is the Christ, the Son of God, and have life in his name.",
+      "bibleReference": "John 20:31",
+      "answers": [
+        {
+          "text": "So that the signs would not be forgotten",
+          "isCorrect": false
+        },
+        {
+          "text": "So that readers may believe and have life in his name",
+          "isCorrect": true
+        },
+        {
+          "text": "So that the disciples could remember his words",
+          "isCorrect": false
+        },
+        {
+          "text": "So that the Scripture might be fulfilled",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

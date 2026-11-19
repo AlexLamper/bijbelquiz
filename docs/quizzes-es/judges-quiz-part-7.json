@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Jueces 7: la prueba junto a las aguas, los trescientos hombres y la derrota del campo de Madián.",
+  "slug": "judges-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Junto a qué fuente asentaron el campo Jerobaal, que es Gedeón, y todo el pueblo que estaba con él?",
+      "explanation": "El texto dice que asentaron el campo junto a la fuente de Harod, y el campo de los Madianitas estaba al norte.",
+      "bibleReference": "Jueces 7:1",
+      "answers": [
+        {
+          "text": "Junto a la fuente de Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la fuente de Harod",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al arroyo de Jaboc",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a las aguas de Beth-bara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dijo Jehová que el pueblo que estaba con Gedeón era demasiado?",
+      "explanation": "Jehová dijo que era mucho para que él diera a los Madianitas en su mano, para que Israel no se alabara diciendo: Mi mano me ha salvado.",
+      "bibleReference": "Jueces 7:2",
+      "answers": [
+        {
+          "text": "Porque no había comida para tantos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el valle era estrecho",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que Israel no se alabara contra Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque los Madianitas eran pocos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos del pueblo se volvieron cuando se pregonó que el que temía madrugase y se volviese?",
+      "explanation": "El texto dice que se volvieron veintidós mil del pueblo, y quedaron diez mil.",
+      "bibleReference": "Jueces 7:3",
+      "answers": [
+        {
+          "text": "Veintidós mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo bebieron los trescientos hombres que fueron apartados junto a las aguas?",
+      "explanation": "Fueron trescientos los que lamieron las aguas llegándola con la mano a la boca; todo el resto se dobló sobre sus rodillas.",
+      "bibleReference": "Jueces 7:6",
+      "answers": [
+        {
+          "text": "Se doblaron sobre sus rodillas para beber",
+          "isCorrect": false
+        },
+        {
+          "text": "Bebieron tendidos en la ribera del valle",
+          "isCorrect": false
+        },
+        {
+          "text": "No bebieron nada de aquellas aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Lamieron el agua llevándola con la mano",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes retuvo Gedeón cuando envió a los israelitas cada uno a su tienda?",
+      "explanation": "Gedeón envió a todos los israelitas a sus tiendas y retuvo a aquellos trescientos hombres.",
+      "bibleReference": "Jueces 7:8",
+      "answers": [
+        {
+          "text": "A diez mil hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de Succoth",
+          "isCorrect": false
+        },
+        {
+          "text": "A los trescientos hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "A los mensajeros de Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué soñó el hombre del campo que rodaba hasta las tiendas de Madián y las trastornaba?",
+      "explanation": "El hombre contaba a su compañero que veía un pan de cebada que rodaba hasta el campo de Madián y hería las tiendas, de modo que caían.",
+      "bibleReference": "Jueces 7:13",
+      "answers": [
+        {
+          "text": "Un pan de cebada",
+          "isCorrect": true
+        },
+        {
+          "text": "Una rueda de molino",
+          "isCorrect": false
+        },
+        {
+          "text": "Una piedra del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cántaro vacío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio Gedeón a cada uno de los hombres de los tres escuadrones?",
+      "explanation": "Gedeón repartió los trescientos hombres en tres escuadrones y dio a cada uno bocinas y cántaros vacíos con teas ardiendo dentro.",
+      "bibleReference": "Jueces 7:16",
+      "answers": [
+        {
+          "text": "Espadas y escudos de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Teas y zorras atadas por las colas",
+          "isCorrect": false
+        },
+        {
+          "text": "Panes sin levadura y odres de vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Bocinas y cántaros con teas ardiendo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según las instrucciones de Gedeón, ¿qué debían decir al tocar las bocinas alrededor del campo?",
+      "explanation": "Gedeón les dijo que tocarían las bocinas alrededor de todo el campo y dirían: ¡Por Jehová y Gedeón!",
+      "bibleReference": "Jueces 7:18",
+      "answers": [
+        {
+          "text": "¡Jehová es contigo, varón esforzado!",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Por Jehová y Gedeón!",
+          "isCorrect": true
+        },
+        {
+          "text": "¡Paz a ti, no morirás!",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Pleitee Baal contra el que derribó su altar!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová en todo el campo mientras los trescientos tocaban las bocinas?",
+      "explanation": "El texto dice que Jehová puso la espada de cada uno contra su compañero en todo el campo, y el ejército huyó.",
+      "bibleReference": "Jueces 7:22",
+      "answers": [
+        {
+          "text": "Puso la espada de cada uno contra su compañero",
+          "isCorrect": true
+        },
+        {
+          "text": "Envió fuego del cielo sobre las tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hizo temblar la tierra bajo el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerró las aguas del Jordán delante de ellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaban los dos príncipes de los Madianitas que fueron tomados?",
+      "explanation": "Tomaron dos príncipes de los Madianitas, Oreb y Zeeb, y llevaron sus cabezas a Gedeón.",
+      "bibleReference": "Jueces 7:25",
+      "answers": [
+        {
+          "text": "Zeba y Zalmunna",
+          "isCorrect": false
+        },
+        {
+          "text": "Oreb y Zeeb",
+          "isCorrect": true
+        },
+        {
+          "text": "Gaal y Zebul",
+          "isCorrect": false
+        },
+        {
+          "text": "Joas y Abiezer",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

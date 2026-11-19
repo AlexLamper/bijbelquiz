@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 27",
+  "description": "Ten questions on Matthew 27: Jesus before Pilate, the end of Judas, Barabbas released, the crucifixion, and the new tomb.",
+  "slug": "matthew-bible-quiz-part-27",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "To whom did the chief priests and elders deliver Jesus up, bound?",
+      "explanation": "They bound him, led him away, and delivered him up to Pontius Pilate, the governor.",
+      "bibleReference": "Matthew 27:1-2",
+      "answers": [
+        {
+          "text": "Pontius Pilate, the governor",
+          "isCorrect": true
+        },
+        {
+          "text": "Caiaphas, the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The whole council of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "The centurion and his soldiers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Judas do with the thirty pieces of silver?",
+      "explanation": "Feeling remorse, he brought the silver back and said he had betrayed innocent blood; then he threw down the pieces of silver in the sanctuary, departed, and hanged himself.",
+      "bibleReference": "Matthew 27:3-5",
+      "answers": [
+        {
+          "text": "He buried them in the potter's field",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave them away to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "He threw them down in the sanctuary",
+          "isCorrect": true
+        },
+        {
+          "text": "He kept them and fled from the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the field bought with those pieces of silver called?",
+      "explanation": "The chief priests bought the potter's field with the silver, to bury strangers in, and therefore that field was called The Field of Blood.",
+      "bibleReference": "Matthew 27:7-8",
+      "answers": [
+        {
+          "text": "The Field of Jeremiah",
+          "isCorrect": false
+        },
+        {
+          "text": "The Field of Blood",
+          "isCorrect": true
+        },
+        {
+          "text": "The Field of Strangers",
+          "isCorrect": false
+        },
+        {
+          "text": "The Field of Silver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which prisoner did the multitudes ask Pilate to release?",
+      "explanation": "The chief priests and elders persuaded the multitudes to ask for Barabbas, and when the governor asked which of the two he should release, they said Barabbas.",
+      "bibleReference": "Matthew 27:20-21",
+      "answers": [
+        {
+          "text": "Simon of Cyrene",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the two robbers",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus, who is called Christ",
+          "isCorrect": false
+        },
+        {
+          "text": "Barabbas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Pilate do before the multitude when he saw that nothing was being gained?",
+      "explanation": "He took water and washed his hands before the multitude, saying that he was innocent of the blood of this righteous person.",
+      "bibleReference": "Matthew 27:24",
+      "answers": [
+        {
+          "text": "He left the judgment seat at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He called for more witnesses to come",
+          "isCorrect": false
+        },
+        {
+          "text": "He washed his hands before the multitude",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent word to his wife about it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the governor's soldiers put on Jesus in the Praetorium?",
+      "explanation": "They stripped him and put a scarlet robe on him, braided a crown of thorns for his head, and put a reed in his right hand.",
+      "bibleReference": "Matthew 27:28-29",
+      "answers": [
+        {
+          "text": "A scarlet robe and a crown of thorns",
+          "isCorrect": true
+        },
+        {
+          "text": "A white garment and a wooden staff",
+          "isCorrect": false
+        },
+        {
+          "text": "The clothes of a soldier of the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "A linen cloth and a sealed stone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did they compel to carry his cross?",
+      "explanation": "As they came out they found a man of Cyrene, Simon by name, and compelled him to go with them to carry his cross.",
+      "bibleReference": "Matthew 27:32",
+      "answers": [
+        {
+          "text": "One of the two robbers",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon, a man of Cyrene",
+          "isCorrect": true
+        },
+        {
+          "text": "A servant of the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph from Arimathaea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened from the sixth hour until the ninth hour?",
+      "explanation": "From the sixth hour there was darkness over all the land until the ninth hour.",
+      "bibleReference": "Matthew 27:45",
+      "answers": [
+        {
+          "text": "The soldiers divided his clothing",
+          "isCorrect": false
+        },
+        {
+          "text": "A great wind rose over the land",
+          "isCorrect": false
+        },
+        {
+          "text": "The multitudes went away silent",
+          "isCorrect": false
+        },
+        {
+          "text": "There was darkness over all the land",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened to the veil of the temple when Jesus yielded up his spirit?",
+      "explanation": "The veil of the temple was torn in two from the top to the bottom, the earth quaked, and the rocks were split.",
+      "bibleReference": "Matthew 27:50-51",
+      "answers": [
+        {
+          "text": "It was torn in two from the top to the bottom",
+          "isCorrect": true
+        },
+        {
+          "text": "It was taken away by the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "It was burned in the fire of the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "It was covered with the scarlet robe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who asked Pilate for the body of Jesus and laid it in his own new tomb?",
+      "explanation": "Joseph, a rich man from Arimathaea who was also Jesus' disciple, asked Pilate for the body, wrapped it in a clean linen cloth, and laid it in his own new tomb cut out in the rock.",
+      "bibleReference": "Matthew 27:57-60",
+      "answers": [
+        {
+          "text": "The centurion who watched him",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph, a rich man from Arimathaea",
+          "isCorrect": true
+        },
+        {
+          "text": "Simon of Cyrene",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the chief priests",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

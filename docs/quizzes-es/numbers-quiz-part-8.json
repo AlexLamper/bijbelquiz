@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Números 8: las siete lámparas del candelero, la purificación de los levitas y los años de su servicio.",
+  "slug": "numbers-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántas lámparas debía encender Aarón para que alumbraran frente al candelero?",
+      "explanation": "Jehová manda a Aarón que, al encender las lámparas, las siete lámparas alumbren frente a frente del candelero.",
+      "bibleReference": "Números 8:2",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo era la hechura del candelero?",
+      "explanation": "El candelero era de oro labrado a martillo, desde su pie hasta sus flores, conforme al modelo que Jehová mostró a Moisés.",
+      "bibleReference": "Números 8:4",
+      "answers": [
+        {
+          "text": "De plata labrada a martillo",
+          "isCorrect": false
+        },
+        {
+          "text": "De oro labrado a martillo",
+          "isCorrect": true
+        },
+        {
+          "text": "De madera cubierta de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De bronce fundido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué agua se rociaba sobre los levitas para expiarlos?",
+      "explanation": "Para expiar a los levitas se rociaba sobre ellos el agua de la expiación, se pasaba la navaja sobre toda su carne y lavaban sus vestidos.",
+      "bibleReference": "Números 8:7",
+      "answers": [
+        {
+          "text": "Las aguas amargas",
+          "isCorrect": false
+        },
+        {
+          "text": "El agua de la roca",
+          "isCorrect": false
+        },
+        {
+          "text": "El agua de la expiación",
+          "isCorrect": true
+        },
+        {
+          "text": "El agua del Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacían los hijos de Israel cuando los levitas eran presentados delante de Jehová?",
+      "explanation": "Cuando los levitas eran llevados delante de Jehová, los hijos de Israel ponían sus manos sobre ellos.",
+      "bibleReference": "Números 8:10",
+      "answers": [
+        {
+          "text": "Les daban la décima de sus frutos",
+          "isCorrect": false
+        },
+        {
+          "text": "Les lavaban los pies con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ungían con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Ponían sus manos sobre los levitas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué ponían los levitas sus manos?",
+      "explanation": "Los levitas ponían sus manos sobre las cabezas de los novillos, y uno se ofrecía por expiación y el otro en holocausto.",
+      "bibleReference": "Números 8:12",
+      "answers": [
+        {
+          "text": "Sobre el arca del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las cabezas de los novillos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre el altar de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las cabezas de dos carneros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En lugar de quiénes tomó Jehová a los levitas?",
+      "explanation": "Jehová dice que ha tomado a los levitas en lugar de todos los primogénitos de los hijos de Israel.",
+      "bibleReference": "Números 8:18",
+      "answers": [
+        {
+          "text": "De los primogénitos de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "De los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "De los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "De los extranjeros que moraban con ellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde cuándo eran de Jehová los primogénitos de Israel?",
+      "explanation": "Jehová dice que todo primogénito en Israel es suyo y que los santificó para sí desde el día que hirió a todo primogénito en la tierra de Egipto.",
+      "bibleReference": "Números 8:17",
+      "answers": [
+        {
+          "text": "Desde el día que levantó el tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el monte Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la primera pascua en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el día que hirió a todo primogénito en Egipto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién dio Jehová los levitas en don?",
+      "explanation": "Jehová dio en don los levitas a Aarón y a sus hijos, para que sirvieran el ministerio de los hijos de Israel en el tabernáculo del testimonio.",
+      "bibleReference": "Números 8:19",
+      "answers": [
+        {
+          "text": "A Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aarón y a sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "A toda la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde qué edad entraban los levitas a hacer su oficio?",
+      "explanation": "De veinte y cinco años arriba entraban los levitas a hacer su oficio en el servicio del tabernáculo del testimonio.",
+      "bibleReference": "Números 8:24",
+      "answers": [
+        {
+          "text": "De veinte años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De treinta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De veinte y cinco años arriba",
+          "isCorrect": true
+        },
+        {
+          "text": "De cuarenta años arriba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacían los levitas desde los cincuenta años?",
+      "explanation": "Desde los cincuenta años dejaban el oficio de su ministerio, pero servían con sus hermanos en el tabernáculo para hacer la guarda.",
+      "bibleReference": "Números 8:25-26",
+      "answers": [
+        {
+          "text": "Dejaban el ministerio y hacían la guarda",
+          "isCorrect": true
+        },
+        {
+          "text": "Seguían sirviendo hasta los sesenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Eran echados fuera del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvían a ser contados de nuevo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 19",
+  "description": "Ten questions on Luke 19: Zacchaeus in the sycamore tree, the parable of the ten minas, and the entry towards Jerusalem.",
+  "slug": "luke-bible-quiz-part-19",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Why did Zacchaeus climb up into a sycamore tree?",
+      "explanation": "He was trying to see who Jesus was and could not because of the crowd, since he was short, so he ran ahead and climbed a sycamore tree.",
+      "bibleReference": "Luke 19:3-4",
+      "answers": [
+        {
+          "text": "Because the crowd had driven him away",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he was hiding from the tax collectors",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Jesus had told him to wait there",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he was short and could not see over the crowd",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Zacchaeus promise to do for the poor and for anyone he had wronged?",
+      "explanation": "Zacchaeus said he would give half of his goods to the poor, and restore four times as much to anyone from whom he had wrongfully exacted anything.",
+      "bibleReference": "Luke 19:8",
+      "answers": [
+        {
+          "text": "Give all his goods away and follow him",
+          "isCorrect": false
+        },
+        {
+          "text": "Give half his goods away and restore four times as much",
+          "isCorrect": true
+        },
+        {
+          "text": "Pay back a tenth of all that he had taken",
+          "isCorrect": false
+        },
+        {
+          "text": "Give two denarii to each poor man in Jericho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many servants did the nobleman call, and what did he give them?",
+      "explanation": "He called ten servants of his and gave them ten mina coins, telling them to conduct business until he came.",
+      "bibleReference": "Luke 19:13",
+      "answers": [
+        {
+          "text": "Twelve servants, with twelve baskets",
+          "isCorrect": false
+        },
+        {
+          "text": "Three servants, with a hundred denarii",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten servants, with ten mina coins",
+          "isCorrect": true
+        },
+        {
+          "text": "Two servants, with two denarii",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the nobleman give the servant whose mina had made ten more?",
+      "explanation": "He called him a good servant and said that, because he was found faithful with very little, he would have authority over ten cities.",
+      "bibleReference": "Luke 19:17",
+      "answers": [
+        {
+          "text": "Authority over ten cities",
+          "isCorrect": true
+        },
+        {
+          "text": "Authority over five cities",
+          "isCorrect": false
+        },
+        {
+          "text": "A seat at his table",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten more mina coins to invest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Another servant brought his mina back - where had he kept it?",
+      "explanation": "That servant said he had kept the mina laid away in a handkerchief, because he feared his lord.",
+      "bibleReference": "Luke 19:20",
+      "answers": [
+        {
+          "text": "Buried in the ground",
+          "isCorrect": false
+        },
+        {
+          "text": "Deposited in the bank",
+          "isCorrect": false
+        },
+        {
+          "text": "Hidden in his lord's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Laid away in a handkerchief",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did he say the disciples would find in the village?",
+      "explanation": "He said they would find a colt tied, which no man had ever sat upon, and they were to untie it and bring it.",
+      "bibleReference": "Luke 19:30",
+      "answers": [
+        {
+          "text": "A colt tied, which no man had ever sat upon",
+          "isCorrect": true
+        },
+        {
+          "text": "An ox and a donkey in a stall",
+          "isCorrect": false
+        },
+        {
+          "text": "A house prepared for him",
+          "isCorrect": false
+        },
+        {
+          "text": "Two men who would guide them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people do with their cloaks as he went?",
+      "explanation": "They threw their cloaks on the colt, and as he went they spread their cloaks on the road.",
+      "bibleReference": "Luke 19:35-36",
+      "answers": [
+        {
+          "text": "They waved them in the air",
+          "isCorrect": false
+        },
+        {
+          "text": "They spread them on the road",
+          "isCorrect": true
+        },
+        {
+          "text": "They tore them in grief",
+          "isCorrect": false
+        },
+        {
+          "text": "They laid them at the temple gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he answer the Pharisees who told him to rebuke his disciples?",
+      "explanation": "He answered that if these were silent, the stones would cry out.",
+      "bibleReference": "Luke 19:39-40",
+      "answers": [
+        {
+          "text": "That the disciples knew what they were saying",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Pharisees should praise God too",
+          "isCorrect": false
+        },
+        {
+          "text": "That the stones would cry out if they were silent",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would rebuke them in Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he do when he came near and saw the city?",
+      "explanation": "When he came near, he saw the city and wept over it, saying that the things which belong to its peace were now hidden from its eyes.",
+      "bibleReference": "Luke 19:41-42",
+      "answers": [
+        {
+          "text": "He wept over it",
+          "isCorrect": true
+        },
+        {
+          "text": "He blessed it from the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "He turned back to Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent two disciples into it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he say the temple had been made into?",
+      "explanation": "He drove out those who bought and sold, saying that it is written, \"My house is a house of prayer,\" but they had made it a \"den of robbers\".",
+      "bibleReference": "Luke 19:45-46",
+      "answers": [
+        {
+          "text": "A marketplace of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "A house of mourning",
+          "isCorrect": false
+        },
+        {
+          "text": "A place of hidden graves",
+          "isCorrect": false
+        },
+        {
+          "text": "A den of robbers",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

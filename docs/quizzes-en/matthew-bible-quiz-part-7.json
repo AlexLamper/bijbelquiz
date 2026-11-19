@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 7",
+  "description": "Ten questions on Matthew 7: judging others, asking and receiving, the narrow gate, false prophets and the house on the rock.",
+  "slug": "matthew-bible-quiz-part-7",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How does Jesus say you will be judged?",
+      "explanation": "With whatever judgment you judge, you will be judged, and with whatever measure you measure, it will be measured to you.",
+      "bibleReference": "Matthew 7:2",
+      "answers": [
+        {
+          "text": "With the judgment of the scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "Without any judgment at all",
+          "isCorrect": false
+        },
+        {
+          "text": "With the same judgment you use to judge",
+          "isCorrect": true
+        },
+        {
+          "text": "By the measure of the law of Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must you first remove from your own eye?",
+      "explanation": "Jesus says to first remove the beam out of your own eye, and then you can see clearly to remove the speck from your brother's eye.",
+      "bibleReference": "Matthew 7:5",
+      "answers": [
+        {
+          "text": "The beam",
+          "isCorrect": true
+        },
+        {
+          "text": "The speck",
+          "isCorrect": false
+        },
+        {
+          "text": "The thorn",
+          "isCorrect": false
+        },
+        {
+          "text": "The dust",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say not to throw before the pigs?",
+      "explanation": "He says not to give what is holy to the dogs, and not to throw your pearls before the pigs.",
+      "bibleReference": "Matthew 7:6",
+      "answers": [
+        {
+          "text": "Your bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Your coat",
+          "isCorrect": false
+        },
+        {
+          "text": "Your lamp",
+          "isCorrect": false
+        },
+        {
+          "text": "Your pearls",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happens to the one who knocks?",
+      "explanation": "Ask and it will be given you, seek and you will find, knock and it will be opened for you.",
+      "bibleReference": "Matthew 7:7",
+      "answers": [
+        {
+          "text": "He will be sent away",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be opened for him",
+          "isCorrect": true
+        },
+        {
+          "text": "He will be given a stone",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be handed a serpent",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say about the way that leads to life?",
+      "explanation": "He says the gate is narrow and the way that leads to life is restricted, and few are those who find it.",
+      "bibleReference": "Matthew 7:14",
+      "answers": [
+        {
+          "text": "It is wide, and many enter it",
+          "isCorrect": false
+        },
+        {
+          "text": "It is hidden, and no one finds it",
+          "isCorrect": false
+        },
+        {
+          "text": "It is narrow, and few find it",
+          "isCorrect": true
+        },
+        {
+          "text": "It is smooth, and all may walk it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By what will they know the false prophets?",
+      "explanation": "Jesus says that by their fruits you will know them, and asks whether grapes are gathered from thorns.",
+      "bibleReference": "Matthew 7:16",
+      "answers": [
+        {
+          "text": "By their fruits",
+          "isCorrect": true
+        },
+        {
+          "text": "By their clothing",
+          "isCorrect": false
+        },
+        {
+          "text": "By their words in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "By the gifts they ask for",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say a good tree cannot do?",
+      "explanation": "A good tree can't produce evil fruit, and a corrupt tree can't produce good fruit.",
+      "bibleReference": "Matthew 7:18",
+      "answers": [
+        {
+          "text": "Grow in thorny ground",
+          "isCorrect": false
+        },
+        {
+          "text": "Be cut down and burned",
+          "isCorrect": false
+        },
+        {
+          "text": "Produce good fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "Produce evil fruit",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who will enter the Kingdom of Heaven, according to Matthew 7:21?",
+      "explanation": "Not everyone who says Lord, Lord will enter, but he who does the will of the Father who is in heaven.",
+      "bibleReference": "Matthew 7:21",
+      "answers": [
+        {
+          "text": "Everyone who says 'Lord, Lord'",
+          "isCorrect": false
+        },
+        {
+          "text": "The one who does the will of the Father",
+          "isCorrect": true
+        },
+        {
+          "text": "Everyone who prophesies in his name",
+          "isCorrect": false
+        },
+        {
+          "text": "Everyone who casts out demons in his name",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what did the wise man build his house?",
+      "explanation": "The wise man built his house on a rock, and when the rain, floods and winds beat on it, it did not fall.",
+      "bibleReference": "Matthew 7:24-25",
+      "answers": [
+        {
+          "text": "On the sand",
+          "isCorrect": false
+        },
+        {
+          "text": "On a hill",
+          "isCorrect": false
+        },
+        {
+          "text": "On the beach",
+          "isCorrect": false
+        },
+        {
+          "text": "On a rock",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why were the multitudes astonished at his teaching?",
+      "explanation": "They were astonished because he taught them with authority, and not like the scribes.",
+      "bibleReference": "Matthew 7:28-29",
+      "answers": [
+        {
+          "text": "He taught with authority, not like the scribes",
+          "isCorrect": true
+        },
+        {
+          "text": "He spoke only in parables to them",
+          "isCorrect": false
+        },
+        {
+          "text": "He taught in the temple at Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "He quoted the scribes word for word",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

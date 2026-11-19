@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 22",
+  "description": "Ten questions on Numbers 22: Balak sends for Balaam, and Balaam's donkey sees Yahweh's angel standing in the way.",
+  "slug": "numbers-bible-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Moab say to the elders of Midian that this multitude would do to all that was around them?",
+      "explanation": "Moab said that the multitude would lick up all that was around them, as the ox licks up the grass of the field.",
+      "bibleReference": "Numbers 22:4",
+      "answers": [
+        {
+          "text": "Burn it up like stubble in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "Eat it up like a swarm of locusts",
+          "isCorrect": false
+        },
+        {
+          "text": "Scatter it like chaff before the wind",
+          "isCorrect": false
+        },
+        {
+          "text": "Lick it up as the ox licks up the grass",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did Balak son of Zippor send messengers to, at Pethor by the River?",
+      "explanation": "Balak sent messengers to Balaam the son of Beor, to Pethor, which is by the River, to call him.",
+      "bibleReference": "Numbers 22:4-5",
+      "answers": [
+        {
+          "text": "The elders of Midian",
+          "isCorrect": false
+        },
+        {
+          "text": "Balaam the son of Beor",
+          "isCorrect": true
+        },
+        {
+          "text": "Sihon king of the Amorites",
+          "isCorrect": false
+        },
+        {
+          "text": "Og king of Bashan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did God tell Balaam not to curse the people?",
+      "explanation": "God said to Balaam, \"You shall not curse the people, for they are blessed.\"",
+      "bibleReference": "Numbers 22:12",
+      "answers": [
+        {
+          "text": "Because they are too many to count",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Balak was lying",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they are blessed",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the time had not yet come",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Balaam say he could not do, even for a house full of silver and gold?",
+      "explanation": "Balaam said that even for Balak's house full of silver and gold he could not go beyond the word of Yahweh his God, to do less or more.",
+      "bibleReference": "Numbers 22:18",
+      "answers": [
+        {
+          "text": "Go beyond the word of Yahweh his God",
+          "isCorrect": true
+        },
+        {
+          "text": "Leave his own land by the River",
+          "isCorrect": false
+        },
+        {
+          "text": "Travel through the night to Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Accept gifts from the elders of Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the donkey see standing in the way?",
+      "explanation": "The donkey saw Yahweh's angel standing in the way with his sword drawn in his hand, and turned out of the path into the field.",
+      "bibleReference": "Numbers 22:23",
+      "answers": [
+        {
+          "text": "A lion crouching in the road",
+          "isCorrect": false
+        },
+        {
+          "text": "A band of Israelite soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh's angel with a drawn sword",
+          "isCorrect": true
+        },
+        {
+          "text": "A pillar of fire in the field",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened when the donkey thrust herself against the wall in the narrow path between the vineyards?",
+      "explanation": "The donkey thrust herself to the wall and crushed Balaam's foot against the wall, and he struck her again.",
+      "bibleReference": "Numbers 22:24-25",
+      "answers": [
+        {
+          "text": "The wall fell down on top of them",
+          "isCorrect": false
+        },
+        {
+          "text": "One of Balaam's two servants was hurt",
+          "isCorrect": false
+        },
+        {
+          "text": "She broke her leg and could not walk",
+          "isCorrect": false
+        },
+        {
+          "text": "She crushed Balaam's foot against the wall",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the donkey ask Balaam when Yahweh opened her mouth?",
+      "explanation": "She said, \"What have I done to you, that you have struck me these three times?\"",
+      "bibleReference": "Numbers 22:28",
+      "answers": [
+        {
+          "text": "\"What have I done to you, that you have struck me these three times?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Why do you not see the angel standing before us?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Where are you taking me so early in the morning?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Why do you go with these princes to curse Israel?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Balaam wish he had in his hand when he answered the donkey?",
+      "explanation": "Balaam said, \"Because you have mocked me, I wish there were a sword in my hand, for now I would have killed you.\"",
+      "bibleReference": "Numbers 22:29",
+      "answers": [
+        {
+          "text": "A staff",
+          "isCorrect": false
+        },
+        {
+          "text": "A sword",
+          "isCorrect": true
+        },
+        {
+          "text": "A rope",
+          "isCorrect": false
+        },
+        {
+          "text": "A spear",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh's angel say he would have done if the donkey had not turned away?",
+      "explanation": "The angel said that unless she had turned away, he would surely have killed Balaam and saved her alive.",
+      "bibleReference": "Numbers 22:33",
+      "answers": [
+        {
+          "text": "Taken Balaam back to Pethor",
+          "isCorrect": false
+        },
+        {
+          "text": "Blinded both Balaam and the donkey",
+          "isCorrect": false
+        },
+        {
+          "text": "Killed Balaam and saved the donkey alive",
+          "isCorrect": true
+        },
+        {
+          "text": "Let Balaam go on to curse Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Balak bring Balaam in the morning, so that he saw part of the people?",
+      "explanation": "In the morning Balak took Balaam and brought him up into the high places of Baal, and he saw from there part of the people.",
+      "bibleReference": "Numbers 22:41",
+      "answers": [
+        {
+          "text": "The top of Peor",
+          "isCorrect": false
+        },
+        {
+          "text": "The high places of Baal",
+          "isCorrect": true
+        },
+        {
+          "text": "The field of Zophim",
+          "isCorrect": false
+        },
+        {
+          "text": "The plains of Moab by the Jordan",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

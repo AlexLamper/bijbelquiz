@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Éxodo 13: los primogénitos santificados, la fiesta de los panes sin levadura y la columna de nube y de fuego.",
+  "slug": "exodus-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué mandó Jehová a Moisés que le santificase?",
+      "explanation": "Jehová mandó santificarle todo primogénito, cualquiera que abre matriz entre los hijos de Israel, así de los hombres como de los animales.",
+      "bibleReference": "Éxodo 13:2",
+      "answers": [
+        {
+          "text": "El séptimo día de cada semana",
+          "isCorrect": false
+        },
+        {
+          "text": "El diezmo de la cosecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo primogénito",
+          "isCorrect": true
+        },
+        {
+          "text": "La tienda del campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Moisés que no debían comer, en memoria de aquel día?",
+      "explanation": "Moisés dijo al pueblo que tuviese memoria del día en que salió de Egipto y que por tanto no comiese leudado.",
+      "bibleReference": "Éxodo 13:3",
+      "answers": [
+        {
+          "text": "Leudado",
+          "isCorrect": true
+        },
+        {
+          "text": "Carne de asno",
+          "isCorrect": false
+        },
+        {
+          "text": "Hierbas amargas",
+          "isCorrect": false
+        },
+        {
+          "text": "Frutos de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué mes salían de Egipto?",
+      "explanation": "Moisés les dijo: Vosotros salís hoy en el mes de Abib.",
+      "bibleReference": "Éxodo 13:4",
+      "answers": [
+        {
+          "text": "En el mes de Siván",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes de Abib",
+          "isCorrect": true
+        },
+        {
+          "text": "En el mes de Etánim",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes de Bul",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto la tierra que Jehová juró dar a sus padres?",
+      "explanation": "Es la tierra del Cananeo, del Hetheo, del Amorrheo, del Hebeo y del Jebuseo, tierra que destila leche y miel.",
+      "bibleReference": "Éxodo 13:5",
+      "answers": [
+        {
+          "text": "Tierra de montañas y nieve",
+          "isCorrect": false
+        },
+        {
+          "text": "Tierra ancha y vacía",
+          "isCorrect": false
+        },
+        {
+          "text": "Tierra de palmas y fuentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Tierra que destila leche y miel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sería el séptimo día de aquella fiesta?",
+      "explanation": "Siete días comería pan sin leudar, y el séptimo día sería fiesta a Jehová.",
+      "bibleReference": "Éxodo 13:6",
+      "answers": [
+        {
+          "text": "Fiesta a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Día de ayuno",
+          "isCorrect": false
+        },
+        {
+          "text": "Día de ofrendas por el pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "Día de viaje",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué debía redimirse todo primogénito de asno?",
+      "explanation": "Todo primogénito de asno se redimiría con un cordero, y si no se redimía, se le degollaría.",
+      "bibleReference": "Éxodo 13:13",
+      "answers": [
+        {
+          "text": "Con plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un buey",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un cordero",
+          "isCorrect": true
+        },
+        {
+          "text": "Con dos palomas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué camino no llevó Dios al pueblo cuando Faraón lo dejó ir?",
+      "explanation": "Dios no los llevó por el camino de la tierra de los Filisteos, que estaba cerca, para que el pueblo no se arrepintiese al ver la guerra y se volviese a Egipto.",
+      "bibleReference": "Éxodo 13:17",
+      "answers": [
+        {
+          "text": "Por el camino del desierto del mar Bermejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el camino de la tierra de los Filisteos",
+          "isCorrect": true
+        },
+        {
+          "text": "Por el camino de la tierra de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el camino de Succoth y Etham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomó Moisés consigo al salir?",
+      "explanation": "Moisés tomó consigo los huesos de José, que había juramentado a los hijos de Israel que los harían subir de allí.",
+      "bibleReference": "Éxodo 13:19",
+      "answers": [
+        {
+          "text": "La vara de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Las joyas de los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "El libro de la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Los huesos de José",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde asentaron campo después de partir de Succoth?",
+      "explanation": "Partidos de Succoth, asentaron campo en Etham, a la entrada del desierto.",
+      "bibleReference": "Éxodo 13:20",
+      "answers": [
+        {
+          "text": "En Etham",
+          "isCorrect": true
+        },
+        {
+          "text": "En Rephidim",
+          "isCorrect": false
+        },
+        {
+          "text": "En Mara",
+          "isCorrect": false
+        },
+        {
+          "text": "En Elim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo iba Jehová delante de ellos de día y de noche?",
+      "explanation": "Jehová iba delante de ellos de día en una columna de nube para guiarlos, y de noche en una columna de fuego para alumbrarles.",
+      "bibleReference": "Éxodo 13:21",
+      "answers": [
+        {
+          "text": "Siempre en una columna de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "De día en nube y de noche en fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "En la voz de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "En un ángel que se veía al mediodía",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

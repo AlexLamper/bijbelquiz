@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 10",
+  "description": "Ten questions on Mark 10: the question about divorce, the little children, the rich man who went away sorrowful, the request of James and John and blind Bartimaeus.",
+  "slug": "mark-bible-quiz-part-10",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the Pharisees ask Jesus in order to test him?",
+      "explanation": "Pharisees came to him testing him, and asked whether it is lawful for a man to divorce his wife.",
+      "bibleReference": "Mark 10:2",
+      "answers": [
+        {
+          "text": "Whether it is lawful to heal on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether it is lawful for a man to divorce his wife",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether a man should pay the tax",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether the dead will rise again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about what God has joined together?",
+      "explanation": "He said, \"What therefore God has joined together, let no man separate.\"",
+      "bibleReference": "Mark 10:9",
+      "answers": [
+        {
+          "text": "A man may separate it if he wishes",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the husband may separate it",
+          "isCorrect": false
+        },
+        {
+          "text": "It may be separated in the house",
+          "isCorrect": false
+        },
+        {
+          "text": "No man should separate it",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when the disciples rebuked those bringing little children?",
+      "explanation": "He was moved with indignation and said to allow the little children to come to him and not to forbid them, for God's Kingdom belongs to such as these.",
+      "bibleReference": "Mark 10:14",
+      "answers": [
+        {
+          "text": "To bring them back the next day",
+          "isCorrect": false
+        },
+        {
+          "text": "To teach them the commandments first",
+          "isCorrect": false
+        },
+        {
+          "text": "To let the little children come to him",
+          "isCorrect": true
+        },
+        {
+          "text": "To send them away with their mothers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the man who ran to him and knelt down ask?",
+      "explanation": "He asked, \"Good Teacher, what shall I do that I may inherit eternal life?\"",
+      "bibleReference": "Mark 10:17",
+      "answers": [
+        {
+          "text": "What he should do to inherit eternal life",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether he could follow him to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether his sins could be forgiven",
+          "isCorrect": false
+        },
+        {
+          "text": "What the greatest commandment was",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What one thing did Jesus say the man lacked?",
+      "explanation": "Jesus looked at him, loved him, and told him to go, sell whatever he had, give to the poor, and come follow him.",
+      "bibleReference": "Mark 10:21",
+      "answers": [
+        {
+          "text": "To be baptized by John",
+          "isCorrect": false
+        },
+        {
+          "text": "To sell what he had and give to the poor",
+          "isCorrect": true
+        },
+        {
+          "text": "To honor his father and mother",
+          "isCorrect": false
+        },
+        {
+          "text": "To fast and pray for the poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the man go away sorrowful?",
+      "explanation": "His face fell at that saying and he went away sorrowful, for he was one who had great possessions.",
+      "bibleReference": "Mark 10:22",
+      "answers": [
+        {
+          "text": "He had no father or mother",
+          "isCorrect": false
+        },
+        {
+          "text": "He had broken all the commandments",
+          "isCorrect": false
+        },
+        {
+          "text": "He had great possessions",
+          "isCorrect": true
+        },
+        {
+          "text": "He was too old to travel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say is easier than for a rich man to enter God's Kingdom?",
+      "explanation": "He said it is easier for a camel to go through a needle's eye than for a rich man to enter into God's Kingdom.",
+      "bibleReference": "Mark 10:25",
+      "answers": [
+        {
+          "text": "For a camel to go through a needle's eye",
+          "isCorrect": true
+        },
+        {
+          "text": "For a mountain to be cast into the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "For a fig tree to bear fruit in winter",
+          "isCorrect": false
+        },
+        {
+          "text": "For a blind man to see the stars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did James and John ask Jesus to grant them?",
+      "explanation": "They asked to sit, one at his right hand and one at his left hand, in his glory.",
+      "bibleReference": "Mark 10:37",
+      "answers": [
+        {
+          "text": "To be sent out to preach alone",
+          "isCorrect": false
+        },
+        {
+          "text": "To see him change on the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "To be given a place in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To sit at his right and left hand in his glory",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Jesus say the Son of Man came?",
+      "explanation": "He said that the Son of Man came not to be served, but to serve, and to give his life as a ransom for many.",
+      "bibleReference": "Mark 10:45",
+      "answers": [
+        {
+          "text": "To be served by all the nations of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "To serve and to give his life as a ransom for many",
+          "isCorrect": true
+        },
+        {
+          "text": "To judge the rulers of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "To restore the kingdom of his father David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Bartimaeus cry out as Jesus went out from Jericho?",
+      "explanation": "Bartimaeus, the son of Timaeus, a blind beggar sitting by the road, cried out, \"Jesus, you son of David, have mercy on me!\"",
+      "bibleReference": "Mark 10:46-47",
+      "answers": [
+        {
+          "text": "\"Jesus the Nazarene, call me to you!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Teacher, have mercy on your servant!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Jesus, you son of David, have mercy on me!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Son of Mary, heal me, I beg you!\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

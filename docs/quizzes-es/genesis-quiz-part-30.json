@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 30",
+  "description": "Diez preguntas sobre Génesis 30: los hijos que nacieron a Jacob, las mandrágoras de Rubén y el salario que pidió a Labán.",
+  "slug": "genesis-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le decía Rachêl a Jacob al ver que no le daba hijos?",
+      "explanation": "Rachêl tuvo envidia de su hermana y decía á Jacob: Dame hijos, ó si no, me muero.",
+      "bibleReference": "Génesis 30:1",
+      "answers": [
+        {
+          "text": "\"Dame hijos, ó si no, me muero\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Juzgóme Dios, y también oyó mi voz\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Añádame Jehová otro hijo\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Quitado ha Dios mi afrenta\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Jacob cuando Rachêl le pidió hijos?",
+      "explanation": "Jacob se enojaba y decía: ¿Soy yo en lugar de Dios, que te impidió el fruto de tu vientre?",
+      "bibleReference": "Génesis 30:2",
+      "answers": [
+        {
+          "text": "Que tomara a una sierva por mujer",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperara siete años más",
+          "isCorrect": false
+        },
+        {
+          "text": "Que él no estaba en lugar de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Que preguntara a su padre Labán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué llamó Rachêl Dan al hijo que parió Bilha?",
+      "explanation": "Rachêl dijo: Juzgóme Dios, y también oyó mi voz, y dióme un hijo; por tanto llamó su nombre Dan.",
+      "bibleReference": "Génesis 30:6",
+      "answers": [
+        {
+          "text": "Porque dijo que había contendido y vencido",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque dijo que Dios la juzgó y oyó su voz",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque dijo que le vino la ventura",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque dijo que Dios le dio su recompensa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién dio Lea a Jacob por mujer cuando vio que había dejado de parir?",
+      "explanation": "Lea tomó á Zilpa su sierva y la dió á Jacob por mujer.",
+      "bibleReference": "Génesis 30:9",
+      "answers": [
+        {
+          "text": "A Bilha, sierva de Rachêl",
+          "isCorrect": false
+        },
+        {
+          "text": "A una de las hijas del país",
+          "isCorrect": false
+        },
+        {
+          "text": "A una sierva que compró en Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Zilpa, su sierva",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué halló Rubén en el campo en tiempo de la siega de los trigos?",
+      "explanation": "Rubén halló mandrágoras en el campo y las trajo á Lea su madre.",
+      "bibleReference": "Génesis 30:14",
+      "answers": [
+        {
+          "text": "Espigas de trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandrágoras",
+          "isCorrect": true
+        },
+        {
+          "text": "Un pozo de agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Ídolos de madera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Lea al quinto hijo que parió a Jacob?",
+      "explanation": "Lea dijo que Dios le había dado su recompensa por haber dado su sierva á su marido, y llamó su nombre Issachâr.",
+      "bibleReference": "Génesis 30:17-18",
+      "answers": [
+        {
+          "text": "Issachâr",
+          "isCorrect": true
+        },
+        {
+          "text": "Zabulón",
+          "isCorrect": false
+        },
+        {
+          "text": "Nephtalí",
+          "isCorrect": false
+        },
+        {
+          "text": "Aser",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Lea a la hija que parió después?",
+      "explanation": "Después Lea parió una hija y llamó su nombre Dina.",
+      "bibleReference": "Génesis 30:21",
+      "answers": [
+        {
+          "text": "Débora",
+          "isCorrect": false
+        },
+        {
+          "text": "Timna",
+          "isCorrect": false
+        },
+        {
+          "text": "Dina",
+          "isCorrect": true
+        },
+        {
+          "text": "Basemat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Rachêl cuando llamó a su hijo José?",
+      "explanation": "Rachêl llamó su nombre José, diciendo: Añádame Jehová otro hijo.",
+      "bibleReference": "Génesis 30:24",
+      "answers": [
+        {
+          "text": "\"Esta vez alabaré á Jehová\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Dios me ha dado una buena dote\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Para dicha mía; las mujeres me dirán dichosa\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Añádame Jehová otro hijo\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Jacob a Labán como salario?",
+      "explanation": "Jacob dijo que apartaría para sí las reses manchadas y de color vario, y las de color oscuro entre las ovejas.",
+      "bibleReference": "Génesis 30:32",
+      "answers": [
+        {
+          "text": "La mitad de todas las ovejas de Labán",
+          "isCorrect": false
+        },
+        {
+          "text": "Las reses manchadas y las de color oscuro",
+          "isCorrect": true
+        },
+        {
+          "text": "Un rebaño de camellos y de asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "Plata y vestidos por cada año servido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Jacob en los abrevaderos, delante del ganado?",
+      "explanation": "Jacob tomó varas de álamo, de avellano y de castaño, las descortezó y las puso en las pilas delante del ganado.",
+      "bibleReference": "Génesis 30:37-38",
+      "answers": [
+        {
+          "text": "Piedras blancas que trajo del arroyo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pieles de cabritos extendidas al sol",
+          "isCorrect": false
+        },
+        {
+          "text": "Varas descortezadas de álamo, avellano y castaño",
+          "isCorrect": true
+        },
+        {
+          "text": "Los ídolos que había traído de Harán",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

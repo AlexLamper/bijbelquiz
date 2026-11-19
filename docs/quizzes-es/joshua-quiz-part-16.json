@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre Josué 16: la suerte de los hijos de José, el término de Ephraim y el Cananeo que quedó en Gezer.",
+  "slug": "joshua-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Desde dónde salió la suerte de los hijos de José?",
+      "explanation": "La suerte de los hijos de José salió desde el Jordán de Jericó hasta las aguas de Jericó hacia el oriente.",
+      "bibleReference": "Josué 16:1",
+      "answers": [
+        {
+          "text": "Desde el mar Salado hasta Gezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Beth-el hasta el monte Hermón",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el Jordán de Jericó hacia el oriente",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde el arroyo de Cana hasta la mar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué monte subía el desierto desde Jericó?",
+      "explanation": "El texto habla del desierto que sube de Jericó al monte de Beth-el.",
+      "bibleReference": "Josué 16:1",
+      "answers": [
+        {
+          "text": "Al monte de Beth-el",
+          "isCorrect": true
+        },
+        {
+          "text": "Al monte de Gezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de Beth-oron",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de Janoa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué lugar sale el término desde Beth-el?",
+      "explanation": "Desde Beth-el el término sale a Luz y pasa al término de Archi en Ataroth.",
+      "bibleReference": "Josué 16:2",
+      "answers": [
+        {
+          "text": "A Gezer, hacia la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "A Janoa, al oriente",
+          "isCorrect": false
+        },
+        {
+          "text": "A Michmetat, al norte",
+          "isCorrect": false
+        },
+        {
+          "text": "A Luz y al término de Archi",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde descendía el término hacia la mar?",
+      "explanation": "El término descendía hacia la mar, al término de Japhlet, hasta el término de Beth-oron la de abajo y hasta Gezer, y salía a la mar.",
+      "bibleReference": "Josué 16:3",
+      "answers": [
+        {
+          "text": "Hasta Ataroth-addar y Michmetat",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Beth-oron la de abajo y Gezer",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el arroyo de Cana y Tappua",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Jericó y el Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes recibieron heredad como hijos de José?",
+      "explanation": "El texto dice que recibieron heredad los hijos de José, Manasés y Ephraim.",
+      "bibleReference": "Josué 16:4",
+      "answers": [
+        {
+          "text": "Rubén y Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Judá y Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Manasés y Ephraim",
+          "isCorrect": true
+        },
+        {
+          "text": "Leví y Simeón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde hasta dónde iba el término de los hijos de Ephraim a la parte oriental?",
+      "explanation": "El término de su herencia a la parte oriental iba desde Ataroth-addar hasta Beth-oron la de arriba.",
+      "bibleReference": "Josué 16:5",
+      "answers": [
+        {
+          "text": "Desde Luz hasta Gezer, junto a la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Gezer hasta las aguas de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Janoa hasta Naaratha y Ataroth",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Ataroth-addar hasta Beth-oron la de arriba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Desde Michmetat, ¿hacia dónde da vuelta el término?",
+      "explanation": "El término sale a la mar y a Michmetat al norte, y da vuelta hacia el oriente a Tanath-silo.",
+      "bibleReference": "Josué 16:6",
+      "answers": [
+        {
+          "text": "Hacia el occidente, a Gezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacia el oriente, a Tanath-silo",
+          "isCorrect": true
+        },
+        {
+          "text": "Hacia el norte, a Ataroth-addar",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacia el mediodía, al arroyo de Cana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Después de tocar en Jericó, ¿adónde sale el término?",
+      "explanation": "Desde Janoa el término desciende a Ataroth y a Naaratha, toca en Jericó y sale al Jordán.",
+      "bibleReference": "Josué 16:7",
+      "answers": [
+        {
+          "text": "Sale al Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "Sale a la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Sale a Gezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Sale a Beth-oron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué arroyo torna el término desde Tappua hacia la mar?",
+      "explanation": "Desde Tappua el término torna hacia la mar al arroyo de Cana, y sale a la mar.",
+      "bibleReference": "Josué 16:8",
+      "answers": [
+        {
+          "text": "Al arroyo de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Al arroyo de Arnón",
+          "isCorrect": false
+        },
+        {
+          "text": "Al arroyo Jaboc",
+          "isCorrect": false
+        },
+        {
+          "text": "Al arroyo de Cana",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con el Cananeo que habitaba en Gezer?",
+      "explanation": "No echaron al Cananeo que habitaba en Gezer; antes quedó el Cananeo en medio de Ephraim hasta hoy, y fue tributario.",
+      "bibleReference": "Josué 16:10",
+      "answers": [
+        {
+          "text": "Fue echado de la tierra por Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Fue muerto a filo de espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedó en medio de Ephraim y fue tributario",
+          "isCorrect": true
+        },
+        {
+          "text": "Huyó a las ciudades de Manasés",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

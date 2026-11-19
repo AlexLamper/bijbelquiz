@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 3",
+  "description": "Ten questions on Acts 3: the lame man healed at the Beautiful gate and Peter's words to the people in Solomon's porch.",
+  "slug": "acts-bible-quiz-part-3",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "At what hour were Peter and John going up into the temple?",
+      "explanation": "They were going up into the temple at the hour of prayer, the ninth hour.",
+      "bibleReference": "Acts 3:1",
+      "answers": [
+        {
+          "text": "The ninth hour",
+          "isCorrect": true
+        },
+        {
+          "text": "At daybreak",
+          "isCorrect": false
+        },
+        {
+          "text": "The third hour",
+          "isCorrect": false
+        },
+        {
+          "text": "About noon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long had the man at the temple door been lame?",
+      "explanation": "He was a man lame from his mother's womb, who was carried and laid daily at the temple door.",
+      "bibleReference": "Acts 3:2",
+      "answers": [
+        {
+          "text": "For eight years",
+          "isCorrect": false
+        },
+        {
+          "text": "For more than forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "From his mother's womb",
+          "isCorrect": true
+        },
+        {
+          "text": "Since the day before",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the temple door where he was laid called?",
+      "explanation": "He was laid daily at the door of the temple which is called Beautiful, to ask gifts for the needy.",
+      "bibleReference": "Acts 3:2",
+      "answers": [
+        {
+          "text": "Straight",
+          "isCorrect": false
+        },
+        {
+          "text": "Beautiful",
+          "isCorrect": true
+        },
+        {
+          "text": "Solomon's",
+          "isCorrect": false
+        },
+        {
+          "text": "The high gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter say he had none of?",
+      "explanation": "Peter said he had no silver or gold, but gave what he had in the name of Jesus Christ of Nazareth.",
+      "bibleReference": "Acts 3:6",
+      "answers": [
+        {
+          "text": "Bread or wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Words to say",
+          "isCorrect": false
+        },
+        {
+          "text": "Authority to help",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver or gold",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened immediately when Peter took him by the right hand?",
+      "explanation": "Peter raised him up, and immediately his feet and his ankle bones received strength.",
+      "bibleReference": "Acts 3:7",
+      "answers": [
+        {
+          "text": "His feet and ankle bones received strength",
+          "isCorrect": true
+        },
+        {
+          "text": "He fell down at the door in fear",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked them for money again",
+          "isCorrect": false
+        },
+        {
+          "text": "He was carried into the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the man doing as he entered the temple with them?",
+      "explanation": "Leaping up, he stood and began to walk, and he entered the temple walking, leaping, and praising God.",
+      "bibleReference": "Acts 3:8",
+      "answers": [
+        {
+          "text": "Weeping quietly",
+          "isCorrect": false
+        },
+        {
+          "text": "Walking, leaping, and praising God",
+          "isCorrect": true
+        },
+        {
+          "text": "Asking for gifts at the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "Holding on to the doorpost",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which porch did all the people run together to Peter and John?",
+      "explanation": "As the healed man held on to Peter and John, all the people ran together to them in the porch called Solomon's.",
+      "bibleReference": "Acts 3:11",
+      "answers": [
+        {
+          "text": "The Beautiful porch",
+          "isCorrect": false
+        },
+        {
+          "text": "The porch of the council",
+          "isCorrect": false
+        },
+        {
+          "text": "The porch called Solomon's",
+          "isCorrect": true
+        },
+        {
+          "text": "The porch of the priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose God did Peter say had glorified his Servant Jesus?",
+      "explanation": "Peter said the God of Abraham, Isaac, and Jacob, the God of their fathers, had glorified his Servant Jesus.",
+      "bibleReference": "Acts 3:13",
+      "answers": [
+        {
+          "text": "The God of Moses and Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "The God of David and Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "The God of Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "The God of Abraham, Isaac, and Jacob",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "By what, according to Peter, had this man been made strong?",
+      "explanation": "Peter said that by faith in his name, his name had made this man strong, in the presence of them all.",
+      "bibleReference": "Acts 3:16",
+      "answers": [
+        {
+          "text": "By faith in his name",
+          "isCorrect": true
+        },
+        {
+          "text": "By the power of the apostles",
+          "isCorrect": false
+        },
+        {
+          "text": "By his own godliness",
+          "isCorrect": false
+        },
+        {
+          "text": "By the prayers of the priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who said that the Lord God would raise up a prophet like himself?",
+      "explanation": "Peter says that Moses said to the fathers that the Lord God would raise up a prophet for them from among their brothers, like him.",
+      "bibleReference": "Acts 3:22",
+      "answers": [
+        {
+          "text": "Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses",
+          "isCorrect": true
+        },
+        {
+          "text": "David",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

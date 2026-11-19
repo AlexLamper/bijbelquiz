@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 1",
+  "description": "Ten questions on 1 Samuel 1: Hannah's prayer at Shiloh, the birth of Samuel, and his dedication to Yahweh.",
+  "slug": "1-samuel-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What were the names of Elkanah's two wives?",
+      "explanation": "Elkanah had two wives: one was named Hannah and the other Peninnah.",
+      "bibleReference": "1 Samuel 1:2",
+      "answers": [
+        {
+          "text": "Hannah and Peninnah",
+          "isCorrect": true
+        },
+        {
+          "text": "Ruth and Orpah",
+          "isCorrect": false
+        },
+        {
+          "text": "Rachel and Leah",
+          "isCorrect": false
+        },
+        {
+          "text": "Naomi and Mara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Elkanah go up every year to worship and sacrifice to Yahweh of Armies?",
+      "explanation": "Year by year Elkanah went up to worship and to sacrifice to Yahweh of Armies in Shiloh.",
+      "bibleReference": "1 Samuel 1:3",
+      "answers": [
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": true
+        },
+        {
+          "text": "Mizpah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were the two sons of Eli, priests to Yahweh at Shiloh?",
+      "explanation": "The two sons of Eli, Hophni and Phinehas, were priests to Yahweh there.",
+      "bibleReference": "1 Samuel 1:3",
+      "answers": [
+        {
+          "text": "Nadab and Abihu",
+          "isCorrect": false
+        },
+        {
+          "text": "Hophni and Phinehas",
+          "isCorrect": true
+        },
+        {
+          "text": "Mahlon and Chilion",
+          "isCorrect": false
+        },
+        {
+          "text": "Joel and Abijah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What portion did Elkanah give to Hannah when he sacrificed?",
+      "explanation": "To Hannah he gave a double portion, for he loved Hannah.",
+      "bibleReference": "1 Samuel 1:5",
+      "answers": [
+        {
+          "text": "No portion at all",
+          "isCorrect": false
+        },
+        {
+          "text": "Half a portion",
+          "isCorrect": false
+        },
+        {
+          "text": "The same as Peninnah's children",
+          "isCorrect": false
+        },
+        {
+          "text": "A double portion",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Elkanah ask Hannah when she wept and would not eat?",
+      "explanation": "Elkanah said, \"Hannah, why do you weep? ... Am I not better to you than ten sons?\"",
+      "bibleReference": "1 Samuel 1:8",
+      "answers": [
+        {
+          "text": "\"Am I not better to you than seven sons?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Am I not better to you than ten sons?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Shall I send Peninnah away?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Shall we go home to Ramah today?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Hannah vow about the son she asked for?",
+      "explanation": "She vowed to give him to Yahweh all the days of his life, and that no razor would come on his head.",
+      "bibleReference": "1 Samuel 1:11",
+      "answers": [
+        {
+          "text": "He would be given to Yahweh, and no razor would touch his head",
+          "isCorrect": true
+        },
+        {
+          "text": "He would become a king and rule over all of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "He would stay in Ramah and tend his father's flocks",
+          "isCorrect": false
+        },
+        {
+          "text": "He would be taught the law by the sons of Peninnah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Eli think when he saw Hannah's lips moving without sound?",
+      "explanation": "Hannah spoke in her heart; only her lips moved and her voice was not heard, so Eli thought she was drunk.",
+      "bibleReference": "1 Samuel 1:13",
+      "answers": [
+        {
+          "text": "That she was sick",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was asleep",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was angry",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was drunk",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Hannah name her son Samuel?",
+      "explanation": "She named him Samuel, saying, \"Because I have asked him of Yahweh.\"",
+      "bibleReference": "1 Samuel 1:20",
+      "answers": [
+        {
+          "text": "\"Because Yahweh has seen my tears.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Because he will be a priest.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Because I have asked him of Yahweh.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Because Eli blessed me.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Hannah not go up with Elkanah for the yearly sacrifice?",
+      "explanation": "Hannah said, \"Not until the child is weaned; then I will bring him, that he may appear before Yahweh.\"",
+      "bibleReference": "1 Samuel 1:22",
+      "answers": [
+        {
+          "text": "She would wait until the child was weaned",
+          "isCorrect": true
+        },
+        {
+          "text": "She was ill and could not travel",
+          "isCorrect": false
+        },
+        {
+          "text": "Elkanah did not allow her to come",
+          "isCorrect": false
+        },
+        {
+          "text": "She was afraid of Peninnah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Hannah bring with the child to Yahweh's house in Shiloh?",
+      "explanation": "She took him up with three bulls, one ephah of meal, and a container of wine.",
+      "bibleReference": "1 Samuel 1:24",
+      "answers": [
+        {
+          "text": "Two lambs and a large jar of olive oil",
+          "isCorrect": false
+        },
+        {
+          "text": "A goat, seven loaves and a basket of figs",
+          "isCorrect": false
+        },
+        {
+          "text": "Three bulls, an ephah of meal and wine",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten pieces of silver and a new robe",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

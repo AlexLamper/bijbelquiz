@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 7",
+  "description": "Ten questions on 1 Samuel 7: the ark at Kiriath Jearim, Israel's return to Yahweh at Mizpah, and the stone Ebenezer.",
+  "slug": "1-samuel-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Into whose house did the men of Kiriath Jearim bring Yahweh's ark?",
+      "explanation": "They brought it into Abinadab's house on the hill and consecrated Eleazar his son to keep the ark.",
+      "bibleReference": "1 Samuel 7:1",
+      "answers": [
+        {
+          "text": "Joshua's",
+          "isCorrect": false
+        },
+        {
+          "text": "Samuel's",
+          "isCorrect": false
+        },
+        {
+          "text": "Abinadab's",
+          "isCorrect": true
+        },
+        {
+          "text": "Eli's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When all the house of Israel lamented after Yahweh, how long had it been since the ark came to stay in Kiriath Jearim?",
+      "explanation": "From the day the ark stayed in Kiriath Jearim the time was long; it was twenty years, and all the house of Israel lamented after Yahweh.",
+      "bibleReference": "1 Samuel 7:2",
+      "answers": [
+        {
+          "text": "Twenty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven months",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel tell Israel to put away if they were returning to Yahweh?",
+      "explanation": "Samuel told them to put away the foreign gods and the Ashtaroth and to serve Yahweh only.",
+      "bibleReference": "1 Samuel 7:3",
+      "answers": [
+        {
+          "text": "Their swords and spears",
+          "isCorrect": false
+        },
+        {
+          "text": "Their wealth and cattle",
+          "isCorrect": false
+        },
+        {
+          "text": "The ark of the covenant",
+          "isCorrect": false
+        },
+        {
+          "text": "The foreign gods and the Ashtaroth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Samuel tell them to gather all Israel so he could pray for them?",
+      "explanation": "Samuel said, \"Gather all Israel to Mizpah, and I will pray to Yahweh for you.\"",
+      "bibleReference": "1 Samuel 7:5",
+      "answers": [
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Mizpah",
+          "isCorrect": true
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people do with water at Mizpah?",
+      "explanation": "They drew water and poured it out before Yahweh, fasted that day, and confessed their sin.",
+      "bibleReference": "1 Samuel 7:6",
+      "answers": [
+        {
+          "text": "They poured it out before Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "They washed the ark with it",
+          "isCorrect": false
+        },
+        {
+          "text": "They gave it to the priests to drink",
+          "isCorrect": false
+        },
+        {
+          "text": "They sprinkled it on the altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel offer as a whole burnt offering to Yahweh?",
+      "explanation": "Samuel took a suckling lamb and offered it as a whole burnt offering to Yahweh.",
+      "bibleReference": "1 Samuel 7:9",
+      "answers": [
+        {
+          "text": "A ram without blemish",
+          "isCorrect": false
+        },
+        {
+          "text": "A pair of turtledoves",
+          "isCorrect": false
+        },
+        {
+          "text": "A suckling lamb",
+          "isCorrect": true
+        },
+        {
+          "text": "A young bull",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Yahweh confuse the Philistines when they came near to battle?",
+      "explanation": "Yahweh thundered with a great thunder on the Philistines that day and confused them.",
+      "bibleReference": "1 Samuel 7:10",
+      "answers": [
+        {
+          "text": "He sent a great hailstorm",
+          "isCorrect": false
+        },
+        {
+          "text": "He thundered with a great thunder",
+          "isCorrect": true
+        },
+        {
+          "text": "He made the sun stand still",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent a flood",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did Samuel give the stone he set between Mizpah and Shen?",
+      "explanation": "Samuel called its name Ebenezer, saying, \"Yahweh helped us until now.\"",
+      "bibleReference": "1 Samuel 7:12",
+      "answers": [
+        {
+          "text": "Beth Kar",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Ebenezer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Between Israel and which people was there peace?",
+      "explanation": "There was peace between Israel and the Amorites.",
+      "bibleReference": "1 Samuel 7:14",
+      "answers": [
+        {
+          "text": "The Egyptians",
+          "isCorrect": false
+        },
+        {
+          "text": "The Moabites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Amorites",
+          "isCorrect": true
+        },
+        {
+          "text": "The Edomites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Samuel's house, where he also built an altar?",
+      "explanation": "His return was to Ramah, for his house was there; he judged Israel there and built an altar to Yahweh.",
+      "bibleReference": "1 Samuel 7:17",
+      "answers": [
+        {
+          "text": "Ramah",
+          "isCorrect": true
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeah",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

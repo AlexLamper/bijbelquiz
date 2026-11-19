@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 3",
+  "description": "Ten questions on Matthew 3: John the Baptizer in the wilderness, his warning to the Pharisees and Sadducees, and the baptism of Jesus.",
+  "slug": "matthew-bible-quiz-part-3",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did John the Baptizer preach in the wilderness of Judea?",
+      "explanation": "Matthew 3:1-2 says John the Baptizer came preaching in the wilderness of Judea: Repent, for the Kingdom of Heaven is at hand.",
+      "bibleReference": "Matthew 3:1-2",
+      "answers": [
+        {
+          "text": "Repent, for the Kingdom of Heaven is at hand",
+          "isCorrect": true
+        },
+        {
+          "text": "Peace be to Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The temple will be destroyed",
+          "isCorrect": false
+        },
+        {
+          "text": "Follow me, and I will teach you",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which prophet does the chapter say spoke of John?",
+      "explanation": "Matthew 3:3 says this is he who was spoken of by Isaiah the prophet: the voice of one crying in the wilderness.",
+      "bibleReference": "Matthew 3:3",
+      "answers": [
+        {
+          "text": "Jeremiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Elijah",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaiah",
+          "isCorrect": true
+        },
+        {
+          "text": "Malachi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was John's food?",
+      "explanation": "Matthew 3:4 says John wore clothing made of camel's hair with a leather belt, and his food was locusts and wild honey.",
+      "bibleReference": "Matthew 3:4",
+      "answers": [
+        {
+          "text": "Bread and water",
+          "isCorrect": false
+        },
+        {
+          "text": "Locusts and wild honey",
+          "isCorrect": true
+        },
+        {
+          "text": "Figs and olives",
+          "isCorrect": false
+        },
+        {
+          "text": "Lentils and barley",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were the people baptized, and what did they do there?",
+      "explanation": "Matthew 3:6 says they were baptized by him in the Jordan, confessing their sins.",
+      "bibleReference": "Matthew 3:6",
+      "answers": [
+        {
+          "text": "At the temple, bringing offerings",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem, singing psalms",
+          "isCorrect": false
+        },
+        {
+          "text": "At a well, drawing water",
+          "isCorrect": false
+        },
+        {
+          "text": "In the Jordan, confessing their sins",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did John call the Pharisees and Sadducees who came for his baptism?",
+      "explanation": "Matthew 3:7 says he said to them: You offspring of vipers, who warned you to flee from the wrath to come?",
+      "bibleReference": "Matthew 3:7",
+      "answers": [
+        {
+          "text": "Offspring of vipers",
+          "isCorrect": true
+        },
+        {
+          "text": "Blind guides",
+          "isCorrect": false
+        },
+        {
+          "text": "Keepers of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Shepherds of the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did John say God is able to do with the stones?",
+      "explanation": "Matthew 3:9 says they should not think to themselves that they have Abraham for their father, for God is able to raise up children to Abraham from those stones.",
+      "bibleReference": "Matthew 3:9",
+      "answers": [
+        {
+          "text": "Turn them into bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Build an altar from them",
+          "isCorrect": false
+        },
+        {
+          "text": "Raise up children to Abraham from them",
+          "isCorrect": true
+        },
+        {
+          "text": "Cast them into the Jordan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will the one with the winnowing fork do with the chaff?",
+      "explanation": "Matthew 3:12 says he will gather his wheat into the barn, but the chaff he will burn up with unquenchable fire.",
+      "bibleReference": "Matthew 3:12",
+      "answers": [
+        {
+          "text": "Scatter it over the field",
+          "isCorrect": false
+        },
+        {
+          "text": "Burn it up with unquenchable fire",
+          "isCorrect": true
+        },
+        {
+          "text": "Gather it into the barn",
+          "isCorrect": false
+        },
+        {
+          "text": "Leave it on the threshing floor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did John say when Jesus came to be baptized by him?",
+      "explanation": "Matthew 3:14 says John would have hindered him, saying: I need to be baptized by you, and you come to me?",
+      "bibleReference": "Matthew 3:14",
+      "answers": [
+        {
+          "text": "Who are you, Lord?",
+          "isCorrect": false
+        },
+        {
+          "text": "Depart from me, for I am a sinner",
+          "isCorrect": false
+        },
+        {
+          "text": "Go, and I will follow after you",
+          "isCorrect": false
+        },
+        {
+          "text": "I need to be baptized by you, and you come to me?",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "As what did Jesus see the Spirit of God descending?",
+      "explanation": "Matthew 3:16 says that when he was baptized the heavens were opened to him, and he saw the Spirit of God descending as a dove and coming on him.",
+      "bibleReference": "Matthew 3:16",
+      "answers": [
+        {
+          "text": "As a flame of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "As a rushing wind",
+          "isCorrect": false
+        },
+        {
+          "text": "As a dove",
+          "isCorrect": true
+        },
+        {
+          "text": "As a cloud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the voice out of the heavens say?",
+      "explanation": "Matthew 3:17 says a voice out of the heavens said: This is my beloved Son, with whom I am well pleased.",
+      "bibleReference": "Matthew 3:17",
+      "answers": [
+        {
+          "text": "This is my beloved Son, with whom I am well pleased",
+          "isCorrect": true
+        },
+        {
+          "text": "Behold, the Lamb of God",
+          "isCorrect": false
+        },
+        {
+          "text": "Hear him, all you nations of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "You are a prophet to the nations",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Jueces 2: el ángel de Jehová en Bochîm, la muerte de Josué y los jueces que Jehová suscitó.",
+  "slug": "judges-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde subió el ángel de Jehová y a dónde llegó?",
+      "explanation": "El texto dice que el ángel de Jehová subió de Gilgal a Bochîm y habló al pueblo.",
+      "bibleReference": "Jueces 2:1",
+      "answers": [
+        {
+          "text": "De Gilgal a Bochîm",
+          "isCorrect": true
+        },
+        {
+          "text": "De Silo a Sichêm",
+          "isCorrect": false
+        },
+        {
+          "text": "Del Jordán a Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "De Beth-el a Gilgal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había mandado Jehová acerca de los altares de los moradores de aquella tierra?",
+      "explanation": "El ángel les recordó la condición: que no hiciesen alianza con los moradores de aquella tierra, cuyos altares habían de derribar; pero no habían atendido a su voz.",
+      "bibleReference": "Jueces 2:2",
+      "answers": [
+        {
+          "text": "Que los dejasen vacíos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ofreciesen allí a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los derribasen",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los guardasen como testimonio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que serían aquellas gentes y sus dioses para Israel?",
+      "explanation": "Dijo que no los echaría de delante de ellos, sino que le serían por azote para sus costados, y sus dioses por tropiezo.",
+      "bibleReference": "Jueces 2:3",
+      "answers": [
+        {
+          "text": "Siervos y tributarios de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Azote para sus costados y tropiezo",
+          "isCorrect": true
+        },
+        {
+          "text": "Maestros de guerra para sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Testigos del pacto de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el pueblo cuando el ángel de Jehová habló estas palabras?",
+      "explanation": "El texto dice que el pueblo lloró en alta voz, y llamaron por nombre aquel lugar Bochîm, y sacrificaron allí a Jehová.",
+      "bibleReference": "Jueces 2:4-5",
+      "answers": [
+        {
+          "text": "Derribó los altares aquel mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Se apartó callando a sus heredades",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió un rey que los juzgase",
+          "isCorrect": false
+        },
+        {
+          "text": "Lloró en alta voz y sacrificó allí a Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años tenía Josué hijo de Nun cuando murió?",
+      "explanation": "El texto dice que murió Josué hijo de Nun, siervo de Jehová, siendo de ciento y diez años.",
+      "bibleReference": "Jueces 2:8",
+      "answers": [
+        {
+          "text": "Ciento y diez",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento y veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Noventa y ocho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se dice de la generación que se levantó después de aquella?",
+      "explanation": "El texto dice que se levantó después de ellos otra generación que no conocían a Jehová ni la obra que él había hecho por Israel.",
+      "bibleReference": "Jueces 2:10",
+      "answers": [
+        {
+          "text": "Que salió de la tierra y volvió a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no conocían a Jehová ni su obra por Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Que pidió jueces a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que derribó los altares de los Baales",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué dioses adoraron los hijos de Israel cuando dejaron a Jehová?",
+      "explanation": "El texto dice que dejaron a Jehová y adoraron a Baal y a Astaroth.",
+      "bibleReference": "Jueces 2:13",
+      "answers": [
+        {
+          "text": "Al becerro de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "A los dioses de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A Baal y a Astaroth",
+          "isCorrect": true
+        },
+        {
+          "text": "A Dagón y a Moloch",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En manos de quiénes entregó Jehová a Israel cuando su furor se encendió?",
+      "explanation": "El texto dice que los entregó en manos de robadores que los despojaron, y los vendió en manos de sus enemigos de alrededor.",
+      "bibleReference": "Jueces 2:14",
+      "answers": [
+        {
+          "text": "En manos de los reyes de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En manos de los Levitas y sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "En manos de los reyes de Canaán solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "En manos de robadores que los despojaron",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué suscitó Jehová para librar a Israel de los que los despojaban?",
+      "explanation": "El texto dice que Jehová suscitó jueces que los librasen de mano de los que los despojaban.",
+      "bibleReference": "Jueces 2:16",
+      "answers": [
+        {
+          "text": "Reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Jueces",
+          "isCorrect": true
+        },
+        {
+          "text": "Profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué dejó Jehová a aquellas gentes sin desarraigarlas luego?",
+      "explanation": "El texto dice que las dejó para probar por ellas a Israel, si guardarían el camino de Jehová andando por él, como sus padres lo guardaron, o no.",
+      "bibleReference": "Jueces 2:22-23",
+      "answers": [
+        {
+          "text": "Para que enseñasen la guerra a sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que pagasen tributo a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Para probar a Israel, si guardaría el camino de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Para cumplir la palabra dada a Josué",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

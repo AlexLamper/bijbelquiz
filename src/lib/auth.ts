@@ -8,6 +8,7 @@ import { normalizeUserSettings, type UserSettings } from '@/lib/user-settings';
 import { resolveAvatar } from '@/lib/avatar';
 import { appleWebCookies, appleWebProviders, linkAppleWebUser } from '@/lib/auth/apple-web';
 import { currentUserAgent, signupFields, touchLastActive, webPlatformFromUserAgent } from '@/lib/admin/platform';
+import { msg } from '@/lib/api-messages';
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -30,7 +31,7 @@ export const authOptions: NextAuthOptions = {
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
-          throw new Error('Email en wachtwoord zijn verplicht');
+          throw new Error(msg('Email en wachtwoord zijn verplicht'));
         }
 
         await connectDB();
@@ -38,11 +39,11 @@ export const authOptions: NextAuthOptions = {
         const user = await User.findOne({ email });
 
         if (!user) {
-          throw new Error('Geen gebruiker gevonden met dit emailadres');
+          throw new Error(msg('Geen gebruiker gevonden met dit emailadres'));
         }
 
         if (!user.password) {
-          throw new Error('Dit account heeft geen wachtwoord (probeer inloggen met Google)');
+          throw new Error(msg('Dit account heeft geen wachtwoord (probeer inloggen met Google)'));
         }
 
         const isValid = await bcrypt.compare(credentials.password, user.password);

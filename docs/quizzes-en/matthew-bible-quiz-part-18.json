@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 18",
+  "description": "Ten questions on Matthew 18: who is greatest in the Kingdom, the sheep that went astray, correcting a brother, and the servant who would not forgive.",
+  "slug": "matthew-bible-quiz-part-18",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the disciples come and ask Jesus in that hour?",
+      "explanation": "The disciples came to Jesus asking who then is greatest in the Kingdom of Heaven.",
+      "bibleReference": "Matthew 18:1",
+      "answers": [
+        {
+          "text": "When the Kingdom of Heaven would come",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether they should fast",
+          "isCorrect": false
+        },
+        {
+          "text": "Who is greatest in the Kingdom of Heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "Who among them would betray him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say people must do to enter into the Kingdom of Heaven?",
+      "explanation": "He set a little child in the middle of them and said that unless they turn and become as little children, they will in no way enter the Kingdom of Heaven.",
+      "bibleReference": "Matthew 18:2-3",
+      "answers": [
+        {
+          "text": "Turn and become as little children",
+          "isCorrect": true
+        },
+        {
+          "text": "Give away all their bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Learn the words of the scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "Go up to the temple each day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about whoever causes one of these little ones who believe in him to stumble?",
+      "explanation": "He said it would be better for that person if a huge millstone were hung around his neck and he were sunk in the depths of the sea.",
+      "bibleReference": "Matthew 18:6",
+      "answers": [
+        {
+          "text": "That he would be sent away from the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "That it would be better for him to be sunk in the sea",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would owe a debt he could never repay",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would be called least in the Kingdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to do if your hand or your foot causes you to stumble?",
+      "explanation": "He said to cut it off and cast it from you, since it is better to enter into life maimed or crippled than to be cast into the eternal fire with two hands or two feet.",
+      "bibleReference": "Matthew 18:8",
+      "answers": [
+        {
+          "text": "Bind it until it heals",
+          "isCorrect": false
+        },
+        {
+          "text": "Wash it with water",
+          "isCorrect": false
+        },
+        {
+          "text": "Pray over it for seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Cut it off and cast it from you",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the angels of these little ones?",
+      "explanation": "He said not to despise one of these little ones, because in heaven their angels always see the face of his Father who is in heaven.",
+      "bibleReference": "Matthew 18:10",
+      "answers": [
+        {
+          "text": "That in heaven their angels always see the face of his Father",
+          "isCorrect": true
+        },
+        {
+          "text": "That their angels keep watch at the temple gates",
+          "isCorrect": false
+        },
+        {
+          "text": "That their angels carry their prayers to the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "That their angels will judge the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the parable, how many sheep does the man leave to go and seek the one that has gone astray?",
+      "explanation": "Jesus asked whether a man with one hundred sheep would not leave the ninety-nine and go to the mountains to seek the one that had gone astray.",
+      "bibleReference": "Matthew 18:12",
+      "answers": [
+        {
+          "text": "Forty-nine",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy-seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninety-nine",
+          "isCorrect": true
+        },
+        {
+          "text": "Thirty-nine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to do first if your brother sins against you?",
+      "explanation": "He said to go and show him his fault between you and him alone, and if he listens you have gained back your brother.",
+      "bibleReference": "Matthew 18:15",
+      "answers": [
+        {
+          "text": "Tell it to the whole assembly at once",
+          "isCorrect": false
+        },
+        {
+          "text": "Wait quietly until he comes to you",
+          "isCorrect": false
+        },
+        {
+          "text": "Take two or three witnesses with you first",
+          "isCorrect": false
+        },
+        {
+          "text": "Show him his fault between you and him alone",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to Jesus, what should happen if the brother will not listen to the one or two who came along?",
+      "explanation": "He said that if the brother refuses to listen to them, you should tell it to the assembly.",
+      "bibleReference": "Matthew 18:16-17",
+      "answers": [
+        {
+          "text": "Let the matter rest",
+          "isCorrect": false
+        },
+        {
+          "text": "Tell it to the assembly",
+          "isCorrect": true
+        },
+        {
+          "text": "Bring him to the elders of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Forgive him and say nothing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How often did Jesus say to forgive, when Peter asked whether it should be until seven times?",
+      "explanation": "Peter asked whether he should forgive until seven times, and Jesus answered, not until seven times, but until seventy times seven.",
+      "bibleReference": "Matthew 18:21-22",
+      "answers": [
+        {
+          "text": "Until seventy times seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Until seven times only",
+          "isCorrect": false
+        },
+        {
+          "text": "Until three times a day",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the brother asks no more",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the parable, how much did the fellow servant owe the servant who found him?",
+      "explanation": "The servant who had been forgiven found a fellow servant who owed him one hundred denarii, and grabbed him by the throat demanding payment.",
+      "bibleReference": "Matthew 18:28",
+      "answers": [
+        {
+          "text": "Ten talents",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred denarii",
+          "isCorrect": true
+        },
+        {
+          "text": "Two thousand talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty pieces of silver",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 18",
+  "description": "Ten questions on Exodus 18: Jethro's visit to Moses and his advice to appoint judges over the people.",
+  "slug": "exodus-bible-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who was Jethro?",
+      "explanation": "Jethro was the priest of Midian, Moses' father-in-law.",
+      "bibleReference": "Exodus 18:1",
+      "answers": [
+        {
+          "text": "The king of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "A prince of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "An elder of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The priest of Midian",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the name of Moses' wife?",
+      "explanation": "Jethro received Zipporah, Moses' wife, after he had sent her away.",
+      "bibleReference": "Exodus 18:2",
+      "answers": [
+        {
+          "text": "Zipporah",
+          "isCorrect": true
+        },
+        {
+          "text": "Miriam",
+          "isCorrect": false
+        },
+        {
+          "text": "Rachel",
+          "isCorrect": false
+        },
+        {
+          "text": "Deborah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why was Moses' son named Gershom?",
+      "explanation": "Moses said: 'I have lived as a foreigner in a foreign land.'",
+      "bibleReference": "Exodus 18:3",
+      "answers": [
+        {
+          "text": "God had made Moses forget his trouble",
+          "isCorrect": false
+        },
+        {
+          "text": "God had heard Moses' affliction",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses had lived as a foreigner in a foreign land",
+          "isCorrect": true
+        },
+        {
+          "text": "Moses had found a home in Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the name of Moses' other son?",
+      "explanation": "The other son was named Eliezer, for Moses said: 'My father's God was my help and delivered me from Pharaoh's sword.'",
+      "bibleReference": "Exodus 18:4",
+      "answers": [
+        {
+          "text": "Joshua",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliezer",
+          "isCorrect": true
+        },
+        {
+          "text": "Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jethro say he now knew?",
+      "explanation": "Jethro said: 'Now I know that Yahweh is greater than all gods.'",
+      "bibleReference": "Exodus 18:11",
+      "answers": [
+        {
+          "text": "That Moses is a prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "That he must go with Israel to Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "That Pharaoh would come after them again",
+          "isCorrect": false
+        },
+        {
+          "text": "That Yahweh is greater than all gods",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long did the people stand around Moses while he judged them?",
+      "explanation": "Moses sat to judge the people, and the people stood around him from the morning to the evening.",
+      "bibleReference": "Exodus 18:13",
+      "answers": [
+        {
+          "text": "Only on the Sabbath day each week",
+          "isCorrect": false
+        },
+        {
+          "text": "From the morning to the evening",
+          "isCorrect": true
+        },
+        {
+          "text": "One single day in each month",
+          "isCorrect": false
+        },
+        {
+          "text": "Only during the hours of the night",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jethro say about Moses judging the people alone?",
+      "explanation": "Jethro said it was not good: the thing was too heavy for Moses, and he could not do it alone.",
+      "bibleReference": "Exodus 18:17-18",
+      "answers": [
+        {
+          "text": "It was too heavy for him to do alone",
+          "isCorrect": true
+        },
+        {
+          "text": "It was the best way to rule the people",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron should do it in his place",
+          "isCorrect": false
+        },
+        {
+          "text": "It should only be done on feast days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of men did Jethro tell Moses to choose as rulers?",
+      "explanation": "Jethro said to choose able men who fear God, men of truth, hating unjust gain.",
+      "bibleReference": "Exodus 18:21",
+      "answers": [
+        {
+          "text": "The oldest men from every family of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Strong men who were skilled in war and battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Able men who fear God, men of truth, hating unjust gain",
+          "isCorrect": true
+        },
+        {
+          "text": "Rich men who owned land in every tribe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Over what groups did Moses make the chosen men rulers?",
+      "explanation": "Moses made them heads over the people: rulers of thousands, of hundreds, of fifties and of tens.",
+      "bibleReference": "Exodus 18:25",
+      "answers": [
+        {
+          "text": "Thousands, hundreds, fifties and tens",
+          "isCorrect": true
+        },
+        {
+          "text": "Only thousands and hundreds",
+          "isCorrect": false
+        },
+        {
+          "text": "Cities, towns and villages",
+          "isCorrect": false
+        },
+        {
+          "text": "Tribes, clans and families",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which cases did the rulers bring to Moses?",
+      "explanation": "They judged the people at all times; the hard cases they brought to Moses, but every small matter they judged themselves.",
+      "bibleReference": "Exodus 18:26",
+      "answers": [
+        {
+          "text": "Every small matter",
+          "isCorrect": false
+        },
+        {
+          "text": "Only cases about foreigners",
+          "isCorrect": false
+        },
+        {
+          "text": "Only cases about money",
+          "isCorrect": false
+        },
+        {
+          "text": "The hard cases",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

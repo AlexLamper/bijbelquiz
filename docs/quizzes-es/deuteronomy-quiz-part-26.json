@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Deuteronomio 26: el canastillo de las primicias, la declaración delante del sacerdote, el diezmo del año tercero y el pueblo peculiar de Jehová.",
+  "slug": "deuteronomy-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué llevaba el israelita las primicias de los frutos de la tierra?",
+      "explanation": "El texto manda tomar de las primicias de todos los frutos, ponerlas en un canastillo e ir al lugar que Jehová escogiere.",
+      "bibleReference": "Deuteronomio 26:2",
+      "answers": [
+        { "text": "En un canastillo", "isCorrect": true },
+        { "text": "En un vaso de plata", "isCorrect": false },
+        { "text": "En un saco de lino", "isCorrect": false },
+        { "text": "En una cesta de olivo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el sacerdote con aquel canastillo?",
+      "explanation": "El texto dice que el sacerdote tomará el canastillo de tu mano y lo pondrá delante del altar de Jehová tu Dios.",
+      "bibleReference": "Deuteronomio 26:4",
+      "answers": [
+        { "text": "Lo guardaba en la casa de Jehová", "isCorrect": false },
+        { "text": "Lo repartía entre los Levitas", "isCorrect": false },
+        { "text": "Lo ponía delante del altar", "isCorrect": true },
+        { "text": "Lo devolvía al que lo trajo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo empezaba la declaración que el israelita hacía delante de Jehová?",
+      "explanation": "El texto pone estas palabras en su boca: \"Un Siro a punto de perecer fué mi padre, el cual descendió á Egipto\".",
+      "bibleReference": "Deuteronomio 26:5",
+      "answers": [
+        { "text": "Jehová es mi heredad y mi porción", "isCorrect": false },
+        { "text": "Un Siro a punto de perecer fue mi padre", "isCorrect": true },
+        { "text": "Perfecto seré con Jehová mi Dios", "isCorrect": false },
+        { "text": "Mi padre fue rey en tierra de Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según esa declaración, ¿qué hicieron los Egipcios con el pueblo?",
+      "explanation": "El texto dice que los Egipcios los maltrataron, los afligieron y pusieron sobre ellos dura servidumbre.",
+      "bibleReference": "Deuteronomio 26:6",
+      "answers": [
+        { "text": "Les dieron tierras y ganados", "isCorrect": false },
+        { "text": "Los echaron fuera de su tierra", "isCorrect": false },
+        { "text": "Los contaron entre sus siervos libres", "isCorrect": false },
+        { "text": "Los afligieron con dura servidumbre", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué sacó Jehová al pueblo de Egipto, según esta misma declaración?",
+      "explanation": "El texto dice que Jehová los sacó de Egipto con mano fuerte, con brazo extendido, con grande espanto, y con señales y milagros.",
+      "bibleReference": "Deuteronomio 26:8",
+      "answers": [
+        { "text": "Con carros y con caballos", "isCorrect": false },
+        { "text": "Con mano fuerte y brazo extendido", "isCorrect": true },
+        { "text": "Con el arca del pacto delante", "isCorrect": false },
+        { "text": "Con la ayuda de los Siros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe esta declaración la tierra que Jehová les dio?",
+      "explanation": "El texto dice que Jehová los trajo a este lugar y les dio esta tierra, tierra que fluye leche y miel.",
+      "bibleReference": "Deuteronomio 26:9",
+      "answers": [
+        { "text": "Tierra que fluye leche y miel", "isCorrect": true },
+        { "text": "Tierra de montes y valles", "isCorrect": false },
+        { "text": "Tierra de viñas y olivares", "isCorrect": false },
+        { "text": "Tierra ancha y sin habitantes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Después de dejar las primicias delante de Jehová, ¿qué hacía el israelita?",
+      "explanation": "El texto dice que dejarás las primicias delante de Jehová tu Dios y te inclinarás delante de él.",
+      "bibleReference": "Deuteronomio 26:10",
+      "answers": [
+        { "text": "Volvía a su casa en silencio", "isCorrect": false },
+        { "text": "Ofrecía un holocausto en el altar", "isCorrect": false },
+        { "text": "Comía allí con los sacerdotes", "isCorrect": false },
+        { "text": "Se inclinaba delante de Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "En el año tercero, el año del diezmo, ¿a quiénes se daba el diezmo de los frutos?",
+      "explanation": "El texto manda dar también al Levita, al extranjero, al huérfano y a la viuda, y dice que comerán en tus villas y se saciarán.",
+      "bibleReference": "Deuteronomio 26:12",
+      "answers": [
+        { "text": "A los sacerdotes Levitas solamente", "isCorrect": false },
+        { "text": "A los ancianos de aquella ciudad", "isCorrect": false },
+        { "text": "Al Levita, al extranjero, al huérfano y a la viuda", "isCorrect": true },
+        { "text": "A los jornaleros pobres del campo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pedía el israelita a Jehová al final de aquellas palabras?",
+      "explanation": "El texto pone esta petición: que mire desde la morada de su santidad, desde el cielo, y bendiga a su pueblo Israel y a la tierra que les dio.",
+      "bibleReference": "Deuteronomio 26:15",
+      "answers": [
+        { "text": "Que mirara desde el cielo y bendijera a su pueblo", "isCorrect": true },
+        { "text": "Que le diera más frutos cada año", "isCorrect": false },
+        { "text": "Que castigara a sus enemigos", "isCorrect": false },
+        { "text": "Que le mostrara el lugar escogido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿qué dijo el texto que Israel sería para Jehová?",
+      "explanation": "El texto dice que Jehová lo ha ensalzado hoy para que le sea su peculiar pueblo y guarde todos sus mandamientos.",
+      "bibleReference": "Deuteronomio 26:18",
+      "answers": [
+        { "text": "Su heredad entre las gentes", "isCorrect": false },
+        { "text": "Sus siervos en la tierra", "isCorrect": false },
+        { "text": "Su ejército escogido", "isCorrect": false },
+        { "text": "Su pueblo peculiar", "isCorrect": true }
+      ]
+    }
+  ]
+}

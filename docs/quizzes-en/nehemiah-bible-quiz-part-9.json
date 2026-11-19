@@ -1,0 +1,242 @@
+{
+  "title": "Nehemiah Bible Quiz - Chapter 9",
+  "description": "Ten questions on Nehemiah 9: a day of fasting and confession, and the Levites' long prayer recalling God's faithfulness to Israel.",
+  "slug": "nehemiah-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "On which day of the month did the children of Israel assemble with fasting and sackcloth?",
+      "explanation": "Nehemiah 9:1 says they assembled on the twenty-fourth day of the month, with fasting, sackcloth and dirt on them.",
+      "bibleReference": "Nehemiah 9:1",
+      "answers": [
+        {
+          "text": "The fifteenth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The twenty-fourth day",
+          "isCorrect": true
+        },
+        {
+          "text": "The fourteenth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The thirtieth day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From whom did the offspring of Israel separate themselves?",
+      "explanation": "They separated themselves from all foreigners and confessed their sins and the iniquities of their fathers.",
+      "bibleReference": "Nehemiah 9:2",
+      "answers": [
+        {
+          "text": "From the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "From the king's officials",
+          "isCorrect": false
+        },
+        {
+          "text": "From the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "From all foreigners",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "For how much of the day did they read in the book of the law?",
+      "explanation": "They read in the book of the law a fourth part of the day, and another fourth part they confessed and worshiped.",
+      "bibleReference": "Nehemiah 9:3",
+      "answers": [
+        {
+          "text": "A fourth part of the day",
+          "isCorrect": true
+        },
+        {
+          "text": "A third part of the day",
+          "isCorrect": false
+        },
+        {
+          "text": "Half of the day",
+          "isCorrect": false
+        },
+        {
+          "text": "The whole day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the prayer, where did God bring Abram out of?",
+      "explanation": "The prayer says God chose Abram, brought him out of Ur of the Chaldees and gave him the name Abraham.",
+      "bibleReference": "Nehemiah 9:7",
+      "answers": [
+        {
+          "text": "Haran in the north",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Ur of the Chaldees",
+          "isCorrect": true
+        },
+        {
+          "text": "The city of Babylon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the prayer describe what happened to Israel's pursuers in the sea?",
+      "explanation": "God cast their pursuers into the depths, as a stone into the mighty waters.",
+      "bibleReference": "Nehemiah 9:11",
+      "answers": [
+        {
+          "text": "They were scattered like chaff by the wind",
+          "isCorrect": false
+        },
+        {
+          "text": "They were cast into the depths like a stone",
+          "isCorrect": true
+        },
+        {
+          "text": "They were turned back to Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "They were blinded by a cloud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did God lead Israel by night?",
+      "explanation": "God led them in a pillar of cloud by day and in a pillar of fire by night, to give them light.",
+      "bibleReference": "Nehemiah 9:12",
+      "answers": [
+        {
+          "text": "In a pillar of fire",
+          "isCorrect": true
+        },
+        {
+          "text": "By a bright star",
+          "isCorrect": false
+        },
+        {
+          "text": "With an angel carrying a torch",
+          "isCorrect": false
+        },
+        {
+          "text": "By the light of the moon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God bring out of the rock for Israel?",
+      "explanation": "God gave them bread from the sky for their hunger and brought water out of the rock for their thirst.",
+      "bibleReference": "Nehemiah 9:15",
+      "answers": [
+        {
+          "text": "Honey to eat",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil for their lamps",
+          "isCorrect": false
+        },
+        {
+          "text": "Water for their thirst",
+          "isCorrect": true
+        },
+        {
+          "text": "Fire for their sacrifices",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the people make for themselves, calling it the God who brought them out of Egypt?",
+      "explanation": "They made themselves a molded calf and said, \"This is your God who brought you up out of Egypt.\"",
+      "bibleReference": "Nehemiah 9:18",
+      "answers": [
+        {
+          "text": "A bronze serpent",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden altar",
+          "isCorrect": false
+        },
+        {
+          "text": "A carved pillar",
+          "isCorrect": false
+        },
+        {
+          "text": "A molded calf",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the prayer say about Israel's clothes during the forty years in the wilderness?",
+      "explanation": "God sustained them forty years in the wilderness; their clothes didn't grow old and their feet didn't swell.",
+      "bibleReference": "Nehemiah 9:21",
+      "answers": [
+        {
+          "text": "Their clothes were torn by thorns",
+          "isCorrect": false
+        },
+        {
+          "text": "Their clothes didn't grow old",
+          "isCorrect": true
+        },
+        {
+          "text": "They wore only sackcloth",
+          "isCorrect": false
+        },
+        {
+          "text": "They had to weave new clothes every year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do the people do at the end of the prayer?",
+      "explanation": "They make a sure covenant and write it, and their princes, Levites and priests seal it.",
+      "bibleReference": "Nehemiah 9:38",
+      "answers": [
+        {
+          "text": "They build a new altar of stone",
+          "isCorrect": false
+        },
+        {
+          "text": "They march out to war against their enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "They make a sure covenant and write it",
+          "isCorrect": true
+        },
+        {
+          "text": "They decide to return to Babylon",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

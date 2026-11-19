@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 17",
+  "description": "Ten questions on Matthew 17: the change on the high mountain, the voice from the cloud, a boy cured, and a coin in a fish's mouth.",
+  "slug": "matthew-bible-quiz-part-17",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Which three disciples did Jesus take up into a high mountain by themselves?",
+      "explanation": "After six days Jesus took with him Peter, James, and John his brother, and brought them up into a high mountain by themselves.",
+      "bibleReference": "Matthew 17:1",
+      "answers": [
+        {
+          "text": "Peter, Andrew, and Philip",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter, James, and John",
+          "isCorrect": true
+        },
+        {
+          "text": "James, John, and Thomas",
+          "isCorrect": false
+        },
+        {
+          "text": "Andrew, Thomas, and Judas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Jesus' face when he was changed before them?",
+      "explanation": "He was changed before them: his face shone like the sun, and his garments became as white as the light.",
+      "bibleReference": "Matthew 17:2",
+      "answers": [
+        {
+          "text": "It shone like the sun",
+          "isCorrect": true
+        },
+        {
+          "text": "It was hidden by a cloud",
+          "isCorrect": false
+        },
+        {
+          "text": "It became pale as ashes",
+          "isCorrect": false
+        },
+        {
+          "text": "It was veiled with a cloth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who appeared and talked with him on the mountain?",
+      "explanation": "Moses and Elijah appeared to them, talking with him.",
+      "bibleReference": "Matthew 17:3",
+      "answers": [
+        {
+          "text": "Abraham and Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "Jeremiah and Isaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "John the Baptizer and Elijah",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses and Elijah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Peter offer to make there?",
+      "explanation": "Peter said it was good for them to be there and offered to make three tents: one for Jesus, one for Moses, and one for Elijah.",
+      "bibleReference": "Matthew 17:4",
+      "answers": [
+        {
+          "text": "An altar of stones",
+          "isCorrect": false
+        },
+        {
+          "text": "A fire for the night",
+          "isCorrect": false
+        },
+        {
+          "text": "Three tents",
+          "isCorrect": true
+        },
+        {
+          "text": "A seat for each of them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the voice out of the bright cloud say?",
+      "explanation": "A voice came out of the cloud saying that this was his beloved Son, in whom he was well pleased, and telling them to listen to him.",
+      "bibleReference": "Matthew 17:5",
+      "answers": [
+        {
+          "text": "That the Kingdom had come near",
+          "isCorrect": false
+        },
+        {
+          "text": "That this was his beloved Son; listen to him",
+          "isCorrect": true
+        },
+        {
+          "text": "That the prophets had spoken truly",
+          "isCorrect": false
+        },
+        {
+          "text": "That Moses and Elijah were servants",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus command the disciples as they came down from the mountain?",
+      "explanation": "Jesus commanded them not to tell anyone what they had seen until the Son of Man had risen from the dead.",
+      "bibleReference": "Matthew 17:9",
+      "answers": [
+        {
+          "text": "To tell no one what they had seen",
+          "isCorrect": true
+        },
+        {
+          "text": "To go first to the scribes in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To build an altar on the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "To fast for six days in Galilee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the disciples understand Jesus was speaking about when he said Elijah had come already?",
+      "explanation": "Then the disciples understood that he spoke to them of John the Baptizer.",
+      "bibleReference": "Matthew 17:12-13",
+      "answers": [
+        {
+          "text": "Jeremiah the prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "John the Baptizer",
+          "isCorrect": true
+        },
+        {
+          "text": "Isaiah the prophet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the kneeling man say was wrong with his son?",
+      "explanation": "The man asked for mercy on his son, saying the boy was epileptic and suffered grievously, often falling into the fire and into the water.",
+      "bibleReference": "Matthew 17:14-15",
+      "answers": [
+        {
+          "text": "He was blind from his birth",
+          "isCorrect": false
+        },
+        {
+          "text": "He was deaf and could not speak",
+          "isCorrect": false
+        },
+        {
+          "text": "He was lame and could not walk",
+          "isCorrect": false
+        },
+        {
+          "text": "He was epileptic and suffered grievously",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Jesus say the disciples had not been able to cast it out?",
+      "explanation": "When they asked privately why they could not do it, he said it was because of their unbelief.",
+      "bibleReference": "Matthew 17:19-20",
+      "answers": [
+        {
+          "text": "Because of their unbelief",
+          "isCorrect": true
+        },
+        {
+          "text": "Because they had not washed",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the boy's father doubted",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the hour had not yet come",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell Peter he would find in the mouth of the first fish he caught?",
+      "explanation": "Jesus told him to cast a hook into the sea and open the mouth of the first fish, where he would find a stater coin to give for them both.",
+      "bibleReference": "Matthew 17:27",
+      "answers": [
+        {
+          "text": "A pearl",
+          "isCorrect": false
+        },
+        {
+          "text": "A stater coin",
+          "isCorrect": true
+        },
+        {
+          "text": "A didrachma for the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "A ring of gold",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

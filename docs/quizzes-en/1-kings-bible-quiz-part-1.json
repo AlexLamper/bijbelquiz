@@ -1,0 +1,242 @@
+{
+  "title": "1 Kings Bible Quiz - Chapter 1",
+  "description": "Ten questions on 1 Kings 1: Adonijah tries to make himself king, but David has Solomon anointed at Gihon.",
+  "slug": "1-kings-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who was found to serve old King David and keep him warm?",
+      "explanation": "His servants sought a young lady to keep the king warm, and found Abishag the Shunammite, who cherished the king and served him.",
+      "bibleReference": "1 Kings 1:2-4",
+      "answers": [
+        {
+          "text": "Abigail the Carmelite",
+          "isCorrect": false
+        },
+        {
+          "text": "Michal the daughter of Saul",
+          "isCorrect": false
+        },
+        {
+          "text": "Maacah the Geshurite",
+          "isCorrect": false
+        },
+        {
+          "text": "Abishag the Shunammite",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who exalted himself, saying, \"I will be king\"?",
+      "explanation": "Adonijah the son of Haggith exalted himself, saying, \"I will be king,\" and prepared chariots, horsemen and fifty men to run before him.",
+      "bibleReference": "1 Kings 1:5",
+      "answers": [
+        {
+          "text": "Absalom",
+          "isCorrect": false
+        },
+        {
+          "text": "Adonijah",
+          "isCorrect": true
+        },
+        {
+          "text": "Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who followed Adonijah and helped him?",
+      "explanation": "Adonijah conferred with Joab the son of Zeruiah and with Abiathar the priest, and they followed him and helped him.",
+      "bibleReference": "1 Kings 1:7",
+      "answers": [
+        {
+          "text": "Zadok and Nathan",
+          "isCorrect": false
+        },
+        {
+          "text": "Benaiah and Shimei",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab and Abiathar the priest",
+          "isCorrect": true
+        },
+        {
+          "text": "Bathsheba and Abishag",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Adonijah sacrifice sheep, cattle and fatlings?",
+      "explanation": "Adonijah killed sheep, cattle and fatlings by the stone of Zoheleth, which is beside En Rogel.",
+      "bibleReference": "1 Kings 1:9",
+      "answers": [
+        {
+          "text": "By the stone of Zoheleth, beside En Rogel",
+          "isCorrect": true
+        },
+        {
+          "text": "By the great high place at Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "At the city gate of Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "On the top of the Mount of Olives",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Nathan advise to go in to King David?",
+      "explanation": "Nathan spoke to Bathsheba the mother of Solomon and told her to go in to king David.",
+      "bibleReference": "1 Kings 1:11-13",
+      "answers": [
+        {
+          "text": "Abishag the Shunammite",
+          "isCorrect": false
+        },
+        {
+          "text": "Haggith, Adonijah's mother",
+          "isCorrect": false
+        },
+        {
+          "text": "Bathsheba, the mother of Solomon",
+          "isCorrect": true
+        },
+        {
+          "text": "Michal, David's wife",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what did David say Solomon should ride to Gihon?",
+      "explanation": "David told them to cause Solomon to ride on his own mule and bring him down to Gihon.",
+      "bibleReference": "1 Kings 1:33",
+      "answers": [
+        {
+          "text": "A white horse",
+          "isCorrect": false
+        },
+        {
+          "text": "A royal chariot",
+          "isCorrect": false
+        },
+        {
+          "text": "A young donkey",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's own mule",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was Solomon anointed?",
+      "explanation": "They brought Solomon to Gihon, and Zadok the priest anointed him there.",
+      "bibleReference": "1 Kings 1:38-39",
+      "answers": [
+        {
+          "text": "At Gihon",
+          "isCorrect": true
+        },
+        {
+          "text": "In Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "In Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "At Jericho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Zadok take from the Tent to anoint Solomon?",
+      "explanation": "Zadok the priest took the horn of oil from the Tent and anointed Solomon.",
+      "bibleReference": "1 Kings 1:39",
+      "answers": [
+        {
+          "text": "A golden crown",
+          "isCorrect": false
+        },
+        {
+          "text": "The horn of oil",
+          "isCorrect": true
+        },
+        {
+          "text": "A flask of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A royal robe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came to Adonijah's feast with the news that Solomon had been made king?",
+      "explanation": "Jonathan the son of Abiathar the priest came and told Adonijah that king David had made Solomon king.",
+      "bibleReference": "1 Kings 1:42-43",
+      "answers": [
+        {
+          "text": "Ahimaaz the son of Zadok",
+          "isCorrect": false
+        },
+        {
+          "text": "Benaiah the son of Jehoiada",
+          "isCorrect": false
+        },
+        {
+          "text": "Shimei",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonathan the son of Abiathar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Adonijah do because he was afraid of Solomon?",
+      "explanation": "Adonijah was afraid because of Solomon, and he went and hung onto the horns of the altar.",
+      "bibleReference": "1 Kings 1:50",
+      "answers": [
+        {
+          "text": "He fled to Achish the king of Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "He hung onto the horns of the altar",
+          "isCorrect": true
+        },
+        {
+          "text": "He hid in a cave in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "He gathered his army at Hebron",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

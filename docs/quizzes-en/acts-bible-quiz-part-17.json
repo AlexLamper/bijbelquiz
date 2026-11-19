@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 17",
+  "description": "Ten questions on Acts 17: Thessalonica and Beroea, and Paul's speech at the Areopagus in Athens.",
+  "slug": "acts-bible-quiz-part-17",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "For how many Sabbath days did Paul reason with them from the Scriptures at Thessalonica?",
+      "explanation": "As was his custom, Paul went in to them and for three Sabbath days reasoned with them from the Scriptures.",
+      "bibleReference": "Acts 17:1-2",
+      "answers": [
+        {
+          "text": "One Sabbath day",
+          "isCorrect": false
+        },
+        {
+          "text": "Two Sabbath days",
+          "isCorrect": false
+        },
+        {
+          "text": "Three Sabbath days",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven Sabbath days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the accusers before the rulers of the city say about these men?",
+      "explanation": "They said that these men acted contrary to the decrees of Caesar, saying that there is another king, Jesus.",
+      "bibleReference": "Acts 17:6-7",
+      "answers": [
+        {
+          "text": "That they say there is another king, Jesus, against the decrees of Caesar",
+          "isCorrect": true
+        },
+        {
+          "text": "That they refuse to pay the tribute that Caesar commands",
+          "isCorrect": false
+        },
+        {
+          "text": "That they have defiled the temple of the city with Greeks",
+          "isCorrect": false
+        },
+        {
+          "text": "That they teach the magical arts to the people of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose house was assaulted, and who was dragged before the rulers of the city?",
+      "explanation": "The crowd assaulted the house of Jason, and when they did not find Paul and Silas, they dragged Jason and certain brothers before the rulers.",
+      "bibleReference": "Acts 17:5-6",
+      "answers": [
+        {
+          "text": "Dionysius",
+          "isCorrect": false
+        },
+        {
+          "text": "Damaris",
+          "isCorrect": false
+        },
+        {
+          "text": "Silas",
+          "isCorrect": false
+        },
+        {
+          "text": "Jason",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why were those at Beroea called more noble than those in Thessalonica?",
+      "explanation": "They received the word with all readiness of mind and examined the Scriptures daily to see whether these things were so.",
+      "bibleReference": "Acts 17:11",
+      "answers": [
+        {
+          "text": "They gave money to the brothers who came",
+          "isCorrect": false
+        },
+        {
+          "text": "They received the word readily and examined the Scriptures daily",
+          "isCorrect": true
+        },
+        {
+          "text": "They drove out the Jews from Thessalonica",
+          "isCorrect": false
+        },
+        {
+          "text": "They built a synagogue for Paul to teach in",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What provoked Paul's spirit while he waited at Athens?",
+      "explanation": "His spirit was provoked within him as he saw the city full of idols.",
+      "bibleReference": "Acts 17:16",
+      "answers": [
+        {
+          "text": "He saw that the city was full of idols",
+          "isCorrect": true
+        },
+        {
+          "text": "A quarrel had arisen among the brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "There was no synagogue in the whole city",
+          "isCorrect": false
+        },
+        {
+          "text": "The people of the city were very poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which philosophers were conversing with Paul?",
+      "explanation": "Some of the Epicurean and Stoic philosophers were conversing with him.",
+      "bibleReference": "Acts 17:18",
+      "answers": [
+        {
+          "text": "Pharisees and Sadducees",
+          "isCorrect": false
+        },
+        {
+          "text": "Epicurean philosophers and Pharisees",
+          "isCorrect": false
+        },
+        {
+          "text": "Epicurean and Stoic philosophers",
+          "isCorrect": true
+        },
+        {
+          "text": "Stoic philosophers and scribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What inscription did Paul say he found on an altar in Athens?",
+      "explanation": "He found an altar with the inscription \"TO AN UNKNOWN GOD\".",
+      "bibleReference": "Acts 17:23",
+      "answers": [
+        {
+          "text": "TO THE GOD OF ISRAEL",
+          "isCorrect": false
+        },
+        {
+          "text": "TO AN UNKNOWN GOD",
+          "isCorrect": true
+        },
+        {
+          "text": "TO ARTEMIS OF THE EPHESIANS",
+          "isCorrect": false
+        },
+        {
+          "text": "TO JUPITER AND MERCURY",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul say about the God who made the world and all things in it?",
+      "explanation": "He said that this God, being Lord of heaven and earth, does not dwell in temples made with hands and is not served by men's hands.",
+      "bibleReference": "Acts 17:24-25",
+      "answers": [
+        {
+          "text": "He dwells in the temple at Jerusalem and nowhere else",
+          "isCorrect": false
+        },
+        {
+          "text": "He is served by the hands of priests with sacrifices",
+          "isCorrect": false
+        },
+        {
+          "text": "He is known to the Jews alone and to no other nation",
+          "isCorrect": false
+        },
+        {
+          "text": "He does not dwell in temples made with hands",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does God now command, according to Paul, and why?",
+      "explanation": "Paul said God now commands that all people everywhere should repent, because he has appointed a day in which he will judge the world in righteousness.",
+      "bibleReference": "Acts 17:30-31",
+      "answers": [
+        {
+          "text": "That everyone everywhere should repent, for he has appointed a day of judgment",
+          "isCorrect": true
+        },
+        {
+          "text": "That everyone should be circumcised, for the law still stands",
+          "isCorrect": false
+        },
+        {
+          "text": "That everyone should keep the feasts that he has appointed",
+          "isCorrect": false
+        },
+        {
+          "text": "That everyone should sacrifice to him alone in his temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the hearers react when they heard of the resurrection of the dead?",
+      "explanation": "Some mocked, but others said they wanted to hear him again concerning this.",
+      "bibleReference": "Acts 17:32",
+      "answers": [
+        {
+          "text": "They all believed what he had said",
+          "isCorrect": false
+        },
+        {
+          "text": "They stoned him outside the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Some mocked, but others wanted to hear him again",
+          "isCorrect": true
+        },
+        {
+          "text": "The rulers had him arrested at once",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

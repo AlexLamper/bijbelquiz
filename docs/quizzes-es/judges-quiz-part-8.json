@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Jueces 8: la queja de Ephraim, Succoth y Penuel, los dos reyes de Madián y el ephod de Gedeón.",
+  "slug": "judges-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué se quejaron los de Ephraim ante Gedeón?",
+      "explanation": "Los de Ephraim le reconvinieron fuertemente porque no los llamó cuando iba a la guerra contra Madián.",
+      "bibleReference": "Jueces 8:1",
+      "answers": [
+        {
+          "text": "De que derribó el altar de Baal",
+          "isCorrect": false
+        },
+        {
+          "text": "De que tomó los zarcillos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De que no los llamó a la guerra contra Madián",
+          "isCorrect": true
+        },
+        {
+          "text": "De que derribó la torre de Penuel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué palabra respondió Gedeón, y con ella se aplacó el enojo de Ephraim?",
+      "explanation": "Gedeón les preguntó si no era el rebusco de Ephraim mejor que la vendimia de Abiezer, y su enojo se aplacó.",
+      "bibleReference": "Jueces 8:2-3",
+      "answers": [
+        {
+          "text": "¿No soy yo el menor en la casa de mi padre?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Quién es Abimelech para que le sirvamos?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Qué cosa más fuerte que el león?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿No es el rebusco de Ephraim mejor que la vendimia de Abiezer?",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron los principales de Succoth cuando Gedeón pidió pan para su gente?",
+      "explanation": "Le preguntaron si ya estaba la mano de Zeba y Zalmunna en su mano, para que ellos hubieran de dar pan a su ejército.",
+      "bibleReference": "Jueces 8:5-6",
+      "answers": [
+        {
+          "text": "Preguntaron si ya tenía en su mano a los dos reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Le dieron pan y vino de buena gana",
+          "isCorrect": false
+        },
+        {
+          "text": "Le pidieron que derribara su torre",
+          "isCorrect": false
+        },
+        {
+          "text": "Le ofrecieron hombres para la guerra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Gedeón que haría a los de Succoth cuando Jehová le entregara a Zeba y Zalmunna?",
+      "explanation": "Gedeón dijo que trillaría su carne con espinas y abrojos del desierto.",
+      "bibleReference": "Jueces 8:7",
+      "answers": [
+        {
+          "text": "Quemar su ciudad con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Trillar su carne con espinas y abrojos",
+          "isCorrect": true
+        },
+        {
+          "text": "Llevarlos cautivos a Ophra",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomarles todo su ganado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Gedeón a los de Penuel que haría cuando volviera en paz?",
+      "explanation": "Gedeón dijo a los de Penuel que, cuando tornara en paz, derribaría aquella torre.",
+      "bibleReference": "Jueces 8:9",
+      "answers": [
+        {
+          "text": "Darles parte del despojo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedirles sus zarcillos",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar allí un altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Derribar aquella torre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos varones, los principales de Succoth y sus ancianos, dio por escrito el mozo que Gedeón tomó?",
+      "explanation": "El mozo de Succoth le dio por escrito los principales de Succoth y sus ancianos, setenta y siete varones.",
+      "bibleReference": "Jueces 8:14",
+      "answers": [
+        {
+          "text": "Setenta y siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Setenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintisiete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Gedeón, ¿quiénes eran los hombres que Zeba y Zalmunna mataron en Tabor?",
+      "explanation": "Gedeón dijo que eran sus hermanos, hijos de su madre, y que si los hubieran dejado vivir no los mataría.",
+      "bibleReference": "Jueces 8:18-19",
+      "answers": [
+        {
+          "text": "Los ancianos de Succoth",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus hermanos, hijos de su madre",
+          "isCorrect": true
+        },
+        {
+          "text": "Los príncipes Oreb y Zeeb",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hombres de Penuel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Gedeón cuando los israelitas le pidieron que fuera su señor?",
+      "explanation": "Gedeón respondió que no sería señor sobre ellos ni su hijo los señorearía, sino que Jehová sería su Señor.",
+      "bibleReference": "Jueces 8:22-23",
+      "answers": [
+        {
+          "text": "Que lo sería solo por siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo aceptaba para él y su hijo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová sería su Señor, no él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que eligieran a Abimelech",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Gedeón con los zarcillos de oro que pidió al pueblo?",
+      "explanation": "Gedeón hizo de ellos un ephod, que hizo guardar en su ciudad de Ophra, y fue tropiezo para él y su casa.",
+      "bibleReference": "Jueces 8:24-27",
+      "answers": [
+        {
+          "text": "Un ephod que guardó en Ophra",
+          "isCorrect": true
+        },
+        {
+          "text": "Un altar en el valle de Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "Una imagen de talla y de fundición",
+          "isCorrect": false
+        },
+        {
+          "text": "Collares para sus camellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Gedeón al hijo que le parió su concubina de Sichêm?",
+      "explanation": "Su concubina que estaba en Sichêm le parió un hijo, y le puso por nombre Abimelech.",
+      "bibleReference": "Jueces 8:31",
+      "answers": [
+        {
+          "text": "Jotham",
+          "isCorrect": false
+        },
+        {
+          "text": "Abimelech",
+          "isCorrect": true
+        },
+        {
+          "text": "Jether",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerobaal",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

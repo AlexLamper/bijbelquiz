@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 8",
+  "description": "Ten questions on 1 Samuel 8: Israel asks for a king like all the nations, and Samuel warns them of the way of the king.",
+  "slug": "1-samuel-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What were the names of Samuel's two sons?",
+      "explanation": "The name of Samuel's firstborn was Joel, and the name of his second was Abijah.",
+      "bibleReference": "1 Samuel 8:2",
+      "answers": [
+        {
+          "text": "Hophni and Phinehas",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliab and Abinadab",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonathan and Ishvi",
+          "isCorrect": false
+        },
+        {
+          "text": "Joel and Abijah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Samuel's sons serve as judges?",
+      "explanation": "1 Samuel 8:2 says they were judges in Beersheba.",
+      "bibleReference": "1 Samuel 8:2",
+      "answers": [
+        {
+          "text": "Ramah",
+          "isCorrect": false
+        },
+        {
+          "text": "Beersheba",
+          "isCorrect": true
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Mizpah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Samuel's sons behave?",
+      "explanation": "His sons didn't walk in his ways, but turned away after dishonest gain, took bribes, and perverted justice.",
+      "bibleReference": "1 Samuel 8:3",
+      "answers": [
+        {
+          "text": "They served other gods openly",
+          "isCorrect": false
+        },
+        {
+          "text": "They refused to judge anyone",
+          "isCorrect": false
+        },
+        {
+          "text": "They took bribes and perverted justice",
+          "isCorrect": true
+        },
+        {
+          "text": "They left Israel for Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the elders of Israel ask Samuel to do?",
+      "explanation": "They said, \"Make us a king to judge us like all the nations.\"",
+      "bibleReference": "1 Samuel 8:5",
+      "answers": [
+        {
+          "text": "Make them a king to judge them like all the nations",
+          "isCorrect": true
+        },
+        {
+          "text": "Make his sons priests instead of judges",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring the ark back to Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Lead them in battle against the Philistines himself",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Yahweh, whom had the people really rejected?",
+      "explanation": "Yahweh said they had not rejected Samuel, but had rejected Yahweh as the king over them.",
+      "bibleReference": "1 Samuel 8:7",
+      "answers": [
+        {
+          "text": "Only Samuel as their judge",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests of Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh as king over them",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel say the king would take the people's daughters to be?",
+      "explanation": "He said the king would take their daughters to be perfumers, cooks, and bakers.",
+      "bibleReference": "1 Samuel 8:13",
+      "answers": [
+        {
+          "text": "Perfumers, cooks, and bakers",
+          "isCorrect": true
+        },
+        {
+          "text": "Singers and dancers",
+          "isCorrect": false
+        },
+        {
+          "text": "Shepherds and weavers",
+          "isCorrect": false
+        },
+        {
+          "text": "Wives for his soldiers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What part of their seed and vineyards would the king take?",
+      "explanation": "He will take one tenth of your seed and of your vineyards and give it to his officers and servants.",
+      "bibleReference": "1 Samuel 8:15",
+      "answers": [
+        {
+          "text": "Half",
+          "isCorrect": false
+        },
+        {
+          "text": "One fifth",
+          "isCorrect": false
+        },
+        {
+          "text": "One tenth",
+          "isCorrect": true
+        },
+        {
+          "text": "All of it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel say Yahweh would do when they cried out because of their king?",
+      "explanation": "Samuel said they would cry out because of their king, and Yahweh would not answer them in that day.",
+      "bibleReference": "1 Samuel 8:18",
+      "answers": [
+        {
+          "text": "He would remove the king at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He would not answer them",
+          "isCorrect": true
+        },
+        {
+          "text": "He would send them a prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "He would give them a better king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides judging them, what did the people want their king to do?",
+      "explanation": "They wanted a king to judge them, go out before them, and fight their battles.",
+      "bibleReference": "1 Samuel 8:20",
+      "answers": [
+        {
+          "text": "Build a great temple for Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "Lower the taxes on their fields",
+          "isCorrect": false
+        },
+        {
+          "text": "Teach them the law of Moses each day",
+          "isCorrect": false
+        },
+        {
+          "text": "Go out before them and fight their battles",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel finally say to the men of Israel?",
+      "explanation": "Samuel said to the men of Israel, \"Everyone go to your own city.\"",
+      "bibleReference": "1 Samuel 8:22",
+      "answers": [
+        {
+          "text": "Bring me your best young men",
+          "isCorrect": false
+        },
+        {
+          "text": "Everyone go to your own city",
+          "isCorrect": true
+        },
+        {
+          "text": "Gather again at Mizpah tomorrow",
+          "isCorrect": false
+        },
+        {
+          "text": "Choose a king from among you today",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

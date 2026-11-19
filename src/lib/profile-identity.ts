@@ -1,5 +1,6 @@
 import { connectDB, User } from '@/database';
 import { AvatarConfig, normalizeAvatar, resolveAvatar } from '@/lib/avatar';
+import { msg } from '@/lib/api-messages';
 
 /**
  * Display name and mascot: the two things a player owns and can change.
@@ -65,7 +66,7 @@ export async function updateIdentity(
 
   const user = await User.findById(userId);
   if (!user) {
-    return { ok: false, status: 404, error: 'Gebruiker niet gevonden' };
+    return { ok: false, status: 404, error: msg('Gebruiker niet gevonden') };
   }
 
   if (input.name !== undefined) {

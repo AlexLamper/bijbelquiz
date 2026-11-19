@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 24",
+  "description": "Ten questions on Luke 24: the empty tomb, the two men in dazzling clothing, the walk to Emmaus and the blessing at Bethany.",
+  "slug": "luke-bible-quiz-part-24",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the women find when they came to the tomb with the spices?",
+      "explanation": "They came to the tomb bringing the spices they had prepared, and they found the stone rolled away from the tomb.",
+      "bibleReference": "Luke 24:1-2",
+      "answers": [
+        {
+          "text": "The stone rolled away from the tomb",
+          "isCorrect": true
+        },
+        {
+          "text": "A soldier asleep at the entrance",
+          "isCorrect": false
+        },
+        {
+          "text": "The tomb sealed with wax",
+          "isCorrect": false
+        },
+        {
+          "text": "A new stone set in place",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who stood by the women while they were perplexed?",
+      "explanation": "While they were greatly perplexed, two men stood by them in dazzling clothing.",
+      "bibleReference": "Luke 24:4",
+      "answers": [
+        {
+          "text": "Peter and one of the eleven",
+          "isCorrect": false
+        },
+        {
+          "text": "A gardener carrying water",
+          "isCorrect": false
+        },
+        {
+          "text": "Two men in dazzling clothing",
+          "isCorrect": true
+        },
+        {
+          "text": "A single man in a linen cloth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did these men say to the women?",
+      "explanation": "They asked why they sought the living among the dead, and said, \"He isn't here, but is risen.\"",
+      "bibleReference": "Luke 24:5-6",
+      "answers": [
+        {
+          "text": "\"Go and wait for him in Galilee as he told you\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Why do you seek the living among the dead? He isn't here, but is risen\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The body has been taken away by his disciples\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Do not tell anyone what you have seen here\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which women are named in this chapter?",
+      "explanation": "They were Mary Magdalene, Joanna, and Mary the mother of James, and the other women with them told these things to the apostles.",
+      "bibleReference": "Luke 24:10",
+      "answers": [
+        {
+          "text": "Mary and Martha of the village of Bethany",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary the mother of Jesus and Salome",
+          "isCorrect": false
+        },
+        {
+          "text": "Joanna and Susanna and no one else",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary Magdalene, Joanna, and Mary the mother of James",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Peter see when he stooped and looked into the tomb?",
+      "explanation": "Peter ran to the tomb, stooped and looked in, and saw the strips of linen lying by themselves, then went home wondering what had happened.",
+      "bibleReference": "Luke 24:12",
+      "answers": [
+        {
+          "text": "The strips of linen lying by themselves",
+          "isCorrect": true
+        },
+        {
+          "text": "Two men sitting inside",
+          "isCorrect": false
+        },
+        {
+          "text": "The spices the women had left",
+          "isCorrect": false
+        },
+        {
+          "text": "The stone lying broken on the ground",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which village were two of them walking that day?",
+      "explanation": "Two of them were going that very day to a village named Emmaus, which was sixty stadia from Jerusalem.",
+      "bibleReference": "Luke 24:13",
+      "answers": [
+        {
+          "text": "Bethany",
+          "isCorrect": false
+        },
+        {
+          "text": "Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "Arimathaea",
+          "isCorrect": false
+        },
+        {
+          "text": "Emmaus",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the name of one of the two who walked with him?",
+      "explanation": "One of them, named Cleopas, asked whether he was the only stranger in Jerusalem who did not know what had happened.",
+      "bibleReference": "Luke 24:18",
+      "answers": [
+        {
+          "text": "Simon",
+          "isCorrect": false
+        },
+        {
+          "text": "Joanna",
+          "isCorrect": false
+        },
+        {
+          "text": "Cleopas",
+          "isCorrect": true
+        },
+        {
+          "text": "Nathanael",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what moment did the two recognize him?",
+      "explanation": "When he had sat down at the table with them, he took the bread, gave thanks, broke it and gave it to them, and then their eyes were opened and they recognized him.",
+      "bibleReference": "Luke 24:30-31",
+      "answers": [
+        {
+          "text": "When he first came near on the road",
+          "isCorrect": false
+        },
+        {
+          "text": "When he broke the bread at the table",
+          "isCorrect": true
+        },
+        {
+          "text": "When they reached the edge of the village",
+          "isCorrect": false
+        },
+        {
+          "text": "When he explained the prophets to them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they give him to eat?",
+      "explanation": "They gave him a piece of a broiled fish and some honeycomb, and he took them and ate in front of them.",
+      "bibleReference": "Luke 24:42-43",
+      "answers": [
+        {
+          "text": "Bread and a cup of mixed wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Unleavened bread and bitter herbs",
+          "isCorrect": false
+        },
+        {
+          "text": "Dried figs and some roasted grain",
+          "isCorrect": false
+        },
+        {
+          "text": "A piece of broiled fish and some honeycomb",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did he lead them out to before he was carried up into heaven?",
+      "explanation": "He led them out as far as Bethany, lifted up his hands and blessed them, and while he blessed them he withdrew from them and was carried up into heaven.",
+      "bibleReference": "Luke 24:50-51",
+      "answers": [
+        {
+          "text": "As far as Bethany",
+          "isCorrect": true
+        },
+        {
+          "text": "To the temple courtyard",
+          "isCorrect": false
+        },
+        {
+          "text": "To the mountain called Olivet",
+          "isCorrect": false
+        },
+        {
+          "text": "To the village of Emmaus",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

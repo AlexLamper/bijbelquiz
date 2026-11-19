@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 2",
+  "description": "Ten questions on John 2: the wedding at Cana, the water become wine, and Jesus in the temple at the Passover.",
+  "slug": "john-bible-quiz-part-2",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where was the wedding that Jesus and his disciples were invited to?",
+      "explanation": "The third day there was a wedding in Cana of Galilee, and Jesus' mother was there.",
+      "bibleReference": "John 2:1-2",
+      "answers": [
+        {
+          "text": "In Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In Cana of Galilee",
+          "isCorrect": true
+        },
+        {
+          "text": "In Bethany beyond the Jordan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus' mother tell the servants?",
+      "explanation": "When the wine ran out she told him, \"They have no wine,\" and then said to the servants, \"Whatever he says to you, do it.\"",
+      "bibleReference": "John 2:3-5",
+      "answers": [
+        {
+          "text": "\"Whatever he says to you, do it\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Bring him the best wine first\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Say nothing to the ruler of the feast\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Fetch water from Jacob's well\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many stone water pots were set there?",
+      "explanation": "There were six water pots of stone set there after the Jews' way of purifying, containing two or three metretes apiece.",
+      "bibleReference": "John 2:6",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Six",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the ruler of the feast say to the bridegroom?",
+      "explanation": "Having tasted the water now become wine, the ruler of the feast told the bridegroom, \"You have kept the good wine until now!\"",
+      "bibleReference": "John 2:9-10",
+      "answers": [
+        {
+          "text": "\"Where did you buy this wine?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You have kept the good wine until now!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Your servants have served us badly\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let the guests drink no more today\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter call what Jesus did in Cana of Galilee?",
+      "explanation": "This beginning of his signs Jesus did in Cana of Galilee, and revealed his glory, and his disciples believed in him.",
+      "bibleReference": "John 2:11",
+      "answers": [
+        {
+          "text": "A parable for his disciples",
+          "isCorrect": false
+        },
+        {
+          "text": "The second sign that he did",
+          "isCorrect": false
+        },
+        {
+          "text": "The beginning of his signs",
+          "isCorrect": true
+        },
+        {
+          "text": "A work of the law of Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus make to drive the sellers out of the temple?",
+      "explanation": "He made a whip of cords and threw all out of the temple, both the sheep and the oxen, and poured out the changers' money and overthrew their tables.",
+      "bibleReference": "John 2:15",
+      "answers": [
+        {
+          "text": "A staff of olive wood",
+          "isCorrect": false
+        },
+        {
+          "text": "A whip of cords",
+          "isCorrect": true
+        },
+        {
+          "text": "A chain of iron",
+          "isCorrect": false
+        },
+        {
+          "text": "A torch of reeds",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he say to those who sold the doves?",
+      "explanation": "He told them to take these things out of there, and not to make his Father's house a marketplace.",
+      "bibleReference": "John 2:16",
+      "answers": [
+        {
+          "text": "\"Don't make my Father's house a marketplace!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Sell them outside the city walls\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Give what you have gained to the poor\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Offer them on the altar instead\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did the Jews say it had taken to build the temple?",
+      "explanation": "When Jesus said, \"Destroy this temple, and in three days I will raise it up,\" the Jews said it had taken forty-six years to build the temple.",
+      "bibleReference": "John 2:19-20",
+      "answers": [
+        {
+          "text": "Three years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty-six years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What temple was Jesus speaking of?",
+      "explanation": "He spoke of the temple of his body, and when he was raised from the dead his disciples remembered that he had said this.",
+      "bibleReference": "John 2:21-22",
+      "answers": [
+        {
+          "text": "The temple in Cana",
+          "isCorrect": false
+        },
+        {
+          "text": "The temple of his body",
+          "isCorrect": true
+        },
+        {
+          "text": "The temple Moses built in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "A temple the Jews would build later",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Jesus not entrust himself to those who believed at the feast?",
+      "explanation": "He did not entrust himself to them because he knew everyone, and did not need anyone to testify concerning man, for he himself knew what was in man.",
+      "bibleReference": "John 2:23-25",
+      "answers": [
+        {
+          "text": "Because they had not seen any signs",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they were from Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he knew everyone and knew what was in man",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the Passover was already over",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

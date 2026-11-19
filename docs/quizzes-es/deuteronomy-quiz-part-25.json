@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Deuteronomio 25: los cuarenta azotes, el deber del cuñado, las pesas justas y el recuerdo de Amalec.",
+  "slug": "deuteronomy-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos azotes, como máximo, podía recibir el que merecía ser azotado?",
+      "explanation": "El texto dice que le harán dar cuarenta azotes, no más, para que su hermano no se envilezca delante de sus ojos.",
+      "bibleReference": "Deuteronomio 25:3",
+      "answers": [
+        { "text": "Treinta azotes", "isCorrect": false },
+        { "text": "Cuarenta azotes", "isCorrect": true },
+        { "text": "Cincuenta azotes", "isCorrect": false },
+        { "text": "Cien azotes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se prohibía poner al buey cuando estaba trillando?",
+      "explanation": "El texto dice, en un solo versículo: no pondrás bozal al buey cuando trillare.",
+      "bibleReference": "Deuteronomio 25:4",
+      "answers": [
+        { "text": "Un yugo", "isCorrect": false },
+        { "text": "Una carga", "isCorrect": false },
+        { "text": "Una cuerda", "isCorrect": false },
+        { "text": "Un bozal", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Si un hombre moría sin tener hijo, ¿quién debía tomar por mujer a su viuda?",
+      "explanation": "El texto dice que la mujer del muerto no se casará fuera con hombre extraño: su cuñado entrará a ella y la tomará por su mujer.",
+      "bibleReference": "Deuteronomio 25:5",
+      "answers": [
+        { "text": "Su cuñado", "isCorrect": true },
+        { "text": "Su propio padre", "isCorrect": false },
+        { "text": "El anciano más cercano", "isCorrect": false },
+        { "text": "Un extraño de otra tribu", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En nombre de quién se levantaría el primogénito que ella diera a luz?",
+      "explanation": "El texto dice que el primogénito se levantará en nombre de su hermano el muerto, para que su nombre no sea raído de Israel.",
+      "bibleReference": "Deuteronomio 25:6",
+      "answers": [
+        { "text": "En nombre de su propio padre", "isCorrect": false },
+        { "text": "En nombre del anciano de la ciudad", "isCorrect": false },
+        { "text": "En nombre del hermano muerto", "isCorrect": true },
+        { "text": "En nombre de la madre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Si el hombre decía que no quería tomarla, ¿qué hacía la cuñada delante de los ancianos?",
+      "explanation": "El texto dice que se llegaba a él, le descalzaba el zapato de su pie y le escupía en el rostro, diciendo que así se hace al varón que no edifica la casa de su hermano.",
+      "bibleReference": "Deuteronomio 25:9",
+      "answers": [
+        { "text": "Lloraba delante de los ancianos", "isCorrect": false },
+        { "text": "Le quitaba su manto y su cinto", "isCorrect": false },
+        { "text": "Lo acusaba ante el juez de la ciudad", "isCorrect": false },
+        { "text": "Le descalzaba el zapato y le escupía", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo sería llamado en Israel el nombre de aquel hombre?",
+      "explanation": "El texto dice que su nombre será llamado en Israel: La casa del descalzado.",
+      "bibleReference": "Deuteronomio 25:10",
+      "answers": [
+        { "text": "La casa del rebelde", "isCorrect": false },
+        { "text": "La casa del descalzado", "isCorrect": true },
+        { "text": "La casa sin nombre", "isCorrect": false },
+        { "text": "La casa del pobre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué no debía tenerse en la bolsa?",
+      "explanation": "El texto dice que no tendrás en tu bolsa pesa grande y pesa chica.",
+      "bibleReference": "Deuteronomio 25:13",
+      "answers": [
+        { "text": "Plata de los extranjeros", "isCorrect": false },
+        { "text": "El precio de la ramera", "isCorrect": false },
+        { "text": "Pesa grande y pesa chica", "isCorrect": true },
+        { "text": "Prenda de los pobres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Y qué no debía tenerse en casa?",
+      "explanation": "El texto dice que no tendrás en tu casa epha grande y epha pequeño, sino epha cabal y justo.",
+      "bibleReference": "Deuteronomio 25:14-15",
+      "answers": [
+        { "text": "Epha grande y epha pequeño", "isCorrect": true },
+        { "text": "Dos muelas de molino", "isCorrect": false },
+        { "text": "Imágenes de fundición", "isCorrect": false },
+        { "text": "Vasos de los Egipcios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué le hizo Amalec a Israel en el camino?",
+      "explanation": "El texto dice que le salió al camino y le desbarató la retaguardia de todos los flacos que iban detrás, cuando estaba cansado y trabajado.",
+      "bibleReference": "Deuteronomio 25:18",
+      "answers": [
+        { "text": "Cerró el camino con sus carros", "isCorrect": false },
+        { "text": "Desbarató la retaguardia de los flacos", "isCorrect": true },
+        { "text": "Alquiló a un profeta contra Israel", "isCorrect": false },
+        { "text": "Les negó el pan y el agua", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer Israel con la memoria de Amalec cuando Jehová le diera reposo?",
+      "explanation": "El texto manda raer la memoria de Amalec de debajo del cielo, y añade: no te olvides.",
+      "bibleReference": "Deuteronomio 25:19",
+      "answers": [
+        { "text": "Escribirla en un libro", "isCorrect": false },
+        { "text": "Contarla a sus hijos", "isCorrect": false },
+        { "text": "Raerla de debajo del cielo", "isCorrect": true },
+        { "text": "Recordarla cada año", "isCorrect": false }
+      ]
+    }
+  ]
+}

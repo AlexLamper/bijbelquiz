@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 11",
+  "description": "Ten questions on 2 Samuel 11: David and Bathsheba, Uriah's loyalty, and the letter that sent him to his death.",
+  "slug": "2-samuel-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where did David stay while Joab and all Israel besieged Rabbah?",
+      "explanation": "David sent Joab and all Israel, and they besieged Rabbah, but David stayed at Jerusalem.",
+      "bibleReference": "2 Samuel 11:1",
+      "answers": [
+        {
+          "text": "At Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "At Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "At Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "At Mahanaim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From where did David see a woman bathing?",
+      "explanation": "At evening David walked on the roof of the king's house, and from the roof he saw a woman bathing.",
+      "bibleReference": "2 Samuel 11:2",
+      "answers": [
+        {
+          "text": "From the roof of the king's house",
+          "isCorrect": true
+        },
+        {
+          "text": "From the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "From the window of the tabernacle",
+          "isCorrect": false
+        },
+        {
+          "text": "From the top of the city wall",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose daughter was Bathsheba, according to the report David received?",
+      "explanation": "David was told, \"Isn't this Bathsheba, the daughter of Eliam, Uriah the Hittite's wife?\"",
+      "bibleReference": "2 Samuel 11:3",
+      "answers": [
+        {
+          "text": "Jesse",
+          "isCorrect": false
+        },
+        {
+          "text": "Nathan",
+          "isCorrect": false
+        },
+        {
+          "text": "Nahash",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliam",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Uriah sleep instead of going down to his house?",
+      "explanation": "Uriah slept at the door of the king's house with all the servants of his lord, and didn't go down to his house.",
+      "bibleReference": "2 Samuel 11:9",
+      "answers": [
+        {
+          "text": "In the house of Joab his captain",
+          "isCorrect": false
+        },
+        {
+          "text": "At the door of the king's house",
+          "isCorrect": true
+        },
+        {
+          "text": "In the courts with the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "At an inn outside the city gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Uriah, who were staying in tents?",
+      "explanation": "Uriah said, \"The ark, Israel, and Judah, are staying in tents.\"",
+      "bibleReference": "2 Samuel 11:11",
+      "answers": [
+        {
+          "text": "The ark, Israel, and Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "The priests and the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's sons and daughters",
+          "isCorrect": false
+        },
+        {
+          "text": "The Philistines and their kings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By whose hand did David send his letter to Joab?",
+      "explanation": "In the morning David wrote a letter to Joab and sent it by the hand of Uriah.",
+      "bibleReference": "2 Samuel 11:14",
+      "answers": [
+        {
+          "text": "By the hand of Nathan",
+          "isCorrect": false
+        },
+        {
+          "text": "By the hand of a Cushite",
+          "isCorrect": false
+        },
+        {
+          "text": "By the hand of Uriah himself",
+          "isCorrect": true
+        },
+        {
+          "text": "By the hand of Bathsheba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did David write in the letter to Joab?",
+      "explanation": "He wrote, \"Send Uriah to the forefront of the hottest battle, and retreat from him, that he may be struck, and die.\"",
+      "bibleReference": "2 Samuel 11:15",
+      "answers": [
+        {
+          "text": "To send Uriah home to his wife in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "To put Uriah in the hottest battle and retreat",
+          "isCorrect": true
+        },
+        {
+          "text": "To make Uriah captain over the army",
+          "isCorrect": false
+        },
+        {
+          "text": "To keep Uriah safe in the camp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which man might the king ask about, who was killed when a woman cast an upper millstone on him from the wall?",
+      "explanation": "The messenger was told the king might ask, \"Who struck Abimelech the son of Jerubbesheth? Didn't a woman cast an upper millstone on him from the wall?\"",
+      "bibleReference": "2 Samuel 11:20-21",
+      "answers": [
+        {
+          "text": "Abner the son of Ner",
+          "isCorrect": false
+        },
+        {
+          "text": "Goliath the giant of Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Sisera the captain of Jabin",
+          "isCorrect": false
+        },
+        {
+          "text": "Abimelech the son of Jerubbesheth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did David tell the messenger to say to Joab?",
+      "explanation": "David said, \"Don't let this thing displease you, for the sword devours one as well as another.\"",
+      "bibleReference": "2 Samuel 11:25",
+      "answers": [
+        {
+          "text": "That Joab must come home at once",
+          "isCorrect": false
+        },
+        {
+          "text": "That Uriah should be buried with honor",
+          "isCorrect": false
+        },
+        {
+          "text": "That the sword devours one as well as another",
+          "isCorrect": true
+        },
+        {
+          "text": "That the war must end",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Yahweh view what David had done?",
+      "explanation": "After she became David's wife and bore him a son, the text says the thing David had done displeased Yahweh.",
+      "bibleReference": "2 Samuel 11:27",
+      "answers": [
+        {
+          "text": "Yahweh forgave it at once",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh did not notice it",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh praised David for it",
+          "isCorrect": false
+        },
+        {
+          "text": "It displeased Yahweh",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

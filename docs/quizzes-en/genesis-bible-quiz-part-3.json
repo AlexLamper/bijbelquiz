@@ -1,240 +1,240 @@
 {
   "title": "Genesis Bible Quiz - Chapter 3",
-  "description": "Ten questions on the fall in Genesis 3: the serpent, the fruit and the first consequences.",
+  "description": "Ten questions on Genesis 3: the serpent, the forbidden fruit, and the man and woman sent out of the garden.",
   "slug": "genesis-bible-quiz-part-3",
   "categorySlug": "old-testament",
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
-      "text": "Which creature spoke to the woman in the garden?",
-      "explanation": "The serpent was more crafty than any animal of the field and began the conversation with a question about what God had said.",
+      "text": "How is the serpent described at the start of the chapter?",
+      "explanation": "The serpent was more subtle than any animal of the field which Yahweh God had made.",
       "bibleReference": "Genesis 3:1",
       "answers": [
         {
-          "text": "A lion of the field",
+          "text": "More beautiful than any bird",
+          "isCorrect": false
+        },
+        {
+          "text": "Stronger than all the livestock",
+          "isCorrect": false
+        },
+        {
+          "text": "Larger than any creature",
+          "isCorrect": false
+        },
+        {
+          "text": "More subtle than any animal of the field",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to the woman, what had God said about the tree in the middle of the garden?",
+      "explanation": "The woman said God had told them not to eat of it and not to touch it, lest they die.",
+      "bibleReference": "Genesis 3:3",
+      "answers": [
+        {
+          "text": "Eat of it only at night",
+          "isCorrect": false
+        },
+        {
+          "text": "Do not eat of it or touch it",
+          "isCorrect": true
+        },
+        {
+          "text": "Offer its fruit to God first",
+          "isCorrect": false
+        },
+        {
+          "text": "Eat of it after the harvest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the serpent say would happen if they ate from the tree?",
+      "explanation": "The serpent said their eyes would be opened and they would be like God, knowing good and evil.",
+      "bibleReference": "Genesis 3:4-5",
+      "answers": [
+        {
+          "text": "Their eyes would be opened",
+          "isCorrect": true
+        },
+        {
+          "text": "They would live in the garden forever",
+          "isCorrect": false
+        },
+        {
+          "text": "They would rule over the animals",
+          "isCorrect": false
+        },
+        {
+          "text": "They would never feel hungry",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the man and the woman make for themselves after their eyes were opened?",
+      "explanation": "They knew that they were naked, so they sewed fig leaves together and made coverings.",
+      "bibleReference": "Genesis 3:7",
+      "answers": [
+        {
+          "text": "Garments of animal skins",
+          "isCorrect": false
+        },
+        {
+          "text": "Clothes of woven wool",
+          "isCorrect": false
+        },
+        {
+          "text": "Coverings of fig leaves",
+          "isCorrect": true
+        },
+        {
+          "text": "Robes of palm branches",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did they hear Yahweh God's voice walking in the garden?",
+      "explanation": "They heard Yahweh God's voice walking in the garden in the cool of the day, and they hid among the trees.",
+      "bibleReference": "Genesis 3:8",
+      "answers": [
+        {
+          "text": "In the middle of the night",
+          "isCorrect": false
+        },
+        {
+          "text": "Early at sunrise",
+          "isCorrect": false
+        },
+        {
+          "text": "In the cool of the day",
+          "isCorrect": true
+        },
+        {
+          "text": "In the heat of noon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the woman blame when God asked what she had done?",
+      "explanation": "The woman said, \"The serpent deceived me, and I ate.\"",
+      "bibleReference": "Genesis 3:13",
+      "answers": [
+        {
+          "text": "The man",
+          "isCorrect": false
+        },
+        {
+          "text": "Herself",
+          "isCorrect": false
+        },
+        {
+          "text": "The cherubim",
           "isCorrect": false
         },
         {
           "text": "The serpent",
           "isCorrect": true
-        },
-        {
-          "text": "A dove of the air",
-          "isCorrect": false
-        },
-        {
-          "text": "A raven of the valley",
-          "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did the woman say God had forbidden them to do with the fruit of the tree in the middle of the garden?",
-      "explanation": "The woman told the serpent that God had said they must not eat from it, and not touch it, or they would die.",
-      "bibleReference": "Genesis 3:3",
-      "answers": [
-        {
-          "text": "Pick it before it was ripe",
-          "isCorrect": false
-        },
-        {
-          "text": "Give it to the animals",
-          "isCorrect": false
-        },
-        {
-          "text": "Carry it out of the garden",
-          "isCorrect": false
-        },
-        {
-          "text": "Eat it or touch it, or they would die",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "text": "What did the serpent promise would happen if they ate the fruit?",
-      "explanation": "The serpent said their eyes would be opened and they would be like God, knowing good and evil.",
-      "bibleReference": "Genesis 3:5",
-      "answers": [
-        {
-          "text": "Their eyes would be opened and they would be like God",
-          "isCorrect": true
-        },
-        {
-          "text": "They would live in the garden without end",
-          "isCorrect": false
-        },
-        {
-          "text": "They would become rulers over all the animals",
-          "isCorrect": false
-        },
-        {
-          "text": "They would be hidden from the voice of God",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "What did the man and woman do after they ate the fruit?",
-      "explanation": "Their eyes were opened, they knew that they were naked, and they sewed fig leaves together and made coverings.",
-      "bibleReference": "Genesis 3:7",
-      "answers": [
-        {
-          "text": "They left the garden right away and ran",
-          "isCorrect": false
-        },
-        {
-          "text": "They hid themselves behind the great rocks",
-          "isCorrect": false
-        },
-        {
-          "text": "They sewed fig leaves together to cover themselves",
-          "isCorrect": true
-        },
-        {
-          "text": "They built an altar and offered a sacrifice",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "Where did the man and woman hide when they heard God walking in the garden?",
-      "explanation": "They hid themselves from the presence of the LORD God among the trees of the garden.",
-      "bibleReference": "Genesis 3:8",
-      "answers": [
-        {
-          "text": "Inside a cave in the hillside",
-          "isCorrect": false
-        },
-        {
-          "text": "Among the trees of the garden",
-          "isCorrect": true
-        },
-        {
-          "text": "Under the waters of the river",
-          "isCorrect": false
-        },
-        {
-          "text": "Behind the gate of the garden",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "Whom did the man blame first when God asked him about the fruit?",
-      "explanation": "The man said that the woman whom God gave to be with him gave him fruit from the tree, and he ate.",
-      "bibleReference": "Genesis 3:12",
-      "answers": [
-        {
-          "text": "The woman God had given him",
-          "isCorrect": true
-        },
-        {
-          "text": "The serpent that deceived her",
-          "isCorrect": false
-        },
-        {
-          "text": "The angel who stood at the gate",
-          "isCorrect": false
-        },
-        {
-          "text": "Only himself, and no one else",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "What did God say would happen to the serpent?",
-      "explanation": "God cursed the serpent above all livestock and every animal of the field: on its belly it would go, and dust it would eat.",
+      "text": "What did God say the serpent would do all the days of its life?",
+      "explanation": "God cursed the serpent and said it would go on its belly and eat dust all the days of its life.",
       "bibleReference": "Genesis 3:14",
       "answers": [
         {
-          "text": "It would be cast into the sea",
+          "text": "Live only in the water",
           "isCorrect": false
         },
         {
-          "text": "It would lose its voice",
-          "isCorrect": false
-        },
-        {
-          "text": "It would be turned to stone",
-          "isCorrect": false
-        },
-        {
-          "text": "It would crawl on its belly and eat dust",
+          "text": "Go on its belly and eat dust",
           "isCorrect": true
+        },
+        {
+          "text": "Hide in the trees",
+          "isCorrect": false
+        },
+        {
+          "text": "Fly above the earth",
+          "isCorrect": false
         }
       ]
     },
     {
-      "text": "What name did the man give his wife?",
-      "explanation": "The man called his wife Eve, because she would be the mother of all the living.",
+      "text": "What did God say the cursed ground would yield to the man?",
+      "explanation": "God told Adam the ground would yield thorns and thistles, and he would eat the herb of the field.",
+      "bibleReference": "Genesis 3:17-18",
+      "answers": [
+        {
+          "text": "Thorns and thistles",
+          "isCorrect": true
+        },
+        {
+          "text": "Gold and onyx",
+          "isCorrect": false
+        },
+        {
+          "text": "Only grass",
+          "isCorrect": false
+        },
+        {
+          "text": "Figs and olives",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the man call his wife Eve?",
+      "explanation": "The man called his wife Eve because she would be the mother of all the living.",
       "bibleReference": "Genesis 3:20",
       "answers": [
         {
-          "text": "Sarah",
-          "isCorrect": false
-        },
-        {
-          "text": "Naomi",
-          "isCorrect": false
-        },
-        {
-          "text": "Eve",
+          "text": "She would be the mother of all the living",
           "isCorrect": true
         },
         {
-          "text": "Hannah",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "What did God make for Adam and his wife to wear?",
-      "explanation": "The LORD God made garments of animal skins for Adam and for his wife and clothed them.",
-      "bibleReference": "Genesis 3:21",
-      "answers": [
-        {
-          "text": "Garments of animal skins",
-          "isCorrect": true
-        },
-        {
-          "text": "Robes of fine linen",
+          "text": "She would rule over the garden",
           "isCorrect": false
         },
         {
-          "text": "Crowns of flowers",
+          "text": "She had spoken with the serpent",
           "isCorrect": false
         },
         {
-          "text": "Cloaks of wool",
+          "text": "She was the first to see the tree",
           "isCorrect": false
         }
       ]
     },
     {
       "text": "What did God place at the east of the garden to guard the way to the tree of life?",
-      "explanation": "God placed cherubim and the flame of a flaming sword which turned every way, to guard the way to the tree of life.",
+      "explanation": "God drove out the man and placed cherubim and a flaming sword which turned every way to guard the way to the tree of life.",
       "bibleReference": "Genesis 3:24",
       "answers": [
         {
-          "text": "A great wall of stone",
+          "text": "A lion and a high wall",
+          "isCorrect": false
+        },
+        {
+          "text": "A great river",
+          "isCorrect": false
+        },
+        {
+          "text": "The serpent and a gate",
           "isCorrect": false
         },
         {
           "text": "Cherubim and a flaming sword",
           "isCorrect": true
-        },
-        {
-          "text": "A deep river with no crossing",
-          "isCorrect": false
-        },
-        {
-          "text": "A band of lions on watch",
-          "isCorrect": false
         }
       ]
     }

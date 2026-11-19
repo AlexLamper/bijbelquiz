@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre Éxodo 29: la consagración de Aarón y sus hijos, el becerro y los dos carneros, los siete días del rito y el holocausto continuo.",
+  "slug": "exodus-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué animales debía tomar para consagrar a los sacerdotes?",
+      "explanation": "Para consagrarlos se tomaba un becerro de la vacada y dos carneros sin tacha.",
+      "bibleReference": "Éxodo 29:1",
+      "answers": [
+        {
+          "text": "Dos corderos de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero y dos cabritos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro y dos carneros",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce becerros de la vacada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con Aarón y sus hijos a la puerta del tabernáculo del testimonio?",
+      "explanation": "Se les hacía llegar a la puerta del tabernáculo del testimonio y allí se los lavaba con agua.",
+      "bibleReference": "Éxodo 29:4",
+      "answers": [
+        {
+          "text": "Se los ungía con sangre",
+          "isCorrect": false
+        },
+        {
+          "text": "Se los lavaba con agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Se les cortaba el cabello",
+          "isCorrect": false
+        },
+        {
+          "text": "Se les daba pan sin levadura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se ponía sobre la mitra de Aarón?",
+      "explanation": "Se le ponía la mitra sobre la cabeza y, sobre la mitra, la diadema santa.",
+      "bibleReference": "Éxodo 29:6",
+      "answers": [
+        {
+          "text": "La diadema santa",
+          "isCorrect": true
+        },
+        {
+          "text": "El racional",
+          "isCorrect": false
+        },
+        {
+          "text": "El cinto del ephod",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordón de jacinto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se derramaba sobre la cabeza de Aarón para ungirlo?",
+      "explanation": "Se tomaba el aceite de la unción y se derramaba sobre su cabeza, y así quedaba ungido.",
+      "bibleReference": "Éxodo 29:7",
+      "answers": [
+        {
+          "text": "La sangre del becerro",
+          "isCorrect": false
+        },
+        {
+          "text": "Agua de la fuente",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino de la libación",
+          "isCorrect": false
+        },
+        {
+          "text": "El aceite de la unción",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se quemaba la carne del becerro con su pellejo y su estiércol?",
+      "explanation": "La carne del becerro, su pellejo y su estiércol se consumían a fuego fuera del campo: es expiación.",
+      "bibleReference": "Éxodo 29:14",
+      "answers": [
+        {
+          "text": "Sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera del campo",
+          "isCorrect": true
+        },
+        {
+          "text": "A la puerta del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el lugar del santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué oreja se ponía la sangre del segundo carnero?",
+      "explanation": "Se ponía de su sangre sobre la ternilla de la oreja derecha de Aarón y de las orejas de sus hijos, y sobre los pulgares derechos de sus manos y pies.",
+      "bibleReference": "Éxodo 29:20",
+      "answers": [
+        {
+          "text": "Sobre la oreja izquierda",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las dos orejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la oreja derecha",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre la frente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días duraba la consagración de Aarón y de sus hijos?",
+      "explanation": "El versículo dice que se los consagraría por siete días, conforme a todo lo mandado.",
+      "bibleReference": "Éxodo 29:35",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un solo día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién no podía comer de aquellas cosas santas?",
+      "explanation": "Aarón y sus hijos comían la carne y el pan, pero el extranjero no comería, porque es cosa santa.",
+      "bibleReference": "Éxodo 29:33",
+      "answers": [
+        {
+          "text": "Los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón mismo",
+          "isCorrect": false
+        },
+        {
+          "text": "El que había sido ungido",
+          "isCorrect": false
+        },
+        {
+          "text": "El extranjero",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos corderos de un año se ofrecían cada día sobre el altar?",
+      "explanation": "Se ofrecían dos corderos de un año cada día, uno a la mañana y el otro a la caída de la tarde.",
+      "bibleReference": "Éxodo 29:38-39",
+      "answers": [
+        {
+          "text": "Dos",
+          "isCorrect": true
+        },
+        {
+          "text": "Uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promete Jehová al final del capítulo?",
+      "explanation": "Jehová dice que habitará entre los hijos de Israel y será su Dios, y que ellos conocerán que él es Jehová, que los sacó de Egipto.",
+      "bibleReference": "Éxodo 29:45-46",
+      "answers": [
+        {
+          "text": "Darles la tierra por heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Habitar entre ellos y ser su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Enviar un ángel delante de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitar toda enfermedad del pueblo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 15",
+  "description": "Ten questions on Acts 15: the question of circumcision brought to Jerusalem, the letter to the Gentiles, and Paul and Barnabas parting.",
+  "slug": "acts-bible-quiz-part-15",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did some men who came down from Judea teach the brothers?",
+      "explanation": "They taught that unless they were circumcised after the custom of Moses, they could not be saved.",
+      "bibleReference": "Acts 15:1",
+      "answers": [
+        {
+          "text": "That without circumcision after the custom of Moses no one can be saved",
+          "isCorrect": true
+        },
+        {
+          "text": "That no Gentile could be saved at all, even after circumcision",
+          "isCorrect": false
+        },
+        {
+          "text": "That every believer must be baptized in Jerusalem itself",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Sabbath must be kept in the custom of Moses to be saved",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were Paul and Barnabas appointed to go about this question?",
+      "explanation": "They were appointed to go up to Jerusalem to the apostles and elders about this question.",
+      "bibleReference": "Acts 15:2",
+      "answers": [
+        {
+          "text": "To Antioch, to the prophets and teachers",
+          "isCorrect": false
+        },
+        {
+          "text": "To Phoenicia, to the brothers there",
+          "isCorrect": false
+        },
+        {
+          "text": "To Jerusalem, to the apostles and elders",
+          "isCorrect": true
+        },
+        {
+          "text": "To Samaria, to the believers in the villages",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did some of the sect of the Pharisees who believed say?",
+      "explanation": "They rose up and said it was necessary to circumcise them and to command them to keep the law of Moses.",
+      "bibleReference": "Acts 15:5",
+      "answers": [
+        {
+          "text": "That the Gentiles should not be received at all",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Gentiles must be circumcised and keep the law of Moses",
+          "isCorrect": true
+        },
+        {
+          "text": "That Paul should be forbidden to teach",
+          "isCorrect": false
+        },
+        {
+          "text": "That the law of Moses had come to an end",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How, in Peter's words, did God testify about the nations?",
+      "explanation": "God, who knows the heart, testified about them by giving them the Holy Spirit, just as he did to the believers in Jerusalem.",
+      "bibleReference": "Acts 15:8",
+      "answers": [
+        {
+          "text": "By sending an angel to each of their cities",
+          "isCorrect": false
+        },
+        {
+          "text": "By giving them the law through Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "By showing signs in the sky above them",
+          "isCorrect": false
+        },
+        {
+          "text": "By giving them the Holy Spirit, just as he did to us",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Peter call the demand that was being put on the neck of the disciples?",
+      "explanation": "He called it a yoke which neither their fathers nor they themselves were able to bear.",
+      "bibleReference": "Acts 15:10",
+      "answers": [
+        {
+          "text": "A light burden that all could carry",
+          "isCorrect": false
+        },
+        {
+          "text": "A sign of the covenant with the fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "A yoke that neither our fathers nor we were able to bear",
+          "isCorrect": true
+        },
+        {
+          "text": "A stumbling block laid by the Gentiles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who answered after the multitude had been silent?",
+      "explanation": "Acts 15:13 says that after they were silent, James answered and asked the brothers to listen to him.",
+      "bibleReference": "Acts 15:12-13",
+      "answers": [
+        {
+          "text": "James",
+          "isCorrect": true
+        },
+        {
+          "text": "Peter",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas",
+          "isCorrect": false
+        },
+        {
+          "text": "Silas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did James judge should be written to the Gentiles who turn to God?",
+      "explanation": "His judgment was that they should abstain from the pollution of idols, from sexual immorality, from what is strangled and from blood.",
+      "bibleReference": "Acts 15:19-20",
+      "answers": [
+        {
+          "text": "To be circumcised after a year of teaching in the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "To keep the Sabbath and the yearly feasts of the fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "To come up to Jerusalem each year to offer sacrifices",
+          "isCorrect": false
+        },
+        {
+          "text": "To abstain from idol pollution, sexual immorality, strangled things and blood",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which men were chosen to be sent to Antioch with Paul and Barnabas?",
+      "explanation": "The apostles, elders and whole assembly chose Judas called Barsabbas and Silas, chief men among the brothers.",
+      "bibleReference": "Acts 15:22",
+      "answers": [
+        {
+          "text": "Peter and James",
+          "isCorrect": false
+        },
+        {
+          "text": "Judas called Barsabbas and Silas",
+          "isCorrect": true
+        },
+        {
+          "text": "Simeon and Lucius of Cyrene",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas and John called Mark",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Judas and Silas do in Antioch?",
+      "explanation": "Being prophets themselves, they encouraged the brothers with many words and strengthened them.",
+      "bibleReference": "Acts 15:32",
+      "answers": [
+        {
+          "text": "They encouraged the brothers with many words and strengthened them",
+          "isCorrect": true
+        },
+        {
+          "text": "They appointed elders in the assembly there",
+          "isCorrect": false
+        },
+        {
+          "text": "They baptized the whole multitude in the city",
+          "isCorrect": false
+        },
+        {
+          "text": "They rebuked Paul before the assembly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened after the sharp contention between Paul and Barnabas about Mark?",
+      "explanation": "They separated from each other: Barnabas took Mark and sailed to Cyprus, and Paul chose Silas and went through Syria and Cilicia.",
+      "bibleReference": "Acts 15:39-41",
+      "answers": [
+        {
+          "text": "They separated: Paul took Mark, and Barnabas stayed in Antioch",
+          "isCorrect": false
+        },
+        {
+          "text": "They were reconciled and went on to Cyprus together",
+          "isCorrect": false
+        },
+        {
+          "text": "They separated: Barnabas sailed to Cyprus with Mark, and Paul chose Silas",
+          "isCorrect": true
+        },
+        {
+          "text": "They were both sent back to the apostles in Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 37",
+  "description": "Diez preguntas sobre Génesis 37: los sueños de José, el odio de sus hermanos y su venta a los Ismaelitas.",
+  "slug": "genesis-quiz-part-37",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué edad tenía José cuando apacentaba las ovejas con sus hermanos?",
+      "explanation": "El texto dice que José, siendo de edad de diez y siete años, apacentaba las ovejas con sus hermanos.",
+      "bibleReference": "Génesis 37:2",
+      "answers": [
+        {
+          "text": "Diez y siete años",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le hizo Israel a José porque lo amaba más que a todos sus hijos?",
+      "explanation": "Israel amaba a José más que a todos sus hijos porque le había tenido en su vejez, y le hizo una ropa de diversos colores.",
+      "bibleReference": "Génesis 37:3",
+      "answers": [
+        {
+          "text": "Una corona de oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Una casa en la tierra de Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ropa de diversos colores",
+          "isCorrect": true
+        },
+        {
+          "text": "Un rebaño de ovejas propio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el primer sueño de José, ¿qué hacían los manojos de sus hermanos?",
+      "explanation": "José soñó que su manojo se levantaba y estaba derecho, y que los manojos de sus hermanos estaban alrededor y se inclinaban al suyo.",
+      "bibleReference": "Génesis 37:7",
+      "answers": [
+        {
+          "text": "Se secaban en el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se inclinaban al manojo de José",
+          "isCorrect": true
+        },
+        {
+          "text": "Eran devorados por el fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Se llevaba el viento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el segundo sueño, ¿qué se inclinaba ante José?",
+      "explanation": "José contó que había soñado que el sol, la luna y once estrellas se inclinaban a él.",
+      "bibleReference": "Génesis 37:9",
+      "answers": [
+        {
+          "text": "Siete vacas y siete espigas",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce montes y un río",
+          "isCorrect": false
+        },
+        {
+          "text": "Un árbol y sus ramas",
+          "isCorrect": false
+        },
+        {
+          "text": "El sol, la luna y once estrellas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según Israel, ¿dónde apacentaban las ovejas los hermanos de José?",
+      "explanation": "Israel dijo a José que sus hermanos apacentaban las ovejas en Sichêm, y que lo enviaría a ellos.",
+      "bibleReference": "Génesis 37:12-13",
+      "answers": [
+        {
+          "text": "En Sichêm",
+          "isCorrect": true
+        },
+        {
+          "text": "En Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "En Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gosén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo a José el hombre que lo halló perdido por el campo?",
+      "explanation": "Aquel hombre respondió que los hermanos ya se habían ido de allí, y que les había oído decir: Vamos á Dothán.",
+      "bibleReference": "Génesis 37:15-17",
+      "answers": [
+        {
+          "text": "Que estaban junto al río",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se habían ido a Dothán",
+          "isCorrect": true
+        },
+        {
+          "text": "Que habían vuelto a casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie pastaba allí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién dijo \"No lo matemos\" y propuso echar a José en una cisterna?",
+      "explanation": "Cuando Rubén oyó el plan, libró a José de sus manos y dijo que no lo mataran, sino que lo echaran en la cisterna del desierto.",
+      "bibleReference": "Génesis 37:21-22",
+      "answers": [
+        {
+          "text": "Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "Rubén",
+          "isCorrect": true
+        },
+        {
+          "text": "Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por cuánto vendieron a José a los Ismaelitas?",
+      "explanation": "Sacaron a José de la cisterna y le vendieron a los Ismaelitas por veinte piezas de plata.",
+      "bibleReference": "Génesis 37:28",
+      "answers": [
+        {
+          "text": "Por treinta piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por cien piezas de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Por un cabrito",
+          "isCorrect": false
+        },
+        {
+          "text": "Por veinte piezas de plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hermanos con la ropa de José antes de enviarla a su padre?",
+      "explanation": "Tomaron la ropa de José, degollaron un cabrito de las cabras y tiñeron la ropa con la sangre.",
+      "bibleReference": "Génesis 37:31-32",
+      "answers": [
+        {
+          "text": "La quemaron en medio del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "La tiñeron con la sangre de un cabrito",
+          "isCorrect": true
+        },
+        {
+          "text": "La rasgaron en muchos pedazos",
+          "isCorrect": false
+        },
+        {
+          "text": "La lavaron en el agua del río",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién vendieron los Midianitas a José en Egipto?",
+      "explanation": "Los Midianitas lo vendieron en Egipto a Potiphar, eunuco de Faraón, capitán de los de la guardia.",
+      "bibleReference": "Génesis 37:36",
+      "answers": [
+        {
+          "text": "Al principal de los coperos",
+          "isCorrect": false
+        },
+        {
+          "text": "Al sacerdote de la ciudad de On",
+          "isCorrect": false
+        },
+        {
+          "text": "A Potiphar, capitán de la guardia",
+          "isCorrect": true
+        },
+        {
+          "text": "A un rey de la tierra de Canaán",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Jueces 15: las zorras en los sembrados, los tres mil hombres de Judá y la quijada de asno en Lehi.",
+  "slug": "judges-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por qué no dejó entrar a Samsón el padre de su mujer?",
+      "explanation": "El padre dijo que se había persuadido de que Samsón la aborrecía, y la había dado a su compañero.",
+      "bibleReference": "Jueces 15:1-2",
+      "answers": [
+        {
+          "text": "Porque era tiempo de la siega del trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque creyó que la aborrecía y la dio a su compañero",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Samsón no le traía ningún presente",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los Filisteos lo buscaban en Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Samsón con las trescientas zorras que cogió?",
+      "explanation": "Trabó las zorras por las colas de dos en dos, puso una tea entre cada dos colas y, encendiendo las teas, las echó en los sembrados de los Filisteos.",
+      "bibleReference": "Jueces 15:4-5",
+      "answers": [
+        {
+          "text": "Las encerró en la cueva de la peña de Etam",
+          "isCorrect": false
+        },
+        {
+          "text": "Las vendió a los de Gaza por plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Les ató teas a las colas y las echó en los sembrados",
+          "isCorrect": true
+        },
+        {
+          "text": "Las ofreció en holocausto sobre una peña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los Filisteos cuando les dijeron que Samsón había quemado sus mieses?",
+      "explanation": "Vinieron los Filisteos y quemaron a fuego a la mujer de Samsón y a su padre.",
+      "bibleReference": "Jueces 15:6",
+      "answers": [
+        {
+          "text": "Derribaron la peña de Etam",
+          "isCorrect": false
+        },
+        {
+          "text": "Pusieron espías a la puerta de Gaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecieron sacrificio a Dagón",
+          "isCorrect": false
+        },
+        {
+          "text": "Quemaron a la mujer y a su padre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se fijó Samsón después de herirlos con gran mortandad?",
+      "explanation": "El texto dice que descendió y se fijó en la cueva de la peña de Etam.",
+      "bibleReference": "Jueces 15:8",
+      "answers": [
+        {
+          "text": "En la cueva de la peña de Etam",
+          "isCorrect": true
+        },
+        {
+          "text": "En Ramath-lehi",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de Sorec",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cumbre del monte delante de Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres de Judá vinieron a la cueva de la peña de Etam?",
+      "explanation": "Vinieron tres mil hombres de Judá a la cueva de la peña de Etam y hablaron con Samsón.",
+      "bibleReference": "Jueces 15:11",
+      "answers": [
+        {
+          "text": "Trescientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Samsón a los hombres de Judá antes de dejarse atar?",
+      "explanation": "Samsón les pidió que le jurasen que ellos no lo matarían, y ellos respondieron que solo lo prenderían y lo entregarían.",
+      "bibleReference": "Jueces 15:12-13",
+      "answers": [
+        {
+          "text": "Que le dieran pan y agua en el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que peleasen con él contra los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le jurasen que no lo matarían ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo llevasen a Gaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con las cuerdas cuando el espíritu de Jehová cayó sobre él en Lehi?",
+      "explanation": "Las cuerdas que estaban en sus brazos se tornaron como lino quemado con fuego, y las ataduras cayeron de sus manos.",
+      "bibleReference": "Jueces 15:14",
+      "answers": [
+        {
+          "text": "Se volvieron como lino quemado y cayeron",
+          "isCorrect": true
+        },
+        {
+          "text": "Se volvieron de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Filisteos las cortaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaron atadas hasta Gaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué hirió Samsón a mil hombres?",
+      "explanation": "Halló una quijada de asno fresca, extendió la mano, la tomó e hirió con ella a mil hombres.",
+      "bibleReference": "Jueces 15:15",
+      "answers": [
+        {
+          "text": "Con la espada de un príncipe filisteo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un pedazo de rueda de molino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los pilares de una puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una quijada de asno fresca",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Dios cuando Samsón clamó a él con gran sed?",
+      "explanation": "Dios quebró una muela que estaba en la quijada, y salieron de allí aguas; él bebió y se reanimó.",
+      "bibleReference": "Jueces 15:18-19",
+      "answers": [
+        {
+          "text": "Hizo descender rocío sobre un vellón",
+          "isCorrect": false
+        },
+        {
+          "text": "Quebró una muela de la quijada y salieron aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Abrió un pozo junto a los vados del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Envió un ángel con pan y agua del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años juzgó Samsón a Israel en días de los Filisteos, según el final del capítulo?",
+      "explanation": "El texto dice que juzgó a Israel en días de los Filisteos veinte años.",
+      "bibleReference": "Jueces 15:20",
+      "answers": [
+        {
+          "text": "Veinte años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis años",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

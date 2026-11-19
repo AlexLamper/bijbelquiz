@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 36",
+  "description": "Ten questions on Numbers 36: the inheritance of the daughters of Zelophehad and the rule that it must stay in their tribe.",
+  "slug": "numbers-bible-quiz-part-36",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "The heads of which family came to Moses about the inheritance?",
+      "explanation": "The heads of the fathers' households of the family of Gilead, the son of Machir, the son of Manasseh, came and spoke before Moses.",
+      "bibleReference": "Numbers 36:1",
+      "answers": [
+        {
+          "text": "The family of Gilead, of Manasseh",
+          "isCorrect": true
+        },
+        {
+          "text": "The family of Korah, of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "The family of Hezron, of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "The family of Hanoch, of Reuben",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose daughters had been given an inheritance?",
+      "explanation": "Moses had been commanded by Yahweh to give the inheritance of Zelophehad to his daughters.",
+      "bibleReference": "Numbers 36:2",
+      "answers": [
+        {
+          "text": "Jephunneh's",
+          "isCorrect": false
+        },
+        {
+          "text": "Ammihud's",
+          "isCorrect": false
+        },
+        {
+          "text": "Zelophehad's",
+          "isCorrect": true
+        },
+        {
+          "text": "Manasseh's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the leaders worried would happen if the daughters married men from other tribes?",
+      "explanation": "Their inheritance would be taken from the inheritance of their fathers and added to the tribe they married into.",
+      "bibleReference": "Numbers 36:3",
+      "answers": [
+        {
+          "text": "They would lose their father's name",
+          "isCorrect": false
+        },
+        {
+          "text": "Their inheritance would pass to another tribe",
+          "isCorrect": true
+        },
+        {
+          "text": "They would have to leave the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "Their land would go to the Levites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what event did they say the inheritance would be added to the other tribe?",
+      "explanation": "They said that when the jubilee of the children of Israel came, the inheritance would be added to the tribe to which the daughters belonged.",
+      "bibleReference": "Numbers 36:4",
+      "answers": [
+        {
+          "text": "The Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast of weeks",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of blowing of trumpets",
+          "isCorrect": false
+        },
+        {
+          "text": "The jubilee",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Moses say about the complaint of the tribe of the sons of Joseph?",
+      "explanation": "Moses commanded according to Yahweh's word, saying, \"The tribe of the sons of Joseph speak what is right.\"",
+      "bibleReference": "Numbers 36:5",
+      "answers": [
+        {
+          "text": "That they should not have complained",
+          "isCorrect": false
+        },
+        {
+          "text": "That the matter must wait for the jubilee",
+          "isCorrect": false
+        },
+        {
+          "text": "That they spoke what is right",
+          "isCorrect": true
+        },
+        {
+          "text": "That the priests must decide it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom were the daughters of Zelophehad allowed to marry?",
+      "explanation": "They could marry whom they thought best, only they had to marry into the family of the tribe of their father.",
+      "bibleReference": "Numbers 36:6",
+      "answers": [
+        {
+          "text": "Anyone they chose within their father's tribe",
+          "isCorrect": true
+        },
+        {
+          "text": "Only men from the tribe of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Only men from the tribe of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "Anyone at all, from any tribe of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the purpose of this rule?",
+      "explanation": "So no inheritance of the children of Israel would move from tribe to tribe, but each would keep the inheritance of the tribe of his fathers.",
+      "bibleReference": "Numbers 36:7",
+      "answers": [
+        {
+          "text": "That the land would be divided equally",
+          "isCorrect": false
+        },
+        {
+          "text": "That the daughters would stay unmarried",
+          "isCorrect": false
+        },
+        {
+          "text": "That Joseph would receive a double portion",
+          "isCorrect": false
+        },
+        {
+          "text": "That no inheritance would move from tribe to tribe",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which of these was one of the daughters of Zelophehad?",
+      "explanation": "The daughters of Zelophehad were Mahlah, Tirzah, Hoglah, Milcah and Noah.",
+      "bibleReference": "Numbers 36:11",
+      "answers": [
+        {
+          "text": "Miriam",
+          "isCorrect": false
+        },
+        {
+          "text": "Tirzah",
+          "isCorrect": true
+        },
+        {
+          "text": "Zipporah",
+          "isCorrect": false
+        },
+        {
+          "text": "Deborah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the daughters of Zelophehad marry?",
+      "explanation": "They were married to their father's brothers' sons, in the families of the sons of Manasseh.",
+      "bibleReference": "Numbers 36:11-12",
+      "answers": [
+        {
+          "text": "Their father's brothers' sons",
+          "isCorrect": true
+        },
+        {
+          "text": "Sons of Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Men of the tribe of Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Sons of Eleazar the priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Yahweh give these commandments and ordinances to Israel through Moses?",
+      "explanation": "They were commanded by Moses to the children of Israel in the plains of Moab by the Jordan at Jericho.",
+      "bibleReference": "Numbers 36:13",
+      "answers": [
+        {
+          "text": "At Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "At Kadesh Barnea",
+          "isCorrect": false
+        },
+        {
+          "text": "In the plains of Moab",
+          "isCorrect": true
+        },
+        {
+          "text": "In the wilderness of Zin",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

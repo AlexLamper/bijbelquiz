@@ -1,0 +1,242 @@
+{
+  "title": "Rut Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Rut 1: el hambre en la tierra, la vuelta de Noemi y la respuesta de Ruth la Moabita.",
+  "slug": "ruth-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por qué fue un varón de Beth-lehem de Judá a peregrinar en los campos de Moab?",
+      "explanation": "En los días que gobernaban los jueces hubo hambre en la tierra, y un varón de Beth-lehem de Judá fue a peregrinar en los campos de Moab con su mujer y sus dos hijos.",
+      "bibleReference": "Rut 1:1",
+      "answers": [
+        {
+          "text": "Porque hubo hambre en la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque huía de los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque buscaba mujer para su hijo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los Moabitas lo llamaron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaban los dos hijos de aquel varón y de su mujer?",
+      "explanation": "El nombre del varón era Elimelech, el de su mujer Noemi, y los nombres de sus dos hijos eran Mahalón y Chelión.",
+      "bibleReference": "Rut 1:2",
+      "answers": [
+        {
+          "text": "Booz y Obed",
+          "isCorrect": false
+        },
+        {
+          "text": "Elimelech y Isaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Mahalón y Chelión",
+          "isCorrect": true
+        },
+        {
+          "text": "Phares y Hesrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién murió primero, dejando a Noemi con sus dos hijos?",
+      "explanation": "Murió Elimelech, marido de Noemi, y quedó ella con sus dos hijos.",
+      "bibleReference": "Rut 1:3",
+      "answers": [
+        {
+          "text": "Mahalón",
+          "isCorrect": false
+        },
+        {
+          "text": "Elimelech",
+          "isCorrect": true
+        },
+        {
+          "text": "Chelión",
+          "isCorrect": false
+        },
+        {
+          "text": "Booz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaban las mujeres de Moab que tomaron los hijos?",
+      "explanation": "Los hijos tomaron para sí mujeres de Moab: el nombre de la una Orpha y el nombre de la otra Ruth, y habitaron allí unos diez años.",
+      "bibleReference": "Rut 1:4",
+      "answers": [
+        {
+          "text": "Noemi y Mara",
+          "isCorrect": false
+        },
+        {
+          "text": "Rachêl y Lea",
+          "isCorrect": false
+        },
+        {
+          "text": "Thamar y Peninna",
+          "isCorrect": false
+        },
+        {
+          "text": "Orpha y Ruth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se levantó Noemi para volverse de los campos de Moab?",
+      "explanation": "Oyó en el campo de Moab que Jehová había visitado a su pueblo para darles pan, y entonces se levantó con sus nueras y se volvió.",
+      "bibleReference": "Rut 1:6",
+      "answers": [
+        {
+          "text": "Porque oyó que Jehová había dado pan a su pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque sus nueras se lo pidieron",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque empezaba la siega de los trigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Booz la mandó llamar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Noemi a sus dos nueras en el camino?",
+      "explanation": "Noemi les dijo que se volviesen cada una a la casa de su madre, y pidió que Jehová hiciese con ellas misericordia.",
+      "bibleReference": "Rut 1:8",
+      "answers": [
+        {
+          "text": "Que la esperasen en los campos de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volviesen cada una a la casa de su madre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que fuesen a espigar en Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que buscasen marido entre sus hermanos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron Orpha y Ruth cuando Noemi insistió en que se volviesen?",
+      "explanation": "Ellas alzaron otra vez su voz y lloraron; Orpha besó a su suegra, mas Ruth se quedó con ella.",
+      "bibleReference": "Rut 1:14",
+      "answers": [
+        {
+          "text": "Las dos se volvieron a su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dos siguieron a Noemi llorando",
+          "isCorrect": false
+        },
+        {
+          "text": "Orpha besó a su suegra, Ruth se quedó",
+          "isCorrect": true
+        },
+        {
+          "text": "Ruth se volvió y Orpha siguió",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Ruth cuando Noemi le dijo que se volviese tras su cuñada?",
+      "explanation": "Ruth respondió que no le rogase que la dejase, y le dijo: Tu pueblo será mi pueblo, y tu Dios mi Dios.",
+      "bibleReference": "Rut 1:16",
+      "answers": [
+        {
+          "text": "Volveré a mi pueblo y a mis dioses",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperaré hasta la siega de las cebadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Iré a la casa de mi madre",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu pueblo será mi pueblo, y tu Dios mi Dios",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo quiso Noemi que la llamasen al llegar a Beth-lehem?",
+      "explanation": "Ella les respondía que no la llamasen Noemi, sino Mara, porque en grande amargura la había puesto el Todopoderoso.",
+      "bibleReference": "Rut 1:20",
+      "answers": [
+        {
+          "text": "Ephrata",
+          "isCorrect": false
+        },
+        {
+          "text": "Mara",
+          "isCorrect": true
+        },
+        {
+          "text": "Moabita",
+          "isCorrect": false
+        },
+        {
+          "text": "Orpha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué tiempo llegaron Noemi y Ruth a Beth-lehem?",
+      "explanation": "Volvieron de los campos de Moab y llegaron a Beth-lehem en el principio de la siega de las cebadas.",
+      "bibleReference": "Rut 1:22",
+      "answers": [
+        {
+          "text": "Cuando acababa la siega de los trigos",
+          "isCorrect": false
+        },
+        {
+          "text": "En el tiempo del hambre",
+          "isCorrect": false
+        },
+        {
+          "text": "En el principio de la siega de las cebadas",
+          "isCorrect": true
+        },
+        {
+          "text": "En la solemnidad de Jehová en Silo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

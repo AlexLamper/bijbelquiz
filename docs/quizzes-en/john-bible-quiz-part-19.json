@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 19",
+  "description": "Ten questions on John 19: the crown of thorns, the title on the cross, and the burial in the garden tomb.",
+  "slug": "john-bible-quiz-part-19",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the soldiers put on Jesus after Pilate had him flogged?",
+      "explanation": "The soldiers twisted thorns into a crown and put it on his head, and dressed him in a purple garment.",
+      "bibleReference": "John 19:1-2",
+      "answers": [
+        {
+          "text": "A white robe and a reed in his hand",
+          "isCorrect": false
+        },
+        {
+          "text": "A soldier's helmet and a spear",
+          "isCorrect": false
+        },
+        {
+          "text": "A coat without a seam",
+          "isCorrect": false
+        },
+        {
+          "text": "A crown of thorns and a purple garment",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "On what ground did the Jews say Jesus ought to die?",
+      "explanation": "They answered that they have a law, and by their law he ought to die, because he made himself the Son of God.",
+      "bibleReference": "John 19:7",
+      "answers": [
+        {
+          "text": "Because he broke the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he spoke against Caesar",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he made himself the Son of God",
+          "isCorrect": true
+        },
+        {
+          "text": "Because he threatened the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer when Pilate said that he had power to release him and power to crucify him?",
+      "explanation": "Jesus answered that Pilate would have no power at all against him unless it were given to him from above, and that the one who delivered him up has greater sin.",
+      "bibleReference": "John 19:10-11",
+      "answers": [
+        {
+          "text": "That Pilate's power came from the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "That Pilate had no power against him unless it were given from above",
+          "isCorrect": true
+        },
+        {
+          "text": "That Caesar had given Pilate all his power",
+          "isCorrect": false
+        },
+        {
+          "text": "That Pilate's power would be taken away that same day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the chief priests answer when Pilate asked, \"Shall I crucify your King?\"",
+      "explanation": "The chief priests answered, \"We have no king but Caesar!\"",
+      "bibleReference": "John 19:15",
+      "answers": [
+        {
+          "text": "We have no king but Caesar!",
+          "isCorrect": true
+        },
+        {
+          "text": "He is not our King",
+          "isCorrect": false
+        },
+        {
+          "text": "Release Barabbas to us",
+          "isCorrect": false
+        },
+        {
+          "text": "Write that he said it himself",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pilate write on the title that he put on the cross?",
+      "explanation": "Pilate wrote a title and put it on the cross: \"JESUS OF NAZARETH, THE KING OF THE JEWS.\"",
+      "bibleReference": "John 19:19",
+      "answers": [
+        {
+          "text": "Jesus of Nazareth, the Son of God",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus of Nazareth, King of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus of Nazareth, the King of the Jews",
+          "isCorrect": true
+        },
+        {
+          "text": "Behold, the man of Nazareth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which languages was the title written?",
+      "explanation": "Many of the Jews read the title, for it was written in Hebrew, in Latin, and in Greek.",
+      "bibleReference": "John 19:20",
+      "answers": [
+        {
+          "text": "In Hebrew, Greek and Aramaic",
+          "isCorrect": false
+        },
+        {
+          "text": "In Latin and Greek only",
+          "isCorrect": false
+        },
+        {
+          "text": "In Hebrew and Latin only",
+          "isCorrect": false
+        },
+        {
+          "text": "In Hebrew, Latin and Greek",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the soldiers decide to do with Jesus' coat?",
+      "explanation": "Because the coat was without seam, woven from the top throughout, they decided not to tear it but to cast lots for it.",
+      "bibleReference": "John 19:23-24",
+      "answers": [
+        {
+          "text": "They cast lots for it",
+          "isCorrect": true
+        },
+        {
+          "text": "They tore it in pieces",
+          "isCorrect": false
+        },
+        {
+          "text": "They gave it to his mother",
+          "isCorrect": false
+        },
+        {
+          "text": "They left it at the tomb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when he had received the vinegar?",
+      "explanation": "When he had received the vinegar, he said, \"It is finished,\" bowed his head, and gave up his spirit.",
+      "bibleReference": "John 19:30",
+      "answers": [
+        {
+          "text": "I am thirsty",
+          "isCorrect": false
+        },
+        {
+          "text": "It is finished",
+          "isCorrect": true
+        },
+        {
+          "text": "Father, I thank you",
+          "isCorrect": false
+        },
+        {
+          "text": "Arise, let's go from here",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did one of the soldiers do instead of breaking Jesus' legs?",
+      "explanation": "Seeing that he was already dead, they did not break his legs, but one of the soldiers pierced his side with a spear, and blood and water came out.",
+      "bibleReference": "John 19:33-34",
+      "answers": [
+        {
+          "text": "He covered him with a cloth",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave him more vinegar",
+          "isCorrect": false
+        },
+        {
+          "text": "He took down the title",
+          "isCorrect": false
+        },
+        {
+          "text": "He pierced his side with a spear",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who came bringing a mixture of myrrh and aloes?",
+      "explanation": "Nicodemus, who at first came to Jesus by night, came bringing a mixture of myrrh and aloes.",
+      "bibleReference": "John 19:39",
+      "answers": [
+        {
+          "text": "Joseph of Arimathaea",
+          "isCorrect": false
+        },
+        {
+          "text": "Nicodemus",
+          "isCorrect": true
+        },
+        {
+          "text": "Pilate",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary Magdalene",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 8",
+  "description": "Ten questions on Mark 8: the four thousand fed, the refusal to give a sign, the blind man at Bethsaida, Peter's answer and the call to take up the cross.",
+  "slug": "mark-bible-quiz-part-8",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Why did Jesus say he had compassion on the multitude?",
+      "explanation": "He said he had compassion on them because they had stayed with him three days and had nothing to eat.",
+      "bibleReference": "Mark 8:2",
+      "answers": [
+        {
+          "text": "They had been with him three days with nothing to eat",
+          "isCorrect": true
+        },
+        {
+          "text": "They had come a long way for a sign",
+          "isCorrect": false
+        },
+        {
+          "text": "They had no shepherd to lead them",
+          "isCorrect": false
+        },
+        {
+          "text": "They were sick with various diseases",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many loaves did the disciples have?",
+      "explanation": "When he asked how many loaves they had, they said, \"Seven.\"",
+      "bibleReference": "Mark 8:5",
+      "answers": [
+        {
+          "text": "Five",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Two",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "About how many people had eaten?",
+      "explanation": "Mark 8:9 says that those who had eaten were about four thousand, and then he sent them away.",
+      "bibleReference": "Mark 8:9",
+      "answers": [
+        {
+          "text": "About five thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About four thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "About two thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About seven hundred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer the Pharisees who sought a sign from heaven?",
+      "explanation": "He sighed deeply in his spirit and said that no sign will be given to this generation.",
+      "bibleReference": "Mark 8:12",
+      "answers": [
+        {
+          "text": "That the sign would come after three days",
+          "isCorrect": false
+        },
+        {
+          "text": "That they had already seen many signs",
+          "isCorrect": false
+        },
+        {
+          "text": "That only the prophets receive signs",
+          "isCorrect": false
+        },
+        {
+          "text": "That no sign would be given to this generation",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What yeast did Jesus warn his disciples to beware of?",
+      "explanation": "He warned them, saying, \"Take heed: beware of the yeast of the Pharisees and the yeast of Herod.\"",
+      "bibleReference": "Mark 8:15",
+      "answers": [
+        {
+          "text": "The yeast of the Pharisees and of Herod",
+          "isCorrect": true
+        },
+        {
+          "text": "The yeast of the scribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The yeast of the chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The yeast of the Gentiles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the blind man say when he first looked up?",
+      "explanation": "He looked up and said, \"I see men; for I see them like trees walking.\"",
+      "bibleReference": "Mark 8:24",
+      "answers": [
+        {
+          "text": "That he saw nothing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "That he saw everyone clearly",
+          "isCorrect": false
+        },
+        {
+          "text": "That he saw men like trees walking",
+          "isCorrect": true
+        },
+        {
+          "text": "That he saw a great light",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the disciples, who did men say Jesus was?",
+      "explanation": "They told him that men said he was John the Baptizer, others Elijah, and others one of the prophets.",
+      "bibleReference": "Mark 8:28",
+      "answers": [
+        {
+          "text": "A scribe who came down from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "John the Baptizer, Elijah or one of the prophets",
+          "isCorrect": true
+        },
+        {
+          "text": "A ruler of the synagogue in Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "A teacher sent by the chief priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter answer when Jesus asked, \"But who do you say that I am?\"",
+      "explanation": "Peter answered, \"You are the Christ.\"",
+      "bibleReference": "Mark 8:29",
+      "answers": [
+        {
+          "text": "\"You are the Christ.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"You are a prophet.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are the Teacher.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are Elijah.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to Peter after Peter began to rebuke him?",
+      "explanation": "Turning around and seeing his disciples, he rebuked Peter and said, \"Get behind me, Satan! For you have in mind not the things of God, but the things of men.\"",
+      "bibleReference": "Mark 8:33",
+      "answers": [
+        {
+          "text": "\"You are the rock.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Do you not yet understand?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Have faith in God.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Get behind me, Satan!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What must someone do who wants to come after him?",
+      "explanation": "He said that whoever wants to come after him must deny himself, take up his cross, and follow him.",
+      "bibleReference": "Mark 8:34",
+      "answers": [
+        {
+          "text": "Sell his house and his land",
+          "isCorrect": false
+        },
+        {
+          "text": "Deny himself and take up his cross",
+          "isCorrect": true
+        },
+        {
+          "text": "Fast and pray for three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Tell no one about him",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

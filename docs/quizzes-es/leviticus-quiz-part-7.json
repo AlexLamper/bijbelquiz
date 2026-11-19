@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Levítico 7: la ley de la expiación de la culpa, las porciones de los sacerdotes y las normas sobre el sebo y la sangre.",
+  "slug": "leviticus-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo califica el texto la ley de la expiación de la culpa?",
+      "explanation": "El capítulo empieza diciendo que esta es la ley de la expiación de la culpa y que es cosa muy santa.",
+      "bibleReference": "Levítico 7:1",
+      "answers": [
+        {
+          "text": "Como cosa muy santa",
+          "isCorrect": true
+        },
+        {
+          "text": "Como una ofrenda voluntaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Como una ley para los extranjeros",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la menor de las ofrendas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se degollaba la víctima por la culpa?",
+      "explanation": "En el lugar donde degollaban el holocausto se degollaba también la víctima por la culpa, y su sangre se rociaba en derredor sobre el altar.",
+      "bibleReference": "Levítico 7:2",
+      "answers": [
+        {
+          "text": "Fuera del real, junto al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "A la entrada de la casa del que ofrecía",
+          "isCorrect": false
+        },
+        {
+          "text": "En el lugar donde degollaban el holocausto",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre la cubierta del arca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde debían comer los sacerdotes la víctima por la culpa?",
+      "explanation": "Todo varón de entre los sacerdotes la comía, y se comía en el lugar santo, porque es cosa muy santa.",
+      "bibleReference": "Levítico 7:6",
+      "answers": [
+        {
+          "text": "En su propia casa",
+          "isCorrect": false
+        },
+        {
+          "text": "En el lugar santo",
+          "isCorrect": true
+        },
+        {
+          "text": "Fuera del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la puerta de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parte del holocausto quedaba para el sacerdote que lo ofrecía?",
+      "explanation": "El sacerdote que ofrecía el holocausto de alguno se quedaba con el cuero del holocausto que ofrecía.",
+      "bibleReference": "Levítico 7:8",
+      "answers": [
+        {
+          "text": "Los dos riñones",
+          "isCorrect": false
+        },
+        {
+          "text": "El sebo del hígado",
+          "isCorrect": false
+        },
+        {
+          "text": "La cola del animal",
+          "isCorrect": false
+        },
+        {
+          "text": "El cuero del holocausto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo debía comerse la carne del sacrificio de paces en hacimiento de gracias?",
+      "explanation": "La carne se comía el mismo día en que era ofrecida, y no se dejaba nada de ella para otro día.",
+      "bibleReference": "Levítico 7:15",
+      "answers": [
+        {
+          "text": "El mismo día en que era ofrecida",
+          "isCorrect": true
+        },
+        {
+          "text": "Durante los siete días siguientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo al tercer día",
+          "isCorrect": false
+        },
+        {
+          "text": "En la noche del día octavo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con la carne del sacrificio que quedaba para el tercer día?",
+      "explanation": "Lo que quedaba de la carne del sacrificio para el tercer día debía ser quemado en el fuego.",
+      "bibleReference": "Levítico 7:17",
+      "answers": [
+        {
+          "text": "Se daba a los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quemaba en el fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Se repartía entre los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Se enterraba fuera del real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasaba a la persona que comía la carne del sacrificio de paces estando inmunda?",
+      "explanation": "La persona que comía esa carne estando inmunda era cortada de sus pueblos.",
+      "bibleReference": "Levítico 7:20",
+      "answers": [
+        {
+          "text": "Quedaba inmunda hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavaba sus vestidos y quedaba limpia",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagaba una ofrenda doble",
+          "isCorrect": false
+        },
+        {
+          "text": "Era cortada de sus pueblos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el mandato que Jehová dio a Moisés, ¿de qué animales no debían comer el sebo?",
+      "explanation": "Jehová mandó decir a los hijos de Israel que no comieran ningún sebo de buey, ni de cordero, ni de cabra.",
+      "bibleReference": "Levítico 7:22-23",
+      "answers": [
+        {
+          "text": "Solo del buey",
+          "isCorrect": false
+        },
+        {
+          "text": "De las aves y de los peces",
+          "isCorrect": false
+        },
+        {
+          "text": "De buey, de cordero y de cabra",
+          "isCorrect": true
+        },
+        {
+          "text": "De los animales de caza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parte del sacrificio de paces se daba al sacerdote para ser elevada en ofrenda?",
+      "explanation": "El texto manda dar al sacerdote la espaldilla derecha de los sacrificios de las paces, para ser elevada en ofrenda.",
+      "bibleReference": "Levítico 7:32",
+      "answers": [
+        {
+          "text": "El hígado entero",
+          "isCorrect": false
+        },
+        {
+          "text": "La espaldilla derecha",
+          "isCorrect": true
+        },
+        {
+          "text": "La cabeza del animal",
+          "isCorrect": false
+        },
+        {
+          "text": "El cuero y la cola",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde intimó Jehová a Moisés esta ley de las ofrendas?",
+      "explanation": "Jehová intimó esta ley a Moisés en el monte de Sinaí, el día que mandó a los hijos de Israel que ofreciesen sus ofrendas en el desierto de Sinaí.",
+      "bibleReference": "Levítico 7:38",
+      "answers": [
+        {
+          "text": "En el monte de Sinaí",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de los Olivos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

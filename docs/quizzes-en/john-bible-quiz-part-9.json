@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 9",
+  "description": "Ten questions on John 9: the man born blind who washed in the pool of Siloam, and what he told the Pharisees.",
+  "slug": "john-bible-quiz-part-9",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the disciples ask Jesus about the man who was blind from birth?",
+      "explanation": "His disciples asked who had sinned, this man or his parents, that he was born blind.",
+      "bibleReference": "John 9:1-2",
+      "answers": [
+        {
+          "text": "Whether he could be healed on a Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "Who had sinned, he or his parents",
+          "isCorrect": true
+        },
+        {
+          "text": "How long he had been begging",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he was old enough to answer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What reason did Jesus give for the man being born blind?",
+      "explanation": "Jesus answered that neither the man nor his parents sinned, but that the works of God might be revealed in him.",
+      "bibleReference": "John 9:3",
+      "answers": [
+        {
+          "text": "Because his parents had sinned",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he himself had sinned",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the Sabbath had been broken",
+          "isCorrect": false
+        },
+        {
+          "text": "That the works of God might be revealed in him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus put on the blind man's eyes?",
+      "explanation": "He spat on the ground, made mud with the saliva, and anointed the blind man's eyes with the mud.",
+      "bibleReference": "John 9:6",
+      "answers": [
+        {
+          "text": "Mud made with saliva",
+          "isCorrect": true
+        },
+        {
+          "text": "Oil from a flask",
+          "isCorrect": false
+        },
+        {
+          "text": "A bandage of linen",
+          "isCorrect": false
+        },
+        {
+          "text": "Ointment of pure nard",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Jesus tell the man to go and wash?",
+      "explanation": "Jesus told him to go and wash in the pool of Siloam, and the man went, washed, and came back seeing.",
+      "bibleReference": "John 9:7",
+      "answers": [
+        {
+          "text": "In the brook Kidron",
+          "isCorrect": false
+        },
+        {
+          "text": "In the river Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "In the pool of Siloam",
+          "isCorrect": true
+        },
+        {
+          "text": "In a basin in the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what day did Jesus make the mud and open the man's eyes?",
+      "explanation": "The text says it was a Sabbath when Jesus made the mud and opened his eyes.",
+      "bibleReference": "John 9:14",
+      "answers": [
+        {
+          "text": "At the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "At the Feast of the Dedication",
+          "isCorrect": false
+        },
+        {
+          "text": "On the Preparation Day",
+          "isCorrect": false
+        },
+        {
+          "text": "On a Sabbath",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the healed man say about Jesus when the Pharisees asked him again?",
+      "explanation": "When they asked him again what he said about the one who opened his eyes, he answered that he is a prophet.",
+      "bibleReference": "John 9:17",
+      "answers": [
+        {
+          "text": "He is a sinner",
+          "isCorrect": false
+        },
+        {
+          "text": "He is a prophet",
+          "isCorrect": true
+        },
+        {
+          "text": "He is the Christ",
+          "isCorrect": false
+        },
+        {
+          "text": "He is a disciple of Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the man's parents answer when asked how their son could now see?",
+      "explanation": "His parents said that they did not know how he now sees, that he is of age, and that he should be asked himself.",
+      "bibleReference": "John 9:19-21",
+      "answers": [
+        {
+          "text": "Jesus opened his eyes",
+          "isCorrect": false
+        },
+        {
+          "text": "He was never blind",
+          "isCorrect": false
+        },
+        {
+          "text": "He is of age; ask him",
+          "isCorrect": true
+        },
+        {
+          "text": "He was healed in the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had the Jews agreed would happen to anyone who confessed Jesus as Christ?",
+      "explanation": "The parents were afraid because the Jews had already agreed that anyone who confessed him as Christ would be put out of the synagogue.",
+      "bibleReference": "John 9:22",
+      "answers": [
+        {
+          "text": "He would be put out of the synagogue",
+          "isCorrect": true
+        },
+        {
+          "text": "He would be stoned at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He would be taken to Pilate",
+          "isCorrect": false
+        },
+        {
+          "text": "He would pay a fine to the priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the one thing the man said he knew for certain?",
+      "explanation": "He said he did not know whether Jesus is a sinner, but that one thing he knew: though he was blind, now he sees.",
+      "bibleReference": "John 9:25",
+      "answers": [
+        {
+          "text": "That Jesus is a sinner",
+          "isCorrect": false
+        },
+        {
+          "text": "That God listens to everyone",
+          "isCorrect": false
+        },
+        {
+          "text": "That his parents had sinned",
+          "isCorrect": false
+        },
+        {
+          "text": "That though he was blind, now he sees",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the man say had never been heard of since the world began?",
+      "explanation": "He said that since the world began it had never been heard that anyone opened the eyes of someone born blind.",
+      "bibleReference": "John 9:32",
+      "answers": [
+        {
+          "text": "That a sinner ever kept the Sabbath law",
+          "isCorrect": false
+        },
+        {
+          "text": "That a man born blind was ever given sight",
+          "isCorrect": true
+        },
+        {
+          "text": "That God had spoken to Moses in person",
+          "isCorrect": false
+        },
+        {
+          "text": "That a prophet ever came out of Galilee",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

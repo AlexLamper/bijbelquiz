@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Deuteronomio 10: las segundas tablas, el arca de madera, la tribu de Leví y lo que Jehová pide a su pueblo.",
+  "slug": "deuteronomy-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le mandó Jehová labrar y hacer en aquel tiempo?",
+      "explanation": "Jehová le dijo: Lábrate dos tablas de piedra como las primeras, y sube a mí al monte, y hazte un arca de madera.",
+      "bibleReference": "Deuteronomio 10:1",
+      "answers": [
+        {
+          "text": "Un altar de doce piedras del arroyo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos columnas de bronce y un velo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos tablas de piedra y un arca de madera",
+          "isCorrect": true
+        },
+        {
+          "text": "Un arca de oro y un candelero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué madera hizo el arca?",
+      "explanation": "Dice: E hice un arca de madera de Sittim, y labré dos tablas de piedra como las primeras.",
+      "bibleReference": "Deuteronomio 10:3",
+      "answers": [
+        {
+          "text": "De madera de Sittim",
+          "isCorrect": true
+        },
+        {
+          "text": "De madera de olivo",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera de higuera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué escribió Jehová en aquellas tablas?",
+      "explanation": "Escribió en las tablas, conforme a la primera escritura, las diez palabras que Jehová les había hablado en el monte de en medio del fuego, el día de la asamblea.",
+      "bibleReference": "Deuteronomio 10:4",
+      "answers": [
+        {
+          "text": "Los nombres de los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "El pacto hecho con Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los estatutos y derechos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las diez palabras",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién murió y fue sepultado en Moserá, y quién tuvo el sacerdocio en su lugar?",
+      "explanation": "Allí murió Aarón y allí fue sepultado, y en lugar suyo tuvo el sacerdocio su hijo Eleazar.",
+      "bibleReference": "Deuteronomio 10:6",
+      "answers": [
+        {
+          "text": "Moisés, y Aarón tuvo el sacerdocio",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón, y su hijo Eleazar tuvo el sacerdocio",
+          "isCorrect": true
+        },
+        {
+          "text": "Eleazar, y su hermano tuvo el sacerdocio",
+          "isCorrect": false
+        },
+        {
+          "text": "Leví, y sus hijos tuvieron el sacerdocio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué apartó Jehová la tribu de Leví?",
+      "explanation": "La apartó para que llevase el arca del pacto de Jehová, para que estuviese delante de Jehová para servirle y para bendecir en su nombre.",
+      "bibleReference": "Deuteronomio 10:8",
+      "answers": [
+        {
+          "text": "Para repartir la tierra entre las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Para guardar las puertas de las ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Para llevar el arca, servir a Jehová y bendecir",
+          "isCorrect": true
+        },
+        {
+          "text": "Para juzgar los pleitos del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál es la heredad de Leví, según el texto?",
+      "explanation": "Leví no tuvo parte ni heredad con sus hermanos: Jehová es su heredad, como Jehová su Dios le dijo.",
+      "bibleReference": "Deuteronomio 10:9",
+      "answers": [
+        {
+          "text": "Las ciudades de la llanura",
+          "isCorrect": false
+        },
+        {
+          "text": "El diezmo de los primerizos",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra al oriente del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová es su heredad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide Jehová de su pueblo, según la pregunta del texto?",
+      "explanation": "Pide que teman a Jehová su Dios, que anden en todos sus caminos, que lo amen y que le sirvan con todo su corazón y con toda su alma.",
+      "bibleReference": "Deuteronomio 10:12",
+      "answers": [
+        {
+          "text": "Edificar un altar en cada ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Temerle, andar en sus caminos, amarle y servirle",
+          "isCorrect": true
+        },
+        {
+          "text": "Traer holocaustos cada mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar silencio delante del arca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que Jehová no hace?",
+      "explanation": "Jehová es Dios de dioses y Señor de señores, Dios grande, poderoso y terrible, que no acepta persona ni toma cohecho.",
+      "bibleReference": "Deuteronomio 10:17",
+      "answers": [
+        {
+          "text": "No acepta persona ni toma cohecho",
+          "isCorrect": true
+        },
+        {
+          "text": "No habla con el hombre cara a cara",
+          "isCorrect": false
+        },
+        {
+          "text": "No deja entrar al extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "No perdona al que se vuelve a él",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué debían amar al extranjero?",
+      "explanation": "Amaréis pues al extranjero, porque extranjeros fuisteis vosotros en tierra de Egipto.",
+      "bibleReference": "Deuteronomio 10:19",
+      "answers": [
+        {
+          "text": "Porque el extranjero paga el diezmo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el extranjero guarda el pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque así lo piden los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ellos fueron extranjeros en Egipto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con cuántas almas descendieron sus padres a Egipto?",
+      "explanation": "Con setenta almas descendieron sus padres a Egipto, y ahora Jehová lo había hecho como las estrellas del cielo en multitud.",
+      "bibleReference": "Deuteronomio 10:22",
+      "answers": [
+        {
+          "text": "Con doce almas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con seiscientas almas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con setenta almas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con mil almas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 7",
+  "description": "Ten questions on Leviticus 7: the laws of the trespass offering and the peace offerings, the priests' portions, and the ban on eating fat and blood.",
+  "slug": "leviticus-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who among the priests may eat the trespass offering?",
+      "explanation": "The trespass offering is most holy: every male among the priests may eat of it, and it must be eaten in a holy place.",
+      "bibleReference": "Leviticus 7:5-6",
+      "answers": [
+        {
+          "text": "Only the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Every male among the priests",
+          "isCorrect": true
+        },
+        {
+          "text": "Any clean Israelite",
+          "isCorrect": false
+        },
+        {
+          "text": "The priest's whole household",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the priest who offers someone's burnt offering keep for himself?",
+      "explanation": "The priest who offers any man's burnt offering shall have for himself the skin of that burnt offering.",
+      "bibleReference": "Leviticus 7:8",
+      "answers": [
+        {
+          "text": "The head of the animal",
+          "isCorrect": false
+        },
+        {
+          "text": "The right thigh of the animal",
+          "isCorrect": false
+        },
+        {
+          "text": "Half of the meat",
+          "isCorrect": false
+        },
+        {
+          "text": "The skin of the burnt offering",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides unleavened cakes and wafers, what else is offered with a peace offering for thanksgiving?",
+      "explanation": "With the sacrifice of his peace offerings for thanksgiving he shall offer cakes of leavened bread.",
+      "bibleReference": "Leviticus 7:12-13",
+      "answers": [
+        {
+          "text": "Cakes of leavened bread",
+          "isCorrect": true
+        },
+        {
+          "text": "Cakes made with honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Loaves of barley bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Ears of roasted grain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When must the meat of a peace offering for thanksgiving be eaten?",
+      "explanation": "It shall be eaten on the day of the offering; none of it may be left until the morning.",
+      "bibleReference": "Leviticus 7:15",
+      "answers": [
+        {
+          "text": "Within three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Within seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "On the day it is offered",
+          "isCorrect": true
+        },
+        {
+          "text": "On the following Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must be done with meat of a vow or free will offering that remains on the third day?",
+      "explanation": "It may be eaten on the day of the sacrifice and the next day, but what remains on the third day shall be burned with fire.",
+      "bibleReference": "Leviticus 7:16-17",
+      "answers": [
+        {
+          "text": "It must be burned with fire",
+          "isCorrect": true
+        },
+        {
+          "text": "It must be given to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be buried outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be given to the poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to someone who eats the meat of a peace offering while unclean?",
+      "explanation": "The soul who eats the meat of the peace offerings with his uncleanness on him shall be cut off from his people.",
+      "bibleReference": "Leviticus 7:20",
+      "answers": [
+        {
+          "text": "He must pay a fine of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "He must leave the camp for seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "He is cut off from his people",
+          "isCorrect": true
+        },
+        {
+          "text": "He must offer a second peace offering",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What may be done with the fat of an animal that died of itself or was torn by animals?",
+      "explanation": "Such fat may be used for any other service, but it may in no way be eaten.",
+      "bibleReference": "Leviticus 7:24",
+      "answers": [
+        {
+          "text": "It may be eaten after washing",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be burned on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be given to the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "It may be used for other service, but not eaten",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which part of the peace offering is waved before Yahweh and given to Aaron and his sons?",
+      "explanation": "The offerer brings the fat with the breast so the breast may be waved; the priest burns the fat, but the breast is Aaron's and his sons'.",
+      "bibleReference": "Leviticus 7:30-31",
+      "answers": [
+        {
+          "text": "The head",
+          "isCorrect": false
+        },
+        {
+          "text": "The breast",
+          "isCorrect": true
+        },
+        {
+          "text": "The kidneys",
+          "isCorrect": false
+        },
+        {
+          "text": "The fat tail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which part of the peace offerings is given to the priest as a heave offering?",
+      "explanation": "The right thigh of the peace offerings is given to the priest as a heave offering.",
+      "bibleReference": "Leviticus 7:32",
+      "answers": [
+        {
+          "text": "The right thigh",
+          "isCorrect": true
+        },
+        {
+          "text": "The left shoulder",
+          "isCorrect": false
+        },
+        {
+          "text": "The two kidneys",
+          "isCorrect": false
+        },
+        {
+          "text": "The cover of the liver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Yahweh command Moses these laws of the offerings?",
+      "explanation": "These laws were commanded to Moses in Mount Sinai, in the wilderness of Sinai.",
+      "bibleReference": "Leviticus 7:37-38",
+      "answers": [
+        {
+          "text": "On Mount Nebo",
+          "isCorrect": false
+        },
+        {
+          "text": "On Mount Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "On Mount Zion",
+          "isCorrect": false
+        },
+        {
+          "text": "In Mount Sinai",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

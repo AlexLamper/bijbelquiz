@@ -1,0 +1,242 @@
+{
+  "title": "1 Chronicles Bible Quiz - Chapter 13",
+  "description": "Ten questions on 1 Chronicles 13: David's first attempt to bring the ark, the death of Uzza and the blessing on Obed-Edom's house.",
+  "slug": "1-chronicles-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What reason did David give for bringing the ark of God back?",
+      "explanation": "David said, \"Let's bring the ark of our God back to us again; for we didn't seek it in the days of Saul.\"",
+      "bibleReference": "1 Chronicles 13:3",
+      "answers": [
+        {
+          "text": "We didn't seek it in the days of Saul",
+          "isCorrect": true
+        },
+        {
+          "text": "The Philistines were about to capture it",
+          "isCorrect": false
+        },
+        {
+          "text": "A prophet had commanded it that day",
+          "isCorrect": false
+        },
+        {
+          "text": "Its house had burned down",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From which town did David want to bring God's ark?",
+      "explanation": "David assembled all Israel to bring God's ark from Kiriath Jearim.",
+      "bibleReference": "1 Chronicles 13:5",
+      "answers": [
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": true
+        },
+        {
+          "text": "Beth Shemesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeah of Saul",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what did they carry God's ark?",
+      "explanation": "They carried God's ark on a new cart and brought it out of Abinadab's house.",
+      "bibleReference": "1 Chronicles 13:7",
+      "answers": [
+        {
+          "text": "On the shoulders of the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "On a camel",
+          "isCorrect": false
+        },
+        {
+          "text": "On a new cart",
+          "isCorrect": true
+        },
+        {
+          "text": "On a chariot of the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Out of whose house was the ark brought?",
+      "explanation": "Verse 7 says they brought the ark out of Abinadab's house.",
+      "bibleReference": "1 Chronicles 13:7",
+      "answers": [
+        {
+          "text": "Jesse's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Saul's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Eli's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Abinadab's house",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who drove the cart carrying the ark?",
+      "explanation": "Uzza and Ahio drove the cart.",
+      "bibleReference": "1 Chronicles 13:7",
+      "answers": [
+        {
+          "text": "Zadok and Abiathar",
+          "isCorrect": false
+        },
+        {
+          "text": "Uzza and Ahio",
+          "isCorrect": true
+        },
+        {
+          "text": "Joab and Abishai",
+          "isCorrect": false
+        },
+        {
+          "text": "Nathan and Gad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At whose threshing floor did Uzza put out his hand to hold the ark?",
+      "explanation": "When they came to Chidon's threshing floor, Uzza put out his hand to hold the ark.",
+      "bibleReference": "1 Chronicles 13:9",
+      "answers": [
+        {
+          "text": "Chidon's",
+          "isCorrect": true
+        },
+        {
+          "text": "Boaz's",
+          "isCorrect": false
+        },
+        {
+          "text": "Araunah's",
+          "isCorrect": false
+        },
+        {
+          "text": "Nacon's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Uzza put out his hand to hold the ark?",
+      "explanation": "Uzza put out his hand to hold the ark because the oxen stumbled.",
+      "bibleReference": "1 Chronicles 13:9",
+      "answers": [
+        {
+          "text": "The cart lost a wheel",
+          "isCorrect": false
+        },
+        {
+          "text": "Robbers attacked the procession",
+          "isCorrect": false
+        },
+        {
+          "text": "The oxen stumbled",
+          "isCorrect": true
+        },
+        {
+          "text": "David told him to",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did David call the place where Yahweh broke out against Uzza?",
+      "explanation": "David was displeased and called that place Perez Uzza, to this day.",
+      "bibleReference": "1 Chronicles 13:11",
+      "answers": [
+        {
+          "text": "Baal Perazim",
+          "isCorrect": false
+        },
+        {
+          "text": "Ebenezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "Perez Uzza",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Into whose house was the ark carried aside instead of into David's city?",
+      "explanation": "David was afraid and carried the ark aside into Obed-Edom the Gittite's house.",
+      "bibleReference": "1 Chronicles 13:13",
+      "answers": [
+        {
+          "text": "Obed-Edom's house",
+          "isCorrect": true
+        },
+        {
+          "text": "Abinadab's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Zadok the priest's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Hiram's house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long did God's ark remain with the family of Obed-Edom?",
+      "explanation": "God's ark remained with the family of Obed-Edom in his house three months, and Yahweh blessed his house.",
+      "bibleReference": "1 Chronicles 13:14",
+      "answers": [
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "One year",
+          "isCorrect": false
+        },
+        {
+          "text": "Three months",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

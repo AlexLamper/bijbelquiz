@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 9",
+  "description": "Ten questions on Numbers 9: the Passover in the wilderness of Sinai, the second Passover, and the cloud that guided Israel's travels.",
+  "slug": "numbers-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "On which day of the first month did Israel keep the Passover in the wilderness of Sinai?",
+      "explanation": "They kept the Passover in the first month, on the fourteenth day of the month at evening, in the wilderness of Sinai.",
+      "bibleReference": "Numbers 9:3-5",
+      "answers": [
+        {
+          "text": "The first day",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourteenth day",
+          "isCorrect": true
+        },
+        {
+          "text": "The twenty-first day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why could certain men not keep the Passover on that day?",
+      "explanation": "Certain men were unclean because of the dead body of a man, so they could not keep the Passover on that day.",
+      "bibleReference": "Numbers 9:6",
+      "answers": [
+        {
+          "text": "They were on a journey far from the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "They were unclean because of a dead body",
+          "isCorrect": true
+        },
+        {
+          "text": "They were foreigners living among Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "They had no lamb for their household",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses say to the men who could not keep the Passover?",
+      "explanation": "Moses answered them, \"Wait, that I may hear what Yahweh will command concerning you.\"",
+      "bibleReference": "Numbers 9:8",
+      "answers": [
+        {
+          "text": "\"Wait, that I may hear what Yahweh will command\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Go and keep it in the next year instead\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Bring a sin offering to Aaron the priest\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You must leave the camp for seven days\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When were those who were unclean or far away on a journey to keep the Passover?",
+      "explanation": "They were to keep it in the second month, on the fourteenth day at evening.",
+      "bibleReference": "Numbers 9:10-11",
+      "answers": [
+        {
+          "text": "In the seventh month, on the tenth day",
+          "isCorrect": false
+        },
+        {
+          "text": "In the first month of the next year",
+          "isCorrect": false
+        },
+        {
+          "text": "On the first day of the third month",
+          "isCorrect": false
+        },
+        {
+          "text": "In the second month, on the fourteenth day",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what were they to eat the Passover?",
+      "explanation": "They were to eat it with unleavened bread and bitter herbs.",
+      "bibleReference": "Numbers 9:11",
+      "answers": [
+        {
+          "text": "Wine and cakes of fine flour",
+          "isCorrect": false
+        },
+        {
+          "text": "Unleavened bread and bitter herbs",
+          "isCorrect": true
+        },
+        {
+          "text": "Honey and roasted grain",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive oil and salt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What would happen to a clean man, not on a journey, who failed to keep the Passover?",
+      "explanation": "That soul would be cut off from his people and bear his sin, because he did not offer Yahweh's offering in its appointed season.",
+      "bibleReference": "Numbers 9:13",
+      "answers": [
+        {
+          "text": "He would be cut off from his people",
+          "isCorrect": true
+        },
+        {
+          "text": "He would pay a fifth part to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "He would keep it in the second month",
+          "isCorrect": false
+        },
+        {
+          "text": "He would be sent outside the camp for seven days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say about a foreigner who wanted to keep the Passover?",
+      "explanation": "A foreigner who desired to keep the Passover was to do so according to its statute; there was one statute for the foreigner and the native-born.",
+      "bibleReference": "Numbers 9:14",
+      "answers": [
+        {
+          "text": "He could never keep it",
+          "isCorrect": false
+        },
+        {
+          "text": "He had to wait until the second month",
+          "isCorrect": false
+        },
+        {
+          "text": "He had to keep it outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "He could keep it under the same statute",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the appearance over the tabernacle at night?",
+      "explanation": "The cloud covered the tabernacle, and at evening it was over the tabernacle like the appearance of fire until morning.",
+      "bibleReference": "Numbers 9:15-16",
+      "answers": [
+        {
+          "text": "The appearance of fire",
+          "isCorrect": true
+        },
+        {
+          "text": "A rainbow",
+          "isCorrect": false
+        },
+        {
+          "text": "A shining star",
+          "isCorrect": false
+        },
+        {
+          "text": "A flash of lightning",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the children of Israel do whenever the cloud was taken up from over the Tent?",
+      "explanation": "Whenever the cloud was taken up from over the Tent, the children of Israel traveled, and where it remained, they encamped.",
+      "bibleReference": "Numbers 9:17",
+      "answers": [
+        {
+          "text": "They gathered for a feast",
+          "isCorrect": false
+        },
+        {
+          "text": "They offered a burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "They traveled",
+          "isCorrect": true
+        },
+        {
+          "text": "They counted the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Israel do when the cloud stayed on the tabernacle for days, a month or a year?",
+      "explanation": "Whether it was two days, a month or a year that the cloud stayed on the tabernacle, the children of Israel remained encamped and did not travel.",
+      "bibleReference": "Numbers 9:22",
+      "answers": [
+        {
+          "text": "They sent spies ahead",
+          "isCorrect": false
+        },
+        {
+          "text": "They remained encamped",
+          "isCorrect": true
+        },
+        {
+          "text": "They moved the tabernacle",
+          "isCorrect": false
+        },
+        {
+          "text": "They asked Moses to pray",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

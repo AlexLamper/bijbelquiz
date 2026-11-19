@@ -459,7 +459,7 @@
       "modalDescription": "Lee el capítulo a tu ritmo. Las preguntas tratan de él.",
       "start": "Empezar cuestionario",
       "failed": "No se pudo cargar este capítulo ahora mismo. Puedes empezar el cuestionario sin más.",
-      "translation": "Texto bíblico",
+      "translation": "Texto bíblico: Reina-Valera 1909 (dominio público)",
       "freeLeftOne": "Te queda {value} cuestionario gratis",
       "freeLeftMany": "Te quedan {value} cuestionarios gratis"
     },
@@ -547,7 +547,7 @@
     "finish": "Terminar cuestionario",
     "next": "Siguiente pregunta",
     "saveFailed": "No se pudo guardar tu puntuación. Revisa tu conexión e inténtalo de nuevo.",
-    "translation": "Texto bíblico",
+    "translation": "Texto bíblico: Reina-Valera 1909 (dominio público)",
     "verseFailed": "No se pudo cargar el texto.",
     "studieLabel": "Lee {book} {chapter} con explicación en Estudio bíblico",
     "textSize": "Tamaño del texto",
@@ -573,7 +573,7 @@
     "readFirst": "Lee primero",
     "text": "Tómate tu tiempo con este capítulo. Las preguntas que siguen tratan de él, así que leer ayuda de verdad.",
     "failed": "No se pudo cargar este capítulo ahora mismo. Puedes empezar el cuestionario sin más.",
-    "translation": "Texto bíblico",
+    "translation": "Texto bíblico: Reina-Valera 1909 (dominio público)",
     "ready": "¿Has terminado de leer?",
     "start": "Empezar el cuestionario"
   },
@@ -1813,5 +1813,28 @@
       "defaultName": "Grupo de {name}",
       "full": "Este grupo está completo ({seats} plazas). Pide al administrador que libere una plaza."
     }
+  },
+  "leaderboardSide": {
+    "joinLabel": "Participar",
+    "joinTitle": "¿Quieres aparecer en la clasificación?",
+    "joinBody": "Crea una cuenta gratis, gana XP con quizzes y sube en la clasificación.",
+    "joinCta": "Crear una cuenta gratis",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "signIn": "Iniciar sesión",
+    "earnBody": "Gana XP jugando quizzes y sube en la clasificación.",
+    "playQuiz": "Juega un quiz",
+    "groupsTitle": "Tus grupos",
+    "groupsBody": "Guarda tu grupo después de una partida en Jugar juntos y sigue aquí vuestra clasificación.",
+    "everyone": "Todos",
+    "wholeBoard": "Toda la clasificación",
+    "onePlayer": "1 jugador",
+    "players": "{count} jugadores",
+    "playTogether": "Jugad juntos",
+    "playTogetherBody": "Empieza una partida y guarda tu grupo"
+  },
+  "loadingLabels": {
+    "quizzes": "Cargando quizzes",
+    "leaderboard": "Cargando clasificación",
+    "dashboard": "Cargando panel"
   }
 }

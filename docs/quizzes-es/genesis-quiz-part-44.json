@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 44",
+  "description": "Diez preguntas sobre Génesis 44: la copa de plata en el costal de Benjamín y la súplica de Judá.",
+  "slug": "genesis-quiz-part-44",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué mandó José poner en la boca del costal del menor?",
+      "explanation": "José mandó poner su copa, la copa de plata, en la boca del costal del menor, con el dinero de su trigo.",
+      "bibleReference": "Génesis 44:2",
+      "answers": [
+        {
+          "text": "Un hilo de grana",
+          "isCorrect": false
+        },
+        {
+          "text": "Su anillo y su manto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cabrito de las cabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Su copa de plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reproche mandó José que el mayordomo les dijese?",
+      "explanation": "José mandó a su mayordomo seguirlos y decirles: ¿Por qué habéis vuelto mal por bien?",
+      "bibleReference": "Génesis 44:4",
+      "answers": [
+        {
+          "text": "Por qué no habían pagado",
+          "isCorrect": false
+        },
+        {
+          "text": "Por qué habían traído al menor",
+          "isCorrect": false
+        },
+        {
+          "text": "Por qué habían vuelto mal por bien",
+          "isCorrect": true
+        },
+        {
+          "text": "Por qué mentían sobre su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué propusieron los hermanos para aquel en quien se hallara la copa?",
+      "explanation": "Ellos dijeron que aquel de los siervos en quien fuese hallada la copa muriese, y que aun ellos serían siervos de su señor.",
+      "bibleReference": "Génesis 44:9",
+      "answers": [
+        {
+          "text": "Que pagara doblado dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Que muriera y que ellos fueran siervos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviera solo a Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fuera quemado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el mayordomo a esa propuesta?",
+      "explanation": "Él dijo que aquél en quien se hallase sería su siervo, y que los demás serían sin culpa.",
+      "bibleReference": "Génesis 44:10",
+      "answers": [
+        {
+          "text": "Que solo ese sería su siervo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que todos morirían",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie sería culpable",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volverían a la cárcel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En el costal de quién fue hallada la copa?",
+      "explanation": "Buscó desde el mayor y acabó en el menor, y la copa fue hallada en el costal de Benjamín.",
+      "bibleReference": "Génesis 44:12",
+      "answers": [
+        {
+          "text": "De Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "De Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "De Benjamín",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hermanos cuando la copa fue hallada?",
+      "explanation": "Ellos rasgaron sus vestidos, cargó cada uno su asno y volvieron a la ciudad.",
+      "bibleReference": "Génesis 44:13",
+      "answers": [
+        {
+          "text": "Siguieron su camino hacia Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Rasgaron sus vestidos y volvieron a la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Acusaron al mayordomo de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagaron el precio de aquella copa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Judá cuando se postraron delante de José?",
+      "explanation": "Judá dijo que Dios había hallado la maldad de sus siervos, y que ellos eran siervos de su señor, también aquél en cuyo poder fue hallada la copa.",
+      "bibleReference": "Génesis 44:16",
+      "answers": [
+        {
+          "text": "Que la copa no era suya",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el mayordomo la había puesto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Dios había hallado su maldad",
+          "isCorrect": true
+        },
+        {
+          "text": "Que querían volver a su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describieron a su padre y al hijo menor ante aquel señor?",
+      "explanation": "Respondieron que tenían un padre anciano y un mozo que le nació en su vejez, pequeño aún, y que su padre lo amaba.",
+      "bibleReference": "Génesis 44:20",
+      "answers": [
+        {
+          "text": "Un padre anciano y un mozo pequeño",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos hermanos pastores",
+          "isCorrect": false
+        },
+        {
+          "text": "Un padre rico y doce hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un padre enfermo en Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Judá, ¿qué pensaba su padre del hijo que había salido de con él?",
+      "explanation": "El padre les había dicho que uno salió de con él y que pensaba de cierto que fue despedazado, y que hasta entonces no le había visto.",
+      "bibleReference": "Génesis 44:28",
+      "answers": [
+        {
+          "text": "Que vivía en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había sido despedazado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se había perdido en Sichêm",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volvería algún día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Judá al final de su súplica?",
+      "explanation": "Judá rogó que quedase él como siervo de su señor en lugar del mozo, y que el mozo fuese con sus hermanos.",
+      "bibleReference": "Génesis 44:33",
+      "answers": [
+        {
+          "text": "Que todos quedaran presos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les devolvieran la copa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fueran a ver a su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedarse él como siervo en lugar del mozo",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

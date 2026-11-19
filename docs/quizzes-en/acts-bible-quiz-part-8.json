@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 8",
+  "description": "Ten questions on Acts 8: the scattering of the believers, Philip in Samaria, Simon and his money, and the Ethiopian in his chariot.",
+  "slug": "acts-bible-quiz-part-8",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where were the believers scattered when persecution arose in Jerusalem?",
+      "explanation": "They were all scattered abroad throughout the regions of Judea and Samaria, except for the apostles.",
+      "bibleReference": "Acts 8:1",
+      "answers": [
+        {
+          "text": "To Damascus and Antioch",
+          "isCorrect": false
+        },
+        {
+          "text": "Throughout Judea and Samaria",
+          "isCorrect": true
+        },
+        {
+          "text": "To Egypt and Libya",
+          "isCorrect": false
+        },
+        {
+          "text": "To Caesarea only",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Saul do to the assembly at this time?",
+      "explanation": "Saul ravaged the assembly, entering into every house and dragging both men and women off to prison.",
+      "bibleReference": "Acts 8:3",
+      "answers": [
+        {
+          "text": "He dragged men and women off to prison",
+          "isCorrect": true
+        },
+        {
+          "text": "He forbade them to teach",
+          "isCorrect": false
+        },
+        {
+          "text": "He drove them out of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked them for money",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Philip proclaim when he went down to the city of Samaria?",
+      "explanation": "Philip went down to the city of Samaria and proclaimed the Christ to them.",
+      "bibleReference": "Acts 8:5",
+      "answers": [
+        {
+          "text": "The law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophet Isaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "The Christ",
+          "isCorrect": true
+        },
+        {
+          "text": "The resurrection of the dead",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had Simon been practicing in the city?",
+      "explanation": "Simon used to practice sorcery in the city and amazed the people of Samaria, making himself out to be some great one.",
+      "bibleReference": "Acts 8:9",
+      "answers": [
+        {
+          "text": "Teaching in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "Healing the paralyzed",
+          "isCorrect": false
+        },
+        {
+          "text": "Collecting the temple tax",
+          "isCorrect": false
+        },
+        {
+          "text": "Sorcery, amazing the people",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the people of Samaria say about Simon?",
+      "explanation": "They all listened to him, from the least to the greatest, saying that this man is that great power of God.",
+      "bibleReference": "Acts 8:10",
+      "answers": [
+        {
+          "text": "That he was a prophet like Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "That he is that great power of God",
+          "isCorrect": true
+        },
+        {
+          "text": "That he was sent from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was an angel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Simon offer the apostles money for?",
+      "explanation": "He offered them money so that whomever he laid his hands on might receive the Holy Spirit.",
+      "bibleReference": "Acts 8:18-19",
+      "answers": [
+        {
+          "text": "For the power to give the Holy Spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "For a place among the apostles",
+          "isCorrect": false
+        },
+        {
+          "text": "For a share in the gifts for the needy",
+          "isCorrect": false
+        },
+        {
+          "text": "For permission to be baptized",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter say to Simon about his silver?",
+      "explanation": "Peter said his silver would perish with him, because he thought he could obtain the gift of God with money.",
+      "bibleReference": "Acts 8:20",
+      "answers": [
+        {
+          "text": "That he should give it to the needy",
+          "isCorrect": false
+        },
+        {
+          "text": "That he should keep it for himself",
+          "isCorrect": false
+        },
+        {
+          "text": "That it would buy him nothing in Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "That it would perish with him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the Ethiopian official reading in his chariot?",
+      "explanation": "He was returning and sitting in his chariot, reading the prophet Isaiah.",
+      "bibleReference": "Acts 8:27-28",
+      "answers": [
+        {
+          "text": "The book of Psalms",
+          "isCorrect": false
+        },
+        {
+          "text": "A letter from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophet Isaiah",
+          "isCorrect": true
+        },
+        {
+          "text": "The law of Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Ethiopian answer when Philip asked if he understood his reading?",
+      "explanation": "He said, \"How can I, unless someone explains it to me?\" and begged Philip to come up and sit with him.",
+      "bibleReference": "Acts 8:30-31",
+      "answers": [
+        {
+          "text": "\"I have read it many times.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"How can I, unless someone explains it?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Tell me who the prophet is.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I am going up to Jerusalem to ask.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Philip found afterwards, and where did he preach until he arrived?",
+      "explanation": "Philip was found at Azotus and passed through preaching the Good News to all the cities until he came to Caesarea.",
+      "bibleReference": "Acts 8:40",
+      "answers": [
+        {
+          "text": "At Gaza, until he came to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In Samaria, until he came to Azotus",
+          "isCorrect": false
+        },
+        {
+          "text": "In Joppa, until he came to Lydda",
+          "isCorrect": false
+        },
+        {
+          "text": "At Azotus, until he came to Caesarea",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

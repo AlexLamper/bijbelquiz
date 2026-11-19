@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Josué 8: la emboscada contra Hai, la lanza levantada, la ciudad quemada y la ley leída en el monte de Ebal.",
+  "slug": "joshua-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué podrían tomar para sí los israelitas en Hai, a diferencia de lo ocurrido en Jericó?",
+      "explanation": "Jehová dijo que harían a Hai como a Jericó, solo que tomarían para sí sus despojos y sus bestias.",
+      "bibleReference": "Josué 8:2",
+      "answers": [
+        {
+          "text": "La plata y el oro para el tesoro",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada en absoluto, todo era anatema",
+          "isCorrect": false
+        },
+        {
+          "text": "Los despojos y las bestias de la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente las puertas y las vigas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se pusieron los hombres de la emboscada?",
+      "explanation": "Josué los envió y ellos se pusieron entre Beth-el y Hai, al occidente de Hai.",
+      "bibleReference": "Josué 8:9",
+      "answers": [
+        {
+          "text": "Entre Beth-el y Hai, al occidente de Hai",
+          "isCorrect": true
+        },
+        {
+          "text": "Al norte de Hai, junto al valle",
+          "isCorrect": false
+        },
+        {
+          "text": "En el camino del desierto, hacia Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Ebal, junto al altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era el plan de Josué con el pueblo que estaba con él?",
+      "explanation": "Josué dijo que se acercarían a la ciudad y que, cuando los de Hai salieran contra ellos, huirían delante de ellos.",
+      "bibleReference": "Josué 8:5-6",
+      "answers": [
+        {
+          "text": "Rodear la ciudad en silencio siete veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperar a que el rey de Hai pidiera paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Prender fuego a la ciudad al amanecer",
+          "isCorrect": false
+        },
+        {
+          "text": "Acercarse y luego huir delante de ellos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey de Hai cuando vio a Israel?",
+      "explanation": "El rey de Hai se levantó muy de mañana y salió con la gente de la ciudad a combatir, no sabiendo que le estaba puesta una emboscada.",
+      "bibleReference": "Josué 8:14",
+      "answers": [
+        {
+          "text": "Cerró las puertas y se encerró en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Salió con su pueblo a combatir, sin saber de la emboscada",
+          "isCorrect": true
+        },
+        {
+          "text": "Envió mensajeros a Josué pidiendo alianza",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó de noche hacia Beth-el con su gente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Josué que levantara hacia Hai?",
+      "explanation": "Jehová le dijo que levantara hacia Hai la lanza que tenía en su mano, porque le entregaría la ciudad.",
+      "bibleReference": "Josué 8:18",
+      "answers": [
+        {
+          "text": "El arca del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Una bocina de cuerno de carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "La lanza que tenía en su mano",
+          "isCorrect": true
+        },
+        {
+          "text": "Una señal de humo sobre el valle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vieron los de la ciudad cuando miraron atrás?",
+      "explanation": "Miraron atrás y vieron el humo de la ciudad que subía al cielo, y no tuvieron por dónde huir.",
+      "bibleReference": "Josué 8:20",
+      "answers": [
+        {
+          "text": "El arca de Jehová en medio del valle",
+          "isCorrect": false
+        },
+        {
+          "text": "A los israelitas huyendo al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los carros de los cananeos en el llano",
+          "isCorrect": false
+        },
+        {
+          "text": "El humo de su ciudad que subía al cielo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál fue el número de los que cayeron aquel día, hombres y mujeres?",
+      "explanation": "El texto dice que los que cayeron aquel día, hombres y mujeres, fueron doce mil, todos los de Hai.",
+      "bibleReference": "Josué 8:25",
+      "answers": [
+        {
+          "text": "Treinta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y seis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Josué con el rey de Hai?",
+      "explanation": "Josué colgó al rey de Hai de un madero hasta la tarde, y al ponerse el sol mandó que quitaran su cuerpo del madero.",
+      "bibleReference": "Josué 8:29",
+      "answers": [
+        {
+          "text": "Lo colgó de un madero hasta la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo llevó cautivo al campo en Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo dejó vivir como siervo del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo envió de vuelta a Beth-el en paz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Josué en el monte de Ebal?",
+      "explanation": "Josué edificó allí un altar a Jehová Dios de Israel, un altar de piedras enteras sobre las cuales nadie alzó hierro.",
+      "bibleReference": "Josué 8:30-31",
+      "answers": [
+        {
+          "text": "Una ciudad para los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Un montón perpetuo de ruinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una puerta con dos columnas de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Un altar de piedras enteras, sin hierro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Delante de quiénes hizo leer Josué todas las cosas que mandó Moisés?",
+      "explanation": "No hubo palabra que Josué no hiciera leer delante de toda la congregación de Israel, con las mujeres, los niños y los extranjeros que andaban entre ellos.",
+      "bibleReference": "Josué 8:35",
+      "answers": [
+        {
+          "text": "Solamente los sacerdotes y los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente los hombres de guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Toda la congregación: mujeres, niños y extranjeros",
+          "isCorrect": true
+        },
+        {
+          "text": "Los reyes vencidos y sus mensajeros",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

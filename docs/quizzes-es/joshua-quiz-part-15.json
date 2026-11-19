@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Josué 15: los términos de la tribu de Judá, la parte de Caleb, la petición de Axa y las ciudades con sus aldeas.",
+  "slug": "joshua-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Junto a qué término cayó la suerte de la tribu de los hijos de Judá?",
+      "explanation": "La suerte de los hijos de Judá cayó junto al término de Edom, del desierto de Zin al mediodía.",
+      "bibleReference": "Josué 15:1",
+      "answers": [
+        {
+          "text": "Junto al término de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al término de Edom",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al término del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al término de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era el término del oriente de la tribu de Judá?",
+      "explanation": "El texto dice que el término del oriente es el mar Salado hasta el fin del Jordán.",
+      "bibleReference": "Josué 15:5",
+      "answers": [
+        {
+          "text": "La gran mar",
+          "isCorrect": false
+        },
+        {
+          "text": "El arroyo de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "El desierto de Zin",
+          "isCorrect": false
+        },
+        {
+          "text": "El mar Salado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué ciudad está al lado del Jebuseo, al mediodía?",
+      "explanation": "El término subía por el valle del hijo de Hinnom al lado del Jebuseo al mediodía: esta es Jerusalem.",
+      "bibleReference": "Josué 15:8",
+      "answers": [
+        {
+          "text": "Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Debir",
+          "isCorrect": false
+        },
+        {
+          "text": "Chîriath-jearim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era el término del occidente?",
+      "explanation": "El texto dice que el término del occidente es la mar grande.",
+      "bibleReference": "Josué 15:12",
+      "answers": [
+        {
+          "text": "El Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "El mar Salado",
+          "isCorrect": false
+        },
+        {
+          "text": "La mar grande",
+          "isCorrect": true
+        },
+        {
+          "text": "El arroyo de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parte recibió Caleb, hijo de Jephone, entre los hijos de Judá?",
+      "explanation": "Conforme al mandamiento de Jehová a Josué, se dio a Caleb Chîriath-arba, del padre de Anac, que es Hebrón.",
+      "bibleReference": "Josué 15:13",
+      "answers": [
+        {
+          "text": "Las ciudades de Ecrón y de Asdod",
+          "isCorrect": false
+        },
+        {
+          "text": "Beersebah con todas sus aldeas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las fuentes de arriba y las de abajo",
+          "isCorrect": false
+        },
+        {
+          "text": "Chîriath-arba, que es Hebrón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes echó Caleb de allí?",
+      "explanation": "Caleb echó de allí a tres hijos de Anac: a Sesai, Aiman y Talmai.",
+      "bibleReference": "Josué 15:14",
+      "answers": [
+        {
+          "text": "A Sesai, Aiman y Talmai, hijos de Anac",
+          "isCorrect": true
+        },
+        {
+          "text": "A los Jebuseos que habitaban en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A Othoniel y a los hijos de Cenez",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Philisteos de Ecrón y Asdod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién tomó Chîriath-sepher y recibió a Axa por mujer?",
+      "explanation": "Caleb prometió su hija Axa al que hiriera y tomara Chîriath-sepher, y la tomó Othoniel, hijo de Cenez, hermano de Caleb.",
+      "bibleReference": "Josué 15:16-17",
+      "answers": [
+        {
+          "text": "Caleb, hijo de Jephone",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesai, hijo de Anac",
+          "isCorrect": false
+        },
+        {
+          "text": "Othoniel, hijo de Cenez",
+          "isCorrect": true
+        },
+        {
+          "text": "Bohán, hijo de Rubén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además de la tierra de secadal, ¿qué pidió Axa a su padre?",
+      "explanation": "Axa pidió bendición y le dijo que, pues le había dado tierra de secadal, le diera también fuentes de aguas; y él le dio las de arriba y las de abajo.",
+      "bibleReference": "Josué 15:19",
+      "answers": [
+        {
+          "text": "Una ciudad con sus aldeas",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuentes de aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Ganados y rebaños",
+          "isCorrect": false
+        },
+        {
+          "text": "Parte en la herencia de Caleb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ciudades con sus aldeas cuenta el primer grupo, hacia el término de Edom?",
+      "explanation": "Después de nombrar aquellas ciudades, el texto dice: en todas veintinueve ciudades con sus aldeas.",
+      "bibleReference": "Josué 15:32",
+      "answers": [
+        {
+          "text": "Veintinueve ciudades",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Dieciséis ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Nueve ciudades",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes no pudieron desarraigar los hijos de Judá?",
+      "explanation": "A los Jebuseos que habitaban en Jerusalem no los pudieron desarraigar los hijos de Judá, y el Jebuseo quedó allí con ellos hasta hoy.",
+      "bibleReference": "Josué 15:63",
+      "answers": [
+        {
+          "text": "A los Anaceos de Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Philisteos de Gaza",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Anac en Debir",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Jebuseos de Jerusalem",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

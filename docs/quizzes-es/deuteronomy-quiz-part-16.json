@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre Deuteronomio 16: la pascua, la fiesta de las semanas y de las cabañas, y los jueces en las ciudades.",
+  "slug": "deuteronomy-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué mes debía Israel celebrar la pascua a Jehová?",
+      "explanation": "El capítulo manda guardar el mes de Abib y hacer pascua a Jehová, porque en ese mes Dios los sacó de Egipto de noche.",
+      "bibleReference": "Deuteronomio 16:1",
+      "answers": [
+        { "text": "En el mes de Abib", "isCorrect": true },
+        { "text": "En el mes de Adar", "isCorrect": false },
+        { "text": "En el mes séptimo", "isCorrect": false },
+        { "text": "En el mes de la siega", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué animales se sacrificaría la pascua?",
+      "explanation": "El texto dice que la pascua se sacrificaría a Jehová de las ovejas y de las vacas, en el lugar que él escogiere.",
+      "bibleReference": "Deuteronomio 16:2",
+      "answers": [
+        { "text": "De las palomas y las tórtolas", "isCorrect": false },
+        { "text": "De los machos cabríos solamente", "isCorrect": false },
+        { "text": "De las ovejas y de las vacas", "isCorrect": true },
+        { "text": "De las aves del cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por cuántos días se comería con la pascua pan sin levadura?",
+      "explanation": "El versículo manda comer siete días pan por leudar, pan de aflicción, como recuerdo de la salida apresurada de Egipto.",
+      "bibleReference": "Deuteronomio 16:3",
+      "answers": [
+        { "text": "Durante un solo día", "isCorrect": false },
+        { "text": "Durante siete días", "isCorrect": true },
+        { "text": "Durante tres días", "isCorrect": false },
+        { "text": "Durante cuarenta días", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debía ocurrir con la carne sacrificada a la tarde del primer día?",
+      "explanation": "El texto dice que de esa carne no quedaría nada hasta la mañana, y que por siete días no se vería levadura en todo el término.",
+      "bibleReference": "Deuteronomio 16:4",
+      "answers": [
+        { "text": "Se guardaría durante siete días", "isCorrect": false },
+        { "text": "Se quemaría toda sobre el altar", "isCorrect": false },
+        { "text": "Se entregaría a los sacerdotes", "isCorrect": false },
+        { "text": "No quedaría nada hasta la mañana", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿En qué momento del día se sacrificaría la pascua?",
+      "explanation": "Se sacrificaría por la tarde, a la puesta del sol, al tiempo que salieron de Egipto, y en el lugar que Jehová escogiere.",
+      "bibleReference": "Deuteronomio 16:6",
+      "answers": [
+        { "text": "Al salir el sol por la mañana", "isCorrect": false },
+        { "text": "Por la tarde, a la puesta del sol", "isCorrect": true },
+        { "text": "Al mediodía, en pleno calor", "isCorrect": false },
+        { "text": "A la medianoche, en silencio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde cuándo se contarían las siete semanas?",
+      "explanation": "El texto manda empezar a contar las siete semanas desde que comenzare la hoz en las mieses.",
+      "bibleReference": "Deuteronomio 16:9",
+      "answers": [
+        { "text": "Desde que comenzare la hoz en las mieses", "isCorrect": true },
+        { "text": "Desde el primer día del mes de Abib", "isCorrect": false },
+        { "text": "Desde la solemnidad de las cabañas", "isCorrect": false },
+        { "text": "Desde que se terminare la vendimia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Además de los hijos y los siervos, ¿a quiénes nombra el texto entre los que se alegrarían delante de Jehová?",
+      "explanation": "El versículo nombra también al Levita, al extranjero, al huérfano y a la viuda que estuvieren en medio del pueblo.",
+      "bibleReference": "Deuteronomio 16:11",
+      "answers": [
+        { "text": "Solo a los sacerdotes y a los jueces", "isCorrect": false },
+        { "text": "Solo a los varones de cada tribu", "isCorrect": false },
+        { "text": "A los reyes de los pueblos vecinos", "isCorrect": false },
+        { "text": "Al Levita, al extranjero, al huérfano y a la viuda", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Después de qué trabajo se haría la solemnidad de las cabañas?",
+      "explanation": "El texto manda hacer la solemnidad de las cabañas por siete días, cuando se hubiere hecho la cosecha de la era y del lagar.",
+      "bibleReference": "Deuteronomio 16:13",
+      "answers": [
+        { "text": "Después de contar las siete semanas", "isCorrect": false },
+        { "text": "Después de volver de la guerra", "isCorrect": false },
+        { "text": "Después de la cosecha de la era y del lagar", "isCorrect": true },
+        { "text": "Después de sacrificar la pascua", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces al año debía presentarse cada varón delante de Jehová?",
+      "explanation": "El texto dice que tres veces cada año parecerá todo varón delante de Jehová: en la solemnidad de los ázimos, de las semanas y de las cabañas.",
+      "bibleReference": "Deuteronomio 16:16",
+      "answers": [
+        { "text": "Tres veces cada año", "isCorrect": true },
+        { "text": "Una vez cada año", "isCorrect": false },
+        { "text": "Dos veces cada año", "isCorrect": false },
+        { "text": "Siete veces cada año", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿qué cosa aborrece Jehová y por eso no debía levantarse?",
+      "explanation": "El texto prohíbe plantar bosque junto al altar y añade que no se levantará estatua, lo cual aborrece Jehová.",
+      "bibleReference": "Deuteronomio 16:21-22",
+      "answers": [
+        { "text": "Un altar de piedras enteras", "isCorrect": false },
+        { "text": "Una puerta en la ciudad", "isCorrect": false },
+        { "text": "Un canastillo de primicias", "isCorrect": false },
+        { "text": "Una estatua", "isCorrect": true }
+      ]
+    }
+  ]
+}

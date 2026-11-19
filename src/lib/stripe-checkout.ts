@@ -32,16 +32,24 @@ export interface CheckoutSessionInput {
   locked: boolean;
   /** Days of free trial for this plan (from `trialDaysForPlan`). */
   trialDays: number;
+  /** Intl only: Stripe page language. NL leaves it out and gets `nl`. */
+  stripeLocale?: Stripe.Checkout.SessionCreateParams.Locale;
+  /** Intl only: public path for an internal path (`localizePath`). NL: identity. */
+  localize?: (path: string) => string;
+  /** Intl only: `metadata.site`, see `src/lib/stripe-site.ts`. NL: none. */
+  siteTag?: string | null;
 }
 
 export function buildCheckoutSessionParams(input: CheckoutSessionInput): Stripe.Checkout.SessionCreateParams {
   const config = STRIPE_PLANS[input.plan];
-  const metadata = { userId: input.userId, plan: input.plan, returnPath: input.returnPath };
+  const localize = input.localize ?? ((path: string) => path);
+  const site: Record<string, string> = input.siteTag ? { site: input.siteTag } : {};
+  const metadata = { userId: input.userId, plan: input.plan, returnPath: input.returnPath, ...site };
 
   // Built by hand rather than through `URL`: Stripe's placeholder has to reach
   // it as literal braces, and `searchParams` would percent-encode them.
   const successUrl =
-    `${input.origin}/premium/succes?session_id={CHECKOUT_SESSION_ID}` + `&next=${encodeURIComponent(input.returnPath)}`;
+    `${input.origin}${localize('/premium/succes')}?session_id={CHECKOUT_SESSION_ID}` + `&next=${encodeURIComponent(input.returnPath)}`;
 
   const cancelBase = config.isGroup
     ? '/groepslicentie'
@@ -50,7 +58,8 @@ export function buildCheckoutSessionParams(input: CheckoutSessionInput): Stripe.
         returnPath: input.locked ? input.returnPath : null,
         plan: input.plan === 'group' ? undefined : input.plan,
       });
-  const cancelUrl = `${input.origin}${cancelBase}${cancelBase.includes('?') ? '&' : '?'}checkout=geannuleerd`;
+  const cancelPath = localize(cancelBase);
+  const cancelUrl = `${input.origin}${cancelPath}${cancelPath.includes('?') ? '&' : '?'}checkout=geannuleerd`;
 
   const trialDays = config.offersTrial ? Math.max(0, Math.floor(input.trialDays)) : 0;
 
@@ -60,7 +69,7 @@ export function buildCheckoutSessionParams(input: CheckoutSessionInput): Stripe.
     success_url: successUrl,
     cancel_url: cancelUrl,
     client_reference_id: input.userId,
-    locale: 'nl',
+    locale: input.stripeLocale ?? 'nl',
     allow_promotion_codes: true,
     metadata,
   };
@@ -79,7 +88,7 @@ export function buildCheckoutSessionParams(input: CheckoutSessionInput): Stripe.
       ...(trialDays > 0 ? { trial_period_days: trialDays } : {}),
     };
   } else {
-    params.payment_intent_data = { metadata: { userId: input.userId, plan: input.plan } };
+    params.payment_intent_data = { metadata: { userId: input.userId, plan: input.plan, ...site } };
   }
 
   return params;

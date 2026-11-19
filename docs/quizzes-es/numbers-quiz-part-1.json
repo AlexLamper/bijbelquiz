@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Números 1: el censo de los hijos de Israel en el desierto de Sinaí, los príncipes de las tribus y el cargo de los Levitas.",
+  "slug": "numbers-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿dónde habló Jehová a Moisés?",
+      "explanation": "El versículo dice que Jehová habló a Moisés en el desierto de Sinaí, en el tabernáculo del testimonio.",
+      "bibleReference": "Números 1:1",
+      "answers": [
+        {
+          "text": "En el monte Horeb",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Sinaí",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Parán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde qué edad se contaban los varones que podían salir a la guerra?",
+      "explanation": "El versículo dice que contarán a los de veinte años arriba, todos los que pueden salir a la guerra en Israel.",
+      "bibleReference": "Números 1:3",
+      "answers": [
+        {
+          "text": "De un mes arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De treinta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De cinco años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De veinte años arriba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién estaría con Moisés y Aarón de parte de la tribu de Judá?",
+      "explanation": "El versículo dice que de Judá estaría Naasón hijo de Aminadab.",
+      "bibleReference": "Números 1:7",
+      "answers": [
+        {
+          "text": "Naasón hijo de Aminadab",
+          "isCorrect": true
+        },
+        {
+          "text": "Eliab hijo de Helón",
+          "isCorrect": false
+        },
+        {
+          "text": "Elisur hijo de Sedeur",
+          "isCorrect": false
+        },
+        {
+          "text": "Abidán hijo de Gedeón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿quién era el varón nombrado de la tribu de Dan?",
+      "explanation": "El versículo dice que de Dan estaría Ahiezer hijo de Ammisaddai.",
+      "bibleReference": "Números 1:12",
+      "answers": [
+        {
+          "text": "Phegiel hijo de Ocrán",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahira hijo de Enán",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahiezer hijo de Ammisaddai",
+          "isCorrect": true
+        },
+        {
+          "text": "Gamaliel hijo de Pedasur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron los contados de la tribu de Rubén?",
+      "explanation": "El versículo dice que los contados de la tribu de Rubén fueron cuarenta y seis mil y quinientos.",
+      "bibleReference": "Números 1:21",
+      "answers": [
+        {
+          "text": "Cincuenta y nueve mil y trescientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y cinco mil seiscientos y cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y seis mil y quinientos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron los contados de la tribu de Judá?",
+      "explanation": "El versículo dice que los contados de la tribu de Judá fueron setenta y cuatro mil y seiscientos.",
+      "bibleReference": "Números 1:27",
+      "answers": [
+        {
+          "text": "Cincuenta y cuatro mil y cuatrocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta y cuatro mil y seiscientos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sesenta y dos mil y setecientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y cinco mil y cuatrocientos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron los contados de la tribu de Manasés?",
+      "explanation": "El versículo dice que los contados de la tribu de Manasés fueron treinta y dos mil y doscientos.",
+      "bibleReference": "Números 1:35",
+      "answers": [
+        {
+          "text": "Cuarenta mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta y tres mil y cuatrocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y dos mil y doscientos",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta y cinco mil y cuatrocientos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál fue el total de todos los contados de los hijos de Israel?",
+      "explanation": "El versículo dice que fueron todos los contados seiscientos tres mil quinientos y cincuenta.",
+      "bibleReference": "Números 1:46",
+      "answers": [
+        {
+          "text": "Seiscientos tres mil quinientos y cincuenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Seiscientos mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quinientos tres mil y cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Setecientos tres mil y cincuenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tribu no debía ser contada entre los hijos de Israel?",
+      "explanation": "Jehová dice a Moisés que no contará la tribu de Leví ni tomará su cuenta entre los hijos de Israel.",
+      "bibleReference": "Números 1:49",
+      "answers": [
+        {
+          "text": "La tribu de Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "La tribu de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "La tribu de José",
+          "isCorrect": false
+        },
+        {
+          "text": "La tribu de Leví",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer los Levitas con el tabernáculo del testimonio?",
+      "explanation": "Los versículos dicen que llevarán el tabernáculo y todos sus vasos, servirán en él y asentarán sus tiendas alrededor de él.",
+      "bibleReference": "Números 1:50",
+      "answers": [
+        {
+          "text": "Llevarlo, servir en él y acampar alrededor",
+          "isCorrect": true
+        },
+        {
+          "text": "Repartirlo entre las doce tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar la bandera de cada escuadrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Contar a los primogénitos de Israel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

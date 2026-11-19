@@ -13,7 +13,7 @@ question, 3+ questions on one chapter). This plan adds what makes every claim
 | de | docs/quizzes-de | Lutherbibel 1912 (`luth1912`) | ready |
 | fr | docs/quizzes-fr | Louis Segond 1910 (`lsg1910`) | ready |
 | pt | docs/quizzes-pt | Biblia Livre (`blivre`, CC BY 4.0) | ready |
-| es | docs/quizzes-es | none verified yet | BLOCKED: no quiz may be written or imported until a public-domain Spanish text (Reina-Valera 1909) is verified and added |
+| es | docs/quizzes-es | Reina-Valera 1909 (`rv1909`, public domain, Spanish versification) | ready |
 
 A question may only claim what its cited verses say in that language's text.
 Quote that text, never another translation. Names follow that text too (Luther:

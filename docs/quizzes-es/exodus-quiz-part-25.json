@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Éxodo 25: la ofrenda para el santuario, el arca con su cubierta y los querubines, la mesa y el candelero de oro.",
+  "slug": "exodus-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién debían tomar la ofrenda para Jehová?",
+      "explanation": "Se manda tomar la ofrenda de todo varón que la diere de su voluntad, de corazón.",
+      "bibleReference": "Éxodo 25:2",
+      "answers": [
+        {
+          "text": "De los sacerdotes solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "De los mayores de veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "De todo el que la diera de su voluntad",
+          "isCorrect": true
+        },
+        {
+          "text": "De los príncipes de las tribus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clase de madera figura en la lista de la ofrenda?",
+      "explanation": "La ofrenda incluía oro, plata, cobre, telas, pieles y madera de Sittim.",
+      "bibleReference": "Éxodo 25:3-5",
+      "answers": [
+        {
+          "text": "Madera de Sittim",
+          "isCorrect": true
+        },
+        {
+          "text": "Madera de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "Madera de olivo",
+          "isCorrect": false
+        },
+        {
+          "text": "Madera de almendro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué debían hacerle un santuario?",
+      "explanation": "El versículo dice: Y hacerme han un santuario, y yo habitaré entre ellos.",
+      "bibleReference": "Éxodo 25:8",
+      "answers": [
+        {
+          "text": "Para guardar las ofrendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que él habitara entre ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Para reunir a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que el pueblo descansara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál debía ser la longitud del arca?",
+      "explanation": "El arca de madera de Sittim medía dos codos y medio de longitud, codo y medio de anchura y codo y medio de altura.",
+      "bibleReference": "Éxodo 25:10",
+      "answers": [
+        {
+          "text": "Un codo y medio",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos codos y medio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se manda acerca de las varas del arca?",
+      "explanation": "Las varas se estarán en los anillos del arca: no se quitarán de ella.",
+      "bibleReference": "Éxodo 25:15",
+      "answers": [
+        {
+          "text": "Que se guarden aparte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se cubran de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no se quiten de los anillos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se quemen tras el viaje",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía poner dentro del arca?",
+      "explanation": "El versículo dice: Y pondrás en el arca el testimonio que yo te daré.",
+      "bibleReference": "Éxodo 25:16",
+      "answers": [
+        {
+          "text": "El pan de la proposición",
+          "isCorrect": false
+        },
+        {
+          "text": "El testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "El aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "Las siete candilejas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo debían estar las caras de los dos querubines de la cubierta?",
+      "explanation": "Los querubines extendían las alas por encima, cubriendo la cubierta, y sus caras estaban la una enfrente de la otra, mirando a la cubierta.",
+      "bibleReference": "Éxodo 25:20",
+      "answers": [
+        {
+          "text": "La una enfrente de la otra",
+          "isCorrect": true
+        },
+        {
+          "text": "Vueltas hacia la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Vueltas hacia el aquilón",
+          "isCorrect": false
+        },
+        {
+          "text": "Escondidas bajo las alas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía ponerse sobre la mesa delante de Jehová continuamente?",
+      "explanation": "El versículo manda poner sobre la mesa el pan de la proposición delante de Jehová continuamente.",
+      "bibleReference": "Éxodo 25:30",
+      "answers": [
+        {
+          "text": "Las piedras de onix",
+          "isCorrect": false
+        },
+        {
+          "text": "El sahumerio aromático",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dos querubines",
+          "isCorrect": false
+        },
+        {
+          "text": "El pan de la proposición",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas candilejas debía tener el candelero?",
+      "explanation": "El candelero de oro puro llevaba siete candilejas, que se encendían para alumbrar hacia su parte delantera.",
+      "bibleReference": "Éxodo 25:37",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Conforme a qué debía hacer todas estas cosas?",
+      "explanation": "El versículo dice: Y mira, y hazlos conforme a su modelo, que te ha sido mostrado en el monte.",
+      "bibleReference": "Éxodo 25:40",
+      "answers": [
+        {
+          "text": "Al modelo mostrado en el monte",
+          "isCorrect": true
+        },
+        {
+          "text": "A lo que dijeran los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "A la costumbre de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A su propio parecer",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

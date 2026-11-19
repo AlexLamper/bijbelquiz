@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 34",
+  "description": "Ten questions on Numbers 34: the borders of the land of Canaan and the men chosen to divide it.",
+  "slug": "numbers-bible-quiz-part-34",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "The south border was to start from the end of which sea?",
+      "explanation": "The south border was to be from the end of the Salt Sea eastward.",
+      "bibleReference": "Numbers 34:3",
+      "answers": [
+        {
+          "text": "The great sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The Salt Sea",
+          "isCorrect": true
+        },
+        {
+          "text": "The Red Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea of Chinnereth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From Azmon, where did the south border turn to before ending at the sea?",
+      "explanation": "The border turned about from Azmon to the brook of Egypt, and it ended at the sea.",
+      "bibleReference": "Numbers 34:5",
+      "answers": [
+        {
+          "text": "The brook of Egypt",
+          "isCorrect": true
+        },
+        {
+          "text": "The sea of Chinnereth",
+          "isCorrect": false
+        },
+        {
+          "text": "The entrance of Hamath",
+          "isCorrect": false
+        },
+        {
+          "text": "The ascent of Akrabbim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was to be Israel's western border?",
+      "explanation": "For the western border they would have the great sea and its border.",
+      "bibleReference": "Numbers 34:6",
+      "answers": [
+        {
+          "text": "The Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "The Salt Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The great sea",
+          "isCorrect": true
+        },
+        {
+          "text": "The brook of Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From Mount Hor, the north border was to be marked out to which place?",
+      "explanation": "From Mount Hor they were to mark out the border to the entrance of Hamath, passing by Zedad.",
+      "bibleReference": "Numbers 34:8",
+      "answers": [
+        {
+          "text": "The ascent of Akrabbim",
+          "isCorrect": false
+        },
+        {
+          "text": "The brook of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The sea of Chinnereth",
+          "isCorrect": false
+        },
+        {
+          "text": "The entrance of Hamath",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "On the east border, the line went down from Shepham to which place?",
+      "explanation": "The border was to go down from Shepham to Riblah, on the east side of Ain.",
+      "bibleReference": "Numbers 34:11",
+      "answers": [
+        {
+          "text": "Riblah",
+          "isCorrect": true
+        },
+        {
+          "text": "Zedad",
+          "isCorrect": false
+        },
+        {
+          "text": "Hazar Addar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ziphron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Along which river did the east border go down to end at the Salt Sea?",
+      "explanation": "The border was to go down to the Jordan and end at the Salt Sea.",
+      "bibleReference": "Numbers 34:12",
+      "answers": [
+        {
+          "text": "The Euphrates",
+          "isCorrect": false
+        },
+        {
+          "text": "The Arnon",
+          "isCorrect": false
+        },
+        {
+          "text": "The Jabbok",
+          "isCorrect": false
+        },
+        {
+          "text": "The Jordan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides the half-tribe, to how many tribes was the land to be given by lot?",
+      "explanation": "Moses said it was the land which Yahweh commanded to give to the nine tribes and to the half-tribe.",
+      "bibleReference": "Numbers 34:13",
+      "answers": [
+        {
+          "text": "Ten",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which tribes had already received their inheritance beyond the Jordan?",
+      "explanation": "Reuben, Gad and the half-tribe of Manasseh had received their inheritance beyond the Jordan at Jericho eastward.",
+      "bibleReference": "Numbers 34:14-15",
+      "answers": [
+        {
+          "text": "Judah, Simeon and Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim, Dan and Asher",
+          "isCorrect": false
+        },
+        {
+          "text": "Reuben, Gad and half of Manasseh",
+          "isCorrect": true
+        },
+        {
+          "text": "Levi, Issachar and Zebulun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two men did Yahweh name first to divide the land for inheritance?",
+      "explanation": "The men who would divide the land were Eleazar the priest and Joshua the son of Nun.",
+      "bibleReference": "Numbers 34:17",
+      "answers": [
+        {
+          "text": "Moses and Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar and Joshua",
+          "isCorrect": true
+        },
+        {
+          "text": "Phinehas and Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron and Hur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was chosen as the prince from the tribe of Judah?",
+      "explanation": "Of the tribe of Judah, Caleb the son of Jephunneh was named.",
+      "bibleReference": "Numbers 34:19",
+      "answers": [
+        {
+          "text": "Shemuel the son of Ammihud",
+          "isCorrect": false
+        },
+        {
+          "text": "Elidad the son of Chislon",
+          "isCorrect": false
+        },
+        {
+          "text": "Bukki the son of Jogli",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb the son of Jephunneh",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

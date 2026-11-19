@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 13",
+  "description": "Ten questions on Leviticus 13: how the priest examines skin diseases, the life of a leper, and mildew in garments.",
+  "slug": "leviticus-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "To whom must a man with a possible plague of leprosy be brought?",
+      "explanation": "He shall be brought to Aaron the priest or to one of his sons, the priests.",
+      "bibleReference": "Leviticus 13:2",
+      "answers": [
+        {
+          "text": "To Moses at the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "To the elders at the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "To a physician in the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "To Aaron the priest or one of his sons",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which two signs show the priest that a spot is the plague of leprosy?",
+      "explanation": "If the hair in the plague has turned white and it appears deeper than the skin, it is the plague of leprosy.",
+      "bibleReference": "Leviticus 13:3",
+      "answers": [
+        {
+          "text": "It itches and feels warm when it is touched",
+          "isCorrect": false
+        },
+        {
+          "text": "The hair has turned white and it is deeper than the skin",
+          "isCorrect": true
+        },
+        {
+          "text": "It is round and has black hair growing in it",
+          "isCorrect": false
+        },
+        {
+          "text": "It is flat and fades when it is in the sun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the priest do with a white spot that is not deeper than the skin and whose hair has not turned white?",
+      "explanation": "In that case the priest shall isolate the infected person for seven days.",
+      "bibleReference": "Leviticus 13:4",
+      "answers": [
+        {
+          "text": "Pronounce him unclean at once",
+          "isCorrect": false
+        },
+        {
+          "text": "Send him out of the camp for good",
+          "isCorrect": false
+        },
+        {
+          "text": "Isolate the person for seven days",
+          "isCorrect": true
+        },
+        {
+          "text": "Burn his clothes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If leprosy covers all the skin from head to feet and has all turned white, what does the priest pronounce?",
+      "explanation": "If the leprosy has covered all his flesh and it has all turned white, the priest pronounces him clean.",
+      "bibleReference": "Leviticus 13:12-13",
+      "answers": [
+        {
+          "text": "That he is clean",
+          "isCorrect": true
+        },
+        {
+          "text": "That he must stay outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "That he must be isolated for a month",
+          "isCorrect": false
+        },
+        {
+          "text": "That his house must be destroyed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of hair in a plague on the head or beard shows it is leprosy?",
+      "explanation": "If it appears deeper than the skin and the hair in it is yellow and thin, it is an itch, leprosy of the head or the beard.",
+      "bibleReference": "Leviticus 13:30",
+      "answers": [
+        {
+          "text": "Thick black hair",
+          "isCorrect": false
+        },
+        {
+          "text": "Long curly hair",
+          "isCorrect": false
+        },
+        {
+          "text": "Yellow and thin hair",
+          "isCorrect": true
+        },
+        {
+          "text": "No hair at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What shows that an itch on the head or beard is healed?",
+      "explanation": "If the itch is arrested and black hair has grown in it, the itch is healed and he is clean.",
+      "bibleReference": "Leviticus 13:37",
+      "answers": [
+        {
+          "text": "Black hair has grown in it",
+          "isCorrect": true
+        },
+        {
+          "text": "The skin has become rough",
+          "isCorrect": false
+        },
+        {
+          "text": "It has spread to the beard",
+          "isCorrect": false
+        },
+        {
+          "text": "Yellow hair has appeared",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is said about a man whose hair has fallen from his head?",
+      "explanation": "If a man's hair has fallen from his head, he is bald. He is clean.",
+      "bibleReference": "Leviticus 13:40",
+      "answers": [
+        {
+          "text": "He is a leper and unclean",
+          "isCorrect": false
+        },
+        {
+          "text": "He is bald, and he is clean",
+          "isCorrect": true
+        },
+        {
+          "text": "He must be isolated seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "He must shave his beard",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must a leper cry out?",
+      "explanation": "The leper shall wear torn clothes, let his hair hang loose, cover his upper lip and cry, 'Unclean! Unclean!'",
+      "bibleReference": "Leviticus 13:45",
+      "answers": [
+        {
+          "text": "\"Have mercy! Have mercy!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Keep away! Keep away!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Holy! Holy!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Unclean! Unclean!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What colors in a garment or leather show the plague that must be shown to the priest?",
+      "explanation": "If the plague is greenish or reddish in the garment or leather, it is the plague of leprosy and must be shown to the priest.",
+      "bibleReference": "Leviticus 13:49",
+      "answers": [
+        {
+          "text": "Black or brown",
+          "isCorrect": false
+        },
+        {
+          "text": "Blue or purple",
+          "isCorrect": false
+        },
+        {
+          "text": "Greenish or reddish",
+          "isCorrect": true
+        },
+        {
+          "text": "Yellow or gray",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is done with a garment when the plague has spread in it after seven days?",
+      "explanation": "If it has spread, it is a destructive mildew; the priest shall burn the garment in the fire.",
+      "bibleReference": "Leviticus 13:51-52",
+      "answers": [
+        {
+          "text": "It is washed once and worn again",
+          "isCorrect": false
+        },
+        {
+          "text": "It is burned in the fire",
+          "isCorrect": true
+        },
+        {
+          "text": "It is given to a stranger",
+          "isCorrect": false
+        },
+        {
+          "text": "It is buried in the ground",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

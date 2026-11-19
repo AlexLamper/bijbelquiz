@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 21",
+  "description": "Ten questions on Isaiah 21: the burden of the wilderness of the sea, the watchman's cry that Babylon has fallen, and the burdens of Dumah and Arabia.",
+  "slug": "isaiah-bible-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Isaiah 21 opens with the burden of what?",
+      "explanation": "Verse 1 opens with \"The burden of the wilderness of the sea,\" coming like whirlwinds in the South.",
+      "bibleReference": "Isaiah 21:1",
+      "answers": [
+        {
+          "text": "The wilderness of the sea",
+          "isCorrect": true
+        },
+        {
+          "text": "The valley of vision",
+          "isCorrect": false
+        },
+        {
+          "text": "The city of the sun",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountains of the east",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which nation is told, \"Go up... attack!\"?",
+      "explanation": "Verse 2 says, \"Go up, Elam; attack! I have stopped all of Media's sighing.\"",
+      "bibleReference": "Isaiah 21:2",
+      "answers": [
+        {
+          "text": "Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Elam",
+          "isCorrect": true
+        },
+        {
+          "text": "Assyria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the speaker's pains compared to?",
+      "explanation": "Verse 3 says pains have seized him, like the pains of a woman in labor.",
+      "bibleReference": "Isaiah 21:3",
+      "answers": [
+        {
+          "text": "The sting of a scorpion",
+          "isCorrect": false
+        },
+        {
+          "text": "The pains of a woman in labor",
+          "isCorrect": true
+        },
+        {
+          "text": "The wounds of a sword",
+          "isCorrect": false
+        },
+        {
+          "text": "The gnawing of hunger",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the princes told to rise up and do?",
+      "explanation": "Verse 5 says, \"Rise up, you princes, oil the shield!\"",
+      "bibleReference": "Isaiah 21:5",
+      "answers": [
+        {
+          "text": "Draw the sword",
+          "isCorrect": false
+        },
+        {
+          "text": "Sound the trumpet",
+          "isCorrect": false
+        },
+        {
+          "text": "Saddle the horses",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil the shield",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the Lord tell the speaker to set?",
+      "explanation": "Verse 6 says, \"Go, set a watchman. Let him declare what he sees.\"",
+      "bibleReference": "Isaiah 21:6",
+      "answers": [
+        {
+          "text": "A table",
+          "isCorrect": false
+        },
+        {
+          "text": "A watchman",
+          "isCorrect": true
+        },
+        {
+          "text": "A banner",
+          "isCorrect": false
+        },
+        {
+          "text": "A snare",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the watchman see coming?",
+      "explanation": "Verses 7 and 9 say he sees a troop of men, horsemen in pairs, with troops of donkeys and camels.",
+      "bibleReference": "Isaiah 21:7-9",
+      "answers": [
+        {
+          "text": "A troop of men, horsemen in pairs",
+          "isCorrect": true
+        },
+        {
+          "text": "A cloud of locusts",
+          "isCorrect": false
+        },
+        {
+          "text": "Ships on the great sea",
+          "isCorrect": false
+        },
+        {
+          "text": "A pillar of smoke from the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is announced about Babylon in verse 9?",
+      "explanation": "Verse 9 says, \"Fallen, fallen is Babylon; and all the engraved images of her gods are broken to the ground.\"",
+      "bibleReference": "Isaiah 21:9",
+      "answers": [
+        {
+          "text": "\"Babylon will stand forever\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Babylon has made peace with Elam\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Babylon's walls are rebuilt\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Fallen, fallen is Babylon\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the burden of Dumah, what question is called out of Seir?",
+      "explanation": "Verse 11 says one calls out of Seir, \"Watchman, what of the night? Watchman, what of the night?\"",
+      "bibleReference": "Isaiah 21:11",
+      "answers": [
+        {
+          "text": "\"Watchman, where is the king?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Watchman, who goes there?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Watchman, what of the night?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Watchman, when comes the rain?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The inhabitants of which land met the fugitives with their bread?",
+      "explanation": "Verse 14 says the inhabitants of the land of Tema met the fugitives with their bread and brought water to the thirsty.",
+      "bibleReference": "Isaiah 21:14",
+      "answers": [
+        {
+          "text": "Dedan",
+          "isCorrect": false
+        },
+        {
+          "text": "Tema",
+          "isCorrect": true
+        },
+        {
+          "text": "Seir",
+          "isCorrect": false
+        },
+        {
+          "text": "Kedar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Within a year, whose glory will fail?",
+      "explanation": "Verse 16 says, \"Within a year, as a worker bound by contract would count it, all the glory of Kedar will fail.\"",
+      "bibleReference": "Isaiah 21:16",
+      "answers": [
+        {
+          "text": "Kedar",
+          "isCorrect": true
+        },
+        {
+          "text": "Dumah",
+          "isCorrect": false
+        },
+        {
+          "text": "Arabia's caravans",
+          "isCorrect": false
+        },
+        {
+          "text": "Elam",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

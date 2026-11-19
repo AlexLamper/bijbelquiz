@@ -1,0 +1,242 @@
+{
+  "title": "1 Corinthians Bible Quiz - Chapter 4",
+  "description": "Ten questions on 1 Corinthians 4: stewards of God's mysteries, judging nothing before the time, the hardships of the apostles, and the sending of Timothy.",
+  "slug": "1-corinthians-bible-quiz-part-4",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How does verse 1 say a man should think of the writer and those with him?",
+      "explanation": "Verse 1 says to think of them as Christ's servants and stewards of God's mysteries.",
+      "bibleReference": "1 Corinthians 4:1",
+      "answers": [
+        {
+          "text": "As judges appointed over the whole assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "As Christ's servants and stewards of God's mysteries",
+          "isCorrect": true
+        },
+        {
+          "text": "As teachers of the law of Moses and the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "As fathers of all the Gentile assemblies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 2, what is required of stewards?",
+      "explanation": "The verse says it is required of stewards that they be found faithful.",
+      "bibleReference": "1 Corinthians 4:2",
+      "answers": [
+        {
+          "text": "That they be found wise",
+          "isCorrect": false
+        },
+        {
+          "text": "That they be found wealthy",
+          "isCorrect": false
+        },
+        {
+          "text": "That they be found silent",
+          "isCorrect": false
+        },
+        {
+          "text": "That they be found faithful",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Until when does verse 5 say they should judge nothing?",
+      "explanation": "It says to judge nothing before the time, until the Lord comes, who will bring to light the hidden things of darkness.",
+      "bibleReference": "1 Corinthians 4:5",
+      "answers": [
+        {
+          "text": "Until the Lord comes",
+          "isCorrect": true
+        },
+        {
+          "text": "Until Timothy arrives",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the assembly agrees",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the writer returns",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 7 say about everything they have?",
+      "explanation": "The verse asks what they have that they did not receive, and why they boast as if they had not received it.",
+      "bibleReference": "1 Corinthians 4:7",
+      "answers": [
+        {
+          "text": "They earned all of it",
+          "isCorrect": false
+        },
+        {
+          "text": "They will lose all of it",
+          "isCorrect": false
+        },
+        {
+          "text": "They received all of it",
+          "isCorrect": true
+        },
+        {
+          "text": "They share none of it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does verse 9 say God has displayed the apostles?",
+      "explanation": "It says God has displayed the apostles last of all, like men sentenced to death, made a spectacle to the world, to angels and men.",
+      "bibleReference": "1 Corinthians 4:9",
+      "answers": [
+        {
+          "text": "First of all, like rulers of cities",
+          "isCorrect": false
+        },
+        {
+          "text": "Quietly, like servants in a house",
+          "isCorrect": false
+        },
+        {
+          "text": "Like soldiers returning from battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Last of all, like men sentenced to death",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which hardships does verse 11 list as going on to that present hour?",
+      "explanation": "The verse says they hunger, thirst, are naked, are beaten, and have no certain dwelling place.",
+      "bibleReference": "1 Corinthians 4:11",
+      "answers": [
+        {
+          "text": "Hunger, thirst, nakedness, beatings and no certain dwelling place",
+          "isCorrect": true
+        },
+        {
+          "text": "Imprisonment, shipwreck and the loss of all their goods",
+          "isCorrect": false
+        },
+        {
+          "text": "Sickness, poverty, loneliness and the scorn of their friends",
+          "isCorrect": false
+        },
+        {
+          "text": "Fear, doubt, sleeplessness and quarrels among themselves",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 12, what do they do when people curse them?",
+      "explanation": "The verse says that when people curse them, they bless, and being persecuted, they endure.",
+      "bibleReference": "1 Corinthians 4:12",
+      "answers": [
+        {
+          "text": "They keep silent",
+          "isCorrect": false
+        },
+        {
+          "text": "They answer back",
+          "isCorrect": false
+        },
+        {
+          "text": "They bless",
+          "isCorrect": true
+        },
+        {
+          "text": "They leave the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 15 say about tutors and fathers?",
+      "explanation": "It says that though they have ten thousand tutors in Christ, they do not have many fathers, and that in Christ Jesus he became their father through the Good News.",
+      "bibleReference": "1 Corinthians 4:15",
+      "answers": [
+        {
+          "text": "They have many fathers but no tutors",
+          "isCorrect": false
+        },
+        {
+          "text": "They have many tutors but not many fathers",
+          "isCorrect": true
+        },
+        {
+          "text": "They have neither tutors nor fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "They have one tutor and ten thousand fathers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does the writer say he has sent to the Corinthians?",
+      "explanation": "Verse 17 says he has sent Timothy, his beloved and faithful child in the Lord, to remind them of his ways in Christ.",
+      "bibleReference": "1 Corinthians 4:17",
+      "answers": [
+        {
+          "text": "Timothy",
+          "isCorrect": true
+        },
+        {
+          "text": "Apollos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cephas",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 20, God's Kingdom is not in word, but in what?",
+      "explanation": "The verse says God's Kingdom is not in word, but in power.",
+      "bibleReference": "1 Corinthians 4:20",
+      "answers": [
+        {
+          "text": "Wisdom",
+          "isCorrect": false
+        },
+        {
+          "text": "Silence",
+          "isCorrect": false
+        },
+        {
+          "text": "Riches",
+          "isCorrect": false
+        },
+        {
+          "text": "Power",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

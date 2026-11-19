@@ -1,0 +1,242 @@
+{
+  "title": "Galatians Bible Quiz - Chapter 2",
+  "description": "Ten questions on Galatians 2: a visit to Jerusalem with Barnabas and Titus, the right hand of fellowship, the confrontation at Antioch, and being justified by faith.",
+  "slug": "galatians-bible-quiz-part-2",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Whom did the writer take with him when he went up again to Jerusalem?",
+      "explanation": "He says that after a period of fourteen years he went up again to Jerusalem with Barnabas, taking Titus also with him.",
+      "bibleReference": "Galatians 2:1",
+      "answers": [
+        {
+          "text": "Peter and John",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas and Titus",
+          "isCorrect": true
+        },
+        {
+          "text": "James and Cephas",
+          "isCorrect": false
+        },
+        {
+          "text": "Timothy and Luke",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about Titus and circumcision?",
+      "explanation": "It says that not even Titus, who was with him and was a Greek, was compelled to be circumcised.",
+      "bibleReference": "Galatians 2:3",
+      "answers": [
+        {
+          "text": "He was not compelled to be circumcised",
+          "isCorrect": true
+        },
+        {
+          "text": "He was circumcised to please the Jews",
+          "isCorrect": false
+        },
+        {
+          "text": "He was sent away because of it",
+          "isCorrect": false
+        },
+        {
+          "text": "He was told to decide for himself",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were the false brothers secretly brought in?",
+      "explanation": "They stole in to spy out the liberty which we have in Christ Jesus, so that they might bring us into bondage.",
+      "bibleReference": "Galatians 2:4",
+      "answers": [
+        {
+          "text": "To carry a report back to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To collect money from the Gentiles",
+          "isCorrect": false
+        },
+        {
+          "text": "To learn the Good News for themselves",
+          "isCorrect": false
+        },
+        {
+          "text": "To spy out our liberty and bring us into bondage",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who are named as those reputed to be pillars, who gave the right hand of fellowship?",
+      "explanation": "It says that James and Cephas and John, who were reputed to be pillars, gave Barnabas and the writer the right hand of fellowship.",
+      "bibleReference": "Galatians 2:9",
+      "answers": [
+        {
+          "text": "Andrew, Philip and John",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas, Titus and James",
+          "isCorrect": false
+        },
+        {
+          "text": "James, Cephas and John",
+          "isCorrect": true
+        },
+        {
+          "text": "Cephas, Timothy and John",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What one thing did they ask of Barnabas and the writer?",
+      "explanation": "They only asked them to remember the poor, which the writer says he was also zealous to do.",
+      "bibleReference": "Galatians 2:10",
+      "answers": [
+        {
+          "text": "To report back every year",
+          "isCorrect": false
+        },
+        {
+          "text": "To remember the poor",
+          "isCorrect": true
+        },
+        {
+          "text": "To keep away from the Gentiles",
+          "isCorrect": false
+        },
+        {
+          "text": "To teach the law to the Greeks",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the writer do when Peter came to Antioch?",
+      "explanation": "He says he resisted Peter to his face, because Peter stood condemned.",
+      "bibleReference": "Galatians 2:11",
+      "answers": [
+        {
+          "text": "He welcomed him before the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "He kept silent about the matter",
+          "isCorrect": false
+        },
+        {
+          "text": "He wrote to James about him",
+          "isCorrect": false
+        },
+        {
+          "text": "He resisted him to his face",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Peter do when some people came from James?",
+      "explanation": "Before they came he ate with the Gentiles, but when they came he drew back and separated himself, fearing those who were of the circumcision.",
+      "bibleReference": "Galatians 2:12",
+      "answers": [
+        {
+          "text": "He drew back and separated himself from the Gentiles",
+          "isCorrect": true
+        },
+        {
+          "text": "He went up to Jerusalem at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He called the Gentiles together to teach them",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked the writer to speak for him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was carried away with the hypocrisy of the Jews there?",
+      "explanation": "It says the rest of the Jews joined Peter in his hypocrisy, so that even Barnabas was carried away with it.",
+      "bibleReference": "Galatians 2:13",
+      "answers": [
+        {
+          "text": "Titus",
+          "isCorrect": false
+        },
+        {
+          "text": "James",
+          "isCorrect": false
+        },
+        {
+          "text": "Barnabas",
+          "isCorrect": true
+        },
+        {
+          "text": "John",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does this chapter say a man is justified?",
+      "explanation": "It says a man is not justified by the works of the law but through faith in Jesus Christ, because no flesh will be justified by the works of the law.",
+      "bibleReference": "Galatians 2:16",
+      "answers": [
+        {
+          "text": "Through faith in Jesus Christ, not by the works of the law",
+          "isCorrect": true
+        },
+        {
+          "text": "By the works of the law alone",
+          "isCorrect": false
+        },
+        {
+          "text": "By keeping the traditions of the fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "By the judgment of those reputed to be pillars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the writer say about his own life after being crucified with Christ?",
+      "explanation": "He says it is no longer he who lives, but Christ lives in him, and the life he now lives in the flesh he lives by faith in the Son of God.",
+      "bibleReference": "Galatians 2:20",
+      "answers": [
+        {
+          "text": "That he lives by the law of his fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "That he lives as one who is already dead",
+          "isCorrect": false
+        },
+        {
+          "text": "That he lives for the praise of men",
+          "isCorrect": false
+        },
+        {
+          "text": "That it is no longer he who lives, but Christ lives in him",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

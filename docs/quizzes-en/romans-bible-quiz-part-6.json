@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 6",
+  "description": "Ten questions on Romans 6: baptism into Christ's death, being dead to sin and alive to God, and the wages of sin against the free gift of God.",
+  "slug": "romans-bible-quiz-part-6",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What answer does the chapter give to the question, \"Shall we continue in sin, that grace may abound?\"",
+      "explanation": "The answer is, \"May it never be!\" because we who died to sin cannot live in it any longer.",
+      "bibleReference": "Romans 6:1-2",
+      "answers": [
+        {
+          "text": "\"Yes, so that grace may be seen.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Only until the law is fulfilled.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"That is for each one to decide.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"May it never be!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Into what were all those baptized into Christ Jesus baptized, according to this chapter?",
+      "explanation": "It asks whether they do not know that all who were baptized into Christ Jesus were baptized into his death.",
+      "bibleReference": "Romans 6:3",
+      "answers": [
+        {
+          "text": "Into the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Into his death",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the name of the apostles",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the hope of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were we buried with him through baptism into death?",
+      "explanation": "It says this was so that, just as Christ was raised from the dead through the glory of the Father, we also might walk in newness of life.",
+      "bibleReference": "Romans 6:4",
+      "answers": [
+        {
+          "text": "So that the law might be established",
+          "isCorrect": false
+        },
+        {
+          "text": "So that sin might abound no more in the world",
+          "isCorrect": false
+        },
+        {
+          "text": "So that we also might walk in newness of life",
+          "isCorrect": true
+        },
+        {
+          "text": "So that we might be counted among the circumcised",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say was crucified with him?",
+      "explanation": "It says our old man was crucified with him, that the body of sin might be done away with.",
+      "bibleReference": "Romans 6:6",
+      "answers": [
+        {
+          "text": "Our old man",
+          "isCorrect": true
+        },
+        {
+          "text": "The law of sin",
+          "isCorrect": false
+        },
+        {
+          "text": "The flesh of the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Our hope of glory",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about Christ, who has been raised from the dead?",
+      "explanation": "It says that Christ, being raised from the dead, dies no more, and death no longer has dominion over him.",
+      "bibleReference": "Romans 6:9",
+      "answers": [
+        {
+          "text": "He will die once more for the sin of the world",
+          "isCorrect": false
+        },
+        {
+          "text": "He dies no more, and death no longer has dominion over him",
+          "isCorrect": true
+        },
+        {
+          "text": "He reigns over the law that was given to Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "He is a foreshadowing of the one to come",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the chapter tell us to consider ourselves?",
+      "explanation": "It says to consider yourselves dead to sin, but alive to God in Christ Jesus our Lord.",
+      "bibleReference": "Romans 6:11",
+      "answers": [
+        {
+          "text": "Alive to sin, but dead to the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Servants of the law, but free from grace",
+          "isCorrect": false
+        },
+        {
+          "text": "Dead to the flesh, but alive to the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "Dead to sin, but alive to God in Christ Jesus",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say we should present our members to God as?",
+      "explanation": "It says not to present your members to sin as instruments of unrighteousness, but to present yourselves to God and your members as instruments of righteousness.",
+      "bibleReference": "Romans 6:13",
+      "answers": [
+        {
+          "text": "Instruments of righteousness",
+          "isCorrect": true
+        },
+        {
+          "text": "Instruments of unrighteousness",
+          "isCorrect": false
+        },
+        {
+          "text": "A living sacrifice on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Servants of the letter of the law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose servants are you, according to this chapter?",
+      "explanation": "It says that when you present yourselves as servants and obey someone, you are the servants of whomever you obey, whether of sin to death or of obedience to righteousness.",
+      "bibleReference": "Romans 6:16",
+      "answers": [
+        {
+          "text": "The servants of the law you were given",
+          "isCorrect": false
+        },
+        {
+          "text": "The servants of those who taught you",
+          "isCorrect": false
+        },
+        {
+          "text": "The servants of whomever you obey",
+          "isCorrect": true
+        },
+        {
+          "text": "The servants of your own flesh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What do those have who are made free from sin and have become servants of God?",
+      "explanation": "It says they have their fruit of sanctification and the result of eternal life.",
+      "bibleReference": "Romans 6:22",
+      "answers": [
+        {
+          "text": "Freedom from righteousness and from the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Fruit of sanctification and the result of eternal life",
+          "isCorrect": true
+        },
+        {
+          "text": "The reward that is owed to them for their works",
+          "isCorrect": false
+        },
+        {
+          "text": "A share in the law that was given to Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say the wages of sin are, over against the free gift of God?",
+      "explanation": "It says the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.",
+      "bibleReference": "Romans 6:23",
+      "answers": [
+        {
+          "text": "Shame, while the gift of God is honor",
+          "isCorrect": false
+        },
+        {
+          "text": "Bondage, while the gift of God is the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Wrath, while the gift of God is peace with men",
+          "isCorrect": false
+        },
+        {
+          "text": "Death, while the free gift of God is eternal life",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

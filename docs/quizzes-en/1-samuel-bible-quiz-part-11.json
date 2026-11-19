@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 11",
+  "description": "Ten questions on 1 Samuel 11: Nahash threatens Jabesh Gilead, Saul rescues the city, and the kingdom is renewed at Gilgal.",
+  "slug": "1-samuel-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who encamped against Jabesh Gilead?",
+      "explanation": "1 Samuel 11:1 says Nahash the Ammonite came up and encamped against Jabesh Gilead.",
+      "bibleReference": "1 Samuel 11:1",
+      "answers": [
+        {
+          "text": "Agag the Amalekite",
+          "isCorrect": false
+        },
+        {
+          "text": "Goliath of Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Nahash the Ammonite",
+          "isCorrect": true
+        },
+        {
+          "text": "The lords of the Philistines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what condition would Nahash make a covenant with the men of Jabesh?",
+      "explanation": "Nahash said he would make it on the condition that all their right eyes be gouged out.",
+      "bibleReference": "1 Samuel 11:2",
+      "answers": [
+        {
+          "text": "That all their right eyes be gouged out",
+          "isCorrect": true
+        },
+        {
+          "text": "That they give him all their gold",
+          "isCorrect": false
+        },
+        {
+          "text": "That they worship his gods",
+          "isCorrect": false
+        },
+        {
+          "text": "That they leave their city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many days did the elders of Jabesh ask for?",
+      "explanation": "The elders said, \"Give us seven days, that we may send messengers to all the borders of Israel.\"",
+      "bibleReference": "1 Samuel 11:3",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was Saul doing when he came and found the people weeping?",
+      "explanation": "Saul came following the oxen out of the field and asked why the people wept.",
+      "bibleReference": "1 Samuel 11:5",
+      "answers": [
+        {
+          "text": "Sitting at the gate of his house",
+          "isCorrect": false
+        },
+        {
+          "text": "Following the oxen out of the field",
+          "isCorrect": true
+        },
+        {
+          "text": "Offering a sacrifice at the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Training his soldiers for battle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Saul do with a yoke of oxen?",
+      "explanation": "He cut them in pieces and sent them throughout all the borders of Israel by messengers.",
+      "bibleReference": "1 Samuel 11:7",
+      "answers": [
+        {
+          "text": "Cut them in pieces and sent them out",
+          "isCorrect": true
+        },
+        {
+          "text": "Offered them as a burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Gave them to the men of Jabesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Used them to plow his father's field",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Saul count the people?",
+      "explanation": "He counted them in Bezek.",
+      "bibleReference": "1 Samuel 11:8",
+      "answers": [
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "Bezek",
+          "isCorrect": true
+        },
+        {
+          "text": "Ramah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What message was sent to the men of Jabesh Gilead?",
+      "explanation": "\"Tomorrow, by the time the sun is hot, you will be rescued.\"",
+      "bibleReference": "1 Samuel 11:9",
+      "answers": [
+        {
+          "text": "They should surrender to Nahash and live in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "They would be rescued tomorrow when the sun was hot",
+          "isCorrect": true
+        },
+        {
+          "text": "They should flee to the hills by night and hide",
+          "isCorrect": false
+        },
+        {
+          "text": "They must wait seven more days for any help",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Into how many companies did Saul put the people?",
+      "explanation": "On the next day, Saul put the people in three companies.",
+      "bibleReference": "1 Samuel 11:11",
+      "answers": [
+        {
+          "text": "Two",
+          "isCorrect": false
+        },
+        {
+          "text": "Four",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Three",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Saul say when the people wanted to put to death those who had said, \"Shall Saul reign over us?\"",
+      "explanation": "Saul said, \"No man shall be put to death today; for today Yahweh has rescued Israel.\"",
+      "bibleReference": "1 Samuel 11:12-13",
+      "answers": [
+        {
+          "text": "Bring them to me at once",
+          "isCorrect": false
+        },
+        {
+          "text": "Let Samuel judge them",
+          "isCorrect": false
+        },
+        {
+          "text": "No man shall be put to death today",
+          "isCorrect": true
+        },
+        {
+          "text": "Put them out of the camp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the people make Saul king before Yahweh?",
+      "explanation": "All the people went to Gilgal and made Saul king before Yahweh in Gilgal.",
+      "bibleReference": "1 Samuel 11:14-15",
+      "answers": [
+        {
+          "text": "Gilgal",
+          "isCorrect": true
+        },
+        {
+          "text": "Jabesh Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

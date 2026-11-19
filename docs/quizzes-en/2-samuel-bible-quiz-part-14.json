@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 14",
+  "description": "Ten questions on 2 Samuel 14: the wise woman of Tekoa and Absalom's return to Jerusalem.",
+  "slug": "2-samuel-bible-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "From which town did Joab bring a wise woman?",
+      "explanation": "Joab sent to Tekoa and brought a wise woman from there.",
+      "bibleReference": "2 Samuel 14:2",
+      "answers": [
+        {
+          "text": "Tekoa",
+          "isCorrect": true
+        },
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Abel",
+          "isCorrect": false
+        },
+        {
+          "text": "Endor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the woman's story, what happened to her two sons?",
+      "explanation": "She said her two sons fought together in the field, there was no one to part them, and one struck the other and killed him.",
+      "bibleReference": "2 Samuel 14:6",
+      "answers": [
+        {
+          "text": "Both of them died in battle with the Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "Both were taken captive by raiders from Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "They fought in the field and one killed the other",
+          "isCorrect": true
+        },
+        {
+          "text": "Both left home and never came back again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king swear about the woman's son?",
+      "explanation": "He said, \"As Yahweh lives, not one hair of your son shall fall to the earth.\"",
+      "bibleReference": "2 Samuel 14:11",
+      "answers": [
+        {
+          "text": "He would make her son a captain",
+          "isCorrect": false
+        },
+        {
+          "text": "Not one hair of her son would fall to the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "Her son would eat at the king's table",
+          "isCorrect": false
+        },
+        {
+          "text": "Her son would be sent away",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To what did the woman compare people who must die?",
+      "explanation": "She said, \"We must die, and are like water spilled on the ground, which can't be gathered up again.\"",
+      "bibleReference": "2 Samuel 14:14",
+      "answers": [
+        {
+          "text": "Grass that withers",
+          "isCorrect": false
+        },
+        {
+          "text": "Smoke that vanishes",
+          "isCorrect": false
+        },
+        {
+          "text": "A shadow that passes",
+          "isCorrect": false
+        },
+        {
+          "text": "Water spilled on the ground",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whose hand did the king suspect was behind the woman's words?",
+      "explanation": "The king said, \"Is the hand of Joab with you in all this?\" and she admitted Joab had put the words in her mouth.",
+      "bibleReference": "2 Samuel 14:19",
+      "answers": [
+        {
+          "text": "Absalom's",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab's",
+          "isCorrect": true
+        },
+        {
+          "text": "Nathan's",
+          "isCorrect": false
+        },
+        {
+          "text": "Abishai's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What condition did the king set when Absalom came back?",
+      "explanation": "The king said, \"Let him return to his own house, but let him not see my face.\"",
+      "bibleReference": "2 Samuel 14:24",
+      "answers": [
+        {
+          "text": "He was not to see the king's face",
+          "isCorrect": true
+        },
+        {
+          "text": "He was to stay in Geshur",
+          "isCorrect": false
+        },
+        {
+          "text": "He was to live in the king's house",
+          "isCorrect": false
+        },
+        {
+          "text": "He was to give up his inheritance",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How often did Absalom cut the hair of his head?",
+      "explanation": "It was at every year's end that he cut it, because it was heavy on him.",
+      "bibleReference": "2 Samuel 14:25-26",
+      "answers": [
+        {
+          "text": "Every new moon",
+          "isCorrect": false
+        },
+        {
+          "text": "Every seventh day",
+          "isCorrect": false
+        },
+        {
+          "text": "Only once, at his vow",
+          "isCorrect": false
+        },
+        {
+          "text": "At every year's end",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the name of Absalom's daughter?",
+      "explanation": "One daughter was born to Absalom, whose name was Tamar, a woman with a beautiful face.",
+      "bibleReference": "2 Samuel 14:27",
+      "answers": [
+        {
+          "text": "Maacah",
+          "isCorrect": false
+        },
+        {
+          "text": "Michal",
+          "isCorrect": false
+        },
+        {
+          "text": "Tamar",
+          "isCorrect": true
+        },
+        {
+          "text": "Abigail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Absalom tell his servants to set on fire?",
+      "explanation": "Absalom said, \"Joab's field is near mine, and he has barley there. Go and set it on fire.\"",
+      "bibleReference": "2 Samuel 14:30",
+      "answers": [
+        {
+          "text": "Joab's barley field",
+          "isCorrect": true
+        },
+        {
+          "text": "Joab's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab's vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab's chariots",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king do when Absalom bowed before him?",
+      "explanation": "Absalom bowed himself on his face to the ground before the king, and the king kissed Absalom.",
+      "bibleReference": "2 Samuel 14:33",
+      "answers": [
+        {
+          "text": "He sent him back to Geshur",
+          "isCorrect": false
+        },
+        {
+          "text": "He kissed Absalom",
+          "isCorrect": true
+        },
+        {
+          "text": "He struck him",
+          "isCorrect": false
+        },
+        {
+          "text": "He refused to look at him",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

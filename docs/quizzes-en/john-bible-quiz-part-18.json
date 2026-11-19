@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 18",
+  "description": "Ten questions on John 18: the arrest in the garden, Peter at the door, and the questioning before Annas and Pilate.",
+  "slug": "john-bible-quiz-part-18",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where did Jesus go with his disciples after he had spoken these words?",
+      "explanation": "He went out with his disciples over the brook Kidron, where there was a garden, and they entered it.",
+      "bibleReference": "John 18:1",
+      "answers": [
+        {
+          "text": "Up to the Mount of Olives",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the temple treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "Over the brook Kidron, into a garden",
+          "isCorrect": true
+        },
+        {
+          "text": "Away to Bethany",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Judas bring with him to the place?",
+      "explanation": "Judas took a detachment of soldiers and officers from the chief priests and the Pharisees, and came there with lanterns, torches and weapons.",
+      "bibleReference": "John 18:3",
+      "answers": [
+        {
+          "text": "Soldiers and officers with lanterns and torches",
+          "isCorrect": true
+        },
+        {
+          "text": "A crowd carrying palm branches",
+          "isCorrect": false
+        },
+        {
+          "text": "The chief priests by themselves",
+          "isCorrect": false
+        },
+        {
+          "text": "A written order from Pilate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened when Jesus said to them, \"I am he\"?",
+      "explanation": "When he said this, they went backward and fell to the ground.",
+      "bibleReference": "John 18:6",
+      "answers": [
+        {
+          "text": "They bound him at once",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled into the garden",
+          "isCorrect": false
+        },
+        {
+          "text": "They fell down and worshiped him",
+          "isCorrect": false
+        },
+        {
+          "text": "They went backward and fell down",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the name of the high priest's servant whose right ear Peter cut off?",
+      "explanation": "Simon Peter drew his sword and struck the high priest's servant, cutting off his right ear; the servant's name was Malchus.",
+      "bibleReference": "John 18:10",
+      "answers": [
+        {
+          "text": "Annas",
+          "isCorrect": false
+        },
+        {
+          "text": "Malchus",
+          "isCorrect": true
+        },
+        {
+          "text": "Caiaphas",
+          "isCorrect": false
+        },
+        {
+          "text": "Barabbas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell Peter to do with his sword?",
+      "explanation": "Jesus told him to put the sword into its sheath, and asked whether he should not drink the cup the Father had given him.",
+      "bibleReference": "John 18:11",
+      "answers": [
+        {
+          "text": "To put it into its sheath",
+          "isCorrect": true
+        },
+        {
+          "text": "To follow him into the court",
+          "isCorrect": false
+        },
+        {
+          "text": "To heal the servant's ear",
+          "isCorrect": false
+        },
+        {
+          "text": "To leave it in the garden",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did they lead Jesus first after they had bound him?",
+      "explanation": "They led him to Annas first, for he was father-in-law to Caiaphas, who was high priest that year.",
+      "bibleReference": "John 18:13",
+      "answers": [
+        {
+          "text": "To Caiaphas",
+          "isCorrect": false
+        },
+        {
+          "text": "To Pilate",
+          "isCorrect": false
+        },
+        {
+          "text": "To Annas",
+          "isCorrect": true
+        },
+        {
+          "text": "To the chief priests in the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter answer the maid who kept the door?",
+      "explanation": "When she asked whether he was also one of this man's disciples, he said, \"I am not.\"",
+      "bibleReference": "John 18:17",
+      "answers": [
+        {
+          "text": "I am he",
+          "isCorrect": false
+        },
+        {
+          "text": "I am not",
+          "isCorrect": true
+        },
+        {
+          "text": "I do not know the man",
+          "isCorrect": false
+        },
+        {
+          "text": "You say that I am",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened immediately after Peter denied it again?",
+      "explanation": "Peter denied it again, and immediately the rooster crowed.",
+      "bibleReference": "John 18:27",
+      "answers": [
+        {
+          "text": "The officers seized him",
+          "isCorrect": false
+        },
+        {
+          "text": "Annas sent Jesus to Caiaphas",
+          "isCorrect": false
+        },
+        {
+          "text": "Pilate came out to the Jews",
+          "isCorrect": false
+        },
+        {
+          "text": "The rooster crowed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer Pilate about his Kingdom?",
+      "explanation": "Jesus answered that his Kingdom is not of this world, and that it is not from here.",
+      "bibleReference": "John 18:36",
+      "answers": [
+        {
+          "text": "My Kingdom is here in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "I have no kingdom at all",
+          "isCorrect": false
+        },
+        {
+          "text": "My Kingdom is not of this world",
+          "isCorrect": true
+        },
+        {
+          "text": "My servants will fight for it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did they shout for instead of Jesus when Pilate offered to release someone?",
+      "explanation": "They all shouted again, \"Not this man, but Barabbas!\" and Barabbas was a robber.",
+      "bibleReference": "John 18:40",
+      "answers": [
+        {
+          "text": "Barabbas",
+          "isCorrect": true
+        },
+        {
+          "text": "Malchus",
+          "isCorrect": false
+        },
+        {
+          "text": "Annas",
+          "isCorrect": false
+        },
+        {
+          "text": "Lazarus",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 29",
+  "description": "Ten questions on Psalms 29: giving glory to Yahweh and the power of his voice over the waters, the cedars of Lebanon and the wilderness of Kadesh.",
+  "slug": "psalms-bible-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What are the sons of the mighty told to ascribe to Yahweh in verse 1?",
+      "explanation": "Psalms 29:1 says, 'Ascribe to Yahweh glory and strength.'",
+      "bibleReference": "Psalms 29:1",
+      "answers": [
+        {
+          "text": "Glory and strength",
+          "isCorrect": true
+        },
+        {
+          "text": "Silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Wisdom and riches",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where is Yahweh's voice, according to verse 3?",
+      "explanation": "Verse 3 says, 'Yahweh's voice is on the waters.'",
+      "bibleReference": "Psalms 29:3",
+      "answers": [
+        {
+          "text": "On the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "In the clouds",
+          "isCorrect": false
+        },
+        {
+          "text": "On the waters",
+          "isCorrect": true
+        },
+        {
+          "text": "In the fields",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which cedars does Yahweh break in pieces?",
+      "explanation": "Psalms 29:5 says, 'Yes, Yahweh breaks in pieces the cedars of Lebanon.'",
+      "bibleReference": "Psalms 29:5",
+      "answers": [
+        {
+          "text": "The cedars of Bashan",
+          "isCorrect": false
+        },
+        {
+          "text": "The cedars of Lebanon",
+          "isCorrect": true
+        },
+        {
+          "text": "The cedars of Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "The cedars of Gilead",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Lebanon and Sirion are made to skip like what?",
+      "explanation": "Verse 6 says he makes Lebanon and Sirion skip like a young, wild ox.",
+      "bibleReference": "Psalms 29:6",
+      "answers": [
+        {
+          "text": "A frightened deer",
+          "isCorrect": false
+        },
+        {
+          "text": "A little lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "A mountain goat",
+          "isCorrect": false
+        },
+        {
+          "text": "A young, wild ox",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what does Yahweh's voice strike?",
+      "explanation": "Psalms 29:7 says, 'Yahweh's voice strikes with flashes of lightning.'",
+      "bibleReference": "Psalms 29:7",
+      "answers": [
+        {
+          "text": "Heavy hailstones",
+          "isCorrect": false
+        },
+        {
+          "text": "Flashes of lightning",
+          "isCorrect": true
+        },
+        {
+          "text": "A strong east wind",
+          "isCorrect": false
+        },
+        {
+          "text": "Great waves of the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which wilderness does Yahweh shake?",
+      "explanation": "Verse 8 says, 'Yahweh shakes the wilderness of Kadesh.'",
+      "bibleReference": "Psalms 29:8",
+      "answers": [
+        {
+          "text": "Kadesh",
+          "isCorrect": true
+        },
+        {
+          "text": "Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Paran",
+          "isCorrect": false
+        },
+        {
+          "text": "Judah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh's voice make the deer do?",
+      "explanation": "Psalms 29:9 says, 'Yahweh's voice makes the deer calve, and strips the forests bare.'",
+      "bibleReference": "Psalms 29:9",
+      "answers": [
+        {
+          "text": "Flee to the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "Drink from the streams",
+          "isCorrect": false
+        },
+        {
+          "text": "Lie down in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "Calve",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does everything in his temple say?",
+      "explanation": "Verse 9 says, 'In his temple everything says, \"Glory!\"'",
+      "bibleReference": "Psalms 29:9",
+      "answers": [
+        {
+          "text": "\"Holy!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Amen!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Glory!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Hallelujah!\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what did Yahweh sit enthroned, according to verse 10?",
+      "explanation": "Psalms 29:10 says, 'Yahweh sat enthroned at the Flood. Yes, Yahweh sits as King forever.'",
+      "bibleReference": "Psalms 29:10",
+      "answers": [
+        {
+          "text": "The Flood",
+          "isCorrect": true
+        },
+        {
+          "text": "Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "The Red Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The Jordan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what will Yahweh bless his people?",
+      "explanation": "Verse 11 says, 'Yahweh will bless his people with peace.'",
+      "bibleReference": "Psalms 29:11",
+      "answers": [
+        {
+          "text": "Rain",
+          "isCorrect": false
+        },
+        {
+          "text": "Riches",
+          "isCorrect": false
+        },
+        {
+          "text": "Many children",
+          "isCorrect": false
+        },
+        {
+          "text": "Peace",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

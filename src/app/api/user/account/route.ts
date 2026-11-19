@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { deleteAccount } from '@/lib/account-deletion';
 import { getSession } from '@/lib/get-session';
+import { msg } from '@/lib/api-messages';
 
 /**
  * DELETE /api/user/account { confirm: true }
@@ -20,16 +21,16 @@ export const dynamic = 'force-dynamic';
 export async function DELETE(req: NextRequest) {
   const session = await getSession(req);
   if (!session?.user?.id) {
-    return NextResponse.json({ error: 'Log in om je account te verwijderen.' }, { status: 401 });
+    return NextResponse.json({ error: msg('Log in om je account te verwijderen.') }, { status: 401 });
   }
 
   if (!req.headers.get('content-type')?.includes('application/json')) {
-    return NextResponse.json({ error: 'Ongeldig verzoek.' }, { status: 400 });
+    return NextResponse.json({ error: msg('Ongeldig verzoek.') }, { status: 400 });
   }
 
   const body = (await req.json().catch(() => null)) as { confirm?: unknown } | null;
   if (body?.confirm !== true) {
-    return NextResponse.json({ error: 'Bevestig eerst dat je je account wilt verwijderen.' }, { status: 400 });
+    return NextResponse.json({ error: msg('Bevestig eerst dat je je account wilt verwijderen.') }, { status: 400 });
   }
 
   try {
@@ -40,6 +41,6 @@ export async function DELETE(req: NextRequest) {
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error('[ACCOUNT_DELETE]', error);
-    return NextResponse.json({ error: 'Verwijderen is niet gelukt. Probeer het opnieuw of mail ons.' }, { status: 500 });
+    return NextResponse.json({ error: msg('Verwijderen is niet gelukt. Probeer het opnieuw of mail ons.') }, { status: 500 });
   }
 }

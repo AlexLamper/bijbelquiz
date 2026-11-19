@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Deuteronomio 24: la carta de repudio, el año libre del recién casado, las prendas del pobre y lo que se dejaba al huérfano y a la viuda.",
+  "slug": "deuteronomy-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué escribía el hombre que despedía a su mujer de su casa?",
+      "explanation": "El texto dice que le escribirá carta de repudio, se la entregará en su mano y la despedirá de su casa.",
+      "bibleReference": "Deuteronomio 24:1",
+      "answers": [
+        { "text": "Carta de repudio", "isCorrect": true },
+        { "text": "Carta de venta", "isCorrect": false },
+        { "text": "Carta a los ancianos", "isCorrect": false },
+        { "text": "Carta de perdón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Después de que ella se hubiera casado con otro hombre, ¿qué no podía hacer su primer marido?",
+      "explanation": "El texto dice que su primer marido, el que la despidió, no podrá volverla a tomar para que sea su mujer, porque es abominación delante de Jehová.",
+      "bibleReference": "Deuteronomio 24:4",
+      "answers": [
+        { "text": "Llevarla ante los ancianos", "isCorrect": false },
+        { "text": "Pedirle de vuelta la carta", "isCorrect": false },
+        { "text": "Volverla a tomar por mujer", "isCorrect": true },
+        { "text": "Tomar otra mujer en su lugar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se mandaba acerca del hombre que había tomado mujer nueva?",
+      "explanation": "El texto dice que no saldrá a la guerra ni se le ocupará en ninguna cosa: estará libre en su casa por un año, para alegrar a su mujer.",
+      "bibleReference": "Deuteronomio 24:5",
+      "answers": [
+        { "text": "Salir a la guerra con sus hermanos", "isCorrect": false },
+        { "text": "Quedar libre en su casa por un año", "isCorrect": true },
+        { "text": "Presentarse ante el sacerdote", "isCorrect": false },
+        { "text": "Pagar cien piezas de plata", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué cosa no debía tomarse nunca en prenda?",
+      "explanation": "El texto dice que no tomarás en prenda la muela de molino, ni la de abajo ni la de arriba, porque sería prendar la vida.",
+      "bibleReference": "Deuteronomio 24:6",
+      "answers": [
+        { "text": "El manto del pobre", "isCorrect": false },
+        { "text": "El buey que trilla", "isCorrect": false },
+        { "text": "La casa del deudor", "isCorrect": false },
+        { "text": "La muela de molino", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué le ocurría al que hurtaba a una persona de sus hermanos y la vendía?",
+      "explanation": "El texto dice que el tal ladrón morirá, y así se quitará el mal de en medio del pueblo.",
+      "bibleReference": "Deuteronomio 24:7",
+      "answers": [
+        { "text": "Pagaría el doble", "isCorrect": false },
+        { "text": "El tal ladrón moriría", "isCorrect": true },
+        { "text": "Sería azotado", "isCorrect": false },
+        { "text": "Sería desterrado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué manda acordarse el texto, junto con el cuidado de la llaga de lepra?",
+      "explanation": "El versículo dice: acuérdate de lo que hizo Jehová tu Dios a María en el camino, después que salisteis de Egipto.",
+      "bibleReference": "Deuteronomio 24:9",
+      "answers": [
+        { "text": "De lo que Jehová hizo a María en el camino", "isCorrect": true },
+        { "text": "De lo que hizo Amalec en el camino", "isCorrect": false },
+        { "text": "De lo que Jehová hizo a Balaam", "isCorrect": false },
+        { "text": "De lo que hizo Faraón en Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuándo había que devolver la prenda al hombre pobre?",
+      "explanation": "El texto manda devolverle la prenda cuando el sol se ponga, para que duerma en su ropa y te bendiga.",
+      "bibleReference": "Deuteronomio 24:12-13",
+      "answers": [
+        { "text": "Al cabo de siete días", "isCorrect": false },
+        { "text": "En el año tercero", "isCorrect": false },
+        { "text": "Cuando pagara su deuda", "isCorrect": false },
+        { "text": "Cuando el sol se pusiera", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuándo debía pagarse el jornal al jornalero pobre y menesteroso?",
+      "explanation": "El texto dice que en su día le darás su jornal, y no se pondrá el sol sin dárselo, para que no clame contra ti a Jehová.",
+      "bibleReference": "Deuteronomio 24:15",
+      "answers": [
+        { "text": "Al terminar toda la cosecha", "isCorrect": false },
+        { "text": "Cada siete días, en el reposo", "isCorrect": false },
+        { "text": "En su mismo día, antes de ponerse el sol", "isCorrect": true },
+        { "text": "Cuando él lo pidiera a los jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto acerca de la muerte de los padres y de los hijos?",
+      "explanation": "El versículo dice que los padres no morirán por los hijos, ni los hijos por los padres: cada uno morirá por su pecado.",
+      "bibleReference": "Deuteronomio 24:16",
+      "answers": [
+        { "text": "Cada uno morirá por su propio pecado", "isCorrect": true },
+        { "text": "Los hijos morirán por los padres", "isCorrect": false },
+        { "text": "Los padres morirán por los hijos", "isCorrect": false },
+        { "text": "Toda la casa morirá con el culpable", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para quién era la gavilla olvidada en el campo durante la siega?",
+      "explanation": "El texto dice que no volverás a tomarla: será para el extranjero, para el huérfano y para la viuda, para que Jehová te bendiga.",
+      "bibleReference": "Deuteronomio 24:19",
+      "answers": [
+        { "text": "Para los sacerdotes Levitas", "isCorrect": false },
+        { "text": "Para el dueño del campo", "isCorrect": false },
+        { "text": "Para los jornaleros de la siega", "isCorrect": false },
+        { "text": "Para el extranjero, el huérfano y la viuda", "isCorrect": true }
+      ]
+    }
+  ]
+}

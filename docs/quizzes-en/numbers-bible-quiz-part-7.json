@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 7",
+  "description": "Ten questions on Numbers 7: the wagons and oxen given to the Levites and the offerings of the twelve princes for the dedication of the altar.",
+  "slug": "numbers-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the princes of Israel first bring before the tabernacle as their offering?",
+      "explanation": "The princes brought six covered wagons and twelve oxen, a wagon for every two princes and an ox for each one.",
+      "bibleReference": "Numbers 7:2-3",
+      "answers": [
+        {
+          "text": "Twelve silver platters",
+          "isCorrect": false
+        },
+        {
+          "text": "Six covered wagons and twelve oxen",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve golden ladles",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve bulls and twelve rams",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Moses give four wagons and eight oxen?",
+      "explanation": "Moses gave four wagons and eight oxen to the sons of Merari, according to their service, under the direction of Ithamar.",
+      "bibleReference": "Numbers 7:8",
+      "answers": [
+        {
+          "text": "The sons of Merari",
+          "isCorrect": true
+        },
+        {
+          "text": "The sons of Gershon",
+          "isCorrect": false
+        },
+        {
+          "text": "The sons of Kohath",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron and his sons",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the sons of Kohath receive no wagons?",
+      "explanation": "The sons of Kohath received none, because the service of the sanctuary belonged to them and they carried it on their shoulders.",
+      "bibleReference": "Numbers 7:9",
+      "answers": [
+        {
+          "text": "They had already received carts from Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "They stayed behind at the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "They carried the sanctuary on their shoulders",
+          "isCorrect": true
+        },
+        {
+          "text": "They refused the offering of the princes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who offered his offering on the first day?",
+      "explanation": "On the first day the offering was given by Nahshon the son of Amminadab, of the tribe of Judah.",
+      "bibleReference": "Numbers 7:12",
+      "answers": [
+        {
+          "text": "Nethanel the son of Zuar",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliab the son of Helon",
+          "isCorrect": false
+        },
+        {
+          "text": "Elizur the son of Shedeur",
+          "isCorrect": false
+        },
+        {
+          "text": "Nahshon the son of Amminadab",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How much did each silver platter given by the princes weigh?",
+      "explanation": "Each prince gave one silver platter weighing one hundred thirty shekels, and one silver bowl of seventy shekels.",
+      "bibleReference": "Numbers 7:13",
+      "answers": [
+        {
+          "text": "One hundred thirty shekels",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred twenty shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred forty shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninety-five shekels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was each golden ladle full of?",
+      "explanation": "Each prince gave one golden ladle of ten shekels, full of incense.",
+      "bibleReference": "Numbers 7:14",
+      "answers": [
+        {
+          "text": "Wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Incense",
+          "isCorrect": true
+        },
+        {
+          "text": "Honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day did Elishama the son of Ammihud, prince of Ephraim, give his offering?",
+      "explanation": "On the seventh day Elishama the son of Ammihud, prince of the children of Ephraim, gave his offering.",
+      "bibleReference": "Numbers 7:48",
+      "answers": [
+        {
+          "text": "The third day",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The ninth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventh day",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Ahira the son of Enan, who offered on the twelfth day, was prince of which tribe?",
+      "explanation": "On the twelfth day Ahira the son of Enan, prince of the children of Naphtali, gave his offering.",
+      "bibleReference": "Numbers 7:78",
+      "answers": [
+        {
+          "text": "Asher",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "Naphtali",
+          "isCorrect": true
+        },
+        {
+          "text": "Benjamin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the total weight of all the silver of the vessels given by the princes?",
+      "explanation": "All the silver of the vessels came to two thousand four hundred shekels, according to the shekel of the sanctuary.",
+      "bibleReference": "Numbers 7:85",
+      "answers": [
+        {
+          "text": "One thousand two hundred shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Two thousand four hundred shekels",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred twenty shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Three thousand shekels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From where did Moses hear Yahweh's voice speaking to him in the Tent of Meeting?",
+      "explanation": "Moses heard the voice speaking to him from above the mercy seat on the ark of the Testimony, from between the two cherubim.",
+      "bibleReference": "Numbers 7:89",
+      "answers": [
+        {
+          "text": "From the pillar of cloud at the door",
+          "isCorrect": false
+        },
+        {
+          "text": "From the altar of burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "From above the mercy seat, between the two cherubim",
+          "isCorrect": true
+        },
+        {
+          "text": "From behind the lamp stand",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

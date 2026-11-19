@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre Génesis 22: Dios prueba a Abraham en tierra de Moriah, el carnero en el zarzal y la promesa desde el cielo.",
+  "slug": "genesis-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le mandó Dios a Abraham cuando lo probó?",
+      "explanation": "Dios le dijo que tomase a su hijo, su único, Isaac, a quien amaba, y fuese a tierra de Moriah para ofrecerlo allí en holocausto sobre uno de los montes.",
+      "bibleReference": "Génesis 22:2",
+      "answers": [
+        {
+          "text": "Ofrecer un carnero en el altar que hizo en Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar un altar en Hebrón y adorar allí a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomar a su hijo Isaac y ofrecerlo en holocausto en tierra de Moriah",
+          "isCorrect": true
+        },
+        {
+          "text": "Enviar a Isaac a la tierra de Mesopotamia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo alzó Abraham sus ojos y vio el lugar de lejos?",
+      "explanation": "Al tercer día Abraham alzó sus ojos y vio el lugar de lejos.",
+      "bibleReference": "Génesis 22:4",
+      "answers": [
+        {
+          "text": "Al día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Al séptimo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Al tercer día",
+          "isCorrect": true
+        },
+        {
+          "text": "Al rayar el alba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Abraham a sus mozos antes de subir?",
+      "explanation": "Les dijo que esperasen allí con el asno, y que él y el muchacho irían hasta allí, adorarían y volverían a ellos.",
+      "bibleReference": "Génesis 22:5",
+      "answers": [
+        {
+          "text": "Que esperasen con el asno, porque él y el muchacho volverían",
+          "isCorrect": true
+        },
+        {
+          "text": "Que subiesen con él y con el muchacho al monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volviesen a Beer-seba con el asno",
+          "isCorrect": false
+        },
+        {
+          "text": "Que buscasen un cordero para el holocausto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién llevó la leña y quién el fuego y el cuchillo?",
+      "explanation": "Abraham puso la leña del holocausto sobre Isaac su hijo, y él tomó en su mano el fuego y el cuchillo, y fueron ambos juntos.",
+      "bibleReference": "Génesis 22:6",
+      "answers": [
+        {
+          "text": "Isaac llevó el cuchillo; Abraham, la leña",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dos llevaron leña",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaac llevó el carnero; Abraham, el fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaac llevó la leña; Abraham, el fuego y el cuchillo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué preguntó Isaac a su padre?",
+      "explanation": "Isaac le dijo que allí estaban el fuego y la leña, pero preguntó dónde estaba el cordero para el holocausto.",
+      "bibleReference": "Génesis 22:7",
+      "answers": [
+        {
+          "text": "Por qué subían a aquel monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Dónde estaba el cordero para el holocausto",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuántos días faltaban de camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Dónde habían quedado los mozos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo el ángel de Jehová desde el cielo?",
+      "explanation": "El ángel de Jehová le dijo que no extendiese su mano sobre el muchacho ni le hiciese nada, porque ya conocía que temía a Dios.",
+      "bibleReference": "Génesis 22:12",
+      "answers": [
+        {
+          "text": "Que ofreciese el cordero prometido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volviese a su tierra y parentela",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no extendiese su mano sobre el muchacho",
+          "isCorrect": true
+        },
+        {
+          "text": "Que mirase y contase las estrellas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofreció Abraham en holocausto en lugar de su hijo?",
+      "explanation": "Abraham vio un carnero trabado en un zarzal por sus cuernos, y lo tomó y lo ofreció en holocausto en lugar de su hijo.",
+      "bibleReference": "Génesis 22:13",
+      "answers": [
+        {
+          "text": "Un becerro tierno y bueno de sus vacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero trabado en un zarzal por sus cuernos",
+          "isCorrect": true
+        },
+        {
+          "text": "Una tórtola y un palomino del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete corderas apartadas del rebaño",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Abraham a aquel lugar?",
+      "explanation": "Abraham llamó el nombre de aquel lugar Jehová proveerá; por tanto se dice: En el monte de Jehová será provisto.",
+      "bibleReference": "Génesis 22:14",
+      "answers": [
+        {
+          "text": "Jehová proveerá",
+          "isCorrect": true
+        },
+        {
+          "text": "El pozo de Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "La cueva de Macpela",
+          "isCorrect": false
+        },
+        {
+          "text": "Pozo del Viviente que me ve",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó el ángel de Jehová la simiente de Abraham?",
+      "explanation": "Dijo que multiplicaría su simiente como las estrellas del cielo y como la arena que está a la orilla del mar.",
+      "bibleReference": "Génesis 22:17",
+      "answers": [
+        {
+          "text": "Con el polvo de la tierra y de la llanura",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las hojas de todos los árboles del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la hierba del campo en primavera",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las estrellas del cielo y la arena de la orilla del mar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el final del capítulo, ¿quién engendró a Rebeca?",
+      "explanation": "El texto dice que Bethuel engendró a Rebeca, y que Milca parió ocho hijos a Nachôr, hermano de Abraham.",
+      "bibleReference": "Génesis 22:23",
+      "answers": [
+        {
+          "text": "Nachôr",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethuel",
+          "isCorrect": true
+        },
+        {
+          "text": "Huz",
+          "isCorrect": false
+        },
+        {
+          "text": "Kemuel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

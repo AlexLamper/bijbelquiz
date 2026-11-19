@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, Lead } from '@/database';
+import { msg } from '@/lib/api-messages';
 
 export async function POST(req: NextRequest) {
   try {
@@ -15,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     if (!email) {
       return NextResponse.json(
-        { success: false, message: 'E-mailadres is verplicht.' },
+        { success: false, message: msg('E-mailadres is verplicht.') },
         { status: 400 }
       );
     }
@@ -23,7 +24,7 @@ export async function POST(req: NextRequest) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       return NextResponse.json(
-        { success: false, message: 'Vul een geldig e-mailadres in.' },
+        { success: false, message: msg('Vul een geldig e-mailadres in.') },
         { status: 400 }
       );
     }

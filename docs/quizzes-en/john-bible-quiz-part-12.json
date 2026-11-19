@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 12",
+  "description": "Ten questions on John 12: the ointment at Bethany, the palm branches in Jerusalem, and the voice from the sky.",
+  "slug": "john-bible-quiz-part-12",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Mary do with the pound of ointment of pure nard?",
+      "explanation": "Mary anointed Jesus's feet and wiped his feet with her hair, and the house was filled with the fragrance of the ointment.",
+      "bibleReference": "John 12:3",
+      "answers": [
+        {
+          "text": "She anointed Jesus' feet with it",
+          "isCorrect": true
+        },
+        {
+          "text": "She poured it over Jesus' head",
+          "isCorrect": false
+        },
+        {
+          "text": "She sold it and gave it to the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "She kept it in the money box",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who asked why the ointment was not sold for three hundred denarii?",
+      "explanation": "Judas Iscariot, Simon's son, one of his disciples, who would betray him, asked this.",
+      "bibleReference": "John 12:4-5",
+      "answers": [
+        {
+          "text": "Martha, the sister of Lazarus",
+          "isCorrect": false
+        },
+        {
+          "text": "Judas Iscariot",
+          "isCorrect": true
+        },
+        {
+          "text": "Lazarus of Bethany",
+          "isCorrect": false
+        },
+        {
+          "text": "Philip of Bethsaida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about Judas and the money box?",
+      "explanation": "He did not say it because he cared for the poor, but because he was a thief who used to steal what was put into the money box.",
+      "bibleReference": "John 12:6",
+      "answers": [
+        {
+          "text": "He truly cared for the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "He handed it over to Martha",
+          "isCorrect": false
+        },
+        {
+          "text": "He was a thief and stole from it",
+          "isCorrect": true
+        },
+        {
+          "text": "He kept careful accounts of it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For what day did Jesus say Mary had kept the ointment?",
+      "explanation": "Jesus said to leave her alone, for she had kept this for the day of his burial.",
+      "bibleReference": "John 12:7",
+      "answers": [
+        {
+          "text": "The day of the Passover",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of the Feast of the Dedication",
+          "isCorrect": false
+        },
+        {
+          "text": "The day he would be glorified",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of his burial",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the great multitude carry when they went out to meet him?",
+      "explanation": "They took the branches of the palm trees and went out to meet him, crying out, \"Hosanna!\"",
+      "bibleReference": "John 12:13",
+      "answers": [
+        {
+          "text": "Lanterns and torches",
+          "isCorrect": false
+        },
+        {
+          "text": "Branches of palm trees",
+          "isCorrect": true
+        },
+        {
+          "text": "Their outer garments",
+          "isCorrect": false
+        },
+        {
+          "text": "Vessels of ointment",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus sit on when he came to Jerusalem?",
+      "explanation": "Jesus, having found a young donkey, sat on it, as it is written that the King comes sitting on a donkey's colt.",
+      "bibleReference": "John 12:14-15",
+      "answers": [
+        {
+          "text": "A young donkey",
+          "isCorrect": true
+        },
+        {
+          "text": "A horse",
+          "isCorrect": false
+        },
+        {
+          "text": "A chariot",
+          "isCorrect": false
+        },
+        {
+          "text": "A seat carried by his disciples",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came to Philip and said, \"Sir, we want to see Jesus\"?",
+      "explanation": "Certain Greeks who had gone up to worship at the feast came to Philip with this request.",
+      "bibleReference": "John 12:20-21",
+      "answers": [
+        {
+          "text": "Some of the Pharisees",
+          "isCorrect": false
+        },
+        {
+          "text": "Roman soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "The chief priests",
+          "isCorrect": false
+        },
+        {
+          "text": "Certain Greeks",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say happens to a grain of wheat that falls into the earth and dies?",
+      "explanation": "He says that unless a grain of wheat falls into the earth and dies it remains alone, but if it dies it bears much fruit.",
+      "bibleReference": "John 12:24",
+      "answers": [
+        {
+          "text": "It bears fruit without dying",
+          "isCorrect": false
+        },
+        {
+          "text": "It is ground into bread",
+          "isCorrect": false
+        },
+        {
+          "text": "It bears much fruit",
+          "isCorrect": true
+        },
+        {
+          "text": "It is gathered into the barn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did some in the multitude say about the voice that came out of the sky?",
+      "explanation": "The multitude who stood by and heard it said that it had thundered.",
+      "bibleReference": "John 12:29",
+      "answers": [
+        {
+          "text": "That it had thundered",
+          "isCorrect": true
+        },
+        {
+          "text": "That Isaiah had spoken",
+          "isCorrect": false
+        },
+        {
+          "text": "That it was the voice of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "That the chief priests had shouted",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did many of the rulers who believed in him not confess it?",
+      "explanation": "Because of the Pharisees they did not confess it, so that they would not be put out of the synagogue, for they loved men's praise more than God's praise.",
+      "bibleReference": "John 12:42-43",
+      "answers": [
+        {
+          "text": "They had seen no signs at all",
+          "isCorrect": false
+        },
+        {
+          "text": "They did not believe him",
+          "isCorrect": false
+        },
+        {
+          "text": "They feared being put out of the synagogue",
+          "isCorrect": true
+        },
+        {
+          "text": "They were afraid of the Romans",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

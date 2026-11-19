@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 11",
+  "description": "Ten questions on Joshua 11: the northern kings at the waters of Merom, the burning of Hazor, and the end of the Anakim.",
+  "slug": "joshua-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who sent to Jobab king of Madon and to the other kings at the start of the chapter?",
+      "explanation": "Jabin king of Hazor heard of it and sent to Jobab king of Madon and to the other kings.",
+      "bibleReference": "Joshua 11:1",
+      "answers": [
+        {
+          "text": "Adoni-Zedek king of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Horam king of Gezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Og king of Bashan",
+          "isCorrect": false
+        },
+        {
+          "text": "Jabin king of Hazor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To what is the size of the kings' armies compared?",
+      "explanation": "They went out with many people, even as the sand on the seashore in multitude, with very many horses and chariots.",
+      "bibleReference": "Joshua 11:4",
+      "answers": [
+        {
+          "text": "The stars of heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The sand on the seashore",
+          "isCorrect": true
+        },
+        {
+          "text": "A swarm of locusts",
+          "isCorrect": false
+        },
+        {
+          "text": "The dust of the earth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did all these kings encamp together to fight Israel?",
+      "explanation": "All these kings met together and encamped at the waters of Merom to fight with Israel.",
+      "bibleReference": "Joshua 11:5",
+      "answers": [
+        {
+          "text": "At the waters of Merom",
+          "isCorrect": true
+        },
+        {
+          "text": "In the valley of Aijalon",
+          "isCorrect": false
+        },
+        {
+          "text": "Near the camp at Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "By the Jordan at Jericho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Joshua to do to the enemies' horses?",
+      "explanation": "Yahweh told Joshua to hamstring their horses and burn their chariots with fire.",
+      "bibleReference": "Joshua 11:6",
+      "answers": [
+        {
+          "text": "Keep them for Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Offer them as sacrifices",
+          "isCorrect": false
+        },
+        {
+          "text": "Hamstring them",
+          "isCorrect": true
+        },
+        {
+          "text": "Give them to the Gibeonites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say Hazor used to be?",
+      "explanation": "Joshua took Hazor and struck its king, for Hazor used to be the head of all those kingdoms.",
+      "bibleReference": "Joshua 11:10",
+      "answers": [
+        {
+          "text": "The head of all those kingdoms",
+          "isCorrect": true
+        },
+        {
+          "text": "The smallest of those cities",
+          "isCorrect": false
+        },
+        {
+          "text": "A city of the Gibeonites",
+          "isCorrect": false
+        },
+        {
+          "text": "A city of the Philistines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the children of Israel take for themselves from these cities?",
+      "explanation": "The children of Israel took all the plunder of these cities, with the livestock, as plunder for themselves.",
+      "bibleReference": "Joshua 11:14",
+      "answers": [
+        {
+          "text": "Only silver and gold for Yahweh's treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the captured kings",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "All the plunder, with the livestock",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Joshua carry out what Yahweh had commanded Moses?",
+      "explanation": "As Yahweh commanded Moses, so Moses commanded Joshua, and Joshua left nothing undone of all that Yahweh commanded.",
+      "bibleReference": "Joshua 11:15",
+      "answers": [
+        {
+          "text": "He did only half of it",
+          "isCorrect": false
+        },
+        {
+          "text": "He changed part of it",
+          "isCorrect": false
+        },
+        {
+          "text": "He left nothing undone",
+          "isCorrect": true
+        },
+        {
+          "text": "He left it for the elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which people were the only ones to make peace with the children of Israel?",
+      "explanation": "Not a city made peace with Israel except the Hivites, the inhabitants of Gibeon.",
+      "bibleReference": "Joshua 11:19",
+      "answers": [
+        {
+          "text": "The Jebusites, the inhabitants of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The Hivites, the inhabitants of Gibeon",
+          "isCorrect": true
+        },
+        {
+          "text": "The Canaanites, the people of Hazor",
+          "isCorrect": false
+        },
+        {
+          "text": "The Amorites, the people of Madon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which people did Joshua cut off from Hebron, Debir, Anab, and the hill country?",
+      "explanation": "Joshua cut off the Anakim from the hill country, from Hebron, Debir, and Anab, and destroyed them with their cities.",
+      "bibleReference": "Joshua 11:21",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Amalekites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Midianites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Anakim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In which cities did some of the Anakim remain?",
+      "explanation": "None of the Anakim were left in Israel's land; only in Gaza, Gath, and Ashdod did some remain.",
+      "bibleReference": "Joshua 11:22",
+      "answers": [
+        {
+          "text": "Hebron, Debir, and Anab",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaza, Gath, and Ashdod",
+          "isCorrect": true
+        },
+        {
+          "text": "Jericho, Ai, and Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Hazor, Madon, and Shimron",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

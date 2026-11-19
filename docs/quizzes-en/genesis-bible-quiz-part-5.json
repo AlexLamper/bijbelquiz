@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 5",
+  "description": "Ten questions on Genesis 5: the generations from Adam to Noah and how long each of them lived.",
+  "slug": "genesis-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What name did God give to man and woman on the day they were created?",
+      "explanation": "He created them male and female, blessed them, and on the day they were created he named them Adam.",
+      "bibleReference": "Genesis 5:2",
+      "answers": [
+        {
+          "text": "Adam",
+          "isCorrect": true
+        },
+        {
+          "text": "Eve",
+          "isCorrect": false
+        },
+        {
+          "text": "Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "Enosh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Adam when he became the father of Seth?",
+      "explanation": "Adam lived one hundred thirty years, and became the father of a son in his own likeness, and named him Seth.",
+      "bibleReference": "Genesis 5:3",
+      "answers": [
+        {
+          "text": "One hundred five years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred thirty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Ninety years",
+          "isCorrect": false
+        },
+        {
+          "text": "Eight hundred years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many years did Adam live in all?",
+      "explanation": "All the days that Adam lived were nine hundred thirty years, then he died.",
+      "bibleReference": "Genesis 5:5",
+      "answers": [
+        {
+          "text": "Nine hundred twelve years",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine hundred sixty-nine years",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine hundred thirty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Nine hundred five years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the son of Enosh?",
+      "explanation": "Enosh lived ninety years, and became the father of Kenan.",
+      "bibleReference": "Genesis 5:9",
+      "answers": [
+        {
+          "text": "Mahalalel",
+          "isCorrect": false
+        },
+        {
+          "text": "Jared",
+          "isCorrect": false
+        },
+        {
+          "text": "Methuselah",
+          "isCorrect": false
+        },
+        {
+          "text": "Kenan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Enoch do for three hundred years after Methuselah's birth?",
+      "explanation": "After Methuselah's birth, Enoch walked with God for three hundred years, and had more sons and daughters.",
+      "bibleReference": "Genesis 5:22",
+      "answers": [
+        {
+          "text": "He built a city",
+          "isCorrect": false
+        },
+        {
+          "text": "He walked with God",
+          "isCorrect": true
+        },
+        {
+          "text": "He kept sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "He tilled the ground",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Enoch at the end of his days?",
+      "explanation": "Enoch walked with God, and he was not found, for God took him.",
+      "bibleReference": "Genesis 5:24",
+      "answers": [
+        {
+          "text": "He was not found, for God took him",
+          "isCorrect": true
+        },
+        {
+          "text": "He was driven out to the land of Nod",
+          "isCorrect": false
+        },
+        {
+          "text": "He was killed in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "He became a mighty hunter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who lived nine hundred sixty-nine years?",
+      "explanation": "All the days of Methuselah were nine hundred sixty-nine years, then he died.",
+      "bibleReference": "Genesis 5:27",
+      "answers": [
+        {
+          "text": "Jared, son of Mahalalel",
+          "isCorrect": false
+        },
+        {
+          "text": "Adam, father of Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "Lamech, father of Noah",
+          "isCorrect": false
+        },
+        {
+          "text": "Methuselah, son of Enoch",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Lamech say about his son Noah when he named him?",
+      "explanation": "Lamech said, \"This one will comfort us in our work and in the toil of our hands, caused by the ground which Yahweh has cursed.\"",
+      "bibleReference": "Genesis 5:29",
+      "answers": [
+        {
+          "text": "He would build a great ship",
+          "isCorrect": false
+        },
+        {
+          "text": "He would rule over the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "He would comfort them in their work",
+          "isCorrect": true
+        },
+        {
+          "text": "He would avenge Abel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many years did Lamech, the father of Noah, live in all?",
+      "explanation": "All the days of Lamech were seven hundred seventy-seven years, then he died.",
+      "bibleReference": "Genesis 5:31",
+      "answers": [
+        {
+          "text": "Seven hundred seventy-seven years",
+          "isCorrect": true
+        },
+        {
+          "text": "Five hundred ninety-five years",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine hundred sixty-two years",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred sixty-five years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Noah when he became the father of Shem, Ham, and Japheth?",
+      "explanation": "Noah was five hundred years old, then he became the father of Shem, Ham, and Japheth.",
+      "bibleReference": "Genesis 5:32",
+      "answers": [
+        {
+          "text": "One hundred eighty-two years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Five hundred years old",
+          "isCorrect": true
+        },
+        {
+          "text": "Sixty-five years old",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

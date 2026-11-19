@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { resetPasswordWithToken } from '@/lib/auth/password-reset';
 import { clientIp, createRateLimiter } from '@/lib/auth/rate-limit';
 import { isWellFormedResetToken, validateNewPassword } from '@/lib/auth/reset-token';
+import { msg } from '@/lib/api-messages';
 
 /**
  * POST /api/auth/password-reset/confirm { token, password }
@@ -17,13 +18,13 @@ export const dynamic = 'force-dynamic';
 
 const perIp = createRateLimiter({ max: 20, windowMs: 15 * 60 * 1000 });
 
-const INVALID_LINK = 'Deze link is ongeldig of verlopen. Vraag een nieuwe link aan.';
+const INVALID_LINK = msg('Deze link is ongeldig of verlopen. Vraag een nieuwe link aan.');
 
 export async function POST(req: NextRequest) {
   const ip = clientIp(req);
   if (!perIp.hit(ip)) {
     return NextResponse.json(
-      { error: 'Je hebt dit vaak geprobeerd. Wacht even en probeer het later opnieuw.' },
+      { error: msg('Je hebt dit vaak geprobeerd. Wacht even en probeer het later opnieuw.') },
       { status: 429, headers: { 'Retry-After': String(perIp.retryAfter(ip)) } },
     );
   }
@@ -47,6 +48,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, email: result.email });
   } catch (error) {
     console.error('[PASSWORD_RESET_CONFIRM]', error);
-    return NextResponse.json({ error: 'Er ging iets mis. Probeer het opnieuw.' }, { status: 500 });
+    return NextResponse.json({ error: msg('Er ging iets mis. Probeer het opnieuw.') }, { status: 500 });
   }
 }

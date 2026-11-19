@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 15",
+  "description": "Ten questions on Psalms 15: who may dwell in Yahweh's sanctuary and live on his holy hill.",
+  "slug": "psalms-bible-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What question does the psalm begin with?",
+      "explanation": "Psalms 15:1 asks, \"Yahweh, who shall dwell in your sanctuary?\"",
+      "bibleReference": "Psalms 15:1",
+      "answers": [
+        {
+          "text": "Who can count the stars?",
+          "isCorrect": false
+        },
+        {
+          "text": "Who will go up to war for us?",
+          "isCorrect": false
+        },
+        {
+          "text": "Who shall dwell in your sanctuary?",
+          "isCorrect": true
+        },
+        {
+          "text": "Who has seen your face?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where else does the psalmist ask who shall live?",
+      "explanation": "Psalms 15:1 asks, \"Who shall live on your holy hill?\"",
+      "bibleReference": "Psalms 15:1",
+      "answers": [
+        {
+          "text": "On Yahweh's holy hill",
+          "isCorrect": true
+        },
+        {
+          "text": "By the river Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "In the king's court",
+          "isCorrect": false
+        },
+        {
+          "text": "In the city of refuge",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the person described in verse 2 walk?",
+      "explanation": "Psalms 15:2 describes him as he who walks blamelessly and does what is right.",
+      "bibleReference": "Psalms 15:2",
+      "answers": [
+        {
+          "text": "Quickly",
+          "isCorrect": false
+        },
+        {
+          "text": "In darkness",
+          "isCorrect": false
+        },
+        {
+          "text": "Alone",
+          "isCorrect": false
+        },
+        {
+          "text": "Blamelessly",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where does this person speak truth?",
+      "explanation": "Psalms 15:2 says he speaks truth in his heart.",
+      "bibleReference": "Psalms 15:2",
+      "answers": [
+        {
+          "text": "At the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "In his heart",
+          "isCorrect": true
+        },
+        {
+          "text": "Before kings",
+          "isCorrect": false
+        },
+        {
+          "text": "In the marketplace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 3, what does this person not do?",
+      "explanation": "Psalms 15:3 says he doesn't slander with his tongue.",
+      "bibleReference": "Psalms 15:3",
+      "answers": [
+        {
+          "text": "Give to the needy",
+          "isCorrect": false
+        },
+        {
+          "text": "Speak truth in his heart",
+          "isCorrect": false
+        },
+        {
+          "text": "Walk blamelessly",
+          "isCorrect": false
+        },
+        {
+          "text": "Slander with his tongue",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In his eyes, who is despised?",
+      "explanation": "Psalms 15:4 says that in his eyes a vile man is despised.",
+      "bibleReference": "Psalms 15:4",
+      "answers": [
+        {
+          "text": "A poor man",
+          "isCorrect": false
+        },
+        {
+          "text": "A foreigner",
+          "isCorrect": false
+        },
+        {
+          "text": "A vile man",
+          "isCorrect": true
+        },
+        {
+          "text": "A child",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does this person honor?",
+      "explanation": "Psalms 15:4 says he honors those who fear Yahweh.",
+      "bibleReference": "Psalms 15:4",
+      "answers": [
+        {
+          "text": "Those who fear Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "Those who have great wealth",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who are mighty in war",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of the earth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When does he still keep an oath?",
+      "explanation": "Psalms 15:4 says he keeps an oath even when it hurts, and doesn't change.",
+      "bibleReference": "Psalms 15:4",
+      "answers": [
+        {
+          "text": "Only when others watch",
+          "isCorrect": false
+        },
+        {
+          "text": "Even when it hurts",
+          "isCorrect": true
+        },
+        {
+          "text": "Only when written down",
+          "isCorrect": false
+        },
+        {
+          "text": "Only when made to a friend",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does he refuse to take against the innocent?",
+      "explanation": "Psalms 15:5 says he does not take a bribe against the innocent.",
+      "bibleReference": "Psalms 15:5",
+      "answers": [
+        {
+          "text": "An oath",
+          "isCorrect": false
+        },
+        {
+          "text": "A pledge",
+          "isCorrect": false
+        },
+        {
+          "text": "A bribe",
+          "isCorrect": true
+        },
+        {
+          "text": "A witness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 5 say about the one who does these things?",
+      "explanation": "Psalms 15:5 says he who does these things shall never be shaken.",
+      "bibleReference": "Psalms 15:5",
+      "answers": [
+        {
+          "text": "He shall never be shaken",
+          "isCorrect": true
+        },
+        {
+          "text": "He shall be rich",
+          "isCorrect": false
+        },
+        {
+          "text": "He shall rule over nations",
+          "isCorrect": false
+        },
+        {
+          "text": "He shall have many sons",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

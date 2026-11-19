@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Josué 23: las palabras de Josué, ya viejo, a los ancianos y jefes de todo Israel.",
+  "slug": "joshua-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes llamó Josué siendo ya viejo y entrado en días?",
+      "explanation": "Josué llamó a todo Israel, a sus ancianos, a sus príncipes, a sus jueces y a sus oficiales, y les dijo que él ya era viejo y entrado en días.",
+      "bibleReference": "Josué 23:1-2",
+      "answers": [
+        {
+          "text": "Solo a los sacerdotes y Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "A todo Israel y a sus ancianos y jueces",
+          "isCorrect": true
+        },
+        {
+          "text": "A las tribus del otro lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de Judá y de José",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué habían visto los israelitas que Jehová había hecho con todas aquellas gentes?",
+      "explanation": "Josué les dijo que habían visto todo lo que Jehová su Dios había hecho con todas aquellas gentes en su presencia, porque Jehová su Dios había peleado por ellos.",
+      "bibleReference": "Josué 23:3",
+      "answers": [
+        {
+          "text": "Que les había dado reyes y jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les había dado lluvia a su tiempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había hecho alianza con los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová su Dios había peleado por ellos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde llegaba la tierra que Josué les había repartido por suerte?",
+      "explanation": "Josué dijo que les había repartido por suerte estas gentes, así las destruidas como las que quedan, desde el Jordán hasta la gran mar hacia donde el sol se pone.",
+      "bibleReference": "Josué 23:4",
+      "answers": [
+        {
+          "text": "Desde el Jordán hasta la gran mar",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde Egipto hasta el río Eufrates",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Silo hasta el monte Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el mar Salado hasta Hamath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les mandó Josué guardar y hacer, sin apartarse ni a la diestra ni a la siniestra?",
+      "explanation": "Josué les dijo que se esforzasen mucho a guardar y hacer todo lo que está escrito en el libro de la ley de Moisés.",
+      "bibleReference": "Josué 23:6",
+      "answers": [
+        {
+          "text": "Las ordenanzas que él mismo había puesto",
+          "isCorrect": false
+        },
+        {
+          "text": "El pacto hecho en Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo escrito en el libro de la ley de Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Las palabras de los ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no debían hacer con los dioses de las gentes que habían quedado?",
+      "explanation": "Josué les dijo que no hiciesen mención ni jurasen por el nombre de sus dioses, ni los sirviesen, ni se inclinasen a ellos.",
+      "bibleReference": "Josué 23:7",
+      "answers": [
+        {
+          "text": "No llevar sus imágenes a la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "No mencionarlos ni servirlos ni inclinarse a ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "No comprar ni vender con sus sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "No edificarles altares junto al Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Josué, ¿a cuántos perseguirá un varón de ellos?",
+      "explanation": "Josué dijo que un varón de ellos perseguirá a mil, porque Jehová su Dios pelea por ellos, como él les dijo.",
+      "bibleReference": "Josué 23:10",
+      "answers": [
+        {
+          "text": "A mil",
+          "isCorrect": true
+        },
+        {
+          "text": "A ciento",
+          "isCorrect": false
+        },
+        {
+          "text": "A diez mil",
+          "isCorrect": false
+        },
+        {
+          "text": "A setenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían cuidar mucho por sus almas?",
+      "explanation": "Josué les dijo que cuidasen mucho por sus almas, que amasen a Jehová su Dios.",
+      "bibleReference": "Josué 23:11",
+      "answers": [
+        {
+          "text": "Guardar las ciudades de refugio",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecer sacrificios cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Contar las heredades de sus tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Amar a Jehová su Dios",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué serían para Israel aquellas gentes si concertaban matrimonios con ellas?",
+      "explanation": "Josué dijo que les serían por lazo, por tropiezo, por azote para sus costados y por espinas para sus ojos, hasta que pereciesen de aquella buena tierra.",
+      "bibleReference": "Josué 23:12-13",
+      "answers": [
+        {
+          "text": "Siervos y tributarios para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Maestros de guerra para sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lazo, tropiezo, azote y espinas para sus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "Testigos del pacto de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían reconocer con todo su corazón y con toda su alma?",
+      "explanation": "Josué les dijo que reconociesen que no se había perdido una palabra de todas las buenas palabras que Jehová su Dios había dicho de ellos: todas les habían venido.",
+      "bibleReference": "Josué 23:14",
+      "answers": [
+        {
+          "text": "Que no se había perdido ni una palabra buena de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Josué había repartido bien la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Levitas no tenían heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la guerra de Canaán había terminado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasaría si traspasaban el pacto de Jehová y honraban dioses ajenos?",
+      "explanation": "Josué dijo que el furor de Jehová se inflamaría contra ellos y pronto perecerían de aquella buena tierra que él les había dado.",
+      "bibleReference": "Josué 23:16",
+      "answers": [
+        {
+          "text": "Serían llevados cautivos a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "El furor de Jehová se inflamaría contra ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Quedarían sin rey y sin profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Perderían solo las ciudades fuertes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

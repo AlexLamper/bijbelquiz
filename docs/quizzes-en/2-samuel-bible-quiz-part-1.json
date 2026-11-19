@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 1",
+  "description": "Ten questions on 2 Samuel 1: an Amalekite brings news of Saul's death, and David laments over Saul and Jonathan.",
+  "slug": "2-samuel-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How did the man who came from Saul's camp look when he arrived?",
+      "explanation": "On the third day a man came out of the camp from Saul, with his clothes torn and earth on his head.",
+      "bibleReference": "2 Samuel 1:2",
+      "answers": [
+        {
+          "text": "Dressed in fine royal robes",
+          "isCorrect": false
+        },
+        {
+          "text": "Wounded and carried on a stretcher",
+          "isCorrect": false
+        },
+        {
+          "text": "Wearing sackcloth and ashes",
+          "isCorrect": false
+        },
+        {
+          "text": "Clothes torn, with earth on his head",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to the young man, what was Saul leaning on when he found him?",
+      "explanation": "The young man said that on Mount Gilboa, Saul was leaning on his spear, with chariots and horsemen close behind him.",
+      "bibleReference": "2 Samuel 1:6",
+      "answers": [
+        {
+          "text": "His shield",
+          "isCorrect": false
+        },
+        {
+          "text": "His spear",
+          "isCorrect": true
+        },
+        {
+          "text": "A tree",
+          "isCorrect": false
+        },
+        {
+          "text": "His armor bearer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the young man tell Saul he was?",
+      "explanation": "When Saul asked, \"Who are you?\" he answered, \"I am an Amalekite.\"",
+      "bibleReference": "2 Samuel 1:8",
+      "answers": [
+        {
+          "text": "A Philistine",
+          "isCorrect": false
+        },
+        {
+          "text": "An Israelite from Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "An Amalekite",
+          "isCorrect": true
+        },
+        {
+          "text": "An Egyptian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the young man bring to David?",
+      "explanation": "He said, \"I took the crown that was on his head and the bracelet that was on his arm, and have brought them here to my lord.\"",
+      "bibleReference": "2 Samuel 1:10",
+      "answers": [
+        {
+          "text": "Saul's crown and bracelet",
+          "isCorrect": true
+        },
+        {
+          "text": "Saul's sword and shield",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonathan's bow and arrows",
+          "isCorrect": false
+        },
+        {
+          "text": "Saul's spear and armor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Until when did David and his men mourn, weep, and fast?",
+      "explanation": "They mourned, wept, and fasted until evening for Saul, Jonathan, the people of Yahweh, and the house of Israel.",
+      "bibleReference": "2 Samuel 1:12",
+      "answers": [
+        {
+          "text": "Until evening",
+          "isCorrect": true
+        },
+        {
+          "text": "For seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "For thirty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the next morning",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did David ask the young man after hearing his story?",
+      "explanation": "David said, \"Why were you not afraid to stretch out your hand to destroy Yahweh's anointed?\"",
+      "bibleReference": "2 Samuel 1:14",
+      "answers": [
+        {
+          "text": "Why he had not brought Jonathan's body",
+          "isCorrect": false
+        },
+        {
+          "text": "How many men had died in the battle",
+          "isCorrect": false
+        },
+        {
+          "text": "Why he was not afraid to destroy Yahweh's anointed",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether he would serve in David's army",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did David command one of his young men to do to the Amalekite?",
+      "explanation": "David called one of the young men and said, \"Go near, and cut him down!\" and he struck him so that he died.",
+      "bibleReference": "2 Samuel 1:15",
+      "answers": [
+        {
+          "text": "Give him a reward",
+          "isCorrect": false
+        },
+        {
+          "text": "Send him home in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "Put him in prison",
+          "isCorrect": false
+        },
+        {
+          "text": "Cut him down",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In which book is the song of the bow written?",
+      "explanation": "David commanded them to teach the children of Judah the song of the bow, which is written in the book of Jashar.",
+      "bibleReference": "2 Samuel 1:18",
+      "answers": [
+        {
+          "text": "The book of the Law",
+          "isCorrect": false
+        },
+        {
+          "text": "The book of Jashar",
+          "isCorrect": true
+        },
+        {
+          "text": "The book of the kings of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "The book of Samuel the seer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which city did David's lament say the news should not be told?",
+      "explanation": "The lament says, \"Don't tell it in Gath,\" lest the daughters of the Philistines rejoice.",
+      "bibleReference": "2 Samuel 1:20",
+      "answers": [
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "Gath",
+          "isCorrect": true
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the lament, Saul and Jonathan were swifter than what and stronger than what?",
+      "explanation": "The lament says they were swifter than eagles and stronger than lions.",
+      "bibleReference": "2 Samuel 1:23",
+      "answers": [
+        {
+          "text": "Swifter than horses, stronger than bears",
+          "isCorrect": false
+        },
+        {
+          "text": "Swifter than gazelles, stronger than oxen",
+          "isCorrect": false
+        },
+        {
+          "text": "Swifter than eagles, stronger than lions",
+          "isCorrect": true
+        },
+        {
+          "text": "Swifter than the wind, stronger than iron",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

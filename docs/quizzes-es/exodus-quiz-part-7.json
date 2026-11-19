@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Éxodo 7: la vara que se torna culebra y el agua del río convertida en sangre delante de Faraón.",
+  "slug": "exodus-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo Jehová que Aarón sería para Moisés?",
+      "explanation": "Jehová dijo a Moisés que lo había constituído dios para Faraón, y que su hermano Aarón sería su profeta.",
+      "bibleReference": "Éxodo 7:1",
+      "answers": [
+        {
+          "text": "Su profeta",
+          "isCorrect": true
+        },
+        {
+          "text": "Su juez",
+          "isCorrect": false
+        },
+        {
+          "text": "Su capataz",
+          "isCorrect": false
+        },
+        {
+          "text": "Su siervo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría con el corazón de Faraón?",
+      "explanation": "Jehová dijo que endurecería el corazón de Faraón y multiplicaría sus señales y maravillas en la tierra de Egipto.",
+      "bibleReference": "Éxodo 7:3",
+      "answers": [
+        {
+          "text": "Que lo alegraría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo humillaría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo endurecería",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo ablandaría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenían Moisés y Aarón cuando hablaron a Faraón?",
+      "explanation": "Moisés era de edad de ochenta años y Aarón de ochenta y tres cuando hablaron a Faraón.",
+      "bibleReference": "Éxodo 7:7",
+      "answers": [
+        {
+          "text": "Setenta y setenta y tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta y ochenta y tres años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta y cuarenta y tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento diez y ciento treinta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué se tornó la vara de Aarón delante de Faraón?",
+      "explanation": "Aarón echó su vara delante de Faraón y de sus siervos, y se tornó culebra.",
+      "bibleReference": "Éxodo 7:10",
+      "answers": [
+        {
+          "text": "En sangre",
+          "isCorrect": false
+        },
+        {
+          "text": "En polvo",
+          "isCorrect": false
+        },
+        {
+          "text": "En fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "En culebra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo la vara de Aarón con las varas de los encantadores?",
+      "explanation": "Cada uno de ellos echó su vara y se volvieron culebras, pero la vara de Aarón devoró las varas de ellos.",
+      "bibleReference": "Éxodo 7:12",
+      "answers": [
+        {
+          "text": "Las devoró",
+          "isCorrect": true
+        },
+        {
+          "text": "Las quebró",
+          "isCorrect": false
+        },
+        {
+          "text": "Las escondió",
+          "isCorrect": false
+        },
+        {
+          "text": "Las secó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anunció Jehová que pasaría con el agua del río?",
+      "explanation": "Dijo que heriría el agua del río con la vara y se convertiría en sangre, y que los peces del río morirían.",
+      "bibleReference": "Éxodo 7:17-18",
+      "answers": [
+        {
+          "text": "Se secaría del todo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se convertiría en sangre",
+          "isCorrect": true
+        },
+        {
+          "text": "Se llenaría de ranas",
+          "isCorrect": false
+        },
+        {
+          "text": "Se volvería amarga",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía extender Aarón sobre las aguas de Egipto?",
+      "explanation": "Jehová mandó decir a Aarón que tomase su vara y extendiese su mano sobre las aguas de Egipto.",
+      "bibleReference": "Éxodo 7:19",
+      "answers": [
+        {
+          "text": "Su manto de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Un afilado pedernal",
+          "isCorrect": false
+        },
+        {
+          "text": "Ceniza de un horno",
+          "isCorrect": false
+        },
+        {
+          "text": "Su mano con la vara",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les pasó a los Egipcios con el agua del río?",
+      "explanation": "Los peces murieron, el río se corrompió y los Egipcios no podían beber de él.",
+      "bibleReference": "Éxodo 7:21",
+      "answers": [
+        {
+          "text": "Bebieron y enfermaron",
+          "isCorrect": false
+        },
+        {
+          "text": "La vendieron a los Hebreos",
+          "isCorrect": false
+        },
+        {
+          "text": "No podían beber de ella",
+          "isCorrect": true
+        },
+        {
+          "text": "La guardaron en vasos de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron en todo Egipto para poder beber?",
+      "explanation": "En todo Egipto hicieron pozos alrededor del río para beber, porque no podían beber de las aguas del río.",
+      "bibleReference": "Éxodo 7:24",
+      "answers": [
+        {
+          "text": "Tomaron agua del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Hicieron pozos alrededor del río",
+          "isCorrect": true
+        },
+        {
+          "text": "Pidieron agua a Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Bebieron solamente vino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo pasó después que Jehová hirió el río?",
+      "explanation": "Se cumplieron siete días después que Jehová hirió el río.",
+      "bibleReference": "Éxodo 7:25",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta días",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

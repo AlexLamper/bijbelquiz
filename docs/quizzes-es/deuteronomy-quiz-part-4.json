@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Deuteronomio 4: lo que vieron sus ojos en Horeb, la prohibición de las imágenes y las tres ciudades apartadas por Moisés.",
+  "slug": "deuteronomy-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según lo que vieron sus ojos, ¿a quiénes destruyó Jehová de en medio del pueblo?",
+      "explanation": "El texto dice que sus ojos vieron lo que hizo Jehová con motivo de Baal-peor: a todo hombre que fue en pos de Baal-peor lo destruyó de en medio de ellos.",
+      "bibleReference": "Deuteronomio 4:3",
+      "answers": [
+        {
+          "text": "A todo hombre que fue en pos de Baal-peor",
+          "isCorrect": true
+        },
+        {
+          "text": "A todo el que se quedó al pie del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que no quisieron pasar el Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que pidieron volver a Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les prohíbe hacer con la palabra que les manda?",
+      "explanation": "No añadirán nada a la palabra que les manda ni disminuirán de ella, para que guarden los mandamientos de Jehová su Dios.",
+      "bibleReference": "Deuteronomio 4:2",
+      "answers": [
+        {
+          "text": "Repetirla solamente en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Enseñarla solo a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "No añadirle nada ni disminuir de ella",
+          "isCorrect": true
+        },
+        {
+          "text": "Escribirla en tablas de piedra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si guardan y ponen por obra los estatutos, ¿qué dirán los pueblos al oírlos?",
+      "explanation": "Los pueblos oirán todos estos estatutos y dirán: Ciertamente pueblo sabio y entendido, gente grande es ésta.",
+      "bibleReference": "Deuteronomio 4:6",
+      "answers": [
+        {
+          "text": "Ciertamente pueblo fuerte en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciertamente pueblo sabio y entendido",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciertamente pueblo rico y numeroso",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciertamente pueblo temido por sus reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando Jehová habló de en medio del fuego, ¿qué oyeron y qué no vieron?",
+      "explanation": "Oyeron la voz de sus palabras, mas a excepción de oír la voz, ninguna figura vieron.",
+      "bibleReference": "Deuteronomio 4:12",
+      "answers": [
+        {
+          "text": "Vieron una figura, pero no oyeron nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Oyeron la voz y vieron su gloria",
+          "isCorrect": false
+        },
+        {
+          "text": "No oyeron nada y vieron una nube",
+          "isCorrect": false
+        },
+        {
+          "text": "Oyeron la voz, pero ninguna figura vieron",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué escribió Jehová en dos tablas de piedra?",
+      "explanation": "Él les anunció su pacto, que les mandó poner por obra, las diez palabras, y las escribió en dos tablas de piedra.",
+      "bibleReference": "Deuteronomio 4:13",
+      "answers": [
+        {
+          "text": "Las diez palabras",
+          "isCorrect": true
+        },
+        {
+          "text": "Los nombres de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los estatutos y derechos",
+          "isCorrect": false
+        },
+        {
+          "text": "El cántico del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dice el texto que Jehová los sacó para que le fuesen pueblo de heredad?",
+      "explanation": "Jehová los tomó y los sacó del horno de hierro, de Egipto, para que le fuesen por pueblo de heredad.",
+      "bibleReference": "Deuteronomio 4:20",
+      "answers": [
+        {
+          "text": "Del desierto de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "Del horno de hierro, de Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "De la tierra de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "Del valle delante de Beth-peor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el que habla sobre su propio paso del Jordán?",
+      "explanation": "Dice que va a morir en esa tierra y que no pasa el Jordán, mientras que ellos sí pasarán y poseerán aquella buena tierra.",
+      "bibleReference": "Deuteronomio 4:21-22",
+      "answers": [
+        {
+          "text": "Que pasará primero que el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pasará después de los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperará tres años para pasar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que morirá allí y no pasará el Jordán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Jehová en este aviso contra las imágenes?",
+      "explanation": "Dice que Jehová su Dios es fuego que consume, Dios celoso.",
+      "bibleReference": "Deuteronomio 4:24",
+      "answers": [
+        {
+          "text": "Roca escondida en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Sol que alumbra a las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego que consume, Dios celoso",
+          "isCorrect": true
+        },
+        {
+          "text": "Pastor que recoge su rebaño",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo hallarán a Jehová si lo buscan desde las tierras donde fueron esparcidos?",
+      "explanation": "Dice que si desde allí buscaren a Jehová su Dios, lo hallarán, si lo buscaren de todo su corazón y de toda su alma.",
+      "bibleReference": "Deuteronomio 4:29",
+      "answers": [
+        {
+          "text": "Si levantan altares en los montes altos",
+          "isCorrect": false
+        },
+        {
+          "text": "Si lo buscan de todo su corazón y de toda su alma",
+          "isCorrect": true
+        },
+        {
+          "text": "Si envían ofrendas desde lejos",
+          "isCorrect": false
+        },
+        {
+          "text": "Si piden primero consejo a los reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés de esta parte del Jordán, al nacimiento del sol?",
+      "explanation": "Moisés apartó tres ciudades para que huyese allí el homicida que matase a su prójimo por yerro: Beser, Ramoth y Golán.",
+      "bibleReference": "Deuteronomio 4:41-43",
+      "answers": [
+        {
+          "text": "Apartó tres ciudades para el homicida",
+          "isCorrect": true
+        },
+        {
+          "text": "Levantó un altar de doce piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Reunió a los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartió la tierra entre dos tribus",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

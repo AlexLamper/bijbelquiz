@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Números 13: los hombres enviados a reconocer Canaán, el racimo de Escol y el informe que dieron.",
+  "slug": "numbers-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos hombres de cada tribu debían ser enviados a reconocer la tierra?",
+      "explanation": "De cada tribu de sus padres enviarían un varón, cada uno príncipe entre ellos.",
+      "bibleReference": "Números 13:3",
+      "answers": [
+        {
+          "text": "Dos de cada tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce de cada tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "Uno de cada tribu",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez de cada tribu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde los envió Moisés?",
+      "explanation": "Moisés los envió desde el desierto de Parán, conforme a la palabra de Jehová.",
+      "bibleReference": "Números 13:4",
+      "answers": [
+        {
+          "text": "Desde el desierto de Parán",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde el desierto de Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el campo de Haseroth",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue enviado de la tribu de Judá?",
+      "explanation": "De la tribu de Judá fue enviado Caleb hijo de Jephone.",
+      "bibleReference": "Números 13:7",
+      "answers": [
+        {
+          "text": "Igal, hijo de Joseph",
+          "isCorrect": false
+        },
+        {
+          "text": "Palti, hijo de Raphu",
+          "isCorrect": false
+        },
+        {
+          "text": "Sammua, hijo de Zaccur",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb, hijo de Jephone",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién puso Moisés el nombre de Josué?",
+      "explanation": "A Oseas hijo de Nun, Moisés le puso el nombre de Josué.",
+      "bibleReference": "Números 13:17",
+      "answers": [
+        {
+          "text": "A Caleb, hijo de Jephone",
+          "isCorrect": false
+        },
+        {
+          "text": "A Oseas, hijo de Nun",
+          "isCorrect": true
+        },
+        {
+          "text": "A Gaddi, hijo de Susi",
+          "isCorrect": false
+        },
+        {
+          "text": "A Geuel, hijo de Machî",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes vieron en Hebrón?",
+      "explanation": "Subieron por el mediodía y vinieron hasta Hebrón, y allí estaban Aimán, Sesai y Talmai, hijos de Anac.",
+      "bibleReference": "Números 13:23",
+      "answers": [
+        {
+          "text": "A Amalec y a los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Hetheos y a los Jebuseos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aimán, Sesai y Talmai, hijos de Anac",
+          "isCorrect": true
+        },
+        {
+          "text": "A los hijos de Enán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo trajeron el racimo de uvas que cortaron?",
+      "explanation": "En el arroyo de Escol cortaron un sarmiento con un racimo de uvas, el cual trajeron dos en un palo, y también granadas e higos.",
+      "bibleReference": "Números 13:24",
+      "answers": [
+        {
+          "text": "En un canastillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre un carro cubierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada uno un racimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos hombres en un palo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Al cabo de cuántos días volvieron de reconocer la tierra?",
+      "explanation": "Volvieron de reconocer la tierra al cabo de cuarenta días.",
+      "bibleReference": "Números 13:26",
+      "answers": [
+        {
+          "text": "Cuarenta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron de la tierra a la que habían sido enviados?",
+      "explanation": "Contaron que llegaron a la tierra a la cual los había enviado, la que ciertamente fluye leche y miel, y mostraron su fruto.",
+      "bibleReference": "Números 13:28",
+      "answers": [
+        {
+          "text": "Que estaba desierta y seca",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ciertamente fluye leche y miel",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no tenía árboles",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus ciudades estaban vacías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Caleb delante de Moisés?",
+      "explanation": "Caleb hizo callar al pueblo delante de Moisés y dijo: Subamos luego, y poseámosla; que más podremos que ella.",
+      "bibleReference": "Números 13:31",
+      "answers": [
+        {
+          "text": "Volvamos a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Subamos luego, y poseámosla",
+          "isCorrect": true
+        },
+        {
+          "text": "Esperemos cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviemos otros varones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se veían a sí mismos los varones frente a los habitantes de la tierra?",
+      "explanation": "Dijeron que allí vieron hombres de grande estatura, y que ellos, a su parecer, eran como langostas, y así les parecían a ellos.",
+      "bibleReference": "Números 13:33",
+      "answers": [
+        {
+          "text": "Como gigantes",
+          "isCorrect": false
+        },
+        {
+          "text": "Como leones",
+          "isCorrect": false
+        },
+        {
+          "text": "Como ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Como langostas",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

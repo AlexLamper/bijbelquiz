@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 25",
+  "description": "Ten questions on Exodus 25: the offering for the sanctuary and the ark, the mercy seat, the table and the lamp stand.",
+  "slug": "exodus-bible-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "From whom was Moses to take the offering for Yahweh?",
+      "explanation": "The offering was to be taken from everyone whose heart made him willing.",
+      "bibleReference": "Exodus 25:2",
+      "answers": [
+        {
+          "text": "Only from the elders of the tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "From every firstborn son in Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Only from the men of the tribe of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "From everyone whose heart made him willing",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why were the people to make a sanctuary?",
+      "explanation": "Yahweh said: \"Let them make me a sanctuary, that I may dwell among them.\"",
+      "bibleReference": "Exodus 25:8",
+      "answers": [
+        {
+          "text": "So that the nations would fear Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "So that God might dwell among them",
+          "isCorrect": true
+        },
+        {
+          "text": "So that the priests had a place to live",
+          "isCorrect": false
+        },
+        {
+          "text": "So that the tablets could be hidden from the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of wood was the ark to be made of?",
+      "explanation": "They were to make an ark of acacia wood, two and a half cubits long.",
+      "bibleReference": "Exodus 25:10",
+      "answers": [
+        {
+          "text": "Acacia wood",
+          "isCorrect": true
+        },
+        {
+          "text": "Cedar wood",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive wood",
+          "isCorrect": false
+        },
+        {
+          "text": "Cypress wood",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were the four gold rings of the ark to be put?",
+      "explanation": "Four rings of gold were to be cast and put in its four feet, two on each side.",
+      "bibleReference": "Exodus 25:12",
+      "answers": [
+        {
+          "text": "On its lid",
+          "isCorrect": false
+        },
+        {
+          "text": "On the corners of the mercy seat",
+          "isCorrect": false
+        },
+        {
+          "text": "In its four feet",
+          "isCorrect": true
+        },
+        {
+          "text": "Inside the ark",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What rule applied to the poles of the ark?",
+      "explanation": "The poles were to stay in the rings of the ark; they were not to be taken from it.",
+      "bibleReference": "Exodus 25:15",
+      "answers": [
+        {
+          "text": "They were to be taken out whenever the ark stood still",
+          "isCorrect": false
+        },
+        {
+          "text": "They were never to be taken out of the rings",
+          "isCorrect": true
+        },
+        {
+          "text": "They were to be made of bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "They were to be covered with a blue cloth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which way were the faces of the two cherubim to be turned?",
+      "explanation": "The cherubim were to face one another, with their faces toward the mercy seat.",
+      "bibleReference": "Exodus 25:20",
+      "answers": [
+        {
+          "text": "Outward, toward the people in the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "Upward, toward heaven above them",
+          "isCorrect": false
+        },
+        {
+          "text": "One to the east and one to the west",
+          "isCorrect": false
+        },
+        {
+          "text": "Toward one another, toward the mercy seat",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "From where did God say he would speak with Moses?",
+      "explanation": "God would meet with Moses and speak from above the mercy seat, from between the two cherubim on the ark.",
+      "bibleReference": "Exodus 25:22",
+      "answers": [
+        {
+          "text": "From the top of the lamp stand",
+          "isCorrect": false
+        },
+        {
+          "text": "From beside the table of bread",
+          "isCorrect": false
+        },
+        {
+          "text": "From between the two cherubim",
+          "isCorrect": true
+        },
+        {
+          "text": "From the horns of the bronze altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was always to be set on the table before God?",
+      "explanation": "Bread of the presence was to be set on the table before God always.",
+      "bibleReference": "Exodus 25:30",
+      "answers": [
+        {
+          "text": "Bread of the presence",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven burning lamps",
+          "isCorrect": false
+        },
+        {
+          "text": "The two stone tablets",
+          "isCorrect": false
+        },
+        {
+          "text": "A bowl of sweet incense",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The cups on the branches of the lamp stand were to look like what?",
+      "explanation": "Each branch had three cups made like almond blossoms, with a bud and a flower.",
+      "bibleReference": "Exodus 25:33",
+      "answers": [
+        {
+          "text": "Pomegranates",
+          "isCorrect": false
+        },
+        {
+          "text": "Lilies",
+          "isCorrect": false
+        },
+        {
+          "text": "Olive leaves",
+          "isCorrect": false
+        },
+        {
+          "text": "Almond blossoms",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How much pure gold was the lamp stand with all its accessories to be made of?",
+      "explanation": "The lamp stand was to be made of a talent of pure gold, with all its accessories.",
+      "bibleReference": "Exodus 25:39",
+      "answers": [
+        {
+          "text": "A shekel",
+          "isCorrect": false
+        },
+        {
+          "text": "A talent",
+          "isCorrect": true
+        },
+        {
+          "text": "A hundred shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "A mina",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

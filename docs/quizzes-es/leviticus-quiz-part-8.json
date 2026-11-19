@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Levítico 8: la consagración de Aarón y de sus hijos, desde el lavamiento con agua hasta los siete días a la puerta del tabernáculo.",
+  "slug": "leviticus-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde debía reunir Moisés a toda la congregación?",
+      "explanation": "Jehová mandó a Moisés reunir toda la congregación a la puerta del tabernáculo del testimonio, y así se hizo.",
+      "bibleReference": "Levítico 8:3-4",
+      "answers": [
+        {
+          "text": "En el monte de Sinaí, al pie del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta del tabernáculo del testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "Dentro del santuario, delante del velo",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera del real, junto a las tiendas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés primero con Aarón y sus hijos?",
+      "explanation": "Moisés hizo llegar a Aarón y a sus hijos y los lavó con agua.",
+      "bibleReference": "Levítico 8:6",
+      "answers": [
+        {
+          "text": "Puso sangre en sus orejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Les cortó el cabello",
+          "isCorrect": false
+        },
+        {
+          "text": "Les dio de comer el pan sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Los lavó con agua",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Moisés en el racional?",
+      "explanation": "Moisés le puso encima el racional, y en él puso el Urim y Thummim.",
+      "bibleReference": "Levítico 8:8",
+      "answers": [
+        {
+          "text": "El Urim y Thummim",
+          "isCorrect": true
+        },
+        {
+          "text": "La plancha de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos piedras del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "El aceite de la unción",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Moisés sobre la mitra, en el frente delantero de Aarón?",
+      "explanation": "Sobre la mitra, en su frente delantero, Moisés puso la plancha de oro, la diadema santa.",
+      "bibleReference": "Levítico 8:9",
+      "answers": [
+        {
+          "text": "El racional del juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "El cinto del ephod",
+          "isCorrect": false
+        },
+        {
+          "text": "La plancha de oro, la diadema santa",
+          "isCorrect": true
+        },
+        {
+          "text": "Un canastillo de ázimos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces roció Moisés el aceite sobre el altar?",
+      "explanation": "Moisés roció del aceite sobre el altar siete veces, y ungió el altar y todos sus vasos, y la fuente y su basa.",
+      "bibleReference": "Levítico 8:11",
+      "answers": [
+        {
+          "text": "Tres veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete veces",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre quién derramó Moisés el aceite de la unción, en la cabeza?",
+      "explanation": "Moisés derramó del aceite de la unción sobre la cabeza de Aarón y lo ungió para santificarlo.",
+      "bibleReference": "Levítico 8:12",
+      "answers": [
+        {
+          "text": "Sobre Aarón",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre toda la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los ancianos de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés con la sangre del becerro de la expiación?",
+      "explanation": "Moisés tomó la sangre y con su dedo la puso sobre los cuernos del altar alrededor, y echó la demás sangre al pie del altar.",
+      "bibleReference": "Levítico 8:15",
+      "answers": [
+        {
+          "text": "La derramó sobre el canastillo",
+          "isCorrect": false
+        },
+        {
+          "text": "La llevó del velo adentro",
+          "isCorrect": false
+        },
+        {
+          "text": "La puso con su dedo sobre los cuernos del altar",
+          "isCorrect": true
+        },
+        {
+          "text": "La guardó en una vasija de barro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde puso Moisés la sangre del carnero de las consagraciones, en el cuerpo de Aarón?",
+      "explanation": "Moisés puso de esa sangre sobre la ternilla de la oreja derecha de Aarón, sobre el pulgar de su mano derecha y sobre el pulgar de su pie derecho.",
+      "bibleReference": "Levítico 8:23",
+      "answers": [
+        {
+          "text": "En su frente y en sus manos",
+          "isCorrect": false
+        },
+        {
+          "text": "En la oreja derecha y en los pulgares derechos",
+          "isCorrect": true
+        },
+        {
+          "text": "En sus dos orejas y en su boca",
+          "isCorrect": false
+        },
+        {
+          "text": "En sus rodillas y en sus pies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parte del carnero de las consagraciones fue la parte de Moisés?",
+      "explanation": "Moisés tomó el pecho y lo meció como ofrenda agitada delante de Jehová; del carnero de las consagraciones aquella fue la parte de Moisés.",
+      "bibleReference": "Levítico 8:29",
+      "answers": [
+        {
+          "text": "El cuero del carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dos riñones",
+          "isCorrect": false
+        },
+        {
+          "text": "La espaldilla derecha",
+          "isCorrect": false
+        },
+        {
+          "text": "El pecho",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días no debían salir de la puerta del tabernáculo del testimonio?",
+      "explanation": "Durante siete días no saldrían de la puerta del tabernáculo del testimonio, hasta cumplirse los días de sus consagraciones.",
+      "bibleReference": "Levítico 8:33",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un solo día",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

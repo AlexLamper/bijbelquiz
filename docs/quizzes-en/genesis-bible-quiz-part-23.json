@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 23",
+  "description": "Ten questions on Genesis 23: the death of Sarah and Abraham's purchase of the cave of Machpelah.",
+  "slug": "genesis-bible-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How long did Sarah live?",
+      "explanation": "Sarah lived one hundred twenty-seven years. This was the length of Sarah's life.",
+      "bibleReference": "Genesis 23:1",
+      "answers": [
+        {
+          "text": "One hundred years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred thirty-seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty-seven years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Sarah die?",
+      "explanation": "Sarah died in Kiriath Arba (also called Hebron), in the land of Canaan.",
+      "bibleReference": "Genesis 23:2",
+      "answers": [
+        {
+          "text": "Beersheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Arba",
+          "isCorrect": true
+        },
+        {
+          "text": "Bethel near Ai",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerar in the South",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Abraham speak about a burial place?",
+      "explanation": "Abraham rose up from before his dead and spoke to the children of Heth.",
+      "bibleReference": "Genesis 23:3-4",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Moabites",
+          "isCorrect": false
+        },
+        {
+          "text": "The children of Heth",
+          "isCorrect": true
+        },
+        {
+          "text": "The Egyptians",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Abraham describe himself to the children of Heth?",
+      "explanation": "Abraham said, \"I am a stranger and a foreigner living with you. Give me a possession of a burying-place with you.\"",
+      "bibleReference": "Genesis 23:4",
+      "answers": [
+        {
+          "text": "As a stranger and a foreigner",
+          "isCorrect": true
+        },
+        {
+          "text": "As a servant of Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "As a poor shepherd",
+          "isCorrect": false
+        },
+        {
+          "text": "As an old man near death",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the children of Heth call Abraham?",
+      "explanation": "The children of Heth said, \"Hear us, my lord. You are a prince of God among us. Bury your dead in the best of our tombs.\"",
+      "bibleReference": "Genesis 23:6",
+      "answers": [
+        {
+          "text": "A mighty king",
+          "isCorrect": false
+        },
+        {
+          "text": "A prophet of Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "A judge of the land",
+          "isCorrect": false
+        },
+        {
+          "text": "A prince of God among us",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whose son was Ephron?",
+      "explanation": "Abraham asked them to entreat for him to Ephron the son of Zohar.",
+      "bibleReference": "Genesis 23:8",
+      "answers": [
+        {
+          "text": "Zohar",
+          "isCorrect": true
+        },
+        {
+          "text": "Beeri",
+          "isCorrect": false
+        },
+        {
+          "text": "Elon",
+          "isCorrect": false
+        },
+        {
+          "text": "Zibeon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text call Ephron?",
+      "explanation": "Ephron was sitting among the children of Heth, and Ephron the Hittite answered Abraham.",
+      "bibleReference": "Genesis 23:10",
+      "answers": [
+        {
+          "text": "Ephron the Amorite",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephron the Perizzite",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephron the Hittite",
+          "isCorrect": true
+        },
+        {
+          "text": "Ephron the Jebusite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ephron first offer Abraham?",
+      "explanation": "Ephron said, \"I give you the field, and I give you the cave that is in it... Bury your dead.\"",
+      "bibleReference": "Genesis 23:11",
+      "answers": [
+        {
+          "text": "To lend him the cave for a year",
+          "isCorrect": false
+        },
+        {
+          "text": "To give him the field and the cave",
+          "isCorrect": true
+        },
+        {
+          "text": "To sell him only the cave",
+          "isCorrect": false
+        },
+        {
+          "text": "To let him bury Sarah in Ephron's own tomb",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much silver did Abraham weigh out to Ephron?",
+      "explanation": "Abraham weighed to Ephron four hundred shekels of silver, according to the current merchants' standard.",
+      "bibleReference": "Genesis 23:16",
+      "answers": [
+        {
+          "text": "Four hundred shekels",
+          "isCorrect": true
+        },
+        {
+          "text": "One hundred shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty shekels",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand shekels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which cave did Abraham bury Sarah?",
+      "explanation": "Abraham buried Sarah his wife in the cave of the field of Machpelah before Mamre (that is, Hebron), in the land of Canaan.",
+      "bibleReference": "Genesis 23:19",
+      "answers": [
+        {
+          "text": "The cave of Adullam",
+          "isCorrect": false
+        },
+        {
+          "text": "The cave of Zoar",
+          "isCorrect": false
+        },
+        {
+          "text": "The cave of Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "The cave of Machpelah",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

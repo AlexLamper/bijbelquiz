@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 20",
+  "description": "Ten questions on Numbers 20: Miriam's death, the waters of Meribah, Edom's refusal and the death of Aaron on Mount Hor.",
+  "slug": "numbers-bible-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who died and was buried at Kadesh in the wilderness of Zin?",
+      "explanation": "The congregation came into the wilderness of Zin and stayed in Kadesh; Miriam died there and was buried there.",
+      "bibleReference": "Numbers 20:1",
+      "answers": [
+        {
+          "text": "Zipporah",
+          "isCorrect": false
+        },
+        {
+          "text": "Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "Miriam",
+          "isCorrect": true
+        },
+        {
+          "text": "Elisheba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the congregation assemble against Moses and Aaron at Kadesh?",
+      "explanation": "There was no water for the congregation, so they assembled themselves together against Moses and Aaron.",
+      "bibleReference": "Numbers 20:1-2",
+      "answers": [
+        {
+          "text": "There was no meat",
+          "isCorrect": false
+        },
+        {
+          "text": "Edom attacked them",
+          "isCorrect": false
+        },
+        {
+          "text": "Korah's sons stirred them up",
+          "isCorrect": false
+        },
+        {
+          "text": "There was no water",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Moses and Aaron to do to the rock?",
+      "explanation": "Yahweh told them to assemble the congregation and speak to the rock before their eyes, that it would pour out its water.",
+      "bibleReference": "Numbers 20:8",
+      "answers": [
+        {
+          "text": "Speak to it before the people's eyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Strike it twice with the rod",
+          "isCorrect": false
+        },
+        {
+          "text": "Pour oil on it as an offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Build an altar beside it first",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses call the assembly gathered before the rock?",
+      "explanation": "Moses said to them, \"Hear now, you rebels! Shall we bring water out of this rock for you?\"",
+      "bibleReference": "Numbers 20:10",
+      "answers": [
+        {
+          "text": "Stiff-necked children",
+          "isCorrect": false
+        },
+        {
+          "text": "Rebels",
+          "isCorrect": true
+        },
+        {
+          "text": "Sons of Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "Grumblers of the desert",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many times did Moses strike the rock with his rod?",
+      "explanation": "Moses lifted up his hand and struck the rock with his rod twice, and water came out abundantly.",
+      "bibleReference": "Numbers 20:11",
+      "answers": [
+        {
+          "text": "Once",
+          "isCorrect": false
+        },
+        {
+          "text": "Three times",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven times",
+          "isCorrect": false
+        },
+        {
+          "text": "Twice",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What consequence did Yahweh announce to Moses and Aaron because they did not believe in him?",
+      "explanation": "Yahweh said that, because they did not believe in him to sanctify him, they would not bring this assembly into the land he had given them.",
+      "bibleReference": "Numbers 20:12",
+      "answers": [
+        {
+          "text": "They would lose their sight",
+          "isCorrect": false
+        },
+        {
+          "text": "They would not bring the assembly into the land",
+          "isCorrect": true
+        },
+        {
+          "text": "They would wander alone for forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Their sons would lose the priesthood",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name is given to these waters?",
+      "explanation": "\"These are the waters of Meribah; because the children of Israel strove with Yahweh.\"",
+      "bibleReference": "Numbers 20:13",
+      "answers": [
+        {
+          "text": "The waters of Meribah",
+          "isCorrect": true
+        },
+        {
+          "text": "The waters of Marah",
+          "isCorrect": false
+        },
+        {
+          "text": "The waters of Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "The waters of Zered",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the message asking to pass through the land, which road did they promise to go along?",
+      "explanation": "The message said, \"We will go along the king's highway. We will not turn away to the right hand nor to the left.\"",
+      "bibleReference": "Numbers 20:17",
+      "answers": [
+        {
+          "text": "The way of the Red Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The road to Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's highway",
+          "isCorrect": true
+        },
+        {
+          "text": "The way of the Philistines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On Mount Hor, Moses stripped Aaron of his garments and put them on whom?",
+      "explanation": "Moses stripped Aaron of his garments and put them on Eleazar his son, and Aaron died there on the top of the mountain.",
+      "bibleReference": "Numbers 20:26-28",
+      "answers": [
+        {
+          "text": "Joshua's",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinehas'",
+          "isCorrect": false
+        },
+        {
+          "text": "Ithamar's",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar's",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long did the house of Israel weep for Aaron?",
+      "explanation": "When all the congregation saw that Aaron was dead, they wept for Aaron thirty days.",
+      "bibleReference": "Numbers 20:29",
+      "answers": [
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty days",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Three days",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

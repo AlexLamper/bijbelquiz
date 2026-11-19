@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Números 9: la pascua en el desierto de Sinaí, la pascua del mes segundo y la nube sobre el tabernáculo.",
+  "slug": "numbers-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde habló Jehová a Moisés al comienzo del capítulo?",
+      "explanation": "Jehová habló a Moisés en el desierto de Sinaí, en el segundo año de su salida de la tierra de Egipto, en el mes primero.",
+      "bibleReference": "Números 9:1",
+      "answers": [
+        {
+          "text": "En el desierto de Parán",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Sinaí",
+          "isCorrect": true
+        },
+        {
+          "text": "En el valle de Escol",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué día debían hacer la pascua?",
+      "explanation": "La pascua debía hacerse el décimocuarto día del mes primero, entre las dos tardes, conforme a todos sus ritos y leyes.",
+      "bibleReference": "Números 9:3",
+      "answers": [
+        {
+          "text": "El décimocuarto día del mes primero",
+          "isCorrect": true
+        },
+        {
+          "text": "El décimo día del mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El primer día del mes segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "El séptimo día del mes primero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué algunos hombres no pudieron hacer la pascua aquel día?",
+      "explanation": "Algunos estaban inmundos a causa de un muerto y por eso no pudieron hacer la pascua aquel día.",
+      "bibleReference": "Números 9:6",
+      "answers": [
+        {
+          "text": "No habían sido contados",
+          "isCorrect": false
+        },
+        {
+          "text": "No tenían hierbas amargas",
+          "isCorrect": false
+        },
+        {
+          "text": "Estaban fuera del campo por lepra",
+          "isCorrect": false
+        },
+        {
+          "text": "Estaban inmundos a causa de un muerto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les respondió Moisés a aquellos hombres?",
+      "explanation": "Moisés les respondió: Esperad, y oiré qué mandará Jehová acerca de vosotros.",
+      "bibleReference": "Números 9:8",
+      "answers": [
+        {
+          "text": "Que la hicieran de todos modos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperaran a lo que Jehová mandara",
+          "isCorrect": true
+        },
+        {
+          "text": "Que salieran del campo siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que trajeran una ofrenda por el pecado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo harían la pascua los que estaban inmundos o de viaje lejos?",
+      "explanation": "Jehová manda que la hagan en el mes segundo, a los catorce días del mes, entre las dos tardes, con cenceñas y hierbas amargas.",
+      "bibleReference": "Números 9:11",
+      "answers": [
+        {
+          "text": "El día catorce del mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El día primero del mes tercero",
+          "isCorrect": false
+        },
+        {
+          "text": "El día catorce del mes segundo",
+          "isCorrect": true
+        },
+        {
+          "text": "El día siete del mes segundo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no debían hacer con la pascua?",
+      "explanation": "No dejarían de ella para la mañana, ni quebrarían hueso en ella, conforme a todos los ritos de la pascua.",
+      "bibleReference": "Números 9:12",
+      "answers": [
+        {
+          "text": "Comerla con pan leudado ni de día",
+          "isCorrect": false
+        },
+        {
+          "text": "Comerla fuera del campo ni de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Cocerla en agua ni comerla cruda",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejar de ella para la mañana ni quebrar un hueso",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasaba al que estaba limpio y no estaba de viaje si dejaba de hacer la pascua?",
+      "explanation": "La persona que estando limpia y sin viaje dejaba de hacer la pascua era cortada de sus pueblos y llevaba su pecado.",
+      "bibleReference": "Números 9:13",
+      "answers": [
+        {
+          "text": "Era cortada de sus pueblos",
+          "isCorrect": true
+        },
+        {
+          "text": "Traía una ofrenda doble",
+          "isCorrect": false
+        },
+        {
+          "text": "Era echada del campo siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperaba hasta el año siguiente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué rito seguía el peregrino que hacía la pascua a Jehová?",
+      "explanation": "El peregrino que moraba con ellos hacía la pascua conforme al rito y a las leyes de la pascua: un mismo rito para el peregrino y para el natural de la tierra.",
+      "bibleReference": "Números 9:14",
+      "answers": [
+        {
+          "text": "Un rito aparte, fuera del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "El mismo rito que el natural de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Ningún rito, pues no podía hacerla",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente el rito del mes segundo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había sobre el tabernáculo de noche?",
+      "explanation": "La nube cubría el tabernáculo, y a la tarde había sobre él como una apariencia de fuego, hasta la mañana.",
+      "bibleReference": "Números 9:15-16",
+      "answers": [
+        {
+          "text": "Como una columna de humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como una apariencia de fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Como un arco de luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Como una nube oscura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacían los hijos de Israel cuando la nube se alzaba del tabernáculo?",
+      "explanation": "Según se alzaba la nube del tabernáculo, los hijos de Israel se partían, y donde la nube paraba, allí alojaban.",
+      "bibleReference": "Números 9:17",
+      "answers": [
+        {
+          "text": "Asentaban el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardaban silencio siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecían la pascua de nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se partían",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

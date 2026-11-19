@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 1",
+  "description": "Ten questions on Isaiah 1: a rebellious nation, sacrifices God rejects, and sins as scarlet made white as snow.",
+  "slug": "isaiah-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Whose son was Isaiah?",
+      "explanation": "The book opens with the vision of Isaiah the son of Amoz.",
+      "bibleReference": "Isaiah 1:1",
+      "answers": [
+        {
+          "text": "Amoz",
+          "isCorrect": true
+        },
+        {
+          "text": "Uzziah",
+          "isCorrect": false
+        },
+        {
+          "text": "Jotham",
+          "isCorrect": false
+        },
+        {
+          "text": "Hezekiah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Concerning which places did Isaiah see his vision?",
+      "explanation": "It was the vision which he saw concerning Judah and Jerusalem, in the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah.",
+      "bibleReference": "Isaiah 1:1",
+      "answers": [
+        {
+          "text": "Israel and Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Babylon and Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "Judah and Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Egypt and Cush",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The ox knows his owner, and the donkey knows what?",
+      "explanation": "The text says the ox knows his owner, and the donkey his master's crib, but Israel doesn't know.",
+      "bibleReference": "Isaiah 1:3",
+      "answers": [
+        {
+          "text": "His own stall",
+          "isCorrect": false
+        },
+        {
+          "text": "His master's crib",
+          "isCorrect": true
+        },
+        {
+          "text": "The way home",
+          "isCorrect": false
+        },
+        {
+          "text": "His master's voice",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The daughter of Zion is left like a hut in a field of what?",
+      "explanation": "The daughter of Zion is left like a shelter in a vineyard, like a hut in a field of melons, like a besieged city.",
+      "bibleReference": "Isaiah 1:8",
+      "answers": [
+        {
+          "text": "Wheat",
+          "isCorrect": false
+        },
+        {
+          "text": "Olives",
+          "isCorrect": false
+        },
+        {
+          "text": "Barley",
+          "isCorrect": false
+        },
+        {
+          "text": "Melons",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What would Judah have been like if Yahweh of Armies had not left a very small remnant?",
+      "explanation": "The text says, \"Unless Yahweh of Armies had left to us a very small remnant, we would have been as Sodom. We would have been like Gomorrah.\"",
+      "bibleReference": "Isaiah 1:9",
+      "answers": [
+        {
+          "text": "Like Sodom and Gomorrah",
+          "isCorrect": true
+        },
+        {
+          "text": "Like Egypt and Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a garden without water",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a vineyard without a wall",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does Yahweh say He will not hear when they make many prayers?",
+      "explanation": "Yahweh says that when they spread out their hands He will hide His eyes, and He will not hear their many prayers, because their hands are full of blood.",
+      "bibleReference": "Isaiah 1:15",
+      "answers": [
+        {
+          "text": "Because they pray in a foreign language",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they pray too briefly",
+          "isCorrect": false
+        },
+        {
+          "text": "Because their hands are full of blood",
+          "isCorrect": true
+        },
+        {
+          "text": "Because they pray to idols",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these commands does Yahweh give in this chapter?",
+      "explanation": "Yahweh says, \"Learn to do well. Seek justice. Relieve the oppressed. Defend the fatherless. Plead for the widow.\"",
+      "bibleReference": "Isaiah 1:17",
+      "answers": [
+        {
+          "text": "Build a new temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Seek justice",
+          "isCorrect": true
+        },
+        {
+          "text": "Offer more burnt offerings",
+          "isCorrect": false
+        },
+        {
+          "text": "Fast twice a week",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Though their sins are as scarlet, what shall they be like?",
+      "explanation": "Yahweh says, \"Though your sins are as scarlet, they shall be as white as snow. Though they are red like crimson, they shall be as wool.\"",
+      "bibleReference": "Isaiah 1:18",
+      "answers": [
+        {
+          "text": "As white as snow",
+          "isCorrect": true
+        },
+        {
+          "text": "As clear as water",
+          "isCorrect": false
+        },
+        {
+          "text": "As bright as the sun",
+          "isCorrect": false
+        },
+        {
+          "text": "As pure as gold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What has the city's silver become?",
+      "explanation": "The text says, \"Your silver has become dross, your wine mixed with water.\"",
+      "bibleReference": "Isaiah 1:21-22",
+      "answers": [
+        {
+          "text": "Rust",
+          "isCorrect": false
+        },
+        {
+          "text": "Dust",
+          "isCorrect": false
+        },
+        {
+          "text": "Lead",
+          "isCorrect": false
+        },
+        {
+          "text": "Dross",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What will the city be called after Yahweh restores its judges as at the first?",
+      "explanation": "Yahweh says, \"Afterward you shall be called 'The city of righteousness, a faithful town.'\"",
+      "bibleReference": "Isaiah 1:26",
+      "answers": [
+        {
+          "text": "The city of peace",
+          "isCorrect": false
+        },
+        {
+          "text": "The city of David",
+          "isCorrect": false
+        },
+        {
+          "text": "The city of righteousness",
+          "isCorrect": true
+        },
+        {
+          "text": "The joy of the whole earth",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 9",
+  "description": "Ten questions on Exodus 9: the pestilence on the livestock, the boils and the very grievous hail.",
+  "slug": "exodus-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "When all the livestock of Egypt died, how many of the livestock of the children of Israel died?",
+      "explanation": "All the livestock of Egypt died, but of the livestock of the children of Israel, not one died.",
+      "bibleReference": "Exodus 9:6",
+      "answers": [
+        {
+          "text": "Half of them",
+          "isCorrect": false
+        },
+        {
+          "text": "Not one",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the camels",
+          "isCorrect": false
+        },
+        {
+          "text": "All the horses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses sprinkle toward the sky in the sight of Pharaoh?",
+      "explanation": "Moses and Aaron took ashes of the furnace, and Moses sprinkled it toward the sky.",
+      "bibleReference": "Exodus 9:8-10",
+      "answers": [
+        {
+          "text": "Dust of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Water from the river",
+          "isCorrect": false
+        },
+        {
+          "text": "Blood of a lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "Ashes of the furnace",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the ashes become on man and animal?",
+      "explanation": "The ashes became boils and blisters breaking out on man and on animal throughout Egypt.",
+      "bibleReference": "Exodus 9:9-10",
+      "answers": [
+        {
+          "text": "Boils and blisters",
+          "isCorrect": true
+        },
+        {
+          "text": "Lice",
+          "isCorrect": false
+        },
+        {
+          "text": "Leprosy as white as snow",
+          "isCorrect": false
+        },
+        {
+          "text": "Swarms of flies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why couldn't the magicians stand before Moses?",
+      "explanation": "The magicians couldn't stand before Moses because of the boils, for the boils were on them and on all the Egyptians.",
+      "bibleReference": "Exodus 9:11",
+      "answers": [
+        {
+          "text": "Because of the darkness",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Pharaoh had dismissed them",
+          "isCorrect": false
+        },
+        {
+          "text": "Because of the boils",
+          "isCorrect": true
+        },
+        {
+          "text": "Because they were afraid of the hail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Yahweh say he had made Pharaoh stand?",
+      "explanation": "Yahweh said, \"For this cause I have made you stand: to show you my power, and that my name may be declared throughout all the earth.\"",
+      "bibleReference": "Exodus 9:16",
+      "answers": [
+        {
+          "text": "To show his power and make his name known",
+          "isCorrect": true
+        },
+        {
+          "text": "To give Egypt time to gather the harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "To let Pharaoh build more cities",
+          "isCorrect": false
+        },
+        {
+          "text": "To test the faith of Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the servants of Pharaoh who feared Yahweh's word do before the hail?",
+      "explanation": "Those who feared Yahweh's word made their servants and their livestock flee into the houses.",
+      "bibleReference": "Exodus 9:20",
+      "answers": [
+        {
+          "text": "Left their servants and livestock in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "Fled with their families to Goshen",
+          "isCorrect": false
+        },
+        {
+          "text": "Begged Pharaoh to let Israel go",
+          "isCorrect": false
+        },
+        {
+          "text": "Brought their servants and livestock inside",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What came down together with the hail?",
+      "explanation": "Yahweh sent thunder and hail, and lightning flashed down to the earth, mixed with the hail.",
+      "bibleReference": "Exodus 9:23-24",
+      "answers": [
+        {
+          "text": "Frogs and lice",
+          "isCorrect": false
+        },
+        {
+          "text": "Thunder and lightning",
+          "isCorrect": true
+        },
+        {
+          "text": "Locusts",
+          "isCorrect": false
+        },
+        {
+          "text": "Fire and brimstone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was there no hail?",
+      "explanation": "Only in the land of Goshen, where the children of Israel were, there was no hail.",
+      "bibleReference": "Exodus 9:26",
+      "answers": [
+        {
+          "text": "In Pharaoh's palace",
+          "isCorrect": false
+        },
+        {
+          "text": "In the city of Raamses",
+          "isCorrect": false
+        },
+        {
+          "text": "In the land of Goshen",
+          "isCorrect": true
+        },
+        {
+          "text": "Along the river's bank",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh confess to Moses and Aaron during the hail?",
+      "explanation": "Pharaoh said, \"I have sinned this time. Yahweh is righteous, and I and my people are wicked.\"",
+      "bibleReference": "Exodus 9:27",
+      "answers": [
+        {
+          "text": "\"My magicians are greater than your God\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Yahweh is righteous, and I and my people are wicked\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"I will never let you go\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I have never sinned against Yahweh\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which crops were struck by the hail?",
+      "explanation": "The flax and the barley were struck, but the wheat and the spelt were not, for they had not grown up.",
+      "bibleReference": "Exodus 9:31-32",
+      "answers": [
+        {
+          "text": "The wheat and the spelt",
+          "isCorrect": false
+        },
+        {
+          "text": "The figs and the grapes",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the wheat",
+          "isCorrect": false
+        },
+        {
+          "text": "The flax and the barley",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Amos Bible Quiz - Chapter 6",
+  "description": "Ten questions on Amos 6: the woe on those at ease in Zion and Samaria, their ivory beds and bowls of wine, and the nation Yahweh raises up against Israel.",
+  "slug": "amos-bible-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "On which mountain does the opening woe place those who feel secure?",
+      "explanation": "The woe is spoken to those at ease in Zion and to those who are secure on the mountain of Samaria.",
+      "bibleReference": "Amos 6:1",
+      "answers": [
+        {
+          "text": "The mountain of Samaria",
+          "isCorrect": true
+        },
+        {
+          "text": "The mountain of Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain of Esau",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain of Bashan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Gath, which the hearers are told to go down to, is called the city of which people?",
+      "explanation": "They are told to go to Calneh, then to Hamath the great, and then down to Gath of the Philistines.",
+      "bibleReference": "Amos 6:2",
+      "answers": [
+        {
+          "text": "The Syrians",
+          "isCorrect": false
+        },
+        {
+          "text": "The Moabites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Philistines",
+          "isCorrect": true
+        },
+        {
+          "text": "The Ethiopians",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are the beds of the comfortable described in verse 4 made of?",
+      "explanation": "They lie on beds of ivory and stretch themselves out on their couches.",
+      "bibleReference": "Amos 6:4",
+      "answers": [
+        {
+          "text": "Cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ivory",
+          "isCorrect": true
+        },
+        {
+          "text": "Bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom are those who strum on the strings of a harp compared with?",
+      "explanation": "They strum on the harp and invent instruments of music for themselves, like David.",
+      "bibleReference": "Amos 6:5",
+      "answers": [
+        {
+          "text": "Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "Jubal",
+          "isCorrect": false
+        },
+        {
+          "text": "Asaph",
+          "isCorrect": false
+        },
+        {
+          "text": "David",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Those who drink wine in bowls and use the best oils are not grieved for what?",
+      "explanation": "They drink wine in bowls and anoint themselves with the best oils, but they are not grieved for the affliction of Joseph.",
+      "bibleReference": "Amos 6:6",
+      "answers": [
+        {
+          "text": "The affliction of Joseph",
+          "isCorrect": true
+        },
+        {
+          "text": "The ruin of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The poverty of the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The silence of the prophets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 7 say will happen to these people?",
+      "explanation": "They will go captive with the first who go captive, and the feasting and lounging will end.",
+      "bibleReference": "Amos 6:7",
+      "answers": [
+        {
+          "text": "They will be given still greater riches",
+          "isCorrect": false
+        },
+        {
+          "text": "They will go captive with the first to go captive",
+          "isCorrect": true
+        },
+        {
+          "text": "They will keep their feasts for many years",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be driven out to live in the fields",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh say he abhors?",
+      "explanation": "The Lord Yahweh has sworn by himself that he abhors the pride of Jacob and will deliver up the city with all that is in it.",
+      "bibleReference": "Amos 6:8",
+      "answers": [
+        {
+          "text": "The songs of Zion",
+          "isCorrect": false
+        },
+        {
+          "text": "The silence of Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "The wealth of Hamath",
+          "isCorrect": false
+        },
+        {
+          "text": "The pride of Jacob",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to verse 11, what happens when Yahweh gives the command?",
+      "explanation": "Yahweh commands, and the great house is smashed to pieces and the little house into bits.",
+      "bibleReference": "Amos 6:11",
+      "answers": [
+        {
+          "text": "The city gates are opened to strangers",
+          "isCorrect": false
+        },
+        {
+          "text": "The walls of the city are built up again",
+          "isCorrect": false
+        },
+        {
+          "text": "Great house and little house are broken to pieces",
+          "isCorrect": true
+        },
+        {
+          "text": "The houses are filled with grain and oil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What have the hearers turned justice into?",
+      "explanation": "They have turned justice into poison, and the fruit of righteousness into bitterness.",
+      "bibleReference": "Amos 6:12",
+      "answers": [
+        {
+          "text": "Poison",
+          "isCorrect": true
+        },
+        {
+          "text": "Dust",
+          "isCorrect": false
+        },
+        {
+          "text": "Water",
+          "isCorrect": false
+        },
+        {
+          "text": "Smoke",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Yahweh say he will raise up against the house of Israel?",
+      "explanation": "Yahweh, the God of Armies, says he will raise up a nation against them, which will afflict them from the entrance of Hamath to the brook of the Arabah.",
+      "bibleReference": "Amos 6:14",
+      "answers": [
+        {
+          "text": "A famine",
+          "isCorrect": false
+        },
+        {
+          "text": "A plague",
+          "isCorrect": false
+        },
+        {
+          "text": "A flood",
+          "isCorrect": false
+        },
+        {
+          "text": "A nation",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

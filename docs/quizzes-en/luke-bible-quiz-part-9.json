@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 9",
+  "description": "Ten questions on Luke 9: the twelve sent out, the five loaves and two fish, Peter's answer and the voice from the cloud.",
+  "slug": "luke-bible-quiz-part-9",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did he send the twelve out to do?",
+      "explanation": "He sent them out to preach God's Kingdom and to heal the sick.",
+      "bibleReference": "Luke 9:2",
+      "answers": [
+        {
+          "text": "Collect money for the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "Preach God's Kingdom and heal the sick",
+          "isCorrect": true
+        },
+        {
+          "text": "Build a synagogue in every village",
+          "isCorrect": false
+        },
+        {
+          "text": "Teach only the children of Israel to read the law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he tell the twelve to take along for their journey?",
+      "explanation": "He told them to take nothing for their journey - no staffs, no wallet, no bread and no money - and not to have two coats each.",
+      "bibleReference": "Luke 9:3",
+      "answers": [
+        {
+          "text": "Only bread and a staff",
+          "isCorrect": false
+        },
+        {
+          "text": "Money for lodging",
+          "isCorrect": false
+        },
+        {
+          "text": "Two coats each",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing at all",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Herod say he had done to John?",
+      "explanation": "Herod said, \"I beheaded John,\" and wondered who this was about whom he heard such things.",
+      "bibleReference": "Luke 9:9",
+      "answers": [
+        {
+          "text": "He had beheaded him",
+          "isCorrect": true
+        },
+        {
+          "text": "He had set him free",
+          "isCorrect": false
+        },
+        {
+          "text": "He had sent him to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "He had made him a steward",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What food did the disciples say they had for the crowd?",
+      "explanation": "The disciples said they had no more than five loaves and two fish.",
+      "bibleReference": "Luke 9:13",
+      "answers": [
+        {
+          "text": "Seven loaves and a few small fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve baskets of bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Five loaves and two fish",
+          "isCorrect": true
+        },
+        {
+          "text": "Two loaves and five fish",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much was left over after the crowd had eaten?",
+      "explanation": "They ate and were all filled, and they gathered up twelve baskets of broken pieces that were left over.",
+      "bibleReference": "Luke 9:17",
+      "answers": [
+        {
+          "text": "Seven baskets of broken pieces",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve baskets of broken pieces",
+          "isCorrect": true
+        },
+        {
+          "text": "Two baskets of bread and fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing at all was left over",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Peter answer when he was asked, \"But who do you say that I am?\"",
+      "explanation": "Peter answered, \"The Christ of God.\"",
+      "bibleReference": "Luke 9:20",
+      "answers": [
+        {
+          "text": "\"John the Baptizer\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Elijah\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The Christ of God\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"One of the old prophets\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were the two men talking with him on the mountain?",
+      "explanation": "The text says the two men who were talking with him were Moses and Elijah.",
+      "bibleReference": "Luke 9:30",
+      "answers": [
+        {
+          "text": "Peter and John",
+          "isCorrect": false
+        },
+        {
+          "text": "Abraham and Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonah and Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses and Elijah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the voice out of the cloud say?",
+      "explanation": "A voice came out of the cloud, saying, \"This is my beloved Son. Listen to him!\"",
+      "bibleReference": "Luke 9:35",
+      "answers": [
+        {
+          "text": "\"This is my beloved Son. Listen to him!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Fear not, for I am with you.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Blessed is he who comes in the name of the Lord!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Why do you call me good?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do when the disciples argued about which of them was the greatest?",
+      "explanation": "Jesus took a little child and set him by his side, and said that whoever is least among them all will be great.",
+      "bibleReference": "Luke 9:46-48",
+      "answers": [
+        {
+          "text": "He sent them to another village",
+          "isCorrect": false
+        },
+        {
+          "text": "He rebuked the crowd",
+          "isCorrect": false
+        },
+        {
+          "text": "He set a little child by his side",
+          "isCorrect": true
+        },
+        {
+          "text": "He named Peter the greatest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did he say about the person who puts his hand to the plow and looks back?",
+      "explanation": "He said that no one who puts his hand to the plow and looks back is fit for God's Kingdom.",
+      "bibleReference": "Luke 9:62",
+      "answers": [
+        {
+          "text": "He will plow a crooked furrow",
+          "isCorrect": false
+        },
+        {
+          "text": "He is not fit for God's Kingdom",
+          "isCorrect": true
+        },
+        {
+          "text": "He will be forgiven seven times",
+          "isCorrect": false
+        },
+        {
+          "text": "He must first say good-bye at home",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

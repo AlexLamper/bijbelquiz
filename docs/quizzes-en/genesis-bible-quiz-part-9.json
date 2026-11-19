@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 9",
+  "description": "Ten questions on Genesis 9: God's covenant with Noah, the sign of the rainbow, and Noah's vineyard.",
+  "slug": "genesis-bible-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did God now give Noah and his sons as food?",
+      "explanation": "God said every moving thing that lives would be food for them; as he gave them the green herb, he gave them everything.",
+      "bibleReference": "Genesis 9:3",
+      "answers": [
+        {
+          "text": "Every moving thing that lives",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the green herb",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the fish of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Only clean birds",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God say they must not eat?",
+      "explanation": "God said, \"But flesh with its life, that is, its blood, you shall not eat.\"",
+      "bibleReference": "Genesis 9:4",
+      "answers": [
+        {
+          "text": "Fish from the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Flesh with its blood",
+          "isCorrect": true
+        },
+        {
+          "text": "Fruit of the vine",
+          "isCorrect": false
+        },
+        {
+          "text": "Birds of the sky",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What reason does God give why the blood of whoever sheds man's blood will be shed?",
+      "explanation": "Whoever sheds man's blood, his blood will be shed by man, for God made man in his own image.",
+      "bibleReference": "Genesis 9:6",
+      "answers": [
+        {
+          "text": "Man was made from dust",
+          "isCorrect": false
+        },
+        {
+          "text": "The ground is cursed",
+          "isCorrect": false
+        },
+        {
+          "text": "God made man in his own image",
+          "isCorrect": true
+        },
+        {
+          "text": "Man rules over the animals",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did God promise in His covenant with Noah?",
+      "explanation": "God said all flesh would not be cut off any more by the waters of the flood; there would never again be a flood to destroy the earth.",
+      "bibleReference": "Genesis 9:11",
+      "answers": [
+        {
+          "text": "The ground would always give good crops",
+          "isCorrect": false
+        },
+        {
+          "text": "Noah's sons would never die",
+          "isCorrect": false
+        },
+        {
+          "text": "Rain would never fall again",
+          "isCorrect": false
+        },
+        {
+          "text": "Never again a flood to destroy the earth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did God set in the cloud as the sign of the covenant?",
+      "explanation": "God said, \"I set my rainbow in the cloud, and it will be a sign of a covenant between me and the earth.\"",
+      "bibleReference": "Genesis 9:13",
+      "answers": [
+        {
+          "text": "A bright star",
+          "isCorrect": false
+        },
+        {
+          "text": "His rainbow",
+          "isCorrect": true
+        },
+        {
+          "text": "A pillar of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A white dove",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Noah plant when he began to be a farmer?",
+      "explanation": "Noah began to be a farmer, and planted a vineyard.",
+      "bibleReference": "Genesis 9:20",
+      "answers": [
+        {
+          "text": "A vineyard",
+          "isCorrect": true
+        },
+        {
+          "text": "A garden of fig trees",
+          "isCorrect": false
+        },
+        {
+          "text": "An olive grove",
+          "isCorrect": false
+        },
+        {
+          "text": "A field of wheat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who saw the nakedness of his father and told his two brothers outside?",
+      "explanation": "Ham, the father of Canaan, saw the nakedness of his father, and told his two brothers outside.",
+      "bibleReference": "Genesis 9:22",
+      "answers": [
+        {
+          "text": "Shem",
+          "isCorrect": false
+        },
+        {
+          "text": "Japheth",
+          "isCorrect": false
+        },
+        {
+          "text": "Lot",
+          "isCorrect": false
+        },
+        {
+          "text": "Ham",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Shem and Japheth do?",
+      "explanation": "Shem and Japheth laid a garment on their shoulders, went in backwards, and covered their father without seeing his nakedness.",
+      "bibleReference": "Genesis 9:23",
+      "answers": [
+        {
+          "text": "Laughed at their father",
+          "isCorrect": false
+        },
+        {
+          "text": "Woke their father with water",
+          "isCorrect": false
+        },
+        {
+          "text": "Covered their father, walking in backwards",
+          "isCorrect": true
+        },
+        {
+          "text": "Left the tent and told everyone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Noah curse when he awoke from his wine?",
+      "explanation": "Noah said, \"Canaan is cursed. He will be a servant of servants to his brothers.\"",
+      "bibleReference": "Genesis 9:24-25",
+      "answers": [
+        {
+          "text": "Canaan",
+          "isCorrect": true
+        },
+        {
+          "text": "Ham",
+          "isCorrect": false
+        },
+        {
+          "text": "Japheth",
+          "isCorrect": false
+        },
+        {
+          "text": "Shem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many years did Noah live in all?",
+      "explanation": "Noah lived three hundred fifty years after the flood. All the days of Noah were nine hundred fifty years, and then he died.",
+      "bibleReference": "Genesis 9:28-29",
+      "answers": [
+        {
+          "text": "Six hundred years",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine hundred thirty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine hundred fifty years",
+          "isCorrect": true
+        },
+        {
+          "text": "Three hundred fifty years",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

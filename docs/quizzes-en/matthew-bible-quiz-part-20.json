@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 20",
+  "description": "Ten questions on Matthew 20: the laborers in the vineyard, the road to Jerusalem, the request of Zebedee's sons, and two blind men near Jericho.",
+  "slug": "matthew-bible-quiz-part-20",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the master of the household agree to pay the laborers for the day?",
+      "explanation": "He agreed with the laborers for a denarius a day and sent them into his vineyard.",
+      "bibleReference": "Matthew 20:1-2",
+      "answers": [
+        {
+          "text": "A measure of grain",
+          "isCorrect": false
+        },
+        {
+          "text": "A denarius",
+          "isCorrect": true
+        },
+        {
+          "text": "A share of the harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "Two talents",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what hour did the master go out and ask those standing idle why they stood there all day idle?",
+      "explanation": "About the eleventh hour he went out, found others standing idle, and asked why they stood there all day idle.",
+      "bibleReference": "Matthew 20:6",
+      "answers": [
+        {
+          "text": "About the third hour",
+          "isCorrect": false
+        },
+        {
+          "text": "About the sixth hour",
+          "isCorrect": false
+        },
+        {
+          "text": "About the ninth hour",
+          "isCorrect": false
+        },
+        {
+          "text": "About the eleventh hour",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In what order did the lord of the vineyard tell his manager to pay the laborers?",
+      "explanation": "When evening had come he told his manager to call the laborers and pay their wages, beginning from the last to the first.",
+      "bibleReference": "Matthew 20:8",
+      "answers": [
+        {
+          "text": "Beginning from the last to the first",
+          "isCorrect": true
+        },
+        {
+          "text": "Beginning with those hired first",
+          "isCorrect": false
+        },
+        {
+          "text": "All of them at the same moment",
+          "isCorrect": false
+        },
+        {
+          "text": "Only those who asked for payment",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the first laborers murmur against the master of the household?",
+      "explanation": "They complained that the last had spent only one hour and yet had been made equal to them, who had borne the burden of the day and the scorching heat.",
+      "bibleReference": "Matthew 20:11-12",
+      "answers": [
+        {
+          "text": "Because he paid them in the open marketplace",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he had hired strangers from another city",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he made those who worked one hour equal to them",
+          "isCorrect": true
+        },
+        {
+          "text": "Because he sent them home before evening came",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus end the parable of the laborers?",
+      "explanation": "He said that the last will be first and the first last, for many are called, but few are chosen.",
+      "bibleReference": "Matthew 20:16",
+      "answers": [
+        {
+          "text": "The vineyard will be given to others",
+          "isCorrect": false
+        },
+        {
+          "text": "The last will be first, and the first last",
+          "isCorrect": true
+        },
+        {
+          "text": "Each one will receive according to his hours",
+          "isCorrect": false
+        },
+        {
+          "text": "The idle will have no share at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Jesus say the Son of Man would be delivered as they went up to Jerusalem?",
+      "explanation": "He told the twelve that the Son of Man would be delivered to the chief priests and scribes, who would condemn him to death.",
+      "bibleReference": "Matthew 20:17-18",
+      "answers": [
+        {
+          "text": "To the chief priests and scribes",
+          "isCorrect": true
+        },
+        {
+          "text": "To the governor's soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "To the Pharisees and Herodians",
+          "isCorrect": false
+        },
+        {
+          "text": "To the elders of Galilee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the mother of the sons of Zebedee ask of Jesus?",
+      "explanation": "She asked that her two sons might sit, one on his right hand and one on his left hand, in his Kingdom.",
+      "bibleReference": "Matthew 20:20-21",
+      "answers": [
+        {
+          "text": "That he would heal her two sons of their sickness",
+          "isCorrect": false
+        },
+        {
+          "text": "That her sons might be sent out to preach",
+          "isCorrect": false
+        },
+        {
+          "text": "That her sons might stay with her in Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "That her two sons might sit at his right and left hand",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus ask the two brothers in reply?",
+      "explanation": "He said they did not know what they were asking, and asked whether they were able to drink the cup he was about to drink and be baptized with his baptism.",
+      "bibleReference": "Matthew 20:22",
+      "answers": [
+        {
+          "text": "Whether they had left everything behind",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether they could keep the commandments",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether they were able to drink the cup he was about to drink",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether they would stay awake with him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say whoever desires to become great must be?",
+      "explanation": "He said it should not be so among them: whoever desires to become great among them shall be their servant.",
+      "bibleReference": "Matthew 20:25-26",
+      "answers": [
+        {
+          "text": "A servant",
+          "isCorrect": true
+        },
+        {
+          "text": "A ruler over the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "A teacher in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "The first at the table",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the two blind men sitting by the road ask Jesus to do?",
+      "explanation": "When Jesus called them and asked what they wanted, they told him that their eyes might be opened.",
+      "bibleReference": "Matthew 20:32-33",
+      "answers": [
+        {
+          "text": "That he would stay with them",
+          "isCorrect": false
+        },
+        {
+          "text": "That their eyes might be opened",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would give them bread",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would lead them to Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

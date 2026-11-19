@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 1",
+  "description": "Ten questions on Exodus 1: Israel's growth in Egypt, the new king's oppression and the brave Hebrew midwives.",
+  "slug": "exodus-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How many souls came out of Jacob's body?",
+      "explanation": "All the souls who came out of Jacob's body were seventy, and Joseph was already in Egypt.",
+      "bibleReference": "Exodus 1:5",
+      "answers": [
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is said about the new king who arose over Egypt?",
+      "explanation": "A new king arose over Egypt who didn't know Joseph.",
+      "bibleReference": "Exodus 1:8",
+      "answers": [
+        {
+          "text": "He was Joseph's son",
+          "isCorrect": false
+        },
+        {
+          "text": "He didn't know Joseph",
+          "isCorrect": true
+        },
+        {
+          "text": "He was a Hebrew",
+          "isCorrect": false
+        },
+        {
+          "text": "He had been raised by Jacob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king fear the Israelites might do if war broke out?",
+      "explanation": "The king feared that in a war they would join Egypt's enemies, fight against them and escape out of the land.",
+      "bibleReference": "Exodus 1:10",
+      "answers": [
+        {
+          "text": "Join Egypt's enemies and fight against them",
+          "isCorrect": true
+        },
+        {
+          "text": "Burn Pharaoh's storage cities",
+          "isCorrect": false
+        },
+        {
+          "text": "Return to Canaan to crown a king",
+          "isCorrect": false
+        },
+        {
+          "text": "Refuse to pay taxes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which storage cities did the Israelites build for Pharaoh?",
+      "explanation": "Taskmasters were set over Israel, and they built storage cities for Pharaoh: Pithom and Raamses.",
+      "bibleReference": "Exodus 1:11",
+      "answers": [
+        {
+          "text": "Goshen and On",
+          "isCorrect": false
+        },
+        {
+          "text": "Sidon and Gaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Pithom and Raamses",
+          "isCorrect": true
+        },
+        {
+          "text": "Mamre and Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened the more the Egyptians afflicted the Israelites?",
+      "explanation": "The more they afflicted them, the more they multiplied and spread out, and the Egyptians began to dread them.",
+      "bibleReference": "Exodus 1:12",
+      "answers": [
+        {
+          "text": "They became fewer and weaker",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled into the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "They began to worship Egypt's gods",
+          "isCorrect": false
+        },
+        {
+          "text": "They multiplied and spread out even more",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what kind of hard work did the Egyptians make Israel's lives bitter?",
+      "explanation": "They made their lives bitter with hard service in mortar and brick, and in all kinds of service in the field.",
+      "bibleReference": "Exodus 1:14",
+      "answers": [
+        {
+          "text": "Mortar, brick and field work",
+          "isCorrect": true
+        },
+        {
+          "text": "Building ships on the river",
+          "isCorrect": false
+        },
+        {
+          "text": "Mining gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Guarding Pharaoh's borders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the names of the two Hebrew midwives?",
+      "explanation": "The king of Egypt spoke to the Hebrew midwives, one named Shiphrah and the other Puah.",
+      "bibleReference": "Exodus 1:15",
+      "answers": [
+        {
+          "text": "Leah and Rachel",
+          "isCorrect": false
+        },
+        {
+          "text": "Shiphrah and Puah",
+          "isCorrect": true
+        },
+        {
+          "text": "Zilpah and Bilhah",
+          "isCorrect": false
+        },
+        {
+          "text": "Miriam and Jochebed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the midwives not do what the king commanded?",
+      "explanation": "The midwives feared God and did not do what the king commanded, but saved the baby boys alive.",
+      "bibleReference": "Exodus 1:17",
+      "answers": [
+        {
+          "text": "They were paid by the Hebrews",
+          "isCorrect": false
+        },
+        {
+          "text": "They did not understand the order",
+          "isCorrect": false
+        },
+        {
+          "text": "They feared God",
+          "isCorrect": true
+        },
+        {
+          "text": "The king's order never reached them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What reason did the midwives give Pharaoh for the boys being saved?",
+      "explanation": "They said the Hebrew women are vigorous and give birth before the midwife comes to them.",
+      "bibleReference": "Exodus 1:19",
+      "answers": [
+        {
+          "text": "The Hebrew women hid their babies in the reeds",
+          "isCorrect": false
+        },
+        {
+          "text": "The Hebrew women give birth before the midwife arrives",
+          "isCorrect": true
+        },
+        {
+          "text": "The boys were born in the land of Goshen",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's soldiers had stopped them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pharaoh finally command all his people to do?",
+      "explanation": "Pharaoh commanded his people to cast every son born into the river and to let every daughter live.",
+      "bibleReference": "Exodus 1:22",
+      "answers": [
+        {
+          "text": "Send all Hebrew men into the army",
+          "isCorrect": false
+        },
+        {
+          "text": "Double the work of the Israelites",
+          "isCorrect": false
+        },
+        {
+          "text": "Drive the Israelites out of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Cast every newborn son into the river",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

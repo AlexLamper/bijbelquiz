@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 6",
+  "description": "Ten questions on Luke 6: the grain fields on the Sabbath, the withered hand, the choosing of the twelve, and the teaching on love, judging and the two builders.",
+  "slug": "luke-bible-quiz-part-6",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the disciples do in the grain fields that some of the Pharisees said was not lawful on the Sabbath?",
+      "explanation": "His disciples plucked the heads of grain and ate, rubbing them in their hands, and some of the Pharisees asked why they did what is not lawful on the Sabbath day.",
+      "bibleReference": "Luke 6:1-2",
+      "answers": [
+        {
+          "text": "They plucked heads of grain and ate them",
+          "isCorrect": true
+        },
+        {
+          "text": "They carried their cloaks through the field",
+          "isCorrect": false
+        },
+        {
+          "text": "They lit a fire in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "They worked in the field for wages",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the Son of Man and the Sabbath?",
+      "explanation": "He said to them, \"The Son of Man is lord of the Sabbath.\"",
+      "bibleReference": "Luke 6:5",
+      "answers": [
+        {
+          "text": "That the Sabbath was made for the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Sabbath may not be kept in the fields",
+          "isCorrect": false
+        },
+        {
+          "text": "That the Son of Man is lord of the Sabbath",
+          "isCorrect": true
+        },
+        {
+          "text": "That David broke the Sabbath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was wrong with the man in the synagogue whom the scribes and Pharisees watched?",
+      "explanation": "There was a man there whose right hand was withered, and they watched to see whether Jesus would heal him on the Sabbath.",
+      "bibleReference": "Luke 6:6-7",
+      "answers": [
+        {
+          "text": "He was blind in both eyes",
+          "isCorrect": false
+        },
+        {
+          "text": "His right hand was withered",
+          "isCorrect": true
+        },
+        {
+          "text": "He was paralyzed from birth",
+          "isCorrect": false
+        },
+        {
+          "text": "His right foot was withered",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do on the mountain in those days before he chose the twelve?",
+      "explanation": "He went out to the mountain to pray, and he continued all night in prayer to God.",
+      "bibleReference": "Luke 6:12",
+      "answers": [
+        {
+          "text": "He taught the multitudes there",
+          "isCorrect": false
+        },
+        {
+          "text": "He healed the sick who came to him",
+          "isCorrect": false
+        },
+        {
+          "text": "He fasted and ate nothing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "He continued all night in prayer to God",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus name the twelve he chose from among his disciples?",
+      "explanation": "When it was day he called his disciples, and from them he chose twelve, whom he also named apostles.",
+      "bibleReference": "Luke 6:13",
+      "answers": [
+        {
+          "text": "Teachers",
+          "isCorrect": false
+        },
+        {
+          "text": "Elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Apostles",
+          "isCorrect": true
+        },
+        {
+          "text": "Prophets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about those who weep now?",
+      "explanation": "He said, \"Blessed are you who weep now, for you will laugh.\"",
+      "bibleReference": "Luke 6:21",
+      "answers": [
+        {
+          "text": "That they will laugh",
+          "isCorrect": true
+        },
+        {
+          "text": "That they will be comforted by the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "That they will mourn no more in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "That they will be called children of the Most High",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell those who hear to do to their enemies?",
+      "explanation": "He said, \"Love your enemies, do good to those who hate you, bless those who curse you, and pray for those who mistreat you.\"",
+      "bibleReference": "Luke 6:27-28",
+      "answers": [
+        {
+          "text": "Leave them to the judgment of God alone",
+          "isCorrect": false
+        },
+        {
+          "text": "Avoid them and say nothing at all to them",
+          "isCorrect": false
+        },
+        {
+          "text": "Warn them of the wrath that is to come",
+          "isCorrect": false
+        },
+        {
+          "text": "Love them, do good to them, bless them and pray for them",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Jesus say you should treat people?",
+      "explanation": "He said, \"As you would like people to do to you, do exactly so to them.\"",
+      "bibleReference": "Luke 6:31",
+      "answers": [
+        {
+          "text": "Repay each one just as he has done to you",
+          "isCorrect": false
+        },
+        {
+          "text": "As you would like people to do to you, do exactly so to them",
+          "isCorrect": true
+        },
+        {
+          "text": "Give only to those who are able to repay you",
+          "isCorrect": false
+        },
+        {
+          "text": "Honor those who always speak well of you",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say you must do before removing the speck of chaff from your brother's eye?",
+      "explanation": "He said to first remove the beam from your own eye, and then you can see clearly to remove the speck of chaff from your brother's eye.",
+      "bibleReference": "Luke 6:41-42",
+      "answers": [
+        {
+          "text": "Ask your brother for permission first",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring him to the teacher for judgment",
+          "isCorrect": false
+        },
+        {
+          "text": "First remove the beam from your own eye",
+          "isCorrect": true
+        },
+        {
+          "text": "Say nothing to him about it at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Jesus compare the one who comes to him, hears his words and does them?",
+      "explanation": "He said such a person is like a man building a house who dug and went deep and laid a foundation on the rock, which the flood could not shake.",
+      "bibleReference": "Luke 6:47-48",
+      "answers": [
+        {
+          "text": "To a man who laid a foundation on the rock",
+          "isCorrect": true
+        },
+        {
+          "text": "To a man who built on the earth without a foundation",
+          "isCorrect": false
+        },
+        {
+          "text": "To a good tree that produces rotten fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "To a disciple who is above his teacher",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

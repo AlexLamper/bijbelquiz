@@ -1,0 +1,242 @@
+{
+  "title": "Hosea Bible Quiz - Chapter 12",
+  "description": "Ten questions on Hosea 12: Ephraim feeding on wind, Jacob at Bethel, dishonest scales and a call to turn back.",
+  "slug": "hosea-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What does verse 1 say Ephraim feeds on?",
+      "explanation": "Ephraim feeds on wind and chases the east wind, and continually multiplies lies and desolation.",
+      "bibleReference": "Hosea 12:1",
+      "answers": [
+        {
+          "text": "Wind",
+          "isCorrect": true
+        },
+        {
+          "text": "Honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread from heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The fruit of the vine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With whom does Yahweh have a controversy, according to verse 2?",
+      "explanation": "Yahweh has a controversy with Judah and will punish Jacob according to his ways.",
+      "bibleReference": "Hosea 12:2",
+      "answers": [
+        {
+          "text": "Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "Nineveh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 3 say Jacob did in the womb?",
+      "explanation": "In the womb he took his brother by the heel, and in his manhood he contended with God.",
+      "bibleReference": "Hosea 12:2-3",
+      "answers": [
+        {
+          "text": "He contended with the nations",
+          "isCorrect": false
+        },
+        {
+          "text": "He cried out for a blessing",
+          "isCorrect": false
+        },
+        {
+          "text": "He took his brother by the heel",
+          "isCorrect": true
+        },
+        {
+          "text": "He tended flocks and herds",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 4, where did he find him after struggling with the angel?",
+      "explanation": "He struggled with the angel and prevailed, he wept and made supplication, and he found him at Bethel.",
+      "bibleReference": "Hosea 12:4",
+      "answers": [
+        {
+          "text": "At Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "In Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "In the country of Aram",
+          "isCorrect": false
+        },
+        {
+          "text": "At Bethel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does verse 6 tell them to keep?",
+      "explanation": "Verse 6 says to turn to your God, keep kindness and justice, and wait continually for your God.",
+      "bibleReference": "Hosea 12:6",
+      "answers": [
+        {
+          "text": "Kindness and justice",
+          "isCorrect": true
+        },
+        {
+          "text": "Fasts and feasts",
+          "isCorrect": false
+        },
+        {
+          "text": "Tithes and offerings",
+          "isCorrect": false
+        },
+        {
+          "text": "Silence and peace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does a merchant have in his hand, according to verse 7?",
+      "explanation": "A merchant has dishonest scales in his hand, and he loves to defraud.",
+      "bibleReference": "Hosea 12:7",
+      "answers": [
+        {
+          "text": "A sword",
+          "isCorrect": false
+        },
+        {
+          "text": "A measure of grain",
+          "isCorrect": false
+        },
+        {
+          "text": "Dishonest scales",
+          "isCorrect": true
+        },
+        {
+          "text": "A bag of silver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ephraim say about himself in verse 8?",
+      "explanation": "Ephraim said that he had become rich and found himself wealth, and that in all his wealth no sinful iniquity would be found in him.",
+      "bibleReference": "Hosea 12:8",
+      "answers": [
+        {
+          "text": "That he was poor and oppressed",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had become rich and found wealth",
+          "isCorrect": true
+        },
+        {
+          "text": "That he had kept the whole law",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would turn back to God",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does God say he will make them dwell in again?",
+      "explanation": "God, who is Yahweh their God from the land of Egypt, says he will again make them dwell in tents, as in the days of the solemn feast.",
+      "bibleReference": "Hosea 12:9",
+      "answers": [
+        {
+          "text": "Cities of stone",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Houses of cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Tents",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "By whom did Yahweh bring Israel up out of Egypt, according to verse 13?",
+      "explanation": "By a prophet Yahweh brought Israel up out of Egypt, and by a prophet he was preserved.",
+      "bibleReference": "Hosea 12:13",
+      "answers": [
+        {
+          "text": "By a prophet",
+          "isCorrect": true
+        },
+        {
+          "text": "By an angel",
+          "isCorrect": false
+        },
+        {
+          "text": "By a priest",
+          "isCorrect": false
+        },
+        {
+          "text": "By a king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will his Lord repay, according to verse 14?",
+      "explanation": "Ephraim has bitterly provoked anger, so his blood will be left on him and his Lord will repay his contempt.",
+      "bibleReference": "Hosea 12:14",
+      "answers": [
+        {
+          "text": "His tithes",
+          "isCorrect": false
+        },
+        {
+          "text": "His contempt",
+          "isCorrect": true
+        },
+        {
+          "text": "His vows",
+          "isCorrect": false
+        },
+        {
+          "text": "His debts",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

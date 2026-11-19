@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Jueces 4: Débora y Barac contra Sísara, y lo que hizo Jael en su tienda.",
+  "slug": "judges-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaba el capitán del ejército de Jabín, rey de Canaán?",
+      "explanation": "El texto dice que Jehová los vendió en mano de Jabín rey de Canaán, que reinó en Asor, y que el capitán de su ejército se llamaba Sísara, el cual habitaba en Haroseth de las Gentes.",
+      "bibleReference": "Jueces 4:2",
+      "answers": [
+        {
+          "text": "Eglón",
+          "isCorrect": false
+        },
+        {
+          "text": "Chusan-risathaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Sísara",
+          "isCorrect": true
+        },
+        {
+          "text": "Abinoam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos carros herrados tenía, y cuántos años había afligido a Israel?",
+      "explanation": "El texto dice que tenía nuevecientos carros herrados y que había afligido en gran manera a los hijos de Israel por veinte años.",
+      "bibleReference": "Jueces 4:3",
+      "answers": [
+        {
+          "text": "Nuevecientos carros y veinte años",
+          "isCorrect": true
+        },
+        {
+          "text": "Seiscientos carros y ocho años",
+          "isCorrect": false
+        },
+        {
+          "text": "Nuevecientos carros y cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos carros y diez y ocho años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién gobernaba a Israel en aquel tiempo?",
+      "explanation": "El texto dice que gobernaba en aquel tiempo a Israel una mujer, Débora, profetisa, mujer de Lapidoth.",
+      "bibleReference": "Jueces 4:4",
+      "answers": [
+        {
+          "text": "Jael, mujer de Heber Cineo",
+          "isCorrect": false
+        },
+        {
+          "text": "Axa, hija de Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "La madre de Sísara",
+          "isCorrect": false
+        },
+        {
+          "text": "Débora, la profetisa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde habitaba ella cuando los hijos de Israel subían a juicio?",
+      "explanation": "El texto dice que Débora habitaba debajo de una palma entre Rama y Beth-el, en el monte de Ephraim, y que los hijos de Israel subían a ella a juicio.",
+      "bibleReference": "Jueces 4:5",
+      "answers": [
+        {
+          "text": "En la puerta de Cedes de Nephtalí",
+          "isCorrect": false
+        },
+        {
+          "text": "Debajo de una palma entre Rama y Beth-el",
+          "isCorrect": true
+        },
+        {
+          "text": "En el monte de Tabor, junto a Zabulón",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al arroyo de Cisón, en el valle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién mandó llamar, y de qué ciudad?",
+      "explanation": "El texto dice que ella envió a llamar a Barac hijo de Abinoam, de Cedes de Nephtalí.",
+      "bibleReference": "Jueces 4:6",
+      "answers": [
+        {
+          "text": "A Othoniel hijo de Cenez, de Debir",
+          "isCorrect": false
+        },
+        {
+          "text": "A Heber Cineo, del valle de Zaananim",
+          "isCorrect": false
+        },
+        {
+          "text": "A Barac hijo de Abinoam, de Cedes de Nephtalí",
+          "isCorrect": true
+        },
+        {
+          "text": "A Samgar hijo de Anat, de Haroseth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué monte debía subir Barac con diez mil hombres de Nephtalí y de Zabulón?",
+      "explanation": "El mandato que ella le transmitió era ir y hacer gente en el monte de Tabor, y tomar consigo diez mil hombres de los hijos de Nephtalí y de los hijos de Zabulón.",
+      "bibleReference": "Jueces 4:6",
+      "answers": [
+        {
+          "text": "Al monte de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de Seir",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de Tabor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Barac cuando se le dio ese mandato?",
+      "explanation": "Barac respondió que si ella iba con él, él iría, pero que si no iba con él, no iría.",
+      "bibleReference": "Jueces 4:8",
+      "answers": [
+        {
+          "text": "Que iría solo si ella iba con él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que iría en seguida con su gente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que primero consultaría a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no peleaba contra carros herrados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo ella que pasaría con Sísara?",
+      "explanation": "Ella dijo que iría con él, mas que su honra no estaría en ese camino, porque en mano de mujer vendería Jehová a Sísara.",
+      "bibleReference": "Jueces 4:9",
+      "answers": [
+        {
+          "text": "Que huiría a Haroseth y escaparía",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová lo vendería en mano de mujer",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Barac lo mataría en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que moriría en el arroyo de Cisón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dio Jael a Sísara cuando él le pidió agua?",
+      "explanation": "El texto dice que él le pidió una poca de agua porque tenía sed, y que ella abrió un odre de leche, le dio de beber y lo volvió a cubrir.",
+      "bibleReference": "Jueces 4:19",
+      "answers": [
+        {
+          "text": "Agua de la fuente",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino de su tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Manteca en un tazón",
+          "isCorrect": false
+        },
+        {
+          "text": "Leche de un odre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué mató Jael a Sísara mientras él dormía?",
+      "explanation": "El texto dice que Jael tomó una estaca de la tienda, puso un mazo en su mano, vino a él calladamente y le metió la estaca por las sienes, clavándolo en la tierra.",
+      "bibleReference": "Jueces 4:21",
+      "answers": [
+        {
+          "text": "Con una estaca de la tienda y un mazo",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la espada de Barac",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un puñal de dos filos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una aguijada de bueyes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

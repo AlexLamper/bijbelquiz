@@ -64,11 +64,6 @@ for (const file of ['.env', '.env.local']) {
 
 const LANG = process.argv.find((a) => a.startsWith('--lang='))?.slice(7) ?? 'nl';
 const LANG_EN = LANG !== 'nl'; // "not Dutch": category slugs, own library folder, `lang` on the document
-// Spanish has no verified Bible text yet (see docs/quizzes-es), so nothing may be imported for it.
-if (LANG === 'es') {
-  console.error('Spanish quizzes cannot be imported until a verified Spanish Bible text exists.');
-  process.exit(2);
-}
 const QUIZ_DIR = path.resolve(process.cwd(), LANG === 'nl' ? 'docs/quizzes' : `docs/quizzes-${LANG}`);
 const APPLY = process.argv.includes('--apply');
 

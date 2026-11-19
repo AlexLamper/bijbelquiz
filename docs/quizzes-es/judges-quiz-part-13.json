@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Jueces 13: el ángel de Jehová anuncia a Manoa y a su mujer el nacimiento de Samsón.",
+  "slug": "judges-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por cuántos años entregó Jehová a los hijos de Israel en mano de los Filisteos?",
+      "explanation": "El texto dice que Jehová los entregó en mano de los Filisteos por cuarenta años, porque volvieron a hacer lo malo.",
+      "bibleReference": "Jueces 13:1",
+      "answers": [
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Dieciocho años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba el hombre de Sora, de la tribu de Dan, cuya mujer era estéril?",
+      "explanation": "El texto dice que había un hombre de Sora, de la tribu de Dan, que se llamaba Manoa, y su mujer era estéril.",
+      "bibleReference": "Jueces 13:2",
+      "answers": [
+        {
+          "text": "Michâs",
+          "isCorrect": false
+        },
+        {
+          "text": "Joas",
+          "isCorrect": false
+        },
+        {
+          "text": "Manoa",
+          "isCorrect": true
+        },
+        {
+          "text": "Abdón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le anunció el ángel de Jehová a la mujer estéril?",
+      "explanation": "El ángel le dijo que, aunque era estéril y no había parido, concebiría y pariría un hijo.",
+      "bibleReference": "Jueces 13:3",
+      "answers": [
+        {
+          "text": "Que concebiría y pariría un hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que su marido sería juez de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que saldrían de Sora",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se mudarían a Esthaol",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó el ángel que no hiciera?",
+      "explanation": "Le mandó que no bebiera vino ni sidra, ni comiera cosa inmunda.",
+      "bibleReference": "Jueces 13:4",
+      "answers": [
+        {
+          "text": "No salir de la ciudad de Sora",
+          "isCorrect": false
+        },
+        {
+          "text": "No cortarse el cabello ni las uñas",
+          "isCorrect": false
+        },
+        {
+          "text": "No contar a nadie lo que había oído",
+          "isCorrect": false
+        },
+        {
+          "text": "No beber vino ni sidra, ni comer cosa inmunda",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el ángel que no subiría sobre la cabeza del niño?",
+      "explanation": "Dijo que no subiría navaja sobre su cabeza, porque aquel niño sería Nazareo a Dios desde el vientre.",
+      "bibleReference": "Jueces 13:5",
+      "answers": [
+        {
+          "text": "Corona",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Navaja",
+          "isCorrect": true
+        },
+        {
+          "text": "Ceniza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describió la mujer a su marido el varón que vino a ella?",
+      "explanation": "Dijo que un varón de Dios vino a ella, cuyo aspecto era como el aspecto de un ángel de Dios, terrible en gran manera.",
+      "bibleReference": "Jueces 13:6",
+      "answers": [
+        {
+          "text": "Su aspecto era como el de un ángel de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Era como un mozo de Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Era como un varón de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevaba un ephod de sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Manoa en su oración a Jehová?",
+      "explanation": "Manoa pidió que aquel varón de Dios que había enviado volviera a venir y les enseñara lo que debían hacer con el niño que iba a nacer.",
+      "bibleReference": "Jueces 13:8",
+      "answers": [
+        {
+          "text": "Que su mujer concibiera un hijo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le diera una señal con un vellón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que librara a Israel de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el varón de Dios volviera a enseñarles",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el ángel de Jehová cuando Manoa quiso detenerlo y aderezar un cabrito?",
+      "explanation": "El ángel respondió que no comería de su pan, y que si quería hacer holocausto lo sacrificara a Jehová.",
+      "bibleReference": "Jueces 13:16",
+      "answers": [
+        {
+          "text": "Que comería solamente pan sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no comería de su pan y que sacrificara a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volvería al día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardara el cabrito para el niño",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el ángel de Jehová a vista de Manoa y de su mujer junto al altar?",
+      "explanation": "Mientras la llama subía del altar hacia el cielo, el ángel de Jehová subió en la llama del altar, y ellos se postraron en tierra.",
+      "bibleReference": "Jueces 13:20",
+      "answers": [
+        {
+          "text": "Subió en la llama del altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Desapareció detrás de la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Tocó la carne con un bordón",
+          "isCorrect": false
+        },
+        {
+          "text": "Se sentó debajo del alcornoque",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso la mujer al hijo que parió?",
+      "explanation": "La mujer parió un hijo y lo llamó Samsón; el niño creció y Jehová lo bendijo.",
+      "bibleReference": "Jueces 13:24",
+      "answers": [
+        {
+          "text": "Jephté",
+          "isCorrect": false
+        },
+        {
+          "text": "Samsón",
+          "isCorrect": true
+        },
+        {
+          "text": "Abimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Manoa",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

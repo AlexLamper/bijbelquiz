@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 3",
+  "description": "Ten questions on Mark 3: the man with the withered hand, the choosing of the twelve, the charge that he had Beelzebul and his words about his true family.",
+  "slug": "mark-bible-quiz-part-3",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What was wrong with the man in the synagogue?",
+      "explanation": "Mark 3:1 says that when he entered the synagogue again, there was a man there who had his hand withered.",
+      "bibleReference": "Mark 3:1",
+      "answers": [
+        {
+          "text": "He was blind from birth",
+          "isCorrect": false
+        },
+        {
+          "text": "He could not hear or speak",
+          "isCorrect": false
+        },
+        {
+          "text": "He was lame in both feet",
+          "isCorrect": false
+        },
+        {
+          "text": "His hand was withered",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened when the man stretched out his hand?",
+      "explanation": "He stretched it out, and his hand was restored as healthy as the other.",
+      "bibleReference": "Mark 3:5",
+      "answers": [
+        {
+          "text": "It stayed withered until the next day",
+          "isCorrect": false
+        },
+        {
+          "text": "It was restored as healthy as the other",
+          "isCorrect": true
+        },
+        {
+          "text": "It was wrapped in cloth and healed slowly",
+          "isCorrect": false
+        },
+        {
+          "text": "He could move only his fingers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With whom did the Pharisees conspire against Jesus?",
+      "explanation": "The Pharisees went out and immediately conspired with the Herodians against him, how they might destroy him.",
+      "bibleReference": "Mark 3:6",
+      "answers": [
+        {
+          "text": "The Herodians",
+          "isCorrect": true
+        },
+        {
+          "text": "The Sadducees",
+          "isCorrect": false
+        },
+        {
+          "text": "The soldiers of the governor",
+          "isCorrect": false
+        },
+        {
+          "text": "The rulers of Tyre and Sidon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the unclean spirits cry out whenever they saw him?",
+      "explanation": "The unclean spirits fell down before him and cried, \"You are the Son of God!\"",
+      "bibleReference": "Mark 3:11",
+      "answers": [
+        {
+          "text": "\"You are the king of Israel!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are the prophet of Galilee!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are the Son of God!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"You are the son of David!\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Jesus appoint the twelve?",
+      "explanation": "He appointed twelve, that they might be with him and that he might send them out to preach, with authority to heal sicknesses and cast out demons.",
+      "bibleReference": "Mark 3:14-15",
+      "answers": [
+        {
+          "text": "To guard him from the crowds",
+          "isCorrect": false
+        },
+        {
+          "text": "To collect money for the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "To keep the tradition of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "To be with him and to be sent out to preach",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What name did Jesus give to James and John?",
+      "explanation": "He called them Boanerges, which means Sons of Thunder.",
+      "bibleReference": "Mark 3:17",
+      "answers": [
+        {
+          "text": "Cephas",
+          "isCorrect": false
+        },
+        {
+          "text": "Boanerges",
+          "isCorrect": true
+        },
+        {
+          "text": "Sons of Light",
+          "isCorrect": false
+        },
+        {
+          "text": "Didymus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did his friends say when they went out to seize him?",
+      "explanation": "His friends went out to seize him, for they said, \"He is insane.\"",
+      "bibleReference": "Mark 3:21",
+      "answers": [
+        {
+          "text": "\"He is a prophet.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He is in danger.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He is insane.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"He is our brother.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the scribes who came down from Jerusalem say about him?",
+      "explanation": "They said, \"He has Beelzebul,\" and that he casts out the demons by the prince of the demons.",
+      "bibleReference": "Mark 3:22",
+      "answers": [
+        {
+          "text": "That he casts out demons by the prince of the demons",
+          "isCorrect": true
+        },
+        {
+          "text": "That he learned his teaching in Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was John risen from the dead",
+          "isCorrect": false
+        },
+        {
+          "text": "That he taught against Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about a house divided against itself?",
+      "explanation": "He said that if a house is divided against itself, that house cannot stand.",
+      "bibleReference": "Mark 3:25",
+      "answers": [
+        {
+          "text": "It will be plundered by Satan",
+          "isCorrect": false
+        },
+        {
+          "text": "It cannot stand",
+          "isCorrect": true
+        },
+        {
+          "text": "It will be forgiven everything",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be built up again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus call his brother, sister and mother?",
+      "explanation": "Looking around at those who sat around him, he said that whoever does the will of God is his brother, sister and mother.",
+      "bibleReference": "Mark 3:34-35",
+      "answers": [
+        {
+          "text": "Those who were born in his own country",
+          "isCorrect": false
+        },
+        {
+          "text": "The twelve he had just appointed",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who had been healed by him",
+          "isCorrect": false
+        },
+        {
+          "text": "Whoever does the will of God",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

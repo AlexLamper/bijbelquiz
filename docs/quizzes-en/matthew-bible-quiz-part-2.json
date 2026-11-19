@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 2",
+  "description": "Ten questions on Matthew 2: the wise men and the star, Herod's anger, the flight into Egypt, and the return to Nazareth.",
+  "slug": "matthew-bible-quiz-part-2",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who came to Jerusalem in the days of King Herod, after Jesus was born in Bethlehem?",
+      "explanation": "Matthew 2:1 says that when Jesus was born in Bethlehem of Judea in the days of King Herod, wise men from the east came to Jerusalem.",
+      "bibleReference": "Matthew 2:1",
+      "answers": [
+        {
+          "text": "Shepherds from the fields",
+          "isCorrect": false
+        },
+        {
+          "text": "Wise men from the east",
+          "isCorrect": true
+        },
+        {
+          "text": "Priests from Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Soldiers from Rome",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the wise men say they had seen?",
+      "explanation": "Matthew 2:2 says they asked where he is who is born King of the Jews, for they saw his star in the east and had come to worship him.",
+      "bibleReference": "Matthew 2:2",
+      "answers": [
+        {
+          "text": "An angel in a dream",
+          "isCorrect": false
+        },
+        {
+          "text": "A pillar of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A light over the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "His star in the east",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did King Herod react when he heard it?",
+      "explanation": "Matthew 2:3 says that when King Herod heard it, he was troubled, and all Jerusalem with him.",
+      "bibleReference": "Matthew 2:3",
+      "answers": [
+        {
+          "text": "He was troubled, and all Jerusalem with him",
+          "isCorrect": true
+        },
+        {
+          "text": "He rejoiced greatly at the news",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent gifts to Bethlehem at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He said nothing at all to anyone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the chief priests and scribes say the Christ would be born?",
+      "explanation": "Matthew 2:5 says they told Herod: In Bethlehem of Judea, for this is written through the prophet.",
+      "bibleReference": "Matthew 2:5",
+      "answers": [
+        {
+          "text": "In Jerusalem itself",
+          "isCorrect": false
+        },
+        {
+          "text": "In Nazareth of Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "In Bethlehem of Judea",
+          "isCorrect": true
+        },
+        {
+          "text": "In Ramah of Benjamin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Herod tell the wise men to do when they had found the young child?",
+      "explanation": "Matthew 2:8 says he sent them to Bethlehem and told them to bring him word when they found the child, so that he also might come and worship him.",
+      "bibleReference": "Matthew 2:8",
+      "answers": [
+        {
+          "text": "Take the child up to the temple in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring Herod word, so that he also might come and worship",
+          "isCorrect": true
+        },
+        {
+          "text": "Leave their gifts with Herod in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Say nothing to anyone in Bethlehem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What gifts did the wise men offer the young child?",
+      "explanation": "Matthew 2:11 says they opened their treasures and offered him gifts: gold, frankincense, and myrrh.",
+      "bibleReference": "Matthew 2:11",
+      "answers": [
+        {
+          "text": "Silver, oil and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread, salt and incense",
+          "isCorrect": false
+        },
+        {
+          "text": "Spices, linen and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Gold, frankincense and myrrh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did the wise men go back to their own country another way?",
+      "explanation": "Matthew 2:12 says they were warned in a dream not to return to Herod, so they went back to their own country another way.",
+      "bibleReference": "Matthew 2:12",
+      "answers": [
+        {
+          "text": "They were warned in a dream not to return to Herod",
+          "isCorrect": true
+        },
+        {
+          "text": "The road back to Jerusalem had been closed",
+          "isCorrect": false
+        },
+        {
+          "text": "Their camels had been taken from them",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph had asked them to go another way",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the angel of the Lord tell Joseph to do in a dream?",
+      "explanation": "Matthew 2:13 says the angel told Joseph to take the young child and his mother and flee into Egypt, and stay there until he was told, because Herod would seek the child to destroy him.",
+      "bibleReference": "Matthew 2:13",
+      "answers": [
+        {
+          "text": "Go up to Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Stay in Bethlehem until the child was grown",
+          "isCorrect": false
+        },
+        {
+          "text": "Flee into Egypt with the child and his mother",
+          "isCorrect": true
+        },
+        {
+          "text": "Hide in the wilderness of Judea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which children did Herod kill in Bethlehem and the surrounding countryside?",
+      "explanation": "Matthew 2:16 says that Herod, exceedingly angry, killed all the male children who were in Bethlehem and the surrounding countryside, from two years old and under.",
+      "bibleReference": "Matthew 2:16",
+      "answers": [
+        {
+          "text": "The male children from two years old and under",
+          "isCorrect": true
+        },
+        {
+          "text": "All the firstborn sons of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Every child in the city of Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "The sons of the priests and scribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which city did Joseph come and live after he withdrew into Galilee?",
+      "explanation": "Matthew 2:22-23 says that, warned in a dream, he withdrew into the region of Galilee and came and lived in a city called Nazareth.",
+      "bibleReference": "Matthew 2:22-23",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Nazareth",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

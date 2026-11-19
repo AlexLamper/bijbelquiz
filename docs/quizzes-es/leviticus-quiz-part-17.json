@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Levítico 17: la obligación de traer los sacrificios a la puerta del tabernáculo y la prohibición de comer sangre.",
+  "slug": "leviticus-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le pasaba al que degollaba buey, cordero o cabra y no lo traía a la puerta del tabernáculo del testimonio?",
+      "explanation": "Le era imputada sangre, pues sangre derramó, y ese varón era cortado de entre su pueblo.",
+      "bibleReference": "Levítico 17:3-4",
+      "answers": [
+        {
+          "text": "Debía lavar sus vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Era cortado de entre su pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Pagaba el doble al sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba inmundo hasta la tarde",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clase de sacrificios debían ofrecer a Jehová a la puerta del tabernáculo del testimonio?",
+      "explanation": "El texto manda que los hijos de Israel traigan al sacerdote, a la puerta del tabernáculo del testimonio, los sacrificios que sacrificaban sobre la haz del campo, y que sacrifiquen sacrificios de paces a Jehová.",
+      "bibleReference": "Levítico 17:5",
+      "answers": [
+        {
+          "text": "Sacrificios de paces a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Holocaustos de aves solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrendas de flor de harina seca",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificios en honor de los demonios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el sacerdote con la sangre y con el sebo?",
+      "explanation": "El sacerdote esparcía la sangre sobre el altar de Jehová y quemaba el sebo en olor de suavidad a Jehová.",
+      "bibleReference": "Levítico 17:6",
+      "answers": [
+        {
+          "text": "Llevaba la sangre del velo adentro",
+          "isCorrect": false
+        },
+        {
+          "text": "Quemaba la sangre con el sebo",
+          "isCorrect": false
+        },
+        {
+          "text": "Enterraba la sangre y comía el sebo",
+          "isCorrect": false
+        },
+        {
+          "text": "Esparcía la sangre sobre el altar y quemaba el sebo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes no debían sacrificar nunca más sus sacrificios?",
+      "explanation": "No debían sacrificar nunca más sus sacrificios a los demonios, tras de los cuales habían fornicado.",
+      "bibleReference": "Levítico 17:7",
+      "answers": [
+        {
+          "text": "A los reyes de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los demonios",
+          "isCorrect": true
+        },
+        {
+          "text": "A los animales del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes alcanzaba también la ley de traer el holocausto o sacrificio al tabernáculo?",
+      "explanation": "Alcanzaba a cualquier varón de la casa de Israel y también a los extranjeros que peregrinaban entre ellos.",
+      "bibleReference": "Levítico 17:8-9",
+      "answers": [
+        {
+          "text": "A los extranjeros que peregrinaban entre ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo a los sacerdotes hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo a los ancianos de la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "A nadie más que a los varones de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría contra la persona que comiera sangre?",
+      "explanation": "Jehová dijo que pondría su rostro contra la persona que comiera sangre y la cortaría de entre su pueblo.",
+      "bibleReference": "Levítico 17:10",
+      "answers": [
+        {
+          "text": "La haría pagar una ofrenda por la culpa",
+          "isCorrect": false
+        },
+        {
+          "text": "La enviaría al desierto con el macho cabrío",
+          "isCorrect": false
+        },
+        {
+          "text": "La dejaría inmunda solamente hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Pondría su rostro contra ella y la cortaría de su pueblo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿dónde está la vida de la carne?",
+      "explanation": "El texto dice que la vida de la carne está en la sangre, y que ha sido dada para expiar las personas sobre el altar.",
+      "bibleReference": "Levítico 17:11",
+      "answers": [
+        {
+          "text": "En el corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el sebo",
+          "isCorrect": false
+        },
+        {
+          "text": "En la sangre",
+          "isCorrect": true
+        },
+        {
+          "text": "En el aliento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer el que cazaba un animal o un ave que se podía comer?",
+      "explanation": "Debía derramar su sangre y cubrirla con tierra.",
+      "bibleReference": "Levítico 17:13",
+      "answers": [
+        {
+          "text": "Llevarla entera al sacerdote del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Derramar su sangre y cubrirla con tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Quemarla al fuego fuera del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavarla con aguas vivas y comerla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer quien comía algo mortecino o despedazado por fiera?",
+      "explanation": "Lavaba sus vestidos, se lavaba con agua y quedaba inmundo hasta la tarde, y luego se limpiaba.",
+      "bibleReference": "Levítico 17:15",
+      "answers": [
+        {
+          "text": "Lavar sus vestidos y lavarse con agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Ofrecer un carnero en holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "Habitar solo fuera del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Quebrar sus vasijas de barro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le ocurría si no lavaba sus vestidos ni su carne?",
+      "explanation": "Si no los lavaba ni lavaba su carne, llevaba su iniquidad.",
+      "bibleReference": "Levítico 17:16",
+      "answers": [
+        {
+          "text": "Debía repetir la caza",
+          "isCorrect": false
+        },
+        {
+          "text": "Era apedreado por el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba limpio igualmente",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevaba su iniquidad",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

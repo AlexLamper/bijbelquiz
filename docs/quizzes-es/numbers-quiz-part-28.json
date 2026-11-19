@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 28",
+  "description": "Diez preguntas sobre Números 28: el holocausto continuo, el sábado, los principios de los meses, la pascua y el día de las primicias.",
+  "slug": "numbers-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuándo debían los hijos de Israel presentar la ofrenda que Jehová les pedía guardar?",
+      "explanation": "Jehová mandó que guardaran su ofrenda y se la ofrecieran a su tiempo.",
+      "bibleReference": "Números 28:2",
+      "answers": [
+        {
+          "text": "A su tiempo",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente una vez al año",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando el pueblo lo quisiera",
+          "isCorrect": false
+        },
+        {
+          "text": "Únicamente en el monte de Sinaí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se ofrecía cada día como holocausto continuo?",
+      "explanation": "La ofrenda encendida de cada día eran dos corderos sin tacha de un año.",
+      "bibleReference": "Números 28:3",
+      "answers": [
+        {
+          "text": "Dos becerros de la vacada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero y un macho cabrío",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos corderos sin tacha de un año",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete corderos de un año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué momentos del día se ofrecían esos dos corderos?",
+      "explanation": "Un cordero se ofrecía por la mañana y el otro entre las dos tardes.",
+      "bibleReference": "Números 28:4",
+      "answers": [
+        {
+          "text": "Los dos corderos por la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Uno por la mañana y el otro entre las dos tardes",
+          "isCorrect": true
+        },
+        {
+          "text": "Los dos corderos entre las dos tardes",
+          "isCorrect": false
+        },
+        {
+          "text": "Uno al mediodía y el otro de noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el texto que fue hecho el holocausto continuo?",
+      "explanation": "El holocausto continuo fue hecho en el monte de Sinaí, en olor de suavidad, como ofrenda encendida a Jehová.",
+      "bibleReference": "Números 28:6",
+      "answers": [
+        {
+          "text": "En los campos de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al Jordán de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Sinaí",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas décimas de flor de harina acompañaban el holocausto del sábado?",
+      "explanation": "El día del sábado se ofrecían dos corderos de un año sin defecto y dos décimas de flor de harina amasada con aceite.",
+      "bibleReference": "Números 28:9",
+      "answers": [
+        {
+          "text": "Una décima",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres décimas",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos décimas",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete décimas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se ofrecía en holocausto en los principios de los meses?",
+      "explanation": "En los principios de los meses se ofrecían dos becerros de la vacada, un carnero y siete corderos de un año sin defecto.",
+      "bibleReference": "Números 28:11",
+      "answers": [
+        {
+          "text": "Dos becerros, un carnero y siete corderos de un año",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos corderos de un año y nada más",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro, dos carneros y catorce corderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece becerros, dos carneros y diez corderos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué animal se ofrecía en expiación cada mes, además del holocausto continuo?",
+      "explanation": "Además del holocausto continuo con su libación, se ofrecía un macho cabrío en expiación a Jehová.",
+      "bibleReference": "Números 28:15",
+      "answers": [
+        {
+          "text": "Un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro de la vacada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordero de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué día del mes primero era la pascua de Jehová?",
+      "explanation": "El texto señala la pascua de Jehová a los catorce días del mes primero.",
+      "bibleReference": "Números 28:16",
+      "answers": [
+        {
+          "text": "A los siete del mes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los catorce del mes",
+          "isCorrect": true
+        },
+        {
+          "text": "A los quince del mes",
+          "isCorrect": false
+        },
+        {
+          "text": "Al primero del mes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se comía durante los siete días de la solemnidad que empezaba el día quince?",
+      "explanation": "A los quince días de ese mes comenzaba la solemnidad, y por siete días se comían ázimos; el primer día era santa convocación, sin obra servil.",
+      "bibleReference": "Números 28:17-18",
+      "answers": [
+        {
+          "text": "Carne asada al fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Panes con levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Ázimos",
+          "isCorrect": true
+        },
+        {
+          "text": "Primicias de trigo nuevo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían tener el día de las primicias, cuando ofrecieran presente nuevo a Jehová?",
+      "explanation": "El día de las primicias, en sus semanas, tendrían santa convocación y no harían ninguna obra servil.",
+      "bibleReference": "Números 28:26",
+      "answers": [
+        {
+          "text": "Santa convocación, sin hacer obra servil",
+          "isCorrect": true
+        },
+        {
+          "text": "Un ayuno de siete días sin convocación",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días de solemnidad con ázimos",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ofrenda de expiación solamente",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

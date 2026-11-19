@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Josué 5: la circuncisión en Gilgal, la pascua en los llanos de Jericó y el Príncipe del ejército de Jehová.",
+  "slug": "joshua-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué les pasó a los reyes cuando oyeron que Jehová había secado las aguas del Jordán?",
+      "explanation": "El versículo dice que a los reyes de los Amorrheos y de los Cananeos les desfalleció el corazón y no hubo más espíritu en ellos.",
+      "bibleReference": "Josué 5:1",
+      "answers": [
+        {
+          "text": "Desfalleció su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Juntaron sus ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviaron mensajeros de paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron hacia la mar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Josué que se hiciera?",
+      "explanation": "Jehová le dijo: hazte cuchillos afilados, y vuelve a circuncidar la segunda vez a los hijos de Israel.",
+      "bibleReference": "Josué 5:2",
+      "answers": [
+        {
+          "text": "Un altar de piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuchillos afilados",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce trompetas de cuerno",
+          "isCorrect": false
+        },
+        {
+          "text": "Escudos de metal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llama el lugar donde Josué circuncidó a los hijos de Israel?",
+      "explanation": "El versículo dice que Josué se hizo cuchillos afilados y circuncidó a los hijos de Israel en el monte de los prepucios.",
+      "bibleReference": "Josué 5:3",
+      "answers": [
+        {
+          "text": "El valle de Acor",
+          "isCorrect": false
+        },
+        {
+          "text": "Los llanos de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de los prepucios",
+          "isCorrect": true
+        },
+        {
+          "text": "El monte de Pisga",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años anduvieron los hijos de Israel por el desierto?",
+      "explanation": "El versículo dice que los hijos de Israel anduvieron por el desierto cuarenta años, hasta que fue consumida toda la gente de guerra que había salido de Egipto.",
+      "bibleReference": "Josué 5:6",
+      "answers": [
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron después de acabar de circuncidar a toda la gente?",
+      "explanation": "El versículo dice que se quedaron en el mismo lugar en el campo hasta que sanaron.",
+      "bibleReference": "Josué 5:8",
+      "answers": [
+        {
+          "text": "Se quedaron hasta que sanaron",
+          "isCorrect": true
+        },
+        {
+          "text": "Subieron contra Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecieron holocaustos a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron al otro lado del río",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que había quitado de ellos aquel día?",
+      "explanation": "Jehová dijo a Josué: hoy he quitado de vosotros el oprobio de Egipto; por eso aquel lugar fue llamado Gilgal.",
+      "bibleReference": "Josué 5:9",
+      "answers": [
+        {
+          "text": "El temor de los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "El oprobio de Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "La carga del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "La memoria del maná",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué día del mes celebraron la pascua en los llanos de Jericó?",
+      "explanation": "El versículo dice que los hijos de Israel asentaron el campo en Gilgal y celebraron la pascua a los catorce días del mes, por la tarde.",
+      "bibleReference": "Josué 5:10",
+      "answers": [
+        {
+          "text": "A los diez días",
+          "isCorrect": false
+        },
+        {
+          "text": "A los siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "A los catorce días",
+          "isCorrect": true
+        },
+        {
+          "text": "Al fin del mes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué comieron al otro día de la pascua?",
+      "explanation": "El versículo dice que al otro día de la pascua comieron del fruto de la tierra panes sin levadura, y en el mismo día espigas nuevas tostadas.",
+      "bibleReference": "Josué 5:11",
+      "answers": [
+        {
+          "text": "Maná y aguas del río Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne de los rebaños de Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y vino traído de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Panes sin levadura y espigas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué cesó el día siguiente, desde que comenzaron a comer del fruto de la tierra?",
+      "explanation": "El versículo dice que el maná cesó el día siguiente, y que los hijos de Israel nunca más tuvieron maná.",
+      "bibleReference": "Josué 5:12",
+      "answers": [
+        {
+          "text": "El maná",
+          "isCorrect": true
+        },
+        {
+          "text": "La pascua",
+          "isCorrect": false
+        },
+        {
+          "text": "El lloro",
+          "isCorrect": false
+        },
+        {
+          "text": "El viento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién dijo ser el varón que tenía una espada desnuda en su mano?",
+      "explanation": "El varón respondió que no era de los suyos ni de sus enemigos, sino Príncipe del ejército de Jehová, y Josué se postró en tierra.",
+      "bibleReference": "Josué 5:13-14",
+      "answers": [
+        {
+          "text": "Un ángel de los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un siervo del rey de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "Príncipe del ejército de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Un profeta de los hijos de Israel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

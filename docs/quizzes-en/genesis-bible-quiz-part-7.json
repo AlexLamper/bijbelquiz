@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 7",
+  "description": "Ten questions on Genesis 7: Noah enters the ship, the rain comes, and the waters cover the earth.",
+  "slug": "genesis-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How many of every clean animal did Yahweh tell Noah to take?",
+      "explanation": "Yahweh told Noah to take seven pairs of every clean animal, and two of the animals that are not clean.",
+      "bibleReference": "Genesis 7:2",
+      "answers": [
+        {
+          "text": "One pair",
+          "isCorrect": false
+        },
+        {
+          "text": "Three pairs",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten pairs",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven pairs",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long did Yahweh say He would cause it to rain on the earth?",
+      "explanation": "Yahweh said that in seven days he would cause it to rain on the earth for forty days and forty nights.",
+      "bibleReference": "Genesis 7:4",
+      "answers": [
+        {
+          "text": "Seven days and seven nights",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days and forty nights",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve days and twelve nights",
+          "isCorrect": false
+        },
+        {
+          "text": "A full year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Noah when the flood came on the earth?",
+      "explanation": "Noah was six hundred years old when the flood of waters came on the earth.",
+      "bibleReference": "Genesis 7:6",
+      "answers": [
+        {
+          "text": "Six hundred years old",
+          "isCorrect": true
+        },
+        {
+          "text": "Five hundred years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Nine hundred fifty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty years old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what date in Noah's six hundredth year did the sky's windows open?",
+      "explanation": "In the six hundredth year of Noah's life, in the second month, on the seventeenth day of the month, the fountains of the deep burst open and the sky's windows opened.",
+      "bibleReference": "Genesis 7:11",
+      "answers": [
+        {
+          "text": "The first day of the first month",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventeenth day of the second month",
+          "isCorrect": true
+        },
+        {
+          "text": "The last day of the twelfth month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides the sky's windows opening, what burst open on that day?",
+      "explanation": "On that day all the fountains of the great deep burst open, and the sky's windows opened.",
+      "bibleReference": "Genesis 7:11",
+      "answers": [
+        {
+          "text": "The walls of the cities",
+          "isCorrect": false
+        },
+        {
+          "text": "The gates of Eden",
+          "isCorrect": false
+        },
+        {
+          "text": "All the fountains of the great deep",
+          "isCorrect": true
+        },
+        {
+          "text": "The tops of the mountains",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the names of Noah's sons who entered the ship?",
+      "explanation": "Noah, Shem, Ham, and Japheth, Noah's wife and the three wives of his sons entered the ship.",
+      "bibleReference": "Genesis 7:13",
+      "answers": [
+        {
+          "text": "Cain, Abel, and Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "Enosh, Kenan, and Jared",
+          "isCorrect": false
+        },
+        {
+          "text": "Jabal, Jubal, and Tubal Cain",
+          "isCorrect": false
+        },
+        {
+          "text": "Shem, Ham, and Japheth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who shut Noah in the ship?",
+      "explanation": "Those who went in, went in male and female of all flesh, as God commanded him; then Yahweh shut him in.",
+      "bibleReference": "Genesis 7:16",
+      "answers": [
+        {
+          "text": "Noah himself",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "Noah's sons",
+          "isCorrect": false
+        },
+        {
+          "text": "Noah's wife",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to verse 20, how many cubits higher did the waters rise?",
+      "explanation": "The waters rose fifteen cubits higher, and the mountains were covered.",
+      "bibleReference": "Genesis 7:20",
+      "answers": [
+        {
+          "text": "Fifteen cubits",
+          "isCorrect": true
+        },
+        {
+          "text": "Three hundred cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty cubits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was left alive after every living thing on the ground was destroyed?",
+      "explanation": "Every living thing on the surface of the ground was destroyed. Only Noah was left, and those who were with him in the ship.",
+      "bibleReference": "Genesis 7:23",
+      "answers": [
+        {
+          "text": "Only Noah and those with him in the ship",
+          "isCorrect": true
+        },
+        {
+          "text": "Noah and the people on the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the birds of the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "Noah and the Nephilim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the last verse, how long did the waters flood the earth?",
+      "explanation": "The waters flooded the earth one hundred fifty days.",
+      "bibleReference": "Genesis 7:24",
+      "answers": [
+        {
+          "text": "Seventy-seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred days",
+          "isCorrect": false
+        },
+        {
+          "text": "Three hundred sixty days",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred fifty days",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

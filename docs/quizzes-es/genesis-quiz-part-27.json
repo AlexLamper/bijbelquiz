@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre Génesis 27: Isaac ciego, el guisado de Rebeca y la bendición que Jacob recibió en lugar de Esaú.",
+  "slug": "genesis-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le había ocurrido a Isaac cuando llamó a su hijo mayor?",
+      "explanation": "Isaac había envejecido y sus ojos se ofuscaron, quedando sin vista, y entonces llamó á Esaú.",
+      "bibleReference": "Génesis 27:1",
+      "answers": [
+        {
+          "text": "Había perdido el oído",
+          "isCorrect": false
+        },
+        {
+          "text": "No podía caminar",
+          "isCorrect": false
+        },
+        {
+          "text": "Había quedado sin vista",
+          "isCorrect": true
+        },
+        {
+          "text": "Había perdido la voz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pidió Isaac a Esaú que hiciera antes de bendecirlo?",
+      "explanation": "Isaac le mandó tomar sus armas, salir al campo, cogerle caza y hacerle un guisado como a él le gustaba.",
+      "bibleReference": "Génesis 27:3-4",
+      "answers": [
+        {
+          "text": "Que le cogiera caza y le hiciera un guisado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le trajera pan y vino de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le buscara mujer entre sus parientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le apartara dos cabritos del ganado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó Rebeca a Jacob traer del ganado?",
+      "explanation": "Rebeca le dijo que fuera al ganado y le trajese dos buenos cabritos de las cabras.",
+      "bibleReference": "Génesis 27:9",
+      "answers": [
+        {
+          "text": "Un carnero de las ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un novillo del hato",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres palomas del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos buenos cabritos de las cabras",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué temía Jacob que le ocurriera si su padre lo palpaba?",
+      "explanation": "Jacob temía que su padre lo tuviera por burlador y que trajera sobre sí maldición y no bendición.",
+      "bibleReference": "Génesis 27:12",
+      "answers": [
+        {
+          "text": "Que su hermano Esaú lo matara en el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que trajera sobre sí maldición y no bendición",
+          "isCorrect": true
+        },
+        {
+          "text": "Que su padre lo echara de aquella tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que perdiera la primogenitura para siempre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué cubrió Rebeca las manos y el cuello de Jacob?",
+      "explanation": "Le hizo vestir sobre sus manos y sobre la cerviz, donde no tenía vello, las pieles de los cabritos de las cabras.",
+      "bibleReference": "Génesis 27:16",
+      "answers": [
+        {
+          "text": "Con lana de las ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con lienzos finos de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las pieles de los cabritos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el vello de su propio hijo mayor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Isaac después de palpar a su hijo?",
+      "explanation": "Isaac dijo: La voz es la voz de Jacob, mas las manos, las manos de Esaú.",
+      "bibleReference": "Génesis 27:22",
+      "answers": [
+        {
+          "text": "\"La voz es la voz de Jacob, mas las manos, las manos de Esaú\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Las manos son las manos de Jacob, mas la voz, la voz de Esaú\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"No eres tú mi hijo, porque tus manos son lampiñas\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"El olor de tus vestidos no es el olor del campo\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Isaac para su hijo en la bendición?",
+      "explanation": "Isaac pidió que Dios le diera del rocío del cielo, de las grosuras de la tierra y abundancia de trigo y de mosto.",
+      "bibleReference": "Génesis 27:28",
+      "answers": [
+        {
+          "text": "Larga vida y muchos hijos en la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudades fuertes y muros altos alrededor",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz con todos los pueblos de aquella tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Rocío del cielo y abundancia de trigo y mosto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Isaac acerca del que ya había bendecido?",
+      "explanation": "Isaac se estremeció con grande estremecimiento y dijo del que había comido antes: Yo le bendije, y será bendito.",
+      "bibleReference": "Génesis 27:33",
+      "answers": [
+        {
+          "text": "Que retiraría esa bendición",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo había bendecido y sería bendito",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no sabía lo que había dicho",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la bendición pasaría al mayor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Esaú acerca del nombre de su hermano?",
+      "explanation": "Esaú dijo que bien llamaron su nombre Jacob, porque ya le había engañado dos veces: con la primogenitura y con la bendición.",
+      "bibleReference": "Génesis 27:36",
+      "answers": [
+        {
+          "text": "Que ya le había engañado dos veces",
+          "isCorrect": true
+        },
+        {
+          "text": "Que su nombre significaba bendición",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nunca le había hecho mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que cambiaría su nombre a Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde le dijo Rebeca a Jacob que huyera?",
+      "explanation": "Rebeca le dijo que se fuera huyendo á Labán su hermano, á Harán, hasta que se mitigara el enojo de su hermano.",
+      "bibleReference": "Génesis 27:43-44",
+      "answers": [
+        {
+          "text": "A Gerar, con Abimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "A Seir, campo de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "A Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A Harán, con Labán",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

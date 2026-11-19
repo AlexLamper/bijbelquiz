@@ -1,0 +1,242 @@
+{
+  "title": "Jeremiah Bible Quiz - Chapter 17",
+  "description": "Ten questions on Jeremiah 17: sin written with a pen of iron, the cursed bush and the blessed tree, the deceitful heart, and keeping the Sabbath holy.",
+  "slug": "jeremiah-bible-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "With what is the sin of Judah written?",
+      "explanation": "The sin of Judah is written with a pen of iron and with the point of a diamond; it is engraved on the tablet of their heart and on the horns of your altars.",
+      "bibleReference": "Jeremiah 17:1",
+      "answers": [
+        {
+          "text": "With ink on a scroll of parchment",
+          "isCorrect": false
+        },
+        {
+          "text": "With blood on the doorposts of the houses",
+          "isCorrect": false
+        },
+        {
+          "text": "With a pen of iron and the point of a diamond",
+          "isCorrect": true
+        },
+        {
+          "text": "With a reed pen on tablets of clay",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who is cursed, according to Yahweh in this chapter?",
+      "explanation": "Yahweh says, \"Cursed is the man who trusts in man, relies on strength of flesh, and whose heart departs from Yahweh.\"",
+      "bibleReference": "Jeremiah 17:5",
+      "answers": [
+        {
+          "text": "The man who trusts in man and relies on strength of flesh",
+          "isCorrect": true
+        },
+        {
+          "text": "The man who swears a false oath by Yahweh's name",
+          "isCorrect": false
+        },
+        {
+          "text": "The man who mocks the prophets and the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "The man who serves two masters at one time",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will the man who trusts in man be like?",
+      "explanation": "He will be like a bush in the desert and will not see when good comes, but will inhabit the parched places in the wilderness, an uninhabited salt land.",
+      "bibleReference": "Jeremiah 17:6",
+      "answers": [
+        {
+          "text": "Like chaff driven by the wind",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a bush in the desert",
+          "isCorrect": true
+        },
+        {
+          "text": "Like a broken cistern",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a withered vine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will the man who trusts in Yahweh be like?",
+      "explanation": "The blessed man who trusts in Yahweh will be as a tree planted by the waters that spreads its roots by the river; its leaf stays green and it won't cease yielding fruit.",
+      "bibleReference": "Jeremiah 17:7-8",
+      "answers": [
+        {
+          "text": "Like an eagle renewing its wings",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a city set on a hill",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a spring whose waters never end",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a tree planted by the waters",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does this chapter say about the heart?",
+      "explanation": "The text says, \"The heart is deceitful above all things and it is exceedingly corrupt. Who can know it?\"",
+      "bibleReference": "Jeremiah 17:9",
+      "answers": [
+        {
+          "text": "It is pure in the righteous and the upright",
+          "isCorrect": false
+        },
+        {
+          "text": "It is deceitful above all things and exceedingly corrupt",
+          "isCorrect": true
+        },
+        {
+          "text": "It is a lamp that gives light to the whole body",
+          "isCorrect": false
+        },
+        {
+          "text": "It is hardened like stone against instruction",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which bird is the man who gets riches not by right compared?",
+      "explanation": "As the partridge that sits on eggs which she has not laid, so is he who gets riches, and not by right; in the middle of his days they will leave him.",
+      "bibleReference": "Jeremiah 17:11",
+      "answers": [
+        {
+          "text": "The partridge sitting on eggs she has not laid",
+          "isCorrect": true
+        },
+        {
+          "text": "The raven that gathers no harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "The stork that forgets her nest",
+          "isCorrect": false
+        },
+        {
+          "text": "The vulture circling the slain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will happen to those who depart from Yahweh, the spring of living waters?",
+      "explanation": "All who forsake Yahweh will be disappointed, and those who depart from Him will be written in the earth, because they have forsaken the spring of living waters.",
+      "bibleReference": "Jeremiah 17:13",
+      "answers": [
+        {
+          "text": "They will be cast into the fire",
+          "isCorrect": false
+        },
+        {
+          "text": "They will thirst forever",
+          "isCorrect": false
+        },
+        {
+          "text": "They will be written in the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "They will wander among the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the speaker pray in this chapter?",
+      "explanation": "He prays, \"Heal me, O Yahweh, and I will be healed. Save me, and I will be saved; for you are my praise.\"",
+      "bibleReference": "Jeremiah 17:14",
+      "answers": [
+        {
+          "text": "\"Teach me your statutes and your ways\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Give me a new heart and a right spirit\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Remember your covenant with your servant David\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Heal me, O Yahweh, and I will be healed\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What are the people commanded not to do on the Sabbath day?",
+      "explanation": "Yahweh says to bear no burden on the Sabbath day, nor bring it in by the gates of Jerusalem, nor carry a burden out of their houses, but to make the Sabbath day holy.",
+      "bibleReference": "Jeremiah 17:21-22",
+      "answers": [
+        {
+          "text": "Bear a burden or carry one out of their houses",
+          "isCorrect": true
+        },
+        {
+          "text": "Buy grain or goods from the foreigners",
+          "isCorrect": false
+        },
+        {
+          "text": "Enter the house of Yahweh with an offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Travel beyond the walls of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will happen if they do not listen and still bear burdens through the gates on the Sabbath?",
+      "explanation": "If they will not listen, Yahweh will kindle a fire in Jerusalem's gates, and it will devour the palaces of Jerusalem and will not be quenched.",
+      "bibleReference": "Jeremiah 17:27",
+      "answers": [
+        {
+          "text": "The gates of the city will be shut forever",
+          "isCorrect": false
+        },
+        {
+          "text": "A fire will be kindled in its gates, not to be quenched",
+          "isCorrect": true
+        },
+        {
+          "text": "The kings will lose the throne of David forever",
+          "isCorrect": false
+        },
+        {
+          "text": "The land will no longer give its harvest",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

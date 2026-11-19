@@ -1,4 +1,5 @@
-import { getSiteConfig } from '@/config/site';
+import { getSiteConfig, getSiteId } from '@/config/site';
+import { msg } from '@/lib/api-messages';
 
 /**
  * Room invitations.
@@ -15,6 +16,8 @@ export const INVITE_SOURCE_PARAM = 'bron';
 export const INVITE_SOURCE_VALUE = 'uitnodiging';
 
 function siteOrigin(): string {
+  // Intl: the language's own site (biblequizzes.app/de), never the root.
+  if (getSiteId() === 'intl') return getSiteConfig().baseUrl;
   return (
     process.env.NEXT_PUBLIC_SITE_URL ||
     process.env.NEXTAUTH_URL ||
@@ -44,13 +47,13 @@ export function buildRoomInviteMessage(
   origin?: string,
 ): string {
   const code = roomCode.trim().toUpperCase();
-  const title = quizTitle.trim() || 'een bijbelquiz';
+  const title = quizTitle.trim() || msg('een bijbelquiz');
 
   return [
-    `Doe je mee met ${title} op BijbelQuiz?`,
+    msg('Doe je mee met {title} op BijbelQuiz?', { title }),
     '',
     buildRoomInviteUrl(code, origin),
     '',
-    `Of vul de code in: ${code}`,
+    msg('Of vul de code in: {code}', { code }),
   ].join('\n');
 }

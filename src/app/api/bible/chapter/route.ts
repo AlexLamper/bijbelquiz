@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { isNlSite } from '@/config/site';
 import { englishChapter } from '@/lib/bible-en';
+import { msg } from '@/lib/api-messages';
 
 /**
  * GET /api/bible/chapter?book=Daniël&chapter=2 - a whole chapter, in order.
@@ -81,14 +82,14 @@ export async function GET(request: NextRequest) {
     });
 
     if (!response.ok) {
-      return NextResponse.json({ error: 'Hoofdstuk niet gevonden' }, { status: 404 });
+      return NextResponse.json({ error: msg('Hoofdstuk niet gevonden') }, { status: 404 });
     }
 
     const payload = (await response.json()) as ChapterPayload;
     const verses = readVerses(payload);
 
     if (verses.length === 0) {
-      return NextResponse.json({ error: 'Hoofdstuk niet gevonden' }, { status: 404 });
+      return NextResponse.json({ error: msg('Hoofdstuk niet gevonden') }, { status: 404 });
     }
 
     return NextResponse.json({

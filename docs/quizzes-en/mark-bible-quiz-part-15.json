@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 15",
+  "description": "Ten questions on Mark 15: Jesus before Pilate, Barabbas released, the mocking by the soldiers, Golgotha and the burial.",
+  "slug": "mark-bible-quiz-part-15",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "To whom did the chief priests, elders and scribes deliver Jesus up in the morning?",
+      "explanation": "Immediately in the morning they held a consultation, bound Jesus, carried him away, and delivered him up to Pilate.",
+      "bibleReference": "Mark 15:1",
+      "answers": [
+        {
+          "text": "To Herod",
+          "isCorrect": false
+        },
+        {
+          "text": "To Pilate",
+          "isCorrect": true
+        },
+        {
+          "text": "To the whole council",
+          "isCorrect": false
+        },
+        {
+          "text": "To the centurion",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer when Pilate asked whether he was the King of the Jews?",
+      "explanation": "Pilate asked him, \"Are you the King of the Jews?\" and he answered, \"So you say.\"",
+      "bibleReference": "Mark 15:2",
+      "answers": [
+        {
+          "text": "\"I am not\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The chief priests have said it\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Ask those who accuse me\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"So you say\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who was Barabbas, according to this chapter?",
+      "explanation": "There was one called Barabbas, bound with his fellow insurgents, men who in the insurrection had committed murder.",
+      "bibleReference": "Mark 15:7",
+      "answers": [
+        {
+          "text": "A prisoner bound with insurgents who had committed murder",
+          "isCorrect": true
+        },
+        {
+          "text": "A servant of the high priest who had accused him",
+          "isCorrect": false
+        },
+        {
+          "text": "A robber who was crucified at his right hand",
+          "isCorrect": false
+        },
+        {
+          "text": "A soldier of the cohort in the Praetorium",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Pilate do because he wished to please the multitude?",
+      "explanation": "Wishing to please the multitude, Pilate released Barabbas to them, and handed Jesus over to be crucified after he had flogged him.",
+      "bibleReference": "Mark 15:15",
+      "answers": [
+        {
+          "text": "He washed his hands of the whole matter",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent Jesus back to the council to be judged",
+          "isCorrect": false
+        },
+        {
+          "text": "He released Barabbas and handed Jesus over to be crucified",
+          "isCorrect": true
+        },
+        {
+          "text": "He set both of the prisoners free at the feast",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the soldiers put on Jesus inside the Praetorium?",
+      "explanation": "They clothed him with purple, and wove a crown of thorns and put it on him.",
+      "bibleReference": "Mark 15:17",
+      "answers": [
+        {
+          "text": "A white robe and a reed",
+          "isCorrect": false
+        },
+        {
+          "text": "Purple clothing and a crown of thorns",
+          "isCorrect": true
+        },
+        {
+          "text": "His own garments and a cloak",
+          "isCorrect": false
+        },
+        {
+          "text": "A linen cloth and a girdle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was compelled to bear the cross of Jesus?",
+      "explanation": "They compelled Simon of Cyrene, the father of Alexander and Rufus, who was passing by and coming from the country, to bear his cross.",
+      "bibleReference": "Mark 15:21",
+      "answers": [
+        {
+          "text": "One of the women who followed him from Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the two robbers crucified with him",
+          "isCorrect": false
+        },
+        {
+          "text": "A soldier of the cohort in the Praetorium",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon of Cyrene, the father of Alexander and Rufus",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the name Golgotha mean, as this chapter explains it?",
+      "explanation": "They brought him to the place called Golgotha, which is, being interpreted, \"The place of a skull\".",
+      "bibleReference": "Mark 15:22",
+      "answers": [
+        {
+          "text": "The place of a skull",
+          "isCorrect": true
+        },
+        {
+          "text": "The place of weeping",
+          "isCorrect": false
+        },
+        {
+          "text": "The garden of the olives",
+          "isCorrect": false
+        },
+        {
+          "text": "The hill of the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was written in the superscription of his accusation above him?",
+      "explanation": "The superscription of his accusation was written over him, \"THE KING OF THE JEWS\".",
+      "bibleReference": "Mark 15:26",
+      "answers": [
+        {
+          "text": "\"THE SON OF GOD\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"JESUS OF NAZARETH\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"THE KING OF THE JEWS\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"THE KING OF ISRAEL\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus cry out with a loud voice at the ninth hour?",
+      "explanation": "At the ninth hour he cried, \"Eloi, Eloi, lama sabachthani?\" which is interpreted, \"My God, my God, why have you forsaken me?\"",
+      "bibleReference": "Mark 15:34",
+      "answers": [
+        {
+          "text": "\"Father, forgive them\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Eloi, Eloi, lama sabachthani?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"It is finished\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Elijah, come and help me\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who went in boldly to Pilate and asked for the body of Jesus?",
+      "explanation": "Joseph of Arimathaea, a prominent council member who was himself looking for God's Kingdom, boldly went in to Pilate and asked for Jesus' body.",
+      "bibleReference": "Mark 15:43",
+      "answers": [
+        {
+          "text": "The centurion who stood by opposite him",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary Magdalene and Salome together",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon of Cyrene, who bore his cross",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph of Arimathaea, a prominent council member",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 1",
+  "description": "Ten questions on Mark 1: John baptizing in the wilderness, the baptism of Jesus, the first disciples, the synagogue in Capernaum and the leper who was made clean.",
+  "slug": "mark-bible-quiz-part-1",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did John preach in the wilderness?",
+      "explanation": "John came baptizing in the wilderness and preaching the baptism of repentance for forgiveness of sins.",
+      "bibleReference": "Mark 1:4",
+      "answers": [
+        {
+          "text": "The rebuilding of the temple in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The law of Moses to the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The baptism of repentance for forgiveness of sins",
+          "isCorrect": true
+        },
+        {
+          "text": "A fast of forty days for all Judea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did John eat?",
+      "explanation": "John was clothed with camel's hair and a leather belt, and he ate locusts and wild honey.",
+      "bibleReference": "Mark 1:6",
+      "answers": [
+        {
+          "text": "Locusts and wild honey",
+          "isCorrect": true
+        },
+        {
+          "text": "Bread and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Fish and barley loaves",
+          "isCorrect": false
+        },
+        {
+          "text": "Figs and almonds",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what did John say the mightier one would baptize?",
+      "explanation": "John said, \"I baptized you in water, but he will baptize you in the Holy Spirit.\"",
+      "bibleReference": "Mark 1:8",
+      "answers": [
+        {
+          "text": "In the Jordan river",
+          "isCorrect": false
+        },
+        {
+          "text": "In the Holy Spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "In water and oil",
+          "isCorrect": false
+        },
+        {
+          "text": "In the words of the prophets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the voice out of the sky say at the baptism of Jesus?",
+      "explanation": "A voice came out of the sky saying, \"You are my beloved Son, in whom I am well pleased.\"",
+      "bibleReference": "Mark 1:11",
+      "answers": [
+        {
+          "text": "\"This man is the prophet of Israel.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Listen to the voice in the wilderness.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The time is fulfilled, repent!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are my beloved Son, in whom I am well pleased.\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say he would make Simon and Andrew into?",
+      "explanation": "Jesus said to Simon and Andrew, \"Come after me, and I will make you into fishers for men.\"",
+      "bibleReference": "Mark 1:17",
+      "answers": [
+        {
+          "text": "Shepherds of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Teachers of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "Fishers for men",
+          "isCorrect": true
+        },
+        {
+          "text": "Servants of the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were the people in the synagogue astonished at his teaching?",
+      "explanation": "They were astonished because he taught them as having authority, and not as the scribes.",
+      "bibleReference": "Mark 1:22",
+      "answers": [
+        {
+          "text": "He taught as having authority, not as the scribes",
+          "isCorrect": true
+        },
+        {
+          "text": "He read from a scroll no one knew",
+          "isCorrect": false
+        },
+        {
+          "text": "He taught in the language of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "He taught them all night long",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the man with the unclean spirit after Jesus rebuked it?",
+      "explanation": "Jesus said, \"Be quiet, and come out of him!\" and the unclean spirit convulsed the man, cried with a loud voice and came out of him.",
+      "bibleReference": "Mark 1:25-26",
+      "answers": [
+        {
+          "text": "The spirit refused and stayed in him",
+          "isCorrect": false
+        },
+        {
+          "text": "The man fell asleep on the floor",
+          "isCorrect": false
+        },
+        {
+          "text": "The man ran out of the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "The spirit convulsed him and came out of him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do for Simon's wife's mother, who lay sick with a fever?",
+      "explanation": "He came and took her by the hand and raised her up; the fever left her immediately, and she served them.",
+      "bibleReference": "Mark 1:30-31",
+      "answers": [
+        {
+          "text": "He sent her to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "He took her by the hand and raised her up",
+          "isCorrect": true
+        },
+        {
+          "text": "He anointed her head with oil",
+          "isCorrect": false
+        },
+        {
+          "text": "He told her to wash in the sea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do early in the morning, while it was still dark?",
+      "explanation": "He rose up, went out into a deserted place and prayed there.",
+      "bibleReference": "Mark 1:35",
+      "answers": [
+        {
+          "text": "He went to a deserted place and prayed",
+          "isCorrect": true
+        },
+        {
+          "text": "He taught in the synagogue again",
+          "isCorrect": false
+        },
+        {
+          "text": "He went back to the house of Simon",
+          "isCorrect": false
+        },
+        {
+          "text": "He crossed the sea by boat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer the leper who said, \"If you want to, you can make me clean\"?",
+      "explanation": "Being moved with compassion he touched him and said, \"I want to. Be made clean.\" The leprosy departed from him at once.",
+      "bibleReference": "Mark 1:40-42",
+      "answers": [
+        {
+          "text": "\"Your sins are forgiven you.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Go and wash in the river.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I want to. Be made clean.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Rise up and walk.\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

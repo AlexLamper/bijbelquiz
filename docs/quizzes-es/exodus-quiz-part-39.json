@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 39",
+  "description": "Diez preguntas sobre Éxodo 39: las vestiduras sagradas, el ephod, el racional con sus doce piedras y la obra acabada.",
+  "slug": "exodus-quiz-part-39",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Para quién hicieron las vestiduras sagradas de jacinto, púrpura y carmesí?",
+      "explanation": "Éxodo 39:1 dice que hicieron las vestimentas del ministerio y las vestiduras sagradas para Aarón, como Jehová lo había mandado a Moisés.",
+      "bibleReference": "Éxodo 39:1",
+      "answers": [
+        {
+          "text": "Para Aarón",
+          "isCorrect": true
+        },
+        {
+          "text": "Para Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Bezaleel",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron con las planchas de oro que extendieron?",
+      "explanation": "Éxodo 39:3 dice que extendieron las planchas de oro y cortaron hilos para tejerlos entre el jacinto, la púrpura, el carmesí y el lino, con delicada obra.",
+      "bibleReference": "Éxodo 39:3",
+      "answers": [
+        {
+          "text": "Las fundieron para hacer basas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las clavaron sobre las tablas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cortaron hilos de ellas para tejerlos",
+          "isCorrect": true
+        },
+        {
+          "text": "Las partieron en cuatro órdenes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué grabaron en las piedras oniquinas del ephod?",
+      "explanation": "Éxodo 39:6 dice que labraron las piedras oniquinas cercadas de engastes de oro, grabadas de grabadura de sello con los nombres de los hijos de Israel.",
+      "bibleReference": "Éxodo 39:6",
+      "answers": [
+        {
+          "text": "Las medidas del racional",
+          "isCorrect": false
+        },
+        {
+          "text": "Los nombres de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Los nombres de los doce príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los nombres de Aarón y de sus hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿cuánto medía el racional?",
+      "explanation": "Éxodo 39:9 dice que el racional era cuadrado y doblado, de un palmo de longitud y de un palmo de anchura.",
+      "bibleReference": "Éxodo 39:9",
+      "answers": [
+        {
+          "text": "Un codo de largo y un codo de ancho",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos codos de largo y uno de ancho",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco codos en cuadro",
+          "isCorrect": false
+        },
+        {
+          "text": "Un palmo de largo y un palmo de ancho",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuáles eran las piedras del primer orden del racional?",
+      "explanation": "Éxodo 39:10 dice que el primer orden de piedras era un sardio, un topacio y un carbunclo.",
+      "bibleReference": "Éxodo 39:10",
+      "answers": [
+        {
+          "text": "Un sardio, un topacio y un carbunclo",
+          "isCorrect": true
+        },
+        {
+          "text": "Una esmeralda, un zafiro y un diamante",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ligurio, un ágata y un amatista",
+          "isCorrect": false
+        },
+        {
+          "text": "Un berilo, un onix y un jaspe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas piedras había conforme a los nombres de los hijos de Israel?",
+      "explanation": "Éxodo 39:14 dice que las piedras eran conforme a los nombres de los hijos de Israel, doce, cada una con su nombre según las doce tribus.",
+      "bibleReference": "Éxodo 39:14",
+      "answers": [
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pusieron entre las granadas, en las orillas del manto?",
+      "explanation": "Éxodo 39:25 dice que hicieron campanillas de oro puro y las pusieron entre las granadas por las orillas del manto alrededor.",
+      "bibleReference": "Éxodo 39:25",
+      "answers": [
+        {
+          "text": "Anillos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Campanillas de oro puro",
+          "isCorrect": true
+        },
+        {
+          "text": "Piedras de onix",
+          "isCorrect": false
+        },
+        {
+          "text": "Cordones de jacinto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué escribieron en la plancha de la diadema santa de oro puro?",
+      "explanation": "Éxodo 39:30 dice que hicieron la plancha de la diadema santa de oro puro y escribieron en ella, de grabadura de sello, el rótulo SANTIDAD Á JEHOVÁ.",
+      "bibleReference": "Éxodo 39:30",
+      "answers": [
+        {
+          "text": "Los nombres de las doce tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "La ley del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "SANTIDAD Á JEHOVÁ",
+          "isCorrect": true
+        },
+        {
+          "text": "El nombre de Aarón el sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 32, ¿cómo hicieron los hijos de Israel toda la obra?",
+      "explanation": "Éxodo 39:32 dice que fue acabada toda la obra del tabernáculo del testimonio y que los hijos de Israel la hicieron como Jehová lo había mandado a Moisés.",
+      "bibleReference": "Éxodo 39:32",
+      "answers": [
+        {
+          "text": "Según el consejo de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Según el diseño de Bezaleel",
+          "isCorrect": false
+        },
+        {
+          "text": "Según su propio parecer",
+          "isCorrect": false
+        },
+        {
+          "text": "Como Jehová lo había mandado a Moisés",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés cuando vio toda la obra terminada?",
+      "explanation": "Éxodo 39:43 dice que Moisés vio toda la obra, que la habían hecho como Jehová había mandado, y los bendijo.",
+      "bibleReference": "Éxodo 39:43",
+      "answers": [
+        {
+          "text": "Les mandó repetir la obra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los bendijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Les repartió la plata sobrante",
+          "isCorrect": false
+        },
+        {
+          "text": "Entró en el tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

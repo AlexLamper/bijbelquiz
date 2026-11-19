@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 8",
+  "description": "Ten questions on Psalms 8: the majestic name of Yahweh, the moon and stars, and the place he gave to man over his works.",
+  "slug": "psalms-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What is majestic in all the earth, according to the first verse?",
+      "explanation": "Verse 1 says, \"Yahweh, our Lord, how majestic is your name in all the earth!\"",
+      "bibleReference": "Psalms 8:1",
+      "answers": [
+        {
+          "text": "Yahweh's name",
+          "isCorrect": true
+        },
+        {
+          "text": "Yahweh's temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh's army",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh's throne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Above what has Yahweh set his glory?",
+      "explanation": "Verse 1 says, \"You have set your glory above the heavens!\"",
+      "bibleReference": "Psalms 8:1",
+      "answers": [
+        {
+          "text": "The mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "The seas",
+          "isCorrect": false
+        },
+        {
+          "text": "The heavens",
+          "isCorrect": true
+        },
+        {
+          "text": "The kings",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From whose lips has Yahweh established strength?",
+      "explanation": "From the lips of babes and infants he has established strength.",
+      "bibleReference": "Psalms 8:2",
+      "answers": [
+        {
+          "text": "Kings and princes",
+          "isCorrect": false
+        },
+        {
+          "text": "Babes and infants",
+          "isCorrect": true
+        },
+        {
+          "text": "Priests and prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "Wise men",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The heavens are called the work of Yahweh's what?",
+      "explanation": "The psalmist says, \"Your heavens, the work of your fingers.\"",
+      "bibleReference": "Psalms 8:3",
+      "answers": [
+        {
+          "text": "Voice",
+          "isCorrect": false
+        },
+        {
+          "text": "Feet",
+          "isCorrect": false
+        },
+        {
+          "text": "Breath",
+          "isCorrect": false
+        },
+        {
+          "text": "Fingers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides the heavens, what does the psalmist consider in verse 3?",
+      "explanation": "He considers the moon and the stars, which Yahweh has ordained.",
+      "bibleReference": "Psalms 8:3",
+      "answers": [
+        {
+          "text": "The sun and the clouds",
+          "isCorrect": false
+        },
+        {
+          "text": "The rivers and the hills",
+          "isCorrect": false
+        },
+        {
+          "text": "The fields and the forests",
+          "isCorrect": false
+        },
+        {
+          "text": "The moon and the stars",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What question does the psalmist ask in verse 4?",
+      "explanation": "He asks, \"What is man, that you think of him?\"",
+      "bibleReference": "Psalms 8:4",
+      "answers": [
+        {
+          "text": "\"Who can count the stars?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"What is man, that you think of him?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Where does the wind come from?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Who has seen your face?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Than whom has Yahweh made man a little lower?",
+      "explanation": "Verse 5 says, \"You have made him a little lower than the angels.\"",
+      "bibleReference": "Psalms 8:5",
+      "answers": [
+        {
+          "text": "The animals",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings",
+          "isCorrect": false
+        },
+        {
+          "text": "The angels",
+          "isCorrect": true
+        },
+        {
+          "text": "The stars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what has Yahweh crowned man?",
+      "explanation": "Verse 5 says he has crowned him with glory and honor.",
+      "bibleReference": "Psalms 8:5",
+      "answers": [
+        {
+          "text": "Glory and honor",
+          "isCorrect": true
+        },
+        {
+          "text": "Silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Thorns",
+          "isCorrect": false
+        },
+        {
+          "text": "Wisdom and strength",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Over what does Yahweh make man ruler?",
+      "explanation": "Verse 6 says, \"You make him ruler over the works of your hands.\"",
+      "bibleReference": "Psalms 8:6",
+      "answers": [
+        {
+          "text": "Only one small city",
+          "isCorrect": false
+        },
+        {
+          "text": "The angels in heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The works of Yahweh's hands",
+          "isCorrect": true
+        },
+        {
+          "text": "The sun and the moon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these is listed among the things put under man's feet?",
+      "explanation": "The list includes sheep and cattle, the animals of the field, the birds of the sky and the fish of the sea.",
+      "bibleReference": "Psalms 8:6-8",
+      "answers": [
+        {
+          "text": "The stars of heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "The fish of the sea",
+          "isCorrect": true
+        },
+        {
+          "text": "The kings of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The clouds of the sky",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

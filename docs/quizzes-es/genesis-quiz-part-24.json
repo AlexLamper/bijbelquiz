@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Génesis 24: el criado de Abraham busca mujer para Isaac y encuentra a Rebeca junto a la fuente.",
+  "slug": "genesis-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué juramento pidió Abraham a su criado, el más viejo de su casa?",
+      "explanation": "Le hizo jurar por Jehová que no tomaría mujer para su hijo de las hijas de los Cananeos, sino que iría a su tierra y a su parentela.",
+      "bibleReference": "Génesis 24:3-4",
+      "answers": [
+        {
+          "text": "Que no tomaría mujer de las hijas de los Cananeos, sino de su parentela",
+          "isCorrect": true
+        },
+        {
+          "text": "Que llevaría a Isaac a Mesopotamia y a la ciudad de Nachôr",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no vendería los camellos ni los bienes de su señor",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sepultaría a su señor junto a Sara en Macpela",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos camellos tomó el criado para el viaje?",
+      "explanation": "El criado tomó diez camellos de los camellos de su señor y se puso en camino hasta la ciudad de Nachôr.",
+      "bibleReference": "Génesis 24:10",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde y a qué hora hizo arrodillar los camellos?",
+      "explanation": "Hizo arrodillar los camellos fuera de la ciudad, junto a un pozo de agua, a la hora de la tarde, a la hora en que salen las mozas por agua.",
+      "bibleReference": "Génesis 24:11",
+      "answers": [
+        {
+          "text": "A la puerta de la ciudad, al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera de la ciudad, junto a un pozo, a la hora de la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "En el campo, al rayar el alba",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al bosque de Beer-seba, de noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál fue la señal que pidió el criado en su oración?",
+      "explanation": "Pidió que la moza a quien dijese que bajase su cántaro para beber respondiese que también daría de beber a sus camellos: esa sería la destinada para Isaac.",
+      "bibleReference": "Génesis 24:14",
+      "answers": [
+        {
+          "text": "Que la moza le diese pan y forraje para el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que un ángel le mostrase la casa de su parentela",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la moza ofreciera también dar de beber a sus camellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la moza llevase un cántaro de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién salió con su cántaro sobre el hombro, y de quién había nacido?",
+      "explanation": "Antes de que acabase de hablar, salió Rebeca, que había nacido a Bethuel, hijo de Milca, mujer de Nachôr, hermano de Abraham.",
+      "bibleReference": "Génesis 24:15",
+      "answers": [
+        {
+          "text": "Sara, mujer de Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "Rebeca, nacida de Bethuel",
+          "isCorrect": true
+        },
+        {
+          "text": "Milca, hija de Nachôr",
+          "isCorrect": false
+        },
+        {
+          "text": "Agar, la sierva egipcia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dio el hombre cuando los camellos acabaron de beber?",
+      "explanation": "Le presentó un pendiente de oro que pesaba medio siclo y dos brazaletes que pesaban diez.",
+      "bibleReference": "Génesis 24:22",
+      "answers": [
+        {
+          "text": "Un pendiente de oro y dos brazaletes",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez monedas de plata de buena ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Un velo y unas sandalias",
+          "isCorrect": false
+        },
+        {
+          "text": "Paja y mucho forraje para los camellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el criado cuando le pusieron delante qué comer?",
+      "explanation": "Dijo que no comería hasta haber dicho su mensaje, y Labán le dijo que hablase.",
+      "bibleReference": "Génesis 24:33",
+      "answers": [
+        {
+          "text": "Que comería después de beber",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tenía hambre por el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que primero quería ver a Rebeca",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no comería hasta haber dicho su mensaje",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron Labán y Bethuel al criado?",
+      "explanation": "Respondieron que de Jehová había salido esto, que no podían hablarle malo ni bueno, y que tomase a Rebeca y se fuese.",
+      "bibleReference": "Génesis 24:50-51",
+      "answers": [
+        {
+          "text": "Que esperase un año entero en casa de Bethuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que de Jehová había salido esto, y que tomase a Rebeca y se fuese",
+          "isCorrect": true
+        },
+        {
+          "text": "Que pagase mil monedas de plata por la moza",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Isaac viniese en persona a buscarla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Rebeca cuando le preguntaron si iría con aquel varón?",
+      "explanation": "La llamaron y le preguntaron si iría con aquel varón, y ella respondió: Sí, iré.",
+      "bibleReference": "Génesis 24:58",
+      "answers": [
+        {
+          "text": "Esperaré diez días",
+          "isCorrect": false
+        },
+        {
+          "text": "No iré con él",
+          "isCorrect": false
+        },
+        {
+          "text": "Sí, iré",
+          "isCorrect": true
+        },
+        {
+          "text": "Preguntad a mi madre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Isaac cuando el criado le contó todo lo que había hecho?",
+      "explanation": "Isaac la introdujo en la tienda de su madre Sara, tomó a Rebeca por mujer y la amó, y se consoló después de la muerte de su madre.",
+      "bibleReference": "Génesis 24:67",
+      "answers": [
+        {
+          "text": "La envió de vuelta a Mesopotamia con el criado",
+          "isCorrect": false
+        },
+        {
+          "text": "La llevó a Abraham su padre en Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "La introdujo en la tienda de su madre y la tomó por mujer",
+          "isCorrect": true
+        },
+        {
+          "text": "La dejó con los mozos en el campo hasta la tarde",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

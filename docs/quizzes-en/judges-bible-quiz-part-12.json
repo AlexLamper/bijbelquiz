@@ -1,0 +1,242 @@
+{
+  "title": "Judges Bible Quiz - Chapter 12",
+  "description": "Ten questions on Judges 12: Jephthah fights Ephraim and the Shibboleth test, then the judges Ibzan, Elon and Abdon.",
+  "slug": "judges-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the men of Ephraim threaten to do to Jephthah?",
+      "explanation": "They said, \"We will burn your house around you with fire!\"",
+      "bibleReference": "Judges 12:1",
+      "answers": [
+        {
+          "text": "Burn his house around him with fire",
+          "isCorrect": true
+        },
+        {
+          "text": "Take his daughter captive",
+          "isCorrect": false
+        },
+        {
+          "text": "Drive him back to the land of Tob",
+          "isCorrect": false
+        },
+        {
+          "text": "Stone him at the city gate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What word did the men of Gilead make a fleeing Ephraimite say?",
+      "explanation": "They said to him, \"Now say 'Shibboleth,'\" and he said \"Sibboleth,\" for he couldn't pronounce it correctly.",
+      "bibleReference": "Judges 12:6",
+      "answers": [
+        {
+          "text": "\"Shalom\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Shibboleth\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Jordan\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Hosanna\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were the Ephraimites who failed the test seized and killed?",
+      "explanation": "They seized him and killed him at the fords of the Jordan.",
+      "bibleReference": "Judges 12:5-6",
+      "answers": [
+        {
+          "text": "At the gate of Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "On Mount Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "At the fords of the Jordan",
+          "isCorrect": true
+        },
+        {
+          "text": "At the spring of Harod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many of Ephraim fell at that time?",
+      "explanation": "At that time, forty-two thousand of Ephraim fell.",
+      "bibleReference": "Judges 12:6",
+      "answers": [
+        {
+          "text": "Twelve thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Four thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty-two thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty-two thousand",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How long did Jephthah judge Israel?",
+      "explanation": "Jephthah judged Israel six years, then died and was buried in the cities of Gilead.",
+      "bibleReference": "Judges 12:7",
+      "answers": [
+        {
+          "text": "Ten years",
+          "isCorrect": false
+        },
+        {
+          "text": "Six years",
+          "isCorrect": true
+        },
+        {
+          "text": "Twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the judge Ibzan from?",
+      "explanation": "After Jephthah, Ibzan of Bethlehem judged Israel.",
+      "bibleReference": "Judges 12:8",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": true
+        },
+        {
+          "text": "Pirathon",
+          "isCorrect": false
+        },
+        {
+          "text": "Tob",
+          "isCorrect": false
+        },
+        {
+          "text": "Shechem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ibzan do with his thirty daughters?",
+      "explanation": "He sent his thirty daughters outside his clan, and brought in thirty daughters from outside his clan for his sons.",
+      "bibleReference": "Judges 12:9",
+      "answers": [
+        {
+          "text": "He gave them to the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "He kept them in his own house",
+          "isCorrect": false
+        },
+        {
+          "text": "He married them to the men of Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent them outside his clan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Elon, who judged Israel ten years, belonged to which tribe?",
+      "explanation": "Elon the Zebulunite judged Israel ten years.",
+      "bibleReference": "Judges 12:11",
+      "answers": [
+        {
+          "text": "Issachar",
+          "isCorrect": false
+        },
+        {
+          "text": "Asher",
+          "isCorrect": false
+        },
+        {
+          "text": "Zebulun",
+          "isCorrect": true
+        },
+        {
+          "text": "Naphtali",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Elon buried?",
+      "explanation": "Elon the Zebulunite died and was buried in Aijalon in the land of Zebulun.",
+      "bibleReference": "Judges 12:12",
+      "answers": [
+        {
+          "text": "In Aijalon",
+          "isCorrect": true
+        },
+        {
+          "text": "In Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "In Pirathon",
+          "isCorrect": false
+        },
+        {
+          "text": "In Mizpah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On what did Abdon's forty sons and thirty grandsons ride?",
+      "explanation": "Abdon had forty sons and thirty sons' sons who rode on seventy donkey colts.",
+      "bibleReference": "Judges 12:13-14",
+      "answers": [
+        {
+          "text": "Seventy camels",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty horses",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy donkey colts",
+          "isCorrect": true
+        },
+        {
+          "text": "Thirty chariots",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Génesis 1: los seis días de la creación, desde la primera luz hasta el hombre hecho a imagen de Dios.",
+  "slug": "genesis-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué crió Dios en el principio?",
+      "explanation": "Génesis 1:1 dice que en el principio Dios crió los cielos y la tierra.",
+      "bibleReference": "Génesis 1:1",
+      "answers": [
+        {
+          "text": "Los cielos y la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "El huerto de Edén",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente los mares",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ciudad y una torre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se movía sobre la haz de las aguas?",
+      "explanation": "La tierra estaba desordenada y vacía, las tinieblas estaban sobre el abismo y el Espíritu de Dios se movía sobre las aguas.",
+      "bibleReference": "Génesis 1:2",
+      "answers": [
+        {
+          "text": "Una bandada de aves",
+          "isCorrect": false
+        },
+        {
+          "text": "Una nube espesa",
+          "isCorrect": false
+        },
+        {
+          "text": "El Espíritu de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "El árbol de vida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dio Dios a la luz?",
+      "explanation": "Dios llamó Día a la luz, y a las tinieblas las llamó Noche.",
+      "bibleReference": "Génesis 1:5",
+      "answers": [
+        {
+          "text": "Noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Día",
+          "isCorrect": true
+        },
+        {
+          "text": "Mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Cielos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Dios a la expansión que hizo en medio de las aguas?",
+      "explanation": "Dios hizo la expansión para apartar las aguas y la llamó Cielos; así fue el día segundo.",
+      "bibleReference": "Génesis 1:6-8",
+      "answers": [
+        {
+          "text": "Tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Mares",
+          "isCorrect": false
+        },
+        {
+          "text": "Abismo",
+          "isCorrect": false
+        },
+        {
+          "text": "Cielos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dio Dios a la reunión de las aguas?",
+      "explanation": "Dios llamó Tierra a la seca y Mares a la reunión de las aguas, y vio que era bueno.",
+      "bibleReference": "Génesis 1:10",
+      "answers": [
+        {
+          "text": "Mares",
+          "isCorrect": true
+        },
+        {
+          "text": "Tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Abismo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ríos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué día produjo la tierra hierba verde y árboles de fruto?",
+      "explanation": "Dios mandó que la tierra produjese hierba y árboles de fruto, y así fue; luego fue la tarde y la mañana el día tercero.",
+      "bibleReference": "Génesis 1:11-13",
+      "answers": [
+        {
+          "text": "El día primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El día tercero",
+          "isCorrect": true
+        },
+        {
+          "text": "El día segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "El día cuarto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué hizo Dios la lumbrera mayor?",
+      "explanation": "Dios hizo las dos grandes lumbreras: la mayor para que señorease en el día y la menor para que señorease en la noche.",
+      "bibleReference": "Génesis 1:16",
+      "answers": [
+        {
+          "text": "Para que señorease en la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Para separar las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para alumbrar el huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que señorease en el día",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 21, ¿qué crió Dios junto con toda ave alada?",
+      "explanation": "Dios crió las grandes ballenas y toda cosa viva que las aguas produjeron, junto con toda ave alada.",
+      "bibleReference": "Génesis 1:21",
+      "answers": [
+        {
+          "text": "Las bestias del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "El ganado de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Las grandes ballenas",
+          "isCorrect": true
+        },
+        {
+          "text": "Los reptiles del huerto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A imagen de quién crió Dios al hombre?",
+      "explanation": "Dios crió al hombre a su imagen; a imagen de Dios lo crió, varón y hembra.",
+      "bibleReference": "Génesis 1:27",
+      "answers": [
+        {
+          "text": "A imagen de los ángeles",
+          "isCorrect": false
+        },
+        {
+          "text": "A imagen de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "A imagen de los animales",
+          "isCorrect": false
+        },
+        {
+          "text": "A imagen de las estrellas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio Dios cuando miró todo lo que había hecho?",
+      "explanation": "Dios vio todo lo que había hecho, y era bueno en gran manera; así fue el día sexto.",
+      "bibleReference": "Génesis 1:31",
+      "answers": [
+        {
+          "text": "Que era bueno en gran manera",
+          "isCorrect": true
+        },
+        {
+          "text": "Que estaba todavía vacío",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era santo y perfecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le faltaba la luz",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

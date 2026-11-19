@@ -1,0 +1,242 @@
+{
+  "title": "Judges Bible Quiz - Chapter 7",
+  "description": "Ten questions on Judges 7: Gideon's three hundred, with the test at the water, the barley-bread dream and the night attack with trumpets, pitchers and torches.",
+  "slug": "judges-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Beside which spring did Gideon and his people encamp?",
+      "explanation": "Jerubbaal, who is Gideon, and all the people with him encamped beside the spring of Harod.",
+      "bibleReference": "Judges 7:1",
+      "answers": [
+        {
+          "text": "The spring of Gihon",
+          "isCorrect": false
+        },
+        {
+          "text": "The spring of Harod",
+          "isCorrect": true
+        },
+        {
+          "text": "The brook Kishon",
+          "isCorrect": false
+        },
+        {
+          "text": "The spring of En Gedi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After the fearful and trembling were told to go home, how many people remained?",
+      "explanation": "Twenty-two thousand of the people returned, and ten thousand remained.",
+      "bibleReference": "Judges 7:3",
+      "answers": [
+        {
+          "text": "Five thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "One thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many men lapped the water, putting their hand to their mouth?",
+      "explanation": "The number of those who lapped, putting their hand to their mouth, was three hundred men.",
+      "bibleReference": "Judges 7:6",
+      "answers": [
+        {
+          "text": "Three hundred",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Yahweh tell Gideon to take with him down to the camp if he was afraid?",
+      "explanation": "Yahweh said, \"If you are afraid to go down, go with Purah your servant down to the camp.\"",
+      "bibleReference": "Judges 7:10",
+      "answers": [
+        {
+          "text": "Joash his father",
+          "isCorrect": false
+        },
+        {
+          "text": "Jether his son",
+          "isCorrect": false
+        },
+        {
+          "text": "Purah his servant",
+          "isCorrect": true
+        },
+        {
+          "text": "Oreb the prince",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the dream Gideon overheard, what tumbled into the camp of Midian?",
+      "explanation": "The man dreamed that a cake of barley bread tumbled into the camp of Midian and struck the tent so that it fell.",
+      "bibleReference": "Judges 7:13",
+      "answers": [
+        {
+          "text": "A great stone from the mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "A burning torch",
+          "isCorrect": false
+        },
+        {
+          "text": "A cake of barley bread",
+          "isCorrect": true
+        },
+        {
+          "text": "A swarm of locusts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the man's fellow explain the dream?",
+      "explanation": "His fellow answered, \"This is nothing other than the sword of Gideon the son of Joash, a man of Israel.\"",
+      "bibleReference": "Judges 7:14",
+      "answers": [
+        {
+          "text": "As a famine coming on Midian",
+          "isCorrect": false
+        },
+        {
+          "text": "As the sword of Gideon the son of Joash",
+          "isCorrect": true
+        },
+        {
+          "text": "As a sign that Midian would win",
+          "isCorrect": false
+        },
+        {
+          "text": "As a warning to flee across the Jordan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Into how many companies did Gideon divide the three hundred men?",
+      "explanation": "He divided the three hundred men into three companies and gave them trumpets and empty pitchers with torches inside.",
+      "bibleReference": "Judges 7:16",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Four",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the men hold in their left hands during the attack?",
+      "explanation": "They held the torches in their left hands and the trumpets in their right hands with which to blow.",
+      "bibleReference": "Judges 7:20",
+      "answers": [
+        {
+          "text": "Swords",
+          "isCorrect": false
+        },
+        {
+          "text": "Shields",
+          "isCorrect": false
+        },
+        {
+          "text": "Spears",
+          "isCorrect": false
+        },
+        {
+          "text": "Torches",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the three companies shout after breaking the pitchers?",
+      "explanation": "They shouted, \"The sword of Yahweh and of Gideon!\"",
+      "bibleReference": "Judges 7:20",
+      "answers": [
+        {
+          "text": "\"Arise, Israel, the battle is won!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The sword of Yahweh and of Gideon!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Yahweh is our banner!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Strike down the Midianites!\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the names of the two princes of Midian who were taken and killed?",
+      "explanation": "They took the two princes of Midian, Oreb and Zeeb, and brought their heads to Gideon beyond the Jordan.",
+      "bibleReference": "Judges 7:25",
+      "answers": [
+        {
+          "text": "Oreb and Zeeb",
+          "isCorrect": true
+        },
+        {
+          "text": "Sihon and Og",
+          "isCorrect": false
+        },
+        {
+          "text": "Purah and Harod",
+          "isCorrect": false
+        },
+        {
+          "text": "Moreh and Abel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

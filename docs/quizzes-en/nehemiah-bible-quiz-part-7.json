@@ -1,0 +1,242 @@
+{
+  "title": "Nehemiah Bible Quiz - Chapter 7",
+  "description": "Ten questions on Nehemiah 7: Jerusalem is put under guard and the register of the first returning exiles is found.",
+  "slug": "nehemiah-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Whom did the narrator put in charge of Jerusalem along with his brother Hanani?",
+      "explanation": "Nehemiah 7:2 says, \"I put my brother Hanani, and Hananiah the governor of the fortress, in charge of Jerusalem.\"",
+      "bibleReference": "Nehemiah 7:2",
+      "answers": [
+        {
+          "text": "Eliashib the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Shemaiah the son of Delaiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Meshullam the son of Berechiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Hananiah the governor of the fortress",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "When were the gates of Jerusalem allowed to be opened?",
+      "explanation": "Nehemiah 7:3 says: \"Don't let the gates of Jerusalem be opened until the sun is hot.\"",
+      "bibleReference": "Nehemiah 7:3",
+      "answers": [
+        {
+          "text": "Not until the sun was hot",
+          "isCorrect": true
+        },
+        {
+          "text": "Only on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "At the first light of dawn",
+          "isCorrect": false
+        },
+        {
+          "text": "Only when the king's letter arrived",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is the city described in verse 4?",
+      "explanation": "Nehemiah 7:4 says the city was wide and large, but the people were few and the houses were not built.",
+      "bibleReference": "Nehemiah 7:4",
+      "answers": [
+        {
+          "text": "Small and crowded with people and houses",
+          "isCorrect": false
+        },
+        {
+          "text": "Full of new houses but without a wall",
+          "isCorrect": false
+        },
+        {
+          "text": "Wide and large, but with few people and unbuilt houses",
+          "isCorrect": true
+        },
+        {
+          "text": "Empty of all people and animals",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What book did the narrator find?",
+      "explanation": "Nehemiah 7:5 says, \"I found the book of the genealogy of those who came up at the first.\"",
+      "bibleReference": "Nehemiah 7:5",
+      "answers": [
+        {
+          "text": "The book of the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The genealogy of those who came up first",
+          "isCorrect": true
+        },
+        {
+          "text": "The book of the chronicles of the kings of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "The letters of Sanballat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who had carried the people away into captivity?",
+      "explanation": "Nehemiah 7:6 says Nebuchadnezzar the king of Babylon had carried them away.",
+      "bibleReference": "Nehemiah 7:6",
+      "answers": [
+        {
+          "text": "Artaxerxes the king of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Pharaoh the king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Tobiah the Ammonite servant",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebuchadnezzar the king of Babylon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who is named first among the leaders the returning exiles came with?",
+      "explanation": "Nehemiah 7:7 begins the list with Zerubbabel, then Jeshua and Nehemiah.",
+      "bibleReference": "Nehemiah 7:7",
+      "answers": [
+        {
+          "text": "Zerubbabel",
+          "isCorrect": true
+        },
+        {
+          "text": "Mordecai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mispereth",
+          "isCorrect": false
+        },
+        {
+          "text": "Bilshan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were some priests removed from the priesthood?",
+      "explanation": "Nehemiah 7:64 says they searched for their genealogical records but couldn't find them.",
+      "bibleReference": "Nehemiah 7:63-64",
+      "answers": [
+        {
+          "text": "They had refused to help build the wall",
+          "isCorrect": false
+        },
+        {
+          "text": "They had married daughters of Sanballat",
+          "isCorrect": false
+        },
+        {
+          "text": "They could not find their genealogical records",
+          "isCorrect": true
+        },
+        {
+          "text": "They had eaten the most holy things",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Until when were these priests not to eat of the most holy things?",
+      "explanation": "Nehemiah 7:64-65 says the governor told them not to eat of the most holy things until a priest stood up to minister with Urim and Thummim.",
+      "bibleReference": "Nehemiah 7:64-65",
+      "answers": [
+        {
+          "text": "Until the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "Until a priest stood up with Urim and Thummim",
+          "isCorrect": true
+        },
+        {
+          "text": "Until the wall was dedicated with joy",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the governor returned from Susa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How large was the whole assembly?",
+      "explanation": "Nehemiah 7:66 says the whole assembly together was forty-two thousand three hundred sixty.",
+      "bibleReference": "Nehemiah 7:66",
+      "answers": [
+        {
+          "text": "Seven thousand three hundred thirty-seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Six thousand seven hundred twenty",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty-two thousand three hundred sixty",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the governor give to the treasury?",
+      "explanation": "Nehemiah 7:70 says he gave one thousand darics of gold, fifty basins and five hundred thirty priests' garments.",
+      "bibleReference": "Nehemiah 7:70",
+      "answers": [
+        {
+          "text": "One thousand darics of gold, fifty basins and priests' garments",
+          "isCorrect": true
+        },
+        {
+          "text": "Twenty thousand darics of gold and silver minas",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred forty-five mules and camels",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty-seven priests' garments and nothing else",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

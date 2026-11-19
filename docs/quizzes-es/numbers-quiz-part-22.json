@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre Números 22: Balac que manda llamar a Balaam, el ángel de Jehová en el camino y el asna que habla.",
+  "slug": "numbers-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién era entonces rey de Moab?",
+      "explanation": "El texto dice que Balac, hijo de Zippor, era entonces rey de Moab.",
+      "bibleReference": "Números 22:4",
+      "answers": [
+        {
+          "text": "Balaam, hijo de Beor",
+          "isCorrect": false
+        },
+        {
+          "text": "Og de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "Balac, hijo de Zippor",
+          "isCorrect": true
+        },
+        {
+          "text": "Zur, príncipe de pueblos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Moab lo que esa gente haría con todos sus contornos?",
+      "explanation": "Moab dijo a los ancianos de Madián que esa gente lamería todos sus contornos como lame el buey la grama del campo.",
+      "bibleReference": "Números 22:4",
+      "answers": [
+        {
+          "text": "Con un león que devora",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un fuego que consume",
+          "isCorrect": false
+        },
+        {
+          "text": "Con langostas que cubren la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un buey que lame la grama",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién envió Balac mensajeros, y dónde estaba?",
+      "explanation": "Balac envió mensajeros a Balaam hijo de Beor, a Pethor, que está junto al río en la tierra de los hijos de su pueblo.",
+      "bibleReference": "Números 22:5",
+      "answers": [
+        {
+          "text": "A los ancianos de Madián, en Sittim",
+          "isCorrect": false
+        },
+        {
+          "text": "A Balaam hijo de Beor, en Pethor",
+          "isCorrect": true
+        },
+        {
+          "text": "A Sehón, rey de los Amorrheos, en Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Zur, príncipe de Madián",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pidió Balac a Balaam que hiciera con ese pueblo?",
+      "explanation": "Balac le pidió que maldijera a aquel pueblo, porque era más fuerte que él.",
+      "bibleReference": "Números 22:6",
+      "answers": [
+        {
+          "text": "Que lo maldijera",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo bendijera",
+          "isCorrect": false
+        },
+        {
+          "text": "Que peleara contra él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo contara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Dios a Balaam la primera vez que vino a él?",
+      "explanation": "Dios le dijo que no fuera con ellos ni maldijera al pueblo, porque era bendito.",
+      "bibleReference": "Números 22:9-12",
+      "answers": [
+        {
+          "text": "Que fuera con los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pidiera plata y oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no fuera ni maldijera al pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que esperara tres días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Balaam a los siervos de Balac sobre la plata y el oro?",
+      "explanation": "Balaam dijo que aunque Balac le diese su casa llena de plata y oro, no podría traspasar la palabra de Jehová su Dios.",
+      "bibleReference": "Números 22:18",
+      "answers": [
+        {
+          "text": "Que aceptaría la mitad del precio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no podría traspasar la palabra de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo pensaría hasta la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Que iría solo por la honra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se apartó el asna del camino y se fue por el campo?",
+      "explanation": "El asna vio al ángel de Jehová, que estaba en el camino con su espada desnuda en su mano, y se apartó del camino.",
+      "bibleReference": "Números 22:23",
+      "answers": [
+        {
+          "text": "Porque tenía sed",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el camino estaba cerrado con piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Balaam la golpeó",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque vio al ángel de Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el asna cuando el ángel se puso en una angostura?",
+      "explanation": "Al ver al ángel de Jehová en la angostura, el asna se echó debajo de Balaam, y él se enojó y la hirió con el palo.",
+      "bibleReference": "Números 22:26-27",
+      "answers": [
+        {
+          "text": "Se echó debajo de Balaam",
+          "isCorrect": true
+        },
+        {
+          "text": "Se apretó contra la pared",
+          "isCorrect": false
+        },
+        {
+          "text": "Corrió por el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se paró y habló",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces dijo el asna que Balaam la había herido?",
+      "explanation": "Jehová abrió la boca al asna, y ella preguntó a Balaam por qué la había herido estas tres veces.",
+      "bibleReference": "Números 22:28",
+      "answers": [
+        {
+          "text": "Dos veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres veces",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Adónde hizo subir Balac a Balaam el día siguiente?",
+      "explanation": "Balac tomó a Balaam y lo hizo subir a los altos de Baal, y desde allí vio la extremidad del pueblo.",
+      "bibleReference": "Números 22:41",
+      "answers": [
+        {
+          "text": "A los altos de Baal",
+          "isCorrect": true
+        },
+        {
+          "text": "A la cumbre de Pisga",
+          "isCorrect": false
+        },
+        {
+          "text": "A la cumbre de Peor",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de Hor",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

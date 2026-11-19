@@ -9,6 +9,7 @@ import {
   type UserOnboardingSettings,
   type UserSettings,
 } from '@/lib/user-settings';
+import { msg } from '@/lib/api-messages';
 
 const settingsSchema = z
   .object({
@@ -71,7 +72,7 @@ export async function GET(req: NextRequest) {
     const user = await User.findById(session.user.id).lean();
 
     if (!user) {
-      return NextResponse.json({ error: 'Gebruiker niet gevonden' }, { status: 404 });
+      return NextResponse.json({ error: msg('Gebruiker niet gevonden') }, { status: 404 });
     }
 
     return NextResponse.json({
@@ -152,7 +153,7 @@ export async function PUT(req: NextRequest) {
     ).lean();
 
     if (!user) {
-      return NextResponse.json({ error: 'Gebruiker niet gevonden' }, { status: 404 });
+      return NextResponse.json({ error: msg('Gebruiker niet gevonden') }, { status: 404 });
     }
 
     return NextResponse.json({

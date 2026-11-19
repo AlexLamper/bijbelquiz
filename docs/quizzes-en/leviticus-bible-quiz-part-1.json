@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 1",
+  "description": "Ten questions on Leviticus 1: the laws for burnt offerings from the herd, from the flock and from the birds.",
+  "slug": "leviticus-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "From where did Yahweh speak to Moses at the start of Leviticus?",
+      "explanation": "Yahweh called to Moses and spoke to him from the Tent of Meeting.",
+      "bibleReference": "Leviticus 1:1",
+      "answers": [
+        {
+          "text": "From the Tent of Meeting",
+          "isCorrect": true
+        },
+        {
+          "text": "From a burning bush",
+          "isCorrect": false
+        },
+        {
+          "text": "From the gate of the court",
+          "isCorrect": false
+        },
+        {
+          "text": "From the bank of the Jordan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of animal from the herd had to be offered as a burnt offering?",
+      "explanation": "If the burnt offering was from the herd, he had to offer a male without defect at the door of the Tent of Meeting.",
+      "bibleReference": "Leviticus 1:3",
+      "answers": [
+        {
+          "text": "A female without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "A male without defect",
+          "isCorrect": true
+        },
+        {
+          "text": "A male or female of any age",
+          "isCorrect": false
+        },
+        {
+          "text": "The weakest animal of the herd",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the offerer do with his hand so that the burnt offering would be accepted for him?",
+      "explanation": "He was to lay his hand on the head of the burnt offering, and it would be accepted for him to make atonement for him.",
+      "bibleReference": "Leviticus 1:4",
+      "answers": [
+        {
+          "text": "He dipped it in the blood",
+          "isCorrect": false
+        },
+        {
+          "text": "He raised it toward heaven",
+          "isCorrect": false
+        },
+        {
+          "text": "He laid it on the offering's head",
+          "isCorrect": true
+        },
+        {
+          "text": "He placed it on the horns of the altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who presented the blood of the bull and sprinkled it around on the altar?",
+      "explanation": "Aaron's sons, the priests, presented the blood and sprinkled it around on the altar at the door of the Tent of Meeting.",
+      "bibleReference": "Leviticus 1:5",
+      "answers": [
+        {
+          "text": "The man who brought the offering",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses himself",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron's sons, the priests",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which parts of the burnt offering from the herd were washed with water?",
+      "explanation": "The pieces, the head and the fat were laid on the wood, but its innards and its legs were washed with water.",
+      "bibleReference": "Leviticus 1:8-9",
+      "answers": [
+        {
+          "text": "Its head and its fat",
+          "isCorrect": false
+        },
+        {
+          "text": "Its innards and its legs",
+          "isCorrect": true
+        },
+        {
+          "text": "Its skin and its horns",
+          "isCorrect": false
+        },
+        {
+          "text": "Its blood and its tail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which side of the altar was a burnt offering from the flock killed?",
+      "explanation": "He shall kill it on the north side of the altar before Yahweh.",
+      "bibleReference": "Leviticus 1:10-11",
+      "answers": [
+        {
+          "text": "The north side",
+          "isCorrect": true
+        },
+        {
+          "text": "The south side",
+          "isCorrect": false
+        },
+        {
+          "text": "The east side",
+          "isCorrect": false
+        },
+        {
+          "text": "The west side",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which birds could be offered as a burnt offering?",
+      "explanation": "If the burnt offering was of birds, he had to offer it from turtledoves or young pigeons.",
+      "bibleReference": "Leviticus 1:14",
+      "answers": [
+        {
+          "text": "Sparrows or swallows from the field",
+          "isCorrect": false
+        },
+        {
+          "text": "Quails or partridges",
+          "isCorrect": false
+        },
+        {
+          "text": "Ravens or eagles",
+          "isCorrect": false
+        },
+        {
+          "text": "Turtledoves or young pigeons",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was the blood of a bird burnt offering drained out?",
+      "explanation": "The priest wrung off its head and burned it on the altar, and its blood was drained out on the side of the altar.",
+      "bibleReference": "Leviticus 1:15",
+      "answers": [
+        {
+          "text": "Into a bronze bowl",
+          "isCorrect": false
+        },
+        {
+          "text": "On the ground outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "On the side of the altar",
+          "isCorrect": true
+        },
+        {
+          "text": "On the veil of the tent",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were the crop and the feathers of the bird cast?",
+      "explanation": "He took away its crop and its feathers and cast them beside the altar on the east part, in the place of the ashes.",
+      "bibleReference": "Leviticus 1:16",
+      "answers": [
+        {
+          "text": "East of the altar, in the place of the ashes",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the fire on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside the camp, in a clean place far from the tents",
+          "isCorrect": false
+        },
+        {
+          "text": "At the door of the Tent of Meeting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the bird to be torn before it was burned?",
+      "explanation": "He shall tear it by its wings, but shall not divide it apart.",
+      "bibleReference": "Leviticus 1:17",
+      "answers": [
+        {
+          "text": "Cut into two equal halves",
+          "isCorrect": false
+        },
+        {
+          "text": "By its wings, without dividing it apart",
+          "isCorrect": true
+        },
+        {
+          "text": "Cut into twelve small pieces",
+          "isCorrect": false
+        },
+        {
+          "text": "Its wings were cut off and thrown into the fire",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

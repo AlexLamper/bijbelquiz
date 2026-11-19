@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 30",
+  "description": "Ten questions on 1 Samuel 30: the Amalekites burn Ziklag, and David pursues them and recovers everything that was taken.",
+  "slug": "1-samuel-bible-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "On which day did David and his men come to Ziklag?",
+      "explanation": "1 Samuel 30:1 says David and his men came to Ziklag on the third day.",
+      "bibleReference": "1 Samuel 30:1",
+      "answers": [
+        {
+          "text": "On the first day",
+          "isCorrect": false
+        },
+        {
+          "text": "On the third day",
+          "isCorrect": true
+        },
+        {
+          "text": "On the seventh day",
+          "isCorrect": false
+        },
+        {
+          "text": "On the tenth day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who had raided Ziklag and burned it with fire?",
+      "explanation": "The Amalekites had made a raid on the South and on Ziklag, struck Ziklag and burned it with fire.",
+      "bibleReference": "1 Samuel 30:1",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Moabites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Edomites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Amalekites",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the grieving people speak of doing to David?",
+      "explanation": "David was greatly distressed, for the people spoke of stoning him, because every man was grieved for his sons and daughters.",
+      "bibleReference": "1 Samuel 30:6",
+      "answers": [
+        {
+          "text": "Stoning him",
+          "isCorrect": true
+        },
+        {
+          "text": "Making him king",
+          "isCorrect": false
+        },
+        {
+          "text": "Leaving him for Saul",
+          "isCorrect": false
+        },
+        {
+          "text": "Sending him to Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did David ask to bring him the ephod?",
+      "explanation": "David said to Abiathar the priest, the son of Ahimelech, \"Please bring the ephod here to me.\"",
+      "bibleReference": "1 Samuel 30:7",
+      "answers": [
+        {
+          "text": "Samuel the prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "Achish of Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Abiathar the priest",
+          "isCorrect": true
+        },
+        {
+          "text": "Joab his captain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did two hundred men stay behind at the brook Besor?",
+      "explanation": "Two hundred stayed behind, who were so faint that they couldn't go over the brook Besor.",
+      "bibleReference": "1 Samuel 30:10",
+      "answers": [
+        {
+          "text": "They were guarding the women",
+          "isCorrect": false
+        },
+        {
+          "text": "They refused to fight",
+          "isCorrect": false
+        },
+        {
+          "text": "They were too faint to cross the brook",
+          "isCorrect": true
+        },
+        {
+          "text": "They were sent to warn Achish",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did they give the Egyptian they found in the field, besides bread and water?",
+      "explanation": "They gave him a piece of a cake of figs and two clusters of raisins.",
+      "bibleReference": "1 Samuel 30:11-12",
+      "answers": [
+        {
+          "text": "Part of a fig cake and two clusters of raisins",
+          "isCorrect": true
+        },
+        {
+          "text": "Roasted meat and a full skin of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A bowl of red lentil stew and bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Honey, milk, and a measure of parched grain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose servant was the young man of Egypt?",
+      "explanation": "He said, \"I am a young man of Egypt, servant to an Amalekite,\" and his master had left him because he got sick.",
+      "bibleReference": "1 Samuel 30:13",
+      "answers": [
+        {
+          "text": "A Philistine lord's",
+          "isCorrect": false
+        },
+        {
+          "text": "An Amalekite's",
+          "isCorrect": true
+        },
+        {
+          "text": "King Saul's",
+          "isCorrect": false
+        },
+        {
+          "text": "A priest's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who escaped when David struck the Amalekites?",
+      "explanation": "Not a man of them escaped, except four hundred young men who rode on camels and fled.",
+      "bibleReference": "1 Samuel 30:17",
+      "answers": [
+        {
+          "text": "Their king and his servants",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred men on horses",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the Egyptian guide",
+          "isCorrect": false
+        },
+        {
+          "text": "Four hundred young men on camels",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What rule did David make about the plunder?",
+      "explanation": "David said that as his share is who goes down to the battle, so shall his share be who stays with the baggage: they shall share alike.",
+      "bibleReference": "1 Samuel 30:24-25",
+      "answers": [
+        {
+          "text": "Only those who fought receive any plunder",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who stay with the baggage share alike",
+          "isCorrect": true
+        },
+        {
+          "text": "All of the plunder goes to the king alone",
+          "isCorrect": false
+        },
+        {
+          "text": "The plunder is burned as an offering",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did David send some of the plunder when he came to Ziklag?",
+      "explanation": "He sent some of the plunder to the elders of Judah, his friends, as a present from the plunder of Yahweh's enemies.",
+      "bibleReference": "1 Samuel 30:26",
+      "answers": [
+        {
+          "text": "To the elders of Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "To King Achish",
+          "isCorrect": false
+        },
+        {
+          "text": "To the house of Saul",
+          "isCorrect": false
+        },
+        {
+          "text": "To the Egyptians",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

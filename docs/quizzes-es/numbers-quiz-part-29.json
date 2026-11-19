@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre Números 29: las trompetas del mes séptimo, el día diez, la solemnidad de siete días y el octavo día.",
+  "slug": "numbers-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué sería para ellos el primer día del mes séptimo?",
+      "explanation": "El primero del mes séptimo tendrían santa convocación, sin obra servil, y les sería día de sonar las trompetas.",
+      "bibleReference": "Números 29:1",
+      "answers": [
+        {
+          "text": "Día de ayuno y de llanto",
+          "isCorrect": false
+        },
+        {
+          "text": "Día de sonar las trompetas",
+          "isCorrect": true
+        },
+        {
+          "text": "Día de la pascua",
+          "isCorrect": false
+        },
+        {
+          "text": "Día de las primicias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué holocausto se ofrecía ese día, en olor de suavidad a Jehová?",
+      "explanation": "Ese día ofrecían un becerro de la vacada, un carnero y siete corderos de un año sin defecto.",
+      "bibleReference": "Números 29:2",
+      "answers": [
+        {
+          "text": "Dos becerros, dos carneros y diez corderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece becerros, dos carneros y catorce corderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío y dos carneros solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro, un carnero y siete corderos de un año",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer el día diez del mes séptimo?",
+      "explanation": "El diez de ese mes séptimo tendrían santa convocación y afligirían sus almas, sin hacer ninguna obra.",
+      "bibleReference": "Números 29:7",
+      "answers": [
+        {
+          "text": "Afligir sus almas y no hacer ninguna obra",
+          "isCorrect": true
+        },
+        {
+          "text": "Sonar las trompetas todo el día",
+          "isCorrect": false
+        },
+        {
+          "text": "Comer ázimos por siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Celebrar solemnidad por siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se ofrecía por expiación el día diez del mes séptimo?",
+      "explanation": "Se ofrecía un macho cabrío por expiación, además de la ofrenda de las expiaciones por el pecado y del holocausto continuo.",
+      "bibleReference": "Números 29:11",
+      "answers": [
+        {
+          "text": "Un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro de la vacada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete corderos de un año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué comenzaba a los quince días del mes séptimo?",
+      "explanation": "A los quince días del mes séptimo tendrían santa convocación, sin obra servil, y celebrarían solemnidad a Jehová por siete días.",
+      "bibleReference": "Números 29:12",
+      "answers": [
+        {
+          "text": "Una solemnidad a Jehová de ocho días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ayuno de tres días con trompetas",
+          "isCorrect": false
+        },
+        {
+          "text": "La pascua de Jehová y los ázimos",
+          "isCorrect": false
+        },
+        {
+          "text": "Una solemnidad a Jehová de siete días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos becerros de la vacada se ofrecían el primer día de esa solemnidad?",
+      "explanation": "El texto manda ofrecer trece becerros de la vacada, dos carneros y catorce corderos de un año, todos sin defecto.",
+      "bibleReference": "Números 29:13",
+      "answers": [
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece",
+          "isCorrect": true
+        },
+        {
+          "text": "Once",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas décimas de flor de harina acompañaban a cada uno de los dos carneros?",
+      "explanation": "El presente era de flor de harina amasada con aceite: tres décimas con cada becerro y dos décimas con cada carnero.",
+      "bibleReference": "Números 29:14",
+      "answers": [
+        {
+          "text": "Una décima",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres décimas",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos décimas",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce décimas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos becerros se ofrecían el séptimo día de la solemnidad?",
+      "explanation": "El séptimo día se ofrecían siete becerros, dos carneros y catorce corderos de un año sin defecto.",
+      "bibleReference": "Números 29:32",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Ocho",
+          "isCorrect": false
+        },
+        {
+          "text": "Nueve",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se ofrecía en holocausto el octavo día?",
+      "explanation": "El octavo día tenían solemnidad y ofrecían un novillo, un carnero y siete corderos de un año sin defecto.",
+      "bibleReference": "Números 29:35-36",
+      "answers": [
+        {
+          "text": "Trece becerros, dos carneros y catorce corderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos becerros de la vacada y un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete becerros y dos carneros solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Un novillo, un carnero y siete corderos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Además de qué ofrecían todas estas cosas en sus solemnidades?",
+      "explanation": "Estas ofrendas se presentaban además de sus votos y de sus ofrendas libres, para holocaustos, presentes, libaciones y paces.",
+      "bibleReference": "Números 29:39",
+      "answers": [
+        {
+          "text": "Además de los diezmos de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Además de sus votos y sus ofrendas libres",
+          "isCorrect": true
+        },
+        {
+          "text": "Además de las primicias del trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "En lugar del holocausto continuo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

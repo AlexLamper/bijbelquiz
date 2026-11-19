@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Jueces 12: la contienda de Jephté con Ephraim, la palabra en los vados del Jordán y los jueces Ibzan, Elón y Abdón.",
+  "slug": "judges-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué amenazaron a Jephté los varones de Ephraim?",
+      "explanation": "Le dijeron que quemarían a fuego su casa con él, porque no los llamó cuando fue a la guerra contra los hijos de Ammón.",
+      "bibleReference": "Jueces 12:1",
+      "answers": [
+        {
+          "text": "Con quemar a fuego su casa con él",
+          "isCorrect": true
+        },
+        {
+          "text": "Con entregarlo a los Ammonitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con tomar los vados del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Con echarlo de la tierra de Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Jephté sobre haber llamado a Ephraim?",
+      "explanation": "Jephté respondió que él y su pueblo tuvieron gran contienda con los hijos de Ammón, que los llamó y que no lo defendieron de sus manos.",
+      "bibleReference": "Jueces 12:2",
+      "answers": [
+        {
+          "text": "Que Jehová le prohibió llamarlos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los llamó y no lo defendieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no hubo tiempo de llamarlos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Ephraim ya tenía su parte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes juntó Jephté para pelear contra Ephraim?",
+      "explanation": "Jephté juntó a todos los varones de Galaad y peleó contra Ephraim, y los de Galaad hirieron a Ephraim.",
+      "bibleReference": "Jueces 12:4",
+      "answers": [
+        {
+          "text": "A trescientos hombres escogidos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Ammón",
+          "isCorrect": false
+        },
+        {
+          "text": "A todos los varones de Galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "A los de Succoth y Penuel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomaron los Galaaditas para detener a los de Ephraim?",
+      "explanation": "Los Galaaditas tomaron los vados del Jordán a Ephraim y allí preguntaban a los que querían pasar.",
+      "bibleReference": "Jueces 12:5",
+      "answers": [
+        {
+          "text": "La torre de Penuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Las aguas de Beth-bara",
+          "isCorrect": false
+        },
+        {
+          "text": "La cueva de la peña de Etam",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vados del Jordán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué palabra mandaban decir los de Galaad al que quería pasar?",
+      "explanation": "Le decían que dijera Shiboleth, y el que respondía Siboleth, porque no podía pronunciarlo así, era muerto junto a los vados.",
+      "bibleReference": "Jueces 12:6",
+      "answers": [
+        {
+          "text": "Shiboleth",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová-salom",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramath-lehi",
+          "isCorrect": false
+        },
+        {
+          "text": "En-haccore",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos murieron entonces de los de Ephraim?",
+      "explanation": "El texto dice que murieron entonces cuarenta y dos mil de los de Ephraim.",
+      "bibleReference": "Jueces 12:6",
+      "answers": [
+        {
+          "text": "Veintidós mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintitrés mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y dos mil",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años juzgó Jephté a Israel?",
+      "explanation": "Jephté juzgó a Israel seis años; luego murió y fue sepultado en una de las ciudades de Galaad.",
+      "bibleReference": "Jueces 12:7",
+      "answers": [
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis años",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hijos y cuántas hijas tuvo Ibzan de Beth-lehem, que juzgó a Israel después de Jephté?",
+      "explanation": "Ibzan tuvo treinta hijos y treinta hijas, y juzgó a Israel siete años.",
+      "bibleReference": "Jueces 12:8-9",
+      "answers": [
+        {
+          "text": "Cuarenta hijos y treinta nietos",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta hijos y una hija",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta hijos y treinta hijas",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta hijos y veinte hijas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde fue sepultado Elón, el Zabulonita?",
+      "explanation": "Elón, Zabulonita, murió y fue sepultado en Ajalón, en la tierra de Zabulón.",
+      "bibleReference": "Jueces 12:12",
+      "answers": [
+        {
+          "text": "En Ajalón",
+          "isCorrect": true
+        },
+        {
+          "text": "En Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "En Piratón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Camón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre cuántos asnos cabalgaban los cuarenta hijos y treinta nietos de Abdón?",
+      "explanation": "El texto dice que Abdón hijo de Hillel tuvo cuarenta hijos y treinta nietos, que cabalgaban sobre setenta asnos.",
+      "bibleReference": "Jueces 12:14",
+      "answers": [
+        {
+          "text": "Treinta asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta asnos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien asnos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

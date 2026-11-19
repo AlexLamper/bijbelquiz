@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Jueces 9: Abimelech hecho rey en Sichêm, la parábola de los árboles de Jotham y el fin de Abimelech en Thebes.",
+  "slug": "judges-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué quería Abimelech que dijeran a oídos de todos los de Sichêm?",
+      "explanation": "Abimelech quería que les preguntaran qué tenían por mejor: que los señorearan setenta hombres, todos los hijos de Jerobaal, o que los señoreara un solo varón.",
+      "bibleReference": "Jueces 9:1-2",
+      "answers": [
+        {
+          "text": "Que era mejor que los señoreara un solo varón",
+          "isCorrect": true
+        },
+        {
+          "text": "Que repartieran la tierra entre los setenta hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que edificaran un templo a Baal-berith",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eligieran a Jotham por rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde salieron los setenta siclos de plata que le dieron a Abimelech?",
+      "explanation": "Le dieron setenta siclos de plata del templo de Baal-berith, con los que alquiló hombres ociosos y vagabundos.",
+      "bibleReference": "Jueces 9:4",
+      "answers": [
+        {
+          "text": "Del despojo de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Del templo de Baal-berith",
+          "isCorrect": true
+        },
+        {
+          "text": "De la casa de su padre en Ophra",
+          "isCorrect": false
+        },
+        {
+          "text": "Del tesoro del rey de Ammón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién de los hijos de Jerobaal quedó con vida porque se escondió?",
+      "explanation": "Quedó Jotham, el más pequeño hijo de Jerobaal, que se escondió cuando los demás fueron muertos sobre una piedra.",
+      "bibleReference": "Jueces 9:5",
+      "answers": [
+        {
+          "text": "Jotham",
+          "isCorrect": true
+        },
+        {
+          "text": "Zebul",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaal",
+          "isCorrect": false
+        },
+        {
+          "text": "Jether",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se puso Jotham para alzar la voz y hablar a los varones de Sichêm?",
+      "explanation": "Jotham fue y se puso en la cumbre del monte de Gerizim, y alzando su voz clamó.",
+      "bibleReference": "Jueces 9:7",
+      "answers": [
+        {
+          "text": "En el monte de Salmón",
+          "isCorrect": false
+        },
+        {
+          "text": "A la entrada de la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En la torre de Sichêm",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cumbre del monte de Gerizim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "En la parábola de Jotham, ¿qué árboles rechazaron reinar antes de que hablaran al escaramujo?",
+      "explanation": "Los árboles lo pidieron primero a la oliva, luego a la higuera y luego a la vid, y las tres se negaron.",
+      "bibleReference": "Jueces 9:8-13",
+      "answers": [
+        {
+          "text": "Los cedros del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "El alcornoque y la palmera",
+          "isCorrect": false
+        },
+        {
+          "text": "La oliva, la higuera y la vid",
+          "isCorrect": true
+        },
+        {
+          "text": "El granado, la encina y el sauce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el escaramujo que saldría de él si no lo elegían de verdad por rey?",
+      "explanation": "El escaramujo dijo que, si no, saliera fuego del escaramujo que devorase los cedros del Líbano.",
+      "bibleReference": "Jueces 9:15",
+      "answers": [
+        {
+          "text": "Una sombra que los cubra",
+          "isCorrect": false
+        },
+        {
+          "text": "Una maldición sobre Jerobaal",
+          "isCorrect": false
+        },
+        {
+          "text": "Espinas y abrojos del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego que devore los cedros del Líbano",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué envió Dios entre Abimelech y los hombres de Sichêm después de que él dominó tres años?",
+      "explanation": "Dios envió un espíritu malo entre Abimelech y los hombres de Sichêm, y los de Sichêm se levantaron contra él.",
+      "bibleReference": "Jueces 9:22-23",
+      "answers": [
+        {
+          "text": "Un espíritu malo",
+          "isCorrect": true
+        },
+        {
+          "text": "Hambre en toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Un varón profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ángel con espada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Abimelech con la ciudad de Sichêm después de combatirla y tomarla?",
+      "explanation": "Después de tomarla, mató al pueblo que estaba en ella, asoló la ciudad y la sembró de sal.",
+      "bibleReference": "Jueces 9:44-45",
+      "answers": [
+        {
+          "text": "La repartió entre sus hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "La asoló y la sembró de sal",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificó allí una torre fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "La entregó a Zebul",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo murieron los que estaban en la torre de Sichêm?",
+      "explanation": "Cada uno cortó una rama, las pusieron junto a la fortaleza y les prendieron fuego, y así murieron todos los de la torre.",
+      "bibleReference": "Jueces 9:48-49",
+      "answers": [
+        {
+          "text": "A espada en la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Cayó la casa sobre ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con fuego prendido en ramas junto a la fortaleza",
+          "isCorrect": true
+        },
+        {
+          "text": "Fueron llevados cautivos a Aruma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dejó caer una mujer sobre la cabeza de Abimelech en Thebes?",
+      "explanation": "Una mujer dejó caer un pedazo de una rueda de molino sobre su cabeza y le quebró los cascos.",
+      "bibleReference": "Jueces 9:53",
+      "answers": [
+        {
+          "text": "Una piedra de la muralla",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pedazo de una rueda de molino",
+          "isCorrect": true
+        },
+        {
+          "text": "Una tea encendida de la fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cántaro lleno de agua",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

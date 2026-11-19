@@ -1,0 +1,242 @@
+{
+  "title": "2 Chronicles Bible Quiz - Chapter 3",
+  "description": "Ten questions on 2 Chronicles 3: Solomon begins to build Yahweh's house on Mount Moriah, with the most holy place, the cherubim and the two pillars.",
+  "slug": "2-chronicles-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "On which mountain did Solomon begin to build Yahweh's house?",
+      "explanation": "2 Chronicles 3:1 says Solomon began to build Yahweh's house at Jerusalem on Mount Moriah.",
+      "bibleReference": "2 Chronicles 3:1",
+      "answers": [
+        {
+          "text": "Mount Carmel",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Moriah",
+          "isCorrect": true
+        },
+        {
+          "text": "Mount Hermon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On whose threshing floor was the place that David had appointed?",
+      "explanation": "2 Chronicles 3:1 says it was on the threshing floor of Ornan the Jebusite.",
+      "bibleReference": "2 Chronicles 3:1",
+      "answers": [
+        {
+          "text": "Ornan the Jebusite",
+          "isCorrect": true
+        },
+        {
+          "text": "Nabal the Carmelite",
+          "isCorrect": false
+        },
+        {
+          "text": "Barzillai the Gileadite",
+          "isCorrect": false
+        },
+        {
+          "text": "Obed-Edom the Gittite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which year of his reign did Solomon begin to build?",
+      "explanation": "2 Chronicles 3:2 says he began to build on the second day of the second month, in the fourth year of his reign.",
+      "bibleReference": "2 Chronicles 3:1-2",
+      "answers": [
+        {
+          "text": "The first year",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventh year",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth year",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourth year",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to verse 6, where was the gold from?",
+      "explanation": "2 Chronicles 3:6 says the gold was gold from Parvaim.",
+      "bibleReference": "2 Chronicles 3:6",
+      "answers": [
+        {
+          "text": "Sheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Parvaim",
+          "isCorrect": true
+        },
+        {
+          "text": "Tarshish",
+          "isCorrect": false
+        },
+        {
+          "text": "Havilah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much fine gold was used to overlay the most holy place?",
+      "explanation": "2 Chronicles 3:8 says he overlaid it with fine gold, amounting to six hundred talents.",
+      "bibleReference": "2 Chronicles 3:8",
+      "answers": [
+        {
+          "text": "Sixty talents",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Three thousand talents",
+          "isCorrect": false
+        },
+        {
+          "text": "Six hundred talents",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the weight of the nails?",
+      "explanation": "2 Chronicles 3:9 says the weight of the nails was fifty shekels of gold.",
+      "bibleReference": "2 Chronicles 3:9",
+      "answers": [
+        {
+          "text": "Twenty shekels of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty shekels of gold",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten shekels of bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred shekels of iron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which way were the faces of the two cherubim turned?",
+      "explanation": "2 Chronicles 3:13 says the cherubim stood on their feet, and their faces were toward the house.",
+      "bibleReference": "2 Chronicles 3:13",
+      "answers": [
+        {
+          "text": "Toward the house",
+          "isCorrect": true
+        },
+        {
+          "text": "Toward the east",
+          "isCorrect": false
+        },
+        {
+          "text": "Toward the north",
+          "isCorrect": false
+        },
+        {
+          "text": "Toward the south",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what was the veil ornamented?",
+      "explanation": "2 Chronicles 3:14 says he made the veil of blue, purple, crimson, and fine linen, and ornamented it with cherubim.",
+      "bibleReference": "2 Chronicles 3:14",
+      "answers": [
+        {
+          "text": "Pomegranates",
+          "isCorrect": false
+        },
+        {
+          "text": "Lilies",
+          "isCorrect": false
+        },
+        {
+          "text": "Cherubim",
+          "isCorrect": true
+        },
+        {
+          "text": "Stars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How high were the two pillars made before the house?",
+      "explanation": "2 Chronicles 3:15 says the two pillars were thirty-five cubits high, with a capital of five cubits on top of each.",
+      "bibleReference": "2 Chronicles 3:15",
+      "answers": [
+        {
+          "text": "Twelve cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty cubits",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty-five cubits",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What name was given to the pillar on the right hand?",
+      "explanation": "2 Chronicles 3:17 says the pillar on the right hand was called Jachin, and the one on the left Boaz.",
+      "bibleReference": "2 Chronicles 3:17",
+      "answers": [
+        {
+          "text": "Jachin",
+          "isCorrect": true
+        },
+        {
+          "text": "Boaz",
+          "isCorrect": false
+        },
+        {
+          "text": "Ariel",
+          "isCorrect": false
+        },
+        {
+          "text": "Elon",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

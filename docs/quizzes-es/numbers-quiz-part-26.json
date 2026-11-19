@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Números 26: el segundo censo en los campos de Moab, las familias de las tribus y los contados de Israel.",
+  "slug": "numbers-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Desde qué edad se debía tomar la suma de la congregación?",
+      "explanation": "Jehová mandó tomar la suma de toda la congregación de veinte años arriba, de todos los que pudieran salir a la guerra.",
+      "bibleReference": "Números 26:2",
+      "answers": [
+        {
+          "text": "De un mes arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De treinta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De veinte años arriba",
+          "isCorrect": true
+        },
+        {
+          "text": "De cincuenta años arriba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron los contados de las familias de los Rubenitas?",
+      "explanation": "El texto dice que sus contados fueron cuarenta y tres mil setecientos y treinta.",
+      "bibleReference": "Números 26:7",
+      "answers": [
+        {
+          "text": "Veinte y dos mil y doscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y tres mil setecientos y treinta",
+          "isCorrect": true
+        },
+        {
+          "text": "Setenta y seis mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta mil y quinientos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto acerca de los hijos de Coré?",
+      "explanation": "El texto dice que los hijos de Coré no murieron.",
+      "bibleReference": "Números 26:11",
+      "answers": [
+        {
+          "text": "Que no murieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Que fueron contados con Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "Que recibieron doble heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que salieron del campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hijos de Judá murieron en la tierra de Canaán?",
+      "explanation": "El texto dice que Er y Onán, hijos de Judá, murieron en la tierra de Canaán.",
+      "bibleReference": "Números 26:19",
+      "answers": [
+        {
+          "text": "Sela y Phares",
+          "isCorrect": false
+        },
+        {
+          "text": "Zera y Hamul",
+          "isCorrect": false
+        },
+        {
+          "text": "Hesrón y Carmi",
+          "isCorrect": false
+        },
+        {
+          "text": "Er y Onán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién no tuvo hijos, sino solamente hijas?",
+      "explanation": "Salphaad, hijo de Hepher, no tuvo hijos sino hijas, cuyos nombres eran Maala, Noa, Hogla, Milca y Tirsa.",
+      "bibleReference": "Números 26:33",
+      "answers": [
+        {
+          "text": "Machîr, hijo de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "Galaad, hijo de Machîr",
+          "isCorrect": false
+        },
+        {
+          "text": "Salphaad, hijo de Hepher",
+          "isCorrect": true
+        },
+        {
+          "text": "Semida, hijo de Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron en total los contados de los hijos de Israel?",
+      "explanation": "El texto dice que los contados de los hijos de Israel fueron seiscientos y un mil setecientos y treinta.",
+      "bibleReference": "Números 26:51",
+      "answers": [
+        {
+          "text": "Seiscientos y un mil setecientos y treinta",
+          "isCorrect": true
+        },
+        {
+          "text": "Seiscientos y tres mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quinientos y un mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y tres mil setecientos y treinta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según estas palabras de Jehová, ¿cómo sería repartida la tierra?",
+      "explanation": "El texto dice que la tierra será repartida por suerte, y que heredarán por los nombres de las tribus de sus padres.",
+      "bibleReference": "Números 26:55",
+      "answers": [
+        {
+          "text": "Por la edad de cada uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Por suerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Por el orden de los campamentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el precio que cada uno pagase",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue la mujer de Amram, y qué hijos le nacieron?",
+      "explanation": "La mujer de Amram se llamó Jochâbed, hija de Leví, y de Amram ella parió a Aarón, a Moisés y a María su hermana.",
+      "bibleReference": "Números 26:59",
+      "answers": [
+        {
+          "text": "Sera, madre de Heber y Malchîel",
+          "isCorrect": false
+        },
+        {
+          "text": "Cozbi, madre de Zimri y Salu",
+          "isCorrect": false
+        },
+        {
+          "text": "Maala, madre de Hogla y Milca",
+          "isCorrect": false
+        },
+        {
+          "text": "Jochâbed, madre de Aarón, Moisés y María",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué murieron Nadab y Abiú?",
+      "explanation": "El texto dice que Nadab y Abiú murieron cuando ofrecieron fuego extraño delante de Jehová.",
+      "bibleReference": "Números 26:61",
+      "answers": [
+        {
+          "text": "Porque tocaron un muerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ofrecieron fuego extraño",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque entraron detrás del velo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque murmuraron contra Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "De los que Moisés y Aarón contaron en el desierto de Sinaí, ¿quiénes quedaron?",
+      "explanation": "Jehová les había dicho que habían de morir en el desierto, y no quedó varón de ellos sino Caleb hijo de Jephone y Josué hijo de Nun.",
+      "bibleReference": "Números 26:64-65",
+      "answers": [
+        {
+          "text": "Moisés y Aarón el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar y Phinees, los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente los Levitas contados",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb hijo de Jephone y Josué hijo de Nun",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

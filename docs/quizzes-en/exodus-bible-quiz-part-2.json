@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 2",
+  "description": "Ten questions on Exodus 2: the birth of Moses, his rescue from the river, his flight to Midian and God hearing Israel's cry.",
+  "slug": "exodus-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How long did Moses' mother hide him after he was born?",
+      "explanation": "When she saw that he was a fine child, she hid him three months.",
+      "bibleReference": "Exodus 2:2",
+      "answers": [
+        {
+          "text": "Three months",
+          "isCorrect": true
+        },
+        {
+          "text": "Three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "One year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did his mother put the baby in?",
+      "explanation": "She took a papyrus basket, coated it with tar and pitch, put the child in it and laid it in the reeds by the river's bank.",
+      "bibleReference": "Exodus 2:3",
+      "answers": [
+        {
+          "text": "A wooden chest lined with wool",
+          "isCorrect": false
+        },
+        {
+          "text": "A clay jar sealed with wax",
+          "isCorrect": false
+        },
+        {
+          "text": "A papyrus basket coated with tar",
+          "isCorrect": true
+        },
+        {
+          "text": "A small boat made of cedar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who stood far off to see what would happen to the baby?",
+      "explanation": "His sister stood far off to see what would be done to him.",
+      "bibleReference": "Exodus 2:4",
+      "answers": [
+        {
+          "text": "His father",
+          "isCorrect": false
+        },
+        {
+          "text": "His sister",
+          "isCorrect": true
+        },
+        {
+          "text": "His brother",
+          "isCorrect": false
+        },
+        {
+          "text": "A midwife",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who found the basket among the reeds?",
+      "explanation": "Pharaoh's daughter came down to bathe at the river, saw the basket among the reeds and sent her servant to get it.",
+      "bibleReference": "Exodus 2:5",
+      "answers": [
+        {
+          "text": "A fisherman",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the midwives",
+          "isCorrect": false
+        },
+        {
+          "text": "An Egyptian soldier",
+          "isCorrect": false
+        },
+        {
+          "text": "Pharaoh's daughter",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did Moses' sister call when she offered to find a nurse for the child?",
+      "explanation": "His sister offered to call a nurse from the Hebrew women, and when Pharaoh's daughter said \"Go,\" she went and called the child's mother.",
+      "bibleReference": "Exodus 2:7-8",
+      "answers": [
+        {
+          "text": "An Egyptian servant",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the Hebrew midwives",
+          "isCorrect": false
+        },
+        {
+          "text": "The child's own mother",
+          "isCorrect": true
+        },
+        {
+          "text": "Pharaoh's wife",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Pharaoh's daughter name the child Moses?",
+      "explanation": "She named him Moses and said, \"Because I drew him out of the water.\"",
+      "bibleReference": "Exodus 2:10",
+      "answers": [
+        {
+          "text": "Because he cried when she opened the basket",
+          "isCorrect": false
+        },
+        {
+          "text": "Because she drew him out of the water",
+          "isCorrect": true
+        },
+        {
+          "text": "Because he was a Hebrew",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he was born in the river",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses do when he saw an Egyptian striking a Hebrew?",
+      "explanation": "Moses looked this way and that, and when he saw no one, he killed the Egyptian and hid him in the sand.",
+      "bibleReference": "Exodus 2:11-12",
+      "answers": [
+        {
+          "text": "He killed the Egyptian and hid him in the sand",
+          "isCorrect": true
+        },
+        {
+          "text": "He reported the Egyptian to Pharaoh",
+          "isCorrect": false
+        },
+        {
+          "text": "He took the Hebrew to his own house",
+          "isCorrect": false
+        },
+        {
+          "text": "He ran away without doing anything",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which land did Moses flee from Pharaoh?",
+      "explanation": "When Pharaoh sought to kill him, Moses fled and lived in the land of Midian, where he sat down by a well.",
+      "bibleReference": "Exodus 2:15",
+      "answers": [
+        {
+          "text": "Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "Goshen",
+          "isCorrect": false
+        },
+        {
+          "text": "Sidon",
+          "isCorrect": false
+        },
+        {
+          "text": "Midian",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who became Moses' wife in Midian?",
+      "explanation": "Moses was content to dwell with the man, and he gave Moses Zipporah, his daughter.",
+      "bibleReference": "Exodus 2:21",
+      "answers": [
+        {
+          "text": "Zipporah",
+          "isCorrect": true
+        },
+        {
+          "text": "Elisheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Jochebed",
+          "isCorrect": false
+        },
+        {
+          "text": "Puah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When the children of Israel cried out because of their bondage, what did God remember?",
+      "explanation": "God heard their groaning and remembered his covenant with Abraham, with Isaac and with Jacob.",
+      "bibleReference": "Exodus 2:23-24",
+      "answers": [
+        {
+          "text": "The kindness of the Hebrew midwives",
+          "isCorrect": false
+        },
+        {
+          "text": "The bones of Joseph",
+          "isCorrect": false
+        },
+        {
+          "text": "His covenant with Abraham, Isaac and Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "The promise Moses had made in Midian",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

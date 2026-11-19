@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 15",
+  "description": "Ten questions on Joshua 15: the borders and cities of Judah, Caleb's conquest, and Achsah's springs.",
+  "slug": "joshua-bible-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Judah's lot reached southward to the border of which land?",
+      "explanation": "The lot for Judah reached to the border of Edom, to the wilderness of Zin southward.",
+      "bibleReference": "Joshua 15:1",
+      "answers": [
+        {
+          "text": "Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Ammon",
+          "isCorrect": false
+        },
+        {
+          "text": "Philistia",
+          "isCorrect": false
+        },
+        {
+          "text": "Edom",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the east border of Judah?",
+      "explanation": "The east border was the Salt Sea, even to the end of the Jordan.",
+      "bibleReference": "Joshua 15:5",
+      "answers": [
+        {
+          "text": "The great sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The Salt Sea",
+          "isCorrect": true
+        },
+        {
+          "text": "The sea of Chinnereth",
+          "isCorrect": false
+        },
+        {
+          "text": "The river Jabbok",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose stone did the border go up to?",
+      "explanation": "The border went up to the stone of Bohan the son of Reuben.",
+      "bibleReference": "Joshua 15:6",
+      "answers": [
+        {
+          "text": "Bohan the son of Reuben",
+          "isCorrect": true
+        },
+        {
+          "text": "Achan the son of Carmi",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar the son of Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Jair the son of Manasseh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the border description, what other name is given for \"the Jebusite\"?",
+      "explanation": "The border went up by the valley of the son of Hinnom to the side of the Jebusite, also called Jerusalem.",
+      "bibleReference": "Joshua 15:8",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Beersheba",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which three sons of Anak did Caleb drive out?",
+      "explanation": "Caleb drove out the three sons of Anak: Sheshai, Ahiman, and Talmai.",
+      "bibleReference": "Joshua 15:14",
+      "answers": [
+        {
+          "text": "Sheshai, Ahiman, and Talmai",
+          "isCorrect": true
+        },
+        {
+          "text": "Evi, Rekem, and Zur",
+          "isCorrect": false
+        },
+        {
+          "text": "Hoham, Piram, and Japhia",
+          "isCorrect": false
+        },
+        {
+          "text": "Mahlah, Noah, and Hoglah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Debir called before?",
+      "explanation": "The name of Debir before was Kiriath Sepher.",
+      "bibleReference": "Joshua 15:15",
+      "answers": [
+        {
+          "text": "Kiriath Arba",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Shemesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Sepher",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who took Kiriath Sepher and received Achsah as his wife?",
+      "explanation": "Othniel the son of Kenaz, the brother of Caleb, took it, and Caleb gave him Achsah his daughter as wife.",
+      "bibleReference": "Joshua 15:16-17",
+      "answers": [
+        {
+          "text": "Achan the son of Carmi",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinehas the son of Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Othniel the son of Kenaz",
+          "isCorrect": true
+        },
+        {
+          "text": "Joshua the son of Nun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Caleb give Achsah when she asked for springs of water?",
+      "explanation": "Achsah asked for springs of water because she had been set in the land of the South, and Caleb gave her the upper springs and the lower springs.",
+      "bibleReference": "Joshua 15:19",
+      "answers": [
+        {
+          "text": "A flock of sheep and goats",
+          "isCorrect": false
+        },
+        {
+          "text": "The upper springs and the lower springs",
+          "isCorrect": true
+        },
+        {
+          "text": "A city in the hill country",
+          "isCorrect": false
+        },
+        {
+          "text": "Silver and gold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which of these is listed among Judah's cities in the wilderness?",
+      "explanation": "The cities in the wilderness were Beth Arabah, Middin, Secacah, Nibshan, the City of Salt, and En Gedi.",
+      "bibleReference": "Joshua 15:61-62",
+      "answers": [
+        {
+          "text": "Shechem",
+          "isCorrect": false
+        },
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gedi",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom could the children of Judah not drive out of Jerusalem?",
+      "explanation": "The children of Judah could not drive out the Jebusites, who live with them at Jerusalem to this day.",
+      "bibleReference": "Joshua 15:63",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Jebusites",
+          "isCorrect": true
+        },
+        {
+          "text": "The Anakim",
+          "isCorrect": false
+        },
+        {
+          "text": "The Amorites",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

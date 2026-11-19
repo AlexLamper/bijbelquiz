@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 25",
+  "description": "Ten questions on Matthew 25: the ten virgins and their lamps, the servants entrusted with talents, and the sheep separated from the goats.",
+  "slug": "matthew-bible-quiz-part-25",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How many of the ten virgins were foolish?",
+      "explanation": "Of the ten virgins who took their lamps and went out to meet the bridegroom, five were foolish and five were wise.",
+      "bibleReference": "Matthew 25:1-2",
+      "answers": [
+        {
+          "text": "Two",
+          "isCorrect": false
+        },
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Five",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the foolish virgins fail to take with them?",
+      "explanation": "The foolish ones took their lamps but took no oil with them, while the wise took oil in their vessels with their lamps.",
+      "bibleReference": "Matthew 25:3-4",
+      "answers": [
+        {
+          "text": "Oil",
+          "isCorrect": true
+        },
+        {
+          "text": "Bread",
+          "isCorrect": false
+        },
+        {
+          "text": "A second lamp",
+          "isCorrect": false
+        },
+        {
+          "text": "A cloak for the night",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what time was there a cry that the bridegroom was coming?",
+      "explanation": "While the bridegroom delayed they all slumbered and slept, but at midnight there was a cry that the bridegroom was coming.",
+      "bibleReference": "Matthew 25:5-6",
+      "answers": [
+        {
+          "text": "At evening",
+          "isCorrect": false
+        },
+        {
+          "text": "At midnight",
+          "isCorrect": true
+        },
+        {
+          "text": "At the third hour",
+          "isCorrect": false
+        },
+        {
+          "text": "At daybreak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened while the foolish virgins went away to buy oil?",
+      "explanation": "While they went away to buy, the bridegroom came, those who were ready went in with him to the wedding feast, and the door was shut.",
+      "bibleReference": "Matthew 25:10",
+      "answers": [
+        {
+          "text": "The other virgins waited for them",
+          "isCorrect": false
+        },
+        {
+          "text": "Their lamps were filled by the wise",
+          "isCorrect": false
+        },
+        {
+          "text": "The bridegroom turned back",
+          "isCorrect": false
+        },
+        {
+          "text": "The bridegroom came and the door was shut",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did the man divide his goods among his own servants before his journey?",
+      "explanation": "He gave five talents to one, two to another, and one to another, to each according to his own ability.",
+      "bibleReference": "Matthew 25:15",
+      "answers": [
+        {
+          "text": "Five talents to one, two to another, and one to another",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten talents to each of the three servants",
+          "isCorrect": false
+        },
+        {
+          "text": "One talent to each of the three servants",
+          "isCorrect": false
+        },
+        {
+          "text": "All of his goods to the eldest servant",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the servant who received the one talent do with it?",
+      "explanation": "He who received the one talent went away, dug in the earth, and hid his lord's money.",
+      "bibleReference": "Matthew 25:18",
+      "answers": [
+        {
+          "text": "He traded with it in the city",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave it to his fellow servants",
+          "isCorrect": false
+        },
+        {
+          "text": "He dug in the earth and hid his lord's money",
+          "isCorrect": true
+        },
+        {
+          "text": "He deposited it with the bankers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the lord say to the servant who brought him another five talents?",
+      "explanation": "His lord called him a good and faithful servant, said he had been faithful over a few things and would be set over many, and told him to enter into the joy of his lord.",
+      "bibleReference": "Matthew 25:20-21",
+      "answers": [
+        {
+          "text": "That he should keep the talents for himself",
+          "isCorrect": false
+        },
+        {
+          "text": "That he should go on a longer journey",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would be given the household to sell",
+          "isCorrect": false
+        },
+        {
+          "text": "That he should enter into the joy of his lord",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What reason did the servant with one talent give for hiding it?",
+      "explanation": "He said he knew his lord to be a hard man who reaped where he did not sow, and that he was afraid, so he hid the talent in the earth.",
+      "bibleReference": "Matthew 25:24-25",
+      "answers": [
+        {
+          "text": "That he had lost the other servants' money",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was afraid of his lord",
+          "isCorrect": true
+        },
+        {
+          "text": "That the journey had been far too long",
+          "isCorrect": false
+        },
+        {
+          "text": "That the bankers would not take it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How will the Son of Man separate the nations gathered before him?",
+      "explanation": "He will separate them one from another as a shepherd separates the sheep from the goats, setting the sheep on his right hand and the goats on the left.",
+      "bibleReference": "Matthew 25:32-33",
+      "answers": [
+        {
+          "text": "As a shepherd separates the sheep from the goats",
+          "isCorrect": true
+        },
+        {
+          "text": "As a farmer separates wheat from chaff",
+          "isCorrect": false
+        },
+        {
+          "text": "As a fisherman sorts good fish from bad",
+          "isCorrect": false
+        },
+        {
+          "text": "As a builder sets stone upon stone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the King's answer, why does he say that they did it to him?",
+      "explanation": "The King answers them that because they did it to one of the least of these his brothers, they did it to him.",
+      "bibleReference": "Matthew 25:40",
+      "answers": [
+        {
+          "text": "Because they kept all the commandments",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they did it to one of the least of these",
+          "isCorrect": true
+        },
+        {
+          "text": "Because they waited for him until midnight",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they doubled what he entrusted to them",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

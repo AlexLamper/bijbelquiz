@@ -1,0 +1,242 @@
+{
+  "title": "Daniel Bible Quiz - Chapter 1",
+  "description": "Ten questions on Daniel 1: the youths taken to Babylon, their new names, the ten-day test with vegetables and water, and their wisdom before the king.",
+  "slug": "daniel-bible-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "In the third year of the reign of which king of Judah did Nebuchadnezzar besiege Jerusalem?",
+      "explanation": "In the third year of the reign of Jehoiakim king of Judah, Nebuchadnezzar king of Babylon came to Jerusalem and besieged it.",
+      "bibleReference": "Daniel 1:1",
+      "answers": [
+        {
+          "text": "Hezekiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehoiakim",
+          "isCorrect": true
+        },
+        {
+          "text": "Zedekiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Josiah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Nebuchadnezzar carry the vessels of the house of God?",
+      "explanation": "He carried them into the land of Shinar, to the house of his god, and brought the vessels into the treasure house of his god.",
+      "bibleReference": "Daniel 1:2",
+      "answers": [
+        {
+          "text": "To the citadel of Susa, into the king's armory",
+          "isCorrect": false
+        },
+        {
+          "text": "To the plain of Dura, into a new temple",
+          "isCorrect": false
+        },
+        {
+          "text": "To the province of Elam, into the royal palace",
+          "isCorrect": false
+        },
+        {
+          "text": "To the land of Shinar, into the treasure house of his god",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did the king tell to bring in some of the children of Israel?",
+      "explanation": "The king spoke to Ashpenaz the master of his eunuchs, that he should bring in some of the children of Israel, of the royal offspring and of the nobles.",
+      "bibleReference": "Daniel 1:3",
+      "answers": [
+        {
+          "text": "Arioch, the captain of the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "Belteshazzar, the master of the magicians",
+          "isCorrect": false
+        },
+        {
+          "text": "Ashpenaz, the master of his eunuchs",
+          "isCorrect": true
+        },
+        {
+          "text": "Darius, the governor of the province",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For how long were the chosen youths to be nourished before standing before the king?",
+      "explanation": "The king appointed them a daily portion of his dainties and his wine, and ordered that they be nourished three years, so that at the end of that time they should stand before him.",
+      "bibleReference": "Daniel 1:5",
+      "answers": [
+        {
+          "text": "Three years",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve months",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did the prince of the eunuchs give to Daniel?",
+      "explanation": "The prince of the eunuchs gave names to them, and to Daniel he gave the name Belteshazzar.",
+      "bibleReference": "Daniel 1:7",
+      "answers": [
+        {
+          "text": "Shadrach",
+          "isCorrect": false
+        },
+        {
+          "text": "Meshach",
+          "isCorrect": false
+        },
+        {
+          "text": "Abednego",
+          "isCorrect": false
+        },
+        {
+          "text": "Belteshazzar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Daniel purpose in his heart?",
+      "explanation": "Daniel purposed in his heart that he would not defile himself with the king's dainties or with the wine the king drank, and he asked the prince of the eunuchs that he might not defile himself.",
+      "bibleReference": "Daniel 1:8",
+      "answers": [
+        {
+          "text": "That he would learn the language of the Chaldeans",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would not defile himself with the king's food and wine",
+          "isCorrect": true
+        },
+        {
+          "text": "That he would not stand before the king",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would serve the prince of the eunuchs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Daniel ask the steward to give them during the test?",
+      "explanation": "Daniel asked the steward to test his servants ten days and to give them vegetables to eat and water to drink.",
+      "bibleReference": "Daniel 1:12",
+      "answers": [
+        {
+          "text": "Vegetables to eat and water to drink",
+          "isCorrect": true
+        },
+        {
+          "text": "Bread and milk from the king's table",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's dainties without the wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Grain, oil and a little wine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the four youths look at the end of the ten days?",
+      "explanation": "At the end of ten days their faces appeared fairer, and they were fatter in flesh, than all the youths who ate of the king's dainties.",
+      "bibleReference": "Daniel 1:15",
+      "answers": [
+        {
+          "text": "They looked worse than the other youths",
+          "isCorrect": false
+        },
+        {
+          "text": "They looked exactly like the other youths",
+          "isCorrect": false
+        },
+        {
+          "text": "Their faces were fairer and they were fatter in flesh",
+          "isCorrect": true
+        },
+        {
+          "text": "They were pale and had lost strength",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much better than the magicians and enchanters did the king find them?",
+      "explanation": "In every matter of wisdom and understanding about which the king inquired, he found them ten times better than all the magicians and enchanters in all his realm.",
+      "bibleReference": "Daniel 1:20",
+      "answers": [
+        {
+          "text": "Three times better",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten times better",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven times better",
+          "isCorrect": false
+        },
+        {
+          "text": "Twice as good",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Until the first year of which king did Daniel continue?",
+      "explanation": "The chapter closes by saying that Daniel continued even to the first year of king Cyrus.",
+      "bibleReference": "Daniel 1:21",
+      "answers": [
+        {
+          "text": "Nebuchadnezzar",
+          "isCorrect": false
+        },
+        {
+          "text": "Belshazzar",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehoiakim",
+          "isCorrect": false
+        },
+        {
+          "text": "Cyrus",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

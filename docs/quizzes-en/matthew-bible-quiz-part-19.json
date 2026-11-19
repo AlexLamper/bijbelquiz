@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 19",
+  "description": "Ten questions on Matthew 19: a question about divorce, little children brought to Jesus, the rich young man, and the promise to those who follow.",
+  "slug": "matthew-bible-quiz-part-19",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the Pharisees ask Jesus in order to test him?",
+      "explanation": "Pharisees came to him, testing him, and asked whether it is lawful for a man to divorce his wife for any reason.",
+      "bibleReference": "Matthew 19:3",
+      "answers": [
+        {
+          "text": "Whether a man may divorce his wife for any reason",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether it is lawful to pay taxes to Caesar or not",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether a man may do work on the Sabbath day",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether the dead will rise in the resurrection",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the words Jesus quoted, what does a man do for this cause?",
+      "explanation": "He answered that for this cause a man shall leave his father and mother and be joined to his wife, and the two shall become one flesh.",
+      "bibleReference": "Matthew 19:4-5",
+      "answers": [
+        {
+          "text": "He builds a house for himself in his own city",
+          "isCorrect": false
+        },
+        {
+          "text": "He brings a gift to the altar of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "He leaves his father and mother and is joined to his wife",
+          "isCorrect": true
+        },
+        {
+          "text": "He takes a certificate from the elders of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Jesus say Moses allowed them to divorce their wives?",
+      "explanation": "He said Moses allowed it because of the hardness of their hearts, but that from the beginning it had not been so.",
+      "bibleReference": "Matthew 19:7-8",
+      "answers": [
+        {
+          "text": "Because the people asked for it",
+          "isCorrect": false
+        },
+        {
+          "text": "Because of the hardness of their hearts",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the land was full of strangers",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the law of the prophets required it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when the disciples rebuked those who brought little children to him?",
+      "explanation": "Jesus said to allow the little children and not to forbid them to come to him, for the Kingdom of Heaven belongs to ones like these.",
+      "bibleReference": "Matthew 19:13-14",
+      "answers": [
+        {
+          "text": "That the children should first be taught",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would see them in the morning",
+          "isCorrect": false
+        },
+        {
+          "text": "That their parents should pray instead",
+          "isCorrect": false
+        },
+        {
+          "text": "That they should allow the little children to come to him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the man to do if he wanted to enter into life?",
+      "explanation": "Jesus said that no one is good but God alone, and that if he wanted to enter into life he should keep the commandments.",
+      "bibleReference": "Matthew 19:16-17",
+      "answers": [
+        {
+          "text": "Fast and pray for many days",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring an offering to the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Keep the commandments",
+          "isCorrect": true
+        },
+        {
+          "text": "Follow the elders of the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell him to do if he wanted to be perfect?",
+      "explanation": "Jesus told him to go, sell what he had and give to the poor, so he would have treasure in heaven, and then to come and follow him.",
+      "bibleReference": "Matthew 19:21",
+      "answers": [
+        {
+          "text": "Sell what he had, give to the poor, and follow him",
+          "isCorrect": true
+        },
+        {
+          "text": "Build a house of prayer in his city",
+          "isCorrect": false
+        },
+        {
+          "text": "Teach the commandments to others",
+          "isCorrect": false
+        },
+        {
+          "text": "Go up to Jerusalem with the multitude",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did the young man go away sad?",
+      "explanation": "When the young man heard the saying he went away sad, because he was one who had great possessions.",
+      "bibleReference": "Matthew 19:22",
+      "answers": [
+        {
+          "text": "Because he had broken the commandments",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he had great possessions",
+          "isCorrect": true
+        },
+        {
+          "text": "Because the disciples sent him away",
+          "isCorrect": false
+        },
+        {
+          "text": "Because he had no family left",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What comparison did Jesus make about a rich man entering God's Kingdom?",
+      "explanation": "He said it is easier for a camel to go through a needle's eye than for a rich man to enter into God's Kingdom.",
+      "bibleReference": "Matthew 19:24",
+      "answers": [
+        {
+          "text": "It is like a sheep crossing a river",
+          "isCorrect": false
+        },
+        {
+          "text": "It is like a tower built on sand",
+          "isCorrect": false
+        },
+        {
+          "text": "It is like a lamp carried in the wind",
+          "isCorrect": false
+        },
+        {
+          "text": "It is easier for a camel to go through a needle's eye",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say those who had followed him would sit on?",
+      "explanation": "He said that when the Son of Man sits on the throne of his glory, those who had followed him would also sit on twelve thrones, judging the twelve tribes of Israel.",
+      "bibleReference": "Matthew 19:28",
+      "answers": [
+        {
+          "text": "Twelve thrones, judging the twelve tribes of Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Seats of honor at the wedding feast",
+          "isCorrect": false
+        },
+        {
+          "text": "The best seats in the synagogues",
+          "isCorrect": false
+        },
+        {
+          "text": "A throne at his right hand and at his left",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about many who are first?",
+      "explanation": "He said that many will be last who are first, and first who are last.",
+      "bibleReference": "Matthew 19:30",
+      "answers": [
+        {
+          "text": "The greatest will be called teachers",
+          "isCorrect": false
+        },
+        {
+          "text": "Many who are first will be last, and the last first",
+          "isCorrect": true
+        },
+        {
+          "text": "Those who followed will be called brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "Everyone will receive the same reward",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

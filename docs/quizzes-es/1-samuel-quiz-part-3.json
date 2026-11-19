@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre 1 Samuel 3: Jehová llama a Samuel de noche, el juicio sobre la casa de Eli y Samuel confirmado como profeta.",
+  "slug": "1-samuel-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo era la palabra de Jehová en aquellos días, cuando Samuel ministraba delante de Eli?",
+      "explanation": "La palabra de Jehová era de estima en aquellos días: no había visión manifiesta.",
+      "bibleReference": "1 Samuel 3:1",
+      "answers": [
+        {
+          "text": "Venía cada día por el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Se oía en todas las ciudades de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Era de estima y no había visión manifiesta",
+          "isCorrect": true
+        },
+        {
+          "text": "Estaba escrita en el arca de Dios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasaba a Eli, según el segundo versículo?",
+      "explanation": "Eli estaba acostado en su aposento, y sus ojos comenzaban a oscurecerse, de modo que no podía ver.",
+      "bibleReference": "1 Samuel 3:2",
+      "answers": [
+        {
+          "text": "Sus ojos se oscurecían y no podía ver",
+          "isCorrect": true
+        },
+        {
+          "text": "Estaba enfermo y no podía andar",
+          "isCorrect": false
+        },
+        {
+          "text": "No oía la voz del joven Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Estaba de camino hacia Ramatha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba durmiendo Samuel cuando Jehová lo llamó?",
+      "explanation": "Samuel estaba durmiendo en el templo de Jehová, donde estaba el arca de Dios, antes que la lámpara de Dios fuese apagada.",
+      "bibleReference": "1 Samuel 3:3",
+      "answers": [
+        {
+          "text": "En el aposento del sacerdote Eli",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta del tabernáculo del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "En casa de su madre en Ramatha",
+          "isCorrect": false
+        },
+        {
+          "text": "En el templo de Jehová, donde estaba el arca",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Eli la primera vez que Samuel corrió a él?",
+      "explanation": "Eli le dijo: Yo no he llamado; vuélvete a acostar. Y él se volvió y se acostó.",
+      "bibleReference": "1 Samuel 3:5",
+      "answers": [
+        {
+          "text": "Ve y abre las puertas de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Yo no he llamado; vuélvete a acostar",
+          "isCorrect": true
+        },
+        {
+          "text": "Heme aquí, hijo mío",
+          "isCorrect": false
+        },
+        {
+          "text": "Duerme, que mañana hablaremos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Samuel en ese momento?",
+      "explanation": "Dice que Samuel no había conocido aún a Jehová, ni la palabra de Jehová le había sido revelada.",
+      "bibleReference": "1 Samuel 3:7",
+      "answers": [
+        {
+          "text": "Que ya era fiel profeta de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que servía en el campo con su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no había conocido aún a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no sabía abrir las puertas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué entendió Eli cuando Jehová llamó a Samuel por tercera vez?",
+      "explanation": "Cuando Samuel vino a él la tercera vez, Eli entendió que Jehová llamaba al joven.",
+      "bibleReference": "1 Samuel 3:8",
+      "answers": [
+        {
+          "text": "Que Samuel soñaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la lámpara se había apagado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que alguien había entrado en el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová llamaba al joven",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó Eli responder si volvía a ser llamado?",
+      "explanation": "Eli le dijo que se acostase y que, si lo llamaban, dijese: Habla, Jehová, que tu siervo oye.",
+      "bibleReference": "1 Samuel 3:9",
+      "answers": [
+        {
+          "text": "Habla, Jehová, que tu siervo oye",
+          "isCorrect": true
+        },
+        {
+          "text": "Heme aquí; ¿para qué me llamaste?",
+          "isCorrect": false
+        },
+        {
+          "text": "Dime mañana lo que oyeres",
+          "isCorrect": false
+        },
+        {
+          "text": "Duerme, que nadie te ha llamado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría en Israel?",
+      "explanation": "Jehová dijo a Samuel que haría una cosa en Israel tal que, a quien la oyere, le retiñirán ambos oídos.",
+      "bibleReference": "1 Samuel 3:11",
+      "answers": [
+        {
+          "text": "Enviar hambre sobre toda la tierra de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Algo que hará retiñir los oídos al que lo oiga",
+          "isCorrect": true
+        },
+        {
+          "text": "Levantar un rey nuevo sobre su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitar el arca de Dios de la casa de Silo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué juzgaría Jehová la casa de Eli para siempre?",
+      "explanation": "Dijo que juzgaría su casa por la iniquidad que él sabe, porque sus hijos se habían envilecido y él no los había estorbado.",
+      "bibleReference": "1 Samuel 3:13",
+      "answers": [
+        {
+          "text": "Porque Eli no abrió las puertas de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Eli encubrió la visión a Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Eli no quiso ofrecer sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sus hijos se envilecieron y él no los estorbó",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué conoció todo Israel, desde Dan hasta Beer-sebah?",
+      "explanation": "Todo Israel, desde Dan hasta Beer-sebah, conoció que Samuel era fiel profeta de Jehová.",
+      "bibleReference": "1 Samuel 3:20",
+      "answers": [
+        {
+          "text": "Que Samuel era fiel profeta de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Eli había juzgado bien a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la casa de Eli sería perdonada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el arca volvería a Silo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

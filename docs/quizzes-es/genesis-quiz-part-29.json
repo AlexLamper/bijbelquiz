@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre Génesis 29: Jacob junto al pozo, su servicio por Rachêl y los primeros hijos de Lea.",
+  "slug": "genesis-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué había sobre la boca del pozo que Jacob vio en el campo?",
+      "explanation": "Junto al pozo yacían tres rebaños de ovejas, y había una gran piedra sobre la boca del pozo.",
+      "bibleReference": "Génesis 29:2",
+      "answers": [
+        {
+          "text": "Una gran piedra",
+          "isCorrect": true
+        },
+        {
+          "text": "Una cubierta de madera",
+          "isCorrect": false
+        },
+        {
+          "text": "Un techo de ramas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cuero extendido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dijeron los pastores que eran?",
+      "explanation": "Jacob les preguntó de dónde eran, y ellos respondieron que eran de Harán.",
+      "bibleReference": "Génesis 29:4",
+      "answers": [
+        {
+          "text": "De Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "De Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "De Harán",
+          "isCorrect": true
+        },
+        {
+          "text": "De Seir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué venía Rachêl con el ganado de su padre?",
+      "explanation": "El texto dice que Rachêl vino con el ganado de su padre porque ella era la pastora.",
+      "bibleReference": "Génesis 29:9",
+      "answers": [
+        {
+          "text": "Porque sus hermanos estaban enfermos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ella era la pastora",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque buscaba agua para la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque iba a encontrarse con Jacob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jacob cuando vio a Rachêl con las ovejas?",
+      "explanation": "Jacob se acercó, removió la piedra de sobre la boca del pozo y abrevó el ganado de Labán.",
+      "bibleReference": "Génesis 29:10",
+      "answers": [
+        {
+          "text": "Esperó a que llegaran los demás rebaños",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamó a los pastores para que lo ayudaran",
+          "isCorrect": false
+        },
+        {
+          "text": "Fue corriendo a la casa de Labán",
+          "isCorrect": false
+        },
+        {
+          "text": "Removió la piedra y abrevó el ganado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Labán a Jacob cuando lo recibió en su casa?",
+      "explanation": "Labán le dijo: Ciertamente hueso mío y carne mía eres. Y Jacob estuvo con él el tiempo de un mes.",
+      "bibleReference": "Génesis 29:14",
+      "answers": [
+        {
+          "text": "\"Hemos visto que Jehová es contigo\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Las hijas son hijas mías, y los hijos, hijos míos\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Ciertamente hueso mío y carne mía eres\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Declárame ahora cuál es tu nombre\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto los ojos de la hija mayor de Labán?",
+      "explanation": "El texto dice que la hija mayor de Labán era Lea, y que los ojos de Lea eran tiernos, pero que Rachêl era de hermoso parecer.",
+      "bibleReference": "Génesis 29:16-17",
+      "answers": [
+        {
+          "text": "Que eran tiernos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que eran hermosos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que estaban sin vista",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran como de paloma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo le parecieron a Jacob los años que sirvió por Rachêl?",
+      "explanation": "Jacob sirvió siete años por Rachêl, y le parecieron como pocos días, porque la amaba.",
+      "bibleReference": "Génesis 29:20",
+      "answers": [
+        {
+          "text": "Muy largos, porque Labán lo engañaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Duros, porque el calor lo consumía",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un solo mes en casa de Labán",
+          "isCorrect": false
+        },
+        {
+          "text": "Como pocos días, porque la amaba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién le llevó Labán a Jacob la noche del banquete?",
+      "explanation": "Aquella noche Labán tomó á Lea su hija y se la trajo, y venida la mañana Jacob vio que era Lea.",
+      "bibleReference": "Génesis 29:23-25",
+      "answers": [
+        {
+          "text": "A Rachêl, su hija",
+          "isCorrect": false
+        },
+        {
+          "text": "A Lea, su hija",
+          "isCorrect": true
+        },
+        {
+          "text": "A Zilpa, su sierva",
+          "isCorrect": false
+        },
+        {
+          "text": "A Bilha, su sierva",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Lea al hijo por el cual dijo: \"Esta vez alabaré á Jehová\"?",
+      "explanation": "Lea parió un hijo y dijo: Esta vez alabaré á Jehová; por esto llamó su nombre Judá.",
+      "bibleReference": "Génesis 29:35",
+      "answers": [
+        {
+          "text": "Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "Leví",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová cuando vio que Lea era aborrecida?",
+      "explanation": "Jehová vio que Lea era aborrecida y abrió su matriz, pero Rachêl era estéril.",
+      "bibleReference": "Génesis 29:31",
+      "answers": [
+        {
+          "text": "Le dio grandes riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Le habló en un sueño",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrió su matriz",
+          "isCorrect": true
+        },
+        {
+          "text": "Le dio una sierva por criada",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

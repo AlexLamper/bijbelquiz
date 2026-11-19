@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Génesis 15: la palabra de Jehová a Abram en visión, las estrellas, los animales divididos y el pacto.",
+  "slug": "genesis-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le dijo Jehová a Abram en visión al principio del capítulo?",
+      "explanation": "La palabra de Jehová vino a Abram en visión: No temas, Abram; yo soy tu escudo, y tu galardón sobremanera grande.",
+      "bibleReference": "Génesis 15:1",
+      "answers": [
+        {
+          "text": "Que debía andar delante de él y ser perfecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo había sacado de la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sería padre de muchedumbre de gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que él era su escudo y su galardón sobremanera grande",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién era el mayordomo de la casa de Abram?",
+      "explanation": "Abram respondió que andaba sin hijo y que el mayordomo de su casa era el Damasceno Eliezer.",
+      "bibleReference": "Génesis 15:2",
+      "answers": [
+        {
+          "text": "Lot, hijo de su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "El Damasceno Eliezer",
+          "isCorrect": true
+        },
+        {
+          "text": "Ismael, hijo de la sierva",
+          "isCorrect": false
+        },
+        {
+          "text": "Aner, su confederado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la palabra de Jehová, ¿quién heredaría a Abram?",
+      "explanation": "Jehová le dijo que no lo heredaría el nacido en su casa, sino el que saldría de sus entrañas.",
+      "bibleReference": "Génesis 15:4",
+      "answers": [
+        {
+          "text": "Uno nacido en su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Su sobrino Lot",
+          "isCorrect": false
+        },
+        {
+          "text": "El que saldría de sus entrañas",
+          "isCorrect": true
+        },
+        {
+          "text": "El mayordomo Eliezer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Jehová la simiente de Abram cuando lo sacó fuera?",
+      "explanation": "Lo sacó fuera y le dijo que mirase los cielos y contase las estrellas: así sería su simiente.",
+      "bibleReference": "Génesis 15:5",
+      "answers": [
+        {
+          "text": "Con el polvo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la arena del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las aves del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le fue contado a Abram por justicia?",
+      "explanation": "Abram creyó a Jehová, y le fue contado por justicia.",
+      "bibleReference": "Génesis 15:6",
+      "answers": [
+        {
+          "text": "Que creyó a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que edificó un altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dio los diezmos de todo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que partió los animales por la mitad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dijo Jehová que había sacado a Abram?",
+      "explanation": "Jehová le dijo: Yo soy Jehová, que te saqué de Ur de los Caldeos, para darte a heredar esta tierra.",
+      "bibleReference": "Génesis 15:7",
+      "answers": [
+        {
+          "text": "De la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "De la ciudad de Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "De Damasco",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ur de los Caldeos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué animales le mandó Jehová apartar?",
+      "explanation": "Le mandó apartar una becerra de tres años, una cabra de tres años y un carnero de tres años, una tórtola también y un palomino.",
+      "bibleReference": "Génesis 15:9",
+      "answers": [
+        {
+          "text": "Dos bueyes, dos cabras y dos carneros de tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Una becerra, una cabra y un carnero, con una tórtola y un palomino",
+          "isCorrect": true
+        },
+        {
+          "text": "Un cordero, un cabrito y dos tórtolas blancas",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete corderas del rebaño y un becerro tierno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía Abram con las aves que descendían sobre los cuerpos muertos?",
+      "explanation": "Descendían aves sobre los cuerpos muertos, y Abram las ojeaba, es decir, las espantaba.",
+      "bibleReference": "Génesis 15:11",
+      "answers": [
+        {
+          "text": "Las ofrecía en holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "Las partía por la mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "Las espantaba",
+          "isCorrect": true
+        },
+        {
+          "text": "Las dejaba comer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años dijo Jehová que la simiente de Abram sería afligida en tierra no suya?",
+      "explanation": "Jehová le dijo que su simiente sería peregrina en tierra no suya, serviría a los de allí y sería afligida cuatrocientos años.",
+      "bibleReference": "Génesis 15:13",
+      "answers": [
+        {
+          "text": "Cien años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatrocientos años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatrocientos treinta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó por entre los animales divididos cuando se puso el sol?",
+      "explanation": "Puesto el sol y ya oscurecido, se dejó ver un horno humeando y una antorcha de fuego que pasó por entre los animales divididos.",
+      "bibleReference": "Génesis 15:17",
+      "answers": [
+        {
+          "text": "Un horno humeando y una antorcha de fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Un viento recio del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Una nube y una columna de humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero trabado en un zarzal",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

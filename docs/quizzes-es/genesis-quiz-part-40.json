@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 40",
+  "description": "Diez preguntas sobre Génesis 40: los sueños del copero y del panadero y la declaración de José.",
+  "slug": "genesis-quiz-part-40",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Contra cuáles dos eunucos se enojó Faraón?",
+      "explanation": "Faraón se enojó contra el principal de los coperos y contra el principal de los panaderos.",
+      "bibleReference": "Génesis 40:2",
+      "answers": [
+        {
+          "text": "Los magos y los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos capitanes de la guardia",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos pastores de su ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los coperos y el de los panaderos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde los puso en prisión?",
+      "explanation": "Los puso en prisión en la casa del capitán de los de la guardia, en la casa de la cárcel donde José estaba preso.",
+      "bibleReference": "Génesis 40:3",
+      "answers": [
+        {
+          "text": "En la tierra de Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "Donde José estaba preso",
+          "isCorrect": true
+        },
+        {
+          "text": "En su propio palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "En la casa del sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les preguntó José cuando vino a ellos por la mañana?",
+      "explanation": "José los miró y, al verlos tristes, les preguntó por qué parecían mal sus semblantes aquel día.",
+      "bibleReference": "Génesis 40:6-7",
+      "answers": [
+        {
+          "text": "Si querían comer pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién los había encerrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Por qué parecían mal sus semblantes",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuándo saldrían de la cárcel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió José cuando dijeron que no había quien declarase su sueño?",
+      "explanation": "José les dijo: ¿No son de Dios las declaraciones? Y les pidió que se lo contasen.",
+      "bibleReference": "Génesis 40:8",
+      "answers": [
+        {
+          "text": "Que las declaraciones son de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los magos lo harían",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los sueños no valen nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Faraón lo declararía",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio el principal de los coperos en su sueño?",
+      "explanation": "Contó que veía una vid delante de sí, y en la vid tres sarmientos que brotaban y maduraban sus racimos de uvas.",
+      "bibleReference": "Génesis 40:9-10",
+      "answers": [
+        {
+          "text": "Tres canastillos blancos",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete espigas llenas",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete vacas gordas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vid con tres sarmientos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según José, ¿qué significaban los tres sarmientos?",
+      "explanation": "José dijo que los tres sarmientos eran tres días, y que al cabo de tres días Faraón le restituiría a su puesto.",
+      "bibleReference": "Génesis 40:12-13",
+      "answers": [
+        {
+          "text": "Tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres cosechas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pidió José al copero para cuando le fuera bien?",
+      "explanation": "José le pidió que se acordase de él, que usase con él misericordia, que hiciera mención de él a Faraón y lo sacase de aquella casa.",
+      "bibleReference": "Génesis 40:14",
+      "answers": [
+        {
+          "text": "Que le diera pan y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hiciera mención de él a Faraón",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le llevara a Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardase el secreto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio el principal de los panaderos en su sueño?",
+      "explanation": "Dijo que veía tres canastillos blancos sobre su cabeza, y que las aves comían del canastillo de sobre su cabeza.",
+      "bibleReference": "Génesis 40:16-17",
+      "answers": [
+        {
+          "text": "Tres canastillos blancos",
+          "isCorrect": true
+        },
+        {
+          "text": "Una copa en su mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres sarmientos de vid",
+          "isCorrect": false
+        },
+        {
+          "text": "Un río y un prado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó el día del nacimiento de Faraón?",
+      "explanation": "Faraón hizo banquete a sus sirvientes, hizo volver a su oficio al principal de los coperos y mandó ahorcar al principal de los panaderos.",
+      "bibleReference": "Génesis 40:20-22",
+      "answers": [
+        {
+          "text": "Soltó a sus dos eunucos de la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacó a José de la casa de la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Restituyó al copero y ahorcó al panadero",
+          "isCorrect": true
+        },
+        {
+          "text": "Mandó llamar a los magos de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el principal de los coperos con José después?",
+      "explanation": "El principal de los coperos no se acordó de José, sino que le olvidó.",
+      "bibleReference": "Génesis 40:23",
+      "answers": [
+        {
+          "text": "Lo llevó ante Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Le envió comida",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo puso por mayordomo",
+          "isCorrect": false
+        },
+        {
+          "text": "No se acordó de él",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

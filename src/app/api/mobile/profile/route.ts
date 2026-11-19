@@ -8,6 +8,7 @@ import { getMobileUserId } from '@/lib/mobile-auth';
 import { appPlatformFromRequest, touchLastActive } from '@/lib/admin/platform';
 import { manualGrantExpired, recomputeUserPremium } from '@/lib/premium-state';
 import { daysUntilRenameAllowed, updateIdentity } from '@/lib/profile-identity';
+import { msg } from '@/lib/api-messages';
 
 export async function GET(req: Request) {
   try {
@@ -73,7 +74,7 @@ export async function GET(req: Request) {
 
     return NextResponse.json({
       id: user._id.toString(),
-      name: user.name || 'Anonieme Speler',
+      name: user.name || msg('Anonieme Speler'),
       email: user.email,
       image: user.image,
       avatar: resolveAvatar(user.avatar, String(user._id)),

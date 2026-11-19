@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 8",
+  "description": "Ten questions on Joshua 8: the ambush that took Ai and the altar and reading of the law at Mount Ebal.",
+  "slug": "joshua-bible-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What were the Israelites allowed to do at Ai that differed from Jericho?",
+      "explanation": "Yahweh told Joshua to do to Ai as he did to Jericho, except that they could take its goods and livestock for themselves.",
+      "bibleReference": "Joshua 8:2",
+      "answers": [
+        {
+          "text": "Take its goods and livestock for themselves",
+          "isCorrect": true
+        },
+        {
+          "text": "Spare the life of the king of Ai",
+          "isCorrect": false
+        },
+        {
+          "text": "Let all its people leave in peace",
+          "isCorrect": false
+        },
+        {
+          "text": "Leave the city standing as it was",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many mighty men of valor did Joshua choose and send out by night?",
+      "explanation": "Joshua chose thirty thousand men, the mighty men of valor, and sent them out by night.",
+      "bibleReference": "Joshua 8:3",
+      "answers": [
+        {
+          "text": "Three thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Joshua plan for his own group to do when the men of Ai came out?",
+      "explanation": "Joshua said that when the men of Ai came out against them as at the first, he and the people with him would flee before them.",
+      "bibleReference": "Joshua 8:5-6",
+      "answers": [
+        {
+          "text": "Attack them head-on",
+          "isCorrect": false
+        },
+        {
+          "text": "Flee before them",
+          "isCorrect": true
+        },
+        {
+          "text": "Surrender to them",
+          "isCorrect": false
+        },
+        {
+          "text": "Stand still and shout",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the ambush stay that night?",
+      "explanation": "The ambush stayed between Bethel and Ai, on the west side of Ai, while Joshua stayed among the people.",
+      "bibleReference": "Joshua 8:9",
+      "answers": [
+        {
+          "text": "East of the Jordan near Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Inside the ruins of Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "South of Ai in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "Between Bethel and Ai, on the west side of Ai",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides Ai, which city's men also went out after Israel and left their city open?",
+      "explanation": "Not a man was left in Ai or Bethel who did not go out after Israel; they left the city open.",
+      "bibleReference": "Joshua 8:17",
+      "answers": [
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": true
+        },
+        {
+          "text": "Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Joshua to stretch out toward Ai?",
+      "explanation": "Yahweh told Joshua to stretch out the javelin in his hand toward Ai, and Joshua did so.",
+      "bibleReference": "Joshua 8:18",
+      "answers": [
+        {
+          "text": "The javelin in his hand",
+          "isCorrect": true
+        },
+        {
+          "text": "The staff of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "A banner of the tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The ark of the covenant",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the men of Ai see when they looked behind them?",
+      "explanation": "When the men of Ai looked behind them, they saw the smoke of the city going up to heaven.",
+      "bibleReference": "Joshua 8:20",
+      "answers": [
+        {
+          "text": "Their king being led away",
+          "isCorrect": false
+        },
+        {
+          "text": "Their walls falling down flat",
+          "isCorrect": false
+        },
+        {
+          "text": "Another army coming from Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "The smoke of their city rising up to heaven",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was the body of the king of Ai thrown at sundown?",
+      "explanation": "At sundown they took his body down from the tree and threw it at the entrance of the city gate, and raised a heap of stones on it.",
+      "bibleReference": "Joshua 8:29",
+      "answers": [
+        {
+          "text": "Into a cave near Makkedah",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the river Jordan",
+          "isCorrect": false
+        },
+        {
+          "text": "At the entrance of the city gate",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the valley of Achor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which mountain did Joshua build an altar to Yahweh?",
+      "explanation": "Joshua built an altar to Yahweh, the God of Israel, on Mount Ebal, an altar of uncut stones.",
+      "bibleReference": "Joshua 8:30-31",
+      "answers": [
+        {
+          "text": "Mount Ebal",
+          "isCorrect": true
+        },
+        {
+          "text": "Mount Hermon",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mount Seir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were among the assembly when Joshua read all the words of the law?",
+      "explanation": "Joshua read every word Moses commanded before all the assembly of Israel, with the women, the little ones, and the foreigners among them.",
+      "bibleReference": "Joshua 8:35",
+      "answers": [
+        {
+          "text": "Only the priests and the Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "Only the elders and the judges",
+          "isCorrect": false
+        },
+        {
+          "text": "The women, the little ones, and the foreigners",
+          "isCorrect": true
+        },
+        {
+          "text": "Only the chosen men of war",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

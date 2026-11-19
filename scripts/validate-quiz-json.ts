@@ -53,8 +53,8 @@ for (const file of ['.env', '.env.local']) {
 /** `--lang=xx` (en, es, pt, de, fr). Without it the Dutch library is checked. */
 const LANG = process.argv.find((a) => a.startsWith('--lang='))?.slice(7) ?? 'nl';
 const LANG_EN = LANG !== 'nl'; // "not Dutch": category slugs, own library folder
-/** BijbelAPI version per language. `es` has no verified public-domain text yet, so it cannot be checked. */
-const VERSION_BY_LANG: Record<string, string> = { nl: 'sv', en: 'web', de: 'luth1912', fr: 'lsg1910', pt: 'blivre' };
+/** BijbelAPI version per language. */
+const VERSION_BY_LANG: Record<string, string> = { nl: 'sv', en: 'web', de: 'luth1912', fr: 'lsg1910', pt: 'blivre', es: 'rv1909' };
 /** `--bible-dir=<bijbelapi-data/data>`: check references against the real data files, offline. */
 const BIBLE_DIR = process.argv.find((a) => a.startsWith('--bible-dir='))?.slice(12);
 const QUIZ_DIR = path.resolve(process.cwd(), LANG === 'nl' ? 'docs/quizzes' : `docs/quizzes-${LANG}`);

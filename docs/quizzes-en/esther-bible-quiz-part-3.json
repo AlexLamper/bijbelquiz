@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 3",
+  "description": "Ten questions on Esther 3: Haman is promoted, Mordecai will not bow, and a decree goes out to destroy the Jews.",
+  "slug": "esther-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How is Haman the son of Hammedatha described when the king promoted him?",
+      "explanation": "King Ahasuerus promoted Haman the son of Hammedatha the Agagite and set his seat above all the princes.",
+      "bibleReference": "Esther 3:1",
+      "answers": [
+        {
+          "text": "The Agagite",
+          "isCorrect": true
+        },
+        {
+          "text": "The Horonite",
+          "isCorrect": false
+        },
+        {
+          "text": "The Ammonite",
+          "isCorrect": false
+        },
+        {
+          "text": "The Hittite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Mordecai refuse to do?",
+      "explanation": "All the king's servants in the gate bowed down to Haman, but Mordecai didn't bow down or pay him homage.",
+      "bibleReference": "Esther 3:2",
+      "answers": [
+        {
+          "text": "Sit in the king's gate",
+          "isCorrect": false
+        },
+        {
+          "text": "Pay tax to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "Bow down and pay homage to Haman",
+          "isCorrect": true
+        },
+        {
+          "text": "Eat at the king's table",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had Mordecai told the king's servants about himself?",
+      "explanation": "The servants told Haman, for Mordecai had told them that he was a Jew.",
+      "bibleReference": "Esther 3:4",
+      "answers": [
+        {
+          "text": "That he was a prince of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was a Jew",
+          "isCorrect": true
+        },
+        {
+          "text": "That he served another king",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was a priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Instead of laying hands on Mordecai alone, what did Haman seek to do?",
+      "explanation": "Haman scorned laying hands on Mordecai alone, so he sought to destroy all the Jews throughout the kingdom, Mordecai's people.",
+      "bibleReference": "Esther 3:6",
+      "answers": [
+        {
+          "text": "Have Mordecai sent out of Susa",
+          "isCorrect": false
+        },
+        {
+          "text": "Take away Mordecai's house",
+          "isCorrect": false
+        },
+        {
+          "text": "Have Mordecai put in prison",
+          "isCorrect": false
+        },
+        {
+          "text": "Destroy all the Jews, Mordecai's people",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is Pur, according to the text?",
+      "explanation": "They cast Pur, that is, the lot, before Haman from day to day and month to month.",
+      "bibleReference": "Esther 3:7",
+      "answers": [
+        {
+          "text": "The lot",
+          "isCorrect": true
+        },
+        {
+          "text": "A feast",
+          "isCorrect": false
+        },
+        {
+          "text": "A month",
+          "isCorrect": false
+        },
+        {
+          "text": "A royal decree",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which month did they begin to cast Pur before Haman?",
+      "explanation": "In the first month, the month Nisan, in the twelfth year of King Ahasuerus, they cast Pur before Haman.",
+      "bibleReference": "Esther 3:7",
+      "answers": [
+        {
+          "text": "The month Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "The month Nisan",
+          "isCorrect": true
+        },
+        {
+          "text": "The month Tebeth",
+          "isCorrect": false
+        },
+        {
+          "text": "The month Sivan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much did Haman offer to pay into the king's treasuries?",
+      "explanation": "Haman offered to pay ten thousand talents of silver into the king's treasuries.",
+      "bibleReference": "Esther 3:9",
+      "answers": [
+        {
+          "text": "One thousand talents of gold",
+          "isCorrect": false
+        },
+        {
+          "text": "A hundred talents of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand pieces of gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand talents of silver",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the king take from his hand and give to Haman?",
+      "explanation": "The king took his ring from his hand and gave it to Haman, the Jews' enemy.",
+      "bibleReference": "Esther 3:10",
+      "answers": [
+        {
+          "text": "His crown",
+          "isCorrect": false
+        },
+        {
+          "text": "His scepter",
+          "isCorrect": false
+        },
+        {
+          "text": "His ring",
+          "isCorrect": true
+        },
+        {
+          "text": "His robe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day were the Jews to be destroyed according to the letters?",
+      "explanation": "The letters ordered all Jews to be destroyed in one day, on the thirteenth day of the twelfth month, the month Adar.",
+      "bibleReference": "Esther 3:13",
+      "answers": [
+        {
+          "text": "The thirteenth day of the month Adar",
+          "isCorrect": true
+        },
+        {
+          "text": "The thirteenth day of the first month",
+          "isCorrect": false
+        },
+        {
+          "text": "The first day of the month Nisan",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth day of the month Tebeth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the city of Susa react when the decree was given out?",
+      "explanation": "The king and Haman sat down to drink, but the city of Susa was perplexed.",
+      "bibleReference": "Esther 3:15",
+      "answers": [
+        {
+          "text": "It held a feast",
+          "isCorrect": false
+        },
+        {
+          "text": "It rose up against Haman",
+          "isCorrect": false
+        },
+        {
+          "text": "It sent gifts to the king",
+          "isCorrect": false
+        },
+        {
+          "text": "It was perplexed",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

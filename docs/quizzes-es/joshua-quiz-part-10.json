@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Josué 10: los cinco reyes contra Gabaón, las grandes piedras del cielo, el sol detenido y la cueva de Maceda.",
+  "slug": "joshua-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué oyó Adonisedec rey de Jerusalem que había hecho Josué?",
+      "explanation": "Adonisedec oyó que Josué había tomado a Hai y la había asolado, como había hecho a Jericó y a su rey.",
+      "bibleReference": "Josué 10:1",
+      "answers": [
+        {
+          "text": "Que había tomado y asolado a Hai",
+          "isCorrect": true
+        },
+        {
+          "text": "Que había quemado la ciudad de Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había pasado de nuevo el Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había hecho paz con los Amorrheos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos reyes de los Amorrheos se juntaron y asentaron campo sobre Gabaón?",
+      "explanation": "Cinco reyes de los Amorrheos se juntaron y subieron con todos sus ejércitos, y asentaron campo sobre Gabaón.",
+      "bibleReference": "Josué 10:5",
+      "answers": [
+        {
+          "text": "Tres reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y un reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron los moradores de Gabaón a Josué al campo en Gilgal?",
+      "explanation": "Le pidieron que no encogiera sus manos de sus siervos, sino que subiera prestamente a guardarlos y ayudarlos.",
+      "bibleReference": "Josué 10:6",
+      "answers": [
+        {
+          "text": "Que les diera parte en la herencia de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que subiera pronto a guardarlos y ayudarlos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que enviara mensajeros al rey de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les dejara volver a sus ciudades en paz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué echó Jehová sobre ellos desde el cielo a la bajada de Beth-oron?",
+      "explanation": "Jehová echó sobre ellos grandes piedras desde el cielo hasta Azeca, y murieron más de las piedras del granizo que a cuchillo.",
+      "bibleReference": "Josué 10:11",
+      "answers": [
+        {
+          "text": "Fuego y azufre encendido",
+          "isCorrect": false
+        },
+        {
+          "text": "Una espesa niebla sobre el valle",
+          "isCorrect": false
+        },
+        {
+          "text": "Langostas sobre toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Grandes piedras de granizo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Josué en presencia de los israelitas?",
+      "explanation": "Josué habló a Jehová y dijo delante de los israelitas: Sol, detente en Gabaón; y tú, Luna, en el valle de Ajalón.",
+      "bibleReference": "Josué 10:12",
+      "answers": [
+        {
+          "text": "Sol, detente en Gabaón; y tú, Luna, en el valle de Ajalón",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová, haz caer fuego sobre estos cinco reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Levántate, Jehová, y sean dispersados tus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sol, no alumbres sobre el campo de los Amorrheos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué libro dice el texto que está escrito que el sol se detuvo?",
+      "explanation": "El texto pregunta: ¿No está aquesto escrito en el libro de Jasher?",
+      "bibleReference": "Josué 10:13",
+      "answers": [
+        {
+          "text": "En el libro de la ley de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "En el libro de Jasher",
+          "isCorrect": true
+        },
+        {
+          "text": "En el libro de los reyes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "En el libro del pacto de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se escondieron los cinco reyes?",
+      "explanation": "Los cinco reyes huyeron y se escondieron en una cueva en Maceda.",
+      "bibleReference": "Josué 10:16",
+      "answers": [
+        {
+          "text": "En la ciudad de Lachîs",
+          "isCorrect": false
+        },
+        {
+          "text": "En el campo en Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de Ajalón",
+          "isCorrect": false
+        },
+        {
+          "text": "En una cueva en Maceda",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Josué a los principales de la gente de guerra que habían venido con él?",
+      "explanation": "Josué les dijo: Llegad y poned vuestros pies sobre los pescuezos de aquestos reyes. Y ellos lo hicieron.",
+      "bibleReference": "Josué 10:24",
+      "answers": [
+        {
+          "text": "Que llevaran a los reyes al campo en Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que repartieran los despojos entre el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pusieran sus pies sobre los pescuezos de los reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Que soltaran a los reyes con sus ejércitos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Después de herirlos y matarlos, ¿qué hizo Josué con los cinco reyes?",
+      "explanation": "Josué los hirió y los mató, y los hizo colgar en cinco maderos, donde quedaron colgados hasta la tarde.",
+      "bibleReference": "Josué 10:26",
+      "answers": [
+        {
+          "text": "Los sepultó en el valle de Ajalón",
+          "isCorrect": false
+        },
+        {
+          "text": "Los colgó en cinco maderos hasta la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Los quemó a fuego delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los llevó cautivos a Maceda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué tomó Josué de una vez a todos estos reyes y sus tierras?",
+      "explanation": "El texto dice que los tomó de una vez porque Jehová el Dios de Israel peleaba por Israel.",
+      "bibleReference": "Josué 10:42",
+      "answers": [
+        {
+          "text": "Porque Jehová peleaba por Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque los reyes huyeron a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sus ciudades no tenían muros",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los gabaonitas lucharon con él",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

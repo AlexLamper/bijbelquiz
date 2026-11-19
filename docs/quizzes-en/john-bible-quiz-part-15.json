@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 15",
+  "description": "Ten questions on John 15: the true vine and the branches, laying down one's life for friends, and the hatred of the world.",
+  "slug": "john-bible-quiz-part-15",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What does Jesus call himself and his Father at the start of this chapter?",
+      "explanation": "He says, \"I am the true vine, and my Father is the farmer.\"",
+      "bibleReference": "John 15:1",
+      "answers": [
+        {
+          "text": "The shepherd, and his Father the gatekeeper",
+          "isCorrect": false
+        },
+        {
+          "text": "The door, and his Father the fold",
+          "isCorrect": false
+        },
+        {
+          "text": "The branch, and his Father the vine",
+          "isCorrect": false
+        },
+        {
+          "text": "The true vine, and his Father the farmer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the farmer do with a branch that bears fruit?",
+      "explanation": "Every branch that bears fruit he prunes, so that it may bear more fruit.",
+      "bibleReference": "John 15:2",
+      "answers": [
+        {
+          "text": "He takes it away",
+          "isCorrect": false
+        },
+        {
+          "text": "He throws it into the fire",
+          "isCorrect": false
+        },
+        {
+          "text": "He prunes it to bear more fruit",
+          "isCorrect": true
+        },
+        {
+          "text": "He leaves it untouched",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say they can do apart from him?",
+      "explanation": "He says that he is the vine and they are the branches, and that apart from him they can do nothing.",
+      "bibleReference": "John 15:5",
+      "answers": [
+        {
+          "text": "A little, but not much",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing",
+          "isCorrect": true
+        },
+        {
+          "text": "Bear fruit by themselves",
+          "isCorrect": false
+        },
+        {
+          "text": "Whatever they ask for",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to someone who does not remain in him?",
+      "explanation": "He is thrown out as a branch and is withered, and such branches are gathered, thrown into the fire and burned.",
+      "bibleReference": "John 15:6",
+      "answers": [
+        {
+          "text": "He is thrown out, withers and is burned",
+          "isCorrect": true
+        },
+        {
+          "text": "He is pruned to bear more fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "He is made a servant",
+          "isCorrect": false
+        },
+        {
+          "text": "He is grafted into another vine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why has Jesus spoken these things to them?",
+      "explanation": "He says he has spoken them so that his joy may remain in them and their joy may be made full.",
+      "bibleReference": "John 15:11",
+      "answers": [
+        {
+          "text": "So that they would be afraid",
+          "isCorrect": false
+        },
+        {
+          "text": "So that the world may believe",
+          "isCorrect": false
+        },
+        {
+          "text": "So that their joy may be made full",
+          "isCorrect": true
+        },
+        {
+          "text": "So that they would keep the law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus call the greatest love?",
+      "explanation": "He says that no one has greater love than this, that someone lay down his life for his friends.",
+      "bibleReference": "John 15:13",
+      "answers": [
+        {
+          "text": "To keep all of his commandments",
+          "isCorrect": false
+        },
+        {
+          "text": "To bear much fruit for the farmer",
+          "isCorrect": false
+        },
+        {
+          "text": "To remain in the vine always",
+          "isCorrect": false
+        },
+        {
+          "text": "To lay down one's life for one's friends",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus say he no longer calls them?",
+      "explanation": "He says he no longer calls them servants, because a servant does not know what his lord does, but he has called them friends.",
+      "bibleReference": "John 15:15",
+      "answers": [
+        {
+          "text": "Servants",
+          "isCorrect": true
+        },
+        {
+          "text": "Friends",
+          "isCorrect": false
+        },
+        {
+          "text": "Branches",
+          "isCorrect": false
+        },
+        {
+          "text": "Disciples",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who chose whom, according to Jesus?",
+      "explanation": "He says that they did not choose him, but that he chose them and appointed them to go and bear fruit.",
+      "bibleReference": "John 15:16",
+      "answers": [
+        {
+          "text": "They chose him",
+          "isCorrect": false
+        },
+        {
+          "text": "He chose and appointed them",
+          "isCorrect": true
+        },
+        {
+          "text": "The Father chose the world",
+          "isCorrect": false
+        },
+        {
+          "text": "The world chose them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why does the world hate them, according to Jesus?",
+      "explanation": "He says that because they are not of the world, since he chose them out of the world, the world hates them.",
+      "bibleReference": "John 15:19",
+      "answers": [
+        {
+          "text": "Because they bear no fruit",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they keep the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they do not know the Father",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they are not of the world",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why will the disciples also testify about him?",
+      "explanation": "He says that they will also testify, because they have been with him from the beginning.",
+      "bibleReference": "John 15:27",
+      "answers": [
+        {
+          "text": "Because the world will listen to them",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they have been with him from the beginning",
+          "isCorrect": true
+        },
+        {
+          "text": "Because they chose him first",
+          "isCorrect": false
+        },
+        {
+          "text": "Because they have seen the Father",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

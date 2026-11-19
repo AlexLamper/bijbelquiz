@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Deuteronomio 7: las siete naciones, por qué Jehová escogió a este pueblo y las bendiciones prometidas en la tierra.",
+  "slug": "deuteronomy-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántas naciones dice el texto que Jehová echaría de delante de ellos?",
+      "explanation": "Nombra al Hetheo, al Gergeseo, al Amorrheo, al Cananeo, al Pherezeo, al Heveo y al Jebuseo: siete naciones mayores y más fuertes que ellos.",
+      "bibleReference": "Deuteronomio 7:1",
+      "answers": [
+        {
+          "text": "Tres naciones de la llanura",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco naciones de los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez naciones del otro lado del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete naciones mayores y más fuertes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prohíbe el texto acerca de los hijos y las hijas de esas gentes?",
+      "explanation": "No emparentarás con ellos: no darás tu hija a su hijo, ni tomarás a su hija para tu hijo.",
+      "bibleReference": "Deuteronomio 7:3",
+      "answers": [
+        {
+          "text": "No comer de su pan ni beber su vino",
+          "isCorrect": false
+        },
+        {
+          "text": "No casar sus hijos con los hijos de ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "No hablar su lengua en las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "No vender siervos a sus ciudades",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer con los altares y las esculturas de esas gentes?",
+      "explanation": "Debían destruir sus altares, quebrar sus estatuas, cortar sus bosques y quemar sus esculturas en el fuego.",
+      "bibleReference": "Deuteronomio 7:5",
+      "answers": [
+        {
+          "text": "Llevarlos al lugar que Jehová escogiere",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardarlos fuera de sus poblaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Destruirlos, quebrarlos y quemarlos en el fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Entregarlos a los sacerdotes del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dice el texto que Jehová no los escogió?",
+      "explanation": "No los quiso ni los escogió por ser ellos más que todos los pueblos, porque eran los más pocos de todos los pueblos.",
+      "bibleReference": "Deuteronomio 7:7",
+      "answers": [
+        {
+          "text": "No por ser más que todos los pueblos",
+          "isCorrect": true
+        },
+        {
+          "text": "No por tener ciudades fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "No por tener reyes poderosos",
+          "isCorrect": false
+        },
+        {
+          "text": "No por tener mucha plata y oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuántas generaciones guarda Jehová el pacto y la misericordia?",
+      "explanation": "Dice que Jehová es Dios fiel, que guarda el pacto y la misericordia a los que le aman y guardan sus mandamientos, hasta las mil generaciones.",
+      "bibleReference": "Deuteronomio 7:9",
+      "answers": [
+        {
+          "text": "Hasta la cuarta generación",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta setenta generaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta los días de sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta las mil generaciones",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué bendeciría Jehová si oían y guardaban estos derechos?",
+      "explanation": "Bendeciría el fruto de su vientre y el fruto de su tierra, su grano, su mosto y su aceite, la cría de sus vacas y los rebaños de sus ovejas.",
+      "bibleReference": "Deuteronomio 7:13",
+      "answers": [
+        {
+          "text": "Sus carros, sus caballos y sus armas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus ciudades, sus muros y sus puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "El fruto del vientre, de la tierra y de sus ganados",
+          "isCorrect": true
+        },
+        {
+          "text": "Su plata, su oro y sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto acerca de los estériles en el pueblo?",
+      "explanation": "Bendito serás más que todos los pueblos: no habrá en ti varón ni hembra estéril, ni en tus bestias.",
+      "bibleReference": "Deuteronomio 7:14",
+      "answers": [
+        {
+          "text": "No habrá varón ni hembra estéril, ni en sus bestias",
+          "isCorrect": true
+        },
+        {
+          "text": "Los estériles serán sanados en el año séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los estériles no entrarán en la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "No habrá estériles entre los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué haría Jehová con las malas plagas de Egipto?",
+      "explanation": "Quitaría de ellos toda enfermedad y no pondría sobre ellos las malas plagas de Egipto, antes las pondría sobre todos los que les aborrecieren.",
+      "bibleReference": "Deuteronomio 7:15",
+      "answers": [
+        {
+          "text": "Las enviaría otra vez sobre Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Las pondría sobre los que les aborrecieren",
+          "isCorrect": true
+        },
+        {
+          "text": "Las guardaría hasta el fin de los días",
+          "isCorrect": false
+        },
+        {
+          "text": "Las pondría sobre sus bestias solamente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué enviaría Jehová sobre los que quedaren y se hubieren escondido?",
+      "explanation": "También enviaría Jehová su Dios sobre ellos avispas, hasta que perezcan los que quedaren y los que se hubieren escondido.",
+      "bibleReference": "Deuteronomio 7:20",
+      "answers": [
+        {
+          "text": "Serpientes ardientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Granizo y fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Avispas",
+          "isCorrect": true
+        },
+        {
+          "text": "Tinieblas y oscuridad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué modo echaría Jehová a esas gentes de delante de ellos?",
+      "explanation": "Las echaría poco a poco, porque no las podrían acabar luego, para que las bestias del campo no se aumentasen contra ellos.",
+      "bibleReference": "Deuteronomio 7:22",
+      "answers": [
+        {
+          "text": "Todas en un mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Al cabo de cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Después de pasar el Jordán otra vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Poco a poco",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 23",
+  "description": "Ten questions on Luke 23: the trial before Pilate and Herod, the release of Barabbas, the crucifixion and the burial by Joseph.",
+  "slug": "luke-bible-quiz-part-23",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did they accuse Jesus of before Pilate?",
+      "explanation": "They accused him of perverting the nation, forbidding paying taxes to Caesar, and saying that he himself is Christ, a king.",
+      "bibleReference": "Luke 23:2",
+      "answers": [
+        {
+          "text": "Breaking into the temple treasury and taking the money",
+          "isCorrect": false
+        },
+        {
+          "text": "Leading an armed revolt in the city against the governor",
+          "isCorrect": false
+        },
+        {
+          "text": "Refusing to appear before the council of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "Perverting the nation, forbidding taxes to Caesar and claiming to be a king",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Pilate say to the chief priests and the multitudes after questioning him?",
+      "explanation": "Pilate said, \"I find no basis for a charge against this man.\"",
+      "bibleReference": "Luke 23:4",
+      "answers": [
+        {
+          "text": "\"Let him be scourged and crucified\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I find no basis for a charge against this man\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"He must answer to Caesar himself\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will keep him in prison until the feast is over\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Pilate send Jesus when he learned whose jurisdiction he was in?",
+      "explanation": "When Pilate found out that Jesus was in Herod's jurisdiction, he sent him to Herod, who was also in Jerusalem during those days.",
+      "bibleReference": "Luke 23:7",
+      "answers": [
+        {
+          "text": "To Caesar in Rome",
+          "isCorrect": false
+        },
+        {
+          "text": "To the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "To Herod",
+          "isCorrect": true
+        },
+        {
+          "text": "To the council of elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the crowd cry out to have released instead of Jesus?",
+      "explanation": "They all cried out together, \"Away with this man! Release to us Barabbas!\"",
+      "bibleReference": "Luke 23:18",
+      "answers": [
+        {
+          "text": "Barabbas",
+          "isCorrect": true
+        },
+        {
+          "text": "Simon of Cyrene",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph of Arimathaea",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the two criminals",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did they grab to carry the cross after Jesus?",
+      "explanation": "As they led him away, they grabbed one Simon of Cyrene, coming from the country, and laid the cross on him to carry it after Jesus.",
+      "bibleReference": "Luke 23:26",
+      "answers": [
+        {
+          "text": "A soldier of Herod",
+          "isCorrect": false
+        },
+        {
+          "text": "A centurion from the guard",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the daughters of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon of Cyrene",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the place called where they crucified him?",
+      "explanation": "When they came to the place that is called \"The Skull\", they crucified him there with the criminals, one on the right and the other on the left.",
+      "bibleReference": "Luke 23:33",
+      "answers": [
+        {
+          "text": "\"The Skull\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The Winepress\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The Olive Grove\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The Field of Blood\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was written in the inscription over him?",
+      "explanation": "An inscription was written over him in letters of Greek, Latin, and Hebrew: \"THIS IS THE KING OF THE JEWS.\"",
+      "bibleReference": "Luke 23:38",
+      "answers": [
+        {
+          "text": "\"HE SAVED OTHERS\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"THIS IS THE KING OF THE JEWS\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"THIS IS THE CHRIST OF GOD\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"THE PROPHET OF GALILEE\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer the criminal who asked to be remembered in his Kingdom?",
+      "explanation": "Jesus said to him, \"Assuredly I tell you, today you will be with me in Paradise.\"",
+      "bibleReference": "Luke 23:42-43",
+      "answers": [
+        {
+          "text": "\"Your sins are forgiven you\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You will see the Son of Man coming in a cloud\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Today you will be with me in Paradise\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Go in peace, your faith has saved you\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened in the temple when the sun was darkened?",
+      "explanation": "The sun was darkened, and the veil of the temple was torn in two.",
+      "bibleReference": "Luke 23:45",
+      "answers": [
+        {
+          "text": "The veil of the temple was torn in two",
+          "isCorrect": true
+        },
+        {
+          "text": "The lamps in the temple went out",
+          "isCorrect": false
+        },
+        {
+          "text": "The temple doors were shut and sealed",
+          "isCorrect": false
+        },
+        {
+          "text": "The altar fire was quenched",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who asked Pilate for Jesus' body and laid it in a tomb cut in stone?",
+      "explanation": "Joseph, a good and righteous man from Arimathaea who was a member of the council, went to Pilate and asked for Jesus' body, then wrapped it in linen and laid it in a tomb cut in stone.",
+      "bibleReference": "Luke 23:50-53",
+      "answers": [
+        {
+          "text": "The centurion who stood by the cross",
+          "isCorrect": false
+        },
+        {
+          "text": "Simon of Cyrene, who had carried the cross",
+          "isCorrect": false
+        },
+        {
+          "text": "The women who came with him from Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "Joseph, a member of the council, from Arimathaea",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

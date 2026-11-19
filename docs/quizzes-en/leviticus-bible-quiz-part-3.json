@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 3",
+  "description": "Ten questions on Leviticus 3: the laws for peace offerings from the herd, the lamb and the goat, and the fat that is Yahweh's.",
+  "slug": "leviticus-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What kind of animal from the herd could be offered as a peace offering?",
+      "explanation": "If he offers it from the herd, whether male or female, he shall offer it without defect before Yahweh.",
+      "bibleReference": "Leviticus 3:1",
+      "answers": [
+        {
+          "text": "A male or a female, without defect",
+          "isCorrect": true
+        },
+        {
+          "text": "Only a male, without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "Only a female, without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "Any animal, even one with a defect",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the peace offering from the herd to be killed?",
+      "explanation": "He shall lay his hand on the head of his offering, and kill it at the door of the Tent of Meeting.",
+      "bibleReference": "Leviticus 3:2",
+      "answers": [
+        {
+          "text": "Outside the camp, in a clean place",
+          "isCorrect": false
+        },
+        {
+          "text": "At the door of the Tent of Meeting",
+          "isCorrect": true
+        },
+        {
+          "text": "Inside the holy place, before the veil",
+          "isCorrect": false
+        },
+        {
+          "text": "By the river, away from the tents",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Besides the fat, which parts of a peace offering were taken away to be burned?",
+      "explanation": "The two kidneys, the fat that is on them, and the cover on the liver, with the kidneys, he shall take away.",
+      "bibleReference": "Leviticus 3:3-4",
+      "answers": [
+        {
+          "text": "The heart, the lungs and the head",
+          "isCorrect": false
+        },
+        {
+          "text": "The head and the legs",
+          "isCorrect": false
+        },
+        {
+          "text": "The two kidneys and the cover on the liver",
+          "isCorrect": true
+        },
+        {
+          "text": "The skin and the horns of the animal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On top of what did Aaron's sons burn the peace offering?",
+      "explanation": "Aaron's sons shall burn it on the altar on the burnt offering, which is on the wood that is on the fire.",
+      "bibleReference": "Leviticus 3:5",
+      "answers": [
+        {
+          "text": "On the golden altar of incense inside the tent",
+          "isCorrect": false
+        },
+        {
+          "text": "On the table of show bread in the tent",
+          "isCorrect": false
+        },
+        {
+          "text": "In a pit outside the camp",
+          "isCorrect": false
+        },
+        {
+          "text": "On the burnt offering, on the wood on the altar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the man do just before killing a lamb as a peace offering?",
+      "explanation": "He shall lay his hand on the head of his offering, and kill it before the Tent of Meeting.",
+      "bibleReference": "Leviticus 3:7-8",
+      "answers": [
+        {
+          "text": "He washed it with water",
+          "isCorrect": false
+        },
+        {
+          "text": "He laid his hand on its head",
+          "isCorrect": true
+        },
+        {
+          "text": "He anointed it with oil",
+          "isCorrect": false
+        },
+        {
+          "text": "He tied it to the horns of the altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was taken away close to the backbone of a peace offering from the flock?",
+      "explanation": "He shall take away its fat, the entire tail fat, close to the backbone.",
+      "bibleReference": "Leviticus 3:9",
+      "answers": [
+        {
+          "text": "The entire tail fat",
+          "isCorrect": true
+        },
+        {
+          "text": "Both of its shoulders",
+          "isCorrect": false
+        },
+        {
+          "text": "The breast and the neck",
+          "isCorrect": false
+        },
+        {
+          "text": "The head and the jaws",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is the part that the priest burns described in this chapter?",
+      "explanation": "The priest shall burn it on the altar: it is the food of the offering made by fire to Yahweh.",
+      "bibleReference": "Leviticus 3:11",
+      "answers": [
+        {
+          "text": "Bread for the priests to eat",
+          "isCorrect": false
+        },
+        {
+          "text": "A gift to be shared with the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "A memorial of the first fruits",
+          "isCorrect": false
+        },
+        {
+          "text": "The food of the offering made by fire to Yahweh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Besides animals from the herd and lambs, which animal is mentioned as a peace offering?",
+      "explanation": "If his offering is a goat, then he shall offer it before Yahweh.",
+      "bibleReference": "Leviticus 3:12",
+      "answers": [
+        {
+          "text": "A deer",
+          "isCorrect": false
+        },
+        {
+          "text": "A camel",
+          "isCorrect": false
+        },
+        {
+          "text": "A goat",
+          "isCorrect": true
+        },
+        {
+          "text": "A donkey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the end of this law, whose is all the fat?",
+      "explanation": "The priest shall burn them on the altar: it is the food of the offering made by fire, for a pleasant aroma; all the fat is Yahweh's.",
+      "bibleReference": "Leviticus 3:16",
+      "answers": [
+        {
+          "text": "Yahweh's",
+          "isCorrect": true
+        },
+        {
+          "text": "The priest's",
+          "isCorrect": false
+        },
+        {
+          "text": "The offerer's",
+          "isCorrect": false
+        },
+        {
+          "text": "The Levites'",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the perpetual statute at the end of the chapter forbid the people to eat?",
+      "explanation": "It shall be a perpetual statute throughout your generations in all your dwellings, that you shall eat neither fat nor blood.",
+      "bibleReference": "Leviticus 3:17",
+      "answers": [
+        {
+          "text": "Bread and salt",
+          "isCorrect": false
+        },
+        {
+          "text": "Fat and blood",
+          "isCorrect": true
+        },
+        {
+          "text": "Yeast and honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Meat and wine",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

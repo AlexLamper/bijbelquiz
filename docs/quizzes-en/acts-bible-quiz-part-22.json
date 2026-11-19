@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 22",
+  "description": "Ten questions on Acts 22: Paul's defense on the stairs, the light near Damascus, and the question of his Roman citizenship.",
+  "slug": "acts-bible-quiz-part-22",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "At whose feet did Paul say he was brought up in Jerusalem?",
+      "explanation": "Paul said he was born in Tarsus of Cilicia but brought up in this city at the feet of Gamaliel.",
+      "bibleReference": "Acts 22:3",
+      "answers": [
+        {
+          "text": "Ananias",
+          "isCorrect": false
+        },
+        {
+          "text": "The high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Gamaliel",
+          "isCorrect": true
+        },
+        {
+          "text": "Stephen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul say he had done to this Way?",
+      "explanation": "He said he persecuted this Way to the death, binding and delivering into prisons both men and women.",
+      "bibleReference": "Acts 22:4",
+      "answers": [
+        {
+          "text": "He persecuted it to the death, imprisoning both men and women",
+          "isCorrect": true
+        },
+        {
+          "text": "He defended it before the council of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "He taught it secretly in the synagogues",
+          "isCorrect": false
+        },
+        {
+          "text": "He had never heard of it until Damascus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did the great light shine around Paul on his journey, and where did it come from?",
+      "explanation": "As he came close to Damascus, about noon, a great light suddenly shone around him from the sky.",
+      "bibleReference": "Acts 22:6",
+      "answers": [
+        {
+          "text": "At midnight, out of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "At dawn, from a pillar of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "In the evening, from an angel's face",
+          "isCorrect": false
+        },
+        {
+          "text": "About noon, from the sky",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who did the voice say that it was?",
+      "explanation": "When Paul asked who he was, the voice said, \"I am Jesus of Nazareth, whom you persecute.\"",
+      "bibleReference": "Acts 22:8",
+      "answers": [
+        {
+          "text": "The God of our fathers",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus of Nazareth",
+          "isCorrect": true
+        },
+        {
+          "text": "The Spirit of the Lord",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel of the Lord",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Lord tell Paul to do when he asked, \"What shall I do, Lord?\"",
+      "explanation": "The Lord told him to arise and go into Damascus, where he would be told about all the things appointed for him to do.",
+      "bibleReference": "Acts 22:10",
+      "answers": [
+        {
+          "text": "To arise and go into Damascus, where he would be told what to do",
+          "isCorrect": true
+        },
+        {
+          "text": "To return to Jerusalem and to keep silent there",
+          "isCorrect": false
+        },
+        {
+          "text": "To go at once to the Gentiles who were far away",
+          "isCorrect": false
+        },
+        {
+          "text": "To wait on the road until a guide should come",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came to Paul in Damascus, and what did he say to him?",
+      "explanation": "Ananias, a devout man according to the law, stood by him and said, \"Brother Saul, receive your sight!\"",
+      "bibleReference": "Acts 22:12-13",
+      "answers": [
+        {
+          "text": "Gamaliel, who said he should keep the law",
+          "isCorrect": false
+        },
+        {
+          "text": "The high priest, who took back his letters",
+          "isCorrect": false
+        },
+        {
+          "text": "Ananias, who said, \"Brother Saul, receive your sight!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "Agabus, who said he would be bound",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ananias tell Paul to do without waiting?",
+      "explanation": "He said, \"Arise, be baptized, and wash away your sins, calling on the name of the Lord.\"",
+      "bibleReference": "Acts 22:16",
+      "answers": [
+        {
+          "text": "To fast and to pray for three days in that house",
+          "isCorrect": false
+        },
+        {
+          "text": "To arise, be baptized, and wash away his sins",
+          "isCorrect": true
+        },
+        {
+          "text": "To go back to Jerusalem and testify in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "To keep the strict tradition of the fathers' law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul hear while he prayed in the temple at Jerusalem and fell into a trance?",
+      "explanation": "He saw him saying to hurry and get out of Jerusalem quickly, because they would not receive his testimony about him.",
+      "bibleReference": "Acts 22:17-18",
+      "answers": [
+        {
+          "text": "That he would be a witness before kings",
+          "isCorrect": false
+        },
+        {
+          "text": "That he should stay and teach in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "That an angel would lead him to Caesarea",
+          "isCorrect": false
+        },
+        {
+          "text": "To hurry and get out of Jerusalem quickly",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the crowd cry out when Paul said he was sent far away to the Gentiles?",
+      "explanation": "They lifted up their voice and said that he should be rid from the earth, for he was not fit to live.",
+      "bibleReference": "Acts 22:21-22",
+      "answers": [
+        {
+          "text": "Rid the earth of this fellow, for he isn't fit to live",
+          "isCorrect": true
+        },
+        {
+          "text": "Away with him to the high priest and the council",
+          "isCorrect": false
+        },
+        {
+          "text": "Great is the law of our fathers and of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Let him speak to us again about this matter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the commanding officer say about his own citizenship, and what did Paul answer?",
+      "explanation": "The officer said he had bought his citizenship for a great price, and Paul said that he was born a Roman.",
+      "bibleReference": "Acts 22:28",
+      "answers": [
+        {
+          "text": "He had received it from Caesar, while Paul had bought his",
+          "isCorrect": false
+        },
+        {
+          "text": "He had been born a Roman, while Paul had bought his",
+          "isCorrect": false
+        },
+        {
+          "text": "He had bought it for a great price, while Paul was born a Roman",
+          "isCorrect": true
+        },
+        {
+          "text": "He had no citizenship, and neither did Paul",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

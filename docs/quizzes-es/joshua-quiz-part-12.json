@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Josué 12: los reyes vencidos a un lado y al otro del Jordán, y la cuenta final de treinta y un reyes.",
+  "slug": "joshua-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Hasta dónde llegaba la tierra de los reyes heridos al otro lado del Jordán?",
+      "explanation": "El texto dice que esa tierra iba desde el arroyo de Arnón hasta el monte Hermón, con toda la llanura oriental.",
+      "bibleReference": "Josué 12:1",
+      "answers": [
+        {
+          "text": "Desde Jericó hasta la gran mar del occidente",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el desierto de Zin hasta el Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el arroyo de Arnón hasta el monte Hermón",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde Cades-barnea hasta Gaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde habitaba Sehón, rey de los Amorrheos?",
+      "explanation": "El texto dice que Sehón rey de los Amorrheos habitaba en Hesbón.",
+      "bibleReference": "Josué 12:2",
+      "answers": [
+        {
+          "text": "En Hesbón",
+          "isCorrect": true
+        },
+        {
+          "text": "En Astaroth",
+          "isCorrect": false
+        },
+        {
+          "text": "En Edrei",
+          "isCorrect": false
+        },
+        {
+          "text": "En Salca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes había quedado Og, rey de Basán?",
+      "explanation": "El texto dice que Og rey de Basán había quedado de los Rapheos, y habitaba en Astaroth y en Edrei.",
+      "bibleReference": "Josué 12:4",
+      "answers": [
+        {
+          "text": "De los Heveos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Jebuseos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Pherezeos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Rapheos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dio Moisés aquella tierra en posesión?",
+      "explanation": "Moisés, siervo de Jehová, dio aquella tierra en posesión a los Rubenitas, a los Gaditas y a la media tribu de Manasés.",
+      "bibleReference": "Josué 12:6",
+      "answers": [
+        {
+          "text": "A las nueve tribus y a la media tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Rubenitas, Gaditas y la media tribu de Manasés",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes y Levitas de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de José, Ephraim y Manasés",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Josué con la tierra de los reyes que hirió a este lado del Jordán?",
+      "explanation": "Josué dio aquella tierra en posesión a las tribus de Israel, conforme a sus repartimientos.",
+      "bibleReference": "Josué 12:7",
+      "answers": [
+        {
+          "text": "La dejó desierta para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "La entregó toda a los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "La dio en posesión a las tribus de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "La guardó para los hijos de José",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre da el texto a la mar de la llanura, al oriente?",
+      "explanation": "El texto la llama la mar de la llanura, el mar Salado, al oriente, por el camino de Beth-jesimoth.",
+      "bibleReference": "Josué 12:3",
+      "answers": [
+        {
+          "text": "La mar de Cinneroth",
+          "isCorrect": false
+        },
+        {
+          "text": "La gran mar del occidente",
+          "isCorrect": false
+        },
+        {
+          "text": "El arroyo Jaboc",
+          "isCorrect": false
+        },
+        {
+          "text": "El mar Salado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según la lista, ¿al lado de qué ciudad estaba Hai?",
+      "explanation": "La lista nombra al rey de Jericó y después al rey de Hai, que está al lado de Beth-el.",
+      "bibleReference": "Josué 12:9",
+      "answers": [
+        {
+          "text": "Al lado de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "Al lado de Beth-el",
+          "isCorrect": true
+        },
+        {
+          "text": "Al lado de Maceda",
+          "isCorrect": false
+        },
+        {
+          "text": "Al lado de Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde señoreaba Og, rey de Basán?",
+      "explanation": "El texto dice que señoreaba en el monte de Hermón, en Salca y en todo Basán, hasta los términos de Gessuri y de Maachâti.",
+      "bibleReference": "Josué 12:5",
+      "answers": [
+        {
+          "text": "En Hermón, Salca y todo Basán",
+          "isCorrect": true
+        },
+        {
+          "text": "En Hesbón y la campiña de Medeba",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jericó y la llanura del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "En el Líbano y el monte de Halac",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo nombra la lista al rey de Jocneam?",
+      "explanation": "La lista dice: el rey de Chêdes, otro: el rey de Jocneam de Carmel, otro.",
+      "bibleReference": "Josué 12:22",
+      "answers": [
+        {
+          "text": "El rey de Jocneam de Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Jocneam de Dor",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Jocneam de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Jocneam de Carmel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos reyes cuenta la lista en total?",
+      "explanation": "La lista termina con el rey de Tirsa y dice: treinta y un reyes en todo.",
+      "bibleReference": "Josué 12:24",
+      "answers": [
+        {
+          "text": "Veintinueve reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y un reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta y tres reyes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

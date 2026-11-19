@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 6",
+  "description": "Ten questions on 1 Samuel 6: the Philistines send back the ark with a trespass offering, and it comes to Beth Shemesh.",
+  "slug": "1-samuel-bible-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How long was Yahweh's ark in the country of the Philistines?",
+      "explanation": "1 Samuel 6:1 says Yahweh's ark was in the country of the Philistines seven months.",
+      "bibleReference": "1 Samuel 6:1",
+      "answers": [
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven months",
+          "isCorrect": true
+        },
+        {
+          "text": "Three months",
+          "isCorrect": false
+        },
+        {
+          "text": "One year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the Philistines call to ask what to do with the ark?",
+      "explanation": "The Philistines called for the priests and the diviners.",
+      "bibleReference": "1 Samuel 6:2",
+      "answers": [
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophets of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests and the diviners",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did they say must not happen when the ark was sent away?",
+      "explanation": "They said, \"Don't send it empty; but by all means return a trespass offering to him.\"",
+      "bibleReference": "1 Samuel 6:3",
+      "answers": [
+        {
+          "text": "It must not be sent empty",
+          "isCorrect": true
+        },
+        {
+          "text": "It must not be sent by night",
+          "isCorrect": false
+        },
+        {
+          "text": "It must not be touched by a woman",
+          "isCorrect": false
+        },
+        {
+          "text": "It must not pass through Gath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the trespass offering to be?",
+      "explanation": "They said: five golden tumors and five golden mice, for the number of the lords of the Philistines.",
+      "bibleReference": "1 Samuel 6:4",
+      "answers": [
+        {
+          "text": "Five silver bowls and five silver rings",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven golden calves and seven lamps",
+          "isCorrect": false
+        },
+        {
+          "text": "Five golden tumors and five golden mice",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten bars of silver and ten of gold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the Philistines to prepare to carry the ark?",
+      "explanation": "They were to prepare a new cart and two milk cows on which no yoke had come.",
+      "bibleReference": "1 Samuel 6:7",
+      "answers": [
+        {
+          "text": "Four horses and a chariot",
+          "isCorrect": false
+        },
+        {
+          "text": "Two oxen used to plowing",
+          "isCorrect": false
+        },
+        {
+          "text": "A new cart and two milk cows never yoked",
+          "isCorrect": true
+        },
+        {
+          "text": "Priests to carry it on poles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Toward which town did the cows take the straight way?",
+      "explanation": "The cows took the straight way by the way to Beth Shemesh, lowing as they went.",
+      "bibleReference": "1 Samuel 6:12",
+      "answers": [
+        {
+          "text": "Ashkelon",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Shemesh",
+          "isCorrect": true
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Beersheba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were the people of Beth Shemesh doing when they saw the ark?",
+      "explanation": "They were reaping their wheat harvest in the valley, and they rejoiced to see the ark.",
+      "bibleReference": "1 Samuel 6:13",
+      "answers": [
+        {
+          "text": "Reaping their wheat harvest in the valley",
+          "isCorrect": true
+        },
+        {
+          "text": "Building a new altar to Yahweh on the hill",
+          "isCorrect": false
+        },
+        {
+          "text": "Mourning for their dead at the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "Gathering grapes in their vineyards",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose field did the cart stop, where there was a great stone?",
+      "explanation": "The cart came into the field of Joshua of Beth Shemesh and stood there, where there was a great stone.",
+      "bibleReference": "1 Samuel 6:14",
+      "answers": [
+        {
+          "text": "Abinadab of the hill",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The lords of the Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua of Beth Shemesh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Yahweh strike the men of Beth Shemesh?",
+      "explanation": "He struck the men of Beth Shemesh because they had looked into Yahweh's ark.",
+      "bibleReference": "1 Samuel 6:19",
+      "answers": [
+        {
+          "text": "They had refused to offer sacrifices",
+          "isCorrect": false
+        },
+        {
+          "text": "They had looked into Yahweh's ark",
+          "isCorrect": true
+        },
+        {
+          "text": "They had sent the ark away",
+          "isCorrect": false
+        },
+        {
+          "text": "They had worshiped Dagon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To the inhabitants of which place did the men of Beth Shemesh send messengers about the ark?",
+      "explanation": "They sent messengers to the inhabitants of Kiriath Jearim, asking them to come and bring the ark up.",
+      "bibleReference": "1 Samuel 6:21",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": true
+        },
+        {
+          "text": "Gibeah of Benjamin",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

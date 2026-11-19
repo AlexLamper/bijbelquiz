@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Josué 9: la astucia de los moradores de Gabaón, la alianza hecha sin consultar a Jehová y su oficio de leñadores y aguadores.",
+  "slug": "joshua-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hicieron los reyes de esta parte del Jordán cuando oyeron estas cosas?",
+      "explanation": "Los reyes de las montañas, de los llanos y de la costa se juntaron a una, de un acuerdo, para pelear contra Josué e Israel.",
+      "bibleReference": "Josué 9:1-2",
+      "answers": [
+        {
+          "text": "Enviaron presentes a Josué en Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron hacia la gran mar y el Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Hicieron alianza con los moradores de Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Se juntaron para pelear contra Josué e Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los moradores de Gabaón al oír lo que Josué había hecho a Jericó y a Hai?",
+      "explanation": "Ellos usaron de astucia: fueron y se fingieron embajadores, con sacos viejos, cueros de vino rotos y pan seco y mohoso.",
+      "bibleReference": "Josué 9:3-5",
+      "answers": [
+        {
+          "text": "Juntaron sus ejércitos para pelear",
+          "isCorrect": false
+        },
+        {
+          "text": "Usaron astucia y se fingieron embajadores",
+          "isCorrect": true
+        },
+        {
+          "text": "Huyeron a las montañas del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviaron plata y oro al campo de Gilgal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron al llegar al campo en Gilgal?",
+      "explanation": "Dijeron a Josué y a los de Israel que venían de tierra muy lejana y que hicieran alianza con ellos.",
+      "bibleReference": "Josué 9:6",
+      "answers": [
+        {
+          "text": "Que venían a entregar su ciudad a Josué",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran mensajeros de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que venían de tierra muy lejana y pedían alianza",
+          "isCorrect": true
+        },
+        {
+          "text": "Que querían pelear contra los Heveos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mostraron como prueba de lo muy largo del camino?",
+      "explanation": "Mostraron su pan, que habían tomado caliente y estaba ya seco y mohoso, y sus cueros de vino, que habían llenado nuevos y estaban rotos.",
+      "bibleReference": "Josué 9:12-13",
+      "answers": [
+        {
+          "text": "Su pan seco y mohoso y sus cueros de vino rotos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cartas de sus ancianos y un mapa del camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Oro y plata tomados de sus ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Las armas que habían usado en la guerra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué dejaron de hacer los hombres de Israel?",
+      "explanation": "Los hombres de Israel tomaron de su provisión del camino y no preguntaron a la boca de Jehová.",
+      "bibleReference": "Josué 9:14",
+      "answers": [
+        {
+          "text": "No tomaron nada de su provisión",
+          "isCorrect": false
+        },
+        {
+          "text": "No preguntaron a la boca de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "No dejaron entrar a los embajadores",
+          "isCorrect": false
+        },
+        {
+          "text": "No avisaron a los príncipes de la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo después del concierto oyeron que aquellos hombres eran sus vecinos?",
+      "explanation": "Pasados tres días después de hacer el concierto con ellos, oyeron que eran sus vecinos y que habitaban en medio de ellos.",
+      "bibleReference": "Josué 9:16",
+      "answers": [
+        {
+          "text": "Pasados siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Pasados cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Pasados tres días",
+          "isCorrect": true
+        },
+        {
+          "text": "Pasado un año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuáles eran las ciudades de aquellos hombres?",
+      "explanation": "Al tercer día llegaron a sus ciudades, que eran Gabaón, Caphira, Beeroth y Chiriath-jearim.",
+      "bibleReference": "Josué 9:17",
+      "answers": [
+        {
+          "text": "Gabaón, Caphira, Beeroth y Chiriath-jearim",
+          "isCorrect": true
+        },
+        {
+          "text": "Jericó, Hai, Beth-el y Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Hesbón, Basán, Astaroth y Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Hetheos, Amorrheos, Cananeos y Jebuseos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no los hirieron los hijos de Israel?",
+      "explanation": "No los hirieron porque los príncipes de la congregación les habían jurado por Jehová el Dios de Israel.",
+      "bibleReference": "Josué 9:18",
+      "answers": [
+        {
+          "text": "Porque eran parientes de los israelitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Josué había recibido oro de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque habitaban muy lejos del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los príncipes les habían jurado por Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los príncipes que serían aquellos hombres?",
+      "explanation": "Los príncipes dijeron que vivieran, pero que fueran leñadores y aguadores para toda la congregación.",
+      "bibleReference": "Josué 9:21",
+      "answers": [
+        {
+          "text": "Siervos del rey de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacerdotes del altar de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Leñadores y aguadores para la congregación",
+          "isCorrect": true
+        },
+        {
+          "text": "Soldados en el ejército de Josué",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según su propia respuesta a Josué, ¿por qué habían hecho esto?",
+      "explanation": "Respondieron que, al saber lo que Jehová había mandado a Moisés, temieron en gran manera por sus vidas y por eso lo hicieron.",
+      "bibleReference": "Josué 9:24",
+      "answers": [
+        {
+          "text": "Porque querían las ciudades de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque temieron por sus vidas",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque sus ancianos los habían echado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque buscaban aliarse con los Amorrheos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

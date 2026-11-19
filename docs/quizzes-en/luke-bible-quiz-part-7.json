@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 7",
+  "description": "Ten questions on Luke 7: the centurion's servant, the widow's son at Nain, the question from John, and the woman who anointed Jesus' feet.",
+  "slug": "luke-bible-quiz-part-7",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Whom did the centurion send to Jesus when he heard about him?",
+      "explanation": "His servant, who was dear to him, was sick and at the point of death, so he sent elders of the Jews to Jesus, asking him to come and save his servant.",
+      "bibleReference": "Luke 7:2-3",
+      "answers": [
+        {
+          "text": "His own soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "His friends from the city",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests of the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "Elders of the Jews",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What reason did those who came to Jesus give for saying the centurion was worthy?",
+      "explanation": "They begged him earnestly, saying that the centurion is worthy because he loves their nation and built their synagogue for them.",
+      "bibleReference": "Luke 7:4-5",
+      "answers": [
+        {
+          "text": "That he had freed many of his servants",
+          "isCorrect": false
+        },
+        {
+          "text": "That he loves their nation and built their synagogue",
+          "isCorrect": true
+        },
+        {
+          "text": "That he had believed the words of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had given much money to the poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What message did the centurion send by his friends when Jesus was not far from the house?",
+      "explanation": "He said he was not worthy for Jesus to come under his roof, and asked him only to say the word, so that his servant would be healed.",
+      "bibleReference": "Luke 7:6-7",
+      "answers": [
+        {
+          "text": "That Jesus should say the word, since he was not worthy",
+          "isCorrect": true
+        },
+        {
+          "text": "That Jesus should come quickly into the house",
+          "isCorrect": false
+        },
+        {
+          "text": "That the servant had already died at home",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would come out to meet Jesus himself",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the multitude about the centurion's faith?",
+      "explanation": "He marveled at him, turned to the multitude who followed him and said, \"I tell you, I have not found such great faith, no, not in Israel.\"",
+      "bibleReference": "Luke 7:9",
+      "answers": [
+        {
+          "text": "That such faith is found only in Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "That the elders had spoken well of him",
+          "isCorrect": false
+        },
+        {
+          "text": "That he had not found such great faith, not even in Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "That the man's faith had made him worthy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the dead man being carried out at the gate of the city of Nain?",
+      "explanation": "One who was dead was carried out, the only son of his mother, and she was a widow, and many people of the city were with her.",
+      "bibleReference": "Luke 7:12",
+      "answers": [
+        {
+          "text": "A ruler of the city",
+          "isCorrect": false
+        },
+        {
+          "text": "A young man of the disciples",
+          "isCorrect": false
+        },
+        {
+          "text": "The son of one of the elders",
+          "isCorrect": false
+        },
+        {
+          "text": "The only son of his mother, who was a widow",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the dead young man after he touched the coffin?",
+      "explanation": "He came near and touched the coffin, the bearers stood still, and he said, \"Young man, I tell you, arise!\"",
+      "bibleReference": "Luke 7:14",
+      "answers": [
+        {
+          "text": "\"Don't cry any longer\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Young man, I tell you, arise!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Rise up and walk, young man\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Your mother has need of you\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did John's two disciples ask Jesus?",
+      "explanation": "John called two of his disciples to himself and sent them to Jesus to ask, \"Are you the one who is coming, or should we look for another?\"",
+      "bibleReference": "Luke 7:19",
+      "answers": [
+        {
+          "text": "Whether he was the one who is coming, or another",
+          "isCorrect": true
+        },
+        {
+          "text": "Whether John should be released from prison",
+          "isCorrect": false
+        },
+        {
+          "text": "Why his disciples did not fast or pray",
+          "isCorrect": false
+        },
+        {
+          "text": "Whether he would come to the wilderness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell them to report to John?",
+      "explanation": "He told them to tell John what they had seen and heard: the blind receive their sight, the lame walk, the lepers are cleansed, the deaf hear, the dead are raised up, and the poor have good news preached to them.",
+      "bibleReference": "Luke 7:22",
+      "answers": [
+        {
+          "text": "That the Pharisees had rejected the counsel of God",
+          "isCorrect": false
+        },
+        {
+          "text": "That he was going up to Jerusalem soon",
+          "isCorrect": false
+        },
+        {
+          "text": "That the blind see, the lame walk and the dead are raised",
+          "isCorrect": true
+        },
+        {
+          "text": "That John should wait for another sign",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the woman who was a sinner do at Jesus' feet in the Pharisee's house?",
+      "explanation": "Standing behind at his feet weeping, she began to wet his feet with her tears, wiped them with the hair of her head, kissed his feet and anointed them with the ointment.",
+      "bibleReference": "Luke 7:37-38",
+      "answers": [
+        {
+          "text": "She poured the ointment over his head at the table",
+          "isCorrect": false
+        },
+        {
+          "text": "She asked him aloud to forgive her many sins",
+          "isCorrect": false
+        },
+        {
+          "text": "She brought water from the well for his feet",
+          "isCorrect": false
+        },
+        {
+          "text": "She wet his feet with her tears and anointed them with ointment",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the story of the two debtors, which one did Simon say would love the lender most?",
+      "explanation": "One debtor owed five hundred denarii and the other fifty, and when neither could pay the lender forgave them both; Simon answered that the one to whom he forgave the most would love him most, and Jesus said he had judged correctly.",
+      "bibleReference": "Luke 7:41-43",
+      "answers": [
+        {
+          "text": "The one who owed fifty denarii",
+          "isCorrect": false
+        },
+        {
+          "text": "The one to whom the most was forgiven",
+          "isCorrect": true
+        },
+        {
+          "text": "Both of them equally",
+          "isCorrect": false
+        },
+        {
+          "text": "Neither of them, since the debt was cancelled",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

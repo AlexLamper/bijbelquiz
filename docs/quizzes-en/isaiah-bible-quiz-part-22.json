@@ -1,0 +1,242 @@
+{
+  "title": "Isaiah Bible Quiz - Chapter 22",
+  "description": "Ten questions on Isaiah 22: the burden of the valley of vision, feasting instead of weeping, Shebna the treasurer, and Eliakim with the key of David's house.",
+  "slug": "isaiah-bible-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Isaiah 22 is called the burden of what?",
+      "explanation": "Verse 1 opens with \"The burden of the valley of vision.\"",
+      "bibleReference": "Isaiah 22:1",
+      "answers": [
+        {
+          "text": "The wilderness of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The valley of vision",
+          "isCorrect": true
+        },
+        {
+          "text": "The city of David",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain of the Lord",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where have all the people gone up, according to verse 1?",
+      "explanation": "Verse 1 asks, \"What ails you now, that you have all gone up to the housetops?\"",
+      "bibleReference": "Isaiah 22:1",
+      "answers": [
+        {
+          "text": "To the housetops",
+          "isCorrect": true
+        },
+        {
+          "text": "To the high places",
+          "isCorrect": false
+        },
+        {
+          "text": "To the city gates",
+          "isCorrect": false
+        },
+        {
+          "text": "To the temple courts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does verse 2 describe the city's slain?",
+      "explanation": "Verse 2 says, \"your slain are not slain with the sword, neither are they dead in battle.\"",
+      "bibleReference": "Isaiah 22:2",
+      "answers": [
+        {
+          "text": "Slain by famine in the siege",
+          "isCorrect": false
+        },
+        {
+          "text": "Slain at the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Not slain with the sword",
+          "isCorrect": true
+        },
+        {
+          "text": "Slain by their own rulers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who carried his quiver, with chariots of men and horsemen?",
+      "explanation": "Verse 6 says, \"Elam carried his quiver, with chariots of men and horsemen; and Kir uncovered the shield.\"",
+      "bibleReference": "Isaiah 22:6",
+      "answers": [
+        {
+          "text": "Kir",
+          "isCorrect": false
+        },
+        {
+          "text": "Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "Media",
+          "isCorrect": false
+        },
+        {
+          "text": "Elam",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the people see were many in David's city?",
+      "explanation": "Verse 9 says, \"You saw the breaches of David's city, that they were many,\" and they gathered the waters of the lower pool.",
+      "bibleReference": "Isaiah 22:9",
+      "answers": [
+        {
+          "text": "The towers",
+          "isCorrect": false
+        },
+        {
+          "text": "The breaches",
+          "isCorrect": true
+        },
+        {
+          "text": "The soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "The storehouses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did they break down the houses of Jerusalem?",
+      "explanation": "Verse 10 says they counted the houses of Jerusalem and broke down the houses to fortify the wall.",
+      "bibleReference": "Isaiah 22:10",
+      "answers": [
+        {
+          "text": "To fortify the wall",
+          "isCorrect": true
+        },
+        {
+          "text": "To build the king a palace",
+          "isCorrect": false
+        },
+        {
+          "text": "To make room for chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "To punish the rebels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Instead of weeping, what did the people say as they ate and drank?",
+      "explanation": "Verse 13 says there was joy and gladness, killing cattle and sheep, \"Let's eat and drink, for tomorrow we will die.\"",
+      "bibleReference": "Isaiah 22:13",
+      "answers": [
+        {
+          "text": "\"Peace and safety belong to us forever\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The Lord has delivered us from our enemies\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let's eat and drink, for tomorrow we will die\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Tomorrow we will fight and take the spoil\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which treasurer, who is over the house, is the prophet sent to?",
+      "explanation": "Verse 15 says, \"Go, get yourself to this treasurer, even to Shebna, who is over the house.\"",
+      "bibleReference": "Isaiah 22:15",
+      "answers": [
+        {
+          "text": "Eliakim",
+          "isCorrect": false
+        },
+        {
+          "text": "Hilkiah",
+          "isCorrect": false
+        },
+        {
+          "text": "Joah",
+          "isCorrect": false
+        },
+        {
+          "text": "Shebna",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom will Yahweh call his servant and clothe with Shebna's robe?",
+      "explanation": "Verses 20-21 say Yahweh will call his servant Eliakim the son of Hilkiah and clothe him with the robe and belt.",
+      "bibleReference": "Isaiah 22:20-21",
+      "answers": [
+        {
+          "text": "Isaiah the son of Amoz",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliakim the son of Hilkiah",
+          "isCorrect": true
+        },
+        {
+          "text": "Shebna the scribe",
+          "isCorrect": false
+        },
+        {
+          "text": "Hezekiah the king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What will be laid on Eliakim's shoulder?",
+      "explanation": "Verse 22 says, \"I will lay the key of David's house on his shoulder. He will open, and no one will shut.\"",
+      "bibleReference": "Isaiah 22:22",
+      "answers": [
+        {
+          "text": "The government of Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "A staff of iron",
+          "isCorrect": false
+        },
+        {
+          "text": "The robe of the high priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The key of David's house",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

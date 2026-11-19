@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 16",
+  "description": "Ten questions on Joshua 16: the lot of the children of Joseph and the borders of Ephraim's inheritance.",
+  "slug": "joshua-bible-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "For whom did the lot come out in this chapter, starting from the Jordan at Jericho?",
+      "explanation": "The lot came out for the children of Joseph from the Jordan at Jericho, at the waters of Jericho on the east.",
+      "bibleReference": "Joshua 16:1",
+      "answers": [
+        {
+          "text": "The children of Joseph",
+          "isCorrect": true
+        },
+        {
+          "text": "The children of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "The children of Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "The children of Levi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Going up from Jericho through the hill country, the border reached which city?",
+      "explanation": "The border went up from Jericho through the hill country to Bethel.",
+      "bibleReference": "Joshua 16:1",
+      "answers": [
+        {
+          "text": "Shechem",
+          "isCorrect": false
+        },
+        {
+          "text": "Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": true
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From Bethel the border went out to which place?",
+      "explanation": "It went out from Bethel to Luz, and passed along to the border of the Archites to Ataroth.",
+      "bibleReference": "Joshua 16:2",
+      "answers": [
+        {
+          "text": "Ai",
+          "isCorrect": false
+        },
+        {
+          "text": "Luz",
+          "isCorrect": true
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Going down westward past Beth Horon the lower, the border went on to which city?",
+      "explanation": "The border went down westward to Beth Horon the lower, and on to Gezer, and ended at the sea.",
+      "bibleReference": "Joshua 16:3",
+      "answers": [
+        {
+          "text": "Lachish",
+          "isCorrect": false
+        },
+        {
+          "text": "Ekron",
+          "isCorrect": false
+        },
+        {
+          "text": "Joppa",
+          "isCorrect": false
+        },
+        {
+          "text": "Gezer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which two took their inheritance as the children of Joseph?",
+      "explanation": "The children of Joseph, Manasseh and Ephraim, took their inheritance.",
+      "bibleReference": "Joshua 16:4",
+      "answers": [
+        {
+          "text": "Reuben and Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Manasseh and Ephraim",
+          "isCorrect": true
+        },
+        {
+          "text": "Judah and Simeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan and Naphtali",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Ephraim's eastern border ran from Ataroth Addar to which place?",
+      "explanation": "The border of Ephraim's inheritance eastward was Ataroth Addar, to Beth Horon the upper.",
+      "bibleReference": "Joshua 16:5",
+      "answers": [
+        {
+          "text": "Beth Horon the upper",
+          "isCorrect": true
+        },
+        {
+          "text": "Beth Shemesh and Timnah",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Peor and Pisgah",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Arabah and Middin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To which place did the border turn eastward from Michmethath?",
+      "explanation": "The border turned about eastward to Taanath Shiloh and passed along it on the east of Janoah.",
+      "bibleReference": "Joshua 16:6",
+      "answers": [
+        {
+          "text": "Kiriath Jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth Shean",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramath Mizpeh",
+          "isCorrect": false
+        },
+        {
+          "text": "Taanath Shiloh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "From Tappuah, the border went westward to which brook?",
+      "explanation": "From Tappuah the border went along westward to the brook of Kanah, and ended at the sea.",
+      "bibleReference": "Joshua 16:8",
+      "answers": [
+        {
+          "text": "The brook of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The brook Kidron",
+          "isCorrect": false
+        },
+        {
+          "text": "The brook of Kanah",
+          "isCorrect": true
+        },
+        {
+          "text": "The brook Zered",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where were some cities set apart for the children of Ephraim?",
+      "explanation": "Cities were set apart for the children of Ephraim in the middle of the inheritance of the children of Manasseh.",
+      "bibleReference": "Joshua 16:9",
+      "answers": [
+        {
+          "text": "In the middle of Manasseh's inheritance",
+          "isCorrect": true
+        },
+        {
+          "text": "In the middle of Judah's inheritance",
+          "isCorrect": false
+        },
+        {
+          "text": "Beyond the Jordan eastward",
+          "isCorrect": false
+        },
+        {
+          "text": "In the land of the Philistines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the Canaanites who lived in Gezer?",
+      "explanation": "Ephraim did not drive them out; the Canaanites dwell in Ephraim's territory and have become servants doing forced labor.",
+      "bibleReference": "Joshua 16:10",
+      "answers": [
+        {
+          "text": "They were all driven out of Gezer",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled from Gezer to Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "They stayed and were put to forced labor",
+          "isCorrect": true
+        },
+        {
+          "text": "They moved away to Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

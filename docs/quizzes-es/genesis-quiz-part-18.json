@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre Génesis 18: los tres varones en Mamre, la risa de Sara y la intercesión de Abraham por Sodoma.",
+  "slug": "genesis-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos varones vio Abraham junto a él cuando estaba sentado a la puerta de su tienda?",
+      "explanation": "Abraham alzó sus ojos y vio tres varones que estaban junto a él, y salió corriendo a recibirlos.",
+      "bibleReference": "Génesis 18:2",
+      "answers": [
+        {
+          "text": "Dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres",
+          "isCorrect": true
+        },
+        {
+          "text": "Uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofreció Abraham a los varones cuando les rogó que no pasaran de largo?",
+      "explanation": "Les ofreció un poco de agua para lavar sus pies, descanso debajo de un árbol y un bocado de pan.",
+      "bibleReference": "Génesis 18:4-5",
+      "answers": [
+        {
+          "text": "Agua para lavar sus pies y un bocado de pan",
+          "isCorrect": true
+        },
+        {
+          "text": "Plata y oro de toda su hacienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordero asado y vino de su tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cama dentro de su tienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Abraham a Sara que hiciera?",
+      "explanation": "Abraham fue de prisa a la tienda y le dijo a Sara que tomase pronto tres medidas de flor de harina, amasase e hiciese panes cocidos debajo del rescoldo.",
+      "bibleReference": "Génesis 18:6",
+      "answers": [
+        {
+          "text": "Aderezar el becerro tierno y bueno",
+          "isCorrect": false
+        },
+        {
+          "text": "Traer agua para lavar los pies de los varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Cocer panes sin levadura para el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Amasar tres medidas de flor de harina y hacer panes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Abraham delante de ellos junto con el becerro aderezado?",
+      "explanation": "Tomó también manteca y leche, y el becerro que había aderezado, y lo puso delante de ellos, y comieron.",
+      "bibleReference": "Génesis 18:8",
+      "answers": [
+        {
+          "text": "Pan y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Manteca y leche",
+          "isCorrect": true
+        },
+        {
+          "text": "Miel y aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Higos y uvas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anunció el visitante acerca de Sara?",
+      "explanation": "Dijo que volvería según el tiempo de la vida y que Sara, la mujer de Abraham, tendría un hijo.",
+      "bibleReference": "Génesis 18:10",
+      "answers": [
+        {
+          "text": "Que moriría en paz y en buena vejez",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volvería a llamarse Sarai",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tendría un hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tendría dos hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se rió Sara entre sí?",
+      "explanation": "Abraham y Sara eran viejos, entrados en días, y Sara se rió pensando si después de haber envejecido tendría deleite, siendo su señor también ya viejo.",
+      "bibleReference": "Génesis 18:11-12",
+      "answers": [
+        {
+          "text": "Porque no creía a su marido",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los varones comieron de prisa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ella y su señor ya eran viejos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el niño ya había nacido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué preguntó Jehová a Abraham después de que Sara se rió?",
+      "explanation": "Jehová preguntó por qué se había reído Sara, y dijo: ¿Hay para Dios alguna cosa difícil? Al tiempo señalado volvería y Sara tendría un hijo.",
+      "bibleReference": "Génesis 18:13-14",
+      "answers": [
+        {
+          "text": "¿Hay para Dios alguna cosa difícil?",
+          "isCorrect": true
+        },
+        {
+          "text": "¿Dónde está Sara tu mujer?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Destruirás también al justo con el impío?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Quién te dijo que eras viejo?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová acerca del clamor de Sodoma y Gomorra?",
+      "explanation": "Dijo que el clamor de Sodoma y Gomorra se aumentaba más y más y que su pecado se había agravado en extremo, y que descendería a ver si habían consumado su obra.",
+      "bibleReference": "Génesis 18:20-21",
+      "answers": [
+        {
+          "text": "Que ya las había destruido con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que en ellas había cincuenta justos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Lot las gobernaría desde la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se aumentaba y que descendería a verlo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Jehová cuando Abraham habló de cincuenta justos en la ciudad?",
+      "explanation": "Jehová respondió que si hallaba en Sodoma cincuenta justos dentro de la ciudad, perdonaría a todo aquel lugar por amor de ellos.",
+      "bibleReference": "Génesis 18:26",
+      "answers": [
+        {
+          "text": "Que la destruiría de todos modos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que perdonaría a todo aquel lugar por amor de ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sacaría primero a los justos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no quería seguir hablando",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué número de justos terminó Abraham su petición?",
+      "explanation": "Abraham habló por última vez de diez justos, y Jehová respondió que no la destruiría por amor de los diez.",
+      "bibleReference": "Génesis 18:32",
+      "answers": [
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta y cinco",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

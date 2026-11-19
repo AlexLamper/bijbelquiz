@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 15",
+  "description": "Ten questions on 1 Samuel 15: Saul spares Agag and the best of the animals, and Yahweh rejects him from being king.",
+  "slug": "1-samuel-bible-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Which people did Yahweh command Saul to strike and utterly destroy?",
+      "explanation": "Yahweh said, \"Now go and strike Amalek, and utterly destroy all that they have.\"",
+      "bibleReference": "1 Samuel 15:2-3",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Amalek",
+          "isCorrect": true
+        },
+        {
+          "text": "The Ammonites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Saul count the people before the attack?",
+      "explanation": "Saul summoned the people and counted them in Telaim.",
+      "bibleReference": "1 Samuel 15:4",
+      "answers": [
+        {
+          "text": "Telaim",
+          "isCorrect": true
+        },
+        {
+          "text": "Bezek",
+          "isCorrect": false
+        },
+        {
+          "text": "Mizpah",
+          "isCorrect": false
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Saul warn to depart from among the Amalekites?",
+      "explanation": "Saul told the Kenites to depart, for they showed kindness to Israel when they came up out of Egypt.",
+      "bibleReference": "1 Samuel 15:6",
+      "answers": [
+        {
+          "text": "The Philistines",
+          "isCorrect": false
+        },
+        {
+          "text": "The Edomites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Hittites",
+          "isCorrect": false
+        },
+        {
+          "text": "The Kenites",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did Saul take alive?",
+      "explanation": "He took Agag the king of the Amalekites alive.",
+      "bibleReference": "1 Samuel 15:8",
+      "answers": [
+        {
+          "text": "Nahash the king of Ammon",
+          "isCorrect": false
+        },
+        {
+          "text": "Agag the king of the Amalekites",
+          "isCorrect": true
+        },
+        {
+          "text": "The captain of the army of Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "The king of the Kenites",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel do after Yahweh said it grieved him that he had made Saul king?",
+      "explanation": "Samuel was angry, and he cried to Yahweh all night.",
+      "bibleReference": "1 Samuel 15:11",
+      "answers": [
+        {
+          "text": "He cried to Yahweh all night",
+          "isCorrect": true
+        },
+        {
+          "text": "He went to Saul at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He anointed a new king",
+          "isCorrect": false
+        },
+        {
+          "text": "He went home to sleep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Saul set up a monument for himself?",
+      "explanation": "Samuel was told that Saul came to Carmel and set up a monument for himself.",
+      "bibleReference": "1 Samuel 15:12",
+      "answers": [
+        {
+          "text": "Gibeah",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramah",
+          "isCorrect": false
+        },
+        {
+          "text": "Carmel",
+          "isCorrect": true
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Samuel hear that showed the animals had not been destroyed?",
+      "explanation": "Samuel asked what the bleating of the sheep and the lowing of the cattle meant.",
+      "bibleReference": "1 Samuel 15:14",
+      "answers": [
+        {
+          "text": "The neighing of horses and chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "The bleating of sheep and the lowing of cattle",
+          "isCorrect": true
+        },
+        {
+          "text": "The roaring of lions in the hills",
+          "isCorrect": false
+        },
+        {
+          "text": "The crowing of roosters at dawn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Samuel, what is better than sacrifice?",
+      "explanation": "Samuel said, \"Behold, to obey is better than sacrifice, and to listen than the fat of rams.\"",
+      "bibleReference": "1 Samuel 15:22",
+      "answers": [
+        {
+          "text": "To fast",
+          "isCorrect": false
+        },
+        {
+          "text": "To give gold",
+          "isCorrect": false
+        },
+        {
+          "text": "To build altars",
+          "isCorrect": false
+        },
+        {
+          "text": "To obey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Saul grab as Samuel turned around to go away, so that it tore?",
+      "explanation": "As Samuel turned around to go away, Saul grabbed the skirt of his robe, and it tore.",
+      "bibleReference": "1 Samuel 15:27",
+      "answers": [
+        {
+          "text": "A scroll in Samuel's hand",
+          "isCorrect": false
+        },
+        {
+          "text": "The curtain of a tent",
+          "isCorrect": false
+        },
+        {
+          "text": "The skirt of his robe",
+          "isCorrect": true
+        },
+        {
+          "text": "Samuel's staff",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Samuel say Yahweh had given the kingdom?",
+      "explanation": "Samuel said Yahweh had given it to a neighbor of Saul's who is better than he.",
+      "bibleReference": "1 Samuel 15:28",
+      "answers": [
+        {
+          "text": "A neighbor better than Saul",
+          "isCorrect": true
+        },
+        {
+          "text": "Jonathan, Saul's own son",
+          "isCorrect": false
+        },
+        {
+          "text": "Agag the king of Amalek",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

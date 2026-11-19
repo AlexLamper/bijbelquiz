@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 35",
+  "description": "Diez preguntas sobre Génesis 35: la vuelta a Beth-el, el nombre nuevo de Jacob, la muerte de Rachêl y la de Isaac.",
+  "slug": "genesis-quiz-part-35",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le dijo Dios a Jacob que hiciera en Beth-el?",
+      "explanation": "Dios le dijo que subiera á Beth-el, se quedara allí e hiciera un altar al Dios que se le apareció cuando huía de su hermano Esaú.",
+      "bibleReference": "Génesis 35:1",
+      "answers": [
+        {
+          "text": "Que hiciera allí un altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Que buscara allí mujer para sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que levantara allí su tienda y no saliera",
+          "isCorrect": false
+        },
+        {
+          "text": "Que repartiera allí su ganado en dos partes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jacob a su familia y a todos los que estaban con él?",
+      "explanation": "Jacob les dijo que quitaran los dioses ajenos que había entre ellos, que se limpiaran y mudaran sus vestidos.",
+      "bibleReference": "Génesis 35:2",
+      "answers": [
+        {
+          "text": "Dejar el ganado y seguirlo de prisa",
+          "isCorrect": false
+        },
+        {
+          "text": "Ayunar hasta llegar a la ciudad de Luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitar los dioses ajenos, limpiarse y mudar de vestidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar silencio delante de los Cananeos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde escondió Jacob los dioses ajenos y los zarzillos de las orejas?",
+      "explanation": "Jacob los escondió debajo de una encina que estaba junto á Sichêm.",
+      "bibleReference": "Génesis 35:4",
+      "answers": [
+        {
+          "text": "En una albarda de camello",
+          "isCorrect": false
+        },
+        {
+          "text": "Debajo de una encina junto a Sichêm",
+          "isCorrect": true
+        },
+        {
+          "text": "En un pozo del valle de Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "Debajo del altar que edificó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién murió y fue sepultada debajo de una encina, en el lugar llamado Allon-Bacuth?",
+      "explanation": "Murió Débora, ama de Rebeca, y fue sepultada á las raíces de Beth-el, debajo de una encina.",
+      "bibleReference": "Génesis 35:8",
+      "answers": [
+        {
+          "text": "Rebeca, la madre de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Lea, la mujer de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Zilpa, la sierva de Lea",
+          "isCorrect": false
+        },
+        {
+          "text": "Débora, el ama de Rebeca",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre le dio Dios a Jacob cuando se le apareció otra vez?",
+      "explanation": "Dios le dijo que su nombre no se llamaría más Jacob, sino que Israel sería su nombre.",
+      "bibleReference": "Génesis 35:10",
+      "answers": [
+        {
+          "text": "Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "El-Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Dios que saldría de los lomos de Jacob?",
+      "explanation": "Dios le dijo que una nación y conjunto de naciones procederían de él, y que reyes saldrían de sus lomos.",
+      "bibleReference": "Génesis 35:11",
+      "answers": [
+        {
+          "text": "Jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué derramó Jacob sobre el título de piedra que erigió?",
+      "explanation": "Jacob erigió un título de piedra en el lugar donde Dios había hablado con él, derramó sobre él libación y echó sobre él aceite.",
+      "bibleReference": "Génesis 35:14",
+      "answers": [
+        {
+          "text": "Agua del pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino y trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sangre de un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Libación y aceite",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó el padre al hijo que su madre llamó Benoni?",
+      "explanation": "Al salírsele el alma, Rachêl llamó su nombre Benoni, mas su padre lo llamó Benjamín.",
+      "bibleReference": "Génesis 35:18",
+      "answers": [
+        {
+          "text": "José",
+          "isCorrect": false
+        },
+        {
+          "text": "Issachâr",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamín",
+          "isCorrect": true
+        },
+        {
+          "text": "Zabulón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde fue sepultada Rachêl?",
+      "explanation": "Rachêl murió y fue sepultada en el camino de Ephrata, la cual es Beth-lehem, y Jacob puso un título sobre su sepultura.",
+      "bibleReference": "Génesis 35:19",
+      "answers": [
+        {
+          "text": "En la cueva de Macpela, con Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "En el camino de Ephrata, que es Beth-lehem",
+          "isCorrect": true
+        },
+        {
+          "text": "A las raíces de Beth-el, bajo una encina",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Galaad, junto al majano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuántos años fueron los días de Isaac?",
+      "explanation": "Los días de Isaac fueron ciento ochenta años, y luego murió y lo sepultaron Esaú y Jacob sus hijos.",
+      "bibleReference": "Génesis 35:28",
+      "answers": [
+        {
+          "text": "Ciento treinta y siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento cuarenta y siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento ochenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento setenta y cinco años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

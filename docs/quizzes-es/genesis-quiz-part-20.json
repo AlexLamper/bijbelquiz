@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Génesis 20: Abraham y Sara en Gerar, el sueño de Abimelech y la oración por su casa.",
+  "slug": "genesis-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo Abraham de Sara su mujer cuando habitó como forastero en Gerar?",
+      "explanation": "Abraham dijo de Sara su mujer: Mi hermana es; y Abimelech, rey de Gerar, envió y la tomó.",
+      "bibleReference": "Génesis 20:2",
+      "answers": [
+        {
+          "text": "Es mi sierva",
+          "isCorrect": false
+        },
+        {
+          "text": "Es hija de Abimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Es madre de mi hijo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi hermana es",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién tomó a Sara?",
+      "explanation": "Abimelech, rey de Gerar, envió y tomó a Sara.",
+      "bibleReference": "Génesis 20:2",
+      "answers": [
+        {
+          "text": "Faraón, rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Abimelech, rey de Gerar",
+          "isCorrect": true
+        },
+        {
+          "text": "Phicol, príncipe del ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Bera, rey de Sodoma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo vino Dios a Abimelech para hablarle de la mujer que había tomado?",
+      "explanation": "Dios vino a Abimelech en sueños de noche y le dijo que era muerto a causa de la mujer que había tomado, porque era casada con marido.",
+      "bibleReference": "Génesis 20:3",
+      "answers": [
+        {
+          "text": "Por medio de un ángel junto a una fuente",
+          "isCorrect": false
+        },
+        {
+          "text": "En una visión al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "En sueños de noche",
+          "isCorrect": true
+        },
+        {
+          "text": "Por boca de un profeta de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Dios en sueños que había hecho con Abimelech?",
+      "explanation": "Dios le dijo que sabía que lo había hecho con integridad de corazón y que él mismo lo había detenido de pecar, no permitiéndole tocarla.",
+      "bibleReference": "Génesis 20:6",
+      "answers": [
+        {
+          "text": "Lo castigó con ceguera aquella noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo entregó en manos de Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo detuvo de pecar y no le permitió tocarla",
+          "isCorrect": true
+        },
+        {
+          "text": "Endureció su corazón contra Abraham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Dios que era Abraham, y qué haría por Abimelech?",
+      "explanation": "Dios le mandó devolver la mujer a su marido, porque era profeta y oraría por él, y viviría.",
+      "bibleReference": "Génesis 20:7",
+      "answers": [
+        {
+          "text": "Profeta, y oraría por él",
+          "isCorrect": true
+        },
+        {
+          "text": "Sacerdote, y ofrecería por él",
+          "isCorrect": false
+        },
+        {
+          "text": "Rey, y haría alianza con él",
+          "isCorrect": false
+        },
+        {
+          "text": "Juez, y lo juzgaría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dijo Abraham que había hablado así de su mujer?",
+      "explanation": "Abraham respondió que pensó que no había temor de Dios en aquel lugar y que lo matarían por causa de su mujer.",
+      "bibleReference": "Génesis 20:11",
+      "answers": [
+        {
+          "text": "Porque Sara su mujer se lo había mandado antes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque temía al rey de Sodoma y a sus siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque había hambre en toda aquella tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque pensó que allí no había temor de Dios y lo matarían por ella",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parentesco dijo Abraham que tenía con Sara?",
+      "explanation": "Abraham dijo que a la verdad ella también era su hermana, hija de su padre, mas no hija de su madre, y que la tomó por mujer.",
+      "bibleReference": "Génesis 20:12",
+      "answers": [
+        {
+          "text": "Hija de su madre, pero no de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Hija de su padre, pero no de su madre",
+          "isCorrect": true
+        },
+        {
+          "text": "Hija de su hermano Nachôr",
+          "isCorrect": false
+        },
+        {
+          "text": "Prima por parte de madre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio Abimelech a Abraham al devolverle a Sara?",
+      "explanation": "Abimelech tomó ovejas y vacas, y siervos y siervas, y se lo dio a Abraham, y le devolvió a Sara su mujer.",
+      "bibleReference": "Génesis 20:14",
+      "answers": [
+        {
+          "text": "Camellos y asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y un odre de agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Ovejas y vacas, siervos y siervas",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete corderas del rebaño",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto dijo Abimelech a Sara que había dado a su hermano?",
+      "explanation": "Abimelech dijo a Sara que había dado mil monedas de plata a su hermano, y que él le era por velo de ojos para todos.",
+      "bibleReference": "Génesis 20:16",
+      "answers": [
+        {
+          "text": "Cuatrocientos siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil monedas de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Cien monedas de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez camellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó cuando Abraham oró a Dios?",
+      "explanation": "Abraham oró a Dios, y Dios sanó a Abimelech, a su mujer y a sus siervas, y parieron, porque Jehová había cerrado toda matriz de su casa.",
+      "bibleReference": "Génesis 20:17-18",
+      "answers": [
+        {
+          "text": "Dios sanó a Abimelech, a su mujer y a sus siervas",
+          "isCorrect": true
+        },
+        {
+          "text": "Cesó el hambre en toda aquella tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Cayó fuego del cielo sobre Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "Se abrieron los pozos de agua de Gerar",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

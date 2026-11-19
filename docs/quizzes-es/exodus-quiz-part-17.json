@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Éxodo 17: el agua de la peña en Horeb, la rencilla de Massah y Meribah y la batalla contra Amalec.",
+  "slug": "exodus-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde asentó el campo la congregación al partir del desierto de Sin, sin hallar agua para beber?",
+      "explanation": "Toda la congregación partió del desierto de Sin y asentó el campo en Rephidim, y no había agua para que el pueblo bebiese.",
+      "bibleReference": "Éxodo 17:1",
+      "answers": [
+        {
+          "text": "En Rephidim",
+          "isCorrect": true
+        },
+        {
+          "text": "En Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "En Etham",
+          "isCorrect": false
+        },
+        {
+          "text": "En Succoth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Moisés cuando el pueblo altercó con él y le pidió agua?",
+      "explanation": "Moisés les dijo: ¿Por qué altercáis conmigo? ¿por qué tentáis a Jehová?",
+      "bibleReference": "Éxodo 17:2",
+      "answers": [
+        {
+          "text": "Que esperasen hasta la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Que cavasen un pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "Les preguntó por qué tentaban a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviesen al desierto de Sin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué temió Moisés que el pueblo le hiciese, cuando clamó a Jehová?",
+      "explanation": "Moisés clamó a Jehová diciendo: ¿Qué haré con este pueblo? de aquí a un poco me apedrearán.",
+      "bibleReference": "Éxodo 17:4",
+      "answers": [
+        {
+          "text": "Que lo dejasen solo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo apedreasen",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviesen a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no le creyesen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dijo Jehová que estaría delante de Moisés sobre la peña?",
+      "explanation": "Jehová dijo que estaría delante de él allí sobre la peña en Horeb, y que al herir la peña saldrían aguas de ella.",
+      "bibleReference": "Éxodo 17:6",
+      "answers": [
+        {
+          "text": "En Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "En Mara",
+          "isCorrect": false
+        },
+        {
+          "text": "En Baalzephón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Horeb",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dio Moisés a aquel lugar?",
+      "explanation": "Llamó el nombre de aquel lugar Massah y Meribah, por la rencilla de los hijos de Israel y porque tentaron a Jehová.",
+      "bibleReference": "Éxodo 17:7",
+      "answers": [
+        {
+          "text": "Massah y Meribah",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová-nissi",
+          "isCorrect": false
+        },
+        {
+          "text": "Mara",
+          "isCorrect": false
+        },
+        {
+          "text": "Pihahiroth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién vino y peleó con Israel en Rephidim?",
+      "explanation": "El texto dice que vino Amalec y peleó con Israel en Rephidim.",
+      "bibleReference": "Éxodo 17:8",
+      "answers": [
+        {
+          "text": "Los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Amalec",
+          "isCorrect": true
+        },
+        {
+          "text": "Los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "Madián",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién dijo Moisés que escogiese varones y saliese a pelear?",
+      "explanation": "Moisés dijo a Josué que escogiese varones y saliese a pelear con Amalec, mientras él estaría sobre la cumbre del collado con la vara de Dios en su mano.",
+      "bibleReference": "Éxodo 17:9",
+      "answers": [
+        {
+          "text": "A Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "A Josué",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedía cuando Moisés bajaba su mano?",
+      "explanation": "Cuando Moisés alzaba su mano, Israel prevalecía; mas cuando bajaba su mano, prevalecía Amalec.",
+      "bibleReference": "Éxodo 17:11",
+      "answers": [
+        {
+          "text": "Israel prevalecía igualmente",
+          "isCorrect": false
+        },
+        {
+          "text": "La batalla se detenía",
+          "isCorrect": false
+        },
+        {
+          "text": "Caía nube sobre el collado",
+          "isCorrect": false
+        },
+        {
+          "text": "Prevalecía Amalec",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes sustentaban las manos de Moisés cuando estaban pesadas?",
+      "explanation": "Pusieron una piedra debajo de él y se sentó sobre ella, y Aarón y Hur sustentaban sus manos, el uno de una parte y el otro de otra.",
+      "bibleReference": "Éxodo 17:12",
+      "answers": [
+        {
+          "text": "Josué y los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón y Hur",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos de sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Moisés al altar que edificó?",
+      "explanation": "Moisés edificó un altar y llamó su nombre Jehová-nissi.",
+      "bibleReference": "Éxodo 17:15",
+      "answers": [
+        {
+          "text": "Jehová-nissi",
+          "isCorrect": true
+        },
+        {
+          "text": "El altar del collado",
+          "isCorrect": false
+        },
+        {
+          "text": "Rephidim",
+          "isCorrect": false
+        },
+        {
+          "text": "Horeb",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

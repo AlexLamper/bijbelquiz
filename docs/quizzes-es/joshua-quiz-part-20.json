@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Josué 20: las ciudades de refugio, quién podía acogerse a ellas y cuáles fueron señaladas.",
+  "slug": "joshua-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por medio de quién había hablado Jehová antes acerca de las ciudades de refugio?",
+      "explanation": "Jehová dijo a Josué que mandara señalar las ciudades de refugio de las cuales ya les había hablado por Moisés.",
+      "bibleReference": "Josué 20:1-2",
+      "answers": [
+        {
+          "text": "Por medio de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Por medio de Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Por medio de Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Por medio de los ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién podía acogerse a esas ciudades?",
+      "explanation": "El texto dice que eran para que se acogiese allí el homicida que matare a alguno por yerro y no a sabiendas.",
+      "bibleReference": "Josué 20:3",
+      "answers": [
+        {
+          "text": "El que mataba a alguno por yerro",
+          "isCorrect": true
+        },
+        {
+          "text": "Cualquier extranjero sin casa",
+          "isCorrect": false
+        },
+        {
+          "text": "El que debía dinero y no podía pagar",
+          "isCorrect": false
+        },
+        {
+          "text": "El que había robado del anatema",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se presentaba el que se acogía a una de aquellas ciudades?",
+      "explanation": "El texto dice que se presentaría a la puerta de la ciudad y diría sus causas, oyéndolo los ancianos de aquella ciudad.",
+      "bibleReference": "Josué 20:4",
+      "answers": [
+        {
+          "text": "Ante el altar del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ante el gran sacerdote en Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ante el cercano del muerto",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta de la ciudad, ante los ancianos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué harían los de la ciudad cuando el cercano del muerto siguiera al homicida?",
+      "explanation": "El texto dice que no entregarían en su mano al homicida, por cuanto hirió a su prójimo por yerro y no tuvo antes enemistad con él.",
+      "bibleReference": "Josué 20:5",
+      "answers": [
+        {
+          "text": "Lo sacarían fuera de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "No lo entregarían en su mano",
+          "isCorrect": true
+        },
+        {
+          "text": "Pagarían dinero por él",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo enviarían al otro lado del Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo quedaba el homicida en aquella ciudad?",
+      "explanation": "El texto dice que quedaría allí hasta que pareciese en juicio delante del ayuntamiento, hasta la muerte del gran sacerdote que fuere en aquel tiempo.",
+      "bibleReference": "Josué 20:6",
+      "answers": [
+        {
+          "text": "Hasta que pagase un rescate",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el año del jubileo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la muerte del gran sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta la muerte del cercano del muerto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué otro nombre se nombra a Chîriath-arba, la ciudad de refugio del monte de Judá?",
+      "explanation": "El texto dice que señalaron a Chîriath-arba, que es Hebrón, en el monte de Judá.",
+      "bibleReference": "Josué 20:7",
+      "answers": [
+        {
+          "text": "Jebus",
+          "isCorrect": false
+        },
+        {
+          "text": "Luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebrón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad de refugio se señaló en el monte de Ephraim?",
+      "explanation": "El texto dice que señalaron a Sichêm en el monte de Ephraim.",
+      "bibleReference": "Josué 20:7",
+      "answers": [
+        {
+          "text": "Sichêm",
+          "isCorrect": true
+        },
+        {
+          "text": "Gaulón",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramoth",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba Cedes, una de las ciudades señaladas?",
+      "explanation": "El texto dice que señalaron a Cedes en Galilea, en el monte de Nephtalí.",
+      "bibleReference": "Josué 20:7",
+      "answers": [
+        {
+          "text": "En Basán, al oriente del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Nephtalí",
+          "isCorrect": true
+        },
+        {
+          "text": "En el desierto de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "En la llanura de Rubén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En el territorio de qué tribu estaba Beser, en el desierto?",
+      "explanation": "El texto dice que señalaron a Beser en el desierto, en la llanura de la tribu de Rubén.",
+      "bibleReference": "Josué 20:8",
+      "answers": [
+        {
+          "text": "De Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "De Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "De Nephtalí",
+          "isCorrect": false
+        },
+        {
+          "text": "De Rubén",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Para quién más servían estas ciudades, además de los hijos de Israel?",
+      "explanation": "El texto dice que fueron señaladas para todos los hijos de Israel y para el extranjero que morase entre ellos.",
+      "bibleReference": "Josué 20:9",
+      "answers": [
+        {
+          "text": "Para el extranjero que morase entre ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Para los sacerdotes solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los reyes vencidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los que no tenían heredad",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

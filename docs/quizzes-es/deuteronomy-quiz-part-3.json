@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Deuteronomio 3: la derrota de Og rey de Basán, el reparto de la tierra y la oración de Moisés.",
+  "slug": "deuteronomy-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién salió al encuentro para pelear en Edrei?",
+      "explanation": "Subieron camino de Basán y Og rey de Basán les salió al encuentro para pelear, él y todo su pueblo, en Edrei.",
+      "bibleReference": "Deuteronomio 3:1",
+      "answers": [
+        {
+          "text": "Sehón rey de Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "El Amorrheo de Seir",
+          "isCorrect": false
+        },
+        {
+          "text": "Jair hijo de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "Og rey de Basán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Jehová a Moisés acerca de Og?",
+      "explanation": "Jehová le dijo que no tuviera temor de él, porque había entregado en su mano a él, a todo su pueblo y su tierra.",
+      "bibleReference": "Deuteronomio 3:2",
+      "answers": [
+        {
+          "text": "Que pasara de largo por su tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tuviera temor, pues lo había entregado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que esperara allí cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le comprara comida y agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ciudades tomaron del reino de Og en Basán?",
+      "explanation": "Tomaron entonces todas sus ciudades: sesenta ciudades, toda la tierra de Argob, del reino de Og en Basán.",
+      "bibleReference": "Deuteronomio 3:4",
+      "answers": [
+        {
+          "text": "Seis ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y ocho ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta ciudades",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce ciudades",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo eran aquellas ciudades?",
+      "explanation": "Todas eran ciudades fortalecidas con alto muro, con puertas y barras, además de otras muchas ciudades sin muro.",
+      "bibleReference": "Deuteronomio 3:5",
+      "answers": [
+        {
+          "text": "Fortalecidas, con alto muro y puertas",
+          "isCorrect": true
+        },
+        {
+          "text": "Hechas de madera y de cañas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin muro y sin puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Rodeadas de agua por todos lados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llaman los Sidonios al monte de Hermón?",
+      "explanation": "El texto explica que los Sidonios llaman a Hermón Sirión, y los Amorrheos, Senir.",
+      "bibleReference": "Deuteronomio 3:9",
+      "answers": [
+        {
+          "text": "Senir",
+          "isCorrect": false
+        },
+        {
+          "text": "Sirión",
+          "isCorrect": true
+        },
+        {
+          "text": "Salchâ",
+          "isCorrect": false
+        },
+        {
+          "text": "Argob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo era la cama de Og, que estaba en Rabbath de los hijos de Ammón?",
+      "explanation": "Era una cama de hierro, de nueve codos de longitud y cuatro codos de anchura, al codo de un hombre.",
+      "bibleReference": "Deuteronomio 3:11",
+      "answers": [
+        {
+          "text": "De oro, de diez codos de largo",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera, de nueve codos de largo",
+          "isCorrect": false
+        },
+        {
+          "text": "De hierro, de cuatro codos de largo",
+          "isCorrect": false
+        },
+        {
+          "text": "De hierro, de nueve codos de largo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dio Moisés la tierra desde Aroer y la mitad del monte de Galaad?",
+      "explanation": "Esa tierra, desde Aroer, que está al arroyo de Arnón, y la mitad del monte de Galaad con sus ciudades, la dio a los Rubenitas y a los Gaditas.",
+      "bibleReference": "Deuteronomio 3:12",
+      "answers": [
+        {
+          "text": "A los Rubenitas y a los Gaditas",
+          "isCorrect": true
+        },
+        {
+          "text": "A la media tribu de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Levitas de aquella tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Esaú, en Seir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les mandó Moisés que hicieran delante de sus hermanos los hijos de Israel?",
+      "explanation": "Les mandó que pasaran armados delante de sus hermanos los hijos de Israel, todos los valientes, mientras sus mujeres, niños y ganados quedaban en sus ciudades.",
+      "bibleReference": "Deuteronomio 3:18",
+      "answers": [
+        {
+          "text": "Quedarse a guardar las ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar un altar en Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Pasar armados delante de ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Llevar el arca hasta el Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando Moisés pidió pasar y ver aquella tierra buena, ¿qué le respondió Jehová?",
+      "explanation": "Jehová se había enojado contra él por causa de ellos y no lo oyó, y le dijo que le bastaba y que no le hablara más de ese asunto.",
+      "bibleReference": "Deuteronomio 3:25-26",
+      "answers": [
+        {
+          "text": "Que pasaría junto con Josué",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le bastaba y no le hablara más de eso",
+          "isCorrect": true
+        },
+        {
+          "text": "Que subiera al monte de Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperara hasta el jubileo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer Moisés desde la cumbre del Pisga?",
+      "explanation": "Debía subir a la cumbre del Pisga, alzar sus ojos al occidente, al aquilón, al mediodía y al oriente, y ver la tierra con sus ojos, porque no pasaría el Jordán.",
+      "bibleReference": "Deuteronomio 3:27",
+      "answers": [
+        {
+          "text": "Edificar allí un altar de piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamar a los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribir la ley en grandes piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Mirar la tierra, pues no pasaría el Jordán",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

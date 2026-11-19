@@ -1,0 +1,242 @@
+{
+  "title": "Ezra Bible Quiz - Chapter 5",
+  "description": "Ten questions on Ezra 5: Haggai and Zechariah prophesy, the building resumes, and Tattenai writes to Darius the king.",
+  "slug": "ezra-bible-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Which prophets prophesied to the Jews in Judah and Jerusalem?",
+      "explanation": "Haggai the prophet and Zechariah the son of Iddo prophesied to the Jews in the name of the God of Israel.",
+      "bibleReference": "Ezra 5:1",
+      "answers": [
+        {
+          "text": "Jeremiah and Ezekiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaiah and Micah",
+          "isCorrect": false
+        },
+        {
+          "text": "Haggai and Zechariah",
+          "isCorrect": true
+        },
+        {
+          "text": "Daniel and Nahum",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who rose up and began to build God's house at Jerusalem?",
+      "explanation": "Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak rose up and began to build God's house.",
+      "bibleReference": "Ezra 5:2",
+      "answers": [
+        {
+          "text": "Zerubbabel and Jeshua",
+          "isCorrect": true
+        },
+        {
+          "text": "Rehum and Shimshai",
+          "isCorrect": false
+        },
+        {
+          "text": "Tattenai and Shetharbozenai",
+          "isCorrect": false
+        },
+        {
+          "text": "Hilkiah and Shaphan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Tattenai, the governor beyond the River, ask them?",
+      "explanation": "Tattenai asked them, \"Who gave you a decree to build this house, and to finish this wall?\"",
+      "bibleReference": "Ezra 5:3",
+      "answers": [
+        {
+          "text": "Why they had not paid their tribute",
+          "isCorrect": false
+        },
+        {
+          "text": "Where the temple vessels were kept",
+          "isCorrect": false
+        },
+        {
+          "text": "How many soldiers they had",
+          "isCorrect": false
+        },
+        {
+          "text": "Who gave them a decree to build this house",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Tattenai and his companions not make the elders stop?",
+      "explanation": "The eye of their God was on the elders of the Jews, and they didn't make them cease until the matter should come to Darius.",
+      "bibleReference": "Ezra 5:3-5",
+      "answers": [
+        {
+          "text": "The elders paid them a large bribe",
+          "isCorrect": false
+        },
+        {
+          "text": "The eye of their God was on the elders of the Jews",
+          "isCorrect": true
+        },
+        {
+          "text": "They did not have enough soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "Darius had already forbidden it",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Tattenai's letter, how was the house of the great God being built?",
+      "explanation": "They wrote that it was built with great stones, and timber was laid in the walls.",
+      "bibleReference": "Ezra 5:8",
+      "answers": [
+        {
+          "text": "With burnt bricks and bitumen for mortar",
+          "isCorrect": false
+        },
+        {
+          "text": "With cedar wood overlaid with pure gold",
+          "isCorrect": false
+        },
+        {
+          "text": "With great stones, and timber laid in the walls",
+          "isCorrect": true
+        },
+        {
+          "text": "With mud bricks mixed with straw",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the elders describe themselves in their answer?",
+      "explanation": "They answered, \"We are the servants of the God of heaven and earth.\"",
+      "bibleReference": "Ezra 5:9-11",
+      "answers": [
+        {
+          "text": "The servants of the God of heaven and earth",
+          "isCorrect": true
+        },
+        {
+          "text": "The servants of Darius the king",
+          "isCorrect": false
+        },
+        {
+          "text": "The governors of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "The heirs of David's throne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the elders, who had first built and finished the house many years ago?",
+      "explanation": "They said they were building the house that was built many years ago, which a great king of Israel built and finished.",
+      "bibleReference": "Ezra 5:9-11",
+      "answers": [
+        {
+          "text": "Cyrus king of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "A great king of Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Darius king of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "The governor beyond the River",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the answer the builders gave, who destroyed the house?",
+      "explanation": "They said God gave their fathers into the hand of Nebuchadnezzar king of Babylon, the Chaldean, who destroyed this house.",
+      "bibleReference": "Ezra 5:11-12",
+      "answers": [
+        {
+          "text": "Sennacherib king of Assyria",
+          "isCorrect": false
+        },
+        {
+          "text": "Neco king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Artaxerxes king of Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebuchadnezzar king of Babylon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom were the gold and silver vessels delivered by Cyrus?",
+      "explanation": "Cyrus took the vessels out of the temple of Babylon, and they were delivered to Sheshbazzar, whom he had made governor.",
+      "bibleReference": "Ezra 5:14",
+      "answers": [
+        {
+          "text": "Sheshbazzar, whom he had made governor",
+          "isCorrect": true
+        },
+        {
+          "text": "Zerubbabel the son of Shealtiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Tattenai the governor",
+          "isCorrect": false
+        },
+        {
+          "text": "Jeshua the son of Jozadak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Tattenai ask the king to have a search made?",
+      "explanation": "They asked that a search be made in the king's treasure house at Babylon, whether Cyrus had made a decree to build this house.",
+      "bibleReference": "Ezra 5:17",
+      "answers": [
+        {
+          "text": "In the temple at Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In the records at Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "In the king's treasure house at Babylon",
+          "isCorrect": true
+        },
+        {
+          "text": "In the house of the high priest",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

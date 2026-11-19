@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 7",
+  "description": "Ten questions on Mark 7: the tradition of the elders, what truly defiles a person, the Syrophoenician woman and the deaf man who was told \"Ephphatha!\"",
+  "slug": "mark-bible-quiz-part-7",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the Pharisees and some of the scribes find fault with?",
+      "explanation": "They saw some of his disciples eating bread with defiled, that is unwashed, hands, and they found fault.",
+      "bibleReference": "Mark 7:2",
+      "answers": [
+        {
+          "text": "His disciples working on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "His disciples fasting in public",
+          "isCorrect": false
+        },
+        {
+          "text": "His disciples eating with unwashed hands",
+          "isCorrect": true
+        },
+        {
+          "text": "His disciples teaching in the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose words did Jesus quote against them?",
+      "explanation": "He answered that Isaiah prophesied well of them, as it is written, \"This people honors me with their lips, but their heart is far from me.\"",
+      "bibleReference": "Mark 7:6",
+      "answers": [
+        {
+          "text": "Isaiah's",
+          "isCorrect": true
+        },
+        {
+          "text": "Moses'",
+          "isCorrect": false
+        },
+        {
+          "text": "David's",
+          "isCorrect": false
+        },
+        {
+          "text": "Elijah's",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say they did with the commandment of God?",
+      "explanation": "He said that they set aside the commandment of God and hold tightly to the tradition of men.",
+      "bibleReference": "Mark 7:8",
+      "answers": [
+        {
+          "text": "They read it only in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "They set it aside for the tradition of men",
+          "isCorrect": true
+        },
+        {
+          "text": "They taught it to the multitude",
+          "isCorrect": false
+        },
+        {
+          "text": "They wrote it on their cups",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which commandment of Moses did Jesus quote to them?",
+      "explanation": "He said, \"For Moses said, 'Honor your father and your mother.'\"",
+      "bibleReference": "Mark 7:10",
+      "answers": [
+        {
+          "text": "\"You shall not steal or bear false witness\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Remember the Sabbath day\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Love your neighbor as yourself\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Honor your father and your mother\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What word did they use for a profit that was given to God?",
+      "explanation": "Jesus said that they allow a man to tell his father or mother that whatever profit they might have received from him is Corban, that is, given to God.",
+      "bibleReference": "Mark 7:11",
+      "answers": [
+        {
+          "text": "Boanerges",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephphatha",
+          "isCorrect": false
+        },
+        {
+          "text": "Corban",
+          "isCorrect": true
+        },
+        {
+          "text": "Talitha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Jesus, what defiles a person?",
+      "explanation": "He said that nothing from outside a man can defile him by going into him, but the things which proceed out of the man are what defile him.",
+      "bibleReference": "Mark 7:15",
+      "answers": [
+        {
+          "text": "The things that come out of him",
+          "isCorrect": true
+        },
+        {
+          "text": "The food that goes into him",
+          "isCorrect": false
+        },
+        {
+          "text": "The cups he has not washed",
+          "isCorrect": false
+        },
+        {
+          "text": "The hands he has not bathed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say proceeds from within, out of the hearts of men?",
+      "explanation": "He said that from within, out of the hearts of men, proceed evil thoughts, adulteries, sexual sins, murders and thefts.",
+      "bibleReference": "Mark 7:21",
+      "answers": [
+        {
+          "text": "Hunger, thirst and weariness",
+          "isCorrect": false
+        },
+        {
+          "text": "Prayers, fasting and almsgiving",
+          "isCorrect": false
+        },
+        {
+          "text": "Washings of cups and pitchers",
+          "isCorrect": false
+        },
+        {
+          "text": "Evil thoughts, murders and thefts",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who was the woman whose little daughter had an unclean spirit?",
+      "explanation": "The woman was a Greek, a Syrophoenician by race, and she begged him to cast the demon out of her daughter.",
+      "bibleReference": "Mark 7:26",
+      "answers": [
+        {
+          "text": "A ruler's wife from Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "A Greek, a Syrophoenician by race",
+          "isCorrect": true
+        },
+        {
+          "text": "A widow from the city of Sidon",
+          "isCorrect": false
+        },
+        {
+          "text": "A woman from the region of Decapolis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the woman answer about the dogs under the table?",
+      "explanation": "She answered, \"Yes, Lord. Yet even the dogs under the table eat the children's crumbs.\"",
+      "bibleReference": "Mark 7:28",
+      "answers": [
+        {
+          "text": "That even the dogs eat the children's crumbs",
+          "isCorrect": true
+        },
+        {
+          "text": "That she would come back another day",
+          "isCorrect": false
+        },
+        {
+          "text": "That she would wait outside the house",
+          "isCorrect": false
+        },
+        {
+          "text": "That the bread should be broken for all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the man who was deaf and had an impediment in his speech?",
+      "explanation": "Looking up to heaven he sighed and said to him, \"Ephphatha!\" that is, \"Be opened!\"",
+      "bibleReference": "Mark 7:34",
+      "answers": [
+        {
+          "text": "\"Talitha cumi!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Be made clean!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Ephphatha!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Peace! Be still!\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 35",
+  "description": "Diez preguntas sobre Números 35: las ciudades de los Levitas, las ciudades de acogimiento y las leyes sobre el homicida.",
+  "slug": "numbers-quiz-part-35",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué debían dar los hijos de Israel a los Levitas de su heredad?",
+      "explanation": "Debían dar a los Levitas ciudades en que habitaran, y también los ejidos de esas ciudades alrededor de ellas.",
+      "bibleReference": "Números 35:2",
+      "answers": [
+        {
+          "text": "La décima parte de todo su ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Campos sembrados junto al Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Las primicias de todos sus frutos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudades para habitar, con sus ejidos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto medían los ejidos de esas ciudades desde el muro hacia afuera?",
+      "explanation": "Los ejidos de las ciudades que darían a los Levitas serían de mil codos alrededor, desde el muro de la ciudad para afuera.",
+      "bibleReference": "Números 35:4",
+      "answers": [
+        {
+          "text": "Dos mil codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Quinientos codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas de las ciudades dadas a los Levitas serían de acogimiento?",
+      "explanation": "De las ciudades que darían a los Levitas, seis serían de acogimiento, para que el homicida se acogiera allá.",
+      "bibleReference": "Números 35:6",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ciudades recibirían los Levitas en total?",
+      "explanation": "Todas las ciudades que darían a los Levitas serían cuarenta y ocho ciudades, con sus ejidos.",
+      "bibleReference": "Números 35:7",
+      "answers": [
+        {
+          "text": "Cuarenta y ocho",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta y cuatro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para quién eran las ciudades de acogimiento?",
+      "explanation": "Debían señalarse ciudades de acogimiento donde huyera el homicida que hiriere a alguno de muerte por yerro.",
+      "bibleReference": "Números 35:11",
+      "answers": [
+        {
+          "text": "Para los sacerdotes que servían allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Para quien matara a otro por yerro",
+          "isCorrect": true
+        },
+        {
+          "text": "Para quien matara a otro por odio",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los príncipes de las tribus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se repartían las seis ciudades de acogimiento?",
+      "explanation": "Tres ciudades darían de esta parte del Jordán y tres ciudades en la tierra de Canaán.",
+      "bibleReference": "Números 35:14",
+      "answers": [
+        {
+          "text": "Todas seis en la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro a un lado y dos al otro",
+          "isCorrect": false
+        },
+        {
+          "text": "Una por cada tribu de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres a este lado del Jordán y tres en Canaán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién debía matar al homicida culpable, cuando lo encontrara?",
+      "explanation": "El pariente del muerto mataría al homicida cuando lo encontrara.",
+      "bibleReference": "Números 35:19",
+      "answers": [
+        {
+          "text": "El pariente del muerto",
+          "isCorrect": true
+        },
+        {
+          "text": "El gran sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Toda la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Los testigos del caso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo debía morar el homicida en su ciudad de acogimiento?",
+      "explanation": "La congregación lo hacía volver a su ciudad de acogimiento, y moraría en ella hasta que muriera el gran sacerdote ungido con el aceite santo.",
+      "bibleReference": "Números 35:25",
+      "answers": [
+        {
+          "text": "Hasta que pasaran siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el jubileo de los hijos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que muriera el gran sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta que el pariente lo perdonara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se dice de un solo testigo?",
+      "explanation": "Un solo testigo no hacía fe contra ninguna persona para que muriera.",
+      "bibleReference": "Números 35:30",
+      "answers": [
+        {
+          "text": "Bastaba para condenar al homicida",
+          "isCorrect": false
+        },
+        {
+          "text": "No bastaba para condenar a nadie a muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Debía ser siempre un Levita",
+          "isCorrect": false
+        },
+        {
+          "text": "Podía matar él mismo al homicida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no debían contaminar la tierra donde habitaban?",
+      "explanation": "No debían contaminar la tierra donde habitaban, porque Jehová habita en medio de los hijos de Israel.",
+      "bibleReference": "Números 35:34",
+      "answers": [
+        {
+          "text": "Porque la tierra era de los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí estaban las ciudades de refugio",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la habían recibido por suerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Jehová habita en medio de ellos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

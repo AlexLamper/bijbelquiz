@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Éxodo 14: la persecución de Faraón, el mar dividido y los Egipcios cubiertos por las aguas.",
+  "slug": "exodus-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde mandó Jehová que los hijos de Israel asentasen su campo?",
+      "explanation": "Debían dar la vuelta y asentar su campo delante de Pihahiroth, entre Migdol y la mar, hacia Baalzephón.",
+      "bibleReference": "Éxodo 14:2",
+      "answers": [
+        {
+          "text": "Delante de Pihahiroth, junto a la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "En el desierto de Sinaí, junto al monte",
+          "isCorrect": false
+        },
+        {
+          "text": "En Succoth, a la entrada del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al monte Horeb, en el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos carros escogidos tomó Faraón?",
+      "explanation": "Faraón tomó seiscientos carros escogidos, y todos los carros de Egipto, y los capitanes sobre ellos.",
+      "bibleReference": "Éxodo 14:7",
+      "answers": [
+        {
+          "text": "Seis mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hijos de Israel al ver que los Egipcios venían tras ellos?",
+      "explanation": "Al acercarse Faraón, alzaron los ojos, vieron a los Egipcios, temieron en gran manera y clamaron a Jehová.",
+      "bibleReference": "Éxodo 14:10",
+      "answers": [
+        {
+          "text": "Tomaron sus armas y se formaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Temieron y clamaron a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Entraron en la mar sin esperar",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron atrás a Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reprocharon a Moisés cuando vieron a los Egipcios?",
+      "explanation": "Le dijeron: ¿No había sepulcros en Egipto, que nos has sacado para que muramos en el desierto?",
+      "bibleReference": "Éxodo 14:11",
+      "answers": [
+        {
+          "text": "Que no les había dado agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había escondido la columna de nube",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no había sepulcros en Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "Que había tomado los vasos de los Egipcios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Moisés al pueblo que haría Jehová por ellos?",
+      "explanation": "Moisés les dijo que no temiesen y estuviesen quedos, porque Jehová pelearía por ellos.",
+      "bibleReference": "Éxodo 14:13-14",
+      "answers": [
+        {
+          "text": "Jehová pelearía por ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová les daría carros y caballos",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová haría volver a Faraón a su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová los llevaría otra vez a Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Moisés que hiciese con su vara y su mano?",
+      "explanation": "Moisés debía alzar su vara y extender su mano sobre la mar para dividirla, y así los hijos de Israel entrarían por medio de la mar en seco.",
+      "bibleReference": "Éxodo 14:16",
+      "answers": [
+        {
+          "text": "Herir la peña para sacar agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Alzarla y extenderla sobre la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "Levantarla contra los carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Enterrarla en la arena",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo la columna de nube que iba delante de ellos?",
+      "explanation": "La columna de nube se apartó y se puso a sus espaldas, e iba entre el campo de los Egipcios y el campo de Israel.",
+      "bibleReference": "Éxodo 14:19-20",
+      "answers": [
+        {
+          "text": "Se deshizo sobre la mar aquella noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Subió al monte delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se dividió en dos nubes de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Se puso a sus espaldas, entre los dos campos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por medio de qué hizo Jehová que la mar se retirase?",
+      "explanation": "Jehová hizo que la mar se retirase por un recio viento oriental, toda aquella noche, y la mar se tornó en seco.",
+      "bibleReference": "Éxodo 14:21",
+      "answers": [
+        {
+          "text": "Por un gran trueno",
+          "isCorrect": false
+        },
+        {
+          "text": "Por una lluvia de granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Por un recio viento oriental",
+          "isCorrect": true
+        },
+        {
+          "text": "Por un temblor de tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quitó Jehová a los carros de los Egipcios?",
+      "explanation": "Jehová les quitó las ruedas de sus carros y los trastornó gravemente, y los Egipcios dijeron que Jehová peleaba por Israel.",
+      "bibleReference": "Éxodo 14:25",
+      "answers": [
+        {
+          "text": "Los caballos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ruedas",
+          "isCorrect": true
+        },
+        {
+          "text": "Las armas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los capitanes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos quedaron del ejército de Faraón que había entrado tras ellos en la mar?",
+      "explanation": "Volvieron las aguas y cubrieron los carros y la caballería y todo el ejército de Faraón, y no quedó de ellos ni uno.",
+      "bibleReference": "Éxodo 14:28",
+      "answers": [
+        {
+          "text": "Ni uno",
+          "isCorrect": true
+        },
+        {
+          "text": "La mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente los capitanes",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente Faraón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

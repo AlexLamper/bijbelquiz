@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 6",
+  "description": "Ten questions on Matthew 6: giving, praying and fasting in secret, treasures in heaven, and not being anxious.",
+  "slug": "matthew-bible-quiz-part-6",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What do the hypocrites do when they do merciful deeds?",
+      "explanation": "They sound a trumpet before themselves in the synagogues and in the streets, so that they may get glory from men.",
+      "bibleReference": "Matthew 6:2",
+      "answers": [
+        {
+          "text": "They pray in their inner room",
+          "isCorrect": false
+        },
+        {
+          "text": "They sound a trumpet before themselves",
+          "isCorrect": true
+        },
+        {
+          "text": "They anoint their head and wash their face",
+          "isCorrect": false
+        },
+        {
+          "text": "They give in secret to their neighbors",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What should your left hand not know when you do merciful deeds?",
+      "explanation": "When you do merciful deeds, your left hand should not know what your right hand does, so the deed stays secret.",
+      "bibleReference": "Matthew 6:3",
+      "answers": [
+        {
+          "text": "What the hypocrites do",
+          "isCorrect": false
+        },
+        {
+          "text": "How much the poor received",
+          "isCorrect": false
+        },
+        {
+          "text": "Where the trumpet sounded",
+          "isCorrect": false
+        },
+        {
+          "text": "What your right hand does",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where does Jesus tell them to go to pray?",
+      "explanation": "He tells them to enter into their inner room, shut the door, and pray to their Father who is in secret.",
+      "bibleReference": "Matthew 6:6",
+      "answers": [
+        {
+          "text": "Into your inner room with the door shut",
+          "isCorrect": true
+        },
+        {
+          "text": "Into the corners of the streets",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the synagogue with the hypocrites",
+          "isCorrect": false
+        },
+        {
+          "text": "Onto the housetop in the evening",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the prayer ask God to give today?",
+      "explanation": "The prayer says: Give us today our daily bread.",
+      "bibleReference": "Matthew 6:11",
+      "answers": [
+        {
+          "text": "Peace in the land",
+          "isCorrect": false
+        },
+        {
+          "text": "Rain for the fields",
+          "isCorrect": false
+        },
+        {
+          "text": "Our daily bread",
+          "isCorrect": true
+        },
+        {
+          "text": "Wisdom for the day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the prayer ask God to forgive?",
+      "explanation": "The prayer asks: Forgive us our debts, as we also forgive our debtors.",
+      "bibleReference": "Matthew 6:12",
+      "answers": [
+        {
+          "text": "Our debts",
+          "isCorrect": true
+        },
+        {
+          "text": "Our vain repetitions",
+          "isCorrect": false
+        },
+        {
+          "text": "Our days of fasting",
+          "isCorrect": false
+        },
+        {
+          "text": "Our enemies' trespasses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus tell them to do when they fast?",
+      "explanation": "He tells them to anoint their head and wash their face, so that they are not seen by men to be fasting.",
+      "bibleReference": "Matthew 6:17",
+      "answers": [
+        {
+          "text": "Put on a sad face",
+          "isCorrect": false
+        },
+        {
+          "text": "Anoint your head and wash your face",
+          "isCorrect": true
+        },
+        {
+          "text": "Fast where men can see",
+          "isCorrect": false
+        },
+        {
+          "text": "Sound a trumpet in the street",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where should they lay up treasures, where no moth or rust consumes?",
+      "explanation": "They are told not to lay up treasures on the earth, but to lay up treasures in heaven, where moth and rust do not consume.",
+      "bibleReference": "Matthew 6:19-20",
+      "answers": [
+        {
+          "text": "On the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "In the temple treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "In heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "In barns like the birds",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two does Jesus say no one can serve together?",
+      "explanation": "No one can serve two masters: you can't serve both God and Mammon.",
+      "bibleReference": "Matthew 6:24",
+      "answers": [
+        {
+          "text": "Father and son",
+          "isCorrect": false
+        },
+        {
+          "text": "Heaven and earth",
+          "isCorrect": false
+        },
+        {
+          "text": "Law and prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "God and Mammon",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which creatures does Jesus point to that do not sow or reap, yet are fed by the Father?",
+      "explanation": "He points to the birds of the sky, which do not sow, reap or gather into barns, and their heavenly Father feeds them.",
+      "bibleReference": "Matthew 6:26",
+      "answers": [
+        {
+          "text": "The lilies of the field",
+          "isCorrect": false
+        },
+        {
+          "text": "The birds of the sky",
+          "isCorrect": true
+        },
+        {
+          "text": "The grass of the field",
+          "isCorrect": false
+        },
+        {
+          "text": "The sheep of the fold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does Jesus tell them to seek first?",
+      "explanation": "He tells them to seek first God's Kingdom and his righteousness, and all these things will be given to them as well.",
+      "bibleReference": "Matthew 6:33",
+      "answers": [
+        {
+          "text": "God's Kingdom and his righteousness",
+          "isCorrect": true
+        },
+        {
+          "text": "The reward of men in the streets",
+          "isCorrect": false
+        },
+        {
+          "text": "The glory that the Gentiles seek",
+          "isCorrect": false
+        },
+        {
+          "text": "Food and clothing for tomorrow",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

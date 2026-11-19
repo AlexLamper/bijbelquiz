@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 30",
+  "description": "Ten questions on Numbers 30: the laws about vows and pledges made by men and women.",
+  "slug": "numbers-bible-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "To whom did Moses speak the laws about vows?",
+      "explanation": "Moses spoke to the heads of the tribes of the children of Israel about what Yahweh had commanded.",
+      "bibleReference": "Numbers 30:1",
+      "answers": [
+        {
+          "text": "The heads of the tribes",
+          "isCorrect": true
+        },
+        {
+          "text": "The priests and Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "The women of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What must a man do when he vows a vow to Yahweh?",
+      "explanation": "He shall not break his word, but do according to all that proceeds out of his mouth.",
+      "bibleReference": "Numbers 30:2",
+      "answers": [
+        {
+          "text": "Have his father confirm it",
+          "isCorrect": false
+        },
+        {
+          "text": "Pay a ransom to be free of it",
+          "isCorrect": false
+        },
+        {
+          "text": "Not break his word, but do all he has said",
+          "isCorrect": true
+        },
+        {
+          "text": "Confirm it before a priest within seven days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If a young woman in her father's house makes a vow and her father says nothing, what happens?",
+      "explanation": "If her father hears her vow and says nothing to her, then all her vows and every pledge shall stand.",
+      "bibleReference": "Numbers 30:3-4",
+      "answers": [
+        {
+          "text": "Her vows become void",
+          "isCorrect": false
+        },
+        {
+          "text": "All her vows shall stand",
+          "isCorrect": true
+        },
+        {
+          "text": "Her husband must decide later",
+          "isCorrect": false
+        },
+        {
+          "text": "She must repeat them before Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If a father forbids his daughter's vow on the day he hears it, what does Yahweh do?",
+      "explanation": "None of her vows shall stand, and Yahweh will forgive her, because her father has forbidden her.",
+      "bibleReference": "Numbers 30:5",
+      "answers": [
+        {
+          "text": "He requires a sin offering from her",
+          "isCorrect": false
+        },
+        {
+          "text": "He makes her father bear her iniquity",
+          "isCorrect": false
+        },
+        {
+          "text": "He lets the vow stand anyway",
+          "isCorrect": false
+        },
+        {
+          "text": "He will forgive her",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happens when a husband forbids his wife's vow on the day he hears it?",
+      "explanation": "If her husband forbids her in the day that he hears it, he makes void her vow, and Yahweh will forgive her.",
+      "bibleReference": "Numbers 30:8",
+      "answers": [
+        {
+          "text": "Her vow still stands",
+          "isCorrect": false
+        },
+        {
+          "text": "Her father must decide",
+          "isCorrect": false
+        },
+        {
+          "text": "He makes her vow void",
+          "isCorrect": true
+        },
+        {
+          "text": "She must pay its value in silver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the chapter say about the vow of a widow or a divorced woman?",
+      "explanation": "Everything with which a widow or a divorced woman has bound her soul shall stand against her.",
+      "bibleReference": "Numbers 30:9",
+      "answers": [
+        {
+          "text": "Everything she bound herself to shall stand",
+          "isCorrect": true
+        },
+        {
+          "text": "Her father may cancel it",
+          "isCorrect": false
+        },
+        {
+          "text": "Her former husband may cancel it",
+          "isCorrect": false
+        },
+        {
+          "text": "It becomes void after a year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who may establish or make void a wife's vow or binding oath to afflict her soul?",
+      "explanation": "Every vow and binding oath to afflict the soul, her husband may establish it, or her husband may make it void.",
+      "bibleReference": "Numbers 30:13",
+      "answers": [
+        {
+          "text": "The priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Her brother",
+          "isCorrect": false
+        },
+        {
+          "text": "The heads of the tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "Her husband",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What is the result if a husband says nothing to his wife from day to day about her vows?",
+      "explanation": "If her husband says nothing to her from day to day, he establishes all her vows, because he said nothing in the day that he heard them.",
+      "bibleReference": "Numbers 30:14",
+      "answers": [
+        {
+          "text": "He makes them void",
+          "isCorrect": false
+        },
+        {
+          "text": "He establishes her vows",
+          "isCorrect": true
+        },
+        {
+          "text": "They pass to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "They end after seven days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens if a husband makes his wife's vows void some time after he has heard them?",
+      "explanation": "If he makes them null and void after he has heard them, then he shall bear her iniquity.",
+      "bibleReference": "Numbers 30:15",
+      "answers": [
+        {
+          "text": "He shall bear her iniquity",
+          "isCorrect": true
+        },
+        {
+          "text": "She must bear it alone",
+          "isCorrect": false
+        },
+        {
+          "text": "The vows stand anyway",
+          "isCorrect": false
+        },
+        {
+          "text": "He must pay fifty shekels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Between whom are the statutes of this chapter, according to its last verse?",
+      "explanation": "These are the statutes between a man and his wife, and between a father and his daughter in her youth in her father's house.",
+      "bibleReference": "Numbers 30:16",
+      "answers": [
+        {
+          "text": "A master and his servant, and a buyer and a seller",
+          "isCorrect": false
+        },
+        {
+          "text": "A priest and a Levite, and a judge and a witness",
+          "isCorrect": false
+        },
+        {
+          "text": "A man and his wife, and a father and his daughter",
+          "isCorrect": true
+        },
+        {
+          "text": "A king and his people, and a brother and his sister",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

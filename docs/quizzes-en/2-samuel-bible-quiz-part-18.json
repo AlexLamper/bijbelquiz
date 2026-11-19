@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 18",
+  "description": "Ten questions on 2 Samuel 18: the battle in the forest of Ephraim, the death of Absalom, and David's grief.",
+  "slug": "2-samuel-bible-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who led the third part of David's people besides Joab and Abishai?",
+      "explanation": "David sent a third part under Joab, a third part under Abishai, and a third part under Ittai the Gittite.",
+      "bibleReference": "2 Samuel 18:2",
+      "answers": [
+        {
+          "text": "Ittai the Gittite",
+          "isCorrect": true
+        },
+        {
+          "text": "Amasa the son of Ithra",
+          "isCorrect": false
+        },
+        {
+          "text": "Hushai the Archite",
+          "isCorrect": false
+        },
+        {
+          "text": "Zadok the priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How much did the people say David was worth?",
+      "explanation": "The people said, \"You are worth ten thousand of us.\"",
+      "bibleReference": "2 Samuel 18:3",
+      "answers": [
+        {
+          "text": "A hundred of them",
+          "isCorrect": false
+        },
+        {
+          "text": "Half of the army",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten thousand of them",
+          "isCorrect": true
+        },
+        {
+          "text": "A thousand of them",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king command Joab, Abishai and Ittai concerning Absalom?",
+      "explanation": "The king said, \"Deal gently for my sake with the young man, even with Absalom.\"",
+      "bibleReference": "2 Samuel 18:5",
+      "answers": [
+        {
+          "text": "Bring him back to the king in chains",
+          "isCorrect": false
+        },
+        {
+          "text": "Deal gently with him for the king's sake",
+          "isCorrect": true
+        },
+        {
+          "text": "Kill him wherever they find him",
+          "isCorrect": false
+        },
+        {
+          "text": "Drive him out of the land of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the battle fought?",
+      "explanation": "The people went out into the field against Israel, and the battle was in the forest of Ephraim.",
+      "bibleReference": "2 Samuel 18:6",
+      "answers": [
+        {
+          "text": "In the valley of Elah",
+          "isCorrect": false
+        },
+        {
+          "text": "At Gibeon",
+          "isCorrect": false
+        },
+        {
+          "text": "At Mount Gilboa",
+          "isCorrect": false
+        },
+        {
+          "text": "In the forest of Ephraim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened when Absalom's mule went under the thick boughs of a great oak?",
+      "explanation": "His head caught hold of the oak, and he was taken up between the sky and earth.",
+      "bibleReference": "2 Samuel 18:9",
+      "answers": [
+        {
+          "text": "His robe caught on a thorn bush",
+          "isCorrect": false
+        },
+        {
+          "text": "His head caught hold of the oak",
+          "isCorrect": true
+        },
+        {
+          "text": "His foot caught in the stirrup",
+          "isCorrect": false
+        },
+        {
+          "text": "His sword caught in the branches",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Joab thrust through Absalom's heart?",
+      "explanation": "Joab took three darts in his hand and thrust them through the heart of Absalom.",
+      "bibleReference": "2 Samuel 18:14",
+      "answers": [
+        {
+          "text": "Three darts",
+          "isCorrect": true
+        },
+        {
+          "text": "A spear",
+          "isCorrect": false
+        },
+        {
+          "text": "A sword",
+          "isCorrect": false
+        },
+        {
+          "text": "Two arrows",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why had Absalom set up a pillar in the king's valley?",
+      "explanation": "He said, \"I have no son to keep my name in memory,\" and called the pillar after his own name.",
+      "bibleReference": "2 Samuel 18:18",
+      "answers": [
+        {
+          "text": "To mark the place of a victory",
+          "isCorrect": false
+        },
+        {
+          "text": "To honor his sister Tamar",
+          "isCorrect": false
+        },
+        {
+          "text": "To mark his father's grave",
+          "isCorrect": false
+        },
+        {
+          "text": "He had no son to keep his name in memory",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was David sitting while he waited for news?",
+      "explanation": "David was sitting between the two gates, while the watchman went up to the roof of the gate.",
+      "bibleReference": "2 Samuel 18:24",
+      "answers": [
+        {
+          "text": "In the room over the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "In his house in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Between the two gates",
+          "isCorrect": true
+        },
+        {
+          "text": "At the fords of the wilderness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who outran the Cushite?",
+      "explanation": "Ahimaaz ran by the way of the Plain, and outran the Cushite.",
+      "bibleReference": "2 Samuel 18:22-23",
+      "answers": [
+        {
+          "text": "Ahimaaz the son of Zadok",
+          "isCorrect": true
+        },
+        {
+          "text": "Jonathan the son of Abiathar",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab's armor bearer",
+          "isCorrect": false
+        },
+        {
+          "text": "The watchman",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king say as he went up to the room over the gate?",
+      "explanation": "He said, \"My son Absalom! My son, my son Absalom! I wish I had died for you, Absalom, my son, my son!\"",
+      "bibleReference": "2 Samuel 18:33",
+      "answers": [
+        {
+          "text": "\"Yahweh has given and Yahweh has taken\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I wish I had died for you\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Bring me the man who killed him\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Now my kingdom is safe\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

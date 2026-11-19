@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 10",
+  "description": "Ten questions on Numbers 10: the two silver trumpets, Israel setting out from the wilderness of Sinai, Moses and Hobab, and the words spoken when the ark moved.",
+  "slug": "numbers-bible-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What were the two trumpets Yahweh told Moses to make made of?",
+      "explanation": "Yahweh told Moses to make two trumpets of silver, of beaten work, for calling the congregation and for the journeying of the camps.",
+      "bibleReference": "Numbers 10:2",
+      "answers": [
+        {
+          "text": "Silver",
+          "isCorrect": true
+        },
+        {
+          "text": "Gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "Ram's horn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who were to gather to Moses if only one trumpet was blown?",
+      "explanation": "If they blew just one trumpet, the princes, the heads of the thousands of Israel, were to gather to Moses.",
+      "bibleReference": "Numbers 10:4",
+      "answers": [
+        {
+          "text": "The whole congregation of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The Levites who bore the tabernacle",
+          "isCorrect": false
+        },
+        {
+          "text": "The princes, the heads of the thousands",
+          "isCorrect": true
+        },
+        {
+          "text": "The elders and officers of the people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which camps went forward when the first alarm was blown?",
+      "explanation": "When an alarm was blown, the camps on the east side went forward; at the second alarm, the camps on the south side went forward.",
+      "bibleReference": "Numbers 10:5-6",
+      "answers": [
+        {
+          "text": "The camps on the north side",
+          "isCorrect": false
+        },
+        {
+          "text": "The camps on the west side",
+          "isCorrect": false
+        },
+        {
+          "text": "The camps on the south side",
+          "isCorrect": false
+        },
+        {
+          "text": "The camps on the east side",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who were to blow the trumpets?",
+      "explanation": "The sons of Aaron, the priests, were to blow the trumpets, as a statute forever throughout their generations.",
+      "bibleReference": "Numbers 10:8",
+      "answers": [
+        {
+          "text": "The princes of the tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The sons of Aaron, the priests",
+          "isCorrect": true
+        },
+        {
+          "text": "The sons of Kohath",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day was the cloud taken up from over the tabernacle in the second month of the second year?",
+      "explanation": "In the second year, in the second month, on the twentieth day of the month, the cloud was taken up from over the tabernacle.",
+      "bibleReference": "Numbers 10:11",
+      "answers": [
+        {
+          "text": "The first day",
+          "isCorrect": false
+        },
+        {
+          "text": "The fourteenth day",
+          "isCorrect": false
+        },
+        {
+          "text": "The twentieth day",
+          "isCorrect": true
+        },
+        {
+          "text": "The thirtieth day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which wilderness did the cloud stay after Israel left the wilderness of Sinai?",
+      "explanation": "The children of Israel went forward out of the wilderness of Sinai, and the cloud stayed in the wilderness of Paran.",
+      "bibleReference": "Numbers 10:12",
+      "answers": [
+        {
+          "text": "The wilderness of Paran",
+          "isCorrect": true
+        },
+        {
+          "text": "The wilderness of Zin",
+          "isCorrect": false
+        },
+        {
+          "text": "The wilderness of Shur",
+          "isCorrect": false
+        },
+        {
+          "text": "The wilderness of Sin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "The standard of which tribe's camp went forward first?",
+      "explanation": "First, the standard of the camp of the children of Judah went forward, with Nahshon the son of Amminadab over its army.",
+      "bibleReference": "Numbers 10:14",
+      "answers": [
+        {
+          "text": "Reuben",
+          "isCorrect": false
+        },
+        {
+          "text": "Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Levi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which camp was the rear guard of all the camps?",
+      "explanation": "The standard of the camp of the children of Dan was the rear guard of all the camps.",
+      "bibleReference": "Numbers 10:25",
+      "answers": [
+        {
+          "text": "The camp of Benjamin",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Simeon",
+          "isCorrect": false
+        },
+        {
+          "text": "The camp of Dan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why did Moses ask Hobab not to leave them?",
+      "explanation": "Moses told Hobab that he knew how they were to encamp in the wilderness, and that he could be their eyes.",
+      "bibleReference": "Numbers 10:31",
+      "answers": [
+        {
+          "text": "He knew how they should encamp in the wilderness",
+          "isCorrect": true
+        },
+        {
+          "text": "He could pay for food with his silver",
+          "isCorrect": false
+        },
+        {
+          "text": "He owned many camels and flocks",
+          "isCorrect": false
+        },
+        {
+          "text": "He could speak with the kings of Canaan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses say when the ark went forward?",
+      "explanation": "When the ark went forward, Moses said, \"Rise up, Yahweh, and let your enemies be scattered! Let those who hate you flee before you!\"",
+      "bibleReference": "Numbers 10:35",
+      "answers": [
+        {
+          "text": "\"Return, Yahweh, to the ten thousands of Israel\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Lead us to the place you promised\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Rise up, Yahweh, and let your enemies be scattered\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Blessed be Yahweh, who goes before us\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

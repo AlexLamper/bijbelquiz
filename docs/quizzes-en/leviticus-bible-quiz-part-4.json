@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 4",
+  "description": "Ten questions on Leviticus 4: the sin offerings for the anointed priest, the whole congregation, a ruler and the common people.",
+  "slug": "leviticus-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What kind of sins does the law of Leviticus 4 deal with?",
+      "explanation": "Yahweh said: \"If anyone sins unintentionally, in any of the things which Yahweh has commanded not to be done...\"",
+      "bibleReference": "Leviticus 4:2",
+      "answers": [
+        {
+          "text": "Sins done unintentionally",
+          "isCorrect": true
+        },
+        {
+          "text": "Sins done on purpose and in defiance",
+          "isCorrect": false
+        },
+        {
+          "text": "Sins against a neighbor's property",
+          "isCorrect": false
+        },
+        {
+          "text": "Sins committed by foreigners",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the anointed priest to offer if he sinned and brought guilt on the people?",
+      "explanation": "He was to offer for his sin a young bull without defect to Yahweh for a sin offering.",
+      "bibleReference": "Leviticus 4:3",
+      "answers": [
+        {
+          "text": "A ram without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "A young bull without defect",
+          "isCorrect": true
+        },
+        {
+          "text": "A male goat without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "A pair of turtledoves without defect",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many times did the priest sprinkle the bull's blood before the veil of the sanctuary?",
+      "explanation": "The priest shall dip his finger in the blood, and sprinkle some of the blood seven times before Yahweh, before the veil of the sanctuary.",
+      "bibleReference": "Leviticus 4:6",
+      "answers": [
+        {
+          "text": "Three times",
+          "isCorrect": false
+        },
+        {
+          "text": "Once",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven times",
+          "isCorrect": true
+        },
+        {
+          "text": "Ten times",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the priest pour out the rest of the blood of his bull?",
+      "explanation": "He put some of the blood on the horns of the altar of sweet incense, and poured out the rest at the base of the altar of burnt offering.",
+      "bibleReference": "Leviticus 4:7",
+      "answers": [
+        {
+          "text": "On the mercy seat behind the veil",
+          "isCorrect": false
+        },
+        {
+          "text": "Into the bronze basin",
+          "isCorrect": false
+        },
+        {
+          "text": "On the ground outside the camp, far from the tents",
+          "isCorrect": false
+        },
+        {
+          "text": "At the base of the altar of burnt offering",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was the rest of the bull - its skin, meat, head, legs, innards and dung - burned?",
+      "explanation": "He carried all the rest of the bull outside of the camp to a clean place where the ashes are poured out, and burned it on wood with fire.",
+      "bibleReference": "Leviticus 4:11-12",
+      "answers": [
+        {
+          "text": "On the altar of burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside the camp, where the ashes are poured out",
+          "isCorrect": true
+        },
+        {
+          "text": "In the court of the Tent of Meeting",
+          "isCorrect": false
+        },
+        {
+          "text": "In the camp, at the door of the priest's own tent",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who laid their hands on the head of the bull when the whole congregation had sinned?",
+      "explanation": "The elders of the congregation shall lay their hands on the head of the bull before Yahweh.",
+      "bibleReference": "Leviticus 4:13-15",
+      "answers": [
+        {
+          "text": "The elders of the congregation",
+          "isCorrect": true
+        },
+        {
+          "text": "The Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "Every man in the whole assembly of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The rulers of the tribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was a ruler who had sinned to bring as his offering?",
+      "explanation": "He shall bring as his offering a goat, a male without defect.",
+      "bibleReference": "Leviticus 4:22-23",
+      "answers": [
+        {
+          "text": "A young bull without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "A female lamb without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "Two turtledoves",
+          "isCorrect": false
+        },
+        {
+          "text": "A male goat without defect",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where was the ruler's goat to be killed?",
+      "explanation": "He shall lay his hand on the head of the goat, and kill it in the place where they kill the burnt offering before Yahweh.",
+      "bibleReference": "Leviticus 4:24",
+      "answers": [
+        {
+          "text": "Outside the camp, beyond the tents",
+          "isCorrect": false
+        },
+        {
+          "text": "Inside the Tent of Meeting, before the veil",
+          "isCorrect": false
+        },
+        {
+          "text": "In the place where they kill the burnt offering",
+          "isCorrect": true
+        },
+        {
+          "text": "At the gate of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the priest put some of the blood of the ruler's sin offering?",
+      "explanation": "The priest shall take some of the blood with his finger, and put it on the horns of the altar of burnt offering.",
+      "bibleReference": "Leviticus 4:25",
+      "answers": [
+        {
+          "text": "On the horns of the altar of burnt offering",
+          "isCorrect": true
+        },
+        {
+          "text": "On the mercy seat inside the tent",
+          "isCorrect": false
+        },
+        {
+          "text": "On the doorposts of the ruler's own tent",
+          "isCorrect": false
+        },
+        {
+          "text": "On the ruler's head and hands",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What could one of the common people bring for his offering if he sinned unwittingly?",
+      "explanation": "If his sin is made known to him, he shall bring for his offering a goat, a female without defect.",
+      "bibleReference": "Leviticus 4:27-28",
+      "answers": [
+        {
+          "text": "A male goat without defect",
+          "isCorrect": false
+        },
+        {
+          "text": "A female goat without defect",
+          "isCorrect": true
+        },
+        {
+          "text": "A young bull",
+          "isCorrect": false
+        },
+        {
+          "text": "A ram from the flock",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

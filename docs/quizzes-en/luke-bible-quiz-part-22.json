@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 22",
+  "description": "Ten questions on Luke 22: the betrayal agreed, the Passover prepared, the supper, the prayer on the Mount of Olives and the arrest.",
+  "slug": "luke-bible-quiz-part-22",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Which feast was approaching at the start of the chapter?",
+      "explanation": "The feast of unleavened bread, which is called the Passover, was approaching.",
+      "bibleReference": "Luke 22:1",
+      "answers": [
+        {
+          "text": "The Feast of Booths, kept in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast of the new moon in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The feast of unleavened bread",
+          "isCorrect": true
+        },
+        {
+          "text": "The feast of dedication in Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Into whom did Satan enter?",
+      "explanation": "Satan entered into Judas, who was also called Iscariot, who was counted with the twelve.",
+      "bibleReference": "Luke 22:3",
+      "answers": [
+        {
+          "text": "Judas, who was also called Iscariot",
+          "isCorrect": true
+        },
+        {
+          "text": "Simon Peter",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the captains of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "A servant of the high priest",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus send to prepare the Passover?",
+      "explanation": "Jesus sent Peter and John, telling them to go and prepare the Passover so that they might eat.",
+      "bibleReference": "Luke 22:8",
+      "answers": [
+        {
+          "text": "Judas and Andrew",
+          "isCorrect": false
+        },
+        {
+          "text": "The master of the house",
+          "isCorrect": false
+        },
+        {
+          "text": "All twelve apostles together",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter and John",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus say would meet them when they had entered the city?",
+      "explanation": "He said that when they entered the city, a man carrying a pitcher of water would meet them, and they were to follow him into the house he entered.",
+      "bibleReference": "Luke 22:10",
+      "answers": [
+        {
+          "text": "A servant sent out by the master of the house",
+          "isCorrect": false
+        },
+        {
+          "text": "A man carrying a pitcher of water",
+          "isCorrect": true
+        },
+        {
+          "text": "A young man waiting at the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "A woman returning from the well",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say as he broke the bread and gave it to them?",
+      "explanation": "He took bread, gave thanks, broke it and gave it to them, saying, \"This is my body which is given for you. Do this in memory of me.\"",
+      "bibleReference": "Luke 22:19",
+      "answers": [
+        {
+          "text": "\"This is the bread of the wilderness\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Eat, for the hour has come\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"This is my body which is given for you\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"This is the covenant of Moses\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What dispute arose among them?",
+      "explanation": "A dispute arose among them about which of them was considered to be greatest.",
+      "bibleReference": "Luke 22:24",
+      "answers": [
+        {
+          "text": "Who would carry the two swords they had with them",
+          "isCorrect": false
+        },
+        {
+          "text": "Which of them was considered to be greatest",
+          "isCorrect": true
+        },
+        {
+          "text": "Who would betray him to the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "Where they should eat the next day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell Peter would happen before the rooster crowed?",
+      "explanation": "He said that the rooster would by no means crow that day until Peter denied three times that he knew him.",
+      "bibleReference": "Luke 22:34",
+      "answers": [
+        {
+          "text": "Peter would deny three times that he knew him",
+          "isCorrect": true
+        },
+        {
+          "text": "Peter would fall asleep three times",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter would be put in prison",
+          "isCorrect": false
+        },
+        {
+          "text": "Peter would draw a sword against the guards",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to Jesus' sweat as he prayed in agony?",
+      "explanation": "Being in agony he prayed more earnestly, and his sweat became like great drops of blood falling down on the ground.",
+      "bibleReference": "Luke 22:44",
+      "answers": [
+        {
+          "text": "It dried up in the cold wind of the night",
+          "isCorrect": false
+        },
+        {
+          "text": "It shone like the light of a burning lamp",
+          "isCorrect": false
+        },
+        {
+          "text": "It fell on the stone beside him and burned",
+          "isCorrect": false
+        },
+        {
+          "text": "It became like great drops of blood",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do for the servant of the high priest?",
+      "explanation": "After one of those with him cut off the servant's right ear, Jesus touched his ear and healed him.",
+      "bibleReference": "Luke 22:50-51",
+      "answers": [
+        {
+          "text": "He gave him his own cloak",
+          "isCorrect": false
+        },
+        {
+          "text": "He touched his ear and healed him",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent him back to the high priest with a message",
+          "isCorrect": false
+        },
+        {
+          "text": "He told his disciples to bind up the wound",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the men who held Jesus ask after they blindfolded him?",
+      "explanation": "Having blindfolded him, they struck him on the face and asked him, \"Prophesy! Who is the one who struck you?\"",
+      "bibleReference": "Luke 22:63-64",
+      "answers": [
+        {
+          "text": "\"Where are your disciples and your friends now?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Will you call down fire on us?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Prophesy! Who is the one who struck you?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Tell us where the money is kept\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

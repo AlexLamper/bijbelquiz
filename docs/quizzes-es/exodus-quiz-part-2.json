@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Éxodo 2: el niño en la arquilla, el nombre de Moisés, su huida a Madián y el clamor del pueblo.",
+  "slug": "exodus-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuánto tiempo tuvo escondido al niño su madre?",
+      "explanation": "Al ver que el niño era hermoso, lo tuvo escondido tres meses.",
+      "bibleReference": "Éxodo 2:2",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres meses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué puso al niño a la orilla del río?",
+      "explanation": "Tomó una arquilla de juncos, la calafateó con pez y betún, colocó en ella al niño y lo puso en un carrizal a la orilla del río.",
+      "bibleReference": "Éxodo 2:3",
+      "answers": [
+        {
+          "text": "En una cesta de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "En una arquilla de juncos",
+          "isCorrect": true
+        },
+        {
+          "text": "En un ataúd de madera",
+          "isCorrect": false
+        },
+        {
+          "text": "En un carro pequeño",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién descendió al río a lavarse y vio la arquilla?",
+      "explanation": "La hija de Faraón descendió a lavarse al río, vio la arquilla en el carrizal y envió una criada a que la tomase.",
+      "bibleReference": "Éxodo 2:5",
+      "answers": [
+        {
+          "text": "La hermana del niño",
+          "isCorrect": false
+        },
+        {
+          "text": "Una criada de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "La hija de Faraón",
+          "isCorrect": true
+        },
+        {
+          "text": "La mujer de un Levita",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué propuso la hermana del niño a la hija de Faraón?",
+      "explanation": "La hermana le preguntó si iría a llamarle un ama de las Hebreas para que le criase aquel niño.",
+      "bibleReference": "Éxodo 2:7",
+      "answers": [
+        {
+          "text": "Llamar un ama de las Hebreas",
+          "isCorrect": true
+        },
+        {
+          "text": "Llevar el niño a Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Esconder el niño en el carrizal",
+          "isCorrect": false
+        },
+        {
+          "text": "Darlo a los pastores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué le puso por nombre Moisés?",
+      "explanation": "La hija de Faraón lo prohijó y le puso por nombre Moisés, diciendo: Porque de las aguas lo saqué.",
+      "bibleReference": "Éxodo 2:10",
+      "answers": [
+        {
+          "text": "Porque era hermoso",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque de las aguas lo sacó",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque nació en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque estuvo escondido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés al ver que un Egipcio hería a un Hebreo?",
+      "explanation": "Moisés miró a todas partes y, viendo que no parecía nadie, mató al Egipcio y lo escondió en la arena.",
+      "bibleReference": "Éxodo 2:12",
+      "answers": [
+        {
+          "text": "Llamó a los capataces del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se lo contó a la hija de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Mató al Egipcio y lo escondió en la arena",
+          "isCorrect": true
+        },
+        {
+          "text": "Huyó aquel mismo día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde huyó Moisés cuando Faraón procuró matarlo?",
+      "explanation": "Moisés huyó de delante de Faraón, habitó en la tierra de Madián y se sentó junto a un pozo.",
+      "bibleReference": "Éxodo 2:15",
+      "answers": [
+        {
+          "text": "A la tierra de Madián",
+          "isCorrect": true
+        },
+        {
+          "text": "A la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "A la tierra de Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "A la casa de su hermana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés cuando los pastores echaron a las hijas del sacerdote?",
+      "explanation": "Moisés se levantó, las defendió y abrevó sus ovejas.",
+      "bibleReference": "Éxodo 2:17",
+      "answers": [
+        {
+          "text": "Se escondió junto al pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamó al padre de ellas",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevó las ovejas a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Las defendió y abrevó sus ovejas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamó el hijo que le parió Séphora?",
+      "explanation": "Séphora le parió un hijo, y Moisés le puso por nombre Gersom, porque dijo: Peregrino soy en tierra ajena.",
+      "bibleReference": "Éxodo 2:22",
+      "answers": [
+        {
+          "text": "Ragüel",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Gersom",
+          "isCorrect": true
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se acordó Dios al oír el gemido del pueblo?",
+      "explanation": "Dios oyó su gemido y se acordó de su pacto con Abraham, Isaac y Jacob.",
+      "bibleReference": "Éxodo 2:24",
+      "answers": [
+        {
+          "text": "De la tierra de Madián y de su pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "De su pacto con Abraham, Isaac y Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "Del hijo de Séphora llamado Gersom",
+          "isCorrect": false
+        },
+        {
+          "text": "De las parteras de las Hebreas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

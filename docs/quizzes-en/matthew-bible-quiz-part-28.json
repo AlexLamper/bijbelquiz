@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 28",
+  "description": "Ten questions on Matthew 28: the empty tomb, the angel's message, the women who met Jesus and the command to make disciples of all nations.",
+  "slug": "matthew-bible-quiz-part-28",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who came to see the tomb when the first day of the week began to dawn?",
+      "explanation": "Matthew 28:1 says that after the Sabbath, as it began to dawn on the first day of the week, Mary Magdalene and the other Mary came to see the tomb.",
+      "bibleReference": "Matthew 28:1",
+      "answers": [
+        {
+          "text": "Joseph of Arimathea and the guards",
+          "isCorrect": false
+        },
+        {
+          "text": "Mary Magdalene and the other Mary",
+          "isCorrect": true
+        },
+        {
+          "text": "Peter and the other disciples",
+          "isCorrect": false
+        },
+        {
+          "text": "The eleven disciples of Jesus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the angel of the Lord do at the tomb?",
+      "explanation": "An angel of the Lord came down from the sky, rolled away the stone from the door and sat on it.",
+      "bibleReference": "Matthew 28:2",
+      "answers": [
+        {
+          "text": "He rolled the stone away and sat on it",
+          "isCorrect": true
+        },
+        {
+          "text": "He carried the body out of the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "He sealed the door of the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "He stood in the door with a sword",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the guards for fear of the angel?",
+      "explanation": "For fear of him the guards shook and became like dead men.",
+      "bibleReference": "Matthew 28:4",
+      "answers": [
+        {
+          "text": "They fell asleep at the door",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled into the city at once",
+          "isCorrect": false
+        },
+        {
+          "text": "They bowed down and worshiped",
+          "isCorrect": false
+        },
+        {
+          "text": "They shook and became like dead men",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the angel tell the women about Jesus?",
+      "explanation": "The angel said that he is not there, for he has risen, just like he said, and invited them to see the place where the Lord was lying.",
+      "bibleReference": "Matthew 28:5-6",
+      "answers": [
+        {
+          "text": "He was carried off by the soldiers",
+          "isCorrect": false
+        },
+        {
+          "text": "He is still lying in the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "He has risen and is not there",
+          "isCorrect": true
+        },
+        {
+          "text": "He will rise after three more days",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the angel say the disciples would see Jesus?",
+      "explanation": "The angel told the women to say that he has risen and goes before them into Galilee, where they will see him.",
+      "bibleReference": "Matthew 28:7",
+      "answers": [
+        {
+          "text": "In Galilee",
+          "isCorrect": true
+        },
+        {
+          "text": "In Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In Bethany",
+          "isCorrect": false
+        },
+        {
+          "text": "In Nazareth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the women depart from the tomb?",
+      "explanation": "They departed quickly from the tomb with fear and great joy, and ran to bring the disciples word.",
+      "bibleReference": "Matthew 28:8",
+      "answers": [
+        {
+          "text": "Slowly, in silence",
+          "isCorrect": false
+        },
+        {
+          "text": "Quickly, with fear and great joy",
+          "isCorrect": true
+        },
+        {
+          "text": "Weeping and in sorrow",
+          "isCorrect": false
+        },
+        {
+          "text": "Doubting the angel's words",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when he met the women on their way?",
+      "explanation": "As they went to tell the disciples, Jesus met them and said, \"Rejoice!\" They took hold of his feet and worshiped him.",
+      "bibleReference": "Matthew 28:9",
+      "answers": [
+        {
+          "text": "\"Peace be with you!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Why do you weep?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Follow me!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Rejoice!\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What were the soldiers paid to say had happened?",
+      "explanation": "The chief priests and elders gave the soldiers a large amount of silver and told them to say that his disciples came by night and stole him away while they slept.",
+      "bibleReference": "Matthew 28:12-13",
+      "answers": [
+        {
+          "text": "That an earthquake destroyed the tomb",
+          "isCorrect": false
+        },
+        {
+          "text": "That the governor removed the body",
+          "isCorrect": false
+        },
+        {
+          "text": "That the disciples stole the body at night",
+          "isCorrect": true
+        },
+        {
+          "text": "That they had seen an angel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say had been given to him?",
+      "explanation": "Jesus said that all authority has been given to him in heaven and on earth.",
+      "bibleReference": "Matthew 28:18",
+      "answers": [
+        {
+          "text": "All authority in heaven and on earth",
+          "isCorrect": true
+        },
+        {
+          "text": "The keys of the temple in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A throne in the city of David",
+          "isCorrect": false
+        },
+        {
+          "text": "The kingdoms of all the nations",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In whose name did Jesus tell them to baptize?",
+      "explanation": "He told them to go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.",
+      "bibleReference": "Matthew 28:19",
+      "answers": [
+        {
+          "text": "The God of Abraham and Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "The Father, the Son and the Holy Spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "The Son of Man alone",
+          "isCorrect": false
+        },
+        {
+          "text": "The Lord of the whole earth",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

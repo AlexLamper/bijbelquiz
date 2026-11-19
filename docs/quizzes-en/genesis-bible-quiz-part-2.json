@@ -1,239 +1,239 @@
 {
   "title": "Genesis Bible Quiz - Chapter 2",
-  "description": "Ten questions on Genesis 2: the seventh day, the garden in Eden, the first man and the first woman.",
+  "description": "Ten questions on Genesis 2: the seventh day, the garden in Eden, and the making of the man and the woman.",
   "slug": "genesis-bible-quiz-part-2",
   "categorySlug": "old-testament",
   "rewardXp": 100,
   "difficulty": "easy",
   "isPremium": false,
-  "status": "draft",
+  "status": "approved",
   "questions": [
     {
-      "text": "On which day did God rest from his work?",
-      "explanation": "God finished his work on the sixth day and rested on the seventh. He blessed that day and made it holy.",
-      "bibleReference": "Genesis 2:2-3",
+      "text": "What did God do on the seventh day?",
+      "explanation": "On the seventh day God finished his work and rested from all his work which he had done.",
+      "bibleReference": "Genesis 2:2",
       "answers": [
         {
-          "text": "The seventh day",
+          "text": "He made the first man",
+          "isCorrect": false
+        },
+        {
+          "text": "He planted the garden",
+          "isCorrect": false
+        },
+        {
+          "text": "He rested from all his work",
           "isCorrect": true
         },
         {
-          "text": "The third day",
-          "isCorrect": false
-        },
-        {
-          "text": "The fifth day",
-          "isCorrect": false
-        },
-        {
-          "text": "The first day",
+          "text": "He named the animals",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did God form the man from?",
-      "explanation": "God formed the man from the dust of the ground, which is why Adam's name sounds like the Hebrew word for ground.",
+      "text": "Why had no herb of the field sprung up yet?",
+      "explanation": "No herb had sprung up because Yahweh God had not caused it to rain on the earth, and there was no man to till the ground.",
+      "bibleReference": "Genesis 2:5",
+      "answers": [
+        {
+          "text": "God had not caused it to rain",
+          "isCorrect": true
+        },
+        {
+          "text": "Animals ate every shoot",
+          "isCorrect": false
+        },
+        {
+          "text": "The ground was too stony",
+          "isCorrect": false
+        },
+        {
+          "text": "It was always winter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What watered the whole surface of the ground?",
+      "explanation": "A mist went up from the earth and watered the whole surface of the ground.",
+      "bibleReference": "Genesis 2:6",
+      "answers": [
+        {
+          "text": "Heavy rain from the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "Snow from the mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "The waters of the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "A mist from the earth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "From what did Yahweh God form the man?",
+      "explanation": "Yahweh God formed man from the dust of the ground and breathed into his nostrils the breath of life.",
       "bibleReference": "Genesis 2:7",
       "answers": [
         {
-          "text": "Clay from a river bank",
+          "text": "The bark of a tree",
           "isCorrect": false
         },
         {
-          "text": "Dust from the ground",
+          "text": "The dust of the ground",
           "isCorrect": true
         },
         {
-          "text": "Stone from a mountain",
+          "text": "Clay from a riverbank",
           "isCorrect": false
         },
         {
-          "text": "Sand from the sea",
+          "text": "Water from the deep",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did God breathe into the man's nostrils?",
-      "explanation": "The man became a living soul when God breathed the breath of life into him.",
-      "bibleReference": "Genesis 2:7",
-      "answers": [
-        {
-          "text": "A spirit of wisdom",
-          "isCorrect": false
-        },
-        {
-          "text": "A flame of fire",
-          "isCorrect": false
-        },
-        {
-          "text": "The breath of life",
-          "isCorrect": true
-        },
-        {
-          "text": "A name of power",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "text": "Where did God plant a garden?",
-      "explanation": "God planted a garden in Eden, in the east, and put the man he had formed there.",
+      "text": "Where did Yahweh God plant the garden?",
+      "explanation": "Yahweh God planted a garden eastward, in Eden, and put the man there.",
       "bibleReference": "Genesis 2:8",
       "answers": [
         {
-          "text": "On Mount Ararat",
+          "text": "Westward, in Havilah",
           "isCorrect": false
         },
         {
-          "text": "By the Jordan River",
+          "text": "Northward, in Cush",
           "isCorrect": false
         },
         {
-          "text": "In the land of Canaan",
+          "text": "Southward, near Assyria",
           "isCorrect": false
         },
         {
-          "text": "In Eden, in the east",
+          "text": "Eastward, in Eden",
           "isCorrect": true
         }
       ]
     },
     {
-      "text": "Which two special trees stood in the middle of the garden?",
-      "explanation": "The tree of life and the tree of the knowledge of good and evil grew in the middle of the garden.",
-      "bibleReference": "Genesis 2:9",
+      "text": "What is the name of the first river, which flows through the land of Havilah?",
+      "explanation": "The first river is Pishon. It flows through the land of Havilah, where there is good gold.",
+      "bibleReference": "Genesis 2:11-12",
       "answers": [
         {
-          "text": "The fig tree and the olive tree of the field",
+          "text": "Gihon",
           "isCorrect": false
         },
         {
-          "text": "The tree of life and the tree of the knowledge of good and evil",
+          "text": "Hiddekel",
+          "isCorrect": false
+        },
+        {
+          "text": "Pishon",
           "isCorrect": true
         },
         {
-          "text": "The cedar tree and the palm tree of Eden",
-          "isCorrect": false
-        },
-        {
-          "text": "The vine and the pomegranate of the garden",
+          "text": "Euphrates",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did the man do with the animals God brought to him?",
-      "explanation": "The man gave names to all the livestock, the birds of the sky and every animal of the field.",
-      "bibleReference": "Genesis 2:19-20",
-      "answers": [
-        {
-          "text": "He tamed them",
-          "isCorrect": false
-        },
-        {
-          "text": "He offered them as sacrifices",
-          "isCorrect": false
-        },
-        {
-          "text": "He counted them",
-          "isCorrect": false
-        },
-        {
-          "text": "He gave them names",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "text": "What was the man's task in the garden?",
-      "explanation": "God put the man in the garden to cultivate it and to keep it.",
+      "text": "Why did Yahweh God put the man into the garden of Eden?",
+      "explanation": "Yahweh God put the man into the garden of Eden to cultivate and keep it.",
       "bibleReference": "Genesis 2:15",
       "answers": [
         {
-          "text": "To tend and keep it",
+          "text": "To cultivate and keep it",
           "isCorrect": true
         },
         {
-          "text": "To guard it with a sword",
+          "text": "To hunt its animals",
           "isCorrect": false
         },
         {
-          "text": "To build a wall around it",
+          "text": "To build a city in it",
           "isCorrect": false
         },
         {
-          "text": "To harvest it for God",
+          "text": "To guard it from the serpent",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "Which tree was the man forbidden to eat from?",
-      "explanation": "God allowed the man to eat freely from every tree except the tree of the knowledge of good and evil.",
-      "bibleReference": "Genesis 2:16-17",
+      "text": "What did God say would happen on the day the man ate from the tree of the knowledge of good and evil?",
+      "explanation": "God commanded the man not to eat of that tree, for in the day he ate of it he would surely die.",
+      "bibleReference": "Genesis 2:17",
       "answers": [
         {
-          "text": "The tree of life in the middle",
+          "text": "He would sleep for many years",
           "isCorrect": false
         },
         {
-          "text": "The tree standing by the river",
-          "isCorrect": false
-        },
-        {
-          "text": "The tree of the knowledge of good and evil",
+          "text": "He would surely die",
           "isCorrect": true
         },
         {
-          "text": "Every single tree in the garden",
+          "text": "He would become a wanderer",
+          "isCorrect": false
+        },
+        {
+          "text": "He would lose his speech",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "What did God say was not good?",
-      "explanation": "God saw that it was not good for the man to be alone, and said he would make a helper suitable for him.",
-      "bibleReference": "Genesis 2:18",
-      "answers": [
-        {
-          "text": "That the garden had no walls",
-          "isCorrect": false
-        },
-        {
-          "text": "That the man had no work",
-          "isCorrect": false
-        },
-        {
-          "text": "That the night was dark",
-          "isCorrect": false
-        },
-        {
-          "text": "That the man should be alone",
-          "isCorrect": true
-        }
-      ]
-    },
-    {
-      "text": "How did God make the woman?",
-      "explanation": "God caused a deep sleep to fall on the man, took one of his ribs and made it into a woman.",
+      "text": "From what did Yahweh God make the woman?",
+      "explanation": "God caused the man to fall into a deep sleep, took one of his ribs, and made a woman from the rib.",
       "bibleReference": "Genesis 2:21-22",
       "answers": [
         {
-          "text": "From the dust of the ground",
+          "text": "The dust of the ground",
           "isCorrect": false
         },
         {
-          "text": "From one of the man's ribs",
+          "text": "A branch of a tree",
+          "isCorrect": false
+        },
+        {
+          "text": "Clay from the river",
+          "isCorrect": false
+        },
+        {
+          "text": "A rib taken from the man",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How does the chapter describe the man and his wife at the end?",
+      "explanation": "The man and his wife were both naked, and they were not ashamed.",
+      "bibleReference": "Genesis 2:25",
+      "answers": [
+        {
+          "text": "Clothed in animal skins",
+          "isCorrect": false
+        },
+        {
+          "text": "Naked, and not ashamed",
           "isCorrect": true
         },
         {
-          "text": "From a breath of wind",
+          "text": "Hiding among the trees",
           "isCorrect": false
         },
         {
-          "text": "From the water of the river",
+          "text": "Afraid of God's voice",
           "isCorrect": false
         }
       ]

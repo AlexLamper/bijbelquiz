@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Números 21: la victoria sobre el Cananeo, las serpientes ardientes, el pozo de Beer y las guerras contra Sehón y Og.",
+  "slug": "numbers-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién peleó contra Israel y tomó de él presa al comienzo del capítulo?",
+      "explanation": "El Cananeo, el rey de Arad, que habitaba al mediodía, peleó con Israel y tomó de él presa.",
+      "bibleReference": "Números 21:1",
+      "answers": [
+        {
+          "text": "Sehón, rey de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "El Cananeo, rey de Arad",
+          "isCorrect": true
+        },
+        {
+          "text": "Og, rey de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "Balac, rey de Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamó el lugar donde Jehová entregó al Cananeo?",
+      "explanation": "Jehová escuchó la voz de Israel y entregó al Cananeo, y se llamó el nombre de aquel lugar Horma.",
+      "bibleReference": "Números 21:3",
+      "answers": [
+        {
+          "text": "Beer",
+          "isCorrect": false
+        },
+        {
+          "text": "Jahaz",
+          "isCorrect": false
+        },
+        {
+          "text": "Horma",
+          "isCorrect": true
+        },
+        {
+          "text": "Edrei",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se quejó el pueblo contra Dios y contra Moisés en el camino?",
+      "explanation": "El pueblo dijo que no había pan ni agua, y que su alma tenía fastidio de aquel pan tan liviano.",
+      "bibleReference": "Números 21:5",
+      "answers": [
+        {
+          "text": "De que no había pan ni agua",
+          "isCorrect": true
+        },
+        {
+          "text": "De que no había carne",
+          "isCorrect": false
+        },
+        {
+          "text": "De que el camino era demasiado largo",
+          "isCorrect": false
+        },
+        {
+          "text": "De que Edom los perseguía",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué envió Jehová entre el pueblo?",
+      "explanation": "Jehová envió entre el pueblo serpientes ardientes, que mordían al pueblo, y murió mucho pueblo de Israel.",
+      "bibleReference": "Números 21:6",
+      "answers": [
+        {
+          "text": "Fuego del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Una mortandad",
+          "isCorrect": false
+        },
+        {
+          "text": "Leones del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Serpientes ardientes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué hizo Moisés la serpiente, y dónde la puso?",
+      "explanation": "Moisés hizo una serpiente de metal y la puso sobre la bandera.",
+      "bibleReference": "Números 21:9",
+      "answers": [
+        {
+          "text": "De madera, sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "De metal, sobre la bandera",
+          "isCorrect": true
+        },
+        {
+          "text": "De barro, a la puerta del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "De piedra, sobre la peña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le sucedía al mordido que miraba a la serpiente de metal?",
+      "explanation": "Cuando alguna serpiente mordía a alguno, este miraba a la serpiente de metal y vivía.",
+      "bibleReference": "Números 21:9",
+      "answers": [
+        {
+          "text": "Vivía",
+          "isCorrect": true
+        },
+        {
+          "text": "Quedaba inmundo siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Sanaba al tercer día",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía lavar sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová a Moisés acerca del pozo de Beer?",
+      "explanation": "Jehová le dijo: Junta el pueblo, y les daré agua.",
+      "bibleReference": "Números 21:16",
+      "answers": [
+        {
+          "text": "Que hablara a la peña delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que cavara el pozo con su vara",
+          "isCorrect": false
+        },
+        {
+          "text": "Que juntara el pueblo y les daría agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Que enviara embajadores al rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Sehón cuando Israel le pidió pasar por su término?",
+      "explanation": "Sehón no dejó pasar a Israel, sino que juntó todo su pueblo, salió contra Israel al desierto y peleó en Jahaz.",
+      "bibleReference": "Números 21:23",
+      "answers": [
+        {
+          "text": "Los dejó pasar por el camino real",
+          "isCorrect": false
+        },
+        {
+          "text": "Les vendió agua y pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó a Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "Juntó su pueblo y salió a pelear",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De quién era la ciudad de Hesbón?",
+      "explanation": "El texto dice que Hesbón era la ciudad de Sehón, rey de los Amorrheos.",
+      "bibleReference": "Números 21:26",
+      "answers": [
+        {
+          "text": "De Sehón, rey de los Amorrheos",
+          "isCorrect": true
+        },
+        {
+          "text": "De Balac, rey de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Del rey de Arad",
+          "isCorrect": false
+        },
+        {
+          "text": "De Og, rey de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién salió contra Israel en Edrei, camino de Basán?",
+      "explanation": "Og, rey de Basán, salió contra ellos con todo su pueblo para pelear en Edrei.",
+      "bibleReference": "Números 21:33",
+      "answers": [
+        {
+          "text": "Sehón, rey de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Balac, hijo de Zippor",
+          "isCorrect": false
+        },
+        {
+          "text": "Og, rey de Basán",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

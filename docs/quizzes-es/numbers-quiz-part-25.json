@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Números 25: Israel en Sittim, Baal-peor, el celo de Phinees y el pacto del sacerdocio perpetuo.",
+  "slug": "numbers-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde reposó Israel cuando el pueblo empezó a fornicar con las hijas de Moab?",
+      "explanation": "El texto dice que Israel reposó en Sittim, y allí el pueblo empezó a fornicar con las hijas de Moab.",
+      "bibleReference": "Números 25:1",
+      "answers": [
+        {
+          "text": "En Cades",
+          "isCorrect": false
+        },
+        {
+          "text": "En Sittim",
+          "isCorrect": true
+        },
+        {
+          "text": "En Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Hor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué llamaron las hijas de Moab al pueblo?",
+      "explanation": "Ellas llamaron al pueblo a los sacrificios de sus dioses, y el pueblo comió y se inclinó a sus dioses.",
+      "bibleReference": "Números 25:2",
+      "answers": [
+        {
+          "text": "A los sacrificios de sus dioses",
+          "isCorrect": true
+        },
+        {
+          "text": "A una fiesta de bodas",
+          "isCorrect": false
+        },
+        {
+          "text": "A un pacto de paz",
+          "isCorrect": false
+        },
+        {
+          "text": "A la vendimia de Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué se allegó el pueblo, encendiendo el furor de Jehová?",
+      "explanation": "El pueblo se allegó a Baal-peor, y el furor de Jehová se encendió contra Israel.",
+      "bibleReference": "Números 25:3",
+      "answers": [
+        {
+          "text": "A los altos de Baal",
+          "isCorrect": false
+        },
+        {
+          "text": "A los dioses de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "A Baal-peor",
+          "isCorrect": true
+        },
+        {
+          "text": "A las aguas de la rencilla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Moisés hacer con los príncipes del pueblo?",
+      "explanation": "Jehová le dijo que tomara a todos los príncipes del pueblo y los ahorcara delante del sol.",
+      "bibleReference": "Números 25:4",
+      "answers": [
+        {
+          "text": "Echarlos fuera del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Contarlos uno por uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevarlos al tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahorcarlos delante del sol",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dijo Moisés que mataran a los que se habían allegado a Baal-peor?",
+      "explanation": "Moisés dijo a los jueces de Israel que cada uno matara a aquellos de los suyos que se habían allegado a Baal-peor.",
+      "bibleReference": "Números 25:5",
+      "answers": [
+        {
+          "text": "A los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los jueces de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "A los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de Madián",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién tomó una lanza y fue tras el varón de Israel a la tienda?",
+      "explanation": "Phinees, hijo de Eleazar, hijo de Aarón el sacerdote, tomó una lanza en su mano y fue tras el varón de Israel.",
+      "bibleReference": "Números 25:7-8",
+      "answers": [
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Josué",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinees",
+          "isCorrect": true
+        },
+        {
+          "text": "Zimri",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos murieron en aquella mortandad?",
+      "explanation": "El texto dice que murieron de aquella mortandad veinte y cuatro mil.",
+      "bibleReference": "Números 25:9",
+      "answers": [
+        {
+          "text": "Veinte y cuatro mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce mil y setecientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos y cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y tres mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tendrían Phinees y su simiente después de él?",
+      "explanation": "El texto dice que tendría él, y su simiente después de él, el pacto del sacerdocio perpetuo.",
+      "bibleReference": "Números 25:13",
+      "answers": [
+        {
+          "text": "Una heredad en Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "El cargo de los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los diezmos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "El pacto del sacerdocio perpetuo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué tribu era Zimri hijo de Salu, el varón muerto?",
+      "explanation": "El nombre del varón muerto era Zimri hijo de Salu, jefe de una familia de la tribu de Simeón.",
+      "bibleReference": "Números 25:14",
+      "answers": [
+        {
+          "text": "De Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "De Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "De Simeón",
+          "isCorrect": true
+        },
+        {
+          "text": "De Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová hacer con los Madianitas?",
+      "explanation": "Jehová mandó hostilizar a los Madianitas y herirlos, por cuanto habían afligido a Israel con sus ardides.",
+      "bibleReference": "Números 25:16-17",
+      "answers": [
+        {
+          "text": "Hacer pacto con ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedirles tributo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejarlos pasar en paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Hostilizarlos y herirlos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

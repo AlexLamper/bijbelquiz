@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Levítico 13: cómo el sacerdote examinaba las llagas de la piel, de la cabeza y de los vestidos, y cuándo declaraba limpio o inmundo.",
+  "slug": "leviticus-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién debía ser traído el que tuviera en la piel algo como llaga de lepra?",
+      "explanation": "Debía ser traído a Aarón el sacerdote, o a uno de los sacerdotes sus hijos.",
+      "bibleReference": "Levítico 13:2",
+      "answers": [
+        {
+          "text": "A Moisés, fuera del real del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de Israel en la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aarón el sacerdote o a uno de sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "Al que guardaba la puerta del real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos señales hacían que el sacerdote lo diera por inmundo?",
+      "explanation": "Si el pelo en la llaga se había vuelto blanco y la llaga parecía más hundida que la tez de la carne, era llaga de lepra y lo daba por inmundo.",
+      "bibleReference": "Levítico 13:3",
+      "answers": [
+        {
+          "text": "Pelo blanco y llaga más hundida que la tez",
+          "isCorrect": true
+        },
+        {
+          "text": "Pelo negro y llaga que se ha oscurecido",
+          "isCorrect": false
+        },
+        {
+          "text": "Mancha blanca con pelo rubio y fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne sana y piel quemada por fuego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el sacerdote con quien tenía una mancha blanca sin esas señales?",
+      "explanation": "Si la mancha blanca no parecía más hundida que la tez y el pelo no se había vuelto blanco, el sacerdote encerraba al llagado por siete días.",
+      "bibleReference": "Levítico 13:4",
+      "answers": [
+        {
+          "text": "Lo enviaba fuera del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Le mandaba lavar sus vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo daba por inmundo en el mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo encerraba por siete días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si al séptimo día la llaga se había oscurecido y no había cundido, ¿qué declaraba el sacerdote?",
+      "explanation": "El sacerdote lo daba por limpio, pues era postilla; y el hombre lavaba sus vestidos y quedaba limpio.",
+      "bibleReference": "Levítico 13:6",
+      "answers": [
+        {
+          "text": "Que era lepra envejecida",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era limpio, pues era postilla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que debía ser trasquilado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debía habitar solo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué declaraba el sacerdote si la lepra había cubierto toda la carne y esta se había vuelto toda blanca?",
+      "explanation": "Si la lepra había cubierto toda su carne y esta se había vuelto toda blanca, el sacerdote daba por limpio al llagado.",
+      "bibleReference": "Levítico 13:12-13",
+      "answers": [
+        {
+          "text": "Que debía ser encerrado otra vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era inmundo para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era limpio",
+          "isCorrect": true
+        },
+        {
+          "text": "Que debía quemar sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ocurría el día en que aparecía en él la carne viva?",
+      "explanation": "El día que aparecía en él la carne viva, quedaba inmundo; el sacerdote miraba la carne viva y lo daba por inmundo.",
+      "bibleReference": "Levítico 13:14-15",
+      "answers": [
+        {
+          "text": "Debía lavar su carne con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Era encerrado por otros siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba limpio de nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba inmundo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si la llaga estaba en la cabeza o en la barba, con pelo rubio y adelgazado y más profunda que la tez, ¿qué era?",
+      "explanation": "En ese caso el sacerdote lo daba por inmundo: era tiña, lepra de la cabeza o de la barba.",
+      "bibleReference": "Levítico 13:30",
+      "answers": [
+        {
+          "text": "Una quemadura sanada",
+          "isCorrect": false
+        },
+        {
+          "text": "Tiña, lepra de la cabeza o de la barba",
+          "isCorrect": true
+        },
+        {
+          "text": "Un empeine que brotó en la piel",
+          "isCorrect": false
+        },
+        {
+          "text": "La costra de una apostema",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según este texto, ¿qué era el hombre al que se le pelaba la cabeza?",
+      "explanation": "El hombre al que se le pelaba la cabeza era calvo, mas limpio.",
+      "bibleReference": "Levítico 13:40",
+      "answers": [
+        {
+          "text": "Calvo, mas limpio",
+          "isCorrect": true
+        },
+        {
+          "text": "Inmundo hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Leproso en su cabeza",
+          "isCorrect": false
+        },
+        {
+          "text": "Encerrado por siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía pregonar el leproso en quien había llaga?",
+      "explanation": "Sus vestidos serían deshechos y su cabeza descubierta, y embozado pregonaría: ¡Inmundo! ¡inmundo! Habitaría solo, fuera del real.",
+      "bibleReference": "Levítico 13:45-46",
+      "answers": [
+        {
+          "text": "Limpio soy",
+          "isCorrect": false
+        },
+        {
+          "text": "Santo, santo",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Inmundo! ¡inmundo!",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardad la ordenanza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con el vestido en que había lepra roedora?",
+      "explanation": "El vestido, el estambre o la trama con esa plaga debía ser quemado al fuego, porque es lepra roedora.",
+      "bibleReference": "Levítico 13:51-52",
+      "answers": [
+        {
+          "text": "Se lavaba y se guardaba siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quemaba al fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Se cortaba la parte limpia",
+          "isCorrect": false
+        },
+        {
+          "text": "Se daba al sacerdote",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 12",
+  "description": "Ten questions on Romans 12: the living sacrifice, the renewed mind, gifts in one body, and overcoming evil with good.",
+  "slug": "romans-bible-quiz-part-12",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What are the brothers urged to present as a living sacrifice?",
+      "explanation": "Romans 12:1 urges them by the mercies of God to present their bodies a living sacrifice, holy and acceptable to God.",
+      "bibleReference": "Romans 12:1",
+      "answers": [
+        {
+          "text": "Their money",
+          "isCorrect": false
+        },
+        {
+          "text": "Their bodies",
+          "isCorrect": true
+        },
+        {
+          "text": "Their firstborn",
+          "isCorrect": false
+        },
+        {
+          "text": "Their flocks",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "By what are they to be transformed instead of being conformed to this world?",
+      "explanation": "Romans 12:2 says not to be conformed to this world, but to be transformed by the renewing of your mind.",
+      "bibleReference": "Romans 12:2",
+      "answers": [
+        {
+          "text": "The renewing of their mind",
+          "isCorrect": true
+        },
+        {
+          "text": "The keeping of the feasts",
+          "isCorrect": false
+        },
+        {
+          "text": "The counsel of the rulers",
+          "isCorrect": false
+        },
+        {
+          "text": "The teaching of the scribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is each person told to think of himself?",
+      "explanation": "Romans 12:3 says not to think of himself more highly than he ought to think, but to think reasonably, as God has apportioned to each person a measure of faith.",
+      "bibleReference": "Romans 12:3",
+      "answers": [
+        {
+          "text": "More highly than his neighbor",
+          "isCorrect": false
+        },
+        {
+          "text": "As the least of all creatures",
+          "isCorrect": false
+        },
+        {
+          "text": "As a judge over others",
+          "isCorrect": false
+        },
+        {
+          "text": "Not more highly than he ought, but reasonably",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What are the many said to be in Christ?",
+      "explanation": "Romans 12:4-5 say that as we have many members in one body, so we who are many are one body in Christ, and individually members of one another.",
+      "bibleReference": "Romans 12:4-5",
+      "answers": [
+        {
+          "text": "One nation",
+          "isCorrect": false
+        },
+        {
+          "text": "One temple",
+          "isCorrect": false
+        },
+        {
+          "text": "One body",
+          "isCorrect": true
+        },
+        {
+          "text": "One field",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "With what should the one who shows mercy do it?",
+      "explanation": "Romans 12:8 says that he who shows mercy should do it with cheerfulness.",
+      "bibleReference": "Romans 12:8",
+      "answers": [
+        {
+          "text": "Diligence",
+          "isCorrect": false
+        },
+        {
+          "text": "Cheerfulness",
+          "isCorrect": true
+        },
+        {
+          "text": "Generosity",
+          "isCorrect": false
+        },
+        {
+          "text": "Trembling",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What should love be without?",
+      "explanation": "Romans 12:9 says to let love be without hypocrisy, to abhor what is evil and cling to what is good.",
+      "bibleReference": "Romans 12:9",
+      "answers": [
+        {
+          "text": "Hypocrisy",
+          "isCorrect": true
+        },
+        {
+          "text": "Measure",
+          "isCorrect": false
+        },
+        {
+          "text": "Words",
+          "isCorrect": false
+        },
+        {
+          "text": "Limits",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What are they told to do to those who persecute them?",
+      "explanation": "Romans 12:14 says to bless those who persecute you, to bless and not curse.",
+      "bibleReference": "Romans 12:14",
+      "answers": [
+        {
+          "text": "Avoid them completely",
+          "isCorrect": false
+        },
+        {
+          "text": "Report them to the rulers",
+          "isCorrect": false
+        },
+        {
+          "text": "Repay them in kind",
+          "isCorrect": false
+        },
+        {
+          "text": "Bless them, and not curse",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What follows “Rejoice with those who rejoice”?",
+      "explanation": "Romans 12:15 says, “Rejoice with those who rejoice. Weep with those who weep.”",
+      "bibleReference": "Romans 12:15",
+      "answers": [
+        {
+          "text": "“Be silent with those who are silent.”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Watch with those who watch.”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Weep with those who weep.”",
+          "isCorrect": true
+        },
+        {
+          "text": "“Fast with those who fast.”",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is written about vengeance?",
+      "explanation": "Romans 12:19 says not to seek revenge but to give place to God's wrath, for it is written, “Vengeance belongs to me; I will repay, says the Lord.”",
+      "bibleReference": "Romans 12:19",
+      "answers": [
+        {
+          "text": "“An eye for an eye, a tooth for a tooth.”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Vengeance belongs to me; I will repay, says the Lord.”",
+          "isCorrect": true
+        },
+        {
+          "text": "“The sword will not depart from his house.”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Let the judges decide between them.”",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the chapter say evil is to be overcome?",
+      "explanation": "Romans 12:21 says not to be overcome by evil, but to overcome evil with good.",
+      "bibleReference": "Romans 12:21",
+      "answers": [
+        {
+          "text": "With good",
+          "isCorrect": true
+        },
+        {
+          "text": "With the sword",
+          "isCorrect": false
+        },
+        {
+          "text": "With silence",
+          "isCorrect": false
+        },
+        {
+          "text": "With fasting",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

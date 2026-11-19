@@ -34,6 +34,7 @@ export interface TrialReminderDeps {
 const longDate = new Intl.DateTimeFormat(t('bq.header.numberLocale'), { day: 'numeric', month: 'long', timeZone: isNlSite() ? 'Europe/Amsterdam' : undefined });
 
 function siteUrlFrom(env: Record<string, string | undefined> = process.env): string {
+  if (!isNlSite()) return getSiteConfig().baseUrl;
   return (env.NEXTAUTH_URL || getSiteConfig().baseUrl).replace(/\/$/, '');
 }
 

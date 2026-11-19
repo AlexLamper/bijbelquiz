@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Éxodo 3: la zarza que arde sin consumirse, el nombre que Dios da a Moisés y el envío a Faraón.",
+  "slug": "exodus-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué estaba haciendo Moisés cuando vino a Horeb?",
+      "explanation": "Moisés apacentaba las ovejas de Jethro, su suegro, y llevó las ovejas detrás del desierto hasta Horeb.",
+      "bibleReference": "Éxodo 3:1",
+      "answers": [
+        {
+          "text": "Apacentaba las ovejas de su suegro",
+          "isCorrect": true
+        },
+        {
+          "text": "Cavaba un pozo en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificaba ciudades en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuidaba a sus hijos en casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio Moisés en la zarza?",
+      "explanation": "El Angel de Jehová se le apareció en una llama de fuego en medio de una zarza, y la zarza ardía y no se consumía.",
+      "bibleReference": "Éxodo 3:2",
+      "answers": [
+        {
+          "text": "Una nube espesa sobre el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ángel con una espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego que ardía sin consumir la zarza",
+          "isCorrect": true
+        },
+        {
+          "text": "Agua que brotaba de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó quitarse de los pies?",
+      "explanation": "Le dijo que no se llegase allá y que quitase sus zapatos de sus pies, porque el lugar donde estaba era tierra santa.",
+      "bibleReference": "Éxodo 3:5",
+      "answers": [
+        {
+          "text": "Su manto",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus zapatos",
+          "isCorrect": true
+        },
+        {
+          "text": "Su cinto",
+          "isCorrect": false
+        },
+        {
+          "text": "Su vara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se presentó Dios a Moisés?",
+      "explanation": "Dijo: Yo soy el Dios de tu padre, Dios de Abraham, Dios de Isaac, Dios de Jacob; y Moisés cubrió su rostro.",
+      "bibleReference": "Éxodo 3:6",
+      "answers": [
+        {
+          "text": "Como el Angel de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el Dios de los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el Dios de los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el Dios de Abraham, Isaac y Jacob",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A qué tierra dijo Jehová que sacaría a su pueblo?",
+      "explanation": "Dijo que había descendido para librarlos y sacarlos a una tierra buena y ancha, que fluye leche y miel.",
+      "bibleReference": "Éxodo 3:8",
+      "answers": [
+        {
+          "text": "A una tierra que fluye leche y miel",
+          "isCorrect": true
+        },
+        {
+          "text": "A la tierra de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "A un desierto con muchos pozos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los puertos de mar de Sidón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Moisés cuando Dios lo envió a Faraón?",
+      "explanation": "Moisés preguntó quién era él para ir a Faraón y sacar de Egipto a los hijos de Israel.",
+      "bibleReference": "Éxodo 3:11",
+      "answers": [
+        {
+          "text": "Dijo que iría con Aarón su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Preguntó quién era él para ir a Faraón",
+          "isCorrect": true
+        },
+        {
+          "text": "Dijo que no conocía a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió una señal en el cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál fue la señal que Dios le dio de que lo había enviado?",
+      "explanation": "Dios dijo que estaría con él, y que la señal sería que, sacado el pueblo de Egipto, servirían a Dios sobre aquel monte.",
+      "bibleReference": "Éxodo 3:12",
+      "answers": [
+        {
+          "text": "Que su vara se tornaría culebra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su mano quedaría leprosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el río se volvería sangre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que servirían a Dios sobre aquel monte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Dios cuando Moisés preguntó por su nombre?",
+      "explanation": "Dios respondió a Moisés: YO SOY EL QUE SOY, y le dijo que así diría a los hijos de Israel.",
+      "bibleReference": "Éxodo 3:14",
+      "answers": [
+        {
+          "text": "Dios Omnipotente",
+          "isCorrect": false
+        },
+        {
+          "text": "El Fuerte de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "YO SOY EL QUE SOY",
+          "isCorrect": true
+        },
+        {
+          "text": "El Angel de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían decir al rey de Egipto que iban a hacer?",
+      "explanation": "Debían decirle que irían camino de tres días por el desierto para sacrificar a Jehová su Dios.",
+      "bibleReference": "Éxodo 3:18",
+      "answers": [
+        {
+          "text": "Salir para siempre de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Ir tres días al desierto a sacrificar",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificar un altar en Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir vasos de plata y oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía pedir cada mujer a su vecina al partir?",
+      "explanation": "Cada mujer demandaría a su vecina y a su huéspeda vasos de plata, vasos de oro y vestidos.",
+      "bibleReference": "Éxodo 3:22",
+      "answers": [
+        {
+          "text": "Vasos de plata, de oro y vestidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Paja y ladrillos para la obra",
+          "isCorrect": false
+        },
+        {
+          "text": "Ovejas y vacas del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y agua para el camino",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

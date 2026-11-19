@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Números 5: los inmundos echados del campo, la compensación de la ofensa y la ley de los celos.",
+  "slug": "numbers-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes mandó Jehová echar fuera del campo?",
+      "explanation": "Jehová manda echar del campo a todo leproso, a los que padecen flujo de semen y a todo contaminado sobre muerto.",
+      "bibleReference": "Números 5:2",
+      "answers": [
+        {
+          "text": "A los extranjeros y a los peregrinos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que no trajeran ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "A los leprosos y a los contaminados por un muerto",
+          "isCorrect": true
+        },
+        {
+          "text": "A los que no confesaran su pecado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué debían echarlos fuera del campo?",
+      "explanation": "Hombres y mujeres debían ser echados fuera del campo para que no contaminaran el campo en medio del cual Jehová habita.",
+      "bibleReference": "Números 5:3",
+      "answers": [
+        {
+          "text": "Para que no contaminaran el campo donde Jehová habita",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que no contagiaran a los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que sanaran en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que no se multiplicaran en el campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto debía añadir el que compensaba su ofensa?",
+      "explanation": "El que pecaba confesaba su pecado, compensaba su ofensa enteramente y añadía su quinto sobre ello.",
+      "bibleReference": "Números 5:7",
+      "answers": [
+        {
+          "text": "Su décima",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "El doble",
+          "isCorrect": false
+        },
+        {
+          "text": "Su quinto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si el agraviado no tenía pariente, ¿a quién se daba la indemnización?",
+      "explanation": "Cuando el hombre no tenía pariente al cual resarcir la ofensa, la indemnización se daba a Jehová, al sacerdote, además del carnero de las expiaciones.",
+      "bibleReference": "Números 5:8",
+      "answers": [
+        {
+          "text": "A los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jehová, al sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "A los levitas del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los pobres de la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién eran las ofrendas de las cosas santas que los hijos de Israel presentaban?",
+      "explanation": "Toda ofrenda de las cosas santas que los hijos de Israel presentaban al sacerdote era suya.",
+      "bibleReference": "Números 5:9",
+      "answers": [
+        {
+          "text": "De los levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Del que las ofrecía",
+          "isCorrect": false
+        },
+        {
+          "text": "Del sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "De toda la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrenda traía el marido junto con su mujer en la ley de los celos?",
+      "explanation": "El marido llevaba su mujer al sacerdote y traía con ella la décima de un epha de harina de cebada, sin aceite y sin incienso.",
+      "bibleReference": "Números 5:15",
+      "answers": [
+        {
+          "text": "Dos tórtolas o dos palominos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordero de un año sin tacha",
+          "isCorrect": false
+        },
+        {
+          "text": "Una torta de flor de harina con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "La décima de un epha de harina de cebada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué echaba el sacerdote en el agua santa del vaso de barro?",
+      "explanation": "El sacerdote tomaba agua santa en un vaso de barro y echaba en ella del polvo que había en el suelo del tabernáculo.",
+      "bibleReference": "Números 5:17",
+      "answers": [
+        {
+          "text": "Polvo del suelo del tabernáculo",
+          "isCorrect": true
+        },
+        {
+          "text": "Ceniza del altar del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceite de la unción santa",
+          "isCorrect": false
+        },
+        {
+          "text": "Harina de cebada del presente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tenía el sacerdote en la mano mientras la mujer estaba delante de Jehová?",
+      "explanation": "El sacerdote hacía estar a la mujer delante de Jehová, le descubría la cabeza y tenía en la mano las aguas amargas que acarrean maldición.",
+      "bibleReference": "Números 5:18",
+      "answers": [
+        {
+          "text": "El libro de las maldiciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Las aguas amargas que acarrean maldición",
+          "isCorrect": true
+        },
+        {
+          "text": "El carnero de las expiaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Un puñado del presente de celos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía responder la mujer al juramento de maldición?",
+      "explanation": "Después de las palabras del juramento, la mujer decía: Amén, amén.",
+      "bibleReference": "Números 5:22",
+      "answers": [
+        {
+          "text": "Así sea, Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Amén, amén",
+          "isCorrect": true
+        },
+        {
+          "text": "Yo soy limpia",
+          "isCorrect": false
+        },
+        {
+          "text": "No he pecado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según esta ley, ¿qué le sucedía a la mujer que no era inmunda?",
+      "explanation": "Si la mujer no era inmunda, sino que estaba limpia, quedaba libre y era fecunda.",
+      "bibleReference": "Números 5:28",
+      "answers": [
+        {
+          "text": "Era echada fuera del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía traer otra ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba por maldición en su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba libre y era fecunda",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

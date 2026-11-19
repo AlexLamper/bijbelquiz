@@ -1,0 +1,242 @@
+{
+  "title": "Proverbs Bible Quiz - Chapter 11",
+  "description": "Ten questions on Proverbs 11: honest weights, humility and pride, generosity, and the fate of those who trust in riches.",
+  "slug": "proverbs-bible-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What is an abomination to Yahweh in the first verse of this chapter?",
+      "explanation": "A false balance is an abomination to Yahweh, but accurate weights are his delight.",
+      "bibleReference": "Proverbs 11:1",
+      "answers": [
+        {
+          "text": "A lying tongue",
+          "isCorrect": false
+        },
+        {
+          "text": "A proud heart",
+          "isCorrect": false
+        },
+        {
+          "text": "A false balance",
+          "isCorrect": true
+        },
+        {
+          "text": "A perverse mouth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to this chapter, what comes with humility?",
+      "explanation": "When pride comes, then comes shame, but with humility comes wisdom.",
+      "bibleReference": "Proverbs 11:2",
+      "answers": [
+        {
+          "text": "Wisdom",
+          "isCorrect": true
+        },
+        {
+          "text": "Honor",
+          "isCorrect": false
+        },
+        {
+          "text": "Riches",
+          "isCorrect": false
+        },
+        {
+          "text": "Peace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does one who brings gossip do, in contrast with one of a trustworthy spirit?",
+      "explanation": "One who brings gossip betrays a confidence, but one who is of a trustworthy spirit keeps a secret.",
+      "bibleReference": "Proverbs 11:13",
+      "answers": [
+        {
+          "text": "He sows discord among brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "He destroys his neighbor",
+          "isCorrect": false
+        },
+        {
+          "text": "He speaks with lying lips",
+          "isCorrect": false
+        },
+        {
+          "text": "He betrays a confidence",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where is there victory, according to this chapter?",
+      "explanation": "Where there is no wise guidance, the nation falls, but in the multitude of counselors there is victory.",
+      "bibleReference": "Proverbs 11:14",
+      "answers": [
+        {
+          "text": "In the strength of the king",
+          "isCorrect": false
+        },
+        {
+          "text": "In the multitude of counselors",
+          "isCorrect": true
+        },
+        {
+          "text": "In the hand of the diligent",
+          "isCorrect": false
+        },
+        {
+          "text": "In the fear of Yahweh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is a beautiful woman who lacks discretion compared to?",
+      "explanation": "Like a gold ring in a pig's snout is a beautiful woman who lacks discretion.",
+      "bibleReference": "Proverbs 11:22",
+      "answers": [
+        {
+          "text": "A gold ring in a pig's snout",
+          "isCorrect": true
+        },
+        {
+          "text": "A broken vase of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "A rose among thorns",
+          "isCorrect": false
+        },
+        {
+          "text": "A crown without jewels",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does this chapter say about the one who scatters?",
+      "explanation": "There is one who scatters and increases yet more, and one who withholds more than is appropriate but gains poverty.",
+      "bibleReference": "Proverbs 11:24",
+      "answers": [
+        {
+          "text": "He gains poverty",
+          "isCorrect": false
+        },
+        {
+          "text": "He will be forgotten",
+          "isCorrect": false
+        },
+        {
+          "text": "He increases yet more",
+          "isCorrect": true
+        },
+        {
+          "text": "He loses his inheritance",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How does the saying continue: \"He who waters shall...\"?",
+      "explanation": "The liberal soul shall be made fat, and he who waters shall be watered also himself.",
+      "bibleReference": "Proverbs 11:25",
+      "answers": [
+        {
+          "text": "reap a great harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "never thirst again",
+          "isCorrect": false
+        },
+        {
+          "text": "fill many vats with wine",
+          "isCorrect": false
+        },
+        {
+          "text": "be watered also himself",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom do people curse, according to this chapter?",
+      "explanation": "People curse someone who withholds grain, but blessing will be on the head of him who sells it.",
+      "bibleReference": "Proverbs 11:26",
+      "answers": [
+        {
+          "text": "Someone who moves a boundary stone",
+          "isCorrect": false
+        },
+        {
+          "text": "Someone who withholds grain",
+          "isCorrect": true
+        },
+        {
+          "text": "Someone who charges interest",
+          "isCorrect": false
+        },
+        {
+          "text": "Someone who waters down wine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happens to him who trusts in his riches, in contrast with the righteous?",
+      "explanation": "He who trusts in his riches will fall, but the righteous shall flourish as the green leaf.",
+      "bibleReference": "Proverbs 11:28",
+      "answers": [
+        {
+          "text": "He will be made poor",
+          "isCorrect": false
+        },
+        {
+          "text": "He will lose his friends",
+          "isCorrect": false
+        },
+        {
+          "text": "He will fall",
+          "isCorrect": true
+        },
+        {
+          "text": "He will wither in the heat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What shall he who troubles his own house inherit?",
+      "explanation": "He who troubles his own house shall inherit the wind, and the foolish shall be servant to the wise of heart.",
+      "bibleReference": "Proverbs 11:29",
+      "answers": [
+        {
+          "text": "The wind",
+          "isCorrect": true
+        },
+        {
+          "text": "Nothing at all",
+          "isCorrect": false
+        },
+        {
+          "text": "A ruined field",
+          "isCorrect": false
+        },
+        {
+          "text": "Shame and poverty",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

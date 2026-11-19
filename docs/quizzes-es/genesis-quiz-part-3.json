@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Génesis 3: la serpiente, el fruto prohibido y lo que Jehová Dios dijo a cada uno.",
+  "slug": "genesis-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el texto de la serpiente comparada con los demás animales del campo?",
+      "explanation": "El capítulo empieza diciendo que la serpiente era astuta, más que todos los animales del campo que Jehová Dios había hecho.",
+      "bibleReference": "Génesis 3:1",
+      "answers": [
+        {
+          "text": "Era la más fuerte de todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Era la más hermosa de todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Era la más astuta de todos",
+          "isCorrect": true
+        },
+        {
+          "text": "Era la más pequeña de todos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo la serpiente a la mujer sobre morir?",
+      "explanation": "La serpiente dijo a la mujer: No moriréis.",
+      "bibleReference": "Génesis 3:4",
+      "answers": [
+        {
+          "text": "Que no morirían",
+          "isCorrect": true
+        },
+        {
+          "text": "Que morirían sin remedio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que morirían ese mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que saldrían del huerto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la serpiente, ¿qué les pasaría el día que comiesen del árbol?",
+      "explanation": "La serpiente dijo que sus ojos serían abiertos y que serían como dioses, sabiendo el bien y el mal.",
+      "bibleReference": "Génesis 3:5",
+      "answers": [
+        {
+          "text": "Vivirían para siempre en el huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra les daría todo su fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová les hablaría cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Serían como dioses, sabiendo el bien y el mal",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién dio la mujer del fruto después de comer?",
+      "explanation": "La mujer tomó de su fruto y comió, y dio también a su marido, el cual comió así como ella.",
+      "bibleReference": "Génesis 3:6",
+      "answers": [
+        {
+          "text": "A la serpiente",
+          "isCorrect": false
+        },
+        {
+          "text": "A su marido",
+          "isCorrect": true
+        },
+        {
+          "text": "A sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "A nadie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron cuando conocieron que estaban desnudos?",
+      "explanation": "Fueron abiertos los ojos de ambos, y cosieron hojas de higuera y se hicieron delantales.",
+      "bibleReference": "Génesis 3:7",
+      "answers": [
+        {
+          "text": "Se vistieron de túnicas de pieles",
+          "isCorrect": false
+        },
+        {
+          "text": "Se lavaron en el río del huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Cosieron hojas de higuera y se hicieron delantales",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificaron un altar en el huerto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién culpó el hombre cuando Jehová Dios le preguntó?",
+      "explanation": "El hombre respondió que la mujer que Dios le dio por compañera le dio del árbol, y que él comió.",
+      "bibleReference": "Génesis 3:12",
+      "answers": [
+        {
+          "text": "A la serpiente del huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "A sí mismo solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "A los querubines",
+          "isCorrect": false
+        },
+        {
+          "text": "A la mujer que Dios le dio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió la mujer cuando Jehová Dios le preguntó qué había hecho?",
+      "explanation": "La mujer dijo que la serpiente la engañó, y que ella comió.",
+      "bibleReference": "Génesis 3:13",
+      "answers": [
+        {
+          "text": "Que su marido se lo dio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la serpiente la engañó",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no había comido nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tuvo miedo y se escondió",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová Dios a la serpiente que comería todos los días de su vida?",
+      "explanation": "Jehová Dios dijo a la serpiente que andaría sobre su pecho y que comería polvo todos los días de su vida.",
+      "bibleReference": "Génesis 3:14",
+      "answers": [
+        {
+          "text": "Polvo",
+          "isCorrect": true
+        },
+        {
+          "text": "Hierba del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Espinos y cardos",
+          "isCorrect": false
+        },
+        {
+          "text": "Fruto del árbol",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso el hombre a su mujer, y por qué?",
+      "explanation": "El hombre llamó a su mujer Eva, por cuanto ella era madre de todos los vivientes.",
+      "bibleReference": "Génesis 3:20",
+      "answers": [
+        {
+          "text": "Varona, por ser tomada del varón",
+          "isCorrect": false
+        },
+        {
+          "text": "Ayuda, por ser idónea para él",
+          "isCorrect": false
+        },
+        {
+          "text": "Vida, por comer del árbol de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Eva, por ser madre de todos los vivientes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Jehová Dios al oriente del huerto de Edén?",
+      "explanation": "Puso querubines y una espada encendida que se revolvía a todos lados, para guardar el camino del árbol de la vida.",
+      "bibleReference": "Génesis 3:24",
+      "answers": [
+        {
+          "text": "Un altar y una ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Una torre de ladrillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Querubines y una espada encendida",
+          "isCorrect": true
+        },
+        {
+          "text": "Un río de cuatro ramales",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

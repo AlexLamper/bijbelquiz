@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 36",
+  "description": "Diez preguntas sobre Éxodo 36: la obra de Bezaleel y Aholiab, la ofrenda que sobró y las cortinas y tablas del tabernáculo.",
+  "slug": "exodus-quiz-part-36",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes hicieron la obra del santuario junto con todo hombre sabio de corazón?",
+      "explanation": "Éxodo 36:1 dice que hicieron la obra Bezaleel y Aholiab y todo hombre sabio de corazón, a quien Jehová dio sabiduría e inteligencia.",
+      "bibleReference": "Éxodo 36:1",
+      "answers": [
+        {
+          "text": "Moisés y Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Bezaleel y Aholiab",
+          "isCorrect": true
+        },
+        {
+          "text": "Uri y Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué frecuencia seguía trayendo el pueblo su ofrenda voluntaria?",
+      "explanation": "Éxodo 36:3 dice que tomaron la ofrenda que los hijos de Israel habían traído y que ellos le traían aún ofrenda voluntaria cada mañana.",
+      "bibleReference": "Éxodo 36:3",
+      "answers": [
+        {
+          "text": "Cada día séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vez al mes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada mañana",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los maestros a Moisés acerca de lo que traía el pueblo?",
+      "explanation": "Éxodo 36:5 dice que hablaron a Moisés diciendo que el pueblo traía mucho más de lo que era menester para hacer la obra que Jehová había mandado.",
+      "bibleReference": "Éxodo 36:5",
+      "answers": [
+        {
+          "text": "Que traía mucho más de lo necesario",
+          "isCorrect": true
+        },
+        {
+          "text": "Que traía muy poco para la obra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que traía materiales inmundos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ya no quería traer nada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó pregonar Moisés por el campo?",
+      "explanation": "Éxodo 36:6 dice que Moisés mandó pregonar que ningún hombre ni mujer hiciese más obra para ofrecer para el santuario, y así el pueblo fue impedido de ofrecer.",
+      "bibleReference": "Éxodo 36:6",
+      "answers": [
+        {
+          "text": "Que todos trajesen oro y plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los maestros dejasen la obra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie hiciese más obra para ofrecer",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el pueblo guardase el sábado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De cuántas cortinas hicieron el tabernáculo?",
+      "explanation": "Éxodo 36:8 dice que hicieron el tabernáculo de diez cortinas de lino torcido, de jacinto, de púrpura y carmesí, con querubines.",
+      "bibleReference": "Éxodo 36:8",
+      "answers": [
+        {
+          "text": "De veinte cortinas",
+          "isCorrect": false
+        },
+        {
+          "text": "De once cortinas",
+          "isCorrect": false
+        },
+        {
+          "text": "De cinco cortinas",
+          "isCorrect": false
+        },
+        {
+          "text": "De diez cortinas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto medía de longitud cada una de esas cortinas?",
+      "explanation": "Éxodo 36:9 dice que la longitud de cada cortina era de veintiocho codos y la anchura de cuatro codos, y que todas tenían una misma medida.",
+      "bibleReference": "Éxodo 36:9",
+      "answers": [
+        {
+          "text": "Veintiocho codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué material eran los cincuenta corchetes con que juntó las diez cortinas de lino?",
+      "explanation": "Éxodo 36:13 dice que hizo cincuenta corchetes de oro con los cuales juntó las cortinas la una con la otra, y se hizo un tabernáculo.",
+      "bibleReference": "Éxodo 36:13",
+      "answers": [
+        {
+          "text": "De plata",
+          "isCorrect": false
+        },
+        {
+          "text": "De metal",
+          "isCorrect": false
+        },
+        {
+          "text": "De oro",
+          "isCorrect": true
+        },
+        {
+          "text": "De madera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas cortinas de pelo de cabras hizo para la tienda sobre el tabernáculo?",
+      "explanation": "Éxodo 36:14 dice que hizo cortinas de pelo de cabras para la tienda sobre el tabernáculo, en número de once.",
+      "bibleReference": "Éxodo 36:14",
+      "answers": [
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Once",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué hizo la cubierta de la tienda y la cubierta de encima?",
+      "explanation": "Éxodo 36:19 dice que hizo una cubierta para la tienda de cueros rojos de carneros y una cubierta encima de cueros de tejones.",
+      "bibleReference": "Éxodo 36:19",
+      "answers": [
+        {
+          "text": "De lino torcido y de jacinto",
+          "isCorrect": false
+        },
+        {
+          "text": "De pelo de cabras y de lino fino",
+          "isCorrect": false
+        },
+        {
+          "text": "De cueros rojos de carneros y de tejones",
+          "isCorrect": true
+        },
+        {
+          "text": "De planchas de oro y de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas columnas hizo para el velo de cárdeno, púrpura y carmesí?",
+      "explanation": "Éxodo 36:36 dice que para el velo hizo cuatro columnas de madera de Sittim, cubiertas de oro, con cuatro basas de plata de fundición.",
+      "bibleReference": "Éxodo 36:35-36",
+      "answers": [
+        {
+          "text": "Cinco columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro columnas",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

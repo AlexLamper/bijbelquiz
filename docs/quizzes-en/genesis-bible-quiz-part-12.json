@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 12",
+  "description": "Ten questions on Genesis 12: God's call and promise to Abram, his journey through Canaan, and his stay in Egypt.",
+  "slug": "genesis-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Yahweh tell Abram to do?",
+      "explanation": "Yahweh told Abram to leave his country, his relatives and his father's house, and go to the land He would show him.",
+      "bibleReference": "Genesis 12:1",
+      "answers": [
+        {
+          "text": "Build a tower that reaches to the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "Leave his country for a land God would show him",
+          "isCorrect": true
+        },
+        {
+          "text": "Go down into Egypt and live there",
+          "isCorrect": false
+        },
+        {
+          "text": "Build a ship to escape the waters",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who would be blessed through Abram, according to God's promise?",
+      "explanation": "God said, \"All the families of the earth will be blessed through you.\"",
+      "bibleReference": "Genesis 12:3",
+      "answers": [
+        {
+          "text": "Only his own household",
+          "isCorrect": false
+        },
+        {
+          "text": "The kings of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "All the families of the earth",
+          "isCorrect": true
+        },
+        {
+          "text": "The people of Haran",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Abram when he departed from Haran?",
+      "explanation": "Abram was seventy-five years old when he departed from Haran.",
+      "bibleReference": "Genesis 12:4",
+      "answers": [
+        {
+          "text": "One hundred years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Sixty-five years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy-five years old",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which relative went with Abram?",
+      "explanation": "Abram took Sarai his wife and Lot his brother's son, and they went into the land of Canaan.",
+      "bibleReference": "Genesis 12:4-5",
+      "answers": [
+        {
+          "text": "Lot, his brother's son",
+          "isCorrect": true
+        },
+        {
+          "text": "Nahor, his brother",
+          "isCorrect": false
+        },
+        {
+          "text": "Terah, his father",
+          "isCorrect": false
+        },
+        {
+          "text": "Milcah, his sister-in-law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Abram go as he passed through the land?",
+      "explanation": "Abram passed through the land to the place of Shechem, to the oak of Moreh.",
+      "bibleReference": "Genesis 12:6",
+      "answers": [
+        {
+          "text": "Shechem, to the oak of Moreh",
+          "isCorrect": true
+        },
+        {
+          "text": "Sidon, by the great sea",
+          "isCorrect": false
+        },
+        {
+          "text": "Babel, by the high tower",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerar, by a deep well",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh promise when He appeared to Abram at Shechem?",
+      "explanation": "Yahweh appeared to Abram and said, \"I will give this land to your offspring.\" Abram built an altar there.",
+      "bibleReference": "Genesis 12:6-7",
+      "answers": [
+        {
+          "text": "A great city to rule",
+          "isCorrect": false
+        },
+        {
+          "text": "Victory over Pharaoh",
+          "isCorrect": false
+        },
+        {
+          "text": "Gold from Havilah",
+          "isCorrect": false
+        },
+        {
+          "text": "This land to his offspring",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Between which two places did Abram pitch his tent?",
+      "explanation": "Abram pitched his tent on the mountain east of Bethel, having Bethel on the west and Ai on the east.",
+      "bibleReference": "Genesis 12:8",
+      "answers": [
+        {
+          "text": "Sodom and Gomorrah",
+          "isCorrect": false
+        },
+        {
+          "text": "Babel and Erech",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel and Ai",
+          "isCorrect": true
+        },
+        {
+          "text": "Ur and Haran",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why did Abram go down into Egypt?",
+      "explanation": "There was a famine in the land, and Abram went down into Egypt because the famine was severe.",
+      "bibleReference": "Genesis 12:10",
+      "answers": [
+        {
+          "text": "There was a war in Canaan",
+          "isCorrect": false
+        },
+        {
+          "text": "There was a severe famine",
+          "isCorrect": true
+        },
+        {
+          "text": "Pharaoh had invited him",
+          "isCorrect": false
+        },
+        {
+          "text": "His tent was destroyed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Abram ask Sarai to say in Egypt?",
+      "explanation": "Abram asked Sarai to say that she was his sister, so that it would be well with him and his life would be spared.",
+      "bibleReference": "Genesis 12:13",
+      "answers": [
+        {
+          "text": "That she was his servant",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was his sister",
+          "isCorrect": true
+        },
+        {
+          "text": "That she was a widow",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was Lot's wife",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh do to Pharaoh and his house because of Sarai?",
+      "explanation": "Yahweh afflicted Pharaoh and his house with great plagues because of Sarai, Abram's wife.",
+      "bibleReference": "Genesis 12:17",
+      "answers": [
+        {
+          "text": "He struck them with blindness",
+          "isCorrect": false
+        },
+        {
+          "text": "He took away their kingdom",
+          "isCorrect": false
+        },
+        {
+          "text": "He afflicted them with great plagues",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent a flood on Egypt",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

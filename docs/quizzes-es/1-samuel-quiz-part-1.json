@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre 1 Samuel 1: Elcana y sus dos mujeres, la oración de Anna en Silo y el nacimiento de Samuel.",
+  "slug": "1-samuel-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaban las dos mujeres de Elcana?",
+      "explanation": "Elcana tenía dos mujeres: el nombre de la una era Anna y el nombre de la otra Peninna.",
+      "bibleReference": "1 Samuel 1:2",
+      "answers": [
+        {
+          "text": "Anna y Peninna",
+          "isCorrect": true
+        },
+        {
+          "text": "Anna y Noemi",
+          "isCorrect": false
+        },
+        {
+          "text": "Peninna y Ruth",
+          "isCorrect": false
+        },
+        {
+          "text": "Anna y Mara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuál de las dos mujeres no tenía hijos?",
+      "explanation": "Peninna tenía hijos, mas Anna no los tenía.",
+      "bibleReference": "1 Samuel 1:2",
+      "answers": [
+        {
+          "text": "Peninna",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dos tenían hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Anna",
+          "isCorrect": true
+        },
+        {
+          "text": "Ninguna de las dos tenía hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde subía Elcana todos los años a adorar y sacrificar a Jehová de los ejércitos?",
+      "explanation": "Aquel varón subía todos los años de su ciudad a adorar y sacrificar a Jehová de los ejércitos en Silo.",
+      "bibleReference": "1 Samuel 1:3",
+      "answers": [
+        {
+          "text": "A Ramathaim de Sophim",
+          "isCorrect": false
+        },
+        {
+          "text": "A Silo",
+          "isCorrect": true
+        },
+        {
+          "text": "A Beth-lehem de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaban los dos hijos de Eli que eran sacerdotes de Jehová?",
+      "explanation": "En Silo estaban los dos hijos de Eli, Ophni y Phinees, sacerdotes de Jehová.",
+      "bibleReference": "1 Samuel 1:3",
+      "answers": [
+        {
+          "text": "Jeroham y Eliú",
+          "isCorrect": false
+        },
+        {
+          "text": "Thohu y Suph",
+          "isCorrect": false
+        },
+        {
+          "text": "Samuel y Elcana",
+          "isCorrect": false
+        },
+        {
+          "text": "Ophni y Phinees",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Elcana a Anna cuando ella lloraba y no comía?",
+      "explanation": "Elcana su marido le preguntó por qué lloraba, por qué no comía y por qué estaba afligido su corazón, y le dijo: ¿No te soy yo mejor que diez hijos?",
+      "bibleReference": "1 Samuel 1:8",
+      "answers": [
+        {
+          "text": "¿No te soy yo mejor que diez hijos?",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová te otorgue tu petición",
+          "isCorrect": false
+        },
+        {
+          "text": "No llores más, que Jehová te oirá",
+          "isCorrect": false
+        },
+        {
+          "text": "Ve en paz a la casa de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prometió Anna en su voto si Jehová le daba un hijo varón?",
+      "explanation": "Hizo voto de que, si Jehová le daba un hijo varón, ella lo dedicaría a Jehová todos los días de su vida y no subiría navaja sobre su cabeza.",
+      "bibleReference": "1 Samuel 1:11",
+      "answers": [
+        {
+          "text": "Llevarlo cada año a sacrificar en Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dedicarlo a Jehová todos los días de su vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Llevarlo a Eli para que fuese sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Darle una túnica pequeña cada año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué reprendió Eli a Anna mientras ella oraba?",
+      "explanation": "Anna hablaba en su corazón y solamente se movían sus labios, y su voz no se oía, por lo que Eli la tuvo por borracha.",
+      "bibleReference": "1 Samuel 1:13-14",
+      "answers": [
+        {
+          "text": "Porque oraba en voz muy alta",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no había comido ni bebido",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la tuvo por borracha",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque estaba sentada en su silla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Eli después de oír lo que Anna le dijo?",
+      "explanation": "Eli respondió: Ve en paz, y el Dios de Israel te otorgue la petición que le has hecho.",
+      "bibleReference": "1 Samuel 1:17",
+      "answers": [
+        {
+          "text": "Vuélvete a tu casa en Ramatha con tu marido",
+          "isCorrect": false
+        },
+        {
+          "text": "Haz lo que bien te pareciere, hija mía",
+          "isCorrect": false
+        },
+        {
+          "text": "No tengas a tu sierva por mujer impía",
+          "isCorrect": false
+        },
+        {
+          "text": "Ve en paz, y el Dios de Israel te otorgue tu petición",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué le puso Anna por nombre Samuel al niño que parió?",
+      "explanation": "Después de haber concebido, Anna parió un hijo y le puso por nombre Samuel, diciendo: Por cuanto lo demandé a Jehová.",
+      "bibleReference": "1 Samuel 1:20",
+      "answers": [
+        {
+          "text": "Porque así se llamaba el padre de Elcana",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque dijo: Por cuanto lo demandé a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque nació en la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Eli le dio ese nombre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevó Anna consigo cuando trajo al niño a la casa de Jehová en Silo?",
+      "explanation": "Después que lo hubo destetado, lo llevó consigo con tres becerros, un epha de harina y una vasija de vino, y lo trajo a la casa de Jehová en Silo.",
+      "bibleReference": "1 Samuel 1:24",
+      "answers": [
+        {
+          "text": "Un ephod de lino y una túnica pequeña",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez panes, vino y un odre de sidra",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres becerros, un epha de harina y una vasija de vino",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos asnos cargados de cebada y harina",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

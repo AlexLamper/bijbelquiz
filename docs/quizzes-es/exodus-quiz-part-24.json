@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Éxodo 24: el pueblo acepta las palabras de Jehová, la sangre de la alianza y Moisés cuarenta días en el monte.",
+  "slug": "exodus-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A cuántos de los ancianos de Israel debía llevar Moisés al subir?",
+      "explanation": "Se le manda subir con Aarón, Nadab, Abiú y setenta de los ancianos de Israel, que se inclinarían desde lejos.",
+      "bibleReference": "Éxodo 24:1",
+      "answers": [
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el pueblo cuando Moisés le contó todas las palabras de Jehová?",
+      "explanation": "Todo el pueblo respondió a una voz: Ejecutaremos todas las palabras que Jehová ha dicho.",
+      "bibleReference": "Éxodo 24:3",
+      "answers": [
+        {
+          "text": "Que consultarían primero a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Moisés hablara con Jehová por ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no se atrevían a oír esas palabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Ejecutaremos todas las palabras que Jehová ha dicho",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué levantó Moisés junto al altar al pie del monte?",
+      "explanation": "Moisés edificó un altar al pie del monte y doce columnas, según las doce tribus de Israel.",
+      "bibleReference": "Éxodo 24:4",
+      "answers": [
+        {
+          "text": "Doce columnas",
+          "isCorrect": true
+        },
+        {
+          "text": "Un candelero de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Una tienda de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete lámparas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde esparció Moisés la otra mitad de la sangre?",
+      "explanation": "Moisés puso la mitad de la sangre en tazones y esparció la otra mitad sobre el altar.",
+      "bibleReference": "Éxodo 24:6",
+      "answers": [
+        {
+          "text": "Sobre las doce columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "En la puerta del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre las tablas de piedra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué leyó Moisés a oídos del pueblo?",
+      "explanation": "Moisés tomó el libro de la alianza y lo leyó a oídos del pueblo, que dijo: Haremos todas las cosas que Jehová ha dicho, y obedeceremos.",
+      "bibleReference": "Éxodo 24:7",
+      "answers": [
+        {
+          "text": "Las dos tablas del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "El libro de la alianza",
+          "isCorrect": true
+        },
+        {
+          "text": "La lista de las doce tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "El cántico de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre quién roció Moisés la sangre llamándola la sangre de la alianza?",
+      "explanation": "Moisés tomó la sangre y la roció sobre el pueblo, diciendo: He aquí la sangre de la alianza que Jehová ha hecho con vosotros.",
+      "bibleReference": "Éxodo 24:8",
+      "answers": [
+        {
+          "text": "Sobre el pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre Aarón y sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las doce columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los setenta ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había debajo de los pies del Dios de Israel?",
+      "explanation": "Vieron al Dios de Israel, y debajo de sus pies había como un embaldosado de zafiro, semejante al cielo cuando está sereno.",
+      "bibleReference": "Éxodo 24:10",
+      "answers": [
+        {
+          "text": "Una nube muy espesa",
+          "isCorrect": false
+        },
+        {
+          "text": "Un fuego abrasador",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mar de metal fundido",
+          "isCorrect": false
+        },
+        {
+          "text": "Un embaldosado de zafiro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo, ¿qué era Josué para Moisés?",
+      "explanation": "El versículo dice: Y levantóse Moisés, y Josué su ministro; y Moisés subió al monte de Dios.",
+      "bibleReference": "Éxodo 24:13",
+      "answers": [
+        {
+          "text": "Su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Uno de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Su ministro",
+          "isCorrect": true
+        },
+        {
+          "text": "Un sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días cubrió la nube el monte antes de que Jehová llamara a Moisés?",
+      "explanation": "La gloria de Jehová reposó sobre el monte Sinaí y la nube lo cubrió por seis días; al séptimo día llamó a Moisés de en medio de la nube.",
+      "bibleReference": "Éxodo 24:16",
+      "answers": [
+        {
+          "text": "Seis días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvo Moisés en el monte?",
+      "explanation": "Moisés entró en medio de la nube y subió al monte, y estuvo allí cuarenta días y cuarenta noches.",
+      "bibleReference": "Éxodo 24:18",
+      "answers": [
+        {
+          "text": "Seis días y seis noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días y cuarenta noches",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete días y siete noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mes entero",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

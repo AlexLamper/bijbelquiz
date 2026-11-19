@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Bible Quiz - Chapter 12",
+  "description": "Ten questions on 2 Samuel 12: Nathan's parable, David's confession, the death of the child, and the birth of Solomon.",
+  "slug": "2-samuel-bible-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Whom did Yahweh send to David?",
+      "explanation": "2 Samuel 12:1 says Yahweh sent Nathan to David.",
+      "bibleReference": "2 Samuel 12:1",
+      "answers": [
+        {
+          "text": "Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Nathan",
+          "isCorrect": true
+        },
+        {
+          "text": "Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Zadok",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In Nathan's story, what did the poor man have?",
+      "explanation": "The poor man had nothing except one little ewe lamb, which he had bought and raised.",
+      "bibleReference": "2 Samuel 12:3",
+      "answers": [
+        {
+          "text": "A small field",
+          "isCorrect": false
+        },
+        {
+          "text": "Two donkeys",
+          "isCorrect": false
+        },
+        {
+          "text": "A flock of goats",
+          "isCorrect": false
+        },
+        {
+          "text": "One little ewe lamb",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did David say the rich man must restore the lamb?",
+      "explanation": "David said, \"He must restore the lamb fourfold, because he did this thing, and because he had no pity!\"",
+      "bibleReference": "2 Samuel 12:5-6",
+      "answers": [
+        {
+          "text": "Fourfold",
+          "isCorrect": true
+        },
+        {
+          "text": "Twofold",
+          "isCorrect": false
+        },
+        {
+          "text": "Sevenfold",
+          "isCorrect": false
+        },
+        {
+          "text": "Tenfold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Nathan say to David after David judged the rich man?",
+      "explanation": "Nathan said to David, \"You are the man.\"",
+      "bibleReference": "2 Samuel 12:7",
+      "answers": [
+        {
+          "text": "\"The man has already died.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The man is your servant.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"You are the man.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Yahweh will judge the man.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh say would never depart from David's house?",
+      "explanation": "Nathan said, \"Now therefore the sword will never depart from your house.\"",
+      "bibleReference": "2 Samuel 12:10",
+      "answers": [
+        {
+          "text": "The famine",
+          "isCorrect": false
+        },
+        {
+          "text": "The plague",
+          "isCorrect": false
+        },
+        {
+          "text": "The darkness",
+          "isCorrect": false
+        },
+        {
+          "text": "The sword",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did David say to Nathan after hearing Yahweh's word?",
+      "explanation": "David said to Nathan, \"I have sinned against Yahweh.\"",
+      "bibleReference": "2 Samuel 12:13",
+      "answers": [
+        {
+          "text": "\"The woman tempted me.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I have sinned against Yahweh.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Joab killed Uriah, not I.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I am the king; who can judge me?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On which day did the child die?",
+      "explanation": "On the seventh day, the child died.",
+      "bibleReference": "2 Samuel 12:18",
+      "answers": [
+        {
+          "text": "On the third day",
+          "isCorrect": false
+        },
+        {
+          "text": "On the fortieth day",
+          "isCorrect": false
+        },
+        {
+          "text": "On the seventh day",
+          "isCorrect": true
+        },
+        {
+          "text": "On the first day",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did David say about his dead child?",
+      "explanation": "David said, \"I will go to him, but he will not return to me.\"",
+      "bibleReference": "2 Samuel 12:23",
+      "answers": [
+        {
+          "text": "\"I will go to him, but he will not return to me.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Yahweh will raise him up again.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will fast until he lives again.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He will reign after me.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name was Solomon given through Nathan the prophet?",
+      "explanation": "He sent by the hand of Nathan the prophet, and he named him Jedidiah, for Yahweh's sake.",
+      "bibleReference": "2 Samuel 12:24-25",
+      "answers": [
+        {
+          "text": "Jehoiada",
+          "isCorrect": false
+        },
+        {
+          "text": "Jedidiah",
+          "isCorrect": true
+        },
+        {
+          "text": "Ichabod",
+          "isCorrect": false
+        },
+        {
+          "text": "Jeroboam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the weight of the crown taken from the king of Rabbah?",
+      "explanation": "He took the crown of their king from off his head; its weight was a talent of gold, with precious stones in it, and it was set on David's head.",
+      "bibleReference": "2 Samuel 12:29-30",
+      "answers": [
+        {
+          "text": "A talent of gold",
+          "isCorrect": true
+        },
+        {
+          "text": "A hundred shekels of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "A talent of bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty shekels of gold",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

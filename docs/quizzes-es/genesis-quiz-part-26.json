@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Génesis 26: Isaac en Gerar, los pozos que volvió a abrir y la alianza con Abimelech.",
+  "slug": "genesis-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A dónde fue Isaac cuando hubo hambre en la tierra?",
+      "explanation": "Hubo hambre en la tierra, e Isaac se fue á Abimelech rey de los Filisteos, en Gerar.",
+      "bibleReference": "Génesis 26:1",
+      "answers": [
+        {
+          "text": "A Egipto, por causa del hambre",
+          "isCorrect": false
+        },
+        {
+          "text": "A Gerar, con Abimelech",
+          "isCorrect": true
+        },
+        {
+          "text": "A Harán, con Labán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Beth-el, donde había un altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Jehová la simiente que daría a Isaac?",
+      "explanation": "Jehová le prometió multiplicar su simiente como las estrellas del cielo y darle todas aquellas tierras.",
+      "bibleReference": "Génesis 26:4",
+      "answers": [
+        {
+          "text": "Con la arena del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el polvo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las hojas del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Isaac a los hombres del lugar cuando le preguntaron acerca de su mujer?",
+      "explanation": "Isaac respondió: Es mi hermana, porque tuvo miedo de decir que era su mujer.",
+      "bibleReference": "Génesis 26:7",
+      "answers": [
+        {
+          "text": "Que era su hermana",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era su mujer",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era su sierva",
+          "isCorrect": false
+        },
+        {
+          "text": "No les respondió nada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo descubrió Abimelech que Rebeca era la mujer de Isaac?",
+      "explanation": "Abimelech, mirando por una ventana, vio á Isaac que jugaba con Rebeca su mujer.",
+      "bibleReference": "Génesis 26:8",
+      "answers": [
+        {
+          "text": "Un criado se lo contó",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios se lo dijo en un sueño",
+          "isCorrect": false
+        },
+        {
+          "text": "Mirando por una ventana",
+          "isCorrect": true
+        },
+        {
+          "text": "Rebeca misma se lo confesó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Abimelech a todo el pueblo acerca de Isaac y su mujer?",
+      "explanation": "Abimelech mandó que el que tocare á aquel hombre ó á su mujer, de cierto moriría.",
+      "bibleReference": "Génesis 26:11",
+      "answers": [
+        {
+          "text": "Que los echaran de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quien los tocara moriría",
+          "isCorrect": true
+        },
+        {
+          "text": "Que les dieran casa y pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie les vendiera agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto halló Isaac aquel año cuando sembró en aquella tierra?",
+      "explanation": "Isaac sembró en aquella tierra y halló aquel año ciento por uno, y Jehová le bendijo.",
+      "bibleReference": "Génesis 26:12",
+      "answers": [
+        {
+          "text": "Ciento por uno",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez por uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta por uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta por uno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué habían hecho los Filisteos con los pozos que los criados de Abraham habían abierto?",
+      "explanation": "Los Filisteos habían cegado esos pozos y los habían llenado de tierra.",
+      "bibleReference": "Génesis 26:15",
+      "answers": [
+        {
+          "text": "Los habían vendido a los pastores de Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "Los habían cercado con piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Los habían cegado y llenado de tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Les habían puesto otros nombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál es el pozo del que Isaac dijo: \"Porque ahora nos ha hecho ensanchar Jehová\"?",
+      "explanation": "Isaac llamó ese pozo Rehoboth, porque dijo que ahora Jehová les había hecho ensanchar.",
+      "bibleReference": "Génesis 26:22",
+      "answers": [
+        {
+          "text": "El pozo llamado Esek",
+          "isCorrect": false
+        },
+        {
+          "text": "El pozo llamado Sitnah",
+          "isCorrect": false
+        },
+        {
+          "text": "El pozo llamado Seba",
+          "isCorrect": false
+        },
+        {
+          "text": "El pozo llamado Rehoboth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Isaac en Beer-seba después de que Jehová se le apareció aquella noche?",
+      "explanation": "Isaac edificó allí un altar é invocó el nombre de Jehová, y tendió allí su tienda.",
+      "bibleReference": "Génesis 26:24-25",
+      "answers": [
+        {
+          "text": "Volvió enseguida a Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó un altar e invocó el nombre de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Hizo un banquete para Abimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Levantó una piedra por título",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quiénes se casó Esaú cuando tuvo cuarenta años?",
+      "explanation": "Esaú tomó por mujer á Judith hija de Beeri Hetheo, y á Basemat hija de Elón Hetheo.",
+      "bibleReference": "Génesis 26:34",
+      "answers": [
+        {
+          "text": "Con Judith y con Basemat",
+          "isCorrect": true
+        },
+        {
+          "text": "Con Mahaleth, hija de Ismael",
+          "isCorrect": false
+        },
+        {
+          "text": "Con dos hijas de Labán",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una hija de Abimelech",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

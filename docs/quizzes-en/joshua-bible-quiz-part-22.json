@@ -1,0 +1,242 @@
+{
+  "title": "Joshua Bible Quiz - Chapter 22",
+  "description": "Ten questions on Joshua 22: the eastern tribes return home and build an altar by the Jordan.",
+  "slug": "joshua-bible-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Which tribes did Joshua call at the start of this chapter?",
+      "explanation": "Joshua 22:1 says Joshua called the Reubenites, the Gadites and the half-tribe of Manasseh.",
+      "bibleReference": "Joshua 22:1",
+      "answers": [
+        {
+          "text": "Reuben, Gad and the half-tribe of Manasseh",
+          "isCorrect": true
+        },
+        {
+          "text": "Judah, Benjamin and the tribe of Simeon",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim, Dan and the tribe of Asher",
+          "isCorrect": false
+        },
+        {
+          "text": "Issachar, Zebulun and Naphtali",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where had Moses given one half-tribe of Manasseh its inheritance?",
+      "explanation": "Joshua 22:7 says Moses had given the one half-tribe of Manasseh inheritance in Bashan.",
+      "bibleReference": "Joshua 22:7",
+      "answers": [
+        {
+          "text": "In Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "In the Negev",
+          "isCorrect": false
+        },
+        {
+          "text": "Near Tyre",
+          "isCorrect": false
+        },
+        {
+          "text": "In Bashan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Joshua tell them to do with the plunder of their enemies?",
+      "explanation": "In Joshua 22:8 Joshua says, \"Divide the plunder of your enemies with your brothers.\"",
+      "bibleReference": "Joshua 22:8",
+      "answers": [
+        {
+          "text": "Burn it before Yahweh",
+          "isCorrect": false
+        },
+        {
+          "text": "Divide it with their brothers",
+          "isCorrect": true
+        },
+        {
+          "text": "Give it all to the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "Leave it at Shiloh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Reuben, Gad and the half-tribe of Manasseh build by the Jordan?",
+      "explanation": "Joshua 22:10 says they built an altar by the Jordan, a great altar to look at.",
+      "bibleReference": "Joshua 22:10",
+      "answers": [
+        {
+          "text": "A watchtower",
+          "isCorrect": false
+        },
+        {
+          "text": "A walled city",
+          "isCorrect": false
+        },
+        {
+          "text": "A great altar",
+          "isCorrect": true
+        },
+        {
+          "text": "A stone bridge",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was sent to the land of Gilead to speak with them?",
+      "explanation": "Joshua 22:13 says the children of Israel sent Phinehas the son of Eleazar the priest.",
+      "bibleReference": "Joshua 22:13",
+      "answers": [
+        {
+          "text": "Joshua the son of Nun",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinehas the son of Eleazar",
+          "isCorrect": true
+        },
+        {
+          "text": "Caleb the son of Jephunneh",
+          "isCorrect": false
+        },
+        {
+          "text": "Achan the son of Zerah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many princes went with him?",
+      "explanation": "Joshua 22:14 says ten princes went with him, one prince of a fathers' house for each of the tribes of Israel.",
+      "bibleReference": "Joshua 22:14",
+      "answers": [
+        {
+          "text": "Twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "The delegation recalled \"the iniquity of\" which place?",
+      "explanation": "In Joshua 22:17 they ask, \"Is the iniquity of Peor too little for us?\"",
+      "bibleReference": "Joshua 22:17",
+      "answers": [
+        {
+          "text": "Peor",
+          "isCorrect": true
+        },
+        {
+          "text": "Ai",
+          "isCorrect": false
+        },
+        {
+          "text": "Jericho",
+          "isCorrect": false
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose trespass in the devoted thing did the delegation mention?",
+      "explanation": "Joshua 22:20 asks whether Achan the son of Zerah did not commit a trespass in the devoted thing.",
+      "bibleReference": "Joshua 22:20",
+      "answers": [
+        {
+          "text": "Bohan the son of Reuben",
+          "isCorrect": false
+        },
+        {
+          "text": "Balak the son of Zippor",
+          "isCorrect": false
+        },
+        {
+          "text": "Achan the son of Zerah",
+          "isCorrect": true
+        },
+        {
+          "text": "Nahor the son of Terah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After hearing their answer, what did Phinehas say they now knew?",
+      "explanation": "In Joshua 22:31 Phinehas says, \"Today we know that Yahweh is among us.\"",
+      "bibleReference": "Joshua 22:31",
+      "answers": [
+        {
+          "text": "That the altar must be torn down",
+          "isCorrect": false
+        },
+        {
+          "text": "That the tribes must leave Gilead",
+          "isCorrect": false
+        },
+        {
+          "text": "That war could not be avoided",
+          "isCorrect": false
+        },
+        {
+          "text": "That Yahweh is among us",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What name did Reuben and Gad give the altar?",
+      "explanation": "Joshua 22:34 says they named the altar \"A Witness Between Us that Yahweh is God.\"",
+      "bibleReference": "Joshua 22:34",
+      "answers": [
+        {
+          "text": "\"A Witness Between Us that Yahweh is God\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The Altar of the Three Tribes by the Jordan\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"A Memorial of the Crossing of the Jordan\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The Stone of Help Between the Tribes\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

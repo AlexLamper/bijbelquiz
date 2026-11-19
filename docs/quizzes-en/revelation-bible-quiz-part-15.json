@@ -1,0 +1,242 @@
+{
+  "title": "Revelation Bible Quiz - Chapter 15",
+  "description": "Ten questions on Revelation 15: the sign of the seven angels, the song of Moses and the Lamb, and the seven golden bowls.",
+  "slug": "revelation-bible-quiz-part-15",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the seven angels in the great and marvelous sign have?",
+      "explanation": "The narrator saw seven angels having the seven last plagues, for in them God’s wrath is finished.",
+      "bibleReference": "Revelation 15:1",
+      "answers": [
+        {
+          "text": "The seven trumpets",
+          "isCorrect": false
+        },
+        {
+          "text": "The seven last plagues",
+          "isCorrect": true
+        },
+        {
+          "text": "The seven seals",
+          "isCorrect": false
+        },
+        {
+          "text": "The seven thunders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the sea that the narrator saw look like?",
+      "explanation": "He saw something like a sea of glass mixed with fire.",
+      "bibleReference": "Revelation 15:2",
+      "answers": [
+        {
+          "text": "Like blood of a dead man",
+          "isCorrect": false
+        },
+        {
+          "text": "Like a burning mountain",
+          "isCorrect": false
+        },
+        {
+          "text": "Like glass mixed with fire",
+          "isCorrect": true
+        },
+        {
+          "text": "Like springs of living water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did those who overcame the beast have as they stood on the sea of glass?",
+      "explanation": "Those who overcame the beast, his image and the number of his name stood on the sea of glass, having harps of God.",
+      "bibleReference": "Revelation 15:2",
+      "answers": [
+        {
+          "text": "Harps of God",
+          "isCorrect": true
+        },
+        {
+          "text": "Palm branches",
+          "isCorrect": false
+        },
+        {
+          "text": "Golden sashes",
+          "isCorrect": false
+        },
+        {
+          "text": "Long white robes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two songs did they sing?",
+      "explanation": "They sang the song of Moses, the servant of God, and the song of the Lamb.",
+      "bibleReference": "Revelation 15:3",
+      "answers": [
+        {
+          "text": "A new song that no one else could learn",
+          "isCorrect": false
+        },
+        {
+          "text": "The song of the elders and of the living creatures",
+          "isCorrect": false
+        },
+        {
+          "text": "The song of the prophets and of the saints",
+          "isCorrect": false
+        },
+        {
+          "text": "The song of Moses and the song of the Lamb",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What do they call the ways of the Lord God in their song?",
+      "explanation": "They sing, “Great and marvelous are your works, Lord God, the Almighty! Righteous and true are your ways, you King of the nations.”",
+      "bibleReference": "Revelation 15:3",
+      "answers": [
+        {
+          "text": "Hidden and deep",
+          "isCorrect": false
+        },
+        {
+          "text": "Holy and marvelous",
+          "isCorrect": false
+        },
+        {
+          "text": "Righteous and true",
+          "isCorrect": true
+        },
+        {
+          "text": "Mighty and terrible",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to the song, what has been revealed?",
+      "explanation": "The song says, “For you only are holy. For all the nations will come and worship before you. For your righteous acts have been revealed.”",
+      "bibleReference": "Revelation 15:4",
+      "answers": [
+        {
+          "text": "The mystery of God",
+          "isCorrect": false
+        },
+        {
+          "text": "His righteous acts",
+          "isCorrect": true
+        },
+        {
+          "text": "The number of his name",
+          "isCorrect": false
+        },
+        {
+          "text": "The words of the thunders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was opened in heaven after these things?",
+      "explanation": "The narrator looked, and the temple of the tabernacle of the testimony in heaven was opened.",
+      "bibleReference": "Revelation 15:5",
+      "answers": [
+        {
+          "text": "The pit of the abyss in the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "The book of life of the Lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "The seventh seal of the little book",
+          "isCorrect": false
+        },
+        {
+          "text": "The temple of the tabernacle of the testimony",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How were the seven angels with the seven plagues clothed?",
+      "explanation": "They came out clothed with pure, bright linen, and wearing golden sashes around their breasts.",
+      "bibleReference": "Revelation 15:6",
+      "answers": [
+        {
+          "text": "In pure, bright linen with golden sashes",
+          "isCorrect": true
+        },
+        {
+          "text": "In sackcloth, as the two witnesses",
+          "isCorrect": false
+        },
+        {
+          "text": "In long white robes washed in blood",
+          "isCorrect": false
+        },
+        {
+          "text": "In purple and scarlet with gold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who gave the seven angels the seven golden bowls?",
+      "explanation": "One of the four living creatures gave to the seven angels seven golden bowls full of the wrath of God, who lives forever and ever.",
+      "bibleReference": "Revelation 15:7",
+      "answers": [
+        {
+          "text": "One of the twenty-four elders",
+          "isCorrect": false
+        },
+        {
+          "text": "The Lamb on the throne",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the four living creatures",
+          "isCorrect": true
+        },
+        {
+          "text": "The angel of the waters",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What filled the temple, so that no one was able to enter it?",
+      "explanation": "The temple was filled with smoke from the glory of God and from his power, and no one was able to enter until the seven plagues of the seven angels would be finished.",
+      "bibleReference": "Revelation 15:8",
+      "answers": [
+        {
+          "text": "Smoke from the glory and the power of God",
+          "isCorrect": true
+        },
+        {
+          "text": "The wrath of God from seven bowls",
+          "isCorrect": false
+        },
+        {
+          "text": "A cloud with a rainbow in it",
+          "isCorrect": false
+        },
+        {
+          "text": "The incense of the prayers of the saints",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

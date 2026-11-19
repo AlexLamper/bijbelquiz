@@ -1,0 +1,242 @@
+{
+  "title": "James Bible Quiz - Chapter 2",
+  "description": "Ten questions on James 2: partiality in the assembly, the royal law, mercy over judgment, and faith without works.",
+  "slug": "james-bible-quiz-part-2",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How does verse 1 say not to hold the faith of our Lord Jesus Christ?",
+      "explanation": "Verse 1 says: my brothers, do not hold the faith of our Lord Jesus Christ of glory with partiality.",
+      "bibleReference": "James 2:1",
+      "answers": [
+        {
+          "text": "With doubting",
+          "isCorrect": false
+        },
+        {
+          "text": "Only in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "With partiality",
+          "isCorrect": true
+        },
+        {
+          "text": "With a loud voice",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In the example, what does the man in fine clothing also wear?",
+      "explanation": "Verse 2 describes a man with a gold ring, in fine clothing, who comes into your synagogue, while a poor man in filthy clothing also comes in.",
+      "bibleReference": "James 2:2",
+      "answers": [
+        {
+          "text": "A gold ring",
+          "isCorrect": true
+        },
+        {
+          "text": "A crown",
+          "isCorrect": false
+        },
+        {
+          "text": "Sandals of gold",
+          "isCorrect": false
+        },
+        {
+          "text": "A fine turban",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did God choose to be rich in faith and heirs of the Kingdom?",
+      "explanation": "Verse 5 asks whether God did not choose those who are poor in this world to be rich in faith, and heirs of the Kingdom which he promised to those who love him.",
+      "bibleReference": "James 2:5",
+      "answers": [
+        {
+          "text": "Those who keep the whole law",
+          "isCorrect": false
+        },
+        {
+          "text": "The teachers of the assembly",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who have great possessions",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who are poor in this world",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What does the royal law according to the Scripture say?",
+      "explanation": "Verse 8 says that if you fulfill the royal law according to the Scripture, \"You shall love your neighbor as yourself,\" you do well.",
+      "bibleReference": "James 2:8",
+      "answers": [
+        {
+          "text": "Honor your father and your mother",
+          "isCorrect": false
+        },
+        {
+          "text": "You shall love your neighbor as yourself",
+          "isCorrect": true
+        },
+        {
+          "text": "You shall not steal from the poor",
+          "isCorrect": false
+        },
+        {
+          "text": "Love mercy and walk humbly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 10 say about someone who keeps the whole law but stumbles in one point?",
+      "explanation": "Verse 10 says that whoever keeps the whole law and yet stumbles in one point has become guilty of all.",
+      "bibleReference": "James 2:10",
+      "answers": [
+        {
+          "text": "He is still counted as righteous",
+          "isCorrect": false
+        },
+        {
+          "text": "He must bring a sacrifice for sin",
+          "isCorrect": false
+        },
+        {
+          "text": "He has become guilty of all",
+          "isCorrect": true
+        },
+        {
+          "text": "He must be taught the law again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 13 say triumphs over judgment?",
+      "explanation": "Verse 13 says that judgment is without mercy to him who has shown no mercy, and that mercy triumphs over judgment.",
+      "bibleReference": "James 2:13",
+      "answers": [
+        {
+          "text": "Mercy",
+          "isCorrect": true
+        },
+        {
+          "text": "Faith",
+          "isCorrect": false
+        },
+        {
+          "text": "Works",
+          "isCorrect": false
+        },
+        {
+          "text": "The law",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is missing when someone tells a needy brother \"Go in peace. Be warmed and filled\"?",
+      "explanation": "Verses 15 and 16 describe a brother or sister naked and lacking daily food who is sent away with words, without being given the things the body needs.",
+      "bibleReference": "James 2:15-16",
+      "answers": [
+        {
+          "text": "A word of prayer",
+          "isCorrect": false
+        },
+        {
+          "text": "The things the body needs",
+          "isCorrect": true
+        },
+        {
+          "text": "A place in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "A share in the Kingdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who else, according to verse 19, believe that God is one, and shudder?",
+      "explanation": "Verse 19 says: you believe that God is one, you do well; the demons also believe, and shudder.",
+      "bibleReference": "James 2:19",
+      "answers": [
+        {
+          "text": "The rich",
+          "isCorrect": false
+        },
+        {
+          "text": "The teachers of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "The twelve tribes",
+          "isCorrect": false
+        },
+        {
+          "text": "The demons",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "By what does verse 21 say Abraham our father was justified?",
+      "explanation": "Verse 21 asks whether Abraham our father was not justified by works, in that he offered up Isaac his son on the altar.",
+      "bibleReference": "James 2:21",
+      "answers": [
+        {
+          "text": "By works",
+          "isCorrect": true
+        },
+        {
+          "text": "By faith alone, apart from works",
+          "isCorrect": false
+        },
+        {
+          "text": "By keeping the whole law",
+          "isCorrect": false
+        },
+        {
+          "text": "By the sacrifices of the priests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Rahab the prostitute do, according to verse 25?",
+      "explanation": "Verse 25 says that in the same way Rahab the prostitute was also justified by works, in that she received the messengers and sent them out another way.",
+      "bibleReference": "James 2:25",
+      "answers": [
+        {
+          "text": "She hid herself in her house until the city fell",
+          "isCorrect": false
+        },
+        {
+          "text": "She offered up her own son on the altar",
+          "isCorrect": false
+        },
+        {
+          "text": "She received the messengers and sent them out another way",
+          "isCorrect": true
+        },
+        {
+          "text": "She gave food and clothing to a poor man",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

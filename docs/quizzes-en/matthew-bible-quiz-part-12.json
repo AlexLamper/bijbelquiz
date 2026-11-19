@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 12",
+  "description": "Ten questions on Matthew 12: grain plucked on the Sabbath, the withered hand healed, the charge about Beelzebul and the sign of Jonah.",
+  "slug": "matthew-bible-quiz-part-12",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the disciples do on the Sabbath that the Pharisees objected to?",
+      "explanation": "The disciples were hungry and began to pluck heads of grain and to eat, and the Pharisees said this was not lawful on the Sabbath.",
+      "bibleReference": "Matthew 12:1-2",
+      "answers": [
+        {
+          "text": "They healed a man's withered hand",
+          "isCorrect": false
+        },
+        {
+          "text": "They ate with unwashed hands",
+          "isCorrect": false
+        },
+        {
+          "text": "They plucked heads of grain and ate",
+          "isCorrect": true
+        },
+        {
+          "text": "They worked in the fields for hire",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whose example did Jesus bring up, of eating the show bread?",
+      "explanation": "Jesus asked whether they had read what David did when he was hungry, entering God's house and eating the show bread.",
+      "bibleReference": "Matthew 12:3-4",
+      "answers": [
+        {
+          "text": "David",
+          "isCorrect": true
+        },
+        {
+          "text": "Solomon",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonah",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Of what did Jesus say the Son of Man is Lord?",
+      "explanation": "Jesus said that the Son of Man is Lord of the Sabbath.",
+      "bibleReference": "Matthew 12:8",
+      "answers": [
+        {
+          "text": "The temple",
+          "isCorrect": false
+        },
+        {
+          "text": "The harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "The law and the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "The Sabbath",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus tell the man with the withered hand to do?",
+      "explanation": "He told the man to stretch out his hand, and it was restored whole, just like the other.",
+      "bibleReference": "Matthew 12:13",
+      "answers": [
+        {
+          "text": "Go and show himself to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "Stretch out his hand",
+          "isCorrect": true
+        },
+        {
+          "text": "Wash and come back",
+          "isCorrect": false
+        },
+        {
+          "text": "Say nothing to anyone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Pharisees do after the man's hand was healed?",
+      "explanation": "The Pharisees went out and conspired against him, how they might destroy him.",
+      "bibleReference": "Matthew 12:14",
+      "answers": [
+        {
+          "text": "They conspired how to destroy him",
+          "isCorrect": true
+        },
+        {
+          "text": "They followed him and were healed",
+          "isCorrect": false
+        },
+        {
+          "text": "They praised God for the healing",
+          "isCorrect": false
+        },
+        {
+          "text": "They brought him more sick people",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the Pharisees say he cast out demons?",
+      "explanation": "The Pharisees said he did not cast out demons except by Beelzebul, the prince of the demons.",
+      "bibleReference": "Matthew 12:24",
+      "answers": [
+        {
+          "text": "By the Spirit of God given to him",
+          "isCorrect": false
+        },
+        {
+          "text": "By the wisdom of Solomon the king",
+          "isCorrect": false
+        },
+        {
+          "text": "By Beelzebul, the prince of the demons",
+          "isCorrect": true
+        },
+        {
+          "text": "By the authority of the scribes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say happens to every kingdom divided against itself?",
+      "explanation": "He said every kingdom divided against itself is brought to desolation, and a divided city or house will not stand.",
+      "bibleReference": "Matthew 12:25",
+      "answers": [
+        {
+          "text": "It will stand forever",
+          "isCorrect": false
+        },
+        {
+          "text": "It is brought to desolation",
+          "isCorrect": true
+        },
+        {
+          "text": "It will be given to another",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be plundered by the strong man",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which blasphemy did Jesus say will not be forgiven?",
+      "explanation": "He said every sin and blasphemy will be forgiven men, but the blasphemy against the Spirit will not be forgiven.",
+      "bibleReference": "Matthew 12:31",
+      "answers": [
+        {
+          "text": "A word against the Son of Man",
+          "isCorrect": false
+        },
+        {
+          "text": "False vows made in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Every idle word men speak",
+          "isCorrect": false
+        },
+        {
+          "text": "Blasphemy against the Spirit",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Which sign did Jesus say would be given to this generation?",
+      "explanation": "He said no sign would be given to an evil and adulterous generation but the sign of Jonah the prophet.",
+      "bibleReference": "Matthew 12:39",
+      "answers": [
+        {
+          "text": "The sign of Isaiah the prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "A sign from heaven with power",
+          "isCorrect": false
+        },
+        {
+          "text": "The sign of Jonah the prophet",
+          "isCorrect": true
+        },
+        {
+          "text": "The sign of Solomon's wisdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Jesus call his brother, sister and mother?",
+      "explanation": "He said that whoever does the will of his Father who is in heaven is his brother, and sister, and mother.",
+      "bibleReference": "Matthew 12:50",
+      "answers": [
+        {
+          "text": "Whoever does the will of his Father",
+          "isCorrect": true
+        },
+        {
+          "text": "Those who stood outside seeking him",
+          "isCorrect": false
+        },
+        {
+          "text": "The men of Nineveh who repented",
+          "isCorrect": false
+        },
+        {
+          "text": "Those who heard the parables",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

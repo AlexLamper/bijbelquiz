@@ -1,0 +1,242 @@
+{
+  "title": "Daniel Bible Quiz - Chapter 2",
+  "description": "Ten questions on Daniel 2: the king's forgotten dream, the great image of gold, silver, bronze and iron, and the stone that filled the earth.",
+  "slug": "daniel-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "In which year of Nebuchadnezzar's reign did he dream the dreams that troubled him?",
+      "explanation": "In the second year of the reign of Nebuchadnezzar he dreamed dreams, his spirit was troubled, and his sleep went from him.",
+      "bibleReference": "Daniel 2:1",
+      "answers": [
+        {
+          "text": "The third year",
+          "isCorrect": false
+        },
+        {
+          "text": "The first year",
+          "isCorrect": false
+        },
+        {
+          "text": "The second year",
+          "isCorrect": true
+        },
+        {
+          "text": "The twelfth year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king threaten if the wise men did not make known the dream and its interpretation?",
+      "explanation": "The king said that if they did not make known the dream and its interpretation, they would be cut in pieces and their houses would be made a dunghill.",
+      "bibleReference": "Daniel 2:5",
+      "answers": [
+        {
+          "text": "They would be cut in pieces and their houses made a dunghill",
+          "isCorrect": true
+        },
+        {
+          "text": "They would be cast into a burning fiery furnace",
+          "isCorrect": false
+        },
+        {
+          "text": "They would be sent away from Babylon",
+          "isCorrect": false
+        },
+        {
+          "text": "They would be cast into the den of lions",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the Chaldeans say about who could show the king such a thing?",
+      "explanation": "They said it was a rare thing the king required, and that there was no other who could show it before the king except the gods, whose dwelling is not with flesh.",
+      "bibleReference": "Daniel 2:11",
+      "answers": [
+        {
+          "text": "Only the king himself could, if he remembered it",
+          "isCorrect": false
+        },
+        {
+          "text": "Only a prophet of the God of Israel could",
+          "isCorrect": false
+        },
+        {
+          "text": "Any Chaldean could, if given more time",
+          "isCorrect": false
+        },
+        {
+          "text": "No one, except the gods, whose dwelling is not with flesh",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who was the captain of the king's guard who had gone out to kill the wise men?",
+      "explanation": "Daniel answered with counsel and prudence to Arioch the captain of the king's guard, who had gone out to kill the wise men of Babylon.",
+      "bibleReference": "Daniel 2:14",
+      "answers": [
+        {
+          "text": "Ashpenaz",
+          "isCorrect": false
+        },
+        {
+          "text": "Arioch",
+          "isCorrect": true
+        },
+        {
+          "text": "Belteshazzar",
+          "isCorrect": false
+        },
+        {
+          "text": "Abednego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Daniel tell about the matter, so that they would ask mercies of the God of heaven?",
+      "explanation": "Daniel went to his house and made the thing known to his companions Hananiah, Mishael, and Azariah, so that they would ask mercies of the God of heaven concerning this secret.",
+      "bibleReference": "Daniel 2:17-18",
+      "answers": [
+        {
+          "text": "Hananiah, Mishael and Azariah",
+          "isCorrect": true
+        },
+        {
+          "text": "Arioch and the king's counselors",
+          "isCorrect": false
+        },
+        {
+          "text": "The magicians and the enchanters",
+          "isCorrect": false
+        },
+        {
+          "text": "The Chaldeans and the soothsayers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the secret revealed to Daniel?",
+      "explanation": "The secret was revealed to Daniel in a vision of the night, and then Daniel blessed the God of heaven.",
+      "bibleReference": "Daniel 2:19",
+      "answers": [
+        {
+          "text": "By a voice from the sky at noon",
+          "isCorrect": false
+        },
+        {
+          "text": "By a writing on the wall",
+          "isCorrect": false
+        },
+        {
+          "text": "In a vision of the night",
+          "isCorrect": true
+        },
+        {
+          "text": "By a man clothed in linen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Of what was the head of the great image made?",
+      "explanation": "The image's head was of fine gold, its breast and arms of silver, its belly and thighs of bronze.",
+      "bibleReference": "Daniel 2:32",
+      "answers": [
+        {
+          "text": "Silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Fine gold",
+          "isCorrect": true
+        },
+        {
+          "text": "Bronze",
+          "isCorrect": false
+        },
+        {
+          "text": "Iron mixed with clay",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What struck the image on its feet and broke them in pieces?",
+      "explanation": "A stone was cut out without hands and struck the image on its feet of iron and clay, breaking them in pieces.",
+      "bibleReference": "Daniel 2:34",
+      "answers": [
+        {
+          "text": "A great wind from the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "An iron rod from the sky",
+          "isCorrect": false
+        },
+        {
+          "text": "A flood of water",
+          "isCorrect": false
+        },
+        {
+          "text": "A stone cut out without hands",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Daniel say about the fourth kingdom?",
+      "explanation": "The fourth kingdom will be strong as iron, and as iron that crushes, it will break in pieces and crush.",
+      "bibleReference": "Daniel 2:40",
+      "answers": [
+        {
+          "text": "It will be the weakest of all the kingdoms",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be made wholly of potters' clay",
+          "isCorrect": false
+        },
+        {
+          "text": "It will be strong as iron, breaking in pieces and crushing",
+          "isCorrect": true
+        },
+        {
+          "text": "It will never rule outside Babylon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the king do for Daniel after he made the dream known?",
+      "explanation": "The king made Daniel great, gave him many great gifts, made him rule over the whole province of Babylon, and made him chief governor over all the wise men of Babylon.",
+      "bibleReference": "Daniel 2:48",
+      "answers": [
+        {
+          "text": "He made him ruler of the province of Babylon",
+          "isCorrect": true
+        },
+        {
+          "text": "He sent him back to Judah with gifts",
+          "isCorrect": false
+        },
+        {
+          "text": "He made him master of his eunuchs",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave him a chain of gold and nothing more",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

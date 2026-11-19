@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 6",
+  "description": "Ten questions on Esther 6: a sleepless night for the king, and Haman must honor Mordecai.",
+  "slug": "esther-bible-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the king command when he couldn't sleep?",
+      "explanation": "The king couldn't sleep, so he commanded the book of records of the chronicles to be brought and read to him.",
+      "bibleReference": "Esther 6:1",
+      "answers": [
+        {
+          "text": "That musicians come and play for him",
+          "isCorrect": false
+        },
+        {
+          "text": "That Queen Esther be called to him",
+          "isCorrect": false
+        },
+        {
+          "text": "That wine be brought to his room",
+          "isCorrect": false
+        },
+        {
+          "text": "That the book of records be brought and read",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whom had Mordecai told about, according to what was written?",
+      "explanation": "It was written that Mordecai had told of Bigthana and Teresh, two eunuchs who tried to lay hands on the king.",
+      "bibleReference": "Esther 6:2",
+      "answers": [
+        {
+          "text": "Haman and Hammedatha",
+          "isCorrect": false
+        },
+        {
+          "text": "Bigthana and Teresh",
+          "isCorrect": true
+        },
+        {
+          "text": "Hegai and Hathach",
+          "isCorrect": false
+        },
+        {
+          "text": "Carshena and Shethar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the servants say had been done for Mordecai?",
+      "explanation": "When the king asked what honor had been given to Mordecai, the servants said, \"Nothing has been done for him.\"",
+      "bibleReference": "Esther 6:3",
+      "answers": [
+        {
+          "text": "He had been given gold",
+          "isCorrect": false
+        },
+        {
+          "text": "He had been made a prince",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing had been done for him",
+          "isCorrect": true
+        },
+        {
+          "text": "He had been given a house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why had Haman come into the outer court?",
+      "explanation": "Haman had come to speak to the king about hanging Mordecai on the gallows he had prepared.",
+      "bibleReference": "Esther 6:4",
+      "answers": [
+        {
+          "text": "To speak about hanging Mordecai",
+          "isCorrect": true
+        },
+        {
+          "text": "To bring a gift for Esther",
+          "isCorrect": false
+        },
+        {
+          "text": "To report a plot against the king",
+          "isCorrect": false
+        },
+        {
+          "text": "To ask for more provinces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Haman say in his heart when the king asked about the man he delights to honor?",
+      "explanation": "Haman said in his heart, \"Who would the king delight to honor more than myself?\"",
+      "bibleReference": "Esther 6:6",
+      "answers": [
+        {
+          "text": "\"Surely the king means Mordecai the Jew.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"This question must be some kind of trap.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The queen must have spoken well of me.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Who would the king delight to honor more than myself?\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Haman suggest should be brought for the man the king delights to honor?",
+      "explanation": "Haman suggested royal clothing the king wears, and the horse the king rides on, with a royal crown set on its head.",
+      "bibleReference": "Esther 6:8",
+      "answers": [
+        {
+          "text": "A chest of silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "A house in Susa",
+          "isCorrect": false
+        },
+        {
+          "text": "Royal clothing and the king's own horse",
+          "isCorrect": true
+        },
+        {
+          "text": "A seat above all the princes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "For whom did the king tell Haman to do all this?",
+      "explanation": "The king told Haman to hurry and do this for Mordecai the Jew, who sits at the king's gate.",
+      "bibleReference": "Esther 6:10",
+      "answers": [
+        {
+          "text": "Haman himself",
+          "isCorrect": false
+        },
+        {
+          "text": "Mordecai the Jew",
+          "isCorrect": true
+        },
+        {
+          "text": "Hathach the eunuch",
+          "isCorrect": false
+        },
+        {
+          "text": "One of the noble princes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Haman go home after honoring Mordecai?",
+      "explanation": "Mordecai returned to the king's gate, but Haman hurried to his house, mourning and with his head covered.",
+      "bibleReference": "Esther 6:11-12",
+      "answers": [
+        {
+          "text": "Mourning, with his head covered",
+          "isCorrect": true
+        },
+        {
+          "text": "Joyful and glad of heart",
+          "isCorrect": false
+        },
+        {
+          "text": "Riding on the king's horse",
+          "isCorrect": false
+        },
+        {
+          "text": "Singing in the streets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Haman's wise men and Zeresh tell him about Mordecai?",
+      "explanation": "They said that if Mordecai is of Jewish descent, Haman would not prevail against him but would surely fall before him.",
+      "bibleReference": "Esther 6:13",
+      "answers": [
+        {
+          "text": "He should hang Mordecai at once",
+          "isCorrect": false
+        },
+        {
+          "text": "He should flee from Susa",
+          "isCorrect": false
+        },
+        {
+          "text": "He would not prevail against Mordecai",
+          "isCorrect": true
+        },
+        {
+          "text": "He should ask Esther for help",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came while they were still talking with Haman?",
+      "explanation": "The king's eunuchs came and hurried to bring Haman to the banquet Esther had prepared.",
+      "bibleReference": "Esther 6:14",
+      "answers": [
+        {
+          "text": "Mordecai, to thank him for the honor",
+          "isCorrect": false
+        },
+        {
+          "text": "The king's eunuchs, to take him to the banquet",
+          "isCorrect": true
+        },
+        {
+          "text": "Soldiers, to arrest him for treason",
+          "isCorrect": false
+        },
+        {
+          "text": "Messengers with letters from the provinces",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

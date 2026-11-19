@@ -1,0 +1,242 @@
+{
+  "title": "Esther Bible Quiz - Chapter 2",
+  "description": "Ten questions on Esther 2: young women are gathered for the king, Esther becomes queen, and Mordecai uncovers a plot.",
+  "slug": "esther-bible-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Into whose custody were the young virgins to be gathered in the women's house?",
+      "explanation": "The servants suggested gathering the virgins to the women's house, to the custody of Hegai the king's eunuch, keeper of the women.",
+      "bibleReference": "Esther 2:2-3",
+      "answers": [
+        {
+          "text": "Hathach the king's eunuch",
+          "isCorrect": false
+        },
+        {
+          "text": "Mehuman the chamberlain",
+          "isCorrect": false
+        },
+        {
+          "text": "Bigthan the doorkeeper",
+          "isCorrect": false
+        },
+        {
+          "text": "Hegai the king's eunuch",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Mordecai, the son of Jair, is described as what?",
+      "explanation": "There was a certain Jew in Susa named Mordecai, the son of Jair, the son of Shimei, the son of Kish, a Benjamite.",
+      "bibleReference": "Esther 2:5",
+      "answers": [
+        {
+          "text": "A Levite",
+          "isCorrect": false
+        },
+        {
+          "text": "A Benjamite",
+          "isCorrect": true
+        },
+        {
+          "text": "A priest of Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "A man of Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What other name did Esther have?",
+      "explanation": "Mordecai brought up Hadassah, that is, Esther.",
+      "bibleReference": "Esther 2:7",
+      "answers": [
+        {
+          "text": "Abihail",
+          "isCorrect": false
+        },
+        {
+          "text": "Zeresh",
+          "isCorrect": false
+        },
+        {
+          "text": "Hadassah",
+          "isCorrect": true
+        },
+        {
+          "text": "Vashti",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was Esther related to Mordecai?",
+      "explanation": "Esther was his uncle's daughter; when her father and mother died, Mordecai took her as his own daughter.",
+      "bibleReference": "Esther 2:7",
+      "answers": [
+        {
+          "text": "She was his uncle's daughter",
+          "isCorrect": true
+        },
+        {
+          "text": "She was his sister",
+          "isCorrect": false
+        },
+        {
+          "text": "She was his brother's daughter",
+          "isCorrect": false
+        },
+        {
+          "text": "She was his granddaughter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why had Esther not made known her people or her relatives?",
+      "explanation": "Esther did not make known her people or relatives, because Mordecai had instructed her not to.",
+      "bibleReference": "Esther 2:10",
+      "answers": [
+        {
+          "text": "Hegai had warned her",
+          "isCorrect": false
+        },
+        {
+          "text": "The king had forbidden it",
+          "isCorrect": false
+        },
+        {
+          "text": "She had forgotten them",
+          "isCorrect": false
+        },
+        {
+          "text": "Mordecai had instructed her not to",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what were the young women prepared during the first six months of their purification?",
+      "explanation": "Their purification lasted twelve months: six months with oil of myrrh, and six months with sweet fragrances.",
+      "bibleReference": "Esther 2:12",
+      "answers": [
+        {
+          "text": "Olive oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Frankincense",
+          "isCorrect": false
+        },
+        {
+          "text": "Oil of myrrh",
+          "isCorrect": true
+        },
+        {
+          "text": "Aloes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Esther ask for when her turn came to go in to the king?",
+      "explanation": "She required nothing but what Hegai the king's eunuch, the keeper of the women, advised.",
+      "bibleReference": "Esther 2:15",
+      "answers": [
+        {
+          "text": "A golden crown from the treasury",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing but what Hegai advised",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven new robes",
+          "isCorrect": false
+        },
+        {
+          "text": "Her maidens to go with her",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which month was Esther taken to King Ahasuerus?",
+      "explanation": "Esther was taken to the king in the tenth month, the month Tebeth, in the seventh year of his reign.",
+      "bibleReference": "Esther 2:16",
+      "answers": [
+        {
+          "text": "The month Tebeth",
+          "isCorrect": true
+        },
+        {
+          "text": "The month Nisan",
+          "isCorrect": false
+        },
+        {
+          "text": "The month Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "The month Elul",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which two eunuchs sought to lay hands on King Ahasuerus?",
+      "explanation": "Bigthan and Teresh, two of the king's eunuchs who were doorkeepers, were angry and sought to lay hands on the king.",
+      "bibleReference": "Esther 2:21",
+      "answers": [
+        {
+          "text": "Hegai and Shaashgaz",
+          "isCorrect": false
+        },
+        {
+          "text": "Harbona and Zethar",
+          "isCorrect": false
+        },
+        {
+          "text": "Bigthan and Teresh",
+          "isCorrect": true
+        },
+        {
+          "text": "Mehuman and Biztha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After the plotters were hanged, where was the matter written?",
+      "explanation": "The matter was found to be true, the two were hanged, and it was written in the book of the chronicles in the king's presence.",
+      "bibleReference": "Esther 2:23",
+      "answers": [
+        {
+          "text": "On the wall of the king's gate",
+          "isCorrect": false
+        },
+        {
+          "text": "In the book of the chronicles",
+          "isCorrect": true
+        },
+        {
+          "text": "In a letter to every province",
+          "isCorrect": false
+        },
+        {
+          "text": "In the laws of the Persians and Medes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

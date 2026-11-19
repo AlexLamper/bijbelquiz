@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 40",
+  "description": "Ten questions on Exodus 40: Moses raises up the tabernacle and the cloud and glory of Yahweh fill it.",
+  "slug": "exodus-bible-quiz-part-40",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "On which day did Yahweh tell Moses to raise up the tabernacle?",
+      "explanation": "Yahweh said: \"On the first day of the first month you shall raise up the tabernacle of the Tent of Meeting.\"",
+      "bibleReference": "Exodus 40:2",
+      "answers": [
+        {
+          "text": "The first day of the first month",
+          "isCorrect": true
+        },
+        {
+          "text": "The tenth day of the seventh month",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifteenth day of the first month",
+          "isCorrect": false
+        },
+        {
+          "text": "The first day of the seventh month",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was the basin to be set?",
+      "explanation": "Yahweh said to set the basin between the Tent of Meeting and the altar, and to put water in it.",
+      "bibleReference": "Exodus 40:7",
+      "answers": [
+        {
+          "text": "Inside the tent, right in front of the veil",
+          "isCorrect": false
+        },
+        {
+          "text": "Between the Tent of Meeting and the altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Beside the ark of the covenant",
+          "isCorrect": false
+        },
+        {
+          "text": "Outside the gate of the court",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Moses to do with Aaron and his sons at the door of the Tent of Meeting?",
+      "explanation": "Yahweh said: \"You shall bring Aaron and his sons to the door of the Tent of Meeting, and shall wash them with water.\"",
+      "bibleReference": "Exodus 40:12",
+      "answers": [
+        {
+          "text": "Cut their hair",
+          "isCorrect": false
+        },
+        {
+          "text": "Give each of them a staff",
+          "isCorrect": false
+        },
+        {
+          "text": "Wash them with water",
+          "isCorrect": true
+        },
+        {
+          "text": "Count them by name",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which year was the tabernacle raised up?",
+      "explanation": "In the first month in the second year, on the first day of the month, the tabernacle was raised up.",
+      "bibleReference": "Exodus 40:17",
+      "answers": [
+        {
+          "text": "The first year",
+          "isCorrect": false
+        },
+        {
+          "text": "The third year",
+          "isCorrect": false
+        },
+        {
+          "text": "The fortieth year",
+          "isCorrect": false
+        },
+        {
+          "text": "The second year",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Moses put into the ark?",
+      "explanation": "He took and put the covenant into the ark, set the poles on the ark and put the mercy seat above on it.",
+      "bibleReference": "Exodus 40:20",
+      "answers": [
+        {
+          "text": "The anointing oil",
+          "isCorrect": false
+        },
+        {
+          "text": "The covenant",
+          "isCorrect": true
+        },
+        {
+          "text": "The show bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron's holy garments",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Moses put the table in the Tent of Meeting?",
+      "explanation": "He put the table on the north side of the tabernacle, outside of the veil.",
+      "bibleReference": "Exodus 40:22",
+      "answers": [
+        {
+          "text": "On the north side, outside the veil",
+          "isCorrect": true
+        },
+        {
+          "text": "On the south side, inside the veil",
+          "isCorrect": false
+        },
+        {
+          "text": "On the east side, by the door",
+          "isCorrect": false
+        },
+        {
+          "text": "On the west side, behind the ark",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Moses, Aaron and his sons wash at the basin?",
+      "explanation": "Moses, Aaron and his sons washed their hands and their feet there.",
+      "bibleReference": "Exodus 40:31",
+      "answers": [
+        {
+          "text": "Their holy garments",
+          "isCorrect": false
+        },
+        {
+          "text": "Their faces and their hair",
+          "isCorrect": false
+        },
+        {
+          "text": "The vessels of the altar of burnt offering",
+          "isCorrect": false
+        },
+        {
+          "text": "Their hands and their feet",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why was Moses not able to enter the Tent of Meeting?",
+      "explanation": "Moses wasn't able to enter because the cloud stayed on it, and Yahweh's glory filled the tabernacle.",
+      "bibleReference": "Exodus 40:35",
+      "answers": [
+        {
+          "text": "Aaron had forbidden him to go in",
+          "isCorrect": false
+        },
+        {
+          "text": "The screen of the door had not yet been hung up",
+          "isCorrect": false
+        },
+        {
+          "text": "The cloud stayed on it and Yahweh's glory filled it",
+          "isCorrect": true
+        },
+        {
+          "text": "He had not yet washed his hands and feet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "When did the children of Israel travel onward?",
+      "explanation": "When the cloud was taken up from over the tabernacle, they went onward; if it wasn't taken up, they didn't travel.",
+      "bibleReference": "Exodus 40:36-37",
+      "answers": [
+        {
+          "text": "When the cloud was taken up from the tabernacle",
+          "isCorrect": true
+        },
+        {
+          "text": "On the first day of every month",
+          "isCorrect": false
+        },
+        {
+          "text": "Whenever Moses chose a new place to camp",
+          "isCorrect": false
+        },
+        {
+          "text": "When the fire in the cloud went out",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was seen in the cloud by night?",
+      "explanation": "The cloud of Yahweh was on the tabernacle by day, and there was fire in the cloud by night, in the sight of all the house of Israel.",
+      "bibleReference": "Exodus 40:38",
+      "answers": [
+        {
+          "text": "Stars",
+          "isCorrect": false
+        },
+        {
+          "text": "Fire",
+          "isCorrect": true
+        },
+        {
+          "text": "Lightning",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

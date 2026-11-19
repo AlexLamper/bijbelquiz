@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Jueces 19: el Levita del monte de Ephraim, su concubina y la noche en Gabaa.",
+  "slug": "judges-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde era la mujer concubina que había tomado el Levita del monte de Ephraim?",
+      "explanation": "El Levita moraba como peregrino en los lados del monte de Ephraim y se había tomado una mujer concubina de Beth-lehem de Judá.",
+      "bibleReference": "Jueces 19:1",
+      "answers": [
+        {
+          "text": "De Gabaa de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "De Beth-lehem de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "De la ciudad de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jebus de los Jebuseos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvo ella en casa de su padre después de irse de él?",
+      "explanation": "Su concubina se fue de él a casa de su padre, a Beth-lehem de Judá, y estuvo allá por tiempo de cuatro meses.",
+      "bibleReference": "Jueces 19:2",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete semanas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro meses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevó consigo el marido cuando fue tras ella para hablarle amorosamente?",
+      "explanation": "Se levantó su marido y la siguió, llevando consigo un criado suyo y un par de asnos.",
+      "bibleReference": "Jueces 19:3",
+      "answers": [
+        {
+          "text": "Un criado y un par de asnos",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez hombres armados",
+          "isCorrect": false
+        },
+        {
+          "text": "Una carga de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos camellos y una tienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué otro nombre da el texto a Jebus, la ciudad frente a la cual llegó?",
+      "explanation": "El hombre se levantó y partió, y llegó hasta enfrente de Jebus, que es Jerusalem, con su par de asnos y con su concubina.",
+      "bibleReference": "Jueces 19:10",
+      "answers": [
+        {
+          "text": "Gabaa de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Rama de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Beth-lehem de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no quiso el señor entrar en la ciudad de los Jebuseos a pasar la noche?",
+      "explanation": "Respondió a su criado que no irían a ninguna ciudad de extranjeros que no fuese de los hijos de Israel, sino que pasarían hasta Gabaa.",
+      "bibleReference": "Jueces 19:12",
+      "answers": [
+        {
+          "text": "Porque estaba demasiado lejos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no era de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque sus puertas estaban cerradas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque su criado tenía miedo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se sentaron en la plaza de la ciudad de Gabaa?",
+      "explanation": "Entraron en Gabaa y se sentaron en la plaza de la ciudad, porque no hubo quien los acogiese en casa para pasar la noche.",
+      "bibleReference": "Jueces 19:15",
+      "answers": [
+        {
+          "text": "Porque nadie los acogió en casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque esperaban a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí se vendía pan y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sus asnos estaban cansados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el hombre viejo cuando los vio en la plaza de la ciudad?",
+      "explanation": "El hombre viejo les dijo: Paz sea contigo, los metió en su casa y dio de comer a sus asnos, y ellos comieron y bebieron.",
+      "bibleReference": "Jueces 19:20-21",
+      "answers": [
+        {
+          "text": "Los llevó a la casa de Jehová en Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dejó pasar la noche en la plaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Les vendió paja y pan para el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Los metió en su casa y dio de comer a sus asnos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hombres de aquella ciudad mientras ellos estaban gozosos?",
+      "explanation": "Los hombres de la ciudad, hijos de Belial, cercaron la casa y batían las puertas, pidiendo al hombre viejo que sacase fuera al hombre que había entrado.",
+      "bibleReference": "Jueces 19:22",
+      "answers": [
+        {
+          "text": "Trajeron pan y vino para la cena",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerraron las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Cercaron la casa y batieron las puertas",
+          "isCorrect": true
+        },
+        {
+          "text": "Se fueron cada uno a su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En cuántas partes despedazó a su concubina para enviarla por los términos de Israel?",
+      "explanation": "Al llegar a su casa tomó un cuchillo y despedazó a su concubina con sus huesos en doce partes, y las envió por todos los términos de Israel.",
+      "bibleReference": "Jueces 19:29",
+      "answers": [
+        {
+          "text": "En doce partes",
+          "isCorrect": true
+        },
+        {
+          "text": "En dos partes",
+          "isCorrect": false
+        },
+        {
+          "text": "En seiscientas partes",
+          "isCorrect": false
+        },
+        {
+          "text": "En cuatro partes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué decía todo el que lo veía, al final del capítulo?",
+      "explanation": "Todo el que lo veía decía que jamás se había hecho ni visto tal cosa desde que los hijos de Israel subieron de la tierra de Egipto, y pedía que lo considerasen y diesen consejo.",
+      "bibleReference": "Jueces 19:30",
+      "answers": [
+        {
+          "text": "Que el Levita había pecado contra Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la ciudad de Gabaa era inocente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debían callar y volverse a sus tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que jamás se había hecho ni visto tal cosa",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

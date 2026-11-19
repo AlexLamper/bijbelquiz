@@ -4,6 +4,8 @@ import { ChevronRight } from 'lucide-react';
 import { Button } from '@/components/bq';
 import { cn } from '@/lib/utils';
 import { formatXp } from './types';
+import { t } from '@/i18n';
+import { localizePath } from '@/config/routes';
 
 /** "Jouw plek deze maand": your place and XP, and the way to earn more. */
 export function StandingCard({
@@ -19,20 +21,20 @@ export function StandingCard({
 }) {
   if (!signedIn) {
     return (
-      <section aria-label="Meedoen" className="flex flex-col gap-4 rounded-[16px] border border-line bg-card p-5">
+      <section aria-label={t('leaderboardSide.joinLabel')} className="flex flex-col gap-4 rounded-[16px] border border-line bg-card p-5">
         <div className="flex flex-col gap-1">
-          <h2 className="m-0 text-[20px] leading-[26px]">Sta jij ook op de ranglijst?</h2>
+          <h2 className="m-0 text-[20px] leading-[26px]">{t('leaderboardSide.joinTitle')}</h2>
           <p className="m-0 text-base font-semibold leading-6 text-ink-soft">
-            Maak een gratis account, verdien XP met quizzen en stijg in de ranglijst.
+            {t('leaderboardSide.joinBody')}
           </p>
         </div>
-        <Button href="/registreren?callbackUrl=/ranglijst" size="xl" block>
-          Gratis account maken
+        <Button href={localizePath(`/registreren?callbackUrl=${localizePath('/ranglijst')}`)} size="xl" block>
+          {t('leaderboardSide.joinCta')}
         </Button>
         <p className="m-0 text-center text-[15px] font-semibold text-ink-muted">
-          Al een account?{' '}
-          <Link href="/inloggen?callbackUrl=/ranglijst" className="font-extrabold no-underline">
-            Inloggen
+          {t('leaderboardSide.haveAccount')}{' '}
+          <Link href={localizePath(`/inloggen?callbackUrl=${localizePath('/ranglijst')}`)} className="font-extrabold no-underline">
+            {t('leaderboardSide.signIn')}
           </Link>
         </p>
       </section>
@@ -51,10 +53,10 @@ export function StandingCard({
         </span>
       </div>
       <p className="m-0 text-base font-semibold leading-6 text-ink-soft">
-        Verdien XP door quizzen te spelen en stijg in de ranglijst.
+        {t('leaderboardSide.earnBody')}
       </p>
-      <Button href="/quizzen" size="xl" block>
-        Speel een quiz
+      <Button href={localizePath('/quizzen')} size="xl" block>
+        {t('leaderboardSide.playQuiz')}
       </Button>
     </section>
   );
@@ -95,10 +97,10 @@ export function GroupsCard({
     <section aria-labelledby="groepen-titel" className="overflow-hidden rounded-[16px] border border-line bg-card">
       <div className="flex flex-col gap-1 px-5 pb-4 pt-5">
         <h2 id="groepen-titel" className="m-0 text-[20px] leading-[26px]">
-          Jouw groepen
+          {t('leaderboardSide.groupsTitle')}
         </h2>
         <p className="m-0 text-sm font-semibold leading-5 text-ink-muted">
-          Bewaar je groep na een spel bij Samen spelen en volg hier jullie eigen stand.
+          {t('leaderboardSide.groupsBody')}
         </p>
       </div>
 
@@ -108,8 +110,8 @@ export function GroupsCard({
             <GroupIcon />
           </span>
           <span className="flex min-w-0 grow flex-col">
-            <span className="text-[15px] font-bold">Iedereen</span>
-            <span className="text-[13px] font-semibold text-ink-muted">De hele ranglijst</span>
+            <span className="text-[15px] font-bold">{t('leaderboardSide.everyone')}</span>
+            <span className="text-[13px] font-semibold text-ink-muted">{t('leaderboardSide.wholeBoard')}</span>
           </span>
           <ChevronRight className="size-[18px] shrink-0 text-ink-faint" strokeWidth={2.4} aria-hidden="true" />
         </Link>
@@ -135,7 +137,7 @@ export function GroupsCard({
             <span className="flex min-w-0 grow flex-col">
               <span className="truncate text-[15px] font-bold">{group.name}</span>
               <span className="text-[13px] font-semibold text-ink-muted">
-                {group.memberCount === 1 ? '1 speler' : `${group.memberCount} spelers`}
+                {group.memberCount === 1 ? t('leaderboardSide.onePlayer') : t('leaderboardSide.players', { count: group.memberCount })}
               </span>
             </span>
             <ChevronRight className="size-[18px] shrink-0 text-ink-faint" strokeWidth={2.4} aria-hidden="true" />
@@ -144,13 +146,13 @@ export function GroupsCard({
       })}
 
       {groups.length === 0 && (
-        <Link href="/samen-spelen" className={rowClass}>
+        <Link href={localizePath('/samen-spelen')} className={rowClass}>
           <span className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-green-tint text-green">
             <GroupIcon />
           </span>
           <span className="flex min-w-0 grow flex-col">
-            <span className="text-[15px] font-bold">Speel samen</span>
-            <span className="text-[13px] font-semibold text-ink-muted">Start een spel en bewaar je groep</span>
+            <span className="text-[15px] font-bold">{t('leaderboardSide.playTogether')}</span>
+            <span className="text-[13px] font-semibold text-ink-muted">{t('leaderboardSide.playTogetherBody')}</span>
           </span>
           <ChevronRight className="size-[18px] shrink-0 text-ink-faint" strokeWidth={2.4} aria-hidden="true" />
         </Link>

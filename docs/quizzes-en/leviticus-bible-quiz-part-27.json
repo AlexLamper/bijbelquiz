@@ -1,0 +1,242 @@
+{
+  "title": "Leviticus Bible Quiz - Chapter 27",
+  "description": "Ten questions on Leviticus 27: valuations for vows, redeeming what is dedicated, and the tithe that is holy to Yahweh.",
+  "slug": "leviticus-bible-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What was the valuation of a male from twenty to sixty years old consecrated in a vow?",
+      "explanation": "Verse 3 sets the valuation of such a male at fifty shekels of silver, by the shekel of the sanctuary.",
+      "bibleReference": "Leviticus 27:2-3",
+      "answers": [
+        {
+          "text": "Thirty shekels of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty shekels of silver",
+          "isCorrect": true
+        },
+        {
+          "text": "Twenty shekels of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifteen shekels of silver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the valuation of a male from a month old to five years old?",
+      "explanation": "Verse 6 says the valuation for such a male is five shekels of silver, and for a female three shekels.",
+      "bibleReference": "Leviticus 27:6",
+      "answers": [
+        {
+          "text": "Ten shekels of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Three shekels of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve shekels of silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Five shekels of silver",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What happened if the person who made the vow was poorer than the valuation?",
+      "explanation": "He was set before the priest, who assigned a value according to his ability to pay.",
+      "bibleReference": "Leviticus 27:8",
+      "answers": [
+        {
+          "text": "The priest assigned a value according to his ability to pay",
+          "isCorrect": true
+        },
+        {
+          "text": "He was released from his vow without paying",
+          "isCorrect": false
+        },
+        {
+          "text": "He served in the sanctuary for the remaining amount",
+          "isCorrect": false
+        },
+        {
+          "text": "His nearest relative paid the rest of the valuation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened if someone exchanged one animal given to Yahweh for another?",
+      "explanation": "Verse 10 says that if he exchanges animal for animal, both it and the one it was exchanged for shall be holy.",
+      "bibleReference": "Leviticus 27:9-10",
+      "answers": [
+        {
+          "text": "The first animal was given back",
+          "isCorrect": false
+        },
+        {
+          "text": "The exchange was simply accepted",
+          "isCorrect": false
+        },
+        {
+          "text": "Both animals became holy",
+          "isCorrect": true
+        },
+        {
+          "text": "The priest chose the better one",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did a man have to add if he wanted to redeem the house he had dedicated?",
+      "explanation": "If he redeems his house, he shall add the fifth part of the money of the valuation, and it shall be his.",
+      "bibleReference": "Leviticus 27:14-15",
+      "answers": [
+        {
+          "text": "A tenth part of the valuation",
+          "isCorrect": false
+        },
+        {
+          "text": "The fifth part of the valuation",
+          "isCorrect": true
+        },
+        {
+          "text": "Double the valuation",
+          "isCorrect": false
+        },
+        {
+          "text": "Nothing at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was the valuation of a dedicated field from a man's possession set?",
+      "explanation": "Verse 16 says the valuation shall be according to the seed for it; the sowing of a homer of barley was valued at fifty shekels of silver.",
+      "bibleReference": "Leviticus 27:16",
+      "answers": [
+        {
+          "text": "According to the seed for it",
+          "isCorrect": true
+        },
+        {
+          "text": "By the number of its trees",
+          "isCorrect": false
+        },
+        {
+          "text": "By its distance from the city",
+          "isCorrect": false
+        },
+        {
+          "text": "By the size of its well",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "If a dedicated field was not redeemed, who would own it when it went out in the Jubilee?",
+      "explanation": "It would be holy to Yahweh as a devoted field, and it would be owned by the priests.",
+      "bibleReference": "Leviticus 27:20-21",
+      "answers": [
+        {
+          "text": "The Levites",
+          "isCorrect": false
+        },
+        {
+          "text": "The man who bought it",
+          "isCorrect": false
+        },
+        {
+          "text": "The prince of the tribe",
+          "isCorrect": false
+        },
+        {
+          "text": "The priests",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many gerahs make up the shekel of the sanctuary?",
+      "explanation": "Verse 25 says all valuations shall be by the shekel of the sanctuary: twenty gerahs to the shekel.",
+      "bibleReference": "Leviticus 27:25",
+      "answers": [
+        {
+          "text": "Ten gerahs",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve gerahs",
+          "isCorrect": false
+        },
+        {
+          "text": "Twenty gerahs",
+          "isCorrect": true
+        },
+        {
+          "text": "Fifty gerahs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why could no man dedicate a firstborn ox or sheep?",
+      "explanation": "The firstborn among animals belongs to Yahweh as a firstborn: \"It is Yahweh's.\"",
+      "bibleReference": "Leviticus 27:26",
+      "answers": [
+        {
+          "text": "Because it already belongs to Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "Because it is too young",
+          "isCorrect": false
+        },
+        {
+          "text": "Because it belongs to the priest's family",
+          "isCorrect": false
+        },
+        {
+          "text": "Because it must first be sold",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which animals of the herds and flocks are holy to Yahweh as the tithe?",
+      "explanation": "Of whatever passes under the rod, the tenth shall be holy to Yahweh; the owner shall not examine whether it is good or bad.",
+      "bibleReference": "Leviticus 27:32-33",
+      "answers": [
+        {
+          "text": "The best one chosen by the owner",
+          "isCorrect": false
+        },
+        {
+          "text": "The tenth that passes under the rod",
+          "isCorrect": true
+        },
+        {
+          "text": "The seventh one born each year",
+          "isCorrect": false
+        },
+        {
+          "text": "The largest male of the flock",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

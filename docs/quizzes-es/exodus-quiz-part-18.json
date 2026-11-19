@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre Éxodo 18: la llegada de Jethro, su consejo a Moisés y los caporales puestos sobre el pueblo.",
+  "slug": "exodus-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién era Jethro, que oyó todo lo que Dios había hecho con Moisés y con Israel?",
+      "explanation": "Jethro era sacerdote de Madián y suegro de Moisés, y oyó todas las cosas que Dios había hecho con Moisés y con Israel su pueblo.",
+      "bibleReference": "Éxodo 18:1",
+      "answers": [
+        {
+          "text": "Un príncipe de Edom, hermano de Séphora",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacerdote de Madián y suegro de Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Un anciano de Israel que fue con Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Un sacerdote de Egipto, siervo de Faraón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la mujer de Moisés, a quien Jethro tomó consigo?",
+      "explanation": "Jethro, suegro de Moisés, tomó a Séphora, la mujer de Moisés, después que él la envió.",
+      "bibleReference": "Éxodo 18:2",
+      "answers": [
+        {
+          "text": "Séphora",
+          "isCorrect": true
+        },
+        {
+          "text": "María",
+          "isCorrect": false
+        },
+        {
+          "text": "Jocabed",
+          "isCorrect": false
+        },
+        {
+          "text": "Elisabeth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se llamaba Gersom uno de sus hijos?",
+      "explanation": "Uno se llamaba Gersom, porque dijo: Peregrino he sido en tierra ajena.",
+      "bibleReference": "Éxodo 18:3",
+      "answers": [
+        {
+          "text": "Porque nació en el camino del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque fue hallado junto a las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era el mayor de los dos hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque dijo: Peregrino he sido en tierra ajena",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué dijo Moisés que Dios lo libró, al poner por nombre Eliezer al otro hijo?",
+      "explanation": "El otro se llamaba Eliezer, porque dijo: El Dios de mi padre me ayudó, y me libró del cuchillo de Faraón.",
+      "bibleReference": "Éxodo 18:4",
+      "answers": [
+        {
+          "text": "De la mano de los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "De las aguas del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Del cuchillo de Faraón",
+          "isCorrect": true
+        },
+        {
+          "text": "Del hambre del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés cuando salió a recibir a su suegro?",
+      "explanation": "Moisés salió a recibir a su suegro, se inclinó y lo besó, y se preguntaron el uno al otro cómo estaban, y vinieron a la tienda.",
+      "bibleReference": "Éxodo 18:7",
+      "answers": [
+        {
+          "text": "Se inclinó y lo besó",
+          "isCorrect": true
+        },
+        {
+          "text": "Le lavó los pies",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dio su vara",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo llevó al monte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomó Jethro para Dios?",
+      "explanation": "Jethro, suegro de Moisés, tomó holocaustos y sacrificios para Dios, y Aarón y todos los ancianos de Israel vinieron a comer pan con él delante de Dios.",
+      "bibleReference": "Éxodo 18:12",
+      "answers": [
+        {
+          "text": "Plata y oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Holocaustos y sacrificios",
+          "isCorrect": true
+        },
+        {
+          "text": "Panes sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos corderos del rebaño",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvo el pueblo delante de Moisés cuando se sentó a juzgarlo?",
+      "explanation": "Otro día Moisés se sentó a juzgar al pueblo, y el pueblo estuvo delante de él desde la mañana hasta la tarde.",
+      "bibleReference": "Éxodo 18:13",
+      "answers": [
+        {
+          "text": "Tres días con sus noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la tarde hasta la media noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la mañana hasta la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente una hora cada día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo su suegro acerca de lo que hacía con el pueblo?",
+      "explanation": "Su suegro le dijo: No haces bien; desfallecerás del todo, tú y este pueblo, porque el negocio es demasiado pesado para ti y no podrás hacerlo solo.",
+      "bibleReference": "Éxodo 18:17-18",
+      "answers": [
+        {
+          "text": "Que lo hacía muy bien delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llamase a Aarón para juzgar con él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que juzgase solamente a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no hacía bien y no podría hacerlo solo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué grupos debía constituir caporales a los varones que escogiese?",
+      "explanation": "Debía buscar varones de virtud, temerosos de Dios, y constituirlos caporales sobre mil, sobre ciento, sobre cincuenta y sobre diez.",
+      "bibleReference": "Éxodo 18:21",
+      "answers": [
+        {
+          "text": "Sobre mil, ciento, cincuenta y diez",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre las doce tribus de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre cada tienda del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre siete ciudades del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés con su suegro al final del capítulo?",
+      "explanation": "Moisés despidió a su suegro, y éste se fue a su tierra.",
+      "bibleReference": "Éxodo 18:27",
+      "answers": [
+        {
+          "text": "Lo puso por juez del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo despidió, y se fue a su tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo llevó al monte de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dio parte de los sacrificios",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

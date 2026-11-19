@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 13",
+  "description": "Ten questions on Numbers 13: the twelve men sent to spy out Canaan, the cluster of grapes from Eshcol, and the report they brought back.",
+  "slug": "numbers-bible-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Whom did Yahweh tell Moses to send from every tribe to spy out the land of Canaan?",
+      "explanation": "Yahweh told Moses to send a man of every tribe of their fathers, every one a prince among them.",
+      "bibleReference": "Numbers 13:2",
+      "answers": [
+        {
+          "text": "A priest from the sons of Aaron",
+          "isCorrect": false
+        },
+        {
+          "text": "A young man who had never fought",
+          "isCorrect": false
+        },
+        {
+          "text": "A man of every tribe, each a prince among them",
+          "isCorrect": true
+        },
+        {
+          "text": "A Levite from each family",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Caleb the son of Jephunneh was sent from which tribe?",
+      "explanation": "Of the tribe of Judah, Caleb the son of Jephunneh was sent.",
+      "bibleReference": "Numbers 13:6",
+      "answers": [
+        {
+          "text": "Judah",
+          "isCorrect": true
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Reuben",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did Moses give to Hoshea the son of Nun?",
+      "explanation": "Moses called Hoshea the son of Nun Joshua.",
+      "bibleReference": "Numbers 13:16",
+      "answers": [
+        {
+          "text": "Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Igal",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaddiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Joshua",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What time of year was it when the spies were sent out?",
+      "explanation": "Moses told them to bring some of the fruit of the land; it was the time of the first-ripe grapes.",
+      "bibleReference": "Numbers 13:20",
+      "answers": [
+        {
+          "text": "The time of the barley harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "The time of the first-ripe grapes",
+          "isCorrect": true
+        },
+        {
+          "text": "The time of the olive harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "The middle of winter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In which place did the spies see Ahiman, Sheshai and Talmai, the children of Anak?",
+      "explanation": "They went up by the South and came to Hebron, where Ahiman, Sheshai and Talmai, the children of Anak, were.",
+      "bibleReference": "Numbers 13:22",
+      "answers": [
+        {
+          "text": "Hebron",
+          "isCorrect": true
+        },
+        {
+          "text": "Rehob",
+          "isCorrect": false
+        },
+        {
+          "text": "Kadesh",
+          "isCorrect": false
+        },
+        {
+          "text": "Hamath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the spies carry the cluster of grapes from the valley of Eshcol?",
+      "explanation": "They cut down a branch with one cluster of grapes and carried it on a staff between two men.",
+      "bibleReference": "Numbers 13:23",
+      "answers": [
+        {
+          "text": "In baskets on donkeys",
+          "isCorrect": false
+        },
+        {
+          "text": "On a cart pulled by oxen",
+          "isCorrect": false
+        },
+        {
+          "text": "On a staff between two",
+          "isCorrect": true
+        },
+        {
+          "text": "In their cloaks",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After how many days did the spies return from the land?",
+      "explanation": "They returned from spying out the land at the end of forty days.",
+      "bibleReference": "Numbers 13:25",
+      "answers": [
+        {
+          "text": "Seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten days",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty days",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did the spies describe the land when they came back?",
+      "explanation": "They said, \"Surely it flows with milk and honey, and this is its fruit.\"",
+      "bibleReference": "Numbers 13:27",
+      "answers": [
+        {
+          "text": "It is dry and full of stones",
+          "isCorrect": false
+        },
+        {
+          "text": "It flows with milk and honey",
+          "isCorrect": true
+        },
+        {
+          "text": "It has no water at all",
+          "isCorrect": false
+        },
+        {
+          "text": "It is covered with forests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Caleb say when he stilled the people before Moses?",
+      "explanation": "Caleb said, \"Let's go up at once, and possess it; for we are well able to overcome it!\"",
+      "bibleReference": "Numbers 13:30",
+      "answers": [
+        {
+          "text": "\"Let's return to Egypt\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let's wait for another forty days\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Let's go up at once, and possess it\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Let's send more men to spy it out\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did the spies with the evil report say they looked in their own sight next to the Nephilim?",
+      "explanation": "They said, \"We were in our own sight as grasshoppers, and so we were in their sight.\"",
+      "bibleReference": "Numbers 13:33",
+      "answers": [
+        {
+          "text": "As grasshoppers",
+          "isCorrect": true
+        },
+        {
+          "text": "As small children",
+          "isCorrect": false
+        },
+        {
+          "text": "As scattered sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "As crawling ants",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

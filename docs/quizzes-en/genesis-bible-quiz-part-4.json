@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 4",
+  "description": "Ten questions on Genesis 4: Cain and Abel, Cain's descendants, and the birth of Seth.",
+  "slug": "genesis-bible-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What work did Abel and Cain do?",
+      "explanation": "Abel was a keeper of sheep, but Cain was a tiller of the ground.",
+      "bibleReference": "Genesis 4:2",
+      "answers": [
+        {
+          "text": "Abel tilled the ground; Cain kept sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "Abel kept sheep; Cain tilled the ground",
+          "isCorrect": true
+        },
+        {
+          "text": "Both of them were hunters",
+          "isCorrect": false
+        },
+        {
+          "text": "Abel built cities; Cain kept sheep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Abel bring as his offering?",
+      "explanation": "Abel brought some of the firstborn of his flock and of its fat, and Yahweh respected Abel and his offering.",
+      "bibleReference": "Genesis 4:4",
+      "answers": [
+        {
+          "text": "The fruit of the ground",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread and wine from his house",
+          "isCorrect": false
+        },
+        {
+          "text": "The firstborn of his flock and its fat",
+          "isCorrect": true
+        },
+        {
+          "text": "Grain and oil from his field",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Cain was crouching at the door?",
+      "explanation": "Yahweh said that if Cain did not do well, sin crouches at the door, but he was to rule over it.",
+      "bibleReference": "Genesis 4:7",
+      "answers": [
+        {
+          "text": "The serpent",
+          "isCorrect": false
+        },
+        {
+          "text": "Death",
+          "isCorrect": false
+        },
+        {
+          "text": "A lion",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Cain answer when Yahweh asked where Abel was?",
+      "explanation": "Cain said, \"I don't know. Am I my brother's keeper?\"",
+      "bibleReference": "Genesis 4:9",
+      "answers": [
+        {
+          "text": "\"Am I my brother's keeper?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"He is in the field\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He went to the land of Nod\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"He is with his sheep\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Yahweh, what cried to Him from the ground?",
+      "explanation": "Yahweh said, \"The voice of your brother's blood cries to me from the ground.\"",
+      "bibleReference": "Genesis 4:10",
+      "answers": [
+        {
+          "text": "The voice of Abel's blood",
+          "isCorrect": true
+        },
+        {
+          "text": "The voice of Eve",
+          "isCorrect": false
+        },
+        {
+          "text": "The sheep of Abel's flock",
+          "isCorrect": false
+        },
+        {
+          "text": "The fruit of the ground",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh do so that anyone finding Cain would not strike him?",
+      "explanation": "Yahweh appointed a sign for Cain, so that anyone finding him would not strike him.",
+      "bibleReference": "Genesis 4:15",
+      "answers": [
+        {
+          "text": "He built a wall around him",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent him back to Eden",
+          "isCorrect": false
+        },
+        {
+          "text": "He gave him a sword",
+          "isCorrect": false
+        },
+        {
+          "text": "He appointed a sign for Cain",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did Cain live after he left Yahweh's presence?",
+      "explanation": "Cain left Yahweh's presence and lived in the land of Nod, east of Eden.",
+      "bibleReference": "Genesis 4:16",
+      "answers": [
+        {
+          "text": "The land of Havilah, near the river",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Cush, south of Eden",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Nod, east of Eden",
+          "isCorrect": true
+        },
+        {
+          "text": "The land of Shinar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "After whom did Cain name the city he built?",
+      "explanation": "Cain's wife gave birth to Enoch, and Cain named the city he built after his son Enoch.",
+      "bibleReference": "Genesis 4:17",
+      "answers": [
+        {
+          "text": "His brother Abel",
+          "isCorrect": false
+        },
+        {
+          "text": "His son Enoch",
+          "isCorrect": true
+        },
+        {
+          "text": "His father Adam",
+          "isCorrect": false
+        },
+        {
+          "text": "His son Lamech",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the father of all who handle the harp and pipe?",
+      "explanation": "Jubal, the brother of Jabal, was the father of all who handle the harp and pipe.",
+      "bibleReference": "Genesis 4:21",
+      "answers": [
+        {
+          "text": "Jabal",
+          "isCorrect": false
+        },
+        {
+          "text": "Jubal",
+          "isCorrect": true
+        },
+        {
+          "text": "Tubal Cain",
+          "isCorrect": false
+        },
+        {
+          "text": "Lamech",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Adam's wife say when she named her son Seth?",
+      "explanation": "She named him Seth, saying that God had given her another child instead of Abel, for Cain killed him.",
+      "bibleReference": "Genesis 4:25",
+      "answers": [
+        {
+          "text": "He would comfort them in their work",
+          "isCorrect": false
+        },
+        {
+          "text": "He would rule over his brothers",
+          "isCorrect": false
+        },
+        {
+          "text": "God had given her another child instead of Abel",
+          "isCorrect": true
+        },
+        {
+          "text": "He would build a great city",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

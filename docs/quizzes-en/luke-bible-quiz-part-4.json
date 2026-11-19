@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 4",
+  "description": "Ten questions on Luke 4: the temptation in the wilderness, the reading in the synagogue at Nazareth, and the healings at Capernaum.",
+  "slug": "luke-bible-quiz-part-4",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How long was Jesus in the wilderness being tempted by the devil, and what did he eat?",
+      "explanation": "He was led by the Spirit into the wilderness for forty days, being tempted by the devil, and he ate nothing in those days.",
+      "bibleReference": "Luke 4:1-2",
+      "answers": [
+        {
+          "text": "Three days, and he ate bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven days, and he ate nothing",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty days, and he ate nothing",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty days, and he ate only water and bread",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus answer when the devil told him to command a stone to become bread?",
+      "explanation": "He answered that it is written, \"Man shall not live by bread alone, but by every word of God.\"",
+      "bibleReference": "Luke 4:3-4",
+      "answers": [
+        {
+          "text": "\"Man shall not live by bread alone, but by every word of God\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The Lord my God will provide bread for me\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The Son of God has no need of bread\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"I will not eat until these days are over\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the devil offer Jesus on the high mountain?",
+      "explanation": "Leading him up on a high mountain, the devil showed him all the kingdoms of the world and offered him all this authority and their glory if he would worship before him.",
+      "bibleReference": "Luke 4:5-7",
+      "answers": [
+        {
+          "text": "Bread to satisfy his hunger in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "The sandals and the cloak of a prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "A great crowd that would follow after him",
+          "isCorrect": false
+        },
+        {
+          "text": "All the authority and glory of the kingdoms of the world",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where did the devil set Jesus when he told him to cast himself down?",
+      "explanation": "He led him to Jerusalem and set him on the pinnacle of the temple, and told him to cast himself down from there.",
+      "bibleReference": "Luke 4:9",
+      "answers": [
+        {
+          "text": "On a high mountain in the wilderness",
+          "isCorrect": false
+        },
+        {
+          "text": "On the pinnacle of the temple in Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "On the brow of the hill by Nazareth",
+          "isCorrect": false
+        },
+        {
+          "text": "On the roof of a synagogue in Galilee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which prophet's book was handed to Jesus in the synagogue at Nazareth?",
+      "explanation": "In Nazareth, where he had been brought up, he stood up to read and the book of the prophet Isaiah was handed to him.",
+      "bibleReference": "Luke 4:16-17",
+      "answers": [
+        {
+          "text": "Elijah",
+          "isCorrect": false
+        },
+        {
+          "text": "Elisha",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaiah",
+          "isCorrect": true
+        },
+        {
+          "text": "Moses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus begin to tell them after he closed the book and sat down?",
+      "explanation": "He began to tell them, \"Today, this Scripture has been fulfilled in your hearing.\"",
+      "bibleReference": "Luke 4:20-21",
+      "answers": [
+        {
+          "text": "\"Today, this Scripture has been fulfilled in your hearing\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The year of the Lord has not yet come\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Blessed are those who hear the prophets\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Give the book back to the attendant\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did those in the synagogue say as they wondered at his gracious words?",
+      "explanation": "All testified about him and wondered at the gracious words from his mouth, and they said, \"Isn't this Joseph's son?\"",
+      "bibleReference": "Luke 4:22",
+      "answers": [
+        {
+          "text": "\"Is this the Holy One of God?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Where did he learn to read?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Has a prophet come to us?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Isn't this Joseph's son?\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the people of the synagogue do when they were filled with wrath?",
+      "explanation": "They rose up, threw him out of the city, and led him to the brow of the hill that their city was built on, so that they might throw him off the cliff.",
+      "bibleReference": "Luke 4:28-29",
+      "answers": [
+        {
+          "text": "They tore their clothes there in the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "They led him to the brow of the hill to throw him off the cliff",
+          "isCorrect": true
+        },
+        {
+          "text": "They drove him out into the wilderness alone",
+          "isCorrect": false
+        },
+        {
+          "text": "They called for the soldiers to arrest him",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say to the man in the synagogue at Capernaum who had a spirit of an unclean demon?",
+      "explanation": "Jesus rebuked him, saying, \"Be silent, and come out of him!\" and the demon came out, having done him no harm.",
+      "bibleReference": "Luke 4:33-35",
+      "answers": [
+        {
+          "text": "\"Your sins are forgiven you\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Rise up and walk\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Be silent, and come out of him!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Tell no one what has happened\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do for Simon's mother-in-law?",
+      "explanation": "She was afflicted with a great fever, and he stood over her and rebuked the fever, and it left her; immediately she rose up and served them.",
+      "bibleReference": "Luke 4:38-39",
+      "answers": [
+        {
+          "text": "He rebuked the fever and it left her",
+          "isCorrect": true
+        },
+        {
+          "text": "He told her to go to the priest",
+          "isCorrect": false
+        },
+        {
+          "text": "He laid his hands on her eyes",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent her out of the house",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Números 10: las dos trompetas de plata, el orden de marcha de los campos y la partida del monte de Jehová.",
+  "slug": "numbers-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué debía hacer Moisés las dos trompetas?",
+      "explanation": "Jehová manda a Moisés hacerse dos trompetas de plata, de obra de martillo, para convocar la congregación y hacer mover el campo.",
+      "bibleReference": "Números 10:2",
+      "answers": [
+        {
+          "text": "De oro, de obra de fundición",
+          "isCorrect": false
+        },
+        {
+          "text": "De plata, de obra de martillo",
+          "isCorrect": true
+        },
+        {
+          "text": "De bronce labrado a martillo",
+          "isCorrect": false
+        },
+        {
+          "text": "De cuernos de carnero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes se reunían cuando se tocaba sólo una trompeta?",
+      "explanation": "Cuando tocaban sólo la una, se congregaban los príncipes, las cabezas de los millares de Israel.",
+      "bibleReference": "Números 10:4",
+      "answers": [
+        {
+          "text": "Toda la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los levitas y sus familias",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué campo se movía cuando tocaban alarma la primera vez?",
+      "explanation": "Cuando tocaban alarma, movían el campo de los que estaban alojados al oriente.",
+      "bibleReference": "Números 10:5",
+      "answers": [
+        {
+          "text": "El de los alojados al oriente",
+          "isCorrect": true
+        },
+        {
+          "text": "El de los alojados al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los alojados al occidente",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los alojados al norte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes debían tocar las trompetas?",
+      "explanation": "Los hijos de Aarón, los sacerdotes, tocaban las trompetas, y esto sería estatuto perpetuo por sus generaciones.",
+      "bibleReference": "Números 10:8",
+      "answers": [
+        {
+          "text": "Los hijos de Coath",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Aarón, los sacerdotes",
+          "isCorrect": true
+        },
+        {
+          "text": "Los príncipes de las tribus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde paró la nube cuando partieron del desierto de Sinaí?",
+      "explanation": "Los hijos de Israel se movieron por sus partidas del desierto de Sinaí, y la nube paró en el desierto de Parán.",
+      "bibleReference": "Números 10:12",
+      "answers": [
+        {
+          "text": "En el desierto de Zin",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de Escol",
+          "isCorrect": false
+        },
+        {
+          "text": "En la llanura de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Parán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué campo comenzó a marchar primero?",
+      "explanation": "La bandera del campo de los hijos de Judá comenzó a marchar primero, por sus escuadrones, y Naasón hijo de Aminadab estaba sobre su ejército.",
+      "bibleReference": "Números 10:14",
+      "answers": [
+        {
+          "text": "El de los hijos de Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los hijos de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "El de los hijos de Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los hijos de Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué campo marchaba recogiendo todos los campos?",
+      "explanation": "La bandera del campo de los hijos de Dan marchaba por sus escuadrones recogiendo todos los campos, y Ahiezer hijo de Ammisaddai estaba sobre su ejército.",
+      "bibleReference": "Números 10:25",
+      "answers": [
+        {
+          "text": "El de los hijos de Nephtalí",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los hijos de Aser",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los hijos de Dan",
+          "isCorrect": true
+        },
+        {
+          "text": "El de los hijos de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Moisés a Hobab para que no los dejara?",
+      "explanation": "Moisés le rogó que no los dejara, porque él conocía sus alojamientos en el desierto y les sería en lugar de ojos.",
+      "bibleReference": "Números 10:31",
+      "answers": [
+        {
+          "text": "Que les sería en lugar de ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo haría príncipe de una tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llevaría el arca delante de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le daría doble parte del botín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto camino anduvieron al partir del monte de Jehová?",
+      "explanation": "Partieron del monte de Jehová camino de tres días, y el arca de la alianza de Jehová fue delante de ellos camino de tres días.",
+      "bibleReference": "Números 10:33",
+      "answers": [
+        {
+          "text": "Camino de tres días",
+          "isCorrect": true
+        },
+        {
+          "text": "Camino de siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Camino de cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Camino de un día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué decía Moisés cuando el arca se movía?",
+      "explanation": "Al mover el arca, Moisés decía: Levántate, Jehová, y sean disipados tus enemigos, y huyan de tu presencia los que te aborrecen.",
+      "bibleReference": "Números 10:35",
+      "answers": [
+        {
+          "text": "Bendito seas, Jehová, Dios de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Santificaos, porque Jehová pasa delante",
+          "isCorrect": false
+        },
+        {
+          "text": "Levántate, Jehová, y sean disipados tus enemigos",
+          "isCorrect": true
+        },
+        {
+          "text": "Oye, Israel, y guarda sus estatutos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

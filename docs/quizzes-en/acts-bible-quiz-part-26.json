@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 26",
+  "description": "Ten questions on Acts 26: Paul's defense before King Agrippa, the light on the road to Damascus, and the answers of Festus and Agrippa.",
+  "slug": "acts-bible-quiz-part-26",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Who told Paul, \"You may speak for yourself\"?",
+      "explanation": "Agrippa said to Paul that he might speak for himself, and Paul stretched out his hand and made his defense.",
+      "bibleReference": "Acts 26:1",
+      "answers": [
+        {
+          "text": "Festus",
+          "isCorrect": false
+        },
+        {
+          "text": "Felix",
+          "isCorrect": false
+        },
+        {
+          "text": "Claudius Lysias",
+          "isCorrect": false
+        },
+        {
+          "text": "Agrippa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "According to the strictest sect of their religion, how did Paul say he had lived?",
+      "explanation": "Paul said that those who had known him from the first could testify that after the strictest sect of their religion he lived a Pharisee.",
+      "bibleReference": "Acts 26:5",
+      "answers": [
+        {
+          "text": "As a Sadducee",
+          "isCorrect": false
+        },
+        {
+          "text": "As a Pharisee",
+          "isCorrect": true
+        },
+        {
+          "text": "As a scribe",
+          "isCorrect": false
+        },
+        {
+          "text": "As a priest of the temple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who does Paul say earnestly serve night and day, hoping to attain the promise made by God to the fathers?",
+      "explanation": "Paul says he stands to be judged for the hope of the promise made by God to the fathers, which the twelve tribes, earnestly serving night and day, hope to attain.",
+      "bibleReference": "Acts 26:6-7",
+      "answers": [
+        {
+          "text": "The elders of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophets of old",
+          "isCorrect": false
+        },
+        {
+          "text": "The twelve tribes",
+          "isCorrect": true
+        },
+        {
+          "text": "The Gentiles who fear God",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul say he did to many of the saints in Jerusalem?",
+      "explanation": "Paul said he shut up many of the saints in prisons, having received authority from the chief priests, and gave his vote against them when they were put to death.",
+      "bibleReference": "Acts 26:10",
+      "answers": [
+        {
+          "text": "He shut many of them up in prisons",
+          "isCorrect": true
+        },
+        {
+          "text": "He drove them out of the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "He taught them in the synagogues",
+          "isCorrect": false
+        },
+        {
+          "text": "He warned them to flee the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what time of day did Paul see the light on the way to Damascus?",
+      "explanation": "Paul said that at noon he saw on the way a light from the sky, brighter than the sun, shining around him and his companions.",
+      "bibleReference": "Acts 26:13",
+      "answers": [
+        {
+          "text": "At midnight",
+          "isCorrect": false
+        },
+        {
+          "text": "At noon",
+          "isCorrect": true
+        },
+        {
+          "text": "At sunrise",
+          "isCorrect": false
+        },
+        {
+          "text": "At the third hour of the night",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what language did Paul say the voice spoke to him?",
+      "explanation": "When they had all fallen to the earth, Paul heard a voice speaking to him in the Hebrew language.",
+      "bibleReference": "Acts 26:14",
+      "answers": [
+        {
+          "text": "In the Greek language",
+          "isCorrect": false
+        },
+        {
+          "text": "In the Latin language",
+          "isCorrect": false
+        },
+        {
+          "text": "In the language of the Egyptians",
+          "isCorrect": false
+        },
+        {
+          "text": "In the Hebrew language",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the voice say Paul was sent to do for those to whom he was sent?",
+      "explanation": "He was sent to open their eyes, that they might turn from darkness to light and from the power of Satan to God, and receive remission of sins.",
+      "bibleReference": "Acts 26:18",
+      "answers": [
+        {
+          "text": "To open their eyes, that they might turn from darkness to light",
+          "isCorrect": true
+        },
+        {
+          "text": "To number them among the twelve tribes of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "To build them a house of prayer in Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "To teach them to keep the feasts of their fathers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Paul declare that people should do, from Damascus to Judea and to the Gentiles?",
+      "explanation": "Paul declared that they should repent and turn to God, doing works worthy of repentance.",
+      "bibleReference": "Acts 26:20",
+      "answers": [
+        {
+          "text": "Be circumcised and keep the whole law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Go up to Jerusalem to worship in the temple",
+          "isCorrect": false
+        },
+        {
+          "text": "Repent and turn to God, doing works worthy of repentance",
+          "isCorrect": true
+        },
+        {
+          "text": "Sell their goods and give to the poor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Festus say with a loud voice as Paul made his defense?",
+      "explanation": "Festus said with a loud voice, \"Paul, you are crazy! Your great learning is driving you insane!\"",
+      "bibleReference": "Acts 26:24",
+      "answers": [
+        {
+          "text": "That Paul should be taken away and beaten",
+          "isCorrect": false
+        },
+        {
+          "text": "That Paul was crazy and his great learning was driving him insane",
+          "isCorrect": true
+        },
+        {
+          "text": "That Paul had spoken against Caesar and the law",
+          "isCorrect": false
+        },
+        {
+          "text": "That Paul had convinced him of everything he said",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Agrippa say to Paul after Paul asked whether he believed the prophets?",
+      "explanation": "Agrippa said to Paul, \"With a little persuasion are you trying to make me a Christian?\"",
+      "bibleReference": "Acts 26:28",
+      "answers": [
+        {
+          "text": "He said that he believed none of the words of the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "He ordered Paul to be silent and led out of the hearing",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked to be baptized before the governor that day",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked whether Paul was trying with a little persuasion to make him a Christian",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

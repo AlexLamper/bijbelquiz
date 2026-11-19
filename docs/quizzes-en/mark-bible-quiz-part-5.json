@@ -1,0 +1,242 @@
+{
+  "title": "Mark Bible Quiz - Chapter 5",
+  "description": "Ten questions on Mark 5: the man with the legion of unclean spirits, the herd of pigs, the woman who touched his clothes and the daughter of Jairus.",
+  "slug": "mark-bible-quiz-part-5",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Where did the man with the unclean spirit live?",
+      "explanation": "Mark 5:3 says that he lived in the tombs, and nobody could bind him any more, not even with chains.",
+      "bibleReference": "Mark 5:3",
+      "answers": [
+        {
+          "text": "In the tombs",
+          "isCorrect": true
+        },
+        {
+          "text": "In a boat by the shore",
+          "isCorrect": false
+        },
+        {
+          "text": "In the city of the Gadarenes",
+          "isCorrect": false
+        },
+        {
+          "text": "On the roof of a house",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What name did the spirit give when Jesus asked, \"What is your name?\"",
+      "explanation": "He said to him, \"My name is Legion, for we are many.\"",
+      "bibleReference": "Mark 5:9",
+      "answers": [
+        {
+          "text": "Beelzebul",
+          "isCorrect": false
+        },
+        {
+          "text": "Legion",
+          "isCorrect": true
+        },
+        {
+          "text": "Decapolis",
+          "isCorrect": false
+        },
+        {
+          "text": "Gadara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the herd of pigs after the unclean spirits entered them?",
+      "explanation": "The herd of about two thousand rushed down the steep bank into the sea, and they were drowned in the sea.",
+      "bibleReference": "Mark 5:13",
+      "answers": [
+        {
+          "text": "They ran up the mountainside",
+          "isCorrect": false
+        },
+        {
+          "text": "They were driven into the city",
+          "isCorrect": false
+        },
+        {
+          "text": "They were kept by those who fed them",
+          "isCorrect": false
+        },
+        {
+          "text": "They rushed into the sea and drowned",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did the people find the man who had been possessed by demons?",
+      "explanation": "They came and saw him sitting, clothed, and in his right mind, and they were afraid.",
+      "bibleReference": "Mark 5:15",
+      "answers": [
+        {
+          "text": "Still crying out among the tombs",
+          "isCorrect": false
+        },
+        {
+          "text": "Bound with chains and fetters",
+          "isCorrect": false
+        },
+        {
+          "text": "Sitting, clothed and in his right mind",
+          "isCorrect": true
+        },
+        {
+          "text": "Asleep beside the dead pigs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did the man begin to proclaim what Jesus had done for him?",
+      "explanation": "He went his way and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
+      "bibleReference": "Mark 5:20",
+      "answers": [
+        {
+          "text": "In Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "In Decapolis",
+          "isCorrect": true
+        },
+        {
+          "text": "In Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "In Nazareth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was Jairus?",
+      "explanation": "Jairus was one of the rulers of the synagogue, who came and fell at Jesus' feet.",
+      "bibleReference": "Mark 5:22",
+      "answers": [
+        {
+          "text": "One of the rulers of the synagogue",
+          "isCorrect": true
+        },
+        {
+          "text": "A scribe from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "One of those who fed the pigs",
+          "isCorrect": false
+        },
+        {
+          "text": "A physician of the city",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How long had the woman in the crowd had a discharge of blood?",
+      "explanation": "Mark 5:25 says she was a woman who had a discharge of blood for twelve years.",
+      "bibleReference": "Mark 5:25",
+      "answers": [
+        {
+          "text": "Three years",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve years",
+          "isCorrect": true
+        },
+        {
+          "text": "Forty years",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the woman say before she touched his clothes?",
+      "explanation": "She said, \"If I just touch his clothes, I will be made well,\" and she touched his clothes in the crowd.",
+      "bibleReference": "Mark 5:27-28",
+      "answers": [
+        {
+          "text": "That he would lay his hands on her",
+          "isCorrect": false
+        },
+        {
+          "text": "That she must first tell him the truth",
+          "isCorrect": false
+        },
+        {
+          "text": "That the physicians could still help her",
+          "isCorrect": false
+        },
+        {
+          "text": "That touching his clothes would make her well",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say about the child when he came to the synagogue ruler's house?",
+      "explanation": "When he had entered in, he asked why they made an uproar and wept, and said the child is not dead, but is asleep.",
+      "bibleReference": "Mark 5:39",
+      "answers": [
+        {
+          "text": "That she is not dead, but asleep",
+          "isCorrect": true
+        },
+        {
+          "text": "That she would rise on the third day",
+          "isCorrect": false
+        },
+        {
+          "text": "That her father's faith had failed",
+          "isCorrect": false
+        },
+        {
+          "text": "That no one should come inside",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say when he took the child by the hand?",
+      "explanation": "Taking the child by the hand he said to her, \"Talitha cumi!\" which means, \"Girl, I tell you, get up!\"",
+      "bibleReference": "Mark 5:41",
+      "answers": [
+        {
+          "text": "\"Ephphatha!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Talitha cumi!\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Hosanna!\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Be made clean!\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

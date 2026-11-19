@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Bible Quiz - Chapter 16",
+  "description": "Ten questions on 1 Samuel 16: Samuel anoints David, the youngest son of Jesse, and David plays the harp for Saul.",
+  "slug": "1-samuel-bible-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "To whom did Yahweh send Samuel to find a king among his sons?",
+      "explanation": "Yahweh said, \"I will send you to Jesse the Bethlehemite; for I have provided a king for myself among his sons.\"",
+      "bibleReference": "1 Samuel 16:1",
+      "answers": [
+        {
+          "text": "Kish the Benjamite",
+          "isCorrect": false
+        },
+        {
+          "text": "Abinadab of Kiriath Jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "Nahash the Ammonite",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesse the Bethlehemite",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Samuel to take with him to Bethlehem?",
+      "explanation": "Yahweh said, \"Take a heifer with you, and say, I have come to sacrifice to Yahweh.\"",
+      "bibleReference": "1 Samuel 16:2",
+      "answers": [
+        {
+          "text": "A lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "A heifer",
+          "isCorrect": true
+        },
+        {
+          "text": "Two doves",
+          "isCorrect": false
+        },
+        {
+          "text": "A ram",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the elders of Bethlehem ask Samuel when he came?",
+      "explanation": "The elders came to meet him trembling and said, \"Do you come peaceably?\"",
+      "bibleReference": "1 Samuel 16:4",
+      "answers": [
+        {
+          "text": "\"Where is the king?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Why have you come so late?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Do you come peaceably?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Have you brought the ark?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which son of Jesse did Samuel think was surely Yahweh's anointed?",
+      "explanation": "When he looked at Eliab, he said, \"Surely Yahweh's anointed is before him.\"",
+      "bibleReference": "1 Samuel 16:6",
+      "answers": [
+        {
+          "text": "Eliab",
+          "isCorrect": true
+        },
+        {
+          "text": "Shammah",
+          "isCorrect": false
+        },
+        {
+          "text": "Abinadab",
+          "isCorrect": false
+        },
+        {
+          "text": "David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Yahweh, what does Yahweh look at?",
+      "explanation": "Yahweh said, \"Man looks at the outward appearance, but Yahweh looks at the heart.\"",
+      "bibleReference": "1 Samuel 16:7",
+      "answers": [
+        {
+          "text": "The outward appearance",
+          "isCorrect": false
+        },
+        {
+          "text": "The height of a man",
+          "isCorrect": false
+        },
+        {
+          "text": "A man's family",
+          "isCorrect": false
+        },
+        {
+          "text": "The heart",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the youngest son doing when Samuel asked about him?",
+      "explanation": "Jesse said, \"There remains yet the youngest. Behold, he is keeping the sheep.\"",
+      "bibleReference": "1 Samuel 16:11",
+      "answers": [
+        {
+          "text": "Keeping the sheep",
+          "isCorrect": true
+        },
+        {
+          "text": "Working in the field",
+          "isCorrect": false
+        },
+        {
+          "text": "Playing the harp for Saul",
+          "isCorrect": false
+        },
+        {
+          "text": "Fighting the Philistines",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How is the youngest son described when he was brought in?",
+      "explanation": "He was ruddy, with a handsome face and good appearance.",
+      "bibleReference": "1 Samuel 16:12",
+      "answers": [
+        {
+          "text": "Pale, with a stern face",
+          "isCorrect": false
+        },
+        {
+          "text": "Old and gray-headed",
+          "isCorrect": false
+        },
+        {
+          "text": "Ruddy, with a handsome face",
+          "isCorrect": true
+        },
+        {
+          "text": "Short and weak in body",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What came mightily on David from the day he was anointed?",
+      "explanation": "Yahweh's Spirit came mightily on David from that day forward.",
+      "bibleReference": "1 Samuel 16:13",
+      "answers": [
+        {
+          "text": "An evil spirit",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahweh's Spirit",
+          "isCorrect": true
+        },
+        {
+          "text": "A great fear",
+          "isCorrect": false
+        },
+        {
+          "text": "A deep sleep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What kind of man did Saul's servants suggest he seek?",
+      "explanation": "They suggested seeking a man who is a skillful player on the harp.",
+      "bibleReference": "1 Samuel 16:16",
+      "answers": [
+        {
+          "text": "A wise prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "A strong warrior",
+          "isCorrect": false
+        },
+        {
+          "text": "A skilled physician",
+          "isCorrect": false
+        },
+        {
+          "text": "A skillful harp player",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did David become after he came to Saul?",
+      "explanation": "Saul loved him greatly, and David became his armor bearer.",
+      "bibleReference": "1 Samuel 16:21",
+      "answers": [
+        {
+          "text": "Captain of Saul's army",
+          "isCorrect": false
+        },
+        {
+          "text": "Saul's armor bearer",
+          "isCorrect": true
+        },
+        {
+          "text": "Saul's cook",
+          "isCorrect": false
+        },
+        {
+          "text": "A priest of Yahweh",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

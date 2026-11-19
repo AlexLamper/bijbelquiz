@@ -1,0 +1,242 @@
+{
+  "title": "Acts Bible Quiz - Chapter 1",
+  "description": "Ten questions on Acts 1: the promise of the Holy Spirit, Jesus taken up into the sky, and Matthias chosen by lot.",
+  "slug": "acts-bible-quiz-part-1",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "To whom is this book addressed?",
+      "explanation": "The writer says the first book he wrote was for Theophilus, about all that Jesus began to do and to teach.",
+      "bibleReference": "Acts 1:1",
+      "answers": [
+        {
+          "text": "Theophilus",
+          "isCorrect": true
+        },
+        {
+          "text": "The eleven apostles",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders of Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Matthias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Over what period did Jesus appear to them after he suffered?",
+      "explanation": "He showed himself alive by many proofs, appearing to them over a period of forty days and speaking about God's Kingdom.",
+      "bibleReference": "Acts 1:3",
+      "answers": [
+        {
+          "text": "Over seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "Over forty days",
+          "isCorrect": true
+        },
+        {
+          "text": "Over three days",
+          "isCorrect": false
+        },
+        {
+          "text": "Over a full year",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus command them while he was assembled with them?",
+      "explanation": "He commanded them not to depart from Jerusalem, but to wait for the promise of the Father which they had heard from him.",
+      "bibleReference": "Acts 1:4",
+      "answers": [
+        {
+          "text": "To go at once to Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "To draw lots for a twelfth apostle",
+          "isCorrect": false
+        },
+        {
+          "text": "To stay in Jerusalem and wait for the promise",
+          "isCorrect": true
+        },
+        {
+          "text": "To be baptized in water again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Jesus say they would be his witnesses?",
+      "explanation": "He said they would be witnesses to him in Jerusalem, in all Judea and Samaria, and to the uttermost parts of the earth.",
+      "bibleReference": "Acts 1:8",
+      "answers": [
+        {
+          "text": "In Jerusalem and nowhere else",
+          "isCorrect": false
+        },
+        {
+          "text": "In Galilee and in Judea only",
+          "isCorrect": false
+        },
+        {
+          "text": "In the synagogues of Damascus",
+          "isCorrect": false
+        },
+        {
+          "text": "In Jerusalem, Judea, Samaria and the uttermost parts of the earth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What received Jesus out of their sight when he was taken up?",
+      "explanation": "As they were looking, he was taken up, and a cloud received him out of their sight.",
+      "bibleReference": "Acts 1:9",
+      "answers": [
+        {
+          "text": "A cloud",
+          "isCorrect": true
+        },
+        {
+          "text": "A flame of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "A chariot",
+          "isCorrect": false
+        },
+        {
+          "text": "A great light",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the two men in white clothing tell the men of Galilee?",
+      "explanation": "They said that this Jesus, who was received up into the sky, would come back in the same way as they saw him going.",
+      "bibleReference": "Acts 1:10-11",
+      "answers": [
+        {
+          "text": "That he would restore the kingdom at once",
+          "isCorrect": false
+        },
+        {
+          "text": "That he would come back the same way",
+          "isCorrect": true
+        },
+        {
+          "text": "That they should go home to Galilee",
+          "isCorrect": false
+        },
+        {
+          "text": "That they would never see him again",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From which mountain did they return to Jerusalem?",
+      "explanation": "They returned to Jerusalem from the mountain called Olivet, which is near Jerusalem, a Sabbath day's journey away.",
+      "bibleReference": "Acts 1:12",
+      "answers": [
+        {
+          "text": "The mountain called Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain in Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain called Zion",
+          "isCorrect": false
+        },
+        {
+          "text": "The mountain called Olivet",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "About how many names were there when Peter stood up among the disciples?",
+      "explanation": "Peter stood up in the middle of the disciples, and the number of names was about one hundred twenty.",
+      "bibleReference": "Acts 1:15",
+      "answers": [
+        {
+          "text": "About twelve",
+          "isCorrect": false
+        },
+        {
+          "text": "About five hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "About one hundred twenty",
+          "isCorrect": true
+        },
+        {
+          "text": "About three thousand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was the field called in the language of those living in Jerusalem?",
+      "explanation": "It became known to everyone in Jerusalem that in their language the field was called Akeldama, that is, The field of blood.",
+      "bibleReference": "Acts 1:19",
+      "answers": [
+        {
+          "text": "Akeldama",
+          "isCorrect": true
+        },
+        {
+          "text": "Olivet",
+          "isCorrect": false
+        },
+        {
+          "text": "Gethsemane",
+          "isCorrect": false
+        },
+        {
+          "text": "Straight",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "On whom did the lot fall when two men were put forward?",
+      "explanation": "They drew lots for them, the lot fell on Matthias, and he was counted with the eleven apostles.",
+      "bibleReference": "Acts 1:23-26",
+      "answers": [
+        {
+          "text": "Joseph called Barsabbas",
+          "isCorrect": false
+        },
+        {
+          "text": "Judas the son of James",
+          "isCorrect": false
+        },
+        {
+          "text": "Matthias",
+          "isCorrect": true
+        },
+        {
+          "text": "James the son of Alphaeus",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Romans Bible Quiz - Chapter 11",
+  "description": "Ten questions on Romans 11: the remnant of grace, Elijah's complaint, the grafted wild olive, and the unsearchable judgments of God.",
+  "slug": "romans-bible-quiz-part-11",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "Of which tribe does the writer say he is?",
+      "explanation": "Romans 11:1 says he also is an Israelite, a descendant of Abraham, of the tribe of Benjamin.",
+      "bibleReference": "Romans 11:1",
+      "answers": [
+        {
+          "text": "Benjamin",
+          "isCorrect": true
+        },
+        {
+          "text": "Judah",
+          "isCorrect": false
+        },
+        {
+          "text": "Levi",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many men did God say he had reserved for himself who had not bowed the knee to Baal?",
+      "explanation": "Romans 11:2-4 say that Elijah pleads with God against Israel, and that God answers him, “I have reserved for myself seven thousand men who have not bowed the knee to Baal.”",
+      "bibleReference": "Romans 11:2-4",
+      "answers": [
+        {
+          "text": "Three hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Twelve thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "A hundred and forty-four",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to what is there a remnant at this present time?",
+      "explanation": "Romans 11:5 says that even so at this present time also there is a remnant according to the election of grace.",
+      "bibleReference": "Romans 11:5",
+      "answers": [
+        {
+          "text": "The works of the law",
+          "isCorrect": false
+        },
+        {
+          "text": "The order of the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "The election of grace",
+          "isCorrect": true
+        },
+        {
+          "text": "The counsel of the elders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the quotation say God gave them?",
+      "explanation": "Romans 11:8 quotes that God gave them a spirit of stupor, eyes that they should not see, and ears that they should not hear, to this very day.",
+      "bibleReference": "Romans 11:8",
+      "answers": [
+        {
+          "text": "A spirit of adoption",
+          "isCorrect": false
+        },
+        {
+          "text": "A heart of flesh",
+          "isCorrect": false
+        },
+        {
+          "text": "A new tongue",
+          "isCorrect": false
+        },
+        {
+          "text": "A spirit of stupor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom has salvation come by their fall?",
+      "explanation": "Romans 11:11 says that by their fall salvation has come to the Gentiles, to provoke them to jealousy.",
+      "bibleReference": "Romans 11:11",
+      "answers": [
+        {
+          "text": "To the Gentiles",
+          "isCorrect": true
+        },
+        {
+          "text": "To the priests",
+          "isCorrect": false
+        },
+        {
+          "text": "To the prophets",
+          "isCorrect": false
+        },
+        {
+          "text": "To the kings of the earth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What is the person who was grafted in among the branches called?",
+      "explanation": "Romans 11:17 says that some of the branches were broken off and that you, being a wild olive, were grafted in among them.",
+      "bibleReference": "Romans 11:17",
+      "answers": [
+        {
+          "text": "A fruitful vine",
+          "isCorrect": false
+        },
+        {
+          "text": "A wild olive",
+          "isCorrect": true
+        },
+        {
+          "text": "A green fig tree",
+          "isCorrect": false
+        },
+        {
+          "text": "A cedar of Lebanon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about the root and the one who boasts?",
+      "explanation": "Romans 11:18 says not to boast over the branches, because it is not you who support the root, but the root supports you.",
+      "bibleReference": "Romans 11:18",
+      "answers": [
+        {
+          "text": "You support the root",
+          "isCorrect": false
+        },
+        {
+          "text": "The branches support the root",
+          "isCorrect": false
+        },
+        {
+          "text": "The root supports you",
+          "isCorrect": true
+        },
+        {
+          "text": "The root and the branches support each other",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Why were the branches broken off, according to the text?",
+      "explanation": "Romans 11:20 says that by their unbelief they were broken off, and that you stand by your faith.",
+      "bibleReference": "Romans 11:20",
+      "answers": [
+        {
+          "text": "By their poverty",
+          "isCorrect": false
+        },
+        {
+          "text": "By the hardness of the soil",
+          "isCorrect": false
+        },
+        {
+          "text": "By the wrath of the rulers",
+          "isCorrect": false
+        },
+        {
+          "text": "By their unbelief",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What has happened to Israel until the fullness of the Gentiles has come in?",
+      "explanation": "Romans 11:25 says the writer does not want them ignorant of this mystery, that a partial hardening has happened to Israel until the fullness of the Gentiles has come in.",
+      "bibleReference": "Romans 11:25",
+      "answers": [
+        {
+          "text": "A partial hardening",
+          "isCorrect": true
+        },
+        {
+          "text": "A complete rejection",
+          "isCorrect": false
+        },
+        {
+          "text": "A full restoration",
+          "isCorrect": false
+        },
+        {
+          "text": "A lasting famine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the text say about the gifts and the calling of God?",
+      "explanation": "Romans 11:29 says that the gifts and the calling of God are irrevocable.",
+      "bibleReference": "Romans 11:29",
+      "answers": [
+        {
+          "text": "They are given only to the strong",
+          "isCorrect": false
+        },
+        {
+          "text": "They are irrevocable",
+          "isCorrect": true
+        },
+        {
+          "text": "They last for a single generation",
+          "isCorrect": false
+        },
+        {
+          "text": "They are earned by works",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

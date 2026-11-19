@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 24",
+  "description": "Ten questions on Numbers 24: Balaam's third and fourth parables, the star out of Jacob, and his words about Amalek, the Kenite and Kittim.",
+  "slug": "numbers-bible-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Balaam do differently this time when he saw that it pleased Yahweh to bless Israel?",
+      "explanation": "He did not go to use divination as at the other times, but set his face toward the wilderness.",
+      "bibleReference": "Numbers 24:1",
+      "answers": [
+        {
+          "text": "He set his face toward the wilderness without divination",
+          "isCorrect": true
+        },
+        {
+          "text": "He went home to Aram without speaking a word",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked Balak for more silver and gold first",
+          "isCorrect": false
+        },
+        {
+          "text": "He fasted alone for three days on the mountain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What came on Balaam when he saw Israel dwelling according to their tribes?",
+      "explanation": "Balaam lifted up his eyes, saw Israel dwelling according to their tribes, and the Spirit of God came on him.",
+      "bibleReference": "Numbers 24:2",
+      "answers": [
+        {
+          "text": "A deep sleep",
+          "isCorrect": false
+        },
+        {
+          "text": "A great fear",
+          "isCorrect": false
+        },
+        {
+          "text": "The Spirit of God",
+          "isCorrect": true
+        },
+        {
+          "text": "Blindness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which words did Balaam use to praise Israel's tents?",
+      "explanation": "Balaam said, \"How goodly are your tents, Jacob, and your dwellings, Israel!\"",
+      "bibleReference": "Numbers 24:5",
+      "answers": [
+        {
+          "text": "\"How mighty are your armies, Jacob\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"How goodly are your tents, Jacob\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"How wide are your borders, Israel\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"How rich are your flocks, Israel\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who did Balaam say Israel's king would be higher than?",
+      "explanation": "Balaam said, \"His king shall be higher than Agag. His kingdom shall be exalted.\"",
+      "bibleReference": "Numbers 24:7",
+      "answers": [
+        {
+          "text": "Pharaoh",
+          "isCorrect": false
+        },
+        {
+          "text": "Sihon",
+          "isCorrect": false
+        },
+        {
+          "text": "Og",
+          "isCorrect": false
+        },
+        {
+          "text": "Agag",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Balaam say about everyone who blesses Israel?",
+      "explanation": "Balaam said, \"Everyone who blesses you is blessed. Everyone who curses you is cursed.\"",
+      "bibleReference": "Numbers 24:9",
+      "answers": [
+        {
+          "text": "They will rule over Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "They are blessed",
+          "isCorrect": true
+        },
+        {
+          "text": "They will become rich",
+          "isCorrect": false
+        },
+        {
+          "text": "They will live long in the land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Balak do when his anger burned against Balaam?",
+      "explanation": "Balak's anger burned against Balaam and he struck his hands together, saying Balaam had blessed his enemies these three times.",
+      "bibleReference": "Numbers 24:10",
+      "answers": [
+        {
+          "text": "He struck his hands together",
+          "isCorrect": true
+        },
+        {
+          "text": "He tore his clothes",
+          "isCorrect": false
+        },
+        {
+          "text": "He threw dust on his head",
+          "isCorrect": false
+        },
+        {
+          "text": "He broke the altars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Balaam see coming out of Jacob in his vision of what was \"not near\"?",
+      "explanation": "Balaam said, \"A star will come out of Jacob. A scepter will rise out of Israel.\"",
+      "bibleReference": "Numbers 24:17",
+      "answers": [
+        {
+          "text": "A river",
+          "isCorrect": false
+        },
+        {
+          "text": "A cloud",
+          "isCorrect": false
+        },
+        {
+          "text": "A flame",
+          "isCorrect": false
+        },
+        {
+          "text": "A star",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Balaam say about Amalek?",
+      "explanation": "He said, \"Amalek was the first of the nations, but his latter end shall come to destruction.\"",
+      "bibleReference": "Numbers 24:20",
+      "answers": [
+        {
+          "text": "It would become Israel's servant for all generations",
+          "isCorrect": false
+        },
+        {
+          "text": "It would be blessed above all the nations of the earth",
+          "isCorrect": false
+        },
+        {
+          "text": "It was the first of the nations, but would come to destruction",
+          "isCorrect": true
+        },
+        {
+          "text": "It would join with Israel to fight against Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Balaam say the Kenite's nest was set?",
+      "explanation": "Looking at the Kenite, Balaam said, \"Your dwelling place is strong. Your nest is set in the rock.\"",
+      "bibleReference": "Numbers 24:21",
+      "answers": [
+        {
+          "text": "In the rock",
+          "isCorrect": true
+        },
+        {
+          "text": "In the cedar trees",
+          "isCorrect": false
+        },
+        {
+          "text": "On the high mountains",
+          "isCorrect": false
+        },
+        {
+          "text": "By the river",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where did Balaam say ships would come from?",
+      "explanation": "Balaam said, \"But ships shall come from the coast of Kittim. They shall afflict Asshur, and shall afflict Eber.\"",
+      "bibleReference": "Numbers 24:24",
+      "answers": [
+        {
+          "text": "The coast of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "The land of Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "The Red Sea",
+          "isCorrect": false
+        },
+        {
+          "text": "The coast of Kittim",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

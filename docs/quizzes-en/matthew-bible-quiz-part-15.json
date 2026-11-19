@@ -1,0 +1,242 @@
+{
+  "title": "Matthew Bible Quiz - Chapter 15",
+  "description": "Ten questions on Matthew 15: the tradition of the elders, what defiles a man, the Canaanite woman and the four thousand fed.",
+  "slug": "matthew-bible-quiz-part-15",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the Pharisees and scribes from Jerusalem complain about?",
+      "explanation": "They asked why his disciples disobey the tradition of the elders, since they don't wash their hands when they eat bread.",
+      "bibleReference": "Matthew 15:2",
+      "answers": [
+        {
+          "text": "His disciples pluck grain on the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "His disciples don't wash their hands",
+          "isCorrect": true
+        },
+        {
+          "text": "His disciples don't fast like the Pharisees",
+          "isCorrect": false
+        },
+        {
+          "text": "His disciples eat with tax collectors",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which commandment of God did he quote about parents?",
+      "explanation": "He said that God commanded: Honor your father and your mother.",
+      "bibleReference": "Matthew 15:4",
+      "answers": [
+        {
+          "text": "Honor your father and your mother",
+          "isCorrect": true
+        },
+        {
+          "text": "You shall not make false vows",
+          "isCorrect": false
+        },
+        {
+          "text": "Love your neighbor as yourself",
+          "isCorrect": false
+        },
+        {
+          "text": "You shall not swear by your head",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the quotation from Isaiah say about these people's heart?",
+      "explanation": "The quotation says they draw near with their mouth and honor him with their lips, but their heart is far from him.",
+      "bibleReference": "Matthew 15:8",
+      "answers": [
+        {
+          "text": "Their heart is pure before him",
+          "isCorrect": false
+        },
+        {
+          "text": "They honor him in secret",
+          "isCorrect": false
+        },
+        {
+          "text": "Their lips are closed to him",
+          "isCorrect": false
+        },
+        {
+          "text": "Their heart is far from him",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus say defiles a man?",
+      "explanation": "He said that what enters into the mouth doesn't defile the man, but what proceeds out of the mouth defiles him.",
+      "bibleReference": "Matthew 15:11",
+      "answers": [
+        {
+          "text": "What enters into the mouth",
+          "isCorrect": false
+        },
+        {
+          "text": "Eating with unwashed hands",
+          "isCorrect": false
+        },
+        {
+          "text": "What comes out of the mouth",
+          "isCorrect": true
+        },
+        {
+          "text": "Bread eaten with the Gentiles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus call the Pharisees who were offended by his saying?",
+      "explanation": "He told the disciples to leave them alone, because they are blind guides of the blind.",
+      "bibleReference": "Matthew 15:14",
+      "answers": [
+        {
+          "text": "Guides of the lost sheep",
+          "isCorrect": false
+        },
+        {
+          "text": "Blind guides of the blind",
+          "isCorrect": true
+        },
+        {
+          "text": "Teachers of the law of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "Children of the Kingdom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "According to Matthew 15:19, what comes out of the heart?",
+      "explanation": "Out of the heart come evil thoughts, murders, adulteries, sexual sins, thefts, false testimony and blasphemies.",
+      "bibleReference": "Matthew 15:19",
+      "answers": [
+        {
+          "text": "Evil thoughts, murders and thefts",
+          "isCorrect": true
+        },
+        {
+          "text": "Mercy, peace and truth",
+          "isCorrect": false
+        },
+        {
+          "text": "Unwashed hands and bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Rules taught as doctrine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who came out from the borders of Tyre and Sidon crying for mercy for her daughter?",
+      "explanation": "A Canaanite woman came out from those borders and cried for mercy, because her daughter was severely possessed by a demon.",
+      "bibleReference": "Matthew 15:21-22",
+      "answers": [
+        {
+          "text": "A ruler of the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "A centurion from Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "A woman of Magdala",
+          "isCorrect": false
+        },
+        {
+          "text": "A Canaanite woman",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the woman answer about the dogs?",
+      "explanation": "She said: Yes, Lord, but even the dogs eat the crumbs which fall from their masters' table.",
+      "bibleReference": "Matthew 15:27",
+      "answers": [
+        {
+          "text": "The children's bread is enough for all",
+          "isCorrect": false
+        },
+        {
+          "text": "She would wait until the children ate",
+          "isCorrect": false
+        },
+        {
+          "text": "Even the dogs eat the crumbs from the table",
+          "isCorrect": true
+        },
+        {
+          "text": "She asked for bread for the dogs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did the multitude glorify when they saw the mute speaking and the lame walking?",
+      "explanation": "The multitude wondered at what they saw and glorified the God of Israel.",
+      "bibleReference": "Matthew 15:31",
+      "answers": [
+        {
+          "text": "The God of Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "The scribes from Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "The Canaanite woman",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophet Isaiah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How many men ate, in addition to women and children?",
+      "explanation": "Those who ate were four thousand men, in addition to women and children.",
+      "bibleReference": "Matthew 15:38",
+      "answers": [
+        {
+          "text": "Five thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "Four thousand",
+          "isCorrect": true
+        },
+        {
+          "text": "Three thousand",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 132",
+  "description": "Ten questions on Psalms 132: David's vow to find a place for Yahweh, the ark and Yahweh's oath to David about Zion.",
+  "slug": "psalms-bible-quiz-part-132",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What does the psalmist ask Yahweh to remember in verse 1?",
+      "explanation": "Psalms 132:1 says, \"Yahweh, remember David and all his affliction.\"",
+      "bibleReference": "Psalms 132:1",
+      "answers": [
+        {
+          "text": "Abraham and his covenant",
+          "isCorrect": false
+        },
+        {
+          "text": "Moses and his staff",
+          "isCorrect": false
+        },
+        {
+          "text": "Solomon and his wisdom",
+          "isCorrect": false
+        },
+        {
+          "text": "David and all his affliction",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "To whom did David vow, according to verse 2?",
+      "explanation": "Psalms 132:2 says he swore to Yahweh and vowed to the Mighty One of Jacob.",
+      "bibleReference": "Psalms 132:2",
+      "answers": [
+        {
+          "text": "The Holy One of Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "The Mighty One of Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "The Shepherd of Joseph",
+          "isCorrect": false
+        },
+        {
+          "text": "The King of Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did David swear he would not give to his eyes?",
+      "explanation": "Psalms 132:4 says, \"I will not give sleep to my eyes, or slumber to my eyelids.\"",
+      "bibleReference": "Psalms 132:4",
+      "answers": [
+        {
+          "text": "Tears",
+          "isCorrect": false
+        },
+        {
+          "text": "Rest from weeping",
+          "isCorrect": false
+        },
+        {
+          "text": "Sleep",
+          "isCorrect": true
+        },
+        {
+          "text": "Light",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Until what would David keep this vow?",
+      "explanation": "Psalms 132:5 says, \"until I find out a place for Yahweh, a dwelling for the Mighty One of Jacob.\"",
+      "bibleReference": "Psalms 132:5",
+      "answers": [
+        {
+          "text": "Until he found a place for Yahweh",
+          "isCorrect": true
+        },
+        {
+          "text": "Until he had defeated his enemies",
+          "isCorrect": false
+        },
+        {
+          "text": "Until he had built a palace for himself",
+          "isCorrect": false
+        },
+        {
+          "text": "Until his son became king",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where does verse 6 say \"we heard of it\"?",
+      "explanation": "Psalms 132:6 says, \"Behold, we heard of it in Ephrathah.\"",
+      "bibleReference": "Psalms 132:6",
+      "answers": [
+        {
+          "text": "In Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "In Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "In Ephrathah",
+          "isCorrect": true
+        },
+        {
+          "text": "In Hebron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where do they say they will worship in verse 7?",
+      "explanation": "Psalms 132:7 says, \"We will worship at his footstool.\"",
+      "bibleReference": "Psalms 132:7",
+      "answers": [
+        {
+          "text": "At the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "On the high places",
+          "isCorrect": false
+        },
+        {
+          "text": "By the river",
+          "isCorrect": false
+        },
+        {
+          "text": "At his footstool",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Together with whom or what is Yahweh asked to arise into his resting place?",
+      "explanation": "Psalms 132:8 says, \"Arise, Yahweh, into your resting place, you, and the ark of your strength.\"",
+      "bibleReference": "Psalms 132:8",
+      "answers": [
+        {
+          "text": "The ark of his strength",
+          "isCorrect": true
+        },
+        {
+          "text": "The tablets of stone",
+          "isCorrect": false
+        },
+        {
+          "text": "The pillar of cloud",
+          "isCorrect": false
+        },
+        {
+          "text": "The golden lampstand",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh swear to David in truth?",
+      "explanation": "Psalms 132:11 says, \"I will set the fruit of your body on your throne.\"",
+      "bibleReference": "Psalms 132:11",
+      "answers": [
+        {
+          "text": "To give him a land of rest",
+          "isCorrect": false
+        },
+        {
+          "text": "To set the fruit of his body on his throne",
+          "isCorrect": true
+        },
+        {
+          "text": "To make his name like the stars",
+          "isCorrect": false
+        },
+        {
+          "text": "To build him a house of cedar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What has Yahweh chosen and desired for his habitation?",
+      "explanation": "Psalms 132:13 says, \"For Yahweh has chosen Zion. He has desired it for his habitation.\"",
+      "bibleReference": "Psalms 132:13",
+      "answers": [
+        {
+          "text": "Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "Shiloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Zion",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "With what will Yahweh satisfy Zion's poor?",
+      "explanation": "Psalms 132:15 says, \"I will satisfy her poor with bread.\"",
+      "bibleReference": "Psalms 132:15",
+      "answers": [
+        {
+          "text": "Oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Milk and honey",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread",
+          "isCorrect": true
+        },
+        {
+          "text": "Wine",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

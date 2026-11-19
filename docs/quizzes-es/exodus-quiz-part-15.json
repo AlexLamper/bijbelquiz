@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Éxodo 15: el cántico de Moisés junto al mar, el pandero de María, las aguas amargas de Mara y las fuentes de Elim.",
+  "slug": "exodus-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes cantaron este cántico a Jehová?",
+      "explanation": "Entonces cantaron Moisés y los hijos de Israel este cántico a Jehová.",
+      "bibleReference": "Éxodo 15:1",
+      "answers": [
+        {
+          "text": "Aarón y los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés y los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Las mujeres de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el cántico a Jehová en el versículo 3?",
+      "explanation": "El cántico dice: Jehová, varón de guerra; Jehová es su nombre.",
+      "bibleReference": "Éxodo 15:3",
+      "answers": [
+        {
+          "text": "Varón de guerra",
+          "isCorrect": true
+        },
+        {
+          "text": "Pastor de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Padre de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Rey de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿cómo descendieron a los profundos los que cubrieron los abismos?",
+      "explanation": "El cántico dice que los abismos los cubrieron y que descendieron a los profundos como piedra.",
+      "bibleReference": "Éxodo 15:5",
+      "answers": [
+        {
+          "text": "Como el humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la paja",
+          "isCorrect": false
+        },
+        {
+          "text": "Como piedra",
+          "isCorrect": true
+        },
+        {
+          "text": "Como la cera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando sopló con su viento y la mar los cubrió, ¿cómo se hundieron?",
+      "explanation": "El cántico dice que al soplar con su viento la mar los cubrió y se hundieron como plomo en las impetuosas aguas.",
+      "bibleReference": "Éxodo 15:10",
+      "answers": [
+        {
+          "text": "Como la arena",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la cera",
+          "isCorrect": false
+        },
+        {
+          "text": "Como plomo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde dice el cántico que llevó con su fortaleza al pueblo que salvó?",
+      "explanation": "Dice que lo condujo en su misericordia y lo llevó con su fortaleza a la habitación de su santuario.",
+      "bibleReference": "Éxodo 15:13",
+      "answers": [
+        {
+          "text": "A la tierra de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "A la habitación de su santuario",
+          "isCorrect": true
+        },
+        {
+          "text": "A las ciudades de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A los montes de Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué declara el cántico acerca del reinado de Jehová?",
+      "explanation": "El cántico declara: Jehová reinará por los siglos de los siglos.",
+      "bibleReference": "Éxodo 15:18",
+      "answers": [
+        {
+          "text": "Que reinará por los siglos de los siglos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que reinará sobre Egipto solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que entregará su reino a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que reinará hasta que pase el mar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomó María la profetisa en su mano?",
+      "explanation": "María la profetisa, hermana de Aarón, tomó un pandero en su mano, y todas las mujeres salieron en pos de ella con panderos y danzas.",
+      "bibleReference": "Éxodo 15:20",
+      "answers": [
+        {
+          "text": "Una arpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vara",
+          "isCorrect": false
+        },
+        {
+          "text": "Una jofaina",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pandero",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no pudieron beber las aguas de Mara?",
+      "explanation": "Llegaron a Mara y no pudieron beber las aguas de Mara, porque eran amargas; por eso le pusieron ese nombre.",
+      "bibleReference": "Éxodo 15:23",
+      "answers": [
+        {
+          "text": "Porque estaban secas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque eran de los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque eran amargas",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Moisés lo había prohibido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mostró Jehová a Moisés para que las aguas se endulzasen?",
+      "explanation": "Moisés clamó a Jehová, y Jehová le mostró un árbol; al meterlo dentro de las aguas, las aguas se endulzaron.",
+      "bibleReference": "Éxodo 15:25",
+      "answers": [
+        {
+          "text": "Un árbol",
+          "isCorrect": true
+        },
+        {
+          "text": "Una peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manojo de hisopo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un vaso de miel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había en Elim, donde asentaron junto a las aguas?",
+      "explanation": "Llegaron a Elim, donde había doce fuentes de aguas y setenta palmas, y asentaron allí junto a las aguas.",
+      "bibleReference": "Éxodo 15:27",
+      "answers": [
+        {
+          "text": "Setenta fuentes y doce palmas",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce fuentes y setenta palmas",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce pozos y doce palmas",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta pozos y setenta palmas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

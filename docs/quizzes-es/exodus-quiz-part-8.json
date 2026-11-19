@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Éxodo 8: las ranas, los piojos y las moscas sobre Egipto, y el corazón de Faraón que se agrava.",
+  "slug": "exodus-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué heriría Jehová todos los términos de Faraón si no dejaba ir al pueblo?",
+      "explanation": "Jehová mandó decir que, si no quería dejar ir al pueblo, heriría con ranas todos sus términos.",
+      "bibleReference": "Éxodo 8:2",
+      "answers": [
+        {
+          "text": "Con langosta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con ranas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con tinieblas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde dijo Jehová que subirían las ranas?",
+      "explanation": "Dijo que el río criaría ranas que entrarían en su casa, en su cama, en las casas de sus siervos, en sus hornos y en sus artesas.",
+      "bibleReference": "Éxodo 8:3",
+      "answers": [
+        {
+          "text": "Al mar Bermejo y a sus riberas",
+          "isCorrect": false
+        },
+        {
+          "text": "A la tierra de Gosén solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "A los campos de cebada y lino",
+          "isCorrect": false
+        },
+        {
+          "text": "A sus casas, camas, hornos y artesas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los encantadores cuando vinieron las ranas?",
+      "explanation": "Los encantadores hicieron lo mismo con sus encantamientos e hicieron venir ranas sobre la tierra de Egipto.",
+      "bibleReference": "Éxodo 8:7",
+      "answers": [
+        {
+          "text": "También hicieron venir ranas",
+          "isCorrect": true
+        },
+        {
+          "text": "No pudieron hacer nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitaron las ranas del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Mataron las ranas de las casas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para cuándo pidió Faraón que fueran quitadas las ranas?",
+      "explanation": "Cuando Moisés le preguntó cuándo oraría por él, Faraón dijo: Mañana.",
+      "bibleReference": "Éxodo 8:9-10",
+      "answers": [
+        {
+          "text": "Para aquel mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Para el séptimo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Para mañana",
+          "isCorrect": true
+        },
+        {
+          "text": "Para después de tres días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con las ranas muertas?",
+      "explanation": "Murieron las ranas de las casas, de los cortijos y de los campos, y las juntaron en montones, y apestaban la tierra.",
+      "bibleReference": "Éxodo 8:13-14",
+      "answers": [
+        {
+          "text": "Las echaron al río",
+          "isCorrect": false
+        },
+        {
+          "text": "Las quemaron en los hornos",
+          "isCorrect": false
+        },
+        {
+          "text": "Se las comieron las aves",
+          "isCorrect": false
+        },
+        {
+          "text": "Las juntaron en montones y apestaban",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué se volvió el polvo de la tierra cuando Aarón lo hirió?",
+      "explanation": "Aarón extendió su mano con su vara e hirió el polvo de la tierra, el cual se volvió piojos en los hombres y en las bestias.",
+      "bibleReference": "Éxodo 8:17",
+      "answers": [
+        {
+          "text": "En piojos",
+          "isCorrect": true
+        },
+        {
+          "text": "En moscas",
+          "isCorrect": false
+        },
+        {
+          "text": "En ranas",
+          "isCorrect": false
+        },
+        {
+          "text": "En sangre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los magos a Faraón cuando no pudieron sacar piojos?",
+      "explanation": "Los magos no pudieron sacar piojos con sus encantamientos y dijeron a Faraón: Dedo de Dios es este.",
+      "bibleReference": "Éxodo 8:18-19",
+      "answers": [
+        {
+          "text": "Jehová es justo",
+          "isCorrect": false
+        },
+        {
+          "text": "He pecado contra Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Dedo de Dios es este",
+          "isCorrect": true
+        },
+        {
+          "text": "Mañana será esta señal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tierra apartaría Jehová para que no hubiera moscas en ella?",
+      "explanation": "Jehová dijo que apartaría la tierra de Gosén, en la cual habita su pueblo, para que no hubiese allí ninguna suerte de moscas.",
+      "bibleReference": "Éxodo 8:22",
+      "answers": [
+        {
+          "text": "La tierra de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Gosén",
+          "isCorrect": true
+        },
+        {
+          "text": "La tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad de Raamses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dijo Moisés que no convenía sacrificar en la tierra de Egipto?",
+      "explanation": "Moisés dijo que sacrificarían a Jehová la abominación de los Egipcios, y preguntó si no los apedrearían por hacerlo delante de ellos.",
+      "bibleReference": "Éxodo 8:26",
+      "answers": [
+        {
+          "text": "Porque los Egipcios los apedrearían",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el camino era de tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no tenían ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Faraón no lo había oído",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Faraón después que Jehová quitó las moscas?",
+      "explanation": "Jehová quitó todas las moscas sin que quedara una, pero Faraón agravó aun esta vez su corazón y no dejó ir al pueblo.",
+      "bibleReference": "Éxodo 8:31-32",
+      "answers": [
+        {
+          "text": "Dejó ir al pueblo con sus ganados",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamó otra vez a los magos",
+          "isCorrect": false
+        },
+        {
+          "text": "Oró a Jehová por su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Agravó su corazón y no dejó ir al pueblo",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

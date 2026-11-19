@@ -1,0 +1,242 @@
+{
+  "title": "Ruth Bible Quiz - Chapter 3",
+  "description": "Ten questions on Ruth 3: Naomi's plan, Ruth at the threshing floor, and Boaz's promise.",
+  "slug": "ruth-bible-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Naomi say Boaz would be doing that night?",
+      "explanation": "Naomi said Boaz would be winnowing barley that night on the threshing floor.",
+      "bibleReference": "Ruth 3:2",
+      "answers": [
+        {
+          "text": "Sitting with the elders at the gate",
+          "isCorrect": false
+        },
+        {
+          "text": "Guarding his vineyards",
+          "isCorrect": false
+        },
+        {
+          "text": "Winnowing barley on the threshing floor",
+          "isCorrect": true
+        },
+        {
+          "text": "Holding a feast for his reapers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Until when did Naomi tell Ruth not to make herself known to Boaz?",
+      "explanation": "Naomi said not to make herself known to the man until he had finished eating and drinking.",
+      "bibleReference": "Ruth 3:3",
+      "answers": [
+        {
+          "text": "Until he had finished eating and drinking",
+          "isCorrect": true
+        },
+        {
+          "text": "Until the sun came up",
+          "isCorrect": false
+        },
+        {
+          "text": "Until the reapers had gone home",
+          "isCorrect": false
+        },
+        {
+          "text": "Until he called her by name",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Ruth to do when Boaz lay down?",
+      "explanation": "Naomi told her to note the place where he lay, go in, uncover his feet, and lie down.",
+      "bibleReference": "Ruth 3:4",
+      "answers": [
+        {
+          "text": "Wake him and speak to him",
+          "isCorrect": false
+        },
+        {
+          "text": "Bring him a jar of water",
+          "isCorrect": false
+        },
+        {
+          "text": "Sit by the door until morning",
+          "isCorrect": false
+        },
+        {
+          "text": "Uncover his feet and lie down",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How did Ruth answer Naomi's instructions?",
+      "explanation": "Ruth said to her, \"All that you say, I will do.\"",
+      "bibleReference": "Ruth 3:5",
+      "answers": [
+        {
+          "text": "\"I am afraid to go there.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"All that you say, I will do.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Let me wait until tomorrow.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Send Orpah instead of me.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "At what time was Boaz startled to find a woman at his feet?",
+      "explanation": "At midnight the man was startled and turned himself, and a woman lay at his feet.",
+      "bibleReference": "Ruth 3:8",
+      "answers": [
+        {
+          "text": "At midnight",
+          "isCorrect": true
+        },
+        {
+          "text": "At dawn",
+          "isCorrect": false
+        },
+        {
+          "text": "At evening",
+          "isCorrect": false
+        },
+        {
+          "text": "At noon",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Ruth ask Boaz to do, since he was a near kinsman?",
+      "explanation": "Ruth said, \"Spread the corner of your garment over your servant; for you are a near kinsman.\"",
+      "bibleReference": "Ruth 3:9",
+      "answers": [
+        {
+          "text": "Give her more barley for Naomi",
+          "isCorrect": false
+        },
+        {
+          "text": "Take her back to the city",
+          "isCorrect": false
+        },
+        {
+          "text": "Spread the corner of his garment over her",
+          "isCorrect": true
+        },
+        {
+          "text": "Speak to the elders for her",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Boaz say all the city knew about Ruth?",
+      "explanation": "Boaz said, \"All the city of my people knows that you are a worthy woman.\"",
+      "bibleReference": "Ruth 3:11",
+      "answers": [
+        {
+          "text": "That she was a rich woman",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was a worthy woman",
+          "isCorrect": true
+        },
+        {
+          "text": "That she was a prophetess",
+          "isCorrect": false
+        },
+        {
+          "text": "That she was a daughter of his own family",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Boaz tell Ruth about his place as a near kinsman?",
+      "explanation": "Boaz said that he was a near kinsman, but that there was a kinsman nearer than he.",
+      "bibleReference": "Ruth 3:12",
+      "answers": [
+        {
+          "text": "He had no right to redeem at all",
+          "isCorrect": false
+        },
+        {
+          "text": "Naomi first had to agree to it",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders had already chosen him",
+          "isCorrect": false
+        },
+        {
+          "text": "There was a kinsman nearer than he",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many measures of barley did Boaz put on Ruth's mantle?",
+      "explanation": "He measured six measures of barley and laid it on her, then went into the city.",
+      "bibleReference": "Ruth 3:15",
+      "answers": [
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": false
+        },
+        {
+          "text": "Six",
+          "isCorrect": true
+        },
+        {
+          "text": "Two",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Naomi say about Boaz after Ruth told her what had happened?",
+      "explanation": "Naomi said, \"The man will not rest until he has settled this today.\"",
+      "bibleReference": "Ruth 3:18",
+      "answers": [
+        {
+          "text": "He would not rest until he settled it that day",
+          "isCorrect": true
+        },
+        {
+          "text": "He would wait until the harvest was over",
+          "isCorrect": false
+        },
+        {
+          "text": "He would soon forget the whole matter",
+          "isCorrect": false
+        },
+        {
+          "text": "He would ask Ruth to return to Moab",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

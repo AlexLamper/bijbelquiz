@@ -1,0 +1,242 @@
+{
+  "title": "Psalms Bible Quiz - Chapter 20",
+  "description": "Ten questions on Psalms 20: a prayer that Yahweh will answer in the day of trouble, banners in God's name, and trust not in chariots or horses.",
+  "slug": "psalms-bible-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "On what day does the psalm pray that Yahweh will answer you?",
+      "explanation": "Psalms 20:1 says, \"May Yahweh answer you in the day of trouble.\"",
+      "bibleReference": "Psalms 20:1",
+      "answers": [
+        {
+          "text": "The day of harvest",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of the feast",
+          "isCorrect": false
+        },
+        {
+          "text": "The Sabbath day",
+          "isCorrect": false
+        },
+        {
+          "text": "The day of trouble",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Whose name may set you up on high?",
+      "explanation": "Psalms 20:1 says, \"May the name of the God of Jacob set you up on high.\"",
+      "bibleReference": "Psalms 20:1",
+      "answers": [
+        {
+          "text": "The God of Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "The God of Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "The God of Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The God of David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From where may Yahweh send help, according to verse 2?",
+      "explanation": "Psalms 20:2 asks that he send you help from the sanctuary and grant you support from Zion.",
+      "bibleReference": "Psalms 20:2",
+      "answers": [
+        {
+          "text": "From Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "From the sea",
+          "isCorrect": false
+        },
+        {
+          "text": "From the sanctuary",
+          "isCorrect": true
+        },
+        {
+          "text": "From the east",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 3 ask Yahweh to accept?",
+      "explanation": "Psalms 20:3 asks him to remember all your offerings and accept your burned sacrifice.",
+      "bibleReference": "Psalms 20:3",
+      "answers": [
+        {
+          "text": "Your burned sacrifice",
+          "isCorrect": true
+        },
+        {
+          "text": "Your silver and gold",
+          "isCorrect": false
+        },
+        {
+          "text": "Your firstborn son",
+          "isCorrect": false
+        },
+        {
+          "text": "Your songs of praise",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does verse 4 ask that he grant you?",
+      "explanation": "Psalms 20:4 says, \"May he grant you your heart's desire, and fulfill all your counsel.\"",
+      "bibleReference": "Psalms 20:4",
+      "answers": [
+        {
+          "text": "A long life",
+          "isCorrect": false
+        },
+        {
+          "text": "A firstborn son",
+          "isCorrect": false
+        },
+        {
+          "text": "Victory over Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Your heart's desire",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the name of our God, what will we set up?",
+      "explanation": "Psalms 20:5 says, \"In the name of our God, we will set up our banners.\"",
+      "bibleReference": "Psalms 20:5",
+      "answers": [
+        {
+          "text": "Our banners",
+          "isCorrect": true
+        },
+        {
+          "text": "An altar",
+          "isCorrect": false
+        },
+        {
+          "text": "A tent",
+          "isCorrect": false
+        },
+        {
+          "text": "A stone pillar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom does the speaker now know that Yahweh saves?",
+      "explanation": "Psalms 20:6 says, \"Now I know that Yahweh saves his anointed.\"",
+      "bibleReference": "Psalms 20:6",
+      "answers": [
+        {
+          "text": "The proud",
+          "isCorrect": false
+        },
+        {
+          "text": "The rich",
+          "isCorrect": false
+        },
+        {
+          "text": "His anointed",
+          "isCorrect": true
+        },
+        {
+          "text": "Every nation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "From where will Yahweh answer his anointed?",
+      "explanation": "Psalms 20:6 says he will answer him from his holy heaven.",
+      "bibleReference": "Psalms 20:6",
+      "answers": [
+        {
+          "text": "From Mount Sinai",
+          "isCorrect": false
+        },
+        {
+          "text": "From his holy heaven",
+          "isCorrect": true
+        },
+        {
+          "text": "From the burning bush",
+          "isCorrect": false
+        },
+        {
+          "text": "From the depths of the earth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "In what do some trust, according to verse 7?",
+      "explanation": "Psalms 20:7 says, \"Some trust in chariots, and some in horses, but we trust in the name of Yahweh our God.\"",
+      "bibleReference": "Psalms 20:7",
+      "answers": [
+        {
+          "text": "Bows and arrows",
+          "isCorrect": false
+        },
+        {
+          "text": "Walls and towers",
+          "isCorrect": false
+        },
+        {
+          "text": "Gold and silver",
+          "isCorrect": false
+        },
+        {
+          "text": "Chariots and horses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the last verse, who do the people ask to answer them when they call?",
+      "explanation": "Psalms 20:9 says, \"Save, Yahweh! Let the King answer us when we call!\"",
+      "bibleReference": "Psalms 20:9",
+      "answers": [
+        {
+          "text": "The priest",
+          "isCorrect": false
+        },
+        {
+          "text": "The King",
+          "isCorrect": true
+        },
+        {
+          "text": "The prophet",
+          "isCorrect": false
+        },
+        {
+          "text": "The elders",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

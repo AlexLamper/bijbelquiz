@@ -1,0 +1,16 @@
+# Review batch 025 (en, 2 Samuel 22-24, 1 Kings 1-9)
+
+- 2-samuel-bible-quiz-part-22: FIXED: Q7 explanation said "by Yahweh", but 22:30 says "by you"; now quotes the verse. Q8, Q9 named God, who is not in 22:34-35 ("He"); references widened to 22:33-34 and 22:33-35, questions and explanations matched (3 changed)
+- 2-samuel-bible-quiz-part-23: FIXED: Q3 said "according to David", not in 23:6; reworded. Q5 named Eleazar, who is in 23:9, not 23:10; reference widened to 23:9-10. Q7 said the Philistines held Bethlehem, which is in 23:14; reference widened to 23:14-15 (3 changed)
+- 2-samuel-bible-quiz-part-24: OK (0 changed)
+- 1-kings-bible-quiz-part-1: FIXED: Q1 asked about serving and keeping David warm, which is in 1:2 and 1:4, not 1:3; reference widened to 1:2-4. Q7 asked where Solomon was anointed "king", but 1:38-39 only say "anointed Solomon"; reworded (2 changed)
+- 1-kings-bible-quiz-part-2: FIXED: Q1 named David and Solomon, who are in 2:1, not 2:2; reference widened to 2:1-2. Q2 wrong answers "Absalom and Amnon" / "Uriah and Asahel" included people tied to Joab's killings elsewhere, replaced with "Hushai and Ahithophel" / "Ittai and Abishai"; explanation no longer names David/Solomon (not in 2:5). Q3 named David and Solomon (not in 2:7); reworded. Q5 cited 2:17, where neither Adonijah nor Bathsheba is named; now asks what Bathsheba asked Solomon, 2:19-21. Q9 said "in Joab's place", but 2:35 says "in his place"; reworded (5 changed)
+- 1-kings-bible-quiz-part-3: FIXED: Q6 "God said" and "wisdom" are in 3:11-12, not 3:13; reference widened to 3:11-13. Q7 "first woman" is introduced in 3:17; reference widened to 3:17-19, wording "the one woman" as in the text. Q8 the arguing is in 3:22-23; reference widened to 3:22-24 (3 changed)
+- 1-kings-bible-quiz-part-4: OK (0 changed)
+- 1-kings-bible-quiz-part-5: FIXED: Q2 speaker Solomon is named in 5:2, not 5:3; reference widened to 5:2-3. Q3 named Solomon (not in 5:6); reworded to the verse. Q5 Hiram is named in 5:8, not 5:9; reference widened to 5:8-9. Q8 the levy is in 5:13, not 5:14; reference widened to 5:13-14 (4 changed)
+- 1-kings-bible-quiz-part-6: FIXED: Q4 Yahweh speaking to Solomon is in 6:11; reference widened to 6:11-13. Q6, Q10 named Solomon, but 6:19 and 6:38 only say "he"; reworded (3 changed)
+- 1-kings-bible-quiz-part-7: FIXED: Q3 Hiram is named in 7:13, not 7:14; reference widened to 7:13-14. Q4 called the pillars "bronze", not in 7:21; removed. Q5 "molten sea" is in 7:23, not 7:25; reference widened to 7:23-25. Q6 7:26 only says "It"; reference widened to 7:25-26 and question reworded. Q7 the bronze bases are in 7:27, not 7:29; reference widened to 7:27-29. Q8 the bronze vessels are in 7:45, not 7:46; reference widened to 7:45-46 (6 changed)
+- 1-kings-bible-quiz-part-8: FIXED: Q2 "when it was brought into the house" is not in 8:9; removed. Q5, Q6, Q7 said "according to Solomon"/"Solomon asks", but 8:18-19, 8:27 and 8:41-43 do not name him; reworded (4 changed)
+- 1-kings-bible-quiz-part-9: FIXED: Q5 Hiram and "did not please him" are in 9:12, not 9:13; reference widened to 9:12-13. Q10 the fleet is in 9:27, not 9:28; reference widened to 9:27-28 (2 changed)
+
+Total: 2 OK, 10 fixed, 35 questions changed. Validator: 0 errors, 0 warnings.

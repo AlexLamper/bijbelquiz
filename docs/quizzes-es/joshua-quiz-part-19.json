@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Josué 19: las suertes de Simeón, Zabulón, Issachâr, Aser, Nephtalí y Dan, y la ciudad de Josué.",
+  "slug": "joshua-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Para qué tribu salió la segunda suerte?",
+      "explanation": "El texto dice que la segunda suerte salió por Simeón, por la tribu de los hijos de Simeón conforme a sus familias.",
+      "bibleReference": "Josué 19:1",
+      "answers": [
+        {
+          "text": "Para Zabulón",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Simeón",
+          "isCorrect": true
+        },
+        {
+          "text": "Para Aser",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Dan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se sacó la heredad de Simeón de la suerte de Judá?",
+      "explanation": "El texto dice que la parte de los hijos de Judá era excesiva para ellos, y por eso los hijos de Simeón tuvieron su heredad en medio de la de ellos.",
+      "bibleReference": "Josué 19:9",
+      "answers": [
+        {
+          "text": "Porque Simeón había pecado contra Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Judá se lo pidió a Josué",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Simeón era la tribu más numerosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la parte de Judá era excesiva para ellos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué tribu salió la tercera suerte?",
+      "explanation": "La tercera suerte salió por los hijos de Zabulón conforme a sus familias, y el término de su heredad fue hasta Sarid.",
+      "bibleReference": "Josué 19:10",
+      "answers": [
+        {
+          "text": "Para Zabulón",
+          "isCorrect": true
+        },
+        {
+          "text": "Para Issachâr",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Nephtalí",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ciudades con sus aldeas abarcó la heredad de Zabulón?",
+      "explanation": "Después de nombrar Catah, Naalal, Simrón, Ideala y Beth-lehem, el texto dice que eran doce ciudades con sus aldeas.",
+      "bibleReference": "Josué 19:15",
+      "answers": [
+        {
+          "text": "Nueve",
+          "isCorrect": false
+        },
+        {
+          "text": "Catorce",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez y seis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué tribu salió la cuarta suerte?",
+      "explanation": "La cuarta suerte salió por Issachâr, por los hijos de Issachâr conforme a sus familias.",
+      "bibleReference": "Josué 19:17",
+      "answers": [
+        {
+          "text": "Para Aser",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Issachâr",
+          "isCorrect": true
+        },
+        {
+          "text": "Para Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Zabulón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta qué lugar llegaba al occidente el término de Aser?",
+      "explanation": "El texto dice que el término de Aser llega hasta Carmel al occidente, y a Sihor-libnath.",
+      "bibleReference": "Josué 19:26",
+      "answers": [
+        {
+          "text": "Hasta Carmel",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta Sarid",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Joppa",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Tabor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué tribu salió la sexta suerte?",
+      "explanation": "La sexta suerte salió por los hijos de Nephtalí, por los hijos de Nephtalí conforme a sus familias.",
+      "bibleReference": "Josué 19:32",
+      "answers": [
+        {
+          "text": "Para Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Aser",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Issachâr",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Nephtalí",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hijos de Dan cuando les faltó término?",
+      "explanation": "Los hijos de Dan subieron y combatieron a Lesem, la tomaron a filo de espada y habitaron en ella, y la llamaron Dan, del nombre de Dan su padre.",
+      "bibleReference": "Josué 19:47",
+      "answers": [
+        {
+          "text": "Pidieron tierra a la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron al otro lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Combatieron a Lesem y la llamaron Dan",
+          "isCorrect": true
+        },
+        {
+          "text": "Echaron suertes de nuevo en Silo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad pidió Josué y le fue dada?",
+      "explanation": "Según la palabra de Jehová le dieron la ciudad que él pidió, Timnath-sera, en el monte de Ephraim; él reedificó la ciudad y habitó en ella.",
+      "bibleReference": "Josué 19:49-50",
+      "answers": [
+        {
+          "text": "Timnath-sera",
+          "isCorrect": true
+        },
+        {
+          "text": "Baalath-beer",
+          "isCorrect": false
+        },
+        {
+          "text": "Chisiloth-tabor",
+          "isCorrect": false
+        },
+        {
+          "text": "Allón-saananim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes entregaron por suerte las heredades a las tribus en Silo?",
+      "explanation": "El texto nombra a Eleazar sacerdote, a Josué hijo de Nun y a los principales de los padres, que repartieron la tierra en Silo delante de Jehová.",
+      "bibleReference": "Josué 19:51",
+      "answers": [
+        {
+          "text": "Moisés, antes de morir",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar el sacerdote y Josué",
+          "isCorrect": true
+        },
+        {
+          "text": "Los ancianos de la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinees y los diez príncipes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

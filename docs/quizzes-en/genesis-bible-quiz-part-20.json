@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 20",
+  "description": "Ten questions on Genesis 20: Abraham and Sarah in Gerar, Abimelech's dream and Abraham's prayer.",
+  "slug": "genesis-bible-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "In which place did Abraham live as a foreigner in Genesis 20?",
+      "explanation": "Abraham traveled toward the South, lived between Kadesh and Shur, and lived as a foreigner in Gerar.",
+      "bibleReference": "Genesis 20:1",
+      "answers": [
+        {
+          "text": "Gerar",
+          "isCorrect": true
+        },
+        {
+          "text": "Hebron",
+          "isCorrect": false
+        },
+        {
+          "text": "Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "Zoar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Abraham say about Sarah his wife?",
+      "explanation": "Abraham said about Sarah his wife, \"She is my sister.\"",
+      "bibleReference": "Genesis 20:2",
+      "answers": [
+        {
+          "text": "\"She is my daughter.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"She is my servant.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"She is my sister.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"She is my cousin.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Which king sent and took Sarah in Gerar?",
+      "explanation": "Abimelech king of Gerar sent and took Sarah.",
+      "bibleReference": "Genesis 20:2",
+      "answers": [
+        {
+          "text": "Pharaoh king of Egypt",
+          "isCorrect": false
+        },
+        {
+          "text": "Abimelech king of Gerar",
+          "isCorrect": true
+        },
+        {
+          "text": "Melchizedek king of Salem",
+          "isCorrect": false
+        },
+        {
+          "text": "Bera king of Sodom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did God come to Abimelech to warn him?",
+      "explanation": "God came to Abimelech in a dream of the night and said, \"Behold, you are a dead man, because of the woman whom you have taken.\"",
+      "bibleReference": "Genesis 20:3",
+      "answers": [
+        {
+          "text": "Through a prophet at his gate",
+          "isCorrect": false
+        },
+        {
+          "text": "As three men at noon",
+          "isCorrect": false
+        },
+        {
+          "text": "In a pillar of fire",
+          "isCorrect": false
+        },
+        {
+          "text": "In a dream of the night",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did God call Abraham when speaking to Abimelech?",
+      "explanation": "God said, \"Restore the man's wife. For he is a prophet, and he will pray for you, and you will live.\"",
+      "bibleReference": "Genesis 20:7",
+      "answers": [
+        {
+          "text": "A priest",
+          "isCorrect": false
+        },
+        {
+          "text": "A king",
+          "isCorrect": false
+        },
+        {
+          "text": "A prophet",
+          "isCorrect": true
+        },
+        {
+          "text": "A judge",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How did Abimelech's servants react when he told them everything?",
+      "explanation": "Abimelech called all his servants and told them all these things, and the men were very scared.",
+      "bibleReference": "Genesis 20:8",
+      "answers": [
+        {
+          "text": "They laughed at him",
+          "isCorrect": false
+        },
+        {
+          "text": "They were very scared",
+          "isCorrect": true
+        },
+        {
+          "text": "They became angry with Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "They rejoiced",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What reason did Abraham give Abimelech for saying Sarah was his sister?",
+      "explanation": "Abraham said he thought the fear of God was not in that place and that they would kill him for his wife's sake.",
+      "bibleReference": "Genesis 20:11",
+      "answers": [
+        {
+          "text": "He thought they would kill him for his wife's sake",
+          "isCorrect": true
+        },
+        {
+          "text": "Sarah had asked him to protect her honor",
+          "isCorrect": false
+        },
+        {
+          "text": "He hoped to receive gifts from the king",
+          "isCorrect": false
+        },
+        {
+          "text": "There was a famine in the whole land",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How was Sarah related to Abraham, according to his explanation?",
+      "explanation": "Abraham said she was indeed his sister, the daughter of his father but not the daughter of his mother, and she became his wife.",
+      "bibleReference": "Genesis 20:12",
+      "answers": [
+        {
+          "text": "The daughter of his mother, but not of his father",
+          "isCorrect": false
+        },
+        {
+          "text": "The daughter of his brother Nahor",
+          "isCorrect": false
+        },
+        {
+          "text": "The daughter of his father's servant",
+          "isCorrect": false
+        },
+        {
+          "text": "The daughter of his father, but not of his mother",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How much silver did Abimelech say he had given to Sarah's \"brother\"?",
+      "explanation": "Abimelech said to Sarah, \"Behold, I have given your brother a thousand pieces of silver.\"",
+      "bibleReference": "Genesis 20:16",
+      "answers": [
+        {
+          "text": "A hundred pieces",
+          "isCorrect": false
+        },
+        {
+          "text": "A thousand pieces",
+          "isCorrect": true
+        },
+        {
+          "text": "Four hundred pieces",
+          "isCorrect": false
+        },
+        {
+          "text": "Fifty pieces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What had Yahweh done to the house of Abimelech because of Sarah?",
+      "explanation": "Abraham prayed, and God healed Abimelech, his wife and his female servants, for Yahweh had closed up tight all the wombs of the house of Abimelech because of Sarah.",
+      "bibleReference": "Genesis 20:17-18",
+      "answers": [
+        {
+          "text": "He had struck them with blindness",
+          "isCorrect": false
+        },
+        {
+          "text": "He had sent a famine",
+          "isCorrect": false
+        },
+        {
+          "text": "He had closed up all the wombs",
+          "isCorrect": true
+        },
+        {
+          "text": "He had burned their fields",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

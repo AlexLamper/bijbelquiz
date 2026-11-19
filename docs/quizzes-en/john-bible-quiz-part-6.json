@@ -1,0 +1,242 @@
+{
+  "title": "John Bible Quiz - Chapter 6",
+  "description": "Ten questions on John 6: the five barley loaves, the walk on the sea, the bread of life, and the disciples who turned back.",
+  "slug": "john-bible-quiz-part-6",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Philip answer when Jesus asked where to buy bread for the crowd?",
+      "explanation": "Philip answered that two hundred denarii worth of bread would not be sufficient for them, that every one of them might receive a little.",
+      "bibleReference": "John 6:5-7",
+      "answers": [
+        {
+          "text": "The villages nearby had bread to sell",
+          "isCorrect": false
+        },
+        {
+          "text": "They should send the crowd away to eat",
+          "isCorrect": false
+        },
+        {
+          "text": "Two hundred denarii worth of bread would not be enough",
+          "isCorrect": true
+        },
+        {
+          "text": "The disciples had no money with them at all",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Andrew say the boy there had?",
+      "explanation": "Andrew, Simon Peter's brother, said there was a boy there who had five barley loaves and two fish, but asked what these were among so many.",
+      "bibleReference": "John 6:8-9",
+      "answers": [
+        {
+          "text": "Five barley loaves and two fish",
+          "isCorrect": true
+        },
+        {
+          "text": "Seven loaves and a few small fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve loaves and no fish",
+          "isCorrect": false
+        },
+        {
+          "text": "Two barley loaves and five fish",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "About how many men sat down on the grass?",
+      "explanation": "There was much grass in that place, and the men sat down, in number about five thousand.",
+      "bibleReference": "John 6:10",
+      "answers": [
+        {
+          "text": "About four thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About five hundred",
+          "isCorrect": false
+        },
+        {
+          "text": "About twelve thousand",
+          "isCorrect": false
+        },
+        {
+          "text": "About five thousand",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many baskets were filled with the broken pieces left over?",
+      "explanation": "They gathered up the broken pieces and filled twelve baskets from the five barley loaves, left over by those who had eaten.",
+      "bibleReference": "John 6:13",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": false
+        },
+        {
+          "text": "Twelve",
+          "isCorrect": true
+        },
+        {
+          "text": "Five",
+          "isCorrect": false
+        },
+        {
+          "text": "Two",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus do when he perceived that they were about to make him king by force?",
+      "explanation": "Perceiving that they were about to come and take him by force to make him king, he withdrew again to the mountain by himself.",
+      "bibleReference": "John 6:15",
+      "answers": [
+        {
+          "text": "He got into the boat with his disciples",
+          "isCorrect": false
+        },
+        {
+          "text": "He asked them to choose another king",
+          "isCorrect": false
+        },
+        {
+          "text": "He withdrew again to the mountain by himself",
+          "isCorrect": true
+        },
+        {
+          "text": "He went down into Capernaum to teach",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the disciples see as they rowed across the sea in the dark?",
+      "explanation": "When they had rowed about twenty-five or thirty stadia, they saw Jesus walking on the sea and drawing near to the boat, and they were afraid, but he said, \"It is I. Don't be afraid.\"",
+      "bibleReference": "John 6:19-20",
+      "answers": [
+        {
+          "text": "A light burning on the shore at Capernaum",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesus walking on the sea",
+          "isCorrect": true
+        },
+        {
+          "text": "Boats coming out from Tiberias",
+          "isCorrect": false
+        },
+        {
+          "text": "An angel standing on the water",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who did Jesus say gives the true bread out of heaven?",
+      "explanation": "He said it was not Moses who gave them the bread out of heaven, but his Father who gives them the true bread out of heaven.",
+      "bibleReference": "John 6:32",
+      "answers": [
+        {
+          "text": "His Father",
+          "isCorrect": true
+        },
+        {
+          "text": "Moses",
+          "isCorrect": false
+        },
+        {
+          "text": "The prophets who wrote about it",
+          "isCorrect": false
+        },
+        {
+          "text": "The Son of Man alone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jesus call himself when they asked him for this bread?",
+      "explanation": "He said, \"I am the bread of life. Whoever comes to me will not be hungry, and whoever believes in me will never be thirsty.\"",
+      "bibleReference": "John 6:35",
+      "answers": [
+        {
+          "text": "The living water",
+          "isCorrect": false
+        },
+        {
+          "text": "The light of men",
+          "isCorrect": false
+        },
+        {
+          "text": "The friend of the bridegroom",
+          "isCorrect": false
+        },
+        {
+          "text": "The bread of life",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did many of his disciples do after hearing what he said?",
+      "explanation": "At this, many of his disciples went back, and walked no more with him.",
+      "bibleReference": "John 6:66",
+      "answers": [
+        {
+          "text": "They asked him to explain the saying again",
+          "isCorrect": false
+        },
+        {
+          "text": "They went back and walked no more with him",
+          "isCorrect": true
+        },
+        {
+          "text": "They followed him into the synagogue",
+          "isCorrect": false
+        },
+        {
+          "text": "They went to tell the Jews in Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Simon Peter answer when Jesus asked the twelve if they also wanted to go away?",
+      "explanation": "Simon Peter answered, \"Lord, to whom would we go? You have the words of eternal life.\"",
+      "bibleReference": "John 6:67-68",
+      "answers": [
+        {
+          "text": "\"We will stay with you until the feast is over\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Tell us plainly who you are, and we will stay\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Lord, to whom would we go? You have the words of eternal life\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Let us go back to Galilee with you today\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

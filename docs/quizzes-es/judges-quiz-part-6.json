@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Jueces 6: la opresión de Madián, el llamamiento de Gedeón, el altar de Baal derribado y la señal del vellón.",
+  "slug": "judges-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En manos de quién entregó Jehová a los hijos de Israel por siete años?",
+      "explanation": "Jueces 6:1 dice que Jehová entregó a Israel en las manos de Madián por siete años, porque hicieron lo malo en sus ojos.",
+      "bibleReference": "Jueces 6:1",
+      "answers": [
+        {
+          "text": "De Madián",
+          "isCorrect": true
+        },
+        {
+          "text": "De los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los hijos de Ammón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hijos de Israel por causa de los Madianitas?",
+      "explanation": "Según el texto, se hicieron cuevas en los montes, cavernas y lugares fuertes.",
+      "bibleReference": "Jueces 6:2",
+      "answers": [
+        {
+          "text": "Ciudades amuralladas junto al mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuevas en los montes, cavernas y lugares fuertes",
+          "isCorrect": true
+        },
+        {
+          "text": "Altares a Jehová en los valles",
+          "isCorrect": false
+        },
+        {
+          "text": "Pozos en medio del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la multitud con que los enemigos subían con sus ganados y sus tiendas?",
+      "explanation": "El texto dice que venían con sus tiendas en grande multitud como langosta, y que no había número en ellos ni en sus camellos.",
+      "bibleReference": "Jueces 6:5",
+      "answers": [
+        {
+          "text": "Con un río crecido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con nubes de tormenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la langosta",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un enjambre de abejas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué estaba haciendo Gedeón cuando el ángel de Jehová se sentó debajo del alcornoque de Ophra?",
+      "explanation": "El texto dice que su hijo Gedeón estaba sacudiendo el trigo en el lagar, para esconderlo de los Madianitas.",
+      "bibleReference": "Jueces 6:11",
+      "answers": [
+        {
+          "text": "Apacentaba ovejas en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificaba un altar en Ophra",
+          "isCorrect": false
+        },
+        {
+          "text": "Cavaba un pozo junto al camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacudía el trigo en el lagar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Gedeón de su familia y de su lugar en la casa de su padre?",
+      "explanation": "Gedeón respondió que su familia era pobre en Manasés y que él era el menor en la casa de su padre.",
+      "bibleReference": "Jueces 6:15",
+      "answers": [
+        {
+          "text": "Su familia es pobre y él es el menor",
+          "isCorrect": true
+        },
+        {
+          "text": "Su familia es la mayor de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Su padre es príncipe de Abiezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Él es el primogénito de Joas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ocurrió cuando el ángel tocó con la punta del bordón la carne y los panes sin levadura?",
+      "explanation": "El texto dice que subió fuego de la peña y consumió la carne y los panes sin levadura.",
+      "bibleReference": "Jueces 6:21",
+      "answers": [
+        {
+          "text": "Cayó rocío sobre la carne y los panes",
+          "isCorrect": false
+        },
+        {
+          "text": "Subió fuego de la peña y los consumió",
+          "isCorrect": true
+        },
+        {
+          "text": "La carne y los panes se volvieron piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Un viento se llevó el canastillo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Gedeón al altar que edificó allí a Jehová?",
+      "explanation": "Gedeón edificó un altar a Jehová y lo llamó Jehová-salom, en Ophra de los Abiezeritas.",
+      "bibleReference": "Jueces 6:24",
+      "answers": [
+        {
+          "text": "Ramath-lehi",
+          "isCorrect": false
+        },
+        {
+          "text": "En-haccore",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová-salom",
+          "isCorrect": true
+        },
+        {
+          "text": "Beth-bara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó Jehová hacer aquella misma noche?",
+      "explanation": "Jehová le mandó derribar el altar de Baal que tenía su padre y cortar el bosque que estaba junto a él, y edificar un altar a Jehová.",
+      "bibleReference": "Jueces 6:25-26",
+      "answers": [
+        {
+          "text": "Contar al pueblo de Manasés y de Aser",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar una torre en el valle de Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevar un presente al rey de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Derribar el altar de Baal y cortar el bosque",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre le dieron a Gedeón aquel día, después de lo que hizo con el altar?",
+      "explanation": "Aquel día lo llamaron Jerobaal, porque dijeron: Pleitee Baal contra el que derribó su altar.",
+      "bibleReference": "Jueces 6:32",
+      "answers": [
+        {
+          "text": "Abimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerobaal",
+          "isCorrect": true
+        },
+        {
+          "text": "Jotham",
+          "isCorrect": false
+        },
+        {
+          "text": "Jephté",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué señal pidió Gedeón la primera vez con el vellón de lana puesto en la era?",
+      "explanation": "Gedeón pidió que el rocío estuviera solamente en el vellón y que toda la otra tierra quedara seca.",
+      "bibleReference": "Jueces 6:37",
+      "answers": [
+        {
+          "text": "Que el vellón se quemara con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el vellón se volviera agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Rocío solo en el vellón y la tierra seca",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el viento se llevara el vellón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

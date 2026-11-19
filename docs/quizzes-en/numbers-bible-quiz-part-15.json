@@ -1,0 +1,242 @@
+{
+  "title": "Numbers Bible Quiz - Chapter 15",
+  "description": "Ten questions on Numbers 15: the meal and drink offerings, the first of the dough, sins done unwittingly or with a high hand, the Sabbath breaker, and the fringes.",
+  "slug": "numbers-bible-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "How much fine flour was offered as a meal offering with each lamb?",
+      "explanation": "With each lamb a meal offering of one tenth of an ephah of fine flour, mixed with one fourth of a hin of oil, was to be offered.",
+      "bibleReference": "Numbers 15:4-5",
+      "answers": [
+        {
+          "text": "Three tenths of an ephah",
+          "isCorrect": false
+        },
+        {
+          "text": "Two tenths of an ephah",
+          "isCorrect": false
+        },
+        {
+          "text": "Half an ephah",
+          "isCorrect": false
+        },
+        {
+          "text": "One tenth of an ephah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How much wine was offered as the drink offering with a ram?",
+      "explanation": "For a ram the drink offering was the third part of a hin of wine, of a pleasant aroma to Yahweh.",
+      "bibleReference": "Numbers 15:6-7",
+      "answers": [
+        {
+          "text": "A fourth of a hin of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A third of a hin of wine",
+          "isCorrect": true
+        },
+        {
+          "text": "Half of a hin of wine",
+          "isCorrect": false
+        },
+        {
+          "text": "A full hin of wine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What rule applied to a stranger living among Israel who offered an offering by fire?",
+      "explanation": "There was to be one law and one ordinance for Israel and for the stranger living among them; as Israel did, so he should do.",
+      "bibleReference": "Numbers 15:14-16",
+      "answers": [
+        {
+          "text": "He could only offer doves",
+          "isCorrect": false
+        },
+        {
+          "text": "He had to offer through a Levite",
+          "isCorrect": false
+        },
+        {
+          "text": "The same law applied to him as to Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "He was not allowed to offer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What were they to offer from the first of their dough?",
+      "explanation": "Of the first of their dough they were to offer up a cake for a wave offering.",
+      "bibleReference": "Numbers 15:20",
+      "answers": [
+        {
+          "text": "A cake for a wave offering",
+          "isCorrect": true
+        },
+        {
+          "text": "A tenth of the flour",
+          "isCorrect": false
+        },
+        {
+          "text": "A drink offering of oil",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven loaves",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the congregation offer for a sin done unwittingly by the whole congregation?",
+      "explanation": "The congregation offered one young bull for a burnt offering with its meal and drink offering, and one male goat for a sin offering.",
+      "bibleReference": "Numbers 15:24",
+      "answers": [
+        {
+          "text": "Two rams and a lamb",
+          "isCorrect": false
+        },
+        {
+          "text": "Seven lambs a year old",
+          "isCorrect": false
+        },
+        {
+          "text": "A young bull and a male goat",
+          "isCorrect": true
+        },
+        {
+          "text": "A red heifer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did a single person who sinned unwittingly offer as a sin offering?",
+      "explanation": "If a person sinned unwittingly, he was to offer a female goat a year old for a sin offering.",
+      "bibleReference": "Numbers 15:27",
+      "answers": [
+        {
+          "text": "A young bull",
+          "isCorrect": false
+        },
+        {
+          "text": "A female goat a year old",
+          "isCorrect": true
+        },
+        {
+          "text": "Two turtledoves",
+          "isCorrect": false
+        },
+        {
+          "text": "A ram without defect",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was to happen to the soul who did anything with a high hand?",
+      "explanation": "The soul who acted with a high hand, native-born or foreigner, blasphemed Yahweh and was to be cut off from among his people.",
+      "bibleReference": "Numbers 15:30-31",
+      "answers": [
+        {
+          "text": "He was to pay a fifth part",
+          "isCorrect": false
+        },
+        {
+          "text": "He was to wash his clothes",
+          "isCorrect": false
+        },
+        {
+          "text": "He was to wait outside seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "He was to be cut off from his people",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What was the man found doing on the Sabbath day in the wilderness?",
+      "explanation": "While Israel was in the wilderness, they found a man gathering sticks on the Sabbath day.",
+      "bibleReference": "Numbers 15:32",
+      "answers": [
+        {
+          "text": "Gathering sticks",
+          "isCorrect": true
+        },
+        {
+          "text": "Baking bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Gathering manna",
+          "isCorrect": false
+        },
+        {
+          "text": "Building a fire",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh command to be done with the man who gathered sticks on the Sabbath?",
+      "explanation": "Yahweh said the man should be put to death, stoned by all the congregation outside of the camp, and they did so.",
+      "bibleReference": "Numbers 15:35-36",
+      "answers": [
+        {
+          "text": "He was to be put in custody for a year",
+          "isCorrect": false
+        },
+        {
+          "text": "He was to be stoned outside of the camp",
+          "isCorrect": true
+        },
+        {
+          "text": "He was to be shut out for seven days",
+          "isCorrect": false
+        },
+        {
+          "text": "He was to bring a sin offering",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was to be put on the fringe of each border of their garments?",
+      "explanation": "They were to make fringes on the borders of their garments and put on the fringe of each border a cord of blue.",
+      "bibleReference": "Numbers 15:38",
+      "answers": [
+        {
+          "text": "A cord of scarlet",
+          "isCorrect": false
+        },
+        {
+          "text": "A golden bell",
+          "isCorrect": false
+        },
+        {
+          "text": "A cord of blue",
+          "isCorrect": true
+        },
+        {
+          "text": "A silver ring",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

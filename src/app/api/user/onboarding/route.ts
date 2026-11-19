@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession } from '@/lib/get-session';
 import { connectDB, User } from '@/database';
+import { msg } from '@/lib/api-messages';
 
 export async function POST(req: NextRequest) {
   try {
@@ -27,7 +28,7 @@ export async function POST(req: NextRequest) {
     );
 
     if (!updatedUser) {
-      return NextResponse.json({ error: 'Gebruiker niet gevonden' }, { status: 404 });
+      return NextResponse.json({ error: msg('Gebruiker niet gevonden') }, { status: 404 });
     }
 
     return NextResponse.json({ 

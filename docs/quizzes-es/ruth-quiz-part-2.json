@@ -1,0 +1,242 @@
+{
+  "title": "Rut Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Rut 2: Ruth espiga en el campo de Booz, el favor que halla y el epha de cebada.",
+  "slug": "ruth-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién era Booz según el primer versículo del capítulo?",
+      "explanation": "Noemi tenía un pariente de su marido, varón poderoso y de hecho, de la familia de Elimelech, que se llamaba Booz.",
+      "bibleReference": "Rut 2:1",
+      "answers": [
+        {
+          "text": "El sobrestante de los segadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pariente del marido de Noemi",
+          "isCorrect": true
+        },
+        {
+          "text": "Un segador venido de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "El padre de Mahalón y Chelión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Ruth la Moabita a Noemi?",
+      "explanation": "Ruth le pidió que la dejase ir al campo a coger espigas en pos de aquel a cuyos ojos hallase gracia, y Noemi le respondió: Ve, hija mía.",
+      "bibleReference": "Rut 2:2",
+      "answers": [
+        {
+          "text": "Volver a los campos de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Buscar marido en Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Vender la tierra de Elimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Ir al campo a coger espigas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Booz a los segadores cuando vino de Beth-lehem?",
+      "explanation": "Booz vino de Beth-lehem y dijo a los segadores: Jehová sea con vosotros. Y ellos respondieron: Jehová te bendiga.",
+      "bibleReference": "Rut 2:4",
+      "answers": [
+        {
+          "text": "Jehová sea con vosotros",
+          "isCorrect": true
+        },
+        {
+          "text": "Paz sea con vosotros, hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Allégate aquí y come del pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Coja también espigas entre las gavillas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el criado sobrestante cuando Booz preguntó de quién era aquella moza?",
+      "explanation": "El criado respondió que era la moza de Moab que volvió con Noemi de los campos de Moab.",
+      "bibleReference": "Rut 2:6",
+      "answers": [
+        {
+          "text": "Que era una de las mozas de Booz",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era hija de uno de los segadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era la moza de Moab que volvió con Noemi",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era la mujer de Mahalón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Booz a Ruth acerca de dónde debía espigar?",
+      "explanation": "Booz le dijo que no fuese a espigar a otro campo ni pasase de allí, sino que estuviese con sus mozas.",
+      "bibleReference": "Rut 2:8",
+      "answers": [
+        {
+          "text": "Que espigase solamente por la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no fuese a otro campo y estuviese con sus mozas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviese a espigar con Noemi",
+          "isCorrect": false
+        },
+        {
+          "text": "Que trabajase con los mozos en la era",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se admiró Ruth al inclinarse a tierra delante de Booz?",
+      "explanation": "Ella bajó su rostro y le preguntó por qué había hallado gracia en sus ojos para que la reconociese, siendo ella extranjera.",
+      "bibleReference": "Rut 2:10",
+      "answers": [
+        {
+          "text": "De hallar gracia siendo ella extranjera",
+          "isCorrect": true
+        },
+        {
+          "text": "De que le hablase delante de los segadores",
+          "isCorrect": false
+        },
+        {
+          "text": "De que la llamase mujer virtuosa",
+          "isCorrect": false
+        },
+        {
+          "text": "De que fuese pariente de su suegra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Booz a la hora de comer?",
+      "explanation": "Booz le dijo que se allegase allí, comiese del pan y mojase su bocado en el vinagre; ella se sentó junto a los segadores y comió hasta hartarse.",
+      "bibleReference": "Rut 2:14",
+      "answers": [
+        {
+          "text": "Que repartiese el potaje a los segadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Que bebiese del agua que sacaban los mozos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llevase el pan y el potaje a su suegra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que comiese del pan y mojase su bocado en el vinagre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto fue lo que desgranó de lo que había cogido en el campo?",
+      "explanation": "Espigó en el campo hasta la tarde, desgranó lo que había cogido y fue como un epha de cebada.",
+      "bibleReference": "Rut 2:17",
+      "answers": [
+        {
+          "text": "Seis medidas de cebada",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos gavillas de trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un epha de cebada",
+          "isCorrect": true
+        },
+        {
+          "text": "Una vasija de harina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Noemi acerca de Booz cuando oyó su nombre?",
+      "explanation": "Noemi lo bendijo de Jehová y le dijo después que aquel varón era su pariente y de sus redentores.",
+      "bibleReference": "Rut 2:20",
+      "answers": [
+        {
+          "text": "Que era su pariente y de sus redentores",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era el más rico de Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era hermano de Elimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era sacerdote en Silo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo estuvo Ruth espigando junto con las mozas de Booz?",
+      "explanation": "Estuvo junta con las mozas de Booz espigando hasta que la siega de las cebadas y la de los trigos fue acabada, y habitó con su suegra.",
+      "bibleReference": "Rut 2:23",
+      "answers": [
+        {
+          "text": "Hasta la media noche de aquel mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que Booz aventó la parva en la era",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que nació su primer hijo varón",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que acabó la siega de cebadas y de trigos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

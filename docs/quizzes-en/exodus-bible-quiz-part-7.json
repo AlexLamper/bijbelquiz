@@ -1,0 +1,242 @@
+{
+  "title": "Exodus Bible Quiz - Chapter 7",
+  "description": "Ten questions on Exodus 7: Aaron's rod before Pharaoh and the river turned to blood.",
+  "slug": "exodus-bible-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did Yahweh say Aaron would be to Moses before Pharaoh?",
+      "explanation": "Yahweh said, \"I have made you as God to Pharaoh; and Aaron your brother shall be your prophet.\"",
+      "bibleReference": "Exodus 7:1",
+      "answers": [
+        {
+          "text": "His servant",
+          "isCorrect": false
+        },
+        {
+          "text": "His judge",
+          "isCorrect": false
+        },
+        {
+          "text": "His shield",
+          "isCorrect": false
+        },
+        {
+          "text": "His prophet",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How old was Moses when he and Aaron spoke to Pharaoh?",
+      "explanation": "Moses was eighty years old, and Aaron eighty-three, when they spoke to Pharaoh.",
+      "bibleReference": "Exodus 7:7",
+      "answers": [
+        {
+          "text": "Eighty",
+          "isCorrect": true
+        },
+        {
+          "text": "Eighty-three",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Whom did Pharaoh call after Aaron's rod became a serpent?",
+      "explanation": "Pharaoh called for the wise men and the sorcerers, and the magicians of Egypt did the same with their enchantments.",
+      "bibleReference": "Exodus 7:11",
+      "answers": [
+        {
+          "text": "The priests of the temple of On",
+          "isCorrect": false
+        },
+        {
+          "text": "The captains of his chariots",
+          "isCorrect": false
+        },
+        {
+          "text": "The wise men and the sorcerers",
+          "isCorrect": true
+        },
+        {
+          "text": "The elders of the children of Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the magicians' rods?",
+      "explanation": "The magicians' rods became serpents, but Aaron's rod swallowed up their rods.",
+      "bibleReference": "Exodus 7:12",
+      "answers": [
+        {
+          "text": "They burst into flames",
+          "isCorrect": false
+        },
+        {
+          "text": "Aaron's rod swallowed them up",
+          "isCorrect": true
+        },
+        {
+          "text": "They turned into dust",
+          "isCorrect": false
+        },
+        {
+          "text": "They swallowed Aaron's rod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Where was Moses to meet Pharaoh in the morning?",
+      "explanation": "Yahweh told Moses to stand by the river's bank to meet Pharaoh as he went out to the water.",
+      "bibleReference": "Exodus 7:15",
+      "answers": [
+        {
+          "text": "By the river's bank",
+          "isCorrect": true
+        },
+        {
+          "text": "At the gate of the palace",
+          "isCorrect": false
+        },
+        {
+          "text": "In the field of Goshen",
+          "isCorrect": false
+        },
+        {
+          "text": "On the road to the wilderness",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What happened to the fish when the river turned to blood?",
+      "explanation": "The fish in the river died, the river became foul and the Egyptians couldn't drink its water.",
+      "bibleReference": "Exodus 7:21",
+      "answers": [
+        {
+          "text": "They swam out to sea",
+          "isCorrect": false
+        },
+        {
+          "text": "They turned into frogs",
+          "isCorrect": false
+        },
+        {
+          "text": "They were unharmed",
+          "isCorrect": false
+        },
+        {
+          "text": "They died",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Where would there be blood throughout Egypt, besides the rivers and pools?",
+      "explanation": "Yahweh said there would be blood throughout Egypt, both in vessels of wood and in vessels of stone.",
+      "bibleReference": "Exodus 7:19",
+      "answers": [
+        {
+          "text": "In the bread of the people",
+          "isCorrect": false
+        },
+        {
+          "text": "In the wells of Goshen only",
+          "isCorrect": false
+        },
+        {
+          "text": "In vessels of wood and stone",
+          "isCorrect": true
+        },
+        {
+          "text": "In the wine of Pharaoh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the magicians of Egypt do after the water turned to blood?",
+      "explanation": "The magicians of Egypt did the same thing with their enchantments, so Pharaoh's heart was hardened.",
+      "bibleReference": "Exodus 7:22",
+      "answers": [
+        {
+          "text": "They admitted they could not do it",
+          "isCorrect": false
+        },
+        {
+          "text": "They did the same with their enchantments",
+          "isCorrect": true
+        },
+        {
+          "text": "They begged Pharaoh to let Israel go",
+          "isCorrect": false
+        },
+        {
+          "text": "They fled from Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did all the Egyptians do because they could not drink the river water?",
+      "explanation": "All the Egyptians dug around the river for water to drink.",
+      "bibleReference": "Exodus 7:24",
+      "answers": [
+        {
+          "text": "They bought water from Goshen",
+          "isCorrect": false
+        },
+        {
+          "text": "They drank only wine from their vineyards",
+          "isCorrect": false
+        },
+        {
+          "text": "They moved their homes to the sea coast",
+          "isCorrect": false
+        },
+        {
+          "text": "They dug around the river for water",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "How many days were fulfilled after Yahweh struck the river?",
+      "explanation": "The chapter ends by saying seven days were fulfilled after Yahweh had struck the river.",
+      "bibleReference": "Exodus 7:25",
+      "answers": [
+        {
+          "text": "Seven",
+          "isCorrect": true
+        },
+        {
+          "text": "Three",
+          "isCorrect": false
+        },
+        {
+          "text": "Ten",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

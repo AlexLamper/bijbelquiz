@@ -1,0 +1,242 @@
+{
+  "title": "Genesis Bible Quiz - Chapter 25",
+  "description": "Ten questions on Genesis 25: the death of Abraham, the sons of Ishmael, the birth of Esau and Jacob and the sold birthright.",
+  "slug": "genesis-bible-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What was the name of the other wife Abraham took?",
+      "explanation": "Abraham took another wife, and her name was Keturah.",
+      "bibleReference": "Genesis 25:1",
+      "answers": [
+        {
+          "text": "Hagar",
+          "isCorrect": false
+        },
+        {
+          "text": "Keturah",
+          "isCorrect": true
+        },
+        {
+          "text": "Milcah",
+          "isCorrect": false
+        },
+        {
+          "text": "Basemath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "To whom did Abraham give all that he had?",
+      "explanation": "Abraham gave all that he had to Isaac.",
+      "bibleReference": "Genesis 25:5",
+      "answers": [
+        {
+          "text": "Isaac",
+          "isCorrect": true
+        },
+        {
+          "text": "Ishmael",
+          "isCorrect": false
+        },
+        {
+          "text": "Midian",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebaioth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Abraham when he died?",
+      "explanation": "The years of Abraham's life were one hundred seventy-five years, and he died at a good old age.",
+      "bibleReference": "Genesis 25:7-8",
+      "answers": [
+        {
+          "text": "One hundred thirty-seven years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred twenty years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred sixty years",
+          "isCorrect": false
+        },
+        {
+          "text": "One hundred seventy-five years",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Who buried Abraham in the cave of Machpelah?",
+      "explanation": "Isaac and Ishmael, his sons, buried him in the cave of Machpelah near Mamre.",
+      "bibleReference": "Genesis 25:9",
+      "answers": [
+        {
+          "text": "Esau and Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Nebaioth and Kedar",
+          "isCorrect": false
+        },
+        {
+          "text": "His sons Isaac and Ishmael",
+          "isCorrect": true
+        },
+        {
+          "text": "Zimran and Midian",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Who was the firstborn of Ishmael?",
+      "explanation": "The sons of Ishmael are listed in the order of their birth, and the firstborn was Nebaioth.",
+      "bibleReference": "Genesis 25:13",
+      "answers": [
+        {
+          "text": "Nebaioth",
+          "isCorrect": true
+        },
+        {
+          "text": "Kedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Tema",
+          "isCorrect": false
+        },
+        {
+          "text": "Dumah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "How old was Isaac when he took Rebekah as his wife?",
+      "explanation": "Isaac was forty years old when he took Rebekah, the daughter of Bethuel the Syrian of Paddan Aram, to be his wife.",
+      "bibleReference": "Genesis 25:20",
+      "answers": [
+        {
+          "text": "Sixty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Thirty years old",
+          "isCorrect": false
+        },
+        {
+          "text": "Forty years old",
+          "isCorrect": true
+        },
+        {
+          "text": "Fifty years old",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Yahweh tell Rebekah about the two nations in her womb?",
+      "explanation": "Yahweh said that one people would be stronger than the other and that the elder would serve the younger.",
+      "bibleReference": "Genesis 25:23",
+      "answers": [
+        {
+          "text": "\"The younger will serve the elder.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"The elder will serve the younger.\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"The two will live as one people.\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Both will serve your husband.\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What was Jacob holding when he was born?",
+      "explanation": "His brother came out with his hand holding on to Esau's heel, and he was named Jacob.",
+      "bibleReference": "Genesis 25:26",
+      "answers": [
+        {
+          "text": "Esau's hand",
+          "isCorrect": false
+        },
+        {
+          "text": "A red thread",
+          "isCorrect": false
+        },
+        {
+          "text": "His mother's garment",
+          "isCorrect": false
+        },
+        {
+          "text": "Esau's heel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Why was Esau's name called Edom?",
+      "explanation": "Esau said, \"Please feed me with some of that red stew,\" and therefore his name was called Edom.",
+      "bibleReference": "Genesis 25:30",
+      "answers": [
+        {
+          "text": "He asked to be fed with the red stew",
+          "isCorrect": true
+        },
+        {
+          "text": "He was a skillful hunter",
+          "isCorrect": false
+        },
+        {
+          "text": "He lived in the open field",
+          "isCorrect": false
+        },
+        {
+          "text": "He swore an oath to Jacob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did Jacob give Esau after Esau sold his birthright?",
+      "explanation": "After Esau swore and sold his birthright, Jacob gave him bread and lentil stew, and he ate and drank.",
+      "bibleReference": "Genesis 25:33-34",
+      "answers": [
+        {
+          "text": "Venison and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "Goat meat and bread",
+          "isCorrect": false
+        },
+        {
+          "text": "Bread and lentil stew",
+          "isCorrect": true
+        },
+        {
+          "text": "Milk and honey",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

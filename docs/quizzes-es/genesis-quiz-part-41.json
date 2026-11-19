@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 41",
+  "description": "Diez preguntas sobre Génesis 41: los sueños de Faraón, los siete años de hartura y de hambre, y José sobre Egipto.",
+  "slug": "genesis-quiz-part-41",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "En el primer sueño de Faraón, ¿qué subía del río?",
+      "explanation": "Del río subían siete vacas hermosas a la vista y muy gordas, que pacían en el prado.",
+      "bibleReference": "Génesis 41:2",
+      "answers": [
+        {
+          "text": "Siete vacas hermosas y muy gordas",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete espigas llenas y hermosas",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres sarmientos de una vid",
+          "isCorrect": false
+        },
+        {
+          "text": "Once estrellas y la luna",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron las vacas de fea vista y enjutas de carne?",
+      "explanation": "Las vacas de fea vista y enjutas de carne devoraban a las siete vacas hermosas y muy gordas, y Faraón despertó.",
+      "bibleReference": "Génesis 41:4",
+      "answers": [
+        {
+          "text": "Huyeron al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Devoraron a las vacas hermosas",
+          "isCorrect": true
+        },
+        {
+          "text": "Bebieron del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Pacieron en el prado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el segundo sueño, ¿qué devoraban las siete espigas menudas?",
+      "explanation": "Las siete espigas menudas devoraban a las siete espigas gruesas y llenas, y Faraón despertó.",
+      "bibleReference": "Génesis 41:7",
+      "answers": [
+        {
+          "text": "Los racimos de la vid",
+          "isCorrect": false
+        },
+        {
+          "text": "Las siete vacas flacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las siete espigas gruesas y llenas",
+          "isCorrect": true
+        },
+        {
+          "text": "Los canastillos de pan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le hicieron a José cuando lo sacaron de la cárcel para ir a Faraón?",
+      "explanation": "Le hicieron salir corriendo de la cárcel, le cortaron el pelo y mudaron sus vestidos, y vino a Faraón.",
+      "bibleReference": "Génesis 41:14",
+      "answers": [
+        {
+          "text": "Le pusieron un collar de oro al cuello",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dieron pan y vino en la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Le ataron las manos con cuerdas",
+          "isCorrect": false
+        },
+        {
+          "text": "Le cortaron el pelo y mudaron sus vestidos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió José cuando Faraón le dijo que sabía declarar sueños?",
+      "explanation": "José respondió que no estaba en él, y que Dios sería el que respondiese paz a Faraón.",
+      "bibleReference": "Génesis 41:16",
+      "answers": [
+        {
+          "text": "Que lo había aprendido allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no estaba en él, sino en Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los magos sabían más",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no podía declararlo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según José, ¿qué significaban las siete vacas hermosas y las siete espigas hermosas?",
+      "explanation": "José dijo que las siete vacas hermosas eran siete años y las espigas hermosas eran siete años, porque el sueño era uno mismo.",
+      "bibleReference": "Génesis 41:26",
+      "answers": [
+        {
+          "text": "Siete años",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete ríos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué aconsejó José que hiciera Faraón con la tierra de Egipto?",
+      "explanation": "José aconsejó que Faraón se proveyese de un varón prudente y sabio, lo pusiera sobre Egipto y pusiera gobernadores sobre el país.",
+      "bibleReference": "Génesis 41:33-34",
+      "answers": [
+        {
+          "text": "Repartirla entre los magos de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Vender todo el trigo a Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Poner un varón prudente y sabio sobre ella",
+          "isCorrect": true
+        },
+        {
+          "text": "Llamar otra vez a todos sus sabios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dio Faraón a José cuando lo puso sobre toda la tierra de Egipto?",
+      "explanation": "Faraón le dio su anillo, le hizo vestir de ropas de lino finísimo y puso un collar de oro en su cuello.",
+      "bibleReference": "Génesis 41:42",
+      "answers": [
+        {
+          "text": "Una copa de plata y un bordón",
+          "isCorrect": false
+        },
+        {
+          "text": "Doblado dinero y dos carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ropa de diversos colores",
+          "isCorrect": false
+        },
+        {
+          "text": "Su anillo, lino finísimo y un collar de oro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó José a su hijo primogénito en Egipto?",
+      "explanation": "José llamó el nombre del primogénito Manasés, porque dijo que Dios le había hecho olvidar todo su trabajo.",
+      "bibleReference": "Génesis 41:51",
+      "answers": [
+        {
+          "text": "Manasés",
+          "isCorrect": true
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Phares",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Faraón a los Egipcios cuando el pueblo clamó por pan?",
+      "explanation": "Faraón dijo a todos los Egipcios que fuesen a José y que hiciesen lo que él les dijese.",
+      "bibleReference": "Génesis 41:55",
+      "answers": [
+        {
+          "text": "Que fueran a Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fueran a José y le obedecieran",
+          "isCorrect": true
+        },
+        {
+          "text": "Que llamaran a los magos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que vendieran sus tierras",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

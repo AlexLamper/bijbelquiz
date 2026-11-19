@@ -1,0 +1,242 @@
+{
+  "title": "Luke Bible Quiz - Chapter 15",
+  "description": "Ten questions on Luke 15: the lost sheep, the lost drachma coin and the son who was dead and is alive again.",
+  "slug": "luke-bible-quiz-part-15",
+  "categorySlug": "new-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "approved",
+  "questions": [
+    {
+      "text": "What did the Pharisees and the scribes murmur about him?",
+      "explanation": "They murmured, saying, \"This man welcomes sinners, and eats with them.\"",
+      "bibleReference": "Luke 15:2",
+      "answers": [
+        {
+          "text": "That he breaks the Sabbath",
+          "isCorrect": false
+        },
+        {
+          "text": "That he refuses to eat with tax collectors",
+          "isCorrect": false
+        },
+        {
+          "text": "That he teaches only in parables",
+          "isCorrect": false
+        },
+        {
+          "text": "That he welcomes sinners and eats with them",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "In the parable, how many sheep does the man leave behind to look for the lost one?",
+      "explanation": "The man with one hundred sheep leaves the ninety-nine in the wilderness and goes after the one that was lost.",
+      "bibleReference": "Luke 15:4",
+      "answers": [
+        {
+          "text": "Fifty-nine",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninety-nine",
+          "isCorrect": true
+        },
+        {
+          "text": "Seventy",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninety-eight",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What does the woman do when she loses one of her ten drachma coins?",
+      "explanation": "She lights a lamp, sweeps the house and seeks diligently until she finds it.",
+      "bibleReference": "Luke 15:8",
+      "answers": [
+        {
+          "text": "She asks her neighbors to lend her a coin",
+          "isCorrect": false
+        },
+        {
+          "text": "She counts the other nine coins again",
+          "isCorrect": false
+        },
+        {
+          "text": "She lights a lamp and sweeps the house",
+          "isCorrect": true
+        },
+        {
+          "text": "She waits for the morning light to look",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the younger son ask his father for?",
+      "explanation": "The younger son asked his father to give him his share of the property, and the father divided his livelihood between them.",
+      "bibleReference": "Luke 15:12",
+      "answers": [
+        {
+          "text": "His share of his father's property",
+          "isCorrect": true
+        },
+        {
+          "text": "A fattened calf",
+          "isCorrect": false
+        },
+        {
+          "text": "A goat to celebrate with his friends",
+          "isCorrect": false
+        },
+        {
+          "text": "Hired servants for his journey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What work did the younger son do in the far country?",
+      "explanation": "He joined himself to one of the citizens of that country, who sent him into his fields to feed pigs.",
+      "bibleReference": "Luke 15:15-16",
+      "answers": [
+        {
+          "text": "He served as a hired steward",
+          "isCorrect": false
+        },
+        {
+          "text": "He begged at the city gate",
+          "isCorrect": false
+        },
+        {
+          "text": "He dug and plowed a vineyard",
+          "isCorrect": false
+        },
+        {
+          "text": "He fed pigs in the fields",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "What did the father do while his son was still far off?",
+      "explanation": "While the son was still far off, his father saw him, was moved with compassion, ran, fell on his neck and kissed him.",
+      "bibleReference": "Luke 15:20",
+      "answers": [
+        {
+          "text": "He ran to him, fell on his neck and kissed him",
+          "isCorrect": true
+        },
+        {
+          "text": "He waited inside the house",
+          "isCorrect": false
+        },
+        {
+          "text": "He sent a servant out to meet him",
+          "isCorrect": false
+        },
+        {
+          "text": "He went out to the field to tell the elder son",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What three things did the father tell his servants to bring for the son?",
+      "explanation": "The father told the servants to bring the best robe, a ring for his hand and sandals for his feet.",
+      "bibleReference": "Luke 15:22",
+      "answers": [
+        {
+          "text": "Bread, oil and wine",
+          "isCorrect": false
+        },
+        {
+          "text": "The best robe, a ring and sandals",
+          "isCorrect": true
+        },
+        {
+          "text": "A goat, a lamp and a coin",
+          "isCorrect": false
+        },
+        {
+          "text": "A staff, a wallet and a purse",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the elder son hear as he came near to the house?",
+      "explanation": "The elder son was in the field, and as he came near to the house he heard music and dancing.",
+      "bibleReference": "Luke 15:25",
+      "answers": [
+        {
+          "text": "Weeping and mourning",
+          "isCorrect": false
+        },
+        {
+          "text": "His father calling him",
+          "isCorrect": false
+        },
+        {
+          "text": "Music and dancing",
+          "isCorrect": true
+        },
+        {
+          "text": "The servants arguing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the elder son complain that his father had never given him?",
+      "explanation": "He complained that although he had served his father many years, his father had never given him a goat so that he might celebrate with his friends.",
+      "bibleReference": "Luke 15:29",
+      "answers": [
+        {
+          "text": "A goat to celebrate with his friends",
+          "isCorrect": true
+        },
+        {
+          "text": "A share of the property",
+          "isCorrect": false
+        },
+        {
+          "text": "The best robe",
+          "isCorrect": false
+        },
+        {
+          "text": "A fattened calf of his own",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "What did the father answer the elder son about what belongs to him?",
+      "explanation": "The father said, \"Son, you are always with me, and all that is mine is yours.\"",
+      "bibleReference": "Luke 15:31",
+      "answers": [
+        {
+          "text": "That he would receive a double share",
+          "isCorrect": false
+        },
+        {
+          "text": "That he must first forgive his brother",
+          "isCorrect": false
+        },
+        {
+          "text": "That nothing was left to give him",
+          "isCorrect": false
+        },
+        {
+          "text": "That he is always with him and all that is his is his",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}
