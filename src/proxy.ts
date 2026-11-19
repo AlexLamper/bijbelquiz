@@ -1,8 +1,12 @@
 import { withAuth } from "next-auth/middleware"
 
+import { localizePath } from "@/config/routes"
+
 export default withAuth({
   pages: {
-    signIn: "/inloggen",
+    // intl serves the sign-in page at its English URL, so send people straight
+    // there instead of through the Dutch path's redirect.
+    signIn: localizePath("/inloggen"),
   },
 })
 
