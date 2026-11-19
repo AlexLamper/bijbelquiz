@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre Levítico 18: el llamado a no seguir las costumbres de Egipto y de Canaán, y a guardar los estatutos de Jehová.",
+  "slug": "leviticus-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se presenta Jehová al empezar el mensaje a los hijos de Israel?",
+      "explanation": "Jehová manda hablar a los hijos de Israel y decirles: Yo soy Jehová vuestro Dios.",
+      "bibleReference": "Levítico 18:1-2",
+      "answers": [
+        {
+          "text": "Diciendo: Yo soy Jehová vuestro Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Diciendo: Yo soy santo entre vosotros",
+          "isCorrect": false
+        },
+        {
+          "text": "Hablando desde la nube del perfume",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamando primero a los ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Como cuáles dos tierras no debían hacer los hijos de Israel?",
+      "explanation": "No debían hacer como se hace en la tierra de Egipto, donde moraron, ni como se hace en la tierra de Canaán, a la cual eran conducidos.",
+      "bibleReference": "Levítico 18:3",
+      "answers": [
+        {
+          "text": "Como en Babilonia y en Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "Como en Sinaí y en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Como en Egipto y en Canaán",
+          "isCorrect": true
+        },
+        {
+          "text": "Como en Jericó y en Sodoma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían poner por obra y guardar?",
+      "explanation": "Debían poner por obra los derechos de Jehová y guardar sus estatutos, andando en ellos.",
+      "bibleReference": "Levítico 18:4",
+      "answers": [
+        {
+          "text": "Las costumbres de sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "Los derechos y los estatutos de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Las palabras de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los estatutos de las gentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del hombre que hace los estatutos y derechos de Jehová?",
+      "explanation": "El texto dice que el hombre que los hace vivirá en ellos.",
+      "bibleReference": "Levítico 18:5",
+      "answers": [
+        {
+          "text": "Que heredará Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no verá enfermedad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Que vivirá en ellos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según este capítulo, ¿qué no debía hacer ningún varón?",
+      "explanation": "Se manda que ningún varón se allegue a ninguna cercana de su carne para descubrir su desnudez.",
+      "bibleReference": "Levítico 18:6",
+      "answers": [
+        {
+          "text": "Tocar cosa santa en el santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Allegarse a una cercana de su carne",
+          "isCorrect": true
+        },
+        {
+          "text": "Comer sangre de animal alguno",
+          "isCorrect": false
+        },
+        {
+          "text": "Salir del real en el día séptimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién prohíbe el texto hacer pasar por el fuego a los hijos?",
+      "explanation": "El texto prohíbe dar de su simiente para hacerla pasar por el fuego a Moloch, y así contaminar el nombre de su Dios.",
+      "bibleReference": "Levítico 18:21",
+      "answers": [
+        {
+          "text": "A los dioses de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A los demonios del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Moloch",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ídolos de Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de las gentes que Jehová echaba de delante de ellos?",
+      "explanation": "Dice que en todas estas cosas se habían ensuciado las gentes que Jehová echaba de delante de ellos.",
+      "bibleReference": "Levítico 18:24",
+      "answers": [
+        {
+          "text": "Que se habían ensuciado en todas estas cosas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no conocían la ley de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Que habían sido vendidas como siervas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que adoraban a los animales del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo la tierra después de ser contaminada?",
+      "explanation": "El texto dice que la tierra fue contaminada, que Jehová visitó su maldad sobre ella y que la tierra vomitó sus moradores.",
+      "bibleReference": "Levítico 18:25",
+      "answers": [
+        {
+          "text": "Fue repartida entre las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Fue cubierta por las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejó de dar su fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Vomitó sus moradores",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes alcanzaba el mandato de guardar estos estatutos y derechos?",
+      "explanation": "Debían guardarlos tanto el natural como el extranjero que peregrinaba entre ellos.",
+      "bibleReference": "Levítico 18:26",
+      "answers": [
+        {
+          "text": "Solo a los sacerdotes y a los levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Al natural y al extranjero que peregrinaba entre ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo a los varones nacidos en Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo a los que entraran en la tierra de Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les ocurría a las personas que hicieran alguna de estas abominaciones?",
+      "explanation": "El texto dice que las personas que hicieran alguna de todas estas abominaciones serían cortadas de entre su pueblo.",
+      "bibleReference": "Levítico 18:29",
+      "answers": [
+        {
+          "text": "Serían cortadas de entre su pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Quedarían inmundas hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagarían una ofrenda por la culpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Serían llevadas fuera de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre Éxodo 27: el altar de madera de Sittim con sus vasos, las cortinas y columnas del atrio y el aceite para las lámparas.",
+  "slug": "exodus-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuál era la altura del altar?",
+      "explanation": "El altar de madera de Sittim era cuadrado, de cinco codos de longitud y cinco de anchura, y su altura era de tres codos.",
+      "bibleReference": "Éxodo 27:1",
+      "answers": [
+        {
+          "text": "Tres codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Codo y medio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué debía cubrirse el altar?",
+      "explanation": "Los cuernos iban en sus cuatro esquinas y eran de lo mismo, y el altar se cubría de metal.",
+      "bibleReference": "Éxodo 27:2",
+      "answers": [
+        {
+          "text": "De oro puro",
+          "isCorrect": false
+        },
+        {
+          "text": "De plata",
+          "isCorrect": false
+        },
+        {
+          "text": "De metal",
+          "isCorrect": true
+        },
+        {
+          "text": "De cueros de tejones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué servían las calderas del altar?",
+      "explanation": "Se hacían calderas para echar su ceniza, además de paletas, tazones, garfios y braseros, todos los vasos de metal.",
+      "bibleReference": "Éxodo 27:3",
+      "answers": [
+        {
+          "text": "Para llevar el agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Para guardar el aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Para cocer la carne",
+          "isCorrect": false
+        },
+        {
+          "text": "Para echar su ceniza",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde llegaba el enrejado del altar?",
+      "explanation": "El enrejado se ponía dentro del cerco del altar, abajo, y llegaba hasta el medio del altar.",
+      "bibleReference": "Éxodo 27:5",
+      "answers": [
+        {
+          "text": "Hasta los cuernos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el medio del altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el suelo del atrio",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la puerta del atrio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos codos de longitud tenían las cortinas del lado del mediodía del atrio?",
+      "explanation": "Al lado del mediodía el atrio tenía cortinas de lino torcido de cien codos de longitud.",
+      "bibleReference": "Éxodo 27:9",
+      "answers": [
+        {
+          "text": "Cien",
+          "isCorrect": true
+        },
+        {
+          "text": "Cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Quince",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué eran los capiteles de esas columnas y sus molduras?",
+      "explanation": "Las veinte columnas y sus veinte basas eran de metal, y los capiteles de las columnas y sus molduras, de plata.",
+      "bibleReference": "Éxodo 27:10",
+      "answers": [
+        {
+          "text": "De metal",
+          "isCorrect": false
+        },
+        {
+          "text": "De plata",
+          "isCorrect": true
+        },
+        {
+          "text": "De oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera de Sittim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas columnas tenía el lado occidental del atrio?",
+      "explanation": "El ancho del atrio del lado occidental tenía cortinas de cincuenta codos, con diez columnas y diez basas.",
+      "bibleReference": "Éxodo 27:12",
+      "answers": [
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos codos medía el pabellón de la puerta del atrio?",
+      "explanation": "A la puerta del atrio había un pabellón de veinte codos, de cárdeno, púrpura, carmesí y lino torcido, con cuatro columnas y cuatro basas.",
+      "bibleReference": "Éxodo 27:16",
+      "answers": [
+        {
+          "text": "Cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Quince",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la altura del atrio?",
+      "explanation": "El atrio tenía cien codos de longitud, cincuenta de anchura por cada lado y cinco codos de altura.",
+      "bibleReference": "Éxodo 27:18",
+      "answers": [
+        {
+          "text": "Tres codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién debía poner las lámparas en orden delante de Jehová?",
+      "explanation": "Aarón y sus hijos las ponían en orden en el tabernáculo del testimonio, fuera del velo, desde la tarde hasta la mañana.",
+      "bibleReference": "Éxodo 27:21",
+      "answers": [
+        {
+          "text": "Aarón y sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mancebos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo varón de Israel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Levítico 21: las reglas para los sacerdotes hijos de Aarón, el sumo sacerdote y el varón en quien hubiere falta.",
+  "slug": "leviticus-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por quién no debían contaminarse los sacerdotes hijos de Aarón?",
+      "explanation": "Jehová manda decir a los sacerdotes hijos de Aarón que no se contaminen por un muerto en sus pueblos.",
+      "bibleReference": "Levítico 21:1",
+      "answers": [
+        {
+          "text": "Por un leproso de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Por un extranjero del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Por un muerto en sus pueblos",
+          "isCorrect": true
+        },
+        {
+          "text": "Por un animal inmundo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿por cuál hermana podía contaminarse el sacerdote?",
+      "explanation": "El versículo permite que se contamine por su hermana virgen, cercana a él, que no haya tenido marido.",
+      "bibleReference": "Levítico 21:3",
+      "answers": [
+        {
+          "text": "Por su hermana virgen, sin marido",
+          "isCorrect": true
+        },
+        {
+          "text": "Por su hermana que estaba casada",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la hermana de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la hermana de su madre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué estaba prohibido a los sacerdotes?",
+      "explanation": "El versículo dice que no harán calva en su cabeza, ni raerán la punta de su barba, ni harán rasguños en su carne.",
+      "bibleReference": "Levítico 21:5",
+      "answers": [
+        {
+          "text": "Cubrir su cabeza con un velo durante el servicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Vestir lino al entrar en el santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavar sus manos antes de ofrecer el pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacer calva en su cabeza y raer la punta de su barba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué ofrecen los sacerdotes?",
+      "explanation": "Serán santos a su Dios y no profanarán su nombre, porque ofrecen los fuegos de Jehová y el pan de su Dios.",
+      "bibleReference": "Levítico 21:6",
+      "answers": [
+        {
+          "text": "El diezmo de la tierra y de los árboles",
+          "isCorrect": false
+        },
+        {
+          "text": "Los fuegos de Jehová y el pan de su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "El rescate de los primogénitos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Las primicias de la siega del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué clase de mujer no podía tomar el sacerdote?",
+      "explanation": "El versículo dice que no tomarán mujer ramera ni infame, ni mujer repudiada de su marido, porque el sacerdote es santo a su Dios.",
+      "bibleReference": "Levítico 21:7",
+      "answers": [
+        {
+          "text": "Mujer de otra tribu de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Mujer nacida en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramera, infame o repudiada",
+          "isCorrect": true
+        },
+        {
+          "text": "Mujer mayor que él",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 9 de la hija del varón sacerdote que comenzare a fornicar?",
+      "explanation": "El versículo dice que amancilla a su padre y que será quemada al fuego.",
+      "bibleReference": "Levítico 21:9",
+      "answers": [
+        {
+          "text": "Será apedreada por la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Será cortada de entre su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Será echada de la casa de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Será quemada al fuego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿dónde no debía entrar el sumo sacerdote?",
+      "explanation": "El versículo dice que no entrará donde haya alguna persona muerta, ni se contaminará por su padre o por su madre.",
+      "bibleReference": "Levítico 21:11",
+      "answers": [
+        {
+          "text": "Donde haya alguna persona muerta",
+          "isCorrect": true
+        },
+        {
+          "text": "En la casa de un extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "En el atrio del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el campo de los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué estaba sobre el sumo sacerdote?",
+      "explanation": "No saldría del santuario ni lo contaminaría, porque la corona del aceite de la unción de su Dios estaba sobre él.",
+      "bibleReference": "Levítico 21:12",
+      "answers": [
+        {
+          "text": "El efod de lino con las piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "La corona del aceite de la unción de su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "El velo del santuario del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "La señal del pacto de Abraham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según los versículos 13 y 14, ¿qué mujer debía tomar el sumo sacerdote?",
+      "explanation": "El texto dice que tomará mujer con su virginidad: no viuda, ni repudiada, ni infame, ni ramera, sino virgen de sus pueblos.",
+      "bibleReference": "Levítico 21:13-14",
+      "answers": [
+        {
+          "text": "Una viuda de su tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "Una hija de un príncipe",
+          "isCorrect": false
+        },
+        {
+          "text": "Una mujer repudiada",
+          "isCorrect": false
+        },
+        {
+          "text": "Una virgen de sus pueblos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no podía hacer el varón de la simiente de Aarón en quien hubiere falta?",
+      "explanation": "No se allegaría a ofrecer el pan de su Dios ni al altar por causa de su falta, aunque sí comía del pan de su Dios.",
+      "bibleReference": "Levítico 21:21-23",
+      "answers": [
+        {
+          "text": "Comer de las cosas santificadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Acercarse a ofrecer el pan de su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Habitar entre sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Vestir las vestiduras de lino",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

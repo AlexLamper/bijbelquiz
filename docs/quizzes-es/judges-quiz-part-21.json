@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Jueces 21: el juramento de Mizpa, Jabes-galaad y las mujeres para los que quedaron de Benjamín.",
+  "slug": "judges-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué habían jurado los varones de Israel en Mizpa?",
+      "explanation": "Los varones de Israel habían jurado en Mizpa: Ninguno de nosotros dará su hija a los de Benjamín por mujer.",
+      "bibleReference": "Jueces 21:1",
+      "answers": [
+        {
+          "text": "Que no volverían a consultar a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que reedificarían la ciudad de Gabaa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que darían la heredad de Benjamín a Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ninguno daría su hija por mujer a los de Benjamín",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué preguntaron a Jehová cuando hicieron gran llanto en la casa de Dios?",
+      "explanation": "Alzaron su voz y dijeron: Oh Jehová Dios de Israel, ¿por qué ha sucedido esto en Israel, que falte hoy de Israel una tribu?",
+      "bibleReference": "Jueces 21:3",
+      "answers": [
+        {
+          "text": "Quién subiría primero a la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Por qué faltaba hoy de Israel una tribu",
+          "isCorrect": true
+        },
+        {
+          "text": "Por qué no había rey en Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Si habían de volver a sus tiendas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el pueblo al día siguiente, levantándose de mañana?",
+      "explanation": "El pueblo se levantó de mañana, edificó allí altar y ofreció holocaustos y pacíficos.",
+      "bibleReference": "Jueces 21:4",
+      "answers": [
+        {
+          "text": "Echó suertes contra Gabaa",
+          "isCorrect": false
+        },
+        {
+          "text": "Envió espías a la peña de Rimmón",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó altar y ofreció holocaustos y pacíficos",
+          "isCorrect": true
+        },
+        {
+          "text": "Se volvió cada uno a su heredad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes no habían venido a la reunión en Mizpa?",
+      "explanation": "Al contar el pueblo hallaron que ninguno de Jabes-galaad había venido al campo a la reunión, y que no hubo allí varón de los moradores de Jabes-galaad.",
+      "bibleReference": "Jueces 21:8-9",
+      "answers": [
+        {
+          "text": "Los moradores de Jabes-galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "Los moradores de Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Sichêm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos de los hombres más valientes envió allá la congregación?",
+      "explanation": "La congregación envió allá doce mil hombres de los más valientes y les mandó ir y poner a cuchillo a los moradores de Jabes-galaad.",
+      "bibleReference": "Jueces 21:10",
+      "answers": [
+        {
+          "text": "Seiscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatrocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintidós mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce mil",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde llevaron a las cuatrocientas doncellas de Jabes-galaad?",
+      "explanation": "Hallaron cuatrocientas doncellas que no habían conocido hombre y las trajeron al campo en Silo, que es en la tierra de Canaán.",
+      "bibleReference": "Jueces 21:12",
+      "answers": [
+        {
+          "text": "Al campo en Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "A la casa de Dios en Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "Al campo en Silo",
+          "isCorrect": true
+        },
+        {
+          "text": "A la peña de Rimmón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaban los hijos de Benjamín a quienes la congregación llamó en paz?",
+      "explanation": "Toda la congregación envió a hablar a los hijos de Benjamín que estaban en la peña de Rimmón, y los llamaron en paz.",
+      "bibleReference": "Jueces 21:13",
+      "answers": [
+        {
+          "text": "En Jabes-galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "En la peña de Rimmón",
+          "isCorrect": true
+        },
+        {
+          "text": "En las viñas de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gabaa de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandaron a los hijos de Benjamín que hiciesen con las hijas de Silo?",
+      "explanation": "Les mandaron poner emboscada en las viñas y, al ver salir a las hijas de Silo a bailar en corros, arrebatar cada uno mujer para sí e irse a tierra de Benjamín.",
+      "bibleReference": "Jueces 21:20-21",
+      "answers": [
+        {
+          "text": "Poner emboscada en las viñas y arrebatar mujer",
+          "isCorrect": true
+        },
+        {
+          "text": "Pedir mujeres a los ancianos de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecer holocaustos y pacíficos",
+          "isCorrect": false
+        },
+        {
+          "text": "Comprar mujeres por plata en Beth-el",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hijos de Benjamín después de tomar mujeres conforme a su número?",
+      "explanation": "Tomaron mujeres conforme a su número y, yéndose luego, se tornaron a su heredad, reedificaron las ciudades y habitaron en ellas.",
+      "bibleReference": "Jueces 21:23",
+      "answers": [
+        {
+          "text": "Se quedaron a vivir en la tierra de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron a vivir en la peña de Rimmón",
+          "isCorrect": false
+        },
+        {
+          "text": "Reedificaron sus ciudades y habitaron en ellas",
+          "isCorrect": true
+        },
+        {
+          "text": "Pusieron un rey sobre su tribu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el último versículo aquellos días en Israel?",
+      "explanation": "El versículo final dice: En estos días no había rey en Israel: cada uno hacía lo recto delante de sus ojos.",
+      "bibleReference": "Jueces 21:25",
+      "answers": [
+        {
+          "text": "Israel sirvió a Jehová todos sus días",
+          "isCorrect": false
+        },
+        {
+          "text": "No había rey y cada uno hacía lo recto a sus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "La tierra reposó cuarenta años en paz",
+          "isCorrect": false
+        },
+        {
+          "text": "El arca de Dios fue llevada a Mizpa",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre Josué 18: la reunión en Silo, los hombres que delinearon la tierra y la suerte de Benjamín.",
+  "slug": "joshua-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué lugar se reunió toda la congregación de Israel y asentó el tabernáculo del testimonio?",
+      "explanation": "El versículo dice que toda la congregación se juntó en Silo y asentó allí el tabernáculo del testimonio, después que la tierra les fue sujeta.",
+      "bibleReference": "Josué 18:1",
+      "answers": [
+        {
+          "text": "En Silo",
+          "isCorrect": true
+        },
+        {
+          "text": "En Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas tribus de Israel aún no habían recibido su posesión?",
+      "explanation": "El texto dice que habían quedado siete tribus a las cuales aún no habían repartido su posesión.",
+      "bibleReference": "Josué 18:2",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Nueve",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les reprochó Josué a los hijos de Israel?",
+      "explanation": "Josué les preguntó hasta cuándo serían negligentes para venir a poseer la tierra que Jehová el Dios de sus padres les había dado.",
+      "bibleReference": "Josué 18:3",
+      "answers": [
+        {
+          "text": "Que no habían pagado sus diezmos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran negligentes para ir a poseer la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que habían hecho alianza con los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no guardaban el tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres de cada tribu mandó Josué señalar para recorrer la tierra?",
+      "explanation": "Josué mandó señalar tres varones de cada tribu, para enviarlos a recorrer la tierra y describirla conforme a sus heredades.",
+      "bibleReference": "Josué 18:4",
+      "answers": [
+        {
+          "text": "Dos varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres varones",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según Josué, ¿dónde estarían los de la casa de José?",
+      "explanation": "Josué dijo que Judá estaría en su término al mediodía y los de la casa de José estarían en el suyo al norte.",
+      "bibleReference": "Josué 18:5",
+      "answers": [
+        {
+          "text": "Al norte",
+          "isCorrect": true
+        },
+        {
+          "text": "Al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Al oriente",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al mar Salado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no recibían los Levitas ninguna parte entre las tribus?",
+      "explanation": "El texto dice que los Levitas no tienen parte entre ellos porque el sacerdocio de Jehová es su heredad.",
+      "bibleReference": "Josué 18:7",
+      "answers": [
+        {
+          "text": "Porque ya vivían al oriente del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el sacerdocio de Jehová es su heredad",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque no quisieron recorrer la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque habitaban todos en Silo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo registraron aquellos hombres la tierra que recorrieron?",
+      "explanation": "Pasearon la tierra y la delinearon por ciudades en siete partes en un libro, y volvieron a Josué al campo en Silo.",
+      "bibleReference": "Josué 18:9",
+      "answers": [
+        {
+          "text": "La midieron con cuerdas y pusieron mojones",
+          "isCorrect": false
+        },
+        {
+          "text": "Hicieron un mapa sobre una piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "La delinearon por ciudades en siete partes en un libro",
+          "isCorrect": true
+        },
+        {
+          "text": "Contaron solo los habitantes de cada ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué tribu se sacó la suerte que Josué echó en Silo?",
+      "explanation": "El texto dice que se sacó la suerte de la tribu de los hijos de Benjamín por sus familias, y que su término salió entre los hijos de Judá y los hijos de José.",
+      "bibleReference": "Josué 18:11",
+      "answers": [
+        {
+          "text": "De la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tribu de Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "De la media tribu de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tribu de Benjamín",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Al describir el término de Benjamín, ¿con qué otro nombre se identifica a Luz?",
+      "explanation": "El texto dice que el término pasa a Luz, por el lado de Luz, esta es Beth-el, hacia el mediodía.",
+      "bibleReference": "Josué 18:13",
+      "answers": [
+        {
+          "text": "Beth-aven",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth-el",
+          "isCorrect": true
+        },
+        {
+          "text": "Ataroth-addar",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth-oron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad del término de Benjamín se identifica con Jerusalem?",
+      "explanation": "En la lista de las ciudades de Benjamín el texto nombra a Jebus, que es Jerusalem.",
+      "bibleReference": "Josué 18:28",
+      "answers": [
+        {
+          "text": "Gibeath",
+          "isCorrect": false
+        },
+        {
+          "text": "Chîriath",
+          "isCorrect": false
+        },
+        {
+          "text": "Jebus",
+          "isCorrect": true
+        },
+        {
+          "text": "Sela",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

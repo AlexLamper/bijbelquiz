@@ -1,0 +1,242 @@
+{
+  "title": "Rut Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Rut 3: el consejo de Noemi, la noche en la era y las seis medidas de cebada.",
+  "slug": "ruth-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo Noemi que quería buscar para Ruth?",
+      "explanation": "Su suegra Noemi le dijo: Hija mía, ¿no te tengo de buscar descanso, que te sea bueno?",
+      "bibleReference": "Rut 3:1",
+      "answers": [
+        {
+          "text": "Un campo donde espigar",
+          "isCorrect": false
+        },
+        {
+          "text": "Una parte de las tierras de Elimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Descanso que le fuese bueno",
+          "isCorrect": true
+        },
+        {
+          "text": "Un lugar en la era de Booz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué estaba haciendo Booz aquella noche, según Noemi?",
+      "explanation": "Noemi dijo que Booz, su pariente, con cuyas mozas Ruth había estado, aventaba aquella noche la parva de las cebadas.",
+      "bibleReference": "Rut 3:2",
+      "answers": [
+        {
+          "text": "Aventaba la parva de las cebadas",
+          "isCorrect": true
+        },
+        {
+          "text": "Segaba el campo de los trigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Se sentaba a la puerta con los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartía pan a los segadores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer Ruth antes de pasar a la era?",
+      "explanation": "Noemi le dijo que se lavase, se ungiese y se vistiese sus vestidos, y que pasase a la era sin darse a conocer al varón hasta que él hubiese acabado de comer y de beber.",
+      "bibleReference": "Rut 3:3",
+      "answers": [
+        {
+          "text": "Llevar pan y vinagre consigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Avisar primero a los segadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperar hasta la mañana en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavarse, ungirse y vestirse sus vestidos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó Noemi hacer cuando Booz se acostase?",
+      "explanation": "Le mandó reparar el lugar donde él se acostaría, ir, descubrir sus pies y acostarse allí, y él le diría lo que había de hacer.",
+      "bibleReference": "Rut 3:4",
+      "answers": [
+        {
+          "text": "Despertarlo y hablarle en seguida",
+          "isCorrect": false
+        },
+        {
+          "text": "Descubrir sus pies y acostarse allí",
+          "isCorrect": true
+        },
+        {
+          "text": "Poner su lienzo sobre el montón",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamar a los mozos por testigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió a la media noche en la era?",
+      "explanation": "A la media noche aquel hombre se estremeció y palpó, y he aquí la mujer que estaba acostada a sus pies.",
+      "bibleReference": "Rut 3:8",
+      "answers": [
+        {
+          "text": "Los mozos vinieron a la era a dormir",
+          "isCorrect": false
+        },
+        {
+          "text": "Ruth se volvió a la ciudad de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Booz se estremeció y halló a Ruth a sus pies",
+          "isCorrect": true
+        },
+        {
+          "text": "El montón de cebada fue aventado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Ruth cuando Booz le preguntó quién era?",
+      "explanation": "Ella respondió que era Ruth su sierva y le pidió que extendiese el borde de su capa sobre su sierva, por cuanto él era pariente cercano.",
+      "bibleReference": "Rut 3:9",
+      "answers": [
+        {
+          "text": "Que le diese de comer del pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la dejase espigar otro día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la llevase a casa de su suegra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que extendiese el borde de su capa sobre ella",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué le dijo Booz que no temiese?",
+      "explanation": "Booz le dijo que no temiese y que haría con ella lo que ella dijese, pues toda la puerta de su pueblo sabía que era mujer virtuosa.",
+      "bibleReference": "Rut 3:11",
+      "answers": [
+        {
+          "text": "Porque todos sabían que era mujer virtuosa",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque nadie la había visto venir",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era de la familia de Elimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el pariente cercano había muerto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Booz acerca del parentesco?",
+      "explanation": "Booz le dijo que, aunque era cierto que él era pariente cercano, con todo eso había un pariente más cercano que él.",
+      "bibleReference": "Rut 3:12",
+      "answers": [
+        {
+          "text": "Que él era el único redentor",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había un pariente más cercano que él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Noemi no tenía ya pariente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el pariente vivía en Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas medidas de cebada le midió Booz en el lienzo?",
+      "explanation": "Le dijo que llegase el lienzo que traía sobre sí, y él midió seis medidas de cebada y se las puso a cuestas.",
+      "bibleReference": "Rut 3:15",
+      "answers": [
+        {
+          "text": "Un epha",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez medidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres medidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis medidas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Noemi a Ruth al oír todo lo que había pasado?",
+      "explanation": "Noemi le dijo que reposase hasta que supiese cómo caía la cosa, porque aquel hombre no pararía hasta que ese día concluyese el negocio.",
+      "bibleReference": "Rut 3:18",
+      "answers": [
+        {
+          "text": "Que reposase hasta ver cómo caía la cosa",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviese aquella noche a la era",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fuese a la puerta con los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no dijese nada a nadie jamás",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

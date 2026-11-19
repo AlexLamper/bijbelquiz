@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Josué 7: la derrota ante Hai, el pecado escondido de Achân y el valle de Achôr.",
+  "slug": "joshua-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién tomó del anatema, de modo que la ira de Jehová se encendió contra Israel?",
+      "explanation": "El texto dice que Achân, hijo de Carmi, hijo de Zabdi, hijo de Zera, de la tribu de Judá, tomó del anatema.",
+      "bibleReference": "Josué 7:1",
+      "answers": [
+        {
+          "text": "Caleb, hijo de Jephone",
+          "isCorrect": false
+        },
+        {
+          "text": "Achân, hijo de Carmi",
+          "isCorrect": true
+        },
+        {
+          "text": "Zabdi, hijo de Zera",
+          "isCorrect": false
+        },
+        {
+          "text": "Josué, hijo de Nun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué ciudad envió Josué hombres desde Jericó para reconocer la tierra?",
+      "explanation": "Josué envió hombres desde Jericó a Hai, que estaba junto a Beth-aven, y ellos subieron y reconocieron a Hai.",
+      "bibleReference": "Josué 7:2",
+      "answers": [
+        {
+          "text": "A Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hai",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le aconsejaron a Josué los que habían reconocido Hai?",
+      "explanation": "Le dijeron que no subiera todo el pueblo, sino como dos mil o tres mil hombres, porque los de Hai eran pocos.",
+      "bibleReference": "Josué 7:3",
+      "answers": [
+        {
+          "text": "Que no subiera todo el pueblo, sino dos mil o tres mil hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Que subiera todo el pueblo de guerra con él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que rodearan la ciudad durante siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pidieran ayuda a los habitantes de Jericó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuántos hombres hirieron los de Hai?",
+      "explanation": "Los de Hai hirieron como treinta y seis hombres y los siguieron desde la puerta hasta Sebarim.",
+      "bibleReference": "Josué 7:5",
+      "answers": [
+        {
+          "text": "Como doce mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como tres mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como treinta y seis",
+          "isCorrect": true
+        },
+        {
+          "text": "Como setenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Josué cuando el corazón del pueblo se disolvió?",
+      "explanation": "Josué rompió sus vestidos y se postró en tierra sobre su rostro delante del arca de Jehová hasta la tarde.",
+      "bibleReference": "Josué 7:6",
+      "answers": [
+        {
+          "text": "Reunió al pueblo para atacar de nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó apedrear a los que huyeron",
+          "isCorrect": false
+        },
+        {
+          "text": "Partió hacia el Jordán con los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Rompió sus vestidos y se postró delante del arca",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según las palabras de Jehová, ¿qué había hecho Israel con el anatema?",
+      "explanation": "Jehová dijo que habían tomado del anatema, habían hurtado, habían mentido y lo habían guardado entre sus enseres.",
+      "bibleReference": "Josué 7:11",
+      "answers": [
+        {
+          "text": "Lo tomó, lo hurtó, mintió y lo guardó entre sus enseres",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo consagró entero al tesoro de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo quemó fuera del campo, como fue mandado",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo repartió entre todas las tribus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando Josué hizo allegar a Israel por sus tribus, ¿qué tribu fue tomada?",
+      "explanation": "Josué se levantó de mañana e hizo allegar a Israel por sus tribus, y fue tomada la tribu de Judá.",
+      "bibleReference": "Josué 7:16",
+      "answers": [
+        {
+          "text": "La tribu de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "La tribu de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "La tribu de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "La tribu de Rubén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Achân que había visto y tomado entre los despojos?",
+      "explanation": "Achân confesó que vio un manto babilónico muy bueno, doscientos siclos de plata y un changote de oro, y que lo codició y lo tomó.",
+      "bibleReference": "Josué 7:21",
+      "answers": [
+        {
+          "text": "Un arca de oro y dos becerros",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manto babilónico, plata y un changote de oro",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos cueros de vino y pan de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Una lanza, un escudo y vasos de hierro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dijo Achân que estaba escondido lo que había tomado?",
+      "explanation": "Achân dijo que estaba escondido debajo de tierra, en medio de su tienda, y el dinero debajo de ello.",
+      "bibleReference": "Josué 7:21",
+      "answers": [
+        {
+          "text": "Debajo de tierra, en medio de su tienda",
+          "isCorrect": true
+        },
+        {
+          "text": "En una cueva junto a la puerta de Hai",
+          "isCorrect": false
+        },
+        {
+          "text": "En el tesoro de la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre las piedras del muro de Jericó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo fue llamado el lugar donde levantaron sobre él un gran montón de piedras?",
+      "explanation": "Sobre Achân levantaron un gran montón de piedras, y por esto aquel lugar fue llamado el Valle de Achôr.",
+      "bibleReference": "Josué 7:26",
+      "answers": [
+        {
+          "text": "El valle de Ajalón",
+          "isCorrect": false
+        },
+        {
+          "text": "El valle de Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "El valle de Sebarim",
+          "isCorrect": false
+        },
+        {
+          "text": "El Valle de Achôr",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

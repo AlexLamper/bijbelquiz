@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Jueces 10: los jueces Tola y Jair, la idolatría de Israel y el clamor ante los hijos de Ammón.",
+  "slug": "judges-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién se levantó después de Abimelech para librar a Israel?",
+      "explanation": "Después de Abimelech se levantó Tola hijo de Púa, hijo de Dodo, que habitaba en Samir, en el monte de Ephraim.",
+      "bibleReference": "Jueces 10:1",
+      "answers": [
+        {
+          "text": "Tola hijo de Púa",
+          "isCorrect": true
+        },
+        {
+          "text": "Jair Galaadita",
+          "isCorrect": false
+        },
+        {
+          "text": "Jephté Galaadita",
+          "isCorrect": false
+        },
+        {
+          "text": "Abdón hijo de Hillel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué tribu era Tola, el que habitaba en Samir?",
+      "explanation": "El texto dice que era varón de Issachâr y habitaba en Samir, en el monte de Ephraim.",
+      "bibleReference": "Jueces 10:1",
+      "answers": [
+        {
+          "text": "De Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "De Issachâr",
+          "isCorrect": true
+        },
+        {
+          "text": "De Zabulón",
+          "isCorrect": false
+        },
+        {
+          "text": "De Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años juzgó Tola a Israel?",
+      "explanation": "Tola juzgó a Israel veintitrés años, y murió y fue sepultado en Samir.",
+      "bibleReference": "Jueces 10:2",
+      "answers": [
+        {
+          "text": "Veintidós años",
+          "isCorrect": false
+        },
+        {
+          "text": "Dieciocho años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintitrés años",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tenían los treinta hijos de Jair, el Galaadita?",
+      "explanation": "El texto dice que cabalgaban sobre treinta asnos y tenían treinta villas, que se llamaron las villas de Jair.",
+      "bibleReference": "Jueces 10:4",
+      "answers": [
+        {
+          "text": "Treinta hijas casadas fuera",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta asnos y setenta villas",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta ciudades en Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta asnos y treinta villas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde fue sepultado Jair?",
+      "explanation": "El texto dice que Jair murió y fue sepultado en Camón.",
+      "bibleReference": "Jueces 10:5",
+      "answers": [
+        {
+          "text": "En Samir",
+          "isCorrect": false
+        },
+        {
+          "text": "En Camón",
+          "isCorrect": true
+        },
+        {
+          "text": "En Piratón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Beth-lehem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué sirvieron los hijos de Israel cuando dejaron a Jehová?",
+      "explanation": "Volvieron a hacer lo malo y sirvieron a los Baales y a Astaroth, y a los dioses de los pueblos vecinos; dejaron a Jehová y no le sirvieron.",
+      "bibleReference": "Jueces 10:6",
+      "answers": [
+        {
+          "text": "A los Baales y a Astaroth",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente a Dagón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Baal-berith y a los teraphim",
+          "isCorrect": false
+        },
+        {
+          "text": "Al ephod que estaba en Ophra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En mano de quiénes los vendió Jehová cuando se airó contra Israel?",
+      "explanation": "Jehová los vendió en mano de los Filisteos y en mano de los hijos de Ammón.",
+      "bibleReference": "Jueces 10:7",
+      "answers": [
+        {
+          "text": "De Madián y de los Amalecitas",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Egipcios y de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "De Moab y de los de Sidón",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Filisteos y de los hijos de Ammón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años molieron y quebrantaron a los hijos de Israel que estaban de la otra parte del Jordán?",
+      "explanation": "El texto dice que los molieron y quebrantaron en aquel tiempo dieciocho años.",
+      "bibleReference": "Jueces 10:8",
+      "answers": [
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Dieciocho años",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Jehová a los hijos de Israel cuando confesaron su pecado?",
+      "explanation": "Jehová les dijo que, por haberlo dejado y servido a dioses ajenos, no los libraría más, y que fueran a clamar a los dioses que habían elegido.",
+      "bibleReference": "Jueces 10:13-14",
+      "answers": [
+        {
+          "text": "Que no los libraría más y clamaran a sus dioses",
+          "isCorrect": true
+        },
+        {
+          "text": "Que les enviaría otro varón profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les daría un rey en Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperaran dos meses en Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según los príncipes y el pueblo de Galaad, ¿qué recibiría el que comenzara la batalla contra los hijos de Ammón?",
+      "explanation": "Dijeron el uno al otro que el que comenzara la batalla contra los hijos de Ammón sería cabeza sobre todos los que habitan en Galaad.",
+      "bibleReference": "Jueces 10:18",
+      "answers": [
+        {
+          "text": "Recibiría las treinta villas de Jair",
+          "isCorrect": false
+        },
+        {
+          "text": "Sería cabeza sobre los que habitan en Galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "Sería sacerdote en el campo de Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Tendría la mitad de todo el despojo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

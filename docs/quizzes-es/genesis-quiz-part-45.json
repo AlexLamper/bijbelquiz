@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 45",
+  "description": "Diez preguntas sobre Génesis 45: José se da a conocer a sus hermanos y manda traer a su padre.",
+  "slug": "genesis-quiz-part-45",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué mandó José antes de darse a conocer a sus hermanos?",
+      "explanation": "José no podía ya contenerse y clamó que hiciesen salir de con él a todos, y no quedó nadie con él.",
+      "bibleReference": "Génesis 45:1",
+      "answers": [
+        {
+          "text": "Que trajeran su copa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que todos salieran de con él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que llamaran a Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pusieran pan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué fue lo primero que dijo José a sus hermanos?",
+      "explanation": "José les dijo: Yo soy José: ¿vive aún mi padre? Y sus hermanos no pudieron responderle, porque estaban turbados.",
+      "bibleReference": "Génesis 45:3",
+      "answers": [
+        {
+          "text": "Yo soy José: ¿vive aún mi padre?",
+          "isCorrect": true
+        },
+        {
+          "text": "Sois espías de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Traedme a vuestro hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "No veréis más mi rostro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según José, ¿para qué lo había enviado Dios delante de ellos?",
+      "explanation": "José les dijo que no se entristeciesen por haberle vendido allá, porque Dios le envió delante de ellos para preservación de vida.",
+      "bibleReference": "Génesis 45:5",
+      "answers": [
+        {
+          "text": "Para castigar a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Para hacerse rico",
+          "isCorrect": false
+        },
+        {
+          "text": "Para preservación de vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Para reinar sobre Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años de hambre quedaban todavía, según José?",
+      "explanation": "José dijo que ya había habido dos años de hambre y que aun quedaban cinco años en que no habría arada ni siega.",
+      "bibleReference": "Génesis 45:6",
+      "answers": [
+        {
+          "text": "Dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco años",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo José que Dios le había puesto en Egipto?",
+      "explanation": "José dijo que Dios le había puesto por padre de Faraón, por señor de toda su casa y por gobernador en toda la tierra de Egipto.",
+      "bibleReference": "Génesis 45:8",
+      "answers": [
+        {
+          "text": "Padre de Faraón y gobernador de Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "Sacerdote de la ciudad de On",
+          "isCorrect": false
+        },
+        {
+          "text": "Capitán de los de la guardia",
+          "isCorrect": false
+        },
+        {
+          "text": "Mayordomo de una casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué tierra habitaría su padre, según el recado de José?",
+      "explanation": "José mandó decir a su padre que habitaría en la tierra de Gosén y estaría cerca de él, con sus hijos y sus ganados.",
+      "bibleReference": "Génesis 45:10",
+      "answers": [
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Gosén",
+          "isCorrect": true
+        },
+        {
+          "text": "En Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "En la ciudad de On",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre el cuello de cuál hermano se echó José a llorar?",
+      "explanation": "José se echó sobre el cuello de Benjamín su hermano y lloró, y también Benjamín lloró sobre su cuello.",
+      "bibleReference": "Génesis 45:14",
+      "answers": [
+        {
+          "text": "De Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "De Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "De Benjamín",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio José a Benjamín además de las mudas de vestidos de los demás?",
+      "explanation": "A cada uno dio mudas de vestidos, y a Benjamín dio trescientas piezas de plata y cinco mudas de vestidos.",
+      "bibleReference": "Génesis 45:22",
+      "answers": [
+        {
+          "text": "Una copa de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientas piezas de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez asnos cargados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les dijo José al despedirlos?",
+      "explanation": "José despidió a sus hermanos y les dijo: No riñáis por el camino.",
+      "bibleReference": "Génesis 45:24",
+      "answers": [
+        {
+          "text": "No riñáis por el camino",
+          "isCorrect": true
+        },
+        {
+          "text": "No volváis sin mi padre",
+          "isCorrect": false
+        },
+        {
+          "text": "No contéis esto a nadie",
+          "isCorrect": false
+        },
+        {
+          "text": "No comáis con los Egipcios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con Jacob cuando vio los carros que José enviaba?",
+      "explanation": "Al contarle las palabras de José y ver los carros que enviaba para llevarlo, el espíritu de Jacob su padre revivió.",
+      "bibleReference": "Génesis 45:27",
+      "answers": [
+        {
+          "text": "Rasgó sus vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Se negó a creerlo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su espíritu revivió",
+          "isCorrect": true
+        },
+        {
+          "text": "Bendijo a Faraón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

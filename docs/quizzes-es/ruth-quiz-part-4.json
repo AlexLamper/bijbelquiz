@@ -1,0 +1,242 @@
+{
+  "title": "Rut Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Rut 4: el negocio a la puerta, el zapato del pariente y el nacimiento de Obed.",
+  "slug": "ruth-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes hizo sentar Booz como testigos en la puerta?",
+      "explanation": "Booz tomó diez varones de los ancianos de la ciudad y les dijo: Sentaos aquí. Y ellos se sentaron.",
+      "bibleReference": "Rut 4:2",
+      "answers": [
+        {
+          "text": "A los segadores de su propio campo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sacerdotes de la casa de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "A siete parientes de Elimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "A diez varones de los ancianos de la ciudad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vendía Noemi, según lo que Booz dijo al pariente?",
+      "explanation": "Booz dijo al pariente que Noemi, que había vuelto del campo de Moab, vendía una parte de las tierras que tuvo Elimelech.",
+      "bibleReference": "Rut 4:3",
+      "answers": [
+        {
+          "text": "La era donde se aventaba la cebada",
+          "isCorrect": false
+        },
+        {
+          "text": "Una parte de las tierras de Elimelech",
+          "isCorrect": true
+        },
+        {
+          "text": "Su casa en Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Las mozas y los mozos de su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el pariente la primera vez que Booz le ofreció redimir?",
+      "explanation": "Booz le dijo que, si había de redimir, redimiese, y él respondió: Yo redimiré.",
+      "bibleReference": "Rut 4:4",
+      "answers": [
+        {
+          "text": "Pregúntalo a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dame tiempo hasta mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Yo redimiré",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la tome Noemi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué añadió Booz que el pariente debía tomar junto con las tierras?",
+      "explanation": "Booz replicó que el mismo día que tomase las tierras de mano de Noemi había de tomar también a Ruth Moabita, mujer del difunto, para suscitar el nombre del muerto sobre su posesión.",
+      "bibleReference": "Rut 4:5",
+      "answers": [
+        {
+          "text": "A Ruth Moabita, mujer del difunto",
+          "isCorrect": true
+        },
+        {
+          "text": "A Noemi y toda su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez varones por testigos",
+          "isCorrect": false
+        },
+        {
+          "text": "El zapato y el lienzo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razón dio el pariente para no redimir?",
+      "explanation": "El pariente respondió que no podía redimir por su parte, porque echaría a perder su heredad, y dijo a Booz que redimiese él usando de su derecho.",
+      "bibleReference": "Rut 4:6",
+      "answers": [
+        {
+          "text": "Que no tenía plata para pagarlo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no conocía a la mujer del difunto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los ancianos se lo habían prohibido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que echaría a perder su propia heredad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué costumbre servía en Israel de testimonio para confirmar un negocio?",
+      "explanation": "De largo tiempo había esta costumbre en Israel en la redención o contrato: el uno se quitaba el zapato y lo daba a su compañero, y este era el testimonio en Israel.",
+      "bibleReference": "Rut 4:7",
+      "answers": [
+        {
+          "text": "Se ofrecía un holocausto a la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Se escribía el contrato ante diez ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "El uno se quitaba el zapato y lo daba al otro",
+          "isCorrect": true
+        },
+        {
+          "text": "Se partía el pan y se bebía vino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos mujeres compararon los del pueblo a la que entraba en casa de Booz?",
+      "explanation": "Todos los del pueblo que estaban a la puerta dijeron: Jehová haga a la mujer que entra en tu casa como a Rachêl y a Lea, las cuales dos edificaron la casa de Israel.",
+      "bibleReference": "Rut 4:11",
+      "answers": [
+        {
+          "text": "Con Noemi y Orpha",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Rachêl y Lea",
+          "isCorrect": true
+        },
+        {
+          "text": "Con Thamar y Ephrata",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Anna y Peninna",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió después que Booz tomó a Ruth por mujer?",
+      "explanation": "Booz tomó a Ruth y ella fue su mujer; y Jehová le dio que concibiese y pariese un hijo.",
+      "bibleReference": "Rut 4:13",
+      "answers": [
+        {
+          "text": "Jehová le dio que concibiese y pariese un hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Volvieron juntos a los campos de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Vendieron las tierras de Elimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Noemi se fue a casa de Orpha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron las mujeres que valía la nuera para Noemi?",
+      "explanation": "Dijeron que su nuera, la cual la amaba, le valía más que siete hijos, y que el niño sería restaurador de su alma y sustentaría su vejez.",
+      "bibleReference": "Rut 4:15",
+      "answers": [
+        {
+          "text": "Más que diez campos",
+          "isCorrect": false
+        },
+        {
+          "text": "Más que un pariente cercano",
+          "isCorrect": false
+        },
+        {
+          "text": "Más que siete hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "Más que toda la casa de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre pusieron al niño y de quién fue padre?",
+      "explanation": "Las vecinas le pusieron nombre y lo llamaron Obed; este es padre de Isaí, padre de David.",
+      "bibleReference": "Rut 4:17",
+      "answers": [
+        {
+          "text": "Mahalón, padre de Booz",
+          "isCorrect": false
+        },
+        {
+          "text": "Obed, padre de Isaí",
+          "isCorrect": true
+        },
+        {
+          "text": "Phares, padre de Hesrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Salmón, padre de Nahasón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

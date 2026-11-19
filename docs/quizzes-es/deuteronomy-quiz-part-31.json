@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 31",
+  "description": "Diez preguntas sobre Deuteronomio 31: Moisés anima a Josué, escribe la ley y recibe el mandato de escribir un cántico.",
+  "slug": "deuteronomy-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué edad dijo Moisés que tenía ese día?",
+      "explanation": "Moisés dijo que era de edad de ciento y veinte años y que ya no podía salir ni entrar, y que Jehová le había dicho que no pasaría el Jordán.",
+      "bibleReference": "Deuteronomio 31:2",
+      "answers": [
+        {
+          "text": "Ciento y veinte años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento y diez años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien años cumplidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién dijo Moisés que pasaría delante del pueblo, como Jehová lo había dicho?",
+      "explanation": "El versículo dice que Jehová pasa delante de él y destruirá esas gentes, y que Josué será el que pasará delante de él.",
+      "bibleReference": "Deuteronomio 31:3",
+      "answers": [
+        {
+          "text": "Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Josué",
+          "isCorrect": true
+        },
+        {
+          "text": "Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué reyes compara Moisés lo que Jehová hará con esas naciones?",
+      "explanation": "El versículo dice que Jehová hará con ellos como hizo con Sehón y con Og, reyes de los Amorrheos, y con su tierra, que los destruyó.",
+      "bibleReference": "Deuteronomio 31:4",
+      "answers": [
+        {
+          "text": "Con Faraón, el rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Balac, el rey de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Sehón y Og, de los Amorrheos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con los reyes de Madián",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Moisés al pueblo que haría Jehová, que va con él?",
+      "explanation": "El versículo dice que se esfuercen y cobren ánimo, y que no teman, porque Jehová su Dios va con él y no lo dejará ni lo desamparará.",
+      "bibleReference": "Deuteronomio 31:6",
+      "answers": [
+        {
+          "text": "Le dará descanso en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Le mostrará la tierra de lejos",
+          "isCorrect": false
+        },
+        {
+          "text": "Le enviará un ángel delante",
+          "isCorrect": false
+        },
+        {
+          "text": "No lo dejará ni lo desamparará",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dio Moisés la ley que había escrito?",
+      "explanation": "El versículo dice que Moisés escribió esta ley y la dio a los sacerdotes, hijos de Leví, que llevaban el arca del pacto, y a todos los ancianos de Israel.",
+      "bibleReference": "Deuteronomio 31:9",
+      "answers": [
+        {
+          "text": "A los jueces de las ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sacerdotes y a los ancianos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "A los capitanes del ejército",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al cabo del séptimo año, en el año de la remisión, ¿en qué fiesta se debía leer esta ley?",
+      "explanation": "El versículo dice que al cabo del séptimo año, en el año de la remisión, en la fiesta de las Cabañas, se leería esta ley delante de todo Israel.",
+      "bibleReference": "Deuteronomio 31:10-11",
+      "answers": [
+        {
+          "text": "En la fiesta de las Cabañas",
+          "isCorrect": true
+        },
+        {
+          "text": "En la fiesta de la pascua",
+          "isCorrect": false
+        },
+        {
+          "text": "En la fiesta de las Semanas",
+          "isCorrect": false
+        },
+        {
+          "text": "En la fiesta de las trompetas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde debían esperar Moisés y Josué cuando Jehová los llamó?",
+      "explanation": "Jehová dijo a Moisés que llamara a Josué y que esperaran en el tabernáculo del testimonio, y ellos fueron y esperaron allí.",
+      "bibleReference": "Deuteronomio 31:14",
+      "answers": [
+        {
+          "text": "En la puerta del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle enfrente de Bethpeor",
+          "isCorrect": false
+        },
+        {
+          "text": "En el tabernáculo del testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "A la orilla del río Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo apareció Jehová en el tabernáculo?",
+      "explanation": "El versículo dice que Jehová se apareció en el tabernáculo en la columna de nube, y que la columna se puso sobre la puerta del tabernáculo.",
+      "bibleReference": "Deuteronomio 31:15",
+      "answers": [
+        {
+          "text": "En una llama de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "En un viento muy recio",
+          "isCorrect": false
+        },
+        {
+          "text": "En voz de trompeta",
+          "isCorrect": false
+        },
+        {
+          "text": "En la columna de nube",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová escribir y enseñar a los hijos de Israel, para que fuera testigo contra ellos?",
+      "explanation": "El versículo dice: escribíos este cántico y enséñalo a los hijos de Israel, para que este cántico sea por testigo contra ellos.",
+      "bibleReference": "Deuteronomio 31:19",
+      "answers": [
+        {
+          "text": "Un cántico",
+          "isCorrect": true
+        },
+        {
+          "text": "Una carta a las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Los nombres de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Un libro de proverbios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde mandó Moisés poner el libro de la ley?",
+      "explanation": "Moisés mandó a los levitas que tomaran el libro de la ley y lo pusieran al lado del arca del pacto de Jehová, para que estuviera allí por testigo.",
+      "bibleReference": "Deuteronomio 31:26",
+      "answers": [
+        {
+          "text": "Dentro del arca del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el altar del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "Al lado del arca del pacto",
+          "isCorrect": true
+        },
+        {
+          "text": "En la puerta del tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

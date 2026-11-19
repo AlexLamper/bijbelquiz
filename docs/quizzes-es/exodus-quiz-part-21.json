@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Éxodo 21: los derechos sobre siervos, los casos de muerte y herida, y los daños causados por un buey.",
+  "slug": "exodus-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años serviría el siervo hebreo comprado, antes de salir horro de balde?",
+      "explanation": "Si comprares siervo hebreo, seis años servirá, mas el séptimo saldrá horro de balde.",
+      "bibleReference": "Éxodo 21:2",
+      "answers": [
+        {
+          "text": "Seis años",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué haría el amo al siervo que dijese que amaba a su señor y no quería salir libre?",
+      "explanation": "Su amo lo haría llegar a los jueces y a la puerta o al poste, y le horadaría la oreja con lesna, y sería su siervo para siempre.",
+      "bibleReference": "Éxodo 21:6",
+      "answers": [
+        {
+          "text": "Le cortaría el cabello",
+          "isCorrect": false
+        },
+        {
+          "text": "Le horadaría la oreja con lesna",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pondría señal en la mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo vendería a otro amo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, si le tomare otra, ¿qué no podía disminuirle?",
+      "explanation": "Si le tomare otra, no disminuirá su alimento, ni su vestido, ni el débito conyugal.",
+      "bibleReference": "Éxodo 21:10",
+      "answers": [
+        {
+          "text": "Su parte de la herencia de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Su lugar entre las hijas de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Su alimento, su vestido ni el débito conyugal",
+          "isCorrect": true
+        },
+        {
+          "text": "Su dote de plata y sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la ley del que hiere a alguno y lo hace morir?",
+      "explanation": "El que hiriere a alguno, haciéndole así morir, él morirá.",
+      "bibleReference": "Éxodo 21:12",
+      "answers": [
+        {
+          "text": "Pagará plata a la familia",
+          "isCorrect": false
+        },
+        {
+          "text": "Será vendido por siervo",
+          "isCorrect": false
+        },
+        {
+          "text": "Huirá de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Él morirá",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si el herido se levantaba y andaba fuera sobre su báculo, ¿qué debía el que lo hirió?",
+      "explanation": "El que le hirió será absuelto; solamente le satisfará lo que estuvo parado y hará que le curen.",
+      "bibleReference": "Éxodo 21:19",
+      "answers": [
+        {
+          "text": "Pagar con su propia vida delante de los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagarle lo que estuvo parado y hacer que le curen",
+          "isCorrect": true
+        },
+        {
+          "text": "Darle un buey y una oveja por el daño",
+          "isCorrect": false
+        },
+        {
+          "text": "Servirle seis años como siervo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si los que riñeron hieren a una mujer preñada y hubiere muerte, ¿qué se pagará?",
+      "explanation": "Mas si hubiere muerte, entonces pagarás vida por vida.",
+      "bibleReference": "Éxodo 21:22-23",
+      "answers": [
+        {
+          "text": "Vida por vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo que impusiere el marido",
+          "isCorrect": false
+        },
+        {
+          "text": "El doble en plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco bueyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedía si alguno hería el ojo de su siervo o de su sierva y lo dejaba tuerto?",
+      "explanation": "Cuando alguno hiriere el ojo de su siervo o de su sierva y lo entortare, le dará libertad por razón de su ojo.",
+      "bibleReference": "Éxodo 21:26",
+      "answers": [
+        {
+          "text": "Pagará treinta siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo venderá a otro amo",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dará un buey",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dará libertad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si un buey acorneaba a un hombre o a una mujer y moría, ¿qué se hacía con el buey?",
+      "explanation": "El buey será apedreado y no se comerá su carne, mas el dueño del buey será absuelto.",
+      "bibleReference": "Éxodo 21:28",
+      "answers": [
+        {
+          "text": "Se daría a la familia del muerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Se vendería y se partiría el dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Sería apedreado y no se comería su carne",
+          "isCorrect": true
+        },
+        {
+          "text": "Quedaría para los jueces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si el buey acorneaba a un siervo o a una sierva, ¿cuánto pagaba su señor?",
+      "explanation": "Si el buey acorneare siervo o sierva, su señor pagará treinta siclos de plata, y el buey será apedreado.",
+      "bibleReference": "Éxodo 21:32",
+      "answers": [
+        {
+          "text": "Treinta siclos de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Un buey por el siervo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si alguno abría un hoyo o cavaba una cisterna sin cubrirla y caía allí un buey o un asno, ¿qué sucedía?",
+      "explanation": "El dueño de la cisterna pagará el dinero, resarciendo a su dueño, y lo que fue muerto será suyo.",
+      "bibleReference": "Éxodo 21:33-34",
+      "answers": [
+        {
+          "text": "No pagaría nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagaría el dinero y lo muerto sería suyo",
+          "isCorrect": true
+        },
+        {
+          "text": "Pagaría el doble a los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Cubriría el hoyo y quedaría absuelto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Génesis 21: el nacimiento de Isaac, Agar e Ismael en el desierto y la alianza en Beer-seba.",
+  "slug": "genesis-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué nombre puso Abraham al hijo que le parió Sara?",
+      "explanation": "Sara concibió y parió un hijo a Abraham en su vejez, y Abraham llamó su nombre Isaac.",
+      "bibleReference": "Génesis 21:3",
+      "answers": [
+        {
+          "text": "Ismael",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaac",
+          "isCorrect": true
+        },
+        {
+          "text": "Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliezer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué edad circuncidó Abraham a su hijo Isaac?",
+      "explanation": "Abraham circuncidó a su hijo Isaac de ocho días, como Dios le había mandado.",
+      "bibleReference": "Génesis 21:4",
+      "answers": [
+        {
+          "text": "De un mes",
+          "isCorrect": false
+        },
+        {
+          "text": "De un año",
+          "isCorrect": false
+        },
+        {
+          "text": "De ocho días",
+          "isCorrect": true
+        },
+        {
+          "text": "De trece años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años tenía Abraham cuando le nació Isaac?",
+      "explanation": "Abraham era de cien años cuando le nació Isaac su hijo.",
+      "bibleReference": "Génesis 21:5",
+      "answers": [
+        {
+          "text": "Noventa y nueve años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta y seis años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento veintisiete años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Sara que Dios le había hecho?",
+      "explanation": "Sara dijo: Dios me ha hecho reir, y cualquiera que lo oyere se reirá conmigo.",
+      "bibleReference": "Génesis 21:6",
+      "answers": [
+        {
+          "text": "La había hecho reír",
+          "isCorrect": true
+        },
+        {
+          "text": "La había hecho rica",
+          "isCorrect": false
+        },
+        {
+          "text": "La había sanado de su mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Le había dado una sierva",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Abraham el día que Isaac fue destetado?",
+      "explanation": "El niño creció y fue destetado, y Abraham hizo gran banquete el día que Isaac fue destetado.",
+      "bibleReference": "Génesis 21:8",
+      "answers": [
+        {
+          "text": "Edificó un altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Plantó un bosque",
+          "isCorrect": false
+        },
+        {
+          "text": "Cavó un pozo de agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Hizo un gran banquete",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Sara a Abraham acerca de la sierva y de su hijo?",
+      "explanation": "Sara dijo a Abraham que echase a la sierva y a su hijo, porque el hijo de aquella sierva no había de heredar con su hijo Isaac.",
+      "bibleReference": "Génesis 21:10",
+      "answers": [
+        {
+          "text": "Que los llevase a la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los echase, porque aquel hijo no heredaría con Isaac",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le diese el pozo de agua del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que circuncidase al muchacho de la sierva",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio Abraham a Agar cuando la despidió?",
+      "explanation": "Abraham se levantó muy de mañana, tomó pan y un odre de agua, lo dio a Agar poniéndolo sobre su hombro, le entregó el muchacho y la despidió.",
+      "bibleReference": "Génesis 21:14",
+      "answers": [
+        {
+          "text": "Ovejas y vacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Plata y vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y un odre de agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Un asno y leña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Dios cuando oyó la voz del muchacho?",
+      "explanation": "El ángel de Dios llamó a Agar desde el cielo y le dijo que Dios había oído la voz del muchacho; entonces Dios abrió sus ojos y ella vio una fuente de agua.",
+      "bibleReference": "Génesis 21:17-19",
+      "answers": [
+        {
+          "text": "Envió lluvia sobre todo aquel desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrió los ojos de Agar, y ella vio una fuente de agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Envió un carnero para el holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "La mandó volver a casa de Abraham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué llegó a ser el muchacho cuando creció en el desierto?",
+      "explanation": "Dios fue con el muchacho; creció, habitó en el desierto y fue tirador de arco.",
+      "bibleReference": "Génesis 21:20",
+      "answers": [
+        {
+          "text": "Tirador de arco",
+          "isCorrect": true
+        },
+        {
+          "text": "Pastor de ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacerdote del Dios alto",
+          "isCorrect": false
+        },
+        {
+          "text": "Mercader de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se llamó aquel lugar Beer-seba?",
+      "explanation": "Por esto llamó a aquel lugar Beer-seba, porque allí juraron ambos.",
+      "bibleReference": "Génesis 21:31",
+      "answers": [
+        {
+          "text": "Porque allí Abraham plantó un bosque",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí había siete pozos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí murió Sara",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí juraron ambos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 43",
+  "description": "Diez preguntas sobre Génesis 43: el segundo viaje con Benjamín y la comida en casa de José.",
+  "slug": "genesis-quiz-part-43",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo su padre cuando acabaron de comer el trigo traído de Egipto?",
+      "explanation": "Su padre les dijo que volviesen y comprasen para ellos un poco de alimento.",
+      "bibleReference": "Génesis 43:2",
+      "answers": [
+        {
+          "text": "Que vendieran sus ganados",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fueran a Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volvieran a comprar alimento",
+          "isCorrect": true
+        },
+        {
+          "text": "Que esperasen la lluvia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Judá, ¿qué les había dicho aquel varón con ánimo resuelto?",
+      "explanation": "Judá respondió que aquel varón les había protestado diciendo que no verían su rostro sin su hermano con ellos.",
+      "bibleReference": "Génesis 43:3",
+      "answers": [
+        {
+          "text": "Que no verían su rostro sin su hermano",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no volviesen nunca más",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pagaran doblado dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dejaran allí sus asnos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofreció Judá a su padre acerca del mozo?",
+      "explanation": "Judá dijo que él lo fiaba, que a él le pediría cuenta de él, y que si no se lo volviese sería el culpante todos los días.",
+      "bibleReference": "Génesis 43:9",
+      "answers": [
+        {
+          "text": "Quedarse en Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviar a Rubén en su lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ir solo a Egipto otra vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Salir fiador por él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué presente mandó Israel llevar a aquel varón?",
+      "explanation": "Israel les mandó tomar de lo mejor de la tierra y llevar un presente: un poco de bálsamo, un poco de miel, aromas y mirra, nueces y almendras.",
+      "bibleReference": "Génesis 43:11",
+      "answers": [
+        {
+          "text": "Ovejas, vacas, asnos y camellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Bálsamo, miel, aromas, mirra, nueces y almendras",
+          "isCorrect": true
+        },
+        {
+          "text": "Oro, plata, piedras y vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Trigo, pan, vino y aceite de oliva",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto dinero debían tomar en sus manos?",
+      "explanation": "Israel les dijo que tomasen en sus manos doblado dinero y que llevasen también el dinero que había vuelto en las bocas de sus costales.",
+      "bibleReference": "Génesis 43:12",
+      "answers": [
+        {
+          "text": "La mitad del dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Doblado dinero",
+          "isCorrect": true
+        },
+        {
+          "text": "Ningún dinero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó José a su mayordomo cuando vio a Benjamín con ellos?",
+      "explanation": "José le mandó meter a esos hombres en casa y degollar víctima y aderezarla, porque aquellos hombres comerían con él al medio día.",
+      "bibleReference": "Génesis 43:16",
+      "answers": [
+        {
+          "text": "Seguirlos hasta la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Devolverles su dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Encerrarlos en la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Meterlos en casa y preparar la comida",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué tuvieron temor los hombres al ser metidos en casa de José?",
+      "explanation": "Decían que los habían metido allí por el dinero que había vuelto en sus costales la primera vez, para dar sobre ellos y tomarlos por siervos.",
+      "bibleReference": "Génesis 43:18",
+      "answers": [
+        {
+          "text": "Por el dinero devuelto en sus costales",
+          "isCorrect": true
+        },
+        {
+          "text": "Por haber traído a Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Por haber mentido sobre su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la copa de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les respondió el mayordomo, y a quién sacó ante ellos?",
+      "explanation": "Él respondió: Paz á vosotros, no temáis, y dijo que su Dios les había dado el tesoro en sus costales; y sacó a Simeón a ellos.",
+      "bibleReference": "Génesis 43:23",
+      "answers": [
+        {
+          "text": "Les devolvió sus asnos y su dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Les dijo que no temieran y sacó a Simeón",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mandó volver pronto a Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Les pidió todavía más dinero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo José cuando se conmovieron sus entrañas a causa de su hermano?",
+      "explanation": "José se apresuró, procuró dónde llorar, se entró en su cámara y lloró allí; después lavó su rostro y salió fuera.",
+      "bibleReference": "Génesis 43:30-31",
+      "answers": [
+        {
+          "text": "Se dio a conocer a ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Salió de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó callar a todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Entró en su cámara y lloró",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo era la porción de Benjamín en la comida?",
+      "explanation": "El texto dice que la porción de Benjamín era cinco veces como cualquiera de las de ellos.",
+      "bibleReference": "Génesis 43:34",
+      "answers": [
+        {
+          "text": "Igual que las demás",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad de las demás",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco veces la de los demás",
+          "isCorrect": true
+        },
+        {
+          "text": "Doble que las demás",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

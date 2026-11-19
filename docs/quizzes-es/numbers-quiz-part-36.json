@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 36",
+  "description": "Diez preguntas sobre Números 36: la herencia de las hijas de Salphaad y la regla para que la heredad no pase de tribu en tribu.",
+  "slug": "numbers-quiz-part-36",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes llegaron a hablar delante de Moisés y de los príncipes?",
+      "explanation": "Llegaron los príncipes de los padres de la familia de Galaad, hijo de Machîr, hijo de Manasés, de las familias de los hijos de José.",
+      "bibleReference": "Números 36:1",
+      "answers": [
+        {
+          "text": "Los príncipes de la familia de Galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "Los Levitas de los campos de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Las hijas de Salphaad y sus tíos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Rubén y los de Gad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién había mandado Jehová que se diera la posesión de Salphaad?",
+      "explanation": "Dijeron que Jehová había mandado dar la posesión de Salphaad, su hermano, a sus hijas.",
+      "bibleReference": "Números 36:2",
+      "answers": [
+        {
+          "text": "A sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "A sus hijas",
+          "isCorrect": true
+        },
+        {
+          "text": "A los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué temían que pasara si ellas se casaban con hombres de otras tribus?",
+      "explanation": "Temían que la herencia de ellas fuese quitada de la herencia de sus padres y añadida a la herencia de la tribu con que se unieran.",
+      "bibleReference": "Números 36:3",
+      "answers": [
+        {
+          "text": "Que perdieran el nombre de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su herencia pasara a la tribu de sus maridos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tuvieran que pagar un precio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volvieran a la casa de su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo decían que la heredad de ellas quedaría añadida a la tribu de sus maridos?",
+      "explanation": "Decían que cuando viniera el jubileo de los hijos de Israel, la heredad de ellas sería añadida a la heredad de la tribu de sus maridos.",
+      "bibleReference": "Números 36:4",
+      "answers": [
+        {
+          "text": "Cuando muriera el gran sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando pasaran el Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando viniera el jubileo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Moisés, por dicho de Jehová, acerca de la tribu de los hijos de José?",
+      "explanation": "Moisés mandó a los hijos de Israel por dicho de Jehová que la tribu de los hijos de José hablaba rectamente.",
+      "bibleReference": "Números 36:5",
+      "answers": [
+        {
+          "text": "Que hablaba con soberbia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debía callar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hablaba rectamente",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo preguntaría a los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quién debían casarse las hijas de Salphaad?",
+      "explanation": "Podían casarse como les pluguiere, pero dentro de la familia de la tribu de su padre.",
+      "bibleReference": "Números 36:6",
+      "answers": [
+        {
+          "text": "Con alguien de la tribu de su padre",
+          "isCorrect": true
+        },
+        {
+          "text": "Con quien quisieran, sin condición",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los hijos de Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un sacerdote o un Levita",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué se daba este mandamiento?",
+      "explanation": "Se daba para que la heredad de los hijos de Israel no fuese traspasada de tribu en tribu, sino que cada uno se allegara a la heredad de la tribu de sus padres.",
+      "bibleReference": "Números 36:7",
+      "answers": [
+        {
+          "text": "Para que las mujeres no heredaran nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que los Levitas tuvieran ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que el jubileo se guardara cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que la heredad no pasara de tribu en tribu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron las hijas de Salphaad?",
+      "explanation": "Las hijas de Salphaad hicieron como Jehová mandó a Moisés.",
+      "bibleReference": "Números 36:10",
+      "answers": [
+        {
+          "text": "Pidieron otra heredad a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Hicieron como Jehová mandó a Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Se casaron con hombres de otras tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Se fueron a vivir a Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quiénes se casaron Maala, Tirsa, Hogla, Milchâ y Noa?",
+      "explanation": "Las hijas de Salphaad se casaron con hijos de sus tíos.",
+      "bibleReference": "Números 36:11",
+      "answers": [
+        {
+          "text": "Con príncipes de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Con hombres de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Con hijos de sus tíos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con hijos de los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde mandó Jehová estos mandamientos y estatutos por mano de Moisés?",
+      "explanation": "Estos son los mandamientos y los estatutos que mandó Jehová por mano de Moisés a los hijos de Israel en los campos de Moab, junto al Jordán de Jericó.",
+      "bibleReference": "Números 36:13",
+      "answers": [
+        {
+          "text": "En los campos de Moab, junto al Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "En el monte de Sinaí, en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En Cades-barnea, junto a Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Canaán, en Jericó",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

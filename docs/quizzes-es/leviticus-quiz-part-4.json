@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Levítico 4: la expiación por el pecado cometido por yerro, del sacerdote, de la congregación, del príncipe y del pueblo.",
+  "slug": "leviticus-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 2, ¿de qué clase de pecado se habla?",
+      "explanation": "Levítico 4:2 dice que habla del caso en que alguna persona pecare por yerro en alguno de los mandamientos de Jehová sobre cosas que no se han de hacer.",
+      "bibleReference": "Levítico 4:2",
+      "answers": [
+        {
+          "text": "Del pecado hecho a sabiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Del pecado cometido por yerro",
+          "isCorrect": true
+        },
+        {
+          "text": "Del pecado de los extranjeros",
+          "isCorrect": false
+        },
+        {
+          "text": "Del pecado contra el prójimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía ofrecer el sacerdote ungido que pecaba?",
+      "explanation": "Levítico 4:3 dice que si el sacerdote ungido pecare según el pecado del pueblo, ofrecerá a Jehová un becerro sin tacha para expiación.",
+      "bibleReference": "Levítico 4:3",
+      "answers": [
+        {
+          "text": "Un carnero sin tacha",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos tórtolas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro sin tacha",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces rociaba el sacerdote la sangre hacia el velo del santuario?",
+      "explanation": "Levítico 4:6 dice que mojará el sacerdote su dedo en la sangre y rociará de aquella sangre siete veces delante de Jehová, hacia el velo del santuario.",
+      "bibleReference": "Levítico 4:6",
+      "answers": [
+        {
+          "text": "Siete veces",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce veces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué ponía el sacerdote de la sangre dentro del tabernáculo?",
+      "explanation": "Levítico 4:7 dice que pondrá de la sangre sobre los cuernos del altar del perfume aromático, que está en el tabernáculo del testimonio delante de Jehová.",
+      "bibleReference": "Levítico 4:7",
+      "answers": [
+        {
+          "text": "Sobre el velo del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la cubierta del arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los cuernos del altar del perfume",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre la mesa del pan de la proposición",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se quemaba el resto del becerro de la expiación?",
+      "explanation": "Levítico 4:12 dice que sacará todo el becerro fuera del campo, a un lugar limpio donde se echan las cenizas, y lo quemará al fuego sobre la leña.",
+      "bibleReference": "Levítico 4:12",
+      "answers": [
+        {
+          "text": "Sobre el altar del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el atrio del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro del velo del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera del campo, en un lugar limpio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes ponían sus manos sobre la cabeza del becerro de la congregación?",
+      "explanation": "Levítico 4:15 dice que los ancianos de la congregación pondrán sus manos sobre la cabeza del becerro delante de Jehová, y en presencia de Jehová lo degollarán.",
+      "bibleReference": "Levítico 4:15",
+      "answers": [
+        {
+          "text": "Los ancianos de la congregación",
+          "isCorrect": true
+        },
+        {
+          "text": "Los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "El príncipe del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los hijos de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué presentaba el príncipe que había pecado por yerro?",
+      "explanation": "Levítico 4:23 dice que luego que le fuere conocido su pecado, presentará por su ofrenda un macho cabrío sin defecto.",
+      "bibleReference": "Levítico 4:23",
+      "answers": [
+        {
+          "text": "Un becerro sin tacha",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío sin defecto",
+          "isCorrect": true
+        },
+        {
+          "text": "Un carnero de los rebaños",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué traía la persona del común del pueblo que había pecado por yerro?",
+      "explanation": "Levítico 4:28 dice que traerá por su ofrenda una hembra de las cabras, una cabra sin defecto, por su pecado que habrá cometido.",
+      "bibleReference": "Levítico 4:28",
+      "answers": [
+        {
+          "text": "Un macho cabrío sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra sin defecto",
+          "isCorrect": true
+        },
+        {
+          "text": "Un becerro sin tacha",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos palominos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el sacerdote con todo el sebo de aquella ofrenda?",
+      "explanation": "Levítico 4:31 dice que le quitará todo su sebo y el sacerdote lo hará arder sobre el altar en olor de suavidad a Jehová, y será perdonado.",
+      "bibleReference": "Levítico 4:31",
+      "answers": [
+        {
+          "text": "Lo sacaba fuera del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo daba a los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo hacía arder sobre el altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo echaba al pie del altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si alguien traía un cordero por su ofrenda por el pecado, ¿cómo debía ser?",
+      "explanation": "Levítico 4:32 dice que si trajere cordero para su ofrenda por el pecado, traerá una hembra sin defecto.",
+      "bibleReference": "Levítico 4:32",
+      "answers": [
+        {
+          "text": "Macho de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Macho sin tacha",
+          "isCorrect": false
+        },
+        {
+          "text": "El primogénito del rebaño",
+          "isCorrect": false
+        },
+        {
+          "text": "Hembra sin defecto",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

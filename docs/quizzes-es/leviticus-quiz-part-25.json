@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Levítico 25: el sábado de la tierra, el año del jubileo, el rescate de la posesión y el hermano empobrecido.",
+  "slug": "leviticus-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años se sembraba la tierra antes del sábado de la tierra?",
+      "explanation": "El texto dice que seis años sembrarán su tierra y podarán su viña, y que el séptimo año la tierra tendrá sábado de holganza.",
+      "bibleReference": "Levítico 25:3-4",
+      "answers": [
+        {
+          "text": "Cinco años",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta y nueve años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no debía hacerse en ese año de holganza?",
+      "explanation": "El versículo dice que no segarán lo que de suyo naciere en su tierra segada ni vendimiarán las uvas de su viñedo.",
+      "bibleReference": "Levítico 25:5",
+      "answers": [
+        {
+          "text": "Segar lo nacido ni vendimiar las uvas",
+          "isCorrect": true
+        },
+        {
+          "text": "Comer del fruto de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Dar de comer a los siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Podar la viña el sexto año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿a cuántos años llegaban las siete semanas de años?",
+      "explanation": "El versículo dice que siete veces siete años vendrán a ser cuarenta y nueve años.",
+      "bibleReference": "Levítico 25:8",
+      "answers": [
+        {
+          "text": "Cincuenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta y siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y nueve años",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué día se hacía pasar la trompeta de jubilación?",
+      "explanation": "El versículo dice que la trompeta pasará en el mes séptimo, a los diez del mes, el día de la expiación, por toda la tierra.",
+      "bibleReference": "Levítico 25:9",
+      "answers": [
+        {
+          "text": "El primero del mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "El día de la expiación",
+          "isCorrect": true
+        },
+        {
+          "text": "A los catorce del mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El séptimo día de cada semana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se pregonaba en el año cincuenta?",
+      "explanation": "El versículo dice que santificarán el año cincuenta y pregonarán libertad en la tierra a todos sus moradores, y cada uno volverá a su posesión.",
+      "bibleReference": "Levítico 25:10",
+      "answers": [
+        {
+          "text": "Libertad en la tierra a todos sus moradores",
+          "isCorrect": true
+        },
+        {
+          "text": "Guerra contra las gentes de alrededor",
+          "isCorrect": false
+        },
+        {
+          "text": "Perdón de los pecados del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "El pago del diezmo de toda la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si preguntaban qué comerían el séptimo año, ¿qué prometió Jehová?",
+      "explanation": "Jehová responde que enviará su bendición el sexto año, y que ese año hará fruto por tres años.",
+      "bibleReference": "Levítico 25:20-21",
+      "answers": [
+        {
+          "text": "Pan del cielo cada mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Frutos de las tierras vecinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendición el sexto año, fruto por tres años",
+          "isCorrect": true
+        },
+        {
+          "text": "Lluvia abundante el séptimo año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 23, ¿por qué no se vendía la tierra para siempre?",
+      "explanation": "El versículo dice que la tierra no se venderá rematadamente porque la tierra es de Jehová, y ellos son peregrinos y extranjeros para con él.",
+      "bibleReference": "Levítico 25:23",
+      "answers": [
+        {
+          "text": "Porque pertenece a los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la tierra es de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el rey la reparte cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque fue comprada en Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo había para redimir una casa de morada en ciudad cercada?",
+      "explanation": "El texto dice que tendrá facultad de redimirla hasta acabarse el año de su venta: un año será el término de poderse redimir.",
+      "bibleReference": "Levítico 25:29",
+      "answers": [
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el año del jubileo",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un año",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no debía tomarse del hermano empobrecido que se acogía a ti?",
+      "explanation": "Los versículos dicen que no tomará usura de él ni aumento, ni le dará su dinero a usura ni su vitualla a ganancia.",
+      "bibleReference": "Levítico 25:36-37",
+      "answers": [
+        {
+          "text": "Usura ni aumento",
+          "isCorrect": true
+        },
+        {
+          "text": "Su casa ni su campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su siervo ni su sierva",
+          "isCorrect": false
+        },
+        {
+          "text": "Su buey ni su oveja",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 55, ¿por qué son los hijos de Israel siervos de Jehová?",
+      "explanation": "El versículo dice que son sus siervos porque él los sacó de la tierra de Egipto.",
+      "bibleReference": "Levítico 25:55",
+      "answers": [
+        {
+          "text": "Porque la tierra de Canaán es suya",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque guardan el año del jubileo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Moisés los contó en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque él los sacó de la tierra de Egipto",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Jueces 1: las guerras de Judá después de la muerte de Josué y las ciudades que no fueron tomadas.",
+  "slug": "judges-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué tribu respondió Jehová que subiría primero a pelear contra los Cananeos?",
+      "explanation": "Después de la muerte de Josué los hijos de Israel consultaron a Jehová, y él respondió: Judá subirá; he aquí que yo he entregado la tierra en sus manos.",
+      "bibleReference": "Jueces 1:1-2",
+      "answers": [
+        {
+          "text": "Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "Judá",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién pidió Judá que subiese con él a su suerte?",
+      "explanation": "Judá dijo a Simeón su hermano que subiese con él a su suerte para pelear contra el Cananeo, y que él también iría con Simeón a la suya; y Simeón fue con él.",
+      "bibleReference": "Jueces 1:3",
+      "answers": [
+        {
+          "text": "A Benjamín su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "A Simeón su hermano",
+          "isCorrect": true
+        },
+        {
+          "text": "A la casa de José",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres hirieron en Bezec?",
+      "explanation": "El texto dice que Jehová entregó en sus manos al Cananeo y al Pherezeo, y que de ellos hirieron en Bezec diez mil hombres.",
+      "bibleReference": "Jueces 1:4",
+      "answers": [
+        {
+          "text": "Mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Seiscientos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le hicieron a Adoni-bezec cuando lo prendieron?",
+      "explanation": "El texto dice que lo siguieron, lo prendieron y le cortaron los pulgares de las manos y de los pies.",
+      "bibleReference": "Jueces 1:6",
+      "answers": [
+        {
+          "text": "Le cortaron los pulgares de manos y pies",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo ataron con cadenas de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Le sacaron los ojos en Bezec",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo colgaron de un árbol en el camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba antes Hebrón?",
+      "explanation": "El texto dice que Judá partió contra el Cananeo que habitaba en Hebrón, la cual se llamaba antes Chîriath-arba.",
+      "bibleReference": "Jueces 1:10",
+      "answers": [
+        {
+          "text": "Chîriath-sepher",
+          "isCorrect": false
+        },
+        {
+          "text": "Bezec de Adoni-bezec",
+          "isCorrect": false
+        },
+        {
+          "text": "Arad del mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Chîriath-arba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién tomó Chîriath-sepher y recibió a Axa por mujer?",
+      "explanation": "Caleb dijo que daría a Axa su hija por mujer al que hiriese y tomase Chîriath-sepher, y la tomó Othoniel hijo de Cenez, hermano menor de Caleb.",
+      "bibleReference": "Jueces 1:12-13",
+      "answers": [
+        {
+          "text": "Samgar hijo de Anat",
+          "isCorrect": false
+        },
+        {
+          "text": "Aod hijo de Gera",
+          "isCorrect": false
+        },
+        {
+          "text": "Othoniel hijo de Cenez",
+          "isCorrect": true
+        },
+        {
+          "text": "Barac hijo de Abinoam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Axa a su padre además de la tierra de secadal?",
+      "explanation": "Axa le pidió una bendición: que le diese también fuentes de aguas, y Caleb le dio las fuentes de arriba y las fuentes de abajo.",
+      "bibleReference": "Jueces 1:15",
+      "answers": [
+        {
+          "text": "Una ciudad amurallada",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuentes de aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Ganado y siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Parte del despojo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no pudo Judá echar a los que habitaban en los llanos?",
+      "explanation": "El texto dice que Jehová fue con Judá y echó a los de las montañas, mas no pudo echar a los que habitaban en los llanos, los cuales tenían carros herrados.",
+      "bibleReference": "Jueces 1:19",
+      "answers": [
+        {
+          "text": "Porque tenían carros herrados",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque sus ciudades eran muy altas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Judá se volvió atrás",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque habían hecho alianza con ellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba antes Beth-el, la ciudad donde la casa de José puso espías?",
+      "explanation": "El texto dice que los de la casa de José pusieron espías en Beth-el, la cual ciudad antes se llamaba Luz.",
+      "bibleReference": "Jueces 1:23",
+      "answers": [
+        {
+          "text": "Bezec",
+          "isCorrect": false
+        },
+        {
+          "text": "Arad",
+          "isCorrect": false
+        },
+        {
+          "text": "Luz",
+          "isCorrect": true
+        },
+        {
+          "text": "Gezer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los Amorrheos con los hijos de Dan?",
+      "explanation": "El texto dice que los Amorrheos apretaron a los hijos de Dan hasta el monte, y no los dejaron descender a la campiña.",
+      "bibleReference": "Jueces 1:34",
+      "answers": [
+        {
+          "text": "Los hicieron tributarios de Sidón",
+          "isCorrect": false
+        },
+        {
+          "text": "Los echaron al otro lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Les dieron sus hijas por mujeres",
+          "isCorrect": false
+        },
+        {
+          "text": "Los apretaron hasta el monte",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

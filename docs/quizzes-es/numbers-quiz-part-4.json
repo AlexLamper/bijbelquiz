@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Números 4: los oficios de Coath, Gersón y Merari al llevar el tabernáculo, y el número de los levitas contados.",
+  "slug": "numbers-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué edades debían tener los hijos de Coath que entraban al servicio del tabernáculo?",
+      "explanation": "Jehová manda contar a los hijos de Coath de edad de treinta años arriba hasta cincuenta años, todos los que entran en compañía para hacer servicio.",
+      "bibleReference": "Números 4:3",
+      "answers": [
+        {
+          "text": "De treinta años hasta cincuenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "De veinte años hasta cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "De cuarenta años hasta sesenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "De quince años hasta treinta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué cubrían el arca del testimonio cuando el campo se había de mudar?",
+      "explanation": "Aarón y sus hijos desarmaban el velo de la tienda y cubrían con él el arca del testimonio.",
+      "bibleReference": "Números 4:5",
+      "answers": [
+        {
+          "text": "Con las cortinas del atrio",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el velo de la tienda",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las tablas del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un paño de lino blanco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué estaba sobre la mesa de la proposición cuando la cubrían con el paño cárdeno?",
+      "explanation": "Sobre la mesa extendían el paño cárdeno y ponían las escudillas, las cucharas, las copas y los tazones, y el pan continuo estaba sobre ella.",
+      "bibleReference": "Números 4:7",
+      "answers": [
+        {
+          "text": "El aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "El perfume aromático",
+          "isCorrect": false
+        },
+        {
+          "text": "El pan continuo",
+          "isCorrect": true
+        },
+        {
+          "text": "Las despabiladeras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué paño extendían sobre el altar después de quitar la ceniza?",
+      "explanation": "Quitaban la ceniza del altar y extendían sobre él un paño de púrpura.",
+      "bibleReference": "Números 4:13",
+      "answers": [
+        {
+          "text": "Un paño cárdeno",
+          "isCorrect": false
+        },
+        {
+          "text": "Un paño de lino blanco",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manto de pieles de carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Un paño de púrpura",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se les advirtió a los hijos de Coath acerca de las cosas santas?",
+      "explanation": "Los hijos de Coath venían a conducir las cargas, pero no debían tocar cosa santa, porque morirían.",
+      "bibleReference": "Números 4:15",
+      "answers": [
+        {
+          "text": "Que las contaran por sus nombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no las tocaran, porque morirían",
+          "isCorrect": true
+        },
+        {
+          "text": "Que las lavaran antes de llevarlas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las llevaran en carros cubiertos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién tenía a su cargo el aceite de la luminaria y el aceite de la unción?",
+      "explanation": "El aceite de la luminaria, el perfume aromático, el presente continuo y el aceite de la unción estaban al cargo de Eleazar, hijo de Aarón el sacerdote.",
+      "bibleReference": "Números 4:16",
+      "answers": [
+        {
+          "text": "Eleazar, hijo de Aarón el sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "Ithamar, hijo de Aarón el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés, el siervo de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Los jefes de la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían llevar las familias de Gersón?",
+      "explanation": "El oficio de las familias de Gersón era llevar las cortinas del tabernáculo, el tabernáculo del testimonio y su cubierta.",
+      "bibleReference": "Números 4:25",
+      "answers": [
+        {
+          "text": "El arca del testimonio y sus varas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las tablas, las barras y las basas",
+          "isCorrect": false
+        },
+        {
+          "text": "El candelero y el altar de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Las cortinas del tabernáculo y su cubierta",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Bajo la mano de quién estaba el cargo de las familias de Gersón?",
+      "explanation": "El servicio de las familias de los hijos de Gersón en el tabernáculo del testimonio estaba bajo la mano de Ithamar, hijo de Aarón el sacerdote.",
+      "bibleReference": "Números 4:28",
+      "answers": [
+        {
+          "text": "Eleazar, hijo de Aarón el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés, el siervo de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Ithamar, hijo de Aarón el sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "Los príncipes de las tribus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pertenecía al cargo de los hijos de Merari?",
+      "explanation": "El deber de los hijos de Merari eran las tablas del tabernáculo, sus barras, sus columnas y sus basas.",
+      "bibleReference": "Números 4:31",
+      "answers": [
+        {
+          "text": "Las cortinas del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "El candelero y sus candilejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las tablas y las barras del tabernáculo",
+          "isCorrect": true
+        },
+        {
+          "text": "El pan continuo y el perfume",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron en total los levitas contados en este capítulo?",
+      "explanation": "Los contados de los levitas, desde treinta hasta cincuenta años, fueron ocho mil quinientos y ochenta.",
+      "bibleReference": "Números 4:48",
+      "answers": [
+        {
+          "text": "Ocho mil quinientos y ochenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Ocho mil trescientos y veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete mil quinientos y ochenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Nueve mil doscientos y cuarenta",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

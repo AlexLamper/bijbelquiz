@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre 1 Samuel 4: la batalla contra los Filisteos, el arca tomada y la muerte de Eli.",
+  "slug": "1-samuel-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde asentaron campo Israel y los Filisteos al salir a la batalla?",
+      "explanation": "Israel salió a encontrar en batalla a los Filisteos y asentó campo junto a Eben-ezer, y los Filisteos asentaron el suyo en Aphec.",
+      "bibleReference": "1 Samuel 4:1",
+      "answers": [
+        {
+          "text": "Israel en Silo y los Filisteos en Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dos campos junto a Ramatha",
+          "isCorrect": false
+        },
+        {
+          "text": "Israel en Aphec y los Filisteos en Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "Israel junto a Eben-ezer y los Filisteos en Aphec",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres hirieron los Filisteos en aquella primera batalla por el campo?",
+      "explanation": "Trabándose el combate, Israel fue vencido delante de los Filisteos, los cuales hirieron en la batalla por el campo como cuatro mil hombres.",
+      "bibleReference": "1 Samuel 4:2",
+      "answers": [
+        {
+          "text": "Como treinta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como cuatro mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Como cuatrocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Como veintidós mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué decidieron traer de Silo los ancianos de Israel?",
+      "explanation": "Los ancianos de Israel dijeron que trajesen de Silo el arca del pacto de Jehová, para que viniendo entre ellos los salvase de la mano de sus enemigos.",
+      "bibleReference": "1 Samuel 4:3",
+      "answers": [
+        {
+          "text": "Al sacerdote Eli y a sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ephod de lino y un garfio",
+          "isCorrect": false
+        },
+        {
+          "text": "El arca del pacto de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Los holocaustos y pacíficos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes estaban allí con el arca del pacto de Dios?",
+      "explanation": "El pueblo envió a Silo y trajeron el arca del pacto de Jehová de los ejércitos; y los dos hijos de Eli, Ophni y Phinees, estaban allí con el arca del pacto de Dios.",
+      "bibleReference": "1 Samuel 4:4",
+      "answers": [
+        {
+          "text": "Los dos hijos de Eli, Ophni y Phinees",
+          "isCorrect": true
+        },
+        {
+          "text": "Samuel y su madre Anna de Ramatha",
+          "isCorrect": false
+        },
+        {
+          "text": "El sacerdote Eli y los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un hombre de la tribu de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó cuando el arca del pacto de Jehová vino al campo?",
+      "explanation": "Cuando el arca vino al campo, todo Israel dio grita con tan gran júbilo que la tierra tembló.",
+      "bibleReference": "1 Samuel 4:5",
+      "answers": [
+        {
+          "text": "Los Filisteos huyeron en seguida",
+          "isCorrect": false
+        },
+        {
+          "text": "El pueblo ayunó hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Eli se levantó de su silla",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo Israel dio grita y la tierra tembló",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los Filisteos cuando supieron que el arca había venido al campo?",
+      "explanation": "Los Filisteos tuvieron miedo y dijeron: ¡Ay de nosotros! ¿Quién nos librará de las manos de estos dioses fuertes?",
+      "bibleReference": "1 Samuel 4:7-8",
+      "answers": [
+        {
+          "text": "Dios ha entregado el campo en nuestras manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Hebreos nos servirán desde hoy",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Ay de nosotros! ¿Quién nos librará de estos dioses?",
+          "isCorrect": true
+        },
+        {
+          "text": "Volvamos cada uno a su tienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llegó a Silo el hombre de Benjamín que venía corriendo de la batalla?",
+      "explanation": "Un hombre de Benjamín vino corriendo de la batalla aquel día a Silo, con sus vestidos rotos y tierra sobre su cabeza.",
+      "bibleReference": "1 Samuel 4:12",
+      "answers": [
+        {
+          "text": "Con el arca de Dios en sus manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sus vestidos rotos y tierra sobre su cabeza",
+          "isCorrect": true
+        },
+        {
+          "text": "Cargado de despojos de los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Herido y llevado en un asno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenía Eli cuando le llegaron las nuevas de la batalla?",
+      "explanation": "Era ya Eli de edad de noventa y ocho años, y sus ojos se habían entenebrecido de modo que no podía ver.",
+      "bibleReference": "1 Samuel 4:15",
+      "answers": [
+        {
+          "text": "Noventa y ocho años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento treinta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le sucedió a Eli cuando el mensajero mencionó el arca de Dios?",
+      "explanation": "Al mencionar el arca de Dios, Eli cayó hacia atrás de la silla al lado de la puerta, se le quebró la cerviz y murió, porque era hombre viejo y pesado.",
+      "bibleReference": "1 Samuel 4:18",
+      "answers": [
+        {
+          "text": "Rompió sus vestidos y lloró delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Salió corriendo hacia el campo de batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Cayó de la silla, se le quebró la cerviz y murió",
+          "isCorrect": true
+        },
+        {
+          "text": "Mandó traer a Samuel desde Ramatha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso al niño la mujer de Phinees, y por qué?",
+      "explanation": "Llamó al niño Ichâbod, diciendo: ¡Traspasada es la gloria de Israel!, por el arca de Dios que fue tomada y porque eran muertos su suegro y su marido.",
+      "bibleReference": "1 Samuel 4:21",
+      "answers": [
+        {
+          "text": "Eben-ezer, porque Jehová los ayudó",
+          "isCorrect": false
+        },
+        {
+          "text": "Ichâbod, porque traspasada es la gloria de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Samuel, porque lo demandó a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Phinees, por el nombre de su padre",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

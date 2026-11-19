@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Levítico 10: el fuego extraño de Nadab y Abiú, las instrucciones a Aarón y sus hijos, y el macho cabrío de la expiación.",
+  "slug": "leviticus-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué ofrecieron Nadab y Abiú delante de Jehová?",
+      "explanation": "Nadab y Abiú tomaron cada uno su incensario, pusieron fuego y perfume en ellos y ofrecieron delante de Jehová fuego extraño, que él nunca les mandó.",
+      "bibleReference": "Levítico 10:1",
+      "answers": [
+        {
+          "text": "Pan leudo sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Sangre de un macho cabrío",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego extraño, que él nunca les mandó",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les ocurrió a Nadab y Abiú?",
+      "explanation": "Salió fuego de delante de Jehová que los quemó, y murieron delante de Jehová.",
+      "bibleReference": "Levítico 10:2",
+      "answers": [
+        {
+          "text": "Fueron echados fuera del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Salió fuego de delante de Jehová y murieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Quedaron inmundos hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Perdieron su parte en las ofrendas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Después de las palabras de Moisés sobre lo que habló Jehová, ¿qué hizo Aarón?",
+      "explanation": "Moisés recordó a Aarón lo que Jehová había dicho, y Aarón calló.",
+      "bibleReference": "Levítico 10:3",
+      "answers": [
+        {
+          "text": "Salió del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Rasgó sus vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Calló",
+          "isCorrect": true
+        },
+        {
+          "text": "Alabó en voz alta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes llamó Moisés para sacar a los muertos de delante del santuario?",
+      "explanation": "Moisés llamó a Misael y a Elzaphán, hijos de Uzziel, tío de Aarón, y les mandó sacar a sus hermanos fuera del campo.",
+      "bibleReference": "Levítico 10:4",
+      "answers": [
+        {
+          "text": "A Misael y a Elzaphán",
+          "isCorrect": true
+        },
+        {
+          "text": "A Eleazar y a Ithamar",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A dos sacerdotes extranjeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo sacaron los cuerpos fuera del campo?",
+      "explanation": "Ellos llegaron y los sacaron con sus túnicas fuera del campo, como dijo Moisés.",
+      "bibleReference": "Levítico 10:5",
+      "answers": [
+        {
+          "text": "En un carro cubierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sus túnicas",
+          "isCorrect": true
+        },
+        {
+          "text": "Envueltos en pieles de carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la espaldilla de un buey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prohibió Moisés a Aarón, Eleazar e Ithamar en señal de duelo?",
+      "explanation": "Moisés les prohibió descubrir sus cabezas y rasgar sus vestidos, para que no muriesen y no se levantara la ira sobre toda la congregación.",
+      "bibleReference": "Levítico 10:6",
+      "answers": [
+        {
+          "text": "Acercarse al altar del perfume",
+          "isCorrect": false
+        },
+        {
+          "text": "Comer de las ofrendas encendidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Descubrir sus cabezas y rasgar sus vestidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Hablar con la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no debían beber Aarón y sus hijos antes de entrar en el tabernáculo del testimonio?",
+      "explanation": "Jehová dijo a Aarón que él y sus hijos no bebieran vino ni sidra cuando hubieran de entrar en el tabernáculo del testimonio, para que no muriesen.",
+      "bibleReference": "Levítico 10:9",
+      "answers": [
+        {
+          "text": "Vino ni sidra",
+          "isCorrect": true
+        },
+        {
+          "text": "Leche de cabra",
+          "isCorrect": false
+        },
+        {
+          "text": "Agua del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceite de la unción",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Entre qué cosas debían poder discernir?",
+      "explanation": "El estatuto era para poder discernir entre lo santo y lo profano, y entre lo inmundo y lo limpio.",
+      "bibleReference": "Levítico 10:10",
+      "answers": [
+        {
+          "text": "Entre el día de reposo y los demás días",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre los ricos y los pobres del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre lo nuevo y lo viejo de las ofrendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre lo santo y lo profano, y entre lo inmundo y lo limpio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se enojó Moisés contra Eleazar e Ithamar?",
+      "explanation": "Moisés demandó el macho cabrío de la expiación y halló que era quemado, y se enojó contra Eleazar e Ithamar.",
+      "bibleReference": "Levítico 10:16-17",
+      "answers": [
+        {
+          "text": "Porque habían entrado al santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no comieron la expiación en el lugar santo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque bebieron vino en el real",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque rasgaron sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés cuando oyó la respuesta de Aarón?",
+      "explanation": "Cuando Moisés oyó lo que Aarón respondió, se dio por satisfecho.",
+      "bibleReference": "Levítico 10:19-20",
+      "answers": [
+        {
+          "text": "Llamó a toda la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó quemar la ofrenda de nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se dio por satisfecho",
+          "isCorrect": true
+        },
+        {
+          "text": "Apartó a Aarón del altar",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

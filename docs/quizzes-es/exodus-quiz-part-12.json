@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Éxodo 12: la Pascua, la sangre en los postes, la muerte de los primogénitos y la salida de Egipto.",
+  "slug": "exodus-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo Jehová que sería aquel mes para ellos?",
+      "explanation": "Jehová dijo que aquel mes les sería principio de los meses, el primero en los meses del año.",
+      "bibleReference": "Éxodo 12:2",
+      "answers": [
+        {
+          "text": "El último de los meses",
+          "isCorrect": false
+        },
+        {
+          "text": "El principio de los meses",
+          "isCorrect": true
+        },
+        {
+          "text": "Un mes de reposo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mes de ayuno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué día de aquel mes debía tomar cada uno un cordero?",
+      "explanation": "Debían hablar a toda la congregación de Israel para que en el diez de aquel mes cada uno tomase un cordero por las familias de los padres.",
+      "bibleReference": "Éxodo 12:3",
+      "answers": [
+        {
+          "text": "En el diez del mes",
+          "isCorrect": true
+        },
+        {
+          "text": "En el primero del mes",
+          "isCorrect": false
+        },
+        {
+          "text": "En el siete del mes",
+          "isCorrect": false
+        },
+        {
+          "text": "En el veinte del mes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo debía ser el cordero?",
+      "explanation": "El cordero sería sin defecto, macho de un año, tomado de las ovejas o de las cabras.",
+      "bibleReference": "Éxodo 12:5",
+      "answers": [
+        {
+          "text": "Hembra de dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "El mayor del rebaño",
+          "isCorrect": false
+        },
+        {
+          "text": "Cualquiera del ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin defecto, macho de un año",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde debían poner la sangre del cordero?",
+      "explanation": "Tomarían de la sangre y la pondrían en los dos postes y en el dintel de las casas en que lo habían de comer.",
+      "bibleReference": "Éxodo 12:7",
+      "answers": [
+        {
+          "text": "Sobre el altar del patio",
+          "isCorrect": false
+        },
+        {
+          "text": "En el techo de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "En los dos postes y el dintel",
+          "isCorrect": true
+        },
+        {
+          "text": "En la puerta de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo debían comer la carne aquella noche?",
+      "explanation": "Aquella noche comerían la carne asada al fuego, con panes sin levadura y con hierbas amargas.",
+      "bibleReference": "Éxodo 12:8",
+      "answers": [
+        {
+          "text": "Asada al fuego, con panes sin levadura",
+          "isCorrect": true
+        },
+        {
+          "text": "Cruda, con sal y hierbas amargas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cocida en agua, con miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Seca al sol, con aceite y sal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo debían estar vestidos mientras lo comían?",
+      "explanation": "Habían de comerlo ceñidos los lomos, con los zapatos en los pies y el bordón en la mano, y lo comerían apresuradamente.",
+      "bibleReference": "Éxodo 12:11",
+      "answers": [
+        {
+          "text": "Descalzos y con la cabeza cubierta",
+          "isCorrect": false
+        },
+        {
+          "text": "Ceñidos, con zapatos y bordón",
+          "isCorrect": true
+        },
+        {
+          "text": "Con vestidos de fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Sentados y sin ceñirse",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué debían mojar la sangre para untar el dintel y los postes?",
+      "explanation": "Debían tomar un manojo de hisopo, mojarlo en la sangre de la jofaina y untar el dintel y los dos postes.",
+      "bibleReference": "Éxodo 12:22",
+      "answers": [
+        {
+          "text": "Con la mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una rama de olivo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un manojo de hisopo",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un pedazo de lana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta el primogénito de quién hirió Jehová a la medianoche?",
+      "explanation": "A la medianoche Jehová hirió a todo primogénito, desde el primogénito de Faraón hasta el primogénito del cautivo que estaba en la cárcel.",
+      "bibleReference": "Éxodo 12:29",
+      "answers": [
+        {
+          "text": "Hasta el primogénito del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el primogénito del juez",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el primogénito del mercader",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el primogénito del cautivo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres de a pie partieron de Rameses a Succoth?",
+      "explanation": "Los hijos de Israel partieron de Rameses a Succoth, como seiscientos mil hombres de a pie, sin contar los niños.",
+      "bibleReference": "Éxodo 12:37",
+      "answers": [
+        {
+          "text": "Como sesenta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como seiscientos mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Como seis mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como seiscientos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo habitaron los hijos de Israel en Egipto?",
+      "explanation": "El texto dice que el tiempo que los hijos de Israel habitaron en Egipto fue cuatrocientos treinta años.",
+      "bibleReference": "Éxodo 12:40",
+      "answers": [
+        {
+          "text": "Cuatrocientos treinta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatrocientos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

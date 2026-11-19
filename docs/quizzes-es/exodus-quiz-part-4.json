@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Éxodo 4: las señales de la vara y de la mano, las objeciones de Moisés y su vuelta a Egipto con Aarón.",
+  "slug": "exodus-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué se tornó la vara cuando Moisés la echó en tierra?",
+      "explanation": "Moisés echó la vara en tierra y se tornó una culebra, y él huía de ella.",
+      "bibleReference": "Éxodo 4:3",
+      "answers": [
+        {
+          "text": "En una llama de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "En una culebra",
+          "isCorrect": true
+        },
+        {
+          "text": "En un río de sangre",
+          "isCorrect": false
+        },
+        {
+          "text": "En polvo de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasó a su mano cuando la metió en su seno?",
+      "explanation": "Metió la mano en su seno y, al sacarla, su mano estaba leprosa como la nieve.",
+      "bibleReference": "Éxodo 4:6",
+      "answers": [
+        {
+          "text": "Se secó y no pudo moverla",
+          "isCorrect": false
+        },
+        {
+          "text": "Se volvió como sangre del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Se llenó de piojos y polvo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedó leprosa como la nieve",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer Moisés si no creían a las dos señales?",
+      "explanation": "Debía tomar de las aguas del río y derramarlas en tierra, y aquellas aguas se volverían sangre.",
+      "bibleReference": "Éxodo 4:9",
+      "answers": [
+        {
+          "text": "Derramar en tierra agua del río",
+          "isCorrect": true
+        },
+        {
+          "text": "Extender su vara sobre el mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Herir el polvo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Esparcir ceniza hacia el cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Moisés de sí mismo para excusarse?",
+      "explanation": "Moisés dijo que no era hombre de palabras, porque era tardo en el habla y torpe de lengua.",
+      "bibleReference": "Éxodo 4:10",
+      "answers": [
+        {
+          "text": "Que era muy viejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no conocía el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era tardo en el habla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que temía a los pastores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién nombró Jehová para hablar junto con Moisés?",
+      "explanation": "Jehová se enojó contra Moisés y dijo que su hermano Aarón, el Levita, hablaría y le saldría a recibir.",
+      "bibleReference": "Éxodo 4:14",
+      "answers": [
+        {
+          "text": "A Jethro su suegro",
+          "isCorrect": false
+        },
+        {
+          "text": "A Séphora su mujer",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A su hermano Aarón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía tomar Moisés en su mano para hacer las señales?",
+      "explanation": "Jehová le dijo que tomase aquella vara en su mano, con la cual haría las señales.",
+      "bibleReference": "Éxodo 4:17",
+      "answers": [
+        {
+          "text": "La vara",
+          "isCorrect": true
+        },
+        {
+          "text": "La arquilla",
+          "isCorrect": false
+        },
+        {
+          "text": "El pedernal",
+          "isCorrect": false
+        },
+        {
+          "text": "El manto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué le dijo Jehová que volviera a Egipto?",
+      "explanation": "Jehová le dijo en Madián que volviera a Egipto, porque habían muerto todos los que procuraban su muerte.",
+      "bibleReference": "Éxodo 4:19",
+      "answers": [
+        {
+          "text": "Porque Faraón lo había llamado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Aarón estaba enfermo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque habían muerto los que lo buscaban",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el pueblo ya había salido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía decir Moisés a Faraón acerca de Israel?",
+      "explanation": "Debía decirle que Jehová dice así: Israel es mi hijo, mi primogénito.",
+      "bibleReference": "Éxodo 4:22",
+      "answers": [
+        {
+          "text": "Que Israel servirá siempre en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Israel es el hijo primogénito de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Israel edificará sus ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Israel es siervo de Faraón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Séphora en la posada del camino?",
+      "explanation": "Séphora cogió un afilado pedernal, cortó el prepucio de su hijo y lo echó a sus pies.",
+      "bibleReference": "Éxodo 4:25",
+      "answers": [
+        {
+          "text": "Circuncidó a su hijo con un pedernal",
+          "isCorrect": true
+        },
+        {
+          "text": "Oró a Jehová por Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Escondió a su hijo en la arena",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomó la vara de Dios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo respondió el pueblo cuando Aarón habló e hizo las señales?",
+      "explanation": "El pueblo creyó y, al oír que Jehová había visitado a los hijos de Israel y visto su aflicción, se inclinó y adoró.",
+      "bibleReference": "Éxodo 4:31",
+      "answers": [
+        {
+          "text": "Se enojó contra Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió más señales",
+          "isCorrect": false
+        },
+        {
+          "text": "No quiso oír a Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Creyó, y se inclinó y adoró",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

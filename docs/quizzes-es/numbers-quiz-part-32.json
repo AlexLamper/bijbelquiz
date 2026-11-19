@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 32",
+  "description": "Diez preguntas sobre Números 32: la petición de Rubén y Gad, la respuesta de Moisés y las ciudades que edificaron.",
+  "slug": "numbers-quiz-part-32",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes tenían mucho ganado y vieron que la tierra de Jazer y de Galaad era lugar de ganado?",
+      "explanation": "Los hijos de Rubén y los hijos de Gad tenían una muy grande muchedumbre de ganado y vieron que aquel país era lugar de ganado.",
+      "bibleReference": "Números 32:1",
+      "answers": [
+        {
+          "text": "Los hijos de Rubén y los hijos de Gad",
+          "isCorrect": true
+        },
+        {
+          "text": "Los hijos de Judá y los de Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de José y los de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas y los sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pidieron a Moisés?",
+      "explanation": "Pidieron que esa tierra se les diese en heredad a ellos, sus siervos, y que no los hiciera pasar el Jordán.",
+      "bibleReference": "Números 32:5",
+      "answers": [
+        {
+          "text": "Que les diera ciudades en la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Moisés pasara el Jordán delante de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les diera esa tierra y no los hiciera pasar el Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "Que les diera parte del ganado de Madián",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué los acusó Moisés al responderles?",
+      "explanation": "Moisés les preguntó por qué quitaban el ánimo a los hijos de Israel para que no pasaran a la tierra que Jehová les había dado.",
+      "bibleReference": "Números 32:7",
+      "answers": [
+        {
+          "text": "De no tener suficiente ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "De quitar el ánimo a los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "De haber peleado sin su permiso",
+          "isCorrect": false
+        },
+        {
+          "text": "De querer volver a la tierra de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde había enviado Moisés a sus padres para que vieran la tierra?",
+      "explanation": "Moisés recuerda que sus padres hicieron lo mismo cuando los envió desde Cades-barnea para que viesen la tierra.",
+      "bibleReference": "Números 32:8",
+      "answers": [
+        {
+          "text": "Desde Horeb",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde los campos de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Cades-barnea",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron la excepción entre los varones que subieron de Egipto?",
+      "explanation": "Solo Caleb, hijo de Jephone Cenezeo, y Josué hijo de Nun fueron perfectos en pos de Jehová.",
+      "bibleReference": "Números 32:11-12",
+      "answers": [
+        {
+          "text": "Aarón el sacerdote y su hijo Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés y Aarón, los dos hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb hijo de Jephone y Josué hijo de Nun",
+          "isCorrect": true
+        },
+        {
+          "text": "Phinees y Eleazar, los sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años los hizo andar errantes Jehová por el desierto?",
+      "explanation": "El furor de Jehová se encendió en Israel y los hizo andar errantes cuarenta años por el desierto, hasta que se acabó aquella generación.",
+      "bibleReference": "Números 32:13",
+      "answers": [
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta y ocho años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué propusieron edificar antes de ir armados delante de los hijos de Israel?",
+      "explanation": "Dijeron que edificarían allí majadas para su ganado y ciudades para sus niños, y que luego irían armados delante de los hijos de Israel.",
+      "bibleReference": "Números 32:16-17",
+      "answers": [
+        {
+          "text": "Un altar grande junto al río Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudades de acogimiento para los homicidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un camino desde Galaad hasta Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Majadas para su ganado y ciudades para sus niños",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo dijeron que no volverían a sus casas?",
+      "explanation": "Prometieron no volver a sus casas hasta que los hijos de Israel poseyeran cada uno su heredad.",
+      "bibleReference": "Números 32:18",
+      "answers": [
+        {
+          "text": "Hasta que muriera el gran sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que cada israelita poseyera su heredad",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta que pasaran otros cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que Moisés los llamara de vuelta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reinos dio Moisés a Gad, a Rubén y a la media tribu de Manasés?",
+      "explanation": "Moisés les dio el reino de Sehón rey Amorrheo y el reino de Og rey de Basán, la tierra con sus ciudades y términos.",
+      "bibleReference": "Números 32:33",
+      "answers": [
+        {
+          "text": "El reino de Madián y el de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Canaán al otro lado",
+          "isCorrect": false
+        },
+        {
+          "text": "El reino de Sehón y el reino de Og",
+          "isCorrect": true
+        },
+        {
+          "text": "La tierra de Edom y de Ammón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Jair, hijo de Manasés, a las aldeas que tomó?",
+      "explanation": "Jair hijo de Manasés fue, tomó sus aldeas y les puso por nombre Havoth-jair.",
+      "bibleReference": "Números 32:41",
+      "answers": [
+        {
+          "text": "Havoth-jair",
+          "isCorrect": true
+        },
+        {
+          "text": "Kenath",
+          "isCorrect": false
+        },
+        {
+          "text": "Baal-meón",
+          "isCorrect": false
+        },
+        {
+          "text": "Atroth-sophan",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

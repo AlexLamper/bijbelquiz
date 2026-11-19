@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Levítico 11: los animales limpios e inmundos de la tierra, de las aguas y del aire, y el llamado a ser santos.",
+  "slug": "leviticus-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué animales de la tierra podían comer los hijos de Israel?",
+      "explanation": "Podían comer todo animal de pezuña que tiene las pezuñas hendidas y que rumia.",
+      "bibleReference": "Levítico 11:3",
+      "answers": [
+        {
+          "text": "Los de pezuña hendida que rumian",
+          "isCorrect": true
+        },
+        {
+          "text": "Los que andan sobre sus garras",
+          "isCorrect": false
+        },
+        {
+          "text": "Los que tienen pezuña pero no rumian",
+          "isCorrect": false
+        },
+        {
+          "text": "Los que rumian pero no tienen pezuña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué debían tener al camello por inmundo?",
+      "explanation": "El camello rumia, mas no tiene pezuña hendida, y por eso debían tenerlo por inmundo.",
+      "bibleReference": "Levítico 11:4",
+      "answers": [
+        {
+          "text": "Porque anda sobre sus garras",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tiene pezuña hendida y rumia",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no rumia ni tiene pezuña",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque rumia, mas no tiene pezuña hendida",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué era inmundo el puerco según este texto?",
+      "explanation": "El puerco tiene pezuñas y son hendidas, mas no rumia, y por eso debían tenerlo por inmundo.",
+      "bibleReference": "Levítico 11:7",
+      "answers": [
+        {
+          "text": "Porque rumia, mas no tiene pezuña",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no tiene pezuña hendida",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tiene pezuñas hendidas, mas no rumia",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque anda arrastrando sobre la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué animales de las aguas podían comer?",
+      "explanation": "De todo lo que está en las aguas podían comer lo que tiene aletas y escamas, en la mar y en los ríos.",
+      "bibleReference": "Levítico 11:9",
+      "answers": [
+        {
+          "text": "Los reptiles de agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Los que tienen aletas y escamas",
+          "isCorrect": true
+        },
+        {
+          "text": "Todos los que viven en los ríos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los que no tienen aletas ni escamas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuáles de estas aves se nombran entre las que debían tener en abominación?",
+      "explanation": "El texto nombra entre las aves que debían tener en abominación el águila, el quebrantahuesos y el esmerejón.",
+      "bibleReference": "Levítico 11:13",
+      "answers": [
+        {
+          "text": "La tórtola, el palomino y la codorniz",
+          "isCorrect": false
+        },
+        {
+          "text": "El buey, el cordero y la cabra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los peces con aletas y escamas",
+          "isCorrect": false
+        },
+        {
+          "text": "El águila, el quebrantahuesos y el esmerejón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "De los reptiles alados, ¿cuáles podían comer?",
+      "explanation": "De los reptiles alados que andan sobre cuatro pies podían comer la langosta, el langostín, el aregol y el haghab, cada uno según su especie.",
+      "bibleReference": "Levítico 11:21-22",
+      "answers": [
+        {
+          "text": "El murciélago y la abubilla según su especie",
+          "isCorrect": false
+        },
+        {
+          "text": "Los reptiles que andan arrastrando por tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "La langosta, el langostín, el aregol y el haghab",
+          "isCorrect": true
+        },
+        {
+          "text": "Los que no tienen piernas para saltar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo quedaba inmundo el que tocaba uno de esos cuerpos muertos?",
+      "explanation": "Cualquiera que tocaba sus cuerpos muertos quedaba inmundo hasta la tarde.",
+      "bibleReference": "Levítico 11:24",
+      "answers": [
+        {
+          "text": "Hasta el día séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta la mañana siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Durante treinta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacerse con la vasija de barro en que cayera uno de esos animales muertos?",
+      "explanation": "Todo lo que estuviera en la vasija de barro quedaba inmundo, y la vasija debía ser quebrada.",
+      "bibleReference": "Levítico 11:33",
+      "answers": [
+        {
+          "text": "Debía ser quebrada",
+          "isCorrect": true
+        },
+        {
+          "text": "Debía ser lavada con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía ser quemada al fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía ser llevada al sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué seguía siendo limpio aunque hubiera cerca cuerpos muertos?",
+      "explanation": "La fuente y la cisterna donde se recogen aguas seguían siendo limpias; lo que había tocado sus cuerpos muertos era inmundo.",
+      "bibleReference": "Levítico 11:36",
+      "answers": [
+        {
+          "text": "La vasija de barro donde cayeron",
+          "isCorrect": false
+        },
+        {
+          "text": "El vestido, la piel y el saco",
+          "isCorrect": false
+        },
+        {
+          "text": "El horno y los hornillos del real",
+          "isCorrect": false
+        },
+        {
+          "text": "La fuente y la cisterna donde se recogen aguas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razón da Jehová para que el pueblo sea santo?",
+      "explanation": "Jehová dice que se santifiquen y sean santos porque él es santo.",
+      "bibleReference": "Levítico 11:44-45",
+      "answers": [
+        {
+          "text": "Porque el tabernáculo está entre ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la tierra es santa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque él es santo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque los animales son limpios",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

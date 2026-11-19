@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 47",
+  "description": "Diez preguntas sobre Génesis 47: la familia de Jacob ante Faraón, la tierra de Gosén y el hambre en Egipto.",
+  "slug": "genesis-quiz-part-47",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos de sus hermanos tomó José para presentarlos delante de Faraón?",
+      "explanation": "De los postreros de sus hermanos tomó cinco varones y los presentó delante de Faraón.",
+      "bibleReference": "Génesis 47:2",
+      "answers": [
+        {
+          "text": "Diez varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco varones",
+          "isCorrect": true
+        },
+        {
+          "text": "Once varones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron los hermanos cuando Faraón les preguntó por su oficio?",
+      "explanation": "Ellos respondieron a Faraón que sus siervos eran pastores de ovejas, así ellos como sus padres.",
+      "bibleReference": "Génesis 47:3",
+      "answers": [
+        {
+          "text": "Que eran coperos del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran pastores de ovejas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que eran mercaderes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran soldados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dijeron que habían venido a aquella tierra?",
+      "explanation": "Dijeron que habían venido por morar en aquella tierra, porque no había pasto para las ovejas de sus siervos, pues el hambre era grave en Canaán.",
+      "bibleReference": "Génesis 47:4",
+      "answers": [
+        {
+          "text": "Para ver a su hermano José",
+          "isCorrect": false
+        },
+        {
+          "text": "Para servir en el palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "Para comprar tierras",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el hambre era grave en Canaán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Faraón que hiciera José con los hombres eficaces de entre ellos?",
+      "explanation": "Faraón dijo que si entendía que había entre ellos hombres eficaces, los pusiera por mayorales de su ganado.",
+      "bibleReference": "Génesis 47:6",
+      "answers": [
+        {
+          "text": "Ponerlos por mayorales de su ganado",
+          "isCorrect": true
+        },
+        {
+          "text": "Enviarlos de vuelta a Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacerlos sacerdotes de On",
+          "isCorrect": false
+        },
+        {
+          "text": "Darles carros y vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años dijo Jacob que eran los días de su peregrinación?",
+      "explanation": "Jacob respondió a Faraón que los días de los años de su peregrinación eran ciento treinta años, pocos y malos.",
+      "bibleReference": "Génesis 47:9",
+      "answers": [
+        {
+          "text": "Ciento sesenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento treinta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Noventa y nueve años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué tierra les dio José posesión?",
+      "explanation": "José hizo habitar a su padre y a sus hermanos y les dio posesión en lo mejor de la tierra de Egipto, en la tierra de Rameses.",
+      "bibleReference": "Génesis 47:11",
+      "answers": [
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "En Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "En la ciudad de On",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Rameses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué compró José para Faraón cuando se agravó el hambre?",
+      "explanation": "José compró toda la tierra de Egipto para Faraón, pues los Egipcios vendieron cada uno sus tierras, y la tierra vino a ser de Faraón.",
+      "bibleReference": "Génesis 47:20",
+      "answers": [
+        {
+          "text": "Todos los carros del país",
+          "isCorrect": false
+        },
+        {
+          "text": "Toda la tierra de Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "Las ovejas de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Los graneros de Gosén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tierra no compró José?",
+      "explanation": "Solamente no compró la tierra de los sacerdotes, porque ellos tenían ración de Faraón y por eso no vendieron su tierra.",
+      "bibleReference": "Génesis 47:22",
+      "answers": [
+        {
+          "text": "La tierra de los sacerdotes",
+          "isCorrect": true
+        },
+        {
+          "text": "La tierra de Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Rameses",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de los pastores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parte de los frutos debía darse a Faraón?",
+      "explanation": "José dijo que de los frutos darían el quinto a Faraón, y que las cuatro partes serían suyas para sembrar y para su mantenimiento.",
+      "bibleReference": "Génesis 47:24",
+      "answers": [
+        {
+          "text": "La mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "El décimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las cuatro partes",
+          "isCorrect": false
+        },
+        {
+          "text": "El quinto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pidió Israel a José cuando llegaron los días de su muerte?",
+      "explanation": "Israel le rogó que no le enterrase en Egipto, sino que le llevase de allí y le sepultase en el sepulcro de sus padres.",
+      "bibleReference": "Génesis 47:29-30",
+      "answers": [
+        {
+          "text": "Que bendijese a Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que repartiese su ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no le enterrase en Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "Que llamase a todos sus hijos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

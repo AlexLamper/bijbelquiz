@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Éxodo 23: leyes sobre la justicia y el prójimo, el año y el día de reposo, las tres fiestas y el Angel que va delante del pueblo.",
+  "slug": "exodus-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con quién prohíbe el texto concertarse para ser testigo falso?",
+      "explanation": "El versículo manda no admitir falso rumor y no concertarse con el impío para ser testigo falso.",
+      "bibleReference": "Éxodo 23:1",
+      "answers": [
+        {
+          "text": "Con el impío",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el mendigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el juez del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se debe hacer al encontrar extraviado el buey o el asno de un enemigo?",
+      "explanation": "Si encuentras extraviado el buey o el asno de tu enemigo, el versículo manda volver a llevárselo.",
+      "bibleReference": "Éxodo 23:4",
+      "answers": [
+        {
+          "text": "Dejarlo donde está",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedarse con él",
+          "isCorrect": false
+        },
+        {
+          "text": "Devolvérselo",
+          "isCorrect": true
+        },
+        {
+          "text": "Venderlo y dar el dinero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué efecto tiene el presente que se recibe?",
+      "explanation": "El versículo prohíbe recibir presente, porque el presente ciega a los que ven y pervierte las palabras justas.",
+      "bibleReference": "Éxodo 23:8",
+      "answers": [
+        {
+          "text": "Alegra el corazón del juez",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciega a los que ven",
+          "isCorrect": true
+        },
+        {
+          "text": "Honra al que lo da",
+          "isCorrect": false
+        },
+        {
+          "text": "Aplaca al enemigo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razón da el texto para no angustiar al extranjero?",
+      "explanation": "No angustiarás al extranjero, porque vosotros sabéis cómo se halla el alma del extranjero, ya que extranjeros fuisteis en la tierra de Egipto.",
+      "bibleReference": "Éxodo 23:9",
+      "answers": [
+        {
+          "text": "Porque el extranjero no conoce la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Jehová lo envió al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los ancianos lo pidieron",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ellos fueron extranjeros en Egipto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía pasar con la tierra el séptimo año?",
+      "explanation": "Seis años se sembraba la tierra, pero el séptimo se dejaba vacante y libre, para que comieran los pobres del pueblo y las bestias del campo.",
+      "bibleReference": "Éxodo 23:10-11",
+      "answers": [
+        {
+          "text": "Se dejaba sin sembrar",
+          "isCorrect": true
+        },
+        {
+          "text": "Se sembraba dos veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Se vendía su cosecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Su fruto era del sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo, ¿quiénes tomaban refrigerio gracias al descanso del séptimo día?",
+      "explanation": "Al séptimo día se descansaba para que descansaran el buey y el asno y tomaran refrigerio el hijo de la sierva y el extranjero.",
+      "bibleReference": "Éxodo 23:12",
+      "answers": [
+        {
+          "text": "Los sacerdotes del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "El hijo de la sierva y el extranjero",
+          "isCorrect": true
+        },
+        {
+          "text": "Los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mancebos de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces en el año debían celebrar fiesta a Jehová?",
+      "explanation": "El versículo dice: Tres veces en el año me celebraréis fiesta.",
+      "bibleReference": "Éxodo 23:14",
+      "answers": [
+        {
+          "text": "Una vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres veces",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prohíbe el versículo acerca del cabrito?",
+      "explanation": "El versículo manda traer las primicias a la casa de Jehová y prohíbe guisar el cabrito con la leche de su madre.",
+      "bibleReference": "Éxodo 23:19",
+      "answers": [
+        {
+          "text": "Ofrecerlo sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Venderlo a un extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Guisarlo con la leche de su madre",
+          "isCorrect": true
+        },
+        {
+          "text": "Comerlo antes del octavo día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no debían ser rebeldes al Angel que Jehová enviaba delante de ellos?",
+      "explanation": "Debían guardarse delante de él y oír su voz, porque él no perdonaría su rebelión, pues el nombre de Jehová está en él.",
+      "bibleReference": "Éxodo 23:20-21",
+      "answers": [
+        {
+          "text": "Porque lleva las tablas de la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el nombre de Jehová está en él",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque habló en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque es el mayor de los ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice Jehová que enviará delante del pueblo para echar fuera al Heveo, al Cananeo y al Hetheo?",
+      "explanation": "El versículo dice que Jehová enviaría la avispa delante de ellos, para echar fuera al Heveo, al Cananeo y al Hetheo.",
+      "bibleReference": "Éxodo 23:28",
+      "answers": [
+        {
+          "text": "La avispa",
+          "isCorrect": true
+        },
+        {
+          "text": "Fuego del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Granizo y pedrisco",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ejército de Egipto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

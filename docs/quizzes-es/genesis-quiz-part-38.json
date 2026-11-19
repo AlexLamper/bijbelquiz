@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 38",
+  "description": "Diez preguntas sobre Génesis 38: Judá, sus hijos, Thamar y el nacimiento de Phares y Zara.",
+  "slug": "genesis-quiz-part-38",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaba el varón Adullamita a quien se fue Judá?",
+      "explanation": "Judá descendió de con sus hermanos y se fue a un varón Adullamita que se llamaba Hira.",
+      "bibleReference": "Génesis 38:1",
+      "answers": [
+        {
+          "text": "Súa",
+          "isCorrect": false
+        },
+        {
+          "text": "Hira",
+          "isCorrect": true
+        },
+        {
+          "text": "Onán",
+          "isCorrect": false
+        },
+        {
+          "text": "Sela",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué nombres recibieron los tres hijos que nacieron?",
+      "explanation": "El texto dice que llamó sus nombres Er, Onán y Sela.",
+      "bibleReference": "Génesis 38:3-5",
+      "answers": [
+        {
+          "text": "Phares, Zara y Er",
+          "isCorrect": false
+        },
+        {
+          "text": "Hezrón, Hamul y Sela",
+          "isCorrect": false
+        },
+        {
+          "text": "Jemuel, Jamín y Ohad",
+          "isCorrect": false
+        },
+        {
+          "text": "Er, Onán y Sela",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la mujer que Judá tomó para su primogénito Er?",
+      "explanation": "Judá tomó mujer para su primogénito Er, la cual se llamaba Thamar.",
+      "bibleReference": "Génesis 38:6",
+      "answers": [
+        {
+          "text": "Thamar",
+          "isCorrect": true
+        },
+        {
+          "text": "Dina",
+          "isCorrect": false
+        },
+        {
+          "text": "Asenath",
+          "isCorrect": false
+        },
+        {
+          "text": "Rachêl",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Judá a Thamar que hiciera hasta que creciera Sela?",
+      "explanation": "Judá dijo a Thamar su nuera que se estuviera viuda en casa de su padre hasta que creciera Sela su hijo.",
+      "bibleReference": "Génesis 38:11",
+      "answers": [
+        {
+          "text": "Volver con sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Casarse con un Cananeo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedarse viuda en casa de su padre",
+          "isCorrect": true
+        },
+        {
+          "text": "Servir en casa de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde subía Judá cuando le dieron aviso a Thamar?",
+      "explanation": "Fue dado aviso a Thamar de que su suegro subía a Timnath a trasquilar sus ovejas.",
+      "bibleReference": "Génesis 38:12-13",
+      "answers": [
+        {
+          "text": "A Chezib, a comprar ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "A Timnath, a trasquilar sus ovejas",
+          "isCorrect": true
+        },
+        {
+          "text": "A Dothán, a ver a sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Egipto, a comprar trigo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Thamar con los vestidos de su viudez?",
+      "explanation": "Thamar quitó de sobre sí los vestidos de su viudez, se cubrió con un velo y se arrebozó.",
+      "bibleReference": "Génesis 38:14",
+      "answers": [
+        {
+          "text": "Se los quitó y se cubrió con un velo",
+          "isCorrect": true
+        },
+        {
+          "text": "Los rasgó y se puso saco sobre sí",
+          "isCorrect": false
+        },
+        {
+          "text": "Los tiñó con sangre de cabrito",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dio a su suegro en prenda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prenda pidió ella a Judá?",
+      "explanation": "Ella respondió que le diera su anillo, su manto y su bordón que tenía en su mano.",
+      "bibleReference": "Génesis 38:18",
+      "answers": [
+        {
+          "text": "Veinte piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus ovejas y sus asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "Una copa de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "El anillo, el manto y el bordón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué envió Judá por mano de su amigo el Adullamita?",
+      "explanation": "Judá envió el cabrito de las cabras por mano de su amigo el Adullamita, para que tomase la prenda de mano de la mujer.",
+      "bibleReference": "Génesis 38:20",
+      "answers": [
+        {
+          "text": "Una muda de vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doblado dinero en su mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cabrito de las cabras",
+          "isCorrect": true
+        },
+        {
+          "text": "Pan, aromas y almendras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Judá cuando reconoció el anillo, el manto y el bordón?",
+      "explanation": "Judá los reconoció y dijo que ella era más justa que él, por cuanto no la había dado a Sela su hijo.",
+      "bibleReference": "Génesis 38:26",
+      "answers": [
+        {
+          "text": "Que ella era más justa que él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que debía ser quemada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no conocía aquellas cosas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fuera echada de la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamaron al hermano que tenía el hilo de grana en su mano?",
+      "explanation": "Después salió su hermano, el que tenía en su mano el hilo de grana, y llamó su nombre Zara.",
+      "bibleReference": "Génesis 38:30",
+      "answers": [
+        {
+          "text": "Phares",
+          "isCorrect": false
+        },
+        {
+          "text": "Zara",
+          "isCorrect": true
+        },
+        {
+          "text": "Hamul",
+          "isCorrect": false
+        },
+        {
+          "text": "Hezrón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

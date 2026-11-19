@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Génesis 25: la muerte de Abraham, los hijos de Ismael y el nacimiento de Esaú y Jacob.",
+  "slug": "genesis-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaba la mujer que Abraham tomó al comienzo del capítulo?",
+      "explanation": "El texto dice que Abraham tomó otra mujer, cuyo nombre fué Cetura.",
+      "bibleReference": "Génesis 25:1",
+      "answers": [
+        {
+          "text": "Cetura",
+          "isCorrect": true
+        },
+        {
+          "text": "Agar",
+          "isCorrect": false
+        },
+        {
+          "text": "Rebeca",
+          "isCorrect": false
+        },
+        {
+          "text": "Mahaleth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién dio Abraham todo cuanto tenía?",
+      "explanation": "El versículo dice que Abraham dió todo cuanto tenía á Isaac.",
+      "bibleReference": "Génesis 25:5",
+      "answers": [
+        {
+          "text": "A Ismael",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Cetura",
+          "isCorrect": false
+        },
+        {
+          "text": "A Isaac",
+          "isCorrect": true
+        },
+        {
+          "text": "A los hijos de sus concubinas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuántos años vivió Abraham?",
+      "explanation": "Los días de vida que vivió Abraham fueron ciento setenta y cinco años.",
+      "bibleReference": "Génesis 25:7",
+      "answers": [
+        {
+          "text": "Ciento treinta y siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento setenta y cinco años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento ochenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos cinco años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes sepultaron a Abraham en la cueva de Macpela?",
+      "explanation": "Isaac é Ismael, sus hijos, lo sepultaron en la cueva de Macpela, en la heredad de Ephrón.",
+      "bibleReference": "Génesis 25:9",
+      "answers": [
+        {
+          "text": "Los hijos de Heth",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephrón y los suyos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Cetura",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaac e Ismael",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el primogénito de Ismael?",
+      "explanation": "El texto nombra a los hijos de Ismael y dice que el primogénito fue Nabaioth.",
+      "bibleReference": "Génesis 25:13",
+      "answers": [
+        {
+          "text": "Nabaioth",
+          "isCorrect": true
+        },
+        {
+          "text": "Cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Mibsam",
+          "isCorrect": false
+        },
+        {
+          "text": "Jetur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenía Isaac cuando tomó por mujer a Rebeca?",
+      "explanation": "El versículo dice que Isaac era de cuarenta años cuando tomó por mujer á Rebeca, hija de Bethuel Arameo.",
+      "bibleReference": "Génesis 25:20",
+      "answers": [
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cincuenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Jehová a Rebeca sobre los dos pueblos que estaban en su seno?",
+      "explanation": "Jehová le dijo que un pueblo sería más fuerte que el otro y que el mayor servirá al menor.",
+      "bibleReference": "Génesis 25:23",
+      "answers": [
+        {
+          "text": "Que los dos pueblos vivirían en paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el menor serviría al mayor",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ninguno heredaría la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el mayor serviría al menor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevaba el segundo hijo cuando nació, según el texto?",
+      "explanation": "El segundo salió con su mano trabada al calcañar de Esaú, y fue llamado Jacob.",
+      "bibleReference": "Génesis 25:26",
+      "answers": [
+        {
+          "text": "Una pelliza de vello",
+          "isCorrect": false
+        },
+        {
+          "text": "Una señal roja en la frente",
+          "isCorrect": false
+        },
+        {
+          "text": "Su mano trabada al calcañar de Esaú",
+          "isCorrect": true
+        },
+        {
+          "text": "Un cordón atado al pie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué amaba Isaac a Esaú, según el texto?",
+      "explanation": "El versículo dice que Isaac amó á Esaú porque comía de su caza, mientras Rebeca amaba á Jacob.",
+      "bibleReference": "Génesis 25:28",
+      "answers": [
+        {
+          "text": "Porque habitaba en tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque comía de su caza",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque le guisaba potajes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era el hijo más quieto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dio Jacob a Esaú cuando este le vendió su primogenitura?",
+      "explanation": "Jacob dió á Esaú pan y del guisado de las lentejas; él comió y bebió, y se fue.",
+      "bibleReference": "Génesis 25:33-34",
+      "answers": [
+        {
+          "text": "Ovejas y cabras de su ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino y aceite de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y guisado de lentejas",
+          "isCorrect": true
+        },
+        {
+          "text": "Dones y bienes de su padre",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

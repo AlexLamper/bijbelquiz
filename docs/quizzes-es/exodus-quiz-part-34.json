@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 34",
+  "description": "Diez preguntas sobre Éxodo 34: las dos tablas nuevas, la proclamación del nombre de Jehová, los mandamientos de la alianza y el rostro resplandeciente de Moisés.",
+  "slug": "exodus-quiz-part-34",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué mandó Jehová a Moisés al principio del capítulo?",
+      "explanation": "Jehová le dijo que alisara dos tablas de piedra como las primeras, y que él escribiría en ellas las palabras que estaban en las que Moisés quebró.",
+      "bibleReference": "Éxodo 34:1",
+      "answers": [
+        {
+          "text": "Edificar un altar en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Alisar dos tablas de piedra",
+          "isCorrect": true
+        },
+        {
+          "text": "Reunir a los setenta ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Traer dos carneros sin tacha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo, ¿qué no debía hacerse delante del monte?",
+      "explanation": "Nadie debía subir con Moisés ni aparecer en todo el monte, y ni ovejas ni bueyes debían pacer delante del monte.",
+      "bibleReference": "Éxodo 34:3",
+      "answers": [
+        {
+          "text": "Que se encendiera fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se tocaran bocinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pacieran ovejas y bueyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se ofrecieran holocaustos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se proclamó Jehová al pasar delante de Moisés?",
+      "explanation": "Jehová pasó delante de él y proclamó: Jehová, Jehová, fuerte, misericordioso y piadoso; tardo para la ira, y grande en benignidad y verdad.",
+      "bibleReference": "Éxodo 34:6",
+      "answers": [
+        {
+          "text": "Tardo para la ira",
+          "isCorrect": true
+        },
+        {
+          "text": "Pronto para la ira",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuerte en la batalla y terrible",
+          "isCorrect": false
+        },
+        {
+          "text": "Juez de toda la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta qué generación dice el texto que visita la iniquidad de los padres?",
+      "explanation": "El versículo dice que visita la iniquidad de los padres sobre los hijos y sobre los hijos de los hijos, sobre los terceros y sobre los cuartos.",
+      "bibleReference": "Éxodo 34:7",
+      "answers": [
+        {
+          "text": "Sobre los hijos solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta millares de generaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la séptima generación",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los terceros y los cuartos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Moisés cuando bajó la cabeza hacia el suelo y se encorvó?",
+      "explanation": "Moisés pidió que el Señor fuera en medio de ellos, que perdonara su iniquidad y su pecado y que los poseyera.",
+      "bibleReference": "Éxodo 34:8-9",
+      "answers": [
+        {
+          "text": "Que le mostrara su gloria",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el Señor fuera en medio de ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que escribiera nuevas tablas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que enviara su ángel delante",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer con los altares de los moradores de aquella tierra?",
+      "explanation": "El versículo manda derribar sus altares, quebrar sus estatuas y talar sus bosques.",
+      "bibleReference": "Éxodo 34:13",
+      "answers": [
+        {
+          "text": "Derribarlos",
+          "isCorrect": true
+        },
+        {
+          "text": "Consagrarlos a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejarlos en pie",
+          "isCorrect": false
+        },
+        {
+          "text": "Cubrirlos de metal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre se da Jehová en este versículo?",
+      "explanation": "El versículo dice que no se han de inclinar a dios ajeno, porque Jehová, cuyo nombre es Celoso, Dios celoso es.",
+      "bibleReference": "Éxodo 34:14",
+      "answers": [
+        {
+          "text": "Fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Señoreador",
+          "isCorrect": false
+        },
+        {
+          "text": "Celoso",
+          "isCorrect": true
+        },
+        {
+          "text": "Santo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué trabajos había que cesar también el séptimo día?",
+      "explanation": "Seis días se trabajaba, pero el séptimo día se cesaba, y se cesaba aun en la arada y en la siega.",
+      "bibleReference": "Éxodo 34:21",
+      "answers": [
+        {
+          "text": "En el pastoreo y la caza",
+          "isCorrect": false
+        },
+        {
+          "text": "En la vendimia y el lagar",
+          "isCorrect": false
+        },
+        {
+          "text": "En la obra del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "En la arada y en la siega",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Moisés durante esos cuarenta días y cuarenta noches?",
+      "explanation": "Estuvo allí con Jehová cuarenta días y cuarenta noches: no comió pan ni bebió agua, y escribió en tablas las palabras de la alianza.",
+      "bibleReference": "Éxodo 34:28",
+      "answers": [
+        {
+          "text": "Que no comió pan ni bebió agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Que comió pan sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Que bebió agua de la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ayunó solamente siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía Moisés cuando acababa de hablar con los hijos de Israel?",
+      "explanation": "Cuando acababa de hablar con ellos, Moisés ponía un velo sobre su rostro, porque la tez de su rostro era resplandeciente.",
+      "bibleReference": "Éxodo 34:33",
+      "answers": [
+        {
+          "text": "Subía otra vez al monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Ponía un velo sobre su rostro",
+          "isCorrect": true
+        },
+        {
+          "text": "Quebraba las tablas",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamaba a los príncipes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

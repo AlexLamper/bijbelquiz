@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 40",
+  "description": "Diez preguntas sobre Éxodo 40: el tabernáculo erigido, los sacerdotes ungidos y la nube y la gloria de Jehová.",
+  "slug": "exodus-quiz-part-40",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuándo había de levantarse el tabernáculo del testimonio?",
+      "explanation": "Éxodo 40:2 dice que Jehová mandó a Moisés hacer levantar el tabernáculo del testimonio en el primer día del mes primero.",
+      "bibleReference": "Éxodo 40:2",
+      "answers": [
+        {
+          "text": "En el día séptimo del mes",
+          "isCorrect": false
+        },
+        {
+          "text": "En el primer día del mes primero",
+          "isCorrect": true
+        },
+        {
+          "text": "En el día del sábado",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes séptimo del año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía poner en el tabernáculo y cubrir con el velo?",
+      "explanation": "Éxodo 40:3 dice: Y pondrás en él el arca del testimonio, y la cubrirás con el velo.",
+      "bibleReference": "Éxodo 40:3",
+      "answers": [
+        {
+          "text": "La mesa del pan",
+          "isCorrect": false
+        },
+        {
+          "text": "El candelero de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "El altar del perfume",
+          "isCorrect": false
+        },
+        {
+          "text": "El arca del testimonio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde debía poner la fuente con su agua?",
+      "explanation": "Éxodo 40:7 dice que pusiese la fuente entre el tabernáculo del testimonio y el altar, y que pusiera agua en ella.",
+      "bibleReference": "Éxodo 40:7",
+      "answers": [
+        {
+          "text": "Entre el tabernáculo y el altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Delante de la puerta del atrio",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro del velo del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Al lado septentrional del arca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer con Aarón y sus hijos a la puerta del tabernáculo?",
+      "explanation": "Éxodo 40:12 dice que hiciese llegar a Aarón y a sus hijos a la puerta del tabernáculo del testimonio y los lavase con agua.",
+      "bibleReference": "Éxodo 40:12",
+      "answers": [
+        {
+          "text": "Contarlos por sus familias",
+          "isCorrect": false
+        },
+        {
+          "text": "Ungirlos con sangre del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavarlos con agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Enviarlos fuera del campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué les serviría la unción a los hijos de Aarón?",
+      "explanation": "Éxodo 40:15 dice que los ungiría como ungió a su padre y que su unción les serviría por sacerdocio perpetuo por sus generaciones.",
+      "bibleReference": "Éxodo 40:15",
+      "answers": [
+        {
+          "text": "Por herencia en la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Por memoria delante de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Por señal de la alianza",
+          "isCorrect": false
+        },
+        {
+          "text": "Por sacerdocio perpetuo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué año fue erigido el tabernáculo?",
+      "explanation": "Éxodo 40:17 dice que en el día primero del primer mes, en el segundo año, el tabernáculo fue erigido.",
+      "bibleReference": "Éxodo 40:17",
+      "answers": [
+        {
+          "text": "En el segundo año",
+          "isCorrect": true
+        },
+        {
+          "text": "En el primer año",
+          "isCorrect": false
+        },
+        {
+          "text": "En el cuarto año",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año cuadragésimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde puso Moisés la mesa dentro del tabernáculo?",
+      "explanation": "Éxodo 40:22 dice que puso la mesa en el tabernáculo del testimonio, al lado septentrional del pabellón, fuera del velo.",
+      "bibleReference": "Éxodo 40:22",
+      "answers": [
+        {
+          "text": "Dentro del velo, junto al arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Al lado meridional del pabellón",
+          "isCorrect": false
+        },
+        {
+          "text": "Al lado septentrional, fuera del velo",
+          "isCorrect": true
+        },
+        {
+          "text": "A la puerta del atrio, junto al altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes lavaban sus manos y sus pies en la fuente?",
+      "explanation": "Éxodo 40:31 dice que Moisés, Aarón y sus hijos lavaban en ella sus manos y sus pies.",
+      "bibleReference": "Éxodo 40:31",
+      "answers": [
+        {
+          "text": "Solamente Aarón y sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés, Aarón y sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "Todos los hijos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas del campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no podía Moisés entrar en el tabernáculo del testimonio?",
+      "explanation": "Éxodo 40:35 dice que Moisés no podía entrar porque la nube estaba sobre él y la gloria de Jehová lo tenía lleno.",
+      "bibleReference": "Éxodo 40:35",
+      "answers": [
+        {
+          "text": "Porque el altar no estaba ungido",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el atrio no estaba acabado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la gloria de Jehová lo tenía lleno",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Aarón aún no era sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo se movían los hijos de Israel en sus jornadas?",
+      "explanation": "Éxodo 40:36-37 dicen que cuando la nube se alzaba del tabernáculo los hijos de Israel se movían, y que si la nube no se alzaba, no se partían.",
+      "bibleReference": "Éxodo 40:36-37",
+      "answers": [
+        {
+          "text": "Cuando sonaba la trompeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando Moisés los bendecía",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando el fuego se apagaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando la nube se alzaba",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Números 20: la muerte de María, las aguas de la rencilla, la negativa de Edom y la muerte de Aarón.",
+  "slug": "numbers-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién murió y fue sepultada en Cades?",
+      "explanation": "Cuando la congregación llegó al desierto de Zin y el pueblo se asentó en Cades, allí murió María y allí fue sepultada.",
+      "bibleReference": "Números 20:1",
+      "answers": [
+        {
+          "text": "Jochâbed",
+          "isCorrect": false
+        },
+        {
+          "text": "Cozbi",
+          "isCorrect": false
+        },
+        {
+          "text": "Sera",
+          "isCorrect": false
+        },
+        {
+          "text": "María",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se juntó el pueblo contra Moisés y Aarón?",
+      "explanation": "El pueblo se juntó contra ellos porque no había agua para la congregación.",
+      "bibleReference": "Números 20:2",
+      "answers": [
+        {
+          "text": "Porque no había pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no había agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Edom los atacaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque había una mortandad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué frutos nombró el pueblo al quejarse de aquel lugar?",
+      "explanation": "El pueblo dijo que no era lugar de sementera, de higueras, de viñas ni granadas, ni aun de agua para beber.",
+      "bibleReference": "Números 20:5",
+      "answers": [
+        {
+          "text": "Olivos, palmeras y manzanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Trigo, cebada y lentejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Higueras, viñas y granadas",
+          "isCorrect": true
+        },
+        {
+          "text": "Almendros y nogales",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Moisés hacer con la peña?",
+      "explanation": "Jehová le mandó tomar la vara, reunir la congregación y hablar a la peña, y ella daría su agua.",
+      "bibleReference": "Números 20:8",
+      "answers": [
+        {
+          "text": "Hablar a la peña",
+          "isCorrect": true
+        },
+        {
+          "text": "Herir la peña dos veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Cavar un pozo junto a la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Poner la vara sobre la peña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés delante de la peña?",
+      "explanation": "Moisés alzó su mano e hirió la peña con su vara dos veces, y salieron muchas aguas.",
+      "bibleReference": "Números 20:11",
+      "answers": [
+        {
+          "text": "Habló a la peña como le fue mandado",
+          "isCorrect": false
+        },
+        {
+          "text": "Oró en silencio delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Puso su mano sobre la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Hirió la peña dos veces con su vara",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová a Moisés y Aarón por no haber creído en él?",
+      "explanation": "Jehová les dijo que, por cuanto no creyeron en él para santificarle a ojos de los hijos de Israel, no meterían esa congregación en la tierra que les había dado.",
+      "bibleReference": "Números 20:12",
+      "answers": [
+        {
+          "text": "Que morirían aquel mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no meterían la congregación en la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que perderían el sacerdocio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la congregación volvería a Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a esas aguas?",
+      "explanation": "El texto dice que estas son las aguas de la rencilla, por las cuales contendieron los hijos de Israel con Jehová.",
+      "bibleReference": "Números 20:13",
+      "answers": [
+        {
+          "text": "Las aguas de la rencilla",
+          "isCorrect": true
+        },
+        {
+          "text": "Las aguas de separación",
+          "isCorrect": false
+        },
+        {
+          "text": "El pozo de Beer",
+          "isCorrect": false
+        },
+        {
+          "text": "Las aguas de Horma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Edom al mensaje de Israel?",
+      "explanation": "Edom respondió que Israel no pasaría por su país, y que de otra manera saldría contra él armado.",
+      "bibleReference": "Números 20:18",
+      "answers": [
+        {
+          "text": "Que pasaría pagando el agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pasaría por el camino real",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no pasaría, o saldría armado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que enviaría guías con ellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién vistió Moisés con los vestidos de Aarón en el monte de Hor?",
+      "explanation": "Moisés hizo desnudar a Aarón de sus vestidos y vistió con ellos a Eleazar su hijo; y Aarón murió allí en la cumbre del monte.",
+      "bibleReference": "Números 20:26-28",
+      "answers": [
+        {
+          "text": "A Eleazar su hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "A Josué hijo de Nun",
+          "isCorrect": false
+        },
+        {
+          "text": "A uno de los príncipes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A uno de los hijos de Moisés",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días hizo duelo Israel por Aarón?",
+      "explanation": "Viendo toda la congregación que Aarón era muerto, le hicieron duelo por treinta días todas las familias de Israel.",
+      "bibleReference": "Números 20:29",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

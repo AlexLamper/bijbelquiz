@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Génesis 2: el reposo del día séptimo, el huerto de Edén y la formación del hombre y de la mujer.",
+  "slug": "genesis-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué día bendijo Dios y santificó?",
+      "explanation": "Dios acabó su obra en el día séptimo, reposó en él, y bendijo y santificó ese día.",
+      "bibleReference": "Génesis 2:2-3",
+      "answers": [
+        {
+          "text": "El día primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El día séptimo",
+          "isCorrect": true
+        },
+        {
+          "text": "El día tercero",
+          "isCorrect": false
+        },
+        {
+          "text": "El día sexto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué formó Jehová Dios al hombre?",
+      "explanation": "Jehová Dios formó al hombre del polvo de la tierra y alentó en su nariz soplo de vida.",
+      "bibleReference": "Génesis 2:7",
+      "answers": [
+        {
+          "text": "De una de sus costillas",
+          "isCorrect": false
+        },
+        {
+          "text": "Del agua de los ríos",
+          "isCorrect": false
+        },
+        {
+          "text": "De hojas de higuera",
+          "isCorrect": false
+        },
+        {
+          "text": "Del polvo de la tierra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde había plantado Jehová Dios un huerto?",
+      "explanation": "Jehová Dios había plantado un huerto en Edén, al oriente, y puso allí al hombre que había formado.",
+      "bibleReference": "Génesis 2:8",
+      "answers": [
+        {
+          "text": "En Edén, al oriente",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Havilah",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Etiopía",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué árbol estaba en medio del huerto, junto al árbol de ciencia del bien y del mal?",
+      "explanation": "El texto dice que también estaba el árbol de vida en medio del huerto.",
+      "bibleReference": "Génesis 2:9",
+      "answers": [
+        {
+          "text": "La higuera del huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "La viña de Edén",
+          "isCorrect": false
+        },
+        {
+          "text": "El árbol de vida",
+          "isCorrect": true
+        },
+        {
+          "text": "El olivo del huerto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era el cuarto río que nombra el texto?",
+      "explanation": "El tercer río era Hiddekel, que va delante de Asiria, y el cuarto río era el Eufrates.",
+      "bibleReference": "Génesis 2:14",
+      "answers": [
+        {
+          "text": "El Pisón",
+          "isCorrect": false
+        },
+        {
+          "text": "El Eufrates",
+          "isCorrect": true
+        },
+        {
+          "text": "El Gihón",
+          "isCorrect": false
+        },
+        {
+          "text": "El Hiddekel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová Dios que sucedería el día que el hombre comiese del árbol de ciencia del bien y del mal?",
+      "explanation": "Jehová Dios le mandó no comer de ese árbol, porque el día que comiese de él, moriría.",
+      "bibleReference": "Génesis 2:17",
+      "answers": [
+        {
+          "text": "Que la tierra sería maldita",
+          "isCorrect": false
+        },
+        {
+          "text": "Que saldría del huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que moriría",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sus ojos serían abiertos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová Dios que no era bueno?",
+      "explanation": "Jehová Dios dijo que no era bueno que el hombre estuviese solo, y que le haría ayuda idónea para él.",
+      "bibleReference": "Génesis 2:18",
+      "answers": [
+        {
+          "text": "Que el hombre estuviese solo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el hombre labrase la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el huerto quedase sin riego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el hombre comiese del fruto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién puso nombre a toda bestia y a toda ave de los cielos?",
+      "explanation": "Jehová Dios trajo los animales a Adam para que viese cómo los llamaría, y Adam puso nombres a toda bestia y ave de los cielos.",
+      "bibleReference": "Génesis 2:19-20",
+      "answers": [
+        {
+          "text": "Jehová Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "La mujer",
+          "isCorrect": false
+        },
+        {
+          "text": "La serpiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Adam",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según Adam, ¿cómo sería llamada la mujer?",
+      "explanation": "Adam dijo que ella sería llamada Varona, porque del varón fue tomada.",
+      "bibleReference": "Génesis 2:23",
+      "answers": [
+        {
+          "text": "Eva",
+          "isCorrect": false
+        },
+        {
+          "text": "Madre",
+          "isCorrect": false
+        },
+        {
+          "text": "Varona",
+          "isCorrect": true
+        },
+        {
+          "text": "Ayuda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo estaban Adam y su mujer al final del capítulo?",
+      "explanation": "El capítulo termina diciendo que ambos estaban desnudos y no se avergonzaban.",
+      "bibleReference": "Génesis 2:25",
+      "answers": [
+        {
+          "text": "Vestidos de túnicas de pieles",
+          "isCorrect": false
+        },
+        {
+          "text": "Desnudos, y no se avergonzaban",
+          "isCorrect": true
+        },
+        {
+          "text": "Escondidos entre los árboles",
+          "isCorrect": false
+        },
+        {
+          "text": "Cubiertos con hojas de higuera",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

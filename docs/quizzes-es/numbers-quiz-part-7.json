@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Números 7: los carros y bueyes de los príncipes, las ofrendas de los doce días y la dedicación del altar.",
+  "slug": "numbers-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes ofrecieron cuando Moisés acabó de levantar el tabernáculo?",
+      "explanation": "Cuando Moisés acabó de levantar, ungir y santificar el tabernáculo y el altar, ofrecieron los príncipes de Israel, cabezas de las casas de sus padres.",
+      "bibleReference": "Números 7:1-2",
+      "answers": [
+        {
+          "text": "Los levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Toda la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué trajeron delante de Jehová como ofrenda?",
+      "explanation": "Trajeron seis carros cubiertos y doce bueyes: por cada dos príncipes un carro, y cada uno un buey.",
+      "bibleReference": "Números 7:3",
+      "answers": [
+        {
+          "text": "Doce carros cubiertos y seis bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis carros cubiertos y seis bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis carros cubiertos y doce bueyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce carros cubiertos y doce bueyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos carros y bueyes recibieron los hijos de Gersón?",
+      "explanation": "Moisés dio dos carros y cuatro bueyes a los hijos de Gersón, conforme a su ministerio.",
+      "bibleReference": "Números 7:7",
+      "answers": [
+        {
+          "text": "Cuatro carros y ocho bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos carros y cuatro bueyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres carros y seis bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis carros y doce bueyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no recibieron carros los hijos de Coath?",
+      "explanation": "A los hijos de Coath no les dio nada, porque llevaban sobre sí, en los hombros, el servicio del santuario.",
+      "bibleReference": "Números 7:9",
+      "answers": [
+        {
+          "text": "Porque llevaban el santuario sobre los hombros",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque eran los más numerosos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque servían bajo la mano de Ithamar",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no habían sido contados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo debían presentar los príncipes su ofrenda para la dedicación del altar?",
+      "explanation": "Jehová dijo a Moisés que ofrecieran su ofrenda un príncipe un día, y otro príncipe otro día.",
+      "bibleReference": "Números 7:11",
+      "answers": [
+        {
+          "text": "Un príncipe cada día",
+          "isCorrect": true
+        },
+        {
+          "text": "Todos en un mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos príncipes por día",
+          "isCorrect": false
+        },
+        {
+          "text": "Un príncipe cada siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién ofreció su ofrenda el primer día?",
+      "explanation": "El que ofreció su ofrenda el primer día fue Naasón hijo de Aminadab, de la tribu de Judá.",
+      "bibleReference": "Números 7:12",
+      "answers": [
+        {
+          "text": "Nathanael, hijo de Suar",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliab, hijo de Helón",
+          "isCorrect": false
+        },
+        {
+          "text": "Naasón, hijo de Aminadab",
+          "isCorrect": true
+        },
+        {
+          "text": "Elisur, hijo de Sedeur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto pesaba cada plato de plata de la ofrenda?",
+      "explanation": "Cada ofrenda tenía un plato de plata de ciento y treinta siclos y un jarro de plata de setenta siclos, al siclo del santuario.",
+      "bibleReference": "Números 7:13",
+      "answers": [
+        {
+          "text": "Ciento y veinte siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y treinta siclos",
+          "isCorrect": true
+        },
+        {
+          "text": "Doscientos y treinta siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta siclos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué estaba llena la cuchara de oro de diez siclos?",
+      "explanation": "Cada príncipe ofrecía también una cuchara de oro de diez siclos, llena de perfume.",
+      "bibleReference": "Números 7:14",
+      "answers": [
+        {
+          "text": "De flor de harina amasada con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "De aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "De vino para la libación",
+          "isCorrect": false
+        },
+        {
+          "text": "De perfume",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto pesaba toda la plata de los vasos de la dedicación?",
+      "explanation": "Cada plato pesaba ciento y treinta siclos y cada jarro setenta, y toda la plata de los vasos fue dos mil y cuatrocientos siclos, al siclo del santuario.",
+      "bibleReference": "Números 7:85",
+      "answers": [
+        {
+          "text": "Ciento y veinte siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil y doscientos siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil y cuatrocientos siclos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde oía Moisés la Voz que le hablaba en el tabernáculo?",
+      "explanation": "Cuando Moisés entraba en el tabernáculo del testimonio, oía la Voz que le hablaba de encima de la cubierta que estaba sobre el arca, de entre los dos querubines.",
+      "bibleReference": "Números 7:89",
+      "answers": [
+        {
+          "text": "Desde una columna de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "De entre los dos querubines",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde la cima del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el altar de oro",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

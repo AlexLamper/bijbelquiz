@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Éxodo 10: la langosta traída por el viento oriental y las tinieblas de tres días sobre Egipto.",
+  "slug": "exodus-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Para qué debía contar a sus hijos y nietos lo que Jehová hizo en Egipto?",
+      "explanation": "Jehová dijo que contase a sus hijos y a sus nietos las cosas que hizo en Egipto, para que supieran que él es Jehová.",
+      "bibleReference": "Éxodo 10:2",
+      "answers": [
+        {
+          "text": "Para que temieran a Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que volvieran a Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que guardaran la fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que supieran que él es Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué traería Jehová si Faraón rehusaba dejar ir al pueblo?",
+      "explanation": "Jehová dijo que si aun rehusaba dejarlo ir, al día siguiente traería langosta en sus términos.",
+      "bibleReference": "Éxodo 10:4",
+      "answers": [
+        {
+          "text": "Ranas",
+          "isCorrect": false
+        },
+        {
+          "text": "Langosta",
+          "isCorrect": true
+        },
+        {
+          "text": "Granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Piojos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué comería la langosta?",
+      "explanation": "La langosta cubriría la faz de la tierra y comería lo que había quedado del granizo, y todo árbol que da fruto en el campo.",
+      "bibleReference": "Éxodo 10:5",
+      "answers": [
+        {
+          "text": "Solamente la cebada y el lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Los peces del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo que había quedado del granizo",
+          "isCorrect": true
+        },
+        {
+          "text": "La paja de los ladrillos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los siervos de Faraón?",
+      "explanation": "Los siervos de Faraón le dijeron que dejase ir a aquellos hombres para que sirvieran a Jehová su Dios, y que Egipto estaba destruído.",
+      "bibleReference": "Éxodo 10:7",
+      "answers": [
+        {
+          "text": "Que dejase ir a aquellos hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los matara a todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les quitara la paja",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llamara a los magos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quiénes dijo Moisés que habían de ir?",
+      "explanation": "Moisés respondió que habían de ir con sus niños y sus viejos, sus hijos y sus hijas, y con sus ovejas y sus vacas.",
+      "bibleReference": "Éxodo 10:9",
+      "answers": [
+        {
+          "text": "Solamente con los varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los niños, los viejos y los ganados",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente con los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el pueblo, pero sin ganados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué permitió Faraón en ese momento?",
+      "explanation": "Faraón dijo que no sería así, sino que fueran los varones a servir a Jehová, y los echaron de delante de él.",
+      "bibleReference": "Éxodo 10:11",
+      "answers": [
+        {
+          "text": "Que fueran todos con sus ganados",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fueran solo los niños",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fueran solamente los varones",
+          "isCorrect": true
+        },
+        {
+          "text": "Que nadie saliera de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué viento trajo la langosta?",
+      "explanation": "Jehová trajo un viento oriental sobre el país todo aquel día y toda aquella noche, y a la mañana el viento oriental trajo la langosta.",
+      "bibleReference": "Éxodo 10:13",
+      "answers": [
+        {
+          "text": "Un viento oriental",
+          "isCorrect": true
+        },
+        {
+          "text": "Un viento occidental",
+          "isCorrect": false
+        },
+        {
+          "text": "Un viento del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Un torbellino de arena",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde arrojó Jehová la langosta?",
+      "explanation": "Jehová volvió un viento occidental fortísimo, quitó la langosta y la arrojó en el mar Bermejo.",
+      "bibleReference": "Éxodo 10:19",
+      "answers": [
+        {
+          "text": "En el río de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mar Bermejo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto duraron las densas tinieblas sobre la tierra de Egipto?",
+      "explanation": "Hubo densas tinieblas tres días por toda la tierra de Egipto, y en esos tres días nadie se levantó de su lugar; los hijos de Israel tenían luz en sus habitaciones.",
+      "bibleReference": "Éxodo 10:22-23",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un día entero",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Faraón a Moisés al final del capítulo?",
+      "explanation": "Faraón le dijo que se retirase de él y que se guardase de ver más su rostro, porque el día que viese su rostro moriría.",
+      "bibleReference": "Éxodo 10:28",
+      "answers": [
+        {
+          "text": "Que sacrificara en la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no viera más su rostro",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviera al día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dejara sus ovejas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Levítico 19: la ley de la santidad, desde dejar el rincón del campo para el pobre hasta amar al prójimo y honrar al anciano.",
+  "slug": "leviticus-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 2, ¿cómo debía ser toda la congregación de los hijos de Israel?",
+      "explanation": "El versículo dice: Santos seréis, porque santo soy yo Jehová vuestro Dios.",
+      "bibleReference": "Levítico 19:2",
+      "answers": [
+        {
+          "text": "Santa, porque Jehová es santo",
+          "isCorrect": true
+        },
+        {
+          "text": "Fuerte, porque Jehová es fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Sabia, porque Jehová es sabio",
+          "isCorrect": false
+        },
+        {
+          "text": "Numerosa, porque Jehová la bendice",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para quién debían dejarse el rincón del campo y los granos caídos de la viña?",
+      "explanation": "Al segar no debían acabar de segar el rincón del campo ni rebuscar la viña: eso quedaba para el pobre y para el extranjero.",
+      "bibleReference": "Levítico 19:9-10",
+      "answers": [
+        {
+          "text": "Para los sacerdotes hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los Levitas del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para el pobre y para el extranjero",
+          "isCorrect": true
+        },
+        {
+          "text": "Para los huérfanos y las viudas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué no debía quedarse en tu casa hasta la mañana?",
+      "explanation": "El versículo prohíbe oprimir o robar al prójimo y dice que el trabajo del jornalero no se detendrá en tu casa hasta la mañana.",
+      "bibleReference": "Levítico 19:13",
+      "answers": [
+        {
+          "text": "El diezmo de la cosecha",
+          "isCorrect": false
+        },
+        {
+          "text": "El trabajo del jornalero",
+          "isCorrect": true
+        },
+        {
+          "text": "La ofrenda de paces",
+          "isCorrect": false
+        },
+        {
+          "text": "El carnero de la expiación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Delante de quién no debía ponerse tropiezo, según el versículo 14?",
+      "explanation": "El versículo manda no maldecir al sordo y no poner tropiezo delante del ciego, sino tener temor de Dios.",
+      "bibleReference": "Levítico 19:14",
+      "answers": [
+        {
+          "text": "Delante del sordo",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante del anciano",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante del extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante del ciego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo debía amar cada uno a su prójimo?",
+      "explanation": "El versículo dice que no se vengarán ni guardarán rencor, sino que amarán a su prójimo como a sí mismos.",
+      "bibleReference": "Levítico 19:18",
+      "answers": [
+        {
+          "text": "Como a su hermano mayor",
+          "isCorrect": false
+        },
+        {
+          "text": "Como a sí mismo",
+          "isCorrect": true
+        },
+        {
+          "text": "Más que a sí mismo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como a un extranjero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿qué clase de vestidos no debían ponerse?",
+      "explanation": "Entre los estatutos de ese versículo está el de no vestirse con mezcla de diversas cosas.",
+      "bibleReference": "Levítico 19:19",
+      "answers": [
+        {
+          "text": "Vestidos con mezcla de diversas cosas",
+          "isCorrect": true
+        },
+        {
+          "text": "Vestidos de los sacerdotes del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Vestidos rasgados por un muerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Vestidos traídos de la tierra de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al entrar en la tierra y plantar un árbol de comer, ¿en qué año podían comer su fruto?",
+      "explanation": "Tres años el fruto les sería incircunciso y no se comería, el cuarto año sería santidad de loores a Jehová, y al quinto año lo comerían.",
+      "bibleReference": "Levítico 19:23-25",
+      "answers": [
+        {
+          "text": "Al tercer año",
+          "isCorrect": false
+        },
+        {
+          "text": "Al cuarto año",
+          "isCorrect": false
+        },
+        {
+          "text": "Al séptimo año",
+          "isCorrect": false
+        },
+        {
+          "text": "Al quinto año",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prohíbe el texto hacer en la carne por un muerto?",
+      "explanation": "El versículo dice que no harán rasguños en su carne por un muerto ni imprimirán en sí señal alguna.",
+      "bibleReference": "Levítico 19:28",
+      "answers": [
+        {
+          "text": "Lavarla con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Cubrirla con ceniza",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacer rasguños",
+          "isCorrect": true
+        },
+        {
+          "text": "Ungirla con aceite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 32, ¿qué debía hacerse delante de las canas?",
+      "explanation": "Delante de las canas se levantarán y honrarán el rostro del anciano, y tendrán temor de su Dios.",
+      "bibleReference": "Levítico 19:32",
+      "answers": [
+        {
+          "text": "Callar y bajar los ojos al suelo",
+          "isCorrect": false
+        },
+        {
+          "text": "Inclinarse hasta la tierra y besar su mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Apartarse del camino sin decir nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Levantarse y honrar el rostro del anciano",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 34, ¿por qué debían amar al extranjero que peregrinaba entre ellos?",
+      "explanation": "Al extranjero debían tenerlo como a un natural y amarlo como a sí mismos, porque ellos fueron peregrinos en la tierra de Egipto.",
+      "bibleReference": "Levítico 19:34",
+      "answers": [
+        {
+          "text": "Porque el extranjero también teme a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ellos fueron peregrinos en la tierra de Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque la tierra es de Jehová y no de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el extranjero guarda los sábados",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Números 3: los hijos de Aarón, los Levitas tomados en lugar de los primogénitos y el cargo de Gersón, Coath y Merari.",
+  "slug": "numbers-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién era el primogénito de los hijos de Aarón?",
+      "explanation": "El versículo nombra a los hijos de Aarón: Nadab el primogénito, y Abiú, Eleazar e Ithamar.",
+      "bibleReference": "Números 3:2",
+      "answers": [
+        {
+          "text": "Nadab",
+          "isCorrect": true
+        },
+        {
+          "text": "Abiú",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ithamar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿por qué murieron Nadab y Abiú delante de Jehová?",
+      "explanation": "El versículo dice que murieron cuando ofrecieron fuego extraño delante de Jehová, en el desierto de Sinaí, y que no tuvieron hijos.",
+      "bibleReference": "Números 3:4",
+      "answers": [
+        {
+          "text": "Porque entraron del velo adentro",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tocaron el arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ofrecieron fuego extraño",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque no guardaron el sábado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Delante de quién había de estar la tribu de Leví para ministrarle?",
+      "explanation": "Jehová manda hacer llegar la tribu de Leví y hacerla estar delante del sacerdote Aarón, para que le ministren.",
+      "bibleReference": "Números 3:6",
+      "answers": [
+        {
+          "text": "De Moisés su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Del sacerdote Aarón",
+          "isCorrect": true
+        },
+        {
+          "text": "De Eleazar hijo de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "De los príncipes de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En lugar de quiénes tomó Jehová a los Levitas?",
+      "explanation": "Jehová dice que ha tomado a los Levitas de entre los hijos de Israel en lugar de todos los primogénitos que abren la matriz entre los hijos de Israel.",
+      "bibleReference": "Números 3:12",
+      "answers": [
+        {
+          "text": "De los sacerdotes hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "De los varones que salían a la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "De los extranjeros que peregrinaban",
+          "isCorrect": false
+        },
+        {
+          "text": "De los primogénitos de los hijos de Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Desde qué edad se contaban los varones de los hijos de Leví?",
+      "explanation": "Jehová manda contar a los hijos de Leví por las casas de sus padres y sus familias: todos los varones de un mes arriba.",
+      "bibleReference": "Números 3:15",
+      "answers": [
+        {
+          "text": "De veinte años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De un mes arriba",
+          "isCorrect": true
+        },
+        {
+          "text": "De treinta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De cinco años arriba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuáles eran los hijos de Leví por sus nombres?",
+      "explanation": "El versículo dice que los hijos de Leví fueron Gersón, Coath y Merari.",
+      "bibleReference": "Números 3:17",
+      "answers": [
+        {
+          "text": "Gersón, Coath y Merari",
+          "isCorrect": true
+        },
+        {
+          "text": "Nadab, Abiú y Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Libni, Simei y Mahali",
+          "isCorrect": false
+        },
+        {
+          "text": "Amram, Izhar y Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron los contados de Gersón, de un mes arriba?",
+      "explanation": "El versículo dice que los contados de ellos, todos los varones de un mes arriba, fueron siete mil y quinientos.",
+      "bibleReference": "Números 3:22",
+      "answers": [
+        {
+          "text": "Ocho mil y seiscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis mil y doscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y dos mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete mil y quinientos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué estaba a cargo de las familias de Coath?",
+      "explanation": "El versículo dice que a cargo de ellos estará el arca, la mesa, el candelero, los altares, los vasos del santuario y el velo.",
+      "bibleReference": "Números 3:31",
+      "answers": [
+        {
+          "text": "El tabernáculo, la tienda y su cubierta",
+          "isCorrect": false
+        },
+        {
+          "text": "Las tablas, las barras y las columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "El arca, la mesa, el candelero, los altares y el velo",
+          "isCorrect": true
+        },
+        {
+          "text": "Las cortinas del atrio y sus cuerdas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes acampaban delante del tabernáculo, al oriente?",
+      "explanation": "El versículo dice que acamparán allí Moisés, Aarón y sus hijos, teniendo la guarda del santuario en lugar de los hijos de Israel.",
+      "bibleReference": "Números 3:38",
+      "answers": [
+        {
+          "text": "Las familias de Gersón",
+          "isCorrect": false
+        },
+        {
+          "text": "Las familias de Merari",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés, Aarón y sus hijos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran todos los contados de los Levitas, de un mes arriba?",
+      "explanation": "El versículo dice que todos los contados de los Levitas, que Moisés y Aarón contaron, fueron veinte y dos mil.",
+      "bibleReference": "Números 3:39",
+      "answers": [
+        {
+          "text": "Veinte y dos mil doscientos setenta y tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y dos mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte y tres mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho mil y seiscientos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Josué 11: la coalición junto a las aguas de Merom, Hasor quemada y la tierra que reposó de guerra.",
+  "slug": "joshua-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién envió mensaje a Jobab rey de Madón y a otros reyes?",
+      "explanation": "Jabín rey de Hasor envió mensaje a Jobab rey de Madón, al rey de Simrom y al rey de Achsaph.",
+      "bibleReference": "Josué 11:1",
+      "answers": [
+        {
+          "text": "El rey de Achsaph",
+          "isCorrect": false
+        },
+        {
+          "text": "Jabín rey de Hasor",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey de Simrom",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de las regiones de Dor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a los ejércitos que salieron contra Israel?",
+      "explanation": "Dice que eran pueblo mucho en gran manera, como la arena que está a la orilla del mar, con gran muchedumbre de caballos y carros.",
+      "bibleReference": "Josué 11:4",
+      "answers": [
+        {
+          "text": "Un pueblo pequeño pero de gran valor",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ejército sin caballos ni carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Unos pocos hombres de las montañas",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la arena del mar, con caballos y carros",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde reunieron aquellos reyes sus campos para pelear contra Israel?",
+      "explanation": "Todos aquellos reyes se juntaron y reunieron los campos junto a las aguas de Merom para pelear contra Israel.",
+      "bibleReference": "Josué 11:5",
+      "answers": [
+        {
+          "text": "Junto a las aguas de Merom",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al monte Hermón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el llano de Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "En las regiones de Dor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová que hiciera Josué con los caballos y los carros?",
+      "explanation": "Jehová le dijo que desjarretara sus caballos y quemara sus carros al fuego.",
+      "bibleReference": "Josué 11:6",
+      "answers": [
+        {
+          "text": "Repartirlos entre las tribus de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevarlos al campo en Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Desjarretar los caballos y quemar los carros",
+          "isCorrect": true
+        },
+        {
+          "text": "Devolverlos a los reyes vencidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había sido antes Hasor?",
+      "explanation": "El texto dice que Hasor había sido antes cabeza de todos estos reinos.",
+      "bibleReference": "Josué 11:10",
+      "answers": [
+        {
+          "text": "Una ciudad de los Sidonios",
+          "isCorrect": false
+        },
+        {
+          "text": "Una aldea sin muro ni puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "La herencia de la media tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "La cabeza de todos aquellos reinos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "De las ciudades que estaban en sus cabezos, ¿cuál quemó Israel?",
+      "explanation": "Israel no quemó las ciudades que estaban en sus cabezos, sacando a sola Asor, la cual quemó Josué.",
+      "bibleReference": "Josué 11:13",
+      "answers": [
+        {
+          "text": "Solamente Asor",
+          "isCorrect": true
+        },
+        {
+          "text": "Todas las ciudades del llano",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ciudades de los Anaceos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ciudades junto al Hermón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomaron para sí los hijos de Israel de aquellas ciudades?",
+      "explanation": "Los hijos de Israel tomaron para sí todos los despojos y las bestias de aquellas ciudades.",
+      "bibleReference": "Josué 11:14",
+      "answers": [
+        {
+          "text": "Nada, pues todo era anatema",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente la plata y el oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los despojos y las bestias",
+          "isCorrect": true
+        },
+        {
+          "text": "Los caballos y los carros de guerra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron los únicos que hicieron paz con los hijos de Israel?",
+      "explanation": "No hubo ciudad que hiciera paz con los hijos de Israel, sacados los Heveos que moraban en Gabaón.",
+      "bibleReference": "Josué 11:19",
+      "answers": [
+        {
+          "text": "Los Amorrheos de las montañas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Heveos que moraban en Gabaón",
+          "isCorrect": true
+        },
+        {
+          "text": "Los Sidonios junto a la gran mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Anaceos de Hebrón y Debir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde quedaron los Anaceos, según el texto?",
+      "explanation": "Ninguno de los Anaceos quedó en la tierra de los hijos de Israel; solamente quedaron en Gaza, en Gath y en Asdod.",
+      "bibleReference": "Josué 11:22",
+      "answers": [
+        {
+          "text": "En Gaza, en Gath y en Asdod",
+          "isCorrect": true
+        },
+        {
+          "text": "En Hebrón, Debir y Anab",
+          "isCorrect": false
+        },
+        {
+          "text": "En los montes de Judá e Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "En Hasor y en Madón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Después de que Josué entregó la tierra por herencia a los israelitas, ¿qué dice el texto de la tierra?",
+      "explanation": "El texto dice que la tierra reposó de guerra.",
+      "bibleReference": "Josué 11:23",
+      "answers": [
+        {
+          "text": "La tierra quedó desierta por muchos años",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra volvió a los cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra fue dada a los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra reposó de la guerra",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Josué 6: la caída de Jericó, las siete vueltas con las bocinas, Rahab salvada y el juramento de Josué.",
+  "slug": "joshua-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué estado estaba Jericó a causa de los hijos de Israel?",
+      "explanation": "El texto dice que Jericó estaba cerrada, bien cerrada: nadie entraba ni salía.",
+      "bibleReference": "Josué 6:1",
+      "answers": [
+        {
+          "text": "Cerrada por completo: nadie entraba ni salía",
+          "isCorrect": true
+        },
+        {
+          "text": "Abierta al comercio con los israelitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin muros, pues se habían derrumbado",
+          "isCorrect": false
+        },
+        {
+          "text": "Vacía, porque su rey había huido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Jehová a Josué acerca de Jericó?",
+      "explanation": "Jehová le dijo que ya había entregado en su mano a Jericó y a su rey, con sus varones de guerra.",
+      "bibleReference": "Josué 6:2",
+      "answers": [
+        {
+          "text": "Que debía esperar siete años antes de atacar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jericó sería perdonada del todo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ya había entregado en su mano a Jericó y a su rey",
+          "isCorrect": true
+        },
+        {
+          "text": "Que otro caudillo tomaría la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días debían rodear la ciudad dando una vuelta cada día?",
+      "explanation": "La orden era rodear la ciudad una vez al día, y así hacerlo seis días.",
+      "bibleReference": "Josué 6:3",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis días",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevarían los siete sacerdotes delante del arca?",
+      "explanation": "Siete sacerdotes llevarían siete bocinas de cuernos de carneros delante del arca.",
+      "bibleReference": "Josué 6:4",
+      "answers": [
+        {
+          "text": "Siete candeleros de oro puro",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete arcas cubiertas de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete lanzas de los armados",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete bocinas de cuernos de carneros",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Al oír el sonido de la bocina, ¿qué haría todo el pueblo y qué ocurriría después?",
+      "explanation": "El pueblo gritaría a gran voz y el muro de la ciudad caería debajo de sí.",
+      "bibleReference": "Josué 6:5",
+      "answers": [
+        {
+          "text": "Gritar a gran voz, y el muro caería",
+          "isCorrect": true
+        },
+        {
+          "text": "Callar y volver en silencio al real",
+          "isCorrect": false
+        },
+        {
+          "text": "Lanzar flechas sobre el muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Derribar las puertas con arietes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Josué al pueblo mientras rodeaban la ciudad?",
+      "explanation": "Josué mandó que no dieran grita ni saliera palabra de su boca hasta el día en que él les dijera: Gritad.",
+      "bibleReference": "Josué 6:10",
+      "answers": [
+        {
+          "text": "Que cantaran himnos sin parar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardaran silencio hasta que él lo mandara",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tocaran ellos mismos las bocinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ayunaran durante los seis días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas vueltas dieron a la ciudad el séptimo día?",
+      "explanation": "Al séptimo día se levantaron al subir el alba y dieron vuelta a la ciudad siete veces.",
+      "bibleReference": "Josué 6:15",
+      "answers": [
+        {
+          "text": "Solamente una vuelta, como los otros días",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos vueltas, de mañana y de tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres vueltas alrededor del muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete vueltas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según Josué, ¿quién viviría cuando la ciudad fuera anatema?",
+      "explanation": "Josué dijo que solamente Rahab la ramera viviría, con todos los que estuvieran en casa con ella, porque escondió a los mensajeros.",
+      "bibleReference": "Josué 6:17",
+      "answers": [
+        {
+          "text": "El rey de Jericó y su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos que salieran a su encuentro",
+          "isCorrect": false
+        },
+        {
+          "text": "Rahab y todos los que estuvieran en su casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Los niños y las mujeres de Jericó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía ser consagrado a Jehová y venir a su tesoro?",
+      "explanation": "El texto manda que toda la plata, el oro y los vasos de metal y de hierro fueran consagrados a Jehová y vinieran a su tesoro.",
+      "bibleReference": "Josué 6:19",
+      "answers": [
+        {
+          "text": "Los bueyes, las ovejas y los asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "La plata, el oro y los vasos de metal y de hierro",
+          "isCorrect": true
+        },
+        {
+          "text": "Los vestidos y los mantos hallados",
+          "isCorrect": false
+        },
+        {
+          "text": "Las puertas y las vigas del muro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué juramento pronunció Josué en aquel tiempo?",
+      "explanation": "Josué juramentó al pueblo diciendo: Maldito delante de Jehová el hombre que se levantare y reedificare esta ciudad de Jericó.",
+      "bibleReference": "Josué 6:26",
+      "answers": [
+        {
+          "text": "Maldijo al hombre que reedificara Jericó",
+          "isCorrect": true
+        },
+        {
+          "text": "Prometió levantar allí un altar de piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Juró que Israel no volvería al Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendijo a los que habitaran la ciudad",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Deuteronomio 17: los sacrificios sin falta, los testigos en el juicio y las reglas para el rey de Israel.",
+  "slug": "deuteronomy-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué clase de buey o cordero no debía sacrificarse a Jehová?",
+      "explanation": "El texto prohíbe sacrificar buey o cordero en el cual haya falta o alguna cosa mala, porque eso es abominación a Jehová.",
+      "bibleReference": "Deuteronomio 17:1",
+      "answers": [
+        { "text": "Uno nacido en tierra de Egipto", "isCorrect": false },
+        { "text": "Uno en el cual haya alguna falta", "isCorrect": true },
+        { "text": "Uno comprado a un extranjero", "isCorrect": false },
+        { "text": "Uno de menos de un año", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué se habían inclinado, según el texto, los que traspasaban el pacto de Jehová?",
+      "explanation": "El versículo habla de quien había ido y servido a dioses ajenos, inclinándose al sol, a la luna o a todo el ejército del cielo.",
+      "bibleReference": "Deuteronomio 17:3",
+      "answers": [
+        { "text": "A las imágenes de sus padres", "isCorrect": false },
+        { "text": "A becerros hechos de fundición", "isCorrect": false },
+        { "text": "A las piedras del camino", "isCorrect": false },
+        { "text": "Al sol, a la luna o al ejército del cielo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Una vez averiguado bien el caso, ¿adónde se sacaría al culpable para apedrearlo?",
+      "explanation": "El texto manda sacar a tus puertas al hombre o a la mujer que hubiere hecho esa mala cosa, y apedrearlos con piedras.",
+      "bibleReference": "Deuteronomio 17:5",
+      "answers": [
+        { "text": "A tus puertas", "isCorrect": true },
+        { "text": "A la casa del sacerdote", "isCorrect": false },
+        { "text": "A la ciudad más cercana", "isCorrect": false },
+        { "text": "Al campo, fuera del real", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por el dicho de cuántos testigos moriría el que hubiere de morir?",
+      "explanation": "El texto dice que morirá por dicho de dos testigos o de tres testigos, y que no morirá por el dicho de un solo testigo.",
+      "bibleReference": "Deuteronomio 17:6",
+      "answers": [
+        { "text": "Por el de un solo testigo", "isCorrect": false },
+        { "text": "Por el de siete testigos", "isCorrect": false },
+        { "text": "Por el de dos o tres testigos", "isCorrect": true },
+        { "text": "Por el de todos los ancianos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De quién sería primero la mano sobre el culpable para matarlo?",
+      "explanation": "El texto dice que la mano de los testigos será primero sobre él, y después la mano de todo el pueblo.",
+      "bibleReference": "Deuteronomio 17:7",
+      "answers": [
+        { "text": "La del sacerdote", "isCorrect": false },
+        { "text": "La del juez", "isCorrect": false },
+        { "text": "La de los ancianos", "isCorrect": false },
+        { "text": "La de los testigos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Cuando un caso era demasiado difícil de juzgar, ¿a quiénes había que acudir?",
+      "explanation": "El texto manda ir al lugar que Jehová escogiere, a los sacerdotes Levitas y al juez que fuere en aquellos días, y preguntar.",
+      "bibleReference": "Deuteronomio 17:8-9",
+      "answers": [
+        { "text": "A los ancianos de la puerta", "isCorrect": false },
+        { "text": "A los sacerdotes Levitas y al juez", "isCorrect": true },
+        { "text": "Al rey y a sus príncipes", "isCorrect": false },
+        { "text": "A los capitanes del ejército", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De dónde debía salir el rey que Israel pusiera sobre sí?",
+      "explanation": "El texto dice que pondrán por rey al que Jehová escogiere, de entre sus hermanos, y que no podrán poner sobre sí a un hombre extranjero.",
+      "bibleReference": "Deuteronomio 17:15",
+      "answers": [
+        { "text": "De entre los sacerdotes Levitas", "isCorrect": false },
+        { "text": "De las gentes de alrededor", "isCorrect": false },
+        { "text": "De entre sus hermanos", "isCorrect": true },
+        { "text": "De los extranjeros más sabios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se le prohibía al rey en cuanto a los caballos?",
+      "explanation": "El texto manda que el rey no se aumente caballos ni haga volver el pueblo a Egipto para acrecentarlos.",
+      "bibleReference": "Deuteronomio 17:16",
+      "answers": [
+        { "text": "Que no aumentara caballos", "isCorrect": true },
+        { "text": "Que no los vendiera a Egipto", "isCorrect": false },
+        { "text": "Que no los usara en la guerra", "isCorrect": false },
+        { "text": "Que no los tomara de sus hermanos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer el rey cuando se asentara sobre el solio de su reino?",
+      "explanation": "El texto dice que ha de escribir para sí en un libro un traslado de esta ley, del original que está delante de los sacerdotes Levitas.",
+      "bibleReference": "Deuteronomio 17:18",
+      "answers": [
+        { "text": "Ofrecer un holocausto en el altar", "isCorrect": false },
+        { "text": "Escribir para sí un traslado de esta ley", "isCorrect": true },
+        { "text": "Repartir la tierra entre las tribus", "isCorrect": false },
+        { "text": "Contar a todo el pueblo de Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué haría el rey con ese libro todos los días de su vida?",
+      "explanation": "El texto dice que lo tendrá consigo y leerá en él todos los días de su vida, para aprender a temer a Jehová su Dios y guardar esta ley.",
+      "bibleReference": "Deuteronomio 17:19",
+      "answers": [
+        { "text": "Guardarlo dentro del arca", "isCorrect": false },
+        { "text": "Entregarlo cada año a los sacerdotes", "isCorrect": false },
+        { "text": "Leer en él para aprender a temer a Jehová", "isCorrect": true },
+        { "text": "Leerlo solo en las solemnidades", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Génesis 13: Abram vuelve de Egipto, Lot escoge la llanura del Jordán y Jehová promete la tierra a Abram.",
+  "slug": "genesis-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde subió Abram hacia el Mediodía con su mujer y con Lot?",
+      "explanation": "Abram subió de Egipto hacia el Mediodía, él y su mujer, con todo lo que tenía, y con él Lot.",
+      "bibleReference": "Génesis 13:1",
+      "answers": [
+        {
+          "text": "De Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "De Sodoma",
+          "isCorrect": false
+        },
+        {
+          "text": "De Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "De Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué era riquísimo Abram?",
+      "explanation": "El texto dice que Abram era riquísimo en ganado, en plata y oro.",
+      "bibleReference": "Génesis 13:2",
+      "answers": [
+        {
+          "text": "En ganado, en plata y oro",
+          "isCorrect": true
+        },
+        {
+          "text": "En trigo, vino y aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "En camellos y asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "En tiendas y siervas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Abram en el lugar del altar que había hecho antes?",
+      "explanation": "En el lugar del altar que había hecho allí antes, Abram invocó el nombre de Jehová.",
+      "bibleReference": "Génesis 13:4",
+      "answers": [
+        {
+          "text": "Cavó un pozo de agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó una ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofreció un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Invocó el nombre de Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no podían Abram y Lot habitar juntos en la tierra?",
+      "explanation": "La tierra no podía darles para que habitasen juntos, porque su hacienda era mucha.",
+      "bibleReference": "Génesis 13:6",
+      "answers": [
+        {
+          "text": "Porque había hambre otra vez en toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque su hacienda era mucha y la tierra no les bastaba",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el Cananeo los echó de aquel lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Abram se lo prohibió a Lot y a sus pastores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razón dio Abram a Lot para que no hubiera altercado entre ellos?",
+      "explanation": "Abram le dijo que no hubiera altercado entre ellos ni entre sus pastores, porque eran hermanos.",
+      "bibleReference": "Génesis 13:8",
+      "answers": [
+        {
+          "text": "Porque la tierra era de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Lot era el mayor",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque eran hermanos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque sus pastores eran pocos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Abram, si Lot iba a la mano izquierda, ¿qué haría él?",
+      "explanation": "Abram le propuso que si Lot iba a la izquierda, él iría a la derecha, y si Lot iba a la derecha, él iría a la izquierda.",
+      "bibleReference": "Génesis 13:9",
+      "answers": [
+        {
+          "text": "Iría también a la izquierda",
+          "isCorrect": false
+        },
+        {
+          "text": "Iría a la derecha",
+          "isCorrect": true
+        },
+        {
+          "text": "Volvería a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quedaría en Sodoma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué escogió Lot para sí?",
+      "explanation": "Lot escogió para sí toda la llanura del Jordán, y se apartaron el uno del otro.",
+      "bibleReference": "Génesis 13:11",
+      "answers": [
+        {
+          "text": "Toda la llanura del Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "La tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "El alcornocal de Mamre",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a los hombres de Sodoma?",
+      "explanation": "Dice que los hombres de Sodoma eran malos y pecadores para con Jehová en gran manera.",
+      "bibleReference": "Génesis 13:13",
+      "answers": [
+        {
+          "text": "Justos y temerosos de Jehová en gran manera",
+          "isCorrect": false
+        },
+        {
+          "text": "Pastores pacíficos que vivían en paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Muy pocos en número y en hacienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Malos y pecadores para con Jehová en gran manera",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Jehová la simiente que daría a Abram?",
+      "explanation": "Jehová dijo que haría su simiente como el polvo de la tierra, que nadie podría contar.",
+      "bibleReference": "Génesis 13:16",
+      "answers": [
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el polvo de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la arena del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las hojas de los árboles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde fue a morar Abram al final del capítulo, y qué hizo allí?",
+      "explanation": "Abram removió su tienda y moró en el alcornocal de Mamre, que es en Hebrón, y edificó allí un altar a Jehová.",
+      "bibleReference": "Génesis 13:18",
+      "answers": [
+        {
+          "text": "En Bethel, donde cavó un pozo entre las tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "En Zoar, donde plantó un bosque junto al camino",
+          "isCorrect": false
+        },
+        {
+          "text": "En el alcornocal de Mamre, en Hebrón, donde edificó un altar",
+          "isCorrect": true
+        },
+        {
+          "text": "En Sodoma, donde puso su tienda con sus pastores",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

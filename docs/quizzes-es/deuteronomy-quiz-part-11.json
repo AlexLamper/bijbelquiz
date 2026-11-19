@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Deuteronomio 11: lo que vieron sus ojos en Egipto y en el desierto, la lluvia temprana y tardía, y la bendición y la maldición.",
+  "slug": "deuteronomy-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo Jehová al ejército de Egipto, a sus caballos y a sus carros?",
+      "explanation": "Hizo ondear las aguas del mar Bermejo sobre ellos cuando venían tras ellos, y Jehová los destruyó hasta hoy.",
+      "bibleReference": "Deuteronomio 11:4",
+      "answers": [
+        {
+          "text": "Los hirió con avispas en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrió la tierra y los tragó",
+          "isCorrect": false
+        },
+        {
+          "text": "Los echó de la tierra poco a poco",
+          "isCorrect": false
+        },
+        {
+          "text": "Hizo ondear sobre ellos las aguas del mar Bermejo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con Dathán y Abiram, hijos de Eliab?",
+      "explanation": "La tierra abrió su boca y se los tragó a ellos, a sus casas, sus tiendas y toda la hacienda que tenían en pie en medio de todo Israel.",
+      "bibleReference": "Deuteronomio 11:6",
+      "answers": [
+        {
+          "text": "Fueron apedreados fuera del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra abrió su boca y los tragó",
+          "isCorrect": true
+        },
+        {
+          "text": "Murieron en el mar Bermejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron llevados cautivos a Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el texto que se regaba en la tierra de Egipto?",
+      "explanation": "Dice que la tierra de Egipto, de donde habían salido, era donde sembrabas tu simiente y regabas con tu pie, como huerto de hortaliza.",
+      "bibleReference": "Deuteronomio 11:10",
+      "answers": [
+        {
+          "text": "Regaban con la lluvia del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Regaban de los arroyos de los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sembraban y regaban con el pie, como huerto",
+          "isCorrect": true
+        },
+        {
+          "text": "Regaban con agua de las cisternas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué ha de beber las aguas la tierra a la cual pasaban?",
+      "explanation": "Es tierra de montes y de vegas, y de la lluvia del cielo ha de beber las aguas.",
+      "bibleReference": "Deuteronomio 11:11",
+      "answers": [
+        {
+          "text": "De la lluvia del cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Del río Eufrates",
+          "isCorrect": false
+        },
+        {
+          "text": "De la mar postrera",
+          "isCorrect": false
+        },
+        {
+          "text": "De los abismos que brotan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo están sobre aquella tierra los ojos de Jehová?",
+      "explanation": "Es tierra de la cual Jehová su Dios cuida: siempre están sobre ella los ojos de Jehová su Dios, desde el principio del año hasta el fin de él.",
+      "bibleReference": "Deuteronomio 11:12",
+      "answers": [
+        {
+          "text": "Desde la siembra hasta la siega",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo en los días de la lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la mañana hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el principio del año hasta el fin de él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué lluvia daría si obedecían cuidadosamente sus mandamientos?",
+      "explanation": "Daría la lluvia de su tierra en su tiempo, la temprana y la tardía, y cogerían su grano, su vino y su aceite.",
+      "bibleReference": "Deuteronomio 11:14",
+      "answers": [
+        {
+          "text": "Lluvia cada siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Lluvia solo en los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "La temprana y la tardía",
+          "isCorrect": true
+        },
+        {
+          "text": "Lluvia por cuarenta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedería si su corazón se infatuase y sirviesen a dioses ajenos?",
+      "explanation": "Se encendería el furor de Jehová sobre ellos, y cerraría los cielos, y no habría lluvia, ni la tierra daría su fruto, y perecerían presto de la buena tierra.",
+      "bibleReference": "Deuteronomio 11:16-17",
+      "answers": [
+        {
+          "text": "Cerraría los cielos y no habría lluvia",
+          "isCorrect": true
+        },
+        {
+          "text": "Las bestias del campo se aumentarían",
+          "isCorrect": false
+        },
+        {
+          "text": "Vendrían avispas sobre sus ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra abriría su boca otra vez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde serían por frontales estas palabras?",
+      "explanation": "Debían ponerlas en su corazón y en su alma, atarlas por señal en su mano, y serían por frontales entre sus ojos.",
+      "bibleReference": "Deuteronomio 11:18",
+      "answers": [
+        {
+          "text": "Sobre sus hombros",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre sus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "En sus portadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el arca del pacto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde llegaría su término?",
+      "explanation": "Todo lugar que pisare la planta de su pie sería suyo: desde el desierto y el Líbano, desde el río Eufrates hasta la mar postrera.",
+      "bibleReference": "Deuteronomio 11:24",
+      "answers": [
+        {
+          "text": "Desde Gilgal hasta los llanos de Moreh",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Horeb hasta Cades-barnea",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el desierto y el Líbano hasta la mar postrera",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde el Jordán hasta el monte Hermón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué montes pondrían la bendición y la maldición?",
+      "explanation": "Pondrían la bendición sobre el monte Gerizim y la maldición sobre el monte Ebal.",
+      "bibleReference": "Deuteronomio 11:29",
+      "answers": [
+        {
+          "text": "La bendición sobre Ebal y la maldición sobre Gerizim",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dos sobre el monte Ebal, cerca de Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dos sobre el monte Gerizim, junto a Moreh",
+          "isCorrect": false
+        },
+        {
+          "text": "La bendición sobre Gerizim y la maldición sobre Ebal",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

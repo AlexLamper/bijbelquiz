@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Josué 3: el arca del pacto va delante del pueblo y las aguas del Jordán se detienen en un montón.",
+  "slug": "joshua-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Desde qué lugar partieron Josué y los hijos de Israel hacia el Jordán?",
+      "explanation": "El versículo dice que Josué se levantó de mañana y partieron de Sittim, y vinieron hasta el Jordán, donde reposaron antes de pasar.",
+      "bibleReference": "Josué 3:1",
+      "answers": [
+        {
+          "text": "De Sittim",
+          "isCorrect": true
+        },
+        {
+          "text": "De Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "De Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué distancia debía haber entre el pueblo y el arca?",
+      "explanation": "El versículo dice que entre ellos y el arca hubiera distancia como de la medida de dos mil codos, y que no se acercaran a ella.",
+      "bibleReference": "Josué 3:4",
+      "answers": [
+        {
+          "text": "Como mil codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Como dos mil codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Como cien codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un día de camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Josué al pueblo, porque Jehová haría maravillas el día siguiente?",
+      "explanation": "Josué dijo al pueblo: santificaos, porque Jehová hará mañana entre vosotros maravillas.",
+      "bibleReference": "Josué 3:5",
+      "answers": [
+        {
+          "text": "Que ayunaran siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que afilaran sus armas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se santificaran",
+          "isCorrect": true
+        },
+        {
+          "text": "Que contaran al pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes debían tomar el arca del pacto e ir delante del pueblo?",
+      "explanation": "Josué habló a los sacerdotes para que tomaran el arca del pacto y pasaran delante del pueblo, y ellos lo hicieron.",
+      "bibleReference": "Josué 3:6",
+      "answers": [
+        {
+          "text": "Los oficiales",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los doce hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sacerdotes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová a Josué que comenzaría a hacer aquel día?",
+      "explanation": "Jehová le dijo que desde aquel día comenzaría a hacerlo grande delante de los ojos de todo Israel, para que entendieran que, como fue con Moisés, así sería con él.",
+      "bibleReference": "Josué 3:7",
+      "answers": [
+        {
+          "text": "Hacerlo grande ante todo Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Darle descanso de sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartirle la tierra por heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Mostrarle el camino del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a aquel cuya arca del pacto pasa el Jordán delante del pueblo?",
+      "explanation": "El versículo dice: he aquí, el arca del pacto del Señoreador de toda la tierra pasa el Jordán delante de vosotros.",
+      "bibleReference": "Josué 3:11",
+      "answers": [
+        {
+          "text": "El Santo de los hijos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "El Señoreador de toda la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "El Dios de todos los ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "El Fuerte de la casa de Jacob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres mandó tomar Josué, uno de cada tribu?",
+      "explanation": "El versículo dice: tomad, pues, ahora doce hombres de las tribus de Israel, de cada tribu uno.",
+      "bibleReference": "Josué 3:12",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasaría con las aguas cuando los pies de los sacerdotes se asentaran sobre ellas?",
+      "explanation": "El versículo dice que las aguas del Jordán se partirán, porque las aguas que vienen de arriba se detendrán en un montón.",
+      "bibleReference": "Josué 3:13",
+      "answers": [
+        {
+          "text": "Se volverían muy amargas",
+          "isCorrect": false
+        },
+        {
+          "text": "Se abrirían en dos mares",
+          "isCorrect": false
+        },
+        {
+          "text": "Correrían hacia el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Se detendrían en un montón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que suele hacer el Jordán en todo el tiempo de la siega?",
+      "explanation": "El versículo dice, entre paréntesis, que el Jordán suele reverter sobre todos sus bordes todo el tiempo de la siega.",
+      "bibleReference": "Josué 3:15",
+      "answers": [
+        {
+          "text": "Reverter sobre todos sus bordes",
+          "isCorrect": true
+        },
+        {
+          "text": "Secarse por completo",
+          "isCorrect": false
+        },
+        {
+          "text": "Correr como un torrente de sal",
+          "isCorrect": false
+        },
+        {
+          "text": "Llenarse de barcas de pescadores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estuvieron firmes los sacerdotes hasta que todo el pueblo acabó de pasar?",
+      "explanation": "El versículo dice que los sacerdotes que llevaban el arca estuvieron en seco, firmes en medio del Jordán, hasta que todo el pueblo hubo pasado.",
+      "bibleReference": "Josué 3:17",
+      "answers": [
+        {
+          "text": "A la orilla del agua",
+          "isCorrect": false
+        },
+        {
+          "text": "En la ciudad de Adam",
+          "isCorrect": false
+        },
+        {
+          "text": "En medio del Jordán, en seco",
+          "isCorrect": true
+        },
+        {
+          "text": "En la campiña de Jericó",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

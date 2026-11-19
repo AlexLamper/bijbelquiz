@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Levítico 2: la ofrenda de presente de flor de harina, con aceite, incienso y sal.",
+  "slug": "leviticus-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué había de ser la ofrenda de presente que alguien ofreciera a Jehová?",
+      "explanation": "Levítico 2:1 dice que cuando alguna persona ofreciere oblación de presente a Jehová, su ofrenda será flor de harina, sobre la cual echará aceite y pondrá incienso.",
+      "bibleReference": "Levítico 2:1",
+      "answers": [
+        {
+          "text": "De ganado vacuno",
+          "isCorrect": false
+        },
+        {
+          "text": "De tórtolas o palominos",
+          "isCorrect": false
+        },
+        {
+          "text": "De vino y de miel",
+          "isCorrect": false
+        },
+        {
+          "text": "De flor de harina",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tomaba el sacerdote para hacerlo arder sobre el altar?",
+      "explanation": "Levítico 2:2 dice que el sacerdote tomará de ello su puño lleno de su flor de harina y de su aceite, con todo su incienso, y lo hará arder sobre el altar.",
+      "bibleReference": "Levítico 2:2",
+      "answers": [
+        {
+          "text": "La décima parte",
+          "isCorrect": false
+        },
+        {
+          "text": "Su puño lleno",
+          "isCorrect": true
+        },
+        {
+          "text": "La mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "Un epha entero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién era la sobra del presente?",
+      "explanation": "Levítico 2:3 dice que la sobra del presente será de Aarón y de sus hijos: es cosa santísima de las ofrendas que se queman a Jehová.",
+      "bibleReference": "Levítico 2:3",
+      "answers": [
+        {
+          "text": "Del que trajo la ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "De los pobres del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "De Aarón y de sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "De los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo habían de ser las tortas de la ofrenda cocida en horno?",
+      "explanation": "Levítico 2:4 dice que la ofrenda de presente cocida en horno será de tortas de flor de harina sin levadura, amasadas con aceite, y hojaldres sin levadura untadas con aceite.",
+      "bibleReference": "Levítico 2:4",
+      "answers": [
+        {
+          "text": "Sin levadura y amasadas con aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Con levadura y untadas con miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin aceite y sazonadas con sal",
+          "isCorrect": false
+        },
+        {
+          "text": "Con levadura y amasadas con agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con el presente que era ofrenda de sartén?",
+      "explanation": "Levítico 2:6 dice que lo partirás en piezas y echarás sobre ella aceite: es presente.",
+      "bibleReference": "Levítico 2:5-6",
+      "answers": [
+        {
+          "text": "Se quemaba entera sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Se partía en piezas y se le echaba aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Se comía en el atrio del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Se amasaba con miel y con sal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué no se había de quemar ninguna ofrenda a Jehová?",
+      "explanation": "Levítico 2:11 dice que ningún presente que ofrecieren a Jehová será con levadura, porque de ninguna cosa leuda ni de ninguna miel se ha de quemar ofrenda a Jehová.",
+      "bibleReference": "Levítico 2:11",
+      "answers": [
+        {
+          "text": "Con aceite ni con incienso",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sal ni con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Con levadura ni con miel",
+          "isCorrect": true
+        },
+        {
+          "text": "Con vino ni con sangre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué no harían las ofrendas de las primicias?",
+      "explanation": "Levítico 2:12 dice que en la ofrenda de las primicias las ofrecerán a Jehová, mas no subirán sobre el altar en olor de suavidad.",
+      "bibleReference": "Levítico 2:12",
+      "answers": [
+        {
+          "text": "No se traerían al sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "No se sazonarían con sal",
+          "isCorrect": false
+        },
+        {
+          "text": "No se partirían en piezas",
+          "isCorrect": false
+        },
+        {
+          "text": "No subirían sobre el altar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué había de sazonarse toda ofrenda de presente?",
+      "explanation": "Levítico 2:13 dice que sazonarás toda ofrenda de tu presente con sal, y que no harás que falte jamás de tu presente la sal de la alianza de tu Dios.",
+      "bibleReference": "Levítico 2:13",
+      "answers": [
+        {
+          "text": "Con sal",
+          "isCorrect": true
+        },
+        {
+          "text": "Con incienso",
+          "isCorrect": false
+        },
+        {
+          "text": "Con miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Con levadura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con las espigas verdes en el presente de primicias?",
+      "explanation": "Levítico 2:14 dice que si ofrecieres a Jehová presente de primicias, tostarás al fuego las espigas verdes y ofrecerás el grano desmenuzado.",
+      "bibleReference": "Levítico 2:14",
+      "answers": [
+        {
+          "text": "Se molían en flor de harina",
+          "isCorrect": false
+        },
+        {
+          "text": "Se cocían en cazuela con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Se tostaban al fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Se dejaban secar al sol",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué se ponía sobre el presente de primicias?",
+      "explanation": "Levítico 2:15 dice que pondrás sobre ella aceite y pondrás sobre ella incienso: es presente.",
+      "bibleReference": "Levítico 2:15",
+      "answers": [
+        {
+          "text": "Sal y miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceite e incienso",
+          "isCorrect": true
+        },
+        {
+          "text": "Agua y levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino y perfume",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

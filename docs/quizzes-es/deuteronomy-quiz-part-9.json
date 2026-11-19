@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Deuteronomio 9: el paso del Jordán, el becerro de fundición, las tablas quebradas y la oración por el pueblo.",
+  "slug": "deuteronomy-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo describe el texto las ciudades de las gentes que iba a poseer?",
+      "explanation": "Dice que entraría a poseer gentes más numerosas y más fuertes que él, y ciudades grandes y encastilladas hasta el cielo.",
+      "bibleReference": "Deuteronomio 9:1",
+      "answers": [
+        {
+          "text": "Pequeñas y sin muro alrededor",
+          "isCorrect": false
+        },
+        {
+          "text": "Grandes y encastilladas hasta el cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificadas sobre el arroyo del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Llenas de plata y de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes habían oído decir que nadie se sostendría delante de ellos?",
+      "explanation": "Habla de un pueblo grande y alto, hijos de gigantes, de los cuales habían oído decir: ¿Quién se sostendrá delante de los hijos del gigante?",
+      "bibleReference": "Deuteronomio 9:2",
+      "answers": [
+        {
+          "text": "De los reyes de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los hijos de Eliab",
+          "isCorrect": false
+        },
+        {
+          "text": "De los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "De los hijos del gigante",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué echa Jehová a esas gentes de delante de él?",
+      "explanation": "No entra a poseer su tierra por su justicia ni por la rectitud de su corazón, sino por la impiedad de estas gentes y por confirmar la palabra que Jehová juró a sus padres.",
+      "bibleReference": "Deuteronomio 9:5",
+      "answers": [
+        {
+          "text": "Por la impiedad de esas gentes, no por su justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "Por la justicia y rectitud de su corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ellos eran más fuertes en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque guardaron el pacto en el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a este pueblo al hablar de la buena tierra?",
+      "explanation": "Dice que debía saber que no por su justicia le da Jehová esta buena tierra, porque es pueblo duro de cerviz.",
+      "bibleReference": "Deuteronomio 9:6",
+      "answers": [
+        {
+          "text": "Pueblo santo y escogido",
+          "isCorrect": false
+        },
+        {
+          "text": "Pueblo sabio y entendido",
+          "isCorrect": false
+        },
+        {
+          "text": "Pueblo duro de cerviz",
+          "isCorrect": true
+        },
+        {
+          "text": "Pueblo pocos en número",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvo en el monte sin comer pan ni beber agua?",
+      "explanation": "Cuando subió al monte a recibir las tablas de piedra estuvo allí cuarenta días y cuarenta noches, sin comer pan ni beber agua.",
+      "bibleReference": "Deuteronomio 9:9",
+      "answers": [
+        {
+          "text": "Siete días y siete noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días y cuarenta noches",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres días y tres noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mes entero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué estaban escritas las dos tablas de piedra que Jehová le dio?",
+      "explanation": "Jehová le dio las dos tablas de piedra escritas con el dedo de Dios, conforme a todas las palabras que les habló en el monte de en medio del fuego.",
+      "bibleReference": "Deuteronomio 9:10",
+      "answers": [
+        {
+          "text": "Con el dedo de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la mano de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una lesna de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el fuego del monte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se había hecho el pueblo mientras él estaba en el monte?",
+      "explanation": "Al mirar vio que habían pecado contra Jehová su Dios: se habían hecho un becerro de fundición, apartándose presto del camino que Jehová les había mandado.",
+      "bibleReference": "Deuteronomio 9:16",
+      "answers": [
+        {
+          "text": "Un arca de madera de Sittim",
+          "isCorrect": false
+        },
+        {
+          "text": "Un altar de piedras del arroyo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro de fundición",
+          "isCorrect": true
+        },
+        {
+          "text": "Estatuas de los dioses de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo con las dos tablas al bajar del monte?",
+      "explanation": "Tomó las dos tablas, las arrojó de sus dos manos y las quebró delante de sus ojos.",
+      "bibleReference": "Deuteronomio 9:17",
+      "answers": [
+        {
+          "text": "Las puso en el arca de madera",
+          "isCorrect": false
+        },
+        {
+          "text": "Las escondió dentro del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Las entregó a Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Las arrojó de sus manos y las quebró",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo con el becerro que habían hecho?",
+      "explanation": "Tomó el becerro, lo quemó en el fuego, lo desmenuzó moliéndolo muy bien hasta reducirlo a polvo, y echó el polvo en el arroyo que descendía del monte.",
+      "bibleReference": "Deuteronomio 9:21",
+      "answers": [
+        {
+          "text": "Lo quemó, lo molió y echó el polvo en el arroyo",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo enterró al pie del monte que ardía",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo entregó a los Levitas del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo llevó consigo por el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes pidió a Jehová que se acordase al orar por el pueblo?",
+      "explanation": "Oró diciendo: Acuérdate de tus siervos Abraham, Isaac y Jacob; no mires a la dureza de este pueblo.",
+      "bibleReference": "Deuteronomio 9:27",
+      "answers": [
+        {
+          "text": "De Aarón y de Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "De Abraham, Isaac y Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "De los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "De los que murieron en el desierto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

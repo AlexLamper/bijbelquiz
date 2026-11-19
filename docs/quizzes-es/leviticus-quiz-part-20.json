@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Levítico 20: el juicio contra Moloch y la adivinación, el llamado a santificarse y la tierra que fluye leche y miel.",
+  "slug": "leviticus-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 2, ¿quién apedrearía al varón que diera de su simiente a Moloch?",
+      "explanation": "El versículo dice que ese varón de seguro morirá y que el pueblo de la tierra lo apedreará con piedras.",
+      "bibleReference": "Levítico 20:2",
+      "answers": [
+        {
+          "text": "Los sacerdotes del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "El pueblo de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas del tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si el pueblo escondía sus ojos de ese hombre para no matarle, ¿qué haría Jehová?",
+      "explanation": "Jehová dice que entonces pondría su rostro contra aquel varón y contra su familia, y lo cortaría de entre su pueblo.",
+      "bibleReference": "Levítico 20:4-5",
+      "answers": [
+        {
+          "text": "Enviaría pestilencia sobre toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo entregaría en mano del enemigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitaría su bendición de la cosecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Pondría su rostro contra él y contra su familia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿a quiénes no debía atender la persona?",
+      "explanation": "Contra quien atendiera a encantadores o adivinos para prostituirse tras ellos, Jehová pondría su rostro y lo cortaría de entre su pueblo.",
+      "bibleReference": "Levítico 20:6",
+      "answers": [
+        {
+          "text": "A encantadores y adivinos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los príncipes del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los extranjeros que peregrinan",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sacerdotes hijos de Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda Jehová en los versículos 7 y 8?",
+      "explanation": "Manda santificarse y ser santos, y guardar sus estatutos y ponerlos por obra, porque él es Jehová que los santifica.",
+      "bibleReference": "Levítico 20:7-8",
+      "answers": [
+        {
+          "text": "Ayunar y afligir sus almas",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecer un carnero cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Santificarse y guardar sus estatutos",
+          "isCorrect": true
+        },
+        {
+          "text": "Contar los años hasta el jubileo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué le sucede al varón que maldice a su padre o a su madre?",
+      "explanation": "El versículo dice que de cierto morirá, y que su sangre será sobre él.",
+      "bibleReference": "Levítico 20:9",
+      "answers": [
+        {
+          "text": "De cierto morirá",
+          "isCorrect": true
+        },
+        {
+          "text": "Será azotado",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagará el quinto de su valor",
+          "isCorrect": false
+        },
+        {
+          "text": "Será echado fuera del real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 22, ¿qué pasaría si guardaban todos los estatutos y derechos?",
+      "explanation": "El versículo dice que si los guardan y los ponen por obra, la tierra en la que él los introduce no los vomitará.",
+      "bibleReference": "Levítico 20:22",
+      "answers": [
+        {
+          "text": "Sus enemigos huirían delante de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "No habría enfermedad entre ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Serían más que las estrellas del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra no los vomitaría",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el versículo 24 la tierra que Jehová les daría por heredad?",
+      "explanation": "Jehová les dice que poseerán la tierra de aquellos pueblos, tierra que fluye leche y miel.",
+      "bibleReference": "Levítico 20:24",
+      "answers": [
+        {
+          "text": "Tierra de trigo y de viñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Tierra que fluye leche y miel",
+          "isCorrect": true
+        },
+        {
+          "text": "Tierra de montes y de valles",
+          "isCorrect": false
+        },
+        {
+          "text": "Tierra ancha y llena de ciudades",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 25, ¿entre qué debían hacer diferencia?",
+      "explanation": "Debían hacer diferencia entre animal limpio e inmundo y entre ave inmunda y limpia, y no ensuciarse con ellos.",
+      "bibleReference": "Levítico 20:25",
+      "answers": [
+        {
+          "text": "Entre el día santo y el día común",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre el pobre y el rico del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre los animales limpios y los inmundos",
+          "isCorrect": true
+        },
+        {
+          "text": "Entre el natural y el extranjero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 26, ¿por qué habían de ser santos a Jehová?",
+      "explanation": "Jehová dice que han de serle santos porque él es santo y los ha apartado de los pueblos para que sean suyos.",
+      "bibleReference": "Levítico 20:26",
+      "answers": [
+        {
+          "text": "Porque Jehová los sacó de la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la tierra es de Jehová y no de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el santuario está en medio de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Jehová es santo y los apartó de los pueblos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 27 del hombre o la mujer en quienes hubiere espíritu de adivinación?",
+      "explanation": "El versículo dice que han de ser muertos, que los apedrearán con piedras y que su sangre será sobre ellos.",
+      "bibleReference": "Levítico 20:27",
+      "answers": [
+        {
+          "text": "Serán cortados de entre su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Han de ser muertos",
+          "isCorrect": true
+        },
+        {
+          "text": "Morirán sin hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Serán quemados en fuego",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

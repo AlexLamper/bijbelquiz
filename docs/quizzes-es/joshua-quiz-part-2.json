@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Josué 2: los dos espías en Jericó, Rahab que los esconde y el cordón de grana en la ventana.",
+  "slug": "joshua-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Desde qué lugar envió Josué a los dos espías?",
+      "explanation": "El versículo dice que Josué, hijo de Nun, envió desde Sittim dos espías secretamente para reconocer la tierra y a Jericó.",
+      "bibleReference": "Josué 2:1",
+      "answers": [
+        {
+          "text": "Desde Sittim",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Hesbón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En casa de quién entraron los espías en Jericó?",
+      "explanation": "El versículo dice que entraron en casa de una mujer ramera que se llamaba Rahab, y posaron allí.",
+      "bibleReference": "Josué 2:1",
+      "answers": [
+        {
+          "text": "De Acán",
+          "isCorrect": false
+        },
+        {
+          "text": "De Rahab",
+          "isCorrect": true
+        },
+        {
+          "text": "Del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "De un sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde escondió ella a los dos hombres?",
+      "explanation": "El versículo dice que los había hecho subir al terrado y los había escondido entre tascos de lino que tenía puestos allí.",
+      "bibleReference": "Josué 2:6",
+      "answers": [
+        {
+          "text": "En el pozo de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Debajo de su propia cama",
+          "isCorrect": false
+        },
+        {
+          "text": "En el terrado, entre lino",
+          "isCorrect": true
+        },
+        {
+          "text": "En la puerta del muro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo ella a los enviados del rey acerca de aquellos hombres?",
+      "explanation": "Ella dijo que esos hombres se habían salido al cerrarse la puerta, siendo ya oscuro, y que no sabía a dónde se habían ido.",
+      "bibleReference": "Josué 2:5",
+      "answers": [
+        {
+          "text": "Que nunca habían entrado allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dormían dentro de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que habían subido al monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se fueron y no sabía a dónde",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo ella haber oído sobre el mar Bermejo?",
+      "explanation": "Ella dijo que habían oído que Jehová hizo secar las aguas del mar Bermejo delante de ellos cuando salieron de Egipto.",
+      "bibleReference": "Josué 2:10",
+      "answers": [
+        {
+          "text": "Que sus aguas se volvieron sangre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová secó sus aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que allí murieron sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo pasaron en barcas de caña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les pidió ella que le jurasen por Jehová?",
+      "explanation": "Ella les pidió que, como había hecho misericordia con ellos, salvaran la vida a su padre, a su madre, a sus hermanos y a todo lo suyo.",
+      "bibleReference": "Josué 2:12-13",
+      "answers": [
+        {
+          "text": "Que salvarían a su familia",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le darían plata y oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le abrirían las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no quemarían su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo los hizo descender desde su casa?",
+      "explanation": "El versículo dice que los hizo descender con una cuerda por la ventana, porque su casa estaba a la pared del muro y ella vivía en el muro.",
+      "bibleReference": "Josué 2:15",
+      "answers": [
+        {
+          "text": "Por una escalera de madera",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la puerta del muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una cuerda por la ventana",
+          "isCorrect": true
+        },
+        {
+          "text": "Por un hueco del terrado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días les dijo que se escondieran en el monte?",
+      "explanation": "Ella les dijo que se marcharan al monte y estuvieran escondidos allí tres días, hasta que los que los seguían hubieran vuelto.",
+      "bibleReference": "Josué 2:16",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un solo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué señal debía atar a la ventana por la cual los descolgó?",
+      "explanation": "Los hombres le dijeron que atara este cordón de grana a la ventana por la cual los descolgó, y que juntara a su familia en su casa.",
+      "bibleReference": "Josué 2:18",
+      "answers": [
+        {
+          "text": "Un cordón de grana",
+          "isCorrect": true
+        },
+        {
+          "text": "Una rama de olivo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un paño de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cuerda de tres hilos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los espías a Josué cuando volvieron?",
+      "explanation": "Ellos dijeron a Josué que Jehová había entregado toda la tierra en sus manos, y que todos los moradores del país estaban desmayados.",
+      "bibleReference": "Josué 2:24",
+      "answers": [
+        {
+          "text": "Que las ciudades eran muy fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hacía falta mucha más gente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová les entregó la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el rey los había perseguido",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

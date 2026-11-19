@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Deuteronomio 1: las palabras de Moisés, los jefes que nombró, los espías enviados y la derrota en el monte.",
+  "slug": "deuteronomy-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántas jornadas hay desde Horeb, camino del monte de Seir, hasta Cades-barnea?",
+      "explanation": "El texto dice que hay once jornadas desde Horeb, camino del monte de Seir, hasta Cades-barnea.",
+      "bibleReference": "Deuteronomio 1:2",
+      "answers": [
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Once",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué reyes había herido Moisés antes de hablar estas palabras?",
+      "explanation": "Habló después de haber herido a Sehón rey de los Amorrheos, que habitaba en Hesbón, y a Og rey de Basán, que habitaba en Astarot en Edrei.",
+      "bibleReference": "Deuteronomio 1:4",
+      "answers": [
+        {
+          "text": "A los cinco reyes de Madián y a Balaam",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Cananeo, rey de Arad, y a su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Balac rey de Moab y a sus príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sehón rey de los Amorrheos y a Og rey de Basán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les dijo Jehová nuestro Dios en Horeb?",
+      "explanation": "Jehová les dijo en Horeb que ya habían estado bastante en aquel monte, y que se volviesen y partiesen al monte del Amorrheo.",
+      "bibleReference": "Deuteronomio 1:6-7",
+      "answers": [
+        {
+          "text": "Que ya habían estado bastante en aquel monte",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volvieran por el camino de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperaran allí otros cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Que edificaran un altar en aquel monte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Moisés la multitud del pueblo?",
+      "explanation": "Moisés dijo que Jehová su Dios los había multiplicado y que ese día eran como las estrellas del cielo en multitud.",
+      "bibleReference": "Deuteronomio 1:10",
+      "answers": [
+        {
+          "text": "Con la arena del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el polvo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las avispas del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clase de hombres pidió Moisés que le dieran de sus tribus?",
+      "explanation": "Moisés les pidió varones sabios, entendidos y expertos, para ponerlos por sus jefes.",
+      "bibleReference": "Deuteronomio 1:13",
+      "answers": [
+        {
+          "text": "Varones fuertes y diestros en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los primogénitos de cada familia",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas y los sacerdotes del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Varones sabios, entendidos y expertos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer los jueces con la causa que les resultara difícil?",
+      "explanation": "Moisés mandó a sus jueces que no tuvieran respeto de personas y que la causa que les fuera difícil se la trajeran a él, y él la oiría.",
+      "bibleReference": "Deuteronomio 1:17",
+      "answers": [
+        {
+          "text": "Echar suertes delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Traérsela a Moisés, para que él la oyera",
+          "isCorrect": true
+        },
+        {
+          "text": "Dejarla sin juzgar hasta el año siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevarla al sacerdote del tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos varones tomó Moisés para reconocer la tierra?",
+      "explanation": "El dicho le pareció bien y tomó doce varones del pueblo, un varón por tribu.",
+      "bibleReference": "Deuteronomio 1:23",
+      "answers": [
+        {
+          "text": "Dos varones solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta varones ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce, uno por tribu",
+          "isCorrect": true
+        },
+        {
+          "text": "Mil varones por tribu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además de ciudades grandes y muradas hasta el cielo, ¿qué dijeron que habían visto allí?",
+      "explanation": "Dijeron que aquel pueblo era mayor y más alto que ellos, que las ciudades eran grandes y muradas hasta el cielo, y que también vieron allí hijos de gigantes.",
+      "bibleReference": "Deuteronomio 1:28",
+      "answers": [
+        {
+          "text": "Hijos de gigantes",
+          "isCorrect": true
+        },
+        {
+          "text": "Carros de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Ídolos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Ríos de leche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová acerca de Josué hijo de Nun?",
+      "explanation": "Jehová dijo que Josué hijo de Nun entraría allá y que Moisés debía animarlo, porque él haría heredar la tierra a Israel.",
+      "bibleReference": "Deuteronomio 1:38",
+      "answers": [
+        {
+          "text": "Que se quedaría a este lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llevaría el arca delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sería sacerdote junto con Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que él entraría y haría heredar la tierra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó cuando subieron al monte con altivez, sin hacer caso?",
+      "explanation": "El Amorrheo que habitaba en aquel monte salió a su encuentro, los persiguió como hacen las avispas y los derrotó en Seir, persiguiéndolos hasta Horma.",
+      "bibleReference": "Deuteronomio 1:44",
+      "answers": [
+        {
+          "text": "Jehová peleó por ellos y vencieron",
+          "isCorrect": false
+        },
+        {
+          "text": "El Amorrheo salió y los derrotó",
+          "isCorrect": true
+        },
+        {
+          "text": "Volvieron atrás sin pelear",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ciudades les abrieron sus puertas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

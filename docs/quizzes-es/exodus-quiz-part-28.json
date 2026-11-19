@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 28",
+  "description": "Diez preguntas sobre Éxodo 28: los vestidos sagrados de Aarón, el ephod con las piedras oniquinas, el racional del juicio, el manto y la plancha de oro.",
+  "slug": "exodus-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuáles son los hijos de Aarón que el versículo nombra para ser sacerdotes?",
+      "explanation": "El versículo nombra a Nadab y Abiú, Eleazar e Ithamar, hijos de Aarón, para que fueran sacerdotes con su padre.",
+      "bibleReference": "Éxodo 28:1",
+      "answers": [
+        {
+          "text": "Nadab y Abiú solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadab, Abiú, Eleazar e Ithamar",
+          "isCorrect": true
+        },
+        {
+          "text": "Eleazar e Ithamar solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadab, Abiú y Eleazar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué debían hacerse los vestidos sagrados de Aarón?",
+      "explanation": "El versículo dice que se le harían vestidos sagrados para honra y hermosura.",
+      "bibleReference": "Éxodo 28:2",
+      "answers": [
+        {
+          "text": "Para honra y hermosura",
+          "isCorrect": true
+        },
+        {
+          "text": "Para memoria del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para cubrir su pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "Para señal del sábado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la lista del versículo, ¿qué prenda se describe como labrada?",
+      "explanation": "Los vestidos que debían hacer eran el racional, el ephod, el manto, la túnica labrada, la mitra y el cinturón.",
+      "bibleReference": "Éxodo 28:4",
+      "answers": [
+        {
+          "text": "El racional",
+          "isCorrect": false
+        },
+        {
+          "text": "El manto",
+          "isCorrect": false
+        },
+        {
+          "text": "El cinturón",
+          "isCorrect": false
+        },
+        {
+          "text": "La túnica",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se repartían los nombres de los hijos de Israel en las dos piedras oniquinas?",
+      "explanation": "Se grababan los seis de sus nombres en una piedra y los otros seis nombres en la otra, conforme al nacimiento de ellos.",
+      "bibleReference": "Éxodo 28:9-10",
+      "answers": [
+        {
+          "text": "Todos en la piedra derecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro en una y ocho en otra",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis en una y seis en la otra",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce en cada una de ellas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se ponían esas dos piedras?",
+      "explanation": "Las dos piedras se ponían sobre los hombros del ephod, como piedras de memoria a los hijos de Israel.",
+      "bibleReference": "Éxodo 28:12",
+      "answers": [
+        {
+          "text": "En el cinto del ephod",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los hombros del ephod",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre la mitra",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro del racional",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos órdenes de piedras llevaba el racional?",
+      "explanation": "El racional se llenaba de pedrería con cuatro órdenes de piedras.",
+      "bibleReference": "Éxodo 28:17-20",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía ponerse en el racional del juicio?",
+      "explanation": "En el racional del juicio se ponían Urim y Thummim, para que estuvieran sobre el corazón de Aarón cuando entrara delante de Jehová.",
+      "bibleReference": "Éxodo 28:30",
+      "answers": [
+        {
+          "text": "Urim y Thummim",
+          "isCorrect": true
+        },
+        {
+          "text": "El aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos piedras oniquinas",
+          "isCorrect": false
+        },
+        {
+          "text": "La plancha de oro fino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se alternaba con las granadas en las orillas del manto?",
+      "explanation": "En las orillas del manto iban granadas de jacinto, púrpura y carmesí, y entre ellas campanillas de oro alrededor.",
+      "bibleReference": "Éxodo 28:33-34",
+      "answers": [
+        {
+          "text": "Querubines bordados",
+          "isCorrect": false
+        },
+        {
+          "text": "Anillos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Campanillas de oro",
+          "isCorrect": true
+        },
+        {
+          "text": "Cadenillas de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se grababa en la plancha de oro fino?",
+      "explanation": "En la plancha de oro fino se grababa, como grabadura de sello, SANTIDAD Á JEHOVÁ, y se ponía sobre la mitra.",
+      "bibleReference": "Éxodo 28:36",
+      "answers": [
+        {
+          "text": "SANTIDAD Á JEHOVÁ",
+          "isCorrect": true
+        },
+        {
+          "text": "Los nombres de las doce tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "El nombre de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Urim y Thummim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué debían hacerse los pañetes de los sacerdotes?",
+      "explanation": "Se les hacían pañetes de lino para cubrir la carne, desde los lomos hasta los muslos.",
+      "bibleReference": "Éxodo 28:42",
+      "answers": [
+        {
+          "text": "De jacinto",
+          "isCorrect": false
+        },
+        {
+          "text": "De lino",
+          "isCorrect": true
+        },
+        {
+          "text": "De pelo de cabras",
+          "isCorrect": false
+        },
+        {
+          "text": "De cueros de tejones",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

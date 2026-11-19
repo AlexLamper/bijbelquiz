@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Génesis 6: la malicia de los hombres, la gracia que halló Noé y el mandato de hacer el arca.",
+  "slug": "genesis-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos serán los días del hombre, según lo que dijo Jehová?",
+      "explanation": "Jehová dijo que su espíritu no contendería para siempre con el hombre, porque es carne, y que sus días serían ciento y veinte años.",
+      "bibleReference": "Génesis 6:3",
+      "answers": [
+        {
+          "text": "Novecientos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y veinte años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había en la tierra en aquellos días?",
+      "explanation": "El texto dice que había gigantes en la tierra en aquellos días, y que estos fueron los valientes y varones de nombre desde la antigüedad.",
+      "bibleReference": "Génesis 6:4",
+      "answers": [
+        {
+          "text": "Querubines",
+          "isCorrect": false
+        },
+        {
+          "text": "Reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Gigantes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio Jehová acerca de los pensamientos del corazón de los hombres?",
+      "explanation": "Jehová vio que la malicia de los hombres era mucha y que todo designio de los pensamientos de su corazón era de continuo solamente el mal.",
+      "bibleReference": "Génesis 6:5",
+      "answers": [
+        {
+          "text": "Que era de continuo solamente el mal",
+          "isCorrect": true
+        },
+        {
+          "text": "Que estaba dividido entre el bien y el mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que buscaba la sabiduría de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se arrepentía poco a poco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sintió Jehová por haber hecho al hombre en la tierra?",
+      "explanation": "Jehová se arrepintió de haber hecho hombre en la tierra, y le pesó en su corazón.",
+      "bibleReference": "Génesis 6:6",
+      "answers": [
+        {
+          "text": "Se alegró y lo bendijo otra vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardó silencio durante cien años",
+          "isCorrect": false
+        },
+        {
+          "text": "Se arrepintió y le pesó en su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Puso una señal en las nubes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién halló gracia en los ojos de Jehová?",
+      "explanation": "El texto dice que Noé halló gracia en los ojos de Jehová.",
+      "bibleReference": "Génesis 6:8",
+      "answers": [
+        {
+          "text": "Lamech",
+          "isCorrect": false
+        },
+        {
+          "text": "Noé",
+          "isCorrect": true
+        },
+        {
+          "text": "Mathusalam",
+          "isCorrect": false
+        },
+        {
+          "text": "Japhet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Noé en sus generaciones?",
+      "explanation": "Dice que Noé fue varón justo y perfecto en sus generaciones, y que con Dios caminó.",
+      "bibleReference": "Génesis 6:9",
+      "answers": [
+        {
+          "text": "Vigoroso cazador",
+          "isCorrect": false
+        },
+        {
+          "text": "Labrador de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Varón justo y perfecto",
+          "isCorrect": true
+        },
+        {
+          "text": "Padre de Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué madera debía hacer Noé el arca?",
+      "explanation": "Dios le mandó hacerse un arca de madera de Gopher, con aposentos, embetunada con brea por dentro y por fuera.",
+      "bibleReference": "Génesis 6:14",
+      "answers": [
+        {
+          "text": "De madera de Gopher",
+          "isCorrect": true
+        },
+        {
+          "text": "De madera de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera de oliva",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera de higuera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál debía ser la longitud del arca?",
+      "explanation": "El arca debía ser de trescientos codos de longitud, cincuenta de anchura y treinta de altura.",
+      "bibleReference": "Génesis 6:15",
+      "answers": [
+        {
+          "text": "Cincuenta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quince codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos codos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes entrarían en el arca junto con Noé?",
+      "explanation": "Dios le dijo que establecería su pacto con él, y que entraría en el arca con sus hijos, su mujer y las mujeres de sus hijos.",
+      "bibleReference": "Génesis 6:18",
+      "answers": [
+        {
+          "text": "Solamente su mujer y sus tres hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus hijos, sus hijas y sus mujeres",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus hijos, su mujer y las mujeres de sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "Su padre Lamech y sus hermanos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el final del capítulo que hizo Noé?",
+      "explanation": "El capítulo termina diciendo que Noé hizo conforme a todo lo que Dios le mandó.",
+      "bibleReference": "Génesis 6:22",
+      "answers": [
+        {
+          "text": "Pidió a Dios otra señal del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Hizo conforme a todo lo que Dios le mandó",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificó un altar y ofreció holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "Entró en el arca con los animales",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

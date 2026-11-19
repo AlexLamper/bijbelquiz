@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Génesis 5: el libro de las generaciones de Adam, con los años de cada uno hasta Noé.",
+  "slug": "genesis-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años vivió Adam antes de engendrar a Seth?",
+      "explanation": "Adam vivió ciento y treinta años y engendró un hijo a su semejanza, al que llamó Seth.",
+      "bibleReference": "Génesis 5:3",
+      "answers": [
+        {
+          "text": "Ciento y treinta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento y cinco años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento sesenta y dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos y cinco años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron todos los días que vivió Adam?",
+      "explanation": "Todos los días que vivió Adam fueron novecientos y treinta años, y murió.",
+      "bibleReference": "Génesis 5:5",
+      "answers": [
+        {
+          "text": "Novecientos y doce años",
+          "isCorrect": false
+        },
+        {
+          "text": "Novecientos y cinco años",
+          "isCorrect": false
+        },
+        {
+          "text": "Novecientos y treinta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Novecientos sesenta y dos años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién engendró Seth?",
+      "explanation": "Seth vivió ciento y cinco años y engendró a Enós.",
+      "bibleReference": "Génesis 5:6",
+      "answers": [
+        {
+          "text": "A Cainán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Enós",
+          "isCorrect": true
+        },
+        {
+          "text": "A Mahalaleel",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jared",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién engendró Cainán?",
+      "explanation": "Cainán vivió setenta años y engendró a Mahalaleel.",
+      "bibleReference": "Génesis 5:12",
+      "answers": [
+        {
+          "text": "A Jared",
+          "isCorrect": false
+        },
+        {
+          "text": "A Henoch",
+          "isCorrect": false
+        },
+        {
+          "text": "A Mathusalam",
+          "isCorrect": false
+        },
+        {
+          "text": "A Mahalaleel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién engendró Jared?",
+      "explanation": "Jared vivió ciento sesenta y dos años y engendró a Henoch.",
+      "bibleReference": "Génesis 5:18",
+      "answers": [
+        {
+          "text": "A Henoch",
+          "isCorrect": true
+        },
+        {
+          "text": "A Mathusalam",
+          "isCorrect": false
+        },
+        {
+          "text": "A Lamech",
+          "isCorrect": false
+        },
+        {
+          "text": "A Cainán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron todos los días de Henoch?",
+      "explanation": "Todos los días de Henoch fueron trescientos sesenta y cinco años.",
+      "bibleReference": "Génesis 5:23",
+      "answers": [
+        {
+          "text": "Trescientos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos sesenta y cinco años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ochocientos treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Novecientos sesenta y nueve años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué pasó con Henoch después de caminar con Dios?",
+      "explanation": "Henoch caminó con Dios y desapareció, porque le llevó Dios.",
+      "bibleReference": "Génesis 5:24",
+      "answers": [
+        {
+          "text": "Murió en la tierra de Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "Vivió más años que todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Reposó el día séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Desapareció, porque le llevó Dios",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron todos los días de Mathusalam?",
+      "explanation": "Todos los días de Mathusalam fueron novecientos sesenta y nueve años, y murió.",
+      "bibleReference": "Génesis 5:27",
+      "answers": [
+        {
+          "text": "Novecientos y treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setecientos setenta y siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Novecientos sesenta y nueve años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ochocientos noventa y cinco años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Lamech a su hijo, diciendo que los aliviaría de sus obras?",
+      "explanation": "Lamech llamó a su hijo Noé, diciendo que este los aliviaría de sus obras y del trabajo de sus manos.",
+      "bibleReference": "Génesis 5:28-29",
+      "answers": [
+        {
+          "text": "Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "Noé",
+          "isCorrect": true
+        },
+        {
+          "text": "Henoch",
+          "isCorrect": false
+        },
+        {
+          "text": "Sem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes engendró Noé siendo de quinientos años?",
+      "explanation": "Siendo Noé de quinientos años, engendró a Sem, Châm y Japhet.",
+      "bibleReference": "Génesis 5:32",
+      "answers": [
+        {
+          "text": "A Sem, Châm y Japhet",
+          "isCorrect": true
+        },
+        {
+          "text": "A Caín, Abel y Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "A Abram, Nachôr y Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Cush, Mizraim y Phut",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

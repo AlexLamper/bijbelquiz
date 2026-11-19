@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Números 2: el orden del campamento por banderas alrededor del tabernáculo y el orden de la marcha de los ejércitos.",
+  "slug": "numbers-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 2, ¿dónde acamparían los hijos de Israel, cada uno junto a su bandera?",
+      "explanation": "El versículo dice que acamparán cada uno junto a su bandera, según las enseñas de las casas de sus padres, alrededor del tabernáculo del testimonio.",
+      "bibleReference": "Números 2:2",
+      "answers": [
+        {
+          "text": "Delante del monte de Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Al oriente del campo de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Alrededor del tabernáculo del testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "Dentro del atrio del santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ejército acampaba al levante, al oriente?",
+      "explanation": "El versículo dice que al levante, al oriente, estaría la bandera del ejército de Judá, cuyo jefe era Naasón hijo de Aminadab.",
+      "bibleReference": "Números 2:3",
+      "answers": [
+        {
+          "text": "El de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "El de Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "El de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "El de Dan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era el total de los contados en el ejército de Judá?",
+      "explanation": "El versículo dice que todos los contados en el ejército de Judá fueron ciento ochenta y seis mil y cuatrocientos, y que irían delante.",
+      "bibleReference": "Números 2:9",
+      "answers": [
+        {
+          "text": "Ciento cincuenta y un mil cuatrocientos y cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento ocho mil y ciento",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento cincuenta y siete mil y seiscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento ochenta y seis mil y cuatrocientos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba la bandera del ejército de Rubén?",
+      "explanation": "El versículo dice que la bandera del ejército de Rubén estaría al mediodía, por sus escuadrones.",
+      "bibleReference": "Números 2:10",
+      "answers": [
+        {
+          "text": "Al occidente",
+          "isCorrect": false
+        },
+        {
+          "text": "Al mediodía",
+          "isCorrect": true
+        },
+        {
+          "text": "Al aquilón",
+          "isCorrect": false
+        },
+        {
+          "text": "Al oriente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién era el jefe de los hijos de Gad?",
+      "explanation": "El versículo dice que el jefe de los hijos de Gad era Eliasaph hijo de Rehuel.",
+      "bibleReference": "Números 2:14",
+      "answers": [
+        {
+          "text": "Eliasaph hijo de Rehuel",
+          "isCorrect": true
+        },
+        {
+          "text": "Selumiel hijo de Zurisaddai",
+          "isCorrect": false
+        },
+        {
+          "text": "Elisur hijo de Sedeur",
+          "isCorrect": false
+        },
+        {
+          "text": "Nathanael hijo de Suar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿qué iba en medio de los ejércitos?",
+      "explanation": "El versículo dice que luego iría el tabernáculo del testimonio, el campo de los Levitas, en medio de los ejércitos.",
+      "bibleReference": "Números 2:17",
+      "answers": [
+        {
+          "text": "La bandera del ejército de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de las doce tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "El tabernáculo del testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "Las trompetas de la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién era la bandera que estaba al occidente?",
+      "explanation": "El versículo dice que la bandera del ejército de Ephraim estaría al occidente, y que su jefe era Elisama hijo de Ammiud.",
+      "bibleReference": "Números 2:18",
+      "answers": [
+        {
+          "text": "De Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ephraim",
+          "isCorrect": true
+        },
+        {
+          "text": "De Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "De Zabulón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba la bandera del ejército de Dan?",
+      "explanation": "El versículo dice que la bandera del ejército de Dan estaría al aquilón, por sus escuadrones.",
+      "bibleReference": "Números 2:25",
+      "answers": [
+        {
+          "text": "Al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Al occidente",
+          "isCorrect": false
+        },
+        {
+          "text": "Al levante",
+          "isCorrect": false
+        },
+        {
+          "text": "Al aquilón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué lugar ocupaba en la marcha el ejército de Dan?",
+      "explanation": "El versículo dice que todos los contados en el ejército de Dan irían los postreros tras sus banderas.",
+      "bibleReference": "Números 2:31",
+      "answers": [
+        {
+          "text": "Irían los postreros",
+          "isCorrect": true
+        },
+        {
+          "text": "Irían delante",
+          "isCorrect": false
+        },
+        {
+          "text": "Irían los segundos",
+          "isCorrect": false
+        },
+        {
+          "text": "Irían los terceros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 33, ¿quiénes no fueron contados entre los hijos de Israel?",
+      "explanation": "El versículo dice que los Levitas no fueron contados entre los hijos de Israel, como Jehová lo mandó a Moisés.",
+      "bibleReference": "Números 2:33",
+      "answers": [
+        {
+          "text": "Los extranjeros",
+          "isCorrect": false
+        },
+        {
+          "text": "Los primogénitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sacerdotes hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

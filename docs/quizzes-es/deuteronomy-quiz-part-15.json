@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Deuteronomio 15: el año de la remisión, la mano abierta al hermano menesteroso, el siervo hebreo y los primerizos.",
+  "slug": "deuteronomy-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Al cabo de cuántos años haría remisión?",
+      "explanation": "Dice: Al cabo de siete años harás remisión.",
+      "bibleReference": "Deuteronomio 15:1",
+      "answers": [
+        {
+          "text": "Al cabo de tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Al cabo de diez años",
+          "isCorrect": false
+        },
+        {
+          "text": "Al cabo de cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Al cabo de siete años",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía en la remisión el que había hecho empréstito?",
+      "explanation": "Perdonaría a su deudor todo aquel que hizo empréstito de su mano, y no lo demandaría más a su prójimo ni a su hermano, porque la remisión de Jehová es pregonada.",
+      "bibleReference": "Deuteronomio 15:2",
+      "answers": [
+        {
+          "text": "Cobraba la mitad de la deuda a su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Perdonaba a su deudor y no se lo demandaba más",
+          "isCorrect": true
+        },
+        {
+          "text": "Tomaba al deudor por siervo seis años",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperaba hasta el año siguiente para cobrar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién sí demandaría el reintegro?",
+      "explanation": "Del extranjero demandaría el reintegro, mas lo que su hermano tuviere suyo, lo perdonaría su mano.",
+      "bibleReference": "Deuteronomio 15:3",
+      "answers": [
+        {
+          "text": "A su hermano pobre",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Levita de sus poblaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Al extranjero",
+          "isCorrect": true
+        },
+        {
+          "text": "Al siervo hebreo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto sobre prestar y tomar prestado?",
+      "explanation": "Ya que Jehová su Dios le habría bendecido, prestaría entonces a muchas gentes, mas él no tomaría prestado.",
+      "bibleReference": "Deuteronomio 15:6",
+      "answers": [
+        {
+          "text": "Prestaría a muchas gentes y no tomaría prestado",
+          "isCorrect": true
+        },
+        {
+          "text": "Tomaría prestado de muchas gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "No prestaría ni tomaría prestado",
+          "isCorrect": false
+        },
+        {
+          "text": "Prestaría solo a sus hermanos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer cuando hubiere un menesteroso de entre sus hermanos?",
+      "explanation": "No endurecería su corazón ni cerraría su mano a su hermano pobre, mas le abriría su mano liberalmente y le prestaría lo que basta, lo que hubiere menester.",
+      "bibleReference": "Deuteronomio 15:7-8",
+      "answers": [
+        {
+          "text": "Llevarlo al lugar que Jehová escogiere",
+          "isCorrect": false
+        },
+        {
+          "text": "Darle trabajo por seis años",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperar hasta el año de la remisión",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrirle la mano y prestarle lo que necesite",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pensamiento perverso advierte el texto que no haya en su corazón?",
+      "explanation": "Advierte el pensamiento que dice: Cerca está el año séptimo, el de la remisión, y que hace que su ojo sea maligno sobre su hermano menesteroso para no darle.",
+      "bibleReference": "Deuteronomio 15:9",
+      "answers": [
+        {
+          "text": "Que el hermano pobre no quiere trabajar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el extranjero merece más que el hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Que por estar cerca el año séptimo no le dé nada",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Jehová no está viendo lo que hace",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué manda abrir la mano a su hermano pobre y menesteroso?",
+      "explanation": "Dice: Porque no faltarán menesterosos de en medio de la tierra; por eso yo te mando, diciendo: Abrirás tu mano a tu hermano.",
+      "bibleReference": "Deuteronomio 15:11",
+      "answers": [
+        {
+          "text": "Porque no faltarán menesterosos en la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque así lo piden los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la tierra es de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque fueron siervos en el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo despedía libre al hermano hebreo que se le hubiere vendido?",
+      "explanation": "Cuando se le vendiere su hermano hebreo o hebrea y le hubiere servido seis años, al séptimo año lo despediría libre de él.",
+      "bibleReference": "Deuteronomio 15:12",
+      "answers": [
+        {
+          "text": "Al tercer año de su servicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Al séptimo año, tras servirle seis años",
+          "isCorrect": true
+        },
+        {
+          "text": "En el año de la remisión solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando pagase todo su precio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía si el siervo decía que no quería salir de su casa?",
+      "explanation": "Tomaría una lesna y horadaría su oreja junto a la puerta, y sería su siervo para siempre; así haría también a su criada.",
+      "bibleReference": "Deuteronomio 15:17",
+      "answers": [
+        {
+          "text": "Escribía su nombre en la portada",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo llevaba delante de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Horadaba su oreja con una lesna junto a la puerta",
+          "isCorrect": true
+        },
+        {
+          "text": "Le daba doble salario cada año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué primerizo no había de sacrificar a Jehová su Dios?",
+      "explanation": "Si hubiere en él tacha, ciego o cojo, o cualquiera mala falta, no lo sacrificaría a Jehová su Dios, sino que lo comería en sus poblaciones.",
+      "bibleReference": "Deuteronomio 15:21",
+      "answers": [
+        {
+          "text": "El primerizo de sus ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "El que naciere en el año séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "El que fuere macho",
+          "isCorrect": false
+        },
+        {
+          "text": "El que tuviere tacha, ciego o cojo",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

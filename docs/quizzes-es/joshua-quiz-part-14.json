@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Josué 14: el reparto por suerte en Canaán y la petición de Caleb, que recibió Hebrón por heredad.",
+  "slug": "joshua-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes repartieron la heredad en la tierra de Canaán?",
+      "explanation": "La repartieron Eleazar sacerdote, Josué hijo de Nun y los principales de los padres de las tribus de los hijos de Israel.",
+      "bibleReference": "Josué 14:1",
+      "answers": [
+        {
+          "text": "Eleazar, Josué y los principales de los padres",
+          "isCorrect": true
+        },
+        {
+          "text": "Moisés y los príncipes de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb y los hijos de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas y los hijos de José",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se les dio su heredad?",
+      "explanation": "Por suerte se les dio su heredad, como Jehová lo había mandado por Moisés.",
+      "bibleReference": "Josué 14:2",
+      "answers": [
+        {
+          "text": "Por compra a los cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el orden de su nacimiento",
+          "isCorrect": false
+        },
+        {
+          "text": "Por suerte, como Jehová lo mandó",
+          "isCorrect": true
+        },
+        {
+          "text": "Por el número de sus hombres de guerra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dieron a los Levitas en lugar de una parte en la tierra?",
+      "explanation": "No dieron parte a los Levitas en la tierra, sino ciudades en que morasen, con sus ejidos para sus ganados y rebaños.",
+      "bibleReference": "Josué 14:4",
+      "answers": [
+        {
+          "text": "Los sacrificios de las nueve tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudades para morar, con sus ejidos",
+          "isCorrect": true
+        },
+        {
+          "text": "La mitad de la tierra de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Las villas de Hebrón y de Debir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién vino a Josué en Gilgal junto con los hijos de Judá?",
+      "explanation": "Los hijos de Judá vinieron a Josué en Gilgal, y Caleb, hijo de Jephone Cenezeo, le habló.",
+      "bibleReference": "Josué 14:6",
+      "answers": [
+        {
+          "text": "Eleazar el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés, varón de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Los principales de los padres",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb, hijo de Jephone",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenía Caleb cuando Moisés lo envió desde Cades-barnea a reconocer la tierra?",
+      "explanation": "Caleb dijo que tenía cuarenta años cuando Moisés, siervo de Jehová, lo envió de Cades-barnea a reconocer la tierra.",
+      "bibleReference": "Josué 14:7",
+      "answers": [
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ochenta y cinco años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y cinco años",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad decía tener Caleb aquel día?",
+      "explanation": "Caleb dijo: he aquí, soy hoy día de ochenta y cinco años.",
+      "bibleReference": "Josué 14:10",
+      "answers": [
+        {
+          "text": "Cuarenta y cinco años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta y cinco años",
+          "isCorrect": true
+        },
+        {
+          "text": "Setenta y nueve años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento veinte años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describía Caleb su fuerza aquel día?",
+      "explanation": "Caleb dijo que aun aquel día estaba tan fuerte como el día en que Moisés lo envió, para la guerra y para salir y entrar.",
+      "bibleReference": "Josué 14:11",
+      "answers": [
+        {
+          "text": "Decía que ya no podía salir a la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Decía que su fuerza era menor que antes",
+          "isCorrect": false
+        },
+        {
+          "text": "Decía que buscaría quien peleara por él",
+          "isCorrect": false
+        },
+        {
+          "text": "Decía que estaba tan fuerte como antes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Caleb a Josué?",
+      "explanation": "Caleb pidió que le diera aquel monte del cual Jehová había hablado, donde estaban los Anaceos y grandes y fuertes ciudades.",
+      "bibleReference": "Josué 14:12",
+      "answers": [
+        {
+          "text": "Que le diera las fuentes de aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo librara de la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le diera aquel monte",
+          "isCorrect": true
+        },
+        {
+          "text": "Que repartiera la tierra por suerte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio Josué a Caleb por heredad?",
+      "explanation": "Josué lo bendijo y dio a Caleb hijo de Jephone a Hebrón por heredad.",
+      "bibleReference": "Josué 14:13",
+      "answers": [
+        {
+          "text": "Cades-barnea",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebrón",
+          "isCorrect": true
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba antes Hebrón?",
+      "explanation": "El texto dice que Hebrón fue antes llamada Chîriath-arba, y que Arba fue un hombre grande entre los Anaceos.",
+      "bibleReference": "Josué 14:15",
+      "answers": [
+        {
+          "text": "Chîriath-arba",
+          "isCorrect": true
+        },
+        {
+          "text": "Cades-barnea",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Gilgal",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

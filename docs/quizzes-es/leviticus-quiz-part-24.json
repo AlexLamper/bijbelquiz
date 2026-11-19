@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Levítico 24: el aceite de las lámparas, las doce tortas sobre la mesa y el hombre que pronunció el Nombre.",
+  "slug": "leviticus-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué debían traer los hijos de Israel para la luminaria?",
+      "explanation": "Jehová manda que le traigan aceite de olivas claro, molido, para hacer arder las lámparas de continuo.",
+      "bibleReference": "Levítico 24:2",
+      "answers": [
+        {
+          "text": "Incienso limpio y puro",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceite de olivas claro, molido",
+          "isCorrect": true
+        },
+        {
+          "text": "Flor de harina amasada con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino para la libación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién aderezaba las lámparas desde la tarde hasta la mañana delante de Jehová?",
+      "explanation": "El versículo dice que Aarón las aderezará fuera del velo del testimonio, en el tabernáculo del testimonio, de continuo.",
+      "bibleReference": "Levítico 24:3",
+      "answers": [
+        {
+          "text": "Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas tortas de flor de harina debían cocerse?",
+      "explanation": "El versículo manda tomar flor de harina y cocer de ella doce tortas, cada torta de dos décimas.",
+      "bibleReference": "Levítico 24:5",
+      "answers": [
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se ponía sobre cada orden de tortas, sobre la mesa limpia?",
+      "explanation": "El versículo dice que sobre cada orden se pondría incienso limpio, y que sería para el pan por perfume, ofrenda encendida a Jehová.",
+      "bibleReference": "Levítico 24:7",
+      "answers": [
+        {
+          "text": "Aceite molido",
+          "isCorrect": false
+        },
+        {
+          "text": "Sal del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Incienso limpio",
+          "isCorrect": true
+        },
+        {
+          "text": "Vino de la libación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde comían esas tortas Aarón y sus hijos?",
+      "explanation": "El versículo dice que será de Aarón y de sus hijos, los cuales lo comerán en el lugar santo, porque es cosa muy santa.",
+      "bibleReference": "Levítico 24:9",
+      "answers": [
+        {
+          "text": "A la puerta del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "En sus propias casas",
+          "isCorrect": false
+        },
+        {
+          "text": "En el atrio del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "En el lugar santo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿quién era el padre del hombre que riñó en el real?",
+      "explanation": "El versículo dice que era hijo de una mujer Israelita y de un Egipcio, y que riñó en el real con un hombre de Israel.",
+      "bibleReference": "Levítico 24:10",
+      "answers": [
+        {
+          "text": "Un Egipcio",
+          "isCorrect": true
+        },
+        {
+          "text": "Un Levita",
+          "isCorrect": false
+        },
+        {
+          "text": "Un hombre de Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "Un extranjero de Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué tribu era Selomith, la madre de aquel hombre?",
+      "explanation": "El versículo dice que su madre se llamaba Selomith, hija de Dribi, de la tribu de Dan.",
+      "bibleReference": "Levítico 24:11",
+      "answers": [
+        {
+          "text": "De Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "De Dan",
+          "isCorrect": true
+        },
+        {
+          "text": "De Rubén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer los que le oyeron, antes de que la congregación lo apedreara?",
+      "explanation": "Jehová manda sacar al blasfemo fuera del real y que todos los que le oyeron pongan sus manos sobre su cabeza.",
+      "bibleReference": "Levítico 24:14",
+      "answers": [
+        {
+          "text": "Lavar sus vestidos con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Poner sus manos sobre su cabeza",
+          "isCorrect": true
+        },
+        {
+          "text": "Traer un carnero en expiación",
+          "isCorrect": false
+        },
+        {
+          "text": "Repetir sus palabras ante Moisés",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué regla da el versículo 20 sobre la lesión hecha al prójimo?",
+      "explanation": "El versículo dice: rotura por rotura, ojo por ojo, diente por diente; según la lesión hecha a otro, tal se hará a él.",
+      "bibleReference": "Levítico 24:20",
+      "answers": [
+        {
+          "text": "Siete veces el valor de la lesión",
+          "isCorrect": false
+        },
+        {
+          "text": "Restituir un animal por el animal",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagar cincuenta siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Rotura por rotura, ojo por ojo, diente por diente",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hijos de Israel al final del capítulo?",
+      "explanation": "El versículo dice que sacaron al blasfemo fuera del real y lo apedrearon con piedras, como Jehová había mandado a Moisés.",
+      "bibleReference": "Levítico 24:23",
+      "answers": [
+        {
+          "text": "Lo dejaron en la cárcel para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo sacaron fuera del real y lo apedrearon",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo echaron de la tierra de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo quemaron en fuego fuera del real",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

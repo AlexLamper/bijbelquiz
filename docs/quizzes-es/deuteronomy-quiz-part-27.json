@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre Deuteronomio 27: las piedras revocadas con cal, el altar en el monte de Ebal, las tribus que bendicen y las maldiciones con su Amén.",
+  "slug": "deuteronomy-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué debía hacer el pueblo el día que pasara el Jordán?",
+      "explanation": "Moisés manda levantar piedras grandes y revocarlas con cal, el día que pasaren el Jordán a la tierra que Jehová les da.",
+      "bibleReference": "Deuteronomio 27:2",
+      "answers": [
+        { "text": "Edificar una ciudad junto al río", "isCorrect": false },
+        { "text": "Levantar piedras grandes y revocarlas con cal", "isCorrect": true },
+        { "text": "Contar a los varones de cada tribu", "isCorrect": false },
+        { "text": "Repartir la tierra entre las tribus", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué monte se levantarían aquellas piedras?",
+      "explanation": "El texto dice que, cuando hubieren pasado el Jordán, levantarán estas piedras en el monte de Ebal y las revocarán con cal.",
+      "bibleReference": "Deuteronomio 27:4",
+      "answers": [
+        { "text": "En el monte de Gerizim", "isCorrect": false },
+        { "text": "En el monte de Horeb", "isCorrect": false },
+        { "text": "En el monte de Nebo", "isCorrect": false },
+        { "text": "En el monte de Ebal", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué no debía alzarse sobre las piedras del altar?",
+      "explanation": "El texto manda edificar allí un altar de piedras a Jehová y no alzar sobre ellas hierro.",
+      "bibleReference": "Deuteronomio 27:5",
+      "answers": [
+        { "text": "Hierro", "isCorrect": true },
+        { "text": "Fuego", "isCorrect": false },
+        { "text": "Incienso", "isCorrect": false },
+        { "text": "Cal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo debían escribirse en las piedras las palabras de esta ley?",
+      "explanation": "El texto dice que escribirás en las piedras todas las palabras de esta ley muy claramente.",
+      "bibleReference": "Deuteronomio 27:8",
+      "answers": [
+        { "text": "Con letras de oro", "isCorrect": false },
+        { "text": "En lengua de Egipto", "isCorrect": false },
+        { "text": "Muy claramente", "isCorrect": true },
+        { "text": "En secreto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron Moisés y los sacerdotes Levitas a todo Israel?",
+      "explanation": "Hablaron a todo Israel diciendo: atiende y escucha, Israel; hoy eres hecho pueblo de Jehová tu Dios.",
+      "bibleReference": "Deuteronomio 27:9",
+      "answers": [
+        { "text": "Que pasarían el Jordán en tres días", "isCorrect": false },
+        { "text": "Que escogieran un rey entre sus hermanos", "isCorrect": false },
+        { "text": "Que contaran las siete semanas", "isCorrect": false },
+        { "text": "Que aquel día eran hechos pueblo de Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué tribus estarían sobre el monte de Gerizim para bendecir al pueblo?",
+      "explanation": "El texto nombra a Simeón, Leví, Judá, Issachâr, José y Benjamín como los que estarían sobre el monte de Gerizim para bendecir.",
+      "bibleReference": "Deuteronomio 27:12",
+      "answers": [
+        { "text": "Rubén, Gad, Aser, Zabulón, Dan y Nephtalí", "isCorrect": false },
+        { "text": "Simeón, Leví, Judá, Issachâr, José y Benjamín", "isCorrect": true },
+        { "text": "Judá, Benjamín, Dan, Aser y Gad", "isCorrect": false },
+        { "text": "Leví, Rubén, Simeón, Dan y José", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué tribus pronunciarían la maldición en el monte de Ebal?",
+      "explanation": "El texto nombra a Rubén, Gad, Aser, Zabulón, Dan y Nephtalí como los que estarían para pronunciar la maldición en Ebal.",
+      "bibleReference": "Deuteronomio 27:13",
+      "answers": [
+        { "text": "Simeón, Leví, Judá, Issachâr, José y Benjamín", "isCorrect": false },
+        { "text": "Benjamín, José, Dan y Aser", "isCorrect": false },
+        { "text": "Rubén, Gad, Aser, Zabulón, Dan y Nephtalí", "isCorrect": true },
+        { "text": "Judá, Leví y Rubén solamente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué respondía todo el pueblo después de cada maldición?",
+      "explanation": "El texto dice que todo el pueblo responderá y dirá: Amén.",
+      "bibleReference": "Deuteronomio 27:15",
+      "answers": [
+        { "text": "Amén", "isCorrect": true },
+        { "text": "Jehová lo oiga", "isCorrect": false },
+        { "text": "Jehová es Dios", "isCorrect": false },
+        { "text": "Aleluya", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según una de las maldiciones, ¿quién es maldito en cuanto al ciego?",
+      "explanation": "El texto dice: maldito el que hiciere errar al ciego en el camino, y todo el pueblo responde Amén.",
+      "bibleReference": "Deuteronomio 27:18",
+      "answers": [
+        { "text": "El que no lo lleva a su casa", "isCorrect": false },
+        { "text": "El que lo hace errar en el camino", "isCorrect": true },
+        { "text": "El que le niega el pan", "isCorrect": false },
+        { "text": "El que lo saca a las puertas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué maldición termina el capítulo?",
+      "explanation": "El último versículo dice: maldito el que no confirmare las palabras de esta ley para cumplirlas, y todo el pueblo dirá Amén.",
+      "bibleReference": "Deuteronomio 27:26",
+      "answers": [
+        { "text": "Maldito el que no pagare su voto a Jehová", "isCorrect": false },
+        { "text": "Maldito el que no diere su diezmo al Levita", "isCorrect": false },
+        { "text": "Maldito el que no confirmare las palabras de esta ley", "isCorrect": true },
+        { "text": "Maldito el que no guardare las solemnidades", "isCorrect": false }
+      ]
+    }
+  ]
+}

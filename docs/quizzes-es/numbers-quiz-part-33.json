@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 33",
+  "description": "Diez preguntas sobre Números 33: las estancias de Israel desde Rameses hasta los campos de Moab, y el mandato sobre Canaán.",
+  "slug": "numbers-quiz-part-33",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién escribió las salidas de Israel conforme a sus jornadas, por mandato de Jehová?",
+      "explanation": "Moisés escribió sus salidas conforme a sus jornadas por mandato de Jehová.",
+      "bibleReference": "Números 33:2",
+      "answers": [
+        {
+          "text": "Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Eleazar el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Josué hijo de Nun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde partieron a los quince días del mes primero?",
+      "explanation": "De Rameses partieron en el mes primero, a los quince días del mes, el segundo día de la pascua.",
+      "bibleReference": "Números 33:3",
+      "answers": [
+        {
+          "text": "De Succoth",
+          "isCorrect": false
+        },
+        {
+          "text": "De Etham",
+          "isCorrect": false
+        },
+        {
+          "text": "De Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Rameses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué estaban haciendo los Egipcios cuando Israel salió con mano alta?",
+      "explanation": "Los Egipcios estaban enterrando a los que Jehová había muerto de ellos, a todo primogénito.",
+      "bibleReference": "Números 33:4",
+      "answers": [
+        {
+          "text": "Enterraban a sus primogénitos muertos",
+          "isCorrect": true
+        },
+        {
+          "text": "Perseguían a Israel con sus carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Celebraban una fiesta a sus dioses",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartían sus riquezas entre ellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había en Elim, donde asentaron?",
+      "explanation": "En Elim había doce fuentes de aguas y setenta palmeras, y allí asentaron.",
+      "bibleReference": "Números 33:9",
+      "answers": [
+        {
+          "text": "Setenta fuentes de aguas y doce palmeras",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pozo cavado y un altar de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce fuentes de aguas y setenta palmeras",
+          "isCorrect": true
+        },
+        {
+          "text": "Ninguna agua para que el pueblo bebiera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué lugar no tuvo el pueblo aguas para beber?",
+      "explanation": "Partidos de Alús asentaron en Rephidim, donde el pueblo no tuvo aguas para beber.",
+      "bibleReference": "Números 33:14",
+      "answers": [
+        {
+          "text": "En Mara",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Sin",
+          "isCorrect": false
+        },
+        {
+          "text": "En Dophca",
+          "isCorrect": false
+        },
+        {
+          "text": "En Rephidim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué desierto dice el texto que es Cades?",
+      "explanation": "Partidos de Esion-geber asentaron en el desierto de Zin, que es Cades.",
+      "bibleReference": "Números 33:36",
+      "answers": [
+        {
+          "text": "El desierto de Sin",
+          "isCorrect": false
+        },
+        {
+          "text": "El desierto de Zin",
+          "isCorrect": true
+        },
+        {
+          "text": "El desierto de Etham",
+          "isCorrect": false
+        },
+        {
+          "text": "El desierto de Sinaí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde murió Aarón el sacerdote?",
+      "explanation": "Aarón el sacerdote subió al monte de Hor conforme al dicho de Jehová y allí murió.",
+      "bibleReference": "Números 33:38",
+      "answers": [
+        {
+          "text": "En el monte de Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "En los montes de Abarim",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Hor",
+          "isCorrect": true
+        },
+        {
+          "text": "En el monte de Sepher",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenía Aarón cuando murió en el monte de Hor?",
+      "explanation": "Aarón era de edad de ciento y veinte y tres años cuando murió en el monte de Hor.",
+      "bibleReference": "Números 33:39",
+      "answers": [
+        {
+          "text": "Ciento y veinte y tres años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento y veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y diez años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Entre qué lugares asentaron finalmente junto al Jordán?",
+      "explanation": "Finalmente asentaron junto al Jordán, desde Beth-jesimoth hasta Abel-sitim, en los campos de Moab.",
+      "bibleReference": "Números 33:49",
+      "answers": [
+        {
+          "text": "Desde Dibon-gad hasta el monte Nebo",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Oboth hasta Ije-abarim",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Salmona hasta Phunón",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Beth-jesimoth hasta Abel-sitim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer cuando pasaran el Jordán a la tierra de Canaán?",
+      "explanation": "Debían echar de delante de ellos a todos los moradores del país, destruir todas sus pinturas y sus imágenes de fundición y arruinar todos sus altos.",
+      "bibleReference": "Números 33:52",
+      "answers": [
+        {
+          "text": "Edificar un altar en la ribera del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Echar a los moradores y destruir sus imágenes",
+          "isCorrect": true
+        },
+        {
+          "text": "Hacer pacto con los moradores del país",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartir la tierra entre solo dos tribus",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

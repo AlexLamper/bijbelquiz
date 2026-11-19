@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Levítico 14: la purificación del leproso con las dos avecillas, las ofrendas del octavo día y la plaga en las casas.",
+  "slug": "leviticus-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué debía tomarse para el que se purificaba de la lepra?",
+      "explanation": "El sacerdote mandaba tomar dos avecillas vivas y limpias, palo de cedro, grana e hisopo.",
+      "bibleReference": "Levítico 14:4",
+      "answers": [
+        {
+          "text": "Dos machos de cabrío, aceite y pan sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero, vino y sal del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan sin levadura, vino y grana del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos avecillas vivas, palo de cedro, grana e hisopo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se mataba una de las dos avecillas?",
+      "explanation": "El sacerdote mandaba matar una de las avecillas en un vaso de barro sobre aguas vivas.",
+      "bibleReference": "Levítico 14:5",
+      "answers": [
+        {
+          "text": "Sobre el altar del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "En un vaso de barro sobre aguas vivas",
+          "isCorrect": true
+        },
+        {
+          "text": "Fuera del real, sobre la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta del tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con la avecilla viva después de rociar siete veces al que se purificaba?",
+      "explanation": "Después de rociarlo siete veces y darlo por limpio, el sacerdote soltaba la avecilla viva sobre la haz del campo.",
+      "bibleReference": "Levítico 14:7",
+      "answers": [
+        {
+          "text": "Se daba al sacerdote como porción",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quemaba sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Se soltaba sobre la haz del campo",
+          "isCorrect": true
+        },
+        {
+          "text": "Se guardaba hasta el octavo día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Después de lavarse y raerse todos sus pelos, ¿dónde moraba siete días?",
+      "explanation": "El que se purificaba entraba en el real, pero moraba fuera de su tienda siete días.",
+      "bibleReference": "Levítico 14:8",
+      "answers": [
+        {
+          "text": "Fuera de su tienda",
+          "isCorrect": true
+        },
+        {
+          "text": "Dentro del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "En casa del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía raerse al séptimo día?",
+      "explanation": "Al séptimo día raía todos sus pelos, su cabeza, su barba y las cejas de sus ojos, y lavaba sus vestidos y su carne.",
+      "bibleReference": "Levítico 14:9",
+      "answers": [
+        {
+          "text": "Solo la barba",
+          "isCorrect": false
+        },
+        {
+          "text": "Su cabeza, su barba y las cejas de sus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo el cabello de la cabeza",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada; solo lavaba sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde ponía el sacerdote la sangre de la víctima por la culpa?",
+      "explanation": "El sacerdote la ponía sobre la ternilla de la oreja derecha del que se purificaba, y sobre el pulgar de su mano derecha y el de su pie derecho.",
+      "bibleReference": "Levítico 14:14",
+      "answers": [
+        {
+          "text": "Sobre los cuernos del altar del holocausto",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre su frente y sobre sus dos ojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la oreja derecha y los pulgares derechos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre sus vestidos y sobre su cabeza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué aves podía traer el que era pobre y no alcanzaba su mano a tanto?",
+      "explanation": "El pobre traía un cordero, una décima de flor de harina, un log de aceite y dos tórtolas o dos palominos, lo que alcanzara su mano.",
+      "bibleReference": "Levítico 14:21-22",
+      "answers": [
+        {
+          "text": "Dos tórtolas o dos palominos",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos machos de cabrío",
+          "isCorrect": false
+        },
+        {
+          "text": "Un águila y un cuervo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninguna; traía solo aceite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer el dueño de una casa en que aparecía la plaga?",
+      "explanation": "Venía y daba aviso al sacerdote, diciendo que como plaga había aparecido en su casa.",
+      "bibleReference": "Levítico 14:35",
+      "answers": [
+        {
+          "text": "Lavar las paredes con aguas vivas",
+          "isCorrect": false
+        },
+        {
+          "text": "Salir de la ciudad siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Derribar la casa enseguida",
+          "isCorrect": false
+        },
+        {
+          "text": "Dar aviso al sacerdote",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con las piedras en que estaba la plaga?",
+      "explanation": "El sacerdote mandaba arrancar las piedras en que estaba la plaga y echarlas fuera de la ciudad, en lugar inmundo.",
+      "bibleReference": "Levítico 14:40",
+      "answers": [
+        {
+          "text": "Lavarlas con agua y volverlas a poner",
+          "isCorrect": false
+        },
+        {
+          "text": "Arrancarlas y echarlas fuera de la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Quemarlas dentro de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Cubrirlas con barro nuevo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con la casa si la plaga se había extendido después de ser encostrada?",
+      "explanation": "Si la plaga se había extendido, era lepra roedora, la casa era inmunda y debía ser derribada y sacada fuera de la ciudad, a lugar inmundo.",
+      "bibleReference": "Levítico 14:44-45",
+      "answers": [
+        {
+          "text": "Se rociaba con sangre de avecilla",
+          "isCorrect": false
+        },
+        {
+          "text": "Se cerraba otros siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Se derribaba y se sacaba fuera de la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Se daba por limpia",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

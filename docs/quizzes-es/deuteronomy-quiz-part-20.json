@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Deuteronomio 20: las palabras del sacerdote antes de la batalla, los que volvían a casa y las reglas del cerco.",
+  "slug": "deuteronomy-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Al salir a la guerra y ver caballos, carros y un pueblo más grande, ¿qué se le mandaba a Israel?",
+      "explanation": "El texto dice que no tengan temor de ellos, porque Jehová su Dios está con ellos, el cual los sacó de la tierra de Egipto.",
+      "bibleReference": "Deuteronomio 20:1",
+      "answers": [
+        { "text": "No tener temor de ellos", "isCorrect": true },
+        { "text": "Pedir paz a aquel pueblo", "isCorrect": false },
+        { "text": "Volverse a sus ciudades", "isCorrect": false },
+        { "text": "Contar sus propios carros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué decía el sacerdote que Jehová haría por el pueblo en la batalla?",
+      "explanation": "El sacerdote dice que Jehová anda con ellos para pelear por ellos contra sus enemigos y para salvarlos.",
+      "bibleReference": "Deuteronomio 20:4",
+      "answers": [
+        { "text": "Darles caballos y carros", "isCorrect": false },
+        { "text": "Enviarles un profeta", "isCorrect": false },
+        { "text": "Pelear por ellos para salvarlos", "isCorrect": true },
+        { "text": "Multiplicar su plata y su oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según los oficiales, ¿quién debía volverse a su casa por causa de una casa?",
+      "explanation": "Los oficiales preguntan quién ha edificado casa nueva y no la ha estrenado, y le mandan volverse, porque quizá muera en la batalla y otro la estrene.",
+      "bibleReference": "Deuteronomio 20:5",
+      "answers": [
+        { "text": "El que vendió su casa a un extranjero", "isCorrect": false },
+        { "text": "El que edificó casa nueva y no la estrenó", "isCorrect": true },
+        { "text": "El que no tiene casa propia", "isCorrect": false },
+        { "text": "El que dejó su casa al Levita", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién más podía volverse a su casa, según las palabras de los oficiales?",
+      "explanation": "Los oficiales mandan volverse al que se ha desposado con mujer y no la ha tomado, porque quizá muera en la batalla y otro la tome.",
+      "bibleReference": "Deuteronomio 20:7",
+      "answers": [
+        { "text": "El que tenía muchos hijos pequeños", "isCorrect": false },
+        { "text": "El que cuidaba a su padre anciano", "isCorrect": false },
+        { "text": "El que debía dinero a su prójimo", "isCorrect": false },
+        { "text": "El que se desposó y aún no tomó a su mujer", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por qué debía volverse a su casa el hombre medroso y tierno de corazón?",
+      "explanation": "Los oficiales lo mandan volver para que no apoque el corazón de sus hermanos, como está el suyo.",
+      "bibleReference": "Deuteronomio 20:8",
+      "answers": [
+        { "text": "Para guardar la ciudad mientras peleaban", "isCorrect": false },
+        { "text": "Para no apocar el corazón de sus hermanos", "isCorrect": true },
+        { "text": "Para llevar los despojos a su casa", "isCorrect": false },
+        { "text": "Para servir al sacerdote en el real", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al acercarse a una ciudad para combatirla, ¿qué había que hacer primero?",
+      "explanation": "El texto manda que, cuando te acercares a una ciudad para combatirla, le intimarás la paz.",
+      "bibleReference": "Deuteronomio 20:10",
+      "answers": [
+        { "text": "Intimarle la paz", "isCorrect": true },
+        { "text": "Poner cerco alrededor", "isCorrect": false },
+        { "text": "Talar su arboleda", "isCorrect": false },
+        { "text": "Contar a sus varones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué sucedería si la ciudad respondía con paz y abría sus puertas?",
+      "explanation": "El texto dice que todo el pueblo que en ella fuere hallado le serán tributarios y le servirán.",
+      "bibleReference": "Deuteronomio 20:11",
+      "answers": [
+        { "text": "La ciudad sería quemada igualmente", "isCorrect": false },
+        { "text": "Sus varones morirían a filo de espada", "isCorrect": false },
+        { "text": "Sus despojos se dejarían intactos", "isCorrect": false },
+        { "text": "Sus habitantes serían tributarios y servirían", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "En las ciudades muy lejanas que hacían guerra, ¿qué podía tomar Israel para sí?",
+      "explanation": "El texto dice que solamente las mujeres, los niños, los animales y todos los despojos de la ciudad los tomará para sí, y comerá del despojo.",
+      "bibleReference": "Deuteronomio 20:14",
+      "answers": [
+        { "text": "Nada, porque todo sería destruido", "isCorrect": false },
+        { "text": "Solo las armas de los enemigos", "isCorrect": false },
+        { "text": "Las mujeres, los niños y los despojos", "isCorrect": true },
+        { "text": "Solo la plata y el oro de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se mandaba acerca de las ciudades de los pueblos que Jehová daba por heredad?",
+      "explanation": "El texto manda no dejar con vida ninguna persona en ellas, para que no enseñen a Israel a hacer según sus abominaciones.",
+      "bibleReference": "Deuteronomio 20:16-18",
+      "answers": [
+        { "text": "No dejar con vida ninguna persona", "isCorrect": true },
+        { "text": "Intimarles la paz primero", "isCorrect": false },
+        { "text": "Tomarlas como tributarias", "isCorrect": false },
+        { "text": "Dejar en ellas a los Levitas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Durante el cerco de una ciudad, ¿qué no debía hacerse con los árboles?",
+      "explanation": "El texto prohíbe destruir la arboleda metiendo en ella hacha, porque de ella se come, y añade que el árbol del campo no es hombre para venir contra ti.",
+      "bibleReference": "Deuteronomio 20:19",
+      "answers": [
+        { "text": "No poner cerco a la ciudad muchos días", "isCorrect": false },
+        { "text": "No comer de su fruto durante el cerco", "isCorrect": false },
+        { "text": "No acercarse a ellos de noche", "isCorrect": false },
+        { "text": "No talar los árboles de los que se come", "isCorrect": true }
+      ]
+    }
+  ]
+}

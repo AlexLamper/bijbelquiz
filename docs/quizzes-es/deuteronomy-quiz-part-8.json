@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Deuteronomio 8: los cuarenta años en el desierto, el maná, la buena tierra y el aviso de no olvidar a Jehová en la abundancia.",
+  "slug": "deuteronomy-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años dice el texto que Jehová los trajo por el desierto?",
+      "explanation": "Debían acordarse de todo el camino por donde Jehová su Dios los había traído estos cuarenta años en el desierto, para afligirlos y probarlos.",
+      "bibleReference": "Deuteronomio 8:2",
+      "answers": [
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué los sustentó en el desierto y qué les quería hacer saber con ello?",
+      "explanation": "Los sustentó con maná, comida que no conocían, para hacerles saber que el hombre no vivirá de solo pan, mas de todo lo que sale de la boca de Jehová.",
+      "bibleReference": "Deuteronomio 8:3",
+      "answers": [
+        {
+          "text": "Con trigo de Egipto, para probar su paciencia",
+          "isCorrect": false
+        },
+        {
+          "text": "Con carne de sus rebaños, para enseñarles a dar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con maná, para que supieran que no se vive de solo pan",
+          "isCorrect": true
+        },
+        {
+          "text": "Con higos y granados, para que se alegrasen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto sobre su vestido y su pie en aquellos años?",
+      "explanation": "Dice que su vestido nunca se envejeció sobre él ni se le hinchó el pie por estos cuarenta años.",
+      "bibleReference": "Deuteronomio 8:4",
+      "answers": [
+        {
+          "text": "Que el vestido se rompió y fue renovado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el vestido no se envejeció ni el pie se hinchó",
+          "isCorrect": true
+        },
+        {
+          "text": "Que anduvieron descalzos todo el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los vestidos los dieron los extranjeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto el modo en que Jehová lo castiga?",
+      "explanation": "Debía reconocer en su corazón que, como castiga el hombre a su hijo, así Jehová su Dios lo castiga.",
+      "bibleReference": "Deuteronomio 8:5",
+      "answers": [
+        {
+          "text": "Como el amo castiga a su siervo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el juez castiga al homicida",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el rey castiga a las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el hombre castiga a su hijo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué frutos nombra el texto al describir la buena tierra?",
+      "explanation": "Es tierra de trigo y cebada, de vides, higueras y granados; tierra de olivas, de aceite y de miel.",
+      "bibleReference": "Deuteronomio 8:8",
+      "answers": [
+        {
+          "text": "Trigo, cebada, vides, higueras, granados y olivas",
+          "isCorrect": true
+        },
+        {
+          "text": "Dátiles, nueces, lino y especias",
+          "isCorrect": false
+        },
+        {
+          "text": "Manzanas, melones, puerros y ajos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mostaza, comino, eneldo y azafrán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de las piedras y de los montes de aquella tierra?",
+      "explanation": "Es tierra cuyas piedras son hierro, y de sus montes cortaría metal.",
+      "bibleReference": "Deuteronomio 8:9",
+      "answers": [
+        {
+          "text": "Sus piedras son blancas y sus montes altos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus piedras son hierro y de sus montes se corta metal",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus piedras son de sal y sus montes secos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus piedras sirven para altares y portadas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había en el desierto grande y espantoso por donde lo hizo caminar?",
+      "explanation": "Lo hizo caminar por un desierto grande y espantoso, de serpientes ardientes, de escorpiones y de sed, donde ningún agua había, y le sacó agua de la roca del pedernal.",
+      "bibleReference": "Deuteronomio 8:15",
+      "answers": [
+        {
+          "text": "Leones, osos y lobos del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Avispas, moscas y ranas",
+          "isCorrect": false
+        },
+        {
+          "text": "Tinieblas, nube y oscuridad",
+          "isCorrect": false
+        },
+        {
+          "text": "Serpientes ardientes, escorpiones y sed",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué peligro hay de decir en su corazón cuando todo se le aumente?",
+      "explanation": "El peligro es decir en su corazón: Mi poder y la fortaleza de mi mano me han traído esta riqueza.",
+      "bibleReference": "Deuteronomio 8:17",
+      "answers": [
+        {
+          "text": "Que sus padres le dejaron esa heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los dioses de la tierra lo bendijeron",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su poder y su mano le dieron esa riqueza",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el rey de Egipto le pagó ese bien",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién da el poder para hacer las riquezas, según el texto?",
+      "explanation": "Debía acordarse de Jehová su Dios, porque él le da el poder para hacer las riquezas, a fin de confirmar su pacto que juró a sus padres.",
+      "bibleReference": "Deuteronomio 8:18",
+      "answers": [
+        {
+          "text": "La fortaleza de su propia mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Las gentes de aquella tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los montes de donde corta metal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les anuncia si se olvidan de Jehová y andan en pos de dioses ajenos?",
+      "explanation": "Protesta contra ellos que de cierto perecerán, como las gentes que Jehová destruirá delante de ellos.",
+      "bibleReference": "Deuteronomio 8:19-20",
+      "answers": [
+        {
+          "text": "Que de cierto perecerán",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volverán cuarenta años al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que servirán a los reyes de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tendrán lluvia por siete años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

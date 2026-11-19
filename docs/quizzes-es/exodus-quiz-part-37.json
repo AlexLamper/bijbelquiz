@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 37",
+  "description": "Diez preguntas sobre Éxodo 37: Bezaleel hace el arca, la mesa, el candelero de oro y el altar del perfume.",
+  "slug": "exodus-quiz-part-37",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién hizo el arca de madera de Sittim?",
+      "explanation": "Éxodo 37:1 dice que Bezaleel hizo el arca de madera de Sittim.",
+      "bibleReference": "Éxodo 37:1",
+      "answers": [
+        {
+          "text": "Aholiab",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Bezaleel",
+          "isCorrect": true
+        },
+        {
+          "text": "Moisés",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo cubrió el arca, según el versículo 2?",
+      "explanation": "Éxodo 37:2 dice que la cubrió de oro puro por de dentro y por de fuera, y le hizo una cornisa de oro en derredor.",
+      "bibleReference": "Éxodo 37:2",
+      "answers": [
+        {
+          "text": "De oro puro por dentro y por fuera",
+          "isCorrect": true
+        },
+        {
+          "text": "De plata por dentro solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "De metal por fuera solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "De cueros de tejones por fuera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos anillos de oro de fundición le hizo al arca?",
+      "explanation": "Éxodo 37:3 dice que le hizo de fundición cuatro anillos de oro a sus cuatro esquinas, dos anillos a un lado y dos al otro.",
+      "bibleReference": "Éxodo 37:3",
+      "answers": [
+        {
+          "text": "Dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué metió las varas por los anillos del arca?",
+      "explanation": "Éxodo 37:5 dice que metió las varas por los anillos a los lados del arca, para llevar el arca.",
+      "bibleReference": "Éxodo 37:5",
+      "answers": [
+        {
+          "text": "Para afirmar la cubierta",
+          "isCorrect": false
+        },
+        {
+          "text": "Para llevar el arca",
+          "isCorrect": true
+        },
+        {
+          "text": "Para colgar el velo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para medir la cubierta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hacia dónde miraban los rostros de los dos querubines?",
+      "explanation": "Éxodo 37:9 dice que los querubines extendían sus alas por encima y que sus rostros estaban el uno enfrente del otro, hacia la cubierta.",
+      "bibleReference": "Éxodo 37:9",
+      "answers": [
+        {
+          "text": "Hacia la puerta del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacia el velo del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "El uno enfrente del otro, hacia la cubierta",
+          "isCorrect": true
+        },
+        {
+          "text": "Cada uno hacia su propio lado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto medía de longitud la mesa de madera de Sittim?",
+      "explanation": "Éxodo 37:10 dice que la mesa tenía dos codos de longitud, un codo de anchura y codo y medio de altura.",
+      "bibleReference": "Éxodo 37:10",
+      "answers": [
+        {
+          "text": "Dos codos y medio",
+          "isCorrect": false
+        },
+        {
+          "text": "Un codo",
+          "isCorrect": false
+        },
+        {
+          "text": "Codo y medio",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos codos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anchura tenía la moldura que hizo alrededor de la mesa?",
+      "explanation": "Éxodo 37:12 dice que le hizo una moldura alrededor, del ancho de una mano, y a esa moldura hizo la cornisa de oro en circunferencia.",
+      "bibleReference": "Éxodo 37:12",
+      "answers": [
+        {
+          "text": "El ancho de una mano",
+          "isCorrect": true
+        },
+        {
+          "text": "El ancho de un codo",
+          "isCorrect": false
+        },
+        {
+          "text": "El ancho de un palmo",
+          "isCorrect": false
+        },
+        {
+          "text": "El ancho de dos dedos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos brazos salían de los lados del candelero?",
+      "explanation": "Éxodo 37:18 dice que de los lados del candelero salían seis brazos, tres de un lado y tres del otro.",
+      "bibleReference": "Éxodo 37:18",
+      "answers": [
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De cuánto oro puro hizo el candelero con todos sus vasos?",
+      "explanation": "Éxodo 37:24 dice que de un talento de oro puro lo hizo, con todos sus vasos.",
+      "bibleReference": "Éxodo 37:24",
+      "answers": [
+        {
+          "text": "De cien siclos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De dos talentos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De medio talento de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De un talento de oro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo de obra de perfumador?",
+      "explanation": "Éxodo 37:29 dice que hizo el aceite santo de la unción y el fino perfume aromático, de obra de perfumador.",
+      "bibleReference": "Éxodo 37:29",
+      "answers": [
+        {
+          "text": "El aceite de la unción y el perfume aromático",
+          "isCorrect": true
+        },
+        {
+          "text": "Las varas para llevar la mesa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los corchetes de oro del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las piedras de onix para el ephod",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

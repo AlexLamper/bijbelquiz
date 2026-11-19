@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre Levítico 27: la estimación de los votos en siclos de plata, el animal consagrado, la tierra santificada y las décimas.",
+  "slug": "leviticus-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuál era la estimación del varón de veinte a sesenta años?",
+      "explanation": "El versículo dice que la estimación del varón de veinte a sesenta años será de cincuenta siclos de plata, según el siclo del santuario.",
+      "bibleReference": "Levítico 27:3",
+      "answers": [
+        {
+          "text": "Cincuenta siclos de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Quince siclos de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la estimación de la hembra de veinte a sesenta años?",
+      "explanation": "El versículo dice que si fuere hembra, la estimación será de treinta siclos.",
+      "bibleReference": "Levítico 27:4",
+      "answers": [
+        {
+          "text": "Cincuenta siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta siclos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco siclos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con quien era más pobre que la estimación?",
+      "explanation": "El versículo dice que comparecerá ante el sacerdote y el sacerdote le pondrá tasa conforme a la facultad del votante.",
+      "bibleReference": "Levítico 27:8",
+      "answers": [
+        {
+          "text": "Quedaba libre de su voto",
+          "isCorrect": false
+        },
+        {
+          "text": "El sacerdote le ponía tasa",
+          "isCorrect": true
+        },
+        {
+          "text": "Pagaba la mitad del precio",
+          "isCorrect": false
+        },
+        {
+          "text": "Daba un animal en su lugar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasaba si se permutaba un animal consagrado por otro?",
+      "explanation": "El versículo dice que no será mudado ni trocado, y que si se permutare un animal por otro, él y el dado en cambio serán sagrados.",
+      "bibleReference": "Levítico 27:10",
+      "answers": [
+        {
+          "text": "El trueque era rechazado",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagaba el quinto de su valor",
+          "isCorrect": false
+        },
+        {
+          "text": "El animal volvía a su dueño",
+          "isCorrect": false
+        },
+        {
+          "text": "Ambos quedaban sagrados",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía añadirse para redimir lo que el sacerdote había apreciado?",
+      "explanation": "El versículo dice que si lo hubieren de redimir, añadirán su quinto sobre la valuación.",
+      "bibleReference": "Levítico 27:13",
+      "answers": [
+        {
+          "text": "Su décima parte",
+          "isCorrect": false
+        },
+        {
+          "text": "El doble del precio",
+          "isCorrect": false
+        },
+        {
+          "text": "Su quinto sobre la valuación",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco siclos por cabeza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Conforme a qué se estimaba la tierra que alguno santificaba a Jehová?",
+      "explanation": "El versículo dice que la estimación será conforme a su sembradura: un omer de sembradura de cebada se apreciará en cincuenta siclos de plata.",
+      "bibleReference": "Levítico 27:16",
+      "answers": [
+        {
+          "text": "Conforme a su sembradura",
+          "isCorrect": true
+        },
+        {
+          "text": "Conforme a su anchura",
+          "isCorrect": false
+        },
+        {
+          "text": "Conforme al número de sus árboles",
+          "isCorrect": false
+        },
+        {
+          "text": "Conforme al precio que pagó por ella",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién sería la tierra consagrada que no fue redimida, cuando saliere en el jubileo?",
+      "explanation": "El versículo dice que la tierra será santa a Jehová, como tierra consagrada, y que la posesión de ella será del sacerdote.",
+      "bibleReference": "Levítico 27:21",
+      "answers": [
+        {
+          "text": "Del que la compró",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Del que la santificó",
+          "isCorrect": false
+        },
+        {
+          "text": "Del sacerdote",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 26, ¿de quién es el primogénito de los animales?",
+      "explanation": "El versículo dice que nadie santificará el primogénito de los animales, porque por la primogenitura es de Jehová, sea buey u oveja.",
+      "bibleReference": "Levítico 27:26",
+      "answers": [
+        {
+          "text": "Del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Del dueño del animal",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parte de las vacas y las ovejas que pasan bajo la vara era consagrada?",
+      "explanation": "El versículo dice que toda décima de vacas o de ovejas, de todo lo que pasa bajo la vara, será consagrada a Jehová.",
+      "bibleReference": "Levítico 27:32",
+      "answers": [
+        {
+          "text": "La primera",
+          "isCorrect": false
+        },
+        {
+          "text": "La mejor",
+          "isCorrect": false
+        },
+        {
+          "text": "La décima",
+          "isCorrect": true
+        },
+        {
+          "text": "La quinta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde ordenó Jehová estos mandamientos a Moisés?",
+      "explanation": "El versículo dice que estos son los mandamientos que ordenó Jehová a Moisés, para los hijos de Israel, en el monte de Sinaí.",
+      "bibleReference": "Levítico 27:34",
+      "answers": [
+        {
+          "text": "En el monte de Sinaí",
+          "isCorrect": true
+        },
+        {
+          "text": "En el tabernáculo del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Parán",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Egipto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

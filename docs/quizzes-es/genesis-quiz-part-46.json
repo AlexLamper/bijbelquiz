@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 46",
+  "description": "Diez preguntas sobre Génesis 46: la visión en Beer-seba, los nombres de los que bajaron a Egipto y el encuentro en Gosén.",
+  "slug": "genesis-quiz-part-46",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A dónde vino Israel y qué hizo allí al partir con todo lo que tenía?",
+      "explanation": "Israel vino a Beer-seba y ofreció sacrificios al Dios de su padre Isaac.",
+      "bibleReference": "Génesis 46:1",
+      "answers": [
+        {
+          "text": "A Beer-seba, y ofreció sacrificios",
+          "isCorrect": true
+        },
+        {
+          "text": "A Gosén, y edificó una casa",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hebrón, y cavó un pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sichêm, y plantó un árbol",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo habló Dios a Israel y qué le dijo primero?",
+      "explanation": "Dios habló a Israel en visiones de noche y le dijo: Jacob, Jacob; y él respondió: Heme aquí.",
+      "bibleReference": "Génesis 46:2",
+      "answers": [
+        {
+          "text": "Por medio de un ángel al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "En un sueño de siete vacas gordas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con voz desde el fuego del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "En visiones de noche, llamándolo por su nombre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según lo que Dios le dijo, ¿quién pondría su mano sobre los ojos de Jacob?",
+      "explanation": "Dios le dijo que descendería con él a Egipto y le haría volver, y que José pondría su mano sobre sus ojos.",
+      "bibleReference": "Génesis 46:4",
+      "answers": [
+        {
+          "text": "Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "José",
+          "isCorrect": true
+        },
+        {
+          "text": "Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los hijos de Rubén?",
+      "explanation": "El texto nombra a los hijos de Rubén: Hanoch, Phallu, Hezrón y Carmi.",
+      "bibleReference": "Génesis 46:9",
+      "answers": [
+        {
+          "text": "Gersón, Coath y Merari",
+          "isCorrect": false
+        },
+        {
+          "text": "Jemuel, Jamín y Ohad",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanoch, Phallu, Hezrón y Carmi",
+          "isCorrect": true
+        },
+        {
+          "text": "Sered, Elón y Jahleel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los hijos de Leví?",
+      "explanation": "El texto nombra a los hijos de Leví: Gersón, Coath y Merari.",
+      "bibleReference": "Génesis 46:11",
+      "answers": [
+        {
+          "text": "Gersón, Coath y Merari",
+          "isCorrect": true
+        },
+        {
+          "text": "Er, Onán y Sela",
+          "isCorrect": false
+        },
+        {
+          "text": "Thola, Phua y Job",
+          "isCorrect": false
+        },
+        {
+          "text": "Husim, Guni y Jezer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas eran en total las almas de los hijos e hijas de Lea?",
+      "explanation": "El texto dice que los hijos de Lea, con su hija Dina, eran treinta y tres las almas todas de sus hijos e hijas.",
+      "bibleReference": "Génesis 46:15",
+      "answers": [
+        {
+          "text": "Diez y seis almas",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y tres almas",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce almas",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte almas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los hijos de Rachêl, mujer de Jacob?",
+      "explanation": "El texto dice que los hijos de Rachêl, mujer de Jacob, eran José y Benjamín.",
+      "bibleReference": "Génesis 46:19",
+      "answers": [
+        {
+          "text": "Manasés y Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan y Nephtalí",
+          "isCorrect": false
+        },
+        {
+          "text": "Gad y Aser",
+          "isCorrect": false
+        },
+        {
+          "text": "José y Benjamín",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas almas de la casa de Jacob entraron en Egipto?",
+      "explanation": "El texto dice que todas las almas de la casa de Jacob que entraron en Egipto fueron setenta.",
+      "bibleReference": "Génesis 46:27",
+      "answers": [
+        {
+          "text": "Sesenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Cincuenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a quién envió Jacob delante de sí hacia José?",
+      "explanation": "Jacob envió a Judá delante de sí a José, para que le viniese a ver a Gosén.",
+      "bibleReference": "Génesis 46:28",
+      "answers": [
+        {
+          "text": "A Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "A Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "A Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían responder a Faraón cuando les preguntase por su oficio?",
+      "explanation": "José les dijo que respondiesen que sus siervos habían sido hombres de ganadería desde su mocedad, para que morasen en la tierra de Gosén.",
+      "bibleReference": "Génesis 46:33-34",
+      "answers": [
+        {
+          "text": "Que eran hombres de ganadería",
+          "isCorrect": true
+        },
+        {
+          "text": "Que eran labradores de trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran siervos de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran mercaderes de Canaán",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

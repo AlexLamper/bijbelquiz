@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Génesis 23: la muerte de Sara y la compra de la cueva de Macpela a los hijos de Heth.",
+  "slug": "genesis-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años vivió Sara?",
+      "explanation": "La vida de Sara fue de ciento veintisiete años.",
+      "bibleReference": "Génesis 23:1",
+      "answers": [
+        {
+          "text": "Ciento veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Noventa y nueve años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento veintisiete años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento treinta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde murió Sara?",
+      "explanation": "Sara murió en Kiriath-arba, que es Hebrón, en la tierra de Canaán, y Abraham vino a hacer el duelo y a llorarla.",
+      "bibleReference": "Génesis 23:2",
+      "answers": [
+        {
+          "text": "En Kiriath-arba, que es Hebrón",
+          "isCorrect": true
+        },
+        {
+          "text": "En Beer-seba de los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gerar, junto a Shur",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de Mamre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Abraham a los hijos de Heth?",
+      "explanation": "Abraham les habló y les pidió que le diesen heredad de sepultura con ellos, para sepultar a su muerto.",
+      "bibleReference": "Génesis 23:4",
+      "answers": [
+        {
+          "text": "Agua para su ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Permiso para edificar un altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ciudad donde habitar",
+          "isCorrect": false
+        },
+        {
+          "text": "Una heredad de sepultura entre ellos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondieron los hijos de Heth?",
+      "explanation": "Le respondieron que era un príncipe de Dios entre ellos y que sepultase a su muerto en lo mejor de sus sepulturas, pues ninguno se lo impediría.",
+      "bibleReference": "Génesis 23:6",
+      "answers": [
+        {
+          "text": "Que saliese de aquella tierra y de su parentela",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era un príncipe de Dios y sepultase en lo mejor de sus sepulturas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que pagase primero cuatrocientos siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ellos no tenían sepulturas para darle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué cueva pidió Abraham, y por medio de quién?",
+      "explanation": "Pidió que intercediesen por él con Ephrón, hijo de Zohar, para que le diese la cueva de Macpela, que estaba al cabo de su heredad, por su justo precio.",
+      "bibleReference": "Génesis 23:8-9",
+      "answers": [
+        {
+          "text": "La cueva de Mamre, de Aner su confederado",
+          "isCorrect": false
+        },
+        {
+          "text": "El pozo de Beer-seba, de Abimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "La cueva de Macpela, de Ephrón hijo de Zohar",
+          "isCorrect": true
+        },
+        {
+          "text": "La heredad de Zoar, de Lot su sobrino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofreció Ephrón a Abraham delante de los hijos de su pueblo?",
+      "explanation": "Ephrón le respondió que le daba la heredad y también la cueva que estaba en ella, delante de los hijos de su pueblo, para que sepultase a su muerto.",
+      "bibleReference": "Génesis 23:11",
+      "answers": [
+        {
+          "text": "Venderle solamente la cueva",
+          "isCorrect": false
+        },
+        {
+          "text": "Darle la heredad y también la cueva",
+          "isCorrect": true
+        },
+        {
+          "text": "Cambiarla por ovejas y vacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Prestarle la cueva por un tiempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué insistió Abraham en hacer, en oídos del pueblo de la tierra?",
+      "explanation": "Abraham respondió a Ephrón que le rogaba que lo oyese: él daría el precio de la heredad, y así sepultaría allí a su muerto.",
+      "bibleReference": "Génesis 23:13",
+      "answers": [
+        {
+          "text": "Pagar el precio de la heredad",
+          "isCorrect": true
+        },
+        {
+          "text": "Aceptar la heredad como regalo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sepultar a Sara en Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperar hasta el año siguiente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto pesó Abraham a Ephrón por la heredad?",
+      "explanation": "Abraham se convino con Ephrón y le pesó cuatrocientos siclos de plata, de buena ley entre mercaderes, oyéndolo los hijos de Heth.",
+      "bibleReference": "Génesis 23:16",
+      "answers": [
+        {
+          "text": "Mil monedas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien siclos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatrocientos siclos de plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Ante quiénes quedó la heredad en posesión de Abraham?",
+      "explanation": "La heredad quedó por de Abraham en posesión a vista de los hijos de Heth y de todos los que entraban por la puerta de la ciudad.",
+      "bibleReference": "Génesis 23:18",
+      "answers": [
+        {
+          "text": "Ante Abimelech, rey de Gerar, y Phicol su príncipe",
+          "isCorrect": false
+        },
+        {
+          "text": "A vista de los hijos de Heth y de los que entraban por la puerta de la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Ante los hijos de Lot y todos los moradores de Zoar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ante el Cananeo y el Pherezeo que habitaban la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde sepultó Abraham a Sara su mujer?",
+      "explanation": "Abraham sepultó a Sara su mujer en la cueva de la heredad de Macpela, enfrente de Mamre, que es Hebrón, en la tierra de Canaán.",
+      "bibleReference": "Génesis 23:19",
+      "answers": [
+        {
+          "text": "Debajo de un árbol en el desierto de Shur",
+          "isCorrect": false
+        },
+        {
+          "text": "En Beer-seba, junto al bosque que plantó",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cueva de la heredad de Macpela, enfrente de Mamre",
+          "isCorrect": true
+        },
+        {
+          "text": "En la ciudad de Zoar, en la llanura",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

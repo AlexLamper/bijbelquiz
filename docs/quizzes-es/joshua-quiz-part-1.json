@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Josué 1: Jehová manda a Josué pasar el Jordán, esforzarse y ser valiente, y el pueblo le responde.",
+  "slug": "joshua-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo describe el primer versículo a Josué hijo de Nun?",
+      "explanation": "El versículo dice que, después de la muerte de Moisés, Jehová habló a Josué hijo de Nun, ministro de Moisés.",
+      "bibleReference": "Josué 1:1",
+      "answers": [
+        {
+          "text": "Como sacerdote de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Como príncipe de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Como ministro de Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Como escriba de la ley",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Josué que pasara con todo el pueblo?",
+      "explanation": "Jehová le dijo que se levantara y pasara este Jordán, él y todo el pueblo, a la tierra que da a los hijos de Israel.",
+      "bibleReference": "Josué 1:2",
+      "answers": [
+        {
+          "text": "El Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "El mar Bermejo",
+          "isCorrect": false
+        },
+        {
+          "text": "El desierto de Zin",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte Nebo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué lugares dijo Jehová que les había entregado?",
+      "explanation": "El versículo dice que les ha entregado, como lo había dicho a Moisés, todo lugar que pisare la planta de su pie.",
+      "bibleReference": "Josué 1:3",
+      "answers": [
+        {
+          "text": "Las ciudades amuralladas",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo lugar que pise su pie",
+          "isCorrect": true
+        },
+        {
+          "text": "Las tierras al oriente del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Los montes y valles de Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿hasta qué gran río llegaría su término?",
+      "explanation": "El versículo dice que desde el desierto y el Líbano hasta el gran río Eufrates, y hasta la gran mar del poniente, será su término.",
+      "bibleReference": "Josué 1:4",
+      "answers": [
+        {
+          "text": "Hasta el río de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el río Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el río de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el gran río Eufrates",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le prometió Jehová a Josué en el versículo 5?",
+      "explanation": "Jehová le dijo que, como fue con Moisés, será con él, y que no lo dejará ni lo desamparará.",
+      "bibleReference": "Josué 1:5",
+      "answers": [
+        {
+          "text": "Que no lo dejará ni desamparará",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le dará un rey por ayuda",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le mostrará la tierra de lejos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le hablará cara a cara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer Josué de día y de noche con el libro de la ley?",
+      "explanation": "El versículo dice que el libro de aquesta ley nunca se apartará de su boca, sino que de día y de noche meditará en él.",
+      "bibleReference": "Josué 1:8",
+      "answers": [
+        {
+          "text": "Leerlo al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardarlo en el arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Meditar en él",
+          "isCorrect": true
+        },
+        {
+          "text": "Copiarlo de su mano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según los oficiales, ¿dentro de cuántos días pasaría el pueblo el Jordán?",
+      "explanation": "Los oficiales mandaron al pueblo prevenirse de comida, porque dentro de tres días pasarían el Jordán para poseer la tierra.",
+      "bibleReference": "Josué 1:11",
+      "answers": [
+        {
+          "text": "Dentro de siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro de tres días",
+          "isCorrect": true
+        },
+        {
+          "text": "Dentro de un día",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro de cuarenta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes debían quedar en la tierra de esta parte del Jordán?",
+      "explanation": "El versículo dice que sus mujeres, sus niños y sus bestias quedarían en la tierra que Moisés les había dado, mientras los valientes pasaban armados.",
+      "bibleReference": "Josué 1:14",
+      "answers": [
+        {
+          "text": "Los ancianos y los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los valientes y fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los extranjeros del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las mujeres, los niños y las bestias",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondieron a Josué los que le hablaron?",
+      "explanation": "Ellos respondieron que harían todas las cosas que les había mandado, y que irían adonde quiera que los mandara.",
+      "bibleReference": "Josué 1:16",
+      "answers": [
+        {
+          "text": "Que harían todo lo que mandara",
+          "isCorrect": true
+        },
+        {
+          "text": "Que esperarían a los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volverían a sus ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pedirían señal a Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía pasar, según ellos, con el rebelde a su mandamiento?",
+      "explanation": "El versículo dice que cualquiera que fuere rebelde a su mandamiento y no obedeciere a sus palabras, que muera.",
+      "bibleReference": "Josué 1:18",
+      "answers": [
+        {
+          "text": "Que sea desterrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pague con sus bienes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que muera",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sirva a los levitas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

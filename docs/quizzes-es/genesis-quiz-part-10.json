@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Génesis 10: las generaciones de los hijos de Noé y las naciones que de ellos salieron.",
+  "slug": "genesis-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quiénes son las generaciones que enumera este capítulo?",
+      "explanation": "El capítulo empieza diciendo que estas son las generaciones de los hijos de Noé: Sem, Châm y Japhet.",
+      "bibleReference": "Génesis 10:1",
+      "answers": [
+        {
+          "text": "De Caín, Abel y Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "De Sem, Châm y Japhet",
+          "isCorrect": true
+        },
+        {
+          "text": "De Abram, Nachôr y Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "De Cush, Mizraim y Phut",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál de estos nombres es hijo de Japhet?",
+      "explanation": "Los hijos de Japhet fueron Gomer, Magog, Madai, Javán, Tubal, Meshech y Tiras.",
+      "bibleReference": "Génesis 10:2",
+      "answers": [
+        {
+          "text": "Cush",
+          "isCorrect": false
+        },
+        {
+          "text": "Elam",
+          "isCorrect": false
+        },
+        {
+          "text": "Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Gomer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los hijos de Javán?",
+      "explanation": "El texto dice que los hijos de Javán fueron Elisa, Tarsis, Kittim y Dodanim.",
+      "bibleReference": "Génesis 10:4",
+      "answers": [
+        {
+          "text": "Elisa, Tarsis, Kittim y Dodanim",
+          "isCorrect": true
+        },
+        {
+          "text": "Ashkenaz, Riphat y Togorma",
+          "isCorrect": false
+        },
+        {
+          "text": "Seba, Havila y Sabta",
+          "isCorrect": false
+        },
+        {
+          "text": "Uz, Hul, Gether y Mas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los hijos de Châm?",
+      "explanation": "El texto dice que los hijos de Châm fueron Cush, Mizraim, Phut y Canaán.",
+      "bibleReference": "Génesis 10:6",
+      "answers": [
+        {
+          "text": "Elam, Assur, Lud y Aram",
+          "isCorrect": false
+        },
+        {
+          "text": "Gomer, Magog, Madai y Javán",
+          "isCorrect": false
+        },
+        {
+          "text": "Cush, Mizraim, Phut y Canaán",
+          "isCorrect": true
+        },
+        {
+          "text": "Sheba, Dedán y Raama",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Nimrod?",
+      "explanation": "Cush engendró a Nimrod, que comenzó a ser poderoso en la tierra y fue vigoroso cazador delante de Jehová.",
+      "bibleReference": "Génesis 10:8-9",
+      "answers": [
+        {
+          "text": "Varón justo y perfecto en sus días",
+          "isCorrect": false
+        },
+        {
+          "text": "Vigoroso cazador delante de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Padre de los que habitan en tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Acicalador de toda obra de metal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál fue la cabecera del reino de Nimrod?",
+      "explanation": "El texto dice que la cabecera de su reino fue Babel, con Erech, Accad y Calneh, en la tierra de Shinar.",
+      "bibleReference": "Génesis 10:10",
+      "answers": [
+        {
+          "text": "Nínive",
+          "isCorrect": false
+        },
+        {
+          "text": "Sidón",
+          "isCorrect": false
+        },
+        {
+          "text": "Babel",
+          "isCorrect": true
+        },
+        {
+          "text": "Gaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién edificó Nínive, según el texto?",
+      "explanation": "De aquella tierra salió Assur, y edificó Nínive, Rehoboth y Calah.",
+      "bibleReference": "Génesis 10:11",
+      "answers": [
+        {
+          "text": "Assur",
+          "isCorrect": true
+        },
+        {
+          "text": "Nimrod",
+          "isCorrect": false
+        },
+        {
+          "text": "Cush",
+          "isCorrect": false
+        },
+        {
+          "text": "Mizraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De cuál de los hijos de Mizraim salieron los Filisteos?",
+      "explanation": "El texto dice que de Casluim salieron los Filisteos.",
+      "bibleReference": "Génesis 10:14",
+      "answers": [
+        {
+          "text": "De Caphtorim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Pathrusim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ludim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Casluim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el primogénito de Canaán?",
+      "explanation": "Canaán engendró a Sidón, su primogénito, y a Heth.",
+      "bibleReference": "Génesis 10:15",
+      "answers": [
+        {
+          "text": "Heth",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerar",
+          "isCorrect": false
+        },
+        {
+          "text": "Sidón",
+          "isCorrect": true
+        },
+        {
+          "text": "Gaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué recibió el nombre de Peleg uno de los hijos de Heber?",
+      "explanation": "A Heber le nacieron dos hijos: uno se llamó Peleg, porque en sus días fue repartida la tierra, y su hermano Joctán.",
+      "bibleReference": "Génesis 10:25",
+      "answers": [
+        {
+          "text": "Porque fue el mayor de los hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque en sus días fue repartida la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque habitó en el monte del oriente",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque engendró a trece hijos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

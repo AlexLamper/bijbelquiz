@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Josué 17: la suerte de Manasés, las hijas de Salphaad y la queja de los hijos de José ante Josué.",
+  "slug": "joshua-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿por qué tuvo también suerte la tribu de Manasés?",
+      "explanation": "El texto dice que la tribu de Manasés tuvo suerte porque Manasés fue primogénito de José.",
+      "bibleReference": "Josué 17:1",
+      "answers": [
+        {
+          "text": "Porque era la tribu más numerosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque había peleado al otro lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los Levitas no tomaron parte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Manasés fue el primogénito de José",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el primogénito de Manasés y padre de Galaad?",
+      "explanation": "Machîr, primogénito de Manasés y padre de Galaad, fue hombre de guerra y tuvo a Galaad y a Basán.",
+      "bibleReference": "Josué 17:1",
+      "answers": [
+        {
+          "text": "Hepher",
+          "isCorrect": false
+        },
+        {
+          "text": "Machîr",
+          "isCorrect": true
+        },
+        {
+          "text": "Abiezer",
+          "isCorrect": false
+        },
+        {
+          "text": "Semida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Salphaad, hijo de Hepher?",
+      "explanation": "El texto dice que Salphaad, hijo de Hepher, no tuvo hijos, sino hijas.",
+      "bibleReference": "Josué 17:3",
+      "answers": [
+        {
+          "text": "Tuvo diez hijos varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Murió sin heredad en Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "No tuvo hijos, sino hijas",
+          "isCorrect": true
+        },
+        {
+          "text": "Fue hombre de guerra en Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaban las hijas de Salphaad?",
+      "explanation": "Sus nombres son Maala, Noa, Hogla, Milchâ y Tirsa.",
+      "bibleReference": "Josué 17:3",
+      "answers": [
+        {
+          "text": "Maala, Noa, Hogla, Milchâ y Tirsa",
+          "isCorrect": true
+        },
+        {
+          "text": "Abiezer, Helec, Esriel y Sichêm",
+          "isCorrect": false
+        },
+        {
+          "text": "Hepher, Semida y Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth-san, Ibleam y Endor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Ante quiénes vinieron ellas a pedir herencia?",
+      "explanation": "Vinieron delante de Eleazar sacerdote, de Josué hijo de Nun y de los príncipes, y recibieron herencia entre los hermanos de su padre.",
+      "bibleReference": "Josué 17:4",
+      "answers": [
+        {
+          "text": "Ante Moisés y los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Ante Eleazar, Josué y los príncipes",
+          "isCorrect": true
+        },
+        {
+          "text": "Ante Machîr y los hijos de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Ante los Cananeos de Beth-san",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas suertes cayeron a Manasés, además de la tierra de Galaad y de Basán?",
+      "explanation": "El texto dice que cayeron a Manasés diez suertes, además de la tierra de Galaad y de Basán, que está al otro lado del Jordán.",
+      "bibleReference": "Josué 17:5",
+      "answers": [
+        {
+          "text": "Dos suertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco suertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez suertes",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres suertes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ciudades tuvo Manasés en Issachâr y en Aser?",
+      "explanation": "Manasés tuvo allí Beth-san, Ibleam, los moradores de Dor, de Endor, de Taanach y de Megiddo, con sus aldeas.",
+      "bibleReference": "Josué 17:11",
+      "answers": [
+        {
+          "text": "Beth-san, Ibleam, Dor, Endor, Taanach y Megiddo",
+          "isCorrect": true
+        },
+        {
+          "text": "Gezer, Beth-oron, Ataroth y Luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Sichêm, Tappua, Michmetat y Cana",
+          "isCorrect": false
+        },
+        {
+          "text": "Galaad, Basán, Astaroth y Edrei",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hijos de Israel con el Cananeo cuando tomaron fuerzas?",
+      "explanation": "Cuando los hijos de Israel tomaron fuerzas, hicieron tributario al Cananeo, mas no lo echaron.",
+      "bibleReference": "Josué 17:13",
+      "answers": [
+        {
+          "text": "Lo echaron de todas aquellas ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Hicieron alianza y paz con él",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo llevaron cautivo a Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo hicieron tributario, pero no lo echaron",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se quejaron los hijos de José ante Josué?",
+      "explanation": "Preguntaron por qué les había dado por heredad una sola suerte y una sola parte, siendo ellos un pueblo tan grande.",
+      "bibleReference": "Josué 17:14",
+      "answers": [
+        {
+          "text": "De que los Levitas tuvieran ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "De que Manasés recibiera más que Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "De haber recibido una sola suerte y parte",
+          "isCorrect": true
+        },
+        {
+          "text": "De tener que pelear contra los gigantes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les respondió Josué que hicieran?",
+      "explanation": "Josué les respondió que, si eran pueblo tan grande, subieran al monte y cortaran para sí allí, pues el monte de Ephraim era angosto para ellos.",
+      "bibleReference": "Josué 17:15",
+      "answers": [
+        {
+          "text": "Que esperaran una nueva suerte en Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que subieran al monte y cortaran para sí",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tomaran las ciudades de Beth-san",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pidieran parte a la tribu de Aser",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

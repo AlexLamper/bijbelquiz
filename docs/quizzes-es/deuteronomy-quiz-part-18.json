@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre Deuteronomio 18: la porción de los sacerdotes Levitas, las abominaciones prohibidas y el profeta que Jehová levantaría.",
+  "slug": "deuteronomy-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué no tendría toda la tribu de Leví junto con Israel?",
+      "explanation": "El texto dice que los sacerdotes Levitas, toda la tribu de Leví, no tendrán parte ni heredad con Israel, sino que comerán de las ofrendas encendidas a Jehová.",
+      "bibleReference": "Deuteronomio 18:1",
+      "answers": [
+        { "text": "Parte ni heredad", "isCorrect": true },
+        { "text": "Ciudades donde morar", "isCorrect": false },
+        { "text": "Ofrendas encendidas", "isCorrect": false },
+        { "text": "Primicias del grano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuál es la heredad de los Levitas?",
+      "explanation": "El versículo dice que no tendrán heredad entre sus hermanos, porque Jehová es su heredad, como él les ha dicho.",
+      "bibleReference": "Deuteronomio 18:2",
+      "answers": [
+        { "text": "La tierra que fluye leche y miel", "isCorrect": false },
+        { "text": "Las ciudades del monte de Gerizim", "isCorrect": false },
+        { "text": "Jehová mismo", "isCorrect": true },
+        { "text": "El lugar que Jehová escogiere", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué partes del buey o del cordero ofrecido recibiría el sacerdote?",
+      "explanation": "El texto establece como derecho del sacerdote que le darán la espalda, las quijadas y el cuajar del animal ofrecido.",
+      "bibleReference": "Deuteronomio 18:3",
+      "answers": [
+        { "text": "La piel y los cuernos del animal", "isCorrect": false },
+        { "text": "La espalda, las quijadas y el cuajar", "isCorrect": true },
+        { "text": "El pescuezo y las patas del animal", "isCorrect": false },
+        { "text": "La grosura y la sangre del animal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuáles primicias debía recibir el sacerdote?",
+      "explanation": "El texto manda darle las primicias del grano, del vino y del aceite, y también las primicias de la lana de las ovejas.",
+      "bibleReference": "Deuteronomio 18:4",
+      "answers": [
+        { "text": "De la plata y del oro de tus casas", "isCorrect": false },
+        { "text": "De los bueyes y los asnos del campo", "isCorrect": false },
+        { "text": "De la miel y de la sal de la tierra", "isCorrect": false },
+        { "text": "Del grano, del vino, del aceite y de la lana", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué práctica relacionada con los hijos prohíbe el capítulo?",
+      "explanation": "El texto dice que no sea hallado en ti quien haga pasar su hijo o su hija por el fuego, junto con las adivinaciones y las hechicerías.",
+      "bibleReference": "Deuteronomio 18:10",
+      "answers": [
+        { "text": "Venderlos como siervos a extranjeros", "isCorrect": false },
+        { "text": "Hacer pasar a su hijo o su hija por el fuego", "isCorrect": true },
+        { "text": "Dejarlos sin la enseñanza de esta ley", "isCorrect": false },
+        { "text": "Casarlos con las gentes de alrededor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Entre las cosas prohibidas, ¿a quién no se debía preguntar?",
+      "explanation": "El versículo prohíbe los encantamentos, preguntar a pitón, la magia y preguntar a los muertos.",
+      "bibleReference": "Deuteronomio 18:11",
+      "answers": [
+        { "text": "A los muertos", "isCorrect": true },
+        { "text": "A los ancianos", "isCorrect": false },
+        { "text": "A los sacerdotes", "isCorrect": false },
+        { "text": "A los jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto, en una sola frase, sobre cómo debía ser el israelita delante de su Dios?",
+      "explanation": "El versículo dice, con estas palabras: \"Perfecto serás con Jehová tu Dios\".",
+      "bibleReference": "Deuteronomio 18:13",
+      "answers": [
+        { "text": "Sabio serás entre las gentes", "isCorrect": false },
+        { "text": "Fuerte serás en la batalla", "isCorrect": false },
+        { "text": "Temeroso serás delante del rey", "isCorrect": false },
+        { "text": "Perfecto serás con Jehová tu Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué había pedido el pueblo en Horeb, el día de la asamblea?",
+      "explanation": "El texto recuerda su petición: no volver a oír la voz de Jehová su Dios ni ver más aquel gran fuego, para no morir.",
+      "bibleReference": "Deuteronomio 18:16",
+      "answers": [
+        { "text": "Que Jehová les diera un rey como las gentes", "isCorrect": false },
+        { "text": "Que se repartiera la tierra entre las tribus", "isCorrect": false },
+        { "text": "No oír más aquella voz ni ver más aquel fuego", "isCorrect": true },
+        { "text": "Que se levantara un altar en aquel monte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que pondría en la boca del profeta que suscitaría?",
+      "explanation": "Jehová dice que suscitará un profeta de en medio de sus hermanos y pondrá sus palabras en su boca, y él hablará todo lo que Jehová le mandare.",
+      "bibleReference": "Deuteronomio 18:18",
+      "answers": [
+        { "text": "Sus palabras", "isCorrect": true },
+        { "text": "Un cántico nuevo", "isCorrect": false },
+        { "text": "Una maldición contra las gentes", "isCorrect": false },
+        { "text": "El nombre del rey escogido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el final del capítulo, ¿cómo se reconocía una palabra que Jehová no había hablado?",
+      "explanation": "El texto responde que, si el profeta habla en nombre de Jehová y la cosa no sucede ni viene, es palabra que Jehová no ha hablado.",
+      "bibleReference": "Deuteronomio 18:22",
+      "answers": [
+        { "text": "Cuando el profeta era extranjero", "isCorrect": false },
+        { "text": "Cuando no había dos testigos", "isCorrect": false },
+        { "text": "Cuando el profeta hablaba de noche", "isCorrect": false },
+        { "text": "Cuando lo que dijo no sucedía", "isCorrect": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Josué 21: las villas de los Levitas con sus ejidos y el reposo que Jehová dio a Israel.",
+  "slug": "joshua-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes vinieron los principales de los padres de los Levitas?",
+      "explanation": "Vinieron a Eleazar sacerdote, a Josué hijo de Nun y a los principales de los padres de las tribus de los hijos de Israel.",
+      "bibleReference": "Josué 21:1",
+      "answers": [
+        {
+          "text": "A Moisés, siervo de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "A Caleb hijo de Jephone",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A Eleazar y a Josué hijo de Nun",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron los Levitas en Silo?",
+      "explanation": "Dijeron que Jehová mandó por Moisés que les fuesen dadas villas para habitar, con sus ejidos para sus bestias.",
+      "bibleReference": "Josué 21:2",
+      "answers": [
+        {
+          "text": "Una parte del despojo de la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Villas para habitar, con sus ejidos para sus bestias",
+          "isCorrect": true
+        },
+        {
+          "text": "Tierras de labranza junto al Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Un lugar para el tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué tribus recibieron sus villas los hijos de Aarón el sacerdote?",
+      "explanation": "El texto dice que a los hijos de Aarón sacerdote les fueron dadas por suerte trece villas por la tribu de Judá, por la de Simeón y por la de Benjamín.",
+      "bibleReference": "Josué 21:4",
+      "answers": [
+        {
+          "text": "De Ephraim, Dan y Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "De Issachâr, Aser y Nephtalí",
+          "isCorrect": false
+        },
+        {
+          "text": "De Judá, Simeón y Benjamín",
+          "isCorrect": true
+        },
+        {
+          "text": "De Rubén, Gad y Zabulón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas villas se dieron a los hijos de Merari por sus familias?",
+      "explanation": "A los hijos de Merari por sus familias se dieron doce villas por la tribu de Rubén, por la de Gad y por la de Zabulón.",
+      "bibleReference": "Josué 21:7",
+      "answers": [
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y ocho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué otro nombre se identifica a Chîriath-arba en este capítulo?",
+      "explanation": "El texto dice que dieron Chîriath-arba, del padre de Anac, la cual es Hebrón, en el monte de Judá, con sus ejidos.",
+      "bibleReference": "Josué 21:11",
+      "answers": [
+        {
+          "text": "Debir",
+          "isCorrect": false
+        },
+        {
+          "text": "Libna",
+          "isCorrect": false
+        },
+        {
+          "text": "Jutta",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebrón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién se dio el campo de aquella ciudad y sus aldeas?",
+      "explanation": "El texto dice que el campo de aquella ciudad y sus aldeas los dieron a Caleb hijo de Jephone, por su posesión.",
+      "bibleReference": "Josué 21:12",
+      "answers": [
+        {
+          "text": "A los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Josué hijo de Nun",
+          "isCorrect": false
+        },
+        {
+          "text": "A Caleb hijo de Jephone",
+          "isCorrect": true
+        },
+        {
+          "text": "A los hijos de Coath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué villa de refugio para los homicidas recibieron los hijos de Coath en el monte de Ephraim?",
+      "explanation": "El texto dice que les dieron a Sichêm, villa de refugio para los homicidas, con sus ejidos, en el monte de Ephraim.",
+      "bibleReference": "Josué 21:21",
+      "answers": [
+        {
+          "text": "Geser",
+          "isCorrect": false
+        },
+        {
+          "text": "Sichêm",
+          "isCorrect": true
+        },
+        {
+          "text": "Kibsaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Beth-oron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la villa de refugio de la tribu de Nephtalí?",
+      "explanation": "El texto dice que de la tribu de Nephtalí dieron la villa de refugio para los homicidas, Cedes en Galilea, con sus ejidos.",
+      "bibleReference": "Josué 21:32",
+      "answers": [
+        {
+          "text": "Cedes en Galilea",
+          "isCorrect": true
+        },
+        {
+          "text": "Hammoth-dor",
+          "isCorrect": false
+        },
+        {
+          "text": "Cartán",
+          "isCorrect": false
+        },
+        {
+          "text": "Gaulón en Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas villas de los Levitas había en total en medio de la posesión de Israel?",
+      "explanation": "El texto dice que todas las villas de los Levitas en medio de la posesión de los hijos de Israel fueron cuarenta y ocho villas con sus ejidos.",
+      "bibleReference": "Josué 21:41",
+      "answers": [
+        {
+          "text": "Treinta y seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y ocho",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte y cuatro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el final del capítulo, ¿qué pasó con las buenas palabras que Jehová habló a la casa de Israel?",
+      "explanation": "El texto dice que no faltó palabra de todas las buenas que habló Jehová a la casa de Israel, sino que todo se cumplió.",
+      "bibleReference": "Josué 21:45",
+      "answers": [
+        {
+          "text": "Algunas quedaron para después",
+          "isCorrect": false
+        },
+        {
+          "text": "Se cumplieron solo en parte",
+          "isCorrect": false
+        },
+        {
+          "text": "Se perdieron por el pecado del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo se cumplió, no faltó ninguna",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 34",
+  "description": "Diez preguntas sobre Deuteronomio 34: Moisés sube al monte Nebo, ve la tierra, muere en Moab y Josué queda en su lugar.",
+  "slug": "deuteronomy-quiz-part-34",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué monte subió Moisés desde los campos de Moab?",
+      "explanation": "El versículo dice que Moisés subió de los campos de Moab al monte de Nebo, a la cumbre de Pisga.",
+      "bibleReference": "Deuteronomio 34:1",
+      "answers": [
+        {
+          "text": "Al monte de Nebo",
+          "isCorrect": true
+        },
+        {
+          "text": "Al monte de Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte Parán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el primer versículo, ¿qué ciudad está enfrente de la cumbre de Pisga?",
+      "explanation": "El versículo dice que la cumbre de Pisga está enfrente de Jericó, y que allí Jehová le mostró toda la tierra de Galaad hasta Dan.",
+      "bibleReference": "Deuteronomio 34:1",
+      "answers": [
+        {
+          "text": "Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "Jericó",
+          "isCorrect": true
+        },
+        {
+          "text": "Soar",
+          "isCorrect": false
+        },
+        {
+          "text": "Dan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a Jericó?",
+      "explanation": "El versículo nombra la vega de Jericó, ciudad de las palmas, hasta Soar.",
+      "bibleReference": "Deuteronomio 34:3",
+      "answers": [
+        {
+          "text": "Ciudad de los muros",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudad del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudad de las palmas",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciudad de las aguas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dijo Jehová que había jurado dar esa tierra?",
+      "explanation": "Jehová le dijo que esta es la tierra de que juró a Abraham, a Isaac y a Jacob, diciendo: a tu simiente la daré.",
+      "bibleReference": "Deuteronomio 34:4",
+      "answers": [
+        {
+          "text": "A Noé, Sem y Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "A Isaac, Jacob y José",
+          "isCorrect": false
+        },
+        {
+          "text": "A Moisés y a Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Abraham, Isaac y Jacob",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué tierra murió Moisés?",
+      "explanation": "El versículo dice que allí murió Moisés, siervo de Jehová, en la tierra de Moab, conforme al dicho de Jehová.",
+      "bibleReference": "Deuteronomio 34:5",
+      "answers": [
+        {
+          "text": "En la tierra de Moab",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Zin",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto sobre el sepulcro de Moisés?",
+      "explanation": "El versículo dice que lo enterró en el valle, en tierra de Moab, enfrente de Bethpeor, y que ninguno sabe su sepulcro hasta hoy.",
+      "bibleReference": "Deuteronomio 34:6",
+      "answers": [
+        {
+          "text": "Que está en el monte de Nebo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ninguno lo sabe hasta hoy",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo guardan los levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que está junto al de Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 7 de los ojos de Moisés?",
+      "explanation": "El versículo dice que era de edad de ciento y veinte años cuando murió, y que sus ojos nunca se oscurecieron ni perdió su vigor.",
+      "bibleReference": "Deuteronomio 34:7",
+      "answers": [
+        {
+          "text": "Que se cerraron de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lloraron por el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nunca se oscurecieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Que veían solo de lejos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días lloraron los hijos de Israel a Moisés?",
+      "explanation": "El versículo dice que los hijos de Israel lloraron a Moisés en los campos de Moab treinta días.",
+      "bibleReference": "Deuteronomio 34:8",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué fue Josué hijo de Nun lleno de espíritu de sabiduría?",
+      "explanation": "El versículo dice que Josué hijo de Nun fue lleno de espíritu de sabiduría porque Moisés había puesto sus manos sobre él.",
+      "bibleReference": "Deuteronomio 34:9",
+      "answers": [
+        {
+          "text": "Porque Moisés puso sus manos sobre él",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque pasó cuarenta años en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque llevaba el arca del pacto de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque fue ungido por los sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de los profetas que se levantaron en Israel después de Moisés?",
+      "explanation": "El versículo dice que nunca más se levantó profeta en Israel como Moisés, a quien Jehová haya conocido cara a cara.",
+      "bibleReference": "Deuteronomio 34:10",
+      "answers": [
+        {
+          "text": "Que fueron muchos y muy sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ellos escribieron esta ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ninguno fue como Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Que vieron la tierra prometida",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

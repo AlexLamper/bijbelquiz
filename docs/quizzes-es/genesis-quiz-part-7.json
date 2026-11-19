@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Génesis 7: la entrada en el arca, los cuarenta días de lluvia y las aguas que cubrieron los montes.",
+  "slug": "genesis-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según Jehová, ¿por qué debía Noé entrar en el arca con toda su casa?",
+      "explanation": "Jehová le dijo que entrase con toda su casa porque le había visto justo delante de él en aquella generación.",
+      "bibleReference": "Génesis 7:1",
+      "answers": [
+        {
+          "text": "Porque había plantado una viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era el más anciano",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque le había visto justo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque había edificado un altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos animales limpios debía tomar Noé?",
+      "explanation": "De todo animal limpio debía tomar de siete en siete, macho y su hembra; de los que no son limpios, dos.",
+      "bibleReference": "Génesis 7:2",
+      "answers": [
+        {
+          "text": "De siete en siete",
+          "isCorrect": true
+        },
+        {
+          "text": "De dos en dos",
+          "isCorrect": false
+        },
+        {
+          "text": "De tres en tres",
+          "isCorrect": false
+        },
+        {
+          "text": "De diez en diez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo dijo Jehová que haría llover sobre la tierra?",
+      "explanation": "Jehová dijo que pasados siete días haría llover cuarenta días y cuarenta noches, y raería toda sustancia de sobre la tierra.",
+      "bibleReference": "Génesis 7:4",
+      "answers": [
+        {
+          "text": "Siete días y siete noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y cincuenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Quince días y quince noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días y cuarenta noches",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenía Noé cuando el diluvio de las aguas fue sobre la tierra?",
+      "explanation": "El texto dice que Noé era de seiscientos años cuando el diluvio de las aguas fue sobre la tierra.",
+      "bibleReference": "Génesis 7:6",
+      "answers": [
+        {
+          "text": "Quinientos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos años",
+          "isCorrect": true
+        },
+        {
+          "text": "Trescientos cincuenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Novecientos cincuenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué mes y día fueron rotas todas las fuentes del grande abismo?",
+      "explanation": "Fue en el mes segundo, a diecisiete días del mes, del año seiscientos de la vida de Noé.",
+      "bibleReference": "Génesis 7:11",
+      "answers": [
+        {
+          "text": "En el mes séptimo, a diecisiete días",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes primero, al primero del mes",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes segundo, a diecisiete días",
+          "isCorrect": true
+        },
+        {
+          "text": "En el mes décimo, al primero del mes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaban los hijos de Noé que entraron con él en el arca?",
+      "explanation": "En aquel mismo día entraron Noé y sus hijos Sem, Châm y Japhet, con la mujer de Noé y las tres mujeres de sus hijos.",
+      "bibleReference": "Génesis 7:13",
+      "answers": [
+        {
+          "text": "Caín, Abel y Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "Cush, Mizraim y Phut",
+          "isCorrect": false
+        },
+        {
+          "text": "Abram, Nachôr y Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "Sem, Châm y Japhet",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién cerró la puerta del arca?",
+      "explanation": "El texto dice que entraron macho y hembra de toda carne como Dios había mandado, y que Jehová le cerró la puerta.",
+      "bibleReference": "Génesis 7:16",
+      "answers": [
+        {
+          "text": "Noé",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Sem y Japhet",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Noé",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto prevalecieron las aguas por encima de los montes?",
+      "explanation": "El texto dice que las aguas prevalecieron quince codos en alto y que los montes fueron cubiertos.",
+      "bibleReference": "Génesis 7:20",
+      "answers": [
+        {
+          "text": "Quince codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién quedó cuando fue destruida toda sustancia que vivía sobre la tierra?",
+      "explanation": "Fue destruida toda sustancia que vivía sobre la faz de la tierra, y quedó solamente Noé y lo que con él estaba en el arca.",
+      "bibleReference": "Génesis 7:23",
+      "answers": [
+        {
+          "text": "Solamente Noé y sus tres hijos varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente los animales limpios del arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninguno quedó sobre la faz de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente Noé y los que estaban con él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días prevalecieron las aguas sobre la tierra?",
+      "explanation": "El capítulo termina diciendo que las aguas prevalecieron sobre la tierra ciento y cincuenta días.",
+      "bibleReference": "Génesis 7:24",
+      "answers": [
+        {
+          "text": "Ciento y veinte días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y cinco días",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y cincuenta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Trescientos días",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

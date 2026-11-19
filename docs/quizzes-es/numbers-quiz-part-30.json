@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 30",
+  "description": "Diez preguntas sobre Números 30: los votos y juramentos, y cuándo el padre o el marido podía confirmarlos o anularlos.",
+  "slug": "numbers-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes habló Moisés lo que Jehová había mandado sobre los votos?",
+      "explanation": "Moisés habló a los príncipes de las tribus de los hijos de Israel y les dijo que eso era lo que Jehová había mandado.",
+      "bibleReference": "Números 30:2",
+      "answers": [
+        {
+          "text": "A los sacerdotes y a los Levitas del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los jueces de todas las ciudades de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de las tribus de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ancianos de los campos de Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer quien hiciera un voto a Jehová?",
+      "explanation": "Quien hiciera voto o juramento no violaría su palabra, sino que haría conforme a todo lo que salió de su boca.",
+      "bibleReference": "Números 30:3",
+      "answers": [
+        {
+          "text": "Cumplir todo lo que salió de su boca",
+          "isCorrect": true
+        },
+        {
+          "text": "Pagar un precio al sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperar el permiso de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Repetir el voto cada año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si una joven hacía un voto en casa de su padre y él lo oía y callaba, ¿qué ocurría?",
+      "explanation": "Si el padre callaba, todos los votos de ella y toda obligación con que había ligado su alma quedaban firmes.",
+      "bibleReference": "Números 30:5",
+      "answers": [
+        {
+          "text": "Los votos quedaban nulos",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía repetirlos ante el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Ella llevaba el pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos sus votos quedaban firmes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Y si su padre se lo vedaba el día que lo oía?",
+      "explanation": "Si el padre se lo vedaba, los votos no quedaban firmes, y Jehová la perdonaba porque su padre se lo había vedado.",
+      "bibleReference": "Números 30:6",
+      "answers": [
+        {
+          "text": "Quedaban firmes de todos modos",
+          "isCorrect": false
+        },
+        {
+          "text": "No quedaban firmes y Jehová la perdonaba",
+          "isCorrect": true
+        },
+        {
+          "text": "El padre llevaba el pecado de ella",
+          "isCorrect": false
+        },
+        {
+          "text": "El voto pasaba a su marido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si una mujer casada hacía un voto y su marido se lo vedaba al oírlo, ¿qué pasaba con el voto?",
+      "explanation": "El voto que ella hizo y lo que pronunció con sus labios quedaba nulo, y Jehová lo perdonaba.",
+      "bibleReference": "Números 30:9",
+      "answers": [
+        {
+          "text": "Quedaba nulo",
+          "isCorrect": true
+        },
+        {
+          "text": "Quedaba firme",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía cumplirlo a medias",
+          "isCorrect": false
+        },
+        {
+          "text": "Pasaba a su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se dice del voto de una viuda o de una mujer repudiada?",
+      "explanation": "Todo voto de viuda o de repudiada con que ligara su alma era firme.",
+      "bibleReference": "Números 30:10",
+      "answers": [
+        {
+          "text": "Era nulo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo confirmaba el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Era firme",
+          "isCorrect": true
+        },
+        {
+          "text": "Dependía de su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién podía confirmar o anular todo voto de afligir el alma?",
+      "explanation": "Todo voto o juramento de afligir el alma, su marido lo confirmaba o su marido lo anulaba.",
+      "bibleReference": "Números 30:14",
+      "answers": [
+        {
+          "text": "El sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Su marido",
+          "isCorrect": true
+        },
+        {
+          "text": "Los príncipes de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Ella misma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si el marido callaba de día en día, ¿qué efecto tenía su silencio?",
+      "explanation": "Si callaba de día en día, confirmaba todos los votos y todas las obligaciones que estaban sobre ella, por cuanto calló el día que lo oyó.",
+      "bibleReference": "Números 30:15",
+      "answers": [
+        {
+          "text": "Los anulaba todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba él libre de culpa",
+          "isCorrect": false
+        },
+        {
+          "text": "El voto pasaba a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Confirmaba todos sus votos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ocurría si el marido anulaba los votos después de haberlos oído?",
+      "explanation": "Si los anulaba después de haberlos oído, él llevaba el pecado de ella.",
+      "bibleReference": "Números 30:16",
+      "answers": [
+        {
+          "text": "Él llevaba el pecado de ella",
+          "isCorrect": true
+        },
+        {
+          "text": "Ella llevaba el pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "El voto quedaba firme",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía ofrecer un macho cabrío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Entre quiénes dice el texto que Jehová mandó estas ordenanzas?",
+      "explanation": "Estas son las ordenanzas que Jehová mandó a Moisés entre el varón y su mujer, y entre el padre y su hija durante su mocedad en casa de su padre.",
+      "bibleReference": "Números 30:16",
+      "answers": [
+        {
+          "text": "Entre el sacerdote y el pueblo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre los príncipes de las tribus y los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre el varón y su mujer, y entre el padre y su hija",
+          "isCorrect": true
+        },
+        {
+          "text": "Entre el israelita y el extranjero que mora con él",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Levítico 15: las normas sobre los flujos del cuerpo, lo que quedaba inmundo y las ofrendas del día octavo.",
+  "slug": "leviticus-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué ocurría con la cama en que se acostaba el que tenía flujo?",
+      "explanation": "Toda cama en que se acostaba el que tenía flujo quedaba inmunda, y también toda cosa sobre la que se sentaba.",
+      "bibleReference": "Levítico 15:4",
+      "answers": [
+        {
+          "text": "Quedaba inmunda",
+          "isCorrect": true
+        },
+        {
+          "text": "Debía ser quemada",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba limpia hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía ser lavada siete veces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer quien tocaba la cama del que tenía flujo?",
+      "explanation": "Lavaba sus vestidos, se lavaba a sí mismo con agua y quedaba inmundo hasta la tarde.",
+      "bibleReference": "Levítico 15:5",
+      "answers": [
+        {
+          "text": "Salir del real siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Quebrar la vasija de barro",
+          "isCorrect": false
+        },
+        {
+          "text": "Traer dos tórtolas al sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavar sus vestidos y lavarse con agua",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedía si el que tenía flujo escupía sobre alguien limpio?",
+      "explanation": "Aquel sobre quien escupía lavaba sus vestidos, se lavaba con agua y quedaba inmundo hasta la tarde.",
+      "bibleReference": "Levítico 15:8",
+      "answers": [
+        {
+          "text": "Nada, porque el limpio seguía limpio",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía ofrecer un cordero al sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavaba sus vestidos y quedaba inmundo hasta la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Habitaba solo, fuera del real, siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con la vasija de barro que tocaba el que tenía flujo?",
+      "explanation": "La vasija de barro que él tocaba era quebrada, y toda vasija de madera era lavada con agua.",
+      "bibleReference": "Levítico 15:12",
+      "answers": [
+        {
+          "text": "Era lavada con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Era quebrada",
+          "isCorrect": true
+        },
+        {
+          "text": "Era llevada al sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Era puesta fuera del real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al limpiarse de su flujo, ¿cuántos días debía contar y con qué debía lavar su carne?",
+      "explanation": "Contaba siete días desde su purificación, lavaba sus vestidos y lavaba su carne en aguas vivas, y quedaba limpio.",
+      "bibleReference": "Levítico 15:13",
+      "answers": [
+        {
+          "text": "Siete días, y se lavaba solo las manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un día, y lavaba solo sus vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días, y se lavaba con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días, y lavaba su carne en aguas vivas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía llevar al sacerdote el día octavo?",
+      "explanation": "El octavo día tomaba dos tórtolas o dos palominos y venía delante de Jehová, a la puerta del tabernáculo del testimonio, y los daba al sacerdote.",
+      "bibleReference": "Levítico 15:14",
+      "answers": [
+        {
+          "text": "Flor de harina con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordero de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos tórtolas o dos palominos",
+          "isCorrect": true
+        },
+        {
+          "text": "Un macho cabrío sin defecto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer el hombre de quien salía derramamiento de semen?",
+      "explanation": "Lavaba en aguas toda su carne y quedaba inmundo hasta la tarde.",
+      "bibleReference": "Levítico 15:16",
+      "answers": [
+        {
+          "text": "Quebrar la vasija que tocara",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavar en aguas toda su carne",
+          "isCorrect": true
+        },
+        {
+          "text": "Traer un holocausto al altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Permanecer siete días apartado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días estaba apartada la mujer que tenía flujo de sangre?",
+      "explanation": "Cuando la mujer tenía flujo de sangre en su carne, estaba apartada siete días.",
+      "bibleReference": "Levítico 15:19",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos semanas",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la tarde",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasaba con la mujer cuyo flujo de sangre seguía fuera del tiempo de su costumbre?",
+      "explanation": "Todo el tiempo del flujo de su inmundicia era inmunda, como en los días de su costumbre.",
+      "bibleReference": "Levítico 15:25",
+      "answers": [
+        {
+          "text": "Debía habitar fuera del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Era cortada de su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaba limpia al tercer día",
+          "isCorrect": false
+        },
+        {
+          "text": "Era inmunda todo el tiempo de su flujo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué debían los hijos de Israel ser apartados de sus inmundicias?",
+      "explanation": "Debían ser apartados de sus inmundicias para que no muriesen por ellas, ensuciando el tabernáculo de Jehová que estaba entre ellos.",
+      "bibleReference": "Levítico 15:31",
+      "answers": [
+        {
+          "text": "Para que fueran numerosos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que la tierra diera su fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que no muriesen por sus inmundicias",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que los extranjeros los temiesen",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

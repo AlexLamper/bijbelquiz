@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Números 14: el llanto del pueblo, la oración de Moisés, los cuarenta años en el desierto y la derrota en Horma.",
+  "slug": "numbers-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué decían los hijos de Israel que hubiera sido mejor para ellos?",
+      "explanation": "Toda la multitud dijo: ¡Ojalá muriéramos en la tierra de Egipto; o en este desierto ojalá muriéramos!",
+      "bibleReference": "Números 14:2",
+      "answers": [
+        {
+          "text": "Quedarse en el monte Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Morir en Egipto o en el desierto",
+          "isCorrect": true
+        },
+        {
+          "text": "Entrar en la tierra sin Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacer un pacto con los Cananeos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se decían el uno al otro?",
+      "explanation": "Decían el uno al otro: Hagamos un capitán, y volvámonos a Egipto.",
+      "bibleReference": "Números 14:4",
+      "answers": [
+        {
+          "text": "Hagamos un altar y ofrezcamos allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidamos a Moisés otra señal",
+          "isCorrect": false
+        },
+        {
+          "text": "Elijamos otro sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Hagamos un capitán y volvámonos a Egipto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron Josué y Caleb, que habían reconocido la tierra?",
+      "explanation": "Josué hijo de Nun y Caleb hijo de Jephone, que eran de los que habían reconocido la tierra, rompieron sus vestidos.",
+      "bibleReference": "Números 14:6",
+      "answers": [
+        {
+          "text": "Rompieron sus vestidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Se escondieron en sus tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidieron volver a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Callaron delante de la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quiso hacer la multitud con ellos?",
+      "explanation": "Toda la multitud habló de apedrearlos con piedras, pero la gloria de Jehová se mostró en el tabernáculo del testimonio.",
+      "bibleReference": "Números 14:10",
+      "answers": [
+        {
+          "text": "Echarlos del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacerlos capitanes",
+          "isCorrect": false
+        },
+        {
+          "text": "Apedrearlos con piedras",
+          "isCorrect": true
+        },
+        {
+          "text": "Entregarlos a los Cananeos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría con aquel pueblo?",
+      "explanation": "Jehová dijo que lo heriría de mortandad y lo destruiría, y que pondría a Moisés sobre gente grande y más fuerte que ellos.",
+      "bibleReference": "Números 14:12",
+      "answers": [
+        {
+          "text": "Enviarlo de vuelta a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Darle carne por un mes",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitarle el maná",
+          "isCorrect": false
+        },
+        {
+          "text": "Herirlo de mortandad y destruirlo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Jehová a la oración de Moisés?",
+      "explanation": "Jehová dijo: yo lo he perdonado conforme a tu dicho.",
+      "bibleReference": "Números 14:20",
+      "answers": [
+        {
+          "text": "Que no lo perdonaría nunca",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo había perdonado conforme a su dicho",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo pensaría cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que perdonaría sólo a los levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dijo Jehová que Caleb entraría en la tierra?",
+      "explanation": "Dijo que su siervo Caleb entraría en la tierra porque hubo en él otro espíritu y cumplió de ir en pos de Jehová.",
+      "bibleReference": "Números 14:24",
+      "answers": [
+        {
+          "text": "Porque era el mayor de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era de la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque hubo en él otro espíritu y siguió a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque no había visto la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron exceptuados de los que no entrarían en la tierra?",
+      "explanation": "Jehová dijo que no entrarían en la tierra, exceptuando a Caleb hijo de Jephone y a Josué hijo de Nun.",
+      "bibleReference": "Números 14:30",
+      "answers": [
+        {
+          "text": "Caleb hijo de Jephone y Josué hijo de Nun",
+          "isCorrect": true
+        },
+        {
+          "text": "Moisés y Aarón, y sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los levitas y los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo llevarían sus iniquidades en el desierto?",
+      "explanation": "Conforme al número de los cuarenta días en que reconocieron la tierra, llevarían sus iniquidades cuarenta años, un año por cada día.",
+      "bibleReference": "Números 14:34",
+      "answers": [
+        {
+          "text": "Cuarenta años, un año por cada día",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta días, un día por cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte años, un año por cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete años, siete por cada día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde los persiguieron el Amalecita y el Cananeo?",
+      "explanation": "El Amalecita y el Cananeo descendieron, los hirieron y los derrotaron, persiguiéndolos hasta Horma.",
+      "bibleReference": "Números 14:45",
+      "answers": [
+        {
+          "text": "Hasta Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Cades",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Horma",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el mar Bermejo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

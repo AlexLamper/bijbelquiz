@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre Deuteronomio 22: los animales perdidos del hermano, el nido en el camino, el pretil del terrado y las mezclas prohibidas.",
+  "slug": "deuteronomy-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Si el animal perdido era de un hermano que no era vecino o a quien no se conocía, ¿qué había que hacer?",
+      "explanation": "El texto manda recogerlo en tu casa, y que esté contigo hasta que tu hermano lo busque, y entonces devolverlo.",
+      "bibleReference": "Deuteronomio 22:2",
+      "answers": [
+        { "text": "Recogerlo en casa hasta que lo buscara", "isCorrect": true },
+        { "text": "Llevarlo a los ancianos de la ciudad", "isCorrect": false },
+        { "text": "Dejarlo donde estaba", "isCorrect": false },
+        { "text": "Venderlo y guardar la plata", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacerse al ver el asno o el buey del hermano caídos en el camino?",
+      "explanation": "El texto dice que no te esconderás de ellos, sino que con él has de procurar levantarlos.",
+      "bibleReference": "Deuteronomio 22:4",
+      "answers": [
+        { "text": "Esconderse de ellos", "isCorrect": false },
+        { "text": "Llevarlos a su casa", "isCorrect": false },
+        { "text": "Ayudarle a levantarlos", "isCorrect": true },
+        { "text": "Avisar al dueño por un mensajero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué prohíbe el capítulo acerca de la ropa de hombre y de mujer?",
+      "explanation": "El texto dice que la mujer no vestirá hábito de hombre ni el hombre ropa de mujer, porque es abominación a Jehová.",
+      "bibleReference": "Deuteronomio 22:5",
+      "answers": [
+        { "text": "Vestir ropa de color rojo", "isCorrect": false },
+        { "text": "Vestir cada uno la ropa del otro", "isCorrect": true },
+        { "text": "Vestir ropa de los sacerdotes", "isCorrect": false },
+        { "text": "Vestir ropa de extranjeros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al hallar en el camino un nido con la madre echada sobre los pollos o los huevos, ¿qué se mandaba?",
+      "explanation": "El texto manda dejar ir a la madre y tomar los pollos, para que te vaya bien y prolongues tus días.",
+      "bibleReference": "Deuteronomio 22:6-7",
+      "answers": [
+        { "text": "Dejar el nido como estaba", "isCorrect": false },
+        { "text": "Tomar la madre y dejar los pollos", "isCorrect": false },
+        { "text": "Llevar el nido entero a la casa", "isCorrect": false },
+        { "text": "Dejar ir a la madre y tomar los pollos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer quien edificaba una casa nueva?",
+      "explanation": "El texto manda hacer pretil al terrado, para no poner sangre en tu casa si alguno cayere de él.",
+      "bibleReference": "Deuteronomio 22:8",
+      "answers": [
+        { "text": "Dedicarla con un sacrificio", "isCorrect": false },
+        { "text": "Hacer un pretil a su terrado", "isCorrect": true },
+        { "text": "Escribir en ella las palabras de la ley", "isCorrect": false },
+        { "text": "Dejarla un año sin habitar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué dos animales no se debía arar juntamente?",
+      "explanation": "El texto dice, en un solo versículo: no ararás con buey y con asno juntamente.",
+      "bibleReference": "Deuteronomio 22:10",
+      "answers": [
+        { "text": "Con buey y con asno", "isCorrect": true },
+        { "text": "Con dos becerras", "isCorrect": false },
+        { "text": "Con buey y camello", "isCorrect": false },
+        { "text": "Con asno y caballo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué había que poner en los cuatro cabos del manto?",
+      "explanation": "El texto manda hacerse flecos en los cuatro cabos del manto con que te cubres.",
+      "bibleReference": "Deuteronomio 22:12",
+      "answers": [
+        { "text": "Borlas de oro", "isCorrect": false },
+        { "text": "Letras de la ley", "isCorrect": false },
+        { "text": "Nudos de lino", "isCorrect": false },
+        { "text": "Flecos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué mezcla de telas prohíbe el capítulo en el vestido?",
+      "explanation": "El texto dice que no te vestirás de mistura, de lana y lino juntamente.",
+      "bibleReference": "Deuteronomio 22:11",
+      "answers": [
+        { "text": "Lino y seda juntamente", "isCorrect": false },
+        { "text": "Lana y pelo de cabra juntos", "isCorrect": false },
+        { "text": "Lana y lino juntamente", "isCorrect": true },
+        { "text": "Lino y cuero juntamente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pena recibía el hombre que había esparcido mala fama sobre su mujer?",
+      "explanation": "Los ancianos lo castigaban y le penaban en cien piezas de plata, las cuales daban al padre de la moza.",
+      "bibleReference": "Deuteronomio 22:18-19",
+      "answers": [
+        { "text": "Cien piezas de plata al padre de la moza", "isCorrect": true },
+        { "text": "Cincuenta piezas de plata al padre", "isCorrect": false },
+        { "text": "Cien piezas de plata al sacerdote", "isCorrect": false },
+        { "text": "Diez piezas de plata a los ancianos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Si alguno hallaba a una moza virgen que no estaba desposada y se echaba con ella, ¿qué daba al padre de la moza?",
+      "explanation": "El texto dice que el hombre dará al padre de la moza cincuenta piezas de plata, y ella será su mujer.",
+      "bibleReference": "Deuteronomio 22:28-29",
+      "answers": [
+        { "text": "Cien piezas de plata", "isCorrect": false },
+        { "text": "Un buey y un cordero", "isCorrect": false },
+        { "text": "Veinte piezas de plata", "isCorrect": false },
+        { "text": "Cincuenta piezas de plata", "isCorrect": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Levítico 6: la restitución al prójimo, la ley del holocausto, el fuego que no se apaga y la ley del presente y de la expiación.",
+  "slug": "leviticus-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 2, ¿qué hace la persona que prevarica contra Jehová?",
+      "explanation": "Levítico 6:2 dice que peca e hace prevaricación contra Jehová quien niega a su prójimo lo encomendado o dejado en su mano, o bien roba, o calumnia a su prójimo.",
+      "bibleReference": "Levítico 6:2",
+      "answers": [
+        {
+          "text": "Ofrece sin lavarse las manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Toca un cuerpo muerto inmundo",
+          "isCorrect": false
+        },
+        {
+          "text": "Come del sebo de las paces",
+          "isCorrect": false
+        },
+        {
+          "text": "Niega a su prójimo lo encomendado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto añadía a lo que había de restituir?",
+      "explanation": "Levítico 6:5 dice que lo restituirá por entero y añadirá a ello la quinta parte, que ha de pagar a aquel a quien pertenece en el día de su expiación.",
+      "bibleReference": "Levítico 6:5",
+      "answers": [
+        {
+          "text": "La décima parte",
+          "isCorrect": false
+        },
+        {
+          "text": "La quinta parte",
+          "isCorrect": true
+        },
+        {
+          "text": "La mitad de lo robado",
+          "isCorrect": false
+        },
+        {
+          "text": "La tercera parte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo se quemaba el holocausto sobre el altar?",
+      "explanation": "Levítico 6:9 dice que es holocausto porque se quema sobre el altar toda la noche hasta la mañana, y el fuego del altar arderá en él.",
+      "bibleReference": "Levítico 6:9",
+      "answers": [
+        {
+          "text": "Desde la mañana hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Toda la noche hasta la mañana",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete días seguidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se ponía el sacerdote para apartar las cenizas de sobre el altar?",
+      "explanation": "Levítico 6:10 dice que el sacerdote se pondrá su vestimenta de lino y se vestirá pañetes de lino sobre su carne, y apartará las cenizas de sobre el altar.",
+      "bibleReference": "Levítico 6:10",
+      "answers": [
+        {
+          "text": "Su vestimenta y pañetes de lino",
+          "isCorrect": true
+        },
+        {
+          "text": "El ephod y el racional",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitra y la diadema santa",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manto de jacinto y púrpura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Adónde sacaba las cenizas, vestido de otras vestiduras?",
+      "explanation": "Levítico 6:11 dice que después se desnudará de sus vestimentas, se pondrá otras vestiduras y sacará las cenizas fuera del real, al lugar limpio.",
+      "bibleReference": "Levítico 6:11",
+      "answers": [
+        {
+          "text": "Al atrio del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera del real, al lugar limpio",
+          "isCorrect": true
+        },
+        {
+          "text": "Al pie del altar del perfume",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta del santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 13 acerca del fuego del altar?",
+      "explanation": "Levítico 6:13 dice que el fuego ha de arder continuamente en el altar y no se apagará.",
+      "bibleReference": "Levítico 6:13",
+      "answers": [
+        {
+          "text": "Que se enciende cada sábado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se apaga cada mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ha de arder continuamente",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo enciende el pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde comían Aarón y sus hijos el sobrante del presente?",
+      "explanation": "Levítico 6:16 dice que el sobrante lo comerán Aarón y sus hijos, sin levadura, en el lugar santo, en el atrio del tabernáculo del testimonio.",
+      "bibleReference": "Levítico 6:16",
+      "answers": [
+        {
+          "text": "En sus propias moradas",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera del real, en lugar limpio",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante del velo del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "En el atrio del tabernáculo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿cómo se repartía la ofrenda de Aarón y de sus hijos el día de su unción?",
+      "explanation": "Levítico 6:20 dice que la ofrenda de Aarón y de sus hijos el día que serán ungidos es la décima parte de un epha de flor de harina, la mitad a la mañana y la mitad a la tarde.",
+      "bibleReference": "Levítico 6:20",
+      "answers": [
+        {
+          "text": "Mitad a la mañana y mitad a la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Toda entera al salir el sol",
+          "isCorrect": false
+        },
+        {
+          "text": "Una tercera parte cada vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Toda entera al caer la tarde",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con todo presente de sacerdote?",
+      "explanation": "Levítico 6:23 dice que todo presente de sacerdote será enteramente quemado; no se comerá.",
+      "bibleReference": "Levítico 6:23",
+      "answers": [
+        {
+          "text": "Se daba a los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Se comía en el lugar santo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quemaba por entero",
+          "isCorrect": true
+        },
+        {
+          "text": "Se guardaba hasta la mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía con la vasija de barro en que se cocía la expiación?",
+      "explanation": "Levítico 6:28 dice que la vasija de barro en que fuere cocida será quebrada, y si fuere cocida en vasija de metal, será fregada y lavada con agua.",
+      "bibleReference": "Levítico 6:28",
+      "answers": [
+        {
+          "text": "Se lavaba con agua solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quebraba",
+          "isCorrect": true
+        },
+        {
+          "text": "Se fregaba con ceniza",
+          "isCorrect": false
+        },
+        {
+          "text": "Se daba al sacerdote",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

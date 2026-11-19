@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 30",
+  "description": "Diez preguntas sobre Éxodo 30: el altar del sahumerio, el rescate de medio siclo, la fuente de metal, el aceite de la santa unción y el perfume.",
+  "slug": "exodus-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuál era la altura del altar del sahumerio?",
+      "explanation": "El altar del sahumerio era cuadrado, de un codo de longitud y un codo de anchura, y su altura era de dos codos.",
+      "bibleReference": "Éxodo 30:2",
+      "answers": [
+        {
+          "text": "Un codo",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos codos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo quemaba Aarón el sahumerio sobre ese altar?",
+      "explanation": "Aarón quemaba sahumerio de aroma cada mañana, al aderezar las lámparas, y también cuando las encendía al anochecer.",
+      "bibleReference": "Éxodo 30:7-8",
+      "answers": [
+        {
+          "text": "Cada mañana y al anochecer",
+          "isCorrect": true
+        },
+        {
+          "text": "Una vez en el año",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente en el sábado",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la tarde hasta la mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces en el año hacía Aarón expiación sobre los cuernos de ese altar?",
+      "explanation": "Sobre sus cuernos Aarón hacía expiación una vez en el año con la sangre de la expiación.",
+      "bibleReference": "Éxodo 30:10",
+      "answers": [
+        {
+          "text": "Dos veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vez",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto daba cada uno al pasar por la cuenta?",
+      "explanation": "Cada uno daba medio siclo conforme al siclo del santuario, como rescate de su persona; el siclo es de veinte óbolos.",
+      "bibleReference": "Éxodo 30:13",
+      "answers": [
+        {
+          "text": "Un siclo entero",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte óbolos",
+          "isCorrect": false
+        },
+        {
+          "text": "Medio siclo",
+          "isCorrect": true
+        },
+        {
+          "text": "Un talento de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde qué edad se daba esa ofrenda a Jehová?",
+      "explanation": "Cualquiera que pasaba por la cuenta, de veinte años arriba, daba la ofrenda a Jehová.",
+      "bibleReference": "Éxodo 30:14",
+      "answers": [
+        {
+          "text": "De treinta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De diez años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De cincuenta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De veinte años arriba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué cantidad daban el rico y el pobre?",
+      "explanation": "Ni el rico aumentaría ni el pobre disminuiría de medio siclo al dar la ofrenda para hacer expiación por sus personas.",
+      "bibleReference": "Éxodo 30:15",
+      "answers": [
+        {
+          "text": "El rico daba el doble",
+          "isCorrect": false
+        },
+        {
+          "text": "La misma: medio siclo",
+          "isCorrect": true
+        },
+        {
+          "text": "El pobre daba la mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada uno según su hacienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué se usaba el dinero de las expiaciones?",
+      "explanation": "El dinero de las expiaciones se daba para la obra del tabernáculo del testimonio, y era por memoria delante de Jehová.",
+      "bibleReference": "Éxodo 30:16",
+      "answers": [
+        {
+          "text": "Para la obra del tabernáculo",
+          "isCorrect": true
+        },
+        {
+          "text": "Para los pobres del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para el aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "Para comprar los carneros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se lavaban Aarón y sus hijos en la fuente de metal?",
+      "explanation": "De la fuente se lavaban las manos y los pies al entrar en el tabernáculo del testimonio y al llegarse al altar, y así no morirían.",
+      "bibleReference": "Éxodo 30:19-21",
+      "answers": [
+        {
+          "text": "Solamente las manos",
+          "isCorrect": false
+        },
+        {
+          "text": "La cabeza y las manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las manos y los pies",
+          "isCorrect": true
+        },
+        {
+          "text": "Todo el cuerpo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto aceite de olivas entraba en el aceite de la santa unción?",
+      "explanation": "Con las especias se tomaba un hin de aceite de olivas, al peso del santuario, para hacer el aceite de la santa unción.",
+      "bibleReference": "Éxodo 30:24",
+      "answers": [
+        {
+          "text": "Quinientos siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un hin",
+          "isCorrect": true
+        },
+        {
+          "text": "La cuarta parte de un hin",
+          "isCorrect": false
+        },
+        {
+          "text": "Un talento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasaba a quien compusiera un ungüento semejante?",
+      "explanation": "Cualquiera que compusiera ungüento semejante, o lo pusiera sobre un extraño, sería cortado de sus pueblos.",
+      "bibleReference": "Éxodo 30:33",
+      "answers": [
+        {
+          "text": "Sería cortado de sus pueblos",
+          "isCorrect": true
+        },
+        {
+          "text": "Moriría a la puerta del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagaría medio siclo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sería echado fuera del campo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

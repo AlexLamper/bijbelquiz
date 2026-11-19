@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Levítico 23: las solemnidades de Jehová, desde el sábado y la pascua hasta las trompetas, las expiaciones y las cabañas.",
+  "slug": "leviticus-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 3, ¿cuántos días se trabajaría antes del sábado de reposo?",
+      "explanation": "El versículo dice que seis días se trabajará y que el séptimo día será sábado de reposo y convocación santa.",
+      "bibleReference": "Levítico 23:3",
+      "answers": [
+        {
+          "text": "Seis días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué día del mes primero es la pascua de Jehová?",
+      "explanation": "El versículo dice que en el mes primero, a los catorce del mes, entre las dos tardes, es pascua de Jehová.",
+      "bibleReference": "Levítico 23:5",
+      "answers": [
+        {
+          "text": "A los diez del mes, en la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "A los quince del mes, en la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "A los catorce del mes, entre las dos tardes",
+          "isCorrect": true
+        },
+        {
+          "text": "Al primero del mes, al amanecer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Desde los quince de ese mes, ¿cuántos días comerían ázimos?",
+      "explanation": "El versículo dice que a los quince días de ese mes es la solemnidad de los ázimos y que siete días comerán ázimos.",
+      "bibleReference": "Levítico 23:6",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Ocho días",
+          "isCorrect": false
+        },
+        {
+          "text": "Catorce días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían traer al sacerdote cuando segaran la mies de la tierra que Jehová les daba?",
+      "explanation": "Debían traer al sacerdote un omer por primicia de los primeros frutos de su siega, y el sacerdote lo mecería delante de Jehová.",
+      "bibleReference": "Levítico 23:10-11",
+      "answers": [
+        {
+          "text": "Dos panes cocidos con levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro de la vacada",
+          "isCorrect": false
+        },
+        {
+          "text": "La décima parte de toda su siega",
+          "isCorrect": false
+        },
+        {
+          "text": "Un omer de los primeros frutos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la libación de vino que acompañaba ese holocausto?",
+      "explanation": "El versículo dice que el presente será de dos décimas de flor de harina con aceite, y su libación de vino la cuarta parte de un hin.",
+      "bibleReference": "Levítico 23:13",
+      "answers": [
+        {
+          "text": "Dos décimas de un hin",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad de un hin",
+          "isCorrect": false
+        },
+        {
+          "text": "La cuarta parte de un hin",
+          "isCorrect": true
+        },
+        {
+          "text": "Un hin entero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días debían contar hasta ofrecer el nuevo presente a Jehová?",
+      "explanation": "Debían contar desde el día siguiente al sábado, hasta el día siguiente del séptimo sábado: cincuenta días.",
+      "bibleReference": "Levítico 23:16",
+      "answers": [
+        {
+          "text": "Cincuenta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 24, ¿al son de qué era la conmemoración del primero del mes séptimo?",
+      "explanation": "El versículo dice que en el mes séptimo, al primero del mes, tendrán sábado, una conmemoración al son de trompetas y una santa convocación.",
+      "bibleReference": "Levítico 23:24",
+      "answers": [
+        {
+          "text": "De címbalos",
+          "isCorrect": false
+        },
+        {
+          "text": "De arpas",
+          "isCorrect": false
+        },
+        {
+          "text": "De panderos",
+          "isCorrect": false
+        },
+        {
+          "text": "De trompetas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué día era a los diez del mes séptimo?",
+      "explanation": "El versículo dice que a los diez de ese mes séptimo será el día de las expiaciones, con santa convocación, y afligirán sus almas.",
+      "bibleReference": "Levítico 23:27",
+      "answers": [
+        {
+          "text": "El día de las primicias",
+          "isCorrect": false
+        },
+        {
+          "text": "El día de las expiaciones",
+          "isCorrect": true
+        },
+        {
+          "text": "La solemnidad de los ázimos",
+          "isCorrect": false
+        },
+        {
+          "text": "La fiesta de las cabañas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 32, ¿cuándo comenzaba ese sábado de reposo?",
+      "explanation": "El versículo dice que afligirán sus almas comenzando a los nueve del mes en la tarde, y que de tarde a tarde holgarán su sábado.",
+      "bibleReference": "Levítico 23:32",
+      "answers": [
+        {
+          "text": "A los diez del mes, en la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Al primero del mes, al son de trompetas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los nueve del mes, en la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "A los quince del mes, en la tarde",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde debían habitar siete días en la solemnidad del mes séptimo?",
+      "explanation": "El texto dice que habitarán en cabañas siete días, para que sus descendientes sepan que en cabañas hizo habitar a los hijos de Israel cuando los sacó de Egipto.",
+      "bibleReference": "Levítico 23:42-43",
+      "answers": [
+        {
+          "text": "En cabañas",
+          "isCorrect": true
+        },
+        {
+          "text": "En tiendas alrededor del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "En las ciudades de los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "En el atrio del santuario",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

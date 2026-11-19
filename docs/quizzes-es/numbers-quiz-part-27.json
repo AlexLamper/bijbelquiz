@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre Números 27: las hijas de Salphaad y su heredad, y Josué puesto delante de toda la congregación.",
+  "slug": "numbers-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaban las hijas de Salphaad?",
+      "explanation": "Los nombres de las hijas de Salphaad eran Maala, Noa, Hogla, Milca y Tirsa.",
+      "bibleReference": "Números 27:1",
+      "answers": [
+        {
+          "text": "Maala, Noa, Hogla, Milca y Tirsa",
+          "isCorrect": true
+        },
+        {
+          "text": "María, Sera, Cozbi y Milca",
+          "isCorrect": false
+        },
+        {
+          "text": "Jochâbed, Milca y Tirsa",
+          "isCorrect": false
+        },
+        {
+          "text": "Noa, Hogla, Jezer y Helec",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron las hijas acerca de su padre y la compañía de Coré?",
+      "explanation": "Dijeron que su padre murió en el desierto y que no estuvo en la junta que se reunió contra Jehová en la compañía de Coré.",
+      "bibleReference": "Números 27:3",
+      "answers": [
+        {
+          "text": "Que murió con la compañía de Coré",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fue príncipe de la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no estuvo en aquella junta",
+          "isCorrect": true
+        },
+        {
+          "text": "Que fue contado entre los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron las hijas de Salphaad?",
+      "explanation": "Pidieron heredad entre los hermanos de su padre, para que el nombre de su padre no fuese quitado de entre su familia.",
+      "bibleReference": "Números 27:4",
+      "answers": [
+        {
+          "text": "Un lugar en el tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su padre fuese contado en el censo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un marido de la tribu de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "Heredad entre los hermanos de su padre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés con la causa de las hijas de Salphaad?",
+      "explanation": "Moisés llevó su causa delante de Jehová.",
+      "bibleReference": "Números 27:5",
+      "answers": [
+        {
+          "text": "La entregó a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "La llevó delante de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "La dejó para más tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "La juzgó él mismo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según este estatuto, ¿a quién pasaba la herencia del que moría sin hijos?",
+      "explanation": "El texto dice que cuando alguno muriere sin hijos, su herencia se traspasará a su hija.",
+      "bibleReference": "Números 27:8",
+      "answers": [
+        {
+          "text": "A su hija",
+          "isCorrect": true
+        },
+        {
+          "text": "A sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Al sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Y si el padre del difunto no tenía hermanos, a quién se daba la herencia?",
+      "explanation": "El texto dice que se daría su herencia a su pariente más cercano de su linaje, el cual la poseería.",
+      "bibleReference": "Números 27:11",
+      "answers": [
+        {
+          "text": "A toda la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de su tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "Al rey de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A su pariente más cercano",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A qué monte mandó Jehová subir a Moisés para ver la tierra?",
+      "explanation": "Jehová le dijo que subiera al monte Abarim y vería la tierra que había dado a los hijos de Israel.",
+      "bibleReference": "Números 27:12",
+      "answers": [
+        {
+          "text": "Al monte de Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "A la cumbre de Pisga",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte Abarim",
+          "isCorrect": true
+        },
+        {
+          "text": "A la cumbre de Peor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara Moisés a la congregación si no tiene un varón que la guíe?",
+      "explanation": "Moisés pidió un varón que saliera y entrara delante de ellos, para que la congregación de Jehová no fuese como ovejas sin pastor.",
+      "bibleReference": "Números 27:17",
+      "answers": [
+        {
+          "text": "Con un campo sin agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Con ovejas sin pastor",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una ciudad sin muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un pueblo sin tiendas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién mandó Jehová tomar y poner la mano sobre él?",
+      "explanation": "Jehová le dijo que tomara a Josué hijo de Nun, varón en el cual hay espíritu, y pusiera su mano sobre él.",
+      "bibleReference": "Números 27:18",
+      "answers": [
+        {
+          "text": "A Eleazar hijo de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Caleb hijo de Jephone",
+          "isCorrect": false
+        },
+        {
+          "text": "A Josué hijo de Nun",
+          "isCorrect": true
+        },
+        {
+          "text": "A Phinees hijo de Eleazar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué juicio debía preguntar Josué delante de Eleazar el sacerdote?",
+      "explanation": "El texto dice que estaría delante de Eleazar el sacerdote, y a él preguntaría por el juicio del Urim delante de Jehová.",
+      "bibleReference": "Números 27:21",
+      "answers": [
+        {
+          "text": "Por la suerte de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el juicio del Urim",
+          "isCorrect": true
+        },
+        {
+          "text": "Por el agua de separación",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la vara de Aarón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

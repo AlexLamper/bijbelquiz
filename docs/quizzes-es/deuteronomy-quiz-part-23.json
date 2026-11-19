@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Deuteronomio 23: quiénes entraban en la congregación, la santidad del real, el siervo que huía y los votos.",
+  "slug": "deuteronomy-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes no entrarían en la congregación de Jehová, ni aun en la décima generación?",
+      "explanation": "El texto dice que no entrará Ammonita ni Moabita en la congregación de Jehová, ni aun en la décima generación.",
+      "bibleReference": "Deuteronomio 23:3",
+      "answers": [
+        { "text": "El Idumeo y el Egipcio", "isCorrect": false },
+        { "text": "El Ammonita y el Moabita", "isCorrect": true },
+        { "text": "El Siro y el Mesopotamio", "isCorrect": false },
+        { "text": "El Cananeo y el Jebuseo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a quién alquilaron para maldecir a Israel?",
+      "explanation": "El versículo dice que alquilaron contra ti a Balaam hijo de Beor, de Pethor de Mesopotamia de Siria, para que te maldijese.",
+      "bibleReference": "Deuteronomio 23:4",
+      "answers": [
+        { "text": "A los sacerdotes de Pethor", "isCorrect": false },
+        { "text": "A los agoreros de Egipto", "isCorrect": false },
+        { "text": "A los ancianos de Moab", "isCorrect": false },
+        { "text": "A Balaam hijo de Beor", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová con aquella maldición?",
+      "explanation": "El texto dice que Jehová no quiso oír a Balaam y volvió la maldición en bendición, porque Jehová amaba a su pueblo.",
+      "bibleReference": "Deuteronomio 23:5",
+      "answers": [
+        { "text": "La volvió en bendición", "isCorrect": true },
+        { "text": "La dejó sin respuesta", "isCorrect": false },
+        { "text": "La envió sobre Egipto", "isCorrect": false },
+        { "text": "La escribió en un libro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda el texto no abominar?",
+      "explanation": "El versículo dice que no abominarás al Idumeo, que es tu hermano, ni al Egipcio, porque fuiste extranjero en su tierra.",
+      "bibleReference": "Deuteronomio 23:7",
+      "answers": [
+        { "text": "Al Ammonita y al Moabita", "isCorrect": false },
+        { "text": "Al Cananeo y al Heveo", "isCorrect": false },
+        { "text": "Al Idumeo y al Egipcio", "isCorrect": true },
+        { "text": "Al Amalecita y al Hetheo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué generación entrarían en la congregación de Jehová los hijos nacidos de ellos?",
+      "explanation": "El texto dice que los hijos que nacieren de ellos entrarán en la congregación de Jehová a la tercera generación.",
+      "bibleReference": "Deuteronomio 23:8",
+      "answers": [
+        { "text": "En la décima generación", "isCorrect": false },
+        { "text": "En la séptima generación", "isCorrect": false },
+        { "text": "No entrarían nunca", "isCorrect": false },
+        { "text": "En la tercera generación", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuándo volvía al campo el que había salido de él por no estar limpio?",
+      "explanation": "El texto dice que al declinar de la tarde se lavará con agua, y cuando fuere puesto el sol entrará en el campo.",
+      "bibleReference": "Deuteronomio 23:10-11",
+      "answers": [
+        { "text": "Al declinar la tarde, sin lavarse", "isCorrect": false },
+        { "text": "Al ponerse el sol, después de lavarse", "isCorrect": true },
+        { "text": "Al día siguiente por la mañana", "isCorrect": false },
+        { "text": "Después de siete días fuera", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para qué debía llevarse una estaca entre las armas?",
+      "explanation": "El texto manda tener una estaca entre las armas para cavar con ella fuera del real y cubrir el excremento al volver.",
+      "bibleReference": "Deuteronomio 23:13",
+      "answers": [
+        { "text": "Para afirmar la tienda en el real", "isCorrect": false },
+        { "text": "Para señalar el término del campo", "isCorrect": false },
+        { "text": "Para cavar y cubrir su excremento", "isCorrect": true },
+        { "text": "Para pelear contra sus enemigos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se mandaba acerca del siervo que huía de su amo y venía a Israel?",
+      "explanation": "El texto dice que no lo entregarás a su señor, sino que morará contigo en el lugar que escogiere, y no le harás fuerza.",
+      "bibleReference": "Deuteronomio 23:15-16",
+      "answers": [
+        { "text": "No entregarlo a su señor", "isCorrect": true },
+        { "text": "Devolverlo a su amo", "isCorrect": false },
+        { "text": "Venderlo en la ciudad", "isCorrect": false },
+        { "text": "Echarlo fuera del término", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se mandaba acerca del voto prometido a Jehová?",
+      "explanation": "El texto dice que no tardarás en pagarlo, porque Jehová ciertamente lo demandará de ti y habría en ti pecado.",
+      "bibleReference": "Deuteronomio 23:21",
+      "answers": [
+        { "text": "Pagarlo en el año tercero", "isCorrect": false },
+        { "text": "No tardar en pagarlo", "isCorrect": true },
+        { "text": "Pagarlo con plata solamente", "isCorrect": false },
+        { "text": "Prometerlo delante de los ancianos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al entrar en la mies del prójimo, ¿qué estaba permitido hacer?",
+      "explanation": "El último versículo dice que podrás cortar espigas con tu mano, pero no aplicarás hoz a la mies de tu prójimo.",
+      "bibleReference": "Deuteronomio 23:25",
+      "answers": [
+        { "text": "Aplicar la hoz a la mies", "isCorrect": false },
+        { "text": "Llevar una gavilla a casa", "isCorrect": false },
+        { "text": "Cortar espigas con la mano", "isCorrect": true },
+        { "text": "Nada en absoluto", "isCorrect": false }
+      ]
+    }
+  ]
+}

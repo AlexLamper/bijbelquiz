@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Josué 13: la tierra que quedaba por poseer y la herencia de Rubén, de Gad y de la media tribu de Manasés.",
+  "slug": "joshua-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le dijo Jehová a Josué cuando era ya viejo, entrado en días?",
+      "explanation": "Jehová le dijo que él era ya viejo, de edad avanzada, y que quedaba aún muy mucha tierra por poseer.",
+      "bibleReference": "Josué 13:1",
+      "answers": [
+        {
+          "text": "Que ya había tomado toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que entregara el mando a Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Que descansara de repartir la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quedaba aún mucha tierra por poseer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas provincias de los Philisteos nombra el texto?",
+      "explanation": "El texto habla de cinco provincias de los Philisteos: los Gazeos, Asdodios, Ascalonitas, Getheos y Accaronitas.",
+      "bibleReference": "Josué 13:3",
+      "answers": [
+        {
+          "text": "Tres provincias",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco provincias",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete provincias",
+          "isCorrect": false
+        },
+        {
+          "text": "Nueve provincias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes debía repartir Josué aquella tierra en heredad?",
+      "explanation": "Jehová le mandó partir aquella tierra en heredad a las nueve tribus y a la media tribu de Manasés.",
+      "bibleReference": "Josué 13:7",
+      "answers": [
+        {
+          "text": "A las doce tribus de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Levitas y los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "A nueve tribus y a la media tribu de Manasés",
+          "isCorrect": true
+        },
+        {
+          "text": "A los Rubenitas y a los Gaditas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no se dio heredad a la tribu de Leví?",
+      "explanation": "El texto dice que a la tribu de Leví no se dio heredad, porque los sacrificios de Jehová Dios de Israel son su heredad.",
+      "bibleReference": "Josué 13:14",
+      "answers": [
+        {
+          "text": "Porque los sacrificios de Jehová son su heredad",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque habitaban al otro lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ya tenían la tierra de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no pasaron el Jordán con Josué",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes habitaron entre los israelitas hasta hoy, porque no los echaron?",
+      "explanation": "A los de Gessuri y Maachâti no los echaron los hijos de Israel, antes Gessur y Maachât habitaron entre los israelitas hasta hoy.",
+      "bibleReference": "Josué 13:13",
+      "answers": [
+        {
+          "text": "Los Philisteos y los Heveos",
+          "isCorrect": false
+        },
+        {
+          "text": "Gessur y Maachât",
+          "isCorrect": true
+        },
+        {
+          "text": "Los Sidonios y los Gibleos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Cananeos de Dibón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué adivino, hijo de Beor, mataron a cuchillo los hijos de Israel?",
+      "explanation": "El texto dice que los hijos de Israel mataron a cuchillo a Balaam adivino, hijo de Beor, con los demás que mataron.",
+      "bibleReference": "Josué 13:22",
+      "answers": [
+        {
+          "text": "A Sehón rey de los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Og rey de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Balaam, hijo de Beor",
+          "isCorrect": true
+        },
+        {
+          "text": "A Machîr, hijo de Manasés",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué recibió la tribu de Gad como término?",
+      "explanation": "El término de los hijos de Gad fue Jacer y todas las ciudades de Galaad, con la mitad de la tierra de los hijos de Ammón hasta Aroer.",
+      "bibleReference": "Josué 13:25",
+      "answers": [
+        {
+          "text": "Jacer y todas las ciudades de Galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "Hesbón, Dibón y Bamoth-baal",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo Basán y las aldeas de Jair",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de Hermón y toda la tierra de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas poblaciones eran las aldeas de Jair en Basán?",
+      "explanation": "El texto dice que todas las aldeas de Jair que están en Basán eran sesenta poblaciones.",
+      "bibleReference": "Josué 13:30",
+      "answers": [
+        {
+          "text": "Treinta poblaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce poblaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte poblaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta poblaciones",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes se dio la mitad de Galaad, con Astaroth y Edrei?",
+      "explanation": "Esas ciudades del reino de Og en Basán se dieron a los hijos de Machîr, hijo de Manasés, conforme a sus familias.",
+      "bibleReference": "Josué 13:31",
+      "answers": [
+        {
+          "text": "A los hijos de Rubén, conforme a sus familias",
+          "isCorrect": false
+        },
+        {
+          "text": "A la tribu de Leví, para sus sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Machîr, hijo de Manasés",
+          "isCorrect": true
+        },
+        {
+          "text": "A los hijos de Gad, por sus familias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde repartió Moisés estas heredades?",
+      "explanation": "El texto dice que Moisés repartió esto en heredad en los llanos de Moab, de la otra parte del Jordán de Jericó, al oriente.",
+      "bibleReference": "Josué 13:32",
+      "answers": [
+        {
+          "text": "En Gilgal, junto al campo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "En los llanos de Moab, al oriente del Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "En Hesbón, la ciudad de Sehón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Astaroth, ciudad del reino de Og",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

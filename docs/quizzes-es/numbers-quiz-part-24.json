@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Números 24: la última parábola de Balaam, la estrella de Jacob y las palabras sobre Amalec y los navíos de Cittim.",
+  "slug": "numbers-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo Balaam esta vez, en lugar de ir al encuentro de agüeros?",
+      "explanation": "Como vio que parecía bien a Jehová que bendijese a Israel, no fue como la primera y la segunda vez al encuentro de agüeros, sino que puso su rostro hacia el desierto.",
+      "bibleReference": "Números 24:1",
+      "answers": [
+        {
+          "text": "Edificó otros siete altares",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvió a su lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Subió a la cumbre de Pisga",
+          "isCorrect": false
+        },
+        {
+          "text": "Puso su rostro hacia el desierto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vino sobre Balaam cuando alzó sus ojos y vio a Israel alojado por sus tribus?",
+      "explanation": "Alzando sus ojos, vio a Israel alojado por sus tribus, y el espíritu de Dios vino sobre él.",
+      "bibleReference": "Números 24:2",
+      "answers": [
+        {
+          "text": "El espíritu de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Un gran temor",
+          "isCorrect": false
+        },
+        {
+          "text": "Un sueño profundo",
+          "isCorrect": false
+        },
+        {
+          "text": "La ira de Balac",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Balaam de las tiendas de Jacob?",
+      "explanation": "Dijo: Cuán hermosas son tus tiendas, oh Jacob, tus habitaciones, oh Israel.",
+      "bibleReference": "Números 24:5",
+      "answers": [
+        {
+          "text": "Que estaban vacías",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran hermosas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que serían quemadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran pocas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Más que quién sería ensalzado el rey de aquel pueblo?",
+      "explanation": "El texto dice que su rey se ensalzará más que Agag, y que su reino será ensalzado.",
+      "bibleReference": "Números 24:7",
+      "answers": [
+        {
+          "text": "Más que Balac",
+          "isCorrect": false
+        },
+        {
+          "text": "Más que Sehón",
+          "isCorrect": false
+        },
+        {
+          "text": "Más que Agag",
+          "isCorrect": true
+        },
+        {
+          "text": "Más que Og",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la parábola sobre los que bendicen y los que maldicen a ese pueblo?",
+      "explanation": "Dice: Benditos los que te bendijeren, y malditos los que te maldijeren.",
+      "bibleReference": "Números 24:9",
+      "answers": [
+        {
+          "text": "Que todos los pueblos serán benditos en él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que todos los que lo vean serán malditos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie podrá bendecirlo ni maldecirlo",
+          "isCorrect": false
+        },
+        {
+          "text": "Benditos los que te bendijeren y malditos los que te maldijeren",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Balac cuando se encendió su ira contra Balaam?",
+      "explanation": "Balac batió sus palmas y le dijo que lo había llamado para maldecir a sus enemigos y que los había bendecido ya tres veces.",
+      "bibleReference": "Números 24:10",
+      "answers": [
+        {
+          "text": "Batió sus palmas y le reclamó",
+          "isCorrect": true
+        },
+        {
+          "text": "Mandó prender a Balaam",
+          "isCorrect": false
+        },
+        {
+          "text": "Le ofreció más plata y oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó otro altar en el valle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la parábola que saldrá de Jacob?",
+      "explanation": "Dice que saldrá estrella de Jacob y se levantará cetro de Israel.",
+      "bibleReference": "Números 24:17",
+      "answers": [
+        {
+          "text": "Un ángel",
+          "isCorrect": false
+        },
+        {
+          "text": "Una estrella",
+          "isCorrect": true
+        },
+        {
+          "text": "Un río",
+          "isCorrect": false
+        },
+        {
+          "text": "Una nube",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Balaam acerca de Amalec?",
+      "explanation": "Dijo que Amalec es cabeza de gentes, mas su postrimería perecerá para siempre.",
+      "bibleReference": "Números 24:20",
+      "answers": [
+        {
+          "text": "Que habitará seguro para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será bendecido con Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es cabeza de gentes y perecerá",
+          "isCorrect": true
+        },
+        {
+          "text": "Que llevará cautivo al Cineo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Balaam que harían los navíos de la costa de Cittim?",
+      "explanation": "Dijo que vendrían navíos de la costa de Cittim y afligirían a Assur, y también a Eber.",
+      "bibleReference": "Números 24:24",
+      "answers": [
+        {
+          "text": "Afligirían a Assur y a Eber",
+          "isCorrect": true
+        },
+        {
+          "text": "Traerían plata y oro a Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevarían cautivo a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificarían ciudades en Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron Balaam y Balac al final del capítulo?",
+      "explanation": "Balaam se levantó y se volvió a su lugar, y también Balac se fue por su camino.",
+      "bibleReference": "Números 24:25",
+      "answers": [
+        {
+          "text": "Edificaron juntos un altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelearon contra Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada uno se fue por su camino",
+          "isCorrect": true
+        },
+        {
+          "text": "Subieron al monte de Hor",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

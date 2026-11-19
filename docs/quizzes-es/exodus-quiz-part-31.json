@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 31",
+  "description": "Diez preguntas sobre Éxodo 31: Bezaleel y Aholiab llamados para la obra, la señal del sábado y las dos tablas escritas con el dedo de Dios.",
+  "slug": "exodus-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién llamó Jehová por su nombre para la obra?",
+      "explanation": "El versículo dice: Mira, yo he llamado por su nombre a Bezaleel, hijo de Uri, hijo de Hur, de la tribu de Judá.",
+      "bibleReference": "Éxodo 31:2",
+      "answers": [
+        {
+          "text": "A Bezaleel, hijo de Uri",
+          "isCorrect": true
+        },
+        {
+          "text": "A Uri, hijo de Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "A Ahisamac, hijo de Aholiab",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hur, de la tribu de Dan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué tribu era Bezaleel?",
+      "explanation": "El versículo dice que Bezaleel, hijo de Uri, hijo de Hur, era de la tribu de Judá.",
+      "bibleReference": "Éxodo 31:2",
+      "answers": [
+        {
+          "text": "De Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "De Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "De Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "De Rubén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué llenó Jehová a Bezaleel?",
+      "explanation": "Lo llenó del espíritu de Dios, en sabiduría, inteligencia, ciencia y todo artificio.",
+      "bibleReference": "Éxodo 31:3",
+      "answers": [
+        {
+          "text": "De temor de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Del espíritu de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Del aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "De la ley y los mandamientos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién puso Jehová junto con Bezaleel?",
+      "explanation": "El versículo dice que puso con él a Aholiab, hijo de Ahisamac, de la tribu de Dan.",
+      "bibleReference": "Éxodo 31:6",
+      "answers": [
+        {
+          "text": "A Uri, hijo de Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aarón el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hur, de la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aholiab, hijo de Ahisamac",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué materiales debía trabajar Bezaleel?",
+      "explanation": "Se le dio sabiduría para inventar diseños y para trabajar en oro, en plata y en metal, y también en piedras y en madera.",
+      "bibleReference": "Éxodo 31:4-5",
+      "answers": [
+        {
+          "text": "En oro, plata y metal",
+          "isCorrect": true
+        },
+        {
+          "text": "En lino y púrpura",
+          "isCorrect": false
+        },
+        {
+          "text": "En cueros y pelo de cabras",
+          "isCorrect": false
+        },
+        {
+          "text": "En plata y estaño",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es el sábado según el texto?",
+      "explanation": "Guardar los sábados es señal entre Jehová y los hijos de Israel por sus edades, para que sepan que él es Jehová que los santifica.",
+      "bibleReference": "Éxodo 31:13",
+      "answers": [
+        {
+          "text": "Un día de ofrendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una señal entre Jehová y ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Una fiesta de los ázimos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pacto con los sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que hiciere obra en el día del sábado?",
+      "explanation": "Seis días se hará obra, pero el séptimo es sábado de reposo consagrado a Jehová, y el que hiciere obra en el sábado morirá ciertamente.",
+      "bibleReference": "Éxodo 31:15",
+      "answers": [
+        {
+          "text": "Que pagará medio siclo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será lavado con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Que morirá ciertamente",
+          "isCorrect": true
+        },
+        {
+          "text": "Que hará expiación con un carnero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días se hacía obra según el versículo?",
+      "explanation": "El versículo dice: Seis días se hará obra, mas el día séptimo es sábado de reposo consagrado a Jehová.",
+      "bibleReference": "Éxodo 31:15",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo, ¿qué hizo Jehová en el séptimo día?",
+      "explanation": "En seis días hizo Jehová los cielos y la tierra, y en el séptimo día cesó y reposó.",
+      "bibleReference": "Éxodo 31:17",
+      "answers": [
+        {
+          "text": "Habló con Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Cesó y reposó",
+          "isCorrect": true
+        },
+        {
+          "text": "Santificó a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribió las tablas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué estaban escritas las dos tablas del testimonio?",
+      "explanation": "Jehová dio a Moisés dos tablas del testimonio, tablas de piedra escritas con el dedo de Dios.",
+      "bibleReference": "Éxodo 31:18",
+      "answers": [
+        {
+          "text": "Con el dedo de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la mano de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Con buril de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Con grabadura de sello",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

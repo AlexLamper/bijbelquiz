@@ -1,0 +1,242 @@
+{
+  "title": "Josué Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Josué 4: las doce piedras del Jordán, el campamento en Gilgal y la señal para los hijos venideros.",
+  "slug": "joshua-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántas piedras debían tomar del medio del Jordán?",
+      "explanation": "El versículo manda tomar doce piedras del medio del Jordán y asentarlas en el alojamiento donde pasarían la noche.",
+      "bibleReference": "Josué 4:3",
+      "answers": [
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué lugar exacto del Jordán debían tomar las piedras?",
+      "explanation": "El versículo dice que las tomaran del medio del Jordán, del lugar donde estaban firmes los pies de los sacerdotes.",
+      "bibleReference": "Josué 4:3",
+      "answers": [
+        {
+          "text": "De la orilla del mar Salado",
+          "isCorrect": false
+        },
+        {
+          "text": "Donde estaban los pies de los sacerdotes",
+          "isCorrect": true
+        },
+        {
+          "text": "Del muro de la ciudad de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "Del vado por donde pasó el pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Josué, ¿cómo debía llevar cada hombre su piedra?",
+      "explanation": "Josué les dijo que pasaran delante del arca al medio del Jordán y que cada uno tomara una piedra sobre su hombro.",
+      "bibleReference": "Josué 4:5",
+      "answers": [
+        {
+          "text": "En un carro",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre su cabeza",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre su hombro",
+          "isCorrect": true
+        },
+        {
+          "text": "Atada con cuerdas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué servirían aquellas piedras?",
+      "explanation": "El texto dice que serían señal entre ellos y que, cuando sus hijos preguntaran, estas piedras serían por memoria a los hijos de Israel para siempre.",
+      "bibleReference": "Josué 4:6-7",
+      "answers": [
+        {
+          "text": "Para edificar un altar a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Para cerrar el paso del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Para marcar límites de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Para ser señal y memoria",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde levantó Josué otras doce piedras, en el lugar donde estuvieron los pies de los sacerdotes?",
+      "explanation": "El versículo dice que Josué también levantó doce piedras en medio del Jordán, donde estuvieron los pies de los sacerdotes, y han estado allí hasta hoy.",
+      "bibleReference": "Josué 4:9",
+      "answers": [
+        {
+          "text": "En medio del Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "En la ribera oriental",
+          "isCorrect": false
+        },
+        {
+          "text": "En la campiña de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte junto a Jericó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres armados pasaron hacia la campiña de Jericó?",
+      "explanation": "El versículo dice que como cuarenta mil hombres armados a punto pasaron hacia la campiña de Jericó delante de Jehová a la guerra.",
+      "bibleReference": "Josué 4:13",
+      "answers": [
+        {
+          "text": "Como veinte mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como cuarenta mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Como seiscientos mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como diez mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová con Josué en aquel día?",
+      "explanation": "El versículo dice que en aquel día Jehová engrandeció a Josué en ojos de todo Israel, y le temieron como habían temido a Moisés.",
+      "bibleReference": "Josué 4:14",
+      "answers": [
+        {
+          "text": "Le dio el arca del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Le mostró toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo engrandeció ante todo Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Le habló en columna de nube",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con las aguas del Jordán cuando los sacerdotes subieron del río?",
+      "explanation": "El versículo dice que, cuando los sacerdotes subieron y sus pies estuvieron en seco, las aguas del Jordán se volvieron a su lugar, corriendo como antes sobre todos sus bordes.",
+      "bibleReference": "Josué 4:18",
+      "answers": [
+        {
+          "text": "Se detuvieron como un montón",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaron secas hasta el día de hoy",
+          "isCorrect": false
+        },
+        {
+          "text": "Se volvieron hacia el mar Salado",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron a su lugar y a sus bordes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué día del mes primero subió el pueblo del Jordán?",
+      "explanation": "El versículo dice que el pueblo subió del Jordán el diez del mes primero y asentaron el campo en Gilgal.",
+      "bibleReference": "Josué 4:19",
+      "answers": [
+        {
+          "text": "El diez",
+          "isCorrect": true
+        },
+        {
+          "text": "El catorce",
+          "isCorrect": false
+        },
+        {
+          "text": "El primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El séptimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde asentaron el campamento y erigió Josué las doce piedras traídas del Jordán?",
+      "explanation": "El texto dice que asentaron el campo en Gilgal, al lado oriental de Jericó, y que allí Josué erigió las doce piedras que habían traído del Jordán.",
+      "bibleReference": "Josué 4:19-20",
+      "answers": [
+        {
+          "text": "En Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En Sittim",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gilgal",
+          "isCorrect": true
+        },
+        {
+          "text": "En Adam",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

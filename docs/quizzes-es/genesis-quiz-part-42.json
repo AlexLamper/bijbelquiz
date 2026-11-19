@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 42",
+  "description": "Diez preguntas sobre Génesis 42: el primer viaje de los hermanos a Egipto y la prueba que les puso José.",
+  "slug": "genesis-quiz-part-42",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo Jacob a sus hijos que hicieran cuando supo que había víveres en Egipto?",
+      "explanation": "Jacob dijo que había oído que había víveres en Egipto y les mandó descender allá y comprar, para que pudiesen vivir y no muriesen.",
+      "bibleReference": "Génesis 42:2",
+      "answers": [
+        {
+          "text": "Repartir el trigo que tenían",
+          "isCorrect": false
+        },
+        {
+          "text": "Descender a Egipto y comprar",
+          "isCorrect": true
+        },
+        {
+          "text": "Ir a Sichêm a pastorear",
+          "isCorrect": false
+        },
+        {
+          "text": "Vender sus ganados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuál de sus hijos no envió Jacob con los demás?",
+      "explanation": "Jacob no envió a Benjamín, hermano de José, con sus hermanos, porque dijo que no fuera que le aconteciese algún desastre.",
+      "bibleReference": "Génesis 42:4",
+      "answers": [
+        {
+          "text": "A Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "A Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A Benjamín",
+          "isCorrect": true
+        },
+        {
+          "text": "A Simeón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hermanos al llegar delante de José?",
+      "explanation": "Llegaron los hermanos de José y se inclinaron a él rostro por tierra.",
+      "bibleReference": "Génesis 42:6",
+      "answers": [
+        {
+          "text": "Se inclinaron a él rostro por tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Le ofrecieron un presente",
+          "isCorrect": false
+        },
+        {
+          "text": "Le pidieron ver a su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron de su presencia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué acusó José a sus hermanos?",
+      "explanation": "José se acordó de los sueños que había tenido de ellos y les dijo que eran espías, venidos a ver lo descubierto del país.",
+      "bibleReference": "Génesis 42:9",
+      "answers": [
+        {
+          "text": "De haber hurtado trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "De ser hombres de verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "De no pagar el dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "De ser espías",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hermanos dijeron ellos que eran?",
+      "explanation": "Respondieron que eran doce hermanos, hijos de un varón en la tierra de Canaán, que el menor estaba con su padre y que otro no parecía.",
+      "bibleReference": "Génesis 42:13",
+      "answers": [
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Once",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué condición puso José para que fuesen probadas sus palabras?",
+      "explanation": "José dijo que no saldrían de allí sino cuando viniese su hermano menor, y que enviasen a uno a traerlo.",
+      "bibleReference": "Génesis 42:15-16",
+      "answers": [
+        {
+          "text": "Que pagaran doblado dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dejaran allí sus asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que trajeran a su hermano menor",
+          "isCorrect": true
+        },
+        {
+          "text": "Que jurasen por Faraón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo los juntó José en la cárcel?",
+      "explanation": "El texto dice que los juntó en la cárcel por tres días.",
+      "bibleReference": "Génesis 42:17",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres meses",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A cuál de los hermanos tomó José y aprisionó a vista de ellos?",
+      "explanation": "José se apartó de ellos y lloró; después volvió, les habló y tomó de entre ellos a Simeón, y le aprisionó a vista de ellos.",
+      "bibleReference": "Génesis 42:24",
+      "answers": [
+        {
+          "text": "A Simeón",
+          "isCorrect": true
+        },
+        {
+          "text": "A Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "A Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó José que pusieran en los sacos además del trigo?",
+      "explanation": "José mandó que llenaran sus sacos de trigo y que devolviesen el dinero de cada uno, poniéndolo en su saco, y les diesen comida para el camino.",
+      "bibleReference": "Génesis 42:25",
+      "answers": [
+        {
+          "text": "Una copa de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Mudas de vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "El dinero de cada uno",
+          "isCorrect": true
+        },
+        {
+          "text": "Aromas y mirra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Jacob cuando Rubén se ofreció a responder por Benjamín?",
+      "explanation": "Jacob dijo que su hijo no descendería con ellos, porque su hermano era muerto y él solo había quedado.",
+      "bibleReference": "Génesis 42:38",
+      "answers": [
+        {
+          "text": "Que irían todos juntos a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Benjamín no descendería con ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que él mismo iría a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperarían la vuelta de Simeón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

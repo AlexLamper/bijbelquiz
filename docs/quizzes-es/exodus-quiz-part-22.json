@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre Éxodo 22: las leyes sobre el hurto, los daños, lo dado a guardar y el trato al extranjero, la viuda y el huérfano.",
+  "slug": "exodus-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuánto pagaba el que hurtaba un buey y lo degollaba o lo vendía?",
+      "explanation": "Por aquel buey pagará cinco bueyes, y por aquella oveja, cuatro ovejas.",
+      "bibleReference": "Éxodo 22:1",
+      "answers": [
+        {
+          "text": "Dos bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco bueyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro bueyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si el ladrón era hallado con el hurto vivo en la mano, ¿cuánto pagaba?",
+      "explanation": "Si fuere hallado con el hurto en la mano, sea buey o asno u oveja vivos, pagará el duplo.",
+      "bibleReference": "Éxodo 22:4",
+      "answers": [
+        {
+          "text": "El duplo",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco por uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada, si lo devolvía",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad de su hacienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si rompía un fuego y quemaba un montón, una haza o un campo, ¿quién pagaba?",
+      "explanation": "El que encendió el fuego pagará lo quemado.",
+      "bibleReference": "Éxodo 22:6",
+      "answers": [
+        {
+          "text": "El dueño del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los jueces del lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadie, porque fue por el viento",
+          "isCorrect": false
+        },
+        {
+          "text": "El que encendió el fuego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si alguno daba plata o alhajas a guardar, fueron hurtadas y el ladrón no se hallaba, ¿qué se hacía?",
+      "explanation": "Si el ladrón no se hallare, el dueño de la casa será presentado a los jueces, para ver si ha metido su mano en la hacienda de su prójimo.",
+      "bibleReference": "Éxodo 22:7-8",
+      "answers": [
+        {
+          "text": "Se perdonaba la deuda y nadie pagaba",
+          "isCorrect": false
+        },
+        {
+          "text": "El ladrón era buscado por los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "El dueño de la casa era presentado a los jueces",
+          "isCorrect": true
+        },
+        {
+          "text": "Se vendía la casa del que la guardaba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si el animal le había sido arrebatado por una fiera, ¿qué debía hacer el que lo tenía?",
+      "explanation": "Si le hubiere sido arrebatado por fiera, traerá testimonio y no pagará lo arrebatado.",
+      "bibleReference": "Éxodo 22:13",
+      "answers": [
+        {
+          "text": "Pagar otro animal igual",
+          "isCorrect": false
+        },
+        {
+          "text": "Traer testimonio, y no pagaría",
+          "isCorrect": true
+        },
+        {
+          "text": "Pagar el doble",
+          "isCorrect": false
+        },
+        {
+          "text": "Jurar delante del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si alguno engañaba a una doncella que no estaba desposada, ¿qué debía hacer?",
+      "explanation": "Deberá dotarla y tomarla por mujer.",
+      "bibleReference": "Éxodo 22:16",
+      "answers": [
+        {
+          "text": "Dotarla y tomarla por mujer",
+          "isCorrect": true
+        },
+        {
+          "text": "Pagar cinco bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser presentado a los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Huir del lugar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la ley acerca de la hechicera?",
+      "explanation": "A la hechicera no dejarás que viva.",
+      "bibleReference": "Éxodo 22:18",
+      "answers": [
+        {
+          "text": "Que sea echada de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pague el doble",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no la dejarás vivir",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sea vendida por sierva",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no debían engañar ni angustiar al extranjero?",
+      "explanation": "Y al extranjero no engañarás, ni angustiarás, porque extranjeros fuisteis vosotros en la tierra de Egipto.",
+      "bibleReference": "Éxodo 22:21",
+      "answers": [
+        {
+          "text": "Porque los jueces lo castigarían",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el extranjero paga tributo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque podría maldecirlos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ellos fueron extranjeros en Egipto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si tomabas en prenda el vestido de tu prójimo, ¿cuándo debías devolverlo?",
+      "explanation": "Si tomares en prenda el vestido de tu prójimo, a puestas del sol se lo volverás.",
+      "bibleReference": "Éxodo 22:26",
+      "answers": [
+        {
+          "text": "A puestas del sol",
+          "isCorrect": true
+        },
+        {
+          "text": "Al cabo de siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando pagase la deuda",
+          "isCorrect": false
+        },
+        {
+          "text": "Al séptimo año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días estaría con su madre el primerizo del buey y de la oveja?",
+      "explanation": "Así harás con el de tu buey y de tu oveja: siete días estará con su madre, y al octavo día me lo darás.",
+      "bibleReference": "Éxodo 22:30",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Un mes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho días",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

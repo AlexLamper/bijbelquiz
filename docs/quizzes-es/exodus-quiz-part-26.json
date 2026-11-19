@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Éxodo 26: las cortinas y las cubiertas del tabernáculo, las tablas con sus basas, el velo y la cortina de la puerta.",
+  "slug": "exodus-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De cuántas cortinas debía hacerse el tabernáculo?",
+      "explanation": "El tabernáculo se hacía de diez cortinas de lino torcido, cárdeno, púrpura y carmesí, con querubines de obra delicada.",
+      "bibleReference": "Éxodo 26:1",
+      "answers": [
+        {
+          "text": "Once",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la longitud de cada una de esas cortinas?",
+      "explanation": "Cada cortina medía veintiocho codos de longitud y cuatro codos de anchura, y todas tenían una misma medida.",
+      "bibleReference": "Éxodo 26:2",
+      "answers": [
+        {
+          "text": "Treinta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintiocho codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatro codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué material eran los corchetes con que se juntaban las diez cortinas del tabernáculo?",
+      "explanation": "Se hacían cincuenta corchetes de oro, con los cuales se juntaban las cortinas la una con la otra, y así se formaba un tabernáculo.",
+      "bibleReference": "Éxodo 26:6",
+      "answers": [
+        {
+          "text": "De oro",
+          "isCorrect": true
+        },
+        {
+          "text": "De plata",
+          "isCorrect": false
+        },
+        {
+          "text": "De alambre",
+          "isCorrect": false
+        },
+        {
+          "text": "De metal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas cortinas de pelo de cabras debía hacer para la cubierta?",
+      "explanation": "Para la cubierta sobre el tabernáculo se hacían once cortinas de pelo de cabras.",
+      "bibleReference": "Éxodo 26:7",
+      "answers": [
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Once",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué cubierta iba encima de la de cueros de carneros teñidos de rojo?",
+      "explanation": "A la tienda se le hacía una cubierta de cueros de carneros teñidos de rojo y, encima, una cubierta de cueros de tejones.",
+      "bibleReference": "Éxodo 26:14",
+      "answers": [
+        {
+          "text": "Una de cueros de tejones",
+          "isCorrect": true
+        },
+        {
+          "text": "Una de lino torcido",
+          "isCorrect": false
+        },
+        {
+          "text": "Una de pelo de cabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Una de púrpura y carmesí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la longitud de cada tabla del tabernáculo?",
+      "explanation": "Cada tabla de madera de Sittim medía diez codos de longitud y codo y medio de anchura.",
+      "bibleReference": "Éxodo 26:16",
+      "answers": [
+        {
+          "text": "Veintiocho codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Codo y medio",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez codos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas basas de plata iban debajo de las veinte tablas del lado del mediodía?",
+      "explanation": "Debajo de las veinte tablas del lado del mediodía se hacían cuarenta basas de plata, dos debajo de cada tabla para sus dos quicios.",
+      "bibleReference": "Éxodo 26:18-19",
+      "answers": [
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez y seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por dónde debía pasar la barra del medio?",
+      "explanation": "La barra del medio pasaba por medio de las tablas, del un cabo al otro.",
+      "bibleReference": "Éxodo 26:28",
+      "answers": [
+        {
+          "text": "Por encima de las cortinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Por debajo de las basas",
+          "isCorrect": false
+        },
+        {
+          "text": "Por medio de las tablas",
+          "isCorrect": true
+        },
+        {
+          "text": "Por fuera de las columnas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué separaba el velo?",
+      "explanation": "El velo se ponía debajo de los corchetes, y hacía separación entre el lugar santo y el santísimo, donde se metía el arca del testimonio.",
+      "bibleReference": "Éxodo 26:33",
+      "answers": [
+        {
+          "text": "El atrio del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "El lugar santo del santísimo",
+          "isCorrect": true
+        },
+        {
+          "text": "La mesa del candelero",
+          "isCorrect": false
+        },
+        {
+          "text": "El altar de la puerta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas columnas debía hacer para la cortina de la puerta del tabernáculo?",
+      "explanation": "Para esa cortina se hacían cinco columnas de madera de Sittim cubiertas de oro, con cinco basas de metal.",
+      "bibleReference": "Éxodo 26:36-37",
+      "answers": [
+        {
+          "text": "Cinco",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

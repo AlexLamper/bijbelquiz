@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Deuteronomio 12: el lugar que Jehová escogiere, los holocaustos y los diezmos, la sangre que no se come y el Levita.",
+  "slug": "deuteronomy-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué debían hacer con los lugares donde las gentes sirvieron a sus dioses?",
+      "explanation": "Debían destruir enteramente todos esos lugares, derribar sus altares, quebrar sus imágenes, consumir sus bosques con fuego y destruir las esculturas de sus dioses.",
+      "bibleReference": "Deuteronomio 12:2-3",
+      "answers": [
+        {
+          "text": "Destruirlos enteramente y derribar sus altares",
+          "isCorrect": true
+        },
+        {
+          "text": "Dejarlos cerrados sobre los montes altos",
+          "isCorrect": false
+        },
+        {
+          "text": "Usarlos para servir allí a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Entregarlos a los Levitas del lugar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué lugar debían buscar para llevar allí sus ofrendas?",
+      "explanation": "El lugar que Jehová su Dios escogiere de todas sus tribus, para poner allí su nombre para su habitación, ése buscarían y allá irían.",
+      "bibleReference": "Deuteronomio 12:5",
+      "answers": [
+        {
+          "text": "El monte más alto de su tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Cualquier lugar que les pareciere bien",
+          "isCorrect": false
+        },
+        {
+          "text": "El lugar que Jehová escogiere para poner su nombre",
+          "isCorrect": true
+        },
+        {
+          "text": "La ciudad donde habitare el Levita",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevarían a ese lugar?",
+      "explanation": "Llevarían allí sus holocaustos, sus sacrificios, sus diezmos, la ofrenda elevada de sus manos, sus votos, sus ofrendas voluntarias y los primerizos de sus vacas y de sus ovejas.",
+      "bibleReference": "Deuteronomio 12:6",
+      "answers": [
+        {
+          "text": "Solamente los primerizos de sus vacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Holocaustos, sacrificios, diezmos, votos y primerizos",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente el diezmo de su grano y su vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Plata, oro y vestidos escogidos de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no habían de hacer cada uno lo que le parece, como hacían entonces?",
+      "explanation": "Porque aun hasta entonces no habían entrado al reposo y a la heredad que les da Jehová su Dios.",
+      "bibleReference": "Deuteronomio 12:8-9",
+      "answers": [
+        {
+          "text": "Porque el arca no estaba con ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no tenían aún sacerdotes ni altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el Jordán estaba crecido aquel año",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque aún no habían entrado al reposo y la heredad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no debían comer, y qué debían hacer con ello?",
+      "explanation": "Dice: Salvo que sangre no comeréis; sobre la tierra la derramaréis como agua.",
+      "bibleReference": "Deuteronomio 12:16",
+      "answers": [
+        {
+          "text": "La sangre, que derramarían como agua",
+          "isCorrect": true
+        },
+        {
+          "text": "El sebo, que quemarían en el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "La carne mortecina, que enterrarían",
+          "isCorrect": false
+        },
+        {
+          "text": "Los primerizos, que venderían",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién manda no desamparar en todos sus días sobre su tierra?",
+      "explanation": "Dice: Ten cuidado de no desamparar al Levita en todos tus días sobre tu tierra.",
+      "bibleReference": "Deuteronomio 12:19",
+      "answers": [
+        {
+          "text": "Al extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Levita",
+          "isCorrect": true
+        },
+        {
+          "text": "Al profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Al mendigo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara la carne que podían matar y comer en sus poblaciones?",
+      "explanation": "Podían matar y comer carne en todas sus poblaciones conforme al deseo de su alma; el inmundo y el limpio la comería, como la de corzo o de ciervo.",
+      "bibleReference": "Deuteronomio 12:15",
+      "answers": [
+        {
+          "text": "Como la del holocausto del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la de los primerizos consagrados",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la del cabrito con leche",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la de corzo o de ciervo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde sería derramada la sangre de sus sacrificios?",
+      "explanation": "Ofrecería sus holocaustos, la carne y la sangre, sobre el altar de Jehová su Dios, y la sangre de sus sacrificios sería derramada sobre ese altar.",
+      "bibleReference": "Deuteronomio 12:27",
+      "answers": [
+        {
+          "text": "Sobre la tierra de sus poblaciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las piedras de sus portadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el altar de Jehová su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los collados y los montes altos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacían aquellas gentes a sus dioses, según el texto?",
+      "explanation": "Dice que todo lo que Jehová aborrece lo hicieron ellos a sus dioses, pues aun a sus hijos e hijas quemaban en el fuego a sus dioses.",
+      "bibleReference": "Deuteronomio 12:31",
+      "answers": [
+        {
+          "text": "Les llevaban el diezmo cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Quemaban en el fuego a sus hijos e hijas",
+          "isCorrect": true
+        },
+        {
+          "text": "Les edificaban casas en las vegas",
+          "isCorrect": false
+        },
+        {
+          "text": "Les ofrecían corzos y ciervos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice al cerrar sobre todo lo que les manda?",
+      "explanation": "Cuidaréis de hacer todo lo que yo os mando: no añadirás a ello, ni quitarás de ello.",
+      "bibleReference": "Deuteronomio 12:32",
+      "answers": [
+        {
+          "text": "Que no añadan a ello ni quiten de ello",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo escriban en dos tablas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo lean cada siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo enseñen solo a los Levitas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

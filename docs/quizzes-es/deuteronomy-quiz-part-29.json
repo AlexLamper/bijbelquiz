@@ -1,0 +1,242 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre Deuteronomio 29: el pacto en la tierra de Moab, los cuarenta años del desierto y la advertencia a quien se aparte.",
+  "slug": "deuteronomy-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué tierra mandó Jehová a Moisés concertar las palabras de este pacto?",
+      "explanation": "El versículo dice que estas son las palabras del pacto que Jehová mandó a Moisés concertar con los hijos de Israel en la tierra de Moab.",
+      "bibleReference": "Deuteronomio 29:1",
+      "answers": [
+        {
+          "text": "En la tierra de Moab",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años dice Moisés que los había traído por el desierto?",
+      "explanation": "Moisés dice que los ha traído cuarenta años por el desierto, y que sus vestidos no se han envejecido sobre ellos.",
+      "bibleReference": "Deuteronomio 29:5",
+      "answers": [
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cincuenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice Moisés que no comieron ni bebieron en el desierto?",
+      "explanation": "El versículo dice que no comieron pan ni bebieron vino ni sidra, para que supieran que él es Jehová su Dios.",
+      "bibleReference": "Deuteronomio 29:6",
+      "answers": [
+        {
+          "text": "Carne, leche ni miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan, vino ni sidra",
+          "isCorrect": true
+        },
+        {
+          "text": "Pan, agua ni aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Uvas, higos ni granadas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes salieron a pelear contra ellos cuando llegaron a aquel lugar?",
+      "explanation": "El versículo dice que salieron delante de ellos Sehón rey de Hesbón y Og rey de Basán para pelear, y los hirieron.",
+      "bibleReference": "Deuteronomio 29:7",
+      "answers": [
+        {
+          "text": "Faraón y todos sus siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los reyes de Sodoma y Gomorra",
+          "isCorrect": false
+        },
+        {
+          "text": "Balac, el rey de los moabitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sehón de Hesbón y Og de Basán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dieron por heredad la tierra que tomaron?",
+      "explanation": "El versículo dice que tomaron su tierra y la dieron por heredad a Rubén, a Gad y a la media tribu de Manasés.",
+      "bibleReference": "Deuteronomio 29:8",
+      "answers": [
+        {
+          "text": "A Rubén, Gad y media tribu de Manasés",
+          "isCorrect": true
+        },
+        {
+          "text": "A Judá, Benjamín y Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Leví y a los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "A Ephraim y a Nephtalí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿hasta quiénes llegaba la lista de los que estaban presentes?",
+      "explanation": "El versículo nombra a los niños, a las mujeres y a los extranjeros del campo, desde el que corta la leña hasta el que saca las aguas.",
+      "bibleReference": "Deuteronomio 29:11",
+      "answers": [
+        {
+          "text": "Desde los príncipes hasta los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el que corta la leña hasta el que saca el agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde los sacerdotes hasta los jueces de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde los jóvenes hasta los que aún maman",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué padres había jurado Jehová, según el versículo 13?",
+      "explanation": "El versículo dice que Jehová lo confirma por su pueblo como lo había dicho y como juró a sus padres Abraham, Isaac y Jacob.",
+      "bibleReference": "Deuteronomio 29:13",
+      "answers": [
+        {
+          "text": "A Noé, Sem y Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "A Isaac, Jacob y José",
+          "isCorrect": false
+        },
+        {
+          "text": "A Abraham, Isaac y Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "A Jacob, Leví y Moisés",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al que vuelve su corazón para servir a los dioses de aquellas gentes?",
+      "explanation": "El versículo advierte que quizá haya entre ellos una raíz que eche veneno y ajenjo.",
+      "bibleReference": "Deuteronomio 29:18",
+      "answers": [
+        {
+          "text": "Con una viña que no da ningún fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un árbol seco en medio del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una casa edificada sobre la arena",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una raíz que echa veneno y ajenjo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con la destrucción de qué ciudades compara el texto esa tierra de azufre y sal?",
+      "explanation": "El versículo dice que la tierra quedará abrasada, sin producir hierba alguna, como en la subversión de Sodoma, Gomorra, Adma y Seboim.",
+      "bibleReference": "Deuteronomio 29:23",
+      "answers": [
+        {
+          "text": "Jericó, Hai y Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Babilonia, Nínive y Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "Sodoma, Gomorra, Adma y Seboim",
+          "isCorrect": true
+        },
+        {
+          "text": "Hesbón, Basán y Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿a quién pertenecen las cosas secretas?",
+      "explanation": "El versículo dice que las cosas secretas pertenecen a Jehová su Dios, y que las reveladas son para ellos y para sus hijos.",
+      "bibleReference": "Deuteronomio 29:29",
+      "answers": [
+        {
+          "text": "A Jehová nuestro Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "A los profetas del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sacerdotes de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de las tribus",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

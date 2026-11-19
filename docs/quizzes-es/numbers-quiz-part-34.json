@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 34",
+  "description": "Diez preguntas sobre Números 34: los términos de la tierra de Canaán y los varones encargados de repartirla.",
+  "slug": "numbers-quiz-part-34",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué tierra les había de caer en heredad, según sus términos?",
+      "explanation": "Jehová mandó decir a los hijos de Israel que entrarían en la tierra de Canaán, la tierra que les había de caer en heredad según sus términos.",
+      "bibleReference": "Números 34:2",
+      "answers": [
+        {
+          "text": "La tierra de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Canaán",
+          "isCorrect": true
+        },
+        {
+          "text": "La tierra de Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde empezaba el lado del mediodía de su tierra?",
+      "explanation": "El lado del mediodía iba desde el desierto de Zin hasta los términos de Edom, y su término llegaba al extremo del mar salado hacia el oriente.",
+      "bibleReference": "Números 34:3",
+      "answers": [
+        {
+          "text": "En el desierto de Zin, junto a Edom",
+          "isCorrect": true
+        },
+        {
+          "text": "En la gran mar, hacia el occidente",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Hor, hacia el norte",
+          "isCorrect": false
+        },
+        {
+          "text": "En Hasar-enán, hacia el oriente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde rodeaba el término desde Asmón?",
+      "explanation": "El término rodeaba desde Asmón hasta el torrente de Egipto, y sus remates eran al occidente.",
+      "bibleReference": "Números 34:5",
+      "answers": [
+        {
+          "text": "Hasta Cades-barnea",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el río Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la entrada de Hamath",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el torrente de Egipto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era su término occidental?",
+      "explanation": "El término occidental era la gran mar: ese término les sería el término occidental.",
+      "bibleReference": "Números 34:6",
+      "answers": [
+        {
+          "text": "El mar Salado",
+          "isCorrect": false
+        },
+        {
+          "text": "La gran mar",
+          "isCorrect": true
+        },
+        {
+          "text": "La mar de Cinnereth",
+          "isCorrect": false
+        },
+        {
+          "text": "El Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Desde la gran mar, ¿qué debían señalarse como término del norte?",
+      "explanation": "Para el término del norte debían señalarse, desde la gran mar, el monte de Hor.",
+      "bibleReference": "Números 34:7",
+      "answers": [
+        {
+          "text": "El monte de Hor",
+          "isCorrect": true
+        },
+        {
+          "text": "El monte de Seir",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad de Sepham",
+          "isCorrect": false
+        },
+        {
+          "text": "El lugar de Ribla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde tenía sus salidas el término del oriente, después de descender al Jordán?",
+      "explanation": "El término descendía al Jordán y sus salidas eran al mar Salado; esa sería su tierra por sus términos alrededor.",
+      "bibleReference": "Números 34:12",
+      "answers": [
+        {
+          "text": "En la gran mar",
+          "isCorrect": false
+        },
+        {
+          "text": "En Hasar-enán",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mar Salado",
+          "isCorrect": true
+        },
+        {
+          "text": "En el torrente de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuántas tribus mandó Jehová que se diera esa tierra por suerte?",
+      "explanation": "Moisés dijo que era la tierra que heredarían por suerte, la cual mandó Jehová que se diese a las nueve tribus y a la media tribu.",
+      "bibleReference": "Números 34:13",
+      "answers": [
+        {
+          "text": "A las doce tribus de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A las nueve tribus y a la media tribu",
+          "isCorrect": true
+        },
+        {
+          "text": "A las diez tribus del norte",
+          "isCorrect": false
+        },
+        {
+          "text": "A las once tribus y media",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes habían tomado ya su heredad de esta parte del Jordán?",
+      "explanation": "La tribu de Rubén, la tribu de Gad y la media tribu de Manasés habían tomado su herencia de esta parte del Jordán de Jericó, al oriente.",
+      "bibleReference": "Números 34:14-15",
+      "answers": [
+        {
+          "text": "Judá, Simeón y la tribu de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephraim y la tribu de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Levitas y la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Rubén, Gad y la media tribu de Manasés",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los dos varones que les aposesionarían la tierra?",
+      "explanation": "Los nombres de los varones que les aposesionarían la tierra eran Eleazar el sacerdote y Josué hijo de Nun.",
+      "bibleReference": "Números 34:17",
+      "answers": [
+        {
+          "text": "Eleazar el sacerdote y Josué hijo de Nun",
+          "isCorrect": true
+        },
+        {
+          "text": "Moisés y Aarón el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb hijo de Jephone y Josué",
+          "isCorrect": false
+        },
+        {
+          "text": "Eleazar el sacerdote y Phinees",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue nombrado por la tribu de Judá?",
+      "explanation": "De la tribu de Judá el nombre del varón era Caleb hijo de Jephone.",
+      "bibleReference": "Números 34:19",
+      "answers": [
+        {
+          "text": "Samuel hijo de Ammiud",
+          "isCorrect": false
+        },
+        {
+          "text": "Elidad hijo de Chislón",
+          "isCorrect": false
+        },
+        {
+          "text": "Caleb hijo de Jephone",
+          "isCorrect": true
+        },
+        {
+          "text": "Bucci hijo de Jogli",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

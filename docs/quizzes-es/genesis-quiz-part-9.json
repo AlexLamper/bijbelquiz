@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Génesis 9: la bendición sobre Noé, el pacto del arco en las nubes y lo que pasó en su tienda.",
+  "slug": "genesis-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo Dios a Noé y a sus hijos cuando los bendijo?",
+      "explanation": "Dios bendijo a Noé y a sus hijos y les dijo: Fructificad, y multiplicad, y henchid la tierra.",
+      "bibleReference": "Génesis 9:1",
+      "answers": [
+        {
+          "text": "Fructificad, multiplicad y henchid la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardad el pacto dentro del arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificad una ciudad y una torre",
+          "isCorrect": false
+        },
+        {
+          "text": "No comáis del árbol del huerto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué será derramada la sangre del que derrame la sangre del hombre?",
+      "explanation": "El texto dice que el que derramare sangre del hombre, por el hombre su sangre será derramada, porque a imagen de Dios es hecho el hombre.",
+      "bibleReference": "Génesis 9:6",
+      "answers": [
+        {
+          "text": "Porque la tierra está llena de violencia",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque toda carne corrompió su camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el hombre es hecho a imagen de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el pecado está a la puerta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prometió Dios en el pacto que estableció?",
+      "explanation": "Dios dijo que no fenecería ya más toda carne con aguas de diluvio, ni habría más diluvio para destruir la tierra.",
+      "bibleReference": "Génesis 9:11",
+      "answers": [
+        {
+          "text": "Que el arca reposará en los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no habrá más diluvio para destruir la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los hombres hablarán una sola lengua",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los animales no temerán al hombre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Dios en las nubes como señal del pacto?",
+      "explanation": "Dios dijo que pondría su arco en las nubes, y que sería por señal de convenio entre él y la tierra.",
+      "bibleReference": "Génesis 9:13",
+      "answers": [
+        {
+          "text": "Una estrella",
+          "isCorrect": false
+        },
+        {
+          "text": "Una nube de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Una espada encendida",
+          "isCorrect": false
+        },
+        {
+          "text": "Su arco",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál de los hijos de Noé es el padre de Canaán?",
+      "explanation": "El texto dice que los hijos de Noé que salieron del arca fueron Sem, Châm y Japhet, y que Châm es el padre de Canaán.",
+      "bibleReference": "Génesis 9:18",
+      "answers": [
+        {
+          "text": "Châm",
+          "isCorrect": true
+        },
+        {
+          "text": "Sem",
+          "isCorrect": false
+        },
+        {
+          "text": "Japhet",
+          "isCorrect": false
+        },
+        {
+          "text": "Noé",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué plantó Noé cuando comenzó a labrar la tierra?",
+      "explanation": "El texto dice que Noé comenzó a labrar la tierra y plantó una viña.",
+      "bibleReference": "Génesis 9:20",
+      "answers": [
+        {
+          "text": "Un olivar",
+          "isCorrect": false
+        },
+        {
+          "text": "Una viña",
+          "isCorrect": true
+        },
+        {
+          "text": "Un campo de trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un huerto de higueras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron Sem y Japhet cuando supieron de la desnudez de su padre?",
+      "explanation": "Sem y Japhet tomaron la ropa, la pusieron sobre sus hombros y, andando hacia atrás, cubrieron la desnudez de su padre con los rostros vueltos.",
+      "bibleReference": "Génesis 9:22-23",
+      "answers": [
+        {
+          "text": "Lo despertaron de su vino y lo reprendieron",
+          "isCorrect": false
+        },
+        {
+          "text": "Salieron de la tienda y lo contaron afuera",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificaron un altar y ofrecieron por él",
+          "isCorrect": false
+        },
+        {
+          "text": "Cubrieron la desnudez de su padre andando hacia atrás",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Noé acerca de Canaán cuando despertó de su vino?",
+      "explanation": "Noé dijo: Maldito sea Canaán; siervo de siervos será a sus hermanos.",
+      "bibleReference": "Génesis 9:25",
+      "answers": [
+        {
+          "text": "Que sería bendito entre sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que habitaría en las tiendas de Sem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sería siervo de siervos de sus hermanos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sería padre de muchas naciones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años vivió Noé después del diluvio?",
+      "explanation": "El texto dice que Noé vivió trescientos y cincuenta años después del diluvio.",
+      "bibleReference": "Génesis 9:28",
+      "answers": [
+        {
+          "text": "Ciento y cincuenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos y cincuenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Novecientos y treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos y un años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron todos los días de Noé?",
+      "explanation": "El capítulo termina diciendo que todos los días de Noé fueron novecientos y cincuenta años, y murió.",
+      "bibleReference": "Génesis 9:29",
+      "answers": [
+        {
+          "text": "Novecientos y cincuenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Novecientos y treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Novecientos sesenta y nueve años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setecientos setenta y siete años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

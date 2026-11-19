@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 32",
+  "description": "Diez preguntas sobre Éxodo 32: el becerro de oro, la oración de Moisés, las tablas quebradas y lo que pasó en el campamento.",
+  "slug": "exodus-quiz-part-32",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pidió el pueblo a Aarón cuando Moisés tardaba en descender del monte?",
+      "explanation": "El pueblo se acercó a Aarón y le dijo: Levántate, haznos dioses que vayan delante de nosotros.",
+      "bibleReference": "Éxodo 32:1",
+      "answers": [
+        {
+          "text": "Que subiera a buscar a Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les hiciera dioses",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los llevara otra vez a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les diera pan y agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Aarón que le trajeran?",
+      "explanation": "Aarón les dijo que apartaran los zarcillos de oro de las orejas de sus mujeres, sus hijos y sus hijas, y se los trajeran.",
+      "bibleReference": "Éxodo 32:2",
+      "answers": [
+        {
+          "text": "Oro, plata y cobre",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dos tablas de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los becerros de la vacada",
+          "isCorrect": false
+        },
+        {
+          "text": "Los zarcillos de oro de sus orejas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Aarón con el oro que le dieron?",
+      "explanation": "Lo tomó de sus manos, lo formó con buril e hizo de ello un becerro de fundición; entonces dijeron: Israel, estos son tus dioses, que te sacaron de la tierra de Egipto.",
+      "bibleReference": "Éxodo 32:4",
+      "answers": [
+        {
+          "text": "Un becerro de fundición",
+          "isCorrect": true
+        },
+        {
+          "text": "Un altar de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos querubines",
+          "isCorrect": false
+        },
+        {
+          "text": "Una plancha de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregonó Aarón después de edificar el altar delante del becerro?",
+      "explanation": "Aarón edificó un altar delante del becerro y pregonó: Mañana será fiesta á Jehová.",
+      "bibleReference": "Éxodo 32:5",
+      "answers": [
+        {
+          "text": "Que nadie se acercara al becerro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ayunaran siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Mañana será fiesta á Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que trajeran más oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Moisés al decirle que el pueblo se había corrompido?",
+      "explanation": "Jehová le dijo: Anda, desciende, porque tu pueblo que sacaste de tierra de Egipto se ha corrompido.",
+      "bibleReference": "Éxodo 32:7",
+      "answers": [
+        {
+          "text": "Que descendiera del monte",
+          "isCorrect": true
+        },
+        {
+          "text": "Que escribiera las palabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llamara a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que alisara dos tablas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes pidió Moisés a Jehová que se acordara?",
+      "explanation": "Moisés oró y le dijo: Acuérdate de Abraham, de Isaac y de Israel, tus siervos, a los cuales has jurado por ti mismo.",
+      "bibleReference": "Éxodo 32:13",
+      "answers": [
+        {
+          "text": "De Aarón y de sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "De Abraham, de Isaac y de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "De los hijos de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "De los setenta ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés con las tablas al llegar al campamento?",
+      "explanation": "Cuando vio el becerro y las danzas se enardeció su ira, arrojó las tablas de sus manos y las quebró al pie del monte.",
+      "bibleReference": "Éxodo 32:19",
+      "answers": [
+        {
+          "text": "Las guardó en el arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Las leyó al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las escondió en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Las quebró al pie del monte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés con el polvo del becerro?",
+      "explanation": "Quemó el becerro en el fuego, lo molió hasta reducirlo a polvo, lo esparció sobre las aguas y lo dio a beber a los hijos de Israel.",
+      "bibleReference": "Éxodo 32:20",
+      "answers": [
+        {
+          "text": "Lo echó fuera del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo puso delante del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo dio a beber a los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo enterró al pie del monte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes se juntaron con Moisés a la puerta del campamento?",
+      "explanation": "Moisés se puso a la puerta del real y dijo: ¿Quién es de Jehová? júntese conmigo. Y se juntaron con él todos los hijos de Leví.",
+      "bibleReference": "Éxodo 32:26",
+      "answers": [
+        {
+          "text": "Todos los hijos de Leví",
+          "isCorrect": true
+        },
+        {
+          "text": "Los setenta ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Aarón y sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Josué y los mancebos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Jehová cuando Moisés le pidió que lo rayera de su libro?",
+      "explanation": "Moisés pidió que Jehová perdonara el pecado del pueblo o lo rayera de su libro, y Jehová respondió: Al que pecare contra mí, a éste raeré yo de mi libro.",
+      "bibleReference": "Éxodo 32:32-33",
+      "answers": [
+        {
+          "text": "Que perdonaría todo el pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que raería al que pecó contra él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no escribiría más",
+          "isCorrect": false
+        },
+        {
+          "text": "Que raería a todo el pueblo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Génesis 12: el llamamiento de Abram, los altares que edificó y su viaje a Egipto.",
+  "slug": "genesis-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le dijo Jehová a Abram que dejase?",
+      "explanation": "Jehová le dijo que se fuese de su tierra, de su parentela y de la casa de su padre, a la tierra que le mostraría.",
+      "bibleReference": "Génesis 12:1",
+      "answers": [
+        {
+          "text": "Su mujer y toda su hacienda en Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus ovejas, sus vacas y sus asnos",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad y la torre de Babel",
+          "isCorrect": false
+        },
+        {
+          "text": "Su tierra, su parentela y la casa de su padre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría de Abram?",
+      "explanation": "Jehová dijo que haría de él una nación grande, que le bendeciría y engrandecería su nombre, y que sería bendición.",
+      "bibleReference": "Génesis 12:2",
+      "answers": [
+        {
+          "text": "Un pueblo de una sola lengua",
+          "isCorrect": false
+        },
+        {
+          "text": "Una nación grande",
+          "isCorrect": true
+        },
+        {
+          "text": "Un rey sobre Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cazador poderoso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría con los que maldijeran a Abram?",
+      "explanation": "Jehová dijo que bendeciría a los que le bendijeren y maldeciría a los que le maldijeren.",
+      "bibleReference": "Génesis 12:3",
+      "answers": [
+        {
+          "text": "Que los bendeciría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los esparciría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los maldeciría",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los heriría con plagas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenía Abram cuando salió de Harán?",
+      "explanation": "El texto dice que Abram era de edad de setenta y cinco años cuando salió de Harán.",
+      "bibleReference": "Génesis 12:4",
+      "answers": [
+        {
+          "text": "Setenta y cinco años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cien años",
+          "isCorrect": false
+        },
+        {
+          "text": "Noventa y nueve años",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta y cinco años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue con Abram y Sarai a tierra de Canaán?",
+      "explanation": "Abram tomó a Sarai su mujer y a Lot, hijo de su hermano, con toda su hacienda, y llegaron a tierra de Canaán.",
+      "bibleReference": "Génesis 12:5",
+      "answers": [
+        {
+          "text": "Thare, su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Nachôr, su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Harán, su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Lot, hijo de su hermano",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Jehová a Abram cuando se le apareció?",
+      "explanation": "Jehová apareció a Abram y le dijo: A tu simiente daré esta tierra; y Abram edificó allí un altar a Jehová.",
+      "bibleReference": "Génesis 12:7",
+      "answers": [
+        {
+          "text": "Que daría esa tierra a su simiente",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la tierra quedaría para los Cananeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volvería a la casa de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que edificaría una ciudad y una torre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Abram en el monte al oriente de Bethel?",
+      "explanation": "Abram tendió allí su tienda, edificó un altar a Jehová e invocó el nombre de Jehová.",
+      "bibleReference": "Génesis 12:8",
+      "answers": [
+        {
+          "text": "Plantó una viña y bebió de su vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Cavó un pozo junto a su tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó un altar e invocó a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Compró un campo a los Cananeos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué descendió Abram a Egipto?",
+      "explanation": "Hubo hambre en la tierra, y Abram descendió a Egipto para peregrinar allá, porque el hambre era grande.",
+      "bibleReference": "Génesis 12:10",
+      "answers": [
+        {
+          "text": "Porque Faraón lo había llamado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque había hambre en la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Jehová se lo mandó allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque buscaba pastos nuevos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pidió Abram a Sarai que dijera en Egipto?",
+      "explanation": "Abram le pidió que dijese que era su hermana, para que a él le fuese bien por causa de ella y viviese su alma.",
+      "bibleReference": "Génesis 12:13",
+      "answers": [
+        {
+          "text": "Que era su hermana",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era su mujer",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era egipcia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era estéril",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová por causa de Sarai, mujer de Abram?",
+      "explanation": "El texto dice que Jehová hirió a Faraón y a su casa con grandes plagas por causa de Sarai, mujer de Abram.",
+      "bibleReference": "Génesis 12:17",
+      "answers": [
+        {
+          "text": "Esparció a los Egipcios por la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitó a Abram sus ovejas y camellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerró la puerta de la casa de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Hirió a Faraón y a su casa con plagas",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 36",
+  "description": "Diez preguntas sobre Génesis 36: las generaciones de Esaú, los duques de Edom y los reyes que reinaron en aquella tierra.",
+  "slug": "genesis-quiz-part-36",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién son las generaciones que cuenta este capítulo?",
+      "explanation": "El capítulo empieza diciendo: Y estas son las generaciones de Esaú, el cual es Edom.",
+      "bibleReference": "Génesis 36:1",
+      "answers": [
+        {
+          "text": "De Ismael, hijo de Abraham",
+          "isCorrect": false
+        },
+        {
+          "text": "De Seir Horeo, morador de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "De Esaú, el cual es Edom",
+          "isCorrect": true
+        },
+        {
+          "text": "De Jacob, llamado Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran las mujeres de Esaú, según este capítulo?",
+      "explanation": "Esaú tomó por mujeres á Ada, hija de Elón Hetheo, á Aholibama, hija de Ana, y á Basemath, hija de Ismael.",
+      "bibleReference": "Génesis 36:2-3",
+      "answers": [
+        {
+          "text": "Ada, Aholibama y Basemath",
+          "isCorrect": true
+        },
+        {
+          "text": "Lea, Rachêl y Zilpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Judith, Mahaleth y Timna",
+          "isCorrect": false
+        },
+        {
+          "text": "Meetabel, Matred y Mezaab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién parió Ada a Esaú?",
+      "explanation": "El texto dice que Ada parió á Esaú á Eliphaz, y Basemath parió á Reuel.",
+      "bibleReference": "Génesis 36:4",
+      "answers": [
+        {
+          "text": "A Reuel",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jeús",
+          "isCorrect": false
+        },
+        {
+          "text": "A Cora",
+          "isCorrect": false
+        },
+        {
+          "text": "A Eliphaz",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el hijo que Basemath parió a Esaú?",
+      "explanation": "El mismo versículo dice que Basemath parió á Reuel.",
+      "bibleReference": "Génesis 36:4",
+      "answers": [
+        {
+          "text": "Eliphaz",
+          "isCorrect": false
+        },
+        {
+          "text": "Reuel",
+          "isCorrect": true
+        },
+        {
+          "text": "Jaalam",
+          "isCorrect": false
+        },
+        {
+          "text": "Amalec",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron los hijos de Aholibama?",
+      "explanation": "Aholibama parió á Jeús, á Jaalam y á Cora; estos son los hijos de Esaú que le nacieron en la tierra de Canaán.",
+      "bibleReference": "Génesis 36:5",
+      "answers": [
+        {
+          "text": "Temán, Omar y Zepho",
+          "isCorrect": false
+        },
+        {
+          "text": "Nahath, Zera y Samma",
+          "isCorrect": false
+        },
+        {
+          "text": "Jeús, Jaalam y Cora",
+          "isCorrect": true
+        },
+        {
+          "text": "Lotán, Sobal y Zibeón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde habitó Esaú?",
+      "explanation": "El texto dice que Esaú habitó en el monte de Seir, y que Esaú es Edom.",
+      "bibleReference": "Génesis 36:8",
+      "answers": [
+        {
+          "text": "En el monte de Seir",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "En Rehoboth del Río",
+          "isCorrect": false
+        },
+        {
+          "text": "En el campo de Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue la concubina de Eliphaz que le parió a Amalec?",
+      "explanation": "Timna fué concubina de Eliphaz, hijo de Esaú, y ella le parió á Amalec.",
+      "bibleReference": "Génesis 36:12",
+      "answers": [
+        {
+          "text": "Aholibama",
+          "isCorrect": false
+        },
+        {
+          "text": "Timna",
+          "isCorrect": true
+        },
+        {
+          "text": "Basemath",
+          "isCorrect": false
+        },
+        {
+          "text": "Meetabel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién eran hijos Lotán, Sobal, Zibeón y Ana, moradores de aquella tierra?",
+      "explanation": "El texto dice que estos son los hijos de Seir Horeo, moradores de aquella tierra.",
+      "bibleReference": "Génesis 36:20",
+      "answers": [
+        {
+          "text": "De Eliphaz, hijo de Esaú",
+          "isCorrect": false
+        },
+        {
+          "text": "De Reuel, hijo de Esaú",
+          "isCorrect": false
+        },
+        {
+          "text": "De Bela, hijo de Beor",
+          "isCorrect": false
+        },
+        {
+          "text": "De Seir Horeo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se dice de Ana, hijo de Zibeón?",
+      "explanation": "El texto dice que este Ana es el que descubrió los mulos en el desierto, cuando apacentaba los asnos de Zibeón su padre.",
+      "bibleReference": "Génesis 36:24",
+      "answers": [
+        {
+          "text": "Que descubrió los mulos en el desierto",
+          "isCorrect": true
+        },
+        {
+          "text": "Que hirió á Midián en el campo de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Que reinó primero en la tierra de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Que descubrió un pozo junto al monte de Seir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en Edom y tuvo por ciudad a Dinaba?",
+      "explanation": "Bela, hijo de Beor, reinó en Edom, y el nombre de su ciudad fué Dinaba.",
+      "bibleReference": "Génesis 36:32",
+      "answers": [
+        {
+          "text": "Jobab, hijo de Zera",
+          "isCorrect": false
+        },
+        {
+          "text": "Husam, de tierra de Temán",
+          "isCorrect": false
+        },
+        {
+          "text": "Bela, hijo de Beor",
+          "isCorrect": true
+        },
+        {
+          "text": "Adad, hijo de Badad",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

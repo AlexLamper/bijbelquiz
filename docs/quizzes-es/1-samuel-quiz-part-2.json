@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre 1 Samuel 2: la oración de Anna, el pecado de los hijos de Eli y el varón de Dios.",
+  "slug": "1-samuel-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo empieza la oración de Anna en este capítulo?",
+      "explanation": "Anna oró y dijo: mi corazón se regocija en Jehová, mi cuerno es ensalzado en Jehová.",
+      "bibleReference": "1 Samuel 2:1",
+      "answers": [
+        {
+          "text": "Mi alma está afligida delante de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi corazón se regocija en Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Bendito sea el Dios de Israel para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová ha cerrado la matriz de su sierva",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la oración acerca de un refugio?",
+      "explanation": "Dice que no hay santo como Jehová, porque no hay ninguno fuera de él, y que no hay refugio como el Dios nuestro.",
+      "bibleReference": "1 Samuel 2:2",
+      "answers": [
+        {
+          "text": "Que el refugio está en el tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los fuertes son su propio refugio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el refugio es el altar de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no hay refugio como el Dios nuestro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según la oración, ¿qué le sucede a la estéril?",
+      "explanation": "La oración dice que los hartos se alquilaron por pan y cesaron los hambrientos, hasta parir siete la estéril, y la que tenía muchos hijos enfermó.",
+      "bibleReference": "1 Samuel 2:5",
+      "answers": [
+        {
+          "text": "Llega a parir siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Queda sin hijos para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Se alquila por pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Enferma y muere",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la oración que hace Jehová con los pobres y los ricos?",
+      "explanation": "Dice que Jehová empobrece y él enriquece, abate y ensalza.",
+      "bibleReference": "1 Samuel 2:7",
+      "answers": [
+        {
+          "text": "Que da pan a los hartos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quiebra los arcos de los flacos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que empobrece y enriquece, abate y ensalza",
+          "isCorrect": true
+        },
+        {
+          "text": "Que deja al pobre en el polvo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el niño cuando Elcana se volvió a su casa en Ramatha?",
+      "explanation": "Elcana se volvió a su casa en Ramatha, y el niño ministraba a Jehová delante del sacerdote Eli.",
+      "bibleReference": "1 Samuel 2:11",
+      "answers": [
+        {
+          "text": "Ofrecía holocaustos en el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ministraba a Jehová delante de Eli",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardaba las puertas del tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvió con su padre a Ramatha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a los hijos de Eli?",
+      "explanation": "Dice que los hijos de Eli eran hombres impíos y no tenían conocimiento de Jehová.",
+      "bibleReference": "1 Samuel 2:12",
+      "answers": [
+        {
+          "text": "Hombres impíos sin conocimiento de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Hombres fieles en su ministerio",
+          "isCorrect": false
+        },
+        {
+          "text": "Jóvenes vestidos de ephod de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Jueces de todo Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué exigía el criado del sacerdote antes de que se quemara el sebo?",
+      "explanation": "Antes de quemar el sebo, el criado del sacerdote venía y pedía carne cruda para asar, y decía que no tomaría carne cocida.",
+      "bibleReference": "1 Samuel 2:15",
+      "answers": [
+        {
+          "text": "Un garfio de tres ganchos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un dinero de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Un bocado de pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne cruda para asar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le hacía su madre a Samuel y le traía cada año?",
+      "explanation": "Su madre le hacía una túnica pequeña y se la traía cada año, cuando subía con su marido a ofrecer el sacrificio acostumbrado.",
+      "bibleReference": "1 Samuel 2:19",
+      "answers": [
+        {
+          "text": "Un ephod de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Un epha de harina",
+          "isCorrect": false
+        },
+        {
+          "text": "Una túnica pequeña",
+          "isCorrect": true
+        },
+        {
+          "text": "Una vasija de vino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová por medio del varón de Dios acerca de honrarle?",
+      "explanation": "Jehová dijo: yo honraré a los que me honran, y los que me tuvieren en poco, serán viles.",
+      "bibleReference": "1 Samuel 2:30",
+      "answers": [
+        {
+          "text": "Que honraría a los que le honran",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la casa de Eli sería honrada en Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie quedaría viejo en Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que escogería otra tribu por sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué señal se le dio a Eli sobre sus dos hijos Ophni y Phinees?",
+      "explanation": "Le dijo que le sería por señal esto que acontecería a sus dos hijos, Ophni y Phinees: ambos morirían en un día.",
+      "bibleReference": "1 Samuel 2:34",
+      "answers": [
+        {
+          "text": "Que serían llevados a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que servirían a un sacerdote fiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tendrían hijos varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ambos morirían en un día",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

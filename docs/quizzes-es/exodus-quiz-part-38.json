@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 38",
+  "description": "Diez preguntas sobre Éxodo 38: el altar del holocausto, la fuente, el atrio y las cuentas del oro, de la plata y del metal.",
+  "slug": "exodus-quiz-part-38",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué altura tenía el altar del holocausto?",
+      "explanation": "Éxodo 38:1 dice que hizo el altar del holocausto de madera de Sittim, de cinco codos de longitud y cinco de anchura, cuadrado, y de tres codos de altura.",
+      "bibleReference": "Éxodo 38:1",
+      "answers": [
+        {
+          "text": "Cinco codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Codo y medio",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres codos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué material hizo todos los vasos del altar?",
+      "explanation": "Éxodo 38:3 dice que hizo todos los vasos del altar - calderas, tenazas, tazones, garfios y palas - de metal.",
+      "bibleReference": "Éxodo 38:3",
+      "answers": [
+        {
+          "text": "De oro puro",
+          "isCorrect": false
+        },
+        {
+          "text": "De metal",
+          "isCorrect": true
+        },
+        {
+          "text": "De plata",
+          "isCorrect": false
+        },
+        {
+          "text": "De barro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde salió el metal de la fuente y de su basa?",
+      "explanation": "Éxodo 38:8 dice que hizo la fuente de metal, con su basa de metal, de los espejos de las que velaban a la puerta del tabernáculo del testimonio.",
+      "bibleReference": "Éxodo 38:8",
+      "answers": [
+        {
+          "text": "De la ofrenda de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "De las joyas de oro del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "De los espejos de las que velaban",
+          "isCorrect": true
+        },
+        {
+          "text": "De las estacas viejas del atrio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto medían las cortinas del atrio a la parte del mediodía?",
+      "explanation": "Éxodo 38:9 dice que a la parte austral del mediodía las cortinas del atrio eran de cien codos, de lino torcido.",
+      "bibleReference": "Éxodo 38:9",
+      "answers": [
+        {
+          "text": "Cien codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cincuenta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quince codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas columnas tenía el lado occidental del atrio?",
+      "explanation": "Éxodo 38:12 dice que a la parte del occidente había cortinas de cincuenta codos, con diez columnas y diez basas.",
+      "bibleReference": "Éxodo 38:12",
+      "answers": [
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánta longitud tenía el pabellón de la puerta del atrio?",
+      "explanation": "Éxodo 38:18 dice que el pabellón de la puerta del atrio era de obra de recamado y tenía veinte codos de longitud y cinco codos de altura.",
+      "bibleReference": "Éxodo 38:18",
+      "answers": [
+        {
+          "text": "Cien codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por mano de quién fueron contadas las cuentas del tabernáculo?",
+      "explanation": "Éxodo 38:21 dice que las cuentas del tabernáculo del testimonio fueron contadas de orden de Moisés por mano de Ithamar, hijo de Aarón el sacerdote.",
+      "bibleReference": "Éxodo 38:21",
+      "answers": [
+        {
+          "text": "Por mano de Bezaleel",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mano de Aholiab",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mano de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mano de Ithamar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto fue todo el oro de ofrenda empleado en la obra del santuario?",
+      "explanation": "Éxodo 38:24 dice que todo el oro empleado en la obra del santuario, que fue oro de ofrenda, fue veintinueve talentos y setecientos treinta siclos, según el siclo del santuario.",
+      "bibleReference": "Éxodo 38:24",
+      "answers": [
+        {
+          "text": "Veintinueve talentos y setecientos treinta siclos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cien talentos y mil setecientos siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta talentos y dos mil cuatrocientos siclos",
+          "isCorrect": false
+        },
+        {
+          "text": "Nueve talentos y trescientos siclos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos fueron los que pasaron por cuenta, de veinte años arriba?",
+      "explanation": "Éxodo 38:26 dice que dieron medio siclo por cabeza todos los que pasaron por cuenta, de edad de veinte años y arriba, que fueron seiscientos tres mil quinientos cincuenta.",
+      "bibleReference": "Éxodo 38:26",
+      "answers": [
+        {
+          "text": "Veintinueve mil setecientos treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien mil setecientos setenta y cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos tres mil quinientos cincuenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce mil quinientos cincuenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué sirvieron los cien talentos de plata?",
+      "explanation": "Éxodo 38:27 dice que hubo cien talentos de plata para hacer de fundición las basas del santuario y las basas del velo, a talento por basa.",
+      "bibleReference": "Éxodo 38:27",
+      "answers": [
+        {
+          "text": "Para los capiteles de las columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para las basas del santuario y del velo",
+          "isCorrect": true
+        },
+        {
+          "text": "Para el altar de metal y sus vasos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para las estacas del atrio alrededor",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

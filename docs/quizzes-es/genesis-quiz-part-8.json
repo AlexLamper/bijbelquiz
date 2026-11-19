@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Génesis 8: las aguas que bajan, el cuervo y la paloma, y el altar que Noé edificó al salir del arca.",
+  "slug": "genesis-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo Dios pasar sobre la tierra para que disminuyesen las aguas?",
+      "explanation": "Dios se acordó de Noé y de los animales del arca, e hizo pasar un viento sobre la tierra, y las aguas disminuyeron.",
+      "bibleReference": "Génesis 8:1",
+      "answers": [
+        {
+          "text": "Un fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Una nube",
+          "isCorrect": false
+        },
+        {
+          "text": "Una lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Un viento",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Al cabo de cuántos días decrecieron las aguas?",
+      "explanation": "Las aguas se tornaron de sobre la tierra, yendo y volviendo, y decrecieron al cabo de ciento y cincuenta días.",
+      "bibleReference": "Génesis 8:3",
+      "answers": [
+        {
+          "text": "Ciento y veinte días",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y cincuenta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta y siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde reposó el arca?",
+      "explanation": "El arca reposó en el mes séptimo, a diecisiete días del mes, sobre los montes de Armenia.",
+      "bibleReference": "Génesis 8:4",
+      "answers": [
+        {
+          "text": "Sobre los montes de Shinar",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Nod",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los montes de Armenia",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al río Eufrates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué mes se descubrieron las cimas de los montes?",
+      "explanation": "Las aguas fueron decreciendo hasta el mes décimo, y en el décimo, al primero del mes, se descubrieron las cimas de los montes.",
+      "bibleReference": "Génesis 8:5",
+      "answers": [
+        {
+          "text": "En el mes décimo",
+          "isCorrect": true
+        },
+        {
+          "text": "En el mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes primero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ave envió Noé primero cuando abrió la ventana del arca?",
+      "explanation": "Al cabo de cuarenta días Noé abrió la ventana del arca y envió al cuervo, que estuvo yendo y tornando.",
+      "bibleReference": "Génesis 8:6-7",
+      "answers": [
+        {
+          "text": "La paloma",
+          "isCorrect": false
+        },
+        {
+          "text": "Un águila",
+          "isCorrect": false
+        },
+        {
+          "text": "Una golondrina",
+          "isCorrect": false
+        },
+        {
+          "text": "El cuervo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué volvió la paloma al arca la primera vez?",
+      "explanation": "La paloma no halló donde sentar la planta de su pie, porque las aguas estaban aún sobre la faz de toda la tierra, y volvió al arca.",
+      "bibleReference": "Génesis 8:9",
+      "answers": [
+        {
+          "text": "Porque no halló dónde sentar su pie",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque traía una hoja de oliva en el pico",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Noé extendió la mano y la llamó",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la lluvia no se había detenido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué traía la paloma en su pico cuando volvió a la hora de la tarde?",
+      "explanation": "La paloma volvió con una hoja de oliva en su pico, y Noé entendió que las aguas se habían retirado de sobre la tierra.",
+      "bibleReference": "Génesis 8:11",
+      "answers": [
+        {
+          "text": "Una rama de higuera",
+          "isCorrect": false
+        },
+        {
+          "text": "Un grano de trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Una hoja de oliva",
+          "isCorrect": true
+        },
+        {
+          "text": "Una espiga verde",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Noé cuando las aguas se enjugaron de sobre la tierra?",
+      "explanation": "Noé quitó la cubierta del arca y miró, y la faz de la tierra estaba enjuta.",
+      "bibleReference": "Génesis 8:13",
+      "answers": [
+        {
+          "text": "Rompió la ventana del arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitó la cubierta del arca y miró",
+          "isCorrect": true
+        },
+        {
+          "text": "Ofreció holocausto dentro del arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrió la puerta a los animales",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Noé cuando salió del arca?",
+      "explanation": "Noé edificó un altar a Jehová, y ofreció holocausto de todo animal limpio y de toda ave limpia.",
+      "bibleReference": "Génesis 8:20",
+      "answers": [
+        {
+          "text": "Un altar a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Una ciudad junto al arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Una torre de ladrillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Una viña en el monte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová en su corazón después de percibir olor de suavidad?",
+      "explanation": "Jehová dijo en su corazón que no tornaría más a maldecir la tierra por causa del hombre, ni volvería a destruir todo viviente.",
+      "bibleReference": "Génesis 8:21",
+      "answers": [
+        {
+          "text": "Que destruiría otra vez todo viviente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la tierra no daría más su fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el hombre viviría para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no maldeciría más la tierra",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

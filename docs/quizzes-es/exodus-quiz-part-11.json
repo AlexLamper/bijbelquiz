@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Éxodo 11: la última plaga anunciada, la muerte de los primogénitos y el corazón endurecido de Faraón.",
+  "slug": "exodus-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué anunció Jehová a Moisés que traería aún sobre Faraón y sobre Egipto?",
+      "explanation": "Jehová dijo a Moisés que traería aún una plaga sobre Faraón y sobre Egipto, y que después de ella los dejaría ir.",
+      "bibleReference": "Éxodo 11:1",
+      "answers": [
+        {
+          "text": "Una plaga más",
+          "isCorrect": true
+        },
+        {
+          "text": "Una sequía de siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ejército del norte",
+          "isCorrect": false
+        },
+        {
+          "text": "Un temblor de tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía demandar cada uno a su vecino?",
+      "explanation": "Moisés debía hablar al pueblo para que cada uno demandase a su vecino vasos de plata y de oro.",
+      "bibleReference": "Éxodo 11:2",
+      "answers": [
+        {
+          "text": "Pan y vino para el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Ovejas y vacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Vasos de plata y de oro",
+          "isCorrect": true
+        },
+        {
+          "text": "Tierras y casas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio Jehová al pueblo en los ojos de los Egipcios?",
+      "explanation": "El texto dice que Jehová dio gracia al pueblo en los ojos de los Egipcios.",
+      "bibleReference": "Éxodo 11:3",
+      "answers": [
+        {
+          "text": "Temor",
+          "isCorrect": false
+        },
+        {
+          "text": "Gracia",
+          "isCorrect": true
+        },
+        {
+          "text": "Odio",
+          "isCorrect": false
+        },
+        {
+          "text": "Silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo era Moisés en la tierra de Egipto, según el versículo 3?",
+      "explanation": "El versículo dice que Moisés era muy gran varón en la tierra de Egipto, a los ojos de los siervos de Faraón y del pueblo.",
+      "bibleReference": "Éxodo 11:3",
+      "answers": [
+        {
+          "text": "Era un desconocido para todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Era contado entre los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Era siervo de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Era muy gran varón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A qué hora dijo Moisés que Jehová saldría por medio de Egipto?",
+      "explanation": "Moisés dijo que Jehová había hablado así: a la media noche saldría por medio de Egipto.",
+      "bibleReference": "Éxodo 11:4",
+      "answers": [
+        {
+          "text": "A la media noche",
+          "isCorrect": true
+        },
+        {
+          "text": "Al amanecer",
+          "isCorrect": false
+        },
+        {
+          "text": "A la hora del sacrificio de la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Al mediodía",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta el primogénito de quién llegaría la muerte, según el versículo 5?",
+      "explanation": "Moriría todo primogénito, desde el primogénito de Faraón que se sienta en su trono hasta el primogénito de la sierva que está tras la muela.",
+      "bibleReference": "Éxodo 11:5",
+      "answers": [
+        {
+          "text": "Hasta el primogénito del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el primogénito de la sierva",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el primogénito del extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el primogénito del pastor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué habría por toda la tierra de Egipto?",
+      "explanation": "El texto anuncia un gran clamor por toda la tierra de Egipto, cual nunca fue ni jamás será.",
+      "bibleReference": "Éxodo 11:6",
+      "answers": [
+        {
+          "text": "Un gran silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Una gran fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Un gran clamor",
+          "isCorrect": true
+        },
+        {
+          "text": "Una gran tiniebla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo salió Moisés de con Faraón al terminar de hablarle?",
+      "explanation": "Después de anunciar que los siervos de Faraón se inclinarían delante de él, Moisés se salió muy enojado de con Faraón.",
+      "bibleReference": "Éxodo 11:8",
+      "answers": [
+        {
+          "text": "Muy alegre",
+          "isCorrect": false
+        },
+        {
+          "text": "Llorando",
+          "isCorrect": false
+        },
+        {
+          "text": "En silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Muy enojado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según Jehová, ¿para qué no los oiría Faraón?",
+      "explanation": "Jehová dijo a Moisés que Faraón no los oiría, para que sus maravillas se multiplicasen en la tierra de Egipto.",
+      "bibleReference": "Éxodo 11:9",
+      "answers": [
+        {
+          "text": "Para que el pueblo aprendiese a esperar",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que sus maravillas se multiplicasen",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que Egipto se enriqueciese",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que Aarón hablase en su lugar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no envió Faraón a los hijos de Israel fuera de su país, aunque Moisés y Aarón hicieron todos esos prodigios?",
+      "explanation": "Moisés y Aarón hicieron todos estos prodigios delante de Faraón, mas Jehová había endurecido el corazón de Faraón.",
+      "bibleReference": "Éxodo 11:10",
+      "answers": [
+        {
+          "text": "Jehová había endurecido su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus siervos se lo prohíben",
+          "isCorrect": false
+        },
+        {
+          "text": "No vio ninguno de los prodigios",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedía más plata y oro",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

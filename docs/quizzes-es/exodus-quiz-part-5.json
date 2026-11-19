@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Éxodo 5: la primera visita a Faraón, el ladrillo sin paja y la queja de Moisés a Jehová.",
+  "slug": "exodus-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pidieron Moisés y Aarón a Faraón de parte de Jehová?",
+      "explanation": "Le dijeron que Jehová, el Dios de Israel, manda dejar ir a su pueblo a celebrarle fiesta en el desierto.",
+      "bibleReference": "Éxodo 5:1",
+      "answers": [
+        {
+          "text": "Que les diera paja para el ladrillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les diera la tierra de Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dejara ir al pueblo al desierto",
+          "isCorrect": true
+        },
+        {
+          "text": "Que soltara a los capataces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Faraón a esa petición?",
+      "explanation": "Faraón preguntó quién era Jehová para que él oyera su voz, y dijo que no lo conocía ni dejaría ir a Israel.",
+      "bibleReference": "Éxodo 5:2",
+      "answers": [
+        {
+          "text": "Que no conocía a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo pensaría hasta mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Que irían solo los varones",
+          "isCorrect": false
+        },
+        {
+          "text": "Que oraría a Jehová por ellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron que harían camino de tres días por el desierto?",
+      "explanation": "Dijeron que el Dios de los Hebreos los había encontrado y que irían camino de tres días para sacrificar a Jehová su Dios.",
+      "bibleReference": "Éxodo 5:3",
+      "answers": [
+        {
+          "text": "Buscar paja y rastrojo",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar nuevas ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Apacentar sus ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificar a Jehová su Dios",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dejó de darse al pueblo para hacer ladrillo?",
+      "explanation": "Faraón mandó que de allí adelante no se diese paja al pueblo para hacer ladrillo, sino que ellos mismos la recogieran.",
+      "bibleReference": "Éxodo 5:7",
+      "answers": [
+        {
+          "text": "El barro",
+          "isCorrect": false
+        },
+        {
+          "text": "La paja",
+          "isCorrect": true
+        },
+        {
+          "text": "El agua",
+          "isCorrect": false
+        },
+        {
+          "text": "El pan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con la tarea de ladrillo cuando se les quitó la paja?",
+      "explanation": "Faraón mandó ponerles la misma tarea de ladrillo que hacían antes, sin disminuirles nada.",
+      "bibleReference": "Éxodo 5:8",
+      "answers": [
+        {
+          "text": "Se redujo a la mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "Se dobló cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Siguió siendo la misma de antes",
+          "isCorrect": true
+        },
+        {
+          "text": "Se suspendió por tres días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué recogió el pueblo en lugar de paja?",
+      "explanation": "El pueblo se derramó por toda la tierra de Egipto a coger rastrojo en lugar de paja.",
+      "bibleReference": "Éxodo 5:12",
+      "answers": [
+        {
+          "text": "Juncos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cebada",
+          "isCorrect": false
+        },
+        {
+          "text": "Lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Rastrojo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes azotaban los cuadrilleros de Faraón?",
+      "explanation": "Azotaban a los capataces de los hijos de Israel, a quienes habían puesto sobre ellos, por no cumplir la tarea de ladrillo.",
+      "bibleReference": "Éxodo 5:14",
+      "answers": [
+        {
+          "text": "A las parteras de las Hebreas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los capataces de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "A los gobernadores de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Moisés y a Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Faraón a la queja de los capataces?",
+      "explanation": "Faraón respondió que estaban ociosos, y que por eso decían que iban a sacrificar a Jehová.",
+      "bibleReference": "Éxodo 5:17",
+      "answers": [
+        {
+          "text": "Que estaban ociosos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que les daría paja otra vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hablaría con Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Que podían ir al desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los capataces a Moisés y a Aarón al encontrarlos?",
+      "explanation": "Les dijeron que Jehová mirase sobre ellos y juzgase, porque los habían hecho heder delante de Faraón y de sus siervos.",
+      "bibleReference": "Éxodo 5:21",
+      "answers": [
+        {
+          "text": "Que siguieran hablando a Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que orasen por el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que salieran de Egipto con ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová los mirase y juzgase",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué preguntó Moisés a Jehová al volverse a él?",
+      "explanation": "Moisés preguntó por qué afligía a aquel pueblo y para qué lo había enviado.",
+      "bibleReference": "Éxodo 5:22",
+      "answers": [
+        {
+          "text": "Cuándo vendría la langosta",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién hablaría por él",
+          "isCorrect": false
+        },
+        {
+          "text": "Por qué afligía a aquel pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Dónde estaba la tierra prometida",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

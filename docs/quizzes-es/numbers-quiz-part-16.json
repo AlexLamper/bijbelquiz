@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre Números 16: la rebelión de Coré, Dathán y Abiram, desde los incensarios hasta el fin de la mortandad.",
+  "slug": "numbers-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Según el primer versículo, de quién era hijo Coré?",
+      "explanation": "Números 16:1 presenta a Coré como hijo de Ishar, hijo de Coath, hijo de Leví.",
+      "bibleReference": "Números 16:1",
+      "answers": [
+        {
+          "text": "De Ishar",
+          "isCorrect": true
+        },
+        {
+          "text": "De Eliab",
+          "isCorrect": false
+        },
+        {
+          "text": "De Peleth",
+          "isCorrect": false
+        },
+        {
+          "text": "De Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con cuántos varones de los hijos de Israel se levantaron contra Moisés?",
+      "explanation": "El texto dice que se levantaron contra Moisés con doscientos y cincuenta varones, príncipes de la congregación.",
+      "bibleReference": "Números 16:2",
+      "answers": [
+        {
+          "text": "Catorce mil y setecientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil y doscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos y cincuenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Setenta y cinco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Moisés en cuanto oyó las palabras de Coré y de su séquito?",
+      "explanation": "Cuando Moisés lo oyó, se echó sobre su rostro.",
+      "bibleReference": "Números 16:4",
+      "answers": [
+        {
+          "text": "Tomó un incensario",
+          "isCorrect": false
+        },
+        {
+          "text": "Se echó sobre su rostro",
+          "isCorrect": true
+        },
+        {
+          "text": "Llamó a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Salió del campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían tomar Coré y todo su séquito para la prueba del día siguiente?",
+      "explanation": "Moisés les mandó tomar incensarios, poner fuego en ellos y poner en ellos sahumerio delante de Jehová.",
+      "bibleReference": "Números 16:6-7",
+      "answers": [
+        {
+          "text": "Varas con sus nombres escritos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce panes de trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos carneros sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Incensarios con fuego y sahumerio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron Dathán y Abiram cuando Moisés los envió a llamar?",
+      "explanation": "Dathán y Abiram respondieron: No iremos allá.",
+      "bibleReference": "Números 16:12",
+      "answers": [
+        {
+          "text": "Que no irían",
+          "isCorrect": true
+        },
+        {
+          "text": "Que irían al día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pedían perdón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que primero consultarían a Coré",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Moisés que no había tomado de aquellos hombres?",
+      "explanation": "Moisés dijo a Jehová que ni aun un asno había tomado de ellos, ni había hecho mal a ninguno de ellos.",
+      "bibleReference": "Números 16:15",
+      "answers": [
+        {
+          "text": "Ni un cordero",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni plata ni oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni un asno",
+          "isCorrect": true
+        },
+        {
+          "text": "Ni pan ni agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ocurrió en cuanto Moisés acabó de decir todas estas palabras?",
+      "explanation": "La tierra se rompió debajo de ellos, abrió su boca y los tragó con sus casas y toda su hacienda.",
+      "bibleReference": "Números 16:31-32",
+      "answers": [
+        {
+          "text": "Cayó granizo sobre el campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Un viento fuerte derribó las tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las tiendas se llenaron de humo",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra se abrió y los tragó",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué consumió a los doscientos y cincuenta hombres que ofrecían el sahumerio?",
+      "explanation": "Salió fuego de Jehová y consumió a los doscientos y cincuenta hombres que ofrecían el sahumerio.",
+      "bibleReference": "Números 16:35",
+      "answers": [
+        {
+          "text": "La tierra que se abrió",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego que salió de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "La espada de los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una enfermedad de siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó Moisés a Aarón cuando comenzó la mortandad?",
+      "explanation": "Moisés le mandó tomar el incensario con fuego del altar, poner perfume sobre él e ir a la congregación para hacer expiación por ellos.",
+      "bibleReference": "Números 16:46",
+      "answers": [
+        {
+          "text": "Reunir a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Encerrarse en el tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomar el incensario y hacer expiación",
+          "isCorrect": true
+        },
+        {
+          "text": "Contar a toda la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos murieron en aquella mortandad, sin contar los muertos por el negocio de Coré?",
+      "explanation": "El texto dice que los que murieron en aquella mortandad fueron catorce mil y setecientos.",
+      "bibleReference": "Números 16:49",
+      "answers": [
+        {
+          "text": "Catorce mil y setecientos",
+          "isCorrect": true
+        },
+        {
+          "text": "Doscientos y cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y cuatro mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

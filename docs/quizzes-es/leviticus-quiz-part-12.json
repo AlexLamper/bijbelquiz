@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Levítico 12: los días de purificación de la mujer que da a luz y las ofrendas que debía traer al sacerdote.",
+  "slug": "leviticus-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos días era inmunda la mujer que daba a luz un varón?",
+      "explanation": "La mujer que concebía y paría varón era inmunda siete días.",
+      "bibleReference": "Levítico 12:2",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce días",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hacía al octavo día cuando nacía un varón?",
+      "explanation": "Al octavo día se circuncidaba la carne de su prepucio.",
+      "bibleReference": "Levítico 12:3",
+      "answers": [
+        {
+          "text": "Se circuncidaba la carne de su prepucio",
+          "isCorrect": true
+        },
+        {
+          "text": "Se le ponía nombre delante del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Se ofrecía un becerro por él",
+          "isCorrect": false
+        },
+        {
+          "text": "Se lavaba con aguas vivas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días permanecía la mujer en la sangre de su purgación después de parir varón?",
+      "explanation": "Ella permanecía treinta y tres días en la sangre de su purgación.",
+      "bibleReference": "Levítico 12:4",
+      "answers": [
+        {
+          "text": "Veintiún días",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta y seis días",
+          "isCorrect": false
+        },
+        {
+          "text": "Catorce días",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y tres días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no podía hacer la mujer hasta que se cumplieran los días de su purgación?",
+      "explanation": "No podía tocar ninguna cosa santa ni venir al santuario hasta que se cumplieran los días de su purgación.",
+      "bibleReference": "Levítico 12:4",
+      "answers": [
+        {
+          "text": "No podía comer pan sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "No podía salir de su tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "No podía tocar cosa santa ni venir al santuario",
+          "isCorrect": true
+        },
+        {
+          "text": "No podía hablar con el sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas semanas era inmunda la mujer que daba a luz una hembra?",
+      "explanation": "Si paría hembra, era inmunda dos semanas, conforme a su separación.",
+      "bibleReference": "Levítico 12:5",
+      "answers": [
+        {
+          "text": "Dos semanas",
+          "isCorrect": true
+        },
+        {
+          "text": "Una semana",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro semanas",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis semanas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al dar a luz una hembra, ¿cuántos días estaba purificándose de su sangre?",
+      "explanation": "Después de parir hembra, estaba sesenta y seis días purificándose de su sangre.",
+      "bibleReference": "Levítico 12:5",
+      "answers": [
+        {
+          "text": "Treinta y tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Catorce días",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta y seis días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué animal debía traer para holocausto al cumplirse los días de su purgación?",
+      "explanation": "Debía traer un cordero de un año para holocausto, lo mismo por hijo que por hija.",
+      "bibleReference": "Levítico 12:6",
+      "answers": [
+        {
+          "text": "Un macho cabrío",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordero de un año",
+          "isCorrect": true
+        },
+        {
+          "text": "Un becerro de la vacada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía traer para expiación junto con ese animal?",
+      "explanation": "Junto con el cordero traía un palomino o una tórtola para expiación.",
+      "bibleReference": "Levítico 12:6",
+      "answers": [
+        {
+          "text": "Pan leudo y aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Un palomino o una tórtola",
+          "isCorrect": true
+        },
+        {
+          "text": "Flor de harina amasada con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Un log de aceite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién y dónde debía llevar sus ofrendas?",
+      "explanation": "Las llevaba al sacerdote, a la puerta del tabernáculo del testimonio.",
+      "bibleReference": "Levítico 12:6",
+      "answers": [
+        {
+          "text": "Al sacerdote, a la puerta del tabernáculo del testimonio",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ancianos, en la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Al altar del holocausto, dentro del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "A su marido, en su propia tienda del real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué podía traer si no alcanzaba su mano para un cordero?",
+      "explanation": "Si no alcanzaba su mano lo suficiente para un cordero, tomaba dos tórtolas o dos palominos, uno para holocausto y otro para expiación.",
+      "bibleReference": "Levítico 12:8",
+      "answers": [
+        {
+          "text": "Nada, quedaba libre de ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío del rebaño",
+          "isCorrect": false
+        },
+        {
+          "text": "Una medida de aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos tórtolas o dos palominos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

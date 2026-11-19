@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Números 19: la vaca bermeja, sus cenizas y el agua de separación para el que queda inmundo.",
+  "slug": "numbers-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué animal debían traer los hijos de Israel para esta ordenanza?",
+      "explanation": "La ordenanza pide una vaca bermeja, perfecta, en la cual no haya falta.",
+      "bibleReference": "Números 19:2",
+      "answers": [
+        {
+          "text": "Una vaca bermeja sin falta",
+          "isCorrect": true
+        },
+        {
+          "text": "Un carnero blanco",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro de dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra sin mancha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién se entregaba la vaca, que la sacaba fuera del campo?",
+      "explanation": "La vaca se daba a Eleazar el sacerdote, que la sacaba fuera del campo y la hacía degollar en su presencia.",
+      "bibleReference": "Números 19:3",
+      "answers": [
+        {
+          "text": "A los hijos de Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Eleazar el sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "A Moisés y a Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A un hombre limpio del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces se rociaba la sangre hacia la delantera del tabernáculo del testimonio?",
+      "explanation": "Eleazar tomaba de la sangre con su dedo y rociaba siete veces hacia la delantera del tabernáculo del testimonio.",
+      "bibleReference": "Números 19:4",
+      "answers": [
+        {
+          "text": "Tres veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete veces",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué echaba el sacerdote en medio del fuego en que ardía la vaca?",
+      "explanation": "El sacerdote tomaba palo de cedro, hisopo y escarlata, y los echaba en medio del fuego.",
+      "bibleReference": "Números 19:6",
+      "answers": [
+        {
+          "text": "Sal, aceite e incienso",
+          "isCorrect": false
+        },
+        {
+          "text": "Harina y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Palo de cedro, hisopo y escarlata",
+          "isCorrect": true
+        },
+        {
+          "text": "Ramas de olivo y de mirto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía un hombre limpio con las cenizas de la vaca?",
+      "explanation": "Un hombre limpio recogía las cenizas y las ponía fuera del campo en lugar limpio, y la congregación las guardaba para el agua de separación.",
+      "bibleReference": "Números 19:9",
+      "answers": [
+        {
+          "text": "Las ponía fuera del campo en lugar limpio",
+          "isCorrect": true
+        },
+        {
+          "text": "Las esparcía sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Las echaba en el arroyo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las guardaba en el tabernáculo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días quedaba inmundo el que tocaba un muerto?",
+      "explanation": "El que tocare muerto de cualquiera persona humana sería inmundo siete días.",
+      "bibleReference": "Números 19:11",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un día",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué días debía purificarse el que había tocado un muerto?",
+      "explanation": "Debía purificarse al tercer día y quedaba limpio al séptimo día.",
+      "bibleReference": "Números 19:12",
+      "answers": [
+        {
+          "text": "Al primero y al octavo",
+          "isCorrect": false
+        },
+        {
+          "text": "Al tercer día y al séptimo",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente al séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada día durante una semana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vaso quedaba inmundo cuando alguno moría en la tienda?",
+      "explanation": "Todo vaso abierto, sobre el cual no hubiere tapadera bien ajustada, sería inmundo.",
+      "bibleReference": "Números 19:14-15",
+      "answers": [
+        {
+          "text": "Todo vaso de barro que esté en la tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo vaso de metal sin lavar",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo vaso abierto sin tapadera ajustada",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente los vasos del santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomaba el hombre limpio para rociar la tienda y las personas?",
+      "explanation": "Un hombre limpio tomaba hisopo, lo mojaba en el agua y rociaba sobre la tienda, los muebles y las personas.",
+      "bibleReference": "Números 19:18",
+      "answers": [
+        {
+          "text": "Un ramo de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "Hisopo mojado en el agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Su propio dedo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un vaso de barro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el estatuto perpetuo, ¿qué debía hacer el que rociaba el agua de la separación?",
+      "explanation": "El texto dice que el que rociare el agua de la separación lavará sus vestidos.",
+      "bibleReference": "Números 19:21",
+      "answers": [
+        {
+          "text": "Quemar sus vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Salir del campo siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecer un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavar sus vestidos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

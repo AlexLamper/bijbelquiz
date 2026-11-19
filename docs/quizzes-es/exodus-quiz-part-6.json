@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Éxodo 6: la promesa de Jehová de sacar al pueblo de Egipto y las cabezas de las familias de Rubén, Simeón y Leví.",
+  "slug": "exodus-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué respondió Jehová a Moisés acerca de Faraón?",
+      "explanation": "Jehová dijo que ahora vería lo que haría a Faraón: con mano fuerte los ha de dejar ir y los ha de echar de su tierra.",
+      "bibleReference": "Éxodo 6:1",
+      "answers": [
+        {
+          "text": "Que Faraón nunca los dejaría ir",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Faraón les pediría paja",
+          "isCorrect": false
+        },
+        {
+          "text": "Que él mismo iría a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Faraón los echaría de su tierra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Bajo qué nombre apareció Dios a Abraham, a Isaac y a Jacob?",
+      "explanation": "Dijo que apareció a Abraham, a Isaac y a Jacob bajo el nombre de Dios Omnipotente, y que en su nombre JEHOVÁ no se notificó a ellos.",
+      "bibleReference": "Éxodo 6:3",
+      "answers": [
+        {
+          "text": "Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios Omnipotente",
+          "isCorrect": true
+        },
+        {
+          "text": "YO SOY EL QUE SOY",
+          "isCorrect": false
+        },
+        {
+          "text": "El Dios de los Hebreos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tierra prometió darles el pacto que Dios estableció con ellos?",
+      "explanation": "Dios estableció su pacto con ellos para darles la tierra de Canaán, la tierra en que fueron extranjeros.",
+      "bibleReference": "Éxodo 6:4",
+      "answers": [
+        {
+          "text": "La tierra de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Canaán",
+          "isCorrect": true
+        },
+        {
+          "text": "El país de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dijo Jehová que redimiría a los hijos de Israel?",
+      "explanation": "Dijo que los sacaría de debajo de las cargas de Egipto y los redimiría con brazo extendido y con juicios grandes.",
+      "bibleReference": "Éxodo 6:6",
+      "answers": [
+        {
+          "text": "Con brazo extendido y juicios grandes",
+          "isCorrect": true
+        },
+        {
+          "text": "Con paja y ladrillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con pestilencia y espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con carros y gente de a caballo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no escuchaban los hijos de Israel a Moisés?",
+      "explanation": "No escuchaban a Moisés a causa de la congoja de espíritu y de la dura servidumbre.",
+      "bibleReference": "Éxodo 6:9",
+      "answers": [
+        {
+          "text": "Porque no conocían a Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la congoja y la dura servidumbre",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Faraón se lo prohibía",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque estaban en el campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamó Moisés a sí mismo al responder a Jehová?",
+      "explanation": "Moisés dijo que los hijos de Israel no lo escuchaban, y preguntó cómo lo escucharía Faraón, siendo él incircunciso de labios.",
+      "bibleReference": "Éxodo 6:12",
+      "answers": [
+        {
+          "text": "Tardo de manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Siervo de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Incircunciso de labios",
+          "isCorrect": true
+        },
+        {
+          "text": "Peregrino en tierra ajena",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los hijos de Rubén?",
+      "explanation": "Los hijos de Rubén, el primogénito de Israel, fueron Hanoch, Phallú, Hezrón y Carmi.",
+      "bibleReference": "Éxodo 6:14",
+      "answers": [
+        {
+          "text": "Hanoch, Phallú, Hezrón y Carmi",
+          "isCorrect": true
+        },
+        {
+          "text": "Gersón, Coath y Merari",
+          "isCorrect": false
+        },
+        {
+          "text": "Jemuel, Jamín y Ohad",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadab, Abiú y Eleazar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuáles eran los nombres de los hijos de Leví?",
+      "explanation": "Los nombres de los hijos de Leví por sus linajes fueron Gersón, Coath y Merari.",
+      "bibleReference": "Éxodo 6:16",
+      "answers": [
+        {
+          "text": "Libni, Shimi y Musi",
+          "isCorrect": false
+        },
+        {
+          "text": "Amram, Izhar y Uzziel",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanoch, Phallú y Carmi",
+          "isCorrect": false
+        },
+        {
+          "text": "Gersón, Coath y Merari",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con quién se casó Amram, y quiénes fueron sus hijos?",
+      "explanation": "Amram tomó por mujer a Jochêbed, su tía, la cual le parió a Aarón y a Moisés.",
+      "bibleReference": "Éxodo 6:20",
+      "answers": [
+        {
+          "text": "Con Elisabeth; Nadab y Abiú",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una Cananea; Zoar y Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Jochêbed; Aarón y Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Con Séphora; Gersom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue la mujer de Aarón?",
+      "explanation": "Aarón tomó por mujer a Elisabeth, hija de Aminadab y hermana de Naasón.",
+      "bibleReference": "Éxodo 6:23",
+      "answers": [
+        {
+          "text": "Jochêbed, hija de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "Elisabeth, hija de Aminadab",
+          "isCorrect": true
+        },
+        {
+          "text": "Séphora, hija del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Una de las hijas de Phutiel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

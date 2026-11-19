@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Éxodo 9: la pestilencia en el ganado, el sarpullido y el granizo con fuego sobre la tierra de Egipto.",
+  "slug": "exodus-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué vendría sobre los ganados que estaban en el campo?",
+      "explanation": "Jehová dijo que su mano sería sobre los ganados del campo, caballos, asnos, camellos, vacas y ovejas, con pestilencia gravísima.",
+      "bibleReference": "Éxodo 9:3",
+      "answers": [
+        {
+          "text": "Granizo con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Moscas molestísimas",
+          "isCorrect": false
+        },
+        {
+          "text": "Pestilencia gravísima",
+          "isCorrect": true
+        },
+        {
+          "text": "Sarpullido con tumores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con el ganado de los hijos de Israel?",
+      "explanation": "Murió todo el ganado de Egipto, pero del ganado de los hijos de Israel no murió uno.",
+      "bibleReference": "Éxodo 9:6",
+      "answers": [
+        {
+          "text": "No murió ni uno",
+          "isCorrect": true
+        },
+        {
+          "text": "Murió todo",
+          "isCorrect": false
+        },
+        {
+          "text": "Murió la mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "Fue llevado a Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían tomar y esparcir hacia el cielo delante de Faraón?",
+      "explanation": "Jehová les dijo que tomasen puñados de ceniza de un horno y que Moisés la esparciese hacia el cielo delante de Faraón.",
+      "bibleReference": "Éxodo 9:8",
+      "answers": [
+        {
+          "text": "Polvo de la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Agua del río en vasos de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Paja del campo de Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "Puñados de ceniza de un horno",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les pasó a los magos por el sarpullido?",
+      "explanation": "Los magos no podían estar delante de Moisés a causa de los tumores, porque hubo sarpullido en ellos y en todos los Egipcios.",
+      "bibleReference": "Éxodo 9:11",
+      "answers": [
+        {
+          "text": "Huyeron de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "No podían estar delante de Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Hicieron lo mismo con sus encantamientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Oraron a Jehová por Faraón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anunció Jehová que haría llover al día siguiente?",
+      "explanation": "Jehová anunció que al día siguiente, a aquellas horas, haría llover granizo muy grave, cual nunca fue en Egipto.",
+      "bibleReference": "Éxodo 9:18",
+      "answers": [
+        {
+          "text": "Fuego del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Langosta sin número",
+          "isCorrect": false
+        },
+        {
+          "text": "Granizo muy grave",
+          "isCorrect": true
+        },
+        {
+          "text": "Tinieblas de tres días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer con el ganado que estaba en el campo?",
+      "explanation": "Jehová mandó recoger el ganado a casa, porque el granizo descendería sobre todo hombre o animal que se hallase en el campo.",
+      "bibleReference": "Éxodo 9:19",
+      "answers": [
+        {
+          "text": "Llevarlo a Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "Venderlo a los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejarlo suelto en el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Recogerlo a casa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vino mezclado con el granizo?",
+      "explanation": "Hubo granizo y fuego mezclado con el granizo, tan grande cual nunca hubo en toda la tierra de Egipto.",
+      "bibleReference": "Éxodo 9:24",
+      "answers": [
+        {
+          "text": "Sangre",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Piojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Polvo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde no hubo granizo?",
+      "explanation": "Solamente en la tierra de Gosén, donde estaban los hijos de Israel, no hubo granizo.",
+      "bibleReference": "Éxodo 9:26",
+      "answers": [
+        {
+          "text": "En la tierra de Gosén",
+          "isCorrect": true
+        },
+        {
+          "text": "En la casa de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al río",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Dios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reconoció Faraón cuando llamó a Moisés y a Aarón?",
+      "explanation": "Faraón dijo que había pecado esta vez, que Jehová es justo y que él y su pueblo eran impíos.",
+      "bibleReference": "Éxodo 9:27",
+      "answers": [
+        {
+          "text": "Que no conocía a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el granizo era obra de los magos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los magos eran más fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había pecado y que Jehová es justo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué plantas fueron heridas por el granizo?",
+      "explanation": "El lino y la cebada fueron heridos, porque la cebada estaba ya espigada y el lino en caña.",
+      "bibleReference": "Éxodo 9:31",
+      "answers": [
+        {
+          "text": "El trigo y el centeno",
+          "isCorrect": false
+        },
+        {
+          "text": "La vid y la higuera",
+          "isCorrect": false
+        },
+        {
+          "text": "El lino y la cebada",
+          "isCorrect": true
+        },
+        {
+          "text": "Toda la hierba de Gosén",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

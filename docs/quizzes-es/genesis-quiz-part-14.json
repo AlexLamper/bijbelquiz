@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Génesis 14: la guerra de los reyes en el valle de Siddim, el rescate de Lot y el encuentro con Melchîsedec.",
+  "slug": "genesis-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué era rey Amraphel?",
+      "explanation": "El capítulo empieza en los días de Amraphel, rey de Shinar.",
+      "bibleReference": "Génesis 14:1",
+      "answers": [
+        {
+          "text": "De Shinar",
+          "isCorrect": true
+        },
+        {
+          "text": "De Elam",
+          "isCorrect": false
+        },
+        {
+          "text": "De Gomorra",
+          "isCorrect": false
+        },
+        {
+          "text": "De Salem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se juntaron todos estos reyes?",
+      "explanation": "Todos estos se juntaron en el valle de Siddim, que es el mar salado.",
+      "bibleReference": "Génesis 14:3",
+      "answers": [
+        {
+          "text": "En el valle del Rey, junto a Salem",
+          "isCorrect": false
+        },
+        {
+          "text": "En la llanura de Parán, junto al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Seir, hacia Cades",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de Siddim, que es el mar salado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años habían servido a Chêdorlaomer antes de rebelarse?",
+      "explanation": "Doce años habían servido a Chêdorlaomer, y al decimotercer año se rebelaron.",
+      "bibleReference": "Génesis 14:4",
+      "answers": [
+        {
+          "text": "Trece años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce años",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce años",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos reyes pelearon contra cuántos en el valle de Siddim?",
+      "explanation": "El texto lo resume así: cuatro reyes contra cinco.",
+      "bibleReference": "Génesis 14:9",
+      "answers": [
+        {
+          "text": "Cinco reyes contra cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres reyes contra dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro reyes contra cinco",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos reyes contra dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué estaba lleno el valle de Siddim?",
+      "explanation": "El valle de Siddim estaba lleno de pozos de betún, y allí cayeron los reyes de Sodoma y de Gomorra al huir.",
+      "bibleReference": "Génesis 14:10",
+      "answers": [
+        {
+          "text": "De agua del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "De pozos de betún",
+          "isCorrect": true
+        },
+        {
+          "text": "De piedras y zarzales",
+          "isCorrect": false
+        },
+        {
+          "text": "De arena del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué pariente de Abram tomaron los vencedores junto con su hacienda?",
+      "explanation": "Tomaron también a Lot, hijo del hermano de Abram, que moraba en Sodoma, y su hacienda.",
+      "bibleReference": "Génesis 14:12",
+      "answers": [
+        {
+          "text": "A Lot, hijo de su hermano",
+          "isCorrect": true
+        },
+        {
+          "text": "A Sarai, su mujer",
+          "isCorrect": false
+        },
+        {
+          "text": "A Nachôr, su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aner, su confederado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos criados de su casa armó Abram para seguir a los reyes?",
+      "explanation": "Abram armó los criados nacidos en su casa, trescientos dieciocho, y los siguió hasta Dan.",
+      "bibleReference": "Génesis 14:14",
+      "answers": [
+        {
+          "text": "Trescientos treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos dieciocho",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatrocientos veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos dieciocho",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sacó Melchîsedec, rey de Salem, al encontrarse con Abram?",
+      "explanation": "Melchîsedec, rey de Salem, sacerdote del Dios alto, sacó pan y vino.",
+      "bibleReference": "Génesis 14:18",
+      "answers": [
+        {
+          "text": "Plata y oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y vino",
+          "isCorrect": true
+        },
+        {
+          "text": "Leche y manteca",
+          "isCorrect": false
+        },
+        {
+          "text": "Ovejas y vacas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio Abram a Melchîsedec después de la bendición?",
+      "explanation": "Tras la bendición, Abram le dio los diezmos de todo.",
+      "bibleReference": "Génesis 14:20",
+      "answers": [
+        {
+          "text": "La mitad de la hacienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Las personas rescatadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los diezmos de todo",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus trescientos dieciocho criados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Abram que tomaría de lo que era del rey de Sodoma?",
+      "explanation": "Abram respondió que nada tomaría de lo que era suyo, desde un hilo hasta la correa de un calzado, para que no dijese: Yo enriquecí a Abram.",
+      "bibleReference": "Génesis 14:23",
+      "answers": [
+        {
+          "text": "La mitad de la riqueza recobrada",
+          "isCorrect": false
+        },
+        {
+          "text": "Todas las ovejas y vacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada, desde un hilo hasta la correa de un calzado",
+          "isCorrect": true
+        },
+        {
+          "text": "La plata y el oro, pero no las personas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

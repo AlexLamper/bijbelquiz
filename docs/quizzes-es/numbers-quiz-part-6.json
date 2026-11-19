@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Números 6: el voto de nazareo, su ofrenda al cumplirse el tiempo y la bendición de Aarón.",
+  "slug": "numbers-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué se abstenía el que hacía voto de nazareo?",
+      "explanation": "El nazareo se abstenía de vino y de sidra, y no bebía vinagre de vino ni vinagre de sidra, ni licor de uvas.",
+      "bibleReference": "Números 6:3",
+      "answers": [
+        {
+          "text": "De carne y de pan",
+          "isCorrect": false
+        },
+        {
+          "text": "De vino y de sidra",
+          "isCorrect": true
+        },
+        {
+          "text": "De leche y de miel",
+          "isCorrect": false
+        },
+        {
+          "text": "De aceite y de sal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no debía pasar sobre la cabeza del nazareo?",
+      "explanation": "Todo el tiempo del voto de su nazareato no pasaba navaja sobre su cabeza, y dejaba crecer las guedejas de su cabello.",
+      "bibleReference": "Números 6:5",
+      "answers": [
+        {
+          "text": "Aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "Agua de la expiación",
+          "isCorrect": false
+        },
+        {
+          "text": "Ceniza del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Navaja",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué parientes podía contaminarse el nazareo cuando morían?",
+      "explanation": "El nazareo no se contaminaba por su padre, ni por su madre, ni por su hermano, ni por su hermana, porque tenía sobre su cabeza la consagración de su Dios.",
+      "bibleReference": "Números 6:7",
+      "answers": [
+        {
+          "text": "Por ninguno de ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente por su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente por su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Por cualquier pariente cercano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si alguno moría de repente junto a él, ¿cuándo raía el nazareo su cabeza?",
+      "explanation": "El día de su purificación raía su cabeza: al séptimo día la raía.",
+      "bibleReference": "Números 6:9",
+      "answers": [
+        {
+          "text": "Al tercer día",
+          "isCorrect": false
+        },
+        {
+          "text": "Al día octavo",
+          "isCorrect": false
+        },
+        {
+          "text": "Al séptimo día",
+          "isCorrect": true
+        },
+        {
+          "text": "Al mes siguiente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué traía al sacerdote el día octavo?",
+      "explanation": "El día octavo traía dos tórtolas o dos palominos al sacerdote, a la puerta del tabernáculo del testimonio.",
+      "bibleReference": "Números 6:10",
+      "answers": [
+        {
+          "text": "Un novillo y un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordero de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos tórtolas o dos palominos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrecía por sacrificio de paces cuando se cumplía su nazareato?",
+      "explanation": "Su ofrenda incluía un cordero en holocausto, una cordera en expiación y un carnero sin defecto por sacrificio de paces.",
+      "bibleReference": "Números 6:14",
+      "answers": [
+        {
+          "text": "Un cordero de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero sin defecto",
+          "isCorrect": true
+        },
+        {
+          "text": "Una cordera de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el nazareo con los cabellos de su nazareato?",
+      "explanation": "Raía su cabeza a la puerta del tabernáculo del testimonio y ponía los cabellos sobre el fuego que estaba debajo del sacrificio de las paces.",
+      "bibleReference": "Números 6:18",
+      "answers": [
+        {
+          "text": "Los enterraba fuera del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los guardaba en el santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ponía sobre el fuego del sacrificio",
+          "isCorrect": true
+        },
+        {
+          "text": "Los quemaba sobre el altar de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué podía hacer el nazareo después de esa ofrenda?",
+      "explanation": "El sacerdote mecía la ofrenda delante de Jehová, y después el nazareo podía beber vino.",
+      "bibleReference": "Números 6:20",
+      "answers": [
+        {
+          "text": "Beber vino",
+          "isCorrect": true
+        },
+        {
+          "text": "Entrar en el lugar santísimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Tocar un muerto sin contaminarse",
+          "isCorrect": false
+        },
+        {
+          "text": "Cortar su cabello por primera vez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras comenzaba la bendición que Aarón y sus hijos debían decir?",
+      "explanation": "Jehová manda a Aarón y a sus hijos bendecir así a los hijos de Israel: Jehová te bendiga, y te guarde.",
+      "bibleReference": "Números 6:23-24",
+      "answers": [
+        {
+          "text": "Jehová te bendiga, y te guarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová es tu fortaleza y tu canto",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendito sea Jehová para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová pelea por ti",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el final del capítulo, ¿qué pondrían sobre los hijos de Israel?",
+      "explanation": "Jehová dice que pondrán su nombre sobre los hijos de Israel, y que él los bendecirá.",
+      "bibleReference": "Números 6:27",
+      "answers": [
+        {
+          "text": "La señal del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "El aceite de la unción",
+          "isCorrect": false
+        },
+        {
+          "text": "El nombre de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Las franjas de sus vestidos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

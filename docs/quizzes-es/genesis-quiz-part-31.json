@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 31",
+  "description": "Diez preguntas sobre Génesis 31: la huida de Jacob de casa de Labán, los ídolos hurtados y el majano de Galaad.",
+  "slug": "genesis-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le dijo Jehová a Jacob?",
+      "explanation": "Jehová dijo á Jacob: Vuélvete á la tierra de tus padres, y á tu parentela; que yo seré contigo.",
+      "bibleReference": "Génesis 31:3",
+      "answers": [
+        {
+          "text": "Que sirviera otros siete años a Labán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volviera a la tierra de sus padres",
+          "isCorrect": true
+        },
+        {
+          "text": "Que fuera a la tierra de los orientales",
+          "isCorrect": false
+        },
+        {
+          "text": "Que edificara un altar en aquel lugar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según lo que Jacob contó a sus mujeres, ¿qué pasaba cuando Labán le señalaba un salario?",
+      "explanation": "Jacob dijo que si Labán decía que los pintados serían su salario, todas las ovejas parían pintados, y si decía que los listados, parían listados.",
+      "bibleReference": "Génesis 31:8",
+      "answers": [
+        {
+          "text": "Las ovejas no parían nada aquel año",
+          "isCorrect": false
+        },
+        {
+          "text": "Labán se quedaba con todas las crías",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Labán escogían primero",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ovejas parían justamente lo que Labán había señalado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se presentó el que habló a Jacob en sueños?",
+      "explanation": "Le dijo: Yo soy el Dios de Beth-el, donde tú ungiste el título, y donde me hiciste un voto.",
+      "bibleReference": "Génesis 31:13",
+      "answers": [
+        {
+          "text": "Como el Dios de Beth-el, donde Jacob hizo su voto",
+          "isCorrect": true
+        },
+        {
+          "text": "Como el Dios de Labán Arameo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el ángel que guarda el monte de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el temor de Isaac, su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondieron Rachêl y Lea cuando Jacob habló con ellas?",
+      "explanation": "Dijeron que toda la riqueza que Dios había quitado á su padre era de ellas y de sus hijos, y que hiciera todo lo que Dios le había dicho.",
+      "bibleReference": "Génesis 31:16",
+      "answers": [
+        {
+          "text": "Que esperase el regreso de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no se fuera sin los ídolos de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hiciera todo lo que Dios le había dicho",
+          "isCorrect": true
+        },
+        {
+          "text": "Que pidiera su parte de la heredad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hurtó Rachêl mientras su padre estaba trasquilando sus ovejas?",
+      "explanation": "Labán había ido á trasquilar sus ovejas, y Rachêl hurtó los ídolos de su padre.",
+      "bibleReference": "Génesis 31:19",
+      "answers": [
+        {
+          "text": "La plata de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ídolos de su padre",
+          "isCorrect": true
+        },
+        {
+          "text": "Las joyas de sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los rebaños más tempranos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días de camino siguió Labán a Jacob antes de alcanzarlo?",
+      "explanation": "Labán tomó á sus hermanos consigo y fué tras Jacob camino de siete días, y le alcanzó en el monte de Galaad.",
+      "bibleReference": "Génesis 31:23",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez días",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Dios a Labán en sueños aquella noche?",
+      "explanation": "Dios vino á Labán en sueños y le dijo: Guárdate que no hables á Jacob descomedidamente.",
+      "bibleReference": "Génesis 31:24",
+      "answers": [
+        {
+          "text": "Que devolviera a Jacob todo su ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no siguiera a Jacob ni un día más",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le entregara sus hijas y sus nietos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se guardara de hablar a Jacob descomedidamente",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde escondió Rachêl los ídolos cuando Labán buscó por las tiendas?",
+      "explanation": "Rachêl tomó los ídolos, los puso en una albarda de un camello y se sentó sobre ellos; Labán tentó toda la tienda y no los halló.",
+      "bibleReference": "Génesis 31:34",
+      "answers": [
+        {
+          "text": "Debajo de una encina, junto al camino",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tienda de su hermana Lea",
+          "isCorrect": false
+        },
+        {
+          "text": "En una albarda de camello, y se sentó encima",
+          "isCorrect": true
+        },
+        {
+          "text": "Entre los rebaños que iban delante",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jacob que le pasaba de día y de noche mientras servía a Labán?",
+      "explanation": "Jacob dijo que de día lo consumía el calor y de noche la helada, y que el sueño huía de sus ojos.",
+      "bibleReference": "Génesis 31:40",
+      "answers": [
+        {
+          "text": "De día lo consumía el calor y de noche la helada",
+          "isCorrect": true
+        },
+        {
+          "text": "De día y de noche temía a las fieras del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "De día apacentaba y de noche guardaba la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "De día y de noche contaba las ovejas paridas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dio Jacob al majano de piedras que levantaron?",
+      "explanation": "Labán lo llamó Jegar Sahadutha y Jacob lo llamó Galaad, como testigo entre los dos.",
+      "bibleReference": "Génesis 31:47",
+      "answers": [
+        {
+          "text": "Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "Jegar Sahadutha",
+          "isCorrect": false
+        },
+        {
+          "text": "Galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "Mahanaim",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

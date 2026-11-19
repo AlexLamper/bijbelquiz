@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 50",
+  "description": "Diez preguntas sobre Génesis 50: el duelo por Jacob, su sepultura en Canaán, las palabras de José a sus hermanos y su muerte en Egipto.",
+  "slug": "genesis-quiz-part-50",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Sobre qué se echó José llorando?",
+      "explanation": "José se echó sobre el rostro de su padre, lloró sobre él y lo besó.",
+      "bibleReference": "Génesis 50:1",
+      "answers": [
+        {
+          "text": "Sobre el ataúd de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el rostro de su padre",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre la cama de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la tierra de Gosén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes mandó José que embalsamaran a su padre?",
+      "explanation": "José mandó a sus médicos familiares que embalsamasen a su padre, y ellos embalsamaron a Israel.",
+      "bibleReference": "Génesis 50:2",
+      "answers": [
+        {
+          "text": "A sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sacerdotes de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A sus médicos familiares",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días lloraron los Egipcios a Israel?",
+      "explanation": "Los días de los embalsamados se cumplieron en cuarenta días, y los Egipcios lo lloraron setenta días.",
+      "bibleReference": "Génesis 50:3",
+      "answers": [
+        {
+          "text": "Setenta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Faraón a la petición de José?",
+      "explanation": "Faraón le dijo a José que fuera y sepultara a su padre, como él le había conjurado.",
+      "bibleReference": "Génesis 50:6",
+      "answers": [
+        {
+          "text": "Que no saliera de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que enviara a sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fuera y sepultara a su padre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que esperara el fin del luto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dejaron en la tierra de Gosén cuando subieron a sepultar a Jacob?",
+      "explanation": "Solamente dejaron en la tierra de Gosén sus niños, sus ovejas y sus vacas.",
+      "bibleReference": "Génesis 50:8",
+      "answers": [
+        {
+          "text": "Los carros y la gente de a caballo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los siervos de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Los médicos y los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los niños, las ovejas y las vacas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre recibió el lugar del llanto en la era de Atad?",
+      "explanation": "Al ver los Cananeos el llanto en la era de Atad, el nombre de aquel lugar fue llamado Abelmizraim.",
+      "bibleReference": "Génesis 50:11",
+      "answers": [
+        {
+          "text": "Abelmizraim",
+          "isCorrect": true
+        },
+        {
+          "text": "El campo de Macpela",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Gosén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué temieron los hermanos de José al ver que su padre había muerto?",
+      "explanation": "Dijeron que quizá José los aborrecería y les daría el pago de todo el mal que le hicieron.",
+      "bibleReference": "Génesis 50:15",
+      "answers": [
+        {
+          "text": "Que volviera el hambre a la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Faraón los echara de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que José les pagara el mal que le hicieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los Cananeos pelearan contra ellos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según José, ¿qué hizo Dios con el mal que sus hermanos pensaron contra él?",
+      "explanation": "José les dijo que ellos pensaron mal sobre él, pero que Dios lo encaminó a bien, para mantener en vida a mucho pueblo.",
+      "bibleReference": "Génesis 50:20",
+      "answers": [
+        {
+          "text": "Lo olvidó para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo encaminó a bien",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo castigó con hambre",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo escondió de Faraón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años vivió José?",
+      "explanation": "José estuvo en Egipto con la casa de su padre y vivió ciento diez años.",
+      "bibleReference": "Génesis 50:22",
+      "answers": [
+        {
+          "text": "Ciento diez años",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento cuarenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo jurar José a los hijos de Israel?",
+      "explanation": "José los conjuró diciendo que Dios ciertamente los visitaría y que harían llevar de allí sus huesos.",
+      "bibleReference": "Génesis 50:25",
+      "answers": [
+        {
+          "text": "Que no volverían a Gosén",
+          "isCorrect": false
+        },
+        {
+          "text": "Que servirían siempre a Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sepultarían a sus hijos en Macpela",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llevarían de allí sus huesos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

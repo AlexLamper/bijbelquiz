@@ -1,0 +1,122 @@
+{
+  "title": "Deuteronomio Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Deuteronomio 19: las tres ciudades de refugio, el homicida por yerro, los términos del prójimo y el testigo falso.",
+  "slug": "deuteronomy-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántas ciudades debía apartar Israel en medio de la tierra que recibía?",
+      "explanation": "El texto manda apartar tres ciudades en medio de la tierra que Jehová le da para que la posea.",
+      "bibleReference": "Deuteronomio 19:2",
+      "answers": [
+        { "text": "Seis ciudades", "isCorrect": false },
+        { "text": "Tres ciudades", "isCorrect": true },
+        { "text": "Doce ciudades", "isCorrect": false },
+        { "text": "Cuarenta y ocho ciudades", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para qué debía dividirse el término de la tierra en tres partes?",
+      "explanation": "El texto manda arreglar el camino y dividir el término en tres partes, para que todo homicida pueda huir allí.",
+      "bibleReference": "Deuteronomio 19:3",
+      "answers": [
+        { "text": "Para guardar en ellas el diezmo", "isCorrect": false },
+        { "text": "Para que morasen allí los Levitas", "isCorrect": false },
+        { "text": "Para juntar en ellas a los ejércitos", "isCorrect": false },
+        { "text": "Para que huyera allí todo homicida", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué homicida podía huir a esas ciudades y vivir?",
+      "explanation": "El texto describe el caso del que hirió a su prójimo por yerro, sin tenerle enemistad desde antes.",
+      "bibleReference": "Deuteronomio 19:4",
+      "answers": [
+        { "text": "El que hirió a su prójimo por yerro", "isCorrect": true },
+        { "text": "El que mató por mandato del rey", "isCorrect": false },
+        { "text": "El que acechó a su enemigo", "isCorrect": false },
+        { "text": "El que hirió a un extranjero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "En el ejemplo del capítulo, ¿cómo murió el prójimo?",
+      "explanation": "El texto cuenta que, al cortar leña, el hierro saltó del cabo del hacha, encontró a su prójimo y este murió.",
+      "bibleReference": "Deuteronomio 19:5",
+      "answers": [
+        { "text": "Cayó del terrado de una casa nueva", "isCorrect": false },
+        { "text": "Fue herido por un buey en el camino", "isCorrect": false },
+        { "text": "El hierro saltó del hacha y lo alcanzó", "isCorrect": true },
+        { "text": "Se ahogó al pasar el río", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué peligro había si el camino era largo?",
+      "explanation": "El texto advierte que el pariente del muerto podría ir tras el homicida, alcanzarlo y herirlo de muerte, sin que este mereciera morir.",
+      "bibleReference": "Deuteronomio 19:6",
+      "answers": [
+        { "text": "Que el homicida muriera de hambre", "isCorrect": false },
+        { "text": "Que los ancianos no hallaran testigos", "isCorrect": false },
+        { "text": "Que la ciudad cerrara sus puertas", "isCorrect": false },
+        { "text": "Que el pariente del muerto lo alcanzara", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿En qué caso se añadirían otras tres ciudades a estas tres?",
+      "explanation": "El texto dice que, si Jehová ensanchare su término como lo juró a sus padres y guardaren estos mandamientos, añadirán tres ciudades más.",
+      "bibleReference": "Deuteronomio 19:8-9",
+      "answers": [
+        { "text": "Si el pueblo multiplicara sus caballos", "isCorrect": false },
+        { "text": "Si Jehová ensanchare su término", "isCorrect": true },
+        { "text": "Si se levantaran testigos falsos", "isCorrect": false },
+        { "text": "Si el rey del pueblo lo mandara", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué harían los ancianos con el que mató a su prójimo por odio y huyó a una de esas ciudades?",
+      "explanation": "El texto dice que los ancianos de su ciudad lo sacarán de allí y lo entregarán en mano del pariente del muerto, y morirá.",
+      "bibleReference": "Deuteronomio 19:11-12",
+      "answers": [
+        { "text": "Lo dejarían vivir en la ciudad", "isCorrect": false },
+        { "text": "Lo enviarían fuera del término", "isCorrect": false },
+        { "text": "Lo entregarían al pariente del muerto", "isCorrect": true },
+        { "text": "Lo pondrían delante del sacerdote", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué prohíbe el capítulo en cuanto al término del prójimo?",
+      "explanation": "El texto manda no reducir el término del prójimo, el cual señalaron los antiguos en la heredad.",
+      "bibleReference": "Deuteronomio 19:14",
+      "answers": [
+        { "text": "Reducir el término que señalaron los antiguos", "isCorrect": true },
+        { "text": "Comprarlo con plata de los antiguos", "isCorrect": false },
+        { "text": "Sembrarlo con varias semillas", "isCorrect": false },
+        { "text": "Arrendarlo a un extranjero del lugar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se haría con el testigo que resultaba falso después de la investigación de los jueces?",
+      "explanation": "El texto dice que, si pareciere ser testigo falso, le harán a él como él pensó hacer a su hermano, y así se quitará el mal.",
+      "bibleReference": "Deuteronomio 19:18-19",
+      "answers": [
+        { "text": "Pagaría cien piezas de plata", "isCorrect": false },
+        { "text": "Se le haría como pensó hacer a su hermano", "isCorrect": true },
+        { "text": "Sería desterrado de su ciudad", "isCorrect": false },
+        { "text": "Perdería su heredad en la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras termina el capítulo sobre la medida del castigo?",
+      "explanation": "El último versículo dice que no perdonará tu ojo: vida por vida, ojo por ojo, diente por diente, mano por mano, pie por pie.",
+      "bibleReference": "Deuteronomio 19:21",
+      "answers": [
+        { "text": "Perdón para el que se arrepiente", "isCorrect": false },
+        { "text": "Plata por plata, buey por buey", "isCorrect": false },
+        { "text": "Vida por vida, ojo por ojo, diente por diente", "isCorrect": true },
+        { "text": "Cuarenta azotes, y no más", "isCorrect": false }
+      ]
+    }
+  ]
+}

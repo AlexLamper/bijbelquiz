@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Jueces 3: las gentes que Jehová dejó para probar a Israel, y los libertadores Othoniel, Aod y Samgar.",
+  "slug": "judges-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Para qué dejó Jehová a aquellas gentes en la tierra?",
+      "explanation": "El texto dice que las dejó para probar con ellas a Israel, a todos aquellos que no habían conocido todas las guerras de Canaán, y para enseñarlos en la guerra.",
+      "bibleReference": "Jueces 3:1-2",
+      "answers": [
+        {
+          "text": "Para que labrasen la tierra de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Para probar a Israel y enseñarlo en la guerra",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que pagasen tributo al tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que guardasen las ciudades de refugio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes habitaban en el monte Líbano, según esta lista?",
+      "explanation": "El texto nombra cinco príncipes de los Philisteos, todos los Cananeos, los Sidonios y los Heveos que habitaban en el monte Líbano, desde el monte de Baal-hermón hasta llegar a Hamath.",
+      "bibleReference": "Jueces 3:3",
+      "answers": [
+        {
+          "text": "Los Jebuseos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Amorrheos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Pherezeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Heveos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes sirvieron los hijos de Israel cuando se olvidaron de Jehová su Dios?",
+      "explanation": "El texto dice que hicieron lo malo en ojos de Jehová y, olvidados de Jehová su Dios, sirvieron a los Baales y a los ídolos de los bosques.",
+      "bibleReference": "Jueces 3:7",
+      "answers": [
+        {
+          "text": "A los Baales y a los ídolos de los bosques",
+          "isCorrect": true
+        },
+        {
+          "text": "A Dagón, el dios de los Philisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los dioses de Egipto y de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "A las estrellas y al sol",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En manos de qué rey vendió Jehová a Israel?",
+      "explanation": "El texto dice que la saña de Jehová se encendió contra Israel y los vendió en manos de Chusan-risathaim, rey de Mesopotamia.",
+      "bibleReference": "Jueces 3:8",
+      "answers": [
+        {
+          "text": "De Eglón, rey de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jabín, rey de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "De Chusan-risathaim",
+          "isCorrect": true
+        },
+        {
+          "text": "De Balac, rey de los Moabitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién suscitó Jehová como salvador cuando los hijos de Israel clamaron?",
+      "explanation": "El texto dice que Jehová suscitó salvador a los hijos de Israel y los libró: a Othoniel hijo de Cenez, hermano menor de Caleb.",
+      "bibleReference": "Jueces 3:9",
+      "answers": [
+        {
+          "text": "A Aod hijo de Gera",
+          "isCorrect": false
+        },
+        {
+          "text": "A Othoniel hijo de Cenez",
+          "isCorrect": true
+        },
+        {
+          "text": "A Samgar hijo de Anat",
+          "isCorrect": false
+        },
+        {
+          "text": "A Barac hijo de Abinoam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años reposó la tierra hasta que murió Othoniel?",
+      "explanation": "El texto dice que reposó la tierra cuarenta años, y murió Othoniel, hijo de Cenez.",
+      "bibleReference": "Jueces 3:11",
+      "answers": [
+        {
+          "text": "Cuarenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Ocho",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez y ocho",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se dice de la mano derecha de Aod, hijo de Gera?",
+      "explanation": "El texto dice que Jehová les suscitó salvador a Aod, hijo de Gera, Benjamita, el cual tenía cerrada la mano derecha.",
+      "bibleReference": "Jueces 3:15",
+      "answers": [
+        {
+          "text": "Que la tenía herida en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llevaba en ella el presente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la levantó para jurar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la tenía cerrada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde escondió Aod el puñal de dos filos que se había hecho?",
+      "explanation": "El texto dice que Aod se había hecho un puñal de dos filos, de un codo de largo, y se lo ciñó debajo de sus vestidos a su lado derecho.",
+      "bibleReference": "Jueces 3:16",
+      "answers": [
+        {
+          "text": "En el presente que llevaba al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro de su manto, a la espalda",
+          "isCorrect": false
+        },
+        {
+          "text": "Debajo de sus vestidos, a su lado derecho",
+          "isCorrect": true
+        },
+        {
+          "text": "En su sandalia izquierda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pensaron los siervos al ver cerradas las puertas de la sala?",
+      "explanation": "El texto dice que pensaron que sin duda su señor cubría sus pies en la sala de verano; después tomaron la llave, abrieron y lo hallaron caído en tierra muerto.",
+      "bibleReference": "Jueces 3:24-25",
+      "answers": [
+        {
+          "text": "Que cubría sus pies en la sala de verano",
+          "isCorrect": true
+        },
+        {
+          "text": "Que estaba hablando con Aod",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había salido al patio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dormía por el calor del día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué hirió Samgar hijo de Anat a seiscientos hombres de los Filisteos?",
+      "explanation": "El texto dice que Samgar hijo de Anat hirió seiscientos hombres de los Filisteos con una aguijada de bueyes, y que él también salvó a Israel.",
+      "bibleReference": "Jueces 3:31",
+      "answers": [
+        {
+          "text": "Con un puñal de dos filos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una aguijada de bueyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una estaca de tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el cuerno de guerra",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

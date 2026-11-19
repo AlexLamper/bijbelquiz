@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Números 12: María y Aarón hablan contra Moisés, la respuesta de Jehová y los siete días de María fuera del real.",
+  "slug": "numbers-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por causa de qué hablaron María y Aarón contra Moisés?",
+      "explanation": "María y Aarón hablaron contra Moisés a causa de la mujer Ethiope que él había tomado.",
+      "bibleReference": "Números 12:1",
+      "answers": [
+        {
+          "text": "De la mujer Ethiope que él había tomado",
+          "isCorrect": true
+        },
+        {
+          "text": "Del maná del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Del reparto de las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "De las trompetas de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron María y Aarón acerca de las palabras de Jehová?",
+      "explanation": "Dijeron: ¿Solamente por Moisés ha hablado Jehová? ¿no ha hablado también por nosotros?",
+      "bibleReference": "Números 12:2",
+      "answers": [
+        {
+          "text": "Que Moisés no era manso con el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová también hablaba por ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que querían volver a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová ya no hablaba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Moisés?",
+      "explanation": "Dice que aquel varón Moisés era muy manso, más que todos los hombres que había sobre la tierra.",
+      "bibleReference": "Números 12:3",
+      "answers": [
+        {
+          "text": "Muy fuerte en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Muy sabio entre los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Muy manso, más que todos los hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Muy temeroso delante del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué descendió Jehová a la puerta del tabernáculo?",
+      "explanation": "Jehová descendió en la columna de la nube, se puso a la puerta del tabernáculo y llamó a Aarón y a María.",
+      "bibleReference": "Números 12:5",
+      "answers": [
+        {
+          "text": "En una columna de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "En un viento recio",
+          "isCorrect": false
+        },
+        {
+          "text": "En un carro de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "En la columna de la nube",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dijo Jehová que se daría a conocer a un profeta?",
+      "explanation": "Dijo que si tuvieren profeta de Jehová, se le aparecería en visión y hablaría con él en sueños.",
+      "bibleReference": "Números 12:6",
+      "answers": [
+        {
+          "text": "Boca a boca",
+          "isCorrect": false
+        },
+        {
+          "text": "En visión y en sueños",
+          "isCorrect": true
+        },
+        {
+          "text": "Por medio de los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Con señales en el cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo hablaría Jehová con su siervo Moisés?",
+      "explanation": "Con Moisés hablaría boca a boca, y a las claras, y no por figuras, y él vería la apariencia de Jehová.",
+      "bibleReference": "Números 12:8",
+      "answers": [
+        {
+          "text": "Boca a boca y a las claras",
+          "isCorrect": true
+        },
+        {
+          "text": "En visión y en sueños",
+          "isCorrect": false
+        },
+        {
+          "text": "Por medio de un ángel",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la cima del monte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le sucedió a María cuando la nube se apartó del tabernáculo?",
+      "explanation": "Cuando la nube se apartó del tabernáculo, María quedó leprosa como la nieve, y Aarón la miró.",
+      "bibleReference": "Números 12:10",
+      "answers": [
+        {
+          "text": "Quedó muda siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedó ciega",
+          "isCorrect": false
+        },
+        {
+          "text": "Cayó sobre su rostro",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedó leprosa como la nieve",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Aarón a Moisés?",
+      "explanation": "Aarón le dijo que no pusiera sobre ellos pecado, porque habían hecho locamente y habían pecado.",
+      "bibleReference": "Números 12:11",
+      "answers": [
+        {
+          "text": "Que María no tenía culpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová los había olvidado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que habían hecho locamente y habían pecado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que querían salir del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Moisés a Dios por María?",
+      "explanation": "Moisés clamó a Jehová diciendo: Ruégote, oh Dios, que la sanes ahora.",
+      "bibleReference": "Números 12:13",
+      "answers": [
+        {
+          "text": "Que castigara también a Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la dejara dentro del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la sanara",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le diera otro profeta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días fue echada María fuera del real?",
+      "explanation": "María fue echada del real siete días, y el pueblo no pasó adelante hasta que ella se les reunió.",
+      "bibleReference": "Números 12:15",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Números 23: los siete altares, las parábolas de Balaam y los lugares a los que Balac lo llevó.",
+  "slug": "numbers-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos altares pidió Balaam que le edificaran?",
+      "explanation": "Balaam dijo a Balac que le edificara allí siete altares.",
+      "bibleReference": "Números 23:1",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrecieron Balac y Balaam en cada altar?",
+      "explanation": "Ofrecieron un becerro y un carnero en cada altar.",
+      "bibleReference": "Números 23:2",
+      "answers": [
+        {
+          "text": "Dos palomas y una tórtola",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cabra sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordero y panes sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro y un carnero",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová antes de que Balaam volviera a Balac?",
+      "explanation": "Jehová puso palabra en la boca de Balaam y le dijo que volviera a Balac y hablara así.",
+      "bibleReference": "Números 23:5",
+      "answers": [
+        {
+          "text": "Le cerró los ojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Le mandó callar",
+          "isCorrect": false
+        },
+        {
+          "text": "Puso palabra en su boca",
+          "isCorrect": true
+        },
+        {
+          "text": "Le mostró la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dijo Balaam que Balac lo había traído?",
+      "explanation": "Balaam dijo que Balac, rey de Moab, lo trajo de Aram, de los montes del oriente.",
+      "bibleReference": "Números 23:7",
+      "answers": [
+        {
+          "text": "De Egipto, de donde salió Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "De Aram, de los montes del oriente",
+          "isCorrect": true
+        },
+        {
+          "text": "De Madián, de casa de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "De Hesbón, la ciudad de Sehón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se quejó Balac después de la primera parábola?",
+      "explanation": "Balac le dijo que lo había tomado para que maldijera a sus enemigos y, en cambio, había proferido bendiciones.",
+      "bibleReference": "Números 23:11",
+      "answers": [
+        {
+          "text": "De que había bendecido en vez de maldecir",
+          "isCorrect": true
+        },
+        {
+          "text": "De que no había edificado los altares",
+          "isCorrect": false
+        },
+        {
+          "text": "De que había pedido más dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "De que se había ido solo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué lugar llevó Balac a Balaam la segunda vez?",
+      "explanation": "Lo llevó al campo de Sophim, a la cumbre de Pisga, y allí edificó siete altares.",
+      "bibleReference": "Números 23:14",
+      "answers": [
+        {
+          "text": "A los altos de Baal, como la primera vez",
+          "isCorrect": false
+        },
+        {
+          "text": "A la ciudad de Husoth, donde comieron",
+          "isCorrect": false
+        },
+        {
+          "text": "Al campo de Sophim, en la cumbre de Pisga",
+          "isCorrect": true
+        },
+        {
+          "text": "Al valle de Arnón, junto al desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Balaam acerca de Dios en su segunda parábola?",
+      "explanation": "Dijo que Dios no es hombre para que mienta, ni hijo de hombre para que se arrepienta.",
+      "bibleReference": "Números 23:19",
+      "answers": [
+        {
+          "text": "Que se arrepiente de sus obras",
+          "isCorrect": false
+        },
+        {
+          "text": "Que habla solo por los profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no oye a los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no es hombre para que mienta",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la fuerza del pueblo que Dios sacó de Egipto?",
+      "explanation": "Dice que Dios los ha sacado de Egipto y que tiene fuerzas como de unicornio.",
+      "bibleReference": "Números 23:22",
+      "answers": [
+        {
+          "text": "Con un muro de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las fuerzas de un unicornio",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un río crecido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un ejército de carros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué animal compara la parábola al pueblo que se levantará?",
+      "explanation": "Dice que el pueblo se levantará como león y se erguirá como león, y no se echará hasta que coma la presa.",
+      "bibleReference": "Números 23:24",
+      "answers": [
+        {
+          "text": "Con un buey",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un águila",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un lobo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un león",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A qué cumbre llevó Balac a Balaam la tercera vez?",
+      "explanation": "Balac llevó a Balaam a la cumbre de Peor, que mira hacia Jesimón.",
+      "bibleReference": "Números 23:28",
+      "answers": [
+        {
+          "text": "A la cumbre de Pisga",
+          "isCorrect": false
+        },
+        {
+          "text": "A la cumbre de Peor",
+          "isCorrect": true
+        },
+        {
+          "text": "Al monte de Hor",
+          "isCorrect": false
+        },
+        {
+          "text": "Al campo de Sophim",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

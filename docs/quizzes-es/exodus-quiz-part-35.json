@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 35",
+  "description": "Diez preguntas sobre Éxodo 35: el sábado, la ofrenda voluntaria para el tabernáculo y los artífices llamados por nombre.",
+  "slug": "exodus-quiz-part-35",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién hizo juntar Moisés para decirle lo que Jehová había mandado?",
+      "explanation": "Éxodo 35:1 dice que Moisés hizo juntar toda la congregación de los hijos de Israel y les dijo las cosas que Jehová había mandado que hiciesen.",
+      "bibleReference": "Éxodo 35:1",
+      "answers": [
+        {
+          "text": "A toda la congregación de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente a los ancianos de cada tribu",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente a Aarón y a sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente a los príncipes de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué se dice de cualquiera que hiciere obra en el día séptimo?",
+      "explanation": "Éxodo 35:2 dice que seis días se hará obra, mas el día séptimo les será santo, sábado de reposo a Jehová, y que cualquiera que en él hiciere obra, morirá.",
+      "bibleReference": "Éxodo 35:2",
+      "answers": [
+        {
+          "text": "Que será echado del campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Que perderá su parte en la ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Que morirá",
+          "isCorrect": true
+        },
+        {
+          "text": "Que traerá un carnero por expiación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién debía traer la ofrenda para Jehová, según el versículo 5?",
+      "explanation": "Éxodo 35:5 dice que tomasen de entre ellos ofrenda para Jehová y que todo liberal de corazón la traería.",
+      "bibleReference": "Éxodo 35:5",
+      "answers": [
+        {
+          "text": "El que tuviese más ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo el que fuese liberal de corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Únicamente los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada varón de veinte años arriba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué madera pedía Moisés entre las cosas que habían de traer?",
+      "explanation": "Éxodo 35:7 menciona cueros rojos de carneros, cueros de tejones y madera de Sittim entre las cosas que debían traer.",
+      "bibleReference": "Éxodo 35:7",
+      "answers": [
+        {
+          "text": "Madera de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "Madera de olivo",
+          "isCorrect": false
+        },
+        {
+          "text": "Madera de ciprés",
+          "isCorrect": false
+        },
+        {
+          "text": "Madera de Sittim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿de quién eran las sagradas vestiduras para el servicio del santuario?",
+      "explanation": "Éxodo 35:19 habla de las sagradas vestiduras de Aarón el sacerdote y de las vestiduras de sus hijos para servir en el sacerdocio.",
+      "bibleReference": "Éxodo 35:19",
+      "answers": [
+        {
+          "text": "De Aarón el sacerdote y de sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "De Moisés y de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "De Bezaleel y de Aholiab",
+          "isCorrect": false
+        },
+        {
+          "text": "De los príncipes de las tribus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué joyas trajeron los hombres y las mujeres que ofrecieron de corazón voluntario?",
+      "explanation": "Éxodo 35:22 dice que vinieron así hombres como mujeres y trajeron cadenas y zarcillos, sortijas y brazaletes, y toda joya de oro.",
+      "bibleReference": "Éxodo 35:22",
+      "answers": [
+        {
+          "text": "Trigo y aceite de sus eras",
+          "isCorrect": false
+        },
+        {
+          "text": "Corderos y becerros sin tacha",
+          "isCorrect": false
+        },
+        {
+          "text": "Vasos de barro y de metal",
+          "isCorrect": false
+        },
+        {
+          "text": "Cadenas, zarcillos, sortijas y brazaletes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hilaron las mujeres cuyo corazón las levantó en sabiduría?",
+      "explanation": "Éxodo 35:26 dice que todas las mujeres cuyo corazón las levantó en sabiduría hilaron pelos de cabras.",
+      "bibleReference": "Éxodo 35:26",
+      "answers": [
+        {
+          "text": "Lino fino solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelos de cabras",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuerdas de cueros",
+          "isCorrect": false
+        },
+        {
+          "text": "Hilos de oro puro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué trajeron los príncipes para el ephod y el racional?",
+      "explanation": "Éxodo 35:27 dice que los príncipes trajeron piedras de onix y las piedras de los engastes para el ephod y el racional.",
+      "bibleReference": "Éxodo 35:27",
+      "answers": [
+        {
+          "text": "Aceite para la luminaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Madera de Sittim y metal",
+          "isCorrect": false
+        },
+        {
+          "text": "Piedras de onix y de los engastes",
+          "isCorrect": true
+        },
+        {
+          "text": "Cueros de tejones y cuerdas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién era hijo Bezaleel, según el versículo 30?",
+      "explanation": "Éxodo 35:30 dice que Jehová nombró a Bezaleel, hijo de Uri, hijo de Hur, de la tribu de Judá.",
+      "bibleReference": "Éxodo 35:30",
+      "answers": [
+        {
+          "text": "De Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ahisamac",
+          "isCorrect": false
+        },
+        {
+          "text": "De Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "De Uri",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién, junto con Bezaleel, recibió en su corazón el poder enseñar?",
+      "explanation": "Éxodo 35:34 dice que Jehová puso en su corazón el que pudiese enseñar, así él como Aholiab, hijo de Ahisamac, de la tribu de Dan.",
+      "bibleReference": "Éxodo 35:34",
+      "answers": [
+        {
+          "text": "Aarón el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Aholiab, hijo de Ahisamac",
+          "isCorrect": true
+        },
+        {
+          "text": "Uri, hijo de Hur",
+          "isCorrect": false
+        },
+        {
+          "text": "Hur, de la tribu de Judá",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

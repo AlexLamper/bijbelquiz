@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Génesis 4: Caín y Abel, sus ofrendas, el crimen en el campo y los descendientes de Caín.",
+  "slug": "genesis-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿quién fue pastor de ovejas?",
+      "explanation": "Abel fue pastor de ovejas y Caín fue labrador de la tierra.",
+      "bibleReference": "Génesis 4:2",
+      "answers": [
+        {
+          "text": "Caín",
+          "isCorrect": false
+        },
+        {
+          "text": "Seth",
+          "isCorrect": false
+        },
+        {
+          "text": "Enós",
+          "isCorrect": false
+        },
+        {
+          "text": "Abel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era el oficio de Caín?",
+      "explanation": "El texto dice que Caín fue labrador de la tierra y Abel pastor de ovejas.",
+      "bibleReference": "Génesis 4:2",
+      "answers": [
+        {
+          "text": "Pastor de ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Labrador de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Acicalador de metal",
+          "isCorrect": false
+        },
+        {
+          "text": "Padre de los músicos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué trajo Abel como ofrenda?",
+      "explanation": "Abel trajo de los primogénitos de sus ovejas y de su grosura, y Jehová miró con agrado a Abel y a su ofrenda.",
+      "bibleReference": "Génesis 4:4",
+      "answers": [
+        {
+          "text": "Del fruto de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y vino de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "De los primogénitos de sus ovejas",
+          "isCorrect": true
+        },
+        {
+          "text": "Hierba verde del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo reaccionó Caín cuando Jehová no miró con agrado su ofrenda?",
+      "explanation": "Caín se ensañó en gran manera y decayó su semblante.",
+      "bibleReference": "Génesis 4:5",
+      "answers": [
+        {
+          "text": "Se ensañó y decayó su semblante",
+          "isCorrect": true
+        },
+        {
+          "text": "Trajo otra ofrenda mejor",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó una ciudad nueva",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó a la tierra de Nod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde mató Caín a su hermano Abel?",
+      "explanation": "Estando ellos en el campo, Caín se levantó contra su hermano Abel y le mató.",
+      "bibleReference": "Génesis 4:8",
+      "answers": [
+        {
+          "text": "En el huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al altar",
+          "isCorrect": false
+        },
+        {
+          "text": "En la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En el campo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según Jehová, ¿qué clamaba a él desde la tierra?",
+      "explanation": "Jehová dijo a Caín que la voz de la sangre de su hermano clamaba a él desde la tierra.",
+      "bibleReference": "Génesis 4:10",
+      "answers": [
+        {
+          "text": "La voz de la sangre de su hermano",
+          "isCorrect": true
+        },
+        {
+          "text": "El llanto de sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "El clamor de sus ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "La voz de su propia ofrenda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que sería Caín en la tierra?",
+      "explanation": "Jehová le dijo que la tierra no le volvería a dar su fuerza y que sería errante y extranjero en la tierra.",
+      "bibleReference": "Génesis 4:12",
+      "answers": [
+        {
+          "text": "Siervo de siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Padre de naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Errante y extranjero",
+          "isCorrect": true
+        },
+        {
+          "text": "Varón de nombre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Caín a la ciudad que edificó?",
+      "explanation": "Caín edificó una ciudad y la llamó del nombre de su hijo, Henoch.",
+      "bibleReference": "Génesis 4:17",
+      "answers": [
+        {
+          "text": "Babel",
+          "isCorrect": false
+        },
+        {
+          "text": "Henoch",
+          "isCorrect": true
+        },
+        {
+          "text": "Nínive",
+          "isCorrect": false
+        },
+        {
+          "text": "Nod",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaban las dos mujeres de Lamech?",
+      "explanation": "Lamech tomó para sí dos mujeres: el nombre de la una fue Ada y el de la otra Zilla.",
+      "bibleReference": "Génesis 4:19",
+      "answers": [
+        {
+          "text": "Ada y Zilla",
+          "isCorrect": true
+        },
+        {
+          "text": "Eva y Naama",
+          "isCorrect": false
+        },
+        {
+          "text": "Sarai y Milca",
+          "isCorrect": false
+        },
+        {
+          "text": "Jabal y Jubal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Adam al hijo que le nació después de la muerte de Abel?",
+      "explanation": "Adam conoció de nuevo a su mujer, que parió un hijo y le llamó Seth, porque Dios le había sustituido otra simiente en lugar de Abel.",
+      "bibleReference": "Génesis 4:25",
+      "answers": [
+        {
+          "text": "Enós",
+          "isCorrect": false
+        },
+        {
+          "text": "Caín",
+          "isCorrect": false
+        },
+        {
+          "text": "Noé",
+          "isCorrect": false
+        },
+        {
+          "text": "Seth",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

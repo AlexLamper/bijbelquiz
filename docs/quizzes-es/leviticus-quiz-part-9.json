@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Levítico 9: el día octavo, las ofrendas de Aarón por sí y por el pueblo, y el fuego que salió de delante de Jehová.",
+  "slug": "leviticus-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué día llamó Moisés a Aarón, a sus hijos y a los ancianos de Israel?",
+      "explanation": "Fue en el día octavo cuando Moisés llamó a Aarón, a sus hijos y a los ancianos de Israel.",
+      "bibleReference": "Levítico 9:1",
+      "answers": [
+        {
+          "text": "En el primer día del mes",
+          "isCorrect": false
+        },
+        {
+          "text": "En el día séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el día octavo",
+          "isCorrect": true
+        },
+        {
+          "text": "En el día de reposo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía tomar Aarón para su propia expiación?",
+      "explanation": "Moisés dijo a Aarón que tomara de la vacada un becerro para expiación y un carnero para holocausto, sin defecto.",
+      "bibleReference": "Levítico 9:2",
+      "answers": [
+        {
+          "text": "Un becerro de la vacada",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos tórtolas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cordera de un año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían tomar los hijos de Israel para su expiación?",
+      "explanation": "A los hijos de Israel les dijo que tomaran un macho cabrío para expiación, y un becerro y un cordero de un año para holocausto.",
+      "bibleReference": "Levítico 9:3",
+      "answers": [
+        {
+          "text": "Dos palominos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un buey de la vacada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un macho cabrío",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué razón debían traer aquellas ofrendas aquel mismo día?",
+      "explanation": "Moisés dijo que trajeran las ofrendas porque Jehová se aparecería aquel día a ellos.",
+      "bibleReference": "Levítico 9:4",
+      "answers": [
+        {
+          "text": "Porque era el día de reposo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Jehová se aparecería aquel día a ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque partirían del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque faltaba el pan en el real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Moisés que sucedería si hacían lo que Jehová mandó?",
+      "explanation": "Moisés dijo que hicieran lo que Jehová mandó y la gloria de Jehová se les aparecería.",
+      "bibleReference": "Levítico 9:6",
+      "answers": [
+        {
+          "text": "Que el pueblo sería numeroso",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la tierra les sería dada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la gloria de Jehová se les aparecería",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la nube se apartaría del real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Aarón al llegarse al altar?",
+      "explanation": "Aarón se llegó al altar y degolló su becerro de la expiación, que era por él.",
+      "bibleReference": "Levítico 9:8",
+      "answers": [
+        {
+          "text": "Quemó el presente amasado con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Meció el pecho delante de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Mató el macho cabrío del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Degolló su becerro de la expiación",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se hizo con la carne y el cuero del becerro de la expiación?",
+      "explanation": "La carne y el cuero del becerro los quemó al fuego fuera del real.",
+      "bibleReference": "Levítico 9:11",
+      "answers": [
+        {
+          "text": "Fueron del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron quemados al fuego fuera del real",
+          "isCorrect": true
+        },
+        {
+          "text": "Fueron mecidos delante de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron enterrados junto al altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Además de qué ofrenda quemó Aarón el presente sobre el altar?",
+      "explanation": "Aarón ofreció el presente y lo hizo quemar sobre el altar, además del holocausto de la mañana.",
+      "bibleReference": "Levítico 9:17",
+      "answers": [
+        {
+          "text": "Además del holocausto de la mañana",
+          "isCorrect": true
+        },
+        {
+          "text": "Además del sacrificio de la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Además del pan sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Además de la ofrenda de los ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Aarón después de hacer la expiación, el holocausto y el sacrificio de las paces?",
+      "explanation": "Aarón alzó sus manos hacia el pueblo y lo bendijo, y después descendió.",
+      "bibleReference": "Levítico 9:22",
+      "answers": [
+        {
+          "text": "Llamó a los ancianos al altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Entró solo del velo adentro",
+          "isCorrect": false
+        },
+        {
+          "text": "Alzó sus manos hacia el pueblo y lo bendijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Repartió la carne entre sus hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el pueblo cuando el fuego salió de delante de Jehová y consumió el holocausto?",
+      "explanation": "Cuando todo el pueblo lo vio, alabaron y cayeron sobre sus rostros.",
+      "bibleReference": "Levítico 9:24",
+      "answers": [
+        {
+          "text": "Huyeron fuera del real",
+          "isCorrect": false
+        },
+        {
+          "text": "Alabaron y cayeron sobre sus rostros",
+          "isCorrect": true
+        },
+        {
+          "text": "Trajeron más ofrendas al altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Callaron delante de Moisés",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Génesis Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Génesis 11: la torre de Babel, las lenguas confundidas y las generaciones de Sem hasta Thare.",
+  "slug": "genesis-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo era toda la tierra al principio del capítulo?",
+      "explanation": "El capítulo empieza diciendo que toda la tierra era entonces de una lengua y unas mismas palabras.",
+      "bibleReference": "Génesis 11:1",
+      "answers": [
+        {
+          "text": "Dividida en muchas naciones y lenguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Llena de violencia y de gigantes",
+          "isCorrect": false
+        },
+        {
+          "text": "De una lengua y unas mismas palabras",
+          "isCorrect": true
+        },
+        {
+          "text": "Desordenada y vacía, sin luz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde hallaron una vega y se asentaron?",
+      "explanation": "Al partir de oriente hallaron una vega en la tierra de Shinar y se asentaron allí.",
+      "bibleReference": "Génesis 11:2",
+      "answers": [
+        {
+          "text": "En la tierra de Shinar",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Nod",
+          "isCorrect": false
+        },
+        {
+          "text": "En Ur de los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tierra de Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué usaron en lugar de piedra y en lugar de mezcla?",
+      "explanation": "Hicieron ladrillo y lo cocieron con fuego: el ladrillo les fue en lugar de piedra y el betún en lugar de mezcla.",
+      "bibleReference": "Génesis 11:3",
+      "answers": [
+        {
+          "text": "Madera y brea",
+          "isCorrect": false
+        },
+        {
+          "text": "Oro y plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Barro y paja",
+          "isCorrect": false
+        },
+        {
+          "text": "Ladrillo y betún",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron que querían edificar?",
+      "explanation": "Dijeron que edificarían una ciudad y una torre cuya cúspide llegase al cielo, para hacerse un nombre.",
+      "bibleReference": "Génesis 11:4",
+      "answers": [
+        {
+          "text": "Un altar y una tienda junto a la vega",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ciudad y una torre hasta el cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Un arca de madera de Gopher",
+          "isCorrect": false
+        },
+        {
+          "text": "Un huerto regado por cuatro ríos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová acerca de aquel pueblo?",
+      "explanation": "Jehová dijo que el pueblo era uno y que todos tenían un lenguaje, y que nada les retraería de lo que habían pensado hacer.",
+      "bibleReference": "Génesis 11:6",
+      "answers": [
+        {
+          "text": "Que ya se había esparcido por la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tenía nombre entre las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era uno y tenía un solo lenguaje",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era justo y perfecto en sus obras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que harían con las lenguas de aquel pueblo?",
+      "explanation": "Jehová dijo: descendamos, y confundamos allí sus lenguas, para que ninguno entienda el habla de su compañero.",
+      "bibleReference": "Génesis 11:7",
+      "answers": [
+        {
+          "text": "Enseñarles una lengua nueva",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitarles el habla por un tiempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Darles un solo nombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Confundirlas, para que no se entendiesen",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué fue llamado Babel el nombre de aquella ciudad?",
+      "explanation": "Fue llamada Babel porque allí confundió Jehová el lenguaje de toda la tierra, y desde allí los esparció.",
+      "bibleReference": "Génesis 11:9",
+      "answers": [
+        {
+          "text": "Porque allí edificaron la torre más alta",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí confundió Jehová el lenguaje",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque allí se coció el ladrillo con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí murió Harán, hijo de Thare",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes engendró Thare?",
+      "explanation": "El texto dice que Thare engendró a Abram, a Nachôr y a Harán, y que Harán engendró a Lot.",
+      "bibleReference": "Génesis 11:26-27",
+      "answers": [
+        {
+          "text": "A Abram, Nachôr y Harán",
+          "isCorrect": true
+        },
+        {
+          "text": "A Sem, Châm y Japhet",
+          "isCorrect": false
+        },
+        {
+          "text": "A Peleg y Joctán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Lot y Milca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Sarai?",
+      "explanation": "El texto dice que Sarai fue estéril y no tenía hijo.",
+      "bibleReference": "Génesis 11:30",
+      "answers": [
+        {
+          "text": "Que era hija de Harán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que murió en Ur de los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era hermosa de vista",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era estéril y no tenía hijo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta qué lugar llegaron y se asentaron al salir de Ur de los Caldeos?",
+      "explanation": "Thare tomó a Abram, a Lot y a Sarai y salió de Ur de los Caldeos para ir a tierra de Canaán, y vinieron hasta Harán y se asentaron allí.",
+      "bibleReference": "Génesis 11:31",
+      "answers": [
+        {
+          "text": "Hasta Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Shinar",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Harán",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta Egipto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

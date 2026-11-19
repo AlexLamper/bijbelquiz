@@ -1,0 +1,242 @@
+{
+  "title": "Levítico Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre Levítico 22: quién podía comer de las cosas sagradas y qué animales eran aceptos para la ofrenda.",
+  "slug": "leviticus-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Hasta cuándo no podía comer de las cosas sagradas el varón de la simiente de Aarón que fuere leproso?",
+      "explanation": "El versículo dice que el leproso o el que padeciere flujo no comerá de las cosas sagradas hasta que esté limpio.",
+      "bibleReference": "Levítico 22:4",
+      "answers": [
+        {
+          "text": "Hasta el año del jubileo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el octavo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta ofrecer un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que esté limpio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo quedaba limpia la persona que se había lavado la carne con agua?",
+      "explanation": "La persona queda inmunda hasta la tarde y no come de las cosas sagradas antes de lavar su carne; cuando el sol se pone, es limpia y puede comer.",
+      "bibleReference": "Levítico 22:6-7",
+      "answers": [
+        {
+          "text": "Al tercer día",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando el sol se ponía",
+          "isCorrect": true
+        },
+        {
+          "text": "A la mañana siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Después de siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué no debía comer el sacerdote?",
+      "explanation": "El versículo dice que no comerá mortecino ni lo despedazado por fiera, para no contaminarse en ello.",
+      "bibleReference": "Levítico 22:8",
+      "answers": [
+        {
+          "text": "Mortecino ni despedazado por fiera",
+          "isCorrect": true
+        },
+        {
+          "text": "Pan cocido con levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "Grano tostado del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Fruto del árbol nuevo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿quién no podía comer cosa sagrada?",
+      "explanation": "El versículo dice que ningún extraño comerá cosa sagrada, y que tampoco la comerán el huésped del sacerdote ni el jornalero.",
+      "bibleReference": "Levítico 22:10",
+      "answers": [
+        {
+          "text": "El nacido en casa del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "La persona comprada con su dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "El huésped del sacerdote y el jornalero",
+          "isCorrect": true
+        },
+        {
+          "text": "La hija viuda vuelta a casa de su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasaba con la hija del sacerdote que se casaba con varón extraño?",
+      "explanation": "El versículo dice que ella no comería de la ofrenda de las cosas sagradas.",
+      "bibleReference": "Levítico 22:12",
+      "answers": [
+        {
+          "text": "Volvía a la casa de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "No comía de la ofrenda de las cosas sagradas",
+          "isCorrect": true
+        },
+        {
+          "text": "Era quemada al fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Añadía el quinto a la ofrenda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 14, ¿qué debía hacer el que por yerro comía cosa sagrada?",
+      "explanation": "El versículo dice que añadirá su quinto a ella y la dará al sacerdote con la cosa sagrada.",
+      "bibleReference": "Levítico 22:14",
+      "answers": [
+        {
+          "text": "Traer un carnero en expiación",
+          "isCorrect": false
+        },
+        {
+          "text": "Lavarse y esperar hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser cortado de entre su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Añadir su quinto y darlo al sacerdote",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo debía ser el animal que se ofrecía en holocausto de voluntad propia?",
+      "explanation": "Los versículos dicen que ofrecerán macho sin defecto de entre las vacas, los corderos o las cabras, y que nada en que haya falta será acepto.",
+      "bibleReference": "Levítico 22:19-20",
+      "answers": [
+        {
+          "text": "Macho sin defecto",
+          "isCorrect": true
+        },
+        {
+          "text": "Hembra de un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Macho de tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Animal grande, aunque tenga falta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué animal podía ofrecerse por ofrenda voluntaria pero no era acepto por voto?",
+      "explanation": "El versículo dice que un buey o un carnero que tenga de más o de menos puede ofrecerse por ofrenda voluntaria, mas por voto no será acepto.",
+      "bibleReference": "Levítico 22:23",
+      "answers": [
+        {
+          "text": "Animal ciego o perniquebrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Animal herido o magullado",
+          "isCorrect": false
+        },
+        {
+          "text": "Buey o carnero que tenga de más o de menos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cabra de menos de siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde qué día era acepto para ofrenda el buey, el cordero o la cabra recién nacido?",
+      "explanation": "El versículo dice que estará siete días mamando de su madre y que desde el octavo día en adelante será acepto.",
+      "bibleReference": "Levítico 22:27",
+      "answers": [
+        {
+          "text": "Desde el día en que nace",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el día séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el octavo día",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo debía comerse el sacrificio de hacimiento de gracias?",
+      "explanation": "El versículo dice que se comerá en el mismo día y que no dejarán de él para otro día.",
+      "bibleReference": "Levítico 22:30",
+      "answers": [
+        {
+          "text": "Al día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mismo día",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el tercer día",
+          "isCorrect": false
+        },
+        {
+          "text": "Después de siete días",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

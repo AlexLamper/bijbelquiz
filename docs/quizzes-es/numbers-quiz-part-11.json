@@ -1,0 +1,242 @@
+{
+  "title": "Números Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Números 11: el fuego en Taberah, el pueblo que pide carne, los setenta ancianos y las codornices.",
+  "slug": "numbers-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamó el lugar donde se encendió el fuego de Jehová?",
+      "explanation": "El fuego de Jehová consumió un cabo del campo, y por eso aquel lugar fue llamado Taberah.",
+      "bibleReference": "Números 11:3",
+      "answers": [
+        {
+          "text": "Kibroth-hattaavah",
+          "isCorrect": false
+        },
+        {
+          "text": "Haseroth",
+          "isCorrect": false
+        },
+        {
+          "text": "Parán",
+          "isCorrect": false
+        },
+        {
+          "text": "Taberah",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué recordaban haber comido de balde en Egipto?",
+      "explanation": "Decían que se acordaban del pescado que comían de balde en Egipto, y de los cohombros, los melones, los puerros, las cebollas y los ajos.",
+      "bibleReference": "Números 11:5",
+      "answers": [
+        {
+          "text": "Carne de buey",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Pescado",
+          "isCorrect": true
+        },
+        {
+          "text": "Leche y miel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué se parecía el maná?",
+      "explanation": "El maná era como semilla de culantro, y su color como color de bdelio.",
+      "bibleReference": "Números 11:7",
+      "answers": [
+        {
+          "text": "A la flor de harina",
+          "isCorrect": false
+        },
+        {
+          "text": "A la semilla de culantro",
+          "isCorrect": true
+        },
+        {
+          "text": "A las hierbas amargas",
+          "isCorrect": false
+        },
+        {
+          "text": "Al rocío de la mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se queja Moisés delante de Jehová?",
+      "explanation": "Moisés dice que no puede soportar solo a todo este pueblo, porque le es pesado en demasía.",
+      "bibleReference": "Números 11:14",
+      "answers": [
+        {
+          "text": "De que no puede soportar solo a todo el pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "De que el pueblo no quiere salir de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "De que los ancianos profetizan",
+          "isCorrect": false
+        },
+        {
+          "text": "De que no hay agua en el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos ancianos mandó Jehová juntar a Moisés?",
+      "explanation": "Jehová le dijo que le juntara setenta varones de los ancianos de Israel y los trajera a la puerta del tabernáculo del testimonio.",
+      "bibleReference": "Números 11:16",
+      "answers": [
+        {
+          "text": "Setenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Setecientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo comería el pueblo la carne que Jehová le daría?",
+      "explanation": "No comerían un día, ni dos, ni cinco, ni diez, ni veinte días, sino hasta un mes de tiempo, hasta que les saliera por las narices.",
+      "bibleReference": "Números 11:19-20",
+      "answers": [
+        {
+          "text": "Hasta un día solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta un mes de tiempo",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta veinte días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes profetizaron en el campo?",
+      "explanation": "Habían quedado en el campo dos varones, Eldad y Medad, sobre los cuales reposó el espíritu, y profetizaron en el campo.",
+      "bibleReference": "Números 11:26",
+      "answers": [
+        {
+          "text": "Josué y Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "Eldad y Medad",
+          "isCorrect": true
+        },
+        {
+          "text": "Aarón y María",
+          "isCorrect": false
+        },
+        {
+          "text": "Naasón y Nathanael",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Moisés cuando Josué quiso impedirlos?",
+      "explanation": "Moisés le respondió que ojalá todo el pueblo de Jehová fuese profeta y que Jehová pusiera su espíritu sobre ellos.",
+      "bibleReference": "Números 11:29",
+      "answers": [
+        {
+          "text": "Que debían ser echados del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hablaran sólo en el tabernáculo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Josué profetizara también",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ojalá todo el pueblo fuese profeta",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué trajo de la mar el viento de Jehová?",
+      "explanation": "Salió un viento de Jehová y trajo codornices de la mar, y las dejó sobre el real.",
+      "bibleReference": "Números 11:31",
+      "answers": [
+        {
+          "text": "Maná del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Langostas",
+          "isCorrect": false
+        },
+        {
+          "text": "Codornices",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se llamó Kibroth-hattaavah aquel lugar?",
+      "explanation": "El nombre de aquel lugar fue llamado Kibroth-hattaavah, porque allí sepultaron al pueblo codicioso.",
+      "bibleReference": "Números 11:34",
+      "answers": [
+        {
+          "text": "Porque allí se encendió el fuego de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí sepultaron al pueblo codicioso",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque allí comieron maná por un mes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque allí profetizaron los ancianos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

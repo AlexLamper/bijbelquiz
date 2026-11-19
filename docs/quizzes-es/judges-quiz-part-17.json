@@ -1,0 +1,242 @@
+{
+  "title": "Jueces Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Jueces 17: la plata de Michâs, la imagen que hizo su madre y el Levita que tomó por sacerdote.",
+  "slug": "judges-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde era Michâs?",
+      "explanation": "El texto dice que hubo un hombre del monte de Ephraim que se llamaba Michâs.",
+      "bibleReference": "Jueces 17:1",
+      "answers": [
+        {
+          "text": "Del monte de Ephraim",
+          "isCorrect": true
+        },
+        {
+          "text": "De Sora, de la tribu de Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "De Beth-lehem de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tierra de Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto dinero le confesó Michâs a su madre que había tomado?",
+      "explanation": "Le dijo que los mil y cien siclos de plata que le fueron hurtados los tenía él, porque los había tomado.",
+      "bibleReference": "Jueces 17:2",
+      "answers": [
+        {
+          "text": "Doscientos siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil y cien siclos de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Setenta siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez siclos de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió su madre cuando él le dijo que tenía el dinero?",
+      "explanation": "La madre dijo: Bendito seas de Jehová, hijo mío.",
+      "bibleReference": "Jueces 17:2",
+      "answers": [
+        {
+          "text": "No heredarás en la casa de tu padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Haz de mí como salió de tu boca",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendito seas de Jehová, hijo mío",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciertamente moriremos los dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué dijo la madre que había dedicado aquel dinero a Jehová?",
+      "explanation": "Dijo que había dedicado el dinero a Jehová de su mano para su hijo, para que hiciera una imagen de talla y de fundición.",
+      "bibleReference": "Jueces 17:3",
+      "answers": [
+        {
+          "text": "Para edificar un altar a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Para ofrecer holocausto en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Para comprar campos en Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Para hacer una imagen de talla y de fundición",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto de la plata dio la madre al fundidor?",
+      "explanation": "La madre tomó doscientos siclos de plata y los dio al fundidor, que hizo de ellos la imagen puesta en casa de Michâs.",
+      "bibleReference": "Jueces 17:4",
+      "answers": [
+        {
+          "text": "Mil y cien siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos siclos de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Cien siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta siclos de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tuvo e hizo Michâs en su casa?",
+      "explanation": "Tuvo casa de dioses, se hizo hacer ephod y teraphim, y consagró a uno de sus hijos, que le servía de sacerdote.",
+      "bibleReference": "Jueces 17:5",
+      "answers": [
+        {
+          "text": "Casa de dioses, ephod y teraphim",
+          "isCorrect": true
+        },
+        {
+          "text": "Un altar a Baal y un bosque",
+          "isCorrect": false
+        },
+        {
+          "text": "Un arca y un candelero",
+          "isCorrect": false
+        },
+        {
+          "text": "Una torre y un lagar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto acerca de aquellos días en Israel?",
+      "explanation": "Dice que en esos días no había rey en Israel y cada uno hacía como mejor le parecía.",
+      "bibleReference": "Jueces 17:6",
+      "answers": [
+        {
+          "text": "Israel servía a los Baales",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra reposó cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Había guerra con los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "No había rey, y cada uno hacía como le parecía",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde venía el joven Levita que llegó a casa de Michâs?",
+      "explanation": "Era un joven de Beth-lehem de Judá, de la tribu de Judá, que se había partido de aquella ciudad para ir a vivir donde hallase.",
+      "bibleReference": "Jueces 17:7-8",
+      "answers": [
+        {
+          "text": "De Samir, en el monte de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Mizpa de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "De Beth-lehem de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "De Ophra de los Abiezeritas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le ofreció Michâs al Levita por año si se quedaba en su casa?",
+      "explanation": "Le ofreció diez siclos de plata por año, el ordinario de vestidos y su comida, para que le fuera en lugar de padre y sacerdote.",
+      "bibleReference": "Jueces 17:10",
+      "answers": [
+        {
+          "text": "Diez siclos de plata, vestidos y comida",
+          "isCorrect": true
+        },
+        {
+          "text": "Doscientos siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta mudas de vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad de su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Michâs cuando el Levita fue hecho su sacerdote?",
+      "explanation": "Michâs dijo: Ahora sé que Jehová me hará bien, pues que el Levita es hecho mi sacerdote.",
+      "bibleReference": "Jueces 17:13",
+      "answers": [
+        {
+          "text": "Ciertamente moriremos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahora sé que Jehová me hará bien",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová será vuestro Señor",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz a ti, no morirás",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

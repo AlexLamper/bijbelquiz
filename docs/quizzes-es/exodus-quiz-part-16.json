@@ -1,0 +1,242 @@
+{
+  "title": "Éxodo Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre Éxodo 16: las murmuraciones en el desierto de Sin, las codornices, el maná y el sábado.",
+  "slug": "exodus-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué desierto vino la congregación al partir de Elim?",
+      "explanation": "Partiendo de Elim, toda la congregación vino al desierto de Sin, que está entre Elim y Sinaí.",
+      "bibleReference": "Éxodo 16:1",
+      "answers": [
+        {
+          "text": "Al desierto de Shur",
+          "isCorrect": false
+        },
+        {
+          "text": "Al desierto de Horeb",
+          "isCorrect": false
+        },
+        {
+          "text": "Al desierto de Sinaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Al desierto de Sin",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se acordaban los hijos de Israel al murmurar contra Moisés y Aarón?",
+      "explanation": "Decían que ojalá hubieran muerto en Egipto, cuando se sentaban a las ollas de las carnes y comían pan en hartura.",
+      "bibleReference": "Éxodo 16:3",
+      "answers": [
+        {
+          "text": "De las fuentes de Elim",
+          "isCorrect": false
+        },
+        {
+          "text": "De las ollas de las carnes de Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "De los vasos de plata y de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "De los corderos de la pascua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría llover sobre ellos?",
+      "explanation": "Jehová dijo a Moisés que les haría llover pan del cielo, y que el pueblo cogería para cada día, para probarlo.",
+      "bibleReference": "Éxodo 16:4",
+      "answers": [
+        {
+          "text": "Pan del cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Agua de las nubes",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego y azufre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer al sexto día?",
+      "explanation": "Al sexto día aparejarían lo que habían de encerrar, que sería el doble de lo que solían coger cada día.",
+      "bibleReference": "Éxodo 16:5",
+      "answers": [
+        {
+          "text": "No salir de sus tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Ayunar hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Aparejar el doble de lo acostumbrado",
+          "isCorrect": true
+        },
+        {
+          "text": "Repartirlo entre los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué subió a la tarde y cubrió el real?",
+      "explanation": "Venida la tarde subieron codornices que cubrieron el real, y a la mañana descendió rocío en derredor del real.",
+      "bibleReference": "Éxodo 16:13",
+      "answers": [
+        {
+          "text": "Langostas",
+          "isCorrect": false
+        },
+        {
+          "text": "Codornices",
+          "isCorrect": true
+        },
+        {
+          "text": "Palomas",
+          "isCorrect": false
+        },
+        {
+          "text": "Nubes de polvo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo era la cosa que apareció sobre el desierto cuando cesó el rocío?",
+      "explanation": "Cuando el rocío cesó de descender, había sobre la haz del desierto una cosa menuda y redonda, menuda como una helada sobre la tierra.",
+      "bibleReference": "Éxodo 16:14",
+      "answers": [
+        {
+          "text": "Dura y negra como una piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Negra como el carbón del horno",
+          "isCorrect": false
+        },
+        {
+          "text": "Larga y verde como espigas",
+          "isCorrect": false
+        },
+        {
+          "text": "Menuda y redonda, como una helada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto debía coger cada uno, según el mandamiento de Jehová?",
+      "explanation": "Jehová mandó que cogiesen cada uno según pudiere comer: un gomer por cabeza, conforme al número de las personas de su tienda.",
+      "bibleReference": "Éxodo 16:16",
+      "answers": [
+        {
+          "text": "Un gomer por cabeza",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos gomeres por tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Un epha por familia",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuanto quisieran",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pasó con lo que algunos dejaron para otro día?",
+      "explanation": "Algunos no obedecieron a Moisés y dejaron de ello para otro día; crió gusanos y se podrió, y Moisés se enojó contra ellos.",
+      "bibleReference": "Éxodo 16:20",
+      "answers": [
+        {
+          "text": "Se endureció como piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Se derritió al sol",
+          "isCorrect": false
+        },
+        {
+          "text": "Crió gusanos y se podrió",
+          "isCorrect": true
+        },
+        {
+          "text": "Se volvió amargo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo era el sabor del maná?",
+      "explanation": "La casa de Israel lo llamó Maná; era como simiente de culantro, blanco, y su sabor como de hojuelas con miel.",
+      "bibleReference": "Éxodo 16:31",
+      "answers": [
+        {
+          "text": "Como de hojuelas con miel",
+          "isCorrect": true
+        },
+        {
+          "text": "Como de pan de cebada",
+          "isCorrect": false
+        },
+        {
+          "text": "Como de aceite nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como de hierbas amargas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo comieron los hijos de Israel maná?",
+      "explanation": "Comieron maná cuarenta años, hasta que entraron en la tierra habitada, al término de la tierra de Canaán.",
+      "bibleReference": "Éxodo 16:35",
+      "answers": [
+        {
+          "text": "Cuatro años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatrocientos años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
