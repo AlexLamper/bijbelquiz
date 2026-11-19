@@ -9,6 +9,7 @@ import { resolveAvatar } from '@/lib/avatar';
 import { appleWebCookies, appleWebProviders, linkAppleWebUser } from '@/lib/auth/apple-web';
 import { currentUserAgent, signupFields, touchLastActive, webPlatformFromUserAgent } from '@/lib/admin/platform';
 import { msg } from '@/lib/api-messages';
+import { localizePath } from '@/config/routes';
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -189,7 +190,9 @@ export const authOptions: NextAuthOptions = {
     },
   },
   pages: {
-    signIn: '/inloggen',
+    // The intl sites serve this page at its English slug, so send people straight
+    // there instead of through the Dutch path's redirect.
+    signIn: localizePath('/inloggen'),
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
