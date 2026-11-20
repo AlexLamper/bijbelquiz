@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 42",
+  "description": "Diez preguntas sobre Salmos 42: el ciervo que brama por las aguas, las lágrimas que fueron su pan y el alma que espera en Dios.",
+  "slug": "psalms-quiz-part-42",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué compara el salmista a su alma en el primer versículo?",
+      "explanation": "El versículo 1 dice que como el ciervo brama por las corrientes de las aguas, así clama por Dios el alma del salmista.",
+      "bibleReference": "Salmos 42:1",
+      "answers": [
+        { "text": "Con el ciervo que brama por las aguas", "isCorrect": true },
+        { "text": "Con la hierba que es cortada", "isCorrect": false },
+        { "text": "Con el tamo delante del viento", "isCorrect": false },
+        { "text": "Con el laurel verde del campo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿de qué tiene sed su alma?",
+      "explanation": "El versículo 2 dice que su alma tiene sed de Dios, del Dios vivo, y pregunta cuándo vendrá y aparecerá delante de Dios.",
+      "bibleReference": "Salmos 42:2",
+      "answers": [
+        { "text": "De las aguas del Jordán", "isCorrect": false },
+        { "text": "Del pan de cada día", "isCorrect": false },
+        { "text": "Del Dios vivo", "isCorrect": true },
+        { "text": "De la casa del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué fue su pan de día y de noche, según el versículo 3?",
+      "explanation": "El versículo 3 dice que sus lágrimas fueron su pan de día y de noche.",
+      "bibleReference": "Salmos 42:3",
+      "answers": [
+        { "text": "Sus canciones", "isCorrect": false },
+        { "text": "Sus lágrimas", "isCorrect": true },
+        { "text": "Sus oraciones", "isCorrect": false },
+        { "text": "Sus temores", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué le decían todos los días?",
+      "explanation": "El versículo 3 dice que todos los días le preguntaban dónde está su Dios.",
+      "bibleReference": "Salmos 42:3",
+      "answers": [
+        { "text": "¿Cuándo morirás?", "isCorrect": false },
+        { "text": "¿Dónde está tu casa?", "isCorrect": false },
+        { "text": "¿Quién te enviará luz?", "isCorrect": false },
+        { "text": "¿Dónde está tu Dios?", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿a dónde iba con voz de alegría y de alabanza?",
+      "explanation": "El versículo 4 dice que se acuerda de cuando iba con ellos hasta la casa de Dios, con voz de alegría y de alabanza.",
+      "bibleReference": "Salmos 42:4",
+      "answers": [
+        { "text": "A la casa de Dios", "isCorrect": true },
+        { "text": "Al monte de Hermón", "isCorrect": false },
+        { "text": "A la tierra del Jordán", "isCorrect": false },
+        { "text": "Al altar del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se dice el salmista a su propia alma en el versículo 5?",
+      "explanation": "El versículo 5 pregunta a su alma por qué se abate y se conturba, y le dice que espere a Dios, porque aun le tiene que alabar.",
+      "bibleReference": "Salmos 42:5",
+      "answers": [
+        { "text": "Que calle para siempre", "isCorrect": false },
+        { "text": "Que espere a Dios", "isCorrect": true },
+        { "text": "Que busque a los enemigos", "isCorrect": false },
+        { "text": "Que huya al desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿desde qué monte se acordará de Dios?",
+      "explanation": "El versículo 6 dice que se acordará de Dios desde la tierra del Jordán, de los Hermonitas, desde el monte de Mizhar.",
+      "bibleReference": "Salmos 42:6",
+      "answers": [
+        { "text": "Desde el monte de Sión", "isCorrect": false },
+        { "text": "Desde el monte Carmelo", "isCorrect": false },
+        { "text": "Desde el monte de Mizhar", "isCorrect": true },
+        { "text": "Desde el monte Sinaí", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 7 que ha pasado sobre él?",
+      "explanation": "El versículo 7 dice que un abismo llama a otro a la voz de sus canales, y que todas las ondas y las olas de Dios han pasado sobre él.",
+      "bibleReference": "Salmos 42:7",
+      "answers": [
+        { "text": "Todas las saetas del enemigo", "isCorrect": false },
+        { "text": "Toda la ira de los pueblos", "isCorrect": false },
+        { "text": "Todo el polvo del camino", "isCorrect": false },
+        { "text": "Todas las ondas y las olas de Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué estará con él de noche?",
+      "explanation": "El versículo 8 dice que de día Jehová mandará su misericordia y de noche su canción estará con él, con oración al Dios de su vida.",
+      "bibleReference": "Salmos 42:8",
+      "answers": [
+        { "text": "La canción de Jehová", "isCorrect": true },
+        { "text": "El temor de sus enemigos", "isCorrect": false },
+        { "text": "La voz de sus amigos", "isCorrect": false },
+        { "text": "El clamor de los pueblos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el salmista a Dios en el versículo 9?",
+      "explanation": "En el versículo 9 el salmista dice a Dios: Roca mía, y le pregunta por qué se ha olvidado de él.",
+      "bibleReference": "Salmos 42:9",
+      "answers": [
+        { "text": "Escudo mío", "isCorrect": false },
+        { "text": "Roca mía", "isCorrect": true },
+        { "text": "Pastor mío", "isCorrect": false },
+        { "text": "Luz mía", "isCorrect": false }
+      ]
+    }
+  ]
+}

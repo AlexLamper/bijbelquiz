@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 39",
+  "description": "Diez preguntas sobre Salmos 39: el freno sobre la boca del salmista, la medida corta de sus días y su oración como peregrino delante de Jehová.",
+  "slug": "psalms-quiz-part-39",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿a quién está dirigido este salmo, además del Músico principal?",
+      "explanation": "El encabezado dice: Al Músico principal, a Jeduthún; Salmo de David.",
+      "bibleReference": "Salmos 39:1",
+      "answers": [
+        { "text": "A los hijos de Coré", "isCorrect": false },
+        { "text": "A Abimelech", "isCorrect": false },
+        { "text": "A Jacob", "isCorrect": false },
+        { "text": "A Jeduthún", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué dijo el salmista que guardaría su boca?",
+      "explanation": "El versículo 1 dice que atenderá a sus caminos para no pecar con su lengua y que guardará su boca con freno.",
+      "bibleReference": "Salmos 39:1",
+      "answers": [
+        { "text": "Con freno", "isCorrect": true },
+        { "text": "Con un lazo", "isCorrect": false },
+        { "text": "Con un velo", "isCorrect": false },
+        { "text": "Con una red", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué se encendió en su meditación?",
+      "explanation": "El versículo 3 dice que su corazón se enardeció dentro de él y que en su meditación se encendió fuego, y así habló con su lengua.",
+      "bibleReference": "Salmos 39:3",
+      "answers": [
+        { "text": "Una canción", "isCorrect": false },
+        { "text": "Fuego", "isCorrect": true },
+        { "text": "Una lámpara", "isCorrect": false },
+        { "text": "Incienso", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que Jehová le haga saber, en el versículo 4?",
+      "explanation": "El versículo 4 pide que Jehová le haga saber su fin y cuánta es la medida de sus días.",
+      "bibleReference": "Salmos 39:4",
+      "answers": [
+        { "text": "El nombre de sus enemigos", "isCorrect": false },
+        { "text": "El camino de los impíos", "isCorrect": false },
+        { "text": "Su fin y la medida de sus días", "isCorrect": true },
+        { "text": "La hora de su alabanza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿con qué compara su edad delante de Dios?",
+      "explanation": "El versículo 5 dice que Dios dio a sus días un término corto y que su edad es como nada delante de él.",
+      "bibleReference": "Salmos 39:5",
+      "answers": [
+        { "text": "Con nada", "isCorrect": true },
+        { "text": "Con los montes", "isCorrect": false },
+        { "text": "Con los cielos", "isCorrect": false },
+        { "text": "Con el mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 6 del hombre que junta?",
+      "explanation": "El versículo 6 dice que el hombre anda en tinieblas y se inquieta en vano: junta, y no sabe quién lo allegará.",
+      "bibleReference": "Salmos 39:6",
+      "answers": [
+        { "text": "Que lo reparte entre los pobres", "isCorrect": false },
+        { "text": "Que lo guarda para sus hijos", "isCorrect": false },
+        { "text": "Que lo lleva a la casa de Dios", "isCorrect": false },
+        { "text": "Que no sabe quién lo allegará", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué responde el salmista a su propia pregunta sobre lo que esperará?",
+      "explanation": "El versículo 7 pregunta qué esperará y responde que su esperanza está en el Señor.",
+      "bibleReference": "Salmos 39:7",
+      "answers": [
+        { "text": "Que su esperanza está en su grandeza", "isCorrect": false },
+        { "text": "Que su esperanza está en el Señor", "isCorrect": true },
+        { "text": "Que su esperanza está en los hombres", "isCorrect": false },
+        { "text": "Que ya no le queda esperanza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista en el versículo 10?",
+      "explanation": "El versículo 10 pide que Jehová quite de sobre él su plaga, porque de la guerra de su mano está consumido.",
+      "bibleReference": "Salmos 39:10",
+      "answers": [
+        { "text": "Que quite de sobre él su plaga", "isCorrect": true },
+        { "text": "Que le dé una canción nueva", "isCorrect": false },
+        { "text": "Que le muestre el monte santo", "isCorrect": false },
+        { "text": "Que le envíe su luz y su verdad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿cómo hace consumirse la grandeza del hombre?",
+      "explanation": "El versículo 11 dice que con castigos corrige al hombre por el pecado y hace consumirse su grandeza como de polilla.",
+      "bibleReference": "Salmos 39:11",
+      "answers": [
+        { "text": "Como de fuego", "isCorrect": false },
+        { "text": "Como de agua", "isCorrect": false },
+        { "text": "Como de polilla", "isCorrect": true },
+        { "text": "Como de viento", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe el salmista delante de Jehová en el versículo 12?",
+      "explanation": "El versículo 12 pide que Jehová oiga su oración y dice que es peregrino para con él y advenedizo, como todos sus padres.",
+      "bibleReference": "Salmos 39:12",
+      "answers": [
+        { "text": "Como rey y juez del pueblo", "isCorrect": false },
+        { "text": "Como peregrino y advenedizo", "isCorrect": true },
+        { "text": "Como siervo del Músico principal", "isCorrect": false },
+        { "text": "Como pastor de su pueblo", "isCorrect": false }
+      ]
+    }
+  ]
+}

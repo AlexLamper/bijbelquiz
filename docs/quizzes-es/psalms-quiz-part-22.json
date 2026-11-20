@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre Salmos 22: el clamor del que se siente desamparado, el escarnio de los que lo rodean y la alabanza que promete en la congregación.",
+  "slug": "psalms-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué pregunta comienza este salmo?",
+      "explanation": "El primer verso dice: Dios mío, Dios mío, ¿por qué me has dejado?",
+      "bibleReference": "Salmos 22:1",
+      "answers": [
+        {
+          "text": "¿Hasta cuándo te olvidarás de mí, Jehová?",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios mío, Dios mío, ¿por qué me has dejado?",
+          "isCorrect": true
+        },
+        {
+          "text": "¿Quién subirá al monte de Jehová?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Por qué se amotinan las gentes?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo dice el que habla que clama a Dios?",
+      "explanation": "El verso dice que clama de día y no es oído, y de noche, y no hay para él silencio.",
+      "bibleReference": "Salmos 22:2",
+      "answers": [
+        {
+          "text": "De día y de noche",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo al amanecer",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vez al año",
+          "isCorrect": false
+        },
+        {
+          "text": "Al mediodía solamente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿entre qué habita el que es santo?",
+      "explanation": "El texto dice: Tú empero eres santo, tú que habitas entre las alabanzas de Israel.",
+      "bibleReference": "Salmos 22:3",
+      "answers": [
+        {
+          "text": "Entre los querubines de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre las nubes del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre las alabanzas de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Entre los montes de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe a sí mismo el que habla en el verso 6?",
+      "explanation": "El texto dice: Mas yo soy gusano, y no hombre; oprobio de los hombres, y desecho del pueblo.",
+      "bibleReference": "Salmos 22:6",
+      "answers": [
+        {
+          "text": "Como león entre las fieras",
+          "isCorrect": false
+        },
+        {
+          "text": "Como gusano y no hombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Como árbol junto al agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Como pastor de ovejas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacen los que lo ven, según los versos 7 y 8?",
+      "explanation": "El texto dice que todos los que lo ven escarnecen de él, estiran los labios y menean la cabeza, diciendo que se remita a Jehová.",
+      "bibleReference": "Salmos 22:7-8",
+      "answers": [
+        {
+          "text": "Le traen presentes y lo honran",
+          "isCorrect": false
+        },
+        {
+          "text": "Lloran con él y lo consuelan",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyen de su presencia con temor",
+          "isCorrect": false
+        },
+        {
+          "text": "Menean la cabeza y lo escarnecen",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde eran los fuertes toros que lo cercaron?",
+      "explanation": "El verso dice que lo han rodeado muchos toros y que fuertes toros de Basán lo han cercado.",
+      "bibleReference": "Salmos 22:12",
+      "answers": [
+        {
+          "text": "De Basán",
+          "isCorrect": true
+        },
+        {
+          "text": "De Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "De Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "De Sion",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron con sus vestidos y con su ropa?",
+      "explanation": "El verso dice: Partieron entre sí mis vestidos, y sobre mi ropa echaron suertes.",
+      "bibleReference": "Salmos 22:18",
+      "answers": [
+        {
+          "text": "Los quemaron en el fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Los lavaron en el río",
+          "isCorrect": false
+        },
+        {
+          "text": "Los repartieron y echaron suertes",
+          "isCorrect": true
+        },
+        {
+          "text": "Los guardaron en el templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué pide ser salvado en el verso 21?",
+      "explanation": "El texto dice: Sálvame de la boca del león, y óyeme librándome de los cuernos de los unicornios.",
+      "bibleReference": "Salmos 22:21",
+      "answers": [
+        {
+          "text": "De la mano del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Del fuego del horno",
+          "isCorrect": false
+        },
+        {
+          "text": "De las aguas del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "De la boca del león",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 22, ¿qué hará el que habla en medio de la congregación?",
+      "explanation": "El texto dice: Anunciaré tu nombre á mis hermanos: en medio de la congregación te alabaré.",
+      "bibleReference": "Salmos 22:22",
+      "answers": [
+        {
+          "text": "Guardará silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Alabará a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Juzgará al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecerá incienso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 27, ¿quiénes se volverán a Jehová?",
+      "explanation": "El texto dice que se acordarán y se volverán a Jehová todos los términos de la tierra.",
+      "bibleReference": "Salmos 22:27",
+      "answers": [
+        {
+          "text": "Todos los términos de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo los hijos de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Los reyes de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sacerdotes de Israel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

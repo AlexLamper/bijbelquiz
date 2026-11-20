@@ -1,0 +1,242 @@
+{
+  "title": "Ester Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Ester 4: el luto de Mardochêo, los mensajes que Atach lleva de una parte a otra y la decisión de Esther de entrar al rey.",
+  "slug": "esther-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo Mardochêo luego que supo todo lo que se había hecho?",
+      "explanation": "Mardochêo rasgó sus vestidos, se vistió de saco y de ceniza, y fue por medio de la ciudad clamando con grande y amargo clamor.",
+      "bibleReference": "Ester 4:1",
+      "answers": [
+        {
+          "text": "Entró en el palacio del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó de la ciudad de Susán",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribió letras a las provincias",
+          "isCorrect": false
+        },
+        {
+          "text": "Rasgó sus vestidos y se vistió de saco",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué llegó Mardochêo solo hasta delante de la puerta del rey?",
+      "explanation": "Vino hasta delante de la puerta del rey, porque no era lícito pasar adentro de la puerta del rey con vestido de saco.",
+      "bibleReference": "Ester 4:2",
+      "answers": [
+        {
+          "text": "Porque los eunucos lo echaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no era lícito entrar con saco",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque estaba cerrada la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el rey lo había prohibido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién llamó Esther para enviarlo a Mardochêo y saber qué pasaba?",
+      "explanation": "Esther llamó a Atach, uno de los eunucos del rey que él había hecho estar delante de ella, y lo mandó a Mardochêo para saber qué era aquello y por qué.",
+      "bibleReference": "Ester 4:5",
+      "answers": [
+        {
+          "text": "A Hegai, guarda de las mujeres",
+          "isCorrect": false
+        },
+        {
+          "text": "A Memucán, príncipe de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "A Atach, uno de los eunucos",
+          "isCorrect": true
+        },
+        {
+          "text": "A Harbona, siervo del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además de contarle lo sucedido, ¿de qué dio noticia Mardochêo al eunuco?",
+      "explanation": "Mardochêo le declaró todo lo que le había acontecido y le dio noticia de la plata que Amán había dicho que pesaría para los tesoros del rey por razón de los Judíos.",
+      "bibleReference": "Ester 4:7",
+      "answers": [
+        {
+          "text": "De la plata que Amán pesaría",
+          "isCorrect": true
+        },
+        {
+          "text": "Del banquete del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "De la muerte de la reina Vasthi",
+          "isCorrect": false
+        },
+        {
+          "text": "Del decreto contra los Tirios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al darle la copia del decreto, ¿qué le encargó Mardochêo que hiciera Esther?",
+      "explanation": "Le dio la copia del decreto para que la mostrara a Esther y le encargara que fuese al rey a suplicarle y a pedir delante de él por su pueblo.",
+      "bibleReference": "Ester 4:8",
+      "answers": [
+        {
+          "text": "Que huyese de Susán esa noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que suplicara al rey por su pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que acusara a Amán delante del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardase silencio treinta días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la ley que Esther recordó, ¿qué le pasaba a quien entraba al patio de adentro sin ser llamado?",
+      "explanation": "Esther dijo que cualquier hombre o mujer que entra al rey al patio de adentro sin ser llamado, por una sola ley ha de morir, salvo aquel a quien el rey extendiere el cetro de oro.",
+      "bibleReference": "Ester 4:11",
+      "answers": [
+        {
+          "text": "Perdía su lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Debía pagar plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Era echado del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Había de morir",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo llevaba Esther sin ser llamada para entrar al rey?",
+      "explanation": "Esther dijo que no había sido llamada para entrar al rey en estos treinta días.",
+      "bibleReference": "Ester 4:11",
+      "answers": [
+        {
+          "text": "Treinta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce meses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si Esther callaba en aquel tiempo, ¿qué dijo Mardochêo que sucedería con ella y con la casa de su padre?",
+      "explanation": "Mardochêo respondió que, si callaba, respiro y libertación tendrían los Judíos de otra parte, mas ella y la casa de su padre perecerían.",
+      "bibleReference": "Ester 4:14",
+      "answers": [
+        {
+          "text": "Que el rey la haría volver al palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Judíos la maldecirían",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ella y la casa de su padre perecerían",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Amán sería engrandecido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo pidió Esther que ayunasen por ella los Judíos de Susán?",
+      "explanation": "Esther pidió que juntasen a todos los Judíos de Susán y que ayunasen por ella, sin comer ni beber en tres días, noche ni día.",
+      "bibleReference": "Ester 4:16",
+      "answers": [
+        {
+          "text": "Siete días enteros",
+          "isCorrect": false
+        },
+        {
+          "text": "Un día y una noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta días seguidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días, noche ni día",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras terminó Esther su mensaje sobre entrar al rey?",
+      "explanation": "Esther dijo que entraría al rey aunque no fuese conforme a la ley, y añadió: y si perezco, que perezca.",
+      "bibleReference": "Ester 4:16",
+      "answers": [
+        {
+          "text": "Que Jehová me guarde en el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Y si perezco, que perezca",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el rey viva para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Amán caiga en su propia red",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 33",
+  "description": "Diez preguntas sobre Salmos 33: la canción nueva de los justos, la palabra con que fueron hechos los cielos y el ojo de Jehová sobre los que le temen.",
+  "slug": "psalms-quiz-part-33",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes invita el primer versículo a alegrarse en Jehová?",
+      "explanation": "El salmo empieza llamando a los justos a alegrarse en Jehová, y dice que la alabanza es hermosa para los rectos.",
+      "bibleReference": "Salmos 33:1",
+      "answers": [
+        { "text": "A los justos", "isCorrect": true },
+        { "text": "A los reyes de la tierra", "isCorrect": false },
+        { "text": "A los sacerdotes del pueblo", "isCorrect": false },
+        { "text": "A los habitadores del mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumentos manda el versículo 2 celebrar a Jehová?",
+      "explanation": "El versículo 2 manda celebrar a Jehová con arpa y cantarle con salterio y decacordio.",
+      "bibleReference": "Salmos 33:2",
+      "answers": [
+        { "text": "Con trompeta, címbalos y pandero", "isCorrect": false },
+        { "text": "Con flauta, cuerno y tambor", "isCorrect": false },
+        { "text": "Con arpa, salterio y decacordio", "isCorrect": true },
+        { "text": "Con cuerno, lira y platillos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 4 acerca de la palabra de Jehová?",
+      "explanation": "El versículo 4 dice que la palabra de Jehová es recta y que toda su obra está hecha con verdad.",
+      "bibleReference": "Salmos 33:4",
+      "answers": [
+        { "text": "Que es oculta", "isCorrect": false },
+        { "text": "Que es recta", "isCorrect": true },
+        { "text": "Que es pesada", "isCorrect": false },
+        { "text": "Que es corta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿de qué está llena la tierra?",
+      "explanation": "El versículo 5 dice que la tierra está llena de la misericordia de Jehová, y que él ama justicia y juicio.",
+      "bibleReference": "Salmos 33:5",
+      "answers": [
+        { "text": "De la gloria de los reyes", "isCorrect": false },
+        { "text": "Del temor de las naciones", "isCorrect": false },
+        { "text": "De la sabiduría de los hombres", "isCorrect": false },
+        { "text": "De la misericordia de Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿por medio de qué fueron hechos los cielos?",
+      "explanation": "El versículo 6 dice que los cielos fueron hechos por la palabra de Jehová, y todo su ejército por el espíritu de su boca.",
+      "bibleReference": "Salmos 33:6",
+      "answers": [
+        { "text": "Por la palabra de Jehová", "isCorrect": true },
+        { "text": "Por las aguas del abismo", "isCorrect": false },
+        { "text": "Por la mano de un rey", "isCorrect": false },
+        { "text": "Por el consejo de las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué pasó cuando él mandó?",
+      "explanation": "El versículo 9 dice que él habló y fue hecho, y que mandó y existió.",
+      "bibleReference": "Salmos 33:9",
+      "answers": [
+        { "text": "Calló", "isCorrect": false },
+        { "text": "Existió", "isCorrect": true },
+        { "text": "Se deshizo", "isCorrect": false },
+        { "text": "Esperó", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hace Jehová con el consejo de las gentes, según el versículo 10?",
+      "explanation": "El versículo 10 dice que Jehová hace nulo el consejo de las gentes y frustra las maquinaciones de los pueblos.",
+      "bibleReference": "Salmos 33:10",
+      "answers": [
+        { "text": "Lo confirma", "isCorrect": false },
+        { "text": "Lo escribe en un libro", "isCorrect": false },
+        { "text": "Lo hace nulo", "isCorrect": true },
+        { "text": "Lo deja para siempre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién llama bienaventurada el versículo 12?",
+      "explanation": "El versículo 12 llama bienaventurada a la gente cuyo Dios es Jehová, el pueblo que él escogió por heredad para sí.",
+      "bibleReference": "Salmos 33:12",
+      "answers": [
+        { "text": "Al rey de gran ejército", "isCorrect": false },
+        { "text": "Al valiente de mucha fuerza", "isCorrect": false },
+        { "text": "Al que confía en el caballo", "isCorrect": false },
+        { "text": "A la gente cuyo Dios es Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿qué no salva al rey?",
+      "explanation": "El versículo 16 dice que el rey no es salvo con la multitud del ejército, ni escapa el valiente por su mucha fuerza.",
+      "bibleReference": "Salmos 33:16",
+      "answers": [
+        { "text": "La multitud del ejército", "isCorrect": true },
+        { "text": "La palabra de Jehová", "isCorrect": false },
+        { "text": "El consejo de los ancianos", "isCorrect": false },
+        { "text": "La fuerza de sus murallas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿qué es Jehová para los que esperaron en él?",
+      "explanation": "El versículo 20 dice que su alma esperó a Jehová, y que él es su ayuda y su escudo.",
+      "bibleReference": "Salmos 33:20",
+      "answers": [
+        { "text": "Su rey y su caballo", "isCorrect": false },
+        { "text": "Su ayuda y su escudo", "isCorrect": true },
+        { "text": "Su espada y su lanza", "isCorrect": false },
+        { "text": "Su juez y su testigo", "isCorrect": false }
+      ]
+    }
+  ]
+}

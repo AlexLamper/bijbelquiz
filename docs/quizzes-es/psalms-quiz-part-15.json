@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Salmos 15: quién habitará en el tabernáculo de Jehová y cómo vive aquel que no resbalará.",
+  "slug": "psalms-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Sobre qué monte pregunta el salmista quién residirá?",
+      "explanation": "El verso pregunta a Jehová quién habitará en su tabernáculo y quién residirá en el monte de su santidad.",
+      "bibleReference": "Salmos 15:1",
+      "answers": [
+        { "text": "El monte de los Olivos", "isCorrect": false },
+        { "text": "El monte Carmelo", "isCorrect": false },
+        { "text": "El monte de su santidad", "isCorrect": true },
+        { "text": "El monte Horeb", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta el salmista acerca del tabernáculo de Jehová?",
+      "explanation": "El verso pregunta: Jehová, ¿quién habitará en tu tabernáculo?",
+      "bibleReference": "Salmos 15:1",
+      "answers": [
+        { "text": "Quién lo edificará", "isCorrect": false },
+        { "text": "Quién lo derribará", "isCorrect": false },
+        { "text": "Quién lo limpiará", "isCorrect": false },
+        { "text": "Quién habitará en él", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo anda aquel que habitará allí?",
+      "explanation": "El verso dice que es el que anda en integridad, obra justicia y habla verdad en su corazón.",
+      "bibleReference": "Salmos 15:2",
+      "answers": [
+        { "text": "En integridad", "isCorrect": true },
+        { "text": "En riquezas", "isCorrect": false },
+        { "text": "En consejo de malos", "isCorrect": false },
+        { "text": "Entre las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde habla verdad, según este salmo?",
+      "explanation": "El verso dice que habla verdad en su corazón.",
+      "bibleReference": "Salmos 15:2",
+      "answers": [
+        { "text": "En las puertas", "isCorrect": false },
+        { "text": "En su corazón", "isCorrect": true },
+        { "text": "Delante del rey", "isCorrect": false },
+        { "text": "En el templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué no hace con su lengua?",
+      "explanation": "El verso dice que no detrae con su lengua.",
+      "bibleReference": "Salmos 15:3",
+      "answers": [
+        { "text": "No detrae", "isCorrect": true },
+        { "text": "No canta", "isCorrect": false },
+        { "text": "No jura", "isCorrect": false },
+        { "text": "No enseña", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que no hace a su prójimo?",
+      "explanation": "El verso dice que no hace mal a su prójimo, ni acoge oprobio alguno contra él.",
+      "bibleReference": "Salmos 15:3",
+      "answers": [
+        { "text": "No le presta dinero", "isCorrect": false },
+        { "text": "No le hace mal", "isCorrect": true },
+        { "text": "No le habla nunca", "isCorrect": false },
+        { "text": "No le vende su campo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes honra, según el verso 4?",
+      "explanation": "El verso dice que a sus ojos es menospreciado el vil, mas honra a los que temen a Jehová.",
+      "bibleReference": "Salmos 15:4",
+      "answers": [
+        { "text": "A los príncipes", "isCorrect": false },
+        { "text": "A los ricos de la tierra", "isCorrect": false },
+        { "text": "A los que dan dádivas", "isCorrect": false },
+        { "text": "A los que temen a Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hace cuando ha jurado en daño suyo?",
+      "explanation": "El verso dice que, habiendo jurado en daño suyo, no por eso muda.",
+      "bibleReference": "Salmos 15:4",
+      "answers": [
+        { "text": "Se vuelve atrás", "isCorrect": false },
+        { "text": "Pide otro juramento", "isCorrect": false },
+        { "text": "No muda", "isCorrect": true },
+        { "text": "Calla delante de todos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué no dio su dinero?",
+      "explanation": "El verso dice que no dio su dinero a usura, ni tomó cohecho contra el inocente.",
+      "bibleReference": "Salmos 15:5",
+      "answers": [
+        { "text": "A usura", "isCorrect": true },
+        { "text": "A los altares", "isCorrect": false },
+        { "text": "A los mercaderes", "isCorrect": false },
+        { "text": "A los extranjeros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se dice del que hace estas cosas?",
+      "explanation": "El último verso dice que el que hace estas cosas no resbalará para siempre.",
+      "bibleReference": "Salmos 15:5",
+      "answers": [
+        { "text": "Reinará sobre las gentes", "isCorrect": false },
+        { "text": "No resbalará para siempre", "isCorrect": true },
+        { "text": "Verá muchos días", "isCorrect": false },
+        { "text": "Será rico en bienes", "isCorrect": false }
+      ]
+    }
+  ]
+}

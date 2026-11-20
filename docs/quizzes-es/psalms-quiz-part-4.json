@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Salmos 4: la oración que pide ser oída, la luz del rostro de Jehová y el sueño en paz.",
+  "slug": "psalms-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezamiento, ¿sobre qué es este salmo de David?",
+      "explanation": "El encabezamiento dice: Al Músico principal: sobre Neginoth: Salmo de David.",
+      "bibleReference": "Salmos 4:1",
+      "answers": [
+        {
+          "text": "Sobre Gittith",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre Nehiloth",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre Neginoth",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre Seminith",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que Dios hizo con él cuando estaba en angustia?",
+      "explanation": "Salmos 4:1 dice: estando en angustia, tú me hiciste ensanchar.",
+      "bibleReference": "Salmos 4:1",
+      "answers": [
+        {
+          "text": "Lo hizo ensanchar",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo hizo callar",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo hizo dormir",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo hizo huir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reprocha a los hijos de los hombres?",
+      "explanation": "Salmos 4:2 les pregunta hasta cuándo volverán su honra en infamia, amarán la vanidad y buscarán la mentira.",
+      "bibleReference": "Salmos 4:2",
+      "answers": [
+        {
+          "text": "Que no guardan los sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se burlan de los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no quieren oír su oración",
+          "isCorrect": false
+        },
+        {
+          "text": "Que aman la vanidad y buscan la mentira",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién hizo apartar Jehová para sí?",
+      "explanation": "Salmos 4:3 dice: Sabed pues, que Jehová hizo apartar al pío para sí.",
+      "bibleReference": "Salmos 4:3",
+      "answers": [
+        {
+          "text": "Al pío",
+          "isCorrect": true
+        },
+        {
+          "text": "Al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Al juez",
+          "isCorrect": false
+        },
+        {
+          "text": "Al pobre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde manda conversar en el corazón, después de decir: Temblad, y no pequéis?",
+      "explanation": "Salmos 4:4 dice: conversad en vuestro corazón sobre vuestra cama, y desistid.",
+      "bibleReference": "Salmos 4:4",
+      "answers": [
+        {
+          "text": "En la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre vuestra cama",
+          "isCorrect": true
+        },
+        {
+          "text": "En el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante del altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sacrificios manda ofrecer?",
+      "explanation": "Salmos 4:5 dice: Ofreced sacrificios de justicia, y confiad en Jehová.",
+      "bibleReference": "Salmos 4:5",
+      "answers": [
+        {
+          "text": "Sacrificios de alegría",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificios de la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificios de justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "Sacrificios del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué preguntan muchos, según el versículo 6?",
+      "explanation": "Salmos 4:6 dice: Muchos dicen: ¿Quién nos mostrará el bien?",
+      "bibleReference": "Salmos 4:6",
+      "answers": [
+        {
+          "text": "¿Quién nos mostrará el bien?",
+          "isCorrect": true
+        },
+        {
+          "text": "¿Quién nos dará el reino?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Quién nos librará de ellos?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Quién nos juzgará con justicia?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide que Jehová alce sobre ellos?",
+      "explanation": "Salmos 4:6 dice: Alza sobre nosotros, oh Jehová, la luz de tu rostro.",
+      "bibleReference": "Salmos 4:6",
+      "answers": [
+        {
+          "text": "La fuerza de su brazo",
+          "isCorrect": false
+        },
+        {
+          "text": "La sombra de sus alas",
+          "isCorrect": false
+        },
+        {
+          "text": "El escudo de su mano",
+          "isCorrect": false
+        },
+        {
+          "text": "La luz de su rostro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué alegría compara la que Dios dio en su corazón?",
+      "explanation": "Salmos 4:7 dice que Dios dio alegría en su corazón, más que la que tienen ellos en el tiempo en que se multiplicó su grano y su mosto.",
+      "bibleReference": "Salmos 4:7",
+      "answers": [
+        {
+          "text": "Con la de los reyes en su trono",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la de ellos cuando se multiplicó su grano y su mosto",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la de los que hallan grandes despojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la de los que cantan en la congregación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿cómo se acostará y dormirá?",
+      "explanation": "Salmos 4:8 dice: En paz me acostaré, y asimismo dormiré; porque solo tú, Jehová, me harás estar confiado.",
+      "bibleReference": "Salmos 4:8",
+      "answers": [
+        {
+          "text": "Llorando toda la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "En paz",
+          "isCorrect": true
+        },
+        {
+          "text": "Con temor y temblor",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin esperanza alguna",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

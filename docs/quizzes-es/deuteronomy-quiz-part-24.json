@@ -66,10 +66,10 @@
     {
       "text": "¿De qué manda acordarse el texto, junto con el cuidado de la llaga de lepra?",
       "explanation": "El versículo dice: acuérdate de lo que hizo Jehová tu Dios a María en el camino, después que salisteis de Egipto.",
-      "bibleReference": "Deuteronomio 24:9",
+      "bibleReference": "Deuteronomio 24:8-9",
       "answers": [
         { "text": "De lo que Jehová hizo a María en el camino", "isCorrect": true },
-        { "text": "De lo que hizo Amalec en el camino", "isCorrect": false },
+        { "text": "De lo que hizo Amalec a Israel en el camino", "isCorrect": false },
         { "text": "De lo que Jehová hizo a Balaam", "isCorrect": false },
         { "text": "De lo que hizo Faraón en Egipto", "isCorrect": false }
       ]
@@ -92,7 +92,7 @@
       "answers": [
         { "text": "Al terminar toda la cosecha", "isCorrect": false },
         { "text": "Cada siete días, en el reposo", "isCorrect": false },
-        { "text": "En su mismo día, antes de ponerse el sol", "isCorrect": true },
+        { "text": "En su mismo día", "isCorrect": true },
         { "text": "Cuando él lo pidiera a los jueces", "isCorrect": false }
       ]
     },

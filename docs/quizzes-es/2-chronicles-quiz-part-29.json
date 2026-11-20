@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre 2 Crónicas 29: Ezechîas abre y limpia la casa de Jehová, la expiación por todo Israel y el holocausto con los cánticos de David.",
+  "slug": "2-chronicles-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo Ezechîas en el primer año de su reinado, en el mes primero?",
+      "explanation": "En el primer año de su reinado, en el mes primero, abrió las puertas de la casa de Jehová y las reparó.",
+      "bibleReference": "2 Crónicas 29:3",
+      "answers": [
+        { "text": "Abrió las puertas de la casa de Jehová y las reparó", "isCorrect": true },
+        { "text": "Derribó el templo de Baal en Jerusalem", "isCorrect": false },
+        { "text": "Contó a todos los hombres de guerra de Judá", "isCorrect": false },
+        { "text": "Edificó torres en el muro de la fortaleza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Ezechîas a los Levitas que había juntado en la plaza oriental?",
+      "explanation": "Les dijo que se santificasen, que santificasen la casa de Jehová el Dios de sus padres y que sacasen del santuario la inmundicia.",
+      "bibleReference": "2 Crónicas 29:5",
+      "answers": [
+        { "text": "Que juntasen dinero en todas las ciudades", "isCorrect": false },
+        { "text": "Que guardasen las puertas con sus armas", "isCorrect": false },
+        { "text": "Que se santificasen y sacasen la inmundicia", "isCorrect": true },
+        { "text": "Que escribiesen los nombres de las familias", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según Ezechîas, ¿qué habían hecho sus padres con las puertas del pórtico y las lámparas?",
+      "explanation": "Dijo que aun cerraron las puertas del pórtico y apagaron las lámparas, y que no quemaron perfume ni sacrificaron holocausto en el santuario.",
+      "bibleReference": "2 Crónicas 29:7",
+      "answers": [
+        { "text": "Las habían llevado al torrente de Cedrón", "isCorrect": false },
+        { "text": "Cerraron las puertas y apagaron las lámparas", "isCorrect": true },
+        { "text": "Las habían dado al rey de los Asirios", "isCorrect": false },
+        { "text": "Las repartieron entre los príncipes de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué había determinado hacer Ezechîas para que se apartase de ellos la ira del furor de Jehová?",
+      "explanation": "Dijo que había determinado hacer alianza con Jehová el Dios de Israel, para que apartase de ellos la ira de su furor.",
+      "bibleReference": "2 Crónicas 29:10",
+      "answers": [
+        { "text": "Edificar un altar nuevo en el atrio", "isCorrect": false },
+        { "text": "Enviar profetas a todas las ciudades", "isCorrect": false },
+        { "text": "Pelear contra los reyes de Asiria", "isCorrect": false },
+        { "text": "Hacer alianza con Jehová el Dios de Israel", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Adónde llevaron los Levitas la inmundicia que sacaron del templo?",
+      "explanation": "Los sacerdotes sacaron toda la inmundicia al atrio de la casa de Jehová, y los Levitas la tomaron para sacarla fuera, al torrente de Cedrón.",
+      "bibleReference": "2 Crónicas 29:16",
+      "answers": [
+        { "text": "Al valle de los hijos de Hinnom", "isCorrect": false },
+        { "text": "Al desierto de Tecoa", "isCorrect": false },
+        { "text": "Al torrente de Cedrón", "isCorrect": true },
+        { "text": "Al valle de la Sal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En cuántos días santificaron la casa de Jehová?",
+      "explanation": "Comenzaron a santificar el primero del mes primero, a los ocho del mismo mes vinieron al pórtico de Jehová, y santificaron la casa de Jehová en ocho días.",
+      "bibleReference": "2 Crónicas 29:17",
+      "answers": [
+        { "text": "En ocho días", "isCorrect": true },
+        { "text": "En dieciséis días", "isCorrect": false },
+        { "text": "En tres días", "isCorrect": false },
+        { "text": "En siete días", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos novillos, carneros, corderos y machos de cabrío presentaron para la expiación?",
+      "explanation": "Presentaron siete novillos, siete carneros, siete corderos y siete machos de cabrío, para expiación por el reino, por el santuario y por Judá.",
+      "bibleReference": "2 Crónicas 29:21",
+      "answers": [
+        { "text": "Doce de cada clase", "isCorrect": false },
+        { "text": "Siete de cada clase", "isCorrect": true },
+        { "text": "Setenta de cada clase", "isCorrect": false },
+        { "text": "Uno de cada clase", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Mientras los Levitas estaban con los instrumentos de David, ¿con qué estaban los sacerdotes?",
+      "explanation": "Los Levitas estaban con los instrumentos de David, y los sacerdotes con trompetas.",
+      "bibleReference": "2 Crónicas 29:26",
+      "answers": [
+        { "text": "Con címbalos", "isCorrect": false },
+        { "text": "Con salterios", "isCorrect": false },
+        { "text": "Con arpas", "isCorrect": false },
+        { "text": "Con trompetas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuál fue el número de los holocaustos que trajo la congregación?",
+      "explanation": "El número de los holocaustos que trajo la congregación fue setenta bueyes, cien carneros y doscientos corderos, todo para el holocausto de Jehová.",
+      "bibleReference": "2 Crónicas 29:32",
+      "answers": [
+        { "text": "Cien bueyes, cien carneros y cien corderos", "isCorrect": false },
+        { "text": "Siete bueyes, siete carneros y siete corderos", "isCorrect": false },
+        { "text": "Setenta bueyes, cien carneros y doscientos corderos", "isCorrect": true },
+        { "text": "Mil bueyes y mil ovejas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué ayudaron los Levitas a desollar los holocaustos?",
+      "explanation": "Los sacerdotes eran pocos y no podían bastar a desollar los holocaustos, y así sus hermanos los Levitas les ayudaron hasta que acabaron la obra.",
+      "bibleReference": "2 Crónicas 29:34",
+      "answers": [
+        { "text": "Porque los holocaustos se quemaron de noche", "isCorrect": false },
+        { "text": "Porque los sacerdotes eran pocos", "isCorrect": true },
+        { "text": "Porque los cantores habían salido de la ciudad", "isCorrect": false },
+        { "text": "Porque el pueblo no trajo bastante ganado", "isCorrect": false }
+      ]
+    }
+  ]
+}

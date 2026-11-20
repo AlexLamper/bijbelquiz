@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Salmos 11: la confianza en Jehová, su silla en el cielo y la porción de los malos.",
+  "slug": "psalms-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En quién dice el salmista que ha confiado?",
+      "explanation": "El verso comienza diciendo: En Jehová he confiado.",
+      "bibleReference": "Salmos 11:1",
+      "answers": [
+        { "text": "En su arco", "isCorrect": false },
+        { "text": "En los montes", "isCorrect": false },
+        { "text": "En Jehová", "isCorrect": true },
+        { "text": "En los príncipes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dicen a su alma, según el primer verso?",
+      "explanation": "El verso pregunta: ¿cómo decís a mi alma: Escapa al monte cual ave?",
+      "bibleReference": "Salmos 11:1",
+      "answers": [
+        { "text": "Escapa al monte cual ave", "isCorrect": true },
+        { "text": "Siéntate a la puerta", "isCorrect": false },
+        { "text": "Descansa junto al río", "isCorrect": false },
+        { "text": "Calla y espera", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Contra quiénes apercibieron los malos sus saetas sobre la cuerda?",
+      "explanation": "El verso dice que los malos flecharon el arco y apercibieron sus saetas para asaetear en oculto a los rectos de corazón.",
+      "bibleReference": "Salmos 11:2",
+      "answers": [
+        { "text": "Contra los sacerdotes", "isCorrect": false },
+        { "text": "Contra los rectos de corazón", "isCorrect": true },
+        { "text": "Contra las ciudades de la tierra", "isCorrect": false },
+        { "text": "Contra los que huyen al monte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace el salmo por si fueren destruidos los fundamentos?",
+      "explanation": "El verso dice: Si fueren destruidos los fundamentos, ¿qué ha de hacer el justo?",
+      "bibleReference": "Salmos 11:3",
+      "answers": [
+        { "text": "¿Quién edificará la casa?", "isCorrect": false },
+        { "text": "¿Dónde está su Dios?", "isCorrect": false },
+        { "text": "¿Quién subirá al monte?", "isCorrect": false },
+        { "text": "¿Qué ha de hacer el justo?", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Dónde está la silla de Jehová, según este salmo?",
+      "explanation": "El verso dice que Jehová está en el templo de su santidad y que su silla está en el cielo.",
+      "bibleReference": "Salmos 11:4",
+      "answers": [
+        { "text": "En el cielo", "isCorrect": true },
+        { "text": "En el monte Sión", "isCorrect": false },
+        { "text": "En medio del pueblo", "isCorrect": false },
+        { "text": "Sobre las aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes examinan los párpados de Jehová?",
+      "explanation": "El verso dice que sus ojos ven y sus párpados examinan a los hijos de los hombres.",
+      "bibleReference": "Salmos 11:4",
+      "answers": [
+        { "text": "A las gentes de lejos", "isCorrect": false },
+        { "text": "A los reyes de la tierra", "isCorrect": false },
+        { "text": "A los hijos de los hombres", "isCorrect": true },
+        { "text": "A los que moran en el templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién prueba Jehová, según este salmo?",
+      "explanation": "El verso dice que Jehová prueba al justo.",
+      "bibleReference": "Salmos 11:5",
+      "answers": [
+        { "text": "Al necio", "isCorrect": false },
+        { "text": "Al justo", "isCorrect": true },
+        { "text": "Al extranjero", "isCorrect": false },
+        { "text": "Al rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién aborrece su alma, según el mismo verso?",
+      "explanation": "El verso dice que su alma aborrece al malo y al que ama la violencia.",
+      "bibleReference": "Salmos 11:5",
+      "answers": [
+        { "text": "Al pobre y al menesteroso", "isCorrect": false },
+        { "text": "Al que teme su nombre", "isCorrect": false },
+        { "text": "Al que habita en el monte", "isCorrect": false },
+        { "text": "Al malo y al que ama la violencia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que lloverá sobre los malos?",
+      "explanation": "El verso dice que sobre los malos lloverá lazos, fuego y azufre, con vientos de torbellinos.",
+      "bibleReference": "Salmos 11:6",
+      "answers": [
+        { "text": "Lazos, fuego y azufre", "isCorrect": true },
+        { "text": "Maná y codornices", "isCorrect": false },
+        { "text": "Granizo y langostas", "isCorrect": false },
+        { "text": "Rocío y lluvia temprana", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ama el justo Jehová, según el final del salmo?",
+      "explanation": "El verso dice que el justo Jehová ama la justicia y que al recto mirará su rostro.",
+      "bibleReference": "Salmos 11:7",
+      "answers": [
+        { "text": "El sacrificio", "isCorrect": false },
+        { "text": "La justicia", "isCorrect": true },
+        { "text": "La riqueza", "isCorrect": false },
+        { "text": "El silencio", "isCorrect": false }
+      ]
+    }
+  ]
+}

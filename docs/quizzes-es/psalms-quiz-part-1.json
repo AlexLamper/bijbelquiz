@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Salmos 1: el varón bienaventurado como árbol junto a arroyos de aguas, y la senda de los malos.",
+  "slug": "psalms-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué consejo no anduvo el varón llamado bienaventurado?",
+      "explanation": "Salmos 1:1 dice que es bienaventurado el varón que no anduvo en consejo de malos.",
+      "bibleReference": "Salmos 1:1",
+      "answers": [
+        {
+          "text": "En consejo de malos",
+          "isCorrect": true
+        },
+        {
+          "text": "En consejo de ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "En consejo de reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "En consejo de jueces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué silla no se ha sentado ese varón?",
+      "explanation": "El mismo versículo dice que no se ha sentado en silla de escarnecedores.",
+      "bibleReference": "Salmos 1:1",
+      "answers": [
+        {
+          "text": "En silla de los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "En silla de escarnecedores",
+          "isCorrect": true
+        },
+        {
+          "text": "En silla de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "En silla de los sabios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué está su delicia?",
+      "explanation": "Salmos 1:2 dice que en la ley de Jehová está su delicia.",
+      "bibleReference": "Salmos 1:2",
+      "answers": [
+        {
+          "text": "En la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "En el fruto de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "En la ley de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En el canto y el júbilo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo medita en la ley de Jehová?",
+      "explanation": "El versículo dice que en su ley medita de día y de noche.",
+      "bibleReference": "Salmos 1:2",
+      "answers": [
+        {
+          "text": "Una vez cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente de mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente en el juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "De día y de noche",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara a este varón?",
+      "explanation": "Salmos 1:3 dice que será como el árbol plantado junto a arroyos de aguas.",
+      "bibleReference": "Salmos 1:3",
+      "answers": [
+        {
+          "text": "Con un árbol plantado junto a arroyos de aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un monte que no se mueve de su lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una fuente que corre en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una viña cercada en medio del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo de la hoja de ese árbol?",
+      "explanation": "El versículo dice que da su fruto en su tiempo y que su hoja no cae.",
+      "bibleReference": "Salmos 1:3",
+      "answers": [
+        {
+          "text": "Que es muy pequeña",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no cae",
+          "isCorrect": true
+        },
+        {
+          "text": "Que cae en el verano",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la lleva el viento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué se comparan los malos?",
+      "explanation": "Salmos 1:4 dice que no es así con los malos, sino que son como el tamo que arrebata el viento.",
+      "bibleReference": "Salmos 1:4",
+      "answers": [
+        {
+          "text": "Al polvo de los caminos",
+          "isCorrect": false
+        },
+        {
+          "text": "Al humo que se levanta",
+          "isCorrect": false
+        },
+        {
+          "text": "Al tamo que arrebata el viento",
+          "isCorrect": true
+        },
+        {
+          "text": "A la paja que se quema",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmo que no se levantarán los malos?",
+      "explanation": "Salmos 1:5 dice que por tanto no se levantarán los malos en el juicio, ni los pecadores en la congregación de los justos.",
+      "bibleReference": "Salmos 1:5",
+      "answers": [
+        {
+          "text": "En el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "En la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En el convite",
+          "isCorrect": false
+        },
+        {
+          "text": "En el juicio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué camino conoce Jehová?",
+      "explanation": "Salmos 1:6 dice que Jehová conoce el camino de los justos.",
+      "bibleReference": "Salmos 1:6",
+      "answers": [
+        {
+          "text": "El camino de los justos",
+          "isCorrect": true
+        },
+        {
+          "text": "El camino de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "El camino de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "El camino de las aguas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué le sucederá a la senda de los malos?",
+      "explanation": "El salmo termina diciendo que la senda de los malos perecerá.",
+      "bibleReference": "Salmos 1:6",
+      "answers": [
+        {
+          "text": "Será ensanchada",
+          "isCorrect": false
+        },
+        {
+          "text": "Perecerá",
+          "isCorrect": true
+        },
+        {
+          "text": "Será olvidada",
+          "isCorrect": false
+        },
+        {
+          "text": "Será cercada",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

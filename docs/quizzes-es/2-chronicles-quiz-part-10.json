@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre 2 Crónicas 10: la petición del pueblo a Roboam, los dos consejos que recibió y la separación de Israel de la casa de David.",
+  "slug": "2-chronicles-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A dónde fue Roboam, porque allí se había juntado todo Israel para hacerlo rey?",
+      "explanation": "Roboam fue a Sichêm, porque en Sichêm se había juntado todo Israel para hacerlo rey.",
+      "bibleReference": "2 Crónicas 10:1",
+      "answers": [
+        { "text": "A Sichêm", "isCorrect": true },
+        { "text": "A Hebrón", "isCorrect": false },
+        { "text": "A Bethel", "isCorrect": false },
+        { "text": "A Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De dónde volvió Jeroboam hijo de Nabat?",
+      "explanation": "Jeroboam hijo de Nabat estaba en Egipto, donde había huido a causa del rey Salomón, y volvió de Egipto.",
+      "bibleReference": "2 Crónicas 10:2",
+      "answers": [
+        { "text": "De Siria", "isCorrect": false },
+        { "text": "De Egipto", "isCorrect": true },
+        { "text": "De Judá", "isCorrect": false },
+        { "text": "De los montes de Ephraim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron Jeroboam y todo Israel al rey?",
+      "explanation": "Dijeron que su padre les había agravado el yugo y le pidieron que aflojase algo de la dura servidumbre y del grave yugo, y le servirían.",
+      "bibleReference": "2 Crónicas 10:4",
+      "answers": [
+        { "text": "Que les diese parte en los tesoros del rey", "isCorrect": false },
+        { "text": "Que edificase ciudades fuertes en Judá", "isCorrect": false },
+        { "text": "Que aflojase algo del grave yugo de su padre", "isCorrect": true },
+        { "text": "Que les diese un rey de entre ellos mismos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué les respondió el rey en ese primer momento?",
+      "explanation": "El rey les dijo: Volved a mí de aquí a tres días. Y el pueblo se fue.",
+      "bibleReference": "2 Crónicas 10:5",
+      "answers": [
+        { "text": "Que ya había decidido no oírlos", "isCorrect": false },
+        { "text": "Que lo pensaría durante un mes", "isCorrect": false },
+        { "text": "Que fuesen a preguntar a los viejos", "isCorrect": false },
+        { "text": "Que volviesen a él de allí a tres días", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué le aconsejaron los viejos que habían estado delante de Salomón?",
+      "explanation": "Los viejos le dijeron que si se conducía humanamente con el pueblo, lo agradaba y le hablaba buenas palabras, le servirían perpetuamente.",
+      "bibleReference": "2 Crónicas 10:7",
+      "answers": [
+        { "text": "Que añadiese más yugo sobre el pueblo", "isCorrect": false },
+        { "text": "Que les hablase buenas palabras", "isCorrect": true },
+        { "text": "Que llamase a los mancebos a consejo", "isCorrect": false },
+        { "text": "Que enviase al pueblo a sus estancias", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijeron los mancebos criados con él que respondiera al pueblo?",
+      "explanation": "Los mancebos le dijeron que respondiese: mi padre os cargó de grave yugo, y yo añadiré a vuestro yugo; mi padre os castigó con azotes, y yo con escorpiones.",
+      "bibleReference": "2 Crónicas 10:10-11",
+      "answers": [
+        { "text": "Que su padre los castigó con azotes, y él con escorpiones", "isCorrect": true },
+        { "text": "Que su padre los castigó con hambre, y él con espada", "isCorrect": false },
+        { "text": "Que les descargaría el yugo que puso su padre", "isCorrect": false },
+        { "text": "Que los enviaría a edificar en Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por medio de quién había hablado Jehová su palabra a Jeroboam hijo de Nabat?",
+      "explanation": "El texto dice que la causa era de Dios, para cumplir Jehová su palabra que había hablado por Ahías Silonita a Jeroboam hijo de Nabat.",
+      "bibleReference": "2 Crónicas 10:15",
+      "answers": [
+        { "text": "Por Semeías varón de Dios", "isCorrect": false },
+        { "text": "Por Iddo el vidente", "isCorrect": false },
+        { "text": "Por Hanani vidente", "isCorrect": false },
+        { "text": "Por Ahías Silonita", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el pueblo al rey cuando vio que no les había oído?",
+      "explanation": "El pueblo respondió preguntando qué parte tenían con David, y dijo: Israel, cada uno a sus estancias. Y así se fue todo Israel a sus estancias.",
+      "bibleReference": "2 Crónicas 10:16",
+      "answers": [
+        { "text": "Que pagarían el tributo como antes", "isCorrect": false },
+        { "text": "Que volverían a hablar con el rey en tres días", "isCorrect": false },
+        { "text": "Que cada uno se iba a sus estancias", "isCorrect": true },
+        { "text": "Que harían rey a Jeroboam en Sichêm", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le pasó a Adoram, a quien el rey Roboam envió?",
+      "explanation": "Adoram tenía cargo de los tributos, y los hijos de Israel le apedrearon y murió.",
+      "bibleReference": "2 Crónicas 10:18",
+      "answers": [
+        { "text": "Los hijos de Israel le apedrearon y murió", "isCorrect": true },
+        { "text": "Huyó en un carro hasta Jerusalem", "isCorrect": false },
+        { "text": "Fue echado en la casa de la cárcel", "isCorrect": false },
+        { "text": "Volvió con el tributo de todo Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo termina el capítulo acerca de Israel?",
+      "explanation": "El último verso dice: así se apartó Israel de la casa de David hasta hoy.",
+      "bibleReference": "2 Crónicas 10:19",
+      "answers": [
+        { "text": "Israel volvió a servir a Roboam", "isCorrect": false },
+        { "text": "Israel edificó un altar en Sichêm", "isCorrect": false },
+        { "text": "Israel pidió perdón al rey de Judá", "isCorrect": false },
+        { "text": "Israel se apartó de la casa de David hasta hoy", "isCorrect": true }
+      ]
+    }
+  ]
+}

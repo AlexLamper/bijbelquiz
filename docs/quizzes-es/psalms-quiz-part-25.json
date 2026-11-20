@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Salmos 25: la petición de ser enseñado en los caminos de Jehová, el perdón de los pecados y la confianza en medio de la aflicción.",
+  "slug": "psalms-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿qué dice que levantará a Jehová?",
+      "explanation": "El texto dice: A ti, oh Jehová, levantaré mi alma.",
+      "bibleReference": "Salmos 25:1",
+      "answers": [
+        {
+          "text": "Sus manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Su alma",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus ojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Su voz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿quiénes serán avergonzados?",
+      "explanation": "El texto dice que ninguno de los que esperan en Jehová será confundido, pero que serán avergonzados los que se rebelan sin causa.",
+      "bibleReference": "Salmos 25:3",
+      "answers": [
+        {
+          "text": "Los que esperan en Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Los pobres de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los que se rebelan sin causa",
+          "isCorrect": true
+        },
+        {
+          "text": "Los que guardan su pacto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pide a Jehová en el verso 4?",
+      "explanation": "El texto dice: Muéstrame, oh Jehová, tus caminos; enséñame tus sendas.",
+      "bibleReference": "Salmos 25:4",
+      "answers": [
+        {
+          "text": "Que le muestre sus caminos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le dé riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que destruya a sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le edifique una casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué pide que Jehová no se acuerde?",
+      "explanation": "El verso dice: De los pecados de mi mocedad, y de mis rebeliones, no te acuerdes.",
+      "bibleReference": "Salmos 25:7",
+      "answers": [
+        {
+          "text": "De las promesas de sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "De sus votos no pagados",
+          "isCorrect": false
+        },
+        {
+          "text": "De sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los pecados de su mocedad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Porque Jehová es bueno y recto, ¿a quiénes enseñará el camino?",
+      "explanation": "El texto dice: Bueno y recto es Jehová: por tanto él enseñará á los pecadores el camino.",
+      "bibleReference": "Salmos 25:8",
+      "answers": [
+        {
+          "text": "A los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los pecadores",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los profetas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué son todas las sendas de Jehová para los que guardan su pacto?",
+      "explanation": "El verso dice que todas las sendas de Jehová son misericordia y verdad para los que guardan su pacto y sus testimonios.",
+      "bibleReference": "Salmos 25:10",
+      "answers": [
+        {
+          "text": "Misericordia y verdad",
+          "isCorrect": true
+        },
+        {
+          "text": "Juicio y fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Riqueza y honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuerza y gloria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué pide que Jehová perdone su pecado?",
+      "explanation": "El texto dice: Por amor de tu nombre, oh Jehová, perdonarás también mi pecado.",
+      "bibleReference": "Salmos 25:11",
+      "answers": [
+        {
+          "text": "Por sus muchas ofrendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Por causa de sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "Por amor del nombre de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Por su propia integridad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para quiénes es el secreto de Jehová, según el verso 14?",
+      "explanation": "El texto dice que el secreto de Jehová es para los que le temen, y a ellos hará conocer su alianza.",
+      "bibleReference": "Salmos 25:14",
+      "answers": [
+        {
+          "text": "Para los sabios de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los que son ricos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los que le temen",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Al pedir misericordia en el verso 16, ¿cómo dice que está?",
+      "explanation": "El texto dice: Mírame, y ten misericordia de mí; porque estoy solo y afligido.",
+      "bibleReference": "Salmos 25:16",
+      "answers": [
+        {
+          "text": "Solo y afligido",
+          "isCorrect": true
+        },
+        {
+          "text": "Alegre y saciado",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuerte y confiado",
+          "isCorrect": false
+        },
+        {
+          "text": "Rico y honrado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide al final del salmo?",
+      "explanation": "El último verso dice: Redime, oh Dios, á Israel de todas sus angustias.",
+      "bibleReference": "Salmos 25:22",
+      "answers": [
+        {
+          "text": "Que Dios juzgue a las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Dios redima a Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Dios edifique a Sion",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Dios destruya a Egipto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

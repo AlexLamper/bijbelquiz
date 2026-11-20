@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 40",
+  "description": "Diez preguntas sobre Salmos 40: el lago de miseria del que fue sacado el salmista, la canción nueva puesta en su boca y su ruego para que Dios no se tarde.",
+  "slug": "psalms-quiz-part-40",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 2, ¿de dónde hizo Jehová sacar al salmista?",
+      "explanation": "El versículo 2 dice que lo hizo sacar de un lago de miseria y del lodo cenagoso.",
+      "bibleReference": "Salmos 40:2",
+      "answers": [
+        { "text": "De la casa de sus enemigos", "isCorrect": false },
+        { "text": "De un lago de miseria y del lodo", "isCorrect": true },
+        { "text": "Del monte de los dragones", "isCorrect": false },
+        { "text": "Del campo de los leoncillos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿sobre qué puso Jehová sus pies?",
+      "explanation": "El versículo 2 dice que puso sus pies sobre peña y enderezó sus pasos.",
+      "bibleReference": "Salmos 40:2",
+      "answers": [
+        { "text": "Sobre arena", "isCorrect": false },
+        { "text": "Sobre hierba", "isCorrect": false },
+        { "text": "Sobre peña", "isCorrect": true },
+        { "text": "Sobre agua", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué puso Jehová en su boca, según el versículo 3?",
+      "explanation": "El versículo 3 dice que puso en su boca canción nueva, alabanza a nuestro Dios.",
+      "bibleReference": "Salmos 40:3",
+      "answers": [
+        { "text": "Canción nueva", "isCorrect": true },
+        { "text": "Palabras de engaño", "isCorrect": false },
+        { "text": "Un freno", "isCorrect": false },
+        { "text": "Una reprensión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién llama bienaventurado el versículo 4?",
+      "explanation": "El versículo 4 llama bienaventurado al hombre que puso a Jehová por su confianza y no mira a los soberbios ni a los que se desvían hacia la mentira.",
+      "bibleReference": "Salmos 40:4",
+      "answers": [
+        { "text": "Al hombre que mira a los soberbios", "isCorrect": false },
+        { "text": "Al hombre que declina a la mentira", "isCorrect": false },
+        { "text": "Al hombre de muchas riquezas", "isCorrect": false },
+        { "text": "Al hombre que confía en Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué no se puede contar?",
+      "explanation": "El versículo 5 dice que Dios ha aumentado sus maravillas y que sus pensamientos para con nosotros no se pueden contar ni enarrar.",
+      "bibleReference": "Salmos 40:5",
+      "answers": [
+        { "text": "Los días del hombre sobre la tierra", "isCorrect": false },
+        { "text": "Los pensamientos de Dios para con nosotros", "isCorrect": true },
+        { "text": "Las gentes que habitan en la tierra", "isCorrect": false },
+        { "text": "Las saetas de todos sus enemigos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 6 que no agrada a Dios?",
+      "explanation": "El versículo 6 dice que el sacrificio y el presente no le agradan, y que no ha demandado holocausto ni expiación.",
+      "bibleReference": "Salmos 40:6",
+      "answers": [
+        { "text": "Sacrificio y presente", "isCorrect": true },
+        { "text": "Canción y alabanza", "isCorrect": false },
+        { "text": "Justicia y juicio", "isCorrect": false },
+        { "text": "Oración y clamor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿dónde está la ley de Dios para el salmista?",
+      "explanation": "El versículo 8 dice que hacer la voluntad de Dios le ha agradado y que su ley está en medio de sus entrañas.",
+      "bibleReference": "Salmos 40:8",
+      "answers": [
+        { "text": "En la grande congregación", "isCorrect": false },
+        { "text": "En las manos del Músico principal", "isCorrect": false },
+        { "text": "En medio de sus entrañas", "isCorrect": true },
+        { "text": "En el lodo cenagoso", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué no encubrió el salmista dentro de su corazón?",
+      "explanation": "El versículo 10 dice que no encubrió la justicia de Dios dentro de su corazón y que no ocultó su misericordia ni su verdad en grande concurso.",
+      "bibleReference": "Salmos 40:10",
+      "answers": [
+        { "text": "La maldad de sus enemigos", "isCorrect": false },
+        { "text": "El consejo de los soberbios", "isCorrect": false },
+        { "text": "El nombre de sus amigos", "isCorrect": false },
+        { "text": "La justicia de Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista a Jehová en el versículo 13?",
+      "explanation": "El versículo 13 pide a Jehová que quiera librarlo y que se apresure a socorrerlo.",
+      "bibleReference": "Salmos 40:13",
+      "answers": [
+        { "text": "Que se apresure a socorrerlo", "isCorrect": true },
+        { "text": "Que calle delante de él", "isCorrect": false },
+        { "text": "Que le dé un ejército", "isCorrect": false },
+        { "text": "Que le muestre el libro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista de sí mismo en el último versículo?",
+      "explanation": "El versículo 17 dice que aunque él está afligido y necesitado, Jehová pensará en él, y llama a Dios su ayuda y su libertador.",
+      "bibleReference": "Salmos 40:17",
+      "answers": [
+        { "text": "Que es rico y honrado", "isCorrect": false },
+        { "text": "Que es afligido y necesitado", "isCorrect": true },
+        { "text": "Que es rey y juez", "isCorrect": false },
+        { "text": "Que es fuerte y valiente", "isCorrect": false }
+      ]
+    }
+  ]
+}

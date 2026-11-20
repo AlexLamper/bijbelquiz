@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Salmos 2: los reyes que se amotinan, el rey puesto sobre Sión y el decreto de Jehová.",
+  "slug": "psalms-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué piensan los pueblos?",
+      "explanation": "Salmos 2:1 pregunta por qué se amotinan las gentes y los pueblos piensan vanidad.",
+      "bibleReference": "Salmos 2:1",
+      "answers": [
+        {
+          "text": "Vanidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Verdad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Contra quién consultan unidos los reyes de la tierra y los príncipes?",
+      "explanation": "Salmos 2:2 dice que los reyes de la tierra y los príncipes consultan unidos contra Jehová y contra su ungido.",
+      "bibleReference": "Salmos 2:2",
+      "answers": [
+        {
+          "text": "Contra los pueblos de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra Jehová y contra su ungido",
+          "isCorrect": true
+        },
+        {
+          "text": "Contra los jueces de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra el monte de Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dicen los reyes y los príncipes que quieren hacer?",
+      "explanation": "Salmos 2:3 pone en su boca: Rompamos sus coyundas, y echemos de nosotros sus cuerdas.",
+      "bibleReference": "Salmos 2:3",
+      "answers": [
+        {
+          "text": "Edificar un monte santo",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartirse los términos de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Romper sus coyundas y echar de sí sus cuerdas",
+          "isCorrect": true
+        },
+        {
+          "text": "Juntar sus ejércitos contra Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hará el que mora en los cielos ante ellos?",
+      "explanation": "Salmos 2:4 dice que el que mora en los cielos se reirá, y que el Señor se burlará de ellos.",
+      "bibleReference": "Salmos 2:4",
+      "answers": [
+        {
+          "text": "Callará para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Les dará su heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Descenderá a la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Se reirá",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice haber puesto su rey?",
+      "explanation": "Salmos 2:6 dice: Yo empero he puesto mi rey sobre Sión, monte de mi santidad.",
+      "bibleReference": "Salmos 2:6",
+      "answers": [
+        {
+          "text": "Sobre Sión, monte de su santidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre todos los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los términos de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las gentes que se amotinan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el decreto que se publica, ¿qué le ha dicho Jehová?",
+      "explanation": "Salmos 2:7 dice: Jehová me ha dicho: Mi hijo eres tú; yo te engendré hoy.",
+      "bibleReference": "Salmos 2:7",
+      "answers": [
+        {
+          "text": "Siervo mío eres tú",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi hijo eres tú",
+          "isCorrect": true
+        },
+        {
+          "text": "Juez de la tierra eres tú",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi ungido serás mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promete dar por heredad al que se lo pida?",
+      "explanation": "Salmos 2:8 dice: Pídeme, y te daré por heredad las gentes, y por posesión tuya los términos de la tierra.",
+      "bibleReference": "Salmos 2:8",
+      "answers": [
+        {
+          "text": "El trono de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de su santidad",
+          "isCorrect": false
+        },
+        {
+          "text": "Las gentes",
+          "isCorrect": true
+        },
+        {
+          "text": "La corona de los jueces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué los quebrantará, según el versículo 9?",
+      "explanation": "Salmos 2:9 dice que los quebrantará con vara de hierro y que los desmenuzará como vaso de alfarero.",
+      "bibleReference": "Salmos 2:9",
+      "answers": [
+        {
+          "text": "Con fuego del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con espada afilada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con viento y tempestad",
+          "isCorrect": false
+        },
+        {
+          "text": "Con vara de hierro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se manda a los jueces de la tierra?",
+      "explanation": "Salmos 2:10 dice: Y ahora, reyes, entended: admitid corrección, jueces de la tierra.",
+      "bibleReference": "Salmos 2:10",
+      "answers": [
+        {
+          "text": "Que admitan corrección",
+          "isCorrect": true
+        },
+        {
+          "text": "Que repartan la heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que callen delante del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que junten a los pueblos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿quiénes son bienaventurados?",
+      "explanation": "Salmos 2:12 termina diciendo: Bienaventurados todos los que en él confían.",
+      "bibleReference": "Salmos 2:12",
+      "answers": [
+        {
+          "text": "Los que juzgan la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los que en él confían",
+          "isCorrect": true
+        },
+        {
+          "text": "Los que piensan vanidad",
+          "isCorrect": false
+        },
+        {
+          "text": "Los reyes de las gentes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

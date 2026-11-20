@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Esdras 7: la subida de Esdras desde Babilonia y la carta que le dio el rey Artajerjes.",
+  "slug": "ezra-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el comienzo del capítulo, ¿de quién era hijo Esdras?",
+      "explanation": "El texto dice: Esdras, hijo de Seraías, hijo de Azarías, hijo de Hilcías.",
+      "bibleReference": "Esdras 7:1",
+      "answers": [
+        {
+          "text": "De Seraías",
+          "isCorrect": true
+        },
+        {
+          "text": "De Hilcías",
+          "isCorrect": false
+        },
+        {
+          "text": "De Sadoc",
+          "isCorrect": false
+        },
+        {
+          "text": "De Meraioth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién llama el texto \"primer sacerdote\" al final de la genealogía de Esdras?",
+      "explanation": "La lista termina así: hijo de Eleazar, hijo de Aarón, primer sacerdote.",
+      "bibleReference": "Esdras 7:5",
+      "answers": [
+        {
+          "text": "A Eleazar",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aarón",
+          "isCorrect": true
+        },
+        {
+          "text": "A Phinees",
+          "isCorrect": false
+        },
+        {
+          "text": "A Abisue",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Esdras cuando subió de Babilonia?",
+      "explanation": "Dice que este Esdras subió de Babilonia y que era escriba diligente en la ley de Moisés, que Jehová Dios de Israel había dado.",
+      "bibleReference": "Esdras 7:6",
+      "answers": [
+        {
+          "text": "Como capitán del ejército del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Como gobernador de la provincia de Media",
+          "isCorrect": false
+        },
+        {
+          "text": "Como escriba diligente en la ley de Moisés",
+          "isCorrect": true
+        },
+        {
+          "text": "Como copero del rey Artajerjes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué año del rey Artajerjes subieron con Esdras a Jerusalem?",
+      "explanation": "Subieron con él a Jerusalem en el séptimo año del rey Artajerjes, y llegó a Jerusalem en el mes quinto de aquel año.",
+      "bibleReference": "Esdras 7:7-8",
+      "answers": [
+        {
+          "text": "En el año veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año primero",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año treinta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año séptimo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo comenzó la partida de Babilonia?",
+      "explanation": "El día primero del primer mes fue el principio de la partida de Babilonia, y al primero del mes quinto llegó a Jerusalem.",
+      "bibleReference": "Esdras 7:9",
+      "answers": [
+        {
+          "text": "El día primero del primer mes",
+          "isCorrect": true
+        },
+        {
+          "text": "El doce del mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El catorce del mes quinto",
+          "isCorrect": false
+        },
+        {
+          "text": "A los veinte del mes noveno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué había preparado Esdras su corazón?",
+      "explanation": "Esdras había preparado su corazón para inquirir la ley de Jehová, y para hacer y enseñar a Israel mandamientos y juicios.",
+      "bibleReference": "Esdras 7:10",
+      "answers": [
+        {
+          "text": "Para reunir un ejército y defender la ciudad de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Para inquirir la ley de Jehová y para enseñar a Israel mandamientos y juicios",
+          "isCorrect": true
+        },
+        {
+          "text": "Para edificar de nuevo el muro y las puertas de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Para servir como copero delante del rey de Persia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la carta, ¿cuántos consultores del rey enviaban a Esdras?",
+      "explanation": "La carta dice que de parte del rey y de sus siete consultores era enviado a visitar a Judea y a Jerusalem.",
+      "bibleReference": "Esdras 7:14",
+      "answers": [
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "De todo lo que los tesoreros debían dar a Esdras, ¿qué se daba \"sin tasa\"?",
+      "explanation": "La carta señala hasta cien talentos de plata, cien coros de trigo, cien batos de vino y cien batos de aceite; y sal sin tasa.",
+      "bibleReference": "Esdras 7:22",
+      "answers": [
+        {
+          "text": "El vino",
+          "isCorrect": false
+        },
+        {
+          "text": "El aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "El trigo",
+          "isCorrect": false
+        },
+        {
+          "text": "La sal",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prohibía la carta respecto de los sacerdotes, Levitas, cantores, porteros y Nethineos?",
+      "explanation": "La carta dice que a ninguno de ellos se le pudiese imponer tributo, pecho o renta.",
+      "bibleReference": "Esdras 7:24",
+      "answers": [
+        {
+          "text": "Que se les impusiera tributo, pecho o renta",
+          "isCorrect": true
+        },
+        {
+          "text": "Que entrasen en la casa de Dios en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que saliesen de la provincia de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que recibiesen plata de la casa de los tesoros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Esdras después de ser confortado según la mano de su Dios sobre él?",
+      "explanation": "Esdras dice que, confortado según la mano de su Dios sobre él, juntó a los principales de Israel para que subiesen con él.",
+      "bibleReference": "Esdras 7:28",
+      "answers": [
+        {
+          "text": "Escribió una carta al rey Artajerjes pidiendo soldados",
+          "isCorrect": false
+        },
+        {
+          "text": "Juntó a los principales de Israel para que subiesen con él",
+          "isCorrect": true
+        },
+        {
+          "text": "Repartió la plata entre los sacerdotes de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quedó en Babilonia hasta el año siguiente",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

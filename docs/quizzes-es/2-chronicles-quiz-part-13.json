@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre 2 Crónicas 13: el discurso de Abías desde el monte de Semaraim y la batalla contra Jeroboam y todo Israel.",
+  "slug": "2-chronicles-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años reinó Abías en Jerusalem?",
+      "explanation": "El texto dice que Abías reinó tres años en Jerusalem.",
+      "bibleReference": "2 Crónicas 13:2",
+      "answers": [
+        { "text": "Dos años", "isCorrect": false },
+        { "text": "Tres años", "isCorrect": true },
+        { "text": "Dieciocho años", "isCorrect": false },
+        { "text": "Catorce años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la madre de Abías?",
+      "explanation": "El nombre de su madre fue Michâía hija de Uriel de Gabaa.",
+      "bibleReference": "2 Crónicas 13:2",
+      "answers": [
+        { "text": "Michâía hija de Uriel de Gabaa", "isCorrect": true },
+        { "text": "Maachâ hija de Absalom", "isCorrect": false },
+        { "text": "Mahalath hija de Jerimoth", "isCorrect": false },
+        { "text": "Naama Ammonita", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con cuántos hombres ordenó batalla cada uno de los dos reyes?",
+      "explanation": "Abías ordenó batalla con cuatrocientos mil hombres de guerra y Jeroboam con ochocientos mil hombres escogidos.",
+      "bibleReference": "2 Crónicas 13:3",
+      "answers": [
+        { "text": "Abías con ochocientos mil y Jeroboam con cuatrocientos mil", "isCorrect": false },
+        { "text": "Abías con cien mil y Jeroboam con doscientos mil", "isCorrect": false },
+        { "text": "Abías con cuatrocientos mil y Jeroboam con ochocientos mil", "isCorrect": true },
+        { "text": "Abías con quinientos mil y Jeroboam con un millón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde habló Abías a Jeroboam y a todo Israel?",
+      "explanation": "Abías se levantó sobre el monte de Semaraim, que es en los montes de Ephraim, y les habló.",
+      "bibleReference": "2 Crónicas 13:4",
+      "answers": [
+        { "text": "Desde el monte de Ephraim, junto a Bethel", "isCorrect": false },
+        { "text": "Desde la puerta de Jerusalem", "isCorrect": false },
+        { "text": "Desde el valle de Sephata", "isCorrect": false },
+        { "text": "Desde el monte de Semaraim", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según Abías, ¿qué había dado Jehová Dios de Israel a David y a sus hijos?",
+      "explanation": "Abías les recordó que Jehová Dios de Israel dio el reino a David sobre Israel para siempre, a él y a sus hijos, en alianza de sal.",
+      "bibleReference": "2 Crónicas 13:5",
+      "answers": [
+        { "text": "El reino sobre Israel para siempre, en alianza de sal", "isCorrect": true },
+        { "text": "La ciudad de Jerusalem y sus aldeas solamente", "isCorrect": false },
+        { "text": "El sacerdocio junto con el reino de Israel", "isCorrect": false },
+        { "text": "Una alianza por tres generaciones nada más", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según Abías, ¿qué tenían consigo los de Israel por dioses?",
+      "explanation": "Abías les dijo que tenían con ellos los becerros de oro que Jeroboam les hizo por dioses.",
+      "bibleReference": "2 Crónicas 13:8",
+      "answers": [
+        { "text": "Las imágenes que Salomón había hecho", "isCorrect": false },
+        { "text": "Los becerros de oro que Jeroboam les hizo", "isCorrect": true },
+        { "text": "Los altos y los bosques de Ephraim", "isCorrect": false },
+        { "text": "Los ídolos que trajeron de Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según Abías, ¿qué quemaban a Jehová los sacerdotes cada mañana y cada tarde?",
+      "explanation": "Abías dijo que los sacerdotes queman a Jehová los holocaustos cada mañana y cada tarde, y los perfumes aromáticos.",
+      "bibleReference": "2 Crónicas 13:11",
+      "answers": [
+        { "text": "Solo incienso de la mano del rey", "isCorrect": false },
+        { "text": "Las primicias de todos los frutos", "isCorrect": false },
+        { "text": "Las ovejas y los bueyes de todo el pueblo", "isCorrect": false },
+        { "text": "Los holocaustos y los perfumes aromáticos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jeroboam durante la batalla?",
+      "explanation": "Jeroboam hizo girar una emboscada para venir a ellos por la espalda, de modo que la emboscada quedó a espaldas de Judá.",
+      "bibleReference": "2 Crónicas 13:13",
+      "answers": [
+        { "text": "Huyó al monte de Ephraim con su gente", "isCorrect": false },
+        { "text": "Pidió paz a Abías por sus mensajeros", "isCorrect": false },
+        { "text": "Hizo girar una emboscada por la espalda", "isCorrect": true },
+        { "text": "Tocó las trompetas contra Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando Judá vio que tenía batalla delante y a las espaldas, ¿qué hicieron los sacerdotes?",
+      "explanation": "Los de Judá clamaron a Jehová y los sacerdotes tocaron las trompetas.",
+      "bibleReference": "2 Crónicas 13:14",
+      "answers": [
+        { "text": "Tocaron las trompetas", "isCorrect": true },
+        { "text": "Llevaron el arca al campo", "isCorrect": false },
+        { "text": "Ofrecieron un holocausto", "isCorrect": false },
+        { "text": "Huyeron a Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres escogidos de Israel cayeron heridos?",
+      "explanation": "El texto dice que cayeron heridos de Israel quinientos mil hombres escogidos.",
+      "bibleReference": "2 Crónicas 13:17",
+      "answers": [
+        { "text": "Cien mil", "isCorrect": false },
+        { "text": "Doscientos mil", "isCorrect": false },
+        { "text": "Ochocientos mil", "isCorrect": false },
+        { "text": "Quinientos mil", "isCorrect": true }
+      ]
+    }
+  ]
+}

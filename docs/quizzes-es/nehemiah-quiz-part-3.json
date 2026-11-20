@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Nehemías 3: las puertas y los tramos del muro de Jerusalem y los que trabajaron en cada parte.",
+  "slug": "nehemiah-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué puerta edificaron Eliasib el gran sacerdote y sus hermanos los sacerdotes?",
+      "explanation": "Eliasib el gran sacerdote se levantó con sus hermanos los sacerdotes y edificaron la puerta de las Ovejas.",
+      "bibleReference": "Nehemías 3:1",
+      "answers": [
+        {
+          "text": "La puerta de las Ovejas",
+          "isCorrect": true
+        },
+        {
+          "text": "La puerta del Pescado",
+          "isCorrect": false
+        },
+        {
+          "text": "La puerta del Valle",
+          "isCorrect": false
+        },
+        {
+          "text": "La puerta Vieja",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta qué torres aparejaron el muro los sacerdotes?",
+      "explanation": "Aparejaron y levantaron sus puertas hasta la torre de Meah, y la aparejaron hasta la torre de Hananeel.",
+      "bibleReference": "Nehemías 3:1",
+      "answers": [
+        {
+          "text": "Hasta la torre de los Hornos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la torre de Meah y la torre de Hananeel",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta la torre alta de la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la grande torre que sobresale",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes edificaron junto a lo que habían edificado los sacerdotes?",
+      "explanation": "Después de la puerta de las Ovejas, junto a ella edificaron los varones de Jericó, y luego edificó Zachûr hijo de Imri.",
+      "bibleReference": "Nehemías 3:1-2",
+      "answers": [
+        {
+          "text": "Los Tecoitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Senaa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los varones de Jericó",
+          "isCorrect": true
+        },
+        {
+          "text": "Los moradores de Zanoa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes edificaron la puerta del Pescado?",
+      "explanation": "Los hijos de Senaa edificaron la puerta del Pescado; ellos la enmaderaron y levantaron sus puertas, con sus cerraduras y sus cerrojos.",
+      "bibleReference": "Nehemías 3:3",
+      "answers": [
+        {
+          "text": "Los hijos de Imri",
+          "isCorrect": false
+        },
+        {
+          "text": "Los plateros",
+          "isCorrect": false
+        },
+        {
+          "text": "Los varones de la campiña",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Senaa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de los grandes de los Tecoitas?",
+      "explanation": "Los Tecoitas restauraron su parte, mas sus grandes no prestaron su cerviz a la obra de su Señor.",
+      "bibleReference": "Nehemías 3:5",
+      "answers": [
+        {
+          "text": "Que no prestaron su cerviz a la obra de su Señor",
+          "isCorrect": true
+        },
+        {
+          "text": "Que restauraron dos medidas del muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que levantaron las puertas con sus cerrojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ayudaron a los sacerdotes en la obra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Jedaías hijo de Harumaph, ¿frente a qué restauró?",
+      "explanation": "El texto dice que Jedaías hijo de Harumaph restauró junto a ellos y frente a su casa.",
+      "bibleReference": "Nehemías 3:10",
+      "answers": [
+        {
+          "text": "Frente a la torre de los Hornos",
+          "isCorrect": false
+        },
+        {
+          "text": "Frente a su casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Frente al estanque del Rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Frente a la puerta oriental",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quiénes restauró Sallum hijo de Lohes, príncipe de la mitad de la región de Jerusalem?",
+      "explanation": "El texto dice que Sallum hijo de Lohes restauró él con sus hijas.",
+      "bibleReference": "Nehemías 3:12",
+      "answers": [
+        {
+          "text": "Con sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sus hijas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con los varones de Gabaón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos codos del muro restauraron Hanún y los moradores de Zanoa, además de la puerta del Valle?",
+      "explanation": "Restauraron la puerta del Valle y mil codos en el muro hasta la puerta del Muladar.",
+      "bibleReference": "Nehemías 3:13",
+      "answers": [
+        {
+          "text": "Sesenta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quinientos codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil codos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estuvieron los Nethineos?",
+      "explanation": "El texto anota que los Nethineos estuvieron en Ophel hasta enfrente de la puerta de las Aguas al oriente, y la torre que sobresalía.",
+      "bibleReference": "Nehemías 3:26",
+      "answers": [
+        {
+          "text": "En Ophel",
+          "isCorrect": true
+        },
+        {
+          "text": "En la casa de los Valientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al estanque del Rey",
+          "isCorrect": false
+        },
+        {
+          "text": "En la sala de la esquina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes restauraron entre la sala de la esquina y la puerta de las Ovejas?",
+      "explanation": "El capítulo termina diciendo que entre la sala de la esquina hasta la puerta de las Ovejas restauraron los plateros y los tratantes.",
+      "bibleReference": "Nehemías 3:32",
+      "answers": [
+        {
+          "text": "Los sacerdotes y los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los plateros y los tratantes",
+          "isCorrect": true
+        },
+        {
+          "text": "Los porteros y los cantores",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Tecoitas y los Gabaonitas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

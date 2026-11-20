@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Nehemías 5: el clamor del pueblo por el hambre y la usura, la reprensión de Nehemías y su manera de gobernar.",
+  "slug": "nehemiah-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Contra quiénes era el grande clamor del pueblo y de sus mujeres?",
+      "explanation": "El capítulo comienza diciendo que fue grande el clamor del pueblo y de sus mujeres contra los Judíos sus hermanos.",
+      "bibleReference": "Nehemías 5:1",
+      "answers": [
+        {
+          "text": "Contra los Judíos sus hermanos",
+          "isCorrect": true
+        },
+        {
+          "text": "Contra Sanballat y Tobías",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra el rey Artajerjes",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra los sacerdotes y los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué habían empeñado algunos para comprar grano en el hambre?",
+      "explanation": "Había quienes decían: Hemos empeñado nuestras tierras, y nuestras viñas, y nuestras casas, para comprar grano en el hambre.",
+      "bibleReference": "Nehemías 5:3",
+      "answers": [
+        {
+          "text": "Sus espadas y sus lanzas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus tierras, sus viñas y sus casas",
+          "isCorrect": true
+        },
+        {
+          "text": "Las vestiduras de los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vasos de la casa de Dios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué habían tomado prestado dinero otros del pueblo?",
+      "explanation": "Había quienes decían: Hemos tomado prestado dinero para el tributo del rey, sobre nuestras tierras y viñas.",
+      "bibleReference": "Nehemías 5:4",
+      "answers": [
+        {
+          "text": "Para comprar madera para el muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Para pagar a los cantores del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para el tributo del rey",
+          "isCorrect": true
+        },
+        {
+          "text": "Para el viaje de vuelta a Babilonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué reprendió Nehemías a los principales y a los magistrados?",
+      "explanation": "Se enojó en gran manera y los reprendió, diciéndoles: ¿Tomáis cada uno usura de vuestros hermanos?",
+      "bibleReference": "Nehemías 5:7",
+      "answers": [
+        {
+          "text": "De dejar la obra del muro",
+          "isCorrect": false
+        },
+        {
+          "text": "De tomar mujeres extranjeras",
+          "isCorrect": false
+        },
+        {
+          "text": "De no pagar el tributo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "De tomar usura de sus hermanos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué parte del dinero y del grano les pidió Nehemías que devolviesen?",
+      "explanation": "Les rogó que devolviesen aquel día sus tierras, sus viñas, sus olivares y sus casas, y la centésima parte del dinero y grano, del vino y del aceite.",
+      "bibleReference": "Nehemías 5:11",
+      "answers": [
+        {
+          "text": "La centésima parte",
+          "isCorrect": true
+        },
+        {
+          "text": "La décima parte",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "La cuarta parte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió toda la congregación a las palabras de Nehemías?",
+      "explanation": "Toda la congregación respondió: ¡Amén! Y alabaron a Jehová; y el pueblo hizo conforme a esto.",
+      "bibleReference": "Nehemías 5:13",
+      "answers": [
+        {
+          "text": "Guardaron silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Respondieron ¡Amén! y alabaron a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Pidieron tiempo para pensarlo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se fueron cada uno a su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Nehemías como señal al pedir que Dios sacudiese al que no cumpliese esto?",
+      "explanation": "Dice: Además sacudí mi vestido, y dije: Así sacuda Dios de su casa y de su trabajo a todo hombre que no cumpliere esto.",
+      "bibleReference": "Nehemías 5:13",
+      "answers": [
+        {
+          "text": "Rasgó su manto",
+          "isCorrect": false
+        },
+        {
+          "text": "Tocó la trompeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacudió su vestido",
+          "isCorrect": true
+        },
+        {
+          "text": "Levantó sus manos al cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años fue Nehemías gobernador sin comer el pan del gobernador?",
+      "explanation": "Dice que desde el año veinte del rey Artajerjes hasta el año treinta y dos, doce años, ni él ni sus hermanos comieron el pan del gobernador.",
+      "bibleReference": "Nehemías 5:14",
+      "answers": [
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce años",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tomaban del pueblo los gobernadores anteriores por el pan y por el vino?",
+      "explanation": "Dice que los primeros gobernadores cargaron al pueblo y tomaron de ellos por el pan y por el vino sobre cuarenta siclos de plata.",
+      "bibleReference": "Nehemías 5:15",
+      "answers": [
+        {
+          "text": "Sobre cuarenta siclos de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Cien talentos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil dracmas de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "La décima parte del grano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se aderezaba cada día para la mesa de Nehemías?",
+      "explanation": "Dice que lo que se aderezaba para cada día era un buey, seis ovejas escogidas, y aves también se aparejaban para él.",
+      "bibleReference": "Nehemías 5:18",
+      "answers": [
+        {
+          "text": "Dos becerros y doce corderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un buey, seis ovejas escogidas y aves",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente pan y agua del pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce machos de cabrío y aceite",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

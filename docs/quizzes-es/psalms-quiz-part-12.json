@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Salmos 12: los labios lisonjeros, la respuesta de Jehová al gemido de los menesterosos y sus palabras limpias.",
+  "slug": "psalms-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el comienzo del salmo, ¿quiénes se han acabado de entre los hijos de los hombres?",
+      "explanation": "El verso clama: Salva, oh Jehová, porque se acabaron los misericordiosos, porque se han acabado los fieles de entre los hijos de los hombres.",
+      "bibleReference": "Salmos 12:1",
+      "answers": [
+        { "text": "Los misericordiosos y los fieles", "isCorrect": true },
+        { "text": "Los sabios y los ancianos", "isCorrect": false },
+        { "text": "Los profetas y los jueces", "isCorrect": false },
+        { "text": "Los reyes y los príncipes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo habla cada uno con su prójimo, según este salmo?",
+      "explanation": "El verso dice que cada uno habla mentira con su prójimo, con labios lisonjeros y con corazón doble.",
+      "bibleReference": "Salmos 12:2",
+      "answers": [
+        { "text": "Habla verdad en su corazón", "isCorrect": false },
+        { "text": "Habla mentira con labios lisonjeros", "isCorrect": true },
+        { "text": "Habla palabras de paz y consuelo", "isCorrect": false },
+        { "text": "Calla y no responde nada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que destruirá Jehová?",
+      "explanation": "El verso dice que Jehová destruirá todos los labios lisonjeros y la lengua que habla grandezas.",
+      "bibleReference": "Salmos 12:3",
+      "answers": [
+        { "text": "Todos los altares del monte", "isCorrect": false },
+        { "text": "Las puertas de la ciudad", "isCorrect": false },
+        { "text": "Todos los labios lisonjeros", "isCorrect": true },
+        { "text": "Los carros de los enemigos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los que hablan grandezas?",
+      "explanation": "El verso dice que dijeron: Por nuestra lengua prevaleceremos; nuestros labios están con nosotros; ¿quién nos es señor?",
+      "bibleReference": "Salmos 12:4",
+      "answers": [
+        { "text": "Por nuestra lengua prevaleceremos", "isCorrect": true },
+        { "text": "Por nuestra espada venceremos", "isCorrect": false },
+        { "text": "Por nuestros carros seremos salvos", "isCorrect": false },
+        { "text": "Por nuestro oro compraremos la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué dice Jehová que ahora se levantará?",
+      "explanation": "El verso dice: Por la opresión de los pobres, por el gemido de los menesterosos, ahora me levantaré, dice Jehová.",
+      "bibleReference": "Salmos 12:5",
+      "answers": [
+        { "text": "Por el clamor de los sacerdotes del templo", "isCorrect": false },
+        { "text": "Por la sequía que vino sobre la tierra", "isCorrect": false },
+        { "text": "Por la guerra de las gentes contra Sión", "isCorrect": false },
+        { "text": "Por la opresión y el gemido de los pobres", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De quién dice Jehová que pondrá en salvo a los pobres?",
+      "explanation": "El verso dice que los pondrá en salvo del que contra ellos se engríe.",
+      "bibleReference": "Salmos 12:5",
+      "answers": [
+        { "text": "De la espada del extranjero", "isCorrect": false },
+        { "text": "Del que contra ellos se engríe", "isCorrect": true },
+        { "text": "De la mano del hambre", "isCorrect": false },
+        { "text": "Del juicio de los jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el salmo las palabras de Jehová?",
+      "explanation": "El verso dice: Las palabras de Jehová, palabras limpias.",
+      "bibleReference": "Salmos 12:6",
+      "answers": [
+        { "text": "Palabras ocultas", "isCorrect": false },
+        { "text": "Palabras duras", "isCorrect": false },
+        { "text": "Palabras limpias", "isCorrect": true },
+        { "text": "Palabras breves", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces fue purificada la plata con que se comparan las palabras de Jehová?",
+      "explanation": "El verso las compara con plata refinada en horno de tierra, purificada siete veces.",
+      "bibleReference": "Salmos 12:6",
+      "answers": [
+        { "text": "Tres veces", "isCorrect": false },
+        { "text": "Diez veces", "isCorrect": false },
+        { "text": "Setenta veces", "isCorrect": false },
+        { "text": "Siete veces", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que haga Jehová con los suyos?",
+      "explanation": "El verso pide a Jehová que guarde a los suyos y los guarde para siempre de esta generación.",
+      "bibleReference": "Salmos 12:7",
+      "answers": [
+        { "text": "Guardarlos para siempre de esta generación", "isCorrect": true },
+        { "text": "Llevarlos a una tierra que mana leche", "isCorrect": false },
+        { "text": "Darles pan en medio del desierto", "isCorrect": false },
+        { "text": "Edificarles casas en la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes son exaltados mientras los malos andan cercando?",
+      "explanation": "El verso dice que los malos andan cercando mientras son exaltados los más viles de los hijos de los hombres.",
+      "bibleReference": "Salmos 12:8",
+      "answers": [
+        { "text": "Los justos de la tierra", "isCorrect": false },
+        { "text": "Los más viles", "isCorrect": true },
+        { "text": "Los pobres y menesterosos", "isCorrect": false },
+        { "text": "Los sacerdotes del templo", "isCorrect": false }
+      ]
+    }
+  ]
+}

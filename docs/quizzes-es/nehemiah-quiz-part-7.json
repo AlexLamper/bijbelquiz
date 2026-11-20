@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Nehemías 7: la guardia de las puertas, el libro de la genealogía y la cuenta de los que subieron de la cautividad.",
+  "slug": "nehemiah-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Después de edificar el muro y asentar las puertas, ¿quiénes fueron señalados?",
+      "explanation": "Luego que el muro fue edificado y asentó las puertas, fueron señalados porteros y cantores y Levitas.",
+      "bibleReference": "Nehemías 7:1",
+      "answers": [
+        {
+          "text": "Porteros, cantores y Levitas",
+          "isCorrect": true
+        },
+        {
+          "text": "Jueces y gobernadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Capitanes del ejército del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Tesoreros y escribas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dio Nehemías sus órdenes acerca de las puertas de Jerusalem?",
+      "explanation": "Mandó a su hermano Hanani y a Hananías, príncipe del palacio de Jerusalem, y les dijo cómo habían de guardarse las puertas.",
+      "bibleReference": "Nehemías 7:2-3",
+      "answers": [
+        {
+          "text": "A Esdras el sacerdote y a los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "A su hermano Hanani y a Hananías, príncipe del palacio",
+          "isCorrect": true
+        },
+        {
+          "text": "A Zorobabel y a Jesuá",
+          "isCorrect": false
+        },
+        {
+          "text": "A los magistrados de Judá y de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo no debían abrirse las puertas de Jerusalem?",
+      "explanation": "Les dijo que no se abriesen las puertas de Jerusalem hasta que calentase el sol, y señaló guardas de los moradores de la ciudad.",
+      "bibleReference": "Nehemías 7:3",
+      "answers": [
+        {
+          "text": "Hasta el sacrificio de la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta salir las estrellas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que calentase el sol",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta la subida del alba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de la ciudad y de la gente que había en ella?",
+      "explanation": "Dice que la ciudad era espaciosa y grande, pero con poco pueblo dentro de ella, y que no había casas reedificadas.",
+      "bibleReference": "Nehemías 7:4",
+      "answers": [
+        {
+          "text": "Que estaba llena de moradores y de casas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus casas ya estaban todas reedificadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era pequeña, pero muy bien poblada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era espaciosa y grande, pero con poco pueblo dentro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué halló Nehemías cuando quiso que el pueblo fuese empadronado?",
+      "explanation": "Dios puso en su corazón que juntase a los principales, a los magistrados y al pueblo para ser empadronados, y halló el libro de la genealogía de los que habían subido antes.",
+      "bibleReference": "Nehemías 7:5",
+      "answers": [
+        {
+          "text": "El libro de la genealogía",
+          "isCorrect": true
+        },
+        {
+          "text": "Las cartas del rey Artajerjes",
+          "isCorrect": false
+        },
+        {
+          "text": "El libro de la ley de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Los despachos de los gobernadores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el primer nombre de la lista, ¿con quién vinieron los que subieron de la cautividad?",
+      "explanation": "El texto dice que vinieron con Zorobabel, Jesuá, Nehemías, Azarías, Raamías y los demás que allí se nombran.",
+      "bibleReference": "Nehemías 7:7",
+      "answers": [
+        {
+          "text": "Con Esdras",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Zorobabel",
+          "isCorrect": true
+        },
+        {
+          "text": "Con Artajerjes",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Nabucodonosor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran los hijos de Paros?",
+      "explanation": "La lista dice: Los hijos de Paros, dos mil ciento setenta y dos.",
+      "bibleReference": "Nehemías 7:8",
+      "answers": [
+        {
+          "text": "Mil doscientos cincuenta y cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil seiscientos veintidós",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil ciento setenta y dos",
+          "isCorrect": true
+        },
+        {
+          "text": "Trescientos setenta y dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió con los sacerdotes cuyo registro de genealogías no se halló?",
+      "explanation": "Buscaron su registro de genealogías y no se halló, y fueron echados del sacerdocio.",
+      "bibleReference": "Nehemías 7:64",
+      "answers": [
+        {
+          "text": "Fueron puestos sobre los Nethineos",
+          "isCorrect": false
+        },
+        {
+          "text": "Recibieron doble porción de las ofrendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron enviados de vuelta a Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron echados del sacerdocio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos componían la congregación toda junta?",
+      "explanation": "El texto dice que la congregación toda junta era de cuarenta y dos mil trescientos y sesenta.",
+      "bibleReference": "Nehemías 7:66",
+      "answers": [
+        {
+          "text": "Cuarenta y dos mil trescientos sesenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete mil trescientos treinta y siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce mil quinientos cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta mil seiscientos veinte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas vestiduras sacerdotales dio el Tirsatha para el tesoro?",
+      "explanation": "El Tirsatha dio para el tesoro mil dracmas de oro, cincuenta tazones y quinientas treinta vestiduras sacerdotales.",
+      "bibleReference": "Nehemías 7:70",
+      "answers": [
+        {
+          "text": "Sesenta y siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Quinientas treinta",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta y cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento veintiocho",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

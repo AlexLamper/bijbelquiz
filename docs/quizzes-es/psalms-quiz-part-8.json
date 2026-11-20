@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Salmos 8: la gloria sobre los cielos, la pregunta sobre el hombre y todo lo que está bajo sus pies.",
+  "slug": "psalms-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿dónde ha puesto Jehová su gloria?",
+      "explanation": "Salmos 8:1 dice: Oh Jehová, Señor nuestro, cuán grande es tu nombre en toda la tierra, que has puesto tu gloria sobre los cielos.",
+      "bibleReference": "Salmos 8:1",
+      "answers": [
+        {
+          "text": "Sobre los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los cielos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De la boca de quiénes fundó la fortaleza?",
+      "explanation": "Salmos 8:2 dice que de la boca de los chiquitos y de los que maman fundó la fortaleza.",
+      "bibleReference": "Salmos 8:2",
+      "answers": [
+        {
+          "text": "De los príncipes y de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "De los justos y de los rectos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los chiquitos y de los que maman",
+          "isCorrect": true
+        },
+        {
+          "text": "De los ángeles y de los cielos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué fundó esa fortaleza, a causa de sus enemigos?",
+      "explanation": "Salmos 8:2 dice que fue para hacer cesar al enemigo y al que se venga.",
+      "bibleReference": "Salmos 8:2",
+      "answers": [
+        {
+          "text": "Para hacer cesar al enemigo y al que se venga",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que los pueblos trajesen sus dádivas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para dar reposo a los que aman su nombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que la luna y las estrellas lo alabasen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué dice que son obra los cielos que contempla?",
+      "explanation": "Salmos 8:3 habla de los cielos como obra de los dedos de Dios, y de la luna y las estrellas que él formó.",
+      "bibleReference": "Salmos 8:3",
+      "answers": [
+        {
+          "text": "De su voz",
+          "isCorrect": false
+        },
+        {
+          "text": "De su aliento",
+          "isCorrect": false
+        },
+        {
+          "text": "De su palabra",
+          "isCorrect": false
+        },
+        {
+          "text": "De sus dedos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace al mirar los cielos, la luna y las estrellas?",
+      "explanation": "Salmos 8:4 dice: ¿Qué es el hombre, para que tengas de él memoria, y el hijo del hombre, que lo visites?",
+      "bibleReference": "Salmos 8:4",
+      "answers": [
+        {
+          "text": "Qué es el hombre, para que Dios tenga de él memoria",
+          "isCorrect": true
+        },
+        {
+          "text": "Quién puede contar las estrellas que Dios formó",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién subirá al monte de la santidad de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuándo visitará Dios a los pueblos de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Poco menor que quiénes ha hecho Dios al hombre?",
+      "explanation": "Salmos 8:5 dice que le ha hecho poco menor que los ángeles.",
+      "bibleReference": "Salmos 8:5",
+      "answers": [
+        {
+          "text": "Que los cielos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los ángeles",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los justos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué lo ha coronado, según el mismo versículo?",
+      "explanation": "Salmos 8:5 dice que lo coronó de gloria y de lustre.",
+      "bibleReference": "Salmos 8:5",
+      "answers": [
+        {
+          "text": "De paz y de reposo",
+          "isCorrect": false
+        },
+        {
+          "text": "De temor y temblor",
+          "isCorrect": false
+        },
+        {
+          "text": "De gloria y de lustre",
+          "isCorrect": true
+        },
+        {
+          "text": "De fuerza y de salud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué lo hizo enseñorear?",
+      "explanation": "Salmos 8:6 dice que lo hizo enseñorear de las obras de sus manos y que todo lo puso debajo de sus pies.",
+      "bibleReference": "Salmos 8:6",
+      "answers": [
+        {
+          "text": "De las obras de las manos de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "De los pueblos de toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "De los senderos de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "De la luna y de las estrellas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según los versículos 7 y 8, ¿qué puso Dios debajo de sus pies?",
+      "explanation": "El texto nombra ovejas y bueyes, las bestias del campo, las aves de los cielos y los peces de la mar.",
+      "bibleReference": "Salmos 8:7-8",
+      "answers": [
+        {
+          "text": "Los montes y los arroyos de aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ovejas, las aves y los peces",
+          "isCorrect": true
+        },
+        {
+          "text": "El sol, la luna y las estrellas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los reyes y los jueces de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras termina el salmo?",
+      "explanation": "Salmos 8:9 repite: Oh Jehová, Señor nuestro, cuán grande es tu nombre en toda la tierra.",
+      "bibleReference": "Salmos 8:9",
+      "answers": [
+        {
+          "text": "Con el nombre de los que maman",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una pregunta sobre el hombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una petición por sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la grandeza del nombre de Jehová",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

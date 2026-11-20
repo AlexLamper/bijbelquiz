@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Esdras 1: el pregón de Ciro rey de Persia, los que se levantaron para subir á Jerusalem y los vasos de la casa de Jehová.",
+  "slug": "ezra-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿El primer año de qué rey excitó Jehová su espíritu, para que se cumpliese la palabra de Jehová por boca de Jeremías?",
+      "explanation": "En el primer año de Ciro rey de Persia, Jehová excitó su espíritu y el rey hizo pasar pregón por todo su reino.",
+      "bibleReference": "Esdras 1:1",
+      "answers": [
+        {
+          "text": "Darío rey de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Artajerjes rey de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Nabucodonosor rey de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciro rey de Persia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Ciro que Jehová Dios de los cielos le había mandado?",
+      "explanation": "Ciro dijo que Jehová Dios de los cielos le había dado todos los reinos de la tierra y le había mandado edificarle casa en Jerusalem, que está en Judá.",
+      "bibleReference": "Esdras 1:2",
+      "answers": [
+        {
+          "text": "Que le edificase casa en Jerusalem, que está en Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Que juntase los vasos de plata y de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hiciese guerra á la ciudad de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que contase todo el pueblo de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía hacer, según el pregón, cualquiera del pueblo de Jehová?",
+      "explanation": "El pregón decía que quien fuese de su pueblo subiese á Jerusalem, que está en Judá, y edificase la casa á Jehová Dios de Israel.",
+      "bibleReference": "Esdras 1:3",
+      "answers": [
+        {
+          "text": "Quedarse en Babilonia y orar allí á su Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Subir á Jerusalem y edificar la casa á Jehová Dios de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Traer tributo al rey de Persia cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Buscar su registro de genealogías en Babilonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué debían ayudar los hombres del lugar á quien hubiere quedado?",
+      "explanation": "Los hombres de su lugar le habían de ayudar con plata, oro, hacienda y bestias, con dones voluntarios para la casa de Dios que está en Jerusalem.",
+      "bibleReference": "Esdras 1:4",
+      "answers": [
+        {
+          "text": "Con armas, carros y hombres de guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente con comida y bebida para el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con plata, oro, hacienda y bestias, y con dones voluntarios",
+          "isCorrect": true
+        },
+        {
+          "text": "Con siervos, siervas y cantores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes se levantaron para subir á edificar la casa de Jehová?",
+      "explanation": "Se levantaron los cabezas de las familias de Judá y de Benjamín, y los sacerdotes y Levitas, todos aquellos cuyo espíritu despertó Dios.",
+      "bibleReference": "Esdras 1:5",
+      "answers": [
+        {
+          "text": "Los príncipes de Persia y los siervos del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente los cantores y los porteros de las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las diez tribus de Israel que estaban en Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Los cabezas de las familias de Judá y de Benjamín, y los sacerdotes y Levitas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron todos los que estaban en sus alrededores?",
+      "explanation": "Confortaron las manos de ellos con vasos de plata y de oro, con hacienda y bestias y con cosas preciosas, á más de lo que se ofreció voluntariamente.",
+      "bibleReference": "Esdras 1:6",
+      "answers": [
+        {
+          "text": "Confortaron sus manos con vasos de plata y de oro y cosas preciosas",
+          "isCorrect": true
+        },
+        {
+          "text": "Los detuvieron por fuerza y no los dejaron subir",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribieron acusaciones contra ellos al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Les pidieron tributo y rentas para el rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sacó el rey Ciro, y dónde los había puesto Nabucodonosor?",
+      "explanation": "El rey Ciro sacó los vasos de la casa de Jehová, que Nabucodonosor había traspasado de Jerusalem y puesto en la casa de sus dioses.",
+      "bibleReference": "Esdras 1:7",
+      "answers": [
+        {
+          "text": "Las piedras del muro de Jerusalem, que estaban en Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vasos de la casa de Jehová, que estaban en la casa de sus dioses",
+          "isCorrect": true
+        },
+        {
+          "text": "El arca del pacto, que estaba escondida en Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Los libros de las historias de los reyes de Persia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por mano de quién los sacó Ciro, y á quién fueron dados por cuenta?",
+      "explanation": "Ciro los sacó por mano de Mitrídates tesorero, el cual los dió por cuenta á Sesbassar príncipe de Judá.",
+      "bibleReference": "Esdras 1:8",
+      "answers": [
+        {
+          "text": "Por mano de Zorobabel, á Jesuá hijo de Josadec",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mano de Rehum canciller, á Simsai secretario",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mano de Mitrídates tesorero, á Sesbassar príncipe de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Por mano de los Levitas, á los cabezas de los padres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos tazones de oro y cuántos tazones de plata se cuentan en la lista?",
+      "explanation": "La cuenta comienza con treinta tazones de oro, mil tazones de plata y veinte y nueve cuchillos.",
+      "bibleReference": "Esdras 1:9",
+      "answers": [
+        {
+          "text": "Mil tazones de oro y treinta tazones de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien tazones de oro y cien tazones de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y nueve tazones de oro y mil tazones de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta tazones de oro y mil tazones de plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran en total los vasos de oro y de plata?",
+      "explanation": "Todos los vasos de oro y de plata eran cinco mil y cuatrocientos, y todos los hizo llevar Sesbassar á Jerusalem.",
+      "bibleReference": "Esdras 1:11",
+      "answers": [
+        {
+          "text": "Cinco mil y cuatrocientos",
+          "isCorrect": true
+        },
+        {
+          "text": "Mil y cuatrocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco mil y cuarenta",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

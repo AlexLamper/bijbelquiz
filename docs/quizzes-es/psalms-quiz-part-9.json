@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Salmos 9: la alabanza por el juicio de Jehová, su trono dispuesto para juicio y el refugio del pobre.",
+  "slug": "psalms-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué dice el salmista que alabará a Jehová?",
+      "explanation": "El verso dice: Te alabaré, oh Jehová, con todo mi corazón; contaré todas tus maravillas.",
+      "bibleReference": "Salmos 9:1",
+      "answers": [
+        { "text": "Con todo su corazón", "isCorrect": true },
+        { "text": "Con instrumentos de diez cuerdas", "isCorrect": false },
+        { "text": "Con sacrificios de becerros", "isCorrect": false },
+        { "text": "Con el sonido de la trompeta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que les sucederá a sus enemigos, que fueron vueltos atrás?",
+      "explanation": "El texto dice que, por haber sido vueltos atrás sus enemigos, caerán y perecerán delante de Jehová.",
+      "bibleReference": "Salmos 9:3",
+      "answers": [
+        { "text": "Serán llevados cautivos lejos", "isCorrect": false },
+        { "text": "Se convertirán y le servirán", "isCorrect": false },
+        { "text": "Caerán y perecerán delante de él", "isCorrect": true },
+        { "text": "Edificarán ciudades nuevas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por cuánto tiempo quedó raído el nombre de las gentes que Jehová reprendió?",
+      "explanation": "El verso dice que Jehová reprendió gentes, destruyó al malo y rayó su nombre para siempre jamás.",
+      "bibleReference": "Salmos 9:5",
+      "answers": [
+        { "text": "Por cuarenta años", "isCorrect": false },
+        { "text": "Para siempre jamás", "isCorrect": true },
+        { "text": "Por tres generaciones", "isCorrect": false },
+        { "text": "Hasta el tiempo señalado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pereció junto con las ciudades que el enemigo derribó?",
+      "explanation": "El verso dice que la memoria de aquellas ciudades pereció con ellas.",
+      "bibleReference": "Salmos 9:6",
+      "answers": [
+        { "text": "Sus muros", "isCorrect": false },
+        { "text": "Sus reyes", "isCorrect": false },
+        { "text": "Sus riquezas", "isCorrect": false },
+        { "text": "Su memoria", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Para qué ha dispuesto Jehová su trono, según este salmo?",
+      "explanation": "El verso dice que Jehová permanecerá para siempre y que ha dispuesto su trono para juicio.",
+      "bibleReference": "Salmos 9:7",
+      "answers": [
+        { "text": "Para juicio", "isCorrect": true },
+        { "text": "Para la guerra", "isCorrect": false },
+        { "text": "Para el reposo", "isCorrect": false },
+        { "text": "Para la fiesta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué será Jehová para el pobre, según este salmo?",
+      "explanation": "El verso dice que Jehová será refugio al pobre, refugio para el tiempo de angustia.",
+      "bibleReference": "Salmos 9:9",
+      "answers": [
+        { "text": "Un muro de fuego alrededor", "isCorrect": false },
+        { "text": "Refugio en el tiempo de angustia", "isCorrect": true },
+        { "text": "Una lámpara en la noche", "isCorrect": false },
+        { "text": "Un pastor en el desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes confiarán en Jehová, según este salmo?",
+      "explanation": "El verso dice que en él confiarán los que conocen su nombre, porque no desamparó a los que le buscaron.",
+      "bibleReference": "Salmos 9:10",
+      "answers": [
+        { "text": "Los que habitan en los montes", "isCorrect": false },
+        { "text": "Los príncipes de las gentes", "isCorrect": false },
+        { "text": "Los que tienen muchas riquezas", "isCorrect": false },
+        { "text": "Los que conocen su nombre", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmo que habita Jehová, a quien se llama a cantar?",
+      "explanation": "El verso dice: Cantad a Jehová, que habita en Sión; noticiad en los pueblos sus obras.",
+      "bibleReference": "Salmos 9:11",
+      "answers": [
+        { "text": "En Hebrón", "isCorrect": false },
+        { "text": "En Silo", "isCorrect": false },
+        { "text": "En Sión", "isCorrect": true },
+        { "text": "En Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué se hundieron las gentes, según este salmo?",
+      "explanation": "El verso dice que las gentes se hundieron en la fosa que hicieron, y que su pie fue tomado en la red que escondieron.",
+      "bibleReference": "Salmos 9:15",
+      "answers": [
+        { "text": "En el mar de las cañas", "isCorrect": false },
+        { "text": "En la fosa que hicieron", "isCorrect": true },
+        { "text": "En el torrente del valle", "isCorrect": false },
+        { "text": "En el pozo de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que conozcan las gentes al final del salmo?",
+      "explanation": "El verso pide a Jehová que ponga temor en ellos, para que las gentes conozcan que no son más que hombres.",
+      "bibleReference": "Salmos 9:20",
+      "answers": [
+        { "text": "Que no son más que hombres", "isCorrect": true },
+        { "text": "Que la tierra es de Jehová", "isCorrect": false },
+        { "text": "Que el rey es justo", "isCorrect": false },
+        { "text": "Que Sión es inconmovible", "isCorrect": false }
+      ]
+    }
+  ]
+}

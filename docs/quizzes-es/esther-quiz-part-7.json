@@ -1,0 +1,242 @@
+{
+  "title": "Ester Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Ester 7: el segundo convite del vino, la petición de la reina y el fin de Amán.",
+  "slug": "esther-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué hicieron el rey y Amán con la reina Esther?",
+      "explanation": "Ester 7:1 dice que el rey vino con Amán a beber con la reina Esther.",
+      "bibleReference": "Ester 7:1",
+      "answers": [
+        {
+          "text": "Vinieron a beber con ella",
+          "isCorrect": true
+        },
+        {
+          "text": "Salieron con ella al huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "La llevaron ante los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Le enviaron cartas por correos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta qué parte del reino dijo el rey que se haría la petición de Esther?",
+      "explanation": "En el convite del vino el rey le dijo que, aunque fuera la mitad del reino, se pondría por obra.",
+      "bibleReference": "Ester 7:2",
+      "answers": [
+        {
+          "text": "La tercera parte del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "La décima parte del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad del reino",
+          "isCorrect": true
+        },
+        {
+          "text": "Una sola de las provincias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió la reina Esther al rey como su petición y su demanda?",
+      "explanation": "Esther pidió que le fuese dada su vida por su petición, y su pueblo por su demanda.",
+      "bibleReference": "Ester 7:3",
+      "answers": [
+        {
+          "text": "La casa de su enemigo y el anillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su propia vida y la de su pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Volver a la casa de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Un lugar entre los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Esther que habría hecho si ella y su pueblo hubieran sido vendidos como siervos y siervas?",
+      "explanation": "Esther dijo que si para siervos y siervas hubieran sido vendidos, se habría callado.",
+      "bibleReference": "Ester 7:4",
+      "answers": [
+        {
+          "text": "Habría pedido ayuda a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Habría escrito al rey una carta",
+          "isCorrect": false
+        },
+        {
+          "text": "Habría dejado el palacio en secreto",
+          "isCorrect": false
+        },
+        {
+          "text": "Se habría callado delante del rey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué preguntó el rey Assuero a la reina Esther después de oír su petición?",
+      "explanation": "El rey preguntó quién era y dónde estaba aquel a quien había henchido su corazón para obrar así.",
+      "bibleReference": "Ester 7:5",
+      "answers": [
+        {
+          "text": "Quién era y dónde estaba el culpable",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuántos días había estado ayunando",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién le había dado aquel consejo",
+          "isCorrect": false
+        },
+        {
+          "text": "En qué mes se había escrito la ley",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién señaló Esther como el enemigo y adversario?",
+      "explanation": "Esther dijo que el enemigo y adversario era aquel malvado Amán, y Amán se turbó delante del rey y de la reina.",
+      "bibleReference": "Ester 7:6",
+      "answers": [
+        {
+          "text": "A Harbona, uno de los eunucos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Amán",
+          "isCorrect": true
+        },
+        {
+          "text": "A Mardochêo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sátrapas de las provincias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde se fue el rey cuando se levantó del banquete del vino en su furor?",
+      "explanation": "El rey se levantó del banquete en su furor y se fue al huerto del palacio, y Amán se quedó para rogar a la reina por su vida.",
+      "bibleReference": "Ester 7:7",
+      "answers": [
+        {
+          "text": "A la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A la casa de las mujeres",
+          "isCorrect": false
+        },
+        {
+          "text": "A la plaza de Susán",
+          "isCorrect": false
+        },
+        {
+          "text": "Al huerto del palacio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió con el rostro de Amán en cuanto la palabra salió de la boca del rey?",
+      "explanation": "Cuando esa palabra salió de la boca del rey, el rostro de Amán fue cubierto.",
+      "bibleReference": "Ester 7:8",
+      "answers": [
+        {
+          "text": "Se volvió hacia la reina",
+          "isCorrect": false
+        },
+        {
+          "text": "Se inclinó hasta la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Fue cubierto",
+          "isCorrect": true
+        },
+        {
+          "text": "Se llenó de alegría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién habló al rey de la horca de cincuenta codos que Amán había hecho?",
+      "explanation": "Harbona, uno de los eunucos de delante del rey, le habló de la horca de cincuenta codos de altura que Amán había hecho para Mardochêo.",
+      "bibleReference": "Ester 7:9",
+      "answers": [
+        {
+          "text": "Amadatha Agageo",
+          "isCorrect": false
+        },
+        {
+          "text": "Harbona el eunuco",
+          "isCorrect": true
+        },
+        {
+          "text": "La reina Esther",
+          "isCorrect": false
+        },
+        {
+          "text": "Uno de los escribanos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para quién había mandado aparejar Amán la horca en que lo colgaron?",
+      "explanation": "Colgaron a Amán en la horca que él había hecho aparejar para Mardochêo, y la ira del rey se apaciguó.",
+      "bibleReference": "Ester 7:10",
+      "answers": [
+        {
+          "text": "Para Mardochêo",
+          "isCorrect": true
+        },
+        {
+          "text": "Para los diez hijos del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Para Harbona el eunuco",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los Judíos de Susán",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

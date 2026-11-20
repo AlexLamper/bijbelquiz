@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre 2 Crónicas 20: la gran multitud que vino contra Josaphat, su oración, la palabra de Jahaziel y la victoria que Jehová dio sin pelear.",
+  "slug": "2-chronicles-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes vinieron contra Josaphat a la guerra al comienzo del capítulo?",
+      "explanation": "Los hijos de Moab y de Ammón, y con ellos otros de los Ammonitas, vinieron contra Josaphat a la guerra.",
+      "bibleReference": "2 Crónicas 20:1",
+      "answers": [
+        { "text": "Los hijos de Moab y de Ammón", "isCorrect": true },
+        { "text": "Los Siros de Damasco", "isCorrect": false },
+        { "text": "Los Filisteos y los Arabes", "isCorrect": false },
+        { "text": "Los Idumeos y los Asirios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Josaphat cuando tuvo temor por la noticia?",
+      "explanation": "Josaphat tuvo temor, puso su rostro para consultar a Jehová e hizo pregonar ayuno a todo Judá.",
+      "bibleReference": "2 Crónicas 20:3",
+      "answers": [
+        { "text": "Juntó todos los carros de Judá", "isCorrect": false },
+        { "text": "Consultó a Jehová y pregonó ayuno", "isCorrect": true },
+        { "text": "Envió mensajeros al rey de Israel", "isCorrect": false },
+        { "text": "Se escondió en la casa del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo terminó Josaphat su oración delante de Jehová?",
+      "explanation": "Dijo que en ellos no había fuerza contra tan grande multitud, que no sabían lo que habían de hacer, y que a Jehová volvían sus ojos.",
+      "bibleReference": "2 Crónicas 20:12",
+      "answers": [
+        { "text": "Danos un profeta que nos diga tu palabra", "isCorrect": false },
+        { "text": "Jehová, esfuerza las manos de nuestros soldados", "isCorrect": false },
+        { "text": "No sabemos qué hacer, mas a ti volvemos nuestros ojos", "isCorrect": true },
+        { "text": "Volveremos a edificar tu santuario en Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre quién vino el espíritu de Jehová en medio de la reunión?",
+      "explanation": "Allí estaba Jahaziel, Levita de los hijos de Asaph, sobre el cual vino el espíritu de Jehová en medio de la reunión.",
+      "bibleReference": "2 Crónicas 20:14",
+      "answers": [
+        { "text": "Sobre Amarías el sacerdote de Jerusalem", "isCorrect": false },
+        { "text": "Sobre Eliezer hijo de Dodava de Mareosah", "isCorrect": false },
+        { "text": "Sobre Jehú el vidente, hijo de Hanani", "isCorrect": false },
+        { "text": "Sobre Jahaziel, Levita de los hijos de Asaph", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijo él acerca de aquella guerra?",
+      "explanation": "Dijo que no temiesen ni se amedrentasen delante de aquella tan grande multitud, porque la guerra no era de ellos, sino de Dios.",
+      "bibleReference": "2 Crónicas 20:15",
+      "answers": [
+        { "text": "Que la guerra no era de ellos, sino de Dios", "isCorrect": true },
+        { "text": "Que Jehová les daría los carros del enemigo", "isCorrect": false },
+        { "text": "Que la guerra duraría tres días enteros", "isCorrect": false },
+        { "text": "Que debían pelear antes del amanecer", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer los de Judá cuando saliesen contra aquella multitud?",
+      "explanation": "Les dijo que no habría para qué peleasen en ese caso, sino que se parasen, estuviesen quedos y viesen la salud de Jehová con ellos.",
+      "bibleReference": "2 Crónicas 20:17",
+      "answers": [
+        { "text": "Subir de noche y poner emboscadas", "isCorrect": false },
+        { "text": "Pararse, estar quedos y ver la salud de Jehová", "isCorrect": true },
+        { "text": "Pelear con todas sus fuerzas hasta la tarde", "isCorrect": false },
+        { "text": "Enviar delante los Levitas con las bocinas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debían decir los cantores que Josaphat puso delante de la gente armada?",
+      "explanation": "Habido consejo con el pueblo, puso a algunos que cantasen a Jehová y dijesen: Glorificad a Jehová, porque su misericordia es para siempre.",
+      "bibleReference": "2 Crónicas 20:21",
+      "answers": [
+        { "text": "Jehová es varón de guerra, grande en poder", "isCorrect": false },
+        { "text": "Cantad a Jehová, que ha quebrado los carros", "isCorrect": false },
+        { "text": "Glorificad a Jehová, porque su misericordia es para siempre", "isCorrect": true },
+        { "text": "Bendito el rey que viene en el nombre de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llamaron el paraje donde se juntaron al cuarto día para bendecir a Jehová?",
+      "explanation": "Al cuarto día se juntaron en el valle de Beracah, porque allí bendijeron a Jehová, y por eso llamaron así el nombre de aquel paraje.",
+      "bibleReference": "2 Crónicas 20:26",
+      "answers": [
+        { "text": "El valle de la Sal", "isCorrect": false },
+        { "text": "La cuesta de Sis", "isCorrect": false },
+        { "text": "El desierto de Jeruel", "isCorrect": false },
+        { "text": "El valle de Beracah", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos años reinó Josaphat en Jerusalem?",
+      "explanation": "Josaphat tenía treinta y cinco años cuando comenzó a reinar, y reinó veinte y cinco años en Jerusalem.",
+      "bibleReference": "2 Crónicas 20:31",
+      "answers": [
+        { "text": "Cuarenta años", "isCorrect": false },
+        { "text": "Veinte y cinco años", "isCorrect": true },
+        { "text": "Treinta y cinco años", "isCorrect": false },
+        { "text": "Ocho años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió con los navíos que Josaphat aparejó para ir a Tharsis?",
+      "explanation": "Eliezer profetizó contra Josaphat porque había hecho compañía con Ochôzías, y los navíos se rompieron y no pudieron ir a Tharsis.",
+      "bibleReference": "2 Crónicas 20:36-37",
+      "answers": [
+        { "text": "Llegaron a Tharsis cargados de oro", "isCorrect": false },
+        { "text": "Fueron tomados por el rey de Siria", "isCorrect": false },
+        { "text": "Se rompieron y no pudieron ir", "isCorrect": true },
+        { "text": "Ochôzías los vendió a los Filisteos", "isCorrect": false }
+      ]
+    }
+  ]
+}

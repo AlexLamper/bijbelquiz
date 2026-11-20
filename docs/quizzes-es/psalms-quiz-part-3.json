@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Salmos 3: el clamor de David cuando huía, el escudo alrededor de él y la salud que es de Jehová.",
+  "slug": "psalms-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezamiento, ¿de quién huía David cuando compuso este salmo?",
+      "explanation": "El encabezamiento dice: Salmo de David, cuando huía de delante de Absalom su hijo.",
+      "bibleReference": "Salmos 3:1",
+      "answers": [
+        {
+          "text": "De los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "De diez millares de pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "De Absalom su hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "De los que hablan mentira",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista de sus enemigos al comenzar?",
+      "explanation": "Salmos 3:1 dice: Oh Jehová, cuánto se han multiplicado mis enemigos; muchos se levantan contra mí.",
+      "bibleReference": "Salmos 3:1",
+      "answers": [
+        {
+          "text": "Que se han multiplicado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que ya han sido vencidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que están muy lejos de él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le piden misericordia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dicen muchos acerca de su vida?",
+      "explanation": "Salmos 3:2 dice que muchos dicen de su vida: No hay para él salud en Dios.",
+      "bibleReference": "Salmos 3:2",
+      "answers": [
+        {
+          "text": "Que será rey sobre Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Dios lo ha de ensalzar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su casa será bendita",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no hay para él salud en Dios",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que Jehová es alrededor de él?",
+      "explanation": "Salmos 3:3 dice: Mas tú, Jehová, eres escudo alrededor de mí; mi gloria, y el que ensalza mi cabeza.",
+      "bibleReference": "Salmos 3:3",
+      "answers": [
+        {
+          "text": "Un muro de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Un escudo",
+          "isCorrect": true
+        },
+        {
+          "text": "Una nube de día",
+          "isCorrect": false
+        },
+        {
+          "text": "Un monte alto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde le respondió Jehová cuando clamó con su voz?",
+      "explanation": "Salmos 3:4 dice que clamó a Jehová con su voz y que él le respondió desde el monte de su santidad.",
+      "bibleReference": "Salmos 3:4",
+      "answers": [
+        {
+          "text": "Desde el monte de su santidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde en medio de la tempestad",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el sepulcro de los malos",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la congregación del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué pudo acostarse, dormir y despertar?",
+      "explanation": "Salmos 3:5 dice: Yo me acosté, y dormí, y desperté; porque Jehová me sostuvo.",
+      "bibleReference": "Salmos 3:5",
+      "answers": [
+        {
+          "text": "Porque sus enemigos huyeron",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque estaba en su ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque nadie lo buscaba ya",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Jehová lo sostuvo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De cuántos dice que no temerá, aunque pongan cerco contra él?",
+      "explanation": "Salmos 3:6 dice: No temeré de diez millares de pueblos, que pusieren cerco contra mí.",
+      "bibleReference": "Salmos 3:6",
+      "answers": [
+        {
+          "text": "De siete reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "De diez millares de pueblos",
+          "isCorrect": true
+        },
+        {
+          "text": "De cien príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "De tres ejércitos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice que Dios hirió a todos sus enemigos?",
+      "explanation": "Salmos 3:7 dice que Dios hirió a todos sus enemigos en la quijada.",
+      "bibleReference": "Salmos 3:7",
+      "answers": [
+        {
+          "text": "En el corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "En la mano",
+          "isCorrect": false
+        },
+        {
+          "text": "En la quijada",
+          "isCorrect": true
+        },
+        {
+          "text": "En la cabeza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quebrantó Dios a los malos, según el mismo versículo?",
+      "explanation": "Salmos 3:7 dice que quebrantó los dientes de los malos.",
+      "bibleReference": "Salmos 3:7",
+      "answers": [
+        {
+          "text": "Los dientes",
+          "isCorrect": true
+        },
+        {
+          "text": "Las cuerdas",
+          "isCorrect": false
+        },
+        {
+          "text": "El arco",
+          "isCorrect": false
+        },
+        {
+          "text": "La vara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿de quién es la salud?",
+      "explanation": "Salmos 3:8 dice: De Jehová es la salud; sobre tu pueblo será tu bendición.",
+      "bibleReference": "Salmos 3:8",
+      "answers": [
+        {
+          "text": "De los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Del pueblo mismo",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "De los justos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

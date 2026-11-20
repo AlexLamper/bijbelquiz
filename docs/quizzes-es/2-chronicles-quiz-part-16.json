@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre 2 Crónicas 16: la alianza de Asa con Ben-adad, la reprensión de Hanani vidente y la muerte de Asa.",
+  "slug": "2-chronicles-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién subió contra Judá en el año treinta y seis del reinado de Asa?",
+      "explanation": "En el año treinta y seis del reinado de Asa subió Baasa rey de Israel contra Judá, y edificó a Rama.",
+      "bibleReference": "2 Crónicas 16:1",
+      "answers": [
+        { "text": "Zera Etiope", "isCorrect": false },
+        { "text": "Baasa rey de Israel", "isCorrect": true },
+        { "text": "Sisac rey de Egipto", "isCorrect": false },
+        { "text": "Ben-adad rey de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién envió Asa la plata y el oro de los tesoros de la casa de Jehová y de la casa real?",
+      "explanation": "Asa sacó la plata y el oro de los tesoros y los envió a Ben-adad rey de Siria, que estaba en Damasco.",
+      "bibleReference": "2 Crónicas 16:2",
+      "answers": [
+        { "text": "A Ben-adad rey de Siria, que estaba en Damasco", "isCorrect": true },
+        { "text": "A Faraón rey de Egipto, que estaba en Soan", "isCorrect": false },
+        { "text": "A Hiram rey de Tiro, que estaba en la costa", "isCorrect": false },
+        { "text": "A Baasa rey de Israel, que estaba en Rama", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ciudades batieron los capitanes de los ejércitos de Ben-adad?",
+      "explanation": "Ben-adad envió los capitanes de sus ejércitos a las ciudades de Israel, y batieron a Ion, Dan y Abel-maim, y las ciudades fuertes de Nephtalí.",
+      "bibleReference": "2 Crónicas 16:4",
+      "answers": [
+        { "text": "Gibaa, Mizpa y Rama", "isCorrect": false },
+        { "text": "Gerar, Maresa y Ziph", "isCorrect": false },
+        { "text": "Ion, Dan y Abel-maim", "isCorrect": true },
+        { "text": "Bethel, Jesana y Ephraim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Baasa al oír esto?",
+      "explanation": "Al oírlo, Baasa cesó de edificar a Rama y dejó su obra.",
+      "bibleReference": "2 Crónicas 16:5",
+      "answers": [
+        { "text": "Salió a pelear contra Ben-adad", "isCorrect": false },
+        { "text": "Envió plata y oro al rey Asa", "isCorrect": false },
+        { "text": "Fortificó a Gibaa y a Mizpa", "isCorrect": false },
+        { "text": "Cesó de edificar a Rama y dejó su obra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Asa con la piedra y la madera que se llevaron de Rama?",
+      "explanation": "El rey Asa tomó a todo Judá, se llevaron de Rama la piedra y la madera con que Baasa edificaba, y con ella edificó a Gibaa y Mizpa.",
+      "bibleReference": "2 Crónicas 16:6",
+      "answers": [
+        { "text": "Gibaa y Mizpa", "isCorrect": true },
+        { "text": "Rama y Bethel", "isCorrect": false },
+        { "text": "Dan y Abel-maim", "isCorrect": false },
+        { "text": "Gerar y Maresa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién vino a Asa rey de Judá para reprenderlo por haberse apoyado en el rey de Siria?",
+      "explanation": "En aquel tiempo vino Hanani vidente a Asa rey de Judá y le dijo que por apoyarse en el rey de Siria, y no en Jehová su Dios, el ejército del rey de Siria había escapado de sus manos.",
+      "bibleReference": "2 Crónicas 16:7",
+      "answers": [
+        { "text": "Semeías profeta", "isCorrect": false },
+        { "text": "Hanani vidente", "isCorrect": true },
+        { "text": "Azarías hijo de Obed", "isCorrect": false },
+        { "text": "Iddo el vidente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el vidente acerca de los ojos de Jehová?",
+      "explanation": "Dijo que los ojos de Jehová contemplan toda la tierra, para corroborar a los que tienen corazón perfecto para con él.",
+      "bibleReference": "2 Crónicas 16:9",
+      "answers": [
+        { "text": "Que están cerrados a los que pecan", "isCorrect": false },
+        { "text": "Que miran solamente a Jerusalem", "isCorrect": false },
+        { "text": "Que ven el corazón de los reyes", "isCorrect": false },
+        { "text": "Que contemplan toda la tierra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Asa con el vidente?",
+      "explanation": "Asa se enojó contra el vidente y lo echó en la casa de la cárcel, porque fue en extremo conmovido a causa de esto.",
+      "bibleReference": "2 Crónicas 16:10",
+      "answers": [
+        { "text": "Le dio plata y oro de los tesoros", "isCorrect": false },
+        { "text": "Lo envió a Israel con un mensaje", "isCorrect": false },
+        { "text": "Lo echó en la casa de la cárcel", "isCorrect": true },
+        { "text": "Lo puso sobre los ejércitos de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "En su enfermedad de los pies, ¿a quién buscó Asa?",
+      "explanation": "En el año treinta y nueve de su reinado Asa enfermó de los pies para arriba, y en su enfermedad no buscó a Jehová, sino a los médicos.",
+      "bibleReference": "2 Crónicas 16:12",
+      "answers": [
+        { "text": "A los médicos, y no a Jehová", "isCorrect": true },
+        { "text": "A Jehová y a los profetas", "isCorrect": false },
+        { "text": "A los sacerdotes de la casa de Dios", "isCorrect": false },
+        { "text": "Al rey de Siria, su aliado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron cuando sepultaron a Asa en los sepulcros que él había hecho?",
+      "explanation": "Lo pusieron en una litera llena de aromas y materias odoríferas, y le hicieron una quema muy grande.",
+      "bibleReference": "2 Crónicas 16:14",
+      "answers": [
+        { "text": "Guardaron luto durante treinta días", "isCorrect": false },
+        { "text": "Llevaron su cuerpo a la casa de Jehová", "isCorrect": false },
+        { "text": "Pusieron su corona sobre el sepulcro", "isCorrect": false },
+        { "text": "Le hicieron una quema muy grande", "isCorrect": true }
+      ]
+    }
+  ]
+}

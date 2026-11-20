@@ -1,0 +1,242 @@
+{
+  "title": "Ester Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Ester 3: Amán es engrandecido, Mardochêo no se arrodilla, la suerte Pur y el decreto contra los Judíos.",
+  "slug": "esther-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién engrandeció el rey Assuero, poniendo su silla sobre todos los príncipes?",
+      "explanation": "El rey Assuero engrandeció a Amán hijo de Amadatha Agageo, lo ensalzó y puso su silla sobre todos los príncipes que estaban con él.",
+      "bibleReference": "Ester 3:1",
+      "answers": [
+        {
+          "text": "Mardochêo hijo de Jair",
+          "isCorrect": false
+        },
+        {
+          "text": "Memucán, príncipe de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Amán hijo de Amadatha Agageo",
+          "isCorrect": true
+        },
+        {
+          "text": "Hegai, guarda de las mujeres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Mientras los siervos del rey se inclinaban a Amán, ¿qué hacía Mardochêo?",
+      "explanation": "Todos los siervos del rey que estaban a la puerta se arrodillaban e inclinaban a Amán, pero Mardochêo ni se arrodillaba ni se humillaba.",
+      "bibleReference": "Ester 3:2",
+      "answers": [
+        {
+          "text": "Ni se arrodillaba ni se humillaba",
+          "isCorrect": true
+        },
+        {
+          "text": "Salía de la puerta del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagaba el tributo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Hablaba mal del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les había declarado ya Mardochêo a los siervos que le hablaban cada día?",
+      "explanation": "Lo denunciaron a Amán para ver si las palabras de Mardochêo se mantendrían, porque él ya les había declarado que era Judío.",
+      "bibleReference": "Ester 3:4",
+      "answers": [
+        {
+          "text": "Que era de Susán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que servía a Hegai",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era eunuco",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era Judío",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Como le pareció poco meter mano solo en Mardochêo, ¿qué procuró hacer Amán?",
+      "explanation": "Amán tuvo en poco meter mano en solo Mardochêo y procuró destruir a todos los Judíos que había en el reino de Assuero.",
+      "bibleReference": "Ester 3:6",
+      "answers": [
+        {
+          "text": "Matar solo a Mardochêo",
+          "isCorrect": false
+        },
+        {
+          "text": "Destruir a todos los Judíos",
+          "isCorrect": true
+        },
+        {
+          "text": "Expulsar a los Judíos de Susán",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitar el anillo del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué mes fue echada Pur, esto es, la suerte, delante de Amán?",
+      "explanation": "Pur, esto es, la suerte, fue echada delante de Amán en el mes primero, que es el mes de Nisán, en el año duodécimo del rey Assuero.",
+      "bibleReference": "Ester 3:7",
+      "answers": [
+        {
+          "text": "El mes primero, que es Nisán",
+          "isCorrect": true
+        },
+        {
+          "text": "El mes duodécimo, que es Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes décimo, que es Tebeth",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes séptimo del año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al echar la suerte de día en día y de mes en mes, ¿qué mes salió?",
+      "explanation": "La suerte fue echada de día en día y de mes en mes, y salió el mes duodécimo, que es el mes de Adar.",
+      "bibleReference": "Ester 3:7",
+      "answers": [
+        {
+          "text": "El mes séptimo del año",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes primero, que es Nisán",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes duodécimo, que es Adar",
+          "isCorrect": true
+        },
+        {
+          "text": "El mes décimo, que es Tebeth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánta plata ofreció Amán pesar en manos de los que manejaban la hacienda?",
+      "explanation": "Amán dijo que pesaría diez mil talentos de plata en manos de los que manejan la hacienda, para que fuesen traídos a los tesoros del rey.",
+      "bibleReference": "Ester 3:9",
+      "answers": [
+        {
+          "text": "Mil talentos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien talentos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez mil siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez mil talentos de plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quitó el rey de su mano y dio a Amán, enemigo de los Judíos?",
+      "explanation": "El rey quitó su anillo de su mano y lo dio a Amán hijo de Amadatha Agageo, enemigo de los Judíos.",
+      "bibleReference": "Ester 3:10",
+      "answers": [
+        {
+          "text": "Su corona",
+          "isCorrect": false
+        },
+        {
+          "text": "Su anillo",
+          "isCorrect": true
+        },
+        {
+          "text": "Su caballo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su vestido real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué fin fueron enviadas las letras por mano de los correos a todas las provincias?",
+      "explanation": "Las letras fueron enviadas para destruir, matar y exterminar a todos los Judíos, desde el niño hasta el viejo, en el trece del mes duodécimo.",
+      "bibleReference": "Ester 3:13",
+      "answers": [
+        {
+          "text": "Para destruir a todos los Judíos",
+          "isCorrect": true
+        },
+        {
+          "text": "Para cobrar nuevos tributos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para llamar a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Para anunciar un banquete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Mientras la ciudad de Susán estaba conmovida, ¿qué hacían el rey y Amán?",
+      "explanation": "El edicto fue dado en Susán, y el rey y Amán estaban sentados a beber mientras la ciudad de Susán estaba conmovida.",
+      "bibleReference": "Ester 3:15",
+      "answers": [
+        {
+          "text": "Estaban en el huerto real",
+          "isCorrect": false
+        },
+        {
+          "text": "Salían con los correos",
+          "isCorrect": false
+        },
+        {
+          "text": "Oraban en el palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "Estaban sentados a beber",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

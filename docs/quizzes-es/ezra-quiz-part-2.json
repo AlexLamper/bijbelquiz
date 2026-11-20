@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Esdras 2: la lista de los hijos de la provincia que volvieron de la cautividad, sus familias, sus números y sus ofrendas.",
+  "slug": "ezra-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes son los que el capítulo comienza á contar?",
+      "explanation": "Son los hijos de la provincia que subieron de la cautividad, de la transmigración que Nabucodonosor rey de Babilonia hizo traspasar á Babilonia, y que volvieron á Jerusalem y á Judá, cada uno á su ciudad.",
+      "bibleReference": "Esdras 2:1",
+      "answers": [
+        {
+          "text": "Los hijos de la provincia que volvieron de la cautividad, cada uno á su ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Los siervos de Salomón que quedaron en Jerusalem y en Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Persas que Ciro envió á la tierra de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Los enemigos de Judá y de Benjamín que allí moraban",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quién vinieron, en primer lugar de la lista, los que subieron de la cautividad?",
+      "explanation": "La lista dice que vinieron con Zorobabel, Jesuá, Nehemías, Seraías, Reelaías, Mardochêo, Bilsán, Mispar, Bigvai, Rehum y Baana.",
+      "bibleReference": "Esdras 2:2",
+      "answers": [
+        {
+          "text": "Con Sesbassar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Zorobabel",
+          "isCorrect": true
+        },
+        {
+          "text": "Con Esdras",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Tatnai",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran los hijos de Paros?",
+      "explanation": "Los hijos de Paros eran dos mil ciento setenta y dos.",
+      "bibleReference": "Esdras 2:3",
+      "answers": [
+        {
+          "text": "Mil doscientos cincuenta y cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos setenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil ciento setenta y dos",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos mil ochocientos y doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran los hijos de Pahath-moab, de los hijos de Josué y de Joab?",
+      "explanation": "Los hijos de Pahath-moab, de los hijos de Josué y de Joab, eran dos mil ochocientos y doce.",
+      "bibleReference": "Esdras 2:6",
+      "answers": [
+        {
+          "text": "Dos mil ciento setenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil doscientos veinte y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Novecientos cuarenta y cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil ochocientos y doce",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran los hijos de Adonicam?",
+      "explanation": "Los hijos de Adonicam eran seiscientos sesenta y seis.",
+      "bibleReference": "Esdras 2:13",
+      "answers": [
+        {
+          "text": "Seiscientos sesenta y seis",
+          "isCorrect": true
+        },
+        {
+          "text": "Seiscientos cuarenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos veinte y tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos cincuenta y dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Entre los sacerdotes, ¿de qué casa eran los hijos de Jedaía?",
+      "explanation": "Los sacerdotes hijos de Jedaía, de la casa de Jesuá, eran novecientos setenta y tres.",
+      "bibleReference": "Esdras 2:36",
+      "answers": [
+        {
+          "text": "De la casa de Sadoc",
+          "isCorrect": false
+        },
+        {
+          "text": "De la casa de Jesuá",
+          "isCorrect": true
+        },
+        {
+          "text": "De la casa de Immer",
+          "isCorrect": false
+        },
+        {
+          "text": "De la casa de Pashur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién eran hijos los cantores?",
+      "explanation": "Los cantores eran los hijos de Asaph, ciento veinte y ocho.",
+      "bibleReference": "Esdras 2:41",
+      "answers": [
+        {
+          "text": "De Hemán",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jeduthún",
+          "isCorrect": false
+        },
+        {
+          "text": "De Asaph",
+          "isCorrect": true
+        },
+        {
+          "text": "De Cadmiel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les sucedió á aquellos cuyo registro de genealogías no fué hallado?",
+      "explanation": "Buscaron su registro de genealogías y no fué hallado, y fueron echados del sacerdocio.",
+      "bibleReference": "Esdras 2:62",
+      "answers": [
+        {
+          "text": "Fueron contados entre los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron á Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron puestos por porteros",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron echados del sacerdocio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De cuántos era toda la congregación, unida como un solo hombre?",
+      "explanation": "Toda la congregación, unida como un solo hombre, era de cuarenta y dos mil trescientos y sesenta.",
+      "bibleReference": "Esdras 2:64",
+      "answers": [
+        {
+          "text": "De cuarenta y dos mil trescientos y sesenta",
+          "isCorrect": true
+        },
+        {
+          "text": "De siete mil trescientos treinta y siete",
+          "isCorrect": false
+        },
+        {
+          "text": "De treinta y dos mil trescientos y sesenta",
+          "isCorrect": false
+        },
+        {
+          "text": "De cuarenta y dos mil seiscientos y treinta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dieron al tesorero de la obra, según sus fuerzas, algunos de los cabezas de los padres?",
+      "explanation": "Dieron sesenta y un mil dracmas de oro, cinco mil libras de plata y cien túnicas sacerdotales.",
+      "bibleReference": "Esdras 2:69",
+      "answers": [
+        {
+          "text": "Cinco mil dracmas de oro y sesenta y un mil libras de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta y un mil dracmas de oro, cinco mil libras de plata y cien túnicas sacerdotales",
+          "isCorrect": true
+        },
+        {
+          "text": "Cien talentos de plata, un talento de oro y diez túnicas",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta tazones de oro, mil de plata y cien túnicas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

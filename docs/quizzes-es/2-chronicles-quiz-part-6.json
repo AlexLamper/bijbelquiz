@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre 2 Crónicas 6: la bendición de Salomón a la congregación y su larga oración en la dedicación de la casa de Jehová.",
+  "slug": "2-chronicles-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según las primeras palabras de Salomón, ¿qué había dicho Jehová sobre dónde habitaría?",
+      "explanation": "Salomón dijo que Jehová había dicho que él habitaría en la oscuridad.",
+      "bibleReference": "2 Crónicas 6:1",
+      "answers": [
+        { "text": "Que habitaría en la oscuridad", "isCorrect": true },
+        { "text": "Que habitaría entre las nubes", "isCorrect": false },
+        { "text": "Que habitaría en el desierto", "isCorrect": false },
+        { "text": "Que habitaría sobre las aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad dijo Salomón que Jehová había elegido para que en ella estuviese su nombre?",
+      "explanation": "Salomón dijo que Jehová había elegido a Jerusalem para que en ella estuviese su nombre, y a David para que fuese sobre su pueblo Israel.",
+      "bibleReference": "2 Crónicas 6:5-6",
+      "answers": [
+        { "text": "Hebrón", "isCorrect": false },
+        { "text": "Jerusalem", "isCorrect": true },
+        { "text": "Samaria", "isCorrect": false },
+        { "text": "Bethel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según lo que Jehová dijo a David, ¿quién edificaría la casa a su nombre?",
+      "explanation": "Jehová dijo a David que él no edificaría la casa, sino su hijo que saldría de sus lomos.",
+      "bibleReference": "2 Crónicas 6:9",
+      "answers": [
+        { "text": "David mismo, antes de morir", "isCorrect": false },
+        { "text": "Ningún hombre, sino Jehová", "isCorrect": false },
+        { "text": "Su hijo, que saldría de sus lomos", "isCorrect": true },
+        { "text": "El profeta que Jehová enviase", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Salomón que había puesto en la casa que edificó?",
+      "explanation": "Salomón dijo: en ella he puesto el arca, en la cual está el pacto de Jehová que concertó con los hijos de Israel.",
+      "bibleReference": "2 Crónicas 6:11",
+      "answers": [
+        { "text": "El candelero de oro y la mesa", "isCorrect": false },
+        { "text": "La vara de Aarón", "isCorrect": false },
+        { "text": "Las tablas de piedra de Moisés", "isCorrect": false },
+        { "text": "El arca, con el pacto de Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De qué medidas era el púlpito de metal que Salomón había hecho?",
+      "explanation": "El púlpito de metal era de cinco codos de largo, de cinco codos de ancho y de tres codos de altura.",
+      "bibleReference": "2 Crónicas 6:13",
+      "answers": [
+        { "text": "De tres codos de largo, tres de ancho y cinco de altura", "isCorrect": false },
+        { "text": "De cinco codos de largo, cinco de ancho y tres de altura", "isCorrect": true },
+        { "text": "De diez codos de largo, diez de ancho y dos de altura", "isCorrect": false },
+        { "text": "De siete codos de largo, siete de ancho y cuatro de altura", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Salomón sobre los cielos mientras oraba?",
+      "explanation": "Salomón dijo: he aquí, los cielos y los cielos de los cielos no pueden contenerte, cuánto menos esta casa que he edificado.",
+      "bibleReference": "2 Crónicas 6:18",
+      "answers": [
+        { "text": "Que los cielos y los cielos de los cielos no pueden contener a Dios", "isCorrect": true },
+        { "text": "Que los cielos se abrirían sobre la casa que había edificado", "isCorrect": false },
+        { "text": "Que los cielos callarían mientras el pueblo estuviese orando", "isCorrect": false },
+        { "text": "Que los cielos mismos serían la morada de Dios con el hombre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "En la oración, ¿qué pedía Salomón que Dios hiciera con el impío y con el justo?",
+      "explanation": "Salomón pidió que Dios diese la paga al impío, tornándole su proceder sobre su cabeza, y justificase al justo dándole conforme a su justicia.",
+      "bibleReference": "2 Crónicas 6:22-23",
+      "answers": [
+        { "text": "Que perdonase por igual al impío y al justo", "isCorrect": false },
+        { "text": "Que callase y no juzgase a ninguno de los dos", "isCorrect": false },
+        { "text": "Que diese la paga al justo y justificase al impío", "isCorrect": false },
+        { "text": "Que diese la paga al impío y justificase al justo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Si los cielos se cerraran y no hubiera lluvias por haber pecado el pueblo, ¿qué pedía Salomón que Dios hiciera además de perdonar?",
+      "explanation": "Salomón pidió que Dios perdonase el pecado y además les enseñase el buen camino y diese lluvia sobre su tierra.",
+      "bibleReference": "2 Crónicas 6:26-27",
+      "answers": [
+        { "text": "Que enviase un profeta a la tierra", "isCorrect": false },
+        { "text": "Que quitase la plaga de langostas", "isCorrect": false },
+        { "text": "Que les enseñase el buen camino y diese lluvia", "isCorrect": true },
+        { "text": "Que les diese pan del cielo cada mañana", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Aparte de Israel, ¿por quién más pedía Salomón que Dios oyera desde los cielos?",
+      "explanation": "Salomón pidió también por el extranjero que no fuese de su pueblo Israel y que hubiese venido de lejanas tierras a causa de su gran nombre.",
+      "bibleReference": "2 Crónicas 6:32-33",
+      "answers": [
+        { "text": "Por el extranjero venido de lejanas tierras", "isCorrect": true },
+        { "text": "Por los sacerdotes que ministraban en la casa", "isCorrect": false },
+        { "text": "Por los reyes de los pueblos vecinos", "isCorrect": false },
+        { "text": "Por los que estaban en la mar y en los navíos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al final de su oración, ¿qué pidió Salomón que hiciera Jehová Dios?",
+      "explanation": "Salomón dijo: Oh Jehová Dios, levántate ahora para habitar en tu reposo, tú y el arca de tu fortaleza.",
+      "bibleReference": "2 Crónicas 6:41",
+      "answers": [
+        { "text": "Que enviase fuego sobre el altar que había hecho", "isCorrect": false },
+        { "text": "Que le diese sabiduría más que a todos los reyes", "isCorrect": false },
+        { "text": "Que destruyese a los enemigos que cercaban la ciudad", "isCorrect": false },
+        { "text": "Que se levantase para habitar en su reposo, con el arca de su fortaleza", "isCorrect": true }
+      ]
+    }
+  ]
+}

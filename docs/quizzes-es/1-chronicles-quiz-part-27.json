@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre 1 Crónicas 27: las divisiones de cada mes, los jefes de las tribus de Israel y los superintendentes de la hacienda del rey.",
+  "slug": "1-chronicles-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos hombres había en cada división que entraba y salía cada mes?",
+      "explanation": "El texto dice que en cada división había veinte y cuatro mil hombres.",
+      "bibleReference": "1 Crónicas 27:1",
+      "answers": [
+        { "text": "Veinte y cuatro mil", "isCorrect": true },
+        { "text": "Treinta y ocho mil", "isCorrect": false },
+        { "text": "Veinte y dos mil", "isCorrect": false },
+        { "text": "Doce mil y seiscientos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién estaba sobre la primera división del primer mes?",
+      "explanation": "Sobre la primera división del primer mes estaba Jasobam, hijo de Zabdiel.",
+      "bibleReference": "1 Crónicas 27:2",
+      "answers": [
+        { "text": "Dodai Ahohita", "isCorrect": false },
+        { "text": "Jasobam hijo de Zabdiel", "isCorrect": true },
+        { "text": "Micloth el mayor general", "isCorrect": false },
+        { "text": "Asael hermano de Joab", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién era el jefe de la tercera división, para el tercer mes?",
+      "explanation": "El jefe de la tercera división para el tercer mes era Benaías, hijo de Joiada sumo sacerdote.",
+      "bibleReference": "1 Crónicas 27:5",
+      "answers": [
+        { "text": "Sambuth Izrita", "isCorrect": false },
+        { "text": "Amisabad su hijo", "isCorrect": false },
+        { "text": "Benaías hijo de Joiada", "isCorrect": true },
+        { "text": "Hira hijo de Icces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué parentesco tenía Asael, el cuarto jefe, para el cuarto mes?",
+      "explanation": "El texto dice que el cuarto jefe era Asael, hermano de Joab, y después de él Zebadías su hijo.",
+      "bibleReference": "1 Crónicas 27:7",
+      "answers": [
+        { "text": "Era hijo de Zabdiel", "isCorrect": false },
+        { "text": "Era hermano de David", "isCorrect": false },
+        { "text": "Era hijo de Joiada", "isCorrect": false },
+        { "text": "Era hermano de Joab", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De dónde era Hira hijo de Icces, el jefe del sexto mes?",
+      "explanation": "El sexto, para el sexto mes, era Hira hijo de Icces, de Tecoa.",
+      "bibleReference": "1 Crónicas 27:9",
+      "answers": [
+        { "text": "De Tecoa", "isCorrect": true },
+        { "text": "De Anathoth", "isCorrect": false },
+        { "text": "De Piraton", "isCorrect": false },
+        { "text": "De Galaad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién era el jefe de los Aaronitas?",
+      "explanation": "El texto dice que de los Levitas era Hasabías hijo de Camuel, y de los Aaronitas, Sadoc.",
+      "bibleReference": "1 Crónicas 27:17",
+      "answers": [
+        { "text": "Hasabías hijo de Camuel", "isCorrect": false },
+        { "text": "Sadoc", "isCorrect": true },
+        { "text": "Eliezer hijo de Zichri", "isCorrect": false },
+        { "text": "Sephatías hijo de Maachâ", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Eliú, el jefe de Judá?",
+      "explanation": "El texto dice que de Judá estaba Eliú, uno de los hermanos de David.",
+      "bibleReference": "1 Crónicas 27:18",
+      "answers": [
+        { "text": "Que era escriba del rey", "isCorrect": false },
+        { "text": "Que era hijo de Michâel", "isCorrect": false },
+        { "text": "Que era uno de los hermanos de David", "isCorrect": true },
+        { "text": "Que era el tío de David", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no tomó David el número de los que eran de veinte años abajo?",
+      "explanation": "No los contó porque Jehová había dicho que él había de multiplicar a Israel como las estrellas del cielo.",
+      "bibleReference": "1 Crónicas 27:23",
+      "answers": [
+        { "text": "Porque eran demasiado pocos para contar", "isCorrect": false },
+        { "text": "Porque Joab se lo había prohibido", "isCorrect": false },
+        { "text": "Porque vivían al otro lado del Jordán", "isCorrect": false },
+        { "text": "Porque Jehová había dicho que multiplicaría a Israel", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién había comenzado a contar, pero no acabó?",
+      "explanation": "Joab hijo de Sarvia había comenzado a contar, mas no acabó, y por esto vino la ira sobre Israel.",
+      "bibleReference": "1 Crónicas 27:24",
+      "answers": [
+        { "text": "Joab hijo de Sarvia", "isCorrect": true },
+        { "text": "Azmaveth hijo de Adiel", "isCorrect": false },
+        { "text": "Jonathán hijo de Uzzías", "isCorrect": false },
+        { "text": "Jehiel hijo de Hacmoni", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué era Husai Arachîta?",
+      "explanation": "El texto dice que Achitophel era consejero del rey y que Husai Arachîta era amigo del rey.",
+      "bibleReference": "1 Crónicas 27:33",
+      "answers": [
+        { "text": "General del ejército del rey", "isCorrect": false },
+        { "text": "Amigo del rey", "isCorrect": true },
+        { "text": "Escriba y varón prudente", "isCorrect": false },
+        { "text": "Consejero del rey", "isCorrect": false }
+      ]
+    }
+  ]
+}

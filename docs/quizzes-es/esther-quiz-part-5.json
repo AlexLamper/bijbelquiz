@@ -1,0 +1,242 @@
+{
+  "title": "Ester Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Ester 5: Esther entra al patio de adentro, el cetro de oro, el banquete con Amán y la horca que Amán manda preparar.",
+  "slug": "esther-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuándo se vistió Esther su vestido real y se puso en el patio de adentro de la casa del rey?",
+      "explanation": "Al tercer día Esther se vistió su vestido real y se puso en el patio de adentro de la casa del rey, enfrente del aposento del rey.",
+      "bibleReference": "Ester 5:1",
+      "answers": [
+        {
+          "text": "Al tercer día",
+          "isCorrect": true
+        },
+        {
+          "text": "Al día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Al séptimo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Al cabo de un mes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué extendió el rey a Esther cuando la vio en el patio?",
+      "explanation": "Esther obtuvo gracia en sus ojos, y el rey le extendió el cetro de oro que tenía en la mano; entonces ella se llegó y tocó la punta del cetro.",
+      "bibleReference": "Ester 5:2",
+      "answers": [
+        {
+          "text": "El anillo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Su mano derecha",
+          "isCorrect": false
+        },
+        {
+          "text": "El cetro de oro",
+          "isCorrect": true
+        },
+        {
+          "text": "Una copa de vino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuánto le dijo el rey que le daría cuando le preguntó por su petición?",
+      "explanation": "El rey le preguntó qué tenía y cuál era su petición, y le dijo que hasta la mitad del reino se le daría.",
+      "bibleReference": "Ester 5:3",
+      "answers": [
+        {
+          "text": "Hasta cien talentos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la mitad del reino",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta la tercera parte del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta una provincia entera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién pidió Esther que viniese con el rey al banquete que le había hecho?",
+      "explanation": "Esther dijo que, si al rey le placía, viniese aquel día el rey con Amán al banquete que ella le había hecho.",
+      "bibleReference": "Ester 5:4",
+      "answers": [
+        {
+          "text": "A Mardochêo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Zeres",
+          "isCorrect": false
+        },
+        {
+          "text": "A los siete eunucos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Amán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "En el banquete del vino, ¿qué pidió Esther cuando el rey le preguntó por su demanda?",
+      "explanation": "Esther pidió que el rey viniese otra vez con Amán al banquete que ella les dispondría, y dijo que al día siguiente haría conforme a lo que el rey había mandado.",
+      "bibleReference": "Ester 5:8",
+      "answers": [
+        {
+          "text": "Que viniesen otra vez al día siguiente",
+          "isCorrect": true
+        },
+        {
+          "text": "Que colgasen a Amán en una horca",
+          "isCorrect": false
+        },
+        {
+          "text": "Que escribiesen nuevas letras",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llamasen a los sabios de Persia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Amán salió contento y alegre de corazón aquel día, pero ¿por qué se llenó de ira?",
+      "explanation": "Amán se llenó de ira contra Mardochêo porque lo vio a la puerta del rey, y Mardochêo no se levantaba ni se movía de su lugar.",
+      "bibleReference": "Ester 5:9",
+      "answers": [
+        {
+          "text": "Porque el rey no le hizo honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque vio a Mardochêo a la puerta",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Zeres lo reprendió",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque perdió el anillo del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes hizo venir Amán a su casa después de refrenarse?",
+      "explanation": "Amán se refrenó, vino a su casa y envió a hacer venir a sus amigos y a Zeres su mujer.",
+      "bibleReference": "Ester 5:10",
+      "answers": [
+        {
+          "text": "A los príncipes de Persia y Media",
+          "isCorrect": false
+        },
+        {
+          "text": "A los eunucos de la reina",
+          "isCorrect": false
+        },
+        {
+          "text": "A sus amigos y a Zeres su mujer",
+          "isCorrect": true
+        },
+        {
+          "text": "A los escribanos del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se jactó Amán acerca del banquete que había dispuesto la reina Esther?",
+      "explanation": "Amán añadió que la reina Esther a ninguno hizo venir con el rey al banquete que ella dispuso, sino a él, y que también para el día siguiente estaba convidado con el rey.",
+      "bibleReference": "Ester 5:12",
+      "answers": [
+        {
+          "text": "De que el rey le dio su anillo",
+          "isCorrect": false
+        },
+        {
+          "text": "De que ya había matado a Mardochêo",
+          "isCorrect": false
+        },
+        {
+          "text": "De que el rey le dio la mitad del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "De que solo él fue convidado con el rey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le quitaba a Amán el gusto de todo lo que tenía?",
+      "explanation": "Amán dijo que todo aquello nada le servía cada vez que veía al judío Mardochêo sentado a la puerta del rey.",
+      "bibleReference": "Ester 5:13",
+      "answers": [
+        {
+          "text": "No tener hijos varones",
+          "isCorrect": false
+        },
+        {
+          "text": "La ira de la reina Esther",
+          "isCorrect": false
+        },
+        {
+          "text": "Ver a Mardochêo a la puerta del rey",
+          "isCorrect": true
+        },
+        {
+          "text": "El decreto contra los Judíos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De cuántos codos aconsejaron Zeres y sus amigos que hiciesen la horca?",
+      "explanation": "Zeres su mujer y todos sus amigos dijeron que hiciesen una horca alta de cincuenta codos y que al día siguiente dijese al rey que colgasen en ella a Mardochêo.",
+      "bibleReference": "Ester 5:14",
+      "answers": [
+        {
+          "text": "Cincuenta codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien codos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

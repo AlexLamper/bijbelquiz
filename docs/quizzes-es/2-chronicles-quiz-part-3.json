@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre 2 Crónicas 3: las medidas de la casa de Dios, el oro con que fue cubierta, los querubines y las dos columnas.",
+  "slug": "2-chronicles-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué monte comenzó Salomón a edificar la casa en Jerusalem?",
+      "explanation": "Salomón comenzó a edificar la casa en Jerusalem, en el monte Moria, que había sido mostrado a David su padre.",
+      "bibleReference": "2 Crónicas 3:1",
+      "answers": [
+        { "text": "En el monte Moria", "isCorrect": true },
+        { "text": "En el monte Líbano", "isCorrect": false },
+        { "text": "En el alto de Gabaón", "isCorrect": false },
+        { "text": "En el monte de Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué año de su reinado comenzó a edificar?",
+      "explanation": "Comenzó a edificar en el mes segundo, a dos del mes, en el cuarto año de su reinado.",
+      "bibleReference": "2 Crónicas 3:2",
+      "answers": [
+        { "text": "En el primer año", "isCorrect": false },
+        { "text": "En el cuarto año", "isCorrect": true },
+        { "text": "En el segundo año", "isCorrect": false },
+        { "text": "En el séptimo año", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuál fue la primera medida con que Salomón fundó el edificio?",
+      "explanation": "La primera medida fue la longitud de sesenta codos y la anchura de veinte codos.",
+      "bibleReference": "2 Crónicas 3:3",
+      "answers": [
+        { "text": "Veinte codos de largo y diez de ancho", "isCorrect": false },
+        { "text": "Treinta codos de largo y cinco de ancho", "isCorrect": false },
+        { "text": "Sesenta codos de largo y veinte de ancho", "isCorrect": true },
+        { "text": "Ciento veinte codos de largo y veinte de ancho", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué cubrió Salomón el pórtico por dentro?",
+      "explanation": "El pórtico estaba en la delantera de la longitud, y Salomón lo cubrió por dentro de oro puro.",
+      "bibleReference": "2 Crónicas 3:4",
+      "answers": [
+        { "text": "De madera de haya", "isCorrect": false },
+        { "text": "De piedras preciosas", "isCorrect": false },
+        { "text": "De bronce fundido", "isCorrect": false },
+        { "text": "De oro puro", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De dónde era el oro con que se cubrió la casa?",
+      "explanation": "El texto dice que cubrió la casa de piedras preciosas por excelencia, y que el oro era oro de Parvaim.",
+      "bibleReference": "2 Crónicas 3:6",
+      "answers": [
+        { "text": "Oro de Parvaim", "isCorrect": true },
+        { "text": "Oro de Ophir", "isCorrect": false },
+        { "text": "Oro de Egipto", "isCorrect": false },
+        { "text": "Oro del Líbano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto oro se usó para cubrir la casa del lugar santísimo?",
+      "explanation": "Hizo la casa del lugar santísimo y la cubrió de buen oro que ascendía a seiscientos talentos.",
+      "bibleReference": "2 Crónicas 3:8",
+      "answers": [
+        { "text": "Cincuenta talentos de oro", "isCorrect": false },
+        { "text": "Seiscientos talentos de oro", "isCorrect": true },
+        { "text": "Tres mil talentos de oro", "isCorrect": false },
+        { "text": "Veinte talentos de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Salomón dentro del lugar santísimo?",
+      "explanation": "Dentro del lugar santísimo hizo dos querubines de forma de niños, los cuales cubrieron de oro.",
+      "bibleReference": "2 Crónicas 3:10",
+      "answers": [
+        { "text": "Un altar de bronce de veinte codos", "isCorrect": false },
+        { "text": "Diez candeleros de oro puro", "isCorrect": false },
+        { "text": "Dos querubines, cubiertos de oro", "isCorrect": true },
+        { "text": "Un mar de fundición redondo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto medía cada una de las alas de los querubines?",
+      "explanation": "El largo de las alas de los querubines era de veinte codos, porque cada ala era de cinco codos.",
+      "bibleReference": "2 Crónicas 3:11",
+      "answers": [
+        { "text": "Veinte codos", "isCorrect": false },
+        { "text": "Diez codos", "isCorrect": false },
+        { "text": "Treinta y cinco codos", "isCorrect": false },
+        { "text": "Cinco codos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántas granadas hizo Salomón para ponerlas en las cadenas?",
+      "explanation": "Hizo cadenas en el oratorio, las puso sobre los capiteles de las columnas e hizo cien granadas, que puso en las cadenas.",
+      "bibleReference": "2 Crónicas 3:16",
+      "answers": [
+        { "text": "Cien granadas", "isCorrect": true },
+        { "text": "Doce granadas", "isCorrect": false },
+        { "text": "Cuatrocientas granadas", "isCorrect": false },
+        { "text": "Treinta granadas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Salomón a la columna de la mano derecha?",
+      "explanation": "Asentó las columnas delante del templo y llamó Jachîn a la de la mano derecha y Boaz a la de la izquierda.",
+      "bibleReference": "2 Crónicas 3:17",
+      "answers": [
+        { "text": "Boaz", "isCorrect": false },
+        { "text": "Jachîn", "isCorrect": true },
+        { "text": "Parvaim", "isCorrect": false },
+        { "text": "Moria", "isCorrect": false }
+      ]
+    }
+  ]
+}

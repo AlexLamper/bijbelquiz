@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre 2 Crónicas 7: el fuego que desciende sobre el sacrificio, la fiesta de la dedicación y la respuesta de Jehová a Salomón.",
+  "slug": "2-chronicles-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué descendió de los cielos cuando Salomón acabó de orar?",
+      "explanation": "El fuego descendió de los cielos y consumió el holocausto y las víctimas, y la gloria de Jehová llenó la casa.",
+      "bibleReference": "2 Crónicas 7:1",
+      "answers": [
+        { "text": "El fuego, que consumió el holocausto y las víctimas", "isCorrect": true },
+        { "text": "Una nube que cubrió todo el atrio del templo", "isCorrect": false },
+        { "text": "Un ángel que habló al rey delante del pueblo", "isCorrect": false },
+        { "text": "Una voz que respondió a la oración del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no podían entrar los sacerdotes en la casa de Jehová?",
+      "explanation": "Los sacerdotes no podían entrar porque la gloria de Jehová había llenado la casa de Jehová.",
+      "bibleReference": "2 Crónicas 7:2",
+      "answers": [
+        { "text": "Porque el rey había cerrado las puertas", "isCorrect": false },
+        { "text": "Porque la gloria de Jehová había henchido la casa", "isCorrect": true },
+        { "text": "Porque el fuego todavía ardía en el altar", "isCorrect": false },
+        { "text": "Porque aún no se habían santificado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hijos de Israel al ver descender el fuego y la gloria de Jehová?",
+      "explanation": "Cayeron en tierra sobre sus rostros en el pavimento y adoraron, confesando a Jehová y diciendo que es bueno y que su misericordia es para siempre.",
+      "bibleReference": "2 Crónicas 7:3",
+      "answers": [
+        { "text": "Huyeron del atrio y se encerraron en sus casas", "isCorrect": false },
+        { "text": "Alzaron el arca y la llevaron al lugar santo", "isCorrect": false },
+        { "text": "Cayeron en tierra sobre sus rostros y adoraron", "isCorrect": true },
+        { "text": "Callaron, y nadie se atrevió a hablar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos bueyes y cuántas ovejas ofreció en sacrificio el rey Salomón?",
+      "explanation": "El rey Salomón ofreció veinte y dos mil bueyes y ciento veinte mil ovejas, y así dedicaron la casa de Dios.",
+      "bibleReference": "2 Crónicas 7:5",
+      "answers": [
+        { "text": "Doce mil bueyes y veinte mil ovejas", "isCorrect": false },
+        { "text": "Dos mil bueyes y diez mil ovejas", "isCorrect": false },
+        { "text": "Treinta mil bueyes y cien mil ovejas", "isCorrect": false },
+        { "text": "Veinte y dos mil bueyes y ciento veinte mil ovejas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos días hizo Salomón fiesta junto con todo Israel?",
+      "explanation": "Salomón hizo fiesta siete días, y con él todo Israel, una gran congregación, desde la entrada de Hamath hasta el arroyo de Egipto.",
+      "bibleReference": "2 Crónicas 7:8",
+      "answers": [
+        { "text": "Siete días", "isCorrect": true },
+        { "text": "Catorce días", "isCorrect": false },
+        { "text": "Un mes entero", "isCorrect": false },
+        { "text": "Tres días", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué día del mes séptimo envió Salomón al pueblo a sus estancias?",
+      "explanation": "A los veintitrés del mes séptimo envió al pueblo a sus estancias, alegres y gozosos de corazón.",
+      "bibleReference": "2 Crónicas 7:10",
+      "answers": [
+        { "text": "A los siete del mes", "isCorrect": false },
+        { "text": "A los diez del mes", "isCorrect": false },
+        { "text": "Al primero del mes", "isCorrect": false },
+        { "text": "A los veintitrés del mes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Jehová a Salomón cuando se le apareció de noche?",
+      "explanation": "Jehová le dijo que había oído su oración y que había elegido para sí aquel lugar por casa de sacrificio.",
+      "bibleReference": "2 Crónicas 7:12",
+      "answers": [
+        { "text": "Que edificase otra casa aún más grande", "isCorrect": false },
+        { "text": "Que había oído su oración y elegido aquel lugar", "isCorrect": true },
+        { "text": "Que su oración no había sido oída", "isCorrect": false },
+        { "text": "Que el arca volvería a Gabaón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según lo que dijo Jehová, ¿qué haría si su pueblo se humillara, orara, buscara su rostro y se convirtiera de sus malos caminos?",
+      "explanation": "Jehová dijo que entonces oiría desde los cielos, perdonaría sus pecados y sanaría su tierra.",
+      "bibleReference": "2 Crónicas 7:14",
+      "answers": [
+        { "text": "Les daría un rey conforme a su corazón", "isCorrect": false },
+        { "text": "Les enviaría un profeta para enseñarles", "isCorrect": false },
+        { "text": "Perdonaría sus pecados y sanaría su tierra", "isCorrect": true },
+        { "text": "Les multiplicaría el ganado y el grano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué prometió Jehová a Salomón si andaba delante de él y guardaba sus estatutos y sus derechos?",
+      "explanation": "Jehová prometió confirmar el trono de su reino, como había concertado con David su padre.",
+      "bibleReference": "2 Crónicas 7:17-18",
+      "answers": [
+        { "text": "Confirmar el trono de su reino", "isCorrect": true },
+        { "text": "Darle más riquezas que a David", "isCorrect": false },
+        { "text": "Alargar sus días hasta cien años", "isCorrect": false },
+        { "text": "Librarlo de toda enfermedad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según la advertencia de Jehová, ¿en qué quedaría convertida aquella casa si el pueblo servía a dioses ajenos?",
+      "explanation": "Jehová dijo que echaría de delante de sí la casa que había santificado a su nombre y la pondría por proverbio y fábula en todos los pueblos.",
+      "bibleReference": "2 Crónicas 7:19-20",
+      "answers": [
+        { "text": "En un lugar de refugio para los extranjeros", "isCorrect": false },
+        { "text": "En una casa llena de tesoros de otras naciones", "isCorrect": false },
+        { "text": "En un monte cubierto de bosques", "isCorrect": false },
+        { "text": "En proverbio y fábula en todos los pueblos", "isCorrect": true }
+      ]
+    }
+  ]
+}

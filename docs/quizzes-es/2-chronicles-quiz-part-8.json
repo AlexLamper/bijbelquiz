@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre 2 Crónicas 8: las ciudades que Salomón edificó, sus obreros y gobernadores, el culto ordenado y el oro traído de Ophir.",
+  "slug": "2-chronicles-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el comienzo del capítulo, ¿cuánto tiempo había pasado desde que Salomón edificó la casa de Jehová y su propia casa?",
+      "explanation": "El capítulo empieza diciendo que aconteció al cabo de veinte años que Salomón había edificado la casa de Jehová y su casa.",
+      "bibleReference": "2 Crónicas 8:1",
+      "answers": [
+        { "text": "Diez años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": true },
+        { "text": "Siete años", "isCorrect": false },
+        { "text": "Cuarenta años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién le había dado a Salomón las ciudades que él reedificó?",
+      "explanation": "Salomón reedificó las ciudades que Hiram le había dado, y estableció en ellas a los hijos de Israel.",
+      "bibleReference": "2 Crónicas 8:2",
+      "answers": [
+        { "text": "Hiram", "isCorrect": true },
+        { "text": "Faraón", "isCorrect": false },
+        { "text": "Nabat", "isCorrect": false },
+        { "text": "David su padre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué lugar fue Salomón a tomar después?",
+      "explanation": "Después vino Salomón a Amath de Soba, y la tomó.",
+      "bibleReference": "2 Crónicas 8:3",
+      "answers": [
+        { "text": "Rama de Benjamín", "isCorrect": false },
+        { "text": "Gerar de los Filisteos", "isCorrect": false },
+        { "text": "Amath de Soba", "isCorrect": true },
+        { "text": "Maresa de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad edificó Salomón en el desierto?",
+      "explanation": "Salomón edificó a Tadmor en el desierto, y todas las ciudades de municiones que edificó en Hamath.",
+      "bibleReference": "2 Crónicas 8:4",
+      "answers": [
+        { "text": "Baalath", "isCorrect": false },
+        { "text": "Eloth", "isCorrect": false },
+        { "text": "Jerusalem", "isCorrect": false },
+        { "text": "Tadmor", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuál es la ciudad que Salomón reedificó, la de arriba y la de abajo, con muros, puertas y barras?",
+      "explanation": "Reedificó a Beth-oron la de arriba y a Beth-oron la de abajo, ciudades fortificadas de muros, puertas y barras.",
+      "bibleReference": "2 Crónicas 8:5",
+      "answers": [
+        { "text": "Beth-oron", "isCorrect": true },
+        { "text": "Baalath", "isCorrect": false },
+        { "text": "Hamath", "isCorrect": false },
+        { "text": "Tadmor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no puso Salomón a los hijos de Israel como siervos en su obra?",
+      "explanation": "El texto dice que de los hijos de Israel no puso Salomón siervos en su obra, porque eran hombres de guerra, príncipes, capitanes y comandantes de sus carros.",
+      "bibleReference": "2 Crónicas 8:9",
+      "answers": [
+        { "text": "Porque vivían lejos de Jerusalem", "isCorrect": false },
+        { "text": "Porque eran hombres de guerra", "isCorrect": true },
+        { "text": "Porque servían en la casa de Jehová", "isCorrect": false },
+        { "text": "Porque pagaban tributo cada año", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos principales de los gobernadores tenía Salomón, los cuales mandaban en aquella gente?",
+      "explanation": "Salomón tenía doscientos y cincuenta principales de los gobernadores, los cuales mandaban en aquella gente.",
+      "bibleReference": "2 Crónicas 8:10",
+      "answers": [
+        { "text": "Ciento y veinte", "isCorrect": false },
+        { "text": "Trescientos y treinta", "isCorrect": false },
+        { "text": "Quinientos y cincuenta", "isCorrect": false },
+        { "text": "Doscientos y cincuenta", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por qué pasó Salomón a la hija de Faraón de la ciudad de David a la casa que él le había edificado?",
+      "explanation": "Salomón dijo que su mujer no moraría en la casa de David rey de Israel, porque aquellas habitaciones donde ha entrado el arca de Jehová son sagradas.",
+      "bibleReference": "2 Crónicas 8:11",
+      "answers": [
+        { "text": "Porque la casa del rey no estaba acabada", "isCorrect": false },
+        { "text": "Porque ella se lo había pedido al rey", "isCorrect": false },
+        { "text": "Porque donde entró el arca de Jehová es sagrado", "isCorrect": true },
+        { "text": "Porque allí moraban sus hermanos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué tres fiestas del año se ofrecía, conforme al mandamiento de Moisés?",
+      "explanation": "El texto nombra tres veces en el año: la fiesta de los panes ázimos, la fiesta de las semanas y la fiesta de las cabañas.",
+      "bibleReference": "2 Crónicas 8:13",
+      "answers": [
+        { "text": "En la de los panes ázimos, la de las semanas y la de las cabañas", "isCorrect": true },
+        { "text": "En la de las trompetas, la del jubileo y la de la expiación", "isCorrect": false },
+        { "text": "En la de la siega, la de la dedicación y la de las suertes", "isCorrect": false },
+        { "text": "En la de la cosecha, la de los primogénitos y la del arca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto oro trajeron al rey Salomón desde Ophir?",
+      "explanation": "Los siervos de Hiram y de Salomón tomaron de Ophir cuatrocientos y cincuenta talentos de oro, y los trajeron al rey Salomón.",
+      "bibleReference": "2 Crónicas 8:18",
+      "answers": [
+        { "text": "Seiscientos sesenta talentos", "isCorrect": false },
+        { "text": "Ciento y veinte talentos", "isCorrect": false },
+        { "text": "Cuatrocientos y cincuenta talentos", "isCorrect": true },
+        { "text": "Mil y cien talentos", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre 2 Crónicas 11: la palabra de Jehová que detuvo la guerra, las ciudades que Roboam fortificó y su familia.",
+  "slug": "2-chronicles-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos hombres escogidos de guerra juntó Roboam de la casa de Judá y de Benjamín?",
+      "explanation": "Roboam juntó ciento y ochenta mil hombres escogidos de guerra para pelear contra Israel y volver el reino a Roboam.",
+      "bibleReference": "2 Crónicas 11:1",
+      "answers": [
+        { "text": "Ochenta mil", "isCorrect": false },
+        { "text": "Ciento y ochenta mil", "isCorrect": true },
+        { "text": "Cuatrocientos mil", "isCorrect": false },
+        { "text": "Trescientos mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién vino la palabra de Jehová para que hablase a Roboam?",
+      "explanation": "Fue palabra de Jehová a Semeías varón de Dios, para que hablase a Roboam hijo de Salomón, rey de Judá.",
+      "bibleReference": "2 Crónicas 11:2-3",
+      "answers": [
+        { "text": "A Semeías varón de Dios", "isCorrect": true },
+        { "text": "A Ahías Silonita", "isCorrect": false },
+        { "text": "A Iddo el vidente", "isCorrect": false },
+        { "text": "A Azarías hijo de Obed", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová a Roboam y a todos los Israelitas en Judá y Benjamín?",
+      "explanation": "Jehová dijo que no subiesen ni peleasen contra sus hermanos, y que cada uno volviese a su casa, porque él había hecho este negocio.",
+      "bibleReference": "2 Crónicas 11:4",
+      "answers": [
+        { "text": "Que subiesen a pelear contra Jeroboam", "isCorrect": false },
+        { "text": "Que repartiesen el reino en dos partes", "isCorrect": false },
+        { "text": "Que no peleasen contra sus hermanos", "isCorrect": true },
+        { "text": "Que llevasen el arca a Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuáles son las primeras tres ciudades que el texto nombra entre las que edificó Roboam?",
+      "explanation": "El texto dice que edificó a Beth-lehem, y a Etham, y a Tecoa.",
+      "bibleReference": "2 Crónicas 11:6",
+      "answers": [
+        { "text": "Gath, Maresa y Ziph", "isCorrect": false },
+        { "text": "Sora, Ajalón y Hebrón", "isCorrect": false },
+        { "text": "Adoraim, Lachîs y Acechâ", "isCorrect": false },
+        { "text": "Beth-lehem, Etham y Tecoa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué puso Roboam en las fortalezas que fortificó?",
+      "explanation": "Fortificó las fortalezas y puso en ellas capitanes, y vituallas, y vino, y aceite.",
+      "bibleReference": "2 Crónicas 11:11",
+      "answers": [
+        { "text": "Capitanes, vituallas, vino y aceite", "isCorrect": true },
+        { "text": "Escudos, lanzas, arcos y flechas", "isCorrect": false },
+        { "text": "Sacerdotes, Levitas y cantores", "isCorrect": false },
+        { "text": "Carros, caballos y jinetes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué dejaban los Levitas sus ejidos y sus posesiones para venir a Judá y a Jerusalem?",
+      "explanation": "Los Levitas dejaban sus ejidos y posesiones porque Jeroboam y sus hijos los echaban del ministerio de Jehová.",
+      "bibleReference": "2 Crónicas 11:14",
+      "answers": [
+        { "text": "Porque había hambre en toda la tierra", "isCorrect": false },
+        { "text": "Porque Jeroboam y sus hijos los echaban del ministerio", "isCorrect": true },
+        { "text": "Porque el rey Roboam les dio ciudades", "isCorrect": false },
+        { "text": "Porque Semeías se lo había mandado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por cuántos años fortificaron el reino de Judá y confirmaron a Roboam?",
+      "explanation": "El texto dice que así fortificaron el reino de Judá y confirmaron a Roboam por tres años, porque tres años anduvieron en el camino de David y de Salomón.",
+      "bibleReference": "2 Crónicas 11:17",
+      "answers": [
+        { "text": "Por un año", "isCorrect": false },
+        { "text": "Por diez años", "isCorrect": false },
+        { "text": "Por diecisiete años", "isCorrect": false },
+        { "text": "Por tres años", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De quién era hija Maachâ, a quien Roboam amó sobre todas sus mujeres y concubinas?",
+      "explanation": "El texto dice que Roboam amó a Maachâ hija de Absalom sobre todas sus mujeres y concubinas.",
+      "bibleReference": "2 Crónicas 11:20-21",
+      "answers": [
+        { "text": "De Jerimoth", "isCorrect": false },
+        { "text": "De Eliab", "isCorrect": false },
+        { "text": "De Absalom", "isCorrect": true },
+        { "text": "De Uriel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas mujeres y cuántas concubinas tomó Roboam?",
+      "explanation": "Roboam tomó diez y ocho mujeres y sesenta concubinas, y engendró veintiocho hijos y sesenta hijas.",
+      "bibleReference": "2 Crónicas 11:21",
+      "answers": [
+        { "text": "Diez y ocho mujeres y sesenta concubinas", "isCorrect": true },
+        { "text": "Catorce mujeres y treinta concubinas", "isCorrect": false },
+        { "text": "Veinte mujeres y ochenta concubinas", "isCorrect": false },
+        { "text": "Doce mujeres y cuarenta concubinas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién puso Roboam por cabeza y príncipe de sus hermanos, porque quería hacerle rey?",
+      "explanation": "Roboam puso a Abías hijo de Maachâ por cabeza y príncipe de sus hermanos, porque quería hacerle rey.",
+      "bibleReference": "2 Crónicas 11:22",
+      "answers": [
+        { "text": "A Jeus hijo de Mahalath", "isCorrect": false },
+        { "text": "A Zaham hijo de Mahalath", "isCorrect": false },
+        { "text": "A Athai hijo de Maachâ", "isCorrect": false },
+        { "text": "A Abías hijo de Maachâ", "isCorrect": true }
+      ]
+    }
+  ]
+}

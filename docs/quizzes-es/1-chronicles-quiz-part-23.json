@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre 1 Crónicas 23: David hace rey a Salomón, cuenta a los Levitas y reparte su servicio en la casa de Jehová.",
+  "slug": "1-chronicles-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Siendo ya viejo y harto de días, ¿a quién hizo David rey sobre Israel?",
+      "explanation": "El capítulo empieza diciendo que David, ya viejo y harto de días, hizo a Salomón su hijo rey sobre Israel.",
+      "bibleReference": "1 Crónicas 23:1",
+      "answers": [
+        { "text": "A Salomón su hijo", "isCorrect": true },
+        { "text": "A Adonías su hijo", "isCorrect": false },
+        { "text": "A Joab su general", "isCorrect": false },
+        { "text": "A Sadoc el sacerdote", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos Levitas resultaron al contarlos de treinta años arriba?",
+      "explanation": "Contados uno a uno por sus cabezas, los Levitas de treinta años arriba fueron treinta y ocho mil.",
+      "bibleReference": "1 Crónicas 23:3",
+      "answers": [
+        { "text": "Veinticuatro mil", "isCorrect": false },
+        { "text": "Treinta y ocho mil", "isCorrect": true },
+        { "text": "Veintidós mil", "isCorrect": false },
+        { "text": "Cuarenta y seis mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos de ellos fueron puestos para dar prisa a la obra de la casa de Jehová?",
+      "explanation": "De los Levitas contados, veinticuatro mil quedaron para dar prisa a la obra de la casa de Jehová.",
+      "bibleReference": "1 Crónicas 23:4",
+      "answers": [
+        { "text": "Seis mil", "isCorrect": false },
+        { "text": "Cuatro mil", "isCorrect": false },
+        { "text": "Veinticuatro mil", "isCorrect": true },
+        { "text": "Treinta mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según David, ¿para qué servían los cuatro mil que tenían los instrumentos que él había hecho?",
+      "explanation": "David dijo que había además cuatro mil para alabar a Jehová con los instrumentos que él había hecho para rendir alabanzas.",
+      "bibleReference": "1 Crónicas 23:5",
+      "answers": [
+        { "text": "Para guardar las puertas del atrio", "isCorrect": false },
+        { "text": "Para gobernar y juzgar al pueblo", "isCorrect": false },
+        { "text": "Para repartir los panes de cada día", "isCorrect": false },
+        { "text": "Para alabar a Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Conforme a qué hijos de Leví repartió David a los Levitas en órdenes?",
+      "explanation": "David los repartió en órdenes conforme a los hijos de Leví: Gersón, Coath y Merari.",
+      "bibleReference": "1 Crónicas 23:6",
+      "answers": [
+        { "text": "Ladán, Simi y Jahath", "isCorrect": false },
+        { "text": "Gersón, Coath y Merari", "isCorrect": true },
+        { "text": "Amram, Ishar y Hebrón", "isCorrect": false },
+        { "text": "Mahali, Musi y Eleazar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para qué fue apartado Aarón, él y sus hijos para siempre?",
+      "explanation": "Aarón fue apartado para ser dedicado a las más santas cosas, para quemar perfumes delante de Jehová, ministrarle y bendecir en su nombre.",
+      "bibleReference": "1 Crónicas 23:13",
+      "answers": [
+        { "text": "Para ser dedicado a las más santas cosas", "isCorrect": true },
+        { "text": "Para gobernar las obras de fuera", "isCorrect": false },
+        { "text": "Para llevar siempre el tabernáculo", "isCorrect": false },
+        { "text": "Para contar a los hijos de Leví", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron los hijos de Moisés según este capítulo?",
+      "explanation": "El texto dice que los hijos de Moisés fueron Gersón y Eliezer.",
+      "bibleReference": "1 Crónicas 23:15",
+      "answers": [
+        { "text": "Aarón y Moisés", "isCorrect": false },
+        { "text": "Sebuel y Rehabía", "isCorrect": false },
+        { "text": "Jahath y Zinat", "isCorrect": false },
+        { "text": "Gersón y Eliezer", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Eleazar, hijo de Mahali?",
+      "explanation": "Eleazar murió sin hijos, pero tuvo hijas, y los hijos de Cis, sus hermanos, las tomaron por mujeres.",
+      "bibleReference": "1 Crónicas 23:22",
+      "answers": [
+        { "text": "Que tuvo muchos hijos varones", "isCorrect": false },
+        { "text": "Que fue el primero de su familia", "isCorrect": false },
+        { "text": "Que murió sin hijos, pero tuvo hijas", "isCorrect": true },
+        { "text": "Que no tuvo hijos ni hijas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo David que Jehová Dios de Israel había dado a su pueblo?",
+      "explanation": "David dijo que Jehová Dios de Israel había dado reposo a su pueblo Israel, y el habitar en Jerusalem para siempre.",
+      "bibleReference": "1 Crónicas 23:25",
+      "answers": [
+        { "text": "Reposo, y el habitar en Jerusalem", "isCorrect": true },
+        { "text": "Victoria sobre todos los reyes", "isCorrect": false },
+        { "text": "Riquezas y muchos ganados", "isCorrect": false },
+        { "text": "Una tienda en medio del desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer los Levitas cada mañana y también a la tarde?",
+      "explanation": "Debían asistir todos los días, cada mañana y asimismo a la tarde, para confesar y alabar a Jehová.",
+      "bibleReference": "1 Crónicas 23:30",
+      "answers": [
+        { "text": "Echar suertes por sus turnos", "isCorrect": false },
+        { "text": "Confesar y alabar a Jehová", "isCorrect": true },
+        { "text": "Contar los vasos del santuario", "isCorrect": false },
+        { "text": "Llevar el tabernáculo del testimonio", "isCorrect": false }
+      ]
+    }
+  ]
+}

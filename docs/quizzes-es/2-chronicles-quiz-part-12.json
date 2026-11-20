@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre 2 Crónicas 12: la subida de Sisac rey de Egipto contra Jerusalem, la humillación de Roboam y el fin de su reinado.",
+  "slug": "2-chronicles-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo Roboam cuando hubo confirmado el reino?",
+      "explanation": "El capítulo empieza diciendo que, como Roboam hubo confirmado el reino, dejó la ley de Jehová, y con él todo Israel.",
+      "bibleReference": "2 Crónicas 12:1",
+      "answers": [
+        { "text": "Dejó la ley de Jehová, y con él todo Israel", "isCorrect": true },
+        { "text": "Reparó el altar de Jehová en Jerusalem", "isCorrect": false },
+        { "text": "Juntó al pueblo para hacer un pacto", "isCorrect": false },
+        { "text": "Envió profetas por todas las ciudades", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién subió contra Jerusalem en el quinto año del rey Roboam?",
+      "explanation": "En el quinto año del rey Roboam subió Sisac rey de Egipto contra Jerusalem, porque se habían rebelado contra Jehová.",
+      "bibleReference": "2 Crónicas 12:2",
+      "answers": [
+        { "text": "Baasa rey de Israel", "isCorrect": false },
+        { "text": "Sisac rey de Egipto", "isCorrect": true },
+        { "text": "Zera Etiope", "isCorrect": false },
+        { "text": "Ben-adad rey de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con cuántos carros subió Sisac?",
+      "explanation": "Subió con mil y doscientos carros y con sesenta mil hombres de a caballo.",
+      "bibleReference": "2 Crónicas 12:3",
+      "answers": [
+        { "text": "Con trescientos carros", "isCorrect": false },
+        { "text": "Con seiscientos carros", "isCorrect": false },
+        { "text": "Con mil y doscientos carros", "isCorrect": true },
+        { "text": "Con sesenta mil carros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Semeías profeta a Roboam y a los príncipes de Judá, de parte de Jehová?",
+      "explanation": "Semeías les dijo de parte de Jehová: Vosotros me habéis dejado, y yo también os he dejado en manos de Sisac.",
+      "bibleReference": "2 Crónicas 12:5",
+      "answers": [
+        { "text": "Que Jerusalem sería destruida del todo", "isCorrect": false },
+        { "text": "Que el rey caería en la batalla", "isCorrect": false },
+        { "text": "Que Sisac volvería sin tomar nada", "isCorrect": false },
+        { "text": "Que los dejaba en manos de Sisac", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los príncipes de Israel y el rey al humillarse?",
+      "explanation": "Los príncipes de Israel y el rey se humillaron y dijeron: Justo es Jehová.",
+      "bibleReference": "2 Crónicas 12:6",
+      "answers": [
+        { "text": "Pecamos contra Jehová nuestro Dios", "isCorrect": false },
+        { "text": "Justo es Jehová", "isCorrect": true },
+        { "text": "Jehová es nuestra fortaleza", "isCorrect": false },
+        { "text": "No hay Dios semejante a ti", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando Jehová vio que se habían humillado, ¿qué palabra vino a Semeías?",
+      "explanation": "Jehová dijo que, por haberse humillado, no los destruiría, sino que los salvaría en breve y no derramaría su ira contra Jerusalem por mano de Sisac.",
+      "bibleReference": "2 Crónicas 12:7",
+      "answers": [
+        { "text": "Que no los destruiría, sino que los salvaría en breve", "isCorrect": true },
+        { "text": "Que los entregaría del todo en manos de Sisac", "isCorrect": false },
+        { "text": "Que Jerusalem sería quemada con fuego", "isCorrect": false },
+        { "text": "Que el reino sería dado a Jeroboam", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué tomó Sisac cuando subió a Jerusalem?",
+      "explanation": "Sisac tomó los tesoros de la casa de Jehová y los tesoros de la casa del rey, y se llevó los paveses de oro que Salomón había hecho.",
+      "bibleReference": "2 Crónicas 12:9",
+      "answers": [
+        { "text": "El arca del pacto que puso Salomón", "isCorrect": false },
+        { "text": "Las puertas y barras de la ciudad", "isCorrect": false },
+        { "text": "A los Levitas y a los sacerdotes", "isCorrect": false },
+        { "text": "Los tesoros de la casa de Jehová y del rey", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De qué material hizo el rey Roboam los paveses que puso en lugar de los que tomó Sisac?",
+      "explanation": "En lugar de ellos el rey Roboam hizo paveses de metal y los entregó en manos de los jefes de la guardia.",
+      "bibleReference": "2 Crónicas 12:10",
+      "answers": [
+        { "text": "De oro puro", "isCorrect": false },
+        { "text": "De madera de Algummim", "isCorrect": false },
+        { "text": "De metal", "isCorrect": true },
+        { "text": "De plata labrada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos años tenía Roboam cuando comenzó a reinar?",
+      "explanation": "Roboam era de cuarenta y un años cuando comenzó a reinar, y reinó diecisiete años en Jerusalem.",
+      "bibleReference": "2 Crónicas 12:13",
+      "answers": [
+        { "text": "Cuarenta y un años", "isCorrect": true },
+        { "text": "Diecisiete años", "isCorrect": false },
+        { "text": "Treinta y cinco años", "isCorrect": false },
+        { "text": "Veintiocho años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en lugar de Roboam cuando éste durmió con sus padres?",
+      "explanation": "Roboam fue sepultado en la ciudad de David, y reinó en su lugar Abías su hijo.",
+      "bibleReference": "2 Crónicas 12:16",
+      "answers": [
+        { "text": "Jeroboam hijo de Nabat", "isCorrect": false },
+        { "text": "Asa su hijo", "isCorrect": false },
+        { "text": "Josaphat su hijo", "isCorrect": false },
+        { "text": "Abías su hijo", "isCorrect": true }
+      ]
+    }
+  ]
+}

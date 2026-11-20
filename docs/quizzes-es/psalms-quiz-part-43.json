@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 43",
+  "description": "Diez preguntas sobre Salmos 43: el ruego de ser juzgado por Dios, la luz y la verdad que guían al monte santo y el alma que espera en Dios.",
+  "slug": "psalms-quiz-part-43",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el salmista a Dios en el primer versículo?",
+      "explanation": "El versículo 1 pide a Dios que lo juzgue y abogue su causa.",
+      "bibleReference": "Salmos 43:1",
+      "answers": [
+        { "text": "Que guarde silencio sobre su causa", "isCorrect": false },
+        { "text": "Que lo juzgue y abogue su causa", "isCorrect": true },
+        { "text": "Que le dé riquezas y honra", "isCorrect": false },
+        { "text": "Que lo lleve lejos de su tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿de quién pide el salmista ser librado?",
+      "explanation": "El versículo 1 pide ser librado de gente impía y del hombre de engaño e iniquidad.",
+      "bibleReference": "Salmos 43:1",
+      "answers": [
+        { "text": "De los reyes de la tierra", "isCorrect": false },
+        { "text": "De los hijos de Coré", "isCorrect": false },
+        { "text": "De los que cantan con arpa", "isCorrect": false },
+        { "text": "De gente impía y del hombre de engaño", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el salmista a Dios en el versículo 2?",
+      "explanation": "El versículo 2 dice que Dios es el Dios de su fortaleza.",
+      "bibleReference": "Salmos 43:2",
+      "answers": [
+        { "text": "El Dios de su fortaleza", "isCorrect": true },
+        { "text": "El Dios de su casa", "isCorrect": false },
+        { "text": "El Dios de los ejércitos", "isCorrect": false },
+        { "text": "El Dios de los cielos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta el salmista a Dios en el versículo 2?",
+      "explanation": "El versículo 2 pregunta a Dios por qué lo ha desechado y por qué andará enlutado.",
+      "bibleReference": "Salmos 43:2",
+      "answers": [
+        { "text": "Por qué no le da pan", "isCorrect": false },
+        { "text": "Por qué calla su alabanza", "isCorrect": false },
+        { "text": "Por qué lo ha desechado", "isCorrect": true },
+        { "text": "Por qué lo ha ensalzado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿por causa de qué anda enlutado?",
+      "explanation": "El versículo 2 dice que anda enlutado por la opresión del enemigo.",
+      "bibleReference": "Salmos 43:2",
+      "answers": [
+        { "text": "Por la muerte de su madre", "isCorrect": false },
+        { "text": "Por el hambre en la tierra", "isCorrect": false },
+        { "text": "Por el peso de sus años", "isCorrect": false },
+        { "text": "Por la opresión del enemigo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que Dios envíe, en el versículo 3?",
+      "explanation": "El versículo 3 pide que Dios envíe su luz y su verdad, porque ellas lo guiarán.",
+      "bibleReference": "Salmos 43:3",
+      "answers": [
+        { "text": "Su luz y su verdad", "isCorrect": true },
+        { "text": "Su ira y su juicio", "isCorrect": false },
+        { "text": "Su arpa y su canción", "isCorrect": false },
+        { "text": "Su ángel y su ejército", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿a dónde lo conducirán la luz y la verdad?",
+      "explanation": "El versículo 3 dice que ellas lo guiarán y lo conducirán al monte de su santidad y a sus tabernáculos.",
+      "bibleReference": "Salmos 43:3",
+      "answers": [
+        { "text": "A la tierra del Jordán", "isCorrect": false },
+        { "text": "Al monte de su santidad", "isCorrect": true },
+        { "text": "A la casa de sus enemigos", "isCorrect": false },
+        { "text": "Al lecho del dolor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿a dónde entrará el salmista?",
+      "explanation": "El versículo 4 dice que entrará al altar de Dios, al Dios alegría de su gozo.",
+      "bibleReference": "Salmos 43:4",
+      "answers": [
+        { "text": "Al monte Carmelo", "isCorrect": false },
+        { "text": "A la ciudad del rey", "isCorrect": false },
+        { "text": "Al altar de Dios", "isCorrect": true },
+        { "text": "Al campo de batalla", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumento dice el salmista que alabará a Dios?",
+      "explanation": "El versículo 4 dice que lo alabará con arpa.",
+      "bibleReference": "Salmos 43:4",
+      "answers": [
+        { "text": "Con arpa", "isCorrect": true },
+        { "text": "Con salterio", "isCorrect": false },
+        { "text": "Con trompeta", "isCorrect": false },
+        { "text": "Con pandero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué manda el salmista a su alma?",
+      "explanation": "El versículo 5 pregunta a su alma por qué se abate y se conturba, y le manda esperar a Dios, porque aun le tiene que alabar.",
+      "bibleReference": "Salmos 43:5",
+      "answers": [
+        { "text": "Callar para siempre", "isCorrect": false },
+        { "text": "Esperar a Dios", "isCorrect": true },
+        { "text": "Buscar otro consuelo", "isCorrect": false },
+        { "text": "Volver a su tierra", "isCorrect": false }
+      ]
+    }
+  ]
+}

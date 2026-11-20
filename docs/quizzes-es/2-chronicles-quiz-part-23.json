@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre 2 Crónicas 23: la alianza del sacerdote Joiada, la coronación del hijo del rey, el fin de Athalía y la caída del templo de Baal.",
+  "slug": "2-chronicles-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué año se animó Joiada y tomó consigo en alianza a los centuriones?",
+      "explanation": "Mas el séptimo año se animó Joiada y tomó consigo en alianza a los centuriones.",
+      "bibleReference": "2 Crónicas 23:1",
+      "answers": [
+        { "text": "El primer año", "isCorrect": false },
+        { "text": "El tercer año", "isCorrect": false },
+        { "text": "El séptimo año", "isCorrect": true },
+        { "text": "El sexto año", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Joiada a la multitud que hizo alianza con el rey en la casa de Dios?",
+      "explanation": "Les dijo: He aquí el hijo del rey, el cual reinará, como Jehová lo tiene dicho de los hijos de David.",
+      "bibleReference": "2 Crónicas 23:3",
+      "answers": [
+        { "text": "He aquí el hijo del rey, el cual reinará", "isCorrect": true },
+        { "text": "Athalía ha de ser juzgada en el atrio", "isCorrect": false },
+        { "text": "Hemos de reparar la casa de Jehová", "isCorrect": false },
+        { "text": "Jehová ha escogido un sacerdote por rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo repartió Joiada a los que entraban de semana?",
+      "explanation": "Una tercera parte estaría de porteros, otra tercera parte en la casa del rey y otra tercera parte en la puerta del fundamento, y todo el pueblo en los patios.",
+      "bibleReference": "2 Crónicas 23:4-5",
+      "answers": [
+        { "text": "Mitad en el atrio y mitad en la puerta mayor", "isCorrect": false },
+        { "text": "Todos juntos alrededor del altar del holocausto", "isCorrect": false },
+        { "text": "Unos en Jerusalem y otros en las ciudades de Judá", "isCorrect": false },
+        { "text": "En tres partes: porteros, casa del rey y puerta del fundamento", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué debían hacer los Levitas con el rey?",
+      "explanation": "Los Levitas rodearían al rey por todas partes, y cada uno tendría sus armas en la mano, y estarían con él cuando entrase y cuando saliese.",
+      "bibleReference": "2 Crónicas 23:7",
+      "answers": [
+        { "text": "Llevarle al templo de Baal", "isCorrect": false },
+        { "text": "Rodearle por todas partes, armados", "isCorrect": true },
+        { "text": "Esconderle en la cámara de los lechos", "isCorrect": false },
+        { "text": "Enviarle fuera de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dio el sacerdote Joiada a los centuriones?",
+      "explanation": "Joiada dio a los centuriones las lanzas, paveses y escudos que habían sido del rey David, que estaban en la casa de Dios.",
+      "bibleReference": "2 Crónicas 23:9",
+      "answers": [
+        { "text": "Las trompetas de los sacerdotes", "isCorrect": false },
+        { "text": "Los vasos de oro de la casa de Jehová", "isCorrect": false },
+        { "text": "Las lanzas, paveses y escudos del rey David", "isCorrect": true },
+        { "text": "Los carros y los caballos del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le pusieron al hijo del rey cuando le hicieron rey?",
+      "explanation": "Sacaron al hijo del rey, le pusieron la corona y el testimonio y le hicieron rey; Joiada y sus hijos le ungieron y dijeron: ¡Viva el rey!",
+      "bibleReference": "2 Crónicas 23:11",
+      "answers": [
+        { "text": "La corona y el testimonio", "isCorrect": true },
+        { "text": "El manto y el cetro", "isCorrect": false },
+        { "text": "El efod y el turbante", "isCorrect": false },
+        { "text": "La lámpara y el pacto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Athalía cuando vio al rey junto a su columna a la entrada?",
+      "explanation": "Athalía rasgó sus vestidos y dijo: ¡Conjuración, conjuración!",
+      "bibleReference": "2 Crónicas 23:13",
+      "answers": [
+        { "text": "¡Viva el rey para siempre!", "isCorrect": false },
+        { "text": "¡Conjuración, conjuración!", "isCorrect": true },
+        { "text": "¡Jehová es Dios en los cielos!", "isCorrect": false },
+        { "text": "¡Traed acá las bocinas!", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde mataron a Athalía?",
+      "explanation": "Joiada mandó que no la matasen en la casa de Jehová; le echaron mano y la mataron después de que ella pasó la entrada de la puerta de los caballos de la casa del rey.",
+      "bibleReference": "2 Crónicas 23:14-15",
+      "answers": [
+        { "text": "En el atrio de la casa de Jehová", "isCorrect": false },
+        { "text": "Dentro del templo de Baal", "isCorrect": false },
+        { "text": "Junto al altar del holocausto", "isCorrect": false },
+        { "text": "Pasada la puerta de los caballos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quién mataron delante de los altares del templo de Baal?",
+      "explanation": "Todo el pueblo entró en el templo de Baal, lo derribó con sus altares, hizo pedazos sus imágenes y mató delante de los altares a Mathán, sacerdote de Baal.",
+      "bibleReference": "2 Crónicas 23:17",
+      "answers": [
+        { "text": "A Azarías hijo de Obed", "isCorrect": false },
+        { "text": "A Ismael hijo de Johanán", "isCorrect": false },
+        { "text": "A Mathán, sacerdote de Baal", "isCorrect": true },
+        { "text": "A Elisaphat hijo de Zichri", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo quedó la ciudad después de que mataron a Athalía?",
+      "explanation": "Todo el pueblo del país hizo alegrías, y la ciudad estuvo quieta después de que mataron a Athalía a cuchillo.",
+      "bibleReference": "2 Crónicas 23:21",
+      "answers": [
+        { "text": "Estuvo en llanto y ayuno siete días", "isCorrect": false },
+        { "text": "Hizo alegrías y estuvo quieta", "isCorrect": true },
+        { "text": "Quedó cercada por el ejército de Siria", "isCorrect": false },
+        { "text": "Fue saqueada por los príncipes de Judá", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre 2 Crónicas 18: la alianza de Josaphat con Achâb, los cuatrocientos profetas, la palabra de Michêas y la batalla de Ramoth de Galaad.",
+  "slug": "2-chronicles-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con quién trabó parentesco Josaphat, que tenía riquezas y gloria en abundancia?",
+      "explanation": "El capítulo empieza diciendo que Josaphat tenía riquezas y gloria en abundancia, y que trabó parentesco con Achâb.",
+      "bibleReference": "2 Crónicas 18:1",
+      "answers": [
+        { "text": "Con Achâb", "isCorrect": true },
+        { "text": "Con Hazael", "isCorrect": false },
+        { "text": "Con Amón", "isCorrect": false },
+        { "text": "Con Imla", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos profetas juntó el rey de Israel para preguntar si debía subir contra Ramoth de Galaad?",
+      "explanation": "El rey de Israel juntó cuatrocientos profetas, y todos le dijeron que subiese, porque Dios los entregaría en mano del rey.",
+      "bibleReference": "2 Crónicas 18:5",
+      "answers": [
+        { "text": "Cincuenta profetas", "isCorrect": false },
+        { "text": "Cuatrocientos profetas", "isCorrect": true },
+        { "text": "Cien profetas", "isCorrect": false },
+        { "text": "Cuatro mil profetas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué profeta de Jehová nombró el rey de Israel, diciendo que nunca le profetizaba cosa buena?",
+      "explanation": "El rey de Israel dijo que aún quedaba un hombre por el cual podían preguntar a Jehová, pero que le aborrecía porque nunca le profetizaba cosa buena: Michêas, hijo de Imla.",
+      "bibleReference": "2 Crónicas 18:7",
+      "answers": [
+        { "text": "Jehú, hijo de Hanani", "isCorrect": false },
+        { "text": "Sedechîas, hijo de Chênaana", "isCorrect": false },
+        { "text": "Michêas, hijo de Imla", "isCorrect": true },
+        { "text": "Eliezer, hijo de Dodava", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se había hecho Sedechîas hijo de Chênaana para anunciar la victoria sobre los Siros?",
+      "explanation": "Sedechîas hijo de Chênaana se había hecho cuernos de hierro y decía que con ellos el rey acornearía a los Siros hasta destruirlos del todo.",
+      "bibleReference": "2 Crónicas 18:10",
+      "answers": [
+        { "text": "Un arco y saetas", "isCorrect": false },
+        { "text": "Una corona de oro", "isCorrect": false },
+        { "text": "Un carro de guerra", "isCorrect": false },
+        { "text": "Cuernos de hierro", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo dijo Michêas que había visto a todo Israel?",
+      "explanation": "Michêas dijo que había visto a todo Israel derramado por los montes como ovejas sin pastor, y que Jehová dijo que volviese cada uno en paz a su casa.",
+      "bibleReference": "2 Crónicas 18:16",
+      "answers": [
+        { "text": "Peleando y venciendo en Ramoth de Galaad", "isCorrect": false },
+        { "text": "Derramado por los montes como ovejas sin pastor", "isCorrect": true },
+        { "text": "Reunido en Samaria con grande alegría", "isCorrect": false },
+        { "text": "Huyendo delante de los carros de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según la visión de Michêas, ¿qué se ofreció a hacer el espíritu que se puso delante de Jehová?",
+      "explanation": "El espíritu dijo que saldría y sería espíritu de mentira en la boca de todos los profetas de Achâb, y Jehová le mandó ir y hacerlo así.",
+      "bibleReference": "2 Crónicas 18:20-21",
+      "answers": [
+        { "text": "Ser espíritu de mentira en la boca de sus profetas", "isCorrect": true },
+        { "text": "Cerrar los cielos para que no lloviese sobre Israel", "isCorrect": false },
+        { "text": "Herir al rey de Israel con una grave enfermedad", "isCorrect": false },
+        { "text": "Traer los carros de Siria contra la ciudad de Samaria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le hizo Sedechîas a Michêas al oír su profecía?",
+      "explanation": "Sedechîas hijo de Chênaana se llegó a Michêas y le hirió en la mejilla, preguntándole por qué camino se había apartado de él el espíritu de Jehová.",
+      "bibleReference": "2 Crónicas 18:23",
+      "answers": [
+        { "text": "Le quitó su manto", "isCorrect": false },
+        { "text": "Le echó de la ciudad", "isCorrect": false },
+        { "text": "Le hirió en la mejilla", "isCorrect": true },
+        { "text": "Le rompió sus cuernos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué mandó el rey que sustentasen a Michêas en la cárcel?",
+      "explanation": "El rey mandó poner a Michêas en la cárcel y sustentarle con pan de aflicción y agua de angustia, hasta que él volviese en paz.",
+      "bibleReference": "2 Crónicas 18:26",
+      "answers": [
+        { "text": "Con pan y vino de la casa del rey", "isCorrect": false },
+        { "text": "Con las ovejas y los bueyes del rey", "isCorrect": false },
+        { "text": "Con el agua del pozo de Samaria", "isCorrect": false },
+        { "text": "Con pan de aflicción y agua de angustia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué había mandado el rey de Siria a los capitanes de los carros que tenía consigo?",
+      "explanation": "El rey de Siria les mandó que no peleasen con chico ni con grande, sino sólo con el rey de Israel.",
+      "bibleReference": "2 Crónicas 18:30",
+      "answers": [
+        { "text": "Que se retirasen al ponerse el sol", "isCorrect": false },
+        { "text": "Que no entrasen en la batalla aquel día", "isCorrect": false },
+        { "text": "Que peleasen sólo con el rey de Israel", "isCorrect": true },
+        { "text": "Que quemasen la ciudad de Ramoth de Galaad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo terminó aquel día para el rey de Israel?",
+      "explanation": "Una saeta disparada a la ventura le hirió entre las junturas y el coselete; estuvo en pie en el carro hasta la tarde y murió a puestas del sol.",
+      "bibleReference": "2 Crónicas 18:33-34",
+      "answers": [
+        { "text": "Venció a los Siros y volvió en paz a Samaria", "isCorrect": false },
+        { "text": "Fue herido por una saeta y murió al ponerse el sol", "isCorrect": true },
+        { "text": "Fue prendido por los capitanes de los carros", "isCorrect": false },
+        { "text": "Huyó del campo y se escondió de cámara en cámara", "isCorrect": false }
+      ]
+    }
+  ]
+}

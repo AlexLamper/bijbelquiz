@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre 1 Crónicas 26: los repartimientos de los porteros, las suertes por cada puerta y los encargados de los tesoros.",
+  "slug": "1-chronicles-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué repartimientos trata el comienzo del capítulo?",
+      "explanation": "El capítulo empieza hablando de los repartimientos de los porteros, y nombra primero a los Coraitas.",
+      "bibleReference": "1 Crónicas 26:1",
+      "answers": [
+        { "text": "De los repartimientos de los porteros", "isCorrect": true },
+        { "text": "De los repartimientos de los cantores", "isCorrect": false },
+        { "text": "De los repartimientos de los jueces", "isCorrect": false },
+        { "text": "De los repartimientos de las tribus", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué razón da el texto al terminar la lista de los hijos de Obed-edom?",
+      "explanation": "Después de nombrar a sus hijos, el texto dice que Dios había bendecido a Obed-edom.",
+      "bibleReference": "1 Crónicas 26:5",
+      "answers": [
+        { "text": "Que Obed-edom era el más anciano", "isCorrect": false },
+        { "text": "Que Obed-edom había guardado el arca", "isCorrect": false },
+        { "text": "Que Dios había bendecido a Obed-edom", "isCorrect": true },
+        { "text": "Que Obed-edom era príncipe de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran todos los de los hijos de Obed-edom, con sus hijos y sus hermanos?",
+      "explanation": "El texto dice que ellos, con sus hijos y sus hermanos, hombres robustos y fuertes para el ministerio, eran sesenta y dos.",
+      "bibleReference": "1 Crónicas 26:8",
+      "answers": [
+        { "text": "Dieciocho", "isCorrect": false },
+        { "text": "Sesenta y dos", "isCorrect": true },
+        { "text": "Trece", "isCorrect": false },
+        { "text": "Setenta y dos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres valientes eran los hijos de Meselemia y sus hermanos?",
+      "explanation": "El texto dice que los hijos de Meselemia y sus hermanos eran dieciocho hombres valientes.",
+      "bibleReference": "1 Crónicas 26:9",
+      "answers": [
+        { "text": "Veintidós", "isCorrect": false },
+        { "text": "Cuatro", "isCorrect": false },
+        { "text": "Treinta", "isCorrect": false },
+        { "text": "Dieciocho", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por qué era Simri el principal de los hijos de Hosa, aunque no era el primogénito?",
+      "explanation": "El texto explica que, aunque no era el primogénito, su padre lo puso para que fuese cabeza.",
+      "bibleReference": "1 Crónicas 26:10",
+      "answers": [
+        { "text": "Porque su padre lo puso para que fuese cabeza", "isCorrect": true },
+        { "text": "Porque sus hermanos mayores murieron", "isCorrect": false },
+        { "text": "Porque el rey David lo eligió por suerte", "isCorrect": false },
+        { "text": "Porque era el más valiente de la casa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran todos los hijos de Hosa y sus hermanos?",
+      "explanation": "El texto dice que todos los hijos de Hosa y sus hermanos fueron trece.",
+      "bibleReference": "1 Crónicas 26:11",
+      "answers": [
+        { "text": "Seis", "isCorrect": false },
+        { "text": "Veinte", "isCorrect": false },
+        { "text": "Trece", "isCorrect": true },
+        { "text": "Cuatro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Hacia dónde salió la suerte de Zachârías, el hijo de Selemía?",
+      "explanation": "La suerte cayó al oriente a Selemía, y la suerte de Zachârías su hijo, consejero entendido, salió al norte.",
+      "bibleReference": "1 Crónicas 26:14",
+      "answers": [
+        { "text": "Al oriente", "isCorrect": false },
+        { "text": "Al norte", "isCorrect": true },
+        { "text": "Al occidente", "isCorrect": false },
+        { "text": "Al mediodía", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Y hacia dónde cayó la suerte de Obed-edom?",
+      "explanation": "El texto dice que por Obed-edom cayó al mediodía, y por sus hijos la casa de la consulta.",
+      "bibleReference": "1 Crónicas 26:15",
+      "answers": [
+        { "text": "Al norte", "isCorrect": false },
+        { "text": "Al oriente", "isCorrect": false },
+        { "text": "Al occidente", "isCorrect": false },
+        { "text": "Al mediodía", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién era principal sobre los tesoros?",
+      "explanation": "El texto dice que Sebuel, hijo de Gersón, hijo de Moisés, era principal sobre los tesoros.",
+      "bibleReference": "1 Crónicas 26:24",
+      "answers": [
+        { "text": "Sebuel, hijo de Gersón", "isCorrect": true },
+        { "text": "Jehieli, hijo de Ladán", "isCorrect": false },
+        { "text": "Chenanía el Isharita", "isCorrect": false },
+        { "text": "Achîas, hijo de Eliezer", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre quiénes constituyó el rey David a los hermanos de Jerías?",
+      "explanation": "El rey David los constituyó sobre los Rubenitas, los Gaditas y la media tribu de Manasés, para todas las cosas de Dios y los negocios del rey.",
+      "bibleReference": "1 Crónicas 26:32",
+      "answers": [
+        { "text": "Sobre los cantores y los sacerdotes del templo", "isCorrect": false },
+        { "text": "Sobre los porteros y los tesoros de la casa", "isCorrect": false },
+        { "text": "Sobre los Rubenitas, Gaditas y media tribu de Manasés", "isCorrect": true },
+        { "text": "Sobre las ciudades de los carros y los jinetes", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Esdras 3: el altar levantado en el mes séptimo, la solemnidad de las cabañas y los cimientos de la casa de Jehová.",
+  "slug": "ezra-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué sucedió llegado el mes séptimo, estando ya los hijos de Israel en las ciudades?",
+      "explanation": "Llegado el mes séptimo, el pueblo se juntó como un solo hombre en Jerusalem.",
+      "bibleReference": "Esdras 3:1",
+      "answers": [
+        {
+          "text": "Comenzaron á edificar el templo de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "El pueblo se juntó como un solo hombre en Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Cesó la obra de la casa de Dios en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Vinieron los enemigos de Judá y de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes edificaron el altar del Dios de Israel?",
+      "explanation": "Se levantó Jesuá hijo de Josadec con sus hermanos los sacerdotes, y Zorobabel hijo de Sealthiel con sus hermanos, y edificaron el altar del Dios de Israel.",
+      "bibleReference": "Esdras 3:2",
+      "answers": [
+        {
+          "text": "Sesbassar príncipe de Judá y Mitrídates tesorero",
+          "isCorrect": false
+        },
+        {
+          "text": "Haggeo el profeta y Zacarías, con los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Jesuá hijo de Josadec y Zorobabel hijo de Sealthiel, con sus hermanos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los Sidonios y los Tirios con sus carpinteros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrecieron sobre el altar, aunque tenían miedo de los pueblos de las tierras?",
+      "explanation": "Asentaron el altar sobre sus basas y ofrecieron sobre él holocaustos á Jehová, holocaustos á la mañana y á la tarde.",
+      "bibleReference": "Esdras 3:3",
+      "answers": [
+        {
+          "text": "Perfume de especias cada mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Primicias de grano, vino y aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificios pacíficos una vez al año",
+          "isCorrect": false
+        },
+        {
+          "text": "Holocaustos á Jehová, á la mañana y á la tarde",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué solemnidad hicieron, como está escrito?",
+      "explanation": "Hicieron la solemnidad de las cabañas, como está escrito, y holocaustos cada día por cuenta, conforme al rito.",
+      "bibleReference": "Esdras 3:4",
+      "answers": [
+        {
+          "text": "La solemnidad de las cabañas",
+          "isCorrect": true
+        },
+        {
+          "text": "La pascua",
+          "isCorrect": false
+        },
+        {
+          "text": "La solemnidad de los panes sin levadura",
+          "isCorrect": false
+        },
+        {
+          "text": "La fiesta de las nuevas lunas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde cuándo comenzaron á ofrecer holocaustos á Jehová, y en qué estado estaba el templo?",
+      "explanation": "Desde el primer día del mes séptimo comenzaron á ofrecer holocaustos á Jehová, mas el templo de Jehová no estaba aún fundado.",
+      "bibleReference": "Esdras 3:6",
+      "answers": [
+        {
+          "text": "Desde el mes segundo, cuando el templo ya estaba acabado",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el primer día del mes séptimo, cuando el templo aún no estaba fundado",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde el mes primero, después de puestos los cimientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el año segundo de Darío, cuando el templo fué acabado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dieron comida, bebida y aceite, y para qué?",
+      "explanation": "Dieron comida, bebida y aceite á los Sidonios y Tirios, para que trajesen madera de cedro del Líbano á la mar de Joppe.",
+      "bibleReference": "Esdras 3:7",
+      "answers": [
+        {
+          "text": "A los Caldeos, para que guardasen la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Levitas, para que cantasen delante de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Sidonios y Tirios, para que trajesen madera de cedro del Líbano",
+          "isCorrect": true
+        },
+        {
+          "text": "A los Persas, para que escribiesen al rey Ciro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué edad pusieron á los Levitas para que tuviesen cargo de la obra de la casa de Jehová?",
+      "explanation": "Pusieron á los Levitas de veinte años arriba para que tuviesen cargo de la obra de la casa de Jehová.",
+      "bibleReference": "Esdras 3:8",
+      "answers": [
+        {
+          "text": "De treinta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De tres años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De cincuenta años arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "De veinte años arriba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron cuando los albañiles echaban los cimientos del templo de Jehová?",
+      "explanation": "Pusieron á los sacerdotes vestidos de sus ropas con trompetas, y á los Levitas hijos de Asaph con címbalos, para que alabasen á Jehová según ordenanza de David rey de Israel.",
+      "bibleReference": "Esdras 3:10",
+      "answers": [
+        {
+          "text": "Pusieron á los sacerdotes con trompetas y á los Levitas con címbalos",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardaron silencio delante de Jehová todo aquel día",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecieron mil novillos y mil ovejas sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Leyeron el libro de la ley delante del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué cantaban, alabando y confesando á Jehová?",
+      "explanation": "Cantaban y decían: Porque es bueno, porque para siempre es su misericordia sobre Israel.",
+      "bibleReference": "Esdras 3:11",
+      "answers": [
+        {
+          "text": "Alabad á Jehová desde los cielos y desde la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque es bueno, porque para siempre es su misericordia sobre Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Santo, santo, santo es Jehová de los ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová reina, vístase de magnificencia y de gloria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacían muchos de los ancianos que habían visto la casa primera?",
+      "explanation": "Viendo fundar esta casa, lloraban en alta voz, mientras muchos otros daban grandes gritos de alegría.",
+      "bibleReference": "Esdras 3:12",
+      "answers": [
+        {
+          "text": "Se iban cada uno á su ciudad sin decir nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Reprendían á los que edificaban la casa de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Lloraban en alta voz, mientras otros daban grandes gritos de alegría",
+          "isCorrect": true
+        },
+        {
+          "text": "Tocaban las trompetas y los címbalos en silencio",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

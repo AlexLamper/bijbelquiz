@@ -32,10 +32,10 @@
     },
     {
       "text": "Según los oficiales, ¿quién debía volverse a su casa por causa de una casa?",
-      "explanation": "Los oficiales preguntan quién ha edificado casa nueva y no la ha estrenado, y le mandan volverse, porque quizá muera en la batalla y otro la estrene.",
+      "explanation": "Los oficiales preguntan quién ha edificado casa nueva y no la ha estrenado, y le mandan ir y volverse a su casa.",
       "bibleReference": "Deuteronomio 20:5",
       "answers": [
-        { "text": "El que vendió su casa a un extranjero", "isCorrect": false },
+        { "text": "El que vendió su casa nueva a un extranjero", "isCorrect": false },
         { "text": "El que edificó casa nueva y no la estrenó", "isCorrect": true },
         { "text": "El que no tiene casa propia", "isCorrect": false },
         { "text": "El que dejó su casa al Levita", "isCorrect": false }
@@ -43,7 +43,7 @@
     },
     {
       "text": "¿Quién más podía volverse a su casa, según las palabras de los oficiales?",
-      "explanation": "Los oficiales mandan volverse al que se ha desposado con mujer y no la ha tomado, porque quizá muera en la batalla y otro la tome.",
+      "explanation": "Los oficiales mandan ir y volverse a su casa al que se ha desposado con mujer y no la ha tomado.",
       "bibleReference": "Deuteronomio 20:7",
       "answers": [
         { "text": "El que tenía muchos hijos pequeños", "isCorrect": false },
@@ -82,13 +82,13 @@
         { "text": "La ciudad sería quemada igualmente", "isCorrect": false },
         { "text": "Sus varones morirían a filo de espada", "isCorrect": false },
         { "text": "Sus despojos se dejarían intactos", "isCorrect": false },
-        { "text": "Sus habitantes serían tributarios y servirían", "isCorrect": true }
+        { "text": "Serían tributarios y le servirían", "isCorrect": true }
       ]
     },
     {
       "text": "En las ciudades muy lejanas que hacían guerra, ¿qué podía tomar Israel para sí?",
       "explanation": "El texto dice que solamente las mujeres, los niños, los animales y todos los despojos de la ciudad los tomará para sí, y comerá del despojo.",
-      "bibleReference": "Deuteronomio 20:14",
+      "bibleReference": "Deuteronomio 20:14-15",
       "answers": [
         { "text": "Nada, porque todo sería destruido", "isCorrect": false },
         { "text": "Solo las armas de los enemigos", "isCorrect": false },
@@ -115,7 +115,7 @@
         { "text": "No poner cerco a la ciudad muchos días", "isCorrect": false },
         { "text": "No comer de su fruto durante el cerco", "isCorrect": false },
         { "text": "No acercarse a ellos de noche", "isCorrect": false },
-        { "text": "No talar los árboles de los que se come", "isCorrect": true }
+        { "text": "No talar su arboleda", "isCorrect": true }
       ]
     }
   ]

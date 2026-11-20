@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre 2 Crónicas 14: la reforma de Asa, las ciudades fuertes que edificó y la derrota de Zera Etiope.",
+  "slug": "2-chronicles-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el comienzo del capítulo, ¿cuántos años tuvo sosiego el país en los días de Asa?",
+      "explanation": "El texto dice que reinó en su lugar su hijo Asa, en cuyos días tuvo sosiego el país por diez años.",
+      "bibleReference": "2 Crónicas 14:1",
+      "answers": [
+        { "text": "Diez años", "isCorrect": true },
+        { "text": "Tres años", "isCorrect": false },
+        { "text": "Treinta y cinco años", "isCorrect": false },
+        { "text": "Quince años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Asa con los altares del culto ajeno y con los bosques?",
+      "explanation": "Asa quitó los altares del culto ajeno y los altos, quebró las imágenes y taló los bosques.",
+      "bibleReference": "2 Crónicas 14:3",
+      "answers": [
+        { "text": "Los dejó en pie y prohibió sacrificar en ellos", "isCorrect": false },
+        { "text": "Quitó los altares y taló los bosques", "isCorrect": true },
+        { "text": "Los repartió entre los Levitas y los sacerdotes", "isCorrect": false },
+        { "text": "Los llevó a la casa de Jehová en Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Asa a Judá?",
+      "explanation": "Asa mandó a Judá que buscasen a Jehová el Dios de sus padres y pusiesen por obra la ley y sus mandamientos.",
+      "bibleReference": "2 Crónicas 14:4",
+      "answers": [
+        { "text": "Que edificasen ciudades en el desierto", "isCorrect": false },
+        { "text": "Que juntasen plata y oro para la casa", "isCorrect": false },
+        { "text": "Que buscasen a Jehová y pusiesen por obra su ley", "isCorrect": true },
+        { "text": "Que saliesen a pelear contra Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué propuso Asa a Judá acerca de las ciudades?",
+      "explanation": "Asa dijo: Edifiquemos estas ciudades, y cerquémoslas de muros con torres, puertas y barras.",
+      "bibleReference": "2 Crónicas 14:7",
+      "answers": [
+        { "text": "Dejarlas y habitar en Jerusalem", "isCorrect": false },
+        { "text": "Darlas a los Levitas por heredad", "isCorrect": false },
+        { "text": "Repartirlas entre sus príncipes", "isCorrect": false },
+        { "text": "Cercarlas de muros con torres y puertas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres tenía el ejército de Asa, de Judá y de Benjamín?",
+      "explanation": "Asa tuvo ejército de trescientos mil de Judá y doscientos y ochenta mil de Benjamín, que traían escudos y flechaban arcos.",
+      "bibleReference": "2 Crónicas 14:8",
+      "answers": [
+        { "text": "Cien mil de Judá y ochenta mil de Benjamín", "isCorrect": false },
+        { "text": "Trescientos mil de Judá y doscientos y ochenta mil de Benjamín", "isCorrect": true },
+        { "text": "Doscientos mil de Judá y cien mil de Benjamín", "isCorrect": false },
+        { "text": "Cuatrocientos mil de Judá y trescientos mil de Benjamín", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién salió contra ellos con un ejército de mil millares y trescientos carros?",
+      "explanation": "Salió contra ellos Zera Etiope con un ejército de mil millares y trescientos carros, y vino hasta Maresa.",
+      "bibleReference": "2 Crónicas 14:9",
+      "answers": [
+        { "text": "Zera Etiope", "isCorrect": true },
+        { "text": "Baasa rey de Israel", "isCorrect": false },
+        { "text": "Sisac rey de Egipto", "isCorrect": false },
+        { "text": "Ben-adad rey de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde ordenaron la batalla?",
+      "explanation": "Asa salió contra él y ordenaron la batalla en el valle de Sephata, junto a Maresa.",
+      "bibleReference": "2 Crónicas 14:10",
+      "answers": [
+        { "text": "En el monte de Semaraim, en Ephraim", "isCorrect": false },
+        { "text": "Junto al arroyo de Egipto", "isCorrect": false },
+        { "text": "En el torrente de Cedrón, en Jerusalem", "isCorrect": false },
+        { "text": "En el valle de Sephata junto a Maresa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "En su clamor a Jehová, ¿qué dijo Asa acerca de por qué venían contra aquel ejército?",
+      "explanation": "Asa dijo: porque en ti nos apoyamos, y en tu nombre venimos contra este ejército.",
+      "bibleReference": "2 Crónicas 14:11",
+      "answers": [
+        { "text": "Porque tenían más carros que los Etiopes", "isCorrect": false },
+        { "text": "Porque Jehová les había dado la tierra", "isCorrect": false },
+        { "text": "Porque en él se apoyaban y en su nombre venían", "isCorrect": true },
+        { "text": "Porque el rey había juntado un gran ejército", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde siguió Asa, con el pueblo que estaba con él, a los Etiopes?",
+      "explanation": "Asa y el pueblo que con él estaba los siguieron hasta Gerar, y cayeron los Etiopes hasta no quedar en ellos aliento.",
+      "bibleReference": "2 Crónicas 14:13",
+      "answers": [
+        { "text": "Hasta Gerar", "isCorrect": true },
+        { "text": "Hasta Maresa", "isCorrect": false },
+        { "text": "Hasta Egipto", "isCorrect": false },
+        { "text": "Hasta Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué trajeron de las cabañas de los ganados?",
+      "explanation": "Dieron sobre las cabañas de los ganados y trajeron muchas ovejas y camellos, y se volvieron a Jerusalem.",
+      "bibleReference": "2 Crónicas 14:15",
+      "answers": [
+        { "text": "Mucho oro y plata", "isCorrect": false },
+        { "text": "Carros y caballos", "isCorrect": false },
+        { "text": "Trigo y aceite", "isCorrect": false },
+        { "text": "Muchas ovejas y camellos", "isCorrect": true }
+      ]
+    }
+  ]
+}

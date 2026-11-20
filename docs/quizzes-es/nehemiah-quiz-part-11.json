@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Nehemías 11: las suertes para poblar Jerusalem, los jefes de Judá, Benjamín, los sacerdotes y los levitas, y las aldeas donde habitaron.",
+  "slug": "nehemiah-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Al echar suertes, ¿qué proporción del resto del pueblo debía morar en Jerusalem?",
+      "explanation": "El resto del pueblo echó suertes para traer uno de diez que morase en Jerusalem, y las nueve partes quedaron en las otras ciudades.",
+      "bibleReference": "Nehemías 11:1",
+      "answers": [
+        {
+          "text": "Uno de cada cien",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Uno de diez",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes bendijo el pueblo?",
+      "explanation": "El pueblo bendijo a todos los varones que voluntariamente se ofrecieron a morar en Jerusalem.",
+      "bibleReference": "Nehemías 11:2",
+      "answers": [
+        {
+          "text": "A los príncipes que ya vivían allí",
+          "isCorrect": false
+        },
+        {
+          "text": "A los varones que se ofrecieron voluntariamente",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes y a los levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que echaron las suertes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué dos grupos de hijos de Israel habitaron en Jerusalem?",
+      "explanation": "En Jerusalem habitaron de los hijos de Judá y de los hijos de Benjamín.",
+      "bibleReference": "Nehemías 11:4",
+      "answers": [
+        {
+          "text": "De Rubén y de Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "De Simeón y de Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "De Judá y de Benjamín",
+          "isCorrect": true
+        },
+        {
+          "text": "De Judá y de Rubén",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres fuertes de los hijos de Phares moraron en Jerusalem?",
+      "explanation": "Todos los hijos de Phares que moraron en Jerusalem fueron cuatrocientos setenta y ocho hombres fuertes.",
+      "bibleReference": "Nehemías 11:6",
+      "answers": [
+        {
+          "text": "Cuatrocientos setenta y ocho",
+          "isCorrect": true
+        },
+        {
+          "text": "Novecientos veinte y ocho",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos ochenta y cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento setenta y dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién llama el texto príncipe de la casa de Dios?",
+      "explanation": "Seraías hijo de Hilcías es llamado príncipe de la casa de Dios.",
+      "bibleReference": "Nehemías 11:11",
+      "answers": [
+        {
+          "text": "Jedaías hijo de Joiarib",
+          "isCorrect": false
+        },
+        {
+          "text": "Seraías hijo de Hilcías",
+          "isCorrect": true
+        },
+        {
+          "text": "Adaías hijo de Jeroham",
+          "isCorrect": false
+        },
+        {
+          "text": "Semaías hijo de Hassub",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién era jefe de los ciento veintiocho hombres de grande vigor?",
+      "explanation": "El jefe de los ciento veintiocho hombres de grande vigor era Zabdiel, hijo de Gedolim.",
+      "bibleReference": "Nehemías 11:14",
+      "answers": [
+        {
+          "text": "Joel hijo de Zichri",
+          "isCorrect": false
+        },
+        {
+          "text": "Uzzi hijo de Bani",
+          "isCorrect": false
+        },
+        {
+          "text": "Amasai hijo de Azarael",
+          "isCorrect": false
+        },
+        {
+          "text": "Zabdiel, hijo de Gedolim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién era el principal que empezaba las alabanzas y la acción de gracias al tiempo de la oración?",
+      "explanation": "Mattanías hijo de Michâ era el principal, el que empezaba las alabanzas y la acción de gracias al tiempo de la oración.",
+      "bibleReference": "Nehemías 11:17",
+      "answers": [
+        {
+          "text": "Mattanías hijo de Michâ",
+          "isCorrect": true
+        },
+        {
+          "text": "Abda hijo de Samua",
+          "isCorrect": false
+        },
+        {
+          "text": "Bacbucías hijo de Asaph",
+          "isCorrect": false
+        },
+        {
+          "text": "Sabethai, de los principales",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos levitas había en total en la santa ciudad?",
+      "explanation": "Todos los levitas en la santa ciudad fueron doscientos ochenta y cuatro.",
+      "bibleReference": "Nehemías 11:18",
+      "answers": [
+        {
+          "text": "Ciento setenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochocientos veintidós",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos ochenta y cuatro",
+          "isCorrect": true
+        },
+        {
+          "text": "Doscientos cuarenta y dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde habitaban los Nethineos?",
+      "explanation": "Los Nethineos habitaban en Ophel, y Siha y Gispa estaban sobre ellos.",
+      "bibleReference": "Nehemías 11:21",
+      "answers": [
+        {
+          "text": "En Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "En Ophel",
+          "isCorrect": true
+        },
+        {
+          "text": "En Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "En Anathoth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el final de la lista de aldeas, ¿hasta dónde habitaron desde Beer-seba?",
+      "explanation": "El texto dice que habitaron desde Beer-seba hasta el valle de Hinnom.",
+      "bibleReference": "Nehemías 11:30",
+      "answers": [
+        {
+          "text": "Hasta el valle de Hinnom",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el valle de los artífices",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el monte de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Michmas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

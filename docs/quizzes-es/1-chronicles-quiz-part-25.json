@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre 1 Crónicas 25: los cantores de Asaph, Hemán y Jeduthún, su música en la casa de Jehová y las veinticuatro suertes.",
+  "slug": "1-chronicles-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes apartaron para el ministerio a los hijos de Asaph, de Hemán y de Jeduthún?",
+      "explanation": "El capítulo dice que David y los príncipes del ejército los apartaron para el ministerio.",
+      "bibleReference": "1 Crónicas 25:1",
+      "answers": [
+        { "text": "David y los príncipes del ejército", "isCorrect": true },
+        { "text": "Sadoc y Ahimelech los sacerdotes", "isCorrect": false },
+        { "text": "Salomón y los ancianos de Israel", "isCorrect": false },
+        { "text": "Los porteros y los jueces del pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los hijos de Asaph?",
+      "explanation": "El texto nombra como hijos de Asaph a Zachûr, José, Methanías y Asareela.",
+      "bibleReference": "1 Crónicas 25:2",
+      "answers": [
+        { "text": "Gedalías, Sesi, Jesaías y Simi", "isCorrect": false },
+        { "text": "Zachûr, José, Methanías y Asareela", "isCorrect": true },
+        { "text": "Buccia, Mathanía, Uzziel y Sebuel", "isCorrect": false },
+        { "text": "Hananías, Hanani, Othir y Mallothi", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hijos de Jeduthún se cuentan en este capítulo?",
+      "explanation": "El texto nombra a los hijos de Jeduthún y dice expresamente que eran seis, bajo la mano de su padre.",
+      "bibleReference": "1 Crónicas 25:3",
+      "answers": [
+        { "text": "Cuatro", "isCorrect": false },
+        { "text": "Catorce", "isCorrect": false },
+        { "text": "Seis", "isCorrect": true },
+        { "text": "Doce", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumento profetizaba Jeduthún para celebrar y alabar a Jehová?",
+      "explanation": "El texto dice que Jeduthún profetizaba con arpa, para celebrar y alabar a Jehová.",
+      "bibleReference": "1 Crónicas 25:3",
+      "answers": [
+        { "text": "Con címbalos", "isCorrect": false },
+        { "text": "Con trompeta", "isCorrect": false },
+        { "text": "Con salterio", "isCorrect": false },
+        { "text": "Con arpa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos hijos y cuántas hijas dio Dios a Hemán?",
+      "explanation": "El texto dice que Dios dio a Hemán catorce hijos y tres hijas.",
+      "bibleReference": "1 Crónicas 25:5",
+      "answers": [
+        { "text": "Catorce hijos y tres hijas", "isCorrect": true },
+        { "text": "Seis hijos y dos hijas", "isCorrect": false },
+        { "text": "Doce hijos y cuatro hijas", "isCorrect": false },
+        { "text": "Tres hijos y catorce hijas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Bajo la dirección de quién estaban todos estos en la música, en la casa de Jehová?",
+      "explanation": "Todos ellos estaban bajo la dirección de su padre en la música, en la casa de Jehová, con címbalos, salterios y arpas.",
+      "bibleReference": "1 Crónicas 25:6",
+      "answers": [
+        { "text": "Bajo la dirección de los porteros", "isCorrect": false },
+        { "text": "Bajo la dirección de su padre", "isCorrect": true },
+        { "text": "Bajo la dirección de los jueces", "isCorrect": false },
+        { "text": "Bajo la dirección de los capitanes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran, contando a sus hermanos, los instruidos en música de Jehová?",
+      "explanation": "El número de ellos con sus hermanos instruidos en música de Jehová, todos los aptos, fue doscientos ochenta y ocho.",
+      "bibleReference": "1 Crónicas 25:7",
+      "answers": [
+        { "text": "Ciento veinte y ocho", "isCorrect": false },
+        { "text": "Ciento cuarenta y cuatro", "isCorrect": false },
+        { "text": "Doscientos ochenta y ocho", "isCorrect": true },
+        { "text": "Doscientos cuarenta y ocho", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo echaron suertes para los turnos del servicio?",
+      "explanation": "Echaron suertes para los turnos del servicio entrando el pequeño con el grande, lo mismo el maestro que el discípulo.",
+      "bibleReference": "1 Crónicas 25:8",
+      "answers": [
+        { "text": "Primero los maestros y después los discípulos", "isCorrect": false },
+        { "text": "Primero los grandes y después los pequeños", "isCorrect": false },
+        { "text": "Solamente los hijos mayores de cada casa", "isCorrect": false },
+        { "text": "Entrando el pequeño con el grande", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por quién salió la primera suerte?",
+      "explanation": "La primera suerte salió por Asaph, a José, y la segunda a Gedalías.",
+      "bibleReference": "1 Crónicas 25:9",
+      "answers": [
+        { "text": "Por Asaph, a José", "isCorrect": true },
+        { "text": "Por Jeduthún, a Simi", "isCorrect": false },
+        { "text": "Por Hemán, a Buccia", "isCorrect": false },
+        { "text": "Por Asaph, a Gedalías", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién tocó la vigésimacuarta suerte?",
+      "explanation": "La vigésimacuarta suerte tocó a Romamti-ezer, con sus hijos y sus hermanos, doce.",
+      "bibleReference": "1 Crónicas 25:31",
+      "answers": [
+        { "text": "A Mahazioth", "isCorrect": false },
+        { "text": "A Romamti-ezer", "isCorrect": true },
+        { "text": "A Giddalthi", "isCorrect": false },
+        { "text": "A Josbecasa", "isCorrect": false }
+      ]
+    }
+  ]
+}

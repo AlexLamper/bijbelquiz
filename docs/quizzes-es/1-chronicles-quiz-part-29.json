@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre 1 Crónicas 29: la ofrenda voluntaria para la casa de Dios, la bendición de David y el fin de su reinado.",
+  "slug": "1-chronicles-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo David de Salomón delante de toda la asamblea?",
+      "explanation": "David dijo que a solo Salomón su hijo había elegido Dios, y que él era joven y tierno, y la obra grande.",
+      "bibleReference": "1 Crónicas 29:1",
+      "answers": [
+        { "text": "Que era joven y tierno, y la obra grande", "isCorrect": true },
+        { "text": "Que era hombre de guerra como su padre", "isCorrect": false },
+        { "text": "Que era el menor de todos sus hermanos", "isCorrect": false },
+        { "text": "Que sería vidente del rey en Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué había preparado David con todas sus fuerzas para la casa de su Dios?",
+      "explanation": "David había preparado oro, plata, metal, hierro, madera y toda suerte de piedras preciosas y de mármol en abundancia.",
+      "bibleReference": "1 Crónicas 29:2",
+      "answers": [
+        { "text": "Trigo, cebada, vino y aceite", "isCorrect": false },
+        { "text": "Carros y gente de a caballo", "isCorrect": false },
+        { "text": "Oro, plata, metal, hierro, madera y piedras", "isCorrect": true },
+        { "text": "Cedros traídos del monte Líbano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos talentos de oro de Ophir dio David de su tesoro particular?",
+      "explanation": "David dio tres mil talentos de oro, de oro de Ophir, y siete mil talentos de plata afinada.",
+      "bibleReference": "1 Crónicas 29:4",
+      "answers": [
+        { "text": "Siete mil talentos", "isCorrect": false },
+        { "text": "Tres mil talentos", "isCorrect": true },
+        { "text": "Cinco mil talentos", "isCorrect": false },
+        { "text": "Diez mil talentos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hizo David después de hablar del oro y de la plata?",
+      "explanation": "David preguntó: ¿Y quién quiere hacer hoy ofrenda a Jehová?",
+      "bibleReference": "1 Crónicas 29:5",
+      "answers": [
+        { "text": "¿Quién edificará esta casa?", "isCorrect": false },
+        { "text": "¿Quién subirá primero a la batalla?", "isCorrect": false },
+        { "text": "¿Quién contará a este pueblo?", "isCorrect": false },
+        { "text": "¿Quién quiere hacer hoy ofrenda a Jehová?", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos talentos de plata dieron para el servicio de la casa de Dios?",
+      "explanation": "Dieron cinco mil talentos de oro y diez mil sueldos, diez mil talentos de plata, dieciocho mil de metal y cinco mil de hierro.",
+      "bibleReference": "1 Crónicas 29:7",
+      "answers": [
+        { "text": "Diez mil talentos de plata", "isCorrect": true },
+        { "text": "Cinco mil talentos de plata", "isCorrect": false },
+        { "text": "Dieciocho mil talentos de plata", "isCorrect": false },
+        { "text": "Siete mil talentos de plata", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En mano de quién fueron puestas las piedras preciosas para el tesoro de la casa de Jehová?",
+      "explanation": "Todo el que se halló con piedras preciosas las dio para el tesoro de la casa de Jehová, en mano de Jehiel Gersonita.",
+      "bibleReference": "1 Crónicas 29:8",
+      "answers": [
+        { "text": "De Sadoc el sacerdote", "isCorrect": false },
+        { "text": "De Jehiel Gersonita", "isCorrect": true },
+        { "text": "De Sebuel hijo de Gersón", "isCorrect": false },
+        { "text": "De Joab hijo de Sarvia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al bendecir a Jehová, ¿qué dijo David que era suyo?",
+      "explanation": "David dijo: Tuya es, oh Jehová, la magnificencia, y el poder, y la gloria, la victoria, y el honor.",
+      "bibleReference": "1 Crónicas 29:11",
+      "answers": [
+        { "text": "La casa y los atrios del santuario", "isCorrect": false },
+        { "text": "El arca del pacto y su estrado", "isCorrect": false },
+        { "text": "La magnificencia, el poder y la gloria", "isCorrect": true },
+        { "text": "Los talentos de oro y de plata", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describió David a su pueblo delante de Dios?",
+      "explanation": "David dijo que eran extranjeros y advenedizos delante de Dios, como todos sus padres, y que sus días eran cual sombra sobre la tierra.",
+      "bibleReference": "1 Crónicas 29:15",
+      "answers": [
+        { "text": "Como reyes de muchas tierras", "isCorrect": false },
+        { "text": "Como las estrellas del cielo", "isCorrect": false },
+        { "text": "Como el polvo de la tierra", "isCorrect": false },
+        { "text": "Como extranjeros y advenedizos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quién ungieron por sacerdote el día en que dieron el reino a Salomón?",
+      "explanation": "Aquel día ungieron a Salomón a Jehová por príncipe, y a Sadoc por sacerdote.",
+      "bibleReference": "1 Crónicas 29:22",
+      "answers": [
+        { "text": "A Sadoc", "isCorrect": true },
+        { "text": "A Ahimelech", "isCorrect": false },
+        { "text": "A Abiathar", "isCorrect": false },
+        { "text": "A Nathán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo reinó David sobre Israel?",
+      "explanation": "El tiempo que reinó sobre Israel fue cuarenta años: siete años en Hebrón y treinta y tres en Jerusalem.",
+      "bibleReference": "1 Crónicas 29:27",
+      "answers": [
+        { "text": "Treinta y tres años", "isCorrect": false },
+        { "text": "Cuarenta años", "isCorrect": true },
+        { "text": "Siete años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": false }
+      ]
+    }
+  ]
+}

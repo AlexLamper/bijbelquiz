@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Salmos 21: la alegría del rey en la fortaleza de Jehová, las bendiciones que recibe y la derrota de sus enemigos.",
+  "slug": "psalms-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿en qué se alegrará el rey?",
+      "explanation": "El texto dice que el rey se alegrará en la fortaleza de Jehová y que en su salud se gozará mucho.",
+      "bibleReference": "Salmos 21:1",
+      "answers": [
+        {
+          "text": "En la fortaleza de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En sus muchas riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "En la fuerza de sus ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "En su propia sabiduría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ha puesto Dios sobre la cabeza del rey?",
+      "explanation": "El verso dice que le ha salido al encuentro con bendiciones de bien y que ha puesto corona de oro fino sobre su cabeza.",
+      "bibleReference": "Salmos 21:3",
+      "answers": [
+        {
+          "text": "Un yelmo de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Corona de oro fino",
+          "isCorrect": true
+        },
+        {
+          "text": "Una diadema de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Un turbante de lino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le demandó el rey a Dios, según el verso 4?",
+      "explanation": "El texto dice: Vida te demandó, y dístele largura de días por siglos y siglos.",
+      "bibleReference": "Salmos 21:4",
+      "answers": [
+        {
+          "text": "Riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "Un reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Vida",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Además de su gloria, ¿qué ha puesto Dios sobre él?",
+      "explanation": "El verso dice que grande es su gloria en la salud de Dios, y que honra y majestad ha puesto sobre él.",
+      "bibleReference": "Salmos 21:5",
+      "answers": [
+        {
+          "text": "Paz y reposo",
+          "isCorrect": false
+        },
+        {
+          "text": "Juicio y verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "Honra y majestad",
+          "isCorrect": true
+        },
+        {
+          "text": "Fuerza y riqueza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué lo llenó Dios, según el verso 6?",
+      "explanation": "El texto dice que lo ha bendecido para siempre y que lo llenó de alegría con su rostro.",
+      "bibleReference": "Salmos 21:6",
+      "answers": [
+        {
+          "text": "De temor",
+          "isCorrect": false
+        },
+        {
+          "text": "De alegría",
+          "isCorrect": true
+        },
+        {
+          "text": "De sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "De bienes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dice el salmo que el rey no será conmovido?",
+      "explanation": "El verso dice que por cuanto el rey confía en Jehová y en la misericordia del Altísimo, no será conmovido.",
+      "bibleReference": "Salmos 21:7",
+      "answers": [
+        {
+          "text": "Porque confía en Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque habita en una ciudad fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sus enemigos son pocos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque conoce los secretos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo serán puestos los enemigos en el tiempo de la ira de Dios?",
+      "explanation": "El texto dice que los pondrá como horno de fuego, que Jehová los deshará en su furor y que el fuego los consumirá.",
+      "bibleReference": "Salmos 21:9",
+      "answers": [
+        {
+          "text": "Como polvo del camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Como paja al viento",
+          "isCorrect": false
+        },
+        {
+          "text": "Como horno de fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Como agua derramada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué destruirá Dios de la tierra y de entre los hijos de los hombres?",
+      "explanation": "El verso dice que destruirá su fruto de la tierra y su simiente de entre los hijos de los hombres.",
+      "bibleReference": "Salmos 21:10",
+      "answers": [
+        {
+          "text": "Sus ciudades y sus muros",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus ídolos y sus altares",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus carros y sus caballos",
+          "isCorrect": false
+        },
+        {
+          "text": "Su fruto y su simiente",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 11, ¿qué pasará con las maquinaciones que fraguaron?",
+      "explanation": "El texto dice que trazaron el mal y fraguaron maquinaciones, mas no prevalecerán.",
+      "bibleReference": "Salmos 21:11",
+      "answers": [
+        {
+          "text": "No prevalecerán",
+          "isCorrect": true
+        },
+        {
+          "text": "Prosperarán por un tiempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Serán olvidadas por Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Les traerán honra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dicen que harán al final del salmo?",
+      "explanation": "El último verso dice: Ensálzate, oh Jehová, con tu fortaleza: cantaremos y alabaremos tu poderío.",
+      "bibleReference": "Salmos 21:13",
+      "answers": [
+        {
+          "text": "Edificar un templo a su nombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantar y alabar el poderío de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Ofrecer becerros en el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar silencio delante de él",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

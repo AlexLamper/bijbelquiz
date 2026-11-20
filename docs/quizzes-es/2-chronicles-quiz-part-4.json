@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre 2 Crónicas 4: el altar de bronce, el mar de fundición sobre doce bueyes y los vasos que Hiram hizo para la casa de Dios.",
+  "slug": "2-chronicles-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuáles eran las medidas del altar de bronce?",
+      "explanation": "Hizo un altar de bronce de veinte codos de longitud, veinte codos de anchura y diez codos de altura.",
+      "bibleReference": "2 Crónicas 4:1",
+      "answers": [
+        { "text": "Veinte codos de largo, veinte de ancho y diez de alto", "isCorrect": true },
+        { "text": "Sesenta codos de largo, veinte de ancho y cinco de alto", "isCorrect": false },
+        { "text": "Diez codos de largo, diez de ancho y treinta de alto", "isCorrect": false },
+        { "text": "Cinco codos de largo, cinco de ancho y veinte de alto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto medía el mar de fundición de un borde al otro?",
+      "explanation": "El mar de fundición tenía diez codos de un borde al otro, era enteramente redondo y su altura era de cinco codos.",
+      "bibleReference": "2 Crónicas 4:2",
+      "answers": [
+        { "text": "Treinta codos", "isCorrect": false },
+        { "text": "Cinco codos", "isCorrect": false },
+        { "text": "Diez codos", "isCorrect": true },
+        { "text": "Veinte codos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre qué estaba asentado el mar?",
+      "explanation": "El mar estaba asentado sobre doce bueyes, tres mirando al septentrión, tres al occidente, tres al mediodía y tres al oriente.",
+      "bibleReference": "2 Crónicas 4:4",
+      "answers": [
+        { "text": "Sobre diez basas de bronce", "isCorrect": false },
+        { "text": "Sobre doce bueyes", "isCorrect": true },
+        { "text": "Sobre dos columnas de metal", "isCorrect": false },
+        { "text": "Sobre cuatro querubines", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos batos hacía el mar?",
+      "explanation": "El mar tenía un palmo de grueso, su borde era de la hechura del borde de un cáliz, y hacía tres mil batos.",
+      "bibleReference": "2 Crónicas 4:5",
+      "answers": [
+        { "text": "Veinte mil batos", "isCorrect": false },
+        { "text": "Treinta batos", "isCorrect": false },
+        { "text": "Cien batos", "isCorrect": false },
+        { "text": "Tres mil batos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿para qué servía el mar?",
+      "explanation": "Las diez fuentes eran para lavar y limpiar en ellas la obra del holocausto, mas el mar era para lavarse los sacerdotes en él.",
+      "bibleReference": "2 Crónicas 4:6",
+      "answers": [
+        { "text": "Para que se lavasen los sacerdotes", "isCorrect": true },
+        { "text": "Para limpiar la obra del holocausto", "isCorrect": false },
+        { "text": "Para guardar el aceite del santuario", "isCorrect": false },
+        { "text": "Para encender las lamparillas de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos candeleros de oro hizo y puso en el templo?",
+      "explanation": "Hizo diez candeleros de oro según su forma y los puso en el templo, cinco a la derecha y cinco a la izquierda.",
+      "bibleReference": "2 Crónicas 4:7",
+      "answers": [
+        { "text": "Cinco", "isCorrect": false },
+        { "text": "Doce", "isCorrect": false },
+        { "text": "Diez", "isCorrect": true },
+        { "text": "Veinte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos tazones de oro hizo?",
+      "explanation": "Además de las diez mesas que puso en el templo, hizo igualmente cien tazones de oro.",
+      "bibleReference": "2 Crónicas 4:8",
+      "answers": [
+        { "text": "Cuatrocientos", "isCorrect": false },
+        { "text": "Cien", "isCorrect": true },
+        { "text": "Cincuenta", "isCorrect": false },
+        { "text": "Mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas granadas había en las dos redecillas?",
+      "explanation": "El texto habla de cuatrocientas granadas en las dos redecillas, dos órdenes de granadas en cada redecilla.",
+      "bibleReference": "2 Crónicas 4:13",
+      "answers": [
+        { "text": "Doscientas granadas", "isCorrect": false },
+        { "text": "Ciento veinte granadas", "isCorrect": false },
+        { "text": "Doce granadas en cada orden", "isCorrect": false },
+        { "text": "Cuatrocientas granadas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Dónde fundió el rey estos objetos?",
+      "explanation": "El rey los fundió en los llanos del Jordán, en tierra arcillosa, entre Suchôt y Seredat.",
+      "bibleReference": "2 Crónicas 4:17",
+      "answers": [
+        { "text": "En los llanos del Jordán, entre Suchôt y Seredat", "isCorrect": true },
+        { "text": "En el monte Moria, delante del templo", "isCorrect": false },
+        { "text": "En el gran atrio de los sacerdotes", "isCorrect": false },
+        { "text": "En el monte Líbano, junto a los cedros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto sobre todos estos vasos que hizo Salomón?",
+      "explanation": "El texto dice que Salomón hizo todos estos vasos en grande abundancia, porque no pudo ser hallado el peso del metal.",
+      "bibleReference": "2 Crónicas 4:18",
+      "answers": [
+        { "text": "Que los hizo todos de oro purísimo", "isCorrect": false },
+        { "text": "Que los contó y los pesó uno por uno", "isCorrect": false },
+        { "text": "Que los hizo en grande abundancia", "isCorrect": true },
+        { "text": "Que Hiram se los llevó a la ciudad de Tiro", "isCorrect": false }
+      ]
+    }
+  ]
+}

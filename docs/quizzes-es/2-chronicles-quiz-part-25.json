@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre 2 Crónicas 25: el reinado de Amasías, los cien mil hombres de Israel, los dioses de Seir y la guerra con Joas rey de Israel.",
+  "slug": "2-chronicles-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo hizo Amasías lo recto en los ojos de Jehová?",
+      "explanation": "El texto dice que hizo lo recto en los ojos de Jehová, aunque no de perfecto corazón.",
+      "bibleReference": "2 Crónicas 25:2",
+      "answers": [
+        { "text": "Con todo su corazón, como David", "isCorrect": false },
+        { "text": "Aunque no de perfecto corazón", "isCorrect": true },
+        { "text": "Solamente en los días del profeta", "isCorrect": false },
+        { "text": "Mejor que todos los reyes antes de él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no mató Amasías a los hijos de los que habían matado a su padre?",
+      "explanation": "No los mató según lo que está escrito en la ley, en el libro de Moisés, donde Jehová mandó que no muriesen los padres por los hijos ni los hijos por los padres, sino que cada uno muriese por su pecado.",
+      "bibleReference": "2 Crónicas 25:4",
+      "answers": [
+        { "text": "Porque eran todavía muy niños", "isCorrect": false },
+        { "text": "Porque un profeta se lo prohibió", "isCorrect": false },
+        { "text": "Porque habían huido a Lachîs", "isCorrect": false },
+        { "text": "Porque cada uno morirá por su pecado", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuánto pagó Amasías por los cien mil hombres valientes que tomó a sueldo de Israel?",
+      "explanation": "De Israel tomó a sueldo cien mil hombres valientes por cien talentos de plata.",
+      "bibleReference": "2 Crónicas 25:6",
+      "answers": [
+        { "text": "Cien talentos de plata", "isCorrect": true },
+        { "text": "Cien talentos de oro", "isCorrect": false },
+        { "text": "Mil talentos de plata", "isCorrect": false },
+        { "text": "Diez mil coros de trigo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo el varón de Dios acerca del ejército de Israel?",
+      "explanation": "El varón de Dios le dijo: Rey, no vaya contigo el ejército de Israel, porque Jehová no es con Israel, ni con todos los hijos de Ephraim.",
+      "bibleReference": "2 Crónicas 25:7",
+      "answers": [
+        { "text": "Que lo pusiese delante en la batalla", "isCorrect": false },
+        { "text": "Que le diese doble paga de plata", "isCorrect": false },
+        { "text": "Que no fuese con él a la batalla", "isCorrect": true },
+        { "text": "Que lo enviase contra los Filisteos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el varón de Dios cuando Amasías preguntó por los cien talentos que ya había dado?",
+      "explanation": "El varón de Dios respondió: De Jehová es darte mucho más que esto.",
+      "bibleReference": "2 Crónicas 25:9",
+      "answers": [
+        { "text": "Que los pidiese al rey de Israel", "isCorrect": false },
+        { "text": "De Jehová es darte mucho más que esto", "isCorrect": true },
+        { "text": "Que los repartiese entre los Levitas", "isCorrect": false },
+        { "text": "Que los echase en el arca del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A cuántos de los hijos de Seir hirió Amasías en el valle de la Sal?",
+      "explanation": "Amasías se esforzó, sacó su pueblo, vino al valle de la Sal e hirió de los hijos de Seir diez mil.",
+      "bibleReference": "2 Crónicas 25:11",
+      "answers": [
+        { "text": "Diez mil", "isCorrect": true },
+        { "text": "Tres mil", "isCorrect": false },
+        { "text": "Cien mil", "isCorrect": false },
+        { "text": "Trescientos mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué trajo Amasías consigo al regresar de la matanza de los Idumeos?",
+      "explanation": "Trajo consigo los dioses de los hijos de Seir, los puso para sí por dioses, se encorvó delante de ellos y les quemó perfumes.",
+      "bibleReference": "2 Crónicas 25:14",
+      "answers": [
+        { "text": "Los vasos de oro de la casa de Dios", "isCorrect": false },
+        { "text": "Cien talentos de plata y de oro", "isCorrect": false },
+        { "text": "Diez mil cautivos de Seir", "isCorrect": false },
+        { "text": "Los dioses de los hijos de Seir", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Joas rey de Israel a Amasías en su respuesta?",
+      "explanation": "Joas le envió a decir que el cardo que estaba en el Líbano envió al cedro que estaba en el Líbano a pedir su hija, y que las bestias fieras hollaron el cardo.",
+      "bibleReference": "2 Crónicas 25:18",
+      "answers": [
+        { "text": "Con una oveja sin pastor", "isCorrect": false },
+        { "text": "Con el cedro del Líbano", "isCorrect": false },
+        { "text": "Con el cardo que estaba en el Líbano", "isCorrect": true },
+        { "text": "Con una saeta disparada a la ventura", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos codos del muro de Jerusalem derribó Joas rey de Israel?",
+      "explanation": "Joas derribó el muro de Jerusalem desde la puerta de Ephraim hasta la puerta del ángulo, cuatrocientos codos.",
+      "bibleReference": "2 Crónicas 25:23",
+      "answers": [
+        { "text": "Ciento veinte codos", "isCorrect": false },
+        { "text": "Doscientos codos", "isCorrect": false },
+        { "text": "Cuatrocientos codos", "isCorrect": true },
+        { "text": "Mil quinientos codos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde mataron a Amasías los que conspiraron contra él?",
+      "explanation": "Maquinaron conjuración contra él en Jerusalem, y habiendo él huido a Lachîs, enviaron tras él a Lachîs y allá lo mataron.",
+      "bibleReference": "2 Crónicas 25:27",
+      "answers": [
+        { "text": "En Jerusalem, en su cama", "isCorrect": false },
+        { "text": "En Lachîs", "isCorrect": true },
+        { "text": "En Beth-semes", "isCorrect": false },
+        { "text": "En Samaria", "isCorrect": false }
+      ]
+    }
+  ]
+}

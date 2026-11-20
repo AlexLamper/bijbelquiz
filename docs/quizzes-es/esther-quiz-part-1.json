@@ -1,0 +1,242 @@
+{
+  "title": "Ester Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Ester 1: los banquetes del rey Assuero en Susán, la negativa de la reina Vasthi y el consejo de Memucán.",
+  "slug": "esther-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Sobre cuántas provincias reinó Assuero, desde la India hasta la Etiopía?",
+      "explanation": "El texto dice que Assuero reinó desde la India hasta la Etiopía sobre ciento veinte y siete provincias.",
+      "bibleReference": "Ester 1:1",
+      "answers": [
+        {
+          "text": "Ciento veinte y siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento y ochenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta y siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento veinte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba la silla del reino en que se asentó el rey Assuero?",
+      "explanation": "El texto dice que la silla de su reino estaba en Susán, capital del reino.",
+      "bibleReference": "Ester 1:2",
+      "answers": [
+        {
+          "text": "En Media",
+          "isCorrect": false
+        },
+        {
+          "text": "En Etiopía",
+          "isCorrect": false
+        },
+        {
+          "text": "En Susán",
+          "isCorrect": true
+        },
+        {
+          "text": "En la India",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Durante cuánto tiempo mostró el rey las riquezas de la gloria de su reino?",
+      "explanation": "Mostró las riquezas de la gloria de su reino y el lustre de la magnificencia de su poder por muchos días, ciento y ochenta días.",
+      "bibleReference": "Ester 1:4",
+      "answers": [
+        {
+          "text": "Siete días seguidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento y ochenta días",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta días enteros",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce meses completos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde hizo el rey el banquete de siete días para todo el pueblo que se halló en Susán?",
+      "explanation": "Cumplidos aquellos días, el rey hizo banquete por siete días en el patio del huerto del palacio real.",
+      "bibleReference": "Ester 1:5",
+      "answers": [
+        {
+          "text": "En la casa de las mujeres del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "En el patio de adentro de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "En el templo de la ciudad de Susán",
+          "isCorrect": false
+        },
+        {
+          "text": "En el patio del huerto del palacio real",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué daban a beber en aquel banquete?",
+      "explanation": "Daban a beber en vasos de oro, y en vasos diferentes unos de otros, y mucho vino real.",
+      "bibleReference": "Ester 1:7",
+      "answers": [
+        {
+          "text": "En vasos de oro",
+          "isCorrect": true
+        },
+        {
+          "text": "En vasos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "En copas de barro",
+          "isCorrect": false
+        },
+        {
+          "text": "En cuernos de marfil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién hizo un banquete de mujeres en la casa real del rey Assuero?",
+      "explanation": "El texto dice que la reina Vasthi hizo banquete de mujeres en la casa real del rey Assuero.",
+      "bibleReference": "Ester 1:9",
+      "answers": [
+        {
+          "text": "La madre del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "La reina Vasthi",
+          "isCorrect": true
+        },
+        {
+          "text": "Las señoras de Media",
+          "isCorrect": false
+        },
+        {
+          "text": "Las mujeres de los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "El séptimo día, ¿qué mandó el rey a los siete eunucos que servían delante de él?",
+      "explanation": "Mandó a los siete eunucos que trajesen a la reina Vasthi delante del rey con la corona regia, para mostrar su hermosura a los pueblos y a los príncipes.",
+      "bibleReference": "Ester 1:10-11",
+      "answers": [
+        {
+          "text": "Que trajesen más vino real",
+          "isCorrect": false
+        },
+        {
+          "text": "Que cerrasen las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que trajesen a la reina Vasthi",
+          "isCorrect": true
+        },
+        {
+          "text": "Que llamasen a los sabios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo la reina Vasthi ante la orden del rey enviada por mano de los eunucos?",
+      "explanation": "La reina Vasthi no quiso comparecer a la orden del rey, y el rey se enojó muy mucho y se encendió en él su ira.",
+      "bibleReference": "Ester 1:12",
+      "answers": [
+        {
+          "text": "Vino con la corona regia",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió un día de plazo",
+          "isCorrect": false
+        },
+        {
+          "text": "Envió a sus doncellas",
+          "isCorrect": false
+        },
+        {
+          "text": "No quiso comparecer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién habló delante del rey y de los príncipes sobre lo que había hecho la reina?",
+      "explanation": "Memucán dijo delante del rey y de los príncipes que la reina Vasthi no solo había pecado contra el rey, sino contra todos los príncipes y pueblos.",
+      "bibleReference": "Ester 1:16",
+      "answers": [
+        {
+          "text": "Carsena",
+          "isCorrect": false
+        },
+        {
+          "text": "Memucán",
+          "isCorrect": true
+        },
+        {
+          "text": "Marsena",
+          "isCorrect": false
+        },
+        {
+          "text": "Harbona",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué decían las letras que el rey envió a todas las provincias de su reino?",
+      "explanation": "Envió letras a todas las provincias, a cada una conforme a su escribir y a cada pueblo conforme a su lenguaje, diciendo que todo hombre fuese señor en su casa.",
+      "bibleReference": "Ester 1:22",
+      "answers": [
+        {
+          "text": "Que todo hombre fuese señor en su casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Vasthi volviese al palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se eligiese nueva reina",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie bebiese vino real",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

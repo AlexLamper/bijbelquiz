@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Esdras 8: los que subieron con Esdras, el ayuno junto al río de Ahava y la plata y el oro pesados para la casa de Dios.",
+  "slug": "ezra-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Bajo el reinado de qué rey subieron de Babilonia los que se enumeran al comienzo del capítulo?",
+      "explanation": "El texto dice que estos son los cabezas de sus familias y la genealogía de aquellos que subieron con Esdras de Babilonia, reinando el rey Artajerjes.",
+      "bibleReference": "Esdras 8:1",
+      "answers": [
+        {
+          "text": "El rey Artajerjes",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey Darío",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey Ciro",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey Nabucodonosor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando reunió al pueblo junto al río que viene a Ahava, ¿a quién no halló Esdras?",
+      "explanation": "Después de buscar entre el pueblo y entre los sacerdotes, no halló allí ninguno de los hijos de Leví.",
+      "bibleReference": "Esdras 8:15",
+      "answers": [
+        {
+          "text": "Ninguno de los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninguno de los hijos de Leví",
+          "isCorrect": true
+        },
+        {
+          "text": "Ninguno de los cantores ni porteros",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninguno de los hijos de Aarón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién iba dirigido el mensaje que Esdras envió al lugar de Casipia?",
+      "explanation": "Esdras envió a sus principales a Iddo, jefe en el lugar de Casipia, y a sus hermanos los Nethineos, para que les trajesen ministros para la casa de Dios.",
+      "bibleReference": "Esdras 8:17",
+      "answers": [
+        {
+          "text": "A Serabías y a sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "A Meremoth hijo de Urías",
+          "isCorrect": false
+        },
+        {
+          "text": "A Iddo, jefe en aquel lugar",
+          "isCorrect": true
+        },
+        {
+          "text": "A Hasabías, de los hijos de Merari",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué publicó Esdras junto al río de Ahava?",
+      "explanation": "Publicó un ayuno allí junto al río de Ahava, para afligirse delante de su Dios y pedirle camino derecho.",
+      "bibleReference": "Esdras 8:21",
+      "answers": [
+        {
+          "text": "Una fiesta de siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un censo de todo el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ofrenda de holocaustos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ayuno",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Esdras en cuanto a pedir al rey tropa y gente de a caballo para el camino?",
+      "explanation": "Esdras dice que tuvo vergüenza de pedir al rey tropa y gente de a caballo que los defendiesen del enemigo en el camino.",
+      "bibleReference": "Esdras 8:22",
+      "answers": [
+        {
+          "text": "Tuvo vergüenza de pedírselos",
+          "isCorrect": true
+        },
+        {
+          "text": "Pidió el doble de lo necesario",
+          "isCorrect": false
+        },
+        {
+          "text": "Se lo pidió por carta al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Envió a Serebías a pedirlo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos de los principales de los sacerdotes apartó Esdras?",
+      "explanation": "Esdras apartó doce de los principales de los sacerdotes, a Serebías y a Hasabías, y con ellos diez de sus hermanos.",
+      "bibleReference": "Esdras 8:24",
+      "answers": [
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánta plata pesó Esdras en manos de ellos?",
+      "explanation": "Pesó en manos de ellos seiscientos cincuenta talentos de plata, vasos de plata por cien talentos y cien talentos de oro.",
+      "bibleReference": "Esdras 8:26",
+      "answers": [
+        {
+          "text": "Ciento veinte talentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil ochocientos talentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos cincuenta talentos",
+          "isCorrect": true
+        },
+        {
+          "text": "Doscientos veinte talentos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les dijo Esdras acerca de ellos mismos y de los vasos?",
+      "explanation": "Les dijo: Vosotros sois consagrados a Jehová, y santos los vasos; y la plata y el oro, ofrenda voluntaria a Jehová.",
+      "bibleReference": "Esdras 8:28",
+      "answers": [
+        {
+          "text": "Que debían venderlos en Jerusalem para la obra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que podían usarlos durante el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debían guardarlos en Casipia hasta la vuelta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ellos eran consagrados a Jehová y los vasos santos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo partieron del río de Ahava para ir a Jerusalem?",
+      "explanation": "Partieron del río de Ahava el doce del mes primero, para ir a Jerusalem.",
+      "bibleReference": "Esdras 8:31",
+      "answers": [
+        {
+          "text": "El doce del mes primero",
+          "isCorrect": true
+        },
+        {
+          "text": "El primero del mes quinto",
+          "isCorrect": false
+        },
+        {
+          "text": "El catorce del mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los veinte del mes noveno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos carneros ofrecieron los hijos de la transmigración en holocausto al Dios de Israel?",
+      "explanation": "Ofrecieron doce becerros por todo Israel, noventa y seis carneros, setenta y siete corderos y doce machos cabríos por expiación.",
+      "bibleReference": "Esdras 8:35",
+      "answers": [
+        {
+          "text": "Setenta y siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Noventa y seis",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

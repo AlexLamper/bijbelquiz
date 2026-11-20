@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Salmos 10: la arrogancia del malo, lo que dice en su corazón y el amparo del huérfano.",
+  "slug": "psalms-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según la queja del comienzo, ¿en qué tiempo se esconde Jehová?",
+      "explanation": "El verso pregunta por qué Jehová está lejos y se esconde en el tiempo de la tribulación.",
+      "bibleReference": "Salmos 10:1",
+      "answers": [
+        { "text": "En el día de reposo", "isCorrect": false },
+        { "text": "En el tiempo de la tribulación", "isCorrect": true },
+        { "text": "En el tiempo de la siega", "isCorrect": false },
+        { "text": "En los días de fiesta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué persigue el malo al pobre?",
+      "explanation": "El verso dice que con arrogancia el malo persigue al pobre, y que serán cogidos en los artificios que han ideado.",
+      "bibleReference": "Salmos 10:2",
+      "answers": [
+        { "text": "Con lisonjas", "isCorrect": false },
+        { "text": "Con dádivas", "isCorrect": false },
+        { "text": "Con silencio", "isCorrect": false },
+        { "text": "Con arrogancia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por qué no busca a Dios el malo, según este salmo?",
+      "explanation": "El verso dice que el malo, por la altivez de su rostro, no busca a Dios, y que no hay Dios en todos sus pensamientos.",
+      "bibleReference": "Salmos 10:4",
+      "answers": [
+        { "text": "Por la altivez de su rostro", "isCorrect": true },
+        { "text": "Por el temor de los hombres", "isCorrect": false },
+        { "text": "Por la pobreza de su casa", "isCorrect": false },
+        { "text": "Por la dureza del camino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el malo en su corazón acerca de sí mismo?",
+      "explanation": "El verso dice que el malo dice en su corazón: No seré movido en ningún tiempo, ni jamás me alcanzará el infortunio.",
+      "bibleReference": "Salmos 10:6",
+      "answers": [
+        { "text": "Jehová me ha dejado solo", "isCorrect": false },
+        { "text": "Mañana mismo moriré", "isCorrect": false },
+        { "text": "No seré movido en ningún tiempo", "isCorrect": true },
+        { "text": "Daré mi pan a los pobres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué está llena la boca del malo, según este salmo?",
+      "explanation": "El verso dice que su boca está llena de maldición, y de engaños y fraude, y que debajo de su lengua hay vejación y maldad.",
+      "bibleReference": "Salmos 10:7",
+      "answers": [
+        { "text": "De alabanza y cantares", "isCorrect": false },
+        { "text": "De maldición, engaños y fraude", "isCorrect": true },
+        { "text": "De sabiduría y consejo", "isCorrect": false },
+        { "text": "De lamento y de llanto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué animal se compara al malo que acecha en oculto?",
+      "explanation": "El verso dice que acecha en oculto como el león desde su cama, para arrebatar al pobre.",
+      "bibleReference": "Salmos 10:9",
+      "answers": [
+        { "text": "Con el león desde su cama", "isCorrect": true },
+        { "text": "Con el lobo de la tarde", "isCorrect": false },
+        { "text": "Con el águila en las alturas", "isCorrect": false },
+        { "text": "Con la serpiente del camino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el malo en su corazón acerca de Dios?",
+      "explanation": "El verso dice que el malo dice en su corazón: Dios está olvidado, ha encubierto su rostro; nunca lo verá.",
+      "bibleReference": "Salmos 10:11",
+      "answers": [
+        { "text": "Que Dios juzga cada día", "isCorrect": false },
+        { "text": "Que Dios escucha al pobre", "isCorrect": false },
+        { "text": "Que Dios está olvidado", "isCorrect": true },
+        { "text": "Que Dios habita en Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que haga Jehová Dios cuando se levante?",
+      "explanation": "El verso dice: Levántate, oh Jehová Dios, alza tu mano, no te olvides de los pobres.",
+      "bibleReference": "Salmos 10:12",
+      "answers": [
+        { "text": "Que esconda su rostro", "isCorrect": false },
+        { "text": "Que guarde silencio", "isCorrect": false },
+        { "text": "Que vuelva atrás su diestra", "isCorrect": false },
+        { "text": "Que alce su mano", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De quién dice el salmista que Jehová es el amparo?",
+      "explanation": "El verso dice que a Jehová se acoge el pobre y que él es el amparo del huérfano.",
+      "bibleReference": "Salmos 10:14",
+      "answers": [
+        { "text": "Del huérfano", "isCorrect": true },
+        { "text": "Del príncipe", "isCorrect": false },
+        { "text": "Del juez", "isCorrect": false },
+        { "text": "Del fuerte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el salmista a Jehová al final del salmo?",
+      "explanation": "El verso dice: Jehová, Rey eterno y perpetuo; de su tierra fueron destruidas las gentes.",
+      "bibleReference": "Salmos 10:16",
+      "answers": [
+        { "text": "Pastor de Israel", "isCorrect": false },
+        { "text": "Rey eterno y perpetuo", "isCorrect": true },
+        { "text": "Varón de guerra", "isCorrect": false },
+        { "text": "Juez de los montes", "isCorrect": false }
+      ]
+    }
+  ]
+}

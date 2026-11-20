@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre 2 Crónicas 5: el arca llevada al lugar santísimo, los cantores con trompetas y la nube que llenó la casa de Jehová.",
+  "slug": "2-chronicles-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Cuando acabó toda la obra, ¿qué metió Salomón en la casa?",
+      "explanation": "Acabada toda la obra, Salomón metió en la casa las cosas que David su padre había dedicado, y puso la plata, el oro y todos los vasos en los tesoros.",
+      "bibleReference": "2 Crónicas 5:1",
+      "answers": [
+        { "text": "Las cosas que David su padre había dedicado", "isCorrect": true },
+        { "text": "Los carros y los caballos que trajo de Egipto", "isCorrect": false },
+        { "text": "Las maderas que cortaron en el Líbano", "isCorrect": false },
+        { "text": "El altar de bronce que hizo Bezaleel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De dónde debían traer el arca del pacto de Jehová?",
+      "explanation": "Salomón juntó a los ancianos y a los príncipes para que trajesen el arca del pacto de Jehová de la ciudad de David, que es Sión.",
+      "bibleReference": "2 Crónicas 5:2",
+      "answers": [
+        { "text": "Del tabernáculo del testimonio", "isCorrect": false },
+        { "text": "De la ciudad de David, que es Sión", "isCorrect": true },
+        { "text": "Del monte Moria, donde se edificó la casa", "isCorrect": false },
+        { "text": "Del gran atrio de los sacerdotes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué mes se juntaron al rey todos los varones de Israel?",
+      "explanation": "El texto dice que todos los varones de Israel se juntaron al rey a la solemnidad del mes séptimo.",
+      "bibleReference": "2 Crónicas 5:3",
+      "answers": [
+        { "text": "En el mes primero", "isCorrect": false },
+        { "text": "En el mes segundo", "isCorrect": false },
+        { "text": "En el mes séptimo", "isCorrect": true },
+        { "text": "En el mes cuarto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes tomaron el arca cuando vinieron todos los ancianos de Israel?",
+      "explanation": "Vinieron todos los ancianos de Israel, y los Levitas tomaron el arca.",
+      "bibleReference": "2 Crónicas 5:4",
+      "answers": [
+        { "text": "Los príncipes de las tribus", "isCorrect": false },
+        { "text": "Los ancianos de Israel", "isCorrect": false },
+        { "text": "Los porteros de las puertas", "isCorrect": false },
+        { "text": "Los Levitas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué sacrificaron el rey Salomón y toda la congregación delante del arca?",
+      "explanation": "Sacrificaron ovejas y bueyes, que por la multitud no se pudieron contar ni numerar.",
+      "bibleReference": "2 Crónicas 5:6",
+      "answers": [
+        { "text": "Ovejas y bueyes sin número", "isCorrect": true },
+        { "text": "Mil becerros y mil carneros", "isCorrect": false },
+        { "text": "Perfumes aromáticos y aceite", "isCorrect": false },
+        { "text": "Los panes de la proposición", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde metieron los sacerdotes el arca del pacto de Jehová?",
+      "explanation": "Los sacerdotes metieron el arca en su lugar, en el oratorio de la casa, en el lugar santísimo, bajo las alas de los querubines.",
+      "bibleReference": "2 Crónicas 5:7",
+      "answers": [
+        { "text": "En el gran atrio de la casa", "isCorrect": false },
+        { "text": "En el lugar santísimo, bajo los querubines", "isCorrect": true },
+        { "text": "En el pórtico, delante de las dos columnas", "isCorrect": false },
+        { "text": "En el tabernáculo del testimonio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué había dentro del arca?",
+      "explanation": "En el arca no había sino las dos tablas que Moisés había puesto en Horeb, con las cuales Jehová hizo alianza con los hijos de Israel.",
+      "bibleReference": "2 Crónicas 5:10",
+      "answers": [
+        { "text": "Las varas de los sacerdotes", "isCorrect": false },
+        { "text": "Los vasos de oro del santuario", "isCorrect": false },
+        { "text": "Las dos tablas puestas en Horeb", "isCorrect": true },
+        { "text": "El libro de la alianza escrito", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos sacerdotes tocaban trompetas junto a los Levitas cantores?",
+      "explanation": "Los Levitas cantores estaban con címbalos, salterios y arpas al oriente del altar, y con ellos ciento veinte sacerdotes que tocaban trompetas.",
+      "bibleReference": "2 Crónicas 5:12",
+      "answers": [
+        { "text": "Doscientos ochenta y ocho", "isCorrect": false },
+        { "text": "Doce sacerdotes", "isCorrect": false },
+        { "text": "Setenta sacerdotes", "isCorrect": false },
+        { "text": "Ciento veinte", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué decían al alzar la voz para alabar y confesar a Jehová?",
+      "explanation": "Cantaban todos a una, diciendo: Porque es bueno, porque su misericordia es para siempre.",
+      "bibleReference": "2 Crónicas 5:13",
+      "answers": [
+        { "text": "Porque es bueno, porque su misericordia es para siempre", "isCorrect": true },
+        { "text": "Bendito sea Jehová, que hizo los cielos y la tierra", "isCorrect": false },
+        { "text": "Tuyo, oh Jehová, es el reino y la grandeza", "isCorrect": false },
+        { "text": "Jehová Dios de Abraham, de Isaac y de Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no podían los sacerdotes estar para ministrar?",
+      "explanation": "No podían ministrar por causa de la nube, porque la gloria de Jehová había henchido la casa de Dios.",
+      "bibleReference": "2 Crónicas 5:14",
+      "answers": [
+        { "text": "Porque no estaban todos santificados", "isCorrect": false },
+        { "text": "Por causa de la nube que llenó la casa", "isCorrect": true },
+        { "text": "Porque las trompetas sonaban muy fuerte", "isCorrect": false },
+        { "text": "Porque el arca estaba aún en Sión", "isCorrect": false }
+      ]
+    }
+  ]
+}

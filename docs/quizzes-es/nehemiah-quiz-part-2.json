@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Nehemías 2: la petición al rey Artajerjes, el viaje a Jerusalem y el recorrido nocturno por los muros.",
+  "slug": "nehemiah-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué mes y en qué año del rey Artajerjes sucedió esto?",
+      "explanation": "El capítulo comienza: Y fue en el mes de Nisán, en el año veinte del rey Artajerjes.",
+      "bibleReference": "Nehemías 2:1",
+      "answers": [
+        {
+          "text": "En el mes de Nisán, en el año veinte",
+          "isCorrect": true
+        },
+        {
+          "text": "En el mes de Chisleu, en el año treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes de Elul, en el año segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes de Adar, en el año sexto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo reaccionó Nehemías cuando el rey le preguntó por su rostro triste?",
+      "explanation": "El rey le preguntó por qué estaba triste su rostro, y Nehemías dice: Entonces temí en gran manera.",
+      "bibleReference": "Nehemías 2:2",
+      "answers": [
+        {
+          "text": "Se alegró en gran manera",
+          "isCorrect": false
+        },
+        {
+          "text": "Temió en gran manera",
+          "isCorrect": true
+        },
+        {
+          "text": "Calló y salió del palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "Rasgó su vestido y lloró",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Nehemías a la ciudad al hablar con el rey?",
+      "explanation": "Dijo al rey que la ciudad, casa de los sepulcros de sus padres, estaba desierta y sus puertas consumidas del fuego.",
+      "bibleReference": "Nehemías 2:3",
+      "answers": [
+        {
+          "text": "La ciudad de los reyes de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "La capital de todo el reino",
+          "isCorrect": false
+        },
+        {
+          "text": "La casa de los sepulcros de sus padres",
+          "isCorrect": true
+        },
+        {
+          "text": "La casa de los tesoros del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Nehemías antes de responder a la pregunta del rey?",
+      "explanation": "Cuando el rey le dijo: ¿Qué cosa pides?, Nehemías oró al Dios de los cielos y después habló al rey.",
+      "bibleReference": "Nehemías 2:4",
+      "answers": [
+        {
+          "text": "Pidió consejo a la reina",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamó a su hermano Hanani",
+          "isCorrect": false
+        },
+        {
+          "text": "Se enlutó por algunos días",
+          "isCorrect": false
+        },
+        {
+          "text": "Oró al Dios de los cielos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el paréntesis del texto, ¿quién estaba junto al rey cuando preguntó por el viaje de Nehemías?",
+      "explanation": "El texto anota entre paréntesis que la reina estaba sentada junto a él.",
+      "bibleReference": "Nehemías 2:6",
+      "answers": [
+        {
+          "text": "La reina",
+          "isCorrect": true
+        },
+        {
+          "text": "Asaph",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanani",
+          "isCorrect": false
+        },
+        {
+          "text": "Tobías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué pidió Nehemías una carta para Asaph, guarda del bosque del rey?",
+      "explanation": "Pidió esa carta a fin de que Asaph le diese madera para enmaderar los portales del palacio de la casa, para el muro de la ciudad y para la casa donde entraría.",
+      "bibleReference": "Nehemías 2:8",
+      "answers": [
+        {
+          "text": "Para que le diese plata y oro para la obra",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que le diese madera",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que le diese tropa y gente de a caballo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que le franquease el paso hasta Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo reaccionaron Sanballat Horonita y Tobías el siervo Ammonita?",
+      "explanation": "Cuando lo oyeron, les disgustó en extremo que viniese alguno para procurar el bien de los hijos de Israel.",
+      "bibleReference": "Nehemías 2:10",
+      "answers": [
+        {
+          "text": "Se alegraron mucho",
+          "isCorrect": false
+        },
+        {
+          "text": "Le enviaron madera",
+          "isCorrect": false
+        },
+        {
+          "text": "Les disgustó en extremo",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardaron silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué puerta salió Nehemías de noche para considerar los muros?",
+      "explanation": "Salió de noche por la puerta del Valle hacia la fuente del Dragón y la puerta del Muladar, y consideró los muros derribados.",
+      "bibleReference": "Nehemías 2:13",
+      "answers": [
+        {
+          "text": "Por la puerta de las Ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la puerta del Pescado",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la puerta de los Caballos",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la puerta del Valle",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió cuando llegó a la puerta de la Fuente y al estanque del Rey?",
+      "explanation": "Pasó a la puerta de la Fuente y al estanque del Rey, mas no había lugar por donde pasase la cabalgadura en que iba.",
+      "bibleReference": "Nehemías 2:14",
+      "answers": [
+        {
+          "text": "No había lugar por donde pasase la cabalgadura",
+          "isCorrect": true
+        },
+        {
+          "text": "Los guardas no le dejaron pasar de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "El muro ya estaba reedificado en aquel lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Allí se juntaron con él los sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Nehemías a los que se burlaban de la obra?",
+      "explanation": "A Samballat, Tobías y Gesem el Arabe les respondió que el Dios de los cielos los prosperaría, y que ellos no tenían parte, ni derecho, ni memoria en Jerusalem.",
+      "bibleReference": "Nehemías 2:19-20",
+      "answers": [
+        {
+          "text": "Que esperarían la respuesta del rey Artajerjes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el Dios de los cielos los prosperaría",
+          "isCorrect": true
+        },
+        {
+          "text": "Que dejarían la obra hasta el año siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les darían parte en la ciudad si ayudaban",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

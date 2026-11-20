@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 37",
+  "description": "Diez preguntas sobre Salmos 37: no impacientarse por los malignos, los mansos que heredarán la tierra y el impío ensalzado que luego no fue hallado.",
+  "slug": "psalms-quiz-part-37",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué aconseja el primer versículo acerca de los malignos?",
+      "explanation": "El versículo 1 dice que no te impacientes a causa de los malignos ni tengas envidia de los que hacen iniquidad.",
+      "bibleReference": "Salmos 37:1",
+      "answers": [
+        { "text": "No impacientarse ni tenerles envidia", "isCorrect": true },
+        { "text": "Imitar sus caminos con cuidado", "isCorrect": false },
+        { "text": "Pedirles consejo cada día", "isCorrect": false },
+        { "text": "Temerlos todos los días", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 2 a los malignos?",
+      "explanation": "El versículo 2 dice que serán cortados pronto como la hierba y que decaerán como el verdor de un renuevo.",
+      "bibleReference": "Salmos 37:2",
+      "answers": [
+        { "text": "Con el ciervo de las aguas", "isCorrect": false },
+        { "text": "Con la peña del desierto", "isCorrect": false },
+        { "text": "Con el monte de Dios", "isCorrect": false },
+        { "text": "Con la hierba que es cortada pronto", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué dará Jehová al que pone en él su delicia?",
+      "explanation": "El versículo 4 dice que si pones tu delicia en Jehová, él te dará las peticiones de tu corazón.",
+      "bibleReference": "Salmos 37:4",
+      "answers": [
+        { "text": "La multitud de un ejército", "isCorrect": false },
+        { "text": "Las peticiones de su corazón", "isCorrect": true },
+        { "text": "El consejo de las gentes", "isCorrect": false },
+        { "text": "Las riquezas de los pecadores", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿quiénes heredarán la tierra?",
+      "explanation": "El versículo 9 dice que los malignos serán talados, pero que los que esperan en Jehová heredarán la tierra.",
+      "bibleReference": "Salmos 37:9",
+      "answers": [
+        { "text": "Los que hacen iniquidad", "isCorrect": false },
+        { "text": "Los que tienen envidia", "isCorrect": false },
+        { "text": "Los que esperan en Jehová", "isCorrect": true },
+        { "text": "Los que prosperan en su camino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿con qué se recrearán los mansos?",
+      "explanation": "El versículo 11 dice que los mansos heredarán la tierra y se recrearán con abundancia de paz.",
+      "bibleReference": "Salmos 37:11",
+      "answers": [
+        { "text": "Con abundancia de paz", "isCorrect": true },
+        { "text": "Con abundancia de plata", "isCorrect": false },
+        { "text": "Con lo poco del justo", "isCorrect": false },
+        { "text": "Con las riquezas de los pecadores", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿qué es mejor que las riquezas de muchos pecadores?",
+      "explanation": "El versículo 16 dice que es mejor lo poco del justo que las riquezas de muchos pecadores.",
+      "bibleReference": "Salmos 37:16",
+      "answers": [
+        { "text": "El arco del impío", "isCorrect": false },
+        { "text": "Lo poco del justo", "isCorrect": true },
+        { "text": "La espada del valiente", "isCorrect": false },
+        { "text": "La heredad de las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 21, ¿qué hace el impío cuando toma prestado?",
+      "explanation": "El versículo 21 dice que el impío toma prestado y no paga, mientras el justo tiene misericordia y da.",
+      "bibleReference": "Salmos 37:21",
+      "answers": [
+        { "text": "Paga el doble", "isCorrect": false },
+        { "text": "Presta a otros", "isCorrect": false },
+        { "text": "Tiene misericordia", "isCorrect": false },
+        { "text": "No paga", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 25, ¿qué dice el salmista que nunca ha visto?",
+      "explanation": "El versículo 25 dice que fue joven y ha envejecido, y que no ha visto justo desamparado ni a su descendencia mendigando pan.",
+      "bibleReference": "Salmos 37:25",
+      "answers": [
+        { "text": "Un justo desamparado", "isCorrect": true },
+        { "text": "Un impío ensalzado", "isCorrect": false },
+        { "text": "Un arco quebrado", "isCorrect": false },
+        { "text": "Una espada desenvainada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué se extendía el impío que el salmista vio sumamente ensalzado?",
+      "explanation": "El versículo 35 dice que vio al impío sumamente ensalzado y extendiéndose como un laurel verde; el versículo 36 añade que luego pasó y no fue hallado.",
+      "bibleReference": "Salmos 37:35-36",
+      "answers": [
+        { "text": "Como un ciervo", "isCorrect": false },
+        { "text": "Como la grasa de los carneros", "isCorrect": false },
+        { "text": "Como un laurel verde", "isCorrect": true },
+        { "text": "Como un montón de aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 39, ¿de quién es la salvación de los justos?",
+      "explanation": "El versículo 39 dice que la salvación de los justos es de Jehová, y que él es su fortaleza en el tiempo de angustia.",
+      "bibleReference": "Salmos 37:39",
+      "answers": [
+        { "text": "De su propia espada", "isCorrect": false },
+        { "text": "De Jehová", "isCorrect": true },
+        { "text": "De su arco y su fuerza", "isCorrect": false },
+        { "text": "De los reyes de la tierra", "isCorrect": false }
+      ]
+    }
+  ]
+}

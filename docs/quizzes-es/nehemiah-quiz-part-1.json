@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Nehemías 1: las noticias que llegaron desde Jerusalem y la oración de Nehemías en Susán.",
+  "slug": "nehemiah-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién era hijo Nehemías?",
+      "explanation": "El capítulo comienza con las palabras de Nehemías, hijo de Hachâlías.",
+      "bibleReference": "Nehemías 1:1",
+      "answers": [
+        {
+          "text": "De Hachâlías",
+          "isCorrect": true
+        },
+        {
+          "text": "De Hanani",
+          "isCorrect": false
+        },
+        {
+          "text": "De Azbuc",
+          "isCorrect": false
+        },
+        {
+          "text": "De Hananías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba Nehemías cuando ocurrió lo que cuenta?",
+      "explanation": "Dice que aconteció en el mes de Chisleu, en el año veinte, estando él en Susán, capital del reino.",
+      "bibleReference": "Nehemías 1:1",
+      "answers": [
+        {
+          "text": "En Babilonia, junto al río",
+          "isCorrect": false
+        },
+        {
+          "text": "En Susán, capital del reino",
+          "isCorrect": true
+        },
+        {
+          "text": "En Jerusalem, en la casa de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "En la provincia de Media",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién vino a Nehemías con ciertos varones de Judá?",
+      "explanation": "Vino Hanani, uno de sus hermanos, con ciertos varones de Judá, y Nehemías les preguntó por los Judíos y por Jerusalem.",
+      "bibleReference": "Nehemías 1:2",
+      "answers": [
+        {
+          "text": "Hananías, príncipe del palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "Esdras, el sacerdote escriba",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanani, uno de sus hermanos",
+          "isCorrect": true
+        },
+        {
+          "text": "Asaph, guarda del bosque del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le contaron sobre el muro y las puertas de Jerusalem?",
+      "explanation": "Le dijeron que el residuo estaba en gran mal y afrenta, que el muro de Jerusalem estaba derribado y sus puertas quemadas a fuego.",
+      "bibleReference": "Nehemías 1:3",
+      "answers": [
+        {
+          "text": "Que el muro estaba acabado y las puertas asentadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la muralla estaba edificada hasta su mitad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las puertas tenían cerraduras y cerrojos nuevos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el muro estaba derribado y las puertas quemadas a fuego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Nehemías cuando oyó estas palabras?",
+      "explanation": "Se sentó y lloró, se enlutó por algunos días, y ayunó y oró delante del Dios de los cielos.",
+      "bibleReference": "Nehemías 1:4",
+      "answers": [
+        {
+          "text": "Se sentó y lloró, y ayunó y oró delante del Dios de los cielos",
+          "isCorrect": true
+        },
+        {
+          "text": "Partió en seguida hacia Jerusalem con soldados del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribió una carta a los gobernadores del otro lado del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Calló y no dijo nada a nadie durante un año entero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la oración, ¿a quiénes guarda Dios el pacto y la misericordia?",
+      "explanation": "Nehemías se dirige a Jehová, Dios de los cielos, fuerte, grande y terrible, que guarda el pacto y la misericordia a los que le aman y guardan sus mandamientos.",
+      "bibleReference": "Nehemías 1:5",
+      "answers": [
+        {
+          "text": "A los reyes de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que le aman y guardan sus mandamientos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes y a los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que habitan en Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué confiesa Nehemías acerca de sí mismo y de la casa de su padre?",
+      "explanation": "Después de confesar los pecados de los hijos de Israel, añade que él y la casa de su padre también habían pecado.",
+      "bibleReference": "Nehemías 1:6",
+      "answers": [
+        {
+          "text": "Que habían guardado todos los mandamientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no conocían nada de la ley de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Que también ellos habían pecado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que habían edificado el muro de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué palabra ordenada a Moisés le pide Nehemías a Dios que recuerde?",
+      "explanation": "Le pide que recuerde su palabra: que si prevaricaban serían esparcidos por los pueblos, y que si se volvían a él y guardaban sus mandamientos serían juntados otra vez.",
+      "bibleReference": "Nehemías 1:8-9",
+      "answers": [
+        {
+          "text": "Que el muro de la ciudad nunca sería derribado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ningún rey extranjero reinaría sobre ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que serían librados de todo tributo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que serían esparcidos si prevaricaban, y juntados si volvían",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según la oración, ¿con qué redimió Dios a su pueblo?",
+      "explanation": "Dice que ellos son sus siervos y su pueblo, los cuales redimió con su gran fortaleza y con su mano fuerte.",
+      "bibleReference": "Nehemías 1:10",
+      "answers": [
+        {
+          "text": "Con su gran fortaleza y con su mano fuerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la plata de los reyes de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mano de los profetas de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las armas de Judá y de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué oficio tenía Nehemías, según el final del capítulo?",
+      "explanation": "El capítulo termina diciendo: Porque yo servía de copero al rey.",
+      "bibleReference": "Nehemías 1:11",
+      "answers": [
+        {
+          "text": "Escriba de la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Copero del rey",
+          "isCorrect": true
+        },
+        {
+          "text": "Guarda del bosque del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Príncipe del palacio",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

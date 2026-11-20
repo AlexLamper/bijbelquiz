@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Salmos 24: la tierra que es de Jehová, quién puede subir a su monte y la entrada del Rey de gloria.",
+  "slug": "psalms-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿de quién es la tierra y su plenitud?",
+      "explanation": "El texto dice: De Jehová es la tierra y su plenitud; el mundo, y los que en él habitan.",
+      "bibleReference": "Salmos 24:1",
+      "answers": [
+        {
+          "text": "De Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "De los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "De los que en ella habitan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué la fundó, según el verso 2?",
+      "explanation": "El texto dice que él la fundó sobre los mares.",
+      "bibleReference": "Salmos 24:2",
+      "answers": [
+        {
+          "text": "Sobre los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los mares",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre columnas de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué la afirmó?",
+      "explanation": "El mismo verso dice que la afirmó sobre los ríos.",
+      "bibleReference": "Salmos 24:2",
+      "answers": [
+        {
+          "text": "Sobre las nubes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre una roca",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los cimientos del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los ríos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace el salmo en el verso 3?",
+      "explanation": "El texto pregunta: ¿Quién subirá al monte de Jehová? ¿y quién estará en el lugar de su santidad?",
+      "bibleReference": "Salmos 24:3",
+      "answers": [
+        {
+          "text": "Quién podrá contar las estrellas",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién es como Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién subirá al monte de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Quién edificará la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el verso 4 al que puede estar en el lugar de su santidad?",
+      "explanation": "El texto dice: El limpio de manos, y puro de corazón.",
+      "bibleReference": "Salmos 24:4",
+      "answers": [
+        {
+          "text": "Limpio de manos y puro de corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Sabio y entendido en la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Rico y poderoso entre el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuerte y valiente en la batalla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿qué no ha hecho ese hombre?",
+      "explanation": "El texto dice que no ha elevado su alma a la vanidad ni ha jurado con engaño.",
+      "bibleReference": "Salmos 24:4",
+      "answers": [
+        {
+          "text": "No ha salido de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "No ha jurado con engaño",
+          "isCorrect": true
+        },
+        {
+          "text": "No ha comido pan",
+          "isCorrect": false
+        },
+        {
+          "text": "No ha visto el templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué recibirá de Jehová, según el verso 5?",
+      "explanation": "El texto dice que recibirá bendición de Jehová y justicia del Dios de salud.",
+      "bibleReference": "Salmos 24:5",
+      "answers": [
+        {
+          "text": "Riqueza y honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuerza y gloria",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendición y justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "Paz y reposo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama a Dios el verso 6?",
+      "explanation": "El texto habla de los que buscan su rostro y lo llama Dios de Jacob.",
+      "bibleReference": "Salmos 24:6",
+      "answers": [
+        {
+          "text": "Dios de Sion",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios de los cielos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios de Jacob",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 7, ¿qué deben hacer las puertas eternas?",
+      "explanation": "El texto dice: Alzad, oh puertas, vuestras cabezas, y alzaos vosotras, puertas eternas, y entrará el Rey de gloria.",
+      "bibleReference": "Salmos 24:7",
+      "answers": [
+        {
+          "text": "Cerrarse hasta la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Alzar sus cabezas",
+          "isCorrect": true
+        },
+        {
+          "text": "Caer a tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 10, ¿quién es este Rey de gloria?",
+      "explanation": "El último verso responde que Jehová de los ejércitos, él es el Rey de la gloria.",
+      "bibleReference": "Salmos 24:10",
+      "answers": [
+        {
+          "text": "Jehová de los ejércitos",
+          "isCorrect": true
+        },
+        {
+          "text": "El ungido de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "El fuerte de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "El Dios de salud",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

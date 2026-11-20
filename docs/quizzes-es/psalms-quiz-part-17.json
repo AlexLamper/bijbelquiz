@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Salmos 17: una oración sin labios de engaño, la sombra de las alas de Dios y los enemigos que cercan.",
+  "slug": "psalms-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo dice el salmista que es la oración que presenta a Jehová?",
+      "explanation": "El verso pide a Jehová que escuche su oración hecha sin labios de engaño.",
+      "bibleReference": "Salmos 17:1",
+      "answers": [
+        { "text": "Hecha dentro del templo", "isCorrect": false },
+        { "text": "Hecha sin labios de engaño", "isCorrect": true },
+        { "text": "Hecha con muchos sacrificios", "isCorrect": false },
+        { "text": "Hecha delante del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué halló Dios cuando probó su corazón?",
+      "explanation": "El verso dice que Dios probó su corazón, le visitó de noche, le apuró y nada inicuo halló.",
+      "bibleReference": "Salmos 17:3",
+      "answers": [
+        { "text": "Nada inicuo", "isCorrect": true },
+        { "text": "Mucha maldad", "isCorrect": false },
+        { "text": "Un corazón doble", "isCorrect": false },
+        { "text": "Palabras vanas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se ha propuesto el salmista acerca de su boca?",
+      "explanation": "El verso dice que se ha propuesto que su boca no ha de propasarse.",
+      "bibleReference": "Salmos 17:3",
+      "answers": [
+        { "text": "Que cantará cada día", "isCorrect": false },
+        { "text": "Que callará delante del malo", "isCorrect": false },
+        { "text": "Que no ha de propasarse", "isCorrect": true },
+        { "text": "Que contará sus maravillas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista acerca de sus pasos?",
+      "explanation": "El verso dice: Sustenta mis pasos en tus caminos, porque mis pies no resbalen.",
+      "bibleReference": "Salmos 17:5",
+      "answers": [
+        { "text": "Que los apresure en el camino", "isCorrect": false },
+        { "text": "Que los esconda del malo", "isCorrect": false },
+        { "text": "Que los vuelva a la ciudad", "isCorrect": false },
+        { "text": "Que los sustente en sus caminos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Como qué pide que Dios le guarde, según el verso 8?",
+      "explanation": "El verso dice: Guárdame como lo negro de la niñeta del ojo.",
+      "bibleReference": "Salmos 17:8",
+      "answers": [
+        { "text": "Como lo negro de la niñeta del ojo", "isCorrect": true },
+        { "text": "Como la piedra que está en el altar", "isCorrect": false },
+        { "text": "Como el cordero que va en el rebaño", "isCorrect": false },
+        { "text": "Como el agua que está en la vasija", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué pide que Dios le esconda, en el mismo verso?",
+      "explanation": "El verso dice: escóndeme con la sombra de tus alas.",
+      "bibleReference": "Salmos 17:8",
+      "answers": [
+        { "text": "Con la nube del monte", "isCorrect": false },
+        { "text": "Con la sombra de sus alas", "isCorrect": true },
+        { "text": "Con el velo del templo", "isCorrect": false },
+        { "text": "Con el escudo de su mano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo hablan con su boca los que le cercan?",
+      "explanation": "El verso dice que están cerrados con su grosura y que con su boca hablan soberbiamente.",
+      "bibleReference": "Salmos 17:10",
+      "answers": [
+        { "text": "En silencio", "isCorrect": false },
+        { "text": "Con lisonjas", "isCorrect": false },
+        { "text": "Soberbiamente", "isCorrect": true },
+        { "text": "En lengua extraña", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué animales compara el salmista a sus enemigos en el verso 12?",
+      "explanation": "El verso dice que parecen al león que desea hacer presa y al leoncillo que está escondido.",
+      "bibleReference": "Salmos 17:12",
+      "answers": [
+        { "text": "Al oso que sale del campo", "isCorrect": false },
+        { "text": "Al águila de los cielos", "isCorrect": false },
+        { "text": "A la zorra de las viñas", "isCorrect": false },
+        { "text": "Al león y al leoncillo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué pide que Jehová libre su alma del malo?",
+      "explanation": "El verso dice: libra mi alma del malo con tu espada.",
+      "bibleReference": "Salmos 17:13",
+      "answers": [
+        { "text": "Con su espada", "isCorrect": true },
+        { "text": "Con su vara", "isCorrect": false },
+        { "text": "Con su mano izquierda", "isCorrect": false },
+        { "text": "Con fuego del cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que verá en justicia?",
+      "explanation": "El último verso dice: Yo en justicia veré tu rostro; seré saciado cuando despertare a tu semejanza.",
+      "bibleReference": "Salmos 17:15",
+      "answers": [
+        { "text": "La tierra de los vivientes", "isCorrect": false },
+        { "text": "El rostro de Dios", "isCorrect": true },
+        { "text": "La caída de sus enemigos", "isCorrect": false },
+        { "text": "La gloria de la ciudad", "isCorrect": false }
+      ]
+    }
+  ]
+}

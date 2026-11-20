@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre 1 Crónicas 24: los repartimientos de los hijos de Aarón, las veinticuatro suertes y el resto de los hijos de Leví.",
+  "slug": "1-chronicles-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes eran los hijos de Aarón según el comienzo del capítulo?",
+      "explanation": "El texto nombra como hijos de Aarón a Nadab, Abiú, Eleazar e Ithamar.",
+      "bibleReference": "1 Crónicas 24:1",
+      "answers": [
+        { "text": "Nadab, Abiú, Eleazar e Ithamar", "isCorrect": true },
+        { "text": "Sadoc, Ahimelech, Abiathar y Cos", "isCorrect": false },
+        { "text": "Gersón, Coath, Merari y Leví", "isCorrect": false },
+        { "text": "Subael, Jehedías, Isias y Jath", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Nadab y Abiú?",
+      "explanation": "Nadab y Abiú murieron antes que su padre y no tuvieron hijos, de modo que Eleazar e Ithamar tuvieron el sacerdocio.",
+      "bibleReference": "1 Crónicas 24:2",
+      "answers": [
+        { "text": "Que fueron escribas del rey David", "isCorrect": false },
+        { "text": "Que repartieron las suertes del santuario", "isCorrect": false },
+        { "text": "Que murieron antes que su padre, sin hijos", "isCorrect": true },
+        { "text": "Que tuvieron el sacerdocio con Eleazar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "En el reparto que hizo David, ¿de los hijos de quién era Sadoc?",
+      "explanation": "David los repartió por sus turnos, siendo Sadoc de los hijos de Eleazar y Ahimelech de los hijos de Ithamar.",
+      "bibleReference": "1 Crónicas 24:3",
+      "answers": [
+        { "text": "De los hijos de Ithamar", "isCorrect": false },
+        { "text": "De los hijos de Eleazar", "isCorrect": true },
+        { "text": "De los hijos de Merari", "isCorrect": false },
+        { "text": "De los hijos de Abiú", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas cabezas de familias paternas había de los hijos de Eleazar?",
+      "explanation": "De los hijos de Eleazar había dieciséis cabezas de familias paternas, y de los hijos de Ithamar, ocho.",
+      "bibleReference": "1 Crónicas 24:4",
+      "answers": [
+        { "text": "Ocho cabezas", "isCorrect": false },
+        { "text": "Doce cabezas", "isCorrect": false },
+        { "text": "Veinticuatro cabezas", "isCorrect": false },
+        { "text": "Dieciséis cabezas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De qué manera repartieron a los hijos de Eleazar y a los de Ithamar?",
+      "explanation": "El texto dice que los repartieron por suerte, los unos con los otros.",
+      "bibleReference": "1 Crónicas 24:5",
+      "answers": [
+        { "text": "Por suerte", "isCorrect": true },
+        { "text": "Por antigüedad de edad", "isCorrect": false },
+        { "text": "Por el número de sus ciudades", "isCorrect": false },
+        { "text": "Por elección del pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién los escribió delante del rey y de los príncipes?",
+      "explanation": "Semeías escriba, hijo de Nathanael, de los Levitas, los escribió delante del rey, de los príncipes y de los sacerdotes.",
+      "bibleReference": "1 Crónicas 24:6",
+      "answers": [
+        { "text": "Ahimelech hijo de Abiathar", "isCorrect": false },
+        { "text": "Sadoc el sacerdote", "isCorrect": false },
+        { "text": "Semeías hijo de Nathanael", "isCorrect": true },
+        { "text": "Subael hijo de Amram", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por quién salió la primera suerte?",
+      "explanation": "La primera suerte salió por Joiarib y la segunda por Jedaía.",
+      "bibleReference": "1 Crónicas 24:7",
+      "answers": [
+        { "text": "Por Jedaía", "isCorrect": false },
+        { "text": "Por Joiarib", "isCorrect": true },
+        { "text": "Por Harim", "isCorrect": false },
+        { "text": "Por Seorim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por quién salió la vigésimacuarta suerte?",
+      "explanation": "La vigésimatercia suerte salió por Delaía y la vigésimacuarta por Maazía.",
+      "bibleReference": "1 Crónicas 24:18",
+      "answers": [
+        { "text": "Por Delaía", "isCorrect": false },
+        { "text": "Por Hamul", "isCorrect": false },
+        { "text": "Por Jachim", "isCorrect": false },
+        { "text": "Por Maazía", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién era el primero de los hijos de Hebrón?",
+      "explanation": "De los hijos de Hebrón, Jeria era el primero, el segundo Amarías, el tercero Jahaziel y el cuarto Jecamán.",
+      "bibleReference": "1 Crónicas 24:23",
+      "answers": [
+        { "text": "Jeria", "isCorrect": true },
+        { "text": "Amarías", "isCorrect": false },
+        { "text": "Jahaziel", "isCorrect": false },
+        { "text": "Jecamán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿delante de quiénes echaron suertes también los Levitas?",
+      "explanation": "Echaron suertes, como sus hermanos los hijos de Aarón, delante del rey David, y de Sadoc y de Ahimelech, y de los príncipes de las familias.",
+      "bibleReference": "1 Crónicas 24:31",
+      "answers": [
+        { "text": "Delante de Moisés y de Aarón", "isCorrect": false },
+        { "text": "Delante de Semeías el escriba solo", "isCorrect": false },
+        { "text": "Delante del rey David, de Sadoc y de Ahimelech", "isCorrect": true },
+        { "text": "Delante de los capitanes del ejército", "isCorrect": false }
+      ]
+    }
+  ]
+}

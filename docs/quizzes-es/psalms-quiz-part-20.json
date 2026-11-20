@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Salmos 20: las peticiones por el día de conflicto, la ayuda desde el santuario y la confianza en el nombre de Jehová.",
+  "slug": "psalms-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el salmo que haga Jehová en el día de conflicto?",
+      "explanation": "El verso dice: Óigate Jehová en el día de conflicto.",
+      "bibleReference": "Salmos 20:1",
+      "answers": [
+        { "text": "Que guarde silencio", "isCorrect": false },
+        { "text": "Que envíe fuego", "isCorrect": false },
+        { "text": "Que le reprenda", "isCorrect": false },
+        { "text": "Que le oiga", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué nombre pide el salmo que le defienda?",
+      "explanation": "El verso dice: defiéndate el nombre del Dios de Jacob.",
+      "bibleReference": "Salmos 20:1",
+      "answers": [
+        { "text": "El nombre del Dios de Jacob", "isCorrect": true },
+        { "text": "El nombre del rey de Israel", "isCorrect": false },
+        { "text": "El nombre de los príncipes", "isCorrect": false },
+        { "text": "El nombre de los ejércitos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde pide el salmo que le sea enviada ayuda?",
+      "explanation": "El verso dice: Envíete ayuda desde el santuario.",
+      "bibleReference": "Salmos 20:2",
+      "answers": [
+        { "text": "Desde Hebrón", "isCorrect": false },
+        { "text": "Desde el santuario", "isCorrect": true },
+        { "text": "Desde el mar", "isCorrect": false },
+        { "text": "Desde el desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde pide el salmo que le sostenga Jehová?",
+      "explanation": "El verso dice: y desde Sión te sostenga.",
+      "bibleReference": "Salmos 20:2",
+      "answers": [
+        { "text": "Desde Bet-el", "isCorrect": false },
+        { "text": "Desde Gilgal", "isCorrect": false },
+        { "text": "Desde Sión", "isCorrect": true },
+        { "text": "Desde el Líbano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que Jehová reduzca a ceniza?",
+      "explanation": "El verso dice: Haga memoria de todos tus presentes, y reduzca a ceniza tu holocausto.",
+      "bibleReference": "Salmos 20:3",
+      "answers": [
+        { "text": "Tu holocausto", "isCorrect": true },
+        { "text": "Tus enemigos", "isCorrect": false },
+        { "text": "Tus carros", "isCorrect": false },
+        { "text": "Tus ídolos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que Jehová cumpla, según el verso 4?",
+      "explanation": "El verso dice: Déte conforme a tu corazón, y cumpla todo tu consejo.",
+      "bibleReference": "Salmos 20:4",
+      "answers": [
+        { "text": "Toda la ley escrita", "isCorrect": false },
+        { "text": "Todo tu consejo", "isCorrect": true },
+        { "text": "Todos los días del rey", "isCorrect": false },
+        { "text": "Todas las palabras antiguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que alzarán en el nombre de nuestro Dios?",
+      "explanation": "El verso dice que nos alegraremos por tu salud y alzaremos pendón en el nombre de nuestro Dios.",
+      "bibleReference": "Salmos 20:5",
+      "answers": [
+        { "text": "Un altar", "isCorrect": false },
+        { "text": "Un cántico", "isCorrect": false },
+        { "text": "Pendón", "isCorrect": true },
+        { "text": "Un muro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué confían unos y otros, según el verso 7?",
+      "explanation": "El verso dice: Estos confían en carros, y aquéllos en caballos.",
+      "bibleReference": "Salmos 20:7",
+      "answers": [
+        { "text": "En oro y en plata", "isCorrect": false },
+        { "text": "En muros y en torres", "isCorrect": false },
+        { "text": "En arcos y en saetas", "isCorrect": false },
+        { "text": "En carros y en caballos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué les ocurrió a ellos, según el verso 8?",
+      "explanation": "El verso dice: Ellos arrodillaron, y cayeron; mas nosotros nos levantamos, y nos enhestamos.",
+      "bibleReference": "Salmos 20:8",
+      "answers": [
+        { "text": "Arrodillaron y cayeron", "isCorrect": true },
+        { "text": "Huyeron a los montes", "isCorrect": false },
+        { "text": "Volvieron a sus casas", "isCorrect": false },
+        { "text": "Cantaron en la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el último verso que haga el Rey?",
+      "explanation": "El último verso dice: Salva, Jehová; que el Rey nos oiga el día que lo invocáremos.",
+      "bibleReference": "Salmos 20:9",
+      "answers": [
+        { "text": "Que envíe su ley desde Sión", "isCorrect": false },
+        { "text": "Que nos oiga el día que lo invocáremos", "isCorrect": true },
+        { "text": "Que juzgue a todas las gentes", "isCorrect": false },
+        { "text": "Que edifique de nuevo el santuario", "isCorrect": false }
+      ]
+    }
+  ]
+}

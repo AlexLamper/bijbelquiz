@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre 2 Crónicas 9: la visita de la reina de Seba, las riquezas y el trono de Salomón, y el fin de su reinado.",
+  "slug": "2-chronicles-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién vino a Jerusalem al oír la fama de Salomón, para probarlo con preguntas difíciles?",
+      "explanation": "La reina de Seba oyó la fama de Salomón y vino a Jerusalem con un gran séquito para tentarlo con preguntas difíciles.",
+      "bibleReference": "2 Crónicas 9:1",
+      "answers": [
+        { "text": "La reina de Seba", "isCorrect": true },
+        { "text": "El rey de Tharsis", "isCorrect": false },
+        { "text": "La hija de Faraón", "isCorrect": false },
+        { "text": "Hiram rey de Tiro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo respondió Salomón a todo lo que la reina le habló?",
+      "explanation": "Salomón le declaró todas sus palabras: ninguna cosa quedó que Salomón no le declarase.",
+      "bibleReference": "2 Crónicas 9:2",
+      "answers": [
+        { "text": "Guardó silencio ante sus preguntas", "isCorrect": false },
+        { "text": "Le declaró todas sus palabras", "isCorrect": true },
+        { "text": "Llamó a sus sabios para que respondiesen", "isCorrect": false },
+        { "text": "Respondió solo a la mitad de ellas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le ocurrió a la reina de Seba cuando vio la sabiduría de Salomón, su casa y las viandas de su mesa?",
+      "explanation": "El texto dice que al verlo todo no quedó más espíritu en ella.",
+      "bibleReference": "2 Crónicas 9:3-4",
+      "answers": [
+        { "text": "Se volvió enseguida a su tierra", "isCorrect": false },
+        { "text": "Mandó traer más aromas y oro", "isCorrect": false },
+        { "text": "No quedó más espíritu en ella", "isCorrect": true },
+        { "text": "Pidió ser contada entre sus siervas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo la reina acerca de lo que había oído de Salomón en su tierra?",
+      "explanation": "La reina dijo que no creía las palabras de ellos hasta que vino y lo vio, y que ni aun la mitad de la grandeza de su sabiduría le había sido dicha.",
+      "bibleReference": "2 Crónicas 9:6",
+      "answers": [
+        { "text": "Que lo que había oído era mentira", "isCorrect": false },
+        { "text": "Que todo era tal como le habían contado", "isCorrect": false },
+        { "text": "Que nadie en su tierra había oído de él", "isCorrect": false },
+        { "text": "Que ni la mitad de su sabiduría le había sido dicha", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuánto oro dio la reina de Seba al rey?",
+      "explanation": "Dio al rey ciento y veinte talentos de oro, gran cantidad de aromas y piedras preciosas.",
+      "bibleReference": "2 Crónicas 9:9",
+      "answers": [
+        { "text": "Seiscientos sesenta talentos", "isCorrect": false },
+        { "text": "Ciento y veinte talentos", "isCorrect": true },
+        { "text": "Cuatrocientos y cincuenta talentos", "isCorrect": false },
+        { "text": "Mil y cien talentos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey con la madera de Algummim?",
+      "explanation": "El rey hizo de la madera de Algummim gradas en la casa de Jehová y en las casas reales, y arpas y salterios para los cantores.",
+      "bibleReference": "2 Crónicas 9:11",
+      "answers": [
+        { "text": "Gradas en la casa de Jehová, arpas y salterios", "isCorrect": true },
+        { "text": "Puertas y barras para las ciudades fuertes", "isCorrect": false },
+        { "text": "Un gran trono cubierto de oro puro", "isCorrect": false },
+        { "text": "Navíos para enviarlos a Tharsis", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuál era el peso de oro que venía a Salomón cada año?",
+      "explanation": "El peso de oro que venía a Salomón cada un año era seiscientos sesenta y seis talentos de oro.",
+      "bibleReference": "2 Crónicas 9:13",
+      "answers": [
+        { "text": "Cuatrocientos y cincuenta talentos", "isCorrect": false },
+        { "text": "Ciento y veinte talentos", "isCorrect": false },
+        { "text": "Trescientos siclos de oro", "isCorrect": false },
+        { "text": "Seiscientos sesenta y seis talentos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos leones había sobre las seis gradas del trono?",
+      "explanation": "El texto dice que había doce leones sobre las seis gradas, de una parte y de la otra.",
+      "bibleReference": "2 Crónicas 9:18-19",
+      "answers": [
+        { "text": "Dos", "isCorrect": false },
+        { "text": "Seis", "isCorrect": false },
+        { "text": "Doce", "isCorrect": true },
+        { "text": "Veinte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué traían las naves de Tharsis cada tres años?",
+      "explanation": "Las naves de Tharsis solían venir cada tres años y traían oro, plata, marfil, simios y pavos.",
+      "bibleReference": "2 Crónicas 9:21",
+      "answers": [
+        { "text": "Oro, plata, marfil, simios y pavos", "isCorrect": true },
+        { "text": "Cedros, cipreses y madera de Algummim", "isCorrect": false },
+        { "text": "Caballos, carros y acémilas", "isCorrect": false },
+        { "text": "Trigo, vino y aceite de Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en lugar de Salomón cuando éste durmió con sus padres?",
+      "explanation": "Salomón fue sepultado en la ciudad de David su padre, y reinó en su lugar Roboam su hijo.",
+      "bibleReference": "2 Crónicas 9:31",
+      "answers": [
+        { "text": "Jeroboam hijo de Nabat", "isCorrect": false },
+        { "text": "Abías su hijo", "isCorrect": false },
+        { "text": "Nathán el profeta", "isCorrect": false },
+        { "text": "Roboam su hijo", "isCorrect": true }
+      ]
+    }
+  ]
+}

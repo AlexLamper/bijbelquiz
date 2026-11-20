@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre 2 Crónicas 26: el poder y las obras de Uzzías, su entrada en el templo y la lepra que le salió en la frente.",
+  "slug": "2-chronicles-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años tenía Uzzías cuando el pueblo de Judá lo puso por rey?",
+      "explanation": "Todo el pueblo de Judá tomó a Uzzías, el cual tenía diez y seis años, y lo pusieron por rey en lugar de Amasías su padre.",
+      "bibleReference": "2 Crónicas 26:1",
+      "answers": [
+        { "text": "Diez y seis años", "isCorrect": true },
+        { "text": "Siete años", "isCorrect": false },
+        { "text": "Veinticinco años", "isCorrect": false },
+        { "text": "Cincuenta y dos años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En los días de quién persistió Uzzías en buscar a Dios?",
+      "explanation": "Persistió en buscar a Dios en los días de Zachârías, entendido en visiones de Dios, y en esos días Jehová le prosperó.",
+      "bibleReference": "2 Crónicas 26:5",
+      "answers": [
+        { "text": "De Joiada, el sacerdote de Jerusalem", "isCorrect": false },
+        { "text": "De Azarías, el sumo sacerdote", "isCorrect": false },
+        { "text": "De Zachârías, entendido en visiones de Dios", "isCorrect": true },
+        { "text": "De Isaías, profeta hijo de Amós", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué ciudades rompió Uzzías el muro cuando peleó contra los Filisteos?",
+      "explanation": "Salió y peleó contra los Filisteos, y rompió el muro de Gath, el muro de Jabnia y el muro de Asdod.",
+      "bibleReference": "2 Crónicas 26:6",
+      "answers": [
+        { "text": "Jericó, Ajalón y Timna", "isCorrect": false },
+        { "text": "Gath, Jabnia y Asdod", "isCorrect": true },
+        { "text": "Beth-semes, Sochô y Gimzo", "isCorrect": false },
+        { "text": "Eloth, Tecoa y Engedi", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué edificó Uzzías torres en el desierto y abrió muchas cisternas?",
+      "explanation": "Lo hizo porque tuvo muchos ganados, así en los valles como en las vegas, y viñas y labranzas, porque era amigo de la agricultura.",
+      "bibleReference": "2 Crónicas 26:10",
+      "answers": [
+        { "text": "Porque temía al rey de los Asirios", "isCorrect": false },
+        { "text": "Porque los Filisteos habían cegado los pozos", "isCorrect": false },
+        { "text": "Porque los profetas se lo mandaron", "isCorrect": false },
+        { "text": "Porque tenía muchos ganados y amaba la agricultura", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De cuántos guerreros era el ejército que estaba bajo la mano de los jefes de familias?",
+      "explanation": "Bajo la mano de estos estaba el ejército de guerra, de trescientos siete mil y quinientos guerreros poderosos y fuertes, para ayudar al rey contra los enemigos.",
+      "bibleReference": "2 Crónicas 26:13",
+      "answers": [
+        { "text": "De ciento y veinte mil valientes", "isCorrect": false },
+        { "text": "De trescientos siete mil y quinientos", "isCorrect": true },
+        { "text": "De dos mil y seiscientos", "isCorrect": false },
+        { "text": "De trescientos mil escogidos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Uzzías en Jerusalem por industria de ingenieros?",
+      "explanation": "Hizo en Jerusalem máquinas para que estuviesen en las torres y en los baluartes, para arrojar saetas y grandes piedras.",
+      "bibleReference": "2 Crónicas 26:15",
+      "answers": [
+        { "text": "Máquinas para arrojar saetas y piedras", "isCorrect": true },
+        { "text": "Un estanque para las aguas del valle", "isCorrect": false },
+        { "text": "Un pórtico nuevo para la casa de Jehová", "isCorrect": false },
+        { "text": "Un camino desde la puerta del ángulo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Uzzías cuando su corazón se enalteció hasta corromperse?",
+      "explanation": "Se rebeló contra Jehová su Dios, entrando en el templo de Jehová para quemar sahumerios en el altar del perfume.",
+      "bibleReference": "2 Crónicas 26:16",
+      "answers": [
+        { "text": "Mandó contar todo el pueblo de Judá", "isCorrect": false },
+        { "text": "Hizo altos en las ciudades de Judá", "isCorrect": false },
+        { "text": "Entró en el templo a quemar sahumerios", "isCorrect": true },
+        { "text": "Sacrificó a los dioses de Damasco", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según los sacerdotes, ¿a quiénes correspondía quemar perfume a Jehová?",
+      "explanation": "Le dijeron que no le correspondía a él quemar perfume a Jehová, sino a los sacerdotes hijos de Aarón, que son consagrados para quemarlo.",
+      "bibleReference": "2 Crónicas 26:18",
+      "answers": [
+        { "text": "Al rey y a los príncipes de Judá", "isCorrect": false },
+        { "text": "A los Levitas de los hijos de Asaph", "isCorrect": false },
+        { "text": "A los profetas de Jehová", "isCorrect": false },
+        { "text": "A los sacerdotes hijos de Aarón", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué le salió a Uzzías mientras tenía el perfume en la mano para quemarlo?",
+      "explanation": "En su ira contra los sacerdotes, la lepra le salió en la frente delante de los sacerdotes, en la casa de Jehová, junto al altar del perfume.",
+      "bibleReference": "2 Crónicas 26:19",
+      "answers": [
+        { "text": "Una llaga en la mano derecha", "isCorrect": false },
+        { "text": "Fuego del altar sobre sus vestidos", "isCorrect": false },
+        { "text": "La lepra en la frente", "isCorrect": true },
+        { "text": "Una enfermedad de sus entrañas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde habitó Uzzías hasta el día de su muerte?",
+      "explanation": "El rey Uzzías fue leproso hasta el día de su muerte y habitó en una casa apartada, leproso, separado de la casa de Jehová, mientras Joatham su hijo tenía cargo de la casa real.",
+      "bibleReference": "2 Crónicas 26:21",
+      "answers": [
+        { "text": "En el palacio, con sus príncipes", "isCorrect": false },
+        { "text": "En una casa apartada", "isCorrect": true },
+        { "text": "En las torres del desierto", "isCorrect": false },
+        { "text": "En el campo de los sepulcros reales", "isCorrect": false }
+      ]
+    }
+  ]
+}

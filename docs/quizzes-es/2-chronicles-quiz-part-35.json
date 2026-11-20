@@ -1,0 +1,242 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 35",
+  "description": "Diez preguntas sobre 2 Crónicas 35: la pascua que Josías hizo en Jerusalem, las ofrendas del rey y de sus príncipes, y la batalla de Megiddo.",
+  "slug": "2-chronicles-quiz-part-35",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuándo sacrificaron la pascua que Josías hizo á Jehová en Jerusalem?",
+      "explanation": "Josías hizo pascua á Jehová en Jerusalem, y sacrificaron la pascua á los catorce del mes primero.",
+      "bibleReference": "2 Crónicas 35:1",
+      "answers": [
+        {
+          "text": "A los catorce del mes segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los catorce del mes primero",
+          "isCorrect": true
+        },
+        {
+          "text": "A los diez del mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los siete del mes tercero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Josías á los Levitas acerca del arca del santuario?",
+      "explanation": "Les dijo que pusiesen el arca del santuario en la casa que edificó Salomón hijo de David, para que no la cargasen más sobre los hombros.",
+      "bibleReference": "2 Crónicas 35:3",
+      "answers": [
+        {
+          "text": "Que la llevasen al campo de Megiddo delante del ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la cubriesen con cortinas de lino fino y la guardasen",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la pusiesen en la casa que edificó Salomón, para no cargarla más sobre los hombros",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la escondiesen en Ophel, al occidente de Gihón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ovejas, corderos y cabritos ofreció el rey Josías de su propia hacienda, y cuántos bueyes?",
+      "explanation": "El rey Josías ofreció á los del pueblo ovejas, corderos y cabritos en número de treinta mil, y tres mil bueyes, todo de la hacienda del rey.",
+      "bibleReference": "2 Crónicas 35:7",
+      "answers": [
+        {
+          "text": "Dos mil seiscientas, y trescientos bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco mil, y quinientos bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez mil, y mil bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta mil, y tres mil bueyes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes dieron á los sacerdotes dos mil seiscientas ovejas y trescientos bueyes para hacer la pascua?",
+      "explanation": "Hilcías, Zachârías y Jehiel, príncipes de la casa de Dios, dieron á los sacerdotes dos mil seiscientas ovejas y trescientos bueyes.",
+      "bibleReference": "2 Crónicas 35:8",
+      "answers": [
+        {
+          "text": "Hilcías, Zachârías y Jehiel, príncipes de la casa de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Chônanías, Semeías y Nathanael sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Asaph, Hemán y Jeduthún, con los cantores",
+          "isCorrect": false
+        },
+        {
+          "text": "Saphán, Maasías y Joah, enviados del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al sacrificar la pascua, ¿qué hacían los sacerdotes y qué hacían los Levitas?",
+      "explanation": "Los sacerdotes esparcían la sangre tomada de mano de los Levitas, y los Levitas desollaban.",
+      "bibleReference": "2 Crónicas 35:11",
+      "answers": [
+        {
+          "text": "Los Levitas esparcían la sangre y los sacerdotes cantaban",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sacerdotes esparcían la sangre y los Levitas desollaban",
+          "isCorrect": true
+        },
+        {
+          "text": "Los sacerdotes tocaban las trompetas y los Levitas oraban",
+          "isCorrect": false
+        },
+        {
+          "text": "Los porteros sacrificaban y los cantores desollaban",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién llama el texto vidente del rey?",
+      "explanation": "Los cantores hijos de Asaph estaban en su puesto conforme al mandamiento de David, de Asaph y de Hemán, y de Jeduthún, vidente del rey.",
+      "bibleReference": "2 Crónicas 35:15",
+      "answers": [
+        {
+          "text": "A Asaph",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hemán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jeduthún",
+          "isCorrect": true
+        },
+        {
+          "text": "A Samuel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde los días de quién no se había hecho en Israel una pascua como esta?",
+      "explanation": "Nunca tal pascua fué hecha en Israel desde los días de Samuel el profeta, ni ningún rey de Israel hizo pascua como la que hizo el rey Josías.",
+      "bibleReference": "2 Crónicas 35:18",
+      "answers": [
+        {
+          "text": "Desde los días de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde los días de Salomón",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde los días de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde los días de Samuel el profeta",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde subió Nechâo rey de Egipto á hacer guerra?",
+      "explanation": "Nechâo rey de Egipto subió á hacer guerra en Carchêmis junto á Eufrates, y Josías salió contra él.",
+      "bibleReference": "2 Crónicas 35:20",
+      "answers": [
+        {
+          "text": "A Carchêmis junto á Eufrates",
+          "isCorrect": true
+        },
+        {
+          "text": "A Lachîs, ciudad fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "A Megiddo, en el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Samaria, en Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le ocurrió al rey Josías en el campo de Megiddo?",
+      "explanation": "Los archeros le tiraron flechas, dijo á sus siervos que lo quitasen de allí porque estaba herido gravemente, y murió cuando lo llevaban á Jerusalem.",
+      "bibleReference": "2 Crónicas 35:23-24",
+      "answers": [
+        {
+          "text": "Fué llevado cautivo á Egipto por Nechâo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los archeros le tiraron flechas, fué herido gravemente y murió",
+          "isCorrect": true
+        },
+        {
+          "text": "Volvió sano y salvo á Jerusalem con su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Fué atado con cadenas y llevado á Babilonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién endechó por Josías?",
+      "explanation": "Jeremías endechó por Josías, y los cantores y cantoras recitan sus lamentaciones sobre Josías hasta hoy.",
+      "bibleReference": "2 Crónicas 35:25",
+      "answers": [
+        {
+          "text": "Isaías",
+          "isCorrect": false
+        },
+        {
+          "text": "Hulda",
+          "isCorrect": false
+        },
+        {
+          "text": "Jeremías",
+          "isCorrect": true
+        },
+        {
+          "text": "Haggeo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

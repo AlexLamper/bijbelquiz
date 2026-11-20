@@ -47,7 +47,7 @@
       "bibleReference": "Deuteronomio 19:5",
       "answers": [
         { "text": "Cayó del terrado de una casa nueva", "isCorrect": false },
-        { "text": "Fue herido por un buey en el camino", "isCorrect": false },
+        { "text": "Fue herido por un buey en el camino del monte", "isCorrect": false },
         { "text": "El hierro saltó del hacha y lo alcanzó", "isCorrect": true },
         { "text": "Se ahogó al pasar el río", "isCorrect": false }
       ]
@@ -90,7 +90,7 @@
       "explanation": "El texto manda no reducir el término del prójimo, el cual señalaron los antiguos en la heredad.",
       "bibleReference": "Deuteronomio 19:14",
       "answers": [
-        { "text": "Reducir el término que señalaron los antiguos", "isCorrect": true },
+        { "text": "Reducir el término del prójimo", "isCorrect": true },
         { "text": "Comprarlo con plata de los antiguos", "isCorrect": false },
         { "text": "Sembrarlo con varias semillas", "isCorrect": false },
         { "text": "Arrendarlo a un extranjero del lugar", "isCorrect": false }

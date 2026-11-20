@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre Salmos 16: la confianza del que pide ser guardado, Jehová como su porción y la senda de la vida.",
+  "slug": "psalms-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el salmista a Dios al comienzo del salmo?",
+      "explanation": "El verso dice: Guárdame, oh Dios, porque en ti he confiado.",
+      "bibleReference": "Salmos 16:1",
+      "answers": [
+        { "text": "Que le guarde", "isCorrect": true },
+        { "text": "Que le dé riquezas", "isCorrect": false },
+        { "text": "Que le muestre su nombre", "isCorrect": false },
+        { "text": "Que le envíe lluvia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué razón da el salmista para esa petición?",
+      "explanation": "El verso dice que pide ser guardado porque en Dios ha confiado.",
+      "bibleReference": "Salmos 16:1",
+      "answers": [
+        { "text": "Porque es pobre", "isCorrect": false },
+        { "text": "Porque en él ha confiado", "isCorrect": true },
+        { "text": "Porque ha ofrecido sacrificios", "isCorrect": false },
+        { "text": "Porque ha guardado la ley", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En quiénes está toda su afición, según el verso 3?",
+      "explanation": "El verso dice que su bien es para los santos que están en la tierra y para los íntegros, y que toda su afición está en ellos.",
+      "bibleReference": "Salmos 16:3",
+      "answers": [
+        { "text": "En los príncipes del pueblo", "isCorrect": false },
+        { "text": "En los sabios de las gentes", "isCorrect": false },
+        { "text": "En los que tienen riquezas", "isCorrect": false },
+        { "text": "En los santos y los íntegros", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que no ofrecerá?",
+      "explanation": "El verso dice que no ofrecerá las libaciones de sangre de aquellos que sirven diligentes a otro dios, ni tomará sus nombres en sus labios.",
+      "bibleReference": "Salmos 16:4",
+      "answers": [
+        { "text": "Becerros de un año", "isCorrect": false },
+        { "text": "Primicias de su trigo", "isCorrect": false },
+        { "text": "Libaciones de sangre", "isCorrect": true },
+        { "text": "Incienso de olor suave", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué es Jehová para el salmista, según el verso 5?",
+      "explanation": "El verso dice: Jehová es la porción de mi parte y de mi copa; tú sustentarás mi suerte.",
+      "bibleReference": "Salmos 16:5",
+      "answers": [
+        { "text": "La porción de su parte y de su copa", "isCorrect": true },
+        { "text": "La lámpara que alumbra su casa", "isCorrect": false },
+        { "text": "El muro que rodea su ciudad", "isCorrect": false },
+        { "text": "El pastor que guarda su rebaño", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde le cayeron las cuerdas, según el verso 6?",
+      "explanation": "El verso dice que las cuerdas le cayeron en lugares deleitosos y que es hermosa la heredad que le ha tocado.",
+      "bibleReference": "Salmos 16:6",
+      "answers": [
+        { "text": "En tierra seca", "isCorrect": false },
+        { "text": "En lugares deleitosos", "isCorrect": true },
+        { "text": "Entre los montes", "isCorrect": false },
+        { "text": "En medio del mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que le enseñan aun en las noches?",
+      "explanation": "El verso dice: Bendeciré a Jehová que me aconseja; aun en las noches me enseñan mis riñones.",
+      "bibleReference": "Salmos 16:7",
+      "answers": [
+        { "text": "Las estrellas", "isCorrect": false },
+        { "text": "Los profetas", "isCorrect": false },
+        { "text": "Sus riñones", "isCorrect": true },
+        { "text": "Sus padres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué dice el salmista que no será conmovido?",
+      "explanation": "El verso dice que ha puesto a Jehová siempre delante de sí y que no será conmovido porque está a su diestra.",
+      "bibleReference": "Salmos 16:8",
+      "answers": [
+        { "text": "Porque habita en el monte", "isCorrect": false },
+        { "text": "Porque tiene muchos amigos", "isCorrect": false },
+        { "text": "Porque el rey le ayuda", "isCorrect": false },
+        { "text": "Porque Jehová está a su diestra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que Dios no permitirá?",
+      "explanation": "El verso dice que no dejará su alma en el sepulcro ni permitirá que su santo vea corrupción.",
+      "bibleReference": "Salmos 16:10",
+      "answers": [
+        { "text": "Que su siervo quede pobre", "isCorrect": false },
+        { "text": "Que su santo vea corrupción", "isCorrect": true },
+        { "text": "Que las gentes se levanten", "isCorrect": false },
+        { "text": "Que el malo entre en la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que Dios le mostrará?",
+      "explanation": "El último verso dice: Me mostrarás la senda de la vida; hartura de alegrías hay con tu rostro.",
+      "bibleReference": "Salmos 16:11",
+      "answers": [
+        { "text": "La senda de la vida", "isCorrect": true },
+        { "text": "La tierra prometida", "isCorrect": false },
+        { "text": "El camino del desierto", "isCorrect": false },
+        { "text": "La puerta del templo", "isCorrect": false }
+      ]
+    }
+  ]
+}

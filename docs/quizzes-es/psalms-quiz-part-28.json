@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 28",
+  "description": "Diez preguntas sobre Salmos 28: el clamor hacia el templo, la paga que pide para los que hacen iniquidad y la acción de gracias por haber sido oído.",
+  "slug": "psalms-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo llama a Jehová al comenzar a clamar?",
+      "explanation": "El primer verso dice: A ti clamaré, oh Jehová, fortaleza mía.",
+      "bibleReference": "Salmos 28:1",
+      "answers": [
+        {
+          "text": "Fortaleza mía",
+          "isCorrect": true
+        },
+        {
+          "text": "Pastor mío",
+          "isCorrect": false
+        },
+        {
+          "text": "Luz mía",
+          "isCorrect": false
+        },
+        {
+          "text": "Escudo de mi padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué dice que sería semejante si Dios lo dejara?",
+      "explanation": "El verso dice que no sea él, dejándolo Dios, semejante a los que descienden al sepulcro.",
+      "bibleReference": "Salmos 28:1",
+      "answers": [
+        {
+          "text": "A un vaso perdido en el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "A la paja que lleva el viento",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que descienden al sepulcro",
+          "isCorrect": true
+        },
+        {
+          "text": "A un árbol plantado sin agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hacia dónde alza sus manos cuando clama?",
+      "explanation": "El verso dice que alza sus manos hacia el templo de la santidad de Dios.",
+      "bibleReference": "Salmos 28:2",
+      "answers": [
+        {
+          "text": "Hacia las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacia el templo de su santidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Hacia los montes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacia el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 3 de los que hablan paz con sus prójimos?",
+      "explanation": "El texto dice que hablan paz con sus prójimos, pero que la maldad está en su corazón.",
+      "bibleReference": "Salmos 28:3",
+      "answers": [
+        {
+          "text": "Que aman la verdad de corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que temen a Jehová todo el día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardan su pacto y sus mandamientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la maldad está en su corazón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿conforme a qué pide que Dios les dé su paga?",
+      "explanation": "El verso dice: Dales conforme á su obra, y conforme á la malicia de sus hechos: dales conforme á la obra de sus manos.",
+      "bibleReference": "Salmos 28:4",
+      "answers": [
+        {
+          "text": "Conforme a la obra de sus manos",
+          "isCorrect": true
+        },
+        {
+          "text": "Riquezas sin medida",
+          "isCorrect": false
+        },
+        {
+          "text": "Perdón y misericordia",
+          "isCorrect": false
+        },
+        {
+          "text": "Tiempo para arrepentirse",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 5, ¿por qué serán derribados?",
+      "explanation": "El texto dice que porque no atendieron a las obras de Jehová ni al hecho de sus manos, los derribará.",
+      "bibleReference": "Salmos 28:5",
+      "answers": [
+        {
+          "text": "Porque no pagaron sus votos a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no atendieron a las obras de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque salieron de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no tenían fuerza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué bendice a Jehová en el verso 6?",
+      "explanation": "El texto dice: Bendito Jehová, que oyó la voz de mis ruegos.",
+      "bibleReference": "Salmos 28:6",
+      "answers": [
+        {
+          "text": "Porque le dio un reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque le edificó una casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque oyó la voz de sus ruegos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque venció a Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice que alabará a Jehová, según el verso 7?",
+      "explanation": "El texto dice que se gozó su corazón y que con su canción le alabará.",
+      "bibleReference": "Salmos 28:7",
+      "answers": [
+        {
+          "text": "Con trompetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con panderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con arpa de diez cuerdas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su canción",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 8, ¿de quién es Jehová la fortaleza de las saludes?",
+      "explanation": "El texto dice: Jehová es su fuerza, y la fortaleza de las saludes de su ungido.",
+      "bibleReference": "Salmos 28:8",
+      "answers": [
+        {
+          "text": "De los extranjeros",
+          "isCorrect": false
+        },
+        {
+          "text": "De su ungido",
+          "isCorrect": true
+        },
+        {
+          "text": "De los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "De los que descienden al sepulcro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide al final por el pueblo y la heredad de Dios?",
+      "explanation": "El último verso dice: Salva á tu pueblo, y bendice á tu heredad; y pastoréalos y ensálzalos para siempre.",
+      "bibleReference": "Salmos 28:9",
+      "answers": [
+        {
+          "text": "Que los pastoree y los ensalce para siempre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los disperse entre todas las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los pruebe con fuego en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los lleve otra vez a Egipto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

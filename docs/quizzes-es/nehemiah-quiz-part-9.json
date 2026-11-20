@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Nehemías 9: el ayuno del pueblo y la larga oración de los levitas, que recuerda a Abraham, el mar Bermejo, el desierto y la alianza escrita.",
+  "slug": "nehemiah-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se juntaron los hijos de Israel el día veinticuatro del mismo mes?",
+      "explanation": "El día veinticuatro del mismo mes los hijos de Israel se juntaron en ayuno, y con sacos, y tierra sobre sí.",
+      "bibleReference": "Nehemías 9:1",
+      "answers": [
+        {
+          "text": "Con cánticos y trompetas",
+          "isCorrect": false
+        },
+        {
+          "text": "En ayuno, con sacos y tierra sobre sí",
+          "isCorrect": true
+        },
+        {
+          "text": "Con palmas y ramos de oliva",
+          "isCorrect": false
+        },
+        {
+          "text": "Con vestidos de fiesta y vino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánta parte del día leyeron en el libro de la ley de Jehová su Dios?",
+      "explanation": "Puestos de pie en su lugar, leyeron en el libro de la ley de Jehová su Dios la cuarta parte del día, y la cuarta parte confesaron y adoraron.",
+      "bibleReference": "Nehemías 9:3",
+      "answers": [
+        {
+          "text": "La mitad del día",
+          "isCorrect": false
+        },
+        {
+          "text": "La tercera parte del día",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el alba hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "La cuarta parte del día",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según la oración, ¿de dónde sacó Jehová a Abram antes de ponerle el nombre Abraham?",
+      "explanation": "La oración dice que Jehová escogió a Abram, lo sacó de Ur de los Caldeos y le puso el nombre Abraham.",
+      "bibleReference": "Nehemías 9:7",
+      "answers": [
+        {
+          "text": "De Ur de los Caldeos",
+          "isCorrect": true
+        },
+        {
+          "text": "De la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tierra de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tierra de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando Jehová dividió la mar y el pueblo pasó en seco, ¿qué hizo con sus perseguidores?",
+      "explanation": "Dividió la mar delante de ellos y pasaron por medio de ella en seco, y a sus perseguidores los echó en los profundos, como una piedra en grandes aguas.",
+      "bibleReference": "Nehemías 9:11",
+      "answers": [
+        {
+          "text": "Los dejó volver a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dispersó por el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los echó en los profundos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los cubrió con una nube",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué guió Jehová a su pueblo de día?",
+      "explanation": "Con columna de nube los guió de día, y con columna de fuego de noche, para alumbrarles el camino.",
+      "bibleReference": "Nehemías 9:12",
+      "answers": [
+        {
+          "text": "Con columna de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una estrella brillante",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el arca del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con columna de nube",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según la oración, ¿sobre qué monte descendió Jehová para hablar con ellos desde el cielo?",
+      "explanation": "La oración dice que Jehová descendió sobre el monte de Sinaí y les dio juicios rectos, leyes verdaderas, estatutos y mandamientos buenos.",
+      "bibleReference": "Nehemías 9:13",
+      "answers": [
+        {
+          "text": "Sobre el monte de Sinaí",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre el monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el monte Carmelo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el monte de los Olivos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además de darles pan del cielo en su hambre, ¿de dónde les sacó aguas en su sed?",
+      "explanation": "Les dio pan del cielo en su hambre, y en su sed les sacó aguas de la piedra.",
+      "bibleReference": "Nehemías 9:15",
+      "answers": [
+        {
+          "text": "De un pozo en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "De la piedra",
+          "isCorrect": true
+        },
+        {
+          "text": "De las nubes del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Del río de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron para sí, diciendo: \"Este es tu Dios que te hizo subir de Egipto\"?",
+      "explanation": "Hicieron para sí un becerro de fundición y dijeron: Este es tu Dios que te hizo subir de Egipto; y cometieron grandes abominaciones.",
+      "bibleReference": "Nehemías 9:18",
+      "answers": [
+        {
+          "text": "Una serpiente de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Un altar de piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Un becerro de fundición",
+          "isCorrect": true
+        },
+        {
+          "text": "Una imagen de madera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años dice la oración que Jehová los sustentó en el desierto sin que les faltase nada?",
+      "explanation": "Los sustentó cuarenta años en el desierto; de ninguna cosa tuvieron necesidad, sus vestidos no se envejecieron ni se hincharon sus pies.",
+      "bibleReference": "Nehemías 9:21",
+      "answers": [
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatrocientos años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final de la oración, ¿qué hicieron a causa de todo lo que habían confesado?",
+      "explanation": "A causa de todo eso hicieron fiel alianza y la escribieron, signada de sus príncipes, de sus levitas y de sus sacerdotes.",
+      "bibleReference": "Nehemías 9:38",
+      "answers": [
+        {
+          "text": "Nombraron un nuevo rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificaron un altar nuevo en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviaron mensajeros al rey de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Hicieron fiel alianza y la escribieron",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

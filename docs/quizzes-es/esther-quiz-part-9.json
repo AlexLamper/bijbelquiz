@@ -1,0 +1,242 @@
+{
+  "title": "Ester Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Ester 9: el día trece de Adar, la victoria de los Judíos y el origen de los días de Purim.",
+  "slug": "esther-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué ocurrió el día en que los enemigos esperaban enseñorearse de los Judíos?",
+      "explanation": "Ester 9:1 dice que fue lo contrario, porque los Judíos se enseñorearon de los que los aborrecían.",
+      "bibleReference": "Ester 9:1",
+      "answers": [
+        {
+          "text": "Sucedió lo contrario",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey detuvo la pelea",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Judíos huyeron de allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadie salió de su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué los príncipes, los virreyes y los oficiales del rey ensalzaban a los Judíos?",
+      "explanation": "El texto dice que los ensalzaban porque el temor de Mardochêo había caído sobre ellos.",
+      "bibleReference": "Ester 9:3",
+      "answers": [
+        {
+          "text": "Porque esperaban su dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque temían a Mardochêo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque la reina se lo mandó",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque eran sus parientes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuántos hombres mataron y destruyeron los Judíos en Susán, capital del reino?",
+      "explanation": "Ester 9:6 dice que en Susán, capital del reino, los Judíos mataron y destruyeron a quinientos hombres.",
+      "bibleReference": "Ester 9:6",
+      "answers": [
+        {
+          "text": "A cien hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "A mil hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "A quinientos hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "A siete hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hijos de Amán hijo de Amadatha menciona el texto?",
+      "explanation": "Después de los nombres, el texto dice que eran diez hijos de Amán hijo de Amadatha, enemigo de los Judíos.",
+      "bibleReference": "Ester 9:10",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A cuántos hombres mataron en Susán los Judíos el catorce del mes de Adar?",
+      "explanation": "Los Judíos que estaban en Susán se juntaron también el catorce de Adar y mataron a trescientos hombres, y no metieron su mano en la presa.",
+      "bibleReference": "Ester 9:15",
+      "answers": [
+        {
+          "text": "A trescientos",
+          "isCorrect": true
+        },
+        {
+          "text": "A ochocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "A cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "A dos mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuántos de sus contrarios mataron los Judíos que estaban en las provincias del rey?",
+      "explanation": "Los Judíos de las provincias se pusieron en defensa de su vida y mataron de sus contrarios setenta y cinco mil, y no metieron su mano en la presa.",
+      "bibleReference": "Ester 9:16",
+      "answers": [
+        {
+          "text": "Siete mil quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta y cinco mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinticinco mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciento veinte mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la orden de Mardochêo, ¿qué debían enviar a los pobres en aquellos días?",
+      "explanation": "Mardochêo ordenó que fuesen días de banquete y de gozo, de enviar porciones cada uno a su vecino y dádivas a los pobres.",
+      "bibleReference": "Ester 9:22",
+      "answers": [
+        {
+          "text": "Ropa de lino y púrpura",
+          "isCorrect": false
+        },
+        {
+          "text": "Cartas de paz y de verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "Dádivas",
+          "isCorrect": true
+        },
+        {
+          "text": "Parte del despojo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quiere decir Pur, la suerte que echó Amán contra los Judíos?",
+      "explanation": "El texto explica que Amán echó Pur, que quiere decir suerte, para consumir a los Judíos y acabar con ellos.",
+      "bibleReference": "Ester 9:24",
+      "answers": [
+        {
+          "text": "Suerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Enemigo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamaron a estos dos días, por el nombre de Pur?",
+      "explanation": "Por esto llamaron a estos días Purim, del nombre Pur.",
+      "bibleReference": "Ester 9:26",
+      "answers": [
+        {
+          "text": "Siván",
+          "isCorrect": false
+        },
+        {
+          "text": "Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "Sigaión",
+          "isCorrect": false
+        },
+        {
+          "text": "Purim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De quién era hija la reina Esther, que escribió con Mardochêo la segunda carta de Purim?",
+      "explanation": "Ester 9:29 llama a la reina Esther hija de Abihail, y dice que ella y Mardochêo Judío escribieron para confirmar esta segunda carta de Purim.",
+      "bibleReference": "Ester 9:29",
+      "answers": [
+        {
+          "text": "De Amadatha",
+          "isCorrect": false
+        },
+        {
+          "text": "De Abihail",
+          "isCorrect": true
+        },
+        {
+          "text": "De Harbona",
+          "isCorrect": false
+        },
+        {
+          "text": "De Assuero",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Salmos 14: el dicho del necio, la mirada de Jehová desde los cielos y la salud que viene de Sión.",
+  "slug": "psalms-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo el necio en su corazón?",
+      "explanation": "El verso dice: Dijo el necio en su corazón: No hay Dios.",
+      "bibleReference": "Salmos 14:1",
+      "answers": [
+        { "text": "Jehová es grande", "isCorrect": false },
+        { "text": "No hay Dios", "isCorrect": true },
+        { "text": "Soy pobre y menesteroso", "isCorrect": false },
+        { "text": "Mañana moriré", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el primer verso acerca de quien haga bien?",
+      "explanation": "El verso dice que se corrompieron, hicieron obras abominables, y que no hay quien haga bien.",
+      "bibleReference": "Salmos 14:1",
+      "answers": [
+        { "text": "Que hay muchos que hacen bien", "isCorrect": false },
+        { "text": "Que solo el rey hace bien", "isCorrect": false },
+        { "text": "Que no hay quien haga bien", "isCorrect": true },
+        { "text": "Que los sacerdotes hacen bien", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde miró Jehová sobre los hijos de los hombres?",
+      "explanation": "El verso dice que Jehová miró desde los cielos sobre los hijos de los hombres.",
+      "bibleReference": "Salmos 14:2",
+      "answers": [
+        { "text": "Desde los cielos", "isCorrect": true },
+        { "text": "Desde el monte Sión", "isCorrect": false },
+        { "text": "Desde el tabernáculo", "isCorrect": false },
+        { "text": "Desde el mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué buscaba ver Jehová cuando miró?",
+      "explanation": "El verso dice que miró por ver si había algún entendido que buscara a Dios.",
+      "bibleReference": "Salmos 14:2",
+      "answers": [
+        { "text": "Si había algún rey en la tierra", "isCorrect": false },
+        { "text": "Si había agua en los pozos", "isCorrect": false },
+        { "text": "Si había algún entendido que buscara a Dios", "isCorrect": true },
+        { "text": "Si había pan en las ciudades", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿cuántos hay que hagan bien?",
+      "explanation": "El verso dice que todos declinaron, juntamente se han corrompido, y que no hay quien haga bien, no hay ni siquiera uno.",
+      "bibleReference": "Salmos 14:3",
+      "answers": [
+        { "text": "Ni siquiera uno", "isCorrect": true },
+        { "text": "Unos pocos", "isCorrect": false },
+        { "text": "La mitad del pueblo", "isCorrect": false },
+        { "text": "Todos los justos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo devoran a su pueblo los que obran iniquidad?",
+      "explanation": "El verso dice que devoran a su pueblo como si pan comiesen, y que a Jehová no invocaron.",
+      "bibleReference": "Salmos 14:4",
+      "answers": [
+        { "text": "Como el fuego al rastrojo", "isCorrect": false },
+        { "text": "Como si comiesen pan", "isCorrect": true },
+        { "text": "Como el agua a la tierra", "isCorrect": false },
+        { "text": "Como el viento a la paja", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con quiénes está Dios, según el verso 5?",
+      "explanation": "El verso dice que allí temblaron de espanto, porque Dios está con la nación de los justos.",
+      "bibleReference": "Salmos 14:5",
+      "answers": [
+        { "text": "Con los príncipes de las gentes", "isCorrect": false },
+        { "text": "Con los que obran iniquidad", "isCorrect": false },
+        { "text": "Con los reyes de la tierra", "isCorrect": false },
+        { "text": "Con la nación de los justos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué les ocurrió allí, según el verso 5?",
+      "explanation": "El verso dice que allí temblaron de espanto, porque Dios está con la nación de los justos.",
+      "bibleReference": "Salmos 14:5",
+      "answers": [
+        { "text": "Se volvieron atrás", "isCorrect": false },
+        { "text": "Cayeron a tierra", "isCorrect": false },
+        { "text": "Cantaron de alegría", "isCorrect": false },
+        { "text": "Temblaron de espanto", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué han escarnecido, según el verso 6?",
+      "explanation": "El verso dice que han escarnecido el consejo del pobre, por cuanto Jehová es su esperanza.",
+      "bibleReference": "Salmos 14:6",
+      "answers": [
+        { "text": "El consejo del pobre", "isCorrect": true },
+        { "text": "La ley de Jehová", "isCorrect": false },
+        { "text": "El nombre del rey", "isCorrect": false },
+        { "text": "Las palabras de los profetas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué sucederá cuando Jehová torne la cautividad de su pueblo?",
+      "explanation": "El último verso dice que, al tornar Jehová la cautividad de su pueblo, se gozará Jacob y se alegrará Israel.",
+      "bibleReference": "Salmos 14:7",
+      "answers": [
+        { "text": "Temblará la tierra", "isCorrect": false },
+        { "text": "Se gozará Jacob", "isCorrect": true },
+        { "text": "Caerán las gentes", "isCorrect": false },
+        { "text": "Reinará el rey en Sión", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre 2 Crónicas 27: el reinado de Joatham, sus obras en Jerusalem y en las montañas de Judá y el tributo de los hijos de Ammón.",
+  "slug": "2-chronicles-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años tenía Joatham cuando comenzó a reinar?",
+      "explanation": "Joatham tenía veinticinco años cuando comenzó a reinar.",
+      "bibleReference": "2 Crónicas 27:1",
+      "answers": [
+        { "text": "Diez y seis años", "isCorrect": false },
+        { "text": "Veinticinco años", "isCorrect": true },
+        { "text": "Treinta y dos años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la madre de Joatham y de quién era hija?",
+      "explanation": "El nombre de su madre fue Jerusa, hija de Sadoc.",
+      "bibleReference": "2 Crónicas 27:1",
+      "answers": [
+        { "text": "Jechôlía, de Jerusalem", "isCorrect": false },
+        { "text": "Joaddan, de Jerusalem", "isCorrect": false },
+        { "text": "Abía, hija de Zachârías", "isCorrect": false },
+        { "text": "Jerusa, hija de Sadoc", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos años reinó Joatham en Jerusalem?",
+      "explanation": "Reinó dieciséis años en Jerusalem.",
+      "bibleReference": "2 Crónicas 27:1",
+      "answers": [
+        { "text": "Dieciséis años", "isCorrect": true },
+        { "text": "Veintinueve años", "isCorrect": false },
+        { "text": "Ocho años", "isCorrect": false },
+        { "text": "Cincuenta y dos años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué no siguió Joatham el ejemplo de Uzzías su padre?",
+      "explanation": "Hizo lo recto en ojos de Jehová conforme a todas las cosas que había hecho Uzzías su padre, salvo que él no entró en el templo de Jehová.",
+      "bibleReference": "2 Crónicas 27:2",
+      "answers": [
+        { "text": "No edificó nada en la casa de Jehová", "isCorrect": false },
+        { "text": "No edificó torres en el desierto", "isCorrect": false },
+        { "text": "No entró en el templo de Jehová", "isCorrect": true },
+        { "text": "No tomó tributo de los Ammonitas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto sobre el pueblo en los días de Joatham?",
+      "explanation": "Después de decir que el rey no entró en el templo de Jehová, el texto añade que el pueblo falseaba aún.",
+      "bibleReference": "2 Crónicas 27:2",
+      "answers": [
+        { "text": "Que servía a Jehová de todo corazón", "isCorrect": false },
+        { "text": "Que falseaba aún", "isCorrect": true },
+        { "text": "Que fue llevado cautivo a Samaria", "isCorrect": false },
+        { "text": "Que pregonó ayuno en todo Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Joatham en la casa de Jehová?",
+      "explanation": "Edificó la puerta mayor de la casa de Jehová, y en el muro de la fortaleza edificó mucho.",
+      "bibleReference": "2 Crónicas 27:3",
+      "answers": [
+        { "text": "La puerta mayor", "isCorrect": true },
+        { "text": "El altar del perfume", "isCorrect": false },
+        { "text": "El atrio nuevo", "isCorrect": false },
+        { "text": "La mesa de la proposición", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué labró Joatham en los bosques?",
+      "explanation": "Además edificó ciudades en las montañas de Judá, y labró palacios y torres en los bosques.",
+      "bibleReference": "2 Crónicas 27:4",
+      "answers": [
+        { "text": "Cisternas y estanques", "isCorrect": false },
+        { "text": "Altares y columnas", "isCorrect": false },
+        { "text": "Caminos y puentes", "isCorrect": false },
+        { "text": "Palacios y torres", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué le dieron los hijos de Ammón aquel año, después de que Joatham los venció?",
+      "explanation": "Los hijos de Ammón le dieron aquel año cien talentos de plata, diez mil coros de trigo y diez mil de cebada, y lo mismo en el segundo año y en el tercero.",
+      "bibleReference": "2 Crónicas 27:5",
+      "answers": [
+        { "text": "Mil talentos de oro y ovejas sin cuento", "isCorrect": false },
+        { "text": "Doscientos siervos y siervas de su tierra", "isCorrect": false },
+        { "text": "Cien talentos de plata, trigo y cebada", "isCorrect": true },
+        { "text": "Carros, caballos y vasos de la casa real", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué fue fortificado Joatham?",
+      "explanation": "Joatham fue fortificado porque preparó sus caminos delante de Jehová su Dios.",
+      "bibleReference": "2 Crónicas 27:6",
+      "answers": [
+        { "text": "Porque tomó a sueldo hombres de Israel", "isCorrect": false },
+        { "text": "Porque preparó sus caminos delante de Jehová", "isCorrect": true },
+        { "text": "Porque hizo alianza con el rey de Siria", "isCorrect": false },
+        { "text": "Porque los ingenieros le hicieron máquinas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en lugar de Joatham cuando murió?",
+      "explanation": "Joatham durmió con sus padres y lo sepultaron en la ciudad de David, y reinó en su lugar Achâz su hijo.",
+      "bibleReference": "2 Crónicas 27:9",
+      "answers": [
+        { "text": "Amasías su hijo", "isCorrect": false },
+        { "text": "Uzzías su hijo", "isCorrect": false },
+        { "text": "Achâz su hijo", "isCorrect": true },
+        { "text": "Ezechîas su hijo", "isCorrect": false }
+      ]
+    }
+  ]
+}

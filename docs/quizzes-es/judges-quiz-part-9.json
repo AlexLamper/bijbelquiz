@@ -9,24 +9,24 @@
   "status": "draft",
   "questions": [
     {
-      "text": "¿Qué quería Abimelech que dijeran a oídos de todos los de Sichêm?",
+      "text": "¿Qué quería Abimelech que preguntaran a oídos de todos los de Sichêm?",
       "explanation": "Abimelech quería que les preguntaran qué tenían por mejor: que los señorearan setenta hombres, todos los hijos de Jerobaal, o que los señoreara un solo varón.",
       "bibleReference": "Jueces 9:1-2",
       "answers": [
         {
-          "text": "Que era mejor que los señoreara un solo varón",
+          "text": "Si querían que los señorearan setenta hombres o uno solo",
           "isCorrect": true
         },
         {
-          "text": "Que repartieran la tierra entre los setenta hijos",
+          "text": "Si querían repartir la tierra entre los setenta hijos de Jerobaal",
           "isCorrect": false
         },
         {
-          "text": "Que edificaran un templo a Baal-berith",
+          "text": "Si edificarían un templo a Baal-berith en medio de la ciudad",
           "isCorrect": false
         },
         {
-          "text": "Que eligieran a Jotham por rey",
+          "text": "Si estaban dispuestos a elegir a Jotham por rey",
           "isCorrect": false
         }
       ]

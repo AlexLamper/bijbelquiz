@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Salmos 13: el clamor \"¿hasta cuándo?\", la petición de que Jehová alumbre sus ojos y la confianza final.",
+  "slug": "psalms-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pregunta repite el salmista al comienzo del salmo?",
+      "explanation": "El verso pregunta: ¿Hasta cuándo, Jehová? ¿me olvidarás para siempre?",
+      "bibleReference": "Salmos 13:1",
+      "answers": [
+        { "text": "¿Quién subirá al monte?", "isCorrect": false },
+        { "text": "¿Dónde está tu misericordia?", "isCorrect": false },
+        { "text": "¿Por qué me has escogido?", "isCorrect": false },
+        { "text": "¿Hasta cuándo, Jehová?", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué teme el salmista que Jehová esconda de él?",
+      "explanation": "El verso pregunta hasta cuándo esconderá Jehová su rostro de él.",
+      "bibleReference": "Salmos 13:1",
+      "answers": [
+        { "text": "Su rostro", "isCorrect": true },
+        { "text": "Su ley", "isCorrect": false },
+        { "text": "Su mano", "isCorrect": false },
+        { "text": "Su arca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el salmista que está su corazón cada día?",
+      "explanation": "El verso pregunta hasta cuándo pondrá consejos en su alma, con ansiedad en su corazón cada día.",
+      "bibleReference": "Salmos 13:2",
+      "answers": [
+        { "text": "Con alegría", "isCorrect": false },
+        { "text": "Con ansiedad", "isCorrect": true },
+        { "text": "Con reposo", "isCorrect": false },
+        { "text": "Con sueño", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién es enaltecido sobre él, según su queja?",
+      "explanation": "El verso pregunta hasta cuándo será enaltecido su enemigo sobre él.",
+      "bibleReference": "Salmos 13:2",
+      "answers": [
+        { "text": "El necio", "isCorrect": false },
+        { "text": "El extranjero", "isCorrect": false },
+        { "text": "Su enemigo", "isCorrect": true },
+        { "text": "El rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que haga Jehová con sus ojos?",
+      "explanation": "El verso dice: Mira, óyeme, Jehová Dios mío; alumbra mis ojos.",
+      "bibleReference": "Salmos 13:3",
+      "answers": [
+        { "text": "Que los alumbre", "isCorrect": true },
+        { "text": "Que los cierre", "isCorrect": false },
+        { "text": "Que los aparte del mal", "isCorrect": false },
+        { "text": "Que los vuelva al monte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué pide que Jehová alumbre sus ojos?",
+      "explanation": "El verso dice que lo pide porque no duerma en muerte.",
+      "bibleReference": "Salmos 13:3",
+      "answers": [
+        { "text": "Para ver la ley escrita", "isCorrect": false },
+        { "text": "Para que no duerma en muerte", "isCorrect": true },
+        { "text": "Para hallar el camino recto", "isCorrect": false },
+        { "text": "Para contar las estrellas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué teme el salmista que diga su enemigo?",
+      "explanation": "El verso dice que lo pide para que no diga su enemigo: Vencílo.",
+      "bibleReference": "Salmos 13:4",
+      "answers": [
+        { "text": "Es justo", "isCorrect": false },
+        { "text": "No hay Dios", "isCorrect": false },
+        { "text": "Huyó de mí", "isCorrect": false },
+        { "text": "Vencílo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué harán sus enemigos si él resbalare?",
+      "explanation": "El verso dice que sus enemigos se alegrarán si él resbalare.",
+      "bibleReference": "Salmos 13:4",
+      "answers": [
+        { "text": "Se apartarán", "isCorrect": false },
+        { "text": "Se avergonzarán", "isCorrect": false },
+        { "text": "Se alegrarán", "isCorrect": true },
+        { "text": "Callarán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué dice el salmista que ha confiado?",
+      "explanation": "El verso dice que ha confiado en la misericordia de Jehová y que su corazón se alegrará en su salud.",
+      "bibleReference": "Salmos 13:5",
+      "answers": [
+        { "text": "En la misericordia de Jehová", "isCorrect": true },
+        { "text": "En su propia fuerza", "isCorrect": false },
+        { "text": "En los carros de los reyes", "isCorrect": false },
+        { "text": "En la multitud del pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué dice el salmista que cantará a Jehová?",
+      "explanation": "El último verso dice: Cantaré a Jehová, porque me ha hecho bien.",
+      "bibleReference": "Salmos 13:6",
+      "answers": [
+        { "text": "Porque le ha dado hijos", "isCorrect": false },
+        { "text": "Porque le ha hecho bien", "isCorrect": true },
+        { "text": "Porque le ha dado tierra", "isCorrect": false },
+        { "text": "Porque le ha enviado lluvia", "isCorrect": false }
+      ]
+    }
+  ]
+}

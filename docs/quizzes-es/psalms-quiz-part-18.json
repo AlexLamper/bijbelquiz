@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre Salmos 18: el cántico de David tras ser librado, el descenso de Jehová con humo y fuego y la fuerza dada para la batalla.",
+  "slug": "psalms-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezamiento, ¿de mano de quién libró Jehová a David?",
+      "explanation": "El encabezamiento dice que David profirió este cántico el día que Jehová le libró de mano de todos sus enemigos y de mano de Saúl.",
+      "bibleReference": "Salmos 18:1",
+      "answers": [
+        { "text": "De mano de los filisteos de Gath", "isCorrect": false },
+        { "text": "De mano del rey de Babilonia", "isCorrect": false },
+        { "text": "De mano de sus enemigos y de Saúl", "isCorrect": true },
+        { "text": "De mano de los hijos de Amón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llama David a Jehová en el verso 2?",
+      "explanation": "El verso dice: Jehová, roca mía y castillo mío, y mi libertador.",
+      "bibleReference": "Salmos 18:2",
+      "answers": [
+        { "text": "Roca mía y castillo mío", "isCorrect": true },
+        { "text": "Pastor y guarda mío", "isCorrect": false },
+        { "text": "Lámpara de mi senda", "isCorrect": false },
+        { "text": "Fuente de aguas vivas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde oyó Jehová su voz cuando clamó en su angustia?",
+      "explanation": "El verso dice que en su angustia invocó a Jehová y que él oyó su voz desde su templo.",
+      "bibleReference": "Salmos 18:6",
+      "answers": [
+        { "text": "Desde el monte de la ley", "isCorrect": false },
+        { "text": "Desde su templo", "isCorrect": true },
+        { "text": "Desde el arca", "isCorrect": false },
+        { "text": "Desde la nube", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué subió de su nariz, según el verso 8?",
+      "explanation": "El verso dice que humo subió de su nariz y que de su boca salió fuego consumidor.",
+      "bibleReference": "Salmos 18:8",
+      "answers": [
+        { "text": "Viento", "isCorrect": false },
+        { "text": "Rocío", "isCorrect": false },
+        { "text": "Polvo", "isCorrect": false },
+        { "text": "Humo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Sobre qué cabalgó y voló, según el verso 10?",
+      "explanation": "El verso dice que cabalgó sobre un querubín y voló, y que voló sobre las alas del viento.",
+      "bibleReference": "Salmos 18:10",
+      "answers": [
+        { "text": "Sobre un querubín", "isCorrect": true },
+        { "text": "Sobre las nubes", "isCorrect": false },
+        { "text": "Sobre un carro de fuego", "isCorrect": false },
+        { "text": "Sobre el mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué cayó cuando Jehová tronó en los cielos?",
+      "explanation": "El verso dice que Jehová tronó en los cielos, el Altísimo dio su voz, y cayó granizo y carbones de fuego.",
+      "bibleReference": "Salmos 18:13",
+      "answers": [
+        { "text": "Lluvia y rocío de la noche", "isCorrect": false },
+        { "text": "Granizo y carbones de fuego", "isCorrect": true },
+        { "text": "Maná y codornices del desierto", "isCorrect": false },
+        { "text": "Ceniza y arena del camino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué dice David que Jehová le libró, según el verso 19?",
+      "explanation": "El verso dice que le sacó a anchura y le libró, porque se agradó de él.",
+      "bibleReference": "Salmos 18:19",
+      "answers": [
+        { "text": "Porque le temía mucho", "isCorrect": false },
+        { "text": "Porque era rey de Israel", "isCorrect": false },
+        { "text": "Porque se agradó de él", "isCorrect": true },
+        { "text": "Porque había edificado la casa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice David que hará con su Dios, según el verso 29?",
+      "explanation": "El verso dice: Porque contigo desharé ejércitos, y con mi Dios asaltaré muros.",
+      "bibleReference": "Salmos 18:29",
+      "answers": [
+        { "text": "Edificar la casa", "isCorrect": false },
+        { "text": "Juzgar a las gentes", "isCorrect": false },
+        { "text": "Pasar el río", "isCorrect": false },
+        { "text": "Asaltar muros", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Como qué dice David que Dios pone sus pies?",
+      "explanation": "El verso dice que es quien pone sus pies como pies de ciervas y le hizo estar sobre sus alturas.",
+      "bibleReference": "Salmos 18:33",
+      "answers": [
+        { "text": "Como columnas de mármol", "isCorrect": false },
+        { "text": "Como pies de ciervas", "isCorrect": true },
+        { "text": "Como pies de bronce", "isCorrect": false },
+        { "text": "Como pies de león", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién hace misericordia Jehová, según el último verso?",
+      "explanation": "El verso dice que engrandece las saludes de su rey y hace misericordia a su ungido, a David y a su simiente, para siempre.",
+      "bibleReference": "Salmos 18:50",
+      "answers": [
+        { "text": "A David y a su simiente", "isCorrect": true },
+        { "text": "A las gentes de lejos", "isCorrect": false },
+        { "text": "A los hijos de extraños", "isCorrect": false },
+        { "text": "A los príncipes del pueblo", "isCorrect": false }
+      ]
+    }
+  ]
+}

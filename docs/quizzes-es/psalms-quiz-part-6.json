@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Salmos 6: el ruego del enfermo, las lágrimas de la noche y la seguridad de que Jehová oyó su lloro.",
+  "slug": "psalms-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide a Jehová al comenzar el salmo?",
+      "explanation": "Salmos 6:1 dice: Jehová, no me reprendas en tu furor, ni me castigues con tu ira.",
+      "bibleReference": "Salmos 6:1",
+      "answers": [
+        {
+          "text": "Que le dé un canto nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que juzgue a los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo ponga sobre Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no lo reprenda en su furor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice de sus huesos al pedir que Jehová lo sane?",
+      "explanation": "Salmos 6:2 dice: sáname, oh Jehová, porque mis huesos están conmovidos.",
+      "bibleReference": "Salmos 6:2",
+      "answers": [
+        {
+          "text": "Que están secos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que están quebrados",
+          "isCorrect": false
+        },
+        {
+          "text": "Que están conmovidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que están contados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice de su alma en el versículo 3?",
+      "explanation": "Salmos 6:3 dice: Mi alma asimismo está muy conturbada; y tú, Jehová, ¿hasta cuándo?",
+      "bibleReference": "Salmos 6:3",
+      "answers": [
+        {
+          "text": "Que está alegre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que está muy conturbada",
+          "isCorrect": true
+        },
+        {
+          "text": "Que está confiada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que está en reposo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué pide a Jehová que lo salve?",
+      "explanation": "Salmos 6:4 dice: Vuelve, oh Jehová, libra mi alma; sálvame por tu misericordia.",
+      "bibleReference": "Salmos 6:4",
+      "answers": [
+        {
+          "text": "Por su misericordia",
+          "isCorrect": true
+        },
+        {
+          "text": "Por sus sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su integridad",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su alabanza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que no hay en la muerte?",
+      "explanation": "Salmos 6:5 dice: Porque en la muerte no hay memoria de ti; ¿quién te loará en el sepulcro?",
+      "bibleReference": "Salmos 6:5",
+      "answers": [
+        {
+          "text": "No hay tinieblas",
+          "isCorrect": false
+        },
+        {
+          "text": "No hay enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "No hay memoria de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "No hay lágrimas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice que riega su estrado todas las noches?",
+      "explanation": "Salmos 6:6 dice que se ha consumido a fuerza de gemir, que inunda su lecho todas las noches y que riega su estrado con sus lágrimas.",
+      "bibleReference": "Salmos 6:6",
+      "answers": [
+        {
+          "text": "Con agua del arroyo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con aceite y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el rocío de la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sus lágrimas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice de sus ojos en el versículo 7?",
+      "explanation": "Salmos 6:7 dice que sus ojos están carcomidos de descontento y que se han envejecido a causa de todos sus angustiadores.",
+      "bibleReference": "Salmos 6:7",
+      "answers": [
+        {
+          "text": "Que miran a los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que están carcomidos de descontento",
+          "isCorrect": true
+        },
+        {
+          "text": "Que esperan la luz de la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se alegran en su salud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda apartarse de él, porque Jehová ha oído la voz de su lloro?",
+      "explanation": "Salmos 6:8 dice: Apartaos de mí, todos los obradores de iniquidad; porque Jehová ha oído la voz de mi lloro.",
+      "bibleReference": "Salmos 6:8",
+      "answers": [
+        {
+          "text": "A todos los obradores de iniquidad",
+          "isCorrect": true
+        },
+        {
+          "text": "A los que lloran con él de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "A los médicos que no lo sanaron",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que buscan su misericordia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que Jehová ha recibido?",
+      "explanation": "Salmos 6:9 dice: Jehová ha oído mi ruego; ha recibido Jehová mi oración.",
+      "bibleReference": "Salmos 6:9",
+      "answers": [
+        {
+          "text": "Su sacrificio",
+          "isCorrect": false
+        },
+        {
+          "text": "Su alabanza",
+          "isCorrect": false
+        },
+        {
+          "text": "Su ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Su oración",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué les sucederá a todos sus enemigos?",
+      "explanation": "Salmos 6:10 dice que todos sus enemigos se avergonzarán y se turbarán mucho, y que volverán y serán avergonzados subitáneamente.",
+      "bibleReference": "Salmos 6:10",
+      "answers": [
+        {
+          "text": "Se avergonzarán y se turbarán",
+          "isCorrect": true
+        },
+        {
+          "text": "Se juntarán contra su ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Se alegrarán de su caída",
+          "isCorrect": false
+        },
+        {
+          "text": "Se apartarán hasta la mañana",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

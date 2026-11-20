@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Esdras 6: el decreto de Ciro hallado en los archivos, la orden de Darío y la dedicación de la casa de Dios.",
+  "slug": "ezra-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde mandó buscar el rey Darío cuando dio su mandamiento?",
+      "explanation": "El rey Darío dio mandamiento y buscaron en la casa de los libros, donde guardaban los tesoros allí en Babilonia.",
+      "bibleReference": "Esdras 6:1",
+      "answers": [
+        {
+          "text": "En la casa de los libros, donde guardaban los tesoros en Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "En el templo que estaba en Jerusalem, junto al altar",
+          "isCorrect": false
+        },
+        {
+          "text": "En la casa del principal de los Judíos y de sus ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "En la tienda de Tatnai, jefe del lado allá del río",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde fue hallado el libro en que estaba escrita la memoria?",
+      "explanation": "El libro fue hallado en Achmetta, en el palacio que está en la provincia de Media.",
+      "bibleReference": "Esdras 6:2",
+      "answers": [
+        {
+          "text": "En Jerusalem, en la casa de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "En Achmetta, en el palacio de la provincia de Media",
+          "isCorrect": true
+        },
+        {
+          "text": "En Susán, la capital del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "En Babilonia, en la casa del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el mandamiento del rey Ciro, ¿qué medidas debía tener la casa de Dios?",
+      "explanation": "El mandamiento de Ciro decía que su altura fuese de sesenta codos y de sesenta codos su anchura.",
+      "bibleReference": "Esdras 6:3",
+      "answers": [
+        {
+          "text": "Treinta codos de altura y veinte codos de anchura",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien codos de altura y cincuenta codos de anchura",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta codos de altura y sesenta codos de anchura",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte codos de altura y cuarenta codos de anchura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién había sacado los vasos de oro y de plata del templo de Jerusalem y los había llevado a Babilonia?",
+      "explanation": "El documento dice que Nabucodonosor sacó los vasos del templo que estaba en Jerusalem y los pasó a Babilonia.",
+      "bibleReference": "Esdras 6:5",
+      "answers": [
+        {
+          "text": "El rey Ciro",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey Darío",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey Artajerjes",
+          "isCorrect": false
+        },
+        {
+          "text": "Nabucodonosor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes debía dejarse la obra de la casa de Dios, según Darío?",
+      "explanation": "Darío mandó dejar la obra de la casa de este Dios al principal de los Judíos y a sus ancianos.",
+      "bibleReference": "Esdras 6:7",
+      "answers": [
+        {
+          "text": "Al principal de los Judíos y a sus ancianos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los Apharsachêos de la otra parte del río",
+          "isCorrect": false
+        },
+        {
+          "text": "A Tatnai y a Sethar-boznai, sus compañeros",
+          "isCorrect": false
+        },
+        {
+          "text": "A los tesoreros de la hacienda del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debía darse cada día para los holocaustos, según el mandamiento de Darío?",
+      "explanation": "El mandamiento dice que se les diese cada día becerros, carneros y corderos para holocaustos, con trigo, sal, vino y aceite.",
+      "bibleReference": "Esdras 6:9",
+      "answers": [
+        {
+          "text": "Plata, oro y vestiduras sacerdotales",
+          "isCorrect": false
+        },
+        {
+          "text": "Becerros, carneros, corderos, trigo, sal, vino y aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente incienso y madera para el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan y agua para los obreros de la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por quiénes debían orar los sacerdotes, según el mandamiento?",
+      "explanation": "Debían ofrecer olores de holganza al Dios del cielo y orar por la vida del rey y por sus hijos.",
+      "bibleReference": "Esdras 6:10",
+      "answers": [
+        {
+          "text": "Por los gobernadores del otro lado del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Por los sacerdotes que quedaron en Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la vida del rey y por sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "Por los pueblos de Media y de Persia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo fue acabada la casa de Dios?",
+      "explanation": "La casa fue acabada al tercer día del mes de Adar, que era el sexto año del reinado del rey Darío.",
+      "bibleReference": "Esdras 6:15",
+      "answers": [
+        {
+          "text": "El catorce del mes primero, en el séptimo año de Artajerjes",
+          "isCorrect": false
+        },
+        {
+          "text": "El veinticinco del mes de Elul, en el año primero de Ciro",
+          "isCorrect": false
+        },
+        {
+          "text": "El primer día del mes noveno, en el cuarto año de Darío",
+          "isCorrect": false
+        },
+        {
+          "text": "El tercer día del mes de Adar, en el sexto año de Darío",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos machos de cabrío ofrecieron en expiación por todo Israel en la dedicación?",
+      "explanation": "En la dedicación ofrecieron doce machos de cabrío en expiación por todo Israel, conforme al número de las tribus de Israel.",
+      "bibleReference": "Esdras 6:17",
+      "answers": [
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días celebraron la solemnidad de los panes ázimos?",
+      "explanation": "Celebraron la solemnidad de los panes ázimos siete días con regocijo, porque Jehová los había alegrado.",
+      "bibleReference": "Esdras 6:22",
+      "answers": [
+        {
+          "text": "Tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete días",
+          "isCorrect": true
+        },
+        {
+          "text": "Catorce días",
+          "isCorrect": false
+        },
+        {
+          "text": "Un solo día",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Salmos 19: los cielos que cuentan la gloria de Dios, el curso del sol y la ley perfecta de Jehová.",
+  "slug": "psalms-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué cuentan los cielos, según el primer verso?",
+      "explanation": "El verso dice que los cielos cuentan la gloria de Dios.",
+      "bibleReference": "Salmos 19:1",
+      "answers": [
+        { "text": "Los días del hombre", "isCorrect": false },
+        { "text": "La gloria de Dios", "isCorrect": true },
+        { "text": "El número de las gentes", "isCorrect": false },
+        { "text": "La ley escrita", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué denuncia la expansión, según el primer verso?",
+      "explanation": "El verso dice que la expansión denuncia la obra de sus manos.",
+      "bibleReference": "Salmos 19:1",
+      "answers": [
+        { "text": "El juicio venidero", "isCorrect": false },
+        { "text": "La caída de los montes", "isCorrect": false },
+        { "text": "El camino del mar", "isCorrect": false },
+        { "text": "La obra de sus manos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué declara la una noche a la otra noche?",
+      "explanation": "El verso dice que el un día emite palabra al otro día, y la una noche a la otra noche declara sabiduría.",
+      "bibleReference": "Salmos 19:2",
+      "answers": [
+        { "text": "Sabiduría", "isCorrect": true },
+        { "text": "Temor", "isCorrect": false },
+        { "text": "Juicio", "isCorrect": false },
+        { "text": "Silencio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para quién puso Dios tabernáculo, según el verso 4?",
+      "explanation": "El verso dice que por toda la tierra salió su hilo y que en ellos puso tabernáculo para el sol.",
+      "bibleReference": "Salmos 19:4",
+      "answers": [
+        { "text": "Para la luna", "isCorrect": false },
+        { "text": "Para las estrellas", "isCorrect": false },
+        { "text": "Para el sol", "isCorrect": true },
+        { "text": "Para el viento", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con quién se compara el sol cuando sale?",
+      "explanation": "El verso dice que él, como un novio que sale de su tálamo, se alegra cual gigante para correr el camino.",
+      "bibleReference": "Salmos 19:5",
+      "answers": [
+        { "text": "Con un novio que sale de su tálamo", "isCorrect": true },
+        { "text": "Con un pastor que lleva su rebaño", "isCorrect": false },
+        { "text": "Con un segador que está en el campo", "isCorrect": false },
+        { "text": "Con un rey que se sienta en su trono", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo es la ley de Jehová, según el verso 7?",
+      "explanation": "El verso dice que la ley de Jehová es perfecta y que vuelve el alma.",
+      "bibleReference": "Salmos 19:7",
+      "answers": [
+        { "text": "Pesada", "isCorrect": false },
+        { "text": "Oculta", "isCorrect": false },
+        { "text": "Perfecta", "isCorrect": true },
+        { "text": "Antigua", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hace el precepto de Jehová, según el verso 8?",
+      "explanation": "El verso dice que el precepto de Jehová es puro y que alumbra los ojos.",
+      "bibleReference": "Salmos 19:8",
+      "answers": [
+        { "text": "Endurece el corazón", "isCorrect": false },
+        { "text": "Multiplica los días", "isCorrect": false },
+        { "text": "Ensancha los pasos", "isCorrect": false },
+        { "text": "Alumbra los ojos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué se comparan en dulzura, según el verso 10?",
+      "explanation": "El verso dice que son deseables más que el oro y dulces más que la miel y que la que destila del panal.",
+      "bibleReference": "Salmos 19:10",
+      "answers": [
+        { "text": "Con el vino nuevo", "isCorrect": false },
+        { "text": "Con el aceite de oliva", "isCorrect": false },
+        { "text": "Con la miel del panal", "isCorrect": true },
+        { "text": "Con las uvas de la vid", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué pide ser librado el salmista en el verso 12?",
+      "explanation": "El verso pregunta quién entenderá los errores y pide ser librado de los que le son ocultos.",
+      "bibleReference": "Salmos 19:12",
+      "answers": [
+        { "text": "De los errores que le son ocultos", "isCorrect": true },
+        { "text": "De la mano de sus enemigos", "isCorrect": false },
+        { "text": "Del juicio de los jueces", "isCorrect": false },
+        { "text": "De la pobreza de su casa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que sean gratos delante de Jehová?",
+      "explanation": "El último verso dice: Sean gratos los dichos de mi boca y la meditación de mi corazón delante de ti, oh Jehová.",
+      "bibleReference": "Salmos 19:14",
+      "answers": [
+        { "text": "Los sacrificios de su casa", "isCorrect": false },
+        { "text": "Los dichos de su boca y su meditación", "isCorrect": true },
+        { "text": "Las ofrendas de su mano", "isCorrect": false },
+        { "text": "Los cantares de los levitas", "isCorrect": false }
+      ]
+    }
+  ]
+}

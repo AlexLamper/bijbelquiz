@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Salmos 26: la petición de ser juzgado y probado, el rechazo de la compañía de los malignos y el amor por la casa de Jehová.",
+  "slug": "psalms-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el que habla en el primer verso?",
+      "explanation": "El texto dice: Júzgame, oh Jehová, porque yo en mi integridad he andado.",
+      "bibleReference": "Salmos 26:1",
+      "answers": [
+        {
+          "text": "Que Jehová lo juzgue",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Jehová lo corone",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová lo envíe lejos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová le dé riquezas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el primer verso, ¿por qué dice que no vacilará?",
+      "explanation": "El texto dice que ha confiado asimismo en Jehová y que no vacilará.",
+      "bibleReference": "Salmos 26:1",
+      "answers": [
+        {
+          "text": "Porque es muy fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ha confiado en Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque tiene muchos amigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque habita en el templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide que Dios examine?",
+      "explanation": "El verso dice: Pruébame, oh Jehová, y sondéame: examina mis riñones y mi corazón.",
+      "bibleReference": "Salmos 26:2",
+      "answers": [
+        {
+          "text": "Sus manos y sus pies",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus labios y su lengua",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus riñones y su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus caminos y sus pasos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quiénes dice que no se ha sentado?",
+      "explanation": "El verso dice: No me he sentado con hombres de falsedad; ni entré con los que andan encubiertamente.",
+      "bibleReference": "Salmos 26:4",
+      "answers": [
+        {
+          "text": "Con los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los pobres de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con hombres de falsedad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reunión dice que aborreció?",
+      "explanation": "El texto dice: Aborrecí la reunión de los malignos, y con los impíos nunca me senté.",
+      "bibleReference": "Salmos 26:5",
+      "answers": [
+        {
+          "text": "La de los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "La de los malignos",
+          "isCorrect": true
+        },
+        {
+          "text": "La de los extranjeros",
+          "isCorrect": false
+        },
+        {
+          "text": "La de los cantores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice que andará después de lavar sus manos en inocencia?",
+      "explanation": "El verso dice: Lavaré en inocencia mis manos, y andaré alrededor de tu altar, oh Jehová.",
+      "bibleReference": "Salmos 26:6",
+      "answers": [
+        {
+          "text": "Alrededor del altar de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Por las calles de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a las aguas del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Por los montes de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 7, ¿para qué lo hará?",
+      "explanation": "El texto dice que es para exclamar con voz de acción de gracias y para contar todas sus maravillas.",
+      "bibleReference": "Salmos 26:7",
+      "answers": [
+        {
+          "text": "Para pedir riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para acusar a sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para esconderse del peligro",
+          "isCorrect": false
+        },
+        {
+          "text": "Para contar todas sus maravillas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que ha amado, en el verso 8?",
+      "explanation": "El texto dice: Jehová, la habitación de tu casa he amado, y el lugar del tabernáculo de tu gloria.",
+      "bibleReference": "Salmos 26:8",
+      "answers": [
+        {
+          "text": "Las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Los montes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "La habitación de la casa de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "La compañía de los reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 10 de la diestra de aquellos en cuyas manos está el mal?",
+      "explanation": "El texto dice que en sus manos está el mal y que su diestra está llena de sobornos.",
+      "bibleReference": "Salmos 26:10",
+      "answers": [
+        {
+          "text": "Que está llena de sobornos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que está seca y sin fuerza",
+          "isCorrect": false
+        },
+        {
+          "text": "Que está vacía de bienes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que está llena de aceite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice que bendecirá a Jehová?",
+      "explanation": "El último verso dice: Mi pie ha estado en rectitud: en las congregaciones bendeciré á Jehová.",
+      "bibleReference": "Salmos 26:12",
+      "answers": [
+        {
+          "text": "En el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En las congregaciones",
+          "isCorrect": true
+        },
+        {
+          "text": "En su lecho",
+          "isCorrect": false
+        },
+        {
+          "text": "En las puertas de Sion",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 44",
+  "description": "Diez preguntas sobre Salmos 44: la obra que los padres contaron, el pueblo puesto como ovejas para comida y el ruego de que Dios se levante para ayudarlos.",
+  "slug": "psalms-quiz-part-44",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿de quiénes es este Masquil?",
+      "explanation": "El encabezado dice: Al Músico principal, de los hijos de Coré, Masquil.",
+      "bibleReference": "Salmos 44:1",
+      "answers": [
+        { "text": "De los siervos de Jeduthún", "isCorrect": false },
+        { "text": "De los hijos de David", "isCorrect": false },
+        { "text": "De los hijos de Abimelech", "isCorrect": false },
+        { "text": "De los hijos de Coré", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿quiénes les habían contado la obra que Dios hizo en los tiempos antiguos?",
+      "explanation": "El versículo 1 dice que lo han oído con sus oídos y que sus padres se lo contaron.",
+      "bibleReference": "Salmos 44:1",
+      "answers": [
+        { "text": "Los reyes vecinos", "isCorrect": false },
+        { "text": "Sus padres", "isCorrect": true },
+        { "text": "El Músico principal", "isCorrect": false },
+        { "text": "Los hombres de engaño", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿con qué no se apoderaron de la tierra?",
+      "explanation": "El versículo 3 dice que no se apoderaron de la tierra por su espada ni los libró su brazo, sino la diestra y el brazo de Dios y la luz de su rostro.",
+      "bibleReference": "Salmos 44:3",
+      "answers": [
+        { "text": "Con la diestra de Dios", "isCorrect": false },
+        { "text": "Con la luz del rostro de Dios", "isCorrect": false },
+        { "text": "Con su propia espada", "isCorrect": true },
+        { "text": "Con el brazo de Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que Dios mande a Jacob, en el versículo 4?",
+      "explanation": "El versículo 4 dice que Dios es su rey y le pide que mande saludes a Jacob.",
+      "bibleReference": "Salmos 44:4",
+      "answers": [
+        { "text": "Saludes", "isCorrect": true },
+        { "text": "Espadas", "isCorrect": false },
+        { "text": "Riquezas", "isCorrect": false },
+        { "text": "Jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿en qué no confiará el salmista?",
+      "explanation": "El versículo 6 dice que no confiará en su arco y que su espada no lo salvará.",
+      "bibleReference": "Salmos 44:6",
+      "answers": [
+        { "text": "En su Dios", "isCorrect": false },
+        { "text": "En su arco", "isCorrect": true },
+        { "text": "En su rey", "isCorrect": false },
+        { "text": "En su pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿en quién se gloriarán todo el tiempo?",
+      "explanation": "El versículo 8 dice que en Dios se gloriarán todo el tiempo y que para siempre loarán su nombre.",
+      "bibleReference": "Salmos 44:8",
+      "answers": [
+        { "text": "En sus padres", "isCorrect": false },
+        { "text": "En su espada", "isCorrect": false },
+        { "text": "En sus vecinos", "isCorrect": false },
+        { "text": "En Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Como qué dice el versículo 11 que Dios los puso?",
+      "explanation": "El versículo 11 dice que los puso como ovejas para comida y que los esparció entre las gentes.",
+      "bibleReference": "Salmos 44:11",
+      "answers": [
+        { "text": "Como ovejas para comida", "isCorrect": true },
+        { "text": "Como siervos para el campo", "isCorrect": false },
+        { "text": "Como piedras para el muro", "isCorrect": false },
+        { "text": "Como aves para el cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿cómo vendió Dios a su pueblo?",
+      "explanation": "El versículo 12 dice que vendió a su pueblo de balde y que no pujó en sus precios.",
+      "bibleReference": "Salmos 44:12",
+      "answers": [
+        { "text": "Por plata y oro", "isCorrect": false },
+        { "text": "Por una heredad", "isCorrect": false },
+        { "text": "De balde", "isCorrect": true },
+        { "text": "Por un ejército", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que Dios haría si ellos se hubieran olvidado de su nombre?",
+      "explanation": "Los versículos 20 y 21 dicen que si se hubieran olvidado del nombre de su Dios o hubieran alzado sus manos a un dios ajeno, Dios lo demandaría, porque él conoce los secretos del corazón.",
+      "bibleReference": "Salmos 44:20-21",
+      "answers": [
+        { "text": "Lo demandaría", "isCorrect": true },
+        { "text": "No lo sabría", "isCorrect": false },
+        { "text": "Lo olvidaría también", "isCorrect": false },
+        { "text": "Se alegraría de ello", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista a Dios en el último versículo?",
+      "explanation": "El versículo 26 pide a Dios que se levante para ayudarlos y que los redima por su misericordia.",
+      "bibleReference": "Salmos 44:26",
+      "answers": [
+        { "text": "Que duerma y descanse", "isCorrect": false },
+        { "text": "Que se levante para ayudarlos", "isCorrect": true },
+        { "text": "Que esconda su rostro", "isCorrect": false },
+        { "text": "Que los venda a las gentes", "isCorrect": false }
+      ]
+    }
+  ]
+}

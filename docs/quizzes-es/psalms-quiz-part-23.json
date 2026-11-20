@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Salmos 23: Jehová como pastor, los delicados pastos, el valle de sombra de muerte y la casa de Jehová.",
+  "slug": "psalms-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo llama el salmo a Jehová en el primer verso?",
+      "explanation": "El texto dice: Jehová es mi pastor; nada me faltará.",
+      "bibleReference": "Salmos 23:1",
+      "answers": [
+        {
+          "text": "Mi roca",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi pastor",
+          "isCorrect": true
+        },
+        {
+          "text": "Mi luz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Siendo Jehová su pastor, ¿qué dice el que habla de sí mismo?",
+      "explanation": "El primer verso termina diciendo: nada me faltará.",
+      "bibleReference": "Salmos 23:1",
+      "answers": [
+        {
+          "text": "Que nada le faltará",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no verá la muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tendrá enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nunca llorará",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice que le hará yacer?",
+      "explanation": "El verso dice que en lugares de delicados pastos le hará yacer.",
+      "bibleReference": "Salmos 23:2",
+      "answers": [
+        {
+          "text": "En el monte de su santidad",
+          "isCorrect": false
+        },
+        {
+          "text": "En lugares de delicados pastos",
+          "isCorrect": true
+        },
+        {
+          "text": "En la sombra del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "En medio de los ríos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Junto a qué lo pastoreará, según el verso 2?",
+      "explanation": "El texto dice que junto a aguas de reposo lo pastoreará.",
+      "bibleReference": "Salmos 23:2",
+      "answers": [
+        {
+          "text": "Junto a las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al altar del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a los muros de Sion",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a aguas de reposo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué lo guiará por sendas de justicia?",
+      "explanation": "El verso dice que confortará su alma y lo guiará por sendas de justicia por amor de su nombre.",
+      "bibleReference": "Salmos 23:3",
+      "answers": [
+        {
+          "text": "Por amor de su nombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Por causa de sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Por sus muchas ofrendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el pacto de sus padres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que hará aunque ande en valle de sombra de muerte?",
+      "explanation": "El texto dice que no temerá mal alguno, porque Dios estará con él.",
+      "bibleReference": "Salmos 23:4",
+      "answers": [
+        {
+          "text": "Clamará de día y de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Se esconderá en las cuevas",
+          "isCorrect": false
+        },
+        {
+          "text": "No temerá mal alguno",
+          "isCorrect": true
+        },
+        {
+          "text": "Pedirá ayuda a los hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que le infundirán aliento?",
+      "explanation": "El verso dice: tu vara y tu cayado me infundirán aliento.",
+      "bibleReference": "Salmos 23:4",
+      "answers": [
+        {
+          "text": "Su espada y su escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su vara y su cayado",
+          "isCorrect": true
+        },
+        {
+          "text": "Su arco y sus saetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Su trono y su corona",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Delante de quiénes le aderezará mesa?",
+      "explanation": "El verso dice que aderezará mesa delante de él, en presencia de sus angustiadores.",
+      "bibleReference": "Salmos 23:5",
+      "answers": [
+        {
+          "text": "Delante de los ángeles",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante de los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante de su familia",
+          "isCorrect": false
+        },
+        {
+          "text": "En presencia de sus angustiadores",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué ungió su cabeza, según el verso 5?",
+      "explanation": "El texto dice: ungiste mi cabeza con aceite: mi copa está rebosando.",
+      "bibleReference": "Salmos 23:5",
+      "answers": [
+        {
+          "text": "Con aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Con agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Con vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con bálsamo del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice que morará por largos días?",
+      "explanation": "El último verso dice que el bien y la misericordia lo seguirán todos los días de su vida y que morará en la casa de Jehová por largos días.",
+      "bibleReference": "Salmos 23:6",
+      "answers": [
+        {
+          "text": "En la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En la casa de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En los montes de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "En tiendas de pastores",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

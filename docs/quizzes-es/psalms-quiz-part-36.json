@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 36",
+  "description": "Diez preguntas sobre Salmos 36: la iniquidad del impío, la misericordia que llega hasta los cielos y el manantial de la vida en el que vemos la luz.",
+  "slug": "psalms-quiz-part-36",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿qué dice al corazón del salmista la iniquidad del impío?",
+      "explanation": "El versículo 1 dice que la iniquidad del impío le dice al corazón que no hay temor de Dios delante de sus ojos.",
+      "bibleReference": "Salmos 36:1",
+      "answers": [
+        { "text": "Que el impío aborrece el mal", "isCorrect": false },
+        { "text": "Que el camino del impío es bueno", "isCorrect": false },
+        { "text": "Que el impío entiende para bien hacer", "isCorrect": false },
+        { "text": "Que no hay temor de Dios delante de sus ojos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hace el impío en sus propios ojos, según el versículo 2?",
+      "explanation": "El versículo 2 dice que el impío se lisonjea en sus propios ojos, hasta que su iniquidad sea hallada aborrecible.",
+      "bibleReference": "Salmos 36:2",
+      "answers": [
+        { "text": "Se humilla", "isCorrect": false },
+        { "text": "Se lisonjea", "isCorrect": true },
+        { "text": "Se avergüenza", "isCorrect": false },
+        { "text": "Se esconde", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el versículo 3 las palabras de la boca del impío?",
+      "explanation": "El versículo 3 dice que las palabras de su boca son iniquidad y fraude, y que no quiso entender para bien hacer.",
+      "bibleReference": "Salmos 36:3",
+      "answers": [
+        { "text": "Verdad y juicio", "isCorrect": false },
+        { "text": "Alabanza y canción", "isCorrect": false },
+        { "text": "Iniquidad y fraude", "isCorrect": true },
+        { "text": "Luz y misericordia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿dónde piensa iniquidad el impío?",
+      "explanation": "El versículo 4 dice que el impío piensa iniquidad sobre su cama, que está en camino no bueno y que no aborrece el mal.",
+      "bibleReference": "Salmos 36:4",
+      "answers": [
+        { "text": "Sobre su cama", "isCorrect": true },
+        { "text": "En la puerta de la ciudad", "isCorrect": false },
+        { "text": "En el monte de Dios", "isCorrect": false },
+        { "text": "Junto al torrente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿hasta dónde llega la misericordia de Jehová?",
+      "explanation": "El versículo 5 dice que la misericordia de Jehová llega hasta los cielos y su verdad hasta las nubes.",
+      "bibleReference": "Salmos 36:5",
+      "answers": [
+        { "text": "Hasta los montes", "isCorrect": false },
+        { "text": "Hasta los cielos", "isCorrect": true },
+        { "text": "Hasta el abismo", "isCorrect": false },
+        { "text": "Hasta las aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 6 la justicia de Dios?",
+      "explanation": "El versículo 6 dice que su justicia es como los montes de Dios y que sus juicios son un abismo grande.",
+      "bibleReference": "Salmos 36:6",
+      "answers": [
+        { "text": "Con las nubes del cielo", "isCorrect": false },
+        { "text": "Con la sombra de sus alas", "isCorrect": false },
+        { "text": "Con el torrente de sus delicias", "isCorrect": false },
+        { "text": "Con los montes de Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿dónde se amparan los hijos de los hombres?",
+      "explanation": "El versículo 7 exclama cuán ilustre es la misericordia de Dios, y dice que por eso los hijos de los hombres se amparan bajo la sombra de sus alas.",
+      "bibleReference": "Salmos 36:7",
+      "answers": [
+        { "text": "Bajo la sombra de sus alas", "isCorrect": true },
+        { "text": "Bajo los montes de Dios", "isCorrect": false },
+        { "text": "En la casa del impío", "isCorrect": false },
+        { "text": "En el abismo grande", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué dice el versículo 8 que Dios los abrevará?",
+      "explanation": "El versículo 8 dice que se embriagarán de la grosura de su casa y que él los abrevará del torrente de sus delicias.",
+      "bibleReference": "Salmos 36:8",
+      "answers": [
+        { "text": "De las aguas de la mar", "isCorrect": false },
+        { "text": "Del vino de su mesa", "isCorrect": false },
+        { "text": "Del torrente de sus delicias", "isCorrect": true },
+        { "text": "Del arroyo del desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué veremos en su luz?",
+      "explanation": "El versículo 9 dice que con él está el manantial de la vida y que en su luz veremos la luz.",
+      "bibleReference": "Salmos 36:9",
+      "answers": [
+        { "text": "La luz", "isCorrect": true },
+        { "text": "La muerte", "isCorrect": false },
+        { "text": "El abismo", "isCorrect": false },
+        { "text": "La iniquidad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el último versículo acerca de los obradores de iniquidad?",
+      "explanation": "El versículo 12 dice que allí cayeron los obradores de iniquidad, que fueron rempujados y no pudieron levantarse.",
+      "bibleReference": "Salmos 36:12",
+      "answers": [
+        { "text": "Que fueron alumbrados", "isCorrect": false },
+        { "text": "Que cayeron y no pudieron levantarse", "isCorrect": true },
+        { "text": "Que heredaron la tierra", "isCorrect": false },
+        { "text": "Que se ampararon bajo sus alas", "isCorrect": false }
+      ]
+    }
+  ]
+}

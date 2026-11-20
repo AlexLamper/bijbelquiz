@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 34",
+  "description": "Diez preguntas sobre Salmos 34: la alabanza continua del salmista, el ángel que acampa alrededor de los que temen a Jehová y la invitación a gustar y ver que Jehová es bueno.",
+  "slug": "psalms-quiz-part-34",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado del salmo, ¿delante de quién mudó David su semblante?",
+      "explanation": "El encabezado dice que es un salmo de David, cuando mudó su semblante delante de Abimelech, y él lo echó y se fue.",
+      "bibleReference": "Salmos 34:1",
+      "answers": [
+        { "text": "Delante de Saúl", "isCorrect": false },
+        { "text": "Delante de Abimelech", "isCorrect": true },
+        { "text": "Delante de Goliat", "isCorrect": false },
+        { "text": "Delante de Jeduthún", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista sobre la alabanza de Jehová en el versículo 1?",
+      "explanation": "El salmista dice que bendecirá a Jehová en todo tiempo y que su alabanza estará siempre en su boca.",
+      "bibleReference": "Salmos 34:1",
+      "answers": [
+        { "text": "Que la callará delante de los impíos", "isCorrect": false },
+        { "text": "Que la dirá solo una vez al año", "isCorrect": false },
+        { "text": "Que la escribirá en un libro", "isCorrect": false },
+        { "text": "Que estará siempre en su boca", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué pasó cuando el salmista buscó a Jehová?",
+      "explanation": "El versículo 4 dice que buscó a Jehová, que él lo oyó y lo libró de todos sus temores.",
+      "bibleReference": "Salmos 34:4",
+      "answers": [
+        { "text": "Lo oyó y lo libró de todos sus temores", "isCorrect": true },
+        { "text": "Guardó silencio por muchos días", "isCorrect": false },
+        { "text": "Lo entregó en mano de sus enemigos", "isCorrect": false },
+        { "text": "Lo envió a vivir a otra tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hace el ángel de Jehová, según el versículo 7?",
+      "explanation": "El versículo 7 dice que el ángel de Jehová acampa alrededor de los que le temen, y los defiende.",
+      "bibleReference": "Salmos 34:7",
+      "answers": [
+        { "text": "Pelea contra los mansos de la tierra", "isCorrect": false },
+        { "text": "Reparte el pan a los leoncillos", "isCorrect": false },
+        { "text": "Acampa alrededor de los que le temen", "isCorrect": true },
+        { "text": "Guarda la puerta de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué invitación da el versículo 8?",
+      "explanation": "El versículo 8 invita a gustar y ver que Jehová es bueno, y llama dichoso al hombre que confía en él.",
+      "bibleReference": "Salmos 34:8",
+      "answers": [
+        { "text": "Callad, y esperad en silencio", "isCorrect": false },
+        { "text": "Mirad, y temed el día malo", "isCorrect": false },
+        { "text": "Venid, y contad sus años", "isCorrect": false },
+        { "text": "Gustad, y ved que es bueno Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿quiénes tuvieron hambre?",
+      "explanation": "El versículo 10 dice que los leoncillos necesitaron y tuvieron hambre, pero que a los que buscan a Jehová no les faltará ningún bien.",
+      "bibleReference": "Salmos 34:10",
+      "answers": [
+        { "text": "Los leoncillos", "isCorrect": true },
+        { "text": "Los santos de Jehová", "isCorrect": false },
+        { "text": "Los hijos del salmista", "isCorrect": false },
+        { "text": "Los mansos de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué debe guardar el que desea vida?",
+      "explanation": "El versículo 13 manda guardar la lengua del mal y los labios de hablar engaño.",
+      "bibleReference": "Salmos 34:13",
+      "answers": [
+        { "text": "Su casa con muros fuertes", "isCorrect": false },
+        { "text": "Su lengua del mal y sus labios del engaño", "isCorrect": true },
+        { "text": "Su plata y su oro en secreto", "isCorrect": false },
+        { "text": "Silencio delante de los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes está cercano Jehová, según el versículo 18?",
+      "explanation": "El versículo 18 dice que Jehová está cercano a los quebrantados de corazón y que salvará a los contritos de espíritu.",
+      "bibleReference": "Salmos 34:18",
+      "answers": [
+        { "text": "A los que hablan engaño", "isCorrect": false },
+        { "text": "A los que aborrecen al justo", "isCorrect": false },
+        { "text": "A los quebrantados de corazón", "isCorrect": true },
+        { "text": "A los leoncillos hambrientos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 20 acerca de los huesos del justo?",
+      "explanation": "El versículo 20 dice que él guarda todos sus huesos y que ni uno de ellos será quebrantado.",
+      "bibleReference": "Salmos 34:20",
+      "answers": [
+        { "text": "Que ni uno de ellos será quebrantado", "isCorrect": true },
+        { "text": "Que todos serán molidos", "isCorrect": false },
+        { "text": "Que serán esparcidos por la tierra", "isCorrect": false },
+        { "text": "Que se pudrirán en sus llagas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué redime Jehová?",
+      "explanation": "El versículo 22 dice que Jehová redime el alma de sus siervos, y que no serán asolados todos los que confían en él.",
+      "bibleReference": "Salmos 34:22",
+      "answers": [
+        { "text": "La tierra de sus enemigos", "isCorrect": false },
+        { "text": "El alma de sus siervos", "isCorrect": true },
+        { "text": "El nombre de los malos", "isCorrect": false },
+        { "text": "La casa de los soberbios", "isCorrect": false }
+      ]
+    }
+  ]
+}

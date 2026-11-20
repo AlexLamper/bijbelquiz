@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Esdras 9: la denuncia de los príncipes, el luto de Esdras y su oración de confesión.",
+  "slug": "ezra-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijeron los príncipes a Esdras cuando se llegaron a él?",
+      "explanation": "Dijeron que el pueblo de Israel, y los sacerdotes y Levitas, no se habían apartado de los pueblos de las tierras, haciendo conforme a sus abominaciones.",
+      "bibleReference": "Esdras 9:1",
+      "answers": [
+        {
+          "text": "Que el pueblo no se había apartado de los pueblos de las tierras",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el muro de Jerusalem seguía derribado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que faltaba plata para la casa de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los sacerdotes no ofrecían holocaustos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes habían sido los primeros en esta prevaricación?",
+      "explanation": "El texto dice que la mano de los príncipes y de los gobernadores había sido la primera en esta prevaricación.",
+      "bibleReference": "Esdras 9:2",
+      "answers": [
+        {
+          "text": "Los cantores y los porteros",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes y los gobernadores",
+          "isCorrect": true
+        },
+        {
+          "text": "Los Nethineos del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los moradores de Jericó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Esdras al oír esto?",
+      "explanation": "Rasgó su vestido y su manto, arrancó de los cabellos de su cabeza y de su barba, y se sentó atónito.",
+      "bibleReference": "Esdras 9:3",
+      "answers": [
+        {
+          "text": "Repartió plata entre los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribió una carta al rey de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Rasgó su vestido y arrancó sus cabellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Salió de noche a ver los muros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo estuvo Esdras sentado atónito?",
+      "explanation": "Se juntaron a él los temerosos de las palabras del Dios de Israel, mas él estuvo sentado atónito hasta el sacrificio de la tarde.",
+      "bibleReference": "Esdras 9:4",
+      "answers": [
+        {
+          "text": "Hasta el día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta salir las estrellas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el sacrificio de la tarde",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Esdras al levantarse de su aflicción?",
+      "explanation": "Al sacrificio de la tarde se levantó de su aflicción y, habiendo rasgado su vestido y su manto, se postró de rodillas y extendió sus palmas a Jehová su Dios.",
+      "bibleReference": "Esdras 9:5",
+      "answers": [
+        {
+          "text": "Se postró de rodillas y extendió sus palmas a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Subió al altar y ofreció allí un carnero",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó pregonar un ayuno de tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamó a los profetas Haggeo y Zacarías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En su oración, ¿hasta dónde dice Esdras que habían crecido los delitos del pueblo?",
+      "explanation": "Dice que las iniquidades se habían multiplicado sobre su cabeza y que sus delitos habían crecido hasta el cielo.",
+      "bibleReference": "Esdras 9:6",
+      "answers": [
+        {
+          "text": "Hasta el mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta los montes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la oración, ¿qué había hecho la misericordia de Jehová por un breve momento?",
+      "explanation": "Dice que por un breve momento fue la misericordia de Jehová, para hacer que les quedase un resto libre y para darles estaca en el lugar de su santuario.",
+      "bibleReference": "Esdras 9:8",
+      "answers": [
+        {
+          "text": "Quitarles el tributo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Devolverles los vasos del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacer que les quedase un resto libre",
+          "isCorrect": true
+        },
+        {
+          "text": "Darles tropa y gente de a caballo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Delante de quiénes dice la oración que Dios inclinó sobre ellos misericordia?",
+      "explanation": "Dice que en su servidumbre Dios no los desamparó, antes inclinó sobre ellos misericordia delante de los reyes de Persia.",
+      "bibleReference": "Esdras 9:9",
+      "answers": [
+        {
+          "text": "Delante de los reyes de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante de los reyes de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante de los reyes de Media",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante de los reyes de Persia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandamiento, dado por mano de los profetas, recuerda Esdras en su oración?",
+      "explanation": "Recuerda el mandamiento de no dar sus hijas a los hijos de aquellos pueblos ni tomar sus hijas para sus hijos.",
+      "bibleReference": "Esdras 9:11-12",
+      "answers": [
+        {
+          "text": "No dar sus hijas a los hijos de aquellos pueblos ni tomar sus hijas",
+          "isCorrect": true
+        },
+        {
+          "text": "No comprar grano de los pueblos de las tierras en el hambre",
+          "isCorrect": false
+        },
+        {
+          "text": "No edificar casas fuera del muro de la ciudad de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "No entrar en el santuario sino con Urim y Thummim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo termina la oración de Esdras hablando de Jehová?",
+      "explanation": "Termina diciendo: Jehová, Dios de Israel, tú eres justo; y reconoce que están delante de él en sus delitos.",
+      "bibleReference": "Esdras 9:15",
+      "answers": [
+        {
+          "text": "Pidiendo tropa para el camino de vuelta",
+          "isCorrect": false
+        },
+        {
+          "text": "Declarando que Jehová, Dios de Israel, es justo",
+          "isCorrect": true
+        },
+        {
+          "text": "Prometiendo edificar el muro de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Dando gracias por la dedicación de la casa",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 35",
+  "description": "Diez preguntas sobre Salmos 35: la oración del perseguido, los testigos falsos que pagaron mal por bien y la promesa de alabar a Jehová en grande congregación.",
+  "slug": "psalms-quiz-part-35",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el salmista a Jehová en el primer versículo?",
+      "explanation": "El versículo 1 pide a Jehová que dispute con los que contienden contra el salmista y que pelee con los que lo combaten.",
+      "bibleReference": "Salmos 35:1",
+      "answers": [
+        { "text": "Que calle delante de sus enemigos", "isCorrect": false },
+        { "text": "Que le dé riquezas y honra", "isCorrect": false },
+        { "text": "Que dispute con los que contienden contra él", "isCorrect": true },
+        { "text": "Que lo lleve a vivir a otra tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a qué pide el salmista que Jehová eche mano?",
+      "explanation": "El versículo 2 pide que Jehová eche mano al escudo y al pavés y se levante en su ayuda.",
+      "bibleReference": "Salmos 35:2",
+      "answers": [
+        { "text": "Al escudo y al pavés", "isCorrect": true },
+        { "text": "Al arpa y al salterio", "isCorrect": false },
+        { "text": "A la red y al hoyo", "isCorrect": false },
+        { "text": "Al saco y al ayuno", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué quiere el salmista que Jehová diga a su alma, según el versículo 3?",
+      "explanation": "El versículo 3 pide que Jehová saque la lanza contra sus perseguidores y diga a su alma: Yo soy tu salud.",
+      "bibleReference": "Salmos 35:3",
+      "answers": [
+        { "text": "Yo soy tu juez", "isCorrect": false },
+        { "text": "Vuelve atrás", "isCorrect": false },
+        { "text": "No te oiré", "isCorrect": false },
+        { "text": "Yo soy tu salud", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿a qué pide el salmista que sean semejantes sus perseguidores?",
+      "explanation": "El versículo 5 pide que sean como el tamo delante del viento y que el ángel de Jehová los acose.",
+      "bibleReference": "Salmos 35:5",
+      "answers": [
+        { "text": "Al ciervo junto a las aguas", "isCorrect": false },
+        { "text": "Al tamo delante del viento", "isCorrect": true },
+        { "text": "Al laurel verde del campo", "isCorrect": false },
+        { "text": "A la grasa de los carneros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué escondieron sus enemigos para él?",
+      "explanation": "El versículo 7 dice que sin causa escondieron para él su red en un hoyo, y sin causa cavaron un hoyo para su alma.",
+      "bibleReference": "Salmos 35:7",
+      "answers": [
+        { "text": "Su red en un hoyo", "isCorrect": true },
+        { "text": "Una espada en su casa", "isCorrect": false },
+        { "text": "Un lazo en el camino del monte", "isCorrect": false },
+        { "text": "Piedras delante de su puerta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el salmista cuando sus enemigos enfermaron, según el versículo 13?",
+      "explanation": "El versículo 13 dice que cuando ellos enfermaron, él se vistió de saco y afligió su alma con ayuno.",
+      "bibleReference": "Salmos 35:13",
+      "answers": [
+        { "text": "Se alegró y cantó con arpa", "isCorrect": false },
+        { "text": "Se escondió en el monte", "isCorrect": false },
+        { "text": "Se vistió de saco y ayunó", "isCorrect": true },
+        { "text": "Llamó a los testigos falsos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el versículo 14 que el salmista andaba por ellos?",
+      "explanation": "El versículo 14 dice que andaba como por un compañero y como por un hermano, y que se humillaba enlutado como el que trae luto por su madre.",
+      "bibleReference": "Salmos 35:14",
+      "answers": [
+        { "text": "Como el que va a una fiesta", "isCorrect": false },
+        { "text": "Como el que trae luto por su madre", "isCorrect": true },
+        { "text": "Como el que sale a la guerra", "isCorrect": false },
+        { "text": "Como el que huye del enemigo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué hicieron ellos en la adversidad del salmista?",
+      "explanation": "El versículo 15 dice que se alegraron en su adversidad y se juntaron contra él.",
+      "bibleReference": "Salmos 35:15",
+      "answers": [
+        { "text": "Lloraron y oraron por su sanidad", "isCorrect": false },
+        { "text": "Huyeron todos juntos de la ciudad", "isCorrect": false },
+        { "text": "Le trajeron pan y vino a su casa", "isCorrect": false },
+        { "text": "Se alegraron y se juntaron contra él", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron sus enemigos cuando ensancharon sobre él su boca, según el versículo 21?",
+      "explanation": "El versículo 21 dice que ensancharon su boca sobre él y dijeron: Ea, ea, nuestros ojos lo han visto.",
+      "bibleReference": "Salmos 35:21",
+      "answers": [
+        { "text": "¿Dónde está tu Dios?", "isCorrect": false },
+        { "text": "Ea, ea, nuestros ojos lo han visto", "isCorrect": true },
+        { "text": "Bendito sea el Dios de Israel", "isCorrect": false },
+        { "text": "Sea tu misericordia sobre él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿de qué hablará la lengua del salmista?",
+      "explanation": "El versículo 28 dice que su lengua hablará de la justicia de Dios y de su loor todo el día.",
+      "bibleReference": "Salmos 35:28",
+      "answers": [
+        { "text": "De la justicia y del loor de Dios", "isCorrect": true },
+        { "text": "De la maldad de sus enemigos", "isCorrect": false },
+        { "text": "De sus propias riquezas", "isCorrect": false },
+        { "text": "Del consejo de las gentes", "isCorrect": false }
+      ]
+    }
+  ]
+}

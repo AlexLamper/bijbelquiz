@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 32",
+  "description": "Diez preguntas sobre Salmos 32: la bienaventuranza del perdonado, el silencio que envejece los huesos, la confesión del pecado y la alegría de los rectos.",
+  "slug": "psalms-quiz-part-32",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién llama bienaventurado el primer verso?",
+      "explanation": "El texto dice: Bienaventurado aquel cuyas iniquidades son perdonadas, y borrados sus pecados.",
+      "bibleReference": "Salmos 32:1",
+      "answers": [
+        {
+          "text": "A aquel cuyas iniquidades son perdonadas",
+          "isCorrect": true
+        },
+        {
+          "text": "Al que no ha sido acusado de ningún mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Al que tiene muchos hijos y mucha hacienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Al que calla delante de sus enemigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿qué no hay en el espíritu de ese hombre?",
+      "explanation": "El texto dice: Bienaventurado el hombre á quien no imputa Jehová la iniquidad, y en cuyo espíritu no hay superchería.",
+      "bibleReference": "Salmos 32:2",
+      "answers": [
+        {
+          "text": "Temor",
+          "isCorrect": false
+        },
+        {
+          "text": "Superchería",
+          "isCorrect": true
+        },
+        {
+          "text": "Tristeza",
+          "isCorrect": false
+        },
+        {
+          "text": "Cansancio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasó mientras calló?",
+      "explanation": "El verso dice: Mientras callé, envejeciéronse mis huesos en mi gemir todo el día.",
+      "bibleReference": "Salmos 32:3",
+      "answers": [
+        {
+          "text": "Se secó su campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Se multiplicaron sus bienes",
+          "isCorrect": false
+        },
+        {
+          "text": "Se envejecieron sus huesos",
+          "isCorrect": true
+        },
+        {
+          "text": "Se alegró su corazón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué se volvió su verdor, según el verso 4?",
+      "explanation": "El texto dice que de día y de noche se agravó sobre él la mano de Dios y que su verdor se volvió en sequedades de estío.",
+      "bibleReference": "Salmos 32:4",
+      "answers": [
+        {
+          "text": "En aguas de reposo",
+          "isCorrect": false
+        },
+        {
+          "text": "En flor del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "En polvo del camino",
+          "isCorrect": false
+        },
+        {
+          "text": "En sequedades de estío",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo con su pecado, según el verso 5?",
+      "explanation": "El texto dice: Mi pecado te declaré, y no encubrí mi iniquidad.",
+      "bibleReference": "Salmos 32:5",
+      "answers": [
+        {
+          "text": "Lo declaró y no encubrió su iniquidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo escondió en su corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo echó sobre sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo olvidó con el tiempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Después de esa confesión, ¿qué hizo Jehová?",
+      "explanation": "El mismo verso dice: y tú perdonaste la maldad de mi pecado.",
+      "bibleReference": "Salmos 32:5",
+      "answers": [
+        {
+          "text": "Lo castigó con enfermedad",
+          "isCorrect": false
+        },
+        {
+          "text": "Perdonó la maldad de su pecado",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardó silencio y no respondió",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo envió lejos de su presencia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 6, ¿qué pasará con el santo en la inundación de muchas aguas?",
+      "explanation": "El texto dice que todo santo orará a Dios en el tiempo de poder hallarle, y que en la inundación de muchas aguas estas no llegarán a él.",
+      "bibleReference": "Salmos 32:6",
+      "answers": [
+        {
+          "text": "Será llevado por ellas",
+          "isCorrect": false
+        },
+        {
+          "text": "Se esconderá en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Clamará y no será oído",
+          "isCorrect": false
+        },
+        {
+          "text": "Las aguas no llegarán a él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice que Dios lo rodeará?",
+      "explanation": "El verso dice: Tú eres mi refugio; me guardarás de angustia; con cánticos de liberación me rodearás.",
+      "bibleReference": "Salmos 32:7",
+      "answers": [
+        {
+          "text": "Con muros de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sus ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cánticos de liberación",
+          "isCorrect": true
+        },
+        {
+          "text": "Con nubes y tinieblas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué animales dice el verso 9 que no hay que parecerse?",
+      "explanation": "El texto dice: No seáis como el caballo, ó como el mulo, sin entendimiento.",
+      "bibleReference": "Salmos 32:9",
+      "answers": [
+        {
+          "text": "Al caballo y al mulo",
+          "isCorrect": true
+        },
+        {
+          "text": "Al león y al oso",
+          "isCorrect": false
+        },
+        {
+          "text": "Al buey y al asno",
+          "isCorrect": false
+        },
+        {
+          "text": "A la cierva y al ciervo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el último verso a los rectos de corazón?",
+      "explanation": "El texto dice: Alegraos en Jehová, y gozaos, justos: y cantad todos vosotros los rectos de corazón.",
+      "bibleReference": "Salmos 32:11",
+      "answers": [
+        {
+          "text": "Que ayunen",
+          "isCorrect": false
+        },
+        {
+          "text": "Que canten",
+          "isCorrect": true
+        },
+        {
+          "text": "Que callen",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lloren",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

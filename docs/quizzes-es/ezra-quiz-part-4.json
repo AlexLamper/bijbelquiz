@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Esdras 4: los adversarios que quisieron edificar con los Judíos, las cartas escritas á los reyes de Persia y la obra que cesó.",
+  "slug": "ezra-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué propusieron á Zorobabel y á los cabezas de los padres los enemigos de Judá y de Benjamín?",
+      "explanation": "Se llegaron y dijeron que edificarían con ellos, porque como ellos buscaban á su Dios y le sacrificaban desde los días de Esar-haddón rey de Asiria, que los hizo subir allí.",
+      "bibleReference": "Esdras 4:1-2",
+      "answers": [
+        {
+          "text": "Pagar el tributo y las rentas del rey por ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevarlos otra vez á la tierra de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar con ellos, diciendo que también buscaban á su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Darles madera de cedro del Líbano para la obra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron Zorobabel, Jesuá y los demás cabezas de los padres de Israel?",
+      "explanation": "Dijeron que no les convenía edificar con ellos casa á su Dios, sino que ellos solos la edificarían á Jehová Dios de Israel, como les mandó el rey Ciro.",
+      "bibleReference": "Esdras 4:3",
+      "answers": [
+        {
+          "text": "Que edificarían juntos la casa de Dios en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que consultarían primero al rey Darío de Persia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperarían hasta el mes séptimo del año",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no les convenía edificar con ellos, sino que ellos solos la edificarían",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el pueblo de la tierra contra el pueblo de Judá?",
+      "explanation": "Debilitaba las manos del pueblo de Judá y los arredraba de edificar, y además cohechó consejeros contra ellos para disipar su consejo.",
+      "bibleReference": "Esdras 4:4-5",
+      "answers": [
+        {
+          "text": "Debilitaba sus manos y cohechó consejeros contra ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Les dio plata y oro para la obra del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribió una carta en su favor al rey Ciro",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó con ellos el muro de Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En el reinado de quién escribieron acusaciones contra los moradores de Judá y de Jerusalem?",
+      "explanation": "En el reinado de Assuero, en el principio de su reinado, escribieron acusaciones contra los moradores de Judá y de Jerusalem.",
+      "bibleReference": "Esdras 4:6",
+      "answers": [
+        {
+          "text": "De Ciro",
+          "isCorrect": false
+        },
+        {
+          "text": "De Assuero",
+          "isCorrect": true
+        },
+        {
+          "text": "De Darío",
+          "isCorrect": false
+        },
+        {
+          "text": "De Nabucodonosor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué lengua estaba hecha y declarada la carta escrita á Artajerjes en días suyos?",
+      "explanation": "La escritura de la carta estaba hecha en siriaco, y declarada en siriaco.",
+      "bibleReference": "Esdras 4:7",
+      "answers": [
+        {
+          "text": "En judaico",
+          "isCorrect": false
+        },
+        {
+          "text": "En caldeo",
+          "isCorrect": false
+        },
+        {
+          "text": "En siriaco",
+          "isCorrect": true
+        },
+        {
+          "text": "En persa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes escribieron la carta contra Jerusalem al rey Artajerjes?",
+      "explanation": "Rehum canciller y Simsai secretario escribieron una carta contra Jerusalem al rey Artajerjes.",
+      "bibleReference": "Esdras 4:8",
+      "answers": [
+        {
+          "text": "Tatnai y Sethar-boznai",
+          "isCorrect": false
+        },
+        {
+          "text": "Zorobabel y Jesuá",
+          "isCorrect": false
+        },
+        {
+          "text": "Mitrídates y Sesbassar",
+          "isCorrect": false
+        },
+        {
+          "text": "Rehum canciller y Simsai secretario",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según la carta, ¿qué perdería el rey si aquella ciudad fuese reedificada y sus muros establecidos?",
+      "explanation": "Decían que el tributo, pecho y rentas no se darían, y que el catastro de los reyes sería menoscabado.",
+      "bibleReference": "Esdras 4:13",
+      "answers": [
+        {
+          "text": "El tributo, el pecho y las rentas, que ya no se darían",
+          "isCorrect": true
+        },
+        {
+          "text": "Todo su ejército y sus capitanes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vasos de oro de su templo en Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "La madera de cedro del Líbano y de Tiro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron al rey que buscase?",
+      "explanation": "Le pidieron que buscase en el libro de las historias de sus padres, para que supiese que aquella ciudad era rebelde.",
+      "bibleReference": "Esdras 4:15",
+      "answers": [
+        {
+          "text": "El libro de la ley de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "El libro de las historias de sus padres",
+          "isCorrect": true
+        },
+        {
+          "text": "El registro de las genealogías",
+          "isCorrect": false
+        },
+        {
+          "text": "Las cartas de Ciro rey de Persia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hallaron cuando, por mandamiento del rey, buscaron?",
+      "explanation": "Hallaron que aquella ciudad de tiempo antiguo se levanta contra los reyes y se rebela, y que hubo en Jerusalem reyes fuertes que señorearon en todo lo que está á la parte allá del río.",
+      "bibleReference": "Esdras 4:19-20",
+      "answers": [
+        {
+          "text": "Que aquella ciudad nunca había tenido muros",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Judíos siempre habían pagado tributo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que aquella ciudad de tiempo antiguo se levanta contra los reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el rey Ciro había mandado edificarla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ocurrió cuando el traslado de la carta del rey fué leído delante de Rehum y de Simsai secretario?",
+      "explanation": "Fueron prestamente á Jerusalem á los Judíos y les hicieron cesar con poder y fuerza; así cesó la obra de la casa de Dios hasta el año segundo del reinado de Darío rey de Persia.",
+      "bibleReference": "Esdras 4:23-24",
+      "answers": [
+        {
+          "text": "Dejaron edificar la casa de Dios en paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribieron otra carta al rey Artajerjes",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron á Samaria sin hacer nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron á Jerusalem é hicieron cesar la obra con poder y fuerza",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

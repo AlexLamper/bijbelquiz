@@ -1,0 +1,242 @@
+{
+  "title": "Ester Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Ester 2: la búsqueda de una nueva reina, Mardochêo y Hadassa, la coronación de Esther y la conjura de Bigthán y Teres.",
+  "slug": "esther-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Al cuidado de quién debían juntarse en Susán las mozas vírgenes de buen parecer?",
+      "explanation": "Debían juntarse en la casa de las mujeres al cuidado de Hegai, eunuco del rey, guarda de las mujeres, que les daría sus atavíos.",
+      "bibleReference": "Ester 2:3",
+      "answers": [
+        {
+          "text": "Saasgaz, eunuco del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Hegai, eunuco del rey",
+          "isCorrect": true
+        },
+        {
+          "text": "Mardochêo el Judío",
+          "isCorrect": false
+        },
+        {
+          "text": "Memucán, príncipe de Persia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué linaje era Mardochêo, el varón Judío que había en Susán?",
+      "explanation": "Mardochêo, hijo de Jair, hijo de Simi, hijo de Cis, era del linaje de Benjamín.",
+      "bibleReference": "Ester 2:5",
+      "answers": [
+        {
+          "text": "De la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tribu de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tribu de Dan",
+          "isCorrect": false
+        },
+        {
+          "text": "Del linaje de Benjamín",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con quiénes había sido trasportado Mardochêo de Jerusalem?",
+      "explanation": "Había sido trasportado de Jerusalem con los cautivos que fueron llevados con Jechônías rey de Judá, a quien hizo trasportar Nabucodonosor rey de Babilonia.",
+      "bibleReference": "Ester 2:6",
+      "answers": [
+        {
+          "text": "Con los cautivos de Jechônías rey de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Con Zorobabel y los que volvieron",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los siervos de Nabucodonosor",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los mercaderes de Susán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba también Esther, la hija del tío de Mardochêo?",
+      "explanation": "El texto dice que Mardochêo había criado a Hadassa, que es Esther, hija de su tío, porque no tenía padre ni madre.",
+      "bibleReference": "Ester 2:7",
+      "answers": [
+        {
+          "text": "Vasthi",
+          "isCorrect": false
+        },
+        {
+          "text": "Abihail",
+          "isCorrect": false
+        },
+        {
+          "text": "Hadassa",
+          "isCorrect": true
+        },
+        {
+          "text": "Zeres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas doncellas convenientes de la casa del rey le fueron dadas a Esther?",
+      "explanation": "Esther agradó a Hegai, que le hizo dar prestamente sus atavíos y sus raciones, y también siete convenientes doncellas de la casa del rey.",
+      "bibleReference": "Ester 2:9",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no declaró Esther, porque Mardochêo le había mandado que no lo declarase?",
+      "explanation": "Esther no declaró su pueblo ni su nacimiento, porque Mardochêo le había mandado que no lo declarase.",
+      "bibleReference": "Ester 2:10",
+      "answers": [
+        {
+          "text": "Su pueblo ni su nacimiento",
+          "isCorrect": true
+        },
+        {
+          "text": "El nombre de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Su edad y su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "El mandato de Hegai",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo duraba el período de los atavíos de cada moza antes de venir al rey?",
+      "explanation": "Cada moza venía al rey al cabo de haber estado ya doce meses: seis meses con óleo de mirra y seis meses con cosas aromáticas y afeites de mujeres.",
+      "bibleReference": "Ester 2:12",
+      "answers": [
+        {
+          "text": "Seis meses",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce meses",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres meses",
+          "isCorrect": false
+        },
+        {
+          "text": "Un año y medio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué mes fue llevada Esther al rey Assuero, en el año séptimo de su reinado?",
+      "explanation": "Esther fue llevada al rey Assuero a su casa real en el mes décimo, que es el mes de Tebeth, en el año séptimo de su reinado.",
+      "bibleReference": "Ester 2:16",
+      "answers": [
+        {
+          "text": "El mes primero, que es Nisán",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes duodécimo, que es Adar",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes décimo, que es Tebeth",
+          "isCorrect": true
+        },
+        {
+          "text": "El mes séptimo del año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso el rey en la cabeza de Esther al hacerla reina en lugar de Vasthi?",
+      "explanation": "El rey amó a Esther sobre todas las mujeres, puso la corona real en su cabeza y la hizo reina en lugar de Vasthi.",
+      "bibleReference": "Ester 2:17",
+      "answers": [
+        {
+          "text": "La corona real",
+          "isCorrect": true
+        },
+        {
+          "text": "Un manto de púrpura",
+          "isCorrect": false
+        },
+        {
+          "text": "El anillo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Una diadema de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué procuraban hacer Bigthán y Teres, los dos eunucos de la guardia de la puerta?",
+      "explanation": "Bigthán y Teres se enojaron y procuraban poner mano en el rey Assuero; Mardochêo lo entendió y lo denunció a la reina Esther.",
+      "bibleReference": "Ester 2:21",
+      "answers": [
+        {
+          "text": "Robar los tesoros del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Huir de la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Acusar a Mardochêo",
+          "isCorrect": false
+        },
+        {
+          "text": "Poner mano en el rey Assuero",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Nehemías Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Nehemías 12: las listas de sacerdotes y levitas que subieron con Zorobabel, y la dedicación del muro de Jerusalem con dos coros y gran alegría.",
+  "slug": "nehemiah-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con quiénes subieron los sacerdotes y levitas de la primera lista?",
+      "explanation": "El texto dice que estos sacerdotes y levitas subieron con Zorobabel hijo de Sealthiel y con Jesuá.",
+      "bibleReference": "Nehemías 12:1",
+      "answers": [
+        {
+          "text": "Con Zorobabel y con Jesuá",
+          "isCorrect": true
+        },
+        {
+          "text": "Con Esdras el escriba",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Nehemías el gobernador",
+          "isCorrect": false
+        },
+        {
+          "text": "Con Eliasib el gran sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Entre los levitas nombrados, ¿en qué oficiaba Mathanías con sus hermanos?",
+      "explanation": "El texto dice que Mathanías, con sus hermanos, oficiaba en los himnos.",
+      "bibleReference": "Nehemías 12:8",
+      "answers": [
+        {
+          "text": "En las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "En los tesoros",
+          "isCorrect": false
+        },
+        {
+          "text": "En los himnos",
+          "isCorrect": true
+        },
+        {
+          "text": "En los sacrificios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién engendró Jesuá?",
+      "explanation": "Jesuá engendró a Joiacim, Joiacim engendró a Eliasib, y Eliasib engendró a Joiada.",
+      "bibleReference": "Nehemías 12:10",
+      "answers": [
+        {
+          "text": "A Eliasib",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joiacim",
+          "isCorrect": true
+        },
+        {
+          "text": "A Joiada",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jonathán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién engendró Jonathán?",
+      "explanation": "Joiada engendró a Jonathán, y Jonathán engendró a Jaddua.",
+      "bibleReference": "Nehemías 12:11",
+      "answers": [
+        {
+          "text": "A Johanán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joiada",
+          "isCorrect": false
+        },
+        {
+          "text": "A Eliasib",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jaddua",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta el reinado de quién fueron escritos los levitas y los sacerdotes por cabezas de familias?",
+      "explanation": "El texto dice que fueron escritos por cabezas de familias hasta el reinado de Darío el Persa.",
+      "bibleReference": "Nehemías 12:22",
+      "answers": [
+        {
+          "text": "Darío el Persa",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciro el Persa",
+          "isCorrect": false
+        },
+        {
+          "text": "Nabucodonosor",
+          "isCorrect": false
+        },
+        {
+          "text": "Artajerjes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Conforme al estatuto de quién guardaban su turno los cabezas de los levitas para alabar y rendir gracias?",
+      "explanation": "Los cabezas de los levitas alababan y rendían gracias guardando su turno conforme al estatuto de David varón de Dios.",
+      "bibleReference": "Nehemías 12:24",
+      "answers": [
+        {
+          "text": "De Moisés siervo de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "De David varón de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "De Aarón el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "De Esdras el escriba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumentos se hizo la dedicación y la fiesta del muro de Jerusalem?",
+      "explanation": "Buscaron a los levitas para hacer la dedicación y la fiesta con alabanzas y con cánticos, con címbalos, salterios y cítaras.",
+      "bibleReference": "Nehemías 12:27",
+      "answers": [
+        {
+          "text": "Con trompetas y bocinas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Con arpas, panderos y flautas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con címbalos, salterios y cítaras",
+          "isCorrect": true
+        },
+        {
+          "text": "Con tambores y cuernos de carnero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos coros grandes fueron puestos en procesión sobre el muro?",
+      "explanation": "El texto dice que puso dos coros grandes que fueron en procesión, uno a la mano derecha sobre el muro hacia la puerta del Muladar.",
+      "bibleReference": "Nehemías 12:31",
+      "answers": [
+        {
+          "text": "Uno",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué puerta paró el segundo coro al terminar su recorrido por el muro?",
+      "explanation": "El segundo coro pasó por varias puertas y torres hasta la puerta de las Ovejas, y pararon en la puerta de la Cárcel.",
+      "bibleReference": "Nehemías 12:39",
+      "answers": [
+        {
+          "text": "En la puerta de las Aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "En la puerta de la Cárcel",
+          "isCorrect": true
+        },
+        {
+          "text": "En la puerta de las Ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "En la puerta del Muladar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del alborozo de Jerusalem aquel día de grandes sacrificios y alegrías?",
+      "explanation": "Aquel día sacrificaron grandes víctimas e hicieron alegrías, y el alborozo de Jerusalem fue oído de lejos.",
+      "bibleReference": "Nehemías 12:43",
+      "answers": [
+        {
+          "text": "Fue oído de lejos",
+          "isCorrect": true
+        },
+        {
+          "text": "Duró siete días seguidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Se acabó al caer la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadie fuera lo escuchó",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

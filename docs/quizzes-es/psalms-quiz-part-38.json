@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 38",
+  "description": "Diez preguntas sobre Salmos 38: la carga de las iniquidades, los amigos que se apartaron de la plaga del salmista y su clamor para que Jehová se apresure a ayudarle.",
+  "slug": "psalms-quiz-part-38",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el salmista a Jehová en el primer versículo?",
+      "explanation": "El versículo 1 pide a Jehová que no lo reprenda en su furor ni lo castigue en su ira.",
+      "bibleReference": "Salmos 38:1",
+      "answers": [
+        { "text": "Que le dé riquezas y honra", "isCorrect": false },
+        { "text": "Que lo lleve a la casa de Dios", "isCorrect": false },
+        { "text": "Que no lo reprenda en su furor", "isCorrect": true },
+        { "text": "Que pelee contra los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué descendió sobre el salmista?",
+      "explanation": "El versículo 2 dice que las saetas de Jehová descendieron a él y que su mano cayó sobre él.",
+      "bibleReference": "Salmos 38:2",
+      "answers": [
+        { "text": "El rocío de la mañana", "isCorrect": false },
+        { "text": "Las saetas de Jehová", "isCorrect": true },
+        { "text": "La sombra de sus alas", "isCorrect": false },
+        { "text": "El viento del desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 4 sus iniquidades?",
+      "explanation": "El versículo 4 dice que sus iniquidades han pasado su cabeza y que se han agravado sobre él como una carga pesada.",
+      "bibleReference": "Salmos 38:4",
+      "answers": [
+        { "text": "Con una carga pesada", "isCorrect": true },
+        { "text": "Con el tamo del viento", "isCorrect": false },
+        { "text": "Con el humo que se disipa", "isCorrect": false },
+        { "text": "Con una red escondida", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿a causa de qué se corrompieron sus llagas?",
+      "explanation": "El versículo 5 dice que sus llagas se pudrieron y se corrompieron a causa de su locura.",
+      "bibleReference": "Salmos 38:5",
+      "answers": [
+        { "text": "A causa de la guerra", "isCorrect": false },
+        { "text": "A causa del hambre", "isCorrect": false },
+        { "text": "A causa del frío", "isCorrect": false },
+        { "text": "A causa de su locura", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el versículo 6 que el salmista anda todo el día?",
+      "explanation": "El versículo 6 dice que está encorvado y humillado en gran manera, y que anda enlutado todo el día.",
+      "bibleReference": "Salmos 38:6",
+      "answers": [
+        { "text": "Alegre", "isCorrect": false },
+        { "text": "Enlutado", "isCorrect": true },
+        { "text": "Cantando", "isCorrect": false },
+        { "text": "Descansando", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué hicieron sus amigos y sus compañeros?",
+      "explanation": "El versículo 11 dice que sus amigos y compañeros se quitaron de delante de su plaga y que sus cercanos se pusieron lejos.",
+      "bibleReference": "Salmos 38:11",
+      "answers": [
+        { "text": "Se quitaron de delante de su plaga", "isCorrect": true },
+        { "text": "Oraron día y noche por su sanidad", "isCorrect": false },
+        { "text": "Lo llevaron a su propia casa", "isCorrect": false },
+        { "text": "Le trajeron pan y vino cada día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según los versículos 13 y 14, ¿cómo se comportó el salmista?",
+      "explanation": "Los versículos 13 y 14 dicen que fue como un sordo que no oía y como un mudo que no abre su boca, como un hombre que no oye y que no tiene reprensiones en su boca.",
+      "bibleReference": "Salmos 38:13-14",
+      "answers": [
+        { "text": "Como un valiente que sale a la guerra", "isCorrect": false },
+        { "text": "Como un juez que sentencia al pueblo", "isCorrect": false },
+        { "text": "Como un sordo que no oía y un mudo callado", "isCorrect": true },
+        { "text": "Como un rey que manda a su ejército", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿en quién esperó el salmista?",
+      "explanation": "El versículo 15 dice que esperó en Jehová, y que Jehová su Dios le responderá.",
+      "bibleReference": "Salmos 38:15",
+      "answers": [
+        { "text": "En sus amigos", "isCorrect": false },
+        { "text": "En su propia fuerza", "isCorrect": false },
+        { "text": "En los que buscaban su alma", "isCorrect": false },
+        { "text": "En Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 18, ¿qué dice el salmista que hará?",
+      "explanation": "El versículo 18 dice que denunciará su maldad y que se congojará por su pecado.",
+      "bibleReference": "Salmos 38:18",
+      "answers": [
+        { "text": "Denunciar su maldad y congojarse por su pecado", "isCorrect": true },
+        { "text": "Callar para siempre delante de todos", "isCorrect": false },
+        { "text": "Negar que ha pecado contra Dios", "isCorrect": false },
+        { "text": "Pagar mal por bien a sus amigos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el salmista a Jehová en el último versículo?",
+      "explanation": "El versículo 22 pide que se apresure a ayudarle y lo llama Señor, mi salud.",
+      "bibleReference": "Salmos 38:22",
+      "answers": [
+        { "text": "Mi escudo", "isCorrect": false },
+        { "text": "Mi salud", "isCorrect": true },
+        { "text": "Mi roca", "isCorrect": false },
+        { "text": "Mi pastor", "isCorrect": false }
+      ]
+    }
+  ]
+}

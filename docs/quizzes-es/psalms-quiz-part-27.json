@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre Salmos 27: Jehová como luz y salvación, el deseo de morar en su casa y la exhortación a aguardar a Jehová.",
+  "slug": "psalms-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo llama a Jehová el primer verso?",
+      "explanation": "El texto dice: Jehová es mi luz y mi salvación, y también que Jehová es la fortaleza de su vida.",
+      "bibleReference": "Salmos 27:1",
+      "answers": [
+        {
+          "text": "Mi pastor y mi guía",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi luz y mi salvación",
+          "isCorrect": true
+        },
+        {
+          "text": "Mi roca y mi castillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi escudo y mi galardón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les pasó a los malignos que se allegaron contra él?",
+      "explanation": "El verso dice que cuando se allegaron contra él para comer sus carnes, ellos tropezaron y cayeron.",
+      "bibleReference": "Salmos 27:2",
+      "answers": [
+        {
+          "text": "Prevalecieron contra él",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron consumidos por el fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Tropezaron y cayeron",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que hará su corazón aunque se asiente campo contra él?",
+      "explanation": "El texto dice que aunque se asiente campo contra él, no temerá su corazón.",
+      "bibleReference": "Salmos 27:3",
+      "answers": [
+        {
+          "text": "No temerá",
+          "isCorrect": true
+        },
+        {
+          "text": "Se derretirá",
+          "isCorrect": false
+        },
+        {
+          "text": "Clamará de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Se esconderá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es la única cosa que ha demandado a Jehová?",
+      "explanation": "El verso dice que ha demandado estar en la casa de Jehová todos los días de su vida, para contemplar la hermosura de Jehová.",
+      "bibleReference": "Salmos 27:4",
+      "answers": [
+        {
+          "text": "Vencer a sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tener muchos hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Morar en la casa de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Ver la caída de los impíos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 5, ¿dónde lo pondrá Dios?",
+      "explanation": "El texto dice que lo esconderá en su tabernáculo en el día del mal y que lo pondrá en alto sobre una roca.",
+      "bibleReference": "Salmos 27:5",
+      "answers": [
+        {
+          "text": "En medio del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "En alto sobre una roca",
+          "isCorrect": true
+        },
+        {
+          "text": "Debajo de un árbol",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el monte Líbano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sacrificios dice que ofrecerá en el tabernáculo?",
+      "explanation": "El verso dice que sacrificará en su tabernáculo sacrificios de júbilo, y que cantará y salmeará á Jehová.",
+      "bibleReference": "Salmos 27:6",
+      "answers": [
+        {
+          "text": "Sacrificios de júbilo",
+          "isCorrect": true
+        },
+        {
+          "text": "Sacrificios de becerros",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificios por el pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificios de incienso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 8, ¿qué responde el que habla a \"Buscad mi rostro\"?",
+      "explanation": "El texto dice: Mi corazón ha dicho de ti: Buscad mi rostro. Tu rostro buscaré, oh Jehová.",
+      "bibleReference": "Salmos 27:8",
+      "answers": [
+        {
+          "text": "Enviaré a mis siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardaré silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Buscaré el rostro de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu rostro buscaré, oh Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que hará Jehová aunque su padre y su madre lo dejaran?",
+      "explanation": "El verso dice: Aunque mi padre y mi madre me dejaran, Jehová con todo me recogerá.",
+      "bibleReference": "Salmos 27:10",
+      "answers": [
+        {
+          "text": "Lo olvidará",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo juzgará",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo recogerá",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo llevará al desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 12, ¿quiénes se han levantado contra él?",
+      "explanation": "El texto dice que se han levantado contra él testigos falsos y los que respiran crueldad.",
+      "bibleReference": "Salmos 27:12",
+      "answers": [
+        {
+          "text": "Testigos falsos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus propios hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sacerdotes del templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el último verso del salmo?",
+      "explanation": "El texto dice: Aguarda á Jehová; esfuérzate, y aliéntese tu corazón: sí, espera á Jehová.",
+      "bibleReference": "Salmos 27:14",
+      "answers": [
+        {
+          "text": "Callar y dormir hasta la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Aguardar a Jehová y esforzarse",
+          "isCorrect": true
+        },
+        {
+          "text": "Huir a los montes de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecer holocaustos en el altar",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

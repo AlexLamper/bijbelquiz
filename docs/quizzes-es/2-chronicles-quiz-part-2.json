@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre 2 Crónicas 2: los obreros que contó Salomón, su mensaje a Hiram rey de Tiro y la respuesta que recibió.",
+  "slug": "2-chronicles-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué determinó edificar Salomón?",
+      "explanation": "Salomón determinó edificar una casa al nombre de Jehová y otra casa para su reino.",
+      "bibleReference": "2 Crónicas 2:1",
+      "answers": [
+        { "text": "Una casa al nombre de Jehová y otra para su reino", "isCorrect": true },
+        { "text": "Un altar de bronce y un mar de fundición", "isCorrect": false },
+        { "text": "Ciudades para sus carros y sus jinetes", "isCorrect": false },
+        { "text": "Un muro alrededor de toda Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres contó Salomón para que llevasen cargas?",
+      "explanation": "Salomón contó setenta mil hombres que llevasen cargas, ochenta mil que cortasen en el monte y tres mil seiscientos que los gobernasen.",
+      "bibleReference": "2 Crónicas 2:2",
+      "answers": [
+        { "text": "Ochenta mil", "isCorrect": false },
+        { "text": "Tres mil y seiscientos", "isCorrect": false },
+        { "text": "Setenta mil", "isCorrect": true },
+        { "text": "Veinte mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién envió Salomón a pedir que hiciese con él como había hecho con David?",
+      "explanation": "Salomón envió a decir a Hiram rey de Tiro que hiciese con él como había hecho con David su padre, enviándole cedros.",
+      "bibleReference": "2 Crónicas 2:3",
+      "answers": [
+        { "text": "A los reyes de los Hetheos", "isCorrect": false },
+        { "text": "A Hiram rey de Tiro", "isCorrect": true },
+        { "text": "A los mercaderes de Egipto", "isCorrect": false },
+        { "text": "A los príncipes de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué dijo Salomón que la casa que iba a edificar había de ser grande?",
+      "explanation": "Salomón dijo que la casa había de ser grande porque el Dios de ellos es grande sobre todos los dioses.",
+      "bibleReference": "2 Crónicas 2:5",
+      "answers": [
+        { "text": "Porque el pueblo de Israel era numeroso", "isCorrect": false },
+        { "text": "Porque Hiram le enviaría mucha madera", "isCorrect": false },
+        { "text": "Porque David su padre lo había mandado", "isCorrect": false },
+        { "text": "Porque su Dios es grande sobre todos los dioses", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué clase de hombre pidió Salomón que le enviaran?",
+      "explanation": "Salomón pidió un hombre hábil que supiese trabajar en oro, plata, metal, hierro, púrpura, grana y cárdeno, y esculpir.",
+      "bibleReference": "2 Crónicas 2:7",
+      "answers": [
+        { "text": "Un hombre hábil para trabajar los metales", "isCorrect": true },
+        { "text": "Un escriba que supiese contar al pueblo", "isCorrect": false },
+        { "text": "Un capitán para gobernar a los obreros", "isCorrect": false },
+        { "text": "Un mercader de caballos y de lienzos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué maderas del Líbano pidió Salomón?",
+      "explanation": "Salomón pidió madera de cedro, de haya y de pino, del Líbano, porque los siervos de Hiram entendían de cortar madera allí.",
+      "bibleReference": "2 Crónicas 2:8",
+      "answers": [
+        { "text": "Palma, granado y olivo", "isCorrect": false },
+        { "text": "Mármol, ónice y piedras negras", "isCorrect": false },
+        { "text": "Cedro, haya y pino", "isCorrect": true },
+        { "text": "Higuera, vid y cabrahigo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos coros de trigo en grano dio Salomón para los cortadores de madera?",
+      "explanation": "Salomón dio veinte mil coros de trigo en grano, veinte mil coros de cebada, veinte mil batos de vino y veinte mil batos de aceite.",
+      "bibleReference": "2 Crónicas 2:10",
+      "answers": [
+        { "text": "Diez mil coros", "isCorrect": false },
+        { "text": "Veinte mil coros", "isCorrect": true },
+        { "text": "Setenta mil coros", "isCorrect": false },
+        { "text": "Tres mil coros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "En su carta, ¿qué dijo Hiram de Jehová el Dios de Israel?",
+      "explanation": "Hiram dijo: Bendito sea Jehová el Dios de Israel, que hizo los cielos y la tierra, y que dio al rey David un hijo sabio.",
+      "bibleReference": "2 Crónicas 2:12",
+      "answers": [
+        { "text": "Que había escogido a Tiro entre las naciones", "isCorrect": false },
+        { "text": "Que había dado reposo a su pueblo Israel", "isCorrect": false },
+        { "text": "Que había sacado a Israel de Egipto", "isCorrect": false },
+        { "text": "Que hizo los cielos y la tierra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde traerían la madera en balsas por la mar?",
+      "explanation": "Hiram dijo que cortarían la madera en el Líbano y la traerían en balsas por la mar hasta Joppe, y que Salomón la haría llevar hasta Jerusalem.",
+      "bibleReference": "2 Crónicas 2:16",
+      "answers": [
+        { "text": "Hasta Joppe", "isCorrect": true },
+        { "text": "Hasta Jerusalem", "isCorrect": false },
+        { "text": "Hasta Tiro", "isCorrect": false },
+        { "text": "Hasta el Líbano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres extranjeros fueron hallados en la tierra de Israel?",
+      "explanation": "Salomón contó a todos los hombres extranjeros que estaban en la tierra de Israel, y fueron hallados ciento cincuenta y tres mil seiscientos.",
+      "bibleReference": "2 Crónicas 2:17",
+      "answers": [
+        { "text": "Ciento veinte mil y seiscientos", "isCorrect": false },
+        { "text": "Setenta y tres mil y seiscientos", "isCorrect": false },
+        { "text": "Ciento cincuenta y tres mil seiscientos", "isCorrect": true },
+        { "text": "Ochenta y cinco mil y seiscientos", "isCorrect": false }
+      ]
+    }
+  ]
+}

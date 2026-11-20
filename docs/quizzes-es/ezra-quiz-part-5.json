@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Esdras 5: los profetas Haggeo y Zacarías, la obra reemprendida en Jerusalem y la carta de Tatnai al rey Darío.",
+  "slug": "ezra-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes profetizaron á los Judíos que estaban en Judá y en Jerusalem?",
+      "explanation": "Profetizaron Haggeo profeta y Zacarías hijo de Iddo, yendo en nombre del Dios de Israel á ellos.",
+      "bibleReference": "Esdras 5:1",
+      "answers": [
+        {
+          "text": "Jeremías profeta y Hulda profetisa",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaías profeta, hijo de Amós",
+          "isCorrect": false
+        },
+        {
+          "text": "Esdras escriba y Nehemías",
+          "isCorrect": false
+        },
+        {
+          "text": "Haggeo profeta y Zacarías hijo de Iddo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes se levantaron y comenzaron á edificar la casa de Dios que estaba en Jerusalem?",
+      "explanation": "Se levantaron Zorobabel hijo de Sealthiel y Jesuá hijo de Josadec, y comenzaron á edificar la casa de Dios, y con ellos los profetas de Dios que les ayudaban.",
+      "bibleReference": "Esdras 5:2",
+      "answers": [
+        {
+          "text": "Zorobabel hijo de Sealthiel y Jesuá hijo de Josadec",
+          "isCorrect": true
+        },
+        {
+          "text": "Sesbassar príncipe de Judá y Mitrídates",
+          "isCorrect": false
+        },
+        {
+          "text": "Tatnai capitán y Sethar-boznai",
+          "isCorrect": false
+        },
+        {
+          "text": "Rehum canciller y Simsai secretario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les preguntaron Tatnai, capitán de la parte allá del río, y Sethar-boznai?",
+      "explanation": "Les dijeron: ¿Quién os dió mandamiento para edificar esta casa, y restablecer estos muros?",
+      "bibleReference": "Esdras 5:3",
+      "answers": [
+        {
+          "text": "Cuánto tributo pagarían al rey cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién les había dado mandamiento para edificar aquella casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuántos habían vuelto de la cautividad de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Dónde estaban los vasos de oro y de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no les hicieron cesar hasta que el negocio viniese á Darío?",
+      "explanation": "Los ojos de su Dios fueron sobre los ancianos de los Judíos, y no les hicieron cesar hasta que el negocio viniese á Darío.",
+      "bibleReference": "Esdras 5:5",
+      "answers": [
+        {
+          "text": "Porque el rey Artajerjes lo había mandado así",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la obra ya estaba del todo acabada",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los ojos de su Dios fueron sobre los ancianos de los Judíos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque los profetas de Dios se lo prohibieron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué informaron al rey acerca de la casa del gran Dios en la provincia de Judea?",
+      "explanation": "Informaron que se edifica de piedra de mármol, que los maderos son puestos en las paredes, y que la obra se hace apriesa y prospera en sus manos.",
+      "bibleReference": "Esdras 5:8",
+      "answers": [
+        {
+          "text": "Que está destruída y del todo abandonada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se edifica de ladrillo y de barro cocido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Judíos cesaron de edificarla ya",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se edifica de piedra de mármol y la obra prospera",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron de sí mismos los que edificaban?",
+      "explanation": "Respondieron que eran siervos del Dios del cielo y de la tierra, y que reedificaban la casa que muchos años antes había edificado y fundado el gran rey de Israel.",
+      "bibleReference": "Esdras 5:11",
+      "answers": [
+        {
+          "text": "Que eran siervos del Dios del cielo y de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que eran siervos del rey de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que eran los cabezas de los padres de Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Que edificaban una casa para el rey Darío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según su respuesta, ¿qué pasó cuando sus padres ensañaron al Dios de los cielos?",
+      "explanation": "Dijeron que Dios los entregó en mano de Nabucodonosor rey de Babilonia, Caldeo, el cual destruyó esta casa é hizo trasportar el pueblo á Babilonia.",
+      "bibleReference": "Esdras 5:12",
+      "answers": [
+        {
+          "text": "Los entregó en mano del rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los entregó en mano de Nabucodonosor rey de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "Los dejó en Jerusalem sin templo y sin altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Los envió á Persia para ser siervos allí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién dió mandamiento para que esta casa de Dios fuese edificada, y cuándo?",
+      "explanation": "El mismo rey Ciro dió mandamiento para que esta casa de Dios fuese edificada, el primer año de su reinado.",
+      "bibleReference": "Esdras 5:13",
+      "answers": [
+        {
+          "text": "El rey Darío, en su año segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey Artajerjes, al principio de su reinado",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey Ciro, en su primer año",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey Assuero, en su primer año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién fueron entregados los vasos de oro y de plata que Ciro sacó del templo de Babilonia?",
+      "explanation": "Fueron entregados á Sesbassar, al cual el rey había puesto por gobernador, y le dijo que los pusiese en el templo que está en Jerusalem.",
+      "bibleReference": "Esdras 5:14-15",
+      "answers": [
+        {
+          "text": "A Zorobabel",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jesuá hijo de Josadec",
+          "isCorrect": false
+        },
+        {
+          "text": "A Tatnai, capitán de la parte allá del río",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sesbassar, puesto por gobernador",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron al rey al final de la carta?",
+      "explanation": "Pidieron que se buscase en la casa de los tesoros del rey en Babilonia si el rey Ciro había dado mandamiento para edificar esta casa de Dios en Jerusalem, y que les enviase á decir su voluntad.",
+      "bibleReference": "Esdras 5:17",
+      "answers": [
+        {
+          "text": "Que buscase en sus tesoros en Babilonia si Ciro lo había mandado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que enviase soldados á la ciudad de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les diese madera de cedro del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Que mandase cesar la obra inmediatamente",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

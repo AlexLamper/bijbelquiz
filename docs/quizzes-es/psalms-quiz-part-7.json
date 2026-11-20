@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Salmos 7: el refugio en Jehová, el Dios justo que prueba los corazones y el pozo que cava el malo.",
+  "slug": "psalms-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezamiento, ¿sobre las palabras de quién cantó David este salmo?",
+      "explanation": "El encabezamiento dice: Sigaión de David, que cantó a Jehová sobre las palabras de Cus, hijo de Benjamín.",
+      "bibleReference": "Salmos 7:1",
+      "answers": [
+        {
+          "text": "De Cus, hijo de Benjamín",
+          "isCorrect": true
+        },
+        {
+          "text": "De los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "De sus angustiadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Del Músico principal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara al que podría arrebatar su alma?",
+      "explanation": "Salmos 7:2 dice: No sea que arrebate mi alma, cual león que despedaza, sin que haya quien libre.",
+      "bibleReference": "Salmos 7:2",
+      "answers": [
+        {
+          "text": "Con un viento recio",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un león que despedaza",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un cazador que acecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un río que se desborda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el versículo 5, ¿dónde pide que su honra sea puesta?",
+      "explanation": "Salmos 7:5 dice: Persiga el enemigo mi alma, y alcáncela; y pise en tierra mi vida, y mi honra ponga en el polvo.",
+      "bibleReference": "Salmos 7:5",
+      "answers": [
+        {
+          "text": "En la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "En el sepulcro",
+          "isCorrect": false
+        },
+        {
+          "text": "En el polvo",
+          "isCorrect": true
+        },
+        {
+          "text": "En el camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide que Jehová despierte en su favor?",
+      "explanation": "Salmos 7:6 dice: Levántate, oh Jehová, con tu furor; álzate a causa de las iras de mis angustiadores, y despierta en favor mío el juicio que mandaste.",
+      "bibleReference": "Salmos 7:6",
+      "answers": [
+        {
+          "text": "El juicio que mandó",
+          "isCorrect": true
+        },
+        {
+          "text": "La ira de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "El canto de los justos",
+          "isCorrect": false
+        },
+        {
+          "text": "La fuerza de su brazo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Conforme a qué pide ser juzgado por Jehová?",
+      "explanation": "Salmos 7:8 dice: Jehová juzgará los pueblos; júzgame, oh Jehová, conforme a mi justicia y conforme a mi integridad.",
+      "bibleReference": "Salmos 7:8",
+      "answers": [
+        {
+          "text": "Conforme a la ira de sus angustiadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Conforme al clamor de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Conforme a su justicia y a su integridad",
+          "isCorrect": true
+        },
+        {
+          "text": "Conforme a sus muchos sacrificios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prueba el Dios justo, según el versículo 9?",
+      "explanation": "Salmos 7:9 dice que el Dios justo prueba los corazones y los riñones.",
+      "bibleReference": "Salmos 7:9",
+      "answers": [
+        {
+          "text": "Las manos y los pies",
+          "isCorrect": false
+        },
+        {
+          "text": "Los corazones y los riñones",
+          "isCorrect": true
+        },
+        {
+          "text": "Las palabras y los pasos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ojos y la lengua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes salva Dios, en quien está su escudo?",
+      "explanation": "Salmos 7:10 dice: Mi escudo está en Dios, que salva a los rectos de corazón.",
+      "bibleReference": "Salmos 7:10",
+      "answers": [
+        {
+          "text": "A los que lloran de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "A los pobres de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los rectos de corazón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tiene ya armado y preparado, si el malo no se convirtiere?",
+      "explanation": "Salmos 7:12 dice que, si no se convirtiere, él afilará su espada y que armado tiene ya su arco, y lo ha preparado.",
+      "bibleReference": "Salmos 7:12",
+      "answers": [
+        {
+          "text": "Su arco",
+          "isCorrect": true
+        },
+        {
+          "text": "Su lazo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su red",
+          "isCorrect": false
+        },
+        {
+          "text": "Su vara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde caerá el que ha cavado un pozo y lo ha ahondado?",
+      "explanation": "Salmos 7:15 dice: Pozo ha cavado, y ahondádolo; y en la fosa que hizo caerá.",
+      "bibleReference": "Salmos 7:15",
+      "answers": [
+        {
+          "text": "En manos de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "En el lazo de su vecino",
+          "isCorrect": false
+        },
+        {
+          "text": "En medio del camino",
+          "isCorrect": false
+        },
+        {
+          "text": "En la fosa que él hizo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿al nombre de quién cantará?",
+      "explanation": "Salmos 7:17 dice: Alabaré yo a Jehová conforme a su justicia, y cantaré al nombre de Jehová el Altísimo.",
+      "bibleReference": "Salmos 7:17",
+      "answers": [
+        {
+          "text": "Al nombre de Jehová el Altísimo",
+          "isCorrect": true
+        },
+        {
+          "text": "Al nombre de los justos",
+          "isCorrect": false
+        },
+        {
+          "text": "Al nombre del rey de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Al nombre de su escudo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

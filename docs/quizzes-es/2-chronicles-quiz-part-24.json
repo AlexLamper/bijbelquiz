@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre 2 Crónicas 24: el niño rey Joas, el arca para reparar la casa de Jehová, la muerte de Joiada y la sangre de Zachârías.",
+  "slug": "2-chronicles-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años tenía Joas cuando comenzó a reinar?",
+      "explanation": "Joas tenía siete años cuando comenzó a reinar, y reinó cuarenta años en Jerusalem.",
+      "bibleReference": "2 Crónicas 24:1",
+      "answers": [
+        { "text": "Siete años", "isCorrect": true },
+        { "text": "Dieciséis años", "isCorrect": false },
+        { "text": "Veinticinco años", "isCorrect": false },
+        { "text": "Cuarenta años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Durante cuánto tiempo hizo Joas lo recto en ojos de Jehová?",
+      "explanation": "Joas hizo lo recto en ojos de Jehová todos los días de Joiada el sacerdote.",
+      "bibleReference": "2 Crónicas 24:2",
+      "answers": [
+        { "text": "Hasta que fue llevado cautivo a Damasco", "isCorrect": false },
+        { "text": "Todos los días de su vida", "isCorrect": false },
+        { "text": "Todos los días de Joiada el sacerdote", "isCorrect": true },
+        { "text": "Hasta que entró en el templo a quemar perfume", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué voluntad tuvo Joas después de esto?",
+      "explanation": "Después de esto aconteció que Joas tuvo voluntad de reparar la casa de Jehová.",
+      "bibleReference": "2 Crónicas 24:4",
+      "answers": [
+        { "text": "Edificar un palacio nuevo", "isCorrect": false },
+        { "text": "Reparar la casa de Jehová", "isCorrect": true },
+        { "text": "Pelear contra los Filisteos", "isCorrect": false },
+        { "text": "Hacer alianza con el rey de Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó hacer el rey para recoger la ofrenda?",
+      "explanation": "El rey mandó que hiciesen un arca, la cual pusieron fuera, a la puerta de la casa de Jehová.",
+      "bibleReference": "2 Crónicas 24:8",
+      "answers": [
+        { "text": "Una mesa en el atrio de los sacerdotes", "isCorrect": false },
+        { "text": "Dos columnas junto a la puerta mayor", "isCorrect": false },
+        { "text": "Un libro con la lista de todo Judá", "isCorrect": false },
+        { "text": "Un arca, puesta a la puerta de la casa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos años tenía Joiada cuando murió?",
+      "explanation": "Joiada envejeció y murió harto de días: tenía ciento y treinta años cuando murió.",
+      "bibleReference": "2 Crónicas 24:15",
+      "answers": [
+        { "text": "Ciento y treinta años", "isCorrect": true },
+        { "text": "Ciento diez años", "isCorrect": false },
+        { "text": "Setenta y cinco años", "isCorrect": false },
+        { "text": "Ciento veinte años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron Judá y Jerusalem una vez muerto Joiada?",
+      "explanation": "Desampararon la casa de Jehová el Dios de sus padres y sirvieron a los bosques y a las imágenes esculpidas, y la ira vino sobre Judá y Jerusalem.",
+      "bibleReference": "2 Crónicas 24:18",
+      "answers": [
+        { "text": "Cerraron las puertas del pórtico", "isCorrect": false },
+        { "text": "Pregonaron ayuno en todo Judá", "isCorrect": false },
+        { "text": "Desampararon la casa de Jehová", "isCorrect": true },
+        { "text": "Enviaron el dinero a Damasco", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién cubrieron de piedras en el patio de la casa de Jehová por mandato del rey?",
+      "explanation": "Hicieron conspiración contra Zachârías, hijo de Joiada el sacerdote, y le cubrieron de piedras por mandato del rey, en el patio de la casa de Jehová.",
+      "bibleReference": "2 Crónicas 24:20-21",
+      "answers": [
+        { "text": "A Mathán, sacerdote de Baal", "isCorrect": false },
+        { "text": "A Zachârías, hijo de Joiada", "isCorrect": true },
+        { "text": "A Jozabad, hijo de Simrith", "isCorrect": false },
+        { "text": "A Obed, el profeta de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Zachârías al morir?",
+      "explanation": "El rey Joas no se acordó de la misericordia que su padre Joiada había hecho con él, antes mató a su hijo, el cual dijo al morir: Jehová lo vea, y lo requiera.",
+      "bibleReference": "2 Crónicas 24:22",
+      "answers": [
+        { "text": "No me desampares, Dios mío", "isCorrect": false },
+        { "text": "Jehová perdone este pecado", "isCorrect": false },
+        { "text": "Volveos a Jehová vuestro Dios", "isCorrect": false },
+        { "text": "Jehová lo vea, y lo requiera", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo murió el rey Joas?",
+      "explanation": "Sus siervos conspiraron contra él a causa de las sangres de los hijos de Joiada el sacerdote, le hirieron en su cama y murió.",
+      "bibleReference": "2 Crónicas 24:25",
+      "answers": [
+        { "text": "Cayó herido por una saeta en la batalla", "isCorrect": false },
+        { "text": "Murió en Jerusalem de muy larga vejez", "isCorrect": false },
+        { "text": "Sus siervos le hirieron en su cama", "isCorrect": true },
+        { "text": "Fue muerto en Lachîs por los conjurados", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes conspiraron contra Joas?",
+      "explanation": "Los que conspiraron contra él fueron Zabad, hijo de Simath Ammonita, y Jozabad, hijo de Simrith Moabita.",
+      "bibleReference": "2 Crónicas 24:26",
+      "answers": [
+        { "text": "Zabad y Jozabad, hijos de Joiada", "isCorrect": false },
+        { "text": "Zabad hijo de Simath y Jozabad hijo de Simrith", "isCorrect": true },
+        { "text": "Los príncipes de Judá y los Levitas", "isCorrect": false },
+        { "text": "Los capitanes del ejército de Siria", "isCorrect": false }
+      ]
+    }
+  ]
+}

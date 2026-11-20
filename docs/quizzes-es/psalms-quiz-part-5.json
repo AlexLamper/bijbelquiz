@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Salmos 5: la oración de la mañana, lo que Jehová aborrece y el escudo de benevolencia sobre el justo.",
+  "slug": "psalms-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide al principio que Jehová considere?",
+      "explanation": "Salmos 5:1 dice: Escucha, oh Jehová, mis palabras; considera la meditación mía.",
+      "bibleReference": "Salmos 5:1",
+      "answers": [
+        {
+          "text": "Su camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Su meditación",
+          "isCorrect": true
+        },
+        {
+          "text": "Su angustia",
+          "isCorrect": false
+        },
+        {
+          "text": "Su justicia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama a Jehová en el versículo 2, al pedirle que esté atento a su clamor?",
+      "explanation": "Salmos 5:2 dice: Está atento a la voz de mi clamor, Rey mío y Dios mío, porque a ti oraré.",
+      "bibleReference": "Salmos 5:2",
+      "answers": [
+        {
+          "text": "Juez mío y Señor mío",
+          "isCorrect": false
+        },
+        {
+          "text": "Padre mío y escudo mío",
+          "isCorrect": false
+        },
+        {
+          "text": "Gloria mía y fuerza mía",
+          "isCorrect": false
+        },
+        {
+          "text": "Rey mío y Dios mío",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué momento del día dice que se presentará a Jehová y esperará?",
+      "explanation": "Salmos 5:3 dice: Oh Jehová, de mañana oirás mi voz; de mañana me presentaré a ti, y esperaré.",
+      "bibleReference": "Salmos 5:3",
+      "answers": [
+        {
+          "text": "Al mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "A la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "De mañana",
+          "isCorrect": true
+        },
+        {
+          "text": "De noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice del malo, puesto que Dios no ama la maldad?",
+      "explanation": "Salmos 5:4 dice que Jehová no es un Dios que ame la maldad y que el malo no habitará junto a él.",
+      "bibleReference": "Salmos 5:4",
+      "answers": [
+        {
+          "text": "Que no habitará junto a Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Que será llevado a su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volverá de su camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que entrará en el templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes aborrece Jehová, según el versículo 5?",
+      "explanation": "Salmos 5:5 dice que los insensatos no estarán delante de sus ojos y que aborrece a todos los que obran iniquidad.",
+      "bibleReference": "Salmos 5:5",
+      "answers": [
+        {
+          "text": "A los que lloran de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que callan su oración",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que confían en él",
+          "isCorrect": false
+        },
+        {
+          "text": "A todos los que obran iniquidad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A qué hombre abominará Jehová?",
+      "explanation": "Salmos 5:6 dice que destruirá a los que hablan mentira y que abominará al hombre de sangres y de engaño.",
+      "bibleReference": "Salmos 5:6",
+      "answers": [
+        {
+          "text": "Al hombre de poca fuerza",
+          "isCorrect": false
+        },
+        {
+          "text": "Al hombre de sangres y de engaño",
+          "isCorrect": true
+        },
+        {
+          "text": "Al hombre que teme el juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Al hombre de muchas riquezas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hacia dónde dice que adorará, al entrar en la casa de Jehová?",
+      "explanation": "Salmos 5:7 dice que entrará en su casa en la multitud de su misericordia y que adorará hacia el templo de su santidad, en su temor.",
+      "bibleReference": "Salmos 5:7",
+      "answers": [
+        {
+          "text": "Hacia el templo de su santidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Hacia la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacia el monte de los justos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacia el lugar de la asamblea",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A causa de quiénes pide ser guiado en la justicia de Jehová?",
+      "explanation": "Salmos 5:8 dice: Guíame, Jehová, en tu justicia a causa de mis enemigos; endereza delante de mí tu camino.",
+      "bibleReference": "Salmos 5:8",
+      "answers": [
+        {
+          "text": "De los insensatos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los justos",
+          "isCorrect": false
+        },
+        {
+          "text": "De sus enemigos",
+          "isCorrect": true
+        },
+        {
+          "text": "De los pobres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara la garganta de aquellos en cuya boca no hay rectitud?",
+      "explanation": "Salmos 5:9 dice que su garganta es sepulcro abierto y que con su lengua lisonjearán.",
+      "bibleReference": "Salmos 5:9",
+      "answers": [
+        {
+          "text": "Con un sepulcro abierto",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un pozo sin agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una espada afilada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un lazo escondido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿de qué cercará Jehová al justo, como con un escudo?",
+      "explanation": "Salmos 5:12 dice que Jehová bendecirá al justo y lo cercará de benevolencia como con un escudo.",
+      "bibleReference": "Salmos 5:12",
+      "answers": [
+        {
+          "text": "De temor y temblor",
+          "isCorrect": false
+        },
+        {
+          "text": "De benevolencia",
+          "isCorrect": true
+        },
+        {
+          "text": "De alegría y gozo",
+          "isCorrect": false
+        },
+        {
+          "text": "De voces de júbilo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

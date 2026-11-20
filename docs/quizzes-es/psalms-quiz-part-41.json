@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 41",
+  "description": "Diez preguntas sobre Salmos 41: el bienaventurado que piensa en el pobre, los enemigos que esperaban la muerte del salmista y el amigo que alzó contra él el calcañar.",
+  "slug": "psalms-quiz-part-41",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién llama bienaventurado el primer versículo?",
+      "explanation": "El versículo 1 llama bienaventurado al que piensa en el pobre y dice que Jehová lo librará en el día malo.",
+      "bibleReference": "Salmos 41:1",
+      "answers": [
+        { "text": "Al que junta muchas riquezas", "isCorrect": false },
+        { "text": "Al que vence a sus enemigos", "isCorrect": false },
+        { "text": "Al que piensa en el pobre", "isCorrect": true },
+        { "text": "Al que habla con los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿sobre qué lo sustentará Jehová?",
+      "explanation": "El versículo 3 dice que Jehová lo sustentará sobre el lecho del dolor y que le mullirá toda su cama en su enfermedad.",
+      "bibleReference": "Salmos 41:3",
+      "answers": [
+        { "text": "Sobre el lecho del dolor", "isCorrect": true },
+        { "text": "Sobre la peña del desierto", "isCorrect": false },
+        { "text": "Sobre el trono del rey", "isCorrect": false },
+        { "text": "Sobre las alas del viento", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista en el versículo 4?",
+      "explanation": "El versículo 4 pide a Jehová que tenga misericordia de él y sane su alma, porque ha pecado contra él.",
+      "bibleReference": "Salmos 41:4",
+      "answers": [
+        { "text": "Que Dios le dé un nombre grande", "isCorrect": false },
+        { "text": "Que Dios le muestre sus maravillas", "isCorrect": false },
+        { "text": "Que Dios le dé un ejército fuerte", "isCorrect": false },
+        { "text": "Que Dios sane su alma", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué preguntan sus enemigos acerca de él?",
+      "explanation": "El versículo 5 dice que sus enemigos hablan mal de él preguntando cuándo morirá y perecerá su nombre.",
+      "bibleReference": "Salmos 41:5",
+      "answers": [
+        { "text": "¿Dónde está el Dios en quien confía?", "isCorrect": false },
+        { "text": "¿Cuándo morirá, y perecerá su nombre?", "isCorrect": true },
+        { "text": "¿Quién le dará pan en su enfermedad?", "isCorrect": false },
+        { "text": "¿Cuándo volverá a su propia casa?", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hacía el que venía a verlo, según el versículo 6?",
+      "explanation": "El versículo 6 dice que si venía a verlo, hablaba mentira, mientras su corazón amontonaba iniquidad.",
+      "bibleReference": "Salmos 41:6",
+      "answers": [
+        { "text": "Hablaba mentira", "isCorrect": true },
+        { "text": "Oraba por él", "isCorrect": false },
+        { "text": "Le traía ofrendas", "isCorrect": false },
+        { "text": "Callaba delante de él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué decían de él sus enemigos en el versículo 8?",
+      "explanation": "El versículo 8 dice que hablaban de él como de alguien a quien se ha apoderado una cosa pestilencial, y que el que cayó en cama no volverá a levantarse.",
+      "bibleReference": "Salmos 41:8",
+      "answers": [
+        { "text": "Que sanará dentro de pocos días", "isCorrect": false },
+        { "text": "Que Jehová lo sustentará", "isCorrect": false },
+        { "text": "Que el que cayó en cama no se levantará", "isCorrect": true },
+        { "text": "Que su nombre será grande", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué hizo el hombre de su paz que comía de su pan?",
+      "explanation": "El versículo 9 dice que aun el hombre de su paz, en quien confiaba y que comía de su pan, alzó contra él el calcañar.",
+      "bibleReference": "Salmos 41:9",
+      "answers": [
+        { "text": "Oró por su sanidad", "isCorrect": false },
+        { "text": "Alzó contra él el calcañar", "isCorrect": true },
+        { "text": "Le dio su propia casa", "isCorrect": false },
+        { "text": "Huyó de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista a Jehová en el versículo 10?",
+      "explanation": "El versículo 10 pide que Jehová tenga misericordia de él y lo haga levantar, para que él les dé el pago.",
+      "bibleReference": "Salmos 41:10",
+      "answers": [
+        { "text": "Que lo deje descansar en silencio", "isCorrect": false },
+        { "text": "Que lo lleve lejos de su tierra", "isCorrect": false },
+        { "text": "Que le dé plata y oro", "isCorrect": false },
+        { "text": "Que lo haga levantar", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿en qué conocerá el salmista que ha agradado a Dios?",
+      "explanation": "El versículo 11 dice que conocerá que ha agradado a Dios en que su enemigo no se holgará de él.",
+      "bibleReference": "Salmos 41:11",
+      "answers": [
+        { "text": "En que tendrá muchos hijos", "isCorrect": false },
+        { "text": "En que su enemigo no se holgará de él", "isCorrect": true },
+        { "text": "En que su casa será grande", "isCorrect": false },
+        { "text": "En que los reyes lo buscarán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo termina este salmo, según el versículo 13?",
+      "explanation": "El versículo 13 termina bendiciendo a Jehová, el Dios de Israel, por siglos de siglos, con un doble Amén.",
+      "bibleReference": "Salmos 41:13",
+      "answers": [
+        { "text": "Bendiciendo a Jehová, el Dios de Israel", "isCorrect": true },
+        { "text": "Pidiendo pan para el pobre", "isCorrect": false },
+        { "text": "Nombrando a los enemigos del salmista", "isCorrect": false },
+        { "text": "Llamando al Músico principal", "isCorrect": false }
+      ]
+    }
+  ]
+}

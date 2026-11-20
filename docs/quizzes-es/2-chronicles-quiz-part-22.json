@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre 2 Crónicas 22: el corto reinado de Ochôzías, su muerte en manos de Jehú y el niño Joas escondido de Athalía.",
+  "slug": "2-chronicles-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por qué hicieron rey los moradores de Jerusalem a Ochôzías, el hijo menor de Joram?",
+      "explanation": "Lo hicieron rey porque la tropa que había venido con los Arabes al campo había muerto a todos los hijos mayores.",
+      "bibleReference": "2 Crónicas 22:1",
+      "answers": [
+        { "text": "Porque la tropa había muerto a todos los mayores", "isCorrect": true },
+        { "text": "Porque sus hermanos habían huido a Samaria", "isCorrect": false },
+        { "text": "Porque su madre lo pidió al pueblo", "isCorrect": false },
+        { "text": "Porque un profeta lo había ungido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo reinó Ochôzías en Jerusalem?",
+      "explanation": "Cuando Ochôzías comenzó a reinar tenía cuarenta y dos años, y reinó un año en Jerusalem.",
+      "bibleReference": "2 Crónicas 22:2",
+      "answers": [
+        { "text": "Ocho años", "isCorrect": false },
+        { "text": "Seis años", "isCorrect": false },
+        { "text": "Un año", "isCorrect": true },
+        { "text": "Cuarenta y dos años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la madre de Ochôzías y de quién era hija?",
+      "explanation": "El nombre de su madre fue Athalía, hija de Omri.",
+      "bibleReference": "2 Crónicas 22:2",
+      "answers": [
+        { "text": "Azuba, hija de Silhi", "isCorrect": false },
+        { "text": "Athalía, hija de Omri", "isCorrect": true },
+        { "text": "Josabeth, hija del rey Joram", "isCorrect": false },
+        { "text": "Abía, hija de Zachârías", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hacía su madre con él?",
+      "explanation": "También él anduvo en los caminos de la casa de Achâb, porque su madre le aconsejaba a obrar impíamente.",
+      "bibleReference": "2 Crónicas 22:3",
+      "answers": [
+        { "text": "Le enseñaba la ley de Moisés", "isCorrect": false },
+        { "text": "Le rogaba que reparase el templo", "isCorrect": false },
+        { "text": "Le apartaba de los caminos de Achâb", "isCorrect": false },
+        { "text": "Le aconsejaba a obrar impíamente", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con quién fue Ochôzías a la guerra contra Hazael rey de Siria?",
+      "explanation": "Anduvo en los consejos de ellos y fue a la guerra con Joram hijo de Achâb, rey de Israel, contra Hazael rey de Siria, a Ramoth de Galaad.",
+      "bibleReference": "2 Crónicas 22:5",
+      "answers": [
+        { "text": "Con Joram hijo de Achâb", "isCorrect": true },
+        { "text": "Con Jehú hijo de Nimsi", "isCorrect": false },
+        { "text": "Con Joiada el sacerdote", "isCorrect": false },
+        { "text": "Con Josaphat rey de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién había ungido Jehová para talar la casa de Achâb?",
+      "explanation": "Ochôzías salió con Joram contra Jehú hijo de Nimsi, al cual Jehová había ungido para que talase la casa de Achâb.",
+      "bibleReference": "2 Crónicas 22:7",
+      "answers": [
+        { "text": "A Hazael rey de Siria", "isCorrect": false },
+        { "text": "A Jehú hijo de Nimsi", "isCorrect": true },
+        { "text": "A Joram hijo de Achâb", "isCorrect": false },
+        { "text": "A Joiada el sacerdote", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué dieron sepultura a Ochôzías después de matarle?",
+      "explanation": "Le dieron sepultura porque dijeron: Es hijo de Josaphat, el cual buscó a Jehová de todo su corazón.",
+      "bibleReference": "2 Crónicas 22:9",
+      "answers": [
+        { "text": "Porque Athalía lo mandó desde Jerusalem", "isCorrect": false },
+        { "text": "Porque era el único hijo del rey Joram", "isCorrect": false },
+        { "text": "Porque era hijo de Josaphat, que buscó a Jehová", "isCorrect": true },
+        { "text": "Porque los Levitas lo rogaron a Jehú", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Athalía al ver que su hijo era muerto?",
+      "explanation": "Athalía se levantó y destruyó toda la simiente real de la casa de Judá.",
+      "bibleReference": "2 Crónicas 22:10",
+      "answers": [
+        { "text": "Huyó a Samaria con los príncipes de Judá", "isCorrect": false },
+        { "text": "Hizo rey a Joas, hijo de Ochôzías", "isCorrect": false },
+        { "text": "Cerró las puertas de la casa de Jehová", "isCorrect": false },
+        { "text": "Destruyó toda la simiente real de Judá", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién tomó a Joas hijo de Ochôzías y lo escondió para que no lo matasen?",
+      "explanation": "Josabeth, hija del rey Joram y mujer de Joiada el sacerdote, tomó a Joas de entre los hijos del rey que mataban y lo escondió con su ama.",
+      "bibleReference": "2 Crónicas 22:11",
+      "answers": [
+        { "text": "Athalía, la madre del rey Ochôzías", "isCorrect": false },
+        { "text": "Jechôlía, la madre del rey Uzzías", "isCorrect": false },
+        { "text": "Josabeth, mujer de Joiada el sacerdote", "isCorrect": true },
+        { "text": "El ama del hijo del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvo Joas escondido en la casa de Dios?",
+      "explanation": "Estuvo escondido con ellos en la casa de Dios seis años, mientras Athalía reinaba en el país.",
+      "bibleReference": "2 Crónicas 22:12",
+      "answers": [
+        { "text": "Un año", "isCorrect": false },
+        { "text": "Seis años", "isCorrect": true },
+        { "text": "Dos años", "isCorrect": false },
+        { "text": "Diez años", "isCorrect": false }
+      ]
+    }
+  ]
+}

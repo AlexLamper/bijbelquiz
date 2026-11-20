@@ -1,0 +1,122 @@
+{
+  "title": "2 Crónicas Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre 2 Crónicas 17: el reinado de Josaphat, los príncipes que envió a enseñar en Judá y el número de sus hombres de guerra.",
+  "slug": "2-chronicles-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el comienzo del capítulo, ¿quién reinó en lugar de Asa?",
+      "explanation": "El texto dice que reinó en su lugar Josaphat su hijo, el cual prevaleció contra Israel.",
+      "bibleReference": "2 Crónicas 17:1",
+      "answers": [
+        { "text": "Josaphat su hijo", "isCorrect": true },
+        { "text": "Abías su hijo", "isCorrect": false },
+        { "text": "Roboam su hijo", "isCorrect": false },
+        { "text": "Joram su hijo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué fue Jehová con Josaphat?",
+      "explanation": "Jehová fue con Josaphat porque anduvo en los primeros caminos de David su padre y no buscó a los Baales.",
+      "bibleReference": "2 Crónicas 17:3",
+      "answers": [
+        { "text": "Porque edificó fortalezas en todo Judá", "isCorrect": false },
+        { "text": "Porque anduvo en los primeros caminos de David", "isCorrect": true },
+        { "text": "Porque dio presentes a los sacerdotes", "isCorrect": false },
+        { "text": "Porque hizo paz con el rey de Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dio todo Judá a Josaphat, después que Jehová confirmó el reino en su mano?",
+      "explanation": "Todo Judá dio presentes a Josaphat, y tuvo riquezas y gloria en abundancia.",
+      "bibleReference": "2 Crónicas 17:5",
+      "answers": [
+        { "text": "Ciudades fuertes en el monte de Ephraim", "isCorrect": false },
+        { "text": "Escudos y lanzas para su ejército", "isCorrect": false },
+        { "text": "Presentes, y tuvo riquezas y gloria en abundancia", "isCorrect": true },
+        { "text": "Trompetas y bocinas para la casa de Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué quitó Josaphat de Judá cuando se animó su corazón en los caminos de Jehová?",
+      "explanation": "Se animó su corazón en los caminos de Jehová y quitó los altos y los bosques de Judá.",
+      "bibleReference": "2 Crónicas 17:6",
+      "answers": [
+        { "text": "Los carros y los caballos", "isCorrect": false },
+        { "text": "Los tributos de todo el pueblo", "isCorrect": false },
+        { "text": "A los sacerdotes extranjeros", "isCorrect": false },
+        { "text": "Los altos y los bosques", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuál de estos nombres es uno de los príncipes que Josaphat envió a enseñar en las ciudades de Judá?",
+      "explanation": "Al tercer año de su reinado envió a sus príncipes Ben-hail, Obdías, Zachârías, Nathaniel y Michêas, para que enseñasen en las ciudades de Judá.",
+      "bibleReference": "2 Crónicas 17:7",
+      "answers": [
+        { "text": "Benaía", "isCorrect": false },
+        { "text": "Ben-hail", "isCorrect": true },
+        { "text": "Amasai", "isCorrect": false },
+        { "text": "Jehiel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué llevaban consigo mientras enseñaban en Judá?",
+      "explanation": "Enseñaron en Judá teniendo consigo el libro de la ley de Jehová, y rodearon por todas las ciudades de Judá enseñando al pueblo.",
+      "bibleReference": "2 Crónicas 17:9",
+      "answers": [
+        { "text": "El libro de la ley de Jehová", "isCorrect": true },
+        { "text": "El arca del pacto de Jehová", "isCorrect": false },
+        { "text": "Las trompetas de los sacerdotes", "isCorrect": false },
+        { "text": "Los escudos del rey Salomón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué cayó sobre todos los reinos de las tierras que estaban alrededor de Judá?",
+      "explanation": "Cayó el pavor de Jehová sobre todos los reinos de las tierras que estaban alrededor de Judá, de modo que no osaron hacer guerra contra Josaphat.",
+      "bibleReference": "2 Crónicas 17:10",
+      "answers": [
+        { "text": "El hambre y la pestilencia", "isCorrect": false },
+        { "text": "La langosta y el pulgón", "isCorrect": false },
+        { "text": "La guerra de los Filisteos", "isCorrect": false },
+        { "text": "El pavor de Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos carneros le trajeron los Arabes a Josaphat?",
+      "explanation": "Los Arabes le trajeron ganados: siete mil y setecientos carneros y siete mil y setecientos machos de cabrío.",
+      "bibleReference": "2 Crónicas 17:11",
+      "answers": [
+        { "text": "Mil y setecientos", "isCorrect": false },
+        { "text": "Diez mil y setecientos", "isCorrect": false },
+        { "text": "Siete mil y setecientos", "isCorrect": true },
+        { "text": "Siete mil y setenta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres muy esforzados tenía con él el general Adna, en Judá?",
+      "explanation": "El texto dice que el general Adna tenía con él trescientos mil hombres muy esforzados.",
+      "bibleReference": "2 Crónicas 17:14",
+      "answers": [
+        { "text": "Trescientos mil", "isCorrect": true },
+        { "text": "Doscientos mil", "isCorrect": false },
+        { "text": "Ciento y ochenta mil", "isCorrect": false },
+        { "text": "Doscientos y ochenta mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién era el hombre muy valeroso de Benjamín, con doscientos mil armados de arco y escudo?",
+      "explanation": "El texto dice: de Benjamín, Eliada, hombre muy valeroso, y con él doscientos mil armados de arco y escudo.",
+      "bibleReference": "2 Crónicas 17:17",
+      "answers": [
+        { "text": "Johanán", "isCorrect": false },
+        { "text": "Amasías hijo de Zichri", "isCorrect": false },
+        { "text": "Jozabad", "isCorrect": false },
+        { "text": "Eliada", "isCorrect": true }
+      ]
+    }
+  ]
+}

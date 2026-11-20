@@ -1,0 +1,242 @@
+{
+  "title": "Esdras Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Esdras 10: el pacto propuesto por Sechânías, el pregón por Judá y la reunión del pueblo bajo la lluvia.",
+  "slug": "ezra-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes se juntaron a Esdras mientras él oraba delante de la casa de Dios?",
+      "explanation": "Mientras Esdras oraba y confesaba, llorando y postrándose delante de la casa de Dios, se juntó a él una muy grande multitud de Israel, hombres y mujeres y niños.",
+      "bibleReference": "Esdras 10:1",
+      "answers": [
+        {
+          "text": "Una muy grande multitud de Israel: hombres, mujeres y niños",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente los sacerdotes y los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los gobernadores del otro lado del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Los cantores y los porteros del templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién dijo a Esdras que aún había esperanza para Israel?",
+      "explanation": "Sechânías hijo de Jehiel, de los hijos de Elam, respondió a Esdras y dijo que habían prevaricado, mas que aún había esperanza para Israel sobre esto.",
+      "bibleReference": "Esdras 10:2",
+      "answers": [
+        {
+          "text": "Jonathán hijo de Asael",
+          "isCorrect": false
+        },
+        {
+          "text": "Sechânías hijo de Jehiel",
+          "isCorrect": true
+        },
+        {
+          "text": "Johanán hijo de Eliasib",
+          "isCorrect": false
+        },
+        {
+          "text": "Mesullam, uno de los Levitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué propuso Sechânías que hiciesen?",
+      "explanation": "Propuso hacer pacto con su Dios de echar a todas las mujeres extranjeras y a los nacidos de ellas, y que se hiciese conforme a la ley.",
+      "bibleReference": "Esdras 10:3",
+      "answers": [
+        {
+          "text": "Enviar una carta al rey Artajerjes pidiendo consejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecer cien becerros en la casa de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacer pacto con Dios y echar a las mujeres extranjeras",
+          "isCorrect": true
+        },
+        {
+          "text": "Reunir al pueblo para edificar el muro de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Esdras en la cámara de Johanán hijo de Eliasib?",
+      "explanation": "Fue a la cámara de Johanán hijo de Eliasib y allí no comió pan ni bebió agua, porque se entristeció por la prevaricación.",
+      "bibleReference": "Esdras 10:6",
+      "answers": [
+        {
+          "text": "Escribió el libro de la genealogía",
+          "isCorrect": false
+        },
+        {
+          "text": "Pesó la plata y el oro de la ofrenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Durmió allí tres días y tres noches",
+          "isCorrect": false
+        },
+        {
+          "text": "No comió pan ni bebió agua",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le sucedería al que no viniese a Jerusalem dentro de tres días?",
+      "explanation": "Conforme al acuerdo de los príncipes y de los ancianos, el que no viniese dentro de tres días perdería toda su hacienda y sería apartado de la compañía de los de la transmigración.",
+      "bibleReference": "Esdras 10:8",
+      "answers": [
+        {
+          "text": "Perdería toda su hacienda y sería apartado",
+          "isCorrect": true
+        },
+        {
+          "text": "Sería juzgado a muerte delante de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagaría un carnero de los rebaños por su delito",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedaría fuera de Jerusalem hasta el mes noveno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué mes se reunieron en Jerusalem los hombres de Judá y de Benjamín?",
+      "explanation": "Se reunieron en Jerusalem dentro de tres días, a los veinte del mes, el cual era el mes noveno.",
+      "bibleReference": "Esdras 10:9",
+      "answers": [
+        {
+          "text": "El mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes noveno",
+          "isCorrect": true
+        },
+        {
+          "text": "El mes quinto",
+          "isCorrect": false
+        },
+        {
+          "text": "El mes séptimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió todo aquel concurso a las palabras de Esdras?",
+      "explanation": "Todo aquel concurso respondió y dijo en alta voz: Así se haga conforme a tu palabra.",
+      "bibleReference": "Esdras 10:12",
+      "answers": [
+        {
+          "text": "No podemos hacer esta cosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Danos primero el consejo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Así se haga conforme a tu palabra",
+          "isCorrect": true
+        },
+        {
+          "text": "Escribamos una carta a Babilonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razones dio el pueblo para que el asunto no se resolviese en un día?",
+      "explanation": "Dijeron que el pueblo era mucho y el tiempo lluvioso, y que la obra no era de un día ni de dos.",
+      "bibleReference": "Esdras 10:13",
+      "answers": [
+        {
+          "text": "Que los príncipes estaban ausentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el muro aún no estaba acabado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que faltaban los sacerdotes y los Levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el pueblo era mucho y el tiempo lluvioso",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo concluyeron con todos los que habían tomado mujeres extranjeras?",
+      "explanation": "Se sentaron el primer día del mes décimo para inquirir el negocio y concluyeron al primer día del mes primero.",
+      "bibleReference": "Esdras 10:16-17",
+      "answers": [
+        {
+          "text": "El primer día del mes primero",
+          "isCorrect": true
+        },
+        {
+          "text": "El primer día del mes décimo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los veinte del mes noveno",
+          "isCorrect": false
+        },
+        {
+          "text": "El catorce del mes primero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrecieron como culpados los hijos de los sacerdotes que habían tomado mujeres extranjeras?",
+      "explanation": "Dieron su mano en promesa de echar sus mujeres y ofrecieron como culpados un carnero de los rebaños por su delito.",
+      "bibleReference": "Esdras 10:19",
+      "answers": [
+        {
+          "text": "Dos becerros del rebaño",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carnero de los rebaños",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos tórtolas y un cordero",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce machos de cabrío",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
