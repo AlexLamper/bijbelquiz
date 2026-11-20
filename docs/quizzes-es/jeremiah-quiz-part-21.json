@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Jeremías 21: la pregunta de Sedechîas, el cerco de los Caldeos, el camino de vida y el camino de muerte.",
+  "slug": "jeremiah-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes envió el rey Sedechîas a Jeremías?",
+      "explanation": "El primer verso dice que envió a Pashur hijo de Malchîas y a Sephanías sacerdote, hijo de Maasías.",
+      "bibleReference": "Jeremías 21:1",
+      "answers": [
+        {
+          "text": "A Baruc y a Seraías",
+          "isCorrect": false
+        },
+        {
+          "text": "A Pashur y a Sephanías",
+          "isCorrect": true
+        },
+        {
+          "text": "A sus criados más jóvenes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ancianos de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pidieron a Jeremías que hiciera por ellos?",
+      "explanation": "Le pidieron: Pregunta ahora por nosotros a Jehová, porque Nabucodonosor hace guerra contra nosotros.",
+      "bibleReference": "Jeremías 21:2",
+      "answers": [
+        {
+          "text": "Que escribiera un libro de lamentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que saliera a hablar con los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ofreciera sacrificio en el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que preguntara por ellos a Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el mensaje, ¿quién hacía guerra contra ellos?",
+      "explanation": "El verso dice que Nabucodonosor, rey de Babilonia, hacía guerra contra ellos.",
+      "bibleReference": "Jeremías 21:2",
+      "answers": [
+        {
+          "text": "Nabucodonosor, rey de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "Faraón, rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de los Asirios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría con los Caldeos que los tenían cercados fuera de la muralla?",
+      "explanation": "El verso dice que los juntaría en medio de esta ciudad.",
+      "bibleReference": "Jeremías 21:4",
+      "answers": [
+        {
+          "text": "Que los enviaría de vuelta a Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los heriría con grandes piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los juntaría en medio de la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los dispersaría por el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dijo Jehová que pelearía contra los moradores de la ciudad?",
+      "explanation": "El verso dice que pelearía contra ellos con mano alzada y con brazo fuerte, y con furor, y enojo, e ira grande.",
+      "bibleReference": "Jeremías 21:5",
+      "answers": [
+        {
+          "text": "Por mano de los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "Con palabras blandas de aviso",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente por medio del hambre",
+          "isCorrect": false
+        },
+        {
+          "text": "Con mano alzada y con brazo fuerte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué dijo Jehová que morirían los hombres y las bestias de esta ciudad?",
+      "explanation": "El verso dice que heriría a los moradores de la ciudad y que los hombres y las bestias morirían de pestilencia grande.",
+      "bibleReference": "Jeremías 21:6",
+      "answers": [
+        {
+          "text": "De sed en medio del verano",
+          "isCorrect": false
+        },
+        {
+          "text": "De pestilencia grande",
+          "isCorrect": true
+        },
+        {
+          "text": "De fuego venido del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "De frío en los días de lluvia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos caminos puso Jehová delante de este pueblo?",
+      "explanation": "El verso dice: He aquí pongo delante de vosotros camino de vida y camino de muerte.",
+      "bibleReference": "Jeremías 21:8",
+      "answers": [
+        {
+          "text": "Camino de paz y camino de guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Camino del mar y camino del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Camino de vida y camino de muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Camino de Egipto y camino de Babilonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 9, ¿quién vivirá?",
+      "explanation": "El verso dice que el que saliere y se pasare a los Caldeos que los tienen cercados vivirá, y su vida le será por despojo.",
+      "bibleReference": "Jeremías 21:9",
+      "answers": [
+        {
+          "text": "El que se pasare a los Caldeos",
+          "isCorrect": true
+        },
+        {
+          "text": "El que se quedare en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "El que huyere hacia Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "El que peleare sobre la muralla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que el rey de Babilonia haría con esta ciudad?",
+      "explanation": "El verso dice que la ciudad será entregada en mano del rey de Babilonia, y que él la quemará a fuego.",
+      "bibleReference": "Jeremías 21:10",
+      "answers": [
+        {
+          "text": "Que la reedificaría de nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la quemaría a fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la dejaría en paz un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la daría a los sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a la casa de David, para que su ira no saliese como fuego?",
+      "explanation": "El verso dice: Juzgad de mañana juicio, y librad al oprimido de mano del opresor.",
+      "bibleReference": "Jeremías 21:12",
+      "answers": [
+        {
+          "text": "Reunir todo el ejército de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecer holocaustos cada mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar silencio delante de él",
+          "isCorrect": false
+        },
+        {
+          "text": "Juzgar juicio y librar al oprimido",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

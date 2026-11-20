@@ -1,0 +1,242 @@
+{
+  "title": "Cantar de los Cantares Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Cantar de los Cantares 1: la canción de canciones, los amores mejores que el vino, y las viñas de Engadi.",
+  "slug": "song-of-solomon-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿de quién es la canción de canciones?",
+      "explanation": "El texto comienza diciendo: Canción de canciones, la cual es de Salomón.",
+      "bibleReference": "Cantar de los Cantares 1:1",
+      "answers": [
+        {
+          "text": "De las hijas de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "De los pastores de Cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "De los hijos de su madre",
+          "isCorrect": false
+        },
+        {
+          "text": "De Salomón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara ella los amores de aquel a quien habla?",
+      "explanation": "El versículo dice que mejores son tus amores que el vino.",
+      "bibleReference": "Cantar de los Cantares 1:2",
+      "answers": [
+        {
+          "text": "Con los collares de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el vino, y son mejores",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las tiendas de Salomón",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las vigas de cedro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué las doncellas le amaron?",
+      "explanation": "El versículo dice: por el olor de tus suaves ungüentos, ungüento derramado es tu nombre, por eso las doncellas te amaron.",
+      "bibleReference": "Cantar de los Cantares 1:3",
+      "answers": [
+        {
+          "text": "Por el olor de sus suaves ungüentos",
+          "isCorrect": true
+        },
+        {
+          "text": "Por los zarcillos de oro que da",
+          "isCorrect": false
+        },
+        {
+          "text": "Por los rebaños de sus compañeros",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el nardo que dió su olor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Adónde dice ella que el rey la metió?",
+      "explanation": "El versículo dice: Metióme el rey en sus cámaras.",
+      "bibleReference": "Cantar de los Cantares 1:4",
+      "answers": [
+        {
+          "text": "A las viñas de Engadi",
+          "isCorrect": false
+        },
+        {
+          "text": "A las cabañas de Cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "En sus cámaras",
+          "isCorrect": true
+        },
+        {
+          "text": "Tras los rebaños",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al decir a las hijas de Jerusalem que es morena, ¿con qué se compara?",
+      "explanation": "El versículo dice: Morena soy, oh hijas de Jerusalem, mas codiciable; como las cabañas de Cedar, como las tiendas de Salomón.",
+      "bibleReference": "Cantar de los Cantares 1:5",
+      "answers": [
+        {
+          "text": "Con las cabañas de Cedar y las tiendas de Salomón",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las palomas que están en la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el nardo y la mirra de su amado",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las cabritas junto a las cabañas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le hicieron los hijos de su madre, según el texto?",
+      "explanation": "El versículo dice que los hijos de su madre se airaron contra ella y la hicieron guarda de viñas, y su propia viña no guardó.",
+      "bibleReference": "Cantar de los Cantares 1:6",
+      "answers": [
+        {
+          "text": "La llevaron a las cámaras del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Le hicieron zarcillos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "La compararon a una yegua",
+          "isCorrect": false
+        },
+        {
+          "text": "La hicieron guarda de viñas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respuesta recibe la \"hermosa entre las mujeres\" que pregunta dónde repasta su amado?",
+      "explanation": "El versículo le dice que salga por las huellas del rebaño y apaciente sus cabritas junto a las cabañas de los pastores.",
+      "bibleReference": "Cantar de los Cantares 1:8",
+      "answers": [
+        {
+          "text": "Que espere al rey en su reclinatorio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que salga por las huellas del rebaño",
+          "isCorrect": true
+        },
+        {
+          "text": "Que guarde su viña con cuidado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no mire en que es morena",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice él que ha comparado a su amiga?",
+      "explanation": "El versículo dice: A yegua de los carros de Faraón te he comparado, amiga mía.",
+      "bibleReference": "Cantar de los Cantares 1:9",
+      "answers": [
+        {
+          "text": "Con el rebaño de los pastores",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un racimo de las viñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una yegua de los carros de Faraón",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la paloma de los collados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice ella que es para ella su amado, que reposa entre sus pechos?",
+      "explanation": "El versículo dice: Mi amado es para mí un manojito de mirra, que reposa entre mis pechos.",
+      "bibleReference": "Cantar de los Cantares 1:13",
+      "answers": [
+        {
+          "text": "Una copa de vino nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un collar de oro y plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Un lirio de los valles",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manojito de mirra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿de qué son las vigas de la casa?",
+      "explanation": "El texto dice que las vigas de nuestra casa son de cedro, y de ciprés los artesonados.",
+      "bibleReference": "Cantar de los Cantares 1:17",
+      "answers": [
+        {
+          "text": "De cedro",
+          "isCorrect": true
+        },
+        {
+          "text": "De ciprés",
+          "isCorrect": false
+        },
+        {
+          "text": "De plata",
+          "isCorrect": false
+        },
+        {
+          "text": "De oro",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

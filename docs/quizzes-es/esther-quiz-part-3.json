@@ -124,24 +124,24 @@
       ]
     },
     {
-      "text": "Al echar la suerte de día en día y de mes en mes, ¿qué mes salió?",
-      "explanation": "La suerte fue echada de día en día y de mes en mes, y salió el mes duodécimo, que es el mes de Adar.",
-      "bibleReference": "Ester 3:7",
+      "text": "¿En qué día del mes primero fueron llamados los escribanos del rey?",
+      "explanation": "Los escribanos del rey fueron llamados en el mes primero, a trece del mismo, y se escribió conforme a todo lo que mandó Amán.",
+      "bibleReference": "Ester 3:12",
       "answers": [
         {
-          "text": "El mes séptimo del año",
+          "text": "A diez del mes primero",
           "isCorrect": false
         },
         {
-          "text": "El mes primero, que es Nisán",
+          "text": "A uno del mes primero",
           "isCorrect": false
         },
         {
-          "text": "El mes duodécimo, que es Adar",
+          "text": "A trece del mes primero",
           "isCorrect": true
         },
         {
-          "text": "El mes décimo, que es Tebeth",
+          "text": "A veinte del mes primero",
           "isCorrect": false
         }
       ]

@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Jeremías 25: los veintitrés años de aviso, los setenta años de servidumbre y el vaso del vino del furor.",
+  "slug": "jeremiah-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué año de Joacim hijo de Josías vino esta palabra a Jeremías?",
+      "explanation": "El primer verso dice que fue en el año cuarto de Joacim hijo de Josías, rey de Judá.",
+      "bibleReference": "Jeremías 25:1",
+      "answers": [
+        {
+          "text": "En el año décimo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año cuarto",
+          "isCorrect": true
+        },
+        {
+          "text": "En el año trece",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año veinte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años dice Jeremías que le había venido palabra de Jehová, desde el año trece de Josías?",
+      "explanation": "El verso dice que desde el año trece de Josías hasta ese día son veintitrés años en que le vino palabra de Jehová y les habló.",
+      "bibleReference": "Jeremías 25:3",
+      "answers": [
+        {
+          "text": "Veintitrés años",
+          "isCorrect": true
+        },
+        {
+          "text": "Setenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué decían los siervos profetas que Jehová les envió madrugando?",
+      "explanation": "El verso dice que decían: Volveos ahora de vuestro mal camino y de la maldad de vuestras obras, y morad en la tierra.",
+      "bibleReference": "Jeremías 25:5",
+      "answers": [
+        {
+          "text": "Edificad otra vez el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Subid a pelear contra Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardad silencio en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Volveos de vuestro mal camino",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién llama Jehová \"mi siervo\" al traerlo contra esta tierra?",
+      "explanation": "El verso dice que tomará todos los linajes del aquilón y a Nabucodonosor rey de Babilonia, su siervo, y los traerá contra esta tierra.",
+      "bibleReference": "Jeremías 25:9",
+      "answers": [
+        {
+          "text": "A Faraón rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Al rey de Sesach",
+          "isCorrect": false
+        },
+        {
+          "text": "A Nabucodonosor rey de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "A los reyes de Media",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría perecer de entre ellos?",
+      "explanation": "El verso dice que hará perecer voz de gozo y voz de alegría, voz de desposado y voz de desposada, ruido de muelas y luz de lámpara.",
+      "bibleReference": "Jeremías 25:10",
+      "answers": [
+        {
+          "text": "La voz de gozo y de alegría",
+          "isCorrect": true
+        },
+        {
+          "text": "La lluvia y el rocío",
+          "isCorrect": false
+        },
+        {
+          "text": "El pan y el vino",
+          "isCorrect": false
+        },
+        {
+          "text": "El altar y el templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años dice el texto que estas gentes servirán al rey de Babilonia?",
+      "explanation": "El verso dice que toda esta tierra será puesta en soledad y que servirán estas gentes al rey de Babilonia setenta años.",
+      "bibleReference": "Jeremías 25:11",
+      "answers": [
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintitrés años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó Jehová tomar de su mano para dar a beber a las gentes?",
+      "explanation": "El verso dice: Toma de mi mano el vaso del vino de este furor, y da a beber de él a todas las gentes a las cuales yo te envío.",
+      "bibleReference": "Jeremías 25:15",
+      "answers": [
+        {
+          "text": "Un rollo escrito con tinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vara de almendro",
+          "isCorrect": false
+        },
+        {
+          "text": "El vaso del vino del furor",
+          "isCorrect": true
+        },
+        {
+          "text": "Un cinto de lino nuevo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 16, ¿qué harán los que beban de ese vaso?",
+      "explanation": "El verso dice que beberán, y temblarán, y enloquecerán delante del cuchillo que él envía entre ellos.",
+      "bibleReference": "Jeremías 25:16",
+      "answers": [
+        {
+          "text": "Dormirán y descansarán",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantarán y danzarán",
+          "isCorrect": false
+        },
+        {
+          "text": "Callarán y se esconderán",
+          "isCorrect": false
+        },
+        {
+          "text": "Temblarán y enloquecerán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 26, ¿quién beberá después de todos los reyes?",
+      "explanation": "El verso termina diciendo que el rey de Sesach beberá después de ellos.",
+      "bibleReference": "Jeremías 25:26",
+      "answers": [
+        {
+          "text": "El rey de Media",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Sesach",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Tiro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el texto a los pastores y mayorales del rebaño?",
+      "explanation": "El verso dice: Aullad, pastores, y clamad; y revolcaos en el polvo, mayorales del rebaño, porque cumplidos son vuestros días.",
+      "bibleReference": "Jeremías 25:34",
+      "answers": [
+        {
+          "text": "Aullar y revolcarse en el polvo",
+          "isCorrect": true
+        },
+        {
+          "text": "Callar y esperar en silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Apacentar bien sus ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Subir al monte del Líbano",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

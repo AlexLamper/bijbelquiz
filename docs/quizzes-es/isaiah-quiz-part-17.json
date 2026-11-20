@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Isaías 17: la carga de Damasco, los rebuscos del aceituno, el hombre que mira a su Hacedor y el ruido de los pueblos.",
+  "slug": "isaiah-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿qué le sucederá a Damasco?",
+      "explanation": "El texto dice: \"He aquí que Damasco dejó de ser ciudad, y será montón de ruina\".",
+      "bibleReference": "Isaías 17:1",
+      "answers": [
+        {
+          "text": "Dejó de ser ciudad y será montón de ruina",
+          "isCorrect": true
+        },
+        {
+          "text": "Será edificada de nuevo con palacios",
+          "isCorrect": false
+        },
+        {
+          "text": "Será llamada la ciudad Herez",
+          "isCorrect": false
+        },
+        {
+          "text": "Será puesta en olvido por setenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué se tornarán las ciudades de Aroer, desamparadas, según el verso 2?",
+      "explanation": "El texto dice que \"en majadas se tornarán; dormirán allí, y no habrá quien los espante\".",
+      "bibleReference": "Isaías 17:2",
+      "answers": [
+        {
+          "text": "En lagunas de agua",
+          "isCorrect": false
+        },
+        {
+          "text": "En huertos de riego",
+          "isCorrect": false
+        },
+        {
+          "text": "En casas de deleite",
+          "isCorrect": false
+        },
+        {
+          "text": "En majadas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿qué cesará junto con el reino de Damasco?",
+      "explanation": "El texto dice: \"Y cesará el socorro de Ephraim, y el reino de Damasco\".",
+      "bibleReference": "Isaías 17:3",
+      "answers": [
+        {
+          "text": "La carga de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "El socorro de Ephraim",
+          "isCorrect": true
+        },
+        {
+          "text": "El yugo del Asirio",
+          "isCorrect": false
+        },
+        {
+          "text": "La gloria de Cedar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos imágenes del campo compara el verso 5 lo que vendrá?",
+      "explanation": "El texto lo compara con el segador que coge la mies y siega las espigas con su brazo, y con el que coge espigas en el valle de Rephaim.",
+      "bibleReference": "Isaías 17:5",
+      "answers": [
+        {
+          "text": "Con el pisador del lagar y con el que planta la viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el pastor que apacienta y con el que busca la oveja perdida",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el pescador del río y con el que extiende la red",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el segador que coge la mies y con el que coge espigas en el valle de Rephaim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 6, ¿cuántos granos quedarán en la punta del ramo cuando sacudan el aceituno?",
+      "explanation": "El texto dice: \"dos ó tres granos en la punta del ramo, cuatro ó cinco en sus ramas fructíferas\".",
+      "bibleReference": "Isaías 17:6",
+      "answers": [
+        {
+          "text": "Dos o tres",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatro o cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninguno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién mirará el hombre en aquel día, según el verso 7?",
+      "explanation": "El texto dice: \"mirará el hombre á su Hacedor, y sus ojos contemplarán al Santo de Israel\".",
+      "bibleReference": "Isaías 17:7",
+      "answers": [
+        {
+          "text": "A los mensajeros de las naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "A su Hacedor, el Santo de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "A los príncipes sentados en sus sillas",
+          "isCorrect": false
+        },
+        {
+          "text": "A la bandera levantada en los montes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 8, ¿a qué dejará de mirar el hombre?",
+      "explanation": "El texto dice que no mirará a los altares que hicieron sus manos, ni a lo que hicieron sus dedos, ni a los bosques, ni a las imágenes del sol.",
+      "bibleReference": "Isaías 17:8",
+      "answers": [
+        {
+          "text": "A las fuentes de la salud y a las aguas del río",
+          "isCorrect": false
+        },
+        {
+          "text": "A los campos talados y a las viñas de los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los altares, a los bosques y a las imágenes del sol",
+          "isCorrect": true
+        },
+        {
+          "text": "Al trono dispuesto en el tabernáculo de David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se olvidó el pueblo, según el verso 10?",
+      "explanation": "El texto dice: \"te olvidaste del Dios de tu salud, y no te acordaste de la roca de tu fortaleza\".",
+      "bibleReference": "Isaías 17:10",
+      "answers": [
+        {
+          "text": "Del Dios de su salud y de la roca de su fortaleza",
+          "isCorrect": true
+        },
+        {
+          "text": "De las palabras de los profetas antiguos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los días de la cosecha y de la siega",
+          "isCorrect": false
+        },
+        {
+          "text": "De los sacrificios y las oblaciones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 13, ¿con qué se compara el pueblo que es ahuyentado cuando Dios lo reprende?",
+      "explanation": "El texto dice: \"será ahuyentado como el tamo de los montes delante del viento, y como el polvo delante del torbellino\".",
+      "bibleReference": "Isaías 17:13",
+      "answers": [
+        {
+          "text": "Con el humo que viene del aquilón sobre la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la hierba que se seca al calor del mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el tamo de los montes delante del viento",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las aguas que se agotan en los fosos del río",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el último verso que ocurre al tiempo de la tarde y antes de la mañana?",
+      "explanation": "El texto dice: \"Al tiempo de la tarde he aquí turbación; y antes de la mañana ya no es\".",
+      "bibleReference": "Isaías 17:14",
+      "answers": [
+        {
+          "text": "Que al atardecer hay cantos y al amanecer silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que al atardecer hay turbación y antes de la mañana ya no está",
+          "isCorrect": true
+        },
+        {
+          "text": "Que al atardecer se levanta bandera y al amanecer se toca trompeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que al atardecer llega el segador y al amanecer el rebuscador",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre Proverbios 19: las riquezas y los amigos, la ira del rey, el que da al pobre y el consejo de Jehová que permanece.",
+  "slug": "proverbs-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿qué le ocurre al presuroso de pies?",
+      "explanation": "Proverbios 19:2 dice: El alma sin ciencia no es buena; y el presuroso de pies peca.",
+      "bibleReference": "Proverbios 19:2",
+      "answers": [
+        {
+          "text": "Hallará el bien",
+          "isCorrect": false
+        },
+        {
+          "text": "Peca",
+          "isCorrect": true
+        },
+        {
+          "text": "Ama su alma",
+          "isCorrect": false
+        },
+        {
+          "text": "Hambreará",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hacen las riquezas?",
+      "explanation": "Proverbios 19:4 dice: Las riquezas allegan muchos amigos: mas el pobre, de su amigo es apartado.",
+      "bibleReference": "Proverbios 19:4",
+      "answers": [
+        {
+          "text": "Detienen el furor del hombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacen caer en sueño",
+          "isCorrect": false
+        },
+        {
+          "text": "Allegan muchos amigos",
+          "isCorrect": true
+        },
+        {
+          "text": "Son herencia de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuál es la honra del hombre?",
+      "explanation": "Proverbios 19:11 dice: La cordura del hombre detiene su furor; y su honra es disimular la ofensa.",
+      "bibleReference": "Proverbios 19:11",
+      "answers": [
+        {
+          "text": "Disimular la ofensa",
+          "isCorrect": true
+        },
+        {
+          "text": "Detener su furor con violencia",
+          "isCorrect": false
+        },
+        {
+          "text": "Rogar al príncipe que da",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar silencio ante el rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto el favor del rey?",
+      "explanation": "Proverbios 19:12 dice: Como el bramido del cachorro de león es la ira del rey; y su favor como el rocío sobre la hierba.",
+      "bibleReference": "Proverbios 19:12",
+      "answers": [
+        {
+          "text": "Con el bramido del cachorro de león",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una gotera continua",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un lazo para el alma",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el rocío sobre la hierba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué viene de Jehová?",
+      "explanation": "Proverbios 19:14 dice: La casa y las riquezas herencia son de los padres: mas de Jehová la mujer prudente.",
+      "bibleReference": "Proverbios 19:14",
+      "answers": [
+        {
+          "text": "La casa y las riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "La herencia de los padres",
+          "isCorrect": false
+        },
+        {
+          "text": "La mujer prudente",
+          "isCorrect": true
+        },
+        {
+          "text": "Los amigos del que da",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a quién presta el que da al pobre?",
+      "explanation": "Proverbios 19:17 dice: A Jehová empresta el que da al pobre, y él le dará su paga.",
+      "bibleReference": "Proverbios 19:17",
+      "answers": [
+        {
+          "text": "A Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Al príncipe",
+          "isCorrect": false
+        },
+        {
+          "text": "A sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Al que empresta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿para qué debes escuchar el consejo y recibir la corrección?",
+      "explanation": "Proverbios 19:20 dice: Escucha el consejo, y recibe la corrección, para que seas sabio en tu vejez.",
+      "bibleReference": "Proverbios 19:20",
+      "answers": [
+        {
+          "text": "Para allegar muchos amigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para heredar casa y riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para detener tu furor",
+          "isCorrect": false
+        },
+        {
+          "text": "Para ser sabio en tu vejez",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué permanecerá?",
+      "explanation": "Proverbios 19:21 dice: Muchos pensamientos hay en el corazón del hombre; mas el consejo de Jehová permanecerá.",
+      "bibleReference": "Proverbios 19:21",
+      "answers": [
+        {
+          "text": "Los pensamientos del hombre",
+          "isCorrect": false
+        },
+        {
+          "text": "El consejo de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "La herencia de los padres",
+          "isCorrect": false
+        },
+        {
+          "text": "El favor del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hace el perezoso con su mano?",
+      "explanation": "Proverbios 19:24 dice: El perezoso esconde su mano en el seno: aun á su boca no la llevará.",
+      "bibleReference": "Proverbios 19:24",
+      "answers": [
+        {
+          "text": "La extiende al indigente",
+          "isCorrect": false
+        },
+        {
+          "text": "La pone sobre el arado",
+          "isCorrect": false
+        },
+        {
+          "text": "La esconde en el seno",
+          "isCorrect": true
+        },
+        {
+          "text": "La lleva a su boca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué está aparejado para los escarnecedores?",
+      "explanation": "Proverbios 19:29 dice: Aparejados están juicios para los escarnecedores, y azotes para los cuerpos de los insensatos.",
+      "bibleReference": "Proverbios 19:29",
+      "answers": [
+        {
+          "text": "Juicios",
+          "isCorrect": true
+        },
+        {
+          "text": "Azotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Dádivas",
+          "isCorrect": false
+        },
+        {
+          "text": "Reposo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

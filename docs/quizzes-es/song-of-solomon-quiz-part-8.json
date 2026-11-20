@@ -1,0 +1,242 @@
+{
+  "title": "Cantar de los Cantares Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Cantar de los Cantares 8: el deseo de la que habla, el amor fuerte como la muerte, la hermana pequeña y la viña de Salomón en Baal-hamón.",
+  "slug": "song-of-solomon-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Como quién desea la que habla que fuera su amado, para poder besarlo fuera sin que la menosprecien?",
+      "explanation": "El texto dice: oh quién te me diese como hermano que mamó los pechos de mi madre; de modo que te halle yo fuera, y te bese, y no me menosprecien.",
+      "bibleReference": "Cantar de los Cantares 8:1",
+      "answers": [
+        {
+          "text": "Como un siervo de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un rey de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un hermano",
+          "isCorrect": true
+        },
+        {
+          "text": "Como un pastor de ovejas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que le daría a beber si lo llevara a casa de su madre?",
+      "explanation": "Ella dice que lo metería en casa de su madre y le haría beber vino adobado del mosto de sus granadas.",
+      "bibleReference": "Cantar de los Cantares 8:2",
+      "answers": [
+        {
+          "text": "Vino adobado del mosto de sus granadas",
+          "isCorrect": true
+        },
+        {
+          "text": "Agua de la fuente del huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Leche de cabras con miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino nuevo de los lagares de Baal-hamón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes conjura el texto a no despertar ni hacer velar al amor hasta que quiera?",
+      "explanation": "Dice: conjúroos, oh doncellas de Jerusalem, que no despertéis, ni hagáis velar al amor, hasta que quiera.",
+      "bibleReference": "Cantar de los Cantares 8:4",
+      "answers": [
+        {
+          "text": "A los guardas de la viña",
+          "isCorrect": false
+        },
+        {
+          "text": "A los compañeros de los huertos",
+          "isCorrect": false
+        },
+        {
+          "text": "A las hijas de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "A las doncellas de Jerusalem",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿cómo sube del desierto aquella por la que se pregunta?",
+      "explanation": "La pregunta dice: quién es ésta que sube del desierto, recostada sobre su amado.",
+      "bibleReference": "Cantar de los Cantares 8:5",
+      "answers": [
+        {
+          "text": "Recostada sobre su amado",
+          "isCorrect": true
+        },
+        {
+          "text": "Montada en un carro de Salomón",
+          "isCorrect": false
+        },
+        {
+          "text": "Coronada de flores de granado",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevada por las doncellas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la fuerza del amor?",
+      "explanation": "El texto dice que fuerte es como la muerte el amor.",
+      "bibleReference": "Cantar de los Cantares 8:6",
+      "answers": [
+        {
+          "text": "Con las muchas aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el vino adobado",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las montañas de los aromas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara la dureza del celo en el mismo versículo?",
+      "explanation": "El texto dice: duro como el sepulcro el celo.",
+      "bibleReference": "Cantar de los Cantares 8:6",
+      "answers": [
+        {
+          "text": "Con el viento del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el vino del mosto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el sepulcro",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las aguas de los ríos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que no podrán hacer las muchas aguas?",
+      "explanation": "Dice que las muchas aguas no podrán apagar el amor, ni lo ahogarán los ríos.",
+      "bibleReference": "Cantar de los Cantares 8:7",
+      "answers": [
+        {
+          "text": "Lavar la viña del amado",
+          "isCorrect": false
+        },
+        {
+          "text": "Apagar el amor",
+          "isCorrect": true
+        },
+        {
+          "text": "Cubrir el monte de los aromas",
+          "isCorrect": false
+        },
+        {
+          "text": "Separar a los compañeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Hablando de la hermana pequeña, ¿qué dicen que harán si ella es muro?",
+      "explanation": "El texto dice: si ella es muro, edificaremos sobre él un palacio de plata; y si fuere puerta, la guarneceremos con tablas de cedro.",
+      "bibleReference": "Cantar de los Cantares 8:8-9",
+      "answers": [
+        {
+          "text": "La guarnecerán con tablas de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "Le darán mil monedas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "La llevarán a casa de su madre",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificarán sobre él un palacio de plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde tuvo Salomón la viña que entregó a guardas?",
+      "explanation": "El texto dice que Salomón tuvo una viña en Baal-hamón, la cual entregó a guardas.",
+      "bibleReference": "Cantar de los Cantares 8:11",
+      "answers": [
+        {
+          "text": "En Baal-hamón",
+          "isCorrect": true
+        },
+        {
+          "text": "En Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "En las montañas de los aromas",
+          "isCorrect": false
+        },
+        {
+          "text": "En un huerto de granados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿a qué pide que se parezca su amado sobre las montañas de los aromas?",
+      "explanation": "El último versículo dice: huye, amado mío, y sé semejante al gamo, o al cervatillo, sobre las montañas de los aromas.",
+      "bibleReference": "Cantar de los Cantares 8:14",
+      "answers": [
+        {
+          "text": "A un sello sobre el corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "A un muro con torres",
+          "isCorrect": false
+        },
+        {
+          "text": "Al gamo o al cervatillo",
+          "isCorrect": true
+        },
+        {
+          "text": "A un manzano del desierto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

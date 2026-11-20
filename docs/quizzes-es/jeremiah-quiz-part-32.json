@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 32",
+  "description": "Diez preguntas sobre Jeremías 32: la compra de la heredad de Anathoth, la oración de Jeremías y la promesa del pacto eterno.",
+  "slug": "jeremiah-quiz-part-32",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿en qué año del reinado de Sedechîas vino la palabra de Jehová a Jeremías?",
+      "explanation": "El versículo dice que la palabra vino a Jeremías el año décimo de Sedechîas rey de Judá.",
+      "bibleReference": "Jeremías 32:1",
+      "answers": [
+        {
+          "text": "El año primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El año séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "El año décimo",
+          "isCorrect": true
+        },
+        {
+          "text": "El año vigésimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba preso el profeta Jeremías mientras el ejército de Babilonia tenía cercada a Jerusalem?",
+      "explanation": "El versículo dice que Jeremías estaba preso en el patio de la cárcel que estaba en la casa del rey de Judá.",
+      "bibleReference": "Jeremías 32:2",
+      "answers": [
+        {
+          "text": "En el patio de la cárcel de la casa del rey",
+          "isCorrect": true
+        },
+        {
+          "text": "En el palacio de Nabucodonosor en Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "En una cueva en tierra de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "En la casa de Baruch hijo de Nerías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le vino a pedir Hanameel, el hijo del tío de Jeremías?",
+      "explanation": "Hanameel le dijo que comprase su heredad de Anathoth, porque a Jeremías le competía el derecho de la redención.",
+      "bibleReference": "Jeremías 32:7-8",
+      "answers": [
+        {
+          "text": "Que escribiera una carta al rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le diera del pan de la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que orara por el ejército de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le comprara su heredad en Anathoth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto dinero pesó Jeremías por aquella heredad?",
+      "explanation": "Jeremías compró la heredad de Hanameel y le pesó el dinero: diecisiete siclos de plata.",
+      "bibleReference": "Jeremías 32:9",
+      "answers": [
+        {
+          "text": "Treinta siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Diecisiete siclos de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete siclos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien siclos de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién entregó Jeremías la carta de venta?",
+      "explanation": "Jeremías dio la carta de venta a Baruch hijo de Nerías, delante de Hanameel y de los testigos.",
+      "bibleReference": "Jeremías 32:12",
+      "answers": [
+        {
+          "text": "A Baruch hijo de Nerías",
+          "isCorrect": true
+        },
+        {
+          "text": "A Hanameel hijo de Sallum",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sedechîas rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sacerdotes de la casa de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde mandó Jeremías que se guardaran las cartas de venta?",
+      "explanation": "Mandó poner las cartas en un vaso de barro, para que se guardasen muchos días.",
+      "bibleReference": "Jeremías 32:14",
+      "answers": [
+        {
+          "text": "Debajo del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "En el arca del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "En un vaso de barro",
+          "isCorrect": true
+        },
+        {
+          "text": "En una bolsa de cuero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová de los ejércitos que aún sucedería en aquella tierra?",
+      "explanation": "Dijo que aún se comprarán casas, y heredades, y viñas en esta tierra.",
+      "bibleReference": "Jeremías 32:15",
+      "answers": [
+        {
+          "text": "Que nunca más habría cosecha en los campos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que aún se comprarían casas, heredades y viñas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el templo sería reedificado en siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Caldeos pedirían la paz al rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En su oración, ¿qué dijo Jeremías que Jehová había hecho con su gran poder y su brazo extendido?",
+      "explanation": "Jeremías dijo: tú hiciste el cielo y la tierra con tu gran poder, y con tu brazo extendido.",
+      "bibleReference": "Jeremías 32:17",
+      "answers": [
+        {
+          "text": "Solamente la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "El huerto de Edén",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ciudades de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "El cielo y la tierra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿dónde habían edificado altares a Baal?",
+      "explanation": "El versículo dice que edificaron altares a Baal, los cuales están en el valle del hijo de Hinnom.",
+      "bibleReference": "Jeremías 32:35",
+      "answers": [
+        {
+          "text": "En los llanos de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de los Olivos",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle del hijo de Hinnom",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al río Eufrates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clase de pacto dijo Jehová que haría con ellos?",
+      "explanation": "Jehová dijo: haré con ellos pacto eterno, que no tornaré atrás de hacerles bien.",
+      "bibleReference": "Jeremías 32:40",
+      "answers": [
+        {
+          "text": "Un pacto eterno",
+          "isCorrect": true
+        },
+        {
+          "text": "Un pacto de siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pacto de sangre con los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pacto por la espada",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

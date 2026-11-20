@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Jeremías 5: la búsqueda de un hombre justo en Jerusalem, la gente que viene de lejos y las casas llenas de engaño.",
+  "slug": "jeremiah-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué había que buscar en las plazas de Jerusalem para que Jehová la perdonara?",
+      "explanation": "El verso manda buscar en sus plazas si hay alguno que haga juicio, que busque verdad, y dice: y yo la perdonaré.",
+      "bibleReference": "Jeremías 5:1",
+      "answers": [
+        {
+          "text": "Un profeta que orase por ella",
+          "isCorrect": false
+        },
+        {
+          "text": "Un hombre que haga juicio y busque verdad",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez justos entre los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Un rey que quitase los altos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo endurecieron sus rostros, según el verso?",
+      "explanation": "El verso dice que fueron azotados y no les dolió, y que endurecieron sus rostros más que la piedra, y no quisieron tornarse.",
+      "bibleReference": "Jeremías 5:3",
+      "answers": [
+        {
+          "text": "Más que el hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el bronce fundido",
+          "isCorrect": false
+        },
+        {
+          "text": "Más que la piedra",
+          "isCorrect": true
+        },
+        {
+          "text": "Como el leño seco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron también los grandes, de quienes se esperaba que conocían el camino de Jehová?",
+      "explanation": "El verso dice que ellos también quebraron el yugo y rompieron las coyundas.",
+      "bibleReference": "Jeremías 5:5",
+      "answers": [
+        {
+          "text": "Oyeron la voz de Jehová y se tornaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Ofrecieron holocaustos a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Enseñaron la ley al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Quebraron el yugo y rompieron las coyundas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué animales anuncia el verso contra ellos?",
+      "explanation": "El verso dice que león del monte los herirá, lobo del desierto los destruirá, y tigre acechará sobre sus ciudades.",
+      "bibleReference": "Jeremías 5:6",
+      "answers": [
+        {
+          "text": "León, lobo y tigre",
+          "isCorrect": true
+        },
+        {
+          "text": "Águilas y buitres",
+          "isCorrect": false
+        },
+        {
+          "text": "Osos y serpientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Perros y cuervos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso a los que relinchaban a la mujer de su prójimo?",
+      "explanation": "El verso dice: Como caballos bien hartos fueron a la mañana, cada cual relinchaba a la mujer de su prójimo.",
+      "bibleReference": "Jeremías 5:8",
+      "answers": [
+        {
+          "text": "Con asnos monteses del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los cachorros de los leones",
+          "isCorrect": false
+        },
+        {
+          "text": "Con caballos bien hartos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con pájaros dentro de una jaula",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los que negaron a Jehová?",
+      "explanation": "El verso dice que negaron a Jehová y dijeron: El no es, y no vendrá mal sobre nosotros, ni veremos cuchillo ni hambre.",
+      "bibleReference": "Jeremías 5:12",
+      "answers": [
+        {
+          "text": "Que no vendrá mal, ni cuchillo ni hambre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Jehová los libraría de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su templo los salvaría del mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ofrecerían todavía más sacrificios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué dijo Jehová que convertía las palabras puestas en la boca del profeta?",
+      "explanation": "El verso dice: he aquí yo pongo en tu boca mis palabras por fuego, y a este pueblo por leños, y los consumirá.",
+      "bibleReference": "Jeremías 5:14",
+      "answers": [
+        {
+          "text": "En espada de dos filos",
+          "isCorrect": false
+        },
+        {
+          "text": "En miel para la boca",
+          "isCorrect": false
+        },
+        {
+          "text": "En viento del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En fuego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice Jehová de la lengua de la gente que trae de lejos?",
+      "explanation": "El verso dice que es gente robusta, gente antigua, gente cuya lengua ignorarás, y no entenderás lo que hablare.",
+      "bibleReference": "Jeremías 5:15",
+      "answers": [
+        {
+          "text": "Que es la lengua judáica",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no la entenderán",
+          "isCorrect": true
+        },
+        {
+          "text": "Que es como la de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la conocerán muy bien",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Jehová por término al mar, por ordenación eterna?",
+      "explanation": "El verso dice que puso arena por término al mar, por ordenación eterna que no quebrantará.",
+      "bibleReference": "Jeremías 5:22",
+      "answers": [
+        {
+          "text": "Arena",
+          "isCorrect": true
+        },
+        {
+          "text": "Un muro de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cortina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso las casas llenas de engaño?",
+      "explanation": "El verso dice: Como jaula llena de pájaros, así están sus casas llenas de engaño; así se hicieron grandes y ricos.",
+      "bibleReference": "Jeremías 5:27",
+      "answers": [
+        {
+          "text": "Con una cisterna rota",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un sepulcro abierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una jaula llena de pájaros",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una tienda de pastor",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Proverbios 17: el bocado seco en paz, el crisol y la hornaza, el amigo de todo tiempo y el necio que calla.",
+  "slug": "proverbs-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué es mejor, según el primer versículo?",
+      "explanation": "Proverbios 17:1 dice: MEJOR es un bocado seco, y en paz, que la casa de contienda llena de víctimas.",
+      "bibleReference": "Proverbios 17:1",
+      "answers": [
+        {
+          "text": "Un bocado seco, y en paz",
+          "isCorrect": true
+        },
+        {
+          "text": "La casa de contienda llena de víctimas",
+          "isCorrect": false
+        },
+        {
+          "text": "La herencia partida entre los hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "El crisol para la plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué prueba Jehová?",
+      "explanation": "Proverbios 17:3 dice: El crisol para la plata, y la hornaza para el oro: mas Jehová prueba los corazones.",
+      "bibleReference": "Proverbios 17:3",
+      "answers": [
+        {
+          "text": "La plata en el crisol",
+          "isCorrect": false
+        },
+        {
+          "text": "El oro en la hornaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Los corazones",
+          "isCorrect": true
+        },
+        {
+          "text": "Las dádivas del impío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién afrenta el que escarnece al pobre?",
+      "explanation": "Proverbios 17:5 dice: El que escarnece al pobre, afrenta á su Hacedor: y el que se alegra en la calamidad, no quedará sin castigo.",
+      "bibleReference": "Proverbios 17:5",
+      "answers": [
+        {
+          "text": "Al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "A su Hacedor",
+          "isCorrect": true
+        },
+        {
+          "text": "A sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué son los hijos de los hijos?",
+      "explanation": "Proverbios 17:6 dice: Corona de los viejos son los hijos de los hijos; y la honra de los hijos, sus padres.",
+      "bibleReference": "Proverbios 17:6",
+      "answers": [
+        {
+          "text": "Mensajero cruel",
+          "isCorrect": false
+        },
+        {
+          "text": "Corona de los viejos",
+          "isCorrect": true
+        },
+        {
+          "text": "Piedra preciosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Amargura de su madre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿con qué es mejor encontrarse que con un fatuo en su necedad?",
+      "explanation": "Proverbios 17:12 dice que es mejor que se encuentre un hombre con una osa á la cual han robado sus cachorros, que con un fatuo en su necedad.",
+      "bibleReference": "Proverbios 17:12",
+      "answers": [
+        {
+          "text": "Con un león que está en el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un siervo prudente que hereda",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un perro que vuelve a su vómito",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una osa a la que robaron sus cachorros",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿para qué es nacido el hermano?",
+      "explanation": "Proverbios 17:17 dice: En todo tiempo ama el amigo; y el hermano para la angustia es nacido.",
+      "bibleReference": "Proverbios 17:17",
+      "answers": [
+        {
+          "text": "Para la angustia",
+          "isCorrect": true
+        },
+        {
+          "text": "Para partir la herencia",
+          "isCorrect": false
+        },
+        {
+          "text": "Para la contienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Para la honra de su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace el espíritu triste, según el texto?",
+      "explanation": "Proverbios 17:22 dice: El corazón alegre produce buena disposición: mas el espíritu triste seca los huesos.",
+      "bibleReference": "Proverbios 17:22",
+      "answers": [
+        {
+          "text": "Produce buena disposición",
+          "isCorrect": false
+        },
+        {
+          "text": "Hermosea el rostro",
+          "isCorrect": false
+        },
+        {
+          "text": "Seca los huesos",
+          "isCorrect": true
+        },
+        {
+          "text": "Detiene sus dichos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hacen los ojos del necio?",
+      "explanation": "Proverbios 17:24 dice: En el rostro del entendido aparece la sabiduría: mas los ojos del necio vagan hasta el cabo de la tierra.",
+      "bibleReference": "Proverbios 17:24",
+      "answers": [
+        {
+          "text": "Miran por los caminos del sabio",
+          "isCorrect": false
+        },
+        {
+          "text": "Se vuelven a la hornaza del oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Buscan la sabiduría en la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Vagan hasta el cabo de la tierra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace el que tiene sabiduría, según el texto?",
+      "explanation": "Proverbios 17:27 dice: Detiene sus dichos el que tiene sabiduría: de prudente espíritu es el hombre entendido.",
+      "bibleReference": "Proverbios 17:27",
+      "answers": [
+        {
+          "text": "Reitera la palabra",
+          "isCorrect": false
+        },
+        {
+          "text": "Detiene sus dichos",
+          "isCorrect": true
+        },
+        {
+          "text": "Toca la mano por su amigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Habla con altilocuencia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿cuándo es contado por sabio aun el necio?",
+      "explanation": "Proverbios 17:28 dice: Aun el necio cuando calla, es contado por sabio: el que cierra sus labios es entendido.",
+      "bibleReference": "Proverbios 17:28",
+      "answers": [
+        {
+          "text": "Cuando compra sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando ama el pleito",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando calla",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuando toma dádiva del seno",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

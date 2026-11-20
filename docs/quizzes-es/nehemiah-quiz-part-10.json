@@ -32,7 +32,7 @@
       ]
     },
     {
-      "text": "Después de nombrar a los firmantes desde Seraías hasta Semeías, ¿qué dice el texto que eran?",
+      "text": "Al terminar la lista que acaba en Maazías, Bilgai y Semeías, ¿qué dice el texto que eran?",
       "explanation": "Tras la lista que termina con Semeías, el texto dice: estos, sacerdotes.",
       "bibleReference": "Nehemías 10:8",
       "answers": [
@@ -206,12 +206,12 @@
           "isCorrect": false
         },
         {
-          "text": "Los turnos de los porteros",
-          "isCorrect": false
-        },
-        {
           "text": "La ofrenda de la leña",
           "isCorrect": true
+        },
+        {
+          "text": "Los turnos de los porteros",
+          "isCorrect": false
         }
       ]
     },

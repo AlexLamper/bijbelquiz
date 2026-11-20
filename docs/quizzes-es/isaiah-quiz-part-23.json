@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Isaías 23: la carga de Tiro, las naves de Tarsis, la virgen hija de Sidón y los setenta años de olvido.",
+  "slug": "isaiah-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes manda aullar el primer verso en la carga de Tiro?",
+      "explanation": "El verso dice: \"Aullad, naves de Tarsis, porque destruída es hasta no quedar casa, ni entrada\".",
+      "bibleReference": "Isaías 23:1",
+      "answers": [
+        {
+          "text": "A los pescadores del río",
+          "isCorrect": false
+        },
+        {
+          "text": "A los caminantes de Dedanim",
+          "isCorrect": false
+        },
+        {
+          "text": "A las naves de Tarsis",
+          "isCorrect": true
+        },
+        {
+          "text": "A los moradores de los terrados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿de dónde venía su provisión?",
+      "explanation": "El texto dice que su provisión \"era de las sementeras que crecen con las muchas aguas del Nilo, de la mies del río\".",
+      "bibleReference": "Isaías 23:3",
+      "answers": [
+        {
+          "text": "De las sementeras que crecen con las muchas aguas del Nilo",
+          "isCorrect": true
+        },
+        {
+          "text": "De las viñas de Sibma y los campos de Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "De las majadas de los pastores del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "De los tesoros guardados en sus palacios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo la mar, la fortaleza de la mar, según el verso 4?",
+      "explanation": "El texto pone en su boca: \"Nunca estuve de parto, ni parí, ni crié mancebos, ni levanté vírgenes\".",
+      "bibleReference": "Isaías 23:4",
+      "answers": [
+        {
+          "text": "Que sus aguas se agotarían y secarían",
+          "isCorrect": false
+        },
+        {
+          "text": "Que haría temblar todos los reinos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus mercaderes serían príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nunca estuvo de parto, ni parió, ni crió mancebos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 5, ¿qué ocurrirá cuando la fama llegue a Egipto?",
+      "explanation": "El texto dice: \"En llegando la fama á Egipto, tendrán dolor de las nuevas de Tiro\".",
+      "bibleReference": "Isaías 23:5",
+      "answers": [
+        {
+          "text": "Que se alegrarán de las nuevas de Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tendrán dolor de las nuevas de Tiro",
+          "isCorrect": true
+        },
+        {
+          "text": "Que enviarán presentes a Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no creerán las nuevas de Tiro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el verso 8 a los negociantes y a los mercaderes de Tiro la coronada?",
+      "explanation": "El texto pregunta quién decretó esto sobre Tiro, \"cuyos negociantes eran príncipes, cuyos mercaderes eran los nobles de la tierra\".",
+      "bibleReference": "Isaías 23:8",
+      "answers": [
+        {
+          "text": "Sus negociantes eran príncipes y sus mercaderes los nobles de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus negociantes eran siervos y sus mercaderes extranjeros",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus negociantes eran pescadores y sus mercaderes pastores",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus negociantes eran adivinos y sus mercaderes mágicos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 9, ¿quién lo decretó y con qué propósito?",
+      "explanation": "El texto dice: \"Jehová de los ejércitos lo decretó, para envilecer la soberbia de toda gloria; y para abatir todos los ilustres de la tierra\".",
+      "bibleReference": "Isaías 23:9",
+      "answers": [
+        {
+          "text": "Los reyes de Chîttim, para tomar sus riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mercaderes de Sidón, para cerrar sus puertos",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová de los ejércitos, para envilecer la soberbia de toda gloria",
+          "isCorrect": true
+        },
+        {
+          "text": "Assur, para fundar ciudades en el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo, según el verso 11, al extender su mano sobre la mar?",
+      "explanation": "El texto dice: \"Extendió su mano sobre la mar, hizo temblar los reinos: Jehová mandó sobre Canaán que sus fuerzas sean debilitadas\".",
+      "bibleReference": "Isaías 23:11",
+      "answers": [
+        {
+          "text": "Secó todas sus aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hizo temblar los reinos",
+          "isCorrect": true
+        },
+        {
+          "text": "Levantó una calzada sobre ella",
+          "isCorrect": false
+        },
+        {
+          "text": "Llenó de naves sus puertos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 12, ¿adónde debe levantarse a pasar la oprimida virgen hija de Sidón?",
+      "explanation": "El texto dice: \"No te alegrarás más, oh tú, oprimida virgen hija de Sidón. Levántate para pasar á Chîttim; y aun allí no tendrás reposo\".",
+      "bibleReference": "Isaías 23:12",
+      "answers": [
+        {
+          "text": "A la tierra de los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "A la tierra de Tema",
+          "isCorrect": false
+        },
+        {
+          "text": "A Chîttim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por cuántos años será puesta Tiro en olvido, según el verso 15?",
+      "explanation": "El texto dice que \"Tiro será puesta en olvido por setenta años, como días de un rey\".",
+      "bibleReference": "Isaías 23:15",
+      "answers": [
+        {
+          "text": "Por setenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Por tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Por un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Por cuarenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último verso, ¿para quién será su negociación y su ganancia?",
+      "explanation": "El texto dice que su negociación y su ganancia \"será consagrada á Jehová\", y será para los que estuvieren delante de Jehová, para que coman hasta hartarse y vistan honradamente.",
+      "bibleReference": "Isaías 23:18",
+      "answers": [
+        {
+          "text": "Será guardada y atesorada en sus palacios",
+          "isCorrect": false
+        },
+        {
+          "text": "Será repartida entre los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Será consagrada a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Será llevada a los mercaderes de Tarsis",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

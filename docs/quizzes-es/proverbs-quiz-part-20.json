@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Proverbios 20: el vino escarnecedor, el perezoso y el invierno, las pesas dobles y la candela de Jehová.",
+  "slug": "proverbs-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué es el vino?",
+      "explanation": "Proverbios 20:1 dice: EL vino es escarnecedor, la cerveza alborotadora; y cualquiera que por ello errare, no será sabio.",
+      "bibleReference": "Proverbios 20:1",
+      "answers": [
+        {
+          "text": "Alborotador",
+          "isCorrect": false
+        },
+        {
+          "text": "Sabroso como el pan de mentira",
+          "isCorrect": false
+        },
+        {
+          "text": "Escarnecedor",
+          "isCorrect": true
+        },
+        {
+          "text": "Un vaso precioso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué no ara el perezoso?",
+      "explanation": "Proverbios 20:4 dice: El perezoso no ara á causa del invierno; pedirá pues en la siega, y no hallará.",
+      "bibleReference": "Proverbios 20:4",
+      "answers": [
+        {
+          "text": "Porque teme al león en el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no halla pan en la siega",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ama el sueño",
+          "isCorrect": false
+        },
+        {
+          "text": "A causa del invierno",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a quién es difícil hallar?",
+      "explanation": "Proverbios 20:6 dice: Muchos hombres publican cada uno su liberalidad: mas hombre de verdad, ¿ quién lo hallará?",
+      "bibleReference": "Proverbios 20:6",
+      "answers": [
+        {
+          "text": "Al que publica su liberalidad",
+          "isCorrect": false
+        },
+        {
+          "text": "Al hombre de verdad",
+          "isCorrect": true
+        },
+        {
+          "text": "Al rey en su trono de juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Al muchacho de obra limpia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué son abominación a Jehová?",
+      "explanation": "Proverbios 20:10 dice: Doble pesa y doble medida, abominación son á Jehová ambas cosas.",
+      "bibleReference": "Proverbios 20:10",
+      "answers": [
+        {
+          "text": "Doble pesa y doble medida",
+          "isCorrect": true
+        },
+        {
+          "text": "El oído que oye y el ojo que ve",
+          "isCorrect": false
+        },
+        {
+          "text": "Los pasos del hombre",
+          "isCorrect": false
+        },
+        {
+          "text": "El consejo en el corazón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué sucede si abres tus ojos?",
+      "explanation": "Proverbios 20:13 dice: No ames el sueño, porque no te empobrezcas; abre tus ojos, y te hartarás de pan.",
+      "bibleReference": "Proverbios 20:13",
+      "answers": [
+        {
+          "text": "Te empobrecerás",
+          "isCorrect": false
+        },
+        {
+          "text": "Hallarás en la siega",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu lámpara será apagada",
+          "isCorrect": false
+        },
+        {
+          "text": "Te hartarás de pan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿con quién no debes entrometerte?",
+      "explanation": "Proverbios 20:19 dice: El que descubre el secreto, en chismes anda: no te entrometas, pues, con el que lisonjea con sus labios.",
+      "bibleReference": "Proverbios 20:19",
+      "answers": [
+        {
+          "text": "Con el que compra y después se alaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el fiador del extraño",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el que lisonjea con sus labios",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el rey que esparce los impíos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué debes hacer en lugar de vengarte?",
+      "explanation": "Proverbios 20:22 dice: No digas, yo me vengaré; espera á Jehová, y él te salvará.",
+      "bibleReference": "Proverbios 20:22",
+      "answers": [
+        {
+          "text": "Esperar a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Tomar prenda del extraño",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir consejo al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar el secreto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿de quién son los pasos del hombre?",
+      "explanation": "Proverbios 20:24 dice: De Jehová son los pasos del hombre: ¿ cómo pues entenderá el hombre su camino?",
+      "bibleReference": "Proverbios 20:24",
+      "answers": [
+        {
+          "text": "Del rey sabio",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "De su propio corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "De los consejeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es el alma del hombre?",
+      "explanation": "Proverbios 20:27 dice: Candela de Jehová es el alma del hombre, que escudriña lo secreto del vientre.",
+      "bibleReference": "Proverbios 20:27",
+      "answers": [
+        {
+          "text": "Vaso precioso",
+          "isCorrect": false
+        },
+        {
+          "text": "Lazo para su alma",
+          "isCorrect": false
+        },
+        {
+          "text": "Candela de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Trono de juicio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿cuál es la gloria de los jóvenes?",
+      "explanation": "Proverbios 20:29 dice: La gloria de los jóvenes es su fortaleza, y la hermosura de los viejos la vejez.",
+      "bibleReference": "Proverbios 20:29",
+      "answers": [
+        {
+          "text": "La vejez",
+          "isCorrect": false
+        },
+        {
+          "text": "La hermosura",
+          "isCorrect": false
+        },
+        {
+          "text": "La clemencia",
+          "isCorrect": false
+        },
+        {
+          "text": "Su fortaleza",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

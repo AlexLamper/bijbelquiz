@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Proverbios 15: la blanda respuesta, los ojos de Jehová en todo lugar, el corazón alegre y el temor de Jehová como enseñanza de sabiduría.",
+  "slug": "proverbs-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué hace la palabra áspera?",
+      "explanation": "Proverbios 15:1 dice: LA blanda respuesta quita la ira: mas la palabra áspera hace subir el furor.",
+      "bibleReference": "Proverbios 15:1",
+      "answers": [
+        {
+          "text": "Quita la ira",
+          "isCorrect": false
+        },
+        {
+          "text": "Adorna la sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "Hace subir el furor",
+          "isCorrect": true
+        },
+        {
+          "text": "Esparce sabiduría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde están los ojos de Jehová, según el texto?",
+      "explanation": "Proverbios 15:3 dice que los ojos de Jehová están en todo lugar, mirando á los malos y á los buenos.",
+      "bibleReference": "Proverbios 15:3",
+      "answers": [
+        {
+          "text": "En todo lugar",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo en el cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo sobre los rectos",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo sobre los reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es la sana lengua, según el texto?",
+      "explanation": "Proverbios 15:4 dice: La sana lengua es árbol de vida: mas la perversidad en ella es quebrantamiento de espíritu.",
+      "bibleReference": "Proverbios 15:4",
+      "answers": [
+        {
+          "text": "Panal de miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Manantial de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Vaso precioso",
+          "isCorrect": false
+        },
+        {
+          "text": "Árbol de vida",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace el necio con el consejo de su padre?",
+      "explanation": "Proverbios 15:5 dice: El necio menosprecia el consejo de su padre: mas el que guarda la corrección, vendrá á ser cuerdo.",
+      "bibleReference": "Proverbios 15:5",
+      "answers": [
+        {
+          "text": "Lo guarda con cuidado",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo menosprecia",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo pide con ruegos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo escribe en su corazón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es el sacrificio de los impíos para Jehová, según el texto?",
+      "explanation": "Proverbios 15:8 dice: El sacrificio de los impíos es abominación á Jehová: mas la oración de los rectos es su gozo.",
+      "bibleReference": "Proverbios 15:8",
+      "answers": [
+        {
+          "text": "Abominación",
+          "isCorrect": true
+        },
+        {
+          "text": "Su gozo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un olor suave",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ofrenda aceptable",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hace el corazón alegre?",
+      "explanation": "Proverbios 15:13 dice: El corazón alegre hermosea el rostro: mas por el dolor de corazón el espíritu se abate.",
+      "bibleReference": "Proverbios 15:13",
+      "answers": [
+        {
+          "text": "Abate el espíritu",
+          "isCorrect": false
+        },
+        {
+          "text": "Seca los huesos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hermosea el rostro",
+          "isCorrect": true
+        },
+        {
+          "text": "Busca la necedad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que es mejor donde hay amor?",
+      "explanation": "Proverbios 15:17 dice: Mejor es la comida de legumbres donde hay amor, que de buey engordado donde hay odio.",
+      "bibleReference": "Proverbios 15:17",
+      "answers": [
+        {
+          "text": "El buey engordado",
+          "isCorrect": false
+        },
+        {
+          "text": "La comida de legumbres",
+          "isCorrect": true
+        },
+        {
+          "text": "El gran tesoro",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ganancias del impío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto el camino del perezoso?",
+      "explanation": "Proverbios 15:19 dice: El camino del perezoso es como seto de espinos: mas la vereda de los rectos como una calzada.",
+      "bibleReference": "Proverbios 15:19",
+      "answers": [
+        {
+          "text": "Con una calzada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un árbol de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un panal de miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un seto de espinos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hará Jehová con la casa de los soberbios?",
+      "explanation": "Proverbios 15:25 dice: Jehová asolará la casa de los soberbios: mas él afirmará el término de la viuda.",
+      "bibleReference": "Proverbios 15:25",
+      "answers": [
+        {
+          "text": "La llenará de provisión",
+          "isCorrect": false
+        },
+        {
+          "text": "La afirmará para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "La asolará",
+          "isCorrect": true
+        },
+        {
+          "text": "La entregará a la viuda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué es el temor de Jehová?",
+      "explanation": "Proverbios 15:33 dice: El temor de Jehová es enseñanza de sabiduría: y delante de la honra está la humildad.",
+      "bibleReference": "Proverbios 15:33",
+      "answers": [
+        {
+          "text": "Enseñanza de sabiduría",
+          "isCorrect": true
+        },
+        {
+          "text": "Alegría al falto de entendimiento",
+          "isCorrect": false
+        },
+        {
+          "text": "Molestia al que deja el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Quebrantamiento de espíritu",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

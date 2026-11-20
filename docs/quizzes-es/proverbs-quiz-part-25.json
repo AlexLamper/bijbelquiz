@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre Proverbios 25: los varones de Ezechîas, la manzana de oro, el mensajero fiel y la ciudad derribada y sin muro.",
+  "slug": "proverbs-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿quiénes copiaron estos proverbios de Salomón?",
+      "explanation": "Proverbios 25:1 dice: TAMBIÉN estos son proverbios de Salomón, los cuales copiaron los varones de Ezechîas, rey de Judá.",
+      "bibleReference": "Proverbios 25:1",
+      "answers": [
+        {
+          "text": "Los varones de Ezechîas, rey de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Los sabios de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mensajeros fieles del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuál es la honra del rey?",
+      "explanation": "Proverbios 25:2 dice: Gloria de Dios es encubrir la palabra; mas honra del rey es escudriñar la palabra.",
+      "bibleReference": "Proverbios 25:2",
+      "answers": [
+        {
+          "text": "Encubrir la palabra",
+          "isCorrect": false
+        },
+        {
+          "text": "Alabarse delante de los grandes",
+          "isCorrect": false
+        },
+        {
+          "text": "Quitar las escorias de la plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Escudriñar la palabra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué saldrá al fundidor si se quitan las escorias de la plata?",
+      "explanation": "Proverbios 25:4 dice: Quita las escorias de la plata, y saldrá vaso al fundidor.",
+      "bibleReference": "Proverbios 25:4",
+      "answers": [
+        {
+          "text": "Un joyel de oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Un vaso",
+          "isCorrect": true
+        },
+        {
+          "text": "Un zarcillo de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Una manzana de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la palabra dicha como conviene?",
+      "explanation": "Proverbios 25:11 dice: Manzana de oro con figuras de plata es la palabra dicha como conviene.",
+      "bibleReference": "Proverbios 25:11",
+      "answers": [
+        {
+          "text": "Con frío de nieve en la siega",
+          "isCorrect": false
+        },
+        {
+          "text": "Con nubes y vientos sin lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Con manzana de oro con figuras de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un martillo y una saeta aguda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al mensajero fiel para los que lo envían?",
+      "explanation": "Proverbios 25:13 dice: Como frío de nieve en tiempo de la siega, así es el mensajero fiel á los que lo envían: pues al alma de su señor da refrigerio.",
+      "bibleReference": "Proverbios 25:13",
+      "answers": [
+        {
+          "text": "Con el viento del norte",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una fuente turbia",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un diente quebrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Con frío de nieve en la siega",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué puede pasar si te hartas de miel?",
+      "explanation": "Proverbios 25:16 dice: ¿ Hallaste la miel? come lo que te basta; no sea que te hartes de ella, y la vomites.",
+      "bibleReference": "Proverbios 25:16",
+      "answers": [
+        {
+          "text": "Que la vomites",
+          "isCorrect": true
+        },
+        {
+          "text": "Que te aborrezca tu vecino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tu pie resbale",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tu infamia no se repare",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al que canta canciones al corazón afligido?",
+      "explanation": "Proverbios 25:20 dice: El que canta canciones al corazón afligido, es como el que quita la ropa en tiempo de frío, ó el que sobre el jabón echa vinagre.",
+      "bibleReference": "Proverbios 25:20",
+      "answers": [
+        {
+          "text": "Con el que detiene su pie de la casa del vecino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el que trata su causa en secreto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el que quita la ropa en tiempo de frío",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el que come lo que le basta de la miel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué debes dar al que te aborrece si tiene hambre?",
+      "explanation": "Proverbios 25:21 dice: Si el que te aborrece tuviere hambre, dale de comer pan; y si tuviere sed, dale de beber agua.",
+      "bibleReference": "Proverbios 25:21",
+      "answers": [
+        {
+          "text": "Vinagre",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan",
+          "isCorrect": true
+        },
+        {
+          "text": "Agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Miel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto las buenas nuevas de lejanas tierras?",
+      "explanation": "Proverbios 25:25 dice: Como el agua fría al alma sedienta, así son las buenas nuevas de lejanas tierras.",
+      "bibleReference": "Proverbios 25:25",
+      "answers": [
+        {
+          "text": "Con el agua fría al alma sedienta",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un manantial corrompido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un joyel de oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el viento del norte sin lluvia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿a qué se compara el hombre cuyo espíritu no tiene rienda?",
+      "explanation": "Proverbios 25:28 dice: Como ciudad derribada y sin muro, es el hombre cuyo espíritu no tiene rienda.",
+      "bibleReference": "Proverbios 25:28",
+      "answers": [
+        {
+          "text": "A un diente quebrado y un pie resbalador",
+          "isCorrect": false
+        },
+        {
+          "text": "A nubes y vientos sin lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "A escoria echada sobre el tiesto",
+          "isCorrect": false
+        },
+        {
+          "text": "A una ciudad derribada y sin muro",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

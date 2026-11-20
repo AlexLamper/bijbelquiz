@@ -1,0 +1,122 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 28",
+  "description": "Diez preguntas sobre Proverbios 28: el justo confiado, el que confiesa sus pecados, el príncipe impío y el que da al pobre.",
+  "slug": "proverbs-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "En el primer versículo el impío huye sin que nadie lo persiga. ¿Con qué se compara al justo?",
+      "explanation": "Proverbios 28:1 dice: Huye el impío sin que nadie lo persiga: mas el justo está confiado como un leoncillo.",
+      "bibleReference": "Proverbios 28:1",
+      "answers": [
+        { "text": "Con un oso hambriento", "isCorrect": false },
+        { "text": "Con un leoncillo confiado", "isCorrect": true },
+        { "text": "Con un ave en su nido", "isCorrect": false },
+        { "text": "Con un buey en el granero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué entienden los que buscan a Jehová?",
+      "explanation": "Proverbios 28:5 dice: Los hombres malos no entienden el juicio: mas los que buscan á Jehová, entienden todas las cosas.",
+      "bibleReference": "Proverbios 28:5",
+      "answers": [
+        { "text": "Solamente el juicio", "isCorrect": false },
+        { "text": "La usura y el interés", "isCorrect": false },
+        { "text": "Nada de la ley", "isCorrect": false },
+        { "text": "Todas las cosas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿quién es mejor que el rico de perversos caminos?",
+      "explanation": "Proverbios 28:6 dice: Mejor es el pobre que camina en su integridad, que el de perversos caminos, y rico.",
+      "bibleReference": "Proverbios 28:6",
+      "answers": [
+        { "text": "El pobre que camina en su integridad", "isCorrect": true },
+        { "text": "El príncipe entendido y sabio de la tierra", "isCorrect": false },
+        { "text": "El que aumenta sus riquezas con usura", "isCorrect": false },
+        { "text": "El que es compañero de los glotones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de la oración del que aparta su oído para no oír la ley?",
+      "explanation": "Proverbios 28:9 dice: El que aparta su oído para no oir la ley, su oración también es abominable.",
+      "bibleReference": "Proverbios 28:9",
+      "answers": [
+        { "text": "Que será oída de todos modos", "isCorrect": false },
+        { "text": "Que es la oración del prudente", "isCorrect": false },
+        { "text": "Que también es abominable", "isCorrect": true },
+        { "text": "Que le traerá muchas bendiciones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué alcanzará el que confiesa sus pecados y se aparta de ellos?",
+      "explanation": "Proverbios 28:13 dice: El que encubre sus pecados, no prosperará: mas el que los confiesa y se aparta, alcanzará misericordia.",
+      "bibleReference": "Proverbios 28:13",
+      "answers": [
+        { "text": "Riquezas y honra", "isCorrect": false },
+        { "text": "Agravios y pleitos", "isCorrect": false },
+        { "text": "Gloria entre los hombres", "isCorrect": false },
+        { "text": "Misericordia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué dos animales compara el versículo 15 al príncipe impío sobre el pueblo pobre?",
+      "explanation": "Proverbios 28:15 dice: León rugiente y oso hambriento, es el príncipe impío sobre el pueblo pobre.",
+      "bibleReference": "Proverbios 28:15",
+      "answers": [
+        { "text": "Un leoncillo confiado y un cordero", "isCorrect": false },
+        { "text": "Un león rugiente y un oso hambriento", "isCorrect": true },
+        { "text": "Un ave de su nido y una culebra", "isCorrect": false },
+        { "text": "Un buey fuerte y un macho cabrío", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿de qué se hartará el que sigue a los ociosos?",
+      "explanation": "Proverbios 28:19 dice: El que labra su tierra, se hartará de pan: mas el que sigue los ociosos, se hartará de pobreza.",
+      "bibleReference": "Proverbios 28:19",
+      "answers": [
+        { "text": "De pan", "isCorrect": false },
+        { "text": "De riquezas", "isCorrect": false },
+        { "text": "De pobreza", "isCorrect": true },
+        { "text": "De bendiciones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿qué tendrá el hombre de verdad?",
+      "explanation": "Proverbios 28:20 dice: El hombre de verdad tendrá muchas bendiciones: mas el que se apresura á enriquecer, no será sin culpa.",
+      "bibleReference": "Proverbios 28:20",
+      "answers": [
+        { "text": "Muchas bendiciones", "isCorrect": true },
+        { "text": "Muchos agravios", "isCorrect": false },
+        { "text": "Muchas contiendas", "isCorrect": false },
+        { "text": "Muchos presentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 23, ¿quién hallará después mayor gracia?",
+      "explanation": "Proverbios 28:23 dice: El que reprende al hombre, hallará después mayor gracia que el que lisonjea con la lengua.",
+      "bibleReference": "Proverbios 28:23",
+      "answers": [
+        { "text": "El que lisonjea con la lengua", "isCorrect": false },
+        { "text": "El altivo de ánimo", "isCorrect": false },
+        { "text": "El que reprende al hombre", "isCorrect": true },
+        { "text": "El que confía en su corazón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué pasa cuando los impíos perecen?",
+      "explanation": "Proverbios 28:28 dice: Cuando los impíos son levantados, esconderáse el hombre: mas cuando perecen, los justos se multiplican.",
+      "bibleReference": "Proverbios 28:28",
+      "answers": [
+        { "text": "Los justos se multiplican", "isCorrect": true },
+        { "text": "El hombre se esconde", "isCorrect": false },
+        { "text": "Los príncipes son muchos", "isCorrect": false },
+        { "text": "La gloria es buscada", "isCorrect": false }
+      ]
+    }
+  ]
+}

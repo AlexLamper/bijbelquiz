@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Proverbios 23: la mesa del señor, las riquezas con alas de águila, la corrección del muchacho y el aviso contra el vino.",
+  "slug": "proverbs-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿qué debes hacer cuando te sientas a comer con algún señor?",
+      "explanation": "Proverbios 23:1-2 dice: CUANDO te sentares á comer con algún señor, considera bien lo que estuviere delante de ti; y pon cuchillo á tu garganta, si tienes gran apetito.",
+      "bibleReference": "Proverbios 23:1-2",
+      "answers": [
+        {
+          "text": "Levantarte antes que te lo digan",
+          "isCorrect": false
+        },
+        {
+          "text": "Considerar bien lo que está delante de ti",
+          "isCorrect": true
+        },
+        {
+          "text": "Codiciar sus manjares delicados",
+          "isCorrect": false
+        },
+        {
+          "text": "Alabarte delante de los grandes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto las riquezas que vuelan al cielo?",
+      "explanation": "Proverbios 23:5 dice que las riquezas se harán alas, como alas de águila, y volarán al cielo.",
+      "bibleReference": "Proverbios 23:5",
+      "answers": [
+        {
+          "text": "Con alas de águila",
+          "isCorrect": true
+        },
+        {
+          "text": "Con pan engañoso",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una sima profunda",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un pozo angosto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hará el necio con la prudencia de tus razones?",
+      "explanation": "Proverbios 23:9 dice: No hables á oídos del necio; porque menospreciará la prudencia de tus razones.",
+      "bibleReference": "Proverbios 23:9",
+      "answers": [
+        {
+          "text": "La guardará en sus entrañas",
+          "isCorrect": false
+        },
+        {
+          "text": "La comprará con su dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "La menospreciará",
+          "isCorrect": true
+        },
+        {
+          "text": "La ordenará en sus labios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quién es el defensor de los huérfanos?",
+      "explanation": "Proverbios 23:10-11 dice: No traspases el término antiguo, ni entres en la heredad de los huérfanos: porque el defensor de ellos es el Fuerte, el cual juzgará la causa de ellos contra ti.",
+      "bibleReference": "Proverbios 23:10-11",
+      "answers": [
+        {
+          "text": "Su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "El varón prudente",
+          "isCorrect": false
+        },
+        {
+          "text": "El Fuerte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿de qué librarás el alma del muchacho si lo hieres con vara?",
+      "explanation": "Proverbios 23:13-14 dice: No rehuses la corrección del muchacho: porque si lo hirieres con vara, no morirá. Tú lo herirás con vara, y librarás su alma del infierno.",
+      "bibleReference": "Proverbios 23:13-14",
+      "answers": [
+        {
+          "text": "Del infierno",
+          "isCorrect": true
+        },
+        {
+          "text": "De la pobreza",
+          "isCorrect": false
+        },
+        {
+          "text": "Del vino y la mistura",
+          "isCorrect": false
+        },
+        {
+          "text": "De la ramera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿en qué debes perseverar todo tiempo?",
+      "explanation": "Proverbios 23:17 dice: No tenga tu corazón envidia de los pecadores, antes persevera en el temor de Jehová todo tiempo.",
+      "bibleReference": "Proverbios 23:17",
+      "answers": [
+        {
+          "text": "En la envidia de los pecadores",
+          "isCorrect": false
+        },
+        {
+          "text": "En el temor de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En la compra de la verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "En el consejo de tu madre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué les sucederá al bebedor y al comilón?",
+      "explanation": "Proverbios 23:20-21 dice: No estés con los bebedores de vino, ni con los comedores de carne: porque el bebedor y el comilón empobrecerán.",
+      "bibleReference": "Proverbios 23:20-21",
+      "answers": [
+        {
+          "text": "Serán honrados por el rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Serán sabios en su vejez",
+          "isCorrect": false
+        },
+        {
+          "text": "Hallarán pan engañoso",
+          "isCorrect": false
+        },
+        {
+          "text": "Empobrecerán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué debes comprar y no vender?",
+      "explanation": "Proverbios 23:23 dice: Compra la verdad, y no la vendas; la sabiduría, la enseñanza, y la inteligencia.",
+      "bibleReference": "Proverbios 23:23",
+      "answers": [
+        {
+          "text": "Los manjares del señor",
+          "isCorrect": false
+        },
+        {
+          "text": "El panal dulce",
+          "isCorrect": false
+        },
+        {
+          "text": "La verdad",
+          "isCorrect": true
+        },
+        {
+          "text": "La heredad de los huérfanos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 26, ¿qué pide el que habla a su hijo?",
+      "explanation": "Proverbios 23:26 dice: Dame, hijo mío, tu corazón, y miren tus ojos por mis caminos.",
+      "bibleReference": "Proverbios 23:26",
+      "answers": [
+        {
+          "text": "Sus manjares",
+          "isCorrect": false
+        },
+        {
+          "text": "Su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Su heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Su vara",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cómo morderá al fin el vino al que lo mira cuando rojea?",
+      "explanation": "Proverbios 23:31-32 dice que no mires al vino cuando rojea, porque mas al fin como serpiente morderá, y como basilisco dará dolor.",
+      "bibleReference": "Proverbios 23:31-32",
+      "answers": [
+        {
+          "text": "Como serpiente",
+          "isCorrect": true
+        },
+        {
+          "text": "Como un perro",
+          "isCorrect": false
+        },
+        {
+          "text": "Como una osa",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un león",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

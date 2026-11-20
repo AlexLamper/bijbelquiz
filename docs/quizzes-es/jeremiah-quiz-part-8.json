@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Jeremías 8: los huesos sacados de los sepulcros, las aves que conocen su tiempo y la pregunta por el bálsamo de Galaad.",
+  "slug": "jeremiah-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué anuncia Jehová que sacarán fuera de sus sepulcros?",
+      "explanation": "El capítulo empieza anunciando que sacarán de sus sepulcros los huesos de los reyes de Judá, de sus príncipes, sacerdotes, profetas y moradores de Jerusalem.",
+      "bibleReference": "Jeremías 8:1",
+      "answers": [
+        {
+          "text": "Los tesoros del templo de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Las piedras de los altares de Baal",
+          "isCorrect": false
+        },
+        {
+          "text": "Los huesos de los reyes, príncipes y profetas",
+          "isCorrect": true
+        },
+        {
+          "text": "Los libros de la ley de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué serán esparcidos esos huesos?",
+      "explanation": "El texto dice que los esparcirán al sol, a la luna y a todo el ejército del cielo, a quienes amaron y sirvieron.",
+      "bibleReference": "Jeremías 8:2",
+      "answers": [
+        {
+          "text": "Al sol, a la luna y a todo el ejército del cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Al fuego del valle de los hijos de Hinnom",
+          "isCorrect": false
+        },
+        {
+          "text": "A los cuatro vientos de la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A las aguas del río Eufrates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué abrazó el pueblo de Jerusalem?",
+      "explanation": "El versículo pregunta por qué este pueblo es rebelde con rebeldía perpetua: abrazaron el engaño y no han querido volverse.",
+      "bibleReference": "Jeremías 8:5",
+      "answers": [
+        {
+          "text": "La sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "El arrepentimiento",
+          "isCorrect": false
+        },
+        {
+          "text": "La ley de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "El engaño",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto a cada uno que se volvió a su carrera?",
+      "explanation": "El versículo dice que cada cual se volvió a su carrera como caballo que arremete con ímpetu a la batalla.",
+      "bibleReference": "Jeremías 8:6",
+      "answers": [
+        {
+          "text": "Con una oveja perdida en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un caballo que arremete con ímpetu a la batalla",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un árbol plantado junto a las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un vaso de barro quebrado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué aves guardan el tiempo de su venida, a diferencia del pueblo?",
+      "explanation": "El texto dice que la cigüeña conoce su tiempo y que la tórtola, la grulla y la golondrina guardan el tiempo de su venida, pero el pueblo no conoce el juicio de Jehová.",
+      "bibleReference": "Jeremías 8:7",
+      "answers": [
+        {
+          "text": "El águila, el cuervo, el buitre y la paloma",
+          "isCorrect": false
+        },
+        {
+          "text": "La cigüeña, la tórtola, la grulla y la golondrina",
+          "isCorrect": true
+        },
+        {
+          "text": "El gallo, el gorrión, la perdiz y el milano",
+          "isCorrect": false
+        },
+        {
+          "text": "El avestruz, el pelícano y el murciélago",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué decían los que curaban con liviandad el quebrantamiento de la hija del pueblo?",
+      "explanation": "Según el versículo, curaron el quebrantamiento con liviandad diciendo: Paz, paz; y no hay paz.",
+      "bibleReference": "Jeremías 8:11",
+      "answers": [
+        {
+          "text": "Guerra, guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Santo, santo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hambre y espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz, paz",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué no habrá en la vid ni en la higuera?",
+      "explanation": "Jehová dice que no habrá uvas en la vid ni higos en la higuera, y que se caerá la hoja.",
+      "bibleReference": "Jeremías 8:13",
+      "answers": [
+        {
+          "text": "Uvas ni higos",
+          "isCorrect": true
+        },
+        {
+          "text": "Hojas ni ramas",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceitunas ni granadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Espinas ni cardos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde se oyó el bufido de los caballos del enemigo?",
+      "explanation": "El texto dice que desde Dan se oyó el bufido de sus caballos, y que del sonido de los relinchos tembló toda la tierra.",
+      "bibleReference": "Jeremías 8:16",
+      "answers": [
+        {
+          "text": "Desde Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Dan",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿qué pasó y se acabó mientras el pueblo no ha sido salvo?",
+      "explanation": "El versículo dice: Pasóse la siega, acabóse el verano, y nosotros no hemos sido salvos.",
+      "bibleReference": "Jeremías 8:20",
+      "answers": [
+        {
+          "text": "La siega y el verano",
+          "isCorrect": true
+        },
+        {
+          "text": "La lluvia y el invierno",
+          "isCorrect": false
+        },
+        {
+          "text": "El sábado y la luna nueva",
+          "isCorrect": false
+        },
+        {
+          "text": "La fiesta y el ayuno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta el final del capítulo acerca de Galaad?",
+      "explanation": "El capítulo termina preguntando si no hay bálsamo en Galaad ni médico allí, y por qué no hubo medicina para la hija del pueblo.",
+      "bibleReference": "Jeremías 8:22",
+      "answers": [
+        {
+          "text": "Si no hay rey ni príncipe allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Si no hay bálsamo ni médico allí",
+          "isCorrect": true
+        },
+        {
+          "text": "Si no hay vino ni aceite allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Si no hay agua ni pan allí",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

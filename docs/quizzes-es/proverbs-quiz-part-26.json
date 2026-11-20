@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Proverbios 26: la honra que no conviene al necio, el perro que vuelve a su vómito, el perezoso en su cama y la contienda sin chismoso.",
+  "slug": "proverbs-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué compara el primer versículo la honra que conviene al necio?",
+      "explanation": "Proverbios 26:1 dice: COMO la nieve en el verano, y la lluvia en la siega, así conviene al necio la honra.",
+      "bibleReference": "Proverbios 26:1",
+      "answers": [
+        {
+          "text": "Con el gorrión en su vagar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la nieve en el verano",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el látigo para el caballo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la golondrina en su vuelo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es para la espalda del necio?",
+      "explanation": "Proverbios 26:3 dice: El látigo para el caballo, y el cabestro para el asno, y la vara para la espalda del necio.",
+      "bibleReference": "Proverbios 26:3",
+      "answers": [
+        {
+          "text": "El látigo",
+          "isCorrect": false
+        },
+        {
+          "text": "El cabestro",
+          "isCorrect": false
+        },
+        {
+          "text": "La vara",
+          "isCorrect": true
+        },
+        {
+          "text": "La honda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué se ha de responder al necio según su necedad?",
+      "explanation": "Proverbios 26:5 dice: Responde al necio según su necedad, porque no se estime sabio en su opinión.",
+      "bibleReference": "Proverbios 26:5",
+      "answers": [
+        {
+          "text": "Para que no venga la maldición sin causa",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que no repita su necedad como el perro",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que la contienda cese en la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que no se estime sabio en su opinión",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al necio que repite su necedad?",
+      "explanation": "Proverbios 26:11 dice: Como perro que vuelve á su vómito, así el necio que repite su necedad.",
+      "bibleReference": "Proverbios 26:11",
+      "answers": [
+        {
+          "text": "Con un perro que vuelve a su vómito",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una puerta que se revuelve en sus quicios",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un gorrión que vaga",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el que liga la piedra en la honda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿de quién hay más esperanza que del hombre sabio en su propia opinión?",
+      "explanation": "Proverbios 26:12 dice: ¿ Has visto hombre sabio en su opinión? más esperanza hay del necio que de él.",
+      "bibleReference": "Proverbios 26:12",
+      "answers": [
+        {
+          "text": "Del perezoso",
+          "isCorrect": false
+        },
+        {
+          "text": "Del chismoso",
+          "isCorrect": false
+        },
+        {
+          "text": "Del necio",
+          "isCorrect": true
+        },
+        {
+          "text": "Del rencilloso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué dice el perezoso?",
+      "explanation": "Proverbios 26:13 dice: Dice el perezoso: El león está en el camino; el león está en las calles.",
+      "bibleReference": "Proverbios 26:13",
+      "answers": [
+        {
+          "text": "Que la vara es para su espalda",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el león está en el camino",
+          "isCorrect": true
+        },
+        {
+          "text": "Que las puertas se revuelven",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el fuego se apaga sin leña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al perezoso en su cama?",
+      "explanation": "Proverbios 26:14 dice: Las puertas se revuelven en sus quicios: así el perezoso en su cama.",
+      "bibleReference": "Proverbios 26:14",
+      "answers": [
+        {
+          "text": "Con las puertas en sus quicios",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el perro en su vómito",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el carbón para brasas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la golondrina en su vuelo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al que se deja llevar de la ira en pleito ajeno?",
+      "explanation": "Proverbios 26:17 dice: El que pasando se deja llevar de la ira en pleito ajeno, es como el que toma al perro por las orejas.",
+      "bibleReference": "Proverbios 26:17",
+      "answers": [
+        {
+          "text": "Con el que echa saetas y muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el que esconde su mano en el seno",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el que da honra al necio",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el que toma al perro por las orejas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué sucede donde no hay chismoso?",
+      "explanation": "Proverbios 26:20 dice: Sin leña se apaga el fuego: y donde no hay chismoso, cesa la contienda.",
+      "bibleReference": "Proverbios 26:20",
+      "answers": [
+        {
+          "text": "Se enciende el fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Cesa la contienda",
+          "isCorrect": true
+        },
+        {
+          "text": "Se apaga la honda",
+          "isCorrect": false
+        },
+        {
+          "text": "Crece la leña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué le sucederá al que cava una sima?",
+      "explanation": "Proverbios 26:27 dice: El que cavare sima, caerá en ella: y el que revuelva la piedra, á él volverá.",
+      "bibleReference": "Proverbios 26:27",
+      "answers": [
+        {
+          "text": "Hallará agua fría",
+          "isCorrect": false
+        },
+        {
+          "text": "Será honrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Caerá en ella",
+          "isCorrect": true
+        },
+        {
+          "text": "Levantará la piedra",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

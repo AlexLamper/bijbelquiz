@@ -24,7 +24,7 @@
       "explanation": "David había preparado oro, plata, metal, hierro, madera y toda suerte de piedras preciosas y de mármol en abundancia.",
       "bibleReference": "1 Crónicas 29:2",
       "answers": [
-        { "text": "Trigo, cebada, vino y aceite", "isCorrect": false },
+        { "text": "Trigo, cebada, vino y aceite para los obreros", "isCorrect": false },
         { "text": "Carros y gente de a caballo", "isCorrect": false },
         { "text": "Oro, plata, metal, hierro, madera y piedras", "isCorrect": true },
         { "text": "Cedros traídos del monte Líbano", "isCorrect": false }
@@ -47,7 +47,7 @@
       "bibleReference": "1 Crónicas 29:5",
       "answers": [
         { "text": "¿Quién edificará esta casa?", "isCorrect": false },
-        { "text": "¿Quién subirá primero a la batalla?", "isCorrect": false },
+        { "text": "¿Quién subirá primero a la batalla contra el enemigo?", "isCorrect": false },
         { "text": "¿Quién contará a este pueblo?", "isCorrect": false },
         { "text": "¿Quién quiere hacer hoy ofrenda a Jehová?", "isCorrect": true }
       ]

@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 28",
+  "description": "Diez preguntas sobre Isaías 28: el ay sobre los ebrios de Ephraim, la piedra fundada en Sión, el concierto con la muerte y la lección del labrador.",
+  "slug": "isaiah-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Contra quiénes clama el ay del primer versículo?",
+      "explanation": "El versículo dice: ¡Ay de la corona de soberbia, de los ebrios de Ephraim, y de la flor caduca de la hermosura de su gloria!",
+      "bibleReference": "Isaías 28:1",
+      "answers": [
+        {
+          "text": "Contra los príncipes que están en Zoán",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra los moradores de la ciudad de Ariel",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra la corona de soberbia de los ebrios de Ephraim",
+          "isCorrect": true
+        },
+        {
+          "text": "Contra los que venden y compran en las plazas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué será Jehová de los ejércitos en aquel día a las reliquias de su pueblo?",
+      "explanation": "El versículo dice que en aquel día Jehová de los ejércitos será por corona de gloria y diadema de hermosura a las reliquias de su pueblo.",
+      "bibleReference": "Isaías 28:5",
+      "answers": [
+        {
+          "text": "Corona de gloria y diadema de hermosura",
+          "isCorrect": true
+        },
+        {
+          "text": "Espada dura, grande y fuerte contra ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Turbión de granizo y torbellino trastornador",
+          "isCorrect": false
+        },
+        {
+          "text": "Pared abierta que se va a caer de súbito",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 7 del sacerdote y del profeta?",
+      "explanation": "El versículo dice que el sacerdote y el profeta erraron con la sidra, fueron trastornados del vino, erraron en la visión y tropezaron en el juicio.",
+      "bibleReference": "Isaías 28:7",
+      "answers": [
+        {
+          "text": "Que guardaron el camino y no se apartaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Que enseñaron ciencia y doctrina al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que callaron y no dijeron palabra alguna",
+          "isCorrect": false
+        },
+        {
+          "text": "Que erraron con la sidra y en la visión",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué expresiones repite el texto al hablar de cómo se enseña a este pueblo?",
+      "explanation": "El versículo dice: mandamiento tras mandamiento, mandato sobre mandato, renglón tras renglón, línea sobre línea, un poquito allí, otro poquito allá.",
+      "bibleReference": "Isaías 28:10",
+      "answers": [
+        {
+          "text": "Día tras día, y año sobre año, por siglos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandamiento tras mandamiento, línea sobre línea",
+          "isCorrect": true
+        },
+        {
+          "text": "Piedra sobre piedra, y muro sobre muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Voz tras voz, y cantar sobre cantar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les dijo él acerca del reposo, y cómo respondieron?",
+      "explanation": "El versículo dice: Este es el reposo: dad reposo al cansado; y éste es el refrigerio: mas no quisieron oir.",
+      "bibleReference": "Isaías 28:12",
+      "answers": [
+        {
+          "text": "Les habló de dar reposo al cansado, y no quisieron oir",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mandó pelear, y luego le obedecieron",
+          "isCorrect": false
+        },
+        {
+          "text": "Les prometió vino, y todos se alegraron",
+          "isCorrect": false
+        },
+        {
+          "text": "Les pidió silencio, y callaron delante de él",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué habían dicho los varones burladores, según el versículo 15?",
+      "explanation": "El versículo dice: Concierto tenemos hecho con la muerte, é hicimos acuerdo con la sepultura.",
+      "bibleReference": "Isaías 28:15",
+      "answers": [
+        {
+          "text": "Que harían pacto con el rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no hay Dios que more en Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tenían concierto hecho con la muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Que buscarían a Jehová de mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué funda el Señor Jehová en Sión, según el versículo 16?",
+      "explanation": "El versículo dice: He aquí que yo fundo en Sión una piedra, piedra de fortaleza, de esquina, de precio, de cimiento estable.",
+      "bibleReference": "Isaías 28:16",
+      "answers": [
+        {
+          "text": "Un altar de piedras de cal desmenuzadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una piedra de esquina, de cimiento estable",
+          "isCorrect": true
+        },
+        {
+          "text": "Una torre más alta que todas las casas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cama angosta y una cubierta estrecha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 20 de la cama y de la cubierta?",
+      "explanation": "El versículo dice que la cama es tan angosta que no basta, y la cubierta estrecha para recoger.",
+      "bibleReference": "Isaías 28:20",
+      "answers": [
+        {
+          "text": "Que la cama es ancha y la cubierta larga",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la cama está dentro de la ciudad fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la cubierta es de plata y de oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la cama es angosta y la cubierta estrecha",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se sacude la neguilla, según el versículo 27?",
+      "explanation": "El versículo dice que la neguilla no se trillará con trillo, sino que con un palo se sacude la neguilla, y el comino con una vara.",
+      "bibleReference": "Isaías 28:27",
+      "answers": [
+        {
+          "text": "Con un palo, y el comino con una vara",
+          "isCorrect": true
+        },
+        {
+          "text": "Con trillo y con rueda de carreta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los dientes del trillo, muchas veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Con pala y con criba, como el grano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿de quién salió esto, para hacer maravilloso el consejo?",
+      "explanation": "El versículo dice que también esto salió de Jehová de los ejércitos, para hacer maravilloso el consejo y engrandecer la sabiduría.",
+      "bibleReference": "Isaías 28:29",
+      "answers": [
+        {
+          "text": "Del labrador que ara y siembra su tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "De los varones burladores de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jehová de los ejércitos",
+          "isCorrect": true
+        },
+        {
+          "text": "De los sabios y prudentes de Ephraim",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

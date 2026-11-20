@@ -32,24 +32,24 @@
       ]
     },
     {
-      "text": "¿Hasta qué torres aparejaron el muro los sacerdotes?",
-      "explanation": "Aparejaron y levantaron sus puertas hasta la torre de Meah, y la aparejaron hasta la torre de Hananeel.",
-      "bibleReference": "Nehemías 3:1",
+      "text": "¿Hasta dónde restauró Nehemías hijo de Azbuc, príncipe de la mitad de la región de Beth-sur?",
+      "explanation": "El texto dice que Nehemías hijo de Azbuc restauró hasta delante de los sepulcros de David, hasta el estanque labrado y hasta la casa de los Valientes.",
+      "bibleReference": "Nehemías 3:16",
       "answers": [
         {
-          "text": "Hasta la torre de los Hornos",
-          "isCorrect": false
-        },
-        {
-          "text": "Hasta la grande torre que sobresale",
-          "isCorrect": false
-        },
-        {
-          "text": "Hasta la torre alta de la casa del rey",
-          "isCorrect": false
-        },
-        {
           "text": "Hasta la torre de Meah y la torre de Hananeel",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la puerta del Muladar y el estanque de Selah",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la torre alta que sale de la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta los sepulcros de David y la casa de los Valientes",
           "isCorrect": true
         }
       ]
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "text": "Jedaías hijo de Harumaph, ¿frente a qué restauró?",
+      "text": "¿Frente a qué lugar restauró Jedaías hijo de Harumaph?",
       "explanation": "El texto dice que Jedaías hijo de Harumaph restauró junto a ellos y frente a su casa.",
       "bibleReference": "Nehemías 3:10",
       "answers": [
@@ -202,7 +202,7 @@
           "isCorrect": true
         },
         {
-          "text": "En la casa de los Valientes",
+          "text": "En la huerta del rey",
           "isCorrect": false
         },
         {

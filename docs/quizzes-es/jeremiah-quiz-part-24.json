@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Jeremías 24: las dos cestas de higos delante del templo, los higos buenos y los higos malos.",
+  "slug": "jeremiah-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le mostró Jehová delante del templo?",
+      "explanation": "El primer verso dice que Jehová le mostró dos cestas de higos puestas delante del templo de Jehová.",
+      "bibleReference": "Jeremías 24:1",
+      "answers": [
+        {
+          "text": "Dos varas de almendro",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos ollas de barro",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos cestas de higos",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos panes de trigo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué rey de Judá había transportado ya Nabucodonosor a Babilonia?",
+      "explanation": "El verso dice que esto fue después de haber transportado Nabucodonosor a Jechônías hijo de Joacim, rey de Judá.",
+      "bibleReference": "Jeremías 24:1",
+      "answers": [
+        {
+          "text": "A Sedechîas rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A Josías hijo de Amón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joacim hijo de Josías",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jechônías hijo de Joacim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Además de los príncipes de Judá, ¿a quiénes más había llevado a Babilonia?",
+      "explanation": "El verso nombra a los príncipes de Judá y a los oficiales y herreros de Jerusalem, llevados a Babilonia.",
+      "bibleReference": "Jeremías 24:1",
+      "answers": [
+        {
+          "text": "A los pastores del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los oficiales y herreros",
+          "isCorrect": true
+        },
+        {
+          "text": "A los profetas y adivinos",
+          "isCorrect": false
+        },
+        {
+          "text": "A las mujeres y los niños",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo eran los higos de una de las dos cestas?",
+      "explanation": "El verso dice que la una cesta tenía higos muy buenos, como brevas.",
+      "bibleReference": "Jeremías 24:2",
+      "answers": [
+        {
+          "text": "Muy buenos, como brevas",
+          "isCorrect": true
+        },
+        {
+          "text": "Secos y muy pequeños",
+          "isCorrect": false
+        },
+        {
+          "text": "Verdes y todavía duros",
+          "isCorrect": false
+        },
+        {
+          "text": "Medianos y algo amargos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le preguntó Jehová a Jeremías delante de las cestas?",
+      "explanation": "El verso dice que Jehová le preguntó: ¿Qué ves tú, Jeremías?",
+      "bibleReference": "Jeremías 24:3",
+      "answers": [
+        {
+          "text": "¿Dónde estás, Jeremías?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿A quién enviaré, Jeremías?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Qué oyes tú, Jeremías?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Qué ves tú, Jeremías?",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes comparó Jehová con los higos buenos?",
+      "explanation": "El verso dice que como a estos buenos higos conocerá la transportación de Judá, a la cual echó de este lugar a tierra de Caldeos, para bien.",
+      "bibleReference": "Jeremías 24:5",
+      "answers": [
+        {
+          "text": "A los que quedaron en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sacerdotes del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los transportados a tierra de Caldeos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los que moran en la tierra de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría con ellos al poner sus ojos sobre ellos para bien?",
+      "explanation": "El verso dice que los volverá a esta tierra, y que los edificará y no los destruirá, los plantará y no los arrancará.",
+      "bibleReference": "Jeremías 24:6",
+      "answers": [
+        {
+          "text": "Volverlos a esta tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Dejarlos en Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviarlos a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Esparcirlos más lejos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que les daría, para que se volviesen a él de todo su corazón?",
+      "explanation": "El verso dice que les dará corazón para que le conozcan, que él es Jehová, y que le serán por pueblo y él les será por Dios.",
+      "bibleReference": "Jeremías 24:7",
+      "answers": [
+        {
+          "text": "Riquezas y honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Corazón para conocerle",
+          "isCorrect": true
+        },
+        {
+          "text": "Ley escrita en piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Reyes y príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes comparó Jehová con los higos malos, que de malos no se pueden comer?",
+      "explanation": "El verso dice que así dará a Sedechîas rey de Judá, y a sus príncipes, y al resto de Jerusalem que quedaron en esta tierra.",
+      "bibleReference": "Jeremías 24:8",
+      "answers": [
+        {
+          "text": "A Jechônías y a los cautivos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los herreros de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sedechîas y a sus príncipes",
+          "isCorrect": true
+        },
+        {
+          "text": "A los reyes de los Caldeos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que enviaría sobre ellos en el último verso?",
+      "explanation": "El verso dice que enviará sobre ellos espada, hambre y pestilencia, hasta que sean acabados de sobre la tierra.",
+      "bibleReference": "Jeremías 24:10",
+      "answers": [
+        {
+          "text": "Espada, hambre y pestilencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Granizo, fuego y tinieblas",
+          "isCorrect": false
+        },
+        {
+          "text": "Langostas, sequía y temblor",
+          "isCorrect": false
+        },
+        {
+          "text": "Lluvia, viento y granizo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

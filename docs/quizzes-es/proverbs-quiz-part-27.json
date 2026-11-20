@@ -1,0 +1,122 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 27",
+  "description": "Diez preguntas sobre Proverbios 27: el día de mañana, las heridas del que ama, el vecino cerca y el cuidado de los rebaños.",
+  "slug": "proverbs-quiz-part-27",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿por qué no debes jactarte del día de mañana?",
+      "explanation": "Proverbios 27:1 dice: No te jactes del día de mañana; porque no sabes qué dará de sí el día.",
+      "bibleReference": "Proverbios 27:1",
+      "answers": [
+        { "text": "Porque el día de mañana es malo", "isCorrect": false },
+        { "text": "Porque mañana vendrá tu aflicción", "isCorrect": false },
+        { "text": "Porque no sabes qué dará de sí el día", "isCorrect": true },
+        { "text": "Porque los días del hombre son pocos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿quién debe alabarte?",
+      "explanation": "Proverbios 27:2 dice: Alábete el extraño, y no tu boca; el ajeno, y no tus labios.",
+      "bibleReference": "Proverbios 27:2",
+      "answers": [
+        { "text": "El extraño, y no tu propia boca", "isCorrect": true },
+        { "text": "Tu boca, y no el ajeno", "isCorrect": false },
+        { "text": "Tu padre, y no el vecino", "isCorrect": false },
+        { "text": "El rey, y no sus príncipes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué es mejor que el amor oculto?",
+      "explanation": "Proverbios 27:5 dice: Mejor es reprensión manifiesta que amor oculto.",
+      "bibleReference": "Proverbios 27:5",
+      "answers": [
+        { "text": "El cordial consejo del amigo", "isCorrect": false },
+        { "text": "El vecino que está cerca", "isCorrect": false },
+        { "text": "Los besos del que aborrece", "isCorrect": false },
+        { "text": "La reprensión manifiesta", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a las heridas del que ama?",
+      "explanation": "Proverbios 27:6 dice: Fieles son las heridas del que ama; pero importunos los besos del que aborrece.",
+      "bibleReference": "Proverbios 27:6",
+      "answers": [
+        { "text": "Importunas", "isCorrect": false },
+        { "text": "Fieles", "isCorrect": true },
+        { "text": "Crueles", "isCorrect": false },
+        { "text": "Pesadas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué hace el alma harta con el panal de miel?",
+      "explanation": "Proverbios 27:7 dice: El alma harta huella el panal de miel; mas al alma hambrienta todo lo amargo es dulce.",
+      "bibleReference": "Proverbios 27:7",
+      "answers": [
+        { "text": "Lo come con alegría", "isCorrect": false },
+        { "text": "Lo huella", "isCorrect": true },
+        { "text": "Lo reparte al hambriento", "isCorrect": false },
+        { "text": "Lo vende al extraño", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué es mejor?",
+      "explanation": "Proverbios 27:10 termina diciendo: mejor es el vecino cerca que el hermano lejano.",
+      "bibleReference": "Proverbios 27:10",
+      "answers": [
+        { "text": "El hermano lejano que el vecino cerca", "isCorrect": false },
+        { "text": "La casa del hermano que la del amigo", "isCorrect": false },
+        { "text": "El vecino cerca que el hermano lejano", "isCorrect": true },
+        { "text": "El amigo nuevo que el amigo de tu padre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Si el hierro con hierro se aguza, ¿qué aguza el hombre, según el versículo 17?",
+      "explanation": "Proverbios 27:17 dice: Hierro con hierro se aguza; y el hombre aguza el rostro de su amigo.",
+      "bibleReference": "Proverbios 27:17",
+      "answers": [
+        { "text": "El rostro de su amigo", "isCorrect": true },
+        { "text": "La lengua del necio", "isCorrect": false },
+        { "text": "La ira de su hermano", "isCorrect": false },
+        { "text": "El filo de su espada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿qué nunca se hartan?",
+      "explanation": "Proverbios 27:20 dice: El sepulcro y la perdición nunca se hartan: así los ojos del hombre nunca están satisfechos.",
+      "bibleReference": "Proverbios 27:20",
+      "answers": [
+        { "text": "La piedra y la arena", "isCorrect": false },
+        { "text": "El crisol y la hornaza", "isCorrect": false },
+        { "text": "La grama y la hierba", "isCorrect": false },
+        { "text": "El sepulcro y la perdición", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Aunque majen al necio en un mortero, ¿qué no se le quitará?",
+      "explanation": "Proverbios 27:22 dice que aunque majes al necio en un mortero entre granos de trigo, no se quitará de él su necedad.",
+      "bibleReference": "Proverbios 27:22",
+      "answers": [
+        { "text": "Su necedad", "isCorrect": true },
+        { "text": "Su envidia", "isCorrect": false },
+        { "text": "Su pobreza", "isCorrect": false },
+        { "text": "Su furor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 26, ¿para qué son los corderos?",
+      "explanation": "Proverbios 27:26 dice: Los corderos para tus vestidos, y los cabritos para el precio del campo.",
+      "bibleReference": "Proverbios 27:26",
+      "answers": [
+        { "text": "Para el precio del campo", "isCorrect": false },
+        { "text": "Para sustento de tus criadas", "isCorrect": false },
+        { "text": "Para tus vestidos", "isCorrect": true },
+        { "text": "Para el sacrificio del altar", "isCorrect": false }
+      ]
+    }
+  ]
+}

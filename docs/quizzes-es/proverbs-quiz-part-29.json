@@ -1,0 +1,122 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre Proverbios 29: el pueblo que se alegra o gime, la lisonja que tiende red, la corrección del hijo y la confianza en Jehová.",
+  "slug": "proverbs-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué le sucederá al hombre que, reprendido, endurece la cerviz?",
+      "explanation": "Proverbios 29:1 dice: El hombre que reprendido endurece la cerviz, de repente será quebrantado; ni habrá para él medicina.",
+      "bibleReference": "Proverbios 29:1",
+      "answers": [
+        { "text": "Será levantado y honrado por el rey", "isCorrect": false },
+        { "text": "Hallará después mayor gracia", "isCorrect": false },
+        { "text": "Su trono será firme para siempre", "isCorrect": false },
+        { "text": "De repente será quebrantado, sin medicina", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué hace el pueblo cuando domina el impío?",
+      "explanation": "Proverbios 29:2 dice: Cuando los justos dominan, el pueblo se alegra: mas cuando domina el impío, el pueblo gime.",
+      "bibleReference": "Proverbios 29:2",
+      "answers": [
+        { "text": "Se alegra", "isCorrect": false },
+        { "text": "Canta", "isCorrect": false },
+        { "text": "Gime", "isCorrect": true },
+        { "text": "Se multiplica", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué perderá el que mantiene rameras?",
+      "explanation": "Proverbios 29:3 dice: El hombre que ama la sabiduría, alegra á su padre: mas el que mantiene rameras, perderá la hacienda.",
+      "bibleReference": "Proverbios 29:3",
+      "answers": [
+        { "text": "La corona", "isCorrect": false },
+        { "text": "La hacienda", "isCorrect": true },
+        { "text": "El trono", "isCorrect": false },
+        { "text": "La vara", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué tiende delante de los pasos de su prójimo el hombre que lo lisonjea?",
+      "explanation": "Proverbios 29:5 dice: El hombre que lisonjea á su prójimo, red tiende delante de sus pasos.",
+      "bibleReference": "Proverbios 29:5",
+      "answers": [
+        { "text": "Una red", "isCorrect": true },
+        { "text": "Una piedra", "isCorrect": false },
+        { "text": "Una vara", "isCorrect": false },
+        { "text": "Un muro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué hace el necio con todo su espíritu?",
+      "explanation": "Proverbios 29:11 dice: El necio da suelta á todo su espíritu; mas el sabio al fin le sosiega.",
+      "bibleReference": "Proverbios 29:11",
+      "answers": [
+        { "text": "Lo sosiega al fin", "isCorrect": false },
+        { "text": "Lo esconde del rey", "isCorrect": false },
+        { "text": "Le da suelta", "isCorrect": true },
+        { "text": "Lo entrega a su prójimo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Si la vara y la corrección dan sabiduría, ¿a quién avergonzará el muchacho consentido?",
+      "explanation": "Proverbios 29:15 dice: La vara y la corrección dan sabiduría: mas el muchacho consentido avergonzará á su madre.",
+      "bibleReference": "Proverbios 29:15",
+      "answers": [
+        { "text": "A su padre", "isCorrect": false },
+        { "text": "A su señor", "isCorrect": false },
+        { "text": "A sus hermanos", "isCorrect": false },
+        { "text": "A su madre", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿qué dará el hijo que es corregido?",
+      "explanation": "Proverbios 29:17 dice: Corrige á tu hijo, y te dará descanso, y dará deleite á tu alma.",
+      "bibleReference": "Proverbios 29:17",
+      "answers": [
+        { "text": "Descanso y deleite al alma", "isCorrect": true },
+        { "text": "Hacienda y muchas riquezas", "isCorrect": false },
+        { "text": "Honra entre los ancianos", "isCorrect": false },
+        { "text": "Sabiduría y mucha ciencia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 18, ¿qué le pasa al pueblo sin profecía?",
+      "explanation": "Proverbios 29:18 dice: Sin profecía el pueblo será disipado: mas el que guarda la ley, bienaventurado él.",
+      "bibleReference": "Proverbios 29:18",
+      "answers": [
+        { "text": "Es bienaventurado", "isCorrect": false },
+        { "text": "Será disipado", "isCorrect": true },
+        { "text": "Se alegra", "isCorrect": false },
+        { "text": "Se multiplica", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 23, ¿qué le hace al hombre su propia soberbia?",
+      "explanation": "Proverbios 29:23 dice: La soberbia del hombre le abate; pero al humilde de espíritu sustenta la honra.",
+      "bibleReference": "Proverbios 29:23",
+      "answers": [
+        { "text": "Le sustenta", "isCorrect": false },
+        { "text": "Le abate", "isCorrect": true },
+        { "text": "Le honra", "isCorrect": false },
+        { "text": "Le levanta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Si el temor del hombre pone lazo, ¿qué le sucederá al que confía en Jehová?",
+      "explanation": "Proverbios 29:25 dice: El temor del hombre pondrá lazo: mas el que confía en Jehová será levantado.",
+      "bibleReference": "Proverbios 29:25",
+      "answers": [
+        { "text": "Será quebrantado", "isCorrect": false },
+        { "text": "Caerá en el lazo", "isCorrect": false },
+        { "text": "Será levantado", "isCorrect": true },
+        { "text": "Buscará el favor del príncipe", "isCorrect": false }
+      ]
+    }
+  ]
+}

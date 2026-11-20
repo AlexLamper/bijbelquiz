@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Isaías 14: la parábola sobre el rey de Babilonia, la caída del Lucero, el Asirio quebrantado y la carga sobre Filistea.",
+  "slug": "isaiah-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿quiénes se unirán a la familia de Jacob?",
+      "explanation": "El texto dice que Jehová tendrá piedad de Jacob y que \"á ellos se unirán extranjeros, y allegaránse á la familia de Jacob\".",
+      "bibleReference": "Isaías 14:1",
+      "answers": [
+        {
+          "text": "Los mercaderes de Sidón",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de Zoán",
+          "isCorrect": false
+        },
+        {
+          "text": "Los adivinos de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Extranjeros",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre quién levantará el pueblo la parábola que dice: \"¡Cómo paró el exactor!\"?",
+      "explanation": "El texto dice: \"levantarás esta parábola sobre el rey de Babilonia, y dirás: ¡Cómo paró el exactor, cómo cesó la ciudad codiciosa del oro!\".",
+      "bibleReference": "Isaías 14:4",
+      "answers": [
+        {
+          "text": "Sobre el rey de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el rey de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre el rey de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre Faraón, rey de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 7 que hizo toda la tierra?",
+      "explanation": "El verso dice: \"Descansó, sosegó toda la tierra: cantaron alabanza\".",
+      "bibleReference": "Isaías 14:7",
+      "answers": [
+        {
+          "text": "Que tembló y se movió de su lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se llenó de llanto y de endechas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que descansó y sosegó, y cantaron alabanza",
+          "isCorrect": true
+        },
+        {
+          "text": "Que quedó hecha un desierto sin moradores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el verso 8, ¿qué dicen las hayas y los cedros del Líbano?",
+      "explanation": "El texto pone en su boca: \"Desde que tú pereciste, no ha subido cortador contra nosotros\".",
+      "bibleReference": "Isaías 14:8",
+      "answers": [
+        {
+          "text": "\"Desde que tú pereciste, no ha subido cortador contra nosotros\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Nuestras ramas serán dadas á las aves de los montes\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Seremos plantados de nuevo junto á las aguas\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Nuestro fruto será traído al monte de Sión\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 11, ¿qué será su cama y qué lo cubrirá?",
+      "explanation": "El texto dice: \"gusanos serán tu cama, y gusanos te cubrirán\".",
+      "bibleReference": "Isaías 14:11",
+      "answers": [
+        {
+          "text": "Sacos, y ceniza lo cubrirá",
+          "isCorrect": false
+        },
+        {
+          "text": "Piedras, y polvo lo cubrirá",
+          "isCorrect": false
+        },
+        {
+          "text": "Vestidos de honra, y una nube lo cubrirá",
+          "isCorrect": false
+        },
+        {
+          "text": "Gusanos, y gusanos lo cubrirán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué nombre se dirige el verso 12 al que cayó del cielo?",
+      "explanation": "El verso exclama: \"¡Cómo caiste del cielo, oh Lucero, hijo de la mañana!\".",
+      "bibleReference": "Isaías 14:12",
+      "answers": [
+        {
+          "text": "Lucero, hijo de la mañana",
+          "isCorrect": true
+        },
+        {
+          "text": "El Santo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaías, hijo de Amoz",
+          "isCorrect": false
+        },
+        {
+          "text": "Príncipe de las naciones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según los versos 13 y 14, ¿qué decía él en su corazón?",
+      "explanation": "El texto dice que decía: \"Subiré al cielo... Sobre las alturas de las nubes subiré, y seré semejante al Altísimo\".",
+      "bibleReference": "Isaías 14:13-14",
+      "answers": [
+        {
+          "text": "Que edificaría un altar en medio de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que repartiría la tierra entre sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que subiría al cielo y sería semejante al Altísimo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que nunca más saldría de su ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el verso 25, ¿a quién dice Jehová que quebrantará en su tierra?",
+      "explanation": "El texto dice: \"Que quebrantaré al Asirio en mi tierra, y en mis montes lo hollaré; y su yugo será apartado de ellos\".",
+      "bibleReference": "Isaías 14:25",
+      "answers": [
+        {
+          "text": "Al Caldeo",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Asirio",
+          "isCorrect": true
+        },
+        {
+          "text": "Al Medo",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Arabe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 28, ¿en qué año fue esta carga?",
+      "explanation": "El verso dice: \"En el año que murió el rey Achâz fué esta carga\".",
+      "bibleReference": "Isaías 14:28",
+      "answers": [
+        {
+          "text": "En el año que murió el rey Achâz",
+          "isCorrect": true
+        },
+        {
+          "text": "En el año que Sargón envió a Thartán",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año que cayó Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año que Tiro fue destruida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se responderá a los mensajeros de la gentilidad, según el último verso?",
+      "explanation": "El texto responde: \"Que Jehová fundó á Sión, y que á ella se acogerán los afligidos de su pueblo\".",
+      "bibleReference": "Isaías 14:32",
+      "answers": [
+        {
+          "text": "Que Filistea no será herida otra vez por el cortador",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el Arabe hincará su tienda en medio de la ciudad codiciosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el yugo del rey quedará sobre todos los pueblos de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová fundó a Sión y allí se acogerán los afligidos de su pueblo",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

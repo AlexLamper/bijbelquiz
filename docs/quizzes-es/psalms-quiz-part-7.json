@@ -55,7 +55,7 @@
       ]
     },
     {
-      "text": "En el versículo 5, ¿dónde pide que su honra sea puesta?",
+      "text": "Según el versículo 5, ¿dónde dice que sea puesta su honra?",
       "explanation": "Salmos 7:5 dice: Persiga el enemigo mi alma, y alcáncela; y pise en tierra mi vida, y mi honra ponga en el polvo.",
       "bibleReference": "Salmos 7:5",
       "answers": [
@@ -170,14 +170,10 @@
       ]
     },
     {
-      "text": "¿Qué tiene ya armado y preparado, si el malo no se convirtiere?",
-      "explanation": "Salmos 7:12 dice que, si no se convirtiere, él afilará su espada y que armado tiene ya su arco, y lo ha preparado.",
-      "bibleReference": "Salmos 7:12",
+      "text": "Según el versículo 12, ¿qué tiene ya armado y preparado, si el impío no se convirtiere?",
+      "explanation": "Salmos 7:12 dice que, si no se convirtiere, él afilará su espada, y que tiene ya armado su arco y lo ha preparado.",
+      "bibleReference": "Salmos 7:11-12",
       "answers": [
-        {
-          "text": "Su arco",
-          "isCorrect": true
-        },
         {
           "text": "Su lazo",
           "isCorrect": false
@@ -185,6 +181,10 @@
         {
           "text": "Su red",
           "isCorrect": false
+        },
+        {
+          "text": "Su arco",
+          "isCorrect": true
         },
         {
           "text": "Su vara",

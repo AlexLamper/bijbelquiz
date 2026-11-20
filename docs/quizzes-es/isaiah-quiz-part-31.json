@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 31",
+  "description": "Diez preguntas sobre Isaías 31: el ay sobre los que bajan a Egipto por ayuda, los egipcios que son hombres y no Dios, y Jehová amparando a Jerusalem.",
+  "slug": "isaiah-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Contra quiénes clama el ay del primer versículo?",
+      "explanation": "El versículo dice: ¡Ay de los que descienden a Egipto por ayuda, y confían en caballos!",
+      "bibleReference": "Isaías 31:1",
+      "answers": [
+        {
+          "text": "Contra los que confían en el Santo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra los que arrojan sus ídolos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra los príncipes de Sión que tienen pavor",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra los que descienden a Egipto por ayuda",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no hicieron aquellos que ponían su esperanza en carros y en caballeros?",
+      "explanation": "El versículo dice que no miraron al Santo de Israel, ni buscaron a Jehová.",
+      "bibleReference": "Isaías 31:1",
+      "answers": [
+        {
+          "text": "No salieron a la batalla contra Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "No miraron al Santo de Israel, ni buscaron a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "No pagaron el tributo que debían a Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "No escribieron la visión en una tabla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 2 que hará él, que también es sabio?",
+      "explanation": "El versículo dice que él también es sabio, y traerá el mal, y no retirará sus palabras; y se levantará contra la casa de los malignos.",
+      "bibleReference": "Isaías 31:2",
+      "answers": [
+        {
+          "text": "Traerá el mal y no retirará sus palabras",
+          "isCorrect": true
+        },
+        {
+          "text": "Retirará sus palabras y perdonará a todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Callará hasta que llegue el postrero día",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviará ayuda a los obradores de iniquidad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 3 de los egipcios y de sus caballos?",
+      "explanation": "El versículo dice que los egipcios hombres son, y no Dios; y sus caballos carne, y no espíritu.",
+      "bibleReference": "Isaías 31:3",
+      "answers": [
+        {
+          "text": "Que son dioses fuertes y espíritus poderosos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que son más fuertes que los de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "Que son hombres, y no Dios; carne, y no espíritu",
+          "isCorrect": true
+        },
+        {
+          "text": "Que son solamente carros y caballeros valientes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucederá cuando Jehová extienda su mano, según el versículo 3?",
+      "explanation": "El versículo dice que caerá el ayudador, y caerá el ayudado, y todos ellos desfallecerán a una.",
+      "bibleReference": "Isaías 31:3",
+      "answers": [
+        {
+          "text": "El ayudador quedará en pie, y caerá el otro",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente caerá el ayudado, y no el ayudador",
+          "isCorrect": false
+        },
+        {
+          "text": "Ninguno de ellos será tocado por su mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Caerá el ayudador y caerá el ayudado, a una",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara Jehová de los ejércitos cuando descenderá a pelear por el monte de Sión?",
+      "explanation": "El versículo dice: Como el león y el cachorro del león brama sobre su presa, y no teme por las voces de los pastores, así Jehová de los ejércitos descenderá a pelear por el monte de Sión.",
+      "bibleReference": "Isaías 31:4",
+      "answers": [
+        {
+          "text": "Con una cuadrilla de pastores que huye",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el león que brama sobre su presa",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un ejército de carros y caballeros",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el viento solano que todo lo seca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la manera en que Jehová amparará a Jerusalem?",
+      "explanation": "El versículo dice: Como las aves que vuelan, así amparará Jehová de los ejércitos a Jerusalem, amparando, librando, pasando y salvando.",
+      "bibleReference": "Isaías 31:5",
+      "answers": [
+        {
+          "text": "Como el león que se echa sobre su presa",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un muro de piedra en derredor",
+          "isCorrect": false
+        },
+        {
+          "text": "Como las aves que vuelan, amparando y librando",
+          "isCorrect": true
+        },
+        {
+          "text": "Como el sol que alumbra en medio del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué llama el texto en el versículo 6?",
+      "explanation": "El versículo dice: Convertíos a aquel contra quien los hijos de Israel profundamente se rebelaron.",
+      "bibleReference": "Isaías 31:6",
+      "answers": [
+        {
+          "text": "A convertirse a aquel contra quien se rebelaron",
+          "isCorrect": true
+        },
+        {
+          "text": "A confiar en caballos y en muchos carros",
+          "isCorrect": false
+        },
+        {
+          "text": "A descender a Egipto para buscar ayuda",
+          "isCorrect": false
+        },
+        {
+          "text": "A guardar silencio delante de los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué arrojará el hombre en aquel día, según el versículo 7?",
+      "explanation": "El versículo dice que en aquel día arrojará el hombre sus ídolos de plata y sus ídolos de oro, que hicieron sus manos pecadoras.",
+      "bibleReference": "Isaías 31:7",
+      "answers": [
+        {
+          "text": "Sus caballos y sus carros de batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "La bandera que tienen sus príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "El pan de congoja y el agua de angustia",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus ídolos de plata y sus ídolos de oro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué caerá el Assur, según el versículo 8?",
+      "explanation": "El versículo dice que entonces caerá el Assur, no por mano de varón, y le consumirá espada, no de hombre.",
+      "bibleReference": "Isaías 31:8",
+      "answers": [
+        {
+          "text": "Por una espada que no es de hombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Por la espada de los egipcios y de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mano de los hijos de Israel en batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la bandera que levantan sus príncipes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

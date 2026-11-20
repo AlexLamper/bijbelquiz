@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Isaías 9: el pueblo en tinieblas que vio gran luz, el niño nacido y el principado sobre su hombro, y la soberbia de Ephraim y Samaria.",
+  "slug": "isaiah-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dos tierras nombra el versículo 1?",
+      "explanation": "El texto habla de la tierra de Zabulón y de la tierra de Nephtalí, y después de Galilea de las gentes.",
+      "bibleReference": "Isaías 9:1",
+      "answers": [
+        {
+          "text": "Judá y Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Zabulón y Nephtalí",
+          "isCorrect": true
+        },
+        {
+          "text": "Ephraim y Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "Siria y Samaria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio el pueblo que andaba en tinieblas?",
+      "explanation": "El texto dice que el pueblo que andaba en tinieblas vió gran luz, y que sobre los que moraban en tierra de sombra de muerte resplandeció luz.",
+      "bibleReference": "Isaías 9:2",
+      "answers": [
+        {
+          "text": "El trono de David",
+          "isCorrect": false
+        },
+        {
+          "text": "La gloria del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Gran luz",
+          "isCorrect": true
+        },
+        {
+          "text": "Sombra de muerte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos alegrías compara el texto el gozo del pueblo delante de él?",
+      "explanation": "El texto dice que se alegrarán delante de él como se alegran en la siega, y como se gozan cuando reparten despojos.",
+      "bibleReference": "Isaías 9:3",
+      "answers": [
+        {
+          "text": "Con la del vino y los banquetes",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la de las bodas y los cantares",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la de la lluvia y el fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la de la siega y el repartir despojos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Como en el día de qué pueblo quebró el pesado yugo y la vara del hombro?",
+      "explanation": "El texto dice que quebró su pesado yugo, y la vara de su hombro, y el cetro de su exactor, como en el día de Madián.",
+      "bibleReference": "Isaías 9:4",
+      "answers": [
+        {
+          "text": "Como en el día de Madián",
+          "isCorrect": true
+        },
+        {
+          "text": "Como en el día de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Como en el día de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "Como en el día de Samaria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿dónde estará el principado del niño que nos es nacido?",
+      "explanation": "El texto dice: porque un niño nos es nacido, hijo nos es dado, y el principado sobre su hombro.",
+      "bibleReference": "Isaías 9:6",
+      "answers": [
+        {
+          "text": "En su mano derecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre su hombro",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los montes de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "En medio de Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál de estos nombres se da al niño en el versículo 6?",
+      "explanation": "El texto dice que se llamará su nombre Admirable, Consejero, Dios fuerte, Padre eterno, Príncipe de paz.",
+      "bibleReference": "Isaías 9:6",
+      "answers": [
+        {
+          "text": "Siervo de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Renuevo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Santo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Príncipe de paz",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué trono se establecen ese imperio y esa paz sin término?",
+      "explanation": "El texto dice que será sobre el trono de David y sobre su reino, disponiéndolo y confirmándolo en juicio y en justicia.",
+      "bibleReference": "Isaías 9:7",
+      "answers": [
+        {
+          "text": "Sobre el trono de David",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre el trono de Salomón",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el trono del rey de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el trono de Samaria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dicen los soberbios que pondrán en lugar de los cabrahigos cortados?",
+      "explanation": "El texto pone en su boca: los ladrillos cayeron, mas edificaremos de cantería; cortaron los cabrahigos, mas cedros pondremos en su lugar.",
+      "bibleReference": "Isaías 9:10",
+      "answers": [
+        {
+          "text": "Ladrillos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantería",
+          "isCorrect": false
+        },
+        {
+          "text": "Cedros",
+          "isCorrect": true
+        },
+        {
+          "text": "Vides escogidas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué cortará Jehová de Israel en un mismo día?",
+      "explanation": "El texto dice que Jehová cortará de Israel cabeza y cola, ramo y caña en un mismo día.",
+      "bibleReference": "Isaías 9:14",
+      "answers": [
+        {
+          "text": "La viña y el huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los montes y los collados",
+          "isCorrect": false
+        },
+        {
+          "text": "Los carros y los caballos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cabeza y cola, ramo y caña",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién llama el texto la cola?",
+      "explanation": "El texto dice que el viejo y venerable de rostro es la cabeza, y que el profeta que enseña mentira, éste es cola.",
+      "bibleReference": "Isaías 9:15",
+      "answers": [
+        {
+          "text": "Al viejo y venerable de rostro",
+          "isCorrect": false
+        },
+        {
+          "text": "Al profeta que enseña mentira",
+          "isCorrect": true
+        },
+        {
+          "text": "A los gobernadores del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los mancebos y a los huérfanos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

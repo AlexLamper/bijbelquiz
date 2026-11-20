@@ -1,0 +1,122 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 30",
+  "description": "Diez preguntas sobre Proverbios 30: las palabras de Agur, las dos peticiones, las cosas que nunca dicen Basta y los animales pequeños y sabios.",
+  "slug": "proverbs-quiz-part-30",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién son las palabras con que empieza este capítulo?",
+      "explanation": "Proverbios 30:1 dice: Palabras de Agur, hijo de Jachê: La profecía que dijo el varón á Ithiel, á Ithiel y á Ucal.",
+      "bibleReference": "Proverbios 30:1",
+      "answers": [
+        { "text": "De Agur, hijo de Jachê", "isCorrect": true },
+        { "text": "De Ithiel y de Ucal", "isCorrect": false },
+        { "text": "Del varón que subió al cielo", "isCorrect": false },
+        { "text": "De los hijos del águila", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué sucederá si alguien añade a las palabras de Dios?",
+      "explanation": "Proverbios 30:6 dice: No añadas á sus palabras, porque no te reprenda, y seas hallado mentiroso.",
+      "bibleReference": "Proverbios 30:6",
+      "answers": [
+        { "text": "Recibirá sabiduría y ciencia", "isCorrect": false },
+        { "text": "Será reprendido y hallado mentiroso", "isCorrect": true },
+        { "text": "Será escudo de los que esperan", "isCorrect": false },
+        { "text": "No alcanzará lo que pide", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "En el versículo 8, ¿qué pide el que habla acerca de la pobreza y las riquezas?",
+      "explanation": "Proverbios 30:8 dice: No me des pobreza ni riquezas; manténme del pan que he menester.",
+      "bibleReference": "Proverbios 30:8",
+      "answers": [
+        { "text": "Riquezas y honra en abundancia", "isCorrect": false },
+        { "text": "La sabiduría y la ciencia del Santo", "isCorrect": false },
+        { "text": "Ni pobreza ni riquezas, sino el pan necesario", "isCorrect": true },
+        { "text": "Larga vida y muchas generaciones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué teme hacer el que habla si llegara a ser pobre?",
+      "explanation": "Proverbios 30:9 dice que teme que, siendo pobre, hurte y blasfeme el nombre de su Dios.",
+      "bibleReference": "Proverbios 30:9",
+      "answers": [
+        { "text": "Hartarse y negar a Jehová", "isCorrect": false },
+        { "text": "Maldecir a su padre y a su madre", "isCorrect": false },
+        { "text": "Hurtar y blasfemar el nombre de su Dios", "isCorrect": true },
+        { "text": "Acusar al siervo ante su señor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿cómo se llaman las dos hijas de la sanguijuela?",
+      "explanation": "Proverbios 30:15 dice: La sanguijuela tiene dos hijas que se llaman, Trae, trae.",
+      "bibleReference": "Proverbios 30:15",
+      "answers": [
+        { "text": "Basta, basta", "isCorrect": false },
+        { "text": "Dame, dame", "isCorrect": false },
+        { "text": "Más, más", "isCorrect": false },
+        { "text": "Trae, trae", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuál de estas cosas nombra el versículo 16 entre las que nunca dicen Basta?",
+      "explanation": "Proverbios 30:16 nombra el sepulcro, la matriz estéril, la tierra no harta de aguas y el fuego.",
+      "bibleReference": "Proverbios 30:16",
+      "answers": [
+        { "text": "La tierra no harta de aguas", "isCorrect": true },
+        { "text": "El viento que gira de continuo", "isCorrect": false },
+        { "text": "El rastro del águila en el aire", "isCorrect": false },
+        { "text": "El león fuerte entre los animales", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué aves nombra el versículo 17 contra el ojo que escarnece a su padre?",
+      "explanation": "Proverbios 30:17 dice que los cuervos lo saquen de la arroyada, y tráguenlo los hijos del águila.",
+      "bibleReference": "Proverbios 30:17",
+      "answers": [
+        { "text": "Las langostas y las hormigas", "isCorrect": false },
+        { "text": "Los cuervos y los hijos del águila", "isCorrect": true },
+        { "text": "La araña y la culebra de la peña", "isCorrect": false },
+        { "text": "El lebrel y el macho cabrío", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Entre los rastros que el texto no alcanza a entender, ¿dónde está el de la culebra?",
+      "explanation": "Proverbios 30:19 nombra el rastro del águila en el aire y el rastro de la culebra sobre la peña.",
+      "bibleReference": "Proverbios 30:19",
+      "answers": [
+        { "text": "En el aire", "isCorrect": false },
+        { "text": "En medio de la mar", "isCorrect": false },
+        { "text": "En la arroyada", "isCorrect": false },
+        { "text": "Sobre la peña", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Entre las cuatro cosas más pequeñas y más sabias, ¿dónde ponen su casa los conejos?",
+      "explanation": "Proverbios 30:26 dice: Los conejos, pueblo nada esforzado, y ponen su casa en la piedra.",
+      "bibleReference": "Proverbios 30:26",
+      "answers": [
+        { "text": "En los palacios del rey", "isCorrect": false },
+        { "text": "En la arroyada", "isCorrect": false },
+        { "text": "En la piedra", "isCorrect": true },
+        { "text": "Debajo de la hierba", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué causará el que provoca la ira?",
+      "explanation": "Proverbios 30:33 dice: y el que provoca la ira, causará contienda.",
+      "bibleReference": "Proverbios 30:33",
+      "answers": [
+        { "text": "Contienda", "isCorrect": true },
+        { "text": "Manteca", "isCorrect": false },
+        { "text": "Sangre", "isCorrect": false },
+        { "text": "Honra", "isCorrect": false }
+      ]
+    }
+  ]
+}

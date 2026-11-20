@@ -1,0 +1,242 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Eclesiastés 11: el pan echado sobre las aguas, lo que el hombre no sabe, y la alegría de la mocedad.",
+  "slug": "ecclesiastes-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué manda el texto echar sobre las aguas, diciendo que después de muchos días lo hallarás?",
+      "explanation": "El primer versículo dice: echa tu pan sobre las aguas, que después de muchos días lo hallarás.",
+      "bibleReference": "Eclesiastés 11:1",
+      "answers": [
+        {
+          "text": "Tu pan",
+          "isCorrect": true
+        },
+        {
+          "text": "Tu vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu simiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu enojo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a cuántos debes repartir, porque no sabes el mal que vendrá sobre la tierra?",
+      "explanation": "El versículo dice: reparte a siete, y aun a ocho, porque no sabes el mal que vendrá sobre la tierra.",
+      "bibleReference": "Eclesiastés 11:2",
+      "answers": [
+        {
+          "text": "A dos, y aun a tres",
+          "isCorrect": false
+        },
+        {
+          "text": "A tres, y aun a cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "A siete, y aun a ocho",
+          "isCorrect": true
+        },
+        {
+          "text": "A diez, y aun a doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del árbol que cae al mediodía o al norte?",
+      "explanation": "El versículo dice que al lugar que el árbol cayere, allí quedará.",
+      "bibleReference": "Eclesiastés 11:3",
+      "answers": [
+        {
+          "text": "Que será llevado por el viento",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quedará donde cayere",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volverá a florecer luego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las nubes lo derramarán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que mira al viento y del que mira a las nubes?",
+      "explanation": "El que al viento mira, no sembrará; y el que mira a las nubes, no segará.",
+      "bibleReference": "Eclesiastés 11:4",
+      "answers": [
+        {
+          "text": "Que hallará su pan al fin",
+          "isCorrect": false
+        },
+        {
+          "text": "Que conocerá la obra de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Que repartirá a siete y a ocho",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no sembrará ni segará",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos cosas pone el texto como ejemplo de lo que el hombre no sabe?",
+      "explanation": "El versículo dice que no sabes cuál es el camino del viento, ni cómo se crían los huesos en el vientre de la mujer preñada.",
+      "bibleReference": "Eclesiastés 11:5",
+      "answers": [
+        {
+          "text": "El camino del viento y los huesos en el vientre",
+          "isCorrect": true
+        },
+        {
+          "text": "La lluvia de las nubes y la caída del árbol",
+          "isCorrect": false
+        },
+        {
+          "text": "El mal de la tierra y la luz del sol",
+          "isCorrect": false
+        },
+        {
+          "text": "Los días de tinieblas y la vanidad del necio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el texto hacer por la mañana y a la tarde?",
+      "explanation": "El versículo dice: por la mañana siembra tu simiente, y a la tarde no dejes reposar tu mano.",
+      "bibleReference": "Eclesiastés 11:6",
+      "answers": [
+        {
+          "text": "Mirar al viento y a las nubes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sembrar y no dejar reposar la mano",
+          "isCorrect": true
+        },
+        {
+          "text": "Echar el pan sobre las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Contar los días de las tinieblas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de la luz y de ver el sol?",
+      "explanation": "El versículo dice: suave ciertamente es la luz, y agradable a los ojos ver el sol.",
+      "bibleReference": "Eclesiastés 11:7",
+      "answers": [
+        {
+          "text": "Que son vanidad de vanidades",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fatigan los ojos del necio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la luz es suave y el sol agradable",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se oscurecerán tras la lluvia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si el hombre vive muchos años con alegría y luego recuerda los días de las tinieblas, ¿qué dirá?",
+      "explanation": "El texto dice que de todo lo que le habrá pasado dirá haber sido vanidad.",
+      "bibleReference": "Eclesiastés 11:8",
+      "answers": [
+        {
+          "text": "Que fue trabajo del necio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fue camino del viento",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fue obra de sus manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que todo lo que le pasó fue vanidad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "El texto dice al mancebo que se alegre en su mocedad, pero ¿qué debe saber?",
+      "explanation": "El versículo añade: mas sabe que sobre todas estas cosas te traerá Dios a juicio.",
+      "bibleReference": "Eclesiastés 11:9",
+      "answers": [
+        {
+          "text": "Que no hallará nunca su pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Dios lo traerá a juicio",
+          "isCorrect": true
+        },
+        {
+          "text": "Que las nubes traerán el mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no verá más la luz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el último versículo de la mocedad y de la juventud?",
+      "explanation": "El texto manda quitar el enojo del corazón y apartar el mal de la carne, porque la mocedad y la juventud son vanidad.",
+      "bibleReference": "Eclesiastés 11:10",
+      "answers": [
+        {
+          "text": "Que son días de tinieblas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que son suaves como la luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Que son vanidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Que son el camino del viento",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

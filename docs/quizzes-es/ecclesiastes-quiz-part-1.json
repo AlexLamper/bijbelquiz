@@ -1,0 +1,122 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Eclesiastés 1: vanidad de vanidades, el sol que vuelve a nacer, los ríos que van a la mar y la sabiduría que añade dolor.",
+  "slug": "ecclesiastes-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿de quién son estas palabras?",
+      "explanation": "Eclesiastés 1:1 dice: Palabras del Predicador, hijo de David, rey en Jerusalem.",
+      "bibleReference": "Eclesiastés 1:1",
+      "answers": [
+        { "text": "De los sabios que fueron antes en Jerusalem", "isCorrect": false },
+        { "text": "Del Predicador, hijo de David", "isCorrect": true },
+        { "text": "De los hijos de los hombres", "isCorrect": false },
+        { "text": "De los que serán después", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras resume el Predicador todas las cosas en el versículo 2?",
+      "explanation": "Eclesiastés 1:2 dice: Vanidad de vanidades, dijo el Predicador; vanidad de vanidades, todo vanidad.",
+      "bibleReference": "Eclesiastés 1:2",
+      "answers": [
+        { "text": "Vanidad de vanidades, todo vanidad", "isCorrect": true },
+        { "text": "Todo es don de Dios al hombre", "isCorrect": false },
+        { "text": "Bienaventurado el que teme a Dios", "isCorrect": false },
+        { "text": "Mejor es el fin que el principio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, mientras una generación va y otra viene, ¿qué permanece siempre?",
+      "explanation": "Eclesiastés 1:4 dice: Generación va, y generación viene: mas la tierra siempre permanece.",
+      "bibleReference": "Eclesiastés 1:4",
+      "answers": [
+        { "text": "El sol", "isCorrect": false },
+        { "text": "El viento", "isCorrect": false },
+        { "text": "La tierra", "isCorrect": true },
+        { "text": "La mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué hace el sol después de ponerse?",
+      "explanation": "Eclesiastés 1:5 dice: Y sale el sol, y pónese el sol, y con deseo vuelve á su lugar donde torna á nacer.",
+      "bibleReference": "Eclesiastés 1:5",
+      "answers": [
+        { "text": "Se queda en el mediodía", "isCorrect": false },
+        { "text": "Gira hacia el norte de continuo", "isCorrect": false },
+        { "text": "Corre hacia la mar sin hincharla", "isCorrect": false },
+        { "text": "Vuelve a su lugar donde torna a nacer", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Aunque todos los ríos van a la mar, ¿qué dice el versículo 7 de la mar?",
+      "explanation": "Eclesiastés 1:7 dice: Los ríos todos van á la mar, y la mar no se hinche; al lugar de donde los ríos vinieron, allí tornan para correr de nuevo.",
+      "bibleReference": "Eclesiastés 1:7",
+      "answers": [
+        { "text": "Que no se hinche", "isCorrect": true },
+        { "text": "Que se seca en el verano", "isCorrect": false },
+        { "text": "Que se vuelve amarga", "isCorrect": false },
+        { "text": "Que sube a los montes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué dice el texto acerca de lo nuevo debajo del sol?",
+      "explanation": "Eclesiastés 1:9 dice: ¿Qué es lo que fué? Lo mismo que será... y nada hay nuevo debajo del sol.",
+      "bibleReference": "Eclesiastés 1:9",
+      "answers": [
+        { "text": "Que cada día hay algo nuevo", "isCorrect": false },
+        { "text": "Que nada hay nuevo debajo del sol", "isCorrect": true },
+        { "text": "Que lo nuevo viene de los sabios", "isCorrect": false },
+        { "text": "Que todo se renueva con el sol", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿de qué no hay memoria?",
+      "explanation": "Eclesiastés 1:11 dice: No hay memoria de lo que precedió, ni tampoco de lo que sucederá habrá memoria en los que serán después.",
+      "bibleReference": "Eclesiastés 1:11",
+      "answers": [
+        { "text": "De lo que se hace debajo del sol", "isCorrect": false },
+        { "text": "De la mucha sabiduría y ciencia", "isCorrect": false },
+        { "text": "De los ríos y de la mar", "isCorrect": false },
+        { "text": "De lo que precedió", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿quién dio a los hijos de los hombres ese penoso trabajo en que se ocupan?",
+      "explanation": "Eclesiastés 1:13 dice que este penoso trabajo dió Dios á los hijos de los hombres, en que se ocupen.",
+      "bibleReference": "Eclesiastés 1:13",
+      "answers": [
+        { "text": "El Predicador", "isCorrect": false },
+        { "text": "Las generaciones pasadas", "isCorrect": false },
+        { "text": "Dios", "isCorrect": true },
+        { "text": "Los sabios de Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué se dice de lo torcido?",
+      "explanation": "Eclesiastés 1:15 dice: Lo torcido no se puede enderezar; y lo falto no puede contarse.",
+      "bibleReference": "Eclesiastés 1:15",
+      "answers": [
+        { "text": "Que Dios lo endereza en su tiempo", "isCorrect": false },
+        { "text": "Que el sabio lo endereza con ciencia", "isCorrect": false },
+        { "text": "Que no se puede enderezar", "isCorrect": true },
+        { "text": "Que se endereza con el tiempo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué añade quien añade ciencia?",
+      "explanation": "Eclesiastés 1:18 dice: Porque en la mucha sabiduría hay mucha molestia; y quien añade ciencia, añade dolor.",
+      "bibleReference": "Eclesiastés 1:18",
+      "answers": [
+        { "text": "Dolor", "isCorrect": true },
+        { "text": "Gozo", "isCorrect": false },
+        { "text": "Riquezas", "isCorrect": false },
+        { "text": "Descanso", "isCorrect": false }
+      ]
+    }
+  ]
+}

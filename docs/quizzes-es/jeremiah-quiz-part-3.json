@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Jeremías 3: el llamado a volverse, la rebelde Israel y la desleal Judá, y las promesas para los hijos rebeldes.",
+  "slug": "jeremiah-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "A pesar de la fornicación con muchos amigos, ¿qué dice Jehová al final del primer verso?",
+      "explanation": "El verso termina con las palabras: mas vuélvete a mí, dijo Jehová.",
+      "bibleReference": "Jeremías 3:1",
+      "answers": [
+        {
+          "text": "Vuélvete a mí",
+          "isCorrect": true
+        },
+        {
+          "text": "Apártate de mí",
+          "isCorrect": false
+        },
+        {
+          "text": "Calla delante de mí",
+          "isCorrect": false
+        },
+        {
+          "text": "Sal de esta tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué faltó, por esta causa, según el verso?",
+      "explanation": "El verso dice que por esta causa las aguas han sido detenidas y faltó la lluvia de la tarde.",
+      "bibleReference": "Jeremías 3:3",
+      "answers": [
+        {
+          "text": "El pan y el vino",
+          "isCorrect": false
+        },
+        {
+          "text": "La siega del verano",
+          "isCorrect": false
+        },
+        {
+          "text": "La lluvia de la tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "El rocío de los montes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice Jehová que el pueblo debía clamarle desde ahora?",
+      "explanation": "El verso pregunta: ¿no clamarás a mí, Padre mío, guiador de mi juventud?",
+      "bibleReference": "Jeremías 3:4",
+      "answers": [
+        {
+          "text": "Señor Jehová de los ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Padre mío, guiador de mi juventud",
+          "isCorrect": true
+        },
+        {
+          "text": "Rey eterno del monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Santo Dios de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En días de qué rey le habló Jehová sobre lo que había hecho la rebelde Israel?",
+      "explanation": "El verso dice: Y díjome Jehová en días del rey Josías: ¿Has visto lo que ha hecho la rebelde Israel?",
+      "bibleReference": "Jeremías 3:6",
+      "answers": [
+        {
+          "text": "Del rey Joacim",
+          "isCorrect": false
+        },
+        {
+          "text": "Del rey Sedechîas",
+          "isCorrect": false
+        },
+        {
+          "text": "Del rey Ezechîas",
+          "isCorrect": false
+        },
+        {
+          "text": "Del rey Josías",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dio Jehová a la rebelde Israel cuando la despidió?",
+      "explanation": "El verso dice que por todas estas causas la había despedido y le había dado la carta de su repudio.",
+      "bibleReference": "Jeremías 3:8",
+      "answers": [
+        {
+          "text": "Un yugo de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vara de almendro",
+          "isCorrect": false
+        },
+        {
+          "text": "La ley escrita en piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "La carta de su repudio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se tornó a Jehová su hermana Judá, según el verso?",
+      "explanation": "El verso dice que, con todo esto, la rebelde su hermana Judá no se tornó a él de todo su corazón, sino mentirosamente.",
+      "bibleReference": "Jeremías 3:10",
+      "answers": [
+        {
+          "text": "De todo su corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "Mentirosamente, no de todo su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Con ayuno y vestida de saco",
+          "isCorrect": false
+        },
+        {
+          "text": "Con holocaustos y sacrificios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos dice Jehová que tomará de una ciudad y cuántos de una familia?",
+      "explanation": "El verso dice: y os tomaré uno de una ciudad, y dos de una familia, y os introduciré en Sión.",
+      "bibleReference": "Jeremías 3:14",
+      "answers": [
+        {
+          "text": "Dos de una ciudad y uno de una familia",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez de cada ciudad de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Uno de una ciudad y dos de una familia",
+          "isCorrect": true
+        },
+        {
+          "text": "A todos los de cada familia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué dice Jehová que los pastores apacentarán al pueblo?",
+      "explanation": "El verso dice: Y os daré pastores según mi corazón, que os apacienten de ciencia y de inteligencia.",
+      "bibleReference": "Jeremías 3:15",
+      "answers": [
+        {
+          "text": "De ciencia y de inteligencia",
+          "isCorrect": true
+        },
+        {
+          "text": "De pan y de agua del pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "De leche y de miel de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "De juicio y de venganza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamarán a Jerusalem en aquel tiempo?",
+      "explanation": "El verso dice que en aquel tiempo llamarán a Jerusalem Trono de Jehová, y todas las gentes se congregarán a ella.",
+      "bibleReference": "Jeremías 3:17",
+      "answers": [
+        {
+          "text": "Valle de la Matanza",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudad fortalecida",
+          "isCorrect": false
+        },
+        {
+          "text": "Trono de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Monte de la Visión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promete Jehová a los hijos rebeldes que se conviertan?",
+      "explanation": "El verso dice: Convertíos, hijos rebeldes, sanaré vuestras rebeliones.",
+      "bibleReference": "Jeremías 3:22",
+      "answers": [
+        {
+          "text": "Que les dará la tierra del aquilón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les quitará el yugo de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les devolverá el arca del pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sanará sus rebeliones",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

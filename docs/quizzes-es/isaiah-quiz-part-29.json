@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 29",
+  "description": "Diez preguntas sobre Isaías 29: el ay sobre Ariel, el espíritu de sueño y el libro sellado, el pueblo que honra con los labios, y los sordos que oirán.",
+  "slug": "isaiah-quiz-part-29",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué ciudad dice el primer versículo que allí habitó David?",
+      "explanation": "El versículo dice: ¡Ay de Ariel, ciudad donde habitó David!",
+      "bibleReference": "Isaías 29:1",
+      "answers": [
+        {
+          "text": "De Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ariel",
+          "isCorrect": true
+        },
+        {
+          "text": "De Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "De Carmelo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hará contra aquella ciudad, según el versículo 3?",
+      "explanation": "El versículo dice: asentaré campo contra ti en derredor, y te combatiré con ingenios, y levantaré contra ti baluartes.",
+      "bibleReference": "Isaías 29:3",
+      "answers": [
+        {
+          "text": "La cercará de muros de plata y de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Le enviará mensajeros que hablen de paz",
+          "isCorrect": false
+        },
+        {
+          "text": "La dejará sola, sin tocarla ni herirla",
+          "isCorrect": false
+        },
+        {
+          "text": "Asentará campo contra ella y levantará baluartes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo será la voz de la ciudad humillada, según el versículo 4?",
+      "explanation": "El versículo dice que hablará desde la tierra, su habla saldrá del polvo, su voz será de la tierra como de pythón, y su habla susurrará desde el polvo.",
+      "bibleReference": "Isaías 29:4",
+      "answers": [
+        {
+          "text": "Como de pythón, susurrando desde el polvo",
+          "isCorrect": true
+        },
+        {
+          "text": "Como trompeta que suena en lo alto del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el bramido del león sobre su presa",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el cantar de los que se huelgan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué será visitada de parte de Jehová de los ejércitos?",
+      "explanation": "El versículo dice que será visitada con truenos, con terremotos y con gran ruido, con torbellino y tempestad, y llama de fuego consumidor.",
+      "bibleReference": "Isaías 29:6",
+      "answers": [
+        {
+          "text": "Con lluvia abundante y con mucho rocío",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una gran trompeta y con panderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con truenos, terremotos y llama de fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Con hambre y con sed, y con nada más",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 8 a la multitud que pelea contra el monte de Sión?",
+      "explanation": "El versículo dice que será como el que tiene hambre y sueña que come, mas cuando despierta su alma está vacía.",
+      "bibleReference": "Isaías 29:8",
+      "answers": [
+        {
+          "text": "Con el aceituno que ha sido sacudido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el hambriento que sueña que come",
+          "isCorrect": true
+        },
+        {
+          "text": "Con los redimidos que vuelven cantando",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las langostas que corren de parte a parte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué extendió Jehová sobre ellos, según el versículo 10?",
+      "explanation": "El versículo dice que Jehová extendió sobre ellos espíritu de sueño y cerró sus ojos; cubrió sus profetas y sus principales videntes.",
+      "bibleReference": "Isaías 29:10",
+      "answers": [
+        {
+          "text": "Espíritu de sueño, y cerró sus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "Espíritu de lo alto, para labrar el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cubierta de plata y de oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cordel de destrucción y de asolamiento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dirá el que no sabe leer cuando le den el libro?",
+      "explanation": "El versículo dice que si se diere el libro al que no sabe leer, diciéndole: Lee ahora esto, él dirá: No sé leer.",
+      "bibleReference": "Isaías 29:12",
+      "answers": [
+        {
+          "text": "No puedo, porque el libro está sellado",
+          "isCorrect": false
+        },
+        {
+          "text": "Lee tú ahora esto, porque yo no quiero",
+          "isCorrect": false
+        },
+        {
+          "text": "Ya he leído todo lo que está escrito",
+          "isCorrect": false
+        },
+        {
+          "text": "No sé leer",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el Señor acerca de cómo se le acerca este pueblo?",
+      "explanation": "El versículo dice que este pueblo se le acerca con su boca y con sus labios le honra, mas su corazón alejó de él.",
+      "bibleReference": "Isaías 29:13",
+      "answers": [
+        {
+          "text": "Con todo su corazón y con todas sus fuerzas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su boca y sus labios, mas no con el corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Con sacrificios de corderos y de cabritos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cantares, con panderos y con arpas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la subversión de los que se esconden de Jehová?",
+      "explanation": "El versículo dice que su subversión ciertamente será reputada como el barro del alfarero.",
+      "bibleReference": "Isaías 29:16",
+      "answers": [
+        {
+          "text": "Con la grosura de los riñones de carneros",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la rosa que florece en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el barro del alfarero",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el rocío de las hortalizas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el último versículo que aprenderán los errados de espíritu y los murmuradores?",
+      "explanation": "El versículo dice que los errados de espíritu aprenderán inteligencia, y los murmuradores aprenderán doctrina.",
+      "bibleReference": "Isaías 29:24",
+      "answers": [
+        {
+          "text": "Inteligencia los unos, y doctrina los otros",
+          "isCorrect": true
+        },
+        {
+          "text": "Serán consumidos y no aprenderán nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Aprenderán a leer el libro que está sellado",
+          "isCorrect": false
+        },
+        {
+          "text": "Aprenderán a hablar en lengua de tartamudos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

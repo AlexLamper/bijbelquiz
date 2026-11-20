@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Jeremías 4: el llamado a convertirse, el mal que viene del aquilón y el lamento del profeta sobre la tierra asolada.",
+  "slug": "jeremiah-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué manda Jehová a todo varón de Judá y de Jerusalem acerca de la tierra?",
+      "explanation": "El verso dice: Haced barbecho para vosotros, y no sembréis sobre espinas.",
+      "bibleReference": "Jeremías 4:3",
+      "answers": [
+        {
+          "text": "Sembrar también entre las espinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejar la tierra sin labrar siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacer barbecho y no sembrar sobre espinas",
+          "isCorrect": true
+        },
+        {
+          "text": "Plantar viñas sobre todos los collados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué debían quitar los varones de Judá y los moradores de Jerusalem?",
+      "explanation": "El verso dice: Circuncidaos a Jehová, y quitad los prepucios de vuestro corazón.",
+      "bibleReference": "Jeremías 4:4",
+      "answers": [
+        {
+          "text": "Los ídolos de sus casas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los altos de los collados",
+          "isCorrect": false
+        },
+        {
+          "text": "El yugo de sus cuellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los prepucios de su corazón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde hace venir Jehová el mal y el quebrantamiento grande?",
+      "explanation": "El verso dice que alcen bandera en Sión y se junten, porque él hace venir mal del aquilón, y quebrantamiento grande.",
+      "bibleReference": "Jeremías 4:6",
+      "answers": [
+        {
+          "text": "Del aquilón",
+          "isCorrect": true
+        },
+        {
+          "text": "Del mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Del desierto de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De las islas del mar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso, ¿qué sube de su guarida para poner la tierra en soledad?",
+      "explanation": "El verso dice: El león sube de su guarida, y el destruidor de gentes ha partido.",
+      "bibleReference": "Jeremías 4:7",
+      "answers": [
+        {
+          "text": "El lobo del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "El león",
+          "isCorrect": true
+        },
+        {
+          "text": "El tigre de las ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "La olla que hierve",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucederá en aquel día con el corazón del rey y de los príncipes?",
+      "explanation": "El verso dice que en aquel día desfallecerá el corazón del rey y el corazón de los príncipes, y los sacerdotes estarán atónitos.",
+      "bibleReference": "Jeremías 4:9",
+      "answers": [
+        {
+          "text": "Desfallecerá",
+          "isCorrect": true
+        },
+        {
+          "text": "Se endurecerá",
+          "isCorrect": false
+        },
+        {
+          "text": "Se alegrará",
+          "isCorrect": false
+        },
+        {
+          "text": "Se volverá a Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se dirá de este pueblo y de Jerusalem en aquel tiempo?",
+      "explanation": "El verso dice que se dirá: Viento seco de las alturas del desierto vino a la hija de mi pueblo, no para aventar ni para limpiar.",
+      "bibleReference": "Jeremías 4:11",
+      "answers": [
+        {
+          "text": "Que vino la lluvia temprana y tardía",
+          "isCorrect": false
+        },
+        {
+          "text": "Que vino el destruidor del mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "Que vino consolación desde Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Que vino viento seco de las alturas del desierto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso al que subirá, y cómo son sus caballos?",
+      "explanation": "El verso dice que subirá como nube, y su carro como torbellino, y que sus caballos son más ligeros que las águilas.",
+      "bibleReference": "Jeremías 4:13",
+      "answers": [
+        {
+          "text": "Como humo, y sus caballos como el viento",
+          "isCorrect": false
+        },
+        {
+          "text": "Como nube, y sus caballos más ligeros que las águilas",
+          "isCorrect": true
+        },
+        {
+          "text": "Como langostas, y sus caballos como leones",
+          "isCorrect": false
+        },
+        {
+          "text": "Como grama, y sus caballos como asnos monteses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice Jehová de su pueblo en cuanto a hacer mal y hacer bien?",
+      "explanation": "El verso dice que su pueblo es necio, sabios para mal hacer, y que para bien hacer no supieron.",
+      "bibleReference": "Jeremías 4:22",
+      "answers": [
+        {
+          "text": "Que hacen el bien y el mal por igual",
+          "isCorrect": false
+        },
+        {
+          "text": "Que buscan el bien y aborrecen el mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que son sabios para mal hacer y no supieron hacer bien",
+          "isCorrect": true
+        },
+        {
+          "text": "Que aprendieron a hacer bien y olvidaron el mal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio el profeta cuando miró los montes?",
+      "explanation": "El verso dice: Miré los montes, y he aquí que temblaban, y todos los collados fueron destruídos.",
+      "bibleReference": "Jeremías 4:24",
+      "answers": [
+        {
+          "text": "Que estaban llenos de gente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ardían con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se cubrían de viñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que temblaban",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso la voz de la hija de Sión?",
+      "explanation": "El verso dice que oyó voz como de mujer que está de parto, angustia como de primeriza: voz de la hija de Sión que lamenta.",
+      "bibleReference": "Jeremías 4:31",
+      "answers": [
+        {
+          "text": "Con la de una mujer que está de parto",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el bramido de los leones",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la voz de la trompeta de guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el quejido de la grulla del campo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Cantar de los Cantares Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Cantar de los Cantares 2: la rosa de Sarón, el invierno que ya pasó, y las zorras pequeñas que echan a perder las viñas.",
+  "slug": "song-of-solomon-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llama a sí misma la que habla al comienzo del capítulo?",
+      "explanation": "El primer versículo dice: Yo soy la rosa de Sarón, y el lirio de los valles.",
+      "bibleReference": "Cantar de los Cantares 2:1",
+      "answers": [
+        {
+          "text": "La tórtola que se oyó en el país",
+          "isCorrect": false
+        },
+        {
+          "text": "La higuera que ha echado sus higos",
+          "isCorrect": false
+        },
+        {
+          "text": "La rosa de Sarón y el lirio de los valles",
+          "isCorrect": true
+        },
+        {
+          "text": "La más hermosa entre todas las mujeres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara él a su amiga entre las doncellas?",
+      "explanation": "El versículo dice: Como el lirio entre las espinas, así es mi amiga entre las doncellas.",
+      "bibleReference": "Cantar de los Cantares 2:2",
+      "answers": [
+        {
+          "text": "Con la tórtola entre las aves",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la vid en cierne",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el gamo entre los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el lirio entre las espinas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara ella a su amado entre los mancebos?",
+      "explanation": "El versículo dice: Como el manzano entre los árboles silvestres, así es mi amado entre los mancebos.",
+      "bibleReference": "Cantar de los Cantares 2:3",
+      "answers": [
+        {
+          "text": "Con la higuera entre las vides",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el manzano entre los árboles silvestres",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el cabrito entre los ciervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la peña entre los parajes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Adónde dice ella que él la llevó?",
+      "explanation": "El versículo dice: Llevóme a la cámara del vino, y su bandera sobre mí fué amor.",
+      "bibleReference": "Cantar de los Cantares 2:4",
+      "answers": [
+        {
+          "text": "A la cámara del vino",
+          "isCorrect": true
+        },
+        {
+          "text": "A los montes de Bether",
+          "isCorrect": false
+        },
+        {
+          "text": "A los agujeros de la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "A la casa de su madre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué pide ella que la sustenten y la corroboren, porque está enferma de amor?",
+      "explanation": "El versículo dice: Sustentadme con frascos, corroboradme con manzanas; porque estoy enferma de amor.",
+      "bibleReference": "Cantar de los Cantares 2:5",
+      "answers": [
+        {
+          "text": "Con mirra y con nardo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con frascos y con manzanas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con higos y con uvas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con leche y con miel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por quiénes conjura ella a las doncellas de Jerusalem?",
+      "explanation": "El versículo dice que las conjura por las gamas y por las ciervas del campo, que no despierten al amor hasta que quiera.",
+      "bibleReference": "Cantar de los Cantares 2:7",
+      "answers": [
+        {
+          "text": "Por el vino y por el pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Por las flores y por las vides",
+          "isCorrect": false
+        },
+        {
+          "text": "Por las gamas y por las ciervas del campo",
+          "isCorrect": true
+        },
+        {
+          "text": "Por los montes y por los collados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según ella, ¿cómo viene su amado?",
+      "explanation": "El versículo dice: He aquí él viene saltando sobre los montes, brincando sobre los collados.",
+      "bibleReference": "Cantar de los Cantares 2:8",
+      "answers": [
+        {
+          "text": "Durmiendo entre los lirios",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamando desde la viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantando con las tórtolas",
+          "isCorrect": false
+        },
+        {
+          "text": "Saltando sobre los montes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Al pedirle que se levante y venga, ¿qué señales dice él que ya han llegado?",
+      "explanation": "El texto dice que ha pasado el invierno, la lluvia se fué, se han mostrado las flores y se ha oído la voz de la tórtola.",
+      "bibleReference": "Cantar de los Cantares 2:11-12",
+      "answers": [
+        {
+          "text": "Que el invierno pasó y las flores se mostraron",
+          "isCorrect": true
+        },
+        {
+          "text": "Que las sombras huyeron y apuntó el día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las zorras dejaron ya las viñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el amor despertó porque quiso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda cazar el texto, porque echan a perder las viñas?",
+      "explanation": "El versículo dice: Cazadnos las zorras, las zorras pequeñas, que echan a perder las viñas.",
+      "bibleReference": "Cantar de los Cantares 2:15",
+      "answers": [
+        {
+          "text": "Las tórtolas del país",
+          "isCorrect": false
+        },
+        {
+          "text": "Las palomas de la peña",
+          "isCorrect": false
+        },
+        {
+          "text": "Las zorras pequeñas",
+          "isCorrect": true
+        },
+        {
+          "text": "Los cabritos de los ciervos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según ella, ¿dónde apacienta su amado?",
+      "explanation": "El versículo dice: Mi amado es mío, y yo suya; él apacienta entre lirios.",
+      "bibleReference": "Cantar de los Cantares 2:16",
+      "answers": [
+        {
+          "text": "Sobre los collados",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre lirios",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto a las espinas",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cámara del vino",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

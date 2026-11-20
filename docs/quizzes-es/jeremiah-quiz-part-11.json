@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Jeremías 11: las palabras del pacto, la oliva verde a la que quebraron sus ramas y los varones de Anathoth.",
+  "slug": "jeremiah-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Sobre quién pronuncia maldición Jehová en el versículo 3?",
+      "explanation": "Jehová Dios de Israel dice: Maldito el varón que no obedeciere las palabras de este pacto.",
+      "bibleReference": "Jeremías 11:3",
+      "answers": [
+        {
+          "text": "El varón que no obedece las palabras de este pacto",
+          "isCorrect": true
+        },
+        {
+          "text": "El varón que ofrece sahumerios a los dioses ajenos",
+          "isCorrect": false
+        },
+        {
+          "text": "El varón que entra en la casa de luto de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "El varón que no sube a Jerusalem cada año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dice Jehová que sacó a los padres, y cómo llama a ese lugar?",
+      "explanation": "El versículo dice que mandó ese pacto a sus padres el día que los sacó de la tierra de Egipto, del horno de hierro.",
+      "bibleReference": "Jeremías 11:4",
+      "answers": [
+        {
+          "text": "De la tierra de Babilonia, el valle seco",
+          "isCorrect": false
+        },
+        {
+          "text": "Del desierto de Sin, el lugar de sed",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tierra de Egipto, el horno de hierro",
+          "isCorrect": true
+        },
+        {
+          "text": "De la tierra del aquilón, la casa de siervos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el profeta cuando Jehová habló del juramento hecho a los padres?",
+      "explanation": "El versículo termina diciendo: Y respondí, y dije: Amén, oh Jehová.",
+      "bibleReference": "Jeremías 11:5",
+      "answers": [
+        {
+          "text": "Heme aquí, envíame",
+          "isCorrect": false
+        },
+        {
+          "text": "No sé hablar, soy niño",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Hasta cuándo, Jehová?",
+          "isCorrect": false
+        },
+        {
+          "text": "Amén, oh Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿según qué número eran los dioses de Judá?",
+      "explanation": "El versículo dice que según el número de sus ciudades fueron sus dioses, y según el número de sus calles pusieron los altares de ignominia.",
+      "bibleReference": "Jeremías 11:13",
+      "answers": [
+        {
+          "text": "Según el número de sus tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Según el número de sus ciudades",
+          "isCorrect": true
+        },
+        {
+          "text": "Según el número de sus reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Según el número de sus sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prohíbe Jehová al profeta en el versículo 14?",
+      "explanation": "Jehová le dice que no ore por este pueblo ni levante por ellos clamor ni oración, porque no los oirá cuando clamen en su aflicción.",
+      "bibleReference": "Jeremías 11:14",
+      "answers": [
+        {
+          "text": "Tomar mujer ni tener hijos en este lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Entrar en la casa del alfarero de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Orar por este pueblo o levantar clamor por ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sentarse en compañía de los burladores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué nombre la llamó Jehová, según el versículo 16?",
+      "explanation": "El versículo dice que Jehová llamó su nombre oliva verde, hermosa en fruto y en parecer, y que quebraron sus ramas.",
+      "bibleReference": "Jeremías 11:16",
+      "answers": [
+        {
+          "text": "Oliva verde, hermosa en fruto y en parecer",
+          "isCorrect": true
+        },
+        {
+          "text": "Vid escogida, plantada en tierra buena",
+          "isCorrect": false
+        },
+        {
+          "text": "Higuera cargada de frutos tempranos",
+          "isCorrect": false
+        },
+        {
+          "text": "Palma hermosa junto a las aguas vivas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara el que habla en el versículo 19?",
+      "explanation": "El versículo dice: Y yo como cordero inocente que llevan a degollar, pues no entendía que maquinaban contra mí designios.",
+      "bibleReference": "Jeremías 11:19",
+      "answers": [
+        {
+          "text": "Con un pájaro escapado del lazo del cazador",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un cordero inocente que llevan a degollar",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un vaso de barro en manos del alfarero",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un muro de bronce delante del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿qué sonda Jehová de los ejércitos?",
+      "explanation": "El versículo se dirige a Jehová de los ejércitos, que juzga justicia y que sonda los riñones y el corazón.",
+      "bibleReference": "Jeremías 11:20",
+      "answers": [
+        {
+          "text": "Los cielos y la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los caminos y las sendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las obras y las palabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Los riñones y el corazón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué varones habla Jehová en el versículo 21, los que buscaban su alma?",
+      "explanation": "El versículo dice que Jehová habló de los varones de Anathoth, que buscaban su alma y le decían que no profetizase en nombre de Jehová.",
+      "bibleReference": "Jeremías 11:21",
+      "answers": [
+        {
+          "text": "Los varones de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Los varones de Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Los varones de Siloh",
+          "isCorrect": false
+        },
+        {
+          "text": "Los varones de Anathoth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 22, ¿cómo morirán los mancebos y cómo los hijos e hijas?",
+      "explanation": "Jehová de los ejércitos dice que los mancebos morirán a cuchillo, y sus hijos y sus hijas morirán de hambre.",
+      "bibleReference": "Jeremías 11:22",
+      "answers": [
+        {
+          "text": "Los mancebos de hambre y los hijos de peste",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mancebos en cautividad y los hijos a cuchillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mancebos a cuchillo y los hijos de hambre",
+          "isCorrect": true
+        },
+        {
+          "text": "Los mancebos de sed y los hijos devorados",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

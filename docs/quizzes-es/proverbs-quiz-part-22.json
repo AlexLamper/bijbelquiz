@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre Proverbios 22: la buena fama, el niño instruido en su carrera, el ojo misericordioso y el hombre solícito en su obra.",
+  "slug": "proverbs-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué es de más estima que las muchas riquezas?",
+      "explanation": "Proverbios 22:1 dice: DE más estima es la buena fama que las muchas riquezas; y la buena gracia más que la plata y el oro.",
+      "bibleReference": "Proverbios 22:1",
+      "answers": [
+        {
+          "text": "El pan dado al indigente",
+          "isCorrect": false
+        },
+        {
+          "text": "La vara de la corrección",
+          "isCorrect": false
+        },
+        {
+          "text": "La limpieza de corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "La buena fama",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué dice del rico y del pobre que se encontraron?",
+      "explanation": "Proverbios 22:2 dice: El rico y el pobre se encontraron: á todos ellos hizo Jehová.",
+      "bibleReference": "Proverbios 22:2",
+      "answers": [
+        {
+          "text": "Que nunca se encontrarán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ambos serán humillados",
+          "isCorrect": false
+        },
+        {
+          "text": "A todos ellos los hizo Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Que ninguno de los dos verá el mal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué sucede con el niño instruido en su carrera?",
+      "explanation": "Proverbios 22:6 dice: Instruye al niño en su carrera: aun cuando fuere viejo no se apartará de ella.",
+      "bibleReference": "Proverbios 22:6",
+      "answers": [
+        {
+          "text": "Aun cuando sea viejo no se apartará de ella",
+          "isCorrect": true
+        },
+        {
+          "text": "Será siervo del que le enseñó la carrera",
+          "isCorrect": false
+        },
+        {
+          "text": "Recibirá riquezas, honra y vida de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Estará delante de los reyes de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿de quién es siervo el que toma prestado?",
+      "explanation": "Proverbios 22:7 dice: El rico se enseñoreará de los pobres; y el que toma prestado, siervo es del que empresta.",
+      "bibleReference": "Proverbios 22:7",
+      "answers": [
+        {
+          "text": "Del que oprime al pobre",
+          "isCorrect": false
+        },
+        {
+          "text": "Del que empresta",
+          "isCorrect": true
+        },
+        {
+          "text": "Del que da al rico",
+          "isCorrect": false
+        },
+        {
+          "text": "Del que siembra iniquidad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué será bendito el ojo misericordioso?",
+      "explanation": "Proverbios 22:9 dice: El ojo misericordioso será bendito, porque dió de su pan al indigente.",
+      "bibleReference": "Proverbios 22:9",
+      "answers": [
+        {
+          "text": "Porque guardó el término antiguo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque echó fuera al escarnecedor",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque dio de su pan al indigente",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque instruyó al niño en su carrera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué dice el perezoso?",
+      "explanation": "Proverbios 22:13 dice: Dice el perezoso: El león está fuera; en mitad de las calles seré muerto.",
+      "bibleReference": "Proverbios 22:13",
+      "answers": [
+        {
+          "text": "Que no hay pan en su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la vara es demasiado dura",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el rico lo oprime en la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el león está fuera",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hará alejar del muchacho la necedad ligada en su corazón?",
+      "explanation": "Proverbios 22:15 dice: La necedad está ligada en el corazón del muchacho; mas la vara de la corrección la hará alejar de él.",
+      "bibleReference": "Proverbios 22:15",
+      "answers": [
+        {
+          "text": "La buena gracia de sus labios",
+          "isCorrect": false
+        },
+        {
+          "text": "La vara de la corrección",
+          "isCorrect": true
+        },
+        {
+          "text": "El temor del león en las calles",
+          "isCorrect": false
+        },
+        {
+          "text": "El término antiguo de sus padres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué palabras se manda oír al inclinar el oído?",
+      "explanation": "Proverbios 22:17 dice: Inclina tu oído, y oye las palabras de los sabios, y pon tu corazón á mi sabiduría.",
+      "bibleReference": "Proverbios 22:17",
+      "answers": [
+        {
+          "text": "Las palabras de los sabios",
+          "isCorrect": true
+        },
+        {
+          "text": "Las razones de los escarnecedores",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dichos de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ruegos de los pobres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué no debes acompañarte con el hombre de enojos?",
+      "explanation": "Proverbios 22:24-25 dice: No te entrometas con el iracundo, ni te acompañes con el hombre de enojos; porque no aprendas sus maneras, y tomes lazo para tu alma.",
+      "bibleReference": "Proverbios 22:24-25",
+      "answers": [
+        {
+          "text": "Para que no te quite tu cama",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que no traspases el término antiguo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que no seas siervo del que empresta",
+          "isCorrect": false
+        },
+        {
+          "text": "Para no aprender sus maneras",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿delante de quién estará el hombre solícito en su obra?",
+      "explanation": "Proverbios 22:29 dice: ¿ Has visto hombre solícito en su obra? delante de los reyes estará; no estará delante de los de baja suerte.",
+      "bibleReference": "Proverbios 22:29",
+      "answers": [
+        {
+          "text": "Delante de los de baja suerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante de los que fían por deudas",
+          "isCorrect": false
+        },
+        {
+          "text": "Delante de los reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "Delante de los sabios de corazón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

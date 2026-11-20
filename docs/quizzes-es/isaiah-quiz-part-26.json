@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Isaías 26: el cantar en tierra de Judá, la paz del pensamiento que persevera en Dios, y el aviso de esconderse mientras pasa la ira.",
+  "slug": "isaiah-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué cantarán en aquel día en tierra de Judá?",
+      "explanation": "El versículo dice: Fuerte ciudad tenemos: salud puso Dios por muros y antemuro.",
+      "bibleReference": "Isaías 26:1",
+      "answers": [
+        {
+          "text": "Que tienen ciudad fuerte, y Dios por muros",
+          "isCorrect": true
+        },
+        {
+          "text": "Que las puertas quedarán cerradas por siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no hay quien defienda ya su ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Moab ha sido trillado en el muladar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién entrará cuando se abran las puertas, según el versículo 2?",
+      "explanation": "El versículo dice: Abrid las puertas, y entrará la gente justa, guardadora de verdades.",
+      "bibleReference": "Isaías 26:2",
+      "answers": [
+        {
+          "text": "Los príncipes que vienen de las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los que suben de la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "La gente justa, guardadora de verdades",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente los sacerdotes y los videntes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién guardará Dios en completa paz, según el versículo 3?",
+      "explanation": "El versículo dice que guardará en completa paz a aquel cuyo pensamiento persevera en él, porque en él se ha confiado.",
+      "bibleReference": "Isaías 26:3",
+      "answers": [
+        {
+          "text": "Al que mora en lugar sublime y ensalzado",
+          "isCorrect": false
+        },
+        {
+          "text": "A aquel cuyo pensamiento persevera en él",
+          "isCorrect": true
+        },
+        {
+          "text": "Al que ofrece muchas víctimas cada año",
+          "isCorrect": false
+        },
+        {
+          "text": "Al que vence a sus enemigos en batalla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes hollarán la ciudad ensalzada que fue derribada hasta el polvo?",
+      "explanation": "El texto dice que Jehová humilló la ciudad ensalzada hasta el polvo, y que la hollará el pie del afligido, los pasos de los menesterosos.",
+      "bibleReference": "Isaías 26:5-6",
+      "answers": [
+        {
+          "text": "Los carros y los caballos de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Las gentes que fueron esparcidas por la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mismos que moraban en lugar sublime",
+          "isCorrect": false
+        },
+        {
+          "text": "Los pies del afligido y los menesterosos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el que habla acerca de su alma en la noche?",
+      "explanation": "El versículo dice: Con mi alma te he deseado en la noche; y madrugaré a buscarte mientras me durare el espíritu.",
+      "bibleReference": "Isaías 26:9",
+      "answers": [
+        {
+          "text": "Que ha deseado a Dios y madrugará a buscarle",
+          "isCorrect": true
+        },
+        {
+          "text": "Que duerme tranquilo y no piensa en nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que clama contra sus enemigos toda la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que calla, porque no hay quien le responda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué aprenden los moradores del mundo cuando hay juicios de Jehová en la tierra?",
+      "explanation": "El versículo dice que luego que hay juicios de Jehová en la tierra, los moradores del mundo aprenden justicia.",
+      "bibleReference": "Isaías 26:9",
+      "answers": [
+        {
+          "text": "Temor de los reyes de las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "Cantares para el monte santo",
+          "isCorrect": false
+        },
+        {
+          "text": "La sabiduría de los sabios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 10 del impío que alcanza piedad?",
+      "explanation": "El versículo dice que el impío no aprenderá justicia; en tierra de rectitud hará iniquidad y no mirará a la majestad de Jehová.",
+      "bibleReference": "Isaías 26:10",
+      "answers": [
+        {
+          "text": "Que se volverá y andará en justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que huirá de la tierra de rectitud",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será consumido aquel mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no aprenderá justicia, y hará iniquidad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Aunque otros señores se hayan enseñoreado de ellos, ¿de qué se acordarán solamente?",
+      "explanation": "El versículo dice: señores se han enseñoreado de nosotros fuera de ti; mas en ti solamente nos acordaremos de tu nombre.",
+      "bibleReference": "Isaías 26:13",
+      "answers": [
+        {
+          "text": "De los señores que se enseñorearon de ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los muertos que ya no resucitarán",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente del nombre de Jehová su Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "De todos los términos de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se comparan los que hablan delante de Jehová en los versículos 17 y 18?",
+      "explanation": "El texto dice: como la preñada cuando se acerca el parto gime, y da gritos con sus dolores, así hemos sido delante de ti.",
+      "bibleReference": "Isaías 26:17-18",
+      "answers": [
+        {
+          "text": "Con la preñada que gime cuando llega el parto",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el león que brama sobre su propia presa",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el aceituno que ya ha sido sacudido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un vaso de alfarero hecho menuzos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el texto al pueblo mientras pasa la ira?",
+      "explanation": "El versículo dice: éntrate en tus aposentos, cierra tras ti tus puertas; escóndete un poquito, por un momento, en tanto que pasa la ira.",
+      "bibleReference": "Isaías 26:20",
+      "answers": [
+        {
+          "text": "Salir a pelear contra el morador de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Subir al monte y cantar con alegría",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrir de par en par las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Entrar en sus aposentos y cerrar sus puertas",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

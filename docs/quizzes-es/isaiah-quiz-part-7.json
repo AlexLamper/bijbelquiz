@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Isaías 7: Rezín y Peca contra Jerusalem, el encuentro con Achâz, la señal de Emmanuel y la mosca de Egipto con la abeja de Asiria.",
+  "slug": "isaiah-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quiénes subieron a Jerusalem para combatirla en los días de Achâz?",
+      "explanation": "El texto dice que Rezín rey de Siria, y Peca hijo de Remalías, rey de Israel, subieron a Jerusalem para combatirla, mas no la pudieron tomar.",
+      "bibleReference": "Isaías 7:1",
+      "answers": [
+        {
+          "text": "Rezín rey de Siria y Peca hijo de Remalías",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey de Asiria y los Filisteos de poniente",
+          "isCorrect": false
+        },
+        {
+          "text": "Sear-jasub y el hijo de Tabeel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Siros de oriente y los de Samaria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara el estremecimiento del corazón de la casa de David?",
+      "explanation": "El texto dice que se le estremeció el corazón, y el corazón de su pueblo, como se estremecen los árboles del monte a causa del viento.",
+      "bibleReference": "Isaías 7:2",
+      "answers": [
+        {
+          "text": "Con el bramido de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los árboles del monte",
+          "isCorrect": true
+        },
+        {
+          "text": "Con dos tizones que humean",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una caña quebrada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién mandó Jehová a Isaías llevar consigo al encuentro de Achâz?",
+      "explanation": "El texto dice: sal ahora al encuentro de Achâz, tú, y Sear-jasub tu hijo.",
+      "bibleReference": "Isaías 7:3",
+      "answers": [
+        {
+          "text": "A Urías el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "A Zacarías hijo de Jeberechîas",
+          "isCorrect": false
+        },
+        {
+          "text": "A Peca hijo de Remalías",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sear-jasub su hijo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a Rezín y al hijo de Remalías?",
+      "explanation": "El texto dice: no temas, ni se enternezca tu corazón a causa de estos dos cabos de tizón que humean.",
+      "bibleReference": "Isaías 7:4",
+      "answers": [
+        {
+          "text": "Dos leones rugientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos ríos impetuosos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos cabos de tizón que humean",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos cabezas de Damasco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién querían poner por rey en medio de Judá?",
+      "explanation": "El maligno consejo decía: vamos contra Judá, y la partiremos entre nosotros, y pondremos en medio de ella por rey al hijo de Tabeel.",
+      "bibleReference": "Isaías 7:6",
+      "answers": [
+        {
+          "text": "Al hijo de Tabeel",
+          "isCorrect": true
+        },
+        {
+          "text": "Al hijo de Remalías",
+          "isCorrect": false
+        },
+        {
+          "text": "Al hijo de Amoz",
+          "isCorrect": false
+        },
+        {
+          "text": "Al hijo de Jotham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dentro de cuántos años será quebrantado Ephraim hasta dejar de ser pueblo?",
+      "explanation": "El texto dice que dentro de sesenta y cinco años Ephraim será quebrantado hasta dejar de ser pueblo.",
+      "bibleReference": "Isaías 7:8",
+      "answers": [
+        {
+          "text": "Dentro de cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro de cincuenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro de sesenta y cinco años",
+          "isCorrect": true
+        },
+        {
+          "text": "Dentro de setenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Achâz cuando se le dijo que pidiera una señal?",
+      "explanation": "El texto dice que Achâz respondió: no pediré, y no tentaré a Jehová.",
+      "bibleReference": "Isaías 7:12",
+      "answers": [
+        {
+          "text": "Pidió una señal en lo profundo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió una señal arriba en lo alto",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardó silencio delante del profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Dijo que no pediría ni tentaría a Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre llevará el hijo que, según la señal, parirá la virgen?",
+      "explanation": "El texto dice: he aquí que la virgen concebirá, y parirá hijo, y llamará su nombre Emmanuel.",
+      "bibleReference": "Isaías 7:14",
+      "answers": [
+        {
+          "text": "Rezín",
+          "isCorrect": false
+        },
+        {
+          "text": "Emmanuel",
+          "isCorrect": true
+        },
+        {
+          "text": "Sear-jasub",
+          "isCorrect": false
+        },
+        {
+          "text": "Tabeel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué comerá ese niño, para que sepa desechar lo malo y escoger lo bueno?",
+      "explanation": "El texto dice que comerá manteca y miel, para que sepa desechar lo malo y escoger lo bueno.",
+      "bibleReference": "Isaías 7:15",
+      "answers": [
+        {
+          "text": "Pan y agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Uvas y granadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Manteca y miel",
+          "isCorrect": true
+        },
+        {
+          "text": "Leche de cabras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué dos animales silbará Jehová en aquel día?",
+      "explanation": "El texto dice que silbará a la mosca que está en el fin de los ríos de Egipto, y a la abeja que está en la tierra de Asiria.",
+      "bibleReference": "Isaías 7:18",
+      "answers": [
+        {
+          "text": "A la mosca y a la abeja",
+          "isCorrect": true
+        },
+        {
+          "text": "Al león y al oso",
+          "isCorrect": false
+        },
+        {
+          "text": "Al gamo y al cervatillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Al buey y al asno",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

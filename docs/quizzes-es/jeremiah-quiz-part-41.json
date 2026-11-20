@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 41",
+  "description": "Diez preguntas sobre Jeremías 41: Ismael que mató a Gedalías en Mizpa, el aljibe lleno de muertos y la persecución de Johanán.",
+  "slug": "jeremiah-quiz-part-41",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué mes vino Ismael hijo de Nethanías a Gedalías en Mizpa?",
+      "explanation": "El primer versículo dice que aconteció en el mes séptimo.",
+      "bibleReference": "Jeremías 41:1",
+      "answers": [
+        {
+          "text": "En el mes noveno",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes séptimo",
+          "isCorrect": true
+        },
+        {
+          "text": "En el mes cuarto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes décimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres vinieron con Ismael a Mizpa?",
+      "explanation": "El versículo dice que vino con algunos príncipes del rey y diez hombres con él.",
+      "bibleReference": "Jeremías 41:1",
+      "answers": [
+        {
+          "text": "Ocho hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Ochenta hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron Ismael y los diez hombres a Gedalías?",
+      "explanation": "El versículo dice que se levantaron e hirieron a cuchillo a Gedalías hijo de Ahicam, hijo de Saphán.",
+      "bibleReference": "Jeremías 41:2",
+      "answers": [
+        {
+          "text": "Lo llevaron cautivo a Ammón",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo echaron vivo en un aljibe",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo entregaron a los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo hirieron a cuchillo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde venían los ochenta hombres que traían ofrenda y perfume?",
+      "explanation": "El versículo dice que venían unos hombres de Sichêm y de Silo y de Samaria, ochenta hombres.",
+      "bibleReference": "Jeremías 41:5",
+      "answers": [
+        {
+          "text": "De Sichêm, de Silo y de Samaria",
+          "isCorrect": true
+        },
+        {
+          "text": "De Mizpa, de Ramá y de Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "De Bethlehem, de Anathoth y de Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "De Egipto, de Moab y de Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo venían aquellos hombres?",
+      "explanation": "El versículo dice que venían raída la barba, y rotas las ropas, y arañados.",
+      "bibleReference": "Jeremías 41:5",
+      "answers": [
+        {
+          "text": "Vestidos de lino y con coronas de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Armados con espadas y escudos de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la barba raída, las ropas rotas y arañados",
+          "isCorrect": true
+        },
+        {
+          "text": "Montados en carros y cargados de dones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Ismael con ellos cuando llegaron al medio de la ciudad?",
+      "explanation": "El versículo dice que Ismael los degolló y los echó en medio de un aljibe.",
+      "bibleReference": "Jeremías 41:7",
+      "answers": [
+        {
+          "text": "Los envió en paz a la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Los degolló y los echó en un aljibe",
+          "isCorrect": true
+        },
+        {
+          "text": "Los llevó cautivos a los hijos de Ammón",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dejó ir con su ofrenda y su perfume",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dejó Ismael con vida a diez de aquellos hombres?",
+      "explanation": "Ellos le dijeron: no nos mates, porque tenemos en el campo tesoros de trigos, y cebadas, y aceite, y miel; y él los dejó.",
+      "bibleReference": "Jeremías 41:8",
+      "answers": [
+        {
+          "text": "Porque tenían tesoros de trigo, cebada, aceite y miel en el campo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque eran sacerdotes de la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque eran parientes de Gedalías en Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque prometieron servirle en tierra de Ammón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién había hecho el aljibe que Ismael llenó de muertos?",
+      "explanation": "El versículo dice que era el mismo que había hecho el rey Asa por causa de Baasa, rey de Israel.",
+      "bibleReference": "Jeremías 41:9",
+      "answers": [
+        {
+          "text": "Gedalías hijo de Ahicam, en Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Nabuzaradán, capitán de la guardia",
+          "isCorrect": false
+        },
+        {
+          "text": "Johanán hijo de Carea y sus hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey Asa, por causa de Baasa rey de Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde hallaron a Ismael los hombres que fueron a pelear con él?",
+      "explanation": "El versículo dice que lo hallaron junto a Aguas-muchas, que es en Gabaón.",
+      "bibleReference": "Jeremías 41:12",
+      "answers": [
+        {
+          "text": "En Geruth-chimham, cerca de Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a Aguas-muchas, en Gabaón",
+          "isCorrect": true
+        },
+        {
+          "text": "En los llanos de Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta de Benjamín, en Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se escapó Ismael de Johanán?",
+      "explanation": "El versículo dice que Ismael se escapó delante de Johanán con ocho hombres y se fue a los hijos de Ammón.",
+      "bibleReference": "Jeremías 41:15",
+      "answers": [
+        {
+          "text": "Solo, y se escondió en el aljibe de Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Con diez hombres, y huyó a tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con ocho hombres, y se fue a los hijos de Ammón",
+          "isCorrect": true
+        },
+        {
+          "text": "De noche, por el camino del desierto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

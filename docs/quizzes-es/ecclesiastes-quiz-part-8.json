@@ -1,0 +1,242 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Eclesiastés 8: el mandamiento del rey, el temor de Dios, y la obra que el hombre no puede alcanzar.",
+  "slug": "ecclesiastes-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué hace la sabiduría del hombre?",
+      "explanation": "El texto dice que la sabiduría del hombre hará relucir su rostro y mudará la tosquedad de su semblante.",
+      "bibleReference": "Eclesiastés 8:1",
+      "answers": [
+        {
+          "text": "Le da riquezas y muchos siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hace relucir su rostro",
+          "isCorrect": true
+        },
+        {
+          "text": "Le quita el día de la muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Le da potestad sobre el rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué aviso da el texto acerca del rey?",
+      "explanation": "El autor avisa que se guarde el mandamiento del rey y la palabra del juramento de Dios.",
+      "bibleReference": "Eclesiastés 8:2",
+      "answers": [
+        {
+          "text": "Que huyas pronto de delante de él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no le respondas ninguna palabra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que persistas en tu propia causa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardes el mandamiento del rey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué nadie le dice al rey: \"¿Qué haces?\"?",
+      "explanation": "El texto dice que la palabra del rey es con potestad, y por eso nadie le dirá: Qué haces.",
+      "bibleReference": "Eclesiastés 8:4",
+      "answers": [
+        {
+          "text": "Porque la palabra del rey es con potestad",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el rey no escucha a nadie",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el rey no sabe el juramento",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el sabio calla delante del necio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que guarda el mandamiento?",
+      "explanation": "El que guarda el mandamiento no experimentará mal, y el corazón del sabio conoce el tiempo y el juicio.",
+      "bibleReference": "Eclesiastés 8:5",
+      "answers": [
+        {
+          "text": "Que será puesto sobre la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nunca más tendrá trabajo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no experimentará mal",
+          "isCorrect": true
+        },
+        {
+          "text": "Que vivirá más que el rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué dice el texto que ningún hombre tiene potestad?",
+      "explanation": "No hay hombre que tenga potestad sobre el espíritu para retenerlo, ni potestad sobre el día de la muerte.",
+      "bibleReference": "Eclesiastés 8:8",
+      "answers": [
+        {
+          "text": "Sobre las nubes y sobre la lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el espíritu y el día de la muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre el rey y sobre sus príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la impiedad de su propio corazón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio el autor que hay debajo del sol cuando puso su corazón en todo lo que allí se hace?",
+      "explanation": "El texto dice que hay tiempo en que el hombre se enseñorea del hombre para mal suyo.",
+      "bibleReference": "Eclesiastés 8:9",
+      "answers": [
+        {
+          "text": "Que el hombre se enseñorea del hombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que todos los hombres viven en paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el sabio alcanza toda la obra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie guarda el mandamiento del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué ocurre porque la sentencia sobre la mala obra no se ejecuta en seguida?",
+      "explanation": "El versículo dice que por eso el corazón de los hijos de los hombres está en ellos lleno para hacer mal.",
+      "bibleReference": "Eclesiastés 8:11",
+      "answers": [
+        {
+          "text": "Que los jueces huyen de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los impíos son puestos en olvido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el rey pierde toda su potestad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su corazón se llena para hacer mal",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el autor que les sucederá a los que temen a Dios?",
+      "explanation": "Aunque el castigo del pecador sea dilatado, el autor sabe que los que temen a Dios tendrán bien.",
+      "bibleReference": "Eclesiastés 8:12-13",
+      "answers": [
+        {
+          "text": "Que nunca más tendrán ningún trabajo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus días serán como sombra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tendrán bien",
+          "isCorrect": true
+        },
+        {
+          "text": "Que serán puestos luego en olvido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué alabó el autor, diciendo que el hombre no tiene otro bien debajo del sol?",
+      "explanation": "Por tanto alabó la alegría: que el hombre coma y beba y se alegre con lo que le queda de su trabajo.",
+      "bibleReference": "Eclesiastés 8:15",
+      "answers": [
+        {
+          "text": "La alegría",
+          "isCorrect": true
+        },
+        {
+          "text": "La fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "El silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "La riqueza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué concluye el autor sobre la obra que se hace debajo del sol?",
+      "explanation": "El texto dice que el hombre no puede alcanzar esa obra: aunque el sabio diga que la sabe, no podrá alcanzarla.",
+      "bibleReference": "Eclesiastés 8:17",
+      "answers": [
+        {
+          "text": "Que solamente el rey la conoce bien",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el hombre no puede alcanzarla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se halla trabajando de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el que teme a Dios la escribe",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

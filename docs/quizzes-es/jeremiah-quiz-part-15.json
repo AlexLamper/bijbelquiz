@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre Jeremías 15: los cuatro géneros enviados sobre el pueblo, las palabras que fueron comidas y el muro de bronce.",
+  "slug": "jeremiah-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dos personas nombra Jehová al comenzar el capítulo?",
+      "explanation": "Jehová dice que si Moisés y Samuel se pusieran delante de él, su voluntad no sería con este pueblo.",
+      "bibleReference": "Jeremías 15:1",
+      "answers": [
+        {
+          "text": "Moisés y Samuel",
+          "isCorrect": true
+        },
+        {
+          "text": "Abraham e Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "David y Salomón",
+          "isCorrect": false
+        },
+        {
+          "text": "Elías y Eliseo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuáles son los cuatro géneros que Jehová enviará sobre ellos?",
+      "explanation": "El versículo dice que enviará cuchillo para matar, perros para despedazar, y aves del cielo y bestias de la tierra para devorar y disipar.",
+      "bibleReference": "Jeremías 15:3",
+      "answers": [
+        {
+          "text": "Hambre, sed, peste y cautiverio en tierra ajena",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego, granizo, langosta y pulgón devorador",
+          "isCorrect": false
+        },
+        {
+          "text": "Espada, carros, caballos y jinetes del aquilón",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuchillo, perros, aves del cielo y bestias de la tierra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A causa de quién serán agitados por todos los reinos de la tierra?",
+      "explanation": "El versículo dice que serán agitados a causa de Manasés hijo de Ezechîas rey de Judá, por lo que hizo en Jerusalem.",
+      "bibleReference": "Jeremías 15:4",
+      "answers": [
+        {
+          "text": "De Joacim hijo de Josías, rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Manasés hijo de Ezechîas, rey de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "De Acaz hijo de Jotham, rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jeroboam hijo de Nabat, rey de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 8 el número de las viudas?",
+      "explanation": "El versículo dice que sus viudas se le multiplicaron más que la arena de la mar.",
+      "bibleReference": "Jeremías 15:8",
+      "answers": [
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el polvo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la arena de la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las gotas del rocío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llama a sí mismo el que habla en el versículo 10?",
+      "explanation": "El versículo dice: ¡Ay de mí, madre mía, que me has engendrado hombre de contienda y hombre de discordia a toda la tierra!",
+      "bibleReference": "Jeremías 15:10",
+      "answers": [
+        {
+          "text": "Hombre de dolores y de llanto",
+          "isCorrect": false
+        },
+        {
+          "text": "Hombre de paz y de consuelo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hombre de contienda y de discordia",
+          "isCorrect": true
+        },
+        {
+          "text": "Hombre de palabra tarda y torpe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo con las palabras de Jehová cuando las halló?",
+      "explanation": "El versículo dice que se hallaron sus palabras y que él las comió, y que su palabra le fue por gozo y por alegría de su corazón.",
+      "bibleReference": "Jeremías 15:16",
+      "answers": [
+        {
+          "text": "Las comió, y fueron gozo y alegría de su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Las escribió en un libro con tinta y pluma",
+          "isCorrect": false
+        },
+        {
+          "text": "Las guardó en secreto y no las anunció",
+          "isCorrect": false
+        },
+        {
+          "text": "Las repartió entre los ancianos del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿dónde no se sentó y cómo se sentó?",
+      "explanation": "El versículo dice que no se sentó en compañía de burladores, sino que se sentó solo, porque Jehová lo llenó de desabrimiento.",
+      "bibleReference": "Jeremías 15:17",
+      "answers": [
+        {
+          "text": "No se sentó con los reyes, sino con el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "No se sentó a la mesa, sino en el suelo",
+          "isCorrect": false
+        },
+        {
+          "text": "No se sentó en la puerta, sino en el atrio",
+          "isCorrect": false
+        },
+        {
+          "text": "No se sentó con burladores, sino solo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promete Jehová si el profeta se convirtiere?",
+      "explanation": "Jehová dice: Si te convirtieres, yo te repondré, y delante de mí estarás.",
+      "bibleReference": "Jeremías 15:19",
+      "answers": [
+        {
+          "text": "Le dará casa y heredad en Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo repondrá y estará delante de él",
+          "isCorrect": true
+        },
+        {
+          "text": "Le quitará todo dolor y herida",
+          "isCorrect": false
+        },
+        {
+          "text": "Le mostrará las cosas por venir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice Jehová que hará del profeta para este pueblo?",
+      "explanation": "El versículo dice que lo dará para este pueblo por fuerte muro de bronce, y que pelearán contra él pero no lo vencerán.",
+      "bibleReference": "Jeremías 15:20",
+      "answers": [
+        {
+          "text": "Una columna de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Una fuente de aguas vivas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un olivo verde y hermoso",
+          "isCorrect": false
+        },
+        {
+          "text": "Un fuerte muro de bronce",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué manos promete Jehová librarlo y redimirlo al final del capítulo?",
+      "explanation": "El último versículo dice que lo librará de la mano de los malos y lo redimirá de la mano de los fuertes.",
+      "bibleReference": "Jeremías 15:21",
+      "answers": [
+        {
+          "text": "De la mano de los reyes y de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "De la mano de los sacerdotes y profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "De la mano de los malos y de los fuertes",
+          "isCorrect": true
+        },
+        {
+          "text": "De la mano de los pescadores y cazadores",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

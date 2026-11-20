@@ -1,0 +1,122 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Eclesiastés 2: las casas y las viñas, los estanques de aguas, la sabiduría y la necedad, y el comer y beber como don de Dios.",
+  "slug": "ecclesiastes-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué resultó ser aquella prueba con alegría y goce de bienes?",
+      "explanation": "Eclesiastés 2:1 termina diciendo: Mas he aquí esto también era vanidad.",
+      "bibleReference": "Eclesiastés 2:1",
+      "answers": [
+        { "text": "Don de Dios", "isCorrect": false },
+        { "text": "Sabiduría", "isCorrect": false },
+        { "text": "Descanso", "isCorrect": false },
+        { "text": "Vanidad", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué le dijo a la risa?",
+      "explanation": "Eclesiastés 2:2 dice: A la risa dije: Enloqueces; y al placer: ¿De qué sirve esto?",
+      "bibleReference": "Eclesiastés 2:2",
+      "answers": [
+        { "text": "Enloqueces", "isCorrect": true },
+        { "text": "¿De qué sirve esto?", "isCorrect": false },
+        { "text": "Eres vanidad", "isCorrect": false },
+        { "text": "Alegra mi corazón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según los versículos 4 y 5, ¿qué plantó en los huertos y jardines que se hizo?",
+      "explanation": "Eclesiastés 2:5 dice: Híceme huertos y jardines, y planté en ellos árboles de todos frutos.",
+      "bibleReference": "Eclesiastés 2:4-5",
+      "answers": [
+        { "text": "Solamente viñas", "isCorrect": false },
+        { "text": "Árboles de todos frutos", "isCorrect": true },
+        { "text": "Hierba de los montes", "isCorrect": false },
+        { "text": "Instrumentos músicos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿para qué se hizo estanques de aguas?",
+      "explanation": "Eclesiastés 2:6 dice: Híceme estanques de aguas, para regar de ellos el bosque donde los árboles crecían.",
+      "bibleReference": "Eclesiastés 2:6",
+      "answers": [
+        { "text": "Para los cantores y las cantoras", "isCorrect": false },
+        { "text": "Para sus siervos y sus siervas", "isCorrect": false },
+        { "text": "Para regar el bosque de árboles", "isCorrect": true },
+        { "text": "Para sus vacas y sus ovejas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿de quiénes se hizo, junto con los deleites de los hijos de los hombres?",
+      "explanation": "Eclesiastés 2:8 dice: híceme de cantores y cantoras, y los deleites de los hijos de los hombres.",
+      "bibleReference": "Eclesiastés 2:8",
+      "answers": [
+        { "text": "De profetas y sacerdotes", "isCorrect": false },
+        { "text": "De cantores y cantoras", "isCorrect": true },
+        { "text": "De labradores y pastores", "isCorrect": false },
+        { "text": "De príncipes y de jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al mirar todas las obras que habían hecho sus manos, ¿a qué conclusión llega el versículo 11?",
+      "explanation": "Eclesiastés 2:11 dice: y he aquí, todo vanidad y aflicción de espíritu, y no hay provecho debajo del sol.",
+      "bibleReference": "Eclesiastés 2:11",
+      "answers": [
+        { "text": "Que su sabiduría le dio provecho", "isCorrect": false },
+        { "text": "Que la luz vence a las tinieblas", "isCorrect": false },
+        { "text": "Que su trabajo fue don de Dios", "isCorrect": false },
+        { "text": "Que no hay provecho debajo del sol", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿cómo sobrepuja la sabiduría a la necedad?",
+      "explanation": "Eclesiastés 2:13 dice: Y he visto que la sabiduría sobrepuja á la necedad, como la luz á las tinieblas.",
+      "bibleReference": "Eclesiastés 2:13",
+      "answers": [
+        { "text": "Como la luz a las tinieblas", "isCorrect": true },
+        { "text": "Como el oro a la plata", "isCorrect": false },
+        { "text": "Como el rey al siervo", "isCorrect": false },
+        { "text": "Como el día a la noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 14, ¿qué entendió acerca del sabio y del necio?",
+      "explanation": "Eclesiastés 2:14 dice: empero también entendí yo que un mismo suceso acaecerá al uno que al otro.",
+      "bibleReference": "Eclesiastés 2:14",
+      "answers": [
+        { "text": "Que el necio verá la luz al fin", "isCorrect": false },
+        { "text": "Que el sabio nunca será olvidado", "isCorrect": false },
+        { "text": "Que un mismo suceso acaecerá a los dos", "isCorrect": true },
+        { "text": "Que el necio tiene sus ojos en su cabeza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿de quiénes no habrá memoria para siempre?",
+      "explanation": "Eclesiastés 2:16 dice: Porque ni del sabio ni del necio habrá memoria para siempre.",
+      "bibleReference": "Eclesiastés 2:16",
+      "answers": [
+        { "text": "Ni del sabio ni del necio", "isCorrect": true },
+        { "text": "Solamente del necio", "isCorrect": false },
+        { "text": "Solamente del pecador", "isCorrect": false },
+        { "text": "De los reyes y las provincias", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 24, ¿qué dice el texto que es lo mejor para el hombre?",
+      "explanation": "Eclesiastés 2:24 dice: No hay cosa mejor para el hombre sino que coma y beba, y que su alma vea el bien de su trabajo.",
+      "bibleReference": "Eclesiastés 2:24",
+      "answers": [
+        { "text": "Allegar plata y oro", "isCorrect": false },
+        { "text": "Edificar casas y plantar viñas", "isCorrect": false },
+        { "text": "Comer y beber y ver el bien de su trabajo", "isCorrect": true },
+        { "text": "Añadir ciencia a su sabiduría", "isCorrect": false }
+      ]
+    }
+  ]
+}

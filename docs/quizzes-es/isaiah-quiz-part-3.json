@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Isaías 3: el sustento quitado a Jerusalem, los mozos puestos por príncipes, el pleito contra los ancianos y los atavíos de las hijas de Sión.",
+  "slug": "isaiah-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué quita el Señor Jehová de los ejércitos de Jerusalem y de Judá, según el versículo 1?",
+      "explanation": "El texto dice que quita el sustentador y el fuerte, todo sustento de pan y todo socorro de agua.",
+      "bibleReference": "Isaías 3:1",
+      "answers": [
+        {
+          "text": "Todo sustento de pan y todo socorro de agua",
+          "isCorrect": true
+        },
+        {
+          "text": "La plata y el oro de sus tesoros",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ídolos de plata y de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Las naves y los carros de guerra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dice el versículo 4 que pondrá por príncipes?",
+      "explanation": "El texto dice: y pondréles mozos por príncipes, y muchachos serán sus señores.",
+      "bibleReference": "Isaías 3:4",
+      "answers": [
+        {
+          "text": "A los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los adivinos",
+          "isCorrect": false
+        },
+        {
+          "text": "A mozos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los capitanes de cincuenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras rehúsa el hermano al que quieren hacer príncipe?",
+      "explanation": "El texto dice que jurará aquel día: no tomaré ese cuidado; porque en mi casa ni hay pan, ni qué vestir.",
+      "bibleReference": "Isaías 3:6-7",
+      "answers": [
+        {
+          "text": "Jehová está en pie para litigar",
+          "isCorrect": false
+        },
+        {
+          "text": "No tomaré ese cuidado",
+          "isCorrect": true
+        },
+        {
+          "text": "Qué vestir tienes, tú serás nuestro príncipe",
+          "isCorrect": false
+        },
+        {
+          "text": "Decid al justo que le irá bien",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el versículo 10 decir al justo?",
+      "explanation": "El texto dice: decid al justo que le irá bien, porque comerá de los frutos de sus manos.",
+      "bibleReference": "Isaías 3:10",
+      "answers": [
+        {
+          "text": "Que será príncipe del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los exactores lo engañan",
+          "isCorrect": false
+        },
+        {
+          "text": "Que mal le irá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le irá bien",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué hacen los que guían al pueblo?",
+      "explanation": "El texto dice: pueblo mío, los que te guían te engañan, y tuercen la carrera de tus caminos.",
+      "bibleReference": "Isaías 3:12",
+      "answers": [
+        {
+          "text": "Lo juzgan con justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo engañan y tuercen sus caminos",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo amparan en el juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo llevan al monte de Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué acusa Jehová a los ancianos y a los príncipes de su pueblo?",
+      "explanation": "El texto dice: porque vosotros habéis devorado la viña, y el despojo del pobre está en vuestras casas.",
+      "bibleReference": "Isaías 3:14",
+      "answers": [
+        {
+          "text": "De haber devorado la viña",
+          "isCorrect": true
+        },
+        {
+          "text": "De haber quemado la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "De haber vendido la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "De haber dejado la ley",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿qué hacen las hijas de Sión cuando andan?",
+      "explanation": "El texto dice que andan cuellierguidas y con los ojos descompuestos, y que cuando andan van danzando y haciendo son con los pies.",
+      "bibleReference": "Isaías 3:16",
+      "answers": [
+        {
+          "text": "Se cubren el rostro con velos",
+          "isCorrect": false
+        },
+        {
+          "text": "Callan delante de los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Van danzando y haciendo son con los pies",
+          "isCorrect": true
+        },
+        {
+          "text": "Se sientan en tierra, desamparadas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hará el Señor con la mollera de las hijas de Sión?",
+      "explanation": "El texto dice que pelará el Señor la mollera de las hijas de Sión, y que Jehová descubrirá sus vergüenzas.",
+      "bibleReference": "Isaías 3:17",
+      "answers": [
+        {
+          "text": "La cubrirá con redecillas",
+          "isCorrect": false
+        },
+        {
+          "text": "La ungirá con aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "La adornará con lunetas",
+          "isCorrect": false
+        },
+        {
+          "text": "La pelará",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vendrá en lugar de los perfumes aromáticos?",
+      "explanation": "El texto dice que en lugar de los perfumes aromáticos vendrá hediondez.",
+      "bibleReference": "Isaías 3:24",
+      "answers": [
+        {
+          "text": "Cinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Compostura del cabello",
+          "isCorrect": false
+        },
+        {
+          "text": "Hediondez",
+          "isCorrect": true
+        },
+        {
+          "text": "Hermosura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿qué hará ella, desamparada?",
+      "explanation": "El último versículo dice que sus puertas se entristecerán y enlutarán, y ella, desamparada, se sentará en tierra.",
+      "bibleReference": "Isaías 3:26",
+      "answers": [
+        {
+          "text": "Huirá al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Se sentará en tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Subirá al monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Clamará por las calles",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 36",
+  "description": "Diez preguntas sobre Jeremías 36: el rollo que Baruch escribió y leyó, y el rey Joacim que lo echó al brasero.",
+  "slug": "jeremiah-quiz-part-36",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué mandó Jehová a Jeremías tomar y escribir?",
+      "explanation": "Jehová le dijo: tómate un rollo de libro, y escribe en él todas las palabras que te he hablado.",
+      "bibleReference": "Jeremías 36:2",
+      "answers": [
+        {
+          "text": "Una carta sellada para el rey de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos tablas de piedra para la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Un rollo de libro, con todas las palabras que le había hablado",
+          "isCorrect": true
+        },
+        {
+          "text": "Un vaso de barro con tierra de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién escribió en el rollo las palabras de boca de Jeremías?",
+      "explanation": "El versículo dice que Baruch hijo de Nerías escribió de boca de Jeremías, en un rollo de libro, todas las palabras.",
+      "bibleReference": "Jeremías 36:4",
+      "answers": [
+        {
+          "text": "Jehudí hijo de Nethanías",
+          "isCorrect": false
+        },
+        {
+          "text": "Baruch hijo de Nerías",
+          "isCorrect": true
+        },
+        {
+          "text": "Elisama el secretario",
+          "isCorrect": false
+        },
+        {
+          "text": "Gemarías hijo de Saphán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no podía Jeremías entrar él mismo en la casa de Jehová?",
+      "explanation": "Jeremías dijo a Baruch: yo estoy preso, no puedo entrar en la casa de Jehová.",
+      "bibleReference": "Jeremías 36:5",
+      "answers": [
+        {
+          "text": "Porque estaba preso",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque era el día del ayuno",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los príncipes lo habían azotado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque la puerta nueva estaba cerrada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo leyó Baruch el libro en la casa de Jehová?",
+      "explanation": "El texto dice que fue en el año quinto de Joacim hijo de Josías, rey de Judá, en el mes noveno.",
+      "bibleReference": "Jeremías 36:9-10",
+      "answers": [
+        {
+          "text": "En el año cuarto de Joacim, en el mes primero",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año décimo de Sedechîas, en el mes cuarto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año séptimo de Josías, en el mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año quinto de Joacim, en el mes noveno",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién contó a los príncipes las palabras que había oído leer a Baruch?",
+      "explanation": "Michêas hijo de Gemarías descendió a la casa del rey y contó a los príncipes todas las palabras que había oído.",
+      "bibleReference": "Jeremías 36:11-13",
+      "answers": [
+        {
+          "text": "Elnathán hijo de Achbor",
+          "isCorrect": false
+        },
+        {
+          "text": "Michêas hijo de Gemarías",
+          "isCorrect": true
+        },
+        {
+          "text": "Delaías hijo de Semeías",
+          "isCorrect": false
+        },
+        {
+          "text": "Seraías hijo de Azriel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué aconsejaron los príncipes a Baruch después de oír el rollo?",
+      "explanation": "Los príncipes le dijeron: ve, y escóndete tú y Jeremías, y nadie sepa dónde estáis.",
+      "bibleReference": "Jeremías 36:19",
+      "answers": [
+        {
+          "text": "Que leyera el rollo delante del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quemara el rollo en el brasero",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se escondiera él y Jeremías",
+          "isCorrect": true
+        },
+        {
+          "text": "Que huyera a tierra de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey con el rollo mientras Jehudí lo leía?",
+      "explanation": "Cuando Jehudí había leído tres o cuatro planas, el rey lo rasgó con un cuchillo de escribanía y lo echó en el fuego del brasero.",
+      "bibleReference": "Jeremías 36:23",
+      "answers": [
+        {
+          "text": "Lo guardó en la cámara de Elisama",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo mandó leer otra vez al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo selló y lo envió a Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo rasgó con un cuchillo y lo echó en el brasero",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes rogaron al rey que no quemase aquel rollo?",
+      "explanation": "El versículo dice que Elnathán, Delaías y Gemarías rogaron al rey que no quemase el rollo, pero él no los quiso oír.",
+      "bibleReference": "Jeremías 36:25",
+      "answers": [
+        {
+          "text": "Elnathán, Delaías y Gemarías",
+          "isCorrect": true
+        },
+        {
+          "text": "Baruch, Michêas y Jehudí",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerameel, Seraías y Selemías",
+          "isCorrect": false
+        },
+        {
+          "text": "Elisama, Saphán y Ananías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió cuando el rey mandó prender a Baruch y a Jeremías?",
+      "explanation": "El versículo dice que el rey mandó prenderlos, mas Jehová los escondió.",
+      "bibleReference": "Jeremías 36:26",
+      "answers": [
+        {
+          "text": "Los príncipes los defendieron",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron a tierra de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová los escondió",
+          "isCorrect": true
+        },
+        {
+          "text": "Fueron puestos en la mazmorra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová acerca de Joacim rey de Judá después de que quemó el rollo?",
+      "explanation": "Jehová dijo de Joacim: no tendrá quien se siente sobre el trono de David.",
+      "bibleReference": "Jeremías 36:30",
+      "answers": [
+        {
+          "text": "Que reinaría en paz cuarenta años más",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tendría quien se siente sobre el trono de David",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sería llevado con honra a Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su hijo edificaría la casa de Jehová",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Isaías 24: la tierra vaciada y desnudada, el gozo que cesa, el terror y la sima, y Jehová reinando en el monte de Sión.",
+  "slug": "isaiah-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hace Jehová con la tierra, según el primer versículo?",
+      "explanation": "El versículo dice que Jehová vacía la tierra, la desnuda, trastorna su haz y hace esparcir sus moradores.",
+      "bibleReference": "Isaías 24:1",
+      "answers": [
+        {
+          "text": "La bendice y la llena de frutos y de vino",
+          "isCorrect": false
+        },
+        {
+          "text": "La vacía y la desnuda, y esparce a sus moradores",
+          "isCorrect": true
+        },
+        {
+          "text": "La reparte por suertes entre los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "La cubre de aguas y de granizo ardiente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a quiénes alcanzará la misma suerte?",
+      "explanation": "El texto dice: como el pueblo, tal el sacerdote; como el siervo, tal su señor; tal el que compra, como el que vende.",
+      "bibleReference": "Isaías 24:2",
+      "answers": [
+        {
+          "text": "Al pueblo y al sacerdote, al siervo y a su señor",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente a los sacerdotes y a los profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente al que compra, y no al que vende",
+          "isCorrect": false
+        },
+        {
+          "text": "Solamente a los señores, y no a sus siervos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué se inficionó la tierra bajo sus moradores?",
+      "explanation": "El versículo dice que la tierra se inficionó porque traspasaron las leyes, falsearon el derecho y rompieron el pacto sempiterno.",
+      "bibleReference": "Isaías 24:5",
+      "answers": [
+        {
+          "text": "Porque dejaron de sembrar y de podar sus viñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque pusieron su esperanza en la sombra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque alzaron su voz contra los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque traspasaron las leyes y rompieron el pacto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué cesó y acabó, según los versículos 7 y 8?",
+      "explanation": "El texto dice que cesó el regocijo de los panderos, acabóse el estruendo de los que se huelgan y paró la alegría del arpa.",
+      "bibleReference": "Isaías 24:7-8",
+      "answers": [
+        {
+          "text": "El trabajo de los labradores en los campos",
+          "isCorrect": false
+        },
+        {
+          "text": "El regocijo de los panderos y la alegría del arpa",
+          "isCorrect": true
+        },
+        {
+          "text": "El sonido de la trompeta en el monte santo",
+          "isCorrect": false
+        },
+        {
+          "text": "La lluvia sobre la tierra y sobre los collados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a la ciudad que está quebrantada?",
+      "explanation": "El versículo dice: quebrantada está la ciudad de la vanidad; toda casa se ha cerrado, porque no entre nadie.",
+      "bibleReference": "Isaías 24:10",
+      "answers": [
+        {
+          "text": "La ciudad de la justicia y de la verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad de gentes fuertes y robustas",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad de la vanidad",
+          "isCorrect": true
+        },
+        {
+          "text": "La ciudad de las aguas anchas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto lo que quedará en medio de la tierra?",
+      "explanation": "El versículo dice que será como aceituno sacudido, como rebuscos acabada la vendimia.",
+      "bibleReference": "Isaías 24:13",
+      "answers": [
+        {
+          "text": "Como aceituno sacudido y como rebuscos",
+          "isCorrect": true
+        },
+        {
+          "text": "Como campo lleno de trigo y de cebada",
+          "isCorrect": false
+        },
+        {
+          "text": "Como huerto regado junto a las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Como arena que está a la orilla de la mar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde pide el texto que sea nombrado Jehová Dios de Israel?",
+      "explanation": "El versículo manda glorificar a Jehová en los valles, y que en islas de la mar sea nombrado Jehová Dios de Israel.",
+      "bibleReference": "Isaías 24:15",
+      "answers": [
+        {
+          "text": "En los desiertos y en las tierras de angustia",
+          "isCorrect": false
+        },
+        {
+          "text": "En las puertas y en las plazas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En los montes y en los collados de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En islas de la mar",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le sucederá al que huirá de la voz del terror?",
+      "explanation": "El texto dice que el que huirá de la voz del terror caerá en la sima, y el que saliere de en medio de la sima será preso del lazo.",
+      "bibleReference": "Isaías 24:17-18",
+      "answers": [
+        {
+          "text": "Hallará refugio dentro de la ciudad cerrada",
+          "isCorrect": false
+        },
+        {
+          "text": "Será llevado en naves hasta las islas",
+          "isCorrect": false
+        },
+        {
+          "text": "Caerá en la sima",
+          "isCorrect": true
+        },
+        {
+          "text": "Subirá al monte de Sión y cantará",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara el temblor de la tierra en el versículo 20?",
+      "explanation": "El versículo dice que la tierra temblará vacilando como un borracho y será removida como una choza.",
+      "bibleReference": "Isaías 24:20",
+      "answers": [
+        {
+          "text": "Con un borracho que vacila y con una choza",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una roca firme que no se mueve",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un árbol plantado junto a las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un carro de guerra que corre aprisa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucederá con la luna y el sol cuando Jehová de los ejércitos reinare en el monte de Sión?",
+      "explanation": "El versículo dice que la luna se avergonzará y el sol se confundirá cuando Jehová de los ejércitos reinare en Sión y en Jerusalem.",
+      "bibleReference": "Isaías 24:23",
+      "answers": [
+        {
+          "text": "Alumbrarán con luz de siete días seguidos",
+          "isCorrect": false
+        },
+        {
+          "text": "La luna se avergonzará y el sol se confundirá",
+          "isCorrect": true
+        },
+        {
+          "text": "Se detendrán en medio del cielo todo el día",
+          "isCorrect": false
+        },
+        {
+          "text": "Se repartirán el día y la noche por mitades",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

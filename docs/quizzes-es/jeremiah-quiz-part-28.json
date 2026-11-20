@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 28",
+  "description": "Diez preguntas sobre Jeremías 28: Hananías de Gabaón, el yugo quebrado, los yugos de hierro y el fin del profeta de mentira.",
+  "slug": "jeremiah-quiz-part-28",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién habló en la casa de Jehová delante de los sacerdotes y de todo el pueblo?",
+      "explanation": "El primer verso dice que Hananías, hijo de Azur, profeta que era de Gabaón, le habló en la casa de Jehová.",
+      "bibleReference": "Jeremías 28:1",
+      "answers": [
+        {
+          "text": "Urías de Chîriath-jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahicam hijo de Saphán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hananías, profeta de Gabaón",
+          "isCorrect": true
+        },
+        {
+          "text": "Semaías, profeta de Morasti",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Hananías que Jehová de los ejércitos había hablado?",
+      "explanation": "El verso dice que habló así: Quebranté el yugo del rey de Babilonia.",
+      "bibleReference": "Jeremías 28:2",
+      "answers": [
+        {
+          "text": "Edificaré de nuevo esta casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Quebranté el yugo de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "Pondré yugo de hierro sobre todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Traeré espada sobre esta ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En cuánto tiempo dijo que tornaría los vasos de la casa de Jehová a este lugar?",
+      "explanation": "El verso dice: Dentro de dos años de días tornaré a este lugar todos los vasos de la casa de Jehová.",
+      "bibleReference": "Jeremías 28:3",
+      "answers": [
+        {
+          "text": "Dentro de dos años de días",
+          "isCorrect": true
+        },
+        {
+          "text": "Dentro de setenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro de siete meses",
+          "isCorrect": false
+        },
+        {
+          "text": "Dentro de tres años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué rey dijo Hananías que Jehová tornaría a este lugar?",
+      "explanation": "El verso dice que tornaría a este lugar a Jechônías hijo de Joacim, rey de Judá, y a todos los transportados de Judá.",
+      "bibleReference": "Jeremías 28:4",
+      "answers": [
+        {
+          "text": "A Sedechîas rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joacim hijo de Josías",
+          "isCorrect": false
+        },
+        {
+          "text": "A Josías hijo de Amón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jechônías hijo de Joacim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras empezó a responder Jeremías profeta a aquellas palabras?",
+      "explanation": "El verso dice que Jeremías profeta dijo: Amén, así lo haga Jehová. Confirme Jehová tus palabras.",
+      "bibleReference": "Jeremías 28:6",
+      "answers": [
+        {
+          "text": "Calla y no hables más",
+          "isCorrect": false
+        },
+        {
+          "text": "Amén, así lo haga Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Tú no eres profeta de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Oíd todos la palabra nueva",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué profetizaron los profetas que fueron antes de ellos, en tiempos pasados?",
+      "explanation": "El verso dice que profetizaron sobre muchas tierras y grandes reinos, de guerra, y de aflicción, y de pestilencia.",
+      "bibleReference": "Jeremías 28:8",
+      "answers": [
+        {
+          "text": "De paz y de abundancia",
+          "isCorrect": false
+        },
+        {
+          "text": "De lluvia y de cosecha",
+          "isCorrect": false
+        },
+        {
+          "text": "De guerra, aflicción y pestilencia",
+          "isCorrect": true
+        },
+        {
+          "text": "De reyes y de tronos nuevos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Hananías con el yugo que estaba en el cuello de Jeremías?",
+      "explanation": "El verso dice que Hananías profeta quitó el yugo del cuello de Jeremías profeta y lo quebró.",
+      "bibleReference": "Jeremías 28:10",
+      "answers": [
+        {
+          "text": "Lo llevó al templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo puso sobre sí",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo echó al fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo quitó y lo quebró",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová decir a Hananías acerca de los yugos?",
+      "explanation": "El verso dice: Yugos de madera quebraste, mas en vez de ellos harás yugos de hierro.",
+      "bibleReference": "Jeremías 28:13",
+      "answers": [
+        {
+          "text": "Que haría yugos de hierro",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no habría más yugos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que haría yugos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llevaría el yugo él mismo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Jeremías a Hananías acerca de su envío y de este pueblo?",
+      "explanation": "El verso dice: Ahora oye, Hananías; Jehová no te envió, y tú has hecho confiar a este pueblo en mentira.",
+      "bibleReference": "Jeremías 28:15",
+      "answers": [
+        {
+          "text": "Que Jehová lo envió a Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debía ir él a Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová no lo había enviado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que hablaría con el rey de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anunció Jehová a Hananías, y qué sucedió al final del capítulo?",
+      "explanation": "Jehová dijo que moriría en aquel año porque habló rebelión contra Jehová, y el texto dice que en el mismo año murió, en el mes séptimo.",
+      "bibleReference": "Jeremías 28:16-17",
+      "answers": [
+        {
+          "text": "Que quedaría mudo por un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Que moriría aquel año, y así fue",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sería llevado cautivo a Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que viviría todavía muchos años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

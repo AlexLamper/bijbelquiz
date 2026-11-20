@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre Proverbios 21: el corazón del rey en la mano de Jehová, la justicia más agradable que el sacrificio, el clamor del pobre y el caballo aparejado para la batalla.",
+  "slug": "proverbs-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué compara el primer versículo el corazón del rey en la mano de Jehová?",
+      "explanation": "Proverbios 21:1 dice: COMO los repartimientos de las aguas, así está el corazón del rey en la mano de Jehová: á todo lo que quiere lo inclina.",
+      "bibleReference": "Proverbios 21:1",
+      "answers": [
+        {
+          "text": "Con los repartimientos de las aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el caballo del día de la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la ciudad de los fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el rescate del justo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué pesa Jehová?",
+      "explanation": "Proverbios 21:2 dice: Todo camino del hombre es recto en su opinión: mas Jehová pesa los corazones.",
+      "bibleReference": "Proverbios 21:2",
+      "answers": [
+        {
+          "text": "Los caminos rectos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los corazones",
+          "isCorrect": true
+        },
+        {
+          "text": "Los sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Las aguas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es más agradable a Jehová que el sacrificio?",
+      "explanation": "Proverbios 21:3 dice: Hacer justicia y juicio es á Jehová más agradable que sacrificio.",
+      "bibleReference": "Proverbios 21:3",
+      "answers": [
+        {
+          "text": "Dar presentes en secreto",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar la boca y la lengua",
+          "isCorrect": false
+        },
+        {
+          "text": "Aparejar el caballo para la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacer justicia y juicio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es mejor que vivir con la mujer rencillosa en espaciosa casa?",
+      "explanation": "Proverbios 21:9 dice: Mejor es vivir en un rincón de zaquizamí, que con la mujer rencillosa en espaciosa casa.",
+      "bibleReference": "Proverbios 21:9",
+      "answers": [
+        {
+          "text": "Morar en la casa del sabio",
+          "isCorrect": false
+        },
+        {
+          "text": "Vivir en tierra de abundancia",
+          "isCorrect": false
+        },
+        {
+          "text": "Vivir en un rincón de zaquizamí",
+          "isCorrect": true
+        },
+        {
+          "text": "Morar entre los fuertes de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué le sucederá al que cierra su oído al clamor del pobre?",
+      "explanation": "Proverbios 21:13 dice: El que cierra su oído al clamor del pobre, también él clamará, y no será oído.",
+      "bibleReference": "Proverbios 21:13",
+      "answers": [
+        {
+          "text": "Será rescatado por el justo",
+          "isCorrect": false
+        },
+        {
+          "text": "Clamará y no será oído",
+          "isCorrect": true
+        },
+        {
+          "text": "Hallará vida, justicia y honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Su furor será amansado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hay en la casa del sabio?",
+      "explanation": "Proverbios 21:20 dice: Tesoro codiciable y pingüe hay en la casa del sabio; mas el hombre insensato lo disipará.",
+      "bibleReference": "Proverbios 21:20",
+      "answers": [
+        {
+          "text": "Tesoro codiciable y pingüe",
+          "isCorrect": true
+        },
+        {
+          "text": "Una mujer rencillosa",
+          "isCorrect": false
+        },
+        {
+          "text": "El rescate del prevaricador",
+          "isCorrect": false
+        },
+        {
+          "text": "Aguas repartidas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿de qué guarda su alma el que guarda su boca y su lengua?",
+      "explanation": "Proverbios 21:23 dice: El que guarda su boca y su lengua, su alma guarda de angustias.",
+      "bibleReference": "Proverbios 21:23",
+      "answers": [
+        {
+          "text": "De pobreza",
+          "isCorrect": false
+        },
+        {
+          "text": "Del vino",
+          "isCorrect": false
+        },
+        {
+          "text": "De angustias",
+          "isCorrect": true
+        },
+        {
+          "text": "De la saña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué mata al perezoso?",
+      "explanation": "Proverbios 21:25 dice: El deseo del perezoso le mata, porque sus manos no quieren trabajar.",
+      "bibleReference": "Proverbios 21:25",
+      "answers": [
+        {
+          "text": "El vino y los ungüentos",
+          "isCorrect": false
+        },
+        {
+          "text": "La mujer iracunda",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de los fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Su deseo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué no hay contra Jehová?",
+      "explanation": "Proverbios 21:30 dice: No hay sabiduría, ni inteligencia, ni consejo, contra Jehová.",
+      "bibleReference": "Proverbios 21:30",
+      "answers": [
+        {
+          "text": "Sabiduría, inteligencia ni consejo",
+          "isCorrect": true
+        },
+        {
+          "text": "Caballo aparejado para la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Tesoro codiciable ni riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Testigo mentiroso ni escarnecedor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿de quién es el salvar?",
+      "explanation": "Proverbios 21:31 dice: El caballo se apareja para el día de la batalla: mas de Jehová es el salvar.",
+      "bibleReference": "Proverbios 21:31",
+      "answers": [
+        {
+          "text": "Del caballo aparejado",
+          "isCorrect": false
+        },
+        {
+          "text": "Del hombre recto",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Del sabio que toma la ciudad",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

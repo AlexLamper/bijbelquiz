@@ -1,0 +1,122 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Eclesiastés 7: la buena fama, la casa del luto, la risa del necio, el escudo de la ciencia y el hombre que Dios hizo recto.",
+  "slug": "ecclesiastes-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué es mejor que el buen ungüento?",
+      "explanation": "Eclesiastés 7:1 dice: Mejor es la buena fama que el buen ungüento; y el día de la muerte que el día del nacimiento.",
+      "bibleReference": "Eclesiastés 7:1",
+      "answers": [
+        { "text": "La buena fama", "isCorrect": true },
+        { "text": "El día del nacimiento", "isCorrect": false },
+        { "text": "La casa del convite", "isCorrect": false },
+        { "text": "La risa del necio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a qué casa es mejor ir?",
+      "explanation": "Eclesiastés 7:2 dice: Mejor es ir á la casa del luto que á la casa del convite: porque aquello es el fin de todos los hombres.",
+      "bibleReference": "Eclesiastés 7:2",
+      "answers": [
+        { "text": "A la casa del convite", "isCorrect": false },
+        { "text": "A la casa del placer", "isCorrect": false },
+        { "text": "A la casa del sabio", "isCorrect": false },
+        { "text": "A la casa del luto", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿por qué es mejor el enojo que la risa?",
+      "explanation": "Eclesiastés 7:3 dice: porque con la tristeza del rostro se enmendará el corazón.",
+      "bibleReference": "Eclesiastés 7:3",
+      "answers": [
+        { "text": "Porque la risa es el fin de los hombres", "isCorrect": false },
+        { "text": "Porque la tristeza enmienda el corazón", "isCorrect": true },
+        { "text": "Porque el enojo reposa en los necios", "isCorrect": false },
+        { "text": "Porque la risa corrompe la ciencia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué es mejor oír que la canción de los necios?",
+      "explanation": "Eclesiastés 7:5 dice: Mejor es oir la reprensión del sabio, que la canción de los necios.",
+      "bibleReference": "Eclesiastés 7:5",
+      "answers": [
+        { "text": "El estrépito de las espinas", "isCorrect": false },
+        { "text": "La risa en la casa del placer", "isCorrect": false },
+        { "text": "La reprensión del sabio", "isCorrect": true },
+        { "text": "La causa de los tiempos pasados", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 6 la risa del necio?",
+      "explanation": "Eclesiastés 7:6 dice: Porque la risa del necio es como el estrépito de las espinas debajo de la olla.",
+      "bibleReference": "Eclesiastés 7:6",
+      "answers": [
+        { "text": "Con la canción del sabio en el convite", "isCorrect": false },
+        { "text": "Con el escudo de la ciencia y del dinero", "isCorrect": false },
+        { "text": "Con el ungüento del día del nacimiento", "isCorrect": false },
+        { "text": "Con el estrépito de las espinas bajo la olla", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿quién es mejor que el altivo de espíritu?",
+      "explanation": "Eclesiastés 7:8 dice: Mejor es el fin del negocio que su principio: mejor es el sufrido de espíritu que el altivo de espíritu.",
+      "bibleReference": "Eclesiastés 7:8",
+      "answers": [
+        { "text": "El sufrido de espíritu", "isCorrect": true },
+        { "text": "El que ríe en el convite", "isCorrect": false },
+        { "text": "El que alarga sus días", "isCorrect": false },
+        { "text": "El que guarda la ciencia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta dice el versículo 10 que nunca se debe hacer?",
+      "explanation": "Eclesiastés 7:10 dice: Nunca digas: ¿Qué es la causa que los tiempos pasados fueron mejores que éstos?",
+      "bibleReference": "Eclesiastés 7:10",
+      "answers": [
+        { "text": "Por qué el justo perece en su justicia", "isCorrect": false },
+        { "text": "Quién puede enderezar lo que Dios torció", "isCorrect": false },
+        { "text": "Por qué los tiempos pasados fueron mejores", "isCorrect": true },
+        { "text": "Por qué la risa del necio es vanidad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿en qué excede la sabiduría a la ciencia y al dinero?",
+      "explanation": "Eclesiastés 7:12 dice: mas la sabiduría excede en que da vida á sus poseedores.",
+      "bibleReference": "Eclesiastés 7:12",
+      "answers": [
+        { "text": "En que alarga los tiempos pasados", "isCorrect": false },
+        { "text": "En que da vida a sus poseedores", "isCorrect": true },
+        { "text": "En que hace reír al necio", "isCorrect": false },
+        { "text": "En que torna la tristeza en risa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿con qué compara el texto la fuerza que la sabiduría da al sabio?",
+      "explanation": "Eclesiastés 7:19 dice: La sabiduría fortifica al sabio más que diez poderosos la ciudad en que fueron.",
+      "bibleReference": "Eclesiastés 7:19",
+      "answers": [
+        { "text": "Con un escudo de ciencia y dinero", "isCorrect": false },
+        { "text": "Con cien hombres de guerra", "isCorrect": false },
+        { "text": "Con diez poderosos en una ciudad", "isCorrect": true },
+        { "text": "Con mil hombres entre los necios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿cómo hizo Dios al hombre, aunque ellos buscaron muchas cuentas?",
+      "explanation": "Eclesiastés 7:29 dice: que Dios hizo al hombre recto, mas ellos buscaron muchas cuentas.",
+      "bibleReference": "Eclesiastés 7:29",
+      "answers": [
+        { "text": "Recto", "isCorrect": true },
+        { "text": "Sabio", "isCorrect": false },
+        { "text": "Necio", "isCorrect": false },
+        { "text": "Altivo", "isCorrect": false }
+      ]
+    }
+  ]
+}

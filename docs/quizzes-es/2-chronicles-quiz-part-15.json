@@ -57,7 +57,7 @@
       "explanation": "Asa fue confortado, quitó las abominaciones de toda la tierra de Judá y de Benjamín y reparó el altar de Jehová que estaba delante del pórtico.",
       "bibleReference": "2 Crónicas 15:8",
       "answers": [
-        { "text": "Mandó encerrar al profeta en la cárcel", "isCorrect": false },
+        { "text": "Mandó encerrar al profeta en la casa de la cárcel de Jerusalem", "isCorrect": false },
         { "text": "Quitó las abominaciones y reparó el altar de Jehová", "isCorrect": true },
         { "text": "Repartió el oro de la casa de Jehová", "isCorrect": false },
         { "text": "Salió a pelear contra el rey de Israel", "isCorrect": false }
@@ -69,7 +69,7 @@
       "bibleReference": "2 Crónicas 15:10",
       "answers": [
         { "text": "En el mes tercero del año décimoquinto", "isCorrect": true },
-        { "text": "En el mes séptimo del año décimo", "isCorrect": false },
+        { "text": "En el mes séptimo del año décimo de su reinado", "isCorrect": false },
         { "text": "En el mes primero del año treinta", "isCorrect": false },
         { "text": "En el mes sexto del año veinte", "isCorrect": false }
       ]
@@ -102,7 +102,7 @@
       "bibleReference": "2 Crónicas 15:16",
       "answers": [
         { "text": "La depuso de su dignidad por un ídolo", "isCorrect": true },
-        { "text": "La envió a la tierra de Benjamín", "isCorrect": false },
+        { "text": "La envió a vivir a la tierra de Benjamín con sus parientes", "isCorrect": false },
         { "text": "La puso al frente de la casa real", "isCorrect": false },
         { "text": "La mandó echar en la cárcel", "isCorrect": false }
       ]
@@ -114,7 +114,7 @@
       "answers": [
         { "text": "Hasta los veinte años de su reinado", "isCorrect": false },
         { "text": "Hasta los diez años de su reinado", "isCorrect": false },
-        { "text": "Hasta el fin de sus días", "isCorrect": false },
+        { "text": "Hasta el fin de los días del reinado de su hijo", "isCorrect": false },
         { "text": "Hasta los treinta y cinco años de su reinado", "isCorrect": true }
       ]
     }

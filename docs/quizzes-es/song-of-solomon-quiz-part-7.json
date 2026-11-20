@@ -1,0 +1,242 @@
+{
+  "title": "Cantar de los Cantares Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Cantar de los Cantares 7: la hija de príncipe, la estatura como la palma, y la salida al campo y a las viñas.",
+  "slug": "song-of-solomon-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo llama el texto a aquella cuyos pies son hermosos en los calzados?",
+      "explanation": "El primer versículo dice: ¡Cuán hermosos son tus pies en los calzados, oh hija de príncipe!",
+      "bibleReference": "Cantar de los Cantares 7:1",
+      "answers": [
+        {
+          "text": "Hija de príncipe",
+          "isCorrect": true
+        },
+        {
+          "text": "Reina de Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "Paloma del Carmelo",
+          "isCorrect": false
+        },
+        {
+          "text": "Esposa del Líbano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto su vientre?",
+      "explanation": "El versículo dice: Tu vientre, como montón de trigo, cercado de lirios.",
+      "bibleReference": "Cantar de los Cantares 7:2",
+      "answers": [
+        {
+          "text": "Como una taza redonda que no falta bebida",
+          "isCorrect": false
+        },
+        {
+          "text": "Como racimos de vid en la viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Como obra de excelente maestro",
+          "isCorrect": false
+        },
+        {
+          "text": "Como montón de trigo, cercado de lirios",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto su cuello?",
+      "explanation": "El versículo dice: Tu cuello, como torre de marfil.",
+      "bibleReference": "Cantar de los Cantares 7:4",
+      "answers": [
+        {
+          "text": "Como la torre del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Como las pesqueras de Hesbón",
+          "isCorrect": false
+        },
+        {
+          "text": "Como torre de marfil",
+          "isCorrect": true
+        },
+        {
+          "text": "Como joyas de excelente obra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto sus ojos?",
+      "explanation": "El versículo dice: tus ojos, como las pesqueras de Hesbón junto a la puerta de Batrabbim.",
+      "bibleReference": "Cantar de los Cantares 7:4",
+      "answers": [
+        {
+          "text": "Como palomas junto a los arroyos",
+          "isCorrect": false
+        },
+        {
+          "text": "Como las pesqueras de Hesbón",
+          "isCorrect": true
+        },
+        {
+          "text": "Como cachos de granada",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la púrpura del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto su cabeza?",
+      "explanation": "El versículo dice: Tu cabeza encima de ti, como el Carmelo; y el cabello de tu cabeza, como la púrpura del rey.",
+      "bibleReference": "Cantar de los Cantares 7:5",
+      "answers": [
+        {
+          "text": "Como el oro finísimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el monte de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el Carmelo",
+          "isCorrect": true
+        },
+        {
+          "text": "Como el monte Hermón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué árbol compara el texto su estatura?",
+      "explanation": "El versículo dice: ¡Y tu estatura es semejante á la palma, y tus pechos á los racimos!",
+      "bibleReference": "Cantar de los Cantares 7:7",
+      "answers": [
+        {
+          "text": "A la palma",
+          "isCorrect": true
+        },
+        {
+          "text": "Al manzano",
+          "isCorrect": false
+        },
+        {
+          "text": "Al cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "A la higuera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto el olor de su boca?",
+      "explanation": "El versículo dice que sus pechos serán como racimos de vid, y el olor de su boca como de manzanas.",
+      "bibleReference": "Cantar de los Cantares 7:8",
+      "answers": [
+        {
+          "text": "Como de mandrágoras",
+          "isCorrect": false
+        },
+        {
+          "text": "Como de manzanas",
+          "isCorrect": true
+        },
+        {
+          "text": "Como de granados",
+          "isCorrect": false
+        },
+        {
+          "text": "Como de lirios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto su paladar, y qué dice que hace?",
+      "explanation": "El versículo dice que su paladar es como el buen vino, que entra suavemente y hace hablar los labios de los viejos.",
+      "bibleReference": "Cantar de los Cantares 7:9",
+      "answers": [
+        {
+          "text": "Con la leche, y abre la fuente sellada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el panal, y llena la casa de olor",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la miel, y alegra a las doncellas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el buen vino, y hace hablar a los viejos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué propone ella a su amado en el versículo 11?",
+      "explanation": "El versículo dice: Ven, oh amado mío, salgamos al campo, moremos en las aldeas.",
+      "bibleReference": "Cantar de los Cantares 7:11",
+      "answers": [
+        {
+          "text": "Salir al campo y morar en las aldeas",
+          "isCorrect": true
+        },
+        {
+          "text": "Subir a la palma y asir sus ramos",
+          "isCorrect": false
+        },
+        {
+          "text": "Entrar en la cámara de su madre",
+          "isCorrect": false
+        },
+        {
+          "text": "Mirar desde la torre del Líbano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué han dado olor?",
+      "explanation": "El texto dice: Las mandrágoras han dado olor, y á nuestras puertas hay toda suerte de dulces frutas.",
+      "bibleReference": "Cantar de los Cantares 7:13",
+      "answers": [
+        {
+          "text": "Los lirios",
+          "isCorrect": false
+        },
+        {
+          "text": "Las vides",
+          "isCorrect": false
+        },
+        {
+          "text": "Las mandrágoras",
+          "isCorrect": true
+        },
+        {
+          "text": "Los granados",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

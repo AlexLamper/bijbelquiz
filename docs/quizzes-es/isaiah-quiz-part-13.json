@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Isaías 13: la carga de Babilonia, el día de Jehová, los Medos y la ciudad que nunca más será habitada.",
+  "slug": "isaiah-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿sobre qué ciudad es la carga que vio Isaías, hijo de Amoz?",
+      "explanation": "El capítulo comienza: \"CARGA de Babilonia, que vió Isaías, hijo de Amoz\".",
+      "bibleReference": "Isaías 13:1",
+      "answers": [
+        {
+          "text": "Sobre Damasco",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre Moab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el texto levantar sobre un alto monte?",
+      "explanation": "El verso dice: \"Levantad bandera sobre un alto monte; alzad la voz á ellos, alzad la mano\".",
+      "bibleReference": "Isaías 13:2",
+      "answers": [
+        {
+          "text": "Una bandera",
+          "isCorrect": true
+        },
+        {
+          "text": "Un altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Una torre",
+          "isCorrect": false
+        },
+        {
+          "text": "Una tienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el verso 4, ¿quién ordena las tropas de la batalla?",
+      "explanation": "Entre el murmullo de reinos y de gentes reunidas, el texto dice: \"Jehová de los ejércitos ordena las tropas de la batalla\".",
+      "bibleReference": "Isaías 13:4",
+      "answers": [
+        {
+          "text": "Los príncipes de las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los valientes de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Los reyes de las naciones reunidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová de los ejércitos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué manda el texto aullar, en el verso 6?",
+      "explanation": "El verso dice: \"Aullad, porque cerca está el día de Jehová; vendrá como asolamiento del Todopoderoso\".",
+      "bibleReference": "Isaías 13:6",
+      "answers": [
+        {
+          "text": "Porque el río se ha secado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque cerca está el día de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque los muros han sido levantados",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el rey ha muerto en su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 8, ¿con qué se comparan los dolores que vendrán sobre ellos?",
+      "explanation": "El texto dice que se llenarán de terror y \"tendrán dolores como mujer de parto\".",
+      "bibleReference": "Isaías 13:8",
+      "answers": [
+        {
+          "text": "Con los dolores de una mujer de parto",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el cansancio del segador en la siega",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el hambre de los menesterosos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las heridas de los armados en la puerta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 10 que harán el sol y la luna?",
+      "explanation": "El texto dice que \"el sol se oscurecerá en naciendo; y la luna no echará su resplandor\".",
+      "bibleReference": "Isaías 13:10",
+      "answers": [
+        {
+          "text": "Que se detendrán en medio del cielo hasta la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volverán atrás sobre el monte del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el sol se oscurecerá al nacer y la luna no dará su resplandor",
+          "isCorrect": true
+        },
+        {
+          "text": "Que alumbrarán siete veces más que antes de aquel día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el verso 12, ¿con qué compara el texto el valor que tendrá el hombre?",
+      "explanation": "El verso dice: \"Haré más precioso que el oro fino al varón, y más que el oro de Ophir al hombre\".",
+      "bibleReference": "Isaías 13:12",
+      "answers": [
+        {
+          "text": "Con las piedras del monte del testimonio",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el oro fino y el oro de Ophir",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la plata de los mercaderes de Sidón",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los vasos de beber de la casa del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 17, ¿a quiénes despierta Jehová contra ellos, y qué no codiciarán?",
+      "explanation": "El texto dice: \"yo despierto contra ellos á los Medos, que no curarán de la plata, ni codiciarán oro\".",
+      "bibleReference": "Isaías 13:17",
+      "answers": [
+        {
+          "text": "A los Caldeos, que no codiciarán vino",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Asirios, que no codiciarán tierras",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Arabes, que no codiciarán ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "A los Medos, que no codiciarán oro ni curarán de la plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Como qué dice el verso 19 que será Babilonia?",
+      "explanation": "El texto dice que Babilonia, hermosura de reinos, \"será como Sodoma y Gomorra, á las que trastornó Dios\".",
+      "bibleReference": "Isaías 13:19",
+      "answers": [
+        {
+          "text": "Como un huerto de riego junto al río",
+          "isCorrect": false
+        },
+        {
+          "text": "Como una viña cercada en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Como Sodoma y Gomorra",
+          "isCorrect": true
+        },
+        {
+          "text": "Como la gloria de los hijos de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes dormirán en el lugar que queda deshabitado, según el verso 21?",
+      "explanation": "El texto dice: \"dormirán allí bestias fieras, y sus casas se llenarán de hurones, allí habitarán hijas del buho, y allí saltarán peludos\".",
+      "bibleReference": "Isaías 13:21",
+      "answers": [
+        {
+          "text": "Bestias fieras, hurones, hijas del buho y peludos",
+          "isCorrect": true
+        },
+        {
+          "text": "Pastores con sus majadas y el Arabe con su tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Mercaderes y nobles venidos de lejos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes de la tierra con sus carros",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

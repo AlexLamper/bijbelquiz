@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre Jeremías 23: el ay de los pastores, el renuevo justo de David, los profetas de mentira y la palabra como fuego.",
+  "slug": "jeremiah-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes dirige Jehová el ay con que empieza el capítulo?",
+      "explanation": "El primer verso dice: ¡Ay de los pastores que desperdician y derraman las ovejas de mi majada!",
+      "bibleReference": "Jeremías 23:1",
+      "answers": [
+        {
+          "text": "A los reyes de las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los herreros de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A los jueces de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A los pastores de su majada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría con el resto de sus ovejas?",
+      "explanation": "El verso dice que las recogerá de todas las tierras adonde las echó y las hará volver a sus moradas.",
+      "bibleReference": "Jeremías 23:3",
+      "answers": [
+        {
+          "text": "Dejarlas en las tierras ajenas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hacerlas volver a sus moradas",
+          "isCorrect": true
+        },
+        {
+          "text": "Entregarlas a otros pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Venderlas a los Caldeos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que despertaría a David en los días que vienen?",
+      "explanation": "El verso dice que despertará a David renuevo justo, y que reinará Rey y hará juicio y justicia en la tierra.",
+      "bibleReference": "Jeremías 23:5",
+      "answers": [
+        {
+          "text": "Un profeta como Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Una casa de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "Un renuevo justo",
+          "isCorrect": true
+        },
+        {
+          "text": "Un sacerdote fiel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dice el texto que le llamarán?",
+      "explanation": "El verso dice que en sus días será salvo Judá, y que este será su nombre: JEHOVÁ, JUSTICIA NUESTRA.",
+      "bibleReference": "Jeremías 23:6",
+      "answers": [
+        {
+          "text": "JEHOVÁ, JUSTICIA NUESTRA",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehová, paz nuestra",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová de los ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová, roca nuestra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "A causa de los profetas, ¿cómo dice el que habla que estuvo delante de Jehová?",
+      "explanation": "El verso dice que su corazón está quebrantado y sus huesos tiemblan, y que estuvo como hombre borracho y como hombre a quien dominó el vino.",
+      "bibleReference": "Jeremías 23:9",
+      "answers": [
+        {
+          "text": "Como hombre mudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Como niño pequeño",
+          "isCorrect": false
+        },
+        {
+          "text": "Como hombre borracho",
+          "isCorrect": true
+        },
+        {
+          "text": "Como hombre ciego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová de los ejércitos que daría de comer y de beber a aquellos profetas?",
+      "explanation": "El verso dice: He aquí que yo les hago comer ajenjos, y les haré beber aguas de hiel.",
+      "bibleReference": "Jeremías 23:15",
+      "answers": [
+        {
+          "text": "Pan y agua por medida",
+          "isCorrect": false
+        },
+        {
+          "text": "Trigo y vino nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne y leche de cabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Ajenjos y aguas de hiel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué manda Jehová no escuchar las palabras de aquellos profetas?",
+      "explanation": "El verso dice que os hacen desvanecer, porque hablan visión de su corazón y no de la boca de Jehová.",
+      "bibleReference": "Jeremías 23:16",
+      "answers": [
+        {
+          "text": "Porque hablan visión de su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque hablan en lengua extraña",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque hablan solo a los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque hablan en los caminos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara Jehová su palabra en el verso 29?",
+      "explanation": "El verso pregunta: ¿No es mi palabra como el fuego, y como martillo que quebranta la piedra?",
+      "bibleReference": "Jeremías 23:29",
+      "answers": [
+        {
+          "text": "Con la lluvia y el rocío",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el fuego y el martillo",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la miel y la leche",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el viento del aquilón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que había oído decir a aquellos profetas que profetizaban mentira en su nombre?",
+      "explanation": "El verso dice que los oyó profetizando mentira en su nombre, diciendo: Soñé, soñé.",
+      "bibleReference": "Jeremías 23:25",
+      "answers": [
+        {
+          "text": "Vimos, vimos",
+          "isCorrect": false
+        },
+        {
+          "text": "Oímos, oímos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hablé, hablé",
+          "isCorrect": false
+        },
+        {
+          "text": "Soñé, soñé",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el último verso, ¿qué pondrá Jehová sobre ellos?",
+      "explanation": "El verso dice que pondrá sobre ellos afrenta perpetua y eterna confusión que nunca borrará el olvido.",
+      "bibleReference": "Jeremías 23:40",
+      "answers": [
+        {
+          "text": "Corona de gloria",
+          "isCorrect": false
+        },
+        {
+          "text": "Afrenta perpetua",
+          "isCorrect": true
+        },
+        {
+          "text": "Lluvia a su tiempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pastores fieles",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

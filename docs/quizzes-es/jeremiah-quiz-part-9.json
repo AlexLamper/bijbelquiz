@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Jeremías 9: el llanto por la hija del pueblo, la lengua que tira mentira y el único motivo para alabarse.",
+  "slug": "jeremiah-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué desea el que habla que se tornasen su cabeza y sus ojos?",
+      "explanation": "El capítulo empieza con el deseo de que su cabeza se tornase aguas y sus ojos fuentes de aguas, para llorar día y noche los muertos de la hija de su pueblo.",
+      "bibleReference": "Jeremías 9:1",
+      "answers": [
+        {
+          "text": "Su cabeza en polvo y sus ojos en ceniza",
+          "isCorrect": false
+        },
+        {
+          "text": "Su cabeza en aguas y sus ojos en fuentes de aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Su boca en espada y su lengua en saeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Su corazón en piedra y sus manos en hierro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide tener en el desierto para dejar a su pueblo?",
+      "explanation": "El versículo dice: ¡Oh quién me diese en el desierto un mesón de caminantes, para que dejase mi pueblo!",
+      "bibleReference": "Jeremías 9:2",
+      "answers": [
+        {
+          "text": "Una tienda de pastores",
+          "isCorrect": false
+        },
+        {
+          "text": "Una cueva entre las peñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un huerto junto a las aguas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mesón de caminantes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿con qué se compara la lengua del pueblo?",
+      "explanation": "El texto dice que hicieron que su lengua, como su arco, tirase mentira, y que no se fortalecieron por verdad en la tierra.",
+      "bibleReference": "Jeremías 9:3",
+      "answers": [
+        {
+          "text": "Con un arco que tira mentira",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una espada de dos filos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un fuego que lo consume todo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un veneno de serpientes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué arma compara el versículo 8 la lengua de ellos?",
+      "explanation": "El versículo dice que saeta afilada es la lengua de ellos, que habla paz con su amigo y dentro de sí pone sus asechanzas.",
+      "bibleReference": "Jeremías 9:8",
+      "answers": [
+        {
+          "text": "Con un lazo escondido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un fuego devorador",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una saeta afilada",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un martillo de hierro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué dice Jehová que pondrá a Jerusalem?",
+      "explanation": "Jehová dice que pondrá a Jerusalem en montones, por morada de culebras, y las ciudades de Judá en asolamiento.",
+      "bibleReference": "Jeremías 9:11",
+      "answers": [
+        {
+          "text": "En jardines, por morada de reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "En huertos, por morada de pastores",
+          "isCorrect": false
+        },
+        {
+          "text": "En pedregales, por morada de leones",
+          "isCorrect": false
+        },
+        {
+          "text": "En montones, por morada de culebras",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué dará Jehová a este pueblo de comer y de beber?",
+      "explanation": "Jehová de los ejércitos dice que a este pueblo le dará a comer ajenjos y a beber aguas de hiel.",
+      "bibleReference": "Jeremías 9:15",
+      "answers": [
+        {
+          "text": "Leche y miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Ajenjos y aguas de hiel",
+          "isCorrect": true
+        },
+        {
+          "text": "Pan y agua de la roca",
+          "isCorrect": false
+        },
+        {
+          "text": "Trigo y vino nuevo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda llamar Jehová en el versículo 17?",
+      "explanation": "Jehová de los ejércitos manda considerar y llamar plañideras que vengan, y enviar por las sabias.",
+      "bibleReference": "Jeremías 9:17",
+      "answers": [
+        {
+          "text": "A los sacerdotes y a los levitas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes y a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "A plañideras y a las sabias",
+          "isCorrect": true
+        },
+        {
+          "text": "A los segadores y a los pastores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 21, ¿por dónde ha subido la muerte?",
+      "explanation": "El versículo dice que la muerte ha subido por las ventanas y ha entrado en los palacios, para talar los niños de las calles.",
+      "bibleReference": "Jeremías 9:21",
+      "answers": [
+        {
+          "text": "Por las ventanas, y ha entrado en los palacios",
+          "isCorrect": true
+        },
+        {
+          "text": "Por las puertas, y ha entrado en el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Por los caminos, y ha entrado en los campos",
+          "isCorrect": false
+        },
+        {
+          "text": "Por los muros, y ha entrado en las torres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué dice Jehová que no se alaben el sabio, el valiente y el rico?",
+      "explanation": "Jehová dice que no se alabe el sabio en su sabiduría, ni el valiente en su valentía, ni el rico en sus riquezas.",
+      "bibleReference": "Jeremías 9:23",
+      "answers": [
+        {
+          "text": "De su casa, su tierra y sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "De su ley, su templo y sus altares",
+          "isCorrect": false
+        },
+        {
+          "text": "De su nombre, su fama y su honra",
+          "isCorrect": false
+        },
+        {
+          "text": "De su sabiduría, su valentía y sus riquezas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué debe alabarse el que se hubiere de alabar?",
+      "explanation": "El texto dice que se alabe en entender y conocer a Jehová, que hace misericordia, juicio y justicia en la tierra.",
+      "bibleReference": "Jeremías 9:24",
+      "answers": [
+        {
+          "text": "En guardar los ayunos y las fiestas",
+          "isCorrect": false
+        },
+        {
+          "text": "En entender y conocer a Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En edificar altares en los collados",
+          "isCorrect": false
+        },
+        {
+          "text": "En multiplicar ofrendas y holocaustos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

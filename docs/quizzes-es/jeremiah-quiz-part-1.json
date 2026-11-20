@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Jeremías 1: el llamamiento del profeta, la vara de almendro, la olla que hierve y el mal que viene del aquilón.",
+  "slug": "jeremiah-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde eran los sacerdotes entre los que estaba Jeremías hijo de Hilcías?",
+      "explanation": "El primer verso dice que eran de los sacerdotes que estuvieron en Anathoth, en tierra de Benjamín.",
+      "bibleReference": "Jeremías 1:1",
+      "answers": [
+        {
+          "text": "De Silo, en tierra de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Anathoth, en tierra de Benjamín",
+          "isCorrect": true
+        },
+        {
+          "text": "De Jerusalem, en tierra de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Tecoa, cerca del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué año del reinado de Josías vino a él la palabra de Jehová?",
+      "explanation": "El verso dice que la palabra de Jehová fue a él en los días de Josías hijo de Amón, rey de Judá, en el año décimotercio de su reinado.",
+      "bibleReference": "Jeremías 1:2",
+      "answers": [
+        {
+          "text": "En el año décimotercio",
+          "isCorrect": true
+        },
+        {
+          "text": "En el año catorce",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año undécimo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año quinto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso, ¿para qué lo dio Jehová antes de que saliese de la matriz?",
+      "explanation": "Jehová dijo: antes que te formase en el vientre te conocí, y antes que saliese de la matriz te santifiqué, te di por profeta a las gentes.",
+      "bibleReference": "Jeremías 1:5",
+      "answers": [
+        {
+          "text": "Por sacerdote en Anathoth",
+          "isCorrect": false
+        },
+        {
+          "text": "Por rey sobre la casa de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Por juez de todo Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Por profeta a las gentes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió él cuando Jehová le habló?",
+      "explanation": "Respondió: He aquí, no sé hablar, porque soy niño.",
+      "bibleReference": "Jeremías 1:6",
+      "answers": [
+        {
+          "text": "Que iría de buena voluntad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que temía al rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no sabía hablar, porque era niño",
+          "isCorrect": true
+        },
+        {
+          "text": "Que pedía primero una señal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová cuando extendió su mano?",
+      "explanation": "Jehová extendió su mano y tocó sobre su boca, y le dijo: He aquí he puesto mis palabras en tu boca.",
+      "bibleReference": "Jeremías 1:9",
+      "answers": [
+        {
+          "text": "Tocó sobre su boca",
+          "isCorrect": true
+        },
+        {
+          "text": "Le abrió los oídos",
+          "isCorrect": false
+        },
+        {
+          "text": "Le puso una vara en la mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Le ciñó los lomos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso, ¿sobre qué fue puesto aquel día, para arrancar y para edificar?",
+      "explanation": "Jehová dijo: Mira que te he puesto en este día sobre gentes y sobre reinos, para arrancar y para destruir, y para edificar y para plantar.",
+      "bibleReference": "Jeremías 1:10",
+      "answers": [
+        {
+          "text": "Sobre los sacerdotes de Anathoth",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre gentes y sobre reinos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre el templo de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las ciudades de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando Jehová le preguntó qué veía, ¿qué respondió la primera vez?",
+      "explanation": "A la pregunta de Jehová respondió: Yo veo una vara de almendro. Y Jehová le dijo: Bien has visto, porque yo apresuro mi palabra para ponerla por obra.",
+      "bibleReference": "Jeremías 1:11",
+      "answers": [
+        {
+          "text": "Una olla que hierve",
+          "isCorrect": false
+        },
+        {
+          "text": "Un muro de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vara de almendro",
+          "isCorrect": true
+        },
+        {
+          "text": "Una columna de hierro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué parte estaba el haz de la olla que hervía?",
+      "explanation": "El verso dice que vio una olla que hierve, y que su haz estaba de la parte del aquilón.",
+      "bibleReference": "Jeremías 1:13",
+      "answers": [
+        {
+          "text": "De la parte del mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "De la parte del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "De la parte del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "De la parte del aquilón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dijo Jehová que proferiría sus juicios?",
+      "explanation": "Jehová dijo que proferiría sus juicios a causa de toda su malicia, contra los que lo dejaron, incensaron a dioses extraños y se encorvaron a hechuras de sus manos.",
+      "bibleReference": "Jeremías 1:16",
+      "answers": [
+        {
+          "text": "Porque no sembraron la tierra de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no pagaron el tributo al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque lo dejaron e incensaron a dioses extraños",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque no oyeron la voz de sus profetas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Como qué lo puso Jehová aquel día, frente a los reyes, los príncipes y los sacerdotes de Judá?",
+      "explanation": "Jehová dijo que lo puso como ciudad fortalecida, como columna de hierro y como muro de bronce sobre toda la tierra.",
+      "bibleReference": "Jeremías 1:18",
+      "answers": [
+        {
+          "text": "Como ciudad fortalecida, columna de hierro y muro de bronce",
+          "isCorrect": true
+        },
+        {
+          "text": "Como vara de almendro y olla que hierve sobre el fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Como atalaya puesto sobre las puertas de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Como pastor que apacienta de ciencia y de inteligencia",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

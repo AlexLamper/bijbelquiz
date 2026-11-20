@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre Jeremías 26: la palabra en el atrio del templo, la casa como Silo, el juicio ante los príncipes y el caso de Urías.",
+  "slug": "jeremiah-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En el principio del reinado de quién vino esta palabra de Jehová?",
+      "explanation": "El primer verso dice que fue en el principio del reinado de Joacim hijo de Josías, rey de Judá.",
+      "bibleReference": "Jeremías 26:1",
+      "answers": [
+        {
+          "text": "De Sedechîas rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ezechîas rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jechônías hijo de Joacim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Joacim hijo de Josías",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde le mandó Jehová ponerse para hablar a todas las ciudades de Judá?",
+      "explanation": "El verso dice: Ponte en el atrio de la casa de Jehová, y habla a todas las ciudades de Judá que vienen para adorar.",
+      "bibleReference": "Jeremías 26:2",
+      "answers": [
+        {
+          "text": "En la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de la piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "En el atrio de la casa de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En la casa del rey de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Si no le oyeren para andar en su ley, ¿como qué pondría Jehová esta casa?",
+      "explanation": "El verso dice: Yo pondré esta casa como Silo, y daré esta ciudad en maldición a todas las gentes de la tierra.",
+      "bibleReference": "Jeremías 26:6",
+      "answers": [
+        {
+          "text": "Como Silo",
+          "isCorrect": true
+        },
+        {
+          "text": "Como Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Como Sodoma",
+          "isCorrect": false
+        },
+        {
+          "text": "Como Morasti",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijeron los sacerdotes, los profetas y todo el pueblo cuando le echaron mano?",
+      "explanation": "El verso dice que le echaron mano cuando acabó de hablar, diciendo: De cierto morirás.",
+      "bibleReference": "Jeremías 26:8",
+      "answers": [
+        {
+          "text": "Habla otra vez mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "De cierto morirás",
+          "isCorrect": true
+        },
+        {
+          "text": "Bendito seas de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Vete a tierra de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se sentaron los príncipes de Judá cuando subieron a la casa de Jehová?",
+      "explanation": "El verso dice que subieron de casa del rey a la casa de Jehová y se sentaron en la entrada de la puerta nueva de Jehová.",
+      "bibleReference": "Jeremías 26:10",
+      "answers": [
+        {
+          "text": "En el atrio de los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al altar del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "En la entrada de la puerta nueva",
+          "isCorrect": true
+        },
+        {
+          "text": "En la casa del rey Joacim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les advirtió Jeremías que sucedería si lo mataban?",
+      "explanation": "El verso dice que si lo matasen echarían sangre inocente sobre sí mismos, sobre esta ciudad y sobre sus moradores.",
+      "bibleReference": "Jeremías 26:15",
+      "answers": [
+        {
+          "text": "Que verían venir lluvia del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que todos serían llevados a Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quedarían libres de toda culpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que echarían sangre inocente sobre sí",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron los príncipes y todo el pueblo a los sacerdotes y profetas?",
+      "explanation": "El verso dice que respondieron que este hombre no había incurrido en pena de muerte, porque les había hablado en nombre de Jehová.",
+      "bibleReference": "Jeremías 26:16",
+      "answers": [
+        {
+          "text": "Que debía morir ese mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no merecía pena de muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Que había de ser echado preso",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debía salir hacia Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué profeta recordaron los ancianos, que profetizó en tiempo de Ezechîas rey de Judá?",
+      "explanation": "El verso dice que Miqueas de Morasti profetizó en tiempo de Ezechîas rey de Judá que Sión sería arada como campo.",
+      "bibleReference": "Jeremías 26:18",
+      "answers": [
+        {
+          "text": "Miqueas de Morasti",
+          "isCorrect": true
+        },
+        {
+          "text": "Urías de Chîriath-jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "Semaías de Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Elnathán hijo de Acbor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió con Urías, que había huido a Egipto?",
+      "explanation": "El texto dice que lo sacaron de Egipto y lo trajeron al rey Joacim, que lo hirió a cuchillo y echó su cuerpo en los sepulcros del vulgo.",
+      "bibleReference": "Jeremías 26:21-23",
+      "answers": [
+        {
+          "text": "Murió en Egipto siendo ya viejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvió y fue hecho príncipe de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quedó escondido en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo trajeron de Egipto y lo mataron",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el último verso, ¿de quién era la mano que estaba con Jeremías?",
+      "explanation": "El verso dice que la mano de Ahicam hijo de Saphán era con Jeremías, para que no lo entregasen al pueblo para matarlo.",
+      "bibleReference": "Jeremías 26:24",
+      "answers": [
+        {
+          "text": "De Elnathán hijo de Acbor",
+          "isCorrect": false
+        },
+        {
+          "text": "De Semaías de Chîriath-jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ahicam hijo de Saphán",
+          "isCorrect": true
+        },
+        {
+          "text": "De Baruc hijo de Nerías",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

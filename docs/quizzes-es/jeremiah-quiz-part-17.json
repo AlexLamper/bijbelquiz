@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre Jeremías 17: el pecado escrito con cincel de hierro, la retama y el árbol junto a las aguas, y el día del sábado.",
+  "slug": "jeremiah-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿con qué está escrito el pecado de Judá?",
+      "explanation": "El versículo dice que el pecado de Judá está escrito con cincel de hierro y con punta de diamante, esculpido en la tabla de su corazón.",
+      "bibleReference": "Jeremías 17:1",
+      "answers": [
+        {
+          "text": "Con tinta y pluma de escriba",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sangre sobre los umbrales",
+          "isCorrect": false
+        },
+        {
+          "text": "Con fuego en las tablas de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cincel de hierro y punta de diamante",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién declara maldito el versículo 5?",
+      "explanation": "El versículo dice: Maldito el varón que confía en el hombre, y pone carne por su brazo, y su corazón se aparta de Jehová.",
+      "bibleReference": "Jeremías 17:5",
+      "answers": [
+        {
+          "text": "Al varón que confía en el hombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Al varón que no sube a las fiestas",
+          "isCorrect": false
+        },
+        {
+          "text": "Al varón que jura en falso",
+          "isCorrect": false
+        },
+        {
+          "text": "Al varón que oprime al pobre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto a ese varón?",
+      "explanation": "El versículo dice que será como la retama en el desierto, y que morará en las securas, en tierra despoblada y deshabitada.",
+      "bibleReference": "Jeremías 17:6",
+      "answers": [
+        {
+          "text": "Con el humo que se deshace",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la retama en el desierto",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la paja que lleva el viento",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la caña quebrada del río",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al varón que se fía en Jehová?",
+      "explanation": "El texto llama bendito al varón cuya confianza es Jehová, y dice que será como el árbol plantado junto a las aguas, que echa sus raíces junto a la corriente.",
+      "bibleReference": "Jeremías 17:7-8",
+      "answers": [
+        {
+          "text": "Con un monte firme que no se mueve",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una fuente que nunca se seca",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un árbol plantado junto a las aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un olivo en medio de la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 9 acerca del corazón?",
+      "explanation": "El versículo dice que engañoso es el corazón más que todas las cosas, y perverso, y pregunta quién lo conocerá.",
+      "bibleReference": "Jeremías 17:9",
+      "answers": [
+        {
+          "text": "Que es engañoso más que todas las cosas, y perverso",
+          "isCorrect": true
+        },
+        {
+          "text": "Que es blando como la cera delante del fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es duro como la piedra del molino",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es limpio en los que buscan a Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué ave compara el texto al que allega riquezas sin justicia?",
+      "explanation": "El versículo dice que es como la perdiz que cubre lo que no puso, y que en medio de sus días dejará esas riquezas.",
+      "bibleReference": "Jeremías 17:11",
+      "answers": [
+        {
+          "text": "Con el águila que hace su nido en lo alto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la perdiz que cubre lo que no puso",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el cuervo que no vuelve al arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la cigüeña que conoce su tiempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué les pasa a los que dejan a Jehová?",
+      "explanation": "El versículo dice que todos los que dejan a Jehová serán avergonzados, y los que de él se apartan serán escritos en el polvo.",
+      "bibleReference": "Jeremías 17:13",
+      "answers": [
+        {
+          "text": "Serán llevados a tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Serán borrados del libro de la vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Serán hechos siervos de sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Serán avergonzados y escritos en el polvo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el versículo 14, y con qué razón?",
+      "explanation": "El versículo dice: Sáname, oh Jehová, y seré sano; sálvame, y seré salvo: porque tú eres mi alabanza.",
+      "bibleReference": "Jeremías 17:14",
+      "answers": [
+        {
+          "text": "Ser oído y respondido, porque Jehová es su juez",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser guardado y escondido, porque Jehová es su roca",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser sanado y salvo, porque Jehová es su alabanza",
+          "isCorrect": true
+        },
+        {
+          "text": "Ser levantado y honrado, porque Jehová es su rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda Jehová acerca del día del sábado en el versículo 21?",
+      "explanation": "El versículo dice: Guardaos por vuestras vidas, y no traigáis carga en el día del sábado, para meter por las puertas de Jerusalem.",
+      "bibleReference": "Jeremías 17:21",
+      "answers": [
+        {
+          "text": "No encender fuego en las casas en ese día",
+          "isCorrect": false
+        },
+        {
+          "text": "No traer carga por las puertas en ese día",
+          "isCorrect": true
+        },
+        {
+          "text": "No salir de la ciudad en ese día",
+          "isCorrect": false
+        },
+        {
+          "text": "No comprar ni vender en ese día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucederá si no santifican el día del sábado?",
+      "explanation": "El último versículo dice que si no le oyeren para santificar el sábado, hará encender fuego en sus puertas, y consumirá los palacios de Jerusalem, y no se apagará.",
+      "bibleReference": "Jeremías 17:27",
+      "answers": [
+        {
+          "text": "Se encenderá fuego en sus puertas y consumirá los palacios",
+          "isCorrect": true
+        },
+        {
+          "text": "Se cerrarán las puertas y no habrá quien las abra",
+          "isCorrect": false
+        },
+        {
+          "text": "Se secarán las fuentes y no habrá agua en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Se irán los reyes y los príncipes de la casa de David",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

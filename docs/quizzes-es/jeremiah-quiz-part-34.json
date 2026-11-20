@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 34",
+  "description": "Diez preguntas sobre Jeremías 34: el mensaje a Sedechîas, el concierto de libertad para los siervos y el pacto quebrantado.",
+  "slug": "jeremiah-quiz-part-34",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué debía decir Jeremías a Sedechîas acerca de aquella ciudad?",
+      "explanation": "Jehová dijo que entregaría esta ciudad en mano del rey de Babilonia y la abrasaría con fuego.",
+      "bibleReference": "Jeremías 34:2",
+      "answers": [
+        {
+          "text": "Que Jehová la entregaría al rey de Babilonia y la abrasaría",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Jehová la guardaría de los Caldeos por amor de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová la daría a los hijos de Ammón por heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová la dejaría desierta sin que nadie la tomase",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la palabra de Jehová, ¿qué verían los ojos de Sedechîas?",
+      "explanation": "El versículo dice que sus ojos verán los ojos del rey de Babilonia, y que él le hablará boca a boca.",
+      "bibleReference": "Jeremías 34:3",
+      "answers": [
+        {
+          "text": "El templo reedificado",
+          "isCorrect": false
+        },
+        {
+          "text": "La huida de los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ojos del rey de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "La muerte de Nabucodonosor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová acerca de la muerte de Sedechîas?",
+      "explanation": "Jehová dijo: no morirás a cuchillo; en paz morirás, y así quemarán por ti como por los reyes primeros.",
+      "bibleReference": "Jeremías 34:4-5",
+      "answers": [
+        {
+          "text": "Que moriría a cuchillo en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no moriría a cuchillo, sino en paz",
+          "isCorrect": true
+        },
+        {
+          "text": "Que moriría de hambre en la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no moriría, sino que viviría cien años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ciudades fuertes de Judá quedaban cuando el ejército de Babilonia peleaba contra Jerusalem?",
+      "explanation": "El versículo nombra a Lachîs y a Azeca como las ciudades fuertes de Judá que habían quedado.",
+      "bibleReference": "Jeremías 34:7",
+      "answers": [
+        {
+          "text": "Mizpa y Ramá",
+          "isCorrect": false
+        },
+        {
+          "text": "Anathoth y Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "Gabaón y Bethlehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Lachîs y Azeca",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué concierto hizo Sedechîas con todo el pueblo en Jerusalem?",
+      "explanation": "Hizo concierto para promulgarles libertad: que cada uno dejase libres a su siervo y a su sierva hebreos.",
+      "bibleReference": "Jeremías 34:8-9",
+      "answers": [
+        {
+          "text": "Repartir el pan de la plaza de los Panaderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Entregar la ciudad al rey de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Promulgar libertad a los siervos y siervas hebreos",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificar altares en el valle de Hinnom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron después con los siervos que habían dejado libres?",
+      "explanation": "El versículo dice que se arrepintieron e hicieron tornar a los siervos y las siervas, y los sujetaron de nuevo.",
+      "bibleReference": "Jeremías 34:11",
+      "answers": [
+        {
+          "text": "Los hicieron tornar y los sujetaron otra vez",
+          "isCorrect": true
+        },
+        {
+          "text": "Los enviaron a Egipto con dones",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vendieron a los Caldeos por dinero",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dejaron ir con sus mujeres e hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el pacto que Jehová hizo con sus padres, ¿cuántos años debía servir el hermano hebreo antes de ser enviado libre?",
+      "explanation": "El versículo dice: te servirá pues seis años, y lo enviarás libre de ti.",
+      "bibleReference": "Jeremías 34:14",
+      "answers": [
+        {
+          "text": "Tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce años",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis años",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clase de libertad dijo Jehová que les promulgaba a ellos?",
+      "explanation": "Jehová dijo: he aquí que yo os promulgo libertad a cuchillo y a pestilencia y a hambre.",
+      "bibleReference": "Jeremías 34:17",
+      "answers": [
+        {
+          "text": "Libertad para volver a sus ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "Libertad a cuchillo, a pestilencia y a hambre",
+          "isCorrect": true
+        },
+        {
+          "text": "Libertad de servir a los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Libertad para edificar casas y viñas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué habían hecho con un becerro los que celebraron aquel pacto en la presencia de Jehová?",
+      "explanation": "El versículo dice que dividieron en dos partes el becerro y pasaron por medio de ellas.",
+      "bibleReference": "Jeremías 34:18",
+      "answers": [
+        {
+          "text": "Derramaron su sangre sobre el altar del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Escribieron sus nombres en un rollo de libro",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo dividieron en dos partes y pasaron por medio",
+          "isCorrect": true
+        },
+        {
+          "text": "Pusieron piedras grandes en un horno de ladrillos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que serían los cuerpos muertos de aquellos hombres?",
+      "explanation": "Dijo que sus cuerpos muertos serían para comida de las aves del cielo y de las bestias de la tierra.",
+      "bibleReference": "Jeremías 34:20",
+      "answers": [
+        {
+          "text": "Sepultados con los reyes de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Comida de las aves del cielo y de las bestias",
+          "isCorrect": true
+        },
+        {
+          "text": "Llevados a Babilonia en carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Quemados en el valle de Hinnom",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

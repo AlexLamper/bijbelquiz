@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre Jeremías 20: Pashur y el cepo, el nombre Magor-missabib, el fuego en los huesos y la queja del profeta.",
+  "slug": "jeremiah-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién era Pashur, hijo de Immer, que oyó a Jeremías profetizar estas palabras?",
+      "explanation": "El primer verso dice que Pashur, hijo de Immer, era sacerdote y presidía por príncipe en la casa de Jehová.",
+      "bibleReference": "Jeremías 20:1",
+      "answers": [
+        {
+          "text": "Un escriba del rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Un capitán del ejército de los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un sacerdote que presidía en la casa de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Un profeta que venía de tierra ajena",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Pashur con Jeremías después de oírle?",
+      "explanation": "El texto dice que hirió a Jeremías y lo puso en el cepo que estaba a la puerta de Benjamín.",
+      "bibleReference": "Jeremías 20:2",
+      "answers": [
+        {
+          "text": "Lo hirió y lo puso en el cepo",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo echó en una cisterna de lodo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo entregó al rey de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo echó fuera de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al sacarlo del cepo, ¿qué nombre dijo Jeremías que Jehová había puesto a Pashur?",
+      "explanation": "Jeremías le dijo que Jehová no había llamado su nombre Pashur, sino Magor-missabib.",
+      "bibleReference": "Jeremías 20:3",
+      "answers": [
+        {
+          "text": "Pashur, como antes",
+          "isCorrect": false
+        },
+        {
+          "text": "Immer, el de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Jeconías, el cautivo",
+          "isCorrect": false
+        },
+        {
+          "text": "Magor-missabib",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En mano de quién dijo Jehová que entregaría a todo Judá?",
+      "explanation": "El verso dice que entregaría a todo Judá en mano del rey de Babilonia, que los transportaría allá.",
+      "bibleReference": "Jeremías 20:4",
+      "answers": [
+        {
+          "text": "En mano del rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "En mano del rey de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "En mano del rey de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "En mano de los sacerdotes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que daría en manos de los enemigos de la ciudad?",
+      "explanation": "El verso dice que daría todos los tesoros de los reyes de Judá en manos de sus enemigos, y que los saquearían.",
+      "bibleReference": "Jeremías 20:5",
+      "answers": [
+        {
+          "text": "Los tesoros de los reyes de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "El arca del pacto de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Los libros de la ley de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Las puertas y los muros del templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dijo Jeremías que Pashur moriría y sería enterrado?",
+      "explanation": "El verso dice que Pashur y todos los moradores de su casa irían cautivos, que entraría en Babilonia y allí moriría y sería enterrado.",
+      "bibleReference": "Jeremías 20:6",
+      "answers": [
+        {
+          "text": "En Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "En Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando dijo que no hablaría más en el nombre de Jehová, ¿qué le sucedió?",
+      "explanation": "El verso dice que fue en su corazón como un fuego ardiente metido en sus huesos, y que trabajó por sufrirlo y no pudo.",
+      "bibleReference": "Jeremías 20:9",
+      "answers": [
+        {
+          "text": "Se quedó mudo muchos días",
+          "isCorrect": false
+        },
+        {
+          "text": "Fue en su corazón como un fuego ardiente",
+          "isCorrect": true
+        },
+        {
+          "text": "Sintió gran reposo en su alma",
+          "isCorrect": false
+        },
+        {
+          "text": "Soñó un sueño en la noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara a Jehová, que está con él frente a sus perseguidores?",
+      "explanation": "El verso dice: Mas Jehová está conmigo como poderoso gigante; por tanto los que me persiguen tropezarán.",
+      "bibleReference": "Jeremías 20:11",
+      "answers": [
+        {
+          "text": "Con un pastor manso",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un viento suave",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un juez callado",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un poderoso gigante",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué maldice el que habla en el verso 14?",
+      "explanation": "El verso dice: Maldito el día en que nací; el día en que mi madre me parió no sea bendito.",
+      "bibleReference": "Jeremías 20:14",
+      "answers": [
+        {
+          "text": "La casa de Pashur",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "El día en que nació",
+          "isCorrect": true
+        },
+        {
+          "text": "El cepo de la puerta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace el que habla en el último verso del capítulo?",
+      "explanation": "El verso pregunta: ¿Para qué salí del vientre? ¿para ver trabajo y dolor, y que mis días se gastasen en afrenta?",
+      "bibleReference": "Jeremías 20:18",
+      "answers": [
+        {
+          "text": "¿Para qué salí del vientre?",
+          "isCorrect": true
+        },
+        {
+          "text": "¿Hasta cuándo callarás, Jehová?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Quién me librará de mis enemigos?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Dónde están ahora mis amigos?",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

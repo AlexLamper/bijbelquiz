@@ -1,0 +1,242 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Eclesiastés 9: un mismo suceso para todos, el gozo del pan y del vino, y el pobre sabio que libró la ciudad.",
+  "slug": "ecclesiastes-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿dónde están los justos y los sabios y sus obras?",
+      "explanation": "El texto declara que los justos y los sabios, y sus obras, están en la mano de Dios.",
+      "bibleReference": "Eclesiastés 9:1",
+      "answers": [
+        {
+          "text": "En el sepulcro, sin memoria",
+          "isCorrect": false
+        },
+        {
+          "text": "En el palacio del gran rey",
+          "isCorrect": false
+        },
+        {
+          "text": "En la mano de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "En la pequeña ciudad cercada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que acontece al justo y al impío?",
+      "explanation": "El versículo dice que todo acontece de la misma manera a todos: un mismo suceso ocurre al justo y al impío.",
+      "bibleReference": "Eclesiastés 9:2",
+      "answers": [
+        {
+          "text": "Un mismo suceso",
+          "isCorrect": true
+        },
+        {
+          "text": "Un juicio distinto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mismo sacrificio",
+          "isCorrect": false
+        },
+        {
+          "text": "Una misma paga",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparación dice el texto que aún hay esperanza para el que está entre los vivos?",
+      "explanation": "El versículo dice que mejor es perro vivo que león muerto.",
+      "bibleReference": "Eclesiastés 9:4",
+      "answers": [
+        {
+          "text": "Mejor es la sombra que el sol",
+          "isCorrect": false
+        },
+        {
+          "text": "Mejor es el pobre que el rico",
+          "isCorrect": false
+        },
+        {
+          "text": "Mejor es el pan que el vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Mejor es perro vivo que león muerto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de los muertos?",
+      "explanation": "Los que viven saben que han de morir, mas los muertos nada saben, ni tienen más paga, porque su memoria es puesta en olvido.",
+      "bibleReference": "Eclesiastés 9:5",
+      "answers": [
+        {
+          "text": "Que saben el tiempo y el juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nada saben",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tienen doble paga",
+          "isCorrect": false
+        },
+        {
+          "text": "Que aman y odian aún",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué invita el texto a hacer con el pan y con el vino?",
+      "explanation": "El versículo dice: come tu pan con gozo, y bebe tu vino con alegre corazón.",
+      "bibleReference": "Eclesiastés 9:7",
+      "answers": [
+        {
+          "text": "Guardarlos para el día malo",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartirlos entre los necios",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejarlos por causa del luto",
+          "isCorrect": false
+        },
+        {
+          "text": "Comerlo y beberlo con alegría",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto acerca de los vestidos y de la cabeza?",
+      "explanation": "El versículo dice que en todo tiempo sean blancos tus vestidos, y que nunca falte ungüento sobre tu cabeza.",
+      "bibleReference": "Eclesiastés 9:8",
+      "answers": [
+        {
+          "text": "Que el manto sea de grana",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la cabeza se cubra de ceniza",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los vestidos sean blancos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el ungüento se venda al rico",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que no hay en el sepulcro, adonde tú vas?",
+      "explanation": "El versículo dice que en el sepulcro no hay obra, ni industria, ni ciencia, ni sabiduría.",
+      "bibleReference": "Eclesiastés 9:10",
+      "answers": [
+        {
+          "text": "Obra, ni ciencia, ni sabiduría",
+          "isCorrect": true
+        },
+        {
+          "text": "Ni odio, ni envidia, ni riqueza",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni redes, ni lazos, ni baluartes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni pan, ni vino, ni ungüento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio el autor debajo del sol acerca de la carrera y de la guerra?",
+      "explanation": "Vio que ni es de los ligeros la carrera, ni la guerra de los fuertes, sino que tiempo y ocasión acontece a todos.",
+      "bibleReference": "Eclesiastés 9:11",
+      "answers": [
+        {
+          "text": "Que el ligero siempre gana la carrera",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no son de los ligeros ni de los fuertes",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el sabio nunca llega a tener pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el elocuente pierde todo el favor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién libró la pequeña ciudad cercada por el gran rey?",
+      "explanation": "En la ciudad se halló un hombre pobre y sabio que la libró con su sabiduría, y nadie se acordaba de él.",
+      "bibleReference": "Eclesiastés 9:14-15",
+      "answers": [
+        {
+          "text": "Un príncipe de los fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los guardas de los muros",
+          "isCorrect": false
+        },
+        {
+          "text": "Un hombre pobre y sabio",
+          "isCorrect": true
+        },
+        {
+          "text": "El mismo gran rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿con qué compara el texto la sabiduría?",
+      "explanation": "El último versículo dice que mejor es la sabiduría que las armas de guerra, mas un pecador destruye mucho bien.",
+      "bibleReference": "Eclesiastés 9:18",
+      "answers": [
+        {
+          "text": "Es mejor que las armas de guerra",
+          "isCorrect": true
+        },
+        {
+          "text": "Es mejor que el oro del perfumista",
+          "isCorrect": false
+        },
+        {
+          "text": "Es como el clamor de los necios",
+          "isCorrect": false
+        },
+        {
+          "text": "Es como los peces en la mala red",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

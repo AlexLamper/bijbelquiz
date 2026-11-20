@@ -1,0 +1,242 @@
+{
+  "title": "Cantar de los Cantares Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Cantar de los Cantares 3: la búsqueda por las calles de la ciudad, la litera de Salomón y el día de su desposorio.",
+  "slug": "song-of-solomon-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde buscó ella por las noches al que ama su alma?",
+      "explanation": "El primer versículo dice: Por las noches busqué en mi lecho al que ama mi alma; busquélo, y no lo hallé.",
+      "bibleReference": "Cantar de los Cantares 3:1",
+      "answers": [
+        {
+          "text": "En su lecho",
+          "isCorrect": true
+        },
+        {
+          "text": "En las plazas",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En las viñas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por dónde dice ella que se levantará a buscarlo?",
+      "explanation": "El versículo dice que rodeará por la ciudad, y que lo buscará por las calles y por las plazas.",
+      "bibleReference": "Cantar de los Cantares 3:2",
+      "answers": [
+        {
+          "text": "Por los montes y los collados",
+          "isCorrect": false
+        },
+        {
+          "text": "Por las calles y las plazas",
+          "isCorrect": true
+        },
+        {
+          "text": "Por el huerto y las eras",
+          "isCorrect": false
+        },
+        {
+          "text": "Por las cámaras del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes la hallaron mientras buscaba?",
+      "explanation": "El versículo dice: Halláronme los guardas que rondan la ciudad, y díjeles: ¿Habéis visto al que ama mi alma?",
+      "bibleReference": "Cantar de los Cantares 3:3",
+      "answers": [
+        {
+          "text": "Las doncellas de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Los fuertes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los guardas que rondan la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "Las hijas de Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando lo halló, ¿adónde lo metió?",
+      "explanation": "El versículo dice que trabó de él y no lo dejó hasta que lo metió en casa de su madre, en la cámara de la que la engendró.",
+      "bibleReference": "Cantar de los Cantares 3:4",
+      "answers": [
+        {
+          "text": "A la litera de Salomón",
+          "isCorrect": false
+        },
+        {
+          "text": "A la carroza del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "En casa de su madre",
+          "isCorrect": true
+        },
+        {
+          "text": "A las plazas de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide ella a las doncellas de Jerusalem?",
+      "explanation": "El versículo dice que las conjura para que no despierten ni hagan velar al amor, hasta que quiera.",
+      "bibleReference": "Cantar de los Cantares 3:5",
+      "answers": [
+        {
+          "text": "Que salgan a ver al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la ayuden a buscarlo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que rodeen con ella la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no despierten al amor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo sube del desierto aquella por quien se pregunta?",
+      "explanation": "El versículo dice: ¿Quién es ésta que sube del desierto como columnita de humo, sahumada de mirra y de incienso?",
+      "bibleReference": "Cantar de los Cantares 3:6",
+      "answers": [
+        {
+          "text": "Como columnita de humo",
+          "isCorrect": true
+        },
+        {
+          "text": "Como una litera de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el gozo de su corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "Como los temores de la noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos valientes rodean la litera de Salomón?",
+      "explanation": "El versículo dice: He aquí es la litera de Salomón; sesenta valientes la rodean, de los fuertes de Israel.",
+      "bibleReference": "Cantar de los Cantares 3:7",
+      "answers": [
+        {
+          "text": "Treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Ochenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevan todos ellos, y por qué?",
+      "explanation": "El versículo dice que todos tienen espadas, diestros en la guerra, cada uno su espada sobre su muslo, por los temores de la noche.",
+      "bibleReference": "Cantar de los Cantares 3:8",
+      "answers": [
+        {
+          "text": "Escudos, para muestra en la torre",
+          "isCorrect": false
+        },
+        {
+          "text": "Espadas, por los temores de la noche",
+          "isCorrect": true
+        },
+        {
+          "text": "Coronas, por el día del desposorio",
+          "isCorrect": false
+        },
+        {
+          "text": "Columnas, por la obra de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué madera se hizo el rey Salomón una carroza?",
+      "explanation": "El versículo dice: El rey Salomón se hizo una carroza de madera del Líbano.",
+      "bibleReference": "Cantar de los Cantares 3:9",
+      "answers": [
+        {
+          "text": "De madera del Líbano",
+          "isCorrect": true
+        },
+        {
+          "text": "De ciprés de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "De cedro de Cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "De palma del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿quién coronó al rey Salomón el día de su desposorio?",
+      "explanation": "El texto invita a ver al rey Salomón con la corona con que le coronó su madre el día de su desposorio.",
+      "bibleReference": "Cantar de los Cantares 3:11",
+      "answers": [
+        {
+          "text": "Las doncellas de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Los guardas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Los fuertes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Su madre",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

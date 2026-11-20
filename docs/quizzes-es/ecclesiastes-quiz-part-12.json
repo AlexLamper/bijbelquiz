@@ -1,0 +1,242 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Eclesiastés 12: acordarse del Criador en la juventud, las imágenes de la vejez, y el fin de todo el discurso.",
+  "slug": "ecclesiastes-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién manda el texto acordarse en los días de la juventud?",
+      "explanation": "El primer versículo dice: acuérdate de tu Criador en los días de tu juventud, antes que vengan los malos días.",
+      "bibleReference": "Eclesiastés 12:1",
+      "answers": [
+        {
+          "text": "Del Predicador",
+          "isCorrect": false
+        },
+        {
+          "text": "De tu Criador",
+          "isCorrect": true
+        },
+        {
+          "text": "De los maestros",
+          "isCorrect": false
+        },
+        {
+          "text": "De los endechadores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que se oscurecerá antes de que lleguen esos años?",
+      "explanation": "El versículo nombra el sol, la luz, la luna y las estrellas, y dice que las nubes se tornarán tras la lluvia.",
+      "bibleReference": "Eclesiastés 12:2",
+      "answers": [
+        {
+          "text": "El sol, la luz, la luna y las estrellas",
+          "isCorrect": true
+        },
+        {
+          "text": "Las puertas, las muelas y las ventanas",
+          "isCorrect": false
+        },
+        {
+          "text": "El almendro, la langosta y el apetito",
+          "isCorrect": false
+        },
+        {
+          "text": "La cadena, el cuenco y el cántaro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué harán los hombres fuertes en aquel día?",
+      "explanation": "El versículo dice que temblarán los guardas de la casa y se encorvarán los hombres fuertes.",
+      "bibleReference": "Eclesiastés 12:3",
+      "answers": [
+        {
+          "text": "Temblarán",
+          "isCorrect": false
+        },
+        {
+          "text": "Huirán de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Se encorvarán",
+          "isCorrect": true
+        },
+        {
+          "text": "Cantarán a la voz del ave",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué árbol dice el texto que florecerá?",
+      "explanation": "El versículo dice que florecerá el almendro, se agravará la langosta y se perderá el apetito.",
+      "bibleReference": "Eclesiastés 12:5",
+      "answers": [
+        {
+          "text": "La higuera",
+          "isCorrect": false
+        },
+        {
+          "text": "El cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "El manzano",
+          "isCorrect": false
+        },
+        {
+          "text": "El almendro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué se quebrará junto a la fuente?",
+      "explanation": "El versículo habla de la cadena de plata que se quiebra, del cuenco de oro que se rompe, del cántaro que se quiebra junto a la fuente y de la rueda rota sobre el pozo.",
+      "bibleReference": "Eclesiastés 12:6",
+      "answers": [
+        {
+          "text": "La cadena de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "El cuenco de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "El cántaro",
+          "isCorrect": true
+        },
+        {
+          "text": "La rueda del pozo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Adónde dice el texto que se vuelve el espíritu?",
+      "explanation": "El versículo dice que el polvo se torna a la tierra como era, y el espíritu se vuelve a Dios que lo dió.",
+      "bibleReference": "Eclesiastés 12:7",
+      "answers": [
+        {
+          "text": "A la tierra, como era",
+          "isCorrect": false
+        },
+        {
+          "text": "A Dios que lo dió",
+          "isCorrect": true
+        },
+        {
+          "text": "A la casa de su siglo",
+          "isCorrect": false
+        },
+        {
+          "text": "Al pozo y a la fuente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el Predicador en el versículo 8?",
+      "explanation": "El texto dice: Vanidad de vanidades, dijo el Predicador, todo vanidad.",
+      "bibleReference": "Eclesiastés 12:8",
+      "answers": [
+        {
+          "text": "Vanidad de vanidades, todo vanidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Mejor es el día de la muerte que el nacimiento",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada hay nuevo debajo del sol",
+          "isCorrect": false
+        },
+        {
+          "text": "La sabiduría excede a las armas de guerra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto las palabras de los sabios?",
+      "explanation": "El versículo dice que las palabras de los sabios son como aguijones y como clavos hincados.",
+      "bibleReference": "Eclesiastés 12:11",
+      "answers": [
+        {
+          "text": "Con el polvo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la voz del ave",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las hijas de canción",
+          "isCorrect": false
+        },
+        {
+          "text": "Con aguijones y clavos hincados",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del mucho estudio?",
+      "explanation": "El versículo dice que no hay fin de hacer muchos libros, y que el mucho estudio aflicción es de la carne.",
+      "bibleReference": "Eclesiastés 12:12",
+      "answers": [
+        {
+          "text": "Que es aflicción de la carne",
+          "isCorrect": true
+        },
+        {
+          "text": "Que es el todo del hombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hace escudriñar al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que halla palabras agradables",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuál es el fin de todo el discurso oído?",
+      "explanation": "El versículo dice: teme a Dios y guarda sus mandamientos, porque esto es el todo del hombre.",
+      "bibleReference": "Eclesiastés 12:13",
+      "answers": [
+        {
+          "text": "Componer muchos proverbios",
+          "isCorrect": false
+        },
+        {
+          "text": "Acordarse de los malos días",
+          "isCorrect": false
+        },
+        {
+          "text": "Temer a Dios y guardar sus mandamientos",
+          "isCorrect": true
+        },
+        {
+          "text": "Buscar escritura recta y verdadera",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

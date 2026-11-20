@@ -1,0 +1,122 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 31",
+  "description": "Diez preguntas sobre Proverbios 31: la enseñanza que recibió el rey Lemuel, la boca abierta por el mudo y la mujer fuerte y su casa.",
+  "slug": "proverbs-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿quién enseñó al rey Lemuel esta profecía?",
+      "explanation": "Proverbios 31:1 dice: Palabras del rey Lemuel; la profecía con que le enseñó su madre.",
+      "bibleReference": "Proverbios 31:1",
+      "answers": [
+        { "text": "Su padre", "isCorrect": false },
+        { "text": "Un profeta", "isCorrect": false },
+        { "text": "Su madre", "isCorrect": true },
+        { "text": "Los ancianos de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué no es propio de los reyes ni de los príncipes?",
+      "explanation": "Proverbios 31:4 dice: No es de los reyes, oh Lemuel, no es de los reyes beber vino, ni de los príncipes la cerveza.",
+      "bibleReference": "Proverbios 31:4",
+      "answers": [
+        { "text": "Juzgar la causa del pobre", "isCorrect": false },
+        { "text": "Abrir su boca por el mudo", "isCorrect": false },
+        { "text": "Sentarse con los ancianos", "isCorrect": false },
+        { "text": "Beber vino y cerveza", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿por quién se le manda abrir la boca?",
+      "explanation": "Proverbios 31:8 dice: Abre tu boca por el mudo, en el juicio de todos los hijos de muerte.",
+      "bibleReference": "Proverbios 31:8",
+      "answers": [
+        { "text": "Por el mudo", "isCorrect": true },
+        { "text": "Por el rey", "isCorrect": false },
+        { "text": "Por el mercader", "isCorrect": false },
+        { "text": "Por los ancianos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿a qué sobrepuja largamente la estima de la mujer fuerte?",
+      "explanation": "Proverbios 31:10 dice: Mujer fuerte, ¿quién la hallará? porque su estima sobrepuja largamente á la de piedras preciosas.",
+      "bibleReference": "Proverbios 31:10",
+      "answers": [
+        { "text": "A la del lino fino y la púrpura", "isCorrect": false },
+        { "text": "A la de las piedras preciosas", "isCorrect": true },
+        { "text": "A la del navío del mercader", "isCorrect": false },
+        { "text": "A la de la heredad y la viña", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué buscó, y labró con voluntad de sus manos?",
+      "explanation": "Proverbios 31:13 dice: Buscó lana y lino, y con voluntad labró de sus manos.",
+      "bibleReference": "Proverbios 31:13",
+      "answers": [
+        { "text": "Lana y lino", "isCorrect": true },
+        { "text": "Oro y plata", "isCorrect": false },
+        { "text": "Pan y vino", "isCorrect": false },
+        { "text": "Cintas y tapices", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué hizo cuando se levantó aun de noche?",
+      "explanation": "Proverbios 31:15 dice: Levantóse aun de noche, y dió comida á su familia, y ración á sus criadas.",
+      "bibleReference": "Proverbios 31:15",
+      "answers": [
+        { "text": "Encendió su candela y tomó la rueca", "isCorrect": false },
+        { "text": "Consideró la heredad y la compró", "isCorrect": false },
+        { "text": "Dio comida a su familia y ración a sus criadas", "isCorrect": true },
+        { "text": "Hizo telas y las vendió al mercader", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿a qué aplicó sus manos?",
+      "explanation": "Proverbios 31:19 dice: Aplicó sus manos al huso, y sus manos tomaron la rueca.",
+      "bibleReference": "Proverbios 31:19",
+      "answers": [
+        { "text": "A la nieve y a las ropas dobles", "isCorrect": false },
+        { "text": "Al pan y a la ración de la casa", "isCorrect": false },
+        { "text": "A la viña y a la heredad comprada", "isCorrect": false },
+        { "text": "Al huso y a la rueca", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿a quién alargó y extendió sus manos?",
+      "explanation": "Proverbios 31:20 dice: Alargó su mano al pobre, y extendió sus manos al menesteroso.",
+      "bibleReference": "Proverbios 31:20",
+      "answers": [
+        { "text": "Al rey y a los príncipes", "isCorrect": false },
+        { "text": "Al pobre y al menesteroso", "isCorrect": true },
+        { "text": "Al mercader y a los ancianos", "isCorrect": false },
+        { "text": "A sus criadas y a su familia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 23, ¿dónde es conocido su marido?",
+      "explanation": "Proverbios 31:23 dice: Conocido es su marido en las puertas, cuando se sienta con los ancianos de la tierra.",
+      "bibleReference": "Proverbios 31:23",
+      "answers": [
+        { "text": "En la viña que ella plantó", "isCorrect": false },
+        { "text": "En el palacio del rey", "isCorrect": false },
+        { "text": "En las puertas", "isCorrect": true },
+        { "text": "En la casa del convite", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Si la gracia es engañosa y la hermosura vana, ¿qué mujer será alabada según el versículo 30?",
+      "explanation": "Proverbios 31:30 dice: Engañosa es la gracia, y vana la hermosura: la mujer que teme á Jehová, ésa será alabada.",
+      "bibleReference": "Proverbios 31:30",
+      "answers": [
+        { "text": "La que teme a Jehová", "isCorrect": true },
+        { "text": "La de hermosura sin igual", "isCorrect": false },
+        { "text": "La que tiene gracia y honor", "isCorrect": false },
+        { "text": "La que vende telas y cintas", "isCorrect": false }
+      ]
+    }
+  ]
+}

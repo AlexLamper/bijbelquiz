@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Isaías 6: el Señor sentado sobre un trono alto, los serafines de seis alas, el carbón encendido del altar y el envío del profeta.",
+  "slug": "isaiah-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué año vio al Señor sentado sobre un trono alto y sublime?",
+      "explanation": "El texto dice: en el año que murió el rey Uzzías vi yo al Señor sentado sobre un trono alto y sublime.",
+      "bibleReference": "Isaías 6:1",
+      "answers": [
+        {
+          "text": "En el año en que murió Achâz",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año en que reinó Jotham",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año en que murió Ezechîas",
+          "isCorrect": false
+        },
+        {
+          "text": "En el año en que murió el rey Uzzías",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas alas tenía cada uno de los serafines?",
+      "explanation": "El texto dice que cada uno tenía seis alas.",
+      "bibleReference": "Isaías 6:2",
+      "answers": [
+        {
+          "text": "Dos alas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro alas",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis alas",
+          "isCorrect": true
+        },
+        {
+          "text": "Ocho alas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además del rostro, ¿qué cubrían los serafines con dos de sus alas?",
+      "explanation": "El texto dice que con dos cubrían sus rostros, con dos cubrían sus pies y con dos volaban.",
+      "bibleReference": "Isaías 6:2",
+      "answers": [
+        {
+          "text": "El trono",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus pies",
+          "isCorrect": true
+        },
+        {
+          "text": "El altar",
+          "isCorrect": false
+        },
+        {
+          "text": "El templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se daban voces los serafines el uno al otro?",
+      "explanation": "El texto dice que el uno al otro daba voces, diciendo: Santo, santo, santo, Jehová de los ejércitos; toda la tierra está llena de su gloria.",
+      "bibleReference": "Isaías 6:3",
+      "answers": [
+        {
+          "text": "Santo, santo, santo, Jehová de los ejércitos",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta cuándo, Señor, estarán asoladas las ciudades",
+          "isCorrect": false
+        },
+        {
+          "text": "A quién enviaré, y quién nos irá",
+          "isCorrect": false
+        },
+        {
+          "text": "Ay de mí, que soy hombre inmundo de labios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se llenó la casa cuando se estremecieron los quiciales de las puertas?",
+      "explanation": "El texto dice que los quiciales se estremecieron con la voz del que clamaba, y la casa se hinchió de humo.",
+      "bibleReference": "Isaías 6:4",
+      "answers": [
+        {
+          "text": "De fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "De gloria",
+          "isCorrect": false
+        },
+        {
+          "text": "De humo",
+          "isCorrect": true
+        },
+        {
+          "text": "De nube",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe a sí mismo el que exclama ay de mí, que soy muerto?",
+      "explanation": "El texto dice que es hombre inmundo de labios y que habita en medio de un pueblo que tiene labios inmundos.",
+      "bibleReference": "Isaías 6:5",
+      "answers": [
+        {
+          "text": "Como un niño que no sabe hablar",
+          "isCorrect": false
+        },
+        {
+          "text": "Como estopa delante del fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Como siervo de los serafines",
+          "isCorrect": false
+        },
+        {
+          "text": "Como hombre inmundo de labios",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué traía en su mano el serafín que voló hacia él?",
+      "explanation": "El texto dice que voló hacia él uno de los serafines teniendo en su mano un carbón encendido, tomado del altar con unas tenazas.",
+      "bibleReference": "Isaías 6:6",
+      "answers": [
+        {
+          "text": "Un carbón encendido",
+          "isCorrect": true
+        },
+        {
+          "text": "Un volumen escrito",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vara de almendro",
+          "isCorrect": false
+        },
+        {
+          "text": "Un vaso de aceite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el serafín que había sucedido al tocarle la boca?",
+      "explanation": "El serafín dijo: he aquí que esto tocó tus labios, y es quitada tu culpa, y limpio tu pecado.",
+      "bibleReference": "Isaías 6:7",
+      "answers": [
+        {
+          "text": "Que había visto al Rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su culpa era quitada y su pecado limpio",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la casa se había hinchido de humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sería enviado a este pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió al oír la voz del Señor que decía: a quién enviaré?",
+      "explanation": "El texto dice que respondió: heme aquí, envíame a mí.",
+      "bibleReference": "Isaías 6:8",
+      "answers": [
+        {
+          "text": "No tomaré ese cuidado",
+          "isCorrect": false
+        },
+        {
+          "text": "Heme aquí, envíame a mí",
+          "isCorrect": true
+        },
+        {
+          "text": "No pediré, y no tentaré a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta cuándo, Señor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando preguntó hasta cuándo, ¿qué respondió el Señor?",
+      "explanation": "El Señor respondió: hasta que las ciudades estén asoladas, y sin morador, ni hombre en las casas.",
+      "bibleReference": "Isaías 6:11",
+      "answers": [
+        {
+          "text": "Hasta que el pueblo se convierta",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que vuelva la décima parte",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que las ciudades estén asoladas",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta que muera el rey Uzzías",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

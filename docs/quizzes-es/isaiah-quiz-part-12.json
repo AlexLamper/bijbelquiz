@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Isaías 12: el cántico de aquel día, las fuentes de la salud y el llamado a cantar a Jehová.",
+  "slug": "isaiah-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿qué se dirá en aquel día?",
+      "explanation": "El verso comienza: \"Y dirás en aquel día: Cantaré á ti, oh Jehová\".",
+      "bibleReference": "Isaías 12:1",
+      "answers": [
+        {
+          "text": "\"Callaré delante de Jehová\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Cantaré á ti, oh Jehová\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"Huiré lejos de Jehová\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Pelearé por Jehová\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el verso 1, ¿qué le ocurrió al furor de Dios?",
+      "explanation": "El texto dice que aunque Dios se enojó, su furor se apartó.",
+      "bibleReference": "Isaías 12:1",
+      "answers": [
+        {
+          "text": "Se apartó",
+          "isCorrect": true
+        },
+        {
+          "text": "Creció cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Fue repartido entre las naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Quedó escondido en Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 1 que Dios hizo con el que canta?",
+      "explanation": "El verso termina diciendo: \"y me has consolado\".",
+      "bibleReference": "Isaías 12:1",
+      "answers": [
+        {
+          "text": "Lo envió a los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo hizo rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dio una viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo consoló",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el verso 2 a Dios?",
+      "explanation": "El texto declara: \"He aquí Dios es salud mía\".",
+      "bibleReference": "Isaías 12:2",
+      "answers": [
+        {
+          "text": "Mi juez",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi pastor",
+          "isCorrect": false
+        },
+        {
+          "text": "Salud mía",
+          "isCorrect": true
+        },
+        {
+          "text": "Mi heredad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿qué dice el que se asegura en Dios?",
+      "explanation": "El texto dice: \"aseguraréme, y no temeré\".",
+      "bibleReference": "Isaías 12:2",
+      "answers": [
+        {
+          "text": "Que no temerá",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no morirá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no trabajará",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no saldrá de su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el verso 2, ¿quién es llamado \"mi fortaleza y mi canción\"?",
+      "explanation": "El texto dice: \"porque mi fortaleza y mi canción es JAH Jehová, el cual ha sido salud para mí\".",
+      "bibleReference": "Isaías 12:2",
+      "answers": [
+        {
+          "text": "El pueblo que mora en Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "JAH Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Isaías, hijo de Amoz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anuncia el verso 3 que sacarán con gozo?",
+      "explanation": "El verso dice: \"Sacaréis aguas con gozo de las fuentes de la salud\".",
+      "bibleReference": "Isaías 12:3",
+      "answers": [
+        {
+          "text": "Vino de los lagares del campo fértil",
+          "isCorrect": false
+        },
+        {
+          "text": "Aguas de las fuentes de la salud",
+          "isCorrect": true
+        },
+        {
+          "text": "Oro de los tesoros de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Trigo de las eras de los pueblos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿qué se debe recordar acerca del nombre de Jehová?",
+      "explanation": "El texto manda aclamar su nombre y \"recordad que su nombre es engrandecido\".",
+      "bibleReference": "Isaías 12:4",
+      "answers": [
+        {
+          "text": "Que nadie lo puede pronunciar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fue dado a Isaías",
+          "isCorrect": false
+        },
+        {
+          "text": "Que está escrito en el monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su nombre es engrandecido",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué manda el verso 5 cantar salmos a Jehová?",
+      "explanation": "El texto dice: \"Cantad salmos á Jehová; porque ha hecho cosas magníficas: sea sabido esto por toda la tierra\".",
+      "bibleReference": "Isaías 12:5",
+      "answers": [
+        {
+          "text": "Porque ha hecho cosas magníficas",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque ha callado mucho tiempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ha repartido la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ha escogido una sola ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el verso 6, ¿a quién se le dice \"Regocíjate y canta\", y por qué?",
+      "explanation": "El texto dice: \"Regocíjate y canta, oh moradora de Sión: porque grande es en medio de ti el Santo de Israel\".",
+      "bibleReference": "Isaías 12:6",
+      "answers": [
+        {
+          "text": "A las naves de Tarsis, porque volverán cargadas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los pescadores del río, porque sacarán peces",
+          "isCorrect": false
+        },
+        {
+          "text": "A la moradora de Sión, porque grande es en medio de ella el Santo de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "A los reyes de la tierra, porque hallarán reposo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

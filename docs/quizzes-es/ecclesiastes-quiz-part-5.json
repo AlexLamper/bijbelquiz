@@ -1,0 +1,122 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Eclesiastés 5: la casa de Dios, las pocas palabras, las promesas que se pagan, el amor al dinero y el don de Dios.",
+  "slug": "ecclesiastes-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿para qué conviene acercarse más al ir a la casa de Dios?",
+      "explanation": "Eclesiastés 5:1 dice: y acércate más para oir que para dar el sacrificio de los necios.",
+      "bibleReference": "Eclesiastés 5:1",
+      "answers": [
+        { "text": "Para hablar mucho", "isCorrect": false },
+        { "text": "Para oír", "isCorrect": true },
+        { "text": "Para dar el sacrificio de los necios", "isCorrect": false },
+        { "text": "Para hacer promesas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿cómo deben ser tus palabras delante de Dios?",
+      "explanation": "Eclesiastés 5:2 dice: porque Dios está en el cielo, y tú sobre la tierra: por tanto, sean pocas tus palabras.",
+      "bibleReference": "Eclesiastés 5:2",
+      "answers": [
+        { "text": "Muchas", "isCorrect": false },
+        { "text": "Apresuradas", "isCorrect": false },
+        { "text": "Pocas", "isCorrect": true },
+        { "text": "Como las del necio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué se manda hacer con la promesa hecha a Dios?",
+      "explanation": "Eclesiastés 5:4 dice: Cuando á Dios hicieres promesa, no tardes en pagarla; porque no se agrada de los insensatos.",
+      "bibleReference": "Eclesiastés 5:4",
+      "answers": [
+        { "text": "Decir que fue ignorancia", "isCorrect": false },
+        { "text": "Esperar el día del convite", "isCorrect": false },
+        { "text": "Multiplicar las palabras", "isCorrect": false },
+        { "text": "No tardar en pagarla", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué es mejor que prometer y no pagar?",
+      "explanation": "Eclesiastés 5:5 dice: Mejor es que no prometas, que no que prometas y no pagues.",
+      "bibleReference": "Eclesiastés 5:5",
+      "answers": [
+        { "text": "No prometer", "isCorrect": true },
+        { "text": "Prometer el doble", "isCorrect": false },
+        { "text": "Pagar la mitad", "isCorrect": false },
+        { "text": "Prometer al ángel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Donde los sueños y las palabras son en multitud, ¿qué manda el versículo 7?",
+      "explanation": "Eclesiastés 5:7 termina diciendo: mas tú teme á Dios.",
+      "bibleReference": "Eclesiastés 5:7",
+      "answers": [
+        { "text": "Contar los sueños", "isCorrect": false },
+        { "text": "Maravillarse de la licencia", "isCorrect": false },
+        { "text": "Temer a Dios", "isCorrect": true },
+        { "text": "Hablar con el rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué le sucede al que ama el dinero?",
+      "explanation": "Eclesiastés 5:10 dice: El que ama el dinero, no se hartará de dinero; y el que ama el mucho tener, no sacará fruto.",
+      "bibleReference": "Eclesiastés 5:10",
+      "answers": [
+        { "text": "Dormirá dulcemente", "isCorrect": false },
+        { "text": "No se hartará de dinero", "isCorrect": true },
+        { "text": "Sacará mucho fruto", "isCorrect": false },
+        { "text": "Verá el bien de su trabajo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Si dulce es el sueño del trabajador, ¿qué no deja dormir al rico según el versículo 12?",
+      "explanation": "Eclesiastés 5:12 dice: mas al rico no le deja dormir la hartura.",
+      "bibleReference": "Eclesiastés 5:12",
+      "answers": [
+        { "text": "La hartura", "isCorrect": true },
+        { "text": "El trabajo", "isCorrect": false },
+        { "text": "La pobreza", "isCorrect": false },
+        { "text": "El enojo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué lleva en su mano, de todo su trabajo, el que vuelve como salió del vientre de su madre?",
+      "explanation": "Eclesiastés 5:15 dice: y nada tuvo de su trabajo para llevar en su mano.",
+      "bibleReference": "Eclesiastés 5:15",
+      "answers": [
+        { "text": "Plata y oro", "isCorrect": false },
+        { "text": "Su hacienda entera", "isCorrect": false },
+        { "text": "La mitad de su parte", "isCorrect": false },
+        { "text": "Nada", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 18, ¿cuál es el bien que el texto dice haber visto?",
+      "explanation": "Eclesiastés 5:18 dice que lo bueno es comer y beber, y gozar uno del bien de todo su trabajo con que se fatiga debajo del sol.",
+      "bibleReference": "Eclesiastés 5:18",
+      "answers": [
+        { "text": "Comer, beber y gozar de su trabajo", "isCorrect": true },
+        { "text": "Guardar las riquezas para su mal", "isCorrect": false },
+        { "text": "Amar el dinero y el mucho tener", "isCorrect": false },
+        { "text": "Multiplicar los sueños y las palabras", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿cómo llama el texto a la facultad de comer de las riquezas y gozar del trabajo?",
+      "explanation": "Eclesiastés 5:19 dice que a quien Dios dio riquezas y también facultad para comer de ellas y gozar su trabajo, esto es don de Dios.",
+      "bibleReference": "Eclesiastés 5:19",
+      "answers": [
+        { "text": "Vanidad y aflicción", "isCorrect": false },
+        { "text": "Trabajosa enfermedad", "isCorrect": false },
+        { "text": "Don de Dios", "isCorrect": true },
+        { "text": "Sacrificio de necios", "isCorrect": false }
+      ]
+    }
+  ]
+}

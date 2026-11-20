@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 40",
+  "description": "Diez preguntas sobre Jeremías 40: Jeremías libre de sus esposas, Gedalías puesto sobre la tierra y el aviso que no quiso creer.",
+  "slug": "jeremiah-quiz-part-40",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Desde dónde envió Nabuzaradán, capitán de la guardia, a Jeremías?",
+      "explanation": "El primer versículo dice que el capitán de la guardia le envió desde Ramá.",
+      "bibleReference": "Jeremías 40:1",
+      "answers": [
+        {
+          "text": "Desde Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Ribla",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde Ramá",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde Taphnes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo estaba Jeremías cuando el capitán de la guardia lo tomó?",
+      "explanation": "El versículo dice que lo tomó estando atado con esposas entre toda la transmigración de Jerusalem y de Judá.",
+      "bibleReference": "Jeremías 40:1",
+      "answers": [
+        {
+          "text": "Hundido en el cieno de la mazmorra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sentado en el patio de la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Escondido en la casa de Baruch",
+          "isCorrect": false
+        },
+        {
+          "text": "Atado con esposas entre los cautivos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el capitán de la guardia, ¿por qué había venido aquel mal sobre ese lugar?",
+      "explanation": "Él dijo a Jeremías: porque pecasteis contra Jehová, y no oísteis su voz, por eso os ha venido esto.",
+      "bibleReference": "Jeremías 40:3",
+      "answers": [
+        {
+          "text": "Porque el rey de Babilonia era más fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque pecaron contra Jehová y no oyeron su voz",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque los profetas callaron en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no pagaron tributo al rey de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué opción le dio el capitán de la guardia a Jeremías después de soltarlo?",
+      "explanation": "Le dijo que si le parecía bien podía venir con él a Babilonia, y si no, que toda la tierra estaba delante de él para ir donde quisiera.",
+      "bibleReference": "Jeremías 40:4",
+      "answers": [
+        {
+          "text": "Ir con él a Babilonia o quedarse donde quisiera",
+          "isCorrect": true
+        },
+        {
+          "text": "Volver a la cárcel o servir a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Escoger entre el cuchillo y el hambre",
+          "isCorrect": false
+        },
+        {
+          "text": "Ir a Egipto o pasarse a los hijos de Ammón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién le dijo el capitán de la guardia que se volviera?",
+      "explanation": "Le dijo: vuélvete a Gedalías hijo de Ahicam, al cual el rey de Babilonia ha puesto sobre todas las ciudades de Judá.",
+      "bibleReference": "Jeremías 40:5",
+      "answers": [
+        {
+          "text": "A Johanán hijo de Carea",
+          "isCorrect": false
+        },
+        {
+          "text": "A Baruch hijo de Nerías",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jezanías hijo de Maachâti",
+          "isCorrect": false
+        },
+        {
+          "text": "A Gedalías hijo de Ahicam",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde fue Jeremías a morar con Gedalías?",
+      "explanation": "El versículo dice que Jeremías se fue a Gedalías hijo de Ahicam, a Mizpa, y moró con él en medio del pueblo.",
+      "bibleReference": "Jeremías 40:6",
+      "answers": [
+        {
+          "text": "En Ramá",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Mizpa",
+          "isCorrect": true
+        },
+        {
+          "text": "En Bethlehem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les juró Gedalías a los príncipes del ejército y a sus hombres?",
+      "explanation": "Les juró: no tengáis temor de servir a los Caldeos; habitad en la tierra, y servid al rey de Babilonia, y tendréis bien.",
+      "bibleReference": "Jeremías 40:9",
+      "answers": [
+        {
+          "text": "Que no temieran servir a los Caldeos y habitaran la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los llevaría en paz a tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el rey de Babilonia no volvería jamás",
+          "isCorrect": false
+        },
+        {
+          "text": "Que repartiría entre ellos las viñas del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les mandó Gedalías coger y poner en sus almacenes?",
+      "explanation": "Les dijo: coged el vino, y el pan, y el aceite, y ponedlo en vuestros almacenes.",
+      "bibleReference": "Jeremías 40:10",
+      "answers": [
+        {
+          "text": "Oro, plata y vestidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino, pan y aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Trigo, cebada y miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Leña, sal y especias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le advirtieron a Gedalías acerca de Ismael hijo de Nethanías?",
+      "explanation": "Le dijeron que Baalis, rey de los hijos de Ammón, había enviado a Ismael hijo de Nethanías para matarlo.",
+      "bibleReference": "Jeremías 40:14",
+      "answers": [
+        {
+          "text": "Que había huido a Egipto con las hijas del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se había pasado a los Caldeos en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Baalis, rey de los hijos de Ammón, lo enviaba para matarlo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que quería ser puesto por rey sobre la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Gedalías cuando Johanán le ofreció herir a Ismael en secreto?",
+      "explanation": "Gedalías le dijo: no hagas esto, porque falso es lo que tú dices de Ismael.",
+      "bibleReference": "Jeremías 40:16",
+      "answers": [
+        {
+          "text": "Que fuera y lo hiriera en secreto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo prendiera y lo llevara a Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperara hasta el mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no lo hiciera, porque era falso lo que decía",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

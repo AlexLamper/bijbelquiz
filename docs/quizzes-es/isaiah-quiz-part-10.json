@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Isaías 10: el ay sobre las leyes injustas, Assur como vara del furor, el hacha que se gloría y el camino del ejército hasta Nob.",
+  "slug": "isaiah-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quiénes despojan y roban los que establecen leyes injustas?",
+      "explanation": "El texto dice que despojan a las viudas y roban a los huérfanos.",
+      "bibleReference": "Isaías 10:2",
+      "answers": [
+        {
+          "text": "A las viudas y a los huérfanos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los príncipes y a los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los moradores de Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta el texto acerca de su gloria en el día de la visitación?",
+      "explanation": "El texto pregunta qué harán en el día de la visitación, a quién se acogerán y en dónde dejarán su gloria.",
+      "bibleReference": "Isaías 10:3",
+      "answers": [
+        {
+          "text": "Si la pondrán en el monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Si la entregarán al rey de Asiria",
+          "isCorrect": false
+        },
+        {
+          "text": "Si la esconderán en las cavernas",
+          "isCorrect": false
+        },
+        {
+          "text": "Dónde la dejarán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto a Assur en el versículo 5?",
+      "explanation": "El texto dice: oh Assur, vara y bastón de mi furor; en su mano he puesto mi ira.",
+      "bibleReference": "Isaías 10:5",
+      "answers": [
+        {
+          "text": "Pastor de mi pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Siervo de mi justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "Vara y bastón de mi furor",
+          "isCorrect": true
+        },
+        {
+          "text": "Pendón de las gentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿cuál será el pensamiento de aquel a quien se envía?",
+      "explanation": "El texto dice que él no lo pensará así, sino que su pensamiento será desarraigar y cortar gentes no pocas.",
+      "bibleReference": "Isaías 10:7",
+      "answers": [
+        {
+          "text": "Guardar el juicio de los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "Desarraigar y cortar gentes no pocas",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificar casas de cantería",
+          "isCorrect": false
+        },
+        {
+          "text": "Volver sus espadas en rejas de arado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En las palabras que el texto pone en su boca, ¿a qué ciudad es semejante Samaria?",
+      "explanation": "El texto pone en su boca esta pregunta: no es Calno como Carchêmis, Hamath como Arphad, y Samaria como Damasco.",
+      "bibleReference": "Isaías 10:9",
+      "answers": [
+        {
+          "text": "A Calno",
+          "isCorrect": false
+        },
+        {
+          "text": "A Arphad",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hamath",
+          "isCorrect": false
+        },
+        {
+          "text": "A Damasco",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se propone hacer con Jerusalem y con sus ídolos?",
+      "explanation": "El texto pone en su boca esta pregunta: como hice a Samaria y a sus ídolos, no haré también así a Jerusalem y a sus ídolos.",
+      "bibleReference": "Isaías 10:11",
+      "answers": [
+        {
+          "text": "Lo mismo que hizo con Samaria y sus ídolos",
+          "isCorrect": true
+        },
+        {
+          "text": "Entregarlos al fuego del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevarlos a la tierra de Assur",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejarlos como nido vacío de aves",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos herramientas compara el texto al que se gloría contra quien las usa?",
+      "explanation": "El texto pregunta si se gloriará el hacha contra el que con ella corta, y si se ensoberbecerá la sierra contra el que la mueve.",
+      "bibleReference": "Isaías 10:15",
+      "answers": [
+        {
+          "text": "Con el arado y la hoz",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el hacha y la sierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las tenazas y el carbón",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la azada y el pendón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de los árboles que queden en su bosque?",
+      "explanation": "El texto dice que los árboles que quedaren en su bosque serán en número que un niño los pueda contar.",
+      "bibleReference": "Isaías 10:19",
+      "answers": [
+        {
+          "text": "Que serán cedros altos y sublimes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie los podrá contar",
+          "isCorrect": false
+        },
+        {
+          "text": "Que un niño los podrá contar",
+          "isCorrect": true
+        },
+        {
+          "text": "Que caerán con el Líbano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el azote que Jehová de los ejércitos levantará contra él?",
+      "explanation": "El texto dice que levantará azote contra él, cual la matanza de Madián en la peña de Oreb.",
+      "bibleReference": "Isaías 10:26",
+      "answers": [
+        {
+          "text": "Con la matanza de Madián en la peña de Oreb",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el bramido de la mar en el día de la angustia",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el humo que sube de la breña",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las aguas de los ríos de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué lugar dice el texto que tembló cuando pasaron el vado?",
+      "explanation": "El texto dice: pasaron el vado; alojaron en Geba; Ramá tembló; Gabaa de Saúl huyó.",
+      "bibleReference": "Isaías 10:29",
+      "answers": [
+        {
+          "text": "Michmas",
+          "isCorrect": false
+        },
+        {
+          "text": "Migrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Nob",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramá",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

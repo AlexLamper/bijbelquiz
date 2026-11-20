@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Jeremías 7: el sermón a la puerta de la casa de Jehová, el ejemplo de Silo y el valle de la Matanza.",
+  "slug": "jeremiah-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde debía ponerse el profeta a predicar esta palabra?",
+      "explanation": "El verso dice: Ponte a la puerta de la casa de Jehová, y predica allí esta palabra.",
+      "bibleReference": "Jeremías 7:2",
+      "answers": [
+        {
+          "text": "A la puerta de la casa de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En las plazas de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "En las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle del hijo de Hinnom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué palabras de mentira no debían confiar?",
+      "explanation": "El verso dice: No fiéis en palabras de mentira, diciendo: Templo de Jehová, templo de Jehová, templo de Jehová es éste.",
+      "bibleReference": "Jeremías 7:4",
+      "answers": [
+        {
+          "text": "Paz, paz; y no hay paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Templo de Jehová, templo de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Librados somos de toda abominación",
+          "isCorrect": false
+        },
+        {
+          "text": "Vive Jehová, con verdad y con juicio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dice el verso que no debían oprimir?",
+      "explanation": "El verso dice que no oprimiesen al peregrino, al huérfano y a la viuda, ni derramasen en ese lugar la sangre inocente.",
+      "bibleReference": "Jeremías 7:6",
+      "answers": [
+        {
+          "text": "A los profetas y sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de la casa de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "A los extranjeros de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Al peregrino, al huérfano y a la viuda",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara Jehová la casa sobre la cual es invocado su nombre?",
+      "explanation": "El verso pregunta: ¿Es cueva de ladrones delante de vuestros ojos esta casa, sobre la cual es invocado mi nombre?",
+      "bibleReference": "Jeremías 7:11",
+      "answers": [
+        {
+          "text": "Con un sepulcro abierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una tienda de pastor",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una cueva de ladrones",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una jaula de pájaros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué lugar manda Jehová ir, para ver lo que hizo por la maldad de su pueblo Israel?",
+      "explanation": "El verso dice: Andad empero ahora a mi lugar que fué en Silo, donde hice que morase mi nombre al principio, y ved lo que le hice.",
+      "bibleReference": "Jeremías 7:12",
+      "answers": [
+        {
+          "text": "A Topheth",
+          "isCorrect": false
+        },
+        {
+          "text": "A Silo",
+          "isCorrect": true
+        },
+        {
+          "text": "A Anathoth",
+          "isCorrect": false
+        },
+        {
+          "text": "A Tecoa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le prohíbe Jehová al profeta acerca de este pueblo?",
+      "explanation": "El verso dice: Tú pues, no ores por este pueblo, ni levantes por ellos clamor ni oración, ni me ruegues; porque no te oiré.",
+      "bibleReference": "Jeremías 7:16",
+      "answers": [
+        {
+          "text": "Que les hable sus palabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Que entre en la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que salga de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ore por ellos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Para quién hacían tortas los hijos, los padres y las mujeres?",
+      "explanation": "El verso dice que los hijos cogen la leña, los padres encienden el fuego y las mujeres amasan la masa, para hacer tortas a la reina del cielo.",
+      "bibleReference": "Jeremías 7:18",
+      "answers": [
+        {
+          "text": "Para Baal",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Para la reina del cielo",
+          "isCorrect": true
+        },
+        {
+          "text": "Para el rey de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el verso, ¿sobre qué se derrama el furor y la ira de Jehová?",
+      "explanation": "El verso dice que su furor y su ira se derrama sobre este lugar, sobre los hombres, sobre los animales, sobre los árboles del campo y sobre los frutos de la tierra.",
+      "bibleReference": "Jeremías 7:20",
+      "answers": [
+        {
+          "text": "Sobre los hombres, los animales, los árboles y los frutos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los reyes y los príncipes de Judá solamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las naciones que vienen de tierra del aquilón",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los profetas y los sacerdotes de Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde habían edificado los altos de Topheth?",
+      "explanation": "El verso dice que han edificado los altos de Topheth, que es en el valle del hijo de Hinnom, para quemar al fuego sus hijos y sus hijas.",
+      "bibleReference": "Jeremías 7:31",
+      "answers": [
+        {
+          "text": "En el monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "En las alturas de Beth-hacchêrem",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle del hijo de Hinnom",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto a la puerta de la casa de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamará aquel lugar, en vez de Topheth?",
+      "explanation": "El verso dice que vendrán días en que no se diga más Topheth, ni valle del hijo de Hinnom, sino Valle de la Matanza.",
+      "bibleReference": "Jeremías 7:32",
+      "answers": [
+        {
+          "text": "Trono de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Valle de la Matanza",
+          "isCorrect": true
+        },
+        {
+          "text": "Casa de oración",
+          "isCorrect": false
+        },
+        {
+          "text": "Valle de la Visión",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

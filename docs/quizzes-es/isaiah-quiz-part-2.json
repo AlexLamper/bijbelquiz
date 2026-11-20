@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Isaías 2: el monte de la casa de Jehová, las espadas vueltas en rejas de arado, la tierra llena de ídolos y la altivez abatida.",
+  "slug": "isaiah-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué será confirmado por cabeza de los montes en lo postrero de los tiempos?",
+      "explanation": "El texto dice que será confirmado el monte de la casa de Jehová por cabeza de los montes, y será ensalzado sobre los collados.",
+      "bibleReference": "Isaías 2:2",
+      "answers": [
+        {
+          "text": "El monte de los alcornoques de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "El collado de la hija de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte alto del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de la casa de Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿de dónde saldrá la ley?",
+      "explanation": "El texto dice: porque de Sión saldrá la ley, y de Jerusalem la palabra de Jehová.",
+      "bibleReference": "Isaías 2:3",
+      "answers": [
+        {
+          "text": "De Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "De Sión",
+          "isCorrect": true
+        },
+        {
+          "text": "De la casa de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Del monte de los collados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué volverán sus lanzas, según el versículo 4?",
+      "explanation": "El texto dice que volverán sus espadas en rejas de arado, y sus lanzas en hoces.",
+      "bibleReference": "Isaías 2:4",
+      "answers": [
+        {
+          "text": "En rejas de arado",
+          "isCorrect": false
+        },
+        {
+          "text": "En torres altas",
+          "isCorrect": false
+        },
+        {
+          "text": "En hoces",
+          "isCorrect": true
+        },
+        {
+          "text": "En pendones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes compara el texto al pueblo lleno de agoreros?",
+      "explanation": "Dice que son henchidos de oriente, y de agoreros, como los Filisteos.",
+      "bibleReference": "Isaías 2:6",
+      "answers": [
+        {
+          "text": "A los Filisteos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los Caldeos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los de Tarsis",
+          "isCorrect": false
+        },
+        {
+          "text": "A los de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿de qué está llena su tierra además de plata y oro?",
+      "explanation": "El texto dice que su tierra está llena de plata y oro, y también llena de caballos, y que sus carros no tienen número.",
+      "bibleReference": "Isaías 2:7",
+      "answers": [
+        {
+          "text": "De naves de Tarsis",
+          "isCorrect": false
+        },
+        {
+          "text": "De cedros del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "De torres y muros",
+          "isCorrect": false
+        },
+        {
+          "text": "De caballos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Ante qué dice el texto que se han arrodillado?",
+      "explanation": "Dice que su tierra está llena de ídolos, y que a la obra de sus manos se han arrodillado, a lo que fabricaron sus dedos.",
+      "bibleReference": "Isaías 2:8",
+      "answers": [
+        {
+          "text": "Ante los montes altos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ante el resplandor de su majestad",
+          "isCorrect": false
+        },
+        {
+          "text": "Ante la obra de sus manos",
+          "isCorrect": true
+        },
+        {
+          "text": "Ante los reyes de las gentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde manda el versículo 10 meterse y esconderse de la presencia espantosa de Jehová?",
+      "explanation": "El texto dice: métete en la piedra, escóndete en el polvo, de la presencia espantosa de Jehová.",
+      "bibleReference": "Isaías 2:10",
+      "answers": [
+        {
+          "text": "En las naves de Tarsis",
+          "isCorrect": false
+        },
+        {
+          "text": "En la piedra y en el polvo",
+          "isCorrect": true
+        },
+        {
+          "text": "En los huertos de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En las torres fuertes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué árboles de Basán vendrá el día de Jehová de los ejércitos?",
+      "explanation": "El texto dice que vendrá sobre todos los cedros del Líbano altos y sublimes, y sobre todos los alcornoques de Basán.",
+      "bibleReference": "Isaías 2:12-13",
+      "answers": [
+        {
+          "text": "Los alcornoques",
+          "isCorrect": true
+        },
+        {
+          "text": "Los cedros",
+          "isCorrect": false
+        },
+        {
+          "text": "Los manzanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los olmos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué animales arrojará el hombre aquel día sus ídolos de plata y de oro?",
+      "explanation": "El texto dice que aquel día arrojará el hombre, a los topos y murciélagos, sus ídolos de plata y sus ídolos de oro.",
+      "bibleReference": "Isaías 2:20",
+      "answers": [
+        {
+          "text": "A los topos y murciélagos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los leones y a los osos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los gamos y cervatillos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los bueyes y a los asnos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el último versículo al hombre del que manda apartarse?",
+      "explanation": "El texto dice: dejaos del hombre, cuyo hálito está en su nariz; porque de qué es él estimado.",
+      "bibleReference": "Isaías 2:22",
+      "answers": [
+        {
+          "text": "Que es como el polvo de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no tiene entendimiento",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se arrodilla ante los ídolos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su hálito está en su nariz",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

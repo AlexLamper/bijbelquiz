@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 43",
+  "description": "Diez preguntas sobre Jeremías 43: la bajada a Egipto contra la palabra de Jehová y las piedras escondidas en Taphnes.",
+  "slug": "jeremiah-quiz-part-43",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijeron Azarías, Johanán y los varones soberbios a Jeremías?",
+      "explanation": "Le dijeron: mentira dices; no te ha enviado Jehová nuestro Dios para decir: no entréis en Egipto.",
+      "bibleReference": "Jeremías 43:2",
+      "answers": [
+        {
+          "text": "Que su palabra era dura, pero verdadera",
+          "isCorrect": false
+        },
+        {
+          "text": "Que rogara otros diez días más por ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que escribiera aquella palabra en un rollo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que mentía y que Jehová no lo había enviado",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De quién dijeron que incitaba a Jeremías contra ellos?",
+      "explanation": "Dijeron que Baruch hijo de Nerías lo incitaba contra ellos, para entregarlos en mano de los Caldeos.",
+      "bibleReference": "Jeremías 43:3",
+      "answers": [
+        {
+          "text": "De Baruch hijo de Nerías",
+          "isCorrect": true
+        },
+        {
+          "text": "De Gedalías hijo de Ahicam",
+          "isCorrect": false
+        },
+        {
+          "text": "De Johanán hijo de Carea",
+          "isCorrect": false
+        },
+        {
+          "text": "De Nabuzaradán, capitán de la guardia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes tomó Johanán hijo de Carea consigo al partir?",
+      "explanation": "Tomó a todo el resto de Judá, a hombres, mujeres y niños, a las hijas del rey, y también a Jeremías profeta y a Baruch hijo de Nerías.",
+      "bibleReference": "Jeremías 43:5-6",
+      "answers": [
+        {
+          "text": "Solo a los hombres de guerra y sus capitanes",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo a Jeremías y a Baruch, dejando al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "A todo el resto de Judá, con Jeremías y Baruch",
+          "isCorrect": true
+        },
+        {
+          "text": "A los soldados Caldeos que halló en la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde llegaron al entrar en tierra de Egipto?",
+      "explanation": "El versículo dice que entraron en tierra de Egipto y llegaron hasta Taphnes.",
+      "bibleReference": "Jeremías 43:7",
+      "answers": [
+        {
+          "text": "Hasta Beth-semes",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Taphnes",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta Ramá",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Mizpa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová a Jeremías tomar con su mano y cubrir de barro?",
+      "explanation": "Jehová le dijo: toma con tu mano piedras grandes, y cúbrelas de barro en un horno de ladrillos.",
+      "bibleReference": "Jeremías 43:9",
+      "answers": [
+        {
+          "text": "Piedras grandes",
+          "isCorrect": true
+        },
+        {
+          "text": "Un rollo de libro",
+          "isCorrect": false
+        },
+        {
+          "text": "Un vaso de barro",
+          "isCorrect": false
+        },
+        {
+          "text": "Tazas y copas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué lugar debía cubrir de barro aquellas piedras?",
+      "explanation": "El versículo dice que debía cubrirlas de barro en un horno de ladrillos que estaba a la puerta de la casa de Faraón en Taphnes.",
+      "bibleReference": "Jeremías 43:9",
+      "answers": [
+        {
+          "text": "En el aljibe que había hecho el rey Asa",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cámara de Elisama el secretario",
+          "isCorrect": false
+        },
+        {
+          "text": "En el patio de la cárcel de la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "En un horno de ladrillos a la puerta de la casa de Faraón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que pondría sobre aquellas piedras escondidas?",
+      "explanation": "Jehová dijo que pondría el trono de Nabucodonosor sobre esas piedras, y que él tendería su dosel sobre ellas.",
+      "bibleReference": "Jeremías 43:10",
+      "answers": [
+        {
+          "text": "El altar de los dioses de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "El trono de Nabucodonosor",
+          "isCorrect": true
+        },
+        {
+          "text": "Las estatuas de Beth-semes",
+          "isCorrect": false
+        },
+        {
+          "text": "La capa del pastor de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama Jehová a Nabucodonosor rey de Babilonia en este capítulo?",
+      "explanation": "El versículo dice: tomaré a Nabucodonosor rey de Babilonia, mi siervo.",
+      "bibleReference": "Jeremías 43:10",
+      "answers": [
+        {
+          "text": "Mi ungido",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi pastor",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi siervo",
+          "isCorrect": true
+        },
+        {
+          "text": "Mi hijo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que haría con las casas de los dioses de Egipto?",
+      "explanation": "Jehová dijo: pondré fuego a las casas de los dioses de Egipto; y las quemará.",
+      "bibleReference": "Jeremías 43:12",
+      "answers": [
+        {
+          "text": "Las daría a los Judíos por morada",
+          "isCorrect": false
+        },
+        {
+          "text": "Las derribaría con arietes y hachas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dejaría desiertas sin morador",
+          "isCorrect": false
+        },
+        {
+          "text": "Pondría fuego en ellas y serían quemadas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Jehová la manera en que Nabucodonosor se vestiría la tierra de Egipto?",
+      "explanation": "El versículo dice que se vestirá la tierra de Egipto como el pastor se viste su capa.",
+      "bibleReference": "Jeremías 43:12",
+      "answers": [
+        {
+          "text": "Con un pastor que se viste su capa",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un rey que se ciñe su corona",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un soldado que toma su escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un labrador que recoge su fruto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

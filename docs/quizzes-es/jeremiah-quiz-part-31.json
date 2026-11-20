@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 31",
+  "description": "Diez preguntas sobre Jeremías 31: el amor eterno, la voz oída en Ramá, el lamento de Ephraim y el nuevo pacto escrito en los corazones.",
+  "slug": "jeremiah-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué clase de amor dijo Jehová que la había amado?",
+      "explanation": "El verso dice: Con amor eterno te he amado; por tanto te soporté con misericordia.",
+      "bibleReference": "Jeremías 31:3",
+      "answers": [
+        {
+          "text": "Con amor eterno",
+          "isCorrect": true
+        },
+        {
+          "text": "Con mano fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Con celo ardiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Con juicio recto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dijo que la virgen de Israel todavía sería adornada?",
+      "explanation": "El verso dice que será edificada otra vez y que todavía será adornada con sus panderos, y que saldrá en corro de danzantes.",
+      "bibleReference": "Jeremías 31:4",
+      "answers": [
+        {
+          "text": "Con oro de Ophir",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sus panderos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con vestidos de lino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con piedras preciosas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clamarán los guardas en el monte de Ephraim?",
+      "explanation": "El verso dice que habrá día en que clamarán: Levantaos, y subamos a Sión, a Jehová nuestro Dios.",
+      "bibleReference": "Jeremías 31:6",
+      "answers": [
+        {
+          "text": "Huyamos al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Venid a estos montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerrad bien las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Subamos a Sión",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes nombra el texto entre los que volverá de tierra del aquilón?",
+      "explanation": "El verso dice que los juntará de los fines de la tierra, y que entre ellos vendrán ciegos y cojos, la mujer preñada y la parida juntamente.",
+      "bibleReference": "Jeremías 31:8",
+      "answers": [
+        {
+          "text": "Sólo a los varones fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes y sus príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "A ciegos y cojos entre ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes del templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el texto que el que esparció a Israel lo juntará y lo guardará?",
+      "explanation": "El verso dice: El que esparció a Israel lo juntará y guardará, como pastor a su ganado.",
+      "bibleReference": "Jeremías 31:10",
+      "answers": [
+        {
+          "text": "Como rey a su ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Como pastor a su ganado",
+          "isCorrect": true
+        },
+        {
+          "text": "Como labrador su viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Como guarda a la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién lamenta en Ramá, con llanto y lloro amargo?",
+      "explanation": "El verso dice que fue oída voz en Ramá: Rachêl que lamenta por sus hijos y no quiso ser consolada, porque perecieron.",
+      "bibleReference": "Jeremías 31:15",
+      "answers": [
+        {
+          "text": "Rachêl, por sus hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "La virgen de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los guardas de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Los viejos de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice Ephraim, en su lamento, que fue castigado?",
+      "explanation": "El verso dice que Ephraim se lamentaba: Azotásteme, y fui castigado como novillo indómito.",
+      "bibleReference": "Jeremías 31:18",
+      "answers": [
+        {
+          "text": "Como siervo rebelde",
+          "isCorrect": false
+        },
+        {
+          "text": "Como árbol sin fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Como novillo indómito",
+          "isCorrect": true
+        },
+        {
+          "text": "Como vaso de barro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que ya no dirían en aquellos días?",
+      "explanation": "El verso dice que no dirán más: Los padres comieron las uvas agraces, y los dientes de los hijos tienen la dentera.",
+      "bibleReference": "Jeremías 31:29",
+      "answers": [
+        {
+          "text": "Que Jehová ha dejado la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los profetas no mienten",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el pacto es para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los hijos tienen la dentera",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "En el pacto que hará con la casa de Israel, ¿dónde dijo que daría y escribiría su ley?",
+      "explanation": "El verso dice: Daré mi ley en sus entrañas, y escribiréla en sus corazones; y seré yo a ellos por Dios, y ellos me serán por pueblo.",
+      "bibleReference": "Jeremías 31:33",
+      "answers": [
+        {
+          "text": "En sus entrañas y corazones",
+          "isCorrect": true
+        },
+        {
+          "text": "En dos tablas de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "En un libro de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "En las puertas de Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde y hasta dónde dijo Jehová que la ciudad sería edificada a él?",
+      "explanation": "El verso dice que vienen días en que la ciudad será edificada a Jehová, desde la torre de Hananeel hasta la puerta del rincón.",
+      "bibleReference": "Jeremías 31:38",
+      "answers": [
+        {
+          "text": "Desde el monte de Ephraim hasta Ramá",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la torre de Hananeel hasta la puerta del rincón",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde la puerta de Benjamín hasta Goa",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el arroyo de Cedrón hasta Sión",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

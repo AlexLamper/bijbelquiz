@@ -1,0 +1,122 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Eclesiastés 4: las lágrimas de los oprimidos, el puño lleno con descanso, el hombre solo y el cordón de tres dobleces.",
+  "slug": "ecclesiastes-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué les faltaba a los oprimidos cuyas lágrimas vio?",
+      "explanation": "Eclesiastés 4:1 dice: y he aquí las lágrimas de los oprimidos, y sin tener quien los consuele; y para ellos no había consolador.",
+      "bibleReference": "Eclesiastés 4:1",
+      "answers": [
+        { "text": "Pan y vestido", "isCorrect": false },
+        { "text": "Sabiduría y ciencia", "isCorrect": false },
+        { "text": "Quien los consolase", "isCorrect": true },
+        { "text": "Paga por su trabajo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a quiénes alabó más que a los vivientes?",
+      "explanation": "Eclesiastés 4:2 dice: Y alabé yo los finados que ya murieron, más que los vivientes que hasta ahora están vivos.",
+      "bibleReference": "Eclesiastés 4:2",
+      "answers": [
+        { "text": "A los oprimidos sin consolador", "isCorrect": false },
+        { "text": "A los finados que ya murieron", "isCorrect": true },
+        { "text": "A los que tienen hijo y hermano", "isCorrect": false },
+        { "text": "A los reyes viejos y fatuos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué mueve todo trabajo y toda excelencia de obras?",
+      "explanation": "Eclesiastés 4:4 dice: Visto he asimismo que todo trabajo y toda excelencia de obras mueve la envidia del hombre contra su prójimo.",
+      "bibleReference": "Eclesiastés 4:4",
+      "answers": [
+        { "text": "La envidia del hombre contra su prójimo", "isCorrect": true },
+        { "text": "El descanso del que trabaja", "isCorrect": false },
+        { "text": "La alabanza de los vivientes", "isCorrect": false },
+        { "text": "La paga de su trabajo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué hace el necio?",
+      "explanation": "Eclesiastés 4:5 dice: El necio dobla sus manos y come su carne.",
+      "bibleReference": "Eclesiastés 4:5",
+      "answers": [
+        { "text": "Labra su tierra sin descanso", "isCorrect": false },
+        { "text": "Busca la paga de su trabajo", "isCorrect": false },
+        { "text": "Levanta a su compañero caído", "isCorrect": false },
+        { "text": "Dobla sus manos y come su carne", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué vale más que ambos puños llenos con trabajo y aflicción de espíritu?",
+      "explanation": "Eclesiastés 4:6 dice: Mas vale el un puño lleno con descanso, que ambos puños llenos con trabajo y aflicción de espíritu.",
+      "bibleReference": "Eclesiastés 4:6",
+      "answers": [
+        { "text": "La excelencia de las obras", "isCorrect": false },
+        { "text": "Las riquezas del opresor", "isCorrect": false },
+        { "text": "La envidia del prójimo", "isCorrect": false },
+        { "text": "Un puño lleno con descanso", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué le falta al hombre solo que nunca cesa de trabajar?",
+      "explanation": "Eclesiastés 4:8 dice: Está un hombre solo y sin sucesor; que ni tiene hijo ni hermano.",
+      "bibleReference": "Eclesiastés 4:8",
+      "answers": [
+        { "text": "Hijo y hermano", "isCorrect": true },
+        { "text": "Riquezas y hacienda", "isCorrect": false },
+        { "text": "Ojos y manos", "isCorrect": false },
+        { "text": "Pan y vino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿por qué son mejores dos que uno?",
+      "explanation": "Eclesiastés 4:9 dice: Mejores son dos que uno; porque tienen mejor paga de su trabajo.",
+      "bibleReference": "Eclesiastés 4:9",
+      "answers": [
+        { "text": "Porque uno de ellos será rey", "isCorrect": false },
+        { "text": "Porque no mueven la envidia", "isCorrect": false },
+        { "text": "Porque tienen mejor paga de su trabajo", "isCorrect": true },
+        { "text": "Porque nunca cesan de trabajar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué le sucede al que está solo cuando cae?",
+      "explanation": "Eclesiastés 4:10 dice: mas ¡ay del solo! que cuando cayere, no habrá segundo que lo levante.",
+      "bibleReference": "Eclesiastés 4:10",
+      "answers": [
+        { "text": "Su compañero lo levantará", "isCorrect": false },
+        { "text": "No habrá segundo que lo levante", "isCorrect": true },
+        { "text": "Dos estarán contra él", "isCorrect": false },
+        { "text": "Se calentará con el otro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué no se rompe pronto?",
+      "explanation": "Eclesiastés 4:12 dice: y cordón de tres dobleces no presto se rompe.",
+      "bibleReference": "Eclesiastés 4:12",
+      "answers": [
+        { "text": "Un puño lleno con descanso", "isCorrect": false },
+        { "text": "Una red tendida al prójimo", "isCorrect": false },
+        { "text": "Un cordón de tres dobleces", "isCorrect": true },
+        { "text": "Un cordón de dos dobleces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿quién es mejor que el rey viejo y fatuo que no sabe ser aconsejado?",
+      "explanation": "Eclesiastés 4:13 dice: Mejor es el muchacho pobre y sabio, que el rey viejo y fatuo que no sabe ser aconsejado.",
+      "bibleReference": "Eclesiastés 4:13",
+      "answers": [
+        { "text": "El muchacho pobre y sabio", "isCorrect": true },
+        { "text": "El hombre solo y sin sucesor", "isCorrect": false },
+        { "text": "El necio que dobla sus manos", "isCorrect": false },
+        { "text": "El opresor que tiene la fuerza", "isCorrect": false }
+      ]
+    }
+  ]
+}

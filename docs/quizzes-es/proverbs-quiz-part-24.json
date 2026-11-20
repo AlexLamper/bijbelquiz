@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre Proverbios 24: la casa edificada con sabiduría, el justo que cae siete veces, la miel y el panal, y la viña del perezoso.",
+  "slug": "proverbs-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿en qué piensa el corazón de los hombres malos?",
+      "explanation": "Proverbios 24:1-2 dice: NO tengas envidia de los hombres malos, ni desees estar con ellos: porque su corazón piensa en robar, é iniquidad hablan sus labios.",
+      "bibleReference": "Proverbios 24:1-2",
+      "answers": [
+        {
+          "text": "En la miel y el panal",
+          "isCorrect": false
+        },
+        {
+          "text": "En el día de trabajo",
+          "isCorrect": false
+        },
+        {
+          "text": "En robar",
+          "isCorrect": true
+        },
+        {
+          "text": "En la multitud de consejeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿con qué se edificará la casa?",
+      "explanation": "Proverbios 24:3-4 dice: Con sabiduría se edificará la casa, y con prudencia se afirmará.",
+      "bibleReference": "Proverbios 24:3-4",
+      "answers": [
+        {
+          "text": "Con ingenio de guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con sabiduría",
+          "isCorrect": true
+        },
+        {
+          "text": "Con espinas y ortigas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la miel del panal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿dónde está la salud?",
+      "explanation": "Proverbios 24:6 dice: Porque con ingenio harás la guerra: y la salud está en la multitud de consejeros.",
+      "bibleReference": "Proverbios 24:6",
+      "answers": [
+        {
+          "text": "En la fuerza del hombre docto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el consejo del escarnecedor",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cerca de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "En la multitud de consejeros",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué sucede si eres flojo en el día de trabajo?",
+      "explanation": "Proverbios 24:10 dice: Si fueres flojo en el día de trabajo, tu fuerza será reducida.",
+      "bibleReference": "Proverbios 24:10",
+      "answers": [
+        {
+          "text": "Tu fuerza será reducida",
+          "isCorrect": true
+        },
+        {
+          "text": "Tu candela será apagada",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu esperanza será cortada",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu cerca será destruida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cómo dará al hombre el que mira por su alma?",
+      "explanation": "Proverbios 24:12 dice que el que mira por tu alma lo conocerá, y dará al hombre según sus obras.",
+      "bibleReference": "Proverbios 24:12",
+      "answers": [
+        {
+          "text": "Según su fuerza",
+          "isCorrect": false
+        },
+        {
+          "text": "Según sus obras",
+          "isCorrect": true
+        },
+        {
+          "text": "Según su edad",
+          "isCorrect": false
+        },
+        {
+          "text": "Según sus palabras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto el conocimiento de la sabiduría para tu alma?",
+      "explanation": "Proverbios 24:13-14 dice: Come, hijo mío, de la miel, porque es buena, y del panal dulce á tu paladar: tal será el conocimiento de la sabiduría á tu alma.",
+      "bibleReference": "Proverbios 24:13-14",
+      "answers": [
+        {
+          "text": "Con el día de la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la viña del perezoso",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la miel y el panal dulce",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la cerca de piedra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuántas veces cae el justo y se torna a levantar?",
+      "explanation": "Proverbios 24:16 dice: Porque siete veces cae el justo, y se torna á levantar; mas los impíos caerán en el mal.",
+      "bibleReference": "Proverbios 24:16",
+      "answers": [
+        {
+          "text": "Siete veces",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos veces",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez veces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué no debes hacer cuando cae tu enemigo?",
+      "explanation": "Proverbios 24:17 dice: Cuando cayere tu enemigo, no te huelgues; y cuando tropezare, no se alegre tu corazón.",
+      "bibleReference": "Proverbios 24:17",
+      "answers": [
+        {
+          "text": "Librarlo del degolladero",
+          "isCorrect": false
+        },
+        {
+          "text": "Reprenderlo delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir su heredad",
+          "isCorrect": false
+        },
+        {
+          "text": "Alegrarte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué debes hacer antes de edificar tu casa?",
+      "explanation": "Proverbios 24:27 dice: Apresta tu obra de afuera, y disponla en tu heredad; y después edificarás tu casa.",
+      "bibleReference": "Proverbios 24:27",
+      "answers": [
+        {
+          "text": "Comer de la miel del panal",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomar consejo de los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Aprestar tu obra de afuera",
+          "isCorrect": true
+        },
+        {
+          "text": "Reprender al que dice justo al malo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué había crecido por toda la heredad del hombre perezoso?",
+      "explanation": "Proverbios 24:30-31 dice que por toda ella habían ya crecido espinas, ortigas habían ya cubierto su haz, y su cerca de piedra estaba ya destruída.",
+      "bibleReference": "Proverbios 24:30-31",
+      "answers": [
+        {
+          "text": "Vides cargadas de fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Espinas y ortigas",
+          "isCorrect": true
+        },
+        {
+          "text": "Miel y panales",
+          "isCorrect": false
+        },
+        {
+          "text": "Cercas de piedra",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

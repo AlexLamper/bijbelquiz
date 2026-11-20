@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Jeremías 6: la bocina en Tecoa, las sendas antiguas, los atalayas y la plata desechada.",
+  "slug": "jeremiah-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde debían tocar bocina los hijos de Benjamín?",
+      "explanation": "El verso manda huir de en medio de Jerusalem, tocar bocina en Tecoa y alzar humo por señal sobre Beth-hacchêrem.",
+      "bibleReference": "Jeremías 6:1",
+      "answers": [
+        {
+          "text": "En Anathoth",
+          "isCorrect": false
+        },
+        {
+          "text": "En Beth-hacchêrem",
+          "isCorrect": false
+        },
+        {
+          "text": "En Silo",
+          "isCorrect": false
+        },
+        {
+          "text": "En Tecoa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Jehová a la hija de Sión?",
+      "explanation": "El verso dice: A mujer hermosa y delicada comparé a la hija de Sión.",
+      "bibleReference": "Jeremías 6:2",
+      "answers": [
+        {
+          "text": "Con una vid extraña",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una mujer hermosa y delicada",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una ciudad fortalecida",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una jaula de pájaros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara el continuo manar de la malicia de la ciudad?",
+      "explanation": "El verso dice que, como la fuente nunca cesa de manar sus aguas, así nunca cesa de manar su malicia.",
+      "bibleReference": "Jeremías 6:7",
+      "answers": [
+        {
+          "text": "Con un torbellino del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una cisterna que está rota",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una fuente que nunca cesa de manar",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un horno siempre encendido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso de las orejas del pueblo?",
+      "explanation": "El verso dice que sus orejas son incircuncisas y no pueden escuchar, y que la palabra de Jehová les es cosa vergonzosa.",
+      "bibleReference": "Jeremías 6:10",
+      "answers": [
+        {
+          "text": "Que son incircuncisas y no pueden escuchar",
+          "isCorrect": true
+        },
+        {
+          "text": "Que oyen la palabra y se alegran con ella",
+          "isCorrect": false
+        },
+        {
+          "text": "Que están abiertas para oír la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Que escucharon la voz de los atalayas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sigue cada uno, desde el más chico hasta el más grande?",
+      "explanation": "El verso dice que desde el más chico hasta el más grande, cada uno sigue la avaricia, y que desde el profeta hasta el sacerdote todos son engañadores.",
+      "bibleReference": "Jeremías 6:13",
+      "answers": [
+        {
+          "text": "La vanidad de los ídolos",
+          "isCorrect": false
+        },
+        {
+          "text": "La avaricia",
+          "isCorrect": true
+        },
+        {
+          "text": "El camino de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciencia de los ancianos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué decían los que curaban con liviandad el quebrantamiento de la hija del pueblo?",
+      "explanation": "El verso dice que curan el quebrantamiento de la hija de mi pueblo con liviandad, diciendo: Paz, paz; y no hay paz.",
+      "bibleReference": "Jeremías 6:14",
+      "answers": [
+        {
+          "text": "Paz, paz",
+          "isCorrect": true
+        },
+        {
+          "text": "Vive Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Librados somos",
+          "isCorrect": false
+        },
+        {
+          "text": "Señores somos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hallarían los que anduviesen por el buen camino de las sendas antiguas?",
+      "explanation": "El verso dice: andad por él, y hallaréis descanso para vuestra alma. Mas dijeron: No andaremos.",
+      "bibleReference": "Jeremías 6:16",
+      "answers": [
+        {
+          "text": "Lluvia temprana y tardía",
+          "isCorrect": false
+        },
+        {
+          "text": "Nuevas fuerzas como de águilas",
+          "isCorrect": false
+        },
+        {
+          "text": "Descanso para su alma",
+          "isCorrect": true
+        },
+        {
+          "text": "Pastores según el corazón de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando los atalayas dijeron que escuchasen la voz de la trompeta, ¿qué respondieron ellos?",
+      "explanation": "El verso dice que Jehová despertó sobre ellos atalayas que dijesen: Escuchad a la voz de la trompeta. Y dijeron ellos: No escucharemos.",
+      "bibleReference": "Jeremías 6:17",
+      "answers": [
+        {
+          "text": "Oiremos a nuestros profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hablaremos a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Haremos lo que mandes",
+          "isCorrect": false
+        },
+        {
+          "text": "No escucharemos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde viene el incienso que Jehová no quiere recibir?",
+      "explanation": "El verso pregunta a qué viene para él este incienso de Seba, y la buena caña olorosa de tierra lejana.",
+      "bibleReference": "Jeremías 6:20",
+      "answers": [
+        {
+          "text": "De Seba",
+          "isCorrect": true
+        },
+        {
+          "text": "De Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "De Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "De las islas de Chîttim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo los llamarán, porque Jehová los desechó?",
+      "explanation": "El último verso dice: Plata desechada los llamarán, porque Jehová los desechó.",
+      "bibleReference": "Jeremías 6:30",
+      "answers": [
+        {
+          "text": "Oro refinado",
+          "isCorrect": false
+        },
+        {
+          "text": "Plata desechada",
+          "isCorrect": true
+        },
+        {
+          "text": "Vasos escogidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Simiente verdadera",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

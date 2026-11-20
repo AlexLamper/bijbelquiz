@@ -1,0 +1,122 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Eclesiastés 6: el mal muy común entre los hombres, las riquezas que comen los extraños, el abortivo y el trabajo que es para la boca.",
+  "slug": "ecclesiastes-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿cómo califica el texto ese mal que ha visto debajo del cielo?",
+      "explanation": "Eclesiastés 6:1 dice: Hay un mal que he visto debajo del cielo, y muy común entre los hombres.",
+      "bibleReference": "Eclesiastés 6:1",
+      "answers": [
+        { "text": "Raro entre los hombres", "isCorrect": false },
+        { "text": "Oculto a los sabios", "isCorrect": false },
+        { "text": "Propio de los reyes", "isCorrect": false },
+        { "text": "Muy común entre los hombres", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿quiénes se comen los bienes del hombre a quien Dios no dio facultad de comer de ellos?",
+      "explanation": "Eclesiastés 6:2 dice: mas Dios no le dió facultad de comer de ello, sino que los extraños se lo comen.",
+      "bibleReference": "Eclesiastés 6:2",
+      "answers": [
+        { "text": "Sus hijos", "isCorrect": false },
+        { "text": "Los extraños", "isCorrect": true },
+        { "text": "Sus siervos", "isCorrect": false },
+        { "text": "Los sabios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿quién es mejor que el hombre cuya alma no se hartó del bien y careció de sepultura?",
+      "explanation": "Eclesiastés 6:3 dice: yo digo que el abortivo es mejor que él.",
+      "bibleReference": "Eclesiastés 6:3",
+      "answers": [
+        { "text": "El sabio", "isCorrect": false },
+        { "text": "El pobre", "isCorrect": false },
+        { "text": "El abortivo", "isCorrect": true },
+        { "text": "El necio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿con qué será cubierto su nombre?",
+      "explanation": "Eclesiastés 6:4 dice: Porque en vano vino, y á tinieblas va, y con tinieblas será cubierto su nombre.",
+      "bibleReference": "Eclesiastés 6:4",
+      "answers": [
+        { "text": "Con tinieblas", "isCorrect": true },
+        { "text": "Con honra", "isCorrect": false },
+        { "text": "Con polvo", "isCorrect": false },
+        { "text": "Con riquezas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué tiene más el que no ha visto el sol ni ha conocido nada?",
+      "explanation": "Eclesiastés 6:5 dice: Aunque no haya visto el sol, ni conocido nada, más reposo tiene éste que aquél.",
+      "bibleReference": "Eclesiastés 6:5",
+      "answers": [
+        { "text": "Más riquezas", "isCorrect": false },
+        { "text": "Más reposo", "isCorrect": true },
+        { "text": "Más años", "isCorrect": false },
+        { "text": "Más honra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, aunque alguien viviera mil años dos veces sin gozar del bien, ¿adónde van todos?",
+      "explanation": "Eclesiastés 6:6 dice: si no ha gozado del bien, cierto todos van á un lugar.",
+      "bibleReference": "Eclesiastés 6:6",
+      "answers": [
+        { "text": "Cada uno a su propio lugar", "isCorrect": false },
+        { "text": "Al lugar de los sabios", "isCorrect": false },
+        { "text": "A un lugar de honra", "isCorrect": false },
+        { "text": "A un mismo lugar", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿para qué es todo el trabajo del hombre?",
+      "explanation": "Eclesiastés 6:7 dice: Todo el trabajo del hombre es para su boca, y con todo eso su alma no se harta.",
+      "bibleReference": "Eclesiastés 6:7",
+      "answers": [
+        { "text": "Para su honra", "isCorrect": false },
+        { "text": "Para sus hijos", "isCorrect": false },
+        { "text": "Para su boca", "isCorrect": true },
+        { "text": "Para los extraños", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué vale más que el deseo que pasa?",
+      "explanation": "Eclesiastés 6:9 dice: Más vale vista de ojos que deseo que pasa.",
+      "bibleReference": "Eclesiastés 6:9",
+      "answers": [
+        { "text": "La vista de ojos", "isCorrect": true },
+        { "text": "El reposo del sabio", "isCorrect": false },
+        { "text": "La hartura del alma", "isCorrect": false },
+        { "text": "Las muchas palabras", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿con quién no podrá contender el hombre?",
+      "explanation": "Eclesiastés 6:10 dice: y se sabe que es hombre, y que no podrá contender con el que es más fuerte que él.",
+      "bibleReference": "Eclesiastés 6:10",
+      "answers": [
+        { "text": "Con el que es más fuerte que él", "isCorrect": true },
+        { "text": "Con el abortivo que tiene reposo", "isCorrect": false },
+        { "text": "Con los extraños que se lo comen", "isCorrect": false },
+        { "text": "Con el que no vio el sol", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué multiplican las muchas palabras?",
+      "explanation": "Eclesiastés 6:11 dice: Ciertamente las muchas palabras multiplican la vanidad.",
+      "bibleReference": "Eclesiastés 6:11",
+      "answers": [
+        { "text": "El reposo", "isCorrect": false },
+        { "text": "La sabiduría", "isCorrect": false },
+        { "text": "La vanidad", "isCorrect": true },
+        { "text": "Las riquezas", "isCorrect": false }
+      ]
+    }
+  ]
+}

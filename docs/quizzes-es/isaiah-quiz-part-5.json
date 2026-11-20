@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Isaías 5: el cantar de la viña que llevó uvas silvestres, los ayes contra los que juntan casa con casa y la gente llamada de lejos.",
+  "slug": "isaiah-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde tenía su amado la viña del cantar?",
+      "explanation": "El texto dice: tenía mi amado una viña en un recuesto, lugar fértil.",
+      "bibleReference": "Isaías 5:1",
+      "answers": [
+        {
+          "text": "En Baal-hamón",
+          "isCorrect": false
+        },
+        {
+          "text": "En un recuesto, lugar fértil",
+          "isCorrect": true
+        },
+        {
+          "text": "En medio del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a las aguas de Siloé",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevó la viña, cuando él esperaba que llevase uvas?",
+      "explanation": "El texto dice que esperaba que llevase uvas, y llevó uvas silvestres.",
+      "bibleReference": "Isaías 5:2",
+      "answers": [
+        {
+          "text": "Uvas silvestres",
+          "isCorrect": true
+        },
+        {
+          "text": "Cardos y espinas",
+          "isCorrect": false
+        },
+        {
+          "text": "Higos malos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hojas sin fruto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había edificado en medio de la viña?",
+      "explanation": "El texto dice que había edificado en medio de ella una torre, y también asentado un lagar en ella.",
+      "bibleReference": "Isaías 5:2",
+      "answers": [
+        {
+          "text": "Un palacio de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Un muro de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Un altar de sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Una torre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 7 que es la viña de Jehová de los ejércitos?",
+      "explanation": "El texto dice: ciertamente la viña de Jehová de los ejércitos es la casa de Israel.",
+      "bibleReference": "Isaías 5:7",
+      "answers": [
+        {
+          "text": "La ciudad de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "La casa de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Los hijos de los extranjeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta el texto a los que juntan casa con casa y heredad a heredad?",
+      "explanation": "El texto les pregunta: habitaréis vosotros solos en medio de la tierra.",
+      "bibleReference": "Isaías 5:8",
+      "answers": [
+        {
+          "text": "Si habitarán ellos solos en medio de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Si saben desechar lo malo y escoger lo bueno",
+          "isCorrect": false
+        },
+        {
+          "text": "Si juzgarán entre él y su viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Si han visto la obra de sus manos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué producirán diez huebras de viña, según el versículo 10?",
+      "explanation": "El texto dice que diez huebras de viña producirán un zaque, y treinta modios de simiente darán tres modios.",
+      "bibleReference": "Isaías 5:10",
+      "answers": [
+        {
+          "text": "Tres modios",
+          "isCorrect": false
+        },
+        {
+          "text": "Un zaque",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta modios",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez zaques",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dice el texto que su pueblo fue llevado cautivo?",
+      "explanation": "El texto dice: por tanto mi pueblo fué llevado cautivo, porque no tuvo ciencia.",
+      "bibleReference": "Isaías 5:13",
+      "answers": [
+        {
+          "text": "Por sus muchas casas",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el vino de sus banquetes",
+          "isCorrect": false
+        },
+        {
+          "text": "Por sus ídolos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no tuvo ciencia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que no miran los que tienen arpas y vino en sus banquetes?",
+      "explanation": "El texto dice que en sus banquetes hay arpas, vihuelas, tamboriles, flautas y vino, y que no miran la obra de Jehová ni consideran la obra de sus manos.",
+      "bibleReference": "Isaías 5:12",
+      "answers": [
+        {
+          "text": "La obra de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "La ley del Santo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "El juicio del huérfano",
+          "isCorrect": false
+        },
+        {
+          "text": "El día de la visitación",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿qué ponen por dulce aquellos sobre los que se pronuncia el ay?",
+      "explanation": "El texto dice que ponen lo amargo por dulce, y lo dulce por amargo.",
+      "bibleReference": "Isaías 5:20",
+      "answers": [
+        {
+          "text": "La luz",
+          "isCorrect": false
+        },
+        {
+          "text": "El vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo amargo",
+          "isCorrect": true
+        },
+        {
+          "text": "Las tinieblas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hará Jehová a las gentes de lejos, según el versículo 26?",
+      "explanation": "El texto dice que alzará pendón a gentes de lejos, y silbará al que está en el cabo de la tierra.",
+      "bibleReference": "Isaías 5:26",
+      "answers": [
+        {
+          "text": "Las esconderá en las peñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las apacentará como corderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las consumirá con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Les alzará pendón y les silbará",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

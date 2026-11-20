@@ -1,0 +1,242 @@
+{
+  "title": "Jeremías Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Jeremías 10: los ídolos de leño que no pueden hacer bien ni mal, y el Dios que hizo la tierra con su potencia.",
+  "slug": "jeremiah-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué manda Jehová no aprender y no temer en el versículo 2?",
+      "explanation": "Jehová dice: No aprendáis el camino de las gentes, ni de las señales del cielo tengáis temor, aunque las gentes las teman.",
+      "bibleReference": "Jeremías 10:2",
+      "answers": [
+        {
+          "text": "Los cantos de los sacerdotes y las fiestas",
+          "isCorrect": false
+        },
+        {
+          "text": "Las leyes de los reyes y los juicios de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sueños de los profetas y sus visiones",
+          "isCorrect": false
+        },
+        {
+          "text": "El camino de las gentes y las señales del cielo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se hace el ídolo y con qué lo afirman, según los versículos 3 y 4?",
+      "explanation": "El texto dice que cortaron leño del monte, obra de manos de artífice, y que con clavos y martillo lo afirman para que no se salga.",
+      "bibleReference": "Jeremías 10:3-4",
+      "answers": [
+        {
+          "text": "De piedra del valle, afirmada con cal y arena",
+          "isCorrect": false
+        },
+        {
+          "text": "De barro del alfarero, cocido en el horno",
+          "isCorrect": false
+        },
+        {
+          "text": "De leño del monte, afirmado con clavos y martillo",
+          "isCorrect": true
+        },
+        {
+          "text": "De hueso y marfil, pegado con betún",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué no pueden hacer esos ídolos?",
+      "explanation": "El versículo dice que no hay que temerlos, porque ni pueden hacer mal ni para hacer bien tienen poder.",
+      "bibleReference": "Jeremías 10:5",
+      "answers": [
+        {
+          "text": "Ni crecer ni multiplicarse",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni hacer mal ni hacer bien",
+          "isCorrect": true
+        },
+        {
+          "text": "Ni salvar ni juzgar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni dar lluvia ni quitarla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde traen la plata y el oro para adornar al ídolo?",
+      "explanation": "El texto dice que traerán plata extendida de Tarsis y oro de Uphaz, obra del artífice y de las manos del fundidor.",
+      "bibleReference": "Jeremías 10:9",
+      "answers": [
+        {
+          "text": "Plata de Tarsis y oro de Uphaz",
+          "isCorrect": true
+        },
+        {
+          "text": "Plata de Ofir y oro de Saba",
+          "isCorrect": false
+        },
+        {
+          "text": "Plata de Egipto y oro de Havilah",
+          "isCorrect": false
+        },
+        {
+          "text": "Plata de Tiro y oro de Arabia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 10 acerca de Jehová Dios?",
+      "explanation": "El versículo dice que Jehová Dios es la verdad, que él es Dios vivo y Rey eterno, y que a su ira tiembla la tierra.",
+      "bibleReference": "Jeremías 10:10",
+      "answers": [
+        {
+          "text": "Que es la verdad, Dios vivo y Rey eterno",
+          "isCorrect": true
+        },
+        {
+          "text": "Que es el juez de los muertos y de los vivos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es la roca y el escudo de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es el pastor y el guardador de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿con qué hizo la tierra, ordenó el mundo y extendió los cielos?",
+      "explanation": "El versículo dice que hizo la tierra con su potencia, puso en orden el mundo con su saber y extendió los cielos con su prudencia.",
+      "bibleReference": "Jeremías 10:12",
+      "answers": [
+        {
+          "text": "Con su palabra, su mano y su aliento",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su espada, su vara y su fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su potencia, su saber y su prudencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Con su misericordia, su juicio y su justicia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué hace con la lluvia y de dónde saca el viento?",
+      "explanation": "El versículo dice que hace los relámpagos con la lluvia y saca el viento de sus depósitos.",
+      "bibleReference": "Jeremías 10:13",
+      "answers": [
+        {
+          "text": "Hace los truenos con el granizo y saca el viento de los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Hace las nubes con el rocío y saca el viento de los mares",
+          "isCorrect": false
+        },
+        {
+          "text": "Hace el arco con las aguas y saca el viento de las cavernas",
+          "isCorrect": false
+        },
+        {
+          "text": "Hace los relámpagos con la lluvia y saca el viento de sus depósitos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el versículo 16 a Israel respecto de Jehová?",
+      "explanation": "El versículo dice que él es el Hacedor de todo e Israel es la vara de su herencia, y que Jehová de los ejércitos es su nombre.",
+      "bibleReference": "Jeremías 10:16",
+      "answers": [
+        {
+          "text": "La viña de su deleite",
+          "isCorrect": false
+        },
+        {
+          "text": "La vara de su herencia",
+          "isCorrect": true
+        },
+        {
+          "text": "El rebaño de su pasto",
+          "isCorrect": false
+        },
+        {
+          "text": "La corona de su gloria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde viene el alboroto grande que anuncia el versículo 22?",
+      "explanation": "El versículo dice que viene voz de fama y alboroto grande de la tierra del aquilón, para tornar en soledad las ciudades de Judá.",
+      "bibleReference": "Jeremías 10:22",
+      "answers": [
+        {
+          "text": "De la tierra del mediodía",
+          "isCorrect": false
+        },
+        {
+          "text": "De las islas del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tierra del aquilón",
+          "isCorrect": true
+        },
+        {
+          "text": "Del desierto de Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reconoce el que habla delante de Jehová en el versículo 23?",
+      "explanation": "El versículo dice: Conozco, oh Jehová, que el hombre no es señor de su camino, ni del hombre que camina es ordenar sus pasos.",
+      "bibleReference": "Jeremías 10:23",
+      "answers": [
+        {
+          "text": "Que el hombre no es señor de su camino",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el hombre no conoce el día de su muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el hombre nace para el trabajo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el hombre no puede ver a Dios y vivir",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

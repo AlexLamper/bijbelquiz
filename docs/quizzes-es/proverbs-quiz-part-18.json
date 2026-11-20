@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre Proverbios 18: las aguas profundas de las palabras, la torre fuerte del nombre de Jehová, la lengua con poder de muerte y de vida y el amigo verdadero.",
+  "slug": "proverbs-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué no toma placer el necio, según el texto?",
+      "explanation": "Proverbios 18:2 dice: No toma placer el necio en la inteligencia, sino en lo que su corazón se descubre.",
+      "bibleReference": "Proverbios 18:2",
+      "answers": [
+        {
+          "text": "En el pleito",
+          "isCorrect": false
+        },
+        {
+          "text": "En su propia boca",
+          "isCorrect": false
+        },
+        {
+          "text": "En lo que su corazón descubre",
+          "isCorrect": false
+        },
+        {
+          "text": "En la inteligencia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto las palabras de la boca del hombre?",
+      "explanation": "Proverbios 18:4 dice: Aguas profundas son las palabras de la boca del hombre; y arroyo revertiente, la fuente de la sabiduría.",
+      "bibleReference": "Proverbios 18:4",
+      "answers": [
+        {
+          "text": "Con aguas profundas",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una torre fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un muro alto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con lazos para el alma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿hasta dónde descienden las palabras del chismoso?",
+      "explanation": "Proverbios 18:8 dice: Las palabras del chismoso parecen blandas, y descienden hasta lo íntimo del vientre.",
+      "bibleReference": "Proverbios 18:8",
+      "answers": [
+        {
+          "text": "Hasta la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta los cerrojos del alcázar",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta lo íntimo del vientre",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el cabo de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es el nombre de Jehová, según el texto?",
+      "explanation": "Proverbios 18:10 dice: Torre fuerte es el nombre de Jehová: á él correrá el justo, y será levantado.",
+      "bibleReference": "Proverbios 18:10",
+      "answers": [
+        {
+          "text": "La ciudad de su fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "Un muro alto",
+          "isCorrect": false
+        },
+        {
+          "text": "Un arroyo revertiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Torre fuerte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué va antes de la honra?",
+      "explanation": "Proverbios 18:12 dice: Antes del quebrantamiento se eleva el corazón del hombre, y antes de la honra es el abatimiento.",
+      "bibleReference": "Proverbios 18:12",
+      "answers": [
+        {
+          "text": "El quebrantamiento",
+          "isCorrect": false
+        },
+        {
+          "text": "El abatimiento",
+          "isCorrect": true
+        },
+        {
+          "text": "El pleito",
+          "isCorrect": false
+        },
+        {
+          "text": "El presente para los grandes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué le es al que responde palabra antes de oír?",
+      "explanation": "Proverbios 18:13 dice: El que responde palabra antes de oir, le es fatuidad y oprobio.",
+      "bibleReference": "Proverbios 18:13",
+      "answers": [
+        {
+          "text": "Honra y riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sabiduría y ciencia",
+          "isCorrect": false
+        },
+        {
+          "text": "Fatuidad y oprobio",
+          "isCorrect": true
+        },
+        {
+          "text": "Paz y reposo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué ocurre cuando llega el adversario del que habló primero en su propia causa?",
+      "explanation": "Proverbios 18:17 dice: El primero en su propia causa parece justo; y su adversario viene, y le sondea.",
+      "bibleReference": "Proverbios 18:17",
+      "answers": [
+        {
+          "text": "Le sondea",
+          "isCorrect": true
+        },
+        {
+          "text": "Le lleva delante de los grandes",
+          "isCorrect": false
+        },
+        {
+          "text": "Le responde durezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Le aparta de la contienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué están en poder de la lengua?",
+      "explanation": "Proverbios 18:21 dice: La muerte y la vida están en poder de la lengua; y el que la ama comerá de sus frutos.",
+      "bibleReference": "Proverbios 18:21",
+      "answers": [
+        {
+          "text": "Las riquezas y la honra",
+          "isCorrect": false
+        },
+        {
+          "text": "La muerte y la vida",
+          "isCorrect": true
+        },
+        {
+          "text": "La ciencia y el consejo",
+          "isCorrect": false
+        },
+        {
+          "text": "El pleito y la contienda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué alcanzó el que halló esposa?",
+      "explanation": "Proverbios 18:22 dice: El que halló esposa halló el bien, y alcanzó la benevolencia de Jehová.",
+      "bibleReference": "Proverbios 18:22",
+      "answers": [
+        {
+          "text": "La ciudad de su fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "El fin de los pleitos",
+          "isCorrect": false
+        },
+        {
+          "text": "El producto de sus labios",
+          "isCorrect": false
+        },
+        {
+          "text": "La benevolencia de Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué ha de hacer el hombre que tiene amigos?",
+      "explanation": "Proverbios 18:24 dice: El hombre que tiene amigos, ha de mostrarse amigo: y amigo hay más conjunto que el hermano.",
+      "bibleReference": "Proverbios 18:24",
+      "answers": [
+        {
+          "text": "Ensanchar su camino con presentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Mostrarse amigo",
+          "isCorrect": true
+        },
+        {
+          "text": "Correr a la torre fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Buscar la fuente de la sabiduría",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

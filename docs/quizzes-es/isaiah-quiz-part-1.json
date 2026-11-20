@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Isaías 1: la visión sobre Judá y Jerusalem, el pueblo que no conoce a su dueño, los sacrificios rechazados y la promesa de limpiar la ciudad.",
+  "slug": "isaiah-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Sobre qué vio su visión Isaías hijo de Amoz?",
+      "explanation": "El texto dice que fue visión de Isaías hijo de Amoz, la cual vió sobre Judá y Jerusalem.",
+      "bibleReference": "Isaías 1:1",
+      "answers": [
+        {
+          "text": "Sobre Samaria y Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre Judá y Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre Sodoma y Gomorra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre Sión y el Líbano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué conoce el asno?",
+      "explanation": "El texto dice que el buey conoce a su dueño, y el asno el pesebre de su señor, pero Israel no conoce.",
+      "bibleReference": "Isaías 1:3",
+      "answers": [
+        {
+          "text": "A su propio dueño",
+          "isCorrect": false
+        },
+        {
+          "text": "El camino de su señor",
+          "isCorrect": false
+        },
+        {
+          "text": "La ley de nuestro Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "El pesebre de su señor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice el texto que no han sido suavizadas las llagas del pueblo?",
+      "explanation": "Dice que las heridas no están curadas, ni vendadas, ni suavizadas con aceite.",
+      "bibleReference": "Isaías 1:6",
+      "answers": [
+        {
+          "text": "Con aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Con vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con perfume",
+          "isCorrect": false
+        },
+        {
+          "text": "Con agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto a la hija de Sión?",
+      "explanation": "Dice que queda la hija de Sión como choza en viña, y como cabaña en melonar, como ciudad asolada.",
+      "bibleReference": "Isaías 1:8",
+      "answers": [
+        {
+          "text": "Con una torre en el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un huerto de granados",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una choza en viña",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un palacio vacío",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué ciudades habrían sido semejantes si Jehová no hubiera dejado residuos?",
+      "explanation": "El texto dice que, si Jehová de los ejércitos no hubiera hecho que quedasen muy cortos residuos, como Sodoma fueran y semejantes a Gomorra.",
+      "bibleReference": "Isaías 1:9",
+      "answers": [
+        {
+          "text": "A Damasco y Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "A Babilonia y Nínive",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sodoma y Gomorra",
+          "isCorrect": true
+        },
+        {
+          "text": "A Jerusalem y Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué dice Jehová que está harto en el versículo 11?",
+      "explanation": "Jehová dice: harto estoy de holocaustos de carneros, y de sebo de animales gruesos.",
+      "bibleReference": "Isaías 1:11",
+      "answers": [
+        {
+          "text": "De holocaustos de carneros",
+          "isCorrect": true
+        },
+        {
+          "text": "De las oraciones del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "De la ley de nuestro Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "De los jueces y consejeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿por qué no oirá Jehová aunque multipliquen la oración?",
+      "explanation": "El texto dice que esconderá sus ojos y no oirá, porque llenas están de sangre sus manos.",
+      "bibleReference": "Isaías 1:15",
+      "answers": [
+        {
+          "text": "Porque no traen holocaustos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque olvidaron el sábado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no tienen entendimiento",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sus manos están llenas de sangre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda el versículo 17 oír en derecho y amparar?",
+      "explanation": "El texto manda: oid en derecho al huérfano, amparad a la viuda.",
+      "bibleReference": "Isaías 1:17",
+      "answers": [
+        {
+          "text": "Al pobre y al extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Al huérfano y a la viuda",
+          "isCorrect": true
+        },
+        {
+          "text": "Al juez y al consejero",
+          "isCorrect": false
+        },
+        {
+          "text": "Al profeta y al adivino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 18, ¿cómo serán los pecados que fueren como la grana?",
+      "explanation": "El texto dice: si vuestros pecados fueren como la grana, como la nieve serán emblanquecidos.",
+      "bibleReference": "Isaías 1:18",
+      "answers": [
+        {
+          "text": "Como el carmesí",
+          "isCorrect": false
+        },
+        {
+          "text": "Como escorias de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la nieve",
+          "isCorrect": true
+        },
+        {
+          "text": "Como vino mezclado con agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamarán a la ciudad después de que sus jueces sean restituidos como al principio?",
+      "explanation": "El texto dice: entonces te llamarán Ciudad de justicia, Ciudad fiel.",
+      "bibleReference": "Isaías 1:26",
+      "answers": [
+        {
+          "text": "Ciudad fiel",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciudad de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudad asolada",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudad de los príncipes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

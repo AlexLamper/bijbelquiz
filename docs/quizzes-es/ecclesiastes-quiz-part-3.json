@@ -1,0 +1,122 @@
+{
+  "title": "Eclesiastés Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Eclesiastés 3: para todas las cosas hay sazón, la lista de los tiempos, lo que Dios hizo hermoso y el polvo al que todo vuelve.",
+  "slug": "ecclesiastes-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué tiene todo lo que se quiere debajo del cielo?",
+      "explanation": "Eclesiastés 3:1 dice: Para todas las cosas hay sazón, y todo lo que se quiere debajo del cielo, tiene su tiempo.",
+      "bibleReference": "Eclesiastés 3:1",
+      "answers": [
+        { "text": "Su tiempo", "isCorrect": true },
+        { "text": "Su provecho", "isCorrect": false },
+        { "text": "Su memoria", "isCorrect": false },
+        { "text": "Su dueño", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué tiempo se nombra junto al tiempo de plantar?",
+      "explanation": "Eclesiastés 3:2 dice: tiempo de plantar, y tiempo de arrancar lo plantado.",
+      "bibleReference": "Eclesiastés 3:2",
+      "answers": [
+        { "text": "Tiempo de regar el bosque", "isCorrect": false },
+        { "text": "Tiempo de guardar la viña", "isCorrect": false },
+        { "text": "Tiempo de arrancar lo plantado", "isCorrect": true },
+        { "text": "Tiempo de segar la hierba", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué tiempo se nombra junto al tiempo de destruir?",
+      "explanation": "Eclesiastés 3:3 dice: tiempo de destruir, y tiempo de edificar.",
+      "bibleReference": "Eclesiastés 3:3",
+      "answers": [
+        { "text": "Tiempo de arrancar", "isCorrect": false },
+        { "text": "Tiempo de esparcir", "isCorrect": false },
+        { "text": "Tiempo de romper", "isCorrect": false },
+        { "text": "Tiempo de edificar", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué tiempo se nombra junto al tiempo de endechar?",
+      "explanation": "Eclesiastés 3:4 dice: tiempo de endechar, y tiempo de bailar.",
+      "bibleReference": "Eclesiastés 3:4",
+      "answers": [
+        { "text": "Tiempo de callar", "isCorrect": false },
+        { "text": "Tiempo de bailar", "isCorrect": true },
+        { "text": "Tiempo de abrazar", "isCorrect": false },
+        { "text": "Tiempo de coser", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué dos tiempos siguen a los de romper y coser?",
+      "explanation": "Eclesiastés 3:7 dice: Tiempo de romper, y tiempo de coser; tiempo de callar, y tiempo de hablar.",
+      "bibleReference": "Eclesiastés 3:7",
+      "answers": [
+        { "text": "Amar y aborrecer", "isCorrect": false },
+        { "text": "Guerra y paz", "isCorrect": false },
+        { "text": "Callar y hablar", "isCorrect": true },
+        { "text": "Guardar y arrojar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué par de tiempos termina la lista, en el versículo 8?",
+      "explanation": "Eclesiastés 3:8 dice: Tiempo de amar, y tiempo de aborrecer; tiempo de guerra, y tiempo de paz.",
+      "bibleReference": "Eclesiastés 3:8",
+      "answers": [
+        { "text": "Tiempo de guerra y tiempo de paz", "isCorrect": true },
+        { "text": "Tiempo de nacer y tiempo de morir", "isCorrect": false },
+        { "text": "Tiempo de llorar y tiempo de reír", "isCorrect": false },
+        { "text": "Tiempo de callar y tiempo de hablar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿cómo hizo Dios todas las cosas?",
+      "explanation": "Eclesiastés 3:11 dice: Todo lo hizo hermoso en su tiempo.",
+      "bibleReference": "Eclesiastés 3:11",
+      "answers": [
+        { "text": "Torcido y falto", "isCorrect": false },
+        { "text": "Hermoso en su tiempo", "isCorrect": true },
+        { "text": "Vanidad y aflicción", "isCorrect": false },
+        { "text": "Perpetuo y sin memoria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué es don de Dios?",
+      "explanation": "Eclesiastés 3:13 dice que es don de Dios que todo hombre coma y beba, y goce el bien de toda su labor.",
+      "bibleReference": "Eclesiastés 3:13",
+      "answers": [
+        { "text": "Que el hombre sea semejante a las bestias", "isCorrect": false },
+        { "text": "Que el hombre conozca la obra de Dios", "isCorrect": false },
+        { "text": "Que el hombre vea el juicio del impío", "isCorrect": false },
+        { "text": "Que el hombre coma, beba y goce su labor", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 14, ¿para qué hace Dios lo que hace?",
+      "explanation": "Eclesiastés 3:14 dice: y hácelo Dios, para que delante de él teman los hombres.",
+      "bibleReference": "Eclesiastés 3:14",
+      "answers": [
+        { "text": "Para que los hombres teman delante de él", "isCorrect": true },
+        { "text": "Para que el hombre coma y beba", "isCorrect": false },
+        { "text": "Para que la tierra permanezca", "isCorrect": false },
+        { "text": "Para que el sabio halle provecho", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿de qué es hecho todo, y en qué se tornará?",
+      "explanation": "Eclesiastés 3:20 dice: Todo va á un lugar: todo es hecho del polvo, y todo se tornará en el mismo polvo.",
+      "bibleReference": "Eclesiastés 3:20",
+      "answers": [
+        { "text": "Del agua, y al agua", "isCorrect": false },
+        { "text": "Del viento, y al viento", "isCorrect": false },
+        { "text": "Del polvo, y al mismo polvo", "isCorrect": true },
+        { "text": "De la luz, y a las tinieblas", "isCorrect": false }
+      ]
+    }
+  ]
+}

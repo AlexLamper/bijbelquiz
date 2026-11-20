@@ -1,0 +1,242 @@
+{
+  "title": "Isaías Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Isaías 11: la vara del tronco de Isaí, el juicio con justicia para los pobres, el lobo con el cordero y la reunión de los desterrados.",
+  "slug": "isaiah-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué tronco saldrá una vara, según el versículo 1?",
+      "explanation": "El texto dice que saldrá una vara del tronco de Isaí, y un vástago retoñará de sus raíces.",
+      "bibleReference": "Isaías 11:1",
+      "answers": [
+        {
+          "text": "Del tronco del olmo",
+          "isCorrect": false
+        },
+        {
+          "text": "Del tronco del alcornoque",
+          "isCorrect": false
+        },
+        {
+          "text": "Del tronco de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Del tronco de Isaí",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reposará sobre él, según el versículo 2?",
+      "explanation": "El texto dice que reposará sobre él el espíritu de Jehová: espíritu de sabiduría y de inteligencia, de consejo y de fortaleza, de conocimiento y de temor de Jehová.",
+      "bibleReference": "Isaías 11:2",
+      "answers": [
+        {
+          "text": "El espíritu de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "La gloria del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "El cetro del exactor",
+          "isCorrect": false
+        },
+        {
+          "text": "La vara de su boca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿según qué no juzgará?",
+      "explanation": "El texto dice que no juzgará según la vista de sus ojos, ni argüirá por lo que oyeren sus oídos.",
+      "bibleReference": "Isaías 11:3",
+      "answers": [
+        {
+          "text": "Según la ley de los hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Según la vista de sus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "Según el consejo de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Según las obras de sus manos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué herirá la tierra, según el versículo 4?",
+      "explanation": "El texto dice que herirá la tierra con la vara de su boca, y con el espíritu de sus labios matará al impío.",
+      "bibleReference": "Isaías 11:4",
+      "answers": [
+        {
+          "text": "Con hierro y con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el azote de Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la vara de su boca",
+          "isCorrect": true
+        },
+        {
+          "text": "Con saetas amoladas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué será el cinto de sus lomos?",
+      "explanation": "El texto dice que la justicia será cinto de sus lomos, y la fidelidad ceñidor de sus riñones.",
+      "bibleReference": "Isaías 11:5",
+      "answers": [
+        {
+          "text": "La fidelidad",
+          "isCorrect": false
+        },
+        {
+          "text": "La justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "La fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "El conocimiento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién pastoreará al becerro, al león y a la bestia doméstica que andarán juntos?",
+      "explanation": "El texto dice que morará el lobo con el cordero, que el becerro y el león y la bestia doméstica andarán juntos, y que un niño los pastoreará.",
+      "bibleReference": "Isaías 11:6",
+      "answers": [
+        {
+          "text": "Un pastor de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "El Santo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Un niño",
+          "isCorrect": true
+        },
+        {
+          "text": "Las reliquias de Jacob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué comerá el león, según el versículo 7?",
+      "explanation": "El texto dice que la vaca y la osa pacerán, sus crías se echarán juntas, y el león como el buey comerá paja.",
+      "bibleReference": "Isaías 11:7",
+      "answers": [
+        {
+          "text": "Paja",
+          "isCorrect": true
+        },
+        {
+          "text": "Hierba del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "La presa que arrebate",
+          "isCorrect": false
+        },
+        {
+          "text": "Fruto de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué extenderá su mano el recién destetado?",
+      "explanation": "El texto dice que el niño de teta se entretendrá sobre la cueva del áspid, y el recién destetado extenderá su mano sobre la caverna del basilisco.",
+      "bibleReference": "Isaías 11:8",
+      "answers": [
+        {
+          "text": "Sobre la cueva del áspid",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el nido de las aves",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las aberturas de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre la caverna del basilisco",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la tierra llena del conocimiento de Jehová?",
+      "explanation": "El texto dice que la tierra será llena del conocimiento de Jehová, como cubren la mar las aguas.",
+      "bibleReference": "Isaías 11:9",
+      "answers": [
+        {
+          "text": "Con el humo que llena la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la nube sobre el monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las aguas que cubren la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la luz que resplandece de día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde reunirá a los esparcidos de Judá, según el versículo 12?",
+      "explanation": "El texto dice que levantará pendón a las gentes, juntará los desterrados de Israel y reunirá los esparcidos de Judá de los cuatro cantones de la tierra.",
+      "bibleReference": "Isaías 11:12",
+      "answers": [
+        {
+          "text": "De la tierra de Assur y de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "De los cuatro cantones de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "De las islas de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "De los montes del Líbano",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

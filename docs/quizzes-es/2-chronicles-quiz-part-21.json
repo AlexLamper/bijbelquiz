@@ -112,10 +112,10 @@
       "explanation": "Se fue sin ser deseado, y lo sepultaron en la ciudad de David, mas no en los sepulcros de los reyes.",
       "bibleReference": "2 Crónicas 21:20",
       "answers": [
-        { "text": "En los sepulcros de los reyes de Judá", "isCorrect": false },
-        { "text": "En la ciudad de David, no en los sepulcros reales", "isCorrect": true },
+        { "text": "En los sepulcros de los reyes", "isCorrect": false },
+        { "text": "En la ciudad de David", "isCorrect": true },
         { "text": "En Samaria, con los reyes de Israel", "isCorrect": false },
-        { "text": "En el campo de los sepulcros reales", "isCorrect": false }
+        { "text": "En Libna, donde se habían rebelado", "isCorrect": false }
       ]
     }
   ]

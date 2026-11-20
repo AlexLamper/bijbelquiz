@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre Proverbios 16: las obras encomendadas a Jehová, el peso y las balanzas justas, la soberbia antes del quebrantamiento y el camino que parece derecho.",
+  "slug": "proverbs-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿qué pesa Jehová?",
+      "explanation": "Proverbios 16:2 dice: Todos los caminos del hombre son limpios en su opinión: mas Jehová pesa los espíritus.",
+      "bibleReference": "Proverbios 16:2",
+      "answers": [
+        {
+          "text": "Las palabras de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los espíritus",
+          "isCorrect": true
+        },
+        {
+          "text": "Las pesas de la bolsa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los pasos del perezoso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promete el texto al que encomienda sus obras a Jehová?",
+      "explanation": "Proverbios 16:3 dice: Encomienda á Jehová tus obras, y tus pensamientos serán afirmados.",
+      "bibleReference": "Proverbios 16:3",
+      "answers": [
+        {
+          "text": "Que sus enemigos serán destruidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus graneros se llenarán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su casa será edificada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus pensamientos serán afirmados",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quién endereza los pasos del hombre?",
+      "explanation": "Proverbios 16:9 dice: El corazón del hombre piensa su camino: mas Jehová endereza sus pasos.",
+      "bibleReference": "Proverbios 16:9",
+      "answers": [
+        {
+          "text": "Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Un consejero sabio",
+          "isCorrect": false
+        },
+        {
+          "text": "Su propio corazón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién son el peso y las balanzas justas, según el texto?",
+      "explanation": "Proverbios 16:11 dice: Peso y balanzas justas son de Jehová: obra suya son todas las pesas de la bolsa.",
+      "bibleReference": "Proverbios 16:11",
+      "answers": [
+        {
+          "text": "Del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Del mercader",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Del fundidor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es mejor que adquirir oro preciado?",
+      "explanation": "Proverbios 16:16 dice: Mejor es adquirir sabiduría que oro preciado; y adquirir inteligencia vale más que la plata.",
+      "bibleReference": "Proverbios 16:16",
+      "answers": [
+        {
+          "text": "Adquirir campos",
+          "isCorrect": false
+        },
+        {
+          "text": "Adquirir honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Adquirir plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Adquirir sabiduría",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué va antes del quebrantamiento?",
+      "explanation": "Proverbios 16:18 dice: Antes del quebrantamiento es la soberbia; y antes de la caída la altivez de espíritu.",
+      "bibleReference": "Proverbios 16:18",
+      "answers": [
+        {
+          "text": "La honra",
+          "isCorrect": false
+        },
+        {
+          "text": "La soberbia",
+          "isCorrect": true
+        },
+        {
+          "text": "El consejo",
+          "isCorrect": false
+        },
+        {
+          "text": "La vejez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es el entendimiento para el que lo posee, según el texto?",
+      "explanation": "Proverbios 16:22 dice: Manantial de vida es el entendimiento al que lo posee: mas la erudición de los necios es necedad.",
+      "bibleReference": "Proverbios 16:22",
+      "answers": [
+        {
+          "text": "Manantial de vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Corona de honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Panal de miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Nube de lluvia tardía",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a qué lleva el camino que parece derecho al hombre?",
+      "explanation": "Proverbios 16:25 dice: Hay camino que parece derecho al hombre, mas su salida son caminos de muerte.",
+      "bibleReference": "Proverbios 16:25",
+      "answers": [
+        {
+          "text": "A caminos de muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "A grandes riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "A la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "A la multitud de consejeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace el chismoso, según el texto?",
+      "explanation": "Proverbios 16:28 dice: El hombre perverso levanta contienda; y el chismoso aparta los mejores amigos.",
+      "bibleReference": "Proverbios 16:28",
+      "answers": [
+        {
+          "text": "Aumenta la doctrina",
+          "isCorrect": false
+        },
+        {
+          "text": "Pacifica a sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Aparta los mejores amigos",
+          "isCorrect": true
+        },
+        {
+          "text": "Ensancha el camino del hombre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quién es mejor que el que toma una ciudad?",
+      "explanation": "Proverbios 16:32 dice: Mejor es el que tarde se aira que el fuerte; y el que se enseñorea de su espíritu, que el que toma una ciudad.",
+      "bibleReference": "Proverbios 16:32",
+      "answers": [
+        {
+          "text": "El fuerte en la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "El que echa la suerte en el seno",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey que juzga con justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "El que se enseñorea de su espíritu",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}
